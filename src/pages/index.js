@@ -1,15 +1,53 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Image from '../components/Image'
 
-const IndexPage = () => (
-    <Layout>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Image />
-    </Layout>
-)
+const IndexPage = ({ data, location }) => {
+    const { edges } = data.allMarkdownRemark
+
+    const DocsList = edges.map(({ node }) => {
+        const { title } = node.frontmatter
+        const { slug } = node.fields
+
+        return (
+            <li key={node.id}>
+                <Link to={slug}>{title}</Link>
+            </li>
+        )
+    })
+
+    return (
+        <Layout location={location}>
+            <h1>Hi there</h1>
+            <ul>{DocsList}</ul>
+        </Layout>
+    )
+}
+
+IndexPage.propTypes = {
+    data: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired
+}
 
 export default IndexPage
+
+export const indexQuery = graphql`
+    query {
+        allMarkdownRemark {
+            edges {
+                node {
+                    id
+                    html
+                    excerpt(pruneLength: 250)
+                    frontmatter {
+                        title
+                    }
+                    fields {
+                        slug
+                    }
+                }
+            }
+        }
+    }
+`
