@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: 'Ocean Protocol Docs',
-        descritpion: '',
+        title: 'Ocean Protocol Documentation',
+        description: '',
         siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com'
     },
     plugins: [
@@ -40,7 +40,14 @@ module.exports = {
                 includePaths: [`${__dirname}/src/styles`]
             }
         },
-        'gatsby-plugin-react-svg',
+        {
+            resolve: 'gatsby-plugin-svgr',
+            options: {
+                icon: true,
+                viewBox: false
+                // see https://github.com/smooth-code/svgr for a list of all options
+            }
+        },
         'gatsby-plugin-catch-links',
         'gatsby-plugin-react-helmet',
         'gatsby-transformer-sharp',
