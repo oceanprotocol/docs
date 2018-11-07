@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+import Layout from '../components/Layout'
+import Image from '../components/Image'
 
 const IndexPage = () => (
     <Layout>
@@ -10,7 +9,6 @@ const IndexPage = () => (
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
         <Image />
-        <Link to="/page-2/">Go to page 2</Link>
     </Layout>
 )
 

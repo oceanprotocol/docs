@@ -2,12 +2,14 @@
 
 <h1 align="center">docs</h1>
 
-> One site to rule all docs.
+> 🐍 Ocean Protocol's official documentation.
 
-[![Build Status](https://travis-ci.com/oceanprotocol/docs.svg?branch=master)](https://travis-ci.com/oceanprotocol/docs)
+[![Build Status](https://travis-ci.com/oceanprotocol/docs.svg?token=3psqw6c8KMDqfdGQ2x6d&branch=master)](https://travis-ci.com/oceanprotocol/docs)
 [![js oceanprotocol](https://img.shields.io/badge/js-oceanprotocol-7b1173.svg)](https://github.com/oceanprotocol/eslint-config-oceanprotocol)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-7b1173.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Greenkeeper badge](https://badges.greenkeeper.io/oceanprotocol/docs.svg)](https://greenkeeper.io/)
+
+---
 
 - [Content](#content)
     - [Editing docs](#editing-docs)
@@ -15,6 +17,8 @@
 - [Development](#development)
 - [Authors](#authors)
 - [License](#license)
+
+---
 
 ## Content
 
