@@ -1,3 +1,3 @@
 ---
-title: Set up a data marketplace
+title: Set Up a Marketplace
 ---

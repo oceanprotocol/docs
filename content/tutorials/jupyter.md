@@ -1,5 +1,5 @@
 ---
-title: Use Jupyter notebooks to interact with the Ocean network
+title: Example Jupyter Notebooks to Interact with the Ocean Network
 ---
 
-How to use Mantaray?
+(Mantaray)
