@@ -42,7 +42,8 @@ module.exports = {
                     },
                     'gatsby-remark-smartypants',
                     'gatsby-remark-prismjs',
-                    'gatsby-remark-autolink-headers'
+                    'gatsby-remark-autolink-headers',
+                    'gatsby-remark-relative-linker'
                 ]
             }
         },
