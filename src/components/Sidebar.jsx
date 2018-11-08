@@ -3,25 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styles from './Sidebar.module.scss'
 
-function groupExpanded(items, pathname) {
-    var breakException = {}
-
-    try {
-        items.forEach(item => {
-            if (item.link === pathname) {
-                throw breakException
-            }
-        })
-    } catch (e) {
-        if (e !== breakException) {
-            throw e
-        } else {
-            return true
-        }
-    }
-    return false
-}
-
 const SidebarLink = ({ link, title, linkClasses }) => {
     if (link) {
         if (link.match(/^\s?http(s?)/gi)) {
@@ -82,41 +63,25 @@ export default class Sidebar extends Component {
         }
 
         return (
-            <nav>
+            <nav className={styles.sidebar}>
                 {sidebarfile.map((group, i) => (
                     <div key={i}>
-                        {groupExpanded(group.items, location.pathname) ? (
-                            <>
-                                <h4 className={styles.groupTitle}>
-                                    {group.items[0].link ? (
-                                        <SidebarLink
-                                            link={group.items[0].link}
-                                            title={group.group}
-                                            linkClasses={styles.groupTitleLink}
-                                        />
-                                    ) : (
-                                        group.group
-                                    )}
-                                </h4>
-                                <SidebarList
-                                    key={i}
-                                    items={group.items}
-                                    location={location}
+                        <h4 className={styles.groupTitle}>
+                            {group.items[0].link ? (
+                                <SidebarLink
+                                    link={group.items[0].link}
+                                    title={group.group}
+                                    linkClasses={styles.groupTitleLink}
                                 />
-                            </>
-                        ) : (
-                            <h4 className={styles.groupTitle}>
-                                {group.items[0].link ? (
-                                    <SidebarLink
-                                        link={group.items[0].link}
-                                        title={group.group}
-                                        linkClasses={styles.groupTitleLink}
-                                    />
-                                ) : (
-                                    group.group
-                                )}
-                            </h4>
-                        )}
+                            ) : (
+                                group.group
+                            )}
+                        </h4>
+                        <SidebarList
+                            key={i}
+                            items={group.items}
+                            location={location}
+                        />
                     </div>
                 ))}
             </nav>

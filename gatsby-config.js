@@ -26,9 +26,14 @@ module.exports = {
                     {
                         resolve: 'gatsby-remark-images',
                         options: {
-                            maxWidth: 600
+                            maxWidth: 756,
+                            quality: 80,
+                            withWebp: true,
+                            linkImagesToOriginal: false,
+                            showCaptions: true
                         }
                     },
+                    'gatsby-remark-smartypants',
                     'gatsby-remark-prismjs',
                     'gatsby-remark-autolink-headers'
                 ]

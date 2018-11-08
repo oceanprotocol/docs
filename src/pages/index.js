@@ -25,11 +25,11 @@ const IndexPage = ({ location }) => (
                 Understand the fundamentals of Ocean Protocol.
             </SectionLink>
 
-            <SectionLink to="/setup/" title="Setup Guides">
+            <SectionLink to="/setup/keeper/" title="Setup Guides">
                 Setting up the Ocean Protocol components.
             </SectionLink>
 
-            <SectionLink to="/tutorials/" title="Tutorials">
+            <SectionLink to="/tutorials/jupyter/" title="Tutorials">
                 Browse tutorials for most common setup and development
                 use-cases.
             </SectionLink>

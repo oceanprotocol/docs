@@ -17,23 +17,31 @@ export default class DocTemplate extends Component {
         const { location } = this.props
         const post = this.props.data.markdownRemark
         const { section } = post.fields
+        const { title, description } = post.frontmatter
 
         return (
             <Layout location={location}>
                 <HeaderSection title={section} />
                 <Content>
-                    <div className={styles.wrapper}>
+                    <main className={styles.wrapper}>
                         <aside className={styles.sidebar}>
                             <Sidebar location={location} sidebar={section} />
                         </aside>
 
-                        <main className={styles.main}>
-                            <h1>{post.frontmatter.title}</h1>
+                        <article className={styles.main}>
+                            <header className={styles.header}>
+                                <h1 className={styles.title}>{title}</h1>
+                                {description && (
+                                    <p className={styles.lead}>{description}</p>
+                                )}
+                            </header>
+
                             <div
+                                className={styles.docContent}
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                        </main>
-                    </div>
+                        </article>
+                    </main>
                 </Content>
             </Layout>
         )
@@ -53,6 +61,7 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 title
+                description
             }
             fields {
                 section

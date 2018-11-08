@@ -2,10 +2,10 @@
   items:
     - title: What is Ocean Protocol?
       link: /concepts/introduction/
-    - title: Terminology
-      link: /concepts/terminology/
     - title: Ecosystem overview
       link: /concepts/ecosystem/
+    - title: Terminology
+      link: /concepts/terminology/
 
 - group: Architecture
   items:

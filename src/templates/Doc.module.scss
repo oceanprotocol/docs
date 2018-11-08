@@ -1,7 +1,7 @@
 @import 'variables';
 
 .wrapper {
-    @media (min-width: $break-point--small) {
+    @media (min-width: $break-point--medium) {
         display: flex;
         justify-content: space-between;
     }
@@ -13,4 +13,28 @@
 
 .main {
     flex: 0 0 70%;
+}
+
+.header {
+    margin-top: $spacer;
+    margin-bottom: $spacer * $line-height;
+}
+
+.title {
+    font-size: $font-size-h1;
+    margin-top: 0;
+    margin-bottom: $spacer / $line-height;
+}
+
+.lead {
+    font-size: $font-size-large;
+}
+
+.docContent {
+    figcaption {
+        font-size: $font-size-small;
+        text-align: center;
+        color: $brand-grey-light;
+        margin-top: $spacer / 2;
+    }
 }
