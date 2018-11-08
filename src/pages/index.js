@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
-// import styles from './index.module.scss'
+import styles from './index.module.scss'
 
 const SectionLink = ({ to, title, children }) => (
     <Link to={to}>
-        <h3>{title}</h3>
-        <p>{children}</p>
+        <h3 className={styles.sectionTitle}>{title}</h3>
+        <p className={styles.sectionText}>{children}</p>
     </Link>
 )
 
@@ -18,27 +18,39 @@ SectionLink.propTypes = {
     children: PropTypes.any
 }
 
-const IndexPage = ({ location }) => (
+const IndexPage = ({ data, location }) => (
     <Layout location={location}>
         <Content>
-            <SectionLink to="/concepts/introduction/" title="Core Concepts">
-                Understand the fundamentals of Ocean Protocol.
-            </SectionLink>
-
-            <SectionLink to="/setup/keeper/" title="Setup Guides">
-                Setting up the Ocean Protocol components.
-            </SectionLink>
-
-            <SectionLink to="/tutorials/jupyter/" title="Tutorials">
-                Browse tutorials for most common setup and development
-                use-cases.
-            </SectionLink>
+            <ul className={styles.sections}>
+                {data.allSectionsYaml.edges.map(({ node }) => (
+                    <li key={node.title} className={styles.section}>
+                        <SectionLink to={node.link} title={node.title}>
+                            {node.description}
+                        </SectionLink>
+                    </li>
+                ))}
+            </ul>
         </Content>
     </Layout>
 )
 
 IndexPage.propTypes = {
+    data: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired
 }
 
 export default IndexPage
+
+export const IndexQuery = graphql`
+    query {
+        allSectionsYaml {
+            edges {
+                node {
+                    title
+                    description
+                    link
+                }
+            }
+        }
+    }
+`
