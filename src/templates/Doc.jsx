@@ -24,9 +24,14 @@ export default class DocTemplate extends Component {
                 <HeaderSection title={section} />
                 <Content>
                     <main className={styles.wrapper}>
-                        <aside className={styles.sidebar}>
-                            <Sidebar location={location} sidebar={section} />
-                        </aside>
+                        {section && (
+                            <aside className={styles.sidebar}>
+                                <Sidebar
+                                    location={location}
+                                    sidebar={section}
+                                />
+                            </aside>
+                        )}
 
                         <article className={styles.main}>
                             <header className={styles.header}>

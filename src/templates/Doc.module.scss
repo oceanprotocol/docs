@@ -9,10 +9,10 @@
 
 .sidebar {
     flex: 0 0 25%;
-}
 
-.main {
-    flex: 0 0 70%;
+    + .main {
+        flex: 0 0 70%;
+    }
 }
 
 .header {
