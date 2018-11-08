@@ -1,7 +1,7 @@
 @import 'variables';
 
-.main {
+.content {
     padding: 0 $spacer;
-    max-width: 45rem;
+    max-width: $break-point--large;
     margin: auto;
 }

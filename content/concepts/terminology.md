@@ -1,8 +1,7 @@
 ---
 title: Terminology
+description: Terminology specific to Ocean Protocol.
 ---
-
-There is terminology specific to Ocean Protocol.
 
 ## Asset
 

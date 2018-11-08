@@ -20,20 +20,34 @@ module.exports = {
             }
         },
         {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'data',
+                path: `${__dirname}/data`
+            }
+        },
+        {
             resolve: 'gatsby-transformer-remark',
             options: {
                 plugins: [
                     {
                         resolve: 'gatsby-remark-images',
                         options: {
-                            maxWidth: 600
+                            maxWidth: 756,
+                            quality: 80,
+                            withWebp: true,
+                            linkImagesToOriginal: false,
+                            showCaptions: true
                         }
                     },
+                    'gatsby-remark-smartypants',
                     'gatsby-remark-prismjs',
-                    'gatsby-remark-autolink-headers'
+                    'gatsby-remark-autolink-headers',
+                    'gatsby-remark-relative-linker'
                 ]
             }
         },
+        'gatsby-transformer-yaml',
         {
             resolve: 'gatsby-plugin-sass',
             options: {

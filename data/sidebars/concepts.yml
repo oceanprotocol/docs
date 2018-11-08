@@ -1,0 +1,20 @@
+- group: Getting Started
+  items:
+    - title: What is Ocean Protocol?
+      link: /concepts/introduction/
+    - title: Ecosystem overview
+      link: /concepts/ecosystem/
+    - title: Terminology
+      link: /concepts/terminology/
+
+- group: Architecture
+  items:
+    - title: Overview
+      link: /concepts/architecture/
+
+- group: Security
+  items:
+    - title: Overview
+      link: /concepts/security/
+    - title: Reporting vulnerabilities
+      link: /concepts/vulnerabilities/

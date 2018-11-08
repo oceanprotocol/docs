@@ -1,0 +1,11 @@
+- title: Core Concepts
+  description: Understand the fundamentals of Ocean Protocol.
+  link: /concepts/introduction/
+
+- title: Setup Guides
+  description: Setting up the Ocean Protocol components.
+  link: /setup/keeper/
+
+- title: Tutorials
+  description: Browse tutorials for most common setup and development use-cases.
+  link: /tutorials/jupyter/

@@ -1,0 +1,55 @@
+@import 'variables';
+
+.sidebar {
+    padding-top: $spacer / 2;
+}
+
+.groupTitle {
+    font-size: $font-size-small;
+    font-family: $font-family-button;
+    text-transform: uppercase;
+    margin-top: $spacer;
+    margin-bottom: $spacer / 4;
+}
+
+.groupTitleLink {
+    color: $brand-grey-light;
+
+    &:hover,
+    &:focus {
+        transform: none;
+        color: $brand-grey-light;
+    }
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid $brand-grey-lighter;
+    margin-left: $spacer / 2;
+
+    li {
+        display: block;
+    }
+}
+
+.link {
+    color: $brand-grey;
+    display: inline-block;
+    padding: $spacer / 6 $spacer / 2;
+    border-left: .1rem solid transparent;
+    margin-left: -.05rem;
+
+    &:hover,
+    &:focus {
+        transform: none;
+        color: $brand-purple;
+    }
+}
+
+.active {
+    composes: link;
+    color: $brand-purple;
+    border-left-color: $brand-purple;
+}

@@ -1,0 +1,12 @@
+@import 'variables';
+
+.headerSection {
+    padding: $spacer / 2 0;
+    border-bottom: .1rem solid $brand-grey-lighter;
+}
+
+.headerSectionTitle {
+    margin: 0;
+    font-size: $font-size-large;
+    color: $brand-grey-light;
+}
