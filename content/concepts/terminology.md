@@ -18,11 +18,14 @@ Someone who wants assets. An example is a data scientist working at an economic 
 
 ## Marketplace
 
-A service where publishers can list what assets they have, and consumers can see what's available then buy it (or get it for free).
+A service where publishers can list what assets they have, and consumers can see what's available then buy it (or get it for free). The Ocean network supports many marketplaces.
 
 ## Keeper
 
-A computer running a blockchain client (i.e. a blockchain node) where the associated blockchain network is running the Ocean Protocol keeper contracts (smart contracts).
+A computer running a blockchain client (i.e. a blockchain node)
+where the associated blockchain network is running the
+[Ocean Protocol keeper contracts](https://github.com/oceanprotocol/keeper-contracts)
+(smart contracts).
 
 ## Aquarius
 
@@ -34,13 +37,12 @@ Ocean-specific software to help publishers manage consumer access to their asset
 
 ## Secret Store
 
-[Parity Secret Store](https://wiki.parity.io/Secret-Store).
+[Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval.
 
-## Squid
+## squid-py, squid-js, squid-java, etc.
 
-A set of software libraries to interact with Ocean network participants, including Keepers, Aquarius, Brizo, and Secret Store. The initial libraries are in Python, JavaScript and Java.
+Software libraries used by applications to interact with Ocean nodes, including Keepers, Aquarius nodes, Brizo nodes, etc.
 
 ## Pleuston
 
-An example marketplace frontend implemented using React and Squid-JavaScript.
-
+An example marketplace website frontend implemented using React and squid-js.
