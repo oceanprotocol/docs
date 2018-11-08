@@ -1,0 +1,16 @@
+@import 'variables';
+
+.wrapper {
+    @media (min-width: $break-point--small) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.sidebar {
+    flex: 0 0 25%;
+}
+
+.main {
+    flex: 0 0 70%;
+}

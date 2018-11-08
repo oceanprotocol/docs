@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Content from '../components/Content'
+import HeaderSection from '../components/HeaderSection'
 import Sidebar from '../components/Sidebar'
+import styles from './Doc.module.scss'
 
 export default class DocTemplate extends Component {
     static propTypes = {
@@ -17,10 +20,21 @@ export default class DocTemplate extends Component {
 
         return (
             <Layout location={location}>
-                <Sidebar location={location} sidebar={section} />
+                <HeaderSection title={section} />
+                <Content>
+                    <div className={styles.wrapper}>
+                        <aside className={styles.sidebar}>
+                            <Sidebar location={location} sidebar={section} />
+                        </aside>
 
-                <h1>{post.frontmatter.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                        <main className={styles.main}>
+                            <h1>{post.frontmatter.title}</h1>
+                            <div
+                                dangerouslySetInnerHTML={{ __html: post.html }}
+                            />
+                        </main>
+                    </div>
+                </Content>
             </Layout>
         )
     }

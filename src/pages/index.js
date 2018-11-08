@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/Layout'
+import Content from '../components/Content'
+// import styles from './index.module.scss'
 
 const SectionLink = ({ to, title, children }) => (
     <Link to={to}>
@@ -16,24 +18,9 @@ SectionLink.propTypes = {
     children: PropTypes.any
 }
 
-const IndexPage = ({ data, location }) => {
-    const { edges } = data.allMarkdownRemark
-
-    const DocsList = edges.map(({ node }) => {
-        const { title } = node.frontmatter
-        const { slug } = node.fields
-
-        return (
-            <li key={node.id}>
-                <Link to={slug}>{title}</Link>
-            </li>
-        )
-    })
-
-    return (
-        <Layout location={location}>
-            <h1>Hi there</h1>
-
+const IndexPage = ({ location }) => (
+    <Layout location={location}>
+        <Content>
             <SectionLink to="/concepts/introduction/" title="Core Concepts">
                 Understand the fundamentals of Ocean Protocol.
             </SectionLink>
@@ -46,37 +33,12 @@ const IndexPage = ({ data, location }) => {
                 Browse tutorials for most common setup and development
                 use-cases.
             </SectionLink>
-
-            <h1>Docs list</h1>
-
-            <ul>{DocsList}</ul>
-        </Layout>
-    )
-}
+        </Content>
+    </Layout>
+)
 
 IndexPage.propTypes = {
-    data: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired
 }
 
 export default IndexPage
-
-export const indexQuery = graphql`
-    query {
-        allMarkdownRemark {
-            edges {
-                node {
-                    id
-                    html
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        title
-                    }
-                    fields {
-                        slug
-                    }
-                }
-            }
-        }
-    }
-`

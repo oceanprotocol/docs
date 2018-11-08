@@ -1,7 +1,31 @@
+@import 'variables';
+
+.groupTitle {
+    font-size: $font-size-large;
+    margin-bottom: $spacer / 2;
+}
+
+.groupTitleLink {
+    color: $brand-grey-light;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: block;
+    }
+}
+
 .link {
-    color: black;
+    color: $brand-grey-light;
+    display: inline-block;
+    padding: $spacer / 6 $spacer / 2;
 }
 
 .active {
     composes: link;
+    color: $brand-grey;
 }

@@ -43,7 +43,7 @@ const SidebarLink = ({ link, title, linkClasses }) => {
 }
 
 const SidebarList = ({ items, location }) => (
-    <ul>
+    <ul className={styles.list}>
         {items.map((item, j) => (
             <li key={j}>
                 <SidebarLink
@@ -87,12 +87,12 @@ export default class Sidebar extends Component {
                     <div key={i}>
                         {groupExpanded(group.items, location.pathname) ? (
                             <>
-                                <h4>
+                                <h4 className={styles.groupTitle}>
                                     {group.items[0].link ? (
                                         <SidebarLink
                                             link={group.items[0].link}
                                             title={group.group}
-                                            linkClasses="midgrey link"
+                                            linkClasses={styles.groupTitleLink}
                                         />
                                     ) : (
                                         group.group
@@ -105,11 +105,12 @@ export default class Sidebar extends Component {
                                 />
                             </>
                         ) : (
-                            <h4>
+                            <h4 className={styles.groupTitle}>
                                 {group.items[0].link ? (
                                     <SidebarLink
                                         link={group.items[0].link}
                                         title={group.group}
+                                        linkClasses={styles.groupTitleLink}
                                     />
                                 ) : (
                                     group.group
