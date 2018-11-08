@@ -1,5 +1,6 @@
 ---
 title: Terminology
+sidebar: concepts
 ---
 
 There is terminology specific to Ocean Protocol.
@@ -43,4 +44,3 @@ A set of software libraries to interact with Ocean network participants, includi
 ## Pleuston
 
 An example marketplace frontend implemented using React and Squid-JavaScript.
-

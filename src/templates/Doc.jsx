@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Sidebar from '../components/Sidebar'
 
 export default class DocTemplate extends Component {
     static propTypes = {
@@ -14,6 +15,11 @@ export default class DocTemplate extends Component {
 
         return (
             <Layout location={this.props.location}>
+                <Sidebar
+                    location={this.props.location}
+                    sidebar={post.frontmatter.sidebar}
+                />
+
                 <h1>{post.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </Layout>
@@ -34,6 +40,7 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 title
+                sidebar
             }
         }
     }

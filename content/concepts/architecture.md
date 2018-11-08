@@ -1,0 +1,4 @@
+---
+title: Architecture
+sidebar: concepts
+---

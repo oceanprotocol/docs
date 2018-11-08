@@ -34,6 +34,7 @@ module.exports = {
                 ]
             }
         },
+        'gatsby-transformer-yaml',
         {
             resolve: 'gatsby-plugin-sass',
             options: {
