@@ -1,4 +1,3 @@
 ---
 title: Ecosystem
-sidebar: concepts
 ---

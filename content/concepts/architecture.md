@@ -1,4 +1,3 @@
 ---
 title: Architecture
-sidebar: concepts
 ---

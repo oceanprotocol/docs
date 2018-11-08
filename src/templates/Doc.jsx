@@ -11,14 +11,13 @@ export default class DocTemplate extends Component {
     }
 
     render() {
+        const { location } = this.props
         const post = this.props.data.markdownRemark
+        const { section } = post.fields
 
         return (
-            <Layout location={this.props.location}>
-                <Sidebar
-                    location={this.props.location}
-                    sidebar={post.frontmatter.sidebar}
-                />
+            <Layout location={location}>
+                <Sidebar location={location} sidebar={section} />
 
                 <h1>{post.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -40,7 +39,9 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 title
-                sidebar
+            }
+            fields {
+                section
             }
         }
     }

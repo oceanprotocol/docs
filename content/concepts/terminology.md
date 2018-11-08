@@ -1,6 +1,5 @@
 ---
 title: Terminology
-sidebar: concepts
 ---
 
 There is terminology specific to Ocean Protocol.

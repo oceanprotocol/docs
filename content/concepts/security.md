@@ -1,4 +1,3 @@
 ---
 title: Security
-sidebar: concepts
 ---

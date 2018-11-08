@@ -38,7 +38,7 @@ const SidebarLink = ({ link, title, linkClasses }) => {
             )
         }
     } else {
-        return <>{this.props.title}</>
+        return title
     }
 }
 
@@ -72,6 +72,7 @@ export default class Sidebar extends Component {
 
     render() {
         const { sidebar, location } = this.props
+
         const sidebarfile = sidebar
             ? require(`../data/sidebars/${sidebar}.yml`) // eslint-disable-line
             : []
