@@ -24,11 +24,6 @@ body {
     position: relative;
     margin: 0;
 
-    // handling long text, like URLs
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-
     @media screen and (min-width: $break-point--small) {
         padding: $page-frame;
     }
@@ -56,13 +51,80 @@ a {
 
 p {
     margin: 0;
-    margin-bottom: $spacer / 2;
+    margin-bottom: $spacer / $line-height;
 }
 
+// Lists
+/////////////////////////////////////
+
+ul {
+    li {
+        &::before {
+            content: ' \25AA'; // Black Small Square: ▪ &#9642;
+        }
+    }
+}
+
+ol {
+    counter-reset: ol-counter;
+
+    li {
+        &::before {
+            content: counter(ol-counter) '.';
+            counter-increment: ol-counter;
+            font-family: $font-family-button;
+        }
+    }
+
+    ul li::before {
+        content: ' \25AA';
+    }
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: $spacer;
+    padding-left: $spacer / $line-height;
+    list-style: none;
+
+    li {
+        position: relative;
+        display: block;
+
+        &::before {
+            position: absolute;
+            left: -($spacer / $line-height);
+            top: -1px;
+            color: $brand-grey-light;
+            user-select: none;
+        }
+    }
+}
+
+// Inline typography
+/////////////////////////////////////
+
+b,
 strong,
-.strong {
+.bold {
     font-family: $font-family-button;
     font-weight: 600;
+}
+
+em,
+.italic {
+    font-style: italic;
+}
+
+abbr[title],
+dfn {
+    text-transform: none;
+    font-style: normal;
+    font-size: inherit;
+    border-bottom: 1px dashed $brand-grey-light;
+    cursor: help;
+    font-feature-settings: inherit;
 }
 
 h1,
@@ -113,26 +175,94 @@ picture {
     display: block;
 }
 
+hr {
+    margin: $spacer * $line-height 0;
+    border: 0;
+    border-bottom: .1rem solid $brand-grey-lighter;
+}
+
+// Quotes
+/////////////////////////////////////
+
+q {
+    font-style: italic;
+}
+
+cite {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+blockquote,
+blockquote > p {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 0 $spacer;
+    padding-left: $spacer;
+}
+
+// Tables
+/////////////////////////////////////
+
+table {
+    width: 100%;
+    margin-bottom: $spacer * $line-height;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 0;
+        margin: 0;
+        padding: $spacer / 2;
+        border-bottom: 1px solid $brand-grey-lighter;
+    }
+
+    th {
+        font-family: $font-family-button;
+        font-weight: 600;
+        text-align: left;
+
+        &[align="center"] {
+            text-align: center;
+        }
+
+        &[align="right"] {
+            text-align: right;
+        }
+    }
+
+    td {
+
+    }
+}
+
+// Code
+/////////////////////////////////////
+
 code,
 kbd,
 pre,
 samp {
     font-family: $font-family-monospace;
     font-size: $font-size-small;
+    background: $brand-black !important;
+    color: $brand-grey-lighter !important;
+    border-radius: $border-radius !important;
 }
 
 pre {
     display: block;
     margin-bottom: $spacer !important;
+    padding: 0 !important;
 
     // make 'em scrollable
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    max-height: 500px;
-    max-width: 100%;
 
     code {
-        padding: 0;
+        padding: $spacer;
         white-space: pre;
         display: block;
         color: inherit;
@@ -143,3 +273,15 @@ pre {
     }
 }
 
+// Selection
+/////////////////////////////////////
+
+::-moz-selection {
+    background: $brand-black;
+    color: #fff;
+}
+
+::selection {
+    background: $brand-black;
+    color: #fff;
+}

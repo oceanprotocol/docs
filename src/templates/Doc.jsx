@@ -23,17 +23,34 @@ export default class DocTemplate extends Component {
             <Layout location={location}>
                 <HeaderSection title={section} />
                 <Content>
-                    <main className={styles.wrapper}>
-                        {section && (
+                    {section ? (
+                        <main className={styles.wrapper}>
                             <aside className={styles.sidebar}>
                                 <Sidebar
                                     location={location}
                                     sidebar={section}
                                 />
                             </aside>
-                        )}
+                            <article className={styles.main}>
+                                <header className={styles.header}>
+                                    <h1 className={styles.title}>{title}</h1>
+                                    {description && (
+                                        <p className={styles.lead}>
+                                            {description}
+                                        </p>
+                                    )}
+                                </header>
 
-                        <article className={styles.main}>
+                                <div
+                                    className={styles.docContent}
+                                    dangerouslySetInnerHTML={{
+                                        __html: post.html
+                                    }}
+                                />
+                            </article>
+                        </main>
+                    ) : (
+                        <article className={styles.mainSingle}>
                             <header className={styles.header}>
                                 <h1 className={styles.title}>{title}</h1>
                                 {description && (
@@ -43,10 +60,12 @@ export default class DocTemplate extends Component {
 
                             <div
                                 className={styles.docContent}
-                                dangerouslySetInnerHTML={{ __html: post.html }}
+                                dangerouslySetInnerHTML={{
+                                    __html: post.html
+                                }}
                             />
                         </article>
-                    </main>
+                    )}
                 </Content>
             </Layout>
         )

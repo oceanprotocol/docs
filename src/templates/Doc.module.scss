@@ -3,16 +3,22 @@
 .wrapper {
     @media (min-width: $break-point--medium) {
         display: flex;
-        justify-content: space-between;
     }
 }
 
 .sidebar {
-    flex: 0 0 25%;
+    flex: 0 0 30%;
+    padding-right: $spacer * 2;
 
     + .main {
         flex: 0 0 70%;
+        max-width: $break-point--small;
     }
+}
+
+.mainSingle {
+    max-width: $break-point--small;
+    margin: auto;
 }
 
 .header {
@@ -31,10 +37,20 @@
 }
 
 .docContent {
+    // handling long text, like URLs
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
     figcaption {
         font-size: $font-size-small;
         text-align: center;
         color: $brand-grey-light;
         margin-top: $spacer / 2;
+    }
+
+    h1, h2 {
+        margin-top: $spacer;
+        margin-bottom: $spacer;
     }
 }

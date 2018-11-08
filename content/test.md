@@ -1,23 +1,24 @@
 ---
 title: Content test
+description: This is intended as a quick reference and showcase.
 ---
 
-This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
+For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
 
-##### Table of Contents
+## Table of Contents
 
 * [Headers](#headers)
 * [Emphasis](#emphasis)
 * [Lists](#lists)
 * [Links](#links)
 * [Images](#images)
-* [Code and Syntax Highlighting](#code)
+* [Code and Syntax Highlighting](#code-and-syntax-highlighting)
 * [Tables](#tables)
 * [Blockquotes](#blockquotes)
-* [Inline HTML](#html)
-* [Horizontal Rule](#hr)
-* [Line Breaks](#lines)
-* [YouTube Videos](#videos)
+* [Inline HTML](#inline-html)
+* [Horizontal Rule](#horizontal-rule)
+* [Line Breaks](#line-breaks)
+* [YouTube Videos](#youtube-videos)
 
 ## Headers
 
@@ -82,9 +83,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 1. Actual numbers don't matter, just that it's a number
   1. Ordered sub-list
 4. And another item.
-
    Some text that should be aligned with the above item.
-
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
@@ -92,17 +91,11 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 1. First ordered list item
 2. Another item
-
    * Unordered sub-list.
-
 1. Actual numbers don't matter, just that it's a number
-
    1. Ordered sub-list
-
 4. And another item.
-
    Some text that should be aligned with the above item.
-
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
@@ -152,30 +145,30 @@ Some text to show that the reference links can follow later.
 ## Images
 
 ```
-Here's our logo (hover to see the title text):
+Here's our jellyfish (hover to see the title text):
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish")
 
 Reference-style:
-![alt text][logo]
+![alt text][jellyfish]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[jellyfish]: https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish"
 ```
 
-Here's our logo (hover to see the title text):
+Here's our jellyfish (hover to see the title text):
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish")
 
 Reference-style:
-![alt text][logo]
+![alt text][jellyfish]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[jellyfish]: https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish"
 
 ## Code and Syntax Highlighting
 
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting.
 
 ```
 Inline `code` has `back-ticks around` it.
@@ -183,9 +176,9 @@ Inline `code` has `back-ticks around` it.
 
 Inline `code` has `back-ticks around` it.
 
-Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+Blocks of code are either fenced by lines with three back-ticks, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
-<pre lang="no-highlight"><code>```javascript
+<pre><code>```js
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -223,7 +216,7 @@ Again, to see what languages are available for highlighting, and how to write th
 
 Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
 
-```no-highlight
+```markdown
 Colons can be used to align columns.
 
 | Tables        | Are           | Cool  |
@@ -258,7 +251,7 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 
 ## Blockquotes
 
-```
+```markdown
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
 
@@ -356,14 +349,16 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 They can't be added directly but you can add an image with a link to the video like this:
 
+```html
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE" target="_blank">
+    <img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
+</a>
 ```
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE
-" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-```
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 Or, in pure Markdown, but losing the image sizing and border:
 
-```
+```md
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```

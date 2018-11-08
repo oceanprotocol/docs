@@ -1,5 +1,6 @@
 ---
 title: Set Up a Marketplace
+description: Fill me
 ---
 
 If you want to set up a marketplace for the Ocean network, then you could start by running the following tech stack:
@@ -36,8 +37,8 @@ TODO: Link to instructions.
 
 At the time of writing, Aquarius worked with three databases:
 
-* MongoDB
-* Elasticsearch
-* BigchainDB
+-   MongoDB
+-   Elasticsearch
+-   BigchainDB
 
 TODO: Outline the pros and cons of each database.
