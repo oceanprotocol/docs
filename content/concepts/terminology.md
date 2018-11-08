@@ -1,8 +1,7 @@
 ---
 title: Terminology
+description: Terminology specific to Ocean Protocol.
 ---
-
-There is terminology specific to Ocean Protocol.
 
 ## Asset
 
@@ -43,4 +42,3 @@ A set of software libraries to interact with Ocean network participants, includi
 ## Pleuston
 
 An example marketplace frontend implemented using React and Squid-JavaScript.
-
