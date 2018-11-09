@@ -22,26 +22,10 @@ A service where publishers can list what assets they have, and consumers can see
 ## Keeper
 
 A computer running a blockchain client (i.e. a blockchain node)
-where the associated blockchain network is running the
-[Ocean Protocol keeper contracts](https://github.com/oceanprotocol/keeper-contracts)
+where the associated blockchain network is running the Ocean Protocol
+[💧 keeper-contracts](https://github.com/oceanprotocol/keeper-contracts)
 (smart contracts).
-
-## Aquarius
-
-Ocean-specific software to help store and manage metadata about assets (but not assets themselves). Every marketplace must run an instance of Aquarius.
-
-## Brizo
-
-Ocean-specific software to help publishers manage consumer access to their assets.
 
 ## Secret Store
 
 [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval.
-
-## squid-py, squid-js, squid-java, etc.
-
-Software libraries used by applications to interact with Ocean nodes, including Keepers, Aquarius nodes, Brizo nodes, etc.
-
-## Pleuston
-
-An example marketplace website frontend implemented using React and squid-js.
