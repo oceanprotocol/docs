@@ -1,7 +1,8 @@
 @import 'variables';
 
 .header {
-    background: $brand-black;
+    background: $brand-black url('@oceanprotocol/art/jellyfish/jellyfish-back@2x.png') no-repeat center -4rem;
+    background-size: cover;
     width: 100%;
     padding: $spacer / 2 0;
     padding-right: $spacer / 1.5;
@@ -47,4 +48,16 @@
 
 .headerMenu {
     justify-self: flex-end;
+}
+
+.section {
+    display: inline-block;
+    margin: 0 $spacer / 2;
+    font-family: $font-family-button;
+    color: $brand-grey-light;
+
+    &:hover,
+    &:focus {
+        color: $brand-white;
+    }
 }

@@ -52,7 +52,10 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-sass',
             options: {
-                includePaths: [`${__dirname}/src/styles`]
+                includePaths: [
+                    `${__dirname}/node_modules`,
+                    `${__dirname}/src/styles`
+                ]
             }
         },
         {

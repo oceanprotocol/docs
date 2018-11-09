@@ -16,12 +16,22 @@ export default class DocTemplate extends Component {
     render() {
         const { location } = this.props
         const post = this.props.data.markdownRemark
+        const sections = this.props.data.allSectionsYaml.edges
         const { section } = post.fields
         const { title, description } = post.frontmatter
 
+        // output section title as defined in sections.yml
+        const sectionTitle = sections.map(({ node }) => {
+            // compare section against section title from sections.yml
+            if (node.title.toLowerCase().includes(section)) {
+                return node.title
+            }
+        })
+
         return (
             <Layout location={location}>
-                <HeaderSection title={section} />
+                <HeaderSection title={sectionTitle} />
+
                 <Content>
                     {section ? (
                         <main className={styles.wrapper}>
@@ -79,6 +89,7 @@ export const pageQuery = graphql`
                 title
             }
         }
+
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             excerpt
@@ -89,6 +100,16 @@ export const pageQuery = graphql`
             }
             fields {
                 section
+            }
+        }
+
+        allSectionsYaml {
+            edges {
+                node {
+                    title
+                    description
+                    link
+                }
             }
         }
     }

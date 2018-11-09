@@ -1,12 +1,17 @@
 @import 'variables';
 
 .headerSection {
-    padding: $spacer / 2 0;
+    padding: $spacer 0;
     border-bottom: .1rem solid $brand-grey-lighter;
 }
 
 .headerSectionTitle {
     margin: 0;
-    font-size: $font-size-large;
+    font-size: $font-size-h4;
     color: $brand-grey-light;
+}
+
+.rootLink {
+    display: inline-block;
+    margin-right: $spacer / 4;
 }
