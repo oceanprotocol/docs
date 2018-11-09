@@ -21,7 +21,7 @@ const SetupIndexPage = ({ data, location }) => {
 
     return (
         <Layout location={location}>
-            <HeaderSection title="Setup Guides" />
+            <HeaderSection title={['Setup Guides']} />
             <Content>
                 <ul>{SetupList}</ul>
             </Content>

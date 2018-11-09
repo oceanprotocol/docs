@@ -21,7 +21,7 @@ const TutorialsIndexPage = ({ data, location }) => {
 
     return (
         <Layout location={location}>
-            <HeaderSection title="Tutorials" />
+            <HeaderSection title={['Tutorials']} />
             <Content>
                 <ul>{TutorialsList}</ul>
             </Content>
