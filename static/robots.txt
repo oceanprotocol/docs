@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: */test
+
+sitemap: https://docs.oceanprotocol.com/sitemap.xml

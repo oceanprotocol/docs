@@ -1,13 +1,15 @@
-const title = 'Ocean Protocol Documentation'
-const description =
-    'Learn everything about how to develop with Ocean Prototocol'
-const siteUrl = process.env.SITE_URL || 'https://docs.oceanprotocol.com'
+const config = {
+    title: 'Ocean Protocol Documentation',
+    description: 'Learn everything about how to develop with Ocean Prototocol',
+    siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
+    analyticsId: 'UA-60614729-11'
+}
 
 module.exports = {
     siteMetadata: {
-        title,
-        description,
-        siteUrl
+        title: config.title,
+        description: config.description,
+        siteUrl: config.siteUrl
     },
     plugins: [
         {
@@ -55,8 +57,7 @@ module.exports = {
                     },
                     'gatsby-remark-smartypants',
                     'gatsby-remark-prismjs',
-                    'gatsby-remark-autolink-headers',
-                    'gatsby-remark-relative-linker'
+                    'gatsby-remark-autolink-headers'
                 ]
             }
         },
@@ -82,11 +83,13 @@ module.exports = {
         },
         'gatsby-plugin-catch-links',
         'gatsby-plugin-react-helmet',
+        'gatsby-plugin-sitemap',
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                name: title,
+                name: config.title,
                 short_name: 'Docs',
+                description: config.description,
                 start_url: '/',
                 background_color: '#e2e2e2',
                 theme_color: '#141414',
@@ -94,6 +97,16 @@ module.exports = {
                 icon: 'src/images/profile.png'
             }
         },
-        'gatsby-plugin-offline'
+        'gatsby-plugin-offline',
+        {
+            resolve: 'gatsby-plugin-google-analytics',
+            options: {
+                trackingId: config.analyticsId,
+                head: false,
+                anonymize: true,
+                respectDNT: true,
+                cookieDomain: 'oceanprotocol.com'
+            }
+        }
     ]
 }
