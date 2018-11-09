@@ -8,7 +8,7 @@ const Component = ({ name, description, links }) => (
         <h1 className={styles.componentName}>{name}</h1>
         <p>{description}</p>
 
-        <ul>
+        <ul className={styles.componentLinks}>
             {links.map(link => (
                 <li key={link.url}>
                     <a href={link.url}>{link.name}</a>
@@ -50,9 +50,9 @@ const Components = () => (
                     <div className={styles.quickrun}>
                         <strong>
                             Wanna quickly get an Ocean network running on your
-                            machine?{' '}
+                            machine? Check out{' '}
                             <a href="https://github.com/oceanprotocol/docker-images">
-                                Check out docker-images
+                                🐳 docker-images
                             </a>
                             .
                         </strong>

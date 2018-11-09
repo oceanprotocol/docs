@@ -38,7 +38,7 @@
 }
 
 .component {
-    padding: $spacer / 2;
+    padding: $spacer / $line-height;
     border: 1px solid $brand-grey-lighter;
     border-radius: $border-radius;
     margin-bottom: 5%;
@@ -51,4 +51,22 @@
 .componentName {
     font-size: $font-size-large;
     margin-top: 0;
+}
+
+.componentLinks {
+    margin: 0;
+    padding: 0;
+    margin-left: -($spacer / 2);
+
+    li {
+        display: inline-block;
+        padding: 0;
+        margin-left: $spacer / 2;
+
+        &:before { display: none; }
+    }
+
+    a {
+
+    }
 }
