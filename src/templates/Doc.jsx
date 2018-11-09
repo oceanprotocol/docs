@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderSection from '../components/HeaderSection'
 import Sidebar from '../components/Sidebar'
+import DocFooter from '../components/DocFooter'
 import styles from './Doc.module.scss'
 
 export default class DocTemplate extends Component {
@@ -57,6 +58,8 @@ export default class DocTemplate extends Component {
                                         __html: post.html
                                     }}
                                 />
+
+                                <DocFooter post={post} />
                             </article>
                         </main>
                     ) : (
@@ -74,6 +77,8 @@ export default class DocTemplate extends Component {
                                     __html: post.html
                                 }}
                             />
+
+                            <DocFooter post={post} />
                         </article>
                     )}
                 </Content>
@@ -94,6 +99,7 @@ export const pageQuery = graphql`
             id
             excerpt
             html
+            fileAbsolutePath
             frontmatter {
                 title
                 description
@@ -101,6 +107,7 @@ export const pageQuery = graphql`
             fields {
                 section
             }
+            ...PageFooter
         }
 
         allSectionsYaml {
@@ -110,6 +117,14 @@ export const pageQuery = graphql`
                     description
                     link
                 }
+            }
+        }
+    }
+
+    fragment PageFooter on MarkdownRemark {
+        parent {
+            ... on File {
+                relativePath
             }
         }
     }

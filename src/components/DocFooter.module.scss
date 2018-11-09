@@ -1,0 +1,17 @@
+@import 'variables';
+
+.footer {
+    margin-top: $spacer;
+    padding-top: $spacer;
+    margin-bottom: $spacer;
+    padding-bottom: $spacer;
+    border-top: .1rem solid $brand-grey-lighter;
+    font-size: $font-size-small;
+    text-align: center;
+
+    a {
+        font-family: $font-family-button;
+        text-transform: uppercase;
+        color: $brand-grey-light;
+    }
+}
