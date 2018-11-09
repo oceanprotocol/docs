@@ -31,6 +31,8 @@
 
     li {
         display: block;
+
+        &:before { display: none; }
     }
 }
 

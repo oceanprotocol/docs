@@ -8,13 +8,10 @@
 }
 
 .headerContent {
-    max-width: $break-point--large;
-    margin-left: auto;
-    margin-right: auto;
+    composes: content from './Content.module.scss';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 $spacer;
 }
 
 .headerLogo {
@@ -31,9 +28,10 @@
 }
 
 .headerLogoImage {
-    width: 60px;
-    height: 60px;
+    width: 4rem;
+    height: 4rem;
     fill: #fff;
+    margin: 0;
 }
 
 .headerTitle {

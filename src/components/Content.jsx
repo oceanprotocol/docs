@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styles from './Content.module.scss'
 
 const Content = ({ children }) => (
-    <div className={styles.content}>{children}</div>
+    <section className={styles.content}>{children}</section>
 )
 
 Content.propTypes = {

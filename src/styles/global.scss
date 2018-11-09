@@ -51,13 +51,81 @@ a {
 
 p {
     margin: 0;
-    margin-bottom: $spacer / 2;
+    margin-bottom: $spacer / $line-height;
 }
 
+// Lists
+/////////////////////////////////////
+
+ul {
+    li {
+        &::before {
+            content: ' \25AA'; // Black Small Square: ▪ &#9642;
+            top: -2px;
+        }
+    }
+}
+
+ol {
+    counter-reset: ol-counter;
+
+    li {
+        &::before {
+            content: counter(ol-counter) '.';
+            counter-increment: ol-counter;
+            font-family: $font-family-button;
+            top: -1px;
+        }
+    }
+
+    ul li::before {
+        content: ' \25AA';
+    }
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: $spacer;
+    padding-left: $spacer / $line-height;
+    list-style: none;
+
+    li {
+        position: relative;
+        display: block;
+
+        &::before {
+            position: absolute;
+            left: -($spacer / $line-height);
+            color: $brand-grey-light;
+            user-select: none;
+        }
+    }
+}
+
+// Inline typography
+/////////////////////////////////////
+
+b,
 strong,
-.strong {
+.bold {
     font-family: $font-family-button;
     font-weight: 600;
+}
+
+em,
+.italic {
+    font-style: italic;
+}
+
+abbr[title],
+dfn {
+    text-transform: none;
+    font-style: normal;
+    font-size: inherit;
+    border-bottom: 1px dashed $brand-grey-light;
+    cursor: help;
+    font-feature-settings: inherit;
 }
 
 h1,
@@ -91,46 +159,134 @@ h5 {
     font-size: $font-size-h5;
 }
 
-.fade {
-    &-enter {
-        opacity: .01;
+// Responsive Media
+/////////////////////////////////////
+
+figure,
+img,
+svg,
+video,
+audio,
+embed,
+canvas,
+picture {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+hr {
+    margin: $spacer * $line-height 0;
+    border: 0;
+    border-bottom: .1rem solid $brand-grey-lighter;
+}
+
+// Quotes
+/////////////////////////////////////
+
+q {
+    font-style: italic;
+}
+
+cite {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+blockquote,
+blockquote > p {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 0 $spacer;
+    padding-left: $spacer;
+}
+
+// Tables
+/////////////////////////////////////
+
+table {
+    width: 100%;
+    margin-bottom: $spacer * $line-height;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 0;
+        margin: 0;
+        padding: $spacer / 2;
+        border-bottom: 1px solid $brand-grey-lighter;
+        text-align: left;
+
+        &[align="center"] {
+            text-align: center;
+        }
+
+        &[align="right"] {
+            text-align: right;
+        }
     }
 
-    &-enter-active {
-        opacity: 1;
-        transition: opacity 400ms ease-out;
-    }
-
-    &-exit {
-        opacity: 1;
-    }
-
-    &-exit-active {
-        opacity: .01;
-        transition: opacity 400ms ease-in;
+    th {
+        font-family: $font-family-button;
+        font-weight: 600;
     }
 }
 
-.grow {
-    &-enter {
-        opacity: .01;
-        max-height: 0;
-    }
+// Code
+/////////////////////////////////////
 
-    &-enter-active {
-        opacity: 1;
-        max-height: 500px;
-        transition: 200ms ease-out;
-    }
+code,
+kbd,
+pre,
+samp {
+    // lots of !important to overwrite prims.js theme
+    font-family: $font-family-monospace !important;
+    font-size: $font-size-small !important;
+    background: $brand-black !important;
+    color: $brand-white !important;
+    border-radius: $border-radius !important;
+}
 
-    &-exit {
-        opacity: 1;
-        max-height: 500px;
-    }
+pre {
+    display: block;
+    margin-bottom: $spacer !important;
+    padding: 0 !important;
 
-    &-exit-active {
-        opacity: .01;
-        max-height: 0;
-        transition: 200ms ease-in;
+    // make 'em scrollable
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    code {
+        padding: $spacer;
+        white-space: pre;
+        display: block;
+        color: inherit;
+        overflow-wrap: normal;
+        word-wrap: normal;
+        word-break: normal;
+        overflow: auto;
     }
+}
+
+// Selection
+/////////////////////////////////////
+
+::-moz-selection {
+    background: $brand-black;
+    color: #fff;
+}
+
+::selection {
+    background: $brand-black;
+    color: #fff;
+}
+
+// Gatsby specific
+/////////////////////////////////////
+
+.anchor {
+    margin-top: .8rem;
 }

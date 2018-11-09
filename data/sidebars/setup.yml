@@ -1,8 +1,8 @@
 - group: Setup Guides
   items:
-    - title: Set Up a Keeper
-      link: /setup/keeper/
     - title: Set Up a Marketplace
       link: /setup/marketplace/
+    - title: Set Up a Keeper
+      link: /setup/keeper/
     - title: Publish Data or Services
       link: /setup/publisher/

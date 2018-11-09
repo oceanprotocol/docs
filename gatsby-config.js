@@ -1,7 +1,8 @@
 module.exports = {
     siteMetadata: {
         title: 'Ocean Protocol Documentation',
-        description: '',
+        description:
+            'Learn everything about how to develop with Ocean Prototocol',
         siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com'
     },
     plugins: [
@@ -33,7 +34,7 @@ module.exports = {
                     {
                         resolve: 'gatsby-remark-images',
                         options: {
-                            maxWidth: 756,
+                            maxWidth: 640,
                             quality: 80,
                             withWebp: true,
                             linkImagesToOriginal: false,

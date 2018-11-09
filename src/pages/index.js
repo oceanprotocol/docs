@@ -3,12 +3,17 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
+import HeaderHome from '../components/HeaderHome'
+import { ReactComponent as Arrow } from '../images/arrow.svg'
 import styles from './index.module.scss'
 
 const SectionLink = ({ to, title, children }) => (
     <Link to={to}>
         <h3 className={styles.sectionTitle}>{title}</h3>
         <p className={styles.sectionText}>{children}</p>
+        <span className={styles.sectionMore}>
+            Learn More <Arrow />
+        </span>
     </Link>
 )
 
@@ -19,7 +24,7 @@ SectionLink.propTypes = {
 }
 
 const IndexPage = ({ data, location }) => (
-    <Layout location={location}>
+    <Layout location={location} header={<HeaderHome />}>
         <Content>
             <ul className={styles.sections}>
                 {data.allSectionsYaml.edges.map(({ node }) => (
