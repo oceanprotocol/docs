@@ -196,6 +196,13 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
 
+```bash
+git clone https://github.com/oceanprotocol/docker-images.git
+cd docker-images/
+
+./start_ocean.sh --latest
+```
+
 ```js
 const { Ocean, Logger } = require('@oceanprotocol/squid');
 

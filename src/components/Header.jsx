@@ -1,10 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { ReactComponent as Logo } from '@oceanprotocol/art/logo/logo-white.svg'
 import styles from './Header.module.scss'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
     <StaticQuery
         query={graphql`
             query {
@@ -54,9 +53,5 @@ const Header = ({ siteTitle }) => (
         }}
     />
 )
-
-Header.propTypes = {
-    siteTitle: PropTypes.string
-}
 
 export default Header

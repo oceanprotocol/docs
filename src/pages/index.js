@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderHome from '../components/HeaderHome'
+import Repositories from '../components/Repositories'
 import { ReactComponent as Arrow } from '../images/arrow.svg'
 import styles from './index.module.scss'
 
@@ -35,6 +36,8 @@ const IndexPage = ({ data, location }) => (
                     </li>
                 ))}
             </ul>
+
+            <Repositories />
         </Content>
     </Layout>
 )
