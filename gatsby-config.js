@@ -1,9 +1,13 @@
+const title = 'Ocean Protocol Documentation'
+const description =
+    'Learn everything about how to develop with Ocean Prototocol'
+const siteUrl = process.env.SITE_URL || 'https://docs.oceanprotocol.com'
+
 module.exports = {
     siteMetadata: {
-        title: 'Ocean Protocol Documentation',
-        description:
-            'Learn everything about how to develop with Ocean Prototocol',
-        siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com'
+        title,
+        description,
+        siteUrl
     },
     plugins: [
         {
@@ -66,6 +70,8 @@ module.exports = {
                 ]
             }
         },
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
         {
             resolve: 'gatsby-plugin-svgr',
             options: {
@@ -76,8 +82,18 @@ module.exports = {
         },
         'gatsby-plugin-catch-links',
         'gatsby-plugin-react-helmet',
-        'gatsby-transformer-sharp',
-        'gatsby-plugin-sharp'
-        // 'gatsby-plugin-offline',
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                name: title,
+                short_name: 'Docs',
+                start_url: '/',
+                background_color: '#e2e2e2',
+                theme_color: '#141414',
+                display: 'minimal-ui',
+                icon: 'src/images/profile.png'
+            }
+        },
+        'gatsby-plugin-offline'
     ]
 }

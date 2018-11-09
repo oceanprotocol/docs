@@ -24,7 +24,7 @@ const Repository = ({ name, description, links }) => (
 Repository.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    links: PropTypes.array.isRequired
+    links: PropTypes.array
 }
 
 export default Repository
