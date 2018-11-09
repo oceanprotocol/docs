@@ -1,11 +1,17 @@
-- name: 'Hello'
-  description: 'Hello'
+- name: 'keeper-contracts'
+  description: '💧 Integration of TCRs, CPM and Ocean Tokens in Solidity'
   links:
-    - name: 'Hello'
-      url: '#'
+    - name: 'GitHub'
+      url: 'https://github.com/oceanprotocol/keeper-contracts'
 
-- name: 'Hello'
-  description: 'Hello'
+- name: 'aquarius'
+  description: '🐋 Ocean Metadata API'
   links:
-    - name: 'Hello'
-      url: '#'
+    - name: 'GitHub'
+      url: 'https://github.com/oceanprotocol/aquarius'
+
+- name: 'pleuston'
+  description: '🦄 Web app for consumers to explore, download, and publish data assets.'
+  links:
+    - name: 'GitHub'
+      url: 'https://github.com/oceanprotocol/pleuston'

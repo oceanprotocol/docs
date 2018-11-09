@@ -2,7 +2,15 @@
 
 .components {
     margin-top: $spacer * 2;
+}
 
+.quickrun {
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+    text-align: center;
+}
+
+.componentsLists {
     @media (min-width: $break-point--medium) {
         display: flex;
         flex-wrap: wrap;
@@ -30,11 +38,17 @@
 }
 
 .component {
+    padding: $spacer / 2;
+    border: 1px solid $brand-grey-lighter;
+    border-radius: $border-radius;
+    margin-bottom: 5%;
+
     @media (min-width: $break-point--small) {
-        flex: 0 0 45%;
+        flex: 0 0 100%;
     }
 }
 
 .componentName {
     font-size: $font-size-large;
+    margin-top: 0;
 }
