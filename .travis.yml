@@ -4,12 +4,13 @@ node_js: node
 # will run `npm install` automatically here
 
 script:
-    - npm test
-    - npm run build
+  - npm test
+  - npm run build
 
 notifications:
-    email: false
+  email: false
 
 cache:
-    directories:
-        - node_modules
+  directories:
+    - node_modules
+    - public
