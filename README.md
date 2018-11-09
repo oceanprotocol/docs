@@ -11,14 +11,16 @@
 
 ---
 
+**These docs are meant to be viewed on [docs.oceanprotocol.com](https://docs.oceanprotocol.com). You can still browse them here but links or images might not work in some places.**
+
+---
+
 - [Content](#content)
     - [Editing docs](#editing-docs)
     - [Adding docs](#adding-docs)
 - [Development](#development)
 - [Authors](#authors)
 - [License](#license)
-
----
 
 ## Content
 
