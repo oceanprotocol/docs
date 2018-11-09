@@ -61,6 +61,7 @@ ul {
     li {
         &::before {
             content: ' \25AA'; // Black Small Square: ▪ &#9642;
+            top: -2px;
         }
     }
 }
@@ -73,6 +74,7 @@ ol {
             content: counter(ol-counter) '.';
             counter-increment: ol-counter;
             font-family: $font-family-button;
+            top: -1px;
         }
     }
 
@@ -95,7 +97,6 @@ ol {
         &::before {
             position: absolute;
             left: -($spacer / $line-height);
-            top: -1px;
             color: $brand-grey-light;
             user-select: none;
         }
@@ -217,11 +218,6 @@ table {
         margin: 0;
         padding: $spacer / 2;
         border-bottom: 1px solid $brand-grey-lighter;
-    }
-
-    th {
-        font-family: $font-family-button;
-        font-weight: 600;
         text-align: left;
 
         &[align="center"] {
@@ -233,8 +229,9 @@ table {
         }
     }
 
-    td {
-
+    th {
+        font-family: $font-family-button;
+        font-weight: 600;
     }
 }
 
@@ -245,10 +242,11 @@ code,
 kbd,
 pre,
 samp {
-    font-family: $font-family-monospace;
-    font-size: $font-size-small;
+    // lots of !important to overwrite prims.js theme
+    font-family: $font-family-monospace !important;
+    font-size: $font-size-small !important;
     background: $brand-black !important;
-    color: $brand-grey-lighter !important;
+    color: $brand-white !important;
     border-radius: $border-radius !important;
 }
 
