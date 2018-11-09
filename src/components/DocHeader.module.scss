@@ -1,0 +1,16 @@
+@import 'variables';
+
+.header {
+    margin-top: $spacer * $line-height;
+    margin-bottom: $spacer * $line-height;
+}
+
+.title {
+    font-size: $font-size-h1;
+    margin-top: 0;
+    margin-bottom: $spacer / $line-height;
+}
+
+.lead {
+    font-size: $font-size-large;
+}

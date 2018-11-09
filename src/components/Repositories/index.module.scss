@@ -6,7 +6,7 @@
 
 .quickrun {
     padding-top: $spacer;
-    padding-bottom: $spacer;
+    padding-bottom: $spacer * $line-height;
     text-align: center;
     max-width: $break-point--small;
     margin: auto;

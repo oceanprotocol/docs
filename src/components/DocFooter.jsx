@@ -8,7 +8,10 @@ const githubContentPath =
 
 const DocFooter = ({ post }) => (
     <footer className={styles.footer}>
-        <a href={`${githubContentPath}/${post.parent.relativePath}`}>
+        <a
+            href={`${githubContentPath}/${post.parent.relativePath}`}
+            className={!post.html ? styles.active : null}
+        >
             <Pencil /> Edit this page on GitHub
         </a>
     </footer>

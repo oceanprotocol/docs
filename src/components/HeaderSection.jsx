@@ -5,7 +5,7 @@ import Content from './Content'
 import styles from './HeaderSection.module.scss'
 
 const HeaderSection = ({ title }) => (
-    <header className={styles.headerSection}>
+    <aside className={styles.headerSection}>
         <Content>
             <h1 className={styles.headerSectionTitle}>
                 <Link className={styles.rootLink} to="/">
@@ -14,7 +14,7 @@ const HeaderSection = ({ title }) => (
                 {title}
             </h1>
         </Content>
-    </header>
+    </aside>
 )
 
 HeaderSection.propTypes = {

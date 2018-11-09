@@ -56,8 +56,11 @@ module.exports = {
                         }
                     },
                     'gatsby-remark-smartypants',
+                    'gatsby-remark-embed-video',
+                    'gatsby-remark-responsive-iframe',
                     'gatsby-remark-prismjs',
-                    'gatsby-remark-autolink-headers'
+                    'gatsby-remark-autolink-headers',
+                    'gatsby-remark-copy-linked-files'
                 ]
             }
         },

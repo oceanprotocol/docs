@@ -1,0 +1,28 @@
+@import 'variables';
+
+.docContent {
+    // handling long text, like URLs
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding-bottom: $spacer / $line-height;
+
+    figcaption {
+        font-size: $font-size-small;
+        text-align: center;
+        color: $brand-grey-light;
+        margin-top: $spacer / 2;
+    }
+
+    h1, h2 {
+        margin-top: $spacer * $line-height;
+        margin-bottom: $spacer / $line-height;
+        padding-bottom: $spacer / $line-height;
+        border-bottom: 1px solid $brand-grey-lighter;
+    }
+}
+
+.empty {
+    font-style: italic;
+    margin-bottom: $spacer * 2;
+}

@@ -1,6 +1,6 @@
 ---
 title: Content test
-description: This is intended as a quick reference and showcase.
+description: On this site, Markdown is transformed to HTML through Remark following GitHub Flavored Markdown. This page is intended as a quick reference and showcase.
 ---
 
 For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
@@ -18,7 +18,7 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 * [Inline HTML](#inline-html)
 * [Horizontal Rule](#horizontal-rule)
 * [Line Breaks](#line-breaks)
-* [YouTube Videos](#youtube-videos)
+* [Videos](#videos)
 
 ## Headers
 
@@ -215,9 +215,6 @@ No language indicated, so no syntax highlighting in Markdown Here (varies on Git
 But let's throw in a <b>tag</b>.
 ```
 
-Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
-
-
 ## Tables
 
 Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
@@ -351,17 +348,27 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 (Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
-## YouTube Videos
+## Videos
 
-They can't be added directly but you can add an image with a link to the video like this:
+Videos can be embedded like so, works with YouTube, Vimeo, VideoPress, Twitch:
+
+```
+`video: https://www.youtube.com/watch?v=6YRmyUZr2No`
+```
+
+resulting in:
+
+`video: https://www.youtube.com/watch?v=6YRmyUZr2No`
+
+You can also add an image with a link to the video like this:
 
 ```html
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE" target="_blank">
-    <img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No" target="_blank">
+    <img src="http://img.youtube.com/vi/6YRmyUZr2No/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
 </a>
 ```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No" target="_blank"><img src="http://img.youtube.com/vi/6YRmyUZr2No/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 Or, in pure Markdown, but losing the image sizing and border:
 

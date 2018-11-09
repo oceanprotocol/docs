@@ -30,6 +30,8 @@ All content lives in the [`/content`](content/) & [`/data`](data/) folders utili
 
 The final navigational organisation of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/).
 
+Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in the docs.
+
 ### Sections
 
 The documentation is split in multiple sections whose content lives in this repo:

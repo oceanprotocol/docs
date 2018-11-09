@@ -5,6 +5,8 @@ import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderSection from '../components/HeaderSection'
 import Sidebar from '../components/Sidebar'
+import DocContent from '../components/DocContent'
+import DocHeader from '../components/DocHeader'
 import DocFooter from '../components/DocFooter'
 import styles from './Doc.module.scss'
 
@@ -40,44 +42,25 @@ export default class DocTemplate extends Component {
                                 <Sidebar
                                     location={location}
                                     sidebar={section}
+                                    isPlaceholder={!post.html}
                                 />
                             </aside>
                             <article className={styles.main}>
-                                <header className={styles.header}>
-                                    <h1 className={styles.title}>{title}</h1>
-                                    {description && (
-                                        <p className={styles.lead}>
-                                            {description}
-                                        </p>
-                                    )}
-                                </header>
-
-                                <div
-                                    className={styles.docContent}
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.html
-                                    }}
+                                <DocHeader
+                                    title={title}
+                                    description={description}
                                 />
-
+                                <DocContent html={post.html} />
                                 <DocFooter post={post} />
                             </article>
                         </main>
                     ) : (
                         <article className={styles.mainSingle}>
-                            <header className={styles.header}>
-                                <h1 className={styles.title}>{title}</h1>
-                                {description && (
-                                    <p className={styles.lead}>{description}</p>
-                                )}
-                            </header>
-
-                            <div
-                                className={styles.docContent}
-                                dangerouslySetInnerHTML={{
-                                    __html: post.html
-                                }}
+                            <DocHeader
+                                title={title}
+                                description={description}
                             />
-
+                            <DocContent html={post.html} />
                             <DocFooter post={post} />
                         </article>
                     )}
