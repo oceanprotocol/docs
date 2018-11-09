@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'animations';
+
+.header {
+    background: $brand-black;
+    width: 100%;
+    padding: $spacer * 2 0;
+
+    min-height: 30rem;
+    max-height: 800px;
+    color: $brand-white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLogo,
+.headerTitle,
+.headerDescription {
+    animation: fadeInUp .8s ease-out backwards;
+}
+
+.headerLogo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.headerTitle {
+    margin-bottom: $spacer;
+    font-size: $font-size-h3;
+    animation-delay: .2s;
+
+    @media (min-width: $break-point--small) {
+        font-size: $font-size-h1;
+    }
+}
+
+.headerDescription {
+    margin-bottom: $spacer * 4;
+    max-width: $break-point--small;
+    margin-left: auto;
+    margin-right: auto;
+    animation-delay: .4s;
+
+    @media (min-width: $break-point--small) {
+        font-size: $font-size-large;
+    }
+}
+
+

@@ -1,10 +1,11 @@
 @import 'variables';
+@import 'animations';
 
 .sections {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: $spacer * 2;
+    margin-top: -($spacer * 4);
 
     @media (min-width: $break-point--medium) {
         display: flex;
@@ -13,29 +14,62 @@
 }
 
 .section {
-    margin-bottom: $spacer;
+    margin-top: $spacer;
+    animation: fadeInUp .8s ease-out backwards;
 
     &:before { display: none; }
 
     @media (min-width: $break-point--medium) {
         flex: 0 0 30%;
-        margin-bottom: 0;
     }
 
     a {
-        display: block;
-        padding: $spacer * $line-height;
+        display: flex;
+        flex-wrap: wrap;
+        padding: $spacer $spacer * $line-height;
         border-radius: $border-radius;
-        box-shadow: rgba($brand-black, .1) 0px 9px 18px;
+        box-shadow: rgba($brand-black, .15) 0px 9px 18px;
         color: $brand-grey;
+        background: $brand-white;
         height: 100%;
+
+        &:hover,
+        &:focus {
+            box-shadow: rgba($brand-black, .15) 0px 12px 20px;
+        }
+    }
+
+    animation-delay: .4s;
+
+    &:nth-child(2) {
+        animation-delay: .6s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: .8s;
     }
 }
 
 .sectionTitle {
     margin-top: 0;
+    margin-bottom: $spacer / $line-height;
+    width: 100%;
 }
 
 .sectionText {
     margin-bottom: 0;
+}
+
+.sectionMore {
+    align-self: flex-end;
+    margin-top: $spacer / $line-height;
+    color: $brand-pink;
+    width: 100%;
+
+    svg {
+        display: inline-block;
+        width: $font-size-small;
+        height: $font-size-small;
+        fill: $brand-grey-light;
+    }
 }
