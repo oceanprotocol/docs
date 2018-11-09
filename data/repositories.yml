@@ -9,7 +9,7 @@
           url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 
     - name: aquarius
-      description: '🐋 Provides an off-chain database store for metadata about data assets.'
+      description: '🐋 Off-chain database store for data assets metadata.'
       links:
         - name: GitHub
           url: https://github.com/oceanprotocol/aquarius

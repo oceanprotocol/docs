@@ -19,9 +19,11 @@
     - title: Reporting vulnerabilities
       link: /concepts/vulnerabilities/
 
-- group: Development
+- group: Roadmap
   items:
-    - title: Overview
+    - title: Development & Governance
       link: /concepts/development/
     - title: Contributing
       link: /concepts/contributing/
+    - title: Code of Conduct
+      link: /concepts/code-of-conduct/

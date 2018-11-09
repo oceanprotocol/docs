@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Get up to speed with Ocean Protocol
+description: Get up to speed with Ocean Protocol.
 ---
 
 ## What is Ocean Protocol?
@@ -15,6 +15,8 @@ Through blockchain technology and tokens, Ocean Protocol connects data providers
 
 By bringing together decentralized blockchain technology, a data sharing framework, and an ecosystem for data and related services, Ocean Protocol is committed to kick-starting a new Data Economy that touches every single person, company and device, giving power back to data owners, enabling people to reap value from data to better our world.
 
+## Papers
+
 There are more details on the
 [Ocean Protocol home page](https://oceanprotocol.com/),
 and in the whitepapers:
@@ -22,3 +24,7 @@ and in the whitepapers:
 -   [Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)
 -   [Business Whitepaper](https://oceanprotocol.com/business-whitepaper.pdf)
 -   [Reference Marketplace Framework](https://oceanprotocol.com/marketplace-framework.pdf)
+
+## More information
+
+-   [Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)

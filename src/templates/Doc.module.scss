@@ -9,6 +9,7 @@
 .sidebar {
     flex: 0 0 30%;
     padding-right: $spacer * 2;
+    margin-top: $spacer / 2;
 
     + .main {
         flex: 0 0 70%;
@@ -22,7 +23,7 @@
 }
 
 .header {
-    margin-top: $spacer;
+    margin-top: $spacer * $line-height;
     margin-bottom: $spacer * $line-height;
 }
 

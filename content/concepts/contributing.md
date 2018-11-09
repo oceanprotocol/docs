@@ -1,8 +1,9 @@
 ---
 title: Contributing
+description: If you would like to contribute to Ocean Protocol, you have different possibilities.
 ---
 
-If you would like to contribute, you have different alternatives:
+All contributions to Ocean Protocol are governed by our [Code of Conduct](code-of-conduct/).
 
 ## Report a Bug
 

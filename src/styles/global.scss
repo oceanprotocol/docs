@@ -177,7 +177,7 @@ picture {
 }
 
 hr {
-    margin: $spacer * $line-height 0;
+    margin: $spacer 0;
     border: 0;
     border-bottom: .1rem solid $brand-grey-lighter;
 }
@@ -288,5 +288,5 @@ pre {
 /////////////////////////////////////
 
 .anchor {
-    margin-top: .8rem;
+    margin-top: .6rem;
 }
