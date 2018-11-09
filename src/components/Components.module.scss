@@ -1,0 +1,40 @@
+@import 'variables';
+
+.components {
+    margin-top: $spacer * 2;
+
+    @media (min-width: $break-point--medium) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.componentsList {
+    @media (min-width: $break-point--medium) {
+        flex: 0 0 45%;
+    }
+}
+
+.componentsWrapper {
+    @media (min-width: $break-point--small) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.componentsTitle {
+    font-size: $font-size-h4;
+    color: $brand-grey-light;
+}
+
+.component {
+    @media (min-width: $break-point--small) {
+        flex: 0 0 45%;
+    }
+}
+
+.componentName {
+    font-size: $font-size-large;
+}
