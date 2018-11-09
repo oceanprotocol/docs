@@ -6,6 +6,13 @@
 
 .quickrun {
     padding-top: $spacer * 2;
-    padding-bottom: $spacer * 2;
+    padding-bottom: $spacer;
     text-align: center;
+    max-width: $break-point--small;
+    margin: auto;
+
+    pre {
+        text-align: left;
+        margin-top: $spacer / $line-height;
+    }
 }

@@ -6,13 +6,24 @@ import styles from './index.module.scss'
 const QuickRun = () => (
     <div className={styles.quickrun}>
         <strong>
-            Wanna quickly get an Ocean network running on your machine? Check
-            out{' '}
+            Wanna quickly get an Ocean network with all core components running
+            on your machine? Check out{' '}
             <a href="https://github.com/oceanprotocol/docker-images">
                 🐳 docker-images
             </a>
             .
         </strong>
+        <pre className="language-bash">
+            <code className="language-bash">
+                <span className="token function">git</span> clone
+                https://github.com/oceanprotocol/docker-images.git
+                <br />
+                <span className="token function">cd</span> docker-images/
+                <br />
+                <br />
+                ./start_ocean.sh --latest
+            </code>
+        </pre>
     </div>
 )
 
