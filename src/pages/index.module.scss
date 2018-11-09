@@ -15,7 +15,7 @@
 
 .section {
     margin-top: $spacer;
-    animation: fadeInUp .8s ease-out backwards;
+    animation: fadeInUp .8s backwards;
 
     &:before { display: none; }
 

@@ -179,13 +179,15 @@ Inline `code` has `back-ticks around` it.
 Blocks of code are either fenced by lines with three back-ticks, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
 <pre><code>```js
-var s = "JavaScript syntax highlighting";
-alert(s);
+...
 ```
 
 ```python
-s = "Python syntax highlighting"
-print s
+...
+```
+
+```java
+...
 ```
 
 ```
@@ -194,14 +196,42 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+```js
+const { Ocean, Logger } = require('@oceanprotocol/squid');
+
+(async () => {
+    const ocean = await Ocean.getInstance({
+        nodeUri: 'http://localhost:8545'
+    })
+
+    const accounts = await ocean.getAccounts()
+
+    Logger.log(JSON.stringify(accounts, null, 2))
+})()
 ```
 
 ```python
-s = "Python syntax highlighting"
-print s
+from squid_py.ocean_contracts import OceanContractsWrapper
+
+ocean = OceanContractsWrapper(host='http://localhost', port=8545, config_path='config.ini')
+
+ocean.init_contracts()
+```
+
+```java
+package com.oceanprotocol.squid.core;
+
+import com.oceanprotocol.squid.models.AbstractModel;
+
+import java.io.IOException;
+
+public interface FromJsonToModel {
+
+    static AbstractModel convertToModel(String json) throws IOException {
+        throw new UnsupportedOperationException();
+    };
+
+}
 ```
 
 ```
