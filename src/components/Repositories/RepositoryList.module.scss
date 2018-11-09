@@ -1,0 +1,28 @@
+@import 'variables';
+
+.repositoryLists {
+    @media (min-width: $break-point--medium) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.repositoryList {
+    @media (min-width: $break-point--medium) {
+        flex: 0 0 45%;
+    }
+}
+
+.repositoryWrapper {
+    @media (min-width: $break-point--small) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.repositoryListTitle {
+    font-size: $font-size-h4;
+    color: $brand-grey-light;
+}
