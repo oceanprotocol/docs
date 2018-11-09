@@ -24,6 +24,44 @@ Component.propTypes = {
     links: PropTypes.array.isRequired
 }
 
+const ComponentsList = ({ components }) => (
+    <div className={styles.componentsLists}>
+        {components.map(({ node }) => (
+            <div key={node.id} className={styles.componentsList}>
+                <h3 className={styles.componentsTitle}>{node.group}</h3>
+
+                <div className={styles.componentsWrapper}>
+                    {node.items.map(item => (
+                        <Component
+                            key={item.name}
+                            name={item.name}
+                            description={item.description}
+                            links={item.links}
+                        />
+                    ))}
+                </div>
+            </div>
+        ))}
+    </div>
+)
+
+ComponentsList.propTypes = {
+    components: PropTypes.array.isRequired
+}
+
+const QuickRun = () => (
+    <div className={styles.quickrun}>
+        <strong>
+            Wanna quickly get an Ocean network running on your machine? Check
+            out{' '}
+            <a href="https://github.com/oceanprotocol/docker-images">
+                🐳 docker-images
+            </a>
+            .
+        </strong>
+    </div>
+)
+
 const Components = () => (
     <StaticQuery
         query={graphql`
@@ -31,11 +69,15 @@ const Components = () => (
                 allComponentsYaml {
                     edges {
                         node {
-                            name
-                            description
-                            links {
+                            id
+                            group
+                            items {
                                 name
-                                url
+                                description
+                                links {
+                                    name
+                                    url
+                                }
                             }
                         }
                     }
@@ -47,52 +89,8 @@ const Components = () => (
 
             return (
                 <div className={styles.components}>
-                    <div className={styles.quickrun}>
-                        <strong>
-                            Wanna quickly get an Ocean network running on your
-                            machine? Check out{' '}
-                            <a href="https://github.com/oceanprotocol/docker-images">
-                                🐳 docker-images
-                            </a>
-                            .
-                        </strong>
-                    </div>
-
-                    <div className={styles.componentsLists}>
-                        <div className={styles.componentsList}>
-                            <h3 className={styles.componentsTitle}>
-                                Core Components
-                            </h3>
-
-                            <div className={styles.componentsWrapper}>
-                                {components.map(({ node }) => (
-                                    <Component
-                                        key={node.name}
-                                        name={node.name}
-                                        description={node.description}
-                                        links={node.links}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className={styles.componentsList}>
-                            <h3 className={styles.componentsTitle}>
-                                Libraries
-                            </h3>
-
-                            <div className={styles.componentsWrapper}>
-                                {components.map(({ node }) => (
-                                    <Component
-                                        key={node.name}
-                                        name={node.name}
-                                        description={node.description}
-                                        links={node.links}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+                    <QuickRun />
+                    <ComponentsList components={components} />
                 </div>
             )
         }}

@@ -1,49 +1,53 @@
-- name: keeper-contracts
-  description: '💧 Integration of TCRs, CPM and Ocean Tokens in Solidity'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/keeper-contracts
-    - name: Documentation
-      url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
+- group: Core Components
+  items:
+    - name: keeper-contracts
+      description: '💧 Integration of TCRs, CPM and Ocean Tokens in Solidity'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/keeper-contracts
+        - name: Documentation
+          url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 
-- name: aquarius
-  description: '🐋 Ocean Metadata API'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/aquarius
+    - name: aquarius
+      description: '🐋 Ocean Metadata API'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/aquarius
 
-- name: brizo
-  description: 'Helping publishers to expose their services'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/brizo
+    - name: brizo
+      description: 'Helping publishers to expose their services'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/brizo
 
-- name: pleuston
-  description: '🦄 Web app for consumers to explore, download, and publish data assets.'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/pleuston
+    - name: pleuston
+      description: '🦄 Web app for consumers to explore, download, and publish data assets.'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/pleuston
 
-- name: squid-js
-  description: '🦑 JavaScript client library for Ocean Protocol'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/squid-js
+- group: Libraries
+  items:
+    - name: squid-js
+      description: '🦑 JavaScript client library for Ocean Protocol'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/squid-js
 
-- name: squid-py
-  description: '🦑 Python client library for Ocean Protocol'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/squid-py
+    - name: squid-py
+      description: '🦑 Python client library for Ocean Protocol'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/squid-py
 
-- name: squid-java
-  description: '🦑 Java client library for Ocean Protocol'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/squid-java
+    - name: squid-java
+      description: '🦑 Java client library for Ocean Protocol'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/squid-java
 
-- name: secret-store-client-js
-  description: '🔑JavaScript implementation of the parity secret store for use in ocean.'
-  links:
-    - name: GitHub
-      url: https://github.com/oceanprotocol/secret-store-client-js
+    - name: secret-store-client-js
+      description: '🔑JavaScript implementation of the parity secret store for use in ocean.'
+      links:
+        - name: GitHub
+          url: https://github.com/oceanprotocol/secret-store-client-js
