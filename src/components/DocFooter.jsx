@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { ReactComponent as Pencil } from '../images/pencil.svg'
 import styles from './DocFooter.module.scss'
 
 const DocFooter = ({ post }) => (
@@ -9,7 +10,7 @@ const DocFooter = ({ post }) => (
                 post.parent.relativePath
             }`}
         >
-            Edit on GitHub
+            <Pencil /> Edit this page on GitHub
         </a>
     </footer>
 )

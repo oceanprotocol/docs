@@ -13,5 +13,17 @@
         font-family: $font-family-button;
         text-transform: uppercase;
         color: $brand-grey-light;
+
+        &:hover,
+        &:focus {
+            color: $brand-pink;
+        }
+
+        svg {
+            display: inline-block;
+            margin-right: $spacer / 10;
+            margin-bottom: -1px;
+            fill: $brand-grey-light;
+        }
     }
 }
