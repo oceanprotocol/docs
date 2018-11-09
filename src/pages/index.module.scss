@@ -36,6 +36,10 @@
         &:hover,
         &:focus {
             box-shadow: rgba($brand-black, .15) 0px 12px 20px;
+
+            svg {
+                transform: translate3d(.2rem, 0, 0);
+            }
         }
     }
 
@@ -65,11 +69,14 @@
     margin-top: $spacer / $line-height;
     color: $brand-pink;
     width: 100%;
+    font-family: $font-family-button;
+    font-weight: $font-weight-bold;
 
     svg {
         display: inline-block;
         width: $font-size-small;
         height: $font-size-small;
         fill: $brand-grey-light;
+        transition: transform .2s ease-out;
     }
 }

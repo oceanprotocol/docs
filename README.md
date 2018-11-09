@@ -16,30 +16,59 @@
 ---
 
 - [Content](#content)
+    - [Sections](#sections)
     - [Editing docs](#editing-docs)
     - [Adding docs](#adding-docs)
+    - [Repositories](#repositories)
 - [Development](#development)
 - [Authors](#authors)
 - [License](#license)
 
 ## Content
 
-...documentation concept...
+All content lives in the [`/content`](content/) & [`/data`](data/) folders utilizing GitHub Flavored Markdown and YAML. Content is organized into the above mentioned categories through subfolders. Those subfolder names, along with the file name, define the final url of a given piece of content.
 
-The documentation is split in multiple parts whose content lives in this repo:
+The final navigational organisation of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/).
+
+### Sections
+
+The documentation is split in multiple sections whose content lives in this repo:
 
 -   Core concepts: high-level explanation of concepts, assumptions, and components
 -   Setup: getting started for various stakeholders and use cases
 -   Tutorials: detailed tutorials
 
-Additionally, these docs live in their respective repos and are pulled into this site on build time:
+Those sections and their copy are defined in the [`/data/sections.yml`](data/sections.yml) file.
+
+TODO: Additionally, these docs live in their respective repos and are pulled into this site on build time:
 
 -   API reference
 -   Component docs
 
 ### Editing docs
 
+Every article on [docs.oceanprotocol.com](https://docs.oceanprotocol.com) ends with an _Edit this page on GitHub_ link. Clicking that will put you to the right place in the repository from where you can hit the _Edit_ pencil icon.
+
+GitHub will automatically fork the repository if you are not part of the `oceanprotocol` organisation on GitHub. Members can simply push to a new branch on the original repo.
+
+The editing workflow is as follows:
+
+1. Make your changes
+2. Push your changes to a new branch in the repo, or in your fork
+3. Open a pull request against `master`, automatically asking for review
+4. Wait for review, possibly make request changes
+5. Wait for all checks to pass
+6. Merge!
+
 ### Adding docs
+
+...
+
+### Repositories
+
+The repositories list is currently sourced from the [`/data/repositories.yml`](data/repositories.yml) file. The GitHub link is auto generated from the given repository name and will always be added by default.
+
+-   [`/data/repositories.yml`](data/repositories.yml)
 
 ## Development
 
