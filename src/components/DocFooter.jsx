@@ -3,13 +3,12 @@ import PropTypes from 'prop-types'
 import { ReactComponent as Pencil } from '../images/pencil.svg'
 import styles from './DocFooter.module.scss'
 
+const githubContentPath =
+    'https://github.com/oceanprotocol/docs/blob/master/content'
+
 const DocFooter = ({ post }) => (
     <footer className={styles.footer}>
-        <a
-            href={`https://github.com/oceanprotocol/docs/blob/master/content/${
-                post.parent.relativePath
-            }`}
-        >
+        <a href={`${githubContentPath}/${post.parent.relativePath}`}>
             <Pencil /> Edit this page on GitHub
         </a>
     </footer>

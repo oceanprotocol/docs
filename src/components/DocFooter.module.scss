@@ -13,6 +13,7 @@
         font-family: $font-family-button;
         text-transform: uppercase;
         color: $brand-grey-light;
+        margin: 0 $spacer / 2;
 
         &:hover,
         &:focus {
