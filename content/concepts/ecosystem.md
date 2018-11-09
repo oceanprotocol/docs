@@ -34,3 +34,20 @@ Client libraries used by applications to interact with Ocean nodes, including Ke
 -   [🦑 squid-js](https://github.com/oceanprotocol/squid-js)
 -   [🦑 squid-py](https://github.com/oceanprotocol/squid-py)
 -   [🦑 squid-java](https://github.com/oceanprotocol/squid-java)
+
+## Docker images
+
+All of our core components generate Docker images automatically and we provide some handy Docker Compose scripts to help with testing, showcasing, and developing Ocean Protocol.
+
+-   [🐳 docker-images](https://github.com/oceanprotocol/docker-images)
+
+### Full Ocean network stack
+
+As a quick start, you can get a fully working Ocean network with all of the core components mentioned above working together:
+
+```bash
+git clone https://github.com/oceanprotocol/docker-images.git
+cd docker-images/
+
+./start_ocean.sh --latest
+```

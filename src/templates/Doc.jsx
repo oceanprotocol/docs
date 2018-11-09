@@ -31,7 +31,7 @@ export default class DocTemplate extends Component {
 
         return (
             <Layout location={location}>
-                <HeaderSection title={sectionTitle} />
+                <HeaderSection title={section ? sectionTitle : title} />
 
                 <Content>
                     {section ? (

@@ -5,7 +5,6 @@
     background-size: cover;
     width: 100%;
     padding: $spacer / 2 0;
-    padding-right: $spacer / 1.5;
 }
 
 .headerContent {
@@ -18,7 +17,6 @@
 .headerLogo {
     display: flex;
     align-items: center;
-    width: 50%;
     cursor: pointer;
 
     &:hover,
@@ -36,9 +34,9 @@
 }
 
 .headerTitle {
-    font-size: $font-size-h4;
-    color: $brand-white;
-    margin-left: $spacer;
+    font-size: $font-size-h3;
+    color: $brand-grey-light;
+    margin-left: $spacer / 2;
     display: none;
 
     @media (min-width: $break-point--small) {
@@ -54,7 +52,11 @@
     display: inline-block;
     margin: 0 $spacer / 2;
     font-family: $font-family-button;
-    color: $brand-grey-light;
+    color: $brand-grey-lighter;
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     &:hover,
     &:focus {

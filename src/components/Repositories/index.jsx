@@ -1,17 +1,19 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import RepositoryList from './RepositoryList'
 import styles from './index.module.scss'
 
 const QuickRun = () => (
     <div className={styles.quickrun}>
+        <strong className={styles.tldr}>TL;DR</strong>
         <strong>
-            Wanna quickly get an Ocean network with all core components running
-            on your machine? Check out{' '}
+            Wanna quickly get an Ocean network with all{' '}
+            <Link to="/concepts/ecosystem/">core components</Link> running on
+            your machine? Check out{' '}
             <a href="https://github.com/oceanprotocol/docker-images">
                 🐳 docker-images
             </a>
-            .
+            :
         </strong>
         <pre className="language-bash">
             <code className="language-bash">

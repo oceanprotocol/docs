@@ -29,3 +29,7 @@ where the associated blockchain network is running the Ocean Protocol
 ## Secret Store
 
 [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval.
+
+## Ocean network
+
+...

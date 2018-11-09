@@ -42,6 +42,7 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
+    padding-bottom: $spacer / $line-height;
 
     figcaption {
         font-size: $font-size-small;
@@ -51,7 +52,9 @@
     }
 
     h1, h2 {
-        margin-top: $spacer;
-        margin-bottom: $spacer;
+        margin-top: $spacer * $line-height;
+        margin-bottom: $spacer / $line-height;
+        padding-bottom: $spacer / $line-height;
+        border-bottom: 1px solid $brand-grey-lighter;
     }
 }

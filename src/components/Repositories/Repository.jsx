@@ -8,11 +8,15 @@ const Repository = ({ name, description, links }) => (
         <p>{description}</p>
 
         <ul className={styles.repositoryLinks}>
-            {links.map(link => (
-                <li key={link.url}>
-                    <a href={link.url}>{link.name}</a>
-                </li>
-            ))}
+            <li>
+                <a href={`https://github.com/oceanprotocol/${name}`}>GitHub</a>
+            </li>
+            {links &&
+                links.map(link => (
+                    <li key={link.url}>
+                        <a href={link.url}>{link.name}</a>
+                    </li>
+                ))}
         </ul>
     </div>
 )

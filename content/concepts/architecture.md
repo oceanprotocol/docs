@@ -3,7 +3,7 @@ title: Architecture
 description: The architecture of Ocean Protocol with all its components and how they work together.
 ---
 
-In the [Ecosystem overview](/concepts/ecosystem/) you got an overview about the components making up the Ocean Protocol network:
+In the [Ecosystem overview](/concepts/ecosystem/) you learned about the components making up the Ocean Protocol network:
 
 -   [💧 keeper-contracts](https://github.com/oceanprotocol/keeper-contracts)
 -   [🐋 aquarius](https://github.com/oceanprotocol/aquarius)

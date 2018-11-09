@@ -3,59 +3,34 @@
     - name: keeper-contracts
       description: '💧 Integration of TCRs, CPM and Ocean Tokens in Solidity'
       links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/keeper-contracts
         - name: Documentation
           url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 
     - name: aquarius
       description: '🐋 Off-chain database store for data assets metadata.'
       links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/aquarius
         - name: API reference
           url: https://github.com/oceanprotocol/aquarius/blob/develop/docs/for_api_users/API.md
 
     - name: brizo
       description: 'Helping publishers to expose their services'
-      links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/brizo
 
     - name: pleuston
       description: '🦄 Web app for consumers to explore, download, and publish data assets.'
-      links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/pleuston
 
 - group: Libraries
   items:
     - name: squid-js
       description: '🦑 JavaScript client library for Ocean Protocol'
-      links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/squid-js
 
     - name: squid-py
       description: '🦑 Python client library for Ocean Protocol'
-      links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/squid-py
 
     - name: squid-java
       description: '🦑 Java client library for Ocean Protocol'
-      links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/squid-java
 
     - name: secret-store-client-js
       description: '🔑 JavaScript implementation of the parity secret store for use in ocean.'
-      links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/secret-store-client-js
 
     - name: secret-store-client-py
       description: '🔑 Parity Secret Store Python Client'
-      links:
-        - name: GitHub
-          url: https://github.com/oceanprotocol/secret-store-client-py

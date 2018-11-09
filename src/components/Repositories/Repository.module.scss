@@ -4,7 +4,7 @@
     padding: $spacer / $line-height;
     border: 1px solid $brand-grey-lighter;
     border-radius: $border-radius;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 
     @media (min-width: $break-point--small) {
         flex: 0 0 100%;
@@ -19,12 +19,12 @@
 .repositoryLinks {
     margin: 0;
     padding: 0;
-    margin-left: -($spacer / 2);
+    margin-left: -($spacer / $line-height);
 
     li {
         display: inline-block;
         padding: 0;
-        margin-left: $spacer / 2;
+        margin-left: $spacer / $line-height;
 
         &:before { display: none; }
     }

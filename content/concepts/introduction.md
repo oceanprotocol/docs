@@ -18,7 +18,7 @@ By bringing together decentralized blockchain technology, a data sharing framewo
 ## Papers
 
 There are more details on the
-[Ocean Protocol home page](https://oceanprotocol.com/),
+[Ocean Protocol home page](https://oceanprotocol.com/#papers),
 and in the whitepapers:
 
 -   [Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)

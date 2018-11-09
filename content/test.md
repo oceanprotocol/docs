@@ -28,15 +28,6 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 ### H3
 #### H4
 ##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
 ```
 
 # H1
@@ -44,15 +35,6 @@ Alt-H2
 ### H3
 #### H4
 ##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
 
 ## Emphasis
 
@@ -145,26 +127,13 @@ Some text to show that the reference links can follow later.
 ## Images
 
 ```
-Here's our jellyfish (hover to see the title text):
-
-Inline-style:
-![alt text](https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish")
-
-Reference-style:
-![alt text][jellyfish]
-
-[jellyfish]: https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish"
+![alt text](jellyfish-grid@2x.png "Ocean Protocol Jellyfish")
 ```
 
-Here's our jellyfish (hover to see the title text):
+Here's our jellyfish, with the title being output as caption:
 
-Inline-style:
-![alt text](https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish")
+![alt text](../node_modules/@oceanprotocol/art/jellyfish/jellyfish-grid@2x.png "Ocean Protocol Jellyfish")
 
-Reference-style:
-![alt text][jellyfish]
-
-[jellyfish]: https://github.com/oceanprotocol/art/raw/master/jellyfish/jellyfish-grid%402x.png "Ocean Protocol Jellyfish"
 
 ## Code and Syntax Highlighting
 

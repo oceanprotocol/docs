@@ -21,9 +21,11 @@
 
 - group: Roadmap
   items:
-    - title: Development & Governance
+    - title: Development
       link: /concepts/development/
     - title: Contributing
       link: /concepts/contributing/
+    - title: Bounties
+      link: /concepts/bounties/
     - title: Code of Conduct
       link: /concepts/code-of-conduct/
