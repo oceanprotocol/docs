@@ -18,3 +18,10 @@
       link: /concepts/security/
     - title: Reporting vulnerabilities
       link: /concepts/vulnerabilities/
+
+- group: Development
+  items:
+    - title: Overview
+      link: /concepts/development/
+    - title: Contributing
+      link: /concepts/contributing/
