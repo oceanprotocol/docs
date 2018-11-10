@@ -28,5 +28,5 @@
 }
 
 .active {
-    color: $brand-pink !important;
+    color: $brand-pink !important; // stylelint-disable-line declaration-no-important
 }

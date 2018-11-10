@@ -27,7 +27,9 @@
         padding: 0;
         margin-left: $spacer / $line-height;
 
-        &:before { display: none; }
+        &:before {
+            display: none;
+        }
     }
 
     a {

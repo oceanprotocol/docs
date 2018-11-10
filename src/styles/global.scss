@@ -1,3 +1,5 @@
+// stylelint-disable selector-no-qualifying-type, declaration-no-important, selector-no-vendor-prefix
+
 @import 'variables';
 @import 'fonts';
 
@@ -59,7 +61,7 @@ p {
 
 ul {
     li {
-        &::before {
+        &:before {
             content: ' \25AA'; // Black Small Square: ▪ &#9642;
             top: -2px;
         }
@@ -70,7 +72,7 @@ ol {
     counter-reset: ol-counter;
 
     li {
-        &::before {
+        &:before {
             content: counter(ol-counter) '.';
             counter-increment: ol-counter;
             font-family: $font-family-button;
@@ -78,7 +80,7 @@ ol {
         }
     }
 
-    ul li::before {
+    ul li:before {
         content: ' \25AA';
     }
 }
@@ -94,7 +96,7 @@ ol {
         position: relative;
         display: block;
 
-        &::before {
+        &:before {
             position: absolute;
             left: -($spacer / $line-height);
             color: $brand-grey-light;
@@ -220,11 +222,11 @@ table {
         border-bottom: 1px solid $brand-grey-lighter;
         text-align: left;
 
-        &[align="center"] {
+        &[align='center'] {
             text-align: center;
         }
 
-        &[align="right"] {
+        &[align='right'] {
             text-align: right;
         }
     }

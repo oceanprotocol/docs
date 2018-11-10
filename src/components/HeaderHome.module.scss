@@ -2,7 +2,9 @@
 @import 'animations';
 
 .header {
-    background: $brand-black url('@oceanprotocol/art/jellyfish/jellyfish-back@2x.png') no-repeat center 7rem;
+    background: $brand-black
+        url('@oceanprotocol/art/jellyfish/jellyfish-back@2x.png') no-repeat
+        center 7rem;
     background-size: cover;
     width: 100%;
     padding: $spacer * 2 0;
@@ -46,5 +48,3 @@
         font-size: $font-size-large;
     }
 }
-
-

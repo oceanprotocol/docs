@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "stylelint-config-bigchaindb",
+    "stylelint-config-css-modules",
+    "./node_modules/prettier-stylelint/config.js"
+  ],
+  "syntax": "scss",
+  "rules": {
+      "no-descending-specificity": null
+  }
+}

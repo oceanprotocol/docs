@@ -17,12 +17,13 @@
     margin-top: $spacer;
     animation: fadeInUp .6s ease-out backwards;
 
-    &:before { display: none; }
+    &:before {
+        display: none;
+    }
 
     @media (min-width: $break-point--medium) {
         flex: 0 0 31%;
     }
-
     animation-delay: .4s;
 
     &:nth-child(2) {
@@ -39,7 +40,7 @@
     flex-wrap: wrap;
     padding: $spacer $spacer * $line-height;
     border-radius: $border-radius;
-    box-shadow: rgba($brand-black, .1) 0px 9px 18px;
+    box-shadow: rgba($brand-black, .1) 0 9px 18px;
     color: $brand-grey;
     background: $brand-white;
     height: 100%;
@@ -47,7 +48,7 @@
     &:hover,
     &:focus {
         color: $brand-grey;
-        box-shadow: rgba($brand-black, .1) 0px 12px 20px;
+        box-shadow: rgba($brand-black, .1) 0 12px 20px;
 
         svg {
             transform: translate3d(.2rem, 0, 0);
