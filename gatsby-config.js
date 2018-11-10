@@ -1,5 +1,19 @@
+let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
+
+console.log(`Using environment config: '${activeEnv}'`) // eslint-disable-line
+
+require('dotenv').config({
+    path: `.env.${activeEnv}`
+})
+
+if (!process.env.GITHUB_TOKEN) {
+    throw new Error(
+        `A GitHub token is required to build the site. Check the README
+        \nhttps://github.com/oceanprotocol/docs.`
+    )
+}
+
 const config = require('./config.js')
-require('dotenv').config()
 
 module.exports = {
     siteMetadata: {
