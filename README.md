@@ -23,6 +23,7 @@
     - [Repositories](#repositories)
 - [Development](#development)
     - [Use Docker](#use-docker)
+- [GitHub GraphQL API](#github-graphql-api)
 - [Authors](#authors)
 - [License](#license)
 
@@ -72,7 +73,26 @@ The editing workflow is as follows:
 
 ### Repositories
 
-The repositories list is currently sourced from the [`/data/repositories.yml`](data/repositories.yml) file. The GitHub link is auto generated from the given repository name and will always be added by default.
+The repositories list is currently sourced from the [`/data/repositories.yml`](data/repositories.yml) file, defining the grouping, the display order, and which repos to include.
+
+Inlcuding a repo requires only the `name` key and value, and it needs to be exactly the same as the repo name on GitHub:
+
+```yaml
+- name: brizo
+```
+
+Additional information about a repo will then be fetched automatically via [GitHub's GraphQL API](https://developer.github.com/v4/) on build time, and re-fetched every 5 minutes on client side.
+
+You can attach multiple links to a repo like so:
+
+```yaml
+- name: keeper-contracts
+  links:
+      - name: Documentation
+        url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
+```
+
+The GitHub link is automatically added for every repository name and will always be displayed.
 
 -   [`/data/repositories.yml`](data/repositories.yml)
 
@@ -111,6 +131,20 @@ docker-compose up
 ```
 
 This will expose a hot-reloading server under [localhost:8000](http://localhost:8000).
+
+## GitHub GraphQL API
+
+The GitHub GraphQL API integration is done through [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) and requires authorization.
+
+An environment variable `GITHUB_TOKEN` needs to present, filled with a [personal access token](https://github.com/settings/tokens) with the scope `public_repo`.
+
+For local development, you can simply create one and use it in your local .env file:
+
+```bash
+cp .env.sample .env.development
+vi .env.development
+# GITHUB_TOKEN=ADD-YOUR-TOKEN-HERE
+```
 
 ## Authors
 

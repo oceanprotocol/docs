@@ -1,36 +1,22 @@
 - group: Core Components
   items:
     - name: keeper-contracts
-      description: '💧 Integration of TCRs, CPM and Ocean Tokens in Solidity'
       links:
         - name: Documentation
           url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 
     - name: aquarius
-      description: '🐋 Off-chain database store for data assets metadata.'
       links:
         - name: API reference
           url: https://github.com/oceanprotocol/aquarius/blob/develop/docs/for_api_users/API.md
 
     - name: brizo
-      description: 'Helping publishers to expose their services'
-
     - name: pleuston
-      description: '🦄 Web app for consumers to explore, download, and publish data assets.'
 
 - group: Libraries
   items:
     - name: squid-js
-      description: '🦑 JavaScript client library for Ocean Protocol'
-
     - name: squid-py
-      description: '🦑 Python client library for Ocean Protocol'
-
     - name: squid-java
-      description: '🦑 Java client library for Ocean Protocol'
-
     - name: secret-store-client-js
-      description: '🔑 JavaScript implementation of the parity secret store for use in ocean.'
-
     - name: secret-store-client-py
-      description: '🔑 Parity Secret Store Python Client'
