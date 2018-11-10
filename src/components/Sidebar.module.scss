@@ -1,7 +1,32 @@
 @import 'variables';
 
 .sidebar {
-    padding-top: $spacer / 2;
+    padding-bottom: $spacer;
+    padding-right: $spacer / 2;
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar,
+    &::-moz-scrollbar {
+        display: none;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $brand-grey-lighter;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: darken($brand-white, 3%);
+    }
 }
 
 .groupTitle {

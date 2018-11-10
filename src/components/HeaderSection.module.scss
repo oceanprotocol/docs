@@ -1,7 +1,7 @@
 @import 'variables';
 
 .headerSection {
-    padding: $spacer 0;
+    padding: $spacer / $line-height 0;
     border-bottom: .1rem solid $brand-grey-lighter;
 }
 

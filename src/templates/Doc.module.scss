@@ -8,9 +8,7 @@
 
 .sidebar {
     flex: 0 0 27%;
-    padding-right: $spacer;
     margin-top: $spacer / 2;
-    position: sticky;
     top: $spacer;
 
     + .main {
