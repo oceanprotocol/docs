@@ -78,16 +78,16 @@ The repositories list is currently sourced from the [`/data/repositories.yml`](d
 Including a repo requires only the `name` key and value, and it needs to be exactly the same as the repo name on GitHub:
 
 ```yaml
-- name: brizo
+- name: pleuston
 ```
 
 Additional information about a repo will then be fetched automatically via [GitHub's GraphQL API](https://developer.github.com/v4/) on build time, and re-fetched every 5 minutes on client side. You can also add a private repo to prepare for a release, it will show up as soon as it is made public on GitHub.
 
 The above example will result in:
 
-<img width="541" alt="screen shot 2018-11-10 at 20 20 48" src="https://user-images.githubusercontent.com/90316/48305170-32e22700-e526-11e8-8ccb-88a288b77983.png">
+<img width="539" alt="screen shot 2018-11-10 at 22 01 59" src="https://user-images.githubusercontent.com/90316/48305989-4dbb9800-e534-11e8-8ee1-946c40ba7657.png">
 
-Additionally, you can attach multiple links to a repo. The GitHub link is automatically added for every repository name and will always be displayed. Add more links like so:
+Additionally, you can attach multiple links to a repo. The GitHub link is automatically added for every repository and will always be displayed. Add more links like so:
 
 ```yaml
 - name: keeper-contracts
@@ -164,6 +164,10 @@ query {
                         name
                         description
                         url
+                        forkCount
+                        stargazers {
+                            totalCount
+                        }
                     }
                 }
             }
