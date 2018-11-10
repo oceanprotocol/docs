@@ -22,6 +22,7 @@ const query = graphql`
         }
     }
 `
+
 const Header = () => (
     <StaticQuery
         query={query}

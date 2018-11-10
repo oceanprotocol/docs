@@ -31,6 +31,12 @@
             color: $brand-grey;
         }
     }
+
+    svg {
+        display: inline-block;
+        width: $font-size-large;
+        height: $font-size-large;
+    }
 }
 
 .links {
@@ -42,10 +48,10 @@
     }
 
     a {
-        padding: 0 $spacer / 4;
+        margin: 0 $spacer / 2;
 
         &:last-child {
-            padding-right: 0;
+            margin-right: 0;
         }
     }
 }

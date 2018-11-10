@@ -34,6 +34,8 @@ The final navigational organisation of the content is driven through the sidebar
 
 Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in the docs.
 
+Some global values used throughout the site can be set in [`config.js`](config.js).
+
 ### Sections
 
 The documentation is split in multiple sections whose content lives in this repo:

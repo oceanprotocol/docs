@@ -2,9 +2,9 @@ const config = require('./config.js')
 
 module.exports = {
     siteMetadata: {
-        siteTitle: config.siteTitle,
-        siteDescription: config.siteDescription,
-        siteUrl: config.siteUrl
+        // spread all of our config values here
+        // so they can easily be queried with GraphQL
+        ...config
     },
     plugins: [
         {
@@ -85,14 +85,14 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                name: config.title,
-                short_name: 'Docs',
-                description: config.description,
+                name: config.siteTitle,
+                short_name: config.siteShortTitle,
+                description: config.siteDescription,
                 start_url: '/',
                 background_color: '#e2e2e2',
                 theme_color: '#141414',
                 display: 'minimal-ui',
-                icon: 'src/images/profile.png'
+                icon: config.siteIcon
             }
         },
         'gatsby-plugin-offline',
