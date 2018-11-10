@@ -7,7 +7,7 @@ const queryGithub = graphql`
     query GitHubReposInfo {
         github {
             organization(login: "oceanprotocol") {
-                repositories(first: 100, isFork: false) {
+                repositories(first: 100, privacy: PUBLIC, isFork: false) {
                     edges {
                         node {
                             name
@@ -37,6 +37,11 @@ const Repository = ({ name, links }) => (
                 .filter(n => n)
 
             const repo = repoFilteredArray[0]
+
+            // safeguard against more empty items,
+            // e.g. when private repos are referenced in repositories.yml
+            if (repo === undefined) return null
+
             const { url, description } = repo
 
             return (

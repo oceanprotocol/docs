@@ -92,7 +92,7 @@ You can attach multiple links to a repo like so:
         url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 ```
 
-The GitHub link is automatically added for every repository name and will always be displayed.
+The GitHub link is automatically added for every repository name and will always be displayed. You can add a private repo to prepare for a release, it won't be displayed until it is made public on GitHub.
 
 -   [`/data/repositories.yml`](data/repositories.yml)
 
