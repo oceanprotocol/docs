@@ -5,6 +5,7 @@
   "author": "Ocean Protocol <devops@oceanprotocol.com>",
   "dependencies": {
     "@oceanprotocol/art": "^1.0.2",
+    "classnames": "^2.2.6",
     "gatsby": "^2.0.45",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-catch-links": "^2.0.8",

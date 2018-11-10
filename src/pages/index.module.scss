@@ -47,12 +47,32 @@
 
     &:hover,
     &:focus {
-        color: $brand-grey;
         box-shadow: rgba($brand-black, .1) 0 12px 20px;
 
         svg {
             transform: translate3d(.2rem, 0, 0);
         }
+    }
+}
+
+.purple {
+    .sectionTitle,
+    .sectionMore {
+        color: $brand-purple;
+    }
+}
+
+.blue {
+    .sectionTitle,
+    .sectionMore {
+        color: $brand-blue;
+    }
+}
+
+.orange {
+    .sectionTitle,
+    .sectionMore {
+        color: $orange;
     }
 }
 
@@ -64,6 +84,7 @@
 
 .sectionText {
     margin-bottom: 0;
+    color: $brand-grey;
 }
 
 .sectionMore {
