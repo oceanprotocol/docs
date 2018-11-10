@@ -10,22 +10,22 @@ const HeaderHome = () => (
             query {
                 site {
                     siteMetadata {
-                        title
-                        description
+                        siteTitle
+                        siteDescription
                     }
                 }
             }
         `}
         render={data => {
-            const { title, description } = data.site.siteMetadata
+            const { siteTitle, siteDescription } = data.site.siteMetadata
 
             return (
                 <header className={styles.header}>
                     <Content>
                         <Logo className={styles.headerLogo} />
-                        <h1 className={styles.headerTitle}>{title}</h1>
+                        <h1 className={styles.headerTitle}>{siteTitle}</h1>
                         <p className={styles.headerDescription}>
-                            {description}
+                            {siteDescription}
                         </p>
                     </Content>
                 </header>

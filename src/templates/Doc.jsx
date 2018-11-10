@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderSection from '../components/HeaderSection'
@@ -32,20 +33,36 @@ export default class DocTemplate extends Component {
         })
 
         return (
-            <Layout location={location}>
-                <HeaderSection title={section ? sectionTitle : title} />
+            <>
+                <Helmet>
+                    <title>{title}</title>
+                    <meta name="description" content={description} />
+                    <body className={section} />
+                </Helmet>
+                <Layout location={location}>
+                    <HeaderSection title={section ? sectionTitle : title} />
 
-                <Content>
-                    {section ? (
-                        <main className={styles.wrapper}>
-                            <aside className={styles.sidebar}>
-                                <Sidebar
-                                    location={location}
-                                    sidebar={section}
-                                    isPlaceholder={!post.html}
-                                />
-                            </aside>
-                            <article className={styles.main}>
+                    <Content>
+                        {section ? (
+                            <main className={styles.wrapper}>
+                                <aside className={styles.sidebar}>
+                                    <Sidebar
+                                        location={location}
+                                        sidebar={section}
+                                        isPlaceholder={!post.html}
+                                    />
+                                </aside>
+                                <article className={styles.main}>
+                                    <DocHeader
+                                        title={title}
+                                        description={description}
+                                    />
+                                    <DocContent html={post.html} />
+                                    <DocFooter post={post} />
+                                </article>
+                            </main>
+                        ) : (
+                            <article className={styles.mainSingle}>
                                 <DocHeader
                                     title={title}
                                     description={description}
@@ -53,31 +70,16 @@ export default class DocTemplate extends Component {
                                 <DocContent html={post.html} />
                                 <DocFooter post={post} />
                             </article>
-                        </main>
-                    ) : (
-                        <article className={styles.mainSingle}>
-                            <DocHeader
-                                title={title}
-                                description={description}
-                            />
-                            <DocContent html={post.html} />
-                            <DocFooter post={post} />
-                        </article>
-                    )}
-                </Content>
-            </Layout>
+                        )}
+                    </Content>
+                </Layout>
+            </>
         )
     }
 }
 
 export const pageQuery = graphql`
     query DocBySlug($slug: String!) {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             excerpt

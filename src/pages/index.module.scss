@@ -15,32 +15,12 @@
 
 .section {
     margin-top: $spacer;
-    animation: fadeInUp .8s backwards;
+    animation: fadeInUp .6s ease-out backwards;
 
     &:before { display: none; }
 
     @media (min-width: $break-point--medium) {
         flex: 0 0 31%;
-    }
-
-    a {
-        display: flex;
-        flex-wrap: wrap;
-        padding: $spacer $spacer * $line-height;
-        border-radius: $border-radius;
-        box-shadow: rgba($brand-black, .1) 0px 9px 18px;
-        color: $brand-grey;
-        background: $brand-white;
-        height: 100%;
-
-        &:hover,
-        &:focus {
-            box-shadow: rgba($brand-black, .1) 0px 12px 20px;
-
-            svg {
-                transform: translate3d(.2rem, 0, 0);
-            }
-        }
     }
 
     animation-delay: .4s;
@@ -51,6 +31,27 @@
 
     &:nth-child(3) {
         animation-delay: .8s;
+    }
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $spacer $spacer * $line-height;
+    border-radius: $border-radius;
+    box-shadow: rgba($brand-black, .1) 0px 9px 18px;
+    color: $brand-grey;
+    background: $brand-white;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+        color: $brand-grey;
+        box-shadow: rgba($brand-black, .1) 0px 12px 20px;
+
+        svg {
+            transform: translate3d(.2rem, 0, 0);
+        }
     }
 }
 

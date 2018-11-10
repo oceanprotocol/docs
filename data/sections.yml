@@ -1,6 +1,7 @@
 - title: Core Concepts
   description: Understand the fundamentals of Ocean Protocol.
   link: /concepts/introduction/
+  color: $brand-purple
 
 - title: Setup Guides
   description: Setting up the Ocean Protocol components.

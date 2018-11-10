@@ -3,29 +3,30 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import { ReactComponent as Logo } from '@oceanprotocol/art/logo/logo-white.svg'
 import styles from './Header.module.scss'
 
-const Header = () => (
-    <StaticQuery
-        query={graphql`
-            query {
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
+const query = graphql`
+    query {
+        site {
+            siteMetadata {
+                siteTitle
+            }
+        }
 
-                allSectionsYaml {
-                    edges {
-                        node {
-                            title
-                            description
-                            link
-                        }
-                    }
+        allSectionsYaml {
+            edges {
+                node {
+                    title
+                    description
+                    link
                 }
             }
-        `}
+        }
+    }
+`
+const Header = () => (
+    <StaticQuery
+        query={query}
         render={data => {
-            const { title } = data.site.siteMetadata
+            const { siteTitle } = data.site.siteMetadata
             const sections = data.allSectionsYaml.edges
 
             return (
@@ -33,7 +34,7 @@ const Header = () => (
                     <div className={styles.headerContent}>
                         <Link to={'/'} className={styles.headerLogo}>
                             <Logo className={styles.headerLogoImage} />
-                            <h1 className={styles.headerTitle}>{title}</h1>
+                            <h1 className={styles.headerTitle}>{siteTitle}</h1>
                         </Link>
 
                         <nav className={styles.headerMenu}>

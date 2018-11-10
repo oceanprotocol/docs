@@ -79,4 +79,14 @@
     composes: link;
     color: $brand-purple;
     border-left-color: $brand-purple;
+
+    :global(.setup) & {
+        color: $brand-blue;
+        border-left-color: $brand-blue;
+    }
+
+    :global(.tutorials) & {
+        color: $orange;
+        border-left-color: $orange;
+    }
 }
