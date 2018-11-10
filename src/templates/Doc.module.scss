@@ -7,17 +7,30 @@
 }
 
 .sidebar {
-    flex: 0 0 30%;
-    padding-right: $spacer * 2;
+    flex: 0 0 27%;
+    padding-right: $spacer;
     margin-top: $spacer / 2;
+    position: sticky;
+    top: $spacer;
 
     + .main {
-        flex: 0 0 70%;
-        max-width: $break-point--small;
+        flex: 0 0 73%;
+    }
+}
+
+.main {
+    background: $brand-white;
+    padding: 0 $spacer;
+    border: 1px solid $brand-grey-lighter;
+
+    @media (min-width: $break-point--medium) {
+        padding: 0 $spacer * 2;
+        border-top: 0;
     }
 }
 
 .mainSingle {
+    composes: main;
     max-width: $break-point--small;
     margin: auto;
 }

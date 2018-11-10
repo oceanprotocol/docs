@@ -1,7 +1,11 @@
 @import 'variables';
 
 .content {
-    padding: 0 $spacer;
+    padding: 0 $spacer / 2;
     max-width: $break-point--large;
     margin: auto;
+
+    @media (min-width: $break-point--small) {
+        padding: 0 $spacer;
+    }
 }
