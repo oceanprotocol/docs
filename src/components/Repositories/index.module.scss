@@ -3,23 +3,3 @@
 .repositories {
     margin-top: $spacer * 2;
 }
-
-.quickrun {
-    padding-top: $spacer;
-    padding-bottom: $spacer * $line-height;
-    text-align: center;
-    max-width: $break-point--small;
-    margin: auto;
-
-    pre {
-        text-align: left;
-        margin-top: $spacer / $line-height;
-    }
-}
-
-.tldr {
-    display: block;
-    margin-bottom: $spacer / 2;
-    color: $brand-grey-light;
-    font-size: $font-size-h4;
-}

@@ -1,0 +1,55 @@
+@import 'variables';
+
+.quickrun {
+    padding-top: $spacer;
+    padding-bottom: $spacer * 2.5;
+    text-align: center;
+
+    pre {
+        text-align: left;
+        margin-top: $spacer / $line-height;
+    }
+}
+
+.header,
+.docker {
+    margin: auto;
+
+    @media (min-width: $break-point--medium) {
+        max-width: 33rem;
+    }
+}
+
+.header {
+    margin-bottom: $spacer;
+}
+
+.docker {
+    @media (min-width: $break-point--large) {
+        max-width: none;
+        display: flex;
+        justify-content: space-between;
+
+        > pre,
+        > article {
+            flex: 0 0 48%;
+            margin: 0 !important; // stylelint-disable-line
+        }
+
+        pre {
+            display: flex;
+            align-items: center;
+
+            > code {
+                padding: $spacer / $line-height;
+            }
+        }
+    }
+}
+
+.tldr {
+    display: block;
+    margin-bottom: $spacer / 2;
+    color: $brand-grey-light;
+    font-size: $font-size-h4;
+}

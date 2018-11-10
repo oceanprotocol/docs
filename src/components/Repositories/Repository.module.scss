@@ -6,6 +6,8 @@
     background: $brand-white;
     border-radius: $border-radius;
     margin-bottom: 4%;
+    font-size: $font-size-small;
+    text-align: left;
 
     @media (min-width: $break-point--small) {
         flex: 0 0 100%;
@@ -13,8 +15,17 @@
 }
 
 .repositoryName {
-    font-size: $font-size-h3;
+    font-size: $font-size-h4;
     margin-top: 0;
+}
+
+.repositoryRelease {
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-small;
+    color: $brand-grey-light;
+    display: inline-block;
+    margin-left: $spacer / 4;
 }
 
 .repositoryMeta {

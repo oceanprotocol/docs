@@ -85,7 +85,7 @@ Additional information about a repo will then be fetched automatically via [GitH
 
 The above example will result in:
 
-<img width="539" alt="screen shot 2018-11-10 at 22 01 59" src="https://user-images.githubusercontent.com/90316/48305989-4dbb9800-e534-11e8-8ee1-946c40ba7657.png">
+<img width="547" alt="screen shot 2018-11-10 at 22 43 41" src="https://user-images.githubusercontent.com/90316/48306511-164fea00-e53a-11e8-97d6-c481ea087c7d.png">
 
 Additionally, you can attach multiple links to a repo. The GitHub link is automatically added for every repository and will always be displayed. Add more links like so:
 
