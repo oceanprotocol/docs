@@ -21,6 +21,7 @@
     - [Adding docs](#adding-docs)
     - [Repositories](#repositories)
 - [Development](#development)
+    - [Use Docker](#use-docker)
 - [Authors](#authors)
 - [License](#license)
 
@@ -76,7 +77,12 @@ The repositories list is currently sourced from the [`/data/repositories.yml`](d
 
 The site is a React app built with [Gatsby](https://www.gatsbyjs.org), pulling its content from various sources.
 
-To start development, clone this repo, install all dependencies, and start the development server:
+As a prerequisite you'll need on your machine:
+
+-   Node.js
+-   npm
+
+Clone this repo, install all dependencies, and start the development server:
 
 ```bash
 git clone git@github.com:oceanprotocol/docs.git
@@ -87,6 +93,21 @@ npm start
 ```
 
 This will start a hot-reloading local server exposed under [localhost:8000](http://localhost:8000).
+
+### Use Docker
+
+Alternatively, you can use Docker for which you need to have installed on your machine:
+
+-   [Docker](https://www.docker.com)
+-   [Docker Compose](https://docs.docker.com/compose/)
+
+Then use Compose to bring everything up:
+
+```bash
+docker-compose up
+```
+
+This will expose a hot-reloading server under [localhost:8000](http://localhost:8000).
 
 ## Authors
 
