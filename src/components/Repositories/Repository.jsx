@@ -7,7 +7,7 @@ const queryGithub = graphql`
     query GitHubReposInfo {
         github {
             organization(login: "oceanprotocol") {
-                repositories(first: 100) {
+                repositories(first: 100, isFork: false) {
                     edges {
                         node {
                             name
@@ -29,24 +29,25 @@ const Repository = ({ name, links }) => (
                 data.github.organization.repositories.edges
 
             // just iterate over all repos until we have a name match,
-            // then return that repo
-            const repoFilteredArray = repositoriesGitHub
+            // then return that repo, and then filter out all empty nodes
+            let repoFilteredArray = repositoriesGitHub
                 .map(({ node }) => {
                     if (node.name === name) return node
                 })
-                .filter(el => el != null)
+                .filter(n => n)
 
-            const repo = Object.assign(...repoFilteredArray)
+            const repo = repoFilteredArray[0]
+            const { url, description } = repo
 
             return (
                 <div className={styles.repository}>
                     <h1 className={styles.repositoryName}>{name}</h1>
 
-                    <p>{!repo ? '...' : repo.description}</p>
+                    <p>{!description ? '...' : description}</p>
 
                     <ul className={styles.repositoryLinks}>
                         <li>
-                            <a href={repo.url}>GitHub</a>
+                            <a href={url}>GitHub</a>
                         </li>
                         {links &&
                             links.map(link => (

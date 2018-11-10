@@ -49,31 +49,11 @@ const query = graphql`
     }
 `
 
-// const queryGithub = graphql`
-//     query {
-//         github {
-//             organization(login: "oceanprotocol") {
-//                 repositories(first: 100) {
-//                     edges {
-//                         node {
-//                             id
-//                             name
-//                             description
-//                             url
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// `
-
 const Repositories = () => (
     <StaticQuery
         query={query}
         render={data => {
             const repositories = data.allRepositoriesYaml.edges
-            // const repositoriesGitHub = data.github.organization.repositories.edges
 
             return (
                 <div className={styles.repositories}>

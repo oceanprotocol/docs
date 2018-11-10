@@ -146,6 +146,30 @@ vi .env.development
 # GITHUB_TOKEN=ADD-YOUR-TOKEN-HERE
 ```
 
+When running the site locally, you can use the GraphiQL client running under [localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql).
+
+<img width="982" alt="screen shot 2018-11-10 at 18 41 45" src="https://user-images.githubusercontent.com/90316/48304718-66b94e80-e51e-11e8-8333-e5cadbf4d4b8.png">
+
+This query should get you started to explore what information you can get:
+
+```graphql
+query {
+    github {
+        organization(login: "oceanprotocol") {
+            repositories(first: 100) {
+                edges {
+                    node {
+                        name
+                        description
+                        url
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
 ## Authors
 
 -   Troy McConaghy ([@ttmc](https://github.com/ttmc)) - [Ocean Protocol](https://oceanprotocol.com)
