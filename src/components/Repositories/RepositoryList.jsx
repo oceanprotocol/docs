@@ -15,6 +15,7 @@ const RepositoryList = ({ repositories }) => (
                             key={item.name}
                             name={item.name}
                             description={item.description}
+                            url={item.url}
                             links={item.links}
                         />
                     ))}

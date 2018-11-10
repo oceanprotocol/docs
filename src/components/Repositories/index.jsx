@@ -29,30 +29,49 @@ const QuickRun = () => (
     </div>
 )
 
-const Repositories = () => (
-    <StaticQuery
-        query={graphql`
-            query {
-                allRepositoriesYaml {
-                    edges {
-                        node {
-                            id
-                            group
-                            items {
-                                name
-                                description
-                                links {
-                                    name
-                                    url
-                                }
-                            }
+const query = graphql`
+    query {
+        allRepositoriesYaml {
+            edges {
+                node {
+                    id
+                    group
+                    items {
+                        name
+                        description
+                        links {
+                            name
+                            url
                         }
                     }
                 }
             }
-        `}
+        }
+
+        github {
+            organization(login: "oceanprotocol") {
+                repositories(first: 100) {
+                    edges {
+                        node {
+                            id
+                            name
+                            description
+                            url
+                        }
+                    }
+                }
+            }
+        }
+    }
+`
+
+const Repositories = () => (
+    <StaticQuery
+        query={query}
         render={data => {
             const repositories = data.allRepositoriesYaml.edges
+            const repositoriesGitHub =
+                data.github.organization.repositories.edges
 
             return (
                 <div className={styles.repositories}>
