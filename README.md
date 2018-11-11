@@ -72,7 +72,9 @@ and must satisfy some extra requirements:
 
    Note: The `description` value will be rendered on-page below the title, and it will also be used for description tags in the HTML header.
 1. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
-1. Internal links to other docs pages should be to the _full absolute URL_, such as https://docs.oceanprotocol.com/hello/you-are-awesome/ or https://github.com/oceanprotocol/dev-ocean/blob/master/doc/development/style-guides.md — Don't use relative URLs; those might work on GitHub, but they won't work on docs.oceanprotocol.com.
+1. Internal links to other docs pages should be:
+   - to the _full absolute URL_, such as https://docs.oceanprotocol.com/hello/you-are-awesome/ or https://github.com/oceanprotocol/dev-ocean/blob/master/doc/development/style-guides.md or
+   - to a relative URL that looks like `/concepts/terminology/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
 
 Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in the docs.
 
