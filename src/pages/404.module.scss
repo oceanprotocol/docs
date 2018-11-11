@@ -1,0 +1,28 @@
+@import 'variables';
+
+.content {
+    max-width: 33rem;
+    margin: auto;
+    text-align: center;
+
+    video {
+        margin-top: $spacer;
+        margin-bottom: $spacer;
+        display: block;
+        width: auto;
+        max-height: 300px;
+        border: $page-frame solid $brand-black;
+        background: $brand-black;
+    }
+
+    button {
+        background: none;
+        border: 0;
+        box-shadow: none;
+        font-family: $font-family-button;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-base;
+        color: $brand-pink;
+        cursor: pointer;
+    }
+}
