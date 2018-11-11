@@ -19,10 +19,10 @@
 ---
 
 - [Content](#content)
-  - [Content files](#content-files)
+  - [Content Files](#content-files)
   - [Markdown File Requirements](#markdown-file-requirements)
-  - [Adding docs](#adding-docs)
-  - [Editing docs](#editing-docs)
+  - [Adding Docs](#adding-docs)
+  - [Editing Docs](#editing-docs)
   - [Repositories](#repositories)
 - [Development](#development)
   - [Use Docker](#use-docker)
