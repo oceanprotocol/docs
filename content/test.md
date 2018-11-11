@@ -385,7 +385,7 @@ Note that the component name in Markdown needs to be always in lowercase, and ha
 
 ### Repository
 
-The `Repository` component fetching and displaying information about a GitHub repo. can be used as `<repo>` Component requires a `name` to be passed:
+The `Repository` component fetching and displaying information about a GitHub repo. Component can be used in Markdown as `<repo>`, it requires a `name` to be passed:
 
 ```
 <repo name="pleuston"></repo>

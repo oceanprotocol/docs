@@ -17,4 +17,6 @@ We use GitHub as a means for maintaining and tracking issues, roadmap and source
 -   [Business Board (Ocean Roadmap)](https://github.com/oceanprotocol/ocean/projects/1)
 -   [Milestones](https://github.com/oceanprotocol/ocean/milestones?direction=asc&sort=due_date&state=open)
 
+We use the _dev-ocean_ repository for internal documentation of most of our engineering processes.
+
 <repo name="dev-ocean"></repo>

@@ -14,10 +14,12 @@
 
 **These docs are meant to be viewed on [docs.oceanprotocol.com](https://docs.oceanprotocol.com). You can still browse them here but links or images might not work in some places.**
 
+**If you want to contribute to those docs, then [read on here](#content).**
+
 ---
 
 - [Content](#content)
-    - [Sections](#sections)
+    - [Content files](#content-files)
     - [Editing docs](#editing-docs)
     - [Adding docs](#adding-docs)
     - [Repositories](#repositories)
@@ -29,21 +31,21 @@
 
 ## Content
 
-All content lives in the [`/content`](content/) & [`/data`](data/) folders utilizing GitHub Flavored Markdown and YAML. Content is organized through subfolders corresponding to the sections mentioned below. Those subfolder names, along with the file name, define the final url of a given piece of content.
+The documentation is split in multiple sections whose content lives in this repo:
+
+-   **Core concepts**: high-level explanation of concepts, assumptions, and components
+-   **Setup**: getting started for various stakeholders and use cases
+-   **Tutorials**: detailed tutorials
+
+Those sections are defined in the [`/data/sections.yml`](data/sections.yml) file.
+
+### Content files
+
+All content lives in the [`/content`](content/) & [`/data`](data/) folders utilizing GitHub Flavored Markdown and YAML. Content is organized through subfolders corresponding to the sections mentioned above. Those subfolder names, along with the file name, define the final url of a given piece of content.
 
 The final navigational organisation of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/). Some global values used throughout the site can be set in [`config.js`](config.js).
 
 Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in the docs.
-
-### Sections
-
-The documentation is split in multiple sections whose content lives in this repo:
-
--   Core concepts: high-level explanation of concepts, assumptions, and components
--   Setup: getting started for various stakeholders and use cases
--   Tutorials: detailed tutorials
-
-Those sections and their copy are defined in the [`/data/sections.yml`](data/sections.yml) file.
 
 TODO: Additionally, these docs live in their respective repos and are pulled into this site on build time:
 
@@ -87,6 +89,12 @@ The above example will result in:
 
 <img width="547" alt="screen shot 2018-11-10 at 22 43 41" src="https://user-images.githubusercontent.com/90316/48306511-164fea00-e53a-11e8-97d6-c481ea087c7d.png">
 
+This repository component can also be used within any Markdown content like so:
+
+```
+<repo name="pleuston"></repo>
+```
+
 Additionally, you can attach multiple links to a repo. The GitHub link is automatically added for every repository and will always be displayed. Add more links like so:
 
 ```yaml
@@ -113,9 +121,15 @@ Clone this repo, install all dependencies, and start the development server:
 git clone git@github.com:oceanprotocol/docs.git
 cd docs/
 
+# add GITHUB_TOKEN
+cp .env.sample .env
+vi .env
+
 npm i
 npm start
 ```
+
+For getting your `GITHUB_TOKEN`, see [GitHub GraphQL API](#github-graphql-api)
 
 This will start a hot-reloading local server exposed under [localhost:8000](http://localhost:8000).
 
@@ -125,6 +139,7 @@ Alternatively, you can use Docker for which you need to have installed on your m
 
 -   [Docker](https://www.docker.com)
 -   [Docker Compose](https://docs.docker.com/compose/)
+-   `GITHUB_TOKEN` in `.env`, see [GitHub GraphQL API](#github-graphql-api)
 
 Then use Compose to bring everything up:
 
@@ -145,7 +160,7 @@ For local development, you can simply [create a personal access token](https://g
 ```bash
 cp .env.sample .env
 vi .env
-# GITHUB_TOKEN=ADD-YOUR-TOKEN-HERE
+# GITHUB_TOKEN=add_your_token_here
 ```
 
 When running the site locally, you can use the GraphiQL client running under [localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql) to explore the whole GraphQL layer of the site (not just the GitHub infos).
@@ -164,10 +179,6 @@ query {
                         name
                         description
                         url
-                        forkCount
-                        stargazers {
-                            totalCount
-                        }
                     }
                 }
             }
