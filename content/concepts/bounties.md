@@ -5,6 +5,7 @@ description: Help with Ocean Protocol development and have Ocean Tokens rain on 
 
 Explain our bounties
 
--   [🎣 ocean-bounties](https://github.com/oceanprotocol/ocean-bounties/issues)
+<repo name="ocean-bounties"></repo>
+
 -   [Gitcoin](https://gitcoin.co/profile/oceanprotocol)
 -   [bounties.network](https://explorer.bounties.network/explorer?bountyStage=active&search=ocean%20protocol)

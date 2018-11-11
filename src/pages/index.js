@@ -11,6 +11,7 @@ import { ReactComponent as Arrow } from '../images/arrow.svg'
 import styles from './index.module.scss'
 
 const SectionLink = ({ to, title, color, children }) => {
+    // eslint-disable-next-line
     let classNames = classnames(styles.link, {
         [styles.purple]: color === 'purple',
         [styles.blue]: color === 'blue',

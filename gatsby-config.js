@@ -1,3 +1,12 @@
+require('dotenv').config()
+
+if (!process.env.GITHUB_TOKEN) {
+    throw new Error(
+        `A GitHub token is required to build the site. Check the README
+        \nhttps://github.com/oceanprotocol/docs.`
+    )
+}
+
 const config = require('./config.js')
 
 module.exports = {
@@ -37,6 +46,20 @@ module.exports = {
             }
         },
         {
+            resolve: 'gatsby-source-graphql',
+            options: {
+                typeName: 'GitHub',
+                fieldName: 'github',
+                url: 'https://api.github.com/graphql',
+                headers: {
+                    Authorization: `bearer ${process.env.GITHUB_TOKEN}`
+                },
+                // Additional options to pass to node-fetch
+                fetchOptions: {},
+                refetchInterval: 300 // 5 min.
+            }
+        },
+        {
             resolve: 'gatsby-transformer-remark',
             options: {
                 plugins: [
@@ -55,7 +78,8 @@ module.exports = {
                     'gatsby-remark-responsive-iframe',
                     'gatsby-remark-prismjs',
                     'gatsby-remark-autolink-headers',
-                    'gatsby-remark-copy-linked-files'
+                    'gatsby-remark-copy-linked-files',
+                    'gatsby-remark-component'
                 ]
             }
         },

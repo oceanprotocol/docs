@@ -5,16 +5,31 @@
     border: 1px solid $brand-grey-lighter;
     background: $brand-white;
     border-radius: $border-radius;
-    margin-bottom: 4%;
-
-    @media (min-width: $break-point--small) {
-        flex: 0 0 100%;
-    }
+    font-size: $font-size-small;
+    text-align: left;
+    width: 100%;
+    margin-bottom: $spacer;
 }
 
 .repositoryName {
-    font-size: $font-size-large;
+    font-size: $font-size-h4;
     margin-top: 0;
+    border: 0;
+    padding: 0;
+}
+
+.repositoryRelease {
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-small;
+    color: $brand-grey-light;
+    display: inline-block;
+    margin-left: $spacer / 4;
+}
+
+.repositoryMeta {
+    display: flex;
+    align-items: center;
 }
 
 .repositoryLinks {
@@ -34,7 +49,40 @@
 
     a {
         font-family: $font-family-button;
-        font-size: $font-size-small;
         font-weight: $font-weight-bold;
+    }
+}
+
+.repositorynumbers {
+    font-size: $font-size-small;
+    margin-left: -($spacer / 4);
+    margin-bottom: -.2rem;
+    flex: 1;
+    text-align: right;
+
+    a {
+        color: $brand-grey-light;
+        margin-left: $spacer / 4;
+        display: inline-block;
+
+        &:hover,
+        &:focus {
+            color: $brand-pink;
+            transform: none;
+
+            svg {
+                fill: $brand-pink;
+            }
+        }
+
+        span {
+            margin-left: -.15rem;
+        }
+    }
+
+    svg {
+        display: inline-block;
+        fill: $brand-grey-light;
+        margin-bottom: -.1rem;
     }
 }

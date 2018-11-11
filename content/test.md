@@ -19,6 +19,7 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 * [Horizontal Rule](#horizontal-rule)
 * [Line Breaks](#line-breaks)
 * [Videos](#videos)
+* [React Components in Markdown](#react-components-in-markdown)
 
 ## Headers
 
@@ -375,3 +376,22 @@ Or, in pure Markdown, but losing the image sizing and border:
 ```md
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
+
+## React Components in Markdown
+
+In all Markdown docs you can use some select React Components. This magic is done with [gatsby-remark-component](https://www.gatsbyjs.org/packages/gatsby-remark-component/).
+
+Note that the component name in Markdown needs to be always in lowercase, and have a closing tag.
+
+### Repository
+
+The `Repository` component fetching and displaying information about a GitHub repo. can be used as `<repo>` Component requires a `name` to be passed:
+
+```
+<repo name="pleuston"></repo>
+```
+
+Resulting in:
+
+<repo name="pleuston"></repo>
+

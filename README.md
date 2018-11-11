@@ -23,18 +23,17 @@
     - [Repositories](#repositories)
 - [Development](#development)
     - [Use Docker](#use-docker)
+- [GitHub GraphQL API](#github-graphql-api)
 - [Authors](#authors)
 - [License](#license)
 
 ## Content
 
-All content lives in the [`/content`](content/) & [`/data`](data/) folders utilizing GitHub Flavored Markdown and YAML. Content is organized into the above mentioned categories through subfolders. Those subfolder names, along with the file name, define the final url of a given piece of content.
+All content lives in the [`/content`](content/) & [`/data`](data/) folders utilizing GitHub Flavored Markdown and YAML. Content is organized through subfolders corresponding to the sections mentioned below. Those subfolder names, along with the file name, define the final url of a given piece of content.
 
-The final navigational organisation of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/).
+The final navigational organisation of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/). Some global values used throughout the site can be set in [`config.js`](config.js).
 
 Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in the docs.
-
-Some global values used throughout the site can be set in [`config.js`](config.js).
 
 ### Sections
 
@@ -48,12 +47,12 @@ Those sections and their copy are defined in the [`/data/sections.yml`](data/sec
 
 TODO: Additionally, these docs live in their respective repos and are pulled into this site on build time:
 
--   API reference
+-   API references
 -   Component docs
 
 ### Editing docs
 
-Every article on [docs.oceanprotocol.com](https://docs.oceanprotocol.com) ends with an _Edit this page on GitHub_ link. Clicking that will put you to the right place in the repository from where you can hit the _Edit_ pencil icon.
+Every article on [docs.oceanprotocol.com](https://docs.oceanprotocol.com) ends with an _Edit this page on GitHub_ link. Clicking that will put you to the right place in the repository from where you can hit the _Edit_ pencil icon on GitHub.
 
 GitHub will automatically fork the repository if you are not part of the `oceanprotocol` organisation on GitHub. Members can simply push to a new branch on the original repo.
 
@@ -62,17 +61,40 @@ The editing workflow is as follows:
 1. Make your changes
 2. Push your changes to a new branch in the repo, or in your fork
 3. Open a pull request against `master`, automatically asking for review
-4. Wait for review, possibly make request changes
+4. Wait for review, possibly make requested changes
 5. Wait for all checks to pass
 6. Merge!
 
 ### Adding docs
 
-...
+1. Add new Markdown file under one of the folders under [`/content`](content/)
+2. Add new path to one of the sidebars in [`/data/sidebars`](data/sidebars/)
+3. ...
 
 ### Repositories
 
-The repositories list is currently sourced from the [`/data/repositories.yml`](data/repositories.yml) file. The GitHub link is auto generated from the given repository name and will always be added by default.
+The repositories list is currently sourced from the [`/data/repositories.yml`](data/repositories.yml) file, defining the grouping, the display order, and which repos to include.
+
+Including a repo requires only the `name` key and value, and it needs to be exactly the same as the repo name on GitHub:
+
+```yaml
+- name: pleuston
+```
+
+Additional information about a repo will then be fetched automatically via [GitHub's GraphQL API](https://developer.github.com/v4/) on build time, and re-fetched every 5 minutes on client side. You can also add a private repo to prepare for a release, it will show up as soon as it is made public on GitHub.
+
+The above example will result in:
+
+<img width="547" alt="screen shot 2018-11-10 at 22 43 41" src="https://user-images.githubusercontent.com/90316/48306511-164fea00-e53a-11e8-97d6-c481ea087c7d.png">
+
+Additionally, you can attach multiple links to a repo. The GitHub link is automatically added for every repository and will always be displayed. Add more links like so:
+
+```yaml
+- name: keeper-contracts
+  links:
+      - name: Documentation
+        url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
+```
 
 -   [`/data/repositories.yml`](data/repositories.yml)
 
@@ -111,6 +133,48 @@ docker-compose up
 ```
 
 This will expose a hot-reloading server under [localhost:8000](http://localhost:8000).
+
+## GitHub GraphQL API
+
+The GitHub GraphQL API integration is done through [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) and requires authorization.
+
+An environment variable `GITHUB_TOKEN` needs to present, filled with a [personal access token](https://github.com/settings/tokens) with the scope `public_repo`.
+
+For local development, you can simply [create a personal access token](https://github.com/settings/tokens) and use it in your local .env file:
+
+```bash
+cp .env.sample .env
+vi .env
+# GITHUB_TOKEN=ADD-YOUR-TOKEN-HERE
+```
+
+When running the site locally, you can use the GraphiQL client running under [localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql) to explore the whole GraphQL layer of the site (not just the GitHub infos).
+
+<img width="982" alt="screen shot 2018-11-10 at 18 41 45" src="https://user-images.githubusercontent.com/90316/48304718-66b94e80-e51e-11e8-8333-e5cadbf4d4b8.png">
+
+This query should get you started to explore what information you can get from GitHub:
+
+```graphql
+query {
+    github {
+        organization(login: "oceanprotocol") {
+            repositories(first: 100) {
+                edges {
+                    node {
+                        name
+                        description
+                        url
+                        forkCount
+                        stargazers {
+                            totalCount
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ## Authors
 
