@@ -5,18 +5,17 @@
     border: 1px solid $brand-grey-lighter;
     background: $brand-white;
     border-radius: $border-radius;
-    margin-bottom: 4%;
     font-size: $font-size-small;
     text-align: left;
-
-    @media (min-width: $break-point--small) {
-        flex: 0 0 100%;
-    }
+    width: 100%;
+    margin-bottom: $spacer;
 }
 
 .repositoryName {
     font-size: $font-size-h4;
     margin-top: 0;
+    border: 0;
+    padding: 0;
 }
 
 .repositoryRelease {

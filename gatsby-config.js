@@ -1,10 +1,4 @@
-let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
-
-console.log(`Using environment config: '${activeEnv}'`) // eslint-disable-line
-
-require('dotenv').config({
-    path: `.env.${activeEnv}`
-})
+require('dotenv').config()
 
 if (!process.env.GITHUB_TOKEN) {
     throw new Error(
@@ -84,7 +78,8 @@ module.exports = {
                     'gatsby-remark-responsive-iframe',
                     'gatsby-remark-prismjs',
                     'gatsby-remark-autolink-headers',
-                    'gatsby-remark-copy-linked-files'
+                    'gatsby-remark-copy-linked-files',
+                    'gatsby-remark-component'
                 ]
             }
         },

@@ -7,25 +7,25 @@ description: The Ocean Protocol network consists of various components. Learn ab
 
 See also [Set Up a Keeper](/setup/keeper/)
 
--   [💧 keeper-contracts](https://github.com/oceanprotocol/keeper-contracts)
+<repo name="keeper-contracts"></repo>
 
 ## Aquarius
 
 Aquarius provides an off-chain database store for metadata about data assets. Every marketplace must run an instance of Aquarius.
 
--   [🐋 aquarius](https://github.com/oceanprotocol/aquarius)
+<repo name="aquarius"></repo>
 
 ## Brizo
 
 Brizo is the technical component executed by Publishers allowing them to provide extended data services. Brizo, as part of the Publisher ecosystem, includes the credentials to interact with the infrastructure (initially cloud, but could be on-premise).
 
--   [brizo](https://github.com/oceanprotocol/brizo)
+<repo name="brizo"></repo>
 
 ## Pleuston
 
 An example marketplace front-end for consumers to explore, download, and publish data assets within the Ocean Protocol network. Implemented using React and squid-js.
 
--   [🦄 pleuston](https://github.com/oceanprotocol/pleuston)
+<repo name="pleuston"></repo>
 
 ## Squid
 
@@ -39,7 +39,7 @@ Client libraries used by applications to interact with Ocean nodes, including Ke
 
 All of our core components generate Docker images automatically and we provide some handy Docker Compose scripts to help with testing, showcasing, and developing Ocean Protocol.
 
--   [🐳 docker-images](https://github.com/oceanprotocol/docker-images)
+<repo name="docker-images"></repo>
 
 ### Full Ocean network stack
 

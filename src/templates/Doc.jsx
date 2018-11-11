@@ -49,7 +49,6 @@ export default class DocTemplate extends Component {
                                     <Sidebar
                                         location={location}
                                         sidebar={section}
-                                        isPlaceholder={!post.html}
                                     />
                                 </aside>
                                 <article className={styles.main}>
@@ -57,7 +56,10 @@ export default class DocTemplate extends Component {
                                         title={title}
                                         description={description}
                                     />
-                                    <DocContent html={post.html} />
+                                    <DocContent
+                                        html={post.html}
+                                        htmlAst={post.htmlAst}
+                                    />
                                     <DocFooter post={post} />
                                 </article>
                             </main>
@@ -67,7 +69,10 @@ export default class DocTemplate extends Component {
                                     title={title}
                                     description={description}
                                 />
-                                <DocContent html={post.html} />
+                                <DocContent
+                                    html={post.html}
+                                    htmlAst={post.htmlAst}
+                                />
                                 <DocFooter post={post} />
                             </article>
                         )}
@@ -84,6 +89,7 @@ export const pageQuery = graphql`
             id
             excerpt
             html
+            htmlAst
             fileAbsolutePath
             frontmatter {
                 title

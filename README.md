@@ -143,8 +143,8 @@ An environment variable `GITHUB_TOKEN` needs to present, filled with a [personal
 For local development, you can simply [create a personal access token](https://github.com/settings/tokens) and use it in your local .env file:
 
 ```bash
-cp .env.sample .env.development
-vi .env.development
+cp .env.sample .env
+vi .env
 # GITHUB_TOKEN=ADD-YOUR-TOKEN-HERE
 ```
 
