@@ -13,9 +13,9 @@ Ocean Protocol uses [C4 Standard process](https://github.com/unprotocols/rfc/blo
 
 We use GitHub as a means for maintaining and tracking issues, roadmap and source code development.
 
--   [Ocean Protocol on GitHub](https://github.com/oceanprotocol)
--   [Business Board (Ocean Roadmap)](https://github.com/oceanprotocol/ocean/projects/1)
--   [Milestones](https://github.com/oceanprotocol/ocean/milestones?direction=asc&sort=due_date&state=open)
+- [Ocean Protocol on GitHub](https://github.com/oceanprotocol)
+- [Business Board (Ocean Roadmap)](https://github.com/oceanprotocol/ocean/projects/1)
+- [Milestones](https://github.com/oceanprotocol/ocean/milestones?direction=asc&sort=due_date&state=open)
 
 We use the _dev-ocean_ repository for internal documentation of most of our engineering processes.
 

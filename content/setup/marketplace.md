@@ -56,8 +56,8 @@ TODO: Add instructions here.
 
 At the time of writing, Aquarius worked with three databases:
 
--   MongoDB
--   Elasticsearch
--   BigchainDB
+- MongoDB
+- Elasticsearch
+- BigchainDB
 
 TODO: Outline the pros and cons of each database.

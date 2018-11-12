@@ -7,5 +7,5 @@ Explain our bounties
 
 <repo name="ocean-bounties"></repo>
 
--   [Gitcoin](https://gitcoin.co/profile/oceanprotocol)
--   [bounties.network](https://explorer.bounties.network/explorer?bountyStage=active&search=ocean%20protocol)
+- [Gitcoin](https://gitcoin.co/profile/oceanprotocol)
+- [bounties.network](https://explorer.bounties.network/explorer?bountyStage=active&search=ocean%20protocol)

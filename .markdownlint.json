@@ -10,6 +10,5 @@
   "first-heading-h1": false,
   "no-trailing-punctuation": false,
   "ol-prefix": false,
-  "ul-style": { "style": "dash" },
-  "blanks-around-fences": false
+  "ul-style": { "style": "dash" }
 }

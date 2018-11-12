@@ -9,4 +9,6 @@ See the (somewhat-dated) diagram on the page https://github.com/oceanprotocol/de
 
 ![Ocean Protocol Components](images/components.png 'Ocean Protocol Components')
 
-
+```text
+bfhejfrefrze
+```
