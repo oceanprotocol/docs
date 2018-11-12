@@ -54,7 +54,9 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-helmet": "^5.2.0",
-    "rehype-react": "^3.0.3"
+    "rehype-react": "^3.0.3",
+    "remark": "^10.0.0",
+    "remark-react": "^4.0.3"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.0.2",

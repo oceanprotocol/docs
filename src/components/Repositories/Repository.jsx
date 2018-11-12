@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import remark from 'remark'
+import remarkReact from 'remark-react'
 import { ReactComponent as Star } from '../../images/star.svg'
 import { ReactComponent as Forks } from '../../images/forks.svg'
 import styles from './Repository.module.scss'
@@ -29,6 +31,12 @@ const queryGithub = graphql`
                                             name
                                         }
                                     }
+                                }
+                            }
+                            object(expression: "develop:README.md") {
+                                id
+                                ... on GitHub_Blob {
+                                    text
                                 }
                             }
                         }
@@ -98,7 +106,7 @@ Numbers.propTypes = {
     url: PropTypes.string.isRequired
 }
 
-const Repository = ({ name, links }) => (
+const Repository = ({ name, links, readme }) => (
     <StaticQuery
         query={queryGithub}
         render={data => {
@@ -119,7 +127,18 @@ const Repository = ({ name, links }) => (
             // e.g. when private repos are referenced in repositories.yml
             if (repo === undefined) return null
 
-            const { url, description, forkCount, stargazers, releases } = repo
+            const {
+                url,
+                description,
+                forkCount,
+                stargazers,
+                releases,
+                object
+            } = repo
+
+            const readmeHtml = remark()
+                .use(remarkReact)
+                .processSync(object.text).contents
 
             return (
                 <article className={styles.repository}>
@@ -135,6 +154,15 @@ const Repository = ({ name, links }) => (
                             url={url}
                         />
                     </footer>
+
+                    {readme && (
+                        <aside className={styles.repositoryReadme}>
+                            <h3 className={styles.repositoryReadmeTitle}>
+                                README.md
+                            </h3>
+                            {readmeHtml}
+                        </aside>
+                    )}
                 </article>
             )
         }}
@@ -143,7 +171,8 @@ const Repository = ({ name, links }) => (
 
 Repository.propTypes = {
     name: PropTypes.string.isRequired,
-    links: PropTypes.array
+    links: PropTypes.array,
+    readme: PropTypes.bool
 }
 
 export default Repository
