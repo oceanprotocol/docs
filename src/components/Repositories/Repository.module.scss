@@ -89,7 +89,9 @@
 }
 
 .repositoryReadme {
-    margin-top: $spacer;
+    margin-top: $spacer / $line-height;
+    padding: $spacer / 2;
+    background: darken($brand-white, 2%);
 
     h1,
     h2 {
@@ -104,9 +106,9 @@
 
 .repositoryReadmeTitle {
     font-size: $font-size-small !important; // stylelint-disable-line
+    font-family: $font-family-monospace;
+    font-weight: $font-weight-base;
     margin: 0;
     color: $brand-grey-light;
     margin-bottom: $spacer / 2;
-    padding-bottom: $spacer / 3;
-    border-bottom: 1px solid $brand-grey-lighter;
 }

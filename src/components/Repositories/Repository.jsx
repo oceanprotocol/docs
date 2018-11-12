@@ -136,9 +136,11 @@ const Repository = ({ name, links, readme }) => (
                 object
             } = repo
 
-            const readmeHtml = remark()
-                .use(remarkReact)
-                .processSync(object.text).contents
+            const readmeHtml = object
+                ? remark()
+                      .use(remarkReact)
+                      .processSync(object.text).contents
+                : null
 
             return (
                 <article className={styles.repository}>
@@ -155,7 +157,7 @@ const Repository = ({ name, links, readme }) => (
                         />
                     </footer>
 
-                    {readme && (
+                    {readme && object && (
                         <aside className={styles.repositoryReadme}>
                             <h3 className={styles.repositoryReadmeTitle}>
                                 README.md
