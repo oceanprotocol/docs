@@ -27,6 +27,7 @@
 - [Development](#development)
   - [Use Docker](#use-docker)
 - [Linting & formatting](#linting--formatting)
+  - [Editor setup: VS Code](#editor-setup-vs-code)
 - [GitHub GraphQL API](#github-graphql-api)
 - [Authors](#authors)
 - [License](#license)
@@ -195,6 +196,15 @@ npm run lint
 # auto-formatting of all js, css, md, yml files
 npm run format
 ```
+
+### Editor setup: VS Code
+
+If you use VS Code as your editor, you can install those extensions to get linting as you type, and auto-formatting as you save:
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 ## GitHub GraphQL API
 
