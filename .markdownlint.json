@@ -1,0 +1,14 @@
+{
+  "default": true,
+  "whitespace": false,
+  "line-length": false,
+  "ul-start-left": false,
+  "ul-indent": false,
+  "no-inline-html": false,
+  "no-bare-urls": false,
+  "first-line-h1": false,
+  "first-heading-h1": false,
+  "no-trailing-punctuation": false,
+  "ol-prefix": false,
+  "ul-style": { "style": "dash" }
+}

@@ -7,23 +7,23 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 
 ## Table of Contents
 
-* [Headers](#headers)
-* [Emphasis](#emphasis)
-* [Lists](#lists)
-* [Links](#links)
-* [Images](#images)
-* [Code and Syntax Highlighting](#code-and-syntax-highlighting)
-* [Tables](#tables)
-* [Blockquotes](#blockquotes)
-* [Inline HTML](#inline-html)
-* [Horizontal Rule](#horizontal-rule)
-* [Line Breaks](#line-breaks)
-* [Videos](#videos)
-* [React Components in Markdown](#react-components-in-markdown)
+- [Headers](#headers)
+- [Emphasis](#emphasis)
+- [Lists](#lists)
+- [Links](#links)
+- [Images](#images)
+- [Code and Syntax Highlighting](#code-and-syntax-highlighting)
+- [Tables](#tables)
+- [Blockquotes](#blockquotes)
+- [Inline HTML](#inline-html)
+- [Horizontal Rule](#horizontal-rule)
+- [Line Breaks](#line-breaks)
+- [Videos](#videos)
+- [React Components in Markdown](#react-components-in-markdown)
 
 ## Headers
 
-```
+```text
 # H1
 ## H2
 ### H3
@@ -32,14 +32,18 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 ```
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
 
 ## Emphasis
 
-```
+```text
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
@@ -49,9 +53,9 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+Emphasis, aka italics, with _asterisks_ or _underscores_.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Strong emphasis, aka bold, with **asterisks** or **underscores**.
 
 Combined emphasis with **asterisks and _underscores_**.
 
@@ -59,38 +63,32 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists
 
-```
+```text
 1. First ordered list item
 2. Another item
-  * Unordered sub-list.
+  - Unordered sub-list.
 1. Actual numbers don't matter, just that it's a number
   1. Ordered sub-list
 4. And another item.
    Some text that should be aligned with the above item.
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
 ```
 
 1. First ordered list item
 2. Another item
-   * Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
+   - Unordered sub-list.
+3. Actual numbers don't matter, just that it's a number
    1. Ordered sub-list
 4. And another item.
    Some text that should be aligned with the above item.
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
 
 ## Links
 
 There are two ways to create links.
 
-```
+```markdown
 [I'm an inline-style link](https://www.google.com)
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[I'm a reference-style link][arbitrary case-insensitive reference text]
 
 [You can use numbers for reference-style link definitions][1]
 
@@ -109,15 +107,19 @@ Some text to show that the reference links can follow later.
 
 [I'm an inline-style link](https://www.google.com)
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[I'm a reference-style link][arbitrary case-insensitive reference text]
 
 [You can use numbers for reference-style link definitions][1]
 
 Or leave it empty and use the [link text itself]
 
+<!-- markdownlint-disable no-bare-urls -->
+
 URLs and URLs in angle brackets will automatically get turned into links.
 http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
+
+<!-- markdownlint-enable no-bare-urls -->
 
 Some text to show that the reference links can follow later.
 
@@ -127,44 +129,25 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
-```
-![alt text](jellyfish-grid@2x.png "Ocean Protocol Jellyfish")
+```markdown
+![alt text](jellyfish-grid@2x.png 'Ocean Protocol Jellyfish')
 ```
 
 Here's our jellyfish, with the title being output as caption:
 
-![alt text](../node_modules/@oceanprotocol/art/jellyfish/jellyfish-grid@2x.png "Ocean Protocol Jellyfish")
-
+![alt text](../node_modules/@oceanprotocol/art/jellyfish/jellyfish-grid@2x.png 'Ocean Protocol Jellyfish')
 
 ## Code and Syntax Highlighting
 
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting.
+Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and _Markdown Here_ -- support syntax highlighting.
 
-```
+```text
 Inline `code` has `back-ticks around` it.
 ```
 
 Inline `code` has `back-ticks around` it.
 
 Blocks of code are either fenced by lines with three back-ticks, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
-
-<pre><code>```js
-...
-```
-
-```python
-...
-```
-
-```java
-...
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-```
-</code></pre>
 
 ```bash
 git clone https://github.com/oceanprotocol/docker-images.git
@@ -174,16 +157,15 @@ cd docker-images/
 ```
 
 ```js
-const { Ocean, Logger } = require('@oceanprotocol/squid');
+const { Ocean, Logger } = require('@oceanprotocol/squid')
+;(async () => {
+  const ocean = await Ocean.getInstance({
+    nodeUri: 'http://localhost:8545'
+  })
 
-(async () => {
-    const ocean = await Ocean.getInstance({
-        nodeUri: 'http://localhost:8545'
-    })
+  const accounts = await ocean.getAccounts()
 
-    const accounts = await ocean.getAccounts()
-
-    Logger.log(JSON.stringify(accounts, null, 2))
+  Logger.log(JSON.stringify(accounts, null, 2))
 })()
 ```
 
@@ -211,47 +193,46 @@ public interface FromJsonToModel {
 }
 ```
 
-```
+```text
 No language indicated, so no syntax highlighting in Markdown Here (varies on Github).
 But let's throw in a <b>tag</b>.
 ```
 
 ## Tables
 
-Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
+Tables aren't part of the core Markdown spec, but they are part of GFM and _Markdown Here_ supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
 
 ```markdown
 Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      | $12   |
-| zebra stripes | are neat      | $1    |
+| Tables        |      Are      |   Cool |
+| ------------- | :-----------: | -----: |
+| col 3 is      | right-aligned | \$1600 |
+| col 2 is      |   centered    |   \$12 |
+| zebra stripes |   are neat    |    \$1 |
 
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
-| | Markdown | Less           | Pretty     |     |
+| | Markdown | Less | Pretty | |
 | | ------------- | --------------- | ---------- |------- |
-| | *Still*   | `renders` | **nicely** | |
-| | 1               | 2                 | 3          |          |
+| | _Still_ | `renders` | **nicely** | |
+| | 1 | 2 | 3 | |
 ```
 
 Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      | $12   |
-| zebra stripes | are neat      | $1    |
+| Tables        |      Are      |   Cool |
+| ------------- | :-----------: | -----: |
+| col 3 is      | right-aligned | \$1600 |
+| col 2 is      |   centered    |   \$12 |
+| zebra stripes |   are neat    |    \$1 |
 
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
 | Markdown | Less      | Pretty     |
 | -------- | --------- | ---------- |
-| *Still*  | `renders` | **nicely** |
+| _Still_  | `renders` | **nicely** |
 | 1        | 2         | 3          |
-
 
 ## Blockquotes
 
@@ -261,7 +242,7 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 
 Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
 ```
 
 > Blockquotes are very handy in email to emulate reply text.
@@ -269,7 +250,7 @@ Quote break.
 
 Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
 
 ## Inline HTML
 
@@ -295,35 +276,17 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
 ## Horizontal Rule
 
+```text
+Hypens
+---
+Hyphens
 ```
-Three or more...
+
+Hypens
 
 ---
 
 Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
-```
-
-Three or more...
-
----
-
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
 
 ## Line Breaks
 
@@ -331,7 +294,7 @@ My basic recommendation for learning how line breaks work is to experiment and d
 
 Here are some things to try out:
 
-```
+```text
 Here's a line for us to start with.
 
 This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
@@ -342,18 +305,18 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 Here's a line for us to start with.
 
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+This line is separated from the one above by two newlines, so it will be a _separate paragraph_.
 
 This line is also begins a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
 
-(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
+(Technical note: _Markdown Here_ uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
 ## Videos
 
 Videos can be embedded like so, works with YouTube, Vimeo, VideoPress, Twitch:
 
-```
+```text
 `video: https://www.youtube.com/watch?v=6YRmyUZr2No`
 ```
 
@@ -364,8 +327,17 @@ resulting in:
 You can also add an image with a link to the video like this:
 
 ```html
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No" target="_blank">
-    <img src="http://img.youtube.com/vi/6YRmyUZr2No/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
+<a
+  href="http://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No"
+  target="_blank"
+>
+  <img
+    src="http://img.youtube.com/vi/6YRmyUZr2No/0.jpg"
+    alt="IMAGE ALT TEXT HERE"
+    width="240"
+    height="180"
+    border="10"
+  />
 </a>
 ```
 
@@ -387,11 +359,10 @@ Note that the component name in Markdown needs to be always in lowercase, and ha
 
 The `Repository` component fetching and displaying information about a GitHub repo. Component can be used in Markdown as `<repo>`, it requires a `name` to be passed:
 
-```
+```HTML
 <repo name="pleuston"></repo>
 ```
 
 Resulting in:
 
 <repo name="pleuston"></repo>
-

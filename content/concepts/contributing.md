@@ -23,11 +23,11 @@ To make a feature request or proposal, you can go to the [🐙 Ocean Protocol En
 
 If you’re writing code, you should also update any related docs. However, you might want to write docs only, such as:
 
--   General explainers
--   Tutorials
--   Courses
--   Code explanations
--   News from recent events
+- General explainers
+- Tutorials
+- Courses
+- Code explanations
+- News from recent events
 
 For instructions on how to contribute to our main documentation check out the docs repo.
 
@@ -40,4 +40,4 @@ For instructions on how to contribute to our main documentation check out the do
 
 ## Participate in a bounty
 
--   [Bounties](/concepts/bounties/)
+- [Bounties](/concepts/bounties/)
