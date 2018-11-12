@@ -26,6 +26,7 @@
   - [Repositories](#repositories)
 - [Development](#development)
   - [Use Docker](#use-docker)
+- [Linting & formatting](#linting--formatting)
 - [GitHub GraphQL API](#github-graphql-api)
 - [Authors](#authors)
 - [License](#license)
@@ -126,8 +127,8 @@ Additionally, you can attach multiple links to a repo. The GitHub link is automa
 ```yaml
 - name: keeper-contracts
   links:
-      - name: Documentation
-        url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
+    - name: Documentation
+      url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 ```
 
 in [`/data/repositories.yml`](data/repositories.yml).
@@ -175,6 +176,25 @@ docker-compose up
 
 This will expose a hot-reloading server under [localhost:8000](http://localhost:8000).
 
+## Linting & formatting
+
+To enforce a consistent code style, linting is setup for pretty much every file. Linting is part of the test suite, meaning builds on Travis will fail in case of linting errors.
+
+In this repo the following tools are setup for that:
+
+- ESLint with [eslint-config-oceanprotocol]https://github.com/oceanprotocol/eslint-config-oceanprotocol
+- Stylelint with [stylelint-config-bigchaindb]https://github.com/bigchaindb/stylelint-config-bigchaindb
+- [markdownlint](https://github.com/DavidAnson/markdownlint)
+- [Prettier](https://prettier.io)
+
+```bash
+# only run linting checks
+npm run lint
+
+# auto-formatting of all js, css, md, yml files
+npm run format
+```
+
 ## GitHub GraphQL API
 
 The GitHub GraphQL API integration is done through [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) and requires authorization.
@@ -197,19 +217,19 @@ This query should get you started to explore what information you can get from G
 
 ```graphql
 query {
-    github {
-        organization(login: "oceanprotocol") {
-            repositories(first: 100) {
-                edges {
-                    node {
-                        name
-                        description
-                        url
-                    }
-                }
-            }
+  github {
+    organization(login: "oceanprotocol") {
+      repositories(first: 100) {
+        edges {
+          node {
+            name
+            description
+            url
+          }
         }
+      }
     }
+  }
 }
 ```
 

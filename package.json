@@ -3,6 +3,23 @@
   "description": "One site to rule all docs",
   "version": "0.0.1",
   "author": "Ocean Protocol <devops@oceanprotocol.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "ssr": "npm run build && serve -s public/",
+    "format:js": "prettier --write '**/*.{js,jsx}'",
+    "format:css": "prettier-stylelint --write --quiet 'src/**/*.{css,scss}'",
+    "format:md": "prettier --write '**/*.md'",
+    "format:yml": "prettier --write '**/*.{yml,yaml}'",
+    "format": "run-p format:js format:css format:md format:yml",
+    "lint:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
+    "lint:css": "stylelint './src/**/*.{css,scss}'",
+    "lint:md": "markdownlint './**/*.{md,markdown}' --ignore node_modules",
+    "lint:yml": "prettier '**/*.{yml,yaml}' --list-different",
+    "lint": "run-p --continue-on-error lint:js lint:css lint:md lint:yml",
+    "test": "npm run lint"
+  },
   "dependencies": {
     "@oceanprotocol/art": "^1.0.2",
     "classnames": "^2.2.6",
@@ -38,21 +55,6 @@
     "react-dom": "^16.6.1",
     "react-helmet": "^5.2.0",
     "rehype-react": "^3.0.3"
-  },
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
-    "ssr": "npm run build && serve -s public/",
-    "format:js": "prettier --write 'src/**/*.{js,jsx}'",
-    "format:css": "prettier-stylelint --write --quiet 'src/**/*.{css,scss}'",
-    "format:md": "prettier --write './content/**/*.md' --no-semi",
-    "format": "run-p format:js format:css",
-    "lint:js": "eslint ./gatsby-*.js && eslint ./src/**/*.{js,jsx}",
-    "lint:css": "stylelint ./src/**/*.{css,scss}",
-    "lint:md": "markdownlint './content/**/*.md'",
-    "lint": "run-p lint:js lint:css",
-    "test": "npm run lint"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.0.2",
