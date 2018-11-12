@@ -14,17 +14,18 @@
 
 **These docs are meant to be viewed on [docs.oceanprotocol.com](https://docs.oceanprotocol.com). You can still browse them here but links or images might not work in some places.**
 
-**If you want to contribute to those docs, then [read on here](#content).**
+**If you want to contribute to these docs, then keep reading.**
 
 ---
 
 - [Content](#content)
-    - [Content files](#content-files)
-    - [Editing docs](#editing-docs)
-    - [Adding docs](#adding-docs)
-    - [Repositories](#repositories)
+  - [Content Files](#content-files)
+  - [Markdown File Requirements](#markdown-file-requirements)
+  - [Adding Docs](#adding-docs)
+  - [Editing Docs](#editing-docs)
+  - [Repositories](#repositories)
 - [Development](#development)
-    - [Use Docker](#use-docker)
+  - [Use Docker](#use-docker)
 - [GitHub GraphQL API](#github-graphql-api)
 - [Authors](#authors)
 - [License](#license)
@@ -33,26 +34,57 @@
 
 The documentation is split in multiple sections whose content lives in this repo:
 
--   **Core concepts**: high-level explanation of concepts, assumptions, and components
--   **Setup**: getting started for various stakeholders and use cases
--   **Tutorials**: detailed tutorials
+- **Core concepts**: high-level explanation of concepts, assumptions, and components
+- **Setup**: getting started for various stakeholders and use cases
+- **Tutorials**: detailed tutorials
 
 Those sections are defined in the [`/data/sections.yml`](data/sections.yml) file.
 
-### Content files
+### Content Files
 
-All content lives in the [`/content`](content/) & [`/data`](data/) folders utilizing GitHub Flavored Markdown and YAML. Content is organized through subfolders corresponding to the sections mentioned above. Those subfolder names, along with the file name, define the final url of a given piece of content.
+Some content files live in the [`/content`](content/) & [`/data`](data/) folders, and is written using Markdown and YAML.
+That content is organized into subfolders corresponding to the sections mentioned above.
+The subfolder names, along with the filenames, define the final URL of a given piece of content.
+The final navigational organization of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/).
+Some global values used throughout the site can be set in [`config.js`](config.js).
 
-The final navigational organisation of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/). Some global values used throughout the site can be set in [`config.js`](config.js).
+TODO: Additionally, some content files live in other repositories and are pulled into the site at build time, e.g.
+
+- API references
+- Component docs
+- Maybe more
+
+### Markdown File Requirements
+
+All Markdown files should use
+[GitHub Flavored Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/)
+and must satisfy some extra requirements:
+
+1. The file must begin with a section that looks like this (YAML):
+
+   ```text
+   ---
+   title: This is the Title in Title Case
+   description: A short description of the page.
+   ---
+   Markdown content begins here.
+   ```
+
+   Note: The `description` value will be rendered on-page below the title, and it will also be used for description tags in the HTML header.
+1. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
+1. Internal links to other docs pages should be:
+   - to the _full absolute URL_, such as https://docs.oceanprotocol.com/hello/you-are-awesome/ or https://github.com/oceanprotocol/dev-ocean/blob/master/doc/development/style-guides.md or
+   - to a relative URL that looks like `/concepts/terminology/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
 
 Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in the docs.
 
-TODO: Additionally, these docs live in their respective repos and are pulled into this site on build time:
+### Adding Docs
 
--   API references
--   Component docs
+1. Add new Markdown file under one of the folders under [`/content`](content/)
+2. Add new path to one of the sidebars in [`/data/sidebars`](data/sidebars/)
+3. ...
 
-### Editing docs
+### Editing Docs
 
 Every article on [docs.oceanprotocol.com](https://docs.oceanprotocol.com) ends with an _Edit this page on GitHub_ link. Clicking that will put you to the right place in the repository from where you can hit the _Edit_ pencil icon on GitHub.
 
@@ -66,12 +98,6 @@ The editing workflow is as follows:
 4. Wait for review, possibly make requested changes
 5. Wait for all checks to pass
 6. Merge!
-
-### Adding docs
-
-1. Add new Markdown file under one of the folders under [`/content`](content/)
-2. Add new path to one of the sidebars in [`/data/sidebars`](data/sidebars/)
-3. ...
 
 ### Repositories
 
@@ -91,7 +117,7 @@ The above example will result in:
 
 This repository component can also be used within any Markdown content like so:
 
-```
+```html
 <repo name="pleuston"></repo>
 ```
 
@@ -104,16 +130,16 @@ Additionally, you can attach multiple links to a repo. The GitHub link is automa
         url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 ```
 
--   [`/data/repositories.yml`](data/repositories.yml)
+in [`/data/repositories.yml`](data/repositories.yml).
 
 ## Development
 
-The site is a React app built with [Gatsby](https://www.gatsbyjs.org), pulling its content from various sources.
+The site is a React app built with [Gatsby](https://www.gatsbyjs.org).
 
 As a prerequisite you'll need on your machine:
 
--   Node.js
--   npm
+- Node.js
+- npm
 
 Clone this repo, install all dependencies, and start the development server:
 
@@ -129,7 +155,7 @@ npm i
 npm start
 ```
 
-For getting your `GITHUB_TOKEN`, see [GitHub GraphQL API](#github-graphql-api)
+For getting your `GITHUB_TOKEN`, see [GitHub GraphQL API](#github-graphql-api).
 
 This will start a hot-reloading local server exposed under [localhost:8000](http://localhost:8000).
 
@@ -137,11 +163,11 @@ This will start a hot-reloading local server exposed under [localhost:8000](http
 
 Alternatively, you can use Docker for which you need to have installed on your machine:
 
--   [Docker](https://www.docker.com)
--   [Docker Compose](https://docs.docker.com/compose/)
--   `GITHUB_TOKEN` in `.env`, see [GitHub GraphQL API](#github-graphql-api)
+- [Docker](https://www.docker.com)
+- [Docker Compose](https://docs.docker.com/compose/)
+- `GITHUB_TOKEN` in `.env`, see [GitHub GraphQL API](#github-graphql-api)
 
-Then use Compose to bring everything up:
+Then use Docker Compose to bring everything up:
 
 ```bash
 docker-compose up
@@ -189,12 +215,12 @@ query {
 
 ## Authors
 
--   Troy McConaghy ([@ttmc](https://github.com/ttmc)) - [Ocean Protocol](https://oceanprotocol.com)
--   Matthias Kretschmann ([@kremalicious](https://github.com/kremalicious)) - [Ocean Protocol](https://oceanprotocol.com)
+- Troy McConaghy ([@ttmc](https://github.com/ttmc)) - [Ocean Protocol](https://oceanprotocol.com)
+- Matthias Kretschmann ([@kremalicious](https://github.com/kremalicious)) - [Ocean Protocol](https://oceanprotocol.com)
 
 ## License
 
-```
+```text
 Copyright 2018 Ocean Protocol Foundation Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
