@@ -1,14 +1,19 @@
+- group: Full Nodes
+  items:
+    - title: Set Up a Full Node
+      link: /setup/full-node/
+
 - group: Marketplaces
   items:
     - title: Set Up a Marketplace
       link: /setup/marketplace/
 
-- group: Keeper
+- group: Keepers
   items:
     - title: Set Up a Keeper
       link: /setup/keeper/
 
-- group: Publisher
+- group: Publishers
   items:
     - title: Publish Data or Services
       link: /setup/publisher/

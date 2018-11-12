@@ -10,7 +10,7 @@ const QuickRun = ({ name }) => (
             <h1 className={styles.tldr}>TL;DR</h1>
             <strong>
                 Wanna quickly get an Ocean network with all{' '}
-                <Link to="/concepts/ecosystem/">core components</Link> running
+                <Link to="/concepts/components/">core components</Link> running
                 on your machine?
             </strong>
         </header>

@@ -1,22 +1,19 @@
-- group: Getting Started
+- group: Basics
   items:
     - title: What is Ocean Protocol?
       link: /concepts/introduction/
-    - title: Ecosystem overview
-      link: /concepts/ecosystem/
     - title: Terminology
       link: /concepts/terminology/
-
-- group: Architecture
-  items:
-    - title: Overview
+    - title: Software Components
+      link: /concepts/components/
+    - title: Architecture
       link: /concepts/architecture/
 
 - group: Security
   items:
     - title: Overview
       link: /concepts/security/
-    - title: Reporting vulnerabilities
+    - title: Reporting Vulnerabilities
       link: /concepts/vulnerabilities/
 
 - group: Roadmap
