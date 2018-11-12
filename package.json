@@ -38,6 +38,7 @@
     "gatsby-remark-component": "^1.1.3",
     "gatsby-remark-copy-linked-files": "^2.0.6",
     "gatsby-remark-embed-video": "^1.4.0",
+    "gatsby-remark-github": "^1.0.1",
     "gatsby-remark-images": "^2.0.6",
     "gatsby-remark-prismjs": "^3.0.3",
     "gatsby-remark-responsive-iframe": "^2.0.6",

@@ -174,7 +174,7 @@ const Repository = ({ name, links, readme }) => (
 Repository.propTypes = {
     name: PropTypes.string.isRequired,
     links: PropTypes.array,
-    readme: PropTypes.bool
+    readme: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
 }
 
 export default Repository

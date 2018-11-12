@@ -377,3 +377,14 @@ Resulting in:
 
 <repo name="aquarius" readme="true"></repo>
 
+### Embedding File Contents from GitHub
+
+You can embed any file contents like so, note that the language needs to be defined manually to get proper syntax highlighting:
+
+```text
+GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/Web3Provider.ts js GITHUB-EMBED
+```
+
+Resulting in:
+
+GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/Web3Provider.ts js GITHUB-EMBED

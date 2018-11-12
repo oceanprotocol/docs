@@ -73,6 +73,17 @@ module.exports = {
                             showCaptions: true
                         }
                     },
+                    {
+                        resolve: 'gatsby-remark-github',
+                        options: {
+                            marker: 'GITHUB-EMBED',
+                            insertEllipsisComments: true,
+                            ellipsisPhrase: '...',
+                            useCache: true,
+                            cacheKey: 'gatsby-remark-github-v1',
+                            token: process.env.GITHUB_TOKEN
+                        }
+                    },
                     'gatsby-remark-smartypants',
                     'gatsby-remark-embed-video',
                     'gatsby-remark-responsive-iframe',
