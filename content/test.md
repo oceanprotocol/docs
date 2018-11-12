@@ -113,13 +113,9 @@ Some text to show that the reference links can follow later.
 
 Or leave it empty and use the [link text itself]
 
-<!-- markdownlint-disable no-bare-urls -->
-
 URLs and URLs in angle brackets will automatically get turned into links.
 http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
-
-<!-- markdownlint-enable no-bare-urls -->
 
 Some text to show that the reference links can follow later.
 
