@@ -1,16 +1,33 @@
 ---
 title: Set Up a Marketplace
-description: Fill me
+description: Build and run a data marketplace in the Ocean network.
 ---
 
-If you want to set up a marketplace for the Ocean network, then you could start by running the following tech stack:
+If you want to set up and run a marketplace in the Ocean network, then at a technical level, you must:
 
-1. [🦄 pleuston](https://github.com/oceanprotocol/pleuston)
-1. [🐋 aquarius](https://github.com/oceanprotocol/aquarius)
-1. A database for Aquarius
+- Build your marketplace application
+- Run your marketplace application and some Ocean components:
+  - Aquarius
+  - A database for Aquarius
+  - An Ethereum client (e.g. Ganache, Parity Ethereum)
+  - Maybe Brizo, unless you are working with others (publishers) running Brizo
+  - Maybe more?
 
-Then you could modify that stack to better suit your needs.
-Let's take a closer look inside each of those components.
+We expand on all of that below.
+
+## Building A Marketplace Application
+
+An Ocean marketplace application is a web app that lets people list data assets for sale (maybe free) and lets consumers buy those assets. To connect your marketplace with the Ocean network, you'll want to use one of the Squid libraries.
+
+TODO: Expand the following:
+
+Dev option 1: Fork Pleuston (serverless). Use the Docker Compose workflow that Pleuston devs use.
+
+Dev option 2: Build a marketplace with a server-side and a web frontend. Use one of the Squid libraries.
+
+<hr>
+
+Old content to scavenge:
 
 ## Pleuston
 

@@ -21,10 +21,10 @@ There are more details on the
 [Ocean Protocol home page](https://oceanprotocol.com/#papers),
 and in the whitepapers:
 
--   [Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)
--   [Business Whitepaper](https://oceanprotocol.com/business-whitepaper.pdf)
--   [Reference Marketplace Framework](https://oceanprotocol.com/marketplace-framework.pdf)
+- [Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)
+- [Business Whitepaper](https://oceanprotocol.com/business-whitepaper.pdf)
+- [Reference Marketplace Framework](https://oceanprotocol.com/marketplace-framework.pdf)
 
-## More information
+## More Information
 
--   [Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)
+- [Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)
