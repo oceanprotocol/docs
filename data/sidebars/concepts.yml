@@ -9,20 +9,18 @@
     - title: Architecture
       link: /concepts/architecture/
 
-- group: Security
+- group: Details
   items:
-    - title: Overview
-      link: /concepts/security/
-    - title: Reporting Vulnerabilities
-      link: /concepts/vulnerabilities/
+    - title: Coming Soon
+      link: /
 
-- group: Roadmap
+- group: Contribute
   items:
-    - title: Development
-      link: /concepts/development/
-    - title: Contributing
+    - title: Ways to Contribute
       link: /concepts/contributing/
     - title: Bounties
       link: /concepts/bounties/
+    - title: Reporting Vulnerabilities
+      link: /concepts/vulnerabilities/
     - title: Code of Conduct
       link: /concepts/code-of-conduct/

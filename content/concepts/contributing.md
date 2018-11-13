@@ -1,9 +1,9 @@
 ---
-title: Contributing
-description: If you would like to contribute to Ocean Protocol, you have different possibilities.
+title: Ways to Contribute
+description: There are many ways you could contribute to Ocean Protocol.
 ---
 
-All contributions to Ocean Protocol are governed by our [Code of Conduct](code-of-conduct/).
+All contributions to Ocean Protocol are governed by our [Code of Conduct](/concepts/code-of-conduct/).
 
 ## Report a Bug
 
@@ -19,25 +19,28 @@ To make a feature request or proposal, you can go to the [🐙 Ocean Protocol En
 
 <repo name="OEPs"></repo>
 
-## Write Docs
+## Write!
 
-If you’re writing code, you should also update any related docs. However, you might want to write docs only, such as:
+You could write articles or blog posts related to Ocean Protocol. Possible topics include:
 
-- General explainers
-- Tutorials
-- Courses
-- Code explanations
-- News from recent events
+- a story about how you used Ocean Protocol or the Ocean network
+- news from a recent event
+- tutorials for beginners
+- a deep dive into some specific aspect of Ocean Protocol
+- a blog post about a particular component in the Ocean Protocol stack
 
-For instructions on how to contribute to our main documentation check out the docs repo.
+For instructions on how to contribute to our main documentation site, check out the docs repo.
 
 <repo name="docs"></repo>
 
-## Fix an Issue
+## Participate in a Bounty
 
-... Where to look for issues?
-... With 'help wanted' label?
+See the page about [bounties](/concepts/bounties/).
 
-## Participate in a bounty
+## Help Develop Core Ocean Software
 
-- [Bounties](/concepts/bounties/)
+Right now, we're not really set up to accept core code contributions from external developers, except via the bounties mentioned above. In the future, we hope to have policies and processes that empower anyone to contribute.
+
+If you'd like to follow what the core dev team is doing, a good place to start is the dev-ocean repository on GitHub.
+
+<repo name="dev-ocean"></repo>
