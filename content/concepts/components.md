@@ -37,14 +37,20 @@ An example marketplace front-end for consumers to explore, download, and publish
 
 <repo name="pleuston"></repo>
 
-## Secret Store
-
-A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store asset access-control keys.
-
 ## Squid Libraries
 
 Client libraries used by applications (such as Pleuston or Jupyter notebooks) to interact with Ocean components, including Keepers, Aquarius nodes, Brizo nodes, etc.
 
-- [🦑 squid-js](https://github.com/oceanprotocol/squid-js)
-- [🦑 squid-py](https://github.com/oceanprotocol/squid-py)
-- [🦑 squid-java](https://github.com/oceanprotocol/squid-java)
+<repo name="squid-js"></repo>
+<repo name="squid-py"></repo>
+<repo name="squid-java"></repo>
+
+## Secret Store
+
+A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store asset access-control keys.
+
+We have created multiple clients for integrating the Parity Secret Store into Ocean:
+
+<repo name="secret-store-client-js"></repo>
+<repo name="secret-store-client-py"></repo>
+<repo name="secret-store-client-java"></repo>

@@ -81,11 +81,11 @@ Links.propTypes = {
 
 const Numbers = ({ stargazers, forkCount, url }) => (
     <aside className={styles.repositorynumbers}>
-        <a href={`${url}/stargazers`}>
+        <a href={`${url}/stargazers`} title="Show Stargazers">
             <Star /> <span>{stargazers.totalCount}</span>
         </a>
         {forkCount > 0 && (
-            <a href={`${url}/network`}>
+            <a href={`${url}/network`} title="Show Forks">
                 <Forks /> <span>{forkCount}</span>
             </a>
         )}
