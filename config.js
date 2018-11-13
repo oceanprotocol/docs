@@ -2,7 +2,8 @@ module.exports = {
     siteTitle: 'Ocean Protocol Documentation',
     siteShortTitle: 'Docs',
     siteDescription:
-        'Learn everything you need to know to develop with Ocean Protocol. This should be a bit longer cause it is also the meta description so why not write some more.',
+        'Learn about the components of the Ocean Protocol software stack,\
+         and how to run or use the components relevant to you.',
     siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
     siteIcon: 'src/images/profile.png',
     siteCompany: 'Ocean Protocol Foundation Ltd.',
