@@ -6,10 +6,11 @@ description: Build and run a data marketplace in the Ocean network.
 If you want to set up and run a marketplace in the Ocean network, then at a technical level, you must:
 
 - Build your marketplace application
-- Run your marketplace application and some Ocean components:
+- Run:
+  - Your marketplace application
   - Aquarius
   - A database for Aquarius
-  - An Ethereum client (e.g. Ganache, Parity Ethereum)
+  - Parity Ethereum
   - Maybe Brizo, unless you are working with others (publishers) running Brizo
   - Maybe more?
 
@@ -17,15 +18,19 @@ We expand on all of that below.
 
 ## Building A Marketplace Application
 
-An Ocean marketplace application is a web app that lets people list data assets for sale (maybe free) and lets consumers buy those assets. To connect your marketplace with the Ocean network, you'll want to use one of the Squid libraries.
+An Ocean marketplace application (app) is one of the primary ways that end users use the Ocean network. For example, a data scientist could use a marketplace app to see what data sets and data services a marketplace has on offer. They can use the marketplace app to buy access to data sets or services.
 
-TODO: Expand the following:
+To build an Ocean marketplace application, you will probably want to use one of the Squid software libraries because they simplify working with the Ocean network.
+Currently there are Squid libraries for JavaScript, Python and Java.
+As an analogy, squid-py is to Ocean like boto3 is to AWS.
 
-Dev option 1: Fork Pleuston (serverless). Use the Docker Compose workflow that Pleuston devs use.
+Dev example 1: Fork Pleuston (serverless). Use the Docker Compose workflow that Pleuston devs use.
 
-Dev option 2: Build a marketplace with a server-side and a web frontend. Use one of the Squid libraries.
+Dev example 2: Build a marketplace with a Python server-side (using squid-py) and a web frontend. Use one of the Squid libraries.
 
 <hr>
+
+Note that you can probably use Docker Compose or similar to run all the other stuff, for now.
 
 Old content to scavenge:
 

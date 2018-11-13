@@ -3,7 +3,7 @@ title: Terminology
 description: Terminology specific to Ocean Protocol.
 ---
 
-## Asset
+## Asset (or Data Asset)
 
 A data set or data service.
 
