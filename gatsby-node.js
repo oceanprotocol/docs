@@ -7,8 +7,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     if (node.internal.type === 'MarkdownRemark') {
         const fileNode = getNode(node.parent)
         const parsedFilePath = path.parse(fileNode.relativePath)
-        const slug = createFilePath({ node, getNode, basePath: 'content' })
-        const section = parsedFilePath.dir
+
+        let slug = createFilePath({ node, getNode, basePath: 'content' })
+        let section = parsedFilePath.dir
+
+        if (node.frontmatter.slug) {
+            ;({ slug } = node.frontmatter)
+        }
+
+        if (node.frontmatter.section) {
+            ;({ section } = node.frontmatter)
+        }
 
         createNodeField({
             node,
@@ -22,46 +31,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
             value: section
         })
     }
-
-    //     // console.log(node)
-
-    //     // if (node.internal.owner === 'gatsby-source-graphql') {
-    //     //     console.log(node)
-    //     // }
 }
-
-// exports.sourceNodes = (
-//     { actions, createNodeId, createContentDigest },
-//     configOptions
-// ) => {
-//     const { createNode } = actions
-
-//     // Gatsby adds a configOption that's not needed for this plugin, delete it
-//     delete configOptions.plugins
-
-//     createNode({
-//         // Data for the node.
-//         field1: `a string`,
-//         field2: 10,
-//         field3: true,
-//         ...arbitraryOtherData,
-
-//         // Required fields.
-//         id: `a-node-id`,
-//         parent: `the-id-of-the-parent-node`, // or null if it's a source node without a parent
-//         children: [],
-//         internal: {
-//             type: `CoolServiceMarkdownField`,
-//             contentDigest: crypto
-//                 .createHash(`md5`)
-//                 .update(JSON.stringify(fieldData))
-//                 .digest(`hex`),
-//             mediaType: `text/markdown`, // optional
-//             content: JSON.stringify(fieldData), // optional
-//             description: `Cool Service: "Title of entry"` // optional
-//         }
-//     })
-// }
 
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
@@ -84,23 +54,18 @@ exports.createPages = ({ graphql, actions }) => {
                             }
                         }
 
-                        github {
-                            repository(
-                                owner: "oceanprotocol"
-                                name: "dev-ocean"
-                            ) {
-                                root: object(
-                                    expression: "master:doc/architecture.md"
-                                ) {
-                                    ... on GitHub_Blob {
-                                        text
-                                    }
+                        architectureDocs: allMarkdownRemark(
+                            filter: {
+                                fileAbsolutePath: {
+                                    regex: "/dev-ocean/doc/architecture.md/"
                                 }
-                                squid: object(
-                                    expression: "master:doc/architecture/squid.md"
-                                ) {
-                                    ... on GitHub_Blob {
-                                        text
+                            }
+                        ) {
+                            edges {
+                                node {
+                                    fields {
+                                        slug
+                                        section
                                     }
                                 }
                             }
@@ -130,33 +95,55 @@ exports.createPages = ({ graphql, actions }) => {
                 })
 
                 // Create Architecture section from dev-ocean contents
-                const docRepoTemplate = path.resolve(
-                    './src/templates/DocRepo.jsx'
-                )
+                const postsArchitecture = result.data.architectureDocs.edges
 
-                createPage({
-                    path: '/concepts/architecture/',
-                    component: docRepoTemplate,
-                    context: {
-                        slug: '/concepts/architecture/',
-                        section: 'concepts',
-                        title: 'Architecture',
-                        description: 'Hello description',
-                        content: `${result.data.github.repository.root.text}`
-                    }
+                postsArchitecture.forEach(post => {
+                    createPage({
+                        path: `${post.node.fields.slug}`,
+                        component: docTemplate,
+                        context: {
+                            slug: post.node.fields.slug,
+                            section: post.node.fields.section
+                        }
+                    })
                 })
 
-                createPage({
-                    path: '/concepts/squid/',
-                    component: docRepoTemplate,
-                    context: {
-                        slug: '/concepts/squid/',
-                        section: 'concepts',
-                        title: 'Squid',
-                        description: 'Hello description',
-                        content: `${result.data.github.repository.squid.text}`
-                    }
-                })
+                // createPage({
+                //     path: '/concepts/architecture/',
+                //     component: docTemplate,
+                //     context: {
+                //         slug: post.node.fields.slug,
+                //         section: post.node.fields.section
+                //     }
+                // })
+
+                // const docRepoTemplate = path.resolve(
+                //     './src/templates/DocRepo.jsx'
+                // )
+
+                // createPage({
+                //     path: '/concepts/architecture/',
+                //     component: docRepoTemplate,
+                //     context: {
+                //         slug: '/concepts/architecture/',
+                //         section: 'concepts',
+                //         title: 'Architecture',
+                //         description: 'Hello description',
+                //         content: `${result.data.github.repository.root.text}`
+                //     }
+                // })
+
+                // createPage({
+                //     path: '/concepts/squid/',
+                //     component: docRepoTemplate,
+                //     context: {
+                //         slug: '/concepts/squid/',
+                //         section: 'concepts',
+                //         title: 'Squid',
+                //         description: 'Hello description',
+                //         content: `${result.data.github.repository.squid.text}`
+                //     }
+                // })
 
                 resolve()
             })

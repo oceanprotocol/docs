@@ -37,12 +37,18 @@ module.exports = {
                 path: `${__dirname}/data`
             }
         },
-
         {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'art',
                 path: `${__dirname}/node_modules/@oceanprotocol/art`
+            }
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'dev-ocean',
+                path: `${__dirname}/external/dev-ocean/doc`
             }
         },
         {

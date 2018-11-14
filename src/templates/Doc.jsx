@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderSection from '../components/HeaderSection'
 import Sidebar from '../components/Sidebar'
+import DocToc from '../components/DocToc'
 import DocContent from '../components/DocContent'
 import DocHeader from '../components/DocHeader'
 import DocFooter from '../components/DocFooter'
@@ -14,17 +15,16 @@ import styles from './Doc.module.scss'
 export default class DocTemplate extends Component {
     static propTypes = {
         data: PropTypes.object.isRequired,
-        location: PropTypes.object.isRequired,
-        pageContext: PropTypes.object
+        location: PropTypes.object.isRequired
     }
 
     render() {
         const { location } = this.props
         const post = this.props.data.markdownRemark
         const sections = this.props.data.allSectionsYaml.edges
-        const { section } = post.fields ? post.fields : this.props.pageContext
-        const { title, description } =
-            post.frontmatter || this.props.pageContext
+        const { section } = post.fields
+        const { title, description } = post.frontmatter
+        const { tableOfContents } = post
 
         // output section title as defined in sections.yml
         const sectionTitle = sections.map(({ node }) => {
@@ -58,6 +58,13 @@ export default class DocTemplate extends Component {
                                         title={title}
                                         description={description}
                                     />
+
+                                    {tableOfContents && (
+                                        <DocToc
+                                            tableOfContents={tableOfContents}
+                                        />
+                                    )}
+
                                     <DocContent
                                         html={post.html}
                                         htmlAst={post.htmlAst}
@@ -71,6 +78,11 @@ export default class DocTemplate extends Component {
                                     title={title}
                                     description={description}
                                 />
+
+                                {tableOfContents && (
+                                    <DocToc tableOfContents={tableOfContents} />
+                                )}
+
                                 <DocContent
                                     html={post.html}
                                     htmlAst={post.htmlAst}
@@ -90,6 +102,7 @@ export const pageQuery = graphql`
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
             excerpt
+            tableOfContents
             html
             htmlAst
             fileAbsolutePath
