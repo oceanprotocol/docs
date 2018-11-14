@@ -6,13 +6,13 @@
       link: /concepts/terminology/
     - title: Software Components
       link: /concepts/components/
-    - title: Architecture
-      link: /concepts/architecture/
 
-- group: Details
+- group: Architecture
   items:
-    - title: Coming Soon
-      link: /
+    - title: Overview
+      link: /concepts/architecture/
+    - title: Squid
+      link: /concepts/squid/
 
 - group: Contribute
   items:

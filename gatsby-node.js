@@ -22,7 +22,46 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
             value: section
         })
     }
+
+    //     // console.log(node)
+
+    //     // if (node.internal.owner === 'gatsby-source-graphql') {
+    //     //     console.log(node)
+    //     // }
 }
+
+// exports.sourceNodes = (
+//     { actions, createNodeId, createContentDigest },
+//     configOptions
+// ) => {
+//     const { createNode } = actions
+
+//     // Gatsby adds a configOption that's not needed for this plugin, delete it
+//     delete configOptions.plugins
+
+//     createNode({
+//         // Data for the node.
+//         field1: `a string`,
+//         field2: 10,
+//         field3: true,
+//         ...arbitraryOtherData,
+
+//         // Required fields.
+//         id: `a-node-id`,
+//         parent: `the-id-of-the-parent-node`, // or null if it's a source node without a parent
+//         children: [],
+//         internal: {
+//             type: `CoolServiceMarkdownField`,
+//             contentDigest: crypto
+//                 .createHash(`md5`)
+//                 .update(JSON.stringify(fieldData))
+//                 .digest(`hex`),
+//             mediaType: `text/markdown`, // optional
+//             content: JSON.stringify(fieldData), // optional
+//             description: `Cool Service: "Title of entry"` // optional
+//         }
+//     })
+// }
 
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
@@ -44,6 +83,28 @@ exports.createPages = ({ graphql, actions }) => {
                                 }
                             }
                         }
+
+                        github {
+                            repository(
+                                owner: "oceanprotocol"
+                                name: "dev-ocean"
+                            ) {
+                                root: object(
+                                    expression: "master:doc/architecture.md"
+                                ) {
+                                    ... on GitHub_Blob {
+                                        text
+                                    }
+                                }
+                                squid: object(
+                                    expression: "master:doc/architecture/squid.md"
+                                ) {
+                                    ... on GitHub_Blob {
+                                        text
+                                    }
+                                }
+                            }
+                        }
                     }
                 `
             ).then(result => {
@@ -53,8 +114,8 @@ exports.createPages = ({ graphql, actions }) => {
                     reject(result.errors)
                 }
 
-                const posts = result.data.allMarkdownRemark.edges
                 const docTemplate = path.resolve('./src/templates/Doc.jsx')
+                const posts = result.data.allMarkdownRemark.edges
 
                 // Create Doc pages
                 posts.forEach(post => {
@@ -66,6 +127,35 @@ exports.createPages = ({ graphql, actions }) => {
                             section: post.node.fields.section
                         }
                     })
+                })
+
+                // Create Architecture section from dev-ocean contents
+                const docRepoTemplate = path.resolve(
+                    './src/templates/DocRepo.jsx'
+                )
+
+                createPage({
+                    path: '/concepts/architecture/',
+                    component: docRepoTemplate,
+                    context: {
+                        slug: '/concepts/architecture/',
+                        section: 'concepts',
+                        title: 'Architecture',
+                        description: 'Hello description',
+                        content: `${result.data.github.repository.root.text}`
+                    }
+                })
+
+                createPage({
+                    path: '/concepts/squid/',
+                    component: docRepoTemplate,
+                    context: {
+                        slug: '/concepts/squid/',
+                        section: 'concepts',
+                        title: 'Squid',
+                        description: 'Hello description',
+                        content: `${result.data.github.repository.squid.text}`
+                    }
                 })
 
                 resolve()

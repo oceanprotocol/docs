@@ -8,10 +8,9 @@ import HeaderSection from '../components/HeaderSection'
 import Sidebar from '../components/Sidebar'
 import DocContent from '../components/DocContent'
 import DocHeader from '../components/DocHeader'
-import DocFooter from '../components/DocFooter'
 import styles from './Doc.module.scss'
 
-export default class DocTemplate extends Component {
+export default class DocRepoTemplate extends Component {
     static propTypes = {
         data: PropTypes.object.isRequired,
         location: PropTypes.object.isRequired,
@@ -20,11 +19,9 @@ export default class DocTemplate extends Component {
 
     render() {
         const { location } = this.props
-        const post = this.props.data.markdownRemark
         const sections = this.props.data.allSectionsYaml.edges
-        const { section } = post.fields ? post.fields : this.props.pageContext
-        const { title, description } =
-            post.frontmatter || this.props.pageContext
+        const { section } = this.props.pageContext
+        const { title, description, content } = this.props.pageContext
 
         // output section title as defined in sections.yml
         const sectionTitle = sections.map(({ node }) => {
@@ -58,11 +55,7 @@ export default class DocTemplate extends Component {
                                         title={title}
                                         description={description}
                                     />
-                                    <DocContent
-                                        html={post.html}
-                                        htmlAst={post.htmlAst}
-                                    />
-                                    <DocFooter post={post} />
+                                    <DocContent html={content} github />
                                 </article>
                             </main>
                         ) : (
@@ -71,11 +64,7 @@ export default class DocTemplate extends Component {
                                     title={title}
                                     description={description}
                                 />
-                                <DocContent
-                                    html={post.html}
-                                    htmlAst={post.htmlAst}
-                                />
-                                <DocFooter post={post} />
+                                <DocContent html={content} github />
                             </article>
                         )}
                     </Content>
@@ -86,23 +75,7 @@ export default class DocTemplate extends Component {
 }
 
 export const pageQuery = graphql`
-    query DocBySlug($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            id
-            excerpt
-            html
-            htmlAst
-            fileAbsolutePath
-            frontmatter {
-                title
-                description
-            }
-            fields {
-                section
-            }
-            ...PageFooter
-        }
-
+    query {
         allSectionsYaml {
             edges {
                 node {
@@ -110,14 +83,6 @@ export const pageQuery = graphql`
                     description
                     link
                 }
-            }
-        }
-    }
-
-    fragment PageFooter on MarkdownRemark {
-        parent {
-            ... on File {
-                relativePath
             }
         }
     }
