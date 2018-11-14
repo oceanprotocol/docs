@@ -15,7 +15,7 @@
     "format": "run-p format:js format:css format:md format:yml",
     "lint:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
     "lint:css": "stylelint './src/**/*.{css,scss}'",
-    "lint:md": "markdownlint './**/*.{md,markdown}' --ignore node_modules",
+    "lint:md": "markdownlint './**/*.{md,markdown}' --ignore './{node_modules,external,public}/**/*'",
     "lint:yml": "prettier '**/*.{yml,yaml}' --list-different",
     "lint": "run-p --continue-on-error lint:js lint:css lint:md lint:yml",
     "test": "npm run lint"
