@@ -147,7 +147,7 @@ As a prerequisite you'll need on your machine:
 Clone this repo, install all dependencies, and start the development server:
 
 ```bash
-git clone git@github.com:oceanprotocol/docs.git
+git clone --recursive git@github.com:oceanprotocol/docs.git
 cd docs/
 
 # add GITHUB_TOKEN
