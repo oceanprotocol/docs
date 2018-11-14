@@ -1,4 +1,32 @@
-- group: Data Science
+- group: Overview
   items:
-    - title: Jupyter Notebooks
-      link: /tutorials/jupyter/
+    - title: Introduction
+      link: /tutorials/introduction/
+
+- group: Publish a Data Set
+  items:
+    - title: with Pleuston
+      link: /tutorials/pleuston-publish-data-set/
+    - title: with Python
+      link: /tutorials/python-publish-data-set/
+
+- group: Publish a Compute Service
+  items:
+    - title: with Pleuston
+      link: /tutorials/pleuston-publish-compute-service/
+    - title: with Python
+      link: /tutorials/python-publish-compute-service/
+
+- group: Get & Use a Data Set
+  items:
+    - title: with Pleuston
+      link: /tutorials/pleuston-get-data-set/
+    - title: with Python
+      link: /tutorials/python-get-data-set/
+
+- group: Get & Use a Compute Service
+  items:
+    - title: with Pleuston
+      link: /tutorials/pleuston-get-compute-service/
+    - title: with Python
+      link: /tutorials/python-get-compute-service/
