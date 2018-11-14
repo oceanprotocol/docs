@@ -1,4 +1,18 @@
-- group: Data Science
+- group: Overview
   items:
-    - title: Jupyter Notebooks
-      link: /tutorials/jupyter/
+    - title: Introduction
+      link: /tutorials/introduction/
+
+- group: Publish
+  items:
+    - title: Publish a Data Set
+      link: /tutorials/publish-data-set/
+    - title: Publish a Compute Service
+      link: /tutorials/publish-compute-service/
+
+- group: Consume
+  items:
+    - title: Get & Use a Data Set
+      link: /tutorials/get-use-data-set/
+    - title: Get & Use a Compute Service
+      link: /tutorials/get-use-compute-service/
