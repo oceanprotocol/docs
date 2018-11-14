@@ -57,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
                         architectureDocs: allMarkdownRemark(
                             filter: {
                                 fileAbsolutePath: {
-                                    regex: "/dev-ocean/doc/architecture.md/"
+                                    regex: "/dev-ocean/doc/architecture/"
                                 }
                             }
                         ) {
@@ -65,6 +65,12 @@ exports.createPages = ({ graphql, actions }) => {
                                 node {
                                     fields {
                                         slug
+                                        section
+                                    }
+                                    frontmatter {
+                                        slug
+                                        title
+                                        description
                                         section
                                     }
                                 }
@@ -97,53 +103,25 @@ exports.createPages = ({ graphql, actions }) => {
                 // Create Architecture section from dev-ocean contents
                 const postsArchitecture = result.data.architectureDocs.edges
 
-                postsArchitecture.forEach(post => {
-                    createPage({
-                        path: `${post.node.fields.slug}`,
-                        component: docTemplate,
-                        context: {
-                            slug: post.node.fields.slug,
-                            section: post.node.fields.section
-                        }
+                postsArchitecture
+                    // only grab files with required frontmatter defined
+                    .filter(
+                        post =>
+                            post.node.frontmatter.slug &&
+                            post.node.frontmatter.title &&
+                            post.node.frontmatter.description &&
+                            post.node.frontmatter.section
+                    )
+                    .forEach(post => {
+                        createPage({
+                            path: `${post.node.fields.slug}`,
+                            component: docTemplate,
+                            context: {
+                                slug: post.node.fields.slug,
+                                section: post.node.fields.section
+                            }
+                        })
                     })
-                })
-
-                // createPage({
-                //     path: '/concepts/architecture/',
-                //     component: docTemplate,
-                //     context: {
-                //         slug: post.node.fields.slug,
-                //         section: post.node.fields.section
-                //     }
-                // })
-
-                // const docRepoTemplate = path.resolve(
-                //     './src/templates/DocRepo.jsx'
-                // )
-
-                // createPage({
-                //     path: '/concepts/architecture/',
-                //     component: docRepoTemplate,
-                //     context: {
-                //         slug: '/concepts/architecture/',
-                //         section: 'concepts',
-                //         title: 'Architecture',
-                //         description: 'Hello description',
-                //         content: `${result.data.github.repository.root.text}`
-                //     }
-                // })
-
-                // createPage({
-                //     path: '/concepts/squid/',
-                //     component: docRepoTemplate,
-                //     context: {
-                //         slug: '/concepts/squid/',
-                //         section: 'concepts',
-                //         title: 'Squid',
-                //         description: 'Hello description',
-                //         content: `${result.data.github.repository.squid.text}`
-                //     }
-                // })
 
                 resolve()
             })
