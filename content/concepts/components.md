@@ -41,7 +41,7 @@ An example marketplace front-end for consumers to explore, download, and publish
 
 Client libraries used by applications (such as Pleuston or Jupyter notebooks) to interact with Ocean components, including Keepers, Aquarius nodes, Brizo nodes, etc.
 
-![How Squid is Used](images/Squid_role_diagram.jpg)
+![How Squid is Used](images/Squid_role_diagram_small.jpg)
 
 <repo name="squid-js"></repo>
 <repo name="squid-py"></repo>
