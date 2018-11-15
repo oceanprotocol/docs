@@ -1,19 +1,19 @@
-- group: Full Nodes
+- group: Quickstart
   items:
-    - title: Set Up a Full Node
-      link: /setup/full-node/
+    - title: Run & Try Everything
+      link: /setup/quickstart/
 
 - group: Marketplaces
   items:
     - title: Set Up a Marketplace
       link: /setup/marketplace/
 
-- group: Keepers
-  items:
-    - title: Set Up a Keeper
-      link: /setup/keeper/
-
 - group: Publishers
   items:
     - title: Publish Data or Services
       link: /setup/publisher/
+
+- group: Keepers
+  items:
+    - title: Run a Keeper
+      link: /setup/keeper/
