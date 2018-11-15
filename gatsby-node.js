@@ -56,9 +56,7 @@ exports.createPages = ({ graphql, actions }) => {
 
                         architectureDocs: allMarkdownRemark(
                             filter: {
-                                fileAbsolutePath: {
-                                    regex: "/dev-ocean/doc/architecture/"
-                                }
+                                fileAbsolutePath: { regex: "/dev-ocean/doc/" }
                             }
                         ) {
                             edges {
