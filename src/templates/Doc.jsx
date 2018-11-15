@@ -101,11 +101,9 @@ export const pageQuery = graphql`
     query DocBySlug($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
             id
-            excerpt
             tableOfContents
             html
             htmlAst
-            fileAbsolutePath
             frontmatter {
                 title
                 description
@@ -131,6 +129,7 @@ export const pageQuery = graphql`
         parent {
             ... on File {
                 relativePath
+                sourceInstanceName
             }
         }
     }
