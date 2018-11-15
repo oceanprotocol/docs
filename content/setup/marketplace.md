@@ -5,22 +5,21 @@ description: Build and run a data marketplace in the Ocean network.
 
 If you want to set up and run a marketplace in the Ocean network, then at a technical level, you must:
 
-- Build your marketplace application
+- Build your marketplace application (app)
 - Run:
-  - Your marketplace application
+  - Your marketplace app
   - Aquarius
-  - A database for Aquarius
-  - Parity Ethereum
+  - A database for Aquarius ("OceanDB")
+  - A local Keeper node
   - Maybe Brizo, unless you are working with others (publishers) running Brizo
-  - Maybe more?
 
-We expand on all of that below.
+We expand on all of those things below.
 
-## Building A Marketplace Application
+## Building Your Marketplace App
 
-An Ocean marketplace application (app) is one of the primary ways that end users use the Ocean network. For example, a data scientist could use a marketplace app to see what data sets and data services a marketplace has on offer. They can use the marketplace app to buy access to data sets or services.
+An Ocean marketplace app is one of the primary ways that end users use the Ocean network. For example, a data scientist could use a marketplace app to see what data sets and data services a marketplace has on offer. They can use the marketplace app to buy access to data sets or services.
 
-To build an Ocean marketplace application, you will probably want to use one of the Squid software libraries because they simplify working with the Ocean network.
+To build an Ocean marketplace app, you will probably want to use one of the Squid software libraries because they simplify working with the Ocean network.
 Currently there are Squid libraries for JavaScript, Python and Java.
 As an analogy, squid-py is to Ocean like boto3 is to AWS.
 
@@ -53,7 +52,7 @@ Note: There's also a squid-java library but it's currently not as full-featured 
 
 ## Aquarius
 
-Aquarius is an application used by Marketplaces to store, update, read and delete metadata about assets. The Squid libraries all know how to talk to Aquarius, so you don't need to think about it or its API too much. You just need to make sure you have Aquarius running on a server somewhere.
+Aquarius is a software agent used by Marketplaces to store, update, read and delete metadata about assets. The Squid libraries all know how to talk to Aquarius, so you don't need to think about it too much. You just need to make sure you have Aquarius running on a server somewhere.
 
 TODO: Add instructions here.
 
