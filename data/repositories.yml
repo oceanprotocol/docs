@@ -20,6 +20,8 @@
     - name: squid-java
     - name: secret-store-client-js
     - name: secret-store-client-py
+    - name: secret-store-client-java
     - name: oceandb-mongodb-driver
     - name: oceandb-bigchaindb-driver
     - name: oceandb-elasticsearch-driver
+    - name: oceandb-driver-interface
