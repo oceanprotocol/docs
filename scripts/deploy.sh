@@ -5,7 +5,7 @@
 # AWS_SECRET_ACCESS_KEY
 # AWS_DEFAULT_REGION
 AWS_S3_BUCKET="docs.oceanprotocol.com"
-AWS_S3_BUCKET_BETA="beta.docs.oceanprotocol.com"
+AWS_S3_BUCKET_BETA="betadocs.oceanprotocol.com"
 SITEMAP_URL="https%3A%2F%2Fdocs.oceanprotocol.com%2Fsitemap.xml"
 
 #
