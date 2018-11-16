@@ -30,7 +30,9 @@ const Layout = ({ children, header }) => {
                         <Helmet
                             defaultTitle={siteMeta.siteTitle}
                             titleTemplate={`%s - ${siteMeta.siteTitle}`}
-                        />
+                        >
+                            <meta name="robots" content="noindex, nofollow" />
+                        </Helmet>
                         {headerElement}
                         {children}
                         <Footer />
