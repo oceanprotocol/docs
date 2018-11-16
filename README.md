@@ -283,7 +283,7 @@ Automatic deployments are triggered upon successful tests & builds on Travis:
 - push to `master` initiates a live deployment
   -> [docs.oceanprotocol.com](https://docs.oceanprotocol.com)
 - any Pull Request, and subsequent pushes to it, initiates a beta deployment
-  -> [beta.docs.oceanprotocol.com](https://beta.docs.oceanprotocol.com)
+  -> [betadocs.oceanprotocol.com](https://betadocs.oceanprotocol.com)
 
 The deploy command simply calls the [`scripts/deploy.sh`](scripts/deploy.sh) script, syncing the contents of the `public/` folder to S3:
 
