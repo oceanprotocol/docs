@@ -54,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
                             }
                         }
 
-                        architectureDocs: allMarkdownRemark(
+                        devOceanDocs: allMarkdownRemark(
                             filter: {
                                 fileAbsolutePath: { regex: "/dev-ocean/doc/" }
                             }
@@ -98,13 +98,14 @@ exports.createPages = ({ graphql, actions }) => {
                     })
                 })
 
-                // Create Architecture section from dev-ocean contents
-                const postsArchitecture = result.data.architectureDocs.edges
+                // Create pages from dev-ocean contents
+                const postsDevOcean = result.data.devOceanDocs.edges
 
-                postsArchitecture
+                postsDevOcean
                     // only grab files with required frontmatter defined
                     .filter(
                         post =>
+                            post.node.frontmatter &&
                             post.node.frontmatter.slug &&
                             post.node.frontmatter.title &&
                             post.node.frontmatter.description &&
