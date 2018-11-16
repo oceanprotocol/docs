@@ -30,6 +30,7 @@
 - [Linting & formatting](#linting--formatting)
   - [Editor setup: VS Code](#editor-setup-vs-code)
 - [GitHub GraphQL API](#github-graphql-api)
+- [Deployment](#deployment)
 - [Authors](#authors)
 - [License](#license)
 
@@ -270,6 +271,27 @@ query {
   }
 }
 ```
+
+## Deployment
+
+Automatic deployments are triggered upon successful tests & builds on Travis:
+
+- push to `master` initiates a live deployment
+  -> [docs.oceanprotocol.com](https://docs.oceanprotocol.com)
+- any Pull Request, and subsequent pushes to it, initiates a beta deployment
+  -> [beta.docs.oceanprotocol.com](https://beta.docs.oceanprotocol.com)
+
+The deploy command simply calls the [`scripts/deploy.sh`](scripts/deploy.sh) script, syncing the contents of the `public/` folder to S3:
+
+```bash
+npm run deploy
+```
+
+Requires authorization against AWS with [one of the various ways](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html), on Travis this is done with those environment variables:
+
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `AWS_DEFAULT_REGION`
 
 ## Authors
 
