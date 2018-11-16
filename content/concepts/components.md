@@ -11,7 +11,7 @@ Aquarius provides an API to an off-chain database ("OceanDB") to store and manag
 
 The off-chain database might be MongoDB, Elasticsearch or BigchainDB.
 
-<repo name="aquarius"></repo>
+<repo name="aquarius" readme="true"></repo>
 
 ## Brizo
 

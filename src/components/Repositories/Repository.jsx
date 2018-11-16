@@ -106,6 +106,23 @@ Numbers.propTypes = {
     url: PropTypes.string.isRequired
 }
 
+const Readme = ({ object }) => {
+    const readmeHtml =
+        object &&
+        remark()
+            .use(remarkReact)
+            .processSync(object.text).contents
+
+    return (
+        object && (
+            <aside className={styles.repositoryReadme}>
+                <h3 className={styles.repositoryReadmeTitle}>README.md</h3>
+                {readmeHtml}
+            </aside>
+        )
+    )
+}
+
 const Repository = ({ name, links, readme }) => (
     <StaticQuery
         query={queryGithub}
@@ -136,12 +153,6 @@ const Repository = ({ name, links, readme }) => (
                 object
             } = repo
 
-            const readmeHtml = object
-                ? remark()
-                      .use(remarkReact)
-                      .processSync(object.text).contents
-                : null
-
             return (
                 <article className={styles.repository}>
                     <Title name={name} releases={releases} url={url} />
@@ -157,14 +168,7 @@ const Repository = ({ name, links, readme }) => (
                         />
                     </footer>
 
-                    {readme && object && (
-                        <aside className={styles.repositoryReadme}>
-                            <h3 className={styles.repositoryReadmeTitle}>
-                                README.md
-                            </h3>
-                            {readmeHtml}
-                        </aside>
-                    )}
+                    {readme && <Readme object={object} />}
                 </article>
             )
         }}
