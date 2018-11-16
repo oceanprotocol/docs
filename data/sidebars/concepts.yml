@@ -6,6 +6,8 @@
       link: /concepts/terminology/
     - title: Software Components
       link: /concepts/components/
+    - title: Engineering Principles
+      link: /concepts/principles/
 
 - group: Architecture
   items:
