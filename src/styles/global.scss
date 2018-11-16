@@ -219,6 +219,11 @@ table {
     width: 100%;
     margin-bottom: $spacer * $line-height;
     border-collapse: collapse;
+    display: block;
+
+    // make 'em scrollable
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 
     th,
     td {
@@ -227,6 +232,7 @@ table {
         padding: $spacer / 2;
         border-bottom: 1px solid $brand-grey-lighter;
         text-align: left;
+        font-size: 90%;
 
         &[align='center'] {
             text-align: center;

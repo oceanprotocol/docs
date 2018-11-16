@@ -21,6 +21,12 @@
         padding-bottom: $spacer / $line-height;
         border-bottom: 1px solid $brand-grey-lighter;
     }
+
+    table {
+        overflow-wrap: normal;
+        word-wrap: normal;
+        word-break: normal;
+    }
 }
 
 .empty {
