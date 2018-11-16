@@ -47,6 +47,18 @@ Client libraries used by applications (such as Pleuston or Jupyter notebooks) to
 <repo name="squid-py"></repo>
 <repo name="squid-java"></repo>
 
+## OceanDB Drivers
+
+OceanDB is an off-chain database(?) for storing metadata about data assets.
+
+<repo name="oceandb-mongodb-driver"></repo>
+<repo name="oceandb-bigchaindb-driver"></repo>
+<repo name="oceandb-elasticsearch-driver"></repo>
+
+These drivers are extended from a high-level module implementing OceanDB functions.  You can create your own plugins based on its abstracted interface:
+
+<repo name="oceandb-driver-interface"></repo>
+
 ## Secret Store
 
 A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store asset access-control keys.
