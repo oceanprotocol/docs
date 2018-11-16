@@ -20,6 +20,7 @@
 
 - [Content](#content)
   - [Content Files](#content-files)
+    - [External Content Files](#external-content-files)
   - [Markdown File Requirements](#markdown-file-requirements)
   - [Adding Docs](#adding-docs)
   - [Editing Docs](#editing-docs)
@@ -45,12 +46,26 @@ Those sections are defined in the [`/data/sections.yml`](data/sections.yml) file
 ### Content Files
 
 Some content files live in the [`/content`](content/) & [`/data`](data/) folders, and is written using Markdown and YAML.
-That content is organized into subfolders corresponding to the sections mentioned above.
-The subfolder names, along with the filenames, define the final URL of a given piece of content.
+
+That content is organized into subfolders corresponding to the sections mentioned above. The subfolder names, along with the filenames, define the final URL of a given piece of content.
+
 The final navigational organization of the content is driven through the sidebar files under [`/data/sidebars`](data/sidebars/).
+
 Some global values used throughout the site can be set in [`config.js`](config.js).
 
-TODO: Additionally, some content files live in other repositories and are pulled into the site at build time, e.g.
+#### External Content Files
+
+Additionally, some content files live in other repositories and are maintained there. They are pulled into the site at build time.
+
+At the moment, this is setup for the following repositories:
+
+- [dev-ocean](https://github.com/oceanprotocol/dev-ocean)
+
+For including a document from any of the above repositories, 4 values are required in a document's YAML frontmatter. If found, a page will be generated automatically, accessible under the defined `slug`.
+
+This will NOT include this page in the doc's sidebar navigation, this needs to be done manually in the docs repo in one of the sidebar files. This is so you can check out everything before exposing it to visitors, and to ensure editorial workflow of the categorization.
+
+TODO: In a later stage, we will include more documentation in this site, e.g.:
 
 - API references
 - Component docs
@@ -59,27 +74,39 @@ TODO: Additionally, some content files live in other repositories and are pulled
 ### Markdown File Requirements
 
 All Markdown files should use
-[GitHub Flavored Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/)
-and must satisfy some extra requirements:
+[GitHub Flavored Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/) and must satisfy some extra requirements:
 
-1. The file must begin with a section that looks like this (YAML):
+1. The file must begin with a section called YAML frontmatter that looks like this:
 
-   ```text
-   ---
+   ```yaml
    title: This is the Title in Title Case
    description: A short description of the page.
    ---
    Markdown content begins here.
    ```
 
-   Note: The `description` value will be rendered on-page below the title, and it will also be used for description tags in the HTML header.
+   For external documents in other repos, defining the `slug` and `section` is required:
 
-1. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
-1. Internal links to other docs pages should be:
+   ```yaml
+   title: This is the Title in Title Case
+   description: A short description of the page.
+   slug: /concepts/architecture/
+   section: concepts
+   ---
+   Markdown content begins here.
+   ```
+
+   Note: The `description` value will be rendered on-page below the title, and it will also be used for description tags in the HTML head.
+
+2. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
+3. start your heading levels with `h2`, so `## My heading`
+4. Internal links to other docs pages should be:
    - to the _full absolute URL_, such as https://docs.oceanprotocol.com/hello/you-are-awesome/ or https://github.com/oceanprotocol/dev-ocean/blob/master/doc/development/style-guides.md or
-   - to a relative URL that looks like `/concepts/terminology/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
+   - to a absolute URL without the host, that looks like `/concepts/terminology/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
+5. no TOC please, this will be generated automatically from all headings
+6. for images and media, you can keep them in the original repo. Images will be automatically grabbed by the docs site on querying. When doing that, docs site will generate all sorts of image sizes to handle proper responsive images, so no need to keep an eye on image dimensions or file sizes
 
-Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in the docs.
+**Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in all markdown files included in docs site.**
 
 ### Adding Docs
 
@@ -147,7 +174,7 @@ As a prerequisite you'll need on your machine:
 Clone this repo, install all dependencies, and start the development server:
 
 ```bash
-git clone git@github.com:oceanprotocol/docs.git
+git clone --recursive git@github.com:oceanprotocol/docs.git
 cd docs/
 
 # add GITHUB_TOKEN

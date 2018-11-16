@@ -7,8 +7,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     if (node.internal.type === 'MarkdownRemark') {
         const fileNode = getNode(node.parent)
         const parsedFilePath = path.parse(fileNode.relativePath)
-        const slug = createFilePath({ node, getNode, basePath: 'content' })
-        const section = parsedFilePath.dir
+
+        let slug = createFilePath({ node, getNode, basePath: 'content' })
+        let section = parsedFilePath.dir
+
+        if (node.frontmatter.slug) {
+            ;({ slug } = node.frontmatter)
+        }
+
+        if (node.frontmatter.section) {
+            ;({ section } = node.frontmatter)
+        }
 
         createNodeField({
             node,
@@ -44,6 +53,27 @@ exports.createPages = ({ graphql, actions }) => {
                                 }
                             }
                         }
+
+                        architectureDocs: allMarkdownRemark(
+                            filter: {
+                                fileAbsolutePath: { regex: "/dev-ocean/doc/" }
+                            }
+                        ) {
+                            edges {
+                                node {
+                                    fields {
+                                        slug
+                                        section
+                                    }
+                                    frontmatter {
+                                        slug
+                                        title
+                                        description
+                                        section
+                                    }
+                                }
+                            }
+                        }
                     }
                 `
             ).then(result => {
@@ -53,8 +83,8 @@ exports.createPages = ({ graphql, actions }) => {
                     reject(result.errors)
                 }
 
-                const posts = result.data.allMarkdownRemark.edges
                 const docTemplate = path.resolve('./src/templates/Doc.jsx')
+                const posts = result.data.allMarkdownRemark.edges
 
                 // Create Doc pages
                 posts.forEach(post => {
@@ -67,6 +97,29 @@ exports.createPages = ({ graphql, actions }) => {
                         }
                     })
                 })
+
+                // Create Architecture section from dev-ocean contents
+                const postsArchitecture = result.data.architectureDocs.edges
+
+                postsArchitecture
+                    // only grab files with required frontmatter defined
+                    .filter(
+                        post =>
+                            post.node.frontmatter.slug &&
+                            post.node.frontmatter.title &&
+                            post.node.frontmatter.description &&
+                            post.node.frontmatter.section
+                    )
+                    .forEach(post => {
+                        createPage({
+                            path: `${post.node.fields.slug}`,
+                            component: docTemplate,
+                            context: {
+                                slug: post.node.fields.slug,
+                                section: post.node.fields.section
+                            }
+                        })
+                    })
 
                 resolve()
             })

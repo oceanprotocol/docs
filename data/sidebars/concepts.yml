@@ -6,13 +6,17 @@
       link: /concepts/terminology/
     - title: Software Components
       link: /concepts/components/
-    - title: Architecture
-      link: /concepts/architecture/
 
-- group: Details
+- group: Architecture
   items:
-    - title: Coming Soon
-      link: /
+    - title: Overview
+      link: /concepts/architecture/
+    - title: Squid
+      link: /concepts/squid/
+    - title: Secret Store
+      link: /concepts/secret-store/
+    - title: Computing Services
+      link: /concepts/computing-services/
 
 - group: Contribute
   items:

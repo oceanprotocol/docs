@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import remark from 'remark'
+import remarkReact from 'remark-react'
 import { ReactComponent as Star } from '../../images/star.svg'
 import { ReactComponent as Forks } from '../../images/forks.svg'
 import styles from './Repository.module.scss'
@@ -29,6 +31,12 @@ const queryGithub = graphql`
                                             name
                                         }
                                     }
+                                }
+                            }
+                            object(expression: "develop:README.md") {
+                                id
+                                ... on GitHub_Blob {
+                                    text
                                 }
                             }
                         }
@@ -98,7 +106,24 @@ Numbers.propTypes = {
     url: PropTypes.string.isRequired
 }
 
-const Repository = ({ name, links }) => (
+const Readme = ({ object }) => {
+    const readmeHtml =
+        object &&
+        remark()
+            .use(remarkReact)
+            .processSync(object.text).contents
+
+    return (
+        object && (
+            <aside className={styles.repositoryReadme}>
+                <h3 className={styles.repositoryReadmeTitle}>README.md</h3>
+                {readmeHtml}
+            </aside>
+        )
+    )
+}
+
+const Repository = ({ name, links, readme }) => (
     <StaticQuery
         query={queryGithub}
         render={data => {
@@ -119,7 +144,14 @@ const Repository = ({ name, links }) => (
             // e.g. when private repos are referenced in repositories.yml
             if (repo === undefined) return null
 
-            const { url, description, forkCount, stargazers, releases } = repo
+            const {
+                url,
+                description,
+                forkCount,
+                stargazers,
+                releases,
+                object
+            } = repo
 
             return (
                 <article className={styles.repository}>
@@ -135,6 +167,8 @@ const Repository = ({ name, links }) => (
                             url={url}
                         />
                     </footer>
+
+                    {readme && <Readme object={object} />}
                 </article>
             )
         }}
@@ -143,7 +177,8 @@ const Repository = ({ name, links }) => (
 
 Repository.propTypes = {
     name: PropTypes.string.isRequired,
-    links: PropTypes.array
+    links: PropTypes.array,
+    readme: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
 }
 
 export default Repository

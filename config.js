@@ -14,5 +14,9 @@ module.exports = {
         twitter: 'https://twitter.com/oceanprotocol',
         gitter: 'https://gitter.im/oceanprotocol/Lobby',
         telegram: 'https://t.me/joinchat/GUyxrE0Hi154D0NrlOqLFg'
-    }
+    },
+    githubContentPath:
+        'https://github.com/oceanprotocol/docs/blob/master/content',
+    githubDevOceanPath:
+        'https://github.com/oceanprotocol/dev-ocean/blob/master/doc'
 }

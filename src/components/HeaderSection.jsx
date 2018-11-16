@@ -18,7 +18,7 @@ const HeaderSection = ({ title }) => (
 )
 
 HeaderSection.propTypes = {
-    title: PropTypes.array
+    title: PropTypes.PropTypes.oneOfType([PropTypes.array, PropTypes.string])
 }
 
 export default HeaderSection
