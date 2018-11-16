@@ -49,7 +49,7 @@ Client libraries used by applications (such as Pleuston or Jupyter notebooks) to
 
 ## OceanDB Drivers
 
-OceanDB is an off-chain database(?) for storing metadata about data assets.
+OceanDB is an off-chain database for storing metadata about data assets.
 
 <repo name="oceandb-mongodb-driver"></repo>
 <repo name="oceandb-bigchaindb-driver"></repo>
