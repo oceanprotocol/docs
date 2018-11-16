@@ -37,12 +37,18 @@ module.exports = {
                 path: `${__dirname}/data`
             }
         },
-
         {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'art',
                 path: `${__dirname}/node_modules/@oceanprotocol/art`
+            }
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'dev-ocean',
+                path: `${__dirname}/external/dev-ocean/doc`
             }
         },
         {
@@ -71,6 +77,17 @@ module.exports = {
                             withWebp: true,
                             linkImagesToOriginal: false,
                             showCaptions: true
+                        }
+                    },
+                    {
+                        resolve: 'gatsby-remark-github',
+                        options: {
+                            marker: 'GITHUB-EMBED',
+                            insertEllipsisComments: true,
+                            ellipsisPhrase: '...',
+                            useCache: true,
+                            cacheKey: 'gatsby-remark-github-v1',
+                            token: process.env.GITHUB_TOKEN
                         }
                     },
                     'gatsby-remark-smartypants',

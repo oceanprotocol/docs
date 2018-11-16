@@ -30,3 +30,11 @@
 .active {
     color: $brand-pink !important; // stylelint-disable-line declaration-no-important
 }
+
+.externalRepoName {
+    font-family: $font-family-monospace;
+    font-weight: $font-weight-base;
+    font-size: $font-size-mini;
+    text-transform: none;
+    margin-left: $spacer / 4;
+}

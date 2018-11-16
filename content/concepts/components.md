@@ -7,11 +7,11 @@ Before reading this page, you should understand some [Ocean-specific terminology
 
 ## Aquarius
 
-Every marketplace must run an instance of Aquarius.
-Aquarius provides an API to an off-chain database ("OceanDB") to store and manage metadata about data assets: the assets listed in that marketplace.
+Aquarius provides an API to an off-chain database ("OceanDB") to store and manage metadata about data assets: the assets listed in that marketplace. Every marketplace must run an instance of Aquarius.
+
 The off-chain database might be MongoDB, Elasticsearch or BigchainDB.
 
-<repo name="aquarius"></repo>
+<repo name="aquarius" readme="true"></repo>
 
 ## Brizo
 

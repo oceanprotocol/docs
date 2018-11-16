@@ -7,7 +7,7 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 
 ## Table of Contents
 
-- [Headers](#headers)
+- [Headers](#header)
 - [Emphasis](#emphasis)
 - [Lists](#lists)
 - [Links](#links)
@@ -20,6 +20,8 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 - [Line Breaks](#line-breaks)
 - [Videos](#videos)
 - [React Components in Markdown](#react-components-in-markdown)
+- [Repository Component](#repository-component)
+- [Embedding File Contents from GitHub](#embedding-file-contents-from-github)
 
 ## Headers
 
@@ -113,13 +115,9 @@ Some text to show that the reference links can follow later.
 
 Or leave it empty and use the [link text itself]
 
-<!-- markdownlint-disable no-bare-urls -->
-
 URLs and URLs in angle brackets will automatically get turned into links.
 http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
-
-<!-- markdownlint-enable no-bare-urls -->
 
 Some text to show that the reference links can follow later.
 
@@ -349,20 +347,40 @@ Or, in pure Markdown, but losing the image sizing and border:
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
 
-## React Components in Markdown
+### Repository Component
 
 In all Markdown docs you can use some select React Components. This magic is done with [gatsby-remark-component](https://www.gatsbyjs.org/packages/gatsby-remark-component/).
 
-Note that the component name in Markdown needs to be always in lowercase, and have a closing tag.
-
-### Repository
-
 The `Repository` component fetching and displaying information about a GitHub repo. Component can be used in Markdown as `<repo>`, it requires a `name` to be passed:
 
-```HTML
+```html
 <repo name="pleuston"></repo>
 ```
+
+Note that the component name in Markdown needs to be always in lowercase, and have a closing tag.
 
 Resulting in:
 
 <repo name="pleuston"></repo>
+
+You can also pass `readme="true"` and the readme contents of the repo will be rendered:
+
+```html
+<repo name="aquarius" readme="true"></repo>
+```
+
+Resulting in:
+
+<repo name="aquarius" readme="true"></repo>
+
+## Embedding File Contents from GitHub
+
+You can embed any file contents like so, note that the language needs to be defined manually to get proper syntax highlighting:
+
+```text
+GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/Web3Provider.ts js GITHUB-EMBED
+```
+
+Resulting in:
+
+GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/Web3Provider.ts js GITHUB-EMBED
