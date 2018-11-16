@@ -1,4 +1,4 @@
 [submodule "external/dev-ocean"]
-	path = external/dev-ocean
-	url = https://github.com/oceanprotocol/dev-ocean
+    path = external/dev-ocean
+    url = https://github.com/oceanprotocol/dev-ocean
     branch = master
