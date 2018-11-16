@@ -8,6 +8,8 @@
       link: /concepts/components/
     - title: Tools & Examples
       link: /concepts/tools/
+    - title: Engineering Principles
+      link: /concepts/principles/
 
 - group: Architecture
   items:
