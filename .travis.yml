@@ -8,6 +8,8 @@ script:
   - 'if [ "$TRAVIS_SECURE_ENV_VARS" = "true" ]; then npm run build; fi'
 
 after_success:
+  - pip install --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
   - npm run deploy
 
 notifications:
