@@ -78,21 +78,25 @@ All Markdown files should use
 
 1. The file must begin with a section called YAML frontmatter that looks like this:
 
-   ```yaml
+   ```md
+   ---
    title: This is the Title in Title Case
    description: A short description of the page.
    ---
+
    Markdown content begins here.
    ```
 
    For external documents in other repos, defining the `slug` and `section` is required:
 
-   ```yaml
+   ```md
+   ---
    title: This is the Title in Title Case
    description: A short description of the page.
    slug: /concepts/architecture/
    section: concepts
    ---
+
    Markdown content begins here.
    ```
 
@@ -101,8 +105,8 @@ All Markdown files should use
 2. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
 3. start your heading levels with `h2`, so `## My heading`
 4. Internal links to other docs pages should be:
-   - to the _full absolute URL_, such as https://docs.oceanprotocol.com/hello/you-are-awesome/ or https://github.com/oceanprotocol/dev-ocean/blob/master/doc/development/style-guides.md or
    - to a absolute URL without the host, that looks like `/concepts/terminology/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
+   - when linking from external repos, to the _full absolute URL_, such as `https://docs.oceanprotocol.com/hello/you-are-awesome/`
 5. no TOC please, this will be generated automatically from all headings
 6. for images and media, you can keep them in the original repo. Images will be automatically grabbed by the docs site on querying. When doing that, docs site will generate all sorts of image sizes to handle proper responsive images, so no need to keep an eye on image dimensions or file sizes
 
