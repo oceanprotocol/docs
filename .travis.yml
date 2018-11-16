@@ -7,6 +7,9 @@ script:
   - npm test
   - 'if [ "$TRAVIS_SECURE_ENV_VARS" = "true" ]; then npm run build; fi'
 
+after_success:
+  - npm run deploy
+
 notifications:
   email: false
 
