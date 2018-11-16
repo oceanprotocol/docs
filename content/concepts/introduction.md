@@ -15,15 +15,21 @@ Through blockchain technology and tokens, Ocean Protocol connects data providers
 
 By bringing together decentralized blockchain technology, a data sharing framework, and an ecosystem for data and related services, Ocean Protocol is committed to kick-starting a new Data Economy that touches every single person, company and device, giving power back to data owners, enabling people to reap value from data to better our world.
 
+## Mission Statement
+
+Society is becoming increasingly reliant on data, especially with the advent of AI. However, a small handful of organizations with both massive data assets and AI capabilities attained worrying levels of control which is a danger to a free and open society.
+
+Ocean Protocol aims to unlock data, for more equitable outcomes for users of data, using a thoughtful application of both technology and governance.
+
 ## Papers
 
 There are more details on the
 [Ocean Protocol home page](https://oceanprotocol.com/#papers),
 and in the whitepapers:
 
-- [Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)
-- [Business Whitepaper](https://oceanprotocol.com/business-whitepaper.pdf)
-- [Reference Marketplace Framework](https://oceanprotocol.com/marketplace-framework.pdf)
+- [Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) - This paper presents Ocean Protocol. Ocean is a decentralized protocol and network of artificial intelligence (AI) data/services. It incentivizes for a vast supply of relevant AI data/services.
+- [Business Whitepaper](https://oceanprotocol.com/business-whitepaper.pdf) - This document presents a summary of the business model and ecosystem of Ocean Protocol. In addition, it describes the logic behind the Ocean utility token and the economic incentives driving the Protocol. It is complementary to the technical whitepaper for Ocean Protocol.
+- [Marketplace Framework](https://oceanprotocol.com/marketplace-framework.pdf) - This document presents a summary of the core marketplace attributes and components required to facilitate the successful deployment of the decentralized data exchange protocol and network called Ocean Protocol.
 
 ## More Information
 
