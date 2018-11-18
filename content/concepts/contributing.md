@@ -3,11 +3,16 @@ title: Ways to Contribute
 description: There are many ways you could contribute to Ocean Protocol.
 ---
 
-All contributions to Ocean Protocol are governed by our [Code of Conduct](/concepts/code-of-conduct/).
+All contributions to Ocean Protocol are governed by our [Contributor Code of Conduct](/concepts/code-of-conduct/).
+Code development follows the [Ocean Engineering Principles](/concepts/principles/).
+
+## Report a Vulnerability
+
+See the page about [reporting vulnerabilities](/concepts/vulnerabilities/).
 
 ## Report a Bug
 
-To report a bug, go to the relevant GitHub repository, click on the Issues tab, click on the New issue button, and read the instructions.
+To report a bug that isn't a vulnerability, go to the relevant GitHub repository, click on the Issues tab, click on the New issue button, and read the instructions.
 
 ## Write an Issue
 
