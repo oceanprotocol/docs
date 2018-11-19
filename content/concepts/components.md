@@ -55,7 +55,7 @@ OceanDB is an off-chain database for storing metadata about data assets.
 <repo name="oceandb-bigchaindb-driver"></repo>
 <repo name="oceandb-elasticsearch-driver"></repo>
 
-These drivers are extended from a high-level module implementing OceanDB functions.  You can create your own plugins based on its abstracted interface:
+These drivers are extended from a high-level module implementing OceanDB functions. You can create your own plugins based on its abstracted interface:
 
 <repo name="oceandb-driver-interface"></repo>
 
