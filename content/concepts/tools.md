@@ -3,21 +3,22 @@ title: Tools & Examples
 description: Tools and examples for developing with Ocean Protocol.
 ---
 
-The setup & tutorials sections have some examples to get you started.
+The Setup & Tutorials sections have some examples to get you started.
 
 - [Setup: Quick Start](/setup/quickstart/)
 - [Tutorials: Introduction](/tutorials/introduction/)
 
 ## Tools
 
-Data science tools:
-
-<repo name="mantaray"></repo>
-
-<repo name="nautilina"></repo>
+Coming soon!
 
 ## Examples
 
-JavaScript examples for working with the [🦑 squid-js](https://github.com/oceanprotocol/squid-js) library:
+Examples of using the [🦑 squid-py](https://github.com/oceanprotocol/squid-js) Python library:
 
+<repo name="mantaray"></repo>
+
+Examples of using the [🦑 squid-js](https://github.com/oceanprotocol/squid-js) JavaScript library:
+
+<repo name="pleuston"></repo>
 <repo name="tuna"></repo>
