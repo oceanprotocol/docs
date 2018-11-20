@@ -17,6 +17,15 @@
     margin-bottom: $spacer / 2;
     border: 0;
     padding: 0;
+
+    a:first-of-type {
+        color: $brand-black;
+
+        &:hover,
+        &:focus {
+            color: $brand-pink;
+        }
+    }
 }
 
 .repositoryRelease {
@@ -26,6 +35,11 @@
     color: $brand-grey-light;
     display: inline-block;
     margin-left: $spacer / 4;
+
+    &:hover,
+    &:focus {
+        transform: none;
+    }
 }
 
 .repositoryMeta {
