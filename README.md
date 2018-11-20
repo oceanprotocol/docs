@@ -26,9 +26,10 @@
   - [Editing Docs](#editing-docs)
   - [Repositories](#repositories)
 - [Development](#development)
-  - [Use Docker](#use-docker)
-- [Linting & formatting](#linting--formatting)
-  - [Editor setup: VS Code](#editor-setup-vs-code)
+  - [Using npm](#using-npm)
+  - [Using Docker](#use-docker)
+- [Linting & Formatting](#linting--formatting)
+  - [Editor Setup: VS Code](#editor-setup-vs-code)
 - [GitHub GraphQL API](#github-graphql-api)
 - [Deployment](#deployment)
 - [Authors](#authors)
@@ -171,15 +172,43 @@ in [`/data/repositories.yml`](data/repositories.yml).
 
 The site is a React app built with [Gatsby](https://www.gatsbyjs.org).
 
-As a prerequisite you'll need on your machine:
+This Git repo has [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). They are the subdirectories of `external/`. Each one is basically another Git repo, i.e. an external Git repo that just _looks_ like it's part of this Git repo. It's very easy to get Git into a confusing state when there are submodules. If you follow the following tips, you should probably be okay:
+
+1. Clone this repo using:
+
+   ```bash
+   git clone --recurse-submodules git@github.com:oceanprotocol/docs.git
+   ```
+
+1. Don't edit anything in the submodules (i.e. in `external/`). Instead, edit it over in the other Git repository and merge your changes over there.
+1. Get all the submodules up-to-date using:
+
+   ```bash
+   git submodule update --remote --recursive
+   ```
+
+   That will get each submodule up-to-date with the HEAD commit of some branch in a remote repository. Which branch? That's set in the `.gitmodules` file. You can check the current commit hashes of all the submodules using `git submodule status`
+
+1. Before doing any `git checkout ...` or other normal Git operations, do this:
+
+   ```bash
+   git config --global submodule.recurse true
+   ```
+
+   That's like adding the `--recurse-submodules` option to all those Git commands (except for `git clone`) so you don't have to.
+
+### Using npm
+
+As a prerequisite, you'll need the following on your machine:
 
 - Node.js
 - npm
+- Your `GITHUB_TOKEN`, see [GitHub GraphQL API](#github-graphql-api)
 
 Clone this repo, install all dependencies, and start the development server:
 
 ```bash
-git clone --recursive git@github.com:oceanprotocol/docs.git
+git clone --recurse-submodules git@github.com:oceanprotocol/docs.git
 cd docs/
 
 # add GITHUB_TOKEN
@@ -190,27 +219,32 @@ npm i
 npm start
 ```
 
-For getting your `GITHUB_TOKEN`, see [GitHub GraphQL API](#github-graphql-api).
-
 This will start a hot-reloading local server exposed under [localhost:8000](http://localhost:8000).
 
-### Use Docker
+### Using Docker
 
 Alternatively, you can use Docker for which you need to have installed on your machine:
 
 - [Docker](https://www.docker.com)
 - [Docker Compose](https://docs.docker.com/compose/)
-- `GITHUB_TOKEN` in `.env`, see [GitHub GraphQL API](#github-graphql-api)
+- Your `GITHUB_TOKEN`, see [GitHub GraphQL API](#github-graphql-api)
 
 Then use Docker Compose to bring everything up:
 
 ```bash
+git clone --recurse-submodules git@github.com:oceanprotocol/docs.git
+cd docs/
+
+# add GITHUB_TOKEN
+cp .env.sample .env
+vi .env
+
 docker-compose up
 ```
 
 This will expose a hot-reloading server under [localhost:8000](http://localhost:8000).
 
-## Linting & formatting
+## Linting & Formatting
 
 To enforce a consistent code style, linting is setup for pretty much every file. Linting is part of the test suite, meaning builds on Travis will fail in case of linting errors.
 
@@ -229,7 +263,7 @@ npm run lint
 npm run format
 ```
 
-### Editor setup: VS Code
+### Editor Setup: VS Code
 
 If you use VS Code as your editor, you can install those extensions to get linting as you type, and auto-formatting as you save:
 
