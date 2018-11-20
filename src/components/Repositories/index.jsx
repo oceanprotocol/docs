@@ -45,7 +45,7 @@ const Repositories = () => (
                                 <Link to="/concepts/components/">
                                     software components
                                 </Link>{' '}
-                                document for an introduction into the components
+                                document for an introduction to the components
                                 creating the Ocean network.
                             </strong>
                         </p>
