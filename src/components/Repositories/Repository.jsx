@@ -114,11 +114,13 @@ class Numbers extends PureComponent {
                 }
             })
 
-            const repo = response.data.map(item => {
-                if (item.name === this.props.name) {
-                    return item
-                }
-            })
+            const repo = response.data
+                .map(item => {
+                    if (item.name === this.props.name) {
+                        return item
+                    }
+                })
+                .filter(n => n)
 
             const { forks, stars } = repo
 
