@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import RepositoryList from './RepositoryList'
 import QuickRun from './QuickRun'
 import styles from './index.module.scss'
@@ -33,6 +33,24 @@ const Repositories = () => (
             return (
                 <div className={styles.repositories}>
                     <QuickRun name="docker-images" />
+
+                    <header>
+                        <h1 className={styles.repositoriesTitle}>
+                            Repositories
+                        </h1>
+                        <p className={styles.repositoriesText}>
+                            <strong>
+                                Most of our repositories are open source and we
+                                listed the key repositories here. Start with the{' '}
+                                <Link to="/concepts/components/">
+                                    software components
+                                </Link>{' '}
+                                document for an introduction into the components
+                                creating the Ocean network.
+                            </strong>
+                        </p>
+                    </header>
+
                     <RepositoryList repositories={repositories} />
                 </div>
             )

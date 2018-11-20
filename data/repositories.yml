@@ -18,10 +18,16 @@
     - name: squid-js
     - name: squid-py
     - name: squid-java
-    - name: secret-store-client-js
-    - name: secret-store-client-py
-    - name: secret-store-client-java
+
+- group: OceanDB
+  items:
     - name: oceandb-mongodb-driver
     - name: oceandb-bigchaindb-driver
     - name: oceandb-elasticsearch-driver
     - name: oceandb-driver-interface
+
+- group: Parity Secret Store
+  items:
+    - name: secret-store-client-js
+    - name: secret-store-client-py
+    - name: secret-store-client-java
