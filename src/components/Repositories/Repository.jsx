@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import remark from 'remark'
 import remarkReact from 'remark-react'
+import axios from 'axios'
 import { ReactComponent as Star } from '../../images/star.svg'
 import { ReactComponent as Forks } from '../../images/forks.svg'
 import styles from './Repository.module.scss'
@@ -87,23 +88,66 @@ Links.propTypes = {
     url: PropTypes.string.isRequired
 }
 
-const Numbers = ({ stargazers, forkCount, url }) => (
-    <aside className={styles.repositorynumbers}>
-        <a href={`${url}/stargazers`} title="Show Stargazers">
-            <Star /> <span>{stargazers.totalCount}</span>
-        </a>
-        {forkCount > 0 && (
-            <a href={`${url}/network`} title="Show Forks">
-                <Forks /> <span>{forkCount}</span>
-            </a>
-        )}
-    </aside>
-)
+class Numbers extends PureComponent {
+    static propTypes = {
+        stargazers: PropTypes.object.isRequired,
+        forkCount: PropTypes.number.isRequired,
+        url: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired
+    }
 
-Numbers.propTypes = {
-    stargazers: PropTypes.object.isRequired,
-    forkCount: PropTypes.number.isRequired,
-    url: PropTypes.string.isRequired
+    state = {
+        forks: this.props.forkCount,
+        stars: this.props.stargazers.totalCount
+    }
+
+    url = 'https://oceanprotocol-github.now.sh'
+
+    fetchNumbers = async () => {
+        try {
+            const response = await axios({
+                method: 'get',
+                url: this.url,
+                timeout: 10000, // 10 sec.
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+
+            const repo = response.data.map(item => {
+                if (item.name === this.props.name) {
+                    return item
+                }
+            })
+
+            const { forks, stars } = repo
+            this.setState({ forks, stars })
+        } catch (error) {
+            console.log(error) // eslint-disable-line no-console
+        }
+    }
+
+    componentDidMount() {
+        this.fetchNumbers()
+    }
+
+    render() {
+        const { url } = this.props
+        const { forks, stars } = this.state
+
+        return (
+            <aside className={styles.repositorynumbers}>
+                <a href={`${url}/stargazers`} title="Show Stargazers">
+                    <Star /> <span>{stars}</span>
+                </a>
+                {forks > 0 && (
+                    <a href={`${url}/network`} title="Show Forks">
+                        <Forks /> <span>{forks}</span>
+                    </a>
+                )}
+            </aside>
+        )
+    }
 }
 
 const Readme = ({ object }) => {
@@ -165,6 +209,7 @@ const Repository = ({ name, links, readme }) => (
                             stargazers={stargazers}
                             forkCount={forkCount}
                             url={url}
+                            name={name}
                         />
                     </footer>
 
