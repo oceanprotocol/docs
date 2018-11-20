@@ -4,12 +4,12 @@ import Repository from './Repository'
 import styles from './RepositoryList.module.scss'
 
 const RepositoryList = ({ repositories }) => (
-    <div className={styles.repositoryLists}>
+    <div className={styles.repositoryCategory}>
         {repositories.map(({ node }) => (
-            <div key={node.id} className={styles.repositoryList}>
-                <h3 className={styles.repositoryListTitle}>{node.group}</h3>
+            <div key={node.id}>
+                <h3 className={styles.repositoryCategoryTitle}>{node.group}</h3>
 
-                <div className={styles.repositoryWrapper}>
+                <div className={styles.repositoryList}>
                     {node.items.map(item => (
                         <Repository
                             key={item.name}

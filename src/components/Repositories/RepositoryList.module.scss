@@ -1,28 +1,75 @@
 @import 'variables';
 
-.repositoryLists {
-    @media (min-width: $break-point--medium) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
-
 .repositoryList {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+
     @media (min-width: $break-point--medium) {
-        flex: 0 0 48%;
+        margin-left: $spacer;
+        border-left: 1px solid $brand-grey-lighter;
+        padding-left: $spacer;
+        padding-top: $spacer / 4;
     }
+
+    article {
+        white-space: normal;
+        flex: 0 0 25rem;
+        margin-left: $spacer;
+        margin-bottom: $spacer / 4;
+
+        &:first-child {
+            margin-left: $spacer * 1.4;
+
+            @media (min-width: $break-point--medium) {
+                margin-left: 0;
+            }
+        }
+
+        &:last-child {
+            margin-right: $spacer * 1.4;
+        }
+    }
+
+    // custom scrollbar
+    &::-webkit-scrollbar,
+    &::-moz-scrollbar {
+        display: none;
+    }
+
+    &::-webkit-scrollbar {
+        opacity: 0;
+        width: 3px;
+        height: 3px;
+        transition: opacity .2s ease-out;
+    }
+
+    &:hover {
+        &::-webkit-scrollbar {
+            opacity: 1;
+            width: 3px;
+            height: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: lighten($brand-grey-light, 30%);
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $brand-white;
+        }
+    }
+
+
 }
 
-.repositoryWrapper {
-    @media (min-width: $break-point--small) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
-
-.repositoryListTitle {
+.repositoryCategoryTitle {
+    width: 100%;
     font-size: $font-size-h3;
     color: $brand-grey-light;
+    margin-bottom: $spacer / 2;
 }

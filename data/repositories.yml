@@ -16,12 +16,36 @@
 - group: Libraries
   items:
     - name: squid-js
+      links:
+        - name: API reference
+          url: /concepts/squid/
     - name: squid-py
+      links:
+        - name: API reference
+          url: /concepts/squid/
     - name: squid-java
-    - name: secret-store-client-js
-    - name: secret-store-client-py
-    - name: secret-store-client-java
+      links:
+        - name: API reference
+          url: /concepts/squid/
+
+- group: OceanDB
+  items:
     - name: oceandb-mongodb-driver
     - name: oceandb-bigchaindb-driver
     - name: oceandb-elasticsearch-driver
     - name: oceandb-driver-interface
+
+- group: Parity Secret Store
+  items:
+    - name: secret-store-client-js
+      links:
+        - name: Architecture
+          url: /concepts/secret-store/
+    - name: secret-store-client-py
+      links:
+        - name: Architecture
+          url: /concepts/secret-store/
+    - name: secret-store-client-java
+      links:
+        - name: Architecture
+          url: /concepts/secret-store/
