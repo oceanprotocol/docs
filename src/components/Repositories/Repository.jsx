@@ -63,7 +63,7 @@ const queryGithub = graphql`
 
 const Title = ({ name, releases, url }) => (
     <h1 className={styles.repositoryName}>
-        {name}
+        <a href={url}>{name}</a>
         {releases.edges[0] && (
             <a
                 href={`${url}/releases`}
