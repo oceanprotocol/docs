@@ -27,7 +27,7 @@
   - [Repositories](#repositories)
 - [Development](#development)
   - [Using npm](#using-npm)
-  - [Using Docker](#use-docker)
+  - [Using Docker](#using-docker)
 - [Linting & Formatting](#linting--formatting)
   - [Editor Setup: VS Code](#editor-setup-vs-code)
 - [GitHub GraphQL API](#github-graphql-api)
@@ -166,7 +166,7 @@ Additionally, you can attach multiple links to a repo. The GitHub link is automa
       url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 ```
 
-in [`/data/repositories.yml`](data/repositories.yml).
+in [`/data/repositories.yml`](data/repositories.yml). The links defined in this file will also be used to enhance the display of the repository component on all other pages.
 
 ## Development
 
