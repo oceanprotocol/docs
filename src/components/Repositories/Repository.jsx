@@ -121,7 +121,15 @@ class Numbers extends PureComponent {
             })
 
             const { forks, stars } = repo
-            this.setState({ forks, stars })
+
+            // update state only when numbers have changed
+            if (forks && forks !== this.props.forkCount) {
+                this.setState({ forks })
+            }
+
+            if (stars && stars !== this.props.stargazers.totalCount) {
+                this.setState({ stars })
+            }
         } catch (error) {
             console.log(error) // eslint-disable-line no-console
         }
