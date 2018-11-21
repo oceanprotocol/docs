@@ -5,9 +5,9 @@
 > 🐍 Ocean Protocol's official documentation.
 
 [![Build Status](https://travis-ci.com/oceanprotocol/docs.svg?token=3psqw6c8KMDqfdGQ2x6d&branch=master)](https://travis-ci.com/oceanprotocol/docs)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-7b1173.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![js oceanprotocol](https://img.shields.io/badge/js-oceanprotocol-7b1173.svg)](https://github.com/oceanprotocol/eslint-config-oceanprotocol)
 [![css bigchaindb](https://img.shields.io/badge/css-bigchaindb-39BA91.svg)](https://github.com/bigchaindb/stylelint-config-bigchaindb)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-7b1173.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Greenkeeper badge](https://badges.greenkeeper.io/oceanprotocol/docs.svg?token=2757ede2de02f4679c4dfc6597a331a26f2f206fed53bfeb708c64cbe3d5f55f&ts=1541590505792)](https://greenkeeper.io/)
 
 ---
@@ -20,17 +20,21 @@
 
 - [Content](#content)
   - [Content Files](#content-files)
-    - [External Content Files](#external-content-files)
+  - [External Content Files](#external-content-files)
   - [Markdown File Requirements](#markdown-file-requirements)
   - [Adding Docs](#adding-docs)
   - [Editing Docs](#editing-docs)
   - [Repositories](#repositories)
+    - [Add Links to a Repository](#add-links-to-a-repository)
+    - [Release Versions](#release-versions)
 - [Development](#development)
   - [Using npm](#using-npm)
   - [Using Docker](#using-docker)
 - [Linting & Formatting](#linting--formatting)
   - [Editor Setup: VS Code](#editor-setup-vs-code)
-- [GitHub GraphQL API](#github-graphql-api)
+- [GitHub Data Fetching](#github-data-fetching)
+  - [GitHub GraphQL API](#github-graphql-api)
+  - [GitHub REST API](#github-rest-api)
 - [Deployment](#deployment)
 - [Authors](#authors)
 - [License](#license)
@@ -55,9 +59,9 @@ The final navigational organization of the content is driven through the sidebar
 
 Some global values used throughout the site can be set in [`config.js`](config.js).
 
-#### External Content Files
+### External Content Files
 
-Additionally, some content files live in other repositories and are maintained there. They are pulled into the site at build time.
+Additionally, some content files live in other repositories and are maintained there. They are pulled into Gatsby's data layer at build time, and pages are created automatically for them as defined in [gatsby-node.js](gatsby-node.js).
 
 At the moment, this is setup for the following repositories:
 
@@ -112,13 +116,17 @@ All Markdown files should use
 5. no TOC please, this will be generated automatically from all headings
 6. for images and media, you can keep them in the original repo. Images will be automatically grabbed by the docs site on querying. When doing that, docs site will generate all sorts of image sizes to handle proper responsive images, so no need to keep an eye on image dimensions or file sizes
 
-**Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in all markdown files included in docs site.**
+**Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in all Markdown files included in docs site.**
 
 ### Adding Docs
 
 1. Add new Markdown file under one of the folders under [`/content`](content/)
-2. Add new path to one of the sidebars in [`/data/sidebars`](data/sidebars/)
-3. ...
+1. Add new path to one of the sidebars in [`/data/sidebars`](data/sidebars/)
+1. Push your changes to a new branch in the repo, or in your fork
+1. Open a pull request against `master`, automatically asking for review
+1. Wait for review, possibly make requested changes
+1. Wait for all checks to pass
+1. Merge!
 
 ### Editing Docs
 
@@ -129,25 +137,25 @@ GitHub will automatically fork the repository if you are not part of the `oceanp
 The editing workflow is as follows:
 
 1. Make your changes
-2. Push your changes to a new branch in the repo, or in your fork
-3. Open a pull request against `master`, automatically asking for review
-4. Wait for review, possibly make requested changes
-5. Wait for all checks to pass
-6. Merge!
+1. Push your changes to a new branch in the repo, or in your fork
+1. Open a pull request against `master`, automatically asking for review
+1. Wait for review, possibly make requested changes
+1. Wait for all checks to pass
+1. Merge!
 
 ### Repositories
 
-The repositories list is currently sourced from the [`/data/repositories.yml`](data/repositories.yml) file, defining the grouping, the display order, and which repos to include.
+Includes a repository component which can be used throughout the site and in all Markdown documents.
 
-Including a repo requires only the `name` key and value, and it needs to be exactly the same as the repo name on GitHub:
+On the front page it is used to show an overview of all our key repositories. This repositories list is sourced from the [`/data/repositories.yml`](data/repositories.yml) file, defining the grouping, the display order, which repos to include, and what additional links to show for every repository.
+
+Including a repo on the front page requires only the `name` key and value, and it needs to be exactly the same as the repo name on GitHub:
 
 ```yaml
 - name: pleuston
 ```
 
-Additional information about a repo will then be fetched automatically via [GitHub's GraphQL API](https://developer.github.com/v4/) on build time, and re-fetched every 5 minutes on client side. You can also add a private repo to prepare for a release, it will show up as soon as it is made public on GitHub.
-
-The above example will result in:
+Additional information about a repo will then be [fetched automatically from GitHub](#github-data-fetching). The above example will result in:
 
 <img width="547" alt="screen shot 2018-11-10 at 22 43 41" src="https://user-images.githubusercontent.com/90316/48306511-164fea00-e53a-11e8-97d6-c481ea087c7d.png">
 
@@ -157,16 +165,26 @@ This repository component can also be used within any Markdown content like so:
 <repo name="pleuston"></repo>
 ```
 
-Additionally, you can attach multiple links to a repo. The GitHub link is automatically added for every repository and will always be displayed. Add more links like so:
+You can also add a private repo to prepare for a release, it will show up as soon as it is made public on GitHub.
+
+#### Add Links to a Repository
+
+You can attach multiple links to a repo by attaching them to the respective repo in the [`/data/repositories.yml`](data/repositories.yml) file:
 
 ```yaml
 - name: keeper-contracts
   links:
     - name: Documentation
       url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
+    - name: TCR Owner's Manual
+      url: https://github.com/oceanprotocol/keeper-contracts/blob/develop/doc/owners_manual.md
 ```
 
-in [`/data/repositories.yml`](data/repositories.yml). The links defined in this file will also be used to enhance the display of the repository component on all other pages.
+The GitHub link is automatically added for every repository and will always be displayed.
+
+#### Release Versions
+
+The displayed version number is based on the tag name of the latest release for a given repository. That means only GitHub releases will trigger a version number update, creating a new Git tag alone is not sufficient.
 
 ## Development
 
@@ -272,7 +290,15 @@ If you use VS Code as your editor, you can install those extensions to get linti
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-## GitHub GraphQL API
+## GitHub Data Fetching
+
+Currently, there are three ways of getting data from GitHub to construct various parts of the docs site:
+
+- as [external content files](#external-content-files) via Git submodules of selected repos, on build time
+- via GitHub's GraphQL API v4, on build time
+- via GitHub's FETCH API v3, on run time
+
+### GitHub GraphQL API
 
 The GitHub GraphQL API integration is done through [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) and requires authorization.
 
@@ -290,7 +316,7 @@ When running the site locally, you can use the GraphiQL client running under [lo
 
 <img width="982" alt="screen shot 2018-11-10 at 18 41 45" src="https://user-images.githubusercontent.com/90316/48304718-66b94e80-e51e-11e8-8333-e5cadbf4d4b8.png">
 
-This query should get you started to explore what information you can get from GitHub:
+This query should get you started to explore what information you can get from GitHub. All that is described in [GitHub GraphQL API](https://developer.github.com/v4/) can be used :
 
 ```graphql
 query {
@@ -309,6 +335,16 @@ query {
   }
 }
 ```
+
+### GitHub REST API
+
+The GitHub GraphQL API is only queried on build time, further GitHub updates on client side need to be done through additional fetch API calls. At the moment this is done for the [repositories](#repositories) component, where the stars and forks numbers are updated on client-side.
+
+We use [github-projects](https://github.com/oceanprotocol/github-projects) for all communications with the [GitHub REST API v3](https://developer.github.com/v3/), deployed on [Now](https://zeit.co/now).
+
+This microservice should be used for all client-side integrations for performance and security reasons, required changes in data structure should be done over there. This service does data refetching automatically, caches results for 15min, and it has access to a secret GitHub token for making authorized API calls.
+
+As a next step, using the REST API could be made obsolete by using some GraphQL client like [Apollo](https://www.apollographql.com) to query GitHub's GraphQL API on run time too.
 
 ## Deployment
 
