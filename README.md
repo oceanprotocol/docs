@@ -176,8 +176,8 @@ You can attach multiple links to a repo by attaching them to the respective repo
   links:
     - name: Documentation
       url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
-    - name: API Reference
-      url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc/api.md
+    - name: TCR Owner's Manual
+      url: https://github.com/oceanprotocol/keeper-contracts/blob/develop/doc/owners_manual.md
 ```
 
 The GitHub link is automatically added for every repository and will always be displayed.
