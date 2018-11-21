@@ -344,6 +344,8 @@ We use [github-projects](https://github.com/oceanprotocol/github-projects) for a
 
 This microservice should be used for all client-side integrations for performance and security reasons, required changes in data structure should be done over there. This service does data refetching automatically, caches results for 15min, and it has access to a secret GitHub token for making authorized API calls.
 
+As a next step, using the REST API could be made obsolete by using some GraphQL client like [Apollo](https://www.apollographql.com) to query GitHub's GraphQL API on run time too.
+
 ## Deployment
 
 Automatic deployments are triggered upon successful tests & builds on Travis:
