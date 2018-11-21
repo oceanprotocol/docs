@@ -49,3 +49,19 @@
       links:
         - name: Architecture
           url: /concepts/secret-store/
+
+- group: Project Management
+  items:
+    - name: OEPs
+      links:
+        - name: OEP-01
+          url: https://github.com/oceanprotocol/OEPs/tree/master/1
+    - name: ocean
+      links:
+        - name: Business Board
+          url: https://github.com/oceanprotocol/ocean/projects/1
+        - name: Development Board
+          url: https://github.com/oceanprotocol/ocean/projects/2
+        - name: Research Board
+          url: https://github.com/oceanprotocol/ocean/projects/3
+    - name: dev-ocean
