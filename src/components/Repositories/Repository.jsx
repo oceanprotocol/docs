@@ -45,6 +45,20 @@ const queryGithub = graphql`
                 }
             }
         }
+
+        allRepositoriesYaml {
+            edges {
+                node {
+                    items {
+                        name
+                        links {
+                            name
+                            url
+                        }
+                    }
+                }
+            }
+        }
     }
 `
 
@@ -183,6 +197,7 @@ const Repository = ({ name, links, readme }) => (
         render={data => {
             const repositoriesGitHub =
                 data.github.organization.repositories.edges
+            const repositoriesYaml = data.allRepositoriesYaml.edges
 
             // just iterate over all repos until we have a name match,
             // then return that repo, and then filter out all empty nodes
@@ -207,6 +222,20 @@ const Repository = ({ name, links, readme }) => (
                 object
             } = repo
 
+            // enhance passed links array with what's in repositories.yml,
+            // iterating over all repos until we have a name match
+            const linksFilteredArray = repositoriesYaml.map(({ node }) => {
+                return node.items
+                    .map(item => {
+                        if (item.name === name) {
+                            return item.links
+                        }
+                    })
+                    .filter(n => n)[0]
+            })
+
+            const moreLinks = links || linksFilteredArray[0]
+
             return (
                 <article className={styles.repository}>
                     <Title name={name} releases={releases} url={url} />
@@ -214,7 +243,7 @@ const Repository = ({ name, links, readme }) => (
                     <p>{!description ? '...' : description}</p>
 
                     <footer className={styles.repositoryMeta}>
-                        <Links links={links} url={url} />
+                        <Links links={moreLinks} url={url} />
                         <Numbers
                             stargazers={stargazers}
                             forkCount={forkCount}

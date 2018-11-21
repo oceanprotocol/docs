@@ -5,24 +5,6 @@ description: On this site, Markdown is transformed to HTML through Remark follow
 
 For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
 
-## Table of Contents
-
-- [Headers](#header)
-- [Emphasis](#emphasis)
-- [Lists](#lists)
-- [Links](#links)
-- [Images](#images)
-- [Code and Syntax Highlighting](#code-and-syntax-highlighting)
-- [Tables](#tables)
-- [Blockquotes](#blockquotes)
-- [Inline HTML](#inline-html)
-- [Horizontal Rule](#horizontal-rule)
-- [Line Breaks](#line-breaks)
-- [Videos](#videos)
-- [React Components in Markdown](#react-components-in-markdown)
-- [Repository Component](#repository-component)
-- [Embedding File Contents from GitHub](#embedding-file-contents-from-github)
-
 ## Headers
 
 ```text
@@ -347,7 +329,7 @@ Or, in pure Markdown, but losing the image sizing and border:
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
 
-### Repository Component
+## GitHub Repository Component
 
 In all Markdown docs you can use some select React Components. This magic is done with [gatsby-remark-component](https://www.gatsbyjs.org/packages/gatsby-remark-component/).
 
