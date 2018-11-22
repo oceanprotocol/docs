@@ -13,6 +13,25 @@ import DocFooter from '../components/DocFooter'
 import SEO from '../components/Seo'
 import styles from './Doc.module.scss'
 
+const DocMain = ({ title, description, tableOfContents, post, single }) => (
+    <article className={single ? styles.mainSingle : styles.main}>
+        <DocHeader title={title} description={description} />
+
+        {tableOfContents && <DocToc tableOfContents={tableOfContents} />}
+
+        <DocContent html={post.html} htmlAst={post.htmlAst} />
+        <DocFooter post={post} />
+    </article>
+)
+
+DocMain.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    tableOfContents: PropTypes.string.isRequired,
+    post: PropTypes.object.isRequired,
+    single: PropTypes.bool
+}
+
 export default class DocTemplate extends Component {
     static propTypes = {
         data: PropTypes.object.isRequired,
@@ -41,7 +60,12 @@ export default class DocTemplate extends Component {
                     <body className={section} />
                 </Helmet>
 
-                <SEO title={title} description={description} slug={slug} />
+                <SEO
+                    title={title}
+                    description={description}
+                    slug={slug}
+                    article
+                />
 
                 <Layout location={location}>
                     <HeaderSection title={section ? sectionTitle : title} />
@@ -55,42 +79,21 @@ export default class DocTemplate extends Component {
                                         sidebar={section}
                                     />
                                 </aside>
-                                <article className={styles.main}>
-                                    <DocHeader
-                                        title={title}
-                                        description={description}
-                                    />
-
-                                    {tableOfContents && (
-                                        <DocToc
-                                            tableOfContents={tableOfContents}
-                                        />
-                                    )}
-
-                                    <DocContent
-                                        html={post.html}
-                                        htmlAst={post.htmlAst}
-                                    />
-                                    <DocFooter post={post} />
-                                </article>
-                            </main>
-                        ) : (
-                            <article className={styles.mainSingle}>
-                                <DocHeader
+                                <DocMain
                                     title={title}
                                     description={description}
+                                    tableOfContents={tableOfContents}
+                                    post={post}
                                 />
-
-                                {tableOfContents && (
-                                    <DocToc tableOfContents={tableOfContents} />
-                                )}
-
-                                <DocContent
-                                    html={post.html}
-                                    htmlAst={post.htmlAst}
-                                />
-                                <DocFooter post={post} />
-                            </article>
+                            </main>
+                        ) : (
+                            <DocMain
+                                title={title}
+                                description={description}
+                                tableOfContents={tableOfContents}
+                                post={post}
+                                single
+                            />
                         )}
                     </Content>
                 </Layout>
@@ -112,6 +115,7 @@ export const pageQuery = graphql`
             }
             fields {
                 section
+                slug
             }
             ...PageFooter
         }

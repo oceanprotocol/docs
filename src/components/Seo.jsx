@@ -17,10 +17,65 @@ const query = graphql`
                 }
             }
         }
+
+        logo: allFile(filter: { name: { eq: "favicon-black" } }) {
+            edges {
+                node {
+                    relativePath
+                }
+            }
+        }
     }
 `
 
-const MetaTags = ({ title, description, url, image, schema, siteMeta }) => (
+const createSchemaOrg = (title, description, image, url, siteMeta, article) => {
+    const schemaOrgJSONLD = [
+        {
+            '@context': 'http://schema.org',
+            '@type': 'WebSite',
+            url: siteMeta.siteUrl,
+            name: title
+        }
+    ]
+
+    if (article) {
+        schemaOrgJSONLD.push(
+            {
+                '@context': 'http://schema.org',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    {
+                        '@type': 'ListItem',
+                        position: 1,
+                        item: { '@id': url, name: title, image }
+                    }
+                ]
+            },
+            {
+                // https://schema.org/TechArticle
+                '@context': 'http://schema.org',
+                '@type': 'TechArticle',
+                name: title,
+                headline: title,
+                description,
+                url,
+                image: { '@type': 'URL', url: image }
+            }
+        )
+    }
+
+    return schemaOrgJSONLD
+}
+
+const MetaTags = ({
+    title,
+    description,
+    url,
+    image,
+    schema,
+    siteMeta,
+    article
+}) => (
     <Helmet
         defaultTitle={siteMeta.siteTitle}
         titleTemplate={`%s - ${siteMeta.siteTitle}`}
@@ -41,17 +96,14 @@ const MetaTags = ({ title, description, url, image, schema, siteMeta }) => (
 
         {/* OpenGraph tags */}
         <meta property="og:url" content={url} />
-        {documentSEO && <meta property="og:type" content="article" />}
+        {article && <meta property="og:type" content="article" />}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-            name="twitter:creator"
-            content={siteMeta.social.twitter ? siteMeta.social.twitter : ''}
-        />
+        <meta name="twitter:creator" content={siteMeta.social.twitter || ''} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
@@ -59,27 +111,46 @@ const MetaTags = ({ title, description, url, image, schema, siteMeta }) => (
 )
 
 MetaTags.propTypes = {
-    description: PropTypes.string,
-    image: PropTypes.string,
-    url: PropTypes.string,
-    schema: PropTypes.string,
     title: PropTypes.string,
-    siteMeta: PropTypes.object
+    description: PropTypes.string,
+    url: PropTypes.string,
+    image: PropTypes.string,
+    schema: PropTypes.string,
+    siteMeta: PropTypes.object,
+    article: PropTypes.bool
 }
 
-const SEO = ({ title, description, slug }) => (
+const SEO = ({ title, description, slug, article }) => (
     <StaticQuery
         query={query}
         render={data => {
             const siteMeta = data.site.siteMetadata
+            const logo = data.logo.edges[0].node.relativePath
+
+            title = title || siteMeta.siteTitle
+            description = description || siteMeta.siteDescription
+            let url = siteMeta.siteUrl || siteMeta.siteUrl + slug
+            let image = `${siteMeta.siteUrl}/${logo}`
+
+            let schema = createSchemaOrg(
+                title,
+                description,
+                image,
+                url,
+                siteMeta,
+                article
+            )
+            schema = JSON.stringify(schema)
 
             return (
                 <MetaTags
-                    description={description}
-                    // image={image}
-                    url={url}
                     title={title}
+                    description={description}
+                    url={url}
+                    image={image}
+                    schema={schema}
                     siteMeta={siteMeta}
+                    article={article}
                 />
             )
         }}
@@ -89,7 +160,8 @@ const SEO = ({ title, description, slug }) => (
 SEO.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
-    slug: PropTypes.string
+    slug: PropTypes.string,
+    article: PropTypes.bool
 }
 
 export default SEO

@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import giphyAPI from 'giphy-js-sdk-core'
-import Helmet from 'react-helmet'
+import SEO from '../components/Seo'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import styles from './404.module.scss'
@@ -45,7 +45,7 @@ export default class NotFoundPage extends Component {
     render() {
         return (
             <>
-                <Helmet title="404 - Not Found" />
+                <SEO title="404 - Not Found" />
                 <Layout location={this.props.location}>
                     <Content>
                         <article className={styles.content}>
