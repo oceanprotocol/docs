@@ -17,14 +17,6 @@ const query = graphql`
                 }
             }
         }
-
-        logo: allFile(filter: { name: { eq: "favicon-black" } }) {
-            edges {
-                node {
-                    relativePath
-                }
-            }
-        }
     }
 `
 
@@ -125,12 +117,12 @@ const SEO = ({ title, description, slug, article }) => (
         query={query}
         render={data => {
             const siteMeta = data.site.siteMetadata
-            const logo = data.logo.edges[0].node.relativePath
+            const logo = '/icons/icon-512x512.png'
 
             title = title || siteMeta.siteTitle
             description = description || siteMeta.siteDescription
             let url = siteMeta.siteUrl || siteMeta.siteUrl + slug
-            let image = `${siteMeta.siteUrl}/${logo}`
+            let image = siteMeta.siteUrl + logo
 
             let schema = createSchemaOrg(
                 title,
