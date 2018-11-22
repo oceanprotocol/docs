@@ -9,6 +9,12 @@
     text-align: left;
     width: 100%;
     margin-bottom: $spacer;
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        align-self: flex-start;
+    }
 }
 
 .repositoryName {
@@ -17,6 +23,7 @@
     margin-bottom: $spacer / 2;
     border: 0;
     padding: 0;
+    width: 100%;
 
     a:first-of-type {
         color: $brand-black;
@@ -44,13 +51,16 @@
 
 .repositoryMeta {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    width: 100%;
 }
 
 .repositoryLinks {
     margin: 0;
     padding: 0;
     margin-left: -($spacer / $line-height);
+    width: 80%;
 
     li {
         display: inline-block;
@@ -71,9 +81,9 @@
 .repositorynumbers {
     font-size: $font-size-small;
     margin-left: -($spacer / 4);
-    margin-bottom: -.2rem;
     flex: 1;
     text-align: right;
+    width: 20%;
 
     a {
         color: $brand-grey-light;
