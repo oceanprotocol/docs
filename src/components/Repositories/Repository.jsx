@@ -224,17 +224,17 @@ const Repository = ({ name, links, readme }) => (
 
             // enhance passed links array with what's in repositories.yml,
             // iterating over all repos until we have a name match
-            const linksFilteredArray = repositoriesYaml.map(({ node }) => {
-                return node.items
-                    .map(item => {
-                        if (item.name === name) {
-                            return item.links
-                        }
-                    })
-                    .filter(n => n)[0]
+            let linksFilteredArray = []
+
+            repositoriesYaml.map(({ node }) => {
+                node.items.forEach(item => {
+                    if (item.name === name) {
+                        linksFilteredArray.push(item.links)
+                    }
+                })
             })
 
-            const moreLinks = links || linksFilteredArray[0]
+            const moreLinks = links || linksFilteredArray.filter(n => n)[0]
 
             return (
                 <article className={styles.repository}>
