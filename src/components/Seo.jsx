@@ -17,7 +17,7 @@ const query = graphql`
             edges {
                 node {
                     childImageSharp {
-                        fixed {
+                        original {
                             src
                         }
                     }
@@ -125,7 +125,7 @@ const SEO = ({ title, description, slug, article }) => (
         render={data => {
             const siteMeta = data.site.siteMetadata
             const shareImage =
-                data.shareImage.edges[0].node.childImageSharp.fixed.src
+                data.shareImage.edges[0].node.childImageSharp.original.src
 
             title = title || siteMeta.siteTitle
             description = description || siteMeta.siteDescription
