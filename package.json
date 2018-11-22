@@ -22,7 +22,7 @@
     "deploy": "./scripts/deploy.sh"
   },
   "dependencies": {
-    "@oceanprotocol/art": "^1.0.2",
+    "@oceanprotocol/art": "^2.0.0",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.0.52",
