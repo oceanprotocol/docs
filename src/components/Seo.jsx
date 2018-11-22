@@ -10,10 +10,17 @@ const query = graphql`
                 siteTitle
                 siteDescription
                 siteUrl
-                siteIcon
-                siteCompany
-                social {
-                    twitter
+            }
+        }
+
+        shareImage: allFile(filter: { name: { eq: "share" } }) {
+            edges {
+                node {
+                    childImageSharp {
+                        fixed {
+                            src
+                        }
+                    }
                 }
             }
         }
@@ -95,7 +102,7 @@ const MetaTags = ({
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content={siteMeta.social.twitter || ''} />
+        <meta name="twitter:creator" content="@oceanprotocol" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
@@ -117,12 +124,13 @@ const SEO = ({ title, description, slug, article }) => (
         query={query}
         render={data => {
             const siteMeta = data.site.siteMetadata
-            const logo = '/icons/icon-512x512.png'
+            const shareImage =
+                data.shareImage.edges[0].node.childImageSharp.fixed.src
 
             title = title || siteMeta.siteTitle
             description = description || siteMeta.siteDescription
             let url = siteMeta.siteUrl || siteMeta.siteUrl + slug
-            let image = siteMeta.siteUrl + logo
+            let image = siteMeta.siteUrl + shareImage
 
             let schema = createSchemaOrg(
                 title,
