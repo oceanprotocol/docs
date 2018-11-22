@@ -10,6 +10,7 @@ import DocToc from '../components/DocToc'
 import DocContent from '../components/DocContent'
 import DocHeader from '../components/DocHeader'
 import DocFooter from '../components/DocFooter'
+import SEO from '../components/Seo'
 import styles from './Doc.module.scss'
 
 export default class DocTemplate extends Component {
@@ -22,7 +23,7 @@ export default class DocTemplate extends Component {
         const { location } = this.props
         const post = this.props.data.markdownRemark
         const sections = this.props.data.allSectionsYaml.edges
-        const { section } = post.fields
+        const { section, slug } = post.fields
         const { title, description } = post.frontmatter
         const { tableOfContents } = post
 
@@ -37,10 +38,11 @@ export default class DocTemplate extends Component {
         return (
             <>
                 <Helmet>
-                    <title>{title}</title>
-                    <meta name="description" content={description} />
                     <body className={section} />
                 </Helmet>
+
+                <SEO title={title} description={description} slug={slug} />
+
                 <Layout location={location}>
                     <HeaderSection title={section ? sectionTitle : title} />
 
