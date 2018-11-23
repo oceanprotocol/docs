@@ -10,7 +10,27 @@ import DocToc from '../components/DocToc'
 import DocContent from '../components/DocContent'
 import DocHeader from '../components/DocHeader'
 import DocFooter from '../components/DocFooter'
+import SEO from '../components/Seo'
 import styles from './Doc.module.scss'
+
+const DocMain = ({ title, description, tableOfContents, post, single }) => (
+    <article className={single ? styles.mainSingle : styles.main}>
+        <DocHeader title={title} description={description} />
+
+        {tableOfContents && <DocToc tableOfContents={tableOfContents} />}
+
+        <DocContent html={post.html} htmlAst={post.htmlAst} />
+        <DocFooter post={post} />
+    </article>
+)
+
+DocMain.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    tableOfContents: PropTypes.string.isRequired,
+    post: PropTypes.object.isRequired,
+    single: PropTypes.bool
+}
 
 export default class DocTemplate extends Component {
     static propTypes = {
@@ -22,7 +42,7 @@ export default class DocTemplate extends Component {
         const { location } = this.props
         const post = this.props.data.markdownRemark
         const sections = this.props.data.allSectionsYaml.edges
-        const { section } = post.fields
+        const { section, slug } = post.fields
         const { title, description } = post.frontmatter
         const { tableOfContents } = post
 
@@ -37,10 +57,16 @@ export default class DocTemplate extends Component {
         return (
             <>
                 <Helmet>
-                    <title>{title}</title>
-                    <meta name="description" content={description} />
                     <body className={section} />
                 </Helmet>
+
+                <SEO
+                    title={title}
+                    description={description}
+                    slug={slug}
+                    article
+                />
+
                 <Layout location={location}>
                     <HeaderSection title={section ? sectionTitle : title} />
 
@@ -53,42 +79,21 @@ export default class DocTemplate extends Component {
                                         sidebar={section}
                                     />
                                 </aside>
-                                <article className={styles.main}>
-                                    <DocHeader
-                                        title={title}
-                                        description={description}
-                                    />
-
-                                    {tableOfContents && (
-                                        <DocToc
-                                            tableOfContents={tableOfContents}
-                                        />
-                                    )}
-
-                                    <DocContent
-                                        html={post.html}
-                                        htmlAst={post.htmlAst}
-                                    />
-                                    <DocFooter post={post} />
-                                </article>
-                            </main>
-                        ) : (
-                            <article className={styles.mainSingle}>
-                                <DocHeader
+                                <DocMain
                                     title={title}
                                     description={description}
+                                    tableOfContents={tableOfContents}
+                                    post={post}
                                 />
-
-                                {tableOfContents && (
-                                    <DocToc tableOfContents={tableOfContents} />
-                                )}
-
-                                <DocContent
-                                    html={post.html}
-                                    htmlAst={post.htmlAst}
-                                />
-                                <DocFooter post={post} />
-                            </article>
+                            </main>
+                        ) : (
+                            <DocMain
+                                title={title}
+                                description={description}
+                                tableOfContents={tableOfContents}
+                                post={post}
+                                single
+                            />
                         )}
                     </Content>
                 </Layout>
@@ -110,6 +115,7 @@ export const pageQuery = graphql`
             }
             fields {
                 section
+                slug
             }
             ...PageFooter
         }
