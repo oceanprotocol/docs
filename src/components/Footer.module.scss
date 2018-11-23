@@ -49,6 +49,7 @@
 
     a {
         margin: 0 $spacer / 2;
+        display: inline-block;
 
         &:last-child {
             margin-right: 0;

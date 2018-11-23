@@ -7,6 +7,7 @@
     -webkit-overflow-scrolling: touch;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
+    padding-right: $spacer;
     display: flex;
 
     @media (min-width: $break-point--medium) {
@@ -18,7 +19,8 @@
 
     article {
         white-space: normal;
-        flex: 0 0 25rem;
+        flex: 0 0 90vw;
+        max-width: 25rem;
         margin-left: $spacer;
         margin-bottom: $spacer / 4;
 
@@ -67,7 +69,7 @@
 
 .repositoryCategoryTitle {
     width: 100%;
-    font-size: $font-size-h3;
+    font-size: $font-size-h4;
     color: $brand-grey-light;
     margin-bottom: $spacer / 2;
 }

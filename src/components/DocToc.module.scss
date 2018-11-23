@@ -2,10 +2,14 @@
 
 .toc {
     background: darken($brand-white, 2%);
-    padding: $spacer;
+    padding: $spacer / 2;
     margin-bottom: $spacer * 2;
 
+    @media screen and (min-width: $break-point--small) {
+        padding: $spacer / $line-height $spacer;
+    }
+
     ul {
-        margin: 0;
+        margin-bottom: 0;
     }
 }
