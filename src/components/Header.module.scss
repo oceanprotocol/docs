@@ -12,7 +12,6 @@
 .headerContent {
     composes: content from './Content.module.scss';
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,13 +40,37 @@
     margin-left: $spacer / 2;
     display: none;
 
-    @media (min-width: $break-point--small) {
+    @media (min-width: $break-point--medium) {
         display: inline-block;
     }
 }
 
 .headerMenu {
+    flex: 1;
     justify-self: flex-end;
+    text-align: right;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-right: -($spacer / 2);
+    padding-right: $spacer;
+
+    @media (min-width: $break-point--medium) {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    &::-webkit-scrollbar,
+    &::-moz-scrollbar {
+        display: none;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+        transition: opacity .2s ease-out;
+    }
 }
 
 .section {

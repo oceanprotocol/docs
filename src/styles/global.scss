@@ -103,10 +103,15 @@ ol {
             user-select: none;
         }
 
+        + li {
+            margin-top: $spacer / 8;
+        }
+
         ul,
         ol,
         p {
             margin-bottom: 0;
+            margin-top: $spacer / 8;
         }
     }
 }
@@ -205,11 +210,17 @@ cite {
 blockquote,
 blockquote > p {
     font-style: italic;
+    color: lighten($brand-grey, 15%);
 }
 
 blockquote {
     margin: 0 0 $spacer;
-    padding-left: $spacer;
+    padding-left: $spacer / 2;
+    border-left: .2rem solid $brand-grey-lighter;
+
+    @media screen and (min-width: $break-point--small) {
+        padding-left: $spacer / $line-height;
+    }
 }
 
 // Tables
