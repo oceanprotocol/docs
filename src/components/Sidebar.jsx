@@ -44,19 +44,17 @@ const SidebarList = ({ items, location }) => (
 export default class Sidebar extends Component {
     static propTypes = {
         sidebar: PropTypes.string,
-        location: PropTypes.object.isRequired
+        location: PropTypes.object.isRequired,
+        toc: PropTypes.bool,
+        tableOfContents: PropTypes.string
     }
 
-    static defaultProps = {
-        location: { pathname: `/` }
-    }
+    static defaultProps = { location: { pathname: `/` } }
 
     render() {
-        const { sidebar, location } = this.props
+        const { sidebar, location, toc, tableOfContents } = this.props
 
-        const sidebarfile = sidebar
-            ? require(`../../data/sidebars/${sidebar}.yml`) // eslint-disable-line
-            : []
+        const sidebarfile = sidebar ? require(`../../data/sidebars/${sidebar}.yml`) : [] // eslint-disable-line
 
         if (!sidebarfile) {
             return null
@@ -64,26 +62,38 @@ export default class Sidebar extends Component {
 
         return (
             <nav className={styles.sidebar}>
-                {sidebarfile.map((group, i) => (
-                    <div key={i}>
-                        <h4 className={styles.groupTitle}>
-                            {group.items[0].link ? (
-                                <SidebarLink
-                                    link={group.items[0].link}
-                                    title={group.group}
-                                    linkClasses={styles.groupTitleLink}
-                                />
-                            ) : (
-                                group.group
-                            )}
-                        </h4>
-                        <SidebarList
-                            key={i}
-                            items={group.items}
-                            location={location}
+                {toc ? (
+                    <div>
+                        <h4 className={styles.groupTitle}>On this page</h4>
+                        <div
+                            className={styles.toc}
+                            dangerouslySetInnerHTML={{
+                                __html: tableOfContents
+                            }}
                         />
                     </div>
-                ))}
+                ) : (
+                    sidebarfile.map((group, i) => (
+                        <div key={i}>
+                            <h4 className={styles.groupTitle}>
+                                {group.items[0].link ? (
+                                    <SidebarLink
+                                        link={group.items[0].link}
+                                        title={group.group}
+                                        linkClasses={styles.groupTitleLink}
+                                    />
+                                ) : (
+                                    group.group
+                                )}
+                            </h4>
+                            <SidebarList
+                                key={i}
+                                items={group.items}
+                                location={location}
+                            />
+                        </div>
+                    ))
+                )}
             </nav>
         )
     }

@@ -1,0 +1,4 @@
+- group: squid-js
+  items:
+    - title: API reference
+      link: /api/squid-js/

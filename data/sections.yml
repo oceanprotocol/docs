@@ -14,7 +14,6 @@
   color: orange
 
 - title: API References
-  #description: Get the API references for all relevant components.
-  description: Coming soon.
-  #link: /api/introduction/
+  description: Get the API references for all relevant components.
+  link: /api/squid-js/
   color: green

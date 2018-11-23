@@ -79,12 +79,31 @@ export default class DocTemplate extends Component {
                                         sidebar={section}
                                     />
                                 </aside>
-                                <DocMain
-                                    title={title}
-                                    description={description}
-                                    tableOfContents={tableOfContents}
-                                    post={post}
-                                />
+                                {location.pathname.includes('/api/') ? (
+                                    <>
+                                        <DocMain
+                                            title={title}
+                                            description={description}
+                                            post={post}
+                                        />
+                                        <aside className={styles.sidebarToc}>
+                                            <Sidebar
+                                                location={location}
+                                                toc
+                                                tableOfContents={
+                                                    tableOfContents
+                                                }
+                                            />
+                                        </aside>
+                                    </>
+                                ) : (
+                                    <DocMain
+                                        title={title}
+                                        description={description}
+                                        tableOfContents={tableOfContents}
+                                        post={post}
+                                    />
+                                )}
                             </main>
                         ) : (
                             <DocMain
