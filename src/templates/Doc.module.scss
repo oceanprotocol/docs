@@ -16,23 +16,8 @@
         margin-bottom: 0;
         order: 1;
 
-        :global(.api) & {
-            width: 17%;
-        }
-
         + .main {
             width: 73%;
-        }
-    }
-}
-
-.sidebarToc {
-    composes: sidebar;
-    padding-left: $spacer / 2;
-
-    @media (min-width: $break-point--medium) {
-        :global(.api) & {
-            width: 19%;
         }
     }
 }

@@ -54,6 +54,10 @@
     border-left: 1px solid $brand-grey-lighter;
     margin-left: $spacer / 2;
 
+    > ul {
+        padding-left: 0;
+    }
+
     li {
         display: block;
 
@@ -63,7 +67,8 @@
     }
 }
 
-.link {
+.link,
+.toc a {
     color: $brand-grey;
     display: inline-block;
     padding: $spacer / 6 $spacer / 2;
@@ -74,6 +79,24 @@
     &:focus {
         transform: none;
         color: $brand-purple;
+    }
+}
+
+.toc {
+    ul {
+        padding-left: 0;
+
+        ul {
+            padding-left: $spacer / 2;
+            margin: 0;
+        }
+    }
+
+    li {
+        margin: 0;
+    }
+
+    a {
     }
 }
 

@@ -27,7 +27,7 @@ const DocMain = ({ title, description, tableOfContents, post, single }) => (
 DocMain.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    tableOfContents: PropTypes.string.isRequired,
+    tableOfContents: PropTypes.string,
     post: PropTypes.object.isRequired,
     single: PropTypes.bool
 }
@@ -54,6 +54,8 @@ export default class DocTemplate extends Component {
             }
         })
 
+        const isApiSection = location.pathname.includes('/api/')
+
         return (
             <>
                 <Helmet>
@@ -77,33 +79,24 @@ export default class DocTemplate extends Component {
                                     <Sidebar
                                         location={location}
                                         sidebar={section}
+                                        collapsed={isApiSection}
+                                        toc={
+                                            isApiSection &&
+                                            !location.pathname.includes(
+                                                '/api/introduction/'
+                                            )
+                                        }
+                                        tableOfContents={tableOfContents}
                                     />
                                 </aside>
-                                {location.pathname.includes('/api/') ? (
-                                    <>
-                                        <DocMain
-                                            title={title}
-                                            description={description}
-                                            post={post}
-                                        />
-                                        <aside className={styles.sidebarToc}>
-                                            <Sidebar
-                                                location={location}
-                                                toc
-                                                tableOfContents={
-                                                    tableOfContents
-                                                }
-                                            />
-                                        </aside>
-                                    </>
-                                ) : (
-                                    <DocMain
-                                        title={title}
-                                        description={description}
-                                        tableOfContents={tableOfContents}
-                                        post={post}
-                                    />
-                                )}
+                                <DocMain
+                                    title={title}
+                                    description={description}
+                                    tableOfContents={
+                                        !isApiSection && tableOfContents
+                                    }
+                                    post={post}
+                                />
                             </main>
                         ) : (
                             <DocMain
