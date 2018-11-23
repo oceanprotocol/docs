@@ -14,7 +14,9 @@ const DocHeader = ({ title, description }) => {
     return (
         <header className={styles.header}>
             <h1 className={styles.title}>{title}</h1>
-            {description && <p className={styles.lead}>{descriptionHtml}</p>}
+            {description && (
+                <div className={styles.lead}>{descriptionHtml}</div>
+            )}
         </header>
     )
 }

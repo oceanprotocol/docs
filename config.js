@@ -4,7 +4,7 @@ module.exports = {
     siteDescription:
         'Learn about the components of the Ocean Protocol software stack, and how to run or use the components relevant to you.',
     siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
-    siteIcon: 'src/images/profile.png',
+    siteIcon: 'node_modules/@oceanprotocol/art/logo/favicon-black.png',
     siteCompany: 'Ocean Protocol Foundation Ltd.',
     analyticsId: 'UA-60614729-11',
     social: {
