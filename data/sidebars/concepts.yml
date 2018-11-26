@@ -13,8 +13,6 @@
   items:
     - title: Overview
       link: /concepts/architecture/
-    - title: Squid
-      link: /concepts/squid/
     - title: Secret Store
       link: /concepts/secret-store/
     - title: Computing Services
