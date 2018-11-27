@@ -12,3 +12,9 @@
   description: Browse tutorials for most common setup and development use-cases.
   link: /tutorials/introduction/
   color: orange
+
+- title: API References
+  #description: Get the API references for all relevant components.
+  description: Coming soon.
+  #link: /api/introduction/
+  color: green
