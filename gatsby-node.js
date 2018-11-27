@@ -135,7 +135,7 @@ exports.createPages = ({ graphql, actions }) => {
                     component: apiSwaggerTemplate,
                     context: {
                         slug: aquariusSlug,
-                        json: aquariusSpecs
+                        api: aquariusSpecs
                     }
                 })
 
@@ -147,7 +147,7 @@ exports.createPages = ({ graphql, actions }) => {
                     component: apiSwaggerTemplate,
                     context: {
                         slug: brizoSlug,
-                        json: brizoSpecs
+                        api: brizoSpecs
                     }
                 })
 

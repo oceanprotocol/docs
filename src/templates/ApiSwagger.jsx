@@ -20,8 +20,8 @@ export default class ApiSwaggerTemplate extends Component {
 
     render() {
         const { location, data, pageContext } = this.props
-        const sections = this.props.data.allSectionsYaml.edges
-        const { title, description } = pageContext.json.info
+        const sections = data.allSectionsYaml.edges
+        const { title, description } = pageContext.api.info
 
         // output section title as defined in sections.yml
         const sectionTitle = sections.map(({ node }) => {
@@ -30,8 +30,6 @@ export default class ApiSwaggerTemplate extends Component {
                 return node.title
             }
         })
-
-        console.log(data)
 
         return (
             <>
@@ -61,7 +59,7 @@ export default class ApiSwaggerTemplate extends Component {
                             <article className={stylesDoc.main}>
                                 <DocHeader title={title} />
 
-                                {Object.keys(pageContext.json.paths).map(
+                                {Object.keys(pageContext.api.paths).map(
                                     path => (
                                         <div key={path} className={styles.path}>
                                             <h2>{path}</h2>
@@ -79,13 +77,7 @@ export default class ApiSwaggerTemplate extends Component {
 }
 
 export const pageQuery = graphql`
-    query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            id
-            tableOfContents
-            html
-        }
-
+    query {
         allSectionsYaml {
             edges {
                 node {

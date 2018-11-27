@@ -9,22 +9,6 @@ if (!process.env.GITHUB_TOKEN) {
 
 const config = require('./config.js')
 
-const fs = require('fs')
-const path = require('path')
-
-const fromJson = filePath => {
-    return new Promise((resolve, reject) => {
-        fs.readFile(filePath, 'utf8', (err, data) => { // eslint-disable-line
-            if (err) {
-                reject(err)
-                return
-            }
-
-            resolve(data)
-        })
-    })
-}
-
 module.exports = {
     siteMetadata: {
         // spread all of our config values here
@@ -118,27 +102,6 @@ module.exports = {
                         options: {
                             components: ['repo']
                         }
-                    }
-                ]
-            }
-        },
-        {
-            resolve: 'gatsby-source-openapi-aggregate',
-            options: {
-                specs: [
-                    {
-                        name: 'aquarius',
-                        resolve: () =>
-                            fromJson(
-                                path.resolve(__dirname, './data/aquarius.json')
-                            )
-                    },
-                    {
-                        name: 'brizo',
-                        resolve: () =>
-                            fromJson(
-                                path.resolve(__dirname, './data/brizo.json')
-                            )
                     }
                 ]
             }
