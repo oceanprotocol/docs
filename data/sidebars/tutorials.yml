@@ -3,6 +3,11 @@
     - title: Introduction
       link: /tutorials/introduction/
 
+- group: Basics
+  items:
+    - title: How to Use a Testnet
+      link: /tutorials/use-a-testnet/
+
 - group: Publish
   items:
     - title: Publish a Data Set
