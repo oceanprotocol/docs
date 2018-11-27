@@ -9,6 +9,7 @@ import Sidebar from '../components/Sidebar'
 import DocHeader from '../components/DocHeader'
 import SEO from '../components/Seo'
 import stylesDoc from './Doc.module.scss'
+import styles from './ApiSwagger.module.scss'
 
 export default class ApiSwaggerTemplate extends Component {
     static propTypes = {
@@ -18,11 +19,9 @@ export default class ApiSwaggerTemplate extends Component {
     }
 
     render() {
-        const { location } = this.props
-        const api = this.props.data.openApiSpec
-        const paths = api.childrenOpenApiSpecPath
+        const { location, data, pageContext } = this.props
         const sections = this.props.data.allSectionsYaml.edges
-        const { title, description } = api
+        const { title, description } = pageContext.json.info
 
         // output section title as defined in sections.yml
         const sectionTitle = sections.map(({ node }) => {
@@ -31,6 +30,8 @@ export default class ApiSwaggerTemplate extends Component {
                 return node.title
             }
         })
+
+        console.log(data)
 
         return (
             <>
@@ -41,7 +42,7 @@ export default class ApiSwaggerTemplate extends Component {
                 <SEO
                     title={title}
                     description={description}
-                    slug={this.props.pageContext.slug}
+                    slug={pageContext.slug}
                     article
                 />
 
@@ -60,9 +61,14 @@ export default class ApiSwaggerTemplate extends Component {
                             <article className={stylesDoc.main}>
                                 <DocHeader title={title} />
 
-                                {Object.keys(paths).map(path => (
-                                    <div key={path}>{path}</div>
-                                ))}
+                                {Object.keys(pageContext.json.paths).map(
+                                    path => (
+                                        <div key={path} className={styles.path}>
+                                            <h2>{path}</h2>
+                                            {path.get && <h3>GET</h3>}
+                                        </div>
+                                    )
+                                )}
                             </article>
                         </main>
                     </Content>
@@ -73,30 +79,11 @@ export default class ApiSwaggerTemplate extends Component {
 }
 
 export const pageQuery = graphql`
-    query ApiQuery($id: String!) {
-        openApiSpec(id: { eq: $id }) {
-            version
-            title
-            description
-            childrenOpenApiSpecPath {
-                name
-                verb
-                summary
-                description
-                parameters {
-                    name
-                    in
-                    description
-                    required
-                    type
-                }
-                tag
-                childrenOpenApiSpecResponse {
-                    id
-                    statusCode
-                    description
-                }
-            }
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            id
+            tableOfContents
+            html
         }
 
         allSectionsYaml {

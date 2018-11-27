@@ -3,12 +3,17 @@
     - title: API References
       link: /api/introduction/
 
-- group: squid-js
-  items:
-    - title: API reference
-      link: /api/squid-js/
+# - group: squid-js
+#   items:
+#     - title: API reference
+#       link: /api/squid-js/
 
 - group: aquarius
   items:
     - title: API reference
       link: /api/aquarius/
+
+- group: brizo
+  items:
+    - title: API reference
+      link: /api/brizo/

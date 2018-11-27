@@ -4,7 +4,6 @@
   },
   "info":{
     "title":"Aquarius",
-    "description": "Hello description",
     "version":"0.1.4"
   },
   "paths":{
@@ -202,6 +201,9 @@
           },
           {
             "description":"key or list of keys to sort the result",
+            "example": {
+              "value": 1
+            },
             "in":"query",
             "name":"sort",
             "type":"object"

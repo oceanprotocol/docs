@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
         resolve(
             graphql(
                 `
-                    {
+                    query {
                         allMarkdownRemark(
                             filter: { fileAbsolutePath: { regex: "/content/" } }
                         ) {
@@ -71,17 +71,6 @@ exports.createPages = ({ graphql, actions }) => {
                                         description
                                         section
                                     }
-                                }
-                            }
-                        }
-
-                        allOpenApiSpec {
-                            edges {
-                                node {
-                                    id
-                                    name
-                                    version
-                                    title
                                 }
                             }
                         }
@@ -134,24 +123,32 @@ exports.createPages = ({ graphql, actions }) => {
                     })
 
                 // Create pages from swagger json files
-                const swaggerSpecs = result.data.allOpenApiSpec.edges
                 const apiSwaggerTemplate = path.resolve(
                     './src/templates/ApiSwagger.jsx'
                 )
-                console.log(swaggerSpecs)
 
-                swaggerSpecs.map(({ node }) => {
-                    const slug = `/api/${node.name}`
-                    console.log(slug)
+                const aquariusSpecs = require('./data/aquarius.json')
+                const aquariusSlug = '/api/aquarius/'
 
-                    createPage({
-                        path: slug,
-                        component: apiSwaggerTemplate,
-                        context: {
-                            slug,
-                            id: node.id
-                        }
-                    })
+                createPage({
+                    path: aquariusSlug,
+                    component: apiSwaggerTemplate,
+                    context: {
+                        slug: aquariusSlug,
+                        json: aquariusSpecs
+                    }
+                })
+
+                const brizoSpecs = require('./data/brizo.json')
+                const brizoSlug = '/api/brizo/'
+
+                createPage({
+                    path: brizoSlug,
+                    component: apiSwaggerTemplate,
+                    context: {
+                        slug: brizoSlug,
+                        json: brizoSpecs
+                    }
                 })
 
                 resolve()
