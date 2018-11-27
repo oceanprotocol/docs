@@ -11,4 +11,4 @@
 - group: aquarius
   items:
     - title: API reference
-      link: https://github.com/oceanprotocol/aquarius/blob/develop/docs/for_api_users/API.md
+      link: /api/aquarius/

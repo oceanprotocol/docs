@@ -74,6 +74,17 @@ exports.createPages = ({ graphql, actions }) => {
                                 }
                             }
                         }
+
+                        allOpenApiSpec {
+                            edges {
+                                node {
+                                    id
+                                    name
+                                    version
+                                    title
+                                }
+                            }
+                        }
                     }
                 `
             ).then(result => {
@@ -121,6 +132,27 @@ exports.createPages = ({ graphql, actions }) => {
                             }
                         })
                     })
+
+                // Create pages from swagger json files
+                const swaggerSpecs = result.data.allOpenApiSpec.edges
+                const apiSwaggerTemplate = path.resolve(
+                    './src/templates/ApiSwagger.jsx'
+                )
+                console.log(swaggerSpecs)
+
+                swaggerSpecs.map(({ node }) => {
+                    const slug = `/api/${node.name}`
+                    console.log(slug)
+
+                    createPage({
+                        path: slug,
+                        component: apiSwaggerTemplate,
+                        context: {
+                            slug,
+                            id: node.id
+                        }
+                    })
+                })
 
                 resolve()
             })

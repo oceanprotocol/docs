@@ -1,0 +1,526 @@
+{
+  "definitions":{
+
+  },
+  "info":{
+    "title":"Aquarius",
+    "description": "Hello description",
+    "version":"0.1.4"
+  },
+  "paths":{
+    "/api/v1/aquarius/assets":{
+      "get":{
+        "description":"",
+        "responses":{
+          "200":{
+            "description":"successful action"
+          }
+        },
+        "summary":"Get all assets ids.",
+        "tags":[
+          "ddo"
+        ]
+      }
+    },
+    "/api/v1/aquarius/assets/ddo":{
+      "get":{
+        "description":"",
+        "responses":{
+          "200":{
+            "description":"successful action"
+          }
+        },
+        "summary":"Get ddo of all assets.",
+        "tags":[
+          "ddo"
+        ]
+      },
+      "post":{
+        "consumes":[
+          "application/json"
+        ],
+        "description":"",
+        "parameters":[
+          {
+            "description":"Asset ddo.",
+            "in":"body",
+            "name":"body",
+            "required":true,
+            "schema":{
+              "properties":{
+                "@context":{
+                  "description":null,
+                  "example":"https://w3id.org/future-method/v1",
+                  "type":"string"
+                },
+                "authentication":{
+                  "description":"List with the authentications.",
+                  "example":[
+                    {
+                      "type":"RsaSignatureAuthentication2018"
+                    },
+                    {
+                      "publicKey":"did:op:123456789abcdefghi#keys-1"
+                    }
+                  ],
+                  "type":"array"
+                },
+                "id":{
+                  "description":"ID of the asset.",
+                  "example":"did:op:123456789abcdefghi",
+                  "type":"string"
+                },
+                "publicKey":{
+                  "description":"List of publicKeys.",
+                  "example":[
+                    {
+                      "id":"did:op:123456789abcdefghi#keys-1"
+                    },
+                    {
+                      "type":"Ed25519VerificationKey2018"
+                    },
+                    {
+                      "owner":"did:op:123456789abcdefghi"
+                    },
+                    {
+                      "publicKeyBase58":"H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
+                    }
+                  ],
+                  "type":"array"
+                },
+                "service":{
+                  "description":"List of services.",
+                  "example":[
+                    {
+                      "serviceEndpoint":"http://mybrizo.org/api/v1/brizo/services/consume?pubKey=${pubKey}&serviceId={serviceId}&url={url}",
+                      "type":"Consume"
+                    },
+                    {
+                      "serviceEndpoint":"http://mybrizo.org/api/v1/brizo/services/compute?pubKey=${pubKey}&serviceId={serviceId}&algo={algo}&container={container}",
+                      "type":"Compute"
+                    },
+                    {
+                      "metadata":{
+                        "additionalInformation":{
+                          "structuredMarkup":[
+                            {
+                              "mediaType":"application/ld+json",
+                              "uri":"http://skos.um.es/unescothes/C01194/jsonld"
+                            },
+                            {
+                              "mediaType":"text/turtle",
+                              "uri":"http://skos.um.es/unescothes/C01194/turtle"
+                            }
+                          ],
+                          "updateFrecuency":"yearly"
+                        },
+                        "base":{
+                          "author":"Met Office",
+                          "compression":"zip",
+                          "contentType":"text/csv",
+                          "contentUrls":[
+                            "https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip"
+                          ],
+                          "copyrightHolder":"Met Office",
+                          "dateCreated":"2012-10-10T17:00:000Z",
+                          "description":"Weather information of UK including temperature and humidity",
+                          "encoding":"UTF-8",
+                          "inLanguage":"en",
+                          "license":"CC-BY",
+                          "links":[
+                            {
+                              "sample1":"http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/"
+                            },
+                            {
+                              "sample2":"http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-averages-25km/"
+                            },
+                            {
+                              "fieldsDescription":"http://data.ceda.ac.uk/badc/ukcp09/"
+                            }
+                          ],
+                          "name":"UK Weather information 2011",
+                          "price":10,
+                          "size":"3.1gb",
+                          "tags":"weather, uk, 2011, temperature, humidity",
+                          "type":"dataset",
+                          "workExample":"423432fsd,51.509865,-0.118092,2011-01-01T10:55:11+00:00,7.2,68"
+                        },
+                        "curation":{
+                          "numVotes":123,
+                          "rating":0.93,
+                          "schema":"Binary Votting"
+                        }
+                      },
+                      "serviceEndpoint":"http://myaquarius.org/api/v1/provider/assets/metadata/{did}",
+                      "type":"Metadata"
+                    }
+                  ],
+                  "type":"array"
+                }
+              },
+              "required":[
+                "@context",
+                "id",
+                "publicKey",
+                "authentication",
+                "service"
+              ],
+              "type":"object"
+            }
+          }
+        ],
+        "responses":{
+          "201":{
+            "description":"Asset successfully registered."
+          },
+          "400":{
+            "description":"One of the required attributes is missed."
+          },
+          "404":{
+            "description":"Invalid asset data."
+          },
+          "500":{
+            "description":"Error"
+          }
+        },
+        "summary":"Register ddo of a new asset",
+        "tags":[
+          "ddo"
+        ]
+      }
+    },
+    "/api/v1/aquarius/assets/ddo/query":{
+      "get":{
+        "description":"",
+        "parameters":[
+          {
+            "description":"ID of the asset.",
+            "in":"query",
+            "name":"text",
+            "required":true,
+            "type":"string"
+          },
+          {
+            "description":"key or list of keys to sort the result",
+            "in":"query",
+            "name":"sort",
+            "type":"object"
+          },
+          {
+            "description":"Number of records per page",
+            "example":100,
+            "in":"query",
+            "name":"offset",
+            "type":"int"
+          },
+          {
+            "description":"Page showed",
+            "example":0,
+            "in":"query",
+            "name":"page",
+            "type":"int"
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"successful action"
+          }
+        },
+        "summary":"Get a list of ddo that match with the text.",
+        "tags":[
+          "ddo"
+        ]
+      },
+      "post":{
+        "consumes":[
+          "application/json"
+        ],
+        "description":"",
+        "parameters":[
+          {
+            "description":"Asset metadata.",
+            "in":"body",
+            "name":"body",
+            "required":true,
+            "schema":{
+              "properties":{
+                "offset":{
+                  "description":"Number of records per page",
+                  "example":100,
+                  "type":"int"
+                },
+                "page":{
+                  "description":"Page showed",
+                  "example":0,
+                  "type":"int"
+                },
+                "query":{
+                  "description":"Query to realize",
+                  "example":{
+                    "value":1
+                  },
+                  "type":"string"
+                },
+                "sort":{
+                  "description":"key or list of keys to sort the result",
+                  "example":{
+                    "value":1
+                  },
+                  "type":"object"
+                }
+              },
+              "type":"object"
+            }
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"successful action"
+          }
+        },
+        "summary":"Get a list of ddo that match with the query executed.",
+        "tags":[
+          "ddo"
+        ]
+      }
+    },
+    "/api/v1/aquarius/assets/ddo/{did}":{
+      "put":{
+        "consumes":[
+          "application/json"
+        ],
+        "description":"",
+        "parameters":[
+          {
+            "description":"Asset ddo.",
+            "in":"body",
+            "name":"body",
+            "required":true,
+            "schema":{
+              "properties":{
+                "@context":{
+                  "description":null,
+                  "example":"https://w3id.org/future-method/v1",
+                  "type":"string"
+                },
+                "authentication":{
+                  "description":"List with the authentications.",
+                  "example":[
+                    {
+                      "type":"RsaSignatureAuthentication2018"
+                    },
+                    {
+                      "publicKey":"did:op:123456789abcdefghi#keys-1"
+                    }
+                  ],
+                  "type":"array"
+                },
+                "id":{
+                  "description":"ID of the asset.",
+                  "example":"did:op:123456789abcdefghi",
+                  "type":"string"
+                },
+                "publicKey":{
+                  "description":"List of publicKeys.",
+                  "example":[
+                    {
+                      "id":"did:op:123456789abcdefghi#keys-1"
+                    },
+                    {
+                      "type":"Ed25519VerificationKey2018"
+                    },
+                    {
+                      "owner":"did:op:123456789abcdefghi"
+                    },
+                    {
+                      "publicKeyBase58":"H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
+                    }
+                  ],
+                  "type":"array"
+                },
+                "service":{
+                  "description":"List of services.",
+                  "example":[
+                    {
+                      "serviceEndpoint":"http://mybrizo.org/api/v1/brizo/services/consume?pubKey=${pubKey}&serviceId={serviceId}&url={url}",
+                      "type":"Consume"
+                    },
+                    {
+                      "serviceEndpoint":"http://mybrizo.org/api/v1/brizo/services/compute?pubKey=${pubKey}&serviceId={serviceId}&algo={algo}&container={container}",
+                      "type":"Compute"
+                    },
+                    {
+                      "metadata":{
+                        "additionalInformation":{
+                          "structuredMarkup":[
+                            {
+                              "mediaType":"application/ld+json",
+                              "uri":"http://skos.um.es/unescothes/C01194/jsonld"
+                            },
+                            {
+                              "mediaType":"text/turtle",
+                              "uri":"http://skos.um.es/unescothes/C01194/turtle"
+                            }
+                          ],
+                          "updateFrecuency":"yearly"
+                        },
+                        "base":{
+                          "author":"Met Office",
+                          "compression":"zip",
+                          "contentType":"text/csv",
+                          "contentUrls":[
+                            "https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip"
+                          ],
+                          "copyrightHolder":"Met Office",
+                          "dateCreated":"2012-10-10T17:00:000Z",
+                          "description":"Weather information of UK including temperature and humidity",
+                          "encoding":"UTF-8",
+                          "inLanguage":"en",
+                          "license":"CC-BY",
+                          "links":[
+                            {
+                              "sample1":"http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/"
+                            },
+                            {
+                              "sample2":"http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-averages-25km/"
+                            },
+                            {
+                              "fieldsDescription":"http://data.ceda.ac.uk/badc/ukcp09/"
+                            }
+                          ],
+                          "name":"UK Weather information 2011",
+                          "price":10,
+                          "size":"3.1gb",
+                          "tags":"weather, uk, 2011, temperature, humidity",
+                          "type":"dataset",
+                          "workExample":"423432fsd,51.509865,-0.118092,2011-01-01T10:55:11+00:00,7.2,68"
+                        },
+                        "curation":{
+                          "numVotes":123,
+                          "rating":0.93,
+                          "schema":"Binary Votting"
+                        }
+                      },
+                      "serviceEndpoint":"http://myaquarius.org/api/v1/provider/assets/metadata/{did}",
+                      "type":"Metadata"
+                    }
+                  ],
+                  "type":"array"
+                }
+              },
+              "required":[
+                "@context",
+                "id",
+                "publicKey",
+                "authentication",
+                "service"
+              ],
+              "type":"object"
+            }
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"Asset successfully updated."
+          },
+          "201":{
+            "description":"Asset successfully registered."
+          },
+          "400":{
+            "description":"One of the required attributes is missed."
+          },
+          "404":{
+            "description":"Invalid asset data."
+          },
+          "500":{
+            "description":"Error"
+          }
+        },
+        "summary":"Update ddo of an existing asset",
+        "tags":[
+          "ddo"
+        ]
+      }
+    },
+    "/api/v1/aquarius/assets/ddo/{id}":{
+      "delete":{
+        "description":"",
+        "parameters":[
+          {
+            "description":"ID of the asset.",
+            "in":"path",
+            "name":"id",
+            "required":true,
+            "type":"string"
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"successfully deleted"
+          },
+          "404":{
+            "description":"This asset id is not in OceanDB"
+          },
+          "500":{
+            "description":"Error"
+          }
+        },
+        "summary":"Retire metadata of an asset",
+        "tags":[
+          "ddo"
+        ]
+      },
+      "get":{
+        "description":"",
+        "parameters":[
+          {
+            "description":"ID of the asset.",
+            "in":"path",
+            "name":"id",
+            "required":true,
+            "type":"string"
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"successful operation"
+          },
+          "404":{
+            "description":"This asset id is not in OceanDB"
+          }
+        },
+        "summary":"Get ddo of a particular asset.",
+        "tags":[
+          "ddo"
+        ]
+      }
+    },
+    "/api/v1/aquarius/assets/metadata/{id}":{
+      "get":{
+        "description":"",
+        "parameters":[
+          {
+            "description":"ID of the asset.",
+            "in":"path",
+            "name":"id",
+            "required":true,
+            "type":"string"
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"successful operation"
+          },
+          "404":{
+            "description":"This asset id is not in OceanDB"
+          }
+        },
+        "summary":"Get metadata of a particular asset",
+        "tags":[
+          "metadata"
+        ]
+      }
+    }
+  },
+  "swagger":"2.0"
+}
