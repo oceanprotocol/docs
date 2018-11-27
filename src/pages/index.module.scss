@@ -9,6 +9,7 @@
 
     @media (min-width: $break-point--medium) {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 }
@@ -32,6 +33,12 @@
 
     &:nth-child(3) {
         animation-delay: .8s;
+    }
+
+    &:last-child {
+        flex-basis: 100%;
+        text-align: center;
+        opacity: .75;
     }
 }
 
@@ -76,6 +83,13 @@
     }
 }
 
+.green {
+    .sectionTitle,
+    .sectionMore {
+        color: $green;
+    }
+}
+
 .sectionTitle {
     margin-top: 0;
     margin-bottom: $spacer / $line-height;
@@ -85,6 +99,7 @@
 .sectionText {
     margin-bottom: 0;
     color: $brand-grey;
+    width: 100%;
 }
 
 .sectionMore {
