@@ -10,22 +10,34 @@ import Repositories from '../components/Repositories'
 import { ReactComponent as Arrow } from '../images/arrow.svg'
 import styles from './index.module.scss'
 
+const SectionBox = ({ to, children, ...props }) =>
+    to ? (
+        <Link to={to} {...props}>
+            {children}
+        </Link>
+    ) : (
+        <div {...props}>{children}</div>
+    )
+
 const SectionLink = ({ to, title, color, children }) => {
     // eslint-disable-next-line
     let classNames = classnames(styles.link, {
         [styles.purple]: color === 'purple',
         [styles.blue]: color === 'blue',
-        [styles.orange]: color === 'orange'
+        [styles.orange]: color === 'orange',
+        [styles.green]: color === 'green'
     })
 
     return (
-        <Link to={to} className={classNames}>
+        <SectionBox to={to} className={classNames}>
             <h3 className={styles.sectionTitle}>{title}</h3>
             <p className={styles.sectionText}>{children}</p>
-            <span className={styles.sectionMore}>
-                Learn More <Arrow />
-            </span>
-        </Link>
+            {title !== 'API References' && (
+                <span className={styles.sectionMore}>
+                    Learn More <Arrow />
+                </span>
+            )}
+        </SectionBox>
     )
 }
 
