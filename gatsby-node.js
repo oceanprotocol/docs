@@ -1,5 +1,8 @@
+/* eslint-disable no-console */
+
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const Swagger = require('swagger-client')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
@@ -31,6 +34,26 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
             value: section
         })
     }
+}
+
+// https://github.com/swagger-api/swagger-js
+const getSpec = async () => {
+    const spec = await Swagger(
+        'http://petstore.swagger.io/v2/swagger.json'
+    ).then(client => {
+        return client.spec // The resolved spec
+
+        // client.originalSpec // In case you need it
+        // client.errors // Any resolver errors
+
+        // Tags interface
+        // client.apis.pet.addPet({id: 1, name: "bobby"}).then(...)
+
+        // TryItOut Executor, with the `spec` already provided
+        // client.execute({operationId: 'addPet', parameters: {id: 1, name: "bobby") }).then(...)
+    })
+
+    return spec
 }
 
 exports.createPages = ({ graphql, actions }) => {
@@ -76,9 +99,8 @@ exports.createPages = ({ graphql, actions }) => {
                         }
                     }
                 `
-            ).then(result => {
+            ).then(async result => {
                 if (result.errors) {
-                    /* eslint-disable-next-line no-console */
                     console.log(result.errors)
                     reject(result.errors)
                 }
@@ -86,7 +108,9 @@ exports.createPages = ({ graphql, actions }) => {
                 const docTemplate = path.resolve('./src/templates/Doc.jsx')
                 const posts = result.data.allMarkdownRemark.edges
 
+                //
                 // Create Doc pages
+                //
                 posts.forEach(post => {
                     createPage({
                         path: `${post.node.fields.slug}`,
@@ -98,7 +122,9 @@ exports.createPages = ({ graphql, actions }) => {
                     })
                 })
 
+                //
                 // Create pages from dev-ocean contents
+                //
                 const postsDevOcean = result.data.devOceanDocs.edges
 
                 postsDevOcean
@@ -122,34 +148,53 @@ exports.createPages = ({ graphql, actions }) => {
                         })
                     })
 
+                //
                 // Create pages from swagger json files
+                //
                 const apiSwaggerTemplate = path.resolve(
                     './src/templates/ApiSwagger.jsx'
                 )
 
-                const aquariusSpecs = require('./data/aquarius.json')
-                const aquariusSlug = '/api/aquarius/'
-
-                createPage({
-                    path: aquariusSlug,
-                    component: apiSwaggerTemplate,
-                    context: {
-                        slug: aquariusSlug,
-                        api: aquariusSpecs
-                    }
-                })
-
-                const brizoSpecs = require('./data/brizo.json')
                 const brizoSlug = '/api/brizo/'
 
-                createPage({
-                    path: brizoSlug,
-                    component: apiSwaggerTemplate,
-                    context: {
-                        slug: brizoSlug,
-                        api: brizoSpecs
-                    }
-                })
+                try {
+                    const spec = await getSpec()
+
+                    createPage({
+                        path: brizoSlug,
+                        component: apiSwaggerTemplate,
+                        context: {
+                            slug: brizoSlug,
+                            api: spec
+                        }
+                    })
+                } catch (error) {
+                    console.log(error)
+                }
+
+                // const aquariusSpecs = require('./data/aquarius.json')
+                // const aquariusSlug = '/api/aquarius/'
+
+                // createPage({
+                //     path: aquariusSlug,
+                //     component: apiSwaggerTemplate,
+                //     context: {
+                //         slug: aquariusSlug,
+                //         api: aquariusSpecs
+                //     }
+                // })
+
+                // const brizoSpecs = require('./data/brizo.json')
+                // const brizoSlug = '/api/brizo/'
+
+                // createPage({
+                //     path: brizoSlug,
+                //     component: apiSwaggerTemplate,
+                //     context: {
+                //         slug: brizoSlug,
+                //         api: brizoSpecs
+                //     }
+                // })
 
                 resolve()
             })
