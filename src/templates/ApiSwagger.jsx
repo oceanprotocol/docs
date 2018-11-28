@@ -23,6 +23,23 @@ const toc = api => {
     return `<ul>${items}</ul>`
 }
 
+const Method = ({ keyName, value }) => (
+    <div className={styles.method}>
+        <h3 className={styles.pathMethod} data-type={keyName}>
+            {keyName}
+        </h3>
+
+        <p>{value['summary']}</p>
+
+        {value['description'] && <p>{value['description']}</p>}
+    </div>
+)
+
+Method.propTypes = {
+    keyName: PropTypes.string,
+    value: PropTypes.object
+}
+
 export default class ApiSwaggerTemplate extends Component {
     static propTypes = {
         data: PropTypes.object.isRequired,
@@ -83,9 +100,8 @@ export default class ApiSwaggerTemplate extends Component {
 
                                 {Object.entries(api.paths).map(
                                     ([key, value]) => (
-                                        <>
+                                        <div key={key}>
                                             <h2
-                                                key={key}
                                                 id={slugify(key)}
                                                 className={styles.pathName}
                                             >
@@ -94,35 +110,14 @@ export default class ApiSwaggerTemplate extends Component {
 
                                             {Object.entries(value).map(
                                                 ([key, value]) => (
-                                                    <>
-                                                        <h3
-                                                            key={key}
-                                                            className={
-                                                                styles.pathMethod
-                                                            }
-                                                        >
-                                                            <code>{key}</code>
-                                                        </h3>
-
-                                                        <p>
-                                                            {value['summary']}
-                                                        </p>
-
-                                                        {value[
-                                                            'description'
-                                                        ] && (
-                                                            <p>
-                                                                {
-                                                                    value[
-                                                                        'description'
-                                                                    ]
-                                                                }
-                                                            </p>
-                                                        )}
-                                                    </>
+                                                    <Method
+                                                        key={key}
+                                                        keyName={key}
+                                                        value={value}
+                                                    />
                                                 )
                                             )}
-                                        </>
+                                        </div>
                                     )
                                 )}
                             </article>
