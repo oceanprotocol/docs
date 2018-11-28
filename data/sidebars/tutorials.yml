@@ -1,10 +1,7 @@
-- group: Overview
+- group: Basics
   items:
     - title: Introduction
       link: /tutorials/introduction/
-
-- group: Basics
-  items:
     - title: How to Use a Testnet
       link: /tutorials/use-a-testnet/
 
