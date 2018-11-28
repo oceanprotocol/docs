@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import slugify from 'slugify'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderSection from '../components/HeaderSection'
@@ -9,13 +10,13 @@ import Sidebar from '../components/Sidebar'
 import DocHeader from '../components/DocHeader'
 import SEO from '../components/Seo'
 import stylesDoc from './Doc.module.scss'
-// import styles from './ApiSwagger.module.scss'
+import styles from './ApiSwagger.module.scss'
 
 const toc = api => {
     const items = Object.keys(api.paths).map(
         key =>
             `<li key=${key}>
-                <a href="#${key.replace(/\//gi, '-')}"><code>${key}</code></a>
+                <a href="#${slugify(key)}"><code>${key}</code></a>
             </li>`
     )
 
@@ -85,7 +86,8 @@ export default class ApiSwaggerTemplate extends Component {
                                         <>
                                             <h2
                                                 key={key}
-                                                id={key.replace(/\//gi, '-')}
+                                                id={slugify(key)}
+                                                className={styles.pathName}
                                             >
                                                 <code>{key}</code>
                                             </h2>
@@ -93,12 +95,30 @@ export default class ApiSwaggerTemplate extends Component {
                                             {Object.entries(value).map(
                                                 ([key, value]) => (
                                                     <>
-                                                        <h4 key={key}>
+                                                        <h3
+                                                            key={key}
+                                                            className={
+                                                                styles.pathMethod
+                                                            }
+                                                        >
                                                             <code>{key}</code>
-                                                        </h4>
+                                                        </h3>
+
                                                         <p>
                                                             {value['summary']}
                                                         </p>
+
+                                                        {value[
+                                                            'description'
+                                                        ] && (
+                                                            <p>
+                                                                {
+                                                                    value[
+                                                                        'description'
+                                                                    ]
+                                                                }
+                                                            </p>
+                                                        )}
                                                     </>
                                                 )
                                             )}
