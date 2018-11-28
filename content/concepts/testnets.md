@@ -19,4 +19,4 @@ The Ocean Testnet is similar to the Kovan Testnet, except all the nodes are oper
 
 Moreover, there is a [Secret Store](/concepts/components/#secret-store) operated by the Ocean Protocol Foundation which is connected to the Ocean Testnet: the Ocean Secret Store.
 
-There's a [tutorial about how to get set up to use a testnet](/tutorials/use-a-testnet/).
+For now, there's no easy way to get Ether for the Ocean Testnet, so we recommend using the Kovan Testnet (for now).

@@ -1,36 +1,31 @@
 ---
 title: How to Use a Testnet
-description: A tutorial showing how to get set up to use a testnet.
+description: A tutorial showing how to get set up to use one of the public testnets.
 ---
 
-At the time of writing, there were two testnets you could use to test an Ocean Protocol application: the Kovan Testnet and the Ocean Testnet. For more information about those, see the page about [testnets](/concepts/testnets/). Also at the time of writing, there was no easy was to get Ocean Testnet Ether for the Ocean Testnet, so this tutorial focuses on the Kovan Testnet (for now).
+At the time of writing, there were two public testnets you could use to test an Ocean Protocol application: the Kovan Testnet and the Ocean Testnet. For more information about those, see the page about [testnets](/concepts/testnets/). Also at the time of writing, there was no easy was to get Ether for the Ocean Testnet, so this tutorial is for the Kovan Testnet (for now).
 
-## Get a Kovan Address
+## Get a Compatible Wallet
 
-You can use any Ethereum wallet that can hold Kovan Ether (KEth) and Kovan Ocean Tokens. For now, we recommend [MetaMask](https://metamask.io/).
+You will need a wallet that can hold Ether (for any Ethereum network) and Ocean Tokens (for any Ethereum network). For now, we recommend using [MetaMask](https://metamask.io/).
 
-- Follow MetaMask instructions to install it.
-- Switch from the Main Ethereum Network to the Kovan Test Network.
-- Hover your mouse over your account address (e.g. `0x0A9...9282`). A tooltip should appear, saying, "Copy to clipboard".
-
-![Copy your Kovan address to your clipboard](images/get-address-from-metamask.png)
-
-- Copy the address to your clipboard. That's your Kovan address.
+- Follow the MetaMask instructions to install it on your machine.
+- In MetaMask, switch from the **Main Ethereum Network** to the **Kovan Test Network**.
 
 ## Get Kovan Ether (KEth)
 
-You can get Kovan Ether from a Kovan faucet: see [the official list of Kovan faucets](https://github.com/kovan-testnet/faucet). It will ask you for your Kovan address (copied to your clipboard in the last step).
+You can get Kovan Ether (KEth) from a Kovan faucet: see [the official list of Kovan faucets](https://github.com/kovan-testnet/faucet). You have to give the faucet your Kovan address (wallet account address). You can get that from MetaMask. It's a string that looks like:
 
-## Get Kovan Ocean Tokens
+```text
+0xa0A9d7f78bF293514e7cA2789A0Af689eEC99282
+```
 
-Use Pleuston... TODO
+## Next Steps
 
-INSERT SCREENSHOT
+You may want to get some Ocean Tokens for the Kovan Testnet (e.g. so you can buy assets). Currently, the easiest way to get some Ocean Tokens is by running Pleuston (a demo Ocean marketplace web app) and then clicking in the top right corner of the Pleuston user interface. If you see "Make it rain" then click that.
+
+Running Pleuston, along with all the software it needs to work, and configuring everything to work together (and connect to Kovan) is beyond the scope of this tutorial. If you want to do _that_, then the current best option is to use the scripts and Docker Compose files in the [🐳 docker-images repository](https://github.com/oceanprotocol/docker-images).
+
+<repo name="docker-images"></repo>
 
 Note that Kovan Ocean Tokens can't be transferred to or used in other Ethereum networks (or at least it wasn't possible at the time of writing).
-
-## Get Connected
-
-To connect to the Kovan Testnet and the the Ocean Secret Store for Kovan, you need information about where to connect, and other information (e.g. the addresses of the Ocean keeper contracts in Kovan).
-
-That information is bundled into the Ocean Protocol "docker-images" files and scripts, so you can just use those to get connected and using the Kovan testnet (and the Ocean Secret Store for Kovan). There are more details in [the page about setting up a marketplace](/setup/marketplace/).
