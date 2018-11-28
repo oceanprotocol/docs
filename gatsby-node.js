@@ -155,7 +155,7 @@ exports.createPages = ({ graphql, actions }) => {
                     './src/templates/ApiSwagger.jsx'
                 )
 
-                const petStoreSlug = '/api/petstore/'
+                const petStoreSlug = '/reference/petstore/'
 
                 try {
                     const spec = await getSpec()
@@ -173,7 +173,7 @@ exports.createPages = ({ graphql, actions }) => {
                 }
 
                 const aquariusSpecs = require('./data/aquarius.json')
-                const aquariusSlug = '/api/aquarius/'
+                const aquariusSlug = '/reference/aquarius/'
 
                 createPage({
                     path: aquariusSlug,
@@ -185,7 +185,7 @@ exports.createPages = ({ graphql, actions }) => {
                 })
 
                 const brizoSpecs = require('./data/brizo.json')
-                const brizoSlug = '/api/brizo/'
+                const brizoSlug = '/reference/brizo/'
 
                 createPage({
                     path: brizoSlug,

@@ -50,8 +50,8 @@ const Method = ({ keyName, value }) => (
 )
 
 Method.propTypes = {
-    keyName: PropTypes.string,
-    value: PropTypes.object
+    keyName: PropTypes.string.isRequired,
+    value: PropTypes.object.isRequired
 }
 
 export default class ApiSwaggerTemplate extends Component {
@@ -78,7 +78,7 @@ export default class ApiSwaggerTemplate extends Component {
         return (
             <>
                 <Helmet>
-                    <body className={'api'} />
+                    <body className={'reference'} />
                 </Helmet>
 
                 <SEO
@@ -96,7 +96,7 @@ export default class ApiSwaggerTemplate extends Component {
                             <aside className={stylesDoc.sidebar}>
                                 <Sidebar
                                     location={location}
-                                    sidebar={'api'}
+                                    sidebar={'reference'}
                                     collapsed
                                     toc
                                     tableOfContents={toc(api)

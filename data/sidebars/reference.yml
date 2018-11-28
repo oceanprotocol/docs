@@ -1,7 +1,7 @@
 - group: Overview
   items:
     - title: API References
-      link: /api/introduction/
+      link: /reference/introduction/
 
 # - group: squid-js
 #   items:
@@ -11,14 +11,14 @@
 - group: aquarius
   items:
     - title: API reference
-      link: /api/aquarius/
+      link: /reference/aquarius/
 
 - group: brizo
   items:
     - title: API reference
-      link: /api/brizo/
+      link: /reference/brizo/
 
 - group: pet store
   items:
     - title: API reference
-      link: /api/petstore/
+      link: /reference/petstore/
