@@ -11,6 +11,10 @@
           url: /api/aquarius/
 
     - name: brizo
+      links:
+          - name: API reference
+            url: /api/brizo/
+
     - name: pleuston
 
 - group: Libraries

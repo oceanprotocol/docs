@@ -17,3 +17,8 @@
   items:
     - title: API reference
       link: /api/brizo/
+
+- group: pet store
+  items:
+    - title: API reference
+      link: /api/petstore/

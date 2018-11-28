@@ -11,6 +11,17 @@ import SEO from '../components/Seo'
 import stylesDoc from './Doc.module.scss'
 // import styles from './ApiSwagger.module.scss'
 
+const toc = api => {
+    const items = Object.keys(api.paths).map(
+        key =>
+            `<li key=${key}>
+                <a href="#${key.replace(/\//gi, '-')}"><code>${key}</code></a>
+            </li>`
+    )
+
+    return `<ul>${items}</ul>`
+}
+
 export default class ApiSwaggerTemplate extends Component {
     static propTypes = {
         data: PropTypes.object.isRequired,
@@ -55,6 +66,10 @@ export default class ApiSwaggerTemplate extends Component {
                                     location={location}
                                     sidebar={'api'}
                                     collapsed
+                                    toc
+                                    tableOfContents={toc(api)
+                                        .split(',')
+                                        .join('')}
                                 />
                             </aside>
                             <article className={stylesDoc.main}>
@@ -65,11 +80,31 @@ export default class ApiSwaggerTemplate extends Component {
 
                                 {version}
 
-                                {Object.keys(api.paths).map(key => (
-                                    <>
-                                        <h2 key={key}>{key}</h2>
-                                    </>
-                                ))}
+                                {Object.entries(api.paths).map(
+                                    ([key, value]) => (
+                                        <>
+                                            <h2
+                                                key={key}
+                                                id={key.replace(/\//gi, '-')}
+                                            >
+                                                <code>{key}</code>
+                                            </h2>
+
+                                            {Object.entries(value).map(
+                                                ([key, value]) => (
+                                                    <>
+                                                        <h4 key={key}>
+                                                            <code>{key}</code>
+                                                        </h4>
+                                                        <p>
+                                                            {value['summary']}
+                                                        </p>
+                                                    </>
+                                                )
+                                            )}
+                                        </>
+                                    )
+                                )}
                             </article>
                         </main>
                     </Content>

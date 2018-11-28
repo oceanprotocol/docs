@@ -155,16 +155,16 @@ exports.createPages = ({ graphql, actions }) => {
                     './src/templates/ApiSwagger.jsx'
                 )
 
-                const brizoSlug = '/api/brizo/'
+                const petStoreSlug = '/api/petstore/'
 
                 try {
                     const spec = await getSpec()
 
                     createPage({
-                        path: brizoSlug,
+                        path: petStoreSlug,
                         component: apiSwaggerTemplate,
                         context: {
-                            slug: brizoSlug,
+                            slug: petStoreSlug,
                             api: spec
                         }
                     })
@@ -172,29 +172,29 @@ exports.createPages = ({ graphql, actions }) => {
                     console.log(error)
                 }
 
-                // const aquariusSpecs = require('./data/aquarius.json')
-                // const aquariusSlug = '/api/aquarius/'
+                const aquariusSpecs = require('./data/aquarius.json')
+                const aquariusSlug = '/api/aquarius/'
 
-                // createPage({
-                //     path: aquariusSlug,
-                //     component: apiSwaggerTemplate,
-                //     context: {
-                //         slug: aquariusSlug,
-                //         api: aquariusSpecs
-                //     }
-                // })
+                createPage({
+                    path: aquariusSlug,
+                    component: apiSwaggerTemplate,
+                    context: {
+                        slug: aquariusSlug,
+                        api: aquariusSpecs
+                    }
+                })
 
-                // const brizoSpecs = require('./data/brizo.json')
-                // const brizoSlug = '/api/brizo/'
+                const brizoSpecs = require('./data/brizo.json')
+                const brizoSlug = '/api/brizo/'
 
-                // createPage({
-                //     path: brizoSlug,
-                //     component: apiSwaggerTemplate,
-                //     context: {
-                //         slug: brizoSlug,
-                //         api: brizoSpecs
-                //     }
-                // })
+                createPage({
+                    path: brizoSlug,
+                    component: apiSwaggerTemplate,
+                    context: {
+                        slug: brizoSlug,
+                        api: brizoSpecs
+                    }
+                })
 
                 resolve()
             })
