@@ -8,6 +8,8 @@
       link: /concepts/components/
     - title: Tools & Examples
       link: /concepts/tools/
+    - title: Testnets
+      link: /concepts/testnets/
 
 - group: Architecture
   items:
