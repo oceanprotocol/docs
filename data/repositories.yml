@@ -12,8 +12,8 @@
 
     - name: brizo
       links:
-          - name: API reference
-            url: /api/brizo/
+        - name: API reference
+          url: /api/brizo/
 
     - name: pleuston
 
