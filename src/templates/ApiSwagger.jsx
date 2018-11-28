@@ -29,9 +29,23 @@ const Method = ({ keyName, value }) => (
             {keyName}
         </h3>
 
-        <p>{value['summary']}</p>
+        <p>{value.summary}</p>
 
-        {value['description'] && <p>{value['description']}</p>}
+        {value.description && <p>{value.description}</p>}
+
+        {value.consumes &&
+            value.consumes.map((item, i) => (
+                <div key={i}>
+                    <code>{item}</code>
+                </div>
+            ))}
+
+        <h4 className={styles.subHeading}>Responses</h4>
+        {Object.entries(value.responses).map(([key, value]) => (
+            <div key={key}>
+                <code>{key}</code> {value.description}
+            </div>
+        ))}
     </div>
 )
 

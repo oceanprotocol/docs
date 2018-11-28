@@ -4,13 +4,20 @@
     font-size: $font-size-h2;
     border-bottom: 1px solid $brand-grey-lighter;
     padding-bottom: $spacer / 2;
-    margin-bottom: $spacer / 2;
+    margin-top: $spacer * 2;
+    margin-bottom: $spacer;
+
+    code {
+        // stylelint-disable-next-line
+        background: none !important;
+    }
 }
 
 .pathMethod {
     font-size: $font-size-base;
     font-family: $font-family-monospace;
     margin-bottom: $spacer / 4;
+    margin-top: 0;
     display: inline-block;
     padding: $spacer / 8 $spacer / 4;
     border-radius: $border-radius;
@@ -33,6 +40,12 @@
 }
 
 .method {
-    padding-top: $spacer / 4;
-    padding-bottom: $spacer / 4;
+    padding: $spacer / 2;
+    border: 1px solid $brand-grey-lighter;
+    margin-bottom: $spacer;
+    border-radius: $border-radius;
+}
+
+.subHeading {
+    font-size: $font-size-base;
 }
