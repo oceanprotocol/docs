@@ -8,6 +8,7 @@ import Content from '../components/Content'
 import HeaderSection from '../components/HeaderSection'
 import Sidebar from '../components/Sidebar'
 import DocHeader from '../components/DocHeader'
+import DocFooter from '../components/DocFooter'
 import SEO from '../components/Seo'
 import stylesDoc from './Doc.module.scss'
 import styles from './ApiSwagger.module.scss'
@@ -275,6 +276,11 @@ export default class ApiSwaggerTemplate extends Component {
                                 )}
 
                                 <Paths paths={paths} />
+
+                                <DocFooter
+                                    url={`https://github.com/oceanprotocol/${title.toLowerCase()}`}
+                                    externalName={`${title} Swagger spec`}
+                                />
                             </article>
                         </main>
                     </Content>

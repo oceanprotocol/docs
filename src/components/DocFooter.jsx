@@ -4,31 +4,31 @@ import { ReactComponent as Pencil } from '../images/pencil.svg'
 import styles from './DocFooter.module.scss'
 import { githubContentPath, githubDevOceanPath } from '../../config'
 
-const DocFooter = ({ post }) => {
-    const { sourceInstanceName } = post.parent
-
+const DocFooter = ({ post, url, externalName }) => {
     let path
-    let externalRepoName
 
-    switch (sourceInstanceName) {
-        case 'dev-ocean':
-            path = githubDevOceanPath
-            externalRepoName = sourceInstanceName
-            break
-        default:
-            path = githubContentPath
+    if (post) {
+        const { sourceInstanceName } = post.parent
+
+        switch (sourceInstanceName) {
+            case 'dev-ocean':
+                path = githubDevOceanPath
+                externalName = sourceInstanceName
+                break
+            default:
+                path = githubContentPath
+        }
+
+        url = `${path}/${post.parent.relativePath}`
     }
 
     return (
         <footer className={styles.footer}>
-            <a
-                href={`${path}/${post.parent.relativePath}`}
-                className={!post.html ? styles.active : null}
-            >
+            <a href={url} className={post && !post.html ? styles.active : null}>
                 <Pencil /> Edit this page on GitHub
-                {externalRepoName && (
+                {externalName && (
                     <span className={styles.externalRepoName}>
-                        {externalRepoName}
+                        {externalName}
                     </span>
                 )}
             </a>
@@ -37,7 +37,9 @@ const DocFooter = ({ post }) => {
 }
 
 DocFooter.propTypes = {
-    post: PropTypes.object.isRequired
+    post: PropTypes.object,
+    url: PropTypes.string,
+    externalName: PropTypes.string
 }
 
 export default DocFooter
