@@ -38,7 +38,8 @@
     &:last-child {
         flex-basis: 100%;
         text-align: center;
-        opacity: .75;
+        opacity: .5;
+        pointer-events: none;
     }
 }
 
