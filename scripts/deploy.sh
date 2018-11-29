@@ -51,9 +51,9 @@ elif [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] |
 
   # ping search engines
   # returns: HTTP_STATUSCODE URL
-  # curl -sL -w "%{http_code} %{url_effective}\\n" \
-  #   "http://www.google.com/webmasters/tools/ping?sitemap=$SITEMAP_URL" -o /dev/null \
-  #   "http://www.bing.com/webmaster/ping.aspx?siteMap=$SITEMAP_URL" -o /dev/null
+  curl -sL -w "%{http_code} %{url_effective}\\n" \
+    "http://www.google.com/webmasters/tools/ping?sitemap=$SITEMAP_URL" -o /dev/null \
+    "http://www.bing.com/webmaster/ping.aspx?siteMap=$SITEMAP_URL" -o /dev/null
 
   echo "---------------------------------------------"
   echo "         ✓ done deployment "
