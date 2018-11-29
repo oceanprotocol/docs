@@ -195,7 +195,8 @@ exports.createPages = ({ graphql, actions }) => {
                         slug: brizoSlug,
                         api: brizoSpecs
                     }
-                
+                })
+
                 //
                 // create redirects
                 //
