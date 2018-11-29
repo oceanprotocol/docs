@@ -18,5 +18,19 @@ module.exports = {
     githubContentPath:
         'https://github.com/oceanprotocol/docs/blob/master/content',
     githubDevOceanPath:
-        'https://github.com/oceanprotocol/dev-ocean/blob/master/doc'
+        'https://github.com/oceanprotocol/dev-ocean/blob/master/doc',
+    redirects: [
+        {
+            from: '/concepts/',
+            to: '/concepts/introduction/'
+        },
+        {
+            from: '/setup/',
+            to: '/setup/quickstart/'
+        },
+        {
+            from: '/tutorials/',
+            to: '/tutorials/introduction/'
+        }
+    ]
 }
