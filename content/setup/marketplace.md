@@ -8,7 +8,9 @@ If you want to set up and run a marketplace in the Ocean network, then at a tech
 1. Develop a marketplace application (app).
 2. Run your marketplace app in production.
 
-**Note: In the early days of the Ocean network, there won't be many marketplaces or publishers, so marketplaces will often also act as publishers.**
+**Note 1: At the time of writing (late November 2018), it was _possible_ to start developing a marketplace, but very challenging. We anticipate that it will become much easier in December 2018, especially once the docker-images scripts and Docker Compose files are refactored.**
+
+**Note 2: In the early days of the Ocean network, there won't be many marketplaces or publishers, so marketplaces will often also act as publishers.**
 
 ## Develop a Marketplace App
 
@@ -39,16 +41,11 @@ Of course, you could always write your own Squid library in the language of your
 
 ## Run Your Marketplace App in Production
 
-Before running your marketplace app in production on the Ocean Mainnet, you may want to test it on the Ocean Testnet.
-The Ocean Testnet is similar to the Ocean Mainnet.
-The main difference is that there is less risk on the Ocean Testnet.
+Before running your marketplace app in production with the Ocean Mainnet, you may want to test it with an Ocean Testnet.
+The Ocean Testnets are similar to the Ocean Mainnet.
+The main difference is that there is less risk on the Ocean Testnets.
 
-**Note: At the time of writing, the Ocean Mainnet hadn't gone live yet, but the Trilobite Testnet was about to go live.**
-
-Some technical differences between local testing and connecting to a live external test/mainnet are:
-
-- Local Keeper nodes (Parity user nodes) must connect to the live network of Keepers.
-- Your Aquarius and Brizo instances must connect to the live Ocean Secret Store network.
+**Note: At the time of writing, the Ocean Mainnet hadn't gone live yet, but the testnets were about to go live. See [the page about testnets](/concepts/testnets/).**
 
 Of course, there are many other things that must be handled for live production apps:
 
