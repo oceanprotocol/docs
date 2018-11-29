@@ -39,20 +39,15 @@ const Header = () => (
                         </Link>
 
                         <nav className={styles.headerMenu}>
-                            {sections
-                                .filter(
-                                    ({ node }) =>
-                                        node.title !== 'API References'
-                                )
-                                .map(({ node }) => (
-                                    <Link
-                                        key={node.title}
-                                        to={node.link}
-                                        className={styles.section}
-                                    >
-                                        {node.title}
-                                    </Link>
-                                ))}
+                            {sections.map(({ node }) => (
+                                <Link
+                                    key={node.title}
+                                    to={node.link}
+                                    className={styles.section}
+                                >
+                                    {node.title}
+                                </Link>
+                            ))}
                         </nav>
                     </div>
                 </header>
