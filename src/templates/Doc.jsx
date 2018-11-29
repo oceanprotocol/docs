@@ -54,7 +54,7 @@ export default class DocTemplate extends Component {
             }
         })
 
-        const isApiSection = location.pathname.includes('/reference/')
+        const isApiSection = location.pathname.includes('/references/')
 
         return (
             <>
@@ -83,7 +83,7 @@ export default class DocTemplate extends Component {
                                         toc={
                                             isApiSection &&
                                             !location.pathname.includes(
-                                                '/reference/introduction/'
+                                                '/references/introduction/'
                                             )
                                         }
                                         tableOfContents={tableOfContents}

@@ -220,7 +220,7 @@ export default class ApiSwaggerTemplate extends Component {
         // output section title as defined in sections.yml
         const sectionTitle = sections.map(({ node }) => {
             // compare section against section title from sections.yml
-            if (node.title.toLowerCase().includes('reference')) {
+            if (node.title.toLowerCase().includes('references')) {
                 return node.title
             }
         })
@@ -228,7 +228,7 @@ export default class ApiSwaggerTemplate extends Component {
         return (
             <>
                 <Helmet>
-                    <body className={'reference'} />
+                    <body className={'references'} />
                 </Helmet>
 
                 <SEO
@@ -246,7 +246,7 @@ export default class ApiSwaggerTemplate extends Component {
                             <aside className={stylesDoc.sidebar}>
                                 <Sidebar
                                     location={location}
-                                    sidebar={'reference'}
+                                    sidebar={'references'}
                                     collapsed
                                     toc
                                     tableOfContents={toc(api)

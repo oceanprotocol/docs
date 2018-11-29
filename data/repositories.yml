@@ -8,12 +8,12 @@
     - name: aquarius
       links:
         - name: API reference
-          url: /reference/aquarius/
+          url: /references/aquarius/
 
     - name: brizo
       links:
         - name: API reference
-          url: /reference/brizo/
+          url: /references/brizo/
 
     - name: pleuston
 
