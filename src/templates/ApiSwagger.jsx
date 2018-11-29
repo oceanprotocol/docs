@@ -12,12 +12,27 @@ import SEO from '../components/Seo'
 import stylesDoc from './Doc.module.scss'
 import styles from './ApiSwagger.module.scss'
 
+const cleanKey = key => {
+    let keyCleaned = key
+
+    if (key.includes('aquarius')) {
+        keyCleaned = key.replace(/\/api\/v1\/aquarius/gi, '')
+    }
+
+    if (key.includes('brizo')) {
+        keyCleaned = key.replace(/\/api\/v1\/brizo/gi, '')
+    }
+
+    return keyCleaned
+}
+
 const toc = api => {
     const items = Object.keys(api.paths).map(
-        key =>
-            `<li key=${key}>
-                <a href="#${slugify(key)}"><code>${key}</code></a>
-            </li>`
+        key => `<li key=${key}>
+            <a href="#${slugify(cleanKey(key))}"><code>${cleanKey(
+            key
+        )}</code></a>
+        </li>`
     )
 
     return `<ul>${items}</ul>`
@@ -116,10 +131,10 @@ export default class ApiSwaggerTemplate extends Component {
                                     ([key, value]) => (
                                         <div key={key}>
                                             <h2
-                                                id={slugify(key)}
+                                                id={slugify(cleanKey(key))}
                                                 className={styles.pathName}
                                             >
-                                                <code>{key}</code>
+                                                <code>{cleanKey(key)}</code>
                                             </h2>
 
                                             {Object.entries(value).map(
