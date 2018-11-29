@@ -4,7 +4,7 @@ import remark from 'remark'
 import remarkReact from 'remark-react'
 import styles from './DocHeader.module.scss'
 
-const DocHeader = ({ title, description }) => {
+const DocHeader = ({ title, description, prepend }) => {
     const descriptionHtml =
         description &&
         remark()
@@ -13,7 +13,9 @@ const DocHeader = ({ title, description }) => {
 
     return (
         <header className={styles.header}>
-            <h1 className={styles.title}>{title}</h1>
+            <h1 className={styles.title}>
+                {title} {prepend && prepend}
+            </h1>
             {description && (
                 <div className={styles.lead}>{descriptionHtml}</div>
             )}
@@ -23,7 +25,8 @@ const DocHeader = ({ title, description }) => {
 
 DocHeader.propTypes = {
     title: PropTypes.string.isRequired,
-    description: PropTypes.string
+    description: PropTypes.string,
+    prepend: PropTypes.any
 }
 
 export default DocHeader

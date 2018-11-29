@@ -6,6 +6,7 @@
     "title":"Brizo",
     "version":"1.0"
   },
+  "basePath": "/api/v1/brizo",
   "paths":{
     "/api/v1/brizo/services/access/initialize":{
       "post":{

@@ -80,12 +80,13 @@ export default class ApiSwaggerTemplate extends Component {
         const { location, data, pageContext } = this.props
         const sections = data.allSectionsYaml.edges
         const { api } = pageContext
-        const { title, description, version } = api.info
+        const { host, basePath, info } = api
+        const { title, description, version, license, contact } = info
 
         // output section title as defined in sections.yml
         const sectionTitle = sections.map(({ node }) => {
             // compare section against section title from sections.yml
-            if (node.title.toLowerCase().includes('api')) {
+            if (node.title.toLowerCase().includes('reference')) {
                 return node.title
             }
         })
@@ -123,9 +124,44 @@ export default class ApiSwaggerTemplate extends Component {
                                 <DocHeader
                                     title={title}
                                     description={description}
+                                    prepend={
+                                        <span className={styles.version}>
+                                            {version}
+                                        </span>
+                                    }
                                 />
 
-                                {version}
+                                {(contact || license) && (
+                                    <ul className={styles.swaggerMeta}>
+                                        {contact && (
+                                            <li>
+                                                <a
+                                                    href={`mailto:${
+                                                        contact.email
+                                                    }`}
+                                                >
+                                                    {contact.email}
+                                                </a>
+                                            </li>
+                                        )}
+                                        {license && (
+                                            <li>
+                                                <a href={license.url}>
+                                                    {license.name}
+                                                </a>
+                                            </li>
+                                        )}
+                                    </ul>
+                                )}
+
+                                {(host || basePath) && (
+                                    <div className={styles.basePath}>
+                                        <code>
+                                            <span>{host}</span>
+                                            {basePath}
+                                        </code>
+                                    </div>
+                                )}
 
                                 {Object.entries(api.paths).map(
                                     ([key, value]) => (

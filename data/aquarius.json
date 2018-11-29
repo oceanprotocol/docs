@@ -6,6 +6,7 @@
     "title":"Aquarius",
     "version":"0.1.4"
   },
+  "basePath": "/api/v1/aquarius",
   "paths":{
     "/api/v1/aquarius/assets":{
       "get":{
