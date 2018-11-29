@@ -38,35 +38,167 @@ const toc = api => {
     return `<ul>${items}</ul>`
 }
 
-const Method = ({ keyName, value }) => (
-    <div className={styles.method}>
-        <h3 className={styles.pathMethod} data-type={keyName}>
-            {keyName}
-        </h3>
+const SwaggerMeta = ({ contact, license }) => (
+    <ul className={styles.swaggerMeta}>
+        {contact && (
+            <li>
+                <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            </li>
+        )}
+        {license && (
+            <li>
+                <a href={license.url}>{license.name}</a>
+            </li>
+        )}
+    </ul>
+)
 
-        <p>{value.summary}</p>
+SwaggerMeta.propTypes = {
+    contact: PropTypes.object,
+    license: PropTypes.object
+}
 
-        {value.description && <p>{value.description}</p>}
+const ParameterExample = ({ properties }) => (
+    <pre className="language-json">
+        <code className="language-json">
+            {'{'}
+            {properties &&
+                Object.keys(properties).map(key => (
+                    <div key={key}>
+                        <span className="token property">{`  "${key}"`}</span>
+                        <span className="token operator">{`: `}</span>
+                        {properties[key].type === 'string' && (
+                            <span className="token string">{`"${
+                                properties[key].example
+                            }"`}</span>
+                        )}
+                        {(properties[key].type === 'integer' ||
+                            properties[key].type === 'number') && (
+                            <span className="token number">
+                                {`${properties[key].example}`}
+                            </span>
+                        )}
+                        {(properties[key].type === 'array' ||
+                            properties[key].type === 'object') &&
+                            JSON.stringify(properties[key].example, null, 2)}
+                        ,
+                    </div>
+                ))}
+            {'}'}
+        </code>
+    </pre>
+)
 
-        {value.consumes &&
-            value.consumes.map((item, i) => (
-                <div key={i}>
-                    <code>{item}</code>
+ParameterExample.propTypes = {
+    properties: PropTypes.object
+}
+
+const Parameters = ({ parameters }) => (
+    <>
+        <h4 className={styles.subHeading}>Parameters</h4>
+
+        {parameters.map(parameter => {
+            const { name, type, required, description, schema } = parameter
+
+            return (
+                <div className={styles.parameters} key={parameter.name}>
+                    <h5>
+                        {name}
+                        {required && (
+                            <span
+                                className={styles.parameterRequired}
+                                title="required parameter"
+                            >
+                                *
+                            </span>
+                        )}
+                        <span className={styles.parameterType}>{type}</span>
+                    </h5>
+
+                    <p>{description}</p>
+
+                    {schema && (
+                        <ParameterExample properties={schema.properties} />
+                    )}
                 </div>
-            ))}
+            )
+        })}
+    </>
+)
 
+const Responses = ({ responses }) => (
+    <>
         <h4 className={styles.subHeading}>Responses</h4>
-        {Object.entries(value.responses).map(([key, value]) => (
-            <div key={key}>
-                <code>{key}</code> {value.description}
+        {Object.keys(responses).map(key => (
+            <div key={key} className={styles.response}>
+                <code>{key}</code> {responses[key].description}
             </div>
         ))}
+    </>
+)
+
+const Method = ({ keyName, value }) => {
+    const { summary, description, parameters, responses } = value
+
+    return (
+        <div className={styles.method}>
+            <h3 className={styles.pathMethod} data-type={keyName}>
+                {keyName}
+            </h3>
+
+            <p>{summary}</p>
+
+            {description && <p>{description}</p>}
+
+            {/*
+            {consumes &&
+                consumes.map((item, i) => (
+                    <div key={i}>
+                        <code>{item}</code>
+                    </div>
+                ))}
+            */}
+
+            {parameters && parameters.length && (
+                <Parameters parameters={parameters} />
+            )}
+            {responses && Object.keys(responses).length !== 0 && (
+                <Responses responses={responses} />
+            )}
+        </div>
+    )
+}
+
+Method.propTypes = {
+    keyName: PropTypes.string,
+    value: PropTypes.object
+}
+
+const Paths = ({ paths }) =>
+    Object.entries(paths).map(([key, value]) => (
+        <div key={key}>
+            <h2 id={slugify(cleanKey(key))} className={styles.pathName}>
+                <code>{cleanKey(key)}</code>
+            </h2>
+
+            {Object.entries(value).map(([key, value]) => (
+                <Method key={key} keyName={key} value={value} />
+            ))}
+        </div>
+    ))
+
+const BasePath = ({ host, basePath }) => (
+    <div className={styles.basePath}>
+        <code>
+            <span>{host}</span>
+            {basePath}
+        </code>
     </div>
 )
 
-Method.propTypes = {
-    keyName: PropTypes.string.isRequired,
-    value: PropTypes.object.isRequired
+BasePath.propTypes = {
+    host: PropTypes.string,
+    basePath: PropTypes.string
 }
 
 export default class ApiSwaggerTemplate extends Component {
@@ -80,7 +212,7 @@ export default class ApiSwaggerTemplate extends Component {
         const { location, data, pageContext } = this.props
         const sections = data.allSectionsYaml.edges
         const { api } = pageContext
-        const { host, basePath, info } = api
+        const { host, basePath, info, paths } = api
         const { title, description, version, license, contact } = info
 
         // output section title as defined in sections.yml
@@ -132,59 +264,17 @@ export default class ApiSwaggerTemplate extends Component {
                                 />
 
                                 {(contact || license) && (
-                                    <ul className={styles.swaggerMeta}>
-                                        {contact && (
-                                            <li>
-                                                <a
-                                                    href={`mailto:${
-                                                        contact.email
-                                                    }`}
-                                                >
-                                                    {contact.email}
-                                                </a>
-                                            </li>
-                                        )}
-                                        {license && (
-                                            <li>
-                                                <a href={license.url}>
-                                                    {license.name}
-                                                </a>
-                                            </li>
-                                        )}
-                                    </ul>
+                                    <SwaggerMeta
+                                        contact={contact}
+                                        license={license}
+                                    />
                                 )}
 
                                 {(host || basePath) && (
-                                    <div className={styles.basePath}>
-                                        <code>
-                                            <span>{host}</span>
-                                            {basePath}
-                                        </code>
-                                    </div>
+                                    <BasePath host={host} basePath={basePath} />
                                 )}
 
-                                {Object.entries(api.paths).map(
-                                    ([key, value]) => (
-                                        <div key={key}>
-                                            <h2
-                                                id={slugify(cleanKey(key))}
-                                                className={styles.pathName}
-                                            >
-                                                <code>{cleanKey(key)}</code>
-                                            </h2>
-
-                                            {Object.entries(value).map(
-                                                ([key, value]) => (
-                                                    <Method
-                                                        key={key}
-                                                        keyName={key}
-                                                        value={value}
-                                                    />
-                                                )
-                                            )}
-                                        </div>
-                                    )
-                                )}
+                                <Paths paths={paths} />
                             </article>
                         </main>
                     </Content>
