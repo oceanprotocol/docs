@@ -4,9 +4,8 @@
   },
   "info":{
     "title":"Brizo",
-    "version":"1.0"
+    "version":"0.1.2"
   },
-  "basePath": "/api/v1/brizo",
   "paths":{
     "/api/v1/brizo/services/access/initialize":{
       "post":{
@@ -174,8 +173,8 @@
           }
         ],
         "responses":{
-          "200":{
-            "description":"Download valid url."
+          "302":{
+            "description":"Redirect to valid asset url."
           },
           "400":{
             "description":"One of the required attributes is missed."

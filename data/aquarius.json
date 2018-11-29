@@ -6,7 +6,6 @@
     "title":"Aquarius",
     "version":"0.1.4"
   },
-  "basePath": "/api/v1/aquarius",
   "paths":{
     "/api/v1/aquarius/assets":{
       "get":{
@@ -202,8 +201,8 @@
           },
           {
             "description":"key or list of keys to sort the result",
-            "example": {
-              "value": 1
+            "example":{
+              "value":1
             },
             "in":"query",
             "name":"sort",
