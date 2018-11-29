@@ -39,19 +39,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions
 
-    //
-    // create redirects
-    //
-    redirects.forEach(({ from, to }) => {
-        createRedirect({
-            fromPath: from,
-            redirectInBrowser: true,
-            toPath: to
-        })
-
-        console.log('Create redirect: ' + from + ' --> ' + to)
-    })
-
     return new Promise((resolve, reject) => {
         resolve(
             graphql(
@@ -137,6 +124,19 @@ exports.createPages = ({ graphql, actions }) => {
                             }
                         })
                     })
+
+                //
+                // create redirects
+                //
+                redirects.forEach(({ from, to }) => {
+                    createRedirect({
+                        fromPath: from,
+                        redirectInBrowser: true,
+                        toPath: to
+                    })
+
+                    console.log('Create redirect: ' + from + ' --> ' + to)
+                })
 
                 resolve()
             })
