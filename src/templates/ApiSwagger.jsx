@@ -104,7 +104,7 @@ const Parameters = ({ parameters }) => (
             return (
                 <div className={styles.parameters} key={parameter.name}>
                     <h5>
-                        {name}
+                        <code>{name}</code>
                         {required && (
                             <span
                                 className={styles.parameterRequired}
@@ -190,6 +190,7 @@ const Paths = ({ paths }) =>
 
 const BasePath = ({ host, basePath }) => (
     <div className={styles.basePath}>
+        <h2>Base Path</h2>
         <code>
             <span>{host}</span>
             {basePath}
