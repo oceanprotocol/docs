@@ -83,8 +83,6 @@ const MetaTags = ({
 
         {title && <title>{title}</title>}
 
-        <meta name="robots" content="noindex, nofollow" />
-
         {/* General tags */}
         <meta name="description" content={description} />
         <meta name="image" content={image} />
