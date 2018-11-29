@@ -1,8 +1,11 @@
 {
+  "basePath":"/api/v1/brizo",
   "definitions":{
 
   },
+  "host":"myfancybrizo.com",
   "info":{
+    "description":"Brizo is the technical component executed by Publishers allowing them to provide extended data services. When running with our Docker images, it is exposed under `http://localhost:8030`.",
     "title":"Brizo",
     "version":"0.1.2"
   },

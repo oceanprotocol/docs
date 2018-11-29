@@ -1,8 +1,11 @@
 {
+  "basePath":"/api/v1/aquarius",
   "definitions":{
 
   },
+  "host":"myfancyaquarius.com",
   "info":{
+    "description":"Aquarius provides an off-chain database store for metadata about data assets. When running with our Docker images, it is exposed under `http://localhost:5000`.",
     "title":"Aquarius",
     "version":"0.1.4"
   },
@@ -15,7 +18,7 @@
             "description":"successful action"
           }
         },
-        "summary":"Get all assets ids.",
+        "summary":"Get all asset IDs.",
         "tags":[
           "ddo"
         ]
@@ -29,7 +32,7 @@
             "description":"successful action"
           }
         },
-        "summary":"Get ddo of all assets.",
+        "summary":"Get DDO of all assets.",
         "tags":[
           "ddo"
         ]
@@ -41,7 +44,7 @@
         "description":"",
         "parameters":[
           {
-            "description":"Asset ddo.",
+            "description":"DDO of the asset.",
             "in":"body",
             "name":"body",
             "required":true,
@@ -53,7 +56,7 @@
                   "type":"string"
                 },
                 "authentication":{
-                  "description":"List with the authentications.",
+                  "description":"List of authentication mechanisms.",
                   "example":[
                     {
                       "type":"RsaSignatureAuthentication2018"
@@ -70,7 +73,7 @@
                   "type":"string"
                 },
                 "publicKey":{
-                  "description":"List of publicKeys.",
+                  "description":"List of public keys.",
                   "example":[
                     {
                       "id":"did:op:123456789abcdefghi#keys-1"
@@ -173,7 +176,7 @@
             "description":"Asset successfully registered."
           },
           "400":{
-            "description":"One of the required attributes is missed."
+            "description":"One of the required attributes is missing."
           },
           "404":{
             "description":"Invalid asset data."
@@ -182,7 +185,7 @@
             "description":"Error"
           }
         },
-        "summary":"Register ddo of a new asset",
+        "summary":"Register DDO of a new asset",
         "tags":[
           "ddo"
         ]
@@ -200,7 +203,7 @@
             "type":"string"
           },
           {
-            "description":"key or list of keys to sort the result",
+            "description":"Key or list of keys to sort the result",
             "example":{
               "value":1
             },
@@ -228,7 +231,7 @@
             "description":"successful action"
           }
         },
-        "summary":"Get a list of ddo that match with the text.",
+        "summary":"Get a list of DDOs that match with the given text.",
         "tags":[
           "ddo"
         ]
@@ -264,7 +267,7 @@
                   "type":"string"
                 },
                 "sort":{
-                  "description":"key or list of keys to sort the result",
+                  "description":"Key or list of keys to sort the result",
                   "example":{
                     "value":1
                   },
@@ -280,7 +283,7 @@
             "description":"successful action"
           }
         },
-        "summary":"Get a list of ddo that match with the query executed.",
+        "summary":"Get a list of DDOs that match with the executed query.",
         "tags":[
           "ddo"
         ]
@@ -294,7 +297,7 @@
         "description":"",
         "parameters":[
           {
-            "description":"Asset ddo.",
+            "description":"DDO of the asset.",
             "in":"body",
             "name":"body",
             "required":true,
@@ -306,7 +309,7 @@
                   "type":"string"
                 },
                 "authentication":{
-                  "description":"List with the authentications.",
+                  "description":"List of authentication mechanisms.",
                   "example":[
                     {
                       "type":"RsaSignatureAuthentication2018"
@@ -323,7 +326,7 @@
                   "type":"string"
                 },
                 "publicKey":{
-                  "description":"List of publicKeys.",
+                  "description":"List of public keys.",
                   "example":[
                     {
                       "id":"did:op:123456789abcdefghi#keys-1"
@@ -381,13 +384,14 @@
                           "license":"CC-BY",
                           "links":[
                             {
-                              "sample1":"http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/"
+                              "name":"Sample of Asset Data",
+                              "type":"sample",
+                              "url":"https://foo.com/sample.csv"
                             },
                             {
-                              "sample2":"http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-averages-25km/"
-                            },
-                            {
-                              "fieldsDescription":"http://data.ceda.ac.uk/badc/ukcp09/"
+                              "AssetID":"4d517500da0acb0d65a716f61330969334630363ce4a6a9d39691026ac7908ea",
+                              "name":"Data Format Definition",
+                              "type":"format"
                             }
                           ],
                           "name":"UK Weather information 2011",
@@ -400,10 +404,10 @@
                         "curation":{
                           "numVotes":123,
                           "rating":0.93,
-                          "schema":"Binary Votting"
+                          "schema":"Binary Voting"
                         }
                       },
-                      "serviceEndpoint":"http://myaquarius.org/api/v1/provider/assets/metadata/{did}",
+                      "serviceEndpoint":"http://myaquarius.org/api/v1/aquarius/assets/metadata/{did}",
                       "type":"Metadata"
                     }
                   ],
@@ -429,7 +433,7 @@
             "description":"Asset successfully registered."
           },
           "400":{
-            "description":"One of the required attributes is missed."
+            "description":"One of the required attributes is missing."
           },
           "404":{
             "description":"Invalid asset data."
@@ -438,7 +442,7 @@
             "description":"Error"
           }
         },
-        "summary":"Update ddo of an existing asset",
+        "summary":"Update DDO of an existing asset",
         "tags":[
           "ddo"
         ]
@@ -461,7 +465,7 @@
             "description":"successfully deleted"
           },
           "404":{
-            "description":"This asset id is not in OceanDB"
+            "description":"This asset ID is not in OceanDB"
           },
           "500":{
             "description":"Error"
@@ -488,10 +492,10 @@
             "description":"successful operation"
           },
           "404":{
-            "description":"This asset id is not in OceanDB"
+            "description":"This asset ID is not in OceanDB"
           }
         },
-        "summary":"Get ddo of a particular asset.",
+        "summary":"Get DDO of a particular asset.",
         "tags":[
           "ddo"
         ]
@@ -511,10 +515,10 @@
         ],
         "responses":{
           "200":{
-            "description":"successful operation"
+            "description":"successful operation."
           },
           "404":{
-            "description":"This asset id is not in OceanDB"
+            "description":"This asset ID is not in OceanDB."
           }
         },
         "summary":"Get metadata of a particular asset",
