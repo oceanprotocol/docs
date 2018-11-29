@@ -128,7 +128,12 @@ module.exports = {
         },
         'gatsby-plugin-catch-links',
         'gatsby-plugin-react-helmet',
-        'gatsby-plugin-sitemap',
+        {
+            resolve: 'gatsby-plugin-sitemap',
+            options: {
+                exclude: ['/test/']
+            }
+        },
         {
             resolve: 'gatsby-plugin-manifest',
             options: {

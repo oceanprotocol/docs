@@ -1,5 +1,8 @@
+/* eslint-disable no-console */
+
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { redirects } = require('./config')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
@@ -34,7 +37,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 exports.createPages = ({ graphql, actions }) => {
-    const { createPage } = actions
+    const { createPage, createRedirect } = actions
 
     return new Promise((resolve, reject) => {
         resolve(
@@ -121,6 +124,19 @@ exports.createPages = ({ graphql, actions }) => {
                             }
                         })
                     })
+
+                //
+                // create redirects
+                //
+                redirects.forEach(({ from, to }) => {
+                    createRedirect({
+                        fromPath: from,
+                        redirectInBrowser: true,
+                        toPath: to
+                    })
+
+                    console.log('Create redirect: ' + from + ' --> ' + to)
+                })
 
                 resolve()
             })
