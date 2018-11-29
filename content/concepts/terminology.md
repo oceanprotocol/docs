@@ -23,7 +23,7 @@ Note: Initially, most publishers will also be the owners of the data assets they
 
 Someone who wants assets. An example is a data scientist working at an economic think tank.
 
-## Marketplace or Tribe
+## Marketplace
 
 A service where publishers can list what assets they have, and consumers can see what's available then buy it (or get it for free). The Ocean network supports many marketplaces/tribes.
 
