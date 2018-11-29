@@ -31,6 +31,10 @@ module.exports = {
         {
             from: '/tutorials/',
             to: '/tutorials/introduction/'
+        },
+        {
+            from: '/references/',
+            to: '/references/introduction/'
         }
     ]
 }
