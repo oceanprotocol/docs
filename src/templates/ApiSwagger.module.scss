@@ -64,8 +64,9 @@
     margin-bottom: $spacer / 4;
     margin-top: 0;
     display: inline-block;
-    padding: $spacer / 8 $spacer / 4;
+    padding: $spacer / 8 $spacer / 3;
     border-radius: $border-radius;
+    text-transform: uppercase;
 
     &[data-type='get'] {
         background: rgba($green, .4);
