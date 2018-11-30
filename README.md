@@ -2,7 +2,7 @@
 
 <h1 align="center">docs</h1>
 
-> 🐍 Ocean Protocol's official documentation.
+> 🐍 Ocean Protocol's official documentation. https://docs.oceanprotocol.com
 
 [![Build Status](https://travis-ci.com/oceanprotocol/docs.svg?token=3psqw6c8KMDqfdGQ2x6d&branch=master)](https://travis-ci.com/oceanprotocol/docs)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-7b1173.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -27,6 +27,9 @@
   - [Repositories](#repositories)
     - [Add Links to a Repository](#add-links-to-a-repository)
     - [Release Versions](#release-versions)
+  - [API & Library References](#api--library-references)
+    - [Swagger specs](#swagger-specs)
+    - [TypeDoc specs](#typedoc-specs)
 - [Development](#development)
   - [Using npm](#using-npm)
   - [Using Docker](#using-docker)
@@ -186,6 +189,33 @@ The GitHub link is automatically added for every repository and will always be d
 
 The displayed version number is based on the tag name of the latest release for a given repository. That means only GitHub releases will trigger a version number update, creating a new Git tag alone is not sufficient.
 
+### API & Library References
+
+You can add more Markdown documents under `/content/references/`, link to them from the [`/data/sidebars/references.yml`](./data/sidebars/references.yml), and they will appear just like in all the other sections.
+
+But the actual reference pages in this section are constructed from data files during site build (as defined in [`gatsby-node.js`](./gatsby-node.js)) with their own little rules. Generally, you can't edit their content within this site, you have to go to the respective repository and edit the documentation strings living with the source code.
+
+The sidebar for those generated reference pages will automatically switch to include the table of contents of those pages so no need to define additional links in the [`/data/sidebars/references.yml`](./data/sidebars/references.yml) file for them.
+
+#### Swagger specs
+
+Reference pages based on Swagger specs are sourced from a Swagger spec `json` file, at the moment they simply live as manual copies under `/data/`:
+
+- [`aquarius.json`](./data/aquarius.json)
+- [`brizo.json`](./data/brizo.json)
+
+There's no automation setup around updating those files so [until this is setup](https://github.com/oceanprotocol/docs/issues/74), they need to be manually updated with copy & paste, like they did in the middle ages. You can copy them from a running instance of Aquarius or Brizo which will expose those spec files, e.g. under `localhost:5000/spec` for Aquarius and `localhost:8030/spec` for Brizo.
+
+For more information about stylistic issues, take a look at the section in the test page:
+
+- [Swagger spec references](https://docs.oceanprotocol.com/test#swagger-spec-references)
+
+#### TypeDoc specs
+
+Reference pages based on generated `json` file from TypeDoc.
+
+_Coming soon... see [#45](https://github.com/oceanprotocol/docs/issues/45)_
+
 ## Development
 
 The site is a React app built with [Gatsby](https://www.gatsbyjs.org).
@@ -198,8 +228,8 @@ This Git repo has [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Subm
    git clone --recurse-submodules git@github.com:oceanprotocol/docs.git
    ```
 
-1. Don't edit anything in the submodules (i.e. in `external/`). Instead, edit it over in the other Git repository and merge your changes over there.
-1. Get all the submodules up-to-date using:
+2. Don't edit anything in the submodules (i.e. in `external/`). Instead, edit it over in the other Git repository and merge your changes over there.
+3. Get all the submodules up-to-date using:
 
    ```bash
    git submodule update --remote --recursive
@@ -207,7 +237,7 @@ This Git repo has [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Subm
 
    That will get each submodule up-to-date with the HEAD commit of some branch in a remote repository. Which branch? That's set in the `.gitmodules` file. You can check the current commit hashes of all the submodules using `git submodule status`
 
-1. Before doing any `git checkout ...` or other normal Git operations, do this:
+4. Before doing any `git checkout ...` or other normal Git operations, do this:
 
    ```bash
    git config --global submodule.recurse true
