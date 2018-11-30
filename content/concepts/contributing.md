@@ -42,6 +42,11 @@ For instructions on how to contribute to our main documentation site, check out 
 
 See the page about [bounties](/concepts/bounties/).
 
+## Become an Ocean Protocol Ambassador
+
+- [Read the announcement of the Ocean Protocol Ambassador Program](https://blog.oceanprotocol.com/envoys-of-the-new-data-economy-ocean-protocol-ambassadors-3816a0e63611)
+- [Apply to become an ambassador](https://oceanprotocol.com/#ambassadors)
+
 ## Help Develop Core Ocean Software
 
 Right now, we're not really set up to accept core code contributions from external developers, except via the bounties mentioned above. In the future, we hope to have policies and processes that empower anyone to contribute.
