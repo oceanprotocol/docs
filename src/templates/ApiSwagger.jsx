@@ -60,6 +60,21 @@ SwaggerMeta.propTypes = {
 }
 
 const ParameterExample = ({ properties }) => (
+    //
+    // HEADS UP!
+    //
+    // Constructing the example request body here based on the defined properties
+    // where `key` is the name of the property, and `properties[key].example` is
+    // the value for it.
+    //
+    // Making prism.js pick up on the strings only output didn't work out so well
+    // so the spans and classes this plugin would add are added manually here. Since we
+    // include the prism css file globally this is picked up by that.
+    //
+    // But this can only work if all keys and values are manually constructed here, which
+    // is almost impossible to do for deep nested objects or arrays as example value. Running
+    // that code through `JSON.stringify` won't syntax highlight that part of the code.
+    //
     <pre className="language-json">
         <code className="language-json">
             {'{'}
