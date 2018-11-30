@@ -15,8 +15,13 @@ There's a [tutorial about how to get set up to use a testnet](/tutorials/use-a-t
 
 ## Ocean Testnet
 
-The Ocean Testnet is similar to the Kovan Testnet, except all the nodes are operated by the Ocean Protocol Foundation. The Ocean Protocol [keeper contracts](https://github.com/oceanprotocol/keeper-contracts) (smart contracts) are deployed there.
+The Ocean Testnet (also called the Ocean POA Testnet) is similar to the Kovan Testnet, except all the nodes are operated by the Ocean Protocol Foundation. The Ocean Protocol [keeper contracts](https://github.com/oceanprotocol/keeper-contracts) (smart contracts) are deployed there.
 
 Moreover, there is a [Secret Store](/concepts/components/#secret-store) operated by the Ocean Protocol Foundation which is connected to the Ocean Testnet: the Ocean Secret Store.
 
 For now, there's no easy way to get Ether for the Ocean Testnet, so we recommend using the Kovan Testnet (for now).
+
+## Technical Details about the Public Testnets
+
+- [Details about the Ocean Testnet](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/devops/secret-store-cluster.md) (which is called the "Parity Secret Store Cluster" on that page).
+- [Addresses of the keeper contracts](https://github.com/oceanprotocol/keeper-contracts#testnet-deployment) (smart contracts) deployed in the public testnets (and more).
