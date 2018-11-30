@@ -4,6 +4,8 @@
       link: /tutorials/introduction/
     - title: How to Use a Testnet
       link: /tutorials/use-a-testnet/
+    - title: Create Azure Credentials for Brizo
+      link: /tutorials/azure-for-brizo/
 
 - group: Publish
   items:
