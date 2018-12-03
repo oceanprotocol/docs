@@ -7,7 +7,6 @@
     -webkit-overflow-scrolling: touch;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    padding-right: $spacer;
     display: flex;
 
     @media (min-width: $break-point--medium) {
@@ -31,10 +30,12 @@
                 margin-left: 0;
             }
         }
+    }
 
-        &:last-child {
-            margin-right: $spacer * 1.4;
-        }
+    // add final right margin
+    &:after {
+        content: '';
+        flex: 0 0 $spacer * 2;
     }
 
     // custom scrollbar
