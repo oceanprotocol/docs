@@ -35,7 +35,7 @@
     // add final right margin
     &:after {
         content: '';
-        flex: 0 0 $spacer * 2;
+        flex: 0 0 $spacer;
     }
 
     // custom scrollbar
@@ -46,8 +46,8 @@
 
     &::-webkit-scrollbar {
         opacity: 0;
-        width: 6px;
-        height: 6px;
+        width: 7px;
+        height: 7px;
         transition: opacity .2s ease-out;
     }
 
