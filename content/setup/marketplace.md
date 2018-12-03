@@ -5,12 +5,19 @@ description: Set up and run a data marketplace in the Ocean network.
 
 If you want to set up and run a marketplace in the Ocean network, then at a technical level, you must:
 
+1. Have [Data Assets](/concepts/terminology/#asset-or-data-asset) to offer in your marketplace.
 1. Develop a marketplace application (app).
-2. Run your marketplace app in production.
+1. Run your marketplace app in production.
 
 **Note 1: At the time of writing (late November 2018), it was _possible_ to start developing a marketplace, but very challenging. We anticipate that it will become much easier in December 2018, especially once the docker-images scripts and Docker Compose files are refactored.**
 
 **Note 2: In the early days of the Ocean network, there won't be many marketplaces or publishers, so marketplaces will often also act as publishers.**
+
+## Prepare Data Assets
+
+At the time of writing, the only kind of [data assets](/concepts/terminology/#asset-or-data-asset) supported by Ocean Protocol were datasets stored in Azure Storage. See [the tutorial about setting up Azure Storage to work with Ocean Protocol](/tutorials/azure-for-brizo/).
+
+Support for other kinds of data assets (e.g. storage in AWS, computing in Azure) is coming soon.
 
 ## Develop a Marketplace App
 
@@ -41,11 +48,11 @@ Of course, you could always write your own Squid library in the language of your
 
 ## Run Your Marketplace App in Production
 
-Before running your marketplace app in production with the Ocean Mainnet, you may want to test it with an Ocean Testnet.
-The Ocean Testnets are similar to the Ocean Mainnet.
-The main difference is that there is less risk on the Ocean Testnets.
+Before running your marketplace app in production with the Ocean Mainnet, you may want to test it with an Ocean testnet.
+The Ocean testnets are similar to the Ocean Mainnet.
+The main difference is that there is less risk on the Ocean testnets.
 
-**Note: At the time of writing, the Ocean Mainnet hadn't gone live yet, but the testnets were about to go live. See [the page about testnets](/concepts/testnets/).**
+**Note: At the time of writing, the Ocean Mainnet hadn't gone live yet, but the Ocean testnets were about to go live. See [the page about Ocean testnets](/concepts/testnets/).**
 
 Of course, there are many other things that must be handled for live production apps:
 
