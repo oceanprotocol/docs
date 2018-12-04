@@ -28,9 +28,19 @@ You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see 
 
 At the time of writing, there was no easy way to get Ether for the Ocean Testnet.
 
-### Get Ether for a Local Testnet
+### Get Ether for a Local Ganache-Based Testnet
 
-If you're running a local testnet, then it creates several accounts at network launch time, and gives each of them some Ether. The addresses and private keys of those accounts should be shared (to logs or the console) during the launch process. You can use those accounts and their Ether.
+If you're running a local Ganache-based testnet, then it creates several accounts at network launch time, and gives each of them some Ether. The addresses and private keys of those accounts should be shared (to logs or the console) during the launch process. You can use those accounts and their Ether.
+
+### Get Ether for a Local Parity-Ethereum-Based Testnet
+
+If you're running a local Parity-Ethereum-based testnet based on [docker-images](https://github.com/oceanprotocol/docker-images), then you can send some Ether to `<YOUR ADDRESS>` using the command:
+
+```bash
+curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545
+```
+
+That command uses [Ethereum's JSON RPC API](https://wiki.parity.io/JSONRPC.html). You can also create a new account using the Parity Ethereum CLI. See [the Parity Ethereum CLI documentation](https://wiki.parity.io/CLI-Sub-commands).
 
 ## Get Ocean Tokens
 
