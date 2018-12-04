@@ -2,9 +2,9 @@
   items:
     - title: Introduction
       link: /tutorials/introduction/
-    - title: How to Use a Testnet
-      link: /tutorials/use-a-testnet/
-    - title: Create Azure Credentials for Brizo
+    - title: Get Ether and Ocean Tokens for Testnets
+      link: /tutorials/get-ether-and-ocean-tokens/
+    - title: Set Up Azure Storage
       link: /tutorials/azure-for-brizo/
 
 - group: Publish
