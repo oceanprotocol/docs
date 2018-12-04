@@ -7,7 +7,12 @@ const SidebarLink = ({ link, title, linkClasses }) => {
     if (link) {
         if (link.match(/^\s?http(s?)/gi)) {
             return (
-                <a href={link} target="_blank" rel="noopener noreferrer">
+                <a
+                    href={link}
+                    className={linkClasses}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {title}
                 </a>
             )
@@ -23,40 +28,103 @@ const SidebarLink = ({ link, title, linkClasses }) => {
     }
 }
 
-const SidebarList = ({ items, location }) => (
-    <ul className={styles.list}>
-        {items.map((item, j) => (
-            <li key={j}>
-                <SidebarLink
-                    link={item.link}
-                    title={item.title}
-                    linkClasses={
-                        item.link === location.pathname
-                            ? styles.active
-                            : styles.link
-                    }
-                />
-            </li>
-        ))}
-    </ul>
+SidebarLink.propTypes = {
+    link: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    linkClasses: PropTypes.string
+}
+
+const SidebarList = ({ items, location, toc, tableOfContents }) => (
+    <div className={styles.list}>
+        {toc ? (
+            <div
+                className={styles.toc}
+                dangerouslySetInnerHTML={{ __html: tableOfContents }}
+            />
+        ) : (
+            <ul>
+                {items.map((item, j) => (
+                    <li key={j}>
+                        <SidebarLink
+                            link={item.link}
+                            title={item.title}
+                            linkClasses={
+                                item.link === location.pathname
+                                    ? styles.active
+                                    : styles.link
+                            }
+                        />
+                    </li>
+                ))}
+            </ul>
+        )}
+    </div>
+)
+
+SidebarList.propTypes = {
+    items: PropTypes.array.isRequired,
+    location: PropTypes.object.isRequired,
+    toc: PropTypes.bool,
+    tableOfContents: PropTypes.string
+}
+
+const SidebarGroupTitle = ({ group }) => (
+    <h4 className={styles.groupTitle}>
+        {group.items[0].link ? (
+            <SidebarLink
+                link={group.items[0].link}
+                title={group.group}
+                linkClasses={styles.groupTitleLink}
+            />
+        ) : (
+            group.group
+        )}
+    </h4>
+)
+
+SidebarGroupTitle.propTypes = {
+    group: PropTypes.object.isRequired
+}
+
+const SidebarGroup = ({ i, group, location, ...props }) => (
+    <>
+        <SidebarGroupTitle group={group} />
+        <SidebarList
+            key={i}
+            items={group.items}
+            location={location}
+            {...props}
+        />
+    </>
 )
 
 export default class Sidebar extends Component {
     static propTypes = {
         sidebar: PropTypes.string,
-        location: PropTypes.object.isRequired
+        location: PropTypes.object.isRequired,
+        collapsed: PropTypes.bool,
+        toc: PropTypes.bool,
+        tableOfContents: PropTypes.string
     }
 
-    static defaultProps = {
-        location: { pathname: `/` }
-    }
+    static defaultProps = { location: { pathname: '/' } }
 
     render() {
-        const { sidebar, location } = this.props
+        const {
+            sidebar,
+            location,
+            collapsed,
+            toc,
+            tableOfContents
+        } = this.props
 
-        const sidebarfile = sidebar
-            ? require(`../../data/sidebars/${sidebar}.yml`) // eslint-disable-line
-            : []
+        if (sidebar) {
+            try {
+                var sidebarfile = require(`../../data/sidebars/${sidebar}.yml`) // eslint-disable-line
+            } catch (e) {
+                throw e
+            }
+        }
 
         if (!sidebarfile) {
             return null
@@ -66,36 +134,30 @@ export default class Sidebar extends Component {
             <nav className={styles.sidebar}>
                 {sidebarfile.map((group, i) => (
                     <div key={i}>
-                        <h4 className={styles.groupTitle}>
-                            {group.items[0].link ? (
-                                <SidebarLink
-                                    link={group.items[0].link}
-                                    title={group.group}
-                                    linkClasses={styles.groupTitleLink}
+                        {collapsed ? (
+                            group.items.some(
+                                item => item.link === location.pathname
+                            ) ? (
+                                <SidebarGroup
+                                    i={i}
+                                    group={group}
+                                    location={location}
+                                    toc={toc}
+                                    tableOfContents={tableOfContents}
                                 />
                             ) : (
-                                group.group
-                            )}
-                        </h4>
-                        <SidebarList
-                            key={i}
-                            items={group.items}
-                            location={location}
-                        />
+                                <SidebarGroupTitle group={group} />
+                            )
+                        ) : (
+                            <SidebarGroup
+                                i={i}
+                                group={group}
+                                location={location}
+                            />
+                        )}
                     </div>
                 ))}
             </nav>
         )
     }
-}
-
-SidebarLink.propTypes = {
-    link: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    linkClasses: PropTypes.string
-}
-
-SidebarList.propTypes = {
-    items: PropTypes.array.isRequired,
-    location: PropTypes.object.isRequired
 }

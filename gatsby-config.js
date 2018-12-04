@@ -131,7 +131,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-sitemap',
             options: {
-                exclude: ['/test/']
+                exclude: ['/test/', '/references/petstore/']
             }
         },
         {
