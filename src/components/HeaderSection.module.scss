@@ -22,6 +22,10 @@
     :global(.tutorials) & {
         color: $orange;
     }
+
+    :global(.references) & {
+        color: $green;
+    }
 }
 
 .rootLink {

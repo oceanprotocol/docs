@@ -8,9 +8,13 @@
     - name: aquarius
       links:
         - name: API reference
-          url: https://github.com/oceanprotocol/aquarius/blob/develop/docs/for_api_users/API.md
+          url: /references/aquarius/
 
     - name: brizo
+      links:
+        - name: API reference
+          url: /references/brizo/
+
     - name: pleuston
 
 - group: Libraries

@@ -13,8 +13,7 @@
   link: /tutorials/introduction/
   color: orange
 
-- title: API References
-  #description: Get the API references for all relevant components.
-  description: Coming soon.
-  #link: /api/introduction/
+- title: API & Library References
+  description: Get the references for REST APIs and library methods for all relevant components.
+  link: /references/introduction/
   color: green
