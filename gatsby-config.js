@@ -70,6 +70,16 @@ module.exports = {
             options: {
                 plugins: [
                     {
+                        resolve: 'gatsby-remark-draw',
+                        options: {
+                            strategy: 'img',
+                            mermaid: {
+                                theme: 'default',
+                                backgroundColor: 'transparent'
+                            }
+                        }
+                    },
+                    {
                         resolve: 'gatsby-remark-images',
                         options: {
                             maxWidth: 666,

@@ -33,6 +33,7 @@
 - [Development](#development)
   - [Using npm](#using-npm)
   - [Using Docker](#using-docker)
+  - [Working with Git submodules](#working-with-git-submodules)
 - [Linting & Formatting](#linting--formatting)
   - [Editor Setup: VS Code](#editor-setup-vs-code)
 - [GitHub Data Fetching](#github-data-fetching)
@@ -113,8 +114,9 @@ Note: The `description` value will be rendered on-page below the title, and it w
    - when linking from external repos, to the _full absolute URL_, such as `https://docs.oceanprotocol.com/hello/you-are-awesome/`
 4. no TOC please, this will be generated automatically from all headings
 5. for images and media, you can keep them in the original repo. Images will be automatically grabbed by the docs site on querying. When doing that, docs site will generate all sorts of image sizes to handle proper responsive images, so no need to keep an eye on image dimensions or file sizes
+6. Additionally, support for various other things were added, like inline video, diagrams and charts, etc.
 
-**Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in all Markdown files included in docs site.**
+**✨✨ Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in all Markdown files included in docs site. ✨✨**
 
 ### Adding Docs
 
@@ -213,32 +215,7 @@ To update the specs to the most recent version, the `./external/squid-js` submod
 
 ## Development
 
-The site is a React app built with [Gatsby](https://www.gatsbyjs.org).
-
-This Git repo has [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). They are the subdirectories of `external/`. Each one is basically another Git repo, i.e. an external Git repo that just _looks_ like it's part of this Git repo. It's very easy to get Git into a confusing state when there are submodules. If you follow the following tips, you should probably be okay:
-
-1. Clone this repo using:
-
-   ```bash
-   git clone --recurse-submodules git@github.com:oceanprotocol/docs.git
-   ```
-
-2. Don't edit anything in the submodules (i.e. in `external/`). Instead, edit it over in the other Git repository and merge your changes over there.
-3. Get all the submodules up-to-date using:
-
-   ```bash
-   git submodule update --remote --recursive
-   ```
-
-   That will get each submodule up-to-date with the HEAD commit of some branch in a remote repository. Which branch? That's set in the `.gitmodules` file. You can check the current commit hashes of all the submodules using `git submodule status`
-
-4. Before doing any `git checkout ...` or other normal Git operations, do this:
-
-   ```bash
-   git config --global submodule.recurse true
-   ```
-
-   That's like adding the `--recurse-submodules` option to all those Git commands (except for `git clone`) so you don't have to.
+The site is a React app built with [Gatsby](https://www.gatsbyjs.org). You can either work against your local system, or use Docker.
 
 ### Using npm
 
@@ -247,6 +224,7 @@ As a prerequisite, you'll need the following on your machine:
 - Node.js
 - npm
 - Your `GITHUB_TOKEN`, see [GitHub GraphQL API](#github-graphql-api)
+- Graphviz
 
 Clone this repo, install all dependencies, and start the development server:
 
@@ -257,6 +235,9 @@ cd docs/
 # add GITHUB_TOKEN
 cp .env.sample .env
 vi .env
+
+# macOS: install Graphviz binary
+brew install graphviz
 
 npm i
 npm start
@@ -285,7 +266,30 @@ vi .env
 docker-compose up
 ```
 
-This will expose a hot-reloading server under [localhost:8000](http://localhost:8000).
+This will expose a hot-reloading server under [localhost:8000](http://localhost:8000), mapped to your working directory.
+
+### Working with Git submodules
+
+This Git repo has [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). They are the subdirectories of `external/`.
+
+Each one is basically another Git repo, i.e. an external Git repo that just _looks_ like it's part of this Git repo. It's very easy to get Git into a confusing state when there are submodules. If you follow the following tips, you should probably be okay:
+
+1. Unless you want to update the submodule, don't touch it. If git shows the submodule path as changed, just revert it.
+1. Don't edit anything in the submodules (i.e. in `external/`). Instead, edit it over in the other Git repository and merge your changes over there.
+1. Get all the submodules up-to-date using:
+
+   ```bash
+   git submodule update --remote --recursive
+   ```
+
+   That will get each submodule up-to-date with the HEAD commit of some branch in a remote repository. Which branch? That's set in the `.gitmodules` file. You can check the current commit hashes of all the submodules using `git submodule status`. After doing that you probably want to commit the submodule update.
+1. Before doing any `git checkout ...` or other normal Git operations, do this:
+
+   ```bash
+   git config --global submodule.recurse true
+   ```
+
+   That's like adding the `--recurse-submodules` option to all those Git commands (except for `git clone`) so you don't have to.
 
 ## Linting & Formatting
 

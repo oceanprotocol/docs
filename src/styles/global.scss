@@ -332,3 +332,12 @@ samp {
 .anchor {
     margin-top: .6rem;
 }
+
+// gatsby-remark-draw rendered images
+img[title~='remark-draw'] {
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    padding-bottom: $spacer;
+    overflow: hidden;
+}

@@ -403,3 +403,175 @@ Many Swagger fields like the description (`info.description`) are rendered throu
 For a complete overview of everything supported by Swagger and implemented in this site, take a look at the hidden Pet Store example:
 
 - [Pet Store Example](/references/pet-store/)
+
+## Diagrams
+
+We use [gatsby-remark-draw](https://github.com/rhanekom/gatsby-remark-draw) to get diagrams drawn from text rendered into SVG images on build time. With that plugin we get support for graphs done with:
+
+- [Mermaid](https://mermaidjs.github.io)
+- [Graphviz](https://www.graphviz.org)
+- SvgBobRus (no support on this site yet)
+
+### Mermaid
+
+To use Mermaid graphs in your Markdown documents add the diagram instructions into a code block set to language `mermaid-svg`. Those code blocks will be replaced by the rendered image.
+
+Examples taken from the [Mermaid repository](https://github.com/knsv/mermaid). See [more demos](https://mermaidjs.github.io/demos.html).
+
+#### Flowchart
+
+- [Mermaid.js: Flowcharts](https://mermaidjs.github.io/flowchart.html)
+
+```text
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```mermaid-svg
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+#### Sequence diagram
+
+- [Mermaid.js: Sequence diagrams](https://mermaidjs.github.io/sequenceDiagram.html)
+
+```text
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+```
+
+```mermaid-svg
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+```
+
+#### Gantt diagram
+
+- [Mermaid.js: Gantt diagrams](https://mermaidjs.github.io/gantt.html)
+
+```text
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```
+
+```mermaid-svg
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```
+
+#### Class diagram
+
+```text
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+```
+
+```mermaid-svg
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+```
+
+### Graphviz
+
+To use Graphviz graphs in your Markdown documents add the diagram instructions into a code block set to language `dot-svg`. Those code blocks will be replaced by the rendered image.
+
+More [Graphviz demos](https://graphviz.gitlab.io/gallery/).
+
+```text
+graph G {
+	run -- intr;
+	intr -- runbl;
+	runbl -- run;
+	run -- kernel;
+	kernel -- zombie;
+	kernel -- sleep;
+	kernel -- runmem;
+	sleep -- swap;
+	swap -- runswap;
+	runswap -- new;
+	runswap -- runmem;
+	new -- runmem;
+	sleep -- runmem;
+}
+```
+
+```dot-svg
+graph G {
+	run -- intr;
+	intr -- runbl;
+	runbl -- run;
+	run -- kernel;
+	kernel -- zombie;
+	kernel -- sleep;
+	kernel -- runmem;
+	sleep -- swap;
+	swap -- runswap;
+	runswap -- new;
+	runswap -- runmem;
+	new -- runmem;
+	sleep -- runmem;
+}
+```

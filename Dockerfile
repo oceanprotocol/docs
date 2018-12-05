@@ -7,6 +7,7 @@ RUN apk update && \
     make \
     bash \
     python \
+    graphviz \
     && rm -rf /var/cache/apk/*
 
 RUN mkdir -p /docs
