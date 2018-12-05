@@ -20,3 +20,12 @@
       link: /tutorials/get-use-data-set/
     - title: Get & Use a Compute Service
       link: /tutorials/get-use-compute-service/
+
+- group: React app
+  items:
+    - title: Setup
+      link: /tutorials/react-setup/
+    - title: Publish a Data Set
+      link: /tutorials/react-publish-data-set/
+    - title: Get & Use a Data Set
+      link: /tutorials/react-get-use-data-set/
