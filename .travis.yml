@@ -3,6 +3,12 @@ language: node_js
 node_js:
   - '11'
 
+addons:
+  apt:
+    update: true
+    packages:
+      - graphviz
+
 # will run `npm install` automatically here
 
 # Deploying uses awscli and it uses Python.
