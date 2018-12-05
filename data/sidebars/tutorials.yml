@@ -7,21 +7,7 @@
     - title: Set Up Azure Storage
       link: /tutorials/azure-for-brizo/
 
-- group: Publish
-  items:
-    - title: Publish a Data Set
-      link: /tutorials/publish-data-set/
-    - title: Publish a Compute Service
-      link: /tutorials/publish-compute-service/
-
-- group: Consume
-  items:
-    - title: Get & Use a Data Set
-      link: /tutorials/get-use-data-set/
-    - title: Get & Use a Compute Service
-      link: /tutorials/get-use-compute-service/
-
-- group: React app
+- group: React App Tutorial
   items:
     - title: Setup
       link: /tutorials/react-setup/
