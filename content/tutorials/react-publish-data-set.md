@@ -9,7 +9,7 @@ This is continuation of the [React App Setup](/tutorials/react-setup) tutorial, 
 
 ## Adding Publishing
 
-1. Open `src/App.js` in your marketplace dapp from the [React App Setup](/tutorials/react-setup) tutorial.
+1. Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup) tutorial.
 2. First lets add asset that we want to publish. To do that we need to add the following code after `window.ethereum.enable()` line.
 
    ```javascript
@@ -60,7 +60,7 @@ This is continuation of the [React App Setup](/tutorials/react-setup) tutorial, 
      }
    ```
 
-4. Last thing we need is button to start our registration inside render function just after `<h1>Marketplace dapp</h1>`
+4. Last thing we need is button to start our registration inside render function just after `<h1>Marketplace app</h1>`
 
    ```jsx
    <button onClick={() => this.submitAsset()}>Register asset</button>
@@ -136,7 +136,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Marketplace dapp</h1>
+        <h1>Marketplace app</h1>
         <button onClick={() => this.submitAsset()}>Register asset</button>
       </div>
     )

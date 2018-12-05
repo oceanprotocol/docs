@@ -7,16 +7,16 @@ This tutorial shows how you can build a basic [React](https://reactjs.org/) app 
 
 ## Requirements
 
-- `nodejs` >= 10 installed. (You can check using `node -v`.)
-- `npm` >= 5.2 installed. (You can check using `npm -v`.)
-- [oceanprotocol/docker-images](https://github.com/oceanprotocol/docker-images) running, but with _Pleuston not running_. (Pleuston is another React app.)
-- A browser with [MetaMask](https://metamask.io/) and some Ether in your account (for the network you're connected to). See [the tutorial about getting Ether and Ocean Tokens for testnets](/tutorials/get-ether-and-ocean-tokens/).
+- `nodejs` >= 10 is installed. You can check using `node -v`
+- `npm` >= 5.2 is installed. You can check using `npm -v`
+- Running all the services started by `./start_ocean.sh --no-pleuston --local-pond-node` in [oceanprotocol/docker-images](https://github.com/oceanprotocol/docker-images) running with
+- Using browser with [MetaMask](https://metamask.io/) and some Ether in your account (for the network you're connected to). See [the tutorial about getting Ether and Ocean Tokens for testnets](/tutorials/get-ether-and-ocean-tokens/).
 
 ## Tutorial Steps
 
 1. Run `npx create-react-app marketplace` in you terminal. This will create a folder named `marketplace` with a boilerplate React app.
-2. Move to your dapp directory with `cd marketplace` and run `yarn add @oceanprotocol/squid web3`. This adds OceanProtocol and Web3 packages to the dapp.
-3. At this point you can already run `yarn start` which starts the dapp in your browser at [localhost:3000](http://localhost:3000).
+2. Move to your app directory with `cd marketplace` and run `yarn add @oceanprotocol/squid web3`. This adds the OceanProtocol and Web3 packages to the app.
+3. At this point you can already run `yarn start` which starts the app in your browser at [localhost:3000](http://localhost:3000).
 4. To clear the React spinning icon, open `src/App.js` and modify the source to:
 
    ```javascript
@@ -26,7 +26,7 @@ This tutorial shows how you can build a basic [React](https://reactjs.org/) app 
      render() {
        return (
          <div className="App">
-           <h1>Marketplace dapp</h1>
+           <h1>Marketplace app</h1>
          </div>
        )
      }
@@ -64,7 +64,7 @@ This tutorial shows how you can build a basic [React](https://reactjs.org/) app 
 
 ## Finished
 
-That's it, if you have no errors in your `console.log` then you have successfully initialized an Ocean instance in you brand new React dapp and you are ready for the next steps in this tutorial.
+That's it, if you have no errors in your `console.log` then you have successfully initialized an Ocean instance in you brand new React app and you are ready for the next steps in this tutorial.
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
@@ -93,7 +93,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Marketplace dapp</h1>
+        <h1>Marketplace app</h1>
       </div>
     )
   }
