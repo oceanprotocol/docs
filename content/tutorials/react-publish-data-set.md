@@ -5,12 +5,12 @@ description: Tutorial to add data set publishing capabilities to a basic React a
 
 ## Requirements
 
-This is continuation of the [React App Setup](/tutorials/react-setup) tutorial, so make sure you have all the steps running.
+This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial, so make sure you have all the steps running.
 
 ## Adding Publishing
 
 1. Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup) tutorial.
-2. First lets add asset that we want to publish. To do that we need to add the following code after `window.ethereum.enable()` line.
+2. First let's add the asset that we want to publish. To do that we need to add the following code after `window.ethereum.enable()` line.
 
    ```javascript
    const asset = {

@@ -9,8 +9,11 @@ This tutorial shows how you can build a basic [React](https://reactjs.org/) app 
 
 - `nodejs` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- Running all the services started by `./start_ocean.sh --no-pleuston --local-pond-node` in [oceanprotocol/docker-images](https://github.com/oceanprotocol/docker-images) running with
-- Using browser with [MetaMask](https://metamask.io/) and some Ether in your account (for the network you're connected to). See [the tutorial about getting Ether and Ocean Tokens for testnets](/tutorials/get-ether-and-ocean-tokens/).
+- Do [the tutorial to Set Up Azure Storage](/tutorials/azure-for-brizo/).
+- Git clone the [oceanprotocol/docker-images](https://github.com/oceanprotocol/docker-images) repository, then in that directory:
+  - Edit the `brizo.env` file and set all `AZURE_`... values.
+  - Run `./start_ocean.sh --no-pleuston --local-pond-node` in [oceanprotocol/docker-images](https://github.com/oceanprotocol/docker-images). This runs all services locally, including a local Parity Ethereum node.
+- Use a browser with [MetaMask](https://metamask.io/) and some Ether in your account. See [the tutorial about getting Ether and Ocean Tokens for testnets](/tutorials/get-ether-and-ocean-tokens/).
 
 ## Tutorial Steps
 
