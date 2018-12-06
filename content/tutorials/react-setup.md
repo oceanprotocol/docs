@@ -46,7 +46,7 @@ This tutorial shows how you can build a basic [React](https://reactjs.org/) app 
    window.ethereum.enable()
    ```
 
-6. After the line `class App extends Component {` add the following Ocean initialization with all configuration. All OceanProtocol operations can be executed from this Ocean instance.
+6. At the beginning of your component, create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
 
    ```javascript
      async componentDidMount() {
@@ -76,8 +76,10 @@ import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
 import * as Web3 from 'web3'
+
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()
+
 class App extends Component {
   async componentDidMount() {
     this.ocean = await new Ocean.getInstance({
