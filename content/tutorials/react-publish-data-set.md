@@ -7,64 +7,69 @@ description: Tutorial to add dataset publishing capabilities to a basic React ap
 
 This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial, so make sure you have done all the steps described in there.
 
-## Adding Publishing
+Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup) tutorial.
 
-1. Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup) tutorial.
-2. First, let's add the asset that we want to publish. To do that, we need to add the following code after `window.ethereum.enable()` line.
+## Define Asset
 
-   ```javascript
-   const asset = {
-     base: {
-       name: 'Office Humidity',
-       description:
-         'Weather information of UK including temperature and humidity',
-       dateCreated: '2012-02-01T10:55:11+00:00',
-       author: 'Met Office',
-       size: '3.1bg',
-       license: 'Public Domain',
-       copyrightHolder: 'Met Office',
-       contentUrls: [
-         'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip'
-       ],
-       contentType: 'text/csv',
-       links: [
-         {
-           name: 'Dataset sample',
-           type: 'sample',
-           url:
-             'http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/'
-         }
-       ],
-       tags: 'weather, uk, 2011, temperature, humidity',
-       price: 5,
-       type: 'dataset'
-     },
-     curation: {
-       rating: 0,
-       numVotes: 0,
-       schema: 'Binary Voting'
-     },
-     additionalInformation: {
-       updateFrequency: 'yearly'
-     }
-   }
-   ```
+First, let's add the asset that we want to publish.
 
-3. Now that we have an asset to submit, we need function to handle it. Just before `render() {` let's add:
+To do that, we need to add the following code after `window.ethereum.enable()` line, defining our asset based on the [OEP-08](https://github.com/oceanprotocol/OEPs/tree/master/8) metadata structure:
 
-    ```javascript
-    async submitAsset(){
-      const accounts = await this.ocean.getAccounts()
-      const ddo = await this.ocean.registerAsset(asset, accounts[0])
-      alert("Asset successfully submited:", JSON.stringify(ddo))
-    }
-    ```
+```js
+const asset = {
+  base: {
+    name: 'Office Humidity',
+    description:
+      'Weather information of UK including temperature and humidity',
+    dateCreated: '2012-02-01T10:55:11+00:00',
+    author: 'Met Office',
+    size: '3.1bg',
+    license: 'Public Domain',
+    copyrightHolder: 'Met Office',
+    contentUrls: [
+      'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip'
+    ],
+    contentType: 'text/csv',
+    links: [
+      {
+        name: 'Dataset sample',
+        type: 'sample',
+        url:
+          'http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/'
+      }
+    ],
+    tags: 'weather, uk, 2011, temperature, humidity',
+    price: 5,
+    type: 'dataset'
+  },
+  curation: {
+    rating: 0,
+    numVotes: 0,
+    schema: 'Binary Voting'
+  },
+  additionalInformation: {
+    updateFrequency: 'yearly'
+  }
+}
+```
 
-4. The last thing we need is a button to start our registration inside the render function just after `<h1>Marketplace app</h1>`:
+## Handle Asset Publishing
 
-   ```jsx
-   <button onClick={() => this.submitAsset()}>Register asset</button>
-   ```
+Now that we have an asset to submit, we need a function to handle it. Just before `render() {` let's add this function:
+
+```js
+async submitAsset() {
+  const accounts = await this.ocean.getAccounts()
+  const ddo = await this.ocean.registerAsset(asset, accounts[0])
+  alert('Asset successfully submited: ', JSON.stringify(ddo))
+}
+```
+
+The last thing we need is a button to start our registration inside the render function just after `<h1>Marketplace app</h1>`:
+
+```jsx
+<button onClick={() => this.submitAsset()}>Register asset</button>
+```
 
 ## Final Result
 
@@ -135,12 +140,12 @@ class App extends Component {
   async submitAsset() {
     const accounts = await this.ocean.getAccounts()
     const ddo = await this.ocean.registerAsset(asset, accounts[0])
-    alert('Asset successfully submited:', JSON.stringify(ddo))
+    alert('Asset successfully submited: ', JSON.stringify(ddo))
   }
 
   render() {
     return (
-      <div className="App">
+      <div className="App App-header">
         <h1>Marketplace app</h1>
         <button onClick={() => this.submitAsset()}>Register asset</button>
       </div>

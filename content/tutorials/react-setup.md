@@ -13,62 +13,89 @@ description: This tutorial shows how you can build a basic [React](https://react
   - Edit the `brizo.env` file and set all `AZURE_`... values.
   - Run `./start_ocean.sh --no-pleuston --local-pond-node`. This runs all services locally, including a local Parity Ethereum node.
 
-## Tutorial Steps
+## New Create React App
 
-1. Run `npx create-react-app marketplace` in you terminal. This will create a folder named `marketplace` with a boilerplate React app.
-2. Move to your app directory with `cd marketplace` and run `npm install @oceanprotocol/squid web3`. This adds the Ocean Protocol JavaScript library and Web3 packages to the app.
-3. At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000).
-4. To clear the React spinning icon, open `src/App.js` and modify the source to:
+First, kick start your new React app by creating a boilerplate with Create React App:
 
-   ```jsx
-   import React, { Component } from 'react'
-   import './App.css'
+```bash
+npx create-react-app marketplace
+```
 
-   class App extends Component {
-     render() {
-       return (
-         <div className="App">
-           <h1>Marketplace app</h1>
-         </div>
-       )
-     }
-   }
+This will create a folder named `marketplace` with a boilerplate React app. Go into that new folder and add the Ocean Protocol JavaScript library and Web3 packages to the app's dependencies:
 
-   export default App
-   ```
+```bash
+cd marketplace/
+npm install @oceanprotocol/squid web3
+```
 
-5. Below the `import './App.css'` line, let's import the packages we installed, set up web3 and unlock MetaMask accounts (if locked):
+At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000):
 
-   ```javascript
-   import { Ocean } from '@oceanprotocol/squid'
-   import * as Web3 from 'web3'
+![React App 01](images/react-app-01.png)
 
-   const web3 = new Web3(window.web3.currentProvider)
-   window.ethereum.enable()
-   ```
+## Add Markup & Web3
 
-6. At the beginning of your component, create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
+Let's make it ours, open `src/App.js` and replace the whole source with:
 
-    ```javascript
-    async componentDidMount() {
-      this.ocean = await new Ocean.getInstance({
-        web3Provider: web3,
-        nodeUri: "http://localhost:8545",
-        aquariusUri: "http://localhost:5000",
-        brizoUri: "http://localhost:8030",
-        parityUri: "http://localhost:8545",
-        secretStoreUri: "http://localhost:12001",
-        threshold: 0,
-        password: "secret",
-        address: "0x068ed00cf0441e4829d9784fcbe7b9e26d4bd8d0",
-      })
-      console.log("Finished loading contracts!")
-    }
-    ```
+```jsx
+import React, { Component } from 'react'
+import './App.css'
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App App-header">
+        <h1>Marketplace app</h1>
+      </div>
+    )
+  }
+}
+
+export default App
+```
+
+Below the `import './App.css'` line, let's import the packages we installed, set up web3 and unlock MetaMask accounts (if locked):
+
+```js
+import { Ocean } from '@oceanprotocol/squid'
+import * as Web3 from 'web3'
+
+const web3 = new Web3(window.web3.currentProvider)
+window.ethereum.enable()
+```
+
+After those steps you should see this, and MetaMask should have asked you to allow access to your account:
+
+![React App 02](images/react-app-02.png)
+![React App 03](images/react-app-03.png)
+
+## Create Ocean instance
+
+Now that we are successfully connected with Web3, we can setup our Ocean instance.
+
+At the beginning of your component, create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
+
+```js
+async componentDidMount() {
+  this.ocean = await new Ocean.getInstance({
+    web3Provider: web3,
+    nodeUri: "http://localhost:8545",
+    aquariusUri: "http://localhost:5000",
+    brizoUri: "http://localhost:8030",
+    parityUri: "http://localhost:8545",
+    secretStoreUri: "http://localhost:12001",
+    threshold: 0,
+    password: "secret",
+    address: "0x068ed00cf0441e4829d9784fcbe7b9e26d4bd8d0",
+  })
+  console.log("Finished loading contracts!")
+}
+```
 
 ## Final Result
 
-That's it, if you have no errors in your `console.log` then you have successfully initialized an Ocean instance in you brand new React app and you are ready for the next steps in this tutorial.
+That's it, if you have no errors in your `console.log` then you have successfully initialized an Ocean instance in your brand new React app and you are ready for the [next part of this tutorial](/tutorials/react-publish-data-set/).
+
+![React App 04](images/react-app-04.png)
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
@@ -99,7 +126,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App App-header">
         <h1>Marketplace app</h1>
       </div>
     )
@@ -108,3 +135,5 @@ class App extends Component {
 
 export default App
 ```
+
+Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).
