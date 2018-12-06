@@ -74,7 +74,7 @@ Here is the full source of `src/App.js` that you should have if you followed thi
 ```javascript
 import React, { Component } from 'react'
 import './App.css'
-import { Ocean } from '@oceanprotocol/squid/dist/node/squid'
+import { Ocean } from '@oceanprotocol/squid'
 import * as Web3 from 'web3'
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()
