@@ -5,12 +5,12 @@ description: Tutorial to add dataset publishing capabilities to a basic React ap
 
 ## Requirements
 
-This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial, so make sure you have all the steps running.
+This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial, so make sure you have done all the steps described in there.
 
 ## Adding Publishing
 
 1. Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup) tutorial.
-2. First let's add the asset that we want to publish. To do that, we need to add the following code after `window.ethereum.enable()` line.
+2. First, let's add the asset that we want to publish. To do that, we need to add the following code after `window.ethereum.enable()` line.
 
    ```javascript
    const asset = {
@@ -52,13 +52,13 @@ This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial
 
 3. Now that we have an asset to submit, we need function to handle it. Just before `render() {` let's add:
 
-   ```javascript
-     async submitAsset(){
-       const accounts = await this.ocean.getAccounts()
-       const ddo = await this.ocean.registerAsset(asset, accounts[0])
-       alert("Asset successfully submited:", JSON.stringify(ddo))
-     }
-   ```
+    ```javascript
+    async submitAsset(){
+      const accounts = await this.ocean.getAccounts()
+      const ddo = await this.ocean.registerAsset(asset, accounts[0])
+      alert("Asset successfully submited:", JSON.stringify(ddo))
+    }
+    ```
 
 4. The last thing we need is a button to start our registration inside the render function just after `<h1>Marketplace app</h1>`:
 
@@ -66,19 +66,21 @@ This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial
    <button onClick={() => this.submitAsset()}>Register asset</button>
    ```
 
-## Finished
+## Final Result
 
 That's it. If you have no errors in your `console.log` and you receive an alert after you click `Register asset` then you have successfully registered an asset.
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
-```javascript
+```jsx
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
 import * as Web3 from 'web3'
+
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()
+
 const asset = {
   base: {
     name: 'Office Humidity',
@@ -113,6 +115,7 @@ const asset = {
     updateFrequency: 'yearly'
   }
 }
+
 class App extends Component {
   async componentDidMount() {
     this.ocean = await new Ocean.getInstance({
@@ -128,11 +131,13 @@ class App extends Component {
     })
     console.log('Finished loading contracts!')
   }
+
   async submitAsset() {
     const accounts = await this.ocean.getAccounts()
     const ddo = await this.ocean.registerAsset(asset, accounts[0])
     alert('Asset successfully submited:', JSON.stringify(ddo))
   }
+
   render() {
     return (
       <div className="App">
@@ -142,5 +147,6 @@ class App extends Component {
     )
   }
 }
+
 export default App
 ```
