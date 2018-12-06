@@ -40,7 +40,7 @@ This tutorial shows how you can build a basic [React](https://reactjs.org/) app 
 5. Below the `import './App.css'` line, let's import the packages we installed, set up web3 and unlock MetaMask accounts (if locked):
 
    ```javascript
-   import { Ocean } from '@oceanprotocol/squid/dist/node/squid'
+   import { Ocean } from '@oceanprotocol/squid'
    import * as Web3 from 'web3'
    const web3 = new Web3(window.web3.currentProvider)
    window.ethereum.enable()
