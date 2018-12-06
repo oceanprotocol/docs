@@ -1,6 +1,6 @@
 ---
 title: Publish a Data Set
-description: Tutorial to add data set publishing capabilities to a basic React app.
+description: Tutorial to add dataset publishing capabilities to a basic React app.
 ---
 
 ## Requirements
@@ -10,7 +10,7 @@ This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial
 ## Adding Publishing
 
 1. Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup) tutorial.
-2. First let's add the asset that we want to publish. To do that we need to add the following code after `window.ethereum.enable()` line.
+2. First let's add the asset that we want to publish. To do that, we need to add the following code after `window.ethereum.enable()` line.
 
    ```javascript
    const asset = {
@@ -50,7 +50,7 @@ This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial
    }
    ```
 
-3. Now that we have asset to submit we need function to handle it. Just before `render() {` let's add:
+3. Now that we have an asset to submit, we need function to handle it. Just before `render() {` let's add:
 
    ```javascript
      async submitAsset(){
@@ -60,7 +60,7 @@ This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial
      }
    ```
 
-4. Last thing we need is button to start our registration inside render function just after `<h1>Marketplace app</h1>`
+4. The last thing we need is a button to start our registration inside the render function just after `<h1>Marketplace app</h1>`:
 
    ```jsx
    <button onClick={() => this.submitAsset()}>Register asset</button>
@@ -68,9 +68,9 @@ This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial
 
 ## Finished
 
-That's it, if you have no errors in your `console.log` and you receive alert after you click `Register asset` you have successfully registered an asset.
+That's it. If you have no errors in your `console.log` and you receive an alert after you click `Register asset` then you have successfully registered an asset.
 
-Here is full source of `src/App.js` that you should have if you followed this tutorial:
+Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
 ```javascript
 import React, { Component } from 'react'
