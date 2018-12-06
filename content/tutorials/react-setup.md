@@ -3,7 +3,7 @@ title: React App Setup
 description: Tutorial to set up a basic React app that uses squid-js.
 ---
 
-This tutorial shows how you can build a basic [React](https://reactjs.org/) app that uses the squid-js JavaScript package to publish a data set, get a data set, and more.
+This tutorial shows how you can build a basic [React](https://reactjs.org/) app with [Create React App](https://github.com/facebook/create-react-app) that uses the squid-js JavaScript package to publish a data set, get a data set, and more.
 
 ## Requirements
 
