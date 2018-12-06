@@ -18,7 +18,7 @@ This tutorial shows how you can build a basic [React](https://reactjs.org/) app 
 ## Tutorial Steps
 
 1. Run `npx create-react-app marketplace` in you terminal. This will create a folder named `marketplace` with a boilerplate React app.
-2. Move to your app directory with `cd marketplace` and run `yarn add @oceanprotocol/squid web3`. This adds the OceanProtocol and Web3 packages to the app.
+2. Move to your app directory with `cd marketplace` and run `npm install @oceanprotocol/squid web3`. This adds the Ocean Protocol JavaScript library and Web3 packages to the app.
 3. At this point you can already run `yarn start` which starts the app in your browser at [localhost:3000](http://localhost:3000).
 4. To clear the React spinning icon, open `src/App.js` and modify the source to:
 
