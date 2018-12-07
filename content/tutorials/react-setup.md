@@ -11,7 +11,7 @@ description: This tutorial shows how you can build a basic [React](https://react
 - Use a browser with [MetaMask](https://metamask.io/) and some Ether in your account. See the tutorial about [getting Ether and Ocean Tokens for testnets](/tutorials/get-ether-and-ocean-tokens/).
 - Git clone the [oceanprotocol/docker-images](https://github.com/oceanprotocol/docker-images) repository, then in that directory:
   - Edit the `brizo.env` file and set all `AZURE_`... values.
-  - Run `./start_ocean.sh --no-pleuston --local-spree-node`. This runs all Ocean services locally, including a local Parity Ethereum node.
+  - Run `./start_ocean.sh --no-pleuston --local-kovan-node`. This runs several Ocean services locally, including a local Parity Ethereum node connected to the Kovan Testnet.
 
 ## New Create React App
 
