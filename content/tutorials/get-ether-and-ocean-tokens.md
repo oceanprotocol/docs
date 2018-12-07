@@ -5,7 +5,7 @@ description: A tutorial about how to get Ether and Ocean Tokens for testnets.
 
 If you want to interact with a testnet, then you'll eventually need Ether or Ocean Tokens _for that testnet_. (Every Ethereum-based network has its own Ether and its own Ocean Tokens, and you can't use those in other networks, or at least it wasn't possible when we wrote this.)
 
-At the time of writing, there were two public testnets you could use to test an Ocean Protocol application: the Kovan Testnet and the Ocean Testnet. For more information about those, see the page about [testnets](/concepts/testnets/). You could also run a local testnet (i.e. on your local machine).
+At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/). You could also run a local testnet (i.e. on your local machine).
 
 ## Get a Compatible Wallet
 
@@ -24,9 +24,9 @@ You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see 
 0xa0A9d7f78bF293514e7cA2789A0Af689eEC99282
 ```
 
-### Get Ether for the Ocean Testnet
+### Get Ether for the Nile Testnet
 
-At the time of writing, there was no easy way to get Ether for the Ocean Testnet.
+At the time of writing, there was no easy way to get Ether for the Nile Testnet.
 
 ### Get Ether for a Local Ganache-Based Testnet
 
