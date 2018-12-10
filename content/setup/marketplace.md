@@ -3,15 +3,18 @@ title: Set Up a Marketplace
 description: Set up and run a data marketplace in the Ocean network.
 ---
 
+## What Does it Mean to Set Up a Marketplace?
+
+An Ocean marketplace app is one of the primary ways that end users use the Ocean network. For example, a data scientist could use a marketplace app to see what data sets and data services (data assets) a marketplace has available. They can use the marketplace app to buy access to assets. Publishers make those data assets available.
+
+**Note: In the early days of the Ocean network, there won't be many marketplaces or publishers, so marketplaces will often also act as publishers.**
+
 If you want to set up and run a marketplace in the Ocean network, then at a technical level, you must:
 
 1. Have [Data Assets](/concepts/terminology/#asset-or-data-asset) to offer in your marketplace.
+1. Get those data assets set up to work with Ocean Protocol.
 1. Develop a marketplace application (app).
 1. Run your marketplace app in production.
-
-**Note 1: At the time of writing (late November 2018), it was _possible_ to start developing a marketplace, but very challenging. We anticipate that it will become much easier in December 2018, especially once the docker-images scripts and Docker Compose files are refactored.**
-
-**Note 2: In the early days of the Ocean network, there won't be many marketplaces or publishers, so marketplaces will often also act as publishers.**
 
 ## Prepare Data Assets
 
@@ -21,22 +24,20 @@ Support for other kinds of data assets (e.g. storage in AWS, computing in Azure)
 
 ## Develop a Marketplace App
 
-An Ocean marketplace app is one of the primary ways that end users use the Ocean network. For example, a data scientist could use a marketplace app to see what data sets and data services (data assets) a marketplace has on offer. They can use the marketplace app to buy access to assets. Publishers make those data assets available.
+At the time of writing, we recommend the following steps to develop a marketplace app:
 
-### Easiest Option: Fork Pleuston
+1. Do the [React App Tutorial](/tutorials/react-setup/).
+1. Grow your app from there.
 
-[Pleuston](https://github.com/oceanprotocol/pleuston) is a reference marketplace app written in JavaScript, using React and squid-js (which is like a JavaScript SDK for Ocean).
-Pleuston has an Apache v2 license, so you can fork it to make your own Ocean marketplace.
-
-This option is straightforward because you can follow the dev process used by the Pleuston devs. They already have a Docker Compose setup that runs all the other Ocean components needed for testing a marketplace, e.g. Aquarius, a database for Aquarius, a local Parity Ethereum node, and Brizo.
-
-Note that Pleuston is a "serverless" app: it runs entirely in the browser and has no server-side component.
+For inspiration, check out [the source code for Pleuston](https://github.com/oceanprotocol/pleuston), a demo marketplace app (also written using React). It has an Apache v2 open source license.
 
 <repo name="pleuston"></repo>
 
+Note that Pleuston is a "serverless" app: it runs entirely in the browser and has no server-side component.
+
 ### Other Options for Developing a Marketplace App
 
-There are many ways to create an ocean marketplace app. For example, you could use one of the existing e-commerce platforms and frameworks (e.g. WooCommerce, Magento, Shopify). Or you could use a lower-level framework like Django or Vue.js. The main consideration is that you should probably use a programming language with an existing Squid library.
+There are many ways to create an Ocean marketplace app. For example, you could use one of the existing e-commerce platforms and frameworks (e.g. WooCommerce, Magento, Shopify). Or you could use a lower-level framework like Django or Vue.js. The main consideration is that you should probably use a programming language with an existing Squid library.
 
 <repo name="squid-js"></repo>
 <repo name="squid-py"></repo>
@@ -48,11 +49,11 @@ Of course, you could always write your own Squid library in the language of your
 
 ## Run Your Marketplace App in Production
 
-Before running your marketplace app in production with the Ocean Mainnet, you may want to test it with an Ocean testnet.
+The Ocean Mainnet is slated to go live in March 2019.
+
+Before running your marketplace app in production with the Ocean Mainnet, you may want to test it with an [Ocean testnet](/concepts/testnets/).
 The Ocean testnets are similar to the Ocean Mainnet.
 The main difference is that there is less risk on the Ocean testnets.
-
-**Note: At the time of writing, the Ocean Mainnet hadn't gone live yet, but the Ocean testnets were about to go live. See [the page about Ocean testnets](/concepts/testnets/).**
 
 Of course, there are many other things that must be handled for live production apps:
 

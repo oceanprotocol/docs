@@ -19,8 +19,7 @@ To do that, we need to add the following code after `window.ethereum.enable()` l
 const asset = {
   base: {
     name: 'Office Humidity',
-    description:
-      'Weather information of UK including temperature and humidity',
+    description: 'Weather information of UK including temperature and humidity',
     dateCreated: '2012-02-01T10:55:11+00:00',
     author: 'Met Office',
     size: '3.1bg',
