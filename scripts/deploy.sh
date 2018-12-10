@@ -13,26 +13,21 @@ set -e;
 
 function s3sync {
   aws s3 sync ./public s3://"$1" \
-    --exclude "*" \
-    --include "*.js" \
-    --include "*.css" \
-    --include "static/*" \
-    --include "icons/*" \
-    --exclude "sw.js" \
-    --exclude "workbox*/*" \
     --cache-control public,max-age=31536000,immutable \
     --delete \
-    --acl public-read \
-    --quiet
+    --acl public-read
 
   aws s3 sync ./public s3://"$1" \
     --exclude "*" \
     --include "*.html" \
     --include "sw.js" \
+    --include "chunk-map.json" \
+    --include "sitemap.xml" \
+    --include ".iconstats.json" \
+    --include "robots.txt" \
     --cache-control public,max-age=0,must-revalidate \
     --delete \
-    --acl public-read \
-    --quiet
+    --acl public-read
 }
 
 ##
