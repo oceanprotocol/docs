@@ -26,7 +26,7 @@
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.0.59",
-    "gatsby-image": "^2.0.22",
+    "gatsby-image": "^2.0.23",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-manifest": "^2.0.11",
