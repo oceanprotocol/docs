@@ -49,8 +49,10 @@ See the page about [bounties](/concepts/bounties/).
 
 ## Help Develop Core Ocean Software
 
-Right now, we're not really set up to accept core code contributions from external developers, except via the bounties mentioned above. In the future, we hope to have policies and processes that empower anyone to contribute.
+- Read and understand the [legal requirements when contributing code](/concepts/legal-reqs/).
+- Look through the [dev-ocean repository on GitHub](https://github.com/oceanprotocol/dev-ocean). It summarizes Ocean Protocol software development practices and policies.
 
-If you'd like to follow what the core dev team is doing, a good place to start is the dev-ocean repository on GitHub.
+  <repo name="dev-ocean"></repo>
 
-<repo name="dev-ocean"></repo>
+- Ask technical questions in the [Ocean Protocol chatroom on Gitter](https://gitter.im/oceanprotocol/Lobby).
+- Find repository-specific development notes in each repository (usually in the root `README.md` file).
