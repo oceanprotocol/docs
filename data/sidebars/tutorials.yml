@@ -9,7 +9,7 @@
     - title: Set Up Azure Storage
       link: /tutorials/azure-for-brizo/
 
-- group: React App Tutorial
+- group: React App Tutorial (squid-js)
   items:
     - title: Setup
       link: /tutorials/react-setup/
@@ -17,3 +17,8 @@
       link: /tutorials/react-publish-data-set/
     - title: Get & Use a Data Set
       link: /tutorials/react-get-use-data-set/
+
+- group: squid-py Tutorials
+  items:
+    - title: Jupyter Notebooks
+      link: /tutorials/jupyter-notebooks/

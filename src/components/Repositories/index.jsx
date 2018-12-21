@@ -32,7 +32,7 @@ const Repositories = () => (
 
             return (
                 <div className={styles.repositories}>
-                    <QuickRun name="docker-images" />
+                    <QuickRun name="barge" />
 
                     <header>
                         <h1 className={styles.repositoriesTitle}>

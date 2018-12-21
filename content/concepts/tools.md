@@ -3,20 +3,18 @@ title: Tools & Examples
 description: Tools and examples for developing with Ocean Protocol.
 ---
 
-The Setup & Tutorials sections have some examples to get you started.
-
-- [Setup: Quick Start](/setup/quickstart/)
-- [Tutorials: Introduction](/tutorials/introduction/)
-
 ## Tools
 
 Coming soon!
 
 ## Examples
 
+The [Tutorials](/tutorials/introduction/) include many examples.
+
 Examples of using the [🦑 squid-py](https://github.com/oceanprotocol/squid-js) Python library:
 
 <repo name="mantaray"></repo>
+<repo name="tuna"></repo>
 
 Examples of using the [🦑 squid-js](https://github.com/oceanprotocol/squid-js) JavaScript library:
 
