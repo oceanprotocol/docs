@@ -9,7 +9,7 @@ At the time of writing, there were some public testnets you could use to test an
 
 ## Get a Compatible Wallet
 
-You will need a wallet that can hold Ether (for any Ethereum network) and Ocean Tokens (for any Ethereum network). For now, we recommend using [MetaMask](https://metamask.io/).
+You will need a [wallet that can hold Ether (for any Ethereum network) and Ocean Tokens (for any Ethereum network)](/tutorials/wallets/). For the purpose of this tutorial, you can use [MetaMask](https://metamask.io/).
 
 - Follow the MetaMask instructions to install it on your machine.
 - In MetaMask, switch from the **Main Ethereum Network** to the **Kovan Test Network** or the test network you're using.
