@@ -1,9 +1,7 @@
 ---
 title: Wallets for Ocean Tokens
-description: Learn about wallets that can hold Ocean Tokens.
+description: If you want to use the Ocean Network, you need Ocean Tokens (typical ERC-20 tokens), and to get Ocean Tokens, you need to get a wallet that can hold Ocean Tokens.
 ---
-
-If you want to use the Ocean Network, you need Ocean Tokens, and to get Ocean Tokens, you need to get a wallet that can hold Ocean Tokens.
 
 ## Some Terminology
 
@@ -28,6 +26,6 @@ There are many kinds of wallets (e.g. paper wallets, hardware wallets, software 
 **We don't recommend or endorse any particular wallets at this time.** Some wallets which _might_ work with Ocean Tokens are:
 
 - Gnosis Safe
-- MetaMask (in combination with other tools such as MyEtherWallet)
+- MetaMask
 - Trust Wallet
 - Tokenary
