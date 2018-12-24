@@ -26,6 +26,7 @@ Otherwise, you must do the following:
 
 You can determine the license by looking in the file named `LICENSE` in the root of that file's repository.
 The comment lines will begin with different symbols depending on the file type. For example, Python comment lines begin with a `#`.
+
 - Read and understand the [Developer Certificate of Origin](https://developercertificate.org/).
 - Put a copy of the Developer Certificate of Origin (text file) in the root of the repository where you are contributing, if one isn't already there.
 - Include a Signed-off-by line at the end of all your Git commit messages, like:
