@@ -5,30 +5,36 @@ description: If you want to contribute code to Ocean Protocol, then you must rea
 
 ## Ocean Protocol Software Licensing
 
-All Ocean Protocol code (software) is licensed under open source licenses (usually Apache 2.0). This page describes our policy to ensure that all contributions to the Ocean Protocol code are also licensed under the appropriate open source license (and that the contributor has the right to license it as such).
+All Ocean Protocol code (software) is licensed under open source licenses (usually Apache 2.0). This page describes the Ocean Protocol policy to ensure that all contributions to the Ocean Protocol code are also licensed under the appropriate open source license (and that the contributor has the right to license it as such).
 
-There are three different cases:
+If you are:
 
-1. If you're an employee of BigchainDB GmbH or DEX Pte Ltd then the copyright in your code contribution belongs to your employer. BigchainDB and DEX, in turn, are contributing to Ocean Protocol under contract with the Ocean Protocol Foundation Ltd, and all the code they contribute to Ocean Protocol is licensed under appropriate open source licenses. There's nothing extra for you to do.
-1. If you're contributing code to complete a [bounty](/concepts/bounties/), then you agreed to terms and conditions such that your contributed code can be licensed under appropriate open source licenses. There's nothing extra for you to do.
-1. Otherwise, you must do the following:
-   - At the top of every file you've modified, add license comment lines similar to the following, unless lines like these are already present:
+- contributing code to complete an [Ocean Protocol bounty](/concepts/bounties/) or
+- an employee of BigchainDB GmbH or
+- an employee of DEX Pte Ltd
 
-   ```text
-   # Copyright Ocean Protocol contributors
-   # SPDX-License-Identifier: Apache-2.0
-   ```
+then there is nothing extra for you to do: licensing is already handled.
 
-   You can determine the license by looking in the file named `LICENSE` in the root of that file's repository.
-   The comment lines will begin with different symbols depending on the file type. For example, Python comment lines begin with a `#`.
-   - Read and understand the [Developer Certificate of Origin](https://developercertificate.org/).
-   - Include a Signed-off-by line at the end of all your Git commit messages, like:
+Otherwise, you must do the following:
 
-   ```text
-   Signed-off-by: Joe T Pots <joe.pots@example.org>
-   ```
+- At the top of every file you've modified, add license comment lines similar to the following, unless lines like these are already present:
 
-   You must include your real name and a real email address. Fake people can't hold or license copyrights.
+```text
+# Copyright Ocean Protocol contributors
+# SPDX-License-Identifier: Apache-2.0
+```
+
+You can determine the license by looking in the file named `LICENSE` in the root of that file's repository.
+The comment lines will begin with different symbols depending on the file type. For example, Python comment lines begin with a `#`.
+- Read and understand the [Developer Certificate of Origin](https://developercertificate.org/).
+- Put a copy of the Developer Certificate of Origin (text file) in the root of the repository where you are contributing, if one isn't already there.
+- Include a Signed-off-by line at the end of all your Git commit messages, like:
+
+```text
+Signed-off-by: Joe T Pots <joe.pots@example.org>
+```
+
+You must use your real name and email address.
 
 > Tip: You can include a Signed-off-by line automatically by using `git commit --signoff` or `git commit -s`.
 
