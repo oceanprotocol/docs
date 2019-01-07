@@ -19,9 +19,9 @@ const QuickRun = ({ name }) => (
             <pre className="language-bash">
                 <code className="language-bash">
                     <span className="token function">git</span> clone
-                    https://github.com/oceanprotocol/docker-images.git
+                    https://github.com/oceanprotocol/barge.git
                     <br />
-                    <span className="token function">cd</span> docker-images/
+                    <span className="token function">cd</span> barge/
                     <br />
                     <br />
                     ./start_ocean.sh --latest

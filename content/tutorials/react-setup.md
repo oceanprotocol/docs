@@ -9,7 +9,7 @@ description: This tutorial shows how you can build a basic [React](https://react
 - `npm` >= 5.2 is installed. You can check using `npm -v`
 - Do the tutorial to [Set Up Azure Storage](/tutorials/azure-for-brizo/).
 - Use a browser with [MetaMask](https://metamask.io/) and some Ether in your account. See the tutorial about [getting Ether and Ocean Tokens for testnets](/tutorials/get-ether-and-ocean-tokens/).
-- Git clone the [oceanprotocol/docker-images](https://github.com/oceanprotocol/docker-images) repository, then in that directory:
+- Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
   - Edit the `brizo.env` file and set all `AZURE_`... values.
   - Run `./start_ocean.sh --no-pleuston --local-kovan-node`. This runs several Ocean services locally, including a local Parity Ethereum node connected to the Kovan Testnet.
 

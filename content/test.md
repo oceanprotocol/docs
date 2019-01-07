@@ -130,8 +130,8 @@ Inline `code` has `back-ticks around` it.
 Blocks of code are either fenced by lines with three back-ticks, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
 ```bash
-git clone https://github.com/oceanprotocol/docker-images.git
-cd docker-images/
+git clone https://github.com/oceanprotocol/barge.git
+cd barge/
 
 ./start_ocean.sh --latest
 ```
