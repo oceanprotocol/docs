@@ -5,15 +5,20 @@
 
 # - group: squid-js
 #   items:
-#     - title: API reference
-#       link: /api/squid-js/
+#     - title: API Reference
+#       link: /references/squid-js/
+
+- group: squid-py
+  items:
+    - title: API Reference
+      link: /references/squid-py/
 
 - group: aquarius
   items:
-    - title: API reference
+    - title: API Reference
       link: /references/aquarius/
 
 - group: brizo
   items:
-    - title: API reference
+    - title: API Reference
       link: /references/brizo/

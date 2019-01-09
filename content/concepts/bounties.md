@@ -9,3 +9,5 @@ Check out the:
 - [Ocean Protocol Bounties on bounties.network](https://explorer.bounties.network/explorer?bountyStage=active&search=ocean%20protocol)
 
 <repo name="ocean-bounties"></repo>
+
+<repo name="openwaters"></repo>
