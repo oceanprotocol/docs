@@ -3,10 +3,10 @@
     - title: API References
       link: /references/introduction/
 
-# - group: squid-js
-#   items:
-#     - title: API Reference
-#       link: /references/squid-js/
+- group: squid-js
+  items:
+    - title: API Reference
+      link: /references/squid-js/
 
 - group: squid-py
   items:

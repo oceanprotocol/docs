@@ -198,6 +198,31 @@ exports.createPages = ({ graphql, actions }) => {
                 })
 
                 //
+                // Create pages from TypeDoc json files
+                //
+                const typedocTemplate = path.resolve(
+                    './src/templates/Typedoc.jsx'
+                )
+
+                const squidJsSpecs = require('./data/squid-js.json')
+                const squidJsSlug = '/references/squid-js/'
+
+                createPage({
+                    path: squidJsSlug,
+                    component: typedocTemplate,
+                    context: {
+                        slug: squidJsSlug,
+                        typedoc: squidJsSpecs,
+                        classes: [
+                            'ocean/Ocean',
+                            'ocean/Account',
+                            'ddo/DDO',
+                            'ddo/Service'
+                        ]
+                    }
+                })
+
+                //
                 // create redirects
                 //
                 redirects.forEach(({ from, to }) => {
