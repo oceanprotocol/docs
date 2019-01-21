@@ -3,6 +3,12 @@ title: Quickstart
 description: Do a quick test drive.
 ---
 
+## Option 1
+
+You can [try some free, online Jupyter notebooks](/tutorials/jupyter-notebooks/) that connect to a live Ocean test network.
+
+## Option 2
+
 You can run and try every [Ocean software component](/concepts/components/) in your local machine, all at once, using Docker Compose.
 
 First, you must [set up some storage on Azure](/tutorials/azure-for-brizo/). (Yes, we know that's not quick. Some day there will be a local storage option and then this really will be quick.)
