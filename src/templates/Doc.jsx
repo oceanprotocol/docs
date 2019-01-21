@@ -26,8 +26,8 @@ const DocMain = ({ title, description, tableOfContents, post, single }) => (
 
 DocMain.propTypes = {
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    tableOfContents: PropTypes.string,
+    description: PropTypes.string,
+    tableOfContents: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
     post: PropTypes.object.isRequired,
     single: PropTypes.bool
 }

@@ -170,14 +170,14 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
             data-private={!isPublic}
             data-deprecated={!!deprecation}
         >
+            <h3 className={styles.propertyName}>{name}</h3>
+
             <div
                 className={styles.propertyType}
                 data-type={kindString.toLowerCase()}
             >
                 {kindString}
             </div>
-
-            <h3 className={styles.propertyName}>{name}</h3>
 
             {isStatic && <div className={styles.propertyModifier}>static</div>}
             {!isPublic && (
@@ -197,19 +197,21 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 </a>
             )}
 
-            {!!deprecation && (
-                <div className={styles.deprecation}>
-                    <strong>Deprecated:</strong> use{' '}
-                    <a href={`#${parentAnchor}/${slugify(deprecatedUse)}`}>
-                        {deprecatedUse}
-                    </a>{' '}
-                    instead
-                </div>
-            )}
-
             {comment && (
                 <div className={styles.propertyDescription}>
                     {comment.text || comment.shortText}
+                </div>
+            )}
+
+            {deprecation && (
+                <div className={styles.deprecation}>
+                    <strong>Deprecated:</strong> use{' '}
+                    <code>
+                        <a href={`#${parentAnchor}/${slugify(deprecatedUse)}`}>
+                            {deprecatedUse}
+                        </a>
+                    </code>{' '}
+                    instead
                 </div>
             )}
 

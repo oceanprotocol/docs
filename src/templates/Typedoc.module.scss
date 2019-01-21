@@ -31,12 +31,14 @@
     border-radius: $border-radius;
     position: relative;
 
-    &[data-private='true'] {
-        background: rgba($brand-black, .06);
-    }
-
     &[data-deprecated='true'] {
-        background: rgba($brand-pink, .06);
+        > *:not(.deprecation) {
+            opacity: .4;
+        }
+
+        .sourceLink {
+            display: none;
+        }
     }
 }
 
@@ -48,45 +50,44 @@
     margin-bottom: $spacer / 4;
     margin-top: 0;
     display: inline-block;
-    padding: $spacer / 8 $spacer / 3;
+    padding: 0 $spacer / 4;
     border-radius: $border-radius;
     vertical-align: middle;
 }
 
 .propertyName {
     font-size: $font-size-large;
+    padding: 0;
+    margin-right: $spacer / 3;
 }
 
 .propertyType,
 .propertyModifier {
     font-size: $font-size-small;
-    line-height: 1.4em;
-    padding: $spacer / 16 $spacer / 6;
+    color: $brand-grey;
+    margin-right: $spacer / 4;
 }
 
 .propertyType {
     &[data-type='method'] {
-        background: rgba($green, .4);
+        background: rgba($green, .3);
     }
 
     &[data-type='property'] {
-        background: rgba($brand-pink, .4);
+        background: rgba($yellow, .3);
     }
 }
 
 .propertyModifier {
     background: rgba($red, .2);
-    padding: 0 $spacer / 6;
-    margin-right: $spacer / 3;
 
     &[data-secondary] {
-        background: rgba($brand-blue, .5);
-        color: $brand-white;
+        background: rgba($brand-blue, .2);
     }
 }
 
 .propertyDescription {
-    padding: $spacer / 6 0 $spacer / 3;
+    margin-bottom: $spacer;
 }
 
 .sourceLink {
@@ -101,7 +102,13 @@
 
 .deprecation {
     font-size: $font-size-small;
-    color: mix($brand-black, $brand-pink, 50%);
+    padding: $spacer / 3;
+    border: 1px solid $red;
+    border-radius: $border-radius;
+
+    strong {
+        color: $red;
+    }
 }
 
 .type {
