@@ -1,7 +1,13 @@
 @import 'variables';
 
+.version {
+    font-size: $font-size-base;
+    font-family: $font-family-monospace;
+    color: $brand-grey-light;
+}
+
 .entityName {
-    font-size: $font-size-h3;
+    font-size: $font-size-h2;
     border-bottom: 1px solid $brand-grey-lighter;
     padding-bottom: $spacer / 2;
     margin-top: $spacer * 2;
@@ -47,6 +53,10 @@
     vertical-align: middle;
 }
 
+.propertyName {
+    font-size: $font-size-large;
+}
+
 .propertyType,
 .propertyModifier {
     font-size: $font-size-small;
@@ -76,14 +86,17 @@
 }
 
 .propertyDescription {
-    opacity: .6;
     padding: $spacer / 6 0 $spacer / 3;
 }
 
 .sourceLink {
     position: absolute;
-    top: $spacer / 2;
+    bottom: $spacer / 2;
     right: $spacer / 2;
+    font-size: $font-size-mini;
+    font-family: $font-family-button;
+    text-transform: uppercase;
+    color: $brand-grey-light;
 }
 
 .deprecation {
@@ -91,22 +104,11 @@
     color: mix($brand-black, $brand-pink, 50%);
 }
 
-.detailsLine {
-    .type {
-        margin-left: $spacer / 4;
-    }
-}
-
 .type {
     display: inline-block;
-    font-weight: $font-weight-base;
+    color: $brand-grey;
+    font-family: $font-family-monospace;
     font-size: $font-size-small;
-    font-family: $font-family-title;
-
-    &,
-    a {
-        color: $brand-grey-light;
-    }
 
     a {
         &:hover {
@@ -121,10 +123,13 @@
 
 .subHeading {
     font-size: $font-size-h5;
+    border-bottom: 1px solid $brand-grey-lighter;
+    padding-bottom: $spacer / 3;
+    margin-bottom: $spacer / 3;
 }
 
 .parameters {
-    margin-top: $spacer / 3;
+    margin-top: $spacer / 1.5;
 
     h5,
     p {
@@ -135,16 +140,16 @@
         font-size: $font-size-small;
         margin-bottom: $spacer / 4;
         margin-right: $spacer / 4;
+        margin-left: -(.2rem);
         display: inline-block;
     }
 
     code {
-        // stylelint-disable-next-line
-        background: rgba($brand-black, .08) !important;
+        padding: .2rem;
     }
 }
 
-.parameterOptinal {
+.parameterOptional {
     font-size: $font-size-small;
     vertical-align: top;
     color: $brand-purple;

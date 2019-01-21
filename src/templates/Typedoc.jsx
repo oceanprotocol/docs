@@ -12,6 +12,7 @@ import SEO from '../components/Seo'
 import stylesDoc from './Doc.module.scss'
 import styles from './Typedoc.module.scss'
 
+// more kinds: 'Property', 'Class'
 const showKindOfProperty = ['Method', 'Property']
 
 const toc = typedoc => {
@@ -38,8 +39,9 @@ const Type = ({ type }) => {
     }
     const { name, type: typeOfType, typeArguments, id } = type
     const isInternal = typeOfType === 'reference' && id
+
     return (
-        <span className={styles.type}>
+        <div className={styles.type}>
             <span>
                 {isInternal && <a href={`#${slugify(name)}`}>{type.name}</a>}
                 {!isInternal && <span>{type.name}</span>}
@@ -47,7 +49,7 @@ const Type = ({ type }) => {
 
             {typeArguments && (
                 <span>
-                    <span className={styles.typeSymbol}>&lt;</span>
+                    <span className={styles.typeSymbol}> &lt;</span>
                     <span>
                         {typeArguments.map((typeArgument, i) => (
                             <span key={i}>
@@ -65,7 +67,7 @@ const Type = ({ type }) => {
             )}
 
             {isArray && <span className={styles.typeSymbol}>[]</span>}
-        </span>
+        </div>
     )
 }
 
@@ -76,8 +78,7 @@ Type.propTypes = {
 const PropertyDetails = ({ property }) => {
     const { type } = property
     return (
-        <div className={styles.detailsLine}>
-            Type:
+        <div>
             <Type type={type} />
         </div>
     )
@@ -110,7 +111,7 @@ const MethodDetails = ({ property }) => {
                                     <code>{name}</code>
                                     {isOptional && (
                                         <span
-                                            className={styles.parameterOptinal}
+                                            className={styles.parameterOptional}
                                             title="optional parameter"
                                         >
                                             ?
