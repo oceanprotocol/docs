@@ -32,7 +32,7 @@ const Repositories = () => (
 
             return (
                 <div className={styles.repositories}>
-                    <QuickRun name="barge" />
+                    {/* <QuickRun name="barge" /> */}
 
                     <header>
                         <h1 className={styles.repositoriesTitle}>
