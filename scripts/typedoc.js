@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console */
+/* eslint-disable no-console, security/detect-child-process */
 
 const fs = require('fs')
 const typedoc = require('typedoc')
