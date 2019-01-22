@@ -17,15 +17,29 @@ const showKindOfProperty = ['Method', 'Property']
 
 const toc = typedoc => {
     const items = typedoc
-        .map(
-            ({ name }) => `
+        .map(({ name, children }) => {
+            const parentName = name
+
+            return `
             <li>
                 <a href="#${slugify(name)}"><code>
                     ${name}
                 </code></a>
+                <ul>
+                    ${children
+                        .map(
+                            ({ name }) =>
+                                `<li key={name}>
+                                <a href="#${parentName}-${slugify(name)}">
+                                    <code>${name}</code>
+                                </a>
+                            </li>`
+                        )
+                        .join('')}
+                </ul>
             </li>
         `
-        )
+        })
         .join('')
 
     return `<ul>${items}</ul>`
@@ -167,7 +181,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
 
     return (
         <div
-            id={`${parentAnchor}/${slugify(name)}`}
+            id={`${parentAnchor}-${slugify(name)}`}
             className={styles.property}
             data-private={!isPublic}
             data-deprecated={!!deprecation}

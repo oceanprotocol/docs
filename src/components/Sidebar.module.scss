@@ -85,10 +85,11 @@
 .toc {
     ul {
         padding-left: 0;
+        margin: 0;
 
         ul {
-            padding-left: $spacer / 2;
-            margin: 0;
+            border-left: 1px solid $brand-grey-lighter;
+            margin-left: $spacer;
         }
     }
 

@@ -14,8 +14,10 @@
     margin-bottom: $spacer;
 
     code {
-        // stylelint-disable-next-line
+        // stylelint-disable declaration-no-important
         background: none !important;
+        padding: 0 !important;
+        // stylelint-enable declaration-no-important
     }
 }
 
