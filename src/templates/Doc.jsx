@@ -38,21 +38,24 @@ export default class DocTemplate extends Component {
         location: PropTypes.object.isRequired
     }
 
+    // output section title as defined in sections.yml
+    sectionTitle = this.props.data.allSectionsYaml.edges.map(({ node }) => {
+        // compare section against section title from sections.yml
+        if (
+            node.title
+                .toLowerCase()
+                .includes(this.props.data.markdownRemark.fields.section)
+        ) {
+            return node.title
+        }
+    })
+
     render() {
         const { location } = this.props
         const post = this.props.data.markdownRemark
-        const sections = this.props.data.allSectionsYaml.edges
         const { section, slug } = post.fields
         const { title, description } = post.frontmatter
         const { tableOfContents } = post
-
-        // output section title as defined in sections.yml
-        const sectionTitle = sections.map(({ node }) => {
-            // compare section against section title from sections.yml
-            if (node.title.toLowerCase().includes(section)) {
-                return node.title
-            }
-        })
 
         const isApiSection = location.pathname.includes('/references/')
 
@@ -70,7 +73,9 @@ export default class DocTemplate extends Component {
                 />
 
                 <Layout location={location}>
-                    <HeaderSection title={section ? sectionTitle : title} />
+                    <HeaderSection
+                        title={section ? this.sectionTitle : title}
+                    />
 
                     <Content>
                         {section ? (

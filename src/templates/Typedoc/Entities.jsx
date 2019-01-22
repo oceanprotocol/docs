@@ -1,49 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
 import slugify from 'slugify'
-import Layout from '../components/Layout'
-import Content from '../components/Content'
-import HeaderSection from '../components/HeaderSection'
-import Sidebar from '../components/Sidebar'
-import DocHeader from '../components/DocHeader'
-import SEO from '../components/Seo'
-import stylesDoc from './Doc.module.scss'
-import styles from './Typedoc.module.scss'
+import styles from './Entities.module.scss'
 
 // more kinds: 'Property', 'Class'
 const showKindOfProperty = ['Method', 'Property']
-
-const toc = typedoc => {
-    const items = typedoc
-        .map(({ name, children }) => {
-            const parentName = name
-
-            return `
-            <li>
-                <a href="#${slugify(name)}"><code>
-                    ${name}
-                </code></a>
-                <ul>
-                    ${children
-                        .map(
-                            ({ name }) =>
-                                `<li key={name}>
-                                <a href="#${parentName}-${slugify(name)}">
-                                    <code>${name}</code>
-                                </a>
-                            </li>`
-                        )
-                        .join('')}
-                </ul>
-            </li>
-        `
-        })
-        .join('')
-
-    return `<ul>${items}</ul>`
-}
 
 const Type = ({ type }) => {
     let isArray = false
@@ -116,6 +77,7 @@ const MethodDetails = ({ property }) => {
                         const { isOptional } = flags
                         const description =
                             comment && (comment.text || comment.shortText)
+
                         return (
                             <div
                                 className={styles.parameters}
@@ -250,7 +212,7 @@ PropertyWrapper.propTypes = {
     parentAnchor: PropTypes.string
 }
 
-const Entity = ({ entities, sourceUrl }) =>
+const Entities = ({ entities, sourceUrl }) =>
     entities.map(({ name, comment, children }) => (
         <div key={name}>
             <h2 id={slugify(name)} className={styles.entityName}>
@@ -264,6 +226,9 @@ const Entity = ({ entities, sourceUrl }) =>
             )}
 
             {children
+                // TODO: this filter neeeds to be added in utils.js
+                // cleanTypedocData function to make content and
+                // sidebar TOC consistent
                 .filter(({ kindString }) =>
                     showKindOfProperty.includes(kindString)
                 )
@@ -278,124 +243,9 @@ const Entity = ({ entities, sourceUrl }) =>
         </div>
     ))
 
-Entity.propTypes = {
+Entities.propTypes = {
     entities: PropTypes.array.isRequired,
     sourceUrl: PropTypes.string
 }
 
-export default class TypedocTemplate extends Component {
-    static propTypes = {
-        data: PropTypes.object.isRequired,
-        location: PropTypes.object.isRequired,
-        pageContext: PropTypes.object.isRequired
-    }
-
-    componentWillMount() {
-        const { typedoc, classes } = this.props.pageContext
-        this.setState({
-            typedocData: this.cleanTypedocData(typedoc, classes)
-        })
-    }
-
-    cleanTypedocData(data, useClasses) {
-        const nodes = data.children
-        const cleanData = nodes
-            .map(node => ({
-                ...node,
-                name: node.name.replace(/"/g, ''),
-                child: node.children && node.children[0]
-            }))
-            .filter(({ name }) => (useClasses || []).includes(name))
-            .sort(
-                (a, b) =>
-                    useClasses.indexOf(a.name) - useClasses.indexOf(b.name)
-            )
-            .map(({ child }) => child)
-            .map(node => ({
-                ...node,
-                children: node.children.sort((a, b) => a.id - b.id)
-            }))
-
-        return cleanData
-    }
-
-    render() {
-        const { location, data, pageContext } = this.props
-        const { typedocData } = this.state
-        const sections = data.allSectionsYaml.edges
-        const { typedoc } = pageContext
-        const { info } = typedoc
-        const { title, description, version, sourceUrl } = info
-
-        // output section title as defined in sections.yml
-        const sectionTitle = sections.map(({ node }) => {
-            // compare section against section title from sections.yml
-            if (node.title.toLowerCase().includes('references')) {
-                return node.title
-            }
-        })
-
-        return (
-            <>
-                <Helmet>
-                    <body className={'references'} />
-                </Helmet>
-
-                <SEO
-                    title={title}
-                    description={description}
-                    slug={pageContext.slug}
-                    article
-                />
-
-                <Layout location={location}>
-                    <HeaderSection title={sectionTitle} />
-
-                    <Content>
-                        <main className={stylesDoc.wrapper}>
-                            <aside className={stylesDoc.sidebar}>
-                                <Sidebar
-                                    location={location}
-                                    sidebar={'references'}
-                                    collapsed
-                                    toc
-                                    tableOfContents={toc(typedocData)}
-                                />
-                            </aside>
-                            <article className={stylesDoc.main}>
-                                <DocHeader
-                                    title={title}
-                                    description={description}
-                                    prepend={
-                                        <span className={styles.version}>
-                                            {version}
-                                        </span>
-                                    }
-                                />
-
-                                <Entity
-                                    entities={typedocData}
-                                    sourceUrl={sourceUrl}
-                                />
-                            </article>
-                        </main>
-                    </Content>
-                </Layout>
-            </>
-        )
-    }
-}
-
-export const TypedocQuery = graphql`
-    query {
-        allSectionsYaml {
-            edges {
-                node {
-                    title
-                    description
-                    link
-                }
-            }
-        }
-    }
-`
+export default Entities

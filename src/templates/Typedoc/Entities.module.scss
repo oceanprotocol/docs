@@ -1,11 +1,5 @@
 @import 'variables';
 
-.version {
-    font-size: $font-size-base;
-    font-family: $font-family-monospace;
-    color: $brand-grey-light;
-}
-
 .entityName {
     font-size: $font-size-h2;
     border-bottom: 1px solid $brand-grey-lighter;

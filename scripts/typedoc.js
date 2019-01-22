@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console, security/detect-child-process */
+/* eslint-disable no-console, security/detect-child-process, security/detect-non-literal-fs-filename */
 
 const fs = require('fs')
 const typedoc = require('typedoc')
 const typescript = require('typescript')
+const ora = require('ora')
 const squidJsPackage = require('../external/squid-js/package.json')
 const { exec } = require('child_process')
 
@@ -21,17 +22,18 @@ const config = typescript.findConfigFile(
 )
 
 // npm install for squid-js
-console.log('Installing submodule dependencies...')
+const spinnerNpm = ora('Installing submodule dependencies...').start()
 const install = exec(
     'cd ./external/squid-js && npm i && git checkout package-lock.json'
 )
 
 install.on('exit', () => {
+    spinnerNpm.succeed('Installed submodule dependencies.')
     generateJson()
 })
 
 const generateJson = () => {
-    console.log('Generating TypeDoc json...')
+    const spinnerTypedoc = ora('Generating TypeDoc json...').start()
 
     // Setup our TypeDoc app
     const app = new typedoc.Application({
@@ -45,7 +47,7 @@ const generateJson = () => {
     app.generateJson(project, outPath)
 
     // Parse and modify json output
-    const jsonOrig = JSON.parse(fs.readFileSync(outPath, 'utf8')) // eslint-disable-line
+    const jsonOrig = JSON.parse(fs.readFileSync(outPath, 'utf8'))
 
     const jsonFinal = {
         info: {
@@ -58,5 +60,7 @@ const generateJson = () => {
         ...jsonOrig
     }
 
-    fs.writeFileSync(outPath, JSON.stringify(jsonFinal, null, 4)) // eslint-disable-line
+    fs.writeFileSync(outPath, JSON.stringify(jsonFinal, null, 4))
+
+    spinnerTypedoc.succeed('Generated TypeDoc json.')
 }

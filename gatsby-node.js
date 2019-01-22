@@ -153,7 +153,7 @@ exports.createPages = ({ graphql, actions }) => {
                 // Create pages from swagger json files
                 //
                 const apiSwaggerTemplate = path.resolve(
-                    './src/templates/ApiSwagger.jsx'
+                    './src/templates/Swagger/index.jsx'
                 )
 
                 const petStoreSlug = '/references/petstore/'
@@ -202,7 +202,7 @@ exports.createPages = ({ graphql, actions }) => {
                 //
                 const typeDocSpecs = ['./data/squid-js.json']
                 const typedocTemplate = path.resolve(
-                    './src/templates/Typedoc.jsx'
+                    './src/templates/Typedoc/index.jsx'
                 )
 
                 typeDocSpecs.forEach(spec => {
