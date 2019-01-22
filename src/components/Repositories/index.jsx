@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import RepositoryList from './RepositoryList'
-import QuickRun from './QuickRun'
+// import QuickRun from './QuickRun'
 import styles from './index.module.scss'
 
 const query = graphql`
@@ -32,7 +32,7 @@ const Repositories = () => (
 
             return (
                 <div className={styles.repositories}>
-                    <QuickRun name="barge" />
+                    {/* <QuickRun name="barge" /> */}
 
                     <header>
                         <h1 className={styles.repositoriesTitle}>
