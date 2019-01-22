@@ -212,7 +212,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 <div className={styles.deprecation}>
                     <strong>Deprecated</strong>: use{' '}
                     <code>
-                        <a href={`#${parentAnchor}/${slugify(deprecatedUse)}`}>
+                        <a href={`#${parentAnchor}-${slugify(deprecatedUse)}`}>
                             {deprecatedUse}
                         </a>
                     </code>{' '}
