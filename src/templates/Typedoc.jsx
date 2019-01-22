@@ -210,7 +210,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
 
             {deprecation && (
                 <div className={styles.deprecation}>
-                    <strong>Deprecated:</strong> use{' '}
+                    <strong>Deprecated</strong>: use{' '}
                     <code>
                         <a href={`#${parentAnchor}/${slugify(deprecatedUse)}`}>
                             {deprecatedUse}
@@ -220,14 +220,15 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 </div>
             )}
 
-            {(() => {
-                switch (kindString) {
-                    case 'Method':
-                        return <MethodDetails property={property} />
-                    case 'Property':
-                        return <PropertyDetails property={property} />
-                }
-            })()}
+            {!deprecation &&
+                (() => {
+                    switch (kindString) {
+                        case 'Method':
+                            return <MethodDetails property={property} />
+                        case 'Property':
+                            return <PropertyDetails property={property} />
+                    }
+                })()}
 
             {fileName && (
                 <a
