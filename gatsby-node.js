@@ -227,8 +227,18 @@ exports.createPages = ({ graphql, actions }) => {
                             classes: [
                                 'ocean/Ocean',
                                 'ocean/Account',
+                                'ocean/DID',
+                                'ocean/ServiceAgreements/ServiceAgreement',
                                 'ddo/DDO',
-                                'ddo/Service'
+                                'ddo/Service',
+                                'aquarius/AquariusProvider',
+                                'aquarius/Aquarius',
+                                'aquarius/query/SearchQuery',
+                                'brizo/BrizoProvider',
+                                'brizo/Brizo',
+                                'keeper/Keeper',
+                                'keeper/Web3Provider',
+                                'secretstore/SecretStoreProvider'
                             ]
                         }
                     })
