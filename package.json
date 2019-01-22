@@ -5,8 +5,8 @@
   "author": "Ocean Protocol <devops@oceanprotocol.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
+    "build": "npm run typedoc && gatsby build",
+    "start": "npm run typedoc && gatsby develop",
     "ssr": "npm run build && serve -s public/",
     "format:js": "prettier --write '**/*.{js,jsx}'",
     "format:css": "prettier-stylelint --write --quiet 'src/**/*.{css,scss}'",
@@ -19,7 +19,8 @@
     "lint:yml": "prettier '**/*.{yml,yaml}' --list-different",
     "lint": "run-p --continue-on-error lint:js lint:css lint:md lint:yml",
     "test": "npm run lint",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "./scripts/deploy.sh",
+    "typedoc": "node ./scripts/typedoc.js"
   },
   "dependencies": {
     "@oceanprotocol/art": "^2.1.0",
