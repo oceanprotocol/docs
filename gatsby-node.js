@@ -200,26 +200,38 @@ exports.createPages = ({ graphql, actions }) => {
                 //
                 // Create pages from TypeDoc json files
                 //
+                const typeDocSpecs = ['./data/squid-js.json']
                 const typedocTemplate = path.resolve(
                     './src/templates/Typedoc.jsx'
                 )
 
-                const squidJsSpecs = require('./data/squid-js.json')
-                const squidJsSlug = '/references/squid-js/'
+                typeDocSpecs.forEach(spec => {
+                    const typedoc = require(spec) // eslint-disable-line
 
-                createPage({
-                    path: squidJsSlug,
-                    component: typedocTemplate,
-                    context: {
-                        slug: squidJsSlug,
-                        typedoc: squidJsSpecs,
-                        classes: [
-                            'ocean/Ocean',
-                            'ocean/Account',
-                            'ddo/DDO',
-                            'ddo/Service'
-                        ]
-                    }
+                    const name = path
+                        .basename(spec)
+                        .split('.json')
+                        .join('')
+
+                    const slug = `/references/${name}/`
+
+                    createPage({
+                        path: slug,
+                        component: typedocTemplate,
+                        context: {
+                            slug,
+                            typedoc,
+                            // TODO: defining these classes for inclusion
+                            // needs to be handled somewhere else to keep
+                            // it generic for all TypeDoc specs
+                            classes: [
+                                'ocean/Ocean',
+                                'ocean/Account',
+                                'ddo/DDO',
+                                'ddo/Service'
+                            ]
+                        }
+                    })
                 })
 
                 //
