@@ -162,7 +162,9 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
     if (deprecation) {
         deprecatedUse = deprecation.arguments.alternative.replace(/'/g, '')
     }
+
     const sourceLink = `${sourceUrl}${fileName}#L${line}`
+
     return (
         <div
             id={`${parentAnchor}/${slugify(name)}`}
@@ -184,17 +186,6 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 <div className={styles.propertyModifier} data-secondary>
                     private
                 </div>
-            )}
-
-            {fileName && (
-                <a
-                    className={styles.sourceLink}
-                    href={sourceLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    source
-                </a>
             )}
 
             {comment && (
@@ -223,6 +214,17 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                         return <PropertyDetails property={property} />
                 }
             })()}
+
+            {fileName && (
+                <a
+                    className={styles.sourceLink}
+                    href={sourceLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {`${fileName}#L${line}`}
+                </a>
+            )}
         </div>
     )
 }

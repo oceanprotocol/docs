@@ -91,13 +91,22 @@
 }
 
 .sourceLink {
-    position: absolute;
-    bottom: $spacer / 2;
-    right: $spacer / 2;
+    display: block;
     font-size: $font-size-mini;
-    font-family: $font-family-button;
-    text-transform: uppercase;
     color: $brand-grey-light;
+    margin-top: $spacer / 2;
+
+    &:hover,
+    &:focus {
+        transform: none;
+    }
+
+    @media (min-width: $break-point--large) {
+        margin-top: 0;
+        position: absolute;
+        bottom: $spacer / 2;
+        right: $spacer / 2;
+    }
 }
 
 .deprecation {
