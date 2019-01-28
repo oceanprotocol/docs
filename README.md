@@ -49,6 +49,7 @@ The documentation is split in multiple sections whose content lives in this repo
 - **Core concepts**: high-level explanation of concepts, assumptions, and components
 - **Setup**: getting started for various stakeholders and use cases
 - **Tutorials**: detailed tutorials
+- **API & Library References**: docs for the Aquarius & Brizo REST APIs, and docs for various Squid libraries
 
 Those sections are defined in the [`/data/sections.yml`](data/sections.yml) file.
 
@@ -66,19 +67,13 @@ Some global values used throughout the site can be set in [`config.js`](config.j
 
 Additionally, some content files live in other repositories and are maintained there. They are pulled into Gatsby's data layer at build time, and pages are created automatically for them as defined in [gatsby-node.js](gatsby-node.js).
 
-At the moment, this is setup for the following repositories:
+At the moment, this is set up for the following repositories:
 
 - [dev-ocean](https://github.com/oceanprotocol/dev-ocean)
 
 For including a document from any of the above repositories, 4 values are required in a document's YAML frontmatter. If found, a page will be generated automatically, accessible under the defined `slug`.
 
 This will NOT include this page in the doc's sidebar navigation, this needs to be done manually in the docs repo in one of the sidebar files. This is so you can check out everything before exposing it to visitors, and to ensure editorial workflow of the categorization.
-
-TODO: In a later stage, we will include more documentation in this site, e.g.:
-
-- API references
-- Component docs
-- Maybe more
 
 ### Markdown File Requirements
 
