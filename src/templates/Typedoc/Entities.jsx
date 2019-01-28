@@ -142,12 +142,16 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
 
     return (
         <div
-            id={`${parentAnchor}-${slugify(name)}`}
             className={styles.property}
             data-private={!isPublic}
             data-deprecated={!!deprecation}
         >
-            <h3 className={styles.propertyName}>{name}</h3>
+            <h3
+                id={`${parentAnchor}-${slugify(name)}`}
+                className={styles.propertyName}
+            >
+                {name}
+            </h3>
 
             <div
                 className={styles.propertyType}

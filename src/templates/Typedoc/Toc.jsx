@@ -37,7 +37,7 @@ export default class Toc extends PureComponent {
                 <Scrollspy
                     items={subIds[0]}
                     currentClassName={stylesSidebar.scrollspyActive}
-                    offset={-300}
+                    offset={300}
                 >
                     {this.subItems(children, name)}
                 </Scrollspy>
@@ -46,17 +46,6 @@ export default class Toc extends PureComponent {
     })
 
     render() {
-        let Ids = []
-        Ids.push(this.props.data.map(({ name }) => name))
-
-        return (
-            <Scrollspy
-                items={Ids[0]}
-                currentClassName={stylesSidebar.scrollspyActive}
-                offset={-300}
-            >
-                {this.items}
-            </Scrollspy>
-        )
+        return <ul>{this.items}</ul>
     }
 }
