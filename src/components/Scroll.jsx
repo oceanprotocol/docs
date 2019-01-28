@@ -37,13 +37,15 @@ export default class TocScroll extends React.Component {
             }
         }
 
-        scroll
-            ? this.scrollTo(elem, offset, timeout)
-            : console.log(`Element not found: ${element}`) // eslint-disable-line
+        if (scroll) {
+            this.scrollTo(elem, offset, timeout)
 
-        // update browser url
-        if (typeof window !== 'undefined') {
-            window.history.pushState({}, null, `#${element}`)
+            // update browser url
+            if (typeof window !== 'undefined') {
+                window.history.pushState({}, null, `#${element}`)
+            }
+        } else {
+            console.log(`Element not found: ${element}`) // eslint-disable-line
         }
     }
 
