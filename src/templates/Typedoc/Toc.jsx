@@ -49,7 +49,7 @@ export default class Toc extends PureComponent {
                 <Scrollspy
                     items={subIds[0]}
                     currentClassName={stylesSidebar.scrollspyActive}
-                    offset={300}
+                    offset={-30}
                 >
                     {this.subItems(children, name)}
                 </Scrollspy>
