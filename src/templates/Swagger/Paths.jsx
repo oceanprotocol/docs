@@ -137,8 +137,8 @@ Method.propTypes = {
 
 const Paths = ({ paths }) =>
     Object.entries(paths).map(([key, value]) => (
-        <div key={key}>
-            <h2 id={slugify(cleanPathKey(key))} className={styles.pathName}>
+        <div key={key} id={slugify(cleanPathKey(key))}>
+            <h2 className={styles.pathName}>
                 <code>{cleanPathKey(key)}</code>
             </h2>
 

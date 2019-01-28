@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
 import Scrollspy from 'react-scrollspy'
+import { filterByKindOfProperty } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
-const Toc = ({ data }) => {
-    const subItems = (children, parentName) =>
-        children.map(({ name }) => (
+export default class Toc extends PureComponent {
+    static propTypes = {
+        data: PropTypes.array
+    }
+
+    subItems = (children, parentName) =>
+        children.filter(filterByKindOfProperty).map(({ name }) => (
             <li key={name}>
                 <a href={`#${parentName}-${slugify(name)}`}>
                     <code>{name}</code>
@@ -14,12 +19,12 @@ const Toc = ({ data }) => {
             </li>
         ))
 
-    const items = data.map(({ name, children }) => {
+    items = this.props.data.map(({ name, children }) => {
         let subIds = []
         const parentName = name
 
         subIds.push(
-            children.map(({ name }) => {
+            children.filter(filterByKindOfProperty).map(({ name }) => {
                 return `${parentName}-${slugify(name)}`
             })
         )
@@ -32,22 +37,26 @@ const Toc = ({ data }) => {
                 <Scrollspy
                     items={subIds[0]}
                     currentClassName={stylesSidebar.scrollspyActive}
-                    offset={-200}
+                    offset={-300}
                 >
-                    {subItems(children, name)}
+                    {this.subItems(children, name)}
                 </Scrollspy>
             </li>
         )
     })
 
-    // let Ids = []
-    // Ids.push(data.map(({ name }) => slugify(name)))
+    render() {
+        let Ids = []
+        Ids.push(this.props.data.map(({ name }) => name))
 
-    return <ul>{items}</ul>
+        return (
+            <Scrollspy
+                items={Ids[0]}
+                currentClassName={stylesSidebar.scrollspyActive}
+                offset={-300}
+            >
+                {this.items}
+            </Scrollspy>
+        )
+    }
 }
-
-Toc.propTypes = {
-    data: PropTypes.array
-}
-
-export default Toc

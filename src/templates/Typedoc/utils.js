@@ -21,7 +21,7 @@ export const cleanTypedocData = (data, useClasses) => {
 // more kinds: 'Property', 'Class'
 const showKindOfProperty = {
     Method: true,
-    Property: {onlyPublic: true},
+    Property: { onlyPublic: true }
 }
 export const filterByKindOfProperty = ({ kindString, flags }) => {
     const config = showKindOfProperty[kindString]
