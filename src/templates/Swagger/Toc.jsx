@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
 import Scrollspy from 'react-scrollspy'
+import Scroll from '../../components/Scroll'
 import { cleanPathKey } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
@@ -13,9 +14,13 @@ const Toc = ({ data }) => {
 
         return (
             <li key={key}>
-                <a href={`#${slugify(cleanPathKey(key))}`}>
+                <Scroll
+                    type="id"
+                    element={`${slugify(cleanPathKey(key))}`}
+                    offset={-20}
+                >
                     <code>{cleanPathKey(key)}</code>
-                </a>
+                </Scroll>
             </li>
         )
     })
@@ -32,7 +37,7 @@ const Toc = ({ data }) => {
 }
 
 Toc.propTypes = {
-    data: PropTypes.array
+    data: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
 }
 
 export default Toc

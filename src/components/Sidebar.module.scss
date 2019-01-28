@@ -116,8 +116,8 @@
     }
 
     code {
-        background: none !important; // stylelint-disable-line
-        color: inherit !important; // stylelint-disable-line
+        background: none;
+        color: inherit;
     }
 
     [data-deprecated='true'] code {

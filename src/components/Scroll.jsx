@@ -8,8 +8,7 @@ export default class TocScroll extends React.Component {
         element: PropTypes.string,
         offset: PropTypes.number,
         timeout: PropTypes.number,
-        children: PropTypes.node.isRequired,
-        deprecation: PropTypes.bool
+        children: PropTypes.node.isRequired
     }
 
     componentDidMount() {
@@ -75,7 +74,7 @@ export default class TocScroll extends React.Component {
             <a
                 onClick={this.handleClick}
                 href={`#${this.props.element}`}
-                data-deprecated={!!this.props.deprecation}
+                {...this.props}
             >
                 {this.props.children}
             </a>

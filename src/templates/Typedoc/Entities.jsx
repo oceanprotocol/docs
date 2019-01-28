@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
+import Scroll from '../../components/Scroll'
 import styles from './Entities.module.scss'
 import { filterByKindOfProperty } from './utils'
 
@@ -16,7 +17,11 @@ const Type = ({ type }) => {
     return (
         <div className={styles.type}>
             <span>
-                {isInternal && <a href={`#${slugify(name)}`}>{type.name}</a>}
+                {isInternal && (
+                    <Scroll type="id" element={`${slugify(name)}`} offset={-20}>
+                        {type.name}
+                    </Scroll>
+                )}
                 {!isInternal && <span>{type.name}</span>}
             </span>
 
@@ -173,7 +178,13 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 <div className={styles.deprecation}>
                     <strong>Deprecated</strong>: use{' '}
                     <code>
-                        <a href={`#${deprecatedSlug}`}>{deprecatedUse}</a>
+                        <Scroll
+                            type="id"
+                            element={`${deprecatedSlug}`}
+                            offset={-20}
+                        >
+                            {deprecatedUse}
+                        </Scroll>
                     </code>{' '}
                     instead
                 </div>
