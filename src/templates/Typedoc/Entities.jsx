@@ -2,9 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
 import styles from './Entities.module.scss'
-
-// more kinds: 'Property', 'Class'
-const showKindOfProperty = ['Method']
+import { filterByKindOfProperty } from './utils'
 
 const Type = ({ type }) => {
     let isArray = false
@@ -24,7 +22,7 @@ const Type = ({ type }) => {
 
             {typeArguments && (
                 <span>
-                    <span className={styles.typeSymbol}> &lt;</span>
+                    <span className={styles.typeSymbol}>&lt;</span>
                     <span>
                         {typeArguments.map((typeArgument, i) => (
                             <span key={i}>
@@ -134,9 +132,10 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
     const deprecation = (decorators || []).filter(
         ({ name }) => name === 'deprecated'
     )[0] // Assuming deprecated annotation
-    let deprecatedUse
+    let deprecatedUse, deprecatedSlug
     if (deprecation) {
-        deprecatedUse = deprecation.arguments.alternative.replace(/'/g, '')
+        deprecatedUse = deprecation.arguments.alternative.replace(/('|")/g, '')
+        deprecatedSlug = slugify(deprecatedUse.replace('.', '-'))
     }
 
     const sourceLink = `${sourceUrl}${fileName}#L${line}`
@@ -174,7 +173,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 <div className={styles.deprecation}>
                     <strong>Deprecated</strong>: use{' '}
                     <code>
-                        <a href={`#${parentAnchor}-${slugify(deprecatedUse)}`}>
+                        <a href={`#${deprecatedSlug}`}>
                             {deprecatedUse}
                         </a>
                     </code>{' '}
@@ -226,12 +225,7 @@ const Entities = ({ entities, sourceUrl }) =>
             )}
 
             {children
-                // TODO: this filter neeeds to be added in utils.js
-                // cleanTypedocData function to make content and
-                // sidebar TOC consistent
-                .filter(({ kindString }) =>
-                    showKindOfProperty.includes(kindString)
-                )
+                .filter(filterByKindOfProperty)
                 .map(property => (
                     <PropertyWrapper
                         key={`${name}/${property.id}`}

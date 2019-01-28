@@ -226,6 +226,9 @@ exports.createPages = ({ graphql, actions }) => {
                             // it generic for all TypeDoc specs
                             classes: [
                                 'ocean/Ocean',
+                                'ocean/OceanAccounts',
+                                'ocean/OceanAssets',
+                                'ocean/OceanAgreements',
                                 'ocean/Account',
                                 'ocean/DID',
                                 'ocean/ServiceAgreements/ServiceAgreement',
