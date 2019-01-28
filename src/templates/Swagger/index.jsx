@@ -97,7 +97,7 @@ export default class ApiSwaggerTemplate extends Component {
                                     sidebar={'references'}
                                     collapsed
                                     toc
-                                    tableOfContents={Toc(api)}
+                                    tocComponent={<Toc data={api} />}
                                 />
                             </aside>
                             <article className={stylesDoc.main}>
