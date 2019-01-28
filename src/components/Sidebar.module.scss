@@ -79,6 +79,28 @@
     &:focus {
         transform: none;
         color: $brand-purple;
+
+        :global(.setup) & {
+            color: $brand-blue;
+        }
+
+        :global(.tutorials) & {
+            color: $orange;
+        }
+
+        :global(.references) & {
+            color: $green;
+        }
+    }
+}
+
+.toc a {
+    padding-top: $spacer / 12;
+    padding-bottom: $spacer / 12;
+
+    code {
+        background: none !important; // stylelint-disable-line
+        color: inherit !important; // stylelint-disable-line
     }
 }
 
@@ -90,6 +112,7 @@
         ul {
             border-left: 1px solid $brand-grey-lighter;
             margin-left: $spacer;
+            font-size: $font-size-small;
         }
     }
 
@@ -111,5 +134,10 @@
     :global(.tutorials) & {
         color: $orange;
         border-left-color: $orange;
+    }
+
+    :global(.references) & {
+        color: $green;
+        border-left-color: $green;
     }
 }
