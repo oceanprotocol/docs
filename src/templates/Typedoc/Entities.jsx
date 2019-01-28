@@ -145,13 +145,9 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
             className={styles.property}
             data-private={!isPublic}
             data-deprecated={!!deprecation}
+            id={`${parentAnchor}-${slugify(name)}`}
         >
-            <h3
-                id={`${parentAnchor}-${slugify(name)}`}
-                className={styles.propertyName}
-            >
-                {name}
-            </h3>
+            <h3 className={styles.propertyName}>{name}</h3>
 
             <div
                 className={styles.propertyType}
@@ -167,7 +163,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 </div>
             )}
 
-            {comment && (
+            {comment && !deprecation && (
                 <div className={styles.propertyDescription}>
                     {comment.text || comment.shortText}
                 </div>

@@ -32,6 +32,10 @@
             opacity: .5;
         }
 
+        code {
+            opacity: 1;
+        }
+
         .sourceLink {
             display: none;
         }
@@ -107,10 +111,10 @@
 
 .deprecation {
     font-size: $font-size-small;
-    margin-bottom: $spacer / 4;
+    margin-top: $spacer / 4;
 
     strong {
-        color: $red;
+        color: $brand-grey-light;
     }
 }
 

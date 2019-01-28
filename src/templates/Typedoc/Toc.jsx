@@ -11,13 +11,22 @@ export default class Toc extends PureComponent {
     }
 
     subItems = (children, parentName) =>
-        children.filter(filterByKindOfProperty).map(({ name }) => (
-            <li key={name}>
-                <a href={`#${parentName}-${slugify(name)}`}>
-                    <code>{name}</code>
-                </a>
-            </li>
-        ))
+        children.filter(filterByKindOfProperty).map(({ name, decorators }) => {
+            const deprecation = (decorators || []).filter(
+                ({ name }) => name === 'deprecated'
+            )[0] // Assuming deprecated annotation
+
+            return (
+                <li key={name}>
+                    <a
+                        data-deprecated={!!deprecation}
+                        href={`#${parentName}-${slugify(name)}`}
+                    >
+                        <code>{name}</code>
+                    </a>
+                </li>
+            )
+        })
 
     items = this.props.data.map(({ name, children }) => {
         let subIds = []
