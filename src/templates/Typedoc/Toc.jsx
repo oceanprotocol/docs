@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
 import Scrollspy from 'react-scrollspy'
+import TocScroll from './TocScroll'
 import { filterByKindOfProperty } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
@@ -18,12 +19,14 @@ export default class Toc extends PureComponent {
 
             return (
                 <li key={name}>
-                    <a
-                        data-deprecated={!!deprecation}
-                        href={`#${parentName}-${slugify(name)}`}
+                    <TocScroll
+                        type="id"
+                        element={`${parentName}-${slugify(name)}`}
+                        deprecation={!!deprecation}
+                        offset={-20}
                     >
                         <code>{name}</code>
-                    </a>
+                    </TocScroll>
                 </li>
             )
         })
@@ -40,9 +43,9 @@ export default class Toc extends PureComponent {
 
         return (
             <li key={name}>
-                <a href={`#${slugify(name)}`}>
+                <TocScroll type="id" element={`${slugify(name)}`} offset={-20}>
                     <code>{name}</code>
-                </a>
+                </TocScroll>
                 <Scrollspy
                     items={subIds[0]}
                     currentClassName={stylesSidebar.scrollspyActive}
