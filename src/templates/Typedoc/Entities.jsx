@@ -4,7 +4,7 @@ import slugify from 'slugify'
 import styles from './Entities.module.scss'
 
 // more kinds: 'Property', 'Class'
-const showKindOfProperty = ['Method', 'Property']
+const showKindOfProperty = ['Method']
 
 const Type = ({ type }) => {
     let isArray = false
