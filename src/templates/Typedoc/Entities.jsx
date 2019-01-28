@@ -173,9 +173,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
                 <div className={styles.deprecation}>
                     <strong>Deprecated</strong>: use{' '}
                     <code>
-                        <a href={`#${deprecatedSlug}`}>
-                            {deprecatedUse}
-                        </a>
+                        <a href={`#${deprecatedSlug}`}>{deprecatedUse}</a>
                     </code>{' '}
                     instead
                 </div>
@@ -224,16 +222,14 @@ const Entities = ({ entities, sourceUrl }) =>
                 </div>
             )}
 
-            {children
-                .filter(filterByKindOfProperty)
-                .map(property => (
-                    <PropertyWrapper
-                        key={`${name}/${property.id}`}
-                        property={property}
-                        sourceUrl={sourceUrl}
-                        parentAnchor={slugify(name)}
-                    />
-                ))}
+            {children.filter(filterByKindOfProperty).map(property => (
+                <PropertyWrapper
+                    key={`${name}/${property.id}`}
+                    property={property}
+                    sourceUrl={sourceUrl}
+                    parentAnchor={slugify(name)}
+                />
+            ))}
         </div>
     ))
 

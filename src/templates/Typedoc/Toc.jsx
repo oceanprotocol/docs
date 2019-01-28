@@ -6,55 +6,44 @@ import stylesSidebar from '../../components/Sidebar.module.scss'
 
 const Toc = ({ data }) => {
     const subItems = (children, parentName) =>
-        children.map(({ name }) => {
-            return (
-                <li key={name}>
-                    <a href={`#${parentName}-${slugify(name)}`}>
-                        <code>{name}</code>
-                    </a>
-                </li>
-            )
-        })
+        children.map(({ name }) => (
+            <li key={name}>
+                <a href={`#${parentName}-${slugify(name)}`}>
+                    <code>{name}</code>
+                </a>
+            </li>
+        ))
 
     const items = data.map(({ name, children }) => {
-        // let subIds = []
+        let subIds = []
+        const parentName = name
 
-        // subIds.push(
-        //     data.map(({ name, children }) => {
-        //         const parentName = name
-        //         let childId
-
-        //         children.map(({ name }) => {
-        //             childId = `${parentName}-${slugify(name)}`
-        //         })
-
-        //         return childId
-        //     })
-        // )
-
-        // console.log(subIds)
+        subIds.push(
+            children.map(({ name }) => {
+                return `${parentName}-${slugify(name)}`
+            })
+        )
 
         return (
             <li key={name}>
                 <a href={`#${slugify(name)}`}>
                     <code>{name}</code>
                 </a>
-                <ul>{subItems(children, name)}</ul>
+                <Scrollspy
+                    items={subIds[0]}
+                    currentClassName={stylesSidebar.scrollspyActive}
+                    offset={-200}
+                >
+                    {subItems(children, name)}
+                </Scrollspy>
             </li>
         )
     })
 
-    let Ids = []
-    Ids.push(data.map(({ name }) => slugify(name)))
+    // let Ids = []
+    // Ids.push(data.map(({ name }) => slugify(name)))
 
-    return (
-        <Scrollspy
-            items={Ids[0]}
-            currentClassName={stylesSidebar.scrollspyActive}
-        >
-            {items}
-        </Scrollspy>
-    )
+    return <ul>{items}</ul>
 }
 
 Toc.propTypes = {
