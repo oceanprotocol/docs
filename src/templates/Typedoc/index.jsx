@@ -65,7 +65,9 @@ export default class TypedocTemplate extends Component {
                                     sidebar={'references'}
                                     collapsed
                                     toc
-                                    tableOfContents={Toc(this.typedocCleaned)}
+                                    tocComponent={
+                                        <Toc data={this.typedocCleaned} />
+                                    }
                                 />
                             </aside>
                             <article className={stylesDoc.main}>
