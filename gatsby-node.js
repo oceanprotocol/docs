@@ -241,7 +241,9 @@ exports.createPages = ({ graphql, actions }) => {
                                 'brizo/Brizo',
                                 'keeper/Keeper',
                                 'keeper/Web3Provider',
-                                'secretstore/SecretStoreProvider'
+                                'secretstore/SecretStoreProvider',
+                                'models/Config',
+                                'models/Balance'
                             ]
                         }
                     })
