@@ -67,7 +67,7 @@ With all these buttons in place, you should see this:
 
 ## Final Result
 
-That's it. If you have no errors in your `console.log` and your asset files listed you have working marketplace.
+That's it. If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
