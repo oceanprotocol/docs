@@ -5,7 +5,7 @@ description: Tutorial to get and use a data set in a basic React app.
 
 ## Requirements
 
-This is a continuation of the [React App Setup](/tutorials/react-setup) and [React Publish Data-set](/tutorials/react-publish-data-set) tutorial, so make sure you have done all the steps described in there.
+This is a continuation of the [React App Setup](/tutorials/react-setup/) and [React Publish Data-set](/tutorials/react-publish-data-set/) tutorial, so make sure you have done all the steps described in there.
 
 Open `src/App.js` in your marketplace app from previous tutorials.
 
@@ -14,7 +14,7 @@ Open `src/App.js` in your marketplace app from previous tutorials.
 From previous tutorial we added asset publishing so we can now search for it so we can consume it later. Just after `submitAsset()` function we can add new function that will handle search:
 
 ```js
-async retrieveAssets(){
+async retrieveAssets() {
   this.dbAssets = await this.ocean.searchAssetsByText("Office Humidity")
   console.log(this.dbAssets)
 }
@@ -23,7 +23,7 @@ async retrieveAssets(){
 The last thing we need is a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
 
 ```jsx
-<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>
+<button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
 ```
 
 ## Consume Asset
@@ -31,7 +31,7 @@ The last thing we need is a button to start our search inside the render functio
 The retrieved assets can now be consumed so in this tutorial we consume the first one. The following code goes after `async retrieveAssets()` function.
 
 ```js
-async consumeAsset(){
+async consumeAsset() {
   // get all accounts
   const accounts = await this.ocean.getAccounts()
   // get first asset
@@ -58,8 +58,12 @@ async consumeAsset(){
 We still need button in render function just after `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` to start consumption:
 
 ```jsx
-<button onClick={()=>this.consumeAsset()}>Consume asset</button>
+<button onClick={() => this.consumeAsset()}>Consume asset</button>
 ```
+
+With all these buttons in place, you should see this:
+
+![React App 05](images/react-app-05.png)
 
 ## Final Result
 
@@ -133,12 +137,12 @@ class App extends Component {
     alert('Asset successfully submited: ', JSON.stringify(ddo))
   }
 
-  async retrieveAssets(){
-    this.dbAssets = await this.ocean.searchAssetsByText("Office Humidity")
+  async retrieveAssets() {
+    this.dbAssets = await this.ocean.searchAssetsByText('Office Humidity')
     console.log(this.dbAssets)
   }
 
-  async consumeAsset(){
+  async consumeAsset() {
     // get all accounts
     const accounts = await this.ocean.getAccounts()
     // get first asset
@@ -147,18 +151,22 @@ class App extends Component {
     const service = consumeAsset.findServiceByType('Access')
     // sign service
     const serviceAgreementSignatureResult = await this.ocean.signServiceAgreement(
-        consumeAsset.id,
-        service.serviceDefinitionId,
-        accounts[0])
+      consumeAsset.id,
+      service.serviceDefinitionId,
+      accounts[0]
+    )
     // run it
     await this.ocean.initializeServiceAgreement(
-        consumeAsset.id,
-        service.serviceDefinitionId,
-        serviceAgreementSignatureResult.serviceAgreementId,
-        serviceAgreementSignatureResult.serviceAgreementSignature,
-        // callback to handle the files we get
-        (files) => { console.log('Asset files', files) },
-        accounts[0])
+      consumeAsset.id,
+      service.serviceDefinitionId,
+      serviceAgreementSignatureResult.serviceAgreementId,
+      serviceAgreementSignatureResult.serviceAgreementSignature,
+      // callback to handle the files we get
+      files => {
+        console.log('Asset files', files)
+      },
+      accounts[0]
+    )
   }
 
   render() {
