@@ -26,7 +26,7 @@ The last thing we need is a button to start our search inside the render functio
 <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
 ```
 
-## Consume Asset
+## Consume Assets
 
 The retrieved assets can now be consumed so in this tutorial we consume the first one. The following code goes after `async retrieveAssets()` function.
 
