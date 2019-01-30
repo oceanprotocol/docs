@@ -20,7 +20,13 @@
 - group: Libraries
   items:
     - name: squid-js
+      links:
+        - name: API reference
+          url: /references/squid-js/
     - name: squid-py
+      links:
+        - name: API reference
+          url: /references/squid-py/
     - name: squid-java
 
 - group: OceanDB

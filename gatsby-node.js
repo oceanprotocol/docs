@@ -153,7 +153,7 @@ exports.createPages = ({ graphql, actions }) => {
                 // Create pages from swagger json files
                 //
                 const apiSwaggerTemplate = path.resolve(
-                    './src/templates/ApiSwagger.jsx'
+                    './src/templates/Swagger/index.jsx'
                 )
 
                 const petStoreSlug = '/references/petstore/'
@@ -195,6 +195,58 @@ exports.createPages = ({ graphql, actions }) => {
                         slug: brizoSlug,
                         api: brizoSpecs
                     }
+                })
+
+                //
+                // Create pages from TypeDoc json files
+                //
+                const typeDocSpecs = ['./data/squid-js.json']
+                const typedocTemplate = path.resolve(
+                    './src/templates/Typedoc/index.jsx'
+                )
+
+                typeDocSpecs.forEach(spec => {
+                    const typedoc = require(spec) // eslint-disable-line
+
+                    const name = path
+                        .basename(spec)
+                        .split('.json')
+                        .join('')
+
+                    const slug = `/references/${name}/`
+
+                    createPage({
+                        path: slug,
+                        component: typedocTemplate,
+                        context: {
+                            slug,
+                            typedoc,
+                            // TODO: defining these classes for inclusion
+                            // needs to be handled somewhere else to keep
+                            // it generic for all TypeDoc specs
+                            classes: [
+                                'ocean/Ocean',
+                                'ocean/OceanAccounts',
+                                'ocean/OceanAssets',
+                                'ocean/OceanAgreements',
+                                'ocean/Account',
+                                'ocean/DID',
+                                'ocean/ServiceAgreements/ServiceAgreement',
+                                'ddo/DDO',
+                                'ddo/Service',
+                                'aquarius/AquariusProvider',
+                                'aquarius/Aquarius',
+                                'aquarius/query/SearchQuery',
+                                'brizo/BrizoProvider',
+                                'brizo/Brizo',
+                                'keeper/Keeper',
+                                'keeper/Web3Provider',
+                                'secretstore/SecretStoreProvider',
+                                'models/Config',
+                                'models/Balance'
+                            ]
+                        }
+                    })
                 })
 
                 //

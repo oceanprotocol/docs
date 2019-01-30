@@ -3,16 +3,6 @@
     - title: API References
       link: /references/introduction/
 
-# - group: squid-js
-#   items:
-#     - title: API Reference
-#       link: /references/squid-js/
-
-- group: squid-py
-  items:
-    - title: API Reference
-      link: /references/squid-py/
-
 - group: aquarius
   items:
     - title: API Reference
@@ -22,3 +12,13 @@
   items:
     - title: API Reference
       link: /references/brizo/
+
+- group: squid-js
+  items:
+    - title: API Reference
+      link: /references/squid-js/
+
+- group: squid-py
+  items:
+    - title: API Reference
+      link: /references/squid-py/

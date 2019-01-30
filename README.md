@@ -82,37 +82,37 @@ All Markdown files should use
 
 1. The file must begin with a section called YAML frontmatter that looks like this:
 
-   ```md
-   ---
-   title: This is the Title in Title Case
-   description: A short description of the page.
-   ---
+```md
+---
+title: This is the Title in Title Case
+description: A short description of the page.
+---
 
-   Markdown content begins here.
-   ```
+Markdown content begins here.
+```
 
-   For external documents in other repos, defining the `slug` and `section` is required:
+For external documents in other repos, defining the `slug` and `section` is required:
 
-   ```md
-   ---
-   title: This is the Title in Title Case
-   description: A short description of the page.
-   slug: /concepts/architecture/
-   section: concepts
-   ---
+```md
+---
+title: This is the Title in Title Case
+description: A short description of the page.
+slug: /concepts/architecture/
+section: concepts
+---
 
-   Markdown content begins here.
-   ```
+Markdown content begins here.
+```
 
-   Note: The `description` value will be rendered on-page below the title, and it will also be used for description tags in the HTML head.
+Note: The `description` value will be rendered on-page below the title, and it will also be used for description tags in the HTML head.
 
-2. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
-3. start your heading levels with `h2`, so `## My heading`
-4. Internal links to other docs pages should be:
+1. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
+2. start your heading levels with `h2`, so `## My heading`
+3. Internal links to other docs pages should be:
    - to a absolute URL without the host, that looks like `/concepts/terminology/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
    - when linking from external repos, to the _full absolute URL_, such as `https://docs.oceanprotocol.com/hello/you-are-awesome/`
-5. no TOC please, this will be generated automatically from all headings
-6. for images and media, you can keep them in the original repo. Images will be automatically grabbed by the docs site on querying. When doing that, docs site will generate all sorts of image sizes to handle proper responsive images, so no need to keep an eye on image dimensions or file sizes
+4. no TOC please, this will be generated automatically from all headings
+5. for images and media, you can keep them in the original repo. Images will be automatically grabbed by the docs site on querying. When doing that, docs site will generate all sorts of image sizes to handle proper responsive images, so no need to keep an eye on image dimensions or file sizes
 
 **Have a look at [docs.oceanprotocol.com/test/](https://docs.oceanprotocol.com/test/) to see what content elements can be used in all Markdown files included in docs site.**
 
@@ -207,9 +207,11 @@ For more information about stylistic issues, take a look at the section in the t
 
 #### TypeDoc specs
 
-Reference pages based on generated `json` file from TypeDoc.
+Reference pages based on generated `json` file from TypeDoc. TypeScript-based projects are included as git submodules under `./external`.
 
-_Coming soon... see [#45](https://github.com/oceanprotocol/docs/issues/45)_
+On site build, TypeDoc will automatically generate the required `json` spec file into `./data/squid-js.json` and create pages from it. The data from these json files is then used by the TypeDoc template.
+
+To update the specs to the most recent version, the `./external/squid-js` submodule needs to be manuall updated. That's it, on next site build a new spec will be used.
 
 ## Development
 
