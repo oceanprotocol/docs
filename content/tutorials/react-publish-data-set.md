@@ -5,9 +5,9 @@ description: Tutorial to add dataset publishing capabilities to a basic React ap
 
 ## Requirements
 
-This is a continuation of the [React App Setup](/tutorials/react-setup) tutorial, so make sure you have done all the steps described in there.
+This is a continuation of the [React App Setup](/tutorials/react-setup/) tutorial, so make sure you have done all the steps described in there.
 
-Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup) tutorial.
+Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup/) tutorial.
 
 ## Define Asset
 
