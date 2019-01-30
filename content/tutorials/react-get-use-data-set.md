@@ -11,7 +11,7 @@ Open `src/App.js` in your marketplace app from previous tutorials.
 
 ## Retrieve Assets
 
-From previous tutorial we added asset publishing so we can now search for it so we can consume it later. Just after `submitAsset()` function we can add new function that will handle search:
+In the previous tutorial we added asset publishing. We can now search for published assets for consumption. Just after the `submitAsset()` function we can add a new function that will handle search:
 
 ```js
 async retrieveAssets() {
