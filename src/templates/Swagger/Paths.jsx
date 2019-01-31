@@ -87,6 +87,10 @@ const Parameters = ({ parameters }) => (
     </>
 )
 
+Parameters.propTypes = {
+    parameters: PropTypes.array.isRequired
+}
+
 const Responses = ({ responses }) => (
     <>
         <h4 className={styles.subHeading}>Responses</h4>
@@ -97,6 +101,10 @@ const Responses = ({ responses }) => (
         ))}
     </>
 )
+
+Responses.propTypes = {
+    responses: PropTypes.object.isRequired
+}
 
 const Method = ({ keyName, value }) => {
     const { summary, description, parameters, responses } = value
