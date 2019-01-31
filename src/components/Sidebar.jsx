@@ -95,6 +95,12 @@ const SidebarGroup = ({ i, group, location, ...props }) => (
     </>
 )
 
+SidebarGroup.propTypes = {
+    i: PropTypes.number,
+    group: PropTypes.object,
+    location: PropTypes.object
+}
+
 export default class Sidebar extends Component {
     static propTypes = {
         sidebar: PropTypes.string,
