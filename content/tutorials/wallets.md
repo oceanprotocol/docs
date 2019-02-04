@@ -41,16 +41,16 @@ The unique part about MetaMask is that it serves a dual purpose as an ERC-20 wal
 **Setup Instructions for Metamask**
 1. Go to the Chrome Web Store for extensions and search/install metamask.
 
-![alt text](https://lh5.googleusercontent.com/lWV39nXsUmTsoilfQMGjWbe7VRzO2FciSrDGZOsTqTBGWvFH8YanYLtzuRw=w2400)
+![metamask-chrome-store](https://lh5.googleusercontent.com/lWV39nXsUmTsoilfQMGjWbe7VRzO2FciSrDGZOsTqTBGWvFH8YanYLtzuRw=w2400)
 
 2. It will get added as a browser extension on the top right portion. Go ahead and accept the terms and conditions. Create a username and password as well.
-![alt text](https://lh4.googleusercontent.com/wZvrKpNqu4_cgJOFzLa6Jgn4Wn3FvGu4wNYt1oaNO2yn9JCwfMv8xDyzlXA=w2400)
+![tandc-metamask](https://lh4.googleusercontent.com/wZvrKpNqu4_cgJOFzLa6Jgn4Wn3FvGu4wNYt1oaNO2yn9JCwfMv8xDyzlXA=w2400)
 
 3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next.  
-![alt text](https://lh5.googleusercontent.com/5T8eSyDTv8zyIGww1Jewir3HreaoVtFh-d9PQb_4QAhWBZklVlO8FyX4u6I=w2400)
+![backup](https://lh5.googleusercontent.com/5T8eSyDTv8zyIGww1Jewir3HreaoVtFh-d9PQb_4QAhWBZklVlO8FyX4u6I=w2400)
 
 4. Confirm your secret backup phrase and finish your MetaMask wallet set up!
-![alt text](https://lh5.googleusercontent.com/axHfBhZp159APCxeS83D2XDRBzJ-LNJkeMYJXz-PuFXdwJRBQGk-A9QOIFY=w2400)
+![setup-final-metamask](https://lh5.googleusercontent.com/axHfBhZp159APCxeS83D2XDRBzJ-LNJkeMYJXz-PuFXdwJRBQGk-A9QOIFY=w2400)
 
 5. Voila! Your account is now created! You can now buy and sell tokens. You can copy your account address to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens. 
 
@@ -86,7 +86,7 @@ Just as wallets come in various shapes and sizes in the real world, several type
 | --- | --- | --- |
 | Desktop or mobile | Can be downloaded and stored on the desktop or mobile device. Can only be accessed through this one device so it&#39;s highly secure. Mobile wallets have the additional benefit of being portable | If the computer/phone is hacked or gets a virus, it&#39;s possible that your funds could be lost forever. Mobile wallets are also restricted by limited space so tend to be smaller. 
 | Hardware | The private keys are stored on a physical device such as a USB stick.Hardware wallets have the ability to make transactions online, but are very secure because they are stored offline. | If you lose your hardware wallet, all your funds are lost. So this may not be the best option if you&#39;re careless.
-| Online | These are cloud-based wallets that are accessible over the internet. They are the most convenient to access, and are currently the most popular way to store cryptos. | Since online wallets are controlled by third parties, this centralization leads to a greater risk of your private keys being stolen through hacking. |   |
+| Software | These are cloud-based wallets that are accessible over the internet. They are the most convenient to access, and are currently the most popular way to store cryptos. | Since online wallets are controlled by third parties, this centralization leads to a greater risk of your private keys being stolen through hacking. |   |
 | Paper | A physical copy or printout of your public and private keys. Highly secure, portable and easy to store. These can come in the form of printing out hexa numbers or via a QR code.   | Similar weaknesses to a hardware wallet, that if you loose the keys, then you don&#39;t have any access. 
 |   |   |   |   |
 This article isn't a deep-dive into how various wallets work, but is a primer into how to buy and sell cryptos. For a more in-depth understanding, you can [check out this article](https://blockgeeks.com/guides/cryptocurrency-wallet-guide/).
