@@ -41,20 +41,18 @@ The unique part about MetaMask is that it serves a dual purpose as an ERC-20 wal
 **Setup Instructions for Metamask**
 1. Go to the Chrome Web Store for extensions and search/install metamask.
 
-![metamask-chrome-store](https://lh5.googleusercontent.com/lWV39nXsUmTsoilfQMGjWbe7VRzO2FciSrDGZOsTqTBGWvFH8YanYLtzuRw=w2400)
+![metamask-chrome-store](images/metamask-chrome-extension.png)
 
 2. It will get added as a browser extension on the top right portion. Go ahead and accept the terms and conditions. Create a username and password as well.
-![tandc-metamask](https://lh4.googleusercontent.com/wZvrKpNqu4_cgJOFzLa6Jgn4Wn3FvGu4wNYt1oaNO2yn9JCwfMv8xDyzlXA=w2400)
+![tandc-metamask](images/metamask-create-username-password.png)
 
 3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next.  
-![backup](https://lh5.googleusercontent.com/5T8eSyDTv8zyIGww1Jewir3HreaoVtFh-d9PQb_4QAhWBZklVlO8FyX4u6I=w2400)
+![backup](images/metamask-secret-passcode)
 
 4. Confirm your secret backup phrase and finish your MetaMask wallet set up!
-![setup-final-metamask](https://lh5.googleusercontent.com/axHfBhZp159APCxeS83D2XDRBzJ-LNJkeMYJXz-PuFXdwJRBQGk-A9QOIFY=w2400)
+![setup-final-metamask](metamask_view-account options)
 
-5. Voila! Your account is now created! You can now buy and sell tokens. You can copy your account address to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens. 
-
-Please see the [video of all the above steps](https://drive.google.com/open?id=13-mJWH1nFzmOVvuMRJzC34vDzhzzCUlo) if there’s any confusion. 
+5. Voila! Your account is now created! You can now buy and sell tokens. You can copy your account address to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens.  
 
 
 **We don't recommend or endorse any particular wallets at this time.** Some wallets which _might_ work with Ocean Tokens are:
