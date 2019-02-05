@@ -24,6 +24,10 @@ const DocFooter = ({ post, url, externalName }) => {
 
     return (
         <footer className={styles.footer}>
+            <a href="https://gitter.im/oceanprotocol/Lobby" className={post && !post.html ? styles.active : null}>
+                ✋ Ask a question on Gitter
+            </a>
+            <br>
             <a href={url} className={post && !post.html ? styles.active : null}>
                 <Pencil /> Edit this page on GitHub
                 {externalName && (
