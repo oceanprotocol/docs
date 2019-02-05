@@ -19,13 +19,67 @@ The private key is used to spend the Ocean Tokens in the account. You must keep 
 
 ## Wallet Options
 
-Ocean Tokens are [ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20), so any wallet that supports arbitrary ERC-20 tokens should work to hold Ocean Tokens.
+Ocean Tokens are [ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20), so any wallet that supports arbitrary ERC-20 tokens should work to hold Ocean Tokens. ERC-20 tokens are Ethereum-compatible standard tokens.
 
-There are many kinds of wallets (e.g. paper wallets, hardware wallets, software wallets, custodial wallets), each with its own advantages and disadvantages. There is a tradeoff between security and convenience. We encourage you to search around and read about wallets to understand the options.
+There are many kinds of wallets (e.g. paper wallets, hardware wallets, software wallets, custodial wallets), each with its own advantages and disadvantages. There is a tradeoff between security and convenience. We encourage you to search around and read about wallets to understand the options. In this section, we will explain how to setup a create a MetaMask wallet account. 
 
-**We don't recommend or endorse any particular wallets at this time.** Some wallets which _might_ work with Ocean Tokens are:
+
+## Software Wallet
+
+### MetaMask Setup
+
+We will be walking you through a tutorial on how setup Metamask.
+
+**What is MetaMask?**
+MetaMask is a browser extension that allows web applications to interact with the Ethereum blockchain. In our current setup, browsers like Chrome/Firefox display information by fetching it from a database. Our current web browsers (web 2.0 as it’s called) are not build to interface with distributed databases. This is why MetaMask is needed, as it allows modern web browsers to interface with the Ethereum blockchain.
+
+
+**Why is Metamask required?**
+The unique part about MetaMask is that it serves a dual purpose as an ERC-20 wallet and a Web 3.0 browser. For users, it works as an Ethereum wallet, allowing them to store and send any ERC-20 tokens. For developers, it allows you to design and run Ethereum DApps right in your browser without running a full Ethereum node. MetaMask talks to the Ethereum blockchain for you.
+
+**How to setup Metamask?**
+Here are some setup Instructions for Metamask
+
+1. Go to the Chrome Web Store for extensions and search/install metamask. ![metamask-chrome-store](images/metamask-chrome-extension.png)
+
+2. It will get added as a browser extension on the top right portion. Go ahead and accept the terms and conditions. Create a username and password as well. ![tandc-metamask](images/metamask-create-username-password.png)
+3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next. ![backup](images/metamask-secret-passcode.png)
+4. Confirm your secret backup phrase and finish your MetaMask wallet set up! ![setup-final-metamask](images/metamask_view-account%20options.png)
+5. Voila! Your account is now created! You can now buy and sell tokens. You can copy your account address to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens.  
+
+You can find more resources for setting up [here](https://drive.google.com/open?id=1N68MsRlbxJ4h6otCaTIwN4y904unh1QO).
+
+**We don't recommend or endorse any particular wallets at this time.** Some other wallets which _might_ work with Ocean Tokens are:
 
 - Gnosis Safe
-- MetaMask
 - Trust Wallet
 - Tokenary
+
+## Hardware Wallets
+
+Two of the most popular options are [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/pages/ledger-live).
+
+Here is the tutorial for setting up both. **Please note** that hardware wallet tutorials mentioned are general purpose for all ERC-20 tokens, and not specific to Ocean. 
+
+1. [Ledger](https://coinsutra.com/edger-nano-s-setup-guide/).
+2. [Trezor](https://wiki.trezor.io/User_manual)
+
+## New to this?
+
+**What is a crypto wallet?**
+As the name suggests, a crypto wallet is a type of digital wallet that stores cryptocurrencies. It uses private and public key based encryption to allow users to send and receive cryptocurrencies.
+
+**Why do we need a wallet?**
+Unlike traditional pocket wallets, digital wallets do not actually store the currency. For example, your bank app or website does not store the money. It just shows what is recorded on the bank’s servers. The difference for a cryptocurrency is that the record of your transactions are written onto the blockchain, so everyone who is a part of the blockchain has access to these transaction records. A crypto wallet is a software program that interfaces with these various blockchains to show the final recorded amount so the wallet owners can monitor their balance, and send/receive money. 
+
+**What are the different types of wallets?**
+Just as wallets come in various shapes and sizes in the real world, several types crypto-wallets are also available offering different ways of storing your cryptocurrencies. Each type has its own strengths and weaknesses. Here’s a brief overview
+
+| **Type of Wallet** | **Strengths** | **Weaknesses**
+| --- | --- | --- |
+| Desktop or mobile | Can be downloaded and stored on the desktop or mobile device. Can only be accessed through this one device so it&#39;s highly secure. Mobile wallets have the additional benefit of being portable | If the computer/phone is hacked or gets a virus, it&#39;s possible that your funds could be lost forever. Mobile wallets are also restricted by limited space so tend to be smaller. 
+| Hardware | The private keys are stored on a physical device such as a USB stick.Hardware wallets have the ability to make transactions online, but are very secure because they are stored offline. | If you lose your hardware wallet, all your funds are lost. So this may not be the best option if you&#39;re careless.
+| Software | These are cloud-based wallets that are accessible over the internet. They are the most convenient to access, and are currently the most popular way to store cryptos. | Since online wallets are controlled by third parties, this centralization leads to a greater risk of your private keys being stolen through hacking. |   |
+| Paper | A physical copy or printout of your public and private keys. Highly secure, portable and easy to store. These can come in the form of printing out hexa numbers or via a QR code.   | Similar weaknesses to a hardware wallet, that if you loose the keys, then you don&#39;t have any access. 
+|   |   |   |   |
+This article isn't a deep-dive into how various wallets work, but is a primer into how to buy and sell cryptos. For a more in-depth understanding, you can [check out this article](https://blockgeeks.com/guides/cryptocurrency-wallet-guide/).
