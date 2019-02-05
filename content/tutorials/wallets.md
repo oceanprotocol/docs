@@ -42,8 +42,7 @@ Here are some setup Instructions for Metamask
 
 1. Go to the Chrome Web Store for extensions and search/install metamask. ![metamask-chrome-store](images/metamask-chrome-extension.png)
 
-2. It will get added as a browser extension on the top right portion. Go ahead and accept the terms and conditions. Create a username and password as well.
-![tandc-metamask](images/metamask-create-username-password.png)
+2. It will get added as a browser extension on the top right portion. Go ahead and accept the terms and conditions. Create a username and password as well. ![tandc-metamask](images/metamask-create-username-password.png)
 3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next. ![backup](images/metamask-secret-passcode.png)
 4. Confirm your secret backup phrase and finish your MetaMask wallet set up! ![setup-final-metamask](images/metamask_view-account%20options.png)
 5. Voila! Your account is now created! You can now buy and sell tokens. You can copy your account address to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens.  
@@ -61,6 +60,7 @@ You can find more resources for setting up [here](https://drive.google.com/open?
 Two of the most popular options are [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/pages/ledger-live).
 
 Here is the tutorial for setting up both. **Please note** that hardware wallet tutorials mentioned are general purpose for all ERC-20 tokens, and not specific to Ocean. 
+
 1. [Ledger](https://coinsutra.com/edger-nano-s-setup-guide/).
 2. [Trezor](https://wiki.trezor.io/User_manual)
 
