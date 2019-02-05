@@ -44,7 +44,7 @@ Here are some setup Instructions for Metamask
 
 2. It will get added as a browser extension on the top right portion. Go ahead and accept the terms and conditions. Create a username and password as well. ![tandc-metamask](images/metamask-create-username-password.png)
 3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next. ![backup](images/metamask-secret-passcode.png)
-4. Confirm your secret backup phrase and finish your MetaMask wallet set up! ![setup-final-metamask](images/metamask_view-account%20options.png)
+4. Confirm your secret backup phrase and finish your MetaMask wallet set up! ![setup-final-metamask](images/metamask_view-account-options.png)
 5. Voila! Your account is now created! You can now buy and sell tokens. You can copy your account address to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens.  
 
 You can find more resources for setting up [here](https://drive.google.com/open?id=1N68MsRlbxJ4h6otCaTIwN4y904unh1QO).
