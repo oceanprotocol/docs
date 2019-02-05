@@ -36,10 +36,9 @@ MetaMask is a browser extension that allows web applications to interact with th
 The unique part about MetaMask is that it serves a dual purpose as an ERC-20 wallet and a Web 3.0 browser. For users, it works as an Ethereum wallet, allowing them to store and send any ERC-20 tokens. For developers, it allows you to design and run Ethereum DApps right in your browser without running a full Ethereum node. MetaMask talks to the Ethereum blockchain for you.
 
 **How to setup Metamask?**
-Here are some setup Instructions for Metamask
+Here are some setup Instructions for Metamask:
 
 1. Go to the Chrome Web Store for extensions and search/install metamask. ![metamask-chrome-store](images/metamask-chrome-extension.png)
-
 2. It will get added as a browser extension on the top right portion. Go ahead and accept the terms and conditions. Create a username and password as well. ![tandc-metamask](images/metamask-create-username-password.png)
 3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next. ![backup](images/metamask-secret-passcode.png)
 4. Confirm your secret backup phrase and finish your MetaMask wallet set up! ![setup-final-metamask](images/metamask_view-account-options.png)

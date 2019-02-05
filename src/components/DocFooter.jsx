@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ReactComponent as Pencil } from '../images/pencil.svg'
 import styles from './DocFooter.module.scss'
-import { githubContentPath, githubDevOceanPath } from '../../config'
+import { social, githubContentPath, githubDevOceanPath } from '../../config'
 
 const DocFooter = ({ post, url, externalName }) => {
     let path
@@ -24,6 +24,7 @@ const DocFooter = ({ post, url, externalName }) => {
 
     return (
         <footer className={styles.footer}>
+            <a href={social.gitter}>✋ Ask a question on Gitter</a>
             <a href={url} className={post && !post.html ? styles.active : null}>
                 <Pencil /> Edit this page on GitHub
                 {externalName && (
