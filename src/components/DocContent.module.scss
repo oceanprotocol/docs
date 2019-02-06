@@ -28,13 +28,16 @@
         word-break: normal;
     }
 
-    :not(pre) > code {
+    // stylelint-disable selector-no-qualifying-type
+    :not(pre) > code,
+    :not(pre) > code[class*='language-'] {
         background: darken($brand-white, 5%);
         color: $brand-grey-dark;
         display: inline-block;
         padding-left: .3rem;
         padding-right: .3rem;
     }
+    // stylelint-enable selector-no-qualifying-type
 
     pre {
         display: block;
