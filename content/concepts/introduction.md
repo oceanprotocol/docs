@@ -23,14 +23,12 @@ Ocean Protocol aims to unlock data, for more equitable outcomes for users of dat
 
 ## Papers
 
-There are more details on the
-[Ocean Protocol home page](https://oceanprotocol.com/#papers),
-and in the whitepapers:
+All papers can be retrieved from the [Papers section](https://oceanprotocol.com/protocol/#papers) on our home page:
 
-- [Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) - This paper presents Ocean Protocol. Ocean is a decentralized protocol and network of artificial intelligence (AI) data/services. It incentivizes for a vast supply of relevant AI data/services.
-- [Business Whitepaper](https://oceanprotocol.com/business-whitepaper.pdf) - This document presents a summary of the business model and ecosystem of Ocean Protocol. In addition, it describes the logic behind the Ocean utility token and the economic incentives driving the Protocol. It is complementary to the technical whitepaper for Ocean Protocol.
-- [Marketplace Framework](https://oceanprotocol.com/marketplace-framework.pdf) - This document presents a summary of the core marketplace attributes and components required to facilitate the successful deployment of the decentralized data exchange protocol and network called Ocean Protocol.
+- **Technical Whitepaper** - This paper presents Ocean Protocol. Ocean is a decentralized protocol and network of artificial intelligence (AI) data/services. It incentivizes for a vast supply of relevant AI data/services.
+- **Business Strategy** - This document presents a summary of the business model and ecosystem of Ocean Protocol. It is complementary to the technical whitepaper for Ocean Protocol.
+- **Marketplace Framework** - This document presents a summary of the core marketplace attributes and components required to facilitate the successful deployment of the decentralized data exchange protocol and network called Ocean Protocol.
 
 ## More Information
 
-- [Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)
+- [Blog: Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)
