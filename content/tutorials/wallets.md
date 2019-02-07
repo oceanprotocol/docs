@@ -30,6 +30,8 @@ Just as wallets come in various shapes and sizes in the real world, several type
 | **Paper** | A physical copy or printout of your public and private keys. Highly secure, portable and easy to store. These can come in the form of printing out hexa numbers or via a QR code.   | Similar weaknesses to a hardware wallet, that if you loose the keys, then you don&#39;t have any access.
 <!-- prettier-ignore-end -->
 
+> **We don't recommend or endorse any particular wallets at this time.**
+
 We encourage you to search around and read about wallets to understand your options. This article isn't a deep-dive, but is just a primer into how wallets work. For a more in-depth understanding, you can [check out this article](https://blockgeeks.com/guides/cryptocurrency-wallet-guide/).
 
 ## Software Wallets
@@ -72,22 +74,24 @@ Here are some setup Instructions for MetaMask
 
 You can also watch our [tutorial video snippets](https://www.youtube.com/playlist?list=PL_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help on setting up MetaMask.
 
-**We don't recommend or endorse any particular wallets at this time.**
+### Other Software Wallets
 
 Some other software wallets which _might_ work with Ocean Tokens are:
 
-- Gnosis Safe
-- Trust Wallet
-- Tokenary
+- [Gnosis Safe](https://safe.gnosis.io)
+- [Trust Wallet](https://trustwallet.com)
+- [Tokenary](https://tokenary.io)
 
 ## Hardware Wallets
 
 Two of the most popular options are [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/).
 
-Here are tutorials for setting up both. Please note that these hardware wallet tutorials are general purpose for all ERC-20 tokens, and not specific to Ocean.
+Here are tutorials for setting up both.
 
 1. [Trezor User Manual](https://wiki.trezor.io/User_manual)
 2. [Setting Up The Ledger Nano S: A Beginner’s Guide](https://coinsutra.com/edger-nano-s-setup-guide/)
+
+> Please note that these hardware wallet tutorials are general purpose for all ERC-20 tokens, and not specific to Ocean Tokens.
 
 ## Terminology
 
