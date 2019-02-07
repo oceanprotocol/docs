@@ -53,10 +53,12 @@ The unique part about MetaMask is that it serves a dual purpose as an ERC-20 wal
 Here are some setup Instructions for Metamask
 
 1. Go to the Chrome Web Store for extensions and search/install metamask. ![metamask-chrome-store](images/metamask-chrome-extension.png)
-2. It will get added as a browser extension on the top right portion. Read through and accept [the terms and conditions](https://tinyurl.com/y77aofoa). Create a [username and password](https://tinyurl.com/y7grkoy2) in the next step. ![tandc-metamask](images/metamask-create-username-password.png)
-3. MetaMask will generate [a secret backup phrase](https://tinyurl.com/yclehlcw) for you. Write it down, store it in a safe place, and click next. ![backup](images/metamask-secret-passcode.png)
+2. It will get added as a browser extension on the top right portion. Read through and accept the terms and conditions. Create a username and password in the next step. ![tandc-metamask](images/metamask-create-username-password.png)
+3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next. ![backup](images/metamask-secret-passcode.png)
 4. Confirm your secret backup phrase and finish your MetaMask wallet set up! ![setup-final-metamask](images/metamask_view-account-options.png)
-5. Voila! [Your account](https://www.youtube.com/watch?v=8vbJc1idDgE&feature=youtu.be) is now created! You can now store tokens in your wallet. You can copy [your account address](https://tinyurl.com/y7ac39db) to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens.  
+5. Voila! Your account is now created! You can now store tokens in your wallet. You can copy your account address to clipboard from the options. This address is where you will be receiving all your ERC-20 tokens.
+
+You can also watch our [tutorial video snippets](https://www.youtube.com/playlist?list=PL_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help on setting up MetaMask.
 
 **We don't recommend or endorse any particular wallets at this time.** Some other software wallets which _might_ work with Ocean Tokens are:
 
