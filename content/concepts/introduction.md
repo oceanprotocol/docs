@@ -21,6 +21,8 @@ Society is becoming increasingly reliant on data, especially with the advent of 
 
 Ocean Protocol aims to unlock data, for more equitable outcomes for users of data, using a thoughtful application of both technology and governance.
 
+For more details, see the blog post "[Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)".
+
 ## Papers
 
 All papers can be retrieved from the [Papers section](https://oceanprotocol.com/protocol/#papers) on our home page:
@@ -28,7 +30,3 @@ All papers can be retrieved from the [Papers section](https://oceanprotocol.com/
 - **Technical Whitepaper** - This paper presents Ocean Protocol. Ocean is a decentralized protocol and network of artificial intelligence (AI) data/services. It incentivizes for a vast supply of relevant AI data/services.
 - **Business Strategy** - This document presents a summary of the business model and ecosystem of Ocean Protocol. It is complementary to the technical whitepaper for Ocean Protocol.
 - **Marketplace Framework** - This document presents a summary of the core marketplace attributes and components required to facilitate the successful deployment of the decentralized data exchange protocol and network called Ocean Protocol.
-
-## More Information
-
-- [Blog: Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)
