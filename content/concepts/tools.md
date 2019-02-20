@@ -9,6 +9,8 @@ description: Tools and examples for developing with Ocean Protocol.
 
 Users can use Plecos to check their metadata before sending it to an Aquarius instance. Plecos is manually updated with a schema file according to [OEP8](https://github.com/oceanprotocol/OEPs/tree/master/8). Find the tool in [PyPI](https://pypi.org/project/plecos/). 
 
+Plecos can be used in a microservice to facilitate data onboarding, as described in the [plecos_service](https://github.com/oceanprotocol/plecos_service) repository. 
+
 <repo name="Plecos"></repo>
 
 ## Examples
