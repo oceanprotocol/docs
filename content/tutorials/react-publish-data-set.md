@@ -130,8 +130,8 @@ class App extends Component {
       parityUri: 'http://localhost:8545',
       secretStoreUri: 'http://localhost:12001',
       threshold: 0,
-      password: 'secret',
-      address: '0x068ed00cf0441e4829d9784fcbe7b9e26d4bd8d0'
+      password: 'node0',
+      address: '0x00bd138abd70e2f00903268f3db08f2d25677c9e'
     })
     console.log('Finished loading contracts!')
   }
