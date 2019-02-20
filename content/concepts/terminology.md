@@ -40,4 +40,4 @@ We published an [Ocean Protocol blog post that explains SEAs in more detail](htt
 ## More Terminology
 
 - See [the page about Ocean's Software Components](/concepts/components/).
-- See [the page about wallets (and other Ethereum terminology)](/tutorials/wallets/).
+- See [the page about wallets (and other Ethereum terminology)](/concepts/wallets/).
