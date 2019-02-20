@@ -28,6 +28,7 @@
         - name: API reference
           url: /references/squid-py/
     - name: squid-java
+    - name: Plecos
 
 - group: OceanDB
   items:
