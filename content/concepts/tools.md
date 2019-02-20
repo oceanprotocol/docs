@@ -5,7 +5,9 @@ description: Tools and examples for developing with Ocean Protocol.
 
 ## Tools
 
-Coming soon!
+[Plecos](https://github.com/oceanprotocol/plecos) is a Python tool to check metadata (a JSON file) to see if it conforms to the [OEP8 schema](https://github.com/oceanprotocol/OEPs/tree/master/8). Users can use Plecos to check their metadata before sending it to an Aquarius instance.
+
+<repo name="Plecos"></repo>
 
 ## Examples
 
