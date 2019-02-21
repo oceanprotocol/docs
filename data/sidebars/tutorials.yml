@@ -8,6 +8,10 @@
       link: /tutorials/get-ether-and-ocean-tokens/
     - title: Set Up Azure Storage
       link: /tutorials/azure-for-brizo/
+    - title: Set Up Amazon S3 Storage
+      link: /tutorials/amazon-s3-for-brizo/
+    - title: Set Up On-Premise Storage
+      link: /tutorials/on-premise-for-brizo/
 
 - group: React App Tutorial (squid-js)
   items:
