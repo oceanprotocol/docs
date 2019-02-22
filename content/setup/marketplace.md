@@ -51,7 +51,7 @@ There are many ways to create an Ocean marketplace app. For example, you could u
 
 Note: There are examples of how to use squid-py in the [Tutorials](/tutorials/introduction/). squid-py is to Ocean like boto3 is to AWS.
 
-Of course, you could always write your own Squid library in the language of your choice. A squid-java library is in development.
+Of course, you could always write your own Squid library in the language of your choice.
 
 ## Run Your Marketplace App in Production
 

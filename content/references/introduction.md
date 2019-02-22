@@ -16,7 +16,4 @@ References of all the functions and methods used in our libraries:
 
 <repo name="squid-js"></repo>
 <repo name="squid-py"></repo>
-
-ReadTheDocs hosts the [squid-py API Reference Docs](https://squid-py.readthedocs.io/en/latest/).
-
 <repo name="squid-java"></repo>

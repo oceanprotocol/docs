@@ -22,3 +22,8 @@
   items:
     - title: API Reference
       link: /references/squid-py/
+
+- group: squid-java
+  items:
+    - title: API Reference
+      link: /references/squid-java/

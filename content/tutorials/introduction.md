@@ -3,7 +3,7 @@ title: Overview of the Tutorials
 description: What you can expect to find in these Ocean Protocol tutorials.
 ---
 
-The idea of these tutorials is to show you how to use squid-js (JavaScript) and squid-py (Python) to:
+The idea of these tutorials is to show you how to use squid-js (JavaScript), squid-py (Python) and squid-java to:
 
 - publish a data set
 - get and use a data set
