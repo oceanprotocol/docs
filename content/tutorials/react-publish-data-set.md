@@ -11,7 +11,7 @@ Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/
 
 ## Define Asset
 
-First, let's add the asset that we want to publish.
+First, let's add the [asset](/concepts/terminology/#asset-or-data-asset) that we want to publish.
 
 To do that, we need to add the following code after `window.ethereum.enable()` line, defining our asset based on the [OEP-08](https://github.com/oceanprotocol/OEPs/tree/master/8) metadata structure:
 
