@@ -7,7 +7,7 @@ Before reading this page, you should understand some [Ocean-specific terminology
 
 ## Aquarius
 
-Marketplaces run Aquarius to store and manage metadata about the data assets available in their marketplace. It provides an HTTP API for interacting with an off-chain database ([OceanDB](/concepts/components/#oceandb-drivers)).
+Marketplaces run Aquarius to store and manage metadata about the [assets](/concepts/terminology/#asset-or-data-asset) available in their marketplace. It provides an HTTP API for interacting with an off-chain database ([OceanDB](/concepts/components/#oceandb-drivers)).
 
 <repo name="aquarius"></repo>
 
@@ -15,7 +15,7 @@ Marketplaces run Aquarius to store and manage metadata about the data assets ava
 
 Publishers run Brizo to manage interactions with marketplaces and consumers.
 It interacts with the publisher's cloud and/or on-premise infrastructure.
-The most basic scenario for a publisher is to provide access to the assets the publisher owns or manages, but [Brizo can do much more](/concepts/architecture/#brizo).
+The most basic scenario for a publisher is to provide access to the [assets](/concepts/terminology/#asset-or-data-asset) the publisher owns or manages, but [Brizo can do much more](/concepts/architecture/#brizo).
 
 <repo name="brizo"></repo>
 
@@ -33,7 +33,7 @@ See also: [Run a Keeper](/setup/keeper/)
 
 ## Pleuston
 
-An example marketplace front-end for consumers to explore, download, and publish data assets within the Ocean Protocol network. Implemented using [React](https://reactjs.org/) and [🦑 squid-js](https://github.com/oceanprotocol/squid-js).
+An example marketplace front-end for consumers to explore, download, and publish [assets](/concepts/terminology/#asset-or-data-asset) within the Ocean Protocol network. Implemented using [React](https://reactjs.org/) and [🦑 squid-js](https://github.com/oceanprotocol/squid-js).
 
 <repo name="pleuston"></repo>
 
@@ -49,7 +49,7 @@ Client libraries used by applications (such as Pleuston or Jupyter notebooks) to
 
 ## OceanDB Drivers
 
-OceanDB is an off-chain database for storing metadata about data assets.
+OceanDB is an off-chain database for storing metadata about [assets](/concepts/terminology/#asset-or-data-asset).
 
 <repo name="oceandb-mongodb-driver"></repo>
 <repo name="oceandb-bigchaindb-driver"></repo>
@@ -61,7 +61,7 @@ These drivers are extended from a high-level module implementing OceanDB functio
 
 ## Secret Store
 
-A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store asset access-control keys.
+A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store [asset](/concepts/terminology/#asset-or-data-asset) access-control keys.
 
 There are several clients for integrating the Parity Secret Store into Ocean:
 

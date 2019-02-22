@@ -11,7 +11,7 @@ You can [try some free, online Jupyter notebooks](/tutorials/jupyter-notebooks/)
 
 You can run and try every [Ocean software component](/concepts/components/) in your local machine, all at once, using Docker Compose.
 
-First, you must [set up some storage on Azure](/tutorials/azure-for-brizo/). (Yes, we know that's not quick. Some day there will be a local storage option and then this really will be quick.)
+First, you must [set up some storage on Azure](/tutorials/azure-for-brizo/). (Yes, we know that's not quick. We're working on making a quicker option.)
 
 Then:
 

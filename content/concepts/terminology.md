@@ -5,7 +5,7 @@ description: Terminology specific to Ocean Protocol.
 
 ## Asset or Data Asset
 
-A data set or data service.
+Anything that can be registered with and made available via the Ocean Network. Examples include data sets, trained model parameters, pipelines, and data-cleaning services.
 
 ## Data Owner or Data Service Provider
 
@@ -17,7 +17,7 @@ Note: Initially, most data owners or data service providers will also be the pub
 
 A service which mediates access to assets on behalf of data owners or data service providers.
 
-Note: Initially, most publishers will also be the owners of the data assets they publish.
+Note: Initially, most publishers will also be the owners of the assets they publish.
 
 ## Consumer
 
@@ -33,7 +33,7 @@ A person or a software service that checks some steps in transactions. For examp
 
 ## Service Execution Agreement (SEA)
 
-A contract-like agreement between a provider, a consumer, and a verifier, specifying what data assets are to be delivered (from provider to consumer), the conditions that must be met, and the rewards for fulfilling the conditions.
+A contract-like agreement between a provider, a consumer, and a verifier, specifying what assets are to be delivered (from provider to consumer), the conditions that must be met, and the rewards for fulfilling the conditions.
 
 We published an [Ocean Protocol blog post that explains SEAs in more detail](https://blog.oceanprotocol.com/exploring-the-sea-service-execution-agreements-65f7523d85e2).
 
