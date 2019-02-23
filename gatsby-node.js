@@ -250,6 +250,34 @@ exports.createPages = ({ graphql, actions }) => {
                 })
 
                 //
+                // Create pages from Javadoc json files
+                //
+                const javadocSpecs = ['./data/squid-java.json']
+                const javadocTemplate = path.resolve(
+                    './src/templates/Javadoc/index.jsx'
+                )
+
+                javadocSpecs.forEach(spec => {
+                    const javadoc = require(spec) // eslint-disable-line
+
+                    const name = path
+                        .basename(spec)
+                        .split('.json')
+                        .join('')
+
+                    const slug = `/references/${name}/`
+
+                    createPage({
+                        path: slug,
+                        component: javadocTemplate,
+                        context: {
+                            slug,
+                            javadoc
+                        }
+                    })
+                })
+
+                //
                 // create redirects
                 //
                 redirects.forEach(({ from, to }) => {

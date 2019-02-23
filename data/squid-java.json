@@ -1,0 +1,3060 @@
+{
+    "src/main/java/com/oceanprotocol/squid/api/AccountsAPI.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nExposes the Public API related with the management of Accounts"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nReturns a list of the accounts registered in Keeper"
+            },
+            {
+                "name": "@return",
+                "text": "a List of all Account registered in Keeper"
+            },
+            {
+                "name": "@throws",
+                "text": "EthereumException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nReturns the Balance of an account"
+            },
+            {
+                "name": "@param",
+                "text": "account"
+            },
+            {
+                "name": "@return",
+                "text": "the Balance of the account"
+            },
+            {
+                "name": "@throws",
+                "text": "EthereumException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nRequests Ocean Tokens from the OceanMarket Smart Contract"
+            },
+            {
+                "name": "@param",
+                "text": "amount"
+            },
+            {
+                "name": "@return",
+                "text": "a TransactionReceipt from the transaction sent to the smart contract"
+            },
+            {
+                "name": "@throws",
+                "text": "EthereumException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/AssetsAPI.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nExposes the Public API related with Assets"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCreates a new DDO, registering it on-chain through DidRegistry contract and off-chain in Aquarius"
+            },
+            {
+                "name": "@param",
+                "text": "metadata"
+            },
+            {
+                "name": "@param",
+                "text": "publisherAccount"
+            },
+            {
+                "name": "@param",
+                "text": "serviceEndpoints"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of the DDO created"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCreates a new DDO, registering it on-chain through DidRegistry contract and off-chain in Aquarius"
+            },
+            {
+                "name": "@param",
+                "text": "metadata"
+            },
+            {
+                "name": "@param",
+                "text": "publisherAccount"
+            },
+            {
+                "name": "@param",
+                "text": "serviceEndpoints"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of the DDO created"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets a DDO from a DID"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of the DDO represented by the DID"
+            },
+            {
+                "name": "@throws",
+                "text": "EthereumException"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets all the DDO that match the search criteria"
+            },
+            {
+                "name": "@param",
+                "text": "text"
+            },
+            {
+                "name": "@return",
+                "text": "a List with all the DDOs found"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets all the DDOs that match the search criteria"
+            },
+            {
+                "name": "@param",
+                "text": "text"
+            },
+            {
+                "name": "@param",
+                "text": "offset"
+            },
+            {
+                "name": "@param",
+                "text": "page"
+            },
+            {
+                "name": "@return",
+                "text": "a List with all the DDOs found"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets all the DDOs that match the parameters of the query"
+            },
+            {
+                "name": "@param",
+                "text": "params"
+            },
+            {
+                "name": "@param",
+                "text": "offset"
+            },
+            {
+                "name": "@param",
+                "text": "page"
+            },
+            {
+                "name": "@param",
+                "text": "sort"
+            },
+            {
+                "name": "@return",
+                "text": "a List with all the DDOs found"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets all the DDOs that match the parameters of the query"
+            },
+            {
+                "name": "@param",
+                "text": "params"
+            },
+            {
+                "name": "@return",
+                "text": "a List with all the DDOs found"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDownloads an Asset previously ordered through a Service Agreement"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAccount"
+            },
+            {
+                "name": "@param",
+                "text": "basePath"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the consume flow was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "ConsumeServiceException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDownloads an Asset previously ordered through a Service Agreement"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAccount"
+            },
+            {
+                "name": "@param",
+                "text": "basePath"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the consume flow was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "ConsumeServiceException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nPurchases an Asset represented by a DID. It implies to initialize a Service Agreement between publisher and consumer"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAccount"
+            },
+            {
+                "name": "@return",
+                "text": "a Flowable instance over an OrderResult to get the result of the flow in an asynchronous fashion"
+            },
+            {
+                "name": "@throws",
+                "text": "OrderException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/config/OceanConfig.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nClass that keeps all the configurations to initialize the API"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nClass to hold the result of a Configuration's validation"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nValidates that all the needed properties are set in the configuration"
+            },
+            {
+                "name": "@param",
+                "text": "oceanConfig"
+            },
+            {
+                "name": "@return",
+                "text": "an OceanConfigValidation object that indicates if the configuration is valid"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/config/OceanConfigFactory.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nFactory to get instances of OceanConfig"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCreates an OceanConfig object from a set of properties"
+            },
+            {
+                "name": "@param",
+                "text": "properties"
+            },
+            {
+                "name": "@return",
+                "text": "an OceanConfig value with all the values set"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/helper/OceanInitializationHelper.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nHelper to initialize all the managers, services and contracts needed for the API"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConstructor"
+            },
+            {
+                "name": "@param",
+                "text": "oceanConfig"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of KeeperService"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized KeeperService object"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of AquariusService"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized AquariusService object"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of SecretStoreDto"
+            },
+            {
+                "name": "@return",
+                "text": "an initializedSecretStoreDto object"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of EvmDto"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized EvmDto object"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of SecretStoreManager"
+            },
+            {
+                "name": "@param",
+                "text": "secretStoreDto"
+            },
+            {
+                "name": "@param",
+                "text": "evmDto"
+            },
+            {
+                "name": "@return",
+                "text": " an initialized SecretStoreManager object"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of OceanManager"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized OceanManager object"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of AccountsManager"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized AccountsManager object"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize an instance of AssetsManager"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized AssetsManager object"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nLoads the OceanToken contract from Keeper"
+            },
+            {
+                "name": "@param",
+                "text": "keeper"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of OceanToken contract deployed in keeper"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nLoads the OceanMarket contract from Keeper"
+            },
+            {
+                "name": "@param",
+                "text": "keeper"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of OceanMarket contract deployed in keeper"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nLoads the DIDRegistry contract from Keeper"
+            },
+            {
+                "name": "@param",
+                "text": "keeper"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of DIDRegistry contract deployed in keeper"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nLoads the ServiceAgreement contract from Keeper"
+            },
+            {
+                "name": "@param",
+                "text": "keeper"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of ServiceAgreement contract deployed in keeper"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nLoads the PaymentConditions contract from Keeper"
+            },
+            {
+                "name": "@param",
+                "text": "keeper"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of PaymentConditions contract deployed in keeper"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nLoads the AccessConditions contract from Keeper"
+            },
+            {
+                "name": "@param",
+                "text": "keeper"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of AccessConditions contract deployed in keeper"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/impl/AccountsImpl.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nImplementation of AccountsAPI"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConstructor"
+            },
+            {
+                "name": "@param",
+                "text": "accountsManager"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/impl/AssetsImpl.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nImplementation of AssetsAPI"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConstructor"
+            },
+            {
+                "name": "@param",
+                "text": "oceanManager"
+            },
+            {
+                "name": "@param",
+                "text": "assetsManager"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/impl/SecretStoreImpl.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nImplementation of SecretStoreAPI"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConstructor"
+            },
+            {
+                "name": "@param",
+                "text": "secretStoreManager"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/OceanAPI.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nClass that represents the entry point to initialize and use the API"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nPrivate constructor"
+            },
+            {
+                "name": "@param",
+                "text": "oceanConfig"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nTransform a TypeSafe Config object into a Java's Properties"
+            },
+            {
+                "name": "@param",
+                "text": "config"
+            },
+            {
+                "name": "@return",
+                "text": "a Properties object with the configuration of the API"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nBuild an Instance of Ocean API from a Properties object"
+            },
+            {
+                "name": "@param",
+                "text": "properties"
+            },
+            {
+                "name": "@return",
+                "text": "an Initialized OceanAPI object"
+            },
+            {
+                "name": "@throws",
+                "text": "InitializationException"
+            },
+            {
+                "name": "@throws",
+                "text": "InvalidConfiguration"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nBuild an Instance of Ocean API from a TypeSafe Config object"
+            },
+            {
+                "name": "@param",
+                "text": "config"
+            },
+            {
+                "name": "@return",
+                "text": "an Initialized OceanAPI object"
+            },
+            {
+                "name": "@throws",
+                "text": "InitializationException"
+            },
+            {
+                "name": "@throws",
+                "text": "InvalidConfiguration"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets the account used to initialized the API"
+            },
+            {
+                "name": "@return",
+                "text": "the account used to initialized the API"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets the AccountsAPI"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of an Implementation class of AccountsAPI"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets the AssetsAPI"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of an Implementation class of AssetsAPI"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets the SecretStoreAPI"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of an Implementation class of SecretStoreAPI"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/api/SecretStoreAPI.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nExposes the Public API related with encryption functionalities"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nEncrypts a document using Secret Store"
+            },
+            {
+                "name": "@param",
+                "text": "documentId"
+            },
+            {
+                "name": "@param",
+                "text": "content"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the encrypted content"
+            },
+            {
+                "name": "@throws",
+                "text": "EncryptionException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDecrypts a document using Secret Store"
+            },
+            {
+                "name": "@param",
+                "text": "documentId"
+            },
+            {
+                "name": "@param",
+                "text": "encryptedContent"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the decrypted content"
+            },
+            {
+                "name": "@throws",
+                "text": "EncryptionException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/core/sla/functions/LockPayment.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nRepresents a lock payment function"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nExecutes a lock payment function for a Service Agreement between publisher and consumer"
+            },
+            {
+                "name": "@param",
+                "text": "paymentConditions"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@param",
+                "text": "assetInfo"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the function was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "LockPaymentException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/core/sla/ServiceAgreementHandler.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nHandles functionality related with the execution of a Service Agreement"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGenerates a new and random Service Agreement Id"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the new Service Agreement Id"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDefine and execute a Filter over the Service Agreement Contract to listen for an ExecuteAgreement event"
+            },
+            {
+                "name": "@param",
+                "text": "slaContract"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@return",
+                "text": "a Flowable over the Event to handle it in an asynchronous fashion"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDefine and execute a Filter over the Access Condition Contract to listen for an AccesGranted event"
+            },
+            {
+                "name": "@param",
+                "text": "accessConditions"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@return",
+                "text": "a Flowable over the Event to handle it in an asynchronous fashion"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets and Initializes all the conditions associated with a template"
+            },
+            {
+                "name": "@param",
+                "text": "templateId"
+            },
+            {
+                "name": "@param",
+                "text": "addresses"
+            },
+            {
+                "name": "@param",
+                "text": "params"
+            },
+            {
+                "name": "@return",
+                "text": "a List with all the conditions of the template"
+            },
+            {
+                "name": "@throws",
+                "text": "InitializeConditionsException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCompose the different conditionKey hashes using:\n(serviceAgreementTemplateId, address, signature)"
+            },
+            {
+                "name": "@return",
+                "text": "Map of (varible name => conditionKeys)"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCalculates the conditionKey"
+            },
+            {
+                "name": "@param",
+                "text": "templateId"
+            },
+            {
+                "name": "@param",
+                "text": "address Checksum address"
+            },
+            {
+                "name": "@param",
+                "text": "fingerprint"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the condition key"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/ConsumeServiceException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with issues during the consume of a service"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/DDOException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with DDOs issues"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/DIDFormatException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with DID Format issues"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/DIDRegisterException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with DID issues during the Register process"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/EncryptionException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with Encrypt/Decrypt issues"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/EthereumException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with Ethereum interactions issues"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/InitializationException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with issues during the Initialization of the API"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/InitializeConditionsException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with issues during the Initialization of the Conditions of a Service"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/InvalidConfiguration.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with a not valid configuration of the API"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/LockPaymentException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with Lock Payment issues"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/OceanException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBase Class to implement a hierarchy of Functional Ocean's Exceptions"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/OrderException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with issues during the order process"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/ServiceAgreementException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with Service Agreement issues"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/exceptions/ServiceException.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nBusiness Exception related with Service issues"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/external/AquariusService.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nService for Aquarius's Integration"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nBuilds an instance of AquariusService"
+            },
+            {
+                "name": "@param",
+                "text": "url"
+            },
+            {
+                "name": "@return",
+                "text": "AquariusService instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConstructor"
+            },
+            {
+                "name": "@param",
+                "text": "url"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nRegisters a new DDO in Aquarius"
+            },
+            {
+                "name": "@param",
+                "text": "ddo"
+            },
+            {
+                "name": "@return",
+                "text": "the created DDO"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets a DDO from an URL"
+            },
+            {
+                "name": "@param",
+                "text": "url"
+            },
+            {
+                "name": "@return",
+                "text": "the DDO"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets a DDO from the DID"
+            },
+            {
+                "name": "@param",
+                "text": "id"
+            },
+            {
+                "name": "@return",
+                "text": "the DDO"
+            },
+            {
+                "name": "@throws",
+                "text": "Exception"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nUpdates the metadata of a DDO"
+            },
+            {
+                "name": "@param",
+                "text": "id"
+            },
+            {
+                "name": "@param",
+                "text": "ddo"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the update operation was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "Exception"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSearch all the DDOs that match the text passed as a parameter"
+            },
+            {
+                "name": "@param",
+                "text": "param"
+            },
+            {
+                "name": "@param",
+                "text": "offset"
+            },
+            {
+                "name": "@param",
+                "text": "page"
+            },
+            {
+                "name": "@return",
+                "text": "a List of all the DDOs found"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSearch all the DDOs that match the query passed as a parameter"
+            },
+            {
+                "name": "@param",
+                "text": "searchQuery"
+            },
+            {
+                "name": "@return",
+                "text": "a List of all the DDOs found"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/external/BrizoService.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nService for Brizo's Integration"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCalls a Brizo's endpoint to request the initialization of a new Service Agreement"
+            },
+            {
+                "name": "@param",
+                "text": "url"
+            },
+            {
+                "name": "@param",
+                "text": "payload"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if Brizo initialized the Service Agreement correctly"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCalls a Brizo´s endpoint to download an asset"
+            },
+            {
+                "name": "@param",
+                "text": "serviceEndpoint"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAddress"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@param",
+                "text": "url"
+            },
+            {
+                "name": "@param",
+                "text": "destinationPath"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the download was correct"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "URISyntaxException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/external/KeeperService.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitializes the KeeperService object given a Keeper url, user and password"
+            },
+            {
+                "name": "@param",
+                "text": "url Parity Keeper url (ie. http://localhost:8545)"
+            },
+            {
+                "name": "@param",
+                "text": "address User ethereum address"
+            },
+            {
+                "name": "@param",
+                "text": "password User password"
+            },
+            {
+                "name": "@param",
+                "text": "credentialsFile Path to the file with the local credentials"
+            },
+            {
+                "name": "@return",
+                "text": "KeeperService"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the Web3j instance"
+            },
+            {
+                "name": "@return",
+                "text": "web3j"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/helpers/CryptoHelper.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nHelper abstract class with crypto utility methods"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nThe Constant DIGITS."
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven N objects, return the SHA3 of those objects"
+            },
+            {
+                "name": "@param",
+                "text": "data objects"
+            },
+            {
+                "name": "@return",
+                "text": "sha3"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets the hex.\n"
+            },
+            {
+                "name": "@param",
+                "text": "data the data"
+            },
+            {
+                "name": "@return",
+                "text": "the hex"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven an object (byte[], BigInteger, Address, Uint or Number) gets the byte[] with the proper length"
+            },
+            {
+                "name": "@param",
+                "text": "obj"
+            },
+            {
+                "name": "@return",
+                "text": "byte[]"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/helpers/EncodingHelper.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a String return a Bytes32"
+            },
+            {
+                "name": "@param",
+                "text": "input input string"
+            },
+            {
+                "name": "@return",
+                "text": "Bytes32 output"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a byte array returns the first 32 bytes in a new byte array"
+            },
+            {
+                "name": "@param",
+                "text": "byteValue byte[]"
+            },
+            {
+                "name": "@return",
+                "text": "byte[]"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nEncodes a String in Hex"
+            },
+            {
+                "name": "@param",
+                "text": "input string to encode"
+            },
+            {
+                "name": "@return",
+                "text": "Hex string"
+            },
+            {
+                "name": "@throws",
+                "text": "UnsupportedEncodingException Error encoding to Hex"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nEncodes a Hex String in a byte array"
+            },
+            {
+                "name": "@param",
+                "text": "input hex string to encode"
+            },
+            {
+                "name": "@return",
+                "text": "byte[]"
+            },
+            {
+                "name": "@throws",
+                "text": "UnsupportedEncodingException Error encoding to byte array"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConvert a string to hex and after to a byte array"
+            },
+            {
+                "name": "@param",
+                "text": "input"
+            },
+            {
+                "name": "@return",
+                "text": "byte[]"
+            },
+            {
+                "name": "@throws",
+                "text": "UnsupportedEncodingException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nPad a string with zero given a specific length"
+            },
+            {
+                "name": "@param",
+                "text": "input string"
+            },
+            {
+                "name": "@param",
+                "text": "len length of the output string"
+            },
+            {
+                "name": "@return",
+                "text": "string"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConvert a byte[] to a hex string with 0x appended"
+            },
+            {
+                "name": "@param",
+                "text": "input byte[]"
+            },
+            {
+                "name": "@return",
+                "text": "hex string"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nReturn true or false if a input string is in hex format"
+            },
+            {
+                "name": "@param",
+                "text": "input"
+            },
+            {
+                "name": "@return",
+                "text": "bool"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a type and an object, convert to the proper web3j abi type"
+            },
+            {
+                "name": "@param",
+                "text": "type"
+            },
+            {
+                "name": "@param",
+                "text": "value"
+            },
+            {
+                "name": "@return",
+                "text": "String in hex format"
+            },
+            {
+                "name": "@throws",
+                "text": "UnsupportedEncodingException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/helpers/HttpHelper.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nHTTP Helper functions"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP POST request and return the body"
+            },
+            {
+                "name": "@param",
+                "text": "url url to call"
+            },
+            {
+                "name": "@return",
+                "text": "returned http body"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException Http error"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP POST request with parameters and return the body"
+            },
+            {
+                "name": "@param",
+                "text": "url url to call"
+            },
+            {
+                "name": "@param",
+                "text": "list parameters"
+            },
+            {
+                "name": "@return",
+                "text": "returned http body"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException Http error"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP POST request and return the HttpResponse object"
+            },
+            {
+                "name": "@param",
+                "text": "url url to call"
+            },
+            {
+                "name": "@return",
+                "text": "HttpResponse returned"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException Http error"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP POST request and return the HttpResponse object"
+            },
+            {
+                "name": "@param",
+                "text": "url url to call"
+            },
+            {
+                "name": "@return",
+                "text": "HttpResponse returned"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException Http error"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP PUT request and return the HttpResponse object"
+            },
+            {
+                "name": "@param",
+                "text": "url url to call"
+            },
+            {
+                "name": "@return",
+                "text": "HttpResponse returned"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException Http error"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP request with parameters and return the HttpResponse object"
+            },
+            {
+                "name": "@param",
+                "text": "method EntityEnclosingMethod"
+            },
+            {
+                "name": "@param",
+                "text": "list list of params"
+            },
+            {
+                "name": "@param",
+                "text": "payload payload to add to the request"
+            },
+            {
+                "name": "@return",
+                "text": "HttpResponse"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException"
+            },
+            {
+                "name": "@throws",
+                "text": "UnsupportedEncodingException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP request with parameters and return the HttpResponse object"
+            },
+            {
+                "name": "@param",
+                "text": "client HttpClient"
+            },
+            {
+                "name": "@param",
+                "text": "method EntityEnclosingMethod"
+            },
+            {
+                "name": "@param",
+                "text": "list list of params"
+            },
+            {
+                "name": "@param",
+                "text": "payload payload to add to the request"
+            },
+            {
+                "name": "@return",
+                "text": "HttpResponse"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException"
+            },
+            {
+                "name": "@throws",
+                "text": "UnsupportedEncodingException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP GET request and return the HttpResponse object"
+            },
+            {
+                "name": "@param",
+                "text": "url"
+            },
+            {
+                "name": "@return",
+                "text": "HttpResponse"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSend a HTTP GET request and return the HttpResponse object"
+            },
+            {
+                "name": "@param",
+                "text": "client HttpClient"
+            },
+            {
+                "name": "@param",
+                "text": "getMethod GetMethod"
+            },
+            {
+                "name": "@return",
+                "text": "HttpResponse"
+            },
+            {
+                "name": "@throws",
+                "text": "HttpException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDownload the content of a resource"
+            },
+            {
+                "name": "@param",
+                "text": "url"
+            },
+            {
+                "name": "@param",
+                "text": "destinationPath"
+            },
+            {
+                "name": "@return",
+                "text": "Boolean flag"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "URISyntaxException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/helpers/StringsHelper.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a list of strings join all of them using quotes wrapping each item with quotes"
+            },
+            {
+                "name": "@param",
+                "text": "listOfStrings"
+            },
+            {
+                "name": "@return",
+                "text": "output string"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a string with joined items by comma, return a list of items. Each item will have replaced the double quoutes"
+            },
+            {
+                "name": "@param",
+                "text": "joinedString"
+            },
+            {
+                "name": "@return",
+                "text": "list of items"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a String and a map of key values, search in the string the variables using the ${xxx} format\nand replace by the correspondant value of the map\nExample: given: xxx${key1}yyy and \"key1\" -> \"000\" the output will be xxx000yyy"
+            },
+            {
+                "name": "@param",
+                "text": "format input string with ${xxx} variables"
+            },
+            {
+                "name": "@param",
+                "text": "values map with key values to replace in the string"
+            },
+            {
+                "name": "@return",
+                "text": "output string with the variables replaced"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/manager/AccountsManager.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nController class to manage the token functions"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven the KeeperService and AquariusService, returns a new instance of AccountsManager\nusing them as attributes"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService Keeper Dto"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService Provider Dto"
+            },
+            {
+                "name": "@return",
+                "text": "AccountsManager"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nReturns the list of ethereum accounts registered in the Keeper node\nIf getBalance is true, get the ethereum and ocean balance of each account"
+            },
+            {
+                "name": "@return",
+                "text": "List<Account> List of accounts"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nReturns the list of ethereum accounts registered in the Keeper node"
+            },
+            {
+                "name": "@return",
+                "text": "List<Account> List of accounts without Balance information"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven an account returns a Balance object with the Ethereum and Ocean balance"
+            },
+            {
+                "name": "@param",
+                "text": "accountAddress account"
+            },
+            {
+                "name": "@return",
+                "text": "Balance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven an account returns the Ethereum balance"
+            },
+            {
+                "name": "@param",
+                "text": "accountAddress account"
+            },
+            {
+                "name": "@return",
+                "text": "ethereum balance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven an account returns the Ocean balance\nContract: OceanToken\nMethod: balanceOf"
+            },
+            {
+                "name": "@param",
+                "text": "accountAddress account"
+            },
+            {
+                "name": "@return",
+                "text": "ocean balance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nRequests Ocean Tokens from the OceanMarket Smart Contract\nContract: OceanMarket\nMethod: requestTokens"
+            },
+            {
+                "name": "@param",
+                "text": "amount amount of tokens requestsd"
+            },
+            {
+                "name": "@return",
+                "text": "TransactionReceipt"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/manager/AssetsManager.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nManages the functionality related with Assets"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets an instance of AssetManager"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized instance of AssetManager"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nPublishes in Aquarius the metadata of a DDO"
+            },
+            {
+                "name": "@param",
+                "text": "ddo"
+            },
+            {
+                "name": "@return",
+                "text": "the published DDO"
+            },
+            {
+                "name": "@throws",
+                "text": "Exception"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nPublishes in Aquarius the metadata of a DDO"
+            },
+            {
+                "name": "@param",
+                "text": "metadata"
+            },
+            {
+                "name": "@param",
+                "text": "serviceEndpoint"
+            },
+            {
+                "name": "@return",
+                "text": "the published DDO"
+            },
+            {
+                "name": "@throws",
+                "text": "Exception"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets a DDO from the DID"
+            },
+            {
+                "name": "@param",
+                "text": "id"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of the DDO represented by the DID"
+            },
+            {
+                "name": "@throws",
+                "text": "Exception"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nUpdates the metadata of a DDO"
+            },
+            {
+                "name": "@param",
+                "text": "id"
+            },
+            {
+                "name": "@param",
+                "text": "ddo"
+            },
+            {
+                "name": "@return",
+                "text": "A flag that indicates if the update was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "Exception"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets all the DDOs that match the search criteria"
+            },
+            {
+                "name": "@param",
+                "text": "text"
+            },
+            {
+                "name": "@param",
+                "text": "offset"
+            },
+            {
+                "name": "@param",
+                "text": "page"
+            },
+            {
+                "name": "@return",
+                "text": "List of DDOs"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets all the DDOs that match the parameters of the query"
+            },
+            {
+                "name": "@param",
+                "text": "params"
+            },
+            {
+                "name": "@param",
+                "text": "offset"
+            },
+            {
+                "name": "@param",
+                "text": "page"
+            },
+            {
+                "name": "@param",
+                "text": "sort"
+            },
+            {
+                "name": "@return",
+                "text": "a List with all the DDOs found"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/manager/BaseManager.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nAbstract class for the Managers"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nConstructor"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService KeeperService"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService AquariusService"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the KeeperService"
+            },
+            {
+                "name": "@return",
+                "text": "KeeperService"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the KeeperService"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService KeeperService"
+            },
+            {
+                "name": "@return",
+                "text": "this"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the AquariusService"
+            },
+            {
+                "name": "@return",
+                "text": "AquariusService"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the AquariusService"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService AquariusService"
+            },
+            {
+                "name": "@return",
+                "text": "this"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the SecretStoreDto"
+            },
+            {
+                "name": "@return",
+                "text": "SecretStoreDto"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the SecretStoreDto"
+            },
+            {
+                "name": "@param",
+                "text": "secretStoreDto SecretStoreDto"
+            },
+            {
+                "name": "@return",
+                "text": "this"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the SecretStoreManager"
+            },
+            {
+                "name": "@return",
+                "text": "SecretStoreDto"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the SecretStoreManager"
+            },
+            {
+                "name": "@param",
+                "text": "secretStoreManager SecretStoreDto"
+            },
+            {
+                "name": "@return",
+                "text": "this"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the EvmDto"
+            },
+            {
+                "name": "@return",
+                "text": "EvmDto"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the EvmDto necessary to stablish the encryption/decryption flow necessary by Secret Store"
+            },
+            {
+                "name": "@param",
+                "text": "evmDto EvmDto"
+            },
+            {
+                "name": "@return",
+                "text": "this"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize the OceanToken object using the address given as parameter to point to the deployed contract"
+            },
+            {
+                "name": "@param",
+                "text": "address OceanToken contract address"
+            },
+            {
+                "name": "@return",
+                "text": "AccountsManager instance"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nIt sets the OceanToken stub instance"
+            },
+            {
+                "name": "@param",
+                "text": "contract OceanToken instance"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize the Token Contract given a contract address"
+            },
+            {
+                "name": "@param",
+                "text": "address OceanToken contract address"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nIt sets the OceanMarket stub instance"
+            },
+            {
+                "name": "@param",
+                "text": "contract OceanMarket instance"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize the OceanMarket Contract given a contract address"
+            },
+            {
+                "name": "@param",
+                "text": "address OceanMarket contract address"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize the DIDRegistry object using the address given as parameter to point to the deployed contract"
+            },
+            {
+                "name": "@param",
+                "text": "address DIDRegistry contract address"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException IOException"
+            },
+            {
+                "name": "@throws",
+                "text": "CipherException CipherException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nIt sets the ServiceAgreement stub instance"
+            },
+            {
+                "name": "@param",
+                "text": "contract ServiceAgreement instance"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nIt sets the PaymentConditions stub instance"
+            },
+            {
+                "name": "@param",
+                "text": "contract PaymentConditions instance"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nIt sets the AccessConditions stub instance"
+            },
+            {
+                "name": "@param",
+                "text": "contract AccessConditions instance"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nIt sets the DIDRegistry stub instance"
+            },
+            {
+                "name": "@param",
+                "text": "contract DIDRegistry instance"
+            },
+            {
+                "name": "@return",
+                "text": "BaseManager instance"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/manager/OceanManager.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nHandles several operations related with Ocean's flow"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven the KeeperService and AquariusService, returns a new instance of OceanManager\nusing them as attributes"
+            },
+            {
+                "name": "@param",
+                "text": "keeperService Keeper Dto"
+            },
+            {
+                "name": "@param",
+                "text": "aquariusService Provider Dto"
+            },
+            {
+                "name": "@return",
+                "text": "OceanManager"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a DDO, returns a DID created using the ddo"
+            },
+            {
+                "name": "@param",
+                "text": "ddo"
+            },
+            {
+                "name": "@return",
+                "text": "DID"
+            },
+            {
+                "name": "@throws",
+                "text": "DIDFormatException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a DID, scans the DIDRegistry events on-chain to resolve the\nMetadata API url and return the DDO found"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@return",
+                "text": "DDO"
+            },
+            {
+                "name": "@throws",
+                "text": "IOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGiven a DID and a Metadata API url, register on-chain the DID.\nIt allows to resolve DDO's using DID's as input"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "url metadata url"
+            },
+            {
+                "name": "@return",
+                "text": "boolean success"
+            },
+            {
+                "name": "@throws",
+                "text": "DIDRegisterException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nCreates a new DDO, registering it on-chain through DidRegistry contract and off-chain in Aquarius"
+            },
+            {
+                "name": "@param",
+                "text": "metadata"
+            },
+            {
+                "name": "@param",
+                "text": "address"
+            },
+            {
+                "name": "@param",
+                "text": "serviceEndpoints"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "an instance of the DDO created"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nPurchases an Asset represented by a DID. It implies to initialize a Service Agreement between publisher and consumer"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAccount"
+            },
+            {
+                "name": "@return",
+                "text": "a Flowable instance over an OrderResult to get the result of the flow in an asynchronous fashion"
+            },
+            {
+                "name": "@throws",
+                "text": "OrderException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nInitialize a new Service Agreement between a publisher and a consumer"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "ddo"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAccount"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@return",
+                "text": "a Flowable over an ExecuteAgreementResponse"
+            },
+            {
+                "name": "@throws",
+                "text": "DDOException"
+            },
+            {
+                "name": "@throws",
+                "text": "ServiceException"
+            },
+            {
+                "name": "@throws",
+                "text": "ServiceAgreementException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nExecutes the lock payment"
+            },
+            {
+                "name": "@param",
+                "text": "ddo"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the function was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "ServiceException"
+            },
+            {
+                "name": "@throws",
+                "text": "LockPaymentException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDownloads an Asset previously ordered through a Service Agreement"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAddress"
+            },
+            {
+                "name": "@param",
+                "text": "basePath"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the consume operation was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "ConsumeServiceException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDownloads an Asset previously ordered through a Service Agreement"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "serviceDefinitionId"
+            },
+            {
+                "name": "@param",
+                "text": "consumerAddress"
+            },
+            {
+                "name": "@param",
+                "text": "basePath"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "a flag that indicates if the consume operation was executed correctly"
+            },
+            {
+                "name": "@throws",
+                "text": "ConsumeServiceException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nEncrypts the URLs of an Asset"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "contentUrls"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the encrypted URLs"
+            },
+            {
+                "name": "@throws",
+                "text": "EncryptionException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDecrypts the URLS of an Asset"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "encryptedUrls"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the decrypted URLs"
+            },
+            {
+                "name": "@throws",
+                "text": "EncryptionException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets the Access Conditions Params of a DDO"
+            },
+            {
+                "name": "@param",
+                "text": "did"
+            },
+            {
+                "name": "@param",
+                "text": "price"
+            },
+            {
+                "name": "@return",
+                "text": "a Map with the params of the Access Conditions"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets some basic info of an Access Service"
+            },
+            {
+                "name": "@param",
+                "text": "accessService"
+            },
+            {
+                "name": "@return",
+                "text": "BasicAssetInfo"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/manager/SecretStoreManager.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nManages the functionality related with the Secret Store"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGets an instance of the SecretStoreManager"
+            },
+            {
+                "name": "@param",
+                "text": "ssDto"
+            },
+            {
+                "name": "@param",
+                "text": "evmDto"
+            },
+            {
+                "name": "@return",
+                "text": "an initialized instance of SecretStoreManager"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nEncrypts a document using Secret Store"
+            },
+            {
+                "name": "@param",
+                "text": "resourceId"
+            },
+            {
+                "name": "@param",
+                "text": "content"
+            },
+            {
+                "name": "@param",
+                "text": "threshold"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the encrypted content"
+            },
+            {
+                "name": "@throws",
+                "text": "EncryptionException"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nDecrypts a document using Secret Store"
+            },
+            {
+                "name": "@param",
+                "text": "resourceId"
+            },
+            {
+                "name": "@param",
+                "text": "encryptedContent"
+            },
+            {
+                "name": "@return",
+                "text": "a String with the decrypted content"
+            },
+            {
+                "name": "@throws",
+                "text": "EncryptionException"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/models/HttpResponse.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nConstructor"
+            },
+            {
+                "name": "@param",
+                "text": "statusCode status code"
+            },
+            {
+                "name": "@param",
+                "text": "body body string"
+            },
+            {
+                "name": "@param",
+                "text": "charset charset"
+            },
+            {
+                "name": "@param",
+                "text": "contentLength content length"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGe the http status code"
+            },
+            {
+                "name": "@return",
+                "text": "status code"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the http status code"
+            },
+            {
+                "name": "@param",
+                "text": "statusCode status code"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the body"
+            },
+            {
+                "name": "@return",
+                "text": "string body"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the body"
+            },
+            {
+                "name": "@param",
+                "text": "body string"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the charset"
+            },
+            {
+                "name": "@return",
+                "text": "charset"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet the charset"
+            },
+            {
+                "name": "@param",
+                "text": "charset charset"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet content length"
+            },
+            {
+                "name": "@return",
+                "text": "content length"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nSet content length"
+            },
+            {
+                "name": "@param",
+                "text": "contentLength"
+            }
+        ],
+        [
+            {
+                "name": "default",
+                "text": "\n\nGet the string representation of the object"
+            },
+            {
+                "name": "@return",
+                "text": "string"
+            }
+        ]
+    ],
+    "src/main/java/com/oceanprotocol/squid/models/service/AccessService.java": [
+        [
+            {
+                "name": "default",
+                "text": "\n\nGenerates a Hash representing the Access Service Agreement\nThe Hash is having the following parameters:\n(templateId, conditionKeys, conditionValues, timeout, serviceAgreementId)"
+            },
+            {
+                "name": "@param",
+                "text": "serviceAgreementId Service Agreement Id"
+            },
+            {
+                "name": "@return",
+                "text": "Hash"
+            }
+        ]
+    ]
+}
