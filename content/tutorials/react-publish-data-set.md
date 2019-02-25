@@ -25,8 +25,15 @@ const asset = {
     size: '3.1bg',
     license: 'Public Domain',
     copyrightHolder: 'Met Office',
-    contentUrls: [
-      'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip'
+    files: [
+      {
+        url: 'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip',
+        checksum: '085340abffh21495345af97c6b0e761',
+        contentLength: '12324'
+      },
+      {
+        url: 'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip'
+      }
     ],
     contentType: 'text/csv',
     links: [
@@ -94,8 +101,15 @@ const asset = {
     size: '3.1bg',
     license: 'Public Domain',
     copyrightHolder: 'Met Office',
-    contentUrls: [
-      'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip'
+    files: [
+      {
+        url: 'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip',
+        checksum: '085340abffh21495345af97c6b0e761',
+        contentLength: '12324'
+      },
+      {
+        url: 'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip'
+      }
     ],
     contentType: 'text/csv',
     links: [
