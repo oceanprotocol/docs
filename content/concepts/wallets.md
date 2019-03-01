@@ -40,7 +40,7 @@ We encourage you to search around and read about wallets to understand the optio
 
 ## Wallets which Might Work with Ocean Tokens
 
-[ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20) are the most common kind of tokens found in Ethereum-based networks. **Ocean Tokens are ERC-20 tokens**, so any wallet that supports arbitrary ERC-20 tokens should work to hold Ocean Tokens. 
+[ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20) are the most common kind of tokens found in Ethereum-based networks. **Ocean Tokens are ERC-20 tokens**, so any wallet that supports arbitrary ERC-20 tokens should work to hold Ocean Tokens.
 
 For example, you could use [MetaMask](https://metamask.io/), either as a stand-alone wallet, or with to a hardware wallet. We have a [tutorial about how to set up MetaMask for Chrome](/tutorials/metamask-setup).
 
