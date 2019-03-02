@@ -5,13 +5,11 @@ description: Tutorial about how to set up MetaMask for Chrome.
 
 ## What is MetaMask?
 
-[MetaMask](https://metamask.io/) is a browser extension that allows web applications to interact with the Ethereum blockchain. Today, web browsers like Chrome and Firefox display information by fetching it from a server. Our current web browsers (Web 2.0 as it’s called) are not built to interface with distributed systems. MetaMask allows modern web browsers to interact with the Ethereum blockchain.
-
-MetaMask serves a dual purpose as a [wallet](/concepts/wallets) (for Ether and ERC-20 tokens) and as a Web 3.0 browser. For users, it can work as an Ethereum wallet. For developers, it allows you to design and run Ethereum DApps right in your browser without running a full Ethereum node. MetaMask talks to the Ethereum blockchain for you.
+[MetaMask](https://metamask.io/) is a browser extension that can be used as a [crypto wallet](/concepts/wallets) for Ether and ERC-20 tokens (such as Ocean tokens).
 
 ## How to Set Up MetaMask for Chrome
 
-**Note: MetaMask can also be used with a hardware wallet but we don't cover that option below.**
+**Note: MetaMask can also be used with a TREZOR or Ledger hardware wallet but we don't cover that option below; see [the MetaMask documentation](https://metamask.zendesk.com/hc/en-us/articles/360020394612-How-to-connect-a-Trezor-or-Ledger-Hardware-Wallet).**
 
 1. Go to the [Chrome Web Store for extensions](https://chrome.google.com/webstore/category/extensions) and search for MetaMask.
 
