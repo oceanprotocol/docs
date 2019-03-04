@@ -17,6 +17,7 @@ Wallet User Interface Software | Access Wallet with           | Wallet (Stores P
 [MetaMask][1]                  | [MetaMask][1]                | [TREZOR][2] hardware wallet
 [MyEtherWallet][4]             | [MetaMask][1]                | [MetaMask][1]
 [MyEtherWallet][4]             | [MetaMask][1]                | [TREZOR][2] hardware wallet
+[MyEtherWallet][4]             | [TREZOR][2] hardware wallet  | [TREZOR][2] hardware wallet
 [MyCrypto][5]                  | [MetaMask][1]                | [MetaMask][1]
 [MyCrypto][5]                  | [MetaMask][1]                | [TREZOR][2] hardware wallet
 [MyCrypto][5]                  | [TREZOR][2] hardware wallet  | [TREZOR][2] hardware wallet
