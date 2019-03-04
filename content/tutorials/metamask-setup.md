@@ -5,7 +5,11 @@ description: Tutorial about how to set up MetaMask for Chrome.
 
 ## What is MetaMask?
 
-[MetaMask](https://metamask.io/) is a browser extension that can be used as a [crypto wallet](/concepts/wallets) for Ether and ERC-20 tokens (such as Ocean tokens).
+[MetaMask](https://metamask.io/) is a browser extension that can:
+
+- be used as a [wallet](/concepts/wallets) for Ether and ERC-20 tokens (such as Ocean tokens),
+- connect to TREZOR and Ledger hardware wallets,
+- be used to send Ether and ERC-20 tokens (i.e. to create, sign, and send Ethereum transactions).
 
 ## How to Set Up MetaMask for Chrome
 

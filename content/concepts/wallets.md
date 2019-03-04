@@ -9,21 +9,26 @@ If you want to use the Ocean Network, then you need Ocean Tokens ([ERC-20 tokens
 
 ## What Crypto Wallets Can Be Used with Ocean?
 
-1. [MetaMask](https://metamask.io/) with on-disk storage of private keys (the default). See the [MetaMask setup tutorial](/tutorials/metamask-setup/).
-1. [MetaMask](https://metamask.io/) with a [TREZOR](https://trezor.io/) hardware wallet to store private keys.
-1. [MetaMask](https://metamask.io/) with a [Ledger](https://www.ledger.com/) hardware wallet to store private keys.
-1. Maybe others?
+The following combinations will almost certainly work:
 
-**Not MyEtherWallet, except to get Ethereum account addresses from a hardware wallet.**
+Wallet User Interface Software | Access Wallet with           | Wallet (Stores Private Keys)
+-------------------------------|------------------------------|-----------------------------
+[MetaMask][1]                  | [MetaMask][1]                | [MetaMask][1]
+[MetaMask][1]                  | [MetaMask][1]                | [TREZOR][2] hardware wallet
+[MyEtherWallet][4]             | [MetaMask][1]                | [MetaMask][1]
+[MyEtherWallet][4]             | [MetaMask][1]                | [TREZOR][2] hardware wallet
+[MyCrypto][5]                  | [MetaMask][1]                | [MetaMask][1]
+[MyCrypto][5]                  | [MetaMask][1]                | [TREZOR][2] hardware wallet
+[MyCrypto][5]                  | [TREZOR][2] hardware wallet  | [TREZOR][2] hardware wallet
 
-Why only those ones?
+Note: Other combinations will _probably_ also work. For example, a [Ledger][3] hardware wallet can probably be used in place of a TREZOR hardware wallet.
 
-You need a crypto wallet that can:
+See the [MetaMask setup tutorial](/tutorials/metamask-setup/).
+
+Why only those combinations? You need a combination that can:
 
 1. connect to both the Main Ethereum Network or the Main Ocean Network (or a custom network), and
 1. manage Ether and Ocean Tokens (or custom tokens).
-
-At the time of writing, the Main Ocean Network was not in the list of networks that MyEtherWallet could connect to, and you couldn't connect to a custom network (custom RPC). MetaMask _did_ allow connecting to a custom network, such as the Main Ocean Network.
 
 ## Terminology
 
@@ -44,14 +49,20 @@ Notes:
 
 ## Types of Wallets
 
-It's easy to get confused or overwhelmed by all the types of wallets. However, there are really only a few questions you need to ask about a given wallet:
+It's easy to get confused or overwhelmed by all the types of wallets and all the options for accessing them. However, there are really only a few questions you need to ask about a given wallet + software combination:
 
 1. Where are my private keys stored? How secure is that?
-1. Can the wallet software connect to the networks I care about (such as the Main Ocean Network)?
-1. Can the wallet software manage the cryptocurrencies I care about (such as Ocean Tokens)?
+1. Can the combination connect to the networks I care about (such as the Main Ocean Network)?
+1. Can the combination be used to manage the cryptocurrencies I care about (such as Ocean Tokens)?
 
 Hardware wallets store private keys inside a "secure enclave" (on a special device) so they can't be read out easily. All you can do is send a transaction to the hardware wallet to get the transaction signed by the private key. It then returns the signed transaction. The private key never leaves the hardware wallet.
 Other wallets store private keys on a hard drive, in memory, on a remote server, or on a piece of paper.
 Each option gives you a tradeoff between security and ease of use / convenience. It's easier to steal or delete a private key if it's stored on a computer, especially a computer that's connected to the internet.
 
 We encourage you to search around and read about wallets to understand the options. This page isn't a deep dive; it's just a primer.
+
+[1]: https://metamask.io/
+[2]: https://trezor.io/
+[3]: https://www.ledger.com/
+[4]: https://www.myetherwallet.com/
+[5]: https://www.mycrypto.com/
