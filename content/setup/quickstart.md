@@ -9,16 +9,13 @@ You can [try some free, online Jupyter notebooks](/tutorials/jupyter-notebooks/)
 
 ## Option 2
 
-You can run and try every [Ocean software component](/concepts/components/) in your local machine, all at once, using Docker Compose.
+**WARNING: This option is more for developers who don't mind some things not working together as expected (if at all). Eventually there will be a default-working version, but that doesn't exist yet.**
 
-First, you must [set up some storage on Azure](/tutorials/azure-for-brizo/). (Yes, we know that's not quick. We're working on making a quicker option.)
-
-Then:
+You can run and try every [Ocean software component](/concepts/components/) in your local machine, all at once, using Docker Compose. Ocean Protocol software developers do this often, to test their code against all the other Ocean components.
 
 ```bash
 git clone https://github.com/oceanprotocol/barge.git
 cd barge/
-
 ./start_ocean.sh --latest
 ```
 
