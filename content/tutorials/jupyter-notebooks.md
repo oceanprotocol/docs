@@ -16,4 +16,7 @@ It's quite easy to figure out, but if you get stuck, here are some initial steps
 - When asked to select a kernel, select Python 3.
 - To make stuff happen (e.g. to run code cells), use the menus at the top of the JupyterLab console, or at the top of your current Jupyter notebook.
 
-For more info, see the blog post titled, "[Project Manta Ray — Data Science powered by Ocean Protocol](https://blog.oceanprotocol.com/project-manta-ray-data-science-powered-by-ocean-protocol-535c54089b0f)."
+For more info, see the blog posts:
+
+- "[Project Manta Ray — Data Science powered by Ocean Protocol](https://blog.oceanprotocol.com/project-manta-ray-data-science-powered-by-ocean-protocol-535c54089b0f)"
+- "[The Data Science Workflow — Powered by Ocean Protocol](https://blog.oceanprotocol.com/dive-into-ocean-protocol-ai-ecosystem-60f64eddf74d)"
