@@ -7,7 +7,7 @@ If you want to interact with an Ethereum-based network that supports Ocean Proto
 
 At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/).
 
-Note: This page _doesn't_ explain how to get Ether or Ocean Tokens for use in the Ocean Mainnet ("Pacific" or "Pacific PoA Network"). We'll add that in the future.
+Note: This page _doesn't_ explain how to get Ether or Ocean Tokens for use in the Ocean Mainnet. We'll add that in the future.
 
 ## Get a Compatible Wallet
 
