@@ -2,12 +2,16 @@
   items:
     - title: Introduction
       link: /tutorials/introduction/
-    - title: Wallets for Ocean Tokens
-      link: /tutorials/wallets/
-    - title: Get Ether and Ocean Tokens for Testnets
+    - title: Set Up MetaMask
+      link: /tutorials/metamask-setup/
+    - title: Get Ether and Ocean Tokens
       link: /tutorials/get-ether-and-ocean-tokens/
     - title: Set Up Azure Storage
       link: /tutorials/azure-for-brizo/
+    - title: Set Up Amazon S3 Storage
+      link: /tutorials/amazon-s3-for-brizo/
+    - title: Set Up On-Premise Storage
+      link: /tutorials/on-premise-for-brizo/
 
 - group: React App Tutorial (squid-js)
   items:

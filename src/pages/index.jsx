@@ -19,6 +19,11 @@ const SectionBox = ({ to, children, ...props }) =>
         <div {...props}>{children}</div>
     )
 
+SectionBox.propTypes = {
+    to: PropTypes.string.isRequired,
+    children: PropTypes.any.isRequired
+}
+
 const SectionLink = ({ to, title, color, children }) => {
     // eslint-disable-next-line
     let classNames = classnames(styles.link, {

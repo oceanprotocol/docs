@@ -1,18 +1,17 @@
 ---
-title: Get Ether and Ocean Tokens for Testnets
-description: A tutorial about how to get Ether and Ocean Tokens for testnets.
+title: Get Ether and Ocean Tokens
+description: A tutorial about how to get Ether and Ocean Tokens.
 ---
 
-If you want to interact with a testnet, then you'll eventually need Ether or Ocean Tokens _for that testnet_. (Every Ethereum-based network has its own Ether and its own Ocean Tokens, and you can't use those in other networks, or at least it wasn't possible when we wrote this.)
+If you want to interact with an Ethereum-based network that supports Ocean Protocol, then you'll eventually need Ether or Ocean Tokens _for that network_. (Every Ethereum-based network has its own Ether and its own Ocean Tokens, and you can't use those in other networks.)
 
-At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/). You could also run a local testnet (i.e. on your local machine).
+At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/).
 
 ## Get a Compatible Wallet
 
-You will need a [wallet that can hold Ether (for any Ethereum network) and Ocean Tokens (for any Ethereum network)](/tutorials/wallets/). For the purpose of this tutorial, you can use [MetaMask](https://metamask.io/).
+You will need a [wallet that can hold Ether (for any Ethereum network) and Ocean Tokens (for any Ethereum network)](/concepts/wallets/). For the purpose of this tutorial, you can use MetaMask. See [our tutorial about how to set up MetaMask](/tutorials/metamask-setup/).
 
-- Follow the MetaMask instructions to install it on your machine.
-- In MetaMask, switch from the **Main Ethereum Network** to the **Kovan Test Network** or the test network you're using.
+In MetaMask, be sure to switch from the **Main Ethereum Network** to whatever network you're using.
 
 ## Get Ether
 
@@ -32,9 +31,9 @@ At the time of writing, there was no easy way to get Ether for the Nile Testnet.
 
 If you're running a local Ganache-based testnet, then it creates several accounts at network launch time, and gives each of them some Ether. The addresses and private keys of those accounts should be shared (to logs or the console) during the launch process. You can use those accounts and their Ether.
 
-### Get Ether for a Local Parity-Ethereum-Based Testnet
+### Get Ether for a Local Spree Testnet
 
-If you're running a local Parity-Ethereum-based testnet based on [barge](https://github.com/oceanprotocol/barge), then you can send some Ether to `<YOUR ADDRESS>` using the command:
+If you're running a local Spree testnet, then you can send some Ether to `<YOUR ADDRESS>` using the command:
 
 ```bash
 curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545

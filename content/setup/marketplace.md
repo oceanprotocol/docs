@@ -5,22 +5,28 @@ description: Set up and run a data marketplace in the Ocean network.
 
 ## What Does it Mean to Set Up a Marketplace?
 
-An Ocean marketplace app is one of the primary ways that end users use the Ocean network. For example, a data scientist could use a marketplace app to see what data sets and data services (data assets) a marketplace has available. They can use the marketplace app to buy access to assets. Publishers make those data assets available.
+An Ocean marketplace app is one of the primary ways that end users use the Ocean network. For example, a data scientist could use a marketplace app to see what [assets](/concepts/terminology/#asset-or-data-asset) a marketplace has available. They can use the marketplace app to buy access to assets. Publishers make those assets available.
 
 **Note: In the early days of the Ocean network, there won't be many marketplaces or publishers, so marketplaces will often also act as publishers.**
 
 If you want to set up and run a marketplace in the Ocean network, then at a technical level, you must:
 
-1. Have [Data Assets](/concepts/terminology/#asset-or-data-asset) to offer in your marketplace.
-1. Get those data assets set up to work with Ocean Protocol.
+1. Have [assets](/concepts/terminology/#asset-or-data-asset) to offer in your marketplace.
+1. Get those assets set up to work with Ocean Protocol.
 1. Develop a marketplace application (app).
 1. Run your marketplace app in production.
 
-## Prepare Data Assets
+## Prepare Assets
 
-At the time of writing, the only kind of [data assets](/concepts/terminology/#asset-or-data-asset) supported by Ocean Protocol were datasets stored in Azure Storage. See [the tutorial about setting up Azure Storage to work with Ocean Protocol](/tutorials/azure-for-brizo/).
+At the time of writing, the following kinds of [assets](/concepts/terminology/#asset-or-data-asset) were supported:
 
-Support for other kinds of data assets (e.g. storage in AWS, computing in Azure) is coming soon.
+- data sets stored in Azure Storage (i.e. with "core.windows.net" in their URL). See [the tutorial about setting up Azure Storage to work with Ocean Protocol](/tutorials/azure-for-brizo/).
+- data sets stored in Amazon S3 storage (i.e. with "s3://" in their URL). See [the tutorial about setting up Amazon S3 storage to work with Ocean Protocol](/tutorials/amazon-s3-for-brizo/).
+- data sets stored in on-premise storage. See [the tutorial about setting up on-premise storage to work with Ocean Protocol](/tutorials/on-premise-for-brizo/).
+
+Note: You can use _all_ of the above. You aren't restricted to using only one storage provider.
+
+Support for other kinds of assets (e.g. computing in Azure) is coming.
 
 ## Develop a Marketplace App
 
@@ -45,7 +51,7 @@ There are many ways to create an Ocean marketplace app. For example, you could u
 
 Note: There are examples of how to use squid-py in the [Tutorials](/tutorials/introduction/). squid-py is to Ocean like boto3 is to AWS.
 
-Of course, you could always write your own Squid library in the language of your choice. A squid-java library is in development.
+Of course, you could always write your own Squid library in the language of your choice.
 
 ## Run Your Marketplace App in Production
 

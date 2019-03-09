@@ -19,6 +19,10 @@ The Nile Testnet is similar to the Kovan Testnet, except all the nodes are opera
 
 Moreover, there is a [Secret Store](/concepts/components/#secret-store) operated by the Ocean Protocol Foundation which is connected to the Nile Testnet.
 
+## Spree Testnet
+
+When Ocean Protocol developers run [Barge](https://github.com/oceanprotocol/barge) with the `--local-spree-node` option, a "Spree Testnet" node is deployed on their local machine: a local "testnet" not connected to any public testnet. It's named after the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
+
 ## Technical Details about the Public Testnets
 
 - [Details about the Nile Testnet](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/devops/secret-store-cluster.md) (which is called the "Parity Secret Store Cluster" on that page).

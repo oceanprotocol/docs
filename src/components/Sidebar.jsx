@@ -34,13 +34,10 @@ SidebarLink.propTypes = {
     linkClasses: PropTypes.string
 }
 
-const SidebarList = ({ items, location, toc, tableOfContents }) => (
+const SidebarList = ({ items, location, toc, tocComponent }) => (
     <div className={styles.list}>
         {toc ? (
-            <div
-                className={styles.toc}
-                dangerouslySetInnerHTML={{ __html: tableOfContents }}
-            />
+            <div className={styles.toc}>{tocComponent}</div>
         ) : (
             <ul>
                 {items.map((item, j) => (
@@ -65,7 +62,7 @@ SidebarList.propTypes = {
     items: PropTypes.array.isRequired,
     location: PropTypes.object.isRequired,
     toc: PropTypes.bool,
-    tableOfContents: PropTypes.string
+    tocComponent: PropTypes.object
 }
 
 const SidebarGroupTitle = ({ group }) => (
@@ -98,25 +95,25 @@ const SidebarGroup = ({ i, group, location, ...props }) => (
     </>
 )
 
+SidebarGroup.propTypes = {
+    i: PropTypes.number,
+    group: PropTypes.object,
+    location: PropTypes.object
+}
+
 export default class Sidebar extends Component {
     static propTypes = {
         sidebar: PropTypes.string,
         location: PropTypes.object.isRequired,
         collapsed: PropTypes.bool,
         toc: PropTypes.bool,
-        tableOfContents: PropTypes.string
+        tocComponent: PropTypes.element
     }
 
     static defaultProps = { location: { pathname: '/' } }
 
     render() {
-        const {
-            sidebar,
-            location,
-            collapsed,
-            toc,
-            tableOfContents
-        } = this.props
+        const { sidebar, location, collapsed, toc, tocComponent } = this.props
 
         if (sidebar) {
             try {
@@ -143,7 +140,7 @@ export default class Sidebar extends Component {
                                     group={group}
                                     location={location}
                                     toc={toc}
-                                    tableOfContents={tableOfContents}
+                                    tocComponent={tocComponent}
                                 />
                             ) : (
                                 <SidebarGroupTitle group={group} />

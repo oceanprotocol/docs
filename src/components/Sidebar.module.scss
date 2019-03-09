@@ -16,8 +16,8 @@
     }
 
     &::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -79,21 +79,49 @@
     &:focus {
         transform: none;
         color: $brand-purple;
+
+        :global(.setup) & {
+            color: $brand-blue;
+        }
+
+        :global(.tutorials) & {
+            color: $orange;
+        }
+
+        :global(.references) & {
+            color: $green;
+        }
     }
 }
 
 .toc {
     ul {
         padding-left: 0;
+        margin: 0;
 
         ul {
-            padding-left: $spacer / 2;
-            margin: 0;
+            border-left: 1px solid $brand-grey-lighter;
+            margin-left: $spacer;
+            font-size: $font-size-small;
         }
     }
 
     li {
         margin: 0;
+    }
+
+    a {
+        padding-top: $spacer / 12;
+        padding-bottom: $spacer / 12;
+    }
+
+    code {
+        background: none;
+        color: inherit;
+    }
+
+    [data-deprecated='true'] code {
+        opacity: .5;
     }
 }
 
@@ -110,5 +138,17 @@
     :global(.tutorials) & {
         color: $orange;
         border-left-color: $orange;
+    }
+
+    :global(.references) & {
+        color: $green;
+        border-left-color: $green;
+    }
+}
+
+.scrollspyActive {
+    > a {
+        color: $green;
+        border-left-color: $green;
     }
 }
