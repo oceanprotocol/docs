@@ -1,44 +1,45 @@
 ---
 title: Legal Requirements when Contributing Code
-description: If you want to contribute code to Ocean Protocol, then you must read and understand this page.
+description: How to make sure your code contributions can be included in the Ocean Protocol codebase.
 ---
 
 ## Ocean Protocol Software Licensing
 
-All Ocean Protocol code (software) is licensed under open source licenses (usually Apache 2.0). This page describes the Ocean Protocol policy to ensure that all contributions to the Ocean Protocol code are also licensed under the appropriate open source license (and that the contributor has the right to license it as such).
+All Ocean Protocol code (software) is licensed under an [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html). This page describes the Ocean Protocol policy to ensure that all contributions to the Ocean Protocol code are also licensed under the Apache 2.0 license (and that the contributor has the right to license it as such).
 
 If you are:
 
-- contributing code to complete an [Ocean Protocol bounty](/concepts/bounties/) or
-- an employee of BigchainDB GmbH or
-- an employee of DEX Pte Ltd
+- contributing code to complete a _currently-open_ [Ocean Protocol bounty](/concepts/bounties/) or
+- a _current_ employee of BigchainDB GmbH or
+- a _current_ employee of DEX Pte Ltd
 
 then there is nothing extra for you to do: licensing is already handled.
 
-Otherwise, you must do the following:
+Otherwise you are an "external contributor" and you must do the following:
 
-- At the top of every file you've modified, add license comment lines similar to the following, unless lines like these are already present:
+1. Make sure that every file you modified or created contains a copyright notice comment like the following (at the top of the file):
 
-```text
-# Copyright Ocean Protocol contributors
-# SPDX-License-Identifier: Apache-2.0
-```
+   ```text
+   # Copyright Ocean Protocol contributors
+   # SPDX-License-Identifier: Apache-2.0
+   ```
 
-You can determine the license by looking in the file named `LICENSE` in the root of that file's repository.
-The comment lines will begin with different symbols depending on the file type. For example, Python comment lines begin with a `#`.
+   If a copyright notice is not present, then add one. Make sure you're using the correct syntax for comments (which varies from language to language). The example shown above is for a Python file.
+1. Read the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/).
+1. You will be asked to include a Signed-off-by line in all your commit messages. (Instructions are given in the next step.) Make sure you understand that including a Signed-off-by line in your commits certifies that you can make the statements in the Developer Certificate of Origin. If you have questions about this, then please [ask on Gitter](https://gitter.im/oceanprotocol/Lobby) or elsewhere. Do not continue until you fully understand.
+1. Make sure that all your commit messages include a Signed-off-by line of the form:
 
-- Read and understand the [Developer Certificate of Origin](https://developercertificate.org/).
-- Put a copy of the Developer Certificate of Origin (text file) in the root of the repository where you are contributing, if one isn't already there.
-- Include a Signed-off-by line at the end of all your Git commit messages, like:
+   ```text
+   Signed-off-by: Random J Developer <random@developer.example.org>
+   ```
 
-```text
-Signed-off-by: Joe T Pots <joe.pots@example.org>
-```
+   with your real name and your real email address. Sorry, no pseudonyms or anonymous contributions. Tip: You can tell Git to include a Signed-off-by line in a commit message by using `git commit --signoff` or `git commit -s`.
 
-You must use your real name and email address.
+## Credits
 
-> Tip: You can include a Signed-off-by line automatically by using `git commit --signoff` or `git commit -s`.
+The Developer Certificate of Origin was developed by the Linux community and has since been adopted by other projects, including many under the Linux Foundation umbrella (e.g. Hyperledger Fabric).
+The process described above (with the Signed-off-by line in Git commits) is also based on [the process used by the Linux community](https://github.com/torvalds/linux/blob/master/Documentation/process/submitting-patches.rst#11-sign-your-work---the-developers-certificate-of-origin).
 
 ## The Future
 
-In the future, the Ocean Protocol Foundation will dissolve and the policy will probably change to work more like the Linux Kernel, where _every_ contributor must include a Signed-off-by line in all Git commits. If you're curious, see the Linux Kernel document "[Submitting patches: the essential guide to getting your code into the kernel](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/submitting-patches.rst)" especially the section titled "Sign your work - the Developer's Certificate of Origin."
+In the future, the Ocean Protocol Foundation will dissolve and the policy will probably change to work more like the Linux Kernel, where _every_ contributor must include a Signed-off-by line in all Git commits.
