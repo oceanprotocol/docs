@@ -17,9 +17,10 @@ script:
   - npm test
   - 'if [ "$TRAVIS_SECURE_ENV_VARS" = "true" ]; then npm run build; fi'
 
-# Try to ensure Python 3 and pip3 get used for deployment:
+# Try to ensure Python 3 and pip3 get used for deployment.
+# Note that "alias" commands do not work in .travis.yml
 after_success:
-  - alias python=python3
+  - pyenv global 3.6
   - pip3 install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - npm run deploy
