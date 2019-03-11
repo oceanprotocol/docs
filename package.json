@@ -26,7 +26,7 @@
     "@oceanprotocol/art": "^2.2.0",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
-    "gatsby": "^2.0.115",
+    "gatsby": "^2.1.29",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-catch-links": "^2.0.12",
     "gatsby-plugin-google-analytics": "^2.0.16",
