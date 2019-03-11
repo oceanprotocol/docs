@@ -6,6 +6,15 @@ description: There are many ways you could contribute to Ocean Protocol.
 All contributions to Ocean Protocol are governed by our [Contributor Code of Conduct](/concepts/code-of-conduct/).
 Code development follows the [Ocean Engineering Principles](/concepts/principles/).
 
+## Help Develop Core Ocean Software
+
+- Read and understand the [legal requirements when contributing code](/concepts/legal-reqs/). In particular, note that you must:
+  - add a copyright notice to the top of all files you modify or create (if one isn't there already).
+  - include a Signed-off-by line in all your Git commit messages.
+- Look through the [dev-ocean repository on GitHub](https://github.com/oceanprotocol/dev-ocean). It summarizes Ocean Protocol software development practices and policies.
+- Ask technical questions in the [Ocean Protocol chatroom on Gitter](https://gitter.im/oceanprotocol/Lobby).
+- Find repository-specific development notes in each repository (usually in the root `README.md` file).
+
 ## Report a Vulnerability
 
 See the page about [reporting vulnerabilities](/concepts/vulnerabilities/).
@@ -46,11 +55,3 @@ See the page about [bounties](/concepts/bounties/).
 
 - [Read the announcement of the Ocean Protocol Ambassador Program](https://blog.oceanprotocol.com/envoys-of-the-new-data-economy-ocean-protocol-ambassadors-3816a0e63611)
 - [Apply to become an ambassador](https://oceanprotocol.com/#ambassadors)
-
-## Help Develop Core Ocean Software
-
-Right now, we're not really set up to accept core code contributions from external developers, except via the bounties mentioned above. In the future, we hope to have policies and processes that empower anyone to contribute.
-
-If you'd like to follow what the core dev team is doing, a good place to start is the dev-ocean repository on GitHub.
-
-<repo name="dev-ocean"></repo>
