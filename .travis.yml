@@ -7,20 +7,18 @@ dist: xenial
 
 # Deploying uses awscli and it uses Python.
 # Xenial on Travis comes with Python 2 & 3 installed but 2 is default.
-# Ensure pip3 is installed
-# and make python3 and pip3 the defaults:
+# Ensure pip3 is installed and upgraded.
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install python3-pip
-  - alias python=python3
-  - alias pip=pip3
+  - sudo -H pip3 install --upgrade pip
 
 script:
   - npm test
   - 'if [ "$TRAVIS_SECURE_ENV_VARS" = "true" ]; then npm run build; fi'
 
 after_success:
-  - pip install --user awscli
+  - pip3 install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - npm run deploy
 
