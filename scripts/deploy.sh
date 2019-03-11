@@ -11,9 +11,6 @@ SITEMAP_URL="https%3A%2F%2Fdocs.oceanprotocol.com%2Fsitemap.xml"
 #
 set -e;
 
-echo "Default python (used by awscli):"
-python --version
-
 function s3sync {
   aws s3 sync ./public s3://"$1" \
     --cache-control public,max-age=31536000,immutable \
