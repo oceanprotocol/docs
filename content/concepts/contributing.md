@@ -8,9 +8,7 @@ Code development follows the [Ocean Engineering Principles](/concepts/principles
 
 ## Help Develop Core Ocean Software
 
-- Read and understand the [legal requirements when contributing code](/concepts/legal-reqs/). In particular, note that you must:
-  - add a copyright notice to the top of all files you modify or create (if one isn't there already).
-  - include a Signed-off-by line in all your Git commit messages.
+- Read and understand the [legal requirements when contributing code](/concepts/legal-reqs/).
 - Look through the [dev-ocean repository on GitHub](https://github.com/oceanprotocol/dev-ocean). It summarizes Ocean Protocol software development practices and policies.
 - Ask technical questions in the [Ocean Protocol chatroom on Gitter](https://gitter.im/oceanprotocol/Lobby).
 - Find repository-specific development notes in each repository (usually in the root `README.md` file).
