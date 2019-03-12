@@ -23,10 +23,6 @@ The Ocean Protocol [keeper contracts](https://github.com/oceanprotocol/keeper-co
 
 Note: Because Ocean Protocol uses ZeppelinOS to manage smart contract upgrades, a keeper contract address might not change over time (because it's just the address _of the proxy contract_) but the actually-used smart contract might change, along with its functionality.
 
-_At the time of writing_, the contract address of the OceanToken contract in Kovan was:
-
-0x963f52e2f4827ef82c56ad2eb81f650f66aeb267
-
 ### Ocean Components Connected to Kovan
 
 There is a [Secret Store](/concepts/components/#secret-store) connected to the Kovan Testnet for use by Ocean Protocol projects (including your projects). It's operated by BigchainDB GmbH. Its URL is:
@@ -58,10 +54,6 @@ Nile Ocean Tokens | SBT-OCN
 ### Keeper Contracts on Nile
 
 See the subsection about the [Keeper Contracts on Kovan](#keeper-contracts-on-kovan). The Nile contract addresses can be found in the same way.
-
-_At the time of writing_, the contract address of the OceanToken contract in Nile was:
-
-0x5b39858a450e8b51b5dcc598aafc4045c499d14f
 
 ### Ocean Components Connected to Nile
 
