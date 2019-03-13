@@ -5,7 +5,7 @@ description: Ocean users need a wallet to manage their Ocean Tokens and Ether. T
 
 ## Introduction
 
-If you want to use the Ocean Network, then you need Ocean Tokens ([ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20)) and Ether. To get and manage Ocean Tokens and Ether, you need a _cryptocurrency wallet_ or _crypto wallet_.
+If you want to use the Ocean Network, then you need [Ocean Tokens](/concepts/ocean-tokens/) and Ether. To get and manage Ocean Tokens and Ether, you need a _cryptocurrency wallet_ or _crypto wallet_.
 
 ## What Crypto Wallets Can Be Used with Ocean?
 

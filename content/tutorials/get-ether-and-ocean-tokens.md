@@ -3,11 +3,11 @@ title: Get Ether and Ocean Tokens
 description: A tutorial about how to get Ether and Ocean Tokens.
 ---
 
-If you want to interact with an Ethereum-based network that supports Ocean Protocol, then you'll eventually need Ether or Ocean Tokens _for that network_. (Every Ethereum-based network has its own Ether and its own Ocean Tokens, and you can't use those in other networks.)
+If you want to interact with an Ethereum-based network that supports Ocean Protocol, then you'll eventually need Ether or [Ocean Tokens](/concepts/ocean-tokens/) _for that network_. (Every Ethereum-based network has its own Ether and maybe its own Ocean Tokens, and you can't use those in other networks.)
 
 At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/).
 
-Note: This page _doesn't_ explain how to get Ether or Ocean Tokens for use in the Ocean Mainnet. We'll add that in the future.
+Note: This page _doesn't_ explain how to get Ether or Ocean Tokens for use in the Ocean mainnet.
 
 ## Get a Compatible Wallet
 
@@ -47,4 +47,18 @@ That command uses [Ethereum's JSON RPC API](https://wiki.parity.io/JSONRPC.html)
 
 ## Get Ocean Tokens
 
+### Get Testnet Ocean Tokens
+
 It used to be possible to get Ocean Tokens by clicking Pleuston's "Make it rain" button, but that used an Ocean Protocol keeper function that has been removed for security reasons. The "Make it rain" button might be made to work again in the future, but only in testnets.
+
+### Get Mainnet Ocean Tokens
+
+There are several ways that one can (or could) acquire some of the Ocean Tokens in the initial circulating supply (which initially will only be in the Ethereum Mainnet), including:
+
+- participation in the seed round
+- participation in the pre-sale
+- participation in the token sale
+- completion of a [bounty](/concepts/bounties/)
+- assorted other ways
+
+In the future, there will be other ways to get Mainnet Ocean Tokens. See the page about [Ocean Tokens](/concepts/ocean-tokens/).
