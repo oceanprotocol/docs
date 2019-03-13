@@ -44,12 +44,12 @@ If you want to connect to the Nile Testnet e.g. using MetaMask, then you must en
 
 ### Nile Blockchain Explorers
 
-There is a Nile blockchain explorer at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/). You can use it to check the status of a transaction, the balance of an account, and more. It uses the following symbols for Nile Ether and Ocean Tokens:
+There is a Nile blockchain explorer at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/). You can use it to check the status of a transaction, the balance of an account, and more. It uses the following symbols for Nile Ether and Nile Ocean Tokens:
 
 Cryptocurrency    | Symbol used
 ------------------|------------
 Nile Ether        | POA
-Nile Ocean Tokens | SBT-OCN
+Nile Ocean Tokens | OCEAN or SBT-OCN
 
 ### Keeper Contracts on Nile
 
