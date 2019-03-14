@@ -7,7 +7,9 @@ You can test an Ocean Protocol application (such as a marketplace) against the t
 
 ## The Kovan Testnet
 
-The [Kovan Testnet](https://github.com/kovan-testnet/proposal) (or just "Kovan") is a public Ethereum testnet operated by members of the Ethereum community.
+The [Kovan Testnet](https://github.com/kovan-testnet/proposal) (or just "Kovan") is a public Ethereum Testnet operated by members of the Ethereum community.
+
+Most Ethereum wallets and libraries know how to connect to the Kovan Testnet. If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local Kovan node, you can connect to that local Kovan node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
 
 ### Kovan Blockchain Explorers
 
@@ -29,18 +31,28 @@ There is a [Secret Store](/concepts/components/#secret-store) connected to the K
 
 [https://secret-store-kovan.dev-ocean.com/](https://secret-store-kovan.dev-ocean.com/)
 
-Aside from the Secret Store, there is no other Ocean Protocol software component (e.g. Aquarius) that is live, connected to the Kovan testnet, and operated by BigchainDB GmbH.
+Aside from the Secret Store, there is no other Ocean Protocol software component (e.g. Aquarius) that is live, connected to the Kovan Testnet, and operated by BigchainDB GmbH.
 
 ## The Nile Testnet
 
 _Formerly called the Ocean POA Testnet._
 
 The Nile Testnet is similar to the Kovan Testnet, except all the nodes are operated by BigchainDB GmbH.
-If you want to connect to the Nile Testnet e.g. using MetaMask, then you must enter an "RPC URL" for the Nile Testnet. It is:
 
-[https://nile.dev-ocean.com/](https://nile.dev-ocean.com/)
+### Nile Testnet Parameters
 
-(You don't need to include the port number.)
+Parameter          | Value
+-------------------|---------------
+RPC URL (required) | [https://nile.dev-ocean.com/](https://nile.dev-ocean.com/)
+ChainID            | 8995 (decimal for MetaMask) or 0x2323 (hexadecimal)
+Symbol             | Whatever you like
+Nickname           | Whatever you like
+
+- In MetaMask, you don't need to include the port number with the RPC URL.
+- If you're using MetaMask, see the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
+- If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local Nile node:
+  - You can connect to that local Nile node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
+  - You can configure that local Nile node by editing the files in the `barge/networks/nile/config/` directory.
 
 ### Nile Blockchain Explorers
 
@@ -57,7 +69,7 @@ See the subsection about the [Keeper Contracts on Kovan](#keeper-contracts-on-ko
 
 ### Ocean Components Connected to Nile
 
-There are several Ocean Protocol software components that are live, connected to the Nile testnet, and operated by BigchainDB GmbH:
+There are several Ocean Protocol software components that are live, connected to the Nile Testnet, and operated by BigchainDB GmbH:
 
 - Secret Store at [https://secret-store.dev-ocean.com](https://secret-store.dev-ocean.com)
 - Aquarius at [https://nginx-aquarius.dev-ocean.com](https://nginx-aquarius.dev-ocean.com)
@@ -65,10 +77,14 @@ There are several Ocean Protocol software components that are live, connected to
 - Jupyter Hub at [https://mantaray.dev-ocean.com](https://mantaray.dev-ocean.com)
 - [Token Bridge Frontend](https://github.com/oceanprotocol/bridge-ui) (for a token bridge between Nile and Kovan) at [https://token-bridge.dev-ocean.com](https://token-bridge.dev-ocean.com)
 
-> Internal note: The private "atlantic" repo documents the internal details of the Nile testnet in `networks/nile/README.md`.
+> Internal note: The private "atlantic" repo documents the internal details of the Nile Testnet in `networks/nile/README.md`.
 
 ## A Spree Testnet
 
-When Ocean Protocol developers run [Barge](https://github.com/oceanprotocol/barge) with the `--local-spree-node` option, a "Spree Testnet" node is deployed on their local machine: a local "testnet" not connected to any public testnet. It's named after the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
+When Ocean Protocol developers run [Barge](https://github.com/oceanprotocol/barge) with the `--local-spree-node` option, a "Spree Testnet" is deployed on their local machine: a local testnet not connected to any external public testnet. The RPC URL is [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
 
-Spree testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge/blob/develop/README.md).
+Spree Testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge/blob/develop/README.md).
+
+You can configure the Spree nodes by editing the files in the `barge/networks/spree/` directory.
+
+Note: Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
