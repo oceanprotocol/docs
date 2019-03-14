@@ -19,17 +19,15 @@ There are Ocean Tokens in several testnets, including the Kovan testnet and Nile
 
 ## Mainnet Ocean Tokens
 
-The initial circulating supply of Mainnet Ocean Tokens will first become available on the Ethereum mainnet, i.e. before the Ocean mainnet.
+The initial circulating supply of Mainnet Ocean Tokens will first become available on the Ethereum mainnet (_not_ the Ocean mainnet).
 
 **Ethereum Mainnet Token Contract Address:** To be determined
 
-If you acquired Ocean Tokens before the Ocean mainnet launch (e.g. in the seed round, in the pre-sale, in the token sale, or some other way), then your Ocean Tokens will be sent to the address you provided (in the Ethereum mainnet).
+If you acquired Ocean Tokens in the initial circulating supply, they will be sent to the address you provided. We will write about the timing and other details elsewhere.
 
-In the future, the Ocean mainnet will be launched and later it will become possible to move Ocean Tokens from the Ethereum mainnet to the Ocean mainnet. The details are to be determined.
+In the future, the Ocean mainnet will be launched and later it will become possible to move Ocean Tokens from the Ethereum mainnet to the Ocean mainnet. We will write about the timing and other details elsewhere.
 
-Also in the future (but not necessarily at the same time), it will become possible to earn new Mainnet Ocean Tokens as network rewards. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) explains that in more detail.
-
-Note: It won't be possible to _use_ Mainnet Ocean Tokens for Ocean Protocol tasks (such as consuming assets) in the Ethereum mainnet. In fact, most of the Ocean Protocol keeper contracts (smart contracts) won't be deployed to the Ethereum mainnet. Mainnet Ocean Tokens will only be usable for doing Ocean Protocol tasks in the Ocean mainnet.
+It _won't_ be possible to use Mainnet Ocean Tokens for Ocean Protocol tasks (such as consuming assets) in the Ethereum mainnet. It _will_ be possible to use Mainnet Ocean Tokens for Ocean Protocol tasks in the Ocean mainnet.
 
 ## Further Reading about Ocean Tokens
 
