@@ -39,7 +39,7 @@
     "gatsby-plugin-svgr": "^2.0.1",
     "gatsby-remark-autolink-headers": "^2.0.16",
     "gatsby-remark-component": "^1.1.3",
-    "gatsby-remark-copy-linked-files": "^2.0.9",
+    "gatsby-remark-copy-linked-files": "^2.0.10",
     "gatsby-remark-embed-video": "^1.7.0",
     "gatsby-remark-github": "^2.0.0",
     "gatsby-remark-images": "^3.0.6",
