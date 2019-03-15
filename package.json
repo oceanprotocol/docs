@@ -43,7 +43,7 @@
     "gatsby-remark-embed-video": "^1.7.0",
     "gatsby-remark-github": "^2.0.0",
     "gatsby-remark-images": "^3.0.9",
-    "gatsby-remark-prismjs": "^3.2.4",
+    "gatsby-remark-prismjs": "^3.2.5",
     "gatsby-remark-responsive-iframe": "^2.0.9",
     "gatsby-remark-smartypants": "^2.0.8",
     "gatsby-source-filesystem": "^2.0.23",
