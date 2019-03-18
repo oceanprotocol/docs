@@ -52,4 +52,5 @@ See the page about [bounties](/concepts/bounties/).
 ## Become an Ocean Protocol Ambassador
 
 - [Read the announcement of the Ocean Protocol Ambassador Program](https://blog.oceanprotocol.com/envoys-of-the-new-data-economy-ocean-protocol-ambassadors-3816a0e63611)
+- [Read about some ambassadors](https://blog.oceanprotocol.com/an-ambassadors-tale-531401d4452f)
 - [Apply to become an ambassador](https://oceanprotocol.com/#ambassadors)
