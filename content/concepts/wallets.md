@@ -34,6 +34,11 @@ Each account has one **private key**, one **public key** and one **address**. Th
 
 Note that unlike traditional pocket wallets, crypto wallets don't actually store tokens or Ether. They store private keys.
 
+## Tutorials
+
+See the [tutorials about using wallets with Ocean Protocol](http://localhost:8000/tutorials/introduction/).
+
+
 [1]: https://metamask.io/
 [2]: https://trezor.io/
 [3]: https://www.ledger.com/
