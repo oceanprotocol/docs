@@ -7,8 +7,6 @@ If you want to interact with an Ethereum-based network that supports Ocean Proto
 
 At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/).
 
-Note: This page _doesn't_ explain how to get Ether or Ocean Tokens for use in the Ocean mainnet.
-
 ## Get a Compatible Wallet
 
 You will need a [wallet that can hold Ether (for any Ethereum network) and Ocean Tokens (for any Ethereum network)](/concepts/wallets/). For the purpose of this tutorial, you can use MetaMask. See [our tutorial about how to set up MetaMask](/tutorials/metamask-setup/).
