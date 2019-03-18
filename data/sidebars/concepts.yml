@@ -21,8 +21,6 @@
       link: /concepts/architecture/
     - title: Secret Store
       link: /concepts/secret-store/
-    - title: Computing Services
-      link: /concepts/computing-services/
 
 - group: Contribute
   items:
