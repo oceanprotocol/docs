@@ -1,11 +1,21 @@
-- group: Basics
+- group: Overview
   items:
     - title: Introduction
       link: /tutorials/introduction/
+
+- group: Wallets & Ocean Protocol
+  items:
     - title: Set Up MetaMask
       link: /tutorials/metamask-setup/
+    - title: Connect to Ocean-Related Networks
+      link: /tutorials/connect-to-networks/
+    - title: Teach Your Wallet to Track Ocean Tokens
+      link: /tutorials/wallets-and-ocean-tokens/
     - title: Get Ether and Ocean Tokens
       link: /tutorials/get-ether-and-ocean-tokens/
+
+- group: Storage Setup
+  items:
     - title: Set Up Azure Storage
       link: /tutorials/azure-for-brizo/
     - title: Set Up Amazon S3 Storage
