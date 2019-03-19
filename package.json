@@ -44,7 +44,7 @@
     "gatsby-remark-github": "^2.0.0",
     "gatsby-remark-images": "^3.0.10",
     "gatsby-remark-prismjs": "^3.2.6",
-    "gatsby-remark-responsive-iframe": "^2.1.0",
+    "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
     "gatsby-source-filesystem": "^2.0.26",
     "gatsby-source-graphql": "^2.0.14",
