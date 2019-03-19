@@ -35,7 +35,7 @@
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.29",
-    "gatsby-plugin-sitemap": "^2.0.9",
+    "gatsby-plugin-sitemap": "^2.0.10",
     "gatsby-plugin-svgr": "^2.0.1",
     "gatsby-remark-autolink-headers": "^2.0.16",
     "gatsby-remark-component": "^1.1.3",
