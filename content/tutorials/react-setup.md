@@ -7,15 +7,20 @@ description: This tutorial shows how you can build a basic [React](https://react
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- Do the tutorial to [Set Up Azure Storage](/tutorials/azure-for-brizo/).
-- Use a browser with [MetaMask](https://metamask.io/) and some Ether in your account. See the tutorial about [getting Ether and Ocean Tokens for testnets](/tutorials/get-ether-and-ocean-tokens/).
 - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
-  - Edit the `brizo.env` file and set all `AZURE_`... values.
-  - Run `./start_ocean.sh --no-pleuston --local-kovan-node`. This runs several Ocean services locally, including a local Parity Ethereum node connected to the Kovan Testnet.
+  - (Optional) If you want to use Azure Storage or Amazon S3 storage, then go through the tutorials to set those up: [Azure](/tutorials/azure-for-brizo/) or [Amazon](/tutorials/amazon-s3-for-brizo/). Note that if you're using Azure Storage, you must edit the `barge/brizo.env` file and set all `AZURE_`... values.
+  - Use Barge to run a local Spree Testnet:
+
+    ```bash
+    export KEEPER_VERSION=v0.8.6
+    ./start_ocean.sh --latest --no-pleuston --local-spree-node
+    ```
+
+- [Get some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in a local account managed by MetaMask.
 
 ## New Create React App
 
-First, kick start your new React app by creating a boilerplate with Create React App:
+First, kickstart your new React app by creating a boilerplate with Create React App:
 
 ```bash
 npx create-react-app marketplace
@@ -68,9 +73,11 @@ After those steps you should see this, and MetaMask should have asked you to all
 ![React App 02](images/react-app-02.png)
 ![React App 03](images/react-app-03.png)
 
+Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your `console.log`, don't worry about it. It's a MetaMask thing.
+
 ## Create Ocean instance
 
-Now that we are successfully connected with Web3, we can setup our Ocean instance.
+Now that we are successfully connected with Web3, we can set up our Ocean instance.
 
 At the beginning of your component, create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
 
