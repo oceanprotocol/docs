@@ -19,7 +19,7 @@ There are Ocean Tokens in several testnets, including the Kovan testnet and Nile
 
 ## Mainnet Ocean Tokens
 
-**NOTICE: Below we outline the plans for Mainnet Ocean Tokens at the time of writing. Those plans might change. We try to keep this page up-to-date but there may be some delay.**
+**NOTICE: Below we outline the plans for Mainnet Ocean Tokens at the time of writing. Those plans might change. We will update this page on a regular basis.**
 
 The initial circulating supply of Mainnet Ocean Tokens will first become available on the Ethereum Mainnet (_not_ the Ocean Mainnet).
 

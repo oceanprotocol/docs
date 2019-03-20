@@ -57,18 +57,13 @@ Details about the bootstrapped accounts can be found here: [Barge](https://githu
 
 See the page about [Ocean Tokens](/concepts/ocean-tokens/).
 
-### Get Testnet Ocean Tokens
-
-It used to be possible to get Ocean Tokens by clicking Pleuston's "Make it rain" button, but that used an Ocean Protocol keeper function that has been removed for security reasons. The "Make it rain" button might be made to work again in the future, but only in testnets.
-
 ### Get Mainnet Ocean Tokens
 
-There are several ways that one can (or could) acquire some of the Ocean Tokens in the initial circulating supply, including:
+There are several ways to acquire some of the Ocean Tokens in the initial circulating supply, including:
 
 - participation in the seed round
 - participation in the pre-sale
 - participation in the token sale
 - completion of a [bounty](/concepts/bounties/)
-- assorted other ways
 
-In the future, it will become possible to earn Mainnet Ocean Tokens as network rewards and in other ways. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) explains that in more detail.
+In the future, it will become possible to earn Mainnet Ocean Tokens as network rewards. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) explains that in more detail.
