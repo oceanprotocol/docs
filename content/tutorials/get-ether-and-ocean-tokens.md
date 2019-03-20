@@ -3,11 +3,9 @@ title: Get Ether and Ocean Tokens
 description: A tutorial about how to get Ether and Ocean Tokens.
 ---
 
-If you want to interact with an Ethereum-based network that supports Ocean Protocol, then you'll eventually need Ether or Ocean Tokens _for that network_. (Every Ethereum-based network has its own Ether and its own Ocean Tokens, and you can't use those in other networks.)
+If you want to interact with an Ethereum-based network that supports Ocean Protocol, then you'll eventually need Ether or [Ocean Tokens](/concepts/ocean-tokens/) _for that network_. (Every Ethereum-based network has its own Ether and maybe its own Ocean Tokens, and you can't use those in other networks.)
 
 At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/).
-
-Note: This page _doesn't_ explain how to get Ether or Ocean Tokens for use in the Ocean Mainnet. We'll add that in the future.
 
 ## Get a Compatible Wallet
 
@@ -57,4 +55,15 @@ Details about the bootstrapped accounts can be found here: [Barge](https://githu
 
 ## Get Ocean Tokens
 
-It used to be possible to get Ocean Tokens by clicking Pleuston's "Make it rain" button, but that used an Ocean Protocol keeper function that has been removed for security reasons. The "Make it rain" button might be made to work again in the future, but only in testnets.
+See the page about [Ocean Tokens](/concepts/ocean-tokens/).
+
+### Get Mainnet Ocean Tokens
+
+There are several ways to acquire some of the Ocean Tokens in the initial circulating supply, including:
+
+- participation in the seed round
+- participation in the pre-sale
+- participation in the token sale
+- completion of a [bounty](/concepts/bounties/)
+
+In the future, it will become possible to earn Mainnet Ocean Tokens as network rewards. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) explains that in more detail.
