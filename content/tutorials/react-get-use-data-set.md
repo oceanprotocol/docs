@@ -3,6 +3,8 @@ title: Get & Use a Data Set
 description: Tutorial to get and use a data set in a basic React app.
 ---
 
+**NOTICE: This section of the React App Tutorial is not currently working because it hasn't been updated to work with the latest squid-js. There is [an open issue to update it](https://github.com/oceanprotocol/docs/issues/181).**
+
 ## Requirements
 
 This is a continuation of the [React App Setup](/tutorials/react-setup/) and [React Publish Data-set](/tutorials/react-publish-data-set/) tutorial, so make sure you have done all the steps described in there.
