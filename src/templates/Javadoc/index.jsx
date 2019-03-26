@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import slugify from 'slugify'
 import Layout from '../../components/Layout'
 import Content from '../../components/Content'
 import HeaderSection from '../../components/HeaderSection'
@@ -10,16 +11,21 @@ import DocHeader from '../../components/DocHeader'
 import SEO from '../../components/Seo'
 import stylesDoc from '../Doc.module.scss'
 
+import Toc from './Toc'
+import { cleanPaths } from './utils'
+
 const title = 'squid-java'
 const description = 'Java client library for Ocean Protocol'
 const version = '0.2.0'
 
-const cleanPaths = path =>
-    path.replace('src/main/java/com/oceanprotocol/squid/', '')
-
 const Paths = ({ javadoc }) => {
     return Object.keys(javadoc).map(path => (
-        <div key={path}>
+        <div
+            key={path}
+            id={slugify(cleanPaths(path), {
+                remove: /[*+~.()'"/!:@]/g
+            })}
+        >
             <h2 className={stylesDoc.pathName}>
                 <code>{cleanPaths(path)}</code>
             </h2>
@@ -70,6 +76,7 @@ export default class JavadocTemplate extends Component {
                                     sidebar={'references'}
                                     collapsed
                                     toc
+                                    tocComponent={<Toc data={javadoc} />}
                                 />
                             </aside>
                             <article className={stylesDoc.main}>
