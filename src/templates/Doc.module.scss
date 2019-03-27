@@ -61,4 +61,7 @@
     padding-bottom: $spacer / 2;
     margin-top: $spacer * 2;
     margin-bottom: $spacer / $line-height;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
 }
