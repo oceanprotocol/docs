@@ -96,7 +96,7 @@ export default class JavadocTemplate extends Component {
 
     render() {
         const { location, pageContext } = this.props
-        const { javadoc, title, description, version } = pageContext
+        const { javadoc, title, description, version, namespace } = pageContext
 
         return (
             <>
@@ -130,9 +130,14 @@ export default class JavadocTemplate extends Component {
                                     title={title}
                                     description={description}
                                     prepend={
-                                        <span className={stylesDoc.version}>
-                                            {version}
-                                        </span>
+                                        <>
+                                            <span className={stylesDoc.version}>
+                                                {version}
+                                            </span>
+                                            <p className={styles.namespace}>
+                                                {namespace}
+                                            </p>
+                                        </>
                                     }
                                 />
 

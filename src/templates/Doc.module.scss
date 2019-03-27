@@ -60,5 +60,5 @@
     border-bottom: 1px solid $brand-grey-lighter;
     padding-bottom: $spacer / 2;
     margin-top: $spacer * 2;
-    margin-bottom: $spacer;
+    margin-bottom: $spacer / $line-height;
 }

@@ -296,7 +296,10 @@ exports.createPages = ({ graphql, actions }) => {
                             description: `${metaSquidJava.name._text}. ${
                                 metaSquidJava.description._text
                             }.`,
-                            version: metaSquidJava.version._text
+                            version: metaSquidJava.version._text,
+                            namespace: `${metaSquidJava.groupId._text}.${
+                                metaSquidJava.artifactId._text
+                            }`
                         }
                     })
                 })
