@@ -5,3 +5,6 @@
 [submodule "external/squid-js"]
 	path = external/squid-js
 	url = https://github.com/oceanprotocol/squid-js.git
+[submodule "external/squid-java"]
+	path = external/squid-java
+	url = https://github.com/oceanprotocol/squid-java.git

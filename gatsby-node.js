@@ -4,6 +4,8 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const Swagger = require('swagger-client')
 const { redirects } = require('./config')
+const parser = require('xml-js')
+const fs = require('fs')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
@@ -56,6 +58,23 @@ const getSpec = async () => {
 
     return spec
 }
+
+let metaSquidJava
+
+const getSquidJavaMeta = () => {
+    fs.readFile('./external/squid-java/pom.xml', (err, data) => {
+        if (err) return err
+
+        const json = parser.xml2js(data, {
+            compact: true
+        })
+
+        metaSquidJava = json.project
+        // return json.project
+    })
+}
+
+getSquidJavaMeta()
 
 exports.createPages = ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions
@@ -272,7 +291,12 @@ exports.createPages = ({ graphql, actions }) => {
                         component: javadocTemplate,
                         context: {
                             slug,
-                            javadoc
+                            javadoc,
+                            title: name,
+                            description: `${metaSquidJava.name._text}. ${
+                                metaSquidJava.description._text
+                            }.`,
+                            version: metaSquidJava.version._text
                         }
                     })
                 })

@@ -14,10 +14,6 @@ import stylesDoc from '../Doc.module.scss'
 import Toc from './Toc'
 import { cleanPaths } from './utils'
 
-const title = 'squid-java'
-const description = 'Java client library for Ocean Protocol'
-const version = '0.2.0'
-
 const Paths = ({ javadoc }) => {
     return Object.keys(javadoc).map(path => (
         <div
@@ -50,7 +46,7 @@ export default class JavadocTemplate extends Component {
 
     render() {
         const { location, pageContext } = this.props
-        const { javadoc } = pageContext
+        const { javadoc, title, description, version } = pageContext
 
         return (
             <>
