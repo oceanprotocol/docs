@@ -28,16 +28,12 @@ const filterPropertyItems = (item, name) => {
                 .map((item, index) => {
                     if (item.name === '@param') {
                         const splitText = item.text.split(' ')
-
                         return (
                             <div key={index} className={styles.parameter}>
                                 <code className={styles.param}>
                                     {splitText[0]}
                                 </code>
-                                <code className={styles.parameterType}>
-                                    {splitText[2]}
-                                </code>
-                                <p>{splitText[1]}</p>
+                                <p>{item.text.replace(splitText[0], '')}</p>
                             </div>
                         )
                     }
