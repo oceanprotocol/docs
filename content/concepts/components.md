@@ -11,7 +11,9 @@ Marketplaces run Aquarius to store and manage metadata about the [assets](/conce
 
 <repo name="aquarius"></repo>
 
-Aquarius supports several options for the off-chain database, including MongoDB, Elasticsearch and BigchainDB. One can add support for another off-chain database by creating a new driver similar to the existing OceanDB drivers.
+### OceanDB Drivers
+
+Aquarius supports several options for the off-chain database (OceanDB), including MongoDB, Elasticsearch and BigchainDB. One can add support for another off-chain database by creating a new driver similar to the existing OceanDB drivers.
 
 <repo name="oceandb-mongodb-driver"></repo>
 <repo name="oceandb-bigchaindb-driver"></repo>
@@ -24,6 +26,8 @@ It interacts with the publisher's cloud and/or on-premise infrastructure.
 The most basic scenario for a publisher is to provide access to the [assets](/concepts/terminology/#asset-or-data-asset) the publisher owns or manages, but [Brizo can do much more](/concepts/architecture/#brizo).
 
 <repo name="brizo"></repo>
+
+### Osmosis Drivers
 
 Brizo supports several options for file storage, including Azure Storage, Amazon S3 and on-premise storage. One can add support for another file storage option by creating a new driver similar to one of the existing Osmosis drivers.
 
