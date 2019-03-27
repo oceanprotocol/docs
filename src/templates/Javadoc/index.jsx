@@ -15,16 +15,34 @@ import Toc from './Toc'
 import { cleanPaths } from './utils'
 
 const Paths = ({ javadoc }) => {
-    return Object.keys(javadoc).map(path => (
+    return Object.entries(javadoc).map(([key, value]) => (
         <div
-            key={path}
-            id={slugify(cleanPaths(path), {
+            key={key}
+            id={slugify(cleanPaths(key), {
                 remove: /[*+~.()'"/!:@]/g
             })}
         >
             <h2 className={stylesDoc.pathName}>
-                <code>{cleanPaths(path)}</code>
+                <code>{cleanPaths(key)}</code>
             </h2>
+
+            {value[0][0].text}
+
+            <h4>Parameters</h4>
+
+            {/*
+            {value
+                .filter(item => {
+                    return item.name === '@param'
+                })
+                .map(item => {
+                    return item.text
+                })}
+            */}
+
+            <h4>Returns</h4>
+
+            <h4>Throws</h4>
         </div>
     ))
 }
