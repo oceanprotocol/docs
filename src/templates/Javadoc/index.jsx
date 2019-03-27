@@ -10,11 +10,43 @@ import Sidebar from '../../components/Sidebar'
 import DocHeader from '../../components/DocHeader'
 import SEO from '../../components/Seo'
 import stylesDoc from '../Doc.module.scss'
+import styles from './index.module.scss'
 
 import Toc from './Toc'
 import { cleanPaths } from './utils'
 
-const Paths = ({ javadoc }) => {
+const filterPropertyItems = (item, name) => {
+    let title
+    switch (name) {
+        case '@param':
+            title = 'Parameters'
+            break
+        case '@return':
+            title = 'Returns'
+            break
+        case '@throws':
+            title = 'Throws'
+            break
+    }
+
+    return (
+        <>
+            {item.filter(item => item.name === name).length > 0 && (
+                <h4 className={styles.subHeading}>{title}</h4>
+            )}
+
+            {item
+                .filter(item => item.name === name)
+                .map((item, index) => (
+                    <div key={index}>
+                        <code>{item.text}</code>
+                    </div>
+                ))}
+        </>
+    )
+}
+
+const Entities = ({ javadoc }) => {
     return Object.entries(javadoc).map(([key, value]) => (
         <div
             key={key}
@@ -26,23 +58,23 @@ const Paths = ({ javadoc }) => {
                 <code>{cleanPaths(key)}</code>
             </h2>
 
-            {value[0][0].text}
+            <p>{value[0][0].text}</p>
 
-            <h4>Parameters</h4>
+            {value.map((item, index) => {
+                if (index === 0) return
 
-            {/*
-            {value
-                .filter(item => {
-                    return item.name === '@param'
-                })
-                .map(item => {
-                    return item.text
-                })}
-            */}
+                return (
+                    <div key={index} className={styles.property}>
+                        <h3 className={styles.propertyName}>Function Name</h3>
 
-            <h4>Returns</h4>
+                        <p>{item[0].text}</p>
 
-            <h4>Throws</h4>
+                        {filterPropertyItems(item, '@param')}
+                        {filterPropertyItems(item, '@return')}
+                        {filterPropertyItems(item, '@throws')}
+                    </div>
+                )
+            })}
         </div>
     ))
 }
@@ -104,7 +136,7 @@ export default class JavadocTemplate extends Component {
                                     }
                                 />
 
-                                <Paths javadoc={javadoc} />
+                                <Entities javadoc={javadoc} />
                             </article>
                         </main>
                     </Content>
