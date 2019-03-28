@@ -112,6 +112,24 @@ exports.createPages = ({ graphql, actions }) => {
                                         text
                                     }
                                 }
+                                releases(first: 1) {
+                                    edges {
+                                        node {
+                                            name
+                                            spec: releaseAssets(
+                                                first: 100
+                                                name: "api.json"
+                                            ) {
+                                                edges {
+                                                    node {
+                                                        name
+                                                        downloadUrl
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
