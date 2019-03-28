@@ -5,7 +5,6 @@ const { createFilePath } = require('gatsby-source-filesystem')
 const Swagger = require('swagger-client')
 const { redirects } = require('./config')
 const parser = require('xml-js')
-const fs = require('fs')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
@@ -59,23 +58,6 @@ const getSpec = async () => {
     return spec
 }
 
-let metaSquidJava
-
-const getSquidJavaMeta = () => {
-    fs.readFile('./external/squid-java/pom.xml', (err, data) => {
-        if (err) return err
-
-        const json = parser.xml2js(data, {
-            compact: true
-        })
-
-        metaSquidJava = json.project
-        // return json.project
-    })
-}
-
-getSquidJavaMeta()
-
 exports.createPages = ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions
 
@@ -113,6 +95,21 @@ exports.createPages = ({ graphql, actions }) => {
                                         title
                                         description
                                         section
+                                    }
+                                }
+                            }
+                        }
+
+                        squidJava: github {
+                            repository(
+                                owner: "oceanprotocol"
+                                name: "squid-java"
+                            ) {
+                                name
+                                pom: object(expression: "develop:pom.xml") {
+                                    id
+                                    ... on GitHub_Blob {
+                                        text
                                     }
                                 }
                             }
@@ -275,15 +272,14 @@ exports.createPages = ({ graphql, actions }) => {
                 const javadocTemplate = path.resolve(
                     './src/templates/Javadoc/index.jsx'
                 )
+                const { name, pom } = result.data.squidJava.repository
+
+                const metaSquidJava = parser.xml2js(pom.text, {
+                    compact: true
+                })
 
                 javadocSpecs.forEach(spec => {
                     const javadoc = require(spec) // eslint-disable-line
-
-                    const name = path
-                        .basename(spec)
-                        .split('.json')
-                        .join('')
-
                     const slug = `/references/${name}/`
 
                     createPage({
@@ -293,13 +289,13 @@ exports.createPages = ({ graphql, actions }) => {
                             slug,
                             javadoc,
                             title: name,
-                            description: `${metaSquidJava.name._text}. ${
-                                metaSquidJava.description._text
-                            }.`,
-                            version: metaSquidJava.version._text,
-                            namespace: `${metaSquidJava.groupId._text}.${
-                                metaSquidJava.artifactId._text
-                            }`
+                            description: `${
+                                metaSquidJava.project.name._text
+                            }. ${metaSquidJava.project.description._text}.`,
+                            version: metaSquidJava.project.version._text,
+                            namespace: `${
+                                metaSquidJava.project.groupId._text
+                            }.${metaSquidJava.project.artifactId._text}`
                         }
                     })
                 })
