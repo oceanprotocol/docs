@@ -39,15 +39,13 @@ If you're running a local Ganache-based testnet, then it creates several account
 
 That command uses [Ethereum's JSON RPC API](https://wiki.parity.io/JSONRPC.html). You can also create a new account using the Parity Ethereum CLI. See [the Parity Ethereum CLI documentation](https://wiki.parity.io/CLI-Sub-commands).
 
-**Option 2:** Import the `spree` seed phrase.
-
-By default `spree` is configured to bootstrap `10` initial accounts with a decent amount of ether on them. To get access to this accounts you can import the seed phrase for example in MetaMask or use an HD Wallet to access the accounts'
+**Option 2:** By default, the Spree testnet is configured to bootstrap ten accounts with a decent amount of Spree Ether in each one. To get access to those accounts, you can import the following seed phrase into MetaMask (e.g. by logging out and then clicking "Import using account seed phrase"):
 
 `taxi music thumb unique chat sand crew more leg another off lamp`
 
-Details about the bootstrapped accounts can be found here: [Barge](https://github.com/oceanprotocol/barge/#spree-network)
+Details about the bootstrapped accounts can be found in [the README.md file in the Barge repository](https://github.com/oceanprotocol/barge/#spree-network). They're the ones of type "mnemonic."
 
-**WARNING!** Never use any of those accounts any mainnet, this is for testing purpose only.
+**WARNING!** Never use any of those accounts in any mainnet. They are for testing purposes only.
 
 **Option 3:** Another option is to run [the Ocean faucet server](https://github.com/oceanprotocol/faucet) on your machine, with default configuration settings. The default settings enable it to dispense Spree Ether. To ask the faucet to send some Spree Ether to `<YOUR ADDRESS>`, use the command (a long command that wraps around):
 
