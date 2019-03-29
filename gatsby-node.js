@@ -4,7 +4,6 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const Swagger = require('swagger-client')
 const { redirects } = require('./config')
-const parser = require('xml-js')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
