@@ -99,39 +99,6 @@ exports.createPages = ({ graphql, actions }) => {
                                 }
                             }
                         }
-
-                        squidJava: github {
-                            repository(
-                                owner: "oceanprotocol"
-                                name: "squid-java"
-                            ) {
-                                name
-                                pom: object(expression: "develop:pom.xml") {
-                                    id
-                                    ... on GitHub_Blob {
-                                        text
-                                    }
-                                }
-                                releases(first: 1) {
-                                    edges {
-                                        node {
-                                            name
-                                            spec: releaseAssets(
-                                                first: 100
-                                                name: "api.json"
-                                            ) {
-                                                edges {
-                                                    node {
-                                                        name
-                                                        downloadUrl
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
                 `
             ).then(async result => {
@@ -278,42 +245,6 @@ exports.createPages = ({ graphql, actions }) => {
                                 'models/Config',
                                 'models/Balance'
                             ]
-                        }
-                    })
-                })
-
-                //
-                // Create pages from Javadoc json files
-                //
-                const javadocSpecs = ['./data/squid-java.json']
-                const javadocTemplate = path.resolve(
-                    './src/templates/Javadoc/index.jsx'
-                )
-
-                javadocSpecs.forEach(spec => {
-                    const javadoc = require(spec) // eslint-disable-line
-
-                    const { name, pom } = result.data.squidJava.repository
-                    const slug = `/references/${name}/`
-                    const metaSquidJava = parser.xml2js(pom.text, {
-                        compact: true
-                    })
-                    const { project } = metaSquidJava
-
-                    createPage({
-                        path: slug,
-                        component: javadocTemplate,
-                        context: {
-                            slug,
-                            javadoc,
-                            title: name,
-                            description: `${project.name._text}. ${
-                                project.description._text
-                            }.`,
-                            version: project.version._text,
-                            namespace: `${project.groupId._text}.${
-                                project.artifactId._text
-                            }`
                         }
                     })
                 })
