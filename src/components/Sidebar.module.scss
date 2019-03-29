@@ -152,3 +152,10 @@
         border-left-color: $green;
     }
 }
+
+.external {
+    fill: $brand-grey-light;
+    display: inline-block;
+    width: $font-size-mini;
+    height: $font-size-mini;
+}

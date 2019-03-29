@@ -39,6 +39,14 @@ module.exports = {
         {
             from: '/tutorials/wallets/',
             to: '/concepts/wallets/'
+        },
+        {
+            from: '/references/squid-py/',
+            to: 'https://squid-py.readthedocs.io/en/latest/'
+        },
+        {
+            from: '/references/squid-java/',
+            to: 'https://www.javadoc.io/doc/com.oceanprotocol/squid/'
         }
     ]
 }

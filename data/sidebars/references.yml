@@ -21,9 +21,9 @@
 - group: squid-py
   items:
     - title: API Reference
-      link: /references/squid-py/
+      link: https://squid-py.readthedocs.io/en/latest/
 
 - group: squid-java
   items:
     - title: API Reference
-      link: /references/squid-java/
+      link: https://www.javadoc.io/doc/com.oceanprotocol/squid/

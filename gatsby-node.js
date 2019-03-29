@@ -152,50 +152,49 @@ exports.createPages = ({ graphql, actions }) => {
                 //
                 // Create pages from swagger json files
                 //
+                const swaggerSpecs = [
+                    './data/aquarius.json',
+                    './data/brizo.json'
+                ]
                 const apiSwaggerTemplate = path.resolve(
                     './src/templates/Swagger/index.jsx'
                 )
 
+                swaggerSpecs.forEach(spec => {
+                    const api = require(spec) // eslint-disable-line
+                    const name = path
+                        .basename(spec)
+                        .split('.json')
+                        .join('')
+                    const slug = `/references/${name}/`
+
+                    createPage({
+                        path: slug,
+                        component: apiSwaggerTemplate,
+                        context: {
+                            slug,
+                            api
+                        }
+                    })
+                })
+
+                // Swagger Pet Store example, fetch from remote
                 const petStoreSlug = '/references/petstore/'
 
                 try {
-                    const spec = await getSpec()
+                    const api = await getSpec()
 
                     createPage({
                         path: petStoreSlug,
                         component: apiSwaggerTemplate,
                         context: {
                             slug: petStoreSlug,
-                            api: spec
+                            api
                         }
                     })
                 } catch (error) {
                     console.log(error)
                 }
-
-                const aquariusSpecs = require('./data/aquarius.json')
-                const aquariusSlug = '/references/aquarius/'
-
-                createPage({
-                    path: aquariusSlug,
-                    component: apiSwaggerTemplate,
-                    context: {
-                        slug: aquariusSlug,
-                        api: aquariusSpecs
-                    }
-                })
-
-                const brizoSpecs = require('./data/brizo.json')
-                const brizoSlug = '/references/brizo/'
-
-                createPage({
-                    path: brizoSlug,
-                    component: apiSwaggerTemplate,
-                    context: {
-                        slug: brizoSlug,
-                        api: brizoSpecs
-                    }
-                })
 
                 //
                 // Create pages from TypeDoc json files

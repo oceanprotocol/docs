@@ -26,11 +26,11 @@
     - name: squid-py
       links:
         - name: API reference
-          url: /references/squid-py/
+          url: https://squid-py.readthedocs.io/en/latest/
     - name: squid-java
       links:
         - name: API reference
-          url: /references/squid-java/
+          url: https://www.javadoc.io/doc/com.oceanprotocol/squid/
     - name: Plecos
 
 - group: OceanDB

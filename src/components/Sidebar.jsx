@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import { ReactComponent as External } from '../images/external.svg'
 import styles from './Sidebar.module.scss'
 
 const SidebarLink = ({ link, title, linkClasses }) => {
@@ -13,7 +14,7 @@ const SidebarLink = ({ link, title, linkClasses }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {title}
+                    {title} <External className={styles.external} />
                 </a>
             )
         } else {
