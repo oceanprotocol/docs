@@ -27,6 +27,15 @@ You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see 
 
 At the time of writing, there was no easy way to get Ether for the Nile Testnet. We may set up a Nile Ether faucet, so check back from time to time.
 
+
+If you're connecting to the Nile testnet, then you can send get some Nile Ether in `<YOUR ADDRESS>` using the following command (a long command that wraps around):
+
+`curl -XPOST --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" https://faucet.nile.dev-ocean.com/faucet`
+
+In the above command you only need to replace `<YOUR ADDRESS>` with your own Ethereum address. 
+The Nile faucet has a limit of 1 request each 24 hours for the same Ethereum address. But don't worry, the Ether given is more than enough for interacting with the network.
+
+
 ### Get Ether for a Local Ganache-Based Testnet
 
 If you're running a local Ganache-based testnet, then it creates several accounts at network launch time, and gives each of them some Ether. The addresses and private keys of those accounts should be shared (to logs or the console) during the launch process. You can use those accounts and their Ether.
