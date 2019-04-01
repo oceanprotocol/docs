@@ -17,7 +17,7 @@ In the previous tutorial we added asset publishing. We can now search for publis
 
 ```js
 async retrieveAssets() {
-  this.dbAssets = await this.ocean.searchAssetsByText("Office Humidity")
+  this.dbAssets = await this.ocean.assets.search("10 Monkey Species Small")
   console.log(this.dbAssets)
 }
 ```
@@ -35,25 +35,25 @@ The retrieved assets can now be consumed so in this tutorial we consume the firs
 ```js
 async consumeAsset() {
   // get all accounts
-  const accounts = await this.ocean.getAccounts()
+  const accounts = await this.ocean.accounts.list()
   // get first asset
   const consumeAsset = this.dbAssets[0]
   // get service we want to execute
   const service = consumeAsset.findServiceByType('Access')
-  // sign service
-  const serviceAgreementSignatureResult = await this.ocean.signServiceAgreement(
+  // order service agreement
+  const agreement = await this.ocean.assets.order(
       consumeAsset.id,
       service.serviceDefinitionId,
-      accounts[0])
-  // run it
-  await this.ocean.initializeServiceAgreement(
+      accounts[0]
+  )
+  // consume it
+  await this.ocean.assets.consume(
+      agreement,
       consumeAsset.id,
       service.serviceDefinitionId,
-      serviceAgreementSignatureResult.serviceAgreementId,
-      serviceAgreementSignatureResult.serviceAgreementSignature,
-      // callback to handle the files we get
-      (files) => { console.log('Asset files', files) },
-      accounts[0])
+      accounts[0],
+      ''
+  )
 }
 ```
 
@@ -84,36 +84,67 @@ window.ethereum.enable()
 
 const asset = {
   base: {
-    name: 'Office Humidity',
-    description: 'Weather information of UK including temperature and humidity',
-    dateCreated: '2012-02-01T10:55:11+00:00',
-    author: 'Met Office',
-    size: '3.1bg',
-    license: 'Public Domain',
-    copyrightHolder: 'Met Office',
-    contentUrls: [
-      'https://testocnfiles.blob.core.windows.net/testfiles/testzkp.zip'
-    ],
-    contentType: 'text/csv',
-    links: [
+    name: "10 Monkey Species Small",
+    dateCreated: "2012-02-01T10:55:11Z",
+    author: "Mario",
+    license: "CC0: Public Domain",
+    contentType: "jpg/txt",
+    price: 10,
+    files: [
       {
-        name: 'Dataset sample',
-        type: 'sample',
-        url:
-          'http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/'
+        checksum: "2bf9d229d110d1976cdf85e9f3256c7f",
+        checksumType: "MD5",
+        contentLength: 12057507,
+        url: "https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/training.zip"
+      },
+      {
+        checksum: "354d19c0733c47ef3a6cce5b633116b0",
+        checksumType: "MD5",
+        contentLength: 928,
+        url: "https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/monkey_labels.txt"
+      },
+      {
+        url: "https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/validation.zip"
       }
     ],
-    tags: 'weather, uk, 2011, temperature, humidity',
-    price: 5,
-    type: 'dataset'
-  },
-  curation: {
-    rating: 0,
-    numVotes: 0,
-    schema: 'Binary Voting'
-  },
-  additionalInformation: {
-    updateFrequency: 'yearly'
+    checksum: "",
+    categories: [
+      "image"
+    ],
+    tags: [
+      "image data",
+      "classification",
+      "animals"
+    ],
+    type: "dataset",
+    description: "EXAMPLE ONLY ",
+    size: "3.1gb",
+    copyrightHolder: "Unknown",
+    encoding: "UTF-8",
+    compression: "zip",
+    workExample: "image path, id, label",
+    links: [
+      {
+        name: "example model",
+        url: "https://drive.google.com/open?id=1uuz50RGiAW8YxRcWeQVgQglZpyAebgSM"
+      },
+      {
+        name: "example code",
+        type: "example code",
+        url: "https://github.com/slothkong/CNN_classification_10_monkey_species"
+      },
+      {
+        url: "https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/links/discovery/n5151.jpg",
+        name: "n5151.jpg",
+        type: "discovery"
+      },
+      {
+        url: "https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/links/sample/sample.zip",
+        name: "sample.zip",
+        type: "sample"
+      }
+    ],
+    inLanguage: "en"
   }
 }
 
@@ -134,40 +165,36 @@ class App extends Component {
   }
 
   async submitAsset() {
-    const accounts = await this.ocean.getAccounts()
-    const ddo = await this.ocean.registerAsset(asset, accounts[0])
-    alert('Asset successfully submited: ', JSON.stringify(ddo))
+    const accounts = await this.ocean.accounts.list()
+    const ddo = await this.ocean.assets.create(asset, accounts[0])
+    alert('Asset successfully submitted: ', JSON.stringify(ddo))
   }
 
   async retrieveAssets() {
-    this.dbAssets = await this.ocean.searchAssetsByText('Office Humidity')
+    this.dbAssets = await ocean.assets.search("10 Monkey Species Small")
     console.log(this.dbAssets)
   }
 
   async consumeAsset() {
     // get all accounts
-    const accounts = await this.ocean.getAccounts()
+    const accounts = await this.ocean.accounts.list()
     // get first asset
     const consumeAsset = this.dbAssets[0]
     // get service we want to execute
     const service = consumeAsset.findServiceByType('Access')
-    // sign service
-    const serviceAgreementSignatureResult = await this.ocean.signServiceAgreement(
+    // order service agreement
+    const agreement = await ocean.assets.order(
       consumeAsset.id,
       service.serviceDefinitionId,
       accounts[0]
     )
-    // run it
-    await this.ocean.initializeServiceAgreement(
+    // consume it
+    await ocean.assets.consume(
+      agreement,
       consumeAsset.id,
       service.serviceDefinitionId,
-      serviceAgreementSignatureResult.serviceAgreementId,
-      serviceAgreementSignatureResult.serviceAgreementSignature,
-      // callback to handle the files we get
-      files => {
-        console.log('Asset files', files)
-      },
-      accounts[0]
+      accounts[0],
+      ''
     )
   }
 
