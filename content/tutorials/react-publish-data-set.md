@@ -89,8 +89,8 @@ Now that we have an asset to submit, we need a function to handle it. Just befor
 
 ```js
 async submitAsset() {
-  const accounts = await this.ocean.getAccounts()
-  const ddo = await this.ocean.registerAsset(asset, accounts[0])
+  const accounts = await this.ocean.accounts.list()
+  const ddo = await this.ocean.assets.create(asset, accounts[0])
   alert('Asset successfully submitted: ', JSON.stringify(ddo))
 }
 ```
@@ -199,8 +199,8 @@ class App extends Component {
   }
 
   async submitAsset() {
-    const accounts = await this.ocean.getAccounts()
-    const ddo = await this.ocean.registerAsset(asset, accounts[0])
+    const accounts = await this.ocean.accounts.list()
+    const ddo = await this.ocean.assets.create(asset, accounts[0])
     alert('Asset successfully submitted: ', JSON.stringify(ddo))
   }
 
