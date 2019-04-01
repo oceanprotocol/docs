@@ -13,6 +13,8 @@ description: This tutorial shows how you can build a basic [React](https://react
 
     ```bash
     export KEEPER_VERSION=v0.8.6
+    export AQUARIUS_VERSION=v0.2.0
+    export BRIZO_VERSION=v0.3.0
     ./start_ocean.sh --latest --no-pleuston --local-spree-node
     ```
 
@@ -30,7 +32,7 @@ This will create a folder named `marketplace` with a boilerplate React app. Go i
 
 ```bash
 cd marketplace/
-npm install @oceanprotocol/squid web3
+npm install @oceanprotocol/squid@0.4.1 web3
 ```
 
 At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000):
