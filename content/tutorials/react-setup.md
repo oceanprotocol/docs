@@ -9,6 +9,7 @@ description: This tutorial shows how you can build a basic [React](https://react
 - `npm` >= 5.2 is installed. You can check using `npm -v`
 - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
   - (Optional) If you want to use Azure Storage or Amazon S3 storage, then go through the tutorials to set those up: [Azure](/tutorials/azure-for-brizo/) or [Amazon](/tutorials/amazon-s3-for-brizo/). Note that if you're using Azure Storage, you must edit the `barge/brizo.env` file and set all `AZURE_`... values.
+  - (Optional but recommended) Clean out all your old Docker stuff using `docker system prune --all --volumes`
   - Use Barge to run a local Spree Testnet:
 
     ```bash
@@ -18,7 +19,7 @@ description: This tutorial shows how you can build a basic [React](https://react
     ./start_ocean.sh --latest --no-pleuston --local-spree-node
     ```
 
-- [Get some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in a local account managed by MetaMask.
+- Once your local Spree network is running, [get some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in a local account managed by MetaMask.
 
 ## New Create React App
 
@@ -77,11 +78,11 @@ After those steps you should see this, and MetaMask should have asked you to all
 
 Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your `console.log`, don't worry about it. It's a MetaMask thing.
 
-## Create Ocean instance
+## Create Ocean Instance
 
 Now that we are successfully connected with Web3, we can set up our Ocean instance.
 
-At the beginning of your component, create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
+At the beginning of your component (i.e. right after the `class App extends Component {` line), create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
 
 ```js
 async componentDidMount() {
