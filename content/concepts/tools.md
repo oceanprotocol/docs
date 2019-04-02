@@ -18,7 +18,7 @@ Plecos can be used in a microservice to facilitate data onboarding, as described
 ### squid-py Examples
 
 - [The squid-py tutorials in Jupyter notebooks](/tutorials/jupyter-notebooks/)
-- [The squid_py/examples/ directory of the squid-py repository](https://github.com/oceanprotocol/squid-py/tree/develop/squid_py/examples)
+- [The squid_py/examples/ directory of the squid-py repository](https://github.com/oceanprotocol/squid-py/tree/develop/examples)
 - [The squid-py tests](https://github.com/oceanprotocol/squid-py/tree/develop/tests)
 
 ### squid-js Examples
