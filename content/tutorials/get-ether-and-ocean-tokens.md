@@ -75,7 +75,9 @@ In the future, it will become possible to earn Mainnet Ocean Tokens as network r
 
 All Squid libraries have methods to request Ocean Tokens. They work by calling the "Dispenser" keeper contract, a contract which is only deployed to testnets. Therefore they will only work in testnets. They're documented in the following places:
 
-- [The squid-js docs for Account.requestTokens()](/references/squid-js/#Account-requestTokens)
+- The squid-js docs for:
+  - [OceanAccounts.requestTokens()](/references/squid-js/#OceanAccounts-requestTokens)
+  - [Account.requestTokens()](/references/squid-js/#Account-requestTokens)
 - The squid-py docs for:
   - [the squid\_py.ocean.ocean\_tokens module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_tokens.html): see the `request()` method.
   - [the squid\_py.ocean.ocean\_accounts module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
