@@ -65,9 +65,13 @@ With all these buttons in place, you should see this:
 
 ![React App 05](images/react-app-05.png)
 
-## Final Result
+Tip: Before clicking the `Retrieve assets` button, it might help to reload the page.
 
-That's it. If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
+Go ahead and click the `Retrieve assets` button, and then the `Consume asset` button. Approve all the MetaMask dialog boxes. 
+
+If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
+
+## Final Result
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 

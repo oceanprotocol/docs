@@ -101,9 +101,13 @@ The last thing we need is a button to start our registration inside the render f
 <button onClick={() => this.submitAsset()}>Register asset</button>
 ```
 
-## Final Result
+Tip: Before clicking the `Register asset` button, it might help to reload the page.
 
-That's it. If you have no errors in your `console.log` and you receive an alert after you click `Register asset` then you have successfully registered an asset.
+When you click on the `Register asset` button, you should get four separate dialog boxes from MetaMask, in a series, i.e. the second one only appears after you accept/approve the first one, and so on.
+
+If you have no errors in your `console.log`, then  you have successfully registered an asset.
+
+## Final Result
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
