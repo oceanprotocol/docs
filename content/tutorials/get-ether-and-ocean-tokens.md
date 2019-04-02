@@ -70,3 +70,17 @@ There are several ways to acquire some of the Ocean Tokens in the initial circul
 - completion of a [bounty](/concepts/bounties/)
 
 In the future, it will become possible to earn Mainnet Ocean Tokens as network rewards. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) explains that in more detail.
+
+### Get Testnet Ocean Tokens
+
+All Squid libraries have methods to request Ocean Tokens. They work by calling the "Dispenser" keeper contract, a contract which is only deployed to testnets. Therefore they will only work in testnets. They're documented in the following places:
+
+- The squid-js docs for:
+  - [OceanAccounts.requestTokens()](/references/squid-js/#OceanAccounts-requestTokens)
+  - [Account.requestTokens()](/references/squid-js/#Account-requestTokens)
+- The squid-py docs for:
+  - [the squid\_py.ocean.ocean\_tokens module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_tokens.html): see the `request()` method.
+  - [the squid\_py.ocean.ocean\_accounts module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
+- [The squid-java docs](https://www.javadoc.io/doc/com.oceanprotocol/squid/): click "All Classes" then "AccountsManager" then scroll to the bottom of the Class AccountsManager page where you'll find the `requestTokens()` method.
+
+The [Tools & Examples page](/concepts/tools/#examples) has links to example Squid code (in all of the languages), including examples of using the above methods.
