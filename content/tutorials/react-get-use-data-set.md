@@ -3,13 +3,11 @@ title: Get & Use a Data Set
 description: Tutorial to get and use a data set in a basic React app.
 ---
 
-**NOTICE: This section of the React App Tutorial is not currently working because it hasn't been updated to work with the latest squid-js. There is [an open issue to update it](https://github.com/oceanprotocol/docs/issues/181).**
-
 ## Requirements
 
-This is a continuation of the [React App Setup](/tutorials/react-setup/) and [React Publish Data-set](/tutorials/react-publish-data-set/) tutorial, so make sure you have done all the steps described in there.
+This is a continuation of the React App Tutorial. Make sure you already did the [React App Setup](/tutorials/react-setup/) and the [Publish a Data Set](/tutorials/react-publish-data-set/) steps.
 
-Open `src/App.js` in your marketplace app from previous tutorials.
+Open `src/App.js` in your marketplace app.
 
 ## Retrieve Assets
 
@@ -30,7 +28,7 @@ The last thing we need is a button to start our search inside the render functio
 
 ## Consume Assets
 
-The retrieved assets can now be consumed so in this tutorial we consume the first one. The following code goes after `async retrieveAssets()` function.
+The retrieved assets can now be consumed so in this tutorial we consume the first one. The following code goes after the `async retrieveAssets()` function.
 
 ```js
 async consumeAsset() {
@@ -57,7 +55,7 @@ async consumeAsset() {
 }
 ```
 
-We still need button in render function just after `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` to start consumption:
+We still need a button to start consumption. In the render function, just after the `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` line, add:
 
 ```jsx
 <button onClick={() => this.consumeAsset()}>Consume asset</button>
@@ -171,7 +169,7 @@ class App extends Component {
   }
 
   async retrieveAssets() {
-    this.dbAssets = await ocean.assets.search("10 Monkey Species Small")
+    this.dbAssets = await this.ocean.assets.search("10 Monkey Species Small")
     console.log(this.dbAssets)
   }
 
@@ -183,13 +181,13 @@ class App extends Component {
     // get service we want to execute
     const service = consumeAsset.findServiceByType('Access')
     // order service agreement
-    const agreement = await ocean.assets.order(
+    const agreement = await this.ocean.assets.order(
       consumeAsset.id,
       service.serviceDefinitionId,
       accounts[0]
     )
     // consume it
-    await ocean.assets.consume(
+    await this.ocean.assets.consume(
       agreement,
       consumeAsset.id,
       service.serviceDefinitionId,

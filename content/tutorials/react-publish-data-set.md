@@ -216,3 +216,5 @@ class App extends Component {
 
 export default App
 ```
+
+Move on to [Get & Use a Data Set](/tutorials/react-get-use-data-set/).
