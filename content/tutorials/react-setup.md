@@ -13,9 +13,9 @@ description: This tutorial shows how you can build a basic [React](https://react
   - Use Barge to run a local Spree Testnet:
 
     ```bash
-    export KEEPER_VERSION=v0.8.6
+    export KEEPER_VERSION=v0.9.0
     export AQUARIUS_VERSION=v0.2.0
-    export BRIZO_VERSION=v0.3.0
+    export BRIZO_VERSION=v0.3.1
     ./start_ocean.sh --latest --no-pleuston --local-spree-node
     ```
 
@@ -33,7 +33,7 @@ This will create a folder named `marketplace` with a boilerplate React app. Go i
 
 ```bash
 cd marketplace/
-npm install @oceanprotocol/squid@0.4.1 web3
+npm install @oceanprotocol/squid@0.5.0 web3
 ```
 
 At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000):
@@ -91,11 +91,9 @@ async componentDidMount() {
     nodeUri: "http://localhost:8545",
     aquariusUri: "http://localhost:5000",
     brizoUri: "http://localhost:8030",
+    brizoAddress: "0x00bd138abd70e2f00903268f3db08f2d25677c9e",
     parityUri: "http://localhost:8545",
-    secretStoreUri: "http://localhost:12001",
-    threshold: 0,
-    password: "node0",
-    address: "0x00bd138abd70e2f00903268f3db08f2d25677c9e",
+    secretStoreUri: "http://localhost:12001"
   })
   console.log("Finished loading contracts!")
 }
@@ -125,11 +123,9 @@ class App extends Component {
       nodeUri: 'http://localhost:8545',
       aquariusUri: 'http://localhost:5000',
       brizoUri: 'http://localhost:8030',
+      brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
       parityUri: 'http://localhost:8545',
-      secretStoreUri: 'http://localhost:12001',
-      threshold: 0,
-      password: 'node0',
-      address: '0x00bd138abd70e2f00903268f3db08f2d25677c9e'
+      secretStoreUri: 'http://localhost:12001'
     })
     console.log('Finished loading contracts!')
   }

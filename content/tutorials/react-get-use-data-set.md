@@ -67,7 +67,7 @@ With all these buttons in place, you should see this:
 
 Tip: Before clicking the `Retrieve assets` button, it might help to reload the page.
 
-Go ahead and click the `Retrieve assets` button, and then the `Consume asset` button. Approve all the MetaMask dialog boxes. 
+Go ahead and click the `Retrieve assets` button, and then the `Consume asset` button. Approve all the MetaMask dialog boxes.
 
 If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
 
@@ -157,11 +157,9 @@ class App extends Component {
       nodeUri: 'http://localhost:8545',
       aquariusUri: 'http://localhost:5000',
       brizoUri: 'http://localhost:8030',
+      brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
       parityUri: 'http://localhost:8545',
-      secretStoreUri: 'http://localhost:12001',
-      threshold: 0,
-      password: 'node0',
-      address: '0x00bd138abd70e2f00903268f3db08f2d25677c9e'
+      secretStoreUri: 'http://localhost:12001'
     })
     console.log('Finished loading contracts!')
   }

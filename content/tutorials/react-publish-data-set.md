@@ -193,11 +193,9 @@ class App extends Component {
       nodeUri: 'http://localhost:8545',
       aquariusUri: 'http://localhost:5000',
       brizoUri: 'http://localhost:8030',
+      brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
       parityUri: 'http://localhost:8545',
-      secretStoreUri: 'http://localhost:12001',
-      threshold: 0,
-      password: 'node0',
-      address: '0x00bd138abd70e2f00903268f3db08f2d25677c9e'
+      secretStoreUri: 'http://localhost:12001'
     })
     console.log('Finished loading contracts!')
   }
