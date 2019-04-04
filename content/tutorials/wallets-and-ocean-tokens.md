@@ -9,10 +9,10 @@ If you don't see any Ocean Tokens in your wallet software (e.g. MetaMask or MyEt
 
 ### Kovan or Nile Testnet
 
-Testnet       | Ocean Token Contract Address
---------------|-----------------------------
-Kovan         | `0xB57C4D626548eB8AC0B82b086721516493E2908d`
-Nile          | `0xcDae1AFa8025BE03Bc56D112eB4da3277913563d`
+| Testnet | Ocean Token Contract Address                 |
+| ------- | -------------------------------------------- |
+| Kovan   | `0xB57C4D626548eB8AC0B82b086721516493E2908d` |
+| Nile    | `0xcDae1AFa8025BE03Bc56D112eB4da3277913563d` |
 
 If the above addresses are out-of-date, then you can find newer ones in the [keeper-contracts repository on GitHub](https://github.com/oceanprotocol/keeper-contracts):
 

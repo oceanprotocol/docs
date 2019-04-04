@@ -31,10 +31,10 @@ The Nile Testnet is similar to the Kovan Testnet, except all the nodes are opera
 
 There is a Nile blockchain explorer at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/). You can use it to check the status of a transaction, the balance of an account, and more. It uses the following symbols for Nile Ether and Nile Ocean Tokens:
 
-Cryptocurrency    | Symbol used
-------------------|------------
-Nile Ether        | POA
-Nile Ocean Tokens | OCEAN or SBT-OCN
+| Cryptocurrency    | Symbol used      |
+| ----------------- | ---------------- |
+| Nile Ether        | POA              |
+| Nile Ocean Tokens | OCEAN or SBT-OCN |
 
 ### Ocean Components Connected to Nile
 

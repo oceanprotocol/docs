@@ -7,11 +7,11 @@ description: The technical basics of Ocean Tokens.
 
 **Ocean Tokens** are the [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) associated with Ocean Protocol. They are standards-compliant [ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20).
 
-Property               | Value
------------------------|---------
-Token Contract Address | [See the tutorial](/tutorials/wallets-and-ocean-tokens/)
-Token Symbol           | OCEAN
-Decimals of Precision  | 18
+| Property               | Value                                                    |
+| ---------------------- | -------------------------------------------------------- |
+| Token Contract Address | [See the tutorial](/tutorials/wallets-and-ocean-tokens/) |
+| Token Symbol           | OCEAN                                                    |
+| Decimals of Precision  | 18                                                       |
 
 ## Testnet Ocean Tokens
 

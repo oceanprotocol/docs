@@ -29,7 +29,7 @@ If you're connecting to the Nile testnet, then you can send get some Nile Ether 
 
 `curl -XPOST --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" https://faucet.nile.dev-ocean.com/faucet`
 
-In the above command you only need to replace `<YOUR ADDRESS>` with your own Ethereum address. 
+In the above command you only need to replace `<YOUR ADDRESS>` with your own Ethereum address.
 The Nile faucet has a limit of one request every 24 hours for the same Ethereum address. But don't worry, the Ether given is more than enough for interacting with the network.
 
 ### Get Ether for a Local Ganache-Based Testnet
@@ -79,8 +79,8 @@ All Squid libraries have methods to request Ocean Tokens. They work by calling t
   - [OceanAccounts.requestTokens()](/references/squid-js/#OceanAccounts-requestTokens)
   - [Account.requestTokens()](/references/squid-js/#Account-requestTokens)
 - The squid-py docs for:
-  - [the squid\_py.ocean.ocean\_tokens module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_tokens.html): see the `request()` method.
-  - [the squid\_py.ocean.ocean\_accounts module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
+  - [the `squid_py.ocean.ocean_tokens` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_tokens.html): see the `request()` method.
+  - [the `squid_py.ocean.ocean_accounts` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
 - [The squid-java docs](https://www.javadoc.io/doc/com.oceanprotocol/squid/): click "All Classes" then "AccountsManager" then scroll to the bottom of the Class AccountsManager page where you'll find the `requestTokens()` method.
 
 The [Example Code page](/tutorials/example-code/) has links to example Squid code (in all of the languages), including examples of using the above methods.
