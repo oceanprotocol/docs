@@ -83,4 +83,4 @@ All Squid libraries have methods to request Ocean Tokens. They work by calling t
   - [the squid\_py.ocean.ocean\_accounts module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
 - [The squid-java docs](https://www.javadoc.io/doc/com.oceanprotocol/squid/): click "All Classes" then "AccountsManager" then scroll to the bottom of the Class AccountsManager page where you'll find the `requestTokens()` method.
 
-The [Tools & Examples page](/concepts/tools/#examples) has links to example Squid code (in all of the languages), including examples of using the above methods.
+The [Example Code page](/tutorials/example-code/) has links to example Squid code (in all of the languages), including examples of using the above methods.
