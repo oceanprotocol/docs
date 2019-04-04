@@ -36,3 +36,8 @@
   items:
     - title: Jupyter Notebooks
       link: /tutorials/jupyter-notebooks/
+
+- group: More Examples
+  items:
+    - title: Example Code Using Squid
+      link: /tutorials/example-code/

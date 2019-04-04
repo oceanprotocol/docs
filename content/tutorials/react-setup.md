@@ -8,6 +8,7 @@ description: This tutorial shows how you can build a basic [React](https://react
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
 - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
+
   - (Optional) If you want to use Azure Storage or Amazon S3 storage, then go through the tutorials to set those up: [Azure](/tutorials/azure-for-brizo/) or [Amazon](/tutorials/amazon-s3-for-brizo/). Note that if you're using Azure Storage, you must edit the `barge/brizo.env` file and set all `AZURE_`... values.
   - (Optional but recommended) Clean out all your old Docker stuff using `docker system prune --all --volumes`
   - Use Barge to run a local Spree Testnet:

@@ -13,12 +13,12 @@ If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local K
 
 Here are the parameters you might need to connect to the [Nile Testnet](/concepts/testnets/#the-nile-testnet):
 
-Parameter          | Value
--------------------|---------------
-RPC URL (required) | [https://nile.dev-ocean.com/](https://nile.dev-ocean.com/)
-ChainID            | 8995 (decimal for MetaMask) or 0x2323 (hexadecimal)
-Symbol             | Whatever you like
-Nickname           | Whatever you like
+| Parameter          | Value                                                      |
+| ------------------ | ---------------------------------------------------------- |
+| RPC URL (required) | [https://nile.dev-ocean.com/](https://nile.dev-ocean.com/) |
+| ChainID            | 8995 (decimal for MetaMask) or 0x2323 (hexadecimal)        |
+| Symbol             | Whatever you like                                          |
+| Nickname           | Whatever you like                                          |
 
 In MetaMask, click on the network name then click on `Custom RPC` in the drop-down list. Scroll down to the `New Network` section. Enter the above RPC URL. You don't need to add a port number to the end of the RPC URL. Enter the ChainID, Symbol and Nickname if you like. See the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
 

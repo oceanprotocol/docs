@@ -1,33 +1,24 @@
 ---
-title: Tools & Examples
-description: Tools and examples for developing with Ocean Protocol.
+title: Tools
+description: Some tools that can be useful when working with Ocean Protocol.
 ---
 
-## Tools
+## Plecos
 
-### Plecos
-
-Plecos is a Python tool to check metadata (a JSON file) to see if it conforms to the [OEP8 schema](https://github.com/oceanprotocol/OEPs/tree/master/8). Plecos wraps the [jsonschema](https://github.com/Julian/jsonschema) validator. Users can use Plecos to check their metadata before sending it to an Aquarius instance. Aquarius can also use it to check metadata. Plecos can be found in [the Plecos repository on GitHub](https://github.com/oceanprotocol/plecos) and as [a Python package in PyPI](https://pypi.org/project/plecos/).
+Plecos is a Python tool to check metadata (a JSON file) to see if it conforms to the [OEP-8 schema](https://github.com/oceanprotocol/OEPs/tree/master/8). It wraps the [jsonschema](https://github.com/Julian/jsonschema) validator. It can be found in [the Plecos repository on GitHub](https://github.com/oceanprotocol/plecos) and as [a Python package in PyPI](https://pypi.org/project/plecos/).
 
 <repo name="Plecos"></repo>
 
-Plecos can be used in a microservice to facilitate data onboarding, as described in the [plecos_service repository](https://github.com/oceanprotocol/plecos_service).
+Note: Aquarius uses Plecos for checking metadata and other Ocean Protocol software will probably use it in the future.
 
-## Examples
+## Faucet Server
 
-### squid-py Examples
+The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a microservice that allows users to request Ether for a particular Ethereum network (e.g. the Nile Testnet).
 
-- [The squid-py tutorials in Jupyter notebooks](/tutorials/jupyter-notebooks/)
-- [The squid_py/examples/ directory of the squid-py repository](https://github.com/oceanprotocol/squid-py/tree/develop/examples)
-- [The squid-py tests](https://github.com/oceanprotocol/squid-py/tree/develop/tests)
+<repo name="faucet"></repo>
 
-### squid-js Examples
+## BlockScout
 
-- [The React App Tutorial](/tutorials/react-setup/)
-- [The src/examples/ directory of the squid-js repository](https://github.com/oceanprotocol/squid-js/tree/develop/src/examples)
-- [The squid-js tests](https://github.com/oceanprotocol/squid-js/tree/develop/test)
+[BlockScout](https://github.com/poanetwork/blockscout) (by [POA](https://poa.network/)) is an open source blockchain explorer for Ethereum networks.
 
-### squid-java Examples
-
-- [The squid-java README.md file](https://github.com/oceanprotocol/squid-java/blob/develop/README.md)
-- [The squid-java tests](https://github.com/oceanprotocol/squid-java/tree/develop/src/test)
+There is an [Ocean Protocol fork of BlockScout](https://github.com/oceanprotocol/blockscout). An instance is deployed in the Nile Testnet at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/).
