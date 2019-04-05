@@ -27,6 +27,10 @@ _Formerly called the Ocean POA Testnet._
 
 The Nile Testnet is similar to the Kovan Testnet, except all the nodes are operated by BigchainDB GmbH.
 
+### Connect to the Nile Testnet
+
+See the [tutorial page about connecting to Ocean-related networks](/tutorials/connect-to-networks/#connect-to-the-nile-testnet).
+
 ### Nile Blockchain Explorers
 
 There is a Nile blockchain explorer at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/). You can use it to check the status of a transaction, the balance of an account, and more. It uses the following symbols for Nile Ether and Nile Ocean Tokens:
@@ -51,6 +55,8 @@ There are several Ocean Protocol software components that are live, connected to
 ## A Spree Testnet
 
 When Ocean Protocol developers run [Barge](https://github.com/oceanprotocol/barge) with the `--local-spree-node` option, a "Spree Testnet" is deployed on their local machine: a local testnet not connected to any external public testnet.
+
+When running a Spree Testnet, you can connect to a node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
 
 Spree Testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge/blob/develop/README.md). You can configure the Spree nodes by editing the files in the `barge/networks/spree/` directory.
 
