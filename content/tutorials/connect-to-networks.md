@@ -16,9 +16,9 @@ Here are the parameters you might need to connect to the [Nile Testnet](/concept
 | Parameter          | Value                                                      |
 | ------------------ | ---------------------------------------------------------- |
 | RPC URL (required) | [https://nile.dev-ocean.com/](https://nile.dev-ocean.com/) |
-| ChainID            | 8995 (decimal for MetaMask) or 0x2323 (hexadecimal)        |
-| Symbol             | Whatever you like                                          |
-| Nickname           | Whatever you like                                          |
+| ChainID            | `8995` (decimal for MetaMask) or `0x2323` (hexadecimal)    |
+| Symbol             | Whatever you like, e.g. `NILE ETH`                         |
+| Nickname           | Whatever you like, e.g. `Nile Testnet`                     |
 
 In MetaMask, click on the network name then click on `Custom RPC` in the drop-down list. Scroll down to the `New Network` section. Enter the above RPC URL. You don't need to add a port number to the end of the RPC URL. Enter the ChainID, Symbol and Nickname if you like. See the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
 
