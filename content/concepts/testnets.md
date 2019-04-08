@@ -8,6 +8,9 @@ You can test an Ocean Protocol application (such as a marketplace) against the t
 ## The Kovan Testnet
 
 The [Kovan Testnet](https://github.com/kovan-testnet/proposal) (or just "Kovan") is a public Ethereum Testnet operated by members of the Ethereum community.
+The Ocean Protocol keeper contracts are deployed to the Kovan Testnet.
+
+For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
 
 ### Kovan Blockchain Explorers
 
@@ -21,11 +24,17 @@ There is a [Secret Store](/concepts/components/#secret-store) connected to the K
 
 Aside from the Secret Store, there is no other Ocean Protocol software component (e.g. Aquarius) that is live, connected to the Kovan Testnet, and operated by BigchainDB GmbH.
 
+### Using Barge with Kovan
+
+If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local-kovan-node` option, then Barge will run a Kovan node on your local machine (along with everything else Barge runs). There are many blocks in the Kovan Testnet's blockchain, so it can take a long time for your local Kovan node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Kovan node won't be able to do certain things.**
+
 ## The Nile Testnet
 
-_Formerly called the Ocean POA Testnet._
+_Also known as the Beta Network or Nile Beta Network. Formerly called the Ocean POA Testnet._
 
 The Nile Testnet is similar to the Kovan Testnet, except all the nodes are operated by BigchainDB GmbH.
+
+For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
 
 ### Connect to the Nile Testnet
 
@@ -52,7 +61,11 @@ There are several Ocean Protocol software components that are live, connected to
 
 > Internal note: The private "atlantic" repo documents the internal details of the Nile Testnet in `networks/nile/README.md`.
 
-## A Spree Testnet
+### Using Barge with Nile
+
+If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local-nile-node` option, then Barge will run a Nile node on your local machine (along with everything else Barge runs). There might be many blocks in the Nile Testnet's blockchain, so it might take a long time for your local Nile node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Nile node won't be able to do certain things.**
+
+## A Spree Testnet (for Local Development)
 
 When Ocean Protocol developers run [Barge](https://github.com/oceanprotocol/barge) with the `--local-spree-node` option, a "Spree Testnet" is deployed on their local machine: a local testnet not connected to any external public testnet.
 
@@ -62,6 +75,8 @@ Spree Testnet details can be found in the [Barge README.md file](https://github.
 
 Note: Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
 
-## A Ganache-Based Testnet
+## A Ganache-Based Testnet (for Local Development)
 
 A local testnet similar to Spree but launched by using the `--local-ganache-node` option with Barge.
+
+Note: You shouldn't use a Ganache-Based Testnet unless you know why you're doing so. For example, a Ganache-based testnet can be used to test some smart contracts, but it can't be used with a Secret Store.
