@@ -78,3 +78,5 @@ Note: Spree testnets are named after the Spree River, the main river flowing thr
 ## A Ganache-Based Testnet (for Local Development)
 
 A local testnet similar to Spree but launched by using the `--local-ganache-node` option with Barge.
+
+Note: You shouldn't use a Ganache-Based Testnet unless you know why you're doing so. For example, a Ganache-based testnet can be used to test some smart contracts, but it can't be used with a Secret Store.
