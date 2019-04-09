@@ -366,14 +366,3 @@ GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/W
 Resulting in:
 
 GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/Web3Provider.ts js GITHUB-EMBED
-
-## Swagger spec references
-
-Many Swagger fields like the description (`info.description`) are rendered through Markdown so you can write actual Markdown in those fields.
-
-- [Aquarius API reference](/references/aquarius/)
-- [Brizo API reference](/references/brizo/)
-
-For a complete overview of everything supported by Swagger and implemented in this site, take a look at the hidden Pet Store example:
-
-- [Pet Store Example](/references/pet-store/)

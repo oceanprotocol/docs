@@ -1,24 +1,5 @@
 @import 'variables';
 
-.swaggerMeta {
-    margin-top: -($spacer);
-    padding: 0;
-    font-size: $font-size-small;
-
-    li {
-        display: inline-block;
-        margin-left: $spacer;
-
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &:before {
-            display: none;
-        }
-    }
-}
-
 .basePath {
     margin-top: $spacer;
 

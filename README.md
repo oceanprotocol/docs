@@ -28,7 +28,6 @@
     - [Add Links to a Repository](#add-links-to-a-repository)
     - [Release Versions](#release-versions)
   - [API & Library References](#api--library-references)
-    - [Swagger specs](#swagger-specs)
     - [TypeDoc specs](#typedoc-specs)
 - [Development](#development)
   - [Using npm](#using-npm)
@@ -191,19 +190,6 @@ You can add more Markdown documents under `/content/references/`, link to them f
 But the actual reference pages in this section are constructed from data files during site build (as defined in [`gatsby-node.js`](./gatsby-node.js)) with their own little rules. Generally, you can't edit their content within this site, you have to go to the respective repository and edit the documentation strings living with the source code.
 
 The sidebar for those generated reference pages will automatically switch to include the table of contents of those pages so no need to define additional links in the [`/data/sidebars/references.yml`](./data/sidebars/references.yml) file for them.
-
-#### Swagger specs
-
-Reference pages based on Swagger specs are sourced from a Swagger spec `json` file, at the moment they simply live as manual copies under `/data/`:
-
-- [`aquarius.json`](./data/aquarius.json)
-- [`brizo.json`](./data/brizo.json)
-
-There's no automation setup around updating those files so [until this is setup](https://github.com/oceanprotocol/docs/issues/74), they need to be manually updated with copy & paste, like they did in the middle ages. You can copy them from a running instance of Aquarius or Brizo which will expose those spec files, e.g. under `localhost:5000/spec` for Aquarius and `localhost:8030/spec` for Brizo.
-
-For more information about stylistic issues, take a look at the section in the test page:
-
-- [Swagger spec references](https://docs.oceanprotocol.com/test#swagger-spec-references)
 
 #### TypeDoc specs
 
