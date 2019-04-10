@@ -5,6 +5,28 @@ description: The Ocean Protocol network is brought to life by many interacting s
 
 Before reading this page, you should understand some [Ocean-specific terminology](/concepts/terminology/).
 
+## Keeper
+
+A computer running a blockchain client
+(such as [Parity Ethereum](https://www.parity.io/ethereum/))
+where the associated blockchain network is running the Ocean Protocol
+[keeper-contracts](https://github.com/oceanprotocol/keeper-contracts)
+(smart contracts).
+
+<repo name="keeper-contracts"></repo>
+
+See also: [Run a Keeper](/setup/keeper/)
+
+## Secret Store
+
+A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store [asset](/concepts/terminology/#asset-or-data-asset) access-control keys.
+
+There are several clients for integrating the Parity Secret Store into Ocean:
+
+<repo name="secret-store-client-js"></repo>
+<repo name="secret-store-client-py"></repo>
+<repo name="secret-store-client-java"></repo>
+
 ## Aquarius
 
 Marketplaces run Aquarius to store and manage metadata about the [assets](/concepts/terminology/#asset-or-data-asset) available in their marketplace. It provides an HTTP API for interacting with an off-chain database (sometimes called "OceanDB").
@@ -35,24 +57,6 @@ Brizo supports several options for file storage, including Azure Storage, Amazon
 <repo name="osmosis-aws-driver"></repo>
 <repo name="osmosis-on-premise-driver"></repo>
 
-## Keeper
-
-A computer running a blockchain client
-(such as [Parity Ethereum](https://www.parity.io/ethereum/))
-where the associated blockchain network is running the Ocean Protocol
-[💧 keeper-contracts](https://github.com/oceanprotocol/keeper-contracts)
-(smart contracts).
-
-<repo name="keeper-contracts"></repo>
-
-See also: [Run a Keeper](/setup/keeper/)
-
-## Pleuston
-
-An example marketplace front-end for consumers to explore, download, and publish [assets](/concepts/terminology/#asset-or-data-asset) within the Ocean Protocol network. Implemented using [React](https://reactjs.org/) and [🦑 squid-js](https://github.com/oceanprotocol/squid-js).
-
-<repo name="pleuston"></repo>
-
 ## Squid Libraries
 
 Client libraries used by applications (such as Pleuston or Jupyter notebooks) to interact with Ocean components, including Keepers, Aquarius nodes, Brizo nodes, etc.
@@ -63,12 +67,16 @@ Client libraries used by applications (such as Pleuston or Jupyter notebooks) to
 <repo name="squid-py"></repo>
 <repo name="squid-java"></repo>
 
-## Secret Store
+## Pleuston
 
-A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store [asset](/concepts/terminology/#asset-or-data-asset) access-control keys.
+An example marketplace/publisher front-end for developers to explore, download, and publish [assets](/concepts/terminology/#asset-or-data-asset) in an Ocean Protocol network. Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
 
-There are several clients for integrating the Parity Secret Store into Ocean:
+<repo name="pleuston"></repo>
 
-<repo name="secret-store-client-js"></repo>
-<repo name="secret-store-client-py"></repo>
-<repo name="secret-store-client-java"></repo>
+## Commons Marketplace
+
+An online example marketplace/publisher for consumers to explore, download, and publish open data sets in the [Nile Testnet](/concepts/testnets/#the-nile-testnet). Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
+
+For more information, see [the blog post about Commons Marketplace](https://blog.oceanprotocol.com/the-commons-data-marketplace-c57a44288314).
+
+<repo name="commons"></repo>
