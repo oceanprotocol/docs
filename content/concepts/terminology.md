@@ -25,7 +25,7 @@ Someone who wants assets. An example is a data scientist working at an economic 
 
 ## Marketplace
 
-A service where publishers can list what assets they have, and consumers can see what's available then buy it (or get it for free). Every marketplace has a database where they store metadata about the assets they know about (but not the assets themselves). The Ocean network supports many marketplaces/tribes.
+A service where publishers can list what assets they have, and consumers can see what's available then buy it (or get it for free). Every marketplace has a database where they store metadata about the assets they know about (but not the assets themselves). The Ocean network supports many marketplaces.
 
 ## Verifier
 
