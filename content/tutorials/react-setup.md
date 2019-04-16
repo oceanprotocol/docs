@@ -34,7 +34,7 @@ This will create a folder named `marketplace` with a boilerplate React app. Go i
 
 ```bash
 cd marketplace/
-npm install @oceanprotocol/squid@0.5.5 web3
+npm install @oceanprotocol/squid@0.5.5
 ```
 
 At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000):
@@ -128,7 +128,7 @@ class App extends Component {
       parityUri: 'http://localhost:8545',
       secretStoreUri: 'http://localhost:12001'
     })
-    console.log('Finished loading contracts!')
+    console.log('Finished loading contracts.')
   }
 
   render() {

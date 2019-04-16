@@ -90,10 +90,14 @@ Now that we have an asset to submit, we need a function to handle it. Just befor
 
 ```js
 async submitAsset() {
-  const accounts = await this.ocean.accounts.list()
-  const ddo = await this.ocean.assets.create(asset, accounts[0])
-  alert('Asset successfully submitted: ', JSON.stringify(ddo))
-}
+    const accounts = await this.ocean.accounts.list()
+    const ddo = await this.ocean.assets.create(asset, accounts[0])
+    console.log('Asset successfully submitted.')
+    console.log(ddo)
+    alert(
+      'Asset successfully submitted. Look into your console to see the response DDO object.'
+    )
+  }
 ```
 
 The last thing we need is a button to start our registration inside the render function just after `<h1>Marketplace app</h1>`:
@@ -138,7 +142,8 @@ const asset = {
         contentLength: 12057507,
         compression: 'zip',
         encoding: 'UTF-8',
-        url: 'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/training.zip'
+        url:
+          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/training.zip'
       },
       {
         index: 1,
@@ -146,12 +151,13 @@ const asset = {
         checksum: '354d19c0733c47ef3a6cce5b633116b0',
         checksumType: 'MD5',
         contentLength: 928,
-        url: 'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/monkey_labels.txt'
+        url:
+          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/monkey_labels.txt',
         resourceId: 'test'
       },
       {
         index: 2
-      },
+      }
     ],
     checksum: '',
     categories: ['image'],
@@ -199,13 +205,17 @@ class App extends Component {
       parityUri: 'http://localhost:8545',
       secretStoreUri: 'http://localhost:12001'
     })
-    console.log('Finished loading contracts!')
+    console.log('Finished loading contracts.')
   }
 
   async submitAsset() {
     const accounts = await this.ocean.accounts.list()
     const ddo = await this.ocean.assets.create(asset, accounts[0])
-    alert('Asset successfully submitted: ', JSON.stringify(ddo))
+    console.log('Asset successfully submitted.')
+    console.log(ddo)
+    alert(
+      'Asset successfully submitted. Look into your console to see the response DDO object.'
+    )
   }
 
   render() {
