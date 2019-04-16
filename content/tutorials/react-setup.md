@@ -14,9 +14,9 @@ description: This tutorial shows how you can build a basic [React](https://react
   - Use Barge to run a local Spree Testnet:
 
     ```bash
-    export KEEPER_VERSION=v0.9.0
-    export AQUARIUS_VERSION=v0.2.0
-    export BRIZO_VERSION=v0.3.1
+    export KEEPER_VERSION=v0.9.1
+    export AQUARIUS_VERSION=v0.2.2
+    export BRIZO_VERSION=v0.3.5
     ./start_ocean.sh --latest --no-pleuston --local-spree-node
     ```
 
@@ -34,7 +34,7 @@ This will create a folder named `marketplace` with a boilerplate React app. Go i
 
 ```bash
 cd marketplace/
-npm install @oceanprotocol/squid@0.5.0 web3
+npm install @oceanprotocol/squid@0.5.5 web3
 ```
 
 At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000):
