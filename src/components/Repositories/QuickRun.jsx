@@ -1,4 +1,3 @@
-/*
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
@@ -25,7 +24,7 @@ const QuickRun = ({ name }) => (
                     <span className="token function">cd</span> barge/
                     <br />
                     <br />
-                    ./start_ocean.sh --latest
+                    ./start_ocean.sh
                 </code>
             </pre>
 
@@ -39,4 +38,3 @@ QuickRun.propTypes = {
 }
 
 export default QuickRun
-*/

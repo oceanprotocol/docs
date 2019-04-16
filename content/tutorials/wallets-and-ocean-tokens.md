@@ -12,22 +12,18 @@ If you don't see any Ocean Tokens in your wallet software (e.g. MetaMask or MyEt
 | Testnet | Ocean Token Contract Address                 |
 | ------- | -------------------------------------------- |
 | Kovan   | `0xB57C4D626548eB8AC0B82b086721516493E2908d` |
-| Nile    | `0xcDae1AFa8025BE03Bc56D112eB4da3277913563d` |
+| Nile    | `0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad` |
 
 If the above addresses are out-of-date, then you can find newer ones in the [keeper-contracts repository on GitHub](https://github.com/oceanprotocol/keeper-contracts):
 
 1. Click on the "Branch: **develop**" button and switch to the tag of the latest release (e.g. `v0.8.6`).
 1. In the `README.md` file, check the address of the OceanToken contract (in Nile or Kovan).
-1. Double-check the address by looking in the file named `zos.kovan.json` (for Kovan) or `zos.dev-8995.json` (for Nile). Check for a block of JSON that looks like:
+1. Double-check the address by looking in the file named `zos.kovan.json` (for Kovan) or `zos.dev-8995.json` (for Nile). Search for `/OceanToken`. There should be one result and the text around it should look like:
 
    ```json
-       "@oceanprotocol/keeper-contracts/OceanToken": [
-         {
-           "address": "0xB57C4D626548eB8AC0B82b086721516493E2908d",
-           "version": "v0.8.6",
-           "implementation": "0x6E2c2D9c1fA947FAE47AD3EFF86A97C0e1E82EE4",
-           "admin": "0xA18999a10D9e7d8116c406D284fa31541e019177"
-         }
+    "@oceanprotocol/keeper-contracts/OceanToken": [
+      {
+        "address": "0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad",
    ```
 
    Compare the `"address"` value to the value from the `README.md` file.
