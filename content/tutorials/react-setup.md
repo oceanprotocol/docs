@@ -7,11 +7,11 @@ description: This tutorial shows how you can build a basic [React](https://react
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
+- `Spree` local Ocean test hetwork
 
-  - (Optional) If you want to use Azure Storage or Amazon S3 storage, then go through the tutorials to set those up: [Azure](/tutorials/azure-for-brizo/) or [Amazon](/tutorials/amazon-s3-for-brizo/). Note that if you're using Azure Storage, you must edit the `barge/brizo.env` file and set all `AZURE_`... values.
+  - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
   - (Optional but recommended) Clean out all your old Docker stuff using `docker system prune --all --volumes`
-  - Use Barge to run a local Spree Testnet:
+  - Use startup script in Barge to run a local Spree Testnet:
 
     ```bash
     export KEEPER_VERSION=v0.9.1
@@ -20,7 +20,8 @@ description: This tutorial shows how you can build a basic [React](https://react
     ./start_ocean.sh --latest --no-pleuston --local-spree-node
     ```
 
-- Once your local Spree network is running, [get some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in a local account managed by MetaMask.
+  - Compiling and deploying the contracts takes some time so it takes a few minutes until the network is ready to be interacted with.
+  - Once your local Spree network is running, [get some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in a local account managed by MetaMask.
 
 ## New Create React App
 
@@ -96,7 +97,7 @@ async componentDidMount() {
     parityUri: "http://localhost:8545",
     secretStoreUri: "http://localhost:12001"
   })
-  console.log("Finished loading contracts!")
+  console.log("Finished loading contracts.")
 }
 ```
 
