@@ -15,6 +15,8 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 ##### H5
 ```
 
+<!-- markdownlint-disable MD025 -->
+
 # H1
 
 ## H2
@@ -24,6 +26,8 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 #### H4
 
 ##### H5
+
+<!-- markdownlint-enable MD025 -->
 
 ## Emphasis
 
@@ -46,6 +50,28 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists
+
+```text
+- First unordered list item
+- Second unordered list item
+- Another item
+- Another item
+  - Unordered sub-list.
+- Actual numbers don't matter, just that it's a number
+  - Unordered sub-list
+- And another item.
+   Some text that should be aligned with the above item.
+```
+
+- First unordered list item
+- Second unordered list item
+- Another item
+- Another item
+  - Unordered sub-list.
+- Actual numbers don't matter, just that it's a number
+  - Unordered sub-list
+- And another item.
+  Some text that should be aligned with the above item.
 
 ```text
 1. First ordered list item
