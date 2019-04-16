@@ -25,11 +25,18 @@ You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see 
 
 ### Get Ether for the Nile Testnet
 
-If you're connecting to the Nile testnet, then you can send get some Nile Ether in `<YOUR ADDRESS>` using the following command (a long command that wraps around):
+If you're connecting to the Nile testnet, you can use the faucet UI, which is setup for Nile:
 
-`curl -XPOST --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" https://faucet.nile.dev-ocean.com/faucet`
+- [commons.oceanprotocol.com/faucet](https://commons.oceanprotocol.com/faucet)
+
+Alternatively, you can send get some Nile Ether in `<YOUR ADDRESS>` using the following command (a long command that wraps around):
+
+```bash
+curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json"  -X POST https://faucet.nile.dev-ocean.com/faucet
+```
 
 In the above command you only need to replace `<YOUR ADDRESS>` with your own Ethereum address.
+
 The Nile faucet has a limit of one request every 24 hours for the same Ethereum address. But don't worry, the Ether given is more than enough for interacting with the network.
 
 ### Get Ether for a Local Ganache-Based Testnet
@@ -40,7 +47,9 @@ If you're running a local Ganache-based testnet, then it creates several account
 
 **Option 1:** If you're running a local Spree testnet, then you can send some Spree Ether to `<YOUR ADDRESS>` using the following command (a long command that wraps around):
 
-`curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545`
+```bash
+curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545
+```
 
 That command uses [Ethereum's JSON RPC API](https://wiki.parity.io/JSONRPC.html). You can also create a new account using the Parity Ethereum CLI. See [the Parity Ethereum CLI documentation](https://wiki.parity.io/CLI-Sub-commands).
 
@@ -54,7 +63,9 @@ Details about the bootstrapped accounts can be found in [the README.md file in t
 
 **Option 3:** Another option is to run [the Ocean faucet server](https://github.com/oceanprotocol/faucet) on your machine, with default configuration settings. The default settings enable it to dispense Spree Ether. To ask the faucet to send some Spree Ether to `<YOUR ADDRESS>`, use the command (a long command that wraps around):
 
-`curl --data '{"address":"<YOUR ADDRESS>"}' -H "Content-Type: application/json" -X POST localhost:3001/faucet`
+```bash
+curl --data '{"address":"<YOUR ADDRESS>"}' -H "Content-Type: application/json" -X POST localhost:3001/faucet
+```
 
 ## Get Ocean Tokens
 
