@@ -15,6 +15,8 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 ##### H5
 ```
 
+<!-- markdownlint-disable MD025 -->
+
 # H1
 
 ## H2
@@ -24,6 +26,8 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 #### H4
 
 ##### H5
+
+<!-- markdownlint-enable MD025 -->
 
 ## Emphasis
 
