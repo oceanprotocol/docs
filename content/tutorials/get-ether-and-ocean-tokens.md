@@ -25,17 +25,23 @@ You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see 
 
 ### Get Ether for the Nile Testnet
 
-If you're connecting to the Nile testnet, you can use the faucet UI, which is setup for Nile:
+If you're connecting to the Nile testnet, you can use the Ocean Faucet. A simple UI for it is deployed as part of the Commons marketplace under:
 
-- [commons.oceanprotocol.com/faucet](https://commons.oceanprotocol.com/faucet)
+- client: [commons.oceanprotocol.com/faucet](https://commons.oceanprotocol.com/faucet)
 
-Alternatively, you can send get some Nile Ether in `<YOUR ADDRESS>` using the following command (a long command that wraps around):
+This interface is setup to communicate with the deployed Ocean Faucet Server under:
+
+- server: [faucet.nile.dev-ocean.com](https://faucet.nile.dev-ocean.com)
+
+You can also communicate with that server directly and get some Nile Ether into `<YOUR ADDRESS>` using the following command:
 
 ```bash
-curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json"  -X POST https://faucet.nile.dev-ocean.com/faucet
+curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST https://faucet.nile.dev-ocean.com/faucet
 ```
 
 In the above command you only need to replace `<YOUR ADDRESS>` with your own Ethereum address.
+
+Check out the [Ocean Faucet Server repository](https://github.com/oceanprotocol/faucet) to learn more about what the server provides.
 
 The Nile faucet has a limit of one request every 24 hours for the same Ethereum address. But don't worry, the Ether given is more than enough for interacting with the network.
 
