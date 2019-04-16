@@ -52,6 +52,28 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ## Lists
 
 ```text
+- First unordered list item
+- Second unordered list item
+- Another item
+- Another item
+  - Unordered sub-list.
+- Actual numbers don't matter, just that it's a number
+  - Unordered sub-list
+- And another item.
+   Some text that should be aligned with the above item.
+```
+
+- First unordered list item
+- Second unordered list item
+- Another item
+- Another item
+  - Unordered sub-list.
+- Actual numbers don't matter, just that it's a number
+  - Unordered sub-list
+- And another item.
+  Some text that should be aligned with the above item.
+
+```text
 1. First ordered list item
 2. Another item
   - Unordered sub-list.
