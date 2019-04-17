@@ -35,7 +35,7 @@ This will create a folder named `marketplace` with a boilerplate React app. Go i
 
 ```bash
 cd marketplace/
-npm install @oceanprotocol/squid@0.5.5
+npm install @oceanprotocol/squid@0.5.6
 ```
 
 At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000):
