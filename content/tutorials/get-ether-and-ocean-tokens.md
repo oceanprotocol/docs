@@ -29,7 +29,7 @@ If you're connecting to the Nile testnet, you can use the Ocean Faucet. A simple
 
 - client: [commons.oceanprotocol.com/faucet](https://commons.oceanprotocol.com/faucet)
 
-This interface is setup to communicate with the deployed Ocean Faucet Server under:
+This interface is set up to communicate with the deployed Ocean Faucet Server under:
 
 - server: [faucet.nile.dev-ocean.com](https://faucet.nile.dev-ocean.com)
 
