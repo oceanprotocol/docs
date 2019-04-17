@@ -53,7 +53,8 @@ async consumeAsset() {
       consumeAsset.id,
       service.serviceDefinitionId,
       accounts[0],
-      ''
+      '',
+      0
   )
 }
 ```
@@ -141,7 +142,8 @@ class App extends Component {
       consumeAsset.id,
       service.serviceDefinitionId,
       accounts[0],
-      ''
+      '',
+      0
     )
   }
 
