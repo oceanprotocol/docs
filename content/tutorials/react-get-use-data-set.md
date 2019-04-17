@@ -20,8 +20,11 @@ In the previous tutorial we added asset publishing. We can now search for publis
 // src/App.js
 // ...
 async retrieveAssets() {
-  this.dbAssets = await this.ocean.assets.search("10 Monkey Species Small")
-  console.log(this.dbAssets)
+  this.search = await this.ocean.assets.search('10 Monkey Species Small')
+  console.log(this.search)
+  alert(
+    'Asset successfully retrieved. Look into your console to see the search response.'
+  )
 }
 // ...
 ```
@@ -48,25 +51,25 @@ async consumeAsset() {
   // get all accounts
   const accounts = await this.ocean.accounts.list()
   // get first asset
-  const consumeAsset = this.dbAssets[0]
+  const consumeAsset = this.search.results[0]
   // get service we want to execute
   const service = consumeAsset.findServiceByType('Access')
   // order service agreement
   const agreement = await this.ocean.assets.order(
-      consumeAsset.id,
-      service.serviceDefinitionId,
-      accounts[0]
+    consumeAsset.id,
+    service.serviceDefinitionId,
+    accounts[0]
   )
   // consume it
   await this.ocean.assets.consume(
-      agreement,
-      consumeAsset.id,
-      service.serviceDefinitionId,
-      accounts[0],
-      '',
-      0
+    agreement,
+    consumeAsset.id,
+    service.serviceDefinitionId,
+    accounts[0],
+    '',
+    0
   )
-}
+  }
 // ...
 ```
 
@@ -129,8 +132,8 @@ class App extends Component {
   }
 
   async retrieveAssets() {
-    this.dbAssets = await this.ocean.assets.search('10 Monkey Species Small')
-    console.log(this.dbAssets)
+    this.search = await this.ocean.assets.search('10 Monkey Species Small')
+    console.log(this.search)
     alert(
       'Asset successfully retrieved. Look into your console to see the search response.'
     )
@@ -140,7 +143,7 @@ class App extends Component {
     // get all accounts
     const accounts = await this.ocean.accounts.list()
     // get first asset
-    const consumeAsset = this.dbAssets[0]
+    const consumeAsset = this.search.results[0]
     // get service we want to execute
     const service = consumeAsset.findServiceByType('Access')
     // order service agreement

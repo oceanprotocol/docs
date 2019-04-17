@@ -11,17 +11,19 @@ description: This tutorial shows how you can build a basic [React](https://react
 
   - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
   - (Optional but recommended) Clean out all your old Docker stuff using `docker system prune --all --volumes`
-  - Use startup script in Barge to run a local Spree Testnet. Compiling and deploying the contracts takes some time so it takes a few minutes until the network is ready to be interacted with:
+  - Use the startup script in Barge to run a local Spree Testnet:
 
     ```bash
-    export KEEPER_VERSION=v0.9.1
-    export AQUARIUS_VERSION=v0.2.2
-    export BRIZO_VERSION=v0.3.5
+    export KEEPER_VERSION=v0.9.1 && \
+    export AQUARIUS_VERSION=v0.2.2 && \
+    export BRIZO_VERSION=v0.3.5 && \
     ./start_ocean.sh --latest --no-pleuston --local-spree-node
     ```
 
   - A Web3 capable browser, like Firefox/Chrome with MetaMask installed
   - [Some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account
+
+Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
 
 ## New Create React App
 
@@ -31,7 +33,7 @@ First, kickstart your new React app by creating a boilerplate with Create React 
 npx create-react-app marketplace
 ```
 
-This will create a folder named `marketplace` with a boilerplate React app. Go into that new folder and add the Ocean Protocol JavaScript library and Web3 packages to the app's dependencies:
+This will create a folder named `marketplace` with a boilerplate React app. Go into that new folder and add the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/squid-js) to the app's dependencies:
 
 ```bash
 cd marketplace/
