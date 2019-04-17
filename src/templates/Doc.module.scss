@@ -50,9 +50,17 @@
 }
 
 .version {
+    color: $brand-grey-light;
     font-size: $font-size-base;
     font-family: $font-family-monospace;
-    color: $brand-grey-light;
+
+    a {
+        font-size: $font-size-mini;
+        font-family: $font-family-base;
+        font-weight: $font-weight-base;
+        display: inline-block;
+        margin-left: .5rem;
+    }
 }
 
 .pathName {

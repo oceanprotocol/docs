@@ -27,7 +27,7 @@
   - [Repositories](#repositories)
     - [Add Links to a Repository](#add-links-to-a-repository)
     - [Release Versions](#release-versions)
-  - [API & Library References](#api--library-references)
+  - [API References](#api-references)
     - [Swagger specs](#swagger-specs)
     - [TypeDoc specs](#typedoc-specs)
 - [Development](#development)
@@ -49,7 +49,7 @@ The documentation is split in multiple sections whose content lives in this repo
 - **Core concepts**: high-level explanation of concepts, assumptions, and components
 - **Setup**: getting started for various stakeholders and use cases
 - **Tutorials**: detailed tutorials
-- **API & Library References**: docs for the Aquarius & Brizo REST APIs, and docs for various Squid libraries
+- **API References**: docs for the Aquarius & Brizo REST APIs, and docs for various Squid libraries
 
 Those sections are defined in the [`/data/sections.yml`](data/sections.yml) file.
 
@@ -184,7 +184,7 @@ The GitHub link is automatically added for every repository and will always be d
 
 The displayed version number is based on the tag name of the latest release for a given repository. That means only GitHub releases will trigger a version number update, creating a new Git tag alone is not sufficient.
 
-### API & Library References
+### API References
 
 You can add more Markdown documents under `/content/references/`, link to them from the [`/data/sidebars/references.yml`](./data/sidebars/references.yml), and they will appear just like in all the other sections.
 
@@ -194,14 +194,12 @@ The sidebar for those generated reference pages will automatically switch to inc
 
 #### Swagger specs
 
-Reference pages based on Swagger specs are sourced from a Swagger spec `json` file, at the moment they simply live as manual copies under `/data/`:
+Reference pages based on Swagger specs are sourced from remotely hosted Swagger specs:
 
-- [`aquarius.json`](./data/aquarius.json)
-- [`brizo.json`](./data/brizo.json)
+- [`https://nginx-aquarius.dev-ocean.com/spec`](https://nginx-aquarius.dev-ocean.com/spec)
+- [`https://nginx-brizo.dev-ocean.com/spec`](https://nginx-brizo.dev-ocean.com/spec)
 
-There's no automation setup around updating those files so [until this is setup](https://github.com/oceanprotocol/docs/issues/74), they need to be manually updated with copy & paste, like they did in the middle ages. You can copy them from a running instance of Aquarius or Brizo which will expose those spec files, e.g. under `localhost:5000/spec` for Aquarius and `localhost:8030/spec` for Brizo.
-
-For more information about stylistic issues, take a look at the section in the test page:
+They are fetched and updated automatically upon every site build. For more information about stylistic issues, take a look at the section in the test page:
 
 - [Swagger spec references](https://docs.oceanprotocol.com/test#swagger-spec-references)
 

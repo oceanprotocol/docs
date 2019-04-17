@@ -69,7 +69,7 @@ export default class ApiSwaggerTemplate extends Component {
 
     render() {
         const { location, pageContext } = this.props
-        const { api } = pageContext
+        const { api, name } = pageContext
         const { host, basePath, info, paths } = api
         const { title, description, version, license, contact } = info
 
@@ -106,7 +106,12 @@ export default class ApiSwaggerTemplate extends Component {
                                     description={description}
                                     prepend={
                                         <span className={stylesDoc.version}>
-                                            {version}
+                                            <span>v{version}</span>
+                                            <a
+                                                href={`https://app.swaggerhub.com/apis/Ocean-Protocol/${name}`}
+                                            >
+                                                past versions
+                                            </a>
                                         </span>
                                     }
                                 />

@@ -37,26 +37,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     }
 }
 
-// https://github.com/swagger-api/swagger-js
-const getSpec = async () => {
-    const spec = await Swagger(
-        'http://petstore.swagger.io/v2/swagger.json'
-    ).then(client => {
-        return client.spec // The resolved spec
-
-        // client.originalSpec // In case you need it
-        // client.errors // Any resolver errors
-
-        // Tags interface
-        // client.apis.pet.addPet({id: 1, name: "bobby"}).then(...)
-
-        // TryItOut Executor, with the `spec` already provided
-        // client.execute({operationId: 'addPet', parameters: {id: 1, name: "bobby") }).then(...)
-    })
-
-    return spec
-}
-
 exports.createPages = ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions
 
@@ -152,44 +132,79 @@ exports.createPages = ({ graphql, actions }) => {
                 //
                 // Create pages from swagger json files
                 //
-                const swaggerSpecs = [
-                    './data/aquarius.json',
-                    './data/brizo.json'
-                ]
+                const swaggerComponents = ['aquarius', 'brizo']
                 const apiSwaggerTemplate = path.resolve(
                     './src/templates/Swagger/index.jsx'
                 )
 
-                swaggerSpecs.forEach(spec => {
-                    const api = require(spec) // eslint-disable-line
-                    const name = path
-                        .basename(spec)
-                        .split('.json')
-                        .join('')
-                    const slug = `/references/${name}/`
+                // https://github.com/swagger-api/swagger-js
+                const fetchSwaggerSpec = async name => {
+                    try {
+                        const client = await Swagger(
+                            `https://nginx-${name}.dev-ocean.com/spec`
+                        )
+                        return client.spec // The resolved spec
 
-                    createPage({
-                        path: slug,
-                        component: apiSwaggerTemplate,
-                        context: {
-                            slug,
-                            api
-                        }
-                    })
+                        // client.originalSpec // In case you need it
+                        // client.errors // Any resolver errors
+
+                        // Tags interface
+                        // client.apis.pet.addPet({id: 1, name: "bobby"}).then(...)
+
+                        // TryItOut Executor, with the `spec` already provided
+                        // client.execute({operationId: 'addPet', parameters: {id: 1, name: "bobby") }).then(...)
+                    } catch (error) {
+                        console.log(error)
+                    }
+                }
+
+                const getSlug = name => {
+                    const slug = `/references/${name}/`
+                    return slug
+                }
+
+                const specAquarius = await fetchSwaggerSpec(
+                    swaggerComponents[0]
+                )
+                const slugAquarius = getSlug(swaggerComponents[0])
+
+                createPage({
+                    path: slugAquarius,
+                    component: apiSwaggerTemplate,
+                    context: {
+                        slug: slugAquarius,
+                        name: swaggerComponents[0],
+                        api: specAquarius
+                    }
                 })
 
-                // Swagger Pet Store example, fetch from remote
+                const specBrizo = await fetchSwaggerSpec(swaggerComponents[1])
+                const slugBrizo = getSlug(swaggerComponents[1])
+
+                createPage({
+                    path: slugBrizo,
+                    component: apiSwaggerTemplate,
+                    context: {
+                        slug: slugBrizo,
+                        name: swaggerComponents[1],
+                        api: specBrizo
+                    }
+                })
+
+                // Swagger Pet Store example
                 const petStoreSlug = '/references/petstore/'
 
                 try {
-                    const api = await getSpec()
+                    const client = await Swagger(
+                        `http://petstore.swagger.io/v2/swagger.json`
+                    )
 
                     createPage({
                         path: petStoreSlug,
                         component: apiSwaggerTemplate,
                         context: {
                             slug: petStoreSlug,
-                            api
+                            api: client.spec
                         }
                     })
                 } catch (error) {
