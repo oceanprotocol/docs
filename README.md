@@ -194,14 +194,12 @@ The sidebar for those generated reference pages will automatically switch to inc
 
 #### Swagger specs
 
-Reference pages based on Swagger specs are sourced from a Swagger spec `json` file, at the moment they simply live as manual copies under `/data/`:
+Reference pages based on Swagger specs are sourced from remotely hosted Swagger specs:
 
-- [`aquarius.json`](./data/aquarius.json)
-- [`brizo.json`](./data/brizo.json)
+- [`https://nginx-aquarius.dev-ocean.com/spec`](https://nginx-aquarius.dev-ocean.com/spec)
+- [`https://nginx-brizo.dev-ocean.com/spec`](https://nginx-brizo.dev-ocean.com/spec)
 
-There's no automation setup around updating those files so [until this is setup](https://github.com/oceanprotocol/docs/issues/74), they need to be manually updated with copy & paste, like they did in the middle ages. You can copy them from a running instance of Aquarius or Brizo which will expose those spec files, e.g. under `localhost:5000/spec` for Aquarius and `localhost:8030/spec` for Brizo.
-
-For more information about stylistic issues, take a look at the section in the test page:
+They are fetched and updated automatically upon every site build. For more information about stylistic issues, take a look at the section in the test page:
 
 - [Swagger spec references](https://docs.oceanprotocol.com/test#swagger-spec-references)
 
