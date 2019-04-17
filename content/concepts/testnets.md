@@ -58,6 +58,7 @@ There are several Ocean Protocol software components that are live, connected to
 - Brizo at [https://nginx-brizo.dev-ocean.com](https://nginx-brizo.dev-ocean.com)
 - Jupyter Hub at [https://mantaray.dev-ocean.com](https://mantaray.dev-ocean.com)
 - [Token Bridge Frontend](https://github.com/oceanprotocol/bridge-ui) (for a token bridge between Nile and Kovan) at [https://token-bridge.dev-ocean.com](https://token-bridge.dev-ocean.com)
+- Commons Marketplace at [https://commons.oceanprotocol.com](https://commons.oceanprotocol.com)
 
 > Internal note: The private "atlantic" repo documents the internal details of the Nile Testnet in `networks/nile/README.md`.
 
