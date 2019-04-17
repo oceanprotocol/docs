@@ -14,6 +14,7 @@ Open `src/App.js` in your marketplace app.
 In the previous tutorial we added asset publishing. We can now search for published assets for consumption. Just after the `submitAsset()` function we can add a new function that will handle search:
 
 ```js
+// src/App.js
 async retrieveAssets() {
   this.dbAssets = await this.ocean.assets.search("10 Monkey Species Small")
   console.log(this.dbAssets)
@@ -23,6 +24,7 @@ async retrieveAssets() {
 The last thing we need is a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
 
 ```jsx
+// src/App.js
 <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
 ```
 
@@ -31,6 +33,7 @@ The last thing we need is a button to start our search inside the render functio
 The retrieved assets can now be consumed so in this tutorial we consume the first one. The following code goes after the `async retrieveAssets()` function.
 
 ```js
+// src/App.js
 async consumeAsset() {
   // get all accounts
   const accounts = await this.ocean.accounts.list()
@@ -58,6 +61,7 @@ async consumeAsset() {
 We still need a button to start consumption. In the render function, just after the `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` line, add:
 
 ```jsx
+// src/App.js
 <button onClick={() => this.consumeAsset()}>Consume asset</button>
 ```
 
@@ -76,82 +80,15 @@ If you have no errors in your `console.log` and can see your asset files listed,
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
 ```jsx
+// src/App.js
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
 import * as Web3 from 'web3'
+import asset from './asset'
 
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()
-
-const asset = {
-  base: {
-    name: '10 Monkey Species Small',
-    dateCreated: '2012-02-01T10:55:11Z',
-    author: 'Mario',
-    license: 'CC0: Public Domain',
-    contentType: 'jpg/txt',
-    price: 10,
-    files: [
-      {
-        index: 0,
-        contentType: 'application/zip',
-        checksum: '2bf9d229d110d1976cdf85e9f3256c7f',
-        checksumType: 'MD5',
-        contentLength: 12057507,
-        compression: 'zip',
-        encoding: 'UTF-8',
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/training.zip'
-      },
-      {
-        index: 1,
-        contentType: 'text/txt',
-        checksum: '354d19c0733c47ef3a6cce5b633116b0',
-        checksumType: 'MD5',
-        contentLength: 928,
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/monkey_labels.txt',
-        resourceId: 'test'
-      },
-      {
-        index: 2
-      }
-    ],
-    checksum: '',
-    categories: ['image'],
-    tags: ['image data', 'classification', 'animals'],
-    type: 'dataset',
-    description: 'EXAMPLE ONLY ',
-    copyrightHolder: 'Unknown',
-    workExample: 'image path, id, label',
-    links: [
-      {
-        name: 'example model',
-        url:
-          'https://drive.google.com/open?id=1uuz50RGiAW8YxRcWeQVgQglZpyAebgSM'
-      },
-      {
-        name: 'example code',
-        type: 'example code',
-        url: 'https://github.com/slothkong/CNN_classification_10_monkey_species'
-      },
-      {
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/links/discovery/n5151.jpg',
-        name: 'n5151.jpg',
-        type: 'discovery'
-      },
-      {
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/links/sample/sample.zip',
-        name: 'sample.zip',
-        type: 'sample'
-      }
-    ],
-    inLanguage: 'en'
-  }
-}
 
 class App extends Component {
   async componentDidMount() {

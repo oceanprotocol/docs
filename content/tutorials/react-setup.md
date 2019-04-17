@@ -47,6 +47,7 @@ At this point you can already run `npm start` which starts the app in your brows
 Let's make it ours, open `src/App.js` and replace the whole source with:
 
 ```jsx
+// src/App.js
 import React, { Component } from 'react'
 import './App.css'
 
@@ -66,6 +67,7 @@ export default App
 Below the `import './App.css'` line, let's import the packages we installed, set up web3 and unlock MetaMask accounts (if locked):
 
 ```js
+// src/App.js
 import { Ocean } from '@oceanprotocol/squid'
 import * as Web3 from 'web3'
 
@@ -87,6 +89,7 @@ Now that we are successfully connected with Web3, we can set up our Ocean instan
 At the beginning of your component (i.e. right after the `class App extends Component {` line), create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
 
 ```js
+// src/App.js
 async componentDidMount() {
   this.ocean = await new Ocean.getInstance({
     web3Provider: web3,
@@ -110,6 +113,7 @@ That's it, if you have no errors in your `console.log` then you have successfull
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
 ```jsx
+// src/App.js
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
