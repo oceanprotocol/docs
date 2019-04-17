@@ -5,9 +5,12 @@ description: Tutorial to get and use a data set in a basic React app.
 
 ## Requirements
 
-This is a continuation of the React App Tutorial. Make sure you already did the [React App Setup](/tutorials/react-setup/) and the [Publish a Data Set](/tutorials/react-publish-data-set/) steps.
+This is a continuation of the React App Tutorial. Make sure you already did the previous steps:
 
-Open `src/App.js` in your marketplace app.
+1. [React App Setup](/tutorials/react-setup/)
+2. [Publish a Data Set](/tutorials/react-publish-data-set/)
+
+Open `src/App.js` from your `marketplace/` folder.
 
 ## Retrieve Assets
 
@@ -15,17 +18,21 @@ In the previous tutorial we added asset publishing. We can now search for publis
 
 ```js
 // src/App.js
+// ...
 async retrieveAssets() {
   this.dbAssets = await this.ocean.assets.search("10 Monkey Species Small")
   console.log(this.dbAssets)
 }
+// ...
 ```
 
 Now we need a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
 
 ```jsx
 // src/App.js
+// ...
 <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
+// ...
 ```
 
 ## Consume Assets
@@ -36,6 +43,7 @@ With the following code we start the consume process with the first search resul
 
 ```js
 // src/App.js
+// ...
 async consumeAsset() {
   // get all accounts
   const accounts = await this.ocean.accounts.list()
@@ -59,13 +67,16 @@ async consumeAsset() {
       0
   )
 }
+// ...
 ```
 
 We still need a button to start consumption. In the render function, just after the `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` line, add:
 
 ```jsx
 // src/App.js
+// ...
 <button onClick={() => this.consumeAsset()}>Consume asset</button>
+// ...
 ```
 
 With all these buttons in place, you should see this:

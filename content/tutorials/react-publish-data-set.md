@@ -7,7 +7,9 @@ description: Tutorial to add dataset publishing capabilities to a basic React ap
 
 This is a continuation of the [React App Setup](/tutorials/react-setup/) tutorial, so make sure you have done all the steps described in there.
 
-Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/react-setup/) tutorial.
+1. [React App Setup](/tutorials/react-setup/)
+
+Open `src/App.js` from your `marketplace/` folder.
 
 ## Define Asset
 
@@ -94,31 +96,38 @@ export default asset
 Then import this asset definition at the top of `src/App.js`:
 
 ```js
+// src/App.js
+// ...
 import asset from './asset'
+// ...
 ```
 
 ## Handle Asset Publishing
 
 Now that we have an asset to submit, we need a function to handle it. Just before `render() {` let's add this function:
 
-```js
+```jsx
 // src/App.js
+// ...
 async submitAsset() {
-    const accounts = await this.ocean.accounts.list()
-    const ddo = await this.ocean.assets.create(asset, accounts[0])
-    console.log('Asset successfully submitted.')
-    console.log(ddo)
-    alert(
-      'Asset successfully submitted. Look into your console to see the response DDO object.'
-    )
-  }
+  const accounts = await this.ocean.accounts.list()
+  const ddo = await this.ocean.assets.create(asset, accounts[0])
+  console.log('Asset successfully submitted.')
+  console.log(ddo)
+  alert(
+    'Asset successfully submitted. Look into your console to see the response DDO object.'
+  )
+}
+// ...
 ```
 
 The last thing we need is a button to start our registration inside the render function just after `<h1>Marketplace app</h1>`:
 
 ```jsx
 // src/App.js
+// ...
 <button onClick={() => this.submitAsset()}>Register asset</button>
+// ...
 ```
 
 Tip: Before clicking the `Register asset` button, it might help to reload the page.

@@ -90,6 +90,7 @@ At the beginning of your component (i.e. right after the `class App extends Comp
 
 ```js
 // src/App.js
+//...
 async componentDidMount() {
   this.ocean = await new Ocean.getInstance({
     web3Provider: web3,
@@ -100,8 +101,9 @@ async componentDidMount() {
     parityUri: 'http://localhost:8545',
     secretStoreUri: 'http://localhost:12001'
   })
-  console.log("Finished loading contracts.")
+  console.log('Finished loading contracts.')
 }
+//...
 ```
 
 ## Final Result
