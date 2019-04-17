@@ -36,7 +36,7 @@ Note that unlike traditional pocket wallets, crypto wallets don't actually store
 
 ## Tutorials
 
-See the [tutorials about using wallets with Ocean Protocol](http://localhost:8000/tutorials/introduction/).
+See the [tutorials about using wallets with Ocean Protocol](/tutorials/introduction/).
 
 [1]: https://metamask.io/
 [2]: https://trezor.io/
