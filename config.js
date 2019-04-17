@@ -8,12 +8,12 @@ module.exports = {
     siteCompany: 'Ocean Protocol Foundation Ltd.',
     analyticsId: 'UA-60614729-11',
     social: {
-        site: 'https://oceanprotocol.com',
-        blog: 'https://blog.oceanprotocol.com',
-        github: 'https://github.com/oceanprotocol',
-        twitter: 'https://twitter.com/oceanprotocol',
-        gitter: 'https://gitter.im/oceanprotocol/Lobby',
-        telegram: 'https://t.me/joinchat/GUyxrE0Hi154D0NrlOqLFg'
+        Site: 'https://oceanprotocol.com',
+        Blog: 'https://blog.oceanprotocol.com',
+        GitHub: 'https://github.com/oceanprotocol',
+        Twitter: 'https://twitter.com/oceanprotocol',
+        Gitter: 'https://gitter.im/oceanprotocol/Lobby',
+        Telegram: 'https://t.me/joinchat/GUyxrE0Hi154D0NrlOqLFg'
     },
     githubContentPath:
         'https://github.com/oceanprotocol/docs/blob/master/content',

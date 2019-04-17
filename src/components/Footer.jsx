@@ -10,12 +10,12 @@ const query = graphql`
             siteMetadata {
                 siteCompany
                 social {
-                    site
-                    blog
-                    github
-                    twitter
-                    gitter
-                    telegram
+                    Site
+                    Blog
+                    GitHub
+                    Twitter
+                    Gitter
+                    Telegram
                 }
             }
         }
@@ -26,7 +26,7 @@ const FooterSocial = ({ social }) => (
     <nav className={styles.links}>
         {Object.keys(social).map(key => (
             <a key={key} href={social[key]}>
-                {key.charAt(0).toUpperCase() + key.slice(1)}
+                {key}
             </a>
         ))}
     </nav>
