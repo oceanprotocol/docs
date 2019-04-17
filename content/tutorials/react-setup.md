@@ -7,11 +7,11 @@ description: This tutorial shows how you can build a basic [React](https://react
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- `Spree` local Ocean test hetwork
+- `Spree` local Ocean test network
 
   - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
   - (Optional but recommended) Clean out all your old Docker stuff using `docker system prune --all --volumes`
-  - Use startup script in Barge to run a local Spree Testnet:
+  - Use startup script in Barge to run a local Spree Testnet. Compiling and deploying the contracts takes some time so it takes a few minutes until the network is ready to be interacted with:
 
     ```bash
     export KEEPER_VERSION=v0.9.1
@@ -20,8 +20,8 @@ description: This tutorial shows how you can build a basic [React](https://react
     ./start_ocean.sh --latest --no-pleuston --local-spree-node
     ```
 
-  - Compiling and deploying the contracts takes some time so it takes a few minutes until the network is ready to be interacted with.
-  - Once your local Spree network is running, [get some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in a local account managed by MetaMask.
+  - A Web3 capable browser, like Firefox/Chrome with MetaMask installed
+  - [Some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account
 
 ## New Create React App
 
@@ -90,12 +90,12 @@ At the beginning of your component (i.e. right after the `class App extends Comp
 async componentDidMount() {
   this.ocean = await new Ocean.getInstance({
     web3Provider: web3,
-    nodeUri: "http://localhost:8545",
-    aquariusUri: "http://localhost:5000",
-    brizoUri: "http://localhost:8030",
-    brizoAddress: "0x00bd138abd70e2f00903268f3db08f2d25677c9e",
-    parityUri: "http://localhost:8545",
-    secretStoreUri: "http://localhost:12001"
+    nodeUri: 'http://localhost:8545',
+    aquariusUri: 'http://localhost:5000',
+    brizoUri: 'http://localhost:8030',
+    brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
+    parityUri: 'http://localhost:8545',
+    secretStoreUri: 'http://localhost:12001'
   })
   console.log("Finished loading contracts.")
 }
