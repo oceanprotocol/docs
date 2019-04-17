@@ -21,7 +21,7 @@ async retrieveAssets() {
 }
 ```
 
-The last thing we need is a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
+Now we need a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
 
 ```jsx
 // src/App.js
@@ -30,7 +30,9 @@ The last thing we need is a button to start our search inside the render functio
 
 ## Consume Assets
 
-The retrieved assets can now be consumed so in this tutorial we consume the first one. The following code goes after the `async retrieveAssets()` function.
+Consuming means downloading one or multiple files attached to an asset. During that process the initial `url` value we added during the publish process for each file will be decrpyted and the file can be downloaded.
+
+With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `retrieveAssets()` function:
 
 ```js
 // src/App.js
@@ -74,7 +76,7 @@ Tip: Before clicking the `Retrieve assets` button, it might help to reload the p
 
 Go ahead and click the `Retrieve assets` button, and then the `Consume asset` button. Approve all the MetaMask dialog boxes.
 
-If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
+Have a look into `console.log` to see the various steps of the search and consume process. If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
 
 ## Final Result
 
@@ -152,6 +154,7 @@ class App extends Component {
       <div className="App App-header">
         <h1>Marketplace app</h1>
         <button onClick={() => this.submitAsset()}>Register asset</button>
+        <hr />
         <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
         <button onClick={() => this.consumeAsset()}>Consume asset</button>
       </div>

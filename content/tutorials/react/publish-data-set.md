@@ -13,9 +13,7 @@ Open `src/App.js` in your marketplace app from the [React App Setup](/tutorials/
 
 First, let's add the [asset](/concepts/terminology/#asset-or-data-asset) that we want to publish.
 
-To do that, we need to define the asset based on the [OEP-08](https://github.com/oceanprotocol/OEPs/tree/master/8) metadata structure. An asset can have multiple `files` attached to it and each file's `url` value will be encrypted during the publish process. To download that file later on, this value will be decrypted during the consume process.
-
-Let's create a new file `src/asset.js` and fill it with:
+To do that, we need to define the asset based on the [OEP-08](https://github.com/oceanprotocol/OEPs/tree/master/8) metadata structure. Let's create a new file `src/asset.js` and fill it with:
 
 ```js
 // src/asset.js
@@ -91,7 +89,7 @@ const asset = {
 export default asset
 ```
 
-Then import this asset definition at the top of `src/App.js`:
+Then import this asset from the top of `src/App.js`:
 
 ```js
 import asset from './asset'
@@ -125,7 +123,7 @@ Tip: Before clicking the `Register asset` button, it might help to reload the pa
 
 When you click on the `Register asset` button, you should get four separate dialog boxes from MetaMask, in a series, i.e. the second one only appears after you accept/approve the first one, and so on.
 
-Have a look into `console.log` to see the various steps of the register process. If you have no errors in your `console.log`, then you have successfully registered an asset.
+If you have no errors in your `console.log`, then you have successfully registered an asset.
 
 ## Final Result
 
