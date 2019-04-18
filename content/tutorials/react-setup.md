@@ -7,23 +7,27 @@ description: This tutorial shows how you can build a basic [React](https://react
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- `Spree` local Ocean test network
+- A Web3 capable browser, like Firefox/Chrome with MetaMask installed
+- `Spree`, a local Ocean test network
 
   - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
   - (Optional but recommended) Clean out all your old Docker stuff using `docker system prune --all --volumes`
-  - Use the startup script in Barge to run a local Spree Testnet:
+  - Use the startup script in Barge to run a [local Spree Testnet](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development):
 
     ```bash
     export KEEPER_VERSION=v0.9.1 && \
     export AQUARIUS_VERSION=v0.2.2 && \
     export BRIZO_VERSION=v0.3.5 && \
-    ./start_ocean.sh --latest --no-pleuston --local-spree-node
+    ./start_ocean.sh --no-pleuston
     ```
 
-  - A Web3 capable browser, like Firefox/Chrome with MetaMask installed
-  - [Some Spree Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account
+  - Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
 
-Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
+- [Some `Spree` Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
+
+  ```bash
+  curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545
+  ```
 
 ## New Create React App
 
