@@ -92,6 +92,8 @@ Go ahead and click the `Retrieve assets` button, and then the `Consume asset` bu
 
 Have a look into `console.log` to see the various steps of the search and consume process. If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
 
+> Note: Consuming an asset will throw an error `Requested did is not found in the keeper network`. We are currently [investigating why that is happening](https://github.com/oceanprotocol/barge/issues/144) in either squid-js or Brizo and will remove this note once we verified a fix is in place in one of those components.
+
 ## Final Result
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
