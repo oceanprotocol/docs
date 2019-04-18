@@ -5,60 +5,81 @@ description: Tutorial to get and use a data set in a basic React app.
 
 ## Requirements
 
-This is a continuation of the React App Tutorial. Make sure you already did the [React App Setup](/tutorials/react-setup/) and the [Publish a Data Set](/tutorials/react-publish-data-set/) steps.
+This is a continuation of the React App Tutorial. Make sure you already did the previous steps:
 
-Open `src/App.js` in your marketplace app.
+1. [React App Setup](/tutorials/react-setup/)
+2. [Publish a Data Set](/tutorials/react-publish-data-set/)
+
+Open `src/App.js` from your `marketplace/` folder.
 
 ## Retrieve Assets
 
 In the previous tutorial we added asset publishing. We can now search for published assets for consumption. Just after the `submitAsset()` function we can add a new function that will handle search:
 
 ```js
+// src/App.js
+// ...
 async retrieveAssets() {
-  this.dbAssets = await this.ocean.assets.search("10 Monkey Species Small")
-  console.log(this.dbAssets)
+  this.search = await this.ocean.assets.search('10 Monkey Species Small')
+  console.log(this.search)
+  alert(
+    'Asset successfully retrieved. Look into your console to see the search response.'
+  )
 }
+// ...
 ```
 
-The last thing we need is a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
+Now we need a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
 
 ```jsx
+// src/App.js
+// ...
 <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
+// ...
 ```
 
 ## Consume Assets
 
-The retrieved assets can now be consumed so in this tutorial we consume the first one. The following code goes after the `async retrieveAssets()` function.
+Consuming means downloading one or multiple files attached to an asset. During that process the initial `url` value we added during the publish process for each file will be decrpyted and the file can be downloaded.
+
+With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `retrieveAssets()` function:
 
 ```js
+// src/App.js
+// ...
 async consumeAsset() {
   // get all accounts
   const accounts = await this.ocean.accounts.list()
   // get first asset
-  const consumeAsset = this.dbAssets[0]
+  const consumeAsset = this.search.results[0]
   // get service we want to execute
   const service = consumeAsset.findServiceByType('Access')
   // order service agreement
   const agreement = await this.ocean.assets.order(
-      consumeAsset.id,
-      service.serviceDefinitionId,
-      accounts[0]
+    consumeAsset.id,
+    service.serviceDefinitionId,
+    accounts[0]
   )
   // consume it
   await this.ocean.assets.consume(
-      agreement,
-      consumeAsset.id,
-      service.serviceDefinitionId,
-      accounts[0],
-      ''
+    agreement,
+    consumeAsset.id,
+    service.serviceDefinitionId,
+    accounts[0],
+    '',
+    0
   )
-}
+  }
+// ...
 ```
 
 We still need a button to start consumption. In the render function, just after the `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` line, add:
 
 ```jsx
+// src/App.js
+// ...
 <button onClick={() => this.consumeAsset()}>Consume asset</button>
+// ...
 ```
 
 With all these buttons in place, you should see this:
@@ -69,86 +90,24 @@ Tip: Before clicking the `Retrieve assets` button, it might help to reload the p
 
 Go ahead and click the `Retrieve assets` button, and then the `Consume asset` button. Approve all the MetaMask dialog boxes.
 
-If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
+Have a look into `console.log` to see the various steps of the search and consume process. If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
+
+> Note: Consuming an asset will throw an error `Requested did is not found in the keeper network`. We are currently [investigating why that is happening](https://github.com/oceanprotocol/barge/issues/144) in either squid-js or Brizo and will remove this note once we verified a fix is in place in one of those components.
 
 ## Final Result
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
 ```jsx
+// src/App.js
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
-import * as Web3 from 'web3'
+import Web3 from 'web3'
+import asset from './asset'
 
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()
-
-const asset = {
-  base: {
-    name: '10 Monkey Species Small',
-    dateCreated: '2012-02-01T10:55:11Z',
-    author: 'Mario',
-    license: 'CC0: Public Domain',
-    contentType: 'jpg/txt',
-    price: 10,
-    files: [
-      {
-        checksum: '2bf9d229d110d1976cdf85e9f3256c7f',
-        checksumType: 'MD5',
-        contentLength: 12057507,
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/training.zip'
-      },
-      {
-        checksum: '354d19c0733c47ef3a6cce5b633116b0',
-        checksumType: 'MD5',
-        contentLength: 928,
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/monkey_labels.txt'
-      },
-      {
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/assets/validation.zip'
-      }
-    ],
-    checksum: '',
-    categories: ['image'],
-    tags: ['image data', 'classification', 'animals'],
-    type: 'dataset',
-    description: 'EXAMPLE ONLY ',
-    size: '3.1gb',
-    copyrightHolder: 'Unknown',
-    encoding: 'UTF-8',
-    compression: 'zip',
-    workExample: 'image path, id, label',
-    links: [
-      {
-        name: 'example model',
-        url:
-          'https://drive.google.com/open?id=1uuz50RGiAW8YxRcWeQVgQglZpyAebgSM'
-      },
-      {
-        name: 'example code',
-        type: 'example code',
-        url: 'https://github.com/slothkong/CNN_classification_10_monkey_species'
-      },
-      {
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/links/discovery/n5151.jpg',
-        name: 'n5151.jpg',
-        type: 'discovery'
-      },
-      {
-        url:
-          'https://s3.amazonaws.com/datacommons-seeding-us-east/10_Monkey_Species_Small/links/sample/sample.zip',
-        name: 'sample.zip',
-        type: 'sample'
-      }
-    ],
-    inLanguage: 'en'
-  }
-}
 
 class App extends Component {
   async componentDidMount() {
@@ -161,25 +120,32 @@ class App extends Component {
       parityUri: 'http://localhost:8545',
       secretStoreUri: 'http://localhost:12001'
     })
-    console.log('Finished loading contracts!')
+    console.log('Finished loading contracts.')
   }
 
   async submitAsset() {
     const accounts = await this.ocean.accounts.list()
     const ddo = await this.ocean.assets.create(asset, accounts[0])
-    alert('Asset successfully submitted: ', JSON.stringify(ddo))
+    console.log('Asset successfully submitted.')
+    console.log(ddo)
+    alert(
+      'Asset successfully submitted. Look into your console to see the response DDO object.'
+    )
   }
 
   async retrieveAssets() {
-    this.dbAssets = await this.ocean.assets.search('10 Monkey Species Small')
-    console.log(this.dbAssets)
+    this.search = await this.ocean.assets.search('10 Monkey Species Small')
+    console.log(this.search)
+    alert(
+      'Asset successfully retrieved. Look into your console to see the search response.'
+    )
   }
 
   async consumeAsset() {
     // get all accounts
     const accounts = await this.ocean.accounts.list()
     // get first asset
-    const consumeAsset = this.dbAssets[0]
+    const consumeAsset = this.search.results[0]
     // get service we want to execute
     const service = consumeAsset.findServiceByType('Access')
     // order service agreement
@@ -194,7 +160,8 @@ class App extends Component {
       consumeAsset.id,
       service.serviceDefinitionId,
       accounts[0],
-      ''
+      '',
+      0
     )
   }
 
@@ -203,6 +170,7 @@ class App extends Component {
       <div className="App App-header">
         <h1>Marketplace app</h1>
         <button onClick={() => this.submitAsset()}>Register asset</button>
+        <hr />
         <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
         <button onClick={() => this.consumeAsset()}>Consume asset</button>
       </div>
