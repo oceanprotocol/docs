@@ -75,7 +75,7 @@ Below the `import './App.css'` line, let's import the packages we installed, set
 ```js
 // src/App.js
 import { Ocean } from '@oceanprotocol/squid'
-import * as Web3 from 'web3'
+import Web3 from 'web3'
 
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()
@@ -86,7 +86,7 @@ After those steps you should see this, and MetaMask should have asked you to all
 ![React App 02](images/react-app-02.png)
 ![React App 03](images/react-app-03.png)
 
-Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your `console.log`, don't worry about it. It's a MetaMask thing.
+> Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your `console.log`, don't worry about it. It's a MetaMask thing.
 
 ## Create Ocean Instance
 
@@ -125,7 +125,7 @@ Here is the full source of `src/App.js` that you should have if you followed thi
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
-import * as Web3 from 'web3'
+import Web3 from 'web3'
 
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()

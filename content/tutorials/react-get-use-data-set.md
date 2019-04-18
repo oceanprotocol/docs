@@ -101,7 +101,7 @@ Here is the full source of `src/App.js` that you should have if you followed thi
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
-import * as Web3 from 'web3'
+import Web3 from 'web3'
 import asset from './asset'
 
 const web3 = new Web3(window.web3.currentProvider)
