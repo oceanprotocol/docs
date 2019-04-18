@@ -69,13 +69,13 @@ If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local
 
 ## A Spree Testnet (for Local Development)
 
-When Ocean Protocol developers run [Barge](https://github.com/oceanprotocol/barge) with the `--local-spree-node` option, a "Spree Testnet" is deployed on their local machine: a local testnet not connected to any external public testnet.
+By default, [Barge](https://github.com/oceanprotocol/barge) will deploy a local "Spree Testnet" on your machine: a local testnet not connected to any external public testnet.
 
 When running a Spree Testnet, you can connect to a node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
 
-Spree Testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge/blob/develop/README.md). You can configure the Spree nodes by editing the files in the `barge/networks/spree/` directory.
+Spree Testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge#spree-network). You can configure the Spree nodes by editing the files in the `barge/networks/spree/` directory.
 
-Note: Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
+> Note: Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
 
 ## A Ganache-Based Testnet (for Local Development)
 
