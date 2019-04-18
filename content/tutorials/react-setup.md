@@ -7,7 +7,8 @@ description: This tutorial shows how you can build a basic [React](https://react
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- A Web3 capable browser, like Firefox/Chrome with MetaMask installed
+- [Docker](https://www.docker.com/products/docker-desktop) & [Docker Compose](https://docs.docker.com/compose/install/)
+- A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed
 - `Spree`, a local Ocean test network
 
   - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
