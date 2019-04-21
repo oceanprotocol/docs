@@ -65,7 +65,7 @@ There are several Ocean Protocol software components that are live, connected to
 
 ### Using Barge with Nile
 
-If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local-nile-node` option, then Barge will run a Nile node on your local machine (along with everything else Barge runs). There might be many blocks in the Nile Testnet's blockchain, so it might take a long time for your local Nile node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Nile node won't be able to do certain things.**
+If you run [Barge](https://github.com/oceanprotocol/barge) with the `--local-nile-node` option, then Barge will run a Nile node on your local machine (along with everything else Barge runs). There might be many blocks in the Nile Testnet's blockchain, so it might take a long time for your local Nile node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Nile node won't be able to do certain things.**
 
 ## A Spree Testnet (for Local Development)
 
