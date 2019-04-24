@@ -1,9 +1,9 @@
+dist: xenial
 language: node_js
-node_js: node
+node_js:
+  - '11'
 
 # will run `npm install` automatically here
-
-dist: xenial
 
 # Deploying uses awscli and it uses Python.
 # Xenial on Travis comes with Python 2 & 3 installed but 2 is default.
