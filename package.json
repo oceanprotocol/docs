@@ -53,7 +53,7 @@
     "gatsby-transformer-xml": "^2.0.9",
     "gatsby-transformer-yaml": "^2.1.11",
     "giphy-js-sdk-core": "^1.0.6",
-    "intersection-observer": "^0.5.1",
+    "intersection-observer": "^0.6.0",
     "node-sass": "^4.11.0",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
