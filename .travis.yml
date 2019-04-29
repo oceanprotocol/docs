@@ -7,6 +7,7 @@ addons:
   apt:
     update: true
     packages:
+      - python3-pip
       - graphviz
 
 # will run `npm install` automatically here
@@ -15,8 +16,6 @@ addons:
 # Xenial on Travis comes with Python 2 & 3 installed but 2 is default.
 # Ensure pip3 is installed and upgraded.
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install python3-pip
   - sudo -H pip3 install --upgrade pip
 
 script:
