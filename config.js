@@ -13,7 +13,7 @@ module.exports = {
         GitHub: 'https://github.com/oceanprotocol',
         Twitter: 'https://twitter.com/oceanprotocol',
         Gitter: 'https://gitter.im/oceanprotocol/Lobby',
-        Telegram: 'https://t.me/joinchat/GUyxrE0Hi154D0NrlOqLFg'
+        Telegram: 'https://t.me/OceanProtocolCommunity'
     },
     githubContentPath:
         'https://github.com/oceanprotocol/docs/blob/master/content',
