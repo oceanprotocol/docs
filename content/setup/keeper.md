@@ -3,7 +3,7 @@ title: Run a Keeper
 description: How to run a keeper node.
 ---
 
-If you want to run a [keeper node (keeper)]((/concepts/components/#keeper)), you have several options. Some of them are outlined below.
+If you want to run a [keeper node (keeper)](/concepts/components#keeper), you have several options. Some of them are outlined below.
 
 ## Using Barge
 
