@@ -35,6 +35,12 @@ If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local S
 - `$HOME/.ocean/keeper-contracts/artifacts/OceanToken.spree.json` for Spree
 - `$HOME/.ocean/keeper-contracts/artifacts/OceanToken.development.json` for Ganache
 
+### Ethereum Mainnet
+
+The Ocean Token contract address in the Ethereum Mainnet is:
+
+`0x985dd3D42De1e256d09e1c10F112bCCB8015AD41`
+
 ## Step 2: Teach Your Wallet Software about Ocean Tokens
 
 ### MetaMask Instructions

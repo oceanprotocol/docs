@@ -21,7 +21,7 @@ There are Ocean Tokens in several testnets, including the Kovan testnet and Nile
 
 **NOTICE: Below we outline the plans for Mainnet Ocean Tokens at the time of writing. Those plans might change. We will update this page on a regular basis.**
 
-The initial circulating supply of Mainnet Ocean Tokens will first become available on the Ethereum Mainnet (_not_ the Ocean Mainnet).
+The initial circulating supply of Mainnet Ocean Tokens became available on the Ethereum Mainnet (_not_ the Ocean Mainnet) in May 2019.
 
 If you acquired Ocean Tokens in the initial circulating supply, they will be sent to the address you provided.
 

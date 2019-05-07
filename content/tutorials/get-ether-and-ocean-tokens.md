@@ -79,14 +79,21 @@ See the page about [Ocean Tokens](/concepts/ocean-tokens/).
 
 ### Get Mainnet Ocean Tokens
 
-There are several ways to acquire some of the Ocean Tokens in the initial circulating supply, including:
+There were several ways to acquire some of the Mainnet Ocean Tokens in the initial circulating supply, including:
 
 - participation in the seed round
 - participation in the pre-sale
 - participation in the token sale
+- participation in the initial exchange offering
 - completion of a [bounty](/concepts/bounties/)
 
-In the future, it will become possible to earn Mainnet Ocean Tokens as network rewards. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) explains that in more detail.
+After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Mainnet Ocean Tokens became available in the Ethereum Mainnet (_not_ the Ocean Mainnet; there was no Ocean Mainnet at the time).
+
+As of 7 May 2019, there was one exchange in the official list of exchanges listing Mainnet Ocean Tokens (in the Ethereum Mainnet): **Bittrex International**.
+
+In the future, the Ocean Mainnet will be launched and later it will become possible to move Ocean Tokens from the Ethereum Mainnet to the Ocean Mainnet.
+
+In the future, it will become possible to earn Mainnet Ocean Tokens as network rewards and in other ways. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) gives more details.
 
 ### Get Testnet Ocean Tokens
 
