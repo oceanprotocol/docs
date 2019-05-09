@@ -1,9 +1,9 @@
 ---
-title: Teach Your Wallet to Track Ocean Tokens
-description: How to teach various crypto wallet software to track Ocean Tokens.
+title: Use Your Wallet to Manage Ocean Tokens
+description: How to use crypto wallet software to check your Ocean Token balance and to send Ocean Tokens to others.
 ---
 
-If you don't see any Ocean Tokens in your wallet software (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to track Ocean Tokens yet. You can teach it how.
+If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.
 
 ## Step 1: Determine the Ocean Token Contract Address in the Network You're Using
 
@@ -47,11 +47,13 @@ The Ocean Token contract address in the Ethereum Mainnet is:
 
 1. Make sure MetaMask is connected to the correct network (Nile, Kovan or whatever). See [the tutorial about how to do that](/tutorials/connect-to-networks/).
 1. For the account you want to manage, click the `☰` (hamburger menu icon).
-1. Scroll down until the `ADD TOKEN` link is visible, then click on it.
+1. Scroll down until the `Add Token` link is visible, then click on it.
 1. Click on `Custom Token`.
 1. Paste the OceanToken contract address (from Step 1 above) into the "Token Contract Address" field. The other two fields should auto-fill. If they don't then something is wrong.
-1. Click `NEXT`.
-1. Click `ADD TOKENS`.
+1. Click `Next`.
+1. Click `Add Tokens`.
+
+MetaMask should now show your Ocean Token (OCEAN) balance, and when you're looking at that, there should be a `Send` button to send Ocean Tokens to others. For help with that, see [the MetaMask docs about how to send tokens](https://metamask.zendesk.com/hc/en-us/articles/360015488931-How-to-Send-Tokens).
 
 ### Other Wallet Software
 
