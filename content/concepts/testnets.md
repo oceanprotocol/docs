@@ -5,32 +5,21 @@ description: An overview of public test networks that you can test Ocean Protoco
 
 You can test an Ocean Protocol application (such as a marketplace) against the test networks (testnets) described below. This page is a brief overview of those testnets. The [tutorials](/tutorials/) cover more details (e.g. how to connect to specific ones).
 
-## The Kovan Testnet
+## A Spree Testnet (for Local Development)
 
-The [Kovan Testnet](https://github.com/kovan-testnet/proposal) (or just "Kovan") is a public Ethereum Testnet operated by members of the Ethereum community.
-The Ocean Protocol keeper contracts are deployed to the Kovan Testnet.
+_Formerly called Ocean Protocol Testnet v0.1, it was announced as part of the Plankton milestone._
 
-For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
+By default, [Barge](https://github.com/oceanprotocol/barge) will deploy a local "Spree Testnet" on your machine: a local testnet not connected to any external public testnet.
 
-### Kovan Blockchain Explorers
+When running a Spree Testnet, you can connect to a node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
 
-There are some Kovan blockchain explorers, e.g. [Etherscan for Kovan](https://kovan.etherscan.io/) and [BlockScout for Kovan](https://blockscout.com/eth/kovan). You can use those to check the status of a transaction, the balance of an account, and more.
+Spree Testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge#spree-network). You can configure the Spree nodes by editing the files in the `barge/networks/spree/` directory.
 
-### Ocean Components Connected to Kovan
-
-There is a [Secret Store](/concepts/components/#secret-store) connected to the Kovan Testnet for use by Ocean Protocol projects (including your projects). It's operated by BigchainDB GmbH. Its URL is:
-
-[https://secret-store-kovan.dev-ocean.com/](https://secret-store-kovan.dev-ocean.com/)
-
-Aside from the Secret Store, there is no other Ocean Protocol software component (e.g. Aquarius) that is live, connected to the Kovan Testnet, and operated by BigchainDB GmbH.
-
-### Using Barge with Kovan
-
-If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local-kovan-node` option, then Barge will run a Kovan node on your local machine (along with everything else Barge runs). There are many blocks in the Kovan Testnet's blockchain, so it can take a long time for your local Kovan node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Kovan node won't be able to do certain things.**
+> Note: Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
 
 ## The Nile Testnet
 
-_Also known as the Beta Network or Nile Beta Network. Formerly called the Ocean POA Testnet._
+_Also known as the Nile Beta Network. Formerly called the Ocean POA Testnet._
 
 The Nile Testnet is similar to the Kovan Testnet, except all the nodes are operated by BigchainDB GmbH.
 
@@ -67,15 +56,28 @@ There are several Ocean Protocol software components that are live, connected to
 
 If you run [Barge](https://github.com/oceanprotocol/barge) with the `--local-nile-node` option, then Barge will run a Nile node on your local machine (along with everything else Barge runs). There might be many blocks in the Nile Testnet's blockchain, so it might take a long time for your local Nile node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Nile node won't be able to do certain things.**
 
-## A Spree Testnet (for Local Development)
+## The Kovan Testnet
 
-By default, [Barge](https://github.com/oceanprotocol/barge) will deploy a local "Spree Testnet" on your machine: a local testnet not connected to any external public testnet.
+The [Kovan Testnet](https://github.com/kovan-testnet/proposal) (or just "Kovan") is a public Ethereum Testnet operated by members of the Ethereum community.
+The Ocean Protocol keeper contracts are deployed to the Kovan Testnet.
 
-When running a Spree Testnet, you can connect to a node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
+For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
 
-Spree Testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge#spree-network). You can configure the Spree nodes by editing the files in the `barge/networks/spree/` directory.
+### Kovan Blockchain Explorers
 
-> Note: Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
+There are some Kovan blockchain explorers, e.g. [Etherscan for Kovan](https://kovan.etherscan.io/) and [BlockScout for Kovan](https://blockscout.com/eth/kovan). You can use those to check the status of a transaction, the balance of an account, and more.
+
+### Ocean Components Connected to Kovan
+
+There is a [Secret Store](/concepts/components/#secret-store) connected to the Kovan Testnet for use by Ocean Protocol projects (including your projects). It's operated by BigchainDB GmbH. Its URL is:
+
+[https://secret-store-kovan.dev-ocean.com/](https://secret-store-kovan.dev-ocean.com/)
+
+Aside from the Secret Store, there is no other Ocean Protocol software component (e.g. Aquarius) that is live, connected to the Kovan Testnet, and operated by BigchainDB GmbH.
+
+### Using Barge with Kovan
+
+If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local-kovan-node` option, then Barge will run a Kovan node on your local machine (along with everything else Barge runs). There are many blocks in the Kovan Testnet's blockchain, so it can take a long time for your local Kovan node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Kovan node won't be able to do certain things.**
 
 ## A Ganache-Based Testnet (for Local Development)
 
