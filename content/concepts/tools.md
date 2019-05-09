@@ -17,8 +17,8 @@ The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a
 
 <repo name="faucet"></repo>
 
-## BlockScout
+## Submarine Blockchain Explorer 
 
-[BlockScout](https://github.com/poanetwork/blockscout) (by [POA](https://poa.network/)) is an open source blockchain explorer for Ethereum networks.
+Submarine is based on [BlockScout](https://github.com/poanetwork/blockscout) (by [POA](https://poa.network/)), an open source blockchain explorer for Ethereum networks.
 
 There is an [Ocean Protocol fork of BlockScout](https://github.com/oceanprotocol/blockscout). An instance is deployed in the Nile Testnet at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/).
