@@ -1,6 +1,6 @@
 - group: Basics
   items:
-    - title: What is Ocean Protocol?
+    - title: Introduction
       link: /concepts/introduction/
     - title: Terminology
       link: /concepts/terminology/
@@ -36,3 +36,8 @@
       link: /concepts/principles/
     - title: Code of Conduct
       link: /concepts/code-of-conduct/
+
+- group: Resources
+  items:
+    - title: Papers, Blog, Videos & Events
+      link: /concepts/papers-blog-video-events/
