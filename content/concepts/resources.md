@@ -33,30 +33,30 @@ The blog posts are easily-digestible introductions into Ocean Protocol. We addre
 
 Already familiar with Ocean and want to jump into the tech? These blog posts explore product developments, updates and integrations.
 
-#### Privacy
+**Privacy**
 
 - [Blockchains for Artificial Intelligence](https://blog.oceanprotocol.com/blockchains-for-artificial-intelligence-ec63b0284984)
 - [From AI to Blockchain to Data: Meet Ocean](https://blog.oceanprotocol.com/from-ai-to-blockchain-to-data-meet-ocean-f210ff460465)
 - [Ocean’s Top-Level Goals](https://blog.oceanprotocol.com/oceans-top-level-goals-3dd75907187)
 
-#### Control
+**Control**
 
 - [Exploring the SEA: Service Execution Agreements](https://blog.oceanprotocol.com/exploring-the-sea-service-execution-agreements-65f7523d85e2)
 - [Introducing the Ocean Protocol Service Agreements](https://blog.oceanprotocol.com/oep-11-service-agreements-63421ca76d9f)
 
-#### Security
+**Security**
 
 - [Secure On-Chain Access Control for Ocean Protocol](https://blog.oceanprotocol.com/secure-on-chain-access-control-for-ocean-protocol-38dca0af820c)
 - [Ocean Integration: fitchain — Providing Secure On-Premise Compute](https://blog.oceanprotocol.com/ocean-integration-fitchain-secure-on-premises-compute-59f43a944266)
 - [Smart Contracts Security Audit](https://blog.oceanprotocol.com/smart-contracts-security-audit-6672de695b5b)
 
-#### Incentives
+**Incentives**
 
 - [Curated Proofs Markets: A Walk-Through of Ocean’s Core Token Mechanics](https://blog.oceanprotocol.com/curated-proofs-markets-a-walk-through-of-oceans-core-token-mechanics-3d50851a8005)
 - [The Layered TCR](https://blog.oceanprotocol.com/the-layered-tcr-56cc5b4cdc45)- [Introducing the equilibrium bonding market](https://blog.oceanprotocol.com/introducing-the-equilibrium-bonding-market-e7db528e0eff)
 - [How Ocean can benefit data scientists](https://blog.oceanprotocol.com/how-ocean-can-benefit-data-scientists-7e502e5f1a5f)
 
-#### Other worthwhile reading about product and deep tech
+**Other worthwhile reading about product and deep tech**
 
 - [Project Manta Ray — Data Science powered by Ocean Protocol](https://blog.oceanprotocol.com/project-manta-ray-data-science-powered-by-ocean-protocol-535c54089b0f)
 - [Ocean ♥ Docker](https://blog.oceanprotocol.com/ocean-docker-d43d992d8ecf)
