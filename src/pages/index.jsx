@@ -55,7 +55,7 @@ SectionLink.propTypes = {
 
 const IndexPage = ({ data, location }) => (
     <>
-        <SEO />
+        <SEO location={location} />
 
         <Layout location={location} header={<HeaderHome />}>
             <Content>

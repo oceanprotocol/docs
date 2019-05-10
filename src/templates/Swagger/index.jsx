@@ -84,6 +84,7 @@ export default class ApiSwaggerTemplate extends Component {
                     description={description}
                     slug={pageContext.slug}
                     article
+                    location={location}
                 />
 
                 <Layout location={location}>
