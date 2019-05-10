@@ -73,7 +73,8 @@ const MetaTags = ({
     image,
     schema,
     siteMeta,
-    article
+    article,
+    location
 }) => (
     <Helmet
         defaultTitle={siteMeta.siteTitle}
@@ -104,6 +105,11 @@ const MetaTags = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+
+        {/* Prevent search engine indexing except for live */}
+        {location.hostname !== 'docs.oceanprotocol.com' && (
+            <meta name="robots" content="noindex,nofollow" />
+        )}
     </Helmet>
 )
 
@@ -114,10 +120,11 @@ MetaTags.propTypes = {
     image: PropTypes.string,
     schema: PropTypes.string,
     siteMeta: PropTypes.object,
-    article: PropTypes.bool
+    article: PropTypes.bool,
+    location: PropTypes.object.isRequired
 }
 
-const SEO = ({ title, description, slug, article }) => (
+const SEO = ({ title, description, slug, article, location }) => (
     <StaticQuery
         query={query}
         render={data => {
@@ -149,6 +156,7 @@ const SEO = ({ title, description, slug, article }) => (
                     schema={schema}
                     siteMeta={siteMeta}
                     article={article}
+                    location={location}
                 />
             )
         }}
@@ -159,7 +167,8 @@ SEO.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     slug: PropTypes.string,
-    article: PropTypes.bool
+    article: PropTypes.bool,
+    location: PropTypes.object.isRequired
 }
 
 export default SEO

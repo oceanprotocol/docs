@@ -45,7 +45,7 @@ export default class NotFoundPage extends Component {
     render() {
         return (
             <>
-                <SEO title="404 - Not Found" />
+                <SEO location={this.props.location} title="404 - Not Found" />
                 <Layout location={this.props.location}>
                     <Content>
                         <article className={styles.content}>

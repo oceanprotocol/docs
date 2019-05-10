@@ -70,6 +70,7 @@ export default class DocTemplate extends Component {
                     description={description}
                     slug={slug}
                     article
+                    location={location}
                 />
 
                 <Layout location={location}>
