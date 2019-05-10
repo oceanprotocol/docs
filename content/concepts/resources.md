@@ -1,5 +1,5 @@
 ---
-title: Papers, Blog, Videos & Events
+title: Resources
 description: More places where you can learn about Ocean Protocol.
 ---
 
