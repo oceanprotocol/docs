@@ -12,6 +12,10 @@ All papers can be retrieved from the [Papers section](https://oceanprotocol.com/
 - **Business Strategy** - This document presents a summary of the business model and ecosystem of Ocean Protocol. It is complementary to the technical whitepaper for Ocean Protocol.
 - **Marketplace Framework** - This document presents a summary of the core marketplace attributes and components required to facilitate the successful deployment of the decentralized data exchange protocol and network called Ocean Protocol.
 
+## Roadmap
+
+[Ocean Protocol roadmap](https://oceanprotocol.com/protocol/#roadmap) outlining our plans and achievements in creating the Ocean Protocol network and building a community and ecosystem around it.
+
 ## Blog
 
 Follow our [blog](https://blog.oceanprotocol.com/) to keep up-to-date with news about our community, tech progress, new use-cases, integrations and everything around Ocean.
