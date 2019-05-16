@@ -84,3 +84,9 @@ If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local
 A local testnet similar to Spree but launched by using the `--local-ganache-node` option with Barge.
 
 Note: You shouldn't use a Ganache-Based Testnet unless you know why you're doing so. For example, a Ganache-based testnet can be used to test some smart contracts, but it can't be used with a Secret Store.
+
+## The Duero Testnet
+
+The Duero Testnet is similar to the Nile Testnet, but it's only for internal use by the Ocean Protocol dev team. They test new things in the Duero Testnet before deploying them in the Nile Testnet (which is for use by anyone). That is, the testing order is Spree (local), Duero (private), Nile (public).
+
+If you need to know something technical about the Duero Testnet, such as the RPC URL, please contact the Ocean Protocol dev team.
