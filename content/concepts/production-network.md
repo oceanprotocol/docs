@@ -11,7 +11,7 @@ Ocean Protocol makes use of several EVM networks, including:
 - various [testnets](/concepts/testnets/), and
 - in the future, the Ocean Production Network.
 
-The Ocean Production Network will be an EVM network of nodes ("keepers") running [Parity Ethereum](https://www.parity.io/ethereum/) software.  Various Ocean Protocol smart contracts ("keeper contracts") will be deployed to it. It will be used for production use cases. It is also known by other names, including:
+The Ocean Production Network will be an EVM network of nodes ("keepers") running [Parity Ethereum](https://www.parity.io/ethereum/) software. Various Ocean Protocol smart contracts ("keeper contracts") will be deployed to it. It will be used for production use cases. It is also known by other names, including:
 
 - The Main Ocean Network
 - The Ocean Mainnet

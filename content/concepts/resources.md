@@ -3,7 +3,6 @@ title: Resources
 description: More places where you can learn about Ocean Protocol.
 ---
 
-
 ## Papers
 
 All papers can be retrieved from the [Papers section](https://oceanprotocol.com/protocol/#papers) on our home page:
@@ -76,9 +75,9 @@ Follow [our YouTube channel](https://www.youtube.com/oceanprotocol) not to miss 
   Manta Ray is designed to leverage the underlying Ocean API (oceanically named squid-py) which provides surface level methods for searching, publishing, and consuming assets in the deeper Ocean Protocol network.
 - [Meet the Fleet](https://www.youtube.com/playlist?list=PL_dn0wVs9kWrgEGk0cd52qO6w3FiuY65G) - Ocean Protocol is being built by a diverse ecosystem of contributors who share a common vision of unlocking data for AI. Our core team has converged from many different countries, industries, and backgrounds to collaborate on kickstarting a New Data Economy. Check this mini series to find out who helps developing Ocean Protocol.
 
-## Events 
+## Events
 
-Our team members travel the world to present about Ocean Protocol and meet with local communities. Please, check [our website](https://oceanprotocol.com/#events) for events in your area. 
+Our team members travel the world to present about Ocean Protocol and meet with local communities. Please, check [our website](https://oceanprotocol.com/#events) for events in your area.
 
 We also often host and co-organize meetups all around the globe. Check the different meetup groups to find a group in your city and attend our meetup:
 
