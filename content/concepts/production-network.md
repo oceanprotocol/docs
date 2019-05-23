@@ -21,8 +21,3 @@ The Ocean Production Network will be an EVM network of nodes ("keepers") running
 "Network" is sometimes shortened to just "Net."
 
 [Ocean Tokens](/concepts/ocean-tokens/) can, in principle, live in any EVM network. The ones sold in the Ocean Protocol token sale were in the Ethereum Mainnet (and still were, at the time of writing). For more information, see [the page about Ocean Tokens](/concepts/ocean-tokens/).
-
-
-
-
-TODO: search in files for all references to the Ocean Mainnet etc.
