@@ -28,7 +28,7 @@ Once your wallet is set up, it will have one or more **accounts**.
 
 Each account has several **balances**, e.g. an Ether balance, an Ocean Token balance, and maybe other balances. All balances start at zero.
 
-An account's Ether balance might be 7.1 ETH in the Ethereum mainnet, 2.39 ETH in the Kovan testnet, and 0.1 ETH in the Nile testnet. You can't move ETH from one network to another (unless there is a special exchange or bridge set up). The same is true of Ocean Token balances.
+An account's Ether balance might be 7.1 ETH in the Ethereum Mainnet, 2.39 ETH in the Kovan testnet, and 0.1 ETH in the Nile testnet. You can't move ETH from one network to another (unless there is a special exchange or bridge set up). The same is true of Ocean Token balances.
 
 Each account has one **private key**, one **public key** and one **address**. The public key and address can be calculated from the private key. You must keep the private key secret because it's what's needed to spend/transfer Ether and Ocean Tokens (or to sign transactions of any kind). You can share the address with others. In fact, if you want someone to send some Ether or Ocean Tokens to an account, you give them the account's address.
 

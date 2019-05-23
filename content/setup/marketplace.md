@@ -59,7 +59,7 @@ When developing your marketplace/publisher app, you will probably use Barge to r
 - Recommended: a [keeper](/concepts/components/#keeper) node with the keeper contracts deployed to it, connected to an Ocean network
 - Optional: your own [Secret Store](/concepts/components/#secret-store) nodes (for a more advanced setup)
 
-Before running all of that in production with the Ocean Mainnet, you will want to test it with an [Ocean testnet](/concepts/testnets/).
+Before running all of that in production with the [Ocean Production Network](/concepts/production-network/), you will want to test it with an [Ocean testnet](/concepts/testnets/).
 
 Of course, there are many other things that must be handled in production:
 
