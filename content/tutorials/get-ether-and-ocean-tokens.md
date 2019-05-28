@@ -91,9 +91,9 @@ All Squid libraries have methods to request Ocean Tokens. They work by calling t
 
 The [Example Code page](/tutorials/example-code/) has links to example Squid code (in all of the languages), including examples of using the above methods.
 
-### Get Mainnet Ocean Tokens
+### Get Ethereum Mainnet Ocean Tokens
 
-There were several ways to acquire some of the Mainnet Ocean Tokens in the initial circulating supply, including:
+There were several ways to acquire some of the Ethereum Mainnet Ocean Tokens in the initial circulating supply, including:
 
 - participation in the seed round
 - participation in the pre-sale
@@ -101,10 +101,9 @@ There were several ways to acquire some of the Mainnet Ocean Tokens in the initi
 - participation in the initial exchange offering
 - completion of a [bounty](/concepts/bounties/)
 
-After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Mainnet Ocean Tokens became available in the Ethereum Mainnet (_not_ the Ocean Mainnet; there was no Ocean Mainnet at the time).
+After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Ethereum Mainnet Ocean Tokens became available in the Ethereum Mainnet (_not_ the Ocean Production Network; there was no Ocean Production Network at the time).
 
-As of 7 May 2019, there was one exchange in the official list of exchanges listing Mainnet Ocean Tokens (in the Ethereum Mainnet): **Bittrex International**.
+As of 28 May 2018, the official list of exchanges listing Ethereum Mainnet Ocean Tokens (OCEAN) included:
 
-In the future, the Ocean Mainnet will be launched and later it will become possible to move Ocean Tokens from the Ethereum Mainnet to the Ocean Mainnet.
-
-In the future, it will become possible to earn Mainnet Ocean Tokens as network rewards and in other ways. The [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf) gives more details.
+- [Bittrex International](https://international.bittrex.com/)
+- [KuCoin](https://www.kucoin.com/news/en-ocean-protocol-ocean-gets-listed-on-kucoin)
