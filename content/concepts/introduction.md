@@ -22,4 +22,3 @@ Society is becoming increasingly reliant on data, especially with the advent of 
 Ocean Protocol aims to unlock data, for more equitable outcomes for users of data, using a thoughtful application of both technology and governance.
 
 For more details, see the blog post "[Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)".
-

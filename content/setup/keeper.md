@@ -14,8 +14,8 @@ If you want to run a [keeper node (keeper)](/concepts/components#keeper), you ha
 
 Barge deploys the keeper contracts to whatever keeper nodes are deployed locally.
 
-## Running a Keeper in the Nile Testnet or Ocean Mainnet
+## Running a Keeper in the Nile Testnet or Ocean Production Network
 
-If you're interested in running a keeper node (as a voting _authority node_) in the Nile Testnet or Ocean Mainnet, then email <a href="mailto:info@oceanprotocol.com">info@oceanprotocol.com</a>.
+If you're interested in running a keeper node (as a voting _authority node_) in the [Nile Testnet](/concepts/testnets/#the-nile-testnet) or [Ocean Production Network](http://localhost:8000/concepts/production-network/), then email <a href="mailto:info@oceanprotocol.com">info@oceanprotocol.com</a>.
 
-Note: The dev-ocean repository contains [a guide for running a keeper node in the Nile Testnet](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/devops/nile-keeper-setup.md) (if you have permission).
+Note: The dev-ocean repository contains [a guide for running a keeper node in the Nile Testnet](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/devops/keeper-setup.md) (if you have permission).

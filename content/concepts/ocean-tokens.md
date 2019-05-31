@@ -3,6 +3,8 @@ title: Ocean Tokens
 description: The technical basics of Ocean Tokens.
 ---
 
+**NOTICE: Below we outline some plans at the time of writing. Those plans might change. We will update this page on a regular basis.**
+
 ## Basics
 
 **Ocean Tokens** are the [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) associated with Ocean Protocol. They are standards-compliant [ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20).
@@ -15,19 +17,68 @@ description: The technical basics of Ocean Tokens.
 
 ## Testnet Ocean Tokens
 
-There are Ocean Tokens in several testnets, including the Kovan testnet and Nile testnet. They are just testnet Ocean Tokens (i.e. for testing purposes only) and they aren't interchangeable with Mainnet Ocean Tokens. For more details, see the the [page about Testnets](/concepts/testnets/) and the [tutorials](/tutorials/introduction/).
+There are Ocean Tokens in several testnets, including the Kovan testnet and Nile testnet. They are just testnet Ocean Tokens (i.e. for testing purposes only) and they aren't interchangeable with Ethereum Mainnet Ocean Tokens. For more details, see the the [page about Testnets](/concepts/testnets/) and the [tutorials](/tutorials/introduction/).
 
-## Mainnet Ocean Tokens
+### Testnet Ocean Token Utility
 
-**NOTICE: Below we outline the plans for Mainnet Ocean Tokens at the time of writing. Those plans might change. We will update this page on a regular basis.**
+Once you have some Testnet Ocean Tokens, you can use them for all currently-implemented Ocean Protocol tasks _in that testnet_ (e.g. buying assets).
 
-The initial circulating supply of Mainnet Ocean Tokens became available on the Ethereum Mainnet (_not_ the Ocean Mainnet) in May 2019.
+### Get Testnet Ocean Tokens
 
-If you acquired Ocean Tokens in the initial circulating supply, they will be sent to the address you provided.
+All Squid libraries have methods to request Ocean Tokens. They work by calling the "Dispenser" keeper contract, a contract which is only deployed to testnets. Therefore they will only work in testnets. They're documented in the following places:
 
-In the future, the Ocean Mainnet will be launched and later it will become possible to move Ocean Tokens from the Ethereum Mainnet to the Ocean Mainnet.
+- The squid-js docs for:
+  - [OceanAccounts.requestTokens()](/references/squid-js/#OceanAccounts-requestTokens)
+  - [Account.requestTokens()](/references/squid-js/#Account-requestTokens)
+- The squid-py docs for:
+  - [the `squid_py.ocean.ocean_tokens` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_tokens.html): see the `request()` method.
+  - [the `squid_py.ocean.ocean_accounts` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
+- [The squid-java docs](https://www.javadoc.io/doc/com.oceanprotocol/squid/): click "All Classes" then "AccountsManager" then scroll to the bottom of the Class AccountsManager page where you'll find the `requestTokens()` method.
 
-It _won't_ be possible to use Mainnet Ocean Tokens for Ocean Protocol tasks (such as consuming assets) in the Ethereum Mainnet. It _will_ be possible to use Mainnet Ocean Tokens for Ocean Protocol tasks in the Ocean Mainnet.
+The [Example Code page](/tutorials/example-code/) has links to example Squid code (in all of the languages), including examples of using the above methods.
+
+## Ethereum Mainnet Ocean Tokens
+
+There were several ways to acquire some of the Ethereum Mainnet Ocean Tokens in the initial circulating supply, including:
+
+- participation in the seed round
+- participation in the pre-sale
+- participation in the token sale
+- participation in the initial exchange offering
+- completion of a [bounty](/concepts/bounties/)
+
+After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Ethereum Mainnet Ocean Tokens became available in the Ethereum Mainnet (_not_ the Ocean Production Network; there was no Ocean Production Network at the time).
+The initial circulating supply of Ethereum Mainnet Ocean Tokens became available on the Ethereum Mainnet in May 2019.
+If you acquired Ocean Tokens in the initial circulating supply, they should have been, or will be, sent to the address you provided, in the Ethereum Mainnet.
+
+### Ethereum Mainnet Ocean Token Utility
+
+At the time of writing, you could use Ethereum Mainnet Ocean Tokens to do various things in the Ethereum Mainnet, including but not limited to:
+
+- buy other cryptocurrencies. See the next subsection for more details.
+- stake in [dxDAO](https://dxdao.daostack.io/).
+
+Moreover, in the near future, there are plans to make it possible to use Ethereum Mainnet Ocean Tokens for Ocean Protocol tasks in the Ethereum Mainnet. That includes asset and service acquisition, via Ocean Protocol marketplaces attached to the Ethereum Mainnet.
+
+### How to Buy or Sell Ethereum Mainnet Ocean Tokens
+
+You can buy or sell Ethereum Mainnet Ocean Tokens via any exchange that lists them. See the official list of exchanges below.
+
+You could also make a deal with someone where you send them something and they send you some Ocean Tokens in return (or vice versa). Ethereum Mainnet Ocean Tokens are standard ERC-20 tokens, so any software that can send ERC-20 tokens can be used (e.g. [wallet software](/concepts/wallets/) such as MetaMask).
+
+### Official List of Exchanges
+
+Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean Tokens (OCEAN), at the time of writing:
+
+- [Bittrex International](https://international.bittrex.com/)
+- [KuCoin](https://www.kucoin.com/)
+- [DutchX](https://dutchx.readthedocs.io/en/latest/)
+
+## Ocean Protuction Network Ocean Tokens
+
+At the time of writing, the [Ocean Production Network](/concepts/production-network/) wasn't deployed yet, so there were no Ocean Protuction Network Ocean Tokens.
+
+At some point after the Ocean Production Network is launched, it will become possible to move Ocean Tokens from the Ethereum Mainnet to the Ocean Production Network. The details of exactly how that will work are still to be determined.
 
 ## Further Reading about Ocean Tokens
 
