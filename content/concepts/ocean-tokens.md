@@ -51,6 +51,15 @@ After [the initial exchange offering on Bittrex International](https://blog.ocea
 The initial circulating supply of Ethereum Mainnet Ocean Tokens became available on the Ethereum Mainnet in May 2019.
 If you acquired Ocean Tokens in the initial circulating supply, they should have been, or will be, sent to the address you provided, in the Ethereum Mainnet.
 
+### How to Check Your Ethereum Mainnet Ocean Token Balance
+
+There are many ways to check your Ethereum Mainnet Ocean Token balance. Starting with the easiest, here are some ways:
+
+- Enter your account address into the form at [https://wallet.oceanprotocol.com/tokens](https://wallet.oceanprotocol.com/tokens)
+- Go to [Etherscan](https://etherscan.io/), enter your account address into the search field, click **Search**, click on **Erc20 Token Txns**, look for an "OceanToken" transaction in the "Token" colum, and click on **OceanToken** there.
+- Download and use [Blowfish](https://github.com/kremalicious/blowfish), a desktop app that tells you your Ocean Token balance (and other things).
+- Use MetaMask or other wallet software. See the page about [using wallet software to manage Ocean Tokens](/tutorials/wallets-and-ocean-tokens/). You can also use wallet software to send Ocean Tokens to some other account.
+
 ### Ethereum Mainnet Ocean Token Utility
 
 At the time of writing, you could use Ethereum Mainnet Ocean Tokens to do various things in the Ethereum Mainnet, including but not limited to:
