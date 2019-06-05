@@ -83,9 +83,9 @@ Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean To
 - [KuCoin](https://www.kucoin.com/)
 - [DutchX](https://dutchx.readthedocs.io/en/latest/)
 
-## Ocean Protuction Network Ocean Tokens
+## Ocean Production Network Ocean Tokens
 
-At the time of writing, the [Ocean Production Network](/concepts/production-network/) wasn't deployed yet, so there were no Ocean Protuction Network Ocean Tokens.
+At the time of writing, the [Ocean Production Network](/concepts/production-network/) wasn't deployed yet, so there were no Ocean Production Network Ocean Tokens.
 
 At some point after the Ocean Production Network is launched, it will become possible to move Ocean Tokens from the Ethereum Mainnet to the Ocean Production Network. The details of exactly how that will work are still to be determined.
 
