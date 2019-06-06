@@ -12,7 +12,7 @@ const queryGithub = graphql`
     query GitHubReposInfo {
         github {
             organization(login: "oceanprotocol") {
-                repositories(first: 100, privacy: PUBLIC, isFork: false) {
+                repositories(first: 100, privacy: PUBLIC) {
                     edges {
                         node {
                             name
