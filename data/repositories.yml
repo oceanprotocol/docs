@@ -31,7 +31,10 @@
       links:
         - name: API reference
           url: https://www.javadoc.io/doc/com.oceanprotocol/squid/
-    - name: Plecos
+    - name: plecos
+    - name: faucet
+    - name: blockscout
+    - name: tuna
 
 - group: OceanDB
   items:
