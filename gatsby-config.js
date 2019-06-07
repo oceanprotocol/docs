@@ -76,8 +76,7 @@ module.exports = {
                             quality: 80,
                             withWebp: true,
                             linkImagesToOriginal: true,
-                            showCaptions: true,
-                            sizeByPixelDensity: true
+                            showCaptions: true
                         }
                     },
                     {
