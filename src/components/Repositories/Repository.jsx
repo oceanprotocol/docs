@@ -19,6 +19,10 @@ const queryGithub = graphql`
                             description
                             url
                             forkCount
+                            isFork
+                            parent {
+                                nameWithOwner
+                            }
                             stargazers {
                                 totalCount
                             }
@@ -62,9 +66,15 @@ const queryGithub = graphql`
     }
 `
 
-const Title = ({ name, releases, url }) => (
+const Title = ({ name, isFork, parent, releases, url }) => (
     <h1 className={styles.repositoryName}>
-        <a href={url}>{name}</a>
+        <a href={url}>
+            {isFork && <Forks />}
+            {name}
+            {isFork && (
+                <span className={styles.forkLine}>{parent.nameWithOwner}</span>
+            )}
+        </a>
         {releases.edges[0] && (
             <a
                 href={`${url}/releases`}
@@ -79,6 +89,10 @@ const Title = ({ name, releases, url }) => (
 
 Title.propTypes = {
     name: PropTypes.string.isRequired,
+    isFork: PropTypes.bool,
+    parent: PropTypes.shape({
+        nameWithOwner: PropTypes.string
+    }),
     releases: PropTypes.object.isRequired,
     url: PropTypes.string.isRequired
 }
@@ -226,6 +240,8 @@ const Repository = ({ name, links, readme }) => (
                 url,
                 description,
                 forkCount,
+                isFork,
+                parent,
                 stargazers,
                 releases,
                 object
@@ -247,7 +263,13 @@ const Repository = ({ name, links, readme }) => (
 
             return (
                 <article className={styles.repository}>
-                    <Title name={name} releases={releases} url={url} />
+                    <Title
+                        name={name}
+                        releases={releases}
+                        url={url}
+                        isFork={isFork}
+                        parent={parent}
+                    />
 
                     <p>{!description ? '...' : description}</p>
 

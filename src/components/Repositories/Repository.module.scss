@@ -24,6 +24,7 @@
     border: 0;
     padding: 0;
     width: 100%;
+    position: relative;
 
     a:first-of-type {
         color: $brand-black;
@@ -33,6 +34,25 @@
             color: $brand-pink;
         }
     }
+
+    svg {
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        fill: $brand-grey-light;
+        margin-right: $spacer / 8;
+        margin-left: -.2rem;
+        margin-bottom: -.2rem;
+    }
+}
+
+.forkLine {
+    display: inline;
+    margin-left: $spacer / 4;
+    font-size: $font-size-mini;
+    font-family: $font-family-monospace;
+    font-weight: $font-weight-base;
+    color: $brand-grey-light;
 }
 
 .repositoryRelease {
