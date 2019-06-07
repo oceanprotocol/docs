@@ -21,6 +21,8 @@ See also: [Run a Keeper](/setup/keeper/)
 
 A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store [asset](/concepts/terminology/#asset-or-data-asset) access-control keys.
 
+<repo name="parity-ethereum"></repo>
+
 There are several clients for integrating the Parity Secret Store into Ocean:
 
 <repo name="secret-store-client-js"></repo>
