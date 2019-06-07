@@ -30,9 +30,7 @@ const ParameterExample = ({ properties }) => (
                         <span className="token property">{`  "${key}"`}</span>
                         <span className="token operator">{`: `}</span>
                         {properties[key].type === 'string' && (
-                            <span className="token string">{`"${
-                                properties[key].example
-                            }"`}</span>
+                            <span className="token string">{`"${properties[key].example}"`}</span>
                         )}
                         {(properties[key].type === 'integer' ||
                             properties[key].type === 'number') && (
