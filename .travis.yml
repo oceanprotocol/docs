@@ -3,8 +3,6 @@ language: node_js
 node_js:
   - '11'
 
-# will run `npm install` automatically here
-
 # Deploying uses awscli and it uses Python.
 # Xenial on Travis comes with Python 2 & 3 installed but 2 is default.
 # Ensure pip3 is installed and upgraded.
@@ -14,6 +12,7 @@ before_install:
   - sudo -H pip3 install --upgrade pip
 
 script:
+  # will run `npm ci` automatically here
   - npm test
   - 'if [ "$TRAVIS_SECURE_ENV_VARS" = "true" ]; then npm run build; fi'
 
@@ -26,6 +25,6 @@ notifications:
   email: false
 
 cache:
+  npm: true
   directories:
-    - node_modules
     - public
