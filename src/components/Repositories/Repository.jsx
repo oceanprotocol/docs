@@ -116,6 +116,15 @@ class Numbers extends PureComponent {
     }
 
     url = 'https://oceanprotocol-github.now.sh'
+    signal = axios.CancelToken.source()
+
+    componentDidMount() {
+        this.fetchNumbers()
+    }
+
+    componentWillUnmount() {
+        this.signal.cancel()
+    }
 
     fetchNumbers = async () => {
         try {
@@ -147,12 +156,12 @@ class Numbers extends PureComponent {
                 this.setState({ stars })
             }
         } catch (error) {
-            console.log(error) // eslint-disable-line no-console
+            if (axios.isCancel(error)) {
+                return null
+            } else {
+                console.log(error.message) // eslint-disable-line no-console
+            }
         }
-    }
-
-    componentDidMount() {
-        this.fetchNumbers()
     }
 
     render() {
