@@ -15,6 +15,7 @@ The Ocean Production Network will be an EVM network of nodes ("keepers") running
 
 - The Main Ocean Network
 - The Ocean Mainnet
+- The Production-Ready Ocean Network
 - The Ocean Live Network
 - (among the internal dev team) The Ocean Pacific Network, or just Pacific
 
