@@ -1,13 +1,13 @@
 ---
 title: Software Components
-description: The Ocean Protocol network is brought to life by many interacting symbiotic software components.
+description: Every Ocean network is brought to life by many interacting symbiotic software components.
 ---
 
 Before reading this page, you should understand some [Ocean-specific terminology](/concepts/terminology/).
 
 ## Keeper
 
-A computer running a blockchain client
+A computer running an EVM-compatible blockchain client
 (such as [Parity Ethereum](https://www.parity.io/ethereum/))
 where the associated blockchain network is running the Ocean Protocol
 [keeper-contracts](https://github.com/oceanprotocol/keeper-contracts)

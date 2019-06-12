@@ -67,8 +67,6 @@ At the time of writing, you could use Ethereum Mainnet Ocean Tokens to do variou
 - buy other cryptocurrencies. See the next subsection for more details.
 - stake in [dxDAO](https://dxdao.daostack.io/).
 
-Moreover, in the near future, there are plans to make it possible to use Ethereum Mainnet Ocean Tokens for Ocean Protocol tasks in the Ethereum Mainnet. That includes asset and service acquisition, via Ocean Protocol marketplaces attached to the Ethereum Mainnet.
-
 ### How to Buy or Sell Ethereum Mainnet Ocean Tokens
 
 You can buy or sell Ethereum Mainnet Ocean Tokens via any exchange that lists them. See the official list of exchanges below.
@@ -92,7 +90,6 @@ At some point after the Ocean Production Network is launched, it will become pos
 ## Further Reading about Ocean Tokens
 
 - [Teach Your Wallet to Track Ocean Tokens](/tutorials/wallets-and-ocean-tokens/)
-- [Get Ether and Ocean Tokens](/tutorials/get-ether-and-ocean-tokens/)
 - “[Ocean Tokenomics](https://blog.oceanprotocol.com/ocean-tokenomics-d34f28c480a8)”
 - “[Ocean Tokenomics II](https://blog.oceanprotocol.com/https-blog-oceanprotocol-com-ocean-tokenomics-ii-faf05854314b)”
 - [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)

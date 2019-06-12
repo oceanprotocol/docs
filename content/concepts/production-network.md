@@ -5,7 +5,7 @@ description: An introduction to the Ocean Production Network.
 
 **At the time of writing, there was no live, running, publicly-available Ocean Production Network.**
 
-Ocean Protocol makes use of several EVM networks, including:
+Ocean Protocol makes use of several EVM-compatible networks, including:
 
 - the Ethereum Mainnet (also called the Main Ethereum Network),
 - various [testnets](/concepts/testnets/), and
@@ -21,4 +21,4 @@ The Ocean Production Network will be an EVM network of nodes ("keepers") running
 
 "Network" is sometimes shortened to just "Net."
 
-[Ocean Tokens](/concepts/ocean-tokens/) can, in principle, live in any EVM network. The ones sold in the Ocean Protocol token sale were in the Ethereum Mainnet (and still were, at the time of writing). For more information, see [the page about Ocean Tokens](/concepts/ocean-tokens/).
+[Ocean Tokens](/concepts/ocean-tokens/) can, in principle, live in any EVM-compatible network. The ones sold in the Ocean Protocol token sale were in the Ethereum Mainnet (and still were, at the time of writing). For more information, see [the page about Ocean Tokens](/concepts/ocean-tokens/).

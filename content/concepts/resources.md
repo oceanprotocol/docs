@@ -13,7 +13,7 @@ All papers can be retrieved from the [Papers section](https://oceanprotocol.com/
 
 ## Roadmap
 
-[Ocean Protocol roadmap](https://oceanprotocol.com/protocol/#roadmap) outlining our plans and achievements in creating the Ocean Protocol network and building a community and ecosystem around it.
+[Ocean Protocol roadmap](https://oceanprotocol.com/protocol/#roadmap) outlining our plans and achievements in creating Ocean Protocol and building a community and ecosystem around it.
 
 ## Blog
 

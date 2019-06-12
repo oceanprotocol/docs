@@ -29,7 +29,7 @@ To suggest a change to the Ocean Protocol itself (which is actually a set of pro
 
 You could write articles or blog posts related to Ocean Protocol. Possible topics include:
 
-- a story about how you used Ocean Protocol or the Ocean network
+- a story about how you used Ocean Protocol or an Ocean network
 - news from a recent event
 - tutorials for beginners
 - a deep dive into some specific aspect of Ocean Protocol
