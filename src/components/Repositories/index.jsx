@@ -46,7 +46,7 @@ const Repositories = () => (
                                     software components
                                 </Link>{' '}
                                 document for an introduction to the components
-                                creating the Ocean network.
+                                found in a typical Ocean network.
                             </strong>
                         </p>
                     </header>
