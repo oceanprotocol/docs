@@ -70,6 +70,7 @@ Additionally, some content files live in other repositories and are maintained t
 At the moment, this is set up for the following repositories:
 
 - [dev-ocean](https://github.com/oceanprotocol/dev-ocean)
+- [squid-js](https://github.com/oceanprotocol/squid-js)
 
 For including a document from any of the above repositories, 4 values are required in a document's YAML frontmatter. If found, a page will be generated automatically, accessible under the defined `slug`.
 
