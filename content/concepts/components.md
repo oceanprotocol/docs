@@ -37,11 +37,12 @@ Marketplaces run Aquarius to store and manage metadata about the [assets](/conce
 
 ### OceanDB Drivers
 
-Aquarius supports several options for the off-chain database (OceanDB), including MongoDB, Elasticsearch and BigchainDB. One can add support for another off-chain database by creating a new driver similar to the existing OceanDB drivers.
+Aquarius supports several options for the off-chain database (OceanDB), including Elasticsearch and MongoDB. One can add support for another off-chain database by creating a new driver similar to the existing OceanDB drivers.
 
-<repo name="oceandb-mongodb-driver"></repo>
-<repo name="oceandb-bigchaindb-driver"></repo>
 <repo name="oceandb-elasticsearch-driver"></repo>
+<repo name="oceandb-mongodb-driver"></repo>
+
+Note: There is also a BigchainDB driver but it hasn't been maintained.
 
 ## Brizo
 
