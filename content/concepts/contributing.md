@@ -51,7 +51,7 @@ See the page about [bounties](/concepts/bounties/).
 
 ## Develop a Service Integration Driver or Plugin
 
-- Aquarius currently supports storing metadata in MongoDB, Elasticsearch or BigchainDB. Each option is supported by its own "OceanDB driver." You could write a new OceanDB driver to support another database. See [the existing OceanDB repositories for examples](https://github.com/oceanprotocol?utf8=%E2%9C%93&q=oceandb&type=&language=).
+- Aquarius currently supports storing metadata in Elasticsearch or MongoDB. Each option is supported by its own "OceanDB driver." You could write a new OceanDB driver to support another database. See [the existing OceanDB repositories for examples](https://github.com/oceanprotocol?utf8=%E2%9C%93&q=oceandb&type=&language=).
 - Brizo currently supports storing data sets in Azure Storage, Amazon S3 or on-premise. Each option is supported by its own "Osmosis driver." You could write a new Osmosis driver to support another storage provider. See [the existing Osmosis repositories for examples](https://github.com/oceanprotocol?utf8=%E2%9C%93&q=osmosis&type=&language=).
 - [OEP-11 lists the supported encryption and decryption options](https://github.com/oceanprotocol/OEPs/tree/master/11#encryption-and-decryption) (for encrypting URLs before putting them in the metadata, not data sets themselves). You could add support for another option.
 - Other kinds of services could also be integrated. If you need help or advice, then email <a href="mailto:info@oceanprotocol.com">info@oceanprotocol.com</a>.

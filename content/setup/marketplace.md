@@ -54,7 +54,7 @@ When developing your marketplace/publisher app, you will probably use Barge to r
 
 - Your marketplace/publisher app
 - [Aquarius](/concepts/components/#aquarius)
-- A database to go with Aquarius, e.g. MongoDB or Elasticsearch
+- A database to go with Aquarius, e.g. Elasticsearch or MongoDB
 - [Brizo](/concepts/components/#brizo)
 - Recommended: a [keeper](/concepts/components/#keeper) node with the keeper contracts deployed to it, connected to an Ocean network
 - Optional: your own [Secret Store](/concepts/components/#secret-store) nodes (for a more advanced setup)

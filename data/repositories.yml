@@ -42,7 +42,6 @@
 - group: OceanDB Drivers
   items:
     - name: oceandb-mongodb-driver
-    - name: oceandb-bigchaindb-driver
     - name: oceandb-elasticsearch-driver
     - name: oceandb-driver-interface
 
