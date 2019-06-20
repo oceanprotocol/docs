@@ -4,7 +4,7 @@ export const cleanTypedocData = (data, useClasses) => {
     const cleanData = nodes
         .map(node => ({
             ...node,
-            name: node.name.replace(/"/g, ''),
+            name: node.name.replace(/"/g, '').replace('src/', ''),
             child: node.children && node.children[0]
         }))
         .filter(({ name }) => (useClasses || []).includes(name))
