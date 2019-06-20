@@ -243,6 +243,7 @@ exports.createPages = ({ graphql, actions }) => {
                                 'ocean/OceanAccounts',
                                 'ocean/OceanAssets',
                                 'ocean/OceanAgreements',
+                                'ocean/OceanVersions',
                                 'ocean/Account',
                                 'ocean/DID',
                                 'ocean/ServiceAgreements/ServiceAgreement',

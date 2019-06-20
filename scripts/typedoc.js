@@ -54,8 +54,7 @@ const generateJson = () => {
             title: 'Squid-js',
             description,
             version,
-            sourceUrl:
-                'https://github.com/oceanprotocol/squid-js/tree/develop/src/'
+            sourceUrl: 'https://github.com/oceanprotocol/squid-js/blob/master/'
         },
         ...jsonOrig
     }
