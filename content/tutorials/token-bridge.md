@@ -20,7 +20,7 @@ If you want to transfer OCEAN out of the Ethereum Mainnet, then first you need a
 
 Below is a screenshot of MetaMask showing an account (with address `0x8…`) which has 500 OCEAN in the Ethereum Mainnet. If you want MetaMask to show OCEAN, then see [the page about using your wallet to manage Ocean Tokens](/tutorials/wallets-and-ocean-tokens/).
 
-![MetaMask showing an account that has 500 Ocean Tokens in the Ethereum Mainnet](./images/tb01.png)
+![MetaMask showing an account that has 500.000 OCEAN in the Ethereum Mainnet](./images/tb01.png)
 
 To use the token bridge between the Ethereum Mainnet and the Ocean Production Network (a.k.a. Pacific), then go to [https://token-bridge.pacific.oceanprotocol.com](https://token-bridge.pacific.oceanprotocol.com). You should see something like this:
 
@@ -35,21 +35,21 @@ The above screenshot shows that the account with address `0x8…` has 500.00 OCE
 
 A confirmation dialog box like the following should appear.
 
-![](./images/tb03.png)
+![Confirmation dialog box](./images/tb03.png)
 
 - Click **Continue**
 
 You should see some status updates like the following.
 
-![](./images/tb04.png)
+![A status update: 0/8 Waiting for Block Confirmations…](./images/tb04.png)
 
-![](./images/tb05.png)
+![Another status update: 4/8 Waiting for Block Confirmations…](./images/tb05.png)
 
-![](./images/tb06.png)
+![Another status update: Validators Verifying Transaction…](./images/tb06.png)
 
 If the transfer is a success, then you should see a dialog box like the following.
 
-![](./images/tb07.png)
+![Success!](./images/tb07.png)
 
 Notice how the transaction ID is shown.
 
@@ -57,4 +57,4 @@ Notice how the transaction ID is shown.
 
 If you go back to MetaMask and switch the network to Pacific, then the account's OCEAN balance in Pacific should be higher by the amount just transferred.
 
-![](./images/tb08.png)
+![MetaMask showing an account that has 1.000 OCEAN in the Pacific network](./images/tb08.png)
