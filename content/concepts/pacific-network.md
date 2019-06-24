@@ -24,7 +24,7 @@ The Pacific Network is (or was) also known by other names, including:
 
 Initially, all the nodes in the Pacific Network will be operated solely by BigchainDB GmbH (i.e. one company), but the goal is for the nodes to be operated by many independent operators in the future.
 
-Initially, the Pacific Network will not be production-ready, that is, it will not be suitable for production use cases. 
+Initially, the Pacific Network will not be production-ready, that is, it will not be suitable for production use cases.
 We expect vulnerabilities to be discovered and will conduct security audits over time, but the Ocean Protocol smart contracts will be in the wild for all intents and purposes.
 Over time, the Pacific Network will be upgraded and improved.
 There is no intent to shut it down.
