@@ -5,8 +5,8 @@
   "author": "Ocean Protocol <devops@oceanprotocol.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "npm run typedoc && gatsby build",
-    "start": "npm run typedoc && gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby develop",
     "ssr": "npm run build && serve -s public/",
     "format:js": "prettier --write '**/*.{js,jsx}'",
     "format:css": "prettier-stylelint --write --quiet 'src/**/*.{css,scss}'",
@@ -19,8 +19,7 @@
     "lint:yml": "prettier '**/*.{yml,yaml}' --list-different",
     "lint": "run-p --continue-on-error lint:js lint:css lint:md lint:yml",
     "test": "npm run lint",
-    "deploy": "./scripts/deploy.sh",
-    "typedoc": "node ./scripts/typedoc.js"
+    "deploy": "./scripts/deploy.sh"
   },
   "dependencies": {
     "@oceanprotocol/art": "^2.2.0",
@@ -77,14 +76,12 @@
     "markdownlint-cli": "^0.17.0",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
-    "ora": "^3.4.0",
     "prettier": "^1.18.2",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^10.1.0",
     "stylelint-config-bigchaindb": "^1.2.2",
     "stylelint-config-css-modules": "^1.4.0",
-    "stylelint-config-standard": "^18.3.0",
-    "typedoc": "^0.14.2"
+    "stylelint-config-standard": "^18.3.0"
   },
   "repository": {
     "type": "git",

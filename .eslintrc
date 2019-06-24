@@ -10,5 +10,6 @@
     "plugins": ["prettier"],
     "rules": {
         "prettier/prettier": "error"
-    }
+    },
+    "env": { "browser": true }
 }

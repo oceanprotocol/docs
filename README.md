@@ -18,29 +18,29 @@
 
 ---
 
-- [Content](#content)
-  - [Content Files](#content-files)
-  - [External Content Files](#external-content-files)
-  - [Markdown File Requirements](#markdown-file-requirements)
-  - [Adding Docs](#adding-docs)
-  - [Editing Docs](#editing-docs)
-  - [Repositories](#repositories)
-    - [Add Links to a Repository](#add-links-to-a-repository)
-    - [Release Versions](#release-versions)
-  - [API References](#api-references)
-    - [Swagger specs](#swagger-specs)
-    - [TypeDoc specs](#typedoc-specs)
-- [Development](#development)
-  - [Using npm](#using-npm)
-  - [Using Docker](#using-docker)
-- [Linting & Formatting](#linting--formatting)
-  - [Editor Setup: VS Code](#editor-setup-vs-code)
-- [GitHub Data Fetching](#github-data-fetching)
-  - [GitHub GraphQL API](#github-graphql-api)
-  - [GitHub REST API](#github-rest-api)
-- [Deployment](#deployment)
-- [Authors](#authors)
-- [License](#license)
+- [Content](#Content)
+  - [Content Files](#Content-Files)
+  - [External Content Files](#External-Content-Files)
+  - [Markdown File Requirements](#Markdown-File-Requirements)
+  - [Adding Docs](#Adding-Docs)
+  - [Editing Docs](#Editing-Docs)
+  - [Repositories](#Repositories)
+    - [Add Links to a Repository](#Add-Links-to-a-Repository)
+    - [Release Versions](#Release-Versions)
+  - [API References](#API-References)
+    - [Swagger specs](#Swagger-specs)
+    - [TypeDoc specs](#TypeDoc-specs)
+- [Development](#Development)
+  - [Using npm](#Using-npm)
+  - [Using Docker](#Using-Docker)
+- [Linting & Formatting](#Linting--Formatting)
+  - [Editor Setup: VS Code](#Editor-Setup-VS-Code)
+- [GitHub Data Fetching](#GitHub-Data-Fetching)
+  - [GitHub GraphQL API](#GitHub-GraphQL-API)
+  - [GitHub REST API](#GitHub-REST-API)
+- [Deployment](#Deployment)
+- [Authors](#Authors)
+- [License](#License)
 
 ## Content
 
@@ -206,11 +206,7 @@ They are fetched and updated automatically upon every site build. For more infor
 
 #### TypeDoc specs
 
-Reference pages based on generated `json` file from TypeDoc. TypeScript-based projects are included as git submodules under `./external`.
-
-On site build, TypeDoc will automatically generate the required `json` spec file into `./data/squid-js.json` and create pages from it. The data from these json files is then used by the TypeDoc template.
-
-To update the specs to the most recent version, the `./external/squid-js` submodule needs to be manuall updated. That's it, on next site build a new spec will be used.
+Reference pages based on generated `json` file from TypeDoc. On every site build, the spec files are fetched from GitHub release artifacts and pages are created from it. The data from these json files is then used by the TypeDoc template.
 
 ## Development
 
