@@ -47,7 +47,7 @@ There were several ways to acquire some of the Ethereum Mainnet Ocean Tokens in 
 - participation in the initial exchange offering
 - completion of a [bounty](/concepts/bounties/)
 
-After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Ethereum Mainnet Ocean Tokens became available in the Ethereum Mainnet (_not_ the Ocean Production Network; there was no Ocean Production Network at the time).
+After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Ethereum Mainnet Ocean Tokens became available in the Ethereum Mainnet (and not in any other network).
 The initial circulating supply of Ethereum Mainnet Ocean Tokens became available on the Ethereum Mainnet in May 2019.
 If you acquired Ocean Tokens in the initial circulating supply, they should have been, or will be, sent to the address you provided, in the Ethereum Mainnet.
 
@@ -81,11 +81,9 @@ Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean To
 - [KuCoin](https://www.kucoin.com/)
 - [DutchX](https://dutchx.readthedocs.io/en/latest/)
 
-## Ocean Production Network Ocean Tokens
+## Pacific Network Ocean Tokens
 
-At the time of writing, the [Ocean Production Network](/concepts/production-network/) wasn't deployed yet, so there were no Ocean Production Network Ocean Tokens.
-
-At some point after the Ocean Production Network is launched, it will become possible to move Ocean Tokens from the Ethereum Mainnet to the Ocean Production Network. The details of exactly how that will work are still to be determined.
+At the time of writing, the [Pacific Network](/concepts/pacific-network/) wasn't publicly-usable yet. Once it is, there will be a token bridge from the Ethereum Mainnet to the Pacific Network, allowing you to move Ocean Tokens from the Ethereum Mainnet to the Pacific Network.
 
 ## Further Reading about Ocean Tokens
 
