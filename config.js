@@ -41,6 +41,10 @@ module.exports = {
             to: '/concepts/wallets/'
         },
         {
+            from: '/concepts/production-network/',
+            to: '/concepts/pacific-network/'
+        },
+        {
             from: '/references/squid-py/',
             to: 'https://squid-py.readthedocs.io/en/latest/'
         },
