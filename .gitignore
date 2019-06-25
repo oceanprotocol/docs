@@ -7,4 +7,3 @@ yarn-error.log
 .DS_Store
 .env
 .env.*
-data/squid-js.json

@@ -2,6 +2,3 @@
     path = external/dev-ocean
     url = https://github.com/oceanprotocol/dev-ocean
     branch = master
-[submodule "external/squid-js"]
-	path = external/squid-js
-	url = https://github.com/oceanprotocol/squid-js.git

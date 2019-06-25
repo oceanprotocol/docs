@@ -78,6 +78,38 @@ exports.createPages = ({ graphql, actions }) => {
                                 }
                             }
                         }
+
+                        squidJs: github {
+                            repository(
+                                name: "squid-js"
+                                owner: "oceanprotocol"
+                            ) {
+                                name
+                                releases(
+                                    first: 1
+                                    orderBy: {
+                                        field: CREATED_AT
+                                        direction: DESC
+                                    }
+                                ) {
+                                    edges {
+                                        node {
+                                            releaseAssets(
+                                                first: 1
+                                                name: "squid-js.json"
+                                            ) {
+                                                edges {
+                                                    node {
+                                                        name
+                                                        downloadUrl
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 `
             ).then(async result => {
@@ -129,140 +161,16 @@ exports.createPages = ({ graphql, actions }) => {
                         })
                     })
 
-                //
-                // Create pages from swagger json files
-                //
-                const swaggerComponents = ['aquarius', 'brizo']
-                const apiSwaggerTemplate = path.resolve(
-                    './src/templates/Swagger/index.jsx'
+                // API: brizo, aquarius
+                await createSwaggerPages(createPage)
+
+                // API: squid-js
+                await createTypeDocPage(
+                    createPage,
+                    result.data.squidJs.repository.name,
+                    result.data.squidJs.repository.releases.edges[0].node
+                        .releaseAssets.edges[0].node.downloadUrl
                 )
-
-                // https://github.com/swagger-api/swagger-js
-                const fetchSwaggerSpec = async name => {
-                    try {
-                        const client = await Swagger(
-                            `https://nginx-${name}.dev-ocean.com/spec`
-                        )
-                        return client.spec // The resolved spec
-
-                        // client.originalSpec // In case you need it
-                        // client.errors // Any resolver errors
-
-                        // Tags interface
-                        // client.apis.pet.addPet({id: 1, name: "bobby"}).then(...)
-
-                        // TryItOut Executor, with the `spec` already provided
-                        // client.execute({operationId: 'addPet', parameters: {id: 1, name: "bobby") }).then(...)
-                    } catch (error) {
-                        console.log(error)
-                    }
-                }
-
-                const getSlug = name => {
-                    const slug = `/references/${name}/`
-                    return slug
-                }
-
-                const specAquarius = await fetchSwaggerSpec(
-                    swaggerComponents[0]
-                )
-                const slugAquarius = getSlug(swaggerComponents[0])
-
-                createPage({
-                    path: slugAquarius,
-                    component: apiSwaggerTemplate,
-                    context: {
-                        slug: slugAquarius,
-                        name: swaggerComponents[0],
-                        api: specAquarius
-                    }
-                })
-
-                const specBrizo = await fetchSwaggerSpec(swaggerComponents[1])
-                const slugBrizo = getSlug(swaggerComponents[1])
-
-                createPage({
-                    path: slugBrizo,
-                    component: apiSwaggerTemplate,
-                    context: {
-                        slug: slugBrizo,
-                        name: swaggerComponents[1],
-                        api: specBrizo
-                    }
-                })
-
-                // Swagger Pet Store example
-                const petStoreSlug = '/references/petstore/'
-
-                try {
-                    const client = await Swagger(
-                        `http://petstore.swagger.io/v2/swagger.json`
-                    )
-
-                    createPage({
-                        path: petStoreSlug,
-                        component: apiSwaggerTemplate,
-                        context: {
-                            slug: petStoreSlug,
-                            api: client.spec
-                        }
-                    })
-                } catch (error) {
-                    console.log(error)
-                }
-
-                //
-                // Create pages from TypeDoc json files
-                //
-                const typeDocSpecs = ['./data/squid-js.json']
-                const typedocTemplate = path.resolve(
-                    './src/templates/Typedoc/index.jsx'
-                )
-
-                typeDocSpecs.forEach(spec => {
-                    const typedoc = require(spec) // eslint-disable-line
-
-                    const name = path
-                        .basename(spec)
-                        .split('.json')
-                        .join('')
-
-                    const slug = `/references/${name}/`
-
-                    createPage({
-                        path: slug,
-                        component: typedocTemplate,
-                        context: {
-                            slug,
-                            typedoc,
-                            // TODO: defining these classes for inclusion
-                            // needs to be handled somewhere else to keep
-                            // it generic for all TypeDoc specs
-                            classes: [
-                                'ocean/Ocean',
-                                'ocean/OceanAccounts',
-                                'ocean/OceanAssets',
-                                'ocean/OceanAgreements',
-                                'ocean/OceanVersions',
-                                'ocean/Account',
-                                'ocean/DID',
-                                'ocean/ServiceAgreements/ServiceAgreement',
-                                'ddo/DDO',
-                                'ddo/Service',
-                                'aquarius/AquariusProvider',
-                                'aquarius/Aquarius',
-                                'aquarius/query/SearchQuery',
-                                'brizo/BrizoProvider',
-                                'brizo/Brizo',
-                                'keeper/Keeper',
-                                'keeper/Web3Provider',
-                                'secretstore/SecretStoreProvider',
-                                'models/Config',
-                                'models/Balance'
-                            ]
-                        }
-                    })
-                })
 
                 //
                 // create redirects
@@ -281,4 +189,136 @@ exports.createPages = ({ graphql, actions }) => {
             })
         )
     })
+}
+
+//
+// Create pages from TypeDoc json files
+//
+const createTypeDocPage = async (createPage, name, downloadUrl) => {
+    try {
+        const typedoc = await fetch(downloadUrl)
+        const typedocTemplate = path.resolve(
+            './src/templates/Typedoc/index.jsx'
+        )
+        console.log(name)
+        const slug = `/references/${name}/`
+
+        createPage({
+            path: slug,
+            component: typedocTemplate,
+            context: {
+                slug,
+                typedoc: await typedoc.json(),
+                // We define the classes here so the data object passed as page context
+                // is as small as possible.
+                // Caveat: no live update during development when these values are changed.
+                //
+                // TODO: defining these classes for inclusion
+                // needs to be handled somewhere else to keep
+                // it generic for all TypeDoc specs
+                classes: [
+                    'ocean/Ocean',
+                    'ocean/OceanAccounts',
+                    'ocean/OceanAssets',
+                    'ocean/OceanAgreements',
+                    'ocean/OceanVersions',
+                    'ocean/Account',
+                    'ocean/DID',
+                    'ocean/ServiceAgreements/ServiceAgreement',
+                    'ddo/DDO',
+                    'ddo/Service',
+                    'aquarius/AquariusProvider',
+                    'aquarius/Aquarius',
+                    'aquarius/query/SearchQuery',
+                    'brizo/BrizoProvider',
+                    'brizo/Brizo',
+                    'keeper/Keeper',
+                    'keeper/Web3Provider',
+                    'secretstore/SecretStoreProvider',
+                    'models/Config',
+                    'models/Balance'
+                ]
+            }
+        })
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+
+//
+// Create pages from swagger json files
+//
+// https://github.com/swagger-api/swagger-js
+const fetchSwaggerSpec = async name => {
+    try {
+        const client = await Swagger(`https://nginx-${name}.dev-ocean.com/spec`)
+        return client.spec // The resolved spec
+
+        // client.originalSpec // In case you need it
+        // client.errors // Any resolver errors
+
+        // Tags interface
+        // client.apis.pet.addPet({id: 1, name: "bobby"}).then(...)
+
+        // TryItOut Executor, with the `spec` already provided
+        // client.execute({operationId: 'addPet', parameters: {id: 1, name: "bobby") }).then(...)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const createSwaggerPages = async createPage => {
+    const swaggerComponents = ['aquarius', 'brizo']
+    const apiSwaggerTemplate = path.resolve('./src/templates/Swagger/index.jsx')
+
+    const getSlug = name => {
+        const slug = `/references/${name}/`
+        return slug
+    }
+
+    const specAquarius = await fetchSwaggerSpec(swaggerComponents[0])
+    const slugAquarius = getSlug(swaggerComponents[0])
+
+    createPage({
+        path: slugAquarius,
+        component: apiSwaggerTemplate,
+        context: {
+            slug: slugAquarius,
+            name: swaggerComponents[0],
+            api: specAquarius
+        }
+    })
+
+    const specBrizo = await fetchSwaggerSpec(swaggerComponents[1])
+    const slugBrizo = getSlug(swaggerComponents[1])
+
+    createPage({
+        path: slugBrizo,
+        component: apiSwaggerTemplate,
+        context: {
+            slug: slugBrizo,
+            name: swaggerComponents[1],
+            api: specBrizo
+        }
+    })
+
+    // Swagger Pet Store example
+    const petStoreSlug = '/references/petstore/'
+
+    try {
+        const client = await Swagger(
+            `http://petstore.swagger.io/v2/swagger.json`
+        )
+
+        createPage({
+            path: petStoreSlug,
+            component: apiSwaggerTemplate,
+            context: {
+                slug: petStoreSlug,
+                api: client.spec
+            }
+        })
+    } catch (error) {
+        console.log(error)
+    }
 }
