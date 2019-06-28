@@ -27,3 +27,20 @@ If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local N
 ## Connect to a Local Spree Testnet or Ganache-Based Testnet
 
 When using [Barge](https://github.com/oceanprotocol/barge) to run a purely-local testnet (Spree or Ganache-based), you can connect to a local node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
+
+## Connect to the Pacific Network
+
+Here are the parameters you might need to connect to the [Pacific Network](/concepts/pacific-network/):
+
+| Parameter          | Value                                                   |
+| ------------------ | ------------------------------------------------------- |
+| RPC URL (required) | [https://pacific.oceanprotocol.com][rpc-url]            |
+| ChainID            | `TODO` (decimal for MetaMask) or `0xTODO` (hexadecimal) |
+| Symbol             | Whatever you like, e.g. `PACIFIC ETH`                   |
+| Nickname           | Whatever you like, e.g. `Pacific`                       |
+
+In MetaMask, click on the network name then click on `Custom RPC` in the drop-down list. Scroll down to the `New Network` section. Enter the above RPC URL. You don't need to add a port number to the end of the RPC URL. Enter the ChainID, Symbol and Nickname if you like. See the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
+
+If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local Pacific node, you can connect to that local Pacific node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask). You can configure that local Pacific node by editing the files in the `barge/networks/pacific/config/` directory.
+
+[rpc-url]: https://pacific.oceanprotocol.com
