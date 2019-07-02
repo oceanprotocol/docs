@@ -49,12 +49,9 @@ There is a Pacific blockchain explorer at [https://submarine.oceanprotocol.com/]
 There are several Ocean Protocol software components that are live, connected to the Pacific Network, and operated by BigchainDB GmbH:
 
 - Secret Store at [https://secret-store.oceanprotocol.com](https://secret-store.oceanprotocol.com)
-- Aquarius at TODO
-- Brizo at TODO
-- Jupyter Hub at TODO
+- Aquarius at [https://aquarius.commons.oceanprotocol.com](https://aquarius.commons.oceanprotocol.com)
+- Brizo at [https://brizo.commons.oceanprotocol.com](https://brizo.commons.oceanprotocol.com)
 - Commons Marketplace at [https://commons.oceanprotocol.com](https://commons.oceanprotocol.com)
-- Aquarius for Commons Marketplace at [https://aquarius.commons.oceanprotocol.com](https://aquarius.commons.oceanprotocol.com)
-- Brizo for Commons Marketplace at [https://brizo.commons.oceanprotocol.com](https://brizo.commons.oceanprotocol.com)
 - Faucet Server at [https://faucet.oceanprotocol.com](https://faucet.oceanprotocol.com)
 - Token Bridge Frontend at [https://bridge.oceanprotocol.com/](https://bridge.oceanprotocol.com/)
 

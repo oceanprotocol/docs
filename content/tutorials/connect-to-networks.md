@@ -35,7 +35,7 @@ Here are the parameters you might need to connect to the [Pacific Network](/conc
 | Parameter          | Value                                                   |
 | ------------------ | ------------------------------------------------------- |
 | RPC URL (required) | [https://pacific.oceanprotocol.com][rpc-url]            |
-| ChainID            | `TODO` (decimal for MetaMask) or `0xTODO` (hexadecimal) |
+| ChainID            | `846353` (decimal for MetaMask) or `0xcea11` (hexadecimal) |
 | Symbol             | Whatever you like, e.g. `PACIFIC ETH`                   |
 | Nickname           | Whatever you like, e.g. `Pacific`                       |
 
