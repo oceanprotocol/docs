@@ -27,8 +27,7 @@ const asset = {
     dateCreated: '2012-02-01T10:55:11Z',
     author: 'Mario',
     license: 'CC0: Public Domain',
-    contentType: 'jpg/txt',
-    price: 10,
+    price: '10',
     files: [
       {
         index: 0,

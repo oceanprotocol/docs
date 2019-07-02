@@ -18,7 +18,7 @@ If you know the URL of a Brizo instance attached to the network you're using, th
 
 If the above addresses are out-of-date, then you can find newer ones in the [keeper-contracts repository on GitHub](https://github.com/oceanprotocol/keeper-contracts):
 
-1. Click on the "Branch: **develop**" button and switch to the tag of the latest release (e.g. `v0.8.6`).
+1. Click on the "Branch: **develop**" button and switch to the tag of the latest release (e.g. `v0.10.3`).
 1. In the `README.md` file, check the address of the OceanToken contract (in Nile or Kovan).
 1. Double-check the address by looking in the file named `zos.kovan.json` (for Kovan) or `zos.dev-8995.json` (for Nile). Search for `/OceanToken`. There should be one result and the text around it should look like:
 

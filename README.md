@@ -197,8 +197,8 @@ The sidebar for those generated reference pages will automatically switch to inc
 
 Reference pages based on Swagger specs are sourced from remotely hosted Swagger specs:
 
-- [`https://nginx-aquarius.dev-ocean.com/spec`](https://nginx-aquarius.dev-ocean.com/spec)
-- [`https://nginx-brizo.dev-ocean.com/spec`](https://nginx-brizo.dev-ocean.com/spec)
+- [`https://aquarius.nile.dev-ocean.com/spec`](https://aquarius.nile.dev-ocean.com/spec)
+- [`https://brizo.nile.dev-ocean.com/spec`](https://brizo.nile.dev-ocean.com/spec)
 
 They are fetched and updated automatically upon every site build. For more information about stylistic issues, take a look at the section in the test page:
 
