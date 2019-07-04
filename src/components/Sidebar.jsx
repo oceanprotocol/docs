@@ -117,11 +117,7 @@ export default class Sidebar extends Component {
         const { sidebar, location, collapsed, toc, tocComponent } = this.props
 
         if (sidebar) {
-            try {
-                var sidebarfile = require(`../../data/sidebars/${sidebar}.yml`) // eslint-disable-line
-            } catch (e) {
-                throw e
-            }
+            var sidebarfile = require(`../../data/sidebars/${sidebar}.yml`) // eslint-disable-line
         }
 
         if (!sidebarfile) {
