@@ -9,26 +9,24 @@ If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask 
 
 If you know the URL of a Brizo instance attached to the network you're using, then just go to that URL in your web browser and get the value of `contracts.OceanToken`.
 
+### Ethereum Mainnet
+
+The Ocean Token contract address in the Ethereum Mainnet is:
+
+[`0x985dd3D42De1e256d09e1c10F112bCCB8015AD41`](https://etherscan.io/token/0x985dd3d42de1e256d09e1c10f112bccb8015ad41)
+
+### Pacific Network
+
+The Ocean Token contract address in the [Pacific Network](/concepts/pacific-network/) is:
+
+[`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`](https://submarine.oceanprotocol.com/address/0x012578f9381e876a9e2a9111dfd436ff91a451ae/transactions)
+
 ### Kovan or Nile Testnet
 
 | Testnet | Ocean Token Contract Address                 |
 | ------- | -------------------------------------------- |
-| Kovan   | `0xB57C4D626548eB8AC0B82b086721516493E2908d` |
 | Nile    | `0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad` |
-
-If the above addresses are out-of-date, then you can find newer ones in the [keeper-contracts repository on GitHub](https://github.com/oceanprotocol/keeper-contracts):
-
-1. Click on the "Branch: **develop**" button and switch to the tag of the latest release (e.g. `v0.10.3`).
-1. In the `README.md` file, check the address of the OceanToken contract (in Nile or Kovan).
-1. Double-check the address by looking in the file named `zos.kovan.json` (for Kovan) or `zos.dev-8995.json` (for Nile). Search for `/OceanToken`. There should be one result and the text around it should look like:
-
-   ```json
-    "@oceanprotocol/keeper-contracts/OceanToken": [
-      {
-        "address": "0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad",
-   ```
-
-   Compare the `"address"` value to the value from the `README.md` file.
+| Kovan   | `0xB57C4D626548eB8AC0B82b086721516493E2908d` |
 
 ### Spree or Ganache-Based Testnet
 
@@ -37,29 +35,17 @@ If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local S
 - `$HOME/.ocean/keeper-contracts/artifacts/OceanToken.spree.json` for Spree
 - `$HOME/.ocean/keeper-contracts/artifacts/OceanToken.development.json` for Ganache
 
-### Ethereum Mainnet
-
-The Ocean Token contract address in the Ethereum Mainnet is:
-
-`0x985dd3D42De1e256d09e1c10F112bCCB8015AD41`
-
-### Pacific Network
-
-The Ocean Token contract address in the [Pacific Network](/concepts/pacific-network/) is:
-
-`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`
-
 ## Step 2: Teach Your Wallet Software about Ocean Tokens
 
 ### MetaMask Instructions
 
 1. Make sure MetaMask is connected to the correct network (Nile, Kovan or whatever). See [the tutorial about how to do that](/tutorials/connect-to-networks/).
-1. For the account you want to manage, click the `☰` (hamburger menu icon).
-1. Scroll down until the `Add Token` link is visible, then click on it.
-1. Click on `Custom Token`.
-1. Paste the OceanToken contract address (from Step 1 above) into the "Token Contract Address" field. The other two fields should auto-fill. If they don't then something is wrong.
-1. Click `Next`.
-1. Click `Add Tokens`.
+2. For the account you want to manage, click the `☰` (hamburger menu icon).
+3. Scroll down until the `Add Token` link is visible, then click on it.
+4. Click on `Custom Token`.
+5. Paste the OceanToken contract address (from Step 1 above) into the "Token Contract Address" field. The other two fields should auto-fill. If they don't then something is wrong.
+6. Click `Next`.
+7. Click `Add Tokens`.
 
 MetaMask should now show your Ocean Token (OCEAN) balance, and when you're looking at that, there should be a `Send` button to send Ocean Tokens to others. For help with that, see [the MetaMask docs about how to send tokens](https://metamask.zendesk.com/hc/en-us/articles/360015488931-How-to-Send-Tokens).
 

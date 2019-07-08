@@ -26,6 +26,9 @@ There is an [Ocean Protocol fork of BlockScout](https://github.com/oceanprotocol
 
 There are a few Ocean Protocol command-line interfaces (CLIs). All of them were under development at the time of writing, so you may have issues with using them.
 
-- [tuna](https://github.com/oceanprotocol/tuna) can help you use squid-py, squid-js or squid-java from the command line
+[tuna](https://github.com/oceanprotocol/tuna) can help you use squid-py, squid-js or squid-java from the command line.
+
+<repo name="tuna"></repo>
+
 - [ocean-cli](https://github.com/bigchaindb-gmbh/ocean-cli) was built using squid-java
 - [ocean-cli-py](https://github.com/bigchaindb-gmbh/ocean-cli-py) was built using squid-py

@@ -15,19 +15,33 @@ In MetaMask, be sure to switch from the **Main Ethereum Network** to whatever ne
 
 ## Get Ether
 
-### Get Ether for the Kovan Testnet
+### Get Ether for the Pacific Network
 
-You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see [the official list of Kovan faucets](https://github.com/kovan-testnet/faucet). You have to give the faucet your Kovan address (wallet account address). You can get that from MetaMask. It's a string that looks like:
+If you're connecting to the Pacific network, you can use the Ocean Faucet. A simple UI for it is deployed as part of the Commons marketplace under:
 
-```text
-0xa0A9d7f78bF293514e7cA2789A0Af689eEC99282
+- client: [commons.oceanprotocol.com/faucet](https://commons.oceanprotocol.com/faucet)
+
+This interface is set up to communicate with the deployed Ocean Faucet Server under:
+
+- server: [faucet.oceanprotocol.com](https://faucet.oceanprotocol.com)
+
+You can also communicate with that server directly and get some Nile Ether into `<YOUR ADDRESS>` using the following command:
+
+```bash
+curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST https://faucet.oceanprotocol.com/faucet
 ```
+
+In the above command you only need to replace `<YOUR ADDRESS>` with your own Ethereum address.
+
+Check out the [Ocean Faucet Server repository](https://github.com/oceanprotocol/faucet) to learn more about what the server provides.
+
+The Pacific faucet has a limit of one request every 24 hours for the same Ethereum address. But don't worry, the Ether given is more than enough for interacting with the network.
 
 ### Get Ether for the Nile Testnet
 
 If you're connecting to the Nile testnet, you can use the Ocean Faucet. A simple UI for it is deployed as part of the Commons marketplace under:
 
-- client: [commons.oceanprotocol.com/faucet](https://commons.oceanprotocol.com/faucet)
+- client: [commons.nile.dev-ocean.com/faucet](https://commons.nile.dev-ocean.com/faucet)
 
 This interface is set up to communicate with the deployed Ocean Faucet Server under:
 
@@ -71,6 +85,14 @@ Details about the bootstrapped accounts can be found in [the README.md file in t
 
 ```bash
 curl --data '{"address":"<YOUR ADDRESS>"}' -H "Content-Type: application/json" -X POST localhost:3001/faucet
+```
+
+### Get Ether for the Kovan Testnet
+
+You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see [the official list of Kovan faucets](https://github.com/kovan-testnet/faucet). You have to give the faucet your Kovan address (wallet account address). You can get that from MetaMask. It's a string that looks like:
+
+```text
+0xa0A9d7f78bF293514e7cA2789A0Af689eEC99282
 ```
 
 ## Get Ocean Tokens

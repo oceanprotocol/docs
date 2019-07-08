@@ -78,7 +78,7 @@ An example marketplace/publisher front-end for developers to explore, download, 
 
 ## Commons Marketplace
 
-An online example marketplace/publisher for consumers to explore, download, and publish open data sets in the [Nile Testnet](/concepts/testnets/#the-nile-testnet). Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
+An online example marketplace/publisher for consumers to explore, download, and publish open data sets in the [Pacific Network](/concepts/pacific-network/). Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
 
 For more information, see [the blog post about Commons Marketplace](https://blog.oceanprotocol.com/the-commons-data-marketplace-c57a44288314).
 
