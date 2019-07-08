@@ -14,9 +14,17 @@ Over time, the Pacific Network will be upgraded and improved.
 There is no intent to shut it down.
 Eventually, the goal is for it to be used in production by many projects.
 
-[Ocean Tokens](/concepts/ocean-tokens/) can, in principle, live in any EVM-compatible network. The ones sold in the Ocean Protocol token sale were in the Ethereum Mainnet. There is a token bridge between the Ethereum Mainnet and the Pacific Network, allowing anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network. However, please be aware that doing so would put those Ocean Tokens at risk. For more information, see [the page about Ocean Tokens](/concepts/ocean-tokens/).
-
 [^1]: The Pacific Network is (or was) also known by other names, including _Pacific_, _Main Ocean Network_, _Ocean Mainnet_, _Ocean Live Network_.
+
+## Ocean Tokens in Pacific
+
+[Ocean Tokens](/concepts/ocean-tokens/) can, in principle, live in any EVM-compatible network. The ones sold in the Ocean Protocol token sale were in the Ethereum Mainnet. To be able to use them in Pacific, they need to be transfered with a token bridge.
+
+There is a token bridge between the Ethereum Mainnet and the Pacific Network, allowing anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network.
+
+[**Ocean Token Bridge**](https://bridge.oceanprotocol.com)
+
+However, please be aware that doing so would put those Ocean Tokens at risk. For more information, see [the page about Ocean Tokens](/concepts/ocean-tokens/).
 
 ## Connect to the Pacific Network
 

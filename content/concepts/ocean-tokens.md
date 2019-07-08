@@ -15,28 +15,6 @@ description: The technical basics of Ocean Tokens.
 | Token Symbol           | OCEAN                                                    |
 | Decimals of Precision  | 18                                                       |
 
-## Testnet Ocean Tokens
-
-There are Ocean Tokens in several testnets, including the Nile testnet. They are just testnet Ocean Tokens (i.e. for testing purposes only) and they aren't interchangeable with Ethereum Mainnet Ocean Tokens. For more details, see the the [page about Testnets](/concepts/testnets/) and the [tutorials](/tutorials/introduction/).
-
-### Testnet Ocean Token Utility
-
-Once you have some Testnet Ocean Tokens, you can use them for all currently-implemented Ocean Protocol tasks _in that testnet_ (e.g. buying assets).
-
-### Get Testnet Ocean Tokens
-
-All Squid libraries have methods to request Ocean Tokens. They work by calling the "Dispenser" keeper contract, a contract which is only deployed to testnets. Therefore they will only work in testnets. They're documented in the following places:
-
-- The squid-js docs for:
-  - [OceanAccounts.requestTokens()](/references/squid-js/#OceanAccounts-requestTokens)
-  - [Account.requestTokens()](/references/squid-js/#Account-requestTokens)
-- The squid-py docs for:
-  - [the `squid_py.ocean.ocean_tokens` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_tokens.html): see the `request()` method.
-  - [the `squid_py.ocean.ocean_accounts` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
-- [The squid-java docs](https://www.javadoc.io/doc/com.oceanprotocol/squid/): click "All Classes" then "AccountsManager" then scroll to the bottom of the Class AccountsManager page where you'll find the `requestTokens()` method.
-
-The [Example Code page](/tutorials/example-code/) has links to example Squid code (in all of the languages), including examples of using the above methods.
-
 ## Ethereum Mainnet Ocean Tokens
 
 There were several ways to acquire some of the Ethereum Mainnet Ocean Tokens in the initial circulating supply, including:
@@ -48,8 +26,8 @@ There were several ways to acquire some of the Ethereum Mainnet Ocean Tokens in 
 - completion of a [bounty](/concepts/bounties/)
 
 After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Ethereum Mainnet Ocean Tokens became available in the Ethereum Mainnet (and not in any other network).
-The initial circulating supply of Ethereum Mainnet Ocean Tokens became available on the Ethereum Mainnet in May 2019.
-If you acquired Ocean Tokens in the initial circulating supply, they should have been, or will be, sent to the address you provided, in the Ethereum Mainnet.
+
+The initial circulating supply of Ethereum Mainnet Ocean Tokens became available on the Ethereum Mainnet in May 2019. If you acquired Ocean Tokens in the initial circulating supply, they should have been, or will be, sent to the address you provided, in the Ethereum Mainnet.
 
 ### How to Check Your Ethereum Mainnet Ocean Token Balance
 
@@ -83,11 +61,40 @@ Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean To
 
 ## Pacific Network Ocean Tokens
 
-At the time of writing, the [Pacific Network](/concepts/pacific-network/) wasn't publicly-usable yet. Once it is, there will be a token bridge from the Ethereum Mainnet to the Pacific Network, allowing you to move Ocean Tokens from the Ethereum Mainnet to the Pacific Network.
+Ocean Tokens in Ocean's Mainnet, [Pacific](/concepts/pacific-network/), represent the same value as they have in the Ethereum Mainnet. The only way to get Ocean Tokens in Pacific is to transfer them from the Ethereum Mainnet.
+
+For this purpose there is a token bridge, allowing you to move Ocean Tokens from the Ethereum Mainnet to the Pacific Network:
+
+- [**Ocean Token Bridge**](https://bridge.oceanprotocol.com)
+- [Tutorial: Transfer Ocean Tokens between Networks](/tutorials/token-bridge/)
+
+## Testnet Ocean Tokens
+
+There are Ocean Tokens in several testnets, including the Nile testnet. They are just testnet Ocean Tokens (i.e. for testing purposes only) and they aren't interchangeable with Ethereum Mainnet Ocean Tokens. For more details, see the the [page about Testnets](/concepts/testnets/) and the [tutorials](/tutorials/introduction/).
+
+### Testnet Ocean Token Utility
+
+Once you have some Testnet Ocean Tokens, you can use them for all currently-implemented Ocean Protocol tasks _in that testnet_ (e.g. buying assets).
+
+### Get Testnet Ocean Tokens
+
+All Squid libraries have methods to request Ocean Tokens. They work by calling the _Dispenser_ keeper contract, a contract which is only deployed to testnets. Therefore they will only work in testnets.
+
+They're documented in the following places:
+
+- The squid-js docs for:
+  - [`OceanAccounts.requestTokens()`](/references/squid-js/#OceanAccounts-requestTokens)
+  - [`Account.requestTokens()`](/references/squid-js/#Account-requestTokens)
+- The squid-py docs for:
+  - [the `squid_py.ocean.ocean_tokens` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_tokens.html): see the `request()` method.
+  - [the `squid_py.ocean.ocean_accounts` module](https://squid-py.readthedocs.io/en/develop/api/squid_py.ocean.ocean_accounts.html): see the `request_tokens()` method.
+- [The squid-java docs](https://www.javadoc.io/doc/com.oceanprotocol/squid/): click _All Classes_ then _AccountsManager_ then scroll to the bottom of the Class _AccountsManager_ page where you'll find the `requestTokens()` method.
+
+The [Example Code page](/tutorials/example-code/) has links to example Squid code (in all of the languages), including examples of using the above methods.
 
 ## Further Reading about Ocean Tokens
 
 - [Teach Your Wallet to Track Ocean Tokens](/tutorials/wallets-and-ocean-tokens/)
-- “[Ocean Tokenomics](https://blog.oceanprotocol.com/ocean-tokenomics-d34f28c480a8)”
-- “[Ocean Tokenomics II](https://blog.oceanprotocol.com/https-blog-oceanprotocol-com-ocean-tokenomics-ii-faf05854314b)”
+- [Ocean Tokenomics](https://blog.oceanprotocol.com/ocean-tokenomics-d34f28c480a8)
+- [Ocean Tokenomics II](https://blog.oceanprotocol.com/https-blog-oceanprotocol-com-ocean-tokenomics-ii-faf05854314b)
 - [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)
