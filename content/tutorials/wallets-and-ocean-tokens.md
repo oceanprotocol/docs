@@ -7,6 +7,8 @@ If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask 
 
 ## Step 1: Determine the Ocean Token Contract Address in the Network You're Using
 
+If you know the URL of a Brizo instance attached to the network you're using, then just go to that URL in your web browser and get the value of `contracts.OceanToken`.
+
 ### Kovan or Nile Testnet
 
 | Testnet | Ocean Token Contract Address                 |
@@ -40,6 +42,12 @@ If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local S
 The Ocean Token contract address in the Ethereum Mainnet is:
 
 `0x985dd3D42De1e256d09e1c10F112bCCB8015AD41`
+
+### Pacific Network
+
+The Ocean Token contract address in the [Pacific Network](/concepts/pacific-network/) is:
+
+`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`
 
 ## Step 2: Teach Your Wallet Software about Ocean Tokens
 
