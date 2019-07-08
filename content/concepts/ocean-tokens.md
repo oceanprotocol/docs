@@ -17,7 +17,7 @@ description: The technical basics of Ocean Tokens.
 
 ## Testnet Ocean Tokens
 
-There are Ocean Tokens in several testnets, including the Kovan testnet and Nile testnet. They are just testnet Ocean Tokens (i.e. for testing purposes only) and they aren't interchangeable with Ethereum Mainnet Ocean Tokens. For more details, see the the [page about Testnets](/concepts/testnets/) and the [tutorials](/tutorials/introduction/).
+There are Ocean Tokens in several testnets, including the Nile testnet. They are just testnet Ocean Tokens (i.e. for testing purposes only) and they aren't interchangeable with Ethereum Mainnet Ocean Tokens. For more details, see the the [page about Testnets](/concepts/testnets/) and the [tutorials](/tutorials/introduction/).
 
 ### Testnet Ocean Token Utility
 

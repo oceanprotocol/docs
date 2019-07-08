@@ -27,8 +27,11 @@
         word-wrap: normal;
         word-break: normal;
     }
+    // stylelint-disable selector-no-qualifying-type, declaration-no-important
+    a > code {
+        color: $brand-pink !important;
+    }
 
-    // stylelint-disable selector-no-qualifying-type
     :not(pre) > code,
     :not(pre) > code[class*='language-'] {
         background: darken($brand-white, 5%);
@@ -37,7 +40,7 @@
         padding-left: .3rem;
         padding-right: .3rem;
     }
-    // stylelint-enable selector-no-qualifying-type
+    // stylelint-enable selector-no-qualifying-type, declaration-no-important
 
     pre {
         display: block;
@@ -65,4 +68,20 @@
 .empty {
     font-style: italic;
     margin-bottom: $spacer * 2;
+}
+
+:global(.footnotes) {
+    font-size: $font-size-small;
+
+    p {
+        margin: 0;
+    }
+}
+
+:global(.footnote-ref) {
+    font-size: $font-size-mini;
+    font-weight: $font-weight-bold;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    display: inline-block;
 }

@@ -24,7 +24,7 @@ const DocFooter = ({ post, url, externalName }) => {
 
     return (
         <footer className={styles.footer}>
-            <a href={social.gitter}>✋ Ask a question on Gitter</a>
+            <a href={social.Gitter}>✋ Ask a question on Gitter</a>
             <a href={url} className={post && !post.html ? styles.active : null}>
                 <Pencil /> Edit this page on GitHub
                 {externalName && (
