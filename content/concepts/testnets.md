@@ -3,27 +3,23 @@ title: Testnets
 description: An overview of public test networks that you can test Ocean Protocol applications against.
 ---
 
-You can test an Ocean Protocol application (such as a marketplace) against the test networks (testnets) described below. This page is a brief overview of those testnets. The [tutorials](/tutorials/) cover more details (e.g. how to connect to specific ones).
+This page is a brief overview of available testnets. The [tutorials](/tutorials/) cover more details (e.g. how to connect to specific ones).
 
 ## A Spree Testnet (for Local Development)
 
-_Formerly called Ocean Protocol Testnet v0.1, it was announced as part of the Plankton milestone._
-
-By default, [Barge](https://github.com/oceanprotocol/barge) will deploy a local "Spree Testnet" on your machine: a local testnet not connected to any external public testnet.
+By default, [Barge](https://github.com/oceanprotocol/barge) will deploy a local _Spree Testnet_[^1] on your machine: a local testnet not connected to any external public testnet.
 
 When running a Spree Testnet, you can connect to a node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
 
 Spree Testnet details can be found in the [Barge README.md file](https://github.com/oceanprotocol/barge#spree-network). You can configure the Spree nodes by editing the files in the `barge/networks/spree/` directory.
 
-> Note: Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
+> Spree testnets are named after the Spree River, the main river flowing through Berlin, Germany, where many Ocean Protocol developers are located.
 
 ## The Nile Testnet
 
-_Also known as the Nile Beta Network. Formerly called the Ocean POA Testnet._
+In the _Nile Testnet_[^2] all nodes are operated by BigchainDB GmbH.
 
-In the Nile Testnet all nodes are operated by BigchainDB GmbH.
-
-For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
+> For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
 
 ### Connect to the Nile Testnet
 
@@ -42,29 +38,37 @@ There is a Nile blockchain explorer at [https://submarine.dev-ocean.com/](https:
 
 There are several Ocean Protocol software components that are live, connected to the Nile Testnet, and operated by BigchainDB GmbH:
 
-- Secret Store at [https://secret-store.nile.dev-ocean.com](https://secret-store.nile.dev-ocean.com)
-- Aquarius at [https://aquarius.nile.dev-ocean.com/](https://aquarius.nile.dev-ocean.com/)
-- Brizo at [https://brizo.nile.dev-ocean.com/](https://brizo.nile.dev-ocean.com/)
-- Jupyter Hub at [https://mantaray.dev-ocean.com](https://mantaray.dev-ocean.com)
-- Commons Marketplace at [https://commons.nile.dev-ocean.com](https://commons.nile.dev-ocean.com)
-- Aquarius for Commons Marketplace at [https://aquarius.marketplace.dev-ocean.com](https://aquarius.marketplace.dev-ocean.com)
-- Brizo for Commons Marketplace at [https://brizo.marketplace.dev-ocean.com](https://brizo.marketplace.dev-ocean.com)
-- Faucet Server at [https://faucet.nile.dev-ocean.com](https://faucet.nile.dev-ocean.com)
+| Component              | URL                                               |
+| ---------------------- | ------------------------------------------------- |
+| Node                   | `https://nile.dev-ocean.com`                      |
+| Secret Store           | `https://secret-store.nile.dev-ocean.com`         |
+| Aquarius Test instance | `https://aquarius.nile.dev-ocean.com`             |
+| Brizo Test instance    | `https://brizo.nile.dev-ocean.com`                |
+| Aquarius for Commons   | `https://aquarius.marketplace.nile.dev-ocean.com` |
+| Brizo for Commons      | `https://brizo.marketplace.nile.dev-ocean.com`    |
+| Commons Marketplace    | `https://commons.nile.dev-ocean.com`              |
+| Jupyter Hub            | `https://mantaray.dev-ocean.com`                  |
+| Faucet Server          | `https://faucet.nile.dev-ocean.com`               |
 
 > Internal note: The private "atlantic" repo documents the internal details of the Nile Testnet in `networks/nile/README.md`.
 
 ### Using Barge with Nile
 
-If you run [Barge](https://github.com/oceanprotocol/barge) with the `--local-nile-node` option, then Barge will run a Nile node on your local machine (along with everything else Barge runs). There might be many blocks in the Nile Testnet's blockchain, so it might take a long time for your local Nile node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Nile node won't be able to do certain things.**
+If you run [Barge](https://github.com/oceanprotocol/barge) with the `--local-nile-node` option, then Barge will run a Nile node on your local machine (along with everything else Barge runs).
+
+There might be many blocks in the Nile Testnet's blockchain, so it might take a long time for your local Nile node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Nile node won't be able to do certain things.**
 
 ## A Ganache-Based Testnet (for Local Development)
 
 A local testnet similar to Spree but launched by using the `--local-ganache-node` option with Barge.
 
-Note: You shouldn't use a Ganache-Based Testnet unless you know why you're doing so. For example, a Ganache-based testnet can be used to test some smart contracts, but it can't be used with a Secret Store.
+> You shouldn't use a Ganache-Based Testnet unless you know why you're doing so. For example, a Ganache-based testnet can be used to test some smart contracts, but it can't be used with a Secret Store.
 
 ## The Duero Testnet
 
 The Duero Testnet is similar to the Nile Testnet, but it's only for internal use by the Ocean Protocol dev team. They test new things in the Duero Testnet before deploying them in the Nile Testnet (which is for use by anyone). That is, the testing order is Spree (local), Duero (private), Nile (public).
 
 If you need to know something technical about the Duero Testnet, such as the RPC URL, please contact the Ocean Protocol dev team.
+
+[^1]: Formerly called Ocean Protocol Testnet v0.1, it was announced as part of the Plankton milestone.
+[^2]: Also known as the Nile Beta Network. Formerly called the Ocean POA Testnet.

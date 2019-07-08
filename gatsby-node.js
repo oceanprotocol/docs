@@ -200,7 +200,6 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
         const typedocTemplate = path.resolve(
             './src/templates/Typedoc/index.jsx'
         )
-        console.log(name)
         const slug = `/references/${name}/`
 
         createPage({

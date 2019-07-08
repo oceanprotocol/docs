@@ -5,9 +5,11 @@ description: Terminology specific to Ocean Protocol.
 
 ## Ocean Network
 
-Any EVM-compatible network where all[^1] the Ocean Protocol smart contracts ([keeper contracts](https://github.com/oceanprotocol/keeper-contracts)) are deployed. There can be many Ocean networks. Examples include the [testnets](/concepts/testnets/) and [the Pacific Network](/concepts/pacific-network/).
+Any EVM-compatible network where all[^1] the Ocean Protocol smart contracts ([keeper contracts](https://github.com/oceanprotocol/keeper-contracts)) are deployed. There can be many Ocean networks and you can use the Ocean Protocol in several EVM-compatible networks, including:
 
-Note: Some old documentation refers to "the Ocean Network" or "the Ocean Protocol Network." You will have to guess which network was meant, based on the context.
+- the Ethereum Mainnet (also called the Main Ethereum Network)
+- the Ocean [Pacific Network](/concepts/pacific-network/)
+- various Ocean [test networks](/concepts/testnets/)
 
 ## Asset or Data Asset
 
@@ -48,4 +50,4 @@ We published an [Ocean Protocol blog post that explains SEAs in more detail](htt
 - See [the page about Ocean's Software Components](/concepts/components/).
 - See [the page about wallets (and other Ethereum terminology)](/concepts/wallets/).
 
-[^1]: The "Dispenser" smart contract should only be deployed to testnets.
+[^1]: The _Dispenser_ smart contract should only be deployed to testnets.
