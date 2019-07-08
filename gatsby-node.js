@@ -251,7 +251,9 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
 // https://github.com/swagger-api/swagger-js
 const fetchSwaggerSpec = async name => {
     try {
-        const client = await Swagger(`https://${name}.nile.dev-ocean.com/spec`)
+        const client = await Swagger(
+            `https://${name}.test.oceanprotocol.com/spec`
+        )
         return client.spec // The resolved spec
 
         // client.originalSpec // In case you need it

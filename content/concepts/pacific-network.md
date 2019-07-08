@@ -48,12 +48,16 @@ There is a Pacific blockchain explorer at [https://submarine.oceanprotocol.com/]
 
 There are several Ocean Protocol software components that are live, connected to the Pacific Network, and operated by BigchainDB GmbH:
 
-- Secret Store at [https://secret-store.oceanprotocol.com](https://secret-store.oceanprotocol.com)
-- Aquarius at [https://aquarius.commons.oceanprotocol.com](https://aquarius.commons.oceanprotocol.com)
-- Brizo at [https://brizo.commons.oceanprotocol.com](https://brizo.commons.oceanprotocol.com)
-- Commons Marketplace at [https://commons.oceanprotocol.com](https://commons.oceanprotocol.com)
-- Faucet Server at [https://faucet.oceanprotocol.com](https://faucet.oceanprotocol.com)
-- Token Bridge Frontend at [https://bridge.oceanprotocol.com/](https://bridge.oceanprotocol.com/)
+| Component              | URL                                                                                      |
+| ---------------------- | ---------------------------------------------------------------------------------------- |
+| Secret Store           | [https://secret-store.oceanprotocol.com](https://secret-store.oceanprotocol.com)         |
+| Aquarius Test instance | [https://aquarius.test.oceanprotocol.com](https://aquarius.test.oceanprotocol.com)       |
+| Brizo Test instance    | [https://brizo.test.oceanprotocol.com](https://brizo.test.oceanprotocol.com)             |
+| Aquarius for Commons   | [https://aquarius.commons.oceanprotocol.com](https://aquarius.commons.oceanprotocol.com) |
+| Brizo for Commons      | [https://brizo.commons.oceanprotocol.com](https://brizo.commons.oceanprotocol.com)       |
+| Commons Marketplace    | [https://commons.oceanprotocol.com](https://commons.oceanprotocol.com)                   |
+| Faucet Server          | [https://faucet.oceanprotocol.com](https://faucet.oceanprotocol.com)                     |
+| Token Bridge Frontend  | [https://bridge.oceanprotocol.com/](https://bridge.oceanprotocol.com/)                   |
 
 > Internal note: The private "atlantic" repo documents the internal details of the Pacific Network in `networks/pacific/deployment.md`.
 
