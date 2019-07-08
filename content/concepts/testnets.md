@@ -21,7 +21,7 @@ Spree Testnet details can be found in the [Barge README.md file](https://github.
 
 _Also known as the Nile Beta Network. Formerly called the Ocean POA Testnet._
 
-The Nile Testnet is similar to the Kovan Testnet, except all the nodes are operated by BigchainDB GmbH.
+In the Nile Testnet all nodes are operated by BigchainDB GmbH.
 
 For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
 
@@ -56,29 +56,6 @@ There are several Ocean Protocol software components that are live, connected to
 ### Using Barge with Nile
 
 If you run [Barge](https://github.com/oceanprotocol/barge) with the `--local-nile-node` option, then Barge will run a Nile node on your local machine (along with everything else Barge runs). There might be many blocks in the Nile Testnet's blockchain, so it might take a long time for your local Nile node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Nile node won't be able to do certain things.**
-
-## The Kovan Testnet
-
-The [Kovan Testnet](https://github.com/kovan-testnet/proposal) (or just "Kovan") is a public Ethereum Testnet operated by members of the Ethereum community.
-The Ocean Protocol keeper contracts are deployed to the Kovan Testnet.
-
-For developers building on Ocean Protocol, we recommend starting with a [Spree Testnet](#a-spree-testnet-for-local-development).
-
-### Kovan Blockchain Explorers
-
-There are some Kovan blockchain explorers, e.g. [Etherscan for Kovan](https://kovan.etherscan.io/) and [BlockScout for Kovan](https://blockscout.com/eth/kovan). You can use those to check the status of a transaction, the balance of an account, and more.
-
-### Ocean Components Connected to Kovan
-
-There is a [Secret Store](/concepts/components/#secret-store) connected to the Kovan Testnet for use by Ocean Protocol projects (including your projects). It's operated by BigchainDB GmbH. Its URL is:
-
-[https://secret-store-kovan.dev-ocean.com/](https://secret-store-kovan.dev-ocean.com/)
-
-Aside from the Secret Store, there is no other Ocean Protocol software component (e.g. Aquarius) that is live, connected to the Kovan Testnet, and operated by BigchainDB GmbH.
-
-### Using Barge with Kovan
-
-If you run [Barge](https://github.com/oceanprotocol/barge) with the the `--local-kovan-node` option, then Barge will run a Kovan node on your local machine (along with everything else Barge runs). There are many blocks in the Kovan Testnet's blockchain, so it can take a long time for your local Kovan node to sync, i.e. to download a local copy of all the blocks. **In the meantime, the local Kovan node won't be able to do certain things.**
 
 ## A Ganache-Based Testnet (for Local Development)
 

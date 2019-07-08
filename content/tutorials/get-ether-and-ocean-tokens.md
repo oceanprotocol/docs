@@ -87,14 +87,6 @@ Details about the bootstrapped accounts can be found in [the README.md file in t
 curl --data '{"address":"<YOUR ADDRESS>"}' -H "Content-Type: application/json" -X POST localhost:3001/faucet
 ```
 
-### Get Ether for the Kovan Testnet
-
-You can get Kovan Ether (KEth), for the Kovan Testnet, from a Kovan faucet: see [the official list of Kovan faucets](https://github.com/kovan-testnet/faucet). You have to give the faucet your Kovan address (wallet account address). You can get that from MetaMask. It's a string that looks like:
-
-```text
-0xa0A9d7f78bF293514e7cA2789A0Af689eEC99282
-```
-
 ## Get Ocean Tokens
 
 See the page about [Ocean Tokens](/concepts/ocean-tokens/).

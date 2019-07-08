@@ -38,9 +38,3 @@ If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local N
 ## Connect to a Local Spree Testnet or Ganache-Based Testnet
 
 When using [Barge](https://github.com/oceanprotocol/barge) to run a purely-local testnet (Spree or Ganache-based), you can connect to a local node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).
-
-## Connect to the Kovan Testnet
-
-Most Ethereum wallets and libraries know how to connect to the [Kovan Testnet](/concepts/testnets/#the-kovan-testnet). In MetaMask, click on the network name then click on "Kovan Test Network" in the drop-down list.
-
-If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local Kovan node, you can connect to that local Kovan node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask).

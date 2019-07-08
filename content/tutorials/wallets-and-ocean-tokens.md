@@ -21,12 +21,11 @@ The Ocean Token contract address in the [Pacific Network](/concepts/pacific-netw
 
 [`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`](https://submarine.oceanprotocol.com/address/0x012578f9381e876a9e2a9111dfd436ff91a451ae/transactions)
 
-### Kovan or Nile Testnet
+### Nile Testnet
 
-| Testnet | Ocean Token Contract Address                 |
-| ------- | -------------------------------------------- |
-| Nile    | `0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad` |
-| Kovan   | `0xB57C4D626548eB8AC0B82b086721516493E2908d` |
+The Ocean Token contract address in the [Nile Testnet](/concepts/testnets/#the-nile-testnet) is:
+
+[`0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad`](https://submarine.nile.dev-ocean.com/address/0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad)
 
 ### Spree or Ganache-Based Testnet
 
@@ -39,7 +38,7 @@ If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local S
 
 ### MetaMask Instructions
 
-1. Make sure MetaMask is connected to the correct network (Nile, Kovan or whatever). See [the tutorial about how to do that](/tutorials/connect-to-networks/).
+1. Make sure MetaMask is connected to the correct network (Pacific, Nile or whatever). See [the tutorial about how to do that](/tutorials/connect-to-networks/).
 2. For the account you want to manage, click the `☰` (hamburger menu icon).
 3. Scroll down until the `Add Token` link is visible, then click on it.
 4. Click on `Custom Token`.
