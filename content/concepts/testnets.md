@@ -23,7 +23,7 @@ In the _Nile Testnet_[^2] all nodes are operated by BigchainDB GmbH.
 
 ### Connect to the Nile Testnet
 
-See the [tutorial page about connecting to Ocean-related networks](/tutorials/connect-to-networks/#connect-to-the-nile-testnet).
+See [Tutorial: Connect to the Nile Testnet](/tutorials/connect-to-networks/#connect-to-the-nile-testnet).
 
 ### Nile Blockchain Explorers
 

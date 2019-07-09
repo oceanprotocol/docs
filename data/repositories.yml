@@ -16,6 +16,7 @@
           url: /references/brizo/
 
     - name: pleuston
+    - name: commons
 
 - group: Libraries
   items:
@@ -34,10 +35,11 @@
 
 - group: Tools
   items:
+    - name: tuna
     - name: plecos
     - name: faucet
     - name: blockscout
-    - name: tuna
+    - name: token-bridge-ui
 
 - group: OceanDB Drivers
   items:

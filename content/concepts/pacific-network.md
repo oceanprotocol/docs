@@ -18,17 +18,13 @@ Eventually, the goal is for it to be used in production by many projects.
 
 ## Ocean Tokens in Pacific
 
-[Ocean Tokens](/concepts/ocean-tokens/) can, in principle, live in any EVM-compatible network. The ones sold in the Ocean Protocol token sale were in the Ethereum Mainnet. To be able to use them in Pacific, they need to be transfered with a token bridge.
+To be able to use [Ocean Tokens](/concepts/ocean-tokens/) in Pacific, they need to be transferred from the Ethereum Mainnet with a token bridge.
 
-There is a token bridge between the Ethereum Mainnet and the Pacific Network, allowing anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network.
-
-[**Ocean Token Bridge**](https://bridge.oceanprotocol.com)
-
-However, please be aware that doing so would put those Ocean Tokens at risk. For more information, see [the page about Ocean Tokens](/concepts/ocean-tokens/).
+For more information, see [Pacific Network Ocean Tokens](/concepts/ocean-tokens/#pacific-network-ocean-tokens).
 
 ## Connect to the Pacific Network
 
-See the tutorial page about [connecting to Ocean-related networks](/tutorials/connect-to-networks/#connect-to-the-pacific-network) to connect to Pacific in your browser with MetaMask.
+To connect to Pacific in your browser with MetaMask, see [Tutorial: Connect to the Pacific Network](/tutorials/connect-to-networks/#connect-to-the-pacific-network).
 
 ## Pacific Blockchain Explorers
 

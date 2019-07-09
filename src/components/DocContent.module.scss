@@ -39,6 +39,9 @@
         display: inline-block;
         padding-left: .3rem;
         padding-right: .3rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
     }
     // stylelint-enable selector-no-qualifying-type, declaration-no-important
 
