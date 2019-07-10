@@ -5,13 +5,11 @@ description: How to use the token bridge to transfer Ocean Tokens from the Ether
 
 ## Introduction
 
-There is a token bridge between the Ethereum Mainnet and the [Pacific Network](/concepts/pacific-network/) available under [bridge.oceanprotocol.com](https://bridge.oceanprotocol.com):
+There is a token bridge between the Ethereum Mainnet and the [Pacific Network](/concepts/pacific-network/) available under [**bridge.oceanprotocol.com**](https://bridge.oceanprotocol.com) to transfer [Ocean Tokens](/concepts/ocean-tokens/) (OCEAN) between those networks.
 
 [![The Ocean token bridge user interface](images/tb02.png)](https://bridge.oceanprotocol.com)
 
 It's based on the [TokenBridge by POA Network](https://medium.com/poa-network/introducing-the-erc20-to-erc20-tokenbridge-ce266cc1a2d0) (the company), but the user interface was modified to conform to the Ocean Protocol style, and the loaded contracts are fixed to a specific security-checked version.[^1]
-
-This tutorial shows how you can use the token bridge to transfer Ocean Tokens (OCEAN) from the Ethereum Mainnet to the Pacific Network.
 
 ## Using the Token Bridge
 
@@ -29,7 +27,7 @@ To use the token bridge to transfer Ocean Tokens from the Ethereum Mainnet to th
 
 You should see something like this:
 
-[![The Ocean token bridge user interface](images/tb02.png)](https://bridge.oceanprotocol.com)
+[![From Ethereum Mainnet to Ocean Pacific](images/tb02.png)](https://bridge.oceanprotocol.com)
 
 The above screenshot shows that the account with address `0x8…` has 500 OCEAN in the Ethereum Mainnet and 0 OCEAN in the Pacific Network.
 
@@ -56,6 +54,12 @@ This will reverse the order of the token bridge networks:
 
 ![From Pacific to Ethereum Mainnet](./images/tb07.png)
 
-Then follow the same steps as outlined above.
+Then follow the same steps as outlined above to transfer Ocean Tokens between the networks.
+
+## Reporting Issues
+
+If you found something was not working right for you, feel free to reach out to us and open an issue on the [`token-bridge-ui`](https://github.com/oceanprotocol/token-bridge-ui) repository:
+
+<repo name="token-bridge-ui" />
 
 [^1]: The code for the Ocean Protocol version of the token bridge UI and all technical documentation is in the [oceanprotocol/token-bridge-ui](https://github.com/oceanprotocol/token-bridge-ui) repo on GitHub.
