@@ -3,6 +3,12 @@ title: Tools
 description: Some tools that can be useful when working with Ocean Protocol.
 ---
 
+## Tuna
+
+Tuna is a showcase and provides cross environment examples & tests for the Squid client libraries.
+
+<repo name="tuna"></repo>
+
 ## Plecos
 
 Plecos is a Python tool to check metadata (a JSON file) to see if it conforms to the [OEP-8 schema](https://github.com/oceanprotocol/OEPs/tree/master/8). It wraps the [jsonschema](https://github.com/Julian/jsonschema) validator. Aquarius uses Plecos for checking metadata and other Ocean Protocol software will probably use it in the future.
@@ -22,13 +28,18 @@ There is an [Ocean Protocol fork of BlockScout](https://github.com/oceanprotocol
 
 <repo name="blockscout"></repo>
 
+## Ocean Token Bridge
+
+The Ocean Token Bridge between the Ethereum Mainnet and the Pacific Network allows anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network.
+
+- [**Ocean Token Bridge**](https://bridge.oceanprotocol.com)
+- [Tutorial: Transfer Ocean Tokens between Networks](/tutorials/token-bridge/)
+
+<repo name="token-bridge-ui"></repo>
+
 ## Command-Line Interfaces
 
 There are a few Ocean Protocol command-line interfaces (CLIs). All of them were under development at the time of writing, so you may have issues with using them.
-
-[tuna](https://github.com/oceanprotocol/tuna) can help you use squid-py, squid-js or squid-java from the command line.
-
-<repo name="tuna"></repo>
 
 - [ocean-cli](https://github.com/bigchaindb-gmbh/ocean-cli) was built using squid-java
 - [ocean-cli-py](https://github.com/bigchaindb-gmbh/ocean-cli-py) was built using squid-py

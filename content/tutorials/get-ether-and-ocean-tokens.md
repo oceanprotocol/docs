@@ -3,9 +3,9 @@ title: Get Ether and Ocean Tokens
 description: A tutorial about how to get Ether and Ocean Tokens.
 ---
 
-If you want to interact with an Ethereum-based network that supports Ocean Protocol, then you'll eventually need Ether or [Ocean Tokens](/concepts/ocean-tokens/) _for that network_. (Every Ethereum-based network has its own Ether and maybe its own Ocean Tokens, and you can't use those in other networks.)
+If you want to interact with an Ethereum-based network that supports Ocean Protocol, then you'll eventually need Ether or [Ocean Tokens](/concepts/ocean-tokens/) _for that network_. Every Ethereum-based network has its own Ether and its own Ocean Tokens, and you can't use those in other networks.
 
-At the time of writing, there were some public testnets you could use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/).
+There are some public testnets you can use to test an Ocean Protocol application. For more information about those, see the page about [testnets](/concepts/testnets/).
 
 ## Get a Compatible Wallet
 
