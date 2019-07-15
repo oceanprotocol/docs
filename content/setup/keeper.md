@@ -18,4 +18,4 @@ Barge deploys the keeper contracts to whatever keeper nodes are deployed locally
 
 If you're interested in running a keeper node (as a voting _authority node_) in the [Pacific Network](/concepts/pacific-network/) or the [Nile Testnet](/concepts/testnets/#the-nile-testnet), then email <a href="mailto:info@oceanprotocol.com">info@oceanprotocol.com</a>.
 
-Note: The dev-ocean repository contains [a guide for running a keeper node in the Nile Testnet](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/devops/keeper-setup.md).
+> The dev-ocean repository contains a guide for [running a keeper node in the Nile Testnet](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/devops/keeper-setup.md).
