@@ -93,8 +93,18 @@ module.exports = {
                     'gatsby-remark-smartypants',
                     'gatsby-remark-embed-video',
                     'gatsby-remark-responsive-iframe',
-                    'gatsby-remark-prismjs',
                     'gatsby-remark-autolink-headers',
+                    'gatsby-remark-code-titles',
+                    {
+                        // https://github.com/andrewbranch/gatsby-remark-vscode
+                        resolve: 'gatsby-remark-vscode',
+                        options: {
+                            colorTheme: 'Quiet Light',
+                            injectStyles: false,
+                            extensions: [],
+                            languageAliases: { text: 'log' }
+                        }
+                    },
                     'gatsby-remark-copy-linked-files',
                     {
                         resolve: 'gatsby-remark-component',
