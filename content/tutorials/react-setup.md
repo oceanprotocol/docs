@@ -53,8 +53,7 @@ At this point you can already run `npm start` which starts the app in your brows
 
 Let's make it ours, open `src/App.js` and replace the whole source with:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 import React, { Component } from 'react'
 import './App.css'
 
@@ -73,13 +72,26 @@ export default App
 
 Below the `import './App.css'` line, let's import the packages we installed, set up web3 and unlock MetaMask accounts (if locked):
 
-```js
-// src/App.js
+```jsx{3-7}:title=src/App.js
+import React, { Component } from 'react'
+import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
 import Web3 from 'web3'
 
 const web3 = new Web3(window.web3.currentProvider)
 window.ethereum.enable()
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App App-header">
+        <h1>Marketplace app</h1>
+      </div>
+    )
+  }
+}
+
+export default App
 ```
 
 After those steps you should see this, and MetaMask should have asked you to allow access to your account:
@@ -87,30 +99,47 @@ After those steps you should see this, and MetaMask should have asked you to all
 ![React App 02](images/react-app-02.png)
 ![React App 03](images/react-app-03.png)
 
-> Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your `console.log`, don't worry about it. It's a MetaMask thing.
+> Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your browser console, don't worry about it. It's a MetaMask thing.
 
 ## Create Ocean Instance
 
 Now that we are successfully connected with Web3, we can set up our Ocean instance.
 
-At the beginning of your component (i.e. right after the `class App extends Component {` line), create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
+At the beginning of your component , create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
 
-```js
-// src/App.js
-//...
-async componentDidMount() {
-  this.ocean = await new Ocean.getInstance({
-    web3Provider: web3,
-    nodeUri: 'http://localhost:8545',
-    aquariusUri: 'http://localhost:5000',
-    brizoUri: 'http://localhost:8030',
-    brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
-    parityUri: 'http://localhost:8545',
-    secretStoreUri: 'http://localhost:12001'
-  })
-  console.log('Finished loading contracts.')
+```jsx{10-21}:title=src/App.js
+import React, { Component } from 'react'
+import './App.css'
+import { Ocean } from '@oceanprotocol/squid'
+import Web3 from 'web3'
+
+const web3 = new Web3(window.web3.currentProvider)
+window.ethereum.enable()
+
+class App extends Component {
+  async componentDidMount() {
+    this.ocean = await new Ocean.getInstance({
+      web3Provider: web3,
+      nodeUri: 'http://localhost:8545',
+      aquariusUri: 'http://localhost:5000',
+      brizoUri: 'http://localhost:8030',
+      brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
+      parityUri: 'http://localhost:8545',
+      secretStoreUri: 'http://localhost:12001'
+    })
+    console.log('Finished loading contracts.')
+  }
+
+  render() {
+    return (
+      <div className="App App-header">
+        <h1>Marketplace app</h1>
+      </div>
+    )
+  }
 }
-//...
+
+export default App
 ```
 
 ## Final Result
@@ -121,8 +150,7 @@ That's it, if you have no errors in your `console.log` then you have successfull
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'

@@ -1,0 +1,161 @@
+// stylelint-disable selector-no-qualifying-type, selector-no-vendor-prefix, declaration-no-important
+
+@import 'variables';
+
+code,
+kbd,
+pre,
+samp {
+    font-family: $font-family-monospace;
+    font-size: $font-size-small;
+    border-radius: $border-radius;
+    background: lighten($brand-grey-light, 35%);
+    color: $brand-grey;
+    text-shadow: none;
+
+    h1 &,
+    h2 &,
+    h3 &,
+    h4 &,
+    h5 & {
+        font-size: inherit;
+    }
+}
+
+:not(pre) > code {
+    display: inline-block;
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+
+a > code {
+    color: $brand-pink;
+}
+
+pre {
+    display: block;
+    margin: 0;
+    margin-bottom: $spacer;
+    padding: 0;
+    position: relative;
+    background: lighten($brand-grey-light, 35%) !important;
+
+    // make 'em scrollable
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 800px;
+
+    code {
+        background: none;
+        padding: $spacer / 1.5;
+        white-space: pre;
+        display: block;
+        color: $brand-grey;
+        overflow-wrap: normal;
+        word-wrap: normal;
+        word-break: normal;
+        float: left;
+        width: 100%;
+    }
+}
+
+pre[data-language]:before {
+    background: $brand-grey-lighter;
+    border-radius: 0 0 $border-radius $border-radius;
+    color: $brand-grey;
+    font-size: $font-size-mini;
+    font-family: $font-family-monospace;
+    letter-spacing: .05em;
+    line-height: 1;
+    padding: .25rem .5rem;
+    position: absolute;
+    right: $spacer / 2;
+    top: 0;
+}
+
+pre[data-language='js']:before {
+    content: 'js';
+}
+
+pre[data-language='jsx']:before {
+    content: 'jsx';
+}
+
+pre[data-language='bash'] {
+    &:before {
+        content: 'bash';
+    }
+
+    .vscode-highlight-line:only-child {
+        padding-left: .5rem;
+        display: block;
+
+        &:before {
+            content: '$';
+            opacity: .5;
+            display: inline-block;
+            margin-left: -.5rem;
+            margin-right: .5rem;
+        }
+    }
+}
+
+pre[data-language='html']:before {
+    content: 'html';
+}
+
+pre[data-language='css']:before {
+    content: 'css';
+}
+
+pre[data-language='php']:before {
+    content: 'php';
+}
+
+pre[data-language='python']:before {
+    content: 'python';
+}
+
+pre[data-language='java']:before {
+    content: 'java';
+}
+
+pre[data-language='markdown']:before {
+    content: 'markdown';
+}
+
+.gatsby-code-title {
+    background: lighten($brand-grey-light, 35%);
+    padding: $spacer / 4 $spacer / 2;
+    border-bottom: 1px solid $brand-white;
+    font-family: $font-family-monospace;
+    color: $brand-grey-light;
+    font-size: $font-size-small;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+
+.vscode-highlight-line {
+    display: inline-block;
+
+    &.vscode-highlight-line-highlighted {
+        background-color: lighten($brand-grey-light, 30%);
+        margin-left: -($spacer / 1.5);
+        margin-right: -($spacer / 1.5);
+        padding-left: $spacer / 1.85;
+        padding-right: $spacer / 1.5;
+        border-left: .25rem solid $brand-grey-light;
+        width: calc(100% + #{$spacer * 1.5});
+    }
+}
+
+.vscode-highlight {
+    --vscode-highlight-line-highlighted-border-color: rgba(
+        255,
+        255,
+        255,
+        .5
+    ); /* default: transparent */
+
+    --vscode-highlight-line-highlighted-border-width: 2px; /* default: 2px */
+}

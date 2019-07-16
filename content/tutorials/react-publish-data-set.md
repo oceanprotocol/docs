@@ -19,8 +19,7 @@ To do that, we need to define the asset based on the [OEP-08](https://github.com
 
 Let's create a new file `src/asset.js` and fill it with:
 
-```js
-// src/asset.js
+```js:title=src/asset.js
 const asset = {
   base: {
     name: '10 Monkey Species Small',
@@ -94,8 +93,7 @@ export default asset
 
 Then import this asset definition at the top of `src/App.js`:
 
-```js
-// src/App.js
+```js:title=src/App.js
 // ...
 import asset from './asset'
 // ...
@@ -105,8 +103,7 @@ import asset from './asset'
 
 Now that we have an asset to submit, we need a function to handle it. Just before `render() {` let's add this function:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 // ...
 async submitAsset() {
   const accounts = await this.ocean.accounts.list()
@@ -122,8 +119,7 @@ async submitAsset() {
 
 The last thing we need is a button to start our registration inside the render function just after `<h1>Marketplace app</h1>`:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 // ...
 <button onClick={() => this.submitAsset()}>Register asset</button>
 // ...
@@ -139,8 +135,7 @@ Have a look into `console.log` to see the various steps of the register process.
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'

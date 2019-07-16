@@ -16,8 +16,7 @@ Open `src/App.js` from your `marketplace/` folder.
 
 In the previous tutorial we added asset publishing. We can now search for published assets for consumption. Just after the `submitAsset()` function we can add a new function that will handle search:
 
-```js
-// src/App.js
+```js:title=src/App.js
 // ...
 async retrieveAssets() {
   this.search = await this.ocean.assets.search('10 Monkey Species Small')
@@ -31,8 +30,7 @@ async retrieveAssets() {
 
 Now we need a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 // ...
 <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
 // ...
@@ -44,8 +42,7 @@ Consuming means downloading one or multiple files attached to an asset. During t
 
 With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `retrieveAssets()` function:
 
-```js
-// src/App.js
+```js:title=src/App.js
 // ...
 async consumeAsset() {
   // get all accounts
@@ -75,8 +72,7 @@ async consumeAsset() {
 
 We still need a button to start consumption. In the render function, just after the `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` line, add:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 // ...
 <button onClick={() => this.consumeAsset()}>Consume asset</button>
 // ...
@@ -98,8 +94,7 @@ Have a look into `console.log` to see the various steps of the search and consum
 
 Here is the full source of `src/App.js` that you should have if you followed this tutorial:
 
-```jsx
-// src/App.js
+```jsx:title=src/App.js
 import React, { Component } from 'react'
 import './App.css'
 import { Ocean } from '@oceanprotocol/squid'
