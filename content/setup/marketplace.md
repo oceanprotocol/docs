@@ -50,8 +50,6 @@ Of course, you could always write your own Squid library in the language of your
 
 ## Run Everything You Need to Run in Production
 
-**At the time of writing, there was no production-ready Ocean Protocol network, but once one _does_ exist, the following must be done to run your marketplace/publisher app in production.**
-
 When developing your marketplace/publisher app, you will probably use Barge to run all the Ocean Protocol components on your local machine. When it comes time to go to production, you will have to run some of those components in production:
 
 - Your marketplace/publisher app
