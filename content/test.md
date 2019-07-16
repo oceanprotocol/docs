@@ -7,11 +7,15 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 
 ## Headers
 
-```text
+```markdown
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
 ```
 
@@ -31,10 +35,10 @@ For more complete info, see [John Gruber's original spec](http://daringfireball.
 
 ## Emphasis
 
-```text
-Emphasis, aka italics, with *asterisks* or _underscores_.
+```markdown
+Emphasis, aka italics, with _asterisks_ or _underscores_.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Strong emphasis, aka bold, with **asterisks** or **underscores**.
 
 Combined emphasis with **asterisks and _underscores_**.
 
@@ -51,7 +55,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists
 
-```text
+```markdown
 - First unordered list item
 - Second unordered list item
 - Another item
@@ -60,7 +64,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Actual numbers don't matter, just that it's a number
   - Unordered sub-list
 - And another item.
-   Some text that should be aligned with the above item.
+  Some text that should be aligned with the above item.
 ```
 
 - First unordered list item
@@ -73,22 +77,26 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - And another item.
   Some text that should be aligned with the above item.
 
-```text
+```markdown
 1. First ordered list item
 2. Another item
-  - Unordered sub-list.
+
+- Unordered sub-list.
+
 1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
+1. Ordered sub-list
+1. And another item.
    Some text that should be aligned with the above item.
 ```
 
 1. First ordered list item
 2. Another item
+
    - Unordered sub-list.
+
 3. Actual numbers don't matter, just that it's a number
-   1. Ordered sub-list
-4. And another item.
+4. Ordered sub-list
+5. And another item.
    Some text that should be aligned with the above item.
 
 ## Links
@@ -147,7 +155,7 @@ Here's our jellyfish, with the title being output as caption:
 
 Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and _Markdown Here_ -- support syntax highlighting.
 
-```text
+```markdown
 Inline `code` has `back-ticks around` it.
 ```
 
