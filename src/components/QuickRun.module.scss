@@ -1,11 +1,11 @@
 @import 'variables';
 
 .quickrun {
-    padding-top: $spacer;
+    padding-top: $spacer * 4;
     padding-bottom: $spacer * 2.5;
     text-align: center;
 
-    pre {
+    > div {
         text-align: left;
         margin-top: $spacer / $line-height;
     }
@@ -29,19 +29,19 @@
         max-width: none;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
-        > pre,
+        > div,
         > article {
             flex: 0 0 48%;
-            margin: 0 !important; // stylelint-disable-line
+            margin: 0;
         }
 
         pre {
-            display: flex;
-            align-items: center;
+            margin: 0;
 
-            > code {
-                padding: $spacer / $line-height;
+            code {
+                padding: $spacer / 1.1;
             }
         }
     }
@@ -50,6 +50,9 @@
 .tldr {
     display: block;
     margin-bottom: $spacer / 2;
-    color: $brand-grey-light;
     font-size: $font-size-h4;
+
+    + strong {
+        color: $brand-grey-light;
+    }
 }
