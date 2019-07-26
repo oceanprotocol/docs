@@ -27,6 +27,25 @@
         word-wrap: normal;
         word-break: normal;
     }
+
+    // use blockquote for info blocks
+    blockquote {
+        padding: $spacer / 2;
+        background: lighten($brand-grey-light, 36%);
+        border-left: .25rem solid $brand-grey-light;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        &,
+        p {
+            color: $brand-blue;
+            font-style: italic;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .empty {

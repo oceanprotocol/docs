@@ -38,27 +38,25 @@ At the time of writing, you could use Ethereum Mainnet Ocean Tokens to do variou
 
 There are many ways to check your Ethereum Mainnet Ocean Token balance. Starting with the easiest, here are some ways:
 
----
+#### Ocean Token Tool
 
-- Enter your account address into the form in the [Ocean Token Tool](https://wallet.oceanprotocol.com/tokens).
+Enter your account address into the form in the [Ocean Token Tool](https://wallet.oceanprotocol.com/tokens).
 
 [![Ocean Token Tool](images/token-tool.png)](https://wallet.oceanprotocol.com/tokens)
 
----
+#### Blowfish
 
-- Go to [Etherscan](https://etherscan.io/), enter your account address into the search field, click **Search**, click on **Erc20 Token Txns**, look for an _OceanToken_ transaction in the _Token_ colum, and click on **OceanToken** there.
-
----
-
-- Download and use [Blowfish](https://github.com/kremalicious/blowfish), a desktop app that tells you your Ocean Token balance (and other things).
+Download and use [Blowfish](https://github.com/kremalicious/blowfish), a desktop app that tells you your Ocean Token balance (and other things).
 
 [![Blowfish](images/blowfish.png)](https://github.com/kremalicious/blowfish)
 
----
+#### MetaMask
 
-- Use MetaMask or other ERC-20-compatible wallet software. See the page about [using wallet software to manage Ocean Tokens](/tutorials/wallets-and-ocean-tokens/). You can also use wallet software to send Ocean Tokens to some other account.
+Use MetaMask or other ERC-20-compatible wallet software. See the page about [using wallet software to manage Ocean Tokens](/tutorials/wallets-and-ocean-tokens/). You can also use wallet software to send Ocean Tokens to some other account.
 
----
+#### Etherscan
+
+Go to [Etherscan](https://etherscan.io/), enter your account address into the search field, click **Search**, click on **Erc20 Token Txns**, look for an _OceanToken_ transaction in the _Token_ colum, and click on **OceanToken** there.
 
 ### Buy or Sell Ethereum Mainnet Ocean Tokens
 
@@ -77,6 +75,8 @@ Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean To
 ## Pacific Network Ocean Tokens
 
 Ocean Tokens in Ocean's Mainnet, [Pacific](/concepts/pacific-network/), represent the same value as in the Ethereum Mainnet. The only way to get Ocean Tokens in Pacific is to transfer them from the Ethereum Mainnet.
+
+### Ocean Token Bridge
 
 For this purpose there is a token bridge between the Ethereum Mainnet and the Pacific Network, allowing anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network, and vice versa.
 
@@ -114,6 +114,9 @@ The [Example Code page](/tutorials/example-code/) has links to example Squid cod
 ## Further Reading about Ocean Tokens
 
 - [Tutorial: Use Your Wallet to Manage Ocean Tokens](/tutorials/wallets-and-ocean-tokens/)
-- [Ocean Tokenomics](https://blog.oceanprotocol.com/ocean-tokenomics-d34f28c480a8)
-- [Ocean Tokenomics II](https://blog.oceanprotocol.com/https-blog-oceanprotocol-com-ocean-tokenomics-ii-faf05854314b)
+- [Blog: Ocean Tokenomics](https://blog.oceanprotocol.com/ocean-tokenomics-d34f28c480a8)
+- [Blog: Ocean Tokenomics II](https://blog.oceanprotocol.com/https-blog-oceanprotocol-com-ocean-tokenomics-ii-faf05854314b)
 - [Ocean Protocol Technical Whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)
+- [Blog: What Happened with the IEO?](https://blog.oceanprotocol.com/what-happened-with-the-ieo-54cc5c6c3db9)
+- [Blog: Ocean Protocol — Token Sale](https://blog.oceanprotocol.com/ocean-protocol-token-sale-96d03f968e22)
+- [Blog: Ocean Protocol Pre-Launch is Target Reached](https://blog.oceanprotocol.com/ocean-protocol-pre-launch-is-target-reached-d10e53272a2e)

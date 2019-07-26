@@ -79,7 +79,7 @@ That command uses [Ethereum's JSON RPC API](https://wiki.parity.io/JSONRPC.html)
 
 Details about the bootstrapped accounts can be found in [the README.md file in the Barge repository](https://github.com/oceanprotocol/barge/#spree-network). They're the ones of type "mnemonic."
 
-**WARNING!** Never use any of those accounts in any mainnet. They are for testing purposes only.
+> **WARNING!** Never use any of those accounts in any mainnet. They are for testing purposes only.
 
 **Option 3:** Another option is to run [the Ocean faucet server](https://github.com/oceanprotocol/faucet) on your machine, with default configuration settings. The default settings enable it to dispense Spree Ether. To ask the faucet to send some Spree Ether to `<YOUR ADDRESS>`, use the command (a long command that wraps around):
 

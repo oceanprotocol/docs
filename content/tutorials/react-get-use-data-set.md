@@ -28,7 +28,7 @@ async retrieveAssets() {
 // ...
 ```
 
-Now we need a button to start our search inside the render function just after `<button onClick={() => this.submitAsset()}>Register asset</button>`:
+Now we need a button to start our search inside the render function just after the _Register asset_ button:
 
 ```jsx:title=src/App.js
 // ...
@@ -70,7 +70,7 @@ async consumeAsset() {
 // ...
 ```
 
-We still need a button to start consumption. In the render function, just after the `<button onClick={()=>this.retrieveAssets()}>Retrieve assets</button>` line, add:
+We still need a button to start consumption. In the render function, just after the _Retrieve assets_ button, add:
 
 ```jsx:title=src/App.js
 // ...
@@ -82,13 +82,13 @@ With all these buttons in place, you should see this:
 
 ![React App 05](images/react-app-05.png)
 
-Tip: Before clicking the `Retrieve assets` button, it might help to reload the page.
+> Tip: Before clicking the `Retrieve assets` button, it might help to reload the page.
 
-Go ahead and click the `Retrieve assets` button, and then the `Consume asset` button. Approve all the MetaMask dialog boxes.
+Go ahead and click the _Retrieve assets_ button, and then the _Consume asset_ button. Approve all the MetaMask dialog boxes.
 
 Have a look into `console.log` to see the various steps of the search and consume process. If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
 
-> Note: Consuming an asset will throw an error `Requested did is not found in the keeper network`. We are currently [investigating why that is happening](https://github.com/oceanprotocol/barge/issues/144) in either squid-js or Brizo and will remove this note once we verified a fix is in place in one of those components.
+> Consuming an asset will throw an error `Requested did is not found in the keeper network`. We are currently [investigating why that is happening](https://github.com/oceanprotocol/barge/issues/144) in either squid-js or Brizo and will remove this note once we verified a fix is in place in one of those components.
 
 ## Final Result
 
