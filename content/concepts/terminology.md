@@ -19,13 +19,13 @@ Anything that can be registered with and made available via an Ocean Network. Ex
 
 Someone who has assets that they want to sell (or give away freely). An example is an almond distributor with 30 years of data about almond sales.
 
-Note: Initially, most data owners or data service providers will also be the publishers of their own assets.
+> Initially, most data owners or data service providers will also be the publishers of their own assets.
 
 ## Publisher
 
 A service which mediates access to assets on behalf of data owners or data service providers.
 
-Note: Initially, most publishers will also be the owners of the assets they publish.
+> Initially, most publishers will also be the owners of the assets they publish.
 
 ## Consumer
 

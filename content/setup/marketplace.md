@@ -20,7 +20,7 @@ At the time of writing, the following kinds of [assets](/concepts/terminology/#a
 - data sets stored in Amazon S3 storage (i.e. with "s3://" in their URL). See [the tutorial about setting up Amazon S3 storage to work with Ocean Protocol](/tutorials/amazon-s3-for-brizo/).
 - data sets stored in on-premise storage. See [the tutorial about setting up on-premise storage to work with Ocean Protocol](/tutorials/on-premise-for-brizo/).
 
-Note: You can use _all_ of the above. You aren't restricted to using only one storage provider.
+> You can use _all_ of the above. You aren't restricted to using only one storage provider.
 
 Support for other kinds of assets (e.g. computing in Azure) is coming.
 
@@ -29,7 +29,7 @@ Support for other kinds of assets (e.g. computing in Azure) is coming.
 At the time of writing, we recommend the following steps to develop a marketplace/publisher app:
 
 1. Do the [React App Tutorial](/tutorials/react-setup/).
-1. Grow your app from there.
+2. Grow your app from there.
 
 For more examples and inspiration, check out [the source code for Pleuston](https://github.com/oceanprotocol/pleuston) and the [the source code for the Commons Marketplace](https://github.com/oceanprotocol/commons). Both have an Apache v2 open source license. Both use React and squid-js. Both are "serverless" apps: they run entirely in the browser and have no server-side component.
 
@@ -44,7 +44,7 @@ A marketplace/publisher app could have both a back-end component and a front-end
 <repo name="squid-py"></repo>
 <repo name="squid-java"></repo>
 
-Note: There are examples of how to use squid-py in the [Tutorials](/tutorials/introduction/). squid-py is to Ocean like boto3 is to AWS.
+> There are examples of how to use squid-py in the [Tutorials](/tutorials/introduction/). squid-py is to Ocean like boto3 is to AWS.
 
 Of course, you could always write your own Squid library in the language of your choice.
 

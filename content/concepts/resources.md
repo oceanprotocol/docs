@@ -64,6 +64,8 @@ Already familiar with Ocean and want to jump into the tech? These blog posts exp
 - [Project Manta Ray — Data Science powered by Ocean Protocol](https://blog.oceanprotocol.com/project-manta-ray-data-science-powered-by-ocean-protocol-535c54089b0f)
 - [Ocean ♥ Docker](https://blog.oceanprotocol.com/ocean-docker-d43d992d8ecf)
 - [How to Swim in the Ocean: Introducing Squid Libraries](https://blog.oceanprotocol.com/ocean-protocol-squid-library-java-c92a6035ce39)
+- [The Commons Marketplace](https://blog.oceanprotocol.com/the-commons-data-marketplace-c57a44288314)
+- [The Commons Marketplace in Pacific Network](https://blog.oceanprotocol.com/the-commons-marketplace-in-pacific-network-4bcf2f595721)
 
 ## Videos
 

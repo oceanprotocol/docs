@@ -34,8 +34,7 @@ a > code {
 
 pre {
     display: block;
-    margin: 0;
-    margin-bottom: $spacer;
+    margin: $spacer / 2 0;
     padding: 0;
     position: relative;
     background: lighten($brand-grey-light, 35%) !important;
@@ -128,6 +127,7 @@ pre[data-language='markdown']:before {
 .gatsby-code-title {
     background: lighten($brand-grey-light, 35%);
     padding: $spacer / 4 $spacer / 2;
+    margin-bottom: -($spacer / 2);
     border-bottom: 1px solid $brand-white;
     font-family: $font-family-monospace;
     color: $brand-grey-light;
@@ -148,15 +148,4 @@ pre[data-language='markdown']:before {
         border-left: .25rem solid $brand-grey-light;
         width: calc(100% + #{$spacer * 1.5});
     }
-}
-
-.vscode-highlight {
-    --vscode-highlight-line-highlighted-border-color: rgba(
-        255,
-        255,
-        255,
-        .5
-    ); /* default: transparent */
-
-    --vscode-highlight-line-highlighted-border-width: 2px; /* default: 2px */
 }
