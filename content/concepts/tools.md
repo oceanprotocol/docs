@@ -3,6 +3,12 @@ title: Tools
 description: Some tools that can be useful when working with Ocean Protocol.
 ---
 
+## Barge
+
+Barge is a shell script allowing you to run an Ocean network by orchestrating all [core components](/components) locally with Docker and Docker Compose.
+
+<repo name="barge"></repo>
+
 ## Tuna
 
 Tuna is a showcase and provides cross environment examples & tests for the Squid client libraries.
@@ -17,7 +23,7 @@ Plecos is a Python tool to check metadata (a JSON file) to see if it conforms to
 
 ## Faucet Server
 
-The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a microservice that allows users to request Ether for a particular Ethereum network (e.g. the Nile Testnet).
+The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a microservice that allows users to request Ether for a particular Ethereum network (e.g. the Nile Testnet). It is [deployed in multiple networks](http://localhost:8000/tutorials/get-ether-and-ocean-tokens/#get-ether), and included when running [Barge](#barge).
 
 <repo name="faucet"></repo>
 

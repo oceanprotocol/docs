@@ -35,6 +35,7 @@
 
 - group: Tools
   items:
+    - name: barge
     - name: tuna
     - name: plecos
     - name: faucet
