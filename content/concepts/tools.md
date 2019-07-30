@@ -23,7 +23,7 @@ Plecos is a Python tool to check metadata (a JSON file) to see if it conforms to
 
 ## Faucet Server
 
-The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a microservice that allows users to request Ether for a particular Ethereum network (e.g. the Nile Testnet). It is [deployed in multiple networks](http://localhost:8000/tutorials/get-ether-and-ocean-tokens/#get-ether), and included when running [Barge](#barge).
+The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a microservice that allows users to request Ether for a particular Ethereum network (e.g. the Nile Testnet). It is [deployed in multiple networks](/tutorials/get-ether-and-ocean-tokens/#get-ether), and started by default when using [Barge](#barge).
 
 <repo name="faucet"></repo>
 
