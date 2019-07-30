@@ -3,6 +3,12 @@ title: Tools
 description: Some tools that can be useful when working with Ocean Protocol.
 ---
 
+## Barge
+
+Barge is a shell script allowing you to run an Ocean network by orchestrating all [core components](/components) locally with Docker and Docker Compose. Extensively used by Ocean developers to develop and test Ocean core components locally, and the [quickest way](/setup/quickstart/) to get a full Ocean network up and running.
+
+<repo name="barge"></repo>
+
 ## Tuna
 
 Tuna is a showcase and provides cross environment examples & tests for the Squid client libraries.
@@ -17,14 +23,18 @@ Plecos is a Python tool to check metadata (a JSON file) to see if it conforms to
 
 ## Faucet Server
 
-The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a microservice that allows users to request Ether for a particular Ethereum network (e.g. the Nile Testnet).
+The [Ocean Protocol Faucet Server](https://github.com/oceanprotocol/faucet) is a microservice that allows users to request Ether for a particular Ethereum network (e.g. the Nile Testnet). It is [deployed in multiple networks](/tutorials/get-ether-and-ocean-tokens/#get-ether), and started by default when using [Barge](#barge).
 
 <repo name="faucet"></repo>
 
 ## Submarine Blockchain Explorer
 
-Submarine is based on [BlockScout](https://github.com/poanetwork/blockscout) (by [POA](https://poa.network/)), an open source blockchain explorer for EVM-based blockchain networks.
-There is an [Ocean Protocol fork of BlockScout](https://github.com/oceanprotocol/blockscout). An instance is deployed in the Nile Testnet at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/).
+Submarine is based on [BlockScout](https://github.com/poanetwork/blockscout) (by [POA](https://poa.network/)), an open source blockchain explorer for EVM-based blockchain networks. We use our own [fork of BlockScout](https://github.com/oceanprotocol/blockscout).
+
+Instances are deployed for:
+
+- **Pacific Network: [submarine.oceanprotocol.com](https://submarine.oceanprotocol.com/)**
+- **Nile Testnet: [submarine.dev-ocean.com](https://submarine.dev-ocean.com/)**
 
 <repo name="blockscout"></repo>
 
