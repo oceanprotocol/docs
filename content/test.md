@@ -394,12 +394,12 @@ Resulting in:
 You can embed any file contents like so, note that the language needs to be defined manually to get proper syntax highlighting:
 
 ```markdown
-GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/Web3Provider.ts js GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/master/src/keeper/Web3Provider.ts js GITHUB-EMBED
 ```
 
 Resulting in:
 
-GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/develop/src/keeper/Web3Provider.ts js GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/master/src/keeper/Web3Provider.ts js GITHUB-EMBED
 
 ## Swagger spec references
 

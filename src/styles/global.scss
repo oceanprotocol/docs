@@ -76,7 +76,6 @@ ol {
             content: counter(ol-counter) '.';
             counter-increment: ol-counter;
             font-family: $font-family-button;
-            top: -1px;
         }
     }
 
@@ -104,14 +103,14 @@ ol {
         }
 
         + li {
-            margin-top: $spacer / 8;
+            margin-top: $spacer / 3;
         }
 
         ul,
         ol,
         p {
             margin-bottom: 0;
-            margin-top: $spacer / 8;
+            margin-top: $spacer / 3;
         }
     }
 }

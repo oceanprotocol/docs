@@ -124,6 +124,10 @@ pre[data-language='markdown']:before {
     content: 'markdown';
 }
 
+pre[data-language='toml']:before {
+    content: 'toml';
+}
+
 .gatsby-code-title {
     background: lighten($brand-grey-light, 35%);
     padding: $spacer / 4 $spacer / 2;
