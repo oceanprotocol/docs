@@ -101,8 +101,15 @@ module.exports = {
                         options: {
                             colorTheme: 'Quiet Light',
                             injectStyles: false,
-                            extensions: [],
-                            languageAliases: { text: 'log' }
+                            extensions: [
+                                {
+                                    identifier: 'bungcip.better-toml',
+                                    version: '0.3.2'
+                                }
+                            ],
+                            languageAliases: {
+                                text: 'log'
+                            }
                         }
                     },
                     'gatsby-remark-copy-linked-files',
