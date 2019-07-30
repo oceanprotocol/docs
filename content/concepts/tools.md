@@ -5,7 +5,7 @@ description: Some tools that can be useful when working with Ocean Protocol.
 
 ## Barge
 
-Barge is a shell script allowing you to run an Ocean network by orchestrating all [core components](/components) locally with Docker and Docker Compose.
+Barge is a shell script allowing you to run an Ocean network by orchestrating all [core components](/components) locally with Docker and Docker Compose. Extensively used by Ocean developers to develop and test Ocean core components locally, and the [quickest way](/setup/quickstart/) to get a full Ocean network up and running.
 
 <repo name="barge"></repo>
 
