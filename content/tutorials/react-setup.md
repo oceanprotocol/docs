@@ -3,6 +3,16 @@ title: React App Setup
 description: This tutorial shows how you can build a basic [React](https://reactjs.org/) app with [Create React App](https://github.com/facebook/create-react-app) that uses the squid-js JavaScript package to publish a data set, get a data set, and more.
 ---
 
+## Git repository and CodeSandbox
+
+All code snippets in this tutorial are sourced from the [oceanprotocol/react-tutorial](https://github.com/oceanprotocol/react-tutorial) GitHub repository:
+
+<repo name="react-tutorial"></repo>
+
+The final source of this tutorial is also available as a CodeSandbox:
+
+[![Edit react-tutorial](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/oceanprotocol/react-tutorial/tree/master/?fontsize=14)
+
 ## Requirements
 
 - `Node.js` >= 10 is installed. You can check using `node -v`

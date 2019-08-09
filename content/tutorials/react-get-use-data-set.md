@@ -47,3 +47,13 @@ Have a look into `console.log` to see the various steps of the search and consum
 Here is the full source of `src/index.js` that you should have if you followed this tutorial:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js GITHUB-EMBED
+
+## Git repository and CodeSandbox
+
+All code snippets in this tutorial are sourced from the [oceanprotocol/react-tutorial](https://github.com/oceanprotocol/react-tutorial) GitHub repository:
+
+<repo name="react-tutorial"></repo>
+
+The final source of this tutorial is also available as a CodeSandbox:
+
+[![Edit react-tutorial](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/oceanprotocol/react-tutorial/tree/master/?fontsize=14)
