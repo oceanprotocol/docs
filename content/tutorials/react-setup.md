@@ -90,7 +90,9 @@ At the beginning of your component, create a new Ocean instance with all require
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 15-16,18-27,34-38 GITHUB-EMBED
 
-This will initiate a connection to all Ocean components in Nile, load the contracts, and finally store the Ocean object in the local component state for reuse. We also set the `verbose` option of squid-js so we better see what's going on.
+This will initiate a connection to all Ocean components in Nile, load the contracts, and finally store the Ocean object in the local component state for reuse.
+
+We also set the `verbose` option of squid-js so we better see what's going on.
 
 ## Final Result
 
@@ -106,9 +108,9 @@ Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).
 
 ## Bonus: Connect against local Spree network
 
-`Spree`, a local Ocean test network, can be used locally:
+[_Spree_](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development), a local Ocean test network, can be used instead of remotely connecting to Nile. For this you first have to get up the Spree network by using [oceanprotocol/barge](https://github.com/oceanprotocol/barge).
 
-Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository and use the startup script in Barge to run a [local Spree Testnet](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development):
+Clone the barge repository and use its startup script:
 
 ```bash
 git clone https://github.com/oceanprotocol/barge.git
@@ -119,14 +121,34 @@ cd barge/
 
 Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
 
-At the end of the contract compiling and deploying you need to copy the resulting Spree contract artifacts from the Docker container to your local `@oceanprotocol/keeper-contracts` dependency folder. The keeper-contracts Docker container will output all artifacts in a hidden folder in your home folder so you can copy from there:
+At the end of the contract compiling and deploying you need to copy the resulting _Spree_ contract artifacts from the Docker container to your local `@oceanprotocol/keeper-contracts` dependency folder. The _keeper-contracts_ Docker container will output all artifacts in a hidden folder in your home folder so you can copy from there:
 
 ```bash
 cp ~/.ocean/keeper-contracts/artifacts/* ./node_modules/@oceanprotocol/keeper-contracts/artifacts/
 ```
 
-You will also need some [some `Spree` Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
+You will also need some [_Spree_ Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
 
 ```bash
 curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST http://localhost:3001/faucet
+```
+
+Finally, move back to your marketplace React app and modify the Ocean instance config in `src/index.js` to use the Spree endpoints:
+
+```js
+const ocean = await new Ocean.getInstance({
+  web3Provider: web3,
+  nodeUri: 'http://localhost:8545',
+  aquariusUri: 'http://aquarius:5000',
+  brizoUri: 'http://localhost:8030',
+  brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
+  secretStoreUri: 'http://localhost:12001',
+  verbose: true
+})
+```
+
+Then start up the app as usual:
+
+```bash
+npm start
 ```
