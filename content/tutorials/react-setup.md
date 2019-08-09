@@ -104,7 +104,7 @@ Here is the full source of `src/index.js` that you should have if you followed t
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 1-4,6-16,18-27,34-38,96-109,119-124 GITHUB-EMBED
 
-Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).
+**Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).**
 
 ## Bonus: Connect against local Spree network
 
