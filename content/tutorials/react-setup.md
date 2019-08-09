@@ -70,7 +70,7 @@ Go to [localhost:3000](http://localhost:3000) to inspect your newly created app:
 
 ![Initial React App](images/react-app-01.png)
 
-## Web3
+## Setup Web3
 
 We already are importing web3.js but we still need to enable account access for the browsers supporting it, and make sure nothing breaks in browsers which are not Web3-capable.
 
@@ -120,6 +120,8 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a94
 
 [_Spree_](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development), a local Ocean test network, can be used instead of remotely connecting to Nile. For this you first have to get up the Spree network by using [oceanprotocol/barge](https://github.com/oceanprotocol/barge).
 
+### Run Spree with Barge
+
 Clone the barge repository and use its startup script:
 
 ```bash
@@ -131,17 +133,23 @@ cd barge/
 
 Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
 
+### Copy Contract Artifacts
+
 At the end of the contract compiling and deploying you need to copy the resulting _Spree_ contract artifacts from the Docker container to your local `@oceanprotocol/keeper-contracts` dependency folder. The _keeper-contracts_ Docker container will output all artifacts in a hidden folder in your home folder so you can copy from there:
 
 ```bash
 cp ~/.ocean/keeper-contracts/artifacts/* ./node_modules/@oceanprotocol/keeper-contracts/artifacts/
 ```
 
+### Get Spree Ether
+
 You will also need some [_Spree_ Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
 
 ```bash
 curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST http://localhost:3001/faucet
 ```
+
+### Adjust App Config
 
 Finally, move back to your marketplace React app and modify the Ocean instance config in `src/index.js` to use the Spree endpoints:
 
@@ -156,6 +164,17 @@ const ocean = await new Ocean.getInstance({
   verbose: true
 })
 ```
+
+> If you are on macOS, you need to additionally tweak your `/etc/hosts` file so Brizo can connect to Aquarius within Docker. This is only required on macOS and is a [known limitation of Docker for Mac](https://docs.docker.com/docker-for-mac/networking/#known-limitations-use-cases-and-workarounds):
+>
+> ```bash
+> sudo vi /etc/hosts
+>
+> # add this line, and save
+> 127.0.0.1    aquarius
+> ```
+>
+> And then use `aquariusUri: 'http://aquarius:5000'` in your Ocean instance config.
 
 Then start up the app as usual:
 
