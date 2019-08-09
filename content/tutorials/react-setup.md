@@ -32,7 +32,7 @@ marketplace/
 
 First, create a new project folder for your new app, e.g. `marketplace`. Within that, add a new file `package.json` with the following content:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/package.json json GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/package.json json GITHUB-EMBED
 
 Notice the `@oceanprotocol/squid` dependency, which is the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/squid-js). Save that file, and in your terminal install the dependencies we have just defined in `package.json`:
 
@@ -42,13 +42,13 @@ npm install
 
 Then create the HTML file used to render the React app into. For that, create a folder `public/` and in it a file `index.html` with the following content:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/public/index.html html GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/public/index.html html GITHUB-EMBED
 
 ## Add Basic Markup
 
 Create a new folder `src/` and within that a `index.js` file with the following content as our base, where we already import squid-js and web3.js:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 1-4,6,14,91-101,113-118 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 1-4,6,14,97-108,119-124 GITHUB-EMBED
 
 At this point you can start up the app and see the result in your browser:
 
@@ -58,7 +58,7 @@ npm start
 
 Go to [localhost:3000](http://localhost:3000) to inspect your newly created app:
 
-[screenshot app]
+![Initial React App](images/react-app-01.png)
 
 ## Web3
 
@@ -66,21 +66,19 @@ We already are importing web3.js but we still need to enable account access for 
 
 To do that we add a simple check at top of `src/index.js` and then enable account access with:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 7-12 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 7-12 GITHUB-EMBED
 
 And let's also output some warning for non-Web3 browsers within our `render()` function:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 103 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 109 GITHUB-EMBED
 
 This should give you the following markup:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 1-4,6-13,14,91-104,113-118 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 1-4,6-14,97-109,119-124 GITHUB-EMBED
 
-After those steps you should see this, and MetaMask should have asked you to allow access to your account:
+After those steps go to your browser. You should see MetaMask asking you to allow access to your account:
 
-[screenshot app]
-
-[screenshot MetaMask]
+![MetaMask confirmation](images/react-app-02.png)
 
 > Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your browser console, don't worry about it. It's a MetaMask thing and won't affect functionality.
 
@@ -90,7 +88,7 @@ Now that we are successfully connected with Web3, we can set up our Ocean instan
 
 At the beginning of your component, create a new Ocean instance with all required endpoint configurations within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 15-16,18-32 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 15-16,18-27,34-38 GITHUB-EMBED
 
 This will initiate a connection to all Ocean components in Nile, load the contracts, and finally store the Ocean object in the local component state for reuse. We also set the `verbose` option of squid-js so we better see what's going on.
 
@@ -98,11 +96,11 @@ This will initiate a connection to all Ocean components in Nile, load the contra
 
 That's it, if you have no errors in your `console.log` then you have successfully initialized an Ocean instance in your brand new React app and you are ready for the [next part of this tutorial](/tutorials/react-publish-data-set/).
 
-[screenshot app]
+![Initial React App with Ocean initiated](images/react-app-03.png)
 
 Here is the full source of `src/index.js` that you should have if you followed this tutorial:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 1-4,6-16,18-33,91-104,113-118 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 1-4,6-16,18-27,34-38,96-109,119-124 GITHUB-EMBED
 
 Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).
 
