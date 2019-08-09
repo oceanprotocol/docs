@@ -23,17 +23,17 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a94
 
 Then import this asset definition at the top of `src/index.js`:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 5 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 5 GITHUB-EMBED
 
 ## Handle Asset Publishing
 
 Now that we have an asset to submit, we need a function to handle it. Just before `render() {` let's add this `registerAsset` function:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 40-52 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 40-52 GITHUB-EMBED
 
 The last thing we need is a button to start our registration inside the `render()` function:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 111-113 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 111-113 GITHUB-EMBED
 
 Note how we disable the button when Web3 is not available to reduce user confusion. Within the Ocean Protocol flow of registering, searching, and consuming, only searching is possible without Web3.
 
@@ -51,6 +51,6 @@ Have a look into `console.log` to see the various steps of the register process.
 
 Here is the full source of `src/index.js` that you should have if you followed this tutorial:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js js 1-5,6-16,18-27,34-38,96-113,119-124 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 1-5,6-16,18-27,34-52,96-113,119-124 GITHUB-EMBED
 
 **Move on to [Get & Use a Data Set](/tutorials/react-get-use-data-set/).**
