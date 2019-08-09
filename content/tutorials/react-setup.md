@@ -8,181 +8,116 @@ description: This tutorial shows how you can build a basic [React](https://react
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
 - [Docker](https://www.docker.com/products/docker-desktop) & [Docker Compose](https://docs.docker.com/compose/install/)
-- A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed
-- `Spree`, a local Ocean test network
-
-  - Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository, then in that directory:
-  - (Optional but recommended) Clean out all your old Docker stuff using `docker system prune --all --volumes`
-  - Use the startup script in Barge to run a [local Spree Testnet](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development):
-
-    ```bash
-    export KEEPER_VERSION=v0.10.3 && \
-    export AQUARIUS_VERSION=v0.3.5 && \
-    export BRIZO_VERSION=v0.3.12 && \
-    ./start_ocean.sh --no-pleuston
-    ```
-
-  - Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
-
-- [Some `Spree` Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
-
-  ```bash
-  curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545
-  ```
+- A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed, [connected to Nile network](http://localhost:8000/tutorials/connect-to-networks/#connect-to-the-nile-testnet)
 
 ## New Create React App
 
-First, kickstart your new React app by creating a boilerplate with Create React App:
+We are going to use Create React App to bootstrap our React app. You could use `npx create-react-app marketplace` but it creates more files than needed for the scope of this tutorial.
+
+So let's go minimal and build up our app from scratch with this structure:
+
+```text
+marketplace/
+├── package.json
+├── public/
+├──── index.html
+├── src/
+├──── index.js
+```
+
+First, create a new project folder for your new app, e.g. `marketplace`. Within that, add a new file `package.json` with the following content:
+
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/package.json json GITHUB-EMBED
+
+Notice the `@oceanprotocol/squid` dependency, which is the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/squid-js). Save that file, and in your terminal install the dependencies we have just defined in `package.json`:
 
 ```bash
-npx create-react-app marketplace
+npm install
 ```
 
-This will create a folder named `marketplace` with a boilerplate React app. Go into that new folder and add the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/squid-js) to the app's dependencies:
+Then create the HTML file used to render the React app into. For that, create a folder `public/` and in it a file `index.html` with the following content:
+
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/public/index.html html GITHUB-EMBED
+
+## Add Basic Markup
+
+Create a new folder `src/` and within that a `index.js` file with the following content as our base, where we already import squid-js and web3.js:
+
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 1-4,6,14,91-101,113-118 GITHUB-EMBED
+
+At this point you can start up the app and see the result in your browser:
 
 ```bash
-cd marketplace/
-npm install @oceanprotocol/squid@0.6.2
+npm start
 ```
 
-At this point you can already run `npm start` which starts the app in your browser at [localhost:3000](http://localhost:3000):
+Go to [localhost:3000](http://localhost:3000) to inspect your newly created app:
 
-![React App 01](images/react-app-01.png)
+[screenshot app]
 
-## Add Markup & Web3
+## Web3
 
-Let's make it ours, open `src/App.js` and replace the whole source with:
+We already are importing web3.js but we still need to enable account access for the browsers supporting it, and make sure nothing breaks in browsers which are not Web3-capable.
 
-```jsx:title=src/App.js
-import React, { Component } from 'react'
-import './App.css'
+To do that we add a simple check at top of `src/index.js` and then enable account access with:
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App App-header">
-        <h1>Marketplace app</h1>
-      </div>
-    )
-  }
-}
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 7-12 GITHUB-EMBED
 
-export default App
-```
+And let's also output some warning for non-Web3 browsers within our `render()` function:
 
-Below the `import './App.css'` line, let's import the packages we installed, set up web3 and unlock MetaMask accounts (if locked):
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 103 GITHUB-EMBED
 
-```jsx{3-7}:title=src/App.js
-import React, { Component } from 'react'
-import './App.css'
-import { Ocean } from '@oceanprotocol/squid'
-import Web3 from 'web3'
+This should give you the following markup:
 
-const web3 = new Web3(window.web3.currentProvider)
-window.ethereum.enable()
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App App-header">
-        <h1>Marketplace app</h1>
-      </div>
-    )
-  }
-}
-
-export default App
-```
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 1-4,6-13,14,91-104,113-118 GITHUB-EMBED
 
 After those steps you should see this, and MetaMask should have asked you to allow access to your account:
 
-![React App 02](images/react-app-02.png)
-![React App 03](images/react-app-03.png)
+[screenshot app]
 
-> Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your browser console, don't worry about it. It's a MetaMask thing.
+[screenshot MetaMask]
+
+> Note: If you see an error like `inpage.js:1 MetaMask - RPC Error: Internal JSON-RPC error.` in your browser console, don't worry about it. It's a MetaMask thing and won't affect functionality.
 
 ## Create Ocean Instance
 
 Now that we are successfully connected with Web3, we can set up our Ocean instance.
 
-At the beginning of your component , create a new Ocean instance with all configuration within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
+At the beginning of your component, create a new Ocean instance with all required endpoint configurations within the `componentDidMount` lifecycle method. All Ocean Protocol operations can be executed from this Ocean instance.
 
-```jsx{10-21}:title=src/App.js
-import React, { Component } from 'react'
-import './App.css'
-import { Ocean } from '@oceanprotocol/squid'
-import Web3 from 'web3'
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 15-16,18-32 GITHUB-EMBED
 
-const web3 = new Web3(window.web3.currentProvider)
-window.ethereum.enable()
-
-class App extends Component {
-  async componentDidMount() {
-    this.ocean = await new Ocean.getInstance({
-      web3Provider: web3,
-      nodeUri: 'http://localhost:8545',
-      aquariusUri: 'http://localhost:5000',
-      brizoUri: 'http://localhost:8030',
-      brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
-      parityUri: 'http://localhost:8545',
-      secretStoreUri: 'http://localhost:12001'
-    })
-    console.log('Finished loading contracts.')
-  }
-
-  render() {
-    return (
-      <div className="App App-header">
-        <h1>Marketplace app</h1>
-      </div>
-    )
-  }
-}
-
-export default App
-```
+This will initiate a connection to all Ocean components in Nile, load the contracts, and finally store the Ocean object in the local component state for reuse. We also set the `verbose` option of squid-js so we better see what's going on.
 
 ## Final Result
 
 That's it, if you have no errors in your `console.log` then you have successfully initialized an Ocean instance in your brand new React app and you are ready for the [next part of this tutorial](/tutorials/react-publish-data-set/).
 
-![React App 04](images/react-app-04.png)
+[screenshot app]
 
-Here is the full source of `src/App.js` that you should have if you followed this tutorial:
+Here is the full source of `src/index.js` that you should have if you followed this tutorial:
 
-```jsx:title=src/App.js
-import React, { Component } from 'react'
-import './App.css'
-import { Ocean } from '@oceanprotocol/squid'
-import Web3 from 'web3'
-
-const web3 = new Web3(window.web3.currentProvider)
-window.ethereum.enable()
-
-class App extends Component {
-  async componentDidMount() {
-    this.ocean = await new Ocean.getInstance({
-      web3Provider: web3,
-      nodeUri: 'http://localhost:8545',
-      aquariusUri: 'http://localhost:5000',
-      brizoUri: 'http://localhost:8030',
-      brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
-      parityUri: 'http://localhost:8545',
-      secretStoreUri: 'http://localhost:12001'
-    })
-    console.log('Finished loading contracts.')
-  }
-
-  render() {
-    return (
-      <div className="App App-header">
-        <h1>Marketplace app</h1>
-      </div>
-    )
-  }
-}
-
-export default App
-```
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js js 1-4,6-16,18-33,91-104,113-118 GITHUB-EMBED
 
 Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).
+
+## Bonus: Connect against local Spree network
+
+`Spree`, a local Ocean test network, can be used locally:
+
+- Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository and use the startup script in Barge to run a [local Spree Testnet](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development):
+
+  ```bash
+  git clone https://github.com/oceanprotocol/barge.git
+  cd barge/
+
+  ./start_ocean.sh --no-pleuston
+  ```
+
+- Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
+
+- You will also need some [some `Spree` Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
+
+  ```bash
+  curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545
+  ```

@@ -83,9 +83,9 @@ module.exports = {
                         resolve: 'gatsby-remark-github',
                         options: {
                             marker: 'GITHUB-EMBED',
-                            insertEllipsisComments: true,
+                            insertEllipsisComments: false,
                             ellipsisPhrase: '...',
-                            useCache: true,
+                            useCache: false,
                             cacheKey: 'gatsby-remark-github-v1',
                             token: process.env.GITHUB_TOKEN
                         }
