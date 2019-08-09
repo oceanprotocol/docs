@@ -9,6 +9,11 @@ description: This tutorial shows how you can build a basic [React](https://react
 - `npm` >= 5.2 is installed. You can check using `npm -v`
 - [Docker](https://www.docker.com/products/docker-desktop) & [Docker Compose](https://docs.docker.com/compose/install/)
 - A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed, [connected to Nile network](http://localhost:8000/tutorials/connect-to-networks/#connect-to-the-nile-testnet)
+- Some Nile ETH from the Nile Faucet. You can either go to [commons.nile.dev-ocean.com/faucet](https://commons.nile.dev-ocean.com/faucet), or execute this command replacing `<YOUR ADDRESS>` with your MetaMask account address:
+
+  ```bash
+  curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST https://faucet.nile.dev-ocean.com/faucet
+  ```
 
 ## New Create React App
 
@@ -105,19 +110,25 @@ Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).
 
 `Spree`, a local Ocean test network, can be used locally:
 
-- Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository and use the startup script in Barge to run a [local Spree Testnet](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development):
+Git clone the [oceanprotocol/barge](https://github.com/oceanprotocol/barge) repository and use the startup script in Barge to run a [local Spree Testnet](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development):
 
-  ```bash
-  git clone https://github.com/oceanprotocol/barge.git
-  cd barge/
+```bash
+git clone https://github.com/oceanprotocol/barge.git
+cd barge/
 
-  ./start_ocean.sh --no-pleuston
-  ```
+./start_ocean.sh --no-pleuston
+```
 
-- Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
+Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
 
-- You will also need some [some `Spree` Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
+At the end of the contract compiling and deploying you need to copy the resulting Spree contract artifacts from the Docker container to your local `@oceanprotocol/keeper-contracts` dependency folder. The keeper-contracts Docker container will output all artifacts in a hidden folder in your home folder so you can copy from there:
 
-  ```bash
-  curl --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from":"0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e","to":"<YOUR ADDRESS>","value":"0x7FFFFFFFFFFFFFFFFFF"}, "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8545
-  ```
+```bash
+cp ~/.ocean/keeper-contracts/artifacts/* ./node_modules/@oceanprotocol/keeper-contracts/artifacts/
+```
+
+You will also need some [some `Spree` Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
+
+```bash
+curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST http://localhost:3001/faucet
+```
