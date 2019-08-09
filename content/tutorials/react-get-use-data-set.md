@@ -10,168 +10,56 @@ This is a continuation of the React App Tutorial. Make sure you already did the 
 1. [React App Setup](/tutorials/react-setup/)
 2. [Publish a Data Set](/tutorials/react-publish-data-set/)
 
-Open `src/App.js` from your `marketplace/` folder.
+Open `src/index.js` from your `marketplace/` folder.
 
-## Retrieve Assets
+## Search Assets
 
-In the previous tutorial we added asset publishing. We can now search for published assets for consumption. Just after the `submitAsset()` function we can add a new function that will handle search:
+In the previous tutorial we added asset publishing. We can now search for published assets for consumption.
 
-```js:title=src/App.js
-// ...
-async retrieveAssets() {
-  this.search = await this.ocean.assets.search('10 Monkey Species Small')
-  console.log(this.search)
-  alert(
-    'Asset successfully retrieved. Look into your console to see the search response.'
-  )
-}
-// ...
-```
+We will store the search results in the local component state so we have to set its initial state first:
 
-Now we need a button to start our search inside the render function just after the _Register asset_ button:
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 15-18 GITHUB-EMBED
 
-```jsx:title=src/App.js
-// ...
-<button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
-// ...
-```
+Just after the `registerAsset()` function we add a new `searchAssets` function that will handle search:
 
-## Consume Assets
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 54-67 GITHUB-EMBED
+
+Now we need a button to start our search inside the `render()` function, just after the _Register asset_ button:
+
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 114-115 GITHUB-EMBED
+
+## Consume Asset
 
 Consuming means downloading one or multiple files attached to an asset. During that process the initial `url` value we added during the publish process for each file will be decrpyted and the file can be downloaded.
 
-With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `retrieveAssets()` function:
+With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `searchAssets()` function:
 
-```js:title=src/App.js
-// ...
-async consumeAsset() {
-  // get all accounts
-  const accounts = await this.ocean.accounts.list()
-  // get first asset
-  const consumeAsset = this.search.results[0]
-  // get service we want to execute
-  const service = consumeAsset.findServiceByType('Access')
-  // order service agreement
-  const agreement = await this.ocean.assets.order(
-    consumeAsset.id,
-    service.serviceDefinitionId,
-    accounts[0]
-  )
-  // consume it
-  await this.ocean.assets.consume(
-    agreement,
-    consumeAsset.id,
-    service.serviceDefinitionId,
-    accounts[0],
-    '',
-    0
-  )
-  }
-// ...
-```
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 69-95 GITHUB-EMBED
 
-We still need a button to start consumption. In the render function, just after the _Retrieve assets_ button, add:
+We still need a button to start consumption. In the render function, just after the _Search assets_ button, add:
 
-```jsx:title=src/App.js
-// ...
-<button onClick={() => this.consumeAsset()}>Consume asset</button>
-// ...
-```
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 116-118 GITHUB-EMBED
 
 With all these buttons in place, you should see this:
 
-![React App 05](images/react-app-05.png)
+![React app with all actions in place](images/react-app-06.png)
 
-> Tip: Before clicking the `Retrieve assets` button, it might help to reload the page.
-
-Go ahead and click the _Retrieve assets_ button, and then the _Consume asset_ button. Approve all the MetaMask dialog boxes.
+Go ahead and click the _Search assets_ button, and then the _Consume asset_ button. Approve all the MetaMask dialog boxes.
 
 Have a look into `console.log` to see the various steps of the search and consume process. If you have no errors in your `console.log` and can see your asset files listed, you have a working marketplace.
 
-> Consuming an asset will throw an error `Requested did is not found in the keeper network`. We are currently [investigating why that is happening](https://github.com/oceanprotocol/barge/issues/144) in either squid-js or Brizo and will remove this note once we verified a fix is in place in one of those components.
-
 ## Final Result
 
-Here is the full source of `src/App.js` that you should have if you followed this tutorial:
+Here is the full source of `src/index.js` that you should have if you followed this tutorial:
 
-```jsx:title=src/App.js
-import React, { Component } from 'react'
-import './App.css'
-import { Ocean } from '@oceanprotocol/squid'
-import Web3 from 'web3'
-import asset from './asset'
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/src/index.js jsx GITHUB-EMBED
 
-const web3 = new Web3(window.web3.currentProvider)
-window.ethereum.enable()
+## Git repository and CodeSandbox
 
-class App extends Component {
-  async componentDidMount() {
-    this.ocean = await new Ocean.getInstance({
-      web3Provider: web3,
-      nodeUri: 'http://localhost:8545',
-      aquariusUri: 'http://localhost:5000',
-      brizoUri: 'http://localhost:8030',
-      brizoAddress: '0x00bd138abd70e2f00903268f3db08f2d25677c9e',
-      parityUri: 'http://localhost:8545',
-      secretStoreUri: 'http://localhost:12001'
-    })
-    console.log('Finished loading contracts.')
-  }
+All code snippets in this tutorial are sourced from the [oceanprotocol/react-tutorial](https://github.com/oceanprotocol/react-tutorial) GitHub repository:
 
-  async submitAsset() {
-    const accounts = await this.ocean.accounts.list()
-    const ddo = await this.ocean.assets.create(asset, accounts[0])
-    console.log('Asset successfully submitted.')
-    console.log(ddo)
-    alert(
-      'Asset successfully submitted. Look into your console to see the response DDO object.'
-    )
-  }
+<repo name="react-tutorial"></repo>
 
-  async retrieveAssets() {
-    this.search = await this.ocean.assets.search('10 Monkey Species Small')
-    console.log(this.search)
-    alert(
-      'Asset successfully retrieved. Look into your console to see the search response.'
-    )
-  }
+The final source of this tutorial is also available as a CodeSandbox:
 
-  async consumeAsset() {
-    // get all accounts
-    const accounts = await this.ocean.accounts.list()
-    // get first asset
-    const consumeAsset = this.search.results[0]
-    // get service we want to execute
-    const service = consumeAsset.findServiceByType('Access')
-    // order service agreement
-    const agreement = await this.ocean.assets.order(
-      consumeAsset.id,
-      service.serviceDefinitionId,
-      accounts[0]
-    )
-    // consume it
-    await this.ocean.assets.consume(
-      agreement,
-      consumeAsset.id,
-      service.serviceDefinitionId,
-      accounts[0],
-      '',
-      0
-    )
-  }
-
-  render() {
-    return (
-      <div className="App App-header">
-        <h1>Marketplace app</h1>
-        <button onClick={() => this.submitAsset()}>Register asset</button>
-        <hr />
-        <button onClick={() => this.retrieveAssets()}>Retrieve assets</button>
-        <button onClick={() => this.consumeAsset()}>Consume asset</button>
-      </div>
-    )
-  }
-}
-
-export default App
-```
+[![Edit react-tutorial](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/oceanprotocol/react-tutorial/tree/master/?fontsize=14)
