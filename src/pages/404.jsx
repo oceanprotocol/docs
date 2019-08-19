@@ -29,7 +29,7 @@ export default class NotFoundPage extends Component {
 
     async getRandomGif() {
         try {
-            let response = await giphyClient.random('gifs', { tag })
+            const response = await giphyClient.random('gifs', { tag })
             const gif = response.data.images.original.mp4
             this.setState({ gif })
         } catch (error) {
