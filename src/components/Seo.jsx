@@ -134,8 +134,8 @@ const SEO = ({ title, description, slug, article, location }) => (
 
             title = title || siteMeta.siteTitle
             description = description || siteMeta.siteDescription
-            let url = siteMeta.siteUrl || siteMeta.siteUrl + slug
-            let image = siteMeta.siteUrl + shareImage
+            const url = siteMeta.siteUrl || siteMeta.siteUrl + slug
+            const image = siteMeta.siteUrl + shareImage
 
             let schema = createSchemaOrg(
                 title,

@@ -32,7 +32,7 @@ export default class Toc extends PureComponent {
         })
 
     items = this.props.data.map(({ name, children }) => {
-        let subIds = []
+        const subIds = []
         const parentName = name
 
         subIds.push(

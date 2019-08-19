@@ -130,6 +130,7 @@ class Numbers extends PureComponent {
     }
 
     url = 'https://oceanprotocol-github.now.sh'
+
     signal = axios.CancelToken.source()
 
     componentDidMount() {
@@ -224,7 +225,7 @@ const Repository = ({ name, links, readme }) => (
 
             // just iterate over all repos until we have a name match,
             // then return that repo, and then filter out all empty nodes
-            let repoFilteredArray = repositoriesGitHub
+            const repoFilteredArray = repositoriesGitHub
                 .map(({ node }) => {
                     if (node.name === name) return node
                 })
@@ -249,7 +250,7 @@ const Repository = ({ name, links, readme }) => (
 
             // enhance passed links array with what's in repositories.yml,
             // iterating over all repos until we have a name match
-            let linksFilteredArray = []
+            const linksFilteredArray = []
 
             repositoriesYaml.map(({ node }) => {
                 node.items.forEach(item => {

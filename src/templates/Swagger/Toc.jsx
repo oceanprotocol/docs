@@ -7,7 +7,7 @@ import { cleanPathKey } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
 const Toc = ({ data }) => {
-    let Ids = []
+    const Ids = []
 
     const items = Object.keys(data.paths).map(key => {
         Ids.push(slugify(cleanPathKey(key)))
