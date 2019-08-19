@@ -44,8 +44,8 @@ There are several Ocean Protocol software components that are live, connected to
 | Secret Store           | `https://secret-store.nile.dev-ocean.com`         |
 | Aquarius Test instance | `https://aquarius.nile.dev-ocean.com`             |
 | Brizo Test instance    | `https://brizo.nile.dev-ocean.com`                |
-| Aquarius for Commons   | `https://aquarius.marketplace.nile.dev-ocean.com` |
-| Brizo for Commons      | `https://brizo.marketplace.nile.dev-ocean.com`    |
+| Aquarius for Commons   | `https://aquarius.marketplace.dev-ocean.com` |
+| Brizo for Commons      | `https://brizo.marketplace.dev-ocean.com`    |
 | Commons Marketplace    | `https://commons.nile.dev-ocean.com`              |
 | Jupyter Hub            | `https://mantaray.dev-ocean.com`                  |
 | Faucet Server          | `https://faucet.nile.dev-ocean.com`               |
