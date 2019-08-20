@@ -36,7 +36,7 @@ const QuickRun = () => (
                         }}
                     />
 
-                    <Repository name={'barge'} />
+                    <Repository name="barge" />
                 </div>
             </aside>
         )}

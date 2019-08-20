@@ -9,7 +9,7 @@ import HeaderSection from '../../components/HeaderSection'
 import Sidebar from '../../components/Sidebar'
 import DocHeader from '../../components/DocHeader'
 import DocFooter from '../../components/DocFooter'
-import SEO from '../../components/Seo'
+import Seo from '../../components/Seo'
 
 import Toc from './Toc'
 import Paths from './Paths'
@@ -76,10 +76,10 @@ export default class ApiSwaggerTemplate extends Component {
         return (
             <>
                 <Helmet>
-                    <body className={'references'} />
+                    <body className="references" />
                 </Helmet>
 
-                <SEO
+                <Seo
                     title={title}
                     description={description}
                     slug={pageContext.slug}
@@ -95,7 +95,7 @@ export default class ApiSwaggerTemplate extends Component {
                             <aside className={stylesDoc.sidebar}>
                                 <Sidebar
                                     location={location}
-                                    sidebar={'references'}
+                                    sidebar="references"
                                     collapsed
                                     toc
                                     tocComponent={<Toc data={api} />}

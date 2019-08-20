@@ -38,17 +38,17 @@ There is a Nile blockchain explorer at [https://submarine.dev-ocean.com/](https:
 
 There are several Ocean Protocol software components that are live, connected to the Nile Testnet, and operated by BigchainDB GmbH:
 
-| Component              | URL                                               |
-| ---------------------- | ------------------------------------------------- |
-| Node                   | `https://nile.dev-ocean.com`                      |
-| Secret Store           | `https://secret-store.nile.dev-ocean.com`         |
-| Aquarius Test instance | `https://aquarius.nile.dev-ocean.com`             |
-| Brizo Test instance    | `https://brizo.nile.dev-ocean.com`                |
+| Component              | URL                                          |
+| ---------------------- | -------------------------------------------- |
+| Node                   | `https://nile.dev-ocean.com`                 |
+| Secret Store           | `https://secret-store.nile.dev-ocean.com`    |
+| Aquarius Test instance | `https://aquarius.nile.dev-ocean.com`        |
+| Brizo Test instance    | `https://brizo.nile.dev-ocean.com`           |
 | Aquarius for Commons   | `https://aquarius.marketplace.dev-ocean.com` |
 | Brizo for Commons      | `https://brizo.marketplace.dev-ocean.com`    |
-| Commons Marketplace    | `https://commons.nile.dev-ocean.com`              |
-| Jupyter Hub            | `https://mantaray.dev-ocean.com`                  |
-| Faucet Server          | `https://faucet.nile.dev-ocean.com`               |
+| Commons Marketplace    | `https://commons.nile.dev-ocean.com`         |
+| Jupyter Hub            | `https://mantaray.dev-ocean.com`             |
+| Faucet Server          | `https://faucet.nile.dev-ocean.com`          |
 
 > Internal note: The private "atlantic" repo documents the internal details of the Nile Testnet in `networks/nile/README.md`.
 

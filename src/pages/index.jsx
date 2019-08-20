@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import classnames from 'classnames'
-import SEO from '../components/Seo'
+import Seo from '../components/Seo'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderHome from '../components/HeaderHome'
@@ -56,7 +56,7 @@ SectionLink.propTypes = {
 
 const IndexPage = ({ data, location }) => (
     <>
-        <SEO location={location} />
+        <Seo location={location} />
 
         <Layout location={location} header={<HeaderHome />}>
             <Content>

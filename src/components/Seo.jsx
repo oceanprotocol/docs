@@ -124,7 +124,7 @@ MetaTags.propTypes = {
     location: PropTypes.object.isRequired
 }
 
-const SEO = ({ title, description, slug, article, location }) => (
+const Seo = ({ title, description, slug, article, location }) => (
     <StaticQuery
         query={query}
         render={data => {
@@ -163,7 +163,7 @@ const SEO = ({ title, description, slug, article, location }) => (
     />
 )
 
-SEO.propTypes = {
+Seo.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     slug: PropTypes.string,
@@ -171,4 +171,4 @@ SEO.propTypes = {
     location: PropTypes.object.isRequired
 }
 
-export default SEO
+export default Seo

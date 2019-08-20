@@ -33,7 +33,7 @@ const Header = () => (
             return (
                 <header className={styles.header}>
                     <div className={styles.headerContent}>
-                        <Link to={'/'} className={styles.headerLogo}>
+                        <Link to="/" className={styles.headerLogo}>
                             <Logo className={styles.headerLogoImage} />
                             <h1 className={styles.headerTitle}>{siteTitle}</h1>
                         </Link>

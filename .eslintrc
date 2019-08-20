@@ -11,5 +11,10 @@
     "rules": {
         "prettier/prettier": "error"
     },
-    "env": { "browser": true }
+    "env": { "browser": true },
+    "settings": {
+        "react": {
+            "version": "16.8"
+        }
+    }
 }

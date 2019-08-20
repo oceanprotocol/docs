@@ -10,7 +10,7 @@ import DocToc from '../components/DocToc'
 import DocContent from '../components/DocContent'
 import DocHeader from '../components/DocHeader'
 import DocFooter from '../components/DocFooter'
-import SEO from '../components/Seo'
+import Seo from '../components/Seo'
 import styles from './Doc.module.scss'
 
 const DocMain = ({ title, description, tableOfContents, post, single }) => (
@@ -65,7 +65,7 @@ export default class DocTemplate extends Component {
                     <body className={section} />
                 </Helmet>
 
-                <SEO
+                <Seo
                     title={title}
                     description={description}
                     slug={slug}

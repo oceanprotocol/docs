@@ -28,7 +28,7 @@ const ParameterExample = ({ properties }) => (
                 Object.keys(properties).map(key => (
                     <div key={key}>
                         <span className="token property">{`  "${key}"`}</span>
-                        <span className="token operator">{`: `}</span>
+                        <span className="token operator">: </span>
                         {properties[key].type === 'string' && (
                             <span className="token string">{`"${properties[key].example}"`}</span>
                         )}
