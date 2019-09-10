@@ -107,9 +107,9 @@ const MetaTags = ({
         <meta name="twitter:image" content={image} />
 
         {/* Prevent search engine indexing except for live */}
-        {location.hostname !== 'docs.oceanprotocol.com' && (
+        {/* {location.hostname !== 'docs.oceanprotocol.com' && (
             <meta name="robots" content="noindex,nofollow" />
-        )}
+        )} */}
     </Helmet>
 )
 
