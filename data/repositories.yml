@@ -14,7 +14,7 @@
       links:
         - name: API reference
           url: /references/brizo/
-
+    - name: events-handler-py
     - name: pleuston
     - name: commons
 

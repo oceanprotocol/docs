@@ -52,6 +52,14 @@ The most basic scenario for a publisher is to provide access to the [assets](/co
 
 <repo name="brizo"></repo>
 
+### Events Handler
+
+Brizo communicates with the Events Handler, which is an agent dealing with Keeper Contracts events...
+
+...
+
+<repo name="events-handler-py"></repo>
+
 ### Osmosis Drivers
 
 Brizo supports several options for file storage, including Azure Storage, Amazon S3 and on-premise storage. One can add support for another file storage option by creating a new driver similar to one of the existing Osmosis drivers.
