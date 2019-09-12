@@ -52,17 +52,18 @@ You can create your own OceanDB drivers by extending on the `oceandb-driver-inte
 
 Publishers run Brizo to manage interactions with marketplaces and consumers.
 It interacts with the publisher's cloud and/or on-premise infrastructure.
+
 The most basic scenario for a publisher is to provide access to the [assets](/concepts/terminology/#asset-or-data-asset) the publisher owns or manages, but [Brizo can do much more](/concepts/architecture/#brizo).
 
 <repo name="brizo"></repo>
 
 ### Events Handler
 
-Brizo communicates with the Events Handler, which is an agent dealing with Keeper Contracts events.
+Brizo communicates with the Events Handler to deal with Keeper Contracts events.
 
-It monitors Service Execution Agreement (SEA) events and acts as a provider agent to grant access and release rewards for the publisher/provider. This is a critical part in the process of consuming data sets in the Ocean Protocol network.
+The Events Handler monitors Service Execution Agreement (SEA) events and acts as a provider agent to grant access and release rewards for the publisher/provider. This is a critical part in the process of consuming data sets in the Ocean Protocol network.
 
-Every provider in the network must run some sort of an events-handler to be able to fulfill the access condition of an `Access` service in a Service Execution Agreement.
+Every provider in the network must run some sort of an events handler to be able to fulfill the access condition of an `Access` service in a Service Execution Agreement.
 
 <repo name="events-handler"></repo>
 
