@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Repository from './Repository'
+import Repository from '../Repository'
 import styles from './RepositoryList.module.scss'
 
 const RepositoryList = ({ repositories }) => (

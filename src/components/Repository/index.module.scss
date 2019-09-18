@@ -1,0 +1,25 @@
+@import 'variables';
+
+.repository {
+    padding: $spacer / $line-height;
+    border: 1px solid $brand-grey-lighter;
+    background: $brand-white;
+    border-radius: $border-radius;
+    font-size: $font-size-small;
+    text-align: left;
+    width: 100%;
+    margin-bottom: $spacer;
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        align-self: flex-start;
+    }
+}
+
+.repositoryMeta {
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    width: 100%;
+}
