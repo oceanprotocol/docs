@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import RehypeReact from 'rehype-react'
-import Repository from './Repositories/Repository'
+import Repository from './Repository'
 import styles from './DocContent.module.scss'
 
 const renderAst = new RehypeReact({

@@ -4,7 +4,7 @@ import { ReactComponent as Pencil } from '../images/pencil.svg'
 import styles from './DocFooter.module.scss'
 import { social, githubContentPath, githubDevOceanPath } from '../../config'
 
-const DocFooter = ({ post, url, externalName }) => {
+export default function DocFooter({ post, url, externalName }) {
     let path
 
     if (post) {
@@ -42,5 +42,3 @@ DocFooter.propTypes = {
     url: PropTypes.string,
     externalName: PropTypes.string
 }
-
-export default DocFooter

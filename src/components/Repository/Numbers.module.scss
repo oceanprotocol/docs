@@ -1,0 +1,35 @@
+@import 'variables';
+
+.repositorynumbers {
+    font-size: $font-size-small;
+    margin-left: -($spacer / 4);
+    flex: 1;
+    text-align: right;
+    width: 20%;
+
+    a {
+        color: $brand-grey-light;
+        margin-left: $spacer / 4;
+        display: inline-block;
+
+        &:hover,
+        &:focus {
+            color: $brand-pink;
+            transform: none;
+
+            svg {
+                fill: $brand-pink;
+            }
+        }
+
+        span {
+            margin-left: -.15rem;
+        }
+    }
+
+    svg {
+        display: inline-block;
+        fill: $brand-grey-light;
+        margin-bottom: -.1rem;
+    }
+}

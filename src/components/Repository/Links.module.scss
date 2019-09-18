@@ -1,0 +1,23 @@
+@import 'variables';
+
+.links {
+    margin: 0;
+    padding: 0;
+    margin-left: -($spacer / $line-height);
+    width: 80%;
+
+    li {
+        display: inline-block;
+        padding: 0;
+        margin-left: $spacer / $line-height;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    a {
+        font-family: $font-family-button;
+        font-weight: $font-weight-bold;
+    }
+}

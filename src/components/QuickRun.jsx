@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Repository from './Repositories/Repository'
+import Repository from './Repository'
 import styles from './QuickRun.module.scss'
 
 const QuickRun = () => (
