@@ -47,6 +47,14 @@ The Ocean Token Bridge between the Ethereum Mainnet and the Pacific Network allo
 
 <repo name="token-bridge-ui"></repo>
 
+## Ocean Network Status
+
+The Ocean status page checks all Ocean network connections from your browser.
+
+- [**Ocean Network Status**](https://status.oceanprotocol.com)
+
+<repo name="status"></repo>
+
 ## Command-Line Interfaces
 
 There are a few Ocean Protocol command-line interfaces (CLIs). All of them were under development at the time of writing, so you may have issues with using them.
