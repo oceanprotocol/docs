@@ -42,15 +42,30 @@ Aquarius supports several options for the off-chain database (OceanDB), includin
 <repo name="oceandb-elasticsearch-driver"></repo>
 <repo name="oceandb-mongodb-driver"></repo>
 
-Note: There is also a BigchainDB driver but it hasn't been maintained.
+> There is also a [BigchainDB driver](https://github.com/oceanprotocol/oceandb-bigchaindb-driver) but it hasn't been maintained.
+
+You can create your own OceanDB drivers by extending on the `oceandb-driver-interface`.
+
+<repo name="oceandb-driver-interface"></repo>
 
 ## Brizo
 
 Publishers run Brizo to manage interactions with marketplaces and consumers.
 It interacts with the publisher's cloud and/or on-premise infrastructure.
+
 The most basic scenario for a publisher is to provide access to the [assets](/concepts/terminology/#asset-or-data-asset) the publisher owns or manages, but [Brizo can do much more](/concepts/architecture/#brizo).
 
 <repo name="brizo"></repo>
+
+### Events Handler
+
+Brizo communicates with the Events Handler to deal with Keeper Contracts events.
+
+The Events Handler monitors Service Execution Agreement (SEA) events and acts as a provider agent to grant access and release rewards for the publisher/provider. This is a critical part in the process of consuming data sets in the Ocean Protocol network.
+
+Every provider in the network must run some sort of an events handler to be able to fulfill the access condition of an `Access` service in a Service Execution Agreement.
+
+<repo name="events-handler"></repo>
 
 ### Osmosis Drivers
 
@@ -59,6 +74,10 @@ Brizo supports several options for file storage, including Azure Storage, Amazon
 <repo name="osmosis-azure-driver"></repo>
 <repo name="osmosis-aws-driver"></repo>
 <repo name="osmosis-on-premise-driver"></repo>
+
+You can create your own Osmosis drivers by extending on the `osmosis-driver-interface`.
+
+<repo name="osmosis-driver-interface"></repo>
 
 ## Squid Libraries
 
