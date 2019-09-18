@@ -39,8 +39,9 @@
     - name: tuna
     - name: plecos
     - name: faucet
-    - name: blockscout
     - name: token-bridge-ui
+    - name: status
+    - name: blockscout
 
 - group: OceanDB Drivers
   items:
