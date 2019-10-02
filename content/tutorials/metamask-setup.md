@@ -9,7 +9,7 @@ description: Tutorial about how to set up MetaMask for Chrome.
 
    ![metamask-chrome-store](images/metamask-chrome-extension.png)
 
-2. Install MetaMask. It will get added as a browser extension in the top right corner of your browser. Read through and accept the terms and conditions. Create a username and password in the next step.
+2. Install MetaMask. It will get added as a browser extension in the top right corner of your browser. Read through and accept the terms and conditions. Create a password in the next step.
 
    ![tandc-metamask](images/metamask-create-username-password.png)
 
