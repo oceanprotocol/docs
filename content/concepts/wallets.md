@@ -18,7 +18,7 @@ A wallet can sometimes mean (web3) _software_ for interacting with a thing that 
 
 Note how MetaMask is in both lists!
 
-You can also have a _chain_ of software which ultimately connects to the thing that stores the private keys. An example would be [Pleuston](/concepts/components/#pleuston) connecting to MetaMask connecting to a TREZOR wallet.
+You can also have a _chain_ of software which ultimately connects to the thing that stores the private keys. An example would be [Commons](/concepts/components/#commons) connecting to MetaMask connecting to a TREZOR wallet.
 
 ## Related Terminology
 

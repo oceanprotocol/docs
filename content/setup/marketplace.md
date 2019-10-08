@@ -31,10 +31,10 @@ At the time of writing, we recommend the following steps to develop a marketplac
 1. Do the [React App Tutorial](/tutorials/react-setup/).
 2. Grow your app from there.
 
-For more examples and inspiration, check out [the source code for Pleuston](https://github.com/oceanprotocol/pleuston) and the [the source code for the Commons Marketplace](https://github.com/oceanprotocol/commons). Both have an Apache v2 open source license. Both use React and squid-js. Both are "serverless" apps: they run entirely in the browser and have no server-side component.
+For more examples and inspiration, check out the [source code for the Commons Marketplace](https://github.com/oceanprotocol/commons) and the [source code for Pleuston](https://github.com/oceanprotocol/pleuston). Both have an Apache v2 open source license. Both use React and squid-js. Both are "serverless" apps: they run entirely in the browser and have no server-side component.
 
-<repo name="pleuston"></repo>
 <repo name="commons"></repo>
+<repo name="pleuston"></repo>
 
 ### Other Options
 

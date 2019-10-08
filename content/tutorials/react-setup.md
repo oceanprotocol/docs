@@ -128,7 +128,7 @@ Clone the barge repository and use its startup script:
 git clone https://github.com/oceanprotocol/barge.git
 cd barge/
 
-./start_ocean.sh --no-pleuston
+./start_ocean.sh --no-commons
 ```
 
 Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.

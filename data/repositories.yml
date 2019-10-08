@@ -15,7 +15,6 @@
         - name: API reference
           url: /references/brizo/
     - name: events-handler
-    - name: pleuston
     - name: commons
 
 - group: Libraries
