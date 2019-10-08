@@ -73,6 +73,7 @@ Brizo supports several options for file storage, including Azure Storage, Amazon
 
 <repo name="osmosis-azure-driver"></repo>
 <repo name="osmosis-aws-driver"></repo>
+<repo name="osmosis-ipfs-driver"></repo>
 <repo name="osmosis-on-premise-driver"></repo>
 
 You can create your own Osmosis drivers by extending on the `osmosis-driver-interface`.

@@ -52,6 +52,7 @@
   items:
     - name: osmosis-azure-driver
     - name: osmosis-aws-driver
+    - name: osmosis-ipfs-driver
     - name: osmosis-on-premise-driver
 
 - group: Parity Secret Store
