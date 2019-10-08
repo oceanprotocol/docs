@@ -13,8 +13,8 @@ description: Examples of code using the Squid libraries.
 ## squid-js Examples
 
 - [The React App Tutorial](/tutorials/react-setup/)
-- [The Pleuston source code](https://github.com/oceanprotocol/pleuston)
 - [The Commons Marketplace source code](https://github.com/oceanprotocol/commons)
+- [The Pleuston source code](https://github.com/oceanprotocol/pleuston)
 - The squid-js tests:
   - [Unit tests](https://github.com/oceanprotocol/squid-js/tree/develop/test)
   - [Integration tests](https://github.com/oceanprotocol/squid-js/tree/develop/integration/ocean)

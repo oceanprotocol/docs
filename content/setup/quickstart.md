@@ -17,7 +17,7 @@ Seeing the dolphin means it's working:
 
 ![Output of start_ocean.sh](images/dolphin.png)
 
-Once everything is up and running, you can interact with the components. E.g. once [Pleuston](/concepts/components/#pleuston) is running, you can interact with it at:
+Once everything is up and running, you can interact with the components. E.g. once [Commons](/concepts/components/#commons) is running, you can interact with it at:
 
 - [http://localhost:3000/](http://localhost:3000/)
 

@@ -370,14 +370,14 @@ In all Markdown docs you can use some select React Components. This magic is don
 The `Repository` component fetching and displaying information about a GitHub repo. Component can be used in Markdown as `<repo>`, it requires a `name` to be passed:
 
 ```html
-<repo name="pleuston"></repo>
+<repo name="commons"></repo>
 ```
 
 Note that the component name in Markdown needs to be always in lowercase, and have a closing tag.
 
 Resulting in:
 
-<repo name="pleuston"></repo>
+<repo name="commons"></repo>
 
 You can also pass `readme="true"` and the readme contents of the repo will be rendered:
 

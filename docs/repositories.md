@@ -1,8 +1,8 @@
 # Repository Component
 
-- [Overview](#Overview)
-- [Add Links to a Repository](#Add-Links-to-a-Repository)
-- [Version Numbers](#Version-Numbers)
+- [Overview](#overview)
+- [Add Links to a Repository](#add-links-to-a-repository)
+- [Version Numbers](#version-numbers)
 
 ## Overview
 

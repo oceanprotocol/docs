@@ -89,12 +89,6 @@ Client libraries used by applications (such as Pleuston or Jupyter notebooks) to
 <repo name="squid-py"></repo>
 <repo name="squid-java"></repo>
 
-## Pleuston
-
-An example marketplace/publisher front-end for developers to explore, download, and publish [assets](/concepts/terminology/#asset-or-data-asset) in an Ocean Protocol network. Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
-
-<repo name="pleuston"></repo>
-
 ## Commons Marketplace
 
 An online example marketplace/publisher for consumers to explore, download, and publish open data sets in the [Pacific Network](/concepts/pacific-network/). Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
@@ -102,3 +96,11 @@ An online example marketplace/publisher for consumers to explore, download, and 
 For more information, see [the blog post about Commons Marketplace](https://blog.oceanprotocol.com/the-commons-data-marketplace-c57a44288314).
 
 <repo name="commons"></repo>
+
+The Commons Marketplace is also the default frontend when running a full Ocean network locally with [Barge](/setup/quickstart/).
+
+## Pleuston (deprecated)
+
+An example marketplace/publisher front-end for developers to explore, download, and publish [assets](/concepts/terminology/#asset-or-data-asset) in an Ocean Protocol network. Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
+
+<repo name="pleuston"></repo>
