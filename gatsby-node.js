@@ -251,7 +251,7 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
 const fetchSwaggerSpec = async name => {
     try {
         const client = await Swagger(
-            `https://${name}.test.oceanprotocol.com/spec`
+            `https://${name}.commons.oceanprotocol.com/spec`
         )
         return client.spec // The resolved spec
 
@@ -264,7 +264,7 @@ const fetchSwaggerSpec = async name => {
         // TryItOut Executor, with the `spec` already provided
         // client.execute({operationId: 'addPet', parameters: {id: 1, name: "bobby") }).then(...)
     } catch (error) {
-        console.log(error)
+        console.error(error.message)
     }
 }
 
@@ -320,6 +320,6 @@ const createSwaggerPages = async createPage => {
             }
         })
     } catch (error) {
-        console.log(error)
+        console.error(error.message)
     }
 }
