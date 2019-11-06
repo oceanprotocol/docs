@@ -29,17 +29,18 @@ export const cleanTypedocData = (data, useClasses) => {
     return cleanData
 }
 
-// more kinds: 'Property', 'Class'
+// more kinds: 'Property', 'Enumeration'
 const showKindOfProperty = {
     Method: { onlyPublic: true },
-    Property: { onlyPublic: true },
-    Class: { onlyPublic: true },
-    Interface: { onlyPublic: false }
+    Property: { onlyPublic: true }
 }
 
 export const filterByKindOfProperty = ({ kindString, flags }) => {
     const config = showKindOfProperty[kindString]
     if (!config) return
+
+    // filter out static methods by default
+    if (flags.isStatic) return
 
     if (config.onlyPublic && !flags.isPublic) return
 
