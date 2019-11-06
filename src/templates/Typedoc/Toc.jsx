@@ -12,6 +12,7 @@ export default class Toc extends PureComponent {
     }
 
     subItems = (children, parentName) =>
+        children &&
         children.filter(filterByKindOfProperty).map(({ name, decorators }) => {
             const deprecation = (decorators || []).filter(
                 ({ name }) => name === 'deprecated'
@@ -21,7 +22,7 @@ export default class Toc extends PureComponent {
                 <li key={name}>
                     <Scroll
                         type="id"
-                        element={`${parentName}-${slugify(name)}`}
+                        element={`${parentName}-${name && slugify(name)}`}
                         data-deprecated={!!deprecation}
                         offset={-20}
                     >
@@ -36,14 +37,19 @@ export default class Toc extends PureComponent {
         const parentName = name
 
         subIds.push(
-            children.filter(filterByKindOfProperty).map(({ name }) => {
-                return `${parentName}-${slugify(name)}`
-            })
+            children &&
+                children.filter(filterByKindOfProperty).map(({ name }) => {
+                    return `${parentName}-${name && slugify(name)}`
+                })
         )
 
         return (
             <li key={name}>
-                <Scroll type="id" element={`${slugify(name)}`} offset={-20}>
+                <Scroll
+                    type="id"
+                    element={`${name && slugify(name)}`}
+                    offset={-20}
+                >
                     <code>{name}</code>
                 </Scroll>
                 <Scrollspy

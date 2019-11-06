@@ -18,7 +18,11 @@ const Type = ({ type }) => {
         <div className={styles.type}>
             <span>
                 {isInternal && (
-                    <Scroll type="id" element={`${slugify(name)}`} offset={-20}>
+                    <Scroll
+                        type="id"
+                        element={`${name && slugify(name)}`}
+                        offset={-20}
+                    >
                         {type.name}
                     </Scroll>
                 )}
@@ -140,7 +144,8 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
     let deprecatedUse, deprecatedSlug
     if (deprecation) {
         deprecatedUse = deprecation.arguments.alternative.replace(/('|")/g, '')
-        deprecatedSlug = slugify(deprecatedUse.replace('.', '-'))
+        deprecatedSlug =
+            deprecatedUse && slugify(deprecatedUse.replace('.', '-'))
     }
 
     const sourceLink = `${sourceUrl}${fileName}#L${line}`
@@ -150,7 +155,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
             className={styles.property}
             data-private={!isPublic}
             data-deprecated={!!deprecation}
-            id={`${parentAnchor}-${slugify(name)}`}
+            id={`${parentAnchor}-${name && slugify(name)}`}
         >
             <h3 className={styles.propertyName}>{name}</h3>
 
@@ -222,7 +227,7 @@ PropertyWrapper.propTypes = {
 
 const Entities = ({ entities, sourceUrl }) =>
     entities.map(({ name, comment, children }) => (
-        <div key={name} id={slugify(name)}>
+        <div key={name} id={name && slugify(name)}>
             <h2 className={styles.entityName}>
                 <code>{name}</code>
             </h2>
@@ -233,14 +238,17 @@ const Entities = ({ entities, sourceUrl }) =>
                 </div>
             )}
 
-            {children.filter(filterByKindOfProperty).map(property => (
-                <PropertyWrapper
-                    key={`${name}/${property.id}`}
-                    property={property}
-                    sourceUrl={sourceUrl}
-                    parentAnchor={slugify(name)}
-                />
-            ))}
+            {children &&
+                children
+                    .filter(filterByKindOfProperty)
+                    .map(property => (
+                        <PropertyWrapper
+                            key={`${name}/${property.id}`}
+                            property={property}
+                            sourceUrl={sourceUrl}
+                            parentAnchor={name && slugify(name)}
+                        />
+                    ))}
         </div>
     ))
 
