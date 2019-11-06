@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
+import shortid from 'shortid'
 import Scrollspy from 'react-scrollspy'
 import Scroll from '../../components/Scroll'
 import { filterByKindOfProperty } from './utils'
@@ -19,7 +20,7 @@ export default class Toc extends PureComponent {
             )[0] // Assuming deprecated annotation
 
             return (
-                <li key={name}>
+                <li key={shortid.generate()}>
                     <Scroll
                         type="id"
                         element={`${parentName}-${name && slugify(name)}`}
@@ -44,7 +45,7 @@ export default class Toc extends PureComponent {
         )
 
         return (
-            <li key={name}>
+            <li key={shortid.generate()}>
                 <Scroll
                     type="id"
                     element={`${name && slugify(name)}`}

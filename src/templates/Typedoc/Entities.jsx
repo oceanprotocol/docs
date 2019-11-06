@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
+import shortid from 'shortid'
 import Scroll from '../../components/Scroll'
 import styles from './Entities.module.scss'
 import { filterByKindOfProperty } from './utils'
@@ -34,13 +35,13 @@ const Type = ({ type }) => {
                     <span className={styles.typeSymbol}>&lt;</span>
                     <span>
                         {typeArguments.map((typeArgument, i) => (
-                            <span key={i}>
+                            <span key={shortid.generate()}>
                                 {i !== 0 && (
                                     <span className={styles.typeSymbol}>
                                         ,{' '}
                                     </span>
                                 )}
-                                <Type type={typeArgument} key={i} />
+                                <Type type={typeArgument} />
                             </span>
                         ))}
                     </span>
@@ -88,7 +89,7 @@ const MethodDetails = ({ property }) => {
                         return (
                             <div
                                 className={styles.parameters}
-                                key={parameter.name}
+                                key={shortid.generate()}
                             >
                                 <h5>
                                     <code>{name}</code>
@@ -227,7 +228,7 @@ PropertyWrapper.propTypes = {
 
 const Entities = ({ entities, sourceUrl }) =>
     entities.map(({ name, comment, children }) => (
-        <div key={name} id={name && slugify(name)}>
+        <div key={shortid.generate()} id={name && slugify(name)}>
             <h2 className={styles.entityName}>
                 <code>{name}</code>
             </h2>
@@ -243,7 +244,7 @@ const Entities = ({ entities, sourceUrl }) =>
                     .filter(filterByKindOfProperty)
                     .map(property => (
                         <PropertyWrapper
-                            key={`${name}/${property.id}`}
+                            key={shortid.generate()}
                             property={property}
                             sourceUrl={sourceUrl}
                             parentAnchor={name && slugify(name)}
