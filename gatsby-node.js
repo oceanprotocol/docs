@@ -220,22 +220,25 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
                     'ocean/OceanAccounts',
                     'ocean/OceanAssets',
                     'ocean/OceanAgreements',
+                    'ocean/OceanAgreementsConditions',
+                    'ocean/OceanSecretStore',
                     'ocean/OceanVersions',
                     'ocean/Account',
                     'ocean/DID',
-                    'ocean/ServiceAgreements/ServiceAgreement',
                     'ddo/DDO',
                     'ddo/Service',
-                    'aquarius/AquariusProvider',
                     'aquarius/Aquarius',
-                    'aquarius/query/SearchQuery',
-                    'brizo/BrizoProvider',
                     'brizo/Brizo',
                     'keeper/Keeper',
+                    'keeper/ContractHandler',
+                    'keeper/EventHandler',
                     'keeper/Web3Provider',
-                    'secretstore/SecretStoreProvider',
                     'models/Config',
-                    'models/Balance'
+                    'models/Balance',
+                    'ocean/utils/OceanUtils',
+                    'ocean/utils/ServiceAgreement',
+                    'ocean/utils/WebServiceConnector',
+                    'utils/Logger'
                 ]
             }
         })

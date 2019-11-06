@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
+import shortid from 'shortid'
 import Scrollspy from 'react-scrollspy'
 import Scroll from '../../components/Scroll'
 import { filterByKindOfProperty } from './utils'
@@ -12,16 +13,17 @@ export default class Toc extends PureComponent {
     }
 
     subItems = (children, parentName) =>
+        children &&
         children.filter(filterByKindOfProperty).map(({ name, decorators }) => {
             const deprecation = (decorators || []).filter(
                 ({ name }) => name === 'deprecated'
             )[0] // Assuming deprecated annotation
 
             return (
-                <li key={name}>
+                <li key={shortid.generate()}>
                     <Scroll
                         type="id"
-                        element={`${parentName}-${slugify(name)}`}
+                        element={`${parentName}-${name && slugify(name)}`}
                         data-deprecated={!!deprecation}
                         offset={-20}
                     >
@@ -36,14 +38,19 @@ export default class Toc extends PureComponent {
         const parentName = name
 
         subIds.push(
-            children.filter(filterByKindOfProperty).map(({ name }) => {
-                return `${parentName}-${slugify(name)}`
-            })
+            children &&
+                children.filter(filterByKindOfProperty).map(({ name }) => {
+                    return `${parentName}-${name && slugify(name)}`
+                })
         )
 
         return (
-            <li key={name}>
-                <Scroll type="id" element={`${slugify(name)}`} offset={-20}>
+            <li key={shortid.generate()}>
+                <Scroll
+                    type="id"
+                    element={`${name && slugify(name)}`}
+                    offset={-20}
+                >
                     <code>{name}</code>
                 </Scroll>
                 <Scrollspy
