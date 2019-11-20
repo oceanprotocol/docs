@@ -17,7 +17,6 @@ The final source of this tutorial is also available as a CodeSandbox:
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- [Docker](https://www.docker.com/products/docker-desktop) & [Docker Compose](https://docs.docker.com/compose/install/)
 - A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed, [connected to Nile network](http://localhost:8000/tutorials/connect-to-networks/#connect-to-the-nile-testnet)
 - Some Nile ETH from the Nile Faucet. You can either go to [commons.nile.dev-ocean.com/faucet](https://commons.nile.dev-ocean.com/faucet), or execute this command replacing `<YOUR ADDRESS>` with your MetaMask account address:
 
@@ -42,7 +41,7 @@ marketplace/
 
 First, create a new project folder for your new app, e.g. `marketplace`. Within that, add a new file `package.json` with the following content:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/package.json json GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/14df1d877be48deda15afa12bf3c4efbafffcd4b/package.json json GITHUB-EMBED
 
 Notice the `@oceanprotocol/squid` dependency, which is the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/squid-js). Save that file, and in your terminal install the dependencies we have just defined in `package.json`:
 
@@ -58,7 +57,7 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a94
 
 Create a new folder `src/` and within that a `index.js` file with the following content as our base, where we already import squid-js and web3.js:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 1-4,6,14,97-108,119-124 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/14df1d877be48deda15afa12bf3c4efbafffcd4b/src/index.js jsx 1-4,6,14,97-108,119-124 GITHUB-EMBED
 
 At this point you can start up the app and see the result in your browser:
 
