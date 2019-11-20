@@ -19,7 +19,7 @@ To do that, we need to define the asset based on the [OEP-08](https://github.com
 
 Let's create a new file `src/asset.js` and fill it with:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/14df1d877be48deda15afa12bf3c4efbafffcd4b/src/asset.js js GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/876afd6238928b6627893939afbd08484185f91f/src/asset.js js GITHUB-EMBED
 
 Then import this asset definition at the top of `src/index.js`:
 
