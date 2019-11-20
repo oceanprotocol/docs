@@ -18,7 +18,7 @@ In the previous tutorial we added asset publishing. We can now search for publis
 
 We will store the search results in the local component state so we have to set its initial state first:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 15-18 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8b72ca453d50ed7bdaa36f1efb4/src/index.js jsx 15-19 GITHUB-EMBED
 
 Just after the `registerAsset()` function we add a new `searchAssets` function that will handle search:
 
@@ -26,7 +26,7 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a94
 
 Now we need a button to start our search inside the `render()` function, just after the _Register asset_ button:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 114-115 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 115 GITHUB-EMBED
 
 ## Consume Asset
 
@@ -34,7 +34,7 @@ Consuming means downloading one or multiple files attached to an asset. During t
 
 With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `searchAssets()` function:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/14df1d877be48deda15afa12bf3c4efbafffcd4b/src/index.js jsx 69-95 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8b72ca453d50ed7bdaa36f1efb4/src/index.js jsx 72-98 GITHUB-EMBED
 
 We still need a button to start consumption. In the render function, just after the _Search assets_ button, add:
 
