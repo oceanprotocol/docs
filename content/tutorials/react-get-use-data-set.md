@@ -34,7 +34,7 @@ Consuming means downloading one or multiple files attached to an asset. During t
 
 With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `searchAssets()` function:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a948d311d3949636cf832d2664900/src/index.js jsx 69-95 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/14df1d877be48deda15afa12bf3c4efbafffcd4b/src/index.js jsx 69-95 GITHUB-EMBED
 
 We still need a button to start consumption. In the render function, just after the _Search assets_ button, add:
 
