@@ -86,7 +86,7 @@ exports.createPages = ({ graphql, actions }) => {
                             ) {
                                 name
                                 releases(
-                                    first: 1
+                                    first: 30
                                     orderBy: {
                                         field: CREATED_AT
                                         direction: DESC
@@ -94,6 +94,8 @@ exports.createPages = ({ graphql, actions }) => {
                                 ) {
                                     edges {
                                         node {
+                                            isPrerelease
+                                            isDraft
                                             releaseAssets(
                                                 first: 1
                                                 name: "squid-js.json"
@@ -165,11 +167,13 @@ exports.createPages = ({ graphql, actions }) => {
                 await createSwaggerPages(createPage)
 
                 // API: squid-js
+                const lastRelease = result.data.squidJs.repository.releases.edges.filter(
+                    ({ node }) => !node.isPrerelease && !node.isDraft
+                )[0].node.releaseAssets.edges[0].node
                 await createTypeDocPage(
                     createPage,
                     result.data.squidJs.repository.name,
-                    result.data.squidJs.repository.releases.edges[0].node
-                        .releaseAssets.edges[0].node.downloadUrl
+                    lastRelease.downloadUrl
                 )
 
                 //
