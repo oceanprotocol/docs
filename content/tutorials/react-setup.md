@@ -41,7 +41,7 @@ marketplace/
 
 First, create a new project folder for your new app, e.g. `marketplace`. Within that, add a new file `package.json` with the following content:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8b72ca453d50ed7bdaa36f1efb4/package.json json GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/package.json json GITHUB-EMBED
 
 Notice the `@oceanprotocol/squid` dependency, which is the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/squid-js). Save that file, and in your terminal install the dependencies we have just defined in `package.json`:
 
@@ -51,7 +51,7 @@ npm install
 
 Then create the HTML file used to render the React app into. For that, create a folder `public/` and in it a file `index.html` with the following content:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8b72ca453d50ed7bdaa36f1efb4/public/index.html html GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/public/index.html html GITHUB-EMBED
 
 ## Add Basic Markup
 
