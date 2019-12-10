@@ -163,6 +163,7 @@ module.exports = {
                 icon: config.siteIcon
             }
         },
+        'gatsby-plugin-webpack-size',
         'gatsby-plugin-offline',
         {
             resolve: 'gatsby-plugin-google-analytics',
