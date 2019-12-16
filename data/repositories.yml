@@ -41,6 +41,7 @@
     - name: token-bridge-ui
     - name: status
     - name: blockscout
+    - name: ipfs
 
 - group: OceanDB Drivers
   items:
