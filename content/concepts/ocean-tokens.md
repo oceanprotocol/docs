@@ -70,7 +70,6 @@ Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean To
 
 - [Bittrex International](https://international.bittrex.com/)
 - [KuCoin](https://www.kucoin.com/)
-- [DutchX](https://dutchx.readthedocs.io/en/latest/)
 
 ## Pacific Network Ocean Tokens
 
