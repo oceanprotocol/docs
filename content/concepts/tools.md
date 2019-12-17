@@ -61,3 +61,16 @@ There are a few Ocean Protocol command-line interfaces (CLIs). All of them were 
 
 - [ocean-cli](https://github.com/bigchaindb-gmbh/ocean-cli) was built using squid-java
 - [ocean-cli-py](https://github.com/bigchaindb-gmbh/ocean-cli-py) was built using squid-py
+
+## IPFS
+
+The IPFS protocol is integrated into the Ocean Protocol stack in various places. For this, we run and maintain our own IPFS node and gateway with a custom frontpage for simple adding of files to that IPFS node.
+
+- [**Ocean Protocol 💖 IPFS**](https://ipfs.oceanprotocol.com)
+
+<repo name="ipfs"></repo>
+
+To learn more about how IPFS is used, have a look at OEP-15 and the respective blog post:
+
+- [OEP-15: Distributed Asset File Storage with IPFS](https://github.com/oceanprotocol/OEPs/tree/master/15)
+- [Ocean Protocol and IPFS, Sitting In The Merkle Tree](https://blog.oceanprotocol.com/ocean-ipfs-integration-store-asset-files-43c623c356d7)
