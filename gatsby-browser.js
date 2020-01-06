@@ -3,6 +3,7 @@ import './src/styles/global.scss'
 
 // IntersectionObserver polyfill for gatsby-image (Safari, IE)
 if (typeof window.IntersectionObserver === 'undefined') {
+    // eslint-disable-next-line no-unused-expressions
     import('intersection-observer')
 }
 
