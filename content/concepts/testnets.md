@@ -27,7 +27,7 @@ See [Tutorial: Connect to the Nile Testnet](/tutorials/connect-to-networks/#conn
 
 ### Nile Blockchain Explorers
 
-There is a Nile blockchain explorer at [https://submarine.dev-ocean.com/](https://submarine.dev-ocean.com/). You can use it to check the status of a transaction, the balance of an account, and more. It uses the following symbols for Nile Ether and Nile Ocean Tokens:
+There is a Nile blockchain explorer at [https://submarine.nile.dev-ocean.com/](https://submarine.nile.dev-ocean.com/). You can use it to check the status of a transaction, the balance of an account, and more. It uses the following symbols for Nile Ether and Nile Ocean Tokens:
 
 | Cryptocurrency    | Symbol used      |
 | ----------------- | ---------------- |
