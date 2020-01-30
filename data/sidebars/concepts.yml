@@ -23,6 +23,8 @@
       link: /concepts/architecture/
     - title: Secret Store
       link: /concepts/secret-store/
+    - title: Squid
+      link: /concepts/squid/
 
 - group: Contribute
   items:
