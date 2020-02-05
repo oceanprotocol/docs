@@ -13,7 +13,6 @@ It's based on the [TokenBridge by POA Network](https://medium.com/poa-network/in
 
 ## Using the Token Bridge
 
-> **Please Note: If you transfer your Ocean Tokens to the Pacific Network, then you are putting your Ocean Tokens at risk.**
 
 ### Ethereum Mainnet → Ocean Pacific
 
