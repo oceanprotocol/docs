@@ -99,14 +99,8 @@ module.exports = {
                         // https://github.com/andrewbranch/gatsby-remark-vscode
                         resolve: 'gatsby-remark-vscode',
                         options: {
-                            colorTheme: 'Quiet Light',
+                            theme: 'Quiet Light',
                             injectStyles: false,
-                            extensions: [
-                                {
-                                    identifier: 'bungcip.better-toml',
-                                    version: '0.3.2'
-                                }
-                            ],
                             languageAliases: {
                                 text: 'log'
                             }

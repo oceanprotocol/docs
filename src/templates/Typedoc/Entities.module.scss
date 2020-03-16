@@ -1,7 +1,9 @@
 @import 'variables';
 
 .entityName {
-    composes: pathName from '../Doc.module.scss';
+    // stylelint-disable value-keyword-case
+    composes: pathname from '../Doc.module.scss';
+    // stylelint-enable value-keyword-case
     font-size: $font-size-h2;
 }
 
