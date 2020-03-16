@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import remark from 'remark'
 import remarkReact from 'remark-react'
 import styles from './Readme.module.scss'
@@ -18,4 +19,10 @@ export default function Readme({ object }) {
             </aside>
         )
     )
+}
+
+Readme.propTypes = {
+    object: PropTypes.shape({
+        text: PropTypes.string.isRequired
+    })
 }
