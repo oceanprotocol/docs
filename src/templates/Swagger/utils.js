@@ -1,4 +1,4 @@
-export const cleanPathKey = key => {
+export const cleanPathKey = (key) => {
     let keyCleaned = key
 
     if (key.includes('aquarius')) {

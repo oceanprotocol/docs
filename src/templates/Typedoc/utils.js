@@ -2,7 +2,7 @@ export const cleanTypedocData = (data, useClasses) => {
     const nodes = data.children
 
     const cleanData = nodes
-        .map(node => {
+        .map((node) => {
             const child =
                 node.children &&
                 node.children.filter(
@@ -18,7 +18,7 @@ export const cleanTypedocData = (data, useClasses) => {
         .filter(({ name }) => (useClasses || []).includes(name))
         .sort((a, b) => useClasses.indexOf(a.name) - useClasses.indexOf(b.name))
         .map(({ child }) => child)
-        .map(node => ({
+        .map((node) => ({
             ...node,
             children:
                 node &&

@@ -18,7 +18,7 @@ const QuickRun = () => (
                 }
             }
         `}
-        render={data => (
+        render={(data) => (
             <aside className={styles.quickrun}>
                 <header className={styles.header}>
                     <h1 className={styles.tldr}>TL;DR</h1>

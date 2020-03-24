@@ -16,7 +16,7 @@ const HeaderHome = () => (
                 }
             }
         `}
-        render={data => {
+        render={(data) => {
             const { siteTitle, siteDescription } = data.site.siteMetadata
 
             return (

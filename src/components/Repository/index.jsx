@@ -68,7 +68,7 @@ const queryGithub = graphql`
 const Repository = ({ name, links, readme }) => (
     <StaticQuery
         query={queryGithub}
-        render={data => {
+        render={(data) => {
             const repositoriesGitHub =
                 data.github.organization.repositories.edges
             const repositoriesYaml = data.allRepositoriesYaml.edges
@@ -79,7 +79,7 @@ const Repository = ({ name, links, readme }) => (
                 .map(({ node }) => {
                     if (node.name === name) return node
                 })
-                .filter(n => n)
+                .filter((n) => n)
 
             const repo = repoFilteredArray[0]
 
@@ -103,14 +103,14 @@ const Repository = ({ name, links, readme }) => (
             const linksFilteredArray = []
 
             repositoriesYaml.map(({ node }) => {
-                node.items.forEach(item => {
+                node.items.forEach((item) => {
                     if (item.name === name) {
                         linksFilteredArray.push(item.links)
                     }
                 })
             })
 
-            const moreLinks = links || linksFilteredArray.filter(n => n)[0]
+            const moreLinks = links || linksFilteredArray.filter((n) => n)[0]
 
             return (
                 <article className={styles.repository}>

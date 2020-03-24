@@ -15,7 +15,7 @@ export default class TocScroll extends React.Component {
         smoothscroll.polyfill()
     }
 
-    handleClick = e => {
+    handleClick = (e) => {
         e.preventDefault()
 
         let elem = 0

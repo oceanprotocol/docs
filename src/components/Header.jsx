@@ -26,7 +26,7 @@ const query = graphql`
 const Header = () => (
     <StaticQuery
         query={query}
-        render={data => {
+        render={(data) => {
             const { siteTitle } = data.site.siteMetadata
             const sections = data.allSectionsYaml.edges
 

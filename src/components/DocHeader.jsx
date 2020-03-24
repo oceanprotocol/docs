@@ -7,9 +7,7 @@ import styles from './DocHeader.module.scss'
 const DocHeader = ({ title, description, prepend }) => {
     const descriptionHtml =
         description &&
-        remark()
-            .use(remarkReact)
-            .processSync(description).contents
+        remark().use(remarkReact).processSync(description).contents
 
     return (
         <header className={styles.header}>

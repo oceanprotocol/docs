@@ -42,12 +42,12 @@ export default class Numbers extends PureComponent {
             })
 
             const repo = response.data
-                .map(item => {
+                .map((item) => {
                     if (item.name === this.props.name) {
                         return item
                     }
                 })
-                .filter(n => n)
+                .filter((n) => n)
 
             const { forks, stars } = repo
 

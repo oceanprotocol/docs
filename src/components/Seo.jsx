@@ -127,7 +127,7 @@ MetaTags.propTypes = {
 const Seo = ({ title, description, slug, article, location }) => (
     <StaticQuery
         query={query}
-        render={data => {
+        render={(data) => {
             const siteMeta = data.site.siteMetadata
             const shareImage =
                 data.shareImage.edges[0].node.childImageSharp.original.src

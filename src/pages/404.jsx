@@ -37,7 +37,7 @@ export default class NotFoundPage extends Component {
         }
     }
 
-    handleClick = e => {
+    handleClick = (e) => {
         e.preventDefault()
         this.getRandomGif()
     }

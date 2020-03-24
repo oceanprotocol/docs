@@ -9,7 +9,7 @@ export default function Links({ links, url }) {
                 <a href={url}>GitHub</a>
             </li>
             {links &&
-                links.map(link => (
+                links.map((link) => (
                     <li key={link.url}>
                         <a href={link.url}>{link.name}</a>
                     </li>

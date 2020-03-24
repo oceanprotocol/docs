@@ -26,7 +26,7 @@ const query = graphql`
 const Repositories = () => (
     <StaticQuery
         query={query}
-        render={data => {
+        render={(data) => {
             const repositories = data.allRepositoriesYaml.edges
 
             return (

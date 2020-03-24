@@ -13,7 +13,6 @@ It's based on the [TokenBridge by POA Network](https://medium.com/poa-network/in
 
 ## Using the Token Bridge
 
-
 ### Ethereum Mainnet → Ocean Pacific
 
 If you want to transfer OCEAN out of the Ethereum Mainnet, then first you need an Ethereum account with some OCEAN in the Ethereum Mainnet, and be connected to Ethereum Mainnet in MetaMask. If you want to get some OCEAN in the Ethereum Mainnet, then see the page about [Ocean Tokens](/concepts/ocean-tokens/).

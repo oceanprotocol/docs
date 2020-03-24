@@ -114,7 +114,7 @@ exports.createPages = ({ graphql, actions }) => {
                         }
                     }
                 `
-            ).then(async result => {
+            ).then(async (result) => {
                 if (result.errors) {
                     console.log(result.errors)
                     reject(result.errors)
@@ -126,7 +126,7 @@ exports.createPages = ({ graphql, actions }) => {
                 //
                 // Create Doc pages
                 //
-                posts.forEach(post => {
+                posts.forEach((post) => {
                     createPage({
                         path: `${post.node.fields.slug}`,
                         component: docTemplate,
@@ -145,14 +145,14 @@ exports.createPages = ({ graphql, actions }) => {
                 postsDevOcean
                     // only grab files with required frontmatter defined
                     .filter(
-                        post =>
+                        (post) =>
                             post.node.frontmatter &&
                             post.node.frontmatter.slug &&
                             post.node.frontmatter.title &&
                             post.node.frontmatter.description &&
                             post.node.frontmatter.section
                     )
-                    .forEach(post => {
+                    .forEach((post) => {
                         createPage({
                             path: `${post.node.fields.slug}`,
                             component: docTemplate,
@@ -255,7 +255,7 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
 // Create pages from swagger json files
 //
 // https://github.com/swagger-api/swagger-js
-const fetchSwaggerSpec = async name => {
+const fetchSwaggerSpec = async (name) => {
     try {
         const client = await Swagger(
             `https://${name}.commons.oceanprotocol.com/spec`
@@ -275,11 +275,11 @@ const fetchSwaggerSpec = async name => {
     }
 }
 
-const createSwaggerPages = async createPage => {
+const createSwaggerPages = async (createPage) => {
     const swaggerComponents = ['aquarius', 'brizo']
     const apiSwaggerTemplate = path.resolve('./src/templates/Swagger/index.jsx')
 
-    const getSlug = name => {
+    const getSlug = (name) => {
         const slug = `/references/${name}/`
         return slug
     }

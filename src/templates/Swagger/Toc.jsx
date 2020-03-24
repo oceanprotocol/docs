@@ -9,7 +9,7 @@ import stylesSidebar from '../../components/Sidebar.module.scss'
 const Toc = ({ data }) => {
     const Ids = []
 
-    const items = Object.keys(data.paths).map(key => {
+    const items = Object.keys(data.paths).map((key) => {
         Ids.push(slugify(cleanPathKey(key)))
 
         return (

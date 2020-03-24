@@ -25,7 +25,7 @@ const ParameterExample = ({ properties }) => (
         <code className="language-json">
             {'{'}
             {properties &&
-                Object.keys(properties).map(key => (
+                Object.keys(properties).map((key) => (
                     <div key={key}>
                         <span className="token property">{`  "${key}"`}</span>
                         <span className="token operator">: </span>
@@ -57,7 +57,7 @@ const Parameters = ({ parameters }) => (
     <>
         <h4 className={styles.subHeading}>Parameters</h4>
 
-        {parameters.map(parameter => {
+        {parameters.map((parameter) => {
             const { name, type, required, description, schema } = parameter
 
             return (
@@ -93,7 +93,7 @@ Parameters.propTypes = {
 const Responses = ({ responses }) => (
     <>
         <h4 className={styles.subHeading}>Responses</h4>
-        {Object.keys(responses).map(key => (
+        {Object.keys(responses).map((key) => (
             <div key={key} className={styles.response}>
                 <code>{key}</code> {responses[key].description}
             </div>

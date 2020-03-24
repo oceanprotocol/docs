@@ -80,7 +80,7 @@ const MethodDetails = ({ property }) => {
                 <div>
                     <h4 className={styles.subHeading}>Parameters</h4>
 
-                    {parameters.map(parameter => {
+                    {parameters.map((parameter) => {
                         const { name, type, flags, comment } = parameter
                         const { isOptional } = flags
                         const description =
@@ -242,7 +242,7 @@ const Entities = ({ entities, sourceUrl }) =>
             {children &&
                 children
                     .filter(filterByKindOfProperty)
-                    .map(property => (
+                    .map((property) => (
                         <PropertyWrapper
                             key={shortid.generate()}
                             property={property}

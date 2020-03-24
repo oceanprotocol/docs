@@ -130,7 +130,7 @@ export default class Sidebar extends Component {
                     <div key={i}>
                         {collapsed ? (
                             group.items.some(
-                                item => item.link === location.pathname
+                                (item) => item.link === location.pathname
                             ) ? (
                                 <SidebarGroup
                                     i={i}

@@ -24,7 +24,7 @@ const query = graphql`
 
 const FooterSocial = ({ social }) => (
     <nav className={styles.links}>
-        {Object.keys(social).map(key => (
+        {Object.keys(social).map((key) => (
             <a key={key} href={social[key]}>
                 {key}
             </a>
@@ -39,7 +39,7 @@ FooterSocial.propTypes = {
 const Footer = () => (
     <StaticQuery
         query={query}
-        render={data => {
+        render={(data) => {
             const { siteCompany, social } = data.site.siteMetadata
 
             return (

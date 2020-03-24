@@ -10,7 +10,7 @@ const RepositoryList = ({ repositories }) => (
                 <h3 className={styles.repositoryCategoryTitle}>{node.group}</h3>
 
                 <div className={styles.repositoryList}>
-                    {node.items.map(item => (
+                    {node.items.map((item) => (
                         <Repository
                             key={item.name}
                             name={item.name}
