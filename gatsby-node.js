@@ -225,6 +225,7 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
                     'ocean/OceanAssets',
                     'ocean/OceanAgreements',
                     'ocean/OceanAgreementsConditions',
+                    'ocean/OceanCompute',
                     'ocean/OceanSecretStore',
                     'ocean/OceanVersions',
                     'ocean/Account',
