@@ -82,3 +82,11 @@
         - name: Research Board
           url: https://github.com/oceanprotocol/ocean/projects/3
     - name: dev-ocean
+
+- group: Compute-to-Data Enviroment
+  items:
+    - name: operator-service
+    - name: operator-engine
+    - name: pod-configuration
+    - name: pod-publishing
+  

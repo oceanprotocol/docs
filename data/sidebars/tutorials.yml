@@ -31,8 +31,18 @@
       link: /tutorials/react-setup/
     - title: Publish a Data Set
       link: /tutorials/react-publish-data-set/
-    - title: Get & Use a Data Set
+    - title: Search & Consume a Data Set
       link: /tutorials/react-get-use-data-set/
+    - title: Publish a Data Set with Compute features
+      link: /tutorials/react-publish-data-set-compute/
+    - title: Publish a Algorithm
+      link: /tutorials/react-publish-algorithm/
+    - title: Compute using a published algorithm on a Data Set
+      link: /tutorials/react-compute-published-algorithm/
+    - title: Compute using a raw algorithm on a Data Set
+      link: /tutorials/react-compute-raw/
+    - title: Get Status of a Compute Job
+      link: /tutorials/react-compute-status/
 
 - group: squid-py Tutorials
   items:
