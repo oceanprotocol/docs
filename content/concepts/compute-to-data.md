@@ -9,16 +9,12 @@ section: concepts
 ## Motivation
 
 The most basic scenario for a Publisher is to provide access to the datasets they own or manage.
-In addition to that, a Publisher could offer other data-related services.
-Some possibilities are:
-
-1. A service to execute some computation on top of their data. This has some benefits:
+In addition to that, a Publisher could offer a service to execute some computation on top of their data. This has some benefits:
 
    - The data **never** leaves the Publisher enclave.
    - It's not necessary to move the data; the algorithm is sent to the data.
    - Having only one copy of the data and not moving it makes it easier to be compliant with data protection regulations.
 
-2. A service to store newly-derived datasets. As a result of the computation on existing datasets, a new dataset could be created. Publishers could offer a storage service to make use of their existing storage capabilities. This is optional; users could also download the newly-derived datasets.
 
 ## Architecture
 
@@ -53,10 +49,10 @@ but can be called independently if it.
 
 The Operator Service is in charge of stablishing the communication with the K8s cluster, allowing to:
 
-* Register workflows as K8s objects
-* List the workflows registered in K8s
-* Stop a running workflow execution
-* Get information about the state of execution of a workflow
+- Register workflows as K8s objects
+- List the workflows registered in K8s
+- Stop a running workflow execution
+- Get information about the state of execution of a workflow
 
 The Operator Service doesn't provide any storage capability, all the state is stored directly in the K8s cluster.
 
@@ -67,12 +63,12 @@ The Operator Service doesn't provide any storage capability, all the state is st
 
 The main responsibilities are:
 
-* Expose an HTTP API allowing for the execution of data access and compute endpoints.
-* Authorize the user on-chain using the proper Service Agreement. That is, validate that the user requesting the service is allowed to use that service.
-* Interact with the infrastructure (cloud/on-premise) using the Publisher's credentials.
-* Start/stop/execute computing instances with the algorithms provided by users.
-* Retrieve the logs generated during executions.
-* Register newly-derived assets arising from the executions (i.e. as new Ocean assets) (if required by the consumer).
+- Expose an HTTP API allowing for the execution of data access and compute endpoints.
+- Authorize the user on-chain using the proper Service Agreement. That is, validate that the user requesting the service is allowed to use that service.
+- Interact with the infrastructure (cloud/on-premise) using the Publisher's credentials.
+- Start/stop/execute computing instances with the algorithms provided by users.
+- Retrieve the logs generated during executions.
+- Register newly-derived assets arising from the executions (i.e. as new Ocean assets) (if required by the consumer).
 
 
 ### Flow
@@ -81,14 +77,14 @@ The main responsibilities are:
 
 In the above diagram you can see the initial integration supported. It involves the following components/actors:
 
-* Data Scientists/Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
-* Ocean Keeper - In charge of enforcing the Service Agreement by tracing conditions.
-* Operator-Service - Micro-service that is handling the compute requests.
-* Operator-Engine - The computing systems where the compute will be executed.
+- Data Scientists/Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
+- Ocean Keeper - In charge of enforcing the Service Agreement by tracing conditions.
+- Operator-Service - Micro-service that is handling the compute requests.
+- Operator-Engine - The computing systems where the compute will be executed.
 
 Before the flow can begin, the following pre-conditions must be met:
 
-* The Asset DDO has a compute service.
-* The Asset DDO must specify the Brizo endpoint exposed by the Publisher.
-* The Service Agreement template must already be predefined and whitelisted `on-chain`.
+- The Asset DDO has a compute service.
+- The Asset DDO must specify the Brizo endpoint exposed by the Publisher.
+- The Service Agreement template must already be predefined and whitelisted `on-chain`.
 

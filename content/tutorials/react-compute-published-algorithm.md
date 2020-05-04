@@ -9,7 +9,7 @@ This is a continuation of the [React App Setup](/tutorials/react-setup/) tutoria
 
 1. [React App Setup](/tutorials/react-setup/)
 
-Open `src/index.js` from your `marketplace/` folder.
+Open `src/Compute.js` from your `marketplace/` folder.
 
 ## Define Compute Output
 
