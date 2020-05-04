@@ -40,7 +40,7 @@ and use them
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 61-70 GITHUB-EMBED
 
-# Order the dataset
+## Order the dataset
 
 Next, we have to order the dataset that we are going to compute upon. We are going to use the ddoAssetId, which was set during publishing of the asset.
 
