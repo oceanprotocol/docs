@@ -6,7 +6,7 @@ import styles from './Readme.module.scss'
 
 export default function Readme({ object }) {
     const readmeHtml =
-        object && remark().use(remarkReact).processSync(object.text).contents
+        object && remark().use(remarkReact).processSync(object.text).result
 
     return (
         object && (
