@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderSection from '../components/HeaderSection'
