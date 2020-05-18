@@ -1,5 +1,5 @@
 ---
-title: Get & Use a Data Set
+title: Search & Consume a Data Set
 description: Tutorial to get and use a data set in a basic React app.
 ---
 
@@ -34,7 +34,7 @@ Consuming means downloading one or multiple files attached to an asset. During t
 
 With the following code we start the consume process with the first search result, then go on to download its first attached file. Put it after the `searchAssets()` function:
 
-GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8b72ca453d50ed7bdaa36f1efb4/src/index.js jsx 72-98 GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/index.js jsx 73-95 GITHUB-EMBED
 
 We still need a button to start consumption. In the render function, just after the _Search assets_ button, add:
 

@@ -23,6 +23,8 @@
       link: /concepts/architecture/
     - title: Secret Store
       link: /concepts/secret-store/
+    - title: Compute-to-Data
+      link: /concepts/compute-to-data/
 
 - group: Contribute
   items:

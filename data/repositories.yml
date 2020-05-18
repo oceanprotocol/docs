@@ -56,6 +56,13 @@
     - name: osmosis-ipfs-driver
     - name: osmosis-on-premise-driver
 
+- group: Compute-to-Data
+  items:
+    - name: operator-service
+    - name: operator-engine
+    - name: pod-configuration
+    - name: pod-publishing
+
 - group: Parity Secret Store
   items:
     - name: parity-ethereum
