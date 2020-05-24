@@ -52,8 +52,8 @@ For AWS , please make sure that your class allocates volumes in the same region 
 
 We created our own 'standard' class in AWS:
 
-```bash
-     kubectl get storageclass standard -o yaml
+
+kubectl get storageclass standard -o yaml
 
 
     allowedTopologies:
@@ -69,59 +69,61 @@ We created our own 'standard' class in AWS:
     provisioner: kubernetes.io/aws-ebs
     reclaimPolicy: Delete
     volumeBindingMode: Immediate
-```
+
+
     
 ## Create namespaces
 
-```bash
-kubectl create ns ocean-operator
-kubectl create ns ocean-compute
-```
+    kubectl create ns ocean-operator
+    kubectl create ns ocean-compute
+
+
 
 ## Deploy Operator-Service
 
-```bash
-kubectl config set-context --current --namespace ocean-operator
-kubectl create -f /ocean/operator-service/postgres-configmap.yaml
-kubectl create -f /ocean/operator-service/postgres-storage.yaml
-kubectl create -f /ocean/operator-service/postgres-deployment.yaml
-kubectl create -f /ocean/operator-service/postgresql-service.yaml
-kubectl apply -f /ocean/operator-service/deployment.yaml
-kubectl apply -f /ocean/operator-service/role_binding.yaml
-kubectl apply -f /ocean/operator-service/service_account.yaml
-```
+
+    kubectl config set-context --current --namespace ocean-operator
+    kubectl create -f /ocean/operator-service/postgres-configmap.yaml
+    kubectl create -f /ocean/operator-service/postgres-storage.yaml
+    kubectl create -f /ocean/operator-service/postgres-deployment.yaml
+    kubectl create -f /ocean/operator-service/postgresql-service.yaml
+    kubectl apply -f /ocean/operator-service/deployment.yaml
+    kubectl apply -f /ocean/operator-service/role_binding.yaml
+    kubectl apply -f /ocean/operator-service/service_account.yaml
+
+
 
 ## Deploy Operator-Engine
 
-```bash
-kubectl config set-context --current --namespace ocean-compute
-kubectl apply -f /ocean/operator-engine/sa.yml
-kubectl apply -f /ocean/operator-engine/binding.yml
-kubectl apply -f /ocean/operator-engine/operator.yml
-kubectl apply -f /ocean/operator-engine/computejob-crd.yaml
-kubectl apply -f /ocean/operator-engine/workflow-crd.yaml
-kubectl create -f /ocean/operator-service/postgres-configmap.yaml
-```
+
+    kubectl config set-context --current --namespace ocean-compute
+    kubectl apply -f /ocean/operator-engine/sa.yml
+    kubectl apply -f /ocean/operator-engine/binding.yml
+    kubectl apply -f /ocean/operator-engine/operator.yml
+    kubectl apply -f /ocean/operator-engine/computejob-crd.yaml
+    kubectl apply -f /ocean/operator-engine/workflow-crd.yaml
+    kubectl create -f /ocean/operator-service/postgres-configmap.yaml
+
+
 
 ## Expose Operator - Service
 
-```bash
-kubectl expose deployment operator-api --namespace=ocean-operator --port=8050
-```
+
+    kubectl expose deployment operator-api --namespace=ocean-operator --port=8050
+
 
 Run a port forward or create your ingress service (not covered here):
 
-```bash
-kubectl -n ocean-operator port-forward svc/operator-api 8050
-```
+
+    kubectl -n ocean-operator port-forward svc/operator-api 8050
+
 
 ## Initialize database
 
 If your cluster is running on example.com:
 
-```bash
-curl -X POST "http://example.com:8050/api/v1/operator/pgsqlinit" -H  "accept: application/json"
-```
+    curl -X POST "http://example.com:8050/api/v1/operator/pgsqlinit" -H  "accept: application/json"
+
 
 ## Update Brizo
 
