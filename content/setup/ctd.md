@@ -70,7 +70,14 @@ kubectl get storageclass standard -o yaml
     reclaimPolicy: Delete
     volumeBindingMode: Immediate
 
+Or we can use this for minikube:
 
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+        name: standard
+    provisioner: docker.io/hostpath
+    reclaimPolicy: Retain
     
 ## Create namespaces
 
