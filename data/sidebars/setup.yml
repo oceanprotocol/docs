@@ -20,4 +20,4 @@
 - group: Compute-to-Data
   items:
     - title: Run a Compute-to-Data Environment
-      link: /setup/ctd/
+      link: /setup/compute-to-data/
