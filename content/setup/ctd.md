@@ -4,7 +4,7 @@ description: Set Up a Compute-to-Data enviroment.
 ---
 
 
-## Requirments
+## Requirements
 
 At the time of writing, we need the following:
 
