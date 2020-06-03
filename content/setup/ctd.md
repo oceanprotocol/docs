@@ -79,6 +79,9 @@ Or we can use this for minikube:
     provisioner: docker.io/hostpath
     reclaimPolicy: Retain
     
+    
+    For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
+    
 ## Create namespaces
 
     kubectl create ns ocean-operator
