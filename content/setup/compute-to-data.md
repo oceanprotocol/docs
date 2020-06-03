@@ -1,13 +1,22 @@
 ---
 title: Set Up a Compute-to-Data Environment
-description: Set Up a Compute-to-Data enviroment.
+description: Set Up a Compute-to-Data environment.
 ---
 
 
 ## Requirements
 
-At the time of writing, we need the following:
+
 First, create a folder with the following structure:
+
+```
+ocean/
+  barge/
+  operator-service/
+  operator-engine/
+```
+
+Then you need the following parts:
 
 - working [Barge](https://github.com/oceanprotocol/barge). For this setup, we will asume the Barge is installed in /ocean/barge/
 - a working Kubernetes (K8s) cluster (Minikube is a good start)
