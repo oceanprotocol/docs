@@ -137,7 +137,7 @@ If your cluster is running on example.com:
 
 ## Update Brizo
 
-Update Brizo by adding or updating the OPERATOR_SERVICE_URL env  (in /ocean/barge/compose-files/brizo.yaml)
+Update Brizo by adding or updating the `OPERATOR_SERVICE_URL` env  in `/ocean/barge/compose-files/brizo.yaml`
 
 OPERATOR_SERVICE_URL: http://example.com:8050/
 
