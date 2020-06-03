@@ -103,7 +103,7 @@ For more information, please visit https://kubernetes.io/docs/concepts/storage/s
 
 
 
-## Deploy Operator-Engine
+## Deploy Operator Engine
 
 
     kubectl config set-context --current --namespace ocean-compute
