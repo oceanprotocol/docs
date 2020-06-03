@@ -47,12 +47,6 @@ The following resources need attention:
 |                 | `AWS_BUCKET_OUTPUT`                                    | Bucket that will hold the output data (algorithm logs & algorithm output).                  |
 |                 | `AWS_BUCKET_ADMINLOGS`                                 | Bucket that will hold the admin logs (logs from pod-configure & pod-publish).               |
 |                 | `STORAGE_CLASS`                                        | Storage class to use (see next section).                                                    |
-- operator.yaml  - contains configuration variabiles
-    - ACCOUNT_JSON , ACCOUNT_PASSWORD = Defines the account that is going to be used when publishing results back to OceanProtocol
-    - AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY_ID , AWS_REGION = S3 credidentials for the logs and output buckets
-    - AWS_BUCKET_OUTPUT  = Bucket that will hold the output data (algorithm logs & algorithm output)
-    - AWS_BUCKET_ADMINLOGS = Bucket that will hold the admin logs (logs from pod-configure & pod-publish)
-    - STORAGE_CLASS = Storage class to use (see next section)
 
 ## Storage class
 
