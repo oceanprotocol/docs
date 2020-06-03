@@ -12,19 +12,19 @@ At the time of writing, we need the following:
 - a working Kubernetes cluster (minikube is a good start)
 - a working kubectl connected to the k8 cluster
 - one folder (/ocean/operator-service/), in which we will download the following:
-    - [postgres-configmap.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgres-configmap.yaml)
-    - [postgres-storage.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgres-storage.yaml)
-    - [postgres-deployment.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgres-deployment.yaml)
-    - [postgres-service.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgresql-service.yaml)
-    - [deployment.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/deployment.yaml)
-    - [role_binding.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/role_binding.yaml)
-    - [service_account.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/service_account.yaml)
+    - [postgres-configmap.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-configmap.yaml)
+    - [postgres-storage.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-storage.yaml)
+    - [postgres-deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-deployment.yaml)
+    - [postgres-service.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgresql-service.yaml)
+    - [deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/deployment.yaml)
+    - [role_binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/role_binding.yaml)
+    - [service_account.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/service_account.yaml)
 - one folder (/ocean/operator-engine/), in which we will download the following:
-    - [sa.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/sa.yml)
-    - [binding.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/binding.yml)
-    - [operator.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/operator.yml)        
-    - [computejob-crd.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/computejob-crd.yaml)
-    - [workflow-crd.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/workflow-crd.yaml)    
+    - [sa.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/sa.yml)
+    - [binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/binding.yml)
+    - [operator.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/operator.yml)        
+    - [computejob-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/computejob-crd.yaml)
+    - [workflow-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/workflow-crd.yaml)    
 
 ## Customize your Operator Service deployment
 
