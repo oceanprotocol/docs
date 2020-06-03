@@ -17,7 +17,7 @@
   items:
     - title: Run a Keeper
       link: /setup/keeper/
-- group: Compute-to-Data Enviroment
+- group: Compute-to-Data
   items:
     - title: Run a Compute-to-Data Enviroment
       link: /setup/ctd/
