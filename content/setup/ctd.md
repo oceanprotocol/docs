@@ -54,6 +54,7 @@ For AWS , please make sure that your class allocates volumes in the same region 
 We created our own 'standard' class in AWS:
 
 
+```bash
 kubectl get storageclass standard -o yaml
 
 
