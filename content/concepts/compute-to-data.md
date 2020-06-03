@@ -5,16 +5,14 @@ slug: /concepts/compute-to-data/
 section: concepts
 ---
 
-
 ## Motivation
 
 The most basic scenario for a Publisher is to provide access to the datasets they own or manage.
 In addition to that, a Publisher could offer a service to execute some computation on top of their data. This has some benefits:
 
-   - The data **never** leaves the Publisher enclave.
-   - It's not necessary to move the data; the algorithm is sent to the data.
-   - Having only one copy of the data and not moving it makes it easier to be compliant with data protection regulations.
-
+- The data **never** leaves the Publisher enclave.
+- It's not necessary to move the data; the algorithm is sent to the data.
+- Having only one copy of the data and not moving it makes it easier to be compliant with data protection regulations.
 
 ## Architecture
 
@@ -40,8 +38,8 @@ Because of these credentials, the execution of Brizo **SHOULD NOT** be delegated
 
 ### Compute-to-Data Enviroment (Operator-Service)
 
-The Operator Service is a micro-service implementing part of the Ocean Protocol 
-[Compute to the Data OEP-12](https://github.com/oceanprotocol/OEPs/tree/master/12), 
+The Operator Service is a micro-service implementing part of the Ocean Protocol
+[Compute to the Data OEP-12](https://github.com/oceanprotocol/OEPs/tree/master/12),
 in charge of managing the workflow executing requests.
 
 Typically the Operator Service is integrated from the [Brizo proxy](https://github.com/oceanprotocol/brizo),
@@ -56,7 +54,6 @@ The Operator Service is in charge of stablishing the communication with the K8s 
 
 The Operator Service doesn't provide any storage capability, all the state is stored directly in the K8s cluster.
 
-
 <repo name="operator-service"></repo>
 
 ### Responsibilities
@@ -69,7 +66,6 @@ The main responsibilities are:
 - Start/stop/execute computing instances with the algorithms provided by users.
 - Retrieve the logs generated during executions.
 - Register newly-derived assets arising from the executions (i.e. as new Ocean assets) (if required by the consumer).
-
 
 ### Flow
 
@@ -87,4 +83,3 @@ Before the flow can begin, the following pre-conditions must be met:
 - The Asset DDO has a compute service.
 - The Asset DDO must specify the Brizo endpoint exposed by the Publisher.
 - The Service Agreement template must already be predefined and whitelisted `on-chain`.
-

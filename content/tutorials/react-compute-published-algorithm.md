@@ -35,15 +35,14 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583
 
 ## Final Result
 
-Now that we have all the requirements, we need a function to handle it. 
+Now that we have all the requirements, we need a function to handle it.
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 58-89,92-94 GITHUB-EMBED
-
 
 The last thing we need is a button to start our compute job:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 202-207 GITHUB-EMBED
 
-** Notice that the button will be disabled if there were no previous published Datasets and Algorithms.
+\*\* Notice that the button will be disabled if there were no previous published Datasets and Algorithms.
 
 **Move on to [Get Status of a Compute Job](react-compute-status).**

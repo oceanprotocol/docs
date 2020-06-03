@@ -64,6 +64,5 @@ A local testnet similar to Spree but launched by using the `--local-ganache-node
 
 > You shouldn't use a Ganache-Based Testnet unless you know why you're doing so. For example, a Ganache-based testnet can be used to test some smart contracts, but it can't be used with a Secret Store.
 
-
 [^1]: Formerly called Ocean Protocol Testnet v0.1, it was announced as part of the Plankton milestone.
 [^2]: Also known as the Nile Beta Network. Formerly called the Ocean POA Testnet.
