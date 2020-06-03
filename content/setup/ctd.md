@@ -89,7 +89,7 @@ For more information, please visit https://kubernetes.io/docs/concepts/storage/s
 
 
 
-## Deploy Operator-Service
+## Deploy Operator Service
 
 
     kubectl config set-context --current --namespace ocean-operator
