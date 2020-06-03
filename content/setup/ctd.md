@@ -15,7 +15,7 @@ At the time of writing, we need the following:
     - [postgres-configmap.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgres-configmap.yaml)
     - [postgres-storage.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgres-storage.yaml)
     - [postgres-deployment.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgres-deployment.yaml)
-    - [postgres-service.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgres-service.yaml)
+    - [postgres-service.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/postgresql-service.yaml)
     - [deployment.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/deployment.yaml)
     - [role_binding.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/role_binding.yaml)
     - [service_account.yaml](https://github.com/oceanprotocol/operator-service/blob/develop/deploy_on_k8s/service_account.yaml)
@@ -23,8 +23,8 @@ At the time of writing, we need the following:
     - [sa.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/sa.yml)
     - [binding.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/binding.yml)
     - [operator.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/operator.yml)        
-    - [computejob-crd.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/computejob-crd.yml)
-    - [workflow-crd.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/workflow-crd.yml)    
+    - [computejob-crd.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/computejob-crd.yaml)
+    - [workflow-crd.yaml](https://github.com/oceanprotocol/operator-engine/blob/develop/k8s_install/workflow-crd.yaml)    
 
 ## Customize your Operator Service deployment
 
