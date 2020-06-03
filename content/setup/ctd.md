@@ -9,7 +9,7 @@ description: Set Up a Compute-to-Data enviroment.
 At the time of writing, we need the following:
 
 - working [Barge](https://github.com/oceanprotocol/barge). For this setup, we will asume the Barge is installed in /ocean/barge/
-- a working Kubernetes cluster (minikube is a good start)
+- a working Kubernetes (K8s) cluster (Minikube is a good start)
 - a working kubectl connected to the k8 cluster
 - one folder (/ocean/operator-service/), in which we will download the following:
     - [postgres-configmap.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-configmap.yaml)
