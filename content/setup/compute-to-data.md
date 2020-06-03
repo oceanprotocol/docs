@@ -9,7 +9,7 @@ description: Set Up a Compute-to-Data environment.
 
 First, create a folder with the following structure:
 
-```
+```text
 ocean/
   barge/
   operator-service/
