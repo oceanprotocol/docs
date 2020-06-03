@@ -117,7 +117,7 @@ For more information, please visit https://kubernetes.io/docs/concepts/storage/s
 
 
 
-## Expose Operator - Service
+## Expose Operator Service
 
 
     kubectl expose deployment operator-api --namespace=ocean-operator --port=8050
