@@ -7,6 +7,7 @@ description: Set Up a Compute-to-Data enviroment.
 ## Requirements
 
 At the time of writing, we need the following:
+First, create a folder with the following structure:
 
 - working [Barge](https://github.com/oceanprotocol/barge). For this setup, we will asume the Barge is installed in /ocean/barge/
 - a working Kubernetes (K8s) cluster (Minikube is a good start)
