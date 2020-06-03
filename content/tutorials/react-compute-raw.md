@@ -29,7 +29,6 @@ and them import it to our Compute.js:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 4 GITHUB-EMBED
 
-
 ## Define Compute Output
 
 Let's define some options for our upcoming job:
@@ -60,6 +59,6 @@ The last thing we need is a button inside the `render()` function:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 208-211 GITHUB-EMBED
 
-** Notice that the button will be disabled if there were no previous published Datasets.
+\*\* Notice that the button will be disabled if there were no previous published Datasets.
 
 **Move on to [Get Status of a Compute Job](react-compute-status).**

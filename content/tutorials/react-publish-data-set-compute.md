@@ -19,7 +19,6 @@ This is achiveable by adding a 'compute' service to the DDO:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 23-27 GITHUB-EMBED
 
-
 ## Handle Asset Publishing
 
 Note that ocean.assets.create will define an 'access' service if the services list is missing. Since we are providing this attribute, our asset will have only a 'compute' service and no 'access' service.
@@ -29,6 +28,5 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583
 The last thing we need is a button to start our registration inside the `render()` function:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 143 GITHUB-EMBED
-
 
 **Move on to [Publish a Algorithm](/tutorials/react-publish-algorithm/).**

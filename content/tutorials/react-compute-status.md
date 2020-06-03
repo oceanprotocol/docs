@@ -29,4 +29,4 @@ and have a button for it:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/107d1fa7d0c583cc8042339f1f5090ff9ee0920b/src/Compute.js jsx 223 GITHUB-EMBED
 
-** Notice that the button will be disabled if jobId is missing.
+\*\* Notice that the button will be disabled if jobId is missing.
