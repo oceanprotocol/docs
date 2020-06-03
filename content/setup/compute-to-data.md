@@ -40,6 +40,7 @@ Then you need the following parts:
 
 
 The following resources need attention:
+
 | Resource                  | Variable           | Description                                                                                            |
 | ------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
 | `postgres-configmap.yaml` |                    | Contains secrets for the PostgreSQL deployment.                                                        |
