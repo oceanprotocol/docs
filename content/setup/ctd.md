@@ -1,5 +1,5 @@
 ---
-title: Set Up a Compute-to-Data enviroment
+title: Set Up a Compute-to-Data Environment
 description: Set Up a Compute-to-Data enviroment.
 ---
 
