@@ -28,7 +28,7 @@ At the time of writing, we need the following:
 
 ## Customize your Operator Service deployment
 
-The following resources needs attention:
+The following resources need attention:
 
     - postgres-configmap.yaml  - contains secrets for the postgresql deployment
     - deployment.yaml - ALGO_POD_TIMEOUT = Allowed time for a algorithm to run. If it exceeded this value (in minutes), it's going to get killed
