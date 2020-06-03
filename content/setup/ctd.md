@@ -35,7 +35,7 @@ The following resources need attention:
 
 ## Customize your Operator Engine deployment
 
-The following resource needs attention:
+The following resources need attention:
 
 - operator.yaml  - contains configuration variabiles
     - ACCOUNT_JSON , ACCOUNT_PASSWORD = Defines the account that is going to be used when publishing results back to OceanProtocol
