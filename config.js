@@ -12,6 +12,7 @@ module.exports = {
         Blog: 'https://blog.oceanprotocol.com',
         GitHub: 'https://github.com/oceanprotocol',
         Twitter: 'https://twitter.com/oceanprotocol',
+        Discord: 'https://discord.gg/TnXjkR5',
         Port: 'https://port.oceanprotocol.com',
         Telegram: 'https://t.me/OceanProtocol_Community'
     },

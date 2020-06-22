@@ -14,7 +14,8 @@ const query = graphql`
                     Blog
                     GitHub
                     Twitter
-                    Gitter
+                    Discord
+                    Port
                     Telegram
                 }
             }
