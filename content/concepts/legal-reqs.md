@@ -30,7 +30,7 @@ Otherwise you are an "external contributor" and you must do the following:
    - Make sure you're using the correct syntax for comments (which varies from language to language). The example shown above is for a Python file.
 
 1. Read the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/).
-1. You will be asked to include a Signed-off-by line in all your commit messages. (Instructions are given in the next step.) Make sure you understand that including a Signed-off-by line in your commits certifies that you can make the statements in the Developer Certificate of Origin. If you have questions about this, then please [ask on Gitter](https://gitter.im/oceanprotocol/Lobby) or elsewhere. Do not continue until you fully understand.
+1. You will be asked to include a Signed-off-by line in all your commit messages. (Instructions are given in the next step.) Make sure you understand that including a Signed-off-by line in your commits certifies that you can make the statements in the Developer Certificate of Origin. If you have questions about this, then please [ask on Discord](https://discord.gg/TnXjkR5) or elsewhere. Do not continue until you fully understand.
 1. Make sure that all your commit messages include a Signed-off-by line of the form:
 
    ```text

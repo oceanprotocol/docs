@@ -10,7 +10,7 @@ Code development follows the [Ocean Engineering Principles](/concepts/principles
 
 - Read and understand the [legal requirements when contributing code](/concepts/legal-reqs/).
 - Look through the [dev-ocean repository on GitHub](https://github.com/oceanprotocol/dev-ocean). It summarizes Ocean Protocol software development practices and policies.
-- Ask technical questions in the [Ocean Protocol chatroom on Gitter](https://gitter.im/oceanprotocol/Lobby).
+- Ask technical questions in the [Ocean Protocol chatroom on Discord](https://discord.gg/TnXjkR5).
 - Find repository-specific development notes in each repository (usually in the root `README.md` file).
 
 ## Report a Vulnerability

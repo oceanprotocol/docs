@@ -12,7 +12,7 @@ module.exports = {
         Blog: 'https://blog.oceanprotocol.com',
         GitHub: 'https://github.com/oceanprotocol',
         Twitter: 'https://twitter.com/oceanprotocol',
-        Gitter: 'https://gitter.im/oceanprotocol/Lobby',
+        Port: 'https://port.oceanprotocol.com',
         Telegram: 'https://t.me/OceanProtocol_Community'
     },
     githubContentPath:
