@@ -1,25 +1,25 @@
 @import 'variables';
 
 .header {
-    padding-top: $spacer;
-    margin-bottom: $spacer;
+  padding-top: $spacer;
+  margin-bottom: $spacer;
 
-    @media screen and (min-width: $break-point--small) {
-        padding-top: $spacer * $line-height;
-        margin-bottom: $spacer * $line-height;
-    }
+  @media screen and (min-width: $break-point--small) {
+    padding-top: $spacer * $line-height;
+    margin-bottom: $spacer * $line-height;
+  }
 }
 
 .title {
-    font-size: $font-size-h1 / 1.3;
-    margin-top: 0;
-    margin-bottom: $spacer / $line-height;
+  font-size: $font-size-h1 / 1.3;
+  margin-top: 0;
+  margin-bottom: $spacer / $line-height;
 
-    @media screen and (min-width: $break-point--small) {
-        font-size: $font-size-h1;
-    }
+  @media screen and (min-width: $break-point--small) {
+    font-size: $font-size-h1;
+  }
 }
 
 .lead {
-    font-size: $font-size-large;
+  font-size: $font-size-large;
 }

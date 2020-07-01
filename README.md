@@ -75,7 +75,6 @@ To enforce a consistent code style, linting is setup for pretty much every file.
 In this repo the following tools are setup for that:
 
 - ESLint with [eslint-config-oceanprotocol](https://github.com/oceanprotocol/eslint-config-oceanprotocol)
-- Stylelint with [stylelint-config-bigchaindb](https://github.com/bigchaindb/stylelint-config-bigchaindb)
 - [markdownlint](https://github.com/DavidAnson/markdownlint)
 - [Prettier](https://prettier.io)
 
@@ -93,7 +92,6 @@ If you use VS Code as your editor, you can install those extensions to get linti
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 ## Deployment
@@ -125,7 +123,7 @@ Requires authorization against AWS with [one of the various ways](https://docs.a
 ## License
 
 ```text
-Copyright 2019 Ocean Protocol Foundation Ltd.
+Copyright 2020 Ocean Protocol Foundation Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

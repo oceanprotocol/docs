@@ -1,70 +1,70 @@
 @import 'variables';
 
 .docContent {
-    // handling long text, like URLs
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
+  // handling long text, like URLs
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  padding-bottom: $spacer / $line-height;
+
+  figcaption {
+    font-size: $font-size-small;
+    text-align: center;
+    color: $brand-grey-light;
+    margin-top: $spacer / 2;
+  }
+
+  > div > h1,
+  > div > h2 {
+    margin-top: $spacer * $line-height;
+    margin-bottom: $spacer / $line-height;
     padding-bottom: $spacer / $line-height;
+    border-bottom: 1px solid $brand-grey-lighter;
+  }
 
-    figcaption {
-        font-size: $font-size-small;
-        text-align: center;
-        color: $brand-grey-light;
-        margin-top: $spacer / 2;
+  table {
+    overflow-wrap: normal;
+    word-wrap: normal;
+    word-break: normal;
+  }
+
+  // use blockquote for info blocks
+  blockquote {
+    padding: $spacer / 2;
+    background: lighten($brand-grey-light, 36%);
+    border-left: 0.25rem solid $brand-grey-light;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+
+    &,
+    p {
+      color: $brand-blue;
+      font-style: italic;
     }
 
-    > div > h1,
-    > div > h2 {
-        margin-top: $spacer * $line-height;
-        margin-bottom: $spacer / $line-height;
-        padding-bottom: $spacer / $line-height;
-        border-bottom: 1px solid $brand-grey-lighter;
+    p:last-child {
+      margin-bottom: 0;
     }
-
-    table {
-        overflow-wrap: normal;
-        word-wrap: normal;
-        word-break: normal;
-    }
-
-    // use blockquote for info blocks
-    blockquote {
-        padding: $spacer / 2;
-        background: lighten($brand-grey-light, 36%);
-        border-left: .25rem solid $brand-grey-light;
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-
-        &,
-        p {
-            color: $brand-blue;
-            font-style: italic;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-    }
+  }
 }
 
 .empty {
-    font-style: italic;
-    margin-bottom: $spacer * 2;
+  font-style: italic;
+  margin-bottom: $spacer * 2;
 }
 
 :global(.footnotes) {
-    font-size: $font-size-small;
+  font-size: $font-size-small;
 
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 :global(.footnote-ref) {
-    font-size: $font-size-mini;
-    font-weight: $font-weight-bold;
-    padding-left: .2rem;
-    padding-right: .2rem;
-    display: inline-block;
+  font-size: $font-size-mini;
+  font-weight: $font-weight-bold;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  display: inline-block;
 }

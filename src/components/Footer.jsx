@@ -5,59 +5,59 @@ import Content from '../components/Content'
 import styles from './Footer.module.scss'
 
 const query = graphql`
-    query {
-        site {
-            siteMetadata {
-                siteCompany
-                social {
-                    Site
-                    Blog
-                    GitHub
-                    Twitter
-                    Discord
-                    Port
-                    Telegram
-                }
-            }
+  query {
+    site {
+      siteMetadata {
+        siteCompany
+        social {
+          Site
+          Blog
+          GitHub
+          Twitter
+          Discord
+          Port
+          Telegram
         }
+      }
     }
+  }
 `
 
 const FooterSocial = ({ social }) => (
-    <nav className={styles.links}>
-        {Object.keys(social).map((key) => (
-            <a key={key} href={social[key]}>
-                {key}
-            </a>
-        ))}
-    </nav>
+  <nav className={styles.links}>
+    {Object.keys(social).map((key) => (
+      <a key={key} href={social[key]}>
+        {key}
+      </a>
+    ))}
+  </nav>
 )
 
 FooterSocial.propTypes = {
-    social: PropTypes.object
+  social: PropTypes.object
 }
 
 const Footer = () => (
-    <StaticQuery
-        query={query}
-        render={(data) => {
-            const { siteCompany, social } = data.site.siteMetadata
+  <StaticQuery
+    query={query}
+    render={(data) => {
+      const { siteCompany, social } = data.site.siteMetadata
 
-            return (
-                <footer className={styles.footer}>
-                    <Content>
-                        <small>
-                            &copy; {new Date().getFullYear()}{' '}
-                            <a href={social.site}>{siteCompany}</a> &mdash; All
-                            Rights Reserved
-                        </small>
+      return (
+        <footer className={styles.footer}>
+          <Content>
+            <small>
+              &copy; {new Date().getFullYear()}{' '}
+              <a href={social.site}>{siteCompany}</a> &mdash; All Rights
+              Reserved
+            </small>
 
-                        <FooterSocial social={social} />
-                    </Content>
-                </footer>
-            )
-        }}
-    />
+            <FooterSocial social={social} />
+          </Content>
+        </footer>
+      )
+    }}
+  />
 )
 
 export default Footer

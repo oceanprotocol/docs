@@ -3,9 +3,7 @@ title: Set Up a Compute-to-Data Environment
 description: Set Up a Compute-to-Data environment.
 ---
 
-
 ## Requirements
-
 
 First, create a folder with the following structure:
 
@@ -22,22 +20,21 @@ Then you need the following parts:
 - a working Kubernetes (K8s) cluster (Minikube is a good start)
 - a working `kubectl` connected to the K8s cluster
 - one folder (/ocean/operator-service/), in which we will download the following:
-    - [postgres-configmap.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-configmap.yaml)
-    - [postgres-storage.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-storage.yaml)
-    - [postgres-deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-deployment.yaml)
-    - [postgres-service.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgresql-service.yaml)
-    - [deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/deployment.yaml)
-    - [role_binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/role_binding.yaml)
-    - [service_account.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/service_account.yaml)
+  - [postgres-configmap.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-configmap.yaml)
+  - [postgres-storage.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-storage.yaml)
+  - [postgres-deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-deployment.yaml)
+  - [postgres-service.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgresql-service.yaml)
+  - [deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/deployment.yaml)
+  - [role_binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/role_binding.yaml)
+  - [service_account.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/service_account.yaml)
 - one folder (/ocean/operator-engine/), in which we will download the following:
-    - [sa.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/sa.yml)
-    - [binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/binding.yml)
-    - [operator.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/operator.yml)        
-    - [computejob-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/computejob-crd.yaml)
-    - [workflow-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/workflow-crd.yaml)    
+  - [sa.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/sa.yml)
+  - [binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/binding.yml)
+  - [operator.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/operator.yml)
+  - [computejob-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/computejob-crd.yaml)
+  - [workflow-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/workflow-crd.yaml)
 
 ## Customize your Operator Service deployment
-
 
 The following resources need attention:
 
@@ -66,7 +63,6 @@ For AWS , please make sure that your class allocates volumes in the same region 
 
 We created our own 'standard' class in AWS:
 
-
 ```bash
 kubectl get storageclass standard -o yaml
 ```
@@ -93,20 +89,19 @@ Or we can use this for minikube:
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-    name: standard
+  name: standard
 provisioner: docker.io/hostpath
 reclaimPolicy: Retain
-```    
-    
+```
+
 For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
-    
+
 ## Create namespaces
 
 ```bash
 kubectl create ns ocean-operator
 kubectl create ns ocean-compute
 ```
-
 
 ## Deploy Operator Service
 
@@ -121,7 +116,6 @@ kubectl apply -f /ocean/operator-service/role_binding.yaml
 kubectl apply -f /ocean/operator-service/service_account.yaml
 ```
 
-
 ## Deploy Operator Engine
 
 ```bash
@@ -134,13 +128,11 @@ kubectl apply -f /ocean/operator-engine/workflow-crd.yaml
 kubectl create -f /ocean/operator-service/postgres-configmap.yaml
 ```
 
-
 ## Expose Operator Service
 
 ```bash
 kubectl expose deployment operator-api --namespace=ocean-operator --port=8050
 ```
-
 
 Run a port forward or create your ingress service (not covered here):
 
@@ -156,10 +148,9 @@ If your cluster is running on example.com:
 curl -X POST "http://example.com:8050/api/v1/operator/pgsqlinit" -H  "accept: application/json"
 ```
 
-
 ## Update Brizo
 
-Update Brizo by adding or updating the `OPERATOR_SERVICE_URL` env  in `/ocean/barge/compose-files/brizo.yaml`
+Update Brizo by adding or updating the `OPERATOR_SERVICE_URL` env in `/ocean/barge/compose-files/brizo.yaml`
 
 ```yaml
 OPERATOR_SERVICE_URL: http://example.com:8050/

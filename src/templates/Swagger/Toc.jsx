@@ -7,37 +7,37 @@ import { cleanPathKey } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
 const Toc = ({ data }) => {
-    const Ids = []
+  const Ids = []
 
-    const items = Object.keys(data.paths).map((key) => {
-        Ids.push(slugify(cleanPathKey(key)))
-
-        return (
-            <li key={key}>
-                <Scroll
-                    type="id"
-                    element={`${slugify(cleanPathKey(key))}`}
-                    offset={-20}
-                >
-                    <code>{cleanPathKey(key)}</code>
-                </Scroll>
-            </li>
-        )
-    })
+  const items = Object.keys(data.paths).map((key) => {
+    Ids.push(slugify(cleanPathKey(key)))
 
     return (
-        <Scrollspy
-            items={Ids}
-            currentClassName={stylesSidebar.scrollspyActive}
-            offset={-100}
+      <li key={key}>
+        <Scroll
+          type="id"
+          element={`${slugify(cleanPathKey(key))}`}
+          offset={-20}
         >
-            {items}
-        </Scrollspy>
+          <code>{cleanPathKey(key)}</code>
+        </Scroll>
+      </li>
     )
+  })
+
+  return (
+    <Scrollspy
+      items={Ids}
+      currentClassName={stylesSidebar.scrollspyActive}
+      offset={-100}
+    >
+      {items}
+    </Scrollspy>
+  )
 }
 
 Toc.propTypes = {
-    data: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
 }
 
 export default Toc

@@ -1,35 +1,35 @@
 @import 'variables';
 
 .headerSection {
-    border-bottom: .1rem solid $brand-grey-lighter;
+  border-bottom: 0.1rem solid $brand-grey-lighter;
 }
 
 .headerSectionTitle {
-    display: inline-block;
-    margin: 0;
-    padding: $spacer / $line-height 0;
-    font-size: $font-size-h3;
-    color: $brand-grey-light;
+  display: inline-block;
+  margin: 0;
+  padding: $spacer / $line-height 0;
+  font-size: $font-size-h3;
+  color: $brand-grey-light;
 
-    :global(.concepts) & {
-        color: $brand-purple;
-    }
+  :global(.concepts) & {
+    color: $brand-purple;
+  }
 
-    :global(.setup) & {
-        color: $brand-blue;
-    }
+  :global(.setup) & {
+    color: $brand-blue;
+  }
 
-    :global(.tutorials) & {
-        color: $orange;
-    }
+  :global(.tutorials) & {
+    color: $orange;
+  }
 
-    :global(.references) & {
-        color: $green;
-    }
+  :global(.references) & {
+    color: $green;
+  }
 }
 
 .rootLink {
-    display: inline-block;
-    margin-right: $spacer / 4;
-    color: inherit;
+  display: inline-block;
+  margin-right: $spacer / 4;
+  color: inherit;
 }

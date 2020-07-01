@@ -10,6 +10,7 @@ $brand-grey: #41474e;
 $brand-grey-light: #8b98a9;
 $brand-grey-dark: #303030;
 $brand-grey-lighter: #e2e2e2;
+$brand-grey-dimmed: #f7f7f7;
 
 $green: #5fb359;
 $red: #d80606;
@@ -23,20 +24,20 @@ $body-background: darken($brand-white, 1%);
 // Fonts
 // stylelint-disable value-keyword-case
 $font-family-base: 'Sharp Sans Medium', -apple-system, blinkmacsystemfont,
-    'Segoe UI', helvetica, arial, sans-serif;
+  'Segoe UI', helvetica, arial, sans-serif;
 $font-family-title: 'Sharp Sans Display', -apple-system, blinkmacsystemfont,
-    'Segoe UI', helvetica, arial, sans-serif;
+  'Segoe UI', helvetica, arial, sans-serif;
 $font-family-button: 'Sharp Sans Bold', -apple-system, blinkmacsystemfont,
-    'Segoe UI', helvetica, arial, sans-serif;
+  'Segoe UI', helvetica, arial, sans-serif;
 $font-family-monospace: 'Fira Code', 'Fira Mono', menlo, monaco, consolas,
-    'Courier New', monospace;
+  'Courier New', monospace;
 // stylelint-enable value-keyword-case
 
 $font-size-root: 15px;
 $font-size-base: 1rem;
 $font-size-large: 1.2rem;
-$font-size-small: .85rem;
-$font-size-mini: .65rem;
+$font-size-small: 0.85rem;
+$font-size-mini: 0.65rem;
 $font-size-text: $font-size-base;
 $font-size-label: $font-size-base;
 $font-size-title: 1.4rem;
@@ -53,7 +54,7 @@ $line-height: 1.6;
 
 // Sizes
 $spacer: 2rem;
-$page-frame: .75rem;
+$page-frame: 0.75rem;
 
 $break-point--small: 640px;
 $break-point--medium: 860px;
@@ -61,6 +62,6 @@ $break-point--large: 1140px;
 $break-point--huge: 1400px;
 $brand-border-width: 1px;
 
-$border-radius: .2rem;
+$border-radius: 0.2rem;
 
 $narrowWidth: 35rem;

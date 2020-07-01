@@ -6,113 +6,109 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: $font-size-root;
+  font-size: $font-size-root;
 }
 
 body {
-    color: $brand-black;
-    font-size: $font-size-base;
-    font-family: $font-family-base;
-    font-weight: $font-weight-base;
-    line-height: $line-height;
-    background: $body-background;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    margin: 0;
-
-    @media screen and (min-width: $break-point--small) {
-        padding: $page-frame;
-    }
+  color: $brand-black;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height;
+  background: $body-background;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  margin: 0;
 }
 
 a {
+  text-decoration: none;
+  color: $brand-pink;
+  transition: 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: darken($brand-pink, 15%);
     text-decoration: none;
-    color: $brand-pink;
-    transition: .2s ease-out;
+    transform: translate3d(0, -0.1rem, 0);
+  }
 
-    &:hover,
-    &:focus {
-        color: darken($brand-pink, 15%);
-        text-decoration: none;
-        transform: translate3d(0, -.1rem, 0);
-    }
-
-    &:active {
-        color: darken($brand-pink, 15%);
-        text-decoration: none;
-        transform: none;
-        transition: none;
-    }
+  &:active {
+    color: darken($brand-pink, 15%);
+    text-decoration: none;
+    transform: none;
+    transition: none;
+  }
 }
 
 p {
-    margin: 0;
-    margin-bottom: $spacer / $line-height;
+  margin: 0;
+  margin-bottom: $spacer / $line-height;
 }
 
 // Lists
 /////////////////////////////////////
 
 ul {
-    li {
-        &:before {
-            content: ' \25AA'; // Black Small Square: ▪ &#9642;
-            top: -2px;
-        }
+  li {
+    &:before {
+      content: ' \25AA'; // Black Small Square: ▪ &#9642;
+      top: -2px;
     }
+  }
 }
 
 ol {
-    counter-reset: ol-counter;
+  counter-reset: ol-counter;
 
-    li {
-        &:before {
-            content: counter(ol-counter) '.';
-            counter-increment: ol-counter;
-            font-family: $font-family-button;
-        }
+  li {
+    &:before {
+      content: counter(ol-counter) '.';
+      counter-increment: ol-counter;
+      font-family: $font-family-button;
     }
+  }
 
-    ul li:before {
-        content: ' \25AA';
-    }
+  ul li:before {
+    content: ' \25AA';
+  }
 }
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: $spacer;
-    padding-left: $spacer / $line-height;
-    list-style: none;
+  margin-top: 0;
+  margin-bottom: $spacer;
+  padding-left: $spacer / $line-height;
+  list-style: none;
 
-    li {
-        position: relative;
-        display: block;
+  li {
+    position: relative;
+    display: block;
 
-        &:before {
-            position: absolute;
-            left: -($spacer / $line-height);
-            color: $brand-grey-light;
-            user-select: none;
-        }
-
-        + li {
-            margin-top: $spacer / 3;
-        }
-
-        ul,
-        ol,
-        p {
-            margin-bottom: 0;
-            margin-top: $spacer / 3;
-        }
+    &:before {
+      position: absolute;
+      left: -($spacer / $line-height);
+      color: $brand-grey-light;
+      user-select: none;
     }
+
+    + li {
+      margin-top: $spacer / 3;
+    }
+
+    ul,
+    ol,
+    p {
+      margin-bottom: 0;
+      margin-top: $spacer / 3;
+    }
+  }
 }
 
 // Inline typography
@@ -121,23 +117,23 @@ ol {
 b,
 strong,
 .bold {
-    font-family: $font-family-button;
-    font-weight: 600;
+  font-family: $font-family-button;
+  font-weight: 600;
 }
 
 em,
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 abbr[title],
 dfn {
-    text-transform: none;
-    font-style: normal;
-    font-size: inherit;
-    border-bottom: 1px dashed $brand-grey-light;
-    cursor: help;
-    font-feature-settings: inherit;
+  text-transform: none;
+  font-style: normal;
+  font-size: inherit;
+  border-bottom: 1px dashed $brand-grey-light;
+  cursor: help;
+  font-feature-settings: inherit;
 }
 
 h1,
@@ -145,30 +141,30 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $font-family-title;
-    color: inherit;
-    line-height: 1.2;
-    font-weight: 600;
+  font-family: $font-family-title;
+  color: inherit;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 h1 {
-    font-size: $font-size-h1;
+  font-size: $font-size-h1;
 }
 
 h2 {
-    font-size: $font-size-h2;
+  font-size: $font-size-h2;
 }
 
 h3 {
-    font-size: $font-size-h3;
+  font-size: $font-size-h3;
 }
 
 h4 {
-    font-size: $font-size-h4;
+  font-size: $font-size-h4;
 }
 
 h5 {
-    font-size: $font-size-h5;
+  font-size: $font-size-h5;
 }
 
 // Responsive Media
@@ -182,102 +178,102 @@ audio,
 embed,
 canvas,
 picture {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 hr {
-    margin: $spacer 0;
-    border: 0;
-    border-bottom: .1rem solid $brand-grey-lighter;
+  margin: $spacer 0;
+  border: 0;
+  border-bottom: 0.1rem solid $brand-grey-lighter;
 }
 
 // Quotes
 /////////////////////////////////////
 
 q {
-    font-style: italic;
+  font-style: italic;
 }
 
 cite {
-    font-style: normal;
-    text-transform: uppercase;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 blockquote,
 blockquote > p {
-    font-style: italic;
-    color: lighten($brand-grey, 15%);
+  font-style: italic;
+  color: lighten($brand-grey, 15%);
 }
 
 blockquote {
-    margin: 0 0 $spacer;
-    padding-left: $spacer / 2;
-    border-left: .2rem solid $brand-grey-lighter;
+  margin: 0 0 $spacer;
+  padding-left: $spacer / 2;
+  border-left: 0.2rem solid $brand-grey-lighter;
 
-    @media screen and (min-width: $break-point--small) {
-        padding-left: $spacer / $line-height;
-    }
+  @media screen and (min-width: $break-point--small) {
+    padding-left: $spacer / $line-height;
+  }
 }
 
 // Tables
 /////////////////////////////////////
 
 table {
-    width: 100%;
-    margin-bottom: $spacer * $line-height;
-    border-collapse: collapse;
-    display: block;
+  width: 100%;
+  margin-bottom: $spacer * $line-height;
+  border-collapse: collapse;
+  display: block;
 
-    // make 'em scrollable
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+  // make 'em scrollable
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 
-    th,
-    td {
-        border: 0;
-        margin: 0;
-        padding: $spacer / 2;
-        border-bottom: 1px solid $brand-grey-lighter;
-        text-align: left;
-        font-size: 90%;
-        vertical-align: top;
+  th,
+  td {
+    border: 0;
+    margin: 0;
+    padding: $spacer / 2;
+    border-bottom: 1px solid $brand-grey-lighter;
+    text-align: left;
+    font-size: 90%;
+    vertical-align: top;
 
-        &[align='center'] {
-            text-align: center;
-        }
-
-        &[align='right'] {
-            text-align: right;
-        }
+    &[align='center'] {
+      text-align: center;
     }
 
-    th {
-        font-family: $font-family-button;
-        font-weight: 600;
+    &[align='right'] {
+      text-align: right;
     }
+  }
+
+  th {
+    font-family: $font-family-button;
+    font-weight: 600;
+  }
 }
 
 // Selection
 /////////////////////////////////////
 
 ::-moz-selection {
-    background: $brand-grey-light;
-    color: #fff;
+  background: $brand-grey-light;
+  color: #fff;
 }
 
 ::selection {
-    background: $brand-grey-light;
-    color: #fff;
+  background: $brand-grey-light;
+  color: #fff;
 }
 
 // Gatsby specific
 /////////////////////////////////////
 
 .anchor {
-    margin-top: .6rem;
+  margin-top: 0.6rem;
 }
 
 @import 'code';

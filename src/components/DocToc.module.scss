@@ -1,15 +1,15 @@
 @import 'variables';
 
 .toc {
-    background: darken($brand-white, 2%);
-    padding: $spacer / 2;
-    margin-bottom: $spacer * 2;
+  background: darken($brand-white, 2%);
+  padding: $spacer / 2;
+  margin-bottom: $spacer * 2;
 
-    @media screen and (min-width: $break-point--small) {
-        padding: $spacer / $line-height $spacer;
-    }
+  @media screen and (min-width: $break-point--small) {
+    padding: $spacer / $line-height $spacer;
+  }
 
-    ul {
-        margin-bottom: 0;
-    }
+  ul {
+    margin-bottom: 0;
+  }
 }

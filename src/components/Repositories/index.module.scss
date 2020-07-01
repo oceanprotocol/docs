@@ -1,26 +1,26 @@
 @import 'variables';
 
 .repositories {
-    margin-top: $spacer * 2;
+  margin-top: $spacer * 2;
 
-    > header {
-        @media (min-width: $break-point--medium) {
-            max-width: 33rem;
-            margin: auto;
-        }
+  > header {
+    @media (min-width: $break-point--medium) {
+      max-width: 33rem;
+      margin: auto;
     }
+  }
 }
 
 .repositoriesTitle {
-    text-align: center;
-    display: block;
-    margin-top: 0;
-    margin-bottom: $spacer / 2;
-    font-size: $font-size-h3;
+  text-align: center;
+  display: block;
+  margin-top: 0;
+  margin-bottom: $spacer / 2;
+  font-size: $font-size-h3;
 }
 
 .repositoriesText {
-    text-align: center;
-    margin-bottom: $spacer;
-    color: $brand-grey-light;
+  text-align: center;
+  margin-bottom: $spacer;
+  color: $brand-grey-light;
 }

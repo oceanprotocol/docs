@@ -5,21 +5,21 @@ import remarkReact from 'remark-react'
 import styles from './Readme.module.scss'
 
 export default function Readme({ object }) {
-    const readmeHtml =
-        object && remark().use(remarkReact).processSync(object.text).result
+  const readmeHtml =
+    object && remark().use(remarkReact).processSync(object.text).result
 
-    return (
-        object && (
-            <aside className={styles.readme}>
-                <h3 className={styles.title}>README.md</h3>
-                {readmeHtml}
-            </aside>
-        )
+  return (
+    object && (
+      <aside className={styles.readme}>
+        <h3 className={styles.title}>README.md</h3>
+        {readmeHtml}
+      </aside>
     )
+  )
 }
 
 Readme.propTypes = {
-    object: PropTypes.shape({
-        text: PropTypes.string.isRequired
-    })
+  object: PropTypes.shape({
+    text: PropTypes.string.isRequired
+  })
 }

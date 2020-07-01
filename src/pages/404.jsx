@@ -17,63 +17,56 @@ const giphyClient = giphyAPI('LfXRwufRyt6PK414G2kKJBv3L8NdnxyR')
 const tag = 'ocean'
 
 export default class NotFoundPage extends Component {
-    state = { gif: '' }
+  state = { gif: '' }
 
-    static propTypes = {
-        location: PropTypes.object
+  static propTypes = {
+    location: PropTypes.object
+  }
+
+  componentDidMount() {
+    this.getRandomGif()
+  }
+
+  async getRandomGif() {
+    try {
+      const response = await giphyClient.random('gifs', { tag })
+      const gif = response.data.images.original.mp4
+      this.setState({ gif })
+    } catch (error) {
+      return error
     }
+  }
 
-    componentDidMount() {
-        this.getRandomGif()
-    }
+  handleClick = (e) => {
+    e.preventDefault()
+    this.getRandomGif()
+  }
 
-    async getRandomGif() {
-        try {
-            const response = await giphyClient.random('gifs', { tag })
-            const gif = response.data.images.original.mp4
-            this.setState({ gif })
-        } catch (error) {
-            return error
-        }
-    }
+  render() {
+    return (
+      <>
+        <Seo location={this.props.location} title="404 - Not Found" />
+        <Layout location={this.props.location}>
+          <Content>
+            <article className={styles.content}>
+              <h1>Page not found.</h1>
+              <p>
+                You just hit a route that doesn&#39;t exist... the sadness.
+                Check your url, <Link to="/">go back to the homepage</Link>, or
+                check out some <em>{tag}</em> gifs, entirely your choice.
+              </p>
 
-    handleClick = (e) => {
-        e.preventDefault()
-        this.getRandomGif()
-    }
+              <video className="gif" src={this.state.gif} autoPlay loop />
 
-    render() {
-        return (
-            <>
-                <Seo location={this.props.location} title="404 - Not Found" />
-                <Layout location={this.props.location}>
-                    <Content>
-                        <article className={styles.content}>
-                            <h1>Page not found.</h1>
-                            <p>
-                                You just hit a route that doesn&#39;t exist...
-                                the sadness. Check your url,{' '}
-                                <Link to="/">go back to the homepage</Link>, or
-                                check out some <em>{tag}</em> gifs, entirely
-                                your choice.
-                            </p>
-
-                            <video
-                                className="gif"
-                                src={this.state.gif}
-                                autoPlay
-                                loop
-                            />
-
-                            <div>
-                                <button
-                                    onClick={this.handleClick}
-                                >{`Get another ${tag} gif`}</button>
-                            </div>
-                        </article>
-                    </Content>
-                </Layout>
-            </>
-        )
-    }
+              <div>
+                <button
+                  onClick={this.handleClick}
+                >{`Get another ${tag} gif`}</button>
+              </div>
+            </article>
+          </Content>
+        </Layout>
+      </>
+    )
+  }
 }

@@ -5,40 +5,38 @@ import styles from './DocFooter.module.scss'
 import { social, githubContentPath, githubDevOceanPath } from '../../config'
 
 export default function DocFooter({ post, url, externalName }) {
-    let path
+  let path
 
-    if (post) {
-        const { sourceInstanceName } = post.parent
+  if (post) {
+    const { sourceInstanceName } = post.parent
 
-        switch (sourceInstanceName) {
-            case 'dev-ocean':
-                path = githubDevOceanPath
-                externalName = sourceInstanceName
-                break
-            default:
-                path = githubContentPath
-        }
-
-        url = `${path}/${post.parent.relativePath}`
+    switch (sourceInstanceName) {
+      case 'dev-ocean':
+        path = githubDevOceanPath
+        externalName = sourceInstanceName
+        break
+      default:
+        path = githubContentPath
     }
 
-    return (
-        <footer className={styles.footer}>
-            <a href={social.Discord}>✋ Ask a question on Discord</a>
-            <a href={url} className={post && !post.html ? styles.active : null}>
-                <Pencil /> Edit this page on GitHub
-                {externalName && (
-                    <span className={styles.externalRepoName}>
-                        {externalName}
-                    </span>
-                )}
-            </a>
-        </footer>
-    )
+    url = `${path}/${post.parent.relativePath}`
+  }
+
+  return (
+    <footer className={styles.footer}>
+      <a href={social.Discord}>✋ Ask a question on Discord</a>
+      <a href={url} className={post && !post.html ? styles.active : null}>
+        <Pencil /> Edit this page on GitHub
+        {externalName && (
+          <span className={styles.externalRepoName}>{externalName}</span>
+        )}
+      </a>
+    </footer>
+  )
 }
 
 DocFooter.propTypes = {
-    post: PropTypes.object,
-    url: PropTypes.string,
-    externalName: PropTypes.string
+  post: PropTypes.object,
+  url: PropTypes.string,
+  externalName: PropTypes.string
 }

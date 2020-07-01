@@ -8,63 +8,59 @@ import { filterByKindOfProperty } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
 export default class Toc extends PureComponent {
-    static propTypes = {
-        data: PropTypes.array
-    }
+  static propTypes = {
+    data: PropTypes.array
+  }
 
-    subItems = (children, parentName) =>
-        children &&
-        children.filter(filterByKindOfProperty).map(({ name, decorators }) => {
-            const deprecation = (decorators || []).filter(
-                ({ name }) => name === 'deprecated'
-            )[0] // Assuming deprecated annotation
+  subItems = (children, parentName) =>
+    children &&
+    children.filter(filterByKindOfProperty).map(({ name, decorators }) => {
+      const deprecation = (decorators || []).filter(
+        ({ name }) => name === 'deprecated'
+      )[0] // Assuming deprecated annotation
 
-            return (
-                <li key={shortid.generate()}>
-                    <Scroll
-                        type="id"
-                        element={`${parentName}-${name && slugify(name)}`}
-                        data-deprecated={!!deprecation}
-                        offset={-20}
-                    >
-                        <code>{name}</code>
-                    </Scroll>
-                </li>
-            )
-        })
-
-    items = this.props.data.map(({ name, children }) => {
-        const subIds = []
-        const parentName = name
-
-        subIds.push(
-            children &&
-                children.filter(filterByKindOfProperty).map(({ name }) => {
-                    return `${parentName}-${name && slugify(name)}`
-                })
-        )
-
-        return (
-            <li key={shortid.generate()}>
-                <Scroll
-                    type="id"
-                    element={`${name && slugify(name)}`}
-                    offset={-20}
-                >
-                    <code>{name}</code>
-                </Scroll>
-                <Scrollspy
-                    items={subIds[0]}
-                    currentClassName={stylesSidebar.scrollspyActive}
-                    offset={-30}
-                >
-                    {this.subItems(children, name)}
-                </Scrollspy>
-            </li>
-        )
+      return (
+        <li key={shortid.generate()}>
+          <Scroll
+            type="id"
+            element={`${parentName}-${name && slugify(name)}`}
+            data-deprecated={!!deprecation}
+            offset={-20}
+          >
+            <code>{name}</code>
+          </Scroll>
+        </li>
+      )
     })
 
-    render() {
-        return <ul>{this.items}</ul>
-    }
+  items = this.props.data.map(({ name, children }) => {
+    const subIds = []
+    const parentName = name
+
+    subIds.push(
+      children &&
+        children.filter(filterByKindOfProperty).map(({ name }) => {
+          return `${parentName}-${name && slugify(name)}`
+        })
+    )
+
+    return (
+      <li key={shortid.generate()}>
+        <Scroll type="id" element={`${name && slugify(name)}`} offset={-20}>
+          <code>{name}</code>
+        </Scroll>
+        <Scrollspy
+          items={subIds[0]}
+          currentClassName={stylesSidebar.scrollspyActive}
+          offset={-30}
+        >
+          {this.subItems(children, name)}
+        </Scrollspy>
+      </li>
+    )
+  })
+
+  render() {
+    return <ul>{this.items}</ul>
+  }
 }

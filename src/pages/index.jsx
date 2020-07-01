@@ -12,100 +12,96 @@ import { ReactComponent as Arrow } from '../images/arrow.svg'
 import styles from './index.module.scss'
 
 const SectionBox = ({ to, children, ...props }) =>
-    to ? (
-        <Link to={to} {...props}>
-            {children}
-        </Link>
-    ) : (
-        <div {...props}>{children}</div>
-    )
+  to ? (
+    <Link to={to} {...props}>
+      {children}
+    </Link>
+  ) : (
+    <div {...props}>{children}</div>
+  )
 
 SectionBox.propTypes = {
-    to: PropTypes.string.isRequired,
-    children: PropTypes.any.isRequired
+  to: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired
 }
 
 const SectionLink = ({ to, title, color, children }) => {
-    // eslint-disable-next-line
-    let classNames = classnames(styles.link, {
-        [styles.purple]: color === 'purple',
-        [styles.blue]: color === 'blue',
-        [styles.orange]: color === 'orange',
-        [styles.green]: color === 'green'
-    })
+  // eslint-disable-next-line
+  let classNames = classnames(styles.link, {
+    [styles.purple]: color === 'purple',
+    [styles.blue]: color === 'blue',
+    [styles.orange]: color === 'orange',
+    [styles.green]: color === 'green'
+  })
 
-    return (
-        <SectionBox to={to} className={classNames}>
-            <h3 className={styles.sectionTitle}>{title}</h3>
-            <p className={styles.sectionText}>{children}</p>
-            {title !== 'API References' && (
-                <span className={styles.sectionMore}>
-                    Learn More <Arrow />
-                </span>
-            )}
-        </SectionBox>
-    )
+  return (
+    <SectionBox to={to} className={classNames}>
+      <h3 className={styles.sectionTitle}>{title}</h3>
+      <p className={styles.sectionText}>{children}</p>
+      {title !== 'API References' && (
+        <span className={styles.sectionMore}>
+          Learn More <Arrow />
+        </span>
+      )}
+    </SectionBox>
+  )
 }
 
 SectionLink.propTypes = {
-    to: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    color: PropTypes.string,
-    children: PropTypes.any
+  to: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  color: PropTypes.string,
+  children: PropTypes.any
 }
 
 const IndexPage = ({ data, location }) => (
-    <>
-        <Seo location={location} />
+  <>
+    <Seo location={location} />
 
-        <Layout location={location} header={<HeaderHome />}>
-            <Content>
-                <ul className={styles.sections}>
-                    {data.allSectionsYaml.edges.map(({ node }) => (
-                        <li key={node.title} className={styles.section}>
-                            <SectionLink
-                                to={node.link}
-                                title={node.title}
-                                color={node.color}
-                            >
-                                {node.description}
-                            </SectionLink>
-                        </li>
-                    ))}
-                </ul>
+    <Layout location={location} header={<HeaderHome />}>
+      <Content>
+        <ul className={styles.sections}>
+          {data.allSectionsYaml.edges.map(({ node }) => (
+            <li key={node.title} className={styles.section}>
+              <SectionLink to={node.link} title={node.title} color={node.color}>
+                {node.description}
+              </SectionLink>
+            </li>
+          ))}
+        </ul>
 
-                <QuickRun />
+        <QuickRun />
 
-                <Repositories />
-            </Content>
-        </Layout>
-    </>
+        <Repositories />
+      </Content>
+    </Layout>
+  </>
 )
 
 IndexPage.propTypes = {
-    data: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }
 
 export default IndexPage
 
 export const IndexQuery = graphql`
-    query {
-        site {
-            siteMetadata {
-                siteDescription
-            }
-        }
-
-        allSectionsYaml {
-            edges {
-                node {
-                    title
-                    description
-                    link
-                    color
-                }
-            }
-        }
+  query {
+    site {
+      siteMetadata {
+        siteDescription
+      }
     }
+
+    allSectionsYaml {
+      edges {
+        node {
+          title
+          description
+          link
+          color
+        }
+      }
+    }
+  }
 `

@@ -4,20 +4,20 @@ import Header from './Header'
 import Footer from './Footer'
 
 const Layout = ({ children, header }) => {
-    const headerElement = header || <Header />
+  const headerElement = header || <Header />
 
-    return (
-        <>
-            {headerElement}
-            {children}
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      {headerElement}
+      {children}
+      <Footer />
+    </>
+  )
 }
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
-    header: PropTypes.element
+  children: PropTypes.node.isRequired,
+  header: PropTypes.element
 }
 
 export default Layout

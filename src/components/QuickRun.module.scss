@@ -1,58 +1,58 @@
 @import 'variables';
 
 .quickrun {
-    padding-top: $spacer * 4;
-    padding-bottom: $spacer * 2.5;
-    text-align: center;
+  padding-top: $spacer * 4;
+  padding-bottom: $spacer * 2.5;
+  text-align: center;
 
-    > div {
-        text-align: left;
-        margin-top: $spacer / $line-height;
-    }
+  > div {
+    text-align: left;
+    margin-top: $spacer / $line-height;
+  }
 }
 
 .header,
 .docker {
-    margin: auto;
+  margin: auto;
 
-    @media (min-width: $break-point--medium) {
-        max-width: 33rem;
-    }
+  @media (min-width: $break-point--medium) {
+    max-width: 33rem;
+  }
 }
 
 .header {
-    margin-bottom: $spacer;
+  margin-bottom: $spacer;
 }
 
 .docker {
-    @media (min-width: $break-point--large) {
-        max-width: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  @media (min-width: $break-point--large) {
+    max-width: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        > div,
-        > article {
-            flex: 0 0 48%;
-            margin: 0;
-        }
-
-        pre {
-            margin: 0;
-
-            code {
-                padding: $spacer / 1.1;
-            }
-        }
+    > div,
+    > article {
+      flex: 0 0 48%;
+      margin: 0;
     }
+
+    pre {
+      margin: 0;
+
+      code {
+        padding: $spacer / 1.1;
+      }
+    }
+  }
 }
 
 .tldr {
-    display: block;
-    margin-bottom: $spacer / 2;
-    font-size: $font-size-h4;
+  display: block;
+  margin-bottom: $spacer / 2;
+  font-size: $font-size-h4;
 
-    + strong {
-        color: $brand-grey-light;
-    }
+  + strong {
+    color: $brand-grey-light;
+  }
 }
