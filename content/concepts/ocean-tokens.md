@@ -70,6 +70,10 @@ Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean To
 
 - [Bittrex International](https://international.bittrex.com/)
 - [KuCoin](https://www.kucoin.com/)
+- [Balancer](https://balancer.exchange/)
+- [Uniswap](https://app.uniswap.org/#/swap?inputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&outputCurrency=0x985dd3d42de1e256d09e1c10f112bccb8015ad41)
+- [VCC](https://vcc.exchange/)
+- [Gate.io](https://www.gate.io/)
 
 ## Pacific Network Ocean Tokens
 
