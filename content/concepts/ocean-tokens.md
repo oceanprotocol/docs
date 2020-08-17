@@ -40,9 +40,9 @@ There are many ways to check your Ethereum Mainnet Ocean Token balance. Starting
 
 #### Ocean Token Tool
 
-Enter your account address into the form in the [Ocean Token Tool](https://wallet.oceanprotocol.com/tokens).
+Enter your account address into the form on the [Ocean Token page on our website](https://oceanprotocol.com/token#balance).
 
-[![Ocean Token Tool](images/token-tool.png)](https://wallet.oceanprotocol.com/tokens)
+[![Ocean Token Tool](images/token-tool.png)](https://oceanprotocol.com/token#balance)
 
 #### Blowfish
 
@@ -60,20 +60,7 @@ Go to [Etherscan](https://etherscan.io/), enter your account address into the se
 
 ### Buy or Sell Ethereum Mainnet Ocean Tokens
 
-You can buy or sell Ethereum Mainnet Ocean Tokens via any exchange that lists them. See the official list of exchanges below.
-
-You could also make a deal with someone where you send them something and they send you some Ocean Tokens in return (or vice versa). Ethereum Mainnet Ocean Tokens are standard ERC-20 tokens, so any software that can send ERC-20 tokens can be used (e.g. [wallet software](/concepts/wallets/) such as MetaMask).
-
-### Official List of Exchanges
-
-Below is the _official list_ of exchanges which listed Ethereum Mainnet Ocean Tokens (OCEAN), at the time of writing:
-
-- [Bittrex International](https://international.bittrex.com/)
-- [KuCoin](https://www.kucoin.com/)
-- [Balancer](https://balancer.exchange/)
-- [Uniswap](https://app.uniswap.org/#/swap?inputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&outputCurrency=0x985dd3d42de1e256d09e1c10f112bccb8015ad41)
-- [VCC](https://vcc.exchange/)
-- [Gate.io](https://www.gate.io/)
+You can buy or sell Ethereum Mainnet Ocean Tokens (OCEAN) via any exchange that lists them. An always up-to-date _official list_ of exchanges can be found on the [Ocean Token page on our website](https://oceanprotocol.com/token#balance).
 
 ## Pacific Network Ocean Tokens
 
@@ -90,7 +77,7 @@ For this purpose there is a token bridge between the Ethereum Mainnet and the Pa
 
 Once you have some Ocean Tokens in Pacific, you can use them for all currently-implemented Ocean Protocol tasks _in Pacific_ (e.g. buying assets from a marketplace connected to Pacific).
 
-However, please be aware that transfering tokens between networks can put your Ocean Tokens at risk.
+However, please be aware that transferring tokens between networks can put your Ocean Tokens at risk.
 
 ## Testnet Ocean Tokens
 
@@ -116,6 +103,7 @@ The [Example Code page](/tutorials/example-code/) has links to example Squid cod
 
 ## Further Reading about Ocean Tokens
 
+- [Ocean Token page](https://oceanprotocol.com/token)
 - [Tutorial: Use Your Wallet to Manage Ocean Tokens](/tutorials/wallets-and-ocean-tokens/)
 - [Blog: Ocean Tokenomics](https://blog.oceanprotocol.com/ocean-tokenomics-d34f28c480a8)
 - [Blog: Ocean Tokenomics II](https://blog.oceanprotocol.com/https-blog-oceanprotocol-com-ocean-tokenomics-ii-faf05854314b)
