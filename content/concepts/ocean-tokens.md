@@ -60,13 +60,7 @@ Go to [Etherscan](https://etherscan.io/), enter your account address into the se
 
 ### Buy or Sell Ethereum Mainnet Ocean Tokens
 
-You can buy or sell Ethereum Mainnet Ocean Tokens via any exchange that lists them. See the official list of exchanges below.
-
-You could also make a deal with someone where you send them something and they send you some Ocean Tokens in return (or vice versa). Ethereum Mainnet Ocean Tokens are standard ERC-20 tokens, so any software that can send ERC-20 tokens can be used (e.g. [wallet software](/concepts/wallets/) such as MetaMask).
-
-### Official List of Exchanges
-
-An always up-to-date _official list_ of exchanges which listed Ethereum Mainnet Ocean Tokens (OCEAN) can be found on the [Ocean Token page on our website](https://oceanprotocol.com/token#balance).
+You can buy or sell Ethereum Mainnet Ocean Tokens (OCEAN) via any exchange that lists them. An always up-to-date _official list_ of exchanges can be found on the [Ocean Token page on our website](https://oceanprotocol.com/token#balance).
 
 ## Pacific Network Ocean Tokens
 
