@@ -17,7 +17,7 @@ The final source of this tutorial is also available as a CodeSandbox:
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed, [connected to Nile network](http://localhost:8000/tutorials/connect-to-networks/#connect-to-the-nile-testnet)
+- A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed, [connected to Nile network](https://docs.oceanprotocol.com/tutorials/connect-to-networks/#connect-to-the-nile-testnet)
 - Some Nile ETH from the Nile Faucet. You can either go to [commons.nile.dev-ocean.com/faucet](https://commons.nile.dev-ocean.com/faucet), or execute this command replacing `<YOUR ADDRESS>` with your MetaMask account address:
 
   ```bash
