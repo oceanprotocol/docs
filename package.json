@@ -42,7 +42,7 @@
     "gatsby-remark-responsive-iframe": "^2.4.12",
     "gatsby-remark-smartypants": "^2.3.10",
     "gatsby-remark-vscode": "^3.0.1",
-    "gatsby-source-filesystem": "^2.3.23",
+    "gatsby-source-filesystem": "^2.3.24",
     "gatsby-source-graphql": "^2.6.2",
     "gatsby-transformer-remark": "^2.8.27",
     "gatsby-transformer-sharp": "^2.5.12",
