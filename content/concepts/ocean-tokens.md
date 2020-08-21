@@ -11,11 +11,11 @@ Ocean Tokens can, in principle, live in any EVM-compatible network. The Ocean To
 
 Only OCEAN within the Ethereum Mainnet carry any value, reflected [on our token page](https://oceanprotocol.com/token).
 
-| Property                 | Value                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Token Contract Addresses | _Ethereum Mainnet_<br /> [`0xxxx`](https://etherscan.io/token/0xxxx)<br /><br />_Pacific Mainnet_<br /> [`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`](https://submarine.oceanprotocol.com/address/0x012578f9381e876a9e2a9111dfd436ff91a451ae/transactions)<br /><br />_Nile Testnet_<br />[`0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad`](https://submarine.nile.dev-ocean.com/address/0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad) |
-| Token Symbol             | OCEAN                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Decimals of Precision    | 18                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Property                 | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Token Contract Addresses | _Ethereum Mainnet_<br /> [`0x7AFeBBB46fDb47ed17b22ed075Cde2447694fB9e`](https://etherscan.io/token/0x7AFeBBB46fDb47ed17b22ed075Cde2447694fB9e)<br /><br />_Pacific Mainnet_<br /> [`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`](https://submarine.oceanprotocol.com/address/0x012578f9381e876a9e2a9111dfd436ff91a451ae/transactions)<br /><br />_Nile Testnet_<br />[`0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad`](https://submarine.nile.dev-ocean.com/address/0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad) |
+| Token Symbol             | OCEAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Decimals of Precision    | 18                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ## Ethereum Mainnet Ocean Tokens
 
@@ -26,7 +26,6 @@ There were several ways to acquire some of the Ethereum Mainnet Ocean Tokens in 
 - participation in the token sale
 - participation in the initial exchange offering (IEO)
 - completion of a [bounty](/concepts/bounties/)
-- buy on any exchange OCEAN is listed on
 
 After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Ethereum Mainnet Ocean Tokens became available in the Ethereum Mainnet (and not in any other network).
 
@@ -35,7 +34,7 @@ The initial circulating supply of Ethereum Mainnet Ocean Tokens became available
 At the time of writing, you could use Ethereum Mainnet Ocean Tokens to do various things in the Ethereum Mainnet, including but not limited to:
 
 - buy other cryptocurrencies
-- provide liquidity in decentralized exchanges like UniSwap or Balancer
+- provide liquidity in decentralized exchanges like Uniswap or Balancer
 
 ### Check Your Ethereum Mainnet Ocean Token Balance
 

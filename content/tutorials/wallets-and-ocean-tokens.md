@@ -9,7 +9,7 @@ If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask 
 
 Almost all ERC-20 wallets require these values for adding a custom token:
 
-- Contract Address: `0xxxx`
+- Contract Address: `0x7AFeBBB46fDb47ed17b22ed075Cde2447694fB9e`
 - Symbol: `OCEAN`
 - Number of precision: `18`
 
