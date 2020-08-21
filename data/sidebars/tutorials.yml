@@ -7,12 +7,12 @@
   items:
     - title: Set Up MetaMask
       link: /tutorials/metamask-setup/
-    - title: Connect to Ocean-Related Networks
-      link: /tutorials/connect-to-networks/
     - title: Use Your Wallet to Manage Ocean Tokens
       link: /tutorials/wallets-and-ocean-tokens/
     - title: Get Ether and Ocean Tokens
       link: /tutorials/get-ether-and-ocean-tokens/
+    - title: Connect to Ocean-Related Networks
+      link: /tutorials/connect-to-networks/
 
 - group: Storage Setup
   items:
