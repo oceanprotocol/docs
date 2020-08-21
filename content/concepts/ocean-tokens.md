@@ -7,7 +7,9 @@ description: The technical basics and most important infos about Ocean Tokens in
 
 **Ocean Tokens** are the [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) associated with Ocean Protocol. They are standards-compliant [ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20).
 
-Ocean Tokens can, in principle, live in any EVM-compatible network. The Ocean Token contract is deployed in the Ethereum Mainnet, Pacific Mainnet, and the Nile Testnet. Only OCEAN within the Ethereum Mainnet carry any value reflected [on our token page](https://oceanprotocol.com/token).
+Ocean Tokens can, in principle, live in any EVM-compatible network. The Ocean Token contract is deployed in the Ethereum Mainnet, Pacific Mainnet, and the Nile Testnet.
+
+Only OCEAN within the Ethereum Mainnet carry any value, reflected [on our token page](https://oceanprotocol.com/token).
 
 | Property                 | Value                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -24,6 +26,7 @@ There were several ways to acquire some of the Ethereum Mainnet Ocean Tokens in 
 - participation in the token sale
 - participation in the initial exchange offering (IEO)
 - completion of a [bounty](/concepts/bounties/)
+- buy on any exchange OCEAN is listed on
 
 After [the initial exchange offering on Bittrex International](https://blog.oceanprotocol.com/initial-exchange-offering-of-ocean-protocol-on-bittrex-international-a454688f466a), Ethereum Mainnet Ocean Tokens became available in the Ethereum Mainnet (and not in any other network).
 
@@ -31,8 +34,8 @@ The initial circulating supply of Ethereum Mainnet Ocean Tokens became available
 
 At the time of writing, you could use Ethereum Mainnet Ocean Tokens to do various things in the Ethereum Mainnet, including but not limited to:
 
-- buy other cryptocurrencies. See the next subsection for more details.
-- stake in [dxDAO](https://dxdao.daostack.io/).
+- buy other cryptocurrencies
+- provide liquidity in decentralized exchanges like UniSwap or Balancer
 
 ### Check Your Ethereum Mainnet Ocean Token Balance
 
