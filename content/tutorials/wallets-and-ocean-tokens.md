@@ -25,6 +25,6 @@ Almost all ERC-20 wallets require these values for adding a custom token:
 
 MetaMask should now show your Ocean Token (OCEAN) balance, and when you're looking at that, there should be a `Send` button to send Ocean Tokens to others. For help with that, see [the MetaMask docs about how to send tokens](https://metamask.zendesk.com/hc/en-us/articles/360015488931-How-to-Send-Tokens).
 
-### Other Wallet Software
+## Other Wallet Software
 
 Do a web search to find out how to add a custom ERC-20 token to the wallet software you're using.
