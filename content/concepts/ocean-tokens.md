@@ -7,7 +7,7 @@ description: The technical basics and most important infos about Ocean Tokens in
 
 **Ocean Tokens** are the [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) associated with Ocean Protocol. They are standards-compliant [ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20).
 
-Ocean Tokens can, in principle, live in any EVM-compatible network. The [Ocean Token contract](https://github.com/oceanprotocol/keeper-contracts/blob/develop/contracts/OceanToken.sol) is deployed in the Ethereum Mainnet, Pacific Mainnet, and the Nile Testnet. The tokens sold in the Ocean Protocol token sale were in the Ethereum Mainnet.
+Ocean Tokens can, in principle, live in any EVM-compatible network. The Ocean Token contract is deployed in the Ethereum Mainnet, Pacific Mainnet, and the Nile Testnet. Only OCEAN within the Ethereum Mainnet carry any value reflected [on our token page](https://oceanprotocol.com/token).
 
 | Property                 | Value                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,19 +65,6 @@ You can buy or sell Ethereum Mainnet Ocean Tokens (OCEAN) via any exchange that 
 ## Pacific Network Ocean Tokens
 
 Ocean Tokens in Ocean's Mainnet, [Pacific](/concepts/pacific-network/), represent the same value as in the Ethereum Mainnet. The only way to get Ocean Tokens in Pacific is to transfer them from the Ethereum Mainnet.
-
-### Ocean Token Bridge
-
-For this purpose there is a token bridge between the Ethereum Mainnet and the Pacific Network, allowing anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network, and vice versa.
-
-- [**Ocean Token Bridge**](https://bridge.oceanprotocol.com)
-- [Tutorial: Transfer Ocean Tokens between Networks](/tutorials/token-bridge/)
-
-[![The Ocean token bridge user interface](../tutorials/images/tb02.png)](https://bridge.oceanprotocol.com)
-
-Once you have some Ocean Tokens in Pacific, you can use them for all currently-implemented Ocean Protocol tasks _in Pacific_ (e.g. buying assets from a marketplace connected to Pacific).
-
-However, please be aware that transferring tokens between networks can put your Ocean Tokens at risk.
 
 ## Testnet Ocean Tokens
 

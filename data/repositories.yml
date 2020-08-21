@@ -38,7 +38,6 @@
     - name: tuna
     - name: plecos
     - name: faucet
-    - name: token-bridge-ui
     - name: status
     - name: blockscout
     - name: ipfs

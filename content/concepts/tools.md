@@ -38,15 +38,6 @@ Instances are deployed for:
 
 <repo name="blockscout"></repo>
 
-## Ocean Token Bridge
-
-The Ocean Token Bridge between the Ethereum Mainnet and the Pacific Network allows anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network.
-
-- [**Ocean Token Bridge**](https://bridge.oceanprotocol.com)
-- [Tutorial: Transfer Ocean Tokens between Networks](/tutorials/token-bridge/)
-
-<repo name="token-bridge-ui"></repo>
-
 ## Ocean Network Status
 
 The Ocean status page checks all Ocean network connections from your browser.
