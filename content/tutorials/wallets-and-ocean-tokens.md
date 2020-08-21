@@ -5,6 +5,8 @@ description: How to use crypto wallet software to check your Ocean Token balance
 
 If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.
 
+## Token Information
+
 Almost all ERC-20 wallets require these values for adding a custom token:
 
 - Contract Address: `0xxxx`
@@ -17,7 +19,7 @@ Almost all ERC-20 wallets require these values for adding a custom token:
 2. Select the account you want to manage.
 3. Scroll down until the `Add Token` link is visible, then click on it.
 4. Click on `Custom Token`.
-5. Paste the Ocean Token contract address listed above into the "Token Contract Address" field. The other two fields should auto-fill. If not, add `OCEAN` for the symbol and `18` for the precision.
+5. Paste the Ocean Token contract address listed above into the _Token Contract Address_ field. The other two fields should auto-fill. If not, add `OCEAN` for the symbol and `18` for the precision.
 6. Click `Next`.
 7. Click `Add Tokens`.
 
