@@ -52,6 +52,10 @@ module.exports = {
     {
       from: '/references/squid-java/',
       to: 'https://www.javadoc.io/doc/com.oceanprotocol/squid/'
+    },
+    {
+      from: '/tutorials/token-bridge/',
+      to: '/tutorials/'
     }
   ]
 }

@@ -7,11 +7,13 @@ description: The technical basics and most important infos about Ocean Tokens in
 
 **Ocean Tokens** are the [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) associated with Ocean Protocol. They are standards-compliant [ERC-20 tokens](https://en.wikipedia.org/wiki/ERC-20).
 
-Ocean Tokens can, in principle, live in any EVM-compatible network. The [Ocean Token contract](https://github.com/oceanprotocol/keeper-contracts/blob/develop/contracts/OceanToken.sol) is deployed in the Ethereum Mainnet, Pacific Mainnet, and the Nile Testnet. The tokens sold in the Ocean Protocol token sale were in the Ethereum Mainnet.
+Ocean Tokens can, in principle, live in any EVM-compatible network. The Ocean Token contract is deployed in the Ethereum Mainnet, Pacific Mainnet, and the Nile Testnet.
+
+Only OCEAN within the Ethereum Mainnet carry any value, reflected [on our token page](https://oceanprotocol.com/token).
 
 | Property                 | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Token Contract Addresses | _Ethereum Mainnet_<br /> [`0x985dd3D42De1e256d09e1c10F112bCCB8015AD41`](https://etherscan.io/token/0x985dd3d42de1e256d09e1c10f112bccb8015ad41)<br /><br />_Pacific Mainnet_<br /> [`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`](https://submarine.oceanprotocol.com/address/0x012578f9381e876a9e2a9111dfd436ff91a451ae/transactions)<br /><br />_Nile Testnet_<br />[`0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad`](https://submarine.nile.dev-ocean.com/address/0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad) |
+| Token Contract Addresses | _Ethereum Mainnet_<br /> [`0x7AFeBBB46fDb47ed17b22ed075Cde2447694fB9e`](https://etherscan.io/token/0x7AFeBBB46fDb47ed17b22ed075Cde2447694fB9e)<br /><br />_Pacific Mainnet_<br /> [`0x012578f9381e876A9E2a9111Dfd436FF91A451ae`](https://submarine.oceanprotocol.com/address/0x012578f9381e876a9e2a9111dfd436ff91a451ae/transactions)<br /><br />_Nile Testnet_<br />[`0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad`](https://submarine.nile.dev-ocean.com/address/0x9861Da395d7da984D5E8C712c2EDE44b41F777Ad) |
 | Token Symbol             | OCEAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Decimals of Precision    | 18                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
@@ -31,8 +33,8 @@ The initial circulating supply of Ethereum Mainnet Ocean Tokens became available
 
 At the time of writing, you could use Ethereum Mainnet Ocean Tokens to do various things in the Ethereum Mainnet, including but not limited to:
 
-- buy other cryptocurrencies. See the next subsection for more details.
-- stake in [dxDAO](https://dxdao.daostack.io/).
+- buy other cryptocurrencies
+- provide liquidity in decentralized exchanges like Uniswap or Balancer
 
 ### Check Your Ethereum Mainnet Ocean Token Balance
 
@@ -65,19 +67,6 @@ You can buy or sell Ethereum Mainnet Ocean Tokens (OCEAN) via any exchange that 
 ## Pacific Network Ocean Tokens
 
 Ocean Tokens in Ocean's Mainnet, [Pacific](/concepts/pacific-network/), represent the same value as in the Ethereum Mainnet. The only way to get Ocean Tokens in Pacific is to transfer them from the Ethereum Mainnet.
-
-### Ocean Token Bridge
-
-For this purpose there is a token bridge between the Ethereum Mainnet and the Pacific Network, allowing anyone with Ocean Tokens to move them from the Ethereum Mainnet to the Pacific Network, and vice versa.
-
-- [**Ocean Token Bridge**](https://bridge.oceanprotocol.com)
-- [Tutorial: Transfer Ocean Tokens between Networks](/tutorials/token-bridge/)
-
-[![The Ocean token bridge user interface](../tutorials/images/tb02.png)](https://bridge.oceanprotocol.com)
-
-Once you have some Ocean Tokens in Pacific, you can use them for all currently-implemented Ocean Protocol tasks _in Pacific_ (e.g. buying assets from a marketplace connected to Pacific).
-
-However, please be aware that transferring tokens between networks can put your Ocean Tokens at risk.
 
 ## Testnet Ocean Tokens
 
