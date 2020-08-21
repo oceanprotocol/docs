@@ -13,7 +13,7 @@ If you know the URL of a Brizo instance attached to the network you're using, th
 
 The Ocean Token contract address in the Ethereum Mainnet is:
 
-[`0x985dd3D42De1e256d09e1c10F112bCCB8015AD41`](https://etherscan.io/token/0x985dd3d42de1e256d09e1c10f112bccb8015ad41)
+[`0xxxx`](https://etherscan.io/token/0xxxx)
 
 ### Pacific Network
 
