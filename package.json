@@ -45,7 +45,7 @@
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-source-graphql": "^2.7.1",
     "gatsby-transformer-remark": "^2.8.27",
-    "gatsby-transformer-sharp": "^2.5.12",
+    "gatsby-transformer-sharp": "^2.5.13",
     "gatsby-transformer-xml": "^2.3.10",
     "gatsby-transformer-yaml": "^2.4.10",
     "giphy-js-sdk-core": "^1.0.6",
