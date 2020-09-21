@@ -44,7 +44,7 @@
     "gatsby-remark-vscode": "^3.0.1",
     "gatsby-source-filesystem": "^2.3.27",
     "gatsby-source-graphql": "^2.7.2",
-    "gatsby-transformer-remark": "^2.8.31",
+    "gatsby-transformer-remark": "^2.8.35",
     "gatsby-transformer-sharp": "^2.5.13",
     "gatsby-transformer-xml": "^2.3.10",
     "gatsby-transformer-yaml": "^2.4.10",
