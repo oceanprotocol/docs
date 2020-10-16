@@ -5,18 +5,22 @@ description: Terminology specific to Ocean Protocol.
 
 ## Ocean Network
 
-Any EVM-compatible network where Ocean [smart contracts](https://github.com/oceanprotocol/ocean-contracts) are deployed. There can be many Ocean networks and you can use the Ocean Protocol in several EVM-compatible networks, including:
+Any EVM-compatible network where [Ocean smart contracts](https://github.com/oceanprotocol/ocean-contracts) are deployed. There can be many Ocean networks and you can use the Ocean Protocol in several EVM-compatible networks, including:
 
-- Ethereum Mainnet
+- [Ethereum Mainnet](https://www.ethereum.org)
 - Ethereum [test networks](/concepts/testnets/)
 
-## Asset or Data Asset
+## Data Service, Data Asset, Datatoken
 
-Anything that can be registered with and made available via an Ocean Network. Examples include data sets, trained model parameters, pipelines, and data-cleaning services.
+A data service may serve up a dataset or a compute service like Compute-to-Data. It's characterized by a url.
+
+Each data asset is represented by an ERC20 datatoken.
+
+You can access a data service if you send 1.0 datatokens to the Provider.
 
 ## Data Owner or Data Service Provider
 
-Someone who has assets that they want to sell. An example is an almond distributor with 30 years of data about almond sales.
+Someone who has data assets that they want to sell. An example is an almond distributor with 30 years of data about almond sales.
 
 > Initially, most data owners or data service providers will also be the publishers of their own assets.
 
@@ -26,11 +30,13 @@ A service which mediates access to assets on behalf of data owners or data servi
 
 > Initially, most publishers will also be the owners of the assets they publish.
 
-## Consumer
+## Data Consumer
 
-Someone who wants assets. An example is a data scientist working at an economic think tank.
+Someone who buys a asset. An example is a data scientist working at an economic think tank.
 
 ## Marketplace
 
-A service where publishers can list what assets they have, and consumers can see what's available then buy it (or get it for free). Every marketplace has a database where they store metadata about the assets they know about (but not the assets themselves). An Ocean network can support many marketplaces.
+A service where publishers can list what assets they have, and consumers can see what's available then buy it.
+
+Metadata is information about the data asset. In Ocean, metadata is stored on-chain, but marketplaces may have a local cache for faster search. 
 
