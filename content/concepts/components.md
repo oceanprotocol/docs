@@ -1,22 +1,42 @@
 ---
 title: Software Components
-description: Ocean components are tools meant to stay as simple as possible.
+description: Components, from top-level (GUI) downwards 
 ---
 
-## Aquarius - Metadata Cache
+## Ocean Market
 
-Metadata is stored on-chain.
+A [live](http://market.oceanprotocol.com) community-oriented data marketplace. [Here's](https://blog.oceanprotocol.com/ocean-market-an-open-source-community-marketplace-for-data-4b99bedacdc3) a blog post with more information.
+
+It uses React Hooks, which in turn uses the JavaScript driver.
+
+<repo name="commons"></repo>
+
+## React Hooks
+
+Building blocks to help building GUI-based frontends.
+
+## JavaScript & Python Drivers
+
+Client libraries used by applications (such as Pleuston or Jupyter notebooks) to interact with Ocean components, including Keepers, Aquarius nodes, Brizo nodes, etc.
+
+![How Squid is Used](images/ocean-squid-ecosystem.png)
+
+<repo name="squid-js"></repo>
+<repo name="squid-py"></repo>
+<repo name="squid-java"></repo>
+
+
+## Metadata Cache - Aquarius
+
+Ocean stores metadata of data assets *on-chain*.
 
 To improve GUI responsiveness, Ocean Market runs Aquarius to retrieve the metadata from the chain and cache it locally (using MongoDB). 
 
 <repo name="aquarius"></repo>
 
-## Brizo
+## Provider
 
-Publishers run Brizo to manage interactions with marketplaces and consumers.
-It interacts with the publisher's cloud and/or on-premise infrastructure.
-
-The most basic scenario for a publisher is to provide access to the [assets](/concepts/terminology/#asset-or-data-asset) the publisher owns or manages, but [Brizo can do much more](/concepts/architecture/#brizo).
+Publishers run Provider to serve up a data asset when requested. Provider interacts with the publisher's cloud and/or on-premise infrastructure.
 
 <repo name="brizo"></repo>
 
@@ -42,23 +62,3 @@ Brizo supports several options for file storage, including Azure Storage, Amazon
 You can create your own Osmosis drivers by extending on the `osmosis-driver-interface`.
 
 <repo name="osmosis-driver-interface"></repo>
-
-## JavaScript & Python Drivers
-
-Client libraries used by applications (such as Pleuston or Jupyter notebooks) to interact with Ocean components, including Keepers, Aquarius nodes, Brizo nodes, etc.
-
-![How Squid is Used](images/ocean-squid-ecosystem.png)
-
-<repo name="squid-js"></repo>
-<repo name="squid-py"></repo>
-<repo name="squid-java"></repo>
-
-## Commons Marketplace
-
-An online example marketplace/publisher for consumers to explore, download, and publish open data sets in the [Pacific Network](/concepts/pacific-network/). Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
-
-For more information, see [the blog post about Commons Marketplace](https://blog.oceanprotocol.com/the-commons-data-marketplace-c57a44288314).
-
-<repo name="commons"></repo>
-
-The Commons Marketplace is also the default frontend when running a full Ocean network locally with [Barge](/setup/quickstart/).
