@@ -1,24 +1,24 @@
 ---
 title: Introduction
-description: Get up to speed with Ocean Protocol.
+description: Ocean Protocol - Tools for the Web3 Data Economy
 ---
 
-## What is Ocean Protocol?
+In Ocean Protocol, each data service gets its own **datatoken**. This enables data wallets, data exchanges, and data co-ops by directly leveraging crypto wallets, exchanges, and more.
 
-Ocean Protocol is an ecosystem for the data economy and associated services. It provides a tokenized service layer that exposes data, storage, compute and algorithms for consumption with a set of deterministic proofs on availability and integrity that serve as verifiable service agreements. There is staking on services to signal quality, reputation and ward against Sybil Attacks.
+Ocean Protocol provides tools for developers to build data marketplaces, and to manage datatokens for use in DeFi.
 
-Ocean helps to unlock data, particularly for AI. It is designed for scale and uses blockchain technology that allows data to be shared and sold in a safe, secure and transparent manner.
+## Build Data Markets
 
-While vast amounts of data are generated each year, data exchange and analysis have been hampered due largely to concerns over trust and security. Currently, many organizations have data but do not have the trusted and secure means to share it. Without data, AI cannot advance and be applied to solve problems and ultimately improve lives. More pressing is the fact that today, only a handful of companies have both AI and data capacities, and if data remains locked up, these companies could very well govern the development of AI and thereby our future.
+Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://market.oceanprotocol.com/) code or building up with Ocean components.
 
-Through blockchain technology and tokens, Ocean Protocol connects data providers and consumers, allowing data to be shared while guaranteeing traceability, transparency, and trust for all stakeholders involved. Ocean Protocol is designed to give data owners control over their data assets and prevent them from being locked in to any single marketplace.
+## Manage ERC20 Data Assets for use in DeFi
 
-By bringing together decentralized blockchain technology, a data sharing framework, and an ecosystem for data and related services, Ocean Protocol is committed to kick-starting a new Data Economy that touches every single person, company and device, giving power back to data owners, enabling people to reap value from data to better our world.
+Use Ocean [JavaScript](https://github.com/oceanprotocol/ocean-lib-js) or [Python](https://github.com/oceanprotocol/squid-py) drivers to manage datatokens:
 
-## Mission Statement
+- Publish and consume data services: downloadable files or compute-to-data. Use Ocean to deploy a new [ERC20](https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md) datatoken contract for each data service, then mint datatokens.
 
-Society is becoming increasingly reliant on data, especially with the advent of AI. However, a small handful of organizations with both massive data assets and AI capabilities attained worrying levels of control which is a danger to a free and open society.
+- Transfer datatokens to another owner (or approve & transferFrom).
 
-Ocean Protocol aims to unlock data, for more equitable outcomes for users of data, using a thoughtful application of both technology and governance.
+- Manage pools. Deploy OCEAN-datatoken [Balancer](https://www.balancer.finance/) pools, buy & sell datatokens (swap), and add & remove liquidity.
 
-For more details, see the blog post "[Mission & Values for Ocean Protocol](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8)".
+- And more. Use ERC20 support in [web3.js](https://web3js.readthedocs.io/), [web3.py](https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract) and Solidity to connect datatokens with crypto wallets and other DeFi services.
