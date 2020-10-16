@@ -1,52 +1,15 @@
 ---
 title: Software Components
-description: Every Ocean network is brought to life by many interacting symbiotic software components.
+description: Ocean components are tools meant to stay as simple as possible.
 ---
 
-Before reading this page, you should understand some [Ocean-specific terminology](/concepts/terminology/).
+## Aquarius - Metadata Cache
 
-## Keeper
+Metadata is stored on-chain.
 
-A computer running an EVM-compatible blockchain client
-(such as [Parity Ethereum](https://www.parity.io/ethereum/))
-where the associated blockchain network is running the Ocean Protocol
-[keeper-contracts](https://github.com/oceanprotocol/keeper-contracts)
-(smart contracts).
-
-<repo name="keeper-contracts"></repo>
-
-See also: [Run a Keeper](/setup/keeper/)
-
-## Secret Store
-
-A [Parity Secret Store](https://wiki.parity.io/Secret-Store): software for distributed key pair generation, distributed key storage, and threshold retrieval. It's used to store [asset](/concepts/terminology/#asset-or-data-asset) access-control keys.
-
-<repo name="parity-ethereum"></repo>
-
-There are several clients for integrating the Parity Secret Store into Ocean:
-
-<repo name="secret-store-client-js"></repo>
-<repo name="secret-store-client-py"></repo>
-<repo name="secret-store-client-java"></repo>
-
-## Aquarius
-
-Marketplaces run Aquarius to store and manage metadata about the [assets](/concepts/terminology/#asset-or-data-asset) available in their marketplace. It provides an HTTP API for interacting with an off-chain database (sometimes called "OceanDB").
+To improve GUI responsiveness, Ocean Market runs Aquarius to retrieve the metadata from the chain and cache it locally (using MongoDB). 
 
 <repo name="aquarius"></repo>
-
-### OceanDB Drivers
-
-Aquarius supports several options for the off-chain database (OceanDB), including Elasticsearch and MongoDB. One can add support for another off-chain database by creating a new driver similar to the existing OceanDB drivers.
-
-<repo name="oceandb-elasticsearch-driver"></repo>
-<repo name="oceandb-mongodb-driver"></repo>
-
-> There is also a [BigchainDB driver](https://github.com/oceanprotocol/oceandb-bigchaindb-driver) but it hasn't been maintained.
-
-You can create your own OceanDB drivers by extending on the `oceandb-driver-interface`.
-
-<repo name="oceandb-driver-interface"></repo>
 
 ## Brizo
 
@@ -80,7 +43,7 @@ You can create your own Osmosis drivers by extending on the `osmosis-driver-inte
 
 <repo name="osmosis-driver-interface"></repo>
 
-## Squid Libraries
+## JavaScript & Python Drivers
 
 Client libraries used by applications (such as Pleuston or Jupyter notebooks) to interact with Ocean components, including Keepers, Aquarius nodes, Brizo nodes, etc.
 
@@ -99,9 +62,3 @@ For more information, see [the blog post about Commons Marketplace](https://blog
 <repo name="commons"></repo>
 
 The Commons Marketplace is also the default frontend when running a full Ocean network locally with [Barge](/setup/quickstart/).
-
-## Pleuston (deprecated)
-
-An example marketplace/publisher front-end for developers to explore, download, and publish [assets](/concepts/terminology/#asset-or-data-asset) in an Ocean Protocol network. Implemented using [React](https://reactjs.org/) and [squid-js](https://github.com/oceanprotocol/squid-js).
-
-<repo name="pleuston"></repo>
