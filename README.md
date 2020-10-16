@@ -23,7 +23,6 @@
 - [Linting & Formatting](#linting--formatting)
   - [Editor Setup: VS Code](#editor-setup-vs-code)
 - [Deployment](#deployment)
-- [Authors](#authors)
 - [License](#license)
 
 ## Content
@@ -114,11 +113,6 @@ Requires authorization against AWS with [one of the various ways](https://docs.a
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 - `AWS_DEFAULT_REGION`
-
-## Authors
-
-- Troy McConaghy ([@ttmc](https://github.com/ttmc)) - [Ocean Protocol](https://oceanprotocol.com)
-- Matthias Kretschmann ([@kremalicious](https://github.com/kremalicious)) - [Ocean Protocol](https://oceanprotocol.com)
 
 ## License
 
