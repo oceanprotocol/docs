@@ -2,9 +2,7 @@
   items:
     - title: Introduction
       link: /concepts/introduction/
-    - title: Terminology
-      link: /concepts/terminology/
-    - title: Software Components
+    - title: Architecture Overview
       link: /concepts/components/
     - title: Network - Local
       link: /concepts/tools/
@@ -12,8 +10,6 @@
       link: /concepts/testnets/
     - title: Network - Ethereum Mainnet
       link: /concepts/pacific-network/
-    - title: Ocean Tokens
-      link: /concepts/ocean-tokens/
     - title: Wallet Basics
       link: /concepts/wallets/
 
