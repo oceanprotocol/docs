@@ -4,21 +4,18 @@
       link: /concepts/introduction/
     - title: Architecture Overview
       link: /concepts/components/
+      
+- group: Networks
+  items:
     - title: Network - Local
       link: /concepts/tools/
     - title: Network - Ropsten Testnet
       link: /concepts/testnets/
     - title: Network - Ethereum Mainnet
       link: /concepts/pacific-network/
-    - title: Wallet Basics
-      link: /concepts/wallets/
-
-- group: Architecture
+      
+- group: Preserving Privacy
   items:
-    - title: Overview
-      link: /concepts/architecture/
-    - title: Secret Store
-      link: /concepts/secret-store/
     - title: Compute-to-Data
       link: /concepts/compute-to-data/
 
@@ -37,7 +34,9 @@
     - title: Code of Conduct
       link: /concepts/code-of-conduct/
 
-- group: Further Information
+- group: Extras
   items:
+    - title: Wallet Basics
+      link: /concepts/wallets/
     - title: Resources
       link: /concepts/resources/
