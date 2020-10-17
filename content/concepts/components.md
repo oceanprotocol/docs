@@ -5,6 +5,9 @@ description: Components, from top-level (GUI) downwards
 
 ## Overview
 
+
+![How Squid is Used](images/ocean-squid-ecosystem.png)
+
 Here’s an overview of the figure.
 
 - The top layer is **applications** like Ocean Market. With these apps, users can onboard data services into crypto (publish and mint datatokens), hold datatokens as assets (data wallets), discover data assets and buy / sell datatokens for fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
