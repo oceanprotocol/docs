@@ -10,8 +10,7 @@ All Ocean Protocol code (software) is licensed under an [Apache 2.0 license](htt
 If you are:
 
 - contributing code to complete a _currently-open_ [Ocean Protocol bounty](/concepts/bounties/) or
-- a _current_ employee of BigchainDB GmbH or
-- a _current_ employee of DEX Pte Ltd
+- a _current_ employee of BigchainDB GmbH 
 
 then there is nothing extra for you to do: licensing is already handled.
 

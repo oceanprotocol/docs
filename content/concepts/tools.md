@@ -1,6 +1,6 @@
 ---
 title: Network - Local
-description: Tools for local deployment
+description: Tools for development on a local Ethereum network
 ---
 
 You can deploy Ocean onto Ganache - a local Ethereum "network" that you run on your machine for fast iterations while developing your app.

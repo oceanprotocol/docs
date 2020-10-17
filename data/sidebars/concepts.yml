@@ -23,14 +23,12 @@
   items:
     - title: Ways to Contribute
       link: /concepts/contributing/
-    - title: Bounties
+    - title: Get Funding
       link: /concepts/bounties/
     - title: Reporting Vulnerabilities
       link: /concepts/vulnerabilities/
     - title: Legal Requirements when Contributing Code
       link: /concepts/legal-reqs/
-    - title: Engineering Principles
-      link: /concepts/principles/
     - title: Code of Conduct
       link: /concepts/code-of-conduct/
 
