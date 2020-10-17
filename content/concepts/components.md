@@ -1,12 +1,13 @@
 ---
 title: Architecture Overview
-description: Components, from top-level (GUI) downwards 
+description: Simplicity and Interoperability via a Datatokens Core
 ---
 
 ## Overview
 
+Here is the Ocean architecture.
 
-![How Squid is Used](images/ocean-squid-ecosystem.png)
+![Ocean Protocol tools architecture](images/architecture.png)
 
 Here’s an overview of the figure.
 
