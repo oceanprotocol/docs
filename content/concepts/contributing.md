@@ -7,7 +7,7 @@ description: Help develop Ocean core software, more
 
 We'd love to have you help contribute to the Ocean core software! Here are ways to get going:
 
-- *Just do it:)* Branch from the code, improve it, submit a Pull Request.
+- _Just do it:)_ Branch from the code, improve it, submit a Pull Request.
 - Chat with other Ocean developers in [Discord](https://discord.gg/TnXjkR5).
 - Because of the weird world of intellectual property, before it can go through, we need to follow the [legal requirements](/concepts/legal-reqs/). Please be aware of this.
 - Finally, here's the [Contributor Code of Conduct](/concepts/code-of-conduct/).

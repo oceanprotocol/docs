@@ -4,5 +4,3 @@ description: Information about OCEAN
 ---
 
 Please go to https://oceanprotocol.com/token.
-
-
