@@ -1,9 +1,7 @@
 ---
 title: Quickstart
-description: Do a quick test drive of Ocean Protocol components or interact with the network by using Jupyter notebooks.
+description: Do a quick test drive of Ocean.
 ---
-
-## 🐳 Developers: Barge
 
 Developers can run and try every [Ocean software component](/concepts/components/) on their local machine, all at once, using Docker Compose. Ocean Protocol software developers do this often, to test their code against all the other Ocean components.
 
@@ -24,9 +22,3 @@ Once everything is up and running, you can interact with the components. E.g. on
 For the details of what components are running, see the [`barge` repository](https://github.com/oceanprotocol/barge).
 
 <repo name="barge"></repo>
-
-## 👩‍🔬 Data Science: Jupyter notebooks
-
-You can try some free, online Jupyter notebooks that connect to a live Ocean test network.
-
-- [Tutorial: Jupyter Notebooks](/tutorials/jupyter-notebooks/)
