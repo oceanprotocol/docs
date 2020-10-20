@@ -1,6 +1,6 @@
 ---
 title: Quickstart
-description: Quickly grok Ocean.
+description: Quickly grok Ocean tools.
 ---
 
 Each of the following has its own quickstart to get a feel for using Ocean. Pick your favorite and follow the link to proceed.
