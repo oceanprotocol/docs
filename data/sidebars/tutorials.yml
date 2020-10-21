@@ -23,7 +23,7 @@
     - title: Set Up On-Premise Storage
       link: /tutorials/on-premise-for-brizo/
 
-- group: React App Tutorial (squid-js)
+- group: React App Tutorial
   items:
     - title: Setup
       link: /tutorials/react-setup/
@@ -41,13 +41,3 @@
       link: /tutorials/react-compute-raw/
     - title: Get Status of a Compute Job
       link: /tutorials/react-compute-status/
-
-- group: squid-py Tutorials
-  items:
-    - title: Jupyter Notebooks
-      link: /tutorials/jupyter-notebooks/
-
-- group: More Examples
-  items:
-    - title: Example Code Using Squid
-      link: /tutorials/example-code/
