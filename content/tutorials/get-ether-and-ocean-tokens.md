@@ -1,5 +1,5 @@
 ---
-title: Get Ether and Ocean Tokens
+title: Get ETH and OCEAN Tokens
 description: A tutorial about how to get Ether and Ocean Tokens.
 ---
 
