@@ -1,5 +1,5 @@
 ---
-title: Network - Local
+title: Network - Local / Barge
 description: Tools for development on a local Ethereum network
 ---
 
