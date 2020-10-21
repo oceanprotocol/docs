@@ -3,7 +3,7 @@
     - title: Introduction
       link: /concepts/introduction/
     - title: Architecture Overview
-      link: /concepts/components/
+      link: /concepts/architecture/
 
 - group: Networks
   items:
