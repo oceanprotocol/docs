@@ -12,3 +12,5 @@ Ocean is deployed to Ropsten network. This network is for testing your app's dep
 | Ocean Market - Provider | https://FIXME                 |
 | Ocean Market - Aquarius | https://FIXME                 |
 | OCEAN Faucet Server     | https://FIXME                 |
+
+The [Connect-to-Networks](/tutorials/connect-to-networks/) tutorial has more information about connecting your wallet or app to Ganache / Barge.
