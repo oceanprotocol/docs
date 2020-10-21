@@ -1,6 +1,6 @@
 ---
 title: Resources
-description: Further resources about Ocean
+description: 
 ---
 
 Here are a few places for more information.
