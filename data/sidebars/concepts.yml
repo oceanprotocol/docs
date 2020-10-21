@@ -4,7 +4,7 @@
       link: /concepts/introduction/
     - title: Architecture Overview
       link: /concepts/components/
-      
+
 - group: Networks
   items:
     - title: Network - Local
@@ -13,7 +13,7 @@
       link: /concepts/testnets/
     - title: Network - Ethereum Mainnet
       link: /concepts/pacific-network/
-      
+
 - group: Preserving Privacy
   items:
     - title: Compute-to-Data

@@ -10,5 +10,3 @@ Barge is a shell script to help with Ocean Ganache deployments. It launches Dock
 It's used extensively by the Ocean core devs. You'll also find Barge in the [Quickstart](/setup/quickstart/).
 
 <repo name="barge"></repo>
-
-

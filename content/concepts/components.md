@@ -65,4 +65,3 @@ The ERC20 nature of datatokens eases composability with other Ethereum tools and
 ## Actor Identities
 
 Actors like data providers and consumers have Ethereum addresses, aka web3 accounts. These are managed by crypto wallets, as one would expect. For most use cases, this is all that’s needed. There are cases where the Ocean community could layer on protocols like [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) or tools like [3Box](https://3box.io/).
-
