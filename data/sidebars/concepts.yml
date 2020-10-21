@@ -7,7 +7,7 @@
 
 - group: Networks
   items:
-    - title: Network - Local
+    - title: Network - Local / Barge
       link: /concepts/tools/
     - title: Network - Ropsten Testnet
       link: /concepts/testnets/
