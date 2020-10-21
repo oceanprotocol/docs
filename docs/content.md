@@ -99,7 +99,7 @@ Note: The `description` value will be rendered on-page below the title, and it w
 1. Don't include the page title or description in the Markdown section. That is, don't begin the Markdown content with `# This is the Title in Title Case`. Just write as if that were already there.
 2. start your heading levels with `h2`, so `## My heading`
 3. Internal links to other docs pages should be:
-   - to a absolute URL without the host, that looks like `/concepts/terminology/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
+   - to a absolute URL without the host, that looks like `/concepts/introduction/` with slashes on the beginning and end, and with no `.md` or `.html` at the end (before the last slash).
    - when linking from external repos, to the _full absolute URL_, such as `https://docs.oceanprotocol.com/hello/you-are-awesome/`
 4. no TOC please, this will be generated automatically from all headings
 5. for images and media, you can keep them in the original repo. Images will be automatically grabbed by the docs site on querying. When doing that, docs site will generate all sorts of image sizes to handle proper responsive images, so no need to keep an eye on image dimensions or file sizes

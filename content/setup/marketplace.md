@@ -3,18 +3,18 @@ title: Set Up a Marketplace
 description: Set up and run a data marketplace in an Ocean network.
 ---
 
-In Ocean Protocol, marketplaces and publishers play different roles (outlined in the [Terminology page](/concepts/terminology/)), but both roles can be played by the same person or organization. Initially, we anticipate that will be the most common setup. As a result, this guide explains how to set up and run a combined marketplace/publisher (for now).
+In Ocean Protocol, marketplaces and publishers are different roles, but one person or organization can play both roles. Initially, we anticipate that will be the most common setup. As a result, this guide explains how to set up and run a combined marketplace/publisher (for now).
 
 ## An Outline of the Steps
 
-1. Have [assets](/concepts/terminology/#asset-or-data-asset) to offer in your marketplace.
+1. Have data assets to offer in your marketplace.
 1. Prepare those assets to work with Ocean Protocol.
 1. Develop a marketplace/publisher app.
 1. Run everything you need to run in production.
 
 ## Prepare Assets
 
-At the time of writing, the following kinds of [assets](/concepts/terminology/#asset-or-data-asset) were supported:
+At the time of writing, the following kinds of assets were supported:
 
 - data sets stored in Azure Storage (i.e. with "core.windows.net" in their URL). See [the tutorial about setting up Azure Storage to work with Ocean Protocol](/tutorials/azure-for-brizo/).
 - data sets stored in Amazon S3 storage (i.e. with "s3://" in their URL). See [the tutorial about setting up Amazon S3 storage to work with Ocean Protocol](/tutorials/amazon-s3-for-brizo/).
