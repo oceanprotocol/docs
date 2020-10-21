@@ -12,7 +12,7 @@
     - title: Network - Ropsten Testnet
       link: /concepts/network-ropsten/
     - title: Network - Ethereum Mainnet
-      link: /concepts/pacific-network/
+      link: /concepts/network-ethmainnet/
 
 - group: Preserving Privacy
   items:
