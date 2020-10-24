@@ -1,6 +1,6 @@
 ---
 title: Connect to Ocean-Related Networks
-description: On connecting to Ethereum, Ropsten and Your Local Network.
+description: On connecting to Ethereum, Rinkeby and Your Local Network.
 ---
 
 ##Connect to Ethereum mainnet
@@ -9,9 +9,9 @@ Metamask and other ERC20 wallets default to Ethereum mainnet. Therefore your wal
 
 Some apps may need `network_id` and `chain_id`. The values are both `1` for Ethereum mainnet. `Symbol` and `nickname` can be whatever value you like.
 
-##Connect to Ropsten testnet
+##Connect to Rinkeby testnet
 
-In MetaMask, click on the network name dropdown, then select `Ropsten`.
+In MetaMask, click on the network name dropdown, then select `Rinkeby`.
 
 Its `network_id` is 3 and `chain_id` is 3.
 

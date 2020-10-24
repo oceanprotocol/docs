@@ -7,7 +7,7 @@ description: How to get tokens for each network deployment
 
 In each network, you'll need ETH to pay for gas. Certain Ocean actions will need OCEAN tokens.
 
-The ETH and OCEAN in Ropsten and local networks are not "real" ETH or OCEAN tokens of any value. They're simply stand-ins to be able to test. 
+The ETH and OCEAN in Rinkeby and local networks are not "real" ETH or OCEAN tokens of any value. They're simply stand-ins to be able to test. 
 
 ### Ethereum mainnet
 
@@ -16,13 +16,13 @@ The ETH and OCEAN in Ropsten and local networks are not "real" ETH or OCEAN toke
 - **OCEAN.** [Here are exchanges](https://www.coingecko.com/en/coins/ocean-protocol#markets) to purchase OCEAN.
 
 
-### Ropsten testnet
+### Rinkeby testnet
 
-Testnets like Ropsten have faucets to dole out ETH and OCEAN.
+Testnets like Rinkeby have faucets to dole out ETH and OCEAN.
 
-- **ETH.** [Here's an ETH faucet](https://faucet.ropsten.be/) for Ropsten. You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
+- **ETH.** [Here's an ETH faucet](https://faucet.rinkeby.be/) for Rinkeby. You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
 
-- **OCEAN.** [Here's an OCEAN faucet](fixme) for Ropsten (FIXME!!).
+- **OCEAN.** [Here's an OCEAN faucet](fixme) for Rinkeby (FIXME!!).
 
 ### Local network
 

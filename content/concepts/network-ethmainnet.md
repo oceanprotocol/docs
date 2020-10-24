@@ -9,7 +9,6 @@ Ocean is deployed to Ethereum mainnet. This network is for your app's production
 | ----------------------- | ---------------------- |
 | Etherscan explorer      | https://etherscan.io/  |
 | Ocean Market main       | https://oceanmarket.io |
-| Ocean Market - Provider | https://FIXME          |
-| Ocean Market - Aquarius | https://FIXME          |
+| Ocean Market - Provider | https://provider.mainnet.oceanprotocol.com |
+| Ocean Market - Aquarius | https://aquarius.mainnet.oceanprotocol.com |
 
-The [Connect-to-Networks](/tutorials/connect-to-networks/) tutorial has more information about connecting your wallet or app to Ganache / Barge.

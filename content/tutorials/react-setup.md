@@ -119,7 +119,7 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a94
 
 ## Bonus: Connect against local network
 
-Instead of remotely connecting to Ropsten, you can connect to your own [local network](concepts/network-local). It uses Ethereum Ganache plus Ocean Barge. 
+Instead of remotely connecting to Rinkeby, you can connect to your own [local network](concepts/network-local). It uses Ethereum Ganache plus Ocean Barge. 
 
 ```bash
 git clone https://github.com/oceanprotocol/barge.git
