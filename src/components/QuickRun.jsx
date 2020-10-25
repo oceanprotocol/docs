@@ -19,23 +19,11 @@ const QuickRun = () => (
     render={(data) => (
       <aside className={styles.quickrun}>
         <header className={styles.header}>
-          <h1 className={styles.tldr}>TL;DR</h1>
+          <h1 className={styles.tldr}>Quickstart</h1>
           <strong>
-            Wanna quickly get an Ocean network with all{' '}
-            <Link to="/concepts/components/">core components</Link> running on
-            your machine?
+            The <Link to="/references/ocean.js">ocean.js</Link> and <Link to="/references/python.js">ocean.py</Link> repos have quickstarts. Have fun!
           </strong>
         </header>
-
-        <div className={styles.docker}>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: data.allMarkdownRemark.edges[0].node.html
-            }}
-          />
-
-          <Repository name="barge" />
-        </div>
       </aside>
     )}
   />
