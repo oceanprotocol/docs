@@ -60,9 +60,6 @@ const IndexPage = ({ data, location }) => (
 
     <Layout location={location} header={<HeaderHome />}>
       <Content>
-
-        <QuickRun />
-	<br/><br/><br/>
 	
         <ul className={styles.sections}>
           {data.allSectionsYaml.edges.map(({ node }) => (
