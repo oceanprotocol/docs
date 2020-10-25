@@ -5,6 +5,10 @@
     - name: ocean.js2
     - name: ocean.py2
     - name: react
+    
+- group: Smart Contracts
+  items:
+    - name: ocean-contracts2
 
 - group: Ocean Market & Services
   items:
@@ -15,10 +19,6 @@
           url: /references/aquarius/
 
     - name: provider-py
-    
-- group: Smart Contracts
-  items:
-    - name: ocean-contracts2
 	  
 - group: Compute-to-Data
   items:
