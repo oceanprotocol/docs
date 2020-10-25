@@ -26,10 +26,6 @@ module.exports = {
       to: '/concepts/introduction/'
     },
     {
-      from: '/setup/',
-      to: '/setup/quickstart/'
-    },
-    {
       from: '/tutorials/',
       to: '/tutorials/introduction/'
     },

@@ -1,12 +1,12 @@
+- title: Quickstart
+  description: Try out ocean.js, ocean.py or React drivers.
+  link: /concepts/introduction/
+  color: blue
+
 - title: Core Concepts
   description: On Ocean architecture, network deployments, and more.
   link: /concepts/introduction/
   color: purple
-
-- title: Setup Guides
-  description: On setting up a marketplace, publisher, and compute-to-data.
-  link: /setup/quickstart/
-  color: blue
 
 - title: Tutorials
   description: Build an Ocean-powered React app, and more. 

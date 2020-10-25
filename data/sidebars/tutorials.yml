@@ -5,14 +5,24 @@
 
 - group: Wallets & Ocean Protocol
   items:
-    - title: Set Up MetaMask
+    - title: Set Up MetaMask Wallet
       link: /tutorials/metamask-setup/
-    - title: Use Your Wallet to Manage Ocean Tokens
+    - title: Use Your Wallet to Manage OCEAN Tokens
       link: /tutorials/wallets-and-ocean-tokens/
     - title: Get ETH and OCEAN Tokens
       link: /tutorials/get-ether-and-ocean-tokens/
     - title: Connect to Ocean-Related Networks
       link: /tutorials/connect-to-networks/
+
+- group: Marketplaces
+  items:
+    - title: Set Up a Marketplace
+      link: /tutorials/marketplace/
+
+- group: Compute-to-Data
+  items:
+    - title: Run a Compute-to-Data Environment
+      link: /tutorials/compute-to-data/
 
 - group: Storage Setup
   items:

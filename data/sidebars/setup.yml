@@ -1,8 +1,3 @@
-- group: Quickstart
-  items:
-    - title: Quickly grok Ocean tools
-      link: /setup/quickstart/
-
 - group: Marketplaces
   items:
     - title: Set Up a Marketplace

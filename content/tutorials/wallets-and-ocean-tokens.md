@@ -1,5 +1,5 @@
 ---
-title: Use Your Wallet to Manage Ocean Tokens
+title: Use Your Wallet to Manage OCEAN Tokens
 description: How to use crypto wallet software to check your Ocean Token balance and to send Ocean Tokens to others.
 ---
 
