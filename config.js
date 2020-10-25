@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Ocean Protocol Documentation',
+  siteTitle: 'Ocean Developer Documentation',
   siteShortTitle: 'Docs',
   siteDescription:
     'Tools to Build Data Markets, and Manage ERC20 Data Assets',
