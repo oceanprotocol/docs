@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Ocean Protocol Documentation',
   siteShortTitle: 'Docs',
   siteDescription:
-    'Learn about the components of the Ocean Protocol software stack, and how to run or use the components relevant to you.',
+    'Tools to Build Data Markets, and Manage ERC20 Data Assets',
   siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
   siteIcon: 'node_modules/@oceanprotocol/art/logo/favicon-black.png',
   siteCompany: 'Ocean Protocol Foundation Ltd.',
