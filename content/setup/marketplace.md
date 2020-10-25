@@ -1,65 +1,39 @@
 ---
 title: Set Up a Marketplace
-description: Set up and run a data marketplace in an Ocean network.
+description: 
 ---
 
-In Ocean Protocol, marketplaces and publishers are different roles, but one person or organization can play both roles. Initially, we anticipate that will be the most common setup. As a result, this guide explains how to set up and run a combined marketplace/publisher (for now).
+In Ocean, marketplaces and publishers are different roles. A common setup is for one organization to do both. We focus on that here.
 
-## An Outline of the Steps
+## The Steps
 
-1. Have data assets to offer in your marketplace.
-1. Prepare those assets to work with Ocean Protocol.
-1. Develop a marketplace/publisher app.
-1. Run everything you need to run in production.
+1. Develop the first cut of the app.
+1. Prepare some initial data assets.
+1. Deploy to production.
 
-## Prepare Assets
+## Develop a First Cut of the App
 
-At the time of writing, the following kinds of assets were supported:
+Here are some approaches:
+- Fork [Ocean Market](/references/market/) code
+- Do the [React App Tutorial](/tutorials/react-setup/) then grow your app from there. It uses [Ocean React hooks](/references/react/).
+- Build up from [ocean.js](/references/ocean.js/) or [ocean.py](/references/ocean.py/) drivers
 
-- data sets stored in Azure Storage (i.e. with "core.windows.net" in their URL). See [the tutorial about setting up Azure Storage to work with Ocean Protocol](/tutorials/azure-for-brizo/).
-- data sets stored in Amazon S3 storage (i.e. with "s3://" in their URL). See [the tutorial about setting up Amazon S3 storage to work with Ocean Protocol](/tutorials/amazon-s3-for-brizo/).
-- data sets stored in on-premise storage. See [the tutorial about setting up on-premise storage to work with Ocean Protocol](/tutorials/on-premise-for-brizo/).
+## Prepare Some Initial Data Assets
 
-> You can use _all_ of the above. You aren't restricted to using only one storage provider.
+When you deploy, you'll want some initial data assets for your market to offer.
 
-Support for other kinds of assets (e.g. computing in Azure) is coming.
+Ocean supports several types, such as Azure and S3 storage. The [tutorials](/tutorials/) section provides more info.
 
-## Develop a Marketplace/Publisher App
 
-At the time of writing, we recommend the following steps to develop a marketplace/publisher app:
+## Deploy to Production
 
-1. Do the [React App Tutorial](/tutorials/react-setup/).
-2. Grow your app from there.
+When developing your app, you'll likely use Barge to run all the Ocean Protocol components on your local machine.
 
-For more examples and inspiration, check out the [source code for the Commons Marketplace](https://github.com/oceanprotocol/commons) and the [source code for Pleuston](https://github.com/oceanprotocol/pleuston). Both have an Apache v2 open source license. Both use React and squid-js. Both are "serverless" apps: they run entirely in the browser and have no server-side component.
-
-<repo name="commons"></repo>
-<repo name="pleuston"></repo>
-
-### Other Options
-
-A marketplace/publisher app could have both a back-end component and a front-end component. The main consideration is that you should probably use a programming language with an existing Squid library:
-
-<repo name="squid-js"></repo>
-<repo name="squid-py"></repo>
-<repo name="squid-java"></repo>
-
-> There are examples of how to use squid-py in the [Tutorials](/tutorials/introduction/). squid-py is to Ocean like boto3 is to AWS.
-
-Of course, you could always write your own Squid library in the language of your choice.
-
-## Run Everything You Need to Run in Production
-
-When developing your marketplace/publisher app, you will probably use Barge to run all the Ocean Protocol components on your local machine. When it comes time to go to production, you will have to run some of those components in production:
+When it comes time to go to production, you will have to run these components:
 
 - Your marketplace/publisher app
-- [Aquarius](/concepts/components/#aquarius)
-- A database to go with Aquarius, e.g. Elasticsearch or MongoDB
-- [Brizo](/concepts/components/#brizo)
-- Recommended: a [keeper](/concepts/components/#keeper) node with the keeper contracts deployed to it, connected to an Ocean network
-- Optional: your own [Secret Store](/concepts/components/#secret-store) nodes (for a more advanced setup)
-
-Before running all of that in production, you will want to test it with an [Ocean Protocol testnet](/concepts/testnets/).
+- Aquarius (with Elasticsearch)
+- Provider-py
 
 Of course, there are many other things that must be handled in production:
 
@@ -68,4 +42,4 @@ Of course, there are many other things that must be handled in production:
 - Log aggregation, storage and search
 - Handling crashes or other faults
 
-Each of those is a big topic beyond the scope of these docs.
+Each of those is beyond the scope of these docs.
