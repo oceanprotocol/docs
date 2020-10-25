@@ -1,19 +1,19 @@
 - title: Core Concepts
-  description: Understand the fundamentals of Ocean Protocol.
+  description: On Ocean architecture, network deployments, and more.
   link: /concepts/introduction/
   color: purple
 
 - title: Setup Guides
-  description: Setting up the Ocean Protocol components.
+  description: On setting up a marketplace, publisher, and compute-to-data.
   link: /setup/quickstart/
   color: blue
 
 - title: Tutorials
-  description: Browse tutorials for most common setup and development use-cases.
+  description: Build an Ocean-powered React app, and more. 
   link: /tutorials/introduction/
   color: orange
 
 - title: API References
-  description: Get the references for REST APIs and library methods for all relevant components.
+  description: Interfaces for libraries and services.
   link: /references/introduction/
   color: green
