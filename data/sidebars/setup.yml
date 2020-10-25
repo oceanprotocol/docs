@@ -8,11 +8,6 @@
     - title: Set Up a Marketplace
       link: /setup/marketplace/
 
-- group: Publishers
-  items:
-    - title: Set Up a Publisher
-      link: /setup/publisher/
-
 - group: Compute-to-Data
   items:
     - title: Run a Compute-to-Data Environment
