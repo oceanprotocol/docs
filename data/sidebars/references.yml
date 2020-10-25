@@ -6,22 +6,22 @@
 - group: ocean.js
   items:
     - title: API Reference
-      link: /references/ocean.js/
+      link: https://github.com/oceanprotocol/ocean.js2
 
 - group: react
   items:
     - title: API Reference
-      link: /references/react/
+      link: https://github.com/oceanprotocol/react
 
 - group: ocean.py
   items:
     - title: API Reference
-      link: /references/ocean.py/
+      link: https://github.com/oceanprotocol/ocean.py2
 
 - group: Smart Contracts
   items:
     - title: API Reference
-      link: /references/ocean-contracts/
+      link: https://github.com/oceanprotocol/ocean-contracts2
 
 - group: aquarius
   items:
