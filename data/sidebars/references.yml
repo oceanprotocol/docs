@@ -3,27 +3,32 @@
     - title: API References
       link: /references/introduction/
 
+- group: ocean.js
+  items:
+    - title: API Reference
+      link: /references/ocean.js/
+
+- group: react
+  items:
+    - title: API Reference
+      link: /references/react/
+
+- group: ocean.py
+  items:
+    - title: API Reference
+      link: /references/ocean.py/
+
+- group: Smart Contracts
+  items:
+    - title: API Reference
+      link: /references/ocean-contracts/
+
 - group: aquarius
   items:
     - title: API Reference
       link: /references/aquarius/
 
-- group: brizo
+- group: provider-py
   items:
     - title: API Reference
-      link: /references/brizo/
-
-- group: squid-js
-  items:
-    - title: API Reference
-      link: /references/squid-js/
-
-- group: squid-py
-  items:
-    - title: API Reference
-      link: https://squid-py.readthedocs.io/en/latest/
-
-- group: squid-java
-  items:
-    - title: API Reference
-      link: https://www.javadoc.io/doc/com.oceanprotocol/squid/
+      link: /references/provider-py/

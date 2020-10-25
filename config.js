@@ -42,16 +42,28 @@ module.exports = {
       to: '/concepts/wallets/'
     },
     {
-      from: '/references/squid-py/',
-      to: 'https://squid-py.readthedocs.io/en/latest/'
+      from: '/references/ocean.js/',
+      to: 'https://github.com/oceanprotocol/ocean.js2'
     },
     {
-      from: '/references/squid-java/',
-      to: 'https://www.javadoc.io/doc/com.oceanprotocol/squid/'
+      from: '/references/react/',
+      to: 'https://github.com/oceanprotocol/react'
     },
     {
-      from: '/tutorials/token-bridge/',
-      to: '/tutorials/'
+      from: '/references/ocean.py/',
+      to: 'https://github.com/oceanprotocol/ocean.py2'
+    },
+    {
+      from: '/references/ocean-contracts/',
+      to: 'https://github.com/oceanprotocol/ocean-contracts2'
+    },
+    {
+      from: '/references/aquarius/',
+      to: 'https://github.com/oceanprotocol/aquarius'
+    },
+    {
+      from: '/references/provider-py/',
+      to: 'https://github.com/oceanprotocol/provider-py'
     }
   ]
 }
