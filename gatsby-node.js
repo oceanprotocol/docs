@@ -77,8 +77,8 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
 
-            squidJs: github {
-              repository(name: "squid-js", owner: "oceanprotocol") {
+            oceanJs: github {
+              repository(name: "ocean.js", owner: "oceanprotocol") {
                 name
                 releases(
                   first: 30
@@ -88,7 +88,7 @@ exports.createPages = ({ graphql, actions }) => {
                     node {
                       isPrerelease
                       isDraft
-                      releaseAssets(first: 1, name: "squid-js.json") {
+                      releaseAssets(first: 1, name: "ocean.js.json") {
                         edges {
                           node {
                             name
@@ -155,13 +155,13 @@ exports.createPages = ({ graphql, actions }) => {
         // API: brizo, aquarius
         await createSwaggerPages(createPage)
 
-        // API: squid-js
-        const lastRelease = result.data.squidJs.repository.releases.edges.filter(
+        // API: ocean.js
+        const lastRelease = result.data.oceanJs.repository.releases.edges.filter(
           ({ node }) => !node.isPrerelease && !node.isDraft
         )[0].node.releaseAssets.edges[0].node
         await createTypeDocPage(
           createPage,
-          result.data.squidJs.repository.name,
+          result.data.oceanJs.repository.name,
           lastRelease.downloadUrl
         )
 
