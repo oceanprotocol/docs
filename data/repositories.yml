@@ -1,60 +1,25 @@
-- group: Core Components
-  items:
-    - name: keeper-contracts
-      links:
-        - name: Documentation
-          url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
 
+
+- group: Drivers
+  items:
+    - name: ocean.js2
+    - name: ocean.py2
+    - name: react
+
+- group: Ocean Market & Services
+  items:
+    - name: market2
     - name: aquarius
       links:
         - name: API reference
           url: /references/aquarius/
 
-    - name: brizo
-      links:
-        - name: API reference
-          url: /references/brizo/
-    - name: events-handler
-    - name: commons
-
-- group: Libraries
+    - name: provider-py
+    
+- group: Smart Contracts
   items:
-    - name: squid-js
-      links:
-        - name: API reference
-          url: /references/squid-js/
-    - name: squid-py
-      links:
-        - name: API reference
-          url: https://squid-py.readthedocs.io/en/latest/
-    - name: squid-java
-      links:
-        - name: API reference
-          url: https://www.javadoc.io/doc/com.oceanprotocol/squid/
-
-- group: Tools
-  items:
-    - name: barge
-    - name: tuna
-    - name: plecos
-    - name: faucet
-    - name: status
-    - name: blockscout
-    - name: ipfs
-
-- group: OceanDB Drivers
-  items:
-    - name: oceandb-elasticsearch-driver
-    - name: oceandb-mongodb-driver
-    - name: oceandb-driver-interface
-
-- group: Osmosis Drivers
-  items:
-    - name: osmosis-azure-driver
-    - name: osmosis-aws-driver
-    - name: osmosis-ipfs-driver
-    - name: osmosis-on-premise-driver
-
+    - name: ocean-contracts2
+	  
 - group: Compute-to-Data
   items:
     - name: operator-service
@@ -62,29 +27,3 @@
     - name: pod-configuration
     - name: pod-publishing
 
-- group: Parity Secret Store
-  items:
-    - name: parity-ethereum
-    - name: secret-store-client-js
-      links:
-        - name: Architecture
-          url: /concepts/secret-store/
-    - name: secret-store-client-py
-      links:
-        - name: Architecture
-          url: /concepts/secret-store/
-    - name: secret-store-client-java
-      links:
-        - name: Architecture
-          url: /concepts/secret-store/
-
-- group: Project Management
-  items:
-    - name: OEPs
-    - name: ocean
-      links:
-        - name: Business Board
-          url: https://github.com/oceanprotocol/ocean/projects/1
-        - name: Research Board
-          url: https://github.com/oceanprotocol/ocean/projects/3
-    - name: dev-ocean
