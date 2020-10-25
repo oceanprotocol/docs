@@ -19,20 +19,6 @@
     - title: Set Up a Marketplace
       link: /tutorials/marketplace/
 
-- group: Compute-to-Data
-  items:
-    - title: Run a Compute-to-Data Environment
-      link: /tutorials/compute-to-data/
-
-- group: Storage Setup
-  items:
-    - title: Set Up Azure Storage
-      link: /tutorials/azure-for-brizo/
-    - title: Set Up Amazon S3 Storage
-      link: /tutorials/amazon-s3-for-brizo/
-    - title: Set Up On-Premise Storage
-      link: /tutorials/on-premise-for-brizo/
-
 - group: React App Tutorial
   items:
     - title: Setup
@@ -51,3 +37,17 @@
       link: /tutorials/react-compute-raw/
     - title: Get Status of a Compute Job
       link: /tutorials/react-compute-status/
+
+- group: Compute-to-Data
+  items:
+    - title: Run a Compute-to-Data Environment
+      link: /tutorials/compute-to-data/
+
+- group: Storage Setup
+  items:
+    - title: Set Up Azure Storage
+      link: /tutorials/azure-for-brizo/
+    - title: Set Up Amazon S3 Storage
+      link: /tutorials/amazon-s3-for-brizo/
+    - title: Set Up On-Premise Storage
+      link: /tutorials/on-premise-for-brizo/
