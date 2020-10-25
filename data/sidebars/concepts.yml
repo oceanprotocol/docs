@@ -1,5 +1,7 @@
 - group: Basics
   items:
+    - title: Quickstart
+      link: /concepts/quickstart/
     - title: Introduction
       link: /concepts/introduction/
     - title: Architecture Overview

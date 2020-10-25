@@ -1,6 +1,6 @@
 - title: Quickstart
   description: Try out ocean.js, ocean.py or React drivers.
-  link: /concepts/introduction/
+  link: /concepts/quickstart/
   color: blue
 
 - title: Core Concepts
@@ -16,4 +16,4 @@
 - title: API References
   description: Interfaces for libraries and services.
   link: /references/introduction/
-  color: green
+  color: blue
