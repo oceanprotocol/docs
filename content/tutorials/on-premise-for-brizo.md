@@ -1,7 +1,9 @@
 ---
 title: Set Up On-Premise Storage
-description: Tutorial about how to set up on-premise storage for use with Ocean Protocol.
+description: Tutorial about how to set up on-premise storage for use with Ocean.
 ---
+
+*Note: This needs updating for Ocean V3. As a workaround: Brizo has been renamed to provider-py; it should work similarly.*
 
 To enable Brizo to use files stored in on-premise storage (i.e. files with an URL not containing `core.windows.net` or `s3://`), there is _nothing to do, other than make sure Brizo can resolve the URLs_. In particular, you don't have to set any Brizo-specific configuration settings, e.g. in the `[osmosis]` section of the Brizo config file or in some special Brizo environment variables.
 
