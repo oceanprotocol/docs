@@ -1,8 +1,6 @@
 ---
 title: React App Setup
-description: This tutorial shows how you can build a basic [React](https://reactjs.org/) app with [Create React App](https://github.com/facebook/create-react-app) that uses the Ocean [JavaScript driver](https://github.com/oceanprotocol/ocean.js) to publish a data set, get a data set, and more.
-
-WARNING: as of Oct 21, 2020 this has not been updated yet for Ocean V3.
+description: This tutorial shows how you can build a basic [React](https://reactjs.org/) app with [Create React App](https://github.com/facebook/create-react-app) that uses the Ocean [JavaScript driver](https://github.com/oceanprotocol/ocean.js) to publish a data set, get a data set, and more. *WARNING this has not been updated yet for Ocean V3.*
 ---
 
 ## Git repository and CodeSandbox
