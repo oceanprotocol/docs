@@ -8,17 +8,20 @@
     
 - group: Smart Contracts
   items:
-    - name: ocean-contracts
+    - name: contracts
 
-- group: Ocean Market & Services
+- group: Ocean Market
   items:
     - name: market
+
+- group: Services
+  items:
+    - name: barge
     - name: aquarius
       links:
         - name: API reference
           url: /references/aquarius/
-
-    - name: provider-py
+    - name: provider
 	  
 - group: Compute-to-Data
   items:
