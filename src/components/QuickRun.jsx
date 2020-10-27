@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Repository from './Repository'
 import styles from './QuickRun.module.scss'
 
 const QuickRun = () => (
@@ -19,23 +18,13 @@ const QuickRun = () => (
     render={(data) => (
       <aside className={styles.quickrun}>
         <header className={styles.header}>
-          <h1 className={styles.tldr}>TL;DR</h1>
+          <h1 className={styles.tldr}>Quickstart</h1>
           <strong>
-            Wanna quickly get an Ocean network with all{' '}
-            <Link to="/concepts/components/">core components</Link> running on
-            your machine?
+            The <Link to=".">ocean.js</Link>, <Link to=".">ocean.py</Link>, and{' '}
+            <Link to=".">Ocean React</Link> repos have quickstarts. Pick your
+            favorite and have fun!
           </strong>
         </header>
-
-        <div className={styles.docker}>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: data.allMarkdownRemark.edges[0].node.html
-            }}
-          />
-
-          <Repository name="barge" />
-        </div>
       </aside>
     )}
   />

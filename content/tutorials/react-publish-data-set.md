@@ -13,7 +13,7 @@ Open `src/index.js` from your `marketplace/` folder.
 
 ## Define Asset
 
-First, let's add the [asset](/concepts/terminology/#asset-or-data-asset) that we want to publish.
+First, let's add the asset that we want to publish.
 
 To do that, we need to define the asset based on the [OEP-08](https://github.com/oceanprotocol/OEPs/tree/master/8) metadata structure. An asset can have multiple `files` attached to it and each file's `url` value will be encrypted during the publish process. To download that file later on, this value will be decrypted during the consume process.
 

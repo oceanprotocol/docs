@@ -23,7 +23,7 @@ Additional information about a repo will then be [fetched automatically from Git
 This repository component can also be used within any Markdown content like so:
 
 ```html
-<repo name="pleuston"></repo>
+<repo name="ocean.js"></repo>
 ```
 
 You can also add a private repo to prepare for a release, it will show up as soon as it is made public on GitHub.
@@ -33,12 +33,10 @@ You can also add a private repo to prepare for a release, it will show up as soo
 You can attach multiple links to a repo by attaching them to the respective repo in the [`/data/repositories.yml`](../data/repositories.yml) file:
 
 ```yaml
-- name: keeper-contracts
+- name: ocean-contracts
   links:
     - name: Documentation
-      url: https://github.com/oceanprotocol/keeper-contracts/tree/develop/doc
-    - name: TCR Owner's Manual
-      url: https://github.com/oceanprotocol/keeper-contracts/blob/develop/doc/owners_manual.md
+      url: https://github.com/oceanprotocol/ocean-contracts/tree/develop/doc
 ```
 
 The GitHub link is automatically added for every repository and will always be displayed.

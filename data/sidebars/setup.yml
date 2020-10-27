@@ -1,22 +1,8 @@
-- group: Quickstart
-  items:
-    - title: Run & Try Everything
-      link: /setup/quickstart/
-
 - group: Marketplaces
   items:
     - title: Set Up a Marketplace
       link: /setup/marketplace/
 
-- group: Publishers
-  items:
-    - title: Set Up a Publisher
-      link: /setup/publisher/
-
-- group: Keepers
-  items:
-    - title: Run a Keeper
-      link: /setup/keeper/
 - group: Compute-to-Data
   items:
     - title: Run a Compute-to-Data Environment

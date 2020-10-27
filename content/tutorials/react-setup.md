@@ -1,6 +1,6 @@
 ---
 title: React App Setup
-description: This tutorial shows how you can build a basic [React](https://reactjs.org/) app with [Create React App](https://github.com/facebook/create-react-app) that uses the squid-js JavaScript package to publish a data set, get a data set, and more.
+description: This tutorial shows how you can build a basic [React](https://reactjs.org/) app with [Create React App](https://github.com/facebook/create-react-app) that uses the Ocean [JavaScript driver](https://github.com/oceanprotocol/ocean.js) to publish a data set, get a data set, and more. *WARNING this has not been updated yet for Ocean V3.*
 ---
 
 ## Git repository and CodeSandbox
@@ -43,7 +43,7 @@ First, create a new project folder for your new app, e.g. `marketplace`. Within 
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/package.json json GITHUB-EMBED
 
-Notice the `@oceanprotocol/squid` dependency, which is the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/squid-js). Save that file, and in your terminal install the dependencies we have just defined in `package.json`:
+Notice the `@oceanprotocol/ocean.js` dependency, which is the [Ocean Protocol JavaScript library](https://github.com/oceanprotocol/ocean.js). Save that file, and in your terminal install the dependencies we have just defined in `package.json`:
 
 ```bash
 npm install
@@ -55,7 +55,7 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/master/public/
 
 ## Add Basic Markup
 
-Create a new folder `src/` and within that a `index.js` file with the following content as our base, where we already import squid-js and web3.js:
+Create a new folder `src/` and within that a `index.js` file with the following content as our base, where we already import ocean.js and web3.js:
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8b72ca453d50ed7bdaa36f1efb4/src/index.js jsx 1-4,6,14,100-110,122-127 GITHUB-EMBED
 
@@ -101,7 +101,7 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8
 
 This will initiate a connection to all Ocean components in Nile, load the contracts, and finally store the Ocean object in the local component state for reuse.
 
-We also set the `verbose` option of squid-js so we better see what's going on.
+We also set the `verbose` option of ocean.js so we better see what's going on.
 
 ## Final Result
 
@@ -115,13 +115,9 @@ GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/2765a7e6ae9a94
 
 **Move on to [Publish a Data Set](/tutorials/react-publish-data-set/).**
 
-## Bonus: Connect against local Spree network
+## Bonus: Connect against local network
 
-[_Spree_](https://docs.oceanprotocol.com/concepts/testnets/#a-spree-testnet-for-local-development), a local Ocean test network, can be used instead of remotely connecting to Nile. For this you first have to get up the Spree network by using [oceanprotocol/barge](https://github.com/oceanprotocol/barge).
-
-### Run Spree with Barge
-
-Clone the barge repository and use its startup script:
+Instead of remotely connecting to Rinkeby, you can connect to your own [local network](concepts/network-local). It uses Ethereum Ganache plus Ocean Barge. 
 
 ```bash
 git clone https://github.com/oceanprotocol/barge.git
@@ -130,19 +126,21 @@ cd barge/
 ./start_ocean.sh --no-commons
 ```
 
-Note that compiling and deploying the contracts in your local Docker network takes some time so it can take a few minutes until the network is ready to be interacted with. That usually is the case once `keeper-contracts_1` container doesn't show any messages anymore.
+Compiling and deploying the contracts in your local network may take a few minutes.
 
 ### Copy Contract Artifacts
 
-At the end of the contract compiling and deploying you need to copy the resulting _Spree_ contract artifacts from the Docker container to your local `@oceanprotocol/keeper-contracts` dependency folder. The _keeper-contracts_ Docker container will output all artifacts in a hidden folder in your home folder so you can copy from there:
+At the end of the contract compiling and deploying you need to copy the resulting contract artifacts from the Docker container to your local `@oceanprotocol/keeper-contracts` dependency folder. The _keeper-contracts_ Docker container will output all artifacts in a hidden folder in your home folder so you can copy from there:
 
 ```bash
 cp ~/.ocean/keeper-contracts/artifacts/* ./node_modules/@oceanprotocol/keeper-contracts/artifacts/
 ```
 
-### Get Spree Ether
+### Get ETH for the local network
 
-You will also need some [_Spree_ Ether](/tutorials/get-ether-and-ocean-tokens/#get-ether-for-a-local-spree-testnet) in your MetaMask account. You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
+You will also need some ETH for your local network. [This tutorial](/tutorials/get-ETH-and-OCEAN-tokens) describes how to get it into your MetaMask account.
+
+You can execute this, replacing `<YOUR ADDRESS>` with your MetaMask account address:
 
 ```bash
 curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST http://localhost:3001/faucet
@@ -150,7 +148,7 @@ curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: a
 
 ### Adjust App Config
 
-Finally, move back to your marketplace React app and modify the Ocean instance config in `src/index.js` to use the Spree endpoints:
+Finally, move back to your marketplace React app and modify the Ocean instance config in `src/index.js` to use the local network's endpoints:
 
 ```jsx
 const ocean = await new Ocean.getInstance({

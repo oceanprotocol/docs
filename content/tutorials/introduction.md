@@ -1,10 +1,13 @@
 ---
-title: Overview of the Tutorials
-description: What you can expect to find in these Ocean Protocol tutorials.
+title: Overview of Tutorials
+description: 
 ---
 
 These tutorials cover:
 
-- The basics of using wallets with Ocean Protocol.
-- How to set up storage (e.g. in Azure or AWS) to be used with Ocean Protocol.
-- Examples of using squid-js (JavaScript), squid-py (Python) and squid-java to publish a data set, to get & use a data set, and to do other things.
+- Using Web3 wallets with Ocean
+- Getting ETH and OCEAN on Ethereum mainnet, and Rinkeby testnet
+- Storage setup - Azure, AWS or local 
+- Building a React app with Ocean. This is a great way to understand Ocean end-to-end.
+
+

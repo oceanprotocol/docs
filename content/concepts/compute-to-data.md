@@ -1,22 +1,23 @@
 ---
 title: Compute-to-Data
-description: How Ocean Protocol enables Publishers to provide computing services and related services.
+description: Providing access to data in a privacy-preserving fashion
 slug: /concepts/compute-to-data/
 section: concepts
 ---
 
 ## Motivation
 
-The most basic scenario for a Publisher is to provide access to the datasets they own or manage.
-In addition to that, a Publisher could offer a service to execute some computation on top of their data. This has some benefits:
+The most basic scenario for a Publisher is to provide access to the datasets they own or manage. However, a Publisher may offer a service to execute some computation on top of their data. This has some benefits:
 
 - The data **never** leaves the Publisher enclave.
 - It's not necessary to move the data; the algorithm is sent to the data.
 - Having only one copy of the data and not moving it makes it easier to be compliant with data protection regulations.
 
+[This page](https://oceanprotocol.com/technology/compute-to-data) elaborates on the benefits.
+
 ## Architecture
 
-### Enabling Publisher Services (Brizo)
+### Enabling Publisher Services, using Ocean Provider
 
 The direct interaction with the infrastructure where the data resides requires the execution of a component handled by Publishers.
 
@@ -24,26 +25,16 @@ This component will be in charge of interacting with users and managing the basi
 
 The business logic supporting these additional Publisher capabilities is the responsibility of this new technical component.
 
-The main and new key component introduced to support these additional Publisher services is named **Brizo**.
+The main and new key component introduced to support these additional Publisher services is named **Ocean Provider**.
 
-> Brizo is an ancient Greek goddess who was known as the protector of mariners, sailors, and fishermen. She was worshipped primarily by the women of Delos, who set out food offerings in small boats. Brizo was also known as a prophet specializing in the interpretation of dreams.
-
-In the Ocean ecosystem, Brizo is the technical component executed by the **Publishers**, which provides extended data services. Brizo, as part of the Publisher ecosystem, includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
-
-Because of these credentials, the execution of Brizo **SHOULD NOT** be delegated to a third-party.
-
-<repo name="brizo"></repo>
-
-![Brizo High-Level Architecture](images/brizo-hl-arch.png)
+Ocean Provider is the technical component executed by the **Publishers**, which provides extended data services. Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
 
 ### Compute-to-Data Enviroment (Operator-Service)
 
-The Operator Service is a micro-service implementing part of the Ocean Protocol
-[Compute to the Data OEP-12](https://github.com/oceanprotocol/OEPs/tree/master/12),
+The Operator Service is a micro-service that implements part of the Compute-to-Data spec [OEP-12](https://github.com/oceanprotocol/OEPs/tree/master/12),
 in charge of managing the workflow executing requests.
 
-Typically the Operator Service is integrated from the [Brizo proxy](https://github.com/oceanprotocol/brizo),
-but can be called independently if it.
+Typically the Operator Service is integrated from Ocean Provider, but can be called independently if it.
 
 The Operator Service is in charge of stablishing the communication with the K8s cluster, allowing to:
 
@@ -81,5 +72,5 @@ In the above diagram you can see the initial integration supported. It involves 
 Before the flow can begin, the following pre-conditions must be met:
 
 - The Asset DDO has a compute service.
-- The Asset DDO must specify the Brizo endpoint exposed by the Publisher.
+- The Asset DDO must specify the Ocean Provider endpoint exposed by the Publisher.
 - The Service Agreement template must already be predefined and whitelisted `on-chain`.

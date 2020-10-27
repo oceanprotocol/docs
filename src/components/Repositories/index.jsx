@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import RepositoryList from './RepositoryList'
 import styles from './index.module.scss'
 
@@ -33,15 +33,6 @@ const Repositories = () => (
         <div className={styles.repositories}>
           <header>
             <h1 className={styles.repositoriesTitle}>Repositories</h1>
-            <p className={styles.repositoriesText}>
-              <strong>
-                Most of our repositories are open source and we listed the key
-                repositories here. Start with the{' '}
-                <Link to="/concepts/components/">software components</Link>{' '}
-                document for an introduction to the components found in a
-                typical Ocean network.
-              </strong>
-            </p>
           </header>
 
           <RepositoryList repositories={repositories} />

@@ -5,25 +5,21 @@
 
 - group: Wallets & Ocean Protocol
   items:
-    - title: Set Up MetaMask
+    - title: Set Up MetaMask Wallet
       link: /tutorials/metamask-setup/
-    - title: Use Your Wallet to Manage Ocean Tokens
+    - title: Use Your Wallet to Manage OCEAN Tokens
       link: /tutorials/wallets-and-ocean-tokens/
-    - title: Get Ether and Ocean Tokens
+    - title: Get ETH and OCEAN Tokens
       link: /tutorials/get-ether-and-ocean-tokens/
     - title: Connect to Ocean-Related Networks
       link: /tutorials/connect-to-networks/
 
-- group: Storage Setup
+- group: Marketplaces
   items:
-    - title: Set Up Azure Storage
-      link: /tutorials/azure-for-brizo/
-    - title: Set Up Amazon S3 Storage
-      link: /tutorials/amazon-s3-for-brizo/
-    - title: Set Up On-Premise Storage
-      link: /tutorials/on-premise-for-brizo/
+    - title: Set Up a Marketplace
+      link: /tutorials/marketplace/
 
-- group: React App Tutorial (squid-js)
+- group: React App Tutorial
   items:
     - title: Setup
       link: /tutorials/react-setup/
@@ -42,12 +38,16 @@
     - title: Get Status of a Compute Job
       link: /tutorials/react-compute-status/
 
-- group: squid-py Tutorials
+- group: Compute-to-Data
   items:
-    - title: Jupyter Notebooks
-      link: /tutorials/jupyter-notebooks/
+    - title: Run a Compute-to-Data Environment
+      link: /tutorials/compute-to-data/
 
-- group: More Examples
+- group: Storage Setup
   items:
-    - title: Example Code Using Squid
-      link: /tutorials/example-code/
+    - title: Set Up Azure Storage
+      link: /tutorials/azure-for-brizo/
+    - title: Set Up Amazon S3 Storage
+      link: /tutorials/amazon-s3-for-brizo/
+    - title: Set Up On-Premise Storage
+      link: /tutorials/on-premise-for-brizo/

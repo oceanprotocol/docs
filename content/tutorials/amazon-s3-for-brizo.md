@@ -3,6 +3,8 @@ title: Set Up Amazon S3 Storage
 description: Tutorial about how to set up Amazon S3 storage for use with Ocean Protocol.
 ---
 
+*Note: This needs updating for Ocean V3. As a workaround: Brizo has been renamed to provider-py; it should work similarly.*
+
 To enable Brizo to use files stored in Amazon S3 (i.e. files with an URL containing `s3://`), you must:
 
 1. have an Amazon AWS user account (IAM account) with permission to read those files from S3, and

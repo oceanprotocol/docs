@@ -1,5 +1,5 @@
 ---
-title: Set Up MetaMask
+title: Set Up MetaMask Wallet
 description: Tutorial about how to set up MetaMask for Chrome.
 ---
 

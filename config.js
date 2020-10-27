@@ -1,8 +1,7 @@
 module.exports = {
-  siteTitle: 'Ocean Protocol Documentation',
+  siteTitle: 'Ocean Developer Documentation',
   siteShortTitle: 'Docs',
-  siteDescription:
-    'Learn about the components of the Ocean Protocol software stack, and how to run or use the components relevant to you.',
+  siteDescription: 'Tools to Build Data Markets, and Manage ERC20 Data Assets',
   siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
   siteIcon: 'node_modules/@oceanprotocol/art/logo/favicon-black.png',
   siteCompany: 'Ocean Protocol Foundation Ltd.',
@@ -26,10 +25,6 @@ module.exports = {
       to: '/concepts/introduction/'
     },
     {
-      from: '/setup/',
-      to: '/setup/quickstart/'
-    },
-    {
       from: '/tutorials/',
       to: '/tutorials/introduction/'
     },
@@ -42,20 +37,28 @@ module.exports = {
       to: '/concepts/wallets/'
     },
     {
-      from: '/concepts/production-network/',
-      to: '/concepts/pacific-network/'
+      from: '/references/ocean.js/',
+      to: 'https://github.com/oceanprotocol/ocean.js'
     },
     {
-      from: '/references/squid-py/',
-      to: 'https://squid-py.readthedocs.io/en/latest/'
+      from: '/references/react/',
+      to: 'https://github.com/oceanprotocol/react'
     },
     {
-      from: '/references/squid-java/',
-      to: 'https://www.javadoc.io/doc/com.oceanprotocol/squid/'
+      from: '/references/ocean.py/',
+      to: 'https://github.com/oceanprotocol/ocean.py'
     },
     {
-      from: '/tutorials/token-bridge/',
-      to: '/tutorials/'
+      from: '/references/ocean-contracts/',
+      to: 'https://github.com/oceanprotocol/ocean-contracts'
+    },
+    {
+      from: '/references/aquarius/',
+      to: 'https://github.com/oceanprotocol/aquarius'
+    },
+    {
+      from: '/references/provider-py/',
+      to: 'https://github.com/oceanprotocol/provider-py'
     }
   ]
 }

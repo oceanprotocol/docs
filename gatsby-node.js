@@ -208,27 +208,18 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
         // it generic for all TypeDoc specs
         classes: [
           'ocean/Ocean',
-          'ocean/OceanAccounts',
-          'ocean/OceanAssets',
-          'ocean/OceanAgreements',
-          'ocean/OceanAgreementsConditions',
           'ocean/OceanCompute',
-          'ocean/OceanSecretStore',
           'ocean/OceanVersions',
-          'ocean/Account',
           'ocean/DID',
           'ddo/DDO',
           'ddo/Service',
           'aquarius/Aquarius',
-          'brizo/Brizo',
-          'keeper/Keeper',
           'keeper/ContractHandler',
           'keeper/EventHandler',
           'keeper/Web3Provider',
           'models/Config',
           'models/Balance',
           'ocean/utils/OceanUtils',
-          'ocean/utils/ServiceAgreement',
           'ocean/utils/WebServiceConnector',
           'utils/Logger'
         ]

@@ -1,38 +1,30 @@
 ---
 title: Connect to Ocean-Related Networks
-description: Learn how to connect to the Pacific network, Nile testnet and other Ocean-related networks in your browser with MetaMask.
+description: On connecting to Ethereum, Rinkeby and Your Local Network.
 ---
 
-## Connect to the Pacific Network
+## Connect to Ethereum mainnet
 
-Here are the parameters you might need to connect to the [Pacific Network](/concepts/pacific-network/):
+Metamask and other ERC20 wallets default to Ethereum mainnet. Therefore your wallet is almost certainly pointing to Ethereum by default.
 
-| Parameter          | Value                                                      |
-| ------------------ | ---------------------------------------------------------- |
-| RPC URL (required) | `https://pacific.oceanprotocol.com`                        |
-| ChainID            | `846353` (decimal for MetaMask) or `0xcea11` (hexadecimal) |
-| Symbol             | Whatever you like, e.g. `PACIFIC ETH`                      |
-| Nickname           | Whatever you like, e.g. `Pacific`                          |
+Some apps may need `network_id` and `chain_id`. The values are both `1` for Ethereum mainnet. `Symbol` and `nickname` can be whatever value you like.
 
-In MetaMask, click on the network name then click on `Custom RPC` in the drop-down list. Scroll down to the `New Network` section. Enter the above RPC URL. You don't need to add a port number to the end of the RPC URL. Enter the ChainID, Symbol and Nickname if you like. See the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
+## Connect to Rinkeby testnet
 
-If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local Pacific node, you can connect to that local Pacific node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask). You can configure that local Pacific node by editing the files in the `barge/networks/pacific/config/` directory.
+In MetaMask, click on the network name dropdown, then select `Rinkeby`.
 
-## Connect to the Nile Testnet
+Its `network_id` is 3 and `chain_id` is 3.
 
-Here are the parameters you might need to connect to the [Nile Testnet](/concepts/testnets/#the-nile-testnet):
+## Connect to local Ganache network
 
-| Parameter          | Value                                                   |
-| ------------------ | ------------------------------------------------------- |
-| RPC URL (required) | `https://nile.dev-ocean.com`                            |
-| ChainID            | `8995` (decimal for MetaMask) or `0x2323` (hexadecimal) |
-| Symbol             | Whatever you like, e.g. `NILE ETH`                      |
-| Nickname           | Whatever you like, e.g. `Nile Testnet`                  |
+**Metamask.** In MetaMask, click on the network name then click on `Custom RPC` in the drop-down list. Scroll down to the `New Network` section. Enter the above RPC URL. You don't need to add a port number to the end of the RPC URL. Enter the ChainID, Symbol and Nickname if you like. See the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
 
-In MetaMask, click on the network name then click on `Custom RPC` in the drop-down list. Scroll down to the `New Network` section. Enter the above RPC URL. You don't need to add a port number to the end of the RPC URL. Enter the ChainID, Symbol and Nickname if you like. See the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
+**Barge.** If you're using Ocean [Barge](https://github.com/oceanprotocol/barge) to help run a local network, you can connect to that local node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask). You can configure that local node by editing the files in the `barge/networks/pacific/config/` directory.
 
-If you're using [Barge](https://github.com/oceanprotocol/barge) to run a local Nile node, you can connect to that local Nile node at RPC URL [http://localhost:8545](http://localhost:8545) (called "Localhost 8545" in MetaMask). You can configure that local Nile node by editing the files in the `barge/networks/nile/config/` directory.
+## More info
 
-## Connect to a Local Spree Testnet or Ganache-Based Testnet
+- [List of Ethereum's Major Networks and Chain ids](https://medium.com/@piyopiyo/list-of-ethereums-major-network-and-chain-ids-2bc58e928508). 
 
-When using [Barge](https://github.com/oceanprotocol/barge) to run a purely-local testnet (Spree or Ganache-based), you can connect to a local node at RPC URL [http://localhost:8545](http://localhost:8545) (called _Localhost 8545_ in MetaMask).
+- [Ganache documentation](https://www.trufflesuite.com/ganache) 
+
+
