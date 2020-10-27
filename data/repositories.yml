@@ -1,11 +1,9 @@
-
-
 - group: Drivers
   items:
     - name: ocean.js
     - name: ocean.py
     - name: react
-    
+
 - group: Smart Contracts
   items:
     - name: contracts
@@ -22,11 +20,10 @@
         - name: API reference
           url: /references/aquarius/
     - name: provider
-	  
+
 - group: Compute-to-Data
   items:
     - name: operator-service
     - name: operator-engine
     - name: pod-configuration
     - name: pod-publishing
-
