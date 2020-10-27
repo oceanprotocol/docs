@@ -17,12 +17,8 @@ The final source of this tutorial is also available as a CodeSandbox:
 
 - `Node.js` >= 10 is installed. You can check using `node -v`
 - `npm` >= 5.2 is installed. You can check using `npm -v`
-- A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed, [connected to Nile network](https://docs.oceanprotocol.com/tutorials/connect-to-networks/#connect-to-the-nile-testnet)
-- Some Nile ETH from the Nile Faucet. You can either go to [commons.nile.dev-ocean.com/faucet](https://commons.nile.dev-ocean.com/faucet), or execute this command replacing `<YOUR ADDRESS>` with your MetaMask account address:
-
-  ```bash
-  curl --data '{"address": "<YOUR ADDRESS>", "agent": "curl"}' -H "Content-Type: application/json" -X POST https://faucet.nile.dev-ocean.com/faucet
-  ```
+- A Web3 capable browser, like Firefox/Chrome with [MetaMask](https://metamask.io) installed, [connected to Rinkeby testnet](https://docs.oceanprotocol.com/tutorials/connect-to-networks/)
+- Some ETH from the Rinkeby Faucet. [Here](tutorials/get-ether-and-ocean-tokens/) are instructions.
 
 ## New Create React App
 
@@ -99,7 +95,7 @@ At the beginning of your component, create a new Ocean instance with all require
 
 GITHUB-EMBED https://github.com/oceanprotocol/react-tutorial/blob/e639e9ed4432e8b72ca453d50ed7bdaa36f1efb4/src/index.js jsx 15-16,19-28,35-39 GITHUB-EMBED
 
-This will initiate a connection to all Ocean components in Nile, load the contracts, and finally store the Ocean object in the local component state for reuse.
+This will initiate a connection to all Ocean components in Rinkeby, load the contracts, and finally store the Ocean object in the local component state for reuse.
 
 We also set the `verbose` option of ocean.js so we better see what's going on.
 
