@@ -39,7 +39,7 @@ module.exports = {
     },
     {
       from: '/references/ocean.js/',
-      to: 'https://github.com/oceanprotocol/ocean.js2'
+      to: 'https://github.com/oceanprotocol/ocean.js'
     },
     {
       from: '/references/react/',
@@ -47,11 +47,11 @@ module.exports = {
     },
     {
       from: '/references/ocean.py/',
-      to: 'https://github.com/oceanprotocol/ocean.py2'
+      to: 'https://github.com/oceanprotocol/ocean.py'
     },
     {
       from: '/references/ocean-contracts/',
-      to: 'https://github.com/oceanprotocol/ocean-contracts2'
+      to: 'https://github.com/oceanprotocol/ocean-contracts'
     },
     {
       from: '/references/aquarius/',

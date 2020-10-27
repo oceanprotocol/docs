@@ -5,10 +5,10 @@ description:
 
 This section has API reference docs (or links to external ones) for the following Ocean Protocol components and libraries:
 
-<repo name="ocean.js2"></repo>
+<repo name="ocean.js"></repo>
 <repo name="react"></repo>
-<repo name="ocean.py2"></repo>
-<repo name="ocean-contracts2"></repo>
+<repo name="ocean.py"></repo>
+<repo name="ocean-contracts"></repo>
 <repo name="aquarius"></repo>
 <repo name="provider-py"></repo>
 

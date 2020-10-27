@@ -2,17 +2,17 @@
 
 - group: Drivers
   items:
-    - name: ocean.js2
-    - name: ocean.py2
+    - name: ocean.js
+    - name: ocean.py
     - name: react
     
 - group: Smart Contracts
   items:
-    - name: ocean-contracts2
+    - name: ocean-contracts
 
 - group: Ocean Market & Services
   items:
-    - name: market2
+    - name: market
     - name: aquarius
       links:
         - name: API reference
