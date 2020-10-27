@@ -11,7 +11,7 @@
   items:
     - title: Network - Local / Barge
       link: /concepts/network-local/
-    - title: Network - Rinkeby Testnet
+    - title: Network - Rinkeby / Barge
       link: /concepts/network-rinkeby/
     - title: Network - Ethereum Mainnet
       link: /concepts/network-ethmainnet/
