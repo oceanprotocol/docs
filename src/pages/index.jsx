@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import Content from '../components/Content'
 import HeaderHome from '../components/HeaderHome'
 import Repositories from '../components/Repositories'
-import QuickRun from '../components/QuickRun'
 import { ReactComponent as Arrow } from '../images/arrow.svg'
 import styles from './index.module.scss'
 
