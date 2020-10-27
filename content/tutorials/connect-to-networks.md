@@ -3,19 +3,19 @@ title: Connect to Ocean-Related Networks
 description: On connecting to Ethereum, Rinkeby and Your Local Network.
 ---
 
-##Connect to Ethereum mainnet
+## Connect to Ethereum mainnet
 
 Metamask and other ERC20 wallets default to Ethereum mainnet. Therefore your wallet is almost certainly pointing to Ethereum by default.
 
 Some apps may need `network_id` and `chain_id`. The values are both `1` for Ethereum mainnet. `Symbol` and `nickname` can be whatever value you like.
 
-##Connect to Rinkeby testnet
+## Connect to Rinkeby testnet
 
 In MetaMask, click on the network name dropdown, then select `Rinkeby`.
 
 Its `network_id` is 3 and `chain_id` is 3.
 
-##Connect to local Ganache network
+## Connect to local Ganache network
 
 **Metamask.** In MetaMask, click on the network name then click on `Custom RPC` in the drop-down list. Scroll down to the `New Network` section. Enter the above RPC URL. You don't need to add a port number to the end of the RPC URL. Enter the ChainID, Symbol and Nickname if you like. See the [MetaMask docs about how it uses the ChainID](https://metamask.github.io/metamask-docs/Main_Concepts/Sending_Transactions).
 
