@@ -14,9 +14,9 @@ In Ocean, marketplaces and publishers are different roles. A common setup is for
 ## Develop a First Cut of the App
 
 Here are some approaches:
-- Fork [Ocean Market](/references/market/) code
-- Do the [React App Tutorial](/tutorials/react-setup/) then grow your app from there. It uses [Ocean React hooks](/references/react/).
-- Build up from [ocean.js](/references/ocean.js/) or [ocean.py](/references/ocean.py/) drivers
+-Fork [Ocean Market](/references/market/) code
+-Do the [React App Tutorial](/tutorials/react-setup/) then grow your app from there. It uses [Ocean React hooks](/references/react/).
+-Build up from [ocean.js](/references/ocean.js/) or [ocean.py](/references/ocean.py/) drivers
 
 ## Prepare Some Initial Data Assets
 
