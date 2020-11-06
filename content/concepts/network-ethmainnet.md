@@ -8,7 +8,7 @@ Ocean is deployed to Ethereum mainnet. This network is for your app's production
 | What                    | URL                    |
 | ----------------------- | ---------------------- |
 | Etherscan explorer      | https://etherscan.io/  |
-| Ocean Market main       | https://oceanmarket.io |
+| Ocean Market main       | https://market.oceanprotocol.com |
 | Ocean Market - Provider | https://provider.mainnet.oceanprotocol.com |
 | Ocean Market - Aquarius | https://aquarius.mainnet.oceanprotocol.com |
 
