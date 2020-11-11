@@ -19,25 +19,6 @@
     - title: Set Up a Marketplace
       link: /tutorials/marketplace/
 
-- group: React App Tutorial
-  items:
-    - title: Setup
-      link: /tutorials/react-setup/
-    - title: Publish a Data Set
-      link: /tutorials/react-publish-data-set/
-    - title: Search & Consume a Data Set
-      link: /tutorials/react-get-use-data-set/
-    - title: Publish a Data Set with Compute features
-      link: /tutorials/react-publish-data-set-compute/
-    - title: Publish a Algorithm
-      link: /tutorials/react-publish-algorithm/
-    - title: Compute using a published algorithm on a Data Set
-      link: /tutorials/react-compute-published-algorithm/
-    - title: Compute using a raw algorithm on a Data Set
-      link: /tutorials/react-compute-raw/
-    - title: Get Status of a Compute Job
-      link: /tutorials/react-compute-status/
-
 - group: Compute-to-Data
   items:
     - title: Run a Compute-to-Data Environment
