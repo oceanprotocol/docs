@@ -1,6 +1,9 @@
 - group: Drivers
   items:
     - name: ocean.js
+      links:
+        - name: Reference
+          url: /references/ocean.js/
     - name: ocean.py
     - name: react
 

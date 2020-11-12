@@ -3,11 +3,12 @@ title: Overview of Tutorials
 description: 
 ---
 
-These tutorials cover:
+These tutorials go beyond the Quickstarts to cover:
 
 - Using Web3 wallets with Ocean
 - Getting ETH and OCEAN on Ethereum mainnet, and Rinkeby testnet
-- Storage setup - Azure, AWS or local 
-- Building a React app with Ocean. This is a great way to understand Ocean end-to-end.
+- Set up a marketplace
+- Run a compute-to-data environment
+- Storage setup - Azure, AWS or local
 
 
