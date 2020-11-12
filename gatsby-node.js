@@ -88,7 +88,7 @@ exports.createPages = ({ graphql, actions }) => {
                     node {
                       isPrerelease
                       isDraft
-                      releaseAssets(first: 1, name: "ocean.js.json") {
+                      releaseAssets(first: 1, name: "lib.json") {
                         edges {
                           node {
                             name
@@ -156,15 +156,16 @@ exports.createPages = ({ graphql, actions }) => {
         await createSwaggerPages(createPage)
 
         // API: ocean.js
-        /*const lastRelease = result.data.oceanJs.repository.releases.edges.filter(
+        const lastRelease = result.data.oceanJs.repository.releases.edges.filter(
           ({ node }) => !node.isPrerelease && !node.isDraft
         )[0].node.releaseAssets.edges[0].node
+
         await createTypeDocPage(
           createPage,
           result.data.oceanJs.repository.name,
           lastRelease.downloadUrl
         )
-	*/
+
         //
         // create redirects
         //
@@ -231,10 +232,10 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
 // Create pages from swagger json files
 //
 // https://github.com/swagger-api/swagger-js
-const fetchSwaggerSpec = async (name) => {
+const fetchSwaggerSpec = async () => {
   try {
     const client = await Swagger(
-      `https://${name}.commons.oceanprotocol.com/spec`
+      `https://aquarius.mainnet.oceanprotocol.com/spec`
     )
     return client.spec // The resolved spec
 
@@ -270,19 +271,6 @@ const createSwaggerPages = async (createPage) => {
       slug: slugAquarius,
       name: swaggerComponents[0],
       api: specAquarius
-    }
-  })
-
-  const specBrizo = await fetchSwaggerSpec(swaggerComponents[1])
-  const slugBrizo = getSlug(swaggerComponents[1])
-
-  createPage({
-    path: slugBrizo,
-    component: apiSwaggerTemplate,
-    context: {
-      slug: slugBrizo,
-      name: swaggerComponents[1],
-      api: specBrizo
     }
   })
 

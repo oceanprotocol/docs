@@ -35,30 +35,6 @@ module.exports = {
     {
       from: '/tutorials/wallets/',
       to: '/concepts/wallets/'
-    },
-    {
-      from: '/references/ocean.js/',
-      to: 'https://github.com/oceanprotocol/ocean.js'
-    },
-    {
-      from: '/references/react/',
-      to: 'https://github.com/oceanprotocol/react'
-    },
-    {
-      from: '/references/ocean.py/',
-      to: 'https://github.com/oceanprotocol/ocean.py'
-    },
-    {
-      from: '/references/ocean-contracts/',
-      to: 'https://github.com/oceanprotocol/ocean-contracts'
-    },
-    {
-      from: '/references/aquarius/',
-      to: 'https://github.com/oceanprotocol/aquarius'
-    },
-    {
-      from: '/references/provider-py/',
-      to: 'https://github.com/oceanprotocol/provider-py'
     }
   ]
 }
