@@ -76,31 +76,6 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
-
-            squidJs: github {
-              repository(name: "squid-js", owner: "oceanprotocol") {
-                name
-                releases(
-                  first: 30
-                  orderBy: { field: CREATED_AT, direction: DESC }
-                ) {
-                  edges {
-                    node {
-                      isPrerelease
-                      isDraft
-                      releaseAssets(first: 1, name: "squid-js.json") {
-                        edges {
-                          node {
-                            name
-                            downloadUrl
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         `
       ).then(async (result) => {
@@ -155,15 +130,6 @@ exports.createPages = ({ graphql, actions }) => {
         // API: brizo, aquarius
         await createSwaggerPages(createPage)
 
-        // API: squid-js
-        const lastRelease = result.data.squidJs.repository.releases.edges.filter(
-          ({ node }) => !node.isPrerelease && !node.isDraft
-        )[0].node.releaseAssets.edges[0].node
-        await createTypeDocPage(
-          createPage,
-          result.data.squidJs.repository.name,
-          lastRelease.downloadUrl
-        )
 
         //
         // create redirects
@@ -214,9 +180,6 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
           'ddo/DDO',
           'ddo/Service',
           'aquarius/Aquarius',
-          'keeper/ContractHandler',
-          'keeper/EventHandler',
-          'keeper/Web3Provider',
           'models/Config',
           'models/Balance',
           'ocean/utils/OceanUtils',
@@ -255,7 +218,7 @@ const fetchSwaggerSpec = async (name) => {
 }
 
 const createSwaggerPages = async (createPage) => {
-  const swaggerComponents = ['aquarius', 'brizo']
+  const swaggerComponents = ['aquarius']
   const apiSwaggerTemplate = path.resolve('./src/templates/Swagger/index.jsx')
 
   const getSlug = (name) => {
@@ -273,19 +236,6 @@ const createSwaggerPages = async (createPage) => {
       slug: slugAquarius,
       name: swaggerComponents[0],
       api: specAquarius
-    }
-  })
-
-  const specBrizo = await fetchSwaggerSpec(swaggerComponents[1])
-  const slugBrizo = getSlug(swaggerComponents[1])
-
-  createPage({
-    path: slugBrizo,
-    component: apiSwaggerTemplate,
-    context: {
-      slug: slugBrizo,
-      name: swaggerComponents[1],
-      api: specBrizo
     }
   })
 
