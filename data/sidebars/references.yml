@@ -6,7 +6,12 @@
 - group: ocean.js
   items:
     - title: API Reference
-      link: https://github.com/oceanprotocol/ocean.js
+      link: /references/ocean.js
+
+- group: aquarius
+  items:
+    - title: API Reference
+      link: /references/aquarius/
 
 - group: react
   items:
@@ -23,12 +28,7 @@
     - title: API Reference
       link: https://github.com/oceanprotocol/ocean-contracts
 
-- group: aquarius
-  items:
-    - title: API Reference
-      link: /references/aquarius/
-
 - group: provider-py
   items:
     - title: API Reference
-      link: /references/provider-py/
+      link: https://github.com/oceanprotocol/provider-py
