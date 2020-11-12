@@ -76,6 +76,31 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+
+            oceanJs: github {
+              repository(name: "ocean.js", owner: "oceanprotocol") {
+                name
+                releases(
+                  first: 30
+                  orderBy: { field: CREATED_AT, direction: DESC }
+                ) {
+                  edges {
+                    node {
+                      isPrerelease
+                      isDraft
+                      releaseAssets(first: 1, name: "ocean.js.json") {
+                        edges {
+                          node {
+                            name
+                            downloadUrl
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         `
       ).then(async (result) => {
@@ -130,6 +155,15 @@ exports.createPages = ({ graphql, actions }) => {
         // API: brizo, aquarius
         await createSwaggerPages(createPage)
 
+        // API: ocean.js
+        const lastRelease = result.data.oceanJs.repository.releases.edges.filter(
+          ({ node }) => !node.isPrerelease && !node.isDraft
+        )[0].node.releaseAssets.edges[0].node
+        await createTypeDocPage(
+          createPage,
+          result.data.oceanJs.repository.name,
+          lastRelease.downloadUrl
+        )
 
         //
         // create redirects
@@ -236,6 +270,19 @@ const createSwaggerPages = async (createPage) => {
       slug: slugAquarius,
       name: swaggerComponents[0],
       api: specAquarius
+    }
+  })
+
+  const specBrizo = await fetchSwaggerSpec(swaggerComponents[1])
+  const slugBrizo = getSlug(swaggerComponents[1])
+
+  createPage({
+    path: slugBrizo,
+    component: apiSwaggerTemplate,
+    context: {
+      slug: slugBrizo,
+      name: swaggerComponents[1],
+      api: specBrizo
     }
   })
 
