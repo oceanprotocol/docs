@@ -1,25 +1,22 @@
 - group: Basics
   items:
-    - title: Quickstart
-      link: /concepts/quickstart/
     - title: Introduction
       link: /concepts/introduction/
     - title: Architecture Overview
       link: /concepts/architecture/
+    - title: Compute-to-Data
+      link: /concepts/compute-to-data/
+    - title: Quickstart
+      link: /concepts/quickstart/
 
 - group: Networks
   items:
-    - title: Network - Local / Barge
-      link: /concepts/network-local/
-    - title: Network - Rinkeby / Barge
-      link: /concepts/network-rinkeby/
     - title: Network - Ethereum Mainnet
       link: /concepts/network-ethmainnet/
-
-- group: Preserving Privacy
-  items:
-    - title: Compute-to-Data
-      link: /concepts/compute-to-data/
+    - title: Network - Rinkeby
+      link: /concepts/network-rinkeby/
+    - title: Network - Local / Barge
+      link: /concepts/network-local/
 
 - group: Contribute
   items:
