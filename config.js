@@ -17,8 +17,6 @@ module.exports = {
   },
   githubContentPath:
     'https://github.com/oceanprotocol/docs/blob/master/content',
-  githubDevOceanPath:
-    'https://github.com/oceanprotocol/dev-ocean/blob/master/doc',
   redirects: [
     {
       from: '/concepts/',

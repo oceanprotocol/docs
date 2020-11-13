@@ -58,25 +58,6 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
 
-            devOceanDocs: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/dev-ocean/doc/" } }
-            ) {
-              edges {
-                node {
-                  fields {
-                    slug
-                    section
-                  }
-                  frontmatter {
-                    slug
-                    title
-                    description
-                    section
-                  }
-                }
-              }
-            }
-
             oceanJs: github {
               repository(name: "ocean.js", owner: "oceanprotocol") {
                 name
@@ -125,32 +106,6 @@ exports.createPages = ({ graphql, actions }) => {
             }
           })
         })
-
-        //
-        // Create pages from dev-ocean contents
-        //
-        const postsDevOcean = result.data.devOceanDocs.edges
-
-        postsDevOcean
-          // only grab files with required frontmatter defined
-          .filter(
-            (post) =>
-              post.node.frontmatter &&
-              post.node.frontmatter.slug &&
-              post.node.frontmatter.title &&
-              post.node.frontmatter.description &&
-              post.node.frontmatter.section
-          )
-          .forEach((post) => {
-            createPage({
-              path: `${post.node.fields.slug}`,
-              component: docTemplate,
-              context: {
-                slug: post.node.fields.slug,
-                section: post.node.fields.section
-              }
-            })
-          })
 
         // API: brizo, aquarius
         await createSwaggerPages(createPage)

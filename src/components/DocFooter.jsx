@@ -2,24 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ReactComponent as Pencil } from '../images/pencil.svg'
 import styles from './DocFooter.module.scss'
-import { social, githubContentPath, githubDevOceanPath } from '../../config'
+import { social, githubContentPath } from '../../config'
 
 export default function DocFooter({ post, url, externalName }) {
-  let path
-
   if (post) {
-    const { sourceInstanceName } = post.parent
-
-    switch (sourceInstanceName) {
-      case 'dev-ocean':
-        path = githubDevOceanPath
-        externalName = sourceInstanceName
-        break
-      default:
-        path = githubContentPath
-    }
-
-    url = `${path}/${post.parent.relativePath}`
+    url = `${githubContentPath}/${post.parent.relativePath}`
   }
 
   return (

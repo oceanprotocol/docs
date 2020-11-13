@@ -45,13 +45,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'dev-ocean',
-        path: `${__dirname}/external/dev-ocean/doc`
-      }
-    },
-    {
       resolve: 'gatsby-source-graphql',
       options: {
         typeName: 'GitHub',
