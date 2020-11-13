@@ -37,11 +37,9 @@ const SectionLink = ({ to, title, color, children }) => {
     <SectionBox to={to} className={classNames}>
       <h3 className={styles.sectionTitle}>{title}</h3>
       <p className={styles.sectionText}>{children}</p>
-      {title !== 'API References' && (
-        <span className={styles.sectionMore}>
-          Learn More <Arrow />
-        </span>
-      )}
+      <span className={styles.sectionMore}>
+        Learn More <Arrow />
+      </span>
     </SectionBox>
   )
 }
