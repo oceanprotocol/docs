@@ -2,12 +2,12 @@
   items:
     - title: Introduction
       link: /concepts/introduction/
+    - title: Quickstart
+      link: /concepts/quickstart/
     - title: Architecture Overview
       link: /concepts/architecture/
     - title: Compute-to-Data
       link: /concepts/compute-to-data/
-    - title: Quickstart
-      link: /concepts/quickstart/
 
 - group: Networks
   items:

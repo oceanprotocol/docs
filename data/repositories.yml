@@ -7,22 +7,30 @@
     - name: ocean.py
     - name: react
 
-- group: Smart Contracts
+- group: Core
   items:
     - name: contracts
-
-- group: Ocean Market
-  items:
-    - name: market
-
-- group: Services
-  items:
-    - name: barge
     - name: aquarius
       links:
         - name: API reference
           url: /references/aquarius/
     - name: provider
+
+- group: Ocean Market
+  items:
+    - name: market
+      links:
+        - name: Live
+          url: https://market.oceanprotocol.com
+    - name: market-stats
+    - name: market-purgatory
+    - name: list-purgatory
+
+- group: Tools
+  items:
+    - name: barge
+    - name: art
+    - name: eslint-config-oceanprotocol
 
 - group: Compute-to-Data
   items:
