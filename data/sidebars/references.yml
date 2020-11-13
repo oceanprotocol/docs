@@ -13,6 +13,11 @@
     - title: API Reference
       link: /references/aquarius/
 
+- group: provider
+  items:
+    - title: API Reference
+      link: /references/provider/
+
 - group: react
   items:
     - title: API Reference

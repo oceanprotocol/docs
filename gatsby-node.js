@@ -198,10 +198,10 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
 // Create pages from swagger json files
 //
 // https://github.com/swagger-api/swagger-js
-const fetchSwaggerSpec = async () => {
+const fetchSwaggerSpec = async (component) => {
   try {
     const client = await Swagger(
-      `https://aquarius.mainnet.oceanprotocol.com/spec`
+      `https://${component}.mainnet.oceanprotocol.com/spec`
     )
     return client.spec // The resolved spec
 
@@ -219,26 +219,24 @@ const fetchSwaggerSpec = async () => {
 }
 
 const createSwaggerPages = async (createPage) => {
-  const swaggerComponents = ['aquarius']
+  const swaggerComponents = ['aquarius', 'provider']
   const apiSwaggerTemplate = path.resolve('./src/templates/Swagger/index.jsx')
 
-  const getSlug = (name) => {
-    const slug = `/references/${name}/`
-    return slug
+  const getSlug = (name) => `/references/${name}/`
+
+  for (const component of swaggerComponents) {
+    const slug = getSlug(component)
+
+    createPage({
+      path: slug,
+      component: apiSwaggerTemplate,
+      context: {
+        slug,
+        name: component,
+        api: await fetchSwaggerSpec(component)
+      }
+    })
   }
-
-  const specAquarius = await fetchSwaggerSpec(swaggerComponents[0])
-  const slugAquarius = getSlug(swaggerComponents[0])
-
-  createPage({
-    path: slugAquarius,
-    component: apiSwaggerTemplate,
-    context: {
-      slug: slugAquarius,
-      name: swaggerComponents[0],
-      api: specAquarius
-    }
-  })
 
   // Swagger Pet Store example
   const petStoreSlug = '/references/petstore/'

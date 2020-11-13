@@ -15,6 +15,9 @@
         - name: API reference
           url: /references/aquarius/
     - name: provider
+      links:
+        - name: API reference
+          url: /references/provider/
 
 - group: Ocean Market
   items:
