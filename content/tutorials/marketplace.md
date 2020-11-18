@@ -17,7 +17,7 @@ Here are some approaches:
 
 - Fork [Ocean Market](/references/market/) code
 - Build from [Ocean React hooks](/references/react/).
-- Build up from [ocean.js](/references/ocean.js/) or [ocean.py](/references/ocean.py/) drivers
+- Build up from [ocean.js](/references/ocean.js/) or [ocean.py](https://github.com/oceanprotocol/ocean.py) drivers
 
 ## Prepare Some Initial Data Assets
 
