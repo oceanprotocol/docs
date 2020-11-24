@@ -64,7 +64,7 @@
     "swagger-client": "^3.12.0"
   },
   "devDependencies": {
-    "@svgr/webpack": "^5.4.0",
+    "@svgr/webpack": "^5.5.0",
     "dotenv": "^8.2.0",
     "eslint": "^7.13.0",
     "eslint-config-oceanprotocol": "^1.5.0",
