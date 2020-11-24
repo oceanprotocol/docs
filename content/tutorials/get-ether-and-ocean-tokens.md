@@ -20,7 +20,7 @@ The ETH and OCEAN in Rinkeby and local networks are not "real" ETH or OCEAN toke
 
 Testnets like Rinkeby have faucets to dole out ETH and OCEAN.
 
-- **ETH.** [Here's an ETH faucet](https://faucet.rinkeby.be/) for Rinkeby. You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
+- **ETH.** [Here's an ETH faucet](https://faucet.rinkeby.io/) for Rinkeby. You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
 
 - **OCEAN.** [Here's an OCEAN faucet](https://faucet.rinkeby.oceanprotocol.com) for Rinkeby.
 
