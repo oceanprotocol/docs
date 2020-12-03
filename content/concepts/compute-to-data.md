@@ -34,7 +34,7 @@ Ocean Provider is the technical component executed by the **Publishers**, which 
 The Operator Service is a micro-service that implements part of the Compute-to-Data spec [OEP-12](https://github.com/oceanprotocol/OEPs/tree/master/12),
 in charge of managing the workflow executing requests.
 
-Typically the Operator Service is integrated from Ocean Provider, but can be called independently if it.
+Typically the Operator Service is integrated from Ocean Provider, but can be called independently of it.
 
 The Operator Service is in charge of stablishing the communication with the K8s cluster, allowing to:
 
