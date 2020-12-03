@@ -42,16 +42,16 @@ function s3sync {
 }
 
 ##
-## check for pull request against master
+## check for pull request against main
 ##
-if [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+if [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ "$TRAVIS_BRANCH" == "main" ]; then
 
   s3sync $AWS_S3_BUCKET_BETA
 
 ##
-## check for master push which is no pull request
+## check for main push which is no pull request
 ##
-elif [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] || [ "$TRAVIS" != true ]; then
+elif [ "$TRAVIS_BRANCH" == "main" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] || [ "$TRAVIS" != true ]; then
 
   s3sync $AWS_S3_BUCKET
 

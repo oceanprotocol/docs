@@ -15,8 +15,7 @@ module.exports = {
     Port: 'https://port.oceanprotocol.com',
     Telegram: 'https://t.me/OceanProtocol_Community'
   },
-  githubContentPath:
-    'https://github.com/oceanprotocol/docs/blob/master/content',
+  githubContentPath: 'https://github.com/oceanprotocol/docs/blob/main/content',
   redirects: [
     {
       from: '/concepts/',

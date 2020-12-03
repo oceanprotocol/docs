@@ -1,11 +1,11 @@
 # Content
 
-- [Overview](#Overview)
-- [External Content Files](#External-Content-Files)
-- [Workflow](#Workflow)
-  - [Adding Docs](#Adding-Docs)
-  - [Editing Docs](#Editing-Docs)
-- [Markdown File Requirements](#Markdown-File-Requirements)
+- [Overview](#overview)
+- [External Content Files](#external-content-files)
+- [Workflow](#workflow)
+  - [Adding Docs](#adding-docs)
+  - [Editing Docs](#editing-docs)
+- [Markdown File Requirements](#markdown-file-requirements)
 
 ## Overview
 
@@ -45,7 +45,7 @@ This will NOT include this page in the doc's sidebar navigation, this needs to b
 1. Add new Markdown file under one of the folders under [`/content`](../content/)
 1. Add new path to one of the sidebars in [`/data/sidebars`](../data/sidebars/)
 1. Push your changes to a new branch in the repo, or in your fork
-1. Open a pull request against `master`, automatically asking for review
+1. Open a pull request against `main`, automatically asking for review
 1. Wait for review, possibly make requested changes
 1. Wait for all checks to pass
 1. Merge!
@@ -54,13 +54,13 @@ This will NOT include this page in the doc's sidebar navigation, this needs to b
 
 Every article on [docs.oceanprotocol.com](https://docs.oceanprotocol.com) ends with an _Edit this page on GitHub_ link. Clicking that will put you to the right place in the repository from where you can hit the _Edit_ pencil icon on GitHub.
 
-GitHub will automatically fork the repository if you are not part of the `oceanprotocol` organisation on GitHub. Members can simply push to a new branch on the original repo.
+GitHub will automatically fork the repository if you are not part of the `oceanprotocol` organization on GitHub. Members can simply push to a new branch on the original repo.
 
 The editing workflow is as follows:
 
 1. Make your changes
 1. Push your changes to a new branch in the repo, or in your fork
-1. Open a pull request against `master`, automatically asking for review
+1. Open a pull request against `main`, automatically asking for review
 1. Wait for review, possibly make requested changes
 1. Wait for all checks to pass
 1. Merge!

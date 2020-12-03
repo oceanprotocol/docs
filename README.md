@@ -97,7 +97,7 @@ If you use VS Code as your editor, you can install those extensions to get linti
 
 Automatic deployments are triggered upon successful tests & builds on Travis:
 
-- push to `master` initiates a live deployment
+- push to `main` initiates a live deployment
   → [docs.oceanprotocol.com](https://docs.oceanprotocol.com)
 - any Pull Request, and subsequent pushes to it, initiates a beta deployment
   → [betadocs.oceanprotocol.com](https://betadocs.oceanprotocol.com)
