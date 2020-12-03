@@ -36,7 +36,7 @@ in charge of managing the workflow executing requests.
 
 Typically the Operator Service is integrated from Ocean Provider, but can be called independently if it.
 
-The Operator Service is in charge of stablishing the communication with the K8s cluster, allowing to:
+The Operator Service is in charge of establishing the communication with the K8s cluster, allowing it to:
 
 - Register workflows as K8s objects
 - List the workflows registered in K8s
@@ -65,7 +65,7 @@ The main responsibilities are:
 In the above diagram you can see the initial integration supported. It involves the following components/actors:
 
 - Data Scientists/Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
-- Ocean Keeper - In charge of enforcing the Service Agreement by tracing conditions.
+- Ocean Keeper - In charge of enforcing the Service Agreement by tracking conditions.
 - Operator-Service - Micro-service that is handling the compute requests.
 - Operator-Engine - The computing systems where the compute will be executed.
 
