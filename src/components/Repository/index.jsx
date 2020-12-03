@@ -37,7 +37,7 @@ const queryGithub = graphql`
                   }
                 }
               }
-              object(expression: "develop:README.md") {
+              object(expression: "main:README.md") {
                 id
                 ... on GitHub_Blob {
                   text

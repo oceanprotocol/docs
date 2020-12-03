@@ -29,7 +29,7 @@ The main and new key component introduced to support these additional Publisher 
 
 Ocean Provider is the technical component executed by the **Publishers**, which provides extended data services. Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
 
-### Compute-to-Data Enviroment (Operator-Service)
+### Compute-to-Data Environment (Operator-Service)
 
 The Operator Service is a micro-service that implements part of the Compute-to-Data spec [OEP-12](https://github.com/oceanprotocol/OEPs/tree/master/12),
 in charge of managing the workflow executing requests.

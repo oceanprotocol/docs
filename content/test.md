@@ -149,7 +149,7 @@ Some text to show that the reference links can follow later.
 
 Here's our jellyfish, with the title being output as caption:
 
-![alt text](../node_modules/@oceanprotocol/art/jellyfish/jellyfish-grid@2x.png 'Ocean Protocol Jellyfish')
+![alt text](../node_modules/@oceanprotocol/art/creatures/jellyfish/jellyfish-grid@2x.png 'Ocean Protocol Jellyfish')
 
 ## Code and Syntax Highlighting
 
@@ -370,14 +370,14 @@ In all Markdown docs you can use some select React Components. This magic is don
 The `Repository` component fetching and displaying information about a GitHub repo. Component can be used in Markdown as `<repo>`, it requires a `name` to be passed:
 
 ```html
-<repo name="commons"></repo>
+<repo name="market"></repo>
 ```
 
 Note that the component name in Markdown needs to be always in lowercase, and have a closing tag.
 
 Resulting in:
 
-<repo name="commons"></repo>
+<repo name="market"></repo>
 
 You can also pass `readme="true"` and the readme contents of the repo will be rendered:
 
@@ -394,19 +394,19 @@ Resulting in:
 You can embed any file contents like so, note that the language needs to be defined manually to get proper syntax highlighting:
 
 ```markdown
-GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/master/src/keeper/Web3Provider.ts js GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/ocean.js/blob/main/src/lib.ts js GITHUB-EMBED
 ```
 
 Resulting in:
 
-GITHUB-EMBED https://github.com/oceanprotocol/squid-js/blob/master/src/keeper/Web3Provider.ts js GITHUB-EMBED
+GITHUB-EMBED https://github.com/oceanprotocol/ocean.js/blob/main/src/lib.ts js GITHUB-EMBED
 
 ## Swagger spec references
 
 Many Swagger fields like the description (`info.description`) are rendered through Markdown so you can write actual Markdown in those fields.
 
 - [Aquarius API reference](/references/aquarius/)
-- [Brizo API reference](/references/brizo/)
+- [Provider API reference](/references/provider/)
 
 For a complete overview of everything supported by Swagger and implemented in this site, take a look at the hidden Pet Store example:
 
