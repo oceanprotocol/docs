@@ -47,7 +47,7 @@
     "gatsby-transformer-remark": "^2.10.0",
     "gatsby-transformer-sharp": "^2.6.0",
     "gatsby-transformer-xml": "^2.4.0",
-    "gatsby-transformer-yaml": "^2.5.0",
+    "gatsby-transformer-yaml": "^2.6.0",
     "giphy-js-sdk-core": "^1.0.6",
     "intersection-observer": "^0.11.0",
     "react": "^17.0.1",
