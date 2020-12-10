@@ -11,8 +11,8 @@
       link: /tutorials/metamask-setup/
     - title: Use Your Wallet to Manage OCEAN Tokens
       link: /tutorials/wallets-and-ocean-tokens/
-      
-- group: Networks 
+
+- group: Networks
   items:
     - title: Supported Networks
       link: /tutorials/networks-overview/
@@ -60,4 +60,3 @@
       link: /tutorials/legal-reqs/
     - title: Code of Conduct
       link: /tutorials/code-of-conduct/
-
