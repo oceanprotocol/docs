@@ -28,10 +28,6 @@ module.exports = {
     {
       from: '/references/',
       to: '/references/introduction/'
-    },
-    {
-      from: '/tutorials/wallets/',
-      to: '/concepts/wallets/'
     }
   ]
 }

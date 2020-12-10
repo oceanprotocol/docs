@@ -7,40 +7,7 @@
     - title: Architecture Overview
       link: /concepts/architecture/
 
-- group: Networks
-  items:
-    - title: Networks Overview
-      link: /concepts/networks-overview/
-    - title: Ethereum Mainnet
-      link: /concepts/network-ethmainnet/
-    - title: Rinkeby Testnet
-      link: /concepts/network-rinkeby/
-    - title: Ropsten Testnet
-      link: /concepts/network-ropsten/
-    - title: Ganache Local Testnet
-      link: /concepts/network-local/
-
 - group: Advanced
   items:
     - title: Compute-to-Data
       link: /concepts/compute-to-data/
-
-- group: Contribute
-  items:
-    - title: Ways to Contribute
-      link: /concepts/contributing/
-    - title: Get Funding
-      link: /concepts/get-funding/
-    - title: Reporting Vulnerabilities
-      link: /concepts/vulnerabilities/
-    - title: Legal Requirements when Contributing Code
-      link: /concepts/legal-reqs/
-    - title: Code of Conduct
-      link: /concepts/code-of-conduct/
-
-- group: Extras
-  items:
-    - title: Wallet Basics
-      link: /concepts/wallets/
-    - title: Resources
-      link: /concepts/resources/

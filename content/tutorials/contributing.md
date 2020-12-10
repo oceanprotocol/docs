@@ -9,8 +9,8 @@ We'd love to have you help contribute to the Ocean core software! Here are ways 
 
 - _Just do it:)_ Branch from the code, improve it, submit a Pull Request.
 - Chat with other Ocean developers in [Discord](https://discord.gg/TnXjkR5).
-- Because of the weird world of intellectual property, before it can go through, we need to follow the [legal requirements](/concepts/legal-reqs/). Please be aware of this.
-- Finally, here's the [Contributor Code of Conduct](/concepts/code-of-conduct/).
+- Because of the weird world of intellectual property, before it can go through, we need to follow the [legal requirements](/tutorials/legal-reqs/). Please be aware of this.
+- Finally, here's the [Contributor Code of Conduct](/tutorials/code-of-conduct/).
 
 ### Develop an app or integration, using Ocean as a tool
 
@@ -20,7 +20,7 @@ Ocean documentation will help. And... you're here:)
 
 ### Report a bug
 
-To report a vulnerability, [go here](/concepts/vulnerabilities/).
+To report a vulnerability, [go here](/tutorials/vulnerabilities/).
 
 To report a bug that isn't a vulnerability, go to the relevant GitHub repository, click on the Issues tab, click on the New issue button, and read the instructions.
 

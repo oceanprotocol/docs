@@ -1,11 +1,13 @@
 ---
 title: Ropsten Testnet
-description: 
+description: Details of Ropsten deployment & services
 ---
 
 ## Smart Contracts
 
-Ocean contracts are deployed to Ropsten network. [Here](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/ropsten.md) are the addresses.
+Ocean contracts are deployed to Ropsten network.
+
+[Here](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/ropsten.md) are the addresses.
 
 ## Ropsten-Related Services
 

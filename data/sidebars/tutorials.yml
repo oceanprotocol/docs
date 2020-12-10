@@ -3,16 +3,31 @@
     - title: Introduction
       link: /tutorials/introduction/
 
-- group: Wallets & Ocean Protocol
+- group: Wallets
   items:
+    - title: Wallet Basics
+      link: /tutorials/wallets/
     - title: Set Up MetaMask Wallet
       link: /tutorials/metamask-setup/
     - title: Use Your Wallet to Manage OCEAN Tokens
       link: /tutorials/wallets-and-ocean-tokens/
-    - title: Connect to Ocean-Related Networks
+      
+- group: Networks 
+  items:
+    - title: Supported Networks
+      link: /tutorials/networks-overview/
+    - title: Connect Wallets to Networks
       link: /tutorials/connect-to-networks/
     - title: Get ETH and OCEAN Tokens
       link: /tutorials/get-ether-and-ocean-tokens/
+    - title: Ethereum Mainnet
+      link: /tutorials/network-ethmainnet/
+    - title: Rinkeby Testnet
+      link: /tutorials/network-rinkeby/
+    - title: Ropsten Testnet
+      link: /tutorials/network-ropsten/
+    - title: Ganache Local Testnet
+      link: /tutorials/network-local/
 
 - group: Marketplaces
   items:
@@ -32,3 +47,17 @@
       link: /tutorials/amazon-s3-for-brizo/
     - title: Set Up On-Premise Storage
       link: /tutorials/on-premise-for-brizo/
+
+- group: Contribute
+  items:
+    - title: Ways to Contribute
+      link: /tutorials/contributing/
+    - title: Get Funding
+      link: /tutorials/get-funding/
+    - title: Reporting Vulnerabilities
+      link: /tutorials/vulnerabilities/
+    - title: Legal Requirements when Contributing Code
+      link: /tutorials/legal-reqs/
+    - title: Code of Conduct
+      link: /tutorials/code-of-conduct/
+
