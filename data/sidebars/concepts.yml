@@ -6,17 +6,24 @@
       link: /concepts/quickstart/
     - title: Architecture Overview
       link: /concepts/architecture/
-    - title: Compute-to-Data
-      link: /concepts/compute-to-data/
 
 - group: Networks
   items:
-    - title: Network - Ethereum Mainnet
+    - title: Networks Overview
+      link: /concepts/networks-overview/
+    - title: Ethereum Mainnet
       link: /concepts/network-ethmainnet/
-    - title: Network - Rinkeby
+    - title: Rinkeby Testnet
       link: /concepts/network-rinkeby/
-    - title: Network - Local / Barge
+    - title: Ropsten Testnet
+      link: /concepts/network-ropsten/
+    - title: Ganache Local Testnet
       link: /concepts/network-local/
+
+- group: Advanced
+  items:
+    - title: Compute-to-Data
+      link: /concepts/compute-to-data/
 
 - group: Contribute
   items:

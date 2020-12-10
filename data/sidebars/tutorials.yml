@@ -9,10 +9,10 @@
       link: /tutorials/metamask-setup/
     - title: Use Your Wallet to Manage OCEAN Tokens
       link: /tutorials/wallets-and-ocean-tokens/
-    - title: Get ETH and OCEAN Tokens
-      link: /tutorials/get-ether-and-ocean-tokens/
     - title: Connect to Ocean-Related Networks
       link: /tutorials/connect-to-networks/
+    - title: Get ETH and OCEAN Tokens
+      link: /tutorials/get-ether-and-ocean-tokens/
 
 - group: Marketplaces
   items:
