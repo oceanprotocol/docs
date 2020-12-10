@@ -34,8 +34,8 @@ Note that unlike traditional pocket wallets, crypto wallets don't actually store
 
 ## Resources
 
-* Metamask: https://metamask.io/
-* Trezor: https://trezor.io/
-* Ledger: https://www.ledger.com/
-* MyEtherWallet: https://www.myetherwallet.com/
-* MyCrypto: https://www.mycrypto.com/
+- Metamask: https://metamask.io/
+- Trezor: https://trezor.io/
+- Ledger: https://www.ledger.com/
+- MyEtherWallet: https://www.myetherwallet.com/
+- MyCrypto: https://www.mycrypto.com/
