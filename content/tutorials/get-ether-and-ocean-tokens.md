@@ -7,7 +7,7 @@ description: How to get tokens for each network
 
 In each network, you'll need ETH to pay for gas, and OCEAN for certain Ocean actions.
 
-Ethereum mainnet is a network for production settings. Accordingly, ETH and OCEAN tokens have "real" value.
+Ethereum mainnet is a network for production settings. Accordingly, ETH and OCEAN tokens have _real_ value.
 
 Other networks are test networks. The ETH and OCEAN tokens in each of these networks don't have real value. The tokens are simply stand-ins to be able to test. They have "faucets" to dole out ETH and OCEAN. 
 
