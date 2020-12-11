@@ -3,7 +3,6 @@ yarn.lock
 yarn-error.log
 .cache
 /public
-/external
 .DS_Store
 .env
 .env.*
