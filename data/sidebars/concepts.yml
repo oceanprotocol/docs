@@ -7,7 +7,41 @@
     - title: Architecture Overview
       link: /concepts/architecture/
 
-- group: Advanced
+- group: Networks & Tokens
   items:
-    - title: Compute-to-Data
+    - title: Supported Networks
+      link: /concepts/networks-overview/
+    - title: Connect Wallets to Networks
+      link: /concepts/connect-to-networks/
+    - title: Get ETH and OCEAN Tokens
+      link: /concepts/get-ether-and-ocean-tokens/
+      
+- group: Specific Network Info
+  items:
+    - title: Ethereum Mainnet
+      link: /concepts/network-ethmainnet/
+    - title: Rinkeby Testnet
+      link: /concepts/network-rinkeby/
+    - title: Ropsten Testnet
+      link: /concepts/network-ropsten/
+    - title: Ganache Local Testnet
+      link: /concepts/network-local/
+
+- group: Compute-to-Data
+  items:
+    - title: Compute-to-Data Overview
       link: /concepts/compute-to-data/
+
+- group: Contribute
+  items:
+    - title: Ways to Contribute
+      link: /concepts/contributing/
+    - title: Get Funding
+      link: /concepts/get-funding/
+    - title: Reporting Vulnerabilities
+      link: /concepts/vulnerabilities/
+    - title: Legal Requirements when Contributing Code
+      link: /concepts/legal-reqs/
+    - title: Code of Conduct
+      link: /concepts/code-of-conduct/
+
