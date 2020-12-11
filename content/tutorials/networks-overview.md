@@ -17,7 +17,7 @@ You can also run your own local testnet:
 
 ## Chain ids
 
-Some apps may need `network_id` and `chain_id`. [Here's](https://medium.com/@piyopiyo/list-of-ethereums-major-network-and-chain-ids-2bc58e928508) a list of values for major Ethereum networks.
+Some apps may need `network_id` and `chain_id`. Here's a [list of values for major Ethereum networks](https://medium.com/@piyopiyo/list-of-ethereums-major-network-and-chain-ids-2bc58e928508).
 
 ## Barge
 
