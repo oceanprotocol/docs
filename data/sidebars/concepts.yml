@@ -15,7 +15,7 @@
       link: /concepts/connect-to-networks/
     - title: Get ETH and OCEAN Tokens
       link: /concepts/get-ether-and-ocean-tokens/
-      
+
 - group: Specific Network Info
   items:
     - title: Ethereum Mainnet
@@ -44,4 +44,3 @@
       link: /concepts/legal-reqs/
     - title: Code of Conduct
       link: /concepts/code-of-conduct/
-
