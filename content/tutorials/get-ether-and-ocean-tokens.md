@@ -28,7 +28,7 @@ Other networks are test networks. The ETH and OCEAN tokens in each of these netw
 
 Ropsten has a faucet to dole out ETH, and another for OCEAN.
 
-- **ETH.** [Here's an ETH faucet](https://faucet.dimensions.network/) for Ropsten. You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
+- **ETH** [ETH faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
 
 - **OCEAN.** [Here's an OCEAN faucet](https://faucet.ropsten.oceanprotocol.com) for Rinkeby.
 
