@@ -22,7 +22,7 @@ Other networks are test networks. The ETH and OCEAN tokens in each of these netw
 
 - **ETH** [ETH faucet for Rinkeby](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
 
-- **OCEAN.** [Here's an OCEAN faucet](https://faucet.rinkeby.oceanprotocol.com) for Rinkeby.
+- **OCEAN** [OCEAN faucet for Rinkeby](https://faucet.rinkeby.oceanprotocol.com).
 
 ## Ropsten testnet
 
