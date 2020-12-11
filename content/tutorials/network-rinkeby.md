@@ -5,9 +5,7 @@ description: Details of Rinkeby deployment & services
 
 ## Smart Contracts
 
-Ocean contracts are deployed to Rinkeby network.
-
-[Here](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/rinkeby.md) are the addresses.
+Ocean contracts are deployed to Rinkeby network at &&[these addresses](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/rinkeby.md)**.
 
 ## Rinkeby-Related Services
 

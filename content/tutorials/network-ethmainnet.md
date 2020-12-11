@@ -5,9 +5,7 @@ description: Details of Ethereum deployment & services
 
 ## Smart Contracts
 
-Ocean contracts are deployed to Ethereum mainnet.
-
-[Here](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/mainnet.md) are the addresses.
+Ocean contracts are deployed to Ethereum mainnet at **[these addresses](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/mainnet.md)**.
 
 ## Mainnet-Related Services
 
