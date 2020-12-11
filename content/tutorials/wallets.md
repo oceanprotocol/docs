@@ -3,7 +3,7 @@ title: Wallet Basics
 description: 
 ---
 
-Ocean users need a wallet to manage their ETH and OCEAN tokens. 
+Ocean users need an ERC-20 compatible wallet to manage their ETH and OCEAN tokens. 
 
 ## Recommendations
 
