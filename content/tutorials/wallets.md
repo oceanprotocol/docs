@@ -7,15 +7,15 @@ Ocean users need an ERC-20 compatible wallet to manage their ETH and OCEAN token
 
 ## Recommendations
 
-- **Easiest:** Use MetaMask browser plug-in. _OR_
-- **Still easy, but more secure:** Get a Trezor or Ledger hardware wallet, and use MetaMask to interact with it.
+- **Easiest:** Use [MetaMask](https://metamask.io/) browser plug-in. _OR_
+- **Still easy, but more secure:** Get a [Trezor](https://trezor.io/) or [Ledger](https://www.ledger.com/) hardware wallet, and use MetaMask to interact with it.
 - The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com lists some other possible wallets.
 
 ## The Meaning of "Wallet"
 
 A wallet usually means "a thing that stores private keys (and maybe signs transactions)" (explained below). Examples include MetaMask, Trezor, and Ledger wallets.
 
-A wallet can sometimes mean (web3) _software_ for interacting with a thing that stores private keys. Examples include MetaMask, MyEtherWallet, and MyCrypto.
+A wallet can sometimes mean (web3) _software_ for interacting with a thing that stores private keys. Examples include MetaMask, [MyEtherWallet](https://www.myetherwallet.com/), and [MyCrypto](https://www.mycrypto.com/).
 
 Note how MetaMask is in both lists!
 
@@ -32,11 +32,3 @@ An account's Ether balance might be 7.1 ETH in the Ethereum Mainnet, 2.39 ETH in
 Each account has one **private key** and one **address**. The address can be calculated from the private key. You must keep the private key secret because it's what's needed to spend/transfer ETH and OCEAN (or to sign transactions of any kind). You can share the address with others. In fact, if you want someone to send some ETH or OCEAN to an account, you give them the account's address.
 
 Note that unlike traditional pocket wallets, crypto wallets don't actually store ETH or OCEAN. They store private keys.
-
-## Resources
-
-- Metamask: https://metamask.io/
-- Trezor: https://trezor.io/
-- Ledger: https://www.ledger.com/
-- MyEtherWallet: https://www.myetherwallet.com/
-- MyCrypto: https://www.mycrypto.com/
