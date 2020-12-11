@@ -25,7 +25,7 @@
       links:
         - name: Live
           url: https://market.oceanprotocol.com
-    - name: market-stats
+    - name: ocean-subgraph
     - name: market-purgatory
     - name: list-purgatory
 
