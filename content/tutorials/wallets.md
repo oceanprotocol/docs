@@ -7,7 +7,7 @@ Ocean users need an ERC-20 compatible wallet to manage their ETH and OCEAN token
 
 ## Recommendations
 
-- **Easiest:** Use [MetaMask](https://metamask.io/) browser plug-in. _OR_
+- **Easiest:** Use [MetaMask](https://metamask.io/) browser plug-in. 
 - **Still easy, but more secure:** Get a [Trezor](https://trezor.io/) or [Ledger](https://www.ledger.com/) hardware wallet, and use MetaMask to interact with it.
 - The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com lists some other possible wallets.
 
