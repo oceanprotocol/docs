@@ -15,7 +15,7 @@ Other networks are test networks. The ETH and OCEAN tokens in each of these netw
 
 - **ETH** [Exchanges to purchase ETH](https://www.coingecko.com/en/coins/ethereum#markets). 
 
-- **OCEAN.** [Here are exchanges](https://www.coingecko.com/en/coins/ocean-protocol#markets) to purchase OCEAN.
+- **OCEAN** [Official exchanges to purchase OCEAN](https://oceanprotocol.com/token#get).
 
 
 ## Rinkeby testnet
