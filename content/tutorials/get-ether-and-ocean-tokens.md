@@ -13,7 +13,7 @@ Other networks are test networks. The ETH and OCEAN tokens in each of these netw
 
 ## Ethereum mainnet
 
-- **ETH.** [Here are exchanges](https://www.coingecko.com/en/coins/ethereum#markets) to purchase ETH. 
+- **ETH** [Exchanges to purchase ETH](https://www.coingecko.com/en/coins/ethereum#markets). 
 
 - **OCEAN.** [Here are exchanges](https://www.coingecko.com/en/coins/ocean-protocol#markets) to purchase OCEAN.
 
