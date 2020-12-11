@@ -5,7 +5,7 @@ description: How to get tokens for each network
 
 ## Overview
 
-In each network, you'll need ETH and OCEAN: ETH to pay for gas, and OCEAN for certain Ocean actions.
+In each network, you'll need ETH to pay for gas, and OCEAN for certain Ocean actions.
 
 Ethereum mainnet is a network for production settings. Accordingly, ETH and OCEAN tokens have "real" value.
 
