@@ -11,7 +11,7 @@ Metamask and other ERC20 wallets default to Ethereum mainnet. Therefore your wal
 
 ## Connect to public testnets
 
-`Rinkeby` and `Ropsten` are prominent Ethereum test nets. Ocean is deployed to both.
+`Rinkeby` and `Ropsten` are prominent Ethereum testnets. Ocean is deployed to both.
 
 In MetaMask, click on the network name dropdown, then select `Rinkeby` or `Ropsten`. That's it.
 
