@@ -7,13 +7,13 @@ description:
 
 Ocean is deployed to these public networks:
 
-- [Ethereum mainnet](/tutorials/network-ethmainnet/) - production
-- [Rinkeby](/tutorials/network-rinkeby/) - testnet
-- [Ropsten](/tutorials/network-ropsten) - testnet
+- [Ethereum mainnet](/concepts/network-ethmainnet/) - production
+- [Rinkeby](/concepts/network-rinkeby/) - testnet
+- [Ropsten](/concepts/network-ropsten) - testnet
 
 You can also run your own local testnet:
 
-- [Ganache](/tutorials/network-local) - local testnet
+- [Ganache](/concepts/network-local) - local testnet
 
 ## Chain ids
 
