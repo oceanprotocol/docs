@@ -11,7 +11,9 @@ Almost all ERC-20 wallets require these values for adding a custom token:
 
 - Contract Address: `0x967da4048cD07aB37855c090aAF366e4ce1b9F48`
 - Symbol: `OCEAN`
-- Number of precision: `18`
+- Decimals: `18`
+
+The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com has further details.
 
 ## MetaMask
 

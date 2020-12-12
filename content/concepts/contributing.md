@@ -31,4 +31,4 @@ These docs can always be improved. Here's the repo.
 
 ### Other ways to get involved
 
-Please go to the [Ocean Community Page](www.oceanprotocol.com/community) for more ideas on how to get involved.
+Please go to the [Ocean Community Page](https://www.oceanprotocol.com/community) for more ideas on how to get involved.

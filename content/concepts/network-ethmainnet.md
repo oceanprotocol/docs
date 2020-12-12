@@ -1,9 +1,13 @@
 ---
-title: Network - Ethereum Mainnet
-description: Tools for development on Ethereum Mainnet
+title: Ethereum Mainnet
+description: Details of Ethereum deployment & services
 ---
 
-Ocean is deployed to Ethereum mainnet. This network is for your app's production deployment. Here are tools related to this deployment. [Here](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/mainnet.md) are the addresses of the deployed contracts.
+## Smart Contracts
+
+Ocean contracts are deployed to Ethereum mainnet at **[these addresses](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/mainnet.md)**.
+
+## Mainnet-Related Services
 
 | What                    | URL                                        |
 | ----------------------- | ------------------------------------------ |

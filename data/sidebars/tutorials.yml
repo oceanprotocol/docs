@@ -3,16 +3,14 @@
     - title: Introduction
       link: /tutorials/introduction/
 
-- group: Wallets & Ocean Protocol
+- group: Wallets
   items:
+    - title: Wallet Basics
+      link: /tutorials/wallets/
     - title: Set Up MetaMask Wallet
       link: /tutorials/metamask-setup/
     - title: Use Your Wallet to Manage OCEAN Tokens
       link: /tutorials/wallets-and-ocean-tokens/
-    - title: Get ETH and OCEAN Tokens
-      link: /tutorials/get-ether-and-ocean-tokens/
-    - title: Connect to Ocean-Related Networks
-      link: /tutorials/connect-to-networks/
 
 - group: Marketplaces
   items:

@@ -1,14 +1,16 @@
 ---
-title: Network - Local / Barge
-description: Tools for development on a local Ethereum network
+title: Ganache Local Testnet 
+description: Details of Ganache deployment & services
 ---
 
-You can deploy Ocean onto [Ganache](https://www.trufflesuite.com/ganache) - a local Ethereum "network" that you run on your machine for fast iterations while developing your app. You can easily do that with Barge.
+## Smart Contracts
 
-**Barge** is a shell script to help run Ocean components (Provider, Aquarius), which runs Ganache by default.
+[Ganache](https://www.trufflesuite.com/ganache) is a local Ethereum "network" that you run on your machine for fast iterations while developing your app. 
 
-<repo name="barge"></repo>
+The most straighforward case for local development is to use Ocean [Barge](https://www.github.com/oceanprotocol/barge). It runs Ganache in addition to Aquarius and Provider. 
 
-Barge launches Docker and Docker Compose, to run Ganache with Ocean smart contracts on top, along with Provider and Aquarius metadata cache. It's used extensively by the Ocean core devs (with Ganache or Rinkeby).
+Alternatively, you can run Ganache independently. Install it according to [the Ganache docs](https://www.trufflesuite.com/ganache). Then deploy Ocean contracts onto Ganache following [docs in Ocean contracts repo](https://www.github.com/oceanprotocol/contracts).
 
-The [Connect-to-Networks](/tutorials/connect-to-networks/) tutorial has more information about connecting your wallet / app to Ganache.
+Ganache is at the RPC URL [http://localhost:8545](http://localhost:8545).
+
+To connect from Metamask: in Metamask, connect to the network called "Localhost 8545". 

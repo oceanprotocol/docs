@@ -1,9 +1,0 @@
-- group: Marketplaces
-  items:
-    - title: Set Up a Marketplace
-      link: /setup/marketplace/
-
-- group: Compute-to-Data
-  items:
-    - title: Run a Compute-to-Data Environment
-      link: /setup/compute-to-data/

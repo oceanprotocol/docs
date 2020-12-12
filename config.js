@@ -30,8 +30,16 @@ module.exports = {
       to: '/references/introduction/'
     },
     {
-      from: '/tutorials/wallets/',
-      to: '/concepts/wallets/'
+      from: '/concepts/wallets/',
+      to: '/tutorials/wallets/'
+    },
+    {
+      from: '/tutorials/get-ether-and-ocean-tokens/',
+      to: '/concepts/get-ether-and-ocean-tokens/'
+    },
+    {
+      from: '/tutorials/connect-to-networks/',
+      to: '/concepts/connect-to-networks/'
     }
   ]
 }
