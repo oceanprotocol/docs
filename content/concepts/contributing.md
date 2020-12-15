@@ -29,6 +29,10 @@ To report a bug that isn't a vulnerability, go to the relevant GitHub repository
 These docs can always be improved. Here's the repo.
 <repo name="docs"></repo>
 
+### Apply for a developer job
+
+Really love building on Ocean and want to dive deeper? Consider joining us full time. Our openings are listed at https://github.com/oceanprotocol/devjobs.
+
 ### Other ways to get involved
 
 Please go to the [Ocean Community Page](https://www.oceanprotocol.com/community) for more ideas on how to get involved.
