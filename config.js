@@ -40,6 +40,10 @@ module.exports = {
     {
       from: '/tutorials/connect-to-networks/',
       to: '/concepts/connect-to-networks/'
+    },
+    {
+      from: '/setup/compute-to-data/',
+      to: '/tutorials/compute-to-data/'
     }
   ]
 }
