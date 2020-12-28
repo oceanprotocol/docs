@@ -30,7 +30,7 @@ Ropsten has a faucet to dole out ETH, and another for OCEAN.
 
 - **ETH** [ETH faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
 
-- **OCEAN** [OCEAN faucet for Rinkeby](https://faucet.ropsten.oceanprotocol.com).
+- **OCEAN** [OCEAN faucet for Ropsten](https://faucet.ropsten.oceanprotocol.com).
 
 ## Local network
 
