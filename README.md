@@ -2,7 +2,7 @@
 
 <h1 align="center">docs</h1>
 
-> 🐍 Ocean Protocol's official documentation. https://docs.oceanprotocol.com
+> 🐬 Ocean's documentation. https://docs.oceanprotocol.com
 
 [![Build Status](https://travis-ci.com/oceanprotocol/docs.svg?token=3psqw6c8KMDqfdGQ2x6d&branch=master)](https://travis-ci.com/oceanprotocol/docs)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d39837421591f0bc2550/maintainability)](https://codeclimate.com/github/oceanprotocol/docs/maintainability)
