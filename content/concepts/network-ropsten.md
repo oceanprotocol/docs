@@ -5,7 +5,7 @@ description: Details of Ropsten deployment & services
 
 ## Smart Contracts
 
-Ocean contracts are deployed to Ropsten network at **[these addresses](https://github.com/oceanprotocol/contracts/blob/master/docs/deployments/ropsten.md)**.
+Ocean contracts are deployed to Ropsten network at **[these addresses](https://github.com/oceanprotocol/contracts/blob/master/artifacts/address.json)**.
 
 ## Ropsten-Related Services
 
