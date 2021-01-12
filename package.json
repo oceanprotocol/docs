@@ -40,7 +40,7 @@
     "gatsby-remark-github": "^2.0.0",
     "gatsby-remark-images": "^3.9.0",
     "gatsby-remark-responsive-iframe": "^2.7.0",
-    "gatsby-remark-smartypants": "^2.6.0",
+    "gatsby-remark-smartypants": "^2.8.0",
     "gatsby-remark-vscode": "^3.2.0",
     "gatsby-source-filesystem": "^2.9.0",
     "gatsby-source-graphql": "^2.12.0",
