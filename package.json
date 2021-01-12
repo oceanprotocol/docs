@@ -29,7 +29,7 @@
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sass": "^2.7.0",
     "gatsby-plugin-sharp": "^2.12.0",
-    "gatsby-plugin-sitemap": "^2.8.0",
+    "gatsby-plugin-sitemap": "^2.10.0",
     "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-plugin-webpack-size": "^1.0.0",
     "gatsby-remark-autolink-headers": "^2.7.0",
