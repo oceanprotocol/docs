@@ -1,22 +1,27 @@
 ---
 title: Ways to Contribute
-description: Help develop Ocean core software, more
+description: Help to improve and develop Ocean core software.
 ---
 
-## Help develop Ocean core software
+## Core software
 
-We'd love to have you help contribute to the Ocean core software! Before you just start coding, please follow those basic guidelines:
+We'd love to have you help contribute to any repository within the `oceanprotocol` GitHub organization!
+
+Before you start coding right away, please follow those basic guidelines:
 
 - Search existing open and closed issues and PRs if you want to fix a bug or add a new feature to see if something is or has been already reported or worked on.
 - Before starting to add features, please open an issue first so it can be discussed.
+- Make yourself familiar with eventual repository-specific contribution requirements.
 - Because of the weird world of intellectual property, we need you to follow the [legal requirements](/concepts/legal-reqs/) for contributing code.
 - Be excellent to each other, as outlined in our [Contributor Code of Conduct](/concepts/code-of-conduct/).
 
-A typical code contribution would go as follows:
+### Workflow
+
+A typical code contribution in any Ocean Protocol repository would go as follows:
 
 1. As an external developer, fork the respective repo and push to your own fork. Ocean core developers push directly on the repo under `oceanprotocol` org.
 2. Work in feature branches, for naming use `feature/your-feature` or `feature/23` for new features and `fix/your-fix` or `fix/23` for bug fixes, referring to the issue number.
-3. If you want to get feedback as early as possible open your Pull Request as a `Draft`.
+3. To get visibility and feedback as early as possible open your Pull Request as a `Draft`.
 4. Give it a meaningful title, and at least link to the respective issue in the Pull Request description, like `closes #23`
 5. Once your Pull Request is ready, mark it as `Ready for Review`, in most repositories code owners are automatically notified and asked for review.
 6. Get all CI checks green and address eventual change requests.
