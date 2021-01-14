@@ -3,7 +3,17 @@ title: Ways to Contribute
 description: Help to improve and develop Ocean core software.
 ---
 
-## Core software
+## Report a bug
+
+To report a bug that isn't a vulnerability, go to the relevant GitHub repository, click on the Issues tab and select _Bug report_. Then follow the structure suggested in the issue template.
+
+To report a vulnerability, you may do so in a [less public manner](/concepts/vulnerabilities/).
+
+## Suggest a new feature
+
+Use the Issues section of each repository and select _Feature request_ to suggest and discuss any features you would like to see added.
+
+## Fix or improve core software
 
 We'd love to have you help contribute to any repository within the `oceanprotocol` GitHub organization!
 
@@ -29,21 +39,16 @@ A typical code contribution in any Ocean Protocol repository would go as follows
 
 Except for GitHub, you can find most Ocean Protocol core developers in [Discord](https://discord.gg/TnXjkR5) if you have further development questions.
 
-## Develop an app or integration, using Ocean as a tool
+## Develop an app or integration on top of Ocean Protocol
 
 Integrate Ocean at one of its interface points: React hooks, Javascript library, Python library, smart contracts, etc.
 
 Ocean documentation will help. And... you're here:)
 
-## Report a bug
-
-To report a vulnerability, [go here](/concepts/vulnerabilities/).
-
-To report a bug that isn't a vulnerability, go to the relevant GitHub repository, click on the Issues tab, click on the New issue button, and read the instructions.
-
 ## Improve these docs
 
-These docs can always be improved. Here's the repo.
+These docs can always be improved, every content page has an edit link at its end linking you to the content source on GitHub.
+
 <repo name="docs"></repo>
 
 ## Apply for a developer job
