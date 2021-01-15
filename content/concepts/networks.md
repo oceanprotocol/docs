@@ -13,12 +13,12 @@ The Ethereum Mainnet is Ocean’s production network.
 
 MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wallet is almost certainly pointing to Ethereum by default.
 
-#### Get Tokens
+### Get Tokens
 
 - ETH: [Exchanges to purchase](https://www.coingecko.com/en/coins/ethereum#markets)
 - OCEAN: [Official exchanges to purchase](https://oceanprotocol.com/token#get).
 
-#### Additional Components
+### Additional Components
 
 | What                    | URL                                        |
 | ----------------------- | ------------------------------------------ |
@@ -34,12 +34,12 @@ Ropsten is a test network.
 
 In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Ropsten_.
 
-#### Get Tokens
+### Get Tokens
 
 - ETH: [Faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
 - OCEAN: [Faucet for Ropsten](https://faucet.ropsten.oceanprotocol.com/)
 
-#### Additional Components
+### Additional Components
 
 | What                    | URL                                                                  |
 | ----------------------- | -------------------------------------------------------------------- |
@@ -55,12 +55,12 @@ Rinkeby is a test network.
 
 In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Rinkeby_.
 
-#### Get Tokens
+### Get Tokens
 
 - ETH: [Faucet for Rinkeby](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
 - OCEAN: [Faucet for Rinkeby](https://faucet.rinkeby.oceanprotocol.com/)
 
-#### Additional Components
+### Additional Components
 
 | What                    | URL                                                                  |
 | ----------------------- | -------------------------------------------------------------------- |
@@ -80,7 +80,7 @@ To connect to it from MetaMask, select the network called _Localhost 8545_.
 
 Alternatively, you can run Ganache independently. Install it according to [the Ganache docs](https://www.trufflesuite.com/ganache). Then deploy Ocean contracts onto Ganache following [docs in Ocean contracts repo](https://www.github.com/oceanprotocol/contracts). Ganache is at the RPC URL [http://localhost:8545](http://localhost:8545).
 
-#### Get Tokens
+### Get Tokens
 
 - ETH: By default, Ganache creates several Ethereum accounts at launch, gives each some ETH, and makes their private keys available in the logs. You can also instruct Ganache to give ETH to specific Ethereum addresses.
 - OCEAN: You can deploy an ERC20 token with label OCEAN. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.

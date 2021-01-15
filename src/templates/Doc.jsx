@@ -118,7 +118,7 @@ export const pageQuery = graphql`
   query DocBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      tableOfContents(maxDepth: 3)
+      tableOfContents(maxDepth: 2)
       html
       htmlAst
       frontmatter {
