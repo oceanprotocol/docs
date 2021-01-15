@@ -1,0 +1,90 @@
+---
+title: Supported Networks
+description: All the public networks the Ocean Protocol contracts are deployed to, and additional core components deployed to them.
+---
+
+Ocean Protocol contracts are deployed on multiple public Ethereum networks. You can always find the most up-to-date deployment addresses for all individual contracts in the [address.json](https://github.com/oceanprotocol/contracts/blob/master/artifacts/address.json) artifact.
+
+In each network, you’ll need ETH to pay for gas, and OCEAN for certain Ocean actions. Because the Ethereum mainnet is a network for production settings, ETH and OCEAN tokens have real value on there. The ETH and OCEAN tokens in each test network don’t have real value and are used for testing-purposes only. They can be obtained with _faucets_ to dole out ETH and OCEAN.
+
+## Mainnet
+
+The Ethereum Mainnet is Ocean’s production network.
+
+MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wallet is almost certainly pointing to Ethereum by default.
+
+#### Get Tokens
+
+- ETH: [Exchanges to purchase](https://www.coingecko.com/en/coins/ethereum#markets)
+- OCEAN: [Official exchanges to purchase](https://oceanprotocol.com/token#get).
+
+#### Additional Components
+
+| What                    | URL                                        |
+| ----------------------- | ------------------------------------------ |
+| Explorer                | https://etherscan.io/                      |
+| Ocean Market            | https://market.oceanprotocol.com           |
+| Ocean Market - Provider | https://provider.mainnet.oceanprotocol.com |
+| Ocean Market - Aquarius | https://aquarius.mainnet.oceanprotocol.com |
+| Ocean Subgraph          | https://subgraph.mainnet.oceanprotocol.com |
+
+## Ropsten
+
+Ropsten is a test network.
+
+In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Ropsten_.
+
+#### Get Tokens
+
+- ETH: [Faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
+- OCEAN: [Faucet for Ropsten](https://faucet.ropsten.oceanprotocol.com/)
+
+#### Additional Components
+
+| What                    | URL                                                                  |
+| ----------------------- | -------------------------------------------------------------------- |
+| Explorer                | https://ropsten.etherscan.io/                                        |
+| Ocean Market            | Point wallet to Ropsten network, at https://market.oceanprotocol.com |
+| Ocean Market - Provider | https://provider.ropsten.oceanprotocol.com                           |
+| Ocean Market - Aquarius | https://aquarius.ropsten.oceanprotocol.com                           |
+| Ocean Subgraph          | https://subgraph.ropsten.oceanprotocol.com                           |
+
+## Rinkeby
+
+Rinkeby is a test network.
+
+In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Rinkeby_.
+
+#### Get Tokens
+
+- ETH: [Faucet for Rinkeby](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
+- OCEAN: [Faucet for Rinkeby](https://faucet.rinkeby.oceanprotocol.com/)
+
+#### Additional Components
+
+| What                    | URL                                                                  |
+| ----------------------- | -------------------------------------------------------------------- |
+| Explorer                | https://rinkeby.etherscan.io/                                        |
+| Ocean Market            | Point wallet to Rinkeby network, at https://market.oceanprotocol.com |
+| Ocean Market - Provider | https://provider.rinkeby.oceanprotocol.com                           |
+| Ocean Market - Aquarius | https://aquarius.rinkeby.oceanprotocol.com                           |
+| Ocean Subgraph          | https://subgraph.rinkeby.oceanprotocol.com                           |
+
+## Local
+
+The most straightforward way for local-only development is to use [Barge](https://www.github.com/oceanprotocol/barge), which runs [Ganache](https://www.trufflesuite.com/ganache), Aquarius, and Provider. It is used extensively by the Ocean core devs (with Ganache or Rinkeby) and for automated integration testing.
+
+<repo name="barge"></repo>
+
+To connect to it from MetaMask, select the network called _Localhost 8545_.
+
+Alternatively, you can run Ganache independently. Install it according to [the Ganache docs](https://www.trufflesuite.com/ganache). Then deploy Ocean contracts onto Ganache following [docs in Ocean contracts repo](https://www.github.com/oceanprotocol/contracts). Ganache is at the RPC URL [http://localhost:8545](http://localhost:8545).
+
+#### Get Tokens
+
+- ETH: By default, Ganache creates several Ethereum accounts at launch, gives each some ETH, and makes their private keys available in the logs. You can also instruct Ganache to give ETH to specific Ethereum addresses.
+- OCEAN: You can deploy an ERC20 token with label OCEAN. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
+
+## Chain IDs
+
+Some apps may need `network_id` and `chain_id`. Here's a [list of values for major Ethereum networks](https://medium.com/@piyopiyo/list-of-ethereums-major-network-and-chain-ids-2bc58e928508).
