@@ -44,6 +44,30 @@ module.exports = {
     {
       from: '/setup/compute-to-data/',
       to: '/tutorials/compute-to-data/'
+    },
+    {
+      from: '/concepts/networks-overview/',
+      to: '/concepts/networks/'
+    },
+    {
+      from: '/concepts/network-ethmainnet/',
+      to: '/concepts/networks/'
+    },
+    {
+      from: '/concepts/network-rinkeby/',
+      to: '/concepts/networks/'
+    },
+    {
+      from: '/concepts/network-ropsten/',
+      to: '/concepts/networks/'
+    },
+    {
+      from: '/concepts/network-local/',
+      to: '/concepts/networks/'
+    },
+    {
+      from: '/concepts/connect-to-networks/',
+      to: '/concepts/networks/'
     }
   ]
 }
