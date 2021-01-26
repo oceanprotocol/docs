@@ -1,20 +1,20 @@
 {
-    "parser": "babel-eslint",
-    "extends": [
-        "oceanprotocol",
-        "oceanprotocol/react",
-        "plugin:prettier/recommended",
-        "prettier/react",
-        "prettier/standard"
-    ],
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": "error"
-    },
-    "env": { "browser": true },
-    "settings": {
-        "react": {
-            "version": "16.8"
-        }
+  "parser": "babel-eslint",
+  "extends": [
+    "oceanprotocol",
+    "oceanprotocol/react",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "env": { "browser": true, "es6": true, "node": true },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  }
 }
