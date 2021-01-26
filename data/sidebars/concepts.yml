@@ -8,6 +8,8 @@
       link: /concepts/architecture/
     - title: Supported Networks
       link: /concepts/networks/
+    - title: Projects using Ocean
+      link: /concepts/projects-using-ocean/
 
 - group: Compute-to-Data
   items:
