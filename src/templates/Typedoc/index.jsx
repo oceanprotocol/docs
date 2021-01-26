@@ -8,12 +8,14 @@ import HeaderSection from '../../components/HeaderSection'
 import Sidebar from '../../components/Sidebar'
 import DocHeader from '../../components/DocHeader'
 import Seo from '../../components/Seo'
-import { cleanTypedocData } from './utils'
+// import { cleanTypedocData } from './utils'
 
 import Entities from './Entities'
 import Toc from './Toc'
 
 import stylesDoc from '../Doc.module.scss'
+
+import typedocSpecMock from '../../../ocean.js.json'
 
 export default class TypedocTemplate extends Component {
   static propTypes = {
@@ -21,11 +23,6 @@ export default class TypedocTemplate extends Component {
     location: PropTypes.object.isRequired,
     pageContext: PropTypes.object.isRequired
   }
-
-  typedocCleaned = cleanTypedocData(
-    this.props.pageContext.typedoc,
-    this.props.pageContext.classes
-  )
 
   // output section title as defined in sections.yml
   sectionTitle = this.props.data.allSectionsYaml.edges.map(({ node }) => {
@@ -37,8 +34,8 @@ export default class TypedocTemplate extends Component {
 
   render() {
     const { location, pageContext } = this.props
-    const { typedoc } = pageContext
-    const { info } = typedoc
+    // const { typedoc } = pageContext
+    const { info } = typedocSpecMock
     const { title, description, version, sourceUrl } = info
 
     return (
@@ -66,7 +63,7 @@ export default class TypedocTemplate extends Component {
                   sidebar="references"
                   collapsed
                   toc
-                  tocComponent={<Toc data={this.typedocCleaned} />}
+                  tocComponent={<Toc data={typedocSpecMock.children} />}
                 />
               </aside>
               <article className={stylesDoc.main}>
@@ -77,7 +74,7 @@ export default class TypedocTemplate extends Component {
                 />
 
                 <Entities
-                  entities={this.typedocCleaned}
+                  entities={typedocSpecMock.children}
                   sourceUrl={sourceUrl}
                 />
               </article>

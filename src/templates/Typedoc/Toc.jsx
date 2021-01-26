@@ -4,7 +4,7 @@ import slugify from 'slugify'
 import shortid from 'shortid'
 import Scrollspy from 'react-scrollspy'
 import Scroll from '../../components/Scroll'
-import { filterByKindOfProperty } from './utils'
+// import { filterByKindOfProperty } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
 export default class Toc extends PureComponent {
@@ -14,13 +14,13 @@ export default class Toc extends PureComponent {
 
   subItems = (children, parentName) =>
     children &&
-    children.filter(filterByKindOfProperty).map(({ name, decorators }) => {
+    children.map(({ name, decorators }) => {
       const deprecation = (decorators || []).filter(
         ({ name }) => name === 'deprecated'
       )[0] // Assuming deprecated annotation
 
       return (
-        <li key={shortid.generate()}>
+        <li key={name}>
           <Scroll
             type="id"
             element={`${parentName}-${name && slugify(name)}`}
@@ -39,7 +39,7 @@ export default class Toc extends PureComponent {
 
     subIds.push(
       children &&
-        children.filter(filterByKindOfProperty).map(({ name }) => {
+        children.map(({ name }) => {
           return `${parentName}-${name && slugify(name)}`
         })
     )

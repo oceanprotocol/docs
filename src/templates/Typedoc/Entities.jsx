@@ -201,7 +201,7 @@ PropertyWrapper.propTypes = {
 
 const Entities = ({ entities, sourceUrl }) =>
   entities.map(({ name, comment, children }) => (
-    <div key={shortid.generate()} id={name && slugify(name)}>
+    <div key={name} id={name && slugify(name)}>
       <h2 className={styles.entityName}>
         <code>{name}</code>
       </h2>
