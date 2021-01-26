@@ -13,8 +13,7 @@
     "lint:md": "markdownlint './**/*.{md,markdown}' --ignore './{node_modules,external,public,.cache}/**/*'",
     "lint:yml": "prettier '**/*.{yml,yaml}' --list-different",
     "lint": "run-p --continue-on-error lint:js lint:md lint:yml",
-    "test": "npm run lint",
-    "deploy": "./scripts/deploy.sh"
+    "test": "npm run lint"
   },
   "dependencies": {
     "@oceanprotocol/art": "^3.0.0",
