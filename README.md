@@ -4,11 +4,10 @@
 
 > 🐬 Ocean Protocol documentation. https://docs.oceanprotocol.com
 
-[![Build Status](https://travis-ci.com/oceanprotocol/docs.svg?token=3psqw6c8KMDqfdGQ2x6d&branch=master)](https://travis-ci.com/oceanprotocol/docs)
+[![Build Status](https://github.com/oceanprotocol/docs/workflows/CI/badge.svg)](https://github.com/oceanprotocol/docs/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d39837421591f0bc2550/maintainability)](https://codeclimate.com/github/oceanprotocol/docs/maintainability)
 [![js oceanprotocol](https://img.shields.io/badge/js-oceanprotocol-7b1173.svg)](https://github.com/oceanprotocol/eslint-config-oceanprotocol)
 [![css bigchaindb](https://img.shields.io/badge/css-bigchaindb-39BA91.svg)](https://github.com/bigchaindb/stylelint-config-bigchaindb)
-[![Greenkeeper badge](https://badges.greenkeeper.io/oceanprotocol/docs.svg?token=2757ede2de02f4679c4dfc6597a331a26f2f206fed53bfeb708c64cbe3d5f55f&ts=1541590505792)](https://greenkeeper.io/)
 
 ---
 
@@ -22,7 +21,8 @@
 - [Development](#development)
 - [Linting & Formatting](#linting--formatting)
   - [Editor Setup: VS Code](#editor-setup-vs-code)
-- [Deployment](#deployment)
+- [⬆️ Deployment](#️-deployment)
+  - [Manual Deployment](#manual-deployment)
 - [License](#license)
 
 ## Content
@@ -41,7 +41,7 @@ The site is a React app built with [Gatsby](https://www.gatsbyjs.org), pulling i
 To start, clone this repo and set your `GITHUB_TOKEN` (see [GitHub GraphQL API](docs/github.md#GitHub-GraphQL-API)):
 
 ```bash
-git clone --recurse-submodules git@github.com:oceanprotocol/docs.git
+git clone git@github.com:oceanprotocol/docs.git
 cd docs/
 
 # add GITHUB_TOKEN
@@ -93,26 +93,26 @@ If you use VS Code as your editor, you can install those extensions to get linti
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-## Deployment
+## ⬆️ Deployment
 
-Automatic deployments are triggered upon successful tests & builds on Travis:
+Every branch or Pull Request is automatically deployed by [Vercel](https://vercel.com) with their GitHub integration. A link to a deployment will appear under each Pull Request.
 
-- push to `main` initiates a live deployment
-  → [docs.oceanprotocol.com](https://docs.oceanprotocol.com)
-- any Pull Request, and subsequent pushes to it, initiates a beta deployment
-  → [betadocs.oceanprotocol.com](https://betadocs.oceanprotocol.com)
+The latest deployment of the `main` branch is automatically aliased to `oceanprotocol.com`.
 
-The deploy command simply calls the [`scripts/deploy.sh`](scripts/deploy.sh) script, syncing the contents of the `public/` folder to S3:
+### Manual Deployment
+
+If needed, app can be deployed manually. Make sure to switch to Ocean Protocol org before deploying:
 
 ```bash
-npm run deploy
+# first run
+vercel login
+vercel switch
+
+# deploy
+vercel
+# switch alias to new deployment
+vercel alias
 ```
-
-Requires authorization against AWS with [one of the various ways](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html), on Travis this is done with those environment variables:
-
-- `AWS_ACCESS_KEY_ID`
-- `AWS_SECRET_ACCESS_KEY`
-- `AWS_DEFAULT_REGION`
 
 ## License
 
