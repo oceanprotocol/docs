@@ -3,6 +3,8 @@ title: Projects using Ocean Protocol
 description: These are live projects that leverage core functionality of Ocean, such as reading or writing on Ocean datatokens or data pools. They don't rely on Ocean Market for an interface, by either having their own GUI or CLI, or using another app.
 ---
 
+> You can add to this list by submitting a Pull Request via the _Edit_ link at the bottom of this document, following our [outlined contribution workflow](https://github.com/oceanprotocol/docs/blob/main/docs/content.md#editing-docs).
+>
 > A project being listed on this page should not be seen as a "stamp of approval" by Ocean Protocol Foundation.
 
 ## Using the Ocean Protocol stack
