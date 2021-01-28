@@ -5,7 +5,6 @@ module.exports = {
   siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
   siteIcon: 'node_modules/@oceanprotocol/art/logo/favicon-black.png',
   siteCompany: 'Ocean Protocol Foundation Ltd.',
-  analyticsId: 'UA-60614729-11',
   social: {
     Site: 'https://oceanprotocol.com',
     Blog: 'https://blog.oceanprotocol.com',
