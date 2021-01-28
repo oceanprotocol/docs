@@ -15,9 +15,9 @@ In Ocean, marketplaces and publishers are different roles. A common setup is for
 
 Here are some approaches:
 
-- Fork [Ocean Market](/references/market/) code
-- Build from [Ocean React hooks](/references/react/).
-- Build up from [ocean.js](/references/ocean.js/) or [ocean.py](https://github.com/oceanprotocol/ocean.py) drivers
+- Fork [Ocean Market](https://github.com/oceanprotocol/market) code.
+- Build from [Ocean React hooks](https://github.com/oceanprotocol/react).
+- Build up from [ocean.js](https://github.com/oceanprotocol/ocean.js) or [ocean.py](https://github.com/oceanprotocol/ocean.py) drivers.
 
 ## Prepare Some Initial Data Assets
 
