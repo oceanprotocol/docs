@@ -8,14 +8,11 @@ import HeaderSection from '../../components/HeaderSection'
 import Sidebar from '../../components/Sidebar'
 import DocHeader from '../../components/DocHeader'
 import Seo from '../../components/Seo'
-// import { cleanTypedocData } from './utils'
 
 import Entities from './Entities'
 import Toc from './Toc'
 
 import stylesDoc from '../Doc.module.scss'
-
-import typedocSpecMock from '../../../ocean.js.json'
 
 export default class TypedocTemplate extends Component {
   static propTypes = {
@@ -34,9 +31,8 @@ export default class TypedocTemplate extends Component {
 
   render() {
     const { location, pageContext } = this.props
-    // const { typedoc } = pageContext
-    const { info } = typedocSpecMock
-    const { title, description, version, sourceUrl } = info
+    const { typedoc } = pageContext
+    const { title, description, version, sourceUrl } = typedoc.info
 
     return (
       <>
@@ -63,7 +59,7 @@ export default class TypedocTemplate extends Component {
                   sidebar="references"
                   collapsed
                   toc
-                  tocComponent={<Toc data={typedocSpecMock.children} />}
+                  tocComponent={<Toc data={typedoc.children} />}
                 />
               </aside>
               <article className={stylesDoc.main}>
@@ -73,10 +69,7 @@ export default class TypedocTemplate extends Component {
                   prepend={<span className={stylesDoc.version}>{version}</span>}
                 />
 
-                <Entities
-                  entities={typedocSpecMock.children}
-                  sourceUrl={sourceUrl}
-                />
+                <Entities entities={typedoc.children} sourceUrl={sourceUrl} />
               </article>
             </main>
           </Content>

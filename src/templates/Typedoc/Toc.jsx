@@ -4,7 +4,6 @@ import slugify from 'slugify'
 import shortid from 'shortid'
 import Scrollspy from 'react-scrollspy'
 import Scroll from '../../components/Scroll'
-// import { filterByKindOfProperty } from './utils'
 import stylesSidebar from '../../components/Sidebar.module.scss'
 
 export default class Toc extends PureComponent {

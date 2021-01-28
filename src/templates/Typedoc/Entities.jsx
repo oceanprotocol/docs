@@ -4,7 +4,6 @@ import slugify from 'slugify'
 import shortid from 'shortid'
 import Scroll from '../../components/Scroll'
 import styles from './Entities.module.scss'
-import { filterByKindOfProperty } from './utils'
 
 const Type = ({ type }) => {
   let isArray = false
@@ -213,16 +212,14 @@ const Entities = ({ entities, sourceUrl }) =>
       )}
 
       {children &&
-        children
-          .filter(filterByKindOfProperty)
-          .map((property) => (
-            <PropertyWrapper
-              key={shortid.generate()}
-              property={property}
-              sourceUrl={sourceUrl}
-              parentAnchor={name && slugify(name)}
-            />
-          ))}
+        children.map((property) => (
+          <PropertyWrapper
+            key={shortid.generate()}
+            property={property}
+            sourceUrl={sourceUrl}
+            parentAnchor={name && slugify(name)}
+          />
+        ))}
     </div>
   ))
 

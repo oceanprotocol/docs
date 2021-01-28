@@ -145,7 +145,8 @@ exports.createPages = ({ graphql, actions }) => {
 //
 const createTypeDocPage = async (createPage, name, downloadUrl) => {
   try {
-    const typedoc = await fetch(downloadUrl)
+    const typedoc = require('./ocean.js.json')
+    // const typedoc = await fetch(downloadUrl)
     const typedocTemplate = path.resolve('./src/templates/Typedoc/index.jsx')
     const slug = `/references/${name}/`
 
@@ -154,7 +155,8 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
       component: typedocTemplate,
       context: {
         slug,
-        typedoc: await typedoc.json()
+        typedoc
+        // typedoc: await typedoc.json()
       }
     })
   } catch (error) {
