@@ -342,11 +342,11 @@ You can also add an image with a link to the video like this:
 
 ```html
 <a
-  href="http://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No"
+  href="https://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No"
   target="_blank"
 >
   <img
-    src="http://img.youtube.com/vi/6YRmyUZr2No/0.jpg"
+    src="https://img.youtube.com/vi/6YRmyUZr2No/0.jpg"
     alt="IMAGE ALT TEXT HERE"
     width="240"
     height="180"
@@ -355,12 +355,12 @@ You can also add an image with a link to the video like this:
 </a>
 ```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No" target="_blank"><img src="http://img.youtube.com/vi/6YRmyUZr2No/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=6YRmyUZr2No" target="_blank"><img src="https://img.youtube.com/vi/6YRmyUZr2No/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 Or, in pure Markdown, but losing the image sizing and border:
 
 ```markdown
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
 
 ## GitHub Repository Component
