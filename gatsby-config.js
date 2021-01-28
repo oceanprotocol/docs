@@ -150,16 +150,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-webpack-size',
-    'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.analyticsId,
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-        cookieDomain: 'oceanprotocol.com'
-      }
-    }
+    'gatsby-plugin-offline'
   ]
 }
