@@ -5,6 +5,7 @@
 > 🐬 Ocean Protocol documentation. https://docs.oceanprotocol.com
 
 [![Build Status](https://github.com/oceanprotocol/docs/workflows/CI/badge.svg)](https://github.com/oceanprotocol/docs/actions)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/218e617e-45da-47ab-8f2a-bcfedf80550f/deploy-status)](https://app.netlify.com/sites/docs-oceanprotocol/deploys)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d39837421591f0bc2550/maintainability)](https://codeclimate.com/github/oceanprotocol/docs/maintainability)
 [![js oceanprotocol](https://img.shields.io/badge/js-oceanprotocol-7b1173.svg)](https://github.com/oceanprotocol/eslint-config-oceanprotocol)
 [![css bigchaindb](https://img.shields.io/badge/css-bigchaindb-39BA91.svg)](https://github.com/bigchaindb/stylelint-config-bigchaindb)
@@ -22,7 +23,6 @@
 - [Linting & Formatting](#linting--formatting)
   - [Editor Setup: VS Code](#editor-setup-vs-code)
 - [⬆️ Deployment](#️-deployment)
-  - [Manual Deployment](#manual-deployment)
 - [License](#license)
 
 ## Content
@@ -95,24 +95,9 @@ If you use VS Code as your editor, you can install those extensions to get linti
 
 ## ⬆️ Deployment
 
-Every branch or Pull Request is automatically deployed by [Vercel](https://vercel.com) with their GitHub integration. A link to a deployment will appear under each Pull Request.
+Every branch or Pull Request is automatically deployed by [Netlify](https://netlify.com) with their GitHub integration. A link to a preview deployment will appear under each Pull Request.
 
-The latest deployment of the `main` branch is automatically aliased to `oceanprotocol.com`.
-
-### Manual Deployment
-
-If needed, app can be deployed manually. Make sure to switch to Ocean Protocol org before deploying:
-
-```bash
-# first run
-vercel login
-vercel switch
-
-# deploy
-vercel
-# switch alias to new deployment
-vercel alias
-```
+The latest deployment of the `main` branch is automatically aliased to `docs.oceanprotocol.com`.
 
 ## License
 
