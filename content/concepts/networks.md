@@ -17,6 +17,7 @@ MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wal
 
 - ETH: [Exchanges to purchase](https://www.coingecko.com/en/coins/ethereum#markets)
 - OCEAN: [Official exchanges to purchase](https://oceanprotocol.com/token#get).
+  - Token address: `0x967da4048cD07aB37855c090aAF366e4ce1b9F48`
 
 **Additional Components**
 
@@ -38,6 +39,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 - ETH: [Faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
 - OCEAN: [Faucet for Ropsten](https://faucet.ropsten.oceanprotocol.com/)
+  - Token address: `0x8967BCF84170c91B0d24D4302C2376283b0B3a07`
 
 **Additional Components**
 
@@ -59,6 +61,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 - ETH: [Faucet for Rinkeby](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
 - OCEAN: [Faucet for Rinkeby](https://faucet.rinkeby.oceanprotocol.com/)
+  - Token address: `0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9`
 
 **Additional Components**
 
@@ -83,7 +86,7 @@ Alternatively, you can run Ganache independently. Install it according to [the G
 **Get Tokens**
 
 - ETH: By default, Ganache creates several Ethereum accounts at launch, gives each some ETH, and makes their private keys available in the logs. You can also instruct Ganache to give ETH to specific Ethereum addresses.
-- OCEAN: You can deploy an ERC20 token with label OCEAN. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
+- OCEAN: You can deploy an ERC20 token with label OCEAN. At a minimum, the token needs to be ERC20Detailed and ERC20Capped. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
 
 ## Chain IDs
 
