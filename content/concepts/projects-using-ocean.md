@@ -7,6 +7,8 @@ description: These are live projects that leverage core functionality of Ocean, 
 >
 > A project being listed on this page should not be seen as a "stamp of approval" by Ocean Protocol Foundation.
 
+Projects we directly work with can be found on our [Collaborators page](https://oceanprotocol.com/collaborators).
+
 ## Using the Ocean Protocol stack
 
 These are live projects that leverage core functionality of Ocean, such as reading or writing on Ocean datatokens or data pools. They don't rely on Ocean Market for an interface, by either having their own GUI or CLI, or using another app.
