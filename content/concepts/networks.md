@@ -39,7 +39,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 - ETH: [Faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
 - OCEAN: [Faucet for Ropsten](https://faucet.ropsten.oceanprotocol.com/)
-  - Token address: `0x8967BCF84170c91B0d24D4302C2376283b0B3a07`
+  - Token address: `0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9`
 
 **Additional Components**
 
@@ -61,7 +61,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 - ETH: [Faucet for Rinkeby](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
 - OCEAN: [Faucet for Rinkeby](https://faucet.rinkeby.oceanprotocol.com/)
-  - Token address: `0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9`
+  - Token address: `0x8967BCF84170c91B0d24D4302C2376283b0B3a07`
 
 **Additional Components**
 
