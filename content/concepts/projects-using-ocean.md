@@ -1,6 +1,6 @@
 ---
 title: Projects using Ocean Protocol
-description: These are live projects that leverage core functionality of Ocean, use Ocean Market, or use OCEAN token with staking and the like.
+description: These are live projects that leverage core functionality of Ocean, use Ocean Market, or use OCEAN with staking and the like.
 ---
 
 > You can add to this list by submitting a Pull Request via the _Edit_ link at the bottom of this document, following our [outlined contribution workflow](https://github.com/oceanprotocol/docs/blob/main/docs/content.md#editing-docs).
@@ -48,7 +48,7 @@ These are live projects that leverage core functionality of Ocean, such as readi
 
 ## Using OCEAN
 
-These projects use just OCEAN token, but do more than just exchanging it. This includes staking, and liquidity mining opportunities.
+These projects use just OCEAN, but do more than just exchanging it. This includes staking, and liquidity mining opportunities.
 
 | Name                                         | Description                                                                                                                      | Launch Date | Link                                                                                                                  |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------- |
