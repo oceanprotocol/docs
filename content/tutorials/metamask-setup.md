@@ -11,19 +11,25 @@ description: Tutorial about how to set up MetaMask for Chrome.
 
    ![metamask-chrome-store](images/metamask-chrome-extension.png)
 
-2. Install MetaMask. It will get added as a browser extension in the top right corner of your browser. Read through and accept the terms and conditions. Create a username and password in the next step.
+- Install MetaMask. The wallet provides a friendly user interface that will help you through each step. MetaMask gives you two options: importing an existing wallet or creating a new one. Choose to `Create a Wallet`:
 
-   ![tandc-metamask](images/metamask-create-username-password.png)
+   ![Create a wallet](images/create-new-metamask-wallet.png)
 
-3. MetaMask will generate a secret backup phrase for you. Write it down, store it in a safe place, and click next.
+- In the next step create a new password for your wallet. Read through and accept the terms and conditions. After that, MetaMask will generate Secret Backup Phrase for you. Write it down and store it in a safe place.
 
-   ![backup](images/metamask-secret-passcode.png)
+   ![Secret Backup Phrase](images/secret-backup-phrase.png)
 
-4. Confirm your secret backup phrase and finish your MetaMask wallet setup.
+- Continue forward. On the next page, MetaMask will ask you to confirm the backup phrase. Select the words in the correct sequence:
 
-   ![setup-final-metamask](images/metamask_view-account-options.png)
+   ![Confirm secret backup phrase](images/confirm-backup-phrase.png)
+   
+- Voila! Your account is now created. You can access MetaMask via the browser extension in the top right corner of your browser. 
 
-5. Voila! Your account is now created. You can now manage Ether and Ocean Tokens with your wallet. You can copy your account address to clipboard from the options. When you want someone to send Ether or Ocean Tokens to you, you will have to give them that address. It's not a secret.
+   ![MetaMask browser extension](images/metamask-browser-extension.png)
+
+- You can now manage Ether and Ocean Tokens with your wallet. You can copy your account address to the clipboard from the options. When you want someone to send Ether or Ocean Tokens to you, you will have to give them that address. It's not a secret.
+
+   ![Manage tokens](images/manage-tokens.png)
 
 You can also watch our [tutorial video snippets](https://www.youtube.com/playlist?list=PL_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help setting up MetaMask.
 
