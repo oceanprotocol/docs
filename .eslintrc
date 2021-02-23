@@ -3,9 +3,7 @@
   "extends": [
     "oceanprotocol",
     "oceanprotocol/react",
-    "plugin:prettier/recommended",
-    "prettier/react",
-    "prettier/standard"
+    "plugin:prettier/recommended"
   ],
   "plugins": ["prettier"],
   "rules": {
