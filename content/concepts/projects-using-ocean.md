@@ -45,6 +45,7 @@ These are live projects that leverage core functionality of Ocean, such as readi
 | [DataUnion.App](https://dataunion.app)       | Data union for annotating images             | [Image & Annotation Vault](https://market.oceanprotocol.com/asset/did:op:7Bce67697eD2858d0683c631DdE7Af823b7eea38)       |
 | [Swash](https://swashapp.io)                 | Data union of browser data                   | [Consumer Browsing Data](https://market.oceanprotocol.com/asset/did:op:b07a8bb80242752ce164560ABCb6517DA90a4F65)         |
 | [Tapmydata](https://tapmydata.com)           | Datasets of who's trying to access your data | [TAP subject access requests](https://market.oceanprotocol.com/asset/did:op:ED6FB9010Fd283aF2f2700f13A7f24E027f1CEf3)    |
+| [Evotegra](https://www.evotegra.de/)           | Artificial Intelligence for automotive and industry applications | [German Traffic Dataset](https://market.oceanprotocol.com/asset/did:op:2a76F680279CE629a9F5E601BDa7246e06F226f0)    |
 
 ## Using OCEAN
 
