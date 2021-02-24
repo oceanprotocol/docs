@@ -3,11 +3,18 @@ title: Polygon (ex Matic)
 description: 
 ---
 
+
+## Links
+
+- [Matic Wallet](https://wallet.matic.network)
+- [Matic Bridge](https://wallet.matic.network/bridge)
+- [How to set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network)
+
 ## Intro to Polygon's Bridge
 
 The Polygon Network (ex Matic) provide us with a bridge (connecting Ethereum & Polygon blockchains), and a dedicated [wallet](https://wallet.matic.network) that simplify the steps of transferring digital assets between the two networks. The wallet connects to your account via Metamask (or any of the other supported wallets). 
 
-When you open the link, the wallet will ask to log in. Select your preferred way of connecting and confirm the action. In our guide we'll use Metamask.
+When you open the wallet link, the wallet will ask to log in. Select your preferred way of connecting and confirm the action. In our guide we'll use Metamask.
 
 ![Login options](images/login-options.png)
 
@@ -33,18 +40,20 @@ The withdrawing tokens process uses the same bridge interface. The only differen
 
 Again the bridge interface will guide you through the different steps. 
 
-For more in dept explanation of the deposit and withdraw actions check this [link](vhttps://docs.matic.network/docs/develop/ethereum-matic/pos/getting-started)
+For more in dept explanation of the deposit and withdraw actions check [the official Polygon (ex Matic) docs](vhttps://docs.matic.network/docs/develop/ethereum-matic/pos/getting-started).
 
 ## Sending Tokens
 
 While in the first two cases, the transactions are signed on the Ethereum Mainnet, transferring tokens between two Matic addresses happens on the Matic Mainnet. Thus it’s required for you to connect to the Matic network to sign the transactions. You can use the following parameters to set the network in Metamask:
 
-- Network Name: `Matic Mainnet`
-- RPC: `https://rpc-mainnet.maticvigil.com/`
-- Chain Id: `137`
-- Currency Symbol: `MATIC`
-- Block Explorer URL: `https://explorer.matic.network/`
+| What               | Value                                 |
+|--------------------|---------------------------------------|
+| Network Name       | `Matic Mainnet`                       |
+| RPC                | `https://rpc-mainnet.maticvigil.com/` |
+| Chain Id           | `137`                                 |
+| Currency Symbol    | `MATIC`                               |
+| Block Explorer URL | `https://explorer.matic.network/`     |
 
-For a guide how to setup a custom (or external) network in Metamask follow the steps [here](/tutorials/metamask-setup/#set-up-custom-network).
+Follow our guide to learn how to use those values to [set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network).
 
 To send tokens to another Matic address use the `Send` button.

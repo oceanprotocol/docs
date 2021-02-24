@@ -35,14 +35,15 @@ The Polygon Mainnet is another of the Ocean's production networks.
 
 Polygon is an external network that you might not find as a predefined one inside your wallet. Thus you'll need to connect to it manually using the information below:
 
-- Network Name: `Matic Mainnet`
-- RPC: `https://rpc-mainnet.maticvigil.com/`
-- Chain Id: `137`
-- Currency Symbol: `MATIC`
-- Block Explorer URL: `https://explorer.matic.network/`
+| What               | Value                                 |
+|--------------------|---------------------------------------|
+| Network Name       | `Matic Mainnet`                       |
+| RPC                | `https://rpc-mainnet.maticvigil.com/` |
+| Chain Id           | `137`                                 |
+| Currency Symbol    | `MATIC`                               |
+| Block Explorer URL | `https://explorer.matic.network/`     |
   
-For a guide on how to connect to an external network in MetaMask check this [link](/tutorials/metamask-setup/#set-up-custom-network).
-
+Follow our guide to learn how to use those values to [set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network).
 
 **Get Tokens**
 
@@ -62,7 +63,7 @@ For a guide on how to connect to an external network in MetaMask check this [lin
 
 **Bridge**
 
-For a detailed guide on how to use the Polygon bridge to deposit, withdraw and send tokens please visit this [link](/tutorials/polygon-bridge/)
+Check our [Polygon Bridge guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
 
 ## Ropsten
 
