@@ -46,13 +46,13 @@ For more in dept explanation of the deposit and withdraw actions check [the offi
 
 While in the first two cases, the transactions are signed on the Ethereum Mainnet, transferring tokens between two Matic addresses happens on the Matic Mainnet. Thus it’s required for you to connect to the Matic network to sign the transactions. You can use the following parameters to set the network in Metamask:
 
-| What               | Value                                 |
-|--------------------|---------------------------------------|
-| Network Name       | `Matic Mainnet`                       |
-| RPC                | `https://rpc-mainnet.maticvigil.com/` |
-| Chain Id           | `137`                                 |
-| Currency Symbol    | `MATIC`                               |
-| Block Explorer URL | `https://explorer.matic.network/`     |
+| What               | Value                                    |
+|--------------------|------------------------------------------|
+| Network Name       | `Matic Mainnet`                          |
+| RPC                | `https://rpc.polygon.oceanprotocol.com/` |
+| Chain Id           | `137`                                    |
+| Currency Symbol    | `MATIC`                                  |
+| Block Explorer URL | `https://explorer.matic.network/`        |
 
 Follow our guide to learn how to use those values to [set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network).
 

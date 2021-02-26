@@ -35,13 +35,13 @@ The Polygon Mainnet is another of the Ocean's production networks.
 
 Polygon is an external network that you might not find as a predefined one inside your wallet. Thus you'll need to connect to it manually using the information below:
 
-| What               | Value                                 |
-|--------------------|---------------------------------------|
-| Network Name       | `Matic Mainnet`                       |
-| RPC                | `https://rpc-mainnet.maticvigil.com/` |
-| Chain Id           | `137`                                 |
-| Currency Symbol    | `MATIC`                               |
-| Block Explorer URL | `https://explorer.matic.network/`     |
+| What               | Value                                    |
+|--------------------|------------------------------------------|
+| Network Name       | `Matic Mainnet`                          |
+| RPC                | `https://rpc.polygon.oceanprotocol.com/` |
+| Chain Id           | `137`                                    |
+| Currency Symbol    | `MATIC`                                  |
+| Block Explorer URL | `https://explorer.matic.network/`        |
   
 Follow our guide to learn how to use those values to [set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network).
 
