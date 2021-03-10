@@ -55,5 +55,3 @@ While in the first two cases, the transactions are signed on the Ethereum Mainne
 | Block Explorer URL | `https://explorer.matic.network/`        |
 
 Follow our guide to learn how to use those values to [set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network).
-
-To send tokens to another Matic address use the `Send` button.
