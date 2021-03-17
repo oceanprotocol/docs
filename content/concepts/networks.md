@@ -3,11 +3,11 @@ title: Supported Networks
 description: All the public networks the Ocean Protocol contracts are deployed to, and additional core components deployed to them.
 ---
 
-Ocean Protocol contracts are deployed on multiple public Ethereum networks. You can always find the most up-to-date deployment addresses for all individual contracts in the [address.json](https://github.com/oceanprotocol/contracts/blob/master/artifacts/address.json) artifact.
+Ocean Protocol contracts are deployed on multiple public networks. You can always find the most up-to-date deployment addresses for all individual contracts in the [address.json](https://github.com/oceanprotocol/contracts/blob/master/artifacts/address.json) artifact.
 
 In each network, you’ll need ETH to pay for gas, and OCEAN for certain Ocean actions. Because the Ethereum mainnet is a network for production settings, ETH and OCEAN tokens have real value on there. The ETH and OCEAN tokens in each test network don’t have real value and are used for testing-purposes only. They can be obtained with _faucets_ to dole out ETH and OCEAN.
 
-## Mainnet
+## Ethereum Mainnet
 
 The Ethereum Mainnet is Ocean’s production network.
 
@@ -28,6 +28,42 @@ MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wal
 | Provider     | `https://provider.mainnet.oceanprotocol.com` |
 | Aquarius     | `https://aquarius.mainnet.oceanprotocol.com` |
 | Subgraph     | `https://subgraph.mainnet.oceanprotocol.com` |
+
+## Polygon (ex Matic) Mainnet
+
+The Polygon Mainnet is another of the Ocean's production networks.
+
+Polygon is an external network that you might not find as a predefined one inside your wallet. Thus you'll need to connect to it manually using the information below:
+
+| What               | Value                                    |
+|--------------------|------------------------------------------|
+| Network Name       | `Matic Mainnet`                          |
+| RPC                | `https://rpc.polygon.oceanprotocol.com/` |
+| Chain Id           | `137`                                    |
+| Currency Symbol    | `MATIC`                                  |
+| Block Explorer URL | `https://explorer.matic.network/`        |
+  
+Follow our guide to learn how to use those values to [set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network).
+
+**Get Tokens**
+
+- Polygon (MATIC): [Exchanges to purchase](https://www.coingecko.com/en/coins/polygon#markets)
+- OCEAN:
+  - Token address: `0x282d8efCe846A88B159800bd4130ad77443Fa1A1`
+
+**Additional Components**
+
+| What         | URL                                                                   |
+|--------------|-----------------------------------------------------------------------|
+| Explorer     | `https://explorer-mainnet.maticvigil.com`                             |
+| Ocean Market | Point wallet to Polygon network, at `https://market.oceanprotocol.com`|
+| Provider     | `https://provider.polygon.oceanprotocol.com`                          |
+| Aquarius     | `https://aquarius.polygon.oceanprotocol.com`                          |
+| Subgraph     | `https://subgraph.polygon.oceanprotocol.com`                          |
+
+**Bridge**
+
+Check our [Polygon Bridge guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
 
 ## Ropsten
 
