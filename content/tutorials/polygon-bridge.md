@@ -40,7 +40,7 @@ The withdrawing tokens process uses the same bridge interface. The only differen
 
 Again the bridge interface will guide you through the different steps. 
 
-For more in dept explanation of the deposit and withdraw actions check [the official Polygon (ex Matic) docs](vhttps://docs.matic.network/docs/develop/ethereum-matic/pos/getting-started).
+For more in dept explanation of the deposit and withdraw actions check [the official Polygon (ex Matic) docs](https://docs.matic.network/docs/develop/ethereum-matic/pos/getting-started).
 
 ## Sending Tokens
 
