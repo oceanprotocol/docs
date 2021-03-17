@@ -20,7 +20,7 @@ When you open the wallet link, the wallet will ask to log in. Select your prefer
 
 In some places, the Polygon Network is still using its old brand Matic. Either you run into Matic or Polygon - it's the exact same thing. For the purpose of this guide, we'll use Matic in the next few paragraphs since the interfaces you're going to use still use the old brand.
 
-For details and answers to some of the commonly asked questions check the [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47).
+For details check the [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47).
 
 ## Deposit Tokens
 
