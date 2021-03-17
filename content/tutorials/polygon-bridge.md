@@ -20,6 +20,8 @@ When you open the wallet link, the wallet will ask to log in. Select your prefer
 
 In some places, the Polygon Network is still using its old brand Matic. Either you run into Matic or Polygon - it's the exact same thing. For the purpose of this guide, we'll use Matic in the next few paragraphs since the interfaces you're going to use still use the old brand.
 
+For details check the [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47).
+
 ## Deposit Tokens
 
 On the main page of the wallet, you can see all tokens you own on the Matic Mainnet. To deposit tokens (transfer them from the Ethereum Mainnet) you can either use the “deposit” button for a selected token or use “Move funds to Matic Mainnet”. 

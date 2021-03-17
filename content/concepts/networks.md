@@ -29,7 +29,7 @@ MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wal
 | Aquarius     | `https://aquarius.mainnet.oceanprotocol.com` |
 | Subgraph     | `https://subgraph.mainnet.oceanprotocol.com` |
 
-## Polygon (ex Matic) Mainnet
+## Polygon Mainnet
 
 The Polygon Mainnet is another of the Ocean's production networks.
 
