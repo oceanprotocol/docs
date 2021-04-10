@@ -152,26 +152,15 @@ exports.createPages = ({ graphql, actions }) => {
         // console.log("Query result:", JSON.stringify(result))
         const markdowns = result.data.allRepoMarkdown.edges
         const prefix = '/read-the-docs'
-        let oceanPyList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/oceanpy/'))
+        let oceanPyList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/ocean-py/'))
         let aquariusList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/aquarius/'))
         let providerList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/provider/'))
-        // const docMarkdownTemplate = path.resolve('./src/templates/DocMarkdown.jsx')
-        // oceanPyList.forEach((post) => {
-        //   createPage({
-        //     path: `${post.node.fields.slug}`,
-        //     component: docMarkdownTemplate,
-        //     context: {
-        //       slug: post.node.fields.slug,
-        //       section: post.node.fields.section
-        //     }
-        //   })
-        // })
 
 
-        // console.log("OceanpyList:", JSON.stringify(oceanPyList))
-        // console.log("aquariusList:", JSON.stringify(aquariusList))
-        // console.log("providerList:", JSON.stringify(providerList))
         await createOceanPyPage(createPage, 'oceanpy', oceanPyList)
+        await createOceanPyPage(createPage, 'aquarius', aquariusList)
+        await createOceanPyPage(createPage, 'provider', providerList)
+
 
         resolve()
       })
@@ -315,7 +304,7 @@ const createOceanPyPage = async (createPage, name, list)=>{
 
 
 const createMarkdownPage = async (createPage, element)=>{
-  console.log("element", JSON.stringify(element.node.frontmatter))
+  // console.log("element", JSON.stringify(element.node.frontmatter))
   const markdownTemplate = path.resolve('./src/templates/MarkdownTemplate.jsx')
   createPage({
     path: element.node.frontmatter.slug,
