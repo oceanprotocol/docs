@@ -58,6 +58,21 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
 
+            allRepoMarkdown: allMarkdownRemark (
+                filter: { fileAbsolutePath: { regex: "/markdowns/" } }
+              ) {
+                edges {
+                  node {
+                    id
+                    html
+                    frontmatter {
+                      slug
+                      title
+                    }
+                  }
+                }
+              }
+
             oceanJs: github {
               repository(name: "ocean.js", owner: "oceanprotocol") {
                 name
@@ -92,7 +107,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         const docTemplate = path.resolve('./src/templates/Doc.jsx')
         const posts = result.data.allMarkdownRemark.edges
-
+        
         //
         // Create Doc pages
         //
@@ -133,6 +148,30 @@ exports.createPages = ({ graphql, actions }) => {
 
           console.log('Create redirect: ' + from + ' --> ' + to)
         })
+
+        // console.log("Query result:", JSON.stringify(result))
+        const markdowns = result.data.allRepoMarkdown.edges
+        const prefix = '/read-the-docs'
+        let oceanPyList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/oceanpy/'))
+        let aquariusList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/aquarius/'))
+        let providerList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/provider/'))
+        // const docMarkdownTemplate = path.resolve('./src/templates/DocMarkdown.jsx')
+        // oceanPyList.forEach((post) => {
+        //   createPage({
+        //     path: `${post.node.fields.slug}`,
+        //     component: docMarkdownTemplate,
+        //     context: {
+        //       slug: post.node.fields.slug,
+        //       section: post.node.fields.section
+        //     }
+        //   })
+        // })
+
+
+        // console.log("OceanpyList:", JSON.stringify(oceanPyList))
+        // console.log("aquariusList:", JSON.stringify(aquariusList))
+        // console.log("providerList:", JSON.stringify(providerList))
+        await createOceanPyPage(createPage, 'oceanpy', oceanPyList)
 
         resolve()
       })
@@ -255,4 +294,31 @@ const createSwaggerPages = async (createPage) => {
   } catch (error) {
     console.error(error.message)
   }
+}
+
+const createOceanPyPage = async (createPage, name, list)=>{
+  const markdownListTemplate = path.resolve('./src/templates/MarkdownList.jsx')
+  createPage({
+    path: `/read-the-docs/${name}`,
+    component: markdownListTemplate,
+    context: {
+      markdownList: list,
+      name: name
+    }
+  })
+
+  list.forEach((element)=>{
+    createMarkdownPage(createPage, element)
+  })
+
+}
+
+
+const createMarkdownPage = async (createPage, element)=>{
+  console.log("element", JSON.stringify(element.node.frontmatter))
+  const markdownTemplate = path.resolve('./src/templates/MarkdownTemplate.jsx')
+  createPage({
+    path: element.node.frontmatter.slug,
+    component: markdownTemplate
+  })
 }

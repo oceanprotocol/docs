@@ -150,6 +150,14 @@ module.exports = {
       }
     },
     'gatsby-plugin-webpack-size',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/markdowns`,
+        name: `markdowns`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ]
 }
