@@ -157,9 +157,9 @@ exports.createPages = ({ graphql, actions }) => {
         let providerList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/provider/'))
 
 
-        await createOceanPyPage(createPage, 'oceanpy', oceanPyList)
-        await createOceanPyPage(createPage, 'aquarius', aquariusList)
-        await createOceanPyPage(createPage, 'provider', providerList)
+        await createReadTheDocsPage(createPage, 'oceanpy', oceanPyList)
+        await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
+        await createReadTheDocsPage(createPage, 'provider', providerList)
 
 
         resolve()
@@ -285,7 +285,7 @@ const createSwaggerPages = async (createPage) => {
   }
 }
 
-const createOceanPyPage = async (createPage, name, list)=>{
+const createReadTheDocsPage = async (createPage, name, list)=>{
   const markdownListTemplate = path.resolve('./src/templates/MarkdownList.jsx')
   createPage({
     path: `/read-the-docs/${name}`,
