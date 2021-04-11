@@ -39,12 +39,14 @@ export default function MarkdownList({pageContext}) {
         <main className={styles.wrapper}>
         <aside className={styles.sidebar}>
         <ul>
-        {Object.keys(sub_sections).map((ele, sub_section_index)=>{return<li key={sub_section_index}>
-         <div onClick={()=>changeSubsection(sub_section_index)}>{ele}</div> 
+        {Object.keys(sub_sections).map((ele, sub_section_index)=>{
+          return selectedSubSection === sub_section_index?
+          (<li key={sub_section_index}>
+         <div onClick={()=>changeSubsection(sub_section_index)}>{ele.replaceAll('_', ' ')}</div> 
         <ul>
-          {sub_sections[ele].map((node)=><li key={node.id} onClick={()=>changePage(sub_section_index, node)}>{node.frontmatter.title}</li>)}
+          {sub_sections[ele].map((node)=><li key={node.id} onClick={()=>changePage(sub_section_index, node)}>{node.frontmatter.title.replaceAll('_', ' ')}</li>)}
         </ul>
-        </li>})}
+        </li>): <li><div onClick={()=>changeSubsection(sub_section_index)}>{ele.replaceAll('_', ' ')}</div></li> })}
         </ul>
         </aside>
         <article className={stylesDoc.main}>
