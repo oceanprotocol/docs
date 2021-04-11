@@ -65,9 +65,12 @@ exports.createPages = ({ graphql, actions }) => {
                   node {
                     id
                     html
+                    htmlAst
+                    tableOfContents
                     frontmatter {
                       slug
                       title
+                      section
                     }
                   }
                 }
@@ -157,7 +160,7 @@ exports.createPages = ({ graphql, actions }) => {
         let providerList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/provider/'))
 
 
-        await createReadTheDocsPage(createPage, 'oceanpy', oceanPyList)
+        await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
 
