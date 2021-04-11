@@ -71,6 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
                       slug
                       title
                       section
+                      sub_section
                     }
                   }
                 }

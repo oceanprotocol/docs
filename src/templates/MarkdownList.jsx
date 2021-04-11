@@ -8,11 +8,30 @@ import MarkdownTemplate from './MarkdownTemplate'
 import stylesDoc from '../templates/Doc.module.scss'
 
 export default function MarkdownList({pageContext}) {
-  const [elem, setElem] = useState(0);
-  const changePage= (index)=>{
-    console.log("Onclickj")
-    setElem(index)
+
+  const sub_sections =  {}
+  pageContext.markdownList.map(({node}, index) => {
+    if(!sub_sections[node.frontmatter.sub_section]){
+      sub_sections[node.frontmatter.sub_section] = []
+    }
+    sub_sections[node.frontmatter.sub_section].push(node)
+  })
+
+  const [selectedSubSection, setSelectedSubSection] = useState(0);
+  const [elem, setElem] = useState(sub_sections[Object.keys(sub_sections)[selectedSubSection]][0]);
+
+
+  const changePage = (sub_section_index, node)=>{
+    setElem(node)
+    setSelectedSubSection(sub_section_index)
   };
+
+  const changeSubsection = (index)=>{
+    setSelectedSubSection(index)
+    setElem(sub_sections[Object.keys(sub_sections)[index]][0])
+
+  };
+
   return (
     <Layout>
         <HeaderSection title={pageContext.name} />
@@ -20,13 +39,16 @@ export default function MarkdownList({pageContext}) {
         <main className={styles.wrapper}>
         <aside className={styles.sidebar}>
         <ul>
-         {pageContext.markdownList.map(({node}, index)=><li onClick={()=>changePage(index)} key={node.id}>
-           {node.frontmatter.title}</li>)}
+        {Object.keys(sub_sections).map((ele, sub_section_index)=>{return<li key={sub_section_index}>
+         <div onClick={()=>changeSubsection(sub_section_index)}>{ele}</div> 
+        <ul>
+          {sub_sections[ele].map((node)=><li key={node.id} onClick={()=>changePage(sub_section_index, node)}>{node.frontmatter.title}</li>)}
+        </ul>
+        </li>})}
         </ul>
         </aside>
-        {/* <MarkdownTemplate path={pageContext.markdownList[0]}></MarkdownTemplate> */}
         <article className={stylesDoc.main}>
-          <MarkdownTemplate data={pageContext.markdownList[elem].node}></MarkdownTemplate>
+          <MarkdownTemplate data={elem}></MarkdownTemplate>
         </article>
         </main>
         </Content>
