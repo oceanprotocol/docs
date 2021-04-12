@@ -58,24 +58,24 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
 
-            allRepoMarkdown: allMarkdownRemark (
-                filter: { fileAbsolutePath: { regex: "/markdowns/" } }
-              ) {
-                edges {
-                  node {
-                    id
-                    html
-                    htmlAst
-                    tableOfContents
-                    frontmatter {
-                      slug
-                      title
-                      section
-                      sub_section
-                    }
+            allRepoMarkdown: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/markdowns/" } }
+            ) {
+              edges {
+                node {
+                  id
+                  html
+                  htmlAst
+                  tableOfContents
+                  frontmatter {
+                    slug
+                    title
+                    section
+                    sub_section
                   }
                 }
               }
+            }
 
             oceanJs: github {
               repository(name: "ocean.js", owner: "oceanprotocol") {
@@ -111,7 +111,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         const docTemplate = path.resolve('./src/templates/Doc.jsx')
         const posts = result.data.allMarkdownRemark.edges
-        
+
         //
         // Create Doc pages
         //
@@ -156,15 +156,19 @@ exports.createPages = ({ graphql, actions }) => {
         // console.log("Query result:", JSON.stringify(result))
         const markdowns = result.data.allRepoMarkdown.edges
         const prefix = '/read-the-docs'
-        let oceanPyList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/ocean-py/'))
-        let aquariusList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/aquarius/'))
-        let providerList = markdowns.filter(({node}) => node.frontmatter.slug.startsWith(prefix + '/provider/'))
-
+        const oceanPyList = filterMarkdownList(markdowns, prefix + '/ocean-py/')
+        const aquariusList = filterMarkdownList(
+          markdowns,
+          prefix + '/aquarius/'
+        )
+        const providerList = filterMarkdownList(
+          markdowns,
+          prefix + '/provider/'
+        )
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
-
 
         resolve()
       })
@@ -289,7 +293,7 @@ const createSwaggerPages = async (createPage) => {
   }
 }
 
-const createReadTheDocsPage = async (createPage, name, list)=>{
+const createReadTheDocsPage = async (createPage, name, list) => {
   const markdownListTemplate = path.resolve('./src/templates/MarkdownList.jsx')
   createPage({
     path: `/read-the-docs/${name}`,
@@ -300,18 +304,22 @@ const createReadTheDocsPage = async (createPage, name, list)=>{
     }
   })
 
-  list.forEach((element)=>{
+  list.forEach((element) => {
     createMarkdownPage(createPage, element)
   })
-
 }
 
-
-const createMarkdownPage = async (createPage, element)=>{
+const createMarkdownPage = async (createPage, element) => {
   // console.log("element", JSON.stringify(element.node.frontmatter))
   const markdownTemplate = path.resolve('./src/templates/MarkdownTemplate.jsx')
   createPage({
     path: element.node.frontmatter.slug,
     component: markdownTemplate
   })
+}
+
+const filterMarkdownList = (markdownList, string) => {
+  return markdownList.filter(({ node }) =>
+    node.frontmatter.slug.startsWith(string)
+  )
 }

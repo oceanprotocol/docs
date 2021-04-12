@@ -1,23 +1,18 @@
-import { graphql } from 'gatsby'
 import React from 'react'
-import DocToc from '../components/DocToc'
-import DocHeader from '../components/DocHeader'
 import DocContent from '../components/DocContent'
-import Layout from '../components/Layout'
-import HeaderSection from '../components/HeaderSection'
 import Content from '../components/Content'
 
-export default function MarkdownTemplate({data}) {
+export default function MarkdownTemplate({ data }) {
   const post = data
   return (
     <>
-        {/* <div dangerouslySetInnerHTML={{__html:post.html}}></div> */}
-        {/* <DocHeader title={post.frontmatter.title}/> */}
-        {/* <HeaderSection title={post.frontmatter.title} />
+      {/* <div dangerouslySetInnerHTML={{__html:post.html}}></div> */}
+      {/* <DocHeader title={post.frontmatter.title}/> */}
+      {/* <HeaderSection title={post.frontmatter.title} />
         {post.tableOfContents && <DocToc tableOfContents={post.tableOfContents} />}*/}
-        <Content>
+      <Content>
         <DocContent html={post.html} htmlAst={post.htmlAst} />
-        </Content> 
+      </Content>
     </>
   )
 }
@@ -45,4 +40,3 @@ export default function MarkdownTemplate({data}) {
 //     }
 //   }
 //`
-
