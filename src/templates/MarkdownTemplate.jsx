@@ -11,7 +11,11 @@ export default function MarkdownTemplate({ data }) {
       {/* <HeaderSection title={post.frontmatter.title} />
         {post.tableOfContents && <DocToc tableOfContents={post.tableOfContents} />}*/}
       <Content>
-        <DocContent html={post.html} htmlAst={post.htmlAst} />
+        {post && post.html ? (
+          <DocContent html={post.html} htmlAst={post.htmlAst} />
+        ) : (
+          <div>No content present</div>
+        )}
       </Content>
     </>
   )
