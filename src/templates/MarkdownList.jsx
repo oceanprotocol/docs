@@ -40,7 +40,7 @@ export default function MarkdownList({ pageContext }) {
                 return selectedSubSection === subSectionIndex ? (
                   <li key={subSectionIndex}>
                     <div onClick={() => changeSubsection(subSectionIndex)}>
-                      {ele.replaceAll('_', ' ')}
+                      {ele.replace(/_/g, ' ')}
                     </div>
                     <ul>
                       {sub_sections[ele].map((node) => (
@@ -48,7 +48,7 @@ export default function MarkdownList({ pageContext }) {
                           key={node.id}
                           onClick={() => changePage(subSectionIndex, node)}
                         >
-                          {node.frontmatter.title.replaceAll('_', ' ')}
+                          {node.frontmatter.title.replace(/_/g, ' ')}
                         </li>
                       ))}
                     </ul>
@@ -56,7 +56,7 @@ export default function MarkdownList({ pageContext }) {
                 ) : (
                   <li>
                     <div onClick={() => changeSubsection(subSectionIndex)}>
-                      {ele.replaceAll('_', ' ')}
+                      {ele.replace(/_/g, ' ')}
                     </div>
                   </li>
                 )
