@@ -6,10 +6,6 @@ export default function MarkdownTemplate({ data }) {
   const post = data
   return (
     <>
-      {/* <div dangerouslySetInnerHTML={{__html:post.html}}></div> */}
-      {/* <DocHeader title={post.frontmatter.title}/> */}
-      {/* <HeaderSection title={post.frontmatter.title} />
-        {post.tableOfContents && <DocToc tableOfContents={post.tableOfContents} />}*/}
       <Content>
         {post && post.html ? (
           <DocContent html={post.html} htmlAst={post.htmlAst} />
@@ -43,4 +39,4 @@ export default function MarkdownTemplate({ data }) {
 //       }
 //     }
 //   }
-//`
+// `

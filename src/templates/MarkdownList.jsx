@@ -6,17 +6,17 @@ import styles from '../templates/Doc.module.scss'
 import MarkdownTemplate from './MarkdownTemplate'
 
 export default function MarkdownList({ pageContext }) {
-  const sub_sections = {}
+  const subSections = {}
   pageContext.markdownList.map(({ node }) => {
-    if (!sub_sections[node.frontmatter.sub_section]) {
-      sub_sections[node.frontmatter.sub_section] = []
+    if (!subSections[node.frontmatter.sub_section]) {
+      subSections[node.frontmatter.sub_section] = []
     }
-    sub_sections[node.frontmatter.sub_section].push(node)
+    subSections[node.frontmatter.sub_section].push(node)
   })
 
   const [selectedSubSection, setSelectedSubSection] = useState(0)
   const [elem, setElem] = useState(
-    sub_sections[Object.keys(sub_sections)[selectedSubSection]][0]
+    subSections[Object.keys(subSections)[selectedSubSection]][0]
   )
 
   const changePage = (subSectionIndex, node) => {
@@ -26,7 +26,7 @@ export default function MarkdownList({ pageContext }) {
 
   const changeSubsection = (index) => {
     setSelectedSubSection(index)
-    setElem(sub_sections[Object.keys(sub_sections)[index]][0])
+    setElem(subSections[Object.keys(subSections)[index]][0])
   }
 
   return (
@@ -36,28 +36,40 @@ export default function MarkdownList({ pageContext }) {
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
             <ul>
-              {Object.keys(sub_sections).map((ele, subSectionIndex) => {
+              {Object.keys(subSections).map((ele, subSectionIndex) => {
                 return selectedSubSection === subSectionIndex ? (
                   <li key={subSectionIndex}>
-                    <div onClick={() => changeSubsection(subSectionIndex)}>
+                    <a
+                      style={{ cursor: 'pointer', color: 'black' }}
+                      onClick={() => changeSubsection(subSectionIndex)}
+                    >
                       {ele.replace(/_/g, ' ')}
-                    </div>
+                    </a>
                     <ul>
-                      {sub_sections[ele].map((node) => (
+                      {subSections[ele].map((node) => (
                         <li
                           key={node.id}
                           onClick={() => changePage(subSectionIndex, node)}
                         >
-                          {node.frontmatter.title.replace(/_/g, ' ')}
+                          <a
+                            style={{
+                              cursor: 'pointer'
+                            }}
+                          >
+                            {node.frontmatter.title.replace(/_/g, ' ')}
+                          </a>
                         </li>
                       ))}
                     </ul>
                   </li>
                 ) : (
                   <li>
-                    <div onClick={() => changeSubsection(subSectionIndex)}>
+                    <a
+                      onClick={() => changeSubsection(subSectionIndex)}
+                      style={{ cursor: 'pointer', color: '#8b98a9' }}
+                    >
                       {ele.replace(/_/g, ' ')}
-                    </div>
+                    </a>
                   </li>
                 )
               })}
