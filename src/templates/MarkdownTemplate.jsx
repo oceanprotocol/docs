@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import DocContent from '../components/DocContent'
 import Content from '../components/Content'
 
@@ -17,26 +18,6 @@ export default function MarkdownTemplate({ data }) {
   )
 }
 
-// export const postQuery = graphql`
-//   query BlogPostByPath($path: String!) {
-//     markdownRemark(frontmatter: { slug: { eq: $path } }) {
-//       html
-//       htmlAst
-//       tableOfContents
-//       frontmatter {
-//         slug
-//         title
-//         section
-//       }
-//       ...PageFooter
-//     }
-//   }
-//   fragment PageFooter on MarkdownRemark {
-//     parent {
-//       ... on File {
-//         relativePath
-//         sourceInstanceName
-//       }
-//     }
-//   }
-// `
+MarkdownTemplate.propTypes = {
+  data: PropTypes.object.isRequired
+}
