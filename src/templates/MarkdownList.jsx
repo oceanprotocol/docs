@@ -65,7 +65,7 @@ export default function MarkdownList({ pageContext }) {
                                   cursor: 'pointer'
                                 }}
                               >
-                                {node.frontmatter.title.replace(/_/g, ' ')}
+                                a {node.frontmatter.title.replace(/_/g, ' ')}
                               </a>
                             </li>
                           ))}
@@ -89,7 +89,7 @@ export default function MarkdownList({ pageContext }) {
             </nav>
           </aside>
           <article className={styles.main}>
-            <MarkdownTemplate data={elem}></MarkdownTemplate>
+            <MarkdownTemplate data={elem} />
           </article>
         </main>
       </Content>
