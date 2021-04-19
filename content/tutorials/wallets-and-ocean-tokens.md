@@ -27,7 +27,7 @@ Almost all ERC-20 wallets require these values for adding a custom token:
 - Symbol: `OCEAN`
 - Decimals: `18`
 
-**Polygon Mainnet(previously Matic)**
+**Polygon Mainnet (previously Matic)**
 
 - Contract Address: `0x282d8efCe846A88B159800bd4130ad77443Fa1A1`
 - Symbol: `mOCEAN`
