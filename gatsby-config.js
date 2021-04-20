@@ -154,11 +154,15 @@ module.exports = {
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `repo-read-the-docs`,
+        name: 'repo-read-the-docs',
         remote: `https://github.com/oceanprotocol/readthedocs.git`,
         local: 'markdowns/',
         branch: 'gatsby',
-        patterns: 'markdowns/**'
+        patterns: [
+          'markdowns/ocean-py',
+          'markdowns/aquarius',
+          'markdowns/provider'
+        ]
       }
     },
     {
