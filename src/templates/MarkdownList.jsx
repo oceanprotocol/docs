@@ -35,6 +35,11 @@ export default function MarkdownList({ pageContext }) {
     <Layout>
       <HeaderSection title={pageContext.name} />
       <Content>
+        <div style={{ color: '#ff8c00' }}>
+          <span>&#9888;</span>
+          This documentation is a work in progess. Please feel free to report
+          any issues.
+        </div>
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
             <nav className={sidebarStyles.sidebar}>
