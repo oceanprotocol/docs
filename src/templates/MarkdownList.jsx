@@ -65,7 +65,7 @@ export default function MarkdownList({ pageContext }) {
                                   cursor: 'pointer'
                                 }}
                               >
-                                a {node.frontmatter.title.replace(/_/g, ' ')}
+                                {node.frontmatter.title.replace(/_/g, ' ')}
                               </a>
                             </li>
                           ))}
