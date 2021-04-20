@@ -26,6 +26,8 @@
   items:
     - title: Run a Compute-to-Data Environment
       link: /tutorials/compute-to-data/
+    - title: Writing C2D Algorithms
+      link: /tutorials/write-c2d-algorithms/
 
 - group: Storage Setup
   items:
