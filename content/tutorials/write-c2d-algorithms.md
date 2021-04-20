@@ -1,9 +1,9 @@
 ---
 title: Writing C2D Algorithms
-description: Writing C2D Algorithms
+description: 
 ---
 
-## Overwiew
+## Overview
 
 An C2D algorithm is composed of the following:
 
