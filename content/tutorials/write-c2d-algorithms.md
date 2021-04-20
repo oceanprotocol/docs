@@ -6,13 +6,14 @@ description: Writing C2D Algorithms
 ## Overwiew
 
 An C2D algorithm is composed of the following:
+
  - a docker image (base image)
  - an algorithm code
  - a entry point
 
 That's why, while creating the algorithm asset in ocean, we need the additional object "algorithm" defined in the metadata service:
 
-```
+```json
 "algorithm": {
             "container": {
               "entrypoint": "node $ALGO",
@@ -21,14 +22,18 @@ That's why, while creating the algorithm asset in ocean, we need the additional 
             }
           }
 ```
+
 Most important attributes are the following:
+
   - image: this is the docker image that your are going to use
   - tag: this is the docker image tag that you are going to use
   - entrypoint: this is the entrypoint. $ALGO is a macro that gets replaced inside C2D, depending where your algo code is downloaded
 
 Here are some examples:
+
 - to run a JS algo, based on node 14:
-    ```
+
+    ```json
     "algorithm": {
             "container": {
               "entrypoint": "node $ALGO",
@@ -37,8 +42,10 @@ Here are some examples:
             }
           }
     ```
+
 - to run a python algo, based on python:3.9.4-alpine3.13:
-    ```
+
+    ```json
     "algorithm": {
             "container": {
               "entrypoint": "python3.9 $ALGO",
@@ -67,11 +74,12 @@ All algorithm output (such as print, console.log, etc) are going to be stored in
 
 
 For every algorithm pod, C2D is going to provide the following ENVs:
+
  - DIDS:  this is an array containing the input datasets
  - TRANSFORMATION_DID:  this is the algorithm did
 
 
-# Sample Algorithms
+## Sample Algorithms
 
 ## JS example
 
@@ -114,7 +122,8 @@ processfolder(input_folder)
 ```
 
 To run this, use the following container object:
-```
+
+```json
 "algorithm": {
     "container": {
         "entrypoint": "node $ALGO",
@@ -194,7 +203,8 @@ if __name__ == '__main__':
 ```
 
 To run this, use the following container object:
-```
+
+```json
 "algorithm": {
             "container": {
                 "entrypoint": "python3.6 $ALGO",
