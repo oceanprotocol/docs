@@ -7,7 +7,7 @@ description:
 
 An C2D algorithm is composed of the following:
 
- - a docker image (base image)
+ - a docker image (base image + tag)
  - an algorithm code
  - a entry point
 
