@@ -71,6 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                     title
                     section
+                    module
                     sub_section
                   }
                 }
@@ -153,18 +154,10 @@ exports.createPages = ({ graphql, actions }) => {
           console.log('Create redirect: ' + from + ' --> ' + to)
         })
 
-        // console.log("Query result:", JSON.stringify(result))
         const markdowns = result.data.allRepoMarkdown.edges
-        const prefix = '/read-the-docs'
-        const oceanPyList = filterMarkdownList(markdowns, prefix + '/ocean-py/')
-        const aquariusList = filterMarkdownList(
-          markdowns,
-          prefix + '/aquarius/'
-        )
-        const providerList = filterMarkdownList(
-          markdowns,
-          prefix + '/provider/'
-        )
+        const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
+        const aquariusList = filterMarkdownList(markdowns, 'aquarius')
+        const providerList = filterMarkdownList(markdowns, 'provider')
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
@@ -319,7 +312,5 @@ const createMarkdownPage = async (createPage, element) => {
 }
 
 const filterMarkdownList = (markdownList, string) => {
-  return markdownList.filter(({ node }) =>
-    node.frontmatter.slug.startsWith(string)
-  )
+  return markdownList.filter(({ node }) => node.frontmatter.section === string)
 }

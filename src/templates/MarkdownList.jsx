@@ -9,12 +9,40 @@ import sidebarStyles from '../components/Sidebar.module.scss'
 
 export default function MarkdownList({ pageContext }) {
   const subSections = {}
-  pageContext.markdownList.map(({ node }) => {
-    if (!subSections[node.frontmatter.sub_section]) {
-      subSections[node.frontmatter.sub_section] = []
+  const temp = {}
+
+  const assign = (obj, keyPath, value) => {
+    let lastKeyIndex = keyPath.length - 1
+    for (var i = 0; i < lastKeyIndex; ++i) {
+      let key = keyPath[i]
+      if (!(key in obj)) {
+        obj[key] = {}
+      }
+      obj = obj[key]
     }
-    subSections[node.frontmatter.sub_section].push(node)
+    obj[keyPath[lastKeyIndex]] = value
+  }
+
+  // console.log('pageContext', pageContext)
+  // pageContext.markdownList.map(({ node }) => {
+  //   let modules = node.frontmatter.module.split('.')
+  //   assign(temp, modules, node)
+  // })
+
+  pageContext.markdownList.map(({ node }) => {
+    let modules = node.frontmatter.module.split('.')
+    let key =
+      modules.slice(0, modules.length - 1).join('.') || modules.join('.')
+
+    console.log(key)
+
+    if (!subSections[key]) {
+      subSections[key] = []
+    }
+    subSections[key].push(node)
   })
+
+  console.log('subSections', subSections)
 
   const [selectedSubSection, setSelectedSubSection] = useState(0)
   const [elem, setElem] = useState(
@@ -43,54 +71,58 @@ export default function MarkdownList({ pageContext }) {
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
             <nav className={sidebarStyles.sidebar}>
-              {Object.keys(subSections).map((ele, subSectionIndex) => {
-                return selectedSubSection === subSectionIndex ? (
-                  <div key={subSectionIndex}>
-                    <h4 className={sidebarStyles.groupTitle}>
-                      <a
-                        style={{ cursor: 'pointer', color: 'black' }}
-                        onClick={() => changeSubsection(subSectionIndex)}
-                      >
-                        {ele.replace(/_/g, ' ')}
-                      </a>
-                      <div className={sidebarStyles.list}>
-                        <ul>
-                          {subSections[ele].map((node) => (
-                            <li
-                              className={
-                                elem.id === node.id
-                                  ? sidebarStyles.active
-                                  : sidebarStyles.link
-                              }
-                              key={node.id}
-                              onClick={() => changePage(subSectionIndex, node)}
-                            >
-                              <a
-                                style={{
-                                  cursor: 'pointer'
-                                }}
+              {Object.keys(subSections)
+                .sort()
+                .map((ele, subSectionIndex) => {
+                  return selectedSubSection === subSectionIndex ? (
+                    <div key={subSectionIndex}>
+                      <h4 className={sidebarStyles.groupTitle}>
+                        <a
+                          style={{ cursor: 'pointer', color: 'black' }}
+                          onClick={() => changeSubsection(subSectionIndex)}
+                        >
+                          {ele}
+                        </a>
+                        <div className={sidebarStyles.list}>
+                          <ul>
+                            {subSections[ele].map((node) => (
+                              <li
+                                className={
+                                  elem.id === node.id
+                                    ? sidebarStyles.active
+                                    : sidebarStyles.link
+                                }
+                                key={node.id}
+                                onClick={() =>
+                                  changePage(subSectionIndex, node)
+                                }
                               >
-                                {node.frontmatter.title.replace(/_/g, ' ')}
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </h4>
-                  </div>
-                ) : (
-                  <div>
-                    <h4 className={sidebarStyles.groupTitle}>
-                      <a
-                        onClick={() => changeSubsection(subSectionIndex)}
-                        style={{ cursor: 'pointer', color: '#8b98a9' }}
-                      >
-                        {ele.replace(/_/g, ' ')}
-                      </a>
-                    </h4>
-                  </div>
-                )
-              })}
+                                <a
+                                  style={{
+                                    cursor: 'pointer'
+                                  }}
+                                >
+                                  {node.frontmatter.title}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </h4>
+                    </div>
+                  ) : (
+                    <div>
+                      <h4 className={sidebarStyles.groupTitle}>
+                        <a
+                          onClick={() => changeSubsection(subSectionIndex)}
+                          style={{ cursor: 'pointer', color: '#8b98a9' }}
+                        >
+                          {ele}
+                        </a>
+                      </h4>
+                    </div>
+                  )
+                })}
             </nav>
           </aside>
           <article className={styles.main}>
