@@ -20,20 +20,16 @@ Then you need the following parts:
 - a working Kubernetes (K8s) cluster (Minikube is a good start)
 - a working `kubectl` connected to the K8s cluster
 - one folder (/ocean/operator-service/), in which we will download the following:
-  - [postgres-configmap.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-configmap.yaml)
-  - [postgres-storage.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-storage.yaml)
-  - [postgres-deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgres-deployment.yaml)
-  - [postgres-service.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/postgresql-service.yaml)
-  - [deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/deployment.yaml)
-  - [role_binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/role_binding.yaml)
-  - [service_account.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/develop/deploy_on_k8s/service_account.yaml)
+  - [postgres-configmap.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/main/kubernetes/postgres-configmap.yaml)
+  - [postgres-storage.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/main/kubernetes/postgres-storage.yaml)
+  - [postgres-deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/main/kubernetes/postgres-deployment.yaml)
+  - [postgres-service.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/main/kubernetes/postgresql-service.yaml)
+  - [deployment.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/main/kubernetes/deployment.yaml)
 - one folder (/ocean/operator-engine/), in which we will download the following:
-  - [sa.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/sa.yml)
-  - [binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/binding.yml)
-  - [operator.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/operator.yml)
-  - [computejob-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/computejob-crd.yaml)
-  - [workflow-crd.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/develop/k8s_install/workflow-crd.yaml)
-
+  - [sa.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/main/kubernetes/sa.yml)
+  - [binding.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/main/kubernetes/binding.yml)
+  - [operator.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-engine/main/kubernetes/operator.yml)
+  
 ## Customize your Operator Service deployment
 
 The following resources need attention:
@@ -45,15 +41,7 @@ The following resources need attention:
 
 ## Customize your Operator Engine deployment
 
-The following resources need attention:
-
-| Resource        | Variable                                               | Description                                                                                 |
-| --------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| `operator.yaml` | `ACCOUNT_JSON`, `ACCOUNT_PASSWORD`                     | Defines the account that is going to be used when publishing results back to OceanProtocol. |
-|                 | `AWS_ACCESS_KEY_ID`, `AWS_ACCESS_KEY_ID`, `AWS_REGION` | S3 credentials for the logs and output buckets.                                             |
-|                 | `AWS_BUCKET_OUTPUT`                                    | Bucket that will hold the output data (algorithm logs & algorithm output).                  |
-|                 | `AWS_BUCKET_ADMINLOGS`                                 | Bucket that will hold the admin logs (logs from pod-configure & pod-publish).               |
-|                 | `STORAGE_CLASS`                                        | Storage class to use (see next section).                                                    |
+Check the [README](https://github.com/oceanprotocol/operator-engine#customize-your-operator-engine-deployment) section of operator engine to customize your deployment
 
 ## Storage class
 
@@ -112,8 +100,6 @@ kubectl create -f /ocean/operator-service/postgres-storage.yaml
 kubectl create -f /ocean/operator-service/postgres-deployment.yaml
 kubectl create -f /ocean/operator-service/postgresql-service.yaml
 kubectl apply -f /ocean/operator-service/deployment.yaml
-kubectl apply -f /ocean/operator-service/role_binding.yaml
-kubectl apply -f /ocean/operator-service/service_account.yaml
 ```
 
 ## Deploy Operator Engine
@@ -123,8 +109,6 @@ kubectl config set-context --current --namespace ocean-compute
 kubectl apply -f /ocean/operator-engine/sa.yml
 kubectl apply -f /ocean/operator-engine/binding.yml
 kubectl apply -f /ocean/operator-engine/operator.yml
-kubectl apply -f /ocean/operator-engine/computejob-crd.yaml
-kubectl apply -f /ocean/operator-engine/workflow-crd.yaml
 kubectl create -f /ocean/operator-service/postgres-configmap.yaml
 ```
 
@@ -148,12 +132,12 @@ If your cluster is running on example.com:
 curl -X POST "http://example.com:8050/api/v1/operator/pgsqlinit" -H  "accept: application/json"
 ```
 
-## Update Brizo
+## Update Barge for local testing
 
-Update Brizo by adding or updating the `OPERATOR_SERVICE_URL` env in `/ocean/barge/compose-files/brizo.yaml`
+Update Barge's Provider by adding or updating the `OPERATOR_SERVICE_URL` env in `/ocean/barge/compose-files/provider.yaml`
 
 ```yaml
 OPERATOR_SERVICE_URL: http://example.com:8050/
 ```
 
-Restart Barge with updated Brizo configuration
+Restart Barge with updated provider configuration
