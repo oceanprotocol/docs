@@ -70,9 +70,8 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     slug
                     title
-                    section
+                    app
                     module
-                    sub_section
                   }
                 }
               }
@@ -312,5 +311,5 @@ const createMarkdownPage = async (createPage, element) => {
 }
 
 const filterMarkdownList = (markdownList, string) => {
-  return markdownList.filter(({ node }) => node.frontmatter.section === string)
+  return markdownList.filter(({ node }) => node.frontmatter.app === string)
 }
