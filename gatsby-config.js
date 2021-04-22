@@ -157,7 +157,7 @@ module.exports = {
         name: 'repo-read-the-docs',
         remote: `https://github.com/oceanprotocol/readthedocs.git`,
         local: 'markdowns/',
-        branch: 'main',
+        branch: 'gatsby',
         patterns: [
           'markdowns/ocean-py',
           'markdowns/aquarius',
