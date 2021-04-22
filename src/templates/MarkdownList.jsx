@@ -11,10 +11,10 @@ export default function MarkdownList({ pageContext }) {
   const modules = {}
 
   pageContext.markdownList.map(({ node }) => {
-    let module_path = node.frontmatter.module.split('.')
-    let key =
-      module_path.slice(0, module_path.length - 1).join('.') ||
-      module_path.join('.')
+    const modulePath = node.frontmatter.module.split('.')
+    const key =
+      modulePath.slice(0, modulePath.length - 1).join('.') ||
+      modulePath.join('.')
 
     if (!modules[key]) {
       modules[key] = []
