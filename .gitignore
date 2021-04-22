@@ -7,4 +7,4 @@ yarn-error.log
 .env
 .env.*
 markdowns/
-!markdowns/.gitkeep
+.vscode/

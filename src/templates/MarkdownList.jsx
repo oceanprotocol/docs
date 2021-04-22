@@ -8,26 +8,7 @@ import MarkdownTemplate from './MarkdownTemplate'
 import sidebarStyles from '../components/Sidebar.module.scss'
 
 export default function MarkdownList({ pageContext }) {
-  const subSections = {}
-  const temp = {}
-
-  const assign = (obj, keyPath, value) => {
-    let lastKeyIndex = keyPath.length - 1
-    for (var i = 0; i < lastKeyIndex; ++i) {
-      let key = keyPath[i]
-      if (!(key in obj)) {
-        obj[key] = {}
-      }
-      obj = obj[key]
-    }
-    obj[keyPath[lastKeyIndex]] = value
-  }
-
-  // console.log('pageContext', pageContext)
-  // pageContext.markdownList.map(({ node }) => {
-  //   let modules = node.frontmatter.module.split('.')
-  //   assign(temp, modules, node)
-  // })
+  const modules = {}
 
   pageContext.markdownList.map(({ node }) => {
     let modules = node.frontmatter.module.split('.')
@@ -36,17 +17,15 @@ export default function MarkdownList({ pageContext }) {
 
     console.log(key)
 
-    if (!subSections[key]) {
-      subSections[key] = []
+    if (!modules[key]) {
+      modules[key] = []
     }
-    subSections[key].push(node)
+    modules[key].push(node)
   })
-
-  console.log('subSections', subSections)
 
   const [selectedSubSection, setSelectedSubSection] = useState(0)
   const [elem, setElem] = useState(
-    subSections[Object.keys(subSections)[selectedSubSection]][0]
+    modules[Object.keys(modules)[selectedSubSection]][0]
   )
 
   const changePage = (subSectionIndex, node) => {
@@ -56,7 +35,7 @@ export default function MarkdownList({ pageContext }) {
 
   const changeSubsection = (index) => {
     setSelectedSubSection(index)
-    setElem(subSections[Object.keys(subSections)[index]][0])
+    setElem(modules[Object.keys(modules)[index]][0])
   }
 
   return (
@@ -71,7 +50,7 @@ export default function MarkdownList({ pageContext }) {
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
             <nav className={sidebarStyles.sidebar}>
-              {Object.keys(subSections)
+              {Object.keys(modules)
                 .sort()
                 .map((ele, subSectionIndex) => {
                   return selectedSubSection === subSectionIndex ? (
@@ -85,7 +64,7 @@ export default function MarkdownList({ pageContext }) {
                         </a>
                         <div className={sidebarStyles.list}>
                           <ul>
-                            {subSections[ele].map((node) => (
+                            {modules[ele].map((node) => (
                               <li
                                 className={
                                   elem.id === node.id
