@@ -38,10 +38,11 @@ Typically the Operator Service is integrated from Ocean Provider, but can be cal
 
 The Operator Service is in charge of establishing the communication with the K8s cluster, allowing it to:
 
-- Register workflows as K8s objects
-- List the workflows registered in K8s
-- Stop a running workflow execution
-- Get information about the state of execution of a workflow
+- Register new compute jobs
+- List the current compute jobs
+- Get a detailed result for a given job
+- Stop a running job
+
 
 The Operator Service doesn't provide any storage capability, all the state is stored directly in the K8s cluster.
 
@@ -52,25 +53,22 @@ The Operator Service doesn't provide any storage capability, all the state is st
 The main responsibilities are:
 
 - Expose an HTTP API allowing for the execution of data access and compute endpoints.
-- Authorize the user on-chain using the proper Service Agreement. That is, validate that the user requesting the service is allowed to use that service.
 - Interact with the infrastructure (cloud/on-premise) using the Publisher's credentials.
 - Start/stop/execute computing instances with the algorithms provided by users.
 - Retrieve the logs generated during executions.
-- Register newly-derived assets arising from the executions (i.e. as new Ocean assets) (if required by the consumer).
 
 ### Flow
 
-![Sequence Diagram for computing services](images/4_Starting_New_Compute_Job.png)
+![Sequence Diagram for computing services](images/Starting New Compute Job.png)
 
 In the above diagram you can see the initial integration supported. It involves the following components/actors:
 
-- Data Scientists/Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
-- Ocean Keeper - In charge of enforcing the Service Agreement by tracking conditions.
+- Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
 - Operator-Service - Micro-service that is handling the compute requests.
 - Operator-Engine - The computing systems where the compute will be executed.
+- Kubernetes - a K8 cluster
 
 Before the flow can begin, the following pre-conditions must be met:
 
 - The Asset DDO has a compute service.
-- The Asset DDO must specify the Ocean Provider endpoint exposed by the Publisher.
-- The Service Agreement template must already be predefined and whitelisted `on-chain`.
+- The Asset DDO must specify a provider endpoint exposed by the Publisher.
