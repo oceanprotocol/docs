@@ -84,7 +84,7 @@ The Operator Service doesn't provide any storage capability, all the state is st
 
 ### Operator Engine
 
-The **Operator Engine** is in charge of orchestrating the compute infrastructure using Kubernetes as backend. Typically the Operator Engine retrieves the workflows created by the Operator Service in Kubernetes, and manage the infrastructure necessary to complete the execution of the compute workflows.
+The **Operator Engine** is in charge of orchestrating the compute infrastructure using Kubernetes as backend where each compute job runs in an isolated [Kubernetes Pod](https://kubernetes.io/docs/concepts/workloads/pods/). Typically the Operator Engine retrieves the workflows created by the Operator Service in Kubernetes, and manage the infrastructure necessary to complete the execution of the compute workflows.
 
 The Operator Engine is in charge of retrieving all the workflows registered in a K8s cluster, allowing to:
 
