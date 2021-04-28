@@ -96,6 +96,14 @@ The Operator Engine is in charge of retrieving all the workflows registered in a
 
 <repo name="operator-engine"></repo>
 
+### Pod: Configuration
+
+<repo name="pod-configuration"></repo>
+
+### Pod: Publishing
+
+<repo name="pod-publishing"></repo>
+
 ## Further Reading
 
 - [Tutorial: Writing Algorithms](/tutorials/compute-to-data-algorithms/)
