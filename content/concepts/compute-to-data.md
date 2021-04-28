@@ -29,7 +29,7 @@ For each data set, publishers can choose to allow various permission levels for 
 
 All implementations should set permissions to private by default: upon publishing a compute data set, no algorithms should be allowed to run on it. This is to prevent data escape by a rogue algorithm being written in a way to extract all data from a data set.
 
-## Architecture
+## Architecture Overview
 
 The architecture follows [OEP-12: Compute-to-Data](https://github.com/oceanprotocol/OEPs/tree/master/12) as a spec.
 
@@ -48,7 +48,7 @@ Before the flow can begin, the following pre-conditions must be met:
 - The Asset DDO compute service must permit algorithms to run on it.
 - The Asset DDO must specify an Ocean Provider endpoint exposed by the Publisher.
 
-### Enabling Publisher Services, using Ocean Provider
+## Access Control using Ocean Provider
 
 As with the `access` service, the `compute` service requires the **Ocean Provider** as a component handled by Publishers. Ocean Provider is in charge of interacting with users and managing the basics of a Publisher's infrastructure to integrate this infrastructure into Ocean Protocol. The direct interaction with the infrastructure where the data resides happens through this component only.
 
@@ -56,9 +56,9 @@ Ocean Provider includes the credentials to interact with the infrastructure (ini
 
 <repo name="provider"></repo>
 
-### Compute-to-Data Environment
+## Compute-to-Data Environment
 
-#### Operator Service
+### Operator Service
 
 The **Operator Service** is a micro-service in charge of managing the workflow executing requests.
 
@@ -82,7 +82,7 @@ The Operator Service doesn't provide any storage capability, all the state is st
 
 <repo name="operator-service"></repo>
 
-#### Operator Engine
+### Operator Engine
 
 The **Operator Engine** is in charge of orchestrating the compute infrastructure using Kubernetes as backend. Typically the Operator Engine retrieves the workflows created by the Operator Service in Kubernetes, and manage the infrastructure necessary to complete the execution of the compute workflows.
 
