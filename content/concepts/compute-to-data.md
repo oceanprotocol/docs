@@ -15,62 +15,97 @@ The most basic scenario for a Publisher is to provide access to the datasets the
 
 [This page](https://oceanprotocol.com/technology/compute-to-data) elaborates on the benefits.
 
-## Architecture
+## Data Sets & Algorithms
 
-### Enabling Publisher Services, using Ocean Provider
+With Compute-to-Data, data sets are not allowed to leave the premises of the data holder, only algorithms can be permitted to run on them under certain conditions within an isolated and secure environment. Algorithms are an asset type just like data sets and they too can have a pool or a fixed price to determine their price whenever they are used.
 
-The direct interaction with the infrastructure where the data resides requires the execution of a component handled by Publishers.
+Algorithms can be either public or private by setting either an `access` or a `compute` service in their DDO. An algorithm set to public can be downloaded for its set price, while an algorithm set to private is only available as part of a compute job without any way to download it. If an algorithm is set to private, then the dataset must be published on the same Ocean Provider as the data set it should run on.
 
-This component will be in charge of interacting with users and managing the basics of a Publisher's infrastructure to provide these additional services.
+For each data set, publishers can choose to allow various permission levels for algorithms to run:
 
-The business logic supporting these additional Publisher capabilities is the responsibility of this new technical component.
+- allow selected algorithms, referenced by their DID
+- allow all algorithms published within a network or marketplace
+- allow raw algorithms, for advanced use cases circumventing algorithm as an asset type, but most prone to data escape
 
-The main and new key component introduced to support these additional Publisher services is named **Ocean Provider**.
+All implementations should set permissions to private by default: upon publishing a compute data set, no algorithms should be allowed to run on it. This is to prevent data escape by a rogue algorithm being written in a way to extract all data from a data set.
 
-Ocean Provider is the technical component executed by the **Publishers**, which provides extended data services. Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
+## Architecture Overview
 
-### Compute-to-Data Environment (Operator-Service)
+The architecture follows [OEP-12: Compute-to-Data](https://github.com/oceanprotocol/OEPs/tree/master/12) as a spec.
 
-The Operator Service is a micro-service that implements part of the Compute-to-Data spec [OEP-12](https://github.com/oceanprotocol/OEPs/tree/master/12),
-in charge of managing the workflow executing requests.
+![Sequence Diagram for computing services](images/Starting New Compute Job.png)
+
+In the above diagram you can see the initial integration supported. It involves the following components/actors:
+
+- Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
+- Operator-Service - Micro-service that is handling the compute requests.
+- Operator-Engine - The computing systems where the compute will be executed.
+- Kubernetes - a K8 cluster
+
+Before the flow can begin, the following pre-conditions must be met:
+
+- The Asset DDO has a `compute` service.
+- The Asset DDO compute service must permit algorithms to run on it.
+- The Asset DDO must specify an Ocean Provider endpoint exposed by the Publisher.
+
+## Access Control using Ocean Provider
+
+As [with the `access` service](/concepts/architecture/#datatokens--access-control-tools), the `compute` service requires the **Ocean Provider** as a component handled by Publishers. Ocean Provider is in charge of interacting with users and managing the basics of a Publisher's infrastructure to integrate this infrastructure into Ocean Protocol. The direct interaction with the infrastructure where the data resides happens through this component only.
+
+Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
+
+<repo name="provider"></repo>
+
+## Compute-to-Data Environment
+
+### Operator Service
+
+The **Operator Service** is a micro-service in charge of managing the workflow executing requests.
+
+The main responsibilities are:
+
+- Expose an HTTP API allowing for the execution of data access and compute endpoints.
+- Interact with the infrastructure (cloud/on-premise) using the Publisher's credentials.
+- Start/stop/execute computing instances with the algorithms provided by users.
+- Retrieve the logs generated during executions.
 
 Typically the Operator Service is integrated from Ocean Provider, but can be called independently of it.
 
 The Operator Service is in charge of establishing the communication with the K8s cluster, allowing it to:
 
-- Register workflows as K8s objects
-- List the workflows registered in K8s
-- Stop a running workflow execution
-- Get information about the state of execution of a workflow
+- Register new compute jobs
+- List the current compute jobs
+- Get a detailed result for a given job
+- Stop a running job
 
 The Operator Service doesn't provide any storage capability, all the state is stored directly in the K8s cluster.
 
 <repo name="operator-service"></repo>
 
-### Responsibilities
+### Operator Engine
 
-The main responsibilities are:
+The **Operator Engine** is in charge of orchestrating the compute infrastructure using Kubernetes as backend where each compute job runs in an isolated [Kubernetes Pod](https://kubernetes.io/docs/concepts/workloads/pods/). Typically the Operator Engine retrieves the workflows created by the Operator Service in Kubernetes, and manage the infrastructure necessary to complete the execution of the compute workflows.
 
-- Expose an HTTP API allowing for the execution of data access and compute endpoints.
-- Authorize the user on-chain using the proper Service Agreement. That is, validate that the user requesting the service is allowed to use that service.
-- Interact with the infrastructure (cloud/on-premise) using the Publisher's credentials.
-- Start/stop/execute computing instances with the algorithms provided by users.
-- Retrieve the logs generated during executions.
-- Register newly-derived assets arising from the executions (i.e. as new Ocean assets) (if required by the consumer).
+The Operator Engine is in charge of retrieving all the workflows registered in a K8s cluster, allowing to:
 
-### Flow
+- Orchestrate the flow of the execution
+- Start the configuration pod in charge of download the workflow dependencies (datasets and algorithms)
+- Start the pod including the algorithm to execute
+- Start the publishing pod that publish the new assets created in the Ocean Protocol network.
+- The Operator Engine doesn't provide any storage capability, all the state is stored directly in the K8s cluster.
 
-![Sequence Diagram for computing services](images/4_Starting_New_Compute_Job.png)
+<repo name="operator-engine"></repo>
 
-In the above diagram you can see the initial integration supported. It involves the following components/actors:
+### Pod: Configuration
 
-- Data Scientists/Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
-- Ocean Keeper - In charge of enforcing the Service Agreement by tracking conditions.
-- Operator-Service - Micro-service that is handling the compute requests.
-- Operator-Engine - The computing systems where the compute will be executed.
+<repo name="pod-configuration"></repo>
 
-Before the flow can begin, the following pre-conditions must be met:
+### Pod: Publishing
 
-- The Asset DDO has a compute service.
-- The Asset DDO must specify the Ocean Provider endpoint exposed by the Publisher.
-- The Service Agreement template must already be predefined and whitelisted `on-chain`.
+<repo name="pod-publishing"></repo>
+
+## Further Reading
+
+- [Tutorial: Writing Algorithms](/tutorials/compute-to-data-algorithms/)
+- [Tutorial: Set Up a Compute-to-Data Environment](/tutorials/compute-to-data/)
+- [Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com)
