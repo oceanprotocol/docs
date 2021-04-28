@@ -44,16 +44,15 @@ In the above diagram you can see the initial integration supported. It involves 
 
 Before the flow can begin, the following pre-conditions must be met:
 
-- The Asset DDO has a compute service.
-- The Asset DDO must specify a provider endpoint exposed by the Publisher.
+- The Asset DDO has a `compute` service.
+- The Asset DDO compute service must permit algorithms to run on it.
+- The Asset DDO must specify an Ocean Provider endpoint exposed by the Publisher.
 
 ### Enabling Publisher Services, using Ocean Provider
 
-The direct interaction with the infrastructure where the data resides requires the execution of a component handled by Publishers, named **Ocean Provider**.
+As with the `access` service, the `compute` service requires the **Ocean Provider** as a component handled by Publishers. Ocean Provider is in charge of interacting with users and managing the basics of a Publisher's infrastructure to integrate this infrastructure into Ocean Protocol. The direct interaction with the infrastructure where the data resides happens through this component only.
 
-This component is in charge of interacting with users and managing the basics of a Publisher's infrastructure to provide these additional services. The business logic supporting these additional Publisher capabilities is the responsibility of this technical component.
-
-Ocean Provider is the technical component executed by the **Publishers**, which provides extended data services. Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
+Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
 
 <repo name="provider"></repo>
 
@@ -96,3 +95,9 @@ The Operator Engine is in charge of retrieving all the workflows registered in a
 - The Operator Engine doesn't provide any storage capability, all the state is stored directly in the K8s cluster.
 
 <repo name="operator-engine"></repo>
+
+## Further Reading
+
+- [Tutorial: Writing Algorithms](/tutorials/compute-to-data-algorithms/)
+- [Tutorial: Set Up a Compute-to-Data Environment](/tutorials/compute-to-data/)
+- [Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com)
