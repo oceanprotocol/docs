@@ -20,7 +20,7 @@
     "axios": "^0.21.1",
     "classnames": "^2.3.1",
     "gatsby": "^2.32.12",
-    "gatsby-image": "^3.3.0",
+    "gatsby-image": "^3.4.0",
     "gatsby-plugin-catch-links": "^2.10.0",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-offline": "^3.10.2",
