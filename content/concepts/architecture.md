@@ -31,7 +31,11 @@ To initiate the **consume** step, the data consumer sends 1.0 datatokens to the 
 
 Instead of running a Provider themselves, the publisher can have a 3rd party like Ocean Market run it. While more convenient, it means that the 3rd party has custody of the private encryption/decryption key (more centralized). Ocean will support more service types and url custody options in the future.
 
-**Ocean JavaScript and Python libraries** act as drivers for the lower-level contracts. Each library integrates with Ocean Provider to provision & consume data services, and Ocean Aquarius for metadata. **Ocean React hooks** use the JavaScript library, to help build webapps & React Native apps with Ocean.
+**Ocean JavaScript and Python libraries** act as drivers for the lower-level contracts. Each library integrates with Ocean Provider to provision & consume data services, and Ocean Aquarius for metadata. **Ocean React hooks** use the JavaScript library, to help build web apps & React Native apps with Ocean.
+
+<repo name="provider"></repo>
+<repo name="ocean.js"></repo>
+<repo name="ocean.py"></repo>
 
 ## Market Tools
 
@@ -48,6 +52,8 @@ Complementary to Ocean Market, Ocean has reference code to ease building **third
 
 [This post](https://blog.oceanprotocol.com/ocean-market-an-open-source-community-marketplace-for-data-4b99bedacdc3) elaborates on Ocean marketplace tools.
 
+<repo name="market"></repo>
+
 ## Metadata Tools
 
 Metadata (name of dataset, date created etc.) is used by marketplaces for data asset discovery. Each data asset can have a [decentralized identifier](https://w3c-ccg.github.io/did-spec/) (DID) that resolves to a DID document (DDO) for associated metadata. The DDO is essentially [JSON](https://www.json.org/) filling in metadata fields. [OEP7](https://github.com/oceanprotocol/OEPs/tree/master/7) formalizes Ocean DID usage.
@@ -57,6 +63,8 @@ Metadata (name of dataset, date created etc.) is used by marketplaces for data a
 Ocean uses the Ethereum mainnet as an **on-chain metadata store**, i.e. to store both DID and DDO. This means that once the write fee is paid, there are no further expenses or dev-ops work needed to ensure metadata availability into the future, aiding in the discoverability of data assets. It also simplifies integration with the rest of the Ocean system, which is Ethereum-based. Storage cost on Ethereum mainnet is not negligible, but not prohibitive and the other benefits are currently worth the tradeoff compared to alternatives.
 
 Due to the permissionless, decentralized nature of data on Ethereum mainnet, any last-mile tool can access metadata. **Ocean Aquarius** supports different metadata fields for each different Ocean-based marketplace. Developers could also use [TheGraph](https://www.thegraph.com) to see metadata fields that are common across all marketplaces.
+
+<repo name="aquarius"></repo>
 
 ## Third-Party ERC20 Apps & Tools
 

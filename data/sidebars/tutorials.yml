@@ -24,6 +24,8 @@
 
 - group: Compute-to-Data
   items:
+    - title: Writing Algorithms
+      link: /tutorials/compute-to-data-algorithms/
     - title: Run a Compute-to-Data Environment
       link: /tutorials/compute-to-data/
 
