@@ -150,6 +150,28 @@ module.exports = {
       }
     },
     'gatsby-plugin-webpack-size',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: 'repo-read-the-docs',
+        remote: `https://github.com/oceanprotocol/readthedocs.git`,
+        local: 'markdowns/',
+        branch: 'gatsby',
+        patterns: [
+          'markdowns/ocean-py',
+          'markdowns/aquarius',
+          'markdowns/provider'
+        ]
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/markdowns/markdowns`,
+        name: 'markdowns'
+      }
+    },
+    'gatsby-transformer-remark'
   ]
 }

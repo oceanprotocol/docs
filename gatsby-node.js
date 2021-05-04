@@ -58,6 +58,25 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
 
+            allRepoMarkdown: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/markdowns/markdowns/" } }
+            ) {
+              edges {
+                node {
+                  id
+                  html
+                  htmlAst
+                  tableOfContents
+                  frontmatter {
+                    slug
+                    title
+                    app
+                    module
+                  }
+                }
+              }
+            }
+
             oceanJs: github {
               repository(name: "ocean.js", owner: "oceanprotocol") {
                 name
@@ -133,6 +152,15 @@ exports.createPages = ({ graphql, actions }) => {
 
           console.log('Create redirect: ' + from + ' --> ' + to)
         })
+
+        const markdowns = result.data.allRepoMarkdown.edges
+        const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
+        const aquariusList = filterMarkdownList(markdowns, 'aquarius')
+        const providerList = filterMarkdownList(markdowns, 'provider')
+
+        await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
+        await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
+        await createReadTheDocsPage(createPage, 'provider', providerList)
 
         resolve()
       })
@@ -255,4 +283,33 @@ const createSwaggerPages = async (createPage) => {
   } catch (error) {
     console.error(error.message)
   }
+}
+
+const createReadTheDocsPage = async (createPage, name, list) => {
+  const markdownListTemplate = path.resolve('./src/templates/MarkdownList.jsx')
+  createPage({
+    path: `/read-the-docs/${name}`,
+    component: markdownListTemplate,
+    context: {
+      markdownList: list,
+      name: name
+    }
+  })
+
+  list.forEach((element) => {
+    createMarkdownPage(createPage, element)
+  })
+}
+
+const createMarkdownPage = async (createPage, element) => {
+  // console.log("element", JSON.stringify(element.node.frontmatter))
+  const markdownTemplate = path.resolve('./src/templates/MarkdownTemplate.jsx')
+  createPage({
+    path: element.node.frontmatter.slug,
+    component: markdownTemplate
+  })
+}
+
+const filterMarkdownList = (markdownList, string) => {
+  return markdownList.filter(({ node }) => node.frontmatter.app === string)
 }

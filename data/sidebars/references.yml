@@ -26,7 +26,17 @@
 - group: ocean.py
   items:
     - title: API Reference
-      link: https://github.com/oceanprotocol/ocean.py
+      link: /read-the-docs/ocean-py/
+
+- group: Aquarius read the docs
+  items:
+    - title: API Reference
+      link: /read-the-docs/aquarius/
+
+- group: Provider read the docs
+  items:
+    - title: API Reference
+      link: /read-the-docs/provider/
 
 - group: Smart Contracts
   items:
