@@ -22,10 +22,10 @@ export default function MarkdownList({ pageContext }) {
     modules[key].push(node)
   })
 
-  const module_keys = Object.keys(modules).sort()
+  const moduleKeys = Object.keys(modules).sort()
 
   const [selectedSubSection, setSelectedSubSection] = useState(0)
-  const [elem, setElem] = useState(modules[module_keys[selectedSubSection]][0])
+  const [elem, setElem] = useState(modules[moduleKeys[selectedSubSection]][0])
 
   const changePage = (subSectionIndex, node) => {
     setElem(node)
@@ -34,7 +34,7 @@ export default function MarkdownList({ pageContext }) {
 
   const changeSubsection = (index) => {
     setSelectedSubSection(index)
-    setElem(modules[module_keys[index]][0])
+    setElem(modules[moduleKeys[index]][0])
   }
 
   return (
@@ -49,7 +49,7 @@ export default function MarkdownList({ pageContext }) {
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
             <nav className={sidebarStyles.sidebar}>
-              {module_keys.map((ele, subSectionIndex) => {
+              {moduleKeys.map((ele, subSectionIndex) => {
                 return selectedSubSection === subSectionIndex ? (
                   <div key={subSectionIndex}>
                     <h4 className={sidebarStyles.groupTitle}>
