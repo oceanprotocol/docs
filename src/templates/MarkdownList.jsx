@@ -22,10 +22,10 @@ export default function MarkdownList({ pageContext }) {
     modules[key].push(node)
   })
 
+  const module_keys = Object.keys(modules).sort()
+
   const [selectedSubSection, setSelectedSubSection] = useState(0)
-  const [elem, setElem] = useState(
-    modules[Object.keys(modules)[selectedSubSection]][0]
-  )
+  const [elem, setElem] = useState(modules[module_keys[selectedSubSection]][0])
 
   const changePage = (subSectionIndex, node) => {
     setElem(node)
@@ -34,7 +34,7 @@ export default function MarkdownList({ pageContext }) {
 
   const changeSubsection = (index) => {
     setSelectedSubSection(index)
-    setElem(modules[Object.keys(modules)[index]][0])
+    setElem(modules[module_keys[index]][0])
   }
 
   return (
@@ -49,58 +49,54 @@ export default function MarkdownList({ pageContext }) {
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
             <nav className={sidebarStyles.sidebar}>
-              {Object.keys(modules)
-                .sort()
-                .map((ele, subSectionIndex) => {
-                  return selectedSubSection === subSectionIndex ? (
-                    <div key={subSectionIndex}>
-                      <h4 className={sidebarStyles.groupTitle}>
-                        <a
-                          style={{ cursor: 'pointer', color: 'black' }}
-                          onClick={() => changeSubsection(subSectionIndex)}
-                        >
-                          {ele}
-                        </a>
-                        <div className={sidebarStyles.list}>
-                          <ul>
-                            {modules[ele].map((node) => (
-                              <li
-                                className={
-                                  elem.id === node.id
-                                    ? sidebarStyles.active
-                                    : sidebarStyles.link
-                                }
-                                key={node.id}
-                                onClick={() =>
-                                  changePage(subSectionIndex, node)
-                                }
+              {module_keys.map((ele, subSectionIndex) => {
+                return selectedSubSection === subSectionIndex ? (
+                  <div key={subSectionIndex}>
+                    <h4 className={sidebarStyles.groupTitle}>
+                      <a
+                        style={{ cursor: 'pointer', color: 'black' }}
+                        onClick={() => changeSubsection(subSectionIndex)}
+                      >
+                        {ele}
+                      </a>
+                      <div className={sidebarStyles.list}>
+                        <ul>
+                          {modules[ele].map((node) => (
+                            <li
+                              className={
+                                elem.id === node.id
+                                  ? sidebarStyles.active
+                                  : sidebarStyles.link
+                              }
+                              key={node.id}
+                              onClick={() => changePage(subSectionIndex, node)}
+                            >
+                              <a
+                                style={{
+                                  cursor: 'pointer'
+                                }}
                               >
-                                <a
-                                  style={{
-                                    cursor: 'pointer'
-                                  }}
-                                >
-                                  {node.frontmatter.title}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </h4>
-                    </div>
-                  ) : (
-                    <div>
-                      <h4 className={sidebarStyles.groupTitle}>
-                        <a
-                          onClick={() => changeSubsection(subSectionIndex)}
-                          style={{ cursor: 'pointer', color: '#8b98a9' }}
-                        >
-                          {ele}
-                        </a>
-                      </h4>
-                    </div>
-                  )
-                })}
+                                {node.frontmatter.title}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </h4>
+                  </div>
+                ) : (
+                  <div>
+                    <h4 className={sidebarStyles.groupTitle}>
+                      <a
+                        onClick={() => changeSubsection(subSectionIndex)}
+                        style={{ cursor: 'pointer', color: '#8b98a9' }}
+                      >
+                        {ele}
+                      </a>
+                    </h4>
+                  </div>
+                )
+              })}
             </nav>
           </aside>
           <article className={styles.main}>
