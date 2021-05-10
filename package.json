@@ -58,7 +58,7 @@
     "remark-github-plugin": "^1.4.0",
     "remark-react": "^8.0.0",
     "shortid": "^2.2.16",
-    "slugify": "^1.5.0",
+    "slugify": "^1.5.2",
     "smoothscroll-polyfill": "^0.4.4",
     "swagger-client": "^3.13.2"
   },
