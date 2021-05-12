@@ -8,15 +8,25 @@
     - title: API Reference
       link: /references/ocean.js
 
-- group: aquarius
+- group: Aquarius REST API
   items:
     - title: API Reference
       link: /references/aquarius/
 
-- group: provider
+- group: Aquarius Py Module
+  items:
+    - title: API Reference
+      link: /read-the-docs/aquarius/
+
+- group: provider REST API
   items:
     - title: API Reference
       link: /references/provider/
+
+- group: Provider Py Module
+  items:
+    - title: API Reference
+      link: /read-the-docs/provider/
 
 - group: react
   items:
@@ -27,16 +37,6 @@
   items:
     - title: API Reference
       link: /read-the-docs/ocean-py/
-
-- group: Aquarius read the docs
-  items:
-    - title: API Reference
-      link: /read-the-docs/aquarius/
-
-- group: Provider read the docs
-  items:
-    - title: API Reference
-      link: /read-the-docs/provider/
 
 - group: Smart Contracts
   items:
