@@ -286,7 +286,9 @@ const createSwaggerPages = async (createPage) => {
 }
 
 const createReadTheDocsPage = async (createPage, name, list) => {
-  const markdownListTemplate = path.resolve('./src/templates/MarkdownList.jsx')
+  const markdownListTemplate = path.resolve(
+    './src/templates/Markdown/MarkdownList.jsx'
+  )
   createPage({
     path: `/read-the-docs/${name}`,
     component: markdownListTemplate,
