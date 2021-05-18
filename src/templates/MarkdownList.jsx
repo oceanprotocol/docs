@@ -11,19 +11,6 @@ export default function MarkdownList({ pageContext }) {
   const modules = {}
 
   const nested = {}
-  const [selectedNodeId, setSelectedNodeId] = useState(0)
-
-  const changeNodeid = (id) => {
-    setSelectedNodeId(id)
-
-    for (let i = 0; i < pageContext.markdownList.length; i++) {
-      var node = pageContext.markdownList[i]['node']
-      if (node.id == id) {
-        setElem(node)
-        break
-      }
-    }
-  }
 
   function generatedNested(obj, keyPath, value) {
     var lastKeyIndex = keyPath.length - 1
@@ -55,6 +42,24 @@ export default function MarkdownList({ pageContext }) {
 
     generatedNested(nested, modulePath, node)
   })
+
+  const moduleKeys = Object.keys(modules).sort()
+  const [selectedNodeId, setSelectedNodeId] = useState(
+    modules[moduleKeys[0]][0].id
+  )
+  const [elem, setElem] = useState(modules[moduleKeys[0]][0])
+
+  const changeNodeid = (id) => {
+    setSelectedNodeId(id)
+
+    for (let i = 0; i < pageContext.markdownList.length; i++) {
+      var node = pageContext.markdownList[i]['node']
+      if (node.id == id) {
+        setElem(node)
+        break
+      }
+    }
+  }
 
   const g = (title, nested) => {
     if (nested.id) {
@@ -94,21 +99,6 @@ export default function MarkdownList({ pageContext }) {
   }
 
   const n2 = g(null, nested)
-
-  const moduleKeys = Object.keys(modules).sort()
-
-  const [selectedSubSection, setSelectedSubSection] = useState(0)
-  const [elem, setElem] = useState(modules[moduleKeys[selectedSubSection]][0])
-
-  const changePage = (subSectionIndex, node) => {
-    setElem(node)
-    setSelectedSubSection(subSectionIndex)
-  }
-
-  const changeSubsection = (index) => {
-    setSelectedSubSection(index)
-    setElem(modules[moduleKeys[index]][0])
-  }
 
   return (
     <Layout>
