@@ -6,6 +6,8 @@ import Content from '../../components/Content'
 import styles from '../../templates/Doc.module.scss'
 import MarkdownTemplate from '../MarkdownTemplate'
 import sidebarStyles from '../../components/Sidebar.module.scss'
+import moduleStyles from './Markdown.module.scss'
+
 import { generatedNestedObject } from './utils'
 
 export default function MarkdownList({ pageContext }) {
@@ -17,7 +19,6 @@ export default function MarkdownList({ pageContext }) {
     const key =
       modulePath.slice(0, modulePath.length - 1).join('.') ||
       modulePath.join('.')
-
     if (!flattenedModules[key]) {
       flattenedModules[key] = []
     }
@@ -26,42 +27,27 @@ export default function MarkdownList({ pageContext }) {
   })
 
   const moduleKeys = Object.keys(flattenedModules).sort()
-  const [selectedNodeId, setSelectedNodeId] = useState(
-    flattenedModules[moduleKeys[0]][0].id
-  )
+
   const [selectedModule, setSelectedModule] = useState(
     flattenedModules[moduleKeys[0]][0]
   )
 
   const changeNodeid = (id) => {
-    setSelectedNodeId(id)
+    const found = pageContext.markdownList.find(({ node }) => {
+      return node.id === id
+    })
 
-    for (let i = 0; i < pageContext.markdownList.length; i++) {
-      var { node } = pageContext.markdownList[i]
-      if (node.id === id) {
-        setSelectedModule(node)
-        break
-      }
-    }
+    setSelectedModule(found.node)
   }
 
-  const generateModuleListElement = (node) => {
-    const { id } = node
-    const color = selectedNodeId === id ? 'black' : '#8b98a9'
+  const generateModuleListElement = (id, label) => {
     const className =
-      selectedNodeId === id ? sidebarStyles.active : sidebarStyles.link
+      selectedModule.id === id ? moduleStyles.active : moduleStyles.link
 
     return (
       <li key={id} id={id}>
-        <a
-          className={className}
-          onClick={() => changeNodeid(id)}
-          style={{
-            cursor: 'pointer',
-            color
-          }}
-        >
-          {node.label}
+        <a className={className} onClick={() => changeNodeid(id)}>
+          {label}
         </a>
       </li>
     )
@@ -70,7 +56,8 @@ export default function MarkdownList({ pageContext }) {
   const sidebarList = (title, nestedModules) => {
     const { id } = nestedModules
 
-    if (id) return generateModuleListElement(nestedModules)
+    if (id)
+      return generateModuleListElement(nestedModules.id, nestedModules.label)
 
     const keys = Object.keys(nestedModules).sort()
     const children = []
