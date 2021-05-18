@@ -11,7 +11,6 @@ export default function MarkdownList({ pageContext }) {
   const modules = {}
 
   const nested = {}
-  const nested2 = []
   const [selectedNodeId, setSelectedNodeId] = useState(0)
 
   const changeNodeid = (id) => {
@@ -41,7 +40,6 @@ export default function MarkdownList({ pageContext }) {
         label: value.frontmatter.title
       }
     }
-    // obj[keyPath[lastKeyIndex]].push({ type: 'module', value: value.id })
   }
 
   pageContext.markdownList.map(({ node }) => {
@@ -123,9 +121,7 @@ export default function MarkdownList({ pageContext }) {
         </div>
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
-            <nav>
-              <div className={sidebarStyles.sidebar}>{n2}</div>
-            </nav>
+            <div className={sidebarStyles.sidebar}>{n2}</div>
           </aside>
           <article className={styles.main}>
             <MarkdownTemplate data={elem} />
