@@ -10,6 +10,40 @@ import sidebarStyles from '../components/Sidebar.module.scss'
 export default function MarkdownList({ pageContext }) {
   const modules = {}
 
+  const nested = {}
+  const nested2 = []
+  const [selectedNodeId, setSelectedNodeId] = useState(0)
+
+  const changeNodeid = (id) => {
+    setSelectedNodeId(id)
+
+    for (let i = 0; i < pageContext.markdownList.length; i++) {
+      var node = pageContext.markdownList[i]['node']
+      if (node.id == id) {
+        setElem(node)
+        break
+      }
+    }
+  }
+
+  function generatedNested(obj, keyPath, value) {
+    var lastKeyIndex = keyPath.length - 1
+    for (var i = 0; i < lastKeyIndex; ++i) {
+      var key = keyPath[i]
+      if (!(key in obj)) {
+        obj[key] = {}
+      }
+      obj = obj[key]
+    }
+    if (!obj[keyPath[lastKeyIndex]]) {
+      obj[keyPath[lastKeyIndex]] = {
+        id: value.id,
+        label: value.frontmatter.title
+      }
+    }
+    // obj[keyPath[lastKeyIndex]].push({ type: 'module', value: value.id })
+  }
+
   pageContext.markdownList.map(({ node }) => {
     const modulePath = node.frontmatter.module.split('.')
     const key =
@@ -20,7 +54,48 @@ export default function MarkdownList({ pageContext }) {
       modules[key] = []
     }
     modules[key].push(node)
+
+    generatedNested(nested, modulePath, node)
   })
+
+  const g = (title, nested) => {
+    if (nested.id) {
+      return (
+        <li key={nested.id} id={nested.id}>
+          <a
+            className={
+              selectedNodeId === nested.id
+                ? sidebarStyles.active
+                : sidebarStyles.link
+            }
+            onClick={() => changeNodeid(nested.id)}
+            style={{
+              cursor: 'pointer',
+              color: selectedNodeId === nested.id ? 'black' : '#8b98a9'
+            }}
+          >
+            {nested.label}
+          </a>
+        </li>
+      )
+    } else {
+      let keys = Object.keys(nested).sort()
+      const children = []
+      children.push(
+        <li key={title}>
+          <b>{title}</b>
+        </li>
+      )
+      keys.forEach((element) => {
+        children.push(
+          <ul className={sidebarStyles.list}>{g(element, nested[element])}</ul>
+        )
+      })
+      return children
+    }
+  }
+
+  const n2 = g(null, nested)
 
   const moduleKeys = Object.keys(modules).sort()
 
@@ -48,55 +123,8 @@ export default function MarkdownList({ pageContext }) {
         </div>
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
-            <nav className={sidebarStyles.sidebar}>
-              {moduleKeys.map((ele, subSectionIndex) => {
-                return selectedSubSection === subSectionIndex ? (
-                  <div key={subSectionIndex}>
-                    <h4 className={sidebarStyles.groupTitle}>
-                      <a
-                        style={{ cursor: 'pointer', color: 'black' }}
-                        onClick={() => changeSubsection(subSectionIndex)}
-                      >
-                        {ele}
-                      </a>
-                      <div className={sidebarStyles.list}>
-                        <ul>
-                          {modules[ele].map((node) => (
-                            <li
-                              className={
-                                elem.id === node.id
-                                  ? sidebarStyles.active
-                                  : sidebarStyles.link
-                              }
-                              key={node.id}
-                              onClick={() => changePage(subSectionIndex, node)}
-                            >
-                              <a
-                                style={{
-                                  cursor: 'pointer'
-                                }}
-                              >
-                                {node.frontmatter.title}
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </h4>
-                  </div>
-                ) : (
-                  <div>
-                    <h4 className={sidebarStyles.groupTitle}>
-                      <a
-                        onClick={() => changeSubsection(subSectionIndex)}
-                        style={{ cursor: 'pointer', color: '#8b98a9' }}
-                      >
-                        {ele}
-                      </a>
-                    </h4>
-                  </div>
-                )
-              })}
+            <nav>
+              <div className={sidebarStyles.sidebar}>{n2}</div>
             </nav>
           </aside>
           <article className={styles.main}>
