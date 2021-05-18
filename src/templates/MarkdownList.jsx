@@ -10,9 +10,9 @@ import sidebarStyles from '../components/Sidebar.module.scss'
 export default function MarkdownList({ pageContext }) {
   const modules = {}
 
-  const nested = {}
+  const nestedModules = {}
 
-  function generatedNested(obj, keyPath, value) {
+  function generatedNested(obj, keyPath, node) {
     var lastKeyIndex = keyPath.length - 1
     for (var i = 0; i < lastKeyIndex; ++i) {
       var key = keyPath[i]
@@ -23,8 +23,8 @@ export default function MarkdownList({ pageContext }) {
     }
     if (!obj[keyPath[lastKeyIndex]]) {
       obj[keyPath[lastKeyIndex]] = {
-        id: value.id,
-        label: value.frontmatter.title
+        id: node.id,
+        label: node.frontmatter.title
       }
     }
   }
@@ -40,7 +40,7 @@ export default function MarkdownList({ pageContext }) {
     }
     modules[key].push(node)
 
-    generatedNested(nested, modulePath, node)
+    generatedNested(nestedModules, modulePath, node)
   })
 
   const moduleKeys = Object.keys(modules).sort()
@@ -61,28 +61,28 @@ export default function MarkdownList({ pageContext }) {
     }
   }
 
-  const g = (title, nested) => {
-    if (nested.id) {
+  const generateNestedSidebarList = (title, nestedModules) => {
+    if (nestedModules.id) {
       return (
-        <li key={nested.id} id={nested.id}>
+        <li key={nestedModules.id} id={nestedModules.id}>
           <a
             className={
-              selectedNodeId === nested.id
+              selectedNodeId === nestedModules.id
                 ? sidebarStyles.active
                 : sidebarStyles.link
             }
-            onClick={() => changeNodeid(nested.id)}
+            onClick={() => changeNodeid(nestedModules.id)}
             style={{
               cursor: 'pointer',
-              color: selectedNodeId === nested.id ? 'black' : '#8b98a9'
+              color: selectedNodeId === nestedModules.id ? 'black' : '#8b98a9'
             }}
           >
-            {nested.label}
+            {nestedModules.label}
           </a>
         </li>
       )
     } else {
-      const keys = Object.keys(nested).sort()
+      const keys = Object.keys(nestedModules).sort()
       const children = []
       children.push(
         <li key={title}>
@@ -91,14 +91,16 @@ export default function MarkdownList({ pageContext }) {
       )
       keys.forEach((element) => {
         children.push(
-          <ul className={sidebarStyles.list}>{g(element, nested[element])}</ul>
+          <ul className={sidebarStyles.list}>
+            {generateNestedSidebarList(element, nestedModules[element])}
+          </ul>
         )
       })
       return children
     }
   }
 
-  const n2 = g(null, nested)
+  const nestedSidebarList = generateNestedSidebarList(null, nestedModules)
 
   return (
     <Layout>
@@ -111,7 +113,7 @@ export default function MarkdownList({ pageContext }) {
         </div>
         <main className={styles.wrapper}>
           <aside className={styles.sidebar}>
-            <div className={sidebarStyles.sidebar}>{n2}</div>
+            <div className={sidebarStyles.sidebar}>{nestedSidebarList}</div>
           </aside>
           <article className={styles.main}>
             <MarkdownTemplate data={elem} />
