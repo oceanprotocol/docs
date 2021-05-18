@@ -82,7 +82,7 @@ export default function MarkdownList({ pageContext }) {
         </li>
       )
     } else {
-      let keys = Object.keys(nested).sort()
+      const keys = Object.keys(nested).sort()
       const children = []
       children.push(
         <li key={title}>
