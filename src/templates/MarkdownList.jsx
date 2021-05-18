@@ -53,8 +53,8 @@ export default function MarkdownList({ pageContext }) {
     setSelectedNodeId(id)
 
     for (let i = 0; i < pageContext.markdownList.length; i++) {
-      var node = pageContext.markdownList[i]['node']
-      if (node.id == id) {
+      var node = pageContext.markdownList[i].node
+      if (node.id === id) {
         setElem(node)
         break
       }
