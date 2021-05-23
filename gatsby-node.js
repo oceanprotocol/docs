@@ -68,6 +68,7 @@ exports.createPages = ({ graphql, actions }) => {
                   htmlAst
                   tableOfContents
                   frontmatter {
+                    source
                     title
                     app
                     module
