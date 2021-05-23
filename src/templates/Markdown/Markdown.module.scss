@@ -6,7 +6,6 @@
   padding: $spacer / 6 $spacer / 2;
   border-left: 0.1rem solid transparent;
   margin-left: -0.05rem;
-  cursor: 'pointer';
 
   &:hover,
   &:focus {
@@ -23,7 +22,6 @@
   composes: link;
   color: $brand-purple;
   border-left-color: $brand-purple;
-  cursor: 'pointer';
 
   :global(.setup) & {
     color: $brand-blue;

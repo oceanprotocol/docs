@@ -68,7 +68,6 @@ exports.createPages = ({ graphql, actions }) => {
                   htmlAst
                   tableOfContents
                   frontmatter {
-                    slug
                     title
                     app
                     module
@@ -298,19 +297,19 @@ const createReadTheDocsPage = async (createPage, name, list) => {
     }
   })
 
-  list.forEach((element) => {
-    createMarkdownPage(createPage, element)
-  })
+  // list.forEach((element) => {
+  //   createMarkdownPage(createPage, element)
+  // })
 }
 
-const createMarkdownPage = async (createPage, element) => {
-  // console.log("element", JSON.stringify(element.node.frontmatter))
-  const markdownTemplate = path.resolve('./src/templates/MarkdownTemplate.jsx')
-  createPage({
-    path: element.node.frontmatter.slug,
-    component: markdownTemplate
-  })
-}
+// const createMarkdownPage = async (createPage, element) => {
+//   // console.log("element", JSON.stringify(element.node.frontmatter))
+//   const markdownTemplate = path.resolve('./src/templates/MarkdownTemplate.jsx')
+//   createPage({
+//     path: element.node.frontmatter.slug,
+//     component: markdownTemplate
+//   })
+// }
 
 const filterMarkdownList = (markdownList, string) => {
   return markdownList.filter(({ node }) => node.frontmatter.app === string)

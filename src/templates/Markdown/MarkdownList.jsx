@@ -45,7 +45,7 @@ export default function MarkdownList({ pageContext }) {
       selectedModule.id === id ? moduleStyles.active : moduleStyles.link
 
     return (
-      <li key={id} id={id}>
+      <li key={id} id={id} style={{ cursor: 'pointer' }}>
         <a className={className} onClick={() => changeNodeid(id)}>
           {label}
         </a>
