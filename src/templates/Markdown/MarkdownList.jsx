@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../../components/Layout'
 import HeaderSection from '../../components/HeaderSection'
@@ -103,5 +103,6 @@ export default function MarkdownList({ location, pageContext }) {
 }
 
 MarkdownList.propTypes = {
-  pageContext: PropTypes.object.isRequired
+  pageContext: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }
