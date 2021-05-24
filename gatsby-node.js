@@ -68,6 +68,7 @@ exports.createPages = ({ graphql, actions }) => {
                   htmlAst
                   tableOfContents
                   frontmatter {
+                    slug
                     source
                     title
                     app
@@ -291,26 +292,15 @@ const createReadTheDocsPage = async (createPage, name, list) => {
   )
   createPage({
     path: `/read-the-docs/${name}`,
+    matchPath: `/read-the-docs/${name}/*`,
     component: markdownListTemplate,
     context: {
       markdownList: list,
-      name: name
+      name: name,
+      baseUrl: `/read-the-docs/${name}`
     }
   })
-
-  // list.forEach((element) => {
-  //   createMarkdownPage(createPage, element)
-  // })
 }
-
-// const createMarkdownPage = async (createPage, element) => {
-//   // console.log("element", JSON.stringify(element.node.frontmatter))
-//   const markdownTemplate = path.resolve('./src/templates/MarkdownTemplate.jsx')
-//   createPage({
-//     path: element.node.frontmatter.slug,
-//     component: markdownTemplate
-//   })
-// }
 
 const filterMarkdownList = (markdownList, string) => {
   return markdownList.filter(({ node }) => node.frontmatter.app === string)

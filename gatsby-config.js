@@ -99,7 +99,6 @@ module.exports = {
               }
             }
           },
-          'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-component',
             options: {
@@ -157,7 +156,7 @@ module.exports = {
         name: 'repo-read-the-docs',
         remote: `https://github.com/oceanprotocol/readthedocs.git`,
         local: 'markdowns/',
-        branch: 'main',
+        branch: 'feature/include-readmes',
         patterns: [
           'markdowns/ocean-py',
           'markdowns/aquarius',

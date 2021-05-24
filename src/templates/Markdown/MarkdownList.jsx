@@ -7,8 +7,8 @@ import styles from '../../templates/Doc.module.scss'
 import MarkdownTemplate from '../MarkdownTemplate'
 import sidebarStyles from '../../components/Sidebar.module.scss'
 import moduleStyles from './Markdown.module.scss'
-
 import { generatedNestedObject } from './utils'
+import { navigate } from 'gatsby'
 
 export default function MarkdownList({ pageContext }) {
   const flattenedModules = {}
@@ -38,6 +38,7 @@ export default function MarkdownList({ pageContext }) {
     })
 
     setSelectedModule(found.node)
+    navigate(pageContext.baseUrl + '/' + found.node.frontmatter.slug)
   }
 
   const generateModuleListElement = (id, label) => {
