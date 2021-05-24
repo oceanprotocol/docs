@@ -10,10 +10,9 @@ import moduleStyles from './Markdown.module.scss'
 import { generatedNestedObject } from './utils'
 import { navigate } from 'gatsby'
 
-export default function MarkdownList({ pageContext }) {
+export default function MarkdownList({ location, pageContext }) {
   const flattenedModules = {}
   const nestedModules = {}
-
   pageContext.markdownList.map(({ node }) => {
     const modulePath = node.frontmatter.module.split('.')
     const key =
@@ -28,16 +27,18 @@ export default function MarkdownList({ pageContext }) {
 
   const moduleKeys = Object.keys(flattenedModules).sort()
 
-  const [selectedModule, setSelectedModule] = useState(
-    flattenedModules[moduleKeys[0]][0]
-  )
+  const path = location.pathname.replace(pageContext.baseUrl + '/', '')
+  const found = pageContext.markdownList.find(({ node }) => {
+    return node.frontmatter.slug === path
+  })
+
+  const selectedModule = found ? found.node : flattenedModules[moduleKeys[0]][0]
 
   const changeNodeid = (id) => {
     const found = pageContext.markdownList.find(({ node }) => {
       return node.id === id
     })
 
-    setSelectedModule(found.node)
     navigate(pageContext.baseUrl + '/' + found.node.frontmatter.slug)
   }
 
