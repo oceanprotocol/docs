@@ -19,6 +19,7 @@ export default function MarkdownTemplate({ data }) {
             style={{ cursor: 'pointer' }}
             href={post.frontmatter.source}
             target="_blank"
+            rel="noopener noreferrer"
           >
             View source on Github
           </a>
