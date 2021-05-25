@@ -131,9 +131,10 @@ exports.createPages = ({ graphql, actions }) => {
         await createSwaggerPages(createPage)
 
         // API: ocean.js
-        const lastRelease = result.data.oceanJs.repository.releases.edges.filter(
-          ({ node }) => !node.isPrerelease && !node.isDraft
-        )[0].node.releaseAssets.edges[0].node
+        const lastRelease =
+          result.data.oceanJs.repository.releases.edges.filter(
+            ({ node }) => !node.isPrerelease && !node.isDraft
+          )[0].node.releaseAssets.edges[0].node
 
         await createTypeDocPage(
           createPage,
