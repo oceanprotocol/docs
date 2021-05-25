@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import DocContent from '../components/DocContent'
+import styles from '../components/DocFooter.module.scss'
 import Content from '../components/Content'
 
 export default function MarkdownTemplate({ data }) {
@@ -13,6 +14,16 @@ export default function MarkdownTemplate({ data }) {
         ) : (
           <div>No content present</div>
         )}
+        <footer className={styles.footer}>
+          <a
+            style={{ cursor: 'pointer' }}
+            href={post.frontmatter.source}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View source on Github
+          </a>
+        </footer>
       </Content>
     </>
   )

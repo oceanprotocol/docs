@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../../components/Layout'
 import HeaderSection from '../../components/HeaderSection'
@@ -7,13 +7,12 @@ import styles from '../../templates/Doc.module.scss'
 import MarkdownTemplate from '../MarkdownTemplate'
 import sidebarStyles from '../../components/Sidebar.module.scss'
 import moduleStyles from './Markdown.module.scss'
-
 import { generatedNestedObject } from './utils'
+import { navigate } from 'gatsby'
 
-export default function MarkdownList({ pageContext }) {
+export default function MarkdownList({ location, pageContext }) {
   const flattenedModules = {}
   const nestedModules = {}
-
   pageContext.markdownList.map(({ node }) => {
     const modulePath = node.frontmatter.module.split('.')
     const key =
@@ -28,16 +27,19 @@ export default function MarkdownList({ pageContext }) {
 
   const moduleKeys = Object.keys(flattenedModules).sort()
 
-  const [selectedModule, setSelectedModule] = useState(
-    flattenedModules[moduleKeys[0]][0]
-  )
+  const path = location.pathname.replace(pageContext.baseUrl + '/', '')
+  const found = pageContext.markdownList.find(({ node }) => {
+    return node.frontmatter.slug === path
+  })
+
+  const selectedModule = found ? found.node : flattenedModules[moduleKeys[0]][0]
 
   const changeNodeid = (id) => {
     const found = pageContext.markdownList.find(({ node }) => {
       return node.id === id
     })
 
-    setSelectedModule(found.node)
+    navigate(pageContext.baseUrl + '/' + found.node.frontmatter.slug)
   }
 
   const generateModuleListElement = (id, label) => {
@@ -45,7 +47,7 @@ export default function MarkdownList({ pageContext }) {
       selectedModule.id === id ? moduleStyles.active : moduleStyles.link
 
     return (
-      <li key={id} id={id}>
+      <li key={id} id={id} style={{ cursor: 'pointer' }}>
         <a className={className} onClick={() => changeNodeid(id)}>
           {label}
         </a>
@@ -101,5 +103,6 @@ export default function MarkdownList({ pageContext }) {
 }
 
 MarkdownList.propTypes = {
-  pageContext: PropTypes.object.isRequired
+  pageContext: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }
