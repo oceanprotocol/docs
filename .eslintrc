@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "extends": [
     "oceanprotocol",
     "oceanprotocol/react",
@@ -8,7 +9,7 @@
   "rules": {
     "prettier/prettier": "error"
   },
-  "env": { "browser": true, "node": true, "es2020": true, "jest": true },
+  "env": { "browser": true, "es6": true, "node": true },
   "settings": {
     "react": {
       "version": "detect"
