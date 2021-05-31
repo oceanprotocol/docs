@@ -175,7 +175,8 @@ exports.createPages = ({ graphql, actions }) => {
 //
 const createTypeDocPage = async (createPage, name, downloadUrl) => {
   try {
-    const typedoc = await fetch(downloadUrl)
+    const typedoc = require('./ocean.js.json')
+    // const typedoc = await fetch(downloadUrl)
     const typedocTemplate = path.resolve('./src/templates/Typedoc/index.jsx')
     const slug = `/references/${name}/`
 
@@ -184,39 +185,8 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
       component: typedocTemplate,
       context: {
         slug,
-        typedoc: await typedoc.json(),
-        // We define the classes here so the data object passed as page context
-        // is as small as possible.
-        // Caveat: no live update during development when these values are changed.
-        //
-        // TODO: defining these classes for inclusion
-        // needs to be handled somewhere else to keep
-        // it generic for all TypeDoc specs
-        classes: [
-          'ocean/Ocean',
-          'ocean/Account',
-          'ocean/Assets',
-          'ocean/Compute',
-          'ocean/Versions',
-          'ocean/DID',
-          'ddo/DDO',
-          'metadatacache/MetadataCache',
-          'metadatacache/OnChainMetaDataCache',
-          'provider/Provider',
-          'datatokens/Datatokens',
-          'datatokens/Network',
-          'datatokens/Web3Provider',
-          'balancer/OceanPool',
-          'balancer/Pool',
-          'balancer/PoolFactory',
-          'exchange/FixedRateExchange',
-          'models/Config',
-          'utils/ConfigHelper',
-          'utils/GasUtils',
-          'ocean/utils/OceanUtils',
-          'ocean/utils/WebServiceConnector',
-          'utils/Logger'
-        ]
+        typedoc
+        // typedoc: await typedoc.json()
       }
     })
   } catch (error) {

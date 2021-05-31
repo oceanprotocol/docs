@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
-import shortid from 'shortid'
 import Scroll from '../../components/Scroll'
 import styles from './Entities.module.scss'
-import { filterByKindOfProperty } from './utils'
+import shortid from 'shortid'
 
 const Type = ({ type }) => {
   let isArray = false
@@ -33,7 +32,7 @@ const Type = ({ type }) => {
             {typeArguments.map((typeArgument, i) => (
               <span key={shortid.generate()}>
                 {i !== 0 && <span className={styles.typeSymbol}>, </span>}
-                <Type type={typeArgument} />
+                {typeArgument.name}
               </span>
             ))}
           </span>
@@ -48,19 +47,6 @@ const Type = ({ type }) => {
 
 Type.propTypes = {
   type: PropTypes.object.isRequired
-}
-
-const PropertyDetails = ({ property }) => {
-  const { type } = property
-  return (
-    <div>
-      <Type type={type} />
-    </div>
-  )
-}
-
-PropertyDetails.propTypes = {
-  property: PropTypes.object
 }
 
 const MethodDetails = ({ property }) => {
@@ -78,7 +64,7 @@ const MethodDetails = ({ property }) => {
             const description = comment && (comment.text || comment.shortText)
 
             return (
-              <div className={styles.parameters} key={shortid.generate()}>
+              <div className={styles.parameters} key={name}>
                 <h5>
                   <code>{name}</code>
                   {isOptional && (
@@ -119,7 +105,6 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
   const { isPublic, isStatic } = flags
   const signature = signatures && signatures[0]
   const comment = (signature && signature.comment) || property.comment
-  const { fileName, line } = sources[0]
   const deprecation = (decorators || []).filter(
     ({ name }) => name === 'deprecated'
   )[0] // Assuming deprecated annotation
@@ -129,7 +114,10 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
     deprecatedSlug = deprecatedUse && slugify(deprecatedUse.replace('.', '-'))
   }
 
-  const sourceLink = `${sourceUrl}${fileName}#L${line}`
+  const sourceLink =
+    sources && sources[0]
+      ? `${sourceUrl}${sources[0].fileName}#L${sources[0].line}`
+      : ''
 
   return (
     <div
@@ -175,18 +163,22 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
             case 'Method':
               return <MethodDetails property={property} />
             case 'Property':
-              return <PropertyDetails property={property} />
+              return (
+                <div>
+                  <Type type={property} />
+                </div>
+              )
           }
         })()}
 
-      {fileName && (
+      {sources && sources[0] && (
         <a
           className={styles.sourceLink}
           href={sourceLink}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {`${fileName}#L${line}`}
+          {`${sources[0].fileName}#L${sources[0].line}`}
         </a>
       )}
     </div>
@@ -201,7 +193,7 @@ PropertyWrapper.propTypes = {
 
 const Entities = ({ entities, sourceUrl }) =>
   entities.map(({ name, comment, children }) => (
-    <div key={shortid.generate()} id={name && slugify(name)}>
+    <div key={name} id={name && slugify(name)}>
       <h2 className={styles.entityName}>
         <code>{name}</code>
       </h2>
@@ -213,16 +205,14 @@ const Entities = ({ entities, sourceUrl }) =>
       )}
 
       {children &&
-        children
-          .filter(filterByKindOfProperty)
-          .map((property) => (
-            <PropertyWrapper
-              key={shortid.generate()}
-              property={property}
-              sourceUrl={sourceUrl}
-              parentAnchor={name && slugify(name)}
-            />
-          ))}
+        children.map((property) => (
+          <PropertyWrapper
+            key={property.id}
+            property={property}
+            sourceUrl={sourceUrl}
+            parentAnchor={name && slugify(name)}
+          />
+        ))}
     </div>
   ))
 
