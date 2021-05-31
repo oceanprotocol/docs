@@ -131,10 +131,12 @@ exports.createPages = ({ graphql, actions }) => {
         await createSwaggerPages(createPage)
 
         // API: ocean.js
-        const lastRelease =
-          result.data.oceanJs.repository.releases.edges.filter(
-            ({ node }) => !node.isPrerelease && !node.isDraft
-          )[0].node.releaseAssets.edges[0].node
+        const lastRelease = result.data.oceanJs.repository.releases.edges.filter(
+          ({ node }) =>
+            !node.isPrerelease &&
+            !node.isDraft &&
+            node.releaseAssets.edges.length > 0
+        )[0].node.releaseAssets.edges[0].node
 
         await createTypeDocPage(
           createPage,
@@ -175,7 +177,7 @@ exports.createPages = ({ graphql, actions }) => {
 //
 const createTypeDocPage = async (createPage, name, downloadUrl) => {
   try {
-    const typedoc = require('./ocean.js.json')
+    const typedoc = require('./lib-0.14.9.json')
     // const typedoc = await fetch(downloadUrl)
     const typedocTemplate = path.resolve('./src/templates/Typedoc/index.jsx')
     const slug = `/references/${name}/`
