@@ -28,10 +28,10 @@ export default function TypedocTemplate({ data, path, location, pageContext }) {
 }
 
 TypedocTemplate.propTypes = {
-  pageContext: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired,
   data: PropTypes.object.isRequired,
-  path: PropTypes.string.isRequired
+  path: PropTypes.string.isRequired,
+  pageContext: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }
 
 export const TypedocQuery = graphql`
