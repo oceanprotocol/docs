@@ -116,7 +116,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
 
   const sourceLink =
     sources && sources[0]
-      ? `${sourceUrl}${sources[0].fileName}#L${sources[0].line}`
+      ? `${sourceUrl}src/${sources[0].fileName}#L${sources[0].line}`
       : ''
 
   return (
@@ -178,7 +178,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {`${sources[0].fileName}#L${sources[0].line}`}
+          {`src/${sources[0].fileName}#L${sources[0].line}`}
         </a>
       )}
     </div>
@@ -191,8 +191,8 @@ PropertyWrapper.propTypes = {
   parentAnchor: PropTypes.string
 }
 
-const Entities = ({ entities, sourceUrl }) =>
-  entities.map(({ name, comment, children }) => (
+const Entities = ({ entities, sourceUrl }) => {
+  return entities.map(({ name, comment, children }) => (
     <div key={name} id={name && slugify(name)}>
       <h2 className={styles.entityName}>
         <code>{name}</code>
@@ -215,7 +215,7 @@ const Entities = ({ entities, sourceUrl }) =>
         ))}
     </div>
   ))
-
+}
 Entities.propTypes = {
   entities: PropTypes.array.isRequired,
   sourceUrl: PropTypes.string

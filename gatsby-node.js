@@ -161,10 +161,12 @@ exports.createPages = ({ graphql, actions }) => {
         const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
         const aquariusList = filterMarkdownList(markdowns, 'aquarius')
         const providerList = filterMarkdownList(markdowns, 'provider')
+        const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
+        await createReadTheDocsPage(createPage, 'ocean-subgraph', subgraphList)
 
         resolve()
       })
@@ -177,8 +179,7 @@ exports.createPages = ({ graphql, actions }) => {
 //
 const createTypeDocPage = async (createPage, name, downloadUrl) => {
   try {
-    const typedoc = require('./lib-0.14.9.json')
-    // const typedoc = await fetch(downloadUrl)
+    const typedoc = await fetch(downloadUrl)
     const typedocTemplate = path.resolve('./src/templates/Typedoc/index.jsx')
     const slug = `/references/${name}/`
 
@@ -187,8 +188,7 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
       component: typedocTemplate,
       context: {
         slug,
-        typedoc
-        // typedoc: await typedoc.json()
+        typedoc: await typedoc.json()
       }
     })
   } catch (error) {
