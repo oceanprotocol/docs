@@ -61,7 +61,7 @@ export default function ApiSwaggerTemplate({
         data={data}
         path={path}
         location={location}
-        pageContext={pageContext}
+        slug={pageContext.slug}
         info={info}
         toc={<Toc data={api} />}
       >

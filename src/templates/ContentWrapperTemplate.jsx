@@ -14,9 +14,10 @@ export default class ContentWrapperTemplate extends Component {
   static propTypes = {
     data: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
-    pageContext: PropTypes.object.isRequired,
+    slug: PropTypes.string.isRequired,
     toc: PropTypes.object.isRequired,
-    info: PropTypes.object.isRequired
+    info: PropTypes.object.isRequired,
+    children: PropTypes.any
   }
 
   sectionTitle = this.props.data.allSectionsYaml.edges.map(({ node }) => {
@@ -26,7 +27,7 @@ export default class ContentWrapperTemplate extends Component {
   })
 
   render() {
-    const { location, pageContext } = this.props
+    const { location } = this.props
     const { title, description, version } = this.props.info
 
     return (
@@ -38,7 +39,7 @@ export default class ContentWrapperTemplate extends Component {
         <Seo
           title={title}
           description={description}
-          slug={pageContext.slug}
+          slug={this.props.slug}
           article
           location={location}
         />

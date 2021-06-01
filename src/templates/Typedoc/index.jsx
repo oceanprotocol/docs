@@ -17,7 +17,7 @@ export default function TypedocTemplate({ data, path, location, pageContext }) {
         data={data}
         path={path}
         location={location}
-        pageContext={pageContext}
+        slug={pageContext.slug}
         info={typedoc.info}
         toc={<Toc data={typedoc.children} />}
       >
