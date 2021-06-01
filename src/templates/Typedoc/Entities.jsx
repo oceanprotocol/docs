@@ -100,6 +100,10 @@ MethodDetails.propTypes = {
   property: PropTypes.object
 }
 
+const getSourceLink = (sources, sourceUrl) => {
+  return sources && sources[0] ? `${sourceUrl}src/${sources[0].fileName}#L${sources[0].line}` : ''
+}
+
 const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
   const { name, kindString, flags, signatures, sources, decorators } = property
   const { isPublic, isStatic } = flags
@@ -115,10 +119,7 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
     deprecatedSlug = deprecatedUse && slugify(deprecatedUse.replace('.', '-'))
   }
 
-  const sourceLink =
-    sources && sources[0]
-      ? `${sourceUrl}src/${sources[0].fileName}#L${sources[0].line}`
-      : ''
+  const sourceLink = getSourceLink(sources, sourceUrl)
 
   return (
     <div
