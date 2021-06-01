@@ -101,7 +101,9 @@ MethodDetails.propTypes = {
 }
 
 const getSourceLink = (sources, sourceUrl) => {
-  return sources && sources[0] ? `${sourceUrl}src/${sources[0].fileName}#L${sources[0].line}` : ''
+  return sources && sources[0]
+    ? `${sourceUrl}src/${sources[0].fileName}#L${sources[0].line}`
+    : ''
 }
 
 const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
