@@ -8,7 +8,6 @@ import HeaderSection from '../../components/HeaderSection'
 import Sidebar from '../../components/Sidebar'
 import DocHeader from '../../components/DocHeader'
 import Seo from '../../components/Seo'
-import { cleanTypedocData } from './utils'
 
 import Entities from './Entities'
 import Toc from './Toc'
@@ -22,11 +21,6 @@ export default class TypedocTemplate extends Component {
     pageContext: PropTypes.object.isRequired
   }
 
-  typedocCleaned = cleanTypedocData(
-    this.props.pageContext.typedoc,
-    this.props.pageContext.classes
-  )
-
   // output section title as defined in sections.yml
   sectionTitle = this.props.data.allSectionsYaml.edges.map(({ node }) => {
     // compare section against section title from sections.yml
@@ -38,8 +32,7 @@ export default class TypedocTemplate extends Component {
   render() {
     const { location, pageContext } = this.props
     const { typedoc } = pageContext
-    const { info } = typedoc
-    const { title, description, version, sourceUrl } = info
+    const { title, description, version, sourceUrl } = typedoc.info
 
     return (
       <>
@@ -66,7 +59,7 @@ export default class TypedocTemplate extends Component {
                   sidebar="references"
                   collapsed
                   toc
-                  tocComponent={<Toc data={this.typedocCleaned} />}
+                  tocComponent={<Toc data={typedoc.children} />}
                 />
               </aside>
               <article className={stylesDoc.main}>
@@ -76,10 +69,7 @@ export default class TypedocTemplate extends Component {
                   prepend={<span className={stylesDoc.version}>{version}</span>}
                 />
 
-                <Entities
-                  entities={this.typedocCleaned}
-                  sourceUrl={sourceUrl}
-                />
+                <Entities entities={typedoc.children} sourceUrl={sourceUrl} />
               </article>
             </main>
           </Content>

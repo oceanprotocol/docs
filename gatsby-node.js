@@ -132,7 +132,10 @@ exports.createPages = ({ graphql, actions }) => {
 
         // API: ocean.js
         const lastRelease = result.data.oceanJs.repository.releases.edges.filter(
-          ({ node }) => !node.isPrerelease && !node.isDraft
+          ({ node }) =>
+            !node.isPrerelease &&
+            !node.isDraft &&
+            node.releaseAssets.edges.length > 0
         )[0].node.releaseAssets.edges[0].node
 
         await createTypeDocPage(
@@ -158,10 +161,12 @@ exports.createPages = ({ graphql, actions }) => {
         const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
         const aquariusList = filterMarkdownList(markdowns, 'aquarius')
         const providerList = filterMarkdownList(markdowns, 'provider')
+        const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
+        await createReadTheDocsPage(createPage, 'ocean-subgraph', subgraphList)
 
         resolve()
       })
@@ -183,39 +188,7 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
       component: typedocTemplate,
       context: {
         slug,
-        typedoc: await typedoc.json(),
-        // We define the classes here so the data object passed as page context
-        // is as small as possible.
-        // Caveat: no live update during development when these values are changed.
-        //
-        // TODO: defining these classes for inclusion
-        // needs to be handled somewhere else to keep
-        // it generic for all TypeDoc specs
-        classes: [
-          'ocean/Ocean',
-          'ocean/Account',
-          'ocean/Assets',
-          'ocean/Compute',
-          'ocean/Versions',
-          'ocean/DID',
-          'ddo/DDO',
-          'metadatacache/MetadataCache',
-          'metadatacache/OnChainMetaDataCache',
-          'provider/Provider',
-          'datatokens/Datatokens',
-          'datatokens/Network',
-          'datatokens/Web3Provider',
-          'balancer/OceanPool',
-          'balancer/Pool',
-          'balancer/PoolFactory',
-          'exchange/FixedRateExchange',
-          'models/Config',
-          'utils/ConfigHelper',
-          'utils/GasUtils',
-          'ocean/utils/OceanUtils',
-          'ocean/utils/WebServiceConnector',
-          'utils/Logger'
-        ]
+        typedoc: await typedoc.json()
       }
     })
   } catch (error) {
