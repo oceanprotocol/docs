@@ -104,7 +104,8 @@ const PropertyWrapper = ({ property, sourceUrl, parentAnchor }) => {
   const { name, kindString, flags, signatures, sources, decorators } = property
   const { isPublic, isStatic } = flags
   const signature = signatures && signatures[0]
-  const comment = (signature && signature.comment) || property.comment
+  const comment = signature?.comment || property.comment
+
   const deprecation = (decorators || []).filter(
     ({ name }) => name === 'deprecated'
   )[0] // Assuming deprecated annotation
