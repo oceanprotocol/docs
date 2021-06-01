@@ -30,7 +30,10 @@ export default function TypedocTemplate({ data, path, location, pageContext }) {
 TypedocTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
-  pageContext: PropTypes.object.isRequired,
+  pageContext: PropTypes.shape({
+    slug: PropTypes.string.isRequired,
+    typedoc: PropTypes.object.isRequired
+  }),
   location: PropTypes.object.isRequired
 }
 

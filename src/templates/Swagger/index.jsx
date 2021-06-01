@@ -83,7 +83,11 @@ export default function ApiSwaggerTemplate({
 }
 
 ApiSwaggerTemplate.propTypes = {
-  pageContext: PropTypes.object.isRequired,
+  pageContext: PropTypes.shape({
+    slug: PropTypes.string.isRequired,
+    api: PropTypes.object.isRequired,
+    name: PropTypes.string.isRequired
+  }),
   location: PropTypes.object.isRequired,
   data: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired
