@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import Entities from './Entities'
 import Toc from './Toc'
@@ -24,6 +25,13 @@ export default function TypedocTemplate({ data, path, location, pageContext }) {
       </ContentWrapperTemplate>
     </>
   )
+}
+
+TypedocTemplate.propTypes = {
+  pageContext: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
+  path: PropTypes.string.isRequired
 }
 
 export const TypedocQuery = graphql`

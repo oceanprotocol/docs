@@ -82,6 +82,13 @@ export default function ApiSwaggerTemplate({
   )
 }
 
+ApiSwaggerTemplate.propTypes = {
+  pageContext: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
+  path: PropTypes.string.isRequired
+}
+
 export const apiSwaggerQuery = graphql`
   query {
     allSectionsYaml {
