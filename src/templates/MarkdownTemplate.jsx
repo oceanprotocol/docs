@@ -23,6 +23,7 @@ export default function MarkdownTemplate({ data }) {
           >
             View source on Github
           </a>
+          v{post.frontmatter.version}
         </footer>
       </Content>
     </>
