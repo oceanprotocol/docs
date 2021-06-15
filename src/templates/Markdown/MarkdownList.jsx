@@ -71,7 +71,6 @@ export default function MarkdownList({ location, pageContext }) {
       )
     }
 
-
     keys.forEach((element) => {
       children.push(
         <ul className={sidebarStyles.list}>
