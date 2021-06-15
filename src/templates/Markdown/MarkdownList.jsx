@@ -63,11 +63,15 @@ export default function MarkdownList({ location, pageContext }) {
 
     const keys = Object.keys(nestedModules).sort()
     const children = []
-    children.push(
-      <li key={title}>
-        <b>{title}</b>
-      </li>
-    )
+    if (title) {
+      children.push(
+        <li key={title}>
+          <b>{title}</b>
+        </li>
+      )
+    }
+
+
     keys.forEach((element) => {
       children.push(
         <ul className={sidebarStyles.list}>
