@@ -16,6 +16,8 @@
   items:
     - title: Polygon (ex Matic)
       link: /tutorials/polygon-bridge/
+    - title: Binance Smart Chain (BSC)
+      link: /tutorials/bsc-bridge/
 
 - group: Marketplaces
   items:
