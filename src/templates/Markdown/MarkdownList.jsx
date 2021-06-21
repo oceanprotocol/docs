@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import MarkdownTemplate from '../MarkdownTemplate'
 import sidebarStyles from '../../components/Sidebar.module.scss'
-import moduleStyles from '../../components/Sidebar.module.scss'
 import { generatedNestedObject } from './utils'
-import { navigate } from 'gatsby'
+import { navigate, graphql } from 'gatsby'
 import ContentWrapperTemplate from '../ContentWrapperTemplate'
 
 export default function MarkdownList({ data, location, pageContext }) {
@@ -41,7 +40,7 @@ export default function MarkdownList({ data, location, pageContext }) {
 
   const generateModuleListElement = (id, label) => {
     const className =
-      selectedModule.id === id ? moduleStyles.active : moduleStyles.link
+      selectedModule.id === id ? sidebarStyles.active : sidebarStyles.link
 
     return (
       <li key={id} id={id} style={{ cursor: 'pointer' }}>
@@ -94,7 +93,6 @@ export default function MarkdownList({ data, location, pageContext }) {
         toc={nestedSidebarList}
       >
         <MarkdownTemplate data={selectedModule} />
-
       </ContentWrapperTemplate>
     </>
   )
@@ -102,21 +100,20 @@ export default function MarkdownList({ data, location, pageContext }) {
 
 MarkdownList.propTypes = {
   pageContext: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired
+  location: PropTypes.object.isRequired,
+  data: PropTypes.object
 }
 
-
 export const MarkdownListQuery = graphql`
-      query {
-        allSectionsYaml {
-        edges {
+  query {
+    allSectionsYaml {
+      edges {
         node {
-        title
+          title
           description
-      link
+          link
         }
       }
     }
   }
-      `
-
+`
