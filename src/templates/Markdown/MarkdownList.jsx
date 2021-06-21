@@ -1,16 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Layout from '../../components/Layout'
-import HeaderSection from '../../components/HeaderSection'
-import Content from '../../components/Content'
-import styles from '../../templates/Doc.module.scss'
 import MarkdownTemplate from '../MarkdownTemplate'
 import sidebarStyles from '../../components/Sidebar.module.scss'
 import moduleStyles from './Markdown.module.scss'
 import { generatedNestedObject } from './utils'
 import { navigate } from 'gatsby'
+import ContentWrapperTemplate from '../ContentWrapperTemplate'
 
-export default function MarkdownList({ location, pageContext }) {
+export default function MarkdownList({ data, location, pageContext }) {
   const flattenedModules = {}
   const nestedModules = {}
   pageContext.markdownList.map(({ node }) => {
@@ -63,13 +60,12 @@ export default function MarkdownList({ location, pageContext }) {
 
     const keys = Object.keys(nestedModules).sort()
     const children = []
-    if (title) {
+    if (title)
       children.push(
         <li key={title}>
           <b>{title}</b>
         </li>
       )
-    }
 
     keys.forEach((element) => {
       children.push(
@@ -84,19 +80,23 @@ export default function MarkdownList({ location, pageContext }) {
   const nestedSidebarList = sidebarList(null, nestedModules)
 
   return (
-    <Layout>
-      <HeaderSection title={pageContext.name} />
-      <Content>
-        <main className={styles.wrapper}>
-          <aside className={styles.sidebar}>
-            <div className={sidebarStyles.sidebar}>{nestedSidebarList}</div>
-          </aside>
-          <article className={styles.main}>
-            <MarkdownTemplate data={selectedModule} />
-          </article>
-        </main>
-      </Content>
-    </Layout>
+    <>
+      <ContentWrapperTemplate
+        data={data}
+        path={path}
+        location={location}
+        slug={pageContext.baseUrl}
+        info={{
+          title: selectedModule.frontmatter.title,
+          description: null,
+          version: selectedModule.frontmatter.version
+        }}
+        toc={nestedSidebarList}
+      >
+        <MarkdownTemplate data={selectedModule} />
+
+      </ContentWrapperTemplate>
+    </>
   )
 }
 
@@ -104,3 +104,19 @@ MarkdownList.propTypes = {
   pageContext: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired
 }
+
+
+export const MarkdownListQuery = graphql`
+      query {
+        allSectionsYaml {
+        edges {
+        node {
+        title
+          description
+      link
+        }
+      }
+    }
+  }
+      `
+

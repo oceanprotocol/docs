@@ -122,7 +122,7 @@ export default class Sidebar extends Component {
         {sidebarfile.map((group, i) => (
           <div key={i}>
             {collapsed ? (
-              group.items.some((item) => item.link === location.pathname) ? (
+              group.items.some((item) => location.pathname.startsWith(item.link)) ? (
                 <SidebarGroup
                   i={i}
                   group={group}
