@@ -68,7 +68,7 @@ export default function MarkdownList({ data, location, pageContext }) {
 
     keys.forEach((element) => {
       children.push(
-        <ul className={sidebarStyles.list}>
+        <ul >
           {sidebarList(element, nestedModules[element])}
         </ul>
       )
@@ -76,7 +76,7 @@ export default function MarkdownList({ data, location, pageContext }) {
     return children
   }
 
-  const nestedSidebarList = sidebarList(null, nestedModules)
+  const nestedSidebarList = sidebarList("", nestedModules)
 
   return (
     <>
