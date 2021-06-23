@@ -68,15 +68,13 @@ export default function MarkdownList({ data, location, pageContext }) {
 
     keys.forEach((element) => {
       children.push(
-        <ul key={element}>
-          {sidebarList(element, nestedModules[element])}
-        </ul>
+        <ul key={element}>{sidebarList(element, nestedModules[element])}</ul>
       )
     })
     return children
   }
 
-  const nestedSidebarList = sidebarList("", nestedModules)
+  const nestedSidebarList = sidebarList('', nestedModules)
 
   return (
     <>
