@@ -68,7 +68,7 @@ export default function MarkdownList({ data, location, pageContext }) {
 
     keys.forEach((element) => {
       children.push(
-        <ul >
+        <ul key={element}>
           {sidebarList(element, nestedModules[element])}
         </ul>
       )
@@ -99,7 +99,11 @@ export default function MarkdownList({ data, location, pageContext }) {
 }
 
 MarkdownList.propTypes = {
-  pageContext: PropTypes.object.isRequired,
+  pageContext: PropTypes.shape({
+    name: PropTypes.string,
+    baseUrl: PropTypes.string,
+    markdownList: PropTypes.arrayOf(PropTypes.object)
+  }),
   location: PropTypes.object.isRequired,
   data: PropTypes.object
 }
