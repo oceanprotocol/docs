@@ -15,7 +15,7 @@ export default class ContentWrapperTemplate extends Component {
     data: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
     slug: PropTypes.string.isRequired,
-    toc: PropTypes.object.isRequired,
+    toc: PropTypes.any.isRequired,
     info: PropTypes.object.isRequired,
     children: PropTypes.any
   }

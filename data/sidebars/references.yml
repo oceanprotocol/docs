@@ -16,7 +16,7 @@
 - group: Aquarius Py Module
   items:
     - title: API Reference
-      link: /read-the-docs/aquarius/
+      link: /references/read-the-docs/aquarius/
 
 - group: provider REST API
   items:
@@ -26,7 +26,7 @@
 - group: Provider Py Module
   items:
     - title: API Reference
-      link: /read-the-docs/provider/
+      link: /references/read-the-docs/provider/
 
 - group: react
   items:
@@ -36,7 +36,7 @@
 - group: ocean.py
   items:
     - title: API Reference
-      link: /read-the-docs/ocean-py/
+      link: /references/read-the-docs/ocean-py/
 
 - group: Smart Contracts
   items:
@@ -51,4 +51,4 @@
 - group: Ocean Subgraph
   items:
     - title: Readme References
-      link: /read-the-docs/ocean-subgraph/
+      link: /references/read-the-docs/ocean-subgraph/

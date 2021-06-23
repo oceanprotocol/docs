@@ -266,13 +266,13 @@ const createReadTheDocsPage = async (createPage, name, list) => {
     './src/templates/Markdown/MarkdownList.jsx'
   )
   createPage({
-    path: `/read-the-docs/${name}`,
-    matchPath: `/read-the-docs/${name}/*`,
+    path: `/references/read-the-docs/${name}`,
+    matchPath: `/references/read-the-docs/${name}/*`,
     component: markdownListTemplate,
     context: {
       markdownList: list,
       name: name,
-      baseUrl: `/read-the-docs/${name}`
+      baseUrl: `/references/read-the-docs/${name}`
     }
   })
 }
