@@ -6,6 +6,7 @@ description:
 ## Intro to BSC's Bridge
 
 BSC provides several bridge options, including:
+
 - withdraw crypto from Binance.com, and
 - use Binance bridge.
 
