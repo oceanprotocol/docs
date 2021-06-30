@@ -16,24 +16,24 @@ MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wal
 **Get Tokens**
 
 - ETH: [Exchanges to purchase](https://www.coingecko.com/en/coins/ethereum#markets)
-- OCEAN: [Official exchanges to purchase](https://oceanprotocol.com/token#get).
-  - Token address: `0x967da4048cD07aB37855c090aAF366e4ce1b9F48`
+- OCEAN: [Exchanges to purchase](https://oceanprotocol.com/token#get)
+  - OCEAN address on Ethereum mainnet: [0x967da4048cD07aB37855c090aAF366e4ce1b9F48](https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48)
 
 **Additional Components**
 
 | What         | URL                                          |
 | ------------ | -------------------------------------------- |
-| Explorer     | `https://etherscan.io`                       |
-| Ocean Market | `https://market.oceanprotocol.com`           |
+| Explorer     | https://etherscan.io                         |
+| Ocean Market | https://market.oceanprotocol.com             |
 | Provider     | `https://provider.mainnet.oceanprotocol.com` |
 | Aquarius     | `https://aquarius.mainnet.oceanprotocol.com` |
 | Subgraph     | `https://subgraph.mainnet.oceanprotocol.com` |
 
 ## Polygon Mainnet
 
-The Polygon Mainnet is another of the Ocean's production networks.
+Ocean is [deployed](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) to the [Polygon](https://polygon.technology/) production network. Polygon's native token is MATIC.
 
-Polygon is an external network that you might not find as a predefined one inside your wallet. Thus you'll need to connect to it manually using the information below:
+If you don't find Polygon as a predefined network in your wallet, you can connect to it manually via [this guide]((/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
 
 | What               | Value                                    |
 |--------------------|------------------------------------------|
@@ -42,28 +42,60 @@ Polygon is an external network that you might not find as a predefined one insid
 | Chain Id           | `137`                                    |
 | Currency Symbol    | `MATIC`                                  |
 | Block Explorer URL | `https://explorer.matic.network/`        |
-  
-Follow our guide to learn how to use those values to [set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network).
 
 **Get Tokens**
 
-- Polygon (MATIC): [Exchanges to purchase](https://www.coingecko.com/en/coins/polygon#markets)
-- OCEAN:
-  - Token address: `0x282d8efCe846A88B159800bd4130ad77443Fa1A1`
+- MATIC: [Exchanges to purchase](https://www.coingecko.com/en/coins/polygon#markets)
+- OCEAN: [Exchanges to purchase](https://oceanprotocol.com/token#get)
+  - OCEAN address on Polygon: [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/token/0x282d8efCe846A88B159800bd4130ad77443Fa1A1)
+
+**Additional Components**
+
+| What         | URL                                          |
+| ------------ | -------------------------------------------- |
+| Explorer     | https://polygonscan.com/                     |
+| Ocean Market | Point wallet to Polygon network, at https://market.oceanprotocol.com |
+| Provider     | `https://provider.polygon.oceanprotocol.com` |
+| Aquarius     | `https://aquarius.polygon.oceanprotocol.com` |
+| Subgraph     | `https://subgraph.polygon.oceanprotocol.com` |
+
+**Bridge**
+
+Check our [Polygon Bridge guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
+
+## Binance Smart Chain
+
+Ocean is deployed to [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc), another production network. BSC's native token is BNB - the Binance token.
+
+If you don't find BSC as a predefined network in your wallet, you can connect to it manually via [Binance's guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain) or [Ocean's guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
+
+| What               | Value                                    |
+|--------------------|------------------------------------------|
+| Network Name       | `Smart Chain`                            |
+| RPC                | `https://bsc-dataseed.binance.org/`      |
+| Chain Id           | `56`                                     |
+| Currency Symbol    | `BNB`                                    |
+| Block Explorer URL | `https://bscscan.com`                    |
+
+**Get Tokens**
+
+- BNB: Exchanges to purchase: typically [binance.com](https://www.binance.com)
+- OCEAN: [Exchanges to purchase](https://oceanprotocol.com/token#get)
+  - OCEAN address on BSC: [0xdce07662ca8ebc241316a15b611c89711414dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a)
 
 **Additional Components**
 
 | What         | URL                                                                   |
 |--------------|-----------------------------------------------------------------------|
-| Explorer     | `https://explorer-mainnet.maticvigil.com`                             |
-| Ocean Market | Point wallet to Polygon network, at `https://market.oceanprotocol.com`|
-| Provider     | `https://provider.polygon.oceanprotocol.com`                          |
-| Aquarius     | `https://aquarius.polygon.oceanprotocol.com`                          |
-| Subgraph     | `https://subgraph.polygon.oceanprotocol.com`                          |
+| Explorer     | https://bscscan.com/                                                  |
+| Ocean Market | Point wallet to BSC network, at https://market.oceanprotocol.com      |
+| Provider     | `https://provider.bsc.oceanprotocol.com`                              |
+| Aquarius     | `https://aquarius.bsc.oceanprotocol.com`                              |
+| Subgraph     | `https://subgraph.bsc.oceanprotocol.com`                              |
 
 **Bridge**
 
-Check our [Polygon Bridge guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
+Check our [BSC Bridge guide](/tutorials/bsc-bridge/) to learn how you can deposit, withdraw and send tokens.
 
 ## Ropsten
 
@@ -75,14 +107,14 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 - ETH: [Faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
 - OCEAN: [Faucet for Ropsten](https://faucet.ropsten.oceanprotocol.com/)
-  - Token address: `0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9`
+  - OCEAN address on Ropsten: [0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9](https://ropsten.etherscan.io/token/0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9)
 
 **Additional Components**
 
 | What         | URL                                                                    |
 | ------------ | ---------------------------------------------------------------------- |
-| Explorer     | `https://ropsten.etherscan.io`                                         |
-| Ocean Market | Point wallet to Ropsten network, at `https://market.oceanprotocol.com` |
+| Explorer     | https://ropsten.etherscan.io                                           |
+| Ocean Market | Point wallet to Ropsten network, at https://market.oceanprotocol.com   |
 | Provider     | `https://provider.ropsten.oceanprotocol.com`                           |
 | Aquarius     | `https://aquarius.ropsten.oceanprotocol.com`                           |
 | Subgraph     | `https://subgraph.ropsten.oceanprotocol.com`                           |
@@ -97,14 +129,14 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 - ETH: [Faucet for Rinkeby](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
 - OCEAN: [Faucet for Rinkeby](https://faucet.rinkeby.oceanprotocol.com/)
-  - Token address: `0x8967BCF84170c91B0d24D4302C2376283b0B3a07`
+  - OCEAN address on Rinkeby: [0x8967BCF84170c91B0d24D4302C2376283b0B3a07](https://rinkeby.etherscan.io/token/0x8967BCF84170c91B0d24D4302C2376283b0B3a07)
 
 **Additional Components**
 
 | What         | URL                                                                    |
 | ------------ | ---------------------------------------------------------------------- |
-| Explorer     | `https://rinkeby.etherscan.io`                                         |
-| Ocean Market | Point wallet to Rinkeby network, at `https://market.oceanprotocol.com` |
+| Explorer     | https://rinkeby.etherscan.io                                           |
+| Ocean Market | Point wallet to Rinkeby network, at https://market.oceanprotocol.com   |
 | Provider     | `https://provider.rinkeby.oceanprotocol.com`                           |
 | Aquarius     | `https://aquarius.rinkeby.oceanprotocol.com`                           |
 | Subgraph     | `https://subgraph.rinkeby.oceanprotocol.com`                           |

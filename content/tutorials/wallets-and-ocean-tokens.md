@@ -15,6 +15,18 @@ Almost all ERC-20 wallets require these values for adding a custom token:
 - Symbol: `OCEAN`
 - Decimals: `18`
 
+**Polygon Mainnet (previously Matic)**
+
+- Contract Address: `0x282d8efCe846A88B159800bd4130ad77443Fa1A1`
+- Symbol: `mOCEAN`
+- Decimals: `18`
+
+**Binance Smart Chain (BSC)**
+
+- Contract Address: `0xdce07662ca8ebc241316a15b611c89711414dd1a`
+- Symbol: `OCEAN`
+- Decimals: `18`
+
 **Rinkeby**
 
 - Contract Address: `0x8967BCF84170c91B0d24D4302C2376283b0B3a07`
@@ -25,12 +37,6 @@ Almost all ERC-20 wallets require these values for adding a custom token:
 
 - Contract Address: `0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9`
 - Symbol: `OCEAN`
-- Decimals: `18`
-
-**Polygon Mainnet (previously Matic)**
-
-- Contract Address: `0x282d8efCe846A88B159800bd4130ad77443Fa1A1`
-- Symbol: `mOCEAN`
 - Decimals: `18`
 
 The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com has further details.
