@@ -59,12 +59,12 @@ export default function MarkdownList({ data, location, pageContext }) {
 
     const keys = Object.keys(nestedModules).sort()
     const children = []
-
-    children.push(
-      <li key={title}>
-        <b>{title}</b>
-      </li>
-    )
+    if (title)
+      children.push(
+        <li key={title}>
+          <b style={{ paddingLeft: '1rem', fontSize: '12.75px' }} >{title}</b>
+        </li>
+      )
 
     keys.forEach((element) => {
       children.push(
