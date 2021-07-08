@@ -62,7 +62,7 @@ export default function MarkdownList({ data, location, pageContext }) {
     if (title)
       children.push(
         <li key={title}>
-          <b style={{ paddingLeft: '1rem', fontSize: '12.75px' }} >{title}</b>
+          <b style={{ paddingLeft: '1rem', fontSize: '12.75px' }}>{title}</b>
         </li>
       )
 
