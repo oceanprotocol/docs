@@ -1,24 +1,35 @@
-# Swap Tokens
+# Swap and/or Stake Tokens
 
 ## Swap Ocean Tokens against Datatokens
 
-1. Search for the desired asset published on the Ocean Marketplace.
-2.
+1. Search for the desired asset published on the [Ocean Marketplace](https://market.oceanprotocol.com/).
 
-![swap part-1](images/marketplace/Swap-1.png 'Select trade')
+2. Select **Trade** option and enter amount of Ocean tokens you want to swap. The expected amount that the account will recieve wil be shown with the swap fees information.
 
-![swap part-2](images/marketplace/Swap-2.png 'Approve spend limit')
+   ![swap part-1](images/marketplace/Swap-1.png 'Select trade')
 
-![swap part-3](images/marketplace/Swap-3.png 'Approve swap transation')
+3. Approve the Contract transaction to Spend the Ocean Tokens.
+   ![swap part-2](images/marketplace/Swap-2.png 'Approve spend limit')
 
-# Staking (Adding Liquidity)
+4. Approve the Contract transaction to swap the tokens. After the transaction is completed, you can add the Datatoken address in the wallet to quickly view the balance in future.
 
-![staking part-1](images/marketplace/Staking-1.png 'Select Pool option')
+   ![swap part-3](images/marketplace/Swap-3.png 'Approve swap transation')
 
-![staking part-2](images/marketplace/Staking-2.png 'Enter the amount to stake')
+## Staking (Adding Liquidity)
 
-![staking part-2](images/marketplace/Staking-3.png 'Approve spend transction')
+1.  Search for the desired asset published on the [Ocean Marketplace](https://market.oceanprotocol.com/).
 
-![staking part-2](images/marketplace/Staking-4.png 'Approve contract transaction')
+2.  Select **Pool** option and click **ADD LIQUIDTY** button. The expected amount that the account will recieve wil be shown with the swap fees information.
+    ![staking part-1](images/marketplace/Staking-1.png 'Select Pool option')
 
-![staking part-2](images/marketplace/Staking-5.png 'Success')
+3.  Enter the amount of **Ocean Tokens** you want to stake.
+    ![staking part-2](images/marketplace/Staking-2.png 'Enter the amount to stake')
+
+4.  Approve the contract transaction. Make sure you account has sufficient **ETH** balance.
+    ![staking part-2](images/marketplace/Staking-3.png 'Approve spend transction')
+
+5.  Approve the contract transaction. Make sure you account has sufficient **ETH** balance.
+    ![staking part-2](images/marketplace/Staking-4.png 'Approve contract transaction')
+
+6.  After the transactions are completed, below message will displayed.
+    ![staking part-2](images/marketplace/Staking-5.png 'Success')
