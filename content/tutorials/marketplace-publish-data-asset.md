@@ -2,6 +2,8 @@
 
 ## What can be published?
 
+Ocean Market provides a convinent interface for individuals as well as organisations to publish their data. Data set can be images, location information, audio, video, sales data or combinations of all! There is no exhaustive list of what type of data can be Published on Market. Please note that Ocean team maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
+
 ## Tutorial
 
 ### Step 1 - Publish data asset
@@ -60,3 +62,7 @@ Select the pricing type. Here, we are selecting **Fixed** pricing option. Publis
 ## Video
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/KiDg0ry6oV4/0.jpg)](https://www.youtube.com/watch?v=KiDg0ry6oV4)
+
+## Other Articles
+
+https://blog.oceanprotocol.com/on-selling-data-in-ocean-market-9afcfa1e6e43
