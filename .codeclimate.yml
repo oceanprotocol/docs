@@ -1,0 +1,8 @@
+version: '2' # required to adjust maintainability checks
+checks:
+  method-complexity:
+    config:
+      threshold: 7
+  method-lines:
+    config:
+      threshold: 100
