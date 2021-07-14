@@ -12,6 +12,17 @@
     - title: Use Your Wallet to Manage OCEAN Tokens
       link: /tutorials/wallets-and-ocean-tokens/
 
+- group: Using Ocean Marketplace
+  items:
+    - title: Introduction
+      link: /tutorials/marketplace-introduction/
+    - title: Publishing data asset
+      link: /tutorials/marketplace-publish-data-asset/
+    - title: Consume data asset
+      link: /tutorials/marketplace-consume-data-asset/
+    - title: Swap & Stake
+      link: /tutorials/marketplace-swap-and-stake/
+
 - group: Bridges
   items:
     - title: Polygon (ex Matic)
