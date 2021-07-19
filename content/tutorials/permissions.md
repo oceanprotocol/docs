@@ -3,8 +3,6 @@ title: Fine-Grained Permissions
 description: Ocean Protocol - Tools for the Web3 Data Economy
 ---
 
-# Advanced Settings
-
 **Table of Contents**
 
 - [Role based Access Control](#rbac-settings)

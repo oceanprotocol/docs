@@ -50,3 +50,10 @@
       link: /tutorials/amazon-s3-for-brizo/
     - title: Set Up On-Premise Storage
       link: /tutorials/on-premise-for-brizo/
+
+- group: Fine-Grained Permissions
+  items:
+    - title: Overview
+      link: /tutorials/permissions
+    - title: RBAC
+      link: /tutorials/rbac
