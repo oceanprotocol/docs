@@ -1,32 +1,15 @@
 ---
-title: Fine-Grained Permissions
-description: Ocean Protocol - Tools for the Web3 Data Economy
+title: Fine-Grained Permissions 
+description: Control who can publish, consume or browse data
 ---
 
-**Table of Contents**
 
-- [Role based Access Control](#rbac-settings)
-- [Allow and Deny lists](#allow-and-deny-list-settings)
-- [Free Pricing](#free-pricing-settings)
+Ocean Protocol supports fine-grained permissions across our technology stack which can be particularly useful for enterprise use-cases. There are two ways in which permissions are implemented: 
 
-## RBAC settings
+- [Role based access control server.](./rbac)
 
-- Setup and host the Ocean role based access control (RBAC) server. Follow the instructions in the [RBAC repository](https://github.com/oceanprotocol/RBAC-Server)
-- The RBAC server can store roles in [Keycloak](https://www.keycloak.org/) or a json file.
-- In your .env file, set the value of the `GATSBY_RBAC_URL` environmental variable to the URL of the Ocean RBAC server that you have hosted, e.g. `GATSBY_RBAC_URL= "http://localhost:3000"`
-- Users of your marketplace will now require the correct role ("user", "consumer", "publisher") to access features in your marketplace. The market will check the role that has been allocated to the user based on the address that they have connected to the market with.
-- The following features have been wrapped in the `Permission` component and will be restricted once the `GATSBY_RBAC_URL` has been defined:
-  - Viewing or searching datasets requires the user to have permison to `browse`
-  - Purchasing or trading a datatoken, or adding liquidity to a pool require the user to have permison to `consume`
-  - Publishing a dataset requires the user to have permison to `publish`
-- You can change the permission resrictions by either removing the `Permission` component or passing in a different eventType prop e.g. `<Permission eventType="browse">`.
+- [Allow & deny lists.](./allow-deny-lists) 
 
-## Allow and Deny List Settings
+Neither are enabled in [Ocean Market](market.oceanprotocol.com/) but you can enable them in your own market by following the guides above. 
 
-- To enable allow and deny lists you need to add the following environmental variable to your .env file: `GATSBY_ALLOW_ADVANCED_SETTINGS="true"`
-- Publishers in your market will now have the ability to restrict who can consume their datasets.
 
-## Free Pricing Settings
-
-- To allow publishers to set pricing as "Free" you need to add the following environmental variable to your .env file: `GATSBY_ALLOW_FREE_PRICING="true"`
-- This allocates the datatokens to the [dispenser contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/dispenser/Dispenser.sol) which dispenses data tokens to users for free. Publishers in your market will now be able to offer their datasets to users for free (excluding gas costs).

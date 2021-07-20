@@ -55,5 +55,7 @@
   items:
     - title: Overview
       link: /tutorials/permissions
-    - title: RBAC
+    - title: Role-Based Access Control
       link: /tutorials/rbac
+    - title: Allow & Deny Lists
+      link: /tutorials/allow-deny-lists
