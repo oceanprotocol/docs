@@ -1,13 +1,13 @@
 ---
 title: Allow and Deny Lists
-description: Restric access to individual assets
+description: Restrict access to individual assets
 ---
 
-Allow and deny lists are advanced features that allow publishers to control access to individual data assets. Publishers can restrict assets so that they can only be accessed by approved users (allow lists) or they can resrict assets so that they can be accessed by anyone accept certain users (deny lists). 
+Allow and deny lists are advanced features that allow publishers to control access to individual data assets. Publishers can restrict assets so that they can only be accessed by approved users (allow lists) or they can restrict assets so that they can be accessed by anyone except certain users (deny lists). 
 
 ## Setup
 
-All and deny lists are not enabled by default in Ocean Market. You need to edit the environmetal variables to enable this feature in your fork of Ocean Market:
+All and deny lists are not enabled by default in Ocean Market. You need to edit the environmental variables to enable this feature in your fork of Ocean Market:
 
 - To enable allow and deny lists you need to add the following environmental variable to your .env file in your fork of Ocean Market: `GATSBY_ALLOW_ADVANCED_SETTINGS="true"`
 - Publishers in your market will now have the ability to restrict who can consume their datasets.

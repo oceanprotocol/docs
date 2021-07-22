@@ -48,7 +48,7 @@ git clone https://github.com/oceanprotocol/RBAC-Server.git
 cd RBAC-Server
 ```
 
-2. Install the dependancies:
+2. Install the dependencies:
 
 ```Bash
 npm install
@@ -70,7 +70,7 @@ npm run start
 
 When you are ready to deploy the RBAC server to 
 
-1. Replace the KEYCLOAK_URL in the Dockerfile with the correct URL for your hosting of keycloak.
+1. Replace the KEYCLOAK_URL in the Dockerfile with the correct URL for your hosting of  [Keycloak](https://www.keycloak.org/).
 2. Run the following command to build the RBAC service in a Docker container:
 
 ```Bash
@@ -93,8 +93,8 @@ To use the RBAC server with the market you need to save your the URL of your RBA
 - In your .env file in your fork of Ocean Market, set the value of the `GATSBY_RBAC_URL` environmental variable to the URL of the Ocean RBAC server that you have hosted, e.g. `GATSBY_RBAC_URL= "http://localhost:3000"`
 - Users of your marketplace will now require the correct role ("user", "consumer", "publisher") to access features in your marketplace. The market will check the role that has been allocated to the user based on the address that they have connected to the market with.
 - The following features have been wrapped in the `Permission` component and will be restricted once the `GATSBY_RBAC_URL` has been defined:
-  - Viewing or searching datasets requires the user to have permison to `browse`
-  - Purchasing or trading a datatoken, or adding liquidity to a pool require the user to have permison to `consume`
-  - Publishing a dataset requires the user to have permison to `publish`
-- You can change the permission resrictions by either removing the `Permission` component or passing in a different eventType prop e.g. `<Permission eventType="browse">`.
+  - Viewing or searching datasets requires the user to have permission to `browse`
+  - Purchasing or trading a datatoken, or adding liquidity to a pool require the user to have permission to `consume`
+  - Publishing a dataset requires the user to have permission to `publish`
+- You can change the permission restrictions by either removing the `Permission` component or passing in a different eventType prop e.g. `<Permission eventType="browse">`.
 
