@@ -1,6 +1,6 @@
 ---
 title: Role-Based Access Control Server
-description: Ocean Protocol - Tools for the Web3 Data Economy
+description: Control who can publish, consume or browse data
 ---
 The primary mechanism for restricting your users ability to publish, consume, or browse is the role-based access (RBAC) control server. The RBAC server defines four different roles: 
 
