@@ -10,6 +10,7 @@ The primary mechanism for restricting your users ability to publish, consume, or
 - User
 
 ## Roles
+
 ### Admin/ Publisher
 
 Currently both users with either the admin or publisher roles will be able to use the Market without any restrictions. They can publish, consume and browse datasets. 
