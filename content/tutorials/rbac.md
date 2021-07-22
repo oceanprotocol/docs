@@ -9,29 +9,30 @@ The primary mechanism for restricting your users ability to publish, consume, or
 - Consumer
 - User
 
-## Admin/ Publisher
+## Roles
+### Admin/ Publisher
 
 Currently both users with either the admin or publisher roles will be able to use the Market without any restrictions. They can publish, consume and browse datasets. 
 
-## Consumer
+### Consumer
 
 A user with the consumer is able to browse datasets, purchase them, trade datatokens and also contribute to datapools. However, they are not able to publish datasets. 
 
 ![Viewing the market without publish permission](images/rbac/without-publish-permission.png)
 
-## Users
+### Users
 
 Users are able to browse and search datasets but they are not able to purchase datasets, trade datatokens, or contribute to data pools. They are also not able to publish datasets. 
 
 ![Viewing the market without consume permission](images/rbac/without-consume-permission.png)
 
-## Address without a role
+### Address without a role
 
 If a user attempts to view the data market without a role, or without a wallet connected, they will not be able to view or search any of the datasets. 
 
 ![Viewing the market without browse permission](images/rbac/without-browse-permission.png)
 
-## No wallet connected
+### No wallet connected
 
 When the RBAC server is enabled on the market, users are required to have a wallet connected to browse the datasets.
 
