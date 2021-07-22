@@ -28,3 +28,14 @@ To remove a user from an all or deny list you can click the cross next to their 
 
 Any changes you make on the advanced settings page need to be submitted and signed in a transaction. To do this, first click the "SUBMIT" button.
 
+![Submit changes to allow or deny lists](images/allow-deny-lists/submit.png)
+
+Next you will need to sign the transaction in Metamask, or the wallet of your choice. 
+
+![Sign Metamask transaction](images/allow-deny-lists/metamask-transaction.png)
+
+When the process of updating the allow or deny lists is complete you will a success message. 
+
+![Update allow or deny list success](images/allow-deny-lists/update-success.png)
+
+
