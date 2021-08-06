@@ -27,7 +27,7 @@ Once your wallet is set up, it will have one or more **accounts**.
 
 Each account has several **balances**, e.g. an Ether balance, an Ocean Token balance, and maybe other balances. All balances start at zero.
 
-An account's Ether balance might be 7.1 ETH in the Ethereum Mainnet, 2.39 ETH in Ropsten testnet. You can move ETH from one network to another only with a specially setup exchange or bridge. The same is true of OCEAN token balances.
+An account's Ether balance might be 7.1 ETH in the Ethereum Mainnet, 2.39 ETH in Ropsten testnet. You can move ETH from one network to another only with a specially setup exchange or bridge. Also, you can't transfer tokens from networks holding value such as Ethereum mainnet to networks not holding value, ie testnets like Ropsten. The same is true of OCEAN token balances.
 
 Each account has one **private key** and one **address**. The address can be calculated from the private key. You must keep the private key secret because it's what's needed to spend/transfer ETH and OCEAN (or to sign transactions of any kind). You can share the address with others. In fact, if you want someone to send some ETH or OCEAN to an account, you give them the account's address.
 
