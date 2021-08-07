@@ -13,11 +13,6 @@
     - title: API Reference
       link: /references/aquarius/
 
-- group: Aquarius Py Module
-  items:
-    - title: API Reference
-      link: /references/read-the-docs/aquarius/
-
 - group: provider REST API
   items:
     - title: API Reference

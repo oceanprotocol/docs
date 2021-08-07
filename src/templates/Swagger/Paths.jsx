@@ -4,6 +4,7 @@ import slugify from 'slugify'
 import { cleanPathKey } from './utils'
 import styles from './Paths.module.scss'
 import stylesDoc from '../Doc.module.scss'
+import ReactJson from 'react-json-view'
 
 const ParameterExample = ({ properties }) => (
   //
@@ -34,10 +35,10 @@ const ParameterExample = ({ properties }) => (
             )}
             {(properties[key].type === 'integer' ||
               properties[key].type === 'number') && (
-              <span className="token number">
-                {`${properties[key].example}`}
-              </span>
-            )}
+                <span className="token number">
+                  {`${properties[key].example}`}
+                </span>
+              )}
             {(properties[key].type === 'array' ||
               properties[key].type === 'object') &&
               JSON.stringify(properties[key].example, null, 2)}
@@ -94,6 +95,8 @@ const Responses = ({ responses }) => (
     {Object.keys(responses).map((key) => (
       <div key={key} className={styles.response}>
         <code>{key}</code> {responses[key].description}
+        <br />
+        <ResponseExample examples={responses[key].example} />
       </div>
     ))}
   </>
@@ -103,9 +106,28 @@ Responses.propTypes = {
   responses: PropTypes.object.isRequired
 }
 
+const ResponseExample = (({ examples }) => {
+
+  if (!examples) return null
+  const jsonExample = examples["application/json"]
+  if (jsonExample) {
+    return (
+      <div>
+        <b>Example</b>
+        <br />
+        <code> <ReactJson name={null} src={jsonExample} collapsed={true} enableClipboard={false} /></code>
+      </div>
+    )
+  }
+})
+
+ResponseExample.propTypes = {
+  example: PropTypes.object
+}
+
+
 const Method = ({ keyName, value }) => {
   const { summary, description, parameters, responses } = value
-
   return (
     <div className={styles.method}>
       <h3 className={styles.pathMethod} data-type={keyName}>
