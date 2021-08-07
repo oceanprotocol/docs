@@ -35,10 +35,10 @@ const ParameterExample = ({ properties }) => (
             )}
             {(properties[key].type === 'integer' ||
               properties[key].type === 'number') && (
-                <span className="token number">
-                  {`${properties[key].example}`}
-                </span>
-              )}
+              <span className="token number">
+                {`${properties[key].example}`}
+              </span>
+            )}
             {(properties[key].type === 'array' ||
               properties[key].type === 'object') &&
               JSON.stringify(properties[key].example, null, 2)}
@@ -106,25 +106,31 @@ Responses.propTypes = {
   responses: PropTypes.object.isRequired
 }
 
-const ResponseExample = (({ examples }) => {
-
+const ResponseExample = ({ examples }) => {
   if (!examples) return null
-  const jsonExample = examples["application/json"]
+  const jsonExample = examples['application/json']
   if (jsonExample) {
     return (
       <div>
         <b>Example</b>
         <br />
-        <code> <ReactJson name={null} src={jsonExample} collapsed={true} enableClipboard={false} /></code>
+        <code>
+          {' '}
+          <ReactJson
+            name={null}
+            src={jsonExample}
+            collapsed
+            enableClipboard={false}
+          />
+        </code>
       </div>
     )
   }
-})
+}
 
 ResponseExample.propTypes = {
   example: PropTypes.object
 }
-
 
 const Method = ({ keyName, value }) => {
   const { summary, description, parameters, responses } = value
