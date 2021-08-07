@@ -162,7 +162,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 Mumbai is a test network tuned for Matic / Polygon.
 
-If you don't find BSC as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.matic.network/docs/develop/metamask/config-matic/).
+If you don't find Mumbai as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.matic.network/docs/develop/metamask/config-matic/).
 
 **Tokens**
 
