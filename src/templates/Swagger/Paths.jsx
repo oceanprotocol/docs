@@ -4,8 +4,9 @@ import slugify from 'slugify'
 import { cleanPathKey } from './utils'
 import styles from './Paths.module.scss'
 import stylesDoc from '../Doc.module.scss'
-import ReactJson from 'react-json-view'
-
+const ResponseExample = React.lazy(() =>
+  import("./ResponseExample")
+)
 const ParameterExample = ({ properties }) => (
   //
   // HEADS UP!
@@ -35,10 +36,10 @@ const ParameterExample = ({ properties }) => (
             )}
             {(properties[key].type === 'integer' ||
               properties[key].type === 'number') && (
-              <span className="token number">
-                {`${properties[key].example}`}
-              </span>
-            )}
+                <span className="token number">
+                  {`${properties[key].example}`}
+                </span>
+              )}
             {(properties[key].type === 'array' ||
               properties[key].type === 'object') &&
               JSON.stringify(properties[key].example, null, 2)}
@@ -89,61 +90,29 @@ Parameters.propTypes = {
   parameters: PropTypes.array.isRequired
 }
 
-const Responses = ({ responses }) => (
-  <>
+const Responses = ({ responses }) => {
+  const isSSR = typeof window === "undefined"
+
+  return (<>
     <h4 className={styles.subHeading}>Responses</h4>
     {Object.keys(responses).map((key) => (
       <div key={key} className={styles.response}>
         <code>{key}</code> {responses[key].description}
         <br />
-        <ResponseExample examples={responses[key].example} />
+        <>
+          {!isSSR && (
+            <React.Suspense fallback={<div />}>
+              <ResponseExample examples={responses[key].example} />
+            </React.Suspense>
+          )}
+        </>
       </div>
     ))}
-  </>
-)
+  </>)
+}
 
 Responses.propTypes = {
   responses: PropTypes.object.isRequired
-}
-
-const ResponseExample = ({ examples }) => {
-  if (!examples) return null
-  const jsonExample = examples['application/json']
-  const plainText = examples['text/plain']
-
-  if (jsonExample) {
-    return (
-      <div>
-        <b>Example</b>
-        <br />
-        <code>
-          {typeof jsonExample === 'boolean' ? (
-            <code>{JSON.stringify(jsonExample)}</code>
-          ) : (
-            <ReactJson
-              name={null}
-              src={jsonExample}
-              collapsed
-              enableClipboard={false}
-            />
-          )}
-        </code>
-      </div>
-    )
-  } else if (plainText) {
-    return (
-      <div>
-        <b>Example</b>
-        <code>{plainText}</code>
-      </div>
-    )
-  }
-
-  return null
-}
-
-ResponseExample.propTypes = {
-  examples: PropTypes.object
 }
 
 const Method = ({ keyName, value }) => {
