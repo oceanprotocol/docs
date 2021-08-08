@@ -4,9 +4,7 @@ import slugify from 'slugify'
 import { cleanPathKey } from './utils'
 import styles from './Paths.module.scss'
 import stylesDoc from '../Doc.module.scss'
-const ResponseExample = React.lazy(() =>
-  import("./ResponseExample")
-)
+const ResponseExample = React.lazy(() => import('./ResponseExample'))
 const ParameterExample = ({ properties }) => (
   //
   // HEADS UP!
@@ -36,10 +34,10 @@ const ParameterExample = ({ properties }) => (
             )}
             {(properties[key].type === 'integer' ||
               properties[key].type === 'number') && (
-                <span className="token number">
-                  {`${properties[key].example}`}
-                </span>
-              )}
+              <span className="token number">
+                {`${properties[key].example}`}
+              </span>
+            )}
             {(properties[key].type === 'array' ||
               properties[key].type === 'object') &&
               JSON.stringify(properties[key].example, null, 2)}
@@ -91,24 +89,26 @@ Parameters.propTypes = {
 }
 
 const Responses = ({ responses }) => {
-  const isSSR = typeof window === "undefined"
+  const isSSR = typeof window === 'undefined'
 
-  return (<>
-    <h4 className={styles.subHeading}>Responses</h4>
-    {Object.keys(responses).map((key) => (
-      <div key={key} className={styles.response}>
-        <code>{key}</code> {responses[key].description}
-        <br />
-        <>
-          {!isSSR && (
-            <React.Suspense fallback={<div />}>
-              <ResponseExample examples={responses[key].example} />
-            </React.Suspense>
-          )}
-        </>
-      </div>
-    ))}
-  </>)
+  return (
+    <>
+      <h4 className={styles.subHeading}>Responses</h4>
+      {Object.keys(responses).map((key) => (
+        <div key={key} className={styles.response}>
+          <code>{key}</code> {responses[key].description}
+          <br />
+          <>
+            {!isSSR && (
+              <React.Suspense fallback={<div />}>
+                <ResponseExample examples={responses[key].example} />
+              </React.Suspense>
+            )}
+          </>
+        </div>
+      ))}
+    </>
+  )
 }
 
 Responses.propTypes = {
