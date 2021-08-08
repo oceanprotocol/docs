@@ -35,10 +35,10 @@ const ParameterExample = ({ properties }) => (
             )}
             {(properties[key].type === 'integer' ||
               properties[key].type === 'number') && (
-                <span className="token number">
-                  {`${properties[key].example}`}
-                </span>
-              )}
+              <span className="token number">
+                {`${properties[key].example}`}
+              </span>
+            )}
             {(properties[key].type === 'array' ||
               properties[key].type === 'object') &&
               JSON.stringify(properties[key].example, null, 2)}
@@ -117,29 +117,38 @@ const ResponseExample = ({ examples }) => {
         <b>Example</b>
         <br />
         <code>
-          {typeof jsonExample == "boolean" ? <code>{JSON.stringify(jsonExample)}</code> : <ReactJson
-            name={null}
-            src={jsonExample}
-            collapsed
-            enableClipboard={false}
-          />}
+          {typeof jsonExample === 'boolean' ? (
+            <code>{JSON.stringify(jsonExample)}</code>
+          ) : (
+            <ReactJson
+              name={null}
+              src={jsonExample}
+              collapsed
+              enableClipboard={false}
+            />
+          )}
         </code>
       </div>
     )
   } else if (plainText) {
-    return <div><b>Example</b><code>{plainText}</code></div>
+    return (
+      <div>
+        <b>Example</b>
+        <code>{plainText}</code>
+      </div>
+    )
   }
 
   return null
 }
 
 ResponseExample.propTypes = {
-  example: PropTypes.object
+  examples: PropTypes.object
 }
 
 const Method = ({ keyName, value }) => {
   const { summary, description, parameters, responses } = value
-  console.log("---", summary, responses)
+  console.log('---', summary, responses)
   return (
     <div className={styles.method}>
       <h3 className={styles.pathMethod} data-type={keyName}>
