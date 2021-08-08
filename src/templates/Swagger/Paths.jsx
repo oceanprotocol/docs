@@ -34,10 +34,10 @@ const ParameterExample = ({ properties }) => (
             )}
             {(properties[key].type === 'integer' ||
               properties[key].type === 'number') && (
-              <span className="token number">
-                {`${properties[key].example}`}
-              </span>
-            )}
+                <span className="token number">
+                  {`${properties[key].example}`}
+                </span>
+              )}
             {(properties[key].type === 'array' ||
               properties[key].type === 'object') &&
               JSON.stringify(properties[key].example, null, 2)}
@@ -117,7 +117,6 @@ Responses.propTypes = {
 
 const Method = ({ keyName, value }) => {
   const { summary, description, parameters, responses } = value
-  console.log('---', summary, responses)
   return (
     <div className={styles.method}>
       <h3 className={styles.pathMethod} data-type={keyName}>
