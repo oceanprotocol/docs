@@ -34,10 +34,10 @@ const ParameterExample = ({ properties }) => (
             )}
             {(properties[key].type === 'integer' ||
               properties[key].type === 'number') && (
-                <span className="token number">
-                  {`${properties[key].example}`}
-                </span>
-              )}
+              <span className="token number">
+                {`${properties[key].example}`}
+              </span>
+            )}
             {(properties[key].type === 'array' ||
               properties[key].type === 'object') &&
               JSON.stringify(properties[key].example, null, 2)}
