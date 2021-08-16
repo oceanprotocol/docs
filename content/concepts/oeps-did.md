@@ -1,6 +1,6 @@
 # OEP-7: Decentralized Identifiers
 
-```
+```text
 shortname:      7/DID
 name:           Decentralized Identifiers
 type:           Standard
@@ -173,7 +173,7 @@ Example:
 
 In order to support credentials based access. the following optional object is used:
 
-```
+```json
 "credentials":{
       "allow":[
          {
@@ -204,14 +204,11 @@ where:
 
 For future usage, we can extend that with different credentials types. Example:
 
-```
+```json
 {
-   "type":"credential3Box",
-       "values":[
-              "profile1",
-              "profile2"
-       ]
- }
+  "type": "credential3Box",
+  "values": ["profile1", "profile2"]
+}
 ```
 
 #### DID Document Proof

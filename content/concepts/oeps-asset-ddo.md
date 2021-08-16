@@ -1,6 +1,6 @@
 # OEP-8: Assets Metadata Ontology
 
-```
+```text
 shortname:    8/ASSET-DDO
 name:         Assets Metadata Ontology
 type:         Standard
@@ -345,14 +345,21 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 
 To produce filesChecksum:
 
-```
-sha256(algorithm_ddo.service['metadata'].attributes.encryptedFiles + JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.files) )
+```javascript
+sha256(
+  algorithm_ddo.service['metadata'].attributes.encryptedFiles +
+    JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.files)
+)
 ```
 
 To produce containerSectionChecksum:
 
-```
-sha256(JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.algorithm.container))
+```javascript
+sha256(
+  JSON.Stringify(
+    algorithm_ddo.service['metadata'].attributes.main.algorithm.container
+  )
+)
 ```
 
 Example of a compute service
