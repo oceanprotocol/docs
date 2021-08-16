@@ -2,14 +2,14 @@
 
 ## What can be published?
 
-Ocean Market provides a convinent interface for individuals as well as organisations to publish their data. Data set can be images, location information, audio, video, sales data or combinations of all! There is no exhaustive list of what type of data can be Published on Market. Please note that Ocean team maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
+Ocean Market provides a convenient interface for individuals as well as organizations to publish their data. Data set can be images, location information, audio, video, sales data, or combinations of all! There is no exhaustive list of what type of data can be published on the Market. Please note that the Ocean Protocol team maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
 
 ## Tutorial
 
 ### Step 1 - Publish data asset
 
 1. Go to https://market.oceanprotocol.com
-2. Conntect wallet.
+2. Connect wallet.
    ![connect wallet](images/marketplace/connect-wallet.png 'Connect wallet')
 
 3. Go to publish page.
@@ -22,20 +22,20 @@ Ocean Market provides a convinent interface for individuals as well as organisat
    ![publish form part-2](images/marketplace/publish-form-2.png 'Publish form part-2')
    ![publish form part-3](images/marketplace/publish-form-3.png 'Publish form part-3')
 
-5. After clicking submit, approve the transcations in the wallet. Here, you can metamask window.
+5. After clicking submit, approve the transactions in the wallet. Here, you can see Metamask window.
 
    Deploy a new Datatoken contract.
    ![publish submit part-1](images/marketplace/submit-1.png 'Create Datatoken contract')
    Contract interaction.
    ![publish submit part-2](images/marketplace/submit-2.png 'Contract interaction')
 
-6. Now, after the transactions are completed, below screen will appear.
+6. Now, after the transactions are completed, the below screen will appear.
 
    ![publish success](images/marketplace/submit-success.png 'Success')
 
 ### Step 2 - Create pricing
 
-Once the data asset is published, user(s) can choose the pricing option as per their choice. Only the publisher can set the pricing option and cannot be changed once the publisher selects any one method.
+Once the data asset is published, the user(s) can choose the pricing option as per their choice. Only the publisher can set the pricing option and cannot be changed once the publisher selects any one method.
 
 There are 2 options for settings the price of an asset on Ocean Marketplace.
 
@@ -44,9 +44,9 @@ There are 2 options for settings the price of an asset on Ocean Marketplace.
 
 #### Create fixed pricing for a data set
 
-Connect to the Ocean Marketplace with the publisher account and go the published asset.
+Connect to the Ocean Marketplace with the publisher account and go to the published asset.
 
-If the pricing is not set Marketplace will provide an option to create a pricing. Click on the create pricing button as shown below.
+If the pricing is not set Marketplace will provide an option to create pricing. Click on the create pricing button as shown below.
 ![pricing part-1](images/marketplace/pricing-1.png 'Create pricing page')
 
 Select the pricing type. Here, we are selecting **Fixed** pricing option. Publisher can set the value of datatoken with respect to Ocean Tokens.

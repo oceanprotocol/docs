@@ -13,11 +13,14 @@ The Ethereum Mainnet is Ocean’s production network.
 
 MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wallet is almost certainly pointing to Ethereum by default.
 
-**Get Tokens**
+**Tokens**
 
-- ETH: [Exchanges to purchase](https://www.coingecko.com/en/coins/ethereum#markets)
-- OCEAN: [Exchanges to purchase](https://oceanprotocol.com/token#get)
-  - OCEAN address on Ethereum mainnet: [0x967da4048cD07aB37855c090aAF366e4ce1b9F48](https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48)
+- ETH:
+  - Native token to pay transaction fees
+  - [Exchanges to purchase](https://www.coingecko.com/en/coins/ethereum#markets)
+- OCEAN:
+  - Address: [0x967da4048cD07aB37855c090aAF366e4ce1b9F48](https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48)
+  - [Exchanges to purchase](https://oceanprotocol.com/token#get)
 
 **Additional Components**
 
@@ -33,7 +36,7 @@ MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wal
 
 Ocean is [deployed](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) to the [Polygon](https://polygon.technology/) production network. Polygon's native token is MATIC.
 
-If you don't find Polygon as a predefined network in your wallet, you can connect to it manually via [this guide]((/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
+If you don't find Polygon as a predefined network in your wallet, you can connect to it manually via [this guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
 
 | What               | Value                                    |
 |--------------------|------------------------------------------|
@@ -43,11 +46,15 @@ If you don't find Polygon as a predefined network in your wallet, you can connec
 | Currency Symbol    | `MATIC`                                  |
 | Block Explorer URL | `https://explorer.matic.network/`        |
 
-**Get Tokens**
+**Tokens**
 
-- MATIC: [Exchanges to purchase](https://www.coingecko.com/en/coins/polygon#markets)
-- OCEAN: [Exchanges to purchase](https://oceanprotocol.com/token#get)
-  - OCEAN address on Polygon: [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/token/0x282d8efCe846A88B159800bd4130ad77443Fa1A1)
+- MATIC:
+  - Native token to pay transaction fees
+  - [Exchanges to purchase](https://www.coingecko.com/en/coins/polygon#markets)
+- Polygon OCEAN:
+  - Address: [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/token/0x282d8efCe846A88B159800bd4130ad77443Fa1A1)
+  - [Exchanges to purchase](https://oceanprotocol.com/token#get)
+
 
 **Additional Components**
 
@@ -77,12 +84,15 @@ If you don't find BSC as a predefined network in your wallet, you can connect to
 | Currency Symbol    | `BNB`                                    |
 | Block Explorer URL | `https://bscscan.com`                    |
 
-**Get Tokens**
+**Tokens**
 
-- BNB: Exchanges to purchase: typically [binance.com](https://www.binance.com)
-- OCEAN: [Exchanges to purchase](https://oceanprotocol.com/token#get)
-  - OCEAN address on BSC: [0xdce07662ca8ebc241316a15b611c89711414dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a)
-
+- BSC BNB:
+  - Native token to pay transaction fees
+  - Exchanges to purchase: typically [binance.com](https://www.binance.com)
+- BSC OCEAN: 
+  - Address: [0xdce07662ca8ebc241316a15b611c89711414dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a)
+  - [Exchanges to purchase](https://oceanprotocol.com/token#get)
+  
 **Additional Components**
 
 | What         | URL                                                                   |
@@ -103,11 +113,14 @@ Ropsten is a test network.
 
 In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Ropsten_.
 
-**Get Tokens**
+**Tokens**
 
-- ETH: [Faucet for Ropsten](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
-- OCEAN: [Faucet for Ropsten](https://faucet.ropsten.oceanprotocol.com/)
-  - OCEAN address on Ropsten: [0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9](https://ropsten.etherscan.io/token/0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9)
+- Ropsten ETH:
+  - Native token to pay transaction fees
+  - [Faucet](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
+- Ropsten OCEAN: 
+  - Address: [0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9](https://ropsten.etherscan.io/token/0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9)
+  - [Faucet](https://faucet.ropsten.oceanprotocol.com/)
 
 **Additional Components**
 
@@ -125,11 +138,14 @@ Rinkeby is a test network.
 
 In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Rinkeby_.
 
-**Get Tokens**
+**Tokens**
 
-- ETH: [Faucet for Rinkeby](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
-- OCEAN: [Faucet for Rinkeby](https://faucet.rinkeby.oceanprotocol.com/)
-  - OCEAN address on Rinkeby: [0x8967BCF84170c91B0d24D4302C2376283b0B3a07](https://rinkeby.etherscan.io/token/0x8967BCF84170c91B0d24D4302C2376283b0B3a07)
+- Rinkeby ETH:
+  - Native token to pay transaction fees
+  - [Faucet](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
+- Rinkeby OCEAN: 
+  - Address: [0x8967BCF84170c91B0d24D4302C2376283b0B3a07](https://rinkeby.etherscan.io/token/0x8967BCF84170c91B0d24D4302C2376283b0B3a07)
+  - [Faucet](https://faucet.rinkeby.oceanprotocol.com/)
 
 **Additional Components**
 
@@ -141,7 +157,33 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 | Aquarius     | `https://aquarius.rinkeby.oceanprotocol.com`                           |
 | Subgraph     | `https://subgraph.rinkeby.oceanprotocol.com`                           |
 
-## Local
+
+## Mumbai
+
+Mumbai is a test network tuned for Matic / Polygon.
+
+If you don't find Mumbai as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.matic.network/docs/develop/metamask/config-matic/).
+
+**Tokens**
+
+- Mumbai MATIC:
+  - Native token to pay transaction fees
+  - [Faucet](https://faucet.matic.network/). You may find others by [searching](https://www.google.com/search?q=mumbai+faucet).
+- Mumbai OCEAN: 
+  - Address: [0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8](https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8)
+  - To acquire tokens, please reach out to the core team [via Discord](https://discord.com/invite/TnXjkR5)
+
+**Additional Components**
+
+| What         | URL                                                                    |
+| ------------ | ---------------------------------------------------------------------- |
+| Explorer     | https://mumbai.polygonscan.com                                         |
+| Ocean Market | Point wallet to Mumbai network, at https://market.oceanprotocol.com    |
+| Provider     | `https://provider.mumbai.oceanprotocol.com`                            |
+| Aquarius     | `https://aquarius.mumbai.oceanprotocol.com`                            |
+| Subgraph     | `https://subgraph.mumbai.oceanprotocol.com`                            |
+
+## Local / Ganache
 
 The most straightforward way for local-only development is to use [Barge](https://www.github.com/oceanprotocol/barge), which runs [Ganache](https://www.trufflesuite.com/ganache), Aquarius, and Provider. It is used extensively by the Ocean core devs (with Ganache or Rinkeby) and for automated integration testing.
 
@@ -151,11 +193,15 @@ To connect to it from MetaMask, select the network called _Localhost 8545_.
 
 Alternatively, you can run Ganache independently. Install it according to [the Ganache docs](https://www.trufflesuite.com/ganache). Then deploy Ocean contracts onto Ganache following [docs in Ocean contracts repo](https://www.github.com/oceanprotocol/contracts). Ganache is at the RPC URL [http://localhost:8545](http://localhost:8545).
 
-**Get Tokens**
+**Tokens**
 
-- ETH: By default, Ganache creates several Ethereum accounts at launch, gives each some ETH, and makes their private keys available in the logs. You can also instruct Ganache to give ETH to specific Ethereum addresses.
-- OCEAN: You can deploy an ERC20 token with label OCEAN. At a minimum, the token needs to be ERC20Detailed and ERC20Capped. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
+- Ganache ETH:
+  - Native token to pay transaction fees
+  - By default, Ganache creates several Ethereum accounts at launch, gives each some ETH, and makes their private keys available in the logs. You can also instruct Ganache to give ETH to specific Ethereum addresses.
+- Ganache OCEAN:
+  - You can deploy an ERC20 token with label OCEAN. At a minimum, the token needs to be ERC20Detailed and ERC20Capped. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
 
-## Chain IDs
+## Other
 
 Some apps may need `network_id` and `chain_id`. Here's a [list of values for major Ethereum networks](https://medium.com/@piyopiyo/list-of-ethereums-major-network-and-chain-ids-2bc58e928508).
+
