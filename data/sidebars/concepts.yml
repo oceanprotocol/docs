@@ -25,6 +25,13 @@
     - title: Asset DDO
       link: /concepts/oeps-asset-ddo/
 
+- group: NFTs
+  items:
+    - title: Introduction
+      link: /concepts/v4-nft/
+    - title: Roles
+      link: /concepts/v4-roles/
+
 - group: Contribute
   items:
     - title: Ways to Contribute
