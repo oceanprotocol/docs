@@ -55,7 +55,7 @@
     "rehype-react": "^7.0.0",
     "remark": "^13.0.0",
     "remark-github-plugin": "^1.4.0",
-    "remark-react": "^8.0.0",
+    "remark-react": "^9.0.0",
     "shortid": "^2.2.16",
     "slugify": "^1.5.3",
     "smoothscroll-polyfill": "^0.4.4",
