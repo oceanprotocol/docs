@@ -23,7 +23,7 @@ export default function Deployments({ data, location }) {
       provider: 'https://provider.polygon.oceanprotocol.com'
     },
     'Binance Smart Chain': {
-      aquarius: 'https://aquarius.bsc.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com/',
       provider: 'https://provider.bsc.oceanprotocol.com'
     },
     Ropsten: {
