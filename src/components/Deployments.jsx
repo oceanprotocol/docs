@@ -27,7 +27,7 @@ export default function Deployments({ data, location }) {
       provider: 'https://provider.bsc.oceanprotocol.com'
     },
     Ropsten: {
-      aquarius: 'https://aquarius.ropsten.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.ropsten.oceanprotocol.com'
     },
     Rinkeby: {
