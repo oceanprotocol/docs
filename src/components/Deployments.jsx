@@ -15,7 +15,7 @@ export default function Deployments({ data, location }) {
 
   const networks = {
     'Ethereum Mainnet': {
-      aquarius: 'https://aquarius.mainnet.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.mainnet.oceanprotocol.com'
     },
     'Polygon Mainnet': {
