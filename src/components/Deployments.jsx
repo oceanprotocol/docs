@@ -19,7 +19,7 @@ export default function Deployments({ data, location }) {
       provider: 'https://provider.mainnet.oceanprotocol.com'
     },
     'Polygon Mainnet': {
-      aquarius: 'https://aquarius.polygon.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.polygon.oceanprotocol.com'
     },
     'Binance Smart Chain': {
