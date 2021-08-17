@@ -35,7 +35,7 @@ export default function Deployments({ data, location }) {
       provider: 'https://provider.rinkeby.oceanprotocol.com'
     },
     Mumbai: {
-      aquarius: 'https://aquarius.mumbai.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.mumbai.oceanprotocol.com'
     }
   }
