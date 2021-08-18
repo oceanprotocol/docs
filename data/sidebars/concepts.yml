@@ -8,6 +8,8 @@
       link: /concepts/architecture/
     - title: Supported Networks
       link: /concepts/networks/
+    - title: Deployments
+      link: /concepts/deployments/
     - title: Projects using Ocean
       link: /concepts/projects-using-ocean/
 
@@ -15,6 +17,13 @@
   items:
     - title: Compute-to-Data Overview
       link: /concepts/compute-to-data/
+
+- group: OEPs
+  items:
+    - title: DID
+      link: /concepts/oeps-did/
+    - title: Asset DDO
+      link: /concepts/oeps-asset-ddo/
 
 - group: Contribute
   items:

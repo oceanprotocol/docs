@@ -128,8 +128,10 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
-        // API: brizo, aquarius
+        // API: aquarius
         await createSwaggerPages(createPage)
+
+        await createDeploymentsPage(createPage)
 
         // API: ocean.js
         const lastRelease =
@@ -176,6 +178,15 @@ exports.createPages = ({ graphql, actions }) => {
   })
 }
 
+const createDeploymentsPage = async (createPage) => {
+  const template = path.resolve('./src/components/Deployments.jsx')
+  const slug = `/concepts/deployments/`
+
+  createPage({
+    path: slug,
+    component: template
+  })
+}
 //
 // Create pages from TypeDoc json files
 //
