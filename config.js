@@ -68,5 +68,15 @@ module.exports = {
       from: '/concepts/connect-to-networks/',
       to: '/concepts/networks/'
     }
+  ],
+  swaggerComponents: [
+    {
+      name: 'aquarius',
+      url: 'https://aquarius.oceanprotocol.com/spec'
+    },
+    {
+      name: 'provider',
+      url: 'https://provider.mainnet.oceanprotocol.com/spec'
+    }
   ]
 }
