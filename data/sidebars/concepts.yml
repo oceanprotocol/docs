@@ -18,12 +18,12 @@
     - title: Compute-to-Data Overview
       link: /concepts/compute-to-data/
 
-- group: OEPs
+- group: Metadata
   items:
-    - title: DID
-      link: /concepts/oeps-did/
-    - title: Asset DDO
-      link: /concepts/oeps-asset-ddo/
+    - title: Asset Identifiers - DIDs
+      link: /concepts/metadata-did/
+    - title: Asset Metadata - DDOs
+      link: /concepts/metadata-asset-ddo/
 
 - group: Contribute
   items:
