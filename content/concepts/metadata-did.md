@@ -1,6 +1,6 @@
 ---
 title: DIDs & DDOs - Asset Identifiers & Objects
-description: Specifification of DIDs & DDOs in Ocean
+description: Specification of DIDs & DDOs in Ocean
 slug: /concepts/metadata-did/
 section: concepts
 ---
