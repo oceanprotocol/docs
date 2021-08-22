@@ -56,7 +56,7 @@ The `main` object has the following attributes. Not all are required. Some are r
 | **`datePublished`** | DateTime              | (remote) | The date on which the asset DDO is registered into the metadata store (Aquarius)                                                                                                                  |
 | **`author`**        | Text                  | Yes      | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
 | **`license`**       | Text                  | Yes      | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
-| **`files`**         | Array of files object | Yes      | Array of `File` objects including the encrypted file urls. Further metadata about each file is stored, see [File Attributes](#file-attributes)                                                    |
+| **`files`**         | Array of files object | Yes      | Array of `File` objects including the encrypted file urls.   |
 
 ### Attributes for Metadata.Main.Type
 
@@ -360,11 +360,3 @@ sha256(
   }
 }
 ```
-
-# References
-
-[Schema.org](https://schema.org/) is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet. Data types use the [Schema.org primitive data types](https://schema.org/DataType).
-
-- [Schema.org: DataSet](https://schema.org/Dataset)
-- [Schema.org: FileSize](https://schema.org/fileSize)
-- [Common license types for datasets](https://help.data.world/hc/en-us/articles/115006114287-Common-license-types-for-datasets)
