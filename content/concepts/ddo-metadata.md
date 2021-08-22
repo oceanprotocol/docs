@@ -1,7 +1,7 @@
 ---
 title: DDO Metadata
 description: Specification of metadata schema. Each Ocean asset DDO includes metadata.
-slug: /concepts/metadata-asset-ddo/
+slug: /concepts/ddo-metadata/
 section: concepts
 ---
 

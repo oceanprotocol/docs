@@ -21,9 +21,9 @@
 - group: Specifying Assets
   items:
     - title: DIDs & DDOs
-      link: /concepts/metadata-did/
+      link: /concepts/did-ddo/
     - title: DDO Metadata
-      link: /concepts/metadata-asset-ddo/
+      link: /concepts/ddo-metadata/
 
 - group: Contribute
   items:

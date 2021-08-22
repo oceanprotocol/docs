@@ -1,7 +1,7 @@
 ---
 title: DIDs & DDOs - Asset Identifiers & Objects
 description: Specification of DIDs & DDOs in Ocean
-slug: /concepts/metadata-did/
+slug: /concepts/did-ddo/
 section: concepts
 ---
 

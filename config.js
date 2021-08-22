@@ -70,11 +70,11 @@ module.exports = {
     },
     {
       from: '/concepts/oeps-did/',
-      to: '/concepts/metadata-did/'
+      to: '/concepts/did-ddo/'
     },
     {
       from: '/concepts/oeps-asset-ddo/',
-      to: '/concepts/metadata-asset-ddo/'
+      to: '/concepts/ddo-metadata/'
     }
   ],
   swaggerComponents: [
