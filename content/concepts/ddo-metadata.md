@@ -120,7 +120,7 @@ These are examples of attributes that can enhance the discoverability of a resou
 
 The publisher of a DDO _may_ add additional attributes or change the above object definition.
 
-## Attributes for Status
+## Attributes for Metadata.Status
 
 A `status` object has the following attributes.
 
@@ -223,7 +223,7 @@ url` is removed from all objects in the `files` array, and `encryptedFiles` is a
 }
 ```
 
-## Attributes for Asset Type - Algorithm
+## Attributes when Metadata.Main.Type = Algorithm
 
 An asset of type `algorithm` has the following additional attributes under `main.algorithm`:
 
@@ -288,7 +288,7 @@ The `container` object has the following attributes:
 }
 ```
 
-## Attributes for Asset Type - Compute
+## Attributes when Metadata.Main.Type = Compute
 
 An asset with a service of type `compute` has the following additional attributes under `main.privacy`:
 
