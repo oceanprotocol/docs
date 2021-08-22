@@ -1,3 +1,10 @@
+---
+title: Asset DDO Metadata
+description: Specification of metadata schema. Each Ocean asset DDO includes metadata.
+slug: /concepts/metadata-asset-ddo/
+section: concepts
+---
+
 # Asset DDO Metadata
 
 ## Overview
@@ -10,7 +17,7 @@ Standardized names is critical for effective searching, sorting and filtering (c
 
 This page specifies metadata attributes that _must_ be included, and that _may_ be included. These attributes are organized hierarchically, from top-layer attributes like `"main"` to sub-level attributes like `"main.type"`. This page also provides DDO metadata examples.
 
-## Publishing Metadata
+## Rules for Metadata Storage and Control in Ocean
 
 The publisher publishes an asset DDO (including metadata) onto the chain. 
 
