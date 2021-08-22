@@ -55,6 +55,7 @@ A DDO has these standard attributes:
 - `verifiableCredential`
 
 In Ocean, the DDO also has:
+
 - `dataToken`
 - `service`
 - `credentials` - optional flag, which describes the credentials needed to access a dataset (see below)
