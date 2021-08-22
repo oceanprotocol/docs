@@ -20,7 +20,7 @@
 
 - group: Metadata
   items:
-    - title: Asset Identifiers - DIDs
+    - title: Asset Identifiers & Objects - DIDs & DDOs
       link: /concepts/metadata-did/
     - title: Asset Metadata - DDOs
       link: /concepts/metadata-asset-ddo/

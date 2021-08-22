@@ -1,79 +1,28 @@
-# OEP-7: Decentralized Identifiers
+# Asset Identifiers & Objects - DIDs & DDOs
 
-```text
-shortname:      7/DID
-name:           Decentralized Identifiers
-type:           Standard
-status:         Draft
-version:        0.3
-editor:         Alex Coseru <alex@oceanprotocol.com>
-contributors:   Matthias Kretschmann <matthias@oceanprotocol.com>,
-                Ahmed Ali <ahmed@oceanprotocol.com>
-```
+## Background
 
-**Table of Contents**
+Decentralized identifiers (DIDs) are a new type of identifier that enables verifiable, decentralized digital identity. Each DID is associated with a unique entity. DIDs may represent humans, objects, and more.
 
-- [Motivation](#motivation)
-- [Specification](#specification)
-- [Proposed Solution](#proposed-solution)
-  - [Decentralized IDs (DIDs)](#decentralized-ids-dids)
-  - [DID Documents (DDOs)](#did-documents-ddos)
-    - [DDO Services](#ddo-services)
-    - [Credentials](#credentials)
-  - [Integrity](#integrity)
-    - [How to compute the integrity checksum](#how-to-compute-the-integrity-checksum)
-    - [DID Document Proof](#did-document-proof)
-    - [Length of a DID](#length-of-a-did)
-    - [How to compute a DID](#how-to-compute-a-did)
-- [References](#references)
-- [Change Process](#change-process)
-- [Language](#language)
+A DID Document (DDO) is JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
----
+If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points.
+The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
 
-This specification is based on:
+DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) defined by the World Wide Web Consurtium (W3C).
 
-- the [W3C DID specification](https://w3c-ccg.github.io/did-spec/), which was at version 0.11 as of August 2018,
-- the [Ocean Protocol technical whitepaper](https://github.com/oceanprotocol/whitepaper),
-- [3/ARCH](../3/README.md), and
-- [4/AGENT](../4/README.md).
-
-## Motivation
-
-The main motivations of this OEP are:
-
-- Design a solution to extend the current architecture to use **Decentralized Identifiers (DIDs)** and **DID Documents (DDOs)**
-- Understand how to resolve DIDs into DDOs
-- Establishing the mechanism to know if the DDO associated with a DID was modified
-- Defining the common mechanisms, interfaces and APIs to implemented the designed solution
-- Define how Ocean assets, agents and domains can be modeled with a DID/DDO data model
-- Understand how DID hubs are formed, and how they integrate a business and storage layer
+This document describes how Ocean assets follow the DID spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. 
 
 ## Specification
 
-Requirements are:
+- An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
+- An asset should have a DID and DDO. The DDO should include metadata about the asset.
+- The DDO can only can be modified by _owners_ or _delegated users_.
+- There _must_ be at least one client library acting as _resolver_, to get a DDO from a DID.
+- The DDO is stored on-chain. It's stored in in plaintext, with two exceptions: (1) the field for resource-access url is encrypted (2) the whole DDO may be encrypted, if the publisher is willing to lose 100% of discoverability.
+- A metadata cache like Aquarius can help in reading and writing DDO data from the chain.
 
-- The DID resolving capabilities MUST be exposed in the client libraries, enabling to resolve a DDO directly in a totally transparent way
-- ASSETS are DATA objects describing RESOURCES under control of a PUBLISHER
-- PROVIDERS store the ASSET metadata off-chain
-- OCEAN doesn't store ASSET contents (e.g. files)
-- An ASSET is modeled in OCEAN as off-chain information stored in AQUARIUS
-- ASSETS information only can be modified by OWNERS or DELEGATED USERS
-- ASSETS can be resolved using a Decentralized ID (DID)
-- A DID Document (DDO) should include the ASSET metadata
-- Any kind of object registered in Ocean SHOULD have a DID allowing one to uniquely identify that object in the system
-- ASSET DDO (and the metadata included as part of the DDO) is associated to the ASSET information stored using a common DID
-- A DID can be resolved to get access to a DDO
-- The function to calculate the HASH MUST BE standard
-
-## Proposed Solution
-
-### Decentralized IDs (DIDs)
-
-A DID is a unique identifier that can be resolved or de-referenced to a standard resource describing the entity (a DID Document or DDO).
-If we apply this to Ocean, the DID would be the unique identifier of an object represented in Ocean (i.e. the Asset ID of an ASSET or the Actor ID of a USER).
-The DDO SHOULD include the METADATA information associated with this object.
-The DDO is stored off-chain in Ocean.
+## DID Structure
 
 In Ocean, a DID is a string that looks like:
 
@@ -81,17 +30,15 @@ In Ocean, a DID is a string that looks like:
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-which follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
-Details about how to compute the DID are given below.
+It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
-### DID Documents (DDOs)
+The part after `did:op:` is the asset's on-chain Ethereum address (minus the "0x"). One can be computed from the other; therefore there is a 1:1 mapping between did and Ethereum address.
 
-If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points.
-The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
+## DDO Attributes
 
 ![DDO Content](images/ddo-content.png)
 
-A DDO document is composed of standard DDO attributes:
+A DDO has these standard attributes:
 
 - `@context`
 - `id`
@@ -101,30 +48,37 @@ A DDO document is composed of standard DDO attributes:
 - `authentication`
 - `proof`
 - `verifiableCredential`
+
+In Ocean, the DDO also has:
 - `dataToken`
 - `service`
 - `credentials` - optional flag, which describes the credentials needed to access a dataset (see below)
 
 Asset metadata must be included as one of the objects inside the `"service"` array, with type `"metadata"`.
 
-#### DDO Services
+## DDO Service Types
 
-Each type of asset (dataset, algorithm, workflow, etc, ..) typically will have associated different kind of services. There are multiple type of services that are commonly added to all the assets:
+There are many possible service types for a DDO.
 
-- metadata - describing the asset
-- provenance - describing the asset provenance
-- access - describing how the asset can be downloaded
-- compute - describing how the asset can be computed upon
+- `metadata` - describing the asset
+- `access` - describing how the asset can be downloaded
+- `compute` - describing how the asset can be computed upon
+
+Each asset has a `metadata` service and at least one other service.
 
 Each service is distinguished by the `DDO.service.type` attribute.
 
-Each service has an `attributes` section where all the information related to the service is added. As mandatory content, the attributes section will have a `main` sub-section. This one is important because it must include all the mandatory information that a service has to provide.
+Each service has an `attributes` section holding the information related to the service. That section _must_ have a `main` sub-section, holding all the mandatory information that a service has to provide.
 
-A part of the `attributes.main` sub-section, other optional sub-sections can be added (like: `attributes.curation` or `attributes.extra`) depending on the service type.
+A part of the `attributes.main` sub-section, other optional sub-sections like `attributes.extra` can be added. These depend on the service type.
 
-Each service has an `cost` and `timeout` (in seconds) section describing the cost (how much datatokens needs to be transferred) and how long the sevice can be used after payment. A timeout of 0 represents no time limit.
+Each service has a `timeout` (in seconds) section describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit.
 
-Example:
+The `cost` attribute is obsolete, as of Ocean V3. As of V3, to consume an asset, one sends exactly 1.0 datatokens of the asset, so a `cost` is not needed.
+
+## DDO Service Example
+
+Here is an example DDO service:
 
 ```json
 "service": [
@@ -165,13 +119,19 @@ Example:
 ]
 ```
 
-- You can find a [complete example of a DDO](ddo-example.json).
-- You can find a complete reference of the asset metadata in [OEP-8](8).
-- You can find a complete [real world example of a DDO](https://w3c-ccg.github.io/did-spec/#real-world-example) with extended services added, as part of the W3C DID spec.
+## Fine-Grained Permissions - Credentials
 
-#### Credentials
+By default, a consumer can access a resource if they have 1.0 datatokens. _Credentials_ allow the publisher to optionally specify finer-grained permissions.
 
-In order to support credentials based access. the following optional object is used:
+Consider a medical data use case, where only a credentialed EU researcher can legally access a given dataset. Ocean supports this as follows: a consumer can only access the resource if they have 1.0 datatokens _and_ one of the specified `"allow"` credentials.
+
+This is like going to an R-rated movie, where you can only get in if you show both your movie ticket (datatoken) _and_ some some id showing you're old enough (credential).
+
+Only credentials that can be proven are supported. This includes Ethereum public addresses, and (in the future) W3C Verifiable Credentials and more.
+
+Ocean also supports `"deny"` credentials: if a consumer has any of these credentials, they cannot access the resource.
+
+Here's an example object with both `"allow"` and `"deny"` entries.
 
 ```json
 "credentials":{
@@ -197,11 +157,6 @@ In order to support credentials based access. the following optional object is u
 }
 ```
 
-where:
-
-- "allow" - will control who can consume this asset. If array it's empty, means anyone can consume
-- "deny" - if there is a match, consumption is denied
-
 For future usage, we can extend that with different credentials types. Example:
 
 ```json
@@ -210,34 +165,3 @@ For future usage, we can extend that with different credentials types. Example:
   "values": ["profile1", "profile2"]
 }
 ```
-
-#### DID Document Proof
-
-Since V3, the metadata is stored on chain, so we don't need additional proofs, because we already have the transaction sender.
-
-#### Length of a DID
-
-The length of a DID must be compliant with the underlying storage layer and function calls. Given that decentralized virtual machines make use of contract languages such as Solidity and WASM, it is advised to fit the DID in structures such as `bytes32`.
-
-It would be nice to store the `did:op:` prefix in those 32 bytes, but that means fewer than 32 bytes would be left for storing the rest (25 bytes since "did:op:" takes 7 bytes if using UTF-8). If the rest is a secure hash, then we need a 25-byte secure hash, but secure hashes typically have 28, 32 or more bytes, so that won't work.
-
-Only the hash value _needs_ to be stored, not the `did:op:` prefix, because it should be clear from context that the value is an Ocean DID.
-
-#### How to compute a DID
-
-The DID (`id`) string begins with `did:op:` and is followed by a string representation of a bytes32.
-
-In V3, the DID is based on the datatoken address.
-
-## References
-
-- [DID Spec from the W3C Credentials Community Group](https://w3c-ccg.github.io/did-spec/)
-- [DID Spec from _Rebooting the Web of Trust_](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/did-spec-working-draft-03.md)
-
-## Change Process
-
-This document is governed by [OEP 2/COSS](../2/README.md).
-
-## Language
-
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://tools.ietf.org/html/bcp14) \[[RFC2119](https://tools.ietf.org/html/rfc2119)\] \[[RFC8174](https://tools.ietf.org/html/rfc8174)\] when, and only when, they appear in all capitals, as shown here.
