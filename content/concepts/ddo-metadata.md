@@ -11,7 +11,7 @@ This page defines the schema for asset _metadata_. Metadata is the subset of an 
 
 The schema is based on public schema.org [DataSet schema](https://schema.org/Dataset).
 
-Standardized names is critical for effective searching, sorting and filtering (curation).
+Standardizing labels is key to effective searching, sorting and filtering (curation).
 
 This page specifies metadata attributes that _must_ be included, and that _may_ be included. These attributes are organized hierarchically, from top-layer attributes like `"main"` to sub-level attributes like `"main.type"`. This page also provides DDO metadata examples.
 
