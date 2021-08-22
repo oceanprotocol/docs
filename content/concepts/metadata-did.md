@@ -1,6 +1,15 @@
-# Asset Identifiers & Objects - DIDs & DDOs
+---
+title: DIDs & DDOs - Asset Identifiers & Objects
+description: Specifification of DIDs & DDOs in Ocean
+slug: /concepts/metadata-did/
+section: concepts
+---
 
-## Background
+# Introduction
+
+## Overview
+
+This document describes how Ocean assets follow the DID/DDO spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. 
 
 Decentralized identifiers (DIDs) are a new type of identifier that enables verifiable, decentralized digital identity. Each DID is associated with a unique entity. DIDs may represent humans, objects, and more.
 
@@ -11,9 +20,7 @@ The combination of a DID and its associated DID Document forms the root record f
 
 DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) defined by the World Wide Web Consurtium (W3C).
 
-This document describes how Ocean assets follow the DID spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. 
-
-## Specification
+## Rules for DIDs & DDOs in Ocean
 
 - An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 - An asset should have a DID and DDO. The DDO should include metadata about the asset.
@@ -21,6 +28,8 @@ This document describes how Ocean assets follow the DID spec, such that Ocean as
 - There _must_ be at least one client library acting as _resolver_, to get a DDO from a DID.
 - The DDO is stored on-chain. It's stored in in plaintext, with two exceptions: (1) the field for resource-access url is encrypted (2) the whole DDO may be encrypted, if the publisher is willing to lose 100% of discoverability.
 - A metadata cache like Aquarius can help in reading and writing DDO data from the chain.
+
+# DIDs in Ocean
 
 ## DID Structure
 
@@ -33,6 +42,8 @@ did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
 The part after `did:op:` is the asset's on-chain Ethereum address (minus the "0x"). One can be computed from the other; therefore there is a 1:1 mapping between did and Ethereum address.
+
+# DDOs in Ocean
 
 ## DDO Attributes
 
