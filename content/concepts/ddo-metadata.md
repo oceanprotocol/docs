@@ -5,8 +5,6 @@ slug: /concepts/ddo-metadata/
 section: concepts
 ---
 
-# Introduction
-
 ## Overview
 
 This page defines the schema for asset _metadata_. Metadata is the subset of an Ocean DDO that holds information about the asset.
@@ -30,8 +28,6 @@ Most metadata fields may be modified after creation. The blockchain records the 
 The master reference for the DDO is the on-chain version, aka _remote_ version. Off-chain metadata caches like Aquarius are _local_ versions. 
 
 Aquarius can be used to help read and write data to the chain. Its local cache has decrypted information that was encrypted on-chain.
-
-# Attributes
 
 ## Attributes for Metadata
 
@@ -65,7 +61,7 @@ The `main` object has the following attributes. Not all are required. Some are r
 | **`license`**       | Text                  | Yes      | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
 | **`files`**         | Array of files object | Yes      | Array of `File` objects including the encrypted file urls.   |
 
-### Attributes for Metadata.Main.Type
+## Attributes for Metadata.Main.Type
 
 _Asset types_ include:
 
@@ -74,7 +70,7 @@ _Asset types_ include:
 
 Each _asset type_ needs a different subset of metadata attributes.
 
-### Metadata.Main.File Attribute
+## Attributes for Metadata.Main.File 
 
 A file object has the following attributes, with the details necessary to consume and validate the data.
 
@@ -108,7 +104,7 @@ All the additional information will be stored as part of the `additionalInformat
 | **`links`**           | Array of Link | No       | Mapping of links for data samples, or links to find out more information. Links may be to either a URL or another Asset. We expect marketplaces to converge on agreements of typical formats for linked data: The Ocean Protocol itself does not mandate any specific formats as these requirements are likely to be domain-specific. The links array can be an empty array, but if there is a link object in it, then an "url" is required in that link object. |
 | **`inLanguage`**      | Text          | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47).                                                                                                                                                                                                                                                                                                                            |
 
-### Other Suggested Additional Attributes
+## Attributes - Other Suggestions
 
 These are examples of attributes that can enhance the discoverability of a resource:
 
@@ -124,7 +120,7 @@ These are examples of attributes that can enhance the discoverability of a resou
 
 The publisher of a DDO _may_ add additional attributes or change the above object definition.
 
-### Status Attributes
+## Attributes for Status
 
 A `status` object has the following attributes.
 
@@ -134,9 +130,7 @@ A `status` object has the following attributes.
 | **`isRetired`**       | Boolean | No       | Flag retired content. False by default. If it's true, the content may either not be returned, or returned with a note about retirement.                                            |
 | **`isOrderDisabled`** | Boolean | No       | For temporarily disabling ordering assets, e.g. when file host is in maintenance. False by default. If it's true, no ordering of assets for download or compute should be allowed. |
 
-# Example
-
-## Example: All fields in plaintext (local)
+## DDO Metadata Example - All fields in plaintext (local)
 
 This is what the DDO metadata looks like with all fields in plaintext. This is before it's stored on-chain or when it's retrieved and decrypted into a local cache.
 
@@ -176,7 +170,7 @@ This is what the DDO metadata looks like with all fields in plaintext. This is b
 }
 ```
 
-## Example: Some fields encrypted (on-chain / remote)
+## DDO Metadata Example - Some fields encrypted (on-chain / remote)
 
 The previous example gave all fields in plaintext. Here's the same example, with some fields encrypted and changed for on-chain storage.
 
@@ -229,9 +223,7 @@ url` is removed from all objects in the `files` array, and `encryptedFiles` is a
 }
 ```
 
-# Attributes for Asset Type
-
-## Attributes for Algorithm
+## Attributes for Asset Type - Algorithm
 
 An asset of type `algorithm` has the following additional attributes under `main.algorithm`:
 
@@ -296,7 +288,7 @@ The `container` object has the following attributes:
 }
 ```
 
-## Attributes for Compute
+## Attributes for Asset Type - Compute
 
 An asset with a service of type `compute` has the following additional attributes under `main.privacy`:
 
@@ -333,7 +325,7 @@ sha256(
 )
 ```
 
-#### Example of a compute service
+### Example of a compute service
 
 ```json
 {

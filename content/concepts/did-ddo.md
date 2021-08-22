@@ -5,8 +5,6 @@ slug: /concepts/did-ddo/
 section: concepts
 ---
 
-# Introduction
-
 ## Overview
 
 This document describes how Ocean assets follow the DID/DDO spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. 
@@ -29,8 +27,6 @@ DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) d
 - The DDO is stored on-chain. It's stored in in plaintext, with two exceptions: (1) the field for resource-access url is encrypted (2) the whole DDO may be encrypted, if the publisher is willing to lose 100% of discoverability.
 - A metadata cache like Aquarius can help in reading and writing DDO data from the chain.
 
-# DIDs in Ocean
-
 ## DID Structure
 
 In Ocean, a DID is a string that looks like:
@@ -42,8 +38,6 @@ did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
 The part after `did:op:` is the asset's on-chain Ethereum address (minus the "0x"). One can be computed from the other; therefore there is a 1:1 mapping between did and Ethereum address.
-
-# DDOs in Ocean
 
 ## DDO Attributes
 
@@ -130,7 +124,7 @@ Here is an example DDO service:
 ]
 ```
 
-## Fine-Grained Permissions - Credentials
+## DDO Credentials for Fine-Grained Permissions
 
 By default, a consumer can access a resource if they have 1.0 datatokens. _Credentials_ allow the publisher to optionally specify finer-grained permissions.
 
