@@ -1,100 +1,73 @@
-# Asset Metadata - DDOs
+# Asset DDO Metadata
 
-**Table of Contents**
+## Overview
 
-- [Motivation](#motivation)
-- [Life Cycle of Metadata](#life-cycle-of-metadata)
-  - [Local Metadata](#local-metadata)
-  - [Remote Metadata](#remote-metadata)
-- [Metadata Attributes](#metadata-attributes)
-  - [Main Attributes](#main-attributes)
-    - [File Attributes](#file-attributes)
-  - [Additional Attributes](#additional-attributes)
-    - [Other Suggested Additional Attributes](#other-suggested-additional-attributes)
-  - [Status Attributes](#status-attributes)
-- [Example of Local Metadata](#example-of-local-metadata)
-- [Example of Remote Metadata](#example-of-remote-metadata)
-  - [Specific attributes per asset type](#specific-attributes-per-asset-type)
-    - [Algorithm attributes](#algorithm-attributes)
-- [References](#references)
-- [Change Process](#change-process)
-- [Language](#language)
+This page defines the schema for asset _metadata_. Metadata is the subset of an Ocean DDO that holds information about the asset.
 
----
+The schema is based on public schema.org [DataSet schema](https://schema.org/Dataset).
 
-## Motivation
+Standardized names is critical for effective searching, sorting and filtering (curation).
 
-Every asset (dataset, algorithm) in the Ocean Network has an associated Decentralized Identifier (DID) and DID document / DID Descriptor Object (DDO). Because assets without proper descriptive metadata have poor visibility and discoverability.
+This page specifies metadata attributes that _must_ be included, and that _may_ be included. These attributes are organized hierarchically, from top-layer attributes like `"main"` to sub-level attributes like `"main.type"`. This page also provides DDO metadata examples.
 
-See [OEP 7/DID](../../7/) for information about the overall structure of Ocean DDOs and DIDs.
+## Publishing Metadata
 
-This OEP is about one particular part of Ocean DDOs: the asset metadata, a JSON object with information about the asset.
+The publisher publishes an asset DDO (including metadata) onto the chain. 
 
-This OEP defines the assets metadata ontology, i.e. the schema for the asset metadata. It's based on the public schema.org [DataSet schema](https://schema.org/Dataset).
+Asset DDO metadata is stored in plaintext by default. File URLs are stored encrypted on the chain. All metadata may be encrypted, though at a severe cost to discoverability.
 
-This OEP doesn't detail the exact method of registering assets on-chain or storing DDOs.
+The publisher may be the asset owner, or a marketplace acting on behalf of the owner.
 
-The main motivations of this OEP are to:
+Most metadata fields may be modified after creation. The blockchain records the provenance of changes.
 
-- Specify the common attributes that MUST be included in any asset metadata stored in the Ocean Network
-- Normalize the attributes to use in any curation process, to provide a common structure to sort and filter the DDOs
-- Identify the recommended additional attributes that SHOULD be included in a DDO to facilitate asset search
-- Provide an example of an asset metadata object and additional links for reference
+The master reference for the DDO is the on-chain version, aka _remote_ version. Off-chain metadata caches like Aquarius are _local_ versions. 
 
-## Life Cycle of Metadata
+Aquarius can be used to help read and write data to the chain. Its local cache has decrypted information that was encrypted on-chain.
 
-### Local Metadata
+# Attributes
 
-Metadata is first created by the publisher of the asset. The publisher has knowledge of the file URLs, and they are stored in plaintext in the `files` object. This initial metadata is the _local metadata_.
+## Attributes for Metadata
 
-### Remote Metadata
-
-A publisher publishes (registers) an asset using [Ocean-lib](https://docs.oceanprotocol.com/concepts/components/#squid-libraries), which might be running on their local machine or remotely. When they do, the local metadata is passed to Squid, which makes some changes and additions in the metadata, puts it into a DDO, and sends that DDO to a metadata store (Aquarius).
-
-Aquarius may also make some changes and additions to the metadata, such as the `datePublished` or parts of the `curation` object. The metadata that finally gets stored by Aquarius is the _remote metadata_.
-
-> A marketplace can and might also act as a publisher. [OEP-11](../../11) describes the publishing flow in more detail.
-
-## Metadata Attributes
-
-An asset is the representation of different type of resources in Ocean Protocol. Typically can asset could be one of the following asset types:
-
-- _Dataset_. An asset representing a dataset or data resource. It could be for example a CSV file or a multiple JPG files.
-- _Algorithm_. An asset representing a piece of software. It could be a python script using tensorflow, a spark job, etc.
-
-Each kind of asset require a different subset of metadata attributes. The distintion between the type of asset (dataset, algorithm) is given by the attribute `DDO.services["metadata"].main.type`
+An asset represents a resource in Ocean, e.g. a dataset or an algorithm.
 
 A `metadata` object has the following attributes, all of which are objects.
 
 | Attribute                   | Required | Description                                                |
 | --------------------------- | -------- | ---------------------------------------------------------- |
-| **`main`**                  | Yes      | Main attributes used to calculate the service checksum     |
+| **`main`**                  | Yes      | Main attributes                                            |
 | **`status`**                | No.      | Status attributes                                          |
 | **`additionalInformation`** | No       | Optional attributes                                        |
 | **`encryptedFiles`**        | (remote) | Encrypted string of the `attributes.main.files` object.    |
 | **`encryptedServices`**     | (remote) | Encrypted string of the `attributes.main.services` object. |
 
-The `main`, `curation` and `additionalInformation` attributes are independent of the asset type, all assets have those metadata sections.
+The `main` and `additionalInformation` attributes are independent of the asset type. All assets have those metadata sections.
 
-### Main Attributes
+## Attributes for Metadata.Main
 
 **This list of attributes can't be modified after creation**, because these are considered as the metadata essence of the asset created. This information is used to calculate the unique checksum of the asset. If any change would be necessary in the following attributes, it would be necessary to create a new asset derived from the existing one.
 
-The `main` object has the following attributes, not all are required. Some are required by only the metadata store (_remote_) and others are mandatory for _local_ metadata only. If required or not by both, they are marked with _Yes/No_ in the _Required_ column.
+The `main` object has the following attributes. Not all are required. Some are required by only the metadata store (_remote_) and others are mandatory for _local_ metadata only. If required or not by both, they are marked with _Yes/No_ in the _Required_ column.
 
 | Attribute           | Type                  | Required | Description                                                                                                                                                                                       |
 | ------------------- | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`name`**          | Text                  | Yes      | Descriptive name or title of the asset.                                                                                                                                                           |
-| **`type`**          | Text                  | Yes      | Type of the asset. Helps to filter by the type of asset. It could be for example ("dataset", "algorithm").                                                                                        |
+| **`type`**          | Text                  | Yes      | Type of the asset. E.g. "dataset", "algorithm".              |
 | **`dateCreated`**   | DateTime              | Yes      | The date on which the asset was created by the originator. ISO 8601 format, Coordinated Universal Time, e.g. `2019-01-31T08:38:32Z`.                                                              |
 | **`datePublished`** | DateTime              | (remote) | The date on which the asset DDO is registered into the metadata store (Aquarius)                                                                                                                  |
 | **`author`**        | Text                  | Yes      | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
 | **`license`**       | Text                  | Yes      | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
 | **`files`**         | Array of files object | Yes      | Array of `File` objects including the encrypted file urls. Further metadata about each file is stored, see [File Attributes](#file-attributes)                                                    |
 
-#### File Attributes
+### Attributes for Metadata.Main.Type
 
-File attributes are a subset of the `main` section.
+_Asset types_ include:
+
+- `dataset` - represents a dataset or data resource. It could be for example a CSV file or a multiple JPG files.
+- `algorithm` - represents a piece of software. It could be a python script using tensorflow, a spark job, etc.
+
+Each _asset type_ needs a different subset of metadata attributes.
+
+### Metadata.Main.File Attribute
 
 A file object has the following attributes, with the details necessary to consume and validate the data.
 
@@ -114,7 +87,7 @@ A file object has the following attributes, with the details necessary to consum
 | **`resourceId`**     | no       | Remote identifier of the file in the external provider. It is typically the remote id in the cloud provider.                                                                             |
 | **`attributes`**     | no       | Key-Value hash map with additional attributes describing the asset file. It could include details like the Amazon S3 bucket, region, etc.                                                |
 
-### Additional Attributes
+## Attributes for Metadata.AdditionalInformation
 
 All the additional information will be stored as part of the `additionalInformation` section.
 
@@ -128,7 +101,7 @@ All the additional information will be stored as part of the `additionalInformat
 | **`links`**           | Array of Link | No       | Mapping of links for data samples, or links to find out more information. Links may be to either a URL or another Asset. We expect marketplaces to converge on agreements of typical formats for linked data: The Ocean Protocol itself does not mandate any specific formats as these requirements are likely to be domain-specific. The links array can be an empty array, but if there is a link object in it, then an "url" is required in that link object. |
 | **`inLanguage`**      | Text          | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47).                                                                                                                                                                                                                                                                                                                            |
 
-#### Other Suggested Additional Attributes
+### Other Suggested Additional Attributes
 
 These are examples of attributes that can enhance the discoverability of a resource:
 
@@ -142,7 +115,7 @@ These are examples of attributes that can enhance the discoverability of a resou
 | **`keyword`**          | A list of keywords/tags describing a dataset.                                                                                                                               |
 | **`structuredMarkup`** | A link to machine-readable structured markup (such as ttl/json-ld/rdf) describing the dataset.                                                                              |
 
-The publisher of a DDO MAY add additional attributes or change the above object definition.
+The publisher of a DDO _may_ add additional attributes or change the above object definition.
 
 ### Status Attributes
 
@@ -154,7 +127,11 @@ A `status` object has the following attributes.
 | **`isRetired`**       | Boolean | No       | Flag retired content. False by default. If it's true, the content may either not be returned, or returned with a note about retirement.                                            |
 | **`isOrderDisabled`** | Boolean | No       | For temporarily disabling ordering assets, e.g. when file host is in maintenance. False by default. If it's true, no ordering of assets for download or compute should be allowed. |
 
-## Example of Local Metadata
+# Example
+
+## Example: All fields in plaintext (local)
+
+This is what the DDO metadata looks like with all fields in plaintext. This is before it's stored on-chain or when it's retrieved and decrypted into a local cache.
 
 ```json
 {
@@ -192,9 +169,13 @@ A `status` object has the following attributes.
 }
 ```
 
-## Example of Remote Metadata
+## Example: Some fields encrypted (on-chain / remote)
 
-Similarly, this is how the metadata file would look as a response to querying Aquarius (remote metadata). Note that `url` is removed from all objects in the `files` array, and `encryptedFiles` & `curation` are added.
+The previous example gave all fields in plaintext. Here's the same example, with some fields encrypted and changed for on-chain storage.
+
+This is how the metadata looks as a response to querying Aquarius (remote metadata).
+
+url` is removed from all objects in the `files` array, and `encryptedFiles` is added.
 
 ```json
 {
@@ -241,11 +222,9 @@ Similarly, this is how the metadata file would look as a response to querying Aq
 }
 ```
 
-### Specific attributes per asset type
+# Attributes for Asset Type
 
-Depending on the asset type (dataset, algorithm), there are different metadata attributes supported:
-
-#### Algorithm attributes
+## Attributes for Algorithm
 
 An asset of type `algorithm` has the following additional attributes under `main.algorithm`:
 
@@ -310,7 +289,7 @@ The `container` object has the following attributes:
 }
 ```
 
-#### Compute datasets attributes
+## Attributes for Compute
 
 An asset with a service of type `compute` has the following additional attributes under `main.privacy`:
 
@@ -328,7 +307,7 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 | **`filesChecksum`**            | `string` | yes      | Hash of ( algorithm's encryptedFiles + files section (as string) ) |
 | **`containerSectionChecksum`** | `string` | yes      | Hash of the algorithm container section (as string)                |
 
-To produce filesChecksum:
+To produce `filesChecksum`:
 
 ```javascript
 sha256(
@@ -337,7 +316,7 @@ sha256(
 )
 ```
 
-To produce containerSectionChecksum:
+To produce `containerSectionChecksum`:
 
 ```javascript
 sha256(
@@ -347,7 +326,7 @@ sha256(
 )
 ```
 
-Example of a compute service
+#### Example of a compute service
 
 ```json
 {
@@ -382,18 +361,10 @@ Example of a compute service
 }
 ```
 
-## References
+# References
 
 [Schema.org](https://schema.org/) is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet. Data types use the [Schema.org primitive data types](https://schema.org/DataType).
 
 - [Schema.org: DataSet](https://schema.org/Dataset)
 - [Schema.org: FileSize](https://schema.org/fileSize)
 - [Common license types for datasets](https://help.data.world/hc/en-us/articles/115006114287-Common-license-types-for-datasets)
-
-## Change Process
-
-This document is governed by [OEP 2/COSS](../2/README.md).
-
-## Language
-
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14](https://tools.ietf.org/html/bcp14) \[[RFC2119](https://tools.ietf.org/html/rfc2119)\] \[[RFC8174](https://tools.ietf.org/html/rfc8174)\] when, and only when, they appear in all capitals, as shown here.
