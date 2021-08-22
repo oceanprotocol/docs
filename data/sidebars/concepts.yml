@@ -18,11 +18,11 @@
     - title: Compute-to-Data Overview
       link: /concepts/compute-to-data/
 
-- group: Metadata
+- group: Specifying Assets
   items:
-    - title: Asset Identifiers & Objects - DIDs & DDOs
+    - title: DIDs & DDOs
       link: /concepts/metadata-did/
-    - title: Asset Metadata - DDOs
+    - title: DDO Metadata
       link: /concepts/metadata-asset-ddo/
 
 - group: Contribute
