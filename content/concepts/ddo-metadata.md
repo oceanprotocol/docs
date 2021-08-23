@@ -32,7 +32,7 @@ DDOs (including metadata) are found in two places:
 
 Aquarius can be used to help read and write data to the chain. Its local cache has decrypted information that was encrypted on-chain.
 
-## Attributes for Metadata
+## Fields for Metadata
 
 An asset represents a resource in Ocean, e.g. a dataset or an algorithm.
 
