@@ -67,6 +67,14 @@ module.exports = {
     {
       from: '/concepts/connect-to-networks/',
       to: '/concepts/networks/'
+    },
+    {
+      from: '/concepts/oeps-did/',
+      to: '/concepts/did-ddo/'
+    },
+    {
+      from: '/concepts/oeps-asset-ddo/',
+      to: '/concepts/ddo-metadata/'
     }
   ],
   swaggerComponents: [
