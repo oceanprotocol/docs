@@ -25,7 +25,9 @@ The publisher may be the asset owner, or a marketplace acting on behalf of the o
 
 Most metadata fields may be modified after creation. The blockchain records the provenance of changes.
 
-The master reference for the DDO is the on-chain version, aka _remote_ version. Off-chain metadata caches like Aquarius are _local_ versions. 
+DDOs (including metadata) are found in two places:
+- _Remote_ - main storage, on-chain. Some fields are encrypted.
+- _Local_ - local cache. Example: Aquarius. All fields are in plaintext. 
 
 Aquarius can be used to help read and write data to the chain. Its local cache has decrypted information that was encrypted on-chain.
 
@@ -33,78 +35,79 @@ Aquarius can be used to help read and write data to the chain. Its local cache h
 
 An asset represents a resource in Ocean, e.g. a dataset or an algorithm.
 
-A `metadata` object has the following attributes, all of which are objects.
+A `metadata` object has the following attributes, all of which are objects. Some are only required for local or remote, and are specified as such.
 
 | Attribute                   | Required | Description                                                |
 | --------------------------- | -------- | ---------------------------------------------------------- |
 | **`main`**                  | Yes      | Main attributes                                            |
-| **`status`**                | No.      | Status attributes                                          |
+| **`encryptedFiles`**        | Remote   | Encrypted string of the `attributes.main.files` object.    |
+| **`encryptedServices`**     | Remote   | Encrypted string of the `attributes.main.services` object. |
+| **`status`**                | No       | Status attributes                                          |
 | **`additionalInformation`** | No       | Optional attributes                                        |
-| **`encryptedFiles`**        | (remote) | Encrypted string of the `attributes.main.files` object.    |
-| **`encryptedServices`**     | (remote) | Encrypted string of the `attributes.main.services` object. |
 
-The `main` and `additionalInformation` attributes are independent of the asset type. All assets have those metadata sections.
+The `main` and `additionalInformation` attributes are independent of the asset type. 
 
-## Attributes for Metadata.Main
+## Fields for `attributes.main`
 
-**This list of attributes can't be modified after creation**, because these are considered as the metadata essence of the asset created. This information is used to calculate the unique checksum of the asset. If any change would be necessary in the following attributes, it would be necessary to create a new asset derived from the existing one.
-
-The `main` object has the following attributes. Not all are required. Some are required by only the metadata store (_remote_) and others are mandatory for _local_ metadata only. If required or not by both, they are marked with _Yes/No_ in the _Required_ column.
+The `main` object has the following attributes. 
 
 | Attribute           | Type                  | Required | Description                                                                                                                                                                                       |
 | ------------------- | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`name`**          | Text                  | Yes      | Descriptive name or title of the asset.                                                                                                                                                           |
-| **`type`**          | Text                  | Yes      | Type of the asset. E.g. "dataset", "algorithm".              |
-| **`dateCreated`**   | DateTime              | Yes      | The date on which the asset was created by the originator. ISO 8601 format, Coordinated Universal Time, e.g. `2019-01-31T08:38:32Z`.                                                              |
-| **`datePublished`** | DateTime              | (remote) | The date on which the asset DDO is registered into the metadata store (Aquarius)                                                                                                                  |
+| **`type`**          | Text                  | Yes      | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes. |
 | **`author`**        | Text                  | Yes      | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
 | **`license`**       | Text                  | Yes      | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
 | **`files`**         | Array of files object | Yes      | Array of `File` objects including the encrypted file urls.   |
+| **`dateCreated`**   | DateTime              | Yes      | The date on which the asset was created by the originator. ISO 8601 format, Coordinated Universal Time, e.g. `2019-01-31T08:38:32Z`.                                                              |
+| **`datePublished`** | DateTime              | Remote   | The date on which the asset DDO is registered into the metadata store (Aquarius)                                                                                                                  |
 
-## Attributes for Metadata.Main.Type
+## Fields for `attributes.main.files` 
 
-_Asset types_ include:
+The `files` object has a list of `file` objects.
 
-- `dataset` - represents a dataset or data resource. It could be for example a CSV file or a multiple JPG files.
-- `algorithm` - represents a piece of software. It could be a python script using tensorflow, a spark job, etc.
-
-Each _asset type_ needs a different subset of metadata attributes.
-
-## Attributes for Metadata.Main.File 
-
-A file object has the following attributes, with the details necessary to consume and validate the data.
+Each `file` object has the following attributes, with the details necessary to consume and validate the data.
 
 | Attribute            | Required | Description                                                                                                                                                                              |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`url`**            | (local)  | Content URL. Omitted from the remote metadata. Supports `http(s)://` and `ipfs://` URLs.                                                                                                 |
-| **`name`**           | no       | File name.                                                                                                                                                                               |
-| **`index`**          | yes      | Index number starting from 0 of the file.                                                                                                                                                |
-| **`contentType`**    | yes      | File format.                                                                                                                                                                             |
-| **`checksum`**       | no       | Checksum of the file using your preferred format (i.e. MD5). Format specified in `checksumType`. If it's not provided can't be validated if the file was not modified after registering. |
-| **`checksumType`**   | no       | Format of the provided checksum. Can vary according to server (i.e Amazon vs. Azure)                                                                                                     |
-| **`contentLength`**  | no       | Size of the file in bytes.                                                                                                                                                               |
-| **`encoding`**       | no       | File encoding (e.g. UTF-8).                                                                                                                                                              |
-| **`compression`**    | no       | File compression (e.g. no, gzip, bzip2, etc).                                                                                                                                            |
-| **`encrypted`**      | no       | Boolean. Is the file encrypted? If is not set is assumed the file is not encrypted                                                                                                       |
-| **`encryptionMode`** | no       | Encryption mode used. Just valid if `encrypted=true`                                                                                                                                     |
-| **`resourceId`**     | no       | Remote identifier of the file in the external provider. It is typically the remote id in the cloud provider.                                                                             |
-| **`attributes`**     | no       | Key-Value hash map with additional attributes describing the asset file. It could include details like the Amazon S3 bucket, region, etc.                                                |
+| **`index`**          | Yes      | Index number starting from 0 of the file.                                                                                                                                                |
+| **`contentType`**    | Yes      | File format.                                                                                                                                                                             |
+| **`url`**            | Local    | Content URL. Omitted from the remote metadata. Supports `http(s)://` and `ipfs://` URLs.                                                                                                 |
+| **`name`**           | No       | File name.                                                                                                                                                                               |
+| **`checksum`**       | No       | Checksum of the file using your preferred format (i.e. MD5). Format specified in `checksumType`. If it's not provided can't be validated if the file was not modified after registering. |
+| **`checksumType`**   | No       | Format of the provided checksum. Can vary according to server (i.e Amazon vs. Azure)                                                                                                     |
+| **`contentLength`**  | No       | Size of the file in bytes.                                                                                                                                                               |
+| **`encoding`**       | No       | File encoding (e.g. UTF-8).                                                                                                                                                              |
+| **`compression`**    | No       | File compression (e.g. no, gzip, bzip2, etc).                                                                                                                                            |
+| **`encrypted`**      | No       | Boolean. Is the file encrypted? If is not set is assumed the file is not encrypted                                                                                                       |
+| **`encryptionMode`** | No       | Encryption mode used. Just valid if `encrypted=true`                                                                                                                                     |
+| **`resourceId`**     | No       | Remote identifier of the file in the external provider. It is typically the remote id in the cloud provider.                                                                             |
+| **`attributes`**     | No       | Key-Value hash map with additional attributes describing the asset file. It could include details like the Amazon S3 bucket, region, etc.                                                |
 
-## Attributes for Metadata.AdditionalInformation
+## Fields for `attributes.status`
+
+A `status` object has the following attributes.
+
+| Attribute             | Type    | Required | Description                                                                                                                                                                        |
+| --------------------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`isListed`**        | Boolean | No       | Use to flag unsuitable content. True by default. If it's false, the content must not be returned.                                                                                  |
+| **`isRetired`**       | Boolean | No       | Flag retired content. False by default. If it's true, the content may either not be returned, or returned with a note about retirement.                                            |
+| **`isOrderDisabled`** | Boolean | No       | For temporarily disabling ordering assets, e.g. when file host is in maintenance. False by default. If it's true, no ordering of assets for download or compute should be allowed. |
+
+## Fields for `attributes.additionalInformation`
 
 All the additional information will be stored as part of the `additionalInformation` section.
 
 | Attribute             | Type          | Required |
 | --------------------- | ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`categories`**      | Array of Text | No       | Optional array of categories associated to the asset.                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **`tags`**            | Array of Text | No       | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **`description`**     | Text          | No       | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                                                                                                                                                                                                                                                                                    |
 | **`copyrightHolder`** | Text          | No       | The party holding the legal copyright. Empty by default.                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **`workExample`**     | Text          | No       | Example of the concept of this asset. This example is part of the metadata, not an external link.                                                                                                                                                                                                                                                                                                                                                                |
 | **`links`**           | Array of Link | No       | Mapping of links for data samples, or links to find out more information. Links may be to either a URL or another Asset. We expect marketplaces to converge on agreements of typical formats for linked data: The Ocean Protocol itself does not mandate any specific formats as these requirements are likely to be domain-specific. The links array can be an empty array, but if there is a link object in it, then an "url" is required in that link object. |
 | **`inLanguage`**      | Text          | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47).                                                                                                                                                                                                                                                                                                                            |
+| **`categories`**      | Array of Text | No       | Optional array of categories associated to the asset. Note: recommended to use `"tags"` instead of this.                                                                      |
 
-## Attributes - Other Suggestions
+## Fields - Other Suggestions
 
 These are examples of attributes that can enhance the discoverability of a resource:
 
@@ -120,19 +123,9 @@ These are examples of attributes that can enhance the discoverability of a resou
 
 The publisher of a DDO _may_ add additional attributes or change the above object definition.
 
-## Attributes for Metadata.Status
+## DDO Metadata Example - Local
 
-A `status` object has the following attributes.
-
-| Attribute             | Type    | Required | Description                                                                                                                                                                        |
-| --------------------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`isListed`**        | Boolean | No       | Use to flag unsuitable content. True by default. If it's false, the content must not be returned.                                                                                  |
-| **`isRetired`**       | Boolean | No       | Flag retired content. False by default. If it's true, the content may either not be returned, or returned with a note about retirement.                                            |
-| **`isOrderDisabled`** | Boolean | No       | For temporarily disabling ordering assets, e.g. when file host is in maintenance. False by default. If it's true, no ordering of assets for download or compute should be allowed. |
-
-## DDO Metadata Example - All fields in plaintext (local)
-
-This is what the DDO metadata looks like with all fields in plaintext. This is before it's stored on-chain or when it's retrieved and decrypted into a local cache.
+This is what the DDO metadata looks like. All fields are in plaintext. This is before it's stored on-chain or when it's retrieved and decrypted into a local cache.
 
 ```json
 {
@@ -170,13 +163,13 @@ This is what the DDO metadata looks like with all fields in plaintext. This is b
 }
 ```
 
-## DDO Metadata Example - Some fields encrypted (on-chain / remote)
+## DDO Metadata Example - Remote
 
-The previous example gave all fields in plaintext. Here's the same example, with some fields encrypted and changed for on-chain storage.
+The previous example was for a local cache, with all fields in plaintext. Here's the same example, for remote on-chain storage. Some fields are encrypted or changed.
 
 This is how the metadata looks as a response to querying Aquarius (remote metadata).
 
-url` is removed from all objects in the `files` array, and `encryptedFiles` is added.
+`url` is removed from all objects in the `files` array, and `encryptedFiles` is added.
 
 ```json
 {
@@ -223,25 +216,25 @@ url` is removed from all objects in the `files` array, and `encryptedFiles` is a
 }
 ```
 
-## Attributes when Metadata.Main.Type = Algorithm
+## Fields when `attributes.main.type = algorithm`
 
 An asset of type `algorithm` has the following additional attributes under `main.algorithm`:
 
 | Attribute       | Type     | Required | Description                                   |
 | --------------- | -------- | -------- | --------------------------------------------- |
-| **`language`**  | `string` | no       | Language used to implement the software       |
-| **`format`**    | `string` | no       | Packaging format of the software.             |
-| **`version`**   | `string` | no       | Version of the software.                      |
-| **`container`** | `Object` | yes      | Object describing the Docker container image. |
+| **`container`** | `Object` | Yes      | Object describing the Docker container image. |
+| **`language`**  | `string` | No       | Language used to implement the software       |
+| **`format`**    | `string` | No       | Packaging format of the software.             |
+| **`version`**   | `string` | No       | Version of the software.                      |
 
 The `container` object has the following attributes:
 
 | Attribute        | Type     | Required | Description                                                       |
 | ---------------- | -------- | -------- | ----------------------------------------------------------------- |
-| **`entrypoint`** | `string` | yes      | The command to execute, or script to run inside the Docker image. |
-| **`image`**      | `string` | yes      | Name of the Docker image.                                         |
-| **`tag`**        | `string` | yes      | Tag of the Docker image.                                          |
-| **`checksum`**   | `string` | yes      | Checksum of the Docker image.                                     |
+| **`entrypoint`** | `string` | Yes      | The command to execute, or script to run inside the Docker image. |
+| **`image`**      | `string` | Yes      | Name of the Docker image.                                         |
+| **`tag`**        | `string` | Yes      | Tag of the Docker image.                                          |
+| **`checksum`**   | `string` | Yes      | Checksum of the Docker image.                                     |
 
 ```json
 {
@@ -269,7 +262,7 @@ The `container` object has the following attributes:
       "files": [
         {
           "name": "build_model",
-          "url": "https://raw.githubusercontent.com/oceanprotocol/test-algorithm/master/javascript/algo.js",
+          "url": "https://raw.gith ubusercontent.com/oceanprotocol/test-algorithm/master/javascript/algo.js",
           "index": 0,
           "checksum": "efb2c764274b745f5fc37f97c6b0e761",
           "contentLength": "4535431",
@@ -288,23 +281,23 @@ The `container` object has the following attributes:
 }
 ```
 
-## Attributes when Metadata.Main.Type = Compute
+## Fields when `attributes.main.type = compute`
 
 An asset with a service of type `compute` has the following additional attributes under `main.privacy`:
 
 | Attribute                         | Type               | Required | Description                                                |
 | --------------------------------- | ------------------ | -------- | ---------------------------------------------------------- |
-| **`allowRawAlgorithm`**           | `boolean`          | yes      | If True, a drag & drop algo can be runned                  |
-| **`allowNetworkAccess`**          | `boolean`          | yes      | If True, the algo job will have network access (stil WIP)  |
-| **`publisherTrustedAlgorithms `** | Array of `Objects` | yes      | If Empty , then any published algo is allowed. (see below) |
+| **`allowRawAlgorithm`**           | `boolean`          | Yes      | If True, a drag & drop algo can be runned                  |
+| **`allowNetworkAccess`**          | `boolean`          | Yes      | If True, the algo job will have network access (stil WIP)  |
+| **`publisherTrustedAlgorithms `** | Array of `Objects` | Yes      | If Empty , then any published algo is allowed. (see below) |
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
 | Attribute                      | Type     | Required | Description                                                        |
 | ------------------------------ | -------- | -------- | ------------------------------------------------------------------ |
-| **`did`**                      | `string` | yes      | The did of the algo which is trusted by the publisher.             |
-| **`filesChecksum`**            | `string` | yes      | Hash of ( algorithm's encryptedFiles + files section (as string) ) |
-| **`containerSectionChecksum`** | `string` | yes      | Hash of the algorithm container section (as string)                |
+| **`did`**                      | `string` | Yes      | The did of the algo which is trusted by the publisher.             |
+| **`filesChecksum`**            | `string` | Yes      | Hash of ( algorithm's encryptedFiles + files section (as string) ) |
+| **`containerSectionChecksum`** | `string` | Yes      | Hash of the algorithm container section (as string)                |
 
 To produce `filesChecksum`:
 
