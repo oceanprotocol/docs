@@ -1,5 +1,5 @@
 ---
-title: Set Up Amazon S3 Storage
+title: Set Up Azure Storage
 description: Tutorial about how to set up Azure storage for use with Ocean.
 ---
 *Note: This needs updating for Ocean V3.*
