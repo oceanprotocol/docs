@@ -33,6 +33,7 @@ git clone https://github.com/oceanprotocol/operator-service.git
 Edit `operator-service/kubernetes/postgres-configmap.yaml`. Change `POSTGRES_PASSWORD` to nice long random password.
 
 Edit `operator-service/kubernetes/deployment.yaml`. Optionally change:
+
 - `ALGO_POD_TIMEOUT`
 - add `requests_cpu`
 - add `requests_memory`
@@ -152,4 +153,4 @@ operator_service.url = https://compute.example.com/
 
 Restart your provider service.
 
-[See example video](https://vimeo.com/580934725)
+[Watch the explanatory video for more details](https://vimeo.com/580934725)
