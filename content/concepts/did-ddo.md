@@ -101,7 +101,7 @@ Here is an example DDO service:
   {
     "index": 1,
     "type": "access",
-    "serviceEndpoint": "http://localhost:8030/api/v1/brizo/services/consume",
+    "serviceEndpoint": "http://localhost:8030/api/v1/provider/services/consume",
     "attributes": {
       "main": {
         "cost":"10",
@@ -113,7 +113,7 @@ Here is an example DDO service:
   {
     "index": 2,
     "type": "compute",
-    "serviceEndpoint": "http://localhost:8030/api/v1/brizo/services/compute",
+    "serviceEndpoint": "http://localhost:8030/api/v1/provider/services/compute",
     "attributes": {
       "main": {
         "cost":"10",
