@@ -26,6 +26,7 @@ The publisher may be the asset owner, or a marketplace acting on behalf of the o
 Most metadata fields may be modified after creation. The blockchain records the provenance of changes.
 
 DDOs (including metadata) are found in two places:
+
 - _Remote_ - main storage, on-chain. Some fields are encrypted.
 - _Local_ - local cache. Example: Aquarius. All fields are in plaintext. 
 
@@ -163,6 +164,7 @@ The previous example was for a local cache, with all fields in plaintext.
 Here's the same example, for remote on-chain storage. That is, it's how metadata looks as a response to querying Aquarius (remote metadata).
 
 How remote is changed, compared to local:
+
 - `url` is removed from all objects in the `files` array
 - `encryptedFiles` is added.
 
