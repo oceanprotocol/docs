@@ -19,18 +19,16 @@ This page specifies metadata attributes that _must_ be included, and that _may_ 
 
 The publisher publishes an asset DDO (including metadata) onto the chain. 
 
-Asset DDO metadata is stored in plaintext by default. File URLs are stored encrypted on the chain. All metadata may be encrypted, though at a severe cost to discoverability.
-
 The publisher may be the asset owner, or a marketplace acting on behalf of the owner.
 
 Most metadata fields may be modified after creation. The blockchain records the provenance of changes.
 
 DDOs (including metadata) are found in two places:
 
-- _Remote_ - main storage, on-chain. Some fields are encrypted.
-- _Local_ - local cache. Example: Aquarius. All fields are in plaintext. 
+- _Remote_ - main storage, on-chain. File URLs are always encrypted. One may actually encrypt all metadata, at a severe cost to discoverability.
+- _Local_ - local cache. All fields are in plaintext. 
 
-Aquarius can be used to help read and write data to the chain. Its local cache has decrypted information that was encrypted on-chain.
+Ocean Aquarius helps manage metadata. It can be used to write DDOs to the chain, read from the chain, and has a local cache of the DDO in plaintext with fast search. 
 
 ## Fields for Metadata
 
