@@ -15,34 +15,42 @@ The most basic scenario for a Publisher is to provide access to the datasets the
 
 [This page](https://oceanprotocol.com/technology/compute-to-data) elaborates on the benefits.
 
-## Data Sets & Algorithms
+## Datasets & Algorithms
 
-With Compute-to-Data, data sets are not allowed to leave the premises of the data holder, only algorithms can be permitted to run on them under certain conditions within an isolated and secure environment. Algorithms are an asset type just like data sets and they too can have a pool or a fixed price to determine their price whenever they are used.
+With Compute-to-Data, datasets are not allowed to leave the premises of the data holder, only algorithms can be permitted to run on them under certain conditions within an isolated and secure environment. Algorithms are an asset type just like datasets. They they too can have a pool or a fixed price to determine their price whenever they are used.
 
-Algorithms can be either public or private by setting either an `access` or a `compute` service in their DDO. An algorithm set to public can be downloaded for its set price, while an algorithm set to private is only available as part of a compute job without any way to download it. If an algorithm is set to private, then the dataset must be published on the same Ocean Provider as the data set it should run on.
 
-For each data set, publishers can choose to allow various permission levels for algorithms to run:
+Algorithms can be public or private by setting `"attributes.main.type"` value as follows:
+
+-`"access"` - public. The algorithm can be downloaded, given appropriate datatoken.
+-`"compute"` - private. The algorithm is only available to use as part of a compute job without any way to download it. The dataset must be published on the same Ocean Provider as the dataset it's targeted to run on.
+
+For each dataset, publishers can choose to allow various permission levels for algorithms to run:
 
 - allow selected algorithms, referenced by their DID
 - allow all algorithms published within a network or marketplace
 - allow raw algorithms, for advanced use cases circumventing algorithm as an asset type, but most prone to data escape
 
-All implementations should set permissions to private by default: upon publishing a compute data set, no algorithms should be allowed to run on it. This is to prevent data escape by a rogue algorithm being written in a way to extract all data from a data set.
+All implementations should set permissions to private by default: upon publishing a compute dataset, no algorithms should be allowed to run on it. This is to prevent data escape by a rogue algorithm being written in a way to extract all data from a dataset.
 
 ## Architecture Overview
 
-Here is a sequence diagram for starting a new compute job.
+Here's the sequence diagram for starting a new compute job. 
 
 ![Sequence Diagram for computing services](images/Starting New Compute Job.png)
 
-This sequence involves the following components/actors:
+The Consumer calls the Provider with `start(did, algorithm, additionalDIDs)`. It returns job id `XXXX`. The Provider oversees the rest of the work. At any point, the Consumer can query the Provider for the job status via `getJobDetails(XXXX)`.
+
+Here's how Provider works. First, it ensures that the Consumer has sent the appropriate datatokens to get access. Then, it calls asks the Operator-Service (a microservice) to start the job, which passes on the request to Operator-Engine (the actual compute system). Operator-Engine runs Kubernetes compute jobs etc as needed. Operator-Engine reports when to Operator-Service when the job has finished.
+
+Here's the actors/components:
 
 - Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
 - Operator-Service - Micro-service that is handling the compute requests.
 - Operator-Engine - The computing systems where the compute will be executed.
 - Kubernetes - a K8 cluster
 
-Before the flow can begin, the following pre-conditions must be met:
+Before the flow can begin, these pre-conditions must be met:
 
 - The Asset DDO has a `compute` service.
 - The Asset DDO compute service must permit algorithms to run on it.
