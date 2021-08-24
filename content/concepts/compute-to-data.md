@@ -21,6 +21,7 @@ With Compute-to-Data, datasets are not allowed to leave the premises of the data
 
 
 Algorithms can be public or private by setting `"attributes.main.type"` value as follows:
+
 -`"access"` - public. The algorithm can be downloaded, given appropriate datatoken.
 -`"compute"` - private. The algorithm is only available to use as part of a compute job without any way to download it. The dataset must be published on the same Ocean Provider as the dataset it's targeted to run on.
 
