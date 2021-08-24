@@ -31,11 +31,11 @@ All implementations should set permissions to private by default: upon publishin
 
 ## Architecture Overview
 
-The architecture follows [OEP-12: Compute-to-Data](https://github.com/oceanprotocol/OEPs/tree/master/12) as a spec.
+Here is a sequence diagram for starting a new compute job.
 
 ![Sequence Diagram for computing services](images/Starting New Compute Job.png)
 
-In the above diagram you can see the initial integration supported. It involves the following components/actors:
+This sequence involves the following components/actors:
 
 - Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
 - Operator-Service - Micro-service that is handling the compute requests.
@@ -109,3 +109,4 @@ The Operator Engine is in charge of retrieving all the workflows registered in a
 - [Tutorial: Writing Algorithms](/tutorials/compute-to-data-algorithms/)
 - [Tutorial: Set Up a Compute-to-Data Environment](/tutorials/compute-to-data/)
 - [Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com)
+- [(Old) Compute-to-Data specs](https://github.com/oceanprotocol-archive/OEPs/tree/master/12) (OEP12)
