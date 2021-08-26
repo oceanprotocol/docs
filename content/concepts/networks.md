@@ -7,6 +7,9 @@ Ocean Protocol contracts are deployed on multiple public networks. You can alway
 
 In each network, you’ll need ETH to pay for gas, and OCEAN for certain Ocean actions. Because the Ethereum mainnet is a network for production settings, ETH and OCEAN tokens have real value on there. The ETH and OCEAN tokens in each test network don’t have real value and are used for testing-purposes only. They can be obtained with _faucets_ to dole out ETH and OCEAN.
 
+The universal Aquarius Endpoint is `https://aquarius.oceanprotocol.com`.
+
+
 ## Ethereum Mainnet
 
 The Ethereum Mainnet is Ocean’s production network.
@@ -29,7 +32,6 @@ MetaMask and other ERC20 wallets default to Ethereum mainnet, therefore your wal
 | Explorer     | https://etherscan.io                         |
 | Ocean Market | https://market.oceanprotocol.com             |
 | Provider     | `https://provider.mainnet.oceanprotocol.com` |
-| Aquarius     | `https://aquarius.mainnet.oceanprotocol.com` |
 | Subgraph     | `https://subgraph.mainnet.oceanprotocol.com` |
 
 ## Polygon Mainnet
@@ -63,7 +65,6 @@ If you don't find Polygon as a predefined network in your wallet, you can connec
 | Explorer     | https://polygonscan.com/                     |
 | Ocean Market | Point wallet to Polygon network, at https://market.oceanprotocol.com |
 | Provider     | `https://provider.polygon.oceanprotocol.com` |
-| Aquarius     | `https://aquarius.polygon.oceanprotocol.com` |
 | Subgraph     | `https://subgraph.polygon.oceanprotocol.com` |
 
 **Bridge**
@@ -89,10 +90,10 @@ If you don't find BSC as a predefined network in your wallet, you can connect to
 - BSC BNB:
   - Native token to pay transaction fees
   - Exchanges to purchase: typically [binance.com](https://www.binance.com)
-- BSC OCEAN: 
+- BSC OCEAN:
   - Address: [0xdce07662ca8ebc241316a15b611c89711414dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a)
   - [Exchanges to purchase](https://oceanprotocol.com/token#get)
-  
+
 **Additional Components**
 
 | What         | URL                                                                   |
@@ -100,7 +101,6 @@ If you don't find BSC as a predefined network in your wallet, you can connect to
 | Explorer     | https://bscscan.com/                                                  |
 | Ocean Market | Point wallet to BSC network, at https://market.oceanprotocol.com      |
 | Provider     | `https://provider.bsc.oceanprotocol.com`                              |
-| Aquarius     | `https://aquarius.bsc.oceanprotocol.com`                              |
 | Subgraph     | `https://subgraph.bsc.oceanprotocol.com`                              |
 
 **Bridge**
@@ -118,7 +118,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 - Ropsten ETH:
   - Native token to pay transaction fees
   - [Faucet](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet&oq=ropsten+ether+faucet).
-- Ropsten OCEAN: 
+- Ropsten OCEAN:
   - Address: [0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9](https://ropsten.etherscan.io/token/0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9)
   - [Faucet](https://faucet.ropsten.oceanprotocol.com/)
 
@@ -129,7 +129,6 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 | Explorer     | https://ropsten.etherscan.io                                           |
 | Ocean Market | Point wallet to Ropsten network, at https://market.oceanprotocol.com   |
 | Provider     | `https://provider.ropsten.oceanprotocol.com`                           |
-| Aquarius     | `https://aquarius.ropsten.oceanprotocol.com`                           |
 | Subgraph     | `https://subgraph.ropsten.oceanprotocol.com`                           |
 
 ## Rinkeby
@@ -143,7 +142,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 - Rinkeby ETH:
   - Native token to pay transaction fees
   - [Faucet](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet&oq=rinkeby+ether+faucet).
-- Rinkeby OCEAN: 
+- Rinkeby OCEAN:
   - Address: [0x8967BCF84170c91B0d24D4302C2376283b0B3a07](https://rinkeby.etherscan.io/token/0x8967BCF84170c91B0d24D4302C2376283b0B3a07)
   - [Faucet](https://faucet.rinkeby.oceanprotocol.com/)
 
@@ -154,7 +153,6 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 | Explorer     | https://rinkeby.etherscan.io                                           |
 | Ocean Market | Point wallet to Rinkeby network, at https://market.oceanprotocol.com   |
 | Provider     | `https://provider.rinkeby.oceanprotocol.com`                           |
-| Aquarius     | `https://aquarius.rinkeby.oceanprotocol.com`                           |
 | Subgraph     | `https://subgraph.rinkeby.oceanprotocol.com`                           |
 
 
@@ -169,7 +167,7 @@ If you don't find Mumbai as a predefined network in your wallet, you can connect
 - Mumbai MATIC:
   - Native token to pay transaction fees
   - [Faucet](https://faucet.matic.network/). You may find others by [searching](https://www.google.com/search?q=mumbai+faucet).
-- Mumbai OCEAN: 
+- Mumbai OCEAN:
   - Address: [0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8](https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8)
   - To acquire tokens, please reach out to the core team [via Discord](https://discord.com/invite/TnXjkR5)
 
@@ -180,7 +178,6 @@ If you don't find Mumbai as a predefined network in your wallet, you can connect
 | Explorer     | https://mumbai.polygonscan.com                                         |
 | Ocean Market | Point wallet to Mumbai network, at https://market.oceanprotocol.com    |
 | Provider     | `https://provider.mumbai.oceanprotocol.com`                            |
-| Aquarius     | `https://aquarius.mumbai.oceanprotocol.com`                            |
 | Subgraph     | `https://subgraph.mumbai.oceanprotocol.com`                            |
 
 ## Local / Ganache
