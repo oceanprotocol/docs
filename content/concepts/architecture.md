@@ -56,7 +56,8 @@ Complementary to Ocean Market, Ocean has reference code to ease building **third
 
 ## Metadata Tools
 
-Metadata (name of dataset, date created etc.) is used by marketplaces for data asset discovery. Each data asset can have a [decentralized identifier](https://w3c-ccg.github.io/did-spec/) (DID) that resolves to a DID document (DDO) for associated metadata. The DDO is essentially [JSON](https://www.json.org/) filling in metadata fields. [OEP7](https://github.com/oceanprotocol/OEPs/tree/master/7) formalizes Ocean DID usage.
+Metadata (name of dataset, date created etc.) is used by marketplaces for data asset discovery. Each data asset can have a [decentralized identifier](https://w3c-ccg.github.io/did-spec/) (DID) that resolves to a DID document (DDO) for associated metadata. The DDO is essentially [JSON](https://www.json.org/) filling in metadata fields. For more details on working with OCEAN DIDs check out the [DID concept documentation](https://docs.oceanprotocol.com/concepts/did-ddo/).
+The [DDO Metadata documentation](https://docs.oceanprotocol.com/concepts/ddo-metadata/) goes into more depth regarding metadata structure.
 
 [OEP8](https://github.com/oceanprotocol/OEPs/tree/master/8) specifies Ocean metadata schema, including fields that must be filled. It’s based on the public [DataSet schema from schema.org](https://schema.org/Dataset).
 
