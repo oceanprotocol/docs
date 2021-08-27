@@ -34,7 +34,7 @@ Next you will need to sign the transaction in Metamask, or the wallet of your ch
 
 ![Sign Metamask transaction](images/allow-deny-lists/metamask-transaction.png)
 
-When the process of updating the allow or deny lists is complete you will a success message. 
+When the process of updating the allow or deny lists is complete you will receive a success message. 
 
 ![Update allow or deny list success](images/allow-deny-lists/update-success.png)
 

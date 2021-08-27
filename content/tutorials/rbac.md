@@ -109,7 +109,7 @@ npm run start:docker
 
 ## Setting up the RBAC in the Market
 
-To use the RBAC server with the market you need to save your the URL of your RBAC server as an env within the market. 
+To use the RBAC server with the market you need to save the URL of your RBAC server as an env within the market. 
 
 - First setup and host the Ocean role based access control (RBAC) server. Follow the instructions in the [RBAC repository](https://github.com/oceanprotocol/RBAC-Server)
 - In your .env file in your fork of Ocean Market, set the value of the `GATSBY_RBAC_URL` environmental variable to the URL of the Ocean RBAC server that you have hosted, e.g. `GATSBY_RBAC_URL= "http://localhost:3000"`
