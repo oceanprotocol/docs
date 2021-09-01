@@ -23,11 +23,6 @@
     - title: API Reference
       link: /references/read-the-docs/provider/
 
-- group: react
-  items:
-    - title: API Reference
-      link: https://github.com/oceanprotocol/react
-
 - group: ocean.py
   items:
     - title: API Reference
@@ -37,11 +32,6 @@
   items:
     - title: API Reference
       link: https://github.com/oceanprotocol/ocean-contracts
-
-- group: provider-py
-  items:
-    - title: API Reference
-      link: https://github.com/oceanprotocol/provider-py
 
 - group: Ocean Subgraph
   items:

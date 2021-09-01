@@ -1,6 +1,6 @@
 ---
 title: Set Up a Marketplace
-description: 
+description:
 ---
 
 In Ocean, marketplaces and publishers are different roles. A common setup is for one organization to do both. We focus on that here.
@@ -25,7 +25,6 @@ When you deploy, you'll want some initial data assets for your market to offer.
 
 Ocean supports several types, such as Azure and S3 storage. The [tutorials](/tutorials/) section provides more info.
 
-
 ## Deploy to Production
 
 When developing your app, you'll likely use Barge to run all the Ocean Protocol components on your local machine.
@@ -40,7 +39,7 @@ Of course, there are many other things that must be handled in production:
 
 - Security of the infrastructure where the software is running
 - Monitoring
-- Log aggregation, storage and search
+- Log aggregation, storage, and search
 - Handling crashes or other faults
 
 Each of those is beyond the scope of these docs.

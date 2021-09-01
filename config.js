@@ -67,6 +67,36 @@ module.exports = {
     {
       from: '/concepts/connect-to-networks/',
       to: '/concepts/networks/'
+    },
+    {
+      from: '/concepts/oeps-did/',
+      to: '/concepts/did-ddo/'
+    },
+    {
+      from: '/concepts/oeps-asset-ddo/',
+      to: '/concepts/ddo-metadata/'
+    },
+    {
+      from: '/tutorials/azure-for-brizo/',
+      to: '/tutorials/azure-for-provider/'
+    },
+    {
+      from: '/tutorials/amazon-s3-for-brizo/',
+      to: '/tutorials/amazon-s3-for-provider/'
+    },
+    {
+      from: '/tutorials/on-premise-for-brizo/',
+      to: '/tutorials/on-premise-for-provider/'
+    }
+  ],
+  swaggerComponents: [
+    {
+      name: 'aquarius',
+      url: 'https://aquarius.oceanprotocol.com/spec'
+    },
+    {
+      name: 'provider',
+      url: 'https://provider.mainnet.oceanprotocol.com/spec'
     }
   ]
 }

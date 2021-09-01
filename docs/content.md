@@ -14,7 +14,7 @@ The documentation is split in multiple sections whose content lives in this repo
 - **Core concepts**: high-level explanation of concepts, assumptions, and components
 - **Setup**: getting started for various stakeholders and use cases
 - **Tutorials**: detailed tutorials
-- **API References**: docs for the Aquarius & Brizo REST APIs, and docs for various Squid libraries
+- **API References**: docs for ocean.js, ocean.py, Aquarius REST API, and Provider REST API
 
 Those sections are defined in the [`/data/sections.yml`](../data/sections.yml) file.
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import slugify from 'slugify'
-import { cleanPathKey } from './utils'
 import styles from './Paths.module.scss'
 import stylesDoc from '../Doc.module.scss'
 const ResponseExample = React.lazy(() => import('./ResponseExample'))
@@ -153,9 +152,9 @@ Method.propTypes = {
 
 const Paths = ({ paths }) =>
   Object.entries(paths).map(([key, value]) => (
-    <div key={key} id={slugify(cleanPathKey(key))}>
+    <div key={key} id={slugify(key)}>
       <h2 className={stylesDoc.pathName}>
-        <code>{cleanPathKey(key)}</code>
+        <code>{key}</code>
       </h2>
 
       {Object.entries(value).map(([key, value]) => (

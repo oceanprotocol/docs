@@ -3,7 +3,7 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const Swagger = require('swagger-client')
-const { redirects } = require('./config')
+const { redirects, swaggerComponents } = require('./config')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -128,8 +128,10 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
-        // API: brizo, aquarius
+        // API: aquarius
         await createSwaggerPages(createPage)
+
+        await createDeploymentsPage(createPage)
 
         // API: ocean.js
         const lastRelease =
@@ -174,6 +176,15 @@ exports.createPages = ({ graphql, actions }) => {
   })
 }
 
+const createDeploymentsPage = async (createPage) => {
+  const template = path.resolve('./src/components/Deployments.jsx')
+  const slug = `/concepts/deployments/`
+
+  createPage({
+    path: slug,
+    component: template
+  })
+}
 //
 // Create pages from TypeDoc json files
 //
@@ -200,11 +211,9 @@ const createTypeDocPage = async (createPage, name, downloadUrl) => {
 // Create pages from swagger json files
 //
 // https://github.com/swagger-api/swagger-js
-const fetchSwaggerSpec = async (component) => {
+const fetchSwaggerSpec = async (url) => {
   try {
-    const client = await Swagger(
-      `https://${component}.mainnet.oceanprotocol.com/spec`
-    )
+    const client = await Swagger(url)
     return client.spec // The resolved spec
 
     // client.originalSpec // In case you need it
@@ -221,21 +230,20 @@ const fetchSwaggerSpec = async (component) => {
 }
 
 const createSwaggerPages = async (createPage) => {
-  const swaggerComponents = ['aquarius', 'provider']
   const apiSwaggerTemplate = path.resolve('./src/templates/Swagger/index.jsx')
 
   const getSlug = (name) => `/references/${name}/`
 
   for (const component of swaggerComponents) {
-    const slug = getSlug(component)
+    const slug = getSlug(component.name)
 
     createPage({
       path: slug,
       component: apiSwaggerTemplate,
       context: {
         slug,
-        name: component,
-        api: await fetchSwaggerSpec(component)
+        name: component.name,
+        api: await fetchSwaggerSpec(component.url)
       }
     })
   }

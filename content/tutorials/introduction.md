@@ -9,5 +9,6 @@ These tutorials cover:
 - Set up a marketplace
 - Run a compute-to-data environment
 - Storage setup - Azure, AWS or local
+- Fine-grained permissions
 
 
