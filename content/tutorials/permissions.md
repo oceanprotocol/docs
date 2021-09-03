@@ -26,6 +26,6 @@ We can resolve this tension by drawing on the following analogy:
 
 We can port this model into Ocean, where (a) is a datatoken, and (b) is a credential. The datatoken is the baseline access control. It’s fungible, and something that you’ve paid for or had shared to you. It’s independent of your identity. The credential is something that’s a function of your identity. 
 
-The credential based restrictions are implemented differently at the market and asset level. Access to the market is restricted on a role basis, the user's identity is attached to a role via the role based access control (RBAC) server. Access to individual assets is restricted via allow and deny lists which list the ethereum addresses of the users who can and cannot access the asset within the DDO. 
+The credential based restrictions are implemented in two ways, at the market level and at the asset level. Access to the market is restricted on a role basis, the user's identity is attached to a role via the role based access control (RBAC) server. Access to individual assets is restricted via allow and deny lists which list the ethereum addresses of the users who can and cannot access the asset within the DDO.
 
 
