@@ -13,7 +13,7 @@ Fine-grained permissions mean that access can be controlled precisely at two lev
 
 The fine-grained permissions features are designed to work in forks of Ocean Market. We have not enabled them in Ocean Market itself, to keep Ocean Market open for everyone to use. On the front end, the permissions features are easily enabled by setting environment variables.
 
-## Introduction
+### Introduction
 
 Some datasets need to be restricted to appropriately credentialed users. In this situation there is tension:
 

@@ -3,6 +3,8 @@ title: Asset-Level Restrictions
 description: Restrict access to individual assets
 ---
 
+## Introduction
+
 For asset-level restrictions Ocean supports allow and deny lists. Allow and deny lists are advanced features that allow publishers to control access to individual data assets. Publishers can restrict assets so that they can only be accessed by approved users (allow lists) or they can restrict assets so that they can be accessed by anyone except certain users (deny lists). 
 
 When an allow-list is in place, a consumer can only access the resource if they have a datatoken and one of the credentials in the "allow" list of the DDO. Ocean also has complementary deny functionality: if a consumer is on the "deny" list, they will not be allowed to access the resource. 
