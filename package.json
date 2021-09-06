@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@oceanprotocol/art": "^3.2.0",
-    "axios": "^0.21.1",
+    "axios": "^0.21.3",
     "classnames": "^2.3.1",
     "gatsby": "^2.32.13",
     "gatsby-image": "^3.11.0",
