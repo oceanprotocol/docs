@@ -8,7 +8,6 @@ import stylesSidebar from '../../components/Sidebar.module.scss'
 
 const Toc = ({ data }) => {
   const Ids = []
-
   const itemsV1 = Object.keys(data.paths)
     .filter((key) => key.startsWith('/api/v1/aquarius'))
     .map((key) => {
@@ -36,20 +35,30 @@ const Toc = ({ data }) => {
         </li>
       )
     })
+
+  const getRestEndpoints = () => {
+    if (data.info.title === 'Aquarius') {
+      return (
+        <>
+          <code>/api/v1/aquarius</code>
+          <ul>{itemsV1}</ul>
+          {itemsOther.length ? (
+            <>
+              <code>Other REST endpoints</code>
+              <ul>{itemsOther}</ul>
+            </>
+          ) : null}
+        </>
+      )
+    } else return <>{itemsOther}</>
+  }
   return (
     <Scrollspy
       items={Ids}
       currentClassName={stylesSidebar.scrollspyActive}
       offset={-100}
     >
-      <code>/api/v1/aquarius</code>
-      <ul>{itemsV1}</ul>
-      {itemsOther.length ? (
-        <>
-          <code>Other REST endpoints</code>
-          <ul>{itemsOther}</ul>
-        </>
-      ) : null}
+      {getRestEndpoints()}
     </Scrollspy>
   )
 }
