@@ -103,6 +103,25 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+
+            searchContext: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/content/" } }
+            ) {
+              edges {
+                node {
+                  fields {
+                    slug
+                    section
+                    
+                  }
+                  frontmatter {
+									title
+                  description
+                  }
+                  
+                }
+              }
+            }
           }
         `
       ).then(async (result) => {
@@ -132,6 +151,9 @@ exports.createPages = ({ graphql, actions }) => {
         await createSwaggerPages(createPage)
 
         await createDeploymentsPage(createPage)
+
+        const searchContext = result.data.searchContext.edges
+        await createSearchPage(createPage, searchContext)
 
         // API: ocean.js
         const lastRelease =
@@ -185,6 +207,19 @@ const createDeploymentsPage = async (createPage) => {
   createPage({
     path: slug,
     component: template
+  })
+}
+
+const createSearchPage = async (createPage, searchContext) => {
+  const template = path.resolve('./src/components/SearchComponent.jsx')
+  const slug = `/concepts/search/`
+
+  createPage({
+    path: slug,
+    component: template,
+    context: {
+      searchData: searchContext
+    }
   })
 }
 //
