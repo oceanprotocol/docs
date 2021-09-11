@@ -2,6 +2,26 @@ import React, { useState, useEffect } from 'react'
 import * as JsSearch from 'js-search'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
+import { makeStyles } from '@material-ui/core/styles'
+import Modal from '@material-ui/core/Modal'
+import Backdrop from '@material-ui/core/Backdrop'
+import Fade from '@material-ui/core/Fade'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+
+const useStyles = makeStyles((theme) => ({
+  modal: {
+    display: 'flex',
+    alignItems: 'top',
+    justifyContent: 'center'
+  },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+    margin: theme.spacing(3)
+  }
+}))
 
 const SearchComponent = ({ pageContext }) => {
   const { searchData } = pageContext
@@ -15,7 +35,6 @@ const SearchComponent = ({ pageContext }) => {
   })
   return (
     <>
-      Search feature
       <ClientSearch searchableData={searchableData} />
     </>
   )
@@ -35,8 +54,20 @@ const ClientSearch = ({ searchableData }) => {
     removeStopWords: false,
     searchQuery: '',
     selectedStrategy: '',
-    selectedSanitizer: ''
+    selectedSanitizer: '',
+    touched: false
   })
+
+  const classes = useStyles()
+  const [open, setOpen] = React.useState(false)
+
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+  }
 
   useEffect(() => {
     rebuildIndex(searchableData)
@@ -65,6 +96,7 @@ const ClientSearch = ({ searchableData }) => {
     const queryResult = search.search(e.target.value)
     setSearchState({
       ...searchState,
+      touched: true,
       searchQuery: e.target.value,
       searchResults: queryResult
     })
@@ -75,26 +107,46 @@ const ClientSearch = ({ searchableData }) => {
 
   return (
     <div>
-      <div style={{ margin: '0 auto' }}>
-        <form onSubmit={handleSubmit}>
-          <input
-            id="Search"
-            value={searchState.searchQuery}
-            onChange={searchData}
-            placeholder="Enter your search here"
-            style={{
-              margin: '0 auto',
-              width: '400px'
-            }}
-          />
-        </form>
-      </div>
-
-      <br />
-
-      <div>
-        <ResultList searchResults={searchState.searchResults} />
-      </div>
+      <button type="button" onClick={handleOpen}>
+        Search
+      </button>
+      <Modal
+        className={classes.modal}
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500
+        }}
+      >
+        <Fade in={open}>
+          <div className={classes.paper}>
+            <h2>Search</h2>
+            <div>
+              <div style={{ margin: '0 auto' }}>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    id="Search"
+                    value={searchState.searchQuery}
+                    onChange={searchData}
+                    placeholder="Enter your search here"
+                    style={{
+                      margin: '0 auto',
+                      width: '400px'
+                    }}
+                  />
+                </form>
+              </div>
+              <div>
+                {searchState.touched ? (
+                  <ResultList searchResults={searchState.searchResults} />
+                ) : null}
+              </div>
+            </div>
+          </div>
+        </Fade>
+      </Modal>
     </div>
   )
 }
@@ -107,32 +159,19 @@ const ResultList = ({ searchResults }) => {
   return (
     <div>
       <div>Total results found: {searchResults.length} </div>
-      <ul>
+      <List>
         {searchResults.map((element) => (
-          <li key={element.id}>
-            <ResultElement title={element.title} slug={element.slug} />
-          </li>
+          <ListItem style={{ before: { content: null } }} key={element.id}>
+            <Link to={element.slug}>{element.title} </Link>
+          </ListItem>
         ))}
-      </ul>
+      </List>
     </div>
   )
 }
 
 ResultList.propTypes = {
   searchResults: PropTypes.array.isRequired
-}
-
-const ResultElement = ({ title, slug }) => {
-  return (
-    <>
-      <Link to={slug}>{title} </Link>
-    </>
-  )
-}
-
-ResultElement.propTypes = {
-  title: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired
 }
 
 export default SearchComponent
