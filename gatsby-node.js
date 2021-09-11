@@ -117,6 +117,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     description
                   }
+                  id
                 }
               }
             }
