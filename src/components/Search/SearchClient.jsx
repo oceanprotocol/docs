@@ -64,6 +64,7 @@ const SearchClient = ({ searchableData }) => {
     // } = searchState
     const dataToSearch = new JsSearch.Search('title')
     dataToSearch.addIndex('title')
+    dataToSearch.addIndex('description')
 
     dataToSearch.addDocuments(searchableData)
     setSearchState({
