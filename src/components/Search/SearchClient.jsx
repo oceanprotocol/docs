@@ -88,7 +88,7 @@ const SearchClient = ({ searchableData }) => {
   }
 
   return (
-    <div>
+    <>
       <Button
         variant="outlined"
         onClick={handleOpen}
@@ -134,7 +134,7 @@ const SearchClient = ({ searchableData }) => {
           </div>
         </Fade>
       </Modal>
-    </div>
+    </>
   )
 }
 

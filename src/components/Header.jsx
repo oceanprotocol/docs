@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { ReactComponent as Logo } from '@oceanprotocol/art/logo/logo.svg'
 import styles from './Header.module.scss'
+import SearchComponent from './Search/SearchComponent'
 
 const query = graphql`
   query {
@@ -37,7 +38,6 @@ const Header = () => (
               <Logo className={styles.headerLogoImage} />
               <h1 className={styles.headerTitle}>{siteTitle}</h1>
             </Link>
-
             <nav className={styles.headerMenu}>
               {sections.map(({ node }) => (
                 <Link
@@ -48,6 +48,7 @@ const Header = () => (
                   {node.title}
                 </Link>
               ))}
+              <SearchComponent className={styles.section} />
             </nav>
           </div>
         </header>
