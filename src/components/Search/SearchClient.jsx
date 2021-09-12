@@ -120,7 +120,8 @@ const SearchClient = ({ searchableData }) => {
                     placeholder="Search..."
                     style={{
                       margin: '0 auto',
-                      width: '400px'
+                      width: '400px',
+                      border: '1px solid'
                     }}
                     type="text"
                   />
