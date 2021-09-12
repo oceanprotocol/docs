@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { ReactComponent as Logo } from '@oceanprotocol/art/logo/logo.svg'
 import Content from '../components/Content'
 import styles from './HeaderHome.module.scss'
-
+import SearchComponent from './Search/SearchComponent'
 const HeaderHome = () => (
   <StaticQuery
     query={graphql`
@@ -25,6 +25,7 @@ const HeaderHome = () => (
             <Logo className={styles.headerLogo} />
             <h1 className={styles.headerTitle}>{siteTitle}</h1>
             <p className={styles.headerDescription}>{siteDescription}</p>
+            <SearchComponent />
           </Content>
         </header>
       )
