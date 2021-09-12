@@ -19,18 +19,20 @@ const SearchComponent = () => {
               description
             }
             id
+            plainText
           }
         }
       }
     }
   `)
-
+  console.log('data', data)
   const searchableData = data.allMarkdownRemark.edges.map(({ node }) => {
     return {
       title: node.frontmatter.title,
       description: node.frontmatter.description,
       slug: node.fields.slug,
-      id: node.id
+      id: node.id,
+      text: node.plainText
     }
   })
   return (
