@@ -210,7 +210,7 @@ const createDeploymentsPage = async (createPage) => {
 }
 
 const createSearchPage = async (createPage, searchContext) => {
-  const template = path.resolve('./src/components/SearchComponent.jsx')
+  const template = path.resolve('./src/components/Search/SearchComponent.jsx')
   const slug = `/concepts/search/`
 
   createPage({

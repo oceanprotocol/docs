@@ -8,6 +8,9 @@ import Backdrop from '@material-ui/core/Backdrop'
 import Fade from '@material-ui/core/Fade'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
+import styles from './SearchComponent.module.scss'
+import Button from '@material-ui/core/Button'
+import SearchIcon from '@material-ui/icons/Search'
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -107,9 +110,9 @@ const ClientSearch = ({ searchableData }) => {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
+      <Button onClick={handleOpen} startIcon={<SearchIcon />}>
         Search
-      </button>
+      </Button>
       <Modal
         className={classes.modal}
         open={open}
@@ -122,19 +125,19 @@ const ClientSearch = ({ searchableData }) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2>Search</h2>
             <div>
               <div style={{ margin: '0 auto' }}>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className={styles.searchform}>
                   <input
                     id="Search"
                     value={searchState.searchQuery}
                     onChange={searchData}
-                    placeholder="Enter your search here"
+                    placeholder="Search..."
                     style={{
                       margin: '0 auto',
                       width: '400px'
                     }}
+                    type="text"
                   />
                 </form>
               </div>
