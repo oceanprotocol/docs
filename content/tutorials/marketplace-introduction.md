@@ -3,8 +3,6 @@ title: Ocean Market
 description: 
 ---
 
-# Ocean Market
-
 https://market.oceanprotocol.com/
 
 ## Landing page
