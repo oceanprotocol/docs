@@ -89,7 +89,12 @@ const SearchClient = ({ searchableData }) => {
 
   return (
     <div>
-      <Button onClick={handleOpen} startIcon={<SearchIcon />}>
+      <Button
+        variant="outlined"
+        onClick={handleOpen}
+        disableRipple
+        startIcon={<SearchIcon />}
+      >
         Search
       </Button>
       <Modal

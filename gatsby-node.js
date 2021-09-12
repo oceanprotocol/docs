@@ -103,24 +103,6 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
-
-            searchContext: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/content/" } }
-            ) {
-              edges {
-                node {
-                  fields {
-                    slug
-                    section
-                  }
-                  frontmatter {
-                    title
-                    description
-                  }
-                  id
-                }
-              }
-            }
           }
         `
       ).then(async (result) => {
@@ -150,9 +132,6 @@ exports.createPages = ({ graphql, actions }) => {
         await createSwaggerPages(createPage)
 
         await createDeploymentsPage(createPage)
-
-        const searchContext = result.data.searchContext.edges
-        await createSearchPage(createPage, searchContext)
 
         // API: ocean.js
         const lastRelease =
@@ -209,18 +188,6 @@ const createDeploymentsPage = async (createPage) => {
   })
 }
 
-const createSearchPage = async (createPage, searchContext) => {
-  const template = path.resolve('./src/components/Search/SearchComponent.jsx')
-  const slug = `/concepts/search/`
-
-  createPage({
-    path: slug,
-    component: template,
-    context: {
-      searchData: searchContext
-    }
-  })
-}
 //
 // Create pages from TypeDoc json files
 //

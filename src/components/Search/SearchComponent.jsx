@@ -1,14 +1,31 @@
 import React from 'react'
 
-import { graphql } from 'gatsby'
-import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import SearchClient from './SearchClient'
 
-const SearchComponent = ({ data, pageContext }) => {
-  console.log('data', data)
-  const { searchData } = pageContext
-  const searchableData = searchData.map(({ node }) => {
+const SearchComponent = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/" } }) {
+        edges {
+          node {
+            fields {
+              slug
+              section
+            }
+            frontmatter {
+              title
+              description
+            }
+            id
+          }
+        }
+      }
+    }
+  `)
+
+  const searchableData = data.allMarkdownRemark.edges.map(({ node }) => {
     return {
       title: node.frontmatter.title,
       description: node.frontmatter.description,
@@ -22,30 +39,5 @@ const SearchComponent = ({ data, pageContext }) => {
     </>
   )
 }
-
-SearchComponent.propTypes = {
-  pageContext: PropTypes.object,
-  data: PropTypes.object
-}
-
-export const SearchComponentQuery = graphql`
-  query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/" } }) {
-      edges {
-        node {
-          fields {
-            slug
-            section
-          }
-          frontmatter {
-            title
-            description
-          }
-          id
-        }
-      }
-    }
-  }
-`
 
 export default SearchComponent
