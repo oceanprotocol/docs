@@ -5,8 +5,9 @@ import { useStaticQuery, graphql } from 'gatsby'
 import SearchClient from './SearchClient'
 import Layout from '../../components/Layout'
 import HeaderSection from '../../components/HeaderSection'
+import PropTypes from 'prop-types'
 
-const SearchComponent = () => {
+const SearchComponent = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/" } }) {
@@ -56,6 +57,10 @@ const SearchComponent = () => {
       </main>
     </Layout>
   )
+}
+
+SearchComponent.propTypes = {
+  location: PropTypes.object.isRequired
 }
 
 export default SearchComponent
