@@ -5,7 +5,10 @@ import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
-
+import Pagination from '@material-ui/lab/Pagination'
+import TextField from '@material-ui/core/TextField'
+import InputAdornment from '@material-ui/core/InputAdornment'
+import SearchIcon from '@material-ui/icons/Search'
 const useStyles = makeStyles((theme) => ({
   parent: {
     overflow: 'hidden',
@@ -83,17 +86,23 @@ const SearchClient = ({ searchableData }) => {
   return (
     <div style={{ height: '100%' }}>
       <form onSubmit={handleSubmit}>
-        <input
-          id="Search"
+        <TextField
+          variant="outlined"
+          placeholder="Search"
+          fullwidth
+          style={{
+            margin: '10px auto',
+            width: '100%'
+          }}
           value={searchState.searchQuery}
           onChange={searchData}
-          placeholder="Search..."
-          style={{
-            margin: '0 auto',
-            width: '400px',
-            border: '1px solid'
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            )
           }}
-          type="text"
         />
       </form>
 
@@ -133,6 +142,8 @@ const ResultList = ({ searchResults }) => {
   return (
     <div style={{ maxHeight: '100%', overflowY: 'scroll' }}>
       <div>Total results found: {searchResults.length} </div>
+      <Pagination count={10} size="small" />
+
       <div>
         <List style={{ maxHeight: '100%', overflowY: 'scroll' }}>
           {searchResults.map((element) => (
