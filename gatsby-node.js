@@ -132,7 +132,6 @@ exports.createPages = ({ graphql, actions }) => {
         await createSwaggerPages(createPage)
 
         await createDeploymentsPage(createPage)
-        await createSearchPage(createPage)
         // API: ocean.js
         const lastRelease =
           result.data.oceanJs.repository.releases.edges.filter(
@@ -172,21 +171,15 @@ exports.createPages = ({ graphql, actions }) => {
         await createReadTheDocsPage(createPage, 'provider', providerList)
         await createReadTheDocsPage(createPage, 'ocean-subgraph', subgraphList)
 
+        // Create search page
+        createPage({
+          path: `/search/`,
+          component: path.resolve('./src/components/Search/SearchComponent.jsx')
+        })
+
         resolve()
       })
     )
-  })
-}
-
-const createSearchPage = async (createPage) => {
-  const pageTemplate = path.resolve(
-    './src/components/Search/SearchComponent.jsx'
-  )
-  const url = `/search/`
-
-  createPage({
-    path: url,
-    component: pageTemplate
   })
 }
 
