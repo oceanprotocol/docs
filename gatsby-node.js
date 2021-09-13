@@ -179,13 +179,19 @@ exports.createPages = ({ graphql, actions }) => {
 }
 
 const createSearchPage = async (createPage) => {
-  const template = path.resolve('./src/components/Search/SearchComponent.jsx')
-  const slug = `/search/`
+  try {
+    const pageTemplate = path.resolve(
+      './src/components/Search/SearchComponent.jsx'
+    )
+    const url = `/search/`
 
-  createPage({
-    path: slug,
-    component: template
-  })
+    createPage({
+      path: pageTemplate,
+      component: url
+    })
+  } catch (error) {
+    console.log(error.message)
+  }
 }
 
 const createDeploymentsPage = async (createPage) => {
