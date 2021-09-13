@@ -27,15 +27,17 @@ const SearchComponent = () => {
       }
     }
   `)
-  console.log('data', data)
   const searchableData = data.allMarkdownRemark.edges.map(({ node }) => {
+    var section = 'Concepts'
+    if (node.fields.slug.startsWith('/tutorials')) section = 'Tutorials'
+
     return {
       title: node.frontmatter.title,
       description: node.frontmatter.description,
-      slug:
-        node.fields.slug[0] === '/' ? node.fields.slug : '/' + node.fields.slug,
+      slug: node.fields.slug,
       id: node.id,
-      text: node.plainText
+      text: node.plainText,
+      section: section
     }
   })
 

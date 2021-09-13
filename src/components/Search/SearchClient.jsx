@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import * as JsSearch from 'js-search'
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
-import Pagination from '@material-ui/lab/Pagination'
 import TextField from '@material-ui/core/TextField'
 import InputAdornment from '@material-ui/core/InputAdornment'
 import SearchIcon from '@material-ui/icons/Search'
+import SearchResultElement from './SearchResultElement'
+
 const useStyles = makeStyles((theme) => ({
   parent: {
     overflow: 'hidden',
@@ -89,7 +89,6 @@ const SearchClient = ({ searchableData }) => {
         <TextField
           variant="outlined"
           placeholder="Search"
-          fullwidth
           style={{
             margin: '10px auto',
             width: '100%'
@@ -113,9 +112,7 @@ const SearchClient = ({ searchableData }) => {
       >
         {searchState.touched ? (
           <div>
-            <div>Total results found: {searchState.searchResults.length}</div>
-
-            <List>
+            {/* <List>
               {searchState.searchResults.map((element) => (
                 <ListItem
                   style={{ before: { content: null } }}
@@ -124,7 +121,9 @@ const SearchClient = ({ searchableData }) => {
                   <Link to={element.slug}>{element.title} </Link>
                 </ListItem>
               ))}
-            </List>
+              
+            </List> */}
+            <ResultList searchResults={searchState.searchResults} />
           </div>
         ) : null}
       </div>
@@ -140,15 +139,14 @@ const ResultList = ({ searchResults }) => {
   const url = typeof window !== 'undefined' ? window.location.host : ''
   console.log('url', url)
   return (
-    <div style={{ maxHeight: '100%', overflowY: 'scroll' }}>
+    <div style={{ maxHeight: '100%' }}>
       <div>Total results found: {searchResults.length} </div>
-      <Pagination count={10} size="small" />
 
       <div>
-        <List style={{ maxHeight: '100%', overflowY: 'scroll' }}>
+        <List style={{ maxHeight: '100%' }}>
           {searchResults.map((element) => (
             <ListItem style={{ before: { content: null } }} key={element.id}>
-              <Link to={element.slug}>{element.title} </Link>
+              <SearchResultElement element={element} />
             </ListItem>
           ))}
         </List>
