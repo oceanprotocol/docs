@@ -3,6 +3,8 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import SearchClient from './SearchClient'
+import Layout from '../../components/Layout'
+import HeaderSection from '../../components/HeaderSection'
 
 const SearchComponent = () => {
   const data = useStaticQuery(graphql`
@@ -30,15 +32,27 @@ const SearchComponent = () => {
     return {
       title: node.frontmatter.title,
       description: node.frontmatter.description,
-      slug: node.fields.slug,
+      slug:
+        node.fields.slug[0] === '/' ? node.fields.slug : '/' + node.fields.slug,
       id: node.id,
       text: node.plainText
     }
   })
+
   return (
-    <>
-      <SearchClient searchableData={searchableData} />
-    </>
+    <Layout location={location}>
+      <HeaderSection title="Search" />
+      <main>
+        <article style={{ height: '400px' }}>
+          <div
+            id="search-client-container"
+            style={{ margin: 'auto', width: '50%', height: '100%' }}
+          >
+            <SearchClient searchableData={searchableData} />
+          </div>
+        </article>
+      </main>
+    </Layout>
   )
 }
 

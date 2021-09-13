@@ -132,7 +132,7 @@ exports.createPages = ({ graphql, actions }) => {
         await createSwaggerPages(createPage)
 
         await createDeploymentsPage(createPage)
-
+        await createSearchPage(createPage)
         // API: ocean.js
         const lastRelease =
           result.data.oceanJs.repository.releases.edges.filter(
@@ -175,6 +175,16 @@ exports.createPages = ({ graphql, actions }) => {
         resolve()
       })
     )
+  })
+}
+
+const createSearchPage = async (createPage) => {
+  const template = path.resolve('./src/components/Search/SearchComponent.jsx')
+  const slug = `/search/`
+
+  createPage({
+    path: slug,
+    component: template
   })
 }
 

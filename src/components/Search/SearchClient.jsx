@@ -3,26 +3,26 @@ import * as JsSearch from 'js-search'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
-import Modal from '@material-ui/core/Modal'
-import Backdrop from '@material-ui/core/Backdrop'
-import Fade from '@material-ui/core/Fade'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
-import styles from './SearchComponent.module.scss'
-import Button from '@material-ui/core/Button'
-import SearchIcon from '@material-ui/icons/Search'
 
 const useStyles = makeStyles((theme) => ({
-  modal: {
-    display: 'flex',
-    alignItems: 'top',
-    justifyContent: 'center'
+  parent: {
+    overflow: 'hidden',
+    position: 'relative',
+    width: '100%'
   },
-  paper: {
-    backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-    margin: theme.spacing(3)
+  child: {
+    background: 'green',
+    height: '100%',
+    width: '50%',
+    position: 'absolute',
+    right: 0,
+    top: 0
+  },
+  root: {
+    margin: 'auto',
+    width: '50%'
   }
 }))
 
@@ -41,15 +41,6 @@ const SearchClient = ({ searchableData }) => {
   })
 
   const classes = useStyles()
-  const [open, setOpen] = React.useState(false)
-
-  const handleOpen = () => {
-    setOpen(true)
-  }
-
-  const handleClose = () => {
-    setOpen(false)
-  }
 
   useEffect(() => {
     rebuildIndex(searchableData)
@@ -90,54 +81,45 @@ const SearchClient = ({ searchableData }) => {
   }
 
   return (
-    <>
-      <Button
-        variant="outlined"
-        onClick={handleOpen}
-        disableRipple
-        startIcon={<SearchIcon />}
+    <div style={{ height: '100%' }}>
+      <form onSubmit={handleSubmit}>
+        <input
+          id="Search"
+          value={searchState.searchQuery}
+          onChange={searchData}
+          placeholder="Search..."
+          style={{
+            margin: '0 auto',
+            width: '400px',
+            border: '1px solid'
+          }}
+          type="text"
+        />
+      </form>
+
+      <div
+        id="result-list-conatiner"
+        style={{ overflowY: 'scroll', height: '100%' }}
+        className={classes.parent}
       >
-        Search
-      </Button>
-      <Modal
-        className={classes.modal}
-        open={open}
-        onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500
-        }}
-      >
-        <Fade in={open}>
-          <div className={classes.paper}>
-            <div>
-              <div style={{ margin: '0 auto' }}>
-                <form onSubmit={handleSubmit} className={styles.searchform}>
-                  <input
-                    id="Search"
-                    value={searchState.searchQuery}
-                    onChange={searchData}
-                    placeholder="Search..."
-                    style={{
-                      margin: '0 auto',
-                      width: '400px',
-                      border: '1px solid'
-                    }}
-                    type="text"
-                  />
-                </form>
-              </div>
-              <div>
-                {searchState.touched ? (
-                  <ResultList searchResults={searchState.searchResults} />
-                ) : null}
-              </div>
-            </div>
+        {searchState.touched ? (
+          <div>
+            <div>Total results found: {searchState.searchResults.length}</div>
+
+            <List>
+              {searchState.searchResults.map((element) => (
+                <ListItem
+                  style={{ before: { content: null } }}
+                  key={element.id}
+                >
+                  <Link to={element.slug}>{element.title} </Link>
+                </ListItem>
+              ))}
+            </List>
           </div>
-        </Fade>
-      </Modal>
-    </>
+        ) : null}
+      </div>
+    </div>
   )
 }
 
@@ -146,16 +128,20 @@ SearchClient.propTypes = {
 }
 
 const ResultList = ({ searchResults }) => {
+  const url = typeof window !== 'undefined' ? window.location.host : ''
+  console.log('url', url)
   return (
-    <div>
+    <div style={{ maxHeight: '100%', overflowY: 'scroll' }}>
       <div>Total results found: {searchResults.length} </div>
-      <List>
-        {searchResults.map((element) => (
-          <ListItem style={{ before: { content: null } }} key={element.id}>
-            <Link to={element.slug}>{element.title} </Link>
-          </ListItem>
-        ))}
-      </List>
+      <div>
+        <List style={{ maxHeight: '100%', overflowY: 'scroll' }}>
+          {searchResults.map((element) => (
+            <ListItem style={{ before: { content: null } }} key={element.id}>
+              <Link to={element.slug}>{element.title} </Link>
+            </ListItem>
+          ))}
+        </List>
+      </div>
     </div>
   )
 }

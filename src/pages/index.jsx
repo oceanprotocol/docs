@@ -9,7 +9,7 @@ import HeaderHome from '../components/HeaderHome'
 import Repositories from '../components/Repositories'
 import { ReactComponent as Arrow } from '../images/arrow.svg'
 import styles from './index.module.scss'
-import SearchComponent from '../components/Search/SearchComponent'
+import SearchButton from '../components/Search/SearchButton'
 
 const SectionBox = ({ to, children, ...props }) =>
   to ? (
@@ -68,7 +68,7 @@ const IndexPage = ({ data, location }) => (
           ))}
         </ul>
         <div className={styles.searchButton}>
-          <SearchComponent />
+          <SearchButton />
         </div>
         <Repositories />
       </Content>
