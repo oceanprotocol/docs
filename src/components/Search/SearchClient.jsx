@@ -128,7 +128,10 @@ SearchClient.propTypes = {
 const ResultList = ({ searchResults }) => {
   return (
     <div style={{ maxHeight: '100%' }}>
-      <div>Total results found: {searchResults.length} </div>
+      <div>
+        Total results found: {searchResults.length} [Searched from Tutorials and
+        Core Concepts]
+      </div>
 
       <div>
         <List style={{ maxHeight: '100%' }}>
