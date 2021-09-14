@@ -93,6 +93,7 @@ const SearchClient = ({ searchableData }) => {
             margin: '10px auto',
             width: '100%'
           }}
+          autoFocus
           value={searchState.searchQuery}
           onChange={searchData}
           InputProps={{
