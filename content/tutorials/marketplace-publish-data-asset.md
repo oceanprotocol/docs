@@ -1,4 +1,7 @@
-# Publish a Data asset on Ocean Market place.
+---
+title: Publish a Data asset on Ocean Market place.
+description: 
+---
 
 ## What can be published?
 

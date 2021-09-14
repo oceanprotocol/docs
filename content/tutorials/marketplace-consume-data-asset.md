@@ -1,3 +1,8 @@
+---
+title: Consume data asset
+description: 
+---
+
 1. Go to Ocean Marketplace https://market.oceanprotocol.com/
 2. Search for the data asset.
    The Ocean Marketplace provides features to search the Data/Algorithms by text, and users can also sort the result by published date.
