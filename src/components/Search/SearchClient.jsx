@@ -108,22 +108,11 @@ const SearchClient = ({ searchableData }) => {
 
       <div
         id="result-list-conatiner"
-        style={{ overflowY: 'scroll', height: '100%' }}
+        style={{ overflowY: 'auto', height: '100%' }}
         className={classes.parent}
       >
         {searchState.touched ? (
           <div>
-            {/* <List>
-              {searchState.searchResults.map((element) => (
-                <ListItem
-                  style={{ before: { content: null } }}
-                  key={element.id}
-                >
-                  <Link to={element.slug}>{element.title} </Link>
-                </ListItem>
-              ))}
-              
-            </List> */}
             <ResultList searchResults={searchState.searchResults} />
           </div>
         ) : null}
@@ -137,8 +126,6 @@ SearchClient.propTypes = {
 }
 
 const ResultList = ({ searchResults }) => {
-  const url = typeof window !== 'undefined' ? window.location.host : ''
-  console.log('url', url)
   return (
     <div style={{ maxHeight: '100%' }}>
       <div>Total results found: {searchResults.length} </div>

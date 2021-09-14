@@ -46,10 +46,15 @@ const SearchComponent = ({ location }) => {
     <Layout location={location}>
       <HeaderSection title="Search" />
       <main>
-        <article style={{ height: '500px' }}>
+        <article style={{ height: '700px' }}>
           <div
             id="search-client-container"
-            style={{ margin: 'auto', width: '50%', height: '100%' }}
+            style={{
+              margin: 'auto',
+              width: '50%',
+              height: '100%',
+              paddingBottom: '50px'
+            }}
           >
             <SearchClient searchableData={searchableData} />
           </div>
