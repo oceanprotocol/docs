@@ -33,6 +33,15 @@ When creating an algorithm asset in Ocean Protocol, the additional `algorithm` o
 | `tag`        | The Docker image tag that you are going to use.                                                                                         |
 | `entrypoint` | The Docker entrypoint. `$ALGO` is a macro that gets replaced inside the compute job, depending where your algorithm code is downloaded. |
 
+Define your entrypoint according to your dependencies. E.g. if you have multiple versions of python installed, use the appropriate command `python3.6 $ALGO`.
+
+### What Docker container should I use?
+
+There are plenty of Docker containers that work out-of-the-box. However, if you have custom dependencies, you may want to configure your own Docker Image.
+To do so, create a Dockerfile with the appropriate instructions for dependency management and publish the container, e.g. using Dockerhub.
+
+We also collect some [example images](https://github.com/oceanprotocol/algo_dockers) which you can also view in Dockerhub.
+
 When publishing an algorithm through the [Ocean Market](https://market.oceanprotoco.com), these properties can be set via the publish UI.
 
 ### Environment Examples
@@ -65,18 +74,19 @@ Run an algorithm written in Python, based on Python v3.9:
 }
 ```
 
-Be aware that you might need a lot of dependencies, so it's a lot faster if you are going to build your own image and publish your algorithm with that custom image. We also collect some [example images](https://github.com/oceanprotocol/algo_dockers).
-
 ### Data Storage
 
 As part of a compute job, every algorithm runs in a K8s pod with these volumes mounted:
 
 | Path            | Permissions | Usage                                                                                                                                                     |
 | --------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/data/inputs`  | read        | Storage for input data sets, accessible only to the algorithm running in the pod.                                                                         |
-| `/data/ddos`    | read        | Storage for all DDOs involved in compute job (input data set + algorithm).                                                                                |
+| `/data/inputs`  | read        | Storage for input data sets, accessible only to the algorithm running in the pod. Contents will be the files themselves, inside indexed folders e.g. `/data/inputs/{did}/{service_id}`.  |
+| `/data/ddos`    | read        | Storage for all DDOs involved in compute job (input data set + algorithm). Contents will json files containing the DDO structure.                         |
 | `/data/outputs` | read/write  | Storage for all of the algorithm's output files. They are uploaded on some form of cloud storage, and URLs are sent back to the consumer.                 |
 | `/data/logs/`   | read/write  | All algorithm output (such as `print`, `console.log`, etc.) is stored in a file located in this folder. They are stored and sent to the consumer as well. |
+
+Please note that when using local Providers or Metatata Caches, the ddos might not be correctly transferred into c2d, but inputs are still available.
+If your algorithm relies on contents from the DDO json structure, make sure to use a public Provider and Metadata Cache (Aquarius instance).
 
 ### Environment variables available to algorithms
 
