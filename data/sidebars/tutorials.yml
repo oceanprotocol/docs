@@ -58,6 +58,6 @@
     - title: Overview
       link: /tutorials/permissions
     - title: Market-Level Permissions
-      link: /tutorials/rbac
+      link: /tutorials/market-level-permissions
     - title: Asset-Level Permissions
-      link: /tutorials/allow-deny-lists
+      link: /tutorials/asset-level-permissions
