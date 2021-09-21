@@ -57,7 +57,7 @@
   items:
     - title: Overview
       link: /tutorials/permissions
-    - title: Role-Based Access Control
+    - title: Market-Level Permissions
       link: /tutorials/rbac
-    - title: Allow & Deny Lists
+    - title: Asset-Level Permissions
       link: /tutorials/allow-deny-lists
