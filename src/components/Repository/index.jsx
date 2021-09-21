@@ -26,11 +26,12 @@ const queryGithub = graphql`
                 totalCount
               }
               releases(
-                first: 1
+                first: 2
                 orderBy: { field: CREATED_AT, direction: DESC }
               ) {
                 edges {
                   node {
+                    isDraft
                     tag {
                       name
                     }
@@ -80,12 +81,21 @@ const Repository = ({ name, links, readme }) => (
         })
         .filter((n) => n)
 
-      const repo = repoFilteredArray[0]
+      var repo = repoFilteredArray[0]
 
       // safeguard against more empty items,
       // e.g. when private repos are referenced in repositories.yml
       if (repo === undefined) return null
+      const releasesFilteredArray = repo.releases.edges
+        .filter(({ node }) => {
+          return !node.isDraft
+        })
+        .splice(1)
 
+      repo = {
+        ...repo,
+        releases: { edges: releasesFilteredArray }
+      }
       const {
         url,
         description,
@@ -110,7 +120,6 @@ const Repository = ({ name, links, readme }) => (
       })
 
       const moreLinks = links || linksFilteredArray.filter((n) => n)[0]
-
       return (
         <article className={styles.repository}>
           <Title
