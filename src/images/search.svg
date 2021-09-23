@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="66.792915mm"
+   height="66.104195mm"
+   viewBox="0 0 66.792915 66.104195"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="search-icon.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="242.18407"
+     inkscape:cy="182.7871"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid989"
+       originx="-0.68998746"
+       originy="-0.074398511" />
+    <sodipodi:guide
+       position="24.310013,41.178593"
+       orientation="0.64944805,0.76040597"
+       id="guide1263"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="24.310013,41.178593"
+       orientation="0,1"
+       id="guide1741"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.68998746,-0.07439851)">
+    <path
+       id="path1059"
+       style="fill:#000000;stroke-width:1.88976"
+       d="M 90.955078 0.06640625 A 94.488189 94.488189 0 0 0 27.675781 27.675781 A 94.488189 94.488189 0 0 0 27.675781 161.30078 A 94.488189 94.488189 0 0 0 148.0957 172.21875 L 220.16797 244.29102 C 227.57088 251.69392 239.48967 251.69392 246.89258 244.29102 C 254.29549 236.88811 254.29549 224.96736 246.89258 217.56445 L 174.33203 145.00391 A 94.488189 94.488189 0 0 0 161.30078 27.675781 A 94.488189 94.488189 0 0 0 90.955078 0.06640625 z M 91.722656 35.560547 A 59.881894 59.881894 0 0 1 136.83008 53.035156 A 59.881894 59.881894 0 0 1 136.83203 137.7207 A 59.881894 59.881894 0 0 1 52.144531 137.7207 A 59.881894 59.881894 0 0 1 52.146484 53.035156 A 59.881894 59.881894 0 0 1 91.722656 35.560547 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0.68998746,0.07439851)" />
+  </g>
+</svg>
