@@ -4,10 +4,9 @@ import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
-import TextField from '@material-ui/core/TextField'
-import InputAdornment from '@material-ui/core/InputAdornment'
 import SearchResultElement from './SearchResultElement'
 import { ReactComponent as SearchIcon } from '../../images/search.svg'
+import styles from './SearchComponent.module.scss'
 
 const useStyles = makeStyles((theme) => ({
   parent: {
@@ -80,24 +79,16 @@ const SearchClient = ({ searchableData }) => {
   return (
     <div style={{ height: '100%' }}>
       <form onSubmit={handleSubmit}>
-        <TextField
-          variant="outlined"
-          placeholder="Search"
-          style={{
-            margin: '10px auto',
-            width: '100%'
-          }}
-          autoFocus
-          value={searchState.searchQuery}
-          onChange={searchData}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            )
-          }}
-        />
+        <div id="search-container" className={styles.searchContainer}>
+          <SearchIcon className={styles.searchBoxImg} />
+          <input
+            className={styles.searchBox}
+            placeholder="Search"
+            type="text"
+            value={searchState.searchQuery}
+            onChange={searchData}
+          />
+        </div>
       </form>
 
       <div

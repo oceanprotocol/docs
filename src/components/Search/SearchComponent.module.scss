@@ -19,3 +19,25 @@
   cursor: pointer;
 
 }
+
+.searchContainer {
+  display: flex;
+  border: 1px solid;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 4px
+}
+
+.searchBox {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
+
+.searchBoxImg {
+  padding: 10px;
+  min-width: 40px;
+  text-align: center;
+}
