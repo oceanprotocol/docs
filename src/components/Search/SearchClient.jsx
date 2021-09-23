@@ -60,6 +60,7 @@ const SearchClient = ({ searchableData }) => {
             className={styles.searchBox}
             placeholder="Search"
             type="text"
+            autoFocus
             value={searchState.searchQuery}
             onChange={searchData}
           />

@@ -29,7 +29,7 @@ const SearchComponent = ({ location }) => {
     }
   `)
   const searchableData = data.allMarkdownRemark.edges.map(({ node }) => {
-    var section = 'Concepts'
+    var section = 'Core Concepts'
     if (node.fields.slug.startsWith('/tutorials')) section = 'Tutorials'
 
     return {
