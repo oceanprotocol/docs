@@ -1,30 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import * as JsSearch from 'js-search'
 import PropTypes from 'prop-types'
-import { makeStyles } from '@material-ui/core/styles'
 import SearchResultElement from './SearchResultElement'
 import { ReactComponent as SearchIcon } from '../../images/search.svg'
 import styles from './SearchComponent.module.scss'
-
-const useStyles = makeStyles((theme) => ({
-  parent: {
-    overflow: 'hidden',
-    position: 'relative',
-    width: '100%'
-  },
-  child: {
-    background: 'green',
-    height: '100%',
-    width: '50%',
-    position: 'absolute',
-    right: 0,
-    top: 0
-  },
-  root: {
-    margin: 'auto',
-    width: '50%'
-  }
-}))
 
 const SearchClient = ({ searchableData }) => {
   const [searchState, setSearchState] = useState({
@@ -39,8 +18,6 @@ const SearchClient = ({ searchableData }) => {
     selectedSanitizer: '',
     touched: false
   })
-
-  const classes = useStyles()
 
   useEffect(() => {
     rebuildIndex(searchableData)
@@ -92,7 +69,6 @@ const SearchClient = ({ searchableData }) => {
       <div
         id="result-list-conatiner"
         style={{ overflowY: 'auto', height: '100%' }}
-        className={classes.parent}
       >
         {searchState.touched ? (
           <div>
