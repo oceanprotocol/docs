@@ -28,7 +28,7 @@ const HeaderHome = () => (
             <p className={styles.headerDescription}>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 {siteDescription}
-                <div>
+                <div style={{ marginTop: '10px' }}>
                   <SearchButton />
                 </div>
               </div>

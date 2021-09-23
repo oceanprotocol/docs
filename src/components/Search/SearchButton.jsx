@@ -1,12 +1,15 @@
 import React from 'react'
 import { navigate } from 'gatsby'
-
+import styles from './SearchComponent.module.scss'
 import { ReactComponent as SearchIcon } from '../../images/search.svg'
 
 const SearchButton = () => {
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <SearchIcon onClick={() => navigate('/search')} />
+    <div className={styles.searchButtonWrapper}>
+      <SearchIcon
+        className={styles.searchButton}
+        onClick={() => navigate('/search')}
+      />
     </div>
   )
 }

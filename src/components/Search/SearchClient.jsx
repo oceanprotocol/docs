@@ -6,8 +6,8 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import TextField from '@material-ui/core/TextField'
 import InputAdornment from '@material-ui/core/InputAdornment'
-import SearchIcon from '@material-ui/icons/Search'
 import SearchResultElement from './SearchResultElement'
+import { ReactComponent as SearchIcon } from '../../images/search.svg'
 
 const useStyles = makeStyles((theme) => ({
   parent: {
@@ -50,12 +50,6 @@ const SearchClient = ({ searchableData }) => {
   }, [])
 
   const rebuildIndex = (searchableData) => {
-    // const {
-    //   removeStopWords,
-    //   selectedStrategy,
-    //   selectedSanitizer,
-    //   termFrequency
-    // } = searchState
     const dataToSearch = new JsSearch.Search('title')
     dataToSearch.addIndex('title')
     dataToSearch.addIndex('description')
