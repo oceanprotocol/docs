@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import * as JsSearch from 'js-search'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
 import SearchResultElement from './SearchResultElement'
 import { ReactComponent as SearchIcon } from '../../images/search.svg'
 import styles from './SearchComponent.module.scss'
@@ -119,13 +117,13 @@ const ResultList = ({ searchResults }) => {
       </div>
 
       <div>
-        <List style={{ maxHeight: '100%' }}>
+        <ul style={{ maxHeight: '100%' }}>
           {searchResults.map((element) => (
-            <ListItem style={{ before: { content: null } }} key={element.id}>
+            <li className={styles.resultListElement} key={element.id}>
               <SearchResultElement element={element} />
-            </ListItem>
+            </li>
           ))}
-        </List>
+        </ul>
       </div>
     </div>
   )
