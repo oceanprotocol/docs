@@ -48,22 +48,16 @@
   }
 }
 
-.resultElementCard {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  padding: 10px;
-  width: 100%;
-}
 
-.resultElementtitle {
-  font-size: 1.25rem;
-  margin-top: 0px;
 
-}
+.resultBox {
+  --spacer: 10px;
+  --box-shadow-color: rgba(0,0,0,0.2);
+  composes: box from "../../styles/box.scss";
 
-.resultTextSecondary{
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.54)
+  .secondary{
+    margin: 0px;
+    font-size: $font-size-small;
+    color: $brand-grey-dark
+  }
 }
