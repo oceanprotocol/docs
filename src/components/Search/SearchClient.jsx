@@ -67,10 +67,7 @@ const SearchClient = ({ searchableData }) => {
         </div>
       </form>
 
-      <div
-        id="result-list-conatiner"
-        style={{ overflowY: 'auto', height: '100%' }}
-      >
+      <div id="result-list-conatiner">
         {searchState.touched ? (
           <div>
             <ResultList searchResults={searchState.searchResults} />

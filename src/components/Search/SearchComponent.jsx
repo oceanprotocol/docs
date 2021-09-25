@@ -46,7 +46,7 @@ const SearchComponent = ({ location }) => {
     <Layout location={location}>
       <HeaderSection title="Search" />
       <main>
-        <article style={{ height: '700px' }}>
+        <article style={{ minHeight: '700px' }}>
           <div
             id="search-client-container"
             style={{
