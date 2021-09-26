@@ -8,7 +8,7 @@ A non-fungible token stored on the blockchain represents a unique asset. NFTs ca
 
 ### How will Ocean Protocol support the NFT market?
 
-Ocean Protocol defines an [ERC721Factory](https://github.com/oceanprotocol/contracts/blob/v4Hardhat/contracts/ERC721Factory.sol) contract which will allow users to deploy ERC721 contract instances on any of the supported networks. The deployed contract can be associated with Metadata information which describes, also published on-chain. The [Metadata](https://github.com/oceanprotocol/contracts/blob/v4Hardhat/contracts/metadata/Metadata.sol) contract will store the information about the asset, and associated access rights defined through roles.
+Ocean Protocol defines an [ERC721Factory](https://github.com/oceanprotocol/contracts/blob/v4Hardhat/contracts/ERC721Factory.sol) contract, allowing users to deploy ERC721 contract instances on any supported networks.The deployed contract can be associated with Metadata information that describes the unique asset. The Metadata is also stored on-chain. The [Metadata](https://github.com/oceanprotocol/contracts/blob/v4Hardhat/contracts/metadata/Metadata.sol) contract will contain information about the NFT, and associated access rights defined through roles.
 
 ![Image 1](images/v4-nft-1.png)
 
@@ -20,7 +20,6 @@ Ocean Protocol's [ERC721Template](https://github.com/oceanprotocol/contracts/blo
 
 ![Combining ERC721 and ERC20](images/v4-nft-2.png)
 
-Once the contract is deployed, it will be available on the Ocean Marketplace for trade.
 
 ### Other References
 
