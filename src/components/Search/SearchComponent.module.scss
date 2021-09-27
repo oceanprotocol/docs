@@ -51,12 +51,10 @@
 
 
 .resultBox {
-  --spacer: 10px;
-  --box-shadow-color: rgba(0,0,0,0.2);
   composes: box from "../../styles/box.module.scss";
 
   .section{
-    margin: 0px;
+    margin: 0;
     font-size: $font-size-small;
     color: $brand-grey-dark
   }
