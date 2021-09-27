@@ -90,8 +90,7 @@ const Repository = ({ name, links, readme }) => (
         .filter(({ node }) => {
           return !node.isDraft
         })
-        .splice(1)
-
+        .splice(0, 1)
       repo = {
         ...repo,
         releases: { edges: releasesFilteredArray }
