@@ -10,7 +10,9 @@ import PropTypes from 'prop-types'
 const SearchComponent = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/" } }) {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/|/markdowns/" } }
+      ) {
         edges {
           node {
             fields {
@@ -20,6 +22,9 @@ const SearchComponent = ({ location }) => {
             frontmatter {
               title
               description
+              app
+              slug
+              module
             }
             id
             plainText
@@ -28,20 +33,33 @@ const SearchComponent = ({ location }) => {
       }
     }
   `)
+
   const searchableData = data.allMarkdownRemark.edges.map(({ node }) => {
-    var section = 'Concepts'
-    if (node.fields.slug.startsWith('/tutorials')) section = 'Tutorials'
+    var { slug } = node.fields
+    var section = null
+
+    if (node.fields.slug.startsWith('/tutorials')) {
+      section = 'Tutorials'
+    } else if (node.fields.slug.startsWith('/concepts')) {
+      section = 'Core concepts'
+    } else if (node.frontmatter.module) {
+      // This is for adding py module docs to index
+      slug = `/references/read-the-docs/${node.frontmatter.app.replace(
+        '.',
+        '-'
+      )}/${node.frontmatter.slug}`
+      section = `API References [${node.frontmatter.app}]`
+    }
 
     return {
       title: node.frontmatter.title,
       description: node.frontmatter.description,
-      slug: node.fields.slug,
       id: node.id,
       text: node.plainText,
-      section: section
+      slug,
+      section
     }
   })
-
   return (
     <Layout location={location}>
       <HeaderSection title="Search" />
