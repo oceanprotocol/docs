@@ -53,7 +53,7 @@
 .resultBox {
   --spacer: 10px;
   --box-shadow-color: rgba(0,0,0,0.2);
-  composes: box from "../../styles/box.scss";
+  composes: box from "../../styles/box.module.scss";
 
   .secondary{
     margin: 0px;
