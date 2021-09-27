@@ -52,7 +52,7 @@ const SearchClient = ({ searchableData }) => {
   }
 
   return (
-    <div style={{ height: '100%' }}>
+    <div>
       <form onSubmit={handleSubmit}>
         <div id="search-container" className={styles.searchContainer}>
           <SearchIcon className={styles.searchBoxImg} />
@@ -67,13 +67,9 @@ const SearchClient = ({ searchableData }) => {
         </div>
       </form>
 
-      <div id="result-list-conatiner">
-        {searchState.touched ? (
-          <div>
-            <ResultList searchResults={searchState.searchResults} />
-          </div>
-        ) : null}
-      </div>
+      {searchState.touched ? (
+        <ResultList searchResults={searchState.searchResults} />
+      ) : null}
     </div>
   )
 }
@@ -84,18 +80,15 @@ SearchClient.propTypes = {
 
 const ResultList = ({ searchResults }) => {
   return (
-    <div style={{ maxHeight: '100%' }}>
-      <div>Total results found: {searchResults.length}</div>
-
-      <div>
-        <ul style={{ maxHeight: '100%' }}>
-          {searchResults.map((element) => (
-            <li className={styles.resultListElement} key={element.id}>
-              <SearchResultElement element={element} />
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div>
+      <p>Total results found: {searchResults.length}</p>
+      <ul>
+        {searchResults.map((element) => (
+          <li className={styles.resultListElement} key={element.id}>
+            <SearchResultElement element={element} />
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
