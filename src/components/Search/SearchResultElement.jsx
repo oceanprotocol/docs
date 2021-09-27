@@ -6,17 +6,17 @@ import styles from './SearchComponent.module.scss'
 const SearchResultElement = ({ element }) => {
   const { slug, title, section, description } = element
   return (
-    <div className={styles.resultBox}>
-      <div className={styles.secondary}>{section}</div>
-      <div className={styles.title}>
-        <b>
-          <Link to={slug}>{title}</Link>
-        </b>
+    <Link to={slug}>
+      <div className={styles.resultBox}>
+        <header>
+          <div className={styles.section}>{section}</div>
+          <h1 className={styles.title}>{title}</h1>
+        </header>
+        {description && (
+          <div className={styles.content}>{description.substring(0, 100)}</div>
+        )}
       </div>
-      <div className={styles.secondary}>
-        {description ? description.substring(0, 100) + '...' : null}
-      </div>
-    </div>
+    </Link>
   )
 }
 

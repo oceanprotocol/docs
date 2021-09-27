@@ -55,9 +55,20 @@
   --box-shadow-color: rgba(0,0,0,0.2);
   composes: box from "../../styles/box.module.scss";
 
-  .secondary{
+  .section{
     margin: 0px;
     font-size: $font-size-small;
+    color: $brand-grey-dark
+  }
+
+  .title {
+    font-size: $font-size-large;
+    margin: 0;
+  }
+
+  .content {
+    font-size: $font-size-small;
+    margin: 0;
     color: $brand-grey-dark
   }
 }
