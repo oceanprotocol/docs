@@ -6,6 +6,7 @@ import SearchClient from './SearchClient'
 import Layout from '../../components/Layout'
 import HeaderSection from '../../components/HeaderSection'
 import PropTypes from 'prop-types'
+import styles from './SearchComponent.module.scss'
 
 const SearchComponent = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -64,18 +65,8 @@ const SearchComponent = ({ location }) => {
     <Layout location={location}>
       <HeaderSection title="Search" />
       <main>
-        <article style={{ minHeight: '700px' }}>
-          <div
-            id="search-client-container"
-            style={{
-              margin: 'auto',
-              width: '50%',
-              height: '100%',
-              paddingBottom: '50px'
-            }}
-          >
-            <SearchClient searchableData={searchableData} />
-          </div>
+        <article className={styles.searchPage}>
+          <SearchClient searchableData={searchableData} />
         </article>
       </main>
     </Layout>

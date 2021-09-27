@@ -54,7 +54,7 @@ const SearchClient = ({ searchableData }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div id="search-container" className={styles.searchContainer}>
+        <div id="search-container" className={styles.searchTextboxContainer}>
           <SearchIcon className={styles.searchBoxImg} />
           <input
             className={styles.searchBox}

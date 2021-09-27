@@ -12,20 +12,24 @@
 .searchButtonWrapper {
   display: 'flex';
   align-items: 'center';
-
 }
 
 .searchButton {
   cursor: pointer;
-
 }
 
-.searchContainer {
+.searchPage {
+  min-height: $spacer * 50;
+  width: 50%;
+  margin: auto;
+}
+
+.searchTextboxContainer {
   display: flex;
   border: 1px solid;
   width: 100%;
   margin-bottom: 15px;
-  border-radius: 4px
+  border-radius: 4px;
 }
 
 .searchBox {
@@ -37,26 +41,24 @@
 }
 
 .searchBoxImg {
-  padding: 10px;
+  padding: 0.75rem;
   min-width: 40px;
   text-align: center;
 }
 
 .resultListElement {
-  &:before{
+  &:before {
     content: '';
   }
 }
 
-
-
 .resultBox {
-  composes: box from "../../styles/box.module.scss";
+  composes: box from '../../styles/box.module.scss';
 
-  .section{
+  .section {
     margin: 0;
     font-size: $font-size-small;
-    color: $brand-grey-dark
+    color: $brand-grey-dark;
   }
 
   .title {
@@ -67,6 +69,6 @@
   .content {
     font-size: $font-size-small;
     margin: 0;
-    color: $brand-grey-dark
+    color: $brand-grey-dark;
   }
 }
