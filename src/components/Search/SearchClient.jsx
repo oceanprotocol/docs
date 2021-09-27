@@ -57,7 +57,7 @@ const SearchClient = ({ searchableData }) => {
         <div id="search-container" className={styles.searchTextboxContainer}>
           <SearchIcon className={styles.searchBoxImg} />
           <input
-            className={styles.searchBox}
+            className={styles.searchTextInput}
             placeholder="Search"
             type="text"
             autoFocus
