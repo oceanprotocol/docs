@@ -16,15 +16,15 @@ A non-fungible token stored on the blockchain represents a unique asset. NFTs ca
 
 ### Supporting NFT using Ocean Protocol
 
-Ocean Protocol defines an [ERC721Factory](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/ERC721Factory.sol) contract, allowing **Base IP holders** to create their own ERC721 instances on any supported networks. The deployed contract stores Metadata, ownership, sub-license information, permissions. The creater of the contract can also create and mint ERC20 token instances for sub-licensing the **Base IP**.
+Ocean Protocol defines [ERC721Factory](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/ERC721Factory.sol) contract, allowing **Base IP holders** to create their ERC721 contract instances on any supported networks. The deployed contract stores Metadata, ownership, sub-license information, permissions. The creator of the contract can also create and mint ERC20 token instances for sub-licensing the **Base IP**.
 
 ### Sub licensing the Base IP
 
-ERC721 tokens are non-fungiable, thus cannot be used for automatic price discovery like ERC20 tokens. ERC721 and ERC20 combined together can be used for sub-licensing. Ocean Protocol's [ERC721Template](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC721Template.sol) solves this problem by using ERC721 for tokenizing the **Base IP** and tokenzing sub-licenses by using ERC20. Thus, sub-licenses can be traded on any AMM as the underlying contract is ERC20 compliant.
+ERC721 tokens are non-fungible, thus cannot be used for automatic price discovery like ERC20 tokens. ERC721 and ERC20 combined together can be used for sub-licensing. Ocean Protocol's [ERC721Template](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC721Template.sol) solves this problem by using ERC721 for tokenizing the **Base IP** and tokenizing sub-licenses by using ERC20. Thus, sub-licenses can be traded on any AMM as the underlying contract is ERC20 compliant.
 
 ### Use case
 
-Alice is author of a book. Alice wants to hold the copyright of her work but, allow others to read her book. So, She creates 2 versions of her book namely: digital copy, physcial copy. She assigns Bob as the manager for the digital edition of the book. Here, **Base IP** is the book. **Base IP holder** is Alice and Bob is **Sub-licensee** for digital edition of the book. Alice tokensises her work by performing **Publish** action i.e _ERC721.safeMint(to=aliceWalletAddress, tokenid=1)_. Alice also creates a sub-licenses of her book by creating two ERC20 tokens and transerfers the digital copy token to Bob's wallet.
+Alice is the author of a book. Alice wants to hold the copyright of her work but, allows others to read her book. So, She creates 2 versions of her book namely: digital copy, physical copy. She assigns Bob as one of the holder of digital edition of the book. Here, **Base IP** is the book. **Base IP holder** is Alice and Bob is **Sub-licensee** for a digital edition of the book. Alice tokenizes her work by performing **Publish** action i.e _ERC721.safeMint(to=aliceWalletAddress, tokenid=1)_. Alice also creates sub-licenses of her book by creating two ERC20 tokens and transefers the digital copy token to Bob's wallet.
 
 ![Image 1](images/v4-nft-1.PNG)
 
