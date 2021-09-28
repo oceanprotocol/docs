@@ -1,9 +1,16 @@
 ---
-title: Allow and Deny Lists
+title: Asset-Level Restrictions
 description: Restrict access to individual assets
 ---
 
-Allow and deny lists are advanced features that allow publishers to control access to individual data assets. Publishers can restrict assets so that they can only be accessed by approved users (allow lists) or they can restrict assets so that they can be accessed by anyone except certain users (deny lists). 
+## Introduction
+
+For asset-level restrictions Ocean supports allow and deny lists. Allow and deny lists are advanced features that allow publishers to control access to individual data assets. Publishers can restrict assets so that they can only be accessed by approved users (allow lists) or they can restrict assets so that they can be accessed by anyone except certain users (deny lists). 
+
+When an allow-list is in place, a consumer can only access the resource if they have a datatoken and one of the credentials in the "allow" list of the DDO. Ocean also has complementary deny functionality: if a consumer is on the "deny" list, they will not be allowed to access the resource. 
+
+Initially, the only credential supported is Ethereum public addresses. To be fair, it’s more a pointer to an individual not a credential; but it has a low-complexity implementation so makes a good starting point. For extensibility, the Ocean metadata schema enables specification of  other types of credentials like W3C Verifiable Credentials and more. When this gets implemented, asset-level permissions will be properly RBAC too:) 
+Since asset-level permissions are in the DDO, and the DDO is controlled by the publisher, asset-level restrictions are controlled by the publisher.
 
 ## Setup
 
@@ -34,7 +41,7 @@ Next you will need to sign the transaction in Metamask, or the wallet of your ch
 
 ![Sign Metamask transaction](images/allow-deny-lists/metamask-transaction.png)
 
-When the process of updating the allow or deny lists is complete you will a success message. 
+When the process of updating the allow or deny lists is complete you will receive a success message. 
 
 ![Update allow or deny list success](images/allow-deny-lists/update-success.png)
 

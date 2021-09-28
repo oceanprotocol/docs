@@ -15,27 +15,27 @@ export default function Deployments({ data, location }) {
 
   const networks = {
     'Ethereum Mainnet': {
-      aquarius: 'https://aquarius.mainnet.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.mainnet.oceanprotocol.com'
     },
     'Polygon Mainnet': {
-      aquarius: 'https://aquarius.polygon.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.polygon.oceanprotocol.com'
     },
     'Binance Smart Chain': {
-      aquarius: 'https://aquarius.bsc.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com/',
       provider: 'https://provider.bsc.oceanprotocol.com'
     },
     Ropsten: {
-      aquarius: 'https://aquarius.ropsten.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.ropsten.oceanprotocol.com'
     },
     Rinkeby: {
-      aquarius: 'https://aquarius.rinkeby.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.rinkeby.oceanprotocol.com'
     },
     Mumbai: {
-      aquarius: 'https://aquarius.mumbai.oceanprotocol.com',
+      aquarius: 'https://aquarius.oceanprotocol.com',
       provider: 'https://provider.mumbai.oceanprotocol.com'
     }
   }
@@ -46,18 +46,7 @@ export default function Deployments({ data, location }) {
     setLoading(false)
   }, [])
 
-  const getAquariusVersion = async (url) => {
-    if (!url) return
-    try {
-      const data = await fetch(url)
-      const { version } = await data.json()
-      return version
-    } catch {
-      return '-'
-    }
-  }
-
-  const getProviderVersion = async (url) => {
+  const getVersion = async (url) => {
     if (!url) return
     try {
       const data = await fetch(url)
@@ -72,8 +61,8 @@ export default function Deployments({ data, location }) {
     const objs = []
 
     for (const key of Object.keys(networks)) {
-      const aquariusVerison = await getAquariusVersion(networks[key].aquarius)
-      const providerVerison = await getProviderVersion(networks[key].provider)
+      const aquariusVerison = await getVersion(networks[key].aquarius)
+      const providerVerison = await getVersion(networks[key].provider)
       objs.push(
         <tr key={key}>
           <td>{key}</td>
@@ -85,7 +74,6 @@ export default function Deployments({ data, location }) {
 
     return (
       <div>
-        {' '}
         <table>
           <thead>
             <tr>

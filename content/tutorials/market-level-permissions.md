@@ -1,8 +1,13 @@
 ---
-title: Role-Based Access Control Server
+title: Market-Level Permissions
 description: Control who can publish, consume or browse data
 ---
-The primary mechanism for restricting your users ability to publish, consume, or browse is the role-based access (RBAC) control server. 
+
+## Introduction
+
+For market-level permissions, Ocean implements a role-based access control server (RBAC server). It implements restrictions at the user level, based on the user’s role (credentials). The RBAC server is run & controlled by the marketplace owner. Therefore permissions at this level are at the discretion of the marketplace owner. 
+
+The RBAC server is the primary mechanism for restricting your users ability to publish, consume, or browse assets in the market.  
 
 ## Roles
 
@@ -109,7 +114,7 @@ npm run start:docker
 
 ## Setting up the RBAC in the Market
 
-To use the RBAC server with the market you need to save your the URL of your RBAC server as an env within the market. 
+To use the RBAC server with the market you need to save the URL of your RBAC server as an env within the market. 
 
 - First setup and host the Ocean role based access control (RBAC) server. Follow the instructions in the [RBAC repository](https://github.com/oceanprotocol/RBAC-Server)
 - In your .env file in your fork of Ocean Market, set the value of the `GATSBY_RBAC_URL` environmental variable to the URL of the Ocean RBAC server that you have hosted, e.g. `GATSBY_RBAC_URL= "http://localhost:3000"`

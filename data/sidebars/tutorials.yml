@@ -41,21 +41,23 @@
       link: /tutorials/compute-to-data-algorithms/
     - title: Run a Compute-to-Data Environment
       link: /tutorials/compute-to-data/
+    - title: Minikube Compute-to-Data Environment
+      link: /tutorials/compute-to-data-minikube/
 
 - group: Storage Setup
   items:
     - title: Set Up Azure Storage
-      link: /tutorials/azure-for-brizo/
+      link: /tutorials/azure-for-provider/
     - title: Set Up Amazon S3 Storage
-      link: /tutorials/amazon-s3-for-brizo/
+      link: /tutorials/amazon-s3-for-provider/
     - title: Set Up On-Premise Storage
-      link: /tutorials/on-premise-for-brizo/
+      link: /tutorials/on-premise-for-provider/
 
 - group: Fine-Grained Permissions
   items:
     - title: Overview
       link: /tutorials/permissions
-    - title: Role-Based Access Control
-      link: /tutorials/rbac
-    - title: Allow & Deny Lists
-      link: /tutorials/allow-deny-lists
+    - title: Market-Level Permissions
+      link: /tutorials/market-level-permissions
+    - title: Asset-Level Permissions
+      link: /tutorials/asset-level-permissions
