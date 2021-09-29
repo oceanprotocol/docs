@@ -17,7 +17,7 @@ ocean/
 Then you need the following parts:
 
 - working [Barge](https://github.com/oceanprotocol/barge). For this setup, we will asume the Barge is installed in /ocean/barge/
-- a working Kubernetes (K8s) cluster (Minikube is a good start)
+- a working Kubernetes (K8s) cluster ([Minikube](../compute-to-data-minikube/) is a good start)
 - a working `kubectl` connected to the K8s cluster
 - one folder (/ocean/operator-service/), in which we will download the following:
   - [postgres-configmap.yaml](https://raw.githubusercontent.com/oceanprotocol/operator-service/main/kubernetes/postgres-configmap.yaml)
@@ -45,9 +45,9 @@ Check the [README](https://github.com/oceanprotocol/operator-engine#customize-yo
 
 ## Storage class
 
-For minikube, you can use 'standard' class.
+For minikube, you can use the default 'standard' class.
 
-For AWS , please make sure that your class allocates volumes in the same region and zone in which you are running your pods.
+For AWS, please make sure that your class allocates volumes in the same region and zone in which you are running your pods.
 
 We created our own 'standard' class in AWS:
 
@@ -69,17 +69,6 @@ parameters:
 provisioner: kubernetes.io/aws-ebs
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
-```
-
-Or we can use this for minikube:
-
-```yaml
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: standard
-provisioner: docker.io/hostpath
-reclaimPolicy: Retain
 ```
 
 For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/

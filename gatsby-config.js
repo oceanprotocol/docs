@@ -170,6 +170,7 @@ module.exports = {
         path: `${__dirname}/markdowns/markdowns`,
         name: 'markdowns'
       }
-    }
+    },
+    `gatsby-transformer-remark-plaintext`
   ]
 }
