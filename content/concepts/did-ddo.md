@@ -30,7 +30,7 @@ DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) d
 
 - The DDO is stored on-chain. 
 - It's stored encrypted (using the private key of the provider). To resolve it, you must query the provider and you will might get the clear text ddo (depends on access rights, state, etc)
-- Each DID has a state, which is held by the NFT Contract (also stored in the DDO.status.status).  The possible states are:
+- Each asset has a state, which is held by the NFT Contract (and is also stored in the DDO.status.status).  The possible states are:
      * 0  = active
      * 1  = end-of-life
      * 2  = deprecated (by another asset)
@@ -43,7 +43,7 @@ In Ocean, a DID is a string that looks like:
 ```text
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
-where "0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea" is the address of the ERC721 contract that represents that asset.
+where "0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea" = sha256(ERC721 contract addres + chainId)
 
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
@@ -54,17 +54,17 @@ It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-gene
 A DDO has these standard attributes:
 
 - `@context`   = array, contexts used for validation
-- `id`  = string, address of ERC721 contract
+- `id`  = string, computed as sha256(address of ERC721 contract + chainId)
 - `created` = updated by aquarius, contains the date of publishing (block.timestamp)
 - `updated`  = updated by aquarius, contains the date of the update (block.timestamp)
-- `proof` = proof of ownership 
+- `proof` = proof of ownership, optional
 
 
 In Ocean, the DDO also has:
 
 - `version` - stores version information (`v4` for us)
 - `metadata` - stores metadata information [Metadata](#metadata)
-- `service` - stores an array of services [Service](#service)
+- `services` - stores an array of services [Services](#services)
 - `credentials` - optional flag, which describes the credentials needed to access a dataset [Credentials](#credentials)
 - `status` -  stores status related fields [Status](#status)
 - `files` and `encryptedFiles` - stores file(s) informations [Files](#files)
@@ -83,7 +83,7 @@ The object has the following attributes.
 | **`author`**        | Text                  |**Yes**   | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
 | **`license`**       | Text                  |**Yes**   | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
 | **`links`**           | Array of Link | No       | Mapping of links for data samples, or links to find out more information. Links may be to either a URL or another Asset. We expect marketplaces to converge on agreements of typical formats for linked data: The Ocean Protocol itself does not mandate any specific formats as these requirements are likely to be domain-specific. The links array can be an empty array, but if there is a link object in it, then an "url" is required in that link object. |
-| **`inLanguage`**      | Text          | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)|
+| **`contentLanguage`**      | Text          | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)|
 | **`categories`**      | Array of Text | No       | Optional array of categories associated to the asset. Note: recommended to use `"tags"` instead of this.   |
 | **`tags`**            | Array of Text | No       | Array of keywords or tags used to describe this content. Empty by default. |
 | **`additionalInformation`**            | Object | No       | Stores additional information, this is customizable by publisher |
@@ -97,9 +97,8 @@ An asset of type `algorithm` has the following additional attributes under `algo
 | Attribute           |   Type                |   Required  | Description                                         |
 | ------------------- | ----------------------| ----------- |--------------------------------------------------- |
 | **`language`**      | `string`              | no          | Language used to implement the software |
-| **`format`**        | `string`              | no          | Packaging format of the software. |
 | **`version`**       | `string`              | no          | Version of the software. |
-| **`container`**     | `Object`              | yes         | Object describing the Docker container image. |
+| **`container`**     | `Container Object`    | yes         | Object describing the Docker container image.(see below) |
 
 The `container` object has the following attributes:
 
@@ -114,15 +113,17 @@ The `container` object has the following attributes:
 
 
 
-## Service
+## Services
 
 | Attribute           | Type                  | Required | Description                                                                                                                                                                                       |
 | ------------------- | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`type`**     | Text          | **Yes**       | Type of service (access, compute, wss, etc |
-| **`name`**     | Text          | No       | Service friendly name |
-| **`serviceEndpoint`**     | Text          | **Yes**       | Provider URI |
-| **`timeout`**     | Number          | **Yes**       | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. |
-| **`files`**         | Array of files object |**No **   | Array of `File` objects including the encrypted file urls that overwrites the root files object for this service [Files](#files)   |
+| **`type`**            | Text          | **Yes**       | Type of service (access, compute, wss, etc |
+| **`name`**            | Text          | No       | Service friendly name |
+| **`description`**     | Text          | No       | Service description |
+| **`datatokenAddress`**     | Text          | Yes       | Datatoken address |
+| **`providerEndpoint`** | Text          | **Yes**       | Provider URI |
+| **`timeout`**         | Number          | **Yes**       | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds.|
+| **`files`**           | Array of files object |**No **   | Array of `File` objects including the encrypted file urls that overwrites the root files object for this service [Files](#files)   |
 
 
 Depending on the service type, the following attributes are applied:
@@ -136,7 +137,7 @@ An asset with a service of type `compute` has the following additional attribute
 | **`allowRawAlgorithm`**      | `boolean`             | yes         | If True, a drag & drop algo can be runned                 |
 | **`allowNetworkAccess`**     | `boolean`             | yes         | If True, the algo job will have network access (stil WIP) |
 | **`publisherTrustedAlgorithmPublishers `**      | Array of `String`     | yes         | If Empty , then any published algo is allowed. Otherwise, only published algorithms by some publishers are allowed |
-| **`publisherTrustedAlgorithms `**      | Array of `Objects`     | yes         | If Empty , then any published algo is allowed. (see below) |
+| **`publisherTrustedAlgorithms `**      | Array of `publisherTrustedAlgorithms`     | yes         | If Empty , then any published algo is allowed. (see below) |
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
@@ -154,6 +155,54 @@ sha256(algorithm_ddo.service['metadata'].attributes.encryptedFiles + JSON.String
 To produce containerSectionChecksum: 
 ```
 sha256(JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.algorithm.container))
+```
+
+Example:
+```json
+
+
+{
+   {...},
+   "services":[
+      {
+         "type":"access",
+         "name":"Download service",
+         "description":"Download service",
+         "datatokenAddress":"0x123",
+         "providerEndpoint":"https://myprovider",
+         "timeout":0
+      },
+      {
+         "type":"compute",
+         "name":"Compute service",
+         "description":"Compute service",
+         "datatokenAddress":"0x124",
+         "providerEndpoint":"https://myprovider",
+         "timeout":0,
+         "privacy":{
+            "allowRawAlgorithm":false,
+            "allowNetworkAccess":true,
+            "publisherTrustedAlgorithmPublishers":[
+               "0x234",
+               "0x235"
+            ],
+            "publisherTrustedAlgorithms":[
+               {
+                  "did":"did:op:123",
+                  "filesChecksum":"100",
+                  "containerSectionChecksum":"200"
+               },
+               {
+                  "did":"did:op:124",
+                  "filesChecksum":"110",
+                  "containerSectionChecksum":"210"
+               }
+            ]
+         }
+      }
+   ]
+}
+
 ```
 
 ## Credentials
