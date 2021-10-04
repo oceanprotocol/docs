@@ -31,10 +31,10 @@ DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) d
 - The DDO is stored on-chain. 
 - It's stored encrypted (using the private key of the provider). To resolve it, you must query the provider and you will might get the clear text ddo (depends on access rights, state, etc)
 - Each asset has a state, which is held by the NFT Contract (and is also stored in the DDO.status.status).  The possible states are:
-     * 0  = active
-     * 1  = end-of-life
-     * 2  = deprecated (by another asset)
-     * 3  = revoked by publisher
+     - 0  = active
+     - 1  = end-of-life
+     - 2  = deprecated (by another asset)
+     - 3  = revoked by publisher
 
 ## DID Structure
 
@@ -43,6 +43,7 @@ In Ocean, a DID is a string that looks like:
 ```text
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
+
 where "0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea" = sha256(ERC721 contract addres + chainId)
 
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
@@ -72,6 +73,7 @@ In Ocean, the DDO also has:
 
 
 ## Metadata
+
 The object has the following attributes. 
 
 | Attribute           | Type                  | Required | Description                                                                                                                                                                                       |
@@ -148,18 +150,20 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 | **`containerSectionChecksum`**           | `string` | yes       | Hash of the algorithm container section (as string) |
 
 To produce filesChecksum:  
-```
+
+```js
 sha256(algorithm_ddo.service['metadata'].attributes.encryptedFiles + JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.files) )
 ```
 
 To produce containerSectionChecksum: 
-```
+
+```js
 sha256(JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.algorithm.container))
 ```
 
 Example:
-```json
 
+```json
 
 {
    {...},
@@ -246,7 +250,6 @@ Here's an example object with both `"allow"` and `"deny"` entries.
 }
 ```
 
-```
 
 For future usage, we can extend that with different credentials types. Example:
 
@@ -261,6 +264,7 @@ For future usage, we can extend that with different credentials types. Example:
 
 
 ## Status
+
 The `status` object contains the following attributes:
 
 | Attribute                                |   Type   | Required  | Description                                         |
@@ -278,6 +282,7 @@ The `status` object contains the following attributes:
     "isOrderDisabled": false
   }
 ```
+
 ## Files
 
 The `files` section contains a `file` object (that contains a list of `file` objects) and a `encryptedFiles` string which contains the encrypted urls
@@ -317,6 +322,7 @@ Exanple:
 ```
 
 ## Event
+
 The `event` section contains informations about the latest transaction that created or update the ddo
 This section is auto-completed by aquarius.
 
