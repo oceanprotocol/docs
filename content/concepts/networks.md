@@ -69,6 +69,44 @@ If you don't find Polygon as a predefined network in your wallet, you can connec
 
 Check our [Polygon Bridge guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
 
+
+## Moonriver
+
+Ocean is deployed to [Moonriver](https://moonbeam.network/networks/moonriver/), another production network. Moonriver's native token is MOVR.
+
+If you don't find Moonriver as a predefined network in your wallet, you can connect to it manually via [Ocean's guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
+
+| What               | Value                               |
+| ------------------ | ----------------------------------- |
+| Network Name       | `Moonriver`                       |
+| RPC                | `https://moonriver.api.onfinality.io/public` |
+| Chain Id           | `1285`                                |
+| Currency Symbol    | `MOVR`                               |
+| Block Explorer URL | `https://blockscout.moonriver.moonbeam.network`               |
+
+**Tokens**
+
+- Moonriver MOVR:
+  - Native token to pay transaction fees
+  - Exchanges to purchase: [List](https://coinmarketcap.com/currencies/moonriver/markets/)
+- Moonriver OCEAN:
+  - Address: [0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE](https://blockscout.moonriver.moonbeam.network/address/0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE/)
+  - [Exchanges to purchase](https://oceanprotocol.com/token#get)
+
+**Additional Components**
+
+| What         | URL                                                              |
+| ------------ | ---------------------------------------------------------------- |
+| Explorer     | https://blockscout.moonriver.moonbeam.network/                   |
+| Ocean Market | Point wallet to Moonriver network, at https://market.oceanprotocol.com |
+| Provider     | `https://provider.moonriver.oceanprotocol.com`                         |
+| Subgraph     | `https://subgraph.moonriver.oceanprotocol.com`                         |
+
+**Bridge**
+
+Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet and Moonriver
+
+
 ## Binance Smart Chain
 
 Ocean is deployed to [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc), another production network. BSC's native token is BNB - the Binance token.
