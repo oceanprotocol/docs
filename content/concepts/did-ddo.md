@@ -26,15 +26,19 @@ DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) d
 - There _must_ be at least one client library acting as _resolver_, to get a DDO from a DID.
 - A metadata cache like Aquarius can help in reading and searching through DDO data from the chain.
 
-## Flow for publishing / retrieving DDOs
+## State
 
-- The DDO is stored on-chain. 
-- It's stored encrypted (using the private key of the provider). To resolve it, you must query the provider and you will might get the clear text ddo (depends on access rights, state, etc)
 - Each asset has a state, which is held by the NFT Contract (and is also stored in the DDO.status.status).  The possible states are:
      - 0  = active
      - 1  = end-of-life
      - 2  = deprecated (by another asset)
      - 3  = revoked by publisher
+
+
+## Flow for publishing / retrieving DDOs
+
+- The DDO is stored on-chain. 
+- It's stored encrypted (using the private key of the provider). To resolve it, you must query the provider.
 
 Here is the complete flow:
 
@@ -291,7 +295,7 @@ The `status` object contains the following attributes:
 
 | Attribute                                |   Type   | Required  | Description                                         |
 | ---------------------------------------- | -------- | --------- | --------------------------------------------------- |
-| **`status`**                             | `number` | yes       | Status of the asset (see above) |
+| **`state`**                             | `number` | yes       | State of the asset (see [State](#state) ) |
 | **`isListed`**                           | `boolean` | no       | If this asset should be displayed |
 | **`isOrderDisabled`**                    | `boolean` | no       | If this asset has ordering disabled |
 
