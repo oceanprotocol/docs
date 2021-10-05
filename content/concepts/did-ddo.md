@@ -36,6 +36,28 @@ DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) d
      - 2  = deprecated (by another asset)
      - 3  = revoked by publisher
 
+Here is the complete flow:
+
+```text
+title DDO flow
+
+User(Ocean library) -> User(Ocean library): Prepare DDO
+User(Ocean library) -> Provider: encrypt DDO
+Provider -> User(Ocean library): encryptedDDO
+User(Ocean library) -> ERC721 contract: publish encryptedDDO
+Aquarius <-> ERC721 contract: monitors ERC721 contract and gets MetdadataCreated Event (contains encryptedDDO)
+Aquarius -> ERC721 contract: calls getMetaData()
+Aquarius -> Provider: decrypt encryptedDDO, signed request using Aquarius's private key
+Provider -> ERC721 contract: checks state using getMetaData()
+Provider -> Provider: depending on metadataState (expired,retired) and aquarius address, validates the request
+Provider -> Aquarius: DDO
+Aquarius -> Aquarius : validate DDO
+Aquarius -> Aquarius : cache DDO
+```
+
+![DDO_flow](images/DDO_flow.png)
+
+
 ## DID Structure
 
 In Ocean, a DID is a string that looks like:
