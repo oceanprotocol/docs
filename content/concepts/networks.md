@@ -79,7 +79,7 @@ If you don't find Moonriver as a predefined network in your wallet, you can conn
 | What               | Value                               |
 | ------------------ | ----------------------------------- |
 | Network Name       | `Moonriver`                       |
-| RPC                | `https://rpc.moonriver.moonbeam.network` |
+| RPC                | `https://rpc.moonriver.moonbeam.network`|
 | Chain Id           | `1285`                                |
 | Currency Symbol    | `MOVR`                               |
 | Block Explorer URL | `https://blockscout.moonriver.moonbeam.network`               |
