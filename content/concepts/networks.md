@@ -69,7 +69,6 @@ If you don't find Polygon as a predefined network in your wallet, you can connec
 
 Check our [Polygon Bridge guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
 
-
 ## Moonriver
 
 Ocean is deployed to [Moonriver](https://moonbeam.network/networks/moonriver/), another production network. Moonriver's native token is MOVR.
@@ -105,6 +104,44 @@ If you don't find Moonriver as a predefined network in your wallet, you can conn
 **Bridge**
 
 Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet and Moonriver
+
+
+## Energy Web Chain
+
+Ocean is deployed to [Energy Web Chain](https://www.energyweb.org/technology/energy-web-chain/), another production network. Energy Web's native token is EWT.
+
+If you don't find Energy Web Chain as a predefined network in your wallet, you can connect to it manually via [Ocean's guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
+
+| What               | Value                               |
+| ------------------ | ----------------------------------- |
+| Network Name       | `Energy Web Chain`                       |
+| RPC                | `https://rpc.energyweb.org` |
+| Chain Id           | `246`                                |
+| Currency Symbol    | `EWT`                               |
+| Block Explorer URL | `https://explorer.energyweb.org/`               |
+
+**Tokens**
+
+- Energy Web Chain EWT:
+  - Native token to pay transaction fees
+  - Exchanges to purchase: [List](https://coinmarketcap.com/currencies/energy-web-token/markets/)
+- Energy Web Chain OCEAN:
+  - Address: [0x593122aae80a6fc3183b2ac0c4ab3336debee528](https://explorer.energyweb.org/tokens/0x593122AAE80A6Fc3183b2AC0c4ab3336dEbeE528)
+  - [Exchanges to purchase](https://oceanprotocol.com/token#get)
+
+**Additional Components**
+
+| What         | URL                                                              |
+| ------------ | ---------------------------------------------------------------- |
+| Explorer     | https://explorer.energyweb.org/                   |
+| Ocean Market | Point wallet to Energy Web Chain network, at https://market.oceanprotocol.com |
+| Provider     | `https://provider.energyweb.oceanprotocol.com`                         |
+| Subgraph     | `https://subgraph.energyweb.oceanprotocol.com`                         |
+
+**Bridge**
+
+Use [Carbonswap bridge](https://bridge.carbonswap.exchange/bridge) to bridge between ETH Mainnet and Energy Web Chain
+
 
 
 ## Binance Smart Chain
