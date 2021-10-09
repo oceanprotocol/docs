@@ -399,19 +399,18 @@ In order to ensure the integrity, a hash is computed for each DDO, following the
         string decryptorUrl,
         bytes flags,
         bytes data,
-        bytes hash,
-        string metaDataDecryptorAddress,
+        bytes metaDataHash,
         uint256 timestamp,
         uint256 blockNumber
     );
-    event MetadataUpdated(
+
+event MetadataUpdated(
         address indexed updatedBy,
         uint8 state,
         string decryptorUrl,
         bytes flags,
         bytes data,
-        bytes hash,
-        string metaDataDecryptorAddress,
+        bytes metaDataHash,
         uint256 timestamp,
         uint256 blockNumber
     );
