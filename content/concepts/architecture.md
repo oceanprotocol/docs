@@ -7,7 +7,7 @@ description: Simplicity and Interoperability via a Datatokens Core
 
 Here is the Ocean architecture.
 
-![Ocean Protocol tools architecture](images/architecture.png)
+![Ocean Protocol tools architecture](images/architecture.PNG)
 
 Here’s an overview of the figure.
 
