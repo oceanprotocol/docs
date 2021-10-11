@@ -27,11 +27,19 @@ Ocean Protocol defines [ERC721Factory](https://github.com/oceanprotocol/contract
 
 ERC721 tokens are non-fungible, thus cannot be used for automatic price discovery like ERC20 tokens. ERC721 and ERC20 combined together can be used for sub-licensing. Ocean Protocol's [ERC721Template](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC721Template.sol) solves this problem by using ERC721 for tokenizing the **Base IP** and tokenizing sub-licenses by using ERC20. Thus, sub-licenses can be traded on any AMM as the underlying contract is ERC20 compliant.
 
-## Use case
 
-Alice is the author of a book. Alice wants to hold the copyright of her work but, allows others to read her book. So, She creates 2 versions of her book namely: digital copy, physical copy. She assigns Bob as one of the holder of digital edition of the book. Here, **Base IP** is the book. **Base IP holder** is Alice and Bob is **Sub-licensee** for a digital edition of the book. Alice tokenizes her work by performing **Publish** action i.e _ERC721.safeMint(to=aliceWalletAddress, tokenid=1)_. Alice also creates sub-licenses of her book by creating two ERC20 tokens and transefers the digital copy token to Bob's wallet.
+## Use case 1
+ 
+Alice is the creator of a painting and wants to make sure that the ownership of her artwork is uniquely determined. She performs the **Publish** action. She creates an ERC721 token which represents the ownership of the physical asset. Here, **Base IP** is Alice's artwork. **Base IP holder** is Alice. Now, Alice wants to transfer the ownership of her Artwork to Bob. So, Alice makes Bob's address as owner of the token in the discussion by sending a Blockchain transaction.
 
-![Image 1](images/v4-nft-1.PNG)
+![Image 1](images/use-case-1.PNG)
+
+
+## Use case 2
+
+Alice is the author of a book. Alice wants to hold the copyright of her work but, allows others to read her book. So, She creates 2 versions of her book namely: digital copy, physical copy. She assigns Bob as one of the holder of digital edition of the book. Here, **Base IP** is the book. **Base IP holder** is Alice and Bob is **Sub-licensee** for a digital edition of the book. Alice tokenizes her work by performing **Publish** action i.e _ERC721.safeMint(to=aliceWalletAddress, tokenid=1)_. Alice also creates sub-licenses of her book by creating two ERC20 tokens and transfers the digital copy token to Bob's wallet.
+
+![Image 2](images/use-case-2.PNG)
 
 ## Other References
 

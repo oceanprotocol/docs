@@ -6,6 +6,10 @@
       link: /concepts/quickstart/
     - title: Architecture Overview
       link: /concepts/architecture/
+    - title: NFTs
+      link: /concepts/nft/
+    - title: Roles
+      link: /concepts/roles/
     - title: Supported Networks
       link: /concepts/networks/
     - title: Deployments
@@ -24,13 +28,6 @@
       link: /concepts/did-ddo/
     - title: DDO Metadata
       link: /concepts/ddo-metadata/
-
-- group: NFTs (upcoming v4 release)
-  items:
-    - title: Introduction
-      link: /concepts/v4-nft/
-    - title: Roles
-      link: /concepts/v4-roles/
 
 - group: Contribute
   items:
