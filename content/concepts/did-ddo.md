@@ -418,7 +418,7 @@ event MetadataUpdated(
     );
 ```
 
-Aquarius should always chech the hash after data is decrypted(provider api called), in order to ensure ddo integrity.
+_Aquarius_ should always check the hash after data is decrypted via a _Provider_ API call, in order to ensure DDO integrity.
 
 
 ## Full DDO Example:
