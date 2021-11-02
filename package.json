@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@oceanprotocol/art": "^3.2.0",
-    "axios": "^0.21.4",
+    "axios": "^0.22.0",
     "classnames": "^2.3.1",
     "gatsby": "^2.32.13",
     "gatsby-image": "^3.11.0",
@@ -53,6 +53,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-json-view": "^1.21.3",
     "react-scrollspy": "^3.4.3",
     "rehype-react": "^7.0.2",
     "remark": "^13.0.0",

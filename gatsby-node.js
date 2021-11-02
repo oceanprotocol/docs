@@ -162,12 +162,10 @@ exports.createPages = ({ graphql, actions }) => {
 
         const markdowns = result.data.allRepoMarkdown.edges
         const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
-        const aquariusList = filterMarkdownList(markdowns, 'aquarius')
         const providerList = filterMarkdownList(markdowns, 'provider')
         const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
-        await createReadTheDocsPage(createPage, 'aquarius', aquariusList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
         await createReadTheDocsPage(createPage, 'ocean-subgraph', subgraphList)
 
