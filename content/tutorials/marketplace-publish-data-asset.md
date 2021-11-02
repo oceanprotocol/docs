@@ -43,7 +43,7 @@ Once the data asset is published, the user(s) can choose the pricing option as p
 There are 2 options for settings the price of an asset on Ocean Marketplace.
 
 1. Fixed pricing
-2. Dynamic pricing (using Banalcer pools)
+2. Dynamic pricing (using Balancer pools)
 
 #### Create fixed pricing for a data set
 
