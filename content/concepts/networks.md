@@ -252,6 +252,30 @@ If you don't find Mumbai as a predefined network in your wallet, you can connect
 | Provider     | `https://provider.mumbai.oceanprotocol.com`                         |
 | Subgraph     | `https://subgraph.mumbai.oceanprotocol.com`                         |
 
+## Celo Alfajores
+
+Alfajores is a Celo test network for developers building on the Celo platform.
+
+Celo docs: https://docs.celo.org/.
+
+Wallet setup: https://celo.org/developers/wallet
+
+**Tokens**
+
+- Alfajores CELO:
+  - Native token to pay transaction fees
+  - [Faucet](https://celo.org/developers/faucet).
+- Alfajores OCEAN:
+  - Address: [0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8](https://alfajores-blockscout.celo-testnet.org/address/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8/)
+
+
+**Additional Components**
+
+| What         | URL                                                                 |
+| ------------ | ------------------------------------------------------------------- |
+| Explorer     | https://alfajores-blockscout.celo-testnet.org/                      |
+
+
 ## Local / Ganache
 
 The most straightforward way for local-only development is to use [Barge](https://www.github.com/oceanprotocol/barge), which runs [Ganache](https://www.trufflesuite.com/ganache), Aquarius, and Provider. It is used extensively by the Ocean core devs (with Ganache or Rinkeby) and for automated integration testing.
