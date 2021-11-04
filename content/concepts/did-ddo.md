@@ -1,6 +1,6 @@
 ---
-title: DIDs & DDOs
-description: Specification of Ocean asset identifiers and objects using DIDs & DDOs
+title: DID & DDO
+description: Specification of decentralized identifiers for assets in Ocean Protocol using the DID & DDO standards.
 slug: /concepts/did-ddo/
 section: concepts
 ---
@@ -9,21 +9,19 @@ section: concepts
 
 ## Overview
 
-This document describes how Ocean assets follow the DID/DDO spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability.
+This document describes how Ocean assets follow the DID/DDO specification, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
-Decentralized identifiers (DIDs) are a type of identifier that enables verifiable, decentralized digital identity. Each DID is associated with a unique entity. DIDs may represent humans, objects, and more.
+Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity and DIDs may represent humans, objects, and more.
 
 A DID Document (DDO) is JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
 If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points. The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
 
-DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
-
 ## Rules for DIDs & DDOs
 
 An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
-An _asset_ should have a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). The DDO can only can be modified by _owners_ or _delegated users_.
+An _asset_ should have a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). The DDO can only be modified by _owners_ or _delegated users_.
 
 A metadata cache like _Aquarius_ can help in reading and searching through encrypted DDO data from the chain.
 
@@ -53,7 +51,7 @@ Aquarius -> Aquarius : cache DDO
 Aquarius -> Aquarius : enhance cached DDO in response with additional infos like `events` & `stats`
 ```
 
-## DID Structure
+## DID
 
 In Ocean, a DID is a string that looks like:
 
@@ -69,7 +67,7 @@ where
 
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
-## DDO Attributes
+## DDO
 
 A DDO in Ocean has these required attributes:
 
@@ -86,7 +84,7 @@ A DDO in Ocean has these required attributes:
 | **`encryptedFiles`** | [Files](#files)             | Added after publishing.                                                                        |
 | **`credentials`**    | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition. |
 
-## Metadata
+### Metadata
 
 This object holds information describing the actual actual asset.
 
@@ -118,7 +116,7 @@ Example:
 }
 ```
 
-### Algorithm Metadata
+#### Algorithm Metadata
 
 An asset of type `algorithm` has the following additional attributes under `algorithm` within the `metadata` object:
 
@@ -137,7 +135,7 @@ The `container` object has the following attributes defining the Docker image th
 | **`tag`**        | `string` | **✓**    | Tag of the Docker image.                                          |
 | **`checksum`**   | `string` | **✓**    | Checksum of the Docker image.                                     |
 
-## Services
+### Services
 
 Services define the access to the asset.
 
@@ -152,7 +150,7 @@ Services define the access to the asset.
 | **`files`**            | Array of files object | **✓**                           | Array of `File` objects for publishing. These will be transformed to `encryptedFiles` during publish process. See [Files](#files)          |
 | **`privacy`**          | Object                | **✓** (for compute assets only) | If asset is of compute `type`, holds information about the compute-related privacy settings.                                               |
 
-### Compute Privacy
+#### Compute Privacy
 
 An asset with a service of `type` `compute` has the following additional attributes under the `privacy` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
@@ -228,7 +226,7 @@ Example:
 }
 ```
 
-## Files
+### Files
 
 The `files` section contains a `file` object (that contains a list of `file` objects) and a `encryptedFiles` string which contains the encrypted urls
 
@@ -264,7 +262,7 @@ Example:
 }
 ```
 
-## Credentials
+### Credentials
 
 By default, a consumer can access a resource if they have 1.0 datatokens. _Credentials_ allow the publisher to optionally specify finer-grained permissions.
 
@@ -308,7 +306,7 @@ Example:
 }
 ```
 
-## DDO Hash
+### DDO Hash
 
 In order to ensure the integrity of the DDO, a hash is computed for each DDO:
 
@@ -344,7 +342,7 @@ event MetadataUpdated(
 
 _Aquarius_ should always check the hash after data is decrypted via a _Provider_ API call, in order to ensure DDO integrity.
 
-## State
+### State
 
 Each asset has a state, which is held by the NFT contract. The possible states are:
 
@@ -355,7 +353,9 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 
 ## Aquarius Enhanced DDO Response
 
-The following fields are added by _Aquarius_ in its DDO response for convenience reasons. These are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-hash).
+The following fields are added by _Aquarius_ in its DDO response for convenience reasons where an `Asset` returned by _Aquarius_ inherits the DDO fields from the chain.
+
+These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-hash).
 
 ### NFT
 
@@ -442,7 +442,7 @@ Example:
 }
 ```
 
-## Full Enhanced DDO Example:
+## Full Enhanced DDO Example
 
 ```json
 {
