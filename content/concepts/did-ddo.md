@@ -89,17 +89,11 @@ A DDO has these required attributes:
 In Ocean, the DDO also has:
 
 - `version` - string, stores version information (example: `v4.0.0`)
-- `chainId` - integer, stores chainId of the network used
+- `chainId` - integer, stores chainId of the network the DDO was published to
 - `metadata` - stores metadata information [Metadata](#metadata)
 - `services` - stores an array of services [Services](#services)
-- `credentials` - optional flag, which describes the credentials needed to access a dataset [Credentials](#credentials)
 - `files` and `encryptedFiles` - stores file(s) informations [Files](#files)
-
-In addition, Aquarius will add the following objects, which are not taken into account when [DDO hash](#ddo-hash) is calculated:
-
-- `status` - stores status related fields [Status](#status)
-- `event` - stores the last event information [Event](#event)
-- `stats` - stores several fields for statistics [Stats](#stats)
+- `credentials` - optional flag, which describes the credentials needed to access a dataset [Credentials](#credentials)
 
 ## Metadata
 
@@ -195,49 +189,43 @@ sha256(
 Example:
 
 ```json
-
 {
-   {...},
-   "services":[
-      {
-         "type":"access",
-         "name":"Download service",
-         "description":"Download service",
-         "datatokenAddress":"0x123",
-         "providerEndpoint":"https://myprovider",
-         "timeout":0
-      },
-      {
-         "type":"compute",
-         "name":"Compute service",
-         "description":"Compute service",
-         "datatokenAddress":"0x124",
-         "providerEndpoint":"https://myprovider",
-         "timeout":0,
-         "privacy":{
-            "allowRawAlgorithm":false,
-            "allowNetworkAccess":true,
-            "publisherTrustedAlgorithmPublishers":[
-               "0x234",
-               "0x235"
-            ],
-            "publisherTrustedAlgorithms":[
-               {
-                  "did":"did:op:123",
-                  "filesChecksum":"100",
-                  "containerSectionChecksum":"200"
-               },
-               {
-                  "did":"did:op:124",
-                  "filesChecksum":"110",
-                  "containerSectionChecksum":"210"
-               }
-            ]
-         }
+  "services": [
+    {
+      "type": "access",
+      "name": "Download service",
+      "description": "Download service",
+      "datatokenAddress": "0x123",
+      "providerEndpoint": "https://myprovider",
+      "timeout": 0
+    },
+    {
+      "type": "compute",
+      "name": "Compute service",
+      "description": "Compute service",
+      "datatokenAddress": "0x124",
+      "providerEndpoint": "https://myprovider",
+      "timeout": 0,
+      "privacy": {
+        "allowRawAlgorithm": false,
+        "allowNetworkAccess": true,
+        "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
+        "publisherTrustedAlgorithms": [
+          {
+            "did": "did:op:123",
+            "filesChecksum": "100",
+            "containerSectionChecksum": "200"
+          },
+          {
+            "did": "did:op:124",
+            "filesChecksum": "110",
+            "containerSectionChecksum": "210"
+          }
+        ]
       }
-   ]
+    }
+  ]
 }
-
 ```
 
 ## Credentials
@@ -248,39 +236,34 @@ Consider a medical data use case, where only a credentialed EU researcher can le
 
 This is like going to an R-rated movie, where you can only get in if you show both your movie ticket (datatoken) _and_ some some id showing you're old enough (credential).
 
-Only credentials that can be proven are supported. This includes Ethereum public addresses, and (in the future) W3C Verifiable Credentials and more.
+Only credentials that can be proven are supported. This includes Ethereum public addresses, and (in the future) [W3C Verifiable Credentials]() and more.
 
 Ocean also supports `"deny"` credentials: if a consumer has any of these credentials, they cannot access the resource.
 
-Here's an example object with both `"allow"` and `"deny"` entries.
+Here's an example object with both `"allow"` and `"deny"` entries:
 
 ```json
 {
-  {...},
-  "credentials":{
-      "allow":[
-         {
-            "type":"address",
-            "values":[
-               "0x123",
-               "0x456"
-            ]
-         }
-      ],
-      "deny":[
-         {
-         "type":"address",
-         "values":[
-            "0x2222",
-            "0x333"
-         ]
-         }
-      ]
+  "credentials": {
+    "allow": [
+      {
+        "type": "address",
+        "values": ["0x123", "0x456"]
+      }
+    ],
+    "deny": [
+      {
+        "type": "address",
+        "values": ["0x2222", "0x333"]
+      }
+    ]
   }
 }
 ```
 
-For future usage, we can extend that with different credentials types. Example:
+For future usage, we can extend that with different credentials types.
+
+Example:
 
 ```json
 {
@@ -314,15 +297,14 @@ Example:
 
 ```json
 {
-  {..},
-  files:{
+  "files": {
     "files": [
-            {
-              "contentLength": "3975",
-              "contentType": "text/csv"
-            }
-          ],
-    "encryptedFiles": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
+      {
+        "contentLength": "3975",
+        "contentType": "text/csv"
+      }
+    ],
+    "encryptedFiles": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735"
   }
 }
 ```
@@ -379,41 +361,47 @@ The `status` object contains the following attributes:
 
 ```json
 {
-  {...},
   "status": {
     "state": 0,
     "isListed": true,
     "isOrderDisabled": false
   }
+}
 ```
 
 ### Events
 
-The `events` section contains informations about the transactions that created or updated the DDO
+The `events` section contains informations about the transactions that created or updated the DDO.
+
+Example:
 
 ```json
 {
-  {...},
-  "events": [{
-    "txid": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
-    "blockNo": 12831214,
-    "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
-    "update": false,
-    "chainId": 1,
-  }]
+  "events": [
+    {
+      "txid": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+      "blockNo": 12831214,
+      "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
+      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
+      "update": false,
+      "chainId": 1
+    }
+  ]
+}
 ```
 
 ### Stats
 
 The `stats` section contains different statics fields.
 
+Example:
+
 ```json
 {
-  {...},
   "stats": {
-    "consumes":4
+    "consumes": 4
   }
+}
 ```
 
 ## Full Enhanced DDO Example:
@@ -447,7 +435,7 @@ The `stats` section contains different statics fields.
       "name": "Download service",
       "description": "Download service",
       "datatokenAddress": "0x123",
-      "providerEndpoint": "https://myprovider",
+      "providerEndpoint": "https://myprovider.com",
       "timeout": 0
     }
   ],
