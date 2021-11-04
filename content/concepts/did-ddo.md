@@ -1,13 +1,13 @@
 ---
 title: DIDs & DDOs - Asset Identifiers & Objects
-description: Specification of Ocean asset identifiers and objects using DIDs & DDOs 
+description: Specification of Ocean asset identifiers and objects using DIDs & DDOs
 slug: /concepts/did-ddo/
 section: concepts
 ---
 
 ## Overview
 
-This document describes how Ocean assets follow the DID/DDO spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. 
+This document describes how Ocean assets follow the DID/DDO spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability.
 
 Decentralized identifiers (DIDs) are a new type of identifier that enables verifiable, decentralized digital identity. Each DID is associated with a unique entity. DIDs may represent humans, objects, and more.
 
@@ -16,29 +16,28 @@ A DID Document (DDO) is JSON blob that holds information about the DID. Given a 
 If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points.
 The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
 
-DIDs and DDOs follow [this specification](https://w3c-ccg.github.io/did-spec/) defined by the World Wide Web Consurtium (W3C).
+DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
 ## Rules for DIDs & DDOs in Ocean
 
-- An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
-- An asset should have a DID and DDO. The DDO should include metadata about the asset.
-- The DDO can only can be modified by _owners_ or _delegated users_.
-- There _must_ be at least one client library acting as _resolver_, to get a DDO from a DID.
-- A metadata cache like Aquarius can help in reading and searching through DDO data from the chain.
+An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
+
+An _asset_ should have a DID and DDO. and the DDO should include metadata about the asset. The DDO can only can be modified by _owners_ or _delegated users_.
+
+There _must_ be at least one client library acting as _resolver_, to get a DDO from a DID. A metadata cache like Aquarius can help in reading and searching through DDO data from the chain.
 
 ## State
 
-- Each asset has a state, which is held by the NFT Contract (and is also stored in the DDO.status.status).  The possible states are:
-     - 0  = active
-     - 1  = end-of-life
-     - 2  = deprecated (by another asset)
-     - 3  = revoked by publisher
+Each asset has a state, which is held by the NFT contract. The possible states are:
 
+- `0` = active
+- `1` = end-of-life
+- `2` = deprecated (by another asset)
+- `3` = revoked by publisher
 
-## Flow for publishing / retrieving DDOs
+## Publishing an Retrieving DDOs
 
-- The DDO is stored on-chain. 
-- It's stored encrypted (using the private key of the provider). To resolve it, you must query the provider.
+The DDO is stored on-chain as part of the NFT contract and it is stored encrypted using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
 Here is the complete flow:
 
@@ -57,10 +56,10 @@ Provider -> Provider: depending on metadataState (expired,retired) and aquarius 
 Provider -> Aquarius: DDO
 Aquarius -> Aquarius : validate DDO
 Aquarius -> Aquarius : cache DDO
+Aquarius -> Aquarius : enhance cached DDO in response with additional infos like `events` & `stats`
 ```
 
 ![DDO_flow](images/DDO_flow.png)
-
 
 ## DID Structure
 
@@ -70,22 +69,22 @@ In Ocean, a DID is a string that looks like:
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-where "0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea" = sha256(ERC721 contract addres + chainId)
+where
+
+```text
+0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea` = sha256(ERC721 contract address + chainId)
+```
 
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
-
 ## DDO Attributes
 
+A DDO has these required attributes:
 
-A DDO has these standard attributes (required):
-
-- `@context`   = array, contexts used for validation
-- `id`  = string, computed as sha256(address of ERC721 contract + chainId)
+- `@context` = array, contexts used for validation
+- `id` = string, computed as sha256(address of ERC721 contract + chainId)
 - `created` = contains the date of publishing, ISO Date Time Format yyyy-MM-dd'T'HH:mm:ss. SSSXXX — for example, "2000-10-31T01:30:00.000-05:00
-- `updated`  = contains the date of last update, ISO Date Time Format
-- `proof` = proof of ownership, optional
-
+- `updated` = contains the date of last update, ISO Date Time Format
 
 In Ocean, the DDO also has:
 
@@ -94,33 +93,31 @@ In Ocean, the DDO also has:
 - `metadata` - stores metadata information [Metadata](#metadata)
 - `services` - stores an array of services [Services](#services)
 - `credentials` - optional flag, which describes the credentials needed to access a dataset [Credentials](#credentials)
-- `status` -  stores status related fields [Status](#status)
 - `files` and `encryptedFiles` - stores file(s) informations [Files](#files)
-
 
 In addition, Aquarius will add the following objects, which are not taken into account when [DDO hash](#ddo-hash) is calculated:
 
+- `status` - stores status related fields [Status](#status)
 - `event` - stores the last event information [Event](#event)
 - `stats` - stores several fields for statistics [Stats](#stats)
 
-
 ## Metadata
 
-The object has the following attributes. 
+The object has the following attributes.
 
-| Attribute           | Type                  | Required | Description                                                                                                                                                                                       |
-| ------------------- | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`description`**     | Text          | **Yes**       | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.|
-| **`copyrightHolder`** | Text          | No       | The party holding the legal copyright. Empty by default.   
-| **`name`**          | Text                  |**Yes**   | Descriptive name or title of the asset.  |
-| **`type`**          | Text                  |**Yes**   | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes. |
-| **`author`**        | Text                  |**Yes**   | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
-| **`license`**       | Text                  |**Yes**   | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
-| **`links`**           | Array of Link | No       | Mapping of links for data samples, or links to find out more information. Links may be to either a URL or another Asset. We expect marketplaces to converge on agreements of typical formats for linked data: The Ocean Protocol itself does not mandate any specific formats as these requirements are likely to be domain-specific. The links array can be an empty array, but if there is a link object in it, then an "url" is required in that link object. |
-| **`contentLanguage`**      | Text          | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)|
-| **`categories`**      | Array of Text | No       | Optional array of categories associated to the asset. Note: recommended to use `"tags"` instead of this.   |
-| **`tags`**            | Array of Text | No       | Array of keywords or tags used to describe this content. Empty by default. |
-| **`additionalInformation`**            | Object | No       | Stores additional information, this is customizable by publisher |
+| Attribute                   | Type          | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------------------------- | ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`description`**           | Text          | **Yes**  | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                                                                                                                                                                                                                                                                                    |
+| **`copyrightHolder`**       | Text          | No       | The party holding the legal copyright. Empty by default.                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **`name`**                  | Text          | **Yes**  | Descriptive name or title of the asset.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **`type`**                  | Text          | **Yes**  | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                                                                                                                                                                                                                                                                                 |
+| **`author`**                | Text          | **Yes**  | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                                                                                                                                                                                                                                                                                           |
+| **`license`**               | Text          | **Yes**  | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified".                                                                                                                                                                                                                                                                |
+| **`links`**                 | Array of Link | No       | Mapping of links for data samples, or links to find out more information. Links may be to either a URL or another Asset. We expect marketplaces to converge on agreements of typical formats for linked data: The Ocean Protocol itself does not mandate any specific formats as these requirements are likely to be domain-specific. The links array can be an empty array, but if there is a link object in it, then an "url" is required in that link object. |
+| **`contentLanguage`**       | Text          | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                                                                                                                                                                                                                                                                                             |
+| **`categories`**            | Array of Text | No       | Optional array of categories associated to the asset. Note: recommended to use `"tags"` instead of this.                                                                                                                                                                                                                                                                                                                                                         |
+| **`tags`**                  | Array of Text | No       | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                                                                                                                                                                                                                                                                                       |
+| **`additionalInformation`** | Object        | No       | Stores additional information, this is customizable by publisher                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 Depending on the asset type (dataset, algorithm), there are different metadata attributes supported:
 
@@ -128,37 +125,32 @@ Depending on the asset type (dataset, algorithm), there are different metadata a
 
 An asset of type `algorithm` has the following additional attributes under `algorithm` in metadata object:
 
-| Attribute           |   Type                |   Required  | Description                                         |
-| ------------------- | ----------------------| ----------- |--------------------------------------------------- |
-| **`language`**      | `string`              | no          | Language used to implement the software |
-| **`version`**       | `string`              | no          | Version of the software. |
-| **`container`**     | `Container Object`    | yes         | Object describing the Docker container image.(see below) |
+| Attribute       | Type               | Required | Description                                              |
+| --------------- | ------------------ | -------- | -------------------------------------------------------- |
+| **`language`**  | `string`           | no       | Language used to implement the software                  |
+| **`version`**   | `string`           | no       | Version of the software.                                 |
+| **`container`** | `Container Object` | yes      | Object describing the Docker container image.(see below) |
 
 The `container` object has the following attributes:
 
-| Attribute           |   Type   | Required  | Description                                         |
-| ------------------- | -------- | --------- | --------------------------------------------------- |
-| **`entrypoint`**    | `string` | yes       | The command to execute, or script to run inside the Docker image. |
-| **`image`**         | `string` | yes       | Name of the Docker image. |
-| **`tag`**           | `string` | yes       | Tag of the Docker image. |
-| **`checksum`**      | `string` | yes       | Checksum of the Docker image. |
-
-
-
-
+| Attribute        | Type     | Required | Description                                                       |
+| ---------------- | -------- | -------- | ----------------------------------------------------------------- |
+| **`entrypoint`** | `string` | yes      | The command to execute, or script to run inside the Docker image. |
+| **`image`**      | `string` | yes      | Name of the Docker image.                                         |
+| **`tag`**        | `string` | yes      | Tag of the Docker image.                                          |
+| **`checksum`**   | `string` | yes      | Checksum of the Docker image.                                     |
 
 ## Services
 
-| Attribute           | Type                  | Required | Description                                                                                                                                                                                       |
-| ------------------- | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`type`**            | Text          | **Yes**       | Type of service (access, compute, wss, etc |
-| **`name`**            | Text          | No       | Service friendly name |
-| **`description`**     | Text          | No       | Service description |
-| **`datatokenAddress`**     | Text          | Yes       | Datatoken address |
-| **`providerEndpoint`** | Text          | **Yes**       | Provider URI |
-| **`timeout`**         | Number          | **Yes**       | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds.|
-| **`files`**           | Array of files object |**No **   | Array of `File` objects including the encrypted file urls that overwrites the root files object for this service [Files](#files)   |
-
+| Attribute              | Type                  | Required | Description                                                                                                                               |
+| ---------------------- | --------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **`type`**             | Text                  | **Yes**  | Type of service (access, compute, wss, etc                                                                                                |
+| **`name`**             | Text                  | No       | Service friendly name                                                                                                                     |
+| **`description`**      | Text                  | No       | Service description                                                                                                                       |
+| **`datatokenAddress`** | Text                  | Yes      | Datatoken address                                                                                                                         |
+| **`providerEndpoint`** | Text                  | **Yes**  | Provider URI                                                                                                                              |
+| **`timeout`**          | Number                | **Yes**  | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
+| **`files`**            | Array of files object | **No **  | Array of `File` objects including the encrypted file urls that overwrites the root files object for this service [Files](#files)          |
 
 Depending on the service type, the following attributes are applied:
 
@@ -166,31 +158,38 @@ Depending on the service type, the following attributes are applied:
 
 An asset with a service of type `compute` has the following additional attributes under `privacy` object :
 
-| Attribute                    |   Type                |   Required  | Description                                               |
-| ---------------------------- | ----------------------| ----------- |---------------------------------------------------------- |
-| **`allowRawAlgorithm`**      | `boolean`             | yes         | If True, a drag & drop algo can be runned                 |
-| **`allowNetworkAccess`**     | `boolean`             | yes         | If True, the algo job will have network access (stil WIP) |
-| **`publisherTrustedAlgorithmPublishers `**      | Array of `String`     | yes         | If Empty , then any published algo is allowed. Otherwise, only published algorithms by some publishers are allowed |
-| **`publisherTrustedAlgorithms `**      | Array of `publisherTrustedAlgorithms`     | yes         | If Empty , then any published algo is allowed. (see below) |
+| Attribute                                  | Type                                  | Required | Description                                                                                                        |
+| ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
+| **`allowRawAlgorithm`**                    | `boolean`                             | yes      | If True, a drag & drop algo can be runned                                                                          |
+| **`allowNetworkAccess`**                   | `boolean`                             | yes      | If True, the algo job will have network access (stil WIP)                                                          |
+| **`publisherTrustedAlgorithmPublishers `** | Array of `String`                     | yes      | If Empty , then any published algo is allowed. Otherwise, only published algorithms by some publishers are allowed |
+| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | yes      | If Empty , then any published algo is allowed. (see below)                                                         |
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
-| Attribute                                |   Type   | Required  | Description                                         |
-| ---------------------------------------- | -------- | --------- | --------------------------------------------------- |
-| **`did`**                                | `string` | yes       | The did of the algo which is trusted by the publisher. |
-| **`filesChecksum`**                      | `string` | yes       | Hash of ( algorithm's encryptedFiles + files section (as string) )
-| **`containerSectionChecksum`**           | `string` | yes       | Hash of the algorithm container section (as string) |
+| Attribute                      | Type     | Required | Description                                                        |
+| ------------------------------ | -------- | -------- | ------------------------------------------------------------------ |
+| **`did`**                      | `string` | yes      | The did of the algo which is trusted by the publisher.             |
+| **`filesChecksum`**            | `string` | yes      | Hash of ( algorithm's encryptedFiles + files section (as string) ) |
+| **`containerSectionChecksum`** | `string` | yes      | Hash of the algorithm container section (as string)                |
 
-To produce filesChecksum:  
+To produce filesChecksum:
 
 ```js
-sha256(algorithm_ddo.service['metadata'].attributes.encryptedFiles + JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.files) )
+sha256(
+  algorithm_ddo.service['metadata'].attributes.encryptedFiles +
+    JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.files)
+)
 ```
 
-To produce containerSectionChecksum: 
+To produce containerSectionChecksum:
 
 ```js
-sha256(JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.algorithm.container))
+sha256(
+  JSON.Stringify(
+    algorithm_ddo.service['metadata'].attributes.main.algorithm.container
+  )
+)
 ```
 
 Example:
@@ -269,18 +268,17 @@ Here's an example object with both `"allow"` and `"deny"` entries.
          }
       ],
       "deny":[
-        {
+         {
          "type":"address",
          "values":[
             "0x2222",
             "0x333"
          ]
-        }
+         }
       ]
   }
 }
 ```
-
 
 For future usage, we can extend that with different credentials types. Example:
 
@@ -291,29 +289,6 @@ For future usage, we can extend that with different credentials types. Example:
 }
 ```
 
-
-
-
-## Status
-
-The `status` object contains the following attributes:
-
-| Attribute                                |   Type   | Required  | Description                                         |
-| ---------------------------------------- | -------- | --------- | --------------------------------------------------- |
-| **`state`**                             | `number` | yes       | State of the asset (see [State](#state) ) |
-| **`isListed`**                           | `boolean` | no       | If this asset should be displayed |
-| **`isOrderDisabled`**                    | `boolean` | no       | If this asset has ordering disabled |
-
-```json
-{
-  {...},
-  "status": {
-    "status": 0,
-    "isListed": true,
-    "isOrderDisabled": false
-  }
-```
-
 ## Files
 
 The `files` section contains a `file` object (that contains a list of `file` objects) and a `encryptedFiles` string which contains the encrypted urls
@@ -322,7 +297,7 @@ Each `file` object has the following attributes, with the details necessary to c
 
 | Attribute            | Required | Description                                                                                                                                                                              |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`contentType`**    |**Yes**   | File format.                                                                                                                                                                             |
+| **`contentType`**    | **Yes**  | File format.                                                                                                                                                                             |
 | **`url`**            | Local    | Content URL. Omitted from the remote metadata. Supports `http(s)://` and `ipfs://` URLs.                                                                                                 |
 | **`name`**           | No       | File name.                                                                                                                                                                               |
 | **`checksum`**       | No       | Checksum of the file using your preferred format (i.e. MD5). Format specified in `checksumType`. If it's not provided can't be validated if the file was not modified after registering. |
@@ -333,9 +308,9 @@ Each `file` object has the following attributes, with the details necessary to c
 | **`encrypted`**      | No       | Boolean. Is the file encrypted? If is not set is assumed the file is not encrypted                                                                                                       |
 | **`encryptionMode`** | No       | Encryption mode used. Just valid if `encrypted=true`                                                                                                                                     |
 | **`resourceId`**     | No       | Remote identifier of the file in the external provider. It is typically the remote id in the cloud provider.                                                                             |
-| **`attributes`**     | No       | Key-Value hash map with additional attributes describing the asset file. It could include details like the Amazon S3 bucket, region, etc.     
+| **`attributes`**     | No       | Key-Value hash map with additional attributes describing the asset file. It could include details like the Amazon S3 bucket, region, etc.                                                |
 
-Exanple:
+Example:
 
 ```json
 {
@@ -352,28 +327,86 @@ Exanple:
 }
 ```
 
-## Event
+## DDO Hash
 
-The `event` section contains informations about the latest transaction that created or update the ddo
-This section is auto-completed by aquarius.
+In order to ensure the integrity, a hash is computed for each DDO:
+
+```js
+const hash = sha256(JSON.stringify(DDO))
+```
+
+The hash is used when publishing/update metadata using setMetaData function in ERC721 contract and it is stored in the event generated by the ERC721 contract:
+
+```solidity
+event MetadataCreated(
+       address indexed createdBy,
+       uint8 state,
+       string decryptorUrl,
+       bytes flags,
+       bytes data,
+       bytes metaDataHash,
+       uint256 timestamp,
+       uint256 blockNumber
+   );
+
+event MetadataUpdated(
+       address indexed updatedBy,
+       uint8 state,
+       string decryptorUrl,
+       bytes flags,
+       bytes data,
+       bytes metaDataHash,
+       uint256 timestamp,
+       uint256 blockNumber
+   );
+```
+
+_Aquarius_ should always check the hash after data is decrypted via a _Provider_ API call, in order to ensure DDO integrity.
+
+## Aquarius Enhanced DDO Response
+
+The following fields are added by Aquarius in its DDO response for convenience reasons. These are never stored on chain, and not taken into consideration when [hashing the DDO](#ddo-hash).
+
+### Status
+
+The `status` object contains the following attributes:
+
+| Attribute             | Type      | Required | Description                                                               |
+| --------------------- | --------- | -------- | ------------------------------------------------------------------------- |
+| **`state`**           | `number`  | yes      | State of the asset reflecting the NFT contract value. See [State](#state) |
+| **`isListed`**        | `boolean` | no       | If this asset should be displayed                                         |
+| **`isOrderDisabled`** | `boolean` | no       | If this asset has ordering disabled                                       |
 
 ```json
 {
   {...},
-  "event": {
+  "status": {
+    "state": 0,
+    "isListed": true,
+    "isOrderDisabled": false
+  }
+```
+
+### Events
+
+The `events` section contains informations about the transactions that created or updated the DDO
+
+```json
+{
+  {...},
+  "events": [{
     "txid": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
     "blockNo": 12831214,
     "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
     "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
     "update": false,
     "chainId": 1,
-  }
+  }]
 ```
 
-## Stats
+### Stats
 
-The `stats` section contains different statics fields
-This section is auto-completed by aquarius.
+The `stats` section contains different statics fields.
 
 ```json
 {
@@ -383,45 +416,7 @@ This section is auto-completed by aquarius.
   }
 ```
 
-
-## DDO Hash
-
-In order to ensure the integrity, a hash is computed for each DDO, following the next steps:
-
- - remove `event` object from root (if exists)
- - remove `stats` object from root (if exists)
- - hash = sha256(JSON.stringify(DDO))
-
- The hash is used when publishing/update metadata using setMetaData function in ERC721 contract and it is stored in the event generated by the ERC721 contract:
-
- ```solidity
- event MetadataCreated(
-        address indexed createdBy,
-        uint8 state,
-        string decryptorUrl,
-        bytes flags,
-        bytes data,
-        bytes metaDataHash,
-        uint256 timestamp,
-        uint256 blockNumber
-    );
-
-event MetadataUpdated(
-        address indexed updatedBy,
-        uint8 state,
-        string decryptorUrl,
-        bytes flags,
-        bytes data,
-        bytes metaDataHash,
-        uint256 timestamp,
-        uint256 blockNumber
-    );
-```
-
-_Aquarius_ should always check the hash after data is decrypted via a _Provider_ API call, in order to ensure DDO integrity.
-
-
-## Full DDO Example:
+## Full Enhanced DDO Example:
 
 ```json
 {
@@ -431,56 +426,64 @@ _Aquarius_ should always check the hash after data is decrypted via a _Provider_
   "updated": "2021-05-17T21:58:02Z",
   "version": "v4.0.0",
   "chainId": 1,
-  "metadata":{
-      "description": "Sample description",
-      "name": "Sample asset",
-      "type": "dataset",
-      "author": "OPF",
-      "license": "https://market.oceanprotocol.com/terms",
-   },
-   files:{
-      "files": [
-            {
-              "contentLength": "3975",
-              "contentType": "text/csv"
-            }
-          ],
-      "encryptedFiles": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
-   },
-   "services":[
+  "metadata": {
+    "description": "Sample description",
+    "name": "Sample asset",
+    "type": "dataset",
+    "author": "OPF",
+    "license": "https://market.oceanprotocol.com/terms"
+  },
+  "files": {
+    "files": [
       {
-         "type":"access",
-         "name":"Download service",
-         "description":"Download service",
-         "datatokenAddress":"0x123",
-         "providerEndpoint":"https://myprovider",
-         "timeout":0
+        "url": "https://demo.com/file.csv"
       }
-   ],
-   "credentials":{
-      "allow":[
-         {
-            "type":"address",
-            "values":[
-               "0x123",
-               "0x456"
-            ]
-         }
-      ],
-      "deny":[
-        {
-         "type":"address",
-         "values":[
-            "0x2222",
-            "0x333"
-         ]
-        }
-      ]
-   },
-   "status": {
-      "status": 0,
-      "isListed": true,
-      "isOrderDisabled": false
-   }
+    ],
+    "encryptedFiles": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735"
+  },
+  "services": [
+    {
+      "type": "access",
+      "name": "Download service",
+      "description": "Download service",
+      "datatokenAddress": "0x123",
+      "providerEndpoint": "https://myprovider",
+      "timeout": 0
+    }
+  ],
+  "credentials": {
+    "allow": [
+      {
+        "type": "address",
+        "values": ["0x123", "0x456"]
+      }
+    ],
+    "deny": [
+      {
+        "type": "address",
+        "values": ["0x2222", "0x333"]
+      }
+    ]
+  },
+
+  // Enhanced Aquarius response begins here
+  "status": {
+    "state": 0,
+    "isListed": true,
+    "isOrderDisabled": false
+  },
+  "events": [
+    {
+      "txid": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+      "blockNo": 12831214,
+      "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
+      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
+      "update": false,
+      "chainId": 1
+    }
+  ],
+  "stats": {
+    "consumes": 4
+  }
 }
 ```
