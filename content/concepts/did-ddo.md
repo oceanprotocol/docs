@@ -25,16 +25,7 @@ An _asset_ in Ocean represents a downloadable file, compute service, or similar.
 
 An _asset_ should have a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). The DDO can only can be modified by _owners_ or _delegated users_.
 
-There _must_ be at least one client library acting as _resolver_, to get a DDO from a DID. A metadata cache like Aquarius can help in reading and searching through DDO data from the chain.
-
-## State
-
-Each asset has a state, which is held by the NFT contract. The possible states are:
-
-- `0` = active
-- `1` = end-of-life
-- `2` = deprecated (by another asset)
-- `3` = revoked by publisher
+A metadata cache like _Aquarius_ can help in reading and searching through encrypted DDO data from the chain.
 
 ## Publishing & Retrieving DDOs
 
@@ -352,6 +343,15 @@ event MetadataUpdated(
 ```
 
 _Aquarius_ should always check the hash after data is decrypted via a _Provider_ API call, in order to ensure DDO integrity.
+
+## State
+
+Each asset has a state, which is held by the NFT contract. The possible states are:
+
+- `0` = active
+- `1` = end-of-life
+- `2` = deprecated (by another asset)
+- `3` = revoked by publisher
 
 ## Aquarius Enhanced DDO Response
 
