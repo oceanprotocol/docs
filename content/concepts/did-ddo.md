@@ -21,7 +21,7 @@ DIDs and DDOs follow the [specification defined by the World Wide Web Consortium
 
 An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
-An _asset_ should have a DID and DDO and the DDO should include metadata about the asset. The DDO can only can be modified by _owners_ or _delegated users_.
+An _asset_ should have a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). The DDO can only can be modified by _owners_ or _delegated users_.
 
 There _must_ be at least one client library acting as _resolver_, to get a DDO from a DID. A metadata cache like Aquarius can help in reading and searching through DDO data from the chain.
 
@@ -80,23 +80,32 @@ It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-gene
 
 A DDO has these required attributes:
 
-- `@context` = array, contexts used for validation
-- `id` = string, computed as sha256(address of ERC721 contract + chainId)
-- `created` = contains the date of publishing, ISO Date Time Format yyyy-MM-dd'T'HH:mm:ss. SSSXXX — for example, "2000-10-31T01:30:00.000-05:00
-- `updated` = contains the date of last update, ISO Date Time Format
+| Attribute            | Type                        | Description                                                                                    |
+| -------------------- | --------------------------- | ---------------------------------------------------------------------------------------------- |
+| **`@context`**       | Array of `string`           | Contexts used for validation.                                                                  |
+| **`id`**             | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                    |
+| **`created`**        | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.           |
+| **`updated`**        | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.      |
+| **`services`**       | [Services](#services)       | Stores an array of services defining access to the asset.                                      |
+| **`files`**          | [Files](#files)             | Stores information about the asset's files.                                                    |
+| **`encryptedFiles`** | [Files](#files)             | Added after publishing.                                                                        |
+| **`credentials`**    | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition. |
 
-In Ocean, the DDO also has:
+In Ocean, the DDO at its root has:
 
-- `version` - string, stores version information (example: `v4.0.0`)
-- `chainId` - integer, stores chainId of the network the DDO was published to
-- `metadata` - stores metadata information [Metadata](#metadata)
-- `services` - stores an array of services [Services](#services)
-- `files` and `encryptedFiles` - stores file(s) informations [Files](#files)
-- `credentials` - optional flag, which describes the credentials needed to access a dataset [Credentials](#credentials)
+| Attribute            | Type                        | Description                                                                                    |
+| -------------------- | --------------------------- | ---------------------------------------------------------------------------------------------- |
+| **`version`**        | `string`                    | Version information referring to this DDO spec version, like `4.0.0`.                          |
+| **`chainId`**        | `number`                    | Stores chainId of the network the DDO was published to.                                        |
+| **`metadata`**       | [Metadata](#metadata)       | Stores metadata information about the asset.                                                   |
+| **`services`**       | [Services](#services)       | Stores an array of services defining access to the asset.                                      |
+| **`files`**          | [Files](#files)             | Stores information about the asset's files.                                                    |
+| **`encryptedFiles`** | [Files](#files)             | Added after publishing.                                                                        |
+| **`credentials`**    | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition. |
 
 ## Metadata
 
-The object has the following attributes.
+This object holds information describing the actual actual asset.
 
 | Attribute                   | Type            | Required | Description                                                                                                                                                                                       |
 | --------------------------- | --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -112,7 +121,7 @@ The object has the following attributes.
 | **`tags`**                  | Array of Text   | No       | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
 | **`additionalInformation`** | Object          | No       | Stores additional information, this is customizable by publisher                                                                                                                                  |
 
-### Algorithm attributes
+### Metadata: Algorithm
 
 An asset of type `algorithm` has the following additional attributes under `algorithm` in metadata object:
 
@@ -133,6 +142,8 @@ The `container` object has the following attributes:
 
 ## Services
 
+Services define the access to the asset.
+
 | Attribute              | Type                  | Required                   | Description                                                                                                                               |
 | ---------------------- | --------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **`type`**             | Text                  | **Yes**                    | Type of service (access, compute, wss, etc                                                                                                |
@@ -142,11 +153,11 @@ The `container` object has the following attributes:
 | **`providerEndpoint`** | Text                  | **Yes**                    | Provider URI                                                                                                                              |
 | **`timeout`**          | Number                | **Yes**                    | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
 | **`files`**            | Array of files object | **Yes**                    | Array of `File` objects for publishing. These will be transformed to `encryptedFiles` during publish process. See [Files](#files)         |
-| **`privacy`**          | Object                | **Yes for compute assets** | If asset is of compute `type`, holds information about the compute-ralyted privacy settings.                                              |
+| **`privacy`**          | Object                | **Yes for compute assets** | If asset is of compute `type`, holds information about the compute-related privacy settings.                                              |
 
-### Compute Privacy Attributes
+### Compute Privacy
 
-An asset with a service of `type` `compute` has the following additional attributes under the `privacy` object. This object is required if the asset is of `type` `compute`.
+An asset with a service of `type` `compute` has the following additional attributes under the `privacy` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
 | Attribute                                  | Type                                  | Required | Description                                                                                                        |
 | ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -309,7 +320,7 @@ In order to ensure the integrity of the DDO, a hash is computed for each DDO:
 const hash = sha256(JSON.stringify(DDO))
 ```
 
-The hash is used when publishing/update metadata using setMetaData function in ERC721 contract and it is stored in the event generated by the ERC721 contract:
+The hash is used when publishing/update metadata using `setMetaData` function in the ERC721 contract, and is stored in the event generated by the ERC721 contract:
 
 ```solidity
 event MetadataCreated(
@@ -339,11 +350,11 @@ _Aquarius_ should always check the hash after data is decrypted via a _Provider_
 
 ## Aquarius Enhanced DDO Response
 
-The following fields are added by Aquarius in its DDO response for convenience reasons. These are never stored on chain, and are not taken into consideration when [hashing the DDO](#ddo-hash).
+The following fields are added by _Aquarius_ in its DDO response for convenience reasons. These are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-hash).
 
 ### NFT
 
-The `nft` object contains information on the NFT contract.
+The `nft` object contains information about the NFT contract which represents the intellectual property of the publisher.
 
 | Attribute     | Type     | Description                                   |
 | ------------- | -------- | --------------------------------------------- |
@@ -412,6 +423,10 @@ Example:
 
 The `stats` section contains different statistics fields.
 
+| Attribute      | Type     | Description                                                                                                   |
+| -------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| **`consumes`** | `number` | How often an asset was consumed, meaning how often it was either downloaded or used as part of a compute job. |
+
 Example:
 
 ```json
@@ -430,7 +445,7 @@ Example:
   "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
   "created": "2020-11-15T12:27:48Z",
   "updated": "2021-05-17T21:58:02Z",
-  "version": "v4.0.0",
+  "version": "4.0.0",
   "chainId": 1,
   "metadata": {
     "description": "Sample description",
