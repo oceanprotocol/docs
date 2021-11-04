@@ -31,7 +31,7 @@ The DDO is stored on-chain as part of the NFT contract and it is stored encrypte
 
 Here is the complete flow:
 
-![DDO_flow](images/DDO_flow.png)
+![DDO_flow](images/ddo-flow.png)
 
 ```text
 title DDO flow
@@ -118,15 +118,15 @@ Example:
 
 #### Algorithm Metadata
 
-An asset of type `algorithm` has the following additional attributes under `algorithm` within the `metadata` object:
+An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute       | Type        | Required | Description                                             |
-| --------------- | ----------- | -------- | ------------------------------------------------------- |
-| **`language`**  | `string`    |          | Language used to implement the software.                |
-| **`version`**   | `string`    |          | Version of the software.                                |
-| **`container`** | `container` | **✓**    | Object describing the Docker container image. See below |
+| Attribute       | Type        | Required | Description                                                                                |
+| --------------- | ----------- | -------- | ------------------------------------------------------------------------------------------ |
+| **`language`**  | `string`    |          | Language used to implement the software.                                                   |
+| **`version`**   | `string`    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`container`** | `container` | **✓**    | Object describing the Docker container image. See below                                    |
 
-The `container` object has the following attributes defining the Docker image the algorithm needs to run:
+The `container` object has the following attributes defining the Docker image for running the algorithm:
 
 | Attribute        | Type     | Required | Description                                                       |
 | ---------------- | -------- | -------- | ----------------------------------------------------------------- |
@@ -145,7 +145,7 @@ The `container` object has the following attributes defining the Docker image th
     "license": "https://market.oceanprotocol.com/terms",
     "algorithm": {
       "language": "Node.js",
-      "version": "v1",
+      "version": "1.0.0",
       "container": {
         "entrypoint": "node $ALGO",
         "image": "ubuntu",
@@ -171,7 +171,7 @@ Example:
 
 ### Services
 
-Services define the access to the asset, and each service is represented by its respective datatoken.
+Services define the access for an asset, and each service is represented by its respective datatoken.
 
 An asset should have at least one service to be actually accessible, but can have as many services which make sense for a specific use case.
 
@@ -359,14 +359,14 @@ These additional fields are never stored on-chain, and are never taken into cons
 
 ### NFT
 
-The `nft` object contains information about the NFT contract which represents the intellectual property of the publisher.
+The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
-| Attribute     | Type     | Description                                    |
-| ------------- | -------- | ---------------------------------------------- |
-| **`address`** | `string` | Contract address of the deployed NFT contract. |
-| **`name`**    | `string` | Name of NFT set in contract.                   |
-| **`symbol`**  | `string` | Symbol of NFT set in contract.                 |
-| **`owner`**   | `string` | ETH account address of the NFT owner.          |
+| Attribute     | Type     | Description                                           |
+| ------------- | -------- | ----------------------------------------------------- |
+| **`address`** | `string` | Contract address of the deployed ERC721 NFT contract. |
+| **`name`**    | `string` | Name of NFT set in contract.                          |
+| **`symbol`**  | `string` | Symbol of NFT set in contract.                        |
+| **`owner`**   | `string` | ETH account address of the NFT owner.                 |
 
 Example:
 
