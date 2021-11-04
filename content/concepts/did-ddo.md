@@ -73,7 +73,7 @@ did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 where
 
 ```text
-0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea` = sha256(ERC721 contract address + chainId)
+0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea = sha256(ERC721 contract address + chainId)
 ```
 
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
@@ -99,19 +99,19 @@ A DDO in Ocean has these required attributes:
 
 This object holds information describing the actual actual asset.
 
-| Attribute                   | Type            | Required | Description                                                                                                                                                                                       |
-| --------------------------- | --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`description`**           | Text            | **Yes**  | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
-| **`copyrightHolder`**       | Text            | No       | The party holding the legal copyright. Empty by default.                                                                                                                                          |
-| **`name`**                  | Text            | **Yes**  | Descriptive name or title of the asset.                                                                                                                                                           |
-| **`type`**                  | Text            | **Yes**  | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
-| **`author`**                | Text            | **Yes**  | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
-| **`license`**               | Text            | **Yes**  | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
-| **`links`**                 | Array of string | No       | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
-| **`contentLanguage`**       | Text            | No       | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                              |
-| **`categories`**            | Array of Text   | No       | Optional array of categories associated to the asset. Note: recommended to use `"tags"` instead of this.                                                                                          |
-| **`tags`**                  | Array of Text   | No       | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
-| **`additionalInformation`** | Object          | No       | Stores additional information, this is customizable by publisher                                                                                                                                  |
+| Attribute                   | Type              | Required | Description                                                                                                                                                                                       |
+| --------------------------- | ----------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`description`**           | `string`          | **✓**    | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
+| **`copyrightHolder`**       | `string`          |          | The party holding the legal copyright. Empty by default.                                                                                                                                          |
+| **`name`**                  | `string`          | **✓**    | Descriptive name or title of the asset.                                                                                                                                                           |
+| **`type`**                  | `string`          | **✓**    | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
+| **`author`**                | `string`          | **✓**    | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
+| **`license`**               | `string`          | **✓**    | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
+| **`links`**                 | Array of `string` |          | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
+| **`contentLanguage`**       | `string`          |          | The language of the content. Please use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                              |
+| **`categories`**            | Array of `string` |          | Optional array of categories associated to the asset. Note: recommended to use `"tags"` instead of this.                                                                                          |
+| **`tags`**                  | Array of `string` |          | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
+| **`additionalInformation`** | Object            |          | Stores additional information, this is customizable by publisher                                                                                                                                  |
 
 Example:
 
@@ -133,33 +133,33 @@ An asset of type `algorithm` has the following additional attributes under `algo
 
 | Attribute       | Type        | Required | Description                                             |
 | --------------- | ----------- | -------- | ------------------------------------------------------- |
-| **`language`**  | `string`    | no       | Language used to implement the software                 |
-| **`version`**   | `string`    | no       | Version of the software.                                |
-| **`container`** | `container` | yes      | Object describing the Docker container image. See below |
+| **`language`**  | `string`    |          | Language used to implement the software                 |
+| **`version`**   | `string`    |          | Version of the software.                                |
+| **`container`** | `container` | **✓**    | Object describing the Docker container image. See below |
 
 The `container` object has the following attributes defining the Docker image the algorithm needs to run:
 
 | Attribute        | Type     | Required | Description                                                       |
 | ---------------- | -------- | -------- | ----------------------------------------------------------------- |
-| **`entrypoint`** | `string` | yes      | The command to execute, or script to run inside the Docker image. |
-| **`image`**      | `string` | yes      | Name of the Docker image.                                         |
-| **`tag`**        | `string` | yes      | Tag of the Docker image.                                          |
-| **`checksum`**   | `string` | yes      | Checksum of the Docker image.                                     |
+| **`entrypoint`** | `string` | **✓**    | The command to execute, or script to run inside the Docker image. |
+| **`image`**      | `string` | **✓**    | Name of the Docker image.                                         |
+| **`tag`**        | `string` | **✓**    | Tag of the Docker image.                                          |
+| **`checksum`**   | `string` | **✓**    | Checksum of the Docker image.                                     |
 
 ## Services
 
 Services define the access to the asset.
 
-| Attribute              | Type                  | Required                   | Description                                                                                                                                |
-| ---------------------- | --------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`type`**             | Text                  | **Yes**                    | Type of service (access, compute, wss, etc                                                                                                 |
-| **`name`**             | Text                  | No                         | Service friendly name                                                                                                                      |
-| **`description`**      | Text                  | No                         | Service description                                                                                                                        |
-| **`datatokenAddress`** | Text                  | Yes                        | Datatoken address                                                                                                                          |
-| **`providerEndpoint`** | Text                  | **Yes**                    | Provider URI                                                                                                                               |
-| **`timeout`**          | Number                | **Yes**                    | describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
-| **`files`**            | Array of files object | **Yes**                    | Array of `File` objects for publishing. These will be transformed to `encryptedFiles` during publish process. See [Files](#files)          |
-| **`privacy`**          | Object                | **Yes for compute assets** | If asset is of compute `type`, holds information about the compute-related privacy settings.                                               |
+| Attribute              | Type                  | Required                        | Description                                                                                                                                |
+| ---------------------- | --------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`type`**             | Text                  | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                          |
+| **`name`**             | Text                  |                                 | Service friendly name                                                                                                                      |
+| **`description`**      | Text                  |                                 | Service description                                                                                                                        |
+| **`datatokenAddress`** | Text                  | **✓**                           | Datatoken address                                                                                                                          |
+| **`providerEndpoint`** | Text                  | **✓**                           | Provider URI                                                                                                                               |
+| **`timeout`**          | Number                | **✓**                           | describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
+| **`files`**            | Array of files object | **✓**                           | Array of `File` objects for publishing. These will be transformed to `encryptedFiles` during publish process. See [Files](#files)          |
+| **`privacy`**          | Object                | **✓** (for compute assets only) | If asset is of compute `type`, holds information about the compute-related privacy settings.                                               |
 
 ### Compute Privacy
 
@@ -167,18 +167,18 @@ An asset with a service of `type` `compute` has the following additional attribu
 
 | Attribute                                  | Type                                  | Required | Description                                                                                                        |
 | ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
-| **`allowRawAlgorithm`**                    | `boolean`                             | yes      | If `true`, a drag & drop algorithm can be run                                                                      |
-| **`allowNetworkAccess`**                   | `boolean`                             | yes      | If `true`, the algorithm job will have network access (still WIP)                                                  |
-| **`publisherTrustedAlgorithmPublishers `** | Array of `String`                     | yes      | If Empty , then any published algo is allowed. Otherwise, only published algorithms by some publishers are allowed |
-| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | yes      | If Empty , then any published algo is allowed. (see below)                                                         |
+| **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, a drag & drop algorithm can be run                                                                      |
+| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access (still WIP)                                                  |
+| **`publisherTrustedAlgorithmPublishers `** | Array of `String`                     | **✓**    | If Empty , then any published algo is allowed. Otherwise, only published algorithms by some publishers are allowed |
+| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If Empty , then any published algo is allowed. (see below)                                                         |
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
-| Attribute                      | Type     | Required | Description                                                    |
-| ------------------------------ | -------- | -------- | -------------------------------------------------------------- |
-| **`did`**                      | `string` | yes      | The DID of the algorithm which is trusted by the publisher.    |
-| **`filesChecksum`**            | `string` | yes      | Hash of algorithm's encryptedFiles + files section (as string) |
-| **`containerSectionChecksum`** | `string` | yes      | Hash of the algorithm container section (as string)            |
+| Attribute                      | Type     | Required | Description                                                        |
+| ------------------------------ | -------- | -------- | ------------------------------------------------------------------ |
+| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.        |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `encryptedFiles` + `files` section (as string) |
+| **`containerSectionChecksum`** | `string` | **✓**    | Hash of the algorithm `container` section (as string)              |
 
 To produce `filesChecksum`:
 
@@ -245,18 +245,18 @@ Each `file` object has the following attributes, with the details necessary to c
 
 | Attribute            | Required | Description                                                                                                                                                                              |
 | -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`contentType`**    | **Yes**  | File format.                                                                                                                                                                             |
+| **`contentType`**    | **✓**    | File format.                                                                                                                                                                             |
 | **`url`**            | Local    | Content URL. Omitted from the remote metadata. Supports `http(s)://` and `ipfs://` URLs.                                                                                                 |
-| **`name`**           | No       | File name.                                                                                                                                                                               |
-| **`checksum`**       | No       | Checksum of the file using your preferred format (i.e. MD5). Format specified in `checksumType`. If it's not provided can't be validated if the file was not modified after registering. |
-| **`checksumType`**   | No       | Format of the provided checksum. Can vary according to server (i.e Amazon vs. Azure)                                                                                                     |
-| **`contentLength`**  | No       | Size of the file in bytes.                                                                                                                                                               |
-| **`encoding`**       | No       | File encoding (e.g. UTF-8).                                                                                                                                                              |
-| **`compression`**    | No       | File compression (e.g. no, gzip, bzip2, etc).                                                                                                                                            |
-| **`encrypted`**      | No       | Boolean. Is the file encrypted? If is not set is assumed the file is not encrypted                                                                                                       |
-| **`encryptionMode`** | No       | Encryption mode used. Just valid if `encrypted=true`                                                                                                                                     |
-| **`resourceId`**     | No       | Remote identifier of the file in the external provider. It is typically the remote id in the cloud provider.                                                                             |
-| **`attributes`**     | No       | Key-Value hash map with additional attributes describing the asset file. It could include details like the Amazon S3 bucket, region, etc.                                                |
+| **`name`**           |          | File name.                                                                                                                                                                               |
+| **`checksum`**       |          | Checksum of the file using your preferred format (i.e. MD5). Format specified in `checksumType`. If it's not provided can't be validated if the file was not modified after registering. |
+| **`checksumType`**   |          | Format of the provided checksum. Can vary according to server (i.e Amazon vs. Azure)                                                                                                     |
+| **`contentLength`**  |          | Size of the file in bytes.                                                                                                                                                               |
+| **`encoding`**       |          | File encoding (e.g. UTF-8).                                                                                                                                                              |
+| **`compression`**    |          | File compression (e.g. no, gzip, bzip2, etc).                                                                                                                                            |
+| **`encrypted`**      |          | Boolean. Is the file encrypted? If is not set is assumed the file is not encrypted                                                                                                       |
+| **`encryptionMode`** |          | Encryption mode used. Just valid if `encrypted=true`                                                                                                                                     |
+| **`resourceId`**     |          | Remote identifier of the file in the external provider. It is typically the remote id in the cloud provider.                                                                             |
+| **`attributes`**     |          | Key-Value hash map with additional attributes describing the asset file. It could include details like the Amazon S3 bucket, region, etc.                                                |
 
 Example:
 
