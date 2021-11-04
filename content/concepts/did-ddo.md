@@ -71,22 +71,21 @@ It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-gene
 
 A DDO in Ocean has these required attributes:
 
-| Attribute            | Type                        | Description                                                                                    |
-| -------------------- | --------------------------- | ---------------------------------------------------------------------------------------------- |
-| **`@context`**       | Array of `string`           | Contexts used for validation.                                                                  |
-| **`id`**             | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                    |
-| **`version`**        | `string`                    | Version information referring to this DDO spec version, like `4.0.0`.                          |
-| **`chainId`**        | `number`                    | Stores chainId of the network the DDO was published to.                                        |
-| **`created`**        | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.           |
-| **`updated`**        | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.      |
-| **`services`**       | [Services](#services)       | Stores an array of services defining access to the asset.                                      |
-| **`files`**          | [Files](#files)             | Stores information about the asset's files.                                                    |
-| **`encryptedFiles`** | [Files](#files)             | Added after publishing.                                                                        |
-| **`credentials`**    | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition. |
+| Attribute         | Type                        | Description                                                                                    |
+| ----------------- | --------------------------- | ---------------------------------------------------------------------------------------------- |
+| **`@context`**    | Array of `string`           | Contexts used for validation.                                                                  |
+| **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                    |
+| **`version`**     | `string`                    | Version information referring to this DDO spec version, like `4.0.0`.                          |
+| **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                        |
+| **`created`**     | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.           |
+| **`updated`**     | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.      |
+| **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                      |
+| **`files`**       | [Files](#files)             | Encrypted file URLs                                                                            |
+| **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition. |
 
 ### Metadata
 
-This object holds information describing the actual actual asset.
+This object holds information describing the actual asset.
 
 | Attribute                   | Type                                      | Required                          | Description                                                                                                                                                                                       |
 | --------------------------- | ----------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -123,7 +122,7 @@ An asset of type `algorithm` has the following additional attributes under `algo
 
 | Attribute       | Type        | Required | Description                                             |
 | --------------- | ----------- | -------- | ------------------------------------------------------- |
-| **`language`**  | `string`    |          | Language used to implement the software                 |
+| **`language`**  | `string`    |          | Language used to implement the software.                |
 | **`version`**   | `string`    |          | Version of the software.                                |
 | **`container`** | `container` | **✓**    | Object describing the Docker container image. See below |
 
@@ -145,13 +144,13 @@ The `container` object has the following attributes defining the Docker image th
     "author": "OPF",
     "license": "https://market.oceanprotocol.com/terms",
     "algorithm": {
-      "language": "",
-      "version": "",
+      "language": "Node.js",
+      "version": "v1",
       "container": {
-        "entrypoint": "",
-        "image": "",
-        "tag": "",
-        "checksum": ""
+        "entrypoint": "node $ALGO",
+        "image": "ubuntu",
+        "tag": "latest",
+        "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
       }
     }
   }
@@ -172,7 +171,9 @@ Example:
 
 ### Services
 
-Services define the access to the asset.
+Services define the access to the asset, and each service is represented by its respective datatoken.
+
+An asset should have at least one service to be actually accessible, but can have as many services which make sense for a specific use case.
 
 | Attribute              | Type                          | Required                        | Description                                                                                                                                |
 | ---------------------- | ----------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -181,20 +182,20 @@ Services define the access to the asset.
 | **`description`**      | `string`                      |                                 | Service description                                                                                                                        |
 | **`datatokenAddress`** | `string`                      | **✓**                           | Datatoken address                                                                                                                          |
 | **`providerEndpoint`** | `string`                      | **✓**                           | Provider endpoint URI (URI + path)                                                                                                         |
-| **`timeout`**          | `number`                      | **✓**                           | describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
-| **`files`**            | `string`, see [Files](#files) | **✓**                           | Encrypted file URLs                                                                                                                        |
-| **`privacy`**          | [Privacy](#compute-privacy)   | **✓** (for compute assets only) | If asset service is of `type` `compute`, holds information about the compute-related privacy settings.                                     |
+| **`timeout`**          | `number`                      | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
+| **`files`**            | `string`, see [Files](#files) | **✓**                           | Encrypted file URLs.                                                                                                                       |
+| **`privacy`**          | [Privacy](#compute-privacy)   | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                           |
 
 #### Compute Privacy
 
 An asset with a service of `type` `compute` has the following additional attributes under the `privacy` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-| Attribute                                  | Type                                  | Required | Description                                                                                                            |
-| ------------------------------------------ | ------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, a drag & drop algorithm can be run                                                                          |
-| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access (still WIP)                                                      |
-| **`publisherTrustedAlgorithmPublishers `** | Array of `String`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed |
-| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If empty, then any published algorithm is allowed. (see below)                                                         |
+| Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                               |
+| ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access (still WIP)                                                                                                                                                         |
+| **`publisherTrustedAlgorithmPublishers `** | Array of `string`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed                                                                                                    |
+| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If empty, then any published algorithm is allowed. (see below)                                                                                                                                                            |
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
@@ -457,16 +458,7 @@ Example:
     "author": "OPF",
     "license": "https://market.oceanprotocol.com/terms"
   },
-
-  // Never in response, only for publishing
-  "files": [
-    {
-      "url": "https://demo.com/file.csv"
-    }
-  ],
-
-  // Created automatically after publishing, and `files` gets removed.
-  "encryptedFiles": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
+  "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
   "services": [
     {
       "type": "access",
