@@ -5,6 +5,8 @@ slug: /concepts/did-ddo/
 section: concepts
 ---
 
+**v4.0.0**
+
 ## Overview
 
 This document describes how Ocean assets follow the DID/DDO spec, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability.
@@ -40,6 +42,8 @@ The DDO is stored on-chain as part of the NFT contract and it is stored encrypte
 
 Here is the complete flow:
 
+![DDO_flow](images/DDO_flow.png)
+
 ```text
 title DDO flow
 
@@ -57,8 +61,6 @@ Aquarius -> Aquarius : validate DDO
 Aquarius -> Aquarius : cache DDO
 Aquarius -> Aquarius : enhance cached DDO in response with additional infos like `events` & `stats`
 ```
-
-![DDO_flow](images/DDO_flow.png)
 
 ## DID Structure
 
@@ -78,26 +80,16 @@ It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-gene
 
 ## DDO Attributes
 
-A DDO has these required attributes:
+A DDO in Ocean has these required attributes:
 
 | Attribute            | Type                        | Description                                                                                    |
 | -------------------- | --------------------------- | ---------------------------------------------------------------------------------------------- |
 | **`@context`**       | Array of `string`           | Contexts used for validation.                                                                  |
 | **`id`**             | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                    |
-| **`created`**        | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.           |
-| **`updated`**        | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.      |
-| **`services`**       | [Services](#services)       | Stores an array of services defining access to the asset.                                      |
-| **`files`**          | [Files](#files)             | Stores information about the asset's files.                                                    |
-| **`encryptedFiles`** | [Files](#files)             | Added after publishing.                                                                        |
-| **`credentials`**    | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition. |
-
-In Ocean, the DDO at its root has:
-
-| Attribute            | Type                        | Description                                                                                    |
-| -------------------- | --------------------------- | ---------------------------------------------------------------------------------------------- |
 | **`version`**        | `string`                    | Version information referring to this DDO spec version, like `4.0.0`.                          |
 | **`chainId`**        | `number`                    | Stores chainId of the network the DDO was published to.                                        |
-| **`metadata`**       | [Metadata](#metadata)       | Stores metadata information about the asset.                                                   |
+| **`created`**        | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.           |
+| **`updated`**        | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.      |
 | **`services`**       | [Services](#services)       | Stores an array of services defining access to the asset.                                      |
 | **`files`**          | [Files](#files)             | Stores information about the asset's files.                                                    |
 | **`encryptedFiles`** | [Files](#files)             | Added after publishing.                                                                        |
@@ -121,17 +113,31 @@ This object holds information describing the actual actual asset.
 | **`tags`**                  | Array of Text   | No       | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
 | **`additionalInformation`** | Object          | No       | Stores additional information, this is customizable by publisher                                                                                                                                  |
 
-### Metadata: Algorithm
+Example:
 
-An asset of type `algorithm` has the following additional attributes under `algorithm` in metadata object:
+```json
+{
+  "metadata": {
+    "description": "Sample description",
+    "name": "Sample asset",
+    "type": "dataset",
+    "author": "OPF",
+    "license": "https://market.oceanprotocol.com/terms"
+  }
+}
+```
 
-| Attribute       | Type               | Required | Description                                             |
-| --------------- | ------------------ | -------- | ------------------------------------------------------- |
-| **`language`**  | `string`           | no       | Language used to implement the software                 |
-| **`version`**   | `string`           | no       | Version of the software.                                |
-| **`container`** | `Container Object` | yes      | Object describing the Docker container image. See below |
+### Algorithm Metadata
 
-The `container` object has the following attributes:
+An asset of type `algorithm` has the following additional attributes under `algorithm` within the `metadata` object:
+
+| Attribute       | Type        | Required | Description                                             |
+| --------------- | ----------- | -------- | ------------------------------------------------------- |
+| **`language`**  | `string`    | no       | Language used to implement the software                 |
+| **`version`**   | `string`    | no       | Version of the software.                                |
+| **`container`** | `container` | yes      | Object describing the Docker container image. See below |
+
+The `container` object has the following attributes defining the Docker image the algorithm needs to run:
 
 | Attribute        | Type     | Required | Description                                                       |
 | ---------------- | -------- | -------- | ----------------------------------------------------------------- |
@@ -144,16 +150,16 @@ The `container` object has the following attributes:
 
 Services define the access to the asset.
 
-| Attribute              | Type                  | Required                   | Description                                                                                                                               |
-| ---------------------- | --------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **`type`**             | Text                  | **Yes**                    | Type of service (access, compute, wss, etc                                                                                                |
-| **`name`**             | Text                  | No                         | Service friendly name                                                                                                                     |
-| **`description`**      | Text                  | No                         | Service description                                                                                                                       |
-| **`datatokenAddress`** | Text                  | Yes                        | Datatoken address                                                                                                                         |
-| **`providerEndpoint`** | Text                  | **Yes**                    | Provider URI                                                                                                                              |
-| **`timeout`**          | Number                | **Yes**                    | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
-| **`files`**            | Array of files object | **Yes**                    | Array of `File` objects for publishing. These will be transformed to `encryptedFiles` during publish process. See [Files](#files)         |
-| **`privacy`**          | Object                | **Yes for compute assets** | If asset is of compute `type`, holds information about the compute-related privacy settings.                                              |
+| Attribute              | Type                  | Required                   | Description                                                                                                                                |
+| ---------------------- | --------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`type`**             | Text                  | **Yes**                    | Type of service (access, compute, wss, etc                                                                                                 |
+| **`name`**             | Text                  | No                         | Service friendly name                                                                                                                      |
+| **`description`**      | Text                  | No                         | Service description                                                                                                                        |
+| **`datatokenAddress`** | Text                  | Yes                        | Datatoken address                                                                                                                          |
+| **`providerEndpoint`** | Text                  | **Yes**                    | Provider URI                                                                                                                               |
+| **`timeout`**          | Number                | **Yes**                    | describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
+| **`files`**            | Array of files object | **Yes**                    | Array of `File` objects for publishing. These will be transformed to `encryptedFiles` during publish process. See [Files](#files)          |
+| **`privacy`**          | Object                | **Yes for compute assets** | If asset is of compute `type`, holds information about the compute-related privacy settings.                                               |
 
 ### Compute Privacy
 
@@ -259,8 +265,7 @@ Example:
   "files": {
     "files": [
       {
-        "contentLength": "3975",
-        "contentType": "text/csv"
+        "url": "https://demo.com/file.csv"
       }
     ],
     "encryptedFiles": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735"
