@@ -167,19 +167,15 @@ To produce `filesChecksum`:
 
 ```js
 sha256(
-  algorithm_ddo.service['metadata'].attributes.encryptedFiles +
-    JSON.Stringify(algorithm_ddo.service['metadata'].attributes.main.files)
+  algorithm_ddo.metadata.encryptedFiles +
+    JSON.Stringify(algorithm_ddo.metadata.files)
 )
 ```
 
 To produce `containerSectionChecksum`:
 
 ```js
-sha256(
-  JSON.Stringify(
-    algorithm_ddo.service['metadata'].attributes.main.algorithm.container
-  )
-)
+sha256(JSON.Stringify(algorithm_ddo.metadata.algorithm.container))
 ```
 
 Example:
@@ -224,50 +220,6 @@ Example:
 }
 ```
 
-## Credentials
-
-By default, a consumer can access a resource if they have 1.0 datatokens. _Credentials_ allow the publisher to optionally specify finer-grained permissions.
-
-Consider a medical data use case, where only a credentialed EU researcher can legally access a given dataset. Ocean supports this as follows: a consumer can only access the resource if they have 1.0 datatokens _and_ one of the specified `"allow"` credentials.
-
-This is like going to an R-rated movie, where you can only get in if you show both your movie ticket (datatoken) _and_ some some id showing you're old enough (credential).
-
-Only credentials that can be proven are supported. This includes Ethereum public addresses, and (in the future) [W3C Verifiable Credentials]() and more.
-
-Ocean also supports `"deny"` credentials: if a consumer has any of these credentials, they cannot access the resource.
-
-Here's an example object with both `"allow"` and `"deny"` entries:
-
-```json
-{
-  "credentials": {
-    "allow": [
-      {
-        "type": "address",
-        "values": ["0x123", "0x456"]
-      }
-    ],
-    "deny": [
-      {
-        "type": "address",
-        "values": ["0x2222", "0x333"]
-      }
-    ]
-  }
-}
-```
-
-For future usage, we can extend that with different credentials types.
-
-Example:
-
-```json
-{
-  "type": "credential3Box",
-  "values": ["profile1", "profile2"]
-}
-```
-
 ## Files
 
 The `files` section contains a `file` object (that contains a list of `file` objects) and a `encryptedFiles` string which contains the encrypted urls
@@ -305,9 +257,53 @@ Example:
 }
 ```
 
+## Credentials
+
+By default, a consumer can access a resource if they have 1.0 datatokens. _Credentials_ allow the publisher to optionally specify finer-grained permissions.
+
+Consider a medical data use case, where only a credentialed EU researcher can legally access a given dataset. Ocean supports this as follows: a consumer can only access the resource if they have 1.0 datatokens _and_ one of the specified `"allow"` credentials.
+
+This is like going to an R-rated movie, where you can only get in if you show both your movie ticket (datatoken) _and_ some some id showing you're old enough (credential).
+
+Only credentials that can be proven are supported. This includes Ethereum public addresses, and (in the future) [W3C Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) and more.
+
+Ocean also supports `"deny"` credentials: if a consumer has any of these credentials, they can not access the resource.
+
+Here's an example object with both `"allow"` and `"deny"` entries:
+
+```json
+{
+  "credentials": {
+    "allow": [
+      {
+        "type": "address",
+        "values": ["0x123", "0x456"]
+      }
+    ],
+    "deny": [
+      {
+        "type": "address",
+        "values": ["0x2222", "0x333"]
+      }
+    ]
+  }
+}
+```
+
+For future usage, we can extend that with different credentials types.
+
+Example:
+
+```json
+{
+  "type": "credential3Box",
+  "values": ["profile1", "profile2"]
+}
+```
+
 ## DDO Hash
 
-In order to ensure the integrity, a hash is computed for each DDO:
+In order to ensure the integrity of the DDO, a hash is computed for each DDO:
 
 ```js
 const hash = sha256(JSON.stringify(DDO))
@@ -343,7 +339,7 @@ _Aquarius_ should always check the hash after data is decrypted via a _Provider_
 
 ## Aquarius Enhanced DDO Response
 
-The following fields are added by Aquarius in its DDO response for convenience reasons. These are never stored on chain, and not taken into consideration when [hashing the DDO](#ddo-hash).
+The following fields are added by Aquarius in its DDO response for convenience reasons. These are never stored on chain, and are not taken into consideration when [hashing the DDO](#ddo-hash).
 
 ### NFT
 
