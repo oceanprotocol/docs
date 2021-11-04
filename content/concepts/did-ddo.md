@@ -1,5 +1,5 @@
 ---
-title: DIDs & DDOs - Asset Identifiers & Objects
+title: DIDs & DDOs
 description: Specification of Ocean asset identifiers and objects using DIDs & DDOs
 slug: /concepts/did-ddo/
 section: concepts
@@ -13,8 +13,7 @@ Decentralized identifiers (DIDs) are a type of identifier that enables verifiabl
 
 A DID Document (DDO) is JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
-If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points.
-The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
+If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points. The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
 
 DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
@@ -113,17 +112,15 @@ The object has the following attributes.
 | **`tags`**                  | Array of Text   | No       | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
 | **`additionalInformation`** | Object          | No       | Stores additional information, this is customizable by publisher                                                                                                                                  |
 
-Depending on the asset type (dataset, algorithm), there are different metadata attributes supported:
-
 ### Algorithm attributes
 
 An asset of type `algorithm` has the following additional attributes under `algorithm` in metadata object:
 
-| Attribute       | Type               | Required | Description                                              |
-| --------------- | ------------------ | -------- | -------------------------------------------------------- |
-| **`language`**  | `string`           | no       | Language used to implement the software                  |
-| **`version`**   | `string`           | no       | Version of the software.                                 |
-| **`container`** | `Container Object` | yes      | Object describing the Docker container image.(see below) |
+| Attribute       | Type               | Required | Description                                             |
+| --------------- | ------------------ | -------- | ------------------------------------------------------- |
+| **`language`**  | `string`           | no       | Language used to implement the software                 |
+| **`version`**   | `string`           | no       | Version of the software.                                |
+| **`container`** | `Container Object` | yes      | Object describing the Docker container image. See below |
 
 The `container` object has the following attributes:
 
@@ -136,38 +133,37 @@ The `container` object has the following attributes:
 
 ## Services
 
-| Attribute              | Type                  | Required | Description                                                                                                                               |
-| ---------------------- | --------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **`type`**             | Text                  | **Yes**  | Type of service (access, compute, wss, etc                                                                                                |
-| **`name`**             | Text                  | No       | Service friendly name                                                                                                                     |
-| **`description`**      | Text                  | No       | Service description                                                                                                                       |
-| **`datatokenAddress`** | Text                  | Yes      | Datatoken address                                                                                                                         |
-| **`providerEndpoint`** | Text                  | **Yes**  | Provider URI                                                                                                                              |
-| **`timeout`**          | Number                | **Yes**  | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
-| **`files`**            | Array of files object | **No **  | Array of `File` objects including the encrypted file urls that overwrites the root files object for this service [Files](#files)          |
+| Attribute              | Type                  | Required                   | Description                                                                                                                               |
+| ---------------------- | --------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **`type`**             | Text                  | **Yes**                    | Type of service (access, compute, wss, etc                                                                                                |
+| **`name`**             | Text                  | No                         | Service friendly name                                                                                                                     |
+| **`description`**      | Text                  | No                         | Service description                                                                                                                       |
+| **`datatokenAddress`** | Text                  | Yes                        | Datatoken address                                                                                                                         |
+| **`providerEndpoint`** | Text                  | **Yes**                    | Provider URI                                                                                                                              |
+| **`timeout`**          | Number                | **Yes**                    | describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
+| **`files`**            | Array of files object | **Yes**                    | Array of `File` objects for publishing. These will be transformed to `encryptedFiles` during publish process. See [Files](#files)         |
+| **`privacy`**          | Object                | **Yes for compute assets** | If asset is of compute `type`, holds information about the compute-ralyted privacy settings.                                              |
 
-Depending on the service type, the following attributes are applied:
+### Compute Privacy Attributes
 
-### Compute datasets attributes
-
-An asset with a service of type `compute` has the following additional attributes under `privacy` object :
+An asset with a service of `type` `compute` has the following additional attributes under the `privacy` object. This object is required if the asset is of `type` `compute`.
 
 | Attribute                                  | Type                                  | Required | Description                                                                                                        |
 | ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
-| **`allowRawAlgorithm`**                    | `boolean`                             | yes      | If True, a drag & drop algo can be runned                                                                          |
-| **`allowNetworkAccess`**                   | `boolean`                             | yes      | If True, the algo job will have network access (stil WIP)                                                          |
+| **`allowRawAlgorithm`**                    | `boolean`                             | yes      | If `true`, a drag & drop algorithm can be run                                                                      |
+| **`allowNetworkAccess`**                   | `boolean`                             | yes      | If `true`, the algorithm job will have network access (still WIP)                                                  |
 | **`publisherTrustedAlgorithmPublishers `** | Array of `String`                     | yes      | If Empty , then any published algo is allowed. Otherwise, only published algorithms by some publishers are allowed |
 | **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | yes      | If Empty , then any published algo is allowed. (see below)                                                         |
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
-| Attribute                      | Type     | Required | Description                                                        |
-| ------------------------------ | -------- | -------- | ------------------------------------------------------------------ |
-| **`did`**                      | `string` | yes      | The did of the algo which is trusted by the publisher.             |
-| **`filesChecksum`**            | `string` | yes      | Hash of ( algorithm's encryptedFiles + files section (as string) ) |
-| **`containerSectionChecksum`** | `string` | yes      | Hash of the algorithm container section (as string)                |
+| Attribute                      | Type     | Required | Description                                                    |
+| ------------------------------ | -------- | -------- | -------------------------------------------------------------- |
+| **`did`**                      | `string` | yes      | The DID of the algorithm which is trusted by the publisher.    |
+| **`filesChecksum`**            | `string` | yes      | Hash of algorithm's encryptedFiles + files section (as string) |
+| **`containerSectionChecksum`** | `string` | yes      | Hash of the algorithm container section (as string)            |
 
-To produce filesChecksum:
+To produce `filesChecksum`:
 
 ```js
 sha256(
@@ -176,7 +172,7 @@ sha256(
 )
 ```
 
-To produce containerSectionChecksum:
+To produce `containerSectionChecksum`:
 
 ```js
 sha256(
@@ -349,15 +345,41 @@ _Aquarius_ should always check the hash after data is decrypted via a _Provider_
 
 The following fields are added by Aquarius in its DDO response for convenience reasons. These are never stored on chain, and not taken into consideration when [hashing the DDO](#ddo-hash).
 
+### NFT
+
+The `nft` object contains information on the NFT contract.
+
+| Attribute     | Type     | Description                                   |
+| ------------- | -------- | --------------------------------------------- |
+| **`address`** | `string` | Contract address of the deployed NFT contract |
+| **`name`**    | `string` | Name of NFT set in contract                   |
+| **`symbol`**  | `string` | Symbol of NFT set in contract                 |
+| **`owner`**   | `string` | ETH account address of the NFT owner          |
+
+Example:
+
+```json
+{
+  "nft": {
+    "adddress": "0x000000",
+    "name": "Ocean Protocol Asset v4",
+    "symbol": "OCEAN-A-v4",
+    "owner": "0x0000000"
+  }
+}
+```
+
 ### Status
 
-The `status` object contains the following attributes:
+The `status` object contains attributes for marketplaces to implement various visibility states for an asset.
 
-| Attribute             | Type      | Required | Description                                                               |
-| --------------------- | --------- | -------- | ------------------------------------------------------------------------- |
-| **`state`**           | `number`  | yes      | State of the asset reflecting the NFT contract value. See [State](#state) |
-| **`isListed`**        | `boolean` | no       | If this asset should be displayed                                         |
-| **`isOrderDisabled`** | `boolean` | no       | If this asset has ordering disabled                                       |
+| Attribute             | Type      | Description                                                               |
+| --------------------- | --------- | ------------------------------------------------------------------------- |
+| **`state`**           | `number`  | State of the asset reflecting the NFT contract value. See [State](#state) |
+| **`isListed`**        | `boolean` | If this asset should be displayed                                         |
+| **`isOrderDisabled`** | `boolean` | If this asset has ordering disabled                                       |
+
+Example:
 
 ```json
 {
@@ -371,7 +393,7 @@ The `status` object contains the following attributes:
 
 ### Events
 
-The `events` section contains informations about the transactions that created or updated the DDO.
+The `events` section contains information about the transactions that created or updated the DDO which can be useful for displaying a metadata history for provenance reasons.
 
 Example:
 
@@ -390,9 +412,9 @@ Example:
 }
 ```
 
-### Stats
+### Statistics
 
-The `stats` section contains different statics fields.
+The `stats` section contains different statistics fields.
 
 Example:
 
@@ -455,6 +477,12 @@ Example:
   },
 
   // Enhanced Aquarius response begins here
+  "nft": {
+    "adddress": "0x000000",
+    "name": "Ocean Protocol Asset v4",
+    "symbol": "OCEAN-A-v4",
+    "owner": "0x0000000"
+  },
   "status": {
     "state": 0,
     "isListed": true,
