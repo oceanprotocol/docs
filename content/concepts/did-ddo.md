@@ -36,7 +36,7 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 - `2` = deprecated (by another asset)
 - `3` = revoked by publisher
 
-## Publishing an Retrieving DDOs
+## Publishing & Retrieving DDOs
 
 The DDO is stored on-chain as part of the NFT contract and it is stored encrypted using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
