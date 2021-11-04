@@ -71,17 +71,17 @@ It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-gene
 
 A DDO in Ocean has these required attributes:
 
-| Attribute         | Type                        | Description                                                                                    |
-| ----------------- | --------------------------- | ---------------------------------------------------------------------------------------------- |
-| **`@context`**    | Array of `string`           | Contexts used for validation.                                                                  |
-| **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                    |
-| **`version`**     | `string`                    | Version information referring to this DDO spec version, like `4.0.0`.                          |
-| **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                        |
-| **`created`**     | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.           |
-| **`updated`**     | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.      |
-| **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                      |
-| **`files`**       | [Files](#files)             | Encrypted file URLs                                                                            |
-| **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition. |
+| Attribute         | Type                        | Description                                                                                                    |
+| ----------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **`@context`**    | Array of `string`           | Contexts used for validation.                                                                                  |
+| **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                                    |
+| **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.0.0`. |
+| **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                                        |
+| **`created`**     | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                           |
+| **`updated`**     | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                      |
+| **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                                      |
+| **`files`**       | [Files](#files)             | Encrypted file URLs.                                                                                           |
+| **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
 
 ### Metadata
 
@@ -268,9 +268,9 @@ By default, a consumer can access a resource if they have 1.0 datatokens. _Crede
 
 Consider a medical data use case, where only a credentialed EU researcher can legally access a given dataset. Ocean supports this as follows: a consumer can only access the resource if they have 1.0 datatokens _and_ one of the specified `"allow"` credentials.
 
-This is like going to an R-rated movie, where you can only get in if you show both your movie ticket (datatoken) _and_ some some id showing you're old enough (credential).
+This is like going to an R-rated movie, where you can only get in if you show both your movie ticket (datatoken) _and_ some identification showing you're old enough (credential).
 
-Only credentials that can be proven are supported. This includes Ethereum public addresses, and (in the future) [W3C Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) and more.
+Only credentials that can be proven are supported. This includes Ethereum public addresses, and in the future [W3C Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) and more.
 
 Ocean also supports `"deny"` credentials: if a consumer has any of these credentials, they can not access the resource.
 
@@ -314,7 +314,7 @@ In order to ensure the integrity of the DDO, a hash is computed for each DDO:
 const hash = sha256(JSON.stringify(DDO))
 ```
 
-The hash is used when publishing/update metadata using `setMetaData` function in the ERC721 contract, and is stored in the event generated by the ERC721 contract:
+The hash is used when publishing/update metadata using the `setMetaData` function in the ERC721 contract, and is stored in the event generated by the ERC721 contract:
 
 ```solidity
 event MetadataCreated(
@@ -361,12 +361,12 @@ These additional fields are never stored on-chain, and are never taken into cons
 
 The `nft` object contains information about the NFT contract which represents the intellectual property of the publisher.
 
-| Attribute     | Type     | Description                                   |
-| ------------- | -------- | --------------------------------------------- |
-| **`address`** | `string` | Contract address of the deployed NFT contract |
-| **`name`**    | `string` | Name of NFT set in contract                   |
-| **`symbol`**  | `string` | Symbol of NFT set in contract                 |
-| **`owner`**   | `string` | ETH account address of the NFT owner          |
+| Attribute     | Type     | Description                                    |
+| ------------- | -------- | ---------------------------------------------- |
+| **`address`** | `string` | Contract address of the deployed NFT contract. |
+| **`name`**    | `string` | Name of NFT set in contract.                   |
+| **`symbol`**  | `string` | Symbol of NFT set in contract.                 |
+| **`owner`**   | `string` | ETH account address of the NFT owner.          |
 
 Example:
 
@@ -407,17 +407,18 @@ Example:
 
 The `events` section contains information about the transactions that created or updated the DDO which can be useful for displaying a metadata history for provenance reasons.
 
+They are ordered in descending order based on the `block` number, where the very last item in the `events` array is the event for the asset creation, and the first item is the latest update event if there has been one.
+
 Example:
 
 ```json
 {
   "events": [
     {
-      "txid": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
-      "blockNo": 12831214,
+      "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+      "block": 12831214,
       "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
-      "update": false
+      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
     }
   ]
 }
@@ -498,12 +499,10 @@ Example:
   },
   "events": [
     {
-      "txid": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
-      "blockNo": 12831214,
+      "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+      "block": 12831214,
       "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
-      "update": false,
-      "chainId": 1
+      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
     }
   ],
   "stats": {
