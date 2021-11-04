@@ -418,8 +418,7 @@ Example:
       "blockNo": 12831214,
       "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
       "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
-      "update": false,
-      "chainId": 1
+      "update": false
     }
   ]
 }
