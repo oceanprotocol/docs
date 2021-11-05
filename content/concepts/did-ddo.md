@@ -176,15 +176,15 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute              | Type                        | Required                        | Description                                                                                                                                |
-| ---------------------- | --------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                          |
-| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                      |
-| **`description`**      | `string`                    |                                 | Service description                                                                                                                        |
-| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                          |
-| **`providerEndpoint`** | `string`                    | **✓**                           | Provider endpoint URI (URI + path)                                                                                                         |
-| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
-| **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                           |
+| Attribute              | Type                        | Required                        | Description                                                                                                                                  |
+| ---------------------- | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
+| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                        |
+| **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
+| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
+| **`providerUrl`**      | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
+| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                             |
 
 #### Compute Privacy
 
@@ -193,7 +193,7 @@ An asset with a service of `type` `compute` has the following additional attribu
 | Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                               |
 | ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access (still WIP)                                                                                                                                                         |
+| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                    |
 | **`publisherTrustedAlgorithmPublishers `** | Array of `string`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed                                                                                                    |
 | **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If empty, then any published algorithm is allowed. (see below)                                                                                                                                                            |
 
@@ -230,7 +230,7 @@ Example:
       "name": "Download service",
       "description": "Download service",
       "datatokenAddress": "0x123",
-      "providerEndpoint": "https://myprovider",
+      "providerUrl": "https://myprovider.com",
       "timeout": 0
     },
     {
@@ -238,7 +238,7 @@ Example:
       "name": "Compute service",
       "description": "Compute service",
       "datatokenAddress": "0x124",
-      "providerEndpoint": "https://myprovider",
+      "providerUrl": "https://myprovider.com",
       "timeout": 0,
       "privacy": {
         "allowRawAlgorithm": false,
@@ -466,7 +466,7 @@ Example:
       "name": "Download service",
       "description": "Download service",
       "datatokenAddress": "0x123",
-      "providerEndpoint": "https://myprovider.com",
+      "providerUrl": "https://myprovider.com",
       "timeout": 0
     }
   ],
