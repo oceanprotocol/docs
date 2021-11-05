@@ -13,7 +13,7 @@ This document describes how Ocean assets follow the DID/DDO specification, such 
 
 Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity and DIDs may represent humans, objects, and more.
 
-A DID Document (DDO) is JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
+A DID Document (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
 If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points. The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
 
@@ -79,6 +79,7 @@ A DDO in Ocean has these required attributes:
 | **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                                        |
 | **`created`**     | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                           |
 | **`updated`**     | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                      |
+| **`metadata`**    | [Metadata](#metadata)       | Stores an object describing the asset.                                                                         |
 | **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                                      |
 | **`files`**       | [Files](#files)             | Encrypted file URLs.                                                                                           |
 | **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
@@ -173,18 +174,17 @@ Example:
 
 Services define the access for an asset, and each service is represented by its respective datatoken.
 
-An asset should have at least one service to be actually accessible, but can have as many services which make sense for a specific use case.
+An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute              | Type                          | Required                        | Description                                                                                                                                |
-| ---------------------- | ----------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`type`**             | `string`                      | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                          |
-| **`name`**             | `string`                      |                                 | Service friendly name                                                                                                                      |
-| **`description`**      | `string`                      |                                 | Service description                                                                                                                        |
-| **`datatokenAddress`** | `string`                      | **✓**                           | Datatoken address                                                                                                                          |
-| **`providerEndpoint`** | `string`                      | **✓**                           | Provider endpoint URI (URI + path)                                                                                                         |
-| **`timeout`**          | `number`                      | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
-| **`files`**            | `string`, see [Files](#files) | **✓**                           | Encrypted file URLs.                                                                                                                       |
-| **`privacy`**          | [Privacy](#compute-privacy)   | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                           |
+| Attribute              | Type                        | Required                        | Description                                                                                                                                |
+| ---------------------- | --------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                          |
+| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                      |
+| **`description`**      | `string`                    |                                 | Service description                                                                                                                        |
+| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                          |
+| **`providerEndpoint`** | `string`                    | **✓**                           | Provider endpoint URI (URI + path)                                                                                                         |
+| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit. Expressed in seconds. |
+| **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                           |
 
 #### Compute Privacy
 
@@ -353,7 +353,7 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 
 ## Aquarius Enhanced DDO Response
 
-The following fields are added by _Aquarius_ in its DDO response for convenience reasons where an `Asset` returned by _Aquarius_ inherits the DDO fields from the chain.
+The following fields are added by _Aquarius_ in its DDO response for convenience reasons, where an asset returned by _Aquarius_ inherits the DDO fields stored on-chain.
 
 These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-hash).
 
