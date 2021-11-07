@@ -37,6 +37,8 @@
 
 - group: Compute-to-Data
   items:
+    - title: Architecture Overview
+      link: /tutorials/compute-to-data-overview/
     - title: Writing Algorithms
       link: /tutorials/compute-to-data-algorithms/
     - title: Run a Compute-to-Data Environment

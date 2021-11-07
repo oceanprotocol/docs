@@ -15,7 +15,7 @@
 
 - group: Compute-to-Data
   items:
-    - title: Compute-to-Data Overview
+    - title: Introduction
       link: /concepts/compute-to-data/
 
 - group: Specifying Assets
