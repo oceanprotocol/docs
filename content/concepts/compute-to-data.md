@@ -40,6 +40,7 @@ All implementations should set permissions to private by default: upon publishin
 
 ## Further Reading
 
+- [Compute-to-Data architecture](/tutorials/compute-to-data-architecture/)
 - [Tutorial: Writing Algorithms](/tutorials/compute-to-data-algorithms/)
 - [Tutorial: Set Up a Compute-to-Data Environment](/tutorials/compute-to-data/)
 - [Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com)
