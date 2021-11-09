@@ -78,7 +78,7 @@ Each service has an `attributes` section holding the information related to the 
 
 A part of the `attributes.main` sub-section, other optional sub-sections like `attributes.extra` can be added. These depend on the service type.
 
-Each service has a `timeout` (in seconds) section describing how long the sevice can be used after consumption is initiated. A timeout of 0 represents no time limit.
+Each service has a `timeout` (in seconds) section describing how long the service can be used after consumption is initiated. A timeout of 0 represents no time limit.
 
 The `cost` attribute is obsolete, as of Ocean V3. As of V3, to consume an asset, one sends exactly 1.0 datatokens of the asset, so a `cost` is not needed.
 
