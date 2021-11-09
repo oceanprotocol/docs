@@ -6,10 +6,8 @@
       link: /concepts/quickstart/
     - title: Architecture Overview
       link: /concepts/architecture/
-    - title: NFTs
+    - title: Data NFTs
       link: /concepts/nft/
-    - title: Roles
-      link: /concepts/roles/
     - title: Supported Networks
       link: /concepts/networks/
     - title: Deployments
