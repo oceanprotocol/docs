@@ -69,6 +69,81 @@ If you don't find Polygon as a predefined network in your wallet, you can connec
 
 Check our [Polygon Bridge guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
 
+## Moonriver
+
+Ocean is deployed to [Moonriver](https://moonbeam.network/networks/moonriver/), another production network. Moonriver's native token is MOVR.
+
+If you don't find Moonriver as a predefined network in your wallet, you can connect to it manually via [Ocean's guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
+
+| What               | Value                               |
+| ------------------ | ----------------------------------- |
+| Network Name       | `Moonriver`                       |
+| RPC                | `https://rpc.moonriver.moonbeam.network`|
+| Chain Id           | `1285`                                |
+| Currency Symbol    | `MOVR`                               |
+| Block Explorer URL | `https://blockscout.moonriver.moonbeam.network`               |
+
+**Tokens**
+
+- Moonriver MOVR:
+  - Native token to pay transaction fees
+  - Exchanges to purchase: [List](https://coinmarketcap.com/currencies/moonriver/markets/)
+- Moonriver OCEAN:
+  - Address: [0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE](https://blockscout.moonriver.moonbeam.network/address/0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE/)
+  - [Exchanges to purchase](https://oceanprotocol.com/token#get)
+
+**Additional Components**
+
+| What         | URL                                                              |
+| ------------ | ---------------------------------------------------------------- |
+| Explorer     | https://blockscout.moonriver.moonbeam.network/                   |
+| Ocean Market | Point wallet to Moonriver network, at https://market.oceanprotocol.com |
+| Provider     | `https://provider.moonriver.oceanprotocol.com`                         |
+| Subgraph     | `https://subgraph.moonriver.oceanprotocol.com`                         |
+
+**Bridge**
+
+Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet and Moonriver
+
+
+## Energy Web Chain
+
+Ocean is deployed to [Energy Web Chain](https://www.energyweb.org/technology/energy-web-chain/), another production network. Energy Web's native token is EWT.
+
+If you don't find Energy Web Chain as a predefined network in your wallet, you can connect to it manually via [Ocean's guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
+
+| What               | Value                               |
+| ------------------ | ----------------------------------- |
+| Network Name       | `Energy Web Chain`                       |
+| RPC                | `https://rpc.energyweb.org` |
+| Chain Id           | `246`                                |
+| Currency Symbol    | `EWT`                               |
+| Block Explorer URL | `https://explorer.energyweb.org/`               |
+
+**Tokens**
+
+- Energy Web Chain EWT:
+  - Native token to pay transaction fees
+  - Exchanges to purchase: [List](https://coinmarketcap.com/currencies/energy-web-token/markets/)
+- Energy Web Chain OCEAN:
+  - Address: [0x593122aae80a6fc3183b2ac0c4ab3336debee528](https://explorer.energyweb.org/tokens/0x593122AAE80A6Fc3183b2AC0c4ab3336dEbeE528)
+  - [Exchanges to purchase](https://oceanprotocol.com/token#get)
+
+**Additional Components**
+
+| What         | URL                                                              |
+| ------------ | ---------------------------------------------------------------- |
+| Explorer     | https://explorer.energyweb.org/                   |
+| Ocean Market | Point wallet to Energy Web Chain network, at https://market.oceanprotocol.com |
+| Provider     | `https://provider.energyweb.oceanprotocol.com`                         |
+| Subgraph     | `https://subgraph.energyweb.oceanprotocol.com`                         |
+
+**Bridge**
+
+Use [Carbonswap bridge](https://bridge.carbonswap.exchange/bridge) to bridge between ETH Mainnet and Energy Web Chain
+
+
+
 ## Binance Smart Chain
 
 Ocean is deployed to [Binance Smart Chain (BSC)](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc), another production network. BSC's native token is BNB - the Binance token.
@@ -176,6 +251,30 @@ If you don't find Mumbai as a predefined network in your wallet, you can connect
 | Ocean Market | Point wallet to Mumbai network, at https://market.oceanprotocol.com |
 | Provider     | `https://provider.mumbai.oceanprotocol.com`                         |
 | Subgraph     | `https://subgraph.mumbai.oceanprotocol.com`                         |
+
+## Celo Alfajores
+
+Alfajores is a Celo test network for developers building on the Celo platform.
+
+Celo docs: https://docs.celo.org/.
+
+Wallet setup: https://celo.org/developers/wallet
+
+**Tokens**
+
+- Alfajores CELO:
+  - Native token to pay transaction fees
+  - [Faucet](https://celo.org/developers/faucet).
+- Alfajores OCEAN:
+  - Address: [0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8](https://alfajores-blockscout.celo-testnet.org/address/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8/)
+
+
+**Additional Components**
+
+| What         | URL                                                                 |
+| ------------ | ------------------------------------------------------------------- |
+| Explorer     | https://alfajores-blockscout.celo-testnet.org/                      |
+
 
 ## Local / Ganache
 
