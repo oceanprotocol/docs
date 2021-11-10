@@ -373,7 +373,7 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 - `1` = end-of-life
 - `2` = deprecated (by another asset)
 - `3` = revoked by publisher
-- `4` = temporary disabled
+- `4` = ordering is temporary disabled
 
 ## Aquarius Enhanced DDO Response
 
