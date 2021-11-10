@@ -15,8 +15,6 @@ Decentralized identifiers (DIDs) are a type of identifier that enable verifiable
 
 A DID Document (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
-If a DID is the index key in a key-value pair, then the DID Document is the value to which the index key points. The combination of a DID and its associated DID Document forms the root record for a decentralized identifier.
-
 ## Rules for DIDs & DDOs
 
 An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
@@ -81,7 +79,6 @@ A DDO in Ocean has these required attributes:
 | **`updated`**     | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                      |
 | **`metadata`**    | [Metadata](#metadata)       | Stores an object describing the asset.                                                                         |
 | **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                                      |
-| **`files`**       | [Files](#files)             | Encrypted file URLs.                                                                                           |
 | **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
 
 ### Metadata
@@ -158,9 +155,27 @@ The `container` object has the following attributes defining the Docker image fo
 }
 ```
 
+### Services
+
+Services define the access for an asset, and each service is represented by its respective datatoken.
+
+An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
+
+| Attribute              | Type                        | Required                        | Description                                                                                                                                  |
+| ---------------------- | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`id`**               | `string`                    | **✓**                           | Unique ID                                         |
+| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
+| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                        |
+| **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
+| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
+| **`serviceEndpoint`**      | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
+| **`files`**            | [Files](#files)             | **/**                           | Encrypted file URLs.                                                                                           |
+| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                             |
+
 ### Files
 
-The `ddo.files` field is returned as a string which holds the encrypted file URLs. During the publish process this needs to be encrypted with a respective _Provider_ API call.
+The `files` field is returned as a string which holds the encrypted file URLs. 
 
 Example:
 
@@ -170,21 +185,28 @@ Example:
 }
 ```
 
-### Services
+During the publish process this needs to be encrypted with a respective _Provider_ API call. (Sending an array of strings)
 
-Services define the access for an asset, and each service is represented by its respective datatoken.
+```json
+[
+   "url1",
+   "url2"
+]
+```
 
-An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
+In order to get the files information, you should call the fileinfo endpoint of __Provider__ , provide the DID/or DDO/or encrypted string, and you will get an array of file informations:
+```json
+[{
+   "contentLength":100,
+   "contentType":"application/json"
+},
+{
+   "contentLength":130,
+   "contentType":"application/text"
+}
+]
+```
 
-| Attribute              | Type                        | Required                        | Description                                                                                                                                  |
-| ---------------------- | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
-| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                        |
-| **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
-| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
-| **`providerUrl`**      | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                             |
 
 #### Compute Privacy
 
@@ -202,7 +224,7 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 | Attribute                      | Type     | Required | Description                                                        |
 | ------------------------------ | -------- | -------- | ------------------------------------------------------------------ |
 | **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.        |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `encryptedFiles` + `files` section (as string) |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as string) |
 | **`containerSectionChecksum`** | `string` | **✓**    | Hash of the algorithm `container` section (as string)              |
 
 To produce `filesChecksum`:
