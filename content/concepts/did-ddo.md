@@ -163,19 +163,19 @@ An asset should have at least one service to be actually accessible, and can hav
 
 | Attribute              | Type                        | Required                        | Description                                                                                                                                  |
 | ---------------------- | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`id`**               | `string`                    | **✓**                           | Unique ID                                         |
+| **`id`**               | `string`                    | **✓**                           | Unique ID                                                                                                                                    |
 | **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
 | **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                        |
 | **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
 | **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
-| **`serviceEndpoint`**      | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**            | [Files](#files)             | **/**                           | Encrypted file URLs.                                                                                           |
+| **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
+| **`files`**            | [Files](#files)             | **/**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                             |
 
-### Files
+#### Files
 
-The `files` field is returned as a string which holds the encrypted file URLs. 
+The `files` field is returned as a string which holds the encrypted file URLs.
 
 Example:
 
@@ -185,29 +185,26 @@ Example:
 }
 ```
 
-During the publish process this needs to be encrypted with a respective _Provider_ API call. (Sending an array of strings)
+During the publish process file URLs need to be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of strings with one or multiple URLs is what gets encrypted:
+
+```json
+["https://url.com/file1.csv", "https://url.com/file2.csv"]
+```
+
+To get information about the files after encryption, the `/fileinfo` endpoint of _Provider_ must return based on passed DID:
 
 ```json
 [
-   "url1",
-   "url2"
+  {
+    "contentLength": 100,
+    "contentType": "application/json"
+  },
+  {
+    "contentLength": 130,
+    "contentType": "application/text"
+  }
 ]
 ```
-
-In order to get the files information, you should call the fileinfo endpoint of __Provider__ , provide the DID/or DDO/or encrypted string, and you will get an array of file informations:
-
-```json
-[{
-   "contentLength":100,
-   "contentType":"application/json"
-},
-{
-   "contentLength":130,
-   "contentType":"application/text"
-}
-]
-```
-
 
 #### Compute Privacy
 
@@ -222,19 +219,16 @@ An asset with a service of `type` `compute` has the following additional attribu
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
-| Attribute                      | Type     | Required | Description                                                        |
-| ------------------------------ | -------- | -------- | ------------------------------------------------------------------ |
-| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.        |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as string) |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of the algorithm `container` section (as string)              |
+| Attribute                      | Type     | Required | Description                                                              |
+| ------------------------------ | -------- | -------- | ------------------------------------------------------------------------ |
+| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.              |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as `string`)                        |
+| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's `metadata.algorithm.container` section (as `string`) |
 
 To produce `filesChecksum`:
 
 ```js
-sha256(
-  algorithm_ddo.metadata.encryptedFiles +
-    JSON.Stringify(algorithm_ddo.metadata.files)
-)
+sha256(JSON.Stringify(algorithm_ddo.services[0].files))
 ```
 
 To produce `containerSectionChecksum`:
@@ -253,7 +247,7 @@ Example:
       "name": "Download service",
       "description": "Download service",
       "datatokenAddress": "0x123",
-      "providerUrl": "https://myprovider.com",
+      "serviceEndpoint": "https://myprovider.com",
       "timeout": 0
     },
     {
@@ -261,7 +255,7 @@ Example:
       "name": "Compute service",
       "description": "Compute service",
       "datatokenAddress": "0x124",
-      "providerUrl": "https://myprovider.com",
+      "serviceEndpoint": "https://myprovider.com",
       "timeout": 0,
       "privacy": {
         "allowRawAlgorithm": false,
@@ -334,7 +328,7 @@ Example:
 In order to ensure the integrity of the DDO, a hash is computed for each DDO:
 
 ```js
-const hash = sha256(JSON.stringify(DDO))
+const hash = sha256(JSON.stringify(ddo))
 ```
 
 The hash is used when publishing/update metadata using the `setMetaData` function in the ERC721 contract, and is stored in the event generated by the ERC721 contract:
@@ -369,11 +363,13 @@ _Aquarius_ should always check the hash after data is decrypted via a _Provider_
 
 Each asset has a state, which is held by the NFT contract. The possible states are:
 
-- `0` = active
-- `1` = end-of-life
-- `2` = deprecated (by another asset)
-- `3` = revoked by publisher
-- `4` = ordering is temporary disabled
+| State   | Description                     |
+| ------- | ------------------------------- |
+| **`0`** | Active.                         |
+| **`1`** | End-of-life.                    |
+| **`2`** | Deprecated (by another asset).  |
+| **`3`** | Revoked by publisher.           |
+| **`4`** | Ordering is temporary disabled. |
 
 ## Aquarius Enhanced DDO Response
 
@@ -385,12 +381,12 @@ These additional fields are never stored on-chain, and are never taken into cons
 
 The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
-| Attribute     | Type     | Description                                           |
-| ------------- | -------- | ----------------------------------------------------- |
-| **`address`** | `string` | Contract address of the deployed ERC721 NFT contract. |
-| **`name`**    | `string` | Name of NFT set in contract.                          |
-| **`symbol`**  | `string` | Symbol of NFT set in contract.                        |
-| **`owner`**   | `string` | ETH account address of the NFT owner.                 |
+| Attribute     | Type     | Description                                                               |
+| ------------- | -------- | ------------------------------------------------------------------------- |
+| **`address`** | `string` | Contract address of the deployed ERC721 NFT contract.                     |
+| **`name`**    | `string` | Name of NFT set in contract.                                              |
+| **`symbol`**  | `string` | Symbol of NFT set in contract.                                            |
+| **`owner`**   | `string` | ETH account address of the NFT owner.                                     |
 | **`state`**   | `number` | State of the asset reflecting the NFT contract value. See [State](#state) |
 
 Example:
@@ -409,31 +405,32 @@ Example:
 
 ### DataTokens
 
-The `datatokens` object contains information about the ERC20 datatokens.
+The `datatokens` array contains information about the ERC20 datatokens attached to [services](#services).
 
-| Attribute     | Type     | Description                                           |
-| ------------- | -------- | ----------------------------------------------------- |
-| **`address`** | `string` | Contract address of the deployed ERC721 NFT contract. |
-| **`name`**    | `string` | Name of NFT set in contract.                          |
-| **`symbol`**  | `string` | Symbol of NFT set in contract.                        |
-| **`serviceId`**   | `string` | ServiceID |
+| Attribute       | Type     | Description                                           |
+| --------------- | -------- | ----------------------------------------------------- |
+| **`address`**   | `string` | Contract address of the deployed ERC721 NFT contract. |
+| **`name`**      | `string` | Name of NFT set in contract.                          |
+| **`symbol`**    | `string` | Symbol of NFT set in contract.                        |
+| **`serviceId`** | `string` | ID of the service the datatoken is attached to.       |
+
 Example:
 
 ```json
 {
   "datatokens": [
-     {
+    {
       "adddress": "0x000000",
-      "name": "Ocean Protocol Asset v4",
-      "symbol": "OCEAN-A-v4",
+      "name": "Datatoken 1",
+      "symbol": "DT-1",
       "serviceId": "1"
-     },
-     {
+    },
+    {
       "adddress": "0x000001",
-      "name": "Ocean Protocol Asset v4",
-      "symbol": "OCEAN-A-v4",
+      "name": "Datatoken 2",
+      "symbol": "DT-2",
       "serviceId": "2"
-     },
+    }
   ]
 }
 ```
@@ -446,14 +443,12 @@ Example:
 
 ```json
 {
-  "event": [
-    {
-      "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
-      "block": 12831214,
-      "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
-    }
-  ]
+  "event": {
+    "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+    "block": 12831214,
+    "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
+    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
+  }
 }
 ```
 
@@ -492,14 +487,14 @@ Example:
     "author": "OPF",
     "license": "https://market.oceanprotocol.com/terms"
   },
-  "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
   "services": [
     {
       "type": "access",
+      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
       "name": "Download service",
       "description": "Download service",
       "datatokenAddress": "0x123",
-      "providerUrl": "https://myprovider.com",
+      "serviceEndpoint": "https://myprovider.com",
       "timeout": 0
     }
   ],
@@ -524,15 +519,31 @@ Example:
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
-    "state": 0,
+    "state": 0
   },
-  "event": 
+
+  "datatokens": [
     {
-      "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
-      "block": 12831214,
-      "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-      "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
+      "adddress": "0x000000",
+      "name": "Datatoken 1",
+      "symbol": "DT-1",
+      "serviceId": "1"
     },
+    {
+      "adddress": "0x000001",
+      "name": "Datatoken 2",
+      "symbol": "DT-2",
+      "serviceId": "2"
+    }
+  ],
+
+  "event": {
+    "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+    "block": 12831214,
+    "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
+    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
+  },
+
   "stats": {
     "consumes": 4
   }
