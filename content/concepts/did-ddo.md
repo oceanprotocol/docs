@@ -195,6 +195,7 @@ During the publish process this needs to be encrypted with a respective _Provide
 ```
 
 In order to get the files information, you should call the fileinfo endpoint of __Provider__ , provide the DID/or DDO/or encrypted string, and you will get an array of file informations:
+
 ```json
 [{
    "contentLength":100,
@@ -390,6 +391,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 | **`name`**    | `string` | Name of NFT set in contract.                          |
 | **`symbol`**  | `string` | Symbol of NFT set in contract.                        |
 | **`owner`**   | `string` | ETH account address of the NFT owner.                 |
+| **`state`**   | `number` | State of the asset reflecting the NFT contract value. See [State](#state) |
 
 Example:
 
@@ -399,44 +401,52 @@ Example:
     "adddress": "0x000000",
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
-    "owner": "0x0000000"
+    "owner": "0x0000000",
+    "state": 0
   }
 }
 ```
 
-### Status
+### DataTokens
 
-The `status` object contains attributes for marketplaces to implement various visibility states for an asset.
+The `datatokens` object contains information about the ERC20 datatokens.
 
-| Attribute             | Type      | Description                                                               |
-| --------------------- | --------- | ------------------------------------------------------------------------- |
-| **`state`**           | `number`  | State of the asset reflecting the NFT contract value. See [State](#state) |
-| **`isListed`**        | `boolean` | If this asset should be displayed                                         |
-| **`isOrderDisabled`** | `boolean` | If this asset has ordering disabled                                       |
+| Attribute     | Type     | Description                                           |
+| ------------- | -------- | ----------------------------------------------------- |
+| **`address`** | `string` | Contract address of the deployed ERC721 NFT contract. |
+| **`name`**    | `string` | Name of NFT set in contract.                          |
+| **`symbol`**  | `string` | Symbol of NFT set in contract.                        |
+| **`serviceId`**   | `string` | ServiceID |
+Example:
+
+```json
+{
+  "datatokens": [
+     {
+      "adddress": "0x000000",
+      "name": "Ocean Protocol Asset v4",
+      "symbol": "OCEAN-A-v4",
+      "serviceId": "1"
+     },
+     {
+      "adddress": "0x000001",
+      "name": "Ocean Protocol Asset v4",
+      "symbol": "OCEAN-A-v4",
+      "serviceId": "2"
+     },
+  ]
+}
+```
+
+### Event
+
+The `event` section contains information about the last transaction that created or updated the DDO.
 
 Example:
 
 ```json
 {
-  "status": {
-    "state": 0,
-    "isListed": true,
-    "isOrderDisabled": false
-  }
-}
-```
-
-### Events
-
-The `events` section contains information about the transactions that created or updated the DDO which can be useful for displaying a metadata history for provenance reasons.
-
-They are ordered in descending order based on the `block` number, where the very last item in the `events` array is the event for the asset creation, and the first item is the latest update event if there has been one.
-
-Example:
-
-```json
-{
-  "events": [
+  "event": [
     {
       "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
       "block": 12831214,
@@ -513,21 +523,16 @@ Example:
     "adddress": "0x000000",
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
-    "owner": "0x0000000"
-  },
-  "status": {
+    "owner": "0x0000000",
     "state": 0,
-    "isListed": true,
-    "isOrderDisabled": false
   },
-  "events": [
+  "event": 
     {
       "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
       "block": 12831214,
       "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
       "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
-    }
-  ],
+    },
   "stats": {
     "consumes": 4
   }
