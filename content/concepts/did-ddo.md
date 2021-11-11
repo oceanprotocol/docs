@@ -179,8 +179,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
 | **`files`**            | [Files](#files)             | **/**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                             |
-| **`resources`**         | [Resources](#compute-resources) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related resources.                                             |
+| **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                             |
 
 #### Files
 
@@ -217,29 +216,23 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
 
 This only concerns metadata about a file, but never the file URLs. The only way to decrypt them is to exchange at least 1 datatoken based on the respective service pricing scheme.
 
-#### Compute Resources
+#### Compute Options
 
-An asset with a service of `type` `compute` has the following additional attributes under the `resources` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
+An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
 | Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                               |
 | ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`namespace`**                    | `string`                             | **✓**    | Namespaced used for the compute job. Defaults to 'ocean-compute'. |
+| **`namespace`**              | `string`                             | **✓**    | Namespaced used for the compute job. Defaults to 'ocean-compute'. |
 | **`cpus`**                   | `number`                             |     | Maximum number of CPUs allocated for a job|
 | **`gpus`**                   | `number`                             |     | Maximum number of GPUs allocated for a job|
-| **`gpuType`**                   | `string`                             |     | Type of GPU (if any)
-| **`memory`**                   | `string`                             |     | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.  For example, the following represent roughly the same value:  128974848, 129e6, 129M, 123Mi|
-| **`volumeSize`**                   | `string`                             |     | Amount of disk space allocated. You can express it as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. |
-
-#### Compute Privacy
-
-An asset with a service of `type` `compute` has the following additional attributes under the `privacy` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
-
-| Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                               |
-| ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                    |
+| **`gpuType`**                | `string`                             |     | Type of GPU (if any)
+| **`memory`**                 | `string`                             |     | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.  For example, the following represent roughly the same value:  128974848, 129e6, 129M, 123Mi|
+| **`volumeSize`**             | `string`                             |     | Amount of disk space allocated. You can express it as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. |
+| **`allowRawAlgorithm`**      | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| **`allowNetworkAccess`**     | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                      |
 | **`publisherTrustedAlgorithmPublishers `** | Array of `string`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed                                                                                                    |
 | **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If empty, then any published algorithm is allowed. (see below)                                                                                                                                                            |
+
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
@@ -283,19 +276,17 @@ Example:
       "datatokenAddress": "0x124",
       "serviceEndpoint": "https://myprovider.com",
       "timeout": 0,
-      "resources":{
-         "namespace":"ocean-compute",
-         "cpus":2,
-         "gpus":4,
-         "gpuType":"NVIDIA Tesla V100 GPU",
-         "memory":"128M",
-         "volumeSize":"2G"
-      },
-      "privacy": {
-        "allowRawAlgorithm": false,
-        "allowNetworkAccess": true,
-        "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
-        "publisherTrustedAlgorithms": [
+      "compute":{
+         "namespace": "ocean-compute",
+         "cpus": 2,
+         "gpus": 4,
+         "gpuType": "NVIDIA Tesla V100 GPU",
+         "memory": "128M",
+         "volumeSize": "2G",
+         "allowRawAlgorithm": false,
+         "allowNetworkAccess": true,
+         "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
+         "publisherTrustedAlgorithms": [
           {
             "did": "did:op:123",
             "filesChecksum": "100",
@@ -520,6 +511,38 @@ Example:
       "datatokenAddress": "0x123",
       "serviceEndpoint": "https://myprovider.com",
       "timeout": 0
+    },
+    {
+      "type": "compute",
+      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
+      "name": "Compute service",
+      "description": "Compute service",
+      "datatokenAddress": "0x124",
+      "serviceEndpoint": "https://myprovider.com",
+      "timeout": 3600,
+      "compute":{
+         "namespace": "ocean-compute",
+         "cpus": 2,
+         "gpus": 4,
+         "gpuType": "NVIDIA Tesla V100 GPU",
+         "memory": "128M",
+         "volumeSize": "2G",
+         "allowRawAlgorithm": false,
+         "allowNetworkAccess": true,
+         "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
+         "publisherTrustedAlgorithms": [
+          {
+            "did": "did:op:123",
+            "filesChecksum": "100",
+            "containerSectionChecksum": "200"
+          },
+          {
+            "did": "did:op:124",
+            "filesChecksum": "110",
+            "containerSectionChecksum": "210"
+          }
+        ]
+      }
     }
   ],
   "credentials": {
