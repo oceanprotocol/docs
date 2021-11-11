@@ -33,7 +33,7 @@ Here is the complete flow:
 
 <details>
   <summary>UML source</summary>
-  
+
 ```text
 title DDO flow
 
@@ -49,9 +49,8 @@ Provider -> Provider: depending on metadataState (expired,retired) and aquarius 
 Provider -> Aquarius: DDO
 Aquarius -> Aquarius : validate DDO
 Aquarius -> Aquarius : cache DDO
-Aquarius -> Aquarius : enhance cached DDO in response with additional infos like `events` & `stats`
-
-````
+Aquarius -> Aquarius : enhance cached DDO in response with additional infos like events & stats
+```
 
 </details>
 
@@ -61,7 +60,7 @@ In Ocean, a DID is a string that looks like this:
 
 ```text
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
-````
+```
 
 The part after `did:op:` is the checksum of the ERC721 contract address and the chain the asset has been published to:
 
@@ -350,25 +349,25 @@ The checksum hash is used when publishing/updating metadata using the `setMetaDa
 
 ```solidity
 event MetadataCreated(
-  address indexed createdBy,
-  uint8 state,
-  string decryptorUrl,
-  bytes flags,
-  bytes data,
-  bytes metaDataHash,
-  uint256 timestamp,
-  uint256 blockNumber
+address indexed createdBy,
+uint8 state,
+string decryptorUrl,
+bytes flags,
+bytes data,
+bytes metaDataHash,
+uint256 timestamp,
+uint256 blockNumber
 );
 
 event MetadataUpdated(
-  address indexed updatedBy,
-  uint8 state,
-  string decryptorUrl,
-  bytes flags,
-  bytes data,
-  bytes metaDataHash,
-  uint256 timestamp,
-  uint256 blockNumber
+address indexed updatedBy,
+uint8 state,
+string decryptorUrl,
+bytes flags,
+bytes data,
+bytes metaDataHash,
+uint256 timestamp,
+uint256 blockNumber
 );
 ```
 
@@ -600,4 +599,8 @@ Example:
     "consumes": 4
   }
 }
+```
+
+```
+
 ```
