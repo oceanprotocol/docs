@@ -93,8 +93,8 @@ This object holds information describing the actual asset.
 
 | Attribute                   | Type                                      | Required                          | Description                                                                                                                                                                                       |
 | --------------------------- | ----------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`created`**               | `ISO Date Time string`                    | **✓**                             | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                           |
-| **`updated`**               | `ISO Date Time string`                    | **✓**                             | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                      |
+| **`created`**               | `ISO Date Time string`                    |                              | Contains the date of dataset publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.  It refers to dataset content.                         |
+| **`updated`**               | `ISO Date Time string`                    |                              | Contains the the date of last update of the dataset content in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                      |
 | **`description`**           | `string`                                  | **✓**                             | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
 | **`copyrightHolder`**       | `string`                                  |                                   | The party holding the legal copyright. Empty by default.                                                                                                                                          |
 | **`name`**                  | `string`                                  | **✓**                             | Descriptive name or title of the asset.                                                                                                                                                           |
@@ -144,6 +144,8 @@ The `container` object has the following attributes defining the Docker image fo
 ```json
 {
   "metadata": {
+    "created": "2020-11-15T12:27:48Z",
+    "updated": "2021-05-17T21:58:02Z",
     "description": "Sample description",
     "name": "Sample algorithm asset",
     "type": "algorithm",
@@ -491,16 +493,16 @@ Example:
 {
   "@context": ["https://w3id.org/did/v1"],
   "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
-  "created": "2020-11-15T12:27:48Z",
-  "updated": "2021-05-17T21:58:02Z",
   "version": "4.0.0",
   "chainId": 1,
   "metadata": {
-    "description": "Sample description",
-    "name": "Sample asset",
-    "type": "dataset",
-    "author": "OPF",
-    "license": "https://market.oceanprotocol.com/terms"
+   "created": "2020-11-15T12:27:48Z",
+   "updated": "2021-05-17T21:58:02Z",
+   "description": "Sample description",
+   "name": "Sample asset",
+   "type": "dataset",
+   "author": "OPF",
+   "license": "https://market.oceanprotocol.com/terms"
   },
   "services": [
     {
