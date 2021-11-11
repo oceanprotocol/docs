@@ -83,8 +83,6 @@ A DDO in Ocean has these required attributes:
 | **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                                    |
 | **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.0.0`. |
 | **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                                        |
-| **`created`**     | `ISO Date Time string`      | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                           |
-| **`updated`**     | `ISO Date Time string`      | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                      |
 | **`metadata`**    | [Metadata](#metadata)       | Stores an object describing the asset.                                                                         |
 | **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                                      |
 | **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
@@ -95,6 +93,8 @@ This object holds information describing the actual asset.
 
 | Attribute                   | Type                                      | Required                          | Description                                                                                                                                                                                       |
 | --------------------------- | ----------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`created`**               | `ISO Date Time string`                    | **✓**                             | Contains the date of publishing in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                           |
+| **`updated`**               | `ISO Date Time string`                    | **✓**                             | Contains the the date of last update in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                      |
 | **`description`**           | `string`                                  | **✓**                             | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
 | **`copyrightHolder`**       | `string`                                  |                                   | The party holding the legal copyright. Empty by default.                                                                                                                                          |
 | **`name`**                  | `string`                                  | **✓**                             | Descriptive name or title of the asset.                                                                                                                                                           |
@@ -470,7 +470,8 @@ Example:
     "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
     "block": 12831214,
     "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
+    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
+    "datetime": "2000-10-31T01:30:00"
   }
 }
 ```
@@ -564,7 +565,8 @@ Example:
     "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
     "block": 12831214,
     "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf"
+    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
+    "datetime": "2000-10-31T01:30:00"
   },
 
   "stats": {
