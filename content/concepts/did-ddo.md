@@ -180,6 +180,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`files`**            | [Files](#files)             | **/**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`privacy`**          | [Privacy](#compute-privacy) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings.                                             |
+| **`resources`**         | [Resources](#compute-resources) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related resources.                                             |
 
 #### Files
 
@@ -215,6 +216,21 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
 ```
 
 This only concerns metadata about a file, but never the file URLs. The only way to decrypt them is to exchange at least 1 datatoken based on the respective service pricing scheme.
+
+#### Compute Resources
+
+An asset with a service of `type` `compute` has the following additional attributes under the `resources` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
+
+| Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                               |
+| ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`namespace`**                    | `string`                             | **✓**    | Namespaced used for the compute job. Defaults to 'ocean-compute'. |
+| **`cpus`**                   | `number`                             |     | Maximum number of CPUs allocated for a job|
+| **`gpus`**                   | `number`                             |     | Maximum number of GPUs allocated for a job|
+| **`gpuType`**                   | `string`                             |     | Type of GPU (if any)
+| **`memory`**                   | `string`                             |     | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.  For example, the following represent roughly the same value:
+
+128974848, 129e6, 129M, 123Mi|
+| **`volumeSize`**                   | `string`                             |     | Amount of disk space allocated. You can express it as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. |
 
 #### Compute Privacy
 
@@ -269,6 +285,14 @@ Example:
       "datatokenAddress": "0x124",
       "serviceEndpoint": "https://myprovider.com",
       "timeout": 0,
+      "resources":{
+         "namespace":"ocean-compute",
+         "cpus":2,
+         "gpus":4,
+         "gpuType":"NVIDIA Tesla V100 GPU",
+         "memory":"128M",
+         "volumeSize":"2G"
+      },
       "privacy": {
         "allowRawAlgorithm": false,
         "allowNetworkAccess": true,
