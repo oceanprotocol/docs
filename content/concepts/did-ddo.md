@@ -404,6 +404,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 | **`symbol`**  | `string` | Symbol of NFT set in contract.                                            |
 | **`owner`**   | `string` | ETH account address of the NFT owner.                                     |
 | **`state`**   | `number` | State of the asset reflecting the NFT contract value. See [State](#state) |
+| **`created`** | `ISO Date Time string` | Contains the date of nft creation                           |
 
 Example:
 
@@ -414,7 +415,8 @@ Example:
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
-    "state": 0
+    "state": 0,
+    "created": "2000-10-31T01:30:00"
   }
 }
 ```
@@ -568,7 +570,8 @@ Example:
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
-    "state": 0
+    "state": 0,
+    "created": "2000-10-31T01:30:00"
   },
 
   "datatokens": [
