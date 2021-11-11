@@ -227,8 +227,7 @@ An asset with a service of `type` `compute` has the following additional attribu
 | **`cpus`**                   | `number`                             |     | Maximum number of CPUs allocated for a job|
 | **`gpus`**                   | `number`                             |     | Maximum number of GPUs allocated for a job|
 | **`gpuType`**                   | `string`                             |     | Type of GPU (if any)
-| **`memory`**                   | `string`                             |     | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.  For example, the following represent roughly the same value:
-128974848, 129e6, 129M, 123Mi|
+| **`memory`**                   | `string`                             |     | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.  For example, the following represent roughly the same value:  128974848, 129e6, 129M, 123Mi|
 | **`volumeSize`**                   | `string`                             |     | Amount of disk space allocated. You can express it as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. |
 
 #### Compute Privacy
