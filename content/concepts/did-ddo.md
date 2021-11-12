@@ -25,11 +25,11 @@ All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A me
 
 ## Publishing & Retrieving DDOs
 
-The DDO is stored on-chain as part of the NFT contract and it is stored encrypted using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
+The DDO is stored on-chain as part of the NFT contract, and stored encrypted using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
 Here is the complete flow:
 
-![DDO_flow](images/ddo-flow.png)
+![DDO flow](images/ddo-flow.png)
 
 <details>
   <summary>UML source</summary>
@@ -92,8 +92,8 @@ This object holds information describing the actual asset.
 
 | Attribute                   | Type                                      | Required                          | Description                                                                                                                                                                                       |
 | --------------------------- | ----------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`created`**               | `ISO Date Time string`                    |                                   | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
-| **`updated`**               | `ISO Date Time string`                    |                                   | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
+| **`created`**               | `ISO date/time string`                    |                                   | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
+| **`updated`**               | `ISO date/time string`                    |                                   | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
 | **`description`**           | `string`                                  | **✓**                             | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
 | **`copyrightHolder`**       | `string`                                  |                                   | The party holding the legal copyright. Empty by default.                                                                                                                                          |
 | **`name`**                  | `string`                                  | **✓**                             | Descriptive name or title of the asset.                                                                                                                                                           |
@@ -102,8 +102,8 @@ This object holds information describing the actual asset.
 | **`license`**               | `string`                                  | **✓**                             | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
 | **`links`**                 | Array of `string`                         |                                   | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
 | **`contentLanguage`**       | `string`                                  |                                   | The language of the content. Use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                                     |
-| **`categories`**            | Array of `string`                         |                                   | Optional array of categories associated to the asset. Note: recommended to use `tags` instead of this.                                                                                            |
 | **`tags`**                  | Array of `string`                         |                                   | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
+| **`categories`**            | Array of `string`                         |                                   | Array of categories associated to the asset. Note: recommended to use `tags` instead of this.                                                                                                     |
 | **`additionalInformation`** | Object                                    |                                   | Stores additional information, this is customizable by publisher                                                                                                                                  |
 | **`algorithm`**             | [Algorithm Metadata](#algorithm-metadata) | **✓** (for algorithm assets only) | Information about asset of `type` `algorithm`                                                                                                                                                     |
 
@@ -180,13 +180,13 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
 | **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
 | **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**            | [string](#files)            | **✓**                           | Encrypted file URLs.                                                                                                                         |
+| **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
 
 #### Files
 
-The `files` field is returned as a string which holds the encrypted file URLs.
+The `files` field is returned as a `string` which holds the encrypted file URLs.
 
 Example:
 
@@ -223,26 +223,26 @@ This only concerns metadata about a file, but never the file URLs. The only way 
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-| Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------ | ------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`namespace`**                            | `string`                              | **✓**    | Namespaced used for the compute job. Defaults to 'ocean-compute'.                                                                                                                                                                                                                                                                   |
-| **`cpus`**                                 | `number`                              |          | Maximum number of CPUs allocated for a job                                                                                                                                                                                                                                                                                          |
-| **`gpus`**                                 | `number`                              |          | Maximum number of GPUs allocated for a job                                                                                                                                                                                                                                                                                          |
-| **`gpuType`**                              | `string`                              |          | Type of GPU (if any)                                                                                                                                                                                                                                                                                                                |
-| **`memory`**                               | `string`                              |          | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. For example, the following represent roughly the same value: 128974848, 129e6, 129M, 123Mi |
-| **`volumeSize`**                           | `string`                              |          | Amount of disk space allocated. You can express it as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.                                                                                                              |
-| **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations.                                                                                                           |
-| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                                                                                                                              |
-| **`publisherTrustedAlgorithmPublishers `** | Array of `string`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed                                                                                                                                                                                                              |
-| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If empty, then any published algorithm is allowed. (see below)                                                                                                                                                                                                                                                                      |
+| Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`namespace`**                            | `string`                              | **✓**    | Namespace used for the compute job. Defaults to 'ocean-compute'.                                                                                                                                                                                                                                                                     |
+| **`cpus`**                                 | `number`                              |          | Maximum number of CPUs allocated for a job.                                                                                                                                                                                                                                                                                          |
+| **`gpus`**                                 | `number`                              |          | Maximum number of GPUs allocated for a job.                                                                                                                                                                                                                                                                                          |
+| **`gpuType`**                              | `string`                              |          | Type of GPU (if any).                                                                                                                                                                                                                                                                                                                |
+| **`memory`**                               | `string`                              |          | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. For example, the following represent roughly the same value: 128974848, 129e6, 129M, 123Mi. |
+| **`volumeSize`**                           | `string`                              |          | Amount of disk space allocated. You can express it as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.                                                                                                               |
+| **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations.                                                                                                            |
+| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                                                                                                                               |
+| **`publisherTrustedAlgorithmPublishers `** | Array of `string`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed.                                                                                                                                                                                                              |
+| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If empty, then any published algorithm is allowed. (see below).                                                                                                                                                                                                                                                                      |
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
-| Attribute                      | Type     | Required | Description                                                              |
-| ------------------------------ | -------- | -------- | ------------------------------------------------------------------------ |
-| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.              |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as `string`)                        |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's `metadata.algorithm.container` section (as `string`) |
+| Attribute                      | Type     | Required | Description                                                               |
+| ------------------------------ | -------- | -------- | ------------------------------------------------------------------------- |
+| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.               |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as `string`).                        |
+| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's `metadata.algorithm.container` section (as `string`). |
 
 To produce `filesChecksum`:
 
@@ -308,9 +308,9 @@ Example:
 
 ### Credentials
 
-By default, a consumer can access a resource if they have 1.0 datatokens. _Credentials_ allow the publisher to optionally specify finer-grained permissions.
+By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
 
-Consider a medical data use case, where only a credentialed EU researcher can legally access a given dataset. Ocean supports this as follows: a consumer can only access the resource if they have 1.0 datatokens _and_ one of the specified `"allow"` credentials.
+Consider a medical data use case, where only a credentialed EU researcher can legally access a given dataset. Ocean supports this as follows: a consumer can only access the resource if they have 1 datatoken _and_ one of the specified `"allow"` credentials.
 
 This is like going to an R-rated movie, where you can only get in if you show both your movie ticket (datatoken) _and_ some identification showing you're old enough (credential).
 
@@ -404,7 +404,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 | **`symbol`**  | `string`               | Symbol of NFT set in contract.                                            |
 | **`owner`**   | `string`               | ETH account address of the NFT owner.                                     |
 | **`state`**   | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
-| **`created`** | `ISO Date Time string` | Contains the date of NFT creation                                         |
+| **`created`** | `ISO date/time string` | Contains the date of NFT creation.                                        |
 
 Example:
 
