@@ -92,8 +92,8 @@ This object holds information describing the actual asset.
 
 | Attribute                   | Type                                      | Required                          | Description                                                                                                                                                                                       |
 | --------------------------- | ----------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`created`**               | `ISO Date Time string`                    |                                   | Contains the date of the creation of the dataset content in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                                                                                     |
-| **`updated`**               | `ISO Date Time string`                    |                                   | Contains the date of last update of the dataset content in ISO Date Time Format, e.g. `2000-10-31T01:30:00`.                                                                                      |
+| **`created`**               | `ISO Date Time string`                    |                                   | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
+| **`updated`**               | `ISO Date Time string`                    |                                   | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
 | **`description`**           | `string`                                  | **✓**                             | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
 | **`copyrightHolder`**       | `string`                                  |                                   | The party holding the legal copyright. Empty by default.                                                                                                                                          |
 | **`name`**                  | `string`                                  | **✓**                             | Descriptive name or title of the asset.                                                                                                                                                           |
@@ -112,6 +112,8 @@ Example:
 ```json
 {
   "metadata": {
+    "created": "2020-11-15T12:27:48Z",
+    "updated": "2021-05-17T21:58:02Z",
     "description": "Sample description",
     "name": "Sample asset",
     "type": "dataset",
@@ -178,7 +180,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
 | **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
 | **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**            | [string](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
+| **`files`**            | [string](#files)            | **✓**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
 
@@ -349,25 +351,25 @@ The checksum hash is used when publishing/updating metadata using the `setMetaDa
 
 ```solidity
 event MetadataCreated(
-address indexed createdBy,
-uint8 state,
-string decryptorUrl,
-bytes flags,
-bytes data,
-bytes metaDataHash,
-uint256 timestamp,
-uint256 blockNumber
+  address indexed createdBy,
+  uint8 state,
+  string decryptorUrl,
+  bytes flags,
+  bytes data,
+  bytes metaDataHash,
+  uint256 timestamp,
+  uint256 blockNumber
 );
 
 event MetadataUpdated(
-address indexed updatedBy,
-uint8 state,
-string decryptorUrl,
-bytes flags,
-bytes data,
-bytes metaDataHash,
-uint256 timestamp,
-uint256 blockNumber
+  address indexed updatedBy,
+  uint8 state,
+  string decryptorUrl,
+  bytes flags,
+  bytes data,
+  bytes metaDataHash,
+  uint256 timestamp,
+  uint256 blockNumber
 );
 ```
 
@@ -402,7 +404,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 | **`symbol`**  | `string`               | Symbol of NFT set in contract.                                            |
 | **`owner`**   | `string`               | ETH account address of the NFT owner.                                     |
 | **`state`**   | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
-| **`created`** | `ISO Date Time string` | Contains the date of nft creation                                         |
+| **`created`** | `ISO Date Time string` | Contains the date of NFT creation                                         |
 
 Example:
 
@@ -414,7 +416,7 @@ Example:
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
     "state": 0,
-    "created": "2000-10-31T01:30:00"
+    "created": "2000-10-31T01:30:00Z"
   }
 }
 ```
