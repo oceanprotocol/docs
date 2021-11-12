@@ -478,13 +478,15 @@ The `stats` section contains different statistics fields.
 | Attribute      | Type     | Description                                                                                                   |
 | -------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
 | **`consumes`** | `number` | How often an asset was consumed, meaning how often it was either downloaded or used as part of a compute job. |
+| **`isInPurgatory`** | `string`  | If asset is listed in purgatory and reason |
 
 Example:
 
 ```json
 {
   "stats": {
-    "consumes": 4
+    "consumes": 4,
+    "isInPurgatory": "false"
   }
 }
 ```
@@ -598,7 +600,8 @@ Example:
   },
 
   "stats": {
-    "consumes": 4
+    "consumes": 4,
+    "isInPurgatory": "false"
   }
 }
 ```
