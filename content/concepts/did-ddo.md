@@ -179,7 +179,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
 | **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
 | **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
+| **`files`**            | [string](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                             |
 
