@@ -438,7 +438,7 @@ Example:
 {
   "datatokens": [
     {
-      "adddress": "0x000000",
+      "address": "0x000000",
       "name": "Datatoken 1",
       "symbol": "DT-1",
       "serviceId": "1"
