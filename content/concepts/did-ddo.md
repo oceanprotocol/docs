@@ -444,7 +444,7 @@ Example:
       "serviceId": "1"
     },
     {
-      "adddress": "0x000001",
+      "address": "0x000001",
       "name": "Datatoken 2",
       "symbol": "DT-2",
       "serviceId": "2"
@@ -568,7 +568,7 @@ Example:
 
   // Enhanced Aquarius response begins here
   "nft": {
-    "adddress": "0x000000",
+    "address": "0x000000",
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
@@ -578,13 +578,13 @@ Example:
 
   "datatokens": [
     {
-      "adddress": "0x000000",
+      "address": "0x000000",
       "name": "Datatoken 1",
       "symbol": "DT-1",
       "serviceId": "1"
     },
     {
-      "adddress": "0x000001",
+      "address": "0x000001",
       "name": "Datatoken 2",
       "symbol": "DT-2",
       "serviceId": "2"
