@@ -411,7 +411,7 @@ Example:
 ```json
 {
   "nft": {
-    "adddress": "0x000000",
+    "address": "0x000000",
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
