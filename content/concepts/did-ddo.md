@@ -62,7 +62,7 @@ In Ocean, a DID is a string that looks like this:
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-The part after `did:op:` is the checksum of the ERC721 contract address and the chain the asset has been published to:
+The part after `did:op:` is the checksum of the ERC721 contract address and the chainId (expressed as decimal) the asset has been published to:
 
 ```js
 const checksum = sha256(ERC721 contract address + chainId)
