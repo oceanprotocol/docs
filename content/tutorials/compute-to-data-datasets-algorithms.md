@@ -20,3 +20,8 @@ For each dataset, publishers can choose to allow various permission levels for a
 - allow raw algorithms, for advanced use cases circumventing algorithm as an asset type, but most prone to data escape
 
 All implementations should set permissions to private by default: upon publishing a compute dataset, no algorithms should be allowed to run on it. This is to prevent data escape by a rogue algorithm being written in a way to extract all data from a dataset.
+
+## DDO Links
+
+- [Algorithm DDO](/concepts/ddo-metadata/#fields-when-attributesmaintype--algorithm)
+- [Compute DDO](/concepts/ddo-metadata/#fields-when-attributesmaintype--compute)

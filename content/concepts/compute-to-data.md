@@ -24,6 +24,6 @@ The most basic scenario for a Publisher is to provide access to the datasets the
 
 - [Compute-to-Data architecture](/tutorials/compute-to-data-architecture/)
 - [Tutorial: Writing Algorithms](/tutorials/compute-to-data-algorithms/)
-- [Tutorial: Set Up a Compute-to-Data Environment](/tutorials/compute-to-data/)
+- [Tutorial: Set Up a Compute-to-Data Environment](/tutorials/compute-to-data-minikube/)
 - [Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com)
 - [(Old) Compute-to-Data specs](https://github.com/oceanprotocol-archive/OEPs/tree/master/12) (OEP12)
