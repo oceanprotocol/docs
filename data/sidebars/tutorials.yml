@@ -44,8 +44,6 @@
     - title: Datasets and algorithms
       link: /tutorials/compute-to-data-datasets-algorithms/
     - title: Run a Compute-to-Data Environment
-      link: /tutorials/compute-to-data/
-    - title: Minikube Compute-to-Data Environment
       link: /tutorials/compute-to-data-minikube/
 
 - group: Storage Setup
