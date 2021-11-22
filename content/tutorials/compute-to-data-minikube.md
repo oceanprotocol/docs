@@ -61,6 +61,37 @@ sudo /bin/sh -c 'echo "127.0.0.1    youripfsserver" >> /etc/hosts'
 
 ```
 
+## Storage class (Optional)
+
+For minikube, you can use the default 'standard' class.
+
+For AWS, please make sure that your class allocates volumes in the same region and zone in which you are running your pods.
+
+We created our own 'standard' class in AWS:
+
+```bash
+kubectl get storageclass standard -o yaml
+```
+
+```yaml
+allowedTopologies:
+- matchLabelExpressions:
+    - key: failure-domain.beta.kubernetes.io/zone
+          values:
+          - us-east-1a
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+parameters:
+    fsType: ext4
+    type: gp2
+provisioner: kubernetes.io/aws-ebs
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+```
+
+For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
+
+
 ## Download and Configure Operator Service
 
 Open new terminal and run the command below.
