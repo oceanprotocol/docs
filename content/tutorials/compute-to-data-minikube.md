@@ -51,6 +51,7 @@ watch kubectl get pods --all-namespaces
 ```
 
 ### Run IPFS host
+
 ```bash
 export ipfs_staging=~/ipfs_staging
 export ipfs_data=~/ipfs_data
@@ -91,10 +92,10 @@ volumeBindingMode: Immediate
 
 For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
 
-
 ## Download and Configure Operator Service
 
 Open new terminal and run the command below.
+
 ```bash
 git clone https://github.com/oceanprotocol/operator-service.git
 ```
