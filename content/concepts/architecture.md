@@ -26,7 +26,7 @@ The rest of this page elaborates.
 ## DataNFT
 
 DataNFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new DataNFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other ethereum addresses who can deploy new Datatoken contracts and even mint them. Each Datatoken contract is associated with one DataNFT contract.
-Click [here](/concepts/nft/) to further read about DataNFTs and Datatokens.
+Click [here](/concepts/data-nft/) to further read about DataNFTs and Datatokens.
 
 
 ## Datatokens & Access Control Tools
