@@ -1,23 +1,33 @@
 ---
 title: Architecture Overview
-description: Simplicity and Interoperability via a Datatokens Core
+description: Simplicity and Interoperability via a DataNFT Core
 ---
 
 ## Overview
 
 Here is the Ocean architecture.
 
-![Ocean Protocol tools architecture](images/architecture.PNG)
+![Ocean Protocol tools architecture](images/architecture.png)
 
 Here’s an overview of the figure.
 
-- The top layer is **applications** like Ocean Market. With these apps, users can onboard data services into crypto (publish and mint datatokens), hold datatokens as assets (data wallets), discover data assets and buy / sell datatokens for fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
-- Below that are **libraries** used by the applications: Ocean React hooks, JavaScript library, and Python library. This also includes middleware to assist discovery: Aquarius and (3rd party tool) TheGraph.
-- The lowest level has the **smart contracts** used by the libraries. They’re deployed on Ethereum mainnet to start, and other networks later.
+- The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, alogrithm, compute-to-data into crypto (publish and mint DataNFTs and Datatokens), hold datatokens as assets (data wallets), discover assets and buy / sell datatokens for fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
+- Below that are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
+    - **Aquarius**: Provides metadata cache for faster serach by caching on-chain data into elasticsearch
+    - **Provider**: Facilitates downloading assets, DDO encryption and communicating with `operater-service` for Compute-to-Data jobs.
+    - **TheGraph**: 3rd party tool
+Developers can utilize the libraries to built thier custom applications and marketplaces.
+- The lowest level has the **smart contracts** used by the libraries. They’re deployed on Ethereum mainnet, and other compatible networks. To see the list of supported networks click [here](/concepts/networks/).
 
-Left to right are groupings of functionality: tools for datatokens, tools for markets (including pools), tools to consume data services and for metadata, and external ERC20 tools.
+Left to right are groupings of functionality: tools for datatokens, tools for markets (including pools), tools to consume data services and for metadata, and external ERC20, ERC721 tools.
 
 The rest of this page elaborates.
+
+## DataNFT
+
+DataNFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new DataNFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Each DataNFT has a unique identifier. Publisher can then assign manager role to other ethereum addresses who can deploy new Datatoken contracts and even mint them. Each Datatoken contract is associated with one DataNFT contract.
+Click [here](/concepts/nft/) to further read about DataNFTs and Datatokens.
+
 
 ## Datatokens & Access Control Tools
 
