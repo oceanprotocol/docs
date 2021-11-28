@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import slugify from 'slugify'
 import styles from './Paths.module.scss'
 import stylesDoc from '../Doc.module.scss'
-
+const ResponseExample = React.lazy(() => import('./ResponseExample'))
 const ParameterExample = ({ properties }) => (
   //
   // HEADS UP!
@@ -87,16 +87,28 @@ Parameters.propTypes = {
   parameters: PropTypes.array.isRequired
 }
 
-const Responses = ({ responses }) => (
-  <>
-    <h4 className={styles.subHeading}>Responses</h4>
-    {Object.keys(responses).map((key) => (
-      <div key={key} className={styles.response}>
-        <code>{key}</code> {responses[key].description}
-      </div>
-    ))}
-  </>
-)
+const Responses = ({ responses }) => {
+  const isSSR = typeof window === 'undefined'
+
+  return (
+    <>
+      <h4 className={styles.subHeading}>Responses</h4>
+      {Object.keys(responses).map((key) => (
+        <div key={key} className={styles.response}>
+          <code>{key}</code> {responses[key].description}
+          <br />
+          <>
+            {!isSSR && (
+              <React.Suspense fallback={<div />}>
+                <ResponseExample examples={responses[key].example} />
+              </React.Suspense>
+            )}
+          </>
+        </div>
+      ))}
+    </>
+  )
+}
 
 Responses.propTypes = {
   responses: PropTypes.object.isRequired
@@ -104,7 +116,6 @@ Responses.propTypes = {
 
 const Method = ({ keyName, value }) => {
   const { summary, description, parameters, responses } = value
-
   return (
     <div className={styles.method}>
       <h3 className={styles.pathMethod} data-type={keyName}>

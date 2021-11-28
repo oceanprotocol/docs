@@ -48,7 +48,9 @@ const Header = () => (
                   {node.title}
                 </Link>
               ))}
-              <SearchButton />
+              <div className={styles.section}>
+                <SearchButton />
+              </div>
             </nav>
           </div>
         </header>

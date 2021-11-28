@@ -1,33 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import * as JsSearch from 'js-search'
 import PropTypes from 'prop-types'
-import { makeStyles } from '@material-ui/core/styles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import TextField from '@material-ui/core/TextField'
-import InputAdornment from '@material-ui/core/InputAdornment'
-import SearchIcon from '@material-ui/icons/Search'
 import SearchResultElement from './SearchResultElement'
-
-const useStyles = makeStyles((theme) => ({
-  parent: {
-    overflow: 'hidden',
-    position: 'relative',
-    width: '100%'
-  },
-  child: {
-    background: 'green',
-    height: '100%',
-    width: '50%',
-    position: 'absolute',
-    right: 0,
-    top: 0
-  },
-  root: {
-    margin: 'auto',
-    width: '50%'
-  }
-}))
+import { ReactComponent as SearchIcon } from '../../images/search.svg'
+import styles from './SearchComponent.module.scss'
 
 const SearchClient = ({ searchableData }) => {
   const [searchState, setSearchState] = useState({
@@ -43,19 +19,11 @@ const SearchClient = ({ searchableData }) => {
     touched: false
   })
 
-  const classes = useStyles()
-
   useEffect(() => {
     rebuildIndex(searchableData)
   }, [])
 
   const rebuildIndex = (searchableData) => {
-    // const {
-    //   removeStopWords,
-    //   selectedStrategy,
-    //   selectedSanitizer,
-    //   termFrequency
-    // } = searchState
     const dataToSearch = new JsSearch.Search('title')
     dataToSearch.addIndex('title')
     dataToSearch.addIndex('description')
@@ -84,39 +52,24 @@ const SearchClient = ({ searchableData }) => {
   }
 
   return (
-    <div style={{ height: '100%' }}>
+    <div>
       <form onSubmit={handleSubmit}>
-        <TextField
-          variant="outlined"
-          placeholder="Search"
-          style={{
-            margin: '10px auto',
-            width: '100%'
-          }}
-          autoFocus
-          value={searchState.searchQuery}
-          onChange={searchData}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            )
-          }}
-        />
+        <div id="search-container" className={styles.searchTextboxContainer}>
+          <SearchIcon className={styles.searchBoxImg} />
+          <input
+            className={styles.searchTextInput}
+            placeholder="Search"
+            type="text"
+            autoFocus
+            value={searchState.searchQuery}
+            onChange={searchData}
+          />
+        </div>
       </form>
 
-      <div
-        id="result-list-conatiner"
-        style={{ overflowY: 'auto', height: '100%' }}
-        className={classes.parent}
-      >
-        {searchState.touched ? (
-          <div>
-            <ResultList searchResults={searchState.searchResults} />
-          </div>
-        ) : null}
-      </div>
+      {searchState.touched ? (
+        <ResultList searchResults={searchState.searchResults} />
+      ) : null}
     </div>
   )
 }
@@ -127,18 +80,15 @@ SearchClient.propTypes = {
 
 const ResultList = ({ searchResults }) => {
   return (
-    <div style={{ maxHeight: '100%' }}>
-      <div>Total results found: {searchResults.length}</div>
-
-      <div>
-        <List style={{ maxHeight: '100%' }}>
-          {searchResults.map((element) => (
-            <ListItem style={{ before: { content: null } }} key={element.id}>
-              <SearchResultElement element={element} />
-            </ListItem>
-          ))}
-        </List>
-      </div>
+    <div>
+      <p>Total results found: {searchResults.length}</p>
+      <ul>
+        {searchResults.map((element) => (
+          <li className={styles.resultListElement} key={element.id}>
+            <SearchResultElement element={element} />
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

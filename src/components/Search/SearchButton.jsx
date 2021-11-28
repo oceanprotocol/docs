@@ -1,13 +1,16 @@
 import React from 'react'
 import { navigate } from 'gatsby'
+import styles from './SearchComponent.module.scss'
+import { ReactComponent as SearchIcon } from '../../images/search.svg'
 
-import { IconButton } from '@material-ui/core'
-import SearchIcon from '@material-ui/icons/Search'
 const SearchButton = () => {
   return (
-    <IconButton onClick={() => navigate('/search')}>
-      <SearchIcon />
-    </IconButton>
+    <div className={styles.searchButtonWrapper}>
+      <SearchIcon
+        className={styles.searchButton}
+        onClick={() => navigate('/search')}
+      />
+    </div>
   )
 }
 export default SearchButton

@@ -1,10 +1,65 @@
 @import 'variables';
 
-.searchform input[type='text'] {
-  float: right;
-  padding: 6px;
+.searchButtonWrapper {
+  display: 'flex';
+  align-items: 'center';
+}
+
+.searchButton {
+  cursor: pointer;
+}
+
+.searchPage {
+  min-height: $spacer * 50;
+  width: 50%;
+  margin: auto;
+}
+
+.searchTextboxContainer {
+  display: flex;
+  border: $brand-border-width solid;
+  width: 100%;
+  margin-bottom: $spacer * 0.5;
+  border-radius: $border-radius;
+}
+
+.searchTextInput {
+  width: 100%;
+  padding: $spacer * 0.1;
   border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+  outline: none;
+  font-size: medium;
+}
+
+.searchBoxImg {
+  padding: 0.75rem;
+  min-width: $spacer * 1.25;
+  text-align: center;
+}
+
+.resultListElement {
+  &:before {
+    content: '';
+  }
+}
+
+.resultBox {
+  composes: box from '../../styles/box.module.scss';
+
+  .section {
+    margin: 0;
+    font-size: $font-size-small;
+    color: $brand-grey-dark;
+  }
+
+  .title {
+    font-size: $font-size-large;
+    margin: 0;
+  }
+
+  .content {
+    font-size: $font-size-small;
+    margin: 0;
+    color: $brand-grey-dark;
+  }
 }

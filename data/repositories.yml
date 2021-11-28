@@ -5,7 +5,6 @@
         - name: Reference
           url: /references/ocean.js/
     - name: ocean.py
-    - name: react
 
 - group: Core
   items:

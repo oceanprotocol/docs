@@ -26,11 +26,9 @@ const HeaderHome = () => (
             <Logo className={styles.headerLogo} />
             <h1 className={styles.headerTitle}>{siteTitle}</h1>
             <p className={styles.headerDescription}>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                {siteDescription}
-                <div>
-                  <SearchButton />
-                </div>
+              {siteDescription}
+              <div className={styles.searchButtonContainer}>
+                <SearchButton />
               </div>
             </p>
           </Content>
