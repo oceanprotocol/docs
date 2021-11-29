@@ -262,6 +262,7 @@ Example:
 {
   "services": [
     {
+      "id": "1",
       "type": "access",
       "files": "0x044736da6dae39889ff570c34540f24e5e084f...",
       "name": "Download service",
@@ -271,6 +272,7 @@ Example:
       "timeout": 0
     },
     {
+      "id": "2",
       "type": "compute",
       "files": "0x6dd05e0edb460623c843a263291ebe757c1eb3...",
       "name": "Compute service",
@@ -471,6 +473,34 @@ Example:
 }
 ```
 
+### Purgatory
+
+Contains information about an asset's purgatory status defined in [`list-purgatory`](https://github.com/oceanprotocol/list-purgatory). Marketplace interfaces are encouraged to prevent certain user actions like adding liquidity on assets in purgatory.
+
+| Attribute    | Type      | Description                                                                                   |
+| ------------ | --------- | --------------------------------------------------------------------------------------------- |
+| **`state`**  | `boolean` | If `true`, asset is in purgatory.                                                             |
+| **`reason`** | `string`  | If asset is in purgatory, contains the reason for being there as defined in `list-purgatory`. |
+
+Example:
+
+```json
+{
+  "purgatory": {
+    "state": true,
+    "reason": "Copyright violation"
+  }
+}
+```
+
+```json
+{
+  "purgatory": {
+    "state": false
+  }
+}
+```
+
 ### Statistics
 
 The `stats` section contains different statistics fields.
@@ -478,15 +508,13 @@ The `stats` section contains different statistics fields.
 | Attribute      | Type     | Description                                                                                                   |
 | -------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
 | **`consumes`** | `number` | How often an asset was consumed, meaning how often it was either downloaded or used as part of a compute job. |
-| **`isInPurgatory`** | `string`  | If asset is listed in purgatory and reason |
 
 Example:
 
 ```json
 {
   "stats": {
-    "consumes": 4,
-    "isInPurgatory": "false"
+    "consumes": 4
   }
 }
 ```
@@ -510,6 +538,7 @@ Example:
   },
   "services": [
     {
+      "id": "1",
       "type": "access",
       "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
       "name": "Download service",
@@ -519,6 +548,7 @@ Example:
       "timeout": 0
     },
     {
+      "id": "2",
       "type": "compute",
       "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
       "name": "Compute service",
@@ -573,7 +603,8 @@ Example:
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
     "state": 0,
-    "created": "2000-10-31T01:30:00"
+    "created": "2000-10-31T01:30:00",
+    "tokenURI": "xxx"
   },
 
   "datatokens": [
@@ -599,9 +630,12 @@ Example:
     "datetime": "2000-10-31T01:30:00"
   },
 
+  "purgatory": {
+    "state": false
+  },
+
   "stats": {
-    "consumes": 4,
-    "isInPurgatory": "false"
+    "consumes": 4
   }
 }
 ```
