@@ -214,15 +214,15 @@ Type of objects supported :
 ```json
 [
    {
-      "url":{
-         "url":"https://url.com/file1.csv",
-         "method":"GET"
+      "url": {
+         "url": "https://url.com/file1.csv",
+         "method": "GET"
       }
    },
    {
-      "url":{
-         "url":"https://url.com/file2.csv",
-         "method":"POST"
+      "url": {
+         "url": "https://url.com/file2.csv",
+         "method": "POST"
       }
    }
 ]
@@ -245,7 +245,7 @@ First class integrations supported in the future :
 
  ```json
 [ 
-  { "ipfs": { "hash":"XXX"}}
+  { "ipfs": { "hash": "XXX"}}
 ]
 ```
 
@@ -266,13 +266,13 @@ Example:
 [
    {
       "url":{
-         "url":"https://url.com/file1.csv",
-         "method":"GET"
+          "url": "https://url.com/file1.csv",
+          "method": "GET"
       }
    },
    {
-      "ipfs":{
-         "hash":"XXXX"
+      "ipfs": {
+         "hash": "XXXX"
       }
    }
 ]
@@ -283,12 +283,12 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
 ```json
 [
   {
-    "type":"url",
+    "type": "url",
     "contentLength": 100,
     "contentType": "application/json"
   },
   {
-    "type":"url",
+    "type": "url",
     "contentLength": 130,
     "contentType": "application/text"
   }
