@@ -197,6 +197,8 @@ Example:
 ```
 
 During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of objects defining the storage access details are sent. 
+
+
 Type of objects supported :
 
 <table>
