@@ -1,6 +1,6 @@
 ---
 title: Architecture Overview
-description: Simplicity and Interoperability via a DataNFT Core
+description: Data NFTs and Datatokens architecture
 ---
 
 ## Overview
@@ -11,27 +11,24 @@ Here is the Ocean architecture.
 
 Here’s an overview of the figure.
 
-- The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, alogrithm, compute-to-data into crypto (publish and mint DataNFTs and Datatokens), hold datatokens as assets (data wallets), discover assets and buy / sell datatokens for fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
+- The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, alogrithm, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets and buy / sell datatokens for fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
 - Below that are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
-    - **Aquarius**: Provides metadata cache for faster serach by caching on-chain data into elasticsearch
+    - **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
     - **Provider**: Facilitates downloading assets, DDO encryption and communicating with `operater-service` for Compute-to-Data jobs.
     - **TheGraph**: 3rd party tool
 Developers can utilize the libraries to built thier custom applications and marketplaces.
 - The lowest level has the **smart contracts** used by the libraries. They’re deployed on Ethereum mainnet, and other compatible networks. To see the list of supported networks click [here](/concepts/networks/).
 
-Left to right are groupings of functionality: tools for datatokens, tools for markets (including pools), tools to consume data services and for metadata, and external ERC20, ERC721 tools.
-
 The rest of this page elaborates.
 
-## DataNFT
+## Data NFTs, Datatokens and Access Control Tools
 
-DataNFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new DataNFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other ethereum addresses who can deploy new Datatoken contracts and even mint them. Each Datatoken contract is associated with one DataNFT contract.
-Click [here](/concepts/data-nft/) to further read about DataNFTs and Datatokens.
+Data NFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new data NFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other ethereum addresses who can deploy new datatoken contracts and even mint them. Each Datatoken contract is associated with one data NFT contract.
+Click [here](/concepts/datanft-and-datatoken/) to further read about data NFTs and datatokens.
 
+ERC721 data NFTs represent holding copyright / base IP of a data asset, and ERC20 datatokens represent licenses to consume the data asset.
 
-## Datatokens & Access Control Tools
-
-The asset can be a dataset or an algorithm. The publisher actor holds the asset in Google Drive, Dropbox, AWS S3, on their phone, on their home server, etc.  The publisher can optionally use IPFS for a content-addressable URL. Or instead of a file, the publisher may run a compute-to-data service.
+Datatoken represents the asset which the publisher want to monetize. The asset can be a dataset or an algorithm. The publisher actor holds the asset in Google Drive, Dropbox, AWS S3, on their phone, on their home server, etc. The publisher can optionally use IPFS for a content-addressable URL. Or instead of a file, the publisher may run a compute-to-data service.
 
 In the **publish** step, the publisher invokes **Ocean Datatoken Factory** to deploy a new datatoken to the chain. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC20 datatoken template**. The publisher then mints datatokens.
 
