@@ -246,6 +246,7 @@ First class integrations supported in the future :
   { "ipfs": { "hash":"XXX"}}
 ]
 ```
+
 </td>
 
 <tr><td>"filecoin"</td><td>Filecoin storage</td><td>&nbsp;</td></tr>
@@ -258,6 +259,7 @@ First class integrations supported in the future :
 A service can contain multiple files, using multiple storage types.
 
 Example:
+
 ```json
 [
    {
