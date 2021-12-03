@@ -257,6 +257,22 @@ First class integrations supported in the future :
 
 A service can contain multiple files, using multiple storage types.
 
+Example:
+```json
+[
+   {
+      "url":{
+         "url":"https://url.com/file1.csv",
+         "method":"GET"
+      }
+   },
+   {
+      "ipfs":{
+         "hash":"XXXX"
+      }
+   }
+]
+```
 
 To get information about the files after encryption, the `/fileinfo` endpoint of _Provider_ returns based on a passed DID an array of file metadata:
 
