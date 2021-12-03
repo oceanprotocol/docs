@@ -278,15 +278,17 @@ Example:
 ]
 ```
 
-To get information about the files after encryption, the `/fileinfo` endpoint of _Provider_ returns based on a passed DID an array of file metadata:
+To get information about the files after encryption, the `/fileinfo` endpoint of _Provider_ returns based on a passed DID an array of file metadata (based on the file type):
 
 ```json
 [
   {
+    "type":"url",
     "contentLength": 100,
     "contentType": "application/json"
   },
   {
+    "type":"url",
     "contentLength": 130,
     "contentType": "application/text"
   }
