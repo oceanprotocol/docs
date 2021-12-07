@@ -203,7 +203,7 @@ Type of objects supported :
 
 <table>
 <tr>
-<th>Key</th>
+<th>Type</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
@@ -214,16 +214,9 @@ Type of objects supported :
 ```json
 [
    {
-      "url": {
-         "url": "https://url.com/file1.csv",
-         "method": "GET"
-      }
-   },
-   {
-      "url": {
-         "url": "https://url.com/file2.csv",
-         "method": "POST"
-      }
+      "type": "url",
+      "url": "https://url.com/file1.csv",
+      "method": "GET"
    }
 ]
 ```
@@ -235,7 +228,7 @@ First class integrations supported in the future :
 
 <table>
 <tr>
-<th>Key</th>
+<th>Type</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
@@ -245,7 +238,10 @@ First class integrations supported in the future :
 
  ```json
 [ 
-  { "ipfs": { "hash": "XXX"}}
+  {
+  "type":"ipfs",
+  "hash": "XXX"
+  }
 ]
 ```
 
@@ -265,15 +261,14 @@ Example:
 ```json
 [
    {
-      "url":{
-          "url": "https://url.com/file1.csv",
-          "method": "GET"
-      }
+      "type": "url",
+      "url": "https://url.com/file1.csv",
+      "method": "GET"
+
    },
    {
-      "ipfs": {
-         "hash": "XXXX"
-      }
+      "type": "ipfs",
+      "hash": "XXXX"
    }
 ]
 ```
@@ -288,7 +283,7 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
     "contentType": "application/json"
   },
   {
-    "type": "url",
+    "type": "ipfs",
     "contentLength": 130,
     "contentType": "application/text"
   }
