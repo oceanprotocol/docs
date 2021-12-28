@@ -116,5 +116,7 @@ The Operator Engine is in charge of retrieving all the workflows registered in a
 
 - [Tutorial: Writing Algorithms](/tutorials/compute-to-data-algorithms/)
 - [Tutorial: Set Up a Compute-to-Data Environment](/tutorials/compute-to-data/)
-- [Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com)
+- [Use Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com/compute-to-data-is-now-available-in-ocean-market-58868be52ef7)
+- [Build ML models via Ocean Market or Python](https://medium.com/ravenprotocol/machine-learning-series-using-logistic-regression-for-classification-in-oceans-compute-to-data-18df49b6b165)
+- [Compute-to-Data Python Quickstart](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/c2d-flow.md)
 - [(Old) Compute-to-Data specs](https://github.com/oceanprotocol-archive/OEPs/tree/master/12) (OEP12)

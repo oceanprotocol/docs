@@ -108,7 +108,7 @@ Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet a
 
 ## Energy Web Chain
 
-Ocean is deployed to [Energy Web Chain](https://www.energyweb.org/technology/energy-web-chain/), another production network. Energy Web's native token is EWT.
+Ocean is deployed to [Energy Web Chain](https://energy-web-foundation.gitbook.io/energy-web/technology/the-stack/trust-layer-energy-web-chain), another production network. Energy Web's native token is EWT.
 
 If you don't find Energy Web Chain as a predefined network in your wallet, you can connect to it manually via [Ocean's guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
 
@@ -232,7 +232,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 Mumbai is a test network tuned for Matic / Polygon.
 
-If you don't find Mumbai as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.matic.network/docs/develop/metamask/config-matic/).
+If you don't find Mumbai as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
 **Tokens**
 
