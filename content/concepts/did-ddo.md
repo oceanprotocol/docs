@@ -62,7 +62,7 @@ In Ocean, a DID is a string that looks like this:
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-The part after `did:op:` is the checksum of the ERC721 contract address and the chainId (expressed as decimal) the asset has been published to:
+The part after `did:op:` is the the ERC721 contract address(in checksum format) and the chainId (expressed as decimal) the asset has been published to:
 
 ```js
 const checksum = sha256(ERC721 contract address + chainId)
@@ -82,6 +82,7 @@ A DDO in Ocean has these required attributes:
 | **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                                    |
 | **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.0.0`. |
 | **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                                        |
+| **`nftAddress`**  | `string`                    | NFT contract linked to this asset                                                                              |
 | **`metadata`**    | [Metadata](#metadata)       | Stores an object describing the asset.                                                                         |
 | **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                                      |
 | **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
@@ -600,6 +601,7 @@ Example:
   "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
   "version": "4.0.0",
   "chainId": 1,
+  "nftAddress": "0x123",
   "metadata": {
     "created": "2020-11-15T12:27:48Z",
     "updated": "2021-05-17T21:58:02Z",
@@ -671,7 +673,7 @@ Example:
 
   // Enhanced Aquarius response begins here
   "nft": {
-    "address": "0x000000",
+    "address": "0x123",
     "name": "Ocean Protocol Asset v4",
     "symbol": "OCEAN-A-v4",
     "owner": "0x0000000",
