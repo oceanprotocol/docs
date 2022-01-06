@@ -299,12 +299,6 @@ An asset with a service of `type` `compute` has the following additional attribu
 
 | Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                                                                                                                                          |
 | ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`namespace`**                            | `string`                              | **✓**    | Namespace used for the compute job. Defaults to 'ocean-compute'.                                                                                                                                                                                                                                                                     |
-| **`cpus`**                                 | `number`                              |          | Maximum number of CPUs allocated for a job.                                                                                                                                                                                                                                                                                          |
-| **`gpus`**                                 | `number`                              |          | Maximum number of GPUs allocated for a job.                                                                                                                                                                                                                                                                                          |
-| **`gpuType`**                              | `string`                              |          | Type of GPU (if any).                                                                                                                                                                                                                                                                                                                |
-| **`memory`**                               | `string`                              |          | Maximum amount of memory allocated for a job. You can express memory as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. For example, the following represent roughly the same value: 128974848, 129e6, 129M, 123Mi. |
-| **`volumeSize`**                           | `string`                              |          | Amount of disk space allocated. You can express it as a plain integer or as a fixed-point number using one of these suffixes: E, P, T, G, M, k. You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.                                                                                                               |
 | **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations.                                                                                                            |
 | **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                                                                                                                               |
 | **`publisherTrustedAlgorithmPublishers `** | Array of `string`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed.                                                                                                                                                                                                              |
@@ -355,12 +349,6 @@ Example:
       "serviceEndpoint": "https://myprovider.com",
       "timeout": 0,
       "compute": {
-        "namespace": "ocean-compute",
-        "cpus": 2,
-        "gpus": 4,
-        "gpuType": "NVIDIA Tesla V100 GPU",
-        "memory": "128M",
-        "volumeSize": "2G",
         "allowRawAlgorithm": false,
         "allowNetworkAccess": true,
         "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
@@ -632,12 +620,6 @@ Example:
       "serviceEndpoint": "https://myprovider.com",
       "timeout": 3600,
       "compute": {
-        "namespace": "ocean-compute",
-        "cpus": 2,
-        "gpus": 4,
-        "gpuType": "NVIDIA Tesla V100 GPU",
-        "memory": "128M",
-        "volumeSize": "2G",
         "allowRawAlgorithm": false,
         "allowNetworkAccess": true,
         "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
