@@ -108,7 +108,7 @@ Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet a
 
 ## Energy Web Chain
 
-Ocean is deployed to [Energy Web Chain](https://www.energyweb.org/technology/energy-web-chain/), another production network. Energy Web's native token is EWT.
+Ocean is deployed to [Energy Web Chain](https://energy-web-foundation.gitbook.io/energy-web/technology/the-stack/trust-layer-energy-web-chain), another production network. Energy Web's native token is EWT.
 
 If you don't find Energy Web Chain as a predefined network in your wallet, you can connect to it manually via [Ocean's guide](/tutorials/metamask-setup/#set-up-custom-network) and the parameters below.
 
@@ -232,7 +232,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 Mumbai is a test network tuned for Matic / Polygon.
 
-If you don't find Mumbai as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.matic.network/docs/develop/metamask/config-matic/).
+If you don't find Mumbai as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
 **Tokens**
 
@@ -251,6 +251,30 @@ If you don't find Mumbai as a predefined network in your wallet, you can connect
 | Ocean Market | Point wallet to Mumbai network, at https://market.oceanprotocol.com |
 | Provider     | `https://provider.mumbai.oceanprotocol.com`                         |
 | Subgraph     | `https://subgraph.mumbai.oceanprotocol.com`                         |
+
+## Celo Alfajores
+
+Alfajores is a Celo test network for developers building on the Celo platform.
+
+Celo docs: https://docs.celo.org/.
+
+Wallet setup: https://celo.org/developers/wallet
+
+**Tokens**
+
+- Alfajores CELO:
+  - Native token to pay transaction fees
+  - [Faucet](https://celo.org/developers/faucet).
+- Alfajores OCEAN:
+  - Address: [0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8](https://alfajores-blockscout.celo-testnet.org/address/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8/)
+
+
+**Additional Components**
+
+| What         | URL                                                                 |
+| ------------ | ------------------------------------------------------------------- |
+| Explorer     | https://alfajores-blockscout.celo-testnet.org/                      |
+
 
 ## Local / Ganache
 
