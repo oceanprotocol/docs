@@ -4,11 +4,12 @@ description: Learn how to setup own docker registry and push images for running 
 ---
 
 ## Prerequisites
+
 1. Running docker environment on the server.
 2. Domain name is mapped to the server IP address.
 3. SSL certificate
 
-## Step 1: Generate password file
+## Generate password file
 
 Replace content in `<>` with appropriate content.
 

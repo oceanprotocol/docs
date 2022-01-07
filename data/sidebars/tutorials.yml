@@ -45,6 +45,8 @@
       link: /tutorials/compute-to-data-datasets-algorithms/
     - title: Writing Algorithms
       link: /tutorials/compute-to-data-algorithms/
+    - title: Setting up docker registry
+      link: /tutorials/compute-to-data-docker-registry/
 
 - group: Storage Setup
   items:
