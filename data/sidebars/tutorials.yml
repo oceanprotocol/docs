@@ -37,12 +37,16 @@
 
 - group: Compute-to-Data
   items:
+    - title: Architecture Overview
+      link: /tutorials/compute-to-data-architecture/
+    - title: Run a Compute-to-Data Environment
+      link: /tutorials/compute-to-data-minikube/
+    - title: Datasets and algorithms
+      link: /tutorials/compute-to-data-datasets-algorithms/
     - title: Writing Algorithms
       link: /tutorials/compute-to-data-algorithms/
-    - title: Run a Compute-to-Data Environment
-      link: /tutorials/compute-to-data/
-    - title: Minikube Compute-to-Data Environment
-      link: /tutorials/compute-to-data-minikube/
+    - title: Setting up docker registry
+      link: /tutorials/compute-to-data-docker-registry/
 
 - group: Storage Setup
   items:
