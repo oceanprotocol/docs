@@ -137,7 +137,9 @@ http {
 docker-compose -f docker-compose.yml up 
 ```
 
-## Login to registry
+## Working with registry
+
+### Login to registry
 
 ```bash
 docker login admin.example.com -u <username> -p <password>
@@ -152,13 +154,13 @@ docker build . -t admin.example.com/my-algo:latest
 docker image push admin.example.com/my-algo:latest
 ```
 
-## List images in the registry
+### List images in the registry
 
 ```bash
 curl -X GET -u <username>:<password> https://example.com/v2/_catalog
 ```
 
-## Pull an image from the registry
+### Pull an image from the registry
 
 Use the commands below to build an image from a `Dockerfile` and push it to your private registry.
 
@@ -172,6 +174,6 @@ You can publish an algorithm asset with the metadata containing registry URL, im
 
 ## Further references
 
-[Setup Compute-to-Data environment](/tutorials/compute-to-data-minikube/)
-[Writing algorithms](/tutorials/compute-to-data-algorithms/)
-[C2D example](/references/read-the-docs/ocean-py/READMEs/c2d-flow.md)
+- [Setup Compute-to-Data environment](/tutorials/compute-to-data-minikube/)
+- [Writing algorithms](/tutorials/compute-to-data-algorithms/)
+- [C2D example](/references/read-the-docs/ocean-py/READMEs/c2d-flow.md)
