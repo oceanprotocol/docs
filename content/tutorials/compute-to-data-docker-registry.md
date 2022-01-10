@@ -7,16 +7,16 @@ The tutorial provides the steps to setup a private docker registry on the server
 
 To implement this use case, 2 domains will be required:
 
-- **example.com**: This domain will allow only image pull operations 
+- **example.com**: This domain will allow only image pull operations
 - **admin.example.com**: This domain will allow image push/pull operations only to the authenticated users.
 
 _Note: Please change the domain names to your application-specific domain names._
 
 ## Prerequisites
 
-1. Running docker environment on the linux server.
-2. 2 domain names is mapped to the same server IP address.
-3. SSL certificate
+- Running docker environment on the linux server.
+- Docker compose is installed.
+- 2 domain names is mapped to the same server IP address.
 
 ## Generate certificates
 
@@ -89,6 +89,8 @@ services:
 ```
 
 ## Nginx configuration
+
+Copy the below nginx configuration to a `nginx.conf` file.
 
 ```conf
 events {}
