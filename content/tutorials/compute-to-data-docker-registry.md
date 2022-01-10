@@ -79,7 +79,7 @@ services:
 
 ## Nginx configuration
 
-```
+```conf
 events {}
 http {
   access_log /app/logs/access.log;
