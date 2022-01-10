@@ -173,7 +173,12 @@ docker image pull example.com/my-algo:latest
 
 ## Next step
 
-You can publish an algorithm asset with the metadata containing registry URL, image, and tag information to enable users to run C2D jobs. 
+You can publish an algorithm asset with the metadata containing registry URL, image, and tag information to enable users to run C2D jobs.
+
+## Other alternatives
+
+Some use cases might require that image `pull` operations are also restricted to authenticated servers/users. To allow the compute-to-data environment to pull images from the private registry, add `imagePullSecrets` to the compute job template file [here](https://github.com/oceanprotocol/operator-engine/blob/main/operator_engine/templates/configure-job-template.yaml). 
+You can generate the registry secret in the compute environment namespace by following these [steps](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/).  
 
 ## Further references
 
