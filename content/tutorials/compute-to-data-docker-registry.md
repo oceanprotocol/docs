@@ -3,13 +3,23 @@ title: Setting up private docker registry for Compute-to-Data environment
 description: Learn how to setup your own docker registry and push images for running algorithms in a C2D environment.
 ---
 
+The tutorial provides the steps to setup a private docker registry on the server. The document is intended for a production setup where anyone can pull the image from the registry but, only authenticated users will push images to the registry.
+
+To implement this use case, 2 domains will be required:
+
+- example.com: This domain will allow only image pull operations 
+- admin.example.com: This domain will allow image push/pull operations only to the authenticated users.
+
+_Note: Please change the domain names to your application-specific domain names._
+
 ## Prerequisites
 
 1. Running docker environment on the server.
-2. Domain name is mapped to the server IP address.
+2. 2 domain names is mapped to the same server IP address.
 3. SSL certificate
 
 ## Generate certificates
+
 
 ```bash
 # install certbot: https://certbot.eff.org/
@@ -127,30 +137,41 @@ http {
 docker-compose -f docker-compose.yml up 
 ```
 
+## Login to registry
+
+```bash
+docker login admin.example.com -u <username> -p <password>
+```
+
+### Build and push an image to the registry
+
+Use the commands below to build an image from a `Dockerfile` and push it to your private registry.
+
+```bash
+docker build . -t admin.example.com/my-algo:latest
+docker image push admin.example.com/my-algo:latest
+```
+
 ## List images in the registry
 
 ```bash
 curl -X GET -u <username>:<password> https://example.com/v2/_catalog
 ```
 
-## Other useful commands
+## Pull an image from the registry
 
-### Login to registry
-
-```bash
-docker login example.com -u <username> -p <password>
-```
-
-### Build and push an image to the registry
-
-Use the commands below to build an image from a  `Dockerfile` and push it to your private registry.
+Use the commands below to build an image from a `Dockerfile` and push it to your private registry.
 
 ```bash
-docker build . -t example.com/my-algo:latest
-
-docker image tag example.com/my-algo:latest
+docker image pull example.com/my-algo:latest
 ```
 
 ## Next step
 
 You can publish an algorithm asset with the metadata containing registry URL, image, and tag information to enable users to run C2D jobs. 
+
+## Further references
+
+[Setup Compute-to-Data environment](/tutorials/compute-to-data-minikube/)
+[Writing algorithms](/tutorials/compute-to-data-algorithms/)
+[C2D example](/references/read-the-docs/ocean-py/READMEs/c2d-flow.md)
