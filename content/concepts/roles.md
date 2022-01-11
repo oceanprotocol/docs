@@ -1,6 +1,6 @@
 ---
 title: Data NFTs and datatoken roles
-description: The permssions stored on chain in the contracts control the access to the data NFT (ERC721) and datatoken (ERC20) smart contract functions. 
+description: The permissions stored on chain in the contracts control the access to the data NFT (ERC721) and datatoken (ERC20) smart contract functions. 
 ---
 
 The permissions are stored in the data NFT (ERC721) smart contract. The data NFT (ERC721) and datatoken (ERC20) smart contracts both use this information to restrict access to the smart contract functions. The tables below list restricted actions that are accessible only to the allowed users.
