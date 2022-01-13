@@ -24,7 +24,77 @@ wget -q --show-progress https://github.com/kubernetes/minikube/releases/download
 sudo dpkg -i minikube_1.22.0-0_amd64.deb
 ```
 
+## Start Minikube
+
+First command is imporant, and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828). 
+
+```bash
+minikube config set kubernetes-version v1.16.0
+minikube start --cni=calico --driver=docker --container-runtime=docker
+```
+
+## Install kubectl
+
+```bash
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+echo "$(<kubectl.sha256) kubectl" | sha256sum --check
+
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+```
+
+
+Wait untill all the defaults are running (1/1).
+
+```bash
+watch kubectl get pods --all-namespaces
+```
+
+### Run IPFS host
+
+```bash
+export ipfs_staging=~/ipfs_staging
+export ipfs_data=~/ipfs_data
+
+docker run -d --name ipfs_host -v $ipfs_staging:/export -v $ipfs_data:/data/ipfs -p 4001:4001 -p 4001:4001/udp -p 127.0.0.1:8080:8080 -p 127.0.0.1:5001:5001 ipfs/go-ipfs:latest
+
+sudo /bin/sh -c 'echo "127.0.0.1    youripfsserver" >> /etc/hosts'
+
+```
+
+## Storage class (Optional)
+
+For minikube, you can use the default 'standard' class.
+
+For AWS, please make sure that your class allocates volumes in the same region and zone in which you are running your pods.
+
+We created our own 'standard' class in AWS:
+
+```bash
+kubectl get storageclass standard -o yaml
+```
+
+```yaml
+allowedTopologies:
+- matchLabelExpressions:
+    - key: failure-domain.beta.kubernetes.io/zone
+          values:
+          - us-east-1a
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+parameters:
+    fsType: ext4
+    type: gp2
+provisioner: kubernetes.io/aws-ebs
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+```
+
+For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
+
 ## Download and Configure Operator Service
+
+Open new terminal and run the command below.
 
 ```bash
 git clone https://github.com/oceanprotocol/operator-service.git
@@ -68,30 +138,6 @@ Check the [README](https://github.com/oceanprotocol/operator-engine#customize-yo
 
 At a minimum you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
 
-## Install kubectl
-
-```bash
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
-echo "$(<kubectl.sha256) kubectl" | sha256sum --check
-
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-```
-
-## Start Minikube
-
-First command is imporant, and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828). 
-
-```bash
-minikube config set kubernetes-version v1.16.0
-minikube start --cni=calico --driver=docker --container-runtime=docker
-```
-
-Wait untill all the defaults are running (1/1).
-
-```bash
-watch kubectl get pods --all-namespaces
-```
 
 ## Create namespaces
 
