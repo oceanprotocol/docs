@@ -62,7 +62,7 @@
     "shortid": "^2.2.16",
     "slugify": "^1.6.5",
     "smoothscroll-polyfill": "^0.4.4",
-    "swagger-client": "^3.18.0"
+    "swagger-client": "^3.18.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
