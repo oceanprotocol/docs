@@ -33,6 +33,10 @@ minikube config set kubernetes-version v1.16.0
 minikube start --cni=calico --driver=docker --container-runtime=docker
 ```
 
+Depending on the number of available CPUs, RAM, and the required resources for running the job, consider adding options `--cpu`, `--memory`, and `--disk-size` to avoid runtime issues.
+
+For other options to run minikube refer to this [link](https://minikube.sigs.k8s.io/docs/commands/start/)
+
 ## Install kubectl
 
 ```bash
