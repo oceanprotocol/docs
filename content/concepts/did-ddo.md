@@ -469,6 +469,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 | **`owner`**   | `string`               | ETH account address of the NFT owner.                                     |
 | **`state`**   | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
 | **`created`** | `ISO date/time string` | Contains the date of NFT creation.                                        |
+| **`tokenURI`** | `string` | tokenURI                                         |
 
 Example:
 
