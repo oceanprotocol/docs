@@ -132,7 +132,7 @@ An asset of type `algorithm` has additional attributes under `metadata.algorithm
 | --------------- | --------------------------- | -------- | ------------------------------------------------------------------------------------------ |
 | **`language`**  | `string`                    |          | Language used to implement the software.                                                   |
 | **`version`**   | `string`                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`userInput`** | [User Input](#userinput)    |          | An object the defines required user input before running the algorithm                     |
+| **`userInput`** | [User Input](#user-input)    |          | An object the defines required user input before running the algorithm                     |
 | **`container`** | `container`                 | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
@@ -186,7 +186,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
-| **`userInput`**        | [User Input](#userinput)    |          | An object the defines required user input before consuming the asset|
+| **`userInput`**        | [User Input](#user-input)    |          | An object the defines required user input before consuming the asset|
 
 #### Files
 
