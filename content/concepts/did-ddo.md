@@ -461,7 +461,7 @@ Algorithms will have access to a json file located at /data/inputs/algoCustomDat
   "surname": "John",
   "age": 10,
   "developer": false,
-  "preference': "nodejs"
+  "preference": "nodejs"
 }
 ```
 
