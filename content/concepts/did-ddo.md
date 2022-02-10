@@ -397,7 +397,8 @@ An element looks like:
 ```
 
 where:
-  - name  = defines the parameter name
+
+  - name  = defines the parameter name (this is sent as HTTP param or key towards algo)
   - type  = defines the form type  (text, number, select, boolean)
   - label = defines the label which is displayed
   - required = if this field is mandatory to have a user input.
@@ -435,7 +436,7 @@ Example:
         "description":"Are you a developer?"
     },
     {
-       "name":"interval",
+       "name":"preference",
         "type": "select",
         "label": "Date",
         "required": false,
@@ -453,6 +454,18 @@ Example:
 ]
 ```
 
+Algorithms will have access to a json file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required.  Example:
+
+```json
+{
+  "surname": "John",
+  "age": 10,
+  "developer": false,
+  "preference': "nodejs"
+}
+```
+
+  
 ### Credentials
 
 By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
