@@ -128,11 +128,12 @@ Example:
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute       | Type        | Required | Description                                                                                |
-| --------------- | ----------- | -------- | ------------------------------------------------------------------------------------------ |
-| **`language`**  | `string`    |          | Language used to implement the software.                                                   |
-| **`version`**   | `string`    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`container`** | `container` | **✓**    | Object describing the Docker container image. See below                                    |
+| Attribute       | Type                        | Required | Description                                                                                |
+| --------------- | --------------------------- | -------- | ------------------------------------------------------------------------------------------ |
+| **`language`**  | `string`                    |          | Language used to implement the software.                                                   |
+| **`version`**   | `string`                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`userInput`** | [User Input](#userinput)    |          | An object the defines required user input before running the algorithm                     |
+| **`container`** | `container`                 | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
@@ -161,7 +162,8 @@ The `container` object has the following attributes defining the Docker image fo
         "image": "ubuntu",
         "tag": "latest",
         "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
-      }
+      },
+    "userInput":{},
     }
   }
 }
@@ -184,6 +186,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
+| **`userInput`**        | [User Input](#userinput)    |          | An object the defines required user input before consuming the asset|
 
 #### Files
 
@@ -369,7 +372,79 @@ Example:
   ]
 }
 ```
+ [User Input](#userinput)
+### User Input
+Sometimes, you may need some input before consuming a dataset or running an algorithm.
+Examples:
+- You want to know the desired sampling interval of data in your dataset, before the user is going to download it.  So you will define a field called "sampling", ask the user to enter a value and then this parameter is going to be added to the URL of your dataset
+- Before running an algorithm, you need to know how many iterations should the algo perform.  You are going to define a field called 'iterations', ask the user to enter a value and this parameter is stored in a specific location in your C2D pod, so algo can read it and use that value.
 
+Object consists of an array , in which each element defines a user required field.
+An element looks like:
+```json
+   {
+        "name":"surname",
+        "type": "text",
+        "label": "Name",
+        "required": true,
+        "description":"Please fill your name",
+        "options": []
+    }
+```
+where:
+  - name  = defines the parameter name
+  - type  = defines the form type  (text, number, select, boolean)
+  - label = defines the label which is displayed
+  - required = if this field is mandatory to have a user input.
+  - default  = default value
+  - description = description of this element
+  - options = for select types, a list of options
+
+
+Example:
+```
+[
+   {
+       "name":"surname",
+        "type": "text",
+        "label": "Name",
+        "required": true,
+        "default': "NoName"
+       "description":"Please fill your name"
+    },
+   {
+       "name":"age",
+        "type": "number",
+        "label": "Age",
+        "required": false,
+        "default': 0
+        "description":"Please fill your age"
+    },
+   {
+       "name":"developer",
+        "type": "boolean",
+        "label": "Developer",
+        "required": false,
+        "default': false
+        "description":"Are you a developer?"
+    },
+    {
+       "name":"interval",
+        "type": "select",
+        "label": "Date",
+        "required": false,
+        "default": "nodejs"
+        "options": [
+             {
+                    "nodejs" : "I love NodeJs"
+             }, 
+             {
+                  "python" : "I love Python"
+             }
+        ],
+        "description": "Do you like NodeJs or Python"
+    },
+]
 ### Credentials
 
 By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
