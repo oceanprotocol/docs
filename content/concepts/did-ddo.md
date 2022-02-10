@@ -374,13 +374,16 @@ Example:
 ```
  
 #### User Input
+
 Sometimes, you may need some input before consuming a dataset or running an algorithm.
 Examples:
+
 - You want to know the desired sampling interval of data in your dataset, before the user is going to download it. Your dataset URL is 'www.example.com/mydata'. So you will define a field called "sampling", ask the user to enter a value and then this parameter is going to be added to the URL of your dataset (so the actual url will become 'www.example.com/mydata?sampling=10'
 - Before running an algorithm, you need to know how many iterations should the algo perform.  You are going to define a field called 'iterations', ask the user to enter a value and this parameter is stored in a specific location in your C2D pod, so algo can read it and use that value.
 
 Object consists of an array , in which each element defines a user required field.
 An element looks like:
+
 ```json
    {
         "name":"surname",
@@ -392,6 +395,7 @@ An element looks like:
         "options": []
     }
 ```
+
 where:
   - name  = defines the parameter name
   - type  = defines the form type  (text, number, select, boolean)
@@ -403,6 +407,7 @@ where:
 
 
 Example:
+
 ```
 [
    {
@@ -447,6 +452,7 @@ Example:
     },
 ]
 ```
+
 ### Credentials
 
 By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
@@ -748,7 +754,6 @@ Example:
     ]
   },
 
-  // Enhanced Aquarius response begins here
   "nft": {
     "address": "0x123",
     "name": "Ocean Protocol Asset v4",
