@@ -388,6 +388,7 @@ An element looks like:
         "label": "Name",
         "required": true,
         "description":"Please fill your name",
+        "default": "NoName",
         "options": []
     }
 ```
@@ -409,7 +410,7 @@ Example:
         "type": "text",
         "label": "Name",
         "required": true,
-        "default': "NoName"
+        "default": "NoName"
        "description":"Please fill your name"
     },
    {
@@ -417,7 +418,7 @@ Example:
         "type": "number",
         "label": "Age",
         "required": false,
-        "default': 0
+        "default": 0
         "description":"Please fill your age"
     },
    {
@@ -425,7 +426,7 @@ Example:
         "type": "boolean",
         "label": "Developer",
         "required": false,
-        "default': false
+        "default": false
         "description":"Are you a developer?"
     },
     {
@@ -692,7 +693,7 @@ Example:
           "type": "text",
           "label": "Name",
           "required": true,
-          "default': "NoName"
+          "default": "NoName"
           "description":"Please fill your name"
         },
        {
@@ -700,7 +701,7 @@ Example:
           "type": "number",
           "label": "Age",
           "required": false,
-          "default': 0
+          "default": 0
           "description":"Please fill your age"
       }]
     },
