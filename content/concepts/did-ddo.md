@@ -570,14 +570,14 @@ The `stats` section contains different statistics fields.
 
 | Attribute      | Type     | Description                                                                                                   |
 | -------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| **`consumes`** | `number` | How often an asset was consumed, meaning how often it was either downloaded or used as part of a compute job. |
+| **`orders`** | `number` | How often an asset was ordered, meaning how often it was either downloaded or used as part of a compute job. |
 
 Example:
 
 ```json
 {
   "stats": {
-    "consumes": 4
+    "orders": 4
   }
 }
 ```
@@ -693,7 +693,7 @@ Example:
   },
 
   "stats": {
-    "consumes": 4
+    "orders": 4
   }
 }
 ```
