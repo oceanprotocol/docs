@@ -409,7 +409,7 @@ where:
 
 Example:
 
-```
+```json
 [
    {
        "name":"surname",
