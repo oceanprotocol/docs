@@ -373,7 +373,7 @@ Example:
 }
 ```
  
-### User Input
+#### User Input
 Sometimes, you may need some input before consuming a dataset or running an algorithm.
 Examples:
 - You want to know the desired sampling interval of data in your dataset, before the user is going to download it. Your dataset URL is 'www.example.com/mydata'. So you will define a field called "sampling", ask the user to enter a value and then this parameter is going to be added to the URL of your dataset (so the actual url will become 'www.example.com/mydata?sampling=10'
@@ -685,7 +685,24 @@ Example:
       "description": "Download service",
       "datatokenAddress": "0x123",
       "serviceEndpoint": "https://myprovider.com",
-      "timeout": 0
+      "timeout": 0,
+      "userInput": [
+        {
+          "name":"surname",
+          "type": "text",
+          "label": "Name",
+          "required": true,
+          "default': "NoName"
+          "description":"Please fill your name"
+        },
+       {
+          "name":"age",
+          "type": "number",
+          "label": "Age",
+          "required": false,
+          "default': 0
+          "description":"Please fill your age"
+      }]
     },
     {
       "id": "2",
