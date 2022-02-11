@@ -386,12 +386,12 @@ An element looks like:
 
 ```json
    {
-        "name":"surname",
+        "name":"hometown",
         "type": "text",
-        "label": "Name",
+        "label": "Hometown",
         "required": true,
-        "description":"Please fill your name",
-        "default": "NoName",
+        "description":"What is your hometown?",
+        "default": "Nowhere",
         "options": []
     }
 ```
@@ -412,12 +412,12 @@ Example:
 ```json
 [
    {
-       "name":"surname",
+       "name":"hometown",
         "type": "text",
-        "label": "Name",
+        "label": "Hometown",
         "required": true,
-        "default": "NoName"
-       "description":"Please fill your name"
+        "default": "Nowhere"
+       "description":"What is your hometown?"
     },
    {
        "name":"age",
