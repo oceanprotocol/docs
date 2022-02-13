@@ -132,7 +132,7 @@ An asset of type `algorithm` has additional attributes under `metadata.algorithm
 | --------------- | --------------------------- | -------- | ------------------------------------------------------------------------------------------ |
 | **`language`**  | `string`                    |          | Language used to implement the software.                                                   |
 | **`version`**   | `string`                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`userInput`** | [User Input](#user-input)    |          | An object the defines required user input before running the algorithm                     |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before running the algorithm                     |
 | **`container`** | `container`                 | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
@@ -163,7 +163,7 @@ The `container` object has the following attributes defining the Docker image fo
         "tag": "latest",
         "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
       },
-    "userInput":{},
+    "consumerParameters":{},
     }
   }
 }
@@ -186,7 +186,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
-| **`userInput`**        | [User Input](#user-input)    |          | An object the defines required user input before consuming the asset|
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before consuming the asset|
 
 #### Files
 
@@ -373,7 +373,7 @@ Example:
 }
 ```
  
-#### User Input
+#### Consumer Parameters
 
 Sometimes, you may need some input before consuming a dataset or running an algorithm.
 Examples:
@@ -401,7 +401,7 @@ where:
   - name  = defines the parameter name (this is sent as HTTP param or key towards algo)
   - type  = defines the form type  (text, number, select, boolean)
   - label = defines the label which is displayed
-  - required = if this field is mandatory to have a user input.
+  - required = if this field is mandatory to have a consumer input.
   - default  = default value
   - description = description of this element
   - options = for select types, a list of options
@@ -706,7 +706,7 @@ Example:
       "datatokenAddress": "0x123",
       "serviceEndpoint": "https://myprovider.com",
       "timeout": 0,
-      "userInput": [
+      "consumerParameters": [
         {
           "name":"surname",
           "type": "text",
