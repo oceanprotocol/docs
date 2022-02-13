@@ -379,7 +379,7 @@ Sometimes, you may need some input before consuming a dataset or running an algo
 Examples:
 
 - You want to know the desired sampling interval of data in your dataset, before the user is going to download it. Your dataset URL is `https://example.com/mydata`. So you will define a field called `sampling`, ask the user to enter a value and then this parameter is going to be added to the URL of your dataset as query parameters: `https://example.com/mydata?sampling=10`
-- Before running an algorithm, you need to know how many iterations should the algo perform.  You are going to define a field called 'iterations', ask the user to enter a value and this parameter is stored in a specific location in your C2D pod, so algo can read it and use that value.
+- Before running an algorithm, you need to know how many iterations should it perform. You define a field called `iterations`, ask the user to enter a value and this parameter is stored in a specific location in your Computer-to-Data pod for the algorithm to read and use that value.
 
 Object consists of an array , in which each element defines a user required field.
 An element looks like:
