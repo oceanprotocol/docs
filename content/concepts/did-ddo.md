@@ -128,11 +128,12 @@ Example:
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute       | Type        | Required | Description                                                                                |
-| --------------- | ----------- | -------- | ------------------------------------------------------------------------------------------ |
-| **`language`**  | `string`    |          | Language used to implement the software.                                                   |
-| **`version`**   | `string`    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`container`** | `container` | **✓**    | Object describing the Docker container image. See below                                    |
+| Attribute       | Type                        | Required | Description                                                                                |
+| --------------- | --------------------------- | -------- | ------------------------------------------------------------------------------------------ |
+| **`language`**  | `string`                    |          | Language used to implement the software.                                                   |
+| **`version`**   | `string`                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before running the algorithm                     |
+| **`container`** | `container`                 | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
@@ -161,7 +162,8 @@ The `container` object has the following attributes defining the Docker image fo
         "image": "ubuntu",
         "tag": "latest",
         "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
-      }
+      },
+    "consumerParameters":{},
     }
   }
 }
@@ -184,6 +186,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before consuming the asset|
 
 #### Files
 
@@ -369,7 +372,100 @@ Example:
   ]
 }
 ```
+ 
+#### Consumer Parameters
 
+Sometimes, you may need some input before downloading a dataset or running an algorithm.
+Examples:
+
+- You want to know the desired sampling interval of data in your dataset, before the user is going to download it. Your dataset URL is `https://example.com/mydata`. So you will define a field called `sampling`, ask the user to enter a value and then this parameter is going to be added to the URL of your dataset as query parameters: `https://example.com/mydata?sampling=10`
+- Before running an algorithm, you need to know how many iterations should it perform. You define a field called `iterations`, ask the user to enter a value and this parameter is stored in a specific location in your Computer-to-Data pod for the algorithm to read and use that value.
+
+It's an array of elements, each element object defines a field.
+An element looks like:
+
+```json
+   {
+        "name":"hometown",
+        "type": "text",
+        "label": "Hometown",
+        "required": true,
+        "description":"What is your hometown?",
+        "default": "Nowhere",
+        "options": []
+    }
+```
+
+where:
+
+  - name  = defines the parameter name (this is sent as HTTP param or key towards algo)
+  - type  = defines the form type  (text, number, select, boolean)
+  - label = defines the label which is displayed
+  - required = if this field is mandatory to have a consumer input.
+  - default  = default value
+  - description = description of this element
+  - options = for select types, a list of options
+
+
+Example:
+
+```json
+[
+   {
+       "name":"hometown",
+        "type": "text",
+        "label": "Hometown",
+        "required": true,
+        "default": "Nowhere"
+       "description":"What is your hometown?"
+    },
+   {
+       "name":"age",
+        "type": "number",
+        "label": "Age",
+        "required": false,
+        "default": 0
+        "description":"Please fill your age"
+    },
+   {
+       "name":"developer",
+        "type": "boolean",
+        "label": "Developer",
+        "required": false,
+        "default": false
+        "description":"Are you a developer?"
+    },
+    {
+       "name":"preference",
+        "type": "select",
+        "label": "Date",
+        "required": false,
+        "default": "nodejs"
+        "options": [
+             {
+                    "nodejs" : "I love NodeJs"
+             }, 
+             {
+                  "python" : "I love Python"
+             }
+        ],
+        "description": "Do you like NodeJs or Python"
+    },
+]
+```
+
+Algorithms will have access to a json file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required.  Example:
+
+```json
+{
+  "surname": "John",
+  "age": 10,
+  "developer": false,
+  "preference": "nodejs"
+}
+```
+
+  
 ### Credentials
 
 By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
@@ -609,7 +705,24 @@ Example:
       "description": "Download service",
       "datatokenAddress": "0x123",
       "serviceEndpoint": "https://myprovider.com",
-      "timeout": 0
+      "timeout": 0,
+      "consumerParameters": [
+        {
+          "name":"surname",
+          "type": "text",
+          "label": "Name",
+          "required": true,
+          "default": "NoName"
+          "description":"Please fill your name"
+        },
+       {
+          "name":"age",
+          "type": "number",
+          "label": "Age",
+          "required": false,
+          "default": 0
+          "description":"Please fill your age"
+      }]
     },
     {
       "id": "2",
@@ -654,7 +767,6 @@ Example:
     ]
   },
 
-  // Enhanced Aquarius response begins here
   "nft": {
     "address": "0x123",
     "name": "Ocean Protocol Asset v4",
