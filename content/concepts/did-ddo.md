@@ -300,9 +300,6 @@ This only concerns metadata about a file, but never the file URLs. The only way 
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-<html>
-
-<html>
 <table>
   <tbody>
     <tr>
