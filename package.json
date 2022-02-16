@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@oceanprotocol/art": "^3.2.0",
-    "axios": "^0.24.0",
+    "axios": "^0.25.0",
     "classnames": "^2.3.1",
     "gatsby": "^2.32.13",
     "gatsby-image": "^3.11.0",
@@ -38,7 +38,7 @@
     "gatsby-remark-images": "^3.11.1",
     "gatsby-remark-responsive-iframe": "^2.11.0",
     "gatsby-remark-smartypants": "^2.10.0",
-    "gatsby-remark-vscode": "^3.3.0",
+    "gatsby-remark-vscode": "^3.3.1",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-source-git": "^1.1.0",
     "gatsby-source-graphql": "^2.14.0",
@@ -62,11 +62,11 @@
     "shortid": "^2.2.16",
     "slugify": "^1.6.5",
     "smoothscroll-polyfill": "^0.4.4",
-    "swagger-client": "^3.18.0"
+    "swagger-client": "^3.18.4"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.0.0",
     "eslint": "^7.32.0",
     "eslint-config-oceanprotocol": "^1.5.0",
     "eslint-config-prettier": "^8.3.0",
