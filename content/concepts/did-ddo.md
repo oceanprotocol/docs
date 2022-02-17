@@ -300,12 +300,83 @@ This only concerns metadata about a file, but never the file URLs. The only way 
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-| Attribute                                  | Type                                  | Required | Description                                                                                                                                                                                                                                                                                                                          |
-| ------------------------------------------ | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`allowRawAlgorithm`**                    | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations.                                                                                                            |
-| **`allowNetworkAccess`**                   | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                                                                                                                               |
-| **`publisherTrustedAlgorithmPublishers `** | Array of `string`                     | **✓**    | If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed.                                                                                                                                                                                                              |
-| **`publisherTrustedAlgorithms `**          | Array of `publisherTrustedAlgorithms` | **✓**    | If empty, then any published algorithm is allowed. (see below).                                                                                                                                                                                                                                                                      |
+<table>
+  <tbody>
+    <tr>
+      <td><b><code>allowRawAlgorithm</code></b>
+        <table>
+          <tbody>
+            <tr>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>boolean</code></td>
+              <td><b>✓</b></td>
+              <td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+        <td><b><code>allowNetworkAccess</code></b>
+        <table>
+          <tbody>
+            <tr>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>boolean</code></td>
+              <td><b>✓</b></td>
+              <td>If <code>true</code>, the algorithm job will have network access.</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><b><code>publisherTrustedAlgorithmPublishers</code></b>
+        <table>
+          <tbody>
+            <tr>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Array of <code>string</code></td>
+              <td><b>✓</b></td>
+              <td>If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed.</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><b><code>publisherTrustedAlgorithms</code></b>
+        <table>
+          <tbody>
+            <tr>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Array of <code>publisherTrustedAlgorithms</code></td>
+              <td><b>✓</b></td>
+              <td>If empty, then any published algorithm is allowed. (see below).</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
