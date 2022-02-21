@@ -20,6 +20,11 @@
     - title: Overview
       link: /concepts/compute-to-data/
 
+- group: Specifying Assets
+  items:
+    - title: DIDs & DDOs
+      link: /concepts/did-ddo/
+
 - group: Contribute
   items:
     - title: Projects using Ocean
