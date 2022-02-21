@@ -6,6 +6,12 @@
       link: /concepts/quickstart/
     - title: Architecture Overview
       link: /concepts/architecture/
+    - title: Data NFT and Datatoken
+      link: /concepts/datanft-and-datatoken/
+    - title: Roles
+      link: /concepts/roles/
+    - title: DIDs & DDOs
+      link: /concepts/did-ddo/
     - title: Supported Networks
       link: /concepts/networks/
 
