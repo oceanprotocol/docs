@@ -52,7 +52,7 @@ ERC721 tokens are non-fungible, thus cannot be used for automatic price discover
 
 ## High-Level Behavior
 
-![Image 2](images/use-case.png)
+![Flow](images/use-case.png)
 
 Here's an example. Alice has created a dataset. In step 1, she publishes her dataset with Ocean: this means deploying an ERC721 data NFT contract (claiming copyright / base IP), then an ERC20 datatoken contract (license against base IP). Then in step 2, she mints some ERC20 datatokens and transfers 1.0 of them to Bob's wallet; now he has a license to be able to consume that dataset.
 
