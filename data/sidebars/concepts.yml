@@ -6,8 +6,6 @@
       link: /concepts/quickstart/
     - title: Architecture Overview
       link: /concepts/architecture/
-    - title: DIDs & DDOs
-      link: /concepts/did-ddo/
     - title: Supported Networks
       link: /concepts/networks/
 
@@ -15,6 +13,11 @@
   items:
     - title: Overview
       link: /concepts/compute-to-data/
+
+- group: Specifying Assets
+  items:
+    - title: DIDs & DDOs
+      link: /concepts/did-ddo/
 
 - group: Contribute
   items:
