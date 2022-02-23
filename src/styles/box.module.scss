@@ -1,23 +1,23 @@
 @import 'variables';
 
 .box {
-    display: block;
-    background: $background-content;
-    border-radius: $border-radius;
-    border: 1px solid $border-color;
-    box-shadow: 0 6px 17px 0 $box-shadow-color;
-    padding: $spacer * 0.5;
+  display: block;
+  background: $background-content;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  box-shadow: 0 6px 17px 0 $box-shadow-color;
+  padding: $spacer * 0.5;
+}
+
+@media (min-width: 40rem) {
+  .box {
+    padding: var($spacer);
   }
-  
-  @media (min-width: 40rem) {
-    .box {
-      padding: var($spacer);
-    }
-  }
-  
-  a.box:hover,
-  a.box:focus {
-    outline: 0;
-    transform: translate3d(0, -0.1rem, 0);
-    box-shadow: 0 10px 25px 0 $box-shadow-color;
-  }
+}
+
+a.box:hover,
+a.box:focus {
+  outline: 0;
+  transform: translate3d(0, -0.1rem, 0);
+  box-shadow: 0 10px 25px 0 $box-shadow-color;
+}

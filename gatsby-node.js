@@ -165,6 +165,27 @@ exports.createPages = ({ graphql, actions }) => {
         const providerList = filterMarkdownList(markdowns, 'provider')
         const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
 
+        // const aquariusRestApi = getRestApiPageFromMarkdownList(
+        //   markdowns,
+        //   'aquarius'
+        // )[0].node
+
+        // await createRestApiPage(
+        //   createPage,
+        //   aquariusRestApi,
+        //   `/references/aquarius`
+        // )
+
+        // const providerRestApi = getRestApiPageFromMarkdownList(
+        //   markdowns,
+        //   'provider'
+        // )[0].node
+        // await createRestApiPage(
+        //   createPage,
+        //   providerRestApi,
+        //   `/references/provider`
+        // )
+
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
         await createReadTheDocsPage(createPage, 'ocean-subgraph', subgraphList)
@@ -292,3 +313,21 @@ const createReadTheDocsPage = async (createPage, name, list) => {
 const filterMarkdownList = (markdownList, string) => {
   return markdownList.filter(({ node }) => node.frontmatter.app === string)
 }
+
+// const createRestApiPage = async (createPage, node, slug) => {
+//   const template = path.resolve('./src/templates/RestApi.jsx')
+//   createPage({
+//     path: slug,
+//     component: template,
+//     context: {
+//       node,
+//       slug
+//     }
+//   })
+// }
+
+// const getRestApiPageFromMarkdownList = (markdownList, string) => {
+//   return markdownList.filter(({ node }) => {
+//     return node.frontmatter.app === string && node.frontmatter.slug === 'API.md'
+//   })
+// }
