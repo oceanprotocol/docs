@@ -180,6 +180,7 @@ exports.createPages = ({ graphql, actions }) => {
           markdowns,
           'provider'
         )[0].node
+
         await createRestApiPage(
           createPage,
           providerRestApi,
@@ -327,7 +328,8 @@ const createRestApiPage = async (createPage, node, slug) => {
 }
 
 const getRestApiPageFromMarkdownList = (markdownList, string) => {
-  return markdownList.filter(({ node }) => {
-    return node.frontmatter.app === string && node.frontmatter.slug === 'API.md'
-  })
+  return markdownList.filter(
+    ({ node }) =>
+      node.frontmatter.app === string && node.frontmatter.slug === 'API.md'
+  )
 }
