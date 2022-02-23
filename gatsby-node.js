@@ -103,6 +103,34 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+
+            aquariusRestApi: allMarkdownRemark(
+              filter: {
+                frontmatter: {
+                  title: { eq: "API.md" }
+                  app: { eq: "aquarius" }
+                }
+              }
+            ) {
+              edges {
+                node {
+                  id
+                  html
+                  htmlAst
+                  tableOfContents
+                  frontmatter {
+                    title
+                    description
+                    slug
+                    section
+                    app
+                    module
+                    source
+                    version
+                  }
+                }
+              }
+            }
           }
         `
       ).then(async (result) => {
@@ -165,27 +193,24 @@ exports.createPages = ({ graphql, actions }) => {
         const providerList = filterMarkdownList(markdowns, 'provider')
         const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
 
-        const aquariusRestApi = getRestApiPageFromMarkdownList(
-          markdowns,
-          'aquarius'
-        )[0].node
-
+        console.log('Aquarius rest api', result.data.aquariusRestApi)
+        const aquariusRestApi = result.data.aquariusRestApi.edges[0].node
         await createRestApiPage(
           createPage,
           aquariusRestApi,
           `/references/aquarius-rest-api`
         )
 
-        const providerRestApi = getRestApiPageFromMarkdownList(
-          markdowns,
-          'provider'
-        )[0].node
+        // const providerRestApi = getRestApiPageFromMarkdownList(
+        //   markdowns,
+        //   'provider'
+        // )[0].node
 
-        await createRestApiPage(
-          createPage,
-          providerRestApi,
-          `/references/provider-rest-api`
-        )
+        // await createRestApiPage(
+        //   createPage,
+        //   providerRestApi,
+        //   `/references/provider-rest-api`
+        // )
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
@@ -327,9 +352,9 @@ const createRestApiPage = async (createPage, node, slug) => {
   })
 }
 
-const getRestApiPageFromMarkdownList = (markdownList, string) => {
-  return markdownList.filter(
-    ({ node }) =>
-      node.frontmatter.app === string && node.frontmatter.slug === 'API.md'
-  )
-}
+// const getRestApiPageFromMarkdownList = (markdownList, string) => {
+//   return markdownList.filter(
+//     ({ node }) =>
+//       node.frontmatter.app === string && node.frontmatter.slug === 'API.md'
+//   )
+// }
