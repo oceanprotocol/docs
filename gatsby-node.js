@@ -193,7 +193,7 @@ exports.createPages = ({ graphql, actions }) => {
         const providerList = filterMarkdownList(markdowns, 'provider')
         const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
 
-        console.log('Aquarius rest api', result.data.aquariusRestApi)
+        console.log('Aquarius rest api', markdowns)
         const aquariusRestApi = result.data.aquariusRestApi.edges[0].node
         await createRestApiPage(
           createPage,
