@@ -11,12 +11,12 @@
 - group: Aquarius REST API
   items:
     - title: API Reference
-      link: /references/aquarius/
+      link: /references/aquarius-rest-api/
 
 - group: provider REST API
   items:
     - title: API Reference
-      link: /references/provider/
+      link: /references/provider-rest-api/
 
 - group: Provider Py Module
   items:

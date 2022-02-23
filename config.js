@@ -96,7 +96,7 @@ module.exports = {
     },
     {
       name: 'provider',
-      url: 'https://v4.provider.mainnet.oceanprotocol.com'
+      url: 'https://provider.mainnet.oceanprotocol.com/spec'
     }
   ]
 }
