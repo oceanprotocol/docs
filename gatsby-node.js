@@ -192,8 +192,8 @@ exports.createPages = ({ graphql, actions }) => {
         const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
         const providerList = filterMarkdownList(markdowns, 'provider')
         const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
-        const aquariusList = filterMarkdownList(markdowns, 'aquarius')
-        const r = aquariusList.map(({ node }) => [
+        // const aquariusList = filterMarkdownList(markdowns, 'aquarius')
+        const r = markdowns.map(({ node }) => [
           node.frontmatter.title,
           node.frontmatter.app,
           node.frontmatter.source,
