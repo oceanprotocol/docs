@@ -196,7 +196,8 @@ exports.createPages = ({ graphql, actions }) => {
         const r = aquariusList.map(({ node }) => [
           node.frontmatter.title,
           node.frontmatter.app,
-          node.frontmatter.source
+          node.frontmatter.source,
+          node.frontmatter.version
         ])
         console.log('Aquarius rest api', r)
         const aquariusRestApi = result.data.aquariusRestApi.edges[0].node
