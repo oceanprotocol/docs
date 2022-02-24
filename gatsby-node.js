@@ -133,6 +133,34 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+
+            providerRestApi: allMarkdownRemark(
+              filter: {
+                frontmatter: {
+                  title: { eq: "API.md" }
+                  app: { eq: "aquarius" }
+                }
+              }
+            ) {
+              edges {
+                node {
+                  id
+                  html
+                  htmlAst
+                  tableOfContents
+                  frontmatter {
+                    title
+                    description
+                    slug
+                    section
+                    app
+                    module
+                    source
+                    version
+                  }
+                }
+              }
+            }
           }
         `
       ).then(async (result) => {
@@ -194,31 +222,21 @@ exports.createPages = ({ graphql, actions }) => {
         const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
         const providerList = filterMarkdownList(markdowns, 'provider')
         const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
-        // const aquariusList = filterMarkdownList(markdowns, 'aquarius')
-        const r = markdowns.map(({ node }) => [
-          node.frontmatter.title,
-          node.frontmatter.app,
-          node.frontmatter.source,
-          node.frontmatter.version
-        ])
-        console.log('Aquarius rest api', r)
+
         const aquariusRestApi = result.data.aquariusRestApi.edges[0].node
         await createRestApiPage(
           createPage,
           aquariusRestApi,
-          `/references/aquarius-rest-api`
+          `/references/aquarius`
         )
 
-        // const providerRestApi = getRestApiPageFromMarkdownList(
-        //   markdowns,
-        //   'provider'
-        // )[0].node
+        const providerRestApi = result.data.providerRestApi.edges[0].node
 
-        // await createRestApiPage(
-        //   createPage,
-        //   providerRestApi,
-        //   `/references/provider-rest-api`
-        // )
+        await createRestApiPage(
+          createPage,
+          providerRestApi,
+          `/references/provider`
+        )
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
