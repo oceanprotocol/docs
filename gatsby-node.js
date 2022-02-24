@@ -60,9 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
 
             allRepoMarkdown: allMarkdownRemark(
               filter: {
-                fileAbsolutePath: {
-                  regex: ".cache/gatsby-source-git/read-the-docs/markdowns/"
-                }
+                fileAbsolutePath: { regex: "/read-the-docs/markdowns/" }
               }
             ) {
               edges {

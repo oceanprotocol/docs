@@ -158,9 +158,9 @@ module.exports = {
         local: 'read-the-docs',
         branch: 'v4',
         patterns: [
-          'markdowns/ocean-py',
-          'markdowns/aquarius',
-          'markdowns/provider'
+          'read-the-docs/ocean-py',
+          'read-the-docs/aquarius',
+          'read-the-docs/provider'
         ]
       }
     },
