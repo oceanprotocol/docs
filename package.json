@@ -10,7 +10,7 @@
     "ssr": "npm run build && serve -s public/",
     "format": "prettier --ignore-path .gitignore './**/*.{css,scss,yml,js,jsx,ts,tsx,json}' --write",
     "lint:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
-    "lint:md": "markdownlint './**/*.{md,markdown}' --ignore './{node_modules,external,public,.cache,markdowns}/**/*'",
+    "lint:md": "markdownlint './**/*.{md,markdown}' --ignore './{node_modules,external,public,.cache,markdowns,read-the-docs}/**/*'",
     "lint:yml": "prettier '**/*.{yml,yaml}' --list-different",
     "lint": "run-p --continue-on-error lint:js lint:md lint:yml",
     "test": "npm run lint"
