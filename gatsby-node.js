@@ -138,7 +138,7 @@ exports.createPages = ({ graphql, actions }) => {
               filter: {
                 frontmatter: {
                   title: { eq: "API.md" }
-                  app: { eq: "aquarius" }
+                  app: { eq: "provider" }
                 }
               }
             ) {
