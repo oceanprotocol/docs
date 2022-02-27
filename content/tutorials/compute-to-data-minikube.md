@@ -167,6 +167,12 @@ kubectl apply  -f operator-engine/kubernetes/operator.yml
 kubectl create -f operator-service/kubernetes/postgres-configmap.yaml
 ```
 
+**Optional**: For production enviroments, it's safer to block access to metadata. To do so run the below command:
+
+```bash
+kubectl -n ocean-compute apply -f /ocean/operator-engine/kubernetes/egress.yaml
+```
+
 ## Expose Operator Service
 
 ```bash
