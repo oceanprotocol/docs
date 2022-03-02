@@ -155,19 +155,19 @@ module.exports = {
       options: {
         name: 'repo-read-the-docs',
         remote: `https://github.com/oceanprotocol/readthedocs.git`,
-        local: 'markdowns/',
-        branch: 'main',
+        local: 'read-the-docs',
+        branch: 'v4',
         patterns: [
-          'markdowns/ocean-py',
-          'markdowns/aquarius',
-          'markdowns/provider'
+          'read-the-docs/ocean-py',
+          'read-the-docs/aquarius',
+          'read-the-docs/provider'
         ]
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/markdowns/markdowns`,
+        path: `${__dirname}/read-the-docs/markdowns`,
         name: 'markdowns'
       }
     },
