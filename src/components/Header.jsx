@@ -57,6 +57,9 @@ const Header = () => (
               <div className={styles.section}>
                 <SearchButton />
               </div>
+              <div className={styles.section}>
+                <ToggleSwitch />
+              </div>
             </nav>
           </div>
         </header>

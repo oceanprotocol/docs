@@ -32,8 +32,13 @@ const HeaderHome = () => (
             </h1>
             <p className={styles.headerDescription}>
               {siteDescription}
-              <div className={styles.searchButtonContainer}>
+              <div className={styles.container}>
                 <SearchButton />
+              </div>
+              <div className={styles.container}>
+                <div style={{ display: 'inline-block' }}>
+                  <ToggleSwitch />
+                </div>
               </div>
             </p>
           </Content>
