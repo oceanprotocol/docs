@@ -6,27 +6,29 @@
       link: /concepts/quickstart/
     - title: Architecture Overview
       link: /concepts/architecture/
+    - title: Data NFT and Datatoken
+      link: /concepts/datanft-and-datatoken/
+    - title: Roles
+      link: /concepts/roles/
+    - title: DIDs & DDOs
+      link: /concepts/did-ddo/
     - title: Supported Networks
       link: /concepts/networks/
-    - title: Deployments
-      link: /concepts/deployments/
-    - title: Projects using Ocean
-      link: /concepts/projects-using-ocean/
 
 - group: Compute-to-Data
   items:
-    - title: Introduction
+    - title: Overview
       link: /concepts/compute-to-data/
 
 - group: Specifying Assets
   items:
     - title: DIDs & DDOs
       link: /concepts/did-ddo/
-    - title: DDO Metadata
-      link: /concepts/ddo-metadata/
 
 - group: Contribute
   items:
+    - title: Projects using Ocean
+      link: /concepts/projects-using-ocean/
     - title: Ways to Contribute
       link: /concepts/contributing/
     - title: Get Funding

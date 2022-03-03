@@ -92,7 +92,7 @@ module.exports = {
   swaggerComponents: [
     {
       name: 'aquarius',
-      url: 'https://aquarius.oceanprotocol.com/spec'
+      url: 'https://v4.aquarius.oceanprotocol.com/spec'
     },
     {
       name: 'provider',
