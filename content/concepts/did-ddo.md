@@ -187,7 +187,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
 | **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
 | **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before consuming the asset|
-
+| **`additionalInformation`** | Object                                    |                                   | Stores additional information, this is customizable by publisher                                                         |
 #### Files
 
 The `files` field is returned as a `string` which holds the encrypted file URLs.
