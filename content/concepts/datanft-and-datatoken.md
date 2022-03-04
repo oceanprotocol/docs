@@ -1,9 +1,9 @@
 ---
 title: DataNFTs and Datatokens
-description: In Ocean Protocol, ERC721 dataNFTs represent holding copyright / base IP of a data asset, and ERC20 datatokens represent licenses to consume the assets.
+description: In Ocean Protocol, ERC721 dataNFTs represent holding copyright/base IP of a data asset, and ERC20 datatokens represent licenses to consume the assets.
 ---
 
-A non-fungible token stored on the blockchain represents a unique asset. NFTs can represent images, videos, digital art, or any piece of information. NFTs can be traded, and allow transfer of copyright/base IP. [EIP-721](https://eips.ethereum.org/EIPS/eip-721) defines an interface for handling NFTs on EVM-compatible blockchains. The creator of the NFT can deploy a new contract on Ethereum or any Blockchain supporting NFT related interface and also, transfer the ownership of copyright / base IP through transfer transactions.
+A non-fungible token stored on the blockchain represents a unique asset. NFTs can represent images, videos, digital art, or any piece of information. NFTs can be traded, and allow transfer of copyright/base IP. [EIP-721](https://eips.ethereum.org/EIPS/eip-721) defines an interface for handling NFTs on EVM-compatible blockchains. The creator of the NFT can deploy a new contract on Ethereum or any Blockchain supporting NFT related interface and also, transfer the ownership of copyright/base IP through transfer transactions.
 
 Fungible tokens represent fungible assets. If you have 5 ETH and Alice has 5 ETH, you and Alice could swap your ETH and your final holdings remain the same. They're apples-to-apples. Licenses (contracts) to consume a copyrighted asset are naturally fungible - they can be swapped with each other.
 
