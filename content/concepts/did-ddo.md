@@ -11,23 +11,23 @@ section: concepts
 
 This document describes how Ocean assets follow the DID/DDO specification, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
-Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity and DIDs may represent humans, objects, and more.
+Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more.
 
 A DID Document (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
 ## Rules for DIDs & DDOs
 
-An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
+An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under the control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
-An _asset_ has a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). The DDO can only be modified by _owners_ or _delegated users_.
+An _asset_ has a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). Only _owners_ or _delegated users_ can modify the DDO.
 
 All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like _Aquarius_ can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
 
 ## Publishing & Retrieving DDOs
 
-The DDO is stored on-chain as part of the NFT contract, and stored encrypted using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
+The DDO is stored on-chain as part of the NFT contract and stored in encrypted form using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
-Here is the complete flow:
+Here is the flow:
 
 ![DDO flow](images/ddo-flow.png)
 
@@ -62,7 +62,7 @@ In Ocean, a DID is a string that looks like this:
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-The part after `did:op:` is the the ERC721 contract address(in checksum format) and the chainId (expressed as decimal) the asset has been published to:
+The part after `did:op:` is the ERC721 contract address(in checksum format) and the chainId (expressed as a decimal) the asset has been published to:
 
 ```js
 const checksum = sha256(ERC721 contract address + chainId)
@@ -525,7 +525,7 @@ Example:
 ]
 ```
 
-Algorithms will have access to a json file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required.  Example:
+Algorithms will have access to a JSON file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required.  Example:
 
 ```json
 {
