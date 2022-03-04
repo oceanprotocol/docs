@@ -1,6 +1,6 @@
 ---
 title: Architecture Overview
-description: Data NFTs and Datatokens architecture
+description: DataNFTs and Datatokens architecture
 ---
 
 ## Overview
@@ -18,10 +18,10 @@ Here’s an overview of the figure.
     - **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
 - The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](/concepts/networks/). 
 
-## Data NFTs, Datatokens and Access Control Tools
+## DataNFTs, Datatokens and Access Control Tools
 
-DataNFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new dataNFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other Ethereum addresses who can deploy new datatoken contracts and even mint them. Each Datatoken contract is associated with one data NFT contract.
-Click [here](/concepts/datanft-and-datatoken/) to further read about data NFTs and datatokens.
+DataNFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new dataNFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other Ethereum addresses who can deploy new datatoken contracts and even mint them. Each Datatoken contract is associated with one dataNFT contract.
+Click [here](/concepts/datanft-and-datatoken/) to further read about dataNFTs and datatokens.
 
 ERC721 dataNFTs represent holding copyright/base IP of a data asset, and ERC20 datatokens represent licenses to consume the data asset.
 
