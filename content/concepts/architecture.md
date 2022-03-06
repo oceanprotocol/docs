@@ -1,6 +1,6 @@
 ---
 title: Architecture Overview
-description: Simplicity and Interoperability via a Datatokens Core
+description: Data NFTs and Datatokens architecture
 ---
 
 ## Overview
@@ -11,21 +11,28 @@ Here is the Ocean architecture.
 
 Here’s an overview of the figure.
 
-- The top layer is **applications** like Ocean Market. With these apps, users can onboard data services into crypto (publish and mint datatokens), hold datatokens as assets (data wallets), discover data assets and buy / sell datatokens for fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
-- Below that are **libraries** used by the applications: Ocean React hooks, JavaScript library, and Python library. This also includes middleware to assist discovery: Aquarius and (3rd party tool) TheGraph.
-- The lowest level has the **smart contracts** used by the libraries. They’re deployed on Ethereum mainnet to start, and other networks later.
-
-Left to right are groupings of functionality: tools for datatokens, tools for markets (including pools), tools to consume data services and for metadata, and external ERC20 tools.
+- The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, alogrithm, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets and buy / sell datatokens for fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
+- Below that are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
+    - **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
+    - **Provider**: Facilitates downloading assets, DDO encryption and communicating with `operater-service` for Compute-to-Data jobs.
+    - **TheGraph**: 3rd party tool
+Developers can utilize the libraries to built thier custom applications and marketplaces.
+- The lowest level has the **smart contracts** used by the libraries. They’re deployed on Ethereum mainnet, and other compatible networks. To see the list of supported networks click [here](/concepts/networks/).
 
 The rest of this page elaborates.
 
-## Datatokens & Access Control Tools
+## Data NFTs, Datatokens and Access Control Tools
 
-The publisher actor holds the dataset in Google Drive, Dropbox, AWS S3, on their phone, on their home server, etc. The dataset has a URL. The publisher can optionally use IPFS for a content-addressable URL. Or instead of a file, the publisher may run a compute-to-data service.
+Data NFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new data NFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other ethereum addresses who can deploy new datatoken contracts and even mint them. Each Datatoken contract is associated with one data NFT contract.
+Click [here](/concepts/datanft-and-datatoken/) to further read about data NFTs and datatokens.
+
+ERC721 data NFTs represent holding copyright / base IP of a data asset, and ERC20 datatokens represent licenses to consume the data asset.
+
+Datatoken represents the asset which the publisher want to monetize. The asset can be a dataset or an algorithm. The publisher actor holds the asset in Google Drive, Dropbox, AWS S3, on their phone, on their home server, etc. The publisher can optionally use IPFS for a content-addressable URL. Or instead of a file, the publisher may run a compute-to-data service.
 
 In the **publish** step, the publisher invokes **Ocean Datatoken Factory** to deploy a new datatoken to the chain. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC20 datatoken template**. The publisher then mints datatokens.
 
-The publisher runs **Ocean Provider**. In the **consume** step, Provider software needs to retrieve the data service URL given a datatoken address. One approach would be for the publisher to run a database; however this adds another dependency. To avoid this, it stores the URL on-chain. So that others don’t see that URL, it encrypts it.
+The publisher runs their own **Ocean Provider** or can use one deployed by Ocean Protocol. In the **consume** step, Provider software needs to retrieve the data service URL given a datatoken address. One approach would be for the publisher to run a database; however this adds another dependency. To avoid this, Provider encrypts the URL and it URL on-chain.
 
 To initiate the **consume** step, the data consumer sends 1.0 datatokens to the Provider wallet. Then they make a service request to the Provider. The Provider loads the encrypted URL, decrypts it, and provisions the requested service (send static data, or enable a compute-to-data job).
 
@@ -59,9 +66,9 @@ Complementary to Ocean Market, Ocean has reference code to ease building **third
 Metadata (name of dataset, date created etc.) is used by marketplaces for data asset discovery. Each data asset can have a [decentralized identifier](https://w3c-ccg.github.io/did-spec/) (DID) that resolves to a DID document (DDO) for associated metadata. The DDO is essentially [JSON](https://www.json.org/) filling in metadata fields. For more details on working with OCEAN DIDs check out the [DID concept documentation](https://docs.oceanprotocol.com/concepts/did-ddo/).
 The [DDO Metadata documentation](https://docs.oceanprotocol.com/concepts/ddo-metadata/) goes into more depth regarding metadata structure.
 
-[OEP8](https://github.com/oceanprotocol/OEPs/tree/master/8) specifies Ocean metadata schema, including fields that must be filled. It’s based on the public [DataSet schema from schema.org](https://schema.org/Dataset).
+[OEP8](/concepts/did-ddo/) specifies Ocean metadata schema, including fields that must be filled. It’s based on the public [DataSet schema from schema.org](https://schema.org/Dataset).
 
-Ocean uses the Ethereum mainnet as an **on-chain metadata store**, i.e. to store both DID and DDO. This means that once the write fee is paid, there are no further expenses or dev-ops work needed to ensure metadata availability into the future, aiding in the discoverability of data assets. It also simplifies integration with the rest of the Ocean system, which is Ethereum-based. Storage cost on Ethereum mainnet is not negligible, but not prohibitive and the other benefits are currently worth the tradeoff compared to alternatives.
+Ocean uses the Ethereum mainnet and other compatible networks as an **on-chain metadata store**, i.e. to store both DID and DDO. This means that once the write fee is paid, there are no further expenses or dev-ops work needed to ensure metadata availability into the future, aiding in the discoverability of data assets. It also simplifies integration with the rest of the Ocean system, which is Ethereum-based. Storage cost on Ethereum mainnet is not negligible, but not prohibitive and the other benefits are currently worth the tradeoff compared to alternatives.
 
 Due to the permissionless, decentralized nature of data on Ethereum mainnet, any last-mile tool can access metadata. **Ocean Aquarius** supports different metadata fields for each different Ocean-based marketplace. Developers could also use [TheGraph](https://www.thegraph.com) to see metadata fields that are common across all marketplaces.
 
