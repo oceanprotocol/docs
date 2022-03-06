@@ -42,7 +42,7 @@ module.exports = {
     },
     {
       from: '/setup/compute-to-data/',
-      to: '/tutorials/compute-to-data/'
+      to: '/tutorials/compute-to-data-minikube/'
     },
     {
       from: '/concepts/networks-overview/',
