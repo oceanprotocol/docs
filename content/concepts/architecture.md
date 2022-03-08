@@ -1,6 +1,6 @@
 ---
 title: Architecture Overview
-description: DataNFTs and Datatokens architecture
+description: Data NFTs and Datatokens architecture
 ---
 
 ## Overview
@@ -13,17 +13,17 @@ Here’s an overview of the figure.
 
 - The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, algorithms, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets, and buy/sell datatokens for a fixed or auto-determined price (data marketplaces), and consume data services (consume datatokens).
 - Below are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
-    - **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
-    - **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
-    - **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
-- The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](/concepts/networks/). 
+  - **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
+  - **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
+  - **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
+- The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](/concepts/networks/).
 
-## DataNFTs, Datatokens and Access Control Tools
+## Data NFTs, Datatokens and Access Control Tools
 
-DataNFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new dataNFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other Ethereum addresses who can deploy new datatoken contracts and even mint them. Each Datatoken contract is associated with one dataNFT contract.
-Click [here](/concepts/datanft-and-datatoken/) to further read about dataNFTs and datatokens.
+Data NFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new Data NFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other Ethereum addresses who can deploy new datatoken contracts and even mint them. Each Datatoken contract is associated with one Data NFT contract.
+Click [here](/concepts/datanft-and-datatoken/) to further read about Data NFTs and datatokens.
 
-ERC721 dataNFTs represent holding copyright/base IP of a data asset, and ERC20 datatokens represent licenses to consume the data asset.
+ERC721 Data NFTs represent holding copyright/base IP of a data asset, and ERC20 datatokens represent licenses to consume the data asset.
 
 Datatoken represents the asset that the publisher wants to monetize. The asset can be a dataset or an algorithm. The publisher actor holds the asset in Google Drive, Dropbox, AWS S3, on their phone, on their home server, etc. The publisher can optionally use IPFS for a content-addressable URL. Or instead of a file, the publisher may run a compute-to-data service.
 
