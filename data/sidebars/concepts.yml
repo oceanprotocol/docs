@@ -20,7 +20,7 @@
 
 - group: Specifying Assets
   items:
-    - title: DIDs & DDOs
+    - title: DID & DDO
       link: /concepts/did-ddo/
 
 - group: Contribute
