@@ -3,7 +3,7 @@ title: Introduction
 description: Ocean Protocol - Tools for the Web3 Data Economy
 ---
 
-In Ocean Protocol, each data service gets its own ERC721 **data NFT** and one or more ERC20 **datatoken**. This enables data wallets, data exchanges, and data co-ops by directly leveraging crypto wallets, exchanges, and more.
+In Ocean Protocol, each data service gets its own ERC721 **data NFT** and one or more ERC20 **datatokens**. This enables data wallets, data exchanges, and data co-ops by directly leveraging crypto wallets, exchanges, and more.
 
 OCEAN token is used for staking, and more. [Here](https://oceanprotocol.com/token) are details.
 
