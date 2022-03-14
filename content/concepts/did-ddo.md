@@ -11,23 +11,23 @@ section: concepts
 
 This document describes how Ocean assets follow the DID/DDO specification, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
-Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity and DIDs may represent humans, objects, and more.
+Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more.
 
 A DID Document (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
-## Rules for DIDs & DDOs
+## Rules for DID & DDO
 
-An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
+An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under the control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
-An _asset_ has a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). The DDO can only be modified by _owners_ or _delegated users_.
+An _asset_ has a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). Only _owners_ or _delegated users_ can modify the DDO.
 
 All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like _Aquarius_ can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
 
 ## Publishing & Retrieving DDOs
 
-The DDO is stored on-chain as part of the NFT contract, and stored encrypted using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
+The DDO is stored on-chain as part of the NFT contract and stored in encrypted form using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
-Here is the complete flow:
+Here is the flow:
 
 ![DDO flow](images/ddo-flow.png)
 
@@ -62,7 +62,7 @@ In Ocean, a DID is a string that looks like this:
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-The part after `did:op:` is the the ERC721 contract address(in checksum format) and the chainId (expressed as decimal) the asset has been published to:
+The part after `did:op:` is the ERC721 contract address(in checksum format) and the chainId (expressed as a decimal) the asset has been published to:
 
 ```js
 const checksum = sha256(ERC721 contract address + chainId)
@@ -128,12 +128,12 @@ Example:
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute       | Type                        | Required | Description                                                                                |
-| --------------- | --------------------------- | -------- | ------------------------------------------------------------------------------------------ |
-| **`language`**  | `string`                    |          | Language used to implement the software.                                                   |
-| **`version`**   | `string`                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before running the algorithm                     |
-| **`container`** | `container`                 | **✓**    | Object describing the Docker container image. See below                                    |
+| Attribute                | Type                                        | Required | Description                                                                                |
+| ------------------------ | ------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
+| **`language`**           | `string`                                    |          | Language used to implement the software.                                                   |
+| **`version`**            | `string`                                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters) |          | An object the defines required consumer input before running the algorithm                 |
+| **`container`**          | `container`                                 | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
@@ -163,7 +163,7 @@ The `container` object has the following attributes defining the Docker image fo
         "tag": "latest",
         "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
       },
-    "consumerParameters":{},
+      "consumerParameters": {}
     }
   }
 }
@@ -175,18 +175,18 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute              | Type                        | Required                        | Description                                                                                                                                  |
-| ---------------------- | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`id`**               | `string`                    | **✓**                           | Unique ID                                                                                                                                    |
-| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
-| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                        |
-| **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
-| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
-| **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
-| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
-| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before consuming the asset|
+| Attribute                | Type                                        | Required                        | Description                                                                                                                                  |
+| ------------------------ | ------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`id`**                 | `string`                                    | **✓**                           | Unique ID                                                                                                                                    |
+| **`type`**               | `string`                                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
+| **`name`**               | `string`                                    |                                 | Service friendly name                                                                                                                        |
+| **`description`**        | `string`                                    |                                 | Service description                                                                                                                          |
+| **`datatokenAddress`**   | `string`                                    | **✓**                           | Datatoken address                                                                                                                            |
+| **`serviceEndpoint`**    | `string`                                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
+| **`files`**              | [Files](#files)                             | **✓**                           | Encrypted file URLs.                                                                                                                         |
+| **`timeout`**            | `number`                                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`compute`**            | [Compute](#compute-options)                 | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters) |                                 | An object the defines required consumer input before consuming the asset                                                                     |
 
 #### Files
 
@@ -200,8 +200,7 @@ Example:
 }
 ```
 
-During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of objects defining the storage access details are sent. 
-
+During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of objects defining the storage access details are sent.
 
 Type of objects supported :
 
@@ -217,11 +216,11 @@ Type of objects supported :
 
 ```json
 [
-   {
-      "type": "url",
-      "url": "https://url.com/file1.csv",
-      "method": "GET"
-   }
+  {
+    "type": "url",
+    "url": "https://url.com/file1.csv",
+    "method": "GET"
+  }
 ]
 ```
 
@@ -240,11 +239,11 @@ First class integrations supported in the future :
 <td>"ipfs"</td><td>IPFS files</td>
 <td>
 
- ```json
-[ 
+```json
+[
   {
-  "type":"ipfs",
-  "hash": "XXX"
+    "type": "ipfs",
+    "hash": "XXX"
   }
 ]
 ```
@@ -257,23 +256,21 @@ First class integrations supported in the future :
 <tr><td>"sql"</td><td>Sql connection, dataset is generated by a query</td><td>&nbsp;</td></tr>
 </table>
 
-
 A service can contain multiple files, using multiple storage types.
 
 Example:
 
 ```json
 [
-   {
-      "type": "url",
-      "url": "https://url.com/file1.csv",
-      "method": "GET"
-
-   },
-   {
-      "type": "ipfs",
-      "hash": "XXXX"
-   }
+  {
+    "type": "url",
+    "url": "https://url.com/file1.csv",
+    "method": "GET"
+  },
+  {
+    "type": "ipfs",
+    "hash": "XXXX"
+  }
 ]
 ```
 
@@ -377,7 +374,6 @@ An asset with a service of `type` `compute` has the following additional attribu
   </tbody>
 </table>
 
-
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
 | Attribute                      | Type     | Required | Description                                                               |
@@ -443,7 +439,7 @@ Example:
   ]
 }
 ```
- 
+
 #### Consumer Parameters
 
 Sometimes, you may need some input before downloading a dataset or running an algorithm.
@@ -456,27 +452,26 @@ It's an array of elements, each element object defines a field.
 An element looks like:
 
 ```json
-   {
-        "name":"hometown",
-        "type": "text",
-        "label": "Hometown",
-        "required": true,
-        "description":"What is your hometown?",
-        "default": "Nowhere",
-        "options": []
-    }
+{
+  "name": "hometown",
+  "type": "text",
+  "label": "Hometown",
+  "required": true,
+  "description": "What is your hometown?",
+  "default": "Nowhere",
+  "options": []
+}
 ```
 
 where:
 
-  - name  = defines the parameter name (this is sent as HTTP param or key towards algo)
-  - type  = defines the form type  (text, number, select, boolean)
-  - label = defines the label which is displayed
-  - required = if this field is mandatory to have a consumer input.
-  - default  = default value
-  - description = description of this element
-  - options = for select types, a list of options
-
+- name = defines the parameter name (this is sent as HTTP param or key towards algo)
+- type = defines the form type (text, number, select, boolean)
+- label = defines the label which is displayed
+- required = if this field is mandatory to have a consumer input.
+- default = default value
+- description = description of this element
+- options = for select types, a list of options
 
 Example:
 
@@ -515,7 +510,7 @@ Example:
         "options": [
              {
                     "nodejs" : "I love NodeJs"
-             }, 
+             },
              {
                   "python" : "I love Python"
              }
@@ -525,7 +520,7 @@ Example:
 ]
 ```
 
-Algorithms will have access to a json file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required.  Example:
+Algorithms will have access to a JSON file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required. Example:
 
 ```json
 {
@@ -536,7 +531,6 @@ Algorithms will have access to a json file located at /data/inputs/algoCustomDat
 }
 ```
 
-  
 ### Credentials
 
 By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
@@ -622,21 +616,21 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 
 The following fields are added by _Aquarius_ in its DDO response for convenience reasons, where an asset returned by _Aquarius_ inherits the DDO fields stored on-chain.
 
-These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-hash).
+These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-checksum).
 
 ### NFT
 
 The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
-| Attribute     | Type                   | Description                                                               |
-| ------------- | ---------------------- | ------------------------------------------------------------------------- |
-| **`address`** | `string`               | Contract address of the deployed ERC721 NFT contract.                     |
-| **`name`**    | `string`               | Name of NFT set in contract.                                              |
-| **`symbol`**  | `string`               | Symbol of NFT set in contract.                                            |
-| **`owner`**   | `string`               | ETH account address of the NFT owner.                                     |
-| **`state`**   | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
-| **`created`** | `ISO date/time string` | Contains the date of NFT creation.                                        |
-| **`tokenURI`** | `string` | tokenURI                                         |
+| Attribute      | Type                   | Description                                                               |
+| -------------- | ---------------------- | ------------------------------------------------------------------------- |
+| **`address`**  | `string`               | Contract address of the deployed ERC721 NFT contract.                     |
+| **`name`**     | `string`               | Name of NFT set in contract.                                              |
+| **`symbol`**   | `string`               | Symbol of NFT set in contract.                                            |
+| **`owner`**    | `string`               | ETH account address of the NFT owner.                                     |
+| **`state`**    | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
+| **`created`**  | `ISO date/time string` | Contains the date of NFT creation.                                        |
+| **`tokenURI`** | `string`               | tokenURI                                                                  |
 
 Example:
 
@@ -735,8 +729,8 @@ Example:
 
 The `stats` section contains different statistics fields.
 
-| Attribute      | Type     | Description                                                                                                   |
-| -------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| Attribute    | Type     | Description                                                                                                  |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------ |
 | **`orders`** | `number` | How often an asset was ordered, meaning how often it was either downloaded or used as part of a compute job. |
 
 Example:
@@ -753,123 +747,131 @@ Example:
 
 ```json
 {
-	"@context": ["https://w3id.org/did/v1"],
-	"id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
-	"version": "4.0.0",
-	"chainId": 1,
-	"nftAddress": "0x123",
-	"metadata": {
-		"created": "2020-11-15T12:27:48Z",
-		"updated": "2021-05-17T21:58:02Z",
-		"description": "Sample description",
-		"name": "Sample asset",
-		"type": "dataset",
-		"author": "OPF",
-		"license": "https://market.oceanprotocol.com/terms"
-	},
-	"services": [{
-			"id": "1",
-			"type": "access",
-			"files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
-			"name": "Download service",
-			"description": "Download service",
-			"datatokenAddress": "0x123",
-			"serviceEndpoint": "https://myprovider.com",
-			"timeout": 0,
-			"consumerParameters": [{
-					"name": "surname",
-					"type": "text",
-					"label": "Name",
-					"required": true,
-					"default": "NoName",
-					"description": "Please fill your name"
-				},
-				{
-					"name": "age",
-					"type": "number",
-					"label": "Age",
-					"required": false,
-					"default": 0,
-					"description": "Please fill your age"
-				}
-			]
-		},
-		{
-			"id": "2",
-			"type": "compute",
-			"files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
-			"name": "Compute service",
-			"description": "Compute service",
-			"datatokenAddress": "0x124",
-			"serviceEndpoint": "https://myprovider.com",
-			"timeout": 3600,
-			"compute": {
-				"allowRawAlgorithm": false,
-				"allowNetworkAccess": true,
-				"publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
-				"publisherTrustedAlgorithms": [{
-						"did": "did:op:123",
-						"filesChecksum": "100",
-						"containerSectionChecksum": "200"
-					},
-					{
-						"did": "did:op:124",
-						"filesChecksum": "110",
-						"containerSectionChecksum": "210"
-					}
-				]
-			}
-		}
-	],
-	"credentials": {
-		"allow": [{
-			"type": "address",
-			"values": ["0x123", "0x456"]
-		}],
-		"deny": [{
-			"type": "address",
-			"values": ["0x2222", "0x333"]
-		}]
-	},
+  "@context": ["https://w3id.org/did/v1"],
+  "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
+  "version": "4.0.0",
+  "chainId": 1,
+  "nftAddress": "0x123",
+  "metadata": {
+    "created": "2020-11-15T12:27:48Z",
+    "updated": "2021-05-17T21:58:02Z",
+    "description": "Sample description",
+    "name": "Sample asset",
+    "type": "dataset",
+    "author": "OPF",
+    "license": "https://market.oceanprotocol.com/terms"
+  },
+  "services": [
+    {
+      "id": "1",
+      "type": "access",
+      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
+      "name": "Download service",
+      "description": "Download service",
+      "datatokenAddress": "0x123",
+      "serviceEndpoint": "https://myprovider.com",
+      "timeout": 0,
+      "consumerParameters": [
+        {
+          "name": "surname",
+          "type": "text",
+          "label": "Name",
+          "required": true,
+          "default": "NoName",
+          "description": "Please fill your name"
+        },
+        {
+          "name": "age",
+          "type": "number",
+          "label": "Age",
+          "required": false,
+          "default": 0,
+          "description": "Please fill your age"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "compute",
+      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
+      "name": "Compute service",
+      "description": "Compute service",
+      "datatokenAddress": "0x124",
+      "serviceEndpoint": "https://myprovider.com",
+      "timeout": 3600,
+      "compute": {
+        "allowRawAlgorithm": false,
+        "allowNetworkAccess": true,
+        "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
+        "publisherTrustedAlgorithms": [
+          {
+            "did": "did:op:123",
+            "filesChecksum": "100",
+            "containerSectionChecksum": "200"
+          },
+          {
+            "did": "did:op:124",
+            "filesChecksum": "110",
+            "containerSectionChecksum": "210"
+          }
+        ]
+      }
+    }
+  ],
+  "credentials": {
+    "allow": [
+      {
+        "type": "address",
+        "values": ["0x123", "0x456"]
+      }
+    ],
+    "deny": [
+      {
+        "type": "address",
+        "values": ["0x2222", "0x333"]
+      }
+    ]
+  },
 
-	"nft": {
-		"address": "0x123",
-		"name": "Ocean Protocol Asset v4",
-		"symbol": "OCEAN-A-v4",
-		"owner": "0x0000000",
-		"state": 0,
-		"created": "2000-10-31T01:30:00",
-		"tokenURI": "xxx"
-	},
+  "nft": {
+    "address": "0x123",
+    "name": "Ocean Protocol Asset v4",
+    "symbol": "OCEAN-A-v4",
+    "owner": "0x0000000",
+    "state": 0,
+    "created": "2000-10-31T01:30:00",
+    "tokenURI": "xxx"
+  },
 
-	"datatokens": [{
-			"address": "0x000000",
-			"name": "Datatoken 1",
-			"symbol": "DT-1",
-			"serviceId": "1"
-		},
-		{
-			"address": "0x000001",
-			"name": "Datatoken 2",
-			"symbol": "DT-2",
-			"serviceId": "2"
-		}
-	],
+  "datatokens": [
+    {
+      "address": "0x000000",
+      "name": "Datatoken 1",
+      "symbol": "DT-1",
+      "serviceId": "1"
+    },
+    {
+      "address": "0x000001",
+      "name": "Datatoken 2",
+      "symbol": "DT-2",
+      "serviceId": "2"
+    }
+  ],
 
-	"event": {
-		"tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
-		"block": 12831214,
-		"from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-		"contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
-		"datetime": "2000-10-31T01:30:00"
-	},
+  "event": {
+    "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+    "block": 12831214,
+    "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
+    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
+    "datetime": "2000-10-31T01:30:00"
+  },
 
-	"purgatory": {
-		"state": false
-	},
+  "purgatory": {
+    "state": false
+  },
 
-	"stats": {
-		"orders": 4
-	}
+  "stats": {
+    "orders": 4
+  }
 }
 ```
