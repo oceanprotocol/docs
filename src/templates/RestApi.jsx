@@ -30,6 +30,7 @@ export default function RestApiDoc({ location, pageContext }) {
         <Content>
           <main className={stylesDoc.wrapper}>
             <aside className={stylesDoc.sidebar}>
+              {/* Add sidebar */}
               <Sidebar location={location} sidebar="references" collapsed />
             </aside>
             <article className={stylesDoc.main}>
