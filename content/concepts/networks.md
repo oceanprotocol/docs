@@ -105,7 +105,7 @@ If you don't find Moonbase as a predefined network in your wallet, you can conne
 | ------------ | ------------------------------------------------------------------- |
 | Explorer     | https://moonbase.moonscan.io/                                      |
 | Ocean Market | Point wallet to Moonbase network, at https://market.oceanprotocol.com |
-| Provider     | `https://provider.moonbase.oceanprotocol.com/`                         |
+| Provider     | `https://v4.provider.moonbase.oceanprotocol.com/`                       |
 | Subgraph     | `https://v4.subgraph.moonbase.oceanprotocol.com`                         |
 
 
