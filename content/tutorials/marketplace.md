@@ -9,10 +9,10 @@ Ocean Protocol's [marketplace](https://market.oceanprotocol.com/) provider a web
 
 By doing so, developers can:
 
-- Change the name of the marketplace.
+- Change the source of the asset information.
 - Implement their own branding, style.
 - Change the source of asset information.
-- Change fee address.
+- Customise the fees
 
 ## Forking marketplace
 
