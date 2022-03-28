@@ -5,7 +5,7 @@ description:
 
 ## About marketplace
 
-Ocean Protocol's [marketplace](https://market.oceanprotocol.com/) provides a web interface for accessing assets published on the chain. By default, the metadata of the assets are pulled from Aquarius hosted by Ocean Protocol. To extend the existing features of the marketplace, developers can fork the marketplace.
+Ocean Protocol's [marketplace](https://market.oceanprotocol.com/) provides a web interface for accessing assets published on the chain. By default, assets metadata is pulled from Aquarius, component hosted by Ocean Protocol. To extend the existing features of the marketplace, developers can fork the marketplace.
 
 By doing so, developers can:
 
