@@ -74,8 +74,8 @@ This fee incentivizes individuals and organizations to run their provider instan
 | <b>Ocean Provider Fees</b>                                                                                            | <b>OPF Provider</b>                                     | <b>3rd party Provider</b>                                    |
 | Token in which fee is charged: `PROVIDER_FEE_TOKEN`                                                                   | OCEAN                                                   | E.g. USDC                                                    |
 | Download: `COST_PER_MB`                                                                                               | 0                                                       | Set in Provider envvars.                                     |
-| Compute: `COST_PER_MIN`                                                                                               | 0                                                       | Set in OperatorEngine envvars.                               |
-| Compute: `COST_PER_MIN`                                                                                               | 1.0 OCEAN/min                                           | Set in OperatorEngine envvars.                               |
+| Compute: `COST_PER_MIN`<br> Environment: 1 CPU, 60 secs max                                                                                               | 0                                                       | Set in OperatorEngine envvars.                               |
+| Compute: `COST_PER_MIN`<br> Environment: 1 CPU, 1 hour max                                                                                               | 1.0 OCEAN/min                                           | Set in OperatorEngine envvars.                               |
 | Ocean Community                                                                                                       | 0% of the Provider fee                                  | 0% of the Provider fee                                       |
 
 ## Further reading
