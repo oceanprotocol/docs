@@ -11,23 +11,23 @@ section: concepts
 
 This document describes how Ocean assets follow the DID/DDO specification, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
-Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity and DIDs may represent humans, objects, and more.
+Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more.
 
 A DID Document (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
-## Rules for DIDs & DDOs
+## Rules for DID & DDO
 
-An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
+An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under the control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
-An _asset_ has a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). The DDO can only be modified by _owners_ or _delegated users_.
+An _asset_ has a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). Only _owners_ or _delegated users_ can modify the DDO.
 
 All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like _Aquarius_ can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
 
 ## Publishing & Retrieving DDOs
 
-The DDO is stored on-chain as part of the NFT contract, and stored encrypted using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
+The DDO is stored on-chain as part of the NFT contract and stored in encrypted form using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
-Here is the complete flow:
+Here is the flow:
 
 ![DDO flow](images/ddo-flow.png)
 
@@ -62,7 +62,7 @@ In Ocean, a DID is a string that looks like this:
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-The part after `did:op:` is the the ERC721 contract address(in checksum format) and the chainId (expressed as decimal) the asset has been published to:
+The part after `did:op:` is the ERC721 contract address(in checksum format) and the chainId (expressed as a decimal) the asset has been published to:
 
 ```js
 const checksum = sha256(ERC721 contract address + chainId)
@@ -128,12 +128,12 @@ Example:
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute       | Type                        | Required | Description                                                                                |
-| --------------- | --------------------------- | -------- | ------------------------------------------------------------------------------------------ |
-| **`language`**  | `string`                    |          | Language used to implement the software.                                                   |
-| **`version`**   | `string`                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before running the algorithm                     |
-| **`container`** | `container`                 | **✓**    | Object describing the Docker container image. See below                                    |
+| Attribute                | Type                                        | Required | Description                                                                                |
+| ------------------------ | ------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
+| **`language`**           | `string`                                    |          | Language used to implement the software.                                                   |
+| **`version`**            | `string`                                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters) |          | An object the defines required consumer input before running the algorithm                 |
+| **`container`**          | `container`                                 | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
@@ -163,7 +163,7 @@ The `container` object has the following attributes defining the Docker image fo
         "tag": "latest",
         "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
       },
-    "consumerParameters":{},
+      "consumerParameters": {}
     }
   }
 }
@@ -202,8 +202,7 @@ Example:
 }
 ```
 
-During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of objects defining the storage access details are sent. 
-
+During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of objects defining the storage access details are sent.
 
 Type of objects supported :
 
@@ -219,11 +218,11 @@ Type of objects supported :
 
 ```json
 [
-   {
-      "type": "url",
-      "url": "https://url.com/file1.csv",
-      "method": "GET"
-   }
+  {
+    "type": "url",
+    "url": "https://url.com/file1.csv",
+    "method": "GET"
+  }
 ]
 ```
 
@@ -242,11 +241,11 @@ First class integrations supported in the future :
 <td>"ipfs"</td><td>IPFS files</td>
 <td>
 
- ```json
-[ 
+```json
+[
   {
-  "type":"ipfs",
-  "hash": "XXX"
+    "type": "ipfs",
+    "hash": "XXX"
   }
 ]
 ```
@@ -259,23 +258,21 @@ First class integrations supported in the future :
 <tr><td>"sql"</td><td>Sql connection, dataset is generated by a query</td><td>&nbsp;</td></tr>
 </table>
 
-
 A service can contain multiple files, using multiple storage types.
 
 Example:
 
 ```json
 [
-   {
-      "type": "url",
-      "url": "https://url.com/file1.csv",
-      "method": "GET"
-
-   },
-   {
-      "type": "ipfs",
-      "hash": "XXXX"
-   }
+  {
+    "type": "url",
+    "url": "https://url.com/file1.csv",
+    "method": "GET"
+  },
+  {
+    "type": "ipfs",
+    "hash": "XXXX"
+  }
 ]
 ```
 
@@ -379,7 +376,6 @@ An asset with a service of `type` `compute` has the following additional attribu
   </tbody>
 </table>
 
-
 The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
 
 | Attribute                      | Type     | Required | Description                                                               |
@@ -445,7 +441,7 @@ Example:
   ]
 }
 ```
- 
+
 #### Consumer Parameters
 
 Sometimes, you may need some input before downloading a dataset or running an algorithm.
@@ -458,27 +454,26 @@ It's an array of elements, each element object defines a field.
 An element looks like:
 
 ```json
-   {
-        "name":"hometown",
-        "type": "text",
-        "label": "Hometown",
-        "required": true,
-        "description":"What is your hometown?",
-        "default": "Nowhere",
-        "options": []
-    }
+{
+  "name": "hometown",
+  "type": "text",
+  "label": "Hometown",
+  "required": true,
+  "description": "What is your hometown?",
+  "default": "Nowhere",
+  "options": []
+}
 ```
 
 where:
 
-  - name  = defines the parameter name (this is sent as HTTP param or key towards algo)
-  - type  = defines the form type  (text, number, select, boolean)
-  - label = defines the label which is displayed
-  - required = if this field is mandatory to have a consumer input.
-  - default  = default value
-  - description = description of this element
-  - options = for select types, a list of options
-
+- name = defines the parameter name (this is sent as HTTP param or key towards algo)
+- type = defines the form type (text, number, select, boolean)
+- label = defines the label which is displayed
+- required = if this field is mandatory to have a consumer input.
+- default = default value
+- description = description of this element
+- options = for select types, a list of options
 
 Example:
 
@@ -517,7 +512,7 @@ Example:
         "options": [
              {
                     "nodejs" : "I love NodeJs"
-             }, 
+             },
              {
                   "python" : "I love Python"
              }
@@ -527,7 +522,7 @@ Example:
 ]
 ```
 
-Algorithms will have access to a json file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required.  Example:
+Algorithms will have access to a JSON file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required. Example:
 
 ```json
 {
@@ -538,7 +533,6 @@ Algorithms will have access to a json file located at /data/inputs/algoCustomDat
 }
 ```
 
-  
 ### Credentials
 
 By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
@@ -624,21 +618,21 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 
 The following fields are added by _Aquarius_ in its DDO response for convenience reasons, where an asset returned by _Aquarius_ inherits the DDO fields stored on-chain.
 
-These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-hash).
+These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-checksum).
 
 ### NFT
 
 The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
-| Attribute     | Type                   | Description                                                               |
-| ------------- | ---------------------- | ------------------------------------------------------------------------- |
-| **`address`** | `string`               | Contract address of the deployed ERC721 NFT contract.                     |
-| **`name`**    | `string`               | Name of NFT set in contract.                                              |
-| **`symbol`**  | `string`               | Symbol of NFT set in contract.                                            |
-| **`owner`**   | `string`               | ETH account address of the NFT owner.                                     |
-| **`state`**   | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
-| **`created`** | `ISO date/time string` | Contains the date of NFT creation.                                        |
-| **`tokenURI`** | `string` | tokenURI                                         |
+| Attribute      | Type                   | Description                                                               |
+| -------------- | ---------------------- | ------------------------------------------------------------------------- |
+| **`address`**  | `string`               | Contract address of the deployed ERC721 NFT contract.                     |
+| **`name`**     | `string`               | Name of NFT set in contract.                                              |
+| **`symbol`**   | `string`               | Symbol of NFT set in contract.                                            |
+| **`owner`**    | `string`               | ETH account address of the NFT owner.                                     |
+| **`state`**    | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
+| **`created`**  | `ISO date/time string` | Contains the date of NFT creation.                                        |
+| **`tokenURI`** | `string`               | tokenURI                                                                  |
 
 Example:
 
@@ -737,8 +731,8 @@ Example:
 
 The `stats` section contains different statistics fields.
 
-| Attribute      | Type     | Description                                                                                                   |
-| -------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| Attribute    | Type     | Description                                                                                                  |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------ |
 | **`orders`** | `number` | How often an asset was ordered, meaning how often it was either downloaded or used as part of a compute job. |
 
 Example:
@@ -781,21 +775,22 @@ Example:
       "timeout": 0,
       "consumerParameters": [
         {
-          "name":"surname",
+          "name": "surname",
           "type": "text",
           "label": "Name",
           "required": true,
-          "default": "NoName"
-          "description":"Please fill your name"
+          "default": "NoName",
+          "description": "Please fill your name"
         },
-       {
-          "name":"age",
+        {
+          "name": "age",
           "type": "number",
           "label": "Age",
           "required": false,
-          "default": 0
-          "description":"Please fill your age"
-      }]
+          "default": 0,
+          "description": "Please fill your age"
+        }
+      ]
     },
     {
       "id": "2",
