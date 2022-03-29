@@ -16,7 +16,7 @@ Currently, there are three ways of getting data from GitHub to construct various
 
 The GitHub GraphQL API integration is done through [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) and requires authorization.
 
-An environment variable `GITHUB_TOKEN` needs to present, filled with a [personal access token](https://github.com/settings/tokens) with the scope `public_repo`.
+An environment variable `GITHUB_TOKEN` needs to be present, filled with a [personal access token](https://github.com/settings/tokens) with the scope `public_repo`.
 
 For local development, you can simply [create a personal access token](https://github.com/settings/tokens) and use it in your local .env file:
 
@@ -25,6 +25,9 @@ cp .env.sample .env
 vi .env
 # GITHUB_TOKEN=add_your_token_here
 ```
+An alternative to typing the above code is to just create a .env file and add this line `GITHUB_TOKEN=add_your_token_here` in it. Do not put your token in quotes.
+
+Here's a guide on how to [create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 When running the site locally, you can use the GraphiQL client running under [localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql) to explore the whole GraphQL layer of the site (not just the GitHub infos).
 
