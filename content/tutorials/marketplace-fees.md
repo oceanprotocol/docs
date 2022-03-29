@@ -11,8 +11,8 @@ Ocean Protocol is a community-driven project. Through OceanDAO, the project aims
 
 ### Swap fee
 
-Swap fees are collected whenever someone swaps a datatoken for basetoken (e.g., OCEAN) or basetoken for datatoken. The swap could be inside a pool (using an automated market maker) or in a fixed-rate exchange.
-These are the fees that are applied whenever a user swaps basetoken or datatoken:
+Swap fees are collected whenever someone swaps a datatoken for base token (e.g., OCEAN) or base token for datatoken. The swap could be inside a pool (using an automated market maker) or in a fixed-rate exchange.
+These are the fees that are applied whenever a user swaps base token or datatoken:
 
 - Publisher Marketplace swap fee
 - Consumer Marketplace swap fee
@@ -40,15 +40,15 @@ The following fees apply to the consumption of data assets as a part of Consume 
 
 ### Ocean Community fee
 
-Ocean's smart contract collects the **Ocean Community fee** during a swap operation. These fees are reinvested in community projects via Ocean DAO and other initiatives. Currently, this fee is set to 0 (as long as either Ocean or H20 are used as the base token in the market) in the smart contract but can be updated by the Ocean Protocol foundation.
+Ocean's smart contract collects the **Ocean Community fee** during a swap operation. These fees are reinvested in community projects via Ocean DAO and other initiatives. Currently, this fee is set to 0.1% (as long as either Ocean or H20 are used as the base token in the market) in the smart contract but can be updated by the Ocean Protocol foundation.
 
-Whereas a fee of 0.1% is applicable on all swaps using another token as the base token.
+Whereas a fee of 0.2% is applicable on all swaps using another token as the base token.
 
 ### Provider fee
 
 Provider is a component of Ocean Protocol's ecosystem which facilitates data consumption, starts compute jobs, encrypts DDOs, and decrypts DDOs. Provider also validates if the user can access a particular data asset or service. To know more about Provider, click [here](https://github.com/oceanprotocol/provider).
 
-Provider fees are paid to the individual or organization running their Provider instance whenever a user consumes a data asset or swaps a datatoken for a basetoken. These fees can be set to an absolute amount, and the receiver can also decide which token to receive the fees in - they don't have to be in the same currency used in the consuming market.
+Provider fees are paid to the individual or organization running their Provider instance whenever a user consumes a data asset or swaps a datatoken for a base token. These fees can be set to an absolute amount, and the receiver can also decide which token to receive the fees in - they don't have to be in the same currency used in the consuming market.
 
 Provider fee can also be used to charge for computing resources. Based on the compute resources needed to run an algorithm in the Compute-to-Data environment, a consumer can choose the amount to pay according to their needs.
 
@@ -56,27 +56,27 @@ This fee incentivizes individuals and organizations to run their provider instan
 
 ## Fee values
 
-| Swap Fees                                                                                                             | Value in Ocean Market, using any Provider               | Value in Other Markets                                       |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------ |
-| publishMarket: Pools                                                                                                  | 0%                                                      | Set in the market config, by the publishing market.          |
-| publishMarket: FixedRate                                                                                              | 0%                                                      | Set in the market config, by the publishing market.          |
-| consumeMarket: Pools                                                                                                  | 0%                                                      | Set in market config, by the consuming market.               |
-| consumeMarket: FixedRate <br>ERC20Template                                                                            | 0%                                                      | 0%                                                           |
-| consumeMarket: FixedRate <br>EnterpriseTemplate                                                                       | 0%                                                      | Set in market config, by the consuming market.               |
-| Ocean Community: Pools & FixedRate<br>OCEAN, H2O as basetoken                                                         | 0.1%                                                    | 0.1%                                                         |
-| Ocean Community: Pools & FixedRate<br>other basetoken                                                                 | 0.2%                                                    | 0.2%                                                         |
-| Pool Liquidity Provider (LP)                                                                                          | 1%                                                      | Set by the pool creator on contract deployment.<br> Min = 0.001%(contract) & 0.1%(market)<br>Max = 10%(contract & market) |
-| <b>Publish Fees</b>                                                                                                   | 0%                                                      | 0%                                                           |
-| <b>Order Fees <br>The consumer has 1.0 datatokens, they use it to get access to the dataset.</b>                      |                                                         |                                                              |
-| publishMarket<br>Absolute value, in any token. E.g. 5 USDT                                                            | 0                                                       | Set in market config, by the publishing market.              |
-| consumeMarket<br>Absolute value, in any token. E.g. 2 DAI                                                             | 0                                                       | Set in market config, by the consuming market.               |
-| Ocean Community<br>Fixed price in DT                                                                                  | 0.03 DT                                                 | 0.03 DT                                                      |
-| <b>Ocean Provider Fees</b>                                                                                            | <b>OPF Provider</b>                                     | <b>3rd party Provider</b>                                    |
-| Token in which fee is charged: `PROVIDER_FEE_TOKEN`                                                                   | OCEAN                                                   | E.g. USDC                                                    |
-| Download: `COST_PER_MB`                                                                                               | 0                                                       | Set in Provider envvars.                                     |
-| Compute: `COST_PER_MIN`<br> Environment: 1 CPU, 60 secs max                                                                                               | 0                                                       | Set in OperatorEngine envvars.                               |
-| Compute: `COST_PER_MIN`<br> Environment: 1 CPU, 1 hour max                                                                                               | 1.0 OCEAN/min                                           | Set in OperatorEngine envvars.                               |
-| Ocean Community                                                                                                       | 0% of the Provider fee                                  | 0% of the Provider fee                                       |
+| Swap Fees                                                     | Value in Ocean Market, using any Provider | Value in Other Markets                                                                                                                           |
+| :------------------------------------------------------------ | :----------------------------------------:| :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| publishMarket: Pools                                          | 0%                                        | Set in the market config, by the publishing market.<br>Min = 0.001%<br>Max = 10%                                                                 |
+| publishMarket: FixedRate                                      | 0%                                        | Set in the market config, by the publishing market.<br>Min = 0.001%<br>Max = 50%                                                                 |
+| consumeMarket: Pools                                          | 0%                                        | Set in market config, by the consuming market.<br>Min = 0.001%<br>Max = 10%                                                                      |
+| consumeMarket: FixedRate<br>ERC20Template                     | 0%                                        | 0%                                                                                                                                               |
+| consumeMarket: FixedRate<br>EnterpriseTemplate                | 0%                                        | Set in market config, by the consuming market.                                                                                                   |
+| Ocean Community: Pools & FixedRate<br>OCEAN, H2O as base token| 0.1%                                      | 0.1%                                                                                                                                             |
+| Ocean Community: Pools & FixedRate<br>other base token        | 0.2%                                      | 0.2%                                                                                                                                             |
+| Pool Liquidity Provider (LP)                                  | 1%                                        | Set by the pool creator on contract deployment.<br><b>Contracts</b> <br> Min = 0.001% <br>Max = 10%<br><b>Market</b> <br>Min = 0.1% <br>Max = 10%|
+| <b>Publish Fees</b>                                           | 0%                                        | 0%                                                                                                                                               |
+| <b>Order Fees <br>1 datatoken available to get dataset acces  |                                           |                                                                                                                                                  |
+| publishMarket<br>Absolute value, in any token. E.g. 5 USDT    | 0                                         | Set in market config, by the publishing market.                                                                                                  |
+| consumeMarket<br>Absolute value, in any token. E.g. 2 DAI     | 0                                         | Set in market config, by the consuming market.                                                                                                   |
+| Ocean Community<br>Fixed price in DT                          | 0.03 DT                                   | 0.03 DT                                                                                                                                          |
+| <b>Ocean Provider Fees</b>                                    | <b>OPF Provider</b>                       | <b>3rd party Provider</b>                                                                                                                        |
+| Token in which fee is charged: `PROVIDER_FEE_TOKEN`           | OCEAN                                     | E.g. USDC                                                                                                                                        |
+| Download: `COST_PER_MB`                                       | 0                                         | Set in Provider envvars.                                                                                                                         |
+| Compute: `COST_PER_MIN`<br> Environment: 1 CPU, 60 secs max   | 0                                         | Set in OperatorEngine envvars.                                                                                                                   |
+| Compute: `COST_PER_MIN`<br> Environment: 1 CPU, 1 hour max    | 1.0 OCEAN/min                             | Set in OperatorEngine envvars.                                                                                                                   |
+| Ocean Community                                               | 0% of the Provider fee                    | 0% of the Provider fee                                                                                                                           |
 
 ## Further reading
 
