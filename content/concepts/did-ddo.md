@@ -175,18 +175,20 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute                | Type                                        | Required                        | Description                                                                                                                                  |
-| ------------------------ | ------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`id`**                 | `string`                                    | **✓**                           | Unique ID                                                                                                                                    |
-| **`type`**               | `string`                                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
-| **`name`**               | `string`                                    |                                 | Service friendly name                                                                                                                        |
-| **`description`**        | `string`                                    |                                 | Service description                                                                                                                          |
-| **`datatokenAddress`**   | `string`                                    | **✓**                           | Datatoken address                                                                                                                            |
-| **`serviceEndpoint`**    | `string`                                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**              | [Files](#files)                             | **✓**                           | Encrypted file URLs.                                                                                                                         |
-| **`timeout`**            | `number`                                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`compute`**            | [Compute](#compute-options)                 | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
-| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters) |                                 | An object the defines required consumer input before consuming the asset                                                                     |
+| Attribute              | Type                        | Required                        | Description                                                                                                                                  |
+| ---------------------- | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`id`**               | `string`                    | **✓**                           | Unique ID                                                                                                                                    |
+| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
+| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                        |
+| **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
+| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
+| **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
+| **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
+| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before consuming the asset|
+| **`additionalInformation`** | Object                                    |                                   | Stores additional information, this is customizable by publisher                                                         |
+
 
 #### Files
 
