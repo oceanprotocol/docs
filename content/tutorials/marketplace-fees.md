@@ -16,7 +16,7 @@ Ocean Protocol achieves sustainability via the [Web3 sustainability loop](https:
 
 ### Swap fee
 
-Swap fees are collected whenever someone swaps a datatoken the base token (e.g., OCEAN) or base token for a datatoken. The swap could be inside a pool (using an automated market maker) or in a fixed-rate exchange.
+Swap fees are collected whenever someone swaps a datatoken for base token (e.g., OCEAN) or base token for a datatoken. The swap could be inside a pool (using an automated market maker) or in a fixed-rate exchange.
 These are the fees that are applied whenever a user swaps base token or datatoken:
 
 - Publisher Marketplace swap fee
@@ -63,6 +63,8 @@ These fees incentivize individuals and organizations to run their provider insta
 
 ## Fee values
 
+The table is periodically updated. Users are advised to confirm new values through the [contracts](https://github.com/oceanprotocol/contracts) and the [market](https://github.com/oceanprotocol/market).
+
 | Swap Fees                                                     | Value in Ocean Market, using any Provider | Value in Other Markets                                                                                                                           |
 | :------------------------------------------------------------ | :----------------------------------------:| :----------------------------------------------------------------------------------------------------------------------------------------------- |
 | publishMarket: Pools                                          | 0%                                        | Set in the market config, by the publishing market.<br>Min = 0.001%<br>Max = 10%                                                                 |
@@ -78,7 +80,9 @@ These fees incentivize individuals and organizations to run their provider insta
 | publishMarket<br>Absolute value, in any token. E.g. 5 USDT    | 0                                         | Set in market config, by the publishing market.                                                                                                  |
 | consumeMarket<br>Absolute value, in any token. E.g. 2 DAI     | 0                                         | Set in market config, by the consuming market.                                                                                                   |
 | Ocean Community<br>Fixed price in DT                          | 0.03 DT                                   | 0.03 DT                                                                                                                                          |
-| <b>Ocean Provider Fees</b>                                    | <b>OPF Provider</b>                       | <b>3rd party Provider</b>                                                                                                                        |
+
+| Ocean Provider Fees                                           | OPF Provider                              | 3rd party Provider                                                                                                                               |
+| :------------------------------------------------------------ | :----------------------------------------:| :----------------------------------------------------------------------------------------------------------------------------------------------- |
 | Token in which fee is charged: `PROVIDER_FEE_TOKEN`           | OCEAN                                     | E.g. USDC                                                                                                                                        |
 | Download: `COST_PER_MB`                                       | 0                                         | Set in Provider envvars.                                                                                                                         |
 | Compute: `COST_PER_MIN`<br> Environment: 1 CPU, 60 secs max   | 0                                         | Set in OperatorEngine envvars.                                                                                                                   |
