@@ -22,8 +22,7 @@ For local development, you can simply [create a personal access token](https://g
 
 ```bash
 cp .env.sample .env
-vi .env
-# GITHUB_TOKEN=add_your_token_here
+vi .env # GITHUB_TOKEN=add_your_token_here
 ```
 
 When running the site locally, you can use the GraphiQL client running under [localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql) to explore the whole GraphQL layer of the site (not just the GitHub infos).
