@@ -1,8 +1,8 @@
 # API References
 
-- [Overview](#Overview)
-- [Swagger specs](#Swagger-specs)
-- [TypeDoc specs](#TypeDoc-specs)
+- [Overview](#overview)
+- [Swagger specs](#swagger-specs)
+- [TypeDoc specs](#typedoc-specs)
 
 ## Overview
 

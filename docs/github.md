@@ -1,8 +1,8 @@
 # GitHub Data Fetching
 
-- [Overview](#Overview)
-- [GitHub GraphQL API](#GitHub-GraphQL-API)
-- [GitHub REST API](#GitHub-REST-API)
+- [Overview](#overview)
+- [GitHub GraphQL API](#github-graphql-api)
+- [GitHub REST API](#github-rest-api)
 
 ## Overview
 
