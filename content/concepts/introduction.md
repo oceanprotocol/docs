@@ -11,7 +11,7 @@ Ocean Protocol provides tools for developers to _build data markets_, and to _ma
 
 **Build Data Markets.** Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://market.oceanprotocol.com/) code or building up with Ocean components.
 
-**Manage Datatokens and Data NFTs for use in DeFi.** Use Ocean [JavaScript](https://github.com/oceanprotocol/ocean.js) or [Python](https://github.com/oceanprotocol/ocean.py) drivers to manage data NFTs and datatokens:
+**Manage datatokens and data NFTs for use in DeFi.** Use Ocean [JavaScript](https://github.com/oceanprotocol/ocean.js) or [Python](https://github.com/oceanprotocol/ocean.py) drivers to manage data NFTs and datatokens:
 
 - _Publish and consume data services:_ downloadable files or compute-to-data. Use Ocean to deploy a new [ERC721](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md) and [ERC20](https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md) datatoken contract for each data service, then mint datatokens.
 

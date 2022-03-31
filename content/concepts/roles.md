@@ -16,7 +16,7 @@ The permissions are stored in the data NFT (ERC721) smart contract. The data NFT
 | Set base URI                      | <center>🗸</center> |                    |                    |                    |                    |
 | Set Metadata state                |                    |                    |                    |                    | <center>🗸</center> |
 | Set Metadata                      |                    |                    |                    |                    | <center>🗸</center> |
-| Create new Datatoken              |                    |                    | <center>🗸</center> |                    |                    |
+| Create new datatoken              |                    |                    | <center>🗸</center> |                    |                    |
 | Executes any other smart contract |                    | <center>🗸</center> |                    |                    |                    |
 | Set new key-value in store        |                    |                    |                    | <center>🗸</center> |                    |
 
