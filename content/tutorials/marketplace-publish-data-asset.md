@@ -27,8 +27,8 @@ Ocean Market provides a convenient interface for individuals as well as organiza
 
 5. After clicking submit, approve the transactions in the wallet. Here, you can see Metamask window.
 
-   Deploy a new Datatoken contract.
-   ![publish submit part-1](images/marketplace/submit-1.png 'Create Datatoken contract')
+   Deploy a new datatoken contract.
+   ![publish submit part-1](images/marketplace/submit-1.png 'Create datatoken contract')
    Contract interaction.
    ![publish submit part-2](images/marketplace/submit-2.png 'Contract interaction')
 

@@ -42,7 +42,7 @@ module.exports = {
     },
     {
       from: '/setup/compute-to-data/',
-      to: '/tutorials/compute-to-data/'
+      to: '/tutorials/compute-to-data-minikube/'
     },
     {
       from: '/concepts/networks-overview/',
@@ -92,7 +92,7 @@ module.exports = {
   swaggerComponents: [
     {
       name: 'aquarius',
-      url: 'https://aquarius.oceanprotocol.com/spec'
+      url: 'https://v4.aquarius.oceanprotocol.com/spec'
     },
     {
       name: 'provider',

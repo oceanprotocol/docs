@@ -42,7 +42,7 @@ To do so, create a Dockerfile with the appropriate instructions for dependency m
 
 We also collect some [example images](https://github.com/oceanprotocol/algo_dockers) which you can also view in Dockerhub.
 
-When publishing an algorithm through the [Ocean Market](https://market.oceanprotoco.com), these properties can be set via the publish UI.
+When publishing an algorithm through the [Ocean Market](https://market.oceanprotocol.com), these properties can be set via the publish UI.
 
 ### Environment Examples
 

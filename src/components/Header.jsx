@@ -3,6 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import { ReactComponent as Logo } from '@oceanprotocol/art/logo/logo.svg'
 import styles from './Header.module.scss'
 import SearchButton from './Search/SearchButton'
+import ToggleSwitch from './ToggleSwitch'
 
 const query = graphql`
   query {
@@ -50,6 +51,9 @@ const Header = () => (
               ))}
               <div className={styles.section}>
                 <SearchButton />
+              </div>
+              <div className={styles.section}>
+                <ToggleSwitch />
               </div>
             </nav>
           </div>

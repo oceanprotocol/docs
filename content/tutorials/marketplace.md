@@ -3,43 +3,19 @@ title: Set Up a Marketplace
 description:
 ---
 
-In Ocean, marketplaces and publishers are different roles. A common setup is for one organization to do both. We focus on that here.
+## About marketplace
 
-## The Steps
+Ocean Protocol's [marketplace](https://market.oceanprotocol.com/) provides a web interface for accessing assets published on the chain. By default, assets metadata is pulled from Aquarius, component hosted by Ocean Protocol. To extend the existing features of the marketplace, developers can fork the marketplace.
 
-1. Develop the first cut of the app.
-1. Prepare some initial data assets.
-1. Deploy to production.
+By doing so, developers can:
 
-## Develop a First Cut of the App
+- Change the name of the marketplace.
+- Implement their own branding and style.
+- Change the source of the asset information.
+- Customise the fees
 
-Here are some approaches:
+## Forking marketplace
 
-- Fork [Ocean Market](https://github.com/oceanprotocol/market) code.
-- Build from [Ocean React hooks](https://github.com/oceanprotocol/react).
-- Build up from [ocean.js](https://github.com/oceanprotocol/ocean.js) or [ocean.py](https://github.com/oceanprotocol/ocean.py) drivers.
+To setup a marketplace follow the steps here:
 
-## Prepare Some Initial Data Assets
-
-When you deploy, you'll want some initial data assets for your market to offer.
-
-Ocean supports several types, such as Azure and S3 storage. The [tutorials](/tutorials/) section provides more info.
-
-## Deploy to Production
-
-When developing your app, you'll likely use Barge to run all the Ocean Protocol components on your local machine.
-
-When it comes time to go to production, you will have to run these components:
-
-- Your marketplace/publisher app
-- Aquarius (with Elasticsearch)
-- Provider-py
-
-Of course, there are many other things that must be handled in production:
-
-- Security of the infrastructure where the software is running
-- Monitoring
-- Log aggregation, storage, and search
-- Handling crashes or other faults
-
-Each of those is beyond the scope of these docs.
+[Launch a blockchain-based data marketplace in under 1 hour](https://blog.oceanprotocol.com/launch-a-blockchain-based-data-marketplace-in-under-1-hour-9baa85a65ece)

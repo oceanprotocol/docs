@@ -2,7 +2,8 @@
 title: Set Up Azure Storage
 description: Tutorial about how to set up Azure storage for use with Ocean.
 ---
-*Note: This needs updating for Ocean V3.*
+
+_Note: This needs updating for Ocean V3._
 
 This tutorial is for publishers who want to get started using Azure to store some of their data assets. (Some data assets could also be stored in other places.)
 
@@ -174,4 +175,3 @@ You now have a storage account, but you don't have any data stored under it yet.
 Azure Storage can store blobs, files, queues and tables. To work with Ocean Network, you should store your files in [Azure Blob storage (also called object storage)](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction), not Azure Files.
 
 Besides Azure Storage Explorer, there are [many other Azure Storage APIs, libraries and tools](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction#storage-apis-libraries-and-tools).
-

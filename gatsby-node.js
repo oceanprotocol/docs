@@ -59,7 +59,9 @@ exports.createPages = ({ graphql, actions }) => {
             }
 
             allRepoMarkdown: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/markdowns/markdowns/" } }
+              filter: {
+                fileAbsolutePath: { regex: "/read-the-docs/markdowns/" }
+              }
             ) {
               edges {
                 node {
@@ -103,6 +105,62 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+
+            aquariusRestApi: allMarkdownRemark(
+              filter: {
+                frontmatter: {
+                  title: { eq: "API.md" }
+                  app: { eq: "aquarius" }
+                }
+              }
+            ) {
+              edges {
+                node {
+                  id
+                  html
+                  htmlAst
+                  tableOfContents
+                  frontmatter {
+                    title
+                    description
+                    slug
+                    section
+                    app
+                    module
+                    source
+                    version
+                  }
+                }
+              }
+            }
+
+            providerRestApi: allMarkdownRemark(
+              filter: {
+                frontmatter: {
+                  title: { eq: "API.md" }
+                  app: { eq: "provider" }
+                }
+              }
+            ) {
+              edges {
+                node {
+                  id
+                  html
+                  htmlAst
+                  tableOfContents
+                  frontmatter {
+                    title
+                    description
+                    slug
+                    section
+                    app
+                    module
+                    source
+                    version
+                  }
+                }
+              }
+            }
           }
         `
       ).then(async (result) => {
@@ -135,10 +193,7 @@ exports.createPages = ({ graphql, actions }) => {
         // API: ocean.js
         const lastRelease =
           result.data.oceanJs.repository.releases.edges.filter(
-            ({ node }) =>
-              !node.isPrerelease &&
-              !node.isDraft &&
-              node.releaseAssets.edges.length > 0
+            ({ node }) => !node.isDraft && node.releaseAssets.edges.length > 0
           )[0].node.releaseAssets.edges[0].node
 
         await createTypeDocPage(
@@ -164,6 +219,21 @@ exports.createPages = ({ graphql, actions }) => {
         const oceanPyList = filterMarkdownList(markdowns, 'ocean.py')
         const providerList = filterMarkdownList(markdowns, 'provider')
         const subgraphList = filterMarkdownList(markdowns, 'ocean-subgraph')
+
+        const aquariusRestApi = result.data.aquariusRestApi.edges[0].node
+        await createRestApiPage(
+          createPage,
+          aquariusRestApi,
+          `/references/aquarius`
+        )
+
+        const providerRestApi = result.data.providerRestApi.edges[0].node
+
+        await createRestApiPage(
+          createPage,
+          providerRestApi,
+          `/references/provider`
+        )
 
         await createReadTheDocsPage(createPage, 'ocean-py', oceanPyList)
         await createReadTheDocsPage(createPage, 'provider', providerList)
@@ -292,3 +362,22 @@ const createReadTheDocsPage = async (createPage, name, list) => {
 const filterMarkdownList = (markdownList, string) => {
   return markdownList.filter(({ node }) => node.frontmatter.app === string)
 }
+
+const createRestApiPage = async (createPage, node, slug) => {
+  const template = path.resolve('./src/templates/RestApi.jsx')
+  createPage({
+    path: slug,
+    component: template,
+    context: {
+      node,
+      slug
+    }
+  })
+}
+
+// const getRestApiPageFromMarkdownList = (markdownList, string) => {
+//   return markdownList.filter(
+//     ({ node }) =>
+//       node.frontmatter.app === string && node.frontmatter.slug === 'API.md'
+//   )
+// }

@@ -3,7 +3,7 @@ title: Swap and/or Stake Tokens
 description: 
 ---
 
-## Swap Ocean Tokens against Datatokens
+## Swap OCEAN Tokens against datatokens
 
 1. Search for the desired asset published on the [Ocean Marketplace](https://market.oceanprotocol.com/).
 

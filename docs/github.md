@@ -1,8 +1,8 @@
 # GitHub Data Fetching
 
-- [Overview](#Overview)
-- [GitHub GraphQL API](#GitHub-GraphQL-API)
-- [GitHub REST API](#GitHub-REST-API)
+- [Overview](#overview)
+- [GitHub GraphQL API](#github-graphql-api)
+- [GitHub REST API](#github-rest-api)
 
 ## Overview
 
@@ -22,8 +22,7 @@ For local development, you can simply [create a personal access token](https://g
 
 ```bash
 cp .env.sample .env
-vi .env
-# GITHUB_TOKEN=add_your_token_here
+vi .env # GITHUB_TOKEN=add_your_token_here
 ```
 An alternative to typing the above code is to just create a .env file and add this line `GITHUB_TOKEN=add_your_token_here` in it. Do not put your token in quotes.
 
