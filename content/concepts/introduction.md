@@ -17,7 +17,7 @@ Ocean Protocol provides tools for developers to _build data markets_, and to _ma
 
 - _Transfer datatokens_ to another owner (or approve & transferFrom).
 
-- _Manage pools._ Deploy OCEAN-datatoken [Balancer](https://www.balancer.finance/) pools, buy & sell datatokens (swap), and add & remove liquidity.
+- _Manage pools._ Deploy OCEAN-datatoken [Balancer](https://www.balancer.fi/) pools, buy & sell datatokens (swap), and add & remove liquidity.
 
 - _And more._ Use ERC20 support in [web3.js](https://web3js.readthedocs.io/), [web3.py](https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract) and Solidity to connect datatokens with crypto wallets and other DeFi services.
 
