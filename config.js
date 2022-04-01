@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Ocean Developer Documentation',
   siteShortTitle: 'Docs',
   siteDescription: 'Tools to Build Data Markets, and Manage ERC20 Data Assets',
-  siteTagline: 'Ocean Protocol launches a bug bounty on ',
+  siteTagline: 'Ocean Protocol V4 public testing kicks off on ',
   siteTaglineURL: 'https://immunefi.com/bounty/oceanprotocol/',
   siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
   siteIcon: 'node_modules/@oceanprotocol/art/logo/favicon-black.png',
