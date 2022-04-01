@@ -21,16 +21,16 @@ const HeaderHome = () => (
       }
     `}
     render={(data) => {
-      const { siteTitle, siteDescription, siteTagline, siteTaglineURL} = data.site.siteMetadata
+      const { siteTitle, siteDescription, siteTagline, siteTaglineURL } =
+        data.site.siteMetadata
 
       return (
         <header className={styles.header}>
           <Content>
             <div className={styles.tagline}>
-                  {siteTagline}
-                  <a href={siteTaglineURL}>Immunify</a>
+              {siteTagline}
+              <a href={siteTaglineURL}>Immunify</a>
             </div>
-
             <Logo className={styles.headerLogo} />
             <h1 className={styles.headerTitle}>{siteTitle}</h1>
             <p className={styles.headerDescription}>
