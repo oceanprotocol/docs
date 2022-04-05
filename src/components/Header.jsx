@@ -5,6 +5,7 @@ import styles from './Header.module.scss'
 import SearchButton from './Search/SearchButton'
 import ToggleSwitch from './ToggleSwitch'
 import Badge from './@shared/atoms/Badge'
+import { fontSizeMini } from '../styles/_variables.scss'
 
 const query = graphql`
   query {
@@ -40,7 +41,7 @@ const Header = () => (
               <Logo className={styles.headerLogoImage} />
               <h1 className={styles.headerTitle}>
                 {siteTitle}
-                <Badge label="v4" />
+                <Badge label="v4" size={fontSizeMini} />
               </h1>
             </Link>
             <nav className={styles.headerMenu}>
