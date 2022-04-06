@@ -29,7 +29,7 @@ const HeaderHome = () => (
           <Content>
             <div className={styles.tagline}>
               {siteTagline}
-              <a href={siteTaglineURL}>Immunify</a>
+              <a href={siteTaglineURL}>Immunefi</a>
             </div>
             <Logo className={styles.headerLogo} />
             <h1 className={styles.headerTitle}>{siteTitle}</h1>
