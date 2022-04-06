@@ -28,7 +28,7 @@ const HeaderHome = () => (
             <Logo className={styles.headerLogo} />
             <h1 className={styles.headerTitle}>
               {siteTitle}
-              <Badge label="v4" size={fontSizeSmall} />
+              <Badge label="v3" size={fontSizeSmall} />
             </h1>
             <p className={styles.headerDescription}>
               {siteDescription}

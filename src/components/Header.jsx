@@ -41,7 +41,7 @@ const Header = () => (
               <Logo className={styles.headerLogoImage} />
               <h1 className={styles.headerTitle}>
                 {siteTitle}
-                <Badge label="v4" size={fontSizeMini} />
+                <Badge label="v3" size={fontSizeMini} />
               </h1>
             </Link>
             <nav className={styles.headerMenu}>
