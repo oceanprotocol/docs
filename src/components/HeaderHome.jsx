@@ -5,6 +5,8 @@ import Content from '../components/Content'
 import styles from './HeaderHome.module.scss'
 import SearchButton from '../components/Search/SearchButton'
 import ToggleSwitch from './ToggleSwitch'
+import Badge from './@shared/atoms/Badge'
+import { fontSizeSmall } from '../styles/_variables.scss'
 
 const HeaderHome = () => (
   <StaticQuery
@@ -32,7 +34,10 @@ const HeaderHome = () => (
               <a href={siteTaglineURL}>Immunefi</a>
             </div>
             <Logo className={styles.headerLogo} />
-            <h1 className={styles.headerTitle}>{siteTitle}</h1>
+            <h1 className={styles.headerTitle}>
+              {siteTitle}
+              <Badge label="v4" size={fontSizeSmall} />
+            </h1>
             <p className={styles.headerDescription}>
               {siteDescription}
               <div className={styles.container}>

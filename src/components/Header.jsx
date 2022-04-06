@@ -4,6 +4,8 @@ import { ReactComponent as Logo } from '@oceanprotocol/art/logo/logo.svg'
 import styles from './Header.module.scss'
 import SearchButton from './Search/SearchButton'
 import ToggleSwitch from './ToggleSwitch'
+import Badge from './@shared/atoms/Badge'
+import { fontSizeMini } from '../styles/_variables.scss'
 
 const query = graphql`
   query {
@@ -37,7 +39,11 @@ const Header = () => (
           <div className={styles.headerContent}>
             <Link to="/" className={styles.headerLogo}>
               <Logo className={styles.headerLogoImage} />
-              <h1 className={styles.headerTitle}>{siteTitle}</h1>
+              <h1 className={styles.headerTitle}>
+                {siteTitle}
+                {/* V4 badge */}
+                <Badge label="v4" size={fontSizeMini} />
+              </h1>
             </Link>
             <nav className={styles.headerMenu}>
               {sections.map(({ node }) => (

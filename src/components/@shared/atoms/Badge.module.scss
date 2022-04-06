@@ -1,0 +1,16 @@
+@import 'variables';
+
+.badge {
+  display: inline-block;
+  font-size: $font-size-mini;
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  line-height: 1 !important;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  margin-left: 0.2rem;
+  border-radius: $border-radius;
+  color: $brand-white;
+  background: $brand-purple;
+  vertical-align: top;
+}
