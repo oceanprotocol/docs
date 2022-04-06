@@ -37,7 +37,7 @@
     opacity: 0;
 
     &:checked + .switchButtonLabel:before {
-      transform: translateX($spacer * 2);
+      transform: translateX(0);
       transition: transform 300ms linear;
     }
 
@@ -57,7 +57,7 @@
         left: 0;
         top: 0;
         border-radius: 0.5rem;
-        transform: translateX(0);
+        transform: translateX($spacer * 2);
         transition: transform 300ms;
       }
 

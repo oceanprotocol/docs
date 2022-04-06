@@ -9,7 +9,7 @@ const ToggleSwitch = () => {
         type="checkbox"
         onClick={() => {
           if (window) {
-            window.open('https://v3.docs.oceanprotocol.com/', '_self')
+            window.open('https://docs.oceanprotocol.com/', '_self')
           }
         }}
       />
