@@ -41,6 +41,7 @@ const Header = () => (
               <Logo className={styles.headerLogoImage} />
               <h1 className={styles.headerTitle}>
                 {siteTitle}
+                {/* V3 badge */}
                 <Badge label="v3" size={fontSizeMini} />
               </h1>
             </Link>
