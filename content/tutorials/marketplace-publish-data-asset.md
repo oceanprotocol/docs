@@ -1,6 +1,6 @@
 ---
 title: Publish a Data asset on Ocean Market place.
-description: 
+description: A tutorial to publish an asset using Ocean Market
 ---
 
 ## What can be published?
@@ -9,62 +9,65 @@ Ocean Market provides a convenient interface for individuals as well as organiza
 
 ## Tutorial
 
-### Step 1 - Publish data asset
+### Connecting wallet and navigating to publish page
 
-1. Go to https://market.oceanprotocol.com
+1. Go to <a href="https://v4.market.oceanprotocol.com " target="_blank">Ocean Market</a>
+
 2. Connect wallet.
+
    ![connect wallet](images/marketplace/connect-wallet.png 'Connect wallet')
+
+   In this tutorial, we will be using Rinkeby testnet.
 
 3. Go to publish page.
 
    ![publish page](images/marketplace/publish.png 'Go to publish page')
 
-4. Fill the publish form.
+### Step 1 - Fill metadata
 
-   ![publish form part-1](images/marketplace/publish-form-1.png 'Publish form part-1')
-   ![publish form part-2](images/marketplace/publish-form-2.png 'Publish form part-2')
-   ![publish form part-3](images/marketplace/publish-form-3.png 'Publish form part-3')
+Fill the metadata.
 
-5. After clicking submit, approve the transactions in the wallet. Here, you can see Metamask window.
+![publish part-1](images/marketplace/publish-1.png 'Fill metadata')
 
-   Deploy a new datatoken contract.
-   ![publish submit part-1](images/marketplace/submit-1.png 'Create datatoken contract')
-   Contract interaction.
-   ![publish submit part-2](images/marketplace/submit-2.png 'Contract interaction')
+### Step 2 - Specify access type
 
-6. Now, after the transactions are completed, the below screen will appear.
+![publish part-2](images/marketplace/publish-2.png 'Specify access type')
 
-   ![publish success](images/marketplace/submit-success.png 'Success')
+### Step 3 - Set pricing
 
-### Step 2 - Create pricing
+Before the asset is published, the user(s) can choose the pricing option as per their choice. Only the publisher can set the pricing option and cannot be changed once the publisher selects any one method.
 
-Once the data asset is published, the user(s) can choose the pricing option as per their choice. Only the publisher can set the pricing option and cannot be changed once the publisher selects any one method.
-
-There are 2 options for settings the price of an asset on Ocean Marketplace.
+There are 3 options for settings the price of an asset on Ocean Marketplace.
 
 1. Fixed pricing
 2. Dynamic pricing (using Balancer pools)
+3. Free pricing
 
-#### Create fixed pricing for a data set
+Here, we are selecting dynamic pricing.
 
-Connect to the Ocean Marketplace with the publisher account and go to the published asset.
+![publish part-3](images/marketplace/publish-3.png 'Set pricing')
 
-If the pricing is not set Marketplace will provide an option to create pricing. Click on the create pricing button as shown below.
-![pricing part-1](images/marketplace/pricing-1.png 'Create pricing page')
+### Step 4 - Preview and confirm
 
-Select the pricing type. Here, we are selecting **Fixed** pricing option. Publisher can set the value of datatoken with respect to Ocean Tokens.
+![publish part-4](images/marketplace/publish-4.png 'Preview')
 
-![pricing part-1](images/marketplace/pricing-type.png 'Select pricing type')
+### Step 5 - Send blockchain transactions
 
-![pricing part-2](images/marketplace/pricing-fixed-2.png 'Mint data tokens')
+![publish part-5](images/marketplace/publish-5.png 'Transaction 1 - ')
+![publish part-6](images/marketplace/publish-6.png 'Transaction 2 - ')
+![publish part-7](images/marketplace/publish-7.png 'Transaction 3 - ')
 
-![pricing part-3](images/marketplace/pricing-fixed-3.png 'Transaction')
+### Confirmation
 
-![pricing part-4](images/marketplace/pricing-fixed-4.png 'Approve spend limit')
+Now, after the transactions are completed, the below screen will appear.
 
-## Video
+![publish success](images/marketplace/publish-8.png 'Successful publish')
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/KiDg0ry6oV4/0.jpg)](https://www.youtube.com/watch?v=KiDg0ry6oV4)
+To view `Create tokens and pricing` transaction on testnet click <a href="https://rinkeby.etherscan.io//tx/0x599a506d8429e3bd8b827f7ad2ca893ca866c8259a17d88b352c0345842e67d0" target="_blank">here</a>
+
+To view `Publish DDO` transaction on testnet click <a href="https://rinkeby.etherscan.io/tx/0x8d1a1f0d833f4e46432351d16013bb4fcdd6b05e65a2fe3e599f3a90e4d35478" target="_blank">here</a>
+
+To view published the asset on Ocean Market click <a href="https://v4.market.oceanprotocol.com/asset/did:op:63920bb64ad1e79bed73214e5fd574fc68c0977cdba5b7031aa98a3a83e28197" target="_blank">here</a>
 
 ## Other Articles
 
