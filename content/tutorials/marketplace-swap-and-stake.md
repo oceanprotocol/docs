@@ -5,18 +5,37 @@ description:
 
 ## Swap OCEAN Tokens against datatokens
 
-1. Search for the desired asset published on the [Ocean Marketplace](https://v4.market.oceanprotocol.com/).
+### Finding an asset
 
-2. Select **Trade** option and enter the amount of Ocean tokens you want to swap. The expected amount that the account will receive will be shown with the swap fees information.
+Search for the desired asset published on the <a href="https://v4.market.oceanprotocol.com/" target="_blank">Ocean Marketplace</a>
 
-   ![swap part-1](images/marketplace/Swap-1.png 'Select trade')
+### Step 1: Understanding the risks
 
-3. Approve the Contract transaction to Spend the Ocean Tokens.
-   ![swap part-2](images/marketplace/Swap-2.png 'Approve spend limit')
+![swap part-1](images/marketplace/Swap-1.png 'Understanding risks')
 
-4. Approve the Contract transaction to swap the tokens. After the transaction is completed, you can add the Datatoken address in the wallet to quickly view the balance in the future.
+### Step 2: Select amount of Ocean tokens or Datatokens to trade
 
-   ![swap part-3](images/marketplace/Swap-3.png 'Approve swap transation')
+Enter the amount of Ocean tokens you want to swap. The expected amount that the account will receive will be shown with the swap fees information. You can also swap datatokens to Ocean tokens here.
+
+![swap part-2](images/marketplace/Swap-2.png 'Enter amount of Oceans')
+
+### Step 3: Transaction: Allow pool contract to access your Ocean tokens
+
+![swap part-3](images/marketplace/Swap-3.png 'Transaction: Approve spent limit')
+
+### Step 4: Click swap button
+
+![swap part-4](images/marketplace/Swap-4.png 'Click swap tokens')
+
+### Step 5: Transaction: Swap tokens
+
+![swap part-5](images/marketplace/Swap-5.png 'Transaction: Swap tokens')
+
+### Viewing transaction
+
+![swap part-6](images/marketplace/Swap-6.png 'View transaction')
+
+Click <a href="https://rinkeby.etherscan.io//tx/0x2f98479adafa93eedbdff8a90a41d760a42290c961dd6aa2b9e09170665adc23" target="_blank">here</a> to view a sample transaction on Rinkeby testnet.
 
 ## Staking (Adding Liquidity)
 
