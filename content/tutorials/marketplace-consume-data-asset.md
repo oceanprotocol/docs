@@ -1,16 +1,44 @@
 ---
 title: Consume data asset
-description: 
+description: A tutorial showing consume action using Ocean Marketplace
 ---
 
-1. Go to Ocean Marketplace https://market.oceanprotocol.com/
+## Accessing marketplace
+
+1. Go to Ocean <a href="https://v4.market.oceanprotocol.com/" target="_blank">Marketplace</a>.
 2. Search for the data asset.
    The Ocean Marketplace provides features to search the Data/Algorithms by text, and users can also sort the result by published date.
-3. Below image shows how to buy a Data asset with static content.
 
-   ![consume part-1](images/marketplace/consume-1.png 'Consume')
-   ![consume part-2](images/marketplace/consume-2.png 'Consume')
-   ![consume part-3](images/marketplace/consume-3.png 'Consume')
-   ![consume part-4](images/marketplace/consume-4.png 'Consume')
-   ![consume part-5](images/marketplace/consume-5.png 'Consume')
-   ![consume part-6](images/marketplace/consume-6.png 'Consume')
+   In this tutorial, we will be consuming <a href="https://v4.market.oceanprotocol.com/asset/did:op:63920bb64ad1e79bed73214e5fd574fc68c0977cdba5b7031aa98a3a83e28197" target="_blank">this</a> dataset.
+
+3. Connect wallet.
+
+   ![connect wallet](images/marketplace/consume-connect-wallet.png 'Connect wallet')
+
+   In this tutorial, we will be using Rinkeby testnet.
+
+## Tutorial
+
+### Step 1: Click buy button
+
+The buy button will be enabled only if the wallet address has enough Ocean tokens to exchange them with 1 datatoken.
+
+![consume part-1](images/marketplace/consume-1.png 'Buy')
+
+### Step 2: Allow access to Ocean token(s)
+
+![consume part-3](images/marketplace/consume-2.png 'Consume')
+
+### Step 3: Buy datatoken by exchanging it with Ocean token(s)
+
+![consume part-4](images/marketplace/consume-3.png 'Consume')
+
+### Step 4: Click buy button
+
+![consume part-5](images/marketplace/consume-4.png 'Consume')
+
+### Step 5: Sign message
+
+After signing the message, the file download will start.
+
+![consume part-6](images/marketplace/consume-5.png 'Sign')
