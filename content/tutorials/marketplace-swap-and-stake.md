@@ -66,7 +66,7 @@ Enter the amount of Ocean tokens you want to stake. The expected amount of pool 
 ![staking part-5](images/marketplace/Staking-5.png 'Click on SUPPLY button')
 ![staking part-6](images/marketplace/Staking-6.png 'Transaction: Swap tokens')
 
-### Viewing transaction
+### View transaction
 
 ![staking part-7](images/marketplace/Staking-7.png 'View transaction')
 
