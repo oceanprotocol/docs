@@ -7,7 +7,7 @@ description:
 
 ### Finding an asset
 
-Search for the desired asset published on the <a href="https://v4.market.oceanprotocol.com/" target="_blank">Ocean Marketplace</a>
+Search for the desired asset published on the <a href="https://v4.market.oceanprotocol.com/" target="_blank">Ocean Marketplace</a>.
 
 ### Step 1: Understanding the risks
 
@@ -21,7 +21,7 @@ Enter the amount of Ocean tokens you want to swap. The expected amount that the 
 
 ### Step 3: Transaction: Allow pool contract to access your Ocean tokens
 
-![swap part-3](images/marketplace/Swap-3.png 'Transaction: Approve spent limit')
+![swap part-3](images/marketplace/Swap-3.png 'Transaction: Approve spend limit')
 
 ### Step 4: Click swap button
 
@@ -39,19 +39,35 @@ Click <a href="https://rinkeby.etherscan.io//tx/0x2f98479adafa93eedbdff8a90a41d7
 
 ## Staking (Adding Liquidity)
 
-1.  Search for the desired asset published on the [Ocean Marketplace](https://market.oceanprotocol.com/).
+Search for the desired asset published on the <a href="https://v4.market.oceanprotocol.com/" target="_blank">Ocean Marketplace</a>.
 
-2.  Select **Pool** option and click **ADD LIQUIDITY** button.
-    ![staking part-1](images/marketplace/Staking-1.png 'Select Pool option')
+### Step 1: Select pool tab
 
-3.  Enter the amount of **Ocean Tokens** you want to stake.
-    ![staking part-2](images/marketplace/Staking-2.png 'Enter the amount to stake')
+After finding the dataset, select **`POOL`** tab and click on **`ADD LIQUIDITY`**
 
-4.  Approve the contract transaction. Make sure your account has sufficient **ETH** balance.
-    ![staking part-2](images/marketplace/Staking-3.png 'Approve spend transction')
+![staking part-1](images/marketplace/Staking-1.png 'Understanding risks')
 
-5.  Approve the contract transaction. Make sure your account has sufficient **ETH** balance.
-    ![staking part-2](images/marketplace/Staking-4.png 'Approve contract transaction')
+### Step 2: Understanding the risks
 
-6.  After the transactions are completed, the below message will be displayed.
-    ![staking part-2](images/marketplace/Staking-5.png 'Success')
+![staking part-2](images/marketplace/Staking-2.png 'Enter amount of Oceans')
+
+### Step 3: Enter amount of Ocean tokens to stake
+
+Enter the amount of Ocean tokens you want to stake. The expected amount of pool shares and percentage of share for the entered amount will be displayed.
+
+![staking part-3](images/marketplace/Staking-3.png 'Enter the amount to stake')
+
+### Step 4: Transaction: Allow pool contract to access your Ocean tokens
+
+![staking part-4](images/marketplace/Staking-4.png 'Transaction: Approve spend limit')
+
+### Step 5: Transaction: Add liquidty
+
+![staking part-5](images/marketplace/Staking-5.png 'Click on SUPPLY button')
+![staking part-6](images/marketplace/Staking-6.png 'Transaction: Swap tokens')
+
+### Viewing transaction
+
+![staking part-7](images/marketplace/Staking-7.png 'View transaction')
+
+Click <a href="https://rinkeby.etherscan.io//tx/0x719b8627e5deb51af21184db7c6747bf5141782ba3e8fe5358f5a15ba67b594b" target="_blank">here</a> to view a sample transaction on Rinkeby testnet.
