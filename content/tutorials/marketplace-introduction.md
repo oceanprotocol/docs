@@ -1,9 +1,9 @@
 ---
 title: Ocean Market
-description: 
+description:
 ---
 
-https://market.oceanprotocol.com/
+https://v4.market.oceanprotocol.com/
 
 ## Landing page
 

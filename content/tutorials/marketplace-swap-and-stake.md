@@ -1,11 +1,11 @@
 ---
 title: Swap and/or Stake Tokens
-description: 
+description:
 ---
 
 ## Swap OCEAN Tokens against datatokens
 
-1. Search for the desired asset published on the [Ocean Marketplace](https://market.oceanprotocol.com/).
+1. Search for the desired asset published on the [Ocean Marketplace](https://v4.market.oceanprotocol.com/).
 
 2. Select **Trade** option and enter the amount of Ocean tokens you want to swap. The expected amount that the account will receive will be shown with the swap fees information.
 

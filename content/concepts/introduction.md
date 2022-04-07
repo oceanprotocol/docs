@@ -9,7 +9,7 @@ OCEAN token is used for staking, and more. [Here](https://oceanprotocol.com/toke
 
 Ocean Protocol provides tools for developers to _build data markets_, and to _manage data NFTs and datatokens_ for use in DeFi.
 
-**Build Data Markets.** Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://market.oceanprotocol.com/) code or building up with Ocean components.
+**Build Data Markets.** Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://v4.market.oceanprotocol.com/) code or building up with Ocean components.
 
 **Manage datatokens and data NFTs for use in DeFi.** Use Ocean [JavaScript](https://github.com/oceanprotocol/ocean.js) or [Python](https://github.com/oceanprotocol/ocean.py) drivers to manage data NFTs and datatokens:
 
