@@ -31,7 +31,7 @@ Fill the metadata.
 
 ### Step 2 - Fill access details
 
-![publish part-2](images/marketplace/publish-2.png 'Fill asset details')
+![publish part-2](images/marketplace/publish-2.png 'Fill access details')
 
 ### Step 3 - Set pricing
 
