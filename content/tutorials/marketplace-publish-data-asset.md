@@ -29,9 +29,9 @@ Fill the metadata.
 
 ![publish part-1](images/marketplace/publish-1.png 'Fill metadata')
 
-### Step 2 - Specify access type
+### Step 2 - Fill access details
 
-![publish part-2](images/marketplace/publish-2.png 'Specify access type')
+![publish part-2](images/marketplace/publish-2.png 'Fill asset details')
 
 ### Step 3 - Set pricing
 
@@ -53,9 +53,9 @@ Here, we are selecting dynamic pricing.
 
 ### Step 5 - Send blockchain transactions
 
-![publish part-5](images/marketplace/publish-5.png 'Transaction 1 - ')
-![publish part-6](images/marketplace/publish-6.png 'Transaction 2 - ')
-![publish part-7](images/marketplace/publish-7.png 'Transaction 3 - ')
+![publish part-5](images/marketplace/publish-5.png 'Transaction 1 - Allow access to Ocean tokens')
+![publish part-6](images/marketplace/publish-6.png 'Transaction 2 - Deploy data NFT and datatoken')
+![publish part-7](images/marketplace/publish-7.png 'Transaction 3 - Publish DDO')
 
 ### Confirmation
 
