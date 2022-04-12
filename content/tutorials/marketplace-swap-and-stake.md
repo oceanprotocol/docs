@@ -1,17 +1,19 @@
 ---
 title: Swap and/or Stake Tokens
-description:
+description: A tutorial to swap datatoken, and stake Ocean tokens
 ---
 
-## Swap OCEAN Tokens against datatokens
+## Swap OCEAN tokens against datatokens
 
 ### Finding an asset
 
 Search for the desired asset published on the <a href="https://v4.market.oceanprotocol.com/" target="_blank">Ocean Marketplace</a>.
 
-### Step 1: Understanding the risks
+### Step 1: Agree with the risks associated
 
-![swap part-1](images/marketplace/Swap-1.png 'Understanding risks')
+Please read carefully the risks associated with this operation and agree to move forward.
+
+![swap part-1](images/marketplace/Swap-1.png 'Agree with the risks associated')
 
 ### Step 2: Select amount of Ocean tokens or Datatokens to trade
 
@@ -45,9 +47,11 @@ Search for the desired asset published on the <a href="https://v4.market.oceanpr
 
 After finding the dataset, select **`POOL`** tab and click on **`ADD LIQUIDITY`**
 
-![staking part-1](images/marketplace/Staking-1.png 'Understanding risks')
+![staking part-1](images/marketplace/Staking-1.png 'Agree with the risks associated')
 
-### Step 2: Understanding the risks
+### Step 2: Agree with the risks associated
+
+Please read carefully the risks associated with this operation and agree to move forward.
 
 ![staking part-2](images/marketplace/Staking-2.png 'Enter amount of Oceans')
 

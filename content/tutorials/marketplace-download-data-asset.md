@@ -19,7 +19,7 @@ description: A tutorial to download an asset using Ocean Market
 
 ## Tutorial
 
-### Step 1: Click buy button
+### Step 1: Click on the buy button
 
 The buy button will be enabled only if the wallet address has enough Ocean tokens to exchange them with 1 datatoken.
 
@@ -29,11 +29,11 @@ The buy button will be enabled only if the wallet address has enough Ocean token
 
 ![consume part-3](images/marketplace/consume-2.png 'Transaction 1: Allow pool to access Ocean tokens')
 
-### Step 3: Buy datatoken by exchanging it with Ocean token(s)
+### Step 3: Buy a datatoken by exchanging it with Ocean token(s)
 
 ![consume part-4](images/marketplace/consume-3.png 'Transaction 1: Buy datatoken')
 
-### Step 4: Click buy button
+### Step 4: Click on the download button
 
 ![consume part-5](images/marketplace/consume-4.png 'Download asset')
 

@@ -9,7 +9,7 @@ Ocean Market provides a convenient interface for individuals as well as organiza
 
 ## Tutorial
 
-### Connecting wallet and navigating to publish page
+### Connecting wallet and navigating to the publish page
 
 1. Go to <a href="https://v4.market.oceanprotocol.com " target="_blank">Ocean Market</a>
 
@@ -25,9 +25,9 @@ Ocean Market provides a convenient interface for individuals as well as organiza
 
 ### Step 1 - Fill in metadata
 
-Fill the metadata.
+Fill in the metadata.
 
-_Required fields are marked with <span style="color: red;">\*</span>_
+_Mandatory fields are marked with <span style="color: red;">\*</span>_
 
 - **Asset type**<span style="color: red;">\*</span>
 
@@ -43,14 +43,37 @@ _Required fields are marked with <span style="color: red;">\*</span>_
 
 - **Author**<span style="color: red;">\*</span>
 
-  Author can be an individual or an organization. The author name can be updated anytimei.
+  Author can be an individual or an organization. The author name can be updated anytime.
 
 - **Tags**
+
   Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
 
 ![publish part-1](images/marketplace/publish-1.png 'Fill in metadata')
 
 ### Step 2 - Fill in access details
+
+_Mandatory fields are marked with <span style="color: red;">\*</span>_
+
+- **Access Type**<span style="color: red;">\*</span>
+
+  An asset can be a downloadable file or a compute service on which buyers can run their algorithm. By selecting **download**, buyers will be able to download the dataset. Select **compute** if the access to the dataset is to be allowed in a compute-to-data environment.
+
+- **Provider URL**<span style="color: red;">\*</span>
+
+  Provider facilitates the asset download to buyers or for compute jobs and much more. Provider URL cannot be changed once the asset is published.
+
+- **File**<span style="color: red;">\*</span>
+
+  This is the URL from which the dataset can be accessed. **Provider** encrypts this field before publishing the asset on-chain. Once the asset is published, the file URL cannot be changed.
+
+- **Sample file**<span style="color: red;">\*</span>
+
+  This is the sample URL that potential buyers can access before buying the dataset. **Provider** encrypts this field before publishing the asset on-chain. The sample file can be updated anytime.
+
+- **Timeout**<span style="color: red;">\*</span>
+
+  This field specifies how long the buyer can access the dataset after the dataset is purchased. The timeout can be updated anytime.
 
 ![publish part-2](images/marketplace/publish-2.png 'Fill in access details')
 
