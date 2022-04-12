@@ -27,6 +27,27 @@ Ocean Market provides a convenient interface for individuals as well as organiza
 
 Fill the metadata.
 
+_Required fields are marked with <span style="color: red;">\*</span>_
+
+- **Asset type**<span style="color: red;">\*</span>
+
+  An asset can be a dataset or an algorithm. The type of asset cannot be changed once the asset is published on chain. Based on the the selected asset type, addtional form fields will appear.
+
+- **Title**<span style="color: red;">\*</span>
+
+  This a descriptive name of the asset and can be changed later.
+
+- **Description**<span style="color: red;">\*</span>
+
+  This field can store the information about the asset. Ocean Marketplace supports rendering the content of this field in Markdown format. The description can be updated anytime.
+
+- **Author**<span style="color: red;">\*</span>
+
+  Author can be an individual or an organization. The author name can be updated anytimei.
+
+- **Tags**
+  Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
+
 ![publish part-1](images/marketplace/publish-1.png 'Fill in metadata')
 
 ### Step 2 - Fill in access details
