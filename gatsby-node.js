@@ -133,18 +133,11 @@ exports.createPages = ({ graphql, actions }) => {
 
         await createDeploymentsPage(createPage)
         // API: ocean.js
-        const lastRelease =
-          result.data.oceanJs.repository.releases.edges.filter(
-            ({ node }) =>
-              !node.isPrerelease &&
-              !node.isDraft &&
-              node.releaseAssets.edges.length > 0
-          )[0].node.releaseAssets.edges[0].node
 
         await createTypeDocPage(
           createPage,
           result.data.oceanJs.repository.name,
-          lastRelease.downloadUrl
+          'https://github.com/oceanprotocol/ocean.js/releases/download/v0.19.0/lib.json'
         )
 
         //
