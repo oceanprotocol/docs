@@ -23,15 +23,15 @@ Ocean Market provides a convenient interface for individuals as well as organiza
 
    ![publish page](images/marketplace/publish.png 'Go to publish page')
 
-### Step 1 - Fill metadata
+### Step 1 - Fill in metadata
 
 Fill the metadata.
 
-![publish part-1](images/marketplace/publish-1.png 'Fill metadata')
+![publish part-1](images/marketplace/publish-1.png 'Fill in metadata')
 
-### Step 2 - Fill access details
+### Step 2 - Fill in access details
 
-![publish part-2](images/marketplace/publish-2.png 'Fill access details')
+![publish part-2](images/marketplace/publish-2.png 'Fill in access details')
 
 ### Step 3 - Set pricing
 
@@ -43,7 +43,7 @@ There are 3 options for settings the price of an asset on Ocean Marketplace.
 2. Dynamic pricing (using Balancer pools)
 3. Free pricing
 
-Here, we are selecting dynamic pricing.
+Flow for dynamic pricing schema is shown below.
 
 ![publish part-3](images/marketplace/publish-3.png 'Set pricing')
 
@@ -54,20 +54,22 @@ Here, we are selecting dynamic pricing.
 ### Step 5 - Send blockchain transactions
 
 ![publish part-5](images/marketplace/publish-5.png 'Transaction 1 - Allow access to Ocean tokens')
+
+<br />
+
 ![publish part-6](images/marketplace/publish-6.png 'Transaction 2 - Deploy data NFT and datatoken')
+
+<br />
+
 ![publish part-7](images/marketplace/publish-7.png 'Transaction 3 - Publish DDO')
 
 ### Confirmation
 
-Now, after the transactions are completed, the below screen will appear.
+Once the transactions are completed, the below screen is displayed.
 
 ![publish success](images/marketplace/publish-8.png 'Successful publish')
 
-To view `Create tokens and pricing` transaction on testnet click <a href="https://rinkeby.etherscan.io//tx/0x599a506d8429e3bd8b827f7ad2ca893ca866c8259a17d88b352c0345842e67d0" target="_blank">here</a>
-
-To view `Publish DDO` transaction on testnet click <a href="https://rinkeby.etherscan.io/tx/0x8d1a1f0d833f4e46432351d16013bb4fcdd6b05e65a2fe3e599f3a90e4d35478" target="_blank">here</a>
-
-To view published the asset on Ocean Market click <a href="https://v4.market.oceanprotocol.com/asset/did:op:63920bb64ad1e79bed73214e5fd574fc68c0977cdba5b7031aa98a3a83e28197" target="_blank">here</a>
+To view the the published assets on the marketplace click [here](https://v4.market.oceanprotocol.com/profile)
 
 ## Other Articles
 

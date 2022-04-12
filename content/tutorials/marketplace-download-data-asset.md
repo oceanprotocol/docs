@@ -1,6 +1,6 @@
 ---
 title: Download data asset
-description: A tutorial showing download action using Ocean Marketplace
+description: A tutorial to download an asset using Ocean Market
 ---
 
 ## Accessing marketplace
