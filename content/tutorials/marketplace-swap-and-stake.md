@@ -33,7 +33,7 @@ Enter the amount of OCEAN tokens to swap. The datatokens amount to receive is di
 
 ![swap part-5](images/marketplace/Swap-5.png 'Transaction: Swap tokens')
 
-### View transaction
+### Swap transaction
 
 ![swap part-6](images/marketplace/Swap-6.png 'View transaction')
 
@@ -73,7 +73,7 @@ Enter the amount of OCEAN tokens you want to stake. The expected amount of pool 
 
 ![staking part-6](images/marketplace/Staking-6.png 'Transaction: Add liquidity')
 
-### View transaction
+### Stake transaction
 
 ![staking part-7](images/marketplace/Staking-7.png 'View transaction')
 
