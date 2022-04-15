@@ -9,8 +9,6 @@ description: Tutorial to download assets using Ocean Market
 2. Search for the data asset.
    The Ocean Marketplace provides features to search the Data/Algorithms by text, and users can also sort the result by published date.
 
-   In this tutorial, we will consume <a href="https://v4.market.oceanprotocol.com/asset/did:op:63920bb64ad1e79bed73214e5fd574fc68c0977cdba5b7031aa98a3a83e28197" target="_blank">this</a> dataset.
-
 3. Connect wallet.
 
    ![connect wallet](images/marketplace/consume-connect-wallet.png 'Connect wallet')
