@@ -1,9 +1,9 @@
 ---
-title: Download data asset
+title: Download a data asset
 description: Tutorial to download assets using Ocean Market
 ---
 
-## Accessing marketplace
+## Access marketplace
 
 1. Go to Ocean <a href="https://v4.market.oceanprotocol.com/" target="_blank">Marketplace</a>.
 2. Search for the data asset.

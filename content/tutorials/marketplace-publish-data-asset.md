@@ -1,5 +1,5 @@
 ---
-title: Publish a Data asset on Ocean Marketplace.
+title: Publish a data asset 
 description: Tutorial to publish assets using the Ocean Market
 ---
 
@@ -9,7 +9,7 @@ Ocean Market provides a convenient interface for individuals and organizations t
 
 ## Tutorial
 
-### Connecting wallet and navigating to the publish page
+### Connect wallet and navigate to the publish page
 
 1. Go to <a href="https://v4.market.oceanprotocol.com " target="_blank">Ocean Market</a>
 
