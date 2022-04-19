@@ -50,5 +50,3 @@ Enter the amount of OCEAN tokens you want to add. The expected amount of pool sh
 ![staking part-6](images/marketplace/Staking-6.png 'Transaction: Add liquidity')
 
 ![staking part-7](images/marketplace/Staking-7.png 'View transaction')
-
-Click <a href="https://rinkeby.etherscan.io//tx/0x719b8627e5deb51af21184db7c6747bf5141782ba3e8fe5358f5a15ba67b594b" target="_blank">here</a> to view a sample transaction on the Rinkeby test network.

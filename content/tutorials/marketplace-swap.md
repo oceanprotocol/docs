@@ -44,5 +44,3 @@ Enter the amount of OCEAN tokens to swap. The datatokens amount to receive is di
 ![swap part-5](images/marketplace/Swap-5.png 'Transaction: Swap tokens')
 
 ![swap part-6](images/marketplace/Swap-6.png 'View transaction')
-
-Click <a href="https://rinkeby.etherscan.io//tx/0x2f98479adafa93eedbdff8a90a41d760a42290c961dd6aa2b9e09170665adc23" target="_blank">here</a> to view a sample transaction on the Rinkeby test network.
