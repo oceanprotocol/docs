@@ -1,9 +1,9 @@
 ---
 title: Ocean Market
-description: 
+description:
 ---
 
-https://market.oceanprotocol.com/
+https://v4.market.oceanprotocol.com/
 
 ## Landing page
 
@@ -15,4 +15,4 @@ https://market.oceanprotocol.com/
 
 2. Consumers can purchase access to data, algorithms, compute services.
 
-3. Liquidity providers can stake their Ocean tokens to earn interest on the transactions going through the Liqiuidy pool.
+3. Liquidity providers can add their OCEAN tokens to liquidity pools and earn interest on the transactions.
