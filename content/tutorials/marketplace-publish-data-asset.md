@@ -1,5 +1,5 @@
 ---
-title: Publish a data asset 
+title: Publish a data asset
 description: Tutorial to publish assets using the Ocean Market
 ---
 
@@ -65,9 +65,9 @@ _Mandatory fields are marked with <span style="color: red;">\*</span>_
 
 - **File**<span style="color: red;">\*</span>
 
-  The direct URL of the dataset to be published. The file needs to be publicly accessible to be downloadable by buyers. If the file is hosted on services like Google Drive, the URL provided needs to point directly to the data asset file. Also, the file needs to have the proper permissions to be downloaded by anybody. 
-  
-  **Provider** encrypts this field before publishing the asset on-chain. 
+  The direct URL of the dataset to be published. The file needs to be publicly accessible to be downloadable by buyers. If the file is hosted on services like Google Drive, the URL provided needs to point directly to the data asset file. Also, the file needs to have the proper permissions to be downloaded by anybody.
+
+  **Provider** encrypts this field before publishing the asset on-chain.
 
 - **Sample file**
 
@@ -98,7 +98,7 @@ With the _free pricing_ schema, the publisher provides an asset that is free to 
 With the _dynamic pricing_ schema, the publisher sets the asset price and creates a datatoken liquidity pool with an initial amount of OCEAN tokens.
 The publisher can also change the **Swap Fee** of the liquidity pool.
 
-For a deep dive into the fee structure, please refer to this [document](https://docs.oceanprotocol.com/tutorials/marketplace-fees/).
+For a deep dive into the fee structure, please refer to this [document](/concepts/fees/).
 
 ![publish part-3](images/marketplace/publish-3.png 'Dynamic pricing')
 

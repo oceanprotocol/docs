@@ -13,6 +13,11 @@
     - title: Supported Networks
       link: /concepts/networks/
 
+- group: Advanced
+  items:
+    - title: Fees
+      link: /concepts/fees/
+
 - group: Compute-to-Data
   items:
     - title: Overview

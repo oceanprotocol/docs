@@ -36,8 +36,6 @@
   items:
     - title: Set Up a Marketplace
       link: /tutorials/marketplace/
-    - title: Fees
-      link: /tutorials/marketplace-fees/
 
 - group: Compute-to-Data
   items:
