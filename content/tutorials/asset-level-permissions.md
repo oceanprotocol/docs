@@ -17,7 +17,7 @@ Since asset-level permissions are in the DDO, and the DDO is controlled by the p
 All and deny lists are not enabled by default in Ocean Market. You need to edit the environmental variables to enable this feature in your fork of Ocean Market:
 
 - To enable allow and deny lists you need to add the following environmental variable to your .env file in your fork of Ocean Market: `GATSBY_ALLOW_ADVANCED_SETTINGS="true"`
-- Publishers in your market will now have the ability to restrict who can consume their datasets.
+- Publishers in your market will now have the ability to restrict who can buy their datasets.
 
 ## Usage 
 
