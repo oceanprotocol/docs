@@ -89,6 +89,10 @@ module.exports = {
     {
       from: '/tutorials/on-premise-for-brizo/',
       to: '/tutorials/on-premise-for-provider/'
+    },
+    {
+      from: '/tutorials/marketplace-fees/',
+      to: '/concepts/fees/'
     }
   ],
   swaggerComponents: [
