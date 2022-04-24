@@ -4,6 +4,7 @@
   white-space: nowrap;
   overflow-y: hidden;
   overflow-x: auto;
+  flex-flow:row wrap;
   -webkit-overflow-scrolling: touch;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -20,7 +21,7 @@
     white-space: normal;
     flex: 0 0 90vw;
     max-width: 25rem;
-    margin-left: $spacer;
+    margin-right: $spacer;
     margin-bottom: $spacer / 4;
 
     &:first-child {
