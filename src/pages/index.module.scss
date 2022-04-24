@@ -117,3 +117,15 @@
   margin-top: 20px;
   text-align: center;
 }
+
+.repositories {
+  padding: 0 $spacer / 2;
+  max-width: 100%;
+  margin-left: $spacer * 4;
+  margin-right: $spacer * 4;
+  @media (max-width: $break-point--medium) {
+    padding: 0 $spacer;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

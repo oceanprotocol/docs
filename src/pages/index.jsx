@@ -66,8 +66,10 @@ const IndexPage = ({ data, location }) => (
             </li>
           ))}
         </ul>
-        <Repositories />
       </Content>
+      <section className={styles.repositories}>
+        <Repositories />
+      </section>
     </Layout>
   </>
 )
