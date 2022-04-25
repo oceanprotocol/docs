@@ -4,6 +4,7 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const Swagger = require('swagger-client')
 const { redirects, swaggerComponents } = require('./config')
+const { v3Versions } = require('./config')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -137,7 +138,7 @@ exports.createPages = ({ graphql, actions }) => {
         await createTypeDocPage(
           createPage,
           result.data.oceanJs.repository.name,
-          'https://github.com/oceanprotocol/ocean.js/releases/download/v0.19.0/lib.json'
+          `https://github.com/oceanprotocol/ocean.js/releases/download/${v3Versions['ocean.js']}/lib.json`
         )
 
         //
