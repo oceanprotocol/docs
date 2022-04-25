@@ -1,10 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './Title.module.scss'
+import { v3Versions } from '../../../config'
 
 import { ReactComponent as Forks } from '../../images/forks.svg'
 
 export default function Title({ name, isFork, parent, releases, url }) {
+  const releaseVersion = v3Versions[name]
+    ? v3Versions[name]
+    : releases.edges[0] && releases.edges[0].node.tag.name
+
   return (
     <h1 className={styles.title}>
       <a href={url}>
@@ -16,11 +21,11 @@ export default function Title({ name, isFork, parent, releases, url }) {
       </a>
       {releases.edges[0] && (
         <a
-          href={`${url}/releases`}
+          href={`${url}/releases/tag/${releaseVersion}`}
           className={styles.repositoryRelease}
           title="Latest release"
         >
-          {releases.edges[0].node.tag.name}
+          {releaseVersion}
         </a>
       )}
     </h1>

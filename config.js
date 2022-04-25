@@ -98,5 +98,17 @@ module.exports = {
       name: 'provider',
       url: 'https://provider.mainnet.oceanprotocol.com/spec'
     }
-  ]
+  ],
+  v3Versions: {
+    'ocean.js': 'v0.19.0',
+    'ocean.py': 'v0.8.5',
+    contracts: 'v0.6.9',
+    aquarius: 'v3.1.1',
+    provider: 'v0.4.23',
+    'ocean-subgraph': 'v1.2.0',
+    'operator-service': 'v1.0.1',
+    'operator-engine': 'v1.0.4',
+    'pod-configuration': 'v1.0.10',
+    'pod-publishing': 'v1.0.1'
+  }
 }
