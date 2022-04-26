@@ -15,6 +15,7 @@ The below image shows how to set the fixed pricing of an asset in the Ocean's Ma
 
 ![fixed-asset-pricing](images/fixed-asset-pricing.png 'Fixed asset pricing using Marketplace')
 
+## Dynamic pricing
 
 The publisher creates an Automated Market Maker(AMM) pool of Datatoken and Ocean tokens in dynamic pricing. *AMM* enables unstoppable, decentralized trading of assets in the liquidity pool.
 
