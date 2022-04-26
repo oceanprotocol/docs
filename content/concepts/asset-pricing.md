@@ -36,10 +36,6 @@ The below image shows how to set the Dynamic pricing of an asset in the Ocean's 
 
 Ocean Protocol also allows publishers to set the pricing using ocean.js and ocean.py library.
 
-![dynamic-asset-pricing](images/dynamic-asset-pricing.png 'Dynamic asset pricing using Marketplace')
-
-Ocean Protocol also allows publishers to set the pricing using ocean.js and ocean.py library.
-
 ## Free pricing
 
 With free pricing, the buyers can access an asset without requiring to pay for it except for the transaction fees.
