@@ -22,7 +22,7 @@ The publisher creates an Automated Market Maker(AMM) pool of Datatoken and Ocean
 AMM uses a constant product formula to price tokens, which states: **x * y = k**
     where **x** and **y** represents the quantity of the two different tokens in the pool and **k** is a constant.
 
-A *liquidity pool* is a reserve of tokens locked in the smart contract for market making. A buyer or a seller of an asset exchanges tokens **x** for tokens **y** or vice versa. AMM calculates the exchange ratio between the tokens based on the mathematical formula above.
+A *liquidity pool* is a reserve of tokens locked in the smart contract for market making. A buyer or a seller of an asset exchanges token **x** for token **y** or vice versa. AMM calculates the exchange ratio between the tokens based on the mathematical formula above.
 
 Ocean Protocol facilitates the creation of Datatoken/OCEAN liquidity pool with Balancer smart contracts. 
 
