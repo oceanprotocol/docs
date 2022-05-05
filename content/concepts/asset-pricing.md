@@ -1,6 +1,6 @@
 ---
-title: Asset pricing models
-description: Choose one of the pricing models during asset publishing
+title: Asset pricing
+description: Choose the revenue model during asset publishing
 ---
 
 Ocean Protocol offers 3 types of pricing options for asset monetization. The publisher can choose a pricing model which best suits their needs while publishing an asset. The pricing model selected cannot be changed once the asset is published.
