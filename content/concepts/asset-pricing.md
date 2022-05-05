@@ -23,14 +23,14 @@ The image below shows how to set the fixed pricing of an asset in the Ocean's Ma
 
 With the dynamic pricing model, the market defines the price with a mechanism derived from Decentralized Finance (DeFi): liquidity pools. While the publisher sets a base price for the token in OCEAN, the market will organically discover the right price for the data. This can be extremely handy when the value of the data is not known.
 
-The publisher creates an Automated Market Maker(AMM) pool of Datatoken and Ocean tokens in dynamic pricing. *AMM* enables unstoppable, decentralized trading of assets in the liquidity pool.
+The Ocean Market helps create an Automated Market Maker(AMM) pool of Datatoken and Ocean tokens in dynamic pricing for each asset. *AMM* enables unstoppable, decentralized trading of assets in the liquidity pool.
 
 AMM uses a constant product formula to price tokens, which states: **x * y = k**
     where **x** and **y** represents the quantity of the two different tokens in the pool and **k** is a constant.
 
 A *liquidity pool* is a reserve of tokens locked in the smart contract for market making. A buyer or a seller of an asset exchanges token **x** for token **y** or vice versa. AMM calculates the exchange ratio between the tokens based on the mathematical formula above.
 
-Ocean Protocol facilitates the creation of Datatoken/OCEAN liquidity pool with [Balancer smart contracts](https://github.com/oceanprotocol/contracts/tree/v4main/contracts/pools/balancer). 
+Ocean Protocol facilitates the creation of Datatoken/OCEAN liquidity pool with [Balancer smart contracts](https://github.com/oceanprotocol/contracts/tree/v4main/contracts/pools/balancer). The publisher needs to only approve a blockchain transaction that creates an AMM while publishing the asset. Thus, Ocean Market hides the complexities of deploying an AMM pool. 
 
 While publishing an asset with dynamic pricing, the publisher decides the initial ratio of Datatokens and Ocean tokens in the pool, thus setting the initial price of an asset. The price of an asset is later dependent on the pool's liquidity and the price impact of trade in the pool.
 
