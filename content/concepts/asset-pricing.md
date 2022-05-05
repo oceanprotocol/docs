@@ -5,7 +5,7 @@ description: Choose the revenue model during asset publishing
 
 Ocean Protocol offers 3 types of pricing options for asset monetization. The publisher can choose a pricing model which best suits their needs while publishing an asset. The pricing model selected cannot be changed once the asset is published.
 
-The price of an asset is determined by the number of Ocean tokens a buyer must pay to get the access to the asset. When users pay the right amount of Ocean tokens, they get a _datatoken_ in their wallets which is a tokenised representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](/concepts/datanft-and-datatoken).
+The price of an asset is determined by the number of Ocean tokens a buyer must pay to access the asset. When users pay the right amount of Ocean tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](/concepts/datanft-and-datatoken).
 
 ## Fixed pricing
 
@@ -21,7 +21,7 @@ The image below shows how to set the fixed pricing of an asset in the Ocean's Ma
 
 ## Dynamic pricing
 
-With dynamic pricing model, he market defines the price with a mechanism derived from Decentralized Finance (DeFi): liquidity pools. While the publisher sets a base price for the token in OCEAN, the market will organically discover the right price for the data. This can be extremely handy when the value of the data is not known.
+With the dynamic pricing model, the market defines the price with a mechanism derived from Decentralized Finance (DeFi): liquidity pools. While the publisher sets a base price for the token in OCEAN, the market will organically discover the right price for the data. This can be extremely handy when the value of the data is not known.
 
 The publisher creates an Automated Market Maker(AMM) pool of Datatoken and Ocean tokens in dynamic pricing. *AMM* enables unstoppable, decentralized trading of assets in the liquidity pool.
 
@@ -44,9 +44,9 @@ Ocean Protocol also allows publishers to set the pricing using ocean.js and ocea
 
 ## Free pricing
 
-With free pricing, the buyers can access an asset without requiring to pay for it except for the transaction fees.
+With the free pricing model, the buyers can access an asset without requiring them to pay for it except for the transaction fees.
 
-With this pricing model, datatokens are allocated to the [dispenser](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/pools/dispenser/Dispenser.sol) smart contract which dispenses data tokens to users for free whenever they are accessing an asset.
+With this pricing model, datatokens are allocated to the [dispenser](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/pools/dispenser/Dispenser.sol) smart contract, which dispenses data tokens to users for free whenever they are accessing an asset.
 
 Free pricing is suitable for individuals and organizations working in the public domain and want their datasets to be freely available. Publishers can also choose this model if they publish assets with licenses that require them to make them freely available.
 
