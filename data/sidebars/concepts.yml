@@ -17,6 +17,8 @@
   items:
     - title: Fees
       link: /concepts/fees/
+    - title: Asset pricing
+      link: /concepts/asset-pricing/
 
 - group: Compute-to-Data
   items:
