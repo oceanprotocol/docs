@@ -132,7 +132,7 @@ An asset of type `algorithm` has additional attributes under `metadata.algorithm
 | ------------------------ | ------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
 | **`language`**           | `string`                                    |          | Language used to implement the software.                                                   |
 | **`version`**            | `string`                                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters) |          | An object the defines required consumer input before running the algorithm                 |
+| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters) |          | An object that defines required consumer input before running the algorithm                 |
 | **`container`**          | `container`                                 | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
