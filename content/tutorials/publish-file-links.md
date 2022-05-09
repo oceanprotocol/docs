@@ -41,3 +41,5 @@ Note the `<FILE-ID>` from step 1 and create a URL as below.
 After creating a downloadable file URL, fill the `File*` field with the downloadable URL created in step 2.
 
 ![Publish - Google drive downloadable link](./images/marketplace/publish/publish-google-drive-2.png)
+
+_Note: Google Drive allows only shared files to be downloaded as shown in above steps. The above method does not work shared folder. As a workaround, publishers can upload a zip of a folder and upload it as a file._
