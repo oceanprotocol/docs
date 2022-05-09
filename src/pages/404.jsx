@@ -19,6 +19,8 @@ const tag = 'ocean'
 export default class NotFoundPage extends Component {
   state = { gif: '' }
 
+  browser = typeof window !== 'undefined' && window
+
   static propTypes = {
     location: PropTypes.object
   }
@@ -45,27 +47,31 @@ export default class NotFoundPage extends Component {
   render() {
     return (
       <>
-        <Seo location={this.props.location} title="404 - Not Found" />
-        <Layout location={this.props.location}>
-          <Content>
-            <article className={styles.content}>
-              <h1>Page not found.</h1>
-              <p>
-                You just hit a route that doesn&#39;t exist... the sadness.
-                Check your url, <Link to="/">go back to the homepage</Link>, or
-                check out some <em>{tag}</em> gifs, entirely your choice.
-              </p>
+        {this.browser && (
+          <>
+            <Seo location={this.props.location} title="404 - Not Found" />
+            <Layout location={this.props.location}>
+              <Content>
+                <article className={styles.content}>
+                  <h1>Page not found.</h1>
+                  <p>
+                    You just hit a route that doesn&#39;t exist... the sadness.
+                    Check your url, <Link to="/">go back to the homepage</Link>,
+                    or check out some <em>{tag}</em> gifs, entirely your choice.
+                  </p>
 
-              <video className="gif" src={this.state.gif} autoPlay loop />
+                  <video className="gif" src={this.state.gif} autoPlay loop />
 
-              <div>
-                <button
-                  onClick={this.handleClick}
-                >{`Get another ${tag} gif`}</button>
-              </div>
-            </article>
-          </Content>
-        </Layout>
+                  <div>
+                    <button
+                      onClick={this.handleClick}
+                    >{`Get another ${tag} gif`}</button>
+                  </div>
+                </article>
+              </Content>
+            </Layout>
+          </>
+        )}
       </>
     )
   }
