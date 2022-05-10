@@ -43,3 +43,61 @@ After creating a downloadable file URL, fill the `File*` field with the download
 ![Publish - Google drive downloadable link](./images/marketplace/publish/publish-google-drive-2.png)
 
 _Note: Google Drive allows only shared files to be downloaded as shown in above steps. The above method does not work shared folder. As a workaround, publishers can upload a zip of a folder and upload it as a file._
+
+---
+
+### Azure storage
+
+Azure provides variety of options to host data along with multiple configuration options. Publishers are required to do their own research and decide what would be the right choice for them. The below steps provides one of the possible ways to host data using Azure storage and publish it on Ocean Marketplace.
+
+#### Prerequisite
+
+Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might also be asked to provide payment details, billing address which is out of scope of this tutorial.
+
+#### Step 1: Create a storage account
+
+##### Go to Azure portal
+
+Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown in the below image.
+
+![Create a storage account - 1](/images/marketplace/publish/azure-1.png)
+
+##### Create a new storage account
+
+![Create a storage account - 2](/images/marketplace/publish/azure-2.png)
+
+##### Fill the details
+
+![Add details](/images/marketplace/publish/azure-3.png)
+
+##### Storage account created
+
+![Storage account created](/images/marketplace/publish/azure-4.png)
+
+#### Step 2: Create a blob container
+
+![Create a blob container](/images/marketplace/publish/azure-5.png)
+
+#### Step 3: Create a upload a file
+
+![Upload a file](/images/marketplace/publish/azure-6.png)
+
+#### Step 4: Share the file
+
+##### Select the file to be published and click Generate SAS
+
+![Click generate SAS](/images/marketplace/publish/azure-7.png)
+
+##### Configure the SAS details and click `Generate SAS token and URL`
+
+![Generate link to file](/images/marketplace/publish/azure-8.png)
+
+##### Copy the generated link
+
+![Copy the link](/images/marketplace/publish/azure-9.png)
+
+#### Step 5: Enter the downloadable link in publish page.
+
+Now, copy and paste the link in the Publish page in the Ocean Marketplace.
+
+![Publish the file as an asset](/images/marketplace/publish/azure-10.png)
