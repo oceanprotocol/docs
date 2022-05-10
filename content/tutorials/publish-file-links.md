@@ -36,29 +36,29 @@ Note the `<FILE-ID>` from step 1 and create a URL as below.
 
 `https://drive.google.com/uc?export=download&id=<FILE-ID>`
 
-#### Step 3: Enter the downloadable link in publish page.
+#### Step 3: Enter the downloadable link in publishing the page
 
 After creating a downloadable file URL, fill the `File*` field with the downloadable URL created in step 2.
 
 ![Publish - Google drive downloadable link](./images/marketplace/publish/publish-google-drive-2.png)
 
-_Note: Google Drive allows only shared files to be downloaded as shown in above steps. The above method does not work shared folder. As a workaround, publishers can upload a zip of a folder and upload it as a file._
+_Note: Google Drive allows only shared files to be downloaded, as shown in the above steps. The above method does not work with the shared folder. As a workaround, publishers can upload a zip of a folder and upload it as a file._
 
 ---
 
 ### Azure storage
 
-Azure provides variety of options to host data along with multiple configuration options. Publishers are required to do their own research and decide what would be the right choice for them. The below steps provides one of the possible ways to host data using Azure storage and publish it on Ocean Marketplace.
+Azure provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using Azure storage and publish it on Ocean Marketplace.
 
 #### Prerequisite
 
-Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might also be asked to provide payment details, billing address which is out of scope of this tutorial.
+Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might also be asked to provide payment details and billing addresses that are out of this tutorial's scope.
 
 #### Step 1: Create a storage account
 
 ##### Go to Azure portal
 
-Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown in the below image.
+Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
 ![Create a storage account - 1](/images/marketplace/publish/azure-1.png)
 
@@ -78,7 +78,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 ![Create a blob container](/images/marketplace/publish/azure-5.png)
 
-#### Step 3: Create a upload a file
+#### Step 3: Upload a file
 
 ![Upload a file](/images/marketplace/publish/azure-6.png)
 
@@ -96,7 +96,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 ![Copy the link](/images/marketplace/publish/azure-9.png)
 
-#### Step 5: Enter the downloadable link in publish page.
+#### Step 5: Enter the downloadable link in publishing the page
 
 Now, copy and paste the link in the Publish page in the Ocean Marketplace.
 
