@@ -47,7 +47,7 @@ These are the fees that are applied whenever a user consumes an asset:
 
 Ocean's smart contracts collect **Ocean Community fees** during swap and order operations. These fees are reinvested in community projects via OceanDAO and other initiatives.
 
-For swaps involving approved base tokens like OCEAN and H2O, the Ocean Community swap fee is 0.1%. For swaps involving other base tokens, the Ocean Community swap fee is 0.2%. The Ocean Community order fee is 0.3 DT per order operation.
+For swaps involving approved base tokens like OCEAN and H2O, the Ocean Community swap fee is 0.1%. For swaps involving other base tokens, the Ocean Community swap fee is 0.2%. The Ocean Community order fee is 0.03 DT per order operation.
 
 These fees can be updated by the Ocean Protocol Foundation.
 
