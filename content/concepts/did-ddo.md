@@ -444,11 +444,12 @@ Example:
 
 #### Consumer Parameters
 
-Sometimes, you may need some input before downloading a dataset or running an algorithm.
+Sometimes, the asset may need some input before downloading a dataset or running an algorithm.
 Examples:
 
-- You want to know the desired sampling interval of data in your dataset, before the user is going to download it. Your dataset URL is `https://example.com/mydata`. So you will define a field called `sampling`, ask the user to enter a value and then this parameter is going to be added to the URL of your dataset as query parameters: `https://example.com/mydata?sampling=10`
-- Before running an algorithm, you need to know how many iterations should it perform. You define a field called `iterations`, ask the user to enter a value and this parameter is stored in a specific location in your Computer-to-Data pod for the algorithm to read and use that value.
+- The dataset publisher wants to know the desired sampling interval of data before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. So the publisher will define a field called `sampling`, ask the buyer to enter a value, and then this parameter is going to be added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
+
+- Before running an algorithm, the algorithm needs to know how many iterations should it perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer enters the value for the `iterations` parameter, and later this value is stored in a specific location in the Computer-to-Data pod for the algorithm to read and use that value.
 
 It's an array of elements, each element object defines a field.
 An element looks like:
