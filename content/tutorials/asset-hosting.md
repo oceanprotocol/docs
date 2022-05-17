@@ -1,11 +1,11 @@
 ---
 title: Publish assets using hosting services
-description: Tutorial to publish assets using hosting services like GDrive and Azure.
+description: Tutorial to publish assets using hosting services like Google Drive and Azure.
 ---
 
 ## Overview
 
-To publish assets on the Ocean Marketplace, publishers must provide a link(an URL) to the file. It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on their google drive, AWS server, private cloud server, or other third-party hosting services. Through publishing, the URL of the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to the URL, but they interact with the Provider, which decrypts the URL and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the URL and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the URL. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
+To publish assets on the Ocean Marketplace, publishers must provide a link(an URL) to the file. It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on their Google Drive, AWS server, private cloud server, or other third-party hosting services. Through publishing, the URL of the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to the URL, but they interact with the Provider, which decrypts the URL and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the URL and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the URL. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
 
 On Ocean Marketplace, a publisher must provide the link to the asset during publish step. Once the asset is published, this link cannot be changed. So, it is essential that the publisher correctly sets this field (shown in the below image).
 
@@ -15,7 +15,7 @@ On Ocean Marketplace, a publisher must provide the link to the asset during publ
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
-### Google drive
+### Google Drive
 
 Google Drive allows users to share files/folders with various access policies. Publishers must set the access policy such that anyone with the link can download the file when using Ocean Marketplace with Ocean Protocol's default [Provider](https://v4.provider.rinkeby.oceanprotocol.com).
 
@@ -26,7 +26,7 @@ Right-click on the uploaded file and click the `Share` option. Set the file acce
 
 The file URL will be of the form `https://drive.google.com/file/d/<FILE-ID>/view?usp=sharing`, where the `<FILE-ID>` is the unique alphanumeric string. Verify if the URL is correct by entering it in a browser and check if the file is downloaded.
 
-![GDrive link](./images/marketplace/publish/publish-google-drive.png)
+![Google Drive link](./images/marketplace/publish/publish-google-drive.png)
 
 #### Step 2 - Create a downloadable link
 
@@ -40,7 +40,7 @@ Note the `<FILE-ID>` from step 1 and create a URL as below.
 
 After creating a downloadable file URL, fill the `File*` field with the downloadable URL created in step 2.
 
-![Publish - GDrive file](./images/marketplace/publish/publish-google-drive-2.png)
+![Publish - Google Drive file](./images/marketplace/publish/publish-google-drive-2.png)
 
 _Note: Google Drive allows only shared files to be downloaded, as shown in the above steps. The above method does not work with the shared folder. As a workaround, publishers can upload a zip of a folder and upload it as a file._
 
@@ -101,3 +101,51 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 Now, copy and paste the link in the Publish page in the Ocean Marketplace.
 
 ![Publish the file as an asset](/images/marketplace/publish/azure-10.png)
+
+### OneDrive
+
+Create an account on [Microsoft](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage).
+
+#### Step 1 - Upload a file
+
+Go to [OneDrive](https://onedrive.live.com/) and upload the file to be published. 
+
+![Upload a file](/images/marketplace/publish/one-drive-1.png)
+
+#### Step 2 - Get link
+
+After the file is uploaded, right click on the file and click `Embed`, and copy the link.
+
+![Get an embeddable link](/images/marketplace/publish/one-drive-2.png)
+
+Copy the highlighted content as shown in the below image:
+
+![Copy the iframe](/images/marketplace/publish/one-drive-3.png)
+
+The copied content has the following format:
+
+```html
+<iframe src="https://onedrive.live.com/embed?cid=<CID>&
+    resid=<RES_ID>%<NUMBER>&
+    authkey=<AUTH_KEY>"
+    width="98" height="120" frameborder="0" scrolling="no">
+</iframe>
+```
+
+#### Step 3 - Generate downloadable link
+
+Copy the content from `src` field from the `iframe`. The link has the following format:
+`https://onedrive.live.com/embed?cid=<CID>&resid=<RES_ID>%<NUMBER>&authkey=<AUTH_KEY>`
+
+Replace the `https://onedrive.live.com/embed` with `https://onedrive.live.com/download` from the above URL.
+
+The downloadable file URL has the following format:
+`https://onedrive.live.com/download?cid=<CID>&resid=<RES_ID>%<NUMBER>&authkey=<AUTH_KEY>`
+
+Enter the URL in the browser and verify if the file is downloaded correctly.
+
+#### Step 4 - Publish the asset using the generated link
+
+Copy and paste the link in the Publish page in the Ocean Marketplace.
+
+![Publish the file as an asset](/images/marketplace/publish/one-drive-4.png)
