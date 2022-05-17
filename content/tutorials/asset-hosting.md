@@ -118,11 +118,11 @@ After the file is uploaded, right click on the file and click `Embed`, and copy 
 
 ![Get an embeddable link](/images/marketplace/publish/one-drive-2.png)
 
-Now copy the highlighted content as shown in below image:
+Copy the highlighted content as shown in the below image:
 
 ![Copy the iframe](/images/marketplace/publish/one-drive-3.png)
 
-The copied content will be of the format as below: 
+The copied content has the following format:
 
 ```html
 <iframe src="https://onedrive.live.com/embed?cid=<CID>&
@@ -134,18 +134,18 @@ The copied content will be of the format as below:
 
 #### Step 3 - Generate downloadable link
 
-Copy the content from `src` field from the `iframe`. The link will the in the format as below:
+Copy the content from `src` field from the `iframe`. The link has the following format:
 `https://onedrive.live.com/embed?cid=<CID>&resid=<RES_ID>%<NUMBER>&authkey=<AUTH_KEY>`
 
 Replace the `https://onedrive.live.com/embed` with `https://onedrive.live.com/download` from the above URL.
 
-The downloadable file URL will be of the format as below:
+The downloadable file URL has the following format:
 `https://onedrive.live.com/download?cid=<CID>&resid=<RES_ID>%<NUMBER>&authkey=<AUTH_KEY>`
 
-Enter the the URL in the browser and verify if the file is downloaded correctly.
+Enter the URL in the browser and verify if the file is downloaded correctly.
 
 #### Step 4 - Publish the asset using the generated link
 
-Now, copy and paste the link in the Publish page in the Ocean Marketplace.
+Copy and paste the link in the Publish page in the Ocean Marketplace.
 
 ![Publish the file as an asset](/images/marketplace/publish/one-drive-4.png)
