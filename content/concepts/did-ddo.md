@@ -447,7 +447,7 @@ Example:
 Sometimes, the asset may need some input before downloading a dataset or running an algorithm.
 Examples:
 
-- Sometimes, the asset needs additional input data before downloading a dataset or running an algorithm. The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher then defines a field called sampling and asks the buyer to enter a value. This parameter is added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
+- The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher then defines a field called `sampling` and asks the buyer to enter a value. This parameter is added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
 
 - An algorithm that needs to know how many iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Computer-to-Data pod for the algorithm to read and use it.
 
