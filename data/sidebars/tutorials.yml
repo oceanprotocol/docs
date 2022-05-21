@@ -18,6 +18,8 @@
       link: /tutorials/marketplace-introduction/
     - title: Publish
       link: /tutorials/marketplace-publish-data-asset/
+    - title: Asset hosting
+      link: /tutorials/asset-hosting/
     - title: Download
       link: /tutorials/marketplace-download-data-asset/
     - title: Swap
@@ -49,15 +51,6 @@
       link: /tutorials/compute-to-data-algorithms/
     - title: Setting up docker registry
       link: /tutorials/compute-to-data-docker-registry/
-
-- group: Storage Setup
-  items:
-    - title: Set Up Azure Storage
-      link: /tutorials/azure-for-provider/
-    - title: Set Up Amazon S3 Storage
-      link: /tutorials/amazon-s3-for-provider/
-    - title: Set Up On-Premise Storage
-      link: /tutorials/on-premise-for-provider/
 
 - group: Fine-Grained Permissions
   items:

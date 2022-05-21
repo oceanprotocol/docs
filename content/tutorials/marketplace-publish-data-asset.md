@@ -96,6 +96,9 @@ With the _fixed pricing_ schema, the publisher sets the price that buyers will p
 With the _free pricing_ schema, the publisher provides an asset that is free to be downloaded by anyone.
 
 With the _dynamic pricing_ schema, the publisher sets the asset price and creates a datatoken liquidity pool with an initial amount of OCEAN tokens.
+
+For more information on the pricing models, please refer this [document](/concepts/asset-pricing/).
+
 The publisher can also change the **Swap Fee** of the liquidity pool.
 
 For a deep dive into the fee structure, please refer to this [document](/concepts/fees/).

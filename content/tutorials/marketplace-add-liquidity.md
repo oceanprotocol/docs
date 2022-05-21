@@ -25,28 +25,22 @@ After finding the dataset, select **`POOL`** tab and click on **`ADD LIQUIDITY`*
 
 ![staking part-1](images/marketplace/Staking-1.png 'POOL tab')
 
-### Step 2 - Associated risks
-
-Read carefully the risks associated with this operation.
-
-![staking part-2](images/marketplace/Staking-2.png 'Associated risks')
-
-### Step 3 - Liquidity amount
+### Step 2 - Liquidity amount
 
 Enter the amount of OCEAN tokens you want to add. The expected amount of pool shares and percentages for the provided amount will be displayed.
 
-![staking part-3](images/marketplace/Staking-3.png 'Add liquidity amount')
+![staking part-2](images/marketplace/Staking-2.png 'Add liquidity amount')
 
-### Step 4 - Transaction: Access to OCEAN tokens
+### Step 3 - Transaction: Access to OCEAN tokens
 
-![staking part-4](images/marketplace/Staking-4.png 'Transaction: Approve spend limit')
+![staking part-3](images/marketplace/Staking-3.png 'Transaction: Approve spend limit')
 
-### Step 5 - Click supply
+### Step 4 - Click supply
 
-![staking part-5](images/marketplace/Staking-5.png 'SUPPLY liquidity')
+![staking part-4](images/marketplace/Staking-4.png 'SUPPLY liquidity')
 
-### Step 6 - Transaction: Add liquidty
+### Step 5 - Transaction: Add liquidty
 
-![staking part-6](images/marketplace/Staking-6.png 'Transaction: Add liquidity')
+![staking part-5](images/marketplace/Staking-5.png 'Transaction: Add liquidity')
 
-![staking part-7](images/marketplace/Staking-7.png 'View transaction')
+![staking part-6](images/marketplace/Staking-6.png 'View transaction')

@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@oceanprotocol/art": "^3.2.0",
-    "axios": "^0.26.1",
+    "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "gatsby": "^2.32.13",
     "gatsby-image": "^3.11.0",
@@ -66,7 +66,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.0.1",
     "eslint": "^7.32.0",
     "eslint-config-oceanprotocol": "^1.5.0",
     "eslint-config-prettier": "^8.5.0",
