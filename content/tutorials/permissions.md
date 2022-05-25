@@ -1,6 +1,6 @@
 ---
 title: Fine-Grained Permissions 
-description: Control who can publish, download or browse data
+description: Control who can publish, buy or browse data
 ---
 
 
