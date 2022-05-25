@@ -51,6 +51,8 @@
       link: /tutorials/compute-to-data-algorithms/
     - title: Setting up docker registry
       link: /tutorials/compute-to-data-docker-registry/
+    - title: User defined parameters
+      link: /tutorials/compute-to-data-parameters/
 
 - group: Fine-Grained Permissions
   items:
