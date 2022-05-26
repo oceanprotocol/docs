@@ -444,82 +444,71 @@ Example:
 
 #### Consumer Parameters
 
-Sometimes, the asset needs additional input data before downloading a dataset or running an algorithm.
+Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job.
 Examples:
 
 - The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher defines a field called `sampling` and asks the buyer to enter a value. This parameter is then added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
 
-- An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Computer-to-Data pod for the algorithm to read and use it.
+- An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Compute-to-Data pod for the algorithm to read and use it.
 
-It's an array of elements, each element object defines a field.
-An element looks like:
+The `consumerParameters` is an array of objects. Each object defines a field and has the following structure:
 
-```json
-{
-  "name": "hometown",
-  "type": "text",
-  "label": "Hometown",
-  "required": true,
-  "description": "What is your hometown?",
-  "default": "Nowhere",
-  "options": []
-}
-```
+| Attribute         | Type                                                | Required | Description                                                                |
+| ----------------- | --------------------------------------------------- | -------- | -------------------------------------------------------------------------- |
+| **`name`**        | `string`                                            | **✓**    | The parameter name (this is sent as HTTP param or key towards algo)        |
+| **`type`**        | `string`                                            | **✓**    | The field type (text, number, boolean, select)                             |
+| **`label`**       | `string`                                            | **✓**    | The field label which is displayed                                         |
+| **`required`**    | `boolean`                                           | **✓**    | If customer input for this field is mandatory.                             |
+| **`description`** | `string`                                            | **✓**    | The field description.                                                     |
+| **`default`**     | `string`, `number`, or `boolean`                    | **✓**    | The field default value. For select types, `string` key of default option. |
+| **`options`**     | Array of `option`                                  |          | For select types, a list of options.                                        |
 
-where:
-
-- name = defines the parameter name (this is sent as HTTP param or key towards algo)
-- type = defines the form type (text, number, select, boolean)
-- label = defines the label which is displayed
-- required = if this field is mandatory to have a consumer input.
-- default = default value
-- description = description of this element
-- options = for select types, a list of options
+Each `option` is an `object` containing a single key:value pair where the key is the option name, and the value is the option value.
 
 Example:
 
 ```json
 [
-   {
-       "name":"hometown",
-        "type": "text",
-        "label": "Hometown",
-        "required": true,
-        "default": "Nowhere"
-       "description":"What is your hometown?"
-    },
-   {
-       "name":"age",
-        "type": "number",
-        "label": "Age",
-        "required": false,
-        "default": 0
-        "description":"Please fill your age"
-    },
-   {
-       "name":"developer",
-        "type": "boolean",
-        "label": "Developer",
-        "required": false,
-        "default": false
-        "description":"Are you a developer?"
-    },
-    {
-       "name":"preference",
-        "type": "select",
-        "label": "Date",
-        "required": false,
-        "default": "nodejs"
-        "options": [
-             {
-                    "nodejs" : "I love NodeJs"
-             },
-             {
-                  "python" : "I love Python"
-             }
-        ],
-        "description": "Do you like NodeJs or Python"
-    },
+  {
+    "name": "hometown",
+    "type": "text",
+    "label": "Hometown",
+    "required": true,
+    "description": "What is your hometown?",
+    "default": "Nowhere"
+  },
+  {
+    "name":"age",
+    "type": "number",
+    "label": "Age",
+    "required": false,
+    "description":"Please fill your age",
+    "default": 0
+  },
+  {
+    "name":"developer",
+    "type": "boolean",
+    "label": "Developer",
+    "required": false,
+    "description":"Are you a developer?",
+    "default": false
+  },
+  {
+    "name":"languagePreference",
+    "type": "select",
+    "label": "Language",
+    "required": false,
+    "description": "Do you like NodeJs or Python",
+    "default": "nodejs",
+    "options": [
+      {
+        "nodejs" : "I love NodeJs"
+      },
+      {
+        "python" : "I love Python"
+      }
+    ]
+  }
 ]
 ```
 
@@ -527,10 +516,10 @@ Algorithms will have access to a JSON file located at /data/inputs/algoCustomDat
 
 ```json
 {
-  "surname": "John",
+  "hometown": "São Paulo",
   "age": 10,
-  "developer": false,
-  "preference": "nodejs"
+  "developer": true,
+  "languagePreference": "nodejs"
 }
 ```
 
