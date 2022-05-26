@@ -461,7 +461,7 @@ The `consumerParameters` is an array of objects. Each object defines a field and
 | **`required`**    | `boolean`                                           | **✓**    | If customer input for this field is mandatory.                             |
 | **`description`** | `string`                                            | **✓**    | The field description.                                                     |
 | **`default`**     | `string`, `number`, or `boolean`                    | **✓**    | The field default value. For select types, `string` key of default option. |
-| **`options`**     | Array of `option`                                  |          | For select types, a list of options.                                        |
+| **`options`**     | Array of `option`                                   |          | For select types, a list of options.                                       |
 
 Each `option` is an `object` containing a single key:value pair where the key is the option name, and the value is the option value.
 
