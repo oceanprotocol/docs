@@ -1,13 +1,13 @@
 ---
 title: Market-Level Permissions
-description: Control who can publish, consume or browse data
+description: Control who can publish, buy or browse data
 ---
 
 ## Introduction
 
 For market-level permissions, Ocean implements a role-based access control server (RBAC server). It implements restrictions at the user level, based on the user’s role (credentials). The RBAC server is run & controlled by the marketplace owner. Therefore permissions at this level are at the discretion of the marketplace owner. 
 
-The RBAC server is the primary mechanism for restricting your users ability to publish, consume, or browse assets in the market.  
+The RBAC server is the primary mechanism for restricting your users ability to publish, buy, or browse assets in the market.  
 
 ## Roles
 
@@ -20,7 +20,7 @@ The RBAC server defines four different roles:
 
 ### Admin/ Publisher
 
-Currently users with either the admin or publisher roles will be able to use the Market without any restrictions. They can publish, consume and browse datasets. 
+Currently users with either the admin or publisher roles will be able to use the Market without any restrictions. They can publish, buy and browse datasets. 
 
 ### Consumer
 

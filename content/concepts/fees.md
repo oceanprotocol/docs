@@ -36,7 +36,7 @@ Based on the use case of the marketplace, the marketplace owner can decide if th
 
 Consume fees (aka. Order fees) are charged when a user holding a datatoken exchanges it for the right to download an asset or to start a compute job that uses the asset.
 
-These are the fees that are applied whenever a user consumes an asset:
+These are the fees that are applied whenever a user pays to access an asset:
 
 - Consume Market Consumption Fee
 - Publisher Market Consumption Fee

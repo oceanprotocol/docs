@@ -1,15 +1,15 @@
 ---
 title: Fine-Grained Permissions 
-description: Control who can publish, consume or browse data
+description: Control who can publish, buy or browse data
 ---
 
 
 A large part of Ocean is about access control, which is primarily handled by datatokens. Users can access a resource (e.g. a file) by redeeming datatokens for that resource. We recognize that enterprises and other users often need more precise ways to specify and manage access, and we have introduced fine-grained permissions for these use cases. 
 Fine-grained permissions mean that access can be controlled precisely at two levels:
 
-- [Marketplace-level permissions](./market-level-permissions) for browsing, consuming or publishing within a marketplace frontend.
+- [Marketplace-level permissions](./market-level-permissions) for browsing, downloading or publishing within a marketplace frontend.
 
-- [Asset-level permissions](./asset-level-permissions) on consuming a specific asset.
+- [Asset-level permissions](./asset-level-permissions) on downloading a specific asset.
 
 The fine-grained permissions features are designed to work in forks of Ocean Market. We have not enabled them in Ocean Market itself, to keep Ocean Market open for everyone to use. On the front end, the permissions features are easily enabled by setting environment variables.
 
