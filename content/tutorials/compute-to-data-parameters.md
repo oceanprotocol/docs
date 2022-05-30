@@ -122,8 +122,19 @@ To view a complete tutorial on publishing asset using Ocean Marketplace click [h
 
 ## Consumer flow
 
-## Step 1: Buy asset
+### Step 1: Find assets
 
-```python
+```javascript
+
+```
+
+### Step 2: Buy datatokens
+
+```javascript
+
+```
+### Step 3: Start compute job
+
+```javascript
 
 ```
