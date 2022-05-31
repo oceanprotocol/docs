@@ -70,7 +70,7 @@ The publisher now must provide the file URL as `https://example.com` while publi
 
 To view a complete tutorial on publishing asset using Ocean Marketplace click [here](/tutorials/marketplace-publish-data-asset/).
 
-## Algoithm publisher flow
+## Algorithm publisher flow
 
 ### Use case for algorithm custom parameters
 
