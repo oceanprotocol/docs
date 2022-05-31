@@ -5,19 +5,20 @@ description: Learn how to define and use custom parameters while downloading ass
 
 ## Overview
 
-Ocean Protocol allows dataset buyers to provide custom parameters that can be used to fetch the downloaded data in a specific format, to download a different type of data or pass some additonal input to the algorithms in the Compute-to-Data job. 
+Ocean Protocol allows dataset buyers to provide custom parameters that can be used to fetch the downloaded data in a specific format, to download a different type of data or pass some additonal input to the algorithms in the Compute-to-Data job.
 
 There are types of parameters that asset publisher can support:
-- User defined parameters
-- Algorithm custom parameters 
 
-## User defined parameters - Dataset publisher flow
+- User defined parameters
+- Algorithm custom parameters
+
+## Dataset publisher flow
 
 The asset publisher must support these parameters. The provider combines the original asset URL and the entered parameter values into a new URL and then streams the response from the modified URL back to the buyer.
 
-### Use case
+### Use case for user defined parameters
 
-For example, if the publisher has published an URL `https://example.com` which serves large size historical weather data from all over the world. If the publisher wants to allow buyers to filter the data based on location, type of data, etc., it is possible to do so using user defined parameters. 
+For example, if the publisher has published an URL `https://example.com` which serves large size historical weather data from all over the world. If the publisher wants to allow buyers to filter the data based on location, type of data, etc., it is possible to do so using user defined parameters.
 
 Suppose the publisher defines following 2 parameters:
 
@@ -38,13 +39,13 @@ The below python script exposes a REST endpoint which takes two parameters namel
 Lets assume that the dataset publisher host the service at domain `example.com` along with https support.
 The publisher must ensure that the URL is accessible to Provider.
 
-The code snippet is only for demo purpose and not intended for production use. 
+The code snippet is only for demo purpose and not intended for production use.
 
 ```python
 from flask import Flask, request
 
 def get_data(data_type: str, location: str):
-    ''' 
+    '''
         Add some business logic here to get
         the required data with given parameters
     '''
@@ -69,22 +70,21 @@ The publisher now must provide the file URL as `https://example.com` while publi
 
 To view a complete tutorial on publishing asset using Ocean Marketplace click [here](/tutorials/marketplace-publish-data-asset/).
 
+## Algoithm publisher flow
 
-## Algorithm custom parameters - Algoithm publisher flow
+### Use case for algorithm custom parameters
 
-### Use case
-
-For example, if the algorithm publisher has published an URL `https://example.org` which serves a python script to analyse historical weather data published in the previous section. If the alogrithm publisher wants buyers to specify the number of iterations the algorithm must preform over the data, it is possible to do so using algorithm custom parameters. 
+For example, if the algorithm publisher has published an URL `https://example.org` which serves a python script to analyse historical weather data published in the previous section. If the alogrithm publisher wants buyers to specify the number of iterations the algorithm must preform over the data, it is possible to do so using algorithm custom parameters.
 
 Suppose, the alogrithm publisher defines a parameters called `iterations` and expects buyer to give this input before running the alogrithm in Compute-to-Data environment. The buyer can enter the desired parameter value using ocean.py or ocean.js.
 
-The provider pass on the entered parameters and save it in a speific path in Compute-to-Data environment. The algorithm can later read this value and perform required computations. 
+The provider pass on the entered parameters and save it in a speific path in Compute-to-Data environment. The algorithm can later read this value and perform required computations.
 
 Following steps will specify how algorithm publisher can support aditional algorithm custom paramters.
 
 ### Step 1: Create an algorithm
 
-The code snippet is only for demo purpose and not intended for production use. 
+The code snippet is only for demo purpose and not intended for production use.
 
 ```python
 
@@ -133,6 +133,7 @@ To view a complete tutorial on publishing asset using Ocean Marketplace click [h
 ```javascript
 
 ```
+
 ### Step 3: Start compute job
 
 ```javascript
