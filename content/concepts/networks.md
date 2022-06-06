@@ -73,6 +73,28 @@ If you don’t find Energy Web Chain as a predefined network in your wallet, you
 | Provider     | `https://v4.provider.energyweb.oceanprotocol.com/`                                |
 | Subgraph     | `https://v4.subgraph.energyweb.oceanprotocol.com`                                 |
 
+## Moonriver
+
+Ocean is deployed to [Moonriver](https://docs.moonbeam.network/builders/get-started/networks/moonriver/), another production network. Moonriver’s native token is MOVR.
+
+If you don’t find Moonriver as a predefined network in your wallet, you can connect to it using the guide [here](https://docs.moonbeam.network/builders/get-started/networks/moonriver/#connect-metamask).
+
+**Tokens**
+
+- Moonriver MOVR:
+  - Native token to pay transaction fees.
+- Moonriver OCEAN:
+  - Address: [0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE](https://blockscout.moonriver.moonbeam.network/token/0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE/token-transfers)
+
+**Additional Components**
+
+| What         | URL                                                                               |
+| ------------ | --------------------------------------------------------------------------------- |
+| Explorer     | https://blockscout.moonriver.moonbeam.network                                     |
+| Ocean Market | Point wallet to Energy Web Chain network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.moonriver.oceanprotocol.com`                                 |
+| Subgraph     | `https://v4.subgraph.moonriver.oceanprotocol.com`                                 |
+
 ## Ropsten
 
 Ropsten is a test network.
