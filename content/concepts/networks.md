@@ -9,7 +9,47 @@ In each network, you’ll need ETH to pay for gas, and OCEAN for certain Ocean a
 
 The universal Aquarius Endpoint is `https://v4.aquarius.oceanprotocol.com`.
 
+## Ethereum Mainnet
 
+Ethereum mainnet is a production network. In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Ethereum mainnet_.
+
+**Tokens**
+
+- Mainnet ETH:
+  - Native token to pay transaction fees
+- Mainnet OCEAN:
+  - Address: [0x967da4048cD07aB37855c090aAF366e4ce1b9F48](https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48)
+
+**Additional Components**
+
+| What         | URL                                                                      |
+| ------------ | ------------------------------------------------------------------------ |
+| Explorer     | https://etherscan.io                                                     |
+| Ocean Market | Point wallet to Ropsten network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.mainnet.oceanprotocol.com`                          |
+| Subgraph     | `https://v4.subgraph.mainnet.oceanprotocol.com`                          |
+
+## Binance Smart Chain
+
+Ocean is deployed to Binance Smart Chain (BSC), another production network. BSC’s native token is BNB - the Binance token.
+
+If you don’t find BSC as a predefined network in your wallet, you can connect to it manually via Binance’s guide [here](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain).
+
+**Tokens**
+
+- BSC BNB:
+  - Native token to pay transaction fees.
+- BSC OCEAN:
+  - Address: [0xdce07662ca8ebc241316a15b611c89711414dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a)
+
+**Additional Components**
+
+| What         | URL                                                                      |
+| ------------ | ------------------------------------------------------------------------ |
+| Explorer     | https://bscscan.com/                                                     |
+| Ocean Market | Point wallet to Ropsten network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.bsc.oceanprotocol.com`                              |
+| Subgraph     | `https://v4.subgraph.bsc.oceanprotocol.com`                              |
 
 ## Ropsten
 
@@ -32,8 +72,8 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 | ------------ | -------------------------------------------------------------------- |
 | Explorer     | https://ropsten.etherscan.io                                         |
 | Ocean Market | Point wallet to Ropsten network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.ropsten.oceanprotocol.com`                         |
-| Subgraph     | `https://v4.subgraph.ropsten.oceanprotocol.com`                         |
+| Provider     | `https://v4.provider.ropsten.oceanprotocol.com`                      |
+| Subgraph     | `https://v4.subgraph.ropsten.oceanprotocol.com`                      |
 
 ## Rinkeby
 
@@ -56,8 +96,8 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 | ------------ | -------------------------------------------------------------------- |
 | Explorer     | https://rinkeby.etherscan.io                                         |
 | Ocean Market | Point wallet to Rinkeby network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.rinkeby.oceanprotocol.com`                         |
-| Subgraph     | `https://v4.subgraph.rinkeby.oceanprotocol.com`                         |
+| Provider     | `https://v4.provider.rinkeby.oceanprotocol.com`                      |
+| Subgraph     | `https://v4.subgraph.rinkeby.oceanprotocol.com`                      |
 
 ## Mumbai
 
@@ -80,9 +120,8 @@ If you don't find Mumbai as a predefined network in your wallet, you can connect
 | ------------ | ------------------------------------------------------------------- |
 | Explorer     | https://mumbai.polygonscan.com                                      |
 | Ocean Market | Point wallet to Mumbai network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.mumbai.oceanprotocol.com`                         |
-| Subgraph     | `https://v4.subgraph.mumbai.oceanprotocol.com`                         |
-
+| Provider     | `https://v4.provider.mumbai.oceanprotocol.com`                      |
+| Subgraph     | `https://v4.subgraph.mumbai.oceanprotocol.com`                      |
 
 ## Moonbase
 
@@ -101,14 +140,12 @@ If you don't find Moonbase as a predefined network in your wallet, you can conne
 
 **Additional Components**
 
-| What         | URL                                                                 |
-| ------------ | ------------------------------------------------------------------- |
-| Explorer     | https://moonbase.moonscan.io/                                      |
+| What         | URL                                                                   |
+| ------------ | --------------------------------------------------------------------- |
+| Explorer     | https://moonbase.moonscan.io/                                         |
 | Ocean Market | Point wallet to Moonbase network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.moonbase.oceanprotocol.com/`                       |
-| Subgraph     | `https://v4.subgraph.moonbase.oceanprotocol.com`                         |
-
-
+| Provider     | `https://v4.provider.moonbase.oceanprotocol.com/`                     |
+| Subgraph     | `https://v4.subgraph.moonbase.oceanprotocol.com`                      |
 
 ## Local / Ganache
 
