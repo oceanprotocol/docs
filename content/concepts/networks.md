@@ -22,12 +22,12 @@ Ethereum mainnet is a production network. In MetaMask and other ERC20 wallets, c
 
 **Additional Components**
 
-| What         | URL                                                                      |
-| ------------ | ------------------------------------------------------------------------ |
-| Explorer     | https://etherscan.io                                                     |
-| Ocean Market | Point wallet to Ropsten network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.mainnet.oceanprotocol.com`                          |
-| Subgraph     | `https://v4.subgraph.mainnet.oceanprotocol.com`                          |
+| What         | URL                                                                               |
+| ------------ | --------------------------------------------------------------------------------- |
+| Explorer     | https://etherscan.io                                                              |
+| Ocean Market | Point wallet to Ethereum Mainnet network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.mainnet.oceanprotocol.com`                                   |
+| Subgraph     | `https://v4.subgraph.mainnet.oceanprotocol.com`                                   |
 
 ## Binance Smart Chain
 
@@ -44,12 +44,34 @@ If you don’t find BSC as a predefined network in your wallet, you can connect 
 
 **Additional Components**
 
-| What         | URL                                                                      |
-| ------------ | ------------------------------------------------------------------------ |
-| Explorer     | https://bscscan.com/                                                     |
-| Ocean Market | Point wallet to Ropsten network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.bsc.oceanprotocol.com`                              |
-| Subgraph     | `https://v4.subgraph.bsc.oceanprotocol.com`                              |
+| What         | URL                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------ |
+| Explorer     | https://bscscan.com/                                                                 |
+| Ocean Market | Point wallet to Binance Smart Chain network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.bsc.oceanprotocol.com`                                          |
+| Subgraph     | `https://v4.subgraph.bsc.oceanprotocol.com`                                          |
+
+## Energy Web Chain
+
+Ocean is deployed to [Energy Web Chain](https://energy-web-foundation.gitbook.io/energy-web/technology/the-stack/trust-layer-energy-web-chain), another production network. Energy Web’s native token is EWT.
+
+If you don’t find Energy Web Chain as a predefined network in your wallet, you can connect to it using the guide [here](https://energy-web-foundation.gitbook.io/energy-web/how-tos-and-tutorials/connect-to-energy-web-chain-main-network-with-metamash).
+
+**Tokens**
+
+- Energy Web Chain EWT:
+  - Native token to pay transaction fees.
+- Energy Web Chain OCEAN:
+  - Address: [0x593122aae80a6fc3183b2ac0c4ab3336debee528](https://explorer.energyweb.org/token/0x593122aae80a6fc3183b2ac0c4ab3336debee528)
+
+**Additional Components**
+
+| What         | URL                                                                               |
+| ------------ | --------------------------------------------------------------------------------- |
+| Explorer     | https://explorer.energyweb.org/                                                   |
+| Ocean Market | Point wallet to Energy Web Chain network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.energyweb.oceanprotocol.com/`                                |
+| Subgraph     | `https://v4.subgraph.energyweb.oceanprotocol.com`                                 |
 
 ## Ropsten
 
