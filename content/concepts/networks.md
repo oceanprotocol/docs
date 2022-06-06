@@ -73,6 +73,10 @@ If you don’t find Energy Web Chain as a predefined network in your wallet, you
 | Provider     | `https://v4.provider.energyweb.oceanprotocol.com/`                                |
 | Subgraph     | `https://v4.subgraph.energyweb.oceanprotocol.com`                                 |
 
+**Bridge**
+
+Check our BSC Bridge [guide](/tutorials/bsc-bridge/) to learn how you can deposit, withdraw and send tokens.
+
 ## Moonriver
 
 Ocean is deployed to [Moonriver](https://docs.moonbeam.network/builders/get-started/networks/moonriver/), another production network. Moonriver’s native token is MOVR.
@@ -94,6 +98,10 @@ If you don’t find Moonriver as a predefined network in your wallet, you can co
 | Ocean Market | Point wallet to Energy Web Chain network, at https://v4.market.oceanprotocol.com/ |
 | Provider     | `https://v4.provider.moonriver.oceanprotocol.com`                                 |
 | Subgraph     | `https://v4.subgraph.moonriver.oceanprotocol.com`                                 |
+
+**Bridge**
+
+Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet and Moonriver.
 
 ## Ropsten
 
