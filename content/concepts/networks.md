@@ -92,12 +92,12 @@ If you don’t find Moonriver as a predefined network in your wallet, you can co
 
 **Additional Components**
 
-| What         | URL                                                                               |
-| ------------ | --------------------------------------------------------------------------------- |
-| Explorer     | https://blockscout.moonriver.moonbeam.network                                     |
-| Ocean Market | Point wallet to Energy Web Chain network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.moonriver.oceanprotocol.com`                                 |
-| Subgraph     | `https://v4.subgraph.moonriver.oceanprotocol.com`                                 |
+| What         | URL                                                                        |
+| ------------ | -------------------------------------------------------------------------- |
+| Explorer     | https://blockscout.moonriver.moonbeam.network                              |
+| Ocean Market | Point wallet to Moonriver network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.moonriver.oceanprotocol.com`                          |
+| Subgraph     | `https://v4.subgraph.moonriver.oceanprotocol.com`                          |
 
 **Bridge**
 
