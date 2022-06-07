@@ -29,6 +29,31 @@ Ethereum mainnet is a production network. In MetaMask and other ERC20 wallets, c
 | Provider     | `https://v4.provider.mainnet.oceanprotocol.com`                                   |
 | Subgraph     | `https://v4.subgraph.mainnet.oceanprotocol.com`                                   |
 
+## Polygon Mainnet
+
+Ocean is deployed to Polygon Mainnet, another production network. Polygon’s native token is MATIC.
+If you don’t find Polygon as a predefined network in your wallet, you can connect to it manually via Polygon's guide [here](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/#add-the-polygon-network-manually).
+
+**Tokens**
+
+- Matic:
+  - Native token to pay transaction fees
+- Matic OCEAN:
+  - Address: [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1)
+
+**Additional Components**
+
+| What         | URL                                                                              |
+| ------------ | -------------------------------------------------------------------------------- |
+| Explorer     | https://polygonscan.com                                                          |
+| Ocean Market | Point wallet to Ploygon Mainnet network, at https://v4.market.oceanprotocol.com/ |
+| Provider     | `https://v4.provider.polygon.oceanprotocol.com/`                                 |
+| Subgraph     | `https://v4.subgraph.polygon.oceanprotocol.com/`                                 |
+
+**Bridge**
+
+Check our Polygon Bridge [guide](/tutorials/polygon-bridge/) to learn how you can deposit, withdraw and send tokens.
+
 ## Binance Smart Chain
 
 Ocean is deployed to Binance Smart Chain (BSC), another production network. BSC’s native token is BNB - the Binance token.
@@ -53,7 +78,7 @@ If you don’t find BSC as a predefined network in your wallet, you can connect 
 
 **Bridge**
 
-Check our BSC Bridge [guide](/tutorials/bsc-bridge/) to learn how you can deposit, withdraw and send token
+Check our BSC Bridge [guide](/tutorials/bsc-bridge/) to learn how you can deposit, withdraw and send tokens.
 
 ## Energy Web Chain
 
