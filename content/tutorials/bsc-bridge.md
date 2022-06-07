@@ -1,6 +1,6 @@
 ---
 title: Binance Smart Chain (BSC)
-description: 
+description:
 ---
 
 ## Intro to BSC's Bridge
@@ -15,5 +15,5 @@ The article [How to Get Started with BSC](https://academy.binance.com/en/article
 ## Links
 
 - [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
-- [BSC Bridge](https://wallet.matic.network/bridge)
+- [BSC Bridge](https://www.bnbchain.org/en/bridge)
 - [How to set up a custom network in MetaMask](/tutorials/metamask-setup/#set-up-custom-network)

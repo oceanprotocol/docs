@@ -51,6 +51,10 @@ If you don’t find BSC as a predefined network in your wallet, you can connect 
 | Provider     | `https://v4.provider.bsc.oceanprotocol.com`                                          |
 | Subgraph     | `https://v4.subgraph.bsc.oceanprotocol.com`                                          |
 
+**Bridge**
+
+Check our BSC Bridge [guide](/tutorials/bsc-bridge/) to learn how you can deposit, withdraw and send token
+
 ## Energy Web Chain
 
 Ocean is deployed to [Energy Web Chain](https://energy-web-foundation.gitbook.io/energy-web/technology/the-stack/trust-layer-energy-web-chain), another production network. Energy Web’s native token is EWT.
@@ -75,7 +79,7 @@ If you don’t find Energy Web Chain as a predefined network in your wallet, you
 
 **Bridge**
 
-Check our BSC Bridge [guide](https://bridge.carbonswap.exchange) to learn how you can deposit, withdraw and send tokens.
+Use the link [here](https://bridge.carbonswap.exchange) to bridge the assets between EWC and Ethereum mainnet.
 
 ## Moonriver
 
