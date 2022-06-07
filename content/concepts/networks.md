@@ -75,7 +75,7 @@ If you don’t find Energy Web Chain as a predefined network in your wallet, you
 
 **Bridge**
 
-Check our BSC Bridge [guide](/tutorials/bsc-bridge/) to learn how you can deposit, withdraw and send tokens.
+Check our BSC Bridge [guide](https://bridge.carbonswap.exchange) to learn how you can deposit, withdraw and send tokens.
 
 ## Moonriver
 
