@@ -16,8 +16,6 @@ const HeaderHome = () => (
           siteMetadata {
             siteTitle
             siteDescription
-            siteTagline
-            siteTaglineURL
           }
         }
       }
