@@ -11,7 +11,7 @@ description: Tutorial to add liquidity to Ocean pools using Ocean Market
 
 3. Connect wallet.
 
-   ![connect wallet](images/marketplace/consume-connect-wallet.png 'Connect wallet')
+   ![connect wallet](images/marketplace/add-liquidity-connect-wallet.png 'Connect wallet')
 
 ## Tutorial
 
@@ -23,24 +23,24 @@ Search for the desired asset published on the <a href="https://v4.market.oceanpr
 
 After finding the dataset, select **`POOL`** tab and click on **`ADD LIQUIDITY`**.
 
-![staking part-1](images/marketplace/Staking-1.png 'POOL tab')
+![add liquidity part-1](images/marketplace/add-liquidity-1.png 'POOL tab')
 
 ### Step 2 - Liquidity amount
 
 Enter the amount of OCEAN tokens you want to add. The expected amount of pool shares and percentages for the provided amount will be displayed.
 
-![staking part-2](images/marketplace/Staking-2.png 'Add liquidity amount')
+![add liquidity part-2](images/marketplace/add-liquidity-2.png 'Add liquidity amount')
 
 ### Step 3 - Transaction: Access to OCEAN tokens
 
-![staking part-3](images/marketplace/Staking-3.png 'Transaction: Approve spend limit')
+![add liquidity part-3](images/marketplace/add-liquidity-3.png 'Transaction: Approve spend limit')
 
 ### Step 4 - Click supply
 
-![staking part-4](images/marketplace/Staking-4.png 'SUPPLY liquidity')
+![add liquidity part-4](images/marketplace/add-liquidity-4.png 'SUPPLY liquidity')
 
 ### Step 5 - Transaction: Add liquidty
 
-![staking part-5](images/marketplace/Staking-5.png 'Transaction: Add liquidity')
+![add liquidity part-5](images/marketplace/add-liquidity-5.png 'Transaction: Add liquidity')
 
-![staking part-6](images/marketplace/Staking-6.png 'View transaction')
+![add liquidity part-6](images/marketplace/add-liquidity-6.png 'View transaction')
