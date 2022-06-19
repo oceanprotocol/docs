@@ -8,7 +8,6 @@ This section has API reference docs (or links to external ones) for the followin
 <repo name="ocean.js"></repo>
 <repo name="aquarius"></repo>
 <repo name="provider"></repo>
-<repo name="react"></repo>
 <repo name="ocean.py"></repo>
 <repo name="contracts"></repo>
 
