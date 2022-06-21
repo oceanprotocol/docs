@@ -5,7 +5,7 @@ slug: /concepts/did-ddo/
 section: concepts
 ---
 
-**v4.0.0**
+**v4.1.0**
 
 ## Overview
 
@@ -80,7 +80,7 @@ A DDO in Ocean has these required attributes:
 | ----------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | **`@context`**    | Array of `string`           | Contexts used for validation.                                                                                  |
 | **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                                    |
-| **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.0.0`. |
+| **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.1.0`. |
 | **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                                        |
 | **`nftAddress`**  | `string`                    | NFT contract linked to this asset                                                                              |
 | **`metadata`**    | [Metadata](#metadata)       | Stores an object describing the asset.                                                                         |
@@ -760,7 +760,7 @@ Example:
 {
   "@context": ["https://w3id.org/did/v1"],
   "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "chainId": 1,
   "nftAddress": "0x123",
   "metadata": {
