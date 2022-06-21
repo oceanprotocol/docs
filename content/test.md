@@ -389,18 +389,6 @@ Resulting in:
 
 <repo name="aquarius" readme="true"></repo>
 
-## Embedding File Contents from GitHub
-
-You can embed any file contents like so, note that the language needs to be defined manually to get proper syntax highlighting:
-
-```markdown
-GITHUB-EMBED https://github.com/oceanprotocol/ocean.js/blob/main/src/lib.ts js GITHUB-EMBED
-```
-
-Resulting in:
-
-GITHUB-EMBED https://github.com/oceanprotocol/ocean.js/blob/main/src/lib.ts js GITHUB-EMBED
-
 ## Swagger spec references
 
 Many Swagger fields like the description (`info.description`) are rendered through Markdown so you can write actual Markdown in those fields.

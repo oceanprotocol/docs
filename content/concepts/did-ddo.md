@@ -5,7 +5,7 @@ slug: /concepts/did-ddo/
 section: concepts
 ---
 
-**v4.0.0**
+**v4.1.0**
 
 ## Overview
 
@@ -80,7 +80,7 @@ A DDO in Ocean has these required attributes:
 | ----------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | **`@context`**    | Array of `string`           | Contexts used for validation.                                                                                  |
 | **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                                    |
-| **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.0.0`. |
+| **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.1.0`. |
 | **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                                        |
 | **`nftAddress`**  | `string`                    | NFT contract linked to this asset                                                                              |
 | **`metadata`**    | [Metadata](#metadata)       | Stores an object describing the asset.                                                                         |
@@ -202,7 +202,17 @@ Example:
 }
 ```
 
-During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of objects defining the storage access details are sent.
+During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider:
+```json
+{
+  "datatokenAddress":"0x1",
+  "nftAddress": "0x2",
+  "files": [
+    ...
+  ]
+}
+```
+where "files" contains one or more storage objects.
 
 Type of objects supported :
 
@@ -221,7 +231,12 @@ Type of objects supported :
   {
     "type": "url",
     "url": "https://url.com/file1.csv",
-    "method": "GET"
+    "method": "GET",
+    "headers":
+      [
+       {"Authorization": "Bearer 123"},
+       {"APIKEY": "124"},
+      ]
   }
 ]
 ```
@@ -274,21 +289,25 @@ A service can contain multiple files, using multiple storage types.
 Example:
 
 ```json
-[
-  {
-    "type": "url",
-    "url": "https://url.com/file1.csv",
-    "method": "GET"
-  },
-  {
-    "type": "ipfs",
-    "hash": "XXXX"
-  },
-  {
-    "type": "arweave",
-    "transactionId": "cZ6j5PmPVXCq5Az6YGcGqzffYjx2JnsnlSajaHNr20w"
-  }
-]
+{
+  "datatokenAddress":"0x1",
+  "nftAddress": "0x2",
+  "files": [
+    {
+      "type": "url",
+      "url": "https://url.com/file1.csv",
+      "method": "GET"
+    },
+    {
+      "type": "ipfs",
+      "hash": "XXXX"
+    },
+    {
+      "type": "arweave",
+      "transactionId": "cZ6j5PmPVXCq5Az6YGcGqzffYjx2JnsnlSajaHNr20w"
+    }
+  ]
+}
 ```
 
 To get information about the files after encryption, the `/fileinfo` endpoint of _Provider_ returns based on a passed DID an array of file metadata (based on the file type):
@@ -756,7 +775,7 @@ Example:
 {
   "@context": ["https://w3id.org/did/v1"],
   "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "chainId": 1,
   "nftAddress": "0x123",
   "metadata": {

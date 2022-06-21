@@ -52,6 +52,9 @@ vi .env
 Then install dependencies and start up the development server:
 
 ```bash
+# use Node.js/npm version defined in .nvmrc
+nvm use
+
 npm i
 npm start
 ```
@@ -116,4 +119,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
- 
