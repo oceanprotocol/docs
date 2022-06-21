@@ -202,7 +202,17 @@ Example:
 }
 ```
 
-During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this an array of objects defining the storage access details are sent.
+During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider:
+```json
+{
+  "datatokenAddress":"0x1",
+  "nftAddress": "0x2",
+  "files": [
+    ...
+  ]
+}
+```
+where "files" contains one or more storage objects.
 
 Type of objects supported :
 
@@ -221,7 +231,12 @@ Type of objects supported :
   {
     "type": "url",
     "url": "https://url.com/file1.csv",
-    "method": "GET"
+    "method": "GET",
+    "headers":
+      [
+       {"Authorization": "Bearer 123"}, 
+       {"APIKEY": "124"},
+      ]
   }
 ]
 ```
@@ -263,17 +278,21 @@ A service can contain multiple files, using multiple storage types.
 Example:
 
 ```json
-[
-  {
-    "type": "url",
-    "url": "https://url.com/file1.csv",
-    "method": "GET"
-  },
-  {
-    "type": "ipfs",
-    "hash": "XXXX"
-  }
-]
+{
+  "datatokenAddress":"0x1",
+  "nftAddress": "0x2",
+  "files": [
+    {
+      "type": "url",
+      "url": "https://url.com/file1.csv",
+      "method": "GET"
+    },
+    {
+      "type": "ipfs",
+      "hash": "XXXX"
+    }
+  ]
+}
 ```
 
 To get information about the files after encryption, the `/fileinfo` endpoint of _Provider_ returns based on a passed DID an array of file metadata (based on the file type):
