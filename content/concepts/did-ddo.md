@@ -241,7 +241,7 @@ Supported storage object types:
 
 </td></tr>
 
-<tr><td><code>arwave</code></td><td><code>value</code> is the Arwave transaction ID.</td><td>
+<tr><td><code>arweave</code></td><td><code>value</code> is the Arweave transaction ID.</td><td>
 
 ```json
 {
