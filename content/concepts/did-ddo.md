@@ -386,7 +386,7 @@ An asset with a service of `type` `compute` has the following additional attribu
             <tr>
               <td>Array of <code>publisherTrustedAlgorithms</code></td>
               <td><b>✓</b></td>
-              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed. (see below).</td>
+              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td>
             </tr>
           </tbody>
         </table>
@@ -403,16 +403,12 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 | **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as `string`).                        |
 | **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's `metadata.algorithm.container` section (as `string`). |
 
-To produce `filesChecksum`:
-
-```js
-sha256(JSON.Stringify(algorithm_ddo.services[0].files))
-```
+To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True
 
 To produce `containerSectionChecksum`:
 
 ```js
-sha256(JSON.Stringify(algorithm_ddo.metadata.algorithm.container))
+sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum))
 ```
 
 Example:
