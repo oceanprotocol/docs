@@ -42,25 +42,27 @@ The image below shows how to set the Dynamic pricing of an asset in the Ocean's 
 
 Ocean Protocol also allows publishers to set the pricing using ocean.js and ocean.py library.
 
-### Effect on price due to changing liquidity
+### Asset price
 
-#### Action: adding/removing liquidity from pool
+#### Action: Add liquidity from pool
 
-With one-sided staking, when liquidity is added to the pool, the user's ocean tokens are added to the liquidity pool. To protect users' funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool, Ocean protocol's bot mints new datatokens and adds them to the pool. Thus, when users add liquidity to the pool, the ratio of tokens remains constant, and there is no price impact on the datatoken.
+With one-sided staking, when liquidity is added to the pool, the ocean tokens are added to the liquidity pool. To protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool, Ocean protocol's bot mints new datatokens and adds them to the pool. Thus, when liquidity is added to the pool, the ratio of tokens remains constant, and there is no price impact on the datatoken.
 
-Similarly, when the users remove liquidity, they get Ocean tokens in return for their address. To balance the ratio of tokens in the pool, Ocean Protocol's bot burns the datatokens. Thus, in this case, there is also no price impact on the datatoken.
+#### Action: Remove liquidity from pool
 
-#### Action: Buying datatoken
+When the liquidity is removed from the pool, the Ocean tokens are returned to the respective address. The address only receives Ocean tokens due to one-sided staking. Ocean protocol's bot burns the datatokens from the pool to protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool. Thus, in this case, there is also no price impact on the datatoken.
 
-When the user buys a datatoken by paying Ocean tokens to the pool, the ratio of Ocean token and datatoken changes, there would be more Ocean tokens and fewer datatokens in the pool than previously. As there would be fewer datatokens, the pool will increase the amount of Ocean tokens required to buy a datatoken in the following transactions to maintain the constant ratio between tokens. Thus, the price of the datatoken increases whenever datatokens are bought.
+#### Action: Buy datatoken
 
-#### Action: Sell datatoken
-
-When the user sells a datatoken and gets Ocean tokens from the pool, the ratio of Ocean token and datatoken changes, and there would be fewer Ocean tokens and more datatokens in the pool than previously. As there would be more datatokens, the pool will decrease the amount of Ocean tokens required to buy a datatoken in the following transactions to maintain the constant ratio between tokens. Thus, the price of the datatoken decreases whenever datatokens are sold.
+When a datatoken is bought by paying Ocean tokens to the pool, the ratio of Ocean token and datatoken changes, there would be more Ocean tokens and fewer datatokens in the pool than previously. As there would be fewer datatokens, the pool will increase the amount of Ocean tokens required to buy a datatoken in the following transactions to maintain the constant ratio between tokens. Thus, the price of the datatoken increases whenever datatokens are bought.
 
 #### Action: Buy dataset
 
-Buying a dataset requires the users to obtain the datatokens from the pool by paying Ocean tokens. This is the same as buying a datatoken from the pool. Thus, if users buy datatokens, the price of datatokens will increase. However, if users already have the datatokens, they can simply use them to buy the asset or the service without requiring interaction with the pool. In such a case, the price of the datatoken doesn't change.
+Buying a dataset requires that the datatokens are swapped from the pool by paying Ocean tokens. Thus, if users buy datatokens, the price of datatokens will increase. However, if users already have the datatokens, they can simply use them to buy the asset or the service without requiring interaction with the pool. In such a case, the price of the datatoken doesn't change.
+
+#### Action: Sell datatoken
+
+When the a datatoken is sold Ocean tokens are removed from the pool in exchange of datatoken, the ratio of Ocean token and datatoken changes, and there would be fewer Ocean tokens and more datatokens in the pool than previously. As there would be more datatokens, the pool will decrease the amount of Ocean tokens required to buy a datatoken in the following transactions to maintain the constant ratio between tokens. Thus, the price of the datatoken decreases whenever datatokens are sold.
 
 ## Free pricing
 
