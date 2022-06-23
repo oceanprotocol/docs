@@ -368,7 +368,7 @@ An asset with a service of `type` `compute` has the following additional attribu
             <tr>
               <td>Array of <code>string</code></td>
               <td><b>✓</b></td>
-              <td>If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed.</td>
+              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty, any algo published by this publisher is allowed.</td>
             </tr>
           </tbody>
         </table>
@@ -386,7 +386,7 @@ An asset with a service of `type` `compute` has the following additional attribu
             <tr>
               <td>Array of <code>publisherTrustedAlgorithms</code></td>
               <td><b>✓</b></td>
-              <td>If empty, then any published algorithm is allowed. (see below).</td>
+              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed. (see below).</td>
             </tr>
           </tbody>
         </table>
