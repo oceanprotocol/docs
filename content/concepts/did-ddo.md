@@ -403,7 +403,8 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 | **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as `string`).                        |
 | **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's `metadata.algorithm.container` section (as `string`). |
 
-To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True
+To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True.
+If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie:  checksumFile1+checksumFile2 , etc)
 
 To produce `containerSectionChecksum`:
 
