@@ -223,14 +223,12 @@ Supported storage object types:
 <th>Example</th>
 </tr>
 
-<tr><td><code>url</code></td>
-<td><code>value</code> is the static URL. Optionally includes HTTP method and headers.</td>
-<td>
+<tr><td><code>url</code></td><td>Static URL. Optional HTTP method and headers.</td><td>
 
 ```json
 {
   "type": "url",
-  "value": "https://url.com/file1.csv",
+  "url": "https://url.com/file1.csv",
   "method": "GET",
   "headers": [
     {"Authorization": "Bearer 123"},
@@ -241,12 +239,12 @@ Supported storage object types:
 
 </td></tr>
 
-<tr><td><code>arweave</code></td><td><code>value</code> is the Arweave transaction ID.</td><td>
+<tr><td><code>arweave</code></td><td>Arweave transaction ID.</td><td>
 
 ```json
 {
   "type": "arweave",
-  "value": "cZ6j5PmPVXCq5Az6YGcGqzffYjx2JnsnlSajaHNr20w"
+  "transactionId": "cZ6j5PmPVXCq5Az6YGcGqzffYjx2JnsnlSajaHNr20w"
 }
 ```
 
@@ -262,13 +260,13 @@ First class integrations supported in the future :
 <th>Description</th>
 <th>Example</th>
 </tr>
-<tr><td><code>ipfs</code></td><td><code>value</code> is the IPFS file hash.</td>
+<tr><td><code>ipfs</code></td><td>IPFS file hash.</td>
 <td>
 
 ```json
 {
   "type": "ipfs",
-  "value": "XXX"
+  "hash": "XXX"
 }
 ```
 
@@ -289,12 +287,12 @@ Example:
   "files": [
     {
       "type": "url",
-      "value": "https://url.com/file1.csv",
+      "url": "https://url.com/file1.csv",
       "method": "GET"
     },
     {
       "type": "arweave",
-      "value": "cZ6j5PmPVXCq5Az6YGcGqzffYjx2JnsnlSajaHNr20w"
+      "transactionId": "cZ6j5PmPVXCq5Az6YGcGqzffYjx2JnsnlSajaHNr20w"
     }
   ]
 }
@@ -310,7 +308,7 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
     "contentType": "application/json"
   },
   {
-    "type": "ipfs",
+    "type": "arweave",
     "contentLength": 130,
     "contentType": "application/text"
   }
