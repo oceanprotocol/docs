@@ -215,8 +215,8 @@ During the publish process, file URLs must be encrypted with a respective _Provi
 where "files" is an array of one or more storage objects.
 
 Supported storage object types:
-<table>
 
+<table>
 <tr>
 <th>Type</th>
 <th>Description</th>
