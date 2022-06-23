@@ -400,8 +400,8 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 | Attribute                      | Type     | Required | Description                                                               |
 | ------------------------------ | -------- | -------- | ------------------------------------------------------------------------- |
 | **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.               |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as `string`).                        |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's `metadata.algorithm.container` section (as `string`). |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                        |
+| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`). |
 
 To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True.
 If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie:  checksumFile1+checksumFile2 , etc)
@@ -409,7 +409,7 @@ If algorithm has multiple files, `filesChecksum` is a concatenated string of all
 To produce `containerSectionChecksum`:
 
 ```js
-sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum))
+sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum)
 ```
 
 Example:
