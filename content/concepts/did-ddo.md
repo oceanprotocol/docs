@@ -142,7 +142,7 @@ The `container` object has the following attributes defining the Docker image fo
 | **`entrypoint`** | `string` | **✓**    | The command to execute, or script to run inside the Docker image. |
 | **`image`**      | `string` | **✓**    | Name of the Docker image.                                         |
 | **`tag`**        | `string` | **✓**    | Tag of the Docker image.                                          |
-| **`checksum`**   | `string` | **✓**    | Checksum of the Docker image.                                     |
+| **`checksum`**   | `string` | **✓**    | Digest of the Docker image.    (ie: sha256:xxxxx)                  |
 
 ```json
 {
@@ -161,7 +161,7 @@ The `container` object has the following attributes defining the Docker image fo
         "entrypoint": "node $ALGO",
         "image": "ubuntu",
         "tag": "latest",
-        "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
+        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
       },
       "consumerParameters": {}
     }
