@@ -50,19 +50,19 @@ With one-sided staking, when liquidity is added to the pool, the ocean tokens ar
 
 #### Action: Remove liquidity
 
-When the liquidity is removed from the pool, the Ocean tokens are returned to the respective address. Ocean protocol's bot burns the datatokens from the liquidity pool to protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool. Thus, even in this case, there is no price impact on the datatoken.
+When the liquidity is removed from the pool, the Ocean tokens are returned to the liquidity provider who initiated the action. Ocean protocol's bot burns the datatokens from the liquidity pool to protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool. Thus, even in this case, there is no price impact on the datatoken.
 
 #### Action: Buy datatoken
 
-When a datatoken is bought by paying Ocean tokens to the pool, the ratio of Ocean token and datatoken changes, there are more Ocean tokens and fewer datatokens in the liquidity pool. Therefore, as the ratio of datatokens/Ocean tokens changes, the liquidity pool increases the amount of Ocean tokens required to buy a datatoken in the following transactions(to maintain a constant ratio). Thus, the price of the datatoken increases whenever a datatoken is bought.
+When a datatoken is bought by paying Ocean tokens to the pool, the ratio of Ocean token and datatoken changes: there are more Ocean tokens and fewer datatokens in the liquidity pool. Therefore, as the ratio of datatokens/Ocean tokens changes, the liquidity pool increases the amount of Ocean tokens required to buy a datatoken in the following transactions(to maintain a constant ratio). Thus, the price of the datatoken increases whenever a datatoken is bought.
 
 #### Action: Buy dataset
 
-Buying a dataset involves swapping a datatoken from the pool by paying Ocean tokens. Thus, if users buy datatokens, the price of datatokens will increase. However, if users already have the datatokens, they can use them to buy the asset or the service without requiring interaction with the pool. In such a case, the price of the datatoken doesn't change.
+Buying a dataset involves swapping a datatoken from the liquidity pool by paying Ocean tokens. Thus, if users buy datatokens, the price of datatokens will increase. However, if users already have the datatokens, they can use them to buy the asset or the service without requiring interaction with the pool. In such a case, the price of the datatoken doesn't change.
 
 #### Action: Sell datatoken
 
-When a datatoken is sold, Ocean tokens are removed from the liquidity pool in exchange for datatoken. Thus, the ratio of Ocean tokens and datatokens changes: there would be fewer Ocean tokens and more datatokens in the liquidity pool. As there would be more datatokens, the pool decreases the amount of Ocean tokens required to buy a datatoken in the following transactions(to maintain the constant ratio). Thus, the price of the datatoken decreases whenever a datatoken is sold.
+When a datatoken is sold, Ocean tokens are removed from the liquidity pool in exchange for datatoken. Thus, the ratio of Ocean tokens and datatokens changes: there are fewer Ocean tokens and more datatokens in the liquidity pool. As there are more datatokens, the liquidity pool decreases the amount of Ocean tokens required to buy a datatoken in the following transactions(to maintain a constant ratio). Thus, the price of the datatoken decreases whenever a datatoken is sold.
 
 ## Free pricing
 
