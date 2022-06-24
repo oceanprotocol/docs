@@ -46,11 +46,11 @@ Ocean Protocol also allows publishers to set the pricing using ocean.js and ocea
 
 #### Action: Add liquidity
 
-With one-sided staking, when liquidity is added to the pool, the ocean tokens are added to the liquidity pool. To protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool, Ocean protocol's bot mints new datatokens and adds them to the pool. Thus, when liquidity is added to the pool, the ratio of tokens remains constant, and there is no price impact on the datatoken.
+With one-sided staking, when liquidity is added to the pool, the ocean tokens are added to the liquidity pool. To protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool, Ocean Protocol's bot mints new datatokens and adds them to the pool. Thus, when liquidity is added to the pool, the ratio of tokens remains constant, and there is no price impact on the datatoken.
 
 #### Action: Remove liquidity
 
-When the liquidity is removed from the pool, the Ocean tokens are returned to the liquidity provider who initiated the action. Ocean protocol's bot burns the datatokens from the liquidity pool to protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool. Thus, even in this case, there is no price impact on the datatoken.
+When the liquidity is removed from the pool, the Ocean tokens are returned to the liquidity provider who initiated the action. Ocean Protocol's bot burns the datatokens from the liquidity pool to protect funds from impermanent loss due to changes in the ratio of tokens in the liquidity pool. Thus, even in this case, there is no price impact on the datatoken.
 
 #### Action: Buy datatoken
 
