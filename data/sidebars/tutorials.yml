@@ -51,12 +51,3 @@
       link: /tutorials/compute-to-data-algorithms/
     - title: Setting up docker registry
       link: /tutorials/compute-to-data-docker-registry/
-
-- group: Fine-Grained Permissions
-  items:
-    - title: Overview
-      link: /tutorials/permissions
-    - title: Market-Level Permissions
-      link: /tutorials/market-level-permissions
-    - title: Asset-Level Permissions
-      link: /tutorials/asset-level-permissions
