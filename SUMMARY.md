@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Orientation](README.md)
+* [API references](api-references/README.md)
+  * [Aquarius REST API](api-references/aquarius-rest-api.md)
+  * [Provider REST API](api-references/provider-rest-api.md)
 * [Core Concepts](core-concepts/README.md)
   * [Architecture Overview](core-concepts/architecture.md)
   * [Asset pricing](core-concepts/asset-pricing.md)
