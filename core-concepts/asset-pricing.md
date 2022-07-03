@@ -19,7 +19,7 @@ Publishers can choose this fixed pricing model when they do not want Automated M
 
 The image below shows how to set the fixed pricing of an asset in the Ocean's Marketplace. Here, the price of the asset is set to 10 Ocean tokens.
 
-![fixed-asset-pricing](<images/fixed-asset-pricing (1).png>)
+![fixed-asset-pricing](<images/fixed-asset-pricing (1) (1).png>)
 
 ### Dynamic pricing
 
@@ -39,7 +39,7 @@ Publishers can set the pricing model of an asset to Dynamic pricing if they want
 
 The image below shows how to set the Dynamic pricing of an asset in the Ocean's Marketplace. Here, the asset price is initially set to 50 Ocean tokens.
 
-![dynamic-asset-pricing](<images/dynamic-asset-pricing (1).png>)
+![dynamic-asset-pricing](<images/dynamic-asset-pricing (1) (1).png>)
 
 Ocean Protocol also allows publishers to set the pricing using ocean.js and ocean.py library.
 
@@ -75,4 +75,4 @@ Free pricing is suitable for individuals and organizations working in the public
 
 The image below shows how to set free access to an asset in the Ocean's Marketplace.
 
-![free-asset-pricing](<images/free-asset-pricing (1).png>)
+![free-asset-pricing](<images/free-asset-pricing (1) (1).png>)
