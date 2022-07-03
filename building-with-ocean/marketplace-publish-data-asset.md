@@ -3,85 +3,77 @@ title: Publish a data asset
 description: Tutorial to publish assets using the Ocean Market
 ---
 
-## What can be published?
+# Publish a data asset
+
+### What can be published?
 
 Ocean Market provides a convenient interface for individuals and organizations to publish their data. Datasets can be images, location information, audio, video, sales data, or combinations of all! There is no exhaustive list of what type of data can be published on the Market. Please note the Ocean Protocol team maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
 
-## Tutorial
+### Tutorial
 
-### Connect wallet and navigate to the publish page
+#### Connect wallet and navigate to the publish page
 
-1. Go to <a href="https://v4.market.oceanprotocol.com " target="_blank">Ocean Market</a>
+1. Go to [Ocean Market](https://v4.market.oceanprotocol.com)
+2.  Connect wallet.
 
-2. Connect wallet.
+    <img src="images/marketplace/connect-wallet.png" alt="connect wallet" data-size="original">
 
-   ![connect wallet](images/marketplace/connect-wallet.png 'Connect wallet')
+    In this tutorial, we will be using the Rinkeby test network.
+3.  Go to the publish page.
 
-   In this tutorial, we will be using the Rinkeby test network.
+    <img src="images/marketplace/publish.png" alt="publish page" data-size="original">
 
-3. Go to the publish page.
-
-   ![publish page](images/marketplace/publish.png 'Publish page')
-
-### Step 1 - Metadata
+#### Step 1 - Metadata
 
 Fill in the metadata.
 
-_Mandatory fields are marked with <span style="color: red;">\*</span>_
+_Mandatory fields are marked with \*_
 
-- **Asset type**<span style="color: red;">\*</span>
+*   **Asset type**\*
 
-  An asset can be a _dataset_ or an _algorithm_. The asset type cannot be changed after publication.
+    An asset can be a _dataset_ or an _algorithm_. The asset type cannot be changed after publication.
+*   **Title**\*
 
-- **Title**<span style="color: red;">\*</span>
+    The descriptive name of the asset. This field is editable after the asset publication.
+*   **Description**\*
 
-  The descriptive name of the asset. This field is editable after the asset publication.
+    Description of the asset. Ocean Marketplace supports plain text and Markdown format for the description field. This field is editable after the asset publication.
+*   **Author**\*
 
-- **Description**<span style="color: red;">\*</span>
+    The author of the asset. The author can be an individual or an organization. This field is editable after the asset publication.
+*   **Tags**
 
-  Description of the asset. Ocean Marketplace supports plain text and Markdown format for the description field. This field is editable after the asset publication.
+    Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
 
-- **Author**<span style="color: red;">\*</span>
+![publish part-1](images/marketplace/publish-1.png)
 
-  The author of the asset. The author can be an individual or an organization. This field is editable after the asset publication.
+#### Step 2 - Access details
 
-- **Tags**
+_Mandatory fields are marked with \*_
 
-  Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
+*   **Access Type**\*
 
-![publish part-1](images/marketplace/publish-1.png 'Asset metadata')
+    An asset can be a downloadable file or a compute service on which buyers can run their algorithm. Through **download**, buyers will be able to download the dataset. Through **compute**, buyers will be able to use the dataset in a compute-to-data environment.
+*   **Provider URL**\*
 
-### Step 2 - Access details
+    Provider facilitates the asset download to buyers or for computing jobs and much more.
+*   **File**\*
 
-_Mandatory fields are marked with <span style="color: red;">\*</span>_
+    The direct URL of the dataset to be published. The file needs to be publicly accessible to be downloadable by buyers. If the file is hosted on services like Google Drive, the URL provided needs to point directly to the data asset file. Also, the file needs to have the proper permissions to be downloaded by anybody.
 
-- **Access Type**<span style="color: red;">\*</span>
+    **Provider** encrypts this field before publishing the asset on-chain.
+*   **Sample file**
 
-  An asset can be a downloadable file or a compute service on which buyers can run their algorithm. Through **download**, buyers will be able to download the dataset. Through **compute**, buyers will be able to use the dataset in a compute-to-data environment.
+    An optional field through which publishers provide a sample file of the dataset they want to publish. The buyers can access it before buying the dataset. This field is editable after the asset publication.
 
-- **Provider URL**<span style="color: red;">\*</span>
+    **Provider** encrypts this field before publishing the asset on-chain.
+*   **Timeout**\*
 
-  Provider facilitates the asset download to buyers or for computing jobs and much more.
+    This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
 
-- **File**<span style="color: red;">\*</span>
+![publish part-2](images/marketplace/publish-2.png)
 
-  The direct URL of the dataset to be published. The file needs to be publicly accessible to be downloadable by buyers. If the file is hosted on services like Google Drive, the URL provided needs to point directly to the data asset file. Also, the file needs to have the proper permissions to be downloaded by anybody.
-
-  **Provider** encrypts this field before publishing the asset on-chain.
-
-- **Sample file**
-
-  An optional field through which publishers provide a sample file of the dataset they want to publish. The buyers can access it before buying the dataset. This field is editable after the asset publication.
-
-  **Provider** encrypts this field before publishing the asset on-chain.
-
-- **Timeout**<span style="color: red;">\*</span>
-
-  This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
-
-![publish part-2](images/marketplace/publish-2.png 'Access details')
-
-### Step 3 - Pricing
+#### Step 3 - Pricing
 
 The publisher needs to choose a pricing option for the asset before publishing the data asset. The pricing schema is not editable after the asset publication.
 
@@ -97,38 +89,40 @@ With the _free pricing_ schema, the publisher provides an asset that is free to 
 
 With the _dynamic pricing_ schema, the publisher sets the asset price and creates a datatoken liquidity pool with an initial amount of OCEAN tokens.
 
-For more information on the pricing models, please refer this [document](/concepts/asset-pricing/).
+For more information on the pricing models, please refer this [document](../concepts/asset-pricing/).
 
 The publisher can also change the **Swap Fee** of the liquidity pool.
 
-For a deep dive into the fee structure, please refer to this [document](/concepts/fees/).
+For a deep dive into the fee structure, please refer to this [document](../concepts/fees/).
 
-![publish part-3](images/marketplace/publish-3.png 'Dynamic pricing')
+![publish part-3](images/marketplace/publish-3.png)
 
-### Step 4 - Preview
+#### Step 4 - Preview
 
-![publish part-4](images/marketplace/publish-4.png 'Preview')
+![publish part-4](images/marketplace/publish-4.png)
 
-### Step 5 - Blockchain transactions
+#### Step 5 - Blockchain transactions
 
-![publish part-5](images/marketplace/publish-5.png 'Transaction 1 - Allow access to Ocean tokens')
+![publish part-5](images/marketplace/publish-5.png)
 
-<br />
+\
 
-![publish part-6](images/marketplace/publish-6.png 'Transaction 2 - Deploy data NFT and datatoken')
 
-<br />
+![publish part-6](images/marketplace/publish-6.png)
 
-![publish part-7](images/marketplace/publish-7.png 'Transaction 3 - Publish DDO')
+\
 
-### Confirmation
+
+![publish part-7](images/marketplace/publish-7.png)
+
+#### Confirmation
 
 Now, the asset is successfully published and available in the Ocean Market.
 
-![publish success](images/marketplace/publish-8.png 'Successful publish')
+![publish success](images/marketplace/publish-8.png)
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), the publisher has access to all his published assets.
 
-## Other Articles
+### Other Articles
 
 https://blog.oceanprotocol.com/on-selling-data-in-ocean-market-9afcfa1e6e43

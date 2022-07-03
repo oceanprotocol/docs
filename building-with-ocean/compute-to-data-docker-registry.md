@@ -1,30 +1,33 @@
 ---
 title: Setting up private docker registry for Compute-to-Data environment
-description: Learn how to setup your own docker registry and push images for running algorithms in a C2D environment.
+description: >-
+  Learn how to setup your own docker registry and push images for running
+  algorithms in a C2D environment.
 ---
+
+# Setting up private docker registry for Compute-to-Data environment
 
 The document is intended for a production setup. The tutorial provides the steps to setup a private docker registry on the server for the following scenarios:
 
-- Allow registry access only to the C2D environment.
-- Anyone can pull the image from the registry but, only authenticated users will push images to the registry.
+* Allow registry access only to the C2D environment.
+* Anyone can pull the image from the registry but, only authenticated users will push images to the registry.
 
-## Setup 1: Allow registry access only to the C2D environment
-
+### Setup 1: Allow registry access only to the C2D environment
 
 To implement this use case, 1 domain will be required:
 
-- **example.com**: This domain will allow only image pull operations
+* **example.com**: This domain will allow only image pull operations
 
 _Note: Please change the domain names to your application-specific domain names._
 
-### 1.1 Prerequisites
+#### 1.1 Prerequisites
 
-- Running docker environment on the linux server.
-- Docker compose is installed.
-- C2D environment is running.
-- The domain names is mapped to the server hosting the registry.
+* Running docker environment on the linux server.
+* Docker compose is installed.
+* C2D environment is running.
+* The domain names is mapped to the server hosting the registry.
 
-### 1.2 Generate certificates
+#### 1.2 Generate certificates
 
 ```bash
 # install certbot: https://certbot.eff.org/
@@ -33,7 +36,7 @@ sudo certbot certonly --standalone --cert-name example.com -d example.com
 
 _Note: Do check the access right of the files/directories where certificates are stored. Usually, they are at `/etc/letsencrypt/`._
 
-### 1.3 Generate password file
+#### 1.3 Generate password file
 
 Replace content in `<>` with appropriate content.
 
@@ -43,7 +46,7 @@ docker run \
   httpd:2 -Bbn <username> <password> > <path>/auth/htpasswd
 ```
 
-### 1.4 Docker compose template file for registry
+#### 1.4 Docker compose template file for registry
 
 Copy the below yml content to `docker-compose.yml` file and replace content in `<>`.
 
@@ -79,11 +82,11 @@ services:
             - registry
 ```
 
-### 1.5 Nginx configuration
+#### 1.5 Nginx configuration
 
 Copy the below nginx configuration to a `nginx.conf` file.
 
-```conf
+```
 events {}
 http {
   access_log /app/logs/access.log;
@@ -109,10 +112,9 @@ http {
           }
   }
 }
-
 ```
 
-### 1.6 Create kubernetes secret in C2D server
+#### 1.6 Create kubernetes secret in C2D server
 
 Login into Compute-to-data enviroment and run the following command with appropriate credentials:
 
@@ -120,10 +122,9 @@ Login into Compute-to-data enviroment and run the following command with appropr
 kubectl create secret docker-registry regcred --docker-server=example.com --docker-username=<username> --docker-password=<password> --docker-email=<email_id> -n ocean-compute
 ```
 
-### 1.7 Update operator-engine configuration
+#### 1.7 Update operator-engine configuration
 
-Add `PULL_SECRET` property with value `regcred` in the [operator.yml](https://github.com/oceanprotocol/operator-engine/blob/main/kubernetes/operator.yml) file of operator-engine configuration.
-For more detials on operator-engine properties refer this [link](https://github.com/oceanprotocol/operator-engine/blob/177ca7185c34aa2a503afbe026abb19c62c69e6d/README.md?plain=1#L106)
+Add `PULL_SECRET` property with value `regcred` in the [operator.yml](https://github.com/oceanprotocol/operator-engine/blob/main/kubernetes/operator.yml) file of operator-engine configuration. For more detials on operator-engine properties refer this [link](https://github.com/oceanprotocol/operator-engine/blob/177ca7185c34aa2a503afbe026abb19c62c69e6d/README.md?plain=1#L106)
 
 Apply updated operator-engine configuration.
 
@@ -132,22 +133,22 @@ kubectl config set-context --current --namespace ocean-compute
 kubectl apply  -f operator-engine/kubernetes/operator.yml
 ```
 
-## Steup 2: Allow anyonymous `pull` operations
+### Steup 2: Allow anyonymous `pull` operations
 
 To implement this use case, 2 domains will be required:
 
-- **example.com**: This domain will allow image push/pull operations only to the authenticated users.
-- **readonly.example.com**: This domain will allow only image pull operations
+* **example.com**: This domain will allow image push/pull operations only to the authenticated users.
+* **readonly.example.com**: This domain will allow only image pull operations
 
 _Note: Please change the domain names to your application-specific domain names._
 
-### 2.1 Prerequisites
+#### 2.1 Prerequisites
 
-- Running docker environment on the linux server.
-- Docker compose is installed.
-- 2 domain names is mapped to the same server IP address.
+* Running docker environment on the linux server.
+* Docker compose is installed.
+* 2 domain names is mapped to the same server IP address.
 
-### 2.2 Generate certificates
+#### 2.2 Generate certificates
 
 ```bash
 # install certbot: https://certbot.eff.org/
@@ -157,7 +158,7 @@ sudo certbot certonly --standalone --cert-name readonly.example.com -d readonly.
 
 _Note: Do check the access right of the files/directories where certificates are stored. Usually, they are at `/etc/letsencrypt/`._
 
-### 2.3 Generate password file
+#### 2.3 Generate password file
 
 Replace content in `<>` with appropriate content.
 
@@ -167,10 +168,9 @@ docker run \
   httpd:2 -Bbn <username> <password> > <path>/auth/htpasswd
 ```
 
-### 2.4 Docker compose template file for registry
+#### 2.4 Docker compose template file for registry
 
-Copy the below yml content to `docker-compose.yml` file and replace content in `<>`.
-Here, we will be creating two services of the docker registry so that anyone can `pull` the images from the registry but, only authenticated users can `push` the images.
+Copy the below yml content to `docker-compose.yml` file and replace content in `<>`. Here, we will be creating two services of the docker registry so that anyone can `pull` the images from the registry but, only authenticated users can `push` the images.
 
 ```yml
 version: '3'
@@ -217,11 +217,11 @@ services:
             - registry-read-only
 ```
 
-### 2.5 Nginx configuration
+#### 2.5 Nginx configuration
 
 Copy the below nginx configuration to a `nginx.conf` file.
 
-```conf
+```
 events {}
 http {
   access_log /app/logs/access.log;
@@ -260,24 +260,23 @@ http {
           }
   }
 }
-
 ```
 
-## Start the registry
+### Start the registry
 
 ```bash
 docker-compose -f docker-compose.yml up 
 ```
 
-## Working with registry
+### Working with registry
 
-### Login to registry
+#### Login to registry
 
 ```bash
 docker login example.com -u <username> -p <password>
 ```
 
-### Build and push an image to the registry
+#### Build and push an image to the registry
 
 Use the commands below to build an image from a `Dockerfile` and push it to your private registry.
 
@@ -286,13 +285,13 @@ docker build . -t example.com/my-algo:latest
 docker image push example.com/my-algo:latest
 ```
 
-### List images in the registry
+#### List images in the registry
 
 ```bash
 curl -X GET -u <username>:<password> https://example.com/v2/_catalog
 ```
 
-### Pull an image from the registry
+#### Pull an image from the registry
 
 Use the commands below to build an image from a `Dockerfile` and push it to your private registry.
 
@@ -303,16 +302,14 @@ docker image pull example.com/my-algo:latest
 # allows anonymous pull if 2nd setup scenario is implemented
 docker image pull readonly.example.com/my-algo:latest
 
-
 ```
 
-### Next step
+#### Next step
 
 You can publish an algorithm asset with the metadata containing registry URL, image, and tag information to enable users to run C2D jobs.
 
+### Further references
 
-## Further references
-
-- [Setup Compute-to-Data environment](/tutorials/compute-to-data-minikube/)
-- [Writing algorithms](/tutorials/compute-to-data-algorithms/)
-- [C2D example](/references/read-the-docs/ocean-py/READMEs/c2d-flow.md)
+* [Setup Compute-to-Data environment](../tutorials/compute-to-data-minikube/)
+* [Writing algorithms](../tutorials/compute-to-data-algorithms/)
+* [C2D example](../references/read-the-docs/ocean-py/READMEs/c2d-flow.md)

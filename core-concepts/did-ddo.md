@@ -1,13 +1,17 @@
 ---
 title: DID & DDO
-description: Specification of decentralized identifiers for assets in Ocean Protocol using the DID & DDO standards.
 slug: /concepts/did-ddo/
 section: concepts
+description: >-
+  Specification of decentralized identifiers for assets in Ocean Protocol using
+  the DID & DDO standards.
 ---
+
+# DID & DDO
 
 **v4.1.0**
 
-## Overview
+### Overview
 
 This document describes how Ocean assets follow the DID/DDO specification, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
@@ -15,26 +19,27 @@ Decentralized identifiers (DIDs) are a type of identifier that enable verifiable
 
 A DID Document (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
-## Rules for DID & DDO
+### Rules for DID & DDO
 
 An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under the control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
-An _asset_ has a DID and DDO. The DDO should include [metadata](#metadata) about the asset, and define access in at least one [service](#services). Only _owners_ or _delegated users_ can modify the DDO.
+An _asset_ has a DID and DDO. The DDO should include [metadata](did-ddo.md#metadata) about the asset, and define access in at least one [service](did-ddo.md#services). Only _owners_ or _delegated users_ can modify the DDO.
 
 All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like _Aquarius_ can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
 
-## Publishing & Retrieving DDOs
+### Publishing & Retrieving DDOs
 
 The DDO is stored on-chain as part of the NFT contract and stored in encrypted form using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
 Here is the flow:
 
-![DDO flow](images/ddo-flow.png)
+![DDO flow](<images/ddo-flow (1).png>)
 
 <details>
-  <summary>UML source</summary>
 
-```text
+<summary>UML source</summary>
+
+```
 title DDO flow
 
 User(Ocean library) -> User(Ocean library): Prepare DDO
@@ -54,11 +59,11 @@ Aquarius -> Aquarius : enhance cached DDO in response with additional infos like
 
 </details>
 
-## DID
+### DID
 
 In Ocean, a DID is a string that looks like this:
 
-```text
+```
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
@@ -72,41 +77,41 @@ console.log(checksum)
 
 It follows [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
-## DDO
+### DDO
 
 A DDO in Ocean has these required attributes:
 
-| Attribute         | Type                        | Description                                                                                                    |
-| ----------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **`@context`**    | Array of `string`           | Contexts used for validation.                                                                                  |
-| **`id`**          | `string`                    | Computed as `sha256(address of ERC721 contract + chainId)`.                                                    |
-| **`version`**     | `string`                    | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.1.0`. |
-| **`chainId`**     | `number`                    | Stores chainId of the network the DDO was published to.                                                        |
-| **`nftAddress`**  | `string`                    | NFT contract linked to this asset                                                                              |
-| **`metadata`**    | [Metadata](#metadata)       | Stores an object describing the asset.                                                                         |
-| **`services`**    | [Services](#services)       | Stores an array of services defining access to the asset.                                                      |
-| **`credentials`** | [Credentials](#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
+| Attribute         | Type                                  | Description                                                                                                    |
+| ----------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **`@context`**    | Array of `string`                     | Contexts used for validation.                                                                                  |
+| **`id`**          | `string`                              | Computed as `sha256(address of ERC721 contract + chainId)`.                                                    |
+| **`version`**     | `string`                              | Version information in [SemVer](https://semver.org) notation referring to this DDO spec version, like `4.1.0`. |
+| **`chainId`**     | `number`                              | Stores chainId of the network the DDO was published to.                                                        |
+| **`nftAddress`**  | `string`                              | NFT contract linked to this asset                                                                              |
+| **`metadata`**    | [Metadata](did-ddo.md#metadata)       | Stores an object describing the asset.                                                                         |
+| **`services`**    | [Services](did-ddo.md#services)       | Stores an array of services defining access to the asset.                                                      |
+| **`credentials`** | [Credentials](did-ddo.md#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
 
-### Metadata
+#### Metadata
 
 This object holds information describing the actual asset.
 
-| Attribute                   | Type                                      | Required                          | Description                                                                                                                                                                                       |
-| --------------------------- | ----------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`created`**               | `ISO date/time string`                    |                                   | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
-| **`updated`**               | `ISO date/time string`                    |                                   | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
-| **`description`**           | `string`                                  | **✓**                             | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
-| **`copyrightHolder`**       | `string`                                  |                                   | The party holding the legal copyright. Empty by default.                                                                                                                                          |
-| **`name`**                  | `string`                                  | **✓**                             | Descriptive name or title of the asset.                                                                                                                                                           |
-| **`type`**                  | `string`                                  | **✓**                             | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
-| **`author`**                | `string`                                  | **✓**                             | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
-| **`license`**               | `string`                                  | **✓**                             | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
-| **`links`**                 | Array of `string`                         |                                   | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
-| **`contentLanguage`**       | `string`                                  |                                   | The language of the content. Use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                                     |
-| **`tags`**                  | Array of `string`                         |                                   | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
-| **`categories`**            | Array of `string`                         |                                   | Array of categories associated to the asset. Note: recommended to use `tags` instead of this.                                                                                                     |
-| **`additionalInformation`** | Object                                    |                                   | Stores additional information, this is customizable by publisher                                                                                                                                  |
-| **`algorithm`**             | [Algorithm Metadata](#algorithm-metadata) | **✓** (for algorithm assets only) | Information about asset of `type` `algorithm`                                                                                                                                                     |
+| Attribute                   | Type                                                | Required                          | Description                                                                                                                                                                                       |
+| --------------------------- | --------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`created`**               | `ISO date/time string`                              |                                   | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
+| **`updated`**               | `ISO date/time string`                              |                                   | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
+| **`description`**           | `string`                                            | **✓**                             | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
+| **`copyrightHolder`**       | `string`                                            |                                   | The party holding the legal copyright. Empty by default.                                                                                                                                          |
+| **`name`**                  | `string`                                            | **✓**                             | Descriptive name or title of the asset.                                                                                                                                                           |
+| **`type`**                  | `string`                                            | **✓**                             | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
+| **`author`**                | `string`                                            | **✓**                             | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
+| **`license`**               | `string`                                            | **✓**                             | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
+| **`links`**                 | Array of `string`                                   |                                   | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
+| **`contentLanguage`**       | `string`                                            |                                   | The language of the content. Use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                                     |
+| **`tags`**                  | Array of `string`                                   |                                   | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
+| **`categories`**            | Array of `string`                                   |                                   | Array of categories associated to the asset. Note: recommended to use `tags` instead of this.                                                                                                     |
+| **`additionalInformation`** | Object                                              |                                   | Stores additional information, this is customizable by publisher                                                                                                                                  |
+| **`algorithm`**             | [Algorithm Metadata](did-ddo.md#algorithm-metadata) | **✓** (for algorithm assets only) | Information about asset of `type` `algorithm`                                                                                                                                                     |
 
 Example:
 
@@ -124,16 +129,16 @@ Example:
 }
 ```
 
-#### Algorithm Metadata
+**Algorithm Metadata**
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute                | Type                                        | Required | Description                                                                                |
-| ------------------------ | ------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
-| **`language`**           | `string`                                    |          | Language used to implement the software.                                                   |
-| **`version`**            | `string`                                    |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters) |          | An object that defines required consumer input before running the algorithm                 |
-| **`container`**          | `container`                                 | **✓**    | Object describing the Docker container image. See below                                    |
+| Attribute                | Type                                                  | Required | Description                                                                                |
+| ------------------------ | ----------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
+| **`language`**           | `string`                                              |          | Language used to implement the software.                                                   |
+| **`version`**            | `string`                                              |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) |          | An object that defines required consumer input before running the algorithm                |
+| **`container`**          | `container`                                           | **✓**    | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
@@ -142,7 +147,7 @@ The `container` object has the following attributes defining the Docker image fo
 | **`entrypoint`** | `string` | **✓**    | The command to execute, or script to run inside the Docker image. |
 | **`image`**      | `string` | **✓**    | Name of the Docker image.                                         |
 | **`tag`**        | `string` | **✓**    | Tag of the Docker image.                                          |
-| **`checksum`**   | `string` | **✓**    | Digest of the Docker image.    (ie: sha256:xxxxx)                  |
+| **`checksum`**   | `string` | **✓**    | Digest of the Docker image. (ie: sha256:xxxxx)                    |
 
 ```json
 {
@@ -169,28 +174,27 @@ The `container` object has the following attributes defining the Docker image fo
 }
 ```
 
-### Services
+#### Services
 
 Services define the access for an asset, and each service is represented by its respective datatoken.
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute              | Type                        | Required                        | Description                                                                                                                                  |
-| ---------------------- | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`id`**               | `string`                    | **✓**                           | Unique ID                                                                                                                                    |
-| **`type`**             | `string`                    | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
-| **`name`**             | `string`                    |                                 | Service friendly name                                                                                                                        |
-| **`description`**      | `string`                    |                                 | Service description                                                                                                                          |
-| **`datatokenAddress`** | `string`                    | **✓**                           | Datatoken address                                                                                                                            |
-| **`serviceEndpoint`**  | `string`                    | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**            | [Files](#files)             | **✓**                           | Encrypted file URLs.                                                                                                                         |
-| **`timeout`**          | `number`                    | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`compute`**          | [Compute](#compute-options) | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
-| **`consumerParameters`** | [Consumer Parameters](#consumer-parameters)    |          | An object the defines required consumer input before consuming the asset|
-| **`additionalInformation`** | Object                                    |                                   | Stores additional information, this is customizable by publisher                                                         |
+| Attribute                   | Type                                                  | Required                        | Description                                                                                                                                  |
+| --------------------------- | ----------------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`id`**                    | `string`                                              | **✓**                           | Unique ID                                                                                                                                    |
+| **`type`**                  | `string`                                              | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
+| **`name`**                  | `string`                                              |                                 | Service friendly name                                                                                                                        |
+| **`description`**           | `string`                                              |                                 | Service description                                                                                                                          |
+| **`datatokenAddress`**      | `string`                                              | **✓**                           | Datatoken address                                                                                                                            |
+| **`serviceEndpoint`**       | `string`                                              | **✓**                           | Provider URL (schema + host)                                                                                                                 |
+| **`files`**                 | [Files](did-ddo.md#files)                             | **✓**                           | Encrypted file URLs.                                                                                                                         |
+| **`timeout`**               | `number`                                              | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`compute`**               | [Compute](did-ddo.md#compute-options)                 | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
+| **`consumerParameters`**    | [Consumer Parameters](did-ddo.md#consumer-parameters) |                                 | An object the defines required consumer input before consuming the asset                                                                     |
+| **`additionalInformation`** | Object                                                |                                 | Stores additional information, this is customizable by publisher                                                                             |
 
-
-#### Files
+**Files**
 
 The `files` field is returned as a `string` which holds the encrypted file URLs.
 
@@ -203,6 +207,7 @@ Example:
 ```
 
 During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider:
+
 ```json
 {
   "datatokenAddress":"0x1",
@@ -212,22 +217,14 @@ During the publish process, file URLs must be encrypted with a respective _Provi
   ]
 }
 ```
+
 where "files" contains one or more storage objects.
 
 Type of objects supported :
 
-<table>
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<td><code>url</code></td>
-<td>Static URL.  Contains url and HTTP method</td>
-<td>
-
-```json
-[
+| Type  | Description                              | Example                                                                                                                                                                                                                                                       |
+| ----- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `url` | Static URL. Contains url and HTTP method | <pre class="language-json"><code class="lang-json">[
   {
     "type": "url",
     "url": "https://url.com/file1.csv",
@@ -238,40 +235,22 @@ Type of objects supported :
        {"APIKEY": "124"},
       ]
   }
-]
-```
-
-</td>
-</tr></table>
+]</code></pre> |
 
 First class integrations supported in the future :
 
-<table>
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td><code>ipfs</code></td><td>IPFS files</td>
-<td>
-
-```json
-[
+| Type       | Description                                     | Example                                                                                                           |
+| ---------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `ipfs`     | IPFS files                                      | <pre class="language-json"><code class="lang-json">[
   {
     "type": "ipfs",
     "hash": "XXX"
   }
-]
-```
-
-</td>
-
-<tr><td><code>filecoin</code></td><td>Filecoin storage</td><td>&nbsp;</td></tr>
-<tr><td><code>arwave</code></td><td>Arwave</td><td>&nbsp;</td></tr>
-<tr><td><code>storj</code></td><td>Storj</td><td>&nbsp;</td></tr>
-<tr><td><code>sql</code></td><td>Sql connection, dataset is generated by a query</td><td>&nbsp;</td></tr>
-</table>
+]</code></pre> |
+| `filecoin` | Filecoin storage                                |                                                                                                                   |
+| `arwave`   | Arwave                                          |                                                                                                                   |
+| `storj`    | Storj                                           |                                                                                                                   |
+| `sql`      | Sql connection, dataset is generated by a query |                                                                                                                   |
 
 A service can contain multiple files, using multiple storage types.
 
@@ -314,97 +293,33 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
 
 This only concerns metadata about a file, but never the file URLs. The only way to decrypt them is to exchange at least 1 datatoken based on the respective service pricing scheme.
 
-#### Compute Options
+**Compute Options**
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-<table>
-  <tbody>
-    <tr>
-      <td><b><code>allowRawAlgorithm</code></b>
-        <table>
-          <tbody>
-            <tr>
-              <th>Type</th>
-              <th>Required</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td><code>boolean</code></td>
-              <td><b>✓</b></td>
-              <td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-    <tr>
-        <td><b><code>allowNetworkAccess</code></b>
-        <table>
-          <tbody>
-            <tr>
-              <th>Type</th>
-              <th>Required</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td><code>boolean</code></td>
-              <td><b>✓</b></td>
-              <td>If <code>true</code>, the algorithm job will have network access.</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td><b><code>publisherTrustedAlgorithmPublishers</code></b>
-        <table>
-          <tbody>
-            <tr>
-              <th>Type</th>
-              <th>Required</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>Array of <code>string</code></td>
-              <td><b>✓</b></td>
-              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td><b><code>publisherTrustedAlgorithms</code></b>
-        <table>
-          <tbody>
-            <tr>
-              <th>Type</th>
-              <th>Required</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>Array of <code>publisherTrustedAlgorithms</code></td>
-              <td><b>✓</b></td>
-              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| <p><strong><code>allowRawAlgorithm</code></strong></p><table><thead><tr><th>Type</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>boolean</code></td><td><strong>✓</strong></td><td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag &#x26; drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td></tr></tbody></table> |          |                                                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Required | Description                                                                                                                                                                                                               |
+| `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| <p><strong><code>allowNetworkAccess</code></strong></p><table><thead><tr><th>Type</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>boolean</code></td><td><strong>✓</strong></td><td>If <code>true</code>, the algorithm job will have network access.</td></tr></tbody></table>                                                                                                                                                                                   |          |                                                                                                                                                                                                                           |
+| Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Required | Description                                                                                                                                                                                                               |
+| `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                    |
+| <p><strong><code>publisherTrustedAlgorithmPublishers</code></strong></p><table><thead><tr><th>Type</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td>Array of <code>string</code></td><td><strong>✓</strong></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.</td></tr></tbody></table>                                               |          |                                                                                                                                                                                                                           |
+| Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Required | Description                                                                                                                                                                                                               |
+| Array of `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.                                              |
+| <p><strong><code>publisherTrustedAlgorithms</code></strong></p><table><thead><tr><th>Type</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td>Array of <code>publisherTrustedAlgorithms</code></td><td><strong>✓</strong></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td></tr></tbody></table>                             |          |                                                                                                                                                                                                                           |
+| Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Required | Description                                                                                                                                                                                                               |
+| Array of `publisherTrustedAlgorithms`                                                                                                                                                                                                                                                                                                                                                                                                                                                        | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).                                       |
 
-The `publisherTrustedAlgorithms ` is an array of objects with the following structure:
+The `publisherTrustedAlgorithms` is an array of objects with the following structure:
 
-| Attribute                      | Type     | Required | Description                                                               |
-| ------------------------------ | -------- | -------- | ------------------------------------------------------------------------- |
-| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.               |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                        |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`). |
+| Attribute                      | Type     | Required | Description                                                 |
+| ------------------------------ | -------- | -------- | ----------------------------------------------------------- |
+| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher. |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                    |
+| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`).            |
 
-To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True.
-If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie:  checksumFile1+checksumFile2 , etc)
+To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
 
 To produce `containerSectionChecksum`:
 
@@ -458,26 +373,24 @@ Example:
 }
 ```
 
-#### Consumer Parameters
+**Consumer Parameters**
 
-Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job.
-Examples:
+Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job. Examples:
 
-- The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher defines a field called `sampling` and asks the buyer to enter a value. This parameter is then added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
-
-- An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Compute-to-Data pod for the algorithm to read and use it.
+* The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher defines a field called `sampling` and asks the buyer to enter a value. This parameter is then added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
+* An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Compute-to-Data pod for the algorithm to read and use it.
 
 The `consumerParameters` is an array of objects. Each object defines a field and has the following structure:
 
-| Attribute         | Type                                                | Required | Description                                                                |
-| ----------------- | --------------------------------------------------- | -------- | -------------------------------------------------------------------------- |
-| **`name`**        | `string`                                            | **✓**    | The parameter name (this is sent as HTTP param or key towards algo)        |
-| **`type`**        | `string`                                            | **✓**    | The field type (text, number, boolean, select)                             |
-| **`label`**       | `string`                                            | **✓**    | The field label which is displayed                                         |
-| **`required`**    | `boolean`                                           | **✓**    | If customer input for this field is mandatory.                             |
-| **`description`** | `string`                                            | **✓**    | The field description.                                                     |
-| **`default`**     | `string`, `number`, or `boolean`                    | **✓**    | The field default value. For select types, `string` key of default option. |
-| **`options`**     | Array of `option`                                   |          | For select types, a list of options.                                       |
+| Attribute         | Type                             | Required | Description                                                                |
+| ----------------- | -------------------------------- | -------- | -------------------------------------------------------------------------- |
+| **`name`**        | `string`                         | **✓**    | The parameter name (this is sent as HTTP param or key towards algo)        |
+| **`type`**        | `string`                         | **✓**    | The field type (text, number, boolean, select)                             |
+| **`label`**       | `string`                         | **✓**    | The field label which is displayed                                         |
+| **`required`**    | `boolean`                        | **✓**    | If customer input for this field is mandatory.                             |
+| **`description`** | `string`                         | **✓**    | The field description.                                                     |
+| **`default`**     | `string`, `number`, or `boolean` | **✓**    | The field default value. For select types, `string` key of default option. |
+| **`options`**     | Array of `option`                |          | For select types, a list of options.                                       |
 
 Each `option` is an `object` containing a single key:value pair where the key is the option name, and the value is the option value.
 
@@ -539,7 +452,7 @@ Algorithms will have access to a JSON file located at /data/inputs/algoCustomDat
 }
 ```
 
-### Credentials
+#### Credentials
 
 By default, a consumer can access a resource if they have 1 datatoken. _Credentials_ allow the publisher to optionally specify more fine-grained permissions.
 
@@ -572,7 +485,7 @@ Here's an example object with both `"allow"` and `"deny"` entries:
 }
 ```
 
-### DDO Checksum
+#### DDO Checksum
 
 In order to ensure the integrity of the DDO, a checksum is computed for each DDO:
 
@@ -608,7 +521,7 @@ event MetadataUpdated(
 
 _Aquarius_ should always verify the checksum after data is decrypted via a _Provider_ API call.
 
-### State
+#### State
 
 Each asset has a state, which is held by the NFT contract. The possible states are:
 
@@ -620,25 +533,25 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 | **`3`** | Revoked by publisher.           |
 | **`4`** | Ordering is temporary disabled. |
 
-## Aquarius Enhanced DDO Response
+### Aquarius Enhanced DDO Response
 
 The following fields are added by _Aquarius_ in its DDO response for convenience reasons, where an asset returned by _Aquarius_ inherits the DDO fields stored on-chain.
 
-These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-checksum).
+These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](did-ddo.md#ddo-checksum).
 
-### NFT
+#### NFT
 
 The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
-| Attribute      | Type                   | Description                                                               |
-| -------------- | ---------------------- | ------------------------------------------------------------------------- |
-| **`address`**  | `string`               | Contract address of the deployed ERC721 NFT contract.                     |
-| **`name`**     | `string`               | Name of NFT set in contract.                                              |
-| **`symbol`**   | `string`               | Symbol of NFT set in contract.                                            |
-| **`owner`**    | `string`               | ETH account address of the NFT owner.                                     |
-| **`state`**    | `number`               | State of the asset reflecting the NFT contract value. See [State](#state) |
-| **`created`**  | `ISO date/time string` | Contains the date of NFT creation.                                        |
-| **`tokenURI`** | `string`               | tokenURI                                                                  |
+| Attribute      | Type                   | Description                                                                         |
+| -------------- | ---------------------- | ----------------------------------------------------------------------------------- |
+| **`address`**  | `string`               | Contract address of the deployed ERC721 NFT contract.                               |
+| **`name`**     | `string`               | Name of NFT set in contract.                                                        |
+| **`symbol`**   | `string`               | Symbol of NFT set in contract.                                                      |
+| **`owner`**    | `string`               | ETH account address of the NFT owner.                                               |
+| **`state`**    | `number`               | State of the asset reflecting the NFT contract value. See [State](did-ddo.md#state) |
+| **`created`**  | `ISO date/time string` | Contains the date of NFT creation.                                                  |
+| **`tokenURI`** | `string`               | tokenURI                                                                            |
 
 Example:
 
@@ -655,9 +568,9 @@ Example:
 }
 ```
 
-### Datatokens
+#### Datatokens
 
-The `datatokens` array contains information about the ERC20 datatokens attached to [asset services](#services).
+The `datatokens` array contains information about the ERC20 datatokens attached to [asset services](did-ddo.md#services).
 
 | Attribute       | Type     | Description                                      |
 | --------------- | -------- | ------------------------------------------------ |
@@ -687,7 +600,7 @@ Example:
 }
 ```
 
-### Event
+#### Event
 
 The `event` section contains information about the last transaction that created or updated the DDO.
 
@@ -705,7 +618,7 @@ Example:
 }
 ```
 
-### Purgatory
+#### Purgatory
 
 Contains information about an asset's purgatory status defined in [`list-purgatory`](https://github.com/oceanprotocol/list-purgatory). Marketplace interfaces are encouraged to prevent certain user actions like adding liquidity on assets in purgatory.
 
@@ -733,7 +646,7 @@ Example:
 }
 ```
 
-### Statistics
+#### Statistics
 
 The `stats` section contains different statistics fields.
 
@@ -751,7 +664,7 @@ Example:
 }
 ```
 
-## Full Enhanced DDO Example
+### Full Enhanced DDO Example
 
 ```json
 {
