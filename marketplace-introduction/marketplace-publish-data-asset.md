@@ -16,12 +16,12 @@ Ocean Market provides a convenient interface for individuals and organizations t
 1. Go to [Ocean Market](https://v4.market.oceanprotocol.com)
 2.  Connect wallet.
 
-    <img src="images/marketplace/connect-wallet.png" alt="connect wallet" data-size="original">
+    <img src="../building-with-ocean/images/marketplace/connect-wallet.png" alt="connect wallet" data-size="original">
 
     In this tutorial, we will be using the Rinkeby test network.
 3.  Go to the publish page.
 
-    <img src="images/marketplace/publish.png" alt="publish page" data-size="original">
+    <img src="../building-with-ocean/images/marketplace/publish.png" alt="publish page" data-size="original">
 
 #### Step 1 - Metadata
 
@@ -45,7 +45,7 @@ _Mandatory fields are marked with \*_
 
     Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
 
-![publish part-1](images/marketplace/publish-1.png)
+![publish part-1](../building-with-ocean/images/marketplace/publish-1.png)
 
 #### Step 2 - Access details
 
@@ -71,7 +71,7 @@ _Mandatory fields are marked with \*_
 
     This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
 
-![publish part-2](images/marketplace/publish-2.png)
+![publish part-2](../building-with-ocean/images/marketplace/publish-2.png)
 
 #### Step 3 - Pricing
 
@@ -95,31 +95,31 @@ The publisher can also change the **Swap Fee** of the liquidity pool.
 
 For a deep dive into the fee structure, please refer to this [document](../concepts/fees/).
 
-![publish part-3](images/marketplace/publish-3.png)
+![publish part-3](../building-with-ocean/images/marketplace/publish-3.png)
 
 #### Step 4 - Preview
 
-![publish part-4](images/marketplace/publish-4.png)
+![publish part-4](../building-with-ocean/images/marketplace/publish-4.png)
 
 #### Step 5 - Blockchain transactions
 
-![publish part-5](images/marketplace/publish-5.png)
+![publish part-5](../building-with-ocean/images/marketplace/publish-5.png)
 
 \
 
 
-![publish part-6](images/marketplace/publish-6.png)
+![publish part-6](../building-with-ocean/images/marketplace/publish-6.png)
 
 \
 
 
-![publish part-7](images/marketplace/publish-7.png)
+![publish part-7](../building-with-ocean/images/marketplace/publish-7.png)
 
 #### Confirmation
 
 Now, the asset is successfully published and available in the Ocean Market.
 
-![publish success](images/marketplace/publish-8.png)
+![publish success](../building-with-ocean/images/marketplace/publish-8.png)
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), the publisher has access to all his published assets.
 

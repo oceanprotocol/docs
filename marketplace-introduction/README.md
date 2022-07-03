@@ -1,18 +1,17 @@
 ---
 title: Ocean Market
-description:
 ---
+
+# Using Ocean Market
 
 https://v4.market.oceanprotocol.com/
 
-## Landing page
+### Landing page
 
-![marketplace landing-page](images/marketplace/marketplace-landing-page.png 'Approve contract transaction')
+![marketplace landing-page](../building-with-ocean/images/marketplace/marketplace-landing-page.png)
 
-## About Ocean Market
+### About Ocean Market
 
 1. Ocean Market enables publishers to monetize their data and/or algorithms through blockchain technology.
-
 2. Consumers can purchase access to data, algorithms, compute services.
-
 3. Liquidity providers can add their OCEAN tokens to liquidity pools and earn interest on the transactions.
