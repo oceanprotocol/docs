@@ -1,14 +1,10 @@
----
-title: Ocean Market
----
-
 # Using Ocean Market
 
 https://v4.market.oceanprotocol.com/
 
 ### Landing page
 
-![marketplace landing-page](../building-with-ocean/images/marketplace/marketplace-landing-page.png)
+![marketplace landing-page](images/marketplace/marketplace-landing-page.png)
 
 ### About Ocean Market
 
