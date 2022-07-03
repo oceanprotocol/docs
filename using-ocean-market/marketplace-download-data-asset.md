@@ -20,22 +20,22 @@ description: Tutorial to download assets using Ocean Market
 
 The buy button is enabled only if the connected wallet address has enough OCEAN tokens to exchange them with 1 datatoken.
 
-![consume part-1](images/marketplace/consume-1.png)
+![consume part-1](./images/marketplace/consume-1.png)
 
 #### Step 2 - Allow access to OCEAN token(s)
 
-![consume part-3](images/marketplace/consume-2.png)
+![consume part-3](./images/marketplace/consume-2.png)
 
 #### Step 3 - Buy a datatoken by exchanging it with OCEAN token(s)
 
-![consume part-4](images/marketplace/consume-3.png)
+![consume part-4](./images/marketplace/consume-3.png)
 
 #### Step 4 - Click download
 
-![consume part-5](images/marketplace/consume-4.png)
+![consume part-5](./images/marketplace/consume-4.png)
 
 #### Step 5 - Sign message
 
 After signing the message, the file download will start.
 
-![consume part-6](images/marketplace/consume-5.png)
+![consume part-6](./images/marketplace/consume-5.png)
