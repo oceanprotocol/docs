@@ -1,5 +1,4 @@
 ---
-title: Set Up MetaMask Wallet
 description: Tutorial about how to set up MetaMask for Chrome.
 ---
 
@@ -11,23 +10,23 @@ description: Tutorial about how to set up MetaMask for Chrome.
 
 1.  Go to the [Chrome Web Store for extensions](https://chrome.google.com/webstore/category/extensions) and search for MetaMask.
 
-    <img src="../building-with-ocean/images/metamask-chrome-extension.png" alt="metamask-chrome-store" data-size="original">
+    <img src="images/metamask-chrome-extension.png" alt="metamask-chrome-store" data-size="original">
 
 *   Install MetaMask. The wallet provides a friendly user interface that will help you through each step. MetaMask gives you two options: importing an existing wallet or creating a new one. Choose to `Create a Wallet`:
 
-    <img src="../building-with-ocean/images/create-new-metamask-wallet.png" alt="Create a wallet" data-size="original">
+    <img src="images/create-new-metamask-wallet.png" alt="Create a wallet" data-size="original">
 *   In the next step create a new password for your wallet. Read through and accept the terms and conditions. After that, MetaMask will generate Secret Backup Phrase for you. Write it down and store it in a safe place.
 
-    <img src="../building-with-ocean/images/secret-backup-phrase.png" alt="Secret Backup Phrase" data-size="original">
+    <img src="images/secret-backup-phrase.png" alt="Secret Backup Phrase" data-size="original">
 *   Continue forward. On the next page, MetaMask will ask you to confirm the backup phrase. Select the words in the correct sequence:
 
-    <img src="../building-with-ocean/images/confirm-backup-phrase.png" alt="Confirm secret backup phrase" data-size="original">
+    <img src="images/confirm-backup-phrase.png" alt="Confirm secret backup phrase" data-size="original">
 *   Voila! Your account is now created. You can access MetaMask via the browser extension in the top right corner of your browser.
 
-    <img src="../building-with-ocean/images/metamask-browser-extension.png" alt="MetaMask browser extension" data-size="original">
+    <img src="images/metamask-browser-extension.png" alt="MetaMask browser extension" data-size="original">
 *   You can now manage Ether and Ocean Tokens with your wallet. You can copy your account address to the clipboard from the options. When you want someone to send Ether or Ocean Tokens to you, you will have to give them that address. It's not a secret.
 
-    <img src="../building-with-ocean/images/manage-tokens.png" alt="Manage tokens" data-size="original">
+    <img src="images/manage-tokens.png" alt="Manage tokens" data-size="original">
 
 You can also watch our [tutorial video snippets](https://www.youtube.com/playlist?list=PL\_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help setting up MetaMask.
 
@@ -37,7 +36,7 @@ Sometimes it is required to use custom or external networks in MetaMask. We can 
 
 Open the Settings menu and find the `Networks` option. When you open it, you'll be able to see all available networks your MetaMask wallet currently use. Click the `Add Network` button.
 
-![Add custom/external network](../building-with-ocean/images/metamask-add-network.png)
+![Add custom/external network](images/metamask-add-network.png)
 
 There are a few empty inputs we need to fill:
 

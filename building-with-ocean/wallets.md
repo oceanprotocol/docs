@@ -1,17 +1,14 @@
----
-title: Wallet Basics
-description: 
----
+# Wallet Basics
 
-Ocean users need an ERC-20 compatible wallet to manage their ETH and OCEAN tokens. 
+Ocean users need an ERC-20 compatible wallet to manage their ETH and OCEAN tokens.
 
-## Recommendations
+### Recommendations
 
-- **Easiest:** Use [MetaMask](https://metamask.io/) browser plug-in. 
-- **Still easy, but more secure:** Get a [Trezor](https://trezor.io/) or [Ledger](https://www.ledger.com/) hardware wallet, and use MetaMask to interact with it.
-- The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com lists some other possible wallets.
+* **Easiest:** Use [MetaMask](https://metamask.io/) browser plug-in.
+* **Still easy, but more secure:** Get a [Trezor](https://trezor.io/) or [Ledger](https://www.ledger.com/) hardware wallet, and use MetaMask to interact with it.
+* The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com lists some other possible wallets.
 
-## The Meaning of "Wallet"
+### The Meaning of "Wallet"
 
 A wallet usually means "a thing that stores private keys (and maybe signs transactions)" (explained below). Examples include MetaMask, Trezor, and Ledger wallets.
 
@@ -19,7 +16,7 @@ A wallet can sometimes mean (web3) _software_ for interacting with a thing that 
 
 Note how MetaMask is in both lists!
 
-## Related Terminology
+### Related Terminology
 
 When you set up a new wallet, it might generate a **seed phrase** for you. Store that seed phrase somewhere secure and non-digital (e.g. on paper in a safe). It's extremely secret and sensitive. Anyone with your wallet's seed phrase could spend all the Ether and Ocean Tokens in all the accounts in your wallet.
 

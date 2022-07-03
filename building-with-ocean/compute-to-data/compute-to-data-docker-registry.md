@@ -5,7 +5,7 @@ description: >-
   algorithms in a C2D environment.
 ---
 
-# Setting up private docker registry for Compute-to-Data environment
+# Setting up private docker registry
 
 The document is intended for a production setup. The tutorial provides the steps to setup a private docker registry on the server for the following scenarios:
 
@@ -310,6 +310,6 @@ You can publish an algorithm asset with the metadata containing registry URL, im
 
 ### Further references
 
-* [Setup Compute-to-Data environment](../tutorials/compute-to-data-minikube/)
-* [Writing algorithms](../tutorials/compute-to-data-algorithms/)
-* [C2D example](../references/read-the-docs/ocean-py/READMEs/c2d-flow.md)
+* [Setup Compute-to-Data environment](../../tutorials/compute-to-data-minikube/)
+* [Writing algorithms](../../tutorials/compute-to-data-algorithms/)
+* [C2D example](../../references/read-the-docs/ocean-py/READMEs/c2d-flow.md)
