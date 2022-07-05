@@ -89,11 +89,11 @@ With the _free pricing_ schema, the publisher provides an asset that is free to 
 
 With the _dynamic pricing_ schema, the publisher sets the asset price and creates a datatoken liquidity pool with an initial amount of OCEAN tokens.
 
-For more information on the pricing models, please refer this [document](../concepts/asset-pricing/).
+For more information on the pricing models, please refer this [document](../core-concepts/asset-pricing.md).
 
 The publisher can also change the **Swap Fee** of the liquidity pool.
 
-For a deep dive into the fee structure, please refer to this [document](../concepts/fees/).
+For a deep dive into the fee structure, please refer to this [document](../core-concepts/fees.md).
 
 ![publish part-3](./images/marketplace/publish-3.png)
 
@@ -105,12 +105,8 @@ For a deep dive into the fee structure, please refer to this [document](../conce
 
 ![publish part-5](./images/marketplace/publish-5.png)
 
-\
-
 
 ![publish part-6](./images/marketplace/publish-6.png)
-
-\
 
 
 ![publish part-7](./images/marketplace/publish-7.png)
