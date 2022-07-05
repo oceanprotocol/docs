@@ -18,16 +18,19 @@ description: Tutorial about how to set up MetaMask for Chrome.
 
 *   In the next step create a new password for your wallet. Read through and accept the terms and conditions. After that, MetaMask will generate Secret Backup Phrase for you. Write it down and store it in a safe place.
 
-    <img src="images/secret-backup-phrase.png" alt="Secret Backup Phrase" data-size="original">
+![Secret Backup Phrase](./images/secret-backup-phrase.png)
+
 *   Continue forward. On the next page, MetaMask will ask you to confirm the backup phrase. Select the words in the correct sequence:
 
-    <img src="images/confirm-backup-phrase.png" alt="Confirm secret backup phrase" data-size="original">
+![Confirm secret backup phrase](./images/confirm-backup-phrase.png)
+
 *   Voila! Your account is now created. You can access MetaMask via the browser extension in the top right corner of your browser.
 
-    <img src="images/metamask-browser-extension.png" alt="MetaMask browser extension" data-size="original">
+![MetaMask browser extension](./images/metamask-browser-extension.png)
+
 *   You can now manage Ether and Ocean Tokens with your wallet. You can copy your account address to the clipboard from the options. When you want someone to send Ether or Ocean Tokens to you, you will have to give them that address. It's not a secret.
 
-    <img src="images/manage-tokens.png" alt="Manage tokens" data-size="original">
+![Manage tokens](./images/manage-tokens.png)
 
 You can also watch our [tutorial video snippets](https://www.youtube.com/playlist?list=PL\_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help setting up MetaMask.
 
