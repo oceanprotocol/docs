@@ -15,28 +15,13 @@ cd my-marketplace
 
 Copy the below content into the \`.env\` file.
 
+<mark style="color:red;">TODO: explain ALLOWED\_PUBLISHERS and EVENTS\_RPC</mark>
+
 {% code title=".env" %}
 ```
-#NEXT_PUBLIC_INFURA_PROJECT_ID="xxx"
-#NEXT_PUBLIC_MARKET_FEE_ADDRESS="0xxx"
-#NEXT_PUBLIC_PUBLISHER_MARKET_ORDER_FEE="1"
-#NEXT_PUBLIC_PUBLISHER_MARKET_POOL_SWAP_FEE="1"
-#NEXT_PUBLIC_PUBLISHER_MARKET_FIXED_SWAP_FEE="1"
-#NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE="1"
-#NEXT_PUBLIC_CONSUME_MARKET_POOL_SWAP_FEE="1"
-#NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE="1"
-
-#
-# ADVANCED SETTINGS
-#
-
-# Toggle pricing options presented during price creation
-#NEXT_PUBLIC_ALLOW_FIXED_PRICING="true"
-#NEXT_PUBLIC_ALLOW_DYNAMIC_PRICING="true"
-#NEXT_PUBLIC_ALLOW_FREE_PRICING="true"
-
-# Privacy Preference Center
-#NEXT_PUBLIC_PRIVACY_PREFERENCE_CENTER="true"
+DB_USERNAME=username
+DB_PASSWORD=password
+# check the available versions: https://hub.docker.com/repository/docker/oceanprotocol/aquarius
 ```
 {% endcode %}
 
@@ -56,26 +41,10 @@ CMD ["npx", "next", "start"]
 ```
 {% endcode %}
 
-### Create a docker compose file
+Build a docker image
 
-{% code title="docker-compose.market.yml" %}
-```yaml
-version: "3"
-services:
-  market:
-    container_name: market
-    restart: on-failure
-    build: .
-    ports:
-      - 3000:3000
+```bash
+docker build . -f Dockerfile -t market:latest
 ```
-{% endcode %}
 
 ### Start the marketplace
-
-```
-docker-compose \
--f docker-compose.market.yml \
--d \
-up
-```

@@ -18,11 +18,11 @@ Here’s an overview of the figure.
   * **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
   * **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
   * **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
-* The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](networks.md).
+* The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](../concepts/networks/).
 
 ### Data NFTs, Datatokens and Access Control Tools
 
-Data NFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new data NFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other Ethereum addresses who can deploy new datatoken contracts and even mint them. Each datatoken contract is associated with one data NFT contract. Click [here](datanft-and-datatoken.md) to further read about data NFTs and datatokens.
+Data NFTs are based on [ERC721](https://eips.ethereum.org/EIPS/eip-721) standard. The publisher can use Marketplace or client libraries to deploy a new data NFT contract. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**. Publisher can then assign manager role to other Ethereum addresses who can deploy new datatoken contracts and even mint them. Each datatoken contract is associated with one data NFT contract. Click [here](../concepts/datanft-and-datatoken/) to further read about data NFTs and datatokens.
 
 ERC721 data NFTs represent holding copyright/base IP of a data asset, and ERC20 datatokens represent licenses to access the asset by downloading the content or running Compute-to-Data jobs.
 

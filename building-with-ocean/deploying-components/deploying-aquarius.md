@@ -109,7 +109,7 @@ networks:
 version: '3'
 services:
   aquarius-events-mainnet:     
-    image: oceanprotocol/aquarius:${AQUARIUS_VERISON}
+    image: oceanprotocol/aquarius:${AQUARIUS_VERSION}
     container_name: aquarius-events-mainnet
     restart: on-failure
     networks:
@@ -155,7 +155,7 @@ networks:
 version: '3'
 services:
   aquarius-events-polygon:     
-    image: oceanprotocol/aquarius:${AQUARIUS_VERISON}
+    image: oceanprotocol/aquarius:${AQUARIUS_VERSION}
     container_name: aquarius-events-polygon
     restart: on-failure
     networks:
