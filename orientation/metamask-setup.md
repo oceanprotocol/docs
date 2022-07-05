@@ -10,11 +10,11 @@ description: Tutorial about how to set up MetaMask for Chrome.
 
 1.  Go to the [Chrome Web Store for extensions](https://chrome.google.com/webstore/category/extensions) and search for MetaMask.
 
-    ![metamask-chrome-store](./images/metamask-chrome-extension.png)
+![metamask-chrome-store](./images/metamask-chrome-extension.png)
 
 *   Install MetaMask. The wallet provides a friendly user interface that will help you through each step. MetaMask gives you two options: importing an existing wallet or creating a new one. Choose to `Create a Wallet`:
 
-    ![Create a wallet](./images/create-new-metamask-wallet.png)
+![Create a wallet](./images/create-new-metamask-wallet.png)
 
 *   In the next step create a new password for your wallet. Read through and accept the terms and conditions. After that, MetaMask will generate Secret Backup Phrase for you. Write it down and store it in a safe place.
 
