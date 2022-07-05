@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Orientation](README.md)
-  * [Wallet Basics](building-with-ocean/wallets.md)
-  * [Set Up MetaMask Wallet](building-with-ocean/metamask-setup.md)
-  * [Use Your Wallet to Manage OCEAN Tokens](building-with-ocean/wallets-and-ocean-tokens.md)
+  * [Wallet Basics](orientation/wallets.md)
+  * [Set Up MetaMask Wallet](orientation/metamask-setup.md)
+  * [Use Your Wallet to Manage OCEAN Tokens](orientation/wallets-and-ocean-tokens.md)
 * [Core Concepts](core-concepts/README.md)
   * [Architecture Overview](core-concepts/architecture.md)
   * [Data NFTs and Datatokens](core-concepts/datanft-and-datatoken.md)
