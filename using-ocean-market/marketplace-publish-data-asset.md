@@ -15,12 +15,13 @@ Ocean Market provides a convenient interface for individuals and organizations t
 1. Go to [Ocean Market](https://v4.market.oceanprotocol.com)
 2.  Connect wallet.
 
-    <img src="images/marketplace/connect-wallet.png" alt="connect wallet" data-size="original">
+![connect wallet](./images/marketplace/connect-wallet.png)
 
     In this tutorial, we will be using the Rinkeby test network.
 3.  Go to the publish page.
 
-    <img src="images/marketplace/publish.png" alt="publish page" data-size="original">
+![publish page](./images/marketplace/publish.png)
+
 
 #### Step 1 - Metadata
 

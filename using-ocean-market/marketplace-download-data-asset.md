@@ -10,7 +10,7 @@ description: Tutorial to download assets using Ocean Market
 2. Search for the data asset. The Ocean Marketplace provides features to search the Data/Algorithms by text, and users can also sort the result by published date.
 3.  Connect wallet.
 
-    <img src="images/marketplace/consume-connect-wallet.png" alt="connect wallet" data-size="original">
+![connect wallet](./images/marketplace/consume-connect-wallet.png)
 
     In this tutorial, we will be using the Rinkeby test network.
 

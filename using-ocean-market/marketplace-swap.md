@@ -10,7 +10,7 @@ description: Tutorial to swap datatokens for OCEAN tokens using Ocean Market
 2. Search for the data asset. The Ocean Marketplace provides features to search the Data/Algorithms by text, and users can also sort the result by published date.
 3.  Connect wallet.
 
-    <img src="images/marketplace/consume-connect-wallet.png" alt="connect wallet" data-size="original">
+![connect wallet](./images/marketplace/consume-connect-wallet.png)
 
 ### Tutorial
 
