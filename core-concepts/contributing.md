@@ -9,7 +9,7 @@ To report a bug that isn't a vulnerability, go to the relevant GitHub repository
 
 Before reporting a bug, search existing open and closed issues and PRs to see if something has already been reported. If not, then go ahead and create a new bug report, following the structure suggested in the issue template.
 
-To report a vulnerability, you may do so in a [less public manner](/concepts/vulnerabilities/).
+To report a vulnerability, you may do so in a [less public manner](./vulnerabilities.md).
 
 ## Suggest a new feature
 
@@ -25,8 +25,8 @@ Before you start coding right away, please follow those basic guidelines:
 
 - If no issue for your case is present, open one first before starting to work on something, so it can be discussed.
 - Make yourself familiar with eventual repository-specific contribution requirements and code style requirements.
-- Because of the weird world of intellectual property, we need you to follow the [legal requirements](/concepts/legal-reqs/) for contributing code.
-- Be excellent to each other, as outlined in our [Contributor Code of Conduct](/concepts/code-of-conduct/).
+- Because of the weird world of intellectual property, we need you to follow the [legal requirements](./legal-reqs.md) for contributing code.
+- Be excellent to each other, as outlined in our [Contributor Code of Conduct](./code-of-conduct.md).
 
 ### Workflow
 

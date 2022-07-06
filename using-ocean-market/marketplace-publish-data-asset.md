@@ -15,13 +15,13 @@ Ocean Market provides a convenient interface for individuals and organizations t
 1. Go to [Ocean Market](https://v4.market.oceanprotocol.com)
 2. Connect wallet.
 
-![connect wallet](images/marketplace/connect-wallet.png)
+![connect wallet](../.gitbook/assets/connect-wallet.png)
 
 In this tutorial, we will be using the Rinkeby test network.
 
 3\. Go to the publish page.
 
-![publish page](images/marketplace/publish.png)
+![publish page](../.gitbook/assets/publish.png)
 
 #### Step 1 - Metadata
 
@@ -45,7 +45,7 @@ _Mandatory fields are marked with \*_
 
     Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
 
-![publish part-1](images/marketplace/publish-1.png)
+![publish part-1](../.gitbook/assets/publish-1.png)
 
 #### Step 2 - Access details
 
@@ -71,7 +71,7 @@ _Mandatory fields are marked with \*_
 
     This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
 
-![publish part-2](images/marketplace/publish-2.png)
+![publish part-2](../.gitbook/assets/publish-2.png)
 
 #### Step 3 - Pricing
 
@@ -89,35 +89,31 @@ With the _free pricing_ schema, the publisher provides an asset that is free to 
 
 With the _dynamic pricing_ schema, the publisher sets the asset price and creates a datatoken liquidity pool with an initial amount of OCEAN tokens.
 
-For more information on the pricing models, please refer this [document](../concepts/asset-pricing/).
+For more information on the pricing models, please refer this [document](../core-concepts/asset-pricing.md).
 
 The publisher can also change the **Swap Fee** of the liquidity pool.
 
-For a deep dive into the fee structure, please refer to this [document](../concepts/fees/).
+For a deep dive into the fee structure, please refer to this [document](../core-concepts/fees.md).
 
-![publish part-3](images/marketplace/publish-3.png)
+![publish part-3](../.gitbook/assets/publish-3.png)
 
 #### Step 4 - Preview
 
-![publish part-4](images/marketplace/publish-4.png)
+![publish part-4](../.gitbook/assets/publish-4.png)
 
 #### Step 5 - Blockchain transactions
 
-![publish part-5](images/marketplace/publish-5.png)
+![publish part-5](../.gitbook/assets/publish-5.png)
 
-\\
+![publish part-6](../.gitbook/assets/publish-6.png)
 
-![publish part-6](images/marketplace/publish-6.png)
-
-\\
-
-![publish part-7](images/marketplace/publish-7.png)
+![publish part-7](../.gitbook/assets/publish-7.png)
 
 #### Confirmation
 
 Now, the asset is successfully published and available in the Ocean Market.
 
-![publish success](images/marketplace/publish-8.png)
+![publish success](../.gitbook/assets/publish-8.png)
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), the publisher has access to all his published assets.
 
