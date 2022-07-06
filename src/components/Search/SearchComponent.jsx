@@ -14,7 +14,7 @@ const SearchComponent = ({ location }) => {
       allMarkdownRemark(
         filter: {
           fileAbsolutePath: {
-            regex: "/content/|/markdowns/ocean.py/|/markdowns/provider/"
+            regex: "/content/|/markdowns/ocean.py/|/markdowns/provider/|/markdowns/ocean-subgraph/"
           }
         }
       ) {
