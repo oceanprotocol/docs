@@ -301,7 +301,6 @@ docker image pull example.com/my-algo:latest
 
 # allows anonymous pull if 2nd setup scenario is implemented
 docker image pull readonly.example.com/my-algo:latest
-
 ```
 
 #### Next step
@@ -310,6 +309,6 @@ You can publish an algorithm asset with the metadata containing registry URL, im
 
 ### Further references
 
-* [Setup Compute-to-Data environment](../../tutorials/compute-to-data-minikube/)
-* [Writing algorithms](../../tutorials/compute-to-data-algorithms/)
-* [C2D example](../../references/read-the-docs/ocean-py/READMEs/c2d-flow.md)
+* [Setup Compute-to-Data environment](compute-to-data-minikube.md)
+* [Writing algorithms](compute-to-data-algorithms.md)
+* [C2D example](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/c2d-flow.md)

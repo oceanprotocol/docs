@@ -11,7 +11,7 @@ A non-fungible token stored on the blockchain represents a unique asset. NFTs ca
 
 Fungible tokens represent fungible assets. If you have 5 ETH and Alice has 5 ETH, you and Alice could swap your ETH and your final holdings remain the same. They're apples-to-apples. Licenses (contracts) to access a copyrighted asset are naturally fungible - they can be swapped with each other.
 
-![Data NFT and datatoken](./images/datanft-and-datatoken.png)
+![Data NFT and datatoken](<../.gitbook/assets/datanft and datatoken>)
 
 ### High-Level Architecture
 
@@ -37,7 +37,7 @@ ERC721 tokens are non-fungible, thus cannot be used for automatic price discover
 
 ### High-Level Behavior
 
-![Flow](./images/use-case.png)
+![Flow](<../.gitbook/assets/use case>)
 
 Here's an example.
 
