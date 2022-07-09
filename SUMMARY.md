@@ -21,6 +21,8 @@
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
 * [Building with ocean](building-with-ocean/README.md)
+  * [Using Ocean libraries](building-with-ocean/using-ocean-libraries/README.md)
+      * [Configuration](building-with-ocean/using-ocean-libraries/configuration.md)
   * [Publish assets using hosting services](building-with-ocean/asset-hosting.md)
   * [Binance Smart Chain (BSC)](building-with-ocean/bsc-bridge.md)
   * [Set Up a Marketplace](building-with-ocean/marketplace.md)
