@@ -52,17 +52,19 @@ PROVIDER_URL=https://v4.provider.polygon.oceanprotocol.com
 {% code title=".env" %}
 ```
 # Mandatory environment variables
+OCEAN_NETWORK=development
 OCEAN_NETWORK_URL=http://172.15.0.3:8545/
 AQUARIUS_URL=http://172.15.0.5:5000
 PROVIDER_URL=http://172.15.0.4:8030
 
 # Replace PRIVATE_KEY if needed
 PRIVATE_KEY=0xc594c6e5def4bab63ac29eed19a134c130388f74f019bc74b8f4389df2837a58
-OCEAN_NETWORK=development
 ```
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+_NOTE: If using ocean.py, additionally specify **ADDRESS_FILE** variable in the `.env` file. Copy the content of this [link](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) locally and set the **ADDRESS_FILE** so that its value is a correct file path._
 
 #### Setup dependencies
 
