@@ -2,6 +2,8 @@
 
 ### About Provider
 
+Provider encrypts the URL and metadata during publish and decrypts the URL when the dataset is downloaded or a compute job is started. It enables the access to data assets by streaming data (and never the URL). It performs checks on chain for buyer permissions and payments. It also Provides compute services (connects to C2D environment).
+
 ### Prerequisites
 
 * Docker and Docker compose are installed. Click [here](https://docs.docker.com/engine/install/) to view guide on installing docker.
