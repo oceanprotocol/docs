@@ -42,5 +42,6 @@ Enter the amount of OCEAN tokens to swap. The datatokens amount to receive is di
 
 Watch the demo video on swapping tokens.
 
-[![Swapping tokens](https://img.youtube.com/vi/7UTegQR4Zng/0.jpg)](https://www.youtube.com/watch?v=7UTegQR4Zng
- "swapping tokens")
+{% embed url="https://www.youtube.com/watch?v=7UTegQR4Zng" %}
+Swapping tokens
+{% endembed %}

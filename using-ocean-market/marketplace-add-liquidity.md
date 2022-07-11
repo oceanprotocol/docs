@@ -48,5 +48,6 @@ Enter the amount of OCEAN tokens you want to add. The expected amount of pool sh
 
 Watch the demo video on adding liquidity.
 
-[![Adding liquidity](https://img.youtube.com/vi/Ry_x1mqTj8w/0.jpg)](https://www.youtube.com/watch?v=Ry_x1mqTj8w
- "Adding liquidity")
+{% embed url="https://www.youtube.com/watch?v=Ry_x1mqTj8w" %}
+Adding liquidity
+{% endembed %}
