@@ -34,6 +34,7 @@
   * [Deploying components](building-with-ocean/deploying-components/README.md)
     * [Deploying Marketplace](building-with-ocean/deploying-components/deploying-marketplace.md)
     * [Deploying Aquarius](building-with-ocean/deploying-components/deploying-aquarius.md)
+    * [Deploying Provider](building-with-ocean/deploying-components/deploying-provider.md)
   * [Projects using Ocean Protocol](building-with-ocean/projects-using-ocean.md)
 * [Using Ocean Market](using-ocean-market/README.md)
   * [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
