@@ -37,3 +37,10 @@ Enter the amount of OCEAN tokens to swap. The datatokens amount to receive is di
 ![swap part-4](../.gitbook/assets/Swap-4.png)
 
 ![swap part-5](../.gitbook/assets/Swap-5.png)
+
+### Video tutorial
+
+Watch the demo video on swapping tokens.
+
+[![Swapping tokens](https://img.youtube.com/vi/7UTegQR4Zng/0.jpg)](https://www.youtube.com/watch?v=7UTegQR4Zng
+ "swapping tokens")

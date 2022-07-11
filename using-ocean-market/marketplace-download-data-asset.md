@@ -41,3 +41,10 @@ The buy button is enabled only if the connected wallet address has enough OCEAN 
 After signing the message, the file download will start.
 
 ![consume part-6](../.gitbook/assets/consume-5.png)
+
+### Video tutorial
+
+Watch the demo video on downloading asset.
+
+[![Downloading asset](https://img.youtube.com/vi/gF48nzaMgXA/0.jpg)](https://www.youtube.com/watch?v=gF48nzaMgXA
+ "Downloading asset")

@@ -43,3 +43,11 @@ Enter the amount of OCEAN tokens you want to add. The expected amount of pool sh
 ![add liquidity part-5](../.gitbook/assets/add-liquidity-5.png)
 
 ![add liquidity part-6](../.gitbook/assets/add-liquidity-6.png)
+ 
+
+### Video tutorial
+
+Watch the demo video on adding liquidity.
+
+[![Adding liquidity](https://img.youtube.com/vi/Ry_x1mqTj8w/0.jpg)](https://www.youtube.com/watch?v=Ry_x1mqTj8w
+ "Adding liquidity")
