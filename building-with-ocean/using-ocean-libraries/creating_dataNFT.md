@@ -63,6 +63,10 @@ createDataNFT()
 ```
 {% endcode %}
 
+Executing script
+```bash
+node create_dataNFT.js
+```
 
 {% endtab %}
 
@@ -85,5 +89,12 @@ data_nft = ocean.create_data_nft(
 print(f"Created dataNFT. Its address is {data_nft.address}")
 ```
 {% endcode %}
+
+Executing script
+```bash
+python create_dataNFT.py
+```
+
+
 {% endtab %}
 {% endtabs %}
