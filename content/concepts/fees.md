@@ -47,7 +47,7 @@ These are the fees that are applied whenever a user pays to access an asset:
 
 Ocean's smart contracts collect **Ocean Community fees** during swap and order operations. These fees are reinvested in community projects via OceanDAO and other initiatives.
 
-For swaps involving approved base tokens like OCEAN and H2O, the Ocean Community swap fee is 0.1%. For swaps involving other base tokens, the Ocean Community swap fee is 0.2%. The Ocean Community order fee is 0.03 DT per order operation.
+For swaps involving approved base tokens like OCEAN and H2O, the Ocean Community swap fee is 15.0%. For swaps involving other base tokens, the Ocean Community swap fee is 0.2%. The Ocean Community order fee is 0.03 DT per order operation.
 
 These fees can be updated by the Ocean Protocol Foundation.
 
@@ -72,7 +72,7 @@ The table is periodically updated. Users are advised to confirm new values throu
 | consumeMarket: Pools                                           |                    0%                     | Set in market config, by the consuming market.<br>Min = 0.001%<br>Max = 10%                                                                       |
 | consumeMarket: FixedRate<br>ERC20Template                      |                    0%                     | 0%                                                                                                                                                |
 | consumeMarket: FixedRate<br>EnterpriseTemplate                 |                    0%                     | Set in market config, by the consuming market.                                                                                                    |
-| Ocean Community: Pools & FixedRate<br>OCEAN, H2O as base token |                   0.1%                    | 0.1%                                                                                                                                              |
+| Ocean Community: Pools & FixedRate<br>OCEAN, H2O as base token |                   15.0%                   | 15.0%                                                                                                                                             |
 | Ocean Community: Pools & FixedRate<br>other base token         |                   0.2%                    | 0.2%                                                                                                                                              |
 | Pool Liquidity Provider (LP)                                   |                    1%                     | Set by the pool creator on contract deployment.<br><b>Contracts</b> <br> Min = 0.001% <br>Max = 10%<br><b>Market</b> <br>Min = 0.1% <br>Max = 10% |
 | <b>Publish Fees</b>                                            |                    0%                     | 0%                                                                                                                                                |
