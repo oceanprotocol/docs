@@ -32,6 +32,7 @@ const createDataNFT = async () => {
   const nftParams = {
     name: '72120Bundle',
     symbol: '72Bundle',
+    // Optional parameters
     templateIndex: 1,
     tokenURI: 'https://example.com',
     transferable: true,
