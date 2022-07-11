@@ -43,7 +43,6 @@ Enter the amount of OCEAN tokens you want to add. The expected amount of pool sh
 ![add liquidity part-5](../.gitbook/assets/add-liquidity-5.png)
 
 ![add liquidity part-6](../.gitbook/assets/add-liquidity-6.png)
- 
 
 ### Video tutorial
 
