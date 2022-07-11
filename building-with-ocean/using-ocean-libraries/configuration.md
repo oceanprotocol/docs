@@ -20,7 +20,7 @@ cd my-ocean-project
 # Mandatory environment variables
 
 OCEAN_NETWORK=mainnet
-NETWORK_URL=<replace this>
+OCEAN_NETWORK_URL=<replace this>
 PRIVATE_KEY=<secret>
 
 # Optional environment variables
@@ -37,7 +37,7 @@ PROVIDER_URL=https://v4.provider.mainnet.oceanprotocol.com
 # Mandatory environment variables
 
 OCEAN_NETWORK=polygon
-NETWORK_URL=<replace this>
+OCEAN_NETWORK_URL=<replace this>
 PRIVATE_KEY=<secret>
 
 # Optional environment variables
@@ -52,7 +52,7 @@ PROVIDER_URL=https://v4.provider.polygon.oceanprotocol.com
 {% code title=".env" %}
 ```
 # Mandatory environment variables
-NETWORK_URL=http://172.15.0.3:8545/
+OCEAN_NETWORK_URL=http://172.15.0.3:8545/
 AQUARIUS_URL=http://172.15.0.5:5000
 PROVIDER_URL=http://172.15.0.4:8030
 
@@ -81,7 +81,7 @@ source venv/bin/activate
 pip3 install wheel
 
 # Install Ocean library. Allow pre-releases to get the latest v4 version.
-pip3 install ocean-lib
+pip3 install ocean-lib python-dotenv web3
 ```
 {% endtab %}
 {% endtabs %}
@@ -128,7 +128,7 @@ if (process.env.OCEAN_NETWORK === 'development') {
 
 oceanConfig = {
   ...oceanConfig,
-  nodeUri: process.env.NETWORK_URL,
+  nodeUri: process.env.OCEAN_NETWORK_URL,
   // Set optional properties - Provider URL and Aquarius URL
   metadataCacheUri: process.env.AQUARIUS_URL || oceanConfig.metadataCacheUri,
   providerUri: process.env.PROVIDER_URL || oceanConfig.providerUri
@@ -153,6 +153,21 @@ module.exports = {
 {% tab title="ocean.py" %}
 {% code title="config.py" %}
 ```python
+import os
+from dotenv import load_dotenv
+from ocean_lib.ocean.ocean import Ocean
+from ocean_lib.web3_internal.wallet import Wallet
+from ocean_lib.example_config import ExampleConfig, get_config_dict
+from ocean_lib.ocean.ocean import Ocean
+from ocean_lib.ocean.util import get_web3
+
+load_dotenv()
+
+config = ExampleConfig.get_config()
+ocean = Ocean(config)
+
+user_private_key = os.getenv('PRIVATE_KEY')
+web3_wallet = Wallet(ocean.web3, user_private_key, ocean.config.block_confirmations, ocean.config.transaction_timeout)
 ```
 {% endcode %}
 {% endtab %}
