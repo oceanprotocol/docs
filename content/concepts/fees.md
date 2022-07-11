@@ -21,7 +21,7 @@ These are the fees that are applied whenever a user swaps base token or datatoke
 
 - Publisher Marketplace swap fee
 - Consumer Marketplace swap fee
-- Provider Consumption Fees
+- Liquidity Providers swap fee
 - [Ocean Community Fee](#ocean-community-fee)
 
 ### Publish fee
