@@ -30,11 +30,7 @@ const HeaderHome = () => (
               <b>Please be informed</b>: The Ocean Docs are currently out of
               date. The AMM pools, and dynamic pricing schema are no longer
               available on the&nbsp;
-              <a
-                href={
-                  'https://blog.oceanprotocol.com/ocean-market-changes-3384fd7e113c'
-                }
-              >
+              <a href="https://blog.oceanprotocol.com/ocean-market-changes-3384fd7e113c">
                 Ocean Market
               </a>
               . Stay tuned for updates coming out soon.
