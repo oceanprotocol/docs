@@ -2,10 +2,6 @@ module.exports = {
   siteTitle: 'Ocean Developer Documentation',
   siteShortTitle: 'Docs',
   siteDescription: 'Tools to Build Data Markets, and Manage ERC20 Data Assets',
-  siteTagline:
-    'Dynamic pricing and AMM related features have been disabled in the Ocean Market. More details are available in this ',
-  siteTaglineURL:
-    'https://blog.oceanprotocol.com/ocean-market-changes-3384fd7e113c',
   siteUrl: process.env.SITE_URL || 'https://docs.oceanprotocol.com',
   siteIcon: 'node_modules/@oceanprotocol/art/logo/favicon-black.png',
   siteCompany: 'Ocean Protocol Foundation Ltd.',

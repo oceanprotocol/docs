@@ -16,22 +16,28 @@ const HeaderHome = () => (
           siteMetadata {
             siteTitle
             siteDescription
-            siteTagline
-            siteTaglineURL
           }
         }
       }
     `}
     render={(data) => {
-      const { siteTitle, siteDescription, siteTagline, siteTaglineURL } =
-        data.site.siteMetadata
+      const { siteTitle, siteDescription } = data.site.siteMetadata
 
       return (
         <header className={styles.header}>
           <Content>
             <div className={styles.tagline}>
-              {siteTagline}
-              <a href={siteTaglineURL}>Blog post</a>
+              <b>Please be informed</b>: The Ocean Docs are currently out of
+              date. The AMM pools, and dynamic pricing schema are no longer
+              available on the{' '}
+              <a
+                href={
+                  'https://blog.oceanprotocol.com/ocean-market-changes-3384fd7e113c'
+                }
+              >
+                Ocean Market
+              </a>
+              . Stay tuned for updates coming out soon.
             </div>
             <Logo className={styles.headerLogo} />
             <h1 className={styles.headerTitle}>
