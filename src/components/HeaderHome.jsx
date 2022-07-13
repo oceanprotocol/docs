@@ -29,7 +29,7 @@ const HeaderHome = () => (
             <div className={styles.tagline}>
               <b>Please be informed</b>: The Ocean Docs are currently out of
               date. The AMM pools, and dynamic pricing schema are no longer
-              available on the{' '}
+              available on the 
               <a
                 href={
                   'https://blog.oceanprotocol.com/ocean-market-changes-3384fd7e113c'
