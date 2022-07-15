@@ -10,21 +10,17 @@ featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 
 So you’ve got a fully functioning data marketplace at this point, which is pretty cool. But it doesn’t really look like your data marketplace. Right now, it’s still just a clone of Ocean Market — the same branding, name, logo, etc. The next few steps focus on personalizing your data marketplace.
 
-<Process>
+- Change your Market Name
 
-Change your Market Name
+- Change the Logo
 
-Change the Logo
+- Change the Styling
 
-Change the Styling
+- Edit the Publish Form
 
-Edit the Publish Form
+- Change the Fee Address
 
-Change the Fee Address
-
-Build and host your Data Marketplace
-
-</Process>
+- Build and host your Data Marketplace
 
 ## Change your Market Name
 
