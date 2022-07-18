@@ -23,5 +23,5 @@ All implementations should set permissions to private by default: upon publishin
 
 ## DDO Links
 
-- [Algorithm DDO](/concepts/ddo-metadata/#fields-when-attributesmaintype--algorithm)
-- [Compute DDO](/concepts/ddo-metadata/#fields-when-attributesmaintype--compute)
+- [Algorithm DDO](/concepts/did-ddo/#algorithm-metadata)
+- [Compute DDO](/concepts/did-ddo/#compute-options)
