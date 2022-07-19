@@ -15,13 +15,13 @@ Ocean Market provides a convenient interface for individuals and organizations t
 1. Go to [Ocean Market](https://v4.market.oceanprotocol.com)
 2. Connect wallet.
 
-![connect wallet](../.gitbook/assets/connect-wallet.png)
+![Connect wallet](../.gitbook/assets/connect-wallet.png)
 
 In this tutorial, we will be using the Rinkeby test network.
 
 3\. Go to the publish page.
 
-![publish page](../.gitbook/assets/publish.png)
+![Publish page](../.gitbook/assets/publish.png)
 
 #### Step 1 - Metadata
 
@@ -45,7 +45,7 @@ _Mandatory fields are marked with \*_
 
     Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
 
-![publish part-1](../.gitbook/assets/publish-1.png)
+![Asset metadata](../.gitbook/assets/publish-1.png)
 
 #### Step 2 - Access details
 
@@ -71,7 +71,7 @@ _Mandatory fields are marked with \*_
 
     This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
 
-![publish part-2](../.gitbook/assets/publish-2.png)
+![Access details](../.gitbook/assets/publish-2.png)
 
 #### Step 3 - Pricing
 
@@ -90,24 +90,24 @@ For more information on the pricing models, please refer this [document](../core
 
 For a deep dive into the fee structure, please refer to this [document](../core-concepts/fees.md).
 
-![publish part-3](../.gitbook/assets/publish-3.png)
+![Asset pricing](../.gitbook/assets/publish-3.png)
 
 #### Step 4 - Preview
 
-![publish part-4](../.gitbook/assets/publish-4.png)
+![Preview](../.gitbook/assets/publish-4.png)
 
 #### Step 5 - Blockchain transactions
 
-![publish part-5](../.gitbook/assets/publish-5.png)
+![Transaction 1 - Deploy data NFT and datatoken](../.gitbook/assets/publish-5.png)
 
 
-![publish part-7](../.gitbook/assets/publish-6.png)
+![Transaction 2 - Deploy data NFT and datatoken](../.gitbook/assets/publish-6.png)
 
 #### Confirmation
 
 Now, the asset is successfully published and available in the Ocean Market.
 
-![publish success](../.gitbook/assets/publish-7.png)
+![Successful publish](../.gitbook/assets/publish-7.png)
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), the publisher has access to all his published assets.
 
