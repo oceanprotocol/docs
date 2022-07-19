@@ -16,7 +16,7 @@ Ocean Protocol achieves sustainability via the [Web3 sustainability loop](https:
 
 ### Swap fee
 
-Swap fees are collected whenever someone swaps a datatoken for base token (e.g., OCEAN) or base token for a datatoken. The swap could be inside a pool (using an automated market maker) or in a fixed-rate exchange.
+Swap fees are collected whenever someone swaps a datatoken for base token (e.g., OCEAN) or base token for a datatoken. The swap can be conducted using a a fixed-rate exchange.
 These are the fees that are applied whenever a user swaps base token or datatoken:
 
 - Publisher Marketplace swap fee
@@ -67,13 +67,11 @@ The table is periodically updated. Users are advised to confirm new values throu
 
 | Swap Fees                                                      | Value in Ocean Market, using any Provider | Value in Other Markets                                                                                                                            |
 | :------------------------------------------------------------- | :---------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| publishMarket: Pools                                           |                    0%                     | Set in the market config, by the publishing market.<br>Min = 0.001%<br>Max = 10%                                                                  |
 | publishMarket: FixedRate                                       |                    0%                     | Set in the market config, by the publishing market.<br>Min = 0.001%<br>Max = 50%                                                                  |
-| consumeMarket: Pools                                           |                    0%                     | Set in market config, by the consuming market.<br>Min = 0.001%<br>Max = 10%                                                                       |
 | consumeMarket: FixedRate<br>ERC20Template                      |                    0%                     | 0%                                                                                                                                                |
 | consumeMarket: FixedRate<br>EnterpriseTemplate                 |                    0%                     | Set in market config, by the consuming market.                                                                                                    |
-| Ocean Community: Pools & FixedRate<br>OCEAN, H2O as base token |                   0.1%                    | 0.1%                                                                                                                                              |
-| Ocean Community: Pools & FixedRate<br>other base token         |                   0.2%                    | 0.2%                                                                                                                                              |
+| Ocean Community: FixedRate<br>OCEAN, H2O as base token |                   0.1%                    | 0.1%                                                                                                                                              |
+| Ocean Community: FixedRate<br>other base token         |                   0.2%                    | 0.2%                                                                                                                                              |
 | Pool Liquidity Provider (LP)                                   |                    1%                     | Set by the pool creator on contract deployment.<br><b>Contracts</b> <br> Min = 0.001% <br>Max = 10%<br><b>Market</b> <br>Min = 0.1% <br>Max = 10% |
 | <b>Publish Fees</b>                                            |                    0%                     | 0%                                                                                                                                                |
 | <b>Order Fees <br>1 datatoken available to get dataset acces   |                                           |                                                                                                                                                   |
