@@ -77,21 +77,16 @@ _Mandatory fields are marked with \*_
 
 The publisher needs to choose a pricing option for the asset before publishing the data asset. The pricing schema is not editable after the asset publication.
 
-There are 3 pricing options for asset publication on Ocean Marketplace.
+There are 2 pricing options for asset publication on Ocean Marketplace.
 
 1. Fixed pricing
-2. Dynamic pricing (using Balancer pools)
-3. Free pricing
+2. Free pricing
 
 With the _fixed pricing_ schema, the publisher sets the price that buyers will pay to download the data asset.
 
 With the _free pricing_ schema, the publisher provides an asset that is free to be downloaded by anyone.
 
-With the _dynamic pricing_ schema, the publisher sets the asset price and creates a datatoken liquidity pool with an initial amount of OCEAN tokens.
-
 For more information on the pricing models, please refer this [document](../core-concepts/asset-pricing.md).
-
-The publisher can also change the **Swap Fee** of the liquidity pool.
 
 For a deep dive into the fee structure, please refer to this [document](../core-concepts/fees.md).
 
@@ -105,15 +100,14 @@ For a deep dive into the fee structure, please refer to this [document](../core-
 
 ![publish part-5](../.gitbook/assets/publish-5.png)
 
-![publish part-6](../.gitbook/assets/publish-6.png)
 
-![publish part-7](../.gitbook/assets/publish-7.png)
+![publish part-7](../.gitbook/assets/publish-6.png)
 
 #### Confirmation
 
 Now, the asset is successfully published and available in the Ocean Market.
 
-![publish success](../.gitbook/assets/publish-8.png)
+![publish success](../.gitbook/assets/publish-7.png)
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), the publisher has access to all his published assets.
 
