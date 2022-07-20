@@ -15,8 +15,6 @@ With the fixed price model, publishers set the price for the data in OCEAN. Ocea
 
 A [FixedRateExchange](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/pools/fixedRate/FixedRateExchange.sol) smart contract stores the information about the price of the assets published using this model.
 
-Publishers can choose this fixed pricing model when they do not want Automated Market Maker(AMM) pools to decide the price discovery. If the publisher has already analyzed and estimated the worth of the dataset and is ready to sell an asset at a constant price, this is the suitable pricing model.
-
 The image below shows how to set the fixed pricing of an asset in the Ocean's Marketplace. Here, the price of the asset is set to 10 Ocean tokens.
 
 ![fixed-asset-pricing](../.gitbook/assets/fixed-asset-pricing.png)
