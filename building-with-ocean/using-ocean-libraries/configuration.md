@@ -1,6 +1,6 @@
 # Configuration
 
-### Obtaining API key
+### Obtaining API key for Ethereum node provider
 
 See this [guide](../obtaining-api-key.md) on getting an API key to interact with EVM compatible networks.
 
