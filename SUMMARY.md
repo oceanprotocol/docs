@@ -38,5 +38,3 @@
 * [Using Ocean Market](using-ocean-market/README.md)
   * [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
   * [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
-  * [Add liquidity to liquidity pools](using-ocean-market/marketplace-add-liquidity.md)
-  * [Swap datatokens](using-ocean-market/marketplace-swap.md)
