@@ -20,7 +20,7 @@ Aquarius consists of two parts:\
 ### Create a working directory
 
 ```
-mkdir Aqaurius
+mkdir Aquarius
 cd Aquarius
 ```
 
@@ -63,7 +63,7 @@ services:
       - 9200:9200
     networks:
       - ocean_backend
-  aquarius:
+   aquarius:
     image: oceanprotocol/aquarius:${AQUARIUS_VERSION}
     container_name: aquarius
     restart: on-failure
@@ -197,11 +197,65 @@ networks:
 ```
 docker-compose \
 -f docker-compose.yml \
--f docker-events-mainnet.yml \
--f docker-events-polygon.yml \
+-f docker-compose-events-mainnet.yml \
+-f docker-compose-events-polygon.yml \
 --env-file .env \
 -d \
 up
 ```
 
 After pulling all the asset metadata from the blockchain, Aquarius can be used to query the assets using Elasticsearch query. Aquarius REST API are documented here.
+
+## **Using hosting services**
+
+Aquarius can be hosted on any infrastructure providers like AWS, Azure, Heroku, Digitalocean, and many others. The tutorial here explains how to create a server using Digitalocean and running the required commands to host Aquarius. Apart from steps for create a server, the remaining part of the tutorial will be same for all hosting providers.
+
+#### Creating account and setting billing
+
+Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create an account. Provide the appropriate information for billing and accounting.
+
+#### Create a droplet
+
+Click on **`Create`** button and choose **`Droplets`** options from dropdown.
+
+![](../../.gitbook/assets/image.png)
+
+#### Configure droplet
+
+Select Ubuntu OS and choose a plan. The required CPU, Memory depends on the number of requests Aquarius is expected to serve.&#x20;
+
+![Configure droplet](<../../.gitbook/assets/image (8).png>)
+
+Also, select the region where you want Aquarius to be hosted and a root password.
+
+![](<../../.gitbook/assets/image (4).png>)
+
+![Click Create Droplet](<../../.gitbook/assets/image (7).png>)
+
+Finalize the parameters for the server, click on `Create Droplet.` After the server is ready, s`e`lect the Access console option from the dropdown.
+
+![Click Access Console](<../../.gitbook/assets/image (3).png>)
+
+![Click Launch Droplet Console](<../../.gitbook/assets/image (9).png>)
+
+A window will open with a terminal session. Now, the required infrastructure is ready for hosting Aquarius. Let's install docker and docker-compose on the server. Follow the installation guide [here](https://docs.docker.com/engine/install/ubuntu/).
+
+The below commands shows the commands executed by following the guide.
+
+```bash
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+# Now install docker-compose
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+```
+
+Now that, the server is ready with all the required dependencies follow the steps from[ creating a working directory](deploying-aquarius.md#create-a-working-directory) to[ Start Aquarius](deploying-aquarius.md#start-aquarius).
