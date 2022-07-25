@@ -2,7 +2,7 @@
 
 ### Prerequisites
 
-* A server for hosting Aquarius. See [this guide](setup-server.md) on creating a server.
+* A server for hosting Ocean Marketplace. See [this guide](setup-server.md) on creating a server.
 
 #### Create a directory
 
