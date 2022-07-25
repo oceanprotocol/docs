@@ -2,9 +2,9 @@
 
 ### Prerequisites
 
-* Docker and Docker compose are installed
+* A server for hosting Aquarius. See [this guide](setup-server.md) on creating a server.
 
-### Create a directory
+#### Create a directory
 
 ```
 mkdir my-marketplace
@@ -15,17 +15,13 @@ cd my-marketplace
 
 Copy the below content into the \`.env\` file.
 
-<mark style="color:red;">TODO: explain ALLOWED\_PUBLISHERS and EVENTS\_RPC</mark>
-
 {% code title=".env" %}
 ```
 DB_USERNAME=username
 DB_PASSWORD=password
-# check the available versions: https://hub.docker.com/repository/docker/oceanprotocol/aquarius
+Build a Marketplace container
 ```
 {% endcode %}
-
-### Build a Marketplace container
 
 #### Create a \`Dockerfile\` file and copy the below content into it.
 

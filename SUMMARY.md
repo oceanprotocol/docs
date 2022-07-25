@@ -32,6 +32,7 @@
     * [Writing Algorithms for Compute to Data](building-with-ocean/compute-to-data/compute-to-data-algorithms.md)
     * [Setting up private docker registry](building-with-ocean/compute-to-data/compute-to-data-docker-registry.md)
   * [Deploying components](building-with-ocean/deploying-components/README.md)
+    * [Setup server](building-with-ocean/deploying-components/setup-server.md)
     * [Deploying Marketplace](building-with-ocean/deploying-components/deploying-marketplace.md)
     * [Deploying Aquarius](building-with-ocean/deploying-components/deploying-aquarius.md)
   * [Projects using Ocean Protocol](building-with-ocean/projects-using-ocean.md)
