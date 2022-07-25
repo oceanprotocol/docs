@@ -19,7 +19,3 @@ Ocean Protocol provides tools for developers to _build data markets_, and to _ma
 * _And more._ Use ERC20 support in [web3.js](https://web3js.readthedocs.io/), [web3.py](https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract) and Solidity to connect datatokens with crypto wallets and other DeFi services.
 
 **Compute-to-Data** Ocean's "Compute-to-Data" feature gives compute access to privately-held data, which never leaves the data owner’s premises. Ocean-based marketplaces enable the monetization of private data while preserving privacy. [Here](tutorials/compute-to-data-architecture/) are details.
-
-## Supporters
-
-[GitBook](https://www.gitbook.com/) is a supporter of this open source project by providing hosting for this documentation.
