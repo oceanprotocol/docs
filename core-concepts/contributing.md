@@ -9,7 +9,9 @@ To report a bug that isn't a vulnerability, go to the relevant GitHub repository
 
 Before reporting a bug, search existing open and closed issues and PRs to see if something has already been reported. If not, then go ahead and create a new bug report, following the structure suggested in the issue template.
 
-To report a vulnerability, you may do so in a [less public manner](./vulnerabilities.md).
+## Report Vulnerabilities
+
+You may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at <a href="mailto:security@oceanprotocol.com">security@oceanprotocol.com</a>.
 
 ## Suggest a new feature
 
@@ -73,7 +75,6 @@ Really love building on Ocean and want to dive deeper? Consider joining us full 
 Funding can be for contributing to the core software, building apps, doing integrations, fixing bugs, community outreach, and more.
 
 **[This page](https://www.oceanprotocol.com/fund)** has more information.
-
 
 ## Other ways to get involved
 
