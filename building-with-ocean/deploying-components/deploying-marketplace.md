@@ -17,9 +17,25 @@ Copy the below content into the \`.env\` file.
 
 {% code title=".env" %}
 ```
-DB_USERNAME=username
-DB_PASSWORD=password
-Build a Marketplace container
+# Update this value if Market should using custom Aquarius 
+NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
+
+#NEXT_PUBLIC_INFURA_PROJECT_ID="xxx"
+#NEXT_PUBLIC_MARKET_FEE_ADDRESS="0xxx"
+#NEXT_PUBLIC_PUBLISHER_MARKET_ORDER_FEE="1"
+#NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE="1"
+#NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE="1"
+
+#
+# ADVANCED SETTINGS
+#
+
+# Toggle pricing options presented during price creation
+#NEXT_PUBLIC_ALLOW_FIXED_PRICING="true"
+#NEXT_PUBLIC_ALLOW_FREE_PRICING="true"
+
+# Privacy Preference Center
+#NEXT_PUBLIC_PRIVACY_PREFERENCE_CENTER="true"
 ```
 {% endcode %}
 
