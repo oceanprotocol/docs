@@ -77,7 +77,7 @@ Yes - Ocean has implemented fine grained permissions. This means that you can cr
 <details>
   <summary>What is the reach of Ocean Market - how many data buyers can I sell to?</summary>
 
-Ocean Market is still in the early stages and at the time of updating this section Ocean Market had over $6 million in value of datasets, staking and other services. Hundreds of unique datasets are available that are sourced from private individuals, research institutions, commercial enterprises and government. Publishing data on Ocean offers data providers and algorithm owners an exciting new channel to connect with a rapidly growing community of Web3 enthusiasts and data science professionals around the world.
+Hundreds of unique datasets are available that are sourced from private individuals, research institutions, commercial enterprises and government. Publishing data on Ocean offers data providers and algorithm owners an exciting new channel to connect with a rapidly growing community of Web3 enthusiasts and data science professionals around the world.
 
 </details>
 
@@ -134,7 +134,7 @@ For the most part organizations are leveraging data sharing to benefit from data
 <details>
   <summary>Does it pay to become a marketplace operator?</summary>
 
-Yes. Marketplace operators benefit from earning commission on marketplace transactions related to data consumption as well as staking. Ocean Market is primarily focussed on monetising data however it is also designed to handle the sale of any digital asset or service. As a result the total addressable market goes way beyond revenues from just selling data. Operating costs for an Ocean-powered marketplace are moderate and the base code is open source and available free of charge under the Apache 2 license.
+Yes. Marketplace operators benefit from earning commission on marketplace transactions related to data consumption. Ocean Market is primarily focussed on monetising data however it is also designed to handle the sale of any digital asset or service. As a result the total addressable market goes way beyond revenues from just selling data. Operating costs for an Ocean-powered marketplace are moderate and the base code is open source and available free of charge under the Apache 2 license.
 
 </details>
 
@@ -155,7 +155,7 @@ Price fluctuation is mitigated through the use of the Ocean backed stable coin H
 <details>
   <summary>Who pays for gas fees?</summary>
 
-Gas fees for marketplace transactions are paid by the user initiating the transaction (for publishing, consuming, staking, etc).
+Gas fees for marketplace transactions are paid by the user initiating the transaction (for publishing, consuming, etc).
 
 </details>
 
