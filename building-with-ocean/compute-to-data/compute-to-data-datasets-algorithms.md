@@ -7,7 +7,7 @@ description: Datasets and Algorithms
 
 ### Datasets & Algorithms
 
-With Compute-to-Data, datasets are not allowed to leave the premises of the data holder, only algorithms can be permitted to run on them under certain conditions within an isolated and secure environment. Algorithms are an asset type just like datasets. They too can have a pool or a fixed price to determine their price whenever they are used.
+With Compute-to-Data, datasets are not allowed to leave the premises of the data holder, only algorithms can be permitted to run on them under certain conditions within an isolated and secure environment. Algorithms are an asset type just like datasets and can be priced in the same way.
 
 Algorithms can be public or private by setting `"attributes.main.type"` value in DDO as follows:
 
