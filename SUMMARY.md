@@ -30,6 +30,7 @@
     * [Setup server](building-with-ocean/deploying-components/setup-server.md)
     * [Deploying Marketplace](building-with-ocean/deploying-components/deploying-marketplace.md)
     * [Deploying Aquarius](building-with-ocean/deploying-components/deploying-aquarius.md)
+    * [Deploying Provider](building-with-ocean/deploying-components/deploying-provider.md)
     * [Deploying Ocean subgraph](building-with-ocean/deploying-components/deploying-ocean-subgraph.md)
   * [Contributing](core-concepts/contributing.md)
     * [Contributor Code of Conduct](core-concepts/code-of-conduct.md)
