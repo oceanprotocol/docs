@@ -29,11 +29,15 @@
   * [Deploying components](building-with-ocean/deploying-components/README.md)
     * [Deploying Marketplace](building-with-ocean/deploying-components/deploying-marketplace.md)
     * [Deploying Aquarius](building-with-ocean/deploying-components/deploying-aquarius.md)
+<<<<<<< HEAD
+    * [Deploying Provider](building-with-ocean/deploying-components/deploying-provider.md)
+=======
   * [Contributing](core-concepts/contributing.md)
     * [Contributor Code of Conduct](core-concepts/code-of-conduct.md)
     * [Legal Requirements when Contributing Code](core-concepts/legal-reqs.md)
     * [Reporting Vulnerabilities](core-concepts/vulnerabilities.md)
     * [Funding](core-concepts/get-funding.md)
+>>>>>>> d687b4e2d8782db2ea7e3e61fa15e9608451e78d
   * [Projects using Ocean Protocol](building-with-ocean/projects-using-ocean.md)
 * [API references](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
