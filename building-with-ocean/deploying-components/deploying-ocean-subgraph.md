@@ -2,7 +2,7 @@
 
 ### About Ocean subgraph
 
-
+Ocean subgraph allows querying the datatoken, dataNFT, and all event information using GraphQL. Hosting the Ocean subgraph saves the cost and time required in querying the data directly from the blockchain. The steps in this tutorial will explain how to host Ocean subgraph for the EVM compatible chains supported by Ocean Protocol.
 
 ### Prerequisites
 
