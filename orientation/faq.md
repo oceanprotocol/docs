@@ -188,9 +188,8 @@ Marketplace name, logo and typeface must be changed by the client. Slight modifi
 </details>
 
 <details>
-  <summary>Roadmap - what’s to come in 2022?</summary>
+  <summary>What’s to come with Ocean this year?</summary>
 
-- Q4 will decouple price from the liquidity pool.
-- Right now for 70% Ocean there are 30% datatokens.
+Checkout our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what's we are currently working on. If you are interested in tracking our progress towards these goals then take a look at our [github](https://github.com/oceanprotocol/).
 
 </details>
