@@ -44,10 +44,7 @@ Once someone has generated datatokens, they can be used in any ERC20 exchange, c
 
 The marketplaces are decentralized (no single owner or controller), and non-custodial (only the data owner holds the keys for the datatokens).
 
-Ocean Market supports fixed pricing and automatic price discovery.
-
-* For **fixed pricing**, there’s a simple contract for users to buy/sell datatokens for OCEAN while avoiding custodianship during value transfer.
-* For **automatic price discovery**, Ocean Market uses automated market makers (AMMs) powered by [Balancer](https://www.balancer.fi). Each pool is a datatoken-OCEAN pair. In the Ocean Market GUI, the user adds liquidity then invokes pool creation; the GUI’s React code calls the Ocean JavaScript library, which calls the **Pool Factory** to deploy a **Pool** contract. (The Python library also does this.) Deploying a datatoken pool can be viewed as an “Initial Data Offering” (IDO).
+Ocean Market supports fixed pricing or free pricing. For more detials on pricing schema refer [this guide](./asset-pricing.md).
 
 Complementary to Ocean Market, Ocean has reference code to ease building **third-party data marketplaces**, such as for logistics ([dexFreight data marketplace](https://blog.oceanprotocol.com/dexfreight-ocean-protocol-partner-to-enable-transportation-logistics-companies-to-monetize-data-7aa839195ac)) or mobility ([Daimler](https://blog.oceanprotocol.com/ocean-protocol-delivers-proof-of-concept-for-daimler-ag-in-collaboration-with-daimler-south-east-564aa7d959ca)).
 
