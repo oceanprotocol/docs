@@ -122,15 +122,6 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 
 </details>
 
-<details>
-  <summary>What is staking</summary>
-
-Staking is the act of locking tokens to add liquidity to an Ocean datatoken liquidity pool. By staking, users are de facto curating datasets and becoming liquidity providers (LP) or “staker” for that particular datatoken liquidity pool.
-
-Stakers receive a portion of the transaction fees from trading activities that happen in the datatoken pool(s). By staking on datasets, stakers can speculate on attractive future returns on datasets that they deem as promising. Staking opportunities come with some inherent risks such as impermanent loss.
-
-</details>
-
 ### Data Selling Questions
 
 <details>
