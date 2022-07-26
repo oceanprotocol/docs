@@ -36,6 +36,7 @@
     * [Contributor Code of Conduct](core-concepts/code-of-conduct.md)
     * [Legal Requirements when Contributing Code](core-concepts/legal-reqs.md)
     * [Reporting Vulnerabilities](core-concepts/vulnerabilities.md)
+    * [Funding](core-concepts/get-funding.md)
   * [Projects using Ocean Protocol](building-with-ocean/projects-using-ocean.md)
 * [API references](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
