@@ -23,7 +23,7 @@ Using Ocean Market is already a big improvement on the alternatives that are out
 
 ## Fork Ocean Market
 
-The first step is to log into Github and navigate to https://github.com/oceanprotocol/market, you’ll need to log in or create a Github account. Now you need to click “Fork” in the top right-hand corner. If you are a member of an organization on Github, it will give you the option to clone it into either your personal account or the organization. Choose whichever is suitable for you.
+The first step is to log into Github and navigate to the [Ocean Market repository](https://github.com/oceanprotocol/market), you’ll need to log in or create a Github account. Now you need to click “Fork” in the top right-hand corner. If you are a member of an organization on Github, it will give you the option to clone it into either your personal account or the organization. Choose whichever is suitable for you.
 
 ## Clone the market locally
 
