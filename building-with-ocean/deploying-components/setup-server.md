@@ -32,7 +32,7 @@ Also, select the region where you want Aquarius to be hosted and a root password
 
 ![Click Create Droplet](<../../.gitbook/assets/image (7).png>)
 
-Finalize the parameters for the server, click on `Create Droplet.` After the server is ready, s`e`lect the Access console option from the dropdown.
+Finalize the parameters for the server, click on `Create Droplet.` After the server is ready, select the `Access console` option from the dropdown.
 
 ![Click Access Console](<../../.gitbook/assets/image (3).png>)
 
