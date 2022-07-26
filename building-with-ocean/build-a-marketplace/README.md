@@ -24,7 +24,6 @@ The tutorial covers:
 - Customising your fork of Ocean market
 - Quick deployment of Ocean Market
 
-</Process>
 
 ## Preparation
 
