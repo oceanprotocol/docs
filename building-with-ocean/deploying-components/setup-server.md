@@ -38,7 +38,7 @@ Finalize the parameters for the server, click on `Create Droplet.` After the ser
 
 ![Click Launch Droplet Console](<../../.gitbook/assets/image (9).png>)
 
-A window will open with a terminal session. Now, the required infrastructure is ready for hosting Aquarius. Let's install docker and docker-compose on the server. Follow the installation guide [here](https://docs.docker.com/engine/install/ubuntu/).
+A window will open with a terminal session. Now, the required infrastructure is ready for hosting Aquarius, Provider or the Subgraph. Let's install docker and docker-compose on the server. Follow the installation guide [here](https://docs.docker.com/engine/install/ubuntu/).
 
 The below commands shows the commands executed by following the guide.
 
