@@ -51,12 +51,12 @@ npm start
 
 The above command will build the development bundle and run it locally.
 
-![marketCustomisation](/images/marketCustomisation/1.png)
+![Forking Ocean Market](../../.gitbook/assets/market-customisation-1.png)
 
 Great news - your marketplace has successfully been built and is now running locally. Let’s check it out! Open your browser and navigate to http://localhost:8000/. You’ll see that you have a full-on clone of Ocean Market running locally. Give it a go and test out publishing and consuming assets - everything works!
 
 That’s all that’s required to get a clone of Ocean market working. The whole process is made simple because your clone can happily use all the smart contracts and backend components that are maintained by Ocean Protocol Foundation.
 
-![marketCustomisation](/images/marketCustomisation/2.png)
+![Forking Ocean Market](../../.gitbook/assets/market-customisation-2.png)
 
 So you’ve got a fully functioning marketplace at this point, which is pretty cool. But it doesn’t really look like your marketplace. Right now, it’s still just a clone of Ocean Market - the same branding, name, logo, etc. The next few steps focus on personalizing your marketplace.
