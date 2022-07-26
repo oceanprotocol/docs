@@ -42,7 +42,7 @@ Ocean Protocol is a decentralized data marketplace which gives users complete co
 <details>
   <summary>How do I price my data?</summary>
 
-Ocean gives you three different options for pricing your data - dynamic, fixed or free. You need to decide what your dataset is worth and how you want to price it. You can change the price but you can’t change the price format (e.g. from fixed to dynamic).
+Ocean gives you two different options for pricing your data - fixed price or free. You need to decide what your dataset is worth and how you want to price it. You can change the price but you can’t change the price format (e.g. from fixed to free).
 
 </details>
 
