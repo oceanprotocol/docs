@@ -70,6 +70,12 @@ If you found a technical bug or have an improvement suggestion, head over to the
 
 Really love building on Ocean and want to dive deeper? Consider joining us full time. Our openings are listed at https://github.com/oceanprotocol/devjobs.
 
+## Get Funding
+
+Funding can be for contributing to the core software, building apps, doing integrations, fixing bugs, community outreach, and more.
+
+**[This page](https://www.oceanprotocol.com/fund)** has more information.
+
 ## Other ways to get involved
 
 Please go to the [Ocean Community Page](https://www.oceanprotocol.com/community) for more ideas on how to get involved.
