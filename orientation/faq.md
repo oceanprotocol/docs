@@ -123,16 +123,6 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 </details>
 
 <details>
-  <summary>What is a liquidity pool?</summary>
-
-The price of something is determined by an agreement of a buyer and seller. Absent sufficient buying and selling, price is unpredictable and volatile. Liquidity pools solve the price problem by underlying price discovery for an asset using a mathematical algorithm (bonding curve) combined with two pairs of tokens as liquidity for trading. In this way, liquidity pools allow for a kickstarting of liquidity and price discovery for cryptoassets without any intermediary.
-
-For Ocean, each published data asset with a datatoken has an associated liquidity pool. Participants can curate data sets by staking tokens in a liquidity pool, that is locking their Ocean with datatokens to create a token pool that people can trade against. In this way, the price of a datatoken can be determined by the market.
-Stake sufficient liquidity to allow for trading with minimal slippage - Ocean token is used to generate datatokens, with 10% of fees going to the publisher 10%. Usually people use FIAT to guide them on how much they want the asset to be priced initially. It is generally recommended to begin with a low price with high liquidity (datatoken) doing 5x or 10x more than the minimum recommended. This will improve liquidity and the price will typically go up over time.
-
-</details>
-
-<details>
   <summary>What is staking</summary>
 
 Staking is the act of locking tokens to add liquidity to an Ocean datatoken liquidity pool. By staking, users are de facto curating datasets and becoming liquidity providers (LP) or “staker” for that particular datatoken liquidity pool.
