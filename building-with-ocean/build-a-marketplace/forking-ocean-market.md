@@ -8,7 +8,7 @@ featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 
 # Forking and running Ocean Market locally
 
-Have you ever thought about monetizing the data that your organization generates? You might imagine that this involves dealing with data brokers, but with Ocean you can sell your data directly to your customers with no third party in-between. Ocean makes this all super easy for you with some pretty cool tech under the hood.
+One of the best use cases for Ocean is running your own marketplace and monetizing your digital assets. With Ocean you can sell your data directly to your customers with no third party in-between, no need to speak to data with data brokers. Ocean makes this all super easy for you with some pretty cool tech under the hood. Furthermore, an Ocean powered market isn't just limited to selling data, you can use it for selling any type of digital asset!
 
 Using Ocean Market is already a big improvement on the alternatives that are out there, but it gets even better. Ocean Market is completely open-source and made freely available under the Apache 2 license. This means that you can fork Ocean Market and set up your own data marketplace in just a few steps. This guide will walk you through the process, you’ll be surprised how easy it is. No prior blockchain knowledge is required!
 
