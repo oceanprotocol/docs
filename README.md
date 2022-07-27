@@ -49,6 +49,8 @@ The following guides will help you get started with buying and selling data:
 
 Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://v4.market.oceanprotocol.com/) code or building up with Ocean components.
 
+![ocean market homepage](./.gitbook/assets/ocean-market-homepage.png)
+
 If you're interested in starting your own marketplace checkout the following guides:
 
 <!-- TODO: Internal links won't work until marketplace launchpad content PR is merged -->
@@ -80,7 +82,7 @@ Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosys
 
 ### Compute-to-Data
 
-Ocean's "Compute-to-Data" feature enables private data to be bought & sold. You can sell compute access to privately-held data, which never leaves the data owner’s premises. Ocean-based marketplaces enable the monetization of private data while preserving privacy. [Here](tutorials/compute-to-data-architecture/) are details.
+Ocean's "Compute-to-Data" feature enables private data to be bought & sold. You can sell compute access to privately-held data, which never leaves the data owner’s premises. Ocean-based marketplaces enable the monetization of private data while preserving privacy.
 
 ![decentralized exchange marketplaces](./.gitbook/assets/feature-compute@2x.webp)
 
@@ -95,10 +97,27 @@ Checkout these guides if you are aiming to get a deeper understanding on how com
 
 In Ocean Protocol, each asset gets its own ERC721 **data NFT** and one(or more) ERC20 **datatokens**. This enables data wallets, data exchanges, and data co-ops by directly leveraging crypto wallets, exchanges, and more.
 
-OCEAN token is used for staking, and more. [Here](https://oceanprotocol.com/token) are details.
-
 Ocean Protocol provides tools for developers to _build data markets_, and to _manage data NFTs and datatokens_ for use in DeFi.
 
+If you are new to web3 and blockchain technologies then we suggest you first read these introductory guides:
+
+* [Wallet Basics](building-with-ocean/wallets.md)
+* [Set Up MetaMask Wallet](orientation/metamask-setup.md)
+* [Manage Your OCEAN Tokens](building-with-ocean/wallets-and-ocean-tokens.md)
+
+If ou are looking to get to grips with the inner workings of Ocean, then you'll be interested in the following:
+
+* [Architecture Overview](./core-concepts/architecture.md)
+* [Data NFTs and Datatokens](./core-concepts/datanft-and-datatoken.md)
+* [Networks](./core-concepts/networks.md)
+* [Fees](./core-concepts/fees.md)
+* [Asset pricing](./core-concepts/asset-pricing.md)
+* [DID & DDO](./core-concepts/did-ddo.md)
+* [Roles](./core-concepts/roles.md)
+* [Set Up a Marketplace](./building-with-ocean/marketplace.md)
+* [Compute-to-Data](./building-with-ocean/compute-to-data/README.md)
+* [Deploying components](building-with-ocean/deploying-components/README.md)
+* [Contributing](core-concepts/contributing.md)
 
 ## Supporters
 
