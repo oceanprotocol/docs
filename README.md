@@ -22,6 +22,8 @@ Our page on [Data NFTs and datatokens](./core-concepts/datanft-and-datatoken.md)
 
 Society is becoming increasingly reliant on data, especially with the advent of AI. However, a small handful of organizations with both massive data assets and AI capabilities attained worrying levels of control which is a danger to a free and open society.
 
+![New Data Economy](./.gitbook/assets/feature-datascience@2x.webp)
+
 Our team and community is committed to kick-starting a New Data Economy that reaches every single person, company and device, giving power back to data owners and enabling people to capture value from data to better our world.
 
 Find out more about the people building Ocean on our [site](https://oceanprotocol.com/about).
@@ -36,9 +38,9 @@ Use Ocean Market to publish and sell data, or browse and buy data. Data is publi
 
 The following guides will help you get started with buying and selling data:
 
-  * [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
-  * [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
-  * [Publishing with hosting services](building-with-ocean/asset-hosting.md)
+* [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
+* [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
+* [Publishing with hosting services](building-with-ocean/asset-hosting.md)
 
 ### Build Your Own Data Market
 
@@ -60,6 +62,7 @@ Use Ocean [JavaScript](https://github.com/oceanprotocol/ocean.js) or [Python](ht
 
 Ocean's "Compute-to-Data" feature enables private data to be bought & sold. You can sell compute access to privately-held data, which never leaves the data owner’s premises. Ocean-based marketplaces enable the monetization of private data while preserving privacy. [Here](tutorials/compute-to-data-architecture/) are details.
 
+![decentralized exchange marketplaces](./.gitbook/assets/feature-compute@2x.webp)
 ## How does it work?
 
 In Ocean Protocol, each asset gets its own ERC721 **data NFT** and one(or more) ERC20 **datatokens**. This enables data wallets, data exchanges, and data co-ops by directly leveraging crypto wallets, exchanges, and more.
