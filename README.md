@@ -53,8 +53,6 @@ Use Ocean Protocol software tools to build your own data marketplace, by either 
 
 If you're interested in starting your own marketplace checkout the following guides:
 
-<!-- TODO: Internal links won't work until marketplace launchpad content PR is merged -->
-
 * [Forking Ocean Market](building-with-ocean/build-a-marketplace/forking-ocean-market.md)
 * [Customising your market](building-with-ocean/build-a-marketplace/customising-your-market.md)
 * [Deploying your market](building-with-ocean/build-a-marketplace/deploying-market.md)
