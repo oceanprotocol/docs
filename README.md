@@ -6,8 +6,6 @@ description: Ocean Protocol - Tools for the Web3 Data Economy
 
 In Ocean Protocol, each asset gets its own ERC721 **data NFT** and one(or more) ERC20 **datatokens**. This enables data wallets, data exchanges, and data co-ops by directly leveraging crypto wallets, exchanges, and more.
 
-OCEAN token is used for staking, and more. [Here](https://oceanprotocol.com/token) are details.
-
 Ocean Protocol provides tools for developers to _build data markets_, and to _manage data NFTs and datatokens_ for use in DeFi.
 
 **Build Data Markets.** Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://v4.market.oceanprotocol.com/) code or building up with Ocean components.
