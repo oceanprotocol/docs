@@ -10,7 +10,7 @@ Ocean provides the next generation of tools to unlock data at a large scale. Oce
 
 Ocean uses Data NFTs (ERC721) and datatokens (ERC20) as the interface to connect data assets with blockchain and DeFi tools. Crypto wallets become data wallets, crypto exchanges become data marketplaces, DAOs for data co-ops, and more via DeFi composability.
 
-![New Data Economy](./.gitbook/assets/feature-datascience@2x.webp)
+![Creating a New Data Economy](./.gitbook/assets/feature-datascience@2x.webp)
 
 The following guides are a greate place to start if you are new to Ocean:
 
@@ -27,8 +27,6 @@ Society is becoming increasingly reliant on data, especially with the advent of 
 
 Our team and community is committed to kick-starting a New Data Economy that reaches every single person, company and device, giving power back to data owners and enabling people to capture value from data to better our world.
 
-![mantaray full light](./.gitbook/assets/mantaray-full-light.svg)
-
 Find out more about the people building Ocean on our [site](https://oceanprotocol.com/about).
 
 ## What can you do with Ocean?
@@ -39,7 +37,7 @@ Use Ocean Market to publish and sell data, or browse and buy data. Data is publi
 
 As a data scientist or AI practitioner, you can benefit from access to more data (including private data), crypto-secured provenance in data & AI training, and income opportunities for selling data and curating data.
 
-![decentralized exchange marketplaces](./.gitbook/assets/feature-marketplaces@2x.webp)
+![Decentralized Exchange Marketplaces](./.gitbook/assets/feature-marketplaces@2x.webp)
 
 The following guides will help you get started with buying and selling data:
 
@@ -51,7 +49,7 @@ The following guides will help you get started with buying and selling data:
 
 Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://v4.market.oceanprotocol.com/) code or building up with Ocean components.
 
-![ocean market homepage](./.gitbook/assets/ocean-market-homepage.png)
+![Ocean Market Homepage](./.gitbook/assets/ocean-market-homepage.png)
 
 If you're interested in starting your own marketplace checkout the following guides:
 
@@ -69,7 +67,7 @@ Use Ocean [JavaScript](https://github.com/oceanprotocol/ocean.js) or [Python](ht
 
 Ocean-based apps make data asset on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
 
-![new ramp on crypto ramp off](./.gitbook/assets/new-ramp-on-crypto-ramp-off.webp)
+![New Data on-ramp and off-ramp](./.gitbook/assets/new-ramp-on-crypto-ramp-off.webp)
 
 Data NFTs are ERC721 tokens representing the unique asset and datatokens are ERC20 tokens to access data services. Each data service gets its own data NFT and one or more type of datatokens.
 
@@ -90,7 +88,7 @@ Compute-to-data resolves the tradeoff between the benefits of using private data
 
 The most valuable data is private data — using it can improve research and business outcomes. But concerns over privacy and control make it hard to access. With Compute-to-Data, private data isn’t directly shared but rather specific access to it is granted.
 
-![decentralized exchange marketplaces](./.gitbook/assets/feature-compute@2x.webp)
+![Compute-to-data](./.gitbook/assets/feature-compute@2x.webp)
 
 It can be used for data sharing in science or technology contexts, or in marketplaces for selling private data while preserving privacy, as an opportunity for companies to monetize their data assets.
 
