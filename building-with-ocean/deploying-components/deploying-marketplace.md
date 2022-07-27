@@ -2,9 +2,9 @@
 
 ### Prerequisites
 
-* Docker and Docker compose are installed
+* A server for hosting Ocean Marketplace. See [this guide](setup-server.md) on creating a server.
 
-### Create a directory
+#### Create a directory
 
 ```
 mkdir my-marketplace
@@ -38,8 +38,6 @@ NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
 #NEXT_PUBLIC_PRIVACY_PREFERENCE_CENTER="true"
 ```
 {% endcode %}
-
-### Build a Marketplace container
 
 #### Create a \`Dockerfile\` file and copy the below content into it.
 
