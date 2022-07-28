@@ -1,12 +1,20 @@
 # Using Ocean Market
 
-https://v4.market.oceanprotocol.com/
-
-### Landing page
-
-![marketplace landing-page](images/marketplace/marketplace-landing-page.png)
-
 ### About Ocean Market
 
-1. Ocean Market enables publishers to monetize their data and/or algorithms through blockchain technology.
-2. Consumers can purchase access to data, algorithms, compute services.
+* [Ocean Market](https://market.oceanprotocol.com/) enables publishers to monetize their data and/or algorithms through blockchain technology.
+* Consumers can purchase access to data, algorithms, compute services.
+
+![Ocean Market Landing Page](../.gitbook/assets/marketplace-landing-page.png)
+
+The following guides will help you get started with buying and selling data:
+
+* [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
+* [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
+* [Publishing with hosting services](building-with-ocean/asset-hosting.md)
+
+If you are new to web3 and blockchain technologies then we suggest you first read these introductory guides:
+
+* [Wallet Basics](building-with-ocean/wallets.md)
+* [Set Up MetaMask Wallet](orientation/metamask-setup.md)
+* [Manage Your OCEAN Tokens](building-with-ocean/wallets-and-ocean-tokens.md)
