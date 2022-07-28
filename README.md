@@ -6,7 +6,6 @@ description: Ocean Protocol - Tools for the Web3 Data Economy
 
 ## What is Ocean?
 
-<<<<<<< HEAD
 Ocean provides the next generation of tools to unlock data at a large scale. Ocean makes it easy to publish and consume data services. 
 
 Ocean uses Data NFTs (ERC721) and datatokens (ERC20) as the interface to connect data assets with blockchain and DeFi tools. Crypto wallets become data wallets, crypto exchanges become data marketplaces, DAOs for data co-ops, and more via DeFi composability.
@@ -59,9 +58,6 @@ If you're interested in starting your own marketplace checkout the following gui
 * [Deploying your market](building-with-ocean/build-a-marketplace/deploying-market.md)
 
 ### Manage datatokens and data NFTs for use in DeFi
-=======
-Ocean Protocol provides tools for developers to _build data markets_, and to _manage data NFTs and datatokens_ for use in DeFi.
->>>>>>> a43842953fc89e909e6233169879f519bad3dce6
 
 Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.
 
