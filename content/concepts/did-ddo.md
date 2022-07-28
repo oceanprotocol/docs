@@ -142,7 +142,7 @@ The `container` object has the following attributes defining the Docker image fo
 | **`entrypoint`** | `string` | **✓**    | The command to execute, or script to run inside the Docker image. |
 | **`image`**      | `string` | **✓**    | Name of the Docker image.                                         |
 | **`tag`**        | `string` | **✓**    | Tag of the Docker image.                                          |
-| **`checksum`**   | `string` | **✓**    | Checksum of the Docker image.                                     |
+| **`checksum`**   | `string` | **✓**    | Digest of the Docker image.    (ie: sha256:xxxxx)                  |
 
 ```json
 {
@@ -161,7 +161,7 @@ The `container` object has the following attributes defining the Docker image fo
         "entrypoint": "node $ALGO",
         "image": "ubuntu",
         "tag": "latest",
-        "checksum": "44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
+        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
       },
       "consumerParameters": {}
     }
@@ -371,7 +371,7 @@ An asset with a service of `type` `compute` has the following additional attribu
             <tr>
               <td>Array of <code>string</code></td>
               <td><b>✓</b></td>
-              <td>If empty, then any published algorithm is allowed. Otherwise, only published algorithms by some publishers are allowed.</td>
+              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.</td>
             </tr>
           </tbody>
         </table>
@@ -389,7 +389,7 @@ An asset with a service of `type` `compute` has the following additional attribu
             <tr>
               <td>Array of <code>publisherTrustedAlgorithms</code></td>
               <td><b>✓</b></td>
-              <td>If empty, then any published algorithm is allowed. (see below).</td>
+              <td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td>
             </tr>
           </tbody>
         </table>
@@ -403,19 +403,16 @@ The `publisherTrustedAlgorithms ` is an array of objects with the following stru
 | Attribute                      | Type     | Required | Description                                                               |
 | ------------------------------ | -------- | -------- | ------------------------------------------------------------------------- |
 | **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher.               |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's `files` section (as `string`).                        |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's `metadata.algorithm.container` section (as `string`). |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                        |
+| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`). |
 
-To produce `filesChecksum`:
-
-```js
-sha256(JSON.Stringify(algorithm_ddo.services[0].files))
-```
+To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True.
+If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie:  checksumFile1+checksumFile2 , etc)
 
 To produce `containerSectionChecksum`:
 
 ```js
-sha256(JSON.Stringify(algorithm_ddo.metadata.algorithm.container))
+sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum)
 ```
 
 Example:

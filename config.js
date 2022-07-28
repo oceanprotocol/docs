@@ -74,7 +74,7 @@ module.exports = {
     },
     {
       from: '/concepts/oeps-asset-ddo/',
-      to: '/concepts/ddo-metadata/'
+      to: '/concepts/did-ddo/#metadata'
     },
     {
       from: '/tutorials/azure-for-brizo/',

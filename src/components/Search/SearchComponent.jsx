@@ -12,7 +12,11 @@ const SearchComponent = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/|/markdowns/" } }
+        filter: {
+          fileAbsolutePath: {
+            regex: "/content/|/markdowns/ocean.py/|/markdowns/provider/|/markdowns/ocean-subgraph/"
+          }
+        }
       ) {
         edges {
           node {
@@ -51,7 +55,6 @@ const SearchComponent = ({ location }) => {
       )}/${node.frontmatter.slug}`
       section = `API References [${node.frontmatter.app}]`
     }
-
     return {
       title: node.frontmatter.title,
       description: node.frontmatter.description,
