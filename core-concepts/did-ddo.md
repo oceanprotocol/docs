@@ -220,25 +220,21 @@ During the publish process, file URLs must be encrypted with a respective _Provi
 
 where "files" contains one or more storage objects.
 
-Type of objects supported :
+Supported storage object types:
 
-| Type  | Description                              | Example                                                           |
-| ----- | ---------------------------------------- | ----------------------------------------------------------------- |
-| `url` | Static URL. Contains url and HTTP method | <pre class="language-json"><code class="lang-json">[</code></pre> |
-| {     |                                          |                                                                   |
-
-```
-"type": "url",
-"url": "https://url.com/file1.csv",
-"method": "GET",
-"headers":
-  [
-   {"Authorization": "Bearer 123"}, 
-   {"APIKEY": "124"},
-  ]
-```
-
-} ] |
+| Type  | Description                                   | Example                                                           |
+| ----- | --------------------------------------------- | ----------------------------------------------------------------- |
+| `url` | Static URL. Optional HTTP method and headers. | <pre class="language-json"><code class="lang-json">
+{
+  "type": "url",
+  "url": "https://url.com/file1.csv",
+  "method": "GET",
+  "headers":
+    [
+      {"Authorization": "Bearer 123"},
+      {"APIKEY": "124"},
+    ]
+}</code></pre> |
 
 First class integrations supported in the future :
 
