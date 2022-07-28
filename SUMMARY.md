@@ -18,6 +18,7 @@
   * [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
   * [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
   * [Publish assets using hosting services](building-with-ocean/asset-hosting.md)
+  * [Remove liquidity using Etherscan](using-ocean-market/remove-liquidity-using-etherscan.md)
 * [Building with ocean](building-with-ocean/README.md)
   * [Set Up a Marketplace](building-with-ocean/marketplace.md)
   * [Compute-to-Data](building-with-ocean/compute-to-data/README.md)
@@ -38,4 +39,3 @@
 * [API references](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
-
