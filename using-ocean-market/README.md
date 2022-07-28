@@ -18,3 +18,7 @@ If you are new to web3 and blockchain technologies then we suggest you first rea
 * [Wallet Basics](building-with-ocean/wallets.md)
 * [Set Up MetaMask Wallet](orientation/metamask-setup.md)
 * [Manage Your OCEAN Tokens](building-with-ocean/wallets-and-ocean-tokens.md)
+
+### Removing Liquidity
+
+The AMM pools, and dynamic pricing schema are no longer available on the Ocean Market. Refer [this page](remove-liquidity-using-etherscan.md) on removing liquidity from the pool using Etherscan.
