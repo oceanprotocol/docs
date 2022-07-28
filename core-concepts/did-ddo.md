@@ -224,17 +224,7 @@ Supported storage object types:
 
 | Type  | Description                                   | Example                                                           |
 | ----- | --------------------------------------------- | ----------------------------------------------------------------- |
-| `url` | Static URL. Optional HTTP method and headers. | <pre class="language-json"><code class="lang-json">
-{
-  "type": "url",
-  "url": "https://url.com/file1.csv",
-  "method": "GET",
-  "headers":
-    [
-      {"Authorization": "Bearer 123"},
-      {"APIKEY": "124"},
-    ]
-}</code></pre> |
+| `url` | Static URL. Optional HTTP method and headers. | <pre lang="json">{<br>  "type": "url",<br>  "url": "https://url.com/file1.csv",<br>  "method": "GET",<br>  "headers":<br>    [<br>      {"Authorization": "Bearer 123"},<br>      {"APIKEY": "124"},<br>    ]}</pre> |
 
 First class integrations supported in the future :
 
