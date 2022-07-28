@@ -17,7 +17,7 @@ A [FixedRateExchange](https://github.com/oceanprotocol/contracts/blob/v4main/con
 
 The image below shows how to set the fixed pricing of an asset in the Ocean's Marketplace. Here, the price of the asset is set to 10 Ocean tokens.
 
-![fixed-asset-pricing](../.gitbook/assets/fixed-asset-pricing.png)
+![fixed-asset-pricing](<images/fixed-asset-pricing (1).png>)
 
 ### Free pricing
 
@@ -29,4 +29,4 @@ Free pricing is suitable for individuals and organizations working in the public
 
 The image below shows how to set free access to an asset in the Ocean's Marketplace.
 
-![free-asset-pricing](../.gitbook/assets/free-asset-pricing.png)
+![free-asset-pricing](<images/free-asset-pricing (1).png>)
