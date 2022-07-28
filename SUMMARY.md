@@ -18,7 +18,7 @@
   * [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
   * [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
   * [Publishing with hosting services](building-with-ocean/asset-hosting.md)
-* [Building with ocean](building-with-ocean/README.md)
+* [Building with Ocean](building-with-ocean/README.md)
   * [Build a Marketplace](building-with-ocean/build-a-marketplace/README.md)
     * [Forking Ocean Market](building-with-ocean/build-a-marketplace/forking-ocean-market.md)
     * [Customising your market](building-with-ocean/build-a-marketplace/customising-your-market.md)
