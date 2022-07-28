@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /test
-Disallow: /references/petstore
-
-sitemap: https://docs.oceanprotocol.com/sitemap.xml
