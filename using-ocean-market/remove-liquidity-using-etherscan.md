@@ -39,6 +39,6 @@
 
 ![](../.gitbook/assets/remove-liquidity-5.png)
 
-4\. Confirm transaction in metamask
+4\. Confirm transaction in Metamask
 
 ![](../.gitbook/assets/remove-liquidity-6.png)
