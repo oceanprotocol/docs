@@ -1,10 +1,10 @@
 ---
 title: Forking Ocean Market
-description: Forking and customizing Ocean Market (Frontend)
 featuredImage: images/creatures/mantaray/mantaray-full@2x.png
+description: Forking and customizing Ocean Market (Frontend)
 ---
 
-# 🐟 Forking and customizing Ocean Market
+# Build a Marketplace
 
 ## Outcome
 
@@ -20,10 +20,9 @@ Using Ocean Market is already a big improvement on the alternatives that are out
 
 The tutorial covers:
 
-- Forking and running Ocean Market locally
-- Customising your fork of Ocean market
-- Quick deployment of Ocean Market
-
+* Forking and running Ocean Market locally
+* Customising your fork of Ocean market
+* Quick deployment of Ocean Market
 
 ## Preparation
 
@@ -31,20 +30,14 @@ The tutorial covers:
 
 If you’re completely unfamiliar with Ocean Market or web3 applications in general, you will benefit from reading these guides first:
 
-- To use your clone of Ocean Market, you’ll need a [wallet](https://docs.oceanprotocol.com/tutorials/wallets/). We recommend [getting set up with metamask](https://docs.oceanprotocol.com/tutorials/metamask-setup/).
-
-- You’ll also need some [Ocean tokens on a testnet](https://docs.oceanprotocol.com/tutorials/wallets-and-ocean-tokens/) to use your marketplace.
-
-- When you have the testnet tokens, have a go at [publishing a data asset](https://docs.oceanprotocol.com/tutorials/marketplace-publish-data-asset/) on Ocean Market.
-
-- Run through the process of [consuming a data asset](https://docs.oceanprotocol.com/tutorials/marketplace-consume-data-asset/) on Ocean Market.
+* To use your clone of Ocean Market, you’ll need a [wallet](https://docs.oceanprotocol.com/tutorials/wallets/). We recommend [getting set up with metamask](https://docs.oceanprotocol.com/tutorials/metamask-setup/).
+* You’ll also need some [Ocean tokens on a testnet](https://docs.oceanprotocol.com/tutorials/wallets-and-ocean-tokens/) to use your marketplace.
+* When you have the testnet tokens, have a go at [publishing a data asset](https://docs.oceanprotocol.com/tutorials/marketplace-publish-data-asset/) on Ocean Market.
+* Run through the process of [consuming a data asset](https://docs.oceanprotocol.com/tutorials/marketplace-consume-data-asset/) on Ocean Market.
 
 **Required Prerequisites**
 
-- Git. Instructions for installing Git can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-
-- Node.js can be downloaded from [here](https://nodejs.org/en/download/) (we’re using version 16 in this guide)
-
-- A decent code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
-
-- You’ll need a Github account to fork Ocean market via [Github](https://github.com/).
+* Git. Instructions for installing Git can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Node.js can be downloaded from [here](https://nodejs.org/en/download/) (we’re using version 16 in this guide)
+* A decent code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
+* You’ll need a Github account to fork Ocean market via [Github](https://github.com/).
