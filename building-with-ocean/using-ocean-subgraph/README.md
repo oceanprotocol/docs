@@ -7,3 +7,4 @@ description: >-
 
 # Using Ocean Subgraph
 
+For each supported network, an individual Ocean subgraph is deployed. The information about  supported networks and the subgraph URL is available on [this page](../../core-concepts/networks.md).

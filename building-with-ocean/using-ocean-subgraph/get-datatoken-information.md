@@ -1,5 +1,49 @@
 # Get datatoken information
 
+
+
+The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
+
+```graphql
+{
+  token(id:"0x122d10d543bc600967b4db0f45f80cb1ddee43eb", subgraphError: deny){
+    id
+    symbol
+    nft {
+      name
+      symbol
+      address
+    }
+    name
+    symbol
+    cap
+    isDatatoken
+    holderCount
+    orderCount
+    orders(skip:0,first:1){
+      amount
+      serviceIndex
+      payer {
+        id
+      }
+      consumer{
+        id
+      }
+      estimatedUSDValue
+      lastPriceToken
+      lastPriceValue
+    }
+  }
+  fixedRateExchanges(subgraphError:deny){
+    id
+    price
+    active
+  }
+}
+```
+
+The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed. Change the value of the variable `datatoken_address` with the address of the datatoken of your choice.
+
 {% tabs %}
 {% tab title="Python" %}
 #### Create script
@@ -9,39 +53,47 @@
 import requests
 import json
 
-datatoken_address = "0x000ab98efeea06758443fdb30e376cf8b3acd305"
+datatoken_address = "0x122d10d543bc600967b4db0f45f80cb1ddee43eb"
 query = """
 {{
-  datatoken(id: "{0}"){{
+  token(id:"{0}", subgraphError: deny){{
     id
     symbol
-    name
-    decimals
-    cap
-    publisher
-    orderCount
-    metadataUpdateCount
-    createTime
-    tx
-    orders(skip:0, first: 5, where:{{datatokenId:"{0}"}}) {{
-      consumer {{
-        id
-      }}
-      timestamp
-      amount
-      marketFee
-      marketFeeCollector {{
-        id
-      }}
-      block
-      tx
+    nft {{
+      name
+      symbol
+      address
     }}
+    name
+    symbol
+    cap
+    isDatatoken
+    holderCount
+    orderCount
+    orders(skip:0,first:1){{
+      amount
+      serviceIndex
+      payer {{
+        id
+      }}
+      consumer{{
+        id
+      }}
+      estimatedUSDValue
+      lastPriceToken
+      lastPriceValue
+    }}
+  }}
+  fixedRateExchanges(subgraphError:deny){{
+    id
+    price
+    active
   }}
 }}""".format(
     datatoken_address
 )
 
-base_url = "https://subgraph.mainnet.oceanprotocol.com"
+base_url = "https://v4.subgraph.mainnet.oceanprotocol.com/"
 route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
 
 url = base_url + route
@@ -50,10 +102,6 @@ headers = {"Content-Type": "application/json"}
 payload = json.dumps({"query": query})
 response = requests.request("POST", url, headers=headers, data=payload)
 result = json.loads(response.text)
-
-print(url)
-
-print(payload)
 
 print(json.dumps(result, indent=4, sort_keys=True))
 
@@ -74,23 +122,41 @@ python datatoken_information.py
 
 ```json
 {
-    "data": {
-        "datatoken": {
-            "cap": "1000",
-            "createTime": 1657244700,
-            "decimals": 18,
-            "id": "0x000ab98efeea06758443fdb30e376cf8b3acd305",
-            "metadataUpdateCount": "1",
-            "name": "Breathtaking Crab Token",
-            "orderCount": "0",
-            "orders": [],
-            "publisher": "0x89717015882d6460e4a0daeb945b3d4032f2d9d6",
-            "symbol": "BRECRA-81",
-            "tx": "0xb67c9e193e62bdbc7313399c6d38450037f432a06ee615a368a794bf716d1476"
-        }
+  "data": {
+    "fixedRateExchanges": [
+      {
+        "active": true,
+        "id": "0xfa48673a7c36a2a768f89ac1ee8c355d5c367b02-0x06284c39b48afe5f01a04d56f1aae45dbb29793b190ee11e93a4a77215383d44",
+        "price": "33"
+      },
+      {
+        "active": true,
+        "id": "0xfa48673a7c36a2a768f89ac1ee8c355d5c367b02-0x2719862ebc4ed253f09088c878e00ef8ee2a792e1c5c765fac35dc18d7ef4deb",
+        "price": "35"
+      },
+      {
+        "active": true,
+        "id": "0xfa48673a7c36a2a768f89ac1ee8c355d5c367b02-0x2dccaa373e4b65d5ec153c150270e989d1bda1efd3794c851e45314c40809f9c",
+        "price": "33"
+      }
+    ],
+    "token": {
+      "cap": "115792089237316195423570985008687900000000000000000000000000",
+      "holderCount": "0",
+      "id": "0x122d10d543bc600967b4db0f45f80cb1ddee43eb",
+      "isDatatoken": true,
+      "name": "Brave Lobster Token",
+      "nft": {
+        "address": "0xea615374949a2405c3ee555053eca4d74ec4c2f0",
+        "name": "Ocean Data NFT",
+        "symbol": "OCEAN-NFT"
+      },
+      "orderCount": "0",
+      "orders": [],
+      "symbol": "BRALOB-11"
     }
+  }
 }
-
 ```
 
 </details>
