@@ -1,5 +1,9 @@
 # Get datatoken information
 
+{% tabs %}
+{% tab title="Python" %}
+#### Create script
+
 {% code title="datatoken_information.py" %}
 ```python
 import requests
@@ -50,6 +54,13 @@ payload = json.dumps({"query": query})
 response = requests.request("POST", url, headers=headers, data=payload)
 result = json.loads(response.text)
 print(result)
-
 ```
 {% endcode %}
+
+#### Execute script
+
+```
+python datatoken_information.py
+```
+{% endtab %}
+{% endtabs %}

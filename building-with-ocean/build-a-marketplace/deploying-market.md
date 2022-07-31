@@ -2,11 +2,11 @@
 title: Deployment of Ocean Market
 order: 3
 hideLanguageSelector: true
-featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 description: Step by step guide to a quick deployment of Ocean Market
+featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 ---
 
-# Deploying your market
+# 🔰 Quick deployment of Ocean Market
 
 All that’s left is for you to host your data marketplace and start sharing it with your future users.
 
