@@ -1,8 +1,6 @@
-# List NFTs
+# List data NFTs
 
-
-
-The result of following GraphQL query returns the information about nfts. Additional fields can also&#x20;
+The result of following GraphQL query returns the information about data nfts.
 
 ```graphql
 {
@@ -24,7 +22,7 @@ The python script below can be used to run the the query. If you wish to change 
 
 {% tabs %}
 {% tab title="Python" %}
-{% code title="list_nfts.py" %}
+{% code title="list_dataNFTs.py" %}
 ```python
 import requests
 import json
@@ -57,14 +55,13 @@ response = requests.request("POST", url, headers=headers, data=payload)
 result = json.loads(response.text)
 
 print(json.dumps(result, indent=4, sort_keys=True))
-
 ```
 {% endcode %}
 
 #### Execute script
 
 ```
-python list_nfts.py
+python list_dataNFTs.py
 ```
 {% endtab %}
 {% endtabs %}
