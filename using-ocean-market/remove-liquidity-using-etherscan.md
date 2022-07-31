@@ -12,7 +12,7 @@
 
 1. Go to the pool's Etherscan/Polygonscan page.
 2. Go to _Contract_ -> _Read Contract_.
-3. Go to field `56. totalSupply` to get the total amopunt of pool shares, in wei.
+3. Go to field `56. totalSupply` to get the total amount of pool shares, in wei.
 4. Divide the number by 2 to get the maximum of pool shares you can send in one pool exit transaction. If your number retrieved in former step is bigger, you have to send multiple transactions.
 
 ## Exit pool
