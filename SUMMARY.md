@@ -10,7 +10,7 @@
   * [Data NFTs and Datatokens](core-concepts/datanft-and-datatoken.md)
   * [Roles](core-concepts/roles.md)
   * [Networks](core-concepts/networks.md)
-    * [Bridges](building-with-ocean/polygon-bridge.md)
+    * [Bridges](core-concepts/networks/bridges.md)
   * [Fees](core-concepts/fees.md)
   * [Asset pricing](core-concepts/asset-pricing.md)
   * [DID & DDO](core-concepts/did-ddo.md)
