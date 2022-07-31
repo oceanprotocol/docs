@@ -39,6 +39,7 @@
     * [Examples using python](building-with-ocean/using-ocean-subgraph/examples-using-python/README.md)
       * [List datatokens](building-with-ocean/using-ocean-subgraph/examples-using-python/list-datatokens.md)
       * [Get datatoken information](building-with-ocean/using-ocean-subgraph/examples-using-python/get-datatoken-information.md)
+      * [List Fixed Rate Exchanges](building-with-ocean/using-ocean-subgraph/examples-using-python/list-fixed-rate-exchanges.md)
   * [Contributing](core-concepts/contributing.md)
     * [Contributor Code of Conduct](core-concepts/code-of-conduct.md)
     * [Legal Requirements](core-concepts/legal-reqs.md)
