@@ -5,7 +5,7 @@ description: >-
   additional core components deployed to them.
 ---
 
-# Supported Networks
+# Networks
 
 Ocean Protocol contracts are deployed on multiple public networks. You can always find the most up-to-date deployment addresses for all individual contracts in the [address.json](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json).
 
@@ -55,7 +55,7 @@ Ocean is deployed to Polygon Mainnet, another production network. Polygon’s na
 
 **Bridge**
 
-Check our Polygon Bridge [guide](../building-with-ocean/polygon-bridge.md) to learn how you can deposit, withdraw and send tokens.
+Check our Polygon Bridge [guide](broken-reference) to learn how you can deposit, withdraw and send tokens.
 
 ### Binance Smart Chain
 
@@ -81,7 +81,7 @@ If you don’t find BSC as a predefined network in your wallet, you can connect 
 
 **Bridge**
 
-Check our BSC Bridge [guide](../building-with-ocean/bsc-bridge.md) to learn how you can deposit, withdraw and send tokens.
+Check our BSC Bridge [guide](broken-reference) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 

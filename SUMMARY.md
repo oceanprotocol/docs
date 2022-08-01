@@ -10,7 +10,7 @@
   * [Data NFTs and Datatokens](core-concepts/datanft-and-datatoken.md)
   * [Roles](core-concepts/roles.md)
   * [Networks](core-concepts/networks.md)
-    * [Bridges](building-with-ocean/bridges.md)
+    * [Bridges](core-concepts/networks/bridges.md)
   * [Fees](core-concepts/fees.md)
   * [Asset pricing](core-concepts/asset-pricing.md)
   * [DID & DDO](core-concepts/did-ddo.md)
@@ -18,6 +18,7 @@
   * [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
   * [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
   * [Publishing with hosting services](building-with-ocean/asset-hosting.md)
+  * [Liquidity Pools [deprecated]](using-ocean-market/remove-liquidity-using-etherscan.md)
 * [Building with Ocean](building-with-ocean/README.md)
   * [Build a Marketplace](building-with-ocean/build-a-marketplace/README.md)
     * [Forking Ocean Market](building-with-ocean/build-a-marketplace/forking-ocean-market.md)
@@ -42,4 +43,3 @@
 * [API references](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
-
