@@ -1,6 +1,10 @@
 # List Fixed Rate Exchanges
 
-The result of following GraphQL query returns the information about the Fixed Rate Exchanges.
+The result of following GraphQL query returns the information about the Fixed Rate Exchanges. &#x20;
+
+{% hint style="info" %}
+Copy the query in the [graphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks, change the domain name with appropriate subgraph domain as mentioned in [this page](../../core-concepts/networks.md).
+{% endhint %}
 
 ```graphql
 {

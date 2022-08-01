@@ -2,7 +2,11 @@
 
 
 
-The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
+The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken. &#x20;
+
+{% hint style="info" %}
+Copy the query in the [graphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks, change the domain name with appropriate subgraph domain as mentioned in [this page](../../core-concepts/networks.md).
+{% endhint %}
 
 ```graphql
 {
