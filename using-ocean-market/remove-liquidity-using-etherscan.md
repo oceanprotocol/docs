@@ -1,6 +1,9 @@
-# Remove liquidity using Etherscan
+# Liquidity Pools [deprecated]
 
-## Get your balance of pool share tokens
+In previous versions of Ocean liquidity pools and dynamic pricing were supported. These features have been deprecated and we now advise everyone to remove their liquidity from the remaining pools. It is no longer possible to do this via Ocean Market, so please follow this guide to remove your liquidity via etherscan.
+## Remove liquidity using Etherscan
+
+### Get your balance of pool share tokens
 
 1. Go to the pool's Etherscan/Polygonscan page. You can find it by inspecting your transactions on your account's Etherscan page under _Erc20 Token Txns_.
 2. Click _View All_ and look for Ocean Pool Token (OPT) transfers. Those transactions always come from the pool contract, which you can click on.
