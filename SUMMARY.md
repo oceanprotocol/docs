@@ -1,5 +1,6 @@
 # Table of contents
 
+* [](README.md)
 * [Orientation](README.md)
   * [Wallet Basics](building-with-ocean/wallets.md)
   * [Set Up MetaMask Wallet](orientation/metamask-setup.md)
