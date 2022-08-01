@@ -36,7 +36,7 @@ ERC721 tokens are non-fungible, thus cannot be used for automatic price discover
 
 ### High-Level Behavior
 
-![Flow](<images/use-case (1).png>)
+![Flow](<../.gitbook/assets/use case>)
 
 Here's an example.
 

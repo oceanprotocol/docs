@@ -1,6 +1,7 @@
-# Liquidity Pools [deprecated]
+# Liquidity Pools \[deprecated]
 
 In previous versions of Ocean liquidity pools and dynamic pricing were supported. These features have been deprecated and we now advise everyone to remove their liquidity from the remaining pools. It is no longer possible to do this via Ocean Market, so please follow this guide to remove your liquidity via etherscan.
+
 ## Remove liquidity using Etherscan
 
 ### Get your balance of pool share tokens
@@ -9,7 +10,7 @@ In previous versions of Ocean liquidity pools and dynamic pricing were supported
 2. Click _View All_ and look for Ocean Pool Token (OPT) transfers. Those transactions always come from the pool contract, which you can click on.
 3. On the pool contract page, go to _Contract_ -> _Read Contract_.
 
-![](../.gitbook/assets/remove-liquidity-1.png)
+![](<../.gitbook/assets/remove-liquidity-1 (1).png>)
 
 4\. Go to field `20. balanceOf` and insert your ETH address. This will retrieve your pool share token balance in wei.
 
