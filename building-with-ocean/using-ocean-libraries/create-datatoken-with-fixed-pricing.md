@@ -10,6 +10,10 @@ See [this](configuration.md) guide on defining a `.env` file and a configuration
 
 Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
 
+{% hint style="info" %}
+**Fees**: The code snippets below define fees related parameters. Please refer [fees page ](../../core-concepts/fees.md)for more details
+{% endhint %}
+
 {% tabs %}
 {% tab title="ocean.js" %}
 {% code title="create_datatoken_with_fre.js" %}
