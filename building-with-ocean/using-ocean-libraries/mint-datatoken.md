@@ -1,10 +1,14 @@
 # Mint datatoken
 
+This tutorial will guide you to mint datatoken and send it to a receiver address. The tutorial assumes that you already have the address of the datatoken contract which is owned by you.&#x20;
+
 #### Configuration
 
 See [this](configuration.md) guide on defining a `.env` file and a configuration file
 
 #### Create a script to mint datatokens
+
+Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
 
 {% tabs %}
 {% tab title="ocean.js" %}
@@ -59,6 +63,12 @@ mintDatatoken(datatokenAddress, receiverAddress)
   });
 ```
 {% endcode %}
+
+#### Execute script
+
+```
+node mint_datatoken.js
+```
 {% endtab %}
 
 {% tab title="ocean.py" %}
@@ -85,5 +95,11 @@ print(f"Balance after mint: {datatoken.balanceOf(receiver_address)}")
 nt_d
 ```
 {% endcode %}
+
+#### Execute script
+
+```
+python mint_datatoken.py
+```
 {% endtab %}
 {% endtabs %}

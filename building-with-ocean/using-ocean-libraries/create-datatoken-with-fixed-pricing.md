@@ -1,10 +1,14 @@
 # Create Datatoken with fixed pricing
 
+This tutorial will guide you for creating your own data NFT and a datatoken using Ocean libraries. To know more about data NFT and datatoken please refer [this page](../../core-concepts/datanft-and-datatoken.md). Ocean Protocol supports different pricing schemes which can be set while publishing an asset. Please refer [this page](../../core-concepts/asset-pricing.md) for more details on pricing schemes.
+
 #### Configuration
 
-See [this](configuration.md) guide on defining a `.env` file and a configuration file
+See [this](configuration.md) guide on defining a `.env` file and a configuration file.
 
 #### Create a script to deploy dataNFT and datatoken with fixed pricing.
+
+Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
 
 {% tabs %}
 {% tab title="ocean.js" %}
@@ -48,7 +52,7 @@ const createDataNFT = async () => {
     marketFeeCollector: publisherAccount,
     baseTokenDecimals: 18,
     datatokenDecimals: 18,
-    fixedRate: '1',
+    fixedRate: '100',
     marketFee: '0',
     allowedConsumer: publisherAccount,
     withMint: false
@@ -81,9 +85,14 @@ createDataNFT()
     console.error(err);
     process.exit(1);
   });
-teatatokfreicreate_datatoken_with_fre.js
 ```
 {% endcode %}
+
+Execute script
+
+```
+node create_datatoken_with_fre.js
+```
 {% endtab %}
 
 {% tab title="ocean.py" %}
@@ -120,7 +129,11 @@ print(f"Created fixed rate exchange with ID {exchange_id.hex()}")
 ```
 {% endcode %}
 
+#### Execute script
 
+```
+python create_datatoken_with_fre.py
+```
 {% endtab %}
 {% endtabs %}
 

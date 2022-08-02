@@ -2,9 +2,11 @@
 
 ### Obtaining API key for Ethereum node provider
 
-See this [guide](../obtaining-api-key.md) on getting an API key to interact with EVM compatible networks.
+Ocean libraries need an Ethereum node provider API key to send transactions to the Ocean Protocol's Smart contracts.  See this [guide](../obtaining-api-key.md) on getting an API key to interact with EVM compatible networks. The supported networks are listed [here](../../core-concepts/networks.md).
 
-#### Create a directory
+### Create a directory
+
+Let's start with creating a working directory where we store the environment variable file, configuration files and the scripts.
 
 ```
 mkdir my-ocean-project
@@ -12,6 +14,22 @@ cd my-ocean-project
 ```
 
 ### Create a `.env` file
+
+In the working directory create a \`.env\` file. The content of this file will store the values for following variables:
+
+| Variable name           | Description                                                                                                                                                                 | Required |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| **OCEAN\_NETWORK**      | Name of the network where the Ocean Protocol's smart contracts are deployed.                                                                                                | Yes      |
+| **OCEAN\_NETWORK\_URL** | The URL of the Ethereum node (along with API key for non-local networks)                                                                                                    | Yes      |
+| **PRIVATE\_KEY**        | The private key of the account which you want to use. A private key is made up of 64 hex characters. Make sure you have sufficient balance to pay for the transaction fees. | Yes      |
+| **AQUARIUS\_URL**       | The URL of the Aquarius. This value is needed when reading an asset from off-chain store.                                                                                   | No       |
+| **PROVIDER\_URL**       | The URL of the Provider. This value is needed when publishing a new asset or update an existing asset.                                                                      | No       |
+
+{% hint style="info" %}
+Treat this file as a secret and do not commit this file to git or share the content publicly.
+{% endhint %}
+
+The below tabs show partially filled \`.env\` file content for some of the supported networks.&#x20;
 
 {% tabs %}
 {% tab title="Mainnet" %}
@@ -64,9 +82,11 @@ PRIVATE_KEY=0xc594c6e5def4bab63ac29eed19a134c130388f74f019bc74b8f4389df2837a58
 {% endtab %}
 {% endtabs %}
 
-_NOTE: If using ocean.py, additionally specify **ADDRESS_FILE** variable in the `.env` file. Copy the content of this [link](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) locally and set the **ADDRESS_FILE** so that its value is a correct file path._
+_NOTE: If using ocean.py, additionally specify **ADDRESS\_FILE** variable in the `.env` file. Copy the content of this_ [_link_](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) _locally and set the **ADDRESS\_FILE** so that its value is a correct file path._
 
-#### Setup dependencies
+### Setup dependencies
+
+In this step the required dependencies will be installed.
 
 {% tabs %}
 {% tab title="ocean.js" %}
@@ -88,7 +108,11 @@ pip3 install ocean-lib python-dotenv web3
 {% endtab %}
 {% endtabs %}
 
-#### Create a configuration file
+### Create a configuration file
+
+A configuration file will read the content of the \`.env\` file and initialize the required configuration objects which will be used in the further tutorials. The below scripts creates a Web3 wallet instance and a Ocean's configuration object.
+
+Create the configuration file in the working directory i.e. at the same path where the \`.env\` is located.&#x20;
 
 {% tabs %}
 {% tab title="ocean.js" %}
@@ -145,11 +169,8 @@ module.exports = {
   web3Provider,
   oceanConfig
 };
-
 ```
 {% endcode %}
-
-
 {% endtab %}
 
 {% tab title="ocean.py" %}
@@ -174,3 +195,5 @@ web3_wallet = Wallet(ocean.web3, user_private_key, ocean.config.block_confirmati
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+Now, all the dependencies at ready and you can proceed with interacting with Ocean infrastructure using Ocean libraries.

@@ -1,10 +1,14 @@
 # Update metadata
 
+This tutorial will guide you to update an existing asset published on-chain using Ocean libraries. The tutorial assumes that you already have the `did` of the asset which needs to be updated. In this tutorial, we will update the name, description, tags of the data NFT. Please refer [the page on DDO](../../core-concepts/did-ddo.md) to know more about additional the fields which can be updated.
+
 #### Configuration
 
 See [this](configuration.md) guide on defining a `.env` file and a configuration file
 
 #### Create a script to update the metadata
+
+Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
 
 {% tabs %}
 {% tab title="ocean.js" %}
@@ -78,9 +82,5 @@ Execute the script
 ```bash
 node updateMetadata.js
 ```
-{% endtab %}
-
-{% tab title="ocean.py" %}
-
 {% endtab %}
 {% endtabs %}

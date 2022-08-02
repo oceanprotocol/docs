@@ -1,10 +1,14 @@
-# Create a dataNFT
+# Creating a dataNFT
+
+This tutorial will guide you for creating your own data NFT using Ocean libraries. To know more about data NFT please refer [this page](../../core-concepts/datanft-and-datatoken.md).
 
 #### Configuration
 
-See [this](./configuration.md) guide on defining a `.env` file and a configuration file 
+See [this](configuration.md) guide on defining a `.env` file and a configuration file.
 
 #### Create a script to deploy dataNFT
+
+Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
 
 {% tabs %}
 {% tab title="ocean.js" %}
@@ -64,10 +68,10 @@ createDataNFT()
 {% endcode %}
 
 Executing script
+
 ```bash
 node create_dataNFT.js
 ```
-
 {% endtab %}
 
 {% tab title="ocean.py" %}
@@ -91,10 +95,9 @@ print(f"Created dataNFT. Its address is {data_nft.address}")
 {% endcode %}
 
 Executing script
+
 ```bash
 python create_dataNFT.py
 ```
-
-
 {% endtab %}
 {% endtabs %}
