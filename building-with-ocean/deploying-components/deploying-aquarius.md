@@ -10,6 +10,7 @@ Aquarius consists of two parts:\
 
 ### Prerequisites
 
+* A server for hosting Aquarius. See [this guide](setup-server.md) on creating a server.
 * Docker and Docker compose are installed. Click [here](https://docs.docker.com/engine/install/) to view guide on installing docker.
 * Ethereum API. Aquarius uses Ethereum api for monitoring on-chain events.\
   Choose any api provider of your choice. Some of the commonly used are:
@@ -20,7 +21,7 @@ Aquarius consists of two parts:\
 ### Create a working directory
 
 ```
-mkdir Aqaurius
+mkdir Aquarius
 cd Aquarius
 ```
 
@@ -38,9 +39,8 @@ DB_USERNAME=username
 DB_PASSWORD=password
 
 # Replace below value with the API provider of your choice
-EVENTS_RPC_RINKEBY=wss://rinkeby.infura.io/ws/v3/INFURA_ID
-EVENTS_RPC_POLYGON=wss://rinkeby.infura.io/ws/v3/INFURA_ID
-EVENTS_RPC_MAINNET=wss://rinkeby.infura.io/ws/v3/INFURA_ID
+EVENTS_RPC_POLYGON=<polygon-key>
+EVENTS_RPC_MAINNET=<mainnet-key>
 ```
 {% endcode %}
 
@@ -64,7 +64,7 @@ services:
       - 9200:9200
     networks:
       - ocean_backend
-  aquarius:
+   aquarius:
     image: oceanprotocol/aquarius:${AQUARIUS_VERSION}
     container_name: aquarius
     restart: on-failure
@@ -132,10 +132,8 @@ services:
       AQUARIUS_CONFIG_FILE: "config.ini"
       NETWORK_NAME: "mainnet"
       EVENTS_RPC: ${EVENTS_RPC_MAINNET}
-      BFACTORY_BLOCK: # TODO
-      METADATA_CONTRACT_BLOCK: # TODO
       METADATA_UPDATE_ALL : "0"
-      OCEAN_ADDRESS :  0x967da4048cD07aB37855c090aAF366e4ce1b9F48 
+      OCEAN_ADDRESS :  "0x967da4048cD07aB37855c090aAF366e4ce1b9F48"
       EVENTS_ALLOW: 0
       RUN_EVENTS_MONITOR: 1
       BLOCKS_CHUNK_SIZE: "5000"
@@ -178,8 +176,6 @@ services:
       AQUARIUS_CONFIG_FILE: "config.ini"
       NETWORK_NAME: "polygon"
       EVENTS_RPC: ${EVENTS_RPC_POLYGON}
-      BFACTORY_BLOCK: 11005239
-      METADATA_CONTRACT_BLOCK: 11005247
       METADATA_UPDATE_ALL: "0"
       OCEAN_ADDRESS: "0x282d8efCe846A88B159800bd4130ad77443Fa1A1"
       EVENTS_ALLOW: 0
@@ -202,8 +198,8 @@ networks:
 ```
 docker-compose \
 -f docker-compose.yml \
--f docker-events-mainnet.yml \
--f docker-events-polygon.yml \
+-f docker-compose-events-mainnet.yml \
+-f docker-compose-events-polygon.yml \
 --env-file .env \
 -d \
 up

@@ -24,7 +24,6 @@ The permissions are stored in the data NFT (ERC721) smart contract. The data NFT
 
 | Action &darr; / Role &rarr; | ERC20 Deployer         | Minter                 | NFT owner              | Fee manager            |
 | --------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
-| Deploy pool                 | <center>**✓**</center> |                        |                        |                        |
 | Create Fixed Rate exchange  | <center>**✓**</center> |                        |                        |                        |
 | Create Dispenser            | <center>**✓**</center> |                        |                        |                        |
 | Add minter                  | <center>**✓**</center> |                        |                        |                        |

@@ -2,9 +2,9 @@
 
 ### Prerequisites
 
-* Docker and Docker compose are installed
+* A server for hosting Ocean Marketplace. See [this guide](setup-server.md) on creating a server.
 
-### Create a directory
+#### Create a directory
 
 ```
 mkdir my-marketplace
@@ -15,17 +15,29 @@ cd my-marketplace
 
 Copy the below content into the \`.env\` file.
 
-<mark style="color:red;">TODO: explain ALLOWED\_PUBLISHERS and EVENTS\_RPC</mark>
-
 {% code title=".env" %}
 ```
-DB_USERNAME=username
-DB_PASSWORD=password
-# check the available versions: https://hub.docker.com/repository/docker/oceanprotocol/aquarius
+# Update this value if Market should using custom Aquarius 
+NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
+
+#NEXT_PUBLIC_INFURA_PROJECT_ID="xxx"
+#NEXT_PUBLIC_MARKET_FEE_ADDRESS="0xxx"
+#NEXT_PUBLIC_PUBLISHER_MARKET_ORDER_FEE="1"
+#NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE="1"
+#NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE="1"
+
+#
+# ADVANCED SETTINGS
+#
+
+# Toggle pricing options presented during price creation
+#NEXT_PUBLIC_ALLOW_FIXED_PRICING="true"
+#NEXT_PUBLIC_ALLOW_FREE_PRICING="true"
+
+# Privacy Preference Center
+#NEXT_PUBLIC_PRIVACY_PREFERENCE_CENTER="true"
 ```
 {% endcode %}
-
-### Build a Marketplace container
 
 #### Create a \`Dockerfile\` file and copy the below content into it.
 
