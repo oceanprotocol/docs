@@ -1,11 +1,24 @@
 self.addEventListener('install', function(e) {
-  console.log('script install')
   self.skipWaiting();
 });
 
-self.addEventListener('activate', function(e) {
-  console.log('script activate')
-  self.registration.unregister()
+self.addEventListener("activate", function (event) {
+  event.waitUntil(
+    caches.keys().then(function (cacheNames) {
+      return Promise.all(
+        cacheNames
+          .filter(function (cacheName) {
+            // Return true if you want to remove this cache,
+            // but remember that caches are shared across
+            // the whole origin
+          })
+          .map(function (cacheName) {
+            return caches.delete(cacheName);
+          })
+      );
+    })
+  );
+   self.registration.unregister()
     .then(function() {
       return self.clients.matchAll();
     })
