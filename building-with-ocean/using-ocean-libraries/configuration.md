@@ -15,7 +15,7 @@ cd my-ocean-project
 
 ### Create a `.env` file
 
-In the working directory create a \`.env\` file. The content of this file will store the values for following variables:
+In the working directory create a `.env` file. The content of this file will store the values for following variables:
 
 | Variable name           | Description                                                                                                                                                                 | Required |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -29,7 +29,7 @@ In the working directory create a \`.env\` file. The content of this file will s
 Treat this file as a secret and do not commit this file to git or share the content publicly.
 {% endhint %}
 
-The below tabs show partially filled \`.env\` file content for some of the supported networks.&#x20;
+The below tabs show partially filled `.env` file content for some of the supported networks.&#x20;
 
 {% tabs %}
 {% tab title="Mainnet" %}
@@ -110,9 +110,9 @@ pip3 install ocean-lib python-dotenv web3
 
 ### Create a configuration file
 
-A configuration file will read the content of the \`.env\` file and initialize the required configuration objects which will be used in the further tutorials. The below scripts creates a Web3 wallet instance and a Ocean's configuration object.
+A configuration file will read the content of the `.env` file and initialize the required configuration objects which will be used in the further tutorials. The below scripts creates a Web3 wallet instance and a Ocean's configuration object.
 
-Create the configuration file in the working directory i.e. at the same path where the \`.env\` is located.&#x20;
+Create the configuration file in the working directory i.e. at the same path where the `.env` is located.&#x20;
 
 {% tabs %}
 {% tab title="ocean.js" %}

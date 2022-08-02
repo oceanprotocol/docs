@@ -14,28 +14,34 @@ Create a new file in the same working directory where configuration file (`confi
 {% tab title="ocean.js" %}
 {% code title="mint_datatoken.js" %}
 ```javascript
+// Import dependencies
 const { NftFactory, Datatoken } = require('@oceanprotocol/lib');
 const Web3 = require('web3');
 const { web3Provider, oceanConfig } = require('./config');
 
+// Create a web3 instance
 const web3 = new Web3(web3Provider);
 
 // Change this
 const datatokenAddress = "0xD3542e5F56655fb818F9118CE219e1D10751BC82"
 const receiverAddress = "0xBE5449a6A97aD46c8558A3356267Ee5D2731ab5e"
 
+// Create a function which will take `datatokenAddress` and `receiverAddress` as parameters 
 const mintDatatoken = async (datatokenAddress, receiverAddress) => {
   const accounts = await web3.eth.getAccounts();
   const publisherAccount = accounts[0];
 
+  // Create datatoken instance
   const datatoken = new Datatoken(web3);
 
+  // Get current datatoken balance of receiver
   let receiverBalance = await datatoken.balance(
     datatokenAddress,
     receiverAddress
   );
   console.log(`Receiver balance before mint: ${receiverBalance}`);
 
+  // Mint datatoken
   await datatoken.mint(
     datatokenAddress,
     publisherAccount,
@@ -43,6 +49,7 @@ const mintDatatoken = async (datatokenAddress, receiverAddress) => {
     receiverAddress
   );
 
+  // Get new datatoken balance of receiver
   receiverBalance = await datatoken.balance(
     datatokenAddress,
     receiverAddress
@@ -50,6 +57,7 @@ const mintDatatoken = async (datatokenAddress, receiverAddress) => {
   console.log(`Receiver balance after mint: ${receiverBalance}`);
 };
 
+// Call mintDatatoken(...) function defined above
 mintDatatoken(datatokenAddress, receiverAddress)
   .then(() => {
     process.exit((err) => {
@@ -85,6 +93,7 @@ datatoken = ocean.get_datatoken(datatoken_address)
 
 print(f"Balance before mint: {datatoken.balanceOf(receiver_address)}")
 
+# Mint datatokens
 datatoken.mint(
     account_address=receiver_address,
     value=ocean.to_wei("1"),
