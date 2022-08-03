@@ -1,6 +1,6 @@
 # Mint datatoken
 
-This tutorial will guide you to mint datatoken and send it to a receiver address. The tutorial assumes that you already have the address of the datatoken contract which is owned by you.&#x20;
+This tutorial guides you through the process of minting datatokens and sending them to a receiver address. The tutorial assumes that you already have the address of the datatoken contract which is owned by you.&#x20;
 
 #### Prerequisites
 
