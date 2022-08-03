@@ -29,7 +29,7 @@
     * [Configuration](building-with-ocean/using-ocean-libraries/configuration.md)
     * [Creating a data NFT](building-with-ocean/using-ocean-libraries/creating\_dataNFT.md)
     * [Create datatoken with fixed pricing](building-with-ocean/using-ocean-libraries/create-datatoken-with-fixed-pricing.md)
-    * [Mint datatoken](building-with-ocean/using-ocean-libraries/mint-datatoken.md)
+    * [Mint datatokens](building-with-ocean/using-ocean-libraries/mint-datatoken.md)
     * [Update metadata](building-with-ocean/using-ocean-libraries/update-metadata.md)
   * [Publish assets using hosting services](building-with-ocean/asset-hosting.md)
   * [Compute-to-Data](building-with-ocean/compute-to-data/README.md)
