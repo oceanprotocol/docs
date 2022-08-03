@@ -196,4 +196,4 @@ web3_wallet = Wallet(ocean.web3, user_private_key, ocean.config.block_confirmati
 {% endtab %}
 {% endtabs %}
 
-Now, all the dependencies at ready and you can proceed with interacting with Ocean infrastructure using Ocean libraries.
+Now, all the dependencies are ready and you can proceed with interacting with Ocean infrastructure using Ocean libraries.
