@@ -4,7 +4,10 @@ This tutorial will guide you to update an existing asset published on-chain usin
 
 #### Prerequisites
 
-See [this](configuration.md) guide on defining a `.env` file and a configuration file
+- [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
+- [Set up the .env file](configuration.md#create-a-.env-file)
+- [Install the dependencies](configuration.md#setup-dependencies)
+- [Create a configuration file](configuration.md#create-a-configuration-file)
 
 {% hint style="info" %}
 The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
