@@ -2,7 +2,7 @@
 
 This tutorial will guide you to mint datatoken and send it to a receiver address. The tutorial assumes that you already have the address of the datatoken contract which is owned by you.&#x20;
 
-#### Configuration
+#### Prerequisites
 
 See [this](configuration.md) guide on defining a `.env` file and a configuration file
 
