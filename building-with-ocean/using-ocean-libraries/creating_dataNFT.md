@@ -2,7 +2,7 @@
 
 This tutorial will guide you for creating your own data NFT using Ocean libraries. To know more about data NFT please refer [this page](../../core-concepts/datanft-and-datatoken.md).
 
-#### Configuration
+#### Prerequisites
 
 See [this](configuration.md) guide on defining a `.env` file and a configuration file.
 
