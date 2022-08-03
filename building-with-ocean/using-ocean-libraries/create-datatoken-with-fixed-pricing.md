@@ -2,7 +2,7 @@
 
 This tutorial will guide you for creating your own data NFT and a datatoken using Ocean libraries. To know more about data NFT and datatoken please refer [this page](../../core-concepts/datanft-and-datatoken.md). Ocean Protocol supports different pricing schemes which can be set while publishing an asset. Please refer [this page](../../core-concepts/asset-pricing.md) for more details on pricing schemes.
 
-#### Configuration
+#### Prerequisites
 
 - [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
 - [Set up the .env file](configuration.md#create-a-.env-file)
