@@ -2,7 +2,7 @@
 
 ### Obtaining API key for Ethereum node provider
 
-Ocean libraries need an Ethereum node provider API key to send transactions to the Ocean Protocol's Smart contracts.  See this [guide](../obtaining-api-key.md) on getting an API key to interact with EVM compatible networks. The supported networks are listed [here](../../core-concepts/networks.md).
+Ocean libraries need an Ethereum node provider API key to send transactions to the Ocean Protocol's Smart contracts. See this [guide](../obtaining-api-key.md) on getting an API key to interact with EVM compatible networks. The supported networks are listed [here](../../core-concepts/networks.md).
 
 ### Create a directory
 
@@ -26,10 +26,10 @@ In the working directory create a `.env` file. The content of this file will sto
 | **PROVIDER\_URL**       | The URL of the Provider. This value is needed when publishing a new asset or update an existing asset.                                                                      | No       |
 
 {% hint style="info" %}
-Treat this file as a secret and do not commit this file to git or share the content publicly.
+Treat this file as a secret and do not commit this file to git or share the content publicly. If you are using git, then include this file name in `.gitignore` file.
 {% endhint %}
 
-The below tabs show partially filled `.env` file content for some of the supported networks.&#x20;
+The below tabs show partially filled `.env` file content for some of the supported networks.
 
 {% tabs %}
 {% tab title="Mainnet" %}
@@ -112,7 +112,7 @@ pip3 install ocean-lib python-dotenv web3
 
 A configuration file will read the content of the `.env` file and initialize the required configuration objects which will be used in the further tutorials. The below scripts creates a Web3 wallet instance and a Ocean's configuration object.
 
-Create the configuration file in the working directory i.e. at the same path where the `.env` is located.&#x20;
+Create the configuration file in the working directory i.e. at the same path where the `.env` is located.
 
 {% tabs %}
 {% tab title="ocean.js" %}
