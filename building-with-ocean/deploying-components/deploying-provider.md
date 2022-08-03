@@ -2,14 +2,12 @@
 
 ### About Provider
 
-Provider encrypts the URL and metadata during publish and decrypts the URL when the dataset is downloaded or a compute job is started. It enables the access to data assets by streaming data (and never the URL). It performs checks on chain for buyer permissions and payments. It also Provides compute services (connects to C2D environment).
-The source code of Provider can be access from [here](https://github.com/oceanprotocol/provider). 
+Provider encrypts the URL and metadata during publish and decrypts the URL when the dataset is downloaded or a compute job is started. It enables the access to data assets by streaming data (and never the URL). It performs checks on chain for buyer permissions and payments. It also Provides compute services (connects to C2D environment). The source code of Provider can be access from [here](https://github.com/oceanprotocol/provider).
 
 ### Prerequisites
 
 * Docker and Docker compose are installed. Click [here](https://docs.docker.com/engine/install/) to view guide on installing docker.
-* Ethereum API.
-  See [this](../obtaining-api-key.md) guide on obtaining api key.
+* [Obtain an API key](../using-ocean-libraries/configuration.md#obtaining-api-key-for-ethereum-node-provider)
 
 ### Create a working directory
 
@@ -21,7 +19,6 @@ cd Provider
 ### Create a \`.env\` file
 
 Copy the below content into the \`.env\` file and edit the values as needed.
-
 
 {% code title=".env" %}
 ```
