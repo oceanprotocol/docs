@@ -31,7 +31,6 @@
     * [Create datatoken with fixed pricing](building-with-ocean/using-ocean-libraries/create-datatoken-with-fixed-pricing.md)
     * [Mint datatokens](building-with-ocean/using-ocean-libraries/mint-datatoken.md)
     * [Update metadata](building-with-ocean/using-ocean-libraries/update-metadata.md)
-  * [Publish assets using hosting services](building-with-ocean/asset-hosting.md)
   * [Compute-to-Data](building-with-ocean/compute-to-data/README.md)
     * [Architecture](building-with-ocean/compute-to-data/compute-to-data-architecture.md)
     * [Datasets & Algorithms](building-with-ocean/compute-to-data/compute-to-data-datasets-algorithms.md)
