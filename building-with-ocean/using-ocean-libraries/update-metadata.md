@@ -2,7 +2,7 @@
 
 This tutorial will guide you to update an existing asset published on-chain using Ocean libraries. The tutorial assumes that you already have the `did` of the asset which needs to be updated. In this tutorial, we will update the name, description, tags of the data NFT. Please refer [the page on DDO](../../core-concepts/did-ddo.md) to know more about additional the fields which can be updated.
 
-#### Configuration
+#### Prerequisites
 
 See [this](configuration.md) guide on defining a `.env` file and a configuration file
 
