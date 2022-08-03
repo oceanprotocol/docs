@@ -2,7 +2,15 @@
 
 ### Obtaining API key for Ethereum node provider
 
-Ocean libraries need an Ethereum node provider API key to send transactions to the Ocean Protocol's Smart contracts. See this [guide](../obtaining-api-key.md) on getting an API key to interact with EVM compatible networks. The supported networks are listed [here](../../core-concepts/networks.md).
+Ocean Protocol's smart contracts are deployed on EVM-compatible networks. Using an API key provided by a third-party Ethereum node provider allows you to interact with the Ocean Protocol's smart contracts on the supported networks without requiring you to host a local node.
+
+Choose any API provider of your choice. Some of the commonly used are:
+
+* [Infura](https://infura.io/)
+* [Alchemy](https://www.alchemy.com/)
+* [Moralis](https://moralis.io/)
+
+The supported networks are listed [here](../../core-concepts/networks.md).
 
 ### Create a directory
 
