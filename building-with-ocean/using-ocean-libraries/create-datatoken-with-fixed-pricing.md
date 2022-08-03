@@ -4,7 +4,10 @@ This tutorial will guide you for creating your own data NFT and a datatoken usin
 
 #### Configuration
 
-See [this](configuration.md) guide on defining a `.env` file and a configuration file.
+- [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
+- [Set up the .env file](configuration.md#create-a-.env-file)
+- [Install the dependencies](configuration.md#setup-dependencies)
+- [Create a configuration file](configuration.md#create-a-configuration-file)
 
 #### Create a script to deploy data NFT and datatoken with fixed pricing.
 
