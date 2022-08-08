@@ -23,7 +23,7 @@
   * [Build a Marketplace](building-with-ocean/build-a-marketplace/README.md)
     * [Forking Ocean Market](building-with-ocean/build-a-marketplace/forking-ocean-market.md)
     * [Customising a Market](building-with-ocean/build-a-marketplace/customising-your-market.md)
-    * [Deploying Market](building-with-ocean/build-a-marketplace/deploying-market.md)
+    * [Deploying a Market](building-with-ocean/build-a-marketplace/deploying-market.md)
   * [Using Ocean Libraries](building-with-ocean/using-ocean-libraries/README.md)
     * [Configuration](building-with-ocean/using-ocean-libraries/configuration.md)
     * [Creating a data NFT](building-with-ocean/using-ocean-libraries/creating\_dataNFT.md)
