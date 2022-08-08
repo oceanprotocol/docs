@@ -6,6 +6,8 @@ The result of following GraphQL query returns the information about datatokens.
 Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
 {% endhint %}
 
+#### Query
+
 ```graphql
 {
   tokens(skip:0, first: 2, subgraphError: deny){
@@ -39,10 +41,12 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
 }
 ```
 
-The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+#### Code
 
 {% tabs %}
 {% tab title="Python" %}
+The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+
 **Create script**
 
 {% code title="list_all_tokens.py" %}
@@ -104,7 +108,78 @@ print(json.dumps(result, indent=4, sort_keys=True))
 python list_all_tokens.py
 ```
 {% endtab %}
+
+{% tab title="Javascript" %}
+The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed.
+
+#### Create script
+
+{% code title="listAllTokens.js" %}
+```javascript
+var axios = require('axios');
+
+const query = `{
+    tokens(skip:0, first: 2, subgraphError: deny){
+      id
+      symbol
+      nft {
+        name
+        symbol
+        address
+      }
+      name
+      symbol
+      cap
+      isDatatoken
+      holderCount
+      orderCount
+      orders(skip:0,first:1){
+        amount
+        serviceIndex
+        payer {
+          id
+        }
+        consumer{
+          id
+        }
+        estimatedUSDValue
+        lastPriceToken
+        lastPriceValue
+      }
+    }
+}`
+
+const baseUrl = "https://v4.subgraph.mainnet.oceanprotocol.com"
+const route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
+
+const url = `${baseUrl}${route}`
+
+var config = {
+    method: 'post',
+    url: url,
+    headers: { "Content-Type": "application/json" },
+    data: JSON.stringify({ "query": query })
+};
+
+axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+```
+{% endcode %}
+
+#### Execute script
+
+```bash
+node listAllTokens.js
+```
+{% endtab %}
 {% endtabs %}
+
+#### Response
 
 <details>
 

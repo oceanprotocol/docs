@@ -6,6 +6,8 @@ The result of following GraphQL query returns the information about the Fixed Ra
 Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
 {% endhint %}
 
+#### Query
+
 ```graphql
 {
   fixedRateExchanges(skip:0, first:2, subgraphError:deny){
@@ -42,10 +44,12 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
 }
 ```
 
-The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+#### Code
 
 {% tabs %}
 {% tab title="Python" %}
+The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+
 **Create script**
 
 {% code title="list_fixed_rate_exchanges.py" %}
@@ -56,7 +60,7 @@ import json
 
 query = """
 {
-	fixedRateExchanges(skip:0, first:2, subgraphError:deny){
+  fixedRateExchanges(skip:0, first:2, subgraphError:deny){
     id
     contract
     exchangeId
@@ -110,7 +114,81 @@ print(json.dumps(result, indent=4, sort_keys=True))
 python list_fixed_rate_exchanges.py
 ```
 {% endtab %}
+
+{% tab title="Javascript" %}
+The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed.
+
+#### Create script
+
+{% code title="listFRE.js" %}
+```javascript
+var axios = require('axios');
+
+const query = `{
+  fixedRateExchanges(skip:0, first:2, subgraphError:deny){
+    id
+    contract
+    exchangeId
+    owner{id}
+    datatoken{
+      id
+      name
+      symbol
+    }
+    price
+    datatokenBalance
+    active
+    totalSwapValue
+    swaps(skip:0, first:1){
+      tx
+      by {
+        id
+      }
+      baseTokenAmount
+      dataTokenAmount
+      createdTimestamp
+    }
+    updates(skip:0, first:1){
+      oldPrice
+      newPrice
+      newActive
+      createdTimestamp
+      tx
+    }
+  }
+}`
+
+const baseUrl = "https://v4.subgraph.mainnet.oceanprotocol.com"
+const route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
+
+const url = `${baseUrl}${route}`
+
+var config = {
+  method: 'post',
+  url: url,
+  headers: { "Content-Type": "application/json" },
+  data: JSON.stringify({ "query": query })
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+{% endcode %}
+
+#### Execute script
+
+```bash
+node listFRE.js
+```
+{% endtab %}
 {% endtabs %}
+
+#### Response
 
 <details>
 
