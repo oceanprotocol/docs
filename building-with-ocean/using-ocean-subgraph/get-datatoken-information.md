@@ -1,11 +1,9 @@
 # Get datatoken information
 
-
-
-The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken. &#x20;
+The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
 
 {% hint style="info" %}
-Copy the query in the [graphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks, change the domain name with appropriate subgraph domain as mentioned in [this page](../../core-concepts/networks.md).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
 {% endhint %}
 
 ```graphql
@@ -50,7 +48,7 @@ The python script below can be used to run the the query. If you wish to change 
 
 {% tabs %}
 {% tab title="Python" %}
-#### Create script
+**Create script**
 
 {% code title="datatoken_information.py" %}
 ```python
@@ -108,11 +106,10 @@ response = requests.request("POST", url, headers=headers, data=payload)
 result = json.loads(response.text)
 
 print(json.dumps(result, indent=4, sort_keys=True))
-
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```
 python datatoken_information.py

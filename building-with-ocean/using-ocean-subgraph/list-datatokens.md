@@ -1,9 +1,9 @@
 # List all tokens
 
-The result of following GraphQL query returns the information about datatokens. &#x20;
+The result of following GraphQL query returns the information about datatokens.
 
 {% hint style="info" %}
-Copy the query in the [graphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks, change the domain name with appropriate subgraph domain as mentioned in [this page](../../core-concepts/networks.md).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
 {% endhint %}
 
 ```graphql
@@ -43,7 +43,7 @@ The python script below can be used to run the the query. If you wish to change 
 
 {% tabs %}
 {% tab title="Python" %}
-#### Create script
+**Create script**
 
 {% code title="list_all_tokens.py" %}
 ```python
@@ -95,11 +95,10 @@ response = requests.request("POST", url, headers=headers, data=payload)
 result = json.loads(response.text)
 
 print(json.dumps(result, indent=4, sort_keys=True))
-
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```
 python list_all_tokens.py
@@ -147,4 +146,3 @@ python list_all_tokens.py
 ```
 
 </details>
-

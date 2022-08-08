@@ -1,9 +1,9 @@
 # List Fixed Rate Exchanges
 
-The result of following GraphQL query returns the information about the Fixed Rate Exchanges. &#x20;
+The result of following GraphQL query returns the information about the Fixed Rate Exchanges.
 
 {% hint style="info" %}
-Copy the query in the [graphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks, change the domain name with appropriate subgraph domain as mentioned in [this page](../../core-concepts/networks.md).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
 {% endhint %}
 
 ```graphql
@@ -42,11 +42,11 @@ Copy the query in the [graphiQL interface](https://v4.subgraph.mainnet.oceanprot
 }
 ```
 
-The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.&#x20;
+The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
 
 {% tabs %}
 {% tab title="Python" %}
-#### Create script
+**Create script**
 
 {% code title="list_fixed_rate_exchanges.py" %}
 ```python
@@ -104,7 +104,7 @@ print(json.dumps(result, indent=4, sort_keys=True))
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```
 python list_fixed_rate_exchanges.py
