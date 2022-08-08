@@ -22,7 +22,7 @@
 * [Building with Ocean](building-with-ocean/README.md)
   * [Build a Marketplace](building-with-ocean/build-a-marketplace/README.md)
     * [Forking Ocean Market](building-with-ocean/build-a-marketplace/forking-ocean-market.md)
-    * [Customising Market](building-with-ocean/build-a-marketplace/customising-your-market.md)
+    * [Customising a Market](building-with-ocean/build-a-marketplace/customising-your-market.md)
     * [Deploying Market](building-with-ocean/build-a-marketplace/deploying-market.md)
   * [Using Ocean Libraries](building-with-ocean/using-ocean-libraries/README.md)
     * [Configuration](building-with-ocean/using-ocean-libraries/configuration.md)
