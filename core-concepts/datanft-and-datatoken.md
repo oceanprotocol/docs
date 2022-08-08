@@ -43,6 +43,10 @@ Here's an example.
 * In step 1, Alice **publishes** her dataset with Ocean: this means deploying an ERC721 data NFT contract (claiming copyright/base IP), then an ERC20 datatoken contract (license against base IP).
 * In step 2, she **mints** some ERC20 datatokens and **transfers** 1.0 of them to Bob's wallet; now he has a license to be able to download that dataset.
 
+### TemplateIds
+
+Each data NFT or a datatoken is cloned from a pre-defined template contract. The `templateId` parameter refers to the template from which a data NFT or datatoken is created. Currently, Ocean protocol supports 1 template type for dataNFT and 2 template variants for datatokens, namely: **regular template** and **enterprise template**. Each template supports the same interface but differs in the underlying implementation.
+
 ### Other References
 
 * [Data & NFTs 1: Practical Connections of ERC721 with Intellectual Property](https://blog.oceanprotocol.com/nfts-ip-1-practical-connections-of-erc721-with-intellectual-property-dc216aaf005d)
