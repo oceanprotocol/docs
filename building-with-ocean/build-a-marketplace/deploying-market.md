@@ -6,7 +6,7 @@ featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 description: Step by step guide to a quick deployment of Ocean Market
 ---
 
-# Deploying your market
+# Deploying Market
 
 All that’s left is for you to host your data marketplace and start sharing it with your future users.
 

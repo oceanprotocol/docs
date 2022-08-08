@@ -3,7 +3,7 @@ title: Publish assets using hosting services
 description: Tutorial to publish assets using hosting services like Google Drive and Azure.
 ---
 
-# Publishing with hosting services
+# Publishing with Hosting Services
 
 ### Overview
 
