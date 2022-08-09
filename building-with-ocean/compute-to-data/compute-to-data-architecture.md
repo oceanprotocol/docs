@@ -9,7 +9,7 @@ description: Architecture overview
 
 Here's the sequence diagram for starting a new compute job.
 
-!\[Sequence Diagram for computing services]\(images/Starting New Compute Job.png)
+![Sequence Diagram for computing services](../images/Starting%20New%20Compute%20Job.png)
 
 The Consumer calls the Provider with `start(did, algorithm, additionalDIDs)`. It returns job id `XXXX`. The Provider oversees the rest of the work. At any point, the Consumer can query the Provider for the job status via `getJobDetails(XXXX)`.
 
