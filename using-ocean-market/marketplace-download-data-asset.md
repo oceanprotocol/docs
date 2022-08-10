@@ -2,7 +2,7 @@
 description: Tutorial to download assets using Ocean Market
 ---
 
-# Download a data asset
+# Download a Data Asset
 
 ### Access marketplace
 

@@ -4,7 +4,7 @@ description: >-
   Protocol's components.
 ---
 
-# Setup server
+# Setup a Server
 
 ## **Using hosting services**
 

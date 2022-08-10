@@ -1,6 +1,4 @@
-# Get datatoken information
-
-
+# Get Datatoken Information
 
 The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken. &#x20;
 

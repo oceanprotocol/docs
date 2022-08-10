@@ -1,4 +1,4 @@
-# Create datatoken with fixed pricing
+# Publish with Fixed Pricing
 
 This tutorial guides you through the process of creating your own data NFT and a datatoken with fixed pricing, using Ocean libraries. To know more about data NFTs and datatokens please refer [this page](../../core-concepts/datanft-and-datatoken.md). Ocean Protocol supports different pricing schemes which can be set while publishing an asset. Please refer [this page](../../core-concepts/asset-pricing.md) for more details on pricing schemes.
 

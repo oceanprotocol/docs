@@ -1,4 +1,4 @@
-# Get data NFT information
+# Get Data NFT Information
 
 The result of following GraphQL query returns the information about a particular datatoken. Here, `0x1c161d721e6d99f58d47f709cdc77025056c544c` is the address of the dataNFT. &#x20;
 
