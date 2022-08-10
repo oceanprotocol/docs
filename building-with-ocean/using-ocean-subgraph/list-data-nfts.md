@@ -1,9 +1,9 @@
 # List data NFTs
 
-The result of following GraphQL query returns the information about data nfts.&#x20;
+The result of following GraphQL query returns the information about data nfts.
 
 {% hint style="info" %}
-Copy the query in the [graphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks, change the domain name with appropriate subgraph domain as mentioned in [this page](../../core-concepts/networks.md).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
 {% endhint %}
 
 ```graphql
@@ -62,7 +62,7 @@ print(json.dumps(result, indent=4, sort_keys=True))
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```
 python list_dataNFTs.py
