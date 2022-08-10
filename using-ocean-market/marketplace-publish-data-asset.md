@@ -2,7 +2,7 @@
 description: Tutorial to publish assets using the Ocean Market
 ---
 
-# Publish a data asset
+# Publish a Data Asset
 
 ### What can be published?
 

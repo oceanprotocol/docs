@@ -1,5 +1,5 @@
 ---
-title: Asset pricing
+title: Asset Pricing
 description: Choose the revenue model during asset publishing
 ---
 

@@ -1,4 +1,4 @@
-# List all tokens
+# List all Tokens
 
 The result of following GraphQL query returns the information about datatokens.
 
