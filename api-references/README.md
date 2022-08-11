@@ -1,2 +1,2 @@
-# API references
+# API References
 

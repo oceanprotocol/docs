@@ -1,4 +1,4 @@
-# Deploying Ocean subgraph
+# Deploying Ocean Subgraph
 
 ### About Ocean subgraph
 

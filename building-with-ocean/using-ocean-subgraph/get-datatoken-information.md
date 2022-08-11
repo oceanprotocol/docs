@@ -188,7 +188,7 @@ axios(config)
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```bash
 node datatokenInfo.js

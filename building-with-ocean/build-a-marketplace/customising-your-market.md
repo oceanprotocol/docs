@@ -1,5 +1,5 @@
 ---
-title: Customising Your Market
+title: Customising Market
 order: 2
 hideLanguageSelector: true
 description: Step by step guide to customizing your fork of Ocean market
