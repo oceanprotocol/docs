@@ -6,6 +6,8 @@ The result of following GraphQL query returns the information about data nfts.
 Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
 {% endhint %}
 
+#### Query
+
 ```graphql
 {
   nfts (skip:0, first: 10, subgraphError:deny){
@@ -22,10 +24,14 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
 }
 ```
 
-The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+#### Code snippets
 
 {% tabs %}
 {% tab title="Python" %}
+The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+
+#### Create script
+
 {% code title="list_dataNFTs.py" %}
 ```python
 import requests
@@ -68,7 +74,61 @@ print(json.dumps(result, indent=4, sort_keys=True))
 python list_dataNFTs.py
 ```
 {% endtab %}
+
+{% tab title="Javascript" %}
+The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed.
+
+#### Create script
+
+{% code title="listDatatoken.js" %}
+```javascript
+var axios = require('axios');
+
+const query = `{
+    nfts (skip:0, first: 10, subgraphError:deny){
+      id
+      name
+      symbol
+      owner
+      address
+      assetState
+      tx
+      block
+      transferable
+   }
+}`
+
+const baseUrl = "https://v4.subgraph.mainnet.oceanprotocol.com"
+const route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
+
+const url = `${baseUrl}${route}`
+
+var config = {
+    method: 'post',
+    url: url,
+    headers: { "Content-Type": "application/json" },
+    data: JSON.stringify({ "query": query })
+};
+
+axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+```
+{% endcode %}
+
+#### Execute script
+
+```bash
+node listDatatoken.js
+```
+{% endtab %}
 {% endtabs %}
+
+#### Response
 
 <details>
 
