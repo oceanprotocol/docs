@@ -56,7 +56,7 @@
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
 
-# Community
+## Community
 * [Medium](https://blog.oceanprotocol.com/)
 * [Discord](https://discord.gg/oceanprotocol)
 * [Telegram](https://t.me/OceanProtocol_Community)
