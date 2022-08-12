@@ -72,9 +72,11 @@ Really love building on Ocean and want to dive deeper? Consider joining us full 
 
 ## Get Funding
 
-Funding can be for contributing to the core software, building apps, doing integrations, fixing bugs, community outreach, and more.
+Funding can be for contributing to the core software, building apps, doing integrations, fixing bugs, community outreach, and more. Checkout our active funding programs for more information:
 
-**[This page](https://www.oceanprotocol.com/fund)** has more information.
+- **[Ocean DAO](https://www.oceanprotocol.com/fund)** (grants curated by the community).
+- **[Shipyard](https://oceanprotocol.com/shipyard)** (Ocean curated grants).
+- **[Data Bounties](https://oceanprotocol.com/bounties)** (rewards for publishing algorithms and datasets).
 
 ## Other ways to get involved
 
