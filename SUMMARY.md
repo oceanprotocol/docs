@@ -55,3 +55,10 @@
 * [API References](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
+
+## Community
+* [Medium](https://blog.oceanprotocol.com/)
+* [Discord](https://discord.com/invite/TnXjkR5)
+* [Twitter](https://twitter.com/oceanprotocol)
+
+
