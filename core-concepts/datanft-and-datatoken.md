@@ -45,7 +45,13 @@ Here's an example.
 
 ### TemplateIds
 
-Each data NFT or a datatoken is cloned from a pre-defined template contract. The `templateId` parameter refers to the template from which a data NFT or datatoken is created. Currently, Ocean protocol supports 1 template type for dataNFT and 2 template variants for datatokens, namely: **regular template** and **enterprise template**. Each template supports the same interface but differs in the underlying implementation.
+Each data NFT or a datatoken is cloned from pre-defined template contracts. The `templateId` parameter refers to the template from which a data NFT or datatoken is created. The `templateId` can be set while creating data NFT/datatoken. Currently, Ocean protocol supports 1 template type for dataNFT and 2 template variants for datatokens, namely: **regular template** and **enterprise template**. Each template supports the same interface but differs in the underlying implementation and can have additional features.
+
+The details regarding currently supported datatoken templates are as follows:
+- **Regular template**: The regular template allows users to buy/sell/hold datatokens. The datatokens can be minted by the address having a `MINTER` role, making the supply of datatoken variable. 
+- **Enterprise template**: The enterprise template has additional functions apart from methods in the ERC20 interface. This additional feature allows access to the service by paying in the basetoken instead of datatoken. Internally, the smart contract handles conversion of basetoken to datatoken, initiating an order to access the service, and minting/burning the datatoken. The total supply of the datatoken effectively remains 0 in the case of the enterprise template.
+
+_NOTE: Ocean Protocol might support additional variations of data NFT/datatoken by adding new templates._
 
 ### Other References
 
