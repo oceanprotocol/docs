@@ -4,27 +4,31 @@ An isolated market can determine which assets can be listed in marketplace inter
 
 ### Use case
 
-Suppose Alice and Bob are running their own Aquarius instance and caching assets independently. Now, using isolated an isolated market, Charlie can run a market place that lists assets that are allowed to be stored in both Alice and Bob's Aquarius instances. Here, Charlie would allow wallet addresses of Alice and Bob's Aquarius instances in `ALLOWED_VALIDATORS.` Thus, it is possible to compose marketplaces that list the same asset without the need to republish for each market individually.&#x20;
+Suppose Alice and Bob are running their own Aquarius instance and caching assets independently. Now, using isolated an isolated market, Charlie can run a market place that lists assets that are allowed to be stored in both Alice and Bob's Aquarius instances. Here, Charlie would allow wallet addresses of Alice and Bob's Aquarius instances in `ALLOWED_VALIDATORS`. Thus, it is possible to compose marketplaces that list the same asset without the need to republish for each market individually.&#x20;
 
 ### Deploy Aquarius
 
-The details on deploying Aquarius are on [this page](../deploying-components/deploying-aquarius.md).  Add the `ALLOWED_VALIDATORS` in the [`.env`](../deploying-components/deploying-aquarius.md#create-a-.env-file) file. `ALLOWED_VALIDATORS` is a JSON array of allowed addresses that can act as validators. A validator has to sign the hash of the metadata asset as proof which is then validated by Aquarius. &#x20;
+The details on deploying Aquarius are on [this page](../deploying-components/deploying-aquarius.md).  Add the `ALLOWED_VALIDATORS` in the [`.env`](../deploying-components/deploying-aquarius.md#create-a-.env-file) file. `ALLOWED_VALIDATORS` is a JSON array of allowed addresses that can act as validators. A validator has to sign the hash of the metadata asset as proof which is then validated by Aquarius.&#x20;
+
+`ALLOWED_VALIDATORS` is a list of addresses. e.g., `["0xBE5449a6A97aD46c8558A3356267Ee5D2731ab5e","`0xe2DD09d719Da89e5a3D0F2549c7E24566e947260`"]`
+
+If the asset includes metadata proofs generated be any of the addresses in `ALLOWED_VALIDATORS`, then Aquarius will cache the asset.&#x20;
 
 ### Deploy Market
 
 The details on deploying Market are on [this page](../deploying-components/deploying-marketplace.md). The guide on [customizing market](customising-your-market.md) gives details about changing the theme, colors, font that suits the your requirements. Set the `NEXT_PUBLIC_METADATACACHE_URI` variable in the marketplace [.env file](../deploying-components/deploying-marketplace.md#create-file-with-name-.env) to the correct Aquarius URL hosted in the [previous step](running-isolated-market.md#deploy-aquarius).&#x20;
 
-### Add metadata proof to an asset with&#x20;
+### Add metadata proof to an asset with
 
 #### Generating metadata proof
 
+See [this guide](../using-ocean-libraries/configuration.md) on setting the required configuration for using ocean.py and ocean.js.
+
 {% tabs %}
 {% tab title="Python" %}
-See [this guide](../using-ocean-libraries/configuration.md) on setting the required configuration for using ocean.py
-
-<pre class="language-python"><code class="lang-python">from ocean_lib.aquarius import Aquarius
-from config import web3_wallet, ocean, config
-
+<pre class="language-python" data-title="set_metadata_proof.py"><code class="lang-python">from ocean_lib.aquarius import Aquarius
+<strong>from config import web3_wallet, ocean, config
+</strong>
 # Replace this
 other_aquarius_url = "https://other-aquarius-url"
 
@@ -64,5 +68,68 @@ data_NFT.set_metadata(
     metadata_proofs=[proof],
     from_wallet=web3_wallet,
 )</code></pre>
+{% endtab %}
+
+{% tab title="Javascript" %}
+<pre class="language-javascript" data-title="setMetadataProof.js"><code class="lang-javascript"><strong>// Import dependencies
+</strong><strong>const {
+</strong>    Nft,
+    ProviderInstance,
+    getHash,
+    Aquarius
+} = require('@oceanprotocol/lib');
+const { SHA256 } = require('crypto-js');
+const Web3 = require('web3');
+const { web3Provider, oceanConfig } = require('./config');
+
+const web3 = new Web3(web3Provider);
+const aquarius = new Aquarius(oceanConfig.metadataCacheUri);
+const nft = new Nft(web3);
+const providerUrl = oceanConfig.providerUri;
+
+// Replace the did
+const did = "did:op:656b3ab786fc76255988d8c106c7df6db8af9fada6a5b5f9989377da05f8827a";
+
+const setMetadataProof = async (did) => {
+    const accounts = await web3.eth.getAccounts();
+    const publisherAccount = accounts[0];
+
+    const ddo = await aquarius.resolve(did);
+
+    providerResponse = await ProviderInstance.encrypt(ddo, providerUrl);
+    const encryptedResponse = await providerResponse;
+    const metadataHash = getHash(JSON.stringify(ddo));
+    
+    // Replace the Auqarius URL
+    const otherAquariusURL = "&#x3C;some-other-aquarius>"
+    const otherAquarius = new Aquarius(otherAquariusURL);
+    
+    // Generate a proof
+    const { valid, proof, hash } = await otherAquarius.validate(ddo);
+
+    if (!valid) return;
+
+    await nft.setMetadata(
+        ddo.nftAddress,
+        publisherAccount,
+        0,
+        providerUrl,
+        '',
+        '0x2',
+        encryptedResponse,
+        `0x${metadataHash}`,
+        // Set the metadata proof
+        [proof]
+
+    );
+};
+
+setMetadataProof(did).then(() => {
+    process.exit();
+}).catch((err) => {
+    console.error(err);
+    process.exit(1);
+});
+</code></pre>
 {% endtab %}
 {% endtabs %}
