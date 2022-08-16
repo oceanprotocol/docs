@@ -37,6 +37,9 @@ DB_PASSWORD=password
 # Replace below value with the API provider of your choice
 EVENTS_RPC_POLYGON=<polygon-key>
 EVENTS_RPC_MAINNET=<mainnet-key>
+
+# Optional environment variable
+ALLOWED_VALIDATORS='' 
 ```
 {% endcode %}
 
@@ -87,6 +90,7 @@ services:
       EVENTS_ALLOW: 0
       RUN_EVENTS_MONITOR: 0
       ALLOWED_PUBLISHERS: ${ALLOWED_PUBLISHERS}
+      ALLOWED_VALIDATORS: ${ALLOWED_VALIDATORS}
 volumes:
   data:
     driver: local
