@@ -13,6 +13,14 @@ Fungible tokens represent fungible assets. If you have 5 ETH and Alice has 5 ETH
 
 ![Data NFT and datatoken](../.gitbook/assets/datanft-and-datatoken.png)
 
+## What is a Data NFT?
+
+A data NFT represents the copyright (or exclusive license against copyright) for a data asset on the blockchain — we call this the “base IP”. When a user publishes a dataset in OceanOnda V4, they create a new NFT as part of the process. This data NFT is proof of your claim of base IP. Assuming a valid claim, you are entitled to the revenue from that asset, just like a title deed gives you the right to receive rent.
+
+The data NFT smart contract holds metadata about the data asset, stores roles like “who can mint datatokens” or “who controls fees”, and an open-ended key-value store to enable custom fields.
+
+If you have the private key that controls the NFT, you are the owner of that NFT. The owner has the claim on the base IP and is the default recipient of any revenue. They can also assign another account to receive revenue. This enables the publisher to sell their base IP and the revenues that come with it. When the Data NFT is transferred to another user, all the information about roles and where the revenue should be sent is reset. The default recipient of the revenue is the new owner of the data NFT.
+
 ### High-Level Architecture
 
 The image above describes how ERC721 data NFTs, ERC20 datatokens, and AMMs relate.
