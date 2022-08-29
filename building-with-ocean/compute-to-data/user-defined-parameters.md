@@ -65,7 +65,7 @@ The publisher now must provide the file URL as `https://example.com` while publi
 
 ![](../../.gitbook/assets/compute-to-data-parameters-publish-dataset.png)
 
-To view a complete tutorial on publishing asset using Ocean Marketplace click [here](../../using-ocean-market/marketplace-publish-data-asset.md).
+For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../using-ocean-market/marketplace-publish-data-asset.md).
 
 ### Publish an algorithm that uses custom parameters
 
