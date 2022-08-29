@@ -28,7 +28,7 @@ Suppose the publisher defines the following 2 parameters:
 * `location`: A string indicating region code
 * `type`: A string indicating the type of weather data. It can be temperature/humidity/pressure.
 
-Suppose the buyer wants to download the temperature data in the region code `XYZ`. While downloading the data buyer enters the desired parameter values using ocean.py or ocean.js.
+Suppose the buyer wants to download the temperature data in the region code `XYZ`. While downloading the data, the buyer enters the desired parameter values using ocean.py or ocean.js.
 
 The provider will decrypt the URL from the DDO published on-chain, construct a new URL with the additional parameters and finally stream data to the buyer.
 
