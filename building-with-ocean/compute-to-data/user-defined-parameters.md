@@ -28,7 +28,7 @@ Suppose the publisher defines the following 2 parameters:
 * `location`: A string indicating region code
 * `type`: A string indicating the type of weather data. It can be temperature/humidity/pressure.
 
-Suppose the buyer wants to download the temperature data in the region code `XYZ`. While downloading the data, the buyer enters the desired parameter values using ocean.py or ocean.js.
+Suppose the buyer wants to download the temperature data in the region code `XYZ`. While downloading the data, the buyer enters the desired parameter values using ocean.py.
 
 The provider will decrypt the URL from the DDO published on-chain, construct a new URL with the additional parameters and finally stream data to the buyer.
 
@@ -111,7 +111,12 @@ For a complete tutorial on publishing asset using Ocean Marketplace read [our gu
 
 ### Starting compute job with custom parameters
 
-In this example, the buyer wants to run the algorithm with certain parameters on a selected dataset. The code snippet below shows how the buyer can start the compute job with custom parameter values. Searching the dataset, allowing the algorithm to run on the dataset, buying datatokens, setting up ocean.py/ocean.js is out of scope of this tutorial.
+In this example, the buyer wants to run the algorithm with certain parameters on a selected dataset. The code snippet below shows how the buyer can start the compute job with custom parameter values. Before embarking on this tutorial you should familiarize yourself with how to:
+
+* Search for a dataset using [Ocean market](https://market.oceanprotocol.com/) or [Aquarius API](../../api-references/aquarius-rest-api.md)
+* [Allow an algorithm to run on the dataset](https://github.com/oceanprotocol/ocean.py/blob/6eb068df338abc7376430cc5ba7fe2d381508328/READMEs/c2d-flow.md#5-alice-allows-the-algorithm-for-c2d-for-that-data-asset)
+* Buy datatokens using [Ocean market](https://market.oceanprotocol.com/) or [ocean.py](https://github.com/oceanprotocol/ocean.py)
+* [Set up ocean.py](../using-ocean-libraries/configuration.md)
 
 For configuring ocean.py/ocean.js, please refer this [guide](../using-ocean-libraries/configuration.md). Copy the below code snippet to a file locally after completing required configurations and execute the script.
 
@@ -120,10 +125,9 @@ For configuring ocean.py/ocean.js, please refer this [guide](../using-ocean-libr
 <pre class="language-python" data-title="start_compute.py"><code class="lang-python"># Import dependencies
 from config import web3_wallet, ocean, config, web3_wallet
 from ocean_lib.models.compute_input import ComputeInput
-
 <strong># Replace theses variables with the appropriate did values
-</strong><strong>dataset_did = "did:op:&#x3C;>"
-</strong>algorithm_did = "did:op:&#x3C;>"
+</strong>dataset_did = "did:op:&#x3C;>"
+algorithm_did = "did:op:&#x3C;>"
 
 # Define algorithm input
 algorithm_input = {
@@ -180,4 +184,3 @@ python start_compute.py
 ```
 {% endtab %}
 {% endtabs %}
-
