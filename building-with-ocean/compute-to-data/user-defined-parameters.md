@@ -111,7 +111,7 @@ For a complete tutorial on publishing asset using Ocean Marketplace read [our gu
 
 ### Starting compute job with custom parameters
 
-After the publishing, assume that a buyer wants to run the with certain parameters algorithm on selected dataset. The code snippet below shows how the buyer can start the compute job with custom parameter values. Searching dataset, allowing algorithm to run the dataset, buying datatokens, setting up ocean.py/ocean.js is out of scope of this tutorial.
+In this example, the buyer wants to run the algorithm with certain parameters on a selected dataset. The code snippet below shows how the buyer can start the compute job with custom parameter values. Searching the dataset, allowing the algorithm to run on the dataset, buying datatokens, setting up ocean.py/ocean.js is out of scope of this tutorial.
 
 For configuring ocean.py/ocean.js, please refer this [guide](../using-ocean-libraries/configuration.md). Copy the below code snippet to a file locally after completing required configurations and execute the script.
 
