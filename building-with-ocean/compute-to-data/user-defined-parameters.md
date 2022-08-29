@@ -17,7 +17,7 @@ There 2 are types of parameters that asset publishers can support:
 
 ### Publish a dataset that uses custom parameters
 
-The dataset publisher can support these parameters to allow filtering, querying on the published dataset. The additional parameters that facilitate this are called `User defined parameters`. The Provider combines the original asset URL and the entered parameter values into a new URL and then streams the response from the modified URL back to the buyer.
+The dataset publisher can support these parameters to allow filtering or querying of the published dataset. The additional parameters that facilitate this are called `User defined parameters`. The Provider combines the original asset URL and the entered parameter values into a new URL and then streams the response from the modified URL back to the buyer.
 
 #### Use case for user defined parameters
 
