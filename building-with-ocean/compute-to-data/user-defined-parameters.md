@@ -21,7 +21,7 @@ The dataset publisher can support these parameters to allow filtering or queryin
 
 #### Use case for user defined parameters
 
-For example, if the publisher has published an URL `https://example.com` which serves large size historical weather data from all over the world. If the publisher wants to allow buyers to filter the data based on location, type of data, etc., it is possible to do so using user defined parameters.
+For example, if the publisher has published an URL `https://example.com` which serves large size historical weather data from all over the world, the publisher could allow buyers to filter the data based on location, type of data, etc. It is possible to do this using user defined parameters.
 
 Suppose the publisher defines the following 2 parameters:
 
