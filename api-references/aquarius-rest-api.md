@@ -15,7 +15,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/assets/ddo/did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479'
     ```
 * Responses
   * 200
@@ -45,7 +45,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/assets/metadata/did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/metadata/did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479'
     ```
 * Responses
   * 200
@@ -75,7 +75,7 @@
 *   Example
 
     ```bash
-    curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/assets/names' \
+    curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/names' \
     --header 'Content-Type: application/json' \
     --data-raw '{
         "didList" : ["did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479"]
@@ -109,7 +109,7 @@
 *   Example
 
     ```bash
-    curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/assets/query' \
+    curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query' \
     --header 'Content-Type: application/json' \
     --data-raw '{
         "query": {
@@ -197,7 +197,7 @@
 *   Example
 
     ```bash
-    curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/assets/triggerCaching' \
+    curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/triggerCaching' \
     --header 'Content-Type: application/json' \
     --data-raw '<json_body>'
     ```
@@ -227,7 +227,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/chains/list'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/list'
     ```
 * Response
   * 200
@@ -249,7 +249,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/chains/status/137'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/status/137'
     ```
 * Response
   * 200
@@ -270,7 +270,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/'
     ```
 * Response
   * 200
@@ -281,7 +281,7 @@
         {
             "plugin": "elasticsearch",
             "software": "Aquarius",
-            "version": "3.1.2"
+            "version": "4.2.0"
         }
         ```
 
@@ -293,7 +293,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/health'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/health'
     ```
 * Response
   * 200
@@ -312,7 +312,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/spec'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/spec'
     ```
 * Response
   * 200
