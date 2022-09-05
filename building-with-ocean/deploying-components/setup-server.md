@@ -4,7 +4,7 @@ description: >-
   Protocol's components.
 ---
 
-# Setup server
+# Setup a Server
 
 ## **Using hosting services**
 
@@ -22,13 +22,13 @@ Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
 #### Configure droplet
 
-Select Ubuntu OS and choose a plan. The required CPU, Memory depends on the number of requests Aquarius is expected to serve.&#x20;
+Select Ubuntu OS and choose a plan. The required CPU, Memory depends on the number of requests Aquarius is expected to serve.
 
 ![Configure droplet](<../../.gitbook/assets/image (8).png>)
 
 Also, select the region where you want Aquarius to be hosted and a root password.
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (10).png>)
 
 ![Click Create Droplet](<../../.gitbook/assets/image (7).png>)
 
@@ -58,8 +58,7 @@ sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
 
-Now that, the server is ready with all the required dependencies are installed for hosting Ocean Components, follow the instructions given in Component specific guide.&#x20;
+Now that, the server is ready with all the required dependencies are installed for hosting Ocean Components, follow the instructions given in Component specific guide.
 
 * [Deploying Marketplace](deploying-marketplace.md)
-* [ Deploying Aquarius ](deploying-aquarius.md)
-
+* [Deploying Aquarius](deploying-aquarius.md)

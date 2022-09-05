@@ -2,11 +2,11 @@
 title: Deployment of Ocean Market
 order: 3
 hideLanguageSelector: true
-description: Step by step guide to a quick deployment of Ocean Market
 featuredImage: images/creatures/mantaray/mantaray-full@2x.png
+description: Step by step guide to a quick deployment of Ocean Market
 ---
 
-# 🔰 Quick deployment of Ocean Market
+# Deploying Market
 
 All that’s left is for you to host your data marketplace and start sharing it with your future users.
 
@@ -15,7 +15,7 @@ All that’s left is for you to host your data marketplace and start sharing it 
 To host your data marketplace, you need to run the build command:
 
 ```
-npm run build
+npm run build:static
 ```
 
 This takes a few minutes to run. While this is running, you can get prepared to host your new data marketplace. You have many options for hosting your data marketplace (including AWS S3, Vercel, Netlify and many more). In this guide, we will demonstrate how to host it with surge, which is completely free and very easy to use.
@@ -29,7 +29,7 @@ npm install --global surge
 When this is complete, navigate back to the terminal window that is building your finished data marketplace. Once the build is completed, enter the following commands to enter the public directory and host it:
 
 ```
-cd public
+cd out
 ```
 
 ```

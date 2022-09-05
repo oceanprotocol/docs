@@ -1,4 +1,4 @@
-# Deploying Ocean subgraph
+# Deploying Ocean Subgraph
 
 ### About Ocean subgraph
 
@@ -8,11 +8,7 @@ Ocean subgraph allows querying the datatoken, dataNFT, and all event information
 
 * A server for hosting Ocean subgraph. See [this guide](setup-server.md) on creating a server.
 * Docker and Docker compose are installed. Click [here](https://docs.docker.com/engine/install/) to view guide on installing docker.
-* Ethereum API. Aquarius uses Ethereum api for monitoring on-chain events.\
-  Choose any api provider of your choice. Some of the commonly used are:
-  * [Infura](https://infura.io/)
-  * [Alchemy](https://www.alchemy.com/)
-  * [Moralis](https://moralis.io/)
+* [Obtain an API key](../using-ocean-libraries/configuration.md#obtaining-api-key-for-ethereum-node-provider)
 
 ### Create a working directory
 
