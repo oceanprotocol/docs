@@ -62,7 +62,7 @@ Ocean provides convenient methods to list ERC20 datatokens for sale, with fixed-
 
 ### High-Level Behavior
 
-![Flow](<../.gitbook/assets/use case>)
+![Flow](<images/use-case (1).png>)
 
 Here's an example.
 
@@ -76,9 +76,9 @@ Each data NFT or a datatoken is cloned from pre-defined template contracts. The 
 The only data NFT template currently available has templateId `1` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC721Template.sol).
 
 The details regarding currently supported datatoken templates are as follows:
-- **Regular template**: The regular template allows users to buy/sell/hold datatokens. The datatokens can be minted by the address having a `MINTER` role, making the supply of datatoken variable. This template is assigned templateID `1` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20Template.sol).
 
-- **Enterprise template**: The enterprise template has additional functions apart from methods in the ERC20 interface. This additional feature allows access to the service by paying in the basetoken instead of datatoken. Internally, the smart contract handles conversion of basetoken to datatoken, initiating an order to access the service, and minting/burning the datatoken. The total supply of the datatoken effectively remains 0 in the case of the enterprise template. This template is assigned templateID `2` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20TemplateEnterprise.sol).
+* **Regular template**: The regular template allows users to buy/sell/hold datatokens. The datatokens can be minted by the address having a `MINTER` role, making the supply of datatoken variable. This template is assigned templateID `1` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20Template.sol).
+* **Enterprise template**: The enterprise template has additional functions apart from methods in the ERC20 interface. This additional feature allows access to the service by paying in the basetoken instead of datatoken. Internally, the smart contract handles conversion of basetoken to datatoken, initiating an order to access the service, and minting/burning the datatoken. The total supply of the datatoken effectively remains 0 in the case of the enterprise template. This template is assigned templateID `2` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20TemplateEnterprise.sol).
 
 _NOTE: Ocean Protocol might support additional variations of data NFT/datatoken by adding new templates._
 
@@ -88,9 +88,8 @@ Fractional ownership is an exciting sub-niche of Web3, at the intersection of NF
 
 Ocean provides two approaches to fractional ownership:
 
-- Sharded holding of ERC20 datatokens, where each ERC20 holder has the usual datatoken rights as described above, e.g. 1.0 datatokens to consume an asset. This comes out-of-the-box with Ocean.
-
-- Sharding ERC721 data NFT, where each co-holder has right to some earnings against base IP, and co-controls the data NFT. For example, there’s a DAO with the sole purpose to hold the data NFT; this DAO has its own ERC20 token; DAO members vote with tokens to update data NFT roles or deploy ERC20 datatokens against the ERC721.
+* Sharded holding of ERC20 datatokens, where each ERC20 holder has the usual datatoken rights as described above, e.g. 1.0 datatokens to consume an asset. This comes out-of-the-box with Ocean.
+* Sharding ERC721 data NFT, where each co-holder has right to some earnings against base IP, and co-controls the data NFT. For example, there’s a DAO with the sole purpose to hold the data NFT; this DAO has its own ERC20 token; DAO members vote with tokens to update data NFT roles or deploy ERC20 datatokens against the ERC721.
 
 Note: For (2), one might consider doing sharding with something like Niftex. But then there are questions: what rights do the shard-holders get exactly? It could be zero; for example, Amazon shareholders don’t have the right to walk the hallways of the Amazon offices just because they hold shares. Secondly, how do the shard-holders control the data NFT? These questions get resolved by using a tokenized DAO, as described above.
 

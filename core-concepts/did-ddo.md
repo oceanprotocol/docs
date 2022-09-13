@@ -33,7 +33,7 @@ The DDO is stored on-chain as part of the NFT contract and stored in encrypted f
 
 Here is the flow:
 
-![DDO flow](<images/ddo-flow (1).png>)
+![DDO flow](images/ddo-flow.png)
 
 <details>
 
