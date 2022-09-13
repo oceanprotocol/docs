@@ -193,7 +193,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`consumerParameters`**    | [Consumer Parameters](did-ddo.md#consumer-parameters) |                                 | An object the defines required consumer input before consuming the asset                                                                     |
 | **`additionalInformation`** | Object                                                |                                 | Stores additional information, this is customizable by publisher                                                                             |
 
-##### Files
+#### Files
 
 The `files` field is returned as a `string` which holds the encrypted file URLs.
 
@@ -294,7 +294,7 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
 
 This only concerns metadata about a file, but never the file URLs. The only way to decrypt them is to exchange at least 1 datatoken based on the respective service pricing scheme.
 
-##### Compute Options
+#### Compute Options
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
@@ -369,7 +369,7 @@ Example:
 }
 ```
 
-##### Consumer Parameters
+#### Consumer Parameters
 
 Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job. Examples:
 
