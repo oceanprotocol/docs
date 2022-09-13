@@ -300,10 +300,10 @@ An asset with a service of `type` `compute` has the following additional attribu
 
 | Attribute                      | Type     | Required | Description                                                 |
 | ------------------------------ | -------- | -------- | ----------------------------------------------------------- |
-| `allowRawAlgorithm`            | `boolean` | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| `allowNetworkAccess`           | `boolean` | **✓**    | If `true`, the algorithm job will have network access.       |
-| `publisherTrustedAlgorithmPublishers` | Array of `string` | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.     |
-| `publisherTrustedAlgorithms`   | Array of `publisherTrustedAlgorithms`  | **✓** |                             |
+| `allowRawAlgorithm`            | `boolean` | **✓**| If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| `allowNetworkAccess`           | `boolean` | **✓**| If `true`, the algorithm job will have network access.       |
+| `publisherTrustedAlgorithmPublishers` | Array of `string` | **✓**| If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.     |
+| `publisherTrustedAlgorithms`   | Array of `publisherTrustedAlgorithms`  |**✓**| If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).|
 
 
 
@@ -311,9 +311,9 @@ The `publisherTrustedAlgorithms` is an array of objects with the following struc
 
 | Attribute                      | Type     | Required | Description                                                 |
 | ------------------------------ | -------- | -------- | ----------------------------------------------------------- |
-| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher. |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                    |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`).            |
+| **`did`**                      | `string` | **✓** | The DID of the algorithm which is trusted by the publisher. |
+| **`filesChecksum`**            | `string` | **✓** | Hash of algorithm's files (as `string`).                    |
+| **`containerSectionChecksum`** | `string` | **✓** | Hash of algorithm's image details (as `string`).            |
 
 To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
 
