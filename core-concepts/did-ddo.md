@@ -298,12 +298,12 @@ This only concerns metadata about a file, but never the file URLs. The only way 
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-| Attribute                      | Type     | Required | Description                                                 |
+| Attribute                      | Type     | Required | Description   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                                              |
 | ------------------------------ | -------- | -------- | ----------------------------------------------------------- |
-| `allowRawAlgorithm`            | `boolean` | **✓**| If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| `allowNetworkAccess`           | `boolean` | **✓**| If `true`, the algorithm job will have network access.       |
-| `publisherTrustedAlgorithmPublishers` | Array of `string` | **✓**| If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.     |
-| `publisherTrustedAlgorithms`   | Array of `publisherTrustedAlgorithms`  |**✓**| If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).|
+| `allowRawAlgorithm`            | `boolean` | **✓** | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| `allowNetworkAccess`           | `boolean` | **✓** | If `true`, the algorithm job will have network access.       |
+| `publisherTrustedAlgorithmPublishers` | Array of `string` | **✓** | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.     |
+| `publisherTrustedAlgorithms`   | Array of `publisherTrustedAlgorithms`  | **✓** | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below). |
 
 
 
