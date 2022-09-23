@@ -33,7 +33,7 @@ The DDO is stored on-chain as part of the NFT contract and stored in encrypted f
 
 Here is the flow:
 
-![DDO flow](<images/ddo-flow (1).png>)
+![DDO flow](images/ddo-flow.png)
 
 <details>
 
@@ -128,8 +128,7 @@ Example:
   }
 }
 ```
-
-**Algorithm Metadata**
+#### Algorithm Metadata
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
@@ -194,7 +193,7 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`consumerParameters`**    | [Consumer Parameters](did-ddo.md#consumer-parameters) |                                 | An object the defines required consumer input before consuming the asset                                                                     |
 | **`additionalInformation`** | Object                                                |                                 | Stores additional information, this is customizable by publisher                                                                             |
 
-**Files**
+#### Files
 
 The `files` field is returned as a `string` which holds the encrypted file URLs.
 
@@ -295,31 +294,26 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
 
 This only concerns metadata about a file, but never the file URLs. The only way to decrypt them is to exchange at least 1 datatoken based on the respective service pricing scheme.
 
-**Compute Options**
+#### Compute Options
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-| **`allowRawAlgorithm`**                   |          |                                                                                                                                                                                                                           |
-| ----------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Type                                      | Required | Description                                                                                                                                                                                                               |
-| `boolean`                                 | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| **`allowNetworkAccess`**                  |          |                                                                                                                                                                                                                           |
-| Type                                      | Required | Description                                                                                                                                                                                                               |
-| `boolean`                                 | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                    |
-| **`publisherTrustedAlgorithmPublishers`** |          |                                                                                                                                                                                                                           |
-| Type                                      | Required | Description                                                                                                                                                                                                               |
-| Array of `string`                         | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.                                              |
-| **`publisherTrustedAlgorithms`**          |          |                                                                                                                                                                                                                           |
-| Type                                      | Required | Description                                                                                                                                                                                                               |
-| Array of `publisherTrustedAlgorithms`     | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).                                       |
+
+| Attribute                      | Type     | Required | Description                  |
+| ------------------------------- | ----- | ----- | ----------------------------------------------------------- |
+| `allowRawAlgorithm`            | `boolean` | **✓** | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| `allowNetworkAccess`           | `boolean` | **✓** | If `true`, the algorithm job will have network access.       |
+| `publisherTrustedAlgorithmPublishers` | Array of `string` | **✓** | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.     |
+| `publisherTrustedAlgorithms`   | Array of `publisherTrustedAlgorithms`  | **✓** | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below). |
+
 
 The `publisherTrustedAlgorithms` is an array of objects with the following structure:
 
 | Attribute                      | Type     | Required | Description                                                 |
-| ------------------------------ | -------- | -------- | ----------------------------------------------------------- |
-| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher. |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                    |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`).            |
+| ------------------------------ | -------- | ---- | -------------------------------------------------------------- |
+| **`did`**                      | `string` | **✓** | The DID of the algorithm which is trusted by the publisher. |
+| **`filesChecksum`**            | `string` | **✓** | Hash of algorithm's files (as `string`).                    |
+| **`containerSectionChecksum`** | `string` | **✓** | Hash of algorithm's image details (as `string`).            |
 
 To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
 
@@ -375,7 +369,7 @@ Example:
 }
 ```
 
-**Consumer Parameters**
+#### Consumer Parameters
 
 Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job. Examples:
 
@@ -385,7 +379,7 @@ Sometimes, the asset needs additional input data before downloading or running a
 The `consumerParameters` is an array of objects. Each object defines a field and has the following structure:
 
 | Attribute         | Type                             | Required | Description                                                                |
-| ----------------- | -------------------------------- | -------- | -------------------------------------------------------------------------- |
+| ----------------- | -------------------------------- | ---- | -------------------------------------------------------------------------- |
 | **`name`**        | `string`                         | **✓**    | The parameter name (this is sent as HTTP param or key towards algo)        |
 | **`type`**        | `string`                         | **✓**    | The field type (text, number, boolean, select)                             |
 | **`label`**       | `string`                         | **✓**    | The field label which is displayed                                         |

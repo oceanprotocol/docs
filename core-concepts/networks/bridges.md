@@ -68,7 +68,7 @@ While in the first two cases, the transactions are signed on the Ethereum Mainne
 | What               | Value                                    |
 | ------------------ | ---------------------------------------- |
 | Network Name       | `Matic Mainnet`                          |
-| RPC                | `https://rpc.polygon.oceanprotocol.com/` |
+| RPC                | `https://polygon-rpc.com/` |
 | Chain Id           | `137`                                    |
 | Currency Symbol    | `MATIC`                                  |
 | Block Explorer URL | `https://explorer.matic.network/`        |
