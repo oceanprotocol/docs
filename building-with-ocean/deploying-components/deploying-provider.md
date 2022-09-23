@@ -34,6 +34,10 @@ AQUARIUS_URL=<aquarius-url>
 
 ### Create docker-compose file
 
+{% hint style="info" %}
+Set the value of OCEAN\_PROVIDER\_WORKERS to 2 or more to avoid a race condition when provider checks whether it should call a remote provider or not.
+{% endhint %}
+
 {% code title="docker-compose.provider.yml" %}
 ```yaml
 version: '3'
@@ -50,7 +54,7 @@ services:
       PROVIDER_PRIVATE_KEY: ${PROVIDER_PRIVATE_KEY}
       LOG_LEVEL: DEBUG
       OCEAN_PROVIDER_URL: "http://0.0.0.0:8030"
-      OCEAN_PROVIDER_WORKERS: "1"
+      OCEAN_PROVIDER_WORKERS: "2"
       OCEAN_PROVIDER_TIMEOUT: "9000"
       # Defining OPERATOR_SERVICE_URL is optional. Set the value only if Provider should support Compute-to-data. 
       OPERATOR_SERVICE_URL: "<operator-service-url>"
