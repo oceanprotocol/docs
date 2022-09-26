@@ -218,7 +218,7 @@ During the publish process, file URLs must be encrypted with a respective _Provi
 }
 ```
 
-**Storage Objects**
+**Storage Object Types**
 
 **`url`**
 
