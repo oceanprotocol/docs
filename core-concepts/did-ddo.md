@@ -206,7 +206,7 @@ Example:
 }
 ```
 
-During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider where "files" contains one or more Storage Objects.
+During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider:
 
 ```json
 {
@@ -218,7 +218,9 @@ During the publish process, file URLs must be encrypted with a respective _Provi
 }
 ```
 
-**Storage Object Types**
+where "files" contains one or more storage objects.
+
+**Type of objects supported :**
 
 **`url`**
 
@@ -248,7 +250,7 @@ Arweave Transaction ID.
 }
 ```
 
-**Future Integrations**
+**First class integrations supported in the future :**
 
 **`ipfs`**
 
