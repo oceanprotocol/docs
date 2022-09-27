@@ -18,7 +18,7 @@ Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create 
 
 Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (2).png>)
 
 #### Configure droplet
 
@@ -28,7 +28,7 @@ Select Ubuntu OS and choose a plan. The required CPU, Memory depends on the numb
 
 Also, select the region where you want Aquarius to be hosted and a root password.
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (6).png>)
 
 ![Click Create Droplet](<../../.gitbook/assets/image (7).png>)
 

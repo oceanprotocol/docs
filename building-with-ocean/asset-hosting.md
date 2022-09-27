@@ -19,7 +19,41 @@ Publishers can choose any hosting service of their choice. The below section exp
 
 #### Arweave
 
+[Arweave](https://www.arweave.org/) is a global, permanent, and decentralized data storage layer that allows you to store documents and applications forever. Arweave is different from other decentralized storage solutions in that there is only one up-front cost to upload each file.
 
+**Step 1 - Get a new wallet and AR tokens**
+
+Download & save a new wallet (JSON key file) and receive a small amount of AR tokens for free using the [Arweave faucet](https://faucet.arweave.net/). If you already have an Arweave browser wallet, you can skip to Step 3.
+
+At the time of writing, the faucet provides 0.02 AR which is more than enough to upload file.
+
+If at any point you need more AR tokens, you can fund your wallet from one of Arweave's [supported exchanges](https://arwiki.wiki/#/en/Exchanges).
+
+**Step 2 - Load the key file into the arweave.app web wallet**
+
+Open [arweave.app](https://arweave.app/) in a browser. Select the '+' icon in the bottom left corner of the screen. Import the JSON key file from step 1.
+
+<figure><img src="../.gitbook/assets/Screenshot from 2022-09-26 19-32-51.png" alt=""><figcaption><p>arweave.app import key file</p></figcaption></figure>
+
+**Step 3 - Upload file**
+
+Select the newly imported wallet by clicking the "blockies" style icon in the top left corner of the screen. Select **Send.** Click the **Data** field and select the file you wish to upload.
+
+<figure><img src="../.gitbook/assets/Screenshot from 2022-09-26 19-38-58.png" alt=""><figcaption><p>arweave.app upload file</p></figcaption></figure>
+
+The fee in AR tokens will be calculated based on the size of the file and displayed near the bottom middle part of the screen. Select **Submit** to submit the transaction.
+
+After submitting the transaction, select **Transactions** and wait until the transaction appears and eventually finalizes. This can take over 5 minutes so please be patient.&#x20;
+
+**Step 4 - Copy the transaction ID**
+
+Once the transaction finalizes, select it, and copy the transaction ID.
+
+<figure><img src="../.gitbook/assets/Screenshot from 2022-09-26 20-06-01.png" alt=""><figcaption><p>arweave.app transaction ID</p></figcaption></figure>
+
+**Step 5 - Publish the asset with the transaction ID**
+
+TODO - Add a picture of the Ocean Market publish page with Arweave storage selected
 
 #### Google Drive
 
