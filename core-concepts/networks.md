@@ -183,15 +183,15 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 | Provider     | `https://v4.provider.rinkeby.oceanprotocol.com`                      |
 | Subgraph     | `https://v4.subgraph.rinkeby.oceanprotocol.com`                      |
 
-### Goerli
+### Görli
 
-Goerli is a test network.
+Görli is a test network.
 
 In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Görli_.
 
 **Tokens**
 
-* Goerli ETH:
+* Görli ETH:
   * Native token to pay transaction fees
   * [Faucet](https://goerlifaucet.com/). You may find others by [searching](https://www.google.com/search?q=goerli+ether+faucet%5C&oq=goerli+ether+faucet).
 * Goerli OCEAN:
