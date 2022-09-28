@@ -187,7 +187,7 @@ In MetaMask and other ERC20 wallets, click on the network name dropdown, then se
 
 Görli is a test network.
 
-In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Görli_.
+In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Goerli_.
 
 **Tokens**
 
