@@ -135,54 +135,6 @@ If you don’t find Moonriver as a predefined network in your wallet, you can co
 
 Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet and Moonriver.
 
-### Ropsten
-
-Ropsten is a test network.
-
-In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Ropsten_.
-
-**Tokens**
-
-* Ropsten ETH:
-  * Native token to pay transaction fees
-  * [Faucet](https://faucet.dimensions.network/). You may find others by [searching](https://www.google.com/search?q=ropsten+ether+faucet\&oq=ropsten+ether+faucet).
-* Ropsten OCEAN:
-  * Address: [0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9](https://ropsten.etherscan.io/token/0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9)
-  * [Faucet](https://faucet.ropsten.oceanprotocol.com/)
-
-**Additional Components**
-
-| What         | URL                                                                  |
-| ------------ | -------------------------------------------------------------------- |
-| Explorer     | https://ropsten.etherscan.io                                         |
-| Ocean Market | Point wallet to Ropsten network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.ropsten.oceanprotocol.com`                      |
-| Subgraph     | `https://v4.subgraph.ropsten.oceanprotocol.com`                      |
-
-### Rinkeby
-
-Rinkeby is a test network.
-
-In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Rinkeby_.
-
-**Tokens**
-
-* Rinkeby ETH:
-  * Native token to pay transaction fees
-  * [Faucet](https://faucet.rinkeby.io/). You may find others by [searching](https://www.google.com/search?q=rinkeby+ether+faucet\&oq=rinkeby+ether+faucet).
-* Rinkeby OCEAN:
-  * Address: [0x8967BCF84170c91B0d24D4302C2376283b0B3a07](https://rinkeby.etherscan.io/token/0x8967BCF84170c91B0d24D4302C2376283b0B3a07)
-  * [Faucet](https://faucet.rinkeby.oceanprotocol.com/)
-
-**Additional Components**
-
-| What         | URL                                                                  |
-| ------------ | -------------------------------------------------------------------- |
-| Explorer     | https://rinkeby.etherscan.io                                         |
-| Ocean Market | Point wallet to Rinkeby network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.rinkeby.oceanprotocol.com`                      |
-| Subgraph     | `https://v4.subgraph.rinkeby.oceanprotocol.com`                      |
-
 ### Mumbai
 
 Mumbai is a test network tuned for Matic / Polygon.
@@ -233,7 +185,7 @@ If you don't find Moonbase as a predefined network in your wallet, you can conne
 
 ### Local / Ganache
 
-The most straightforward way for local-only development is to use [Barge](https://www.github.com/oceanprotocol/barge), which runs [Ganache](https://www.trufflesuite.com/ganache), Aquarius, and Provider. It is used extensively by the Ocean core devs (with Ganache or Rinkeby) and for automated integration testing.
+The most straightforward way for local-only development is to use [Barge](https://www.github.com/oceanprotocol/barge), which runs [Ganache](https://www.trufflesuite.com/ganache), Aquarius, and Provider. It is used extensively by the Ocean core devs and for automated integration testing.
 
 To connect to it from MetaMask, select the network called _Localhost 8545_.
 

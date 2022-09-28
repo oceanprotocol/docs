@@ -30,18 +30,6 @@ Almost all ERC-20 wallets require these values for adding a custom token:
 * Symbol: `OCEAN`
 * Decimals: `18`
 
-**Rinkeby**
-
-* Contract Address: `0x8967BCF84170c91B0d24D4302C2376283b0B3a07`
-* Symbol: `OCEAN`
-* Decimals: `18`
-
-**Ropsten**
-
-* Contract Address: `0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9`
-* Symbol: `OCEAN`
-* Decimals: `18`
-
 **Mumbai**
 
 * Contract Address: `0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8`
