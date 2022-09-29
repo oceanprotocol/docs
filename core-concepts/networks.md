@@ -55,7 +55,7 @@ Ocean is deployed to Polygon Mainnet, another production network. Polygon’s na
 
 **Bridge**
 
-Check our Polygon Bridge [guide](networks/bridges) to learn how you can deposit, withdraw and send tokens.
+Check our Polygon Bridge [guide](../core-concepts/networks/bridges.md) to learn how you can deposit, withdraw and send tokens.
 
 ### Binance Smart Chain
 
@@ -81,7 +81,7 @@ If you don’t find BSC as a predefined network in your wallet, you can connect 
 
 **Bridge**
 
-Check our BSC Bridge [guide](networks/bridges) to learn how you can deposit, withdraw and send tokens.
+Check our BSC Bridge [guide](../core-concepts/networks/bridges.md) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 
