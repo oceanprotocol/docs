@@ -17,7 +17,7 @@ The article [How to Get Started with BSC](https://academy.binance.com/en/article
 
 * [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
 * [BSC Bridge](https://www.bnbchain.org/en/bridge)
-* [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
+* [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
 
 # Polygon (ex Matic) Bridge
 
@@ -25,7 +25,7 @@ The article [How to Get Started with BSC](https://academy.binance.com/en/article
 
 * [Matic Wallet](https://wallet.polygon.technology/)
 * [Matic Bridge](https://wallet.polygon.technology/bridge/)
-* [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
+* [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
 
 ### Intro to Polygon's Bridge
 
