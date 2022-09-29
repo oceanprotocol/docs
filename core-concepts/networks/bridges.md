@@ -17,19 +17,19 @@ The article [How to Get Started with BSC](https://academy.binance.com/en/article
 
 * [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
 * [BSC Bridge](https://www.bnbchain.org/en/bridge)
-* [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
+* [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
 
 # Polygon (ex Matic) Bridge
 
 ### Links
 
-* [Matic Wallet](https://wallet.matic.network)
-* [Matic Bridge](https://wallet.matic.network/bridge)
-* [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
+* [Matic Wallet](https://wallet.polygon.technology/)
+* [Matic Bridge](https://wallet.polygon.technology/bridge/)
+* [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
 
 ### Intro to Polygon's Bridge
 
-The Polygon Network (ex Matic) provide us with a bridge (connecting Ethereum & Polygon blockchains), and a dedicated [wallet](https://wallet.matic.network) that simplify the steps of transferring digital assets between the two networks. The wallet connects to your account via Metamask (or any of the other supported wallets).
+The Polygon Network (ex Matic) provide us with a bridge (connecting Ethereum & Polygon blockchains), and a dedicated [wallet](https://wallet.polygon.technology/) that simplify the steps of transferring digital assets between the two networks. The wallet connects to your account via Metamask (or any of the other supported wallets).
 
 When you open the wallet link, the wallet will ask to log in. Select your preferred way of connecting and confirm the action. In our guide we'll use Metamask.
 
