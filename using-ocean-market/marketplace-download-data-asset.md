@@ -13,7 +13,7 @@ description: Tutorial to download assets using Ocean Market
 ![Connect wallet](../.gitbook/assets/consume-connect-wallet.png)
 
 ```
-In this tutorial, we will be using the Rinkeby test network.
+In this tutorial, we will be using the Polygon Mumbai test network.
 ```
 
 ### Tutorial

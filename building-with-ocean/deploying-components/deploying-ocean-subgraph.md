@@ -23,7 +23,7 @@ Copy the below content into the \`.env\` file and edit the values as needed.
 
 {% code title=".env" %}
 ```
-ETHEREUM_NODE_PROVIDER_API='rinkeby:https://rinkeby.infura.io/v3/${INFURA_PROJECT_ID}'
+ETHEREUM_NODE_PROVIDER_API='mumbai:https://polygon-mumbai.infura.io/v3/${INFURA_PROJECT_ID}'
 ```
 {% endcode %}
 

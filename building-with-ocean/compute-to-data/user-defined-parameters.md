@@ -61,7 +61,7 @@ def serve_content():
 
 #### Step 2: Publish dataset asset with compute service
 
-The publisher now must provide the file URL as `https://example.com` while publishing the asset, as shown in the below image.
+The publisher now must provide the file URL as `https://example.org` while publishing the asset, as shown in the below image.
 
 ![](../../.gitbook/assets/compute-to-data-parameters-publish-dataset.png)
 

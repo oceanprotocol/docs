@@ -19,7 +19,7 @@ Publishers can choose any hosting service of their choice. The below section exp
 
 #### Google Drive
 
-Google Drive allows users to share files/folders with various access policies. Publishers must set the access policy such that anyone with the link can download the file when using Ocean Marketplace with Ocean Protocol's default [Provider](https://v4.provider.rinkeby.oceanprotocol.com).
+Google Drive allows users to share files/folders with various access policies. Publishers must set the access policy such that anyone with the link can download the file when using Ocean Marketplace with Ocean Protocol's default [Provider](https://v4.provider.mumbai.oceanprotocol.com).
 
 **Step 1 - Get link**
 
