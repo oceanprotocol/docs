@@ -55,7 +55,7 @@ Ocean is deployed to Polygon Mainnet, another production network. Polygon’s na
 
 **Bridge**
 
-Check our Polygon Bridge [guide](broken-reference) to learn how you can deposit, withdraw and send tokens.
+Check our Polygon Bridge [guide](../core-concepts/networks/bridges.md#polygon-ex-matic-bridge) to learn how you can deposit, withdraw and send tokens.
 
 ### Binance Smart Chain
 
@@ -81,7 +81,7 @@ If you don’t find BSC as a predefined network in your wallet, you can connect 
 
 **Bridge**
 
-Check our BSC Bridge [guide](broken-reference) to learn how you can deposit, withdraw and send tokens.
+Check our BSC Bridge [guide](../core-concepts/networks/bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 
@@ -134,6 +134,30 @@ If you don’t find Moonriver as a predefined network in your wallet, you can co
 **Bridge**
 
 Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet and Moonriver.
+
+### Görli
+
+Görli is a test network.
+
+In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Goerli_.
+
+**Tokens**
+
+* Görli ETH:
+  * Native token to pay transaction fees
+  * [Faucet](https://goerlifaucet.com/). You may find others by [searching](https://www.google.com/search?q=goerli+ether+faucet%5C&oq=goerli+ether+faucet).
+* Goerli OCEAN:
+  * Address: [0xCfDdA22C9837aE76E0faA845354f33C62E03653a](https://goerli.etherscan.io/address/0xcfdda22c9837ae76e0faa845354f33c62e03653a)
+  * [Faucet](https://faucet.goerli.oceanprotocol.com)
+
+**Additional Components**
+
+| What         | URL                                                                  |
+| ------------ | -------------------------------------------------------------------- |
+| Explorer     | https://goerli.etherscan.io/                                         |
+| Ocean Market | Point wallet to Görli network, at https://market.oceanprotocol.com   |
+| Provider     | `https://v4.provider.goerli.oceanprotocol.com`                       |
+| Subgraph     | `https://v4.subgraph.goerli.oceanprotocol.com`                       |
 
 ### Mumbai
 
