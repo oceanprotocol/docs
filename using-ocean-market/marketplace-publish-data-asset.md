@@ -17,7 +17,7 @@ Ocean Market provides a convenient interface for individuals and organizations t
 
 ![Connect wallet](../.gitbook/assets/connect-wallet.png)
 
-In this tutorial, we will be using the Rinkeby test network.
+In this tutorial, we will be using the Polygon Mumbai test network.
 
 3\. Go to the publish page.
 

@@ -36,6 +36,7 @@
     * [Minikube Environment](building-with-ocean/compute-to-data/compute-to-data-minikube.md)
     * [Writing Algorithms](building-with-ocean/compute-to-data/compute-to-data-algorithms.md)
     * [Private Docker Registry](building-with-ocean/compute-to-data/compute-to-data-docker-registry.md)
+    * [User defined parameters](building-with-ocean/compute-to-data/user-defined-parameters.md)
   * [Deploying Components](building-with-ocean/deploying-components/README.md)
     * [Setup a Server](building-with-ocean/deploying-components/setup-server.md)
     * [Deploying Marketplace](building-with-ocean/deploying-components/deploying-marketplace.md)
@@ -57,9 +58,8 @@
   * [Provider REST API](api-references/provider-rest-api.md)
 
 ## Community
+
 * [Medium](https://blog.oceanprotocol.com/)
 * [Discord](https://discord.gg/oceanprotocol)
-* [Telegram](https://t.me/OceanProtocol_Community)
+* [Telegram](https://t.me/OceanProtocol\_Community)
 * [Twitter](https://twitter.com/oceanprotocol)
-
-

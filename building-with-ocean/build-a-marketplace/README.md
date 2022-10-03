@@ -30,10 +30,10 @@ The tutorial covers:
 
 If you’re completely unfamiliar with Ocean Market or web3 applications in general, you will benefit from reading these guides first:
 
-* To use your clone of Ocean Market, you’ll need a [wallet](https://docs.oceanprotocol.com/tutorials/wallets/). We recommend [getting set up with metamask](https://docs.oceanprotocol.com/tutorials/metamask-setup/).
-* You’ll also need some [Ocean tokens on a testnet](https://docs.oceanprotocol.com/tutorials/wallets-and-ocean-tokens/) to use your marketplace.
-* When you have the testnet tokens, have a go at [publishing a data asset](https://docs.oceanprotocol.com/tutorials/marketplace-publish-data-asset/) on Ocean Market.
-* Run through the process of [consuming a data asset](https://docs.oceanprotocol.com/tutorials/marketplace-consume-data-asset/) on Ocean Market.
+* To use your clone of Ocean Market, you’ll need a [wallet](../wallets.md). We recommend [getting set up with metamask](../../orientation/metamask-setup.md).
+* You’ll also need some [Ocean tokens on a testnet](../wallets-and-ocean-tokens.md) to use your marketplace.
+* When you have the testnet tokens, have a go at [publishing a data asset](../../using-ocean-market/marketplace-publish-data-asset.md) on Ocean Market.
+* Run through the process of [consuming a data asset](../../using-ocean-market/marketplace-download-data-asset.md) on Ocean Market.
 
 **Required Prerequisites**
 
