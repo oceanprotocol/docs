@@ -5,7 +5,7 @@
 * [Ocean Market](https://market.oceanprotocol.com/) enables publishers to monetize their data and/or algorithms through blockchain technology.
 * Consumers can purchase access to data, algorithms, compute services.
 
-![Ocean Market Landing Page](../.gitbook/assets/marketplace-landing-page.png)
+![Ocean Market Landing Page](images/marketplace/marketplace-landing-page.png)
 
 The following guides will help you get started with buying and selling data:
 
