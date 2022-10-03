@@ -11,7 +11,7 @@ To publish assets on the Ocean Marketplace, publishers must provide a link(an UR
 
 On Ocean Marketplace, a publisher must provide the link to the asset during publish step. Once the asset is published, this link cannot be changed. So, it is essential that the publisher correctly sets this field (shown in the below image).
 
-![Publish - File URL field](../.gitbook/assets/marketplace-publish-file-field.png)	
+![Publish - File URL field](../.gitbook/assets/marketplace-publish-file-field.png)
 
 ### Hosting services
 
@@ -65,7 +65,7 @@ Open https://drive.google.com and upload the file you want to publish on the Oce
 
 The file URL will be of the form `https://drive.google.com/file/d/<FILE-ID>/view?usp=sharing`, where the `<FILE-ID>` is the unique alphanumeric string. Verify if the URL is correct by entering it in a browser and check if the file is downloaded.
 
-![Google Drive link](../.gitbook/assets/publish-google-drive.png)	
+![Google Drive link](../.gitbook/assets/publish-google-drive.png)
 
 **Step 2 - Create a downloadable link**
 
@@ -79,7 +79,7 @@ Note the `<FILE-ID>` from step 1 and create a URL as below.
 
 After creating a downloadable file URL, fill the `File*` field with the downloadable URL created in step 2.
 
-![Publish - Google Drive file](../.gitbook/assets/publish-google-drive-2.png)	
+![Publish - Google Drive file](../.gitbook/assets/publish-google-drive-2.png)
 
 _Note: Google Drive allows only shared files to be downloaded, as shown in the above steps. The above method does not work with the shared folder. As a workaround, publishers can upload a zip of a folder and upload it as a file._
 
@@ -185,4 +185,4 @@ Enter the URL in the browser and verify if the file is downloaded correctly.
 
 Copy and paste the link in the Publish page in the Ocean Marketplace.
 
-![Publish the file as an asset](../.gitbook/assets/one-drive-4.png)	
+![Publish the file as an asset](../.gitbook/assets/one-drive-4.png)
