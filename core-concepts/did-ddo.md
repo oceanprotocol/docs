@@ -256,7 +256,7 @@ Use GraphQL querys as datasource.
 
 ```
 {
-  "type": "graphql",
+	"type": "graphql",
 	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
 	"query": """
     	query{
@@ -287,6 +287,12 @@ Use a smart contract as datasource.
 		}
 }
 ```
+
+First class integrations supported in the future :
+***`Filecoin`***
+***`Arwave`***
+***`Storj`***
+***`SQL`***
 
 A service can contain multiple files, using multiple storage types.
 
