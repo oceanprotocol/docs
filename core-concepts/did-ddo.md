@@ -256,7 +256,7 @@ Use GraphQL querys as datasource.
 
 ```
 {
-  "type": "graphql",    
+  "type": "graphql",
 	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
   "query": """
     	query{
