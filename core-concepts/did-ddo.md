@@ -259,13 +259,13 @@ Use GraphQL querys as datasource.
 	"type": "graphql",
 	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
 	"query": """
-    	query{
+					query{
             nfts(orderBy: createdTimestamp,orderDirection:desc){
                  id
                  symbol
                  createdTimestamp
             }
-           }
+          }
 		  """
 }
 ```
@@ -288,9 +288,22 @@ Use a smart contract as datasource.
 }
 ```
 
+***`Arweave`*** 
+
+Arweave Transaction ID.
+
+```
+{
+    {
+    "type": "arweave",
+    "transactionId": "a4qJoQZa1poIv5guEzkfgZYSAD0uYm7Vw4zm_tCswVQ",
+  }
+}
+```
+
+
 First class integrations supported in the future :
 ***`Filecoin`***
-***`Arwave`***
 ***`Storj`***
 ***`SQL`***
 
