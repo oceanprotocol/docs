@@ -221,7 +221,7 @@ where "files" contains one or more storage objects.
 
 **Type of objects supported:**
 
-***`URL`***
+**`URL`**
 
 Static URLs. 
 
@@ -243,7 +243,7 @@ Parameters:
 }
 ```
 
-***`IPFS`***
+**`IPFS`**
 
 The [Interplanetary File System](https://ipfs.tech/) (IPFS) is a distributed file storage protocol that allows computers all over the globe to store and serve files as part of a giant peer-to-peer network. Any computer, anywhere in the world, can download the IPFS software and start hosting and serving files.
 
@@ -257,7 +257,7 @@ Parameters:
 }
 ```
 
-***`GraphQL`*** 
+**`GraphQL`**
 
 [GraphQL](https://graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with your existing data. 
 
@@ -279,7 +279,7 @@ Parameters:
 }
 ```
 
-***`On-Chain`*** 
+**`On-Chain`**
 
 Use a smart contract as data source.
 
@@ -303,7 +303,7 @@ Parameters:
 }
 ```
 
-***`Arweave`*** 
+**`Arweave`** 
 
 [Arweave](https://www.arweave.org/) is a decentralized data storage that allows to permanently store files over a distributed network of computers.
 
@@ -321,9 +321,9 @@ Parameters:
 
 
 First class integrations supported in the future :
-***`Filecoin`***
-***`Storj`***
-***`SQL`***
+**`Filecoin`**
+**`Storj`**
+**`SQL`**
 
 A service can contain multiple files, using multiple storage types.
 
