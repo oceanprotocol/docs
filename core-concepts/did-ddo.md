@@ -223,7 +223,12 @@ where "files" contains one or more storage objects.
 
 ***`URL`***
 
-Static URL. Contains url and HTTP method.
+Static URLs. 
+
+Parameters: 
+* `url` - File url
+* `method` - The HTTP method 
+* `headers` - Additional HTTP headers
 
 ```
 {
@@ -238,10 +243,12 @@ Static URL. Contains url and HTTP method.
 }
 ```
 
-
 ***`IPFS`***
 
-IPFS files.
+The [Interplanetary File System](https://ipfs.tech/) (IPFS) is a distributed file storage protocol that allows computers all over the globe to store and serve files as part of a giant peer-to-peer network. Any computer, anywhere in the world, can download the IPFS software and start hosting and serving files.
+
+Parameters:
+* `hash' - The file hash
 
 ```
 {
@@ -252,7 +259,11 @@ IPFS files.
 
 ***`GraphQL`*** 
 
-Use GraphQL querys as datasource.
+[GraphQL](https://graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with your existing data. 
+
+Parameters:
+* `url` - Server endpoint url
+* `query` - The query to be executed
 
 ```
 {
@@ -270,7 +281,13 @@ Use GraphQL querys as datasource.
 
 ***`On-Chain`*** 
 
-Use a smart contract as datasource.
+Use a smart contract as data source.
+
+Parameters: 
+
+* `chainId` - The chainId used to query the contract
+* `address` - The smartcontract address
+* `abi` - The function abi (NOT the entire contract abi)
 
 ```
 {
@@ -288,7 +305,10 @@ Use a smart contract as datasource.
 
 ***`Arweave`*** 
 
-Arweave Transaction ID.
+[Arweave](https://www.arweave.org/) is a decentralized data storage that allows to permanently store files over a distributed network of computers.
+
+Parameters:
+* `transactionId` - The transaction identifier
 
 ```
 {
