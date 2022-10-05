@@ -248,7 +248,7 @@ Parameters:
 The [Interplanetary File System](https://ipfs.tech/) (IPFS) is a distributed file storage protocol that allows computers all over the globe to store and serve files as part of a giant peer-to-peer network. Any computer, anywhere in the world, can download the IPFS software and start hosting and serving files.
 
 Parameters:
-* `hash' - The file hash
+* `hash` - The file hash
 
 ```
 {
