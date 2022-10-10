@@ -325,7 +325,7 @@ First class integrations supported in the future :
 **`Storj`**
 **`SQL`**
 
-A service can contain multiple files which in turn can contain multiple storage objects.
+A service can contain multiple files, using multiple storage types.
 
 Example:
 
@@ -340,8 +340,8 @@ Example:
       "method": "GET"
     },
     {
-      "type": "arweave",
-      "transactionId": "a4qJoQZa1poIv5guEzkfgZYSAD0uYm7Vw4zm_tCswVQ"
+      "type": "ipfs",
+      "hash": "XXXX"
     }
   ]
 }
@@ -357,7 +357,7 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
     "contentType": "application/json"
   },
   {
-    "type": "arweave",
+    "type": "ipfs",
     "contentLength": 130,
     "contentType": "application/text"
   }
