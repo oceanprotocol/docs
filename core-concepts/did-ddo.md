@@ -600,7 +600,7 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 | **`2`** | Deprecated (by another asset).  |
 | **`3`** | Revoked by publisher.           |
 | **`4`** | Ordering is temporary disabled. |
-| **`5`** | Asset delisted.                 |
+| **`5`** | Asset unlisted.                 |
 
 ### Aquarius Enhanced DDO Response
 
