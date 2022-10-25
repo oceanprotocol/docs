@@ -37,3 +37,30 @@ Go to the AWS portal for S3: https://aws.amazon.com/s3/ and select from the uppe
 
 ![Create an account - 2](../.gitbook/assets/aws-2.png))
 
+**Create a bucket**
+
+After logging into the new account, search for the available services and select `S3` type of
+storage.
+
+![Create an account - 3](../.gitbook/assets/aws-3.png)
+
+In order to create a S3 bucket, choose `Create bucket`.
+
+![Create an account - 4](../.gitbook/assets/aws-4.png)
+
+Fill in the form with the necessary information. Then, the bucket is up & running.
+
+![Create an account - 5](../.gitbook/assets/aws-5.png)
+
+**Step 2 - Upload asset on S3 bucket**
+
+Now, the asset can be uploaded by selecting the bucket name and choose `Uploads`
+in the `Objects` tab.
+
+![Upload asset on S3 bucket - 1](../.gitbook/assets/aws-6.png)
+
+The asset can be created through market app and further provide the URL of it.
+
+
+
+
