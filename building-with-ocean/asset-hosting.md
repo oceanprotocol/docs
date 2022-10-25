@@ -17,134 +17,23 @@ On Ocean Marketplace, a publisher must provide the link to the asset during publ
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
-#### Google Drive
+#### AWS
 
-Google Drive allows users to share files/folders with various access policies. Publishers must set the access policy such that anyone with the link can download the file when using Ocean Marketplace with Ocean Protocol's default [Provider](https://v4.provider.mumbai.oceanprotocol.com).
-
-**Step 1 - Get link**
-
-Open https://drive.google.com and upload the file you want to publish on the Ocean Marketplace. Right-click on the uploaded file and click the `Share` option. Set the file access policy correctly and click the `Copy link` button.
-
-The file URL will be of the form `https://drive.google.com/file/d/<FILE-ID>/view?usp=sharing`, where the `<FILE-ID>` is the unique alphanumeric string. Verify if the URL is correct by entering it in a browser and check if the file is downloaded.
-
-![Google Drive link](../.gitbook/assets/publish-google-drive.png)
-
-**Step 2 - Create a downloadable link**
-
-If you paste the copied URL into the browser, it will load an HTML page. Directly pasting the link on the publish page will publish the HTML page instead of a downloadable file URL. So, let's make a downloadable file URL.
-
-Note the `<FILE-ID>` from step 1 and create a URL as below.
-
-`https://drive.google.com/uc?export=download&id=<FILE-ID>`
-
-**Step 3 - Publish the asset using the generated link**
-
-After creating a downloadable file URL, fill the `File*` field with the downloadable URL created in step 2.
-
-![Publish - Google Drive file](../.gitbook/assets/publish-google-drive-2.png)
-
-_Note: Google Drive allows only shared files to be downloaded, as shown in the above steps. The above method does not work with the shared folder. As a workaround, publishers can upload a zip of a folder and upload it as a file._
-
-***
-
-#### Azure storage
-
-Azure provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using Azure storage and publish it on Ocean Marketplace.
+AWS provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using AWS S3 bucket and publish it on Ocean Marketplace.
 
 **Prerequisite**
 
-Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might also be asked to provide payment details and billing addresses that are out of this tutorial's scope.
+Create an account on [AWS](https://aws.amazon.com/s3/). Users might also be asked to provide payment details and billing addresses that are out of this tutorial's scope.
 
 **Step 1 - Create a storage account**
 
-**Go to Azure portal**
+**Go to AWS portal**
 
-Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
+Go to the AWS portal for S3: https://aws.amazon.com/s3/ and select from the upper right corner `Create an AWS account` as shown below.
 
-![Create a storage account - 1](../.gitbook/assets/azure-1.png)
-
-**Create a new storage account**
-
-![Create a storage account - 2](../.gitbook/assets/azure-2.png)
+![Create an account - 1](../.gitbook/assets/aws-1.png)
 
 **Fill in the details**
 
-![Add details](../.gitbook/assets/azure-3.png)
+![Create an account - 2](../.gitbook/assets/aws-2.png))
 
-**Storage account created**
-
-![Storage account created](../.gitbook/assets/azure-4.png)
-
-**Step 2 - Create a blob container**
-
-![Create a blob container](../.gitbook/assets/azure-5.png)
-
-**Step 3 - Upload a file**
-
-![Upload a file](../.gitbook/assets/azure-6.png)
-
-**Step 4 - Share the file**
-
-**Select the file to be published and click Generate SAS**
-
-![Click generate SAS](../.gitbook/assets/azure-7.png)
-
-**Configure the SAS details and click `Generate SAS token and URL`**
-
-![Generate link to file](../.gitbook/assets/azure-8.png)
-
-**Copy the generated link**
-
-![Copy the link](../.gitbook/assets/azure-9.png)
-
-**Step 5 - Publish the asset using the generated link**
-
-Now, copy and paste the link in the Publish page in the Ocean Marketplace.
-
-![Publish the file as an asset](../.gitbook/assets/azure-10.png)
-
-#### OneDrive
-
-Create an account on [Microsoft](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage).
-
-**Step 1 - Upload a file**
-
-Go to [OneDrive](https://onedrive.live.com/) and upload the file to be published.
-
-![Upload a file](../.gitbook/assets/one-drive-1.png)
-
-**Step 2 - Get link**
-
-After the file is uploaded, right click on the file and click `Embed`, and copy the link.
-
-![Get an embeddable link](../.gitbook/assets/one-drive-2.png)
-
-Copy the highlighted content as shown in the below image:
-
-![Copy the iframe](../.gitbook/assets/one-drive-3.png)
-
-The copied content has the following format:
-
-```html
-<iframe src="https://onedrive.live.com/embed?cid=<CID>&
-    resid=<RES_ID>%<NUMBER>&
-    authkey=<AUTH_KEY>"
-    width="98" height="120" frameborder="0" scrolling="no">
-</iframe>
-```
-
-**Step 3 - Generate downloadable link**
-
-Copy the content from `src` field from the `iframe`. The link has the following format: `https://onedrive.live.com/embed?cid=<CID>&resid=<RES_ID>%<NUMBER>&authkey=<AUTH_KEY>`
-
-Replace the `https://onedrive.live.com/embed` with `https://onedrive.live.com/download` from the above URL.
-
-The downloadable file URL has the following format: `https://onedrive.live.com/download?cid=<CID>&resid=<RES_ID>%<NUMBER>&authkey=<AUTH_KEY>`
-
-Enter the URL in the browser and verify if the file is downloaded correctly.
-
-**Step 4 - Publish the asset using the generated link**
-
-Copy and paste the link in the Publish page in the Ocean Marketplace.
-
-![Publish the file as an asset](../.gitbook/assets/one-drive-4.png)
