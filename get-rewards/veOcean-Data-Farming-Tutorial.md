@@ -10,7 +10,7 @@ To generate rewards, start by navigating to [df.oceandao.org](https://df.oceanda
 
 - If you already have veOCEAN tokens, then on the Active Rewards panel on the right side of the page, click the [Set Allocations](https://df.oceandao.org/data) button to navigate to the Data Farming tab.
 
-![](.gitbook/assets/veOCEAN-DF-Homepage.png)
+![](../.gitbook/assets/veOCEAN-DF-Homepage.png)
 
 ## Passive Rewards
 
@@ -23,14 +23,14 @@ After navigating to the [veOCEAN page](https://df.oceandao.org/veocean), you can
 Click the checkbox below the inactive pink ALLOW button, then click the activated pink ALLOW button. Sign the transaction with your wallet. Then, click the LOCK OCEAN button. Sign the transaction with your wallet.
 
 
-![](.gitbook/assets/veOCEAN-Before-Lock.png)
+![](../.gitbook/assets/veOCEAN-Before-Lock.png)
 
 
 Now the OCEAN tokens are locked in exchange for veOCEAN. The left side panel called "My veOCEAN" shows the corresponding balances of OCEAN and veOCEAN. You can withdraw your OCEAN tokens on this panel when the lock time ends.
 
 **Note that your OCEAN tokens cannot be withdrawn until the Lock End Date!**
 
-![](.gitbook/assets/veOCEAN-After-Lock.png)
+![](../.gitbook/assets/veOCEAN-After-Lock.png)
 
 Notice the right side panel is now titled "Update veOCEAN Lock". You can add OCEAN tokens to your lock or you can increase the Lock End Date, but you cannot shorten your Lock End Date.
 
@@ -42,7 +42,7 @@ You can generate active OCEAN rewards by allocating veOCEAN to various OCEAN Mar
 
 Click on the Data Farming tab at the top of the page to navigate to the [Data Farming page](https://df.oceandao.org/data).
 
-![](.gitbook/assets/DF-Grid.png)
+![](../.gitbook/assets/DF-Grid.png)
 
 The OCEAN Market datasets and algorithms are listed in the grid. Each column is sortable, and there is a Search field on top of the grid to search for specific projects.
 
@@ -54,7 +54,7 @@ Once you allocate your percentage of veOCEAN to projects using the MyAllocation 
 
 Click on the Rewards tab at the top of the page to come to the [same page](https://test-df.oceandao.org/rewards) as at the beginning of this tutorial. Now the balance of veOCEAN appears under the Passive Rewards panel on the left and the percentage allocated appears on the Active Rewards panel on the right.
 
-![](.gitbook/assets/Rewards-Page.png)
+![](../.gitbook/assets/Rewards-Page.png)
 
 **Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested veCRV token code.
 
