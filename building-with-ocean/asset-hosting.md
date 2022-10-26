@@ -59,7 +59,93 @@ in the `Objects` tab.
 
 ![Upload asset on S3 bucket - 1](../.gitbook/assets/aws-6.png)
 
-The asset can be created through market app and further provide the URL of it.
+**Add files to the bucket**
+
+Get the files and add them to the bucket.
+
+The file is an example used in multiple Ocean repositories, and it can be
+found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
+
+![Upload asset on S3 bucket - 3](../.gitbook/assets/aws-7.png)
+
+The permissions and properties can be set afterwards, for the moment keep them as default.
+
+After selecting `Upload`, make sure that the status is `Succeeded`.
+
+![Upload asset on S3 bucket - 4](../.gitbook/assets/aws-8.png)
+
+**Step 3 - Access the Object URL on S3 Bucket**
+
+By default, the permissions of accessing the file from S3 bucket are set to private.
+In order to publish an asset on the market, the S3 URL needs to be public.
+This step shows how to set up access control policies to grant permissions to others. 
+
+**Editing permissions**
+
+Go to the `Permissions` tab and select `Edit` and then uncheck `Block all public access` 
+boxes to give everyone read access to the object and click `Save`.
+
+If editing the permissions is unavailable, modify the `Object Ownership` by enabling the ACLs
+as shown below.
+
+![Access the Object URL on S3 Bucket - 1](../.gitbook/assets/aws-9.png)
+
+**Modifying bucket policy**
+
+In order to have the bucket granted on public access, its policy needs to be
+modified likewise.
+
+Note that the `<BUCKET-NAME>` must be chosen from personal buckets' dashboard.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Public S3 Bucket",
+            "Principal": "*",
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::<BUCKET-NAME>/*"
+        }
+    ]
+}
+```
+
+After saving the changes, the bucket should appear as `Public` access.
+
+![Access the Object URL on S3 Bucket - 2](../.gitbook/assets/aws-10.png)
+
+**Verify the object URL on public access**
+
+Select the file from the bucket that needs verification and select `Open`. Now it should
+be able to download the file on personal system.
+
+![Access the Object URL on S3 Bucket - 3](../.gitbook/assets/aws-11.png)
+
+
+**Step 4 - Get the S3 Bucket Link & Publish Asset on Market**
+
+Now that the S3 endpoint has public access, the asset will be hosted successfully.
+
+Go to [Ocean Market](https://market.oceanprotocol.com/publish/1) to complete the form
+for asset creation.
+
+Copy the `Object URL` that can be found at `Object Overview` from AWS S3 bucket
+and paste it in the `File` field from the form as it is illustrated below.
+
+![Get the S3 Bucket Link & Publish Asset on Market - 1](../.gitbook/assets/aws-12.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
