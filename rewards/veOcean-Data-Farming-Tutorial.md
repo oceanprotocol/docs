@@ -20,7 +20,7 @@ After navigating to the [veOCEAN page](https://df.oceandao.org/veocean), you can
 
 **The more OCEAN tokens you lock or if you lock them for a longer period of time, then the more rewards you get!**
 
-Click the checkbox below the inactive pink ALLOW button, then click the activated pink ALLOW button. Sign the transaction with your wallet. Then, click the LOCK OCEAN button. Sign the transaction with your wallet.
+Click the checkbox below the inactive pink ALLOW button, then click the activated pink ALLOW button. Sign the transaction with your wallet. Then, click the LOCK OCEAN button. Sign the transaction with your wallet. Note that all veOCEAN contracts are deployed on the Ethereum mainnet.
 
 
 ![](./images/veOCEAN-Before-Lock.png)
@@ -48,7 +48,7 @@ The OCEAN Market datasets and algorithms are listed in the grid. Each column is 
 
 It is recommended to allocate all of your veOCEAN tokens to OCEAN Market projects to generate maximum rewards. When you allocate your veOCEAN to these datasets or algorithms, then you get a portion of those projects's sales. **If you allocate your veOCEAN to a project with many other allocators, then your portion of rewards will become diluted because there are more allocators to reward. You may be interested then in allocating veOCEAN to a project with fewer allocators to generate a greater percentage of rewards. However, if a project does not sell, then no rewards are generated.** Thus, it is important to allocate veOCEAN to projects you believe in, and do your research.
 
-Once you allocate your percentage of veOCEAN to projects using the MyAllocation column, then click on the UPDATE ALLOCATIONS button and sign the transaction with your wallet.
+Once you allocate your percentage of veOCEAN to projects using the MyAllocation column, then click on the UPDATE ALLOCATIONS button and sign the transaction with your wallet. Note that as the OCEAN Market projects exist on different networks i.e. Ethereum, Polygon, etc. you can allocate your veOCEAN towards assets that are published on these different networks.
 
 ## Claim Rewards
 
