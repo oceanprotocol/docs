@@ -1,15 +1,15 @@
 ---
 title: Publish assets using hosting services
-description: Tutorial to publish assets using hosting services like Google Drive and Azure.
+description: Tutorial to publish assets using hosting services like AWS and Azure.
 ---
 
 # Publishing with Hosting Services
 
 ### Overview
 
-To publish assets on the Ocean Marketplace, publishers must provide a link(an URL) to the file. It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on their Google Drive, AWS server, private cloud server, or other third-party hosting services. Through publishing, the URL of the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to the URL, but they interact with the Provider, which decrypts the URL and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the URL and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the URL. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
+To publish assets on the Ocean Marketplace, publishers must provide a link(an URL) to the file. It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on their AWS server, private cloud server, or other third-party hosting services. Through publishing, the URL of the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to the URL, but they interact with the Provider, which decrypts the URL and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the URL and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the URL. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
 
-On Ocean Marketplace, a publisher must provide the link to the asset during publish step. Once the asset is published, this link cannot be changed. So, it is essential that the publisher correctly sets this field (shown in the below image).
+On Ocean Marketplace, a publisher must provide the link to the asset during publish step in the field shown in the below image.
 
 ![Publish - File URL field](../.gitbook/assets/marketplace-publish-file-field.png)
 
@@ -17,6 +17,8 @@ On Ocean Marketplace, a publisher must provide the link to the asset during publ
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
+As a mention, Google Drive is not a reliable data storage solution that integrates well with Ocean.
+Multiple issues encountered when consuming or purchasing assets, therefore please avoid Google Drive.
 #### AWS
 
 AWS provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using AWS S3 bucket and publish it on Ocean Marketplace.
@@ -54,7 +56,7 @@ Fill in the form with the necessary information. Then, the bucket is up & runnin
 
 **Step 2 - Upload asset on S3 bucket**
 
-Now, the asset can be uploaded by selecting the bucket name and choose `Uploads`
+Now, the asset can be uploaded by selecting the bucket name and choose `Upload`
 in the `Objects` tab.
 
 ![Upload asset on S3 bucket - 1](../.gitbook/assets/aws-6.png)
@@ -77,7 +79,7 @@ After selecting `Upload`, make sure that the status is `Succeeded`.
 **Step 3 - Access the Object URL on S3 Bucket**
 
 By default, the permissions of accessing the file from S3 bucket are set to private.
-In order to publish an asset on the market, the S3 URL needs to be public.
+To publish an asset on the market, the S3 URL needs to be public.
 This step shows how to set up access control policies to grant permissions to others. 
 
 **Editing permissions**
@@ -135,6 +137,63 @@ Copy the `Object URL` that can be found at `Object Overview` from AWS S3 bucket
 and paste it in the `File` field from the form as it is illustrated below.
 
 ![Get the S3 Bucket Link & Publish Asset on Market - 1](../.gitbook/assets/aws-12.png)
+
+#### Azure storage
+
+Azure provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using Azure storage and publish it on Ocean Marketplace.
+
+**Prerequisite**
+
+Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might also be asked to provide payment details and billing addresses that are out of this tutorial's scope.
+
+**Step 1 - Create a storage account**
+
+**Go to Azure portal**
+
+Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
+
+![Create a storage account - 1](../.gitbook/assets/azure-1.png)
+
+**Create a new storage account**
+
+![Create a storage account - 2](../.gitbook/assets/azure-2.png)
+
+**Fill in the details**
+
+![Add details](../.gitbook/assets/azure-3.png)
+
+**Storage account created**
+
+![Storage account created](../.gitbook/assets/azure-4.png)
+
+**Step 2 - Create a blob container**
+
+![Create a blob container](../.gitbook/assets/azure-5.png)
+
+**Step 3 - Upload a file**
+
+![Upload a file](../.gitbook/assets/azure-6.png)
+
+**Step 4 - Share the file**
+
+**Select the file to be published and click Generate SAS**
+
+![Click generate SAS](../.gitbook/assets/azure-7.png)
+
+**Configure the SAS details and click `Generate SAS token and URL`**
+
+![Generate link to file](../.gitbook/assets/azure-8.png)
+
+**Copy the generated link**
+
+![Copy the link](../.gitbook/assets/azure-9.png)
+
+**Step 5 - Publish the asset using the generated link**
+
+Now, copy and paste the link in the Publish page in the Ocean Marketplace.
+
+![Publish the file as an asset](../.gitbook/assets/azure-10.png)
+
 
 
 
