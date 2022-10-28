@@ -134,7 +134,7 @@ Go to [Ocean Market](https://market.oceanprotocol.com/publish/1) to complete the
 for asset creation.
 
 Copy the `Object URL` that can be found at `Object Overview` from AWS S3 bucket
-and paste it in the `File` field from the form as it is illustrated below.
+and paste it in the `File` field from the form found at [step 2](https://market.oceanprotocol.com/publish/2) as it is illustrated below.
 
 ![Get the S3 Bucket Link & Publish Asset on Market - 1](../.gitbook/assets/aws-12.png)
 
