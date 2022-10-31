@@ -43,7 +43,7 @@ The following guides will help you get started with buying and selling data:
 
 * [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
 * [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
-* [Publishing with hosting services](building-with-ocean/asset-hosting.md)
+* [Publishing with hosting services](using-ocean-market/asset-hosting.md)
 
 ### Build Your Own Data Market
 
