@@ -17,7 +17,7 @@
 * [Using Ocean Market](using-ocean-market/README.md)
   * [Publish a Data Asset](using-ocean-market/marketplace-publish-data-asset.md)
   * [Download a Data Asset](using-ocean-market/marketplace-download-data-asset.md)
-  * [Publishing with Hosting Services](building-with-ocean/asset-hosting.md)
+  * [Publishing with Hosting Services](using-ocean-market/asset-hosting.md)
   * [Liquidity Pools \[deprecated\]](using-ocean-market/remove-liquidity-using-etherscan.md)
 * [Building with Ocean](building-with-ocean/README.md)
   * [Build a Marketplace](building-with-ocean/build-a-marketplace/README.md)

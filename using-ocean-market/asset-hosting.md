@@ -17,8 +17,11 @@ On Ocean Marketplace, a publisher must provide the link to the asset during publ
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
-As a mention, Google Drive is not a reliable data storage solution that integrates well with Ocean.
-Multiple issues encountered when consuming or purchasing assets, therefore please avoid Google Drive.
+Please use a proper hosting solution to keep your files. 
+When using other systems (for example, `Google Drive`) that are not specifically
+designed for this use case, you risk not gaining traction. Systems such as `Google Drive`,
+include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
+
 #### AWS
 
 AWS provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using AWS S3 bucket and publish it on Ocean Marketplace.
@@ -33,33 +36,33 @@ Create an account on [AWS](https://aws.amazon.com/s3/). Users might also be aske
 
 Go to the AWS portal for S3: https://aws.amazon.com/s3/ and select from the upper right corner `Create an AWS account` as shown below.
 
-![Create an account - 1](../.gitbook/assets/aws-1.png)
+![Create an account - 1](images/hosting-services/aws-1.png)
 
 **Fill in the details**
 
-![Create an account - 2](../.gitbook/assets/aws-2.png))
+![Create an account - 2](images/hosting-services/aws-2.png))
 
 **Create a bucket**
 
 After logging into the new account, search for the available services and select `S3` type of
 storage.
 
-![Create an account - 3](../.gitbook/assets/aws-3.png)
+![Create an account - 3](images/hosting-services/aws-3.png)
 
 In order to create a S3 bucket, choose `Create bucket`.
 
-![Create an account - 4](../.gitbook/assets/aws-4.png)
+![Create an account - 4](images/hosting-services/aws-4.png)
 
 Fill in the form with the necessary information. Then, the bucket is up & running.
 
-![Create an account - 5](../.gitbook/assets/aws-5.png)
+![Create an account - 5](images/hosting-services/aws-5.png)
 
 **Step 2 - Upload asset on S3 bucket**
 
 Now, the asset can be uploaded by selecting the bucket name and choose `Upload`
 in the `Objects` tab.
 
-![Upload asset on S3 bucket - 1](../.gitbook/assets/aws-6.png)
+![Upload asset on S3 bucket - 1](images/hosting-services/aws-6.png)
 
 **Add files to the bucket**
 
@@ -68,13 +71,13 @@ Get the files and add them to the bucket.
 The file is an example used in multiple Ocean repositories, and it can be
 found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
 
-![Upload asset on S3 bucket - 3](../.gitbook/assets/aws-7.png)
+![Upload asset on S3 bucket - 3](images/hosting-services/aws-7.png)
 
 The permissions and properties can be set afterwards, for the moment keep them as default.
 
 After selecting `Upload`, make sure that the status is `Succeeded`.
 
-![Upload asset on S3 bucket - 4](../.gitbook/assets/aws-8.png)
+![Upload asset on S3 bucket - 4](images/hosting-services/aws-8.png)
 
 **Step 3 - Access the Object URL on S3 Bucket**
 
@@ -90,7 +93,7 @@ boxes to give everyone read access to the object and click `Save`.
 If editing the permissions is unavailable, modify the `Object Ownership` by enabling the ACLs
 as shown below.
 
-![Access the Object URL on S3 Bucket - 1](../.gitbook/assets/aws-9.png)
+![Access the Object URL on S3 Bucket - 1](images/hosting-services/aws-9.png)
 
 **Modifying bucket policy**
 
@@ -116,14 +119,14 @@ Note that the `<BUCKET-NAME>` must be chosen from personal buckets' dashboard.
 
 After saving the changes, the bucket should appear as `Public` access.
 
-![Access the Object URL on S3 Bucket - 2](../.gitbook/assets/aws-10.png)
+![Access the Object URL on S3 Bucket - 2](images/hosting-services/aws-10.png)
 
 **Verify the object URL on public access**
 
 Select the file from the bucket that needs verification and select `Open`. Now it should
 be able to download the file on personal system.
 
-![Access the Object URL on S3 Bucket - 3](../.gitbook/assets/aws-11.png)
+![Access the Object URL on S3 Bucket - 3](images/hosting-services/aws-11.png)
 
 
 **Step 4 - Get the S3 Bucket Link & Publish Asset on Market**
@@ -136,7 +139,7 @@ for asset creation.
 Copy the `Object URL` that can be found at `Object Overview` from AWS S3 bucket
 and paste it in the `File` field from the form found at [step 2](https://market.oceanprotocol.com/publish/2) as it is illustrated below.
 
-![Get the S3 Bucket Link & Publish Asset on Market - 1](../.gitbook/assets/aws-12.png)
+![Get the S3 Bucket Link & Publish Asset on Market - 1](images/hosting-services/aws-12.png)
 
 #### Azure storage
 
@@ -152,47 +155,47 @@ Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might al
 
 Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
-![Create a storage account - 1](../.gitbook/assets/azure-1.png)
+![Create a storage account - 1](images/hosting-services/azure-1.png)
 
 **Create a new storage account**
 
-![Create a storage account - 2](../.gitbook/assets/azure-2.png)
+![Create a storage account - 2](images/hosting-services/azure-2.png)
 
 **Fill in the details**
 
-![Add details](../.gitbook/assets/azure-3.png)
+![Add details](images/hosting-services/azure-3.png)
 
 **Storage account created**
 
-![Storage account created](../.gitbook/assets/azure-4.png)
+![Storage account created](images/hosting-services/azure-4.png)
 
 **Step 2 - Create a blob container**
 
-![Create a blob container](../.gitbook/assets/azure-5.png)
+![Create a blob container](images/hosting-services/azure-5.png)
 
 **Step 3 - Upload a file**
 
-![Upload a file](../.gitbook/assets/azure-6.png)
+![Upload a file](images/hosting-services/azure-6.png)
 
 **Step 4 - Share the file**
 
 **Select the file to be published and click Generate SAS**
 
-![Click generate SAS](../.gitbook/assets/azure-7.png)
+![Click generate SAS](images/hosting-services/azure-7.png)
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](../.gitbook/assets/azure-8.png)
+![Generate link to file](images/hosting-services/azure-8.png)
 
 **Copy the generated link**
 
-![Copy the link](../.gitbook/assets/azure-9.png)
+![Copy the link](images/hosting-services/azure-9.png)
 
 **Step 5 - Publish the asset using the generated link**
 
 Now, copy and paste the link in the Publish page in the Ocean Marketplace.
 
-![Publish the file as an asset](../.gitbook/assets/azure-10.png)
+![Publish the file as an asset](images/hosting-services/azure-10.png)
 
 
 

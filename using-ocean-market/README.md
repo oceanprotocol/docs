@@ -11,7 +11,7 @@ The following guides will help you get started with buying and selling data:
 
 * [Publish a data asset](marketplace-publish-data-asset.md)
 * [Download a data asset](marketplace-download-data-asset.md)
-* [Publishing with hosting services](../building-with-ocean/asset-hosting.md)
+* [Publishing with hosting services](asset-hosting.md)
 
 If you are new to web3 and blockchain technologies then we suggest you first read these introductory guides:
 
