@@ -14,9 +14,9 @@ To generate rewards, start by navigating to [df.oceandao.org](https://df.oceanda
 
 ![](./images/veOCEAN-DF-Homepage.png)
 
-## Passive Rewards
+## veOCEAN
 
-### veOCEAN
+### Passive Rewards
 
 #### How do I get veOCEAN?
 
@@ -38,9 +38,9 @@ Now the OCEAN tokens are locked in exchange for veOCEAN. The left side panel cal
 
 Notice the right side panel is now titled "Update veOCEAN Lock". You can add OCEAN tokens to your lock or you can increase the Lock End Date, but you cannot shorten your Lock End Date.
 
-## Active Rewards
+## Data Farming
 
-### Data Farming
+### Active Rewards
 
 #### How do I allocate veOCEAN?
 
@@ -70,7 +70,7 @@ All rewards are paid out in OCEAN tokens. On every Thursday the pink "Claim" but
 
 ### Withdrawl
 
-After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean).
+After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 
 ## Learn More
 If you would like to find out more details about veOCEAN, Data Farming, and rewards calculations, then please visit the About tab to read a great [blog post](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) on this topic.
