@@ -18,6 +18,8 @@ To generate rewards, start by navigating to [df.oceandao.org](https://df.oceanda
 
 ### Passive Rewards
 
+When a user locks their OCEAN tokens for a finite period of time, they get veOCEAN tokens in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called "passive" OCEAN rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+
 #### How do I get veOCEAN?
 
 After navigating to the [veOCEAN page](https://df.oceandao.org/veocean), you can generate passive OCEAN rewards by locking OCEAN tokens on the "Lock OCEAN, get veOCEAN" panel on the right side of the page. Connect a wallet to see the balance of OCEAN tokens update above the OCEAN Amount form field. Select a lock end date to see the Lock Multiplier and Receive veOcean fields update.
@@ -41,6 +43,8 @@ Notice the right side panel is now titled "Update veOCEAN Lock". You can add OCE
 ## Data Farming
 
 ### Active Rewards
+
+When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, they are categorized as "active" rewards as opposed to "passive" rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 #### How do I allocate veOCEAN?
 
