@@ -581,7 +581,7 @@ GET /api/services/createAuthToken?address=0xA78deb2Fa79463945C247991075E2a0e98Ba
 Response:
 
 ```
-b'{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjAwNTMxMjksImFkZHJlc3MiOiIweEE3OGRlYjJGYTc5NDYzOTQ1QzI0Nzk5MTA3NUUyYTBlOThCYTdBMDkifQ.QaRqYeSYxZpnFayzPmUkj8TORHHJ_vRY-GL88ZBFM0o"}'
+{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjAwNTMxMjksImFkZHJlc3MiOiIweEE3OGRlYjJGYTc5NDYzOTQ1QzI0Nzk5MTA3NUUyYTBlOThCYTdBMDkifQ.QaRqYeSYxZpnFayzPmUkj8TORHHJ_vRY-GL88ZBFM0o"}
 ```
 
 
@@ -613,6 +613,6 @@ DELETE /api/services/deleteAuthToken?address=0xA78deb2Fa79463945C247991075E2a0e9
 Response:
 
 ```
-b'{"success": "Token has been deactivated."}'
+{"success": "Token has been deactivated."}
 ```
 
