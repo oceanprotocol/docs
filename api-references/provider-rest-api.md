@@ -528,18 +528,91 @@ Response:
 ```json
 [
     {
-        "cpuType":"AMD Ryzen 7 5800X 8-Core Processor"
-        "currentJobs":0
-        "desc":"This is a mocked enviroment"
-        "diskGB":2
-        "gpuType":"AMD RX570"
-        "id":"ocean-compute"
-        "maxJobs":10
-        "nCPU":2
-        "nGPU":0
-        "priceMin":2.3
+        "cpuType":"AMD Ryzen 7 5800X 8-Core Processor",
+        "currentJobs":0,
+        "desc":"This is a mocked enviroment",
+        "diskGB":2,
+        "gpuType":"AMD RX570",
+        "id":"ocean-compute",
+        "maxJobs":10,
+        "nCPU":2,
+        "nGPU":0,
+        "priceMin":2.3,
         "ramGB":1
     },
     ...
 ]
 ```
+
+### Authentication endpoints
+
+Provider offers an alternative to signing each request, by allowing users to generate auth tokens.
+The generated auth token can be used until its expiration in all supported requests.
+Simply omit the signature parameter and add the AuthToken request header based on a created token.
+
+Please note that if a signature parameter exists, it will take precedence over the AuthToken headers.
+All routes that support a signature parameter support the replacement, with the exception of auth-related ones
+(createAuthToken and deleteAuthToken need to be signed).
+
+#### GET /api/services/createAuthToken
+
+Allows the user to create an auth token.
+
+Parameters
+
+```
+address: String object containing consumer's address (optional)
+nonce: Integer, Nonce (required)
+signature: String object containg user signature (signed message)
+ The signature is based on hashing the following parameters:
+   address + nonce
+expiration: valid future UTC timestamp (required)
+```
+
+Returns:
+Created auth token.
+
+Example:
+
+```
+GET /api/services/createAuthToken?address=0xA78deb2Fa79463945C247991075E2a0e98Ba7A09&&nonce=1644317370&&expiration=1660053210&signature=0x70895648fb9957537b0ffd0d12a9705dda35445e5e5b6b40b7b7448902a29e194773b10d8fee1750d9eb5542e252610d4aa7edfc3101fb8fa9d2c45729f0698301
+```
+
+Response:
+
+```
+b'{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjAwNTMxMjksImFkZHJlc3MiOiIweEE3OGRlYjJGYTc5NDYzOTQ1QzI0Nzk5MTA3NUUyYTBlOThCYTdBMDkifQ.QaRqYeSYxZpnFayzPmUkj8TORHHJ_vRY-GL88ZBFM0o"}'
+```
+
+
+#### DELETE /api/services/deleteAuthToken
+
+Allows the user to delete an existing auth token before it naturally expires.
+
+Parameters
+
+```
+address: String object containing consumer's address (optional)
+nonce: Integer, Nonce (required)
+signature: String object containg user signature (signed message)
+  The signature is based on hashing the following parameters:
+  address + nonce
+token: token to be expired
+```
+
+Returns:
+Success message if token is successfully deleted.
+If the token is not found or already expired, returns an error message.
+
+Example:
+
+```
+DELETE /api/services/deleteAuthToken?address=0xA78deb2Fa79463945C247991075E2a0e98Ba7A09&&nonce=1644317370&&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjAwNTMxMjksImFkZHJlc3MiOiIweEE3OGRlYjJGYTc5NDYzOTQ1QzI0Nzk5MTA3NUUyYTBlOThCYTdBMDkifQ.QaRqYeSYxZpnFayzPmUkj8TORHHJ_vRY-GL88ZBFM0o&signature=0x70895648fb9957537b0ffd0d12a9705dda35445e5e5b6b40b7b7448902a29e194773b10d8fee1750d9eb5542e252610d4aa7edfc3101fb8fa9d2c45729f0698301
+```
+
+Response:
+
+```
+b'{"success": "Token has been deactivated."}'
+```
+
