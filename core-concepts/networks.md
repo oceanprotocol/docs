@@ -183,29 +183,6 @@ If you don't find Mumbai as a predefined network in your wallet, you can connect
 | Provider     | `https://v4.provider.mumbai.oceanprotocol.com`                      |
 | Subgraph     | `https://v4.subgraph.mumbai.oceanprotocol.com`                      |
 
-### Moonbase
-
-Moonbase is a test network tuned for Moonbeam / Moonriver.
-
-If you don't find Moonbase as a predefined network in your wallet, you can connect to it manually via [Moonbase guide](https://docs.moonbeam.network/learn/platform/networks/moonbase/).
-
-**Tokens**
-
-* Moonbase DEV:
-  * Native token to pay transaction fees
-  * Facuet: See above guide You may find others by [searching](https://www.google.com/search?q=moonbase+dev+faucet).
-* Moonbase OCEAN:
-  * Address: [0xF6410bf5d773C7a41ebFf972f38e7463FA242477](https://moonbase.moonscan.io/token/0xF6410bf5d773C7a41ebFf972f38e7463FA242477)
-  * [Faucet](https://faucet.moonbase.oceanprotocol.com/)
-
-**Additional Components**
-
-| What         | URL                                                                   |
-| ------------ | --------------------------------------------------------------------- |
-| Explorer     | https://moonbase.moonscan.io/                                         |
-| Ocean Market | Point wallet to Moonbase network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.moonbase.oceanprotocol.com/`                     |
-| Subgraph     | `https://v4.subgraph.moonbase.oceanprotocol.com`                      |
 
 ### Local / Ganache
 
