@@ -15,7 +15,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6'
     ```
 * Responses
   * 200
@@ -45,7 +45,7 @@
 *   Example
 
     ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/metadata/did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479'
+    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/metadata/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6'
     ```
 * Responses
   * 200
@@ -78,7 +78,7 @@
     curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/names' \
     --header 'Content-Type: application/json' \
     --data-raw '{
-        "didList" : ["did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479"]
+        "didList" : ["did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6"]
     }'
     ```
 * Responses
@@ -88,7 +88,7 @@
     *   response body:
 
         ```
-        {"did:op:CbD7aeecB5DFbABaB9126B5Cf1262dCFBA178479": "Ocean Protocol Technical Whitepaper"}
+        {"did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6": "Ocean CEX Aggregator: OHLC history for OCEAN/USDT "}
         ```
   * 400
     * content-type: json
