@@ -596,9 +596,9 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 | State | Description | Discoverable in Ocean Market | Ordering allowed | Listed under profile |
 | ----- | ----------- | ------------------ | ---------------- | ---- |
 | **`0`**     | Active | Yes | Yes | Yes |
-| **`1`**     | End-of-life | No | No | Yes |
-| **`2`**     | Deprecated (by another asset) | No | No | Yes |
-| **`3`**     | Revoked by publisher | No | No | Yes |
+| **`1`**     | End-of-life | No | No | No |
+| **`2`**     | Deprecated (by another asset) | No | No | No |
+| **`3`**     | Revoked by publisher | No | No | No |
 | **`4`**     | Ordering is temporary disabled | Yes | No | Yes |
 | **`5`**     | Asset unlisted.| No | Yes | Yes |
 ### Aquarius Enhanced DDO Response
