@@ -601,6 +601,7 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 | **`3`**     | Revoked by publisher | No | No | No |
 | **`4`**     | Ordering is temporary disabled | Yes | No | Yes |
 | **`5`**     | Asset unlisted.| No | Yes | Yes |
+
 ### Aquarius Enhanced DDO Response
 
 The following fields are added by _Aquarius_ in its DDO response for convenience reasons, where an asset returned by _Aquarius_ inherits the DDO fields stored on-chain.
