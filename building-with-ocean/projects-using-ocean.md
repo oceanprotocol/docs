@@ -5,8 +5,6 @@ description: We work with many competent partners who understand the value of Oc
 
 We work closely with our collaborators and service partners to iterate on our underlying technology, and to deliver world-class Web3 experiences built on top of Ocean Protocol. An up to date list of our partners and collaborators is maintained on our [main site](https://oceanprotocol.com/collaborators).
 
-If you would like to become a service partner, please get in touch [via the website](https://oceanprotocol.com/collaborators#servicepartner).
-
 ## Other Useful Information
 
 ### OceanDAO projects
