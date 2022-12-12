@@ -1,6 +1,6 @@
 ---
-title: Projects using Ocean Protocol
-description: This page helps you to find projects in the Ocean ecosystem.
+title: Partners & Collaborators
+description: We work with many competent partners who understand the value of Ocean
 ---
 
 We work closely with our collaborators and service partners to iterate on the network's underlying technology, and to deliver world-class Web3 experiences built on top of Ocean Protocol to enterprises. An up to date list of our partners and collaborators is maintained on our [main site](https://oceanprotocol.com/collaborators).
