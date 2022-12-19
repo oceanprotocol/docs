@@ -52,7 +52,7 @@
   * [Contributing](core-concepts/contributing.md)
     * [Contributor Code of Conduct](core-concepts/code-of-conduct.md)
     * [Legal Requirements](core-concepts/legal-reqs.md)
-  * [Projects using Ocean Protocol](building-with-ocean/projects-using-ocean.md)
+  * [Partners & Collaborators](building-with-ocean/projects-using-ocean.md)
 * [Rewards](rewards/veOcean-Data-Farming-Tutorial.md)
 * [API References](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
