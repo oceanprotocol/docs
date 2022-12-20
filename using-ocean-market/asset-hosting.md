@@ -60,8 +60,6 @@ Once the transaction finalizes, select it, and copy the transaction ID.
 
 ![Ocean Market - Publish with arweave transaction ID](../.gitbook/assets/arweave-4.png)
 
-TODO - Add a picture of the Ocean Market publish page with Arweave storage selected
-
 #### AWS
 
 AWS provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using AWS S3 bucket and publish it on Ocean Marketplace.
