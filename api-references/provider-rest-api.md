@@ -582,8 +582,9 @@ Created auth token.
 Example:
 
 ```
-GET /api/services/createAuthToken?address=0xA78deb2Fa79463945C247991075E2a0e98Ba7A09&&nonce=1644317370&&expiration=1660053210&signature=0x70895648fb9957537b0ffd0d12a9705dda35445e5e5b6b40b7b7448902a29e194773b10d8fee1750d9eb5542e252610d4aa7edfc3101fb8fa9d2c45729f0698301
+GET /api/services/createAuthToken?address=<your_address>&&nonce=<your_nonce>&&expiration=<expiration>&signature=<your_signature>
 ```
+Inside the angular brackets, the user should provide the valid values for the request.
 
 Response:
 
@@ -614,8 +615,9 @@ If the token is not found or already expired, returns an error message.
 Example:
 
 ```
-DELETE /api/services/deleteAuthToken?address=0xA78deb2Fa79463945C247991075E2a0e98Ba7A09&&nonce=1644317370&&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjAwNTMxMjksImFkZHJlc3MiOiIweEE3OGRlYjJGYTc5NDYzOTQ1QzI0Nzk5MTA3NUUyYTBlOThCYTdBMDkifQ.QaRqYeSYxZpnFayzPmUkj8TORHHJ_vRY-GL88ZBFM0o&signature=0x70895648fb9957537b0ffd0d12a9705dda35445e5e5b6b40b7b7448902a29e194773b10d8fee1750d9eb5542e252610d4aa7edfc3101fb8fa9d2c45729f0698301
+DELETE /api/services/deleteAuthToken?address=<your_address>&&nonce=<your_nonce>&&token=<your_token>&signature=<your_signature>
 ```
+Inside the angular brackets, the user should provide the valid values for the request.
 
 Response:
 
