@@ -14,7 +14,10 @@ Parameters
     userAddress: String object containing a user's ethereum address
 ```
 
-Returns: Json object containing the nonce value.
+Returns: Json object containing the last-used nonce value. 
+The nonce endpoint is just informative, use the current UTC timestamp as a nonce, 
+where required in other endpoints.
+
 
 Example:
 
@@ -93,6 +96,52 @@ Response:
 b'{"@context": ["https://w3id.org/did/v1"], "id": "did:op:0c184915b07b44c888d468be85a9b28253e80070e5294b1aaed81c ...'
 ```
 
+### File info endpoint
+
+#### POST /api/services/fileinfo
+
+Retrieves Content-Type and Content-Length from the given URL or asset.
+
+Parameters
+
+For published assets:
+```
+{
+    did: String, DID of the dataset
+    serviceId: String, ID of the service
+}
+```
+For file objects,see https://docs.oceanprotocol.com/core-concepts/did-ddo#files
+
+If checksum is requests, file size should be lower < MAX_CHECKSUM_LENGTH (see Provider ENVs)
+If file is larger, checksum WILL NOT be computed.
+
+Returns: Json document file info object
+
+Example:
+
+```
+POST /api/services/fileinfo
+payload:
+{
+    "did":"0x1111",
+    "serviceId": "0",
+}
+```
+
+Response:
+
+```json
+[
+    {
+        "contentLength":"1161",
+        "contentType":"application/json",
+        "index":0,
+        "valid": true
+    },...
+]
+```
+
 ### Initial service request endpoint
 
 #### GET /api/services/initialize
@@ -145,7 +194,7 @@ Response:
         "r": "0xabc123...",
         "s": "0xabc123...",
         "validUntil": 123456,
-    }
+    },
     "computeAddress": "0x8123jdf8sdsa..."
 }
 ```
@@ -167,12 +216,12 @@ Parameters
     signature: String object containg user signature (signed message)
 ```
 
-Returns: File stream
+Returns: File stream. Retrieves the attached asset files.
 
 Example:
 
 ```
-POST /api/services/download
+GET /api/services/download
 payload:
 {
     "documentId":"0x1111",
@@ -192,48 +241,6 @@ Response:
 }
 ```
 
-### File info endpoint
-
-#### POST /api/services/fileinfo
-
-Retrieves Content-Type and Content-Length from the given URL or asset.
-
-Parameters
-
-```
-    type: String, either "url" or "asset"
-    did: String, DID of the dataset
-    hash: String, hash of the file
-    url: String, URL of the file
-    serviceId: String, ID of the service the datatoken is attached to
-```
-
-Returns: Json document file info object
-
-Example:
-
-```
-POST /api/services/fileinfo
-payload:
-{
-    "url": "https://s3.amazonaws.com/testfiles.oceanprotocol.com/info.0.json",
-    "type": "url",
-    "method": "GET",
-}
-```
-
-Response:
-
-```json
-[
-    {
-        "contentLength":"1161"
-        "contentType":"application/json"
-        "index":0
-        "valid": true
-    },...
-]
-```
 
 ### Compute endpoints
 
@@ -397,6 +404,34 @@ Response:
 ]
 ```
 
+#### GET /api/services/computeResult
+
+Allows download of asset data file.
+
+Parameters
+
+```
+    jobId: String object containing workflowId (optional)
+    index: Integer, index of the result to download (optional)
+    consumerAddress: String object containing consumer's address (optional)
+    nonce: Integer, Nonce (required)
+    signature: String object containg user signature (signed message)
+```
+
+Returns: Bytes string containing the compute result.
+
+Example:
+
+```
+GET /api/services/computeResult?index=0&consumerAddress=0xA78deb2Fa79463945C247991075E2a0e98Ba7A09&jobId=4d32947065bb46c8b87c1f7adfb7ed8b&nonce=1644317370
+```
+
+Response:
+
+```
+b'{"result": "0x0000000000000000000000000000000000000000000000000000000000000001"}'
+```
+
 ### Stop
 
 #### PUT /api/services/compute
@@ -478,34 +513,6 @@ Response:
 ]
 ```
 
-#### GET /api/services/computeResult
-
-Allows download of asset data file.
-
-Parameters
-
-```
-    jobId: String object containing workflowId (optional)
-    index: Integer, index of the result to download (optional)
-    consumerAddress: String object containing consumer's address (optional)
-    nonce: Integer, Nonce (required)
-    signature: String object containg user signature (signed message)
-```
-
-Returns: Bytes string containing the compute result.
-
-Example:
-
-```
-GET /api/services/computeResult?index=0&consumerAddress=0xA78deb2Fa79463945C247991075E2a0e98Ba7A09&jobId=4d32947065bb46c8b87c1f7adfb7ed8b&nonce=1644317370
-```
-
-Response:
-
-```
-b'{"result": "0x0000000000000000000000000000000000000000000000000000000000000001"}'
-```
-
 #### GET /api/services/computeEnvironments
 
 Allows download of asset data file.
@@ -530,7 +537,7 @@ Response:
     {
         "cpuType":"AMD Ryzen 7 5800X 8-Core Processor",
         "currentJobs":0,
-        "desc":"This is a mocked enviroment",
+        "desc":"This is a mocked environment",
         "diskGB":2,
         "gpuType":"AMD RX570",
         "id":"ocean-compute",

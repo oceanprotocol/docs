@@ -593,14 +593,14 @@ _Aquarius_ should always verify the checksum after data is decrypted via a _Prov
 
 Each asset has a state, which is held by the NFT contract. The possible states are:
 
-| State   | Description                     |
-| ------- | ------------------------------- |
-| **`0`** | Active.                         |
-| **`1`** | End-of-life.                    |
-| **`2`** | Deprecated (by another asset).  |
-| **`3`** | Revoked by publisher.           |
-| **`4`** | Ordering is temporary disabled. |
-| **`5`** | Asset unlisted.                 |
+| State | Description | Discoverable in Ocean Market | Ordering allowed | Listed under profile |
+| ----- | ----------- | ------------------ | ---------------- | ---- |
+| **`0`**     | Active | Yes | Yes | Yes |
+| **`1`**     | End-of-life | No | No | No |
+| **`2`**     | Deprecated (by another asset) | No | No | No |
+| **`3`**     | Revoked by publisher | No | No | No |
+| **`4`**     | Ordering is temporary disabled | Yes | No | Yes |
+| **`5`**     | Asset unlisted.| No | Yes | Yes |
 
 ### Aquarius Enhanced DDO Response
 

@@ -2,6 +2,8 @@
 
 Follow this step-by-step guide to get OCEAN rewards. There are two types of OCEAN rewards: passive and active rewards. OCEAN token holders may generate passive OCEAN rewards by locking up OCEAN in exchange for veOCEAN tokens. veOCEAN tokens can then be allocated to Ocean Market datasets and algorithms to generate active OCEAN rewards.
 
+[![veOCEAN and Data Farming Rewards](./images/vedf_youtube_thumbnail.png)](https://www.youtube.com/watch?v=zAQlPHkK3og)
+
 ## How do I get rewards?
 
 To generate rewards, start by navigating to [df.oceandao.org](https://df.oceandao.org). At the top of this page is the weekly round of OCEAN rewards and the quantity of OCEAN rewards to be distributed. The countdown timer shows the time until **each Thursday** when rewards are distributed. OCEAN rewards can be claimed every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
@@ -12,9 +14,13 @@ To generate rewards, start by navigating to [df.oceandao.org](https://df.oceanda
 
 ![](./images/veOCEAN-DF-Homepage.png)
 
-## Passive Rewards
+## veOCEAN
 
-### How do I get veOCEAN?
+### Passive Rewards
+
+When a user locks their OCEAN tokens for a finite period of time, they get veOCEAN tokens in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called "passive" OCEAN rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+
+#### How do I get veOCEAN?
 
 After navigating to the [veOCEAN page](https://df.oceandao.org/veocean), you can generate passive OCEAN rewards by locking OCEAN tokens on the "Lock OCEAN, get veOCEAN" panel on the right side of the page. Connect a wallet to see the balance of OCEAN tokens update above the OCEAN Amount form field. Select a lock end date to see the Lock Multiplier and Receive veOcean fields update.
 
@@ -34,9 +40,13 @@ Now the OCEAN tokens are locked in exchange for veOCEAN. The left side panel cal
 
 Notice the right side panel is now titled "Update veOCEAN Lock". You can add OCEAN tokens to your lock or you can increase the Lock End Date, but you cannot shorten your Lock End Date.
 
-## Active Rewards
+## Data Farming
 
-### How do I allocate veOCEAN?
+### Active Rewards
+
+When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, they are categorized as "active" rewards instead of passive rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+
+#### How do I allocate veOCEAN?
 
 You can generate active OCEAN rewards by allocating veOCEAN to various OCEAN Market projects to gain a portion of project sales.
 
@@ -52,11 +62,19 @@ Once you allocate your percentage of veOCEAN to projects using the MyAllocation 
 
 ## Claim Rewards
 
-Click on the Rewards tab at the top of the page to come to the [same page](https://test-df.oceandao.org/rewards) as at the beginning of this tutorial. Now the balance of veOCEAN appears under the Passive Rewards panel on the left and the percentage allocated appears on the Active Rewards panel on the right.
+Click on the Rewards tab at the top of the page to come to the [same page](https://test-df.oceandao.org/rewards) as at the beginning of this tutorial. Notice the balance of veOCEAN appears under the Passive Rewards panel on the left and the percentage allocated appears on the Active Rewards panel on the right.
+
+All rewards are paid out in OCEAN tokens. On every Thursday the pink "Claim" buttons on this page become activated, and you can claim your weekly OCEAN rewards directly into your wallet by clicking on these active buttons.
 
 ![](./images/Rewards-Page.png)
 
-**Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested veCRV token code.
+#### Linear Decay
+
+**Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
+
+### Withdrawl
+
+After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 
 ## Learn More
-If you would like to find out more details about veOCEAN, Data Farming, and rewards calculations, then please visit the About tab to read a great [blog post](https://blog.oceanprotocol.com/veocean-is-launching-data-farming-is-resuming-abed779211e3) on this topic.
+If you would like to find out more details about veOCEAN, Data Farming, and rewards calculations, then please visit the About tab to read a great [blog post](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) on this topic.
