@@ -17,10 +17,50 @@ On Ocean Marketplace, a publisher must provide the link to the asset during publ
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
-Please use a proper hosting solution to keep your files. 
+Please use a proper hosting solution to keep your files.
 When using other systems (for example, `Google Drive`) that are not specifically
 designed for this use case, you risk not gaining traction. Systems such as `Google Drive`,
 include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
+
+#### Arweave
+
+[Arweave](https://www.arweave.org/) is a global, permanent, and decentralized data storage layer that allows you to store documents and applications forever. Arweave is different from other decentralized storage solutions in that there is only one up-front cost to upload each file.
+
+**Step 1 - Get a new wallet and AR tokens**
+
+Download & save a new wallet (JSON key file) and receive a small amount of AR tokens for free using the [Arweave faucet](https://faucet.arweave.net/). If you already have an Arweave browser wallet, you can skip to Step 3.
+
+At the time of writing, the faucet provides 0.02 AR which is more than enough to upload file.
+
+If at any point you need more AR tokens, you can fund your wallet from one of Arweave's [supported exchanges](https://arwiki.wiki/#/en/Exchanges).
+
+**Step 2 - Load the key file into the arweave.app web wallet**
+
+Open [arweave.app](https://arweave.app/) in a browser. Select the '+' icon in the bottom left corner of the screen. Import the JSON key file from step 1.
+
+![arweave.app import key file](../.gitbook/assets/arweave-1.png)
+
+**Step 3 - Upload file**
+
+Select the newly imported wallet by clicking the "blockies" style icon in the top left corner of the screen. Select **Send.** Click the **Data** field and select the file you wish to upload.
+
+![arweave.app upload file](../.gitbook/assets/arweave-2.png)
+
+The fee in AR tokens will be calculated based on the size of the file and displayed near the bottom middle part of the screen. Select **Submit** to submit the transaction.
+
+After submitting the transaction, select **Transactions** and wait until the transaction appears and eventually finalizes. This can take over 5 minutes so please be patient.&#x20;
+
+**Step 4 - Copy the transaction ID**
+
+Once the transaction finalizes, select it, and copy the transaction ID.
+
+![arweave.app transaction ID](../.gitbook/assets/arweave-3.png)
+
+**Step 5 - Publish the asset with the transaction ID**
+
+![Ocean Market - Publish with arweave transaction ID](../.gitbook/assets/arweave-4.png)
+
+TODO - Add a picture of the Ocean Market publish page with Arweave storage selected
 
 #### AWS
 
@@ -83,11 +123,11 @@ After selecting `Upload`, make sure that the status is `Succeeded`.
 
 By default, the permissions of accessing the file from S3 bucket are set to private.
 To publish an asset on the market, the S3 URL needs to be public.
-This step shows how to set up access control policies to grant permissions to others. 
+This step shows how to set up access control policies to grant permissions to others.
 
 **Editing permissions**
 
-Go to the `Permissions` tab and select `Edit` and then uncheck `Block all public access` 
+Go to the `Permissions` tab and select `Edit` and then uncheck `Block all public access`
 boxes to give everyone read access to the object and click `Save`.
 
 If editing the permissions is unavailable, modify the `Object Ownership` by enabling the ACLs
@@ -104,16 +144,16 @@ Note that the `<BUCKET-NAME>` must be chosen from personal buckets' dashboard.
 
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Public S3 Bucket",
-            "Principal": "*",
-            "Effect": "Allow",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::<BUCKET-NAME>/*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Public S3 Bucket",
+      "Principal": "*",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::<BUCKET-NAME>/*"
+    }
+  ]
 }
 ```
 
@@ -127,7 +167,6 @@ Select the file from the bucket that needs verification and select `Open`. Now i
 be able to download the file on personal system.
 
 ![Access the Object URL on S3 Bucket - 3](images/hosting-services/aws-11.png)
-
 
 **Step 4 - Get the S3 Bucket Link & Publish Asset on Market**
 
@@ -196,19 +235,3 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 Now, copy and paste the link in the Publish page in the Ocean Marketplace.
 
 ![Publish the file as an asset](images/hosting-services/azure-10.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
