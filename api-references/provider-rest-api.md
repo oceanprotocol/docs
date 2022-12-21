@@ -4,6 +4,9 @@
 
 This document specifies the endpoints for Ocean Provider to be implemented by the core developers.
 
+If you want to see the provider URLs for our supported networks, kindly
+check for `Provider` component on
+this [page](https://docs.oceanprotocol.com/core-concepts/networks).
 ### nonce endpoint
 
 #### GET /api/services/nonce
