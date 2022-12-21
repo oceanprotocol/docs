@@ -292,6 +292,7 @@ Parameters:
 ```
 {
 	"type": "smartcontract",
+	"chainId": 1,
 	"address": "0x8149276f275EEFAc110D74AFE8AFECEaeC7d1593",
 	"abi": {
 			"inputs": [],
