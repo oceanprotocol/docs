@@ -5,24 +5,34 @@ description: Tutorial to publish assets using hosting services like AWS and Azur
 
 # Publishing with Hosting Services
 
-### Overview
+# Table of Contents
 
-To publish assets on the Ocean Marketplace, publishers must provide a link(an URL) to the file. It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on their AWS server, private cloud server, or other third-party hosting services. Through publishing, the URL of the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to the URL, but they interact with the Provider, which decrypts the URL and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the URL and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the URL. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
+1. [Overview](#overview)
+2. [Decentralised hosting](#decentralised-hosting)
+   - [Arweave](#arweave)
+3. [Centralised hosting](#decentralised-hosting)
+   - [AWS](#aws)
+   - [Azure](#azure-storage)
 
-On Ocean Marketplace, a publisher must provide the link to the asset during publish step in the field shown in the below image.
+## Overview
+
+To publish on the Ocean Marketplace, publishers must first host their assets. It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on a decentralised storage like Arweave or choose a centralised solution like their AWS server, private cloud server, or other third-party hosting services. Through publishing, the information required to access the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to this information, but they interact with the Provider, which decrypts it and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the file and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the data. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
+
+On Ocean Marketplace, a publisher must provide the access information to the asset during the publish step in the field shown in the below image.
 
 ![Publish - File URL field](../.gitbook/assets/marketplace-publish-file-field.png)
 
-### Hosting services
-
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
+⚠️ Note
 Please use a proper hosting solution to keep your files.
-When using other systems (for example, `Google Drive`) that are not specifically
+When using some systems (for example, `Google Drive`) that are not specifically
 designed for this use case, you risk not gaining traction. Systems such as `Google Drive`,
 include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
 
-#### Arweave
+## Decentralised hosting
+
+### Arweave
 
 [Arweave](https://www.arweave.org/) is a global, permanent, and decentralized data storage layer that allows you to store documents and applications forever. Arweave is different from other decentralized storage solutions in that there is only one up-front cost to upload each file.
 
@@ -60,7 +70,9 @@ Once the transaction finalizes, select it, and copy the transaction ID.
 
 ![Ocean Market - Publish with arweave transaction ID](../.gitbook/assets/arweave-4.png)
 
-#### AWS
+## Centralised hosting
+
+### AWS
 
 AWS provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using AWS S3 bucket and publish it on Ocean Marketplace.
 
@@ -178,7 +190,7 @@ and paste it in the `File` field from the form found at [step 2](https://market.
 
 ![Get the S3 Bucket Link & Publish Asset on Market - 1](images/hosting-services/aws-12.png)
 
-#### Azure storage
+### Azure storage
 
 Azure provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using Azure storage and publish it on Ocean Marketplace.
 
