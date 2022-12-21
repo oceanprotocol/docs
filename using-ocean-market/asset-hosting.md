@@ -23,10 +23,8 @@ On Ocean Marketplace, a publisher must provide the access information to the ass
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
 ⚠️ Note
-Please use a proper hosting solution to keep your files.
-When using some systems (for example, `Google Drive`) that are not specifically
-designed for this use case, you risk not gaining traction. Systems such as `Google Drive`,
-include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
+**Please use a proper hosting solution to keep your files.**
+Systems like `Google Drive` are not specifically designed for this use case. They include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased and that will.
 
 ## Decentralised hosting
 
