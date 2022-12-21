@@ -27,7 +27,7 @@ With data NFTs, you are able to take advantage of the wider NFT ecosystem and al
 
 ## High-Level Architecture
 
-The image above describes how ERC721 data NFTs, ERC20 datatokens, and AMMs relate.
+The image above describes how ERC721 data NFTs and ERC20 datatokens relate.
 
 * Bottom: The publisher deploys an ERC721 data NFT contract representing the base IP for the data asset. They are now the manager of the data NFT.
 * Top: The manager then deploys an ERC20 datatoken contract against the data NFT. The ERC20 represents a license with specific terms like "can download for the next 3 days". They could even publish further ERC20 datatoken contracts, to represent different license terms or for compute-to-data.
