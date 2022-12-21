@@ -3,9 +3,7 @@ title: Publish assets using hosting services
 description: Tutorial to publish assets using hosting services like AWS and Azure.
 ---
 
-# Publishing with Hosting Services
-
-# Table of Contents
+## Table of Contents
 
 1. [Overview](#overview)
 2. [Decentralised hosting](#decentralised-hosting)
