@@ -3,6 +3,8 @@ title: Publish assets using hosting services
 description: Tutorial to publish assets using hosting services like Arweave, AWS, and Azure.
 ---
 
+## Table of contents
+
 1. [Overview](#overview)
 2. [Decentralized hosting](#decentralized-hosting)
    - [Arweave](#arweave)
