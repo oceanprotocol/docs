@@ -270,6 +270,10 @@ Parameters:
 {
 	"type": "graphql",
 	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
+    	"headers":{
+        	"Authorization": "Bearer 123", 
+        	"APIKEY": "124",
+    	},
 	"query": """query{
             nfts(orderBy: createdTimestamp,orderDirection:desc){
                  id
