@@ -41,7 +41,7 @@ Finally, we also have a fee manager which has the ability to set a new fee colle
 
 | Action &darr; / Role &rarr;       | NFT Owner              | Manager                | ERC20 Deployer         | Store Updater          | Metadata Updater       |
 | --------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
-| Set token URI                     |                        |                        |                        |                        |                        |
+| Set token URI                     | <center>**✓**</center> |                        |                        |                        |                        |
 | Add manager                       | <center>**✓**</center> |                        |                        |                        |                        |
 | Remove manager                    | <center>**✓**</center> |                        |                        |                        |                        |
 | Clean permissions                 | <center>**✓**</center> |                        |                        |                        |                        |
