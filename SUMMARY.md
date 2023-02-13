@@ -61,6 +61,6 @@
 ## Community
 
 * [Medium](https://blog.oceanprotocol.com/)
-* [Discord](https://discord.gg/oceanprotocol)
+* [Discord](https://discord.com/invite/TnXjkR5)
 * [Telegram](https://t.me/OceanProtocol\_Community)
 * [Twitter](https://twitter.com/oceanprotocol)
