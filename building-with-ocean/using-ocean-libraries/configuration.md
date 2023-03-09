@@ -108,10 +108,10 @@ npm install @oceanprotocol/lib@latest dotenv web3 @truffle/hdwallet-provider
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip3 install wheel
+pip install wheel
 
 # Install Ocean library. Allow pre-releases to get the latest v4 version.
-pip3 install ocean-lib python-dotenv web3
+pip install ocean-lib
 ```
 {% endtab %}
 {% endtabs %}
@@ -186,19 +186,23 @@ module.exports = {
 ```python
 import os
 from dotenv import load_dotenv
+from ocean_lib.example_config import get_config_dict
+from ocean_lib.web3_internal.utils import connect_to_network
 from ocean_lib.ocean.ocean import Ocean
-from ocean_lib.web3_internal.wallet import Wallet
-from ocean_lib.example_config import ExampleConfig, get_config_dict
-from ocean_lib.ocean.ocean import Ocean
-from ocean_lib.ocean.util import get_web3
 
 load_dotenv()
 
-config = ExampleConfig.get_config()
+# Create Ocean instance
+network_name = os.getenv("OCEAN_NETWORK")
+connect_to_network(network_name)
+
+config = get_config_dict(network_name)
 ocean = Ocean(config)
 
+from brownie.network import accounts
+accounts.clear()
 user_private_key = os.getenv('PRIVATE_KEY')
-web3_wallet = Wallet(ocean.web3, user_private_key, ocean.config.block_confirmations, ocean.config.transaction_timeout)
+wallet = accounts.add(user_private_key)
 ```
 {% endcode %}
 {% endtab %}
