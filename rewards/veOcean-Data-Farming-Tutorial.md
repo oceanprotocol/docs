@@ -76,37 +76,19 @@ After the Lock End Date, then you can withdraw your principal OCEAN tokens on th
 
 ## Delegation
 
-### What is veOCEAN Delegation?<br />
+Delegation allows you to temporarily transfer your veOCEAN allocation power to another wallet address. This feature enables you to earn a higher annual percentage yield (APY) by delegating to an address that efficiently manages your allocation, without the need for reallocation and transaction fees.
 
-Delegation allows you to give your veOCEAN allocation power to another wallet address for a limited period of time.
+If you have multiple wallets, delegation enables you to manage your allocations with just one wallet address.
 
-### Why to delegate?<br />
+When you delegate, you transfer 100% of your veOCEAN allocation power for a limited period. After delegation, you cannot manage your allocations until the delegation expires. The delegation expiration date is the same as the veOCEAN lock end date at the time of delegation. If necessary, you can extend your lock before delegating. You can cancel your delegation at any time.
 
-Higher APY by delegation to wallet addresses that manages your allocation in the most efficient way.
-You don’t have to reallocate and pay transaction fees related to that.<br />
-If you are locked with multiple wallets, you can use just one of them to manage your allocations.
+Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge over your rewards and the process of returning those back to you.
 
-### How delegation works?<br />
+To delegate, go to the DF Portal and select the wallet address you wish to delegate to. Click the Delegate button and sign the transaction. You can view information about your delegation in the My Delegations component. If needed, you can cancel delegation to regain your allocation power before the delegation expires.
 
-When delegation you will give away for a limited period of time 100% of your veOCEAN allocation power. After that you wouldn't be able to manage your allocations anymore, until delegation expires.<br />
-Your delegation expiration date is the veOCEAN lock end date of the moment when the delegation is executed. You might want to extend your lock before delegating.<br />
-You can cancel your delegation at any time.
+![](./images/veOCEAN-Delegation.png)
 
-### How do I get rewards?<br />
-
-After you are delegated, rewards are going to go to the wallet address that you delegated to.<br />
-The delegation receiver is going to take a cut of the rewards and send the rest of the rewards to you.
-
-### How to delegate?<br />
-
-Go to DF Portal and select a wallet address that you want to delegate to.<br />
-Click the Delegate button and sign the transaction. After this you can see information about your delegation in the My Delegations component.<br />
-Cancel delegation if you want to get your allocation power back before the delegation expiry date.
-
-### How to manage received delegations?<br />
-
-If you received veOCEAN allocation power from other wallet addresses you will receive their rewards and will be in charge of sending rewards to delegators.<br />
-You can’t delegate the veOCEAN that you received from delegates, only veOCEAN that you received from your lock.
+If you receive veOCEAN allocation power from other wallets, you will receive their rewards and be responsible for distributing rewards to the delegators. You cannot delegate the veOCEAN you received from delegates, only the veOCEAN you received from your lock.
 
 ## Learn More
 
