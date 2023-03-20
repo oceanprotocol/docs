@@ -28,9 +28,7 @@ After navigating to the [veOCEAN page](https://df.oceandao.org/veocean), you can
 
 Click the checkbox below the inactive pink ALLOW button, then click the activated pink ALLOW button. Sign the transaction with your wallet. Then, click the LOCK OCEAN button. Sign the transaction with your wallet. Note that all veOCEAN contracts are deployed on the Ethereum mainnet.
 
-
 ![](./images/veOCEAN-Before-Lock.png)
-
 
 Now the OCEAN tokens are locked in exchange for veOCEAN. The left side panel called "My veOCEAN" shows the corresponding balances of OCEAN and veOCEAN. You can withdraw your OCEAN tokens on this panel when the lock time ends.
 
@@ -76,5 +74,40 @@ All rewards are paid out in OCEAN tokens. On every Thursday the pink "Claim" but
 
 After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 
+## Delegation
+
+### What is veOCEAN Delegation?<br />
+
+Delegation allows you to give your veOCEAN allocation power to another wallet address for a limited period of time.
+
+### Why to delegate?<br />
+
+Higher APY by delegation to wallet addresses that manages your allocation in the most efficient way.
+You don’t have to reallocate and pay transaction fees related to that.<br />
+If you are locked with multiple wallets, you can use just one of them to manage your allocations.
+
+### How delegation works?<br />
+
+When delegation you will give away for a limited period of time 100% of your veOCEAN allocation power. After that you wouldn't be able to manage your allocations anymore, until delegation expires.<br />
+Your delegation expiration date is the veOCEAN lock end date of the moment when the delegation is executed. You might want to extend your lock before delegating.<br />
+You can cancel your delegation at any time.
+
+### How do I get rewards?<br />
+
+After you are delegated, rewards are going to go to the wallet address that you delegated to.<br />
+The delegation receiver is going to take a cut of the rewards and send the rest of the rewards to you.
+
+### How to delegate?<br />
+
+Go to DF Portal and select a wallet address that you want to delegate to.<br />
+Click the Delegate button and sign the transaction. After this you can see information about your delegation in the My Delegations component.<br />
+Cancel delegation if you want to get your allocation power back before the delegation expiry date.
+
+### How to manage received delegations?<br />
+
+If you received veOCEAN allocation power from other wallet addresses you will receive their rewards and will be in charge of sending rewards to delegators.<br />
+You can’t delegate the veOCEAN that you received from delegates, only veOCEAN that you received from your lock.
+
 ## Learn More
+
 If you would like to find out more details about veOCEAN, Data Farming, and rewards calculations, then please visit the About tab to read a great [blog post](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) on this topic.
