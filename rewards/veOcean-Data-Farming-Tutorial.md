@@ -84,7 +84,10 @@ When you delegate, you transfer 100% of your veOCEAN allocation power for a limi
 
 Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of your rewards and the process of returning those back to you.
 
-To delegate, go to the DF Portal and select the wallet address you wish to delegate to. Click the Delegate button and sign the transaction. You can view information about your delegation in the My Delegations component. If needed, you can cancel delegation to regain your allocation power before the delegation expires.
+Follow these steps to delegate you veOcean:
+1. Go to the DF Portal and select the wallet address you wish to delegate to. 
+2. Click the Delegate button and sign the transaction. You can view information about your delegation in the My Delegations component. 
+3. If needed, you can cancel the delegation to regain your allocation power before the delegation expires.
 
 ![](./images/veOCEAN-Delegation.png)
 
