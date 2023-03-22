@@ -1,5 +1,10 @@
 # Emissions & APYs
 
+With veOCEAN, OceanDAO evolves to be more like CurveDAO:
+
+- ve is at the heart with v = voting (in data asset curation) and e = escrowed (locked) OCEAN. The longer the lockup, the more voting and rewards, which reconciles near- and long-term DAO incentives.
+- The DAO has increased bias to automation, and to minimizing the governance attack surface. The 143.8M OCEAN that was originally earmarked for a DAO treasury will go into DF instead. And, 143.8M OCEAN earmarked for grants will go to DF (>21.5M OCEAN remains for grants). This is on top of 215.7M OCEAN previously allocated . Therefore DF now has 503.4M OCEAN allocated; this is 35.7% of total OCEAN supply (1.41B OCEAN).
+
 The baseline emissions schedule determines the weekly OCEAN budget for this phase. The schedule is like Bitcoin, including a half-life of 4 years. Unlike Bitcoin, there is a burn-in period to ratchet up value-at-risk versus time:
 - The curve initially gets a multiplier of 10% for 12 months (DF Main 1)
 - Then, it transitions to multiplier of 25% for 6 months (DF Main 2)
