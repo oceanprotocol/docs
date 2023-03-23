@@ -52,7 +52,7 @@
   * [Contributing](core-concepts/contributing.md)
     * [Contributor Code of Conduct](core-concepts/code-of-conduct.md)
     * [Legal Requirements](core-concepts/legal-reqs.md)
-  * [Projects using Ocean Protocol](building-with-ocean/projects-using-ocean.md)
+  * [Partners & Collaborators](building-with-ocean/projects-using-ocean.md)
 * [veOCEAN & Data Farming](veocean-data-farming/README.md)
   * [veOCEAN](veocean-data-farming/veocean.md)
   * [Data Farming 101](veocean-data-farming/df-intro.md)
