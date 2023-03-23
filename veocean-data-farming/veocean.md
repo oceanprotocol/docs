@@ -18,10 +18,10 @@ After creating your lock you will be credited veOCEAN. We sometimes refer to veO
 veOCEAN allows you to engage with the protocol and benefit from the reward programs available.
 
 There are 4 things you can do with veOCEAN.
-1. **Hold it.** veOCEAN pays **Passive Rewards** every week.
-2. **Allocate it.** veOCEAN pays **Active Rewards** every week to the top performing Datasets, Algorithms, dApps, and more.
-3. **Delegate it.** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access rewards. 
-4. **2x Boost.** If you are a publisher, allocating veOCEAN to your own Dataset gives your veOCEAN a 2x Boost. This is an incentive for publishers to engage with their assets and benefit from from the protocol further.
+1. **Hold it** veOCEAN pays **Passive Rewards** every week.
+2. **Allocate it** veOCEAN pays **Active Rewards** every week to the top performing Datasets, Algorithms, dApps, and more.
+3. **Delegate it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access rewards. 
+4. **2x Stake** If you are a publisher, allocating veOCEAN to your own Dataset gives your veOCEAN a 2x Bonus. This is an incentive for publishers to engage with their assets and benefit from from the protocol further.
 
 ## What is time locking?
 

@@ -71,14 +71,14 @@ At the bottom-end, this eliminates some potential free-rider issues and smooths 
 
 You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1zZdWfywruMPt6r7vfl0nQD8Fgj4wkfuMslZcWJmy3GE/edit?usp=sharing).
 
-## 2x Bonus - Publisher Rewards
+## 2x Stake - Publisher Rewards
 As part of our efforts to increase the efficiency of the Reward Function, we researched a broad range of improvements that could be implemented and discussed their many outcomes.
 
 One particular improvement was noted, how to structure incentives to also align publishers.
 
 We explored dozens of possible ways to do it. In the end, we arrived at this approach. It was chosen for it’s simplicity and ease of understanding.
 
-### For publishers, effective 2x stake
+### For publishers, effective 2x Stake
 
 For Data Farming, we want to incentivize publishers to create more data sets, build more token-gated product, innovate how builders can consume Data-tokens.
 
