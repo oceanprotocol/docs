@@ -39,6 +39,38 @@ The nerdy version: if you lock OCEAN on day x, you’ll be able to claim rewards
 
 This behavior is inherited from [veCRV](https://curve.readthedocs.io/dao-fees.html); [here’s the code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256).
 
+## DF Main
+
+DF Main started Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
+
+As of DF29, wash consuming will no longer be profitable. So, organically-generated Data Consume Volume will be the main driver of active DF rewards.
+
+[Example APYs are 5–20%](emissions-apys.md#example-apys) between Passive & Active rewards.
+
+Full implementation of DF Main will be over many months, after which DF will be decentralized.
+
+DF Main lasts for decades.
+
+## Reward Schedule
+
+The table below cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
+
+![](./images/reward_schedule.png)
+_Ocean Reward Schedule for the next 20+ years_
+
+## Ranked Rewards
+In DF23 Ranked Rewards were introduced and smooth the reward distribution by using a logarithmic function.
+
+**Since rewards are distributed across the Top 100 assets (current tuning Mar — 2023), all participants (Publishers & Curators) are now incentivized to support a broader range of assets rather than optimizing on a single asset.**
+
+At the top-end, this helps increase quality and diversification of inventory.
+
+At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
+
+![](images/ranked_rewards_study.png)
+
+You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1zZdWfywruMPt6r7vfl0nQD8Fgj4wkfuMslZcWJmy3GE/edit?usp=sharing).
+
 ## 2x Bonus - Publisher Rewards
 As part of our efforts to increase the efficiency of the Reward Function, we researched a broad range of improvements that could be implemented and discussed their many outcomes.
 
@@ -51,20 +83,3 @@ We explored dozens of possible ways to do it. In the end, we arrived at this app
 For Data Farming, we want to incentivize publishers to create more data sets, build more token-gated product, innovate how builders can consume Data-tokens.
 
 *All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation.*
-
-## DF Main
-
-DF Main started Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
-
-As of DF29, wash consuming will no longer be profitable. So, organically-generated Data Consume Volume will be the main driver of active DF rewards.
-
-[Example APYs are 5–20%](emissions-apys.md#example-apys) between Passive & Active rewards.
-
-Full implementation of DF Main will be over many months, after which DF will be decentralized. DF Main lasts for decades.
-
-## Reward Schedule
-
-The table below cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
-
-![](./images/reward_schedule.png)
-_Ocean Reward Schedule for the next 20+ years_

@@ -12,6 +12,20 @@ Thus, if you really want to max out your APY:
 
 Driving DCV for publishing & consuming is your challenge. It will take real work. And then the reward is APY. It’s incentives all the way down:)
 
+## Reward Function
+
+The Reward Function (RF) governs how active rewards are allocated to stakers.
+
+Rewards are calculated as follows:
+1. Distribute OCEAN across each asset based on rank: highest-DCV asset gets most OCEAN, etc.
+1. For each asset and each veOCEAN holder:
+– If the holder is a publisher, 2x the effective stake
+– Baseline rewards = (% stake in asset) * (OCEAN for asset)
+– Bound rewards to the asset by 125% APY
+– Bound rewards by asset’s DCV * 0.1%. This prevents wash consume.
+
+You can find this code inside [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/util/calcrewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)
+
 ## Data Assets that Qualify for DF
 
 Data assets that have veOCEAN allocated towards them get DF rewards.
@@ -22,21 +36,6 @@ To qualify for DF, a data asset must also:
 - Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) by OPF to [production networks](https://docs.oceanprotocol.com/core-concepts/networks)
 - Be visible on [Ocean Market](https://market.oceanprotocol.com/)
 - Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
-
-## Reward Function
-
-The Reward Function (RF) governs how active rewards are allocated to stakers.
-
-Rewards are calculated as follows:
-
-First, distribute OCEAN across each asset based on rank: highest-DCV asset gets most OCEAN, etc.
-Then, for each asset and each veOCEAN holder:
-– If the holder is a publisher, 2x the effective stake
-– Baseline rewards = (% stake in asset) * (OCEAN for asset)
-– Bound rewards to the asset by 125% APY
-– Bound rewards by asset’s DCV * 0.1%. This prevents wash consume.
-
-Here is the code from [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/util/calcrewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)
 
 ## 3 Phases of Data Farming
 
