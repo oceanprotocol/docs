@@ -27,8 +27,6 @@ Finally, if you want to continue expanding your knowledge on OCEAN token emissio
 
 [Emissions & APYs](emissions-apys.md) will provide you will information about how OCEAN will be released over time through the Data Farming program and provide you with APY studies.
 
-[Contracts & Formulas](contracts-formulas.md) guides you to where the contracts are deployed, and will break down every number in our ecosystem and how they are calculated.
-
 Our [FAQ](faq.md) answers many different questions about staking, chains, deployments, and other details that may be valuable to you.
 
 ## Reference
