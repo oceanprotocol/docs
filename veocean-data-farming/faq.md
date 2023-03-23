@@ -90,7 +90,7 @@ Current plan is for veOCEAN core contracts will only be on Ethereum mainnet, and
 </details>
 
 <details>
-<summary>Which chain should fixed price assets be deployed now in order to be ready for veOCEAN deployment and DF in 3 months time?</summary>
+<summary>Which chain supports Fixed Price Assets?</summary>
 
-You can publish assets to any chain that Ocean supports.
+You can publish Fixed Price Assets to any chain that Ocean supports.
 </details>

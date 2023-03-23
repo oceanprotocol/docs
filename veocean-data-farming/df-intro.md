@@ -16,38 +16,34 @@ You can claim rewards from [within our webapp](https://df.oceandao.org/rewards).
 
 **Final Caveat:** We reserve the right to make reasonable changes to these plans, if unforeseen circumstances emerge.
 
-## Reward Function
+## On Claiming DF Rewards
 
-The Reward Function (RF) governs how active rewards are allocated to stakers.
+Please [follow this tutorial](../tutorials/veOcean-Data-Farming-Tutorial.md) to learn how to access Ocean Protocol Rewards via Data Farming.
 
-Rewards are calculated as follows:
+Otherwise, go to the DF webapp at [df.oceandao.org/activerewards](df.oceandao.org/activerewards)
 
-First, distribute OCEAN across each asset based on rank: highest-DCV asset gets most OCEAN, etc.
-Then, for each asset and each veOCEAN holder:
-– If the holder is a publisher, 2x the effective stake
-– Baseline rewards = (% stake in asset) * (OCEAN for asset)
-– Bound rewards to the asset by 125% APY
-– Bound rewards by asset’s DCV * 0.1%. This prevents wash consume.
+### Where to claim?  
+All earnings for veOCEAN holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.  
 
-Here is the code from [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/util/calcrewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)
+Data assets for DF may published in any [network where Ocean’s deployed in production](https://docs.oceanprotocol.com/core-concepts/networks): Eth mainnet, Polygon, etc.
 
-## 3 Phases of Data Farming
+### When to claim?
+There are fresh rewards available every Thursday. If you wish, you can wait for many weeks to accumulate before claiming. (It’s all on-chain.)
 
-**DF Alpha** - Counting starts Thu June 16. 10K OCEAN rewards are budgeted per week. Rewards are distributed at the end of every week, for the activity of the previous week. It runs 4 weeks. The aim is to test technology, learn, and onboard data publishers.
+### When to do a first claim?
+From the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards.  
 
-**DF Beta** - Counting starts Thu July 14. Rewards are up to 100K OCEAN per week. It runs up to 20 weeks. The aim is to test the effect of larger incentives, learn, and refine the technology.
+The nerdy version: if you lock OCEAN on day x, you’ll be able to claim rewards on the first weekly ve “epoch” that begins after day x+7.  
 
-**DF Main** - Immediately follows DF Beta. Rewards are up to 718K OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades. Expected APY is 125% over many months (once fully ramped), staying generous over the long term.
-
-The amount of OCEAN released is determined by the emission schedule as defined in the [DF Main Blog Post](https://blog.oceanprotocol.com/ocean-data-farming-main-is-here-49c99602419e).
+This behavior is inherited from [veCRV](https://curve.readthedocs.io/dao-fees.html); [here’s the code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256).
 
 ## DF Main
 
-DF Main starts Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
+DF Main started Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
 
 As of DF29, wash consuming will no longer be profitable. So, organically-generated Data Consume Volume will be the main driver of active DF rewards.
 
-Typical APYs are 5–20%.
+[Example APYs are 5–20%](emissions-apys.md#example-apys) between Passive & Active rewards.
 
 Full implementation of DF Main will be over many months, after which DF will be decentralized. DF Main lasts for decades.
 
