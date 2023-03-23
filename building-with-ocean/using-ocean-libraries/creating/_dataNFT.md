@@ -1,2 +1,0 @@
-# Creating a data NFT
-
