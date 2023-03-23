@@ -4,7 +4,6 @@ description: Frequently asked questions on the Data Farming incentive program.
 # FAQ
 
 ## Data Farming FAQ
-
 <details>
 <summary>When exactly does counting start and finish, for a given week?</summary>
 
@@ -29,6 +28,20 @@ The price is taken at the same time as each consume. E.g. if a data asset has th
 No. At the beginning of a new DF round (DF1, DF2, etc), rules are laid out, either implicitly if no change from previous round, or explicitly in a blog post if there are new rules. This is: reward function, bounds, etc. Then teams stake, buy data, consume, etc. And LPs are given DF rewards based on staking, DCV, etc at the end of the week. Overall cycle time is one week.
 
 Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is community consensus, or a bug.
+</details>
+
+## veOCEAN FAQ
+<details>
+<summary>What is the official formula for the Linear Decay?</summary>
+
+The Linear Decay formula for veOCEAN can be expressed as follows in python.  
+```python
+FOUR_YEARS = 60 * 60 * 24 * 7 * 52
+
+veOcean_balance = OCEAN_amount_locked * (your_unlock_timestamp — current_unix_timestamp ) / FOUR_YEARS
+```
+
+To learn more about systems driving veOCEAN and Data Farming, please [visit our df-py github repository](https://github.com/oceanprotocol/df-py).
 </details>
 
 ## Staking FAQs
@@ -73,20 +86,32 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 <details>
 <summary>With pools getting wound down in Ocean Market, will fixed-price be its only pricing scheme?</summary>
 
-</summary>For now in Ocean Market, yes. However people can price datatokens however they like, leveraging whatever DeFi tools they like. For example. do an IDO via Liquidity Bootstrapping Pool, ending up in an unmodified Balancer AMM. And we will continue listening to the community, to understand best where to focus our efforts.
+For now in Ocean Market, yes. However people can price datatokens however they like, leveraging whatever DeFi tools they like. For example. do an IDO via Liquidity Bootstrapping Pool, ending up in an unmodified Balancer AMM. And we will continue listening to the community, to understand best where to focus our efforts.
 </details>
 
 ## Chains FAQ
 <details>
-<summary>Will the Market still need to be multi-chain?</summary>
+<summary>Which chain is veOCEAN be deployed on?</summary>
 
-Yes, Ocean Market still needs to be multi-chain: all the reasons that we went multi-chain for are as valid as ever.
+[veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet and allow users to allocate veOCEAN tokens to any asset, on any chain.
 </details>
 
 <details>
-<summary>Which chain will veOCEAN be deployed on?</summary>
+<summary>Where can I find the veOCEAN and DF contracts?</summary>
 
-Current plan is for veOCEAN core contracts will only be on Ethereum mainnet, and allowing to allocate veOCEAN tokens to any chain.
+They are deployed on Ethereum mainnet, alongside other Ocean contract deployments. You can find the [full list of contracts here](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).
+</details>
+
+<details>
+<summary>What is the official veOCEAN epoch start_time?</summary>
+
+veFeeDistributor has a start_time of 1663804800 (Thu Sep 22 2022 00:00:00)
+</details>
+
+<details>
+<summary>Will the Market still need to be multi-chain?</summary>
+
+Yes, Ocean Market still needs to be multi-chain: all the reasons that we went multi-chain for are as valid as ever.
 </details>
 
 <details>
