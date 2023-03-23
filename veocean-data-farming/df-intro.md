@@ -27,7 +27,7 @@ Otherwise, go to the DF webapp at [df.oceandao.org](df.oceandao.org/) and explor
 ### Where to claim?  
 All earnings for veOCEAN holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.  
 
-Data assets for DF may published in any [network where Ocean’s deployed in production](https://docs.oceanprotocol.com/core-concepts/networks): Eth mainnet, Polygon, etc.
+Data assets for DF may published in any [network where Ocean’s deployed in production](../core-concepts/networks.md): Eth mainnet, Polygon, etc.
 
 ### When to claim?
 There are fresh rewards available every Thursday. If you wish, you can wait for many weeks to accumulate before claiming. (It’s all on-chain.)
@@ -69,7 +69,7 @@ At the bottom-end, this eliminates some potential free-rider issues and smooths 
 
 ![](images/ranked_rewards_study.png)
 
-You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1zZdWfywruMPt6r7vfl0nQD8Fgj4wkfuMslZcWJmy3GE/edit?usp=sharing).
+You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
 ## 2x Stake - Publisher Rewards
 As part of our efforts to increase the efficiency of the Reward Function, we researched a broad range of improvements that could be implemented and discussed their many outcomes.
