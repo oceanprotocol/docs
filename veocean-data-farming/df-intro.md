@@ -1,11 +1,11 @@
 ---
-description: An introduction to Data Farming and Ocean's core incentive streams.
+description: An introduction to Data Farming and Ocean Protocol's key incentives.
 ---
-# Data Farming & Rewards
+# Data Farming 101
 
 Data Farming (DF) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem.
 
-It rewards OCEAN to pool liquidity providers (stakers) as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
+It rewards OCEAN to liquidity providers (stakers) as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
 
 ## Reward Categories
 Rewards are paid in OCEAN and distributed every week on Thursday as follow:
@@ -14,7 +14,7 @@ Rewards are paid in OCEAN and distributed every week on Thursday as follow:
 | ---- | ------- |
 | 50%    | 50%    |
 
-Active Rewards are governed and defined by the [Reward Function](df-details.md#reward-function).
+Active Rewards are governed and defined by the [Reward Function](df-background.md#reward-function).
 
 **Final Caveat:** We reserve the right to make reasonable changes to these plans, if unforeseen circumstances emerge.
 
@@ -83,3 +83,9 @@ We explored dozens of possible ways to do it. In the end, we arrived at this app
 For Data Farming, we want to incentivize publishers to create more data sets, build more token-gated product, innovate how builders can consume Data-tokens.
 
 *All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation.*
+1. As a staker, due to their staked veOCEAN on their own assets (1x).
+1. As a publisher, for having veOCEAN staked on their own asset(1x).
+
+The final reward is then calculated and bundled together to be distributed.
+
+You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).

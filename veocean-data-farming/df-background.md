@@ -1,9 +1,14 @@
 ---
-description: Granular details on the Data Farming program.
+description: Intuition and background on the Data Farming program.
 ---
+# Data Farming Background
+
+It rewards OCEAN to liquidity providers (stakers) as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
+
+
 ## Active Work to Drive APY
 
-Data Farming is not a wholly passive activity. The name of the game is to drive data consume volume (DCV). High APYs happen only when there is sufficiently high DCV. High DCV means publishing and consuming truly useful datasets (or algorithms).
+Data Farming is not a wholly passive activity. The name of the game is to drive Data Consume Volume (DCV). High APYs happen only when there is sufficiently high DCV. High DCV means publishing and consuming truly useful datasets (or algorithms).
 
 Thus, if you really want to max out your APY:
 - create & publish datasets (and make $ in selling them) — or work with people who can
