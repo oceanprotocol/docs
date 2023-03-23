@@ -1,5 +1,5 @@
 ---
-description: Frequently asked questions on the Data Farming incentive program.
+description: Frequently asked questions on veOCEAN, Data Farming, and our incentive programs.
 ---
 # FAQ
 
