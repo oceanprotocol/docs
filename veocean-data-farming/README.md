@@ -31,4 +31,4 @@ Our [FAQ](faq.md) answers many different questions about staking, chains, deploy
 
 ## Reference
 
-All content within has been assembled via reference of the (Ocean Data Farming Series)[https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45], official (Ocean Protocol github repositories)[https://github.com/oceanprotocol/], and [v4 Whitepapers](https://oceanprotocol.com/tech-whitepaper.pdf).
+All content within has been assembled via reference of the [Ocean Data Farming Series](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45), official [Ocean Protocol github repositories](https://github.com/oceanprotocol/), and [v4 Whitepapers](https://oceanprotocol.com/tech-whitepaper.pdf).
