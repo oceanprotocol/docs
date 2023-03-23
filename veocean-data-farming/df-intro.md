@@ -20,7 +20,7 @@ Active Rewards are governed and defined by the [Reward Function](df-background.m
 
 ## How to access DF and claim rewards
 
-Please [follow this tutorial](../tutorials/veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
+Please [follow this tutorial](../rewards/veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
 
 Otherwise, go to the DF webapp at [df.oceandao.org/activerewards](df.oceandao.org/activerewards) and explore Data Farming for yourself.
 
