@@ -1,3 +1,6 @@
+---
+description: Metrics, Formulas, and definitions used by Data Farming.
+---
 ## Contract Deployments
 
 The [veOCEAN & DF contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) are deployed to Ethereum mainnet, alongside other Ocean contract deployments. [Full list](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).

@@ -1,3 +1,6 @@
+---
+description: An introduction to Data Farming and Ocean's core incentive streams.
+---
 # Rewards
 
 Data Farming (DF) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem.

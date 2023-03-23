@@ -1,8 +1,16 @@
-# Data Farming FAQ
+---
+description: Frequently asked questions on the Data Farming incentive program.
+---
+# FAQ
 
-_Q: When exactly does counting start and finish, for a given week_
+## Data Farming FAQ
+
+<details>
+<summary>When exactly does counting start and finish, for a given week?</summary>
 
 The counting starts at 12.01am on Thursday, and ends at 11.59pm on the following Wednesday.
+
+</details>
 
 _Q: I staked for just one day. What rewards might I expect?_
 
@@ -18,7 +26,7 @@ No. At the beginning of a new DF round (DF1, DF2, etc), rules are laid out, eith
 
 Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is community consensus, or a bug.
 
-# Staking FAQs
+## Staking FAQs
 _Q: What about passive stakers — people who just want to stake in one place and be done?_
 
 A: Earnings are passive by default
@@ -27,8 +35,7 @@ _Q: What about active stakers — people who want to do extra work and get rewar
 
 A: Ot works. Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more $$
 
-# Third-Party Market FAQs
-
+## Third-Party Market FAQs
 _Q: What do you think could be the monetization / incentive options for third party dApps and Data Markets that build on top of OCEAN?_
 
 A: People pay fees on fixed-rate exchange and in consume. 3rd party markets can get a cut of both. More info at Ocean docs.
@@ -37,7 +44,7 @@ _Q: Staking veOCEAN will be an important part in curating the most valuable data
 
 A: veOCEAN holders’ earning potential via fees and DF on their own could be quite substantial, eg given that a large portion of OCEAN supply is directed towards DF. No need for more ways per se. There won’t be a fee on locking OCEAN for veOCEAN, because adding that code would have meant changes to veCRV contracts, something we’re not doing for security reasons. Re ALGA or other apps making money on facilitating veOCEAN: there are several ways, the best way to get inspiration is to look at projects on top of base ve tokens, such as Convex, Aura, Redacted Cartel, and more.
 
-# Pricing FAQs
+## Pricing FAQs
 _Q: In this scheme, can people stake on fixed-price datasets?_
 
 A: Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV * veOCEAN stake.
@@ -50,9 +57,7 @@ _Q: With pools getting wound down in Ocean Market, will fixed-price be its only 
 
 A: For now in Ocean Market, yes. However people can price datatokens however they like, leveraging whatever DeFi tools they like. For example. do an IDO via Liquidity Bootstrapping Pool, ending up in an unmodified Balancer AMM. And we will continue listening to the community, to understand best where to focus our efforts.
 
-# Chains FAQ
-
-Chains
+## Chains FAQ
 _Q: Will the Market still need to be multi-chain?_
 
 A: Yes, Ocean Market still needs to be multi-chain: all the reasons that we went multi-chain for are as valid as ever.

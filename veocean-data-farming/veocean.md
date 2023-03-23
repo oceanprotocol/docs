@@ -1,3 +1,6 @@
+---
+description: An overview of the governance token, veOCEAN (vote-escrowed).
+---
 # veOCEAN
 
 veOCEAN is a fork of veCRV and uses the same parameters. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. By leveraging this, Ocean Protocol takes one step further towards decentralization by streaming incentives towards contributors that are aligned with delivering fundamental protocol traction.

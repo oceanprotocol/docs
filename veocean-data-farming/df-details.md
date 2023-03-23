@@ -1,3 +1,6 @@
+---
+description: Granular details on the Data Farming program.
+---
 ## On Claiming DF Rewards
 
 How to claim? Go to the DF Webapp at [df.oceandao.org/activerewards](df.oceandao.org/activerewards)
