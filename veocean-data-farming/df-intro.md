@@ -1,26 +1,28 @@
 ---
 description: An introduction to Data Farming and Ocean's core incentive streams.
 ---
-# Rewards
+# Data Farming & Rewards
 
 Data Farming (DF) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem.
 
 It rewards OCEAN to pool liquidity providers (stakers) as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
 
 ## Reward Categories
-Rewards are paid in OCEAN and distributed every week on Thursday as follow:  
-**Passive Rewards** : 50% Emissions Reserved  
-**Active Rewards**: 50% Emissions Reserved. Defined by the **Reward Function**.
+Rewards are paid in OCEAN and distributed every week on Thursday as follow:
 
-You can claim rewards from [within our webapp](https://df.oceandao.org/rewards).
+| Passive Rewards | Active Rewards |
+| ---- | ------- |
+| 50%    | 50%    |
+
+Active Rewards are governed and defined by the [Reward Function](df-details.md#reward-function).
 
 **Final Caveat:** We reserve the right to make reasonable changes to these plans, if unforeseen circumstances emerge.
 
-## On Claiming DF Rewards
+## How to access DF and claim rewards
 
-Please [follow this tutorial](../tutorials/veOcean-Data-Farming-Tutorial.md) to learn how to access Ocean Protocol Rewards via Data Farming.
+Please [follow this tutorial](../tutorials/veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
 
-Otherwise, go to the DF webapp at [df.oceandao.org/activerewards](df.oceandao.org/activerewards)
+Otherwise, go to the DF webapp at [df.oceandao.org/activerewards](df.oceandao.org/activerewards) and explore Data Farming for yourself.
 
 ### Where to claim?  
 All earnings for veOCEAN holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.  
@@ -36,6 +38,19 @@ From the time you lock OCEAN, you must wait at least a week, and up to two weeks
 The nerdy version: if you lock OCEAN on day x, you’ll be able to claim rewards on the first weekly ve “epoch” that begins after day x+7.  
 
 This behavior is inherited from [veCRV](https://curve.readthedocs.io/dao-fees.html); [here’s the code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256).
+
+## 2x Bonus - Publisher Rewards
+As part of our efforts to increase the efficiency of the Reward Function, we researched a broad range of improvements that could be implemented and discussed their many outcomes.
+
+One particular improvement was noted, how to structure incentives to also align publishers.
+
+We explored dozens of possible ways to do it. In the end, we arrived at this approach. It was chosen for it’s simplicity and ease of understanding.
+
+### For publishers, effective 2x stake
+
+For Data Farming, we want to incentivize publishers to create more data sets, build more token-gated product, innovate how builders can consume Data-tokens.
+
+*All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation.*
 
 ## DF Main
 

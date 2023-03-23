@@ -40,10 +40,12 @@ Here is the code from [calcrewards.py](https://github.com/oceanprotocol/df-py/bl
 
 ## 3 Phases of Data Farming
 
+Data Farming has evolved over time and will continue to do so as the Emission Curve progresses. Below are important dates and parameters incurred during the evolution of the Data Farming program.
+
 **DF Alpha** - Counting starts Thu June 16. 10K OCEAN rewards are budgeted per week. Rewards are distributed at the end of every week, for the activity of the previous week. It runs 4 weeks. The aim is to test technology, learn, and onboard data publishers.
 
 **DF Beta** - Counting starts Thu July 14. Rewards are up to 100K OCEAN per week. It runs up to 20 weeks. The aim is to test the effect of larger incentives, learn, and refine the technology.
 
 **DF Main** - Immediately follows DF Beta. Rewards are up to 718K OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades. Expected APY is 125% over many months (once fully ramped), staying generous over the long term.
 
-The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](emissions-apys.md#emissions--apys) curve, and more easily uderstood in the [Reward Schedule](df-intro.md#reward-schedule)
+The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](emissions-apys.md#emissions--apys), and perhaps more easily uderstood in the [Reward Schedule](df-intro.md#reward-schedule)
