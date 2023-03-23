@@ -60,7 +60,7 @@
   * [Emissions & APYs](veocean-data-farming/emissions-apys.md)
   * [Contracts & Formulas](veocean-data-farming/contracts-formulas.md)
   * [FAQ](veocean-data-farming/faq.md)
-* [Tutorials](tutorials/veOcean-Data-Farming-Tutorial.md)
+* [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
 * [API References](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
