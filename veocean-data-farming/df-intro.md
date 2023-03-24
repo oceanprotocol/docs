@@ -43,7 +43,7 @@ This behavior is inherited from [veCRV](https://curve.readthedocs.io/dao-fees.ht
 
 DF Main started Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
 
-As of DF29, wash consuming will no longer be profitable. So, organically-generated Data Consume Volume will be the main driver of active DF rewards.
+As of DF29 (Mar 16, 2023), wash consuming is not profitable. So, organically-generated Data Consume Volume is the main driver of active DF rewards.
 
 [Example APYs are 5–20%](emissions-apys.md#example-apys) between Passive & Active rewards.
 
@@ -61,7 +61,7 @@ _Ocean Reward Schedule for the next 20+ years_
 ## Ranked Rewards
 In DF23 Ranked Rewards were introduced and smooth the reward distribution by using a logarithmic function.
 
-**Since rewards are distributed across the Top 100 assets (current tuning Mar — 2023), all participants (Publishers & Curators) are now incentivized to support a broader range of assets rather than optimizing on a single asset.**
+**Since rewards are distributed across the Top 100 assets, all participants (Publishers & Curators) are now incentivized to support a broader range of assets rather than optimizing on a single asset.**
 
 At the top-end, this helps increase quality and diversification of inventory.
 

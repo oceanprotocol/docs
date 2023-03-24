@@ -1,5 +1,5 @@
 ---
-description: Intuition and background on the Data Farming program.
+description: Data Farming (DF) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem.
 ---
 # Data Farming Background
 
