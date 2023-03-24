@@ -226,9 +226,9 @@ where "files" contains one or more storage objects.
 Static URLs. 
 
 Parameters: 
-* `url` - File url
-* `method` - The HTTP method 
-* `headers` - Additional HTTP headers
+* `url` - File url, required
+* `method` - The HTTP method, required 
+* `headers` - Additional HTTP headers, optional
 
 ```
 {
@@ -236,10 +236,10 @@ Parameters:
     "url": "https://url.com/file1.csv",
     "method": "GET",
     "headers":
-    [
-        {"Authorization": "Bearer 123"}, 
-        {"APIKEY": "124"},
-    ]
+    {
+        "Authorization": "Bearer 123", 
+        "APIKEY": "124",
+    }
 }
 ```
 
@@ -262,13 +262,18 @@ Parameters:
 [GraphQL](https://graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with your existing data. 
 
 Parameters:
-* `url` - Server endpoint url
-* `query` - The query to be executed
+* `url` - Server endpoint url, required
+* `query` - The query to be executed, required
+* `headers` - Additional HTTP headers, optional
 
 ```
 {
 	"type": "graphql",
 	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
+    	"headers":{
+        	"Authorization": "Bearer 123", 
+        	"APIKEY": "124",
+    	},
 	"query": """query{
             nfts(orderBy: createdTimestamp,orderDirection:desc){
                  id
@@ -285,9 +290,9 @@ Use a smart contract as data source.
 
 Parameters: 
 
-* `chainId` - The chainId used to query the contract
-* `address` - The smartcontract address
-* `abi` - The function abi (NOT the entire contract abi)
+* `chainId` - The chainId used to query the contract, required
+* `address` - The smartcontract address, required
+* `abi` - The function abi (NOT the entire contract abi), required
 
 ```
 {
