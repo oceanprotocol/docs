@@ -14,7 +14,7 @@ Thus, if you really want to max out your APY:
 - Buy the datasets (and use them to make $) — or work with people who can
 - Stake on them, and claim the rewards.
 
-Driving DCV for publishing & consuming is your challenge. It will take real work. And then the reward is APY. It’s incentives all the way down:)
+Driving DCV for publishing & consuming is your challenge. It will take real work. And then the reward is APY. It’s incentives all the way down :)
 
 ## Reward Function
 
