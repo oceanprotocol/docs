@@ -11,7 +11,7 @@ The following docs should provide you with sufficient intuition to access, utili
 
 ## veOCEAN
 
-Learning about [veOCEAN](veocean.md) will help you answer the question `"What can I do with my veOCEAN?"` and give you insights on how veOCEAN works. It will teach you everything you need to know about why it exists and how it works.
+Learning about [veOCEAN](veocean.md) will help you answer the question "What can I do with my veOCEAN?" and give you insights on how veOCEAN works. It will teach you everything you need to know about why it exists and how it works.
 
 You will learn that by just holding veOCEAN passively, you are able to earn rewards.
 
