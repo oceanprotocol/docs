@@ -72,7 +72,7 @@ At the bottom-end, this eliminates some potential free-rider issues and smooths 
 You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
 ## Publisher Rewards - 2x Stake
-For Data Farming, we want to incentivize publishers to create more data sets, build more token-gated product, innovate how builders can consume Data-tokens.
+DF gives stronger incentives to publish data services, as follows.
 
 *All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation.*
 1. As a staker, due to their staked veOCEAN on their own assets (1x).
