@@ -3,9 +3,7 @@ description: An overview of the governance token, veOCEAN (vote-escrowed).
 ---
 # veOCEAN
 
-veOCEAN is a fork of veCRV and uses the same parameters. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. By leveraging this, Ocean Protocol takes one step further towards decentralization by streaming incentives towards contributors that are aligned with delivering fundamental protocol traction.
-
-veOCEAN stands for “vote escrowed” OCEAN. By holding veOCEAN you become a governance participant, eligible to receive rewards and engage with many different protocol mechanisms.
+veOCEAN is a mechanism to align near-term incentives (maximize APY) with long-term incentives (long-term locking). It's a fork of veCRV contracts which have been battle-tested over years.
 
 The amount of reward depends on how long the tokens are locked for. You must lock up your OCEAN into the vault for to obtain veOCEAN. Going forward, veOCEAN will be the main mechanism for staking OCEAN, and for curation of datasets.
 
