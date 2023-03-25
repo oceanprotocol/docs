@@ -57,24 +57,17 @@ Earnings are passive by default
 Ot works. Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more $$
 </details>
 
-## Third-Party Market FAQs
-<details>
-<summary>What do you think could be the monetization / incentive options for third party dApps and Data Markets that build on top of OCEAN?</summary>
-
-People pay fees on fixed-rate exchange and in consume. 3rd party markets can get a cut of both. More info at Ocean docs.
-</details>
-
-<details>
-<summary>Staking veOCEAN will be an important part in curating the most valuable datasets. Which earning opportunities will stakers have other than DF and fees generated from consume transactions?</summary>
-
-veOCEAN holders’ earning potential via fees and DF on their own could be quite substantial, eg given that a large portion of OCEAN supply is directed towards DF. No need for more ways per se. There won’t be a fee on locking OCEAN for veOCEAN, because adding that code would have meant changes to veCRV contracts, something we’re not doing for security reasons. Re ALGA or other apps making money on facilitating veOCEAN: there are several ways, the best way to get inspiration is to look at projects on top of base ve tokens, such as Convex, Aura, Redacted Cartel, and more.
-</details>
-
 ## Pricing FAQs
 <details>
 <summary>In this scheme, can people stake on fixed-price datasets?</summary>
 
 Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV * veOCEAN stake.
+</details>
+
+<details>
+<summary>In this scheme, can people stake on free datasets?</summary>
+
+Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV * veOCEAN stake. Except in this case although DCV is 0, the gas fees will still count towards calculating rewards.
 </details>
 
 <details>
