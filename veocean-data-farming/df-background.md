@@ -35,7 +35,7 @@ You can find this code inside [calcrewards.py](https://github.com/oceanprotocol/
 
 Data assets that have veOCEAN allocated towards them get DF rewards.
 
-The data asset may be of any type — dataset (for static URIs) or algorithm for Compute-to-Data. The data asset may be fixed price or free price. If fixed price, any token of exchange is alright (OCEAN, H2O, USDC, ..).
+The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. If fixed price, any token of exchange is alright (OCEAN, H2O, USDC, ..).
 
 To qualify for DF, a data asset must also:
 - Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) by OPF to [production networks](https://docs.oceanprotocol.com/core-concepts/networks)

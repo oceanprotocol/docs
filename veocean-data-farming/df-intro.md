@@ -8,6 +8,7 @@ Data Farming (DF) incentivizes for growth of Data Consume Volume (DCV) in the Oc
 It rewards OCEAN to liquidity providers (stakers) as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
 
 ## Reward Categories
+
 Rewards are paid in OCEAN and distributed every week on Thursday as follow:
 
 | Passive Rewards | Active Rewards |
@@ -59,6 +60,7 @@ The table below cross-references DF Round Number, Start Date, Phase & Week, Sub-
 _Ocean Reward Schedule for the next 20+ years_
 
 ## Ranked Rewards
+
 In DF23 Ranked Rewards were introduced and smooth the reward distribution by using a logarithmic function.
 
 **Since rewards are distributed across the Top 100 assets, all participants (Publishers & Curators) are now incentivized to support a broader range of assets rather than optimizing on a single asset.**
@@ -72,6 +74,7 @@ At the bottom-end, this eliminates some potential free-rider issues and smooths 
 You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
 ## Publisher Rewards - 2x Stake
+
 DF gives stronger incentives to publish data services, as follows.
 
 *All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation.*

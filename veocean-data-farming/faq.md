@@ -5,6 +5,12 @@ description: Frequently asked questions on veOCEAN, Data Farming, and our incent
 
 ## Data Farming FAQ
 <details>
+<summary>What assets are eligible for Data Farming?</summary>
+
+The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. You can find more details in the [DF Background page](df-background.md#data-assets-that-qualify-for-df)
+</details>
+
+<details>
 <summary>When exactly does counting start and finish, for a given week?</summary>
 
 The counting starts at 12.01am on Thursday, and ends at 11.59pm on the following Wednesday.
@@ -77,6 +83,13 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 </details>
 
 ## Chains FAQ
+<defailts>
+<summary>Which networks are eligible for DF?</summary>
+Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
+
+You can find a list of [all supported chains here](https://docs.oceanprotocol.com/core-concepts/networks).
+</details>
+
 <details>
 <summary>Which chain is veOCEAN be deployed on?</summary>
 
