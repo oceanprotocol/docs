@@ -5,7 +5,7 @@ description: Details on the emission curves and a study on estimated APYs
 
 With veOCEAN, OceanDAO evolves to be more like CurveDAO:
 
-- ve is at the heart with v = voting (in data asset curation) and e = escrowed (locked) OCEAN. The longer the lockup, the more voting and rewards, which reconciles near- and long-term DAO incentives.
+- ve is at the heart with v = voting (in data asset curation) and e = escrowed (locked) OCEAN. The longer the lockup, the more voting and rewards, which reconciles near and long-term DAO incentives.
 - The DAO has increased bias to automation, and to minimizing the governance attack surface.
 
 The baseline emissions schedule determines the weekly OCEAN budget for this phase. The schedule is like Bitcoin, including a half-life of 4 years. Unlike Bitcoin, there is a burn-in period to ratchet up value-at-risk versus time:
