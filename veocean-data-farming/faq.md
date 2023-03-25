@@ -76,12 +76,6 @@ Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual D
 Yes, from the get-go! It doesn’t matter how data is priced, this works for all schemes.
 </details>
 
-<details>
-<summary>With pools getting wound down in Ocean Market, will fixed-price be its only pricing scheme?</summary>
-
-For now in Ocean Market, yes. However people can price datatokens however they like, leveraging whatever DeFi tools they like. For example. do an IDO via Liquidity Bootstrapping Pool, ending up in an unmodified Balancer AMM. And we will continue listening to the community, to understand best where to focus our efforts.
-</details>
-
 ## Chains FAQ
 <details>
 <summary>Which chain is veOCEAN be deployed on?</summary>
