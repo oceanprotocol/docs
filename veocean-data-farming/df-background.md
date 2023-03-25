@@ -3,8 +3,7 @@ description: Data Farming (DF) incentivizes for growth of Data Consume Volume (D
 ---
 # Data Farming Background
 
-It rewards OCEAN to liquidity providers (stakers) as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
-
+It rewards OCEAN to stakers as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
 
 ## Active Work to Drive APY
 
