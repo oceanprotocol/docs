@@ -10,9 +10,9 @@ It rewards OCEAN to stakers as a function of consume volume and liquidity. It’
 Data Farming is not a wholly passive activity. The name of the game is to drive Data Consume Volume (DCV). High APYs happen only when there is sufficiently high DCV. High DCV means publishing and consuming truly useful datasets (or algorithms).
 
 Thus, if you really want to max out your APY:
-- create & publish datasets (and make $ in selling them) — or work with people who can
-- consume the datasets (to make $) — or work with people who can
-- go stake on them, and finally claim the rewards.
+- Create & publish datasets (and make $ in selling them) — or work with people who can
+- Buy the datasets (and use them to make $) — or work with people who can
+- Stake on them, and claim the rewards.
 
 Driving DCV for publishing & consuming is your challenge. It will take real work. And then the reward is APY. It’s incentives all the way down:)
 
