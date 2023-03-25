@@ -41,14 +41,20 @@ To qualify for DF, a data asset must also:
 - Be visible on [Ocean Market](https://market.oceanprotocol.com/)
 - Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
 
-## 3 Phases of Data Farming
+## 4 Phases of Data Farming
 
 Data Farming has evolved over time and will continue to do so as the Emission Curve progresses. Below are important dates and parameters incurred during the evolution of the Data Farming program.
 
-**DF Alpha** - Counting starts Thu June 16. 10K OCEAN rewards are budgeted per week. Rewards are distributed at the end of every week, for the activity of the previous week. It runs 4 weeks. The aim is to test technology, learn, and onboard data publishers.
+**DF Alpha - Rounds 1-4 (4 wks)**  
+10K OCEAN rewards were budgeted per week. Counting started Thu June 16, 2022 and ended July 13, 2022. Rewards were distributed at the end of every week, for the activity of the previous week. It ran for 4 weeks. The aim was to test technology, learn, and onboard data publishers.
 
-**DF Beta** - Counting starts Thu July 14. Rewards are up to 100K OCEAN per week. It runs up to 20 weeks. The aim is to test the effect of larger incentives, learn, and refine the technology.
+**DF/VE Alpha - Rounds 5-8 (4 wks)**  
+10K OCEAN rewards were budgeted per week. Counting started Thu Sep 29, 2022 and ended Oct 27, 2022. Rewards were distributed at the end of every week, for the activity of the previous week. It ran for 4 weeks. The aim was to resume Data Farming along with veOCEAN, test the technology, onboard data publishers, and keep learning.
 
-**DF Main** - Immediately follows DF Beta. Rewards are up to 718K OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades. Expected APY is 125% over many months (once fully ramped), staying generous over the long term.
+**DF Beta - Rounds 9-28 (20 wks)**  
+Up to 100K OCEAN rewards were budget per week. Counting started Thu Oct 27, 2022 and ended March 15, 2023. It ran for 20 weeks. The aim was to test the effect of larger incentives, support ecosystem participation, while continue refining the underlying technology.
+
+**DF Main - Rounds 29-1000+**  
+Immediately followed the release of DF Beta on Thu Mar 16, 2023. Rewards begin at 150k per week and go to 1.1M OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades. Expected APY is 125% over many months (once fully ramped), staying generous over the long term.
 
 The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](emissions-apys.md#emissions--apys), and perhaps more easily uderstood in the [Reward Schedule](df-intro.md#reward-schedule)
