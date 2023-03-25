@@ -43,7 +43,7 @@ To qualify for DF, a data asset must also:
 
 ## 4 Phases of Data Farming
 
-Data Farming has evolved over time and will continue to do so as the Emission Curve progresses. Below are important dates and parameters incurred during the evolution of the Data Farming program.
+Data Farming has evolved over time and will continue to do so as the Emission Curve progresses. We are now in DF main, below are the previous phases and parameters incurred during the evolution of the Data Farming program.
 
 **DF Alpha - Rounds 1-4 (4 wks)**  
 10K OCEAN rewards were budgeted per week. Counting started Thu June 16, 2022 and ended July 13, 2022. Rewards were distributed at the end of every week, for the activity of the previous week. It ran for 4 weeks. The aim was to test technology, learn, and onboard data publishers.
