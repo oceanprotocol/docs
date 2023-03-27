@@ -325,20 +325,20 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 ## Chains FAQ
 
-<defailts>
-
-<summary>Which networks are eligible for DF?</summary>
-Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
-
-You can find a list of [all supported chains here](https://docs.oceanprotocol.com/core-concepts/networks).
-
-</details>
-
 <details>
 
 <summary>Which chain is veOCEAN be deployed on?</summary>
 
 [veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet and allow users to allocate veOCEAN tokens to any asset, on any chain.
+
+</details>
+
+<details>
+
+<summary>Which networks are eligible for Data Farming?</summary>
+Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
+
+You can find a list of [all supported chains here](https://docs.oceanprotocol.com/core-concepts/networks).
 
 </details>
 
