@@ -59,7 +59,7 @@ If you lock 1.0 OCEAN for 4 years, you get 1.0 veOCEAN at the start.
 | 3 years | 0.25 |
 | 4 years | 0.00 |
 
-At the end of your 4 years, your OCEAN is unlocked. [1]
+At the end of your 4 years, your OCEAN is unlocked.
 
 ## Replenishing your veOCEAN
 
