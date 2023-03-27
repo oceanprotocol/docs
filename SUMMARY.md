@@ -4,7 +4,6 @@
   * [Wallet Basics](building-with-ocean/wallets.md)
   * [Set Up MetaMask Wallet](orientation/metamask-setup.md)
   * [Manage Your OCEAN Tokens](building-with-ocean/wallets-and-ocean-tokens.md)
-  * [FAQ](orientation/faq.md)
 * [Core Concepts](core-concepts/README.md)
   * [Architecture Overview](core-concepts/architecture.md)
   * [Data NFTs and Datatokens](core-concepts/datanft-and-datatoken.md)
@@ -63,7 +62,7 @@
 * [API References](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
-* [FAQ](veocean-data-farming/faq.md)
+* [FAQ](orientation/faq.md)
 
 ## Community
 
