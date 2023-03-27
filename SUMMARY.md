@@ -57,7 +57,6 @@
   * [Data Farming 101](veocean-data-farming/df-intro.md)
   * [Data Farming Background](veocean-data-farming/df-background.md)
   * [Emissions & APYs](veocean-data-farming/emissions-apys.md)
-  * [Contracts & Formulas](veocean-data-farming/contracts-formulas.md)
 * [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
 * [API References](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
