@@ -7,6 +7,9 @@ This document specifies the endpoints for Ocean Provider to be implemented by th
 If you want to see the provider URLs for our supported networks, kindly
 check for `Provider` component on
 this [page](https://docs.oceanprotocol.com/core-concepts/networks).
+
+For inspecting the errors received from `Provider` and their reasons, please revise this
+[document](https://github.com/oceanprotocol/provider/blob/main/ocean_provider/routes/README.md).
 ### nonce endpoint
 
 #### GET /api/services/nonce
