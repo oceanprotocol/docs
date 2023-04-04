@@ -4,7 +4,6 @@
   * [Wallet Basics](building-with-ocean/wallets.md)
   * [Set Up MetaMask Wallet](orientation/metamask-setup.md)
   * [Manage Your OCEAN Tokens](building-with-ocean/wallets-and-ocean-tokens.md)
-  * [FAQ](orientation/faq.md)
 * [Core Concepts](core-concepts/README.md)
   * [Architecture Overview](core-concepts/architecture.md)
   * [Data NFTs and Datatokens](core-concepts/datanft-and-datatoken.md)
@@ -53,10 +52,16 @@
     * [Contributor Code of Conduct](core-concepts/code-of-conduct.md)
     * [Legal Requirements](core-concepts/legal-reqs.md)
   * [Partners & Collaborators](building-with-ocean/projects-using-ocean.md)
-* [Rewards](rewards/veOcean-Data-Farming-Tutorial.md)
+* [veOCEAN & Data Farming](veocean-data-farming/README.md)
+  * [veOCEAN](veocean-data-farming/veocean.md)
+  * [Data Farming 101](veocean-data-farming/df-intro.md)
+  * [Data Farming Background](veocean-data-farming/df-background.md)
+  * [Emissions & APYs](veocean-data-farming/emissions-apys.md)
+  * [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
 * [API References](api-references/README.md)
   * [Aquarius REST API](api-references/aquarius-rest-api.md)
   * [Provider REST API](api-references/provider-rest-api.md)
+* [FAQ](orientation/faq.md)
 
 ## Community
 

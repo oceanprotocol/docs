@@ -1,6 +1,9 @@
-# OCEAN Rewards
+---
+description: Follow this step-by-step guide to get OCEAN rewards.
+---
+# Tutorial: How To Earn OCEAN Rewards
 
-Follow this step-by-step guide to get OCEAN rewards. There are two types of OCEAN rewards: passive and active rewards. OCEAN token holders may generate passive OCEAN rewards by locking up OCEAN in exchange for veOCEAN tokens. veOCEAN tokens can then be allocated to Ocean Market datasets and algorithms to generate active OCEAN rewards.
+There are two types of OCEAN rewards: passive and active rewards. OCEAN token holders may generate passive OCEAN rewards by locking up OCEAN in exchange for veOCEAN tokens. veOCEAN tokens can then be allocated to Ocean Market datasets and algorithms to generate active OCEAN rewards.
 
 [![veOCEAN and Data Farming Rewards](./images/vedf_youtube_thumbnail.png)](https://www.youtube.com/watch?v=zAQlPHkK3og)
 
