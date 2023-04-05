@@ -31,7 +31,9 @@ All earnings for veOCEAN holders are claimable on the ”Rewards” page inside 
 Data assets for DF may published in any [network where Ocean’s deployed in production](../core-concepts/networks.md): Eth mainnet, Polygon, etc.
 
 ### When to claim?
-There are fresh rewards available every Thursday. If you wish, you can wait for many weeks to accumulate before claiming. (It’s all on-chain.)
+There are fresh rewards available every Thursday at midnight GMT. If you wish, you can wait for many weeks to accumulate before claiming. (It’s all on-chain.)
+
+Rewards are calculated based on different factors, like your carrying veOCEAN balance and your Data Farming allocation. You can learn more about these details in places like [the Reward Function](df-background#reward-function) and by learning more about veCRV in the next section.
 
 ### When to do a first claim?
 From the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards.  
