@@ -2,7 +2,11 @@
 
 ### About Provider
 
-Provider encrypts the URL and metadata during publish and decrypts the URL when the dataset is downloaded or a compute job is started. It enables the access to data assets by streaming data (and never the URL). It performs checks on chain for buyer permissions and payments. It also Provides compute services (connects to C2D environment). The source code of Provider can be access from [here](https://github.com/oceanprotocol/provider).
+Provider encrypts the URL and metadata during publish and decrypts the URL when the dataset is downloaded or a compute job is started.
+It enables the access to data assets by streaming data (and never the URL).
+It performs checks on chain for buyer permissions and payments. It also Provides compute services (connects to C2D environment).
+It is a multichain component, meaning that with the proper configurations it can handle these tasks on multiple chains.
+The source code of Provider can be access from [here](https://github.com/oceanprotocol/provider).
 
 ### Prerequisites
 
@@ -50,15 +54,19 @@ services:
     networks:
       - ocean_backend
     environment:
-      NETWORK_URL: ${NETWORK_URL}
-      PROVIDER_PRIVATE_KEY: ${PROVIDER_PRIVATE_KEY}
+      # the NETWORK_URL and PROVIDER_PRIVATE_KEY settings can be defined for multiple chains
+      # as the JSON encoding e.g. {"chain_id1": "network_url_1", "chain_id2": "network_url_2"}
+      NETWORK_URL: '{"8996": "${NETWORK_URL}"}'
+      PROVIDER_PRIVATE_KEY: '{"8996": "${PROVIDER_PRIVATE_KEY}"}'
+      # defines the key to use where no chain id is applicable (e.g. for auth tokens)
+      UNIVERSAL_PRIVATE_KEY: ${PROVIDER_PRIVATE_KEY}
       LOG_LEVEL: DEBUG
       OCEAN_PROVIDER_URL: "http://0.0.0.0:8030"
       OCEAN_PROVIDER_WORKERS: "2"
       OCEAN_PROVIDER_TIMEOUT: "9000"
-      # Defining OPERATOR_SERVICE_URL is optional. Set the value only if Provider should support Compute-to-data. 
+      # Defining OPERATOR_SERVICE_URL is optional. Set the value only if Provider should support Compute-to-data.
       OPERATOR_SERVICE_URL: "<operator-service-url>"
-      # Defining IPFS_GATEWAY is optional. Set the value if Provider should support resolving IPFS urls. 
+      # Defining IPFS_GATEWAY is optional. Set the value if Provider should support resolving IPFS urls.
       IPFS_GATEWAY: "<ipfs-url>"
       AQUARIUS_URL: ${AQUARIUS_URL}
 volumes:
