@@ -1,6 +1,7 @@
 ---
 description: Follow this step-by-step guide to get OCEAN rewards.
 ---
+
 # Tutorial: How To Earn OCEAN Rewards
 
 There are two types of OCEAN rewards: passive and active rewards. OCEAN token holders may generate passive OCEAN rewards by locking up OCEAN in exchange for veOCEAN tokens. veOCEAN tokens can then be allocated to Ocean Market datasets and algorithms to generate active OCEAN rewards.
@@ -31,9 +32,7 @@ After navigating to the [veOCEAN page](https://df.oceandao.org/veocean), you can
 
 Click the checkbox below the inactive pink ALLOW button, then click the activated pink ALLOW button. Sign the transaction with your wallet. Then, click the LOCK OCEAN button. Sign the transaction with your wallet. Note that all veOCEAN contracts are deployed on the Ethereum mainnet.
 
-
 ![](./images/veOCEAN-Before-Lock.png)
-
 
 Now the OCEAN tokens are locked in exchange for veOCEAN. The left side panel called "My veOCEAN" shows the corresponding balances of OCEAN and veOCEAN. You can withdraw your OCEAN tokens on this panel when the lock time ends.
 
@@ -80,4 +79,5 @@ All rewards are paid out in OCEAN tokens. On every Thursday the pink "Claim" but
 After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 
 ## Learn More
+
 If you would like to find out more details about veOCEAN, Data Farming, and rewards calculations, then please visit the About tab to read a great [blog post](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) on this topic.
