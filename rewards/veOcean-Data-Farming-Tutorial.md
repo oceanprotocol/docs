@@ -38,7 +38,7 @@ Now the OCEAN tokens are locked in exchange for veOCEAN. The left side panel cal
 
 **Note that your OCEAN tokens cannot be withdrawn until the Lock End Date!**
 
-![veOcean Lock](../.gitbook/assets/rewards/veOCEAN-After-Lock.png)
+![veOcean Update Lock](../.gitbook/assets/rewards/veOCEAN-After-Lock.png)
 
 Notice the right side panel is now titled "Update veOCEAN Lock". You can add OCEAN tokens to your lock or you can increase the Lock End Date, but you cannot shorten your Lock End Date.
 
@@ -54,7 +54,7 @@ You can generate active OCEAN rewards by allocating veOCEAN to various OCEAN Mar
 
 Click on the Data Farming tab at the top of the page to navigate to the [Data Farming page](https://df.oceandao.org/data).
 
-![Active rewards](../.gitbook/assets/rewards/DF-Grid.png)
+![Allocate your veOcean](../.gitbook/assets/rewards/DF-Grid.png)
 
 The OCEAN Market datasets and algorithms are listed in the grid. Each column is sortable, and there is a Search field on top of the grid to search for specific projects.
 
