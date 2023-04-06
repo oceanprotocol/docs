@@ -9,7 +9,7 @@ To publish on the Ocean Marketplace, publishers must first host their assets. It
 
 On Ocean Marketplace, a publisher must provide the asset information during the publish step in the field shown in the below image. The information is a `link` for a classic URL, a `transaction ID` for a file stored on Arweave or a `CID` for an IPFS file.
 
-![Publish - File URL field](../.gitbook/assets/marketplace-publish-file-field.png)
+![Publish - File URL field](../.gitbook/assets/market/marketplace-publish-file-field.png)
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
