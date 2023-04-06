@@ -12,8 +12,8 @@ Ocean Protocol allows dataset buyers to provide custom parameters that can be us
 
 There 2 are types of parameters that asset publishers can support:
 
-* User defined parameters
-* Algorithm custom parameters
+- User defined parameters
+- Algorithm custom parameters
 
 ### Publish a dataset that uses custom parameters
 
@@ -25,8 +25,8 @@ For example, if the publisher has published an URL `https://example.com` which s
 
 Suppose the publisher defines the following 2 parameters:
 
-* `location`: A string indicating region code
-* `type`: A string indicating the type of weather data. It can be temperature/humidity/pressure.
+- `location`: A string indicating region code
+- `type`: A string indicating the type of weather data. It can be temperature/humidity/pressure.
 
 Suppose the buyer wants to download the temperature data in the region code `XYZ`. While downloading the data, the buyer enters the desired parameter values using ocean.py.
 
@@ -63,7 +63,7 @@ def serve_content():
 
 The publisher now must provide the file URL as `https://example.org` while publishing the asset, as shown in the below image.
 
-![](../../.gitbook/assets/compute-to-data-parameters-publish-dataset.png)
+![](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-dataset.png)
 
 For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../using-ocean-market/marketplace-publish-data-asset.md).
 
@@ -105,7 +105,7 @@ with open(os.path.join(output_dir, "result"), "w") as f:
 
 The publisher now must provide the file URL as `https://example.org` while publishing the algorithm asset, as shown in the below image.
 
-![](../../.gitbook/assets/compute-to-data-parameters-publish-algorithm.png)
+![](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-algorithm.png)
 
 For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../using-ocean-market/marketplace-publish-data-asset.md).
 
@@ -113,15 +113,16 @@ For a complete tutorial on publishing asset using Ocean Marketplace read [our gu
 
 In this example, the buyer wants to run the algorithm with certain parameters on a selected dataset. The code snippet below shows how the buyer can start the compute job with custom parameter values. Before embarking on this tutorial you should familiarize yourself with how to:
 
-* Search for a dataset using [Ocean market](https://market.oceanprotocol.com/) or [Aquarius API](../../api-references/aquarius-rest-api.md)
-* [Allow an algorithm to run on the dataset](https://github.com/oceanprotocol/ocean.py/blob/6eb068df338abc7376430cc5ba7fe2d381508328/READMEs/c2d-flow.md#5-alice-allows-the-algorithm-for-c2d-for-that-data-asset)
-* Buy datatokens using [Ocean market](https://market.oceanprotocol.com/) or [ocean.py](https://github.com/oceanprotocol/ocean.py)
-* [Set up ocean.py](../using-ocean-libraries/configuration.md)
+- Search for a dataset using [Ocean market](https://market.oceanprotocol.com/) or [Aquarius API](../../api-references/aquarius-rest-api.md)
+- [Allow an algorithm to run on the dataset](https://github.com/oceanprotocol/ocean.py/blob/6eb068df338abc7376430cc5ba7fe2d381508328/READMEs/c2d-flow.md#5-alice-allows-the-algorithm-for-c2d-for-that-data-asset)
+- Buy datatokens using [Ocean market](https://market.oceanprotocol.com/) or [ocean.py](https://github.com/oceanprotocol/ocean.py)
+- [Set up ocean.py](../using-ocean-libraries/configuration.md)
 
 For configuring ocean.py/ocean.js, please refer this [guide](../using-ocean-libraries/configuration.md). Copy the below code snippet to a file locally after completing required configurations and execute the script.
 
 {% tabs %}
 {% tab title="Python" %}
+
 <pre class="language-python" data-title="start_compute.py"><code class="lang-python"># Import dependencies
 from config import web3_wallet, ocean, config, web3_wallet
 from ocean_lib.models.compute_input import ComputeInput
@@ -182,5 +183,6 @@ Execute script
 ```bash
 python start_compute.py
 ```
+
 {% endtab %}
 {% endtabs %}

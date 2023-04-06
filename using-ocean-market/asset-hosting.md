@@ -35,13 +35,13 @@ If at any point you need more AR tokens, you can fund your wallet from one of Ar
 
 Open [arweave.app](https://arweave.app/) in a browser. Select the '+' icon in the bottom left corner of the screen. Import the JSON key file from step 1.
 
-![Arweave.app import key file](../.gitbook/assets/arweave-1.png)
+![Arweave.app import key file](../.gitbook/assets/arweave/arweave-1.png)
 
 **Step 3 - Upload file**
 
 Select the newly imported wallet by clicking the "blockies" style icon in the top left corner of the screen. Select **Send.** Click the **Data** field and select the file you wish to upload.
 
-![Arweave.app upload file](../.gitbook/assets/arweave-2.png)
+![Arweave.app upload file](../.gitbook/assets/arweave/arweave-2.png)
 
 The fee in AR tokens will be calculated based on the size of the file and displayed near the bottom middle part of the screen. Select **Submit** to submit the transaction.
 
@@ -51,11 +51,11 @@ After submitting the transaction, select **Transactions** and wait until the tra
 
 Once the transaction finalizes, select it, and copy the transaction ID.
 
-![Arweave.app transaction ID](../.gitbook/assets/arweave-3.png)
+![Arweave.app transaction ID](../.gitbook/arweave/assets/arweave-3.png)
 
 **Step 5 - Publish the asset with the transaction ID**
 
-![Ocean Market - Publish with arweave transaction ID](../.gitbook/assets/arweave-4.png)
+![Ocean Market - Publish with arweave transaction ID](../.gitbook/assets/arweave/arweave-4.png)
 
 ## Centralized hosting
 

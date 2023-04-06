@@ -29,49 +29,57 @@ Fill in the metadata.
 
 _Mandatory fields are marked with \*_
 
-*   **Asset type**\*
+- **Asset type**\*
 
-    An asset can be a _dataset_ or an _algorithm_. The asset type cannot be changed after publication.
-*   **Title**\*
+  An asset can be a _dataset_ or an _algorithm_. The asset type cannot be changed after publication.
 
-    The descriptive name of the asset. This field is editable after the asset publication.
-*   **Description**\*
+- **Title**\*
 
-    Description of the asset. Ocean Marketplace supports plain text and Markdown format for the description field. This field is editable after the asset publication.
-*   **Author**\*
+  The descriptive name of the asset. This field is editable after the asset publication.
 
-    The author of the asset. The author can be an individual or an organization. This field is editable after the asset publication.
-*   **Tags**
+- **Description**\*
 
-    Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
+  Description of the asset. Ocean Marketplace supports plain text and Markdown format for the description field. This field is editable after the asset publication.
 
-![Asset metadata](../.gitbook/assets/publish-1.png)
+- **Author**\*
+
+  The author of the asset. The author can be an individual or an organization. This field is editable after the asset publication.
+
+- **Tags**
+
+  Tags help the asset to be discoverable. If not provided, the list of tags is empty by default.
+
+![Asset metadata](../.gitbook/assets/publish/publish-1.png)
 
 #### Step 2 - Access details
 
 _Mandatory fields are marked with \*_
 
-*   **Access Type**\*
+- **Access Type**\*
 
-    An asset can be a downloadable file or a compute service on which buyers can run their algorithm. Through **download**, buyers will be able to download the dataset. Through **compute**, buyers will be able to use the dataset in a compute-to-data environment.
-*   **Provider URL**\*
+  An asset can be a downloadable file or a compute service on which buyers can run their algorithm. Through **download**, buyers will be able to download the dataset. Through **compute**, buyers will be able to use the dataset in a compute-to-data environment.
 
-    Provider facilitates the asset download to buyers or for computing jobs and much more.
-*   **File**\*
+- **Provider URL**\*
 
-    The direct URL of the dataset to be published. The file needs to be publicly accessible to be downloadable by buyers. If the file is hosted on services like Google Drive, the URL provided needs to point directly to the data asset file. Also, the file needs to have the proper permissions to be downloaded by anybody.
+  Provider facilitates the asset download to buyers or for computing jobs and much more.
 
-    **Provider** encrypts this field before publishing the asset on-chain.
-*   **Sample file**
+- **File**\*
 
-    An optional field through which publishers provide a sample file of the dataset they want to publish. The buyers can access it before buying the dataset. This field is editable after the asset publication.
+  The direct URL of the dataset to be published. The file needs to be publicly accessible to be downloadable by buyers. If the file is hosted on services like Google Drive, the URL provided needs to point directly to the data asset file. Also, the file needs to have the proper permissions to be downloaded by anybody.
 
-    **Provider** encrypts this field before publishing the asset on-chain.
-*   **Timeout**\*
+  **Provider** encrypts this field before publishing the asset on-chain.
 
-    This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
+- **Sample file**
 
-![Access details](../.gitbook/assets/publish-2.png)
+  An optional field through which publishers provide a sample file of the dataset they want to publish. The buyers can access it before buying the dataset. This field is editable after the asset publication.
+
+  **Provider** encrypts this field before publishing the asset on-chain.
+
+- **Timeout**\*
+
+  This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
+
+![Access details](../.gitbook/assets/publish/publish-2.png)
 
 #### Step 3 - Pricing
 
@@ -90,24 +98,23 @@ For more information on the pricing models, please refer this [document](../core
 
 For a deep dive into the fee structure, please refer to this [document](../core-concepts/fees.md).
 
-![Asset pricing](../.gitbook/assets/publish-3.png)
+![Asset pricing](../.gitbook/assets/publish/publish-3.png)
 
 #### Step 4 - Preview
 
-![Preview](../.gitbook/assets/publish-4.png)
+![Preview](../.gitbook/assets/publish/publish-4.png)
 
 #### Step 5 - Blockchain transactions
 
-![Transaction 1 - Deploy data NFT and datatoken](../.gitbook/assets/publish-5.png)
+![Transaction 1 - Deploy data NFT and datatoken](../.gitbook/assets/publish/publish-5.png)
 
-
-![Transaction 2 - Deploy data NFT and datatoken](../.gitbook/assets/publish-6.png)
+![Transaction 2 - Deploy data NFT and datatoken](../.gitbook/assets/publish/publish-6.png)
 
 #### Confirmation
 
 Now, the asset is successfully published and available in the Ocean Market.
 
-![Successful publish](../.gitbook/assets/publish-7.png)
+![Successful publish](../.gitbook/assets/publish/publish-7.png)
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), the publisher has access to all his published assets.
 
