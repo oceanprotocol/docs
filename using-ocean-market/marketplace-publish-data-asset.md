@@ -15,7 +15,7 @@ Ocean Market provides a convenient interface for individuals and organizations t
 1. Go to [Ocean Market](https://v4.market.oceanprotocol.com)
 2. Connect wallet.
 
-![Connect wallet](../.gitbook/assets/market/marketplace-connect-wallet.png.png)
+![Connect wallet](../.gitbook/assets/market/marketplace-connect-wallet.png)
 
 In this tutorial, we will be using the Polygon Mumbai test network.
 
