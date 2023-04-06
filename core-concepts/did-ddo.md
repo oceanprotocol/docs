@@ -33,7 +33,7 @@ The DDO is stored on-chain as part of the NFT contract and stored in encrypted f
 
 Here is the flow:
 
-![DDO flow](images/ddo-flow.png)
+![DDO flow](../.gitbook/assets/architecture/ddo-flow.png)
 
 <details>
 
@@ -128,6 +128,7 @@ Example:
   }
 }
 ```
+
 #### Algorithm Metadata
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
@@ -223,12 +224,13 @@ where "files" contains one or more storage objects.
 
 **`URL`**
 
-Static URLs. 
+Static URLs.
 
-Parameters: 
-* `url` - File url, required
-* `method` - The HTTP method, required 
-* `headers` - Additional HTTP headers, optional
+Parameters:
+
+- `url` - File url, required
+- `method` - The HTTP method, required
+- `headers` - Additional HTTP headers, optional
 
 ```
 {
@@ -237,7 +239,7 @@ Parameters:
     "method": "GET",
     "headers":
     {
-        "Authorization": "Bearer 123", 
+        "Authorization": "Bearer 123",
         "APIKEY": "124",
     }
 }
@@ -248,7 +250,8 @@ Parameters:
 The [Interplanetary File System](https://ipfs.tech/) (IPFS) is a distributed file storage protocol that allows computers all over the globe to store and serve files as part of a giant peer-to-peer network. Any computer, anywhere in the world, can download the IPFS software and start hosting and serving files.
 
 Parameters:
-* `hash` - The file hash
+
+- `hash` - The file hash
 
 ```
 {
@@ -259,19 +262,20 @@ Parameters:
 
 **`GraphQL`**
 
-[GraphQL](https://graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with your existing data. 
+[GraphQL](https://graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with your existing data.
 
 Parameters:
-* `url` - Server endpoint url, required
-* `query` - The query to be executed, required
-* `headers` - Additional HTTP headers, optional
+
+- `url` - Server endpoint url, required
+- `query` - The query to be executed, required
+- `headers` - Additional HTTP headers, optional
 
 ```
 {
 	"type": "graphql",
 	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
     	"headers":{
-        	"Authorization": "Bearer 123", 
+        	"Authorization": "Bearer 123",
         	"APIKEY": "124",
     	},
 	"query": """query{
@@ -288,11 +292,11 @@ Parameters:
 
 Use a smart contract as data source.
 
-Parameters: 
+Parameters:
 
-* `chainId` - The chainId used to query the contract, required
-* `address` - The smartcontract address, required
-* `abi` - The function abi (NOT the entire contract abi), required
+- `chainId` - The chainId used to query the contract, required
+- `address` - The smartcontract address, required
+- `abi` - The function abi (NOT the entire contract abi), required
 
 ```
 {
@@ -309,12 +313,13 @@ Parameters:
 }
 ```
 
-**`Arweave`** 
+**`Arweave`**
 
 [Arweave](https://www.arweave.org/) is a decentralized data storage that allows to permanently store files over a distributed network of computers.
 
 Parameters:
-* `transactionId` - The transaction identifier
+
+- `transactionId` - The transaction identifier
 
 ```
 {
@@ -324,7 +329,6 @@ Parameters:
   }
 }
 ```
-
 
 First class integrations supported in the future :
 **`Filecoin`**
@@ -337,7 +341,7 @@ Example:
 
 ```json
 {
-  "datatokenAddress":"0x1",
+  "datatokenAddress": "0x1",
   "nftAddress": "0x2",
   "files": [
     {
@@ -376,29 +380,27 @@ This only concerns metadata about a file, but never the file URLs. The only way 
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-
-| Attribute                      | Type     | Required | Description                  |
-| ------------------------------- | ----- | ----- | ----------------------------------------------------------- |
-| `allowRawAlgorithm`            | `boolean` | **✓** | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| `allowNetworkAccess`           | `boolean` | **✓** | If `true`, the algorithm job will have network access.       |
-| `publisherTrustedAlgorithmPublishers` | Array of `string` | **✓** | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.     |
-| `publisherTrustedAlgorithms`   | Array of `publisherTrustedAlgorithms`  | **✓** | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below). |
-
+| Attribute                             | Type                                  | Required | Description                                                                                                                                                                                                               |
+| ------------------------------------- | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `allowRawAlgorithm`                   | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| `allowNetworkAccess`                  | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                    |
+| `publisherTrustedAlgorithmPublishers` | Array of `string`                     | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.                                              |
+| `publisherTrustedAlgorithms`          | Array of `publisherTrustedAlgorithms` | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).                                       |
 
 The `publisherTrustedAlgorithms` is an array of objects with the following structure:
 
 | Attribute                      | Type     | Required | Description                                                 |
-| ------------------------------ | -------- | ---- | -------------------------------------------------------------- |
-| **`did`**                      | `string` | **✓** | The DID of the algorithm which is trusted by the publisher. |
-| **`filesChecksum`**            | `string` | **✓** | Hash of algorithm's files (as `string`).                    |
-| **`containerSectionChecksum`** | `string` | **✓** | Hash of algorithm's image details (as `string`).            |
+| ------------------------------ | -------- | -------- | ----------------------------------------------------------- |
+| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher. |
+| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                    |
+| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`).            |
 
 To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
 
 To produce `containerSectionChecksum`:
 
 ```js
-sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum)
+sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum);
 ```
 
 Example:
@@ -451,13 +453,13 @@ Example:
 
 Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job. Examples:
 
-* The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher defines a field called `sampling` and asks the buyer to enter a value. This parameter is then added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
-* An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Compute-to-Data pod for the algorithm to read and use it.
+- The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher defines a field called `sampling` and asks the buyer to enter a value. This parameter is then added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
+- An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Compute-to-Data pod for the algorithm to read and use it.
 
 The `consumerParameters` is an array of objects. Each object defines a field and has the following structure:
 
 | Attribute         | Type                             | Required | Description                                                                |
-| ----------------- | -------------------------------- | ---- | -------------------------------------------------------------------------- |
+| ----------------- | -------------------------------- | -------- | -------------------------------------------------------------------------- |
 | **`name`**        | `string`                         | **✓**    | The parameter name (this is sent as HTTP param or key towards algo)        |
 | **`type`**        | `string`                         | **✓**    | The field type (text, number, boolean, select)                             |
 | **`label`**       | `string`                         | **✓**    | The field label which is displayed                                         |
@@ -481,23 +483,23 @@ Example:
     "default": "Nowhere"
   },
   {
-    "name":"age",
+    "name": "age",
     "type": "number",
     "label": "Age",
     "required": false,
-    "description":"Please fill your age",
+    "description": "Please fill your age",
     "default": 0
   },
   {
-    "name":"developer",
+    "name": "developer",
     "type": "boolean",
     "label": "Developer",
     "required": false,
-    "description":"Are you a developer?",
+    "description": "Are you a developer?",
     "default": false
   },
   {
-    "name":"languagePreference",
+    "name": "languagePreference",
     "type": "select",
     "label": "Language",
     "required": false,
@@ -505,10 +507,10 @@ Example:
     "default": "nodejs",
     "options": [
       {
-        "nodejs" : "I love NodeJs"
+        "nodejs": "I love NodeJs"
       },
       {
-        "python" : "I love Python"
+        "python": "I love Python"
       }
     ]
   }
@@ -564,7 +566,7 @@ Here's an example object with both `"allow"` and `"deny"` entries:
 In order to ensure the integrity of the DDO, a checksum is computed for each DDO:
 
 ```js
-const checksum = sha256(JSON.stringify(ddo))
+const checksum = sha256(JSON.stringify(ddo));
 ```
 
 The checksum hash is used when publishing/updating metadata using the `setMetaData` function in the ERC721 contract, and is stored in the event generated by the ERC721 contract:
@@ -599,14 +601,14 @@ _Aquarius_ should always verify the checksum after data is decrypted via a _Prov
 
 Each asset has a state, which is held by the NFT contract. The possible states are:
 
-| State | Description | Discoverable in Ocean Market | Ordering allowed | Listed under profile |
-| ----- | ----------- | ------------------ | ---------------- | ---- |
-| **`0`**     | Active | Yes | Yes | Yes |
-| **`1`**     | End-of-life | No | No | No |
-| **`2`**     | Deprecated (by another asset) | No | No | No |
-| **`3`**     | Revoked by publisher | No | No | No |
-| **`4`**     | Ordering is temporary disabled | Yes | No | Yes |
-| **`5`**     | Asset unlisted.| No | Yes | Yes |
+| State   | Description                    | Discoverable in Ocean Market | Ordering allowed | Listed under profile |
+| ------- | ------------------------------ | ---------------------------- | ---------------- | -------------------- |
+| **`0`** | Active                         | Yes                          | Yes              | Yes                  |
+| **`1`** | End-of-life                    | No                           | No               | No                   |
+| **`2`** | Deprecated (by another asset)  | No                           | No               | No                   |
+| **`3`** | Revoked by publisher           | No                           | No               | No                   |
+| **`4`** | Ordering is temporary disabled | Yes                          | No               | Yes                  |
+| **`5`** | Asset unlisted.                | No                           | Yes              | Yes                  |
 
 ### Aquarius Enhanced DDO Response
 

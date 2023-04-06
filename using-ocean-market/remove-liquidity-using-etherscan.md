@@ -10,7 +10,7 @@ In previous versions of Ocean liquidity pools and dynamic pricing were supported
 2. Click _View All_ and look for Ocean Pool Token (OPT) transfers. Those transactions always come from the pool contract, which you can click on.
 3. On the pool contract page, go to _Contract_ -> _Read Contract_.
 
-![](<../.gitbook/assets/liquidity/remove-liquidity-1 (1).png>)
+![](../.gitbook/assets/liquidity/remove-liquidity-1.png)
 
 4\. Go to field `20. balanceOf` and insert your ETH address. This will retrieve your pool share token balance in wei.
 

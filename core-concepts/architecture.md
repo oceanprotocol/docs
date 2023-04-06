@@ -9,16 +9,16 @@ description: Data NFTs and datatokens architecture
 
 Here is the Ocean architecture.
 
-![Ocean Protocol tools architecture](<images/architecture (2).png>)
+![Ocean Protocol tools architecture](../.gitbook/assets/architecture.png)
 
 Here’s an overview of the figure.
 
-* The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, algorithms, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets, and buy/sell datatokens for a fixed or auto-determined price (data marketplaces), and use data services (spend datatokens).
-* Below are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
-  * **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
-  * **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
-  * **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
-* The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](networks.md).
+- The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, algorithms, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets, and buy/sell datatokens for a fixed or auto-determined price (data marketplaces), and use data services (spend datatokens).
+- Below are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
+  - **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
+  - **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
+  - **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
+- The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](networks.md).
 
 ### Data NFTs, Datatokens and Access Control Tools
 
