@@ -1,6 +1,7 @@
 ---
 description: An overview of the governance token, veOCEAN (vote-escrowed).
 ---
+
 # veOCEAN
 
 veOCEAN is a mechanism to align near-term incentives (maximize APY) with long-term incentives (long-term locking). It's a fork of veCRV contracts which have been battle-tested over years.
@@ -16,6 +17,7 @@ After creating your lock you will be credited veOCEAN. We sometimes refer to veO
 veOCEAN allows you to engage with different protocol mechanisms and benefit from the reward programs available.
 
 There are 4 things you can do with veOCEAN.
+
 1. **Hold it** veOCEAN pays **Passive Rewards** every week.
 2. **Allocate it** veOCEAN pays **Active Rewards** every week to the top performing Datasets, Algorithms, dApps, and more.
 3. **Delegate it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
@@ -28,11 +30,11 @@ Users can lock their OCEAN for different lengths of time to gain voting power. O
 Users that lock their OCEAN for a longer period of time receive more veOCEAN to reflect their conviction in the system.
 
 | Year | Lock Multiplier | veOCEAN |
-| ---- | ----------| ------- |
-| 1    | 0.25x     | 0.25    |
-| 2    | 0.50x      | 0.50     |
-| 3    | 0.75x     | 0.75    |
-| 4    | 1.00x      | 1.00     |
+| ---- | --------------- | ------- |
+| 1    | 0.25x           | 0.25    |
+| 2    | 0.50x           | 0.50    |
+| 3    | 0.75x           | 0.75    |
+| 4    | 1.00x           | 1.00    |
 
 _The Lock Multiplier. Amount of veOCEAN received per OCEAN locked._
 
@@ -53,11 +55,11 @@ When your lock time ends your veOCEAN balance will hit 0, and your OCEAN tokens 
 If you lock 1.0 OCEAN for 4 years, you get 1.0 veOCEAN at the start.
 
 | Years Passed | veOCEAN Left |
-| ---- | ---- |
-| 1 year | 0.75 |
-| 2 years | 0.50 |
-| 3 years | 0.25 |
-| 4 years | 0.00 |
+| ------------ | ------------ |
+| 1 year       | 0.75         |
+| 2 years      | 0.50         |
+| 3 years      | 0.25         |
+| 4 years      | 0.00         |
 
 At the end of your 4 years, your OCEAN is unlocked.
 
@@ -87,13 +89,13 @@ veOCEAN holders will each get weekly DF rewards allocation, except a small carve
 
 **veOCEAN holders can be passive, though they will earn more if active.**
 
-“Being active” means allocating veOCEAN to promising data assets (data NFTs). Then, rewards follow the usual DF formula: DCV * stake. Stake is the amount of veOCEAN allocated to the data asset. There is no liquidity locked inside a datatoken pool. (And this stake is safe: you can’t lose your OCEAN as it is merely locked.)
+“Being active” means allocating veOCEAN to promising data assets (data NFTs). Then, rewards follow the usual DF formula: DCV \* stake. Stake is the amount of veOCEAN allocated to the data asset. There is no liquidity locked inside a datatoken pool. (And this stake is safe: you can’t lose your OCEAN as it is merely locked.)
 
 ## Flow of Value
 
 The image below illustrates the flow of value. On the left, at time 0, the staker locks their OCEAN into the veOCEAN contract, and receives veOCEAN. In the middle, the staker receives OCEAN rewards every time there’s revenue to the Ocean Protocol Community (top), and also as part of Data Farming rewards (bottom). On the right, when the lock expires (e.g. 4 years) then the staker is able to move their OCEAN around again.
 
-![](./images/flow_of_value.png)
+![](../.gitbook/assets/rewards/flow_of_value.png)
 _Flow of Value_
 
 The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Ocean uses as its system-level design.

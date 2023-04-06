@@ -1,6 +1,7 @@
 ---
 description: An introduction to Data Farming and Ocean Protocol's key incentives.
 ---
+
 # Data Farming 101
 
 Data Farming (DF) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem.
@@ -12,8 +13,8 @@ It rewards OCEAN to liquidity providers (stakers) as a function of consume volum
 Rewards are paid in OCEAN and distributed every week on Thursday as follow:
 
 | Passive Rewards | Active Rewards |
-| ---- | ------- |
-| 50%    | 50%    |
+| --------------- | -------------- |
+| 50%             | 50%            |
 
 Active Rewards are governed and defined by the [Reward Function](df-background.md#reward-function).
 
@@ -25,18 +26,21 @@ Please [follow this tutorial](../rewards/veOcean-Data-Farming-Tutorial.md) to le
 
 Otherwise, go to the DF webapp at [df.oceandao.org](df.oceandao.org/) and explore Data Farming for yourself.
 
-### Where to claim?  
-All earnings for veOCEAN holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.  
+### Where to claim?
+
+All earnings for veOCEAN holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.
 
 Data assets for DF may published in any [network where Ocean’s deployed in production](../core-concepts/networks.md): Eth mainnet, Polygon, etc.
 
 ### When to claim?
+
 There are fresh rewards available every Thursday. If you wish, you can wait for many weeks to accumulate before claiming. (It’s all on-chain.)
 
 ### When to do a first claim?
-From the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards.  
 
-The nerdy version: if you lock OCEAN on day x, you’ll be able to claim rewards on the first weekly ve “epoch” that begins after day x+7.  
+From the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards.
+
+The nerdy version: if you lock OCEAN on day x, you’ll be able to claim rewards on the first weekly ve “epoch” that begins after day x+7.
 
 This behavior is inherited from [veCRV](https://curve.readthedocs.io/dao-fees.html); [here’s the code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256).
 
@@ -56,7 +60,7 @@ DF Main lasts for decades.
 
 The table below cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
 
-![](./images/reward_schedule.png)
+![](../.gitbook/assets/rewards/reward_schedule.png)
 _Ocean Reward Schedule for the next 20+ years_
 
 ## Ranked Rewards
@@ -77,7 +81,8 @@ You can read more about the implementation [in this blog post](https://blog.ocea
 
 DF gives stronger incentives to publish data services, as follows.
 
-*All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation.*
+_All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation._
+
 1. As a staker, due to their staked veOCEAN on their own assets (1x).
 1. As a publisher, for having veOCEAN staked on their own asset(1x).
 

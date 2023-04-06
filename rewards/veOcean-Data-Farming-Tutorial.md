@@ -16,7 +16,7 @@ To generate rewards, start by navigating to [df.oceandao.org](https://df.oceanda
 
 - If you already have veOCEAN tokens, then on the Active Rewards panel on the right side of the page, click the [Set Allocations](https://df.oceandao.org/data) button to navigate to the Data Farming tab.
 
-![](./images/veOCEAN-DF-Homepage.png)
+![veOcean homepage](../.gitbook/assets/rewards/veOCEAN-DF-Homepage.png)
 
 ## veOCEAN
 
@@ -32,13 +32,13 @@ After navigating to the [veOCEAN page](https://df.oceandao.org/veocean), you can
 
 Click the checkbox below the inactive pink ALLOW button, then click the activated pink ALLOW button. Sign the transaction with your wallet. Then, click the LOCK OCEAN button. Sign the transaction with your wallet. Note that all veOCEAN contracts are deployed on the Ethereum mainnet.
 
-![](./images/veOCEAN-Before-Lock.png)
+![veOcean Lock](../.gitbook/assets/rewards/veOCEAN-Before-Lock.png)
 
 Now the OCEAN tokens are locked in exchange for veOCEAN. The left side panel called "My veOCEAN" shows the corresponding balances of OCEAN and veOCEAN. You can withdraw your OCEAN tokens on this panel when the lock time ends.
 
 **Note that your OCEAN tokens cannot be withdrawn until the Lock End Date!**
 
-![](./images/veOCEAN-After-Lock.png)
+![veOcean Lock](../.gitbook/assets/rewards/veOCEAN-After-Lock.png)
 
 Notice the right side panel is now titled "Update veOCEAN Lock". You can add OCEAN tokens to your lock or you can increase the Lock End Date, but you cannot shorten your Lock End Date.
 
@@ -54,7 +54,7 @@ You can generate active OCEAN rewards by allocating veOCEAN to various OCEAN Mar
 
 Click on the Data Farming tab at the top of the page to navigate to the [Data Farming page](https://df.oceandao.org/data).
 
-![](./images/DF-Grid.png)
+![Active rewards](../.gitbook/assets/rewards/DF-Grid.png)
 
 The OCEAN Market datasets and algorithms are listed in the grid. Each column is sortable, and there is a Search field on top of the grid to search for specific projects.
 
@@ -68,7 +68,7 @@ Click on the Rewards tab at the top of the page to come to the [same page](https
 
 All rewards are paid out in OCEAN tokens. On every Thursday the pink "Claim" buttons on this page become activated, and you can claim your weekly OCEAN rewards directly into your wallet by clicking on these active buttons.
 
-![](./images/Rewards-Page.png)
+![](../.gitbook/assets/rewards/Rewards-Page.png)
 
 #### Linear Decay
 
