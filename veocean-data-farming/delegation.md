@@ -14,6 +14,6 @@ Follow these steps to delegate you veOcean:
 2. Click the Delegate button and sign the transaction. You can view information about your delegation in the My Delegations component.
 3. If needed, you can cancel the delegation to regain your allocation power before the delegation expires.
 
-![](../.gitbook/assets/rewards/veOCEAN-Delegation.png)
+![veOcean Delegation](../.gitbook/assets/rewards/veOCEAN-Delegation.png)
 
 If you receive veOCEAN allocation power from other wallets, you will receive their rewards and be responsible for distributing rewards to the delegators. You cannot delegate the veOCEAN you received from delegates, only the veOCEAN you received from your lock.

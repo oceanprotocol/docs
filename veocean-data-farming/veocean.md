@@ -95,7 +95,7 @@ veOCEAN holders will each get weekly DF rewards allocation, except a small carve
 
 The image below illustrates the flow of value. On the left, at time 0, the staker locks their OCEAN into the veOCEAN contract, and receives veOCEAN. In the middle, the staker receives OCEAN rewards every time there’s revenue to the Ocean Protocol Community (top), and also as part of Data Farming rewards (bottom). On the right, when the lock expires (e.g. 4 years) then the staker is able to move their OCEAN around again.
 
-![](../.gitbook/assets/rewards/flow_of_value.png)
+![Flow of Value](../.gitbook/assets/rewards/flow_of_value.png)
 _Flow of Value_
 
 The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Ocean uses as its system-level design.

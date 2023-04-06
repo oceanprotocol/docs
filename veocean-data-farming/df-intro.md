@@ -60,7 +60,7 @@ DF Main lasts for decades.
 
 The table below cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
 
-![](../.gitbook/assets/rewards/reward_schedule.png)
+![Rewards Schedule](../.gitbook/assets/rewards/reward_schedule.png)
 _Ocean Reward Schedule for the next 20+ years_
 
 ## Ranked Rewards
@@ -73,7 +73,7 @@ At the top-end, this helps increase quality and diversification of inventory.
 
 At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
 
-![](images/ranked_rewards_study.png)
+![Ranked Rewards](images/ranked_rewards_study.png)
 
 You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 

@@ -6,7 +6,7 @@ description: Follow this step-by-step guide to get OCEAN rewards.
 
 There are two types of OCEAN rewards: passive and active rewards. OCEAN token holders may generate passive OCEAN rewards by locking up OCEAN in exchange for veOCEAN tokens. veOCEAN tokens can then be allocated to Ocean Market datasets and algorithms to generate active OCEAN rewards.
 
-[![veOCEAN and Data Farming Rewards](./images/vedf_youtube_thumbnail.png)](https://www.youtube.com/watch?v=zAQlPHkK3og)
+[![veOCEAN and Data Farming Rewards](../.gitbook/assets/rewards/vedf_youtube_thumbnail.png)](https://www.youtube.com/watch?v=zAQlPHkK3og)
 
 ## How do I get rewards?
 
@@ -68,7 +68,7 @@ Click on the Rewards tab at the top of the page to come to the [same page](https
 
 All rewards are paid out in OCEAN tokens. On every Thursday the pink "Claim" buttons on this page become activated, and you can claim your weekly OCEAN rewards directly into your wallet by clicking on these active buttons.
 
-![](../.gitbook/assets/rewards/Rewards-Page.png)
+![Rewards Page](../.gitbook/assets/rewards/Rewards-Page.png)
 
 #### Linear Decay
 

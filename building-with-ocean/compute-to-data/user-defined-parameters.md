@@ -63,7 +63,7 @@ def serve_content():
 
 The publisher now must provide the file URL as `https://example.org` while publishing the asset, as shown in the below image.
 
-![](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-dataset.png)
+![Compute to data parameters](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-dataset.png)
 
 For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../using-ocean-market/marketplace-publish-data-asset.md).
 
@@ -105,7 +105,7 @@ with open(os.path.join(output_dir, "result"), "w") as f:
 
 The publisher now must provide the file URL as `https://example.org` while publishing the algorithm asset, as shown in the below image.
 
-![](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-algorithm.png)
+![Publish algorithm asset](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-algorithm.png)
 
 For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../using-ocean-market/marketplace-publish-data-asset.md).
 
