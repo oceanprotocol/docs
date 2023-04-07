@@ -1,8 +1,5 @@
 ---
 title: Deployment of Ocean Market
-order: 3
-hideLanguageSelector: true
-featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 description: Step by step guide to a quick deployment of Ocean Market
 ---
 

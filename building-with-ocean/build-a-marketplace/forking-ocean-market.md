@@ -1,8 +1,5 @@
 ---
 title: Forking Ocean Market
-order: 1
-hideLanguageSelector: true
-featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 description: Forking and running Ocean Market locally.
 ---
 
@@ -12,10 +9,10 @@ One of the best use cases for Ocean is running your own marketplace and monetizi
 
 Using Ocean Market is already a big improvement on the alternatives that are out there, but it gets even better. Ocean Market is completely open-source and made freely available under the Apache 2 license. This means that you can fork Ocean Market and set up your own data marketplace in just a few steps. This guide will walk you through the process, you’ll be surprised how easy it is. No prior blockchain knowledge is required!
 
-* Fork Ocean Market
-* Clone the market locally
-* Install the dependencies
-* Run your Market fork for the first time
+- Fork Ocean Market
+- Clone the market locally
+- Install the dependencies
+- Run your Market fork for the first time
 
 ## Fork Ocean Market
 

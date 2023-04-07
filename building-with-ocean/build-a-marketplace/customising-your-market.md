@@ -1,9 +1,6 @@
 ---
 title: Customising Market
-order: 2
-hideLanguageSelector: true
 description: Step by step guide to customizing your fork of Ocean market
-featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 ---
 
 # Customizing your fork of Ocean market

@@ -1,8 +1,5 @@
 ---
 title: FAQs
-order: 5
-hideLanguageSelector: true
-featuredImage: images/creatures/mantaray/mantaray-full@2x.png
 description: Frequently Asked Questions about Ocean Protocol
 ---
 
@@ -268,7 +265,8 @@ Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is 
 
 <summary>What is the official formula for the Linear Decay?</summary>
 
-The Linear Decay formula for veOCEAN can be expressed as follows in python.  
+The Linear Decay formula for veOCEAN can be expressed as follows in python.
+
 ```python
 FOUR_YEARS = 60 * 60 * 24 * 7 * 52
 
@@ -303,7 +301,7 @@ Ot works. Half the DF revenue goes to veOCEAN stake that users can allocate. All
 
 <summary>In this scheme, can people stake on fixed-price datasets?</summary>
 
-Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV * veOCEAN stake.
+Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV \* veOCEAN stake.
 
 </details>
 
@@ -311,7 +309,7 @@ Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual D
 
 <summary>In this scheme, can people stake on free datasets?</summary>
 
-Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV * veOCEAN stake. Except in this case although DCV is 0, the gas fees will still count towards calculating rewards.
+Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV \* veOCEAN stake. Except in this case although DCV is 0, the gas fees will still count towards calculating rewards.
 
 </details>
 
