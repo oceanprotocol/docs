@@ -1,13 +1,13 @@
 # Table of contents
 
-- [Discover](README.md)
+- [DISCOVER](README.md)
   - [Wallet Basics](discover/wallets.md)
   - [Set Up MetaMask Wallet](discover/metamask-setup.md)
   - [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
   - [Networks](discover/networks.md)
   - [Bridges](discover/bridges.md)
   - [FAQ](discover/faq.md)
-- [Tutorials](tutorials/README.m)
+- [TUTORIALS](tutorials/README.m)
 
   - [Using Ocean Market](tutorials/using-ocean-market/README.md)
     - [Publish a Data Asset](tutorials/using-ocean-market/marketplace-publish-data-asset.md)
@@ -31,7 +31,7 @@
     - [Mint Datatokens](tutorials/using-ocean-libraries/mint-datatoken.md)
     - [Update Metadata](tutorials/using-ocean-libraries/update-metadata.md)
 
-- [Developers](developers/README.md)
+- [DEVELOPERS](developers/README.md)
 
   - [Architecture Overview](developers/architecture.md)
   - [Data NFTs and Datatokens](developers/datanft-and-datatoken.md)
@@ -51,7 +51,7 @@
     - [Private Docker Registry](developers/compute-to-data/compute-to-data-docker-registry.md)
     - [User defined parameters](developers/compute-to-data/user-defined-parameters.md)
 
-- [Infrastructure](infrastructure/deploying-components/README.md)
+- [INFRASTUCTURE](infrastructure/deploying-components/README.md)
 
   - [Setup a Server](infrastructure/setup-server.md)
   - [Deploying Marketplace](infrastructure/deploying-marketplace.md)
@@ -59,7 +59,7 @@
   - [Deploying Provider](infrastructure/deploying-provider.md)
   - [Deploying Ocean Subgraph](infrastructure/deploying-ocean-subgraph.md)
 
-- [Rewards](rewards/README.md)
+- [REWARDS](rewards/README.md)
 
   - [veOCEAN](rewards/veocean.md)
   - [Data Farming 101](rewards/df-intro.md)
@@ -68,7 +68,7 @@
   - [Delegation](rewards/delegation.md)
   - [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
 
-- [Contributing](contribute/contributing.md)
+- [CONTRIBUTE](contribute/contributing.md)
   - [Partners & Collaborators](contribute/projects-using-ocean.md)
   - [Contributor Code of Conduct](contribute/code-of-conduct.md)
   - [Legal Requirements](contribute/legal-reqs.md)
