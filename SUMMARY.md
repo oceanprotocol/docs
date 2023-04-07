@@ -6,7 +6,7 @@
   - [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
   - [Networks](discover/networks.md)
   - [Bridges](discover/bridges.md)
-  - [FAQ](orientation/faq.md)
+  - [FAQ](discover/faq.md)
 - [Tutorials/Sail Smoothly](tutorials/README.m)
 
   - [Using Ocean Market](tutorials/using-ocean-market/README.md)
@@ -33,14 +33,12 @@
 
 - [Developers/Coral Coders](developers/README.md)
 
-  - [Core Concepts/Coral Fundamentals](developers/core-concepts/README.md)
-
-    - [Architecture Overview](developers/core-concepts/architecture.md)
-    - [Data NFTs and Datatokens](developers/core-concepts/datanft-and-datatoken.md)
-    - [Roles](developers/core-concepts/roles.md)
-    - [Fees](developers/core-concepts/fees.md)
-    - [Asset Pricing](developers/core-concepts/asset-pricing.md)
-    - [DID & DDO](developers/core-concepts/did-ddo.md)
+  - [Architecture Overview](developers/architecture.md)
+  - [Data NFTs and Datatokens](developers/datanft-and-datatoken.md)
+  - [Roles](developers/roles.md)
+  - [Fees](developers/fees.md)
+  - [Asset Pricing](developers/asset-pricing.md)
+  - [DID & DDO](developers/did-ddo.md)
 
   - [API References](developers/api-references/README.md)
     - [Aquarius REST API](developers/api-references/aquarius-rest-api.md)
