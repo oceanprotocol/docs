@@ -1,6 +1,6 @@
 ---
 title: Minikube Compute-to-Data Environment
-description: 
+description:
 ---
 
 ## Requirements
@@ -26,7 +26,7 @@ sudo dpkg -i minikube_1.22.0-0_amd64.deb
 
 ## Start Minikube
 
-First command is imporant, and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828). 
+First command is imporant, and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828).
 
 ```bash
 minikube config set kubernetes-version v1.16.0
@@ -46,7 +46,6 @@ echo "$(<kubectl.sha256) kubectl" | sha256sum --check
 
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
-
 
 Wait untill all the defaults are running (1/1).
 
@@ -115,10 +114,11 @@ Edit `operator-service/kubernetes/deployment.yaml`. Optionally change:
 - add `limits_memory`
 
 ```yaml
-...
-    spec:
-      containers:
-      - env:
+
+---
+spec:
+  containers:
+    - env:
         - name: requests_cpu
           value: "4"
         - name: requests_memory
@@ -129,7 +129,6 @@ Edit `operator-service/kubernetes/deployment.yaml`. Optionally change:
           value: "15Gi"
         - name: ALGO_POD_TIMEOUT
           value: "3600"
-...
 ```
 
 ## Download and Configure Operator Engine
@@ -141,7 +140,6 @@ git clone https://github.com/oceanprotocol/operator-engine.git
 Check the [README](https://github.com/oceanprotocol/operator-engine#customize-your-operator-engine-deployment) section of operator engine to customize your deployment.
 
 At a minimum you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
-
 
 ## Create namespaces
 
