@@ -54,8 +54,8 @@
     - [C2D - Writing Algorithms](developers/core-concepts/compute-to-data-algorithms.md)
     - [C2D - User defined parameters](developers/core-concepts/user-defined-parameters.md)
 
-  - [Aquarius REST API](developers/api-references/aquarius-rest-api.md)
-  - [Provider REST API](developers/api-references/provider-rest-api.md)
+  - [Aquarius REST API](developers/aquarius-rest-api.md)
+  - [Provider REST API](developers/provider-rest-api.md)
 
 - [🔨 Infrastructure](infrastructure/deploying-components/README.md)
 
