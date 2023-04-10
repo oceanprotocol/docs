@@ -1,9 +1,13 @@
 ---
 title: Publish assets using hosting services
-description: Tutorial to publish assets using hosting services like Arweave, AWS, and Azure.
+description: >-
+  Tutorial to publish assets using hosting services like Arweave, AWS, and
+  Azure.
 ---
 
-## Overview
+# Publishing with Hosting Services
+
+### Overview
 
 To publish on the Ocean Marketplace, publishers must first host their assets. It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on decentralized storage like Arweave or choose a centralized solution like their AWS server, private cloud server, or other third-party hosting services. Through publishing, the information required to access the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts it and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the file and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the data. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
 
@@ -13,13 +17,11 @@ On Ocean Marketplace, a publisher must provide the asset information during the 
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
-⚠️ Note
-**Please use a proper hosting solution to keep your files.**
-Systems like `Google Drive` are not specifically designed for this use case. They include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
+⚠️ Note **Please use a proper hosting solution to keep your files.** Systems like `Google Drive` are not specifically designed for this use case. They include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
 
-## Decentralized hosting
+### Decentralized hosting
 
-### Arweave
+#### Arweave
 
 [Arweave](https://www.arweave.org/) is a global, permanent, and decentralized data storage layer that allows you to store documents and applications forever. Arweave is different from other decentralized storage solutions in that there is only one up-front cost to upload each file.
 
@@ -45,7 +47,7 @@ Select the newly imported wallet by clicking the "blockies" style icon in the to
 
 The fee in AR tokens will be calculated based on the size of the file and displayed near the bottom middle part of the screen. Select **Submit** to submit the transaction.
 
-After submitting the transaction, select **Transactions** and wait until the transaction appears and eventually finalizes. This can take over 5 minutes so please be patient.&#x20;
+After submitting the transaction, select **Transactions** and wait until the transaction appears and eventually finalizes. This can take over 5 minutes so please be patient.
 
 **Step 4 - Copy the transaction ID**
 
@@ -57,9 +59,9 @@ Once the transaction finalizes, select it, and copy the transaction ID.
 
 ![Ocean Market - Publish with arweave transaction ID](../.gitbook/assets/hosting/arweave-4.png)
 
-## Centralized hosting
+### Centralized hosting
 
-### AWS
+#### AWS
 
 AWS provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using an AWS S3 bucket and publish it on Ocean Marketplace.
 
@@ -103,7 +105,7 @@ Now, the asset can be uploaded by selecting the bucket name and choosing `Upload
 
 Get the files and add them to the bucket.
 
-The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
+The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin\_and\_gpr/branin.arff).
 
 ![Upload asset on S3 bucket - 3](../.gitbook/assets/hosting/aws-7.png)
 
@@ -166,7 +168,7 @@ Copy the `Object URL` that can be found at `Object Overview` from the AWS S3 buc
 
 ![Get the S3 Bucket Link & Publish Asset on Market - 1](../.gitbook/assets/hosting/aws-12.png)
 
-### Azure storage
+#### Azure storage
 
 Azure provides various options to host data and multiple configuration possibilities. Publishers are required to do their research and decide what would be the right choice. The below steps provide one of the possible ways to host data using Azure storage and publish it on Ocean Marketplace.
 
@@ -184,11 +186,11 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Create a new storage account**
 
-![Create a storage account - 2](../../.gitbook/assets/hosting/azure-2.png)
+![Create a storage account - 2](<../../.gitbook/assets/hosting/azure-2 (1).png>)
 
 **Fill in the details**
 
-![Add details](../../.gitbook/assets/hosting/azure-3.png)
+![Add details](<../../.gitbook/assets/hosting/azure-3 (1).png>)
 
 **Storage account created**
 
@@ -200,17 +202,17 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 3 - Upload a file**
 
-![Upload a file](../../.gitbook/assets/hosting/azure-6.png)
+![Upload a file](<../../.gitbook/assets/hosting/azure-6 (1).png>)
 
 **Step 4 - Share the file**
 
 **Select the file to be published and click Generate SAS**
 
-![Click generate SAS](../../.gitbook/assets/hosting/azure-7.png)
+![Click generate SAS](<../../.gitbook/assets/hosting/azure-7 (1).png>)
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](../../.gitbook/assets/hosting/azure-8.png)
+![Generate link to file](<../../.gitbook/assets/hosting/azure-8 (1).png>)
 
 **Copy the generated link**
 

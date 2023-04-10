@@ -2,32 +2,34 @@
 title: Bridges
 ---
 
-# Binance Smart Chain (BSC) Bridge
+# Bridges
 
-## Intro to BSC's Bridge
+## Binance Smart Chain (BSC) Bridge
+
+### Intro to BSC's Bridge
 
 BSC provides several bridge options, including:
 
-- withdraw crypto from Binance.com, and
-- use Binance bridge.
+* withdraw crypto from Binance.com, and
+* use Binance bridge.
 
 The article [How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc) by Binance Academy provides further details.
 
-### Links
+#### Links
 
-- [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
-- [BSC Bridge](https://www.bnbchain.org/en/bridge)
-- [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
+* [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
+* [BSC Bridge](https://www.bnbchain.org/en/bridge)
+* [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
 
-# Polygon (ex Matic) Bridge
+## Polygon (ex Matic) Bridge
 
-### Links
+#### Links
 
-- [Matic Wallet](https://wallet.polygon.technology/)
-- [Matic Bridge](https://wallet.polygon.technology/bridge/)
-- [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
+* [Matic Wallet](https://wallet.polygon.technology/)
+* [Matic Bridge](https://wallet.polygon.technology/bridge/)
+* [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
 
-### Intro to Polygon's Bridge
+#### Intro to Polygon's Bridge
 
 The Polygon Network (ex Matic) provide us with a bridge (connecting Ethereum & Polygon blockchains), and a dedicated [wallet](https://wallet.polygon.technology/) that simplify the steps of transferring digital assets between the two networks. The wallet connects to your account via Metamask (or any of the other supported wallets).
 
@@ -39,11 +41,11 @@ In some places, the Polygon Network is still using its old brand Matic. Either y
 
 For details check the [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47).
 
-### Deposit Tokens
+#### Deposit Tokens
 
 On the main page of the wallet, you can see all tokens you own on the Matic Mainnet. To deposit tokens (transfer them from the Ethereum Mainnet) you can either use the “deposit” button for a selected token or use “Move funds to Matic Mainnet”.
 
-![Main wallet page](../.gitbook/assets/wallet/main-wallet-page.png)
+![Main wallet page](<../.gitbook/assets/wallet/main-wallet-page (1).png>)
 
 Both options will redirect you to the bridge interface. In case you chose the second one, use the dropdown and select the token you want to transfer from the Ethereum Mainnet.
 
@@ -53,7 +55,7 @@ Choose the amount to transfer and click the “Transfer” button. Matic’s bri
 
 ![Transferring process](../.gitbook/assets/wallet/transferring-process.png)
 
-### Withdraw Tokens
+#### Withdraw Tokens
 
 The withdrawing tokens process uses the same bridge interface. The only difference being that the withdraw happens from the Matic to the Ethereum Mainnet.
 
@@ -61,7 +63,7 @@ Again the bridge interface will guide you through the different steps.
 
 For more in dept explanation of the deposit and withdraw actions check [the official Polygon (ex Matic) docs](https://docs.matic.network/docs/develop/ethereum-matic/pos/getting-started).
 
-### Sending Tokens
+#### Sending Tokens
 
 While in the first two cases, the transactions are signed on the Ethereum Mainnet, transferring tokens between two Matic addresses happens on the Matic Mainnet. Thus it’s required for you to connect to the Matic network to sign the transactions. You can use the following parameters to set the network in Metamask:
 

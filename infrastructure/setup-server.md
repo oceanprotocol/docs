@@ -18,25 +18,25 @@ Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create 
 
 Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
-![Server Setup](../../.gitbook/assets/server-setup/image.png)
+![Server Setup](../.gitbook/assets/server-setup/image.png)
 
 #### Configure droplet
 
 Select Ubuntu OS and choose a plan. The required CPU, Memory depends on the number of requests Aquarius is expected to serve.
 
-![Configure droplet](<../../.gitbook/assets/server-setup/image (8).png>)
+![Configure droplet](<../.gitbook/assets/server-setup/image (8).png>)
 
 Also, select the region where you want Aquarius to be hosted and a root password.
 
-![Select region](<../../.gitbook/assets/server-setup/image (10).png>)
+![Select region](<../.gitbook/assets/server-setup/image (6).png>)
 
-![Click create Droplet](<../../.gitbook/assets/server-setup/image (7).png>)
+![Click create Droplet](<../.gitbook/assets/server-setup/image (7).png>)
 
 Finalize the parameters for the server, click on `Create Droplet.` After the server is ready, select the `Access console` option from the dropdown.
 
-![Click access console](<../../.gitbook/assets/server-setup/image (3).png>)
+![Click access console](<../.gitbook/assets/server-setup/image (3).png>)
 
-![Click launch Droplet console](<../../.gitbook/assets/image (9).png>)
+![Click launch Droplet console](../.gitbook/assets/image%20\(9\).png)
 
 A window will open with a terminal session. Now, the required infrastructure is ready for hosting Aquarius, Provider or the Subgraph. Let's install docker and docker-compose on the server. Follow the installation guide [here](https://docs.docker.com/engine/install/ubuntu/).
 
@@ -60,5 +60,5 @@ sudo apt-get install docker-compose-plugin
 
 Now that, the server is ready with all the required dependencies are installed for hosting Ocean Components, follow the instructions given in Component specific guide.
 
-- [Deploying Marketplace](deploying-marketplace.md)
-- [Deploying Aquarius](deploying-aquarius.md)
+* [Deploying Marketplace](deploying-marketplace.md)
+* [Deploying Aquarius](deploying-aquarius.md)
