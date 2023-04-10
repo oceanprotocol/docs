@@ -3,34 +3,36 @@ title: Ways to Contribute
 description: Help to improve and develop Ocean core software.
 ---
 
-## Report a bug
+# 🤝 Contribute
+
+### Report a bug
 
 To report a bug that isn't a vulnerability, go to the relevant GitHub repository, click on the _Issues_ tab and select _Bug report_.
 
 Before reporting a bug, search existing open and closed issues and PRs to see if something has already been reported. If not, then go ahead and create a new bug report, following the structure suggested in the issue template.
 
-## Report Vulnerabilities
+### Report Vulnerabilities
 
-You may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at <a href="mailto:security@oceanprotocol.com">security@oceanprotocol.com</a>.
+You may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
 
-## Suggest a new feature
+### Suggest a new feature
 
 Use the _Issues_ section of each repository and select _Feature request_ to suggest and discuss any features you would like to see added.
 
 As with bug reports, search existing open and closed issues and PRs to see if something has already been reported.
 
-## Fix or improve core software
+### Fix or improve core software
 
 We'd love to have you contribute to any repository within the `oceanprotocol` GitHub organization!
 
 Before you start coding right away, please follow those basic guidelines:
 
-- If no issue for your case is present, open one first before starting to work on something, so it can be discussed.
-- Make yourself familiar with eventual repository-specific contribution requirements and code style requirements.
-- Because of the weird world of intellectual property, we need you to follow the [legal requirements](./legal-reqs.md) for contributing code.
-- Be excellent to each other, as outlined in our [Contributor Code of Conduct](./code-of-conduct.md).
+* If no issue for your case is present, open one first before starting to work on something, so it can be discussed.
+* Make yourself familiar with eventual repository-specific contribution requirements and code style requirements.
+* Because of the weird world of intellectual property, we need you to follow the [legal requirements](legal-reqs.md) for contributing code.
+* Be excellent to each other, as outlined in our [Contributor Code of Conduct](code-of-conduct.md).
 
-### Workflow
+#### Workflow
 
 A typical code contribution in any Ocean Protocol repository would go as follows:
 
@@ -47,37 +49,30 @@ Depending on the release management of each repository, your contribution will b
 
 Except for GitHub, you can find most Ocean Protocol core developers in [Discord](https://discord.gg/TnXjkR5) if you have further development questions.
 
-## Develop an app or integration on top of Ocean Protocol
+### Develop an app or integration on top of Ocean Protocol
 
 Create an app with one of Ocean Protocol's interface points:
 
-<repo name="react"></repo>
-<repo name="ocean.js"></repo>
-<repo name="ocean.py"></repo>
-<repo name="contracts"></repo>
-
 Ocean documentation will help. And... you're here:)
 
-## Improve these docs
+### Improve these docs
 
 These docs can always be improved. Every content page has an edit link at its end linking you to the content source on GitHub for simple copy editing.
 
 If you found a technical bug or have an improvement suggestion, head over to the repo's _Issues_ section:
 
-<repo name="docs"></repo>
-
-## Apply for a developer job
+### Apply for a developer job
 
 Really love building on Ocean and want to dive deeper? Consider joining us full time. Our openings are listed at https://github.com/oceanprotocol/devjobs.
 
-## Get Funding
+### Get Funding
 
 Funding can be for contributing to the core software, building apps, doing integrations, fixing bugs, community outreach, and more. Checkout our active funding programs for more information:
 
-- **[Ocean DAO](https://www.oceanprotocol.com/fund)** (grants curated by the community).
-- **[Shipyard](https://oceanprotocol.com/shipyard)** (Ocean curated grants).
-- **[Data Bounties](https://oceanprotocol.com/bounties)** (rewards for publishing algorithms and datasets).
+* [**Ocean DAO**](https://www.oceanprotocol.com/fund) (grants curated by the community).
+* [**Shipyard**](https://oceanprotocol.com/shipyard) (Ocean curated grants).
+* [**Data Bounties**](https://oceanprotocol.com/bounties) (rewards for publishing algorithms and datasets).
 
-## Other ways to get involved
+### Other ways to get involved
 
 Please go to the [Ocean Community Page](https://www.oceanprotocol.com/community) for more ideas on how to get involved.
