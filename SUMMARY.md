@@ -37,7 +37,6 @@
   - [Data Farming 101](rewards/df-intro.md)
   - [Data Farming Background](rewards/df-background.md)
   - [Emissions & APYs](rewards/emissions-apys.md)
-  - [Delegation](rewards/delegation.md)
   - [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
 
 - [👨‍💻 Developers](developers/README.md)
