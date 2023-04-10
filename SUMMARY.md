@@ -1,13 +1,13 @@
 # Table of contents
 
-- [Discover](README.md)
+- [🌊 Discover](README.md)
   - [Wallet Basics](discover/wallets.md)
   - [Set Up MetaMask Wallet](discover/metamask-setup.md)
   - [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
   - [Networks](discover/networks.md)
   - [Bridges](discover/bridges.md)
   - [FAQ](discover/faq.md)
-- [Tutorials](tutorials/README.m)
+- [📚 Tutorials](tutorials/README.m)
 
   - [Using Ocean Market](tutorials/using-ocean-market/README.md)
     - [Publish a Data Asset](tutorials/using-ocean-market/marketplace-publish-data-asset.md)
@@ -31,7 +31,16 @@
     - [Mint Datatokens](tutorials/using-ocean-libraries/mint-datatoken.md)
     - [Update Metadata](tutorials/using-ocean-libraries/update-metadata.md)
 
-- [Developers](developers/README.md)
+- [💰 Rewards](rewards/README.md)
+
+  - [veOCEAN](rewards/veocean.md)
+  - [Data Farming 101](rewards/df-intro.md)
+  - [Data Farming Background](rewards/df-background.md)
+  - [Emissions & APYs](rewards/emissions-apys.md)
+  - [Delegation](rewards/delegation.md)
+  - [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
+
+- [👨‍💻 Developers](developers/README.md)
 
   - [Core concepts](developers/core-concepts/README.md)
 
@@ -49,7 +58,7 @@
   - [Aquarius REST API](developers/api-references/aquarius-rest-api.md)
   - [Provider REST API](developers/api-references/provider-rest-api.md)
 
-- [Infrastructure](infrastructure/deploying-components/README.md)
+- [🔨 Infrastructure](infrastructure/deploying-components/README.md)
 
   - [Setup a Server](infrastructure/setup-server.md)
   - [Deploying Marketplace](infrastructure/deploying-marketplace.md)
@@ -59,16 +68,7 @@
   - [C2D - Minikube Environment](infrastructure/compute-to-data-minikube.md)
   - [C2D - Private Docker Registry](infrastructure/compute-to-data-docker-registry.md)
 
-- [Rewards](rewards/README.md)
-
-  - [veOCEAN](rewards/veocean.md)
-  - [Data Farming 101](rewards/df-intro.md)
-  - [Data Farming Background](rewards/df-background.md)
-  - [Emissions & APYs](rewards/emissions-apys.md)
-  - [Delegation](rewards/delegation.md)
-  - [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
-
-- [Contribute](contribute/contributing.md)
+- [🤝 Contribute](contribute/contributing.md)
   - [Partners & Collaborators](contribute/projects-using-ocean.md)
   - [Contributor Code of Conduct](contribute/code-of-conduct.md)
   - [Legal Requirements](contribute/legal-reqs.md)
