@@ -8,24 +8,24 @@ title: Bridges
 
 BSC provides several bridge options, including:
 
-* withdraw crypto from Binance.com, and
-* use Binance bridge.
+- withdraw crypto from Binance.com, and
+- use Binance bridge.
 
 The article [How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc) by Binance Academy provides further details.
 
 ### Links
 
-* [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
-* [BSC Bridge](https://www.bnbchain.org/en/bridge)
-* [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
+- [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
+- [BSC Bridge](https://www.bnbchain.org/en/bridge)
+- [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
 
 # Polygon (ex Matic) Bridge
 
 ### Links
 
-* [Matic Wallet](https://wallet.polygon.technology/)
-* [Matic Bridge](https://wallet.polygon.technology/bridge/)
-* [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
+- [Matic Wallet](https://wallet.polygon.technology/)
+- [Matic Bridge](https://wallet.polygon.technology/bridge/)
+- [How to set up a custom network in MetaMask](../../orientation/metamask-setup.md#set-up-custom-network)
 
 ### Intro to Polygon's Bridge
 
@@ -33,7 +33,7 @@ The Polygon Network (ex Matic) provide us with a bridge (connecting Ethereum & P
 
 When you open the wallet link, the wallet will ask to log in. Select your preferred way of connecting and confirm the action. In our guide we'll use Metamask.
 
-![Login options](../../.gitbook/assets/wallet/login-options.png)
+![Login options](../.gitbook/assets/wallet/login-options.png)
 
 In some places, the Polygon Network is still using its old brand Matic. Either you run into Matic or Polygon - it's the exact same thing. For the purpose of this guide, we'll use Matic in the next few paragraphs since the interfaces you're going to use still use the old brand.
 
@@ -43,15 +43,15 @@ For details check the [blog post](https://blog.oceanprotocol.com/ocean-on-polygo
 
 On the main page of the wallet, you can see all tokens you own on the Matic Mainnet. To deposit tokens (transfer them from the Ethereum Mainnet) you can either use the “deposit” button for a selected token or use “Move funds to Matic Mainnet”.
 
-![Main wallet page](../../.gitbook/assets/wallet/main-wallet-page.png)
+![Main wallet page](../.gitbook/assets/wallet/main-wallet-page.png)
 
 Both options will redirect you to the bridge interface. In case you chose the second one, use the dropdown and select the token you want to transfer from the Ethereum Mainnet.
 
-![Bridge interface](../../.gitbook/assets/wallet/matic-bridge.png)
+![Bridge interface](../.gitbook/assets/wallet/matic-bridge.png)
 
 Choose the amount to transfer and click the “Transfer” button. Matic’s bridge interface will guide you through the whole process and the different steps that will occur. You’ll need to sign two transactions on the Ethereum Mainnet. The first being the approval for your token to be traded on the Matic’s bridge and the second one being the deposit.
 
-![Transferring process](../../.gitbook/assets/wallet/transferring-process.png)
+![Transferring process](../.gitbook/assets/wallet/transferring-process.png)
 
 ### Withdraw Tokens
 
@@ -65,12 +65,12 @@ For more in dept explanation of the deposit and withdraw actions check [the offi
 
 While in the first two cases, the transactions are signed on the Ethereum Mainnet, transferring tokens between two Matic addresses happens on the Matic Mainnet. Thus it’s required for you to connect to the Matic network to sign the transactions. You can use the following parameters to set the network in Metamask:
 
-| What               | Value                                    |
-| ------------------ | ---------------------------------------- |
-| Network Name       | `Matic Mainnet`                          |
-| RPC                | `https://polygon-rpc.com/` |
-| Chain Id           | `137`                                    |
-| Currency Symbol    | `MATIC`                                  |
-| Block Explorer URL | `https://explorer.matic.network/`        |
+| What               | Value                             |
+| ------------------ | --------------------------------- |
+| Network Name       | `Matic Mainnet`                   |
+| RPC                | `https://polygon-rpc.com/`        |
+| Chain Id           | `137`                             |
+| Currency Symbol    | `MATIC`                           |
+| Block Explorer URL | `https://explorer.matic.network/` |
 
 Follow our guide to learn how to use those values to [set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network).

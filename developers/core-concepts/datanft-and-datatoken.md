@@ -62,7 +62,7 @@ Ocean provides convenient methods to list ERC20 datatokens for sale, with fixed-
 
 ### High-Level Behavior
 
-![High-Level Flow](../.gitbook/assets/architecture/use-case.png)
+![High-Level Flow](../../.gitbook/assets/architecture/use-case.png)
 
 Here's an example.
 
