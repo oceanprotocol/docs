@@ -14,10 +14,10 @@ Ocean uses Data NFTs (ERC721) and datatokens (ERC20) as the interface to connect
 
 The following guides are a greate place to start if you are new to Ocean:
 
-* [Architecture Overview](core-concepts/architecture.md)
-* [Data NFTs and Datatokens](core-concepts/datanft-and-datatoken.md)
-* [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
-* [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
+- [Architecture Overview](developers/core-concepts/architecture.md)
+- [Data NFTs and Datatokens](developers/core-concepts/datanft-and-datatoken.md)
+- [Publish a data asset](tutorials/using-ocean-market/marketplace-publish-data-asset.md)
+- [Download a data asset](tutorials/using-ocean-market/marketplace-download-data-asset.md)
 
 ## What is our Mission?
 
@@ -41,21 +41,21 @@ As a data scientist or AI practitioner, you can benefit from access to more data
 
 The following guides will help you get started with buying and selling data:
 
-* [Publish a data asset](using-ocean-market/marketplace-publish-data-asset.md)
-* [Download a data asset](using-ocean-market/marketplace-download-data-asset.md)
-* [Publishing with hosting services](using-ocean-market/asset-hosting.md)
+- [Publish a data asset](tutorials/using-ocean-market/marketplace-publish-data-asset.md)
+- [Download a data asset](tutorials/using-ocean-market/marketplace-download-data-asset.md)
+- [Publishing with hosting services](tutorials/using-ocean-market/asset-hosting.md)
 
 ### Build Your Own Data Market
 
 Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://v4.market.oceanprotocol.com/) code or building up with Ocean components.
 
-![Ocean Market Homepage](.gitbook/assets/ocean-market-homepage.png)
+![Ocean Market Homepage](.gitbook/assets/market/ocean-market-homepage.png)
 
 If you're interested in starting your own marketplace checkout the following guides:
 
-* [Forking Ocean Market](building-with-ocean/build-a-marketplace/forking-ocean-market.md)
-* [Customising your market](building-with-ocean/build-a-marketplace/customising-your-market.md)
-* [Deploying your market](building-with-ocean/build-a-marketplace/deploying-market.md)
+- [Forking Ocean Market](tutorials/build-a-marketplace/forking-ocean-market.md)
+- [Customising your market](tutorials/build-a-marketplace/customising-your-market.md)
+- [Deploying your market](tutorials/build-a-marketplace/deploying-market.md)
 
 ### Manage datatokens and data NFTs for use in DeFi
 
@@ -73,9 +73,9 @@ To access the dataset, you send 1.0 datatokens to the data provider (running Oce
 
 Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosystem to leverage.
 
-* _Publish and access data services:_ downloadable files or compute-to-data. Use Ocean to deploy a new [ERC721](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md) and [ERC20](https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md) datatoken contract for each data service, then mint datatokens.
-* _Transfer datatokens_ to another owner (or approve & transferFrom).
-* _And more._ Use ERC20 support in [web3.js](https://web3js.readthedocs.io/), [web3.py](https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract) and Solidity to connect datatokens with crypto wallets and other DeFi services.
+- _Publish and access data services:_ downloadable files or compute-to-data. Use Ocean to deploy a new [ERC721](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md) and [ERC20](https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md) datatoken contract for each data service, then mint datatokens.
+- _Transfer datatokens_ to another owner (or approve & transferFrom).
+- _And more._ Use ERC20 support in [web3.js](https://web3js.readthedocs.io/), [web3.py](https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract) and Solidity to connect datatokens with crypto wallets and other DeFi services.
 
 ### Compute-to-Data
 
@@ -93,11 +93,11 @@ Private data can help research, leading to life-altering innovations in science 
 
 Checkout these guides if you are aiming to get a deeper understanding on how compute-to-data works:
 
-* [Architecture](building-with-ocean/compute-to-data/compute-to-data-architecture.md)
-* [Datasets & Algorithms](building-with-ocean/compute-to-data/compute-to-data-datasets-algorithms.md)
-* [Minikube Environment](building-with-ocean/compute-to-data/compute-to-data-minikube.md)
-* [Writing Algorithms](building-with-ocean/compute-to-data/compute-to-data-algorithms.md)
-* [Private docker registry](building-with-ocean/compute-to-data/compute-to-data-docker-registry.md)
+- [Architecture](developers/core-concepts/compute-to-data-architecture.md)
+- [Datasets & Algorithms](developers/core-concepts/compute-to-data-datasets-algorithms.md)
+- [Minikube Environment](infrastructure/compute-to-data-minikube.md)
+- [Writing Algorithms](developers/core-concepts/compute-to-data-algorithms.md)
+- [Private docker registry](infrastructure/compute-to-data-docker-registry.md)
 
 ## How does it work?
 
@@ -107,23 +107,23 @@ Ocean Protocol provides tools for developers to _build data markets_, and to _ma
 
 If you are new to web3 and blockchain technologies then we suggest you first read these introductory guides:
 
-* [Wallet Basics](building-with-ocean/wallets.md)
-* [Set Up MetaMask Wallet](orientation/metamask-setup.md)
-* [Manage Your OCEAN Tokens](building-with-ocean/wallets-and-ocean-tokens.md)
+- [Wallet Basics](discover/wallets.md)
+- [Set Up MetaMask Wallet](discover/metamask-setup.md)
+- [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
 
 If ou are looking to get to grips with the inner workings of Ocean, then you'll be interested in the following guides:
 
-* [Architecture Overview](core-concepts/architecture.md)
-* [Data NFTs and Datatokens](core-concepts/datanft-and-datatoken.md)
-* [Networks](core-concepts/networks.md)
-* [Fees](core-concepts/fees.md)
-* [Asset pricing](core-concepts/asset-pricing.md)
-* [DID & DDO](core-concepts/did-ddo.md)
-* [Roles](core-concepts/roles.md)
-* [Set Up a Marketplace](building-with-ocean/marketplace.md)
-* [Compute-to-Data](building-with-ocean/compute-to-data/)
-* [Deploying components](building-with-ocean/deploying-components/)
-* [Contributing](core-concepts/contributing.md)
+- [Architecture Overview](developers/core-concepts/architecture.md)
+- [Data NFTs and Datatokens](developers/core-concepts/datanft-and-datatoken.md)
+- [Networks](discover/networks.md)
+- [Fees](developers/core-concepts/fees.md)
+- [Asset pricing](developers/core-concepts/asset-pricing.md)
+- [DID & DDO](developers/core-concepts/did-ddo.md)
+- [Roles](developers/core-concepts/roles.md)
+- [Set Up a Marketplace](tutorials/build-a-marketplace/marketplace.md)
+- [Compute-to-Data](developers/core-concepts/compute-to-data)
+- [Deploying components](infrastructure/README.md)
+- [Contributing](contribute/contributing.md)
 
 ## Supporters
 

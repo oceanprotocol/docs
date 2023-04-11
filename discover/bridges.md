@@ -19,7 +19,7 @@ The article [How to Get Started with BSC](https://academy.binance.com/en/article
 
 - [BSC Wallet Support](https://docs.binance.org/wallets/bsc-wallets.html). Includes MetaMask and Trust Wallet.
 - [BSC Bridge](https://www.bnbchain.org/en/bridge)
-- [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
+- [How to set up a custom network in MetaMask](../discover/metamask-setup.md#set-up-custom-network)
 
 ## Polygon (ex Matic) Bridge
 
@@ -27,7 +27,7 @@ The article [How to Get Started with BSC](https://academy.binance.com/en/article
 
 - [Matic Wallet](https://wallet.polygon.technology/)
 - [Matic Bridge](https://wallet.polygon.technology/bridge/)
-- [How to set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network)
+- [How to set up a custom network in MetaMask](../discover/metamask-setup.md#set-up-custom-network)
 
 #### Intro to Polygon's Bridge
 
@@ -75,4 +75,4 @@ While in the first two cases, the transactions are signed on the Ethereum Mainne
 | Currency Symbol    | `MATIC`                           |
 | Block Explorer URL | `https://explorer.matic.network/` |
 
-Follow our guide to learn how to use those values to [set up a custom network in MetaMask](../orientation/metamask-setup.md#set-up-custom-network).
+Follow our guide to learn how to use those values to [set up a custom network in MetaMask](../discover/metamask-setup.md#set-up-custom-network).

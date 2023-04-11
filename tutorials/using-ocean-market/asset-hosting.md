@@ -13,7 +13,7 @@ To publish on the Ocean Marketplace, publishers must first host their assets. It
 
 On Ocean Marketplace, a publisher must provide the asset information during the publish step in the field shown in the below image. The information is a `link` for a classic URL, a `transaction ID` for a file stored on Arweave or a `CID` for an IPFS file.
 
-![Publish - File URL field](../.gitbook/assets/market/marketplace-publish-file-field.png)
+![Publish - File URL field](../../.gitbook/assets/market/marketplace-publish-file-field.png)
 
 Publishers can choose any hosting service of their choice. The below section explains how to use commonly used hosting services with Ocean Marketplace.
 
@@ -37,13 +37,13 @@ If at any point you need more AR tokens, you can fund your wallet from one of Ar
 
 Open [arweave.app](https://arweave.app/) in a browser. Select the '+' icon in the bottom left corner of the screen. Import the JSON key file from step 1.
 
-![Arweave.app import key file](../.gitbook/assets/hosting/arweave-1.png)
+![Arweave.app import key file](../../.gitbook/assets/hosting/arweave-1.png)
 
 **Step 3 - Upload file**
 
 Select the newly imported wallet by clicking the "blockies" style icon in the top left corner of the screen. Select **Send.** Click the **Data** field and select the file you wish to upload.
 
-![Arweave.app upload file](../.gitbook/assets/hosting/arweave-2.png)
+![Arweave.app upload file](../../.gitbook/assets/hosting/arweave-2.png)
 
 The fee in AR tokens will be calculated based on the size of the file and displayed near the bottom middle part of the screen. Select **Submit** to submit the transaction.
 
@@ -53,11 +53,11 @@ After submitting the transaction, select **Transactions** and wait until the tra
 
 Once the transaction finalizes, select it, and copy the transaction ID.
 
-![Arweave.app transaction ID](../.gitbook/assets/hosting/arweave-3.png)
+![Arweave.app transaction ID](../../.gitbook/assets/hosting/arweave-3.png)
 
 **Step 5 - Publish the asset with the transaction ID**
 
-![Ocean Market - Publish with arweave transaction ID](../.gitbook/assets/hosting/arweave-4.png)
+![Ocean Market - Publish with arweave transaction ID](../../.gitbook/assets/hosting/arweave-4.png)
 
 ### Centralized hosting
 
@@ -75,31 +75,31 @@ Create an account on [AWS](https://aws.amazon.com/s3/). Users might also be aske
 
 Go to the AWS portal for S3: https://aws.amazon.com/s3/ and select from the upper right corner `Create an AWS account` as shown below.
 
-![Create an account - 1](../.gitbook/assets/hosting/aws-1.png)
+![Create an account - 1](../../.gitbook/assets/hosting/aws-1.png)
 
 **Fill in the details**
 
-![Create an account - 2](../.gitbook/assets/hosting/aws-2.png))
+![Create an account - 2](../../.gitbook/assets/hosting/aws-2.png))
 
 **Create a bucket**
 
 After logging into the new account, search for the available services and select `S3` type of storage.
 
-![Create an account - 3](../.gitbook/assets/hosting/aws-3.png)
+![Create an account - 3](../../.gitbook/assets/hosting/aws-3.png)
 
 To create an S3 bucket, choose `Create bucket`.
 
-![Create an account - 4](../.gitbook/assets/hosting/aws-4.png)
+![Create an account - 4](../../.gitbook/assets/hosting/aws-4.png)
 
 Fill in the form with the necessary information. Then, the bucket is up & running.
 
-![Create an account - 5](../.gitbook/assets/hosting/aws-5.png)
+![Create an account - 5](../../.gitbook/assets/hosting/aws-5.png)
 
 **Step 2 - Upload asset on S3 bucket**
 
 Now, the asset can be uploaded by selecting the bucket name and choosing `Upload` in the `Objects` tab.
 
-![Upload asset on S3 bucket - 1](../.gitbook/assets/hosting/aws-6.png)
+![Upload asset on S3 bucket - 1](../../.gitbook/assets/hosting/aws-6.png)
 
 **Add files to the bucket**
 
@@ -107,13 +107,13 @@ Get the files and add them to the bucket.
 
 The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
 
-![Upload asset on S3 bucket - 3](../.gitbook/assets/hosting/aws-7.png)
+![Upload asset on S3 bucket - 3](../../.gitbook/assets/hosting/aws-7.png)
 
 The permissions and properties can be set afterward, for the moment keep them as default.
 
 After selecting `Upload`, make sure that the status is `Succeeded`.
 
-![Upload asset on S3 bucket - 4](../.gitbook/assets/hosting/aws-8.png)
+![Upload asset on S3 bucket - 4](../../.gitbook/assets/hosting/aws-8.png)
 
 **Step 3 - Access the Object URL on S3 Bucket**
 
@@ -125,7 +125,7 @@ Go to the `Permissions` tab and select `Edit` and then uncheck `Block all public
 
 If editing the permissions is unavailable, modify the `Object Ownership` by enabling the ACLs as shown below.
 
-![Access the Object URL on S3 Bucket - 1](../.gitbook/assets/hosting/aws-9.png)
+![Access the Object URL on S3 Bucket - 1](../../.gitbook/assets/hosting/aws-9.png)
 
 **Modifying bucket policy**
 
@@ -150,13 +150,13 @@ Note that the `<BUCKET-NAME>` must be chosen from the personal buckets dashboard
 
 After saving the changes, the bucket should appear as `Public` access.
 
-![Access the Object URL on S3 Bucket - 2](../.gitbook/assets/hosting/aws-10.png)
+![Access the Object URL on S3 Bucket - 2](../../.gitbook/assets/hosting/aws-10.png)
 
 **Verify the object URL on public access**
 
 Select the file from the bucket that needs verification and select `Open`. Now download the file on your system.
 
-![Access the Object URL on S3 Bucket - 3](../.gitbook/assets/hosting/aws-11.png)
+![Access the Object URL on S3 Bucket - 3](../../.gitbook/assets/hosting/aws-11.png)
 
 **Step 4 - Get the S3 Bucket Link & Publish Asset on Market**
 
@@ -166,7 +166,7 @@ Go to [Ocean Market](https://market.oceanprotocol.com/publish/1) to complete the
 
 Copy the `Object URL` that can be found at `Object Overview` from the AWS S3 bucket and paste it into the `File` field from the form found at [step 2](https://market.oceanprotocol.com/publish/2) as it is illustrated below.
 
-![Get the S3 Bucket Link & Publish Asset on Market - 1](../.gitbook/assets/hosting/aws-12.png)
+![Get the S3 Bucket Link & Publish Asset on Market - 1](../../.gitbook/assets/hosting/aws-12.png)
 
 #### Azure storage
 
@@ -222,4 +222,4 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 Now, copy and paste the link into the Publish page in the Ocean Marketplace.
 
-![Publish the file as an asset](../.gitbook/assets/hosting/azure-10.png)
+![Publish the file as an asset](../../.gitbook/assets/hosting/azure-10.png)
