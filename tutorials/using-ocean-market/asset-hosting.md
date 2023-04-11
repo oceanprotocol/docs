@@ -105,7 +105,7 @@ Now, the asset can be uploaded by selecting the bucket name and choosing `Upload
 
 Get the files and add them to the bucket.
 
-The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin\_and\_gpr/branin.arff).
+The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
 
 ![Upload asset on S3 bucket - 3](../.gitbook/assets/hosting/aws-7.png)
 
@@ -186,11 +186,11 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Create a new storage account**
 
-![Create a storage account - 2](<../../.gitbook/assets/hosting/azure-2 (1).png>)
+![Create a storage account - 2](../../.gitbook/assets/hosting/azure-2.png)
 
 **Fill in the details**
 
-![Add details](<../../.gitbook/assets/hosting/azure-3 (1).png>)
+![Add details](../../.gitbook/assets/hosting/azure-3.png)
 
 **Storage account created**
 
@@ -202,17 +202,17 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 3 - Upload a file**
 
-![Upload a file](<../../.gitbook/assets/hosting/azure-6 (1).png>)
+![Upload a file](../../.gitbook/assets/hosting/azure-6.png)
 
 **Step 4 - Share the file**
 
 **Select the file to be published and click Generate SAS**
 
-![Click generate SAS](<../../.gitbook/assets/hosting/azure-7 (1).png>)
+![Click generate SAS](../../.gitbook/assets/hosting/azure-7.png)
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](<../../.gitbook/assets/hosting/azure-8 (1).png>)
+![Generate link to file](../../.gitbook/assets/hosting/azure-8.png)
 
 **Copy the generated link**
 
