@@ -1,12 +1,14 @@
 # Table of contents
 
 - [🌊 Discover](README.md)
+
   - [Wallet Basics](discover/wallets.md)
   - [Set Up MetaMask Wallet](discover/metamask-setup.md)
   - [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
   - [Networks](discover/networks.md)
   - [Bridges](discover/bridges.md)
   - [FAQ](discover/faq.md)
+
 - [📚 Tutorials](tutorials/README.md)
   - [Using Ocean Market](tutorials/using-ocean-market/README.md)
     - [Publish a Data Asset](tutorials/using-ocean-market/marketplace-publish-data-asset.md)
