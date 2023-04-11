@@ -42,7 +42,7 @@ Rewards are calculated based on different factors, like your current veOCEAN bal
 
 **Active rewards** are distributed based on the amount of veOCEAN tokens allocated during the current round. If you allocate veOCEAN tokens before the end of DF Round 1, you will receive active rewards for that round.
 
-You can learn more about these details in places like [the Reward Function](df-background#reward-function) and by learning more about veCRV in the next section.
+You can learn more about these details in the [Reward Function section](df-background#reward-function) and in the next section.
 
 ### When to do a first claim?
 
