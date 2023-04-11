@@ -36,7 +36,7 @@ Data assets for DF may published in any [network where Ocean’s deployed in pro
 
 There are fresh rewards available every Thursday at midnight GMT. If you wish, you can wait for many weeks to accumulate before claiming. (It’s all on-chain.)
 
-Rewards are calculated based on different factors, like your carrying veOCEAN balance and your Data Farming allocation.
+Rewards are calculated based on different factors, like your current veOCEAN balance and your Data Farming allocation.
 
 **Passive rewards** are distributed based on the amount of veOCEAN tokens held at the end of the previous round. If you lock your tokens during DF Round 1, you will only receive your passive rewards at the end of DF Round 2.
 
