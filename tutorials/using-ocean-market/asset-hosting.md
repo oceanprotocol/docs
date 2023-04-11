@@ -105,7 +105,7 @@ Now, the asset can be uploaded by selecting the bucket name and choosing `Upload
 
 Get the files and add them to the bucket.
 
-The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
+The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin\_and\_gpr/branin.arff).
 
 ![Upload asset on S3 bucket - 3](../../.gitbook/assets/hosting/aws-7.png)
 
@@ -182,7 +182,7 @@ Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might al
 
 Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
-![Create a storage account - 1](../../.gitbook/assets/hosting/azure-1.png)
+![Create a storage account - 1](<../../.gitbook/assets/hosting/azure-1 (1).png>)
 
 **Create a new storage account**
 
@@ -202,7 +202,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 3 - Upload a file**
 
-![Upload a file](../../.gitbook/assets/hosting/azure-6.png)
+![Upload a file](<../../.gitbook/assets/hosting/azure-6 (1).png>)
 
 **Step 4 - Share the file**
 
@@ -216,7 +216,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Copy the generated link**
 
-![Copy the link](../../.gitbook/assets/hosting/azure-9.png)
+![Copy the link](<../../.gitbook/assets/hosting/azure-9 (1).png>)
 
 **Step 5 - Publish the asset using the generated link**
 
