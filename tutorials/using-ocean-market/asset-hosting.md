@@ -105,7 +105,7 @@ Now, the asset can be uploaded by selecting the bucket name and choosing `Upload
 
 Get the files and add them to the bucket.
 
-The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
+The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin\_and\_gpr/branin.arff).
 
 ![Upload asset on S3 bucket - 3](../../.gitbook/assets/hosting/aws-7.png)
 
@@ -182,7 +182,7 @@ Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might al
 
 Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
-![Create a storage account - 1](../../.gitbook/assets/hosting/azure1.png)
+![Create a storage account - 1](<../../.gitbook/assets/hosting/azure1 (1).png>)
 
 **Create a new storage account**
 
@@ -190,7 +190,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Fill in the details**
 
-![Add details](../../.gitbook/assets/hosting/azure3.png)
+![Add details](<../../.gitbook/assets/hosting/azure3 (1).png>)
 
 **Storage account created**
 
@@ -198,7 +198,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 2 - Create a blob container**
 
-![Create a blob container](../../.gitbook/assets/hosting/azure5.png)
+![Create a blob container](<../../.gitbook/assets/hosting/azure5 (1).png>)
 
 **Step 3 - Upload a file**
 
@@ -208,7 +208,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Select the file to be published and click Generate SAS**
 
-![Click generate SAS](../../.gitbook/assets/hosting/azure7.png)
+![Click generate SAS](<../../.gitbook/assets/hosting/azure7 (1).png>)
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
