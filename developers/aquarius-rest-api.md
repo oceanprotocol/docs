@@ -1,5 +1,7 @@
 # Aquarius REST API
 
+The universal Aquarius Endpoint is [`https://v4.aquarius.oceanprotocol.com`](https://v4.aquarius.oceanprotocol.com).
+
 ## Assets
 
 ### **Get** `/api/aquarius/assets/ddo/<did>`

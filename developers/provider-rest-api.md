@@ -1,15 +1,15 @@
 # Provider REST API
 
+[https://v4.provider.oceanprotocol.com](https://v4.provider.oceanprotocol.com)
+
 ## Ocean Provider Endpoints Specification
 
 This document specifies the endpoints for Ocean Provider to be implemented by the core developers.
 
-If you want to see the provider URLs for our supported networks, kindly
-check for `Provider` component on
-this [page](https://docs.oceanprotocol.com/core-concepts/networks).
+If you want to see the provider URLs for our supported networks, kindly check for `Provider` component on this [page](https://docs.oceanprotocol.com/core-concepts/networks).
 
-For inspecting the errors received from `Provider` and their reasons, please revise this
-[document](https://github.com/oceanprotocol/provider/blob/main/ocean_provider/routes/README.md).
+For inspecting the errors received from `Provider` and their reasons, please revise this [document](https://github.com/oceanprotocol/provider/blob/main/ocean\_provider/routes/README.md).
+
 ### nonce endpoint
 
 #### GET /api/services/nonce
@@ -20,10 +20,7 @@ Parameters
     userAddress: String object containing a user's ethereum address
 ```
 
-Returns: Json object containing the last-used nonce value. 
-The nonce endpoint is just informative, use the current UTC timestamp as a nonce, 
-where required in other endpoints.
-
+Returns: Json object containing the last-used nonce value. The nonce endpoint is just informative, use the current UTC timestamp as a nonce, where required in other endpoints.
 
 Example:
 
@@ -111,16 +108,17 @@ Retrieves Content-Type and Content-Length from the given URL or asset.
 Parameters
 
 For published assets:
+
 ```
 {
     did: String, DID of the dataset
     serviceId: String, ID of the service
 }
 ```
+
 For file objects,see https://docs.oceanprotocol.com/core-concepts/did-ddo#files
 
-If checksum is requests, file size should be lower < MAX_CHECKSUM_LENGTH (see Provider ENVs)
-If file is larger, checksum WILL NOT be computed.
+If checksum is requests, file size should be lower < MAX\_CHECKSUM\_LENGTH (see Provider ENVs) If file is larger, checksum WILL NOT be computed.
 
 Returns: Json document file info object
 
@@ -246,7 +244,6 @@ Response:
   "": ""
 }
 ```
-
 
 ### Compute endpoints
 
@@ -559,13 +556,9 @@ Response:
 
 ### Authentication endpoints
 
-Provider offers an alternative to signing each request, by allowing users to generate auth tokens.
-The generated auth token can be used until its expiration in all supported requests.
-Simply omit the signature parameter and add the AuthToken request header based on a created token.
+Provider offers an alternative to signing each request, by allowing users to generate auth tokens. The generated auth token can be used until its expiration in all supported requests. Simply omit the signature parameter and add the AuthToken request header based on a created token.
 
-Please note that if a signature parameter exists, it will take precedence over the AuthToken headers.
-All routes that support a signature parameter support the replacement, with the exception of auth-related ones
-(createAuthToken and deleteAuthToken need to be signed).
+Please note that if a signature parameter exists, it will take precedence over the AuthToken headers. All routes that support a signature parameter support the replacement, with the exception of auth-related ones (createAuthToken and deleteAuthToken need to be signed).
 
 #### GET /api/services/createAuthToken
 
@@ -582,14 +575,14 @@ signature: String object containg user signature (signed message)
 expiration: valid future UTC timestamp (required)
 ```
 
-Returns:
-Created auth token.
+Returns: Created auth token.
 
 Example:
 
 ```
 GET /api/services/createAuthToken?address=<your_address>&&nonce=<your_nonce>&&expiration=<expiration>&signature=<your_signature>
 ```
+
 Inside the angular brackets, the user should provide the valid values for the request.
 
 Response:
@@ -597,7 +590,6 @@ Response:
 ```
 {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjAwNTMxMjksImFkZHJlc3MiOiIweEE3OGRlYjJGYTc5NDYzOTQ1QzI0Nzk5MTA3NUUyYTBlOThCYTdBMDkifQ.QaRqYeSYxZpnFayzPmUkj8TORHHJ_vRY-GL88ZBFM0o"}
 ```
-
 
 #### DELETE /api/services/deleteAuthToken
 
@@ -614,15 +606,14 @@ signature: String object containg user signature (signed message)
 token: token to be expired
 ```
 
-Returns:
-Success message if token is successfully deleted.
-If the token is not found or already expired, returns an error message.
+Returns: Success message if token is successfully deleted. If the token is not found or already expired, returns an error message.
 
 Example:
 
 ```
 DELETE /api/services/deleteAuthToken?address=<your_address>&&nonce=<your_nonce>&&token=<your_token>&signature=<your_signature>
 ```
+
 Inside the angular brackets, the user should provide the valid values for the request.
 
 Response:
@@ -630,4 +621,3 @@ Response:
 ```
 {"success": "Token has been deactivated."}
 ```
-

@@ -1,83 +1,46 @@
 ---
 title: Supported Networks
-description: >-
-  All the public networks the Ocean Protocol contracts are deployed to, and
-  additional core components deployed to them.
+description: All the public networks the Ocean Protocol contracts are deployed to.
+cover: ../.gitbook/assets/landing/rewards.png
+coverY: 0
 ---
 
 # Networks
 
 Ocean Protocol contracts are deployed on multiple public networks. You can always find the most up-to-date deployment addresses for all individual contracts in the [address.json](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json).
 
-In each network, you’ll need ETH to pay for gas, and OCEAN for certain Ocean actions. Because the Ethereum mainnet is a network for production settings, ETH and OCEAN tokens have real value on there. The ETH and OCEAN tokens in each test network don’t have real value and are used for testing-purposes only. They can be obtained with _faucets_ to dole out ETH and OCEAN.
-
-The universal Aquarius Endpoint is [`https://v4.aquarius.oceanprotocol.com`](https://v4.aquarius.oceanprotocol.com).
+In each network, whether it's the Ethereum mainnet, a testnet, or the Polygon/Matic network, you'll need ETH or Matic to pay for gas and OCEAN for certain actions on the Ocean Protocol network. The Ethereum mainnet and the Polygon network are both live networks and the tokens on these networks have real value. However, the tokens on the test networks are not of real value and are only used for testing purposes. You can obtain testnet ETH and OCEAN tokens from faucets, which are services that provide small amounts of tokens for free.
 
 ### Ethereum Mainnet
 
-Ethereum mainnet is a production network. In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Ethereum mainnet_.
+The Ethereum mainnet is a production network, which means that it is a live and operational network that handles real transactions and has actual economic value. To connect to the Ethereum mainnet using a wallet such as MetaMask, you can click on the network name dropdown and select Ethereum mainnet from the list of available networks.
 
-**Tokens**
-
-* Mainnet ETH:
-  * Native token to pay transaction fees
-* Mainnet OCEAN:
-  * Address: [0x967da4048cD07aB37855c090aAF366e4ce1b9F48](https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48)
-
-**Additional Components**
-
-| What         | URL                                                                               |
-| ------------ | --------------------------------------------------------------------------------- |
-| Explorer     | https://etherscan.io                                                              |
-| Ocean Market | Point wallet to Ethereum Mainnet network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.mainnet.oceanprotocol.com`                                   |
-| Subgraph     | `https://v4.subgraph.mainnet.oceanprotocol.com`                                   |
+| Gas Token   | Mainnet ETH (Native token)                                                                                           |
+| ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| OCEAN Token |  [0x967da4048cD07aB37855c090aAF366e4ce1b9F48](https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48) |
+| Explorer    | [https://etherscan.io](https://etherscan.io)                                                                         |
 
 ### Polygon Mainnet
 
-Ocean is deployed to Polygon Mainnet, another production network. Polygon’s native token is MATIC. If you don’t find Polygon as a predefined network in your wallet, you can connect to it manually via Polygon's guide [here](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/#add-the-polygon-network-manually).
+Ocean Protocol is also deployed to Polygon Mainnet, which is another production network. The native token of Polygon Mainnet is MATIC. If you cannot find Polygon Mainnet as a predefined network in your wallet, you can manually connect to it by following Polygon's [guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/#add-the-polygon-network-manually), which provides step-by-step instructions for connecting to Polygon Mainnet.
 
-**Tokens**
-
-* Matic:
-  * Native token to pay transaction fees
-* Matic OCEAN:
-  * Address: [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1)
-
-**Additional Components**
-
-| What         | URL                                                                              |
-| ------------ | -------------------------------------------------------------------------------- |
-| Explorer     | https://polygonscan.com                                                          |
-| Ocean Market | Point wallet to Ploygon Mainnet network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.polygon.oceanprotocol.com/`                                 |
-| Subgraph     | `https://v4.subgraph.polygon.oceanprotocol.com/`                                 |
+| Gas Token | Matic(Native token)                                                                                                    |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| OCEAN     | [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1) |
+| Explorer  | [https://polygonscan.com](https://polygonscan.com)                                                                     |
 
 **Bridge**
 
-Check our Polygon Bridge [guide](../core-concepts/networks/bridges.md#polygon-ex-matic-bridge) to learn how you can deposit, withdraw and send tokens.
+Check our Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
 
 ### Binance Smart Chain
 
-Ocean is deployed to Binance Smart Chain (BSC), another production network. BSC’s native token is BNB - the Binance token.
+Ocean Protocol is also deployed to Binance Smart Chain (BSC), which is another production network. The native token of the Binance Smart Chain is BNB, which is the token of the Binance exchange. If Binance Smart Chain is not listed as a predefined network in your wallet, you can manually connect to it by following Binance's [guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain), which provides detailed instructions on how to connect to Binance Smart Chain.
 
-If you don’t find BSC as a predefined network in your wallet, you can connect to it manually via Binance’s guide [here](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain).
-
-**Tokens**
-
-* BSC BNB:
-  * Native token to pay transaction fees.
-* BSC OCEAN:
-  * Address: [0xdce07662ca8ebc241316a15b611c89711414dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a)
-
-**Additional Components**
-
-| What         | URL                                                                                  |
-| ------------ | ------------------------------------------------------------------------------------ |
-| Explorer     | https://bscscan.com/                                                                 |
-| Ocean Market | Point wallet to Binance Smart Chain network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.bsc.oceanprotocol.com`                                          |
-| Subgraph     | `https://v4.subgraph.bsc.oceanprotocol.com`                                          |
+| Gas Token | BSC BNB(Native token)                                                                                              |
+| --------- | ------------------------------------------------------------------------------------------------------------------ |
+| OCEAN     | [0xdce07662ca8ebc241316a15b611c89711414dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a) |
+| Explorer  | [https://bscscan.com/](https://bscscan.com/)                                                                       |
 
 **Bridge**
 
@@ -85,104 +48,53 @@ Check our BSC Bridge [guide](../core-concepts/networks/bridges.md#binance-smart-
 
 ### Energy Web Chain
 
-Ocean is deployed to [Energy Web Chain](https://energy-web-foundation.gitbook.io/energy-web/technology/the-stack/trust-layer-energy-web-chain), another production network. Energy Web’s native token is EWT.
+Ocean Protocol is also deployed to [Energy Web Chain](https://energy-web-foundation.gitbook.io/energy-web/technology/trust-layer-energy-web-chain), which is another production network. The native token of the Energy Web Chain is EWT. If you cannot find Energy Web Chain as a predefined network in your wallet, you can manually connect to it by following this [guide](https://energy-web-foundation.gitbook.io/energy-web/how-tos-and-tutorials/connect-to-energy-web-chain-main-network-with-metamash).
 
-If you don’t find Energy Web Chain as a predefined network in your wallet, you can connect to it using the guide [here](https://energy-web-foundation.gitbook.io/energy-web/how-tos-and-tutorials/connect-to-energy-web-chain-main-network-with-metamash).
-
-**Tokens**
-
-* Energy Web Chain EWT:
-  * Native token to pay transaction fees.
-* Energy Web Chain OCEAN:
-  * Address: [0x593122aae80a6fc3183b2ac0c4ab3336debee528](https://explorer.energyweb.org/token/0x593122aae80a6fc3183b2ac0c4ab3336debee528)
-
-**Additional Components**
-
-| What         | URL                                                                               |
-| ------------ | --------------------------------------------------------------------------------- |
-| Explorer     | https://explorer.energyweb.org/                                                   |
-| Ocean Market | Point wallet to Energy Web Chain network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.energyweb.oceanprotocol.com/`                                |
-| Subgraph     | `https://v4.subgraph.energyweb.oceanprotocol.com`                                 |
+| Gas Token | Energy Web Chain EWT(Native token)                                                                                            |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| OCEAN     | [0x593122aae80a6fc3183b2ac0c4ab3336debee528](https://explorer.energyweb.org/token/0x593122aae80a6fc3183b2ac0c4ab3336debee528) |
+| Explorer  | [https://explorer.energyweb.org/](https://explorer.energyweb.org/)                                                            |
 
 **Bridge**
 
-Use the link [here](https://bridge.carbonswap.exchange) to bridge the assets between EWC and Ethereum mainnet.
+To bridge assets between Energy Web Chain and Ethereum mainnet, you can use [this](https://bridge.carbonswap.exchange/) bridge.
 
 ### Moonriver
 
-Ocean is deployed to [Moonriver](https://docs.moonbeam.network/builders/get-started/networks/moonriver/), another production network. Moonriver’s native token is MOVR.
+Ocean Protocol is also deployed to [Moonriver](https://docs.moonbeam.network/builders/get-started/networks/moonriver/), which is another production network. The native token of Moonriver is MOVR. If Moonriver is not listed as a predefined network in your wallet, you can manually connect to it by following this [guide](https://docs.moonbeam.network/builders/get-started/networks/moonriver/#connect-metamask).
 
-If you don’t find Moonriver as a predefined network in your wallet, you can connect to it using the guide [here](https://docs.moonbeam.network/builders/get-started/networks/moonriver/#connect-metamask).
-
-**Tokens**
-
-* Moonriver MOVR:
-  * Native token to pay transaction fees.
-* Moonriver OCEAN:
-  * Address: [0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE](https://blockscout.moonriver.moonbeam.network/token/0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE/token-transfers)
-
-**Additional Components**
-
-| What         | URL                                                                        |
-| ------------ | -------------------------------------------------------------------------- |
-| Explorer     | https://blockscout.moonriver.moonbeam.network                              |
-| Ocean Market | Point wallet to Moonriver network, at https://v4.market.oceanprotocol.com/ |
-| Provider     | `https://v4.provider.moonriver.oceanprotocol.com`                          |
-| Subgraph     | `https://v4.subgraph.moonriver.oceanprotocol.com`                          |
+| Gas Token | Moonriver MOVR(Native token)                                                                                                                                 |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| OCEAN     | [0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE](https://blockscout.moonriver.moonbeam.network/token/0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE/token-transfers) |
+| Explorer  | [https://blockscout.moonriver.moonbeam.network](https://blockscout.moonriver.moonbeam.network)                                                               |
 
 **Bridge**
 
-Use [Anyswap](https://anyswap.exchange/#/bridge) to bridge between ETH Mainnet and Moonriver.
+To bridge assets between Moonriver and Ethereum mainnet, you can use [this](https://anyswap.exchange/#/bridge) bridge.
 
 ### Görli
 
-Görli is a test network.
+Ocean Protocol is deployed on the Görli test network, which is used for testing and experimentation. Tokens on Görli do not hold real economic value, as it is a non-production network. To connect to Görli using a wallet like MetaMask, simply click on the network name dropdown and select _Goerli_ from the list of available networks.
 
-In MetaMask and other ERC20 wallets, click on the network name dropdown, then select _Goerli_.
-
-**Tokens**
-
-* Görli ETH:
-  * Native token to pay transaction fees
-  * [Faucet](https://goerlifaucet.com/). You may find others by [searching](https://www.google.com/search?q=goerli+ether+faucet%5C&oq=goerli+ether+faucet).
-* Goerli OCEAN:
-  * Address: [0xCfDdA22C9837aE76E0faA845354f33C62E03653a](https://goerli.etherscan.io/address/0xcfdda22c9837ae76e0faa845354f33c62e03653a)
-  * [Faucet](https://faucet.goerli.oceanprotocol.com)
-
-**Additional Components**
-
-| What         | URL                                                                  |
-| ------------ | -------------------------------------------------------------------- |
-| Explorer     | https://goerli.etherscan.io/                                         |
-| Ocean Market | Point wallet to Görli network, at https://market.oceanprotocol.com   |
-| Provider     | `https://v4.provider.goerli.oceanprotocol.com`                       |
-| Subgraph     | `https://v4.subgraph.goerli.oceanprotocol.com`                       |
+| Gas Token   | Görli ETH(Native token)                                                                                                                                  |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Görli ETH   | [Faucet](https://goerlifaucet.com/). You may find others by [searching](https://www.google.com/search?q=goerli+ether+faucet%5C\&oq=goerli+ether+faucet). |
+| OCEAN       | [0xCfDdA22C9837aE76E0faA845354f33C62E03653a](https://goerli.etherscan.io/address/0xcfdda22c9837ae76e0faa845354f33c62e03653a)                             |
+| Görli OCEAN | [Faucet](https://faucet.goerli.oceanprotocol.com)                                                                                                        |
+| Explorer    | [https://blockscout.moonriver.moonbeam.network](https://blockscout.moonriver.moonbeam.network)                                                           |
 
 ### Mumbai
 
-Mumbai is a test network tuned for Matic / Polygon.
+Ocean Protocol is deployed on the Mumbai test network Matic / Polygon, which is designed for testing and experimentation purposes. Tokens in Mumbai do not hold any real economic value, as it is not a production network. To connect to Mumbai using a wallet like MetaMask, you can select "Görli" from the network dropdown list.
 
-If you don't find Mumbai as a predefined network in your wallet, you can connect to it manually via [Matic's guide](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
+If Mumbai is not listed as a predefined network in your wallet, you can connect to it manually by following [Matic's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
-**Tokens**
-
-* Mumbai MATIC:
-  * Native token to pay transaction fees
-  * [Faucet](https://faucet.matic.network/). You may find others by [searching](https://www.google.com/search?q=mumbai+faucet).
-* Mumbai OCEAN:
-  * Address: [0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8](https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8)
-  * [Faucet](https://faucet.mumbai.oceanprotocol.com/)
-
-**Additional Components**
-
-| What         | URL                                                                 |
-| ------------ | ------------------------------------------------------------------- |
-| Explorer     | https://mumbai.polygonscan.com                                      |
-| Ocean Market | Point wallet to Mumbai network, at https://market.oceanprotocol.com |
-| Provider     | `https://v4.provider.mumbai.oceanprotocol.com`                      |
-| Subgraph     | `https://v4.subgraph.mumbai.oceanprotocol.com`                      |
-
+| Gas Token    | Mumbai MATIC(Native token)                                                                                                    |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| Mumbai MATIC | [Faucet](https://faucet.matic.network/). You may find others by [searching](https://www.google.com/search?q=mumbai+faucet).   |
+| OCEAN        | [0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8](https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8) |
+| Mumbai OCEAN | [Faucet](https://faucet.mumbai.oceanprotocol.com/)                                                                            |
+| Explorer     | [https://mumbai.polygonscan.com](https://mumbai.polygonscan.com)                                                              |
 
 ### Local / Ganache
 
@@ -198,7 +110,7 @@ Alternatively, you can run Ganache independently. Install it according to [the G
   * Native token to pay transaction fees
   * By default, Ganache creates several Ethereum accounts at launch, gives each some ETH, and makes their private keys available in the logs. You can also instruct Ganache to give ETH to specific Ethereum addresses.
 * Ganache OCEAN:
-  * You can deploy an ERC20 token with label OCEAN. At a minimum, the token needs to be ERC20Detailed and ERC20Capped. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
+  * You can deploy an ERC20 token with the label OCEAN. At a minimum, the token needs to be ERC20Detailed and ERC20Capped. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
 
 ### Other
 
