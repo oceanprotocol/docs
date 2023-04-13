@@ -1,0 +1,5 @@
+root: ./
+
+redirects:
+  fees: developers/core-concepts/fees.md
+#TODO - Add all redirects here

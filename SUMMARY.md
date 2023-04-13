@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👋 Welcome](README.md)
-* [🌊 Discover](<README (1).md>)
+* [🌊 Discover](/discover/discover.md)
   * [Wallet Basics](discover/wallets.md)
   * [Set Up MetaMask Wallet](discover/metamask-setup.md)
   * [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
@@ -26,7 +26,7 @@
     * [List Fixed Rate Exchanges](tutorials/using-ocean-subgraph/list-fixed-rate-exchanges.md)
   * [Using Ocean Libraries](tutorials/using-ocean-libraries/README.md)
     * [Configuration](tutorials/using-ocean-libraries/configuration.md)
-    * [Creating a data NFT](tutorials/using-ocean-libraries/creating\_dataNFT.md)
+    * [Creating a data NFT](tutorials/using-ocean-libraries/creating-dataNFT.md)
     * [Publish with Fixed Pricing](tutorials/using-ocean-libraries/create-datatoken-with-fixed-pricing.md)
     * [Mint Datatokens](tutorials/using-ocean-libraries/mint-datatoken.md)
     * [Update Metadata](tutorials/using-ocean-libraries/update-metadata.md)
