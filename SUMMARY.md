@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌊 Welcome](README.md)
+* [👋 Welcome](README.md)
 * [🌊 Discover](discover/discover.md)
   * [Wallet Basics](discover/wallets.md)
   * [Set Up MetaMask Wallet](discover/metamask-setup.md)
