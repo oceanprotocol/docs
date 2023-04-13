@@ -1,7 +1,7 @@
 ---
 title: Supported Networks
 description: All the public networks the Ocean Protocol contracts are deployed to.
-cover: ../.gitbook/assets/landing/rewards.png
+cover: ../../.gitbook/assets/landing/rewards.png
 coverY: 0
 ---
 
@@ -44,7 +44,7 @@ Ocean Protocol is also deployed to Binance Smart Chain (BSC), which is another p
 
 **Bridge**
 
-Check our BSC Bridge [guide](../core-concepts/networks/bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
+Check our BSC Bridge [guide](../../core-concepts/networks/bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 
