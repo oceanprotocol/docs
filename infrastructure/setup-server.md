@@ -18,25 +18,25 @@ Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create 
 
 Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
-![Server Setup](../.gitbook/assets/server-setup/image.png)
+![Server Setup](../.gitbook/assets/server-setup/server-setup1.png)
 
 #### Configure droplet
 
 Select Ubuntu OS and choose a plan. The required CPU, Memory depends on the number of requests Aquarius is expected to serve.
 
-![Configure droplet](<../.gitbook/assets/server-setup/image (8).png>)
+![Configure droplet](../.gitbook/assets/server-setup/server-setup2.png)
 
 Also, select the region where you want Aquarius to be hosted and a root password.
 
-![Select region](<../.gitbook/assets/server-setup/image (10).png>)
+![Select region](../.gitbook/assets/server-setup/server-setup3.png)
 
-![Click create Droplet](<../.gitbook/assets/server-setup/image (7).png>)
+![Click create Droplet](../.gitbook/assets/server-setup/server-setup4.png)
 
 Finalize the parameters for the server, click on `Create Droplet.` After the server is ready, select the `Access console` option from the dropdown.
 
-![Click access console](<../.gitbook/assets/server-setup/image (3).png>)
+![Click access console](../.gitbook/assets/server-setup/server-setup5.png)
 
-![Click launch Droplet console](../.gitbook/assets/image%20\(9\).png)
+![Click launch Droplet console](../.gitbook/assets/server-setup/server-setup6.png)
 
 A window will open with a terminal session. Now, the required infrastructure is ready for hosting Aquarius, Provider or the Subgraph. Let's install docker and docker-compose on the server. Follow the installation guide [here](https://docs.docker.com/engine/install/ubuntu/).
 
