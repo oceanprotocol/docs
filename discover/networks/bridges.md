@@ -29,7 +29,7 @@ The Polygon Network (previously known as Matic) offers a [bridge](https://wallet
 
 All you need to do is click on the [wallet](https://wallet.polygon.technology/) link, select your preferred method of connection, and log in to get started. In this guide, we'll be using Metamask to connect the wallet.
 
-![Login options](../../.gitbook/assets/wallet/login-options.png)
+![Login options](../../.gitbook/assets/wallet/polygon-login.png)
 
 You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon. For the sake of this guide, we'll be using the name Matic in the following paragraphs because the interfaces we'll be using still use the old brand name.&#x20;
 
@@ -39,15 +39,17 @@ Check out our [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-networ
 
 When you access the wallet's main page, you'll be able to view all the tokens you possess on the Matic Mainnet. If you want to deposit tokens (i.e., transfer them from the Ethereum Mainnet), there are two ways to do it: you can either click the "deposit" button for a specific token or use the "Move funds to Matic Mainnet" option.
 
-![Main wallet page](<../../.gitbook/assets/wallet/wallet-page (1).png>)
+![Main wallet page](../../.gitbook/assets/wallet/polygon-wallet-page.png)
+
+In case you are unable to find the Ocean token in the list while depositing, simply click on "Manage token list" and enable the Polygon Tokens option, which contains a greater number of listed tokens. This should add Ocean to the tokens list.
+
+![Ocean on Matic](../../.gitbook/assets/wallet/polygon-ocean.png)
 
 Both of these options will redirect you to the bridge interface. If you select the second option, you'll need to use the dropdown menu to choose the token that you wish to transfer from the Ethereum Mainnet.
 
-![Bridge interface](<../../.gitbook/assets/wallet/matic-bridge (1).png>)
+![Bridge interface](../../.gitbook/assets/wallet/polygon-bridge.png)
 
 Select the amount of tokens you want to transfer and hit the "Transfer" button. The bridge interface provided by Matic will guide you through all the necessary steps, including signing two transactions on the Ethereum Mainnet. The first transaction involves giving permission for the tokens to be traded on Matic's bridge, while the second transaction is the actual deposit.
-
-![Transferring process](<../../.gitbook/assets/wallet/transferring (1).png>)
 
 #### Withdraw Tokens
 

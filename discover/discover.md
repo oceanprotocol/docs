@@ -121,7 +121,7 @@ If ou are looking to get to grips with the inner workings of Ocean, then you'll 
 * [DID & DDO](../developers/core-concepts/did-ddo.md)
 * [Roles](../developers/core-concepts/roles.md)
 * [Set Up a Marketplace](../tutorials/build-a-marketplace/marketplace.md)
-* [Compute-to-Data](../developers/core-concepts/compute-to-data/)
+* [Compute-to-Data](../developers/core-concepts/compute-to-data)
 * [Deploying components](../infrastructure/)
 * [Contributing](../contribute/contributing.md)
 

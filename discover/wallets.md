@@ -1,7 +1,5 @@
 ---
 description: Fundamental knowledge of using ERC-20 wallets.
-cover: ../.gitbook/assets/covers/wallets.png
-coverY: 0
 ---
 
 # Wallets
