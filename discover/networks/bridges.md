@@ -25,7 +25,7 @@ The Polygon Network (previously known as Matic) offers a [bridge](https://wallet
 
 All you need to do is click on the [wallet](https://wallet.polygon.technology/) link, select your preferred method of connection, and log in to get started. In this guide, we'll be using Metamask to connect the wallet.
 
-<figure><img src="../../.gitbook/assets/polygon-login.png" alt="Polygon login options"><figcaption><p>Login options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wallet/polygon-login.png" alt="Polygon login options"><figcaption><p>Login options</p></figcaption></figure>
 
 You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon. For the sake of this guide, we'll be using the name Matic in the following paragraphs because the interfaces we'll be using still use the old brand name.
 
