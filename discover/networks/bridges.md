@@ -18,7 +18,7 @@ To transfer Ocean tokens to and from the Binance Smart Chain, we recommend using
 {% hint style="warning" %}
 In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is crucial to ensure that the contract address you are sending the tokens to is correct.&#x20;
 
-## &#x20;                            <img src="../../.gitbook/assets/binance-receive.png" alt="" data-size="original">
+## &#x20;                            <img src="../../.gitbook/assets/wallet/binance-receive.png" alt="" data-size="original">
 {% endhint %}
 
 
@@ -63,7 +63,7 @@ Unlike the first two cases where transactions are signed on the Ethereum Mainnet
 
 The easiest one is to go to the [polygon network explorer](https://polygonscan.com/) and tap on the "Add polygon network" button.
 
-<figure><img src="../../.gitbook/assets/polygon-explorer.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wallet/polygon-explorer.png" alt=""><figcaption></figcaption></figure>
 
 Alternatively, you can manually configure the network on Metamask by using the following parameters. To learn how to set up a custom network in Metamask using these values, you can refer to our guide.
 
