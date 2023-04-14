@@ -13,25 +13,21 @@ We suggest using the following solutions to transfer Ocean tokens between Ethere
 
 To transfer Ocean tokens to and from the Binance Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
 
-
-
 {% hint style="warning" %}
-In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is crucial to ensure that the contract address you are sending the tokens to is correct.&#x20;
+In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is crucial to ensure that the contract address you are sending the tokens to is correct.
 
-## &#x20;                            <img src="../../.gitbook/assets/wallet/binance-receive.png" alt="" data-size="original">
+### &#x20;                                    <img src="../../.gitbook/assets/binance-receive.png" alt="Binance deposit" data-size="original"> <a href="#binance-deposit" id="binance-deposit"></a>
 {% endhint %}
-
-
 
 ## Polygon (ex Matic) Bridge
 
-The Polygon Network (previously known as Matic) offers a [bridge](https://wallet.polygon.technology/bridge/), which lets you easily transfer digital assets between Ethereum and Polygon blockchains and a dedicated [wallet](https://wallet.polygon.technology/) designed for this purpose, which can be linked to your account through Metamask or other compatible wallets.&#x20;
+The Polygon Network (previously known as Matic) offers a [bridge](https://wallet.polygon.technology/bridge/), which lets you easily transfer digital assets between Ethereum and Polygon blockchains and a dedicated [wallet](https://wallet.polygon.technology/) designed for this purpose, which can be linked to your account through Metamask or other compatible wallets.
 
 All you need to do is click on the [wallet](https://wallet.polygon.technology/) link, select your preferred method of connection, and log in to get started. In this guide, we'll be using Metamask to connect the wallet.
 
-![Login options](../../.gitbook/assets/wallet/polygon-login.png)
+<figure><img src="../../.gitbook/assets/polygon-login.png" alt="Polygon login options"><figcaption><p>Login options</p></figcaption></figure>
 
-You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon. For the sake of this guide, we'll be using the name Matic in the following paragraphs because the interfaces we'll be using still use the old brand name.&#x20;
+You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon. For the sake of this guide, we'll be using the name Matic in the following paragraphs because the interfaces we'll be using still use the old brand name.
 
 Check out our [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) for more details.
 
@@ -53,7 +49,7 @@ Select the amount of tokens you want to transfer and hit the "Transfer" button. 
 
 #### Withdraw Tokens
 
-The process of withdrawing tokens also utilizes the bridge interface, but this time the withdrawal will happen from Matic to the Ethereum Mainnet. The bridge interface will guide you through all the necessary steps for this process as well.&#x20;
+The process of withdrawing tokens also utilizes the bridge interface, but this time the withdrawal will happen from Matic to the Ethereum Mainnet. The bridge interface will guide you through all the necessary steps for this process as well.
 
 For more detailed information about depositing and withdrawing actions, you can refer to the official Polygon [documentation](https://wiki.polygon.technology/docs/develop/ethereum-polygon/plasma/eth/).
 
@@ -63,7 +59,7 @@ Unlike the first two cases where transactions are signed on the Ethereum Mainnet
 
 The easiest one is to go to the [polygon network explorer](https://polygonscan.com/) and tap on the "Add polygon network" button.
 
-<figure><img src="../../.gitbook/assets/wallet/polygon-explorer.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/polygon-explorer.png" alt=""><figcaption></figcaption></figure>
 
 Alternatively, you can manually configure the network on Metamask by using the following parameters. To learn how to set up a custom network in Metamask using these values, you can refer to our guide.
 
