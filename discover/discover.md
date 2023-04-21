@@ -1,5 +1,7 @@
 ---
 description: Ocean Protocol - Tools for the Web3 Data Economy
+cover: ../../.gitbook/assets/landing/rewards.png
+coverY: 0
 ---
 
 # 🌊 Discover

@@ -1,8 +1,6 @@
 ---
 title: Supported Networks
 description: All the public networks the Ocean Protocol contracts are deployed to.
-cover: ../../.gitbook/assets/landing/rewards.png
-coverY: 0
 ---
 
 # Networks

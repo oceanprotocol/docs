@@ -7,6 +7,7 @@
   * [Wallets](discover/wallets.md)
   * [Set Up MetaMask Wallet](discover/metamask-setup.md)
   * [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
+  * [Glossary](discover/glossary.md)
   * [FAQ](discover/faq.md)
 * [📚 Tutorials](tutorials/README.md)
   * [Using Ocean Market](tutorials/using-ocean-market/README.md)
