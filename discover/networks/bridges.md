@@ -16,7 +16,7 @@ To transfer Ocean tokens to and from the Binance Smart Chain, we recommend using
 {% hint style="warning" %}
 In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is crucial to ensure that the contract address you are sending the tokens to is correct.
 
-### &#x20;                                    <img src="../../.gitbook/assets/wallet/binance-receive.png" alt="Binance deposit" data-size="original"> <a href="#binance-deposit" id="binance-deposit"></a>
+#### <img src="../../.gitbook/assets/wallet/binance-receive.png" alt="Binance deposit" data-size="original"> <a href="#binance-deposit" id="binance-deposit"></a>
 {% endhint %}
 
 ## Polygon (ex Matic) Bridge
