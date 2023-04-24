@@ -6,12 +6,6 @@ description: >-
 
 # Glossary
 
-A consensus mechanism is a method used in blockchain networks to ensure that all participants in the network agree on the state of the ledger or the validity of transactions. Consensus mechanisms are designed to prevent fraud, double-spending, and other types of malicious activity on the network.
-
-In the context of Ocean Protocol, the consensus mechanism used is Proof of Stake (PoS). PoS is a consensus mechanism in which the nodes that validate transactions and create new blocks in the blockchain are selected based on their stake or ownership of the network's native token, in this case, OCEAN. The more OCEAN a node holds, the higher the probability of being chosen to validate transactions and create new blocks in the blockchain.A consensus mechanism is a method used in blockchain networks to ensure that all participants in the network agree on the state of the ledger or the validity of transactions. Consensus mechanisms are designed to prevent fraud, double-spending, and other types of malicious activity on the network.
-
-In the context of Ocean Protocol, the consensus mechanism used is Proof of Stake (PoS). PoS is a consensus mechanism in which the nodes that validate transactions and create new blocks in the blockchain are selected based on their stake or ownership of the network's native token, in this case, OCEAN. The more OCEAN a node holds, the higher the probability of being chosen to validate transactions and create new blocks in the blockchain.An overview of the key terms and concepts related to Ocean Protocol, a decentralized data exchange protocol that enables the sharing of data and services in a secure, transparent, and privacy-preserving manner. From data tokens to compute-to-data, this glossary will help you navigate the technical jargon and understand the nuances of Ocean Protocol. Whether you're new to the platform or a seasoned user, this resource is sure to come in handy as you explore the world of decentralized data exchange.
-
 ### Ocean Protocol Concepts
 
 <details>
