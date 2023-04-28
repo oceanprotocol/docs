@@ -21,6 +21,9 @@ In case you opt for an alternative bridge option and intend to transfer tokens t
 
 ## Polygon (ex Matic) Bridge
 
+[![How to Get mOCEAN Youtube Video](https://img.youtube.com/vi/W5eIipUHl-w/0.jpg)](https://www.youtube.com/watch?v=W5eIipUHl-w)
+
+
 The Polygon Network (previously known as Matic) offers a [bridge](https://wallet.polygon.technology/bridge/), which lets you easily transfer digital assets between Ethereum and Polygon blockchains and a dedicated [wallet](https://wallet.polygon.technology/) designed for this purpose, which can be linked to your account through Metamask or other compatible wallets.
 
 All you need to do is click on the [wallet](https://wallet.polygon.technology/) link, select your preferred method of connection, and log in to get started. In this guide, we'll be using Metamask to connect the wallet.
