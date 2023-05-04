@@ -4,11 +4,9 @@ description: An overview of the governance token, veOCEAN (vote-escrowed).
 
 # veOCEAN
 
-veOCEAN is a mechanism to align near-term incentives (maximize APY) with long-term incentives (long-term locking). It's a fork of veCRV contracts which have been battle-tested over years.
+veOCEAN is a locked version of the $OCEAN token. This is used to participate in on-chain governance, and earn rewards within the Ocean Protocol network. veOCEAN is architected to be staked for a certain period of time and cannot be transferred or sold during that time.
 
-The amount of reward depends on how long the tokens are locked for. You must lock up your OCEAN into the vault for to obtain veOCEAN. Going forward, veOCEAN will be the main mechanism for staking OCEAN, and for curation of datasets.
-
-After creating your lock you will be credited veOCEAN. We sometimes refer to veOCEAN as your “voting power”.
+Holders of veOCEAN can use it to vote on proposals or delegate their voting power to other stakeholders. Additionally, there may be other benefits associated with holding and staking veOCEAN, such as access to passive & active rewards in data farming or discounts on fees within the network.
 
 **WARNING:** You will not be able to retrieve your original OCEAN deposit until the lock ends.
 
@@ -25,9 +23,9 @@ There are 4 things you can do with veOCEAN.
 
 ## What is time locking?
 
-Users can lock their OCEAN for different lengths of time to gain voting power. Our app is configured to lock OCEAN for a minimum of 2 weeks and a maximum of four years for max benefit.
+Users can lock their OCEAN for different lengths of time to gain voting power. df.oceandao.org is designed to lock OCEAN for a minimum of 2 weeks and a maximum of four years for max benefit.
 
-Users that lock their OCEAN for a longer period of time receive more veOCEAN to reflect their conviction in the system.
+When users commit to locking their OCEAN tokens for an extended time duration, they are rewarded with an increased amount of veOCEAN tokens. This incentivizes users to have act with strong network support and confidence in the ecosystem.
 
 | Year | Lock Multiplier | veOCEAN |
 | ---- | --------------- | ------- |
@@ -77,17 +75,17 @@ There’s a new DF round every week; in line with this, there’s a new ve distr
 
 veOCEAN holders have earnings from two sources:
 
-### Earnings from Community Fees
+### Active Earnings from Community Fees
 
 Every transaction in Ocean Market and Ocean backend generates transaction fees, some of which go to the community. 50% of the community fees will go to veOCEAN holders; the rest will go to Ocean community-oriented traction programs.
 
 All earnings here are passive.
 
-### Earnings from Data Farming
+### Passive Earnings from Data Farming
 
 veOCEAN holders will each get weekly DF rewards allocation, except a small carveout for any Data Challenge initiatives that may run through DF ops.
 
-**veOCEAN holders can be passive, though they will earn more if active.**
+**veOCEAN holders can be passive, though they are incentivized with larger real yield if active participant.**
 
 “Being active” means allocating veOCEAN to promising data assets (data NFTs). Then, rewards follow the usual DF formula: DCV \* stake. Stake is the amount of veOCEAN allocated to the data asset. There is no liquidity locked inside a datatoken pool. (And this stake is safe: you can’t lose your OCEAN as it is merely locked.)
 
@@ -95,8 +93,7 @@ veOCEAN holders will each get weekly DF rewards allocation, except a small carve
 
 The image below illustrates the flow of value. On the left, at time 0, the staker locks their OCEAN into the veOCEAN contract, and receives veOCEAN. In the middle, the staker receives OCEAN rewards every time there’s revenue to the Ocean Protocol Community (top), and also as part of Data Farming rewards (bottom). On the right, when the lock expires (e.g. 4 years) then the staker is able to move their OCEAN around again.
 
-![Flow of Value](../.gitbook/assets/rewards/flow_of_value.png)
-_Flow of Value_
+![Flow of Value](../.gitbook/assets/rewards/flow\_of\_value.png) _Flow of Value_
 
 The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Ocean uses as its system-level design.
 
@@ -104,7 +101,7 @@ The veOCEAN code was forked from the veCRV code. veCRV parameters will be the st
 
 ## Security
 
-[veOCEAN core contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) use [veCRV contracts](https://curve.readthedocs.io/dao-vecrv.html) with zero changes, on purpose: the veCRV contracts have been battle-tested for two years and have not had security issues. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. veCRV contracts [have been audited by Trail of Bits and Quantstamp](https://github.com/curvefi/curve-dao-contracts#audits-and-security).
+[veOCEAN core contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) use [veCRV contracts](https://curve.readthedocs.io/dao-vecrv.html) with zero changes, on purpose: the veCRV contracts have been battle-tested since inception and have not had security issues. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. veCRV contracts [have been audited by Trail of Bits and Quantstamp](https://github.com/curvefi/curve-dao-contracts#audits-and-security).
 
 We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to point their veOCEAN towards given data assets (“allocate veOCEAN”). These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
 
