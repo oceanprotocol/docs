@@ -1,6 +1,6 @@
 ---
 description: Ocean Protocol - Tools for the Web3 Data Economy
-cover: ../../.gitbook/assets/landing/rewards.png
+cover: ../.gitbook/assets/landing/rewards.png
 coverY: 0
 ---
 
@@ -18,8 +18,8 @@ The following guides are a greate place to start if you are new to Ocean:
 
 * [Architecture Overview](../developers/core-concepts/architecture.md)
 * [Data NFTs and Datatokens](../developers/core-concepts/datanft-and-datatoken.md)
-* [Publish a data asset](../tutorials/using-ocean-market/marketplace-publish-data-asset.md)
-* [Download a data asset](../tutorials/using-ocean-market/marketplace-download-data-asset.md)
+* [Publish a data asset](../how-tos/using-ocean-market/marketplace-publish-data-asset.md)
+* [Download a data asset](../how-tos/using-ocean-market/marketplace-download-data-asset.md)
 
 ## What is our Mission?
 
@@ -43,9 +43,9 @@ As a data scientist or AI practitioner, you can benefit from access to more data
 
 The following guides will help you get started with buying and selling data:
 
-* [Publish a data asset](../tutorials/using-ocean-market/marketplace-publish-data-asset.md)
-* [Download a data asset](../tutorials/using-ocean-market/marketplace-download-data-asset.md)
-* [Publishing with hosting services](../tutorials/using-ocean-market/asset-hosting.md)
+* [Publish a data asset](../how-tos/using-ocean-market/marketplace-publish-data-asset.md)
+* [Download a data asset](../how-tos/using-ocean-market/marketplace-download-data-asset.md)
+* [Publishing with hosting services](../how-tos/using-ocean-market/asset-hosting.md)
 
 ### Build Your Own Data Market
 
@@ -123,7 +123,7 @@ If ou are looking to get to grips with the inner workings of Ocean, then you'll 
 * [DID & DDO](../developers/core-concepts/did-ddo.md)
 * [Roles](../developers/core-concepts/roles.md)
 * [Set Up a Marketplace](../tutorials/build-a-marketplace/marketplace.md)
-* [Compute-to-Data](../developers/core-concepts/compute-to-data)
+* [Compute-to-Data](../developers/core-concepts/compute-to-data/)
 * [Deploying components](../infrastructure/)
 * [Contributing](../contribute/contributing.md)
 

@@ -5,7 +5,7 @@
 * [Ocean Market](https://market.oceanprotocol.com/) enables publishers to monetize their data and/or algorithms through blockchain technology.
 * Consumers can purchase access to data, algorithms, compute services.
 
-![Ocean Market Landing Page](images/marketplace/marketplace-landing-page.png)
+![Ocean Market Landing Page](../../tutorials/using-ocean-market/images/marketplace/marketplace-landing-page.png)
 
 The following guides will help you get started with buying and selling data:
 
@@ -15,9 +15,9 @@ The following guides will help you get started with buying and selling data:
 
 If you are new to web3 and blockchain technologies then we suggest you first read these introductory guides:
 
-* [Wallet Basics](../building-with-ocean/wallets.md)
-* [Set Up MetaMask Wallet](../orientation/metamask-setup.md)
-* [Manage Your OCEAN Tokens](../building-with-ocean/wallets-and-ocean-tokens.md)
+* [Wallet Basics](../../tutorials/building-with-ocean/wallets.md)
+* [Set Up MetaMask Wallet](../../tutorials/orientation/metamask-setup.md)
+* [Manage Your OCEAN Tokens](../../tutorials/building-with-ocean/wallets-and-ocean-tokens.md)
 
 ### Removing Liquidity
 
