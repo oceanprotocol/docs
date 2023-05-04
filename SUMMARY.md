@@ -39,7 +39,7 @@
   * [Data Farming Background](rewards/df-background.md)
   * [Emissions & APYs](rewards/emissions-apys.md)
   * [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
-* [👨💻 Developers](developers/README.md)
+* [Developers](developers/README.md)
   * [Core concepts](developers/core-concepts/README.md)
     * [Architecture Overview](developers/core-concepts/architecture.md)
     * [Data NFTs and Datatokens](developers/core-concepts/datanft-and-datatoken.md)
