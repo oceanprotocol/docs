@@ -4,20 +4,22 @@ description: Buy, mint, and sell all sorts of data on the Ocean Market
 
 # Using Ocean Market
 
-### What is the Ocean Market? 🛒
+### What is the [Ocean Market](https://market.oceanprotocol.com/)? 🛒
 
-Ocean Protocol offers a convenient NFT marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs.&#x20;
+Publishers and consumers of top-notch data and algorithms come together at the Ocean Market! 😉 Our market gives you easy-to-use publishing and purchasing tools for data and algorithm assets published on-chain.
 
-* [Ocean Market](https://market.oceanprotocol.com/) enables publishers to monetize their data and/or algorithms through blockchain technology.
-* Consumers can purchase access to data, algorithms, compute services.
+You can:
 
-![Ocean Market Landing Page](../../tutorials/using-ocean-market/images/marketplace/marketplace-landing-page.png)
+* Tokenize & monetize your intellectual property through blockchain technology.
+* Buy access to unique data, algorithms, and compute jobs.
 
-The following guides will help you get started with buying and selling data:
 
-* [Publish a data asset](marketplace-publish-data-asset.md)
-* [Download a data asset](marketplace-download-data-asset.md)
-* [Publishing with hosting services](asset-hosting.md)
+
+Learn how to:
+
+* [Publish an NFT](marketplace-publish-data-asset.md)
+* [Download NFT Assets](marketplace-download-data-asset.md)
+* [Host Your Assets](asset-hosting.md)
 
 If you are new to web3 and blockchain technologies then we suggest you first read these introductory guides:
 
