@@ -8,7 +8,7 @@
   * [Set Up MetaMask Wallet 🦊](discover/metamask-setup.md)
   * [Manage Your OCEAN Tokens 🪙](discover/wallets-and-ocean-tokens.md)
   * [Glossary](discover/glossary.md)
-  * [FAQ](discover/faq.md)
+  * [FAQ ❓](discover/faq.md)
 * [📜 The Essentials](how-tos/README.md)
   * [Using Ocean Market](how-tos/using-ocean-market/README.md)
     * [Publish an NFT](how-tos/using-ocean-market/marketplace-publish-data-asset.md)
