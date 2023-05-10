@@ -18,7 +18,8 @@ There are a variety of NFTs on the Ocean Market that offer profitable algorithms
 
 Check out our [tutorial] on how to start algorithmically trading crypto using an EMA crossover strategy on the Ocean Market.
 
-[INSERT VIDEO HERE - https://www.youtube.com/watch?v=c7A4vA8YUyI]
+[INSERT VIDEO HERE]
+https://www.youtube.com/watch?v=c7A4vA8YUyI
 
 [tutorial]: https://www.youtube.com/watch?v=c7A4vA8YUyI
 [Trading View]: https://www.tradingview.com
@@ -26,3 +27,10 @@ Check out our [tutorial] on how to start algorithmically trading crypto using an
 
 ## Create Trading Strategy NFTs
 
+Do you have a valuable trading strategy that you want to share or sell? You can anonymously upload your trading strategies as NFTs on-chain using the Ocean Market!
+
+Check out how to [publish trading strategy NFTs] on-chain with the Ocean Market!
+
+[publish trading strategy NFTs]: https://youtu.be/Q4jj5ukiTZA
+
+[INSERT VIDEO HERE] https://youtu.be/Q4jj5ukiTZA
