@@ -1,6 +1,12 @@
+---
+description: Buy, mint, and sell all sorts of data on the Ocean Market
+---
+
 # Using Ocean Market
 
-### About Ocean Market
+### What is the Ocean Market? 🛒
+
+Ocean Protocol offers a convenient NFT marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs.&#x20;
 
 * [Ocean Market](https://market.oceanprotocol.com/) enables publishers to monetize their data and/or algorithms through blockchain technology.
 * Consumers can purchase access to data, algorithms, compute services.

@@ -10,7 +10,7 @@ Don't enjoy reading? Watch our video tutorial!
 
 ### What to Publish? 🤷‍♀️
 
-Ocean Protocol offers a convenient NFT marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs. These assets span anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Market.&#x20;
+Ocean Protocol offers a convenient marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs. These assets span anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Market.&#x20;
 
 Please note Ocean Protocol maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
 
