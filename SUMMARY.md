@@ -13,7 +13,7 @@
   * [Using Ocean Market](how-tos/using-ocean-market/README.md)
     * [Publish an NFT](how-tos/using-ocean-market/marketplace-publish-data-asset.md)
     * [Download NFT Assets](how-tos/using-ocean-market/marketplace-download-data-asset.md)
-    * [Asset Hosting Options](how-tos/using-ocean-market/asset-hosting.md)
+    * [Hosting Your Assets](how-tos/using-ocean-market/asset-hosting.md)
     * [Liquidity Pools \[deprecated\]](how-tos/using-ocean-market/remove-liquidity-using-etherscan.md)
 * [📚 Tutorials](tutorials/README.md)
   * [Build a Marketplace](tutorials/build-a-marketplace/README.md)
