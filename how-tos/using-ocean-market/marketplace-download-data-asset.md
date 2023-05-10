@@ -1,12 +1,12 @@
 ---
-description: Tutorial to download assets using Ocean Market
+description: How to download data and algorithm assets on the Ocean Market
 ---
 
-# Download a Data Asset
+# Download Assets
 
 ### Access marketplace
 
-1. Go to Ocean [Marketplace](https://v4.market.oceanprotocol.com/).
+1. Go to Ocean [Market](https://v4.market.oceanprotocol.com/).
 2. Search for the data asset. The Ocean Marketplace provides features to search the Data/Algorithms by text, and users can also sort the result by published date.
 3. Connect wallet.
 
