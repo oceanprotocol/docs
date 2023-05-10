@@ -16,12 +16,12 @@ To transfer Ocean tokens to and from the Binance Smart Chain, we recommend using
 {% hint style="warning" %}
 In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is crucial to ensure that the contract address you are sending the tokens to is correct.
 
-#### <img src="../../.gitbook/assets/wallet/binance-receive.png" alt="Binance deposit" data-size="original"> <a href="#binance-deposit" id="binance-deposit"></a>
+<img src="../../.gitbook/assets/wallet/binance-receive.png" alt="Binance deposit" data-size="original">
 {% endhint %}
 
 ## Polygon (ex Matic) Bridge
 
-[![How to Get mOCEAN Youtube Video](https://img.youtube.com/vi/W5eIipUHl-w/0.jpg)](https://www.youtube.com/watch?v=W5eIipUHl-w)
+{% embed url="https://www.youtube.com/watch?v=W5eIipUHl-w" %}
 
 The Polygon Network (previously known as Matic) offers a [bridge](https://wallet.polygon.technology/bridge/), which lets you easily transfer digital assets between Ethereum and Polygon blockchains and a dedicated [wallet](https://wallet.polygon.technology/) designed for this purpose, which can be linked to your account through Metamask or other compatible wallets.
 
@@ -29,7 +29,7 @@ All you need to do is click on the [wallet](https://wallet.polygon.technology/) 
 
 <figure><img src="../../.gitbook/assets/wallet/polygon-login.png" alt="Polygon login options"><figcaption><p>Login options</p></figcaption></figure>
 
-You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon.&#x20;
+You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon.
 
 Check out our [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) for more details.
 
