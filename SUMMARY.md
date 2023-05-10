@@ -5,7 +5,7 @@
   * [Networks](discover/networks/README.md)
     * [Bridges](discover/networks/bridges.md)
   * [Wallets](discover/wallets.md)
-  * [Set Up MetaMask Wallet](discover/metamask-setup.md)
+  * [Set Up MetaMask Wallet 🦊](discover/metamask-setup.md)
   * [Manage Your OCEAN Tokens](discover/wallets-and-ocean-tokens.md)
   * [Glossary](discover/glossary.md)
   * [FAQ](discover/faq.md)
