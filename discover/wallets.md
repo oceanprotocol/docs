@@ -2,11 +2,11 @@
 description: Fundamental knowledge of using ERC-20 crypto wallets.
 ---
 
-# Wallets
+# Wallets 👛
 
 Ocean Protocol users require an ERC-20 compatible wallet to manage their OCEAN and ETH tokens. In this guide, we will provide some recommendations for different wallet options.
 
-### What is a wallet? 👛
+### What is a wallet?
 
 In the blockchain world, a wallet is a software program that stores private keys and allows users to interact with the blockchain network. Private keys are used to sign transactions and provide proof of ownership for the digital assets stored on the blockchain. Wallets can be used to send and receive digital currencies, view account balances, and monitor transaction history. There are several types of wallets, including desktop wallets, mobile wallets, hardware wallets, and web-based wallets. Each type of wallet has its own unique features, advantages, and security considerations.
 
