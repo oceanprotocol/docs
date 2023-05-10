@@ -21,6 +21,8 @@ In case you opt for an alternative bridge option and intend to transfer tokens t
 
 ## Polygon (ex Matic) Bridge
 
+If you prefer a video tutorial, here is one available for you. Otherwise, please follow the steps described below.
+
 {% embed url="https://www.youtube.com/watch?v=W5eIipUHl-w" %}
 
 The Polygon Network (previously known as Matic) offers a [bridge](https://wallet.polygon.technology/bridge/), which lets you easily transfer digital assets between Ethereum and Polygon blockchains and a dedicated [wallet](https://wallet.polygon.technology/) designed for this purpose, which can be linked to your account through Metamask or other compatible wallets.
