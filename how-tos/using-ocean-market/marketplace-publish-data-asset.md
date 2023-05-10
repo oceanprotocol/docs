@@ -8,15 +8,15 @@ description: How to Publish Data and Algorithms as NFTs Using the Ocean Market
 Don't enjoy reading? Watch our video tutorial!
 {% endembed %}
 
-### What to Publish?
+### What to Publish? 🤷‍♀️
 
 Ocean Protocol offers a convenient NFT marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs. These assets span anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Market.&#x20;
 
 Please note Ocean Protocol maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
 
-### How to Publish an NFT on the Ocean Market
+### How to Publish an NFT on the Ocean Market 🧑‍🏫
 
-#### Getting Started
+#### Getting Started 🏃💨
 
 1. Go to the [Ocean Market](https://v4.market.oceanprotocol.com).
 2. Connect your wallet.&#x20;
@@ -30,7 +30,7 @@ In this tutorial, we will be using the Polygon Mumbai test network.
 
 ![Publish page](../../.gitbook/assets/market/publish.png)
 
-#### Step 1 - Metadata
+#### Step 1 - Metadata 🤓
 
 Fill in the metadata.
 
@@ -56,7 +56,7 @@ _Mandatory fields are marked with \*_
 
 Click Continue.
 
-#### Step 2 - Access details
+#### Step 2 - Access details 🔑
 
 _Mandatory fields are marked with \*_
 
@@ -80,7 +80,7 @@ _Mandatory fields are marked with \*_
 
 ![Access details](../../.gitbook/assets/market/publish-2.png)
 
-#### Step 3 - Pricing
+#### Step 3 - Pricing 🫰
 
 The publisher needs to choose a pricing option - fixed or free - for the asset before publishing the data asset. The pricing schema is not editable after the asset publication.
 
@@ -99,13 +99,13 @@ For a deep dive into the fee structure, please refer to this [document](../../de
 
 ![Asset pricing](../../.gitbook/assets/market/publish-3.png)
 
-#### Step 4 - Preview
+#### Step 4 - Preview 🔍
 
 ![Preview](../../.gitbook/assets/market/publish-4.png)
 
 If you are happy with the Preview of your NFT, then click Continue!
 
-#### Step 5 - Submit Your Blockchain Transactions
+#### Step 5 - Submit Your Blockchain Transactions 💃🕺
 
 To publish your NFT on-chain, you must go through three steps including signing two transactions with your wallet. Note: this will cost some gas fees!
 
@@ -113,7 +113,7 @@ To publish your NFT on-chain, you must go through three steps including signing 
 
 ![Transaction Signature 2 - Deploy data NFT and datatoken](../../.gitbook/assets/market/publish-6.png)
 
-#### Confirmation
+#### Confirmation 🥳
 
 Now, your NFT is successfully published and available in the Ocean Market!
 
@@ -121,7 +121,7 @@ Now, your NFT is successfully published and available in the Ocean Market!
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), a publisher has access to all their published assets.
 
-#### More Info
+#### More Info 🧐
 
 Your data or algorithm NFT is \*published\* on-chain once you complete the flow. However, you are not selling the actual NFT on-chain - **you are selling datatokens** that give buyers **access** to the NFT's data. More on this distinction in the Ocean Basics video tutorial.
 
