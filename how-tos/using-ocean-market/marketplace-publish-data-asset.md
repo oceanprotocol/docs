@@ -129,6 +129,6 @@ Your data or algorithm NFT is \*published\* on-chain once you complete the flow.
 Learn more about the publishing flow!
 {% endembed %}
 
-### Related Articles
+### Related Articles 📖
 
 https://blog.oceanprotocol.com/on-selling-data-in-ocean-market-9afcfa1e6e43
