@@ -1,10 +1,10 @@
 ---
 description: >-
-  How to use crypto wallet software to check your Ocean Token balance and to
-  send Ocean Tokens to others.
+  How to use a crypto wallet to check your OCEAN token balance and send OCEAN
+  Tokens to others
 ---
 
-# Use Your Wallet to Manage OCEAN Tokens
+# Manage Your OCEAN Tokens 🪙
 
 If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.
 
