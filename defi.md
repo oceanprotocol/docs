@@ -14,7 +14,7 @@ Check our [challenges page](https://oceanprotocol.com/challenges) to see if ther
 
 There are a variety of NFTs on the Ocean Market that offer profitable algorithms for crypto trading using [Trading View](https://www.tradingview.com) and [freqtrade](http://freqtrade.io) open-source Github library. Not sure how to algorithmically trade crypto? We have a tutorial for that!
 
-Check out our [tutorial](https://www.youtube.com/watch?v=c7A4vA8YUyI) on how to start algorithmically trading crypto using an EMA crossover strategy on the Ocean Market.
+Check out our video [tutorial](https://www.youtube.com/watch?v=c7A4vA8YUyI) on how to start algorithmically trading crypto using an EMA crossover strategy on the Ocean Market:
 
 {% embed url="https://www.youtube.com/watch?v=c7A4vA8YUyI" %}
 
@@ -22,6 +22,6 @@ Check out our [tutorial](https://www.youtube.com/watch?v=c7A4vA8YUyI) on how to 
 
 Do you have a valuable trading strategy that you want to share or sell? You can anonymously upload your trading strategies as NFTs on-chain using the Ocean Market!
 
-Check out how to [publish trading strategy NFTs](https://youtu.be/Q4jj5ukiTZA) on-chain with the Ocean Market!
+Check out our video tutorial how to [publish trading strategy NFTs](https://youtu.be/Q4jj5ukiTZA) on-chain with the Ocean Market!
 
 {% embed url="https://youtu.be/Q4jj5ukiTZA" %}
