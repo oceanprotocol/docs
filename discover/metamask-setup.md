@@ -4,9 +4,9 @@ description: How to set up a MetaMask wallet on Chrome
 
 # Set Up MetaMask Wallet 🦊
 
-Before you can publish or purchase assets on the Ocean Market, you will need a crypto wallet. As Metamask is one of the most popular crypto wallets around, we created a tutorial to teach how to get started with Metamask so that you can be ready to use Ocean's tech.
+Before you can publish or purchase assets on the Ocean Market, you will need a crypto wallet. As Metamask is one of the most popular crypto wallets around, we made a tutorial to show you how to get started with Metamask to use Ocean's tech.
 
-> MetaMask can be used with a TREZOR or Ledger hardware wallet but we don't cover those options below; see [the MetaMask documentation](https://metamask.zendesk.com/hc/en-us/articles/360020394612-How-to-connect-a-Trezor-or-Ledger-Hardware-Wallet).
+> MetaMask can be connected with a TREZOR or Ledger hardware wallet but we don't cover those options below; see [the MetaMask documentation](https://metamask.zendesk.com/hc/en-us/articles/360020394612-How-to-connect-a-Trezor-or-Ledger-Hardware-Wallet).
 
 ### Set up
 
