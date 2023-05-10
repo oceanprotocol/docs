@@ -1,11 +1,11 @@
 ---
 title: Publish assets using hosting services
 description: >-
-  Tutorial to publish assets using hosting services like Arweave, AWS, and
-  Azure.
+  Tutorial to host your data and algorithm NFT assets using hosting services
+  like Arweave, AWS, and Azure.
 ---
 
-# Different Ways to Publish
+# Asset Hosting Options
 
 ### Overview
 
