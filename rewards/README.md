@@ -4,21 +4,21 @@ description: An overview of Ocean Protocol's governance and incentives mechanism
 
 # 💰 Rewards
 
-veOCEAN is a fork of veCRV, and enables you to become a governance participant, eligible to receive rewards and engage with different protocol mechanisms.
+veOCEAN is a fork of veCRV. This enables participants to become a governance delegate, and eligible to receive rewards and engage with different protocol mechanisms.
 
-The following docs should provide you with sufficient intuition to access, utilize, and build upon the protocol's core incentive and reward system: Data Farming.
+The following docs provide you with sufficient intuition to access, utilize, and build upon the protocol's core incentive and reward system: Data Farming.
 
 ![DF Rewards Page](../.gitbook/assets/rewards/df\_rewards\_page.png)
 
 ## veOCEAN
 
-Learning about [veOCEAN](veocean.md) will help you answer the question "What can I do with my veOCEAN?" and give you insights on how veOCEAN works. It will teach you everything you need to know about why it exists and how it works.
+Learning about [veOCEAN](veocean.md) will help you answer the question "What is the purpose of holding veOCEAN?" & give insights on how veOCEAN (vote-escrowed OCEAN) works. It will teach you everything you need to know about why it exists and how it works.
 
-You will learn that by just holding veOCEAN passively, you are able to earn rewards.
+You will learn that by just holding veOCEAN passively, you are able to rewards.
 
 ## Data Farming
 
-[Data Farming 101](df-intro.md) will teach you about the different reward systems, how they work, and how to access them. By the end of it, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
+[Data Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
 
 [Data Farming Background](df-background.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
 

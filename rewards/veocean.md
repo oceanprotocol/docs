@@ -19,11 +19,29 @@ There are 4 things you can do with veOCEAN.
 1. **Hold it** veOCEAN pays **Passive Rewards** every week.
 2. **Allocate it** veOCEAN pays **Active Rewards** every week to the top performing Datasets, Algorithms, dApps, and more.
 3. **Delegate it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
-4. **2x Stake** If you are a publisher, allocating veOCEAN to your own Dataset gives your veOCEAN a 2x Bonus. This is an incentive for publishers to engage with their assets and benefit from from the protocol further.
+4. **2x Publisher Stake** If you are a publisher to the Ocean marketplace, allocating veOCEAN to your own Dataset gives your veOCEAN a 2x Bonus. This is an incentive for publishers to engage with their assets and benefit from from the protocol further.
 
-## What is time locking?
+## veOCEAN holders retain earnings from two sources: **Active & Passive Rewards**
 
-Users can lock their OCEAN for different lengths of time to gain voting power. df.oceandao.org is designed to lock OCEAN for a minimum of 2 weeks and a maximum of four years for max benefit.
+### Active Rewards from Community Fees
+
+Every transaction in Ocean Market and Ocean backend generates transaction fees, some of which go to the community. 50% of the community fees will go to veOCEAN holders; the rest will go to Ocean community-oriented traction programs.
+
+All earnings here are passive.
+
+### Passive Rewards from Data Farming
+
+veOCEAN holders will each get weekly DF rewards allocation, except a small carveout for any Data Challenge initiatives that may run through DF ops.
+
+**veOCEAN holders can be passive, though they are incentivized with larger real yield if active participant.**
+
+“Being active” means allocating veOCEAN to promising data assets (data NFTs). Then, rewards follow the usual DF formula: DCV \* stake. Stake is the amount of veOCEAN allocated to the data asset. There is no liquidity locked inside a datatoken pool. (And this stake is safe: you can’t lose your OCEAN as it is merely locked.)
+
+
+
+## Time Locking: What is it
+
+Users can lock their OCEAN for different lengths of time to gain voting power. df.oceandao.org is designed to lock OCEAN for a minimum of 2 weeks and a maximum of four years for max benefit. VeToken-economics is simple: The longer user stakes, the more rewards users are eligible to earn. &#x20;
 
 When users commit to locking their OCEAN tokens for an extended time duration, they are rewarded with an increased amount of veOCEAN tokens. This incentivizes users to have act with strong network support and confidence in the ecosystem.
 
@@ -69,25 +87,11 @@ To maximize rewards, participants would need to update their 4-year lock every w
 
 ## veOCEAN Earnings
 
-All earnings for veOCEAN holders are claimable in Ethereum mainnet. (Data assets for DF may published in any network where Ocean’s deployed in production: Eth mainnet, Polygon, etc.)
+All earnings for veOCEAN holders are claimable in Ethereum mainnet. (Data assets for DFing may published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
 
-There’s a new DF round every week; in line with this, there’s a new ve distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the code. )
+Data Farming rounds occur weekly; in line with this, there’s a new ve distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the code. )
 
-veOCEAN holders have earnings from two sources:
 
-### Active Earnings from Community Fees
-
-Every transaction in Ocean Market and Ocean backend generates transaction fees, some of which go to the community. 50% of the community fees will go to veOCEAN holders; the rest will go to Ocean community-oriented traction programs.
-
-All earnings here are passive.
-
-### Passive Earnings from Data Farming
-
-veOCEAN holders will each get weekly DF rewards allocation, except a small carveout for any Data Challenge initiatives that may run through DF ops.
-
-**veOCEAN holders can be passive, though they are incentivized with larger real yield if active participant.**
-
-“Being active” means allocating veOCEAN to promising data assets (data NFTs). Then, rewards follow the usual DF formula: DCV \* stake. Stake is the amount of veOCEAN allocated to the data asset. There is no liquidity locked inside a datatoken pool. (And this stake is safe: you can’t lose your OCEAN as it is merely locked.)
 
 ## Flow of Value
 

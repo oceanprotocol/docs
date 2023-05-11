@@ -1,5 +1,5 @@
 ---
-description: An introduction to Data Farming and Ocean Protocol's key incentives.
+description: An introduction to Data Farming and Ocean Protocol's incentive mechanism
 ---
 
 # Data Farming 101
@@ -22,19 +22,19 @@ Active Rewards are governed and defined by the [Reward Function](df-background.m
 
 ## How to access DF and claim rewards
 
-Please [follow this tutorial](../rewards/veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
+Please [follow this tutorial](veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
 
-Otherwise, go to the DF webapp at [df.oceandao.org](df.oceandao.org/) and explore Data Farming for yourself.
+Otherwise, go to the DF webapp at [df.oceandao.org](df.oceandao.org) and explore Data Farming for yourself.
 
 ### Where to claim?
 
-All earnings for veOCEAN holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.
+All earnings for veOCEAN token holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.
 
-Data assets for DF may published in any [network where Ocean’s deployed in production](../core-concepts/networks.md): Eth mainnet, Polygon, etc.
+Data assets for DF may be published in any [network where Ocean’s deployed in production](../core-concepts/networks.md): Ethereum Mainnet, Polygon, etc.
 
 ### When to claim?
 
-There are fresh rewards available every Thursday. If you wish, you can wait for many weeks to accumulate before claiming. (It’s all on-chain.)
+Yield rewards are distributed weekly, every Thursday. Users can choose to claim every week, or wait many weeks to accumulate before claiming. (It’s all on-chain.)
 
 ### When to do a first claim?
 
@@ -60,8 +60,7 @@ DF Main lasts for decades.
 
 The table below cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
 
-![Rewards Schedule](../.gitbook/assets/rewards/reward_schedule.png)
-_Ocean Reward Schedule for the next 20+ years_
+![Rewards Schedule](../.gitbook/assets/rewards/reward\_schedule.png) _Ocean Reward Schedule for the next 20+ years_
 
 ## Ranked Rewards
 
@@ -73,7 +72,7 @@ At the top-end, this helps increase quality and diversification of inventory.
 
 At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
 
-![Ranked Rewards](images/ranked_rewards_study.png)
+![Ranked Rewards](images/ranked\_rewards\_study.png)
 
 You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
@@ -84,7 +83,7 @@ DF gives stronger incentives to publish data services, as follows.
 _All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation._
 
 1. As a staker, due to their staked veOCEAN on their own assets (1x).
-1. As a publisher, for having veOCEAN staked on their own asset(1x).
+2. As a publisher, for having veOCEAN staked on their own asset(1x).
 
 The final reward is then calculated and bundled together to be distributed.
 

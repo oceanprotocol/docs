@@ -1,3 +1,7 @@
+---
+description: '****DRAFT include images in each of these steps'
+---
+
 # How to get veOCEAN
 
 Step 1&#x20;
