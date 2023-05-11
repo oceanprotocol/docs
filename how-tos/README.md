@@ -1,2 +1,2 @@
-# 💻 Core Tech
+# 📜 How To's
 
