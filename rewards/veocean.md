@@ -4,9 +4,9 @@ description: An overview of the governance token, veOCEAN (vote-escrowed).
 
 # veOCEAN
 
-veOCEAN is a locked version of the $OCEAN token. This is used to participate in on-chain governance, and earn rewards within the Ocean Protocol network. veOCEAN is architected to be staked for a certain period of time and cannot be transferred or sold during that time.
+veOCEAN is the vote escrowed capability of the $OCEAN token through veTokenomics model (vote-escrowed token economics). veOCEAN is used to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem. veOCEAN is architected to be staked or 'locked' for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
 
-Holders of veOCEAN can use it to vote on proposals or delegate their voting power to other stakeholders. Additionally, there may be other benefits associated with holding and staking veOCEAN, such as access to passive & active rewards in data farming or discounts on fees within the network.
+Holders of veOCEAN can use it to vote on proposals or delegate their voting power to other stakeholders. Additionally, there are be other benefits associated with holding and staking veOCEAN, such as access to passive & active rewards in data farming or discounts on fees within the network.
 
 **WARNING:** You will not be able to retrieve your original OCEAN deposit until the lock ends.
 
@@ -14,20 +14,18 @@ Holders of veOCEAN can use it to vote on proposals or delegate their voting powe
 
 veOCEAN allows you to engage with different protocol mechanisms and benefit from the reward programs available.
 
-There are 4 things you can do with veOCEAN.
+4 key utility functionalities of veOCEAN:
 
-1. **Hold it** veOCEAN pays **Passive Rewards** every week.
-2. **Allocate it** veOCEAN pays **Active Rewards** every week to the top performing Datasets, Algorithms, dApps, and more.
-3. **Delegate it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
+1. **Holding it** veOCEAN pays **Passive Rewards** every week.
+2. **Allocating it** veOCEAN pays **Active Rewards** every week to the top performing Datasets, Algorithms, dApps, and more.
+3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
 4. **2x Publisher Stake** If you are a publisher to the Ocean marketplace, allocating veOCEAN to your own Dataset gives your veOCEAN a 2x Bonus. This is an incentive for publishers to engage with their assets and benefit from from the protocol further.
 
 ## veOCEAN holders retain earnings from two sources: **Active & Passive Rewards**
 
 ### Active Rewards from Community Fees
 
-Every transaction in Ocean Market and Ocean backend generates transaction fees, some of which go to the community. 50% of the community fees will go to veOCEAN holders; the rest will go to Ocean community-oriented traction programs.
-
-All earnings here are passive.
+Every transaction in Ocean Market and Ocean Protocol backend infrastructure generates transaction fees, some of which are distributed to the community. 50% of the community fees will go to veOCEAN holders, 50% will rest and allocate to Ocean community-oriented traction programs.
 
 ### Passive Rewards from Data Farming
 

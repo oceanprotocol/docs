@@ -1,12 +1,22 @@
 ---
-description: An introduction to Data Farming and Ocean Protocol's incentive mechanism
+description: An introduction to Data Farming and Ocean Protocol incentive mechanisms
 ---
 
 # Data Farming 101
 
-Data Farming (DF) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem.
+Data Farming (DF) incentivizes sustainable and perpetual growth of Data Consume Volume (DCV) inside the Ocean ecosystem.
 
-It rewards OCEAN to liquidity providers (stakers) as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for data consumption. DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
+Data Consume Volume (DCV) is a metric placed to represent the total $ amount spent on purchases of data assets, fees on executing transactions, sharing data, and more. So, the more data consumed, the more rewards are distributed.
+
+Data Farming rewards OCEAN to liquidity providers (stakers) in two different ways: active and passive rewards. The two reward functions produce variable APYs, contingent user criteria and chosen eligiblity, plus data consume volume (DCV).&#x20;
+
+It’s similar to 'liquidity mining' apart of leading yield farming mechanisms in DeFi, but tuned for data consumption.&#x20;
+
+How Data farming differentiates from yield farming is that Data Farming incentivizes a sustainable supply of polished and high-demand data assets into the protocol.&#x20;
+
+Unlike yield farming in DeFi, data farming has real intrinsic utility for all stakeholders: Liquidity providers (LPs) earn additional tokens, the protocol receives sustainable liquidity, and the users can trust the protocol's secured data assets. It's a win-win situation for all parties involved.
+
+DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
 
 ## Reward Categories
 
@@ -46,7 +56,7 @@ This behavior is inherited from [veCRV](https://curve.readthedocs.io/dao-fees.ht
 
 ## DF Main
 
-DF Main started Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
+[DF Main](https://blog.oceanprotocol.com/ocean-data-farming-main-is-here-49c99602419e) started Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
 
 As of DF29 (Mar 16, 2023), wash consuming is not profitable. So, organically-generated Data Consume Volume is the main driver of active DF rewards.
 
