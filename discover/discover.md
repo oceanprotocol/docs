@@ -18,8 +18,8 @@ The following guides are a greate place to start if you are new to Ocean:
 
 * [Architecture Overview](../developers/core-concepts/architecture.md)
 * [Data NFTs and Datatokens](../developers/core-concepts/datanft-and-datatoken.md)
-* [Publish a data asset](../how-tos/using-ocean-market/marketplace-publish-data-asset.md)
-* [Download a data asset](../how-tos/using-ocean-market/marketplace-download-data-asset.md)
+* [Publish a data asset](../how-tos/marketplace-publish-data-asset.md)
+* [Download a data asset](../how-tos/marketplace-download-data-asset.md)
 
 ## What is our Mission?
 
@@ -43,9 +43,9 @@ As a data scientist or AI practitioner, you can benefit from access to more data
 
 The following guides will help you get started with buying and selling data:
 
-* [Publish a data asset](../how-tos/using-ocean-market/marketplace-publish-data-asset.md)
-* [Download a data asset](../how-tos/using-ocean-market/marketplace-download-data-asset.md)
-* [Publishing with hosting services](../how-tos/using-ocean-market/asset-hosting.md)
+* [Publish a data asset](../how-tos/marketplace-publish-data-asset.md)
+* [Download a data asset](../how-tos/marketplace-download-data-asset.md)
+* [Publishing with hosting services](../how-tos/asset-hosting.md)
 
 ### Build Your Own Data Market
 
