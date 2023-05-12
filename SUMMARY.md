@@ -16,7 +16,7 @@
     * [Arweave](how-tos/asset-hosting/arweave.md)
     * [AWS](how-tos/asset-hosting/aws.md)
     * [Azure Cloud](how-tos/asset-hosting/azure-cloud.md)
-  * [How to Get veOCEAN](how-tos/how-to-get-veocean.md)
+  * [Get veOCEAN Tokens](how-tos/get-veocean-tokens.md)
   * [Compute-to-Data](how-tos/compute-to-data.md)
   * [Guide to Ocean Market](how-tos/using-ocean-market.md)
   * [Liquidity Pools \[deprecated\]](how-tos/remove-liquidity-using-etherscan.md)
