@@ -15,6 +15,8 @@
     * [Download NFT Assets](how-tos/using-ocean-market/marketplace-download-data-asset.md)
     * [Host Your Assets](how-tos/using-ocean-market/asset-hosting.md)
     * [Liquidity Pools \[deprecated\]](how-tos/using-ocean-market/remove-liquidity-using-etherscan.md)
+  * [How to Get veOCEAN](how-tos/how-to-get-veocean.md)
+  * [Compute-to-Data](how-tos/compute-to-data.md)
 * [📚 Developer Tutorials](tutorials/README.md)
   * [Build a Marketplace](tutorials/build-a-marketplace/README.md)
     * [Forking Ocean Market](tutorials/build-a-marketplace/forking-ocean-market.md)
