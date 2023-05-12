@@ -1,26 +1,36 @@
 ---
-description: '****DRAFT include images in each of these steps'
+description: >-
+  Learn how to get veOCEAN tokens for our Data Farming dapp to generate OCEAN
+  rewards
 ---
 
 # How to Get veOCEAN
 
-Step 1&#x20;
+### Data Farming
 
-* Acquire $OCEAN via DEX / CEX
+\[TO DO: What is Data Farming]
 
-Step 2
+### Setup
 
-* Move Ocean in self custody wallet
+#### **Step 1 - Get OCEAN tokens**
 
-Step 3
+* Acquire $OCEAN via a decentralized exchange (DEX) such as Uniswap or a centralized exchange (CEX) such as Binance, Coinbase, etc.
+
+#### **Step 2 - Send to self-custody wallet**
+
+* Send your OCEAN tokens to a self-custody wallet that supports ERC-20 tokens, like Metamask for example.
+
+#### **Step 3 - Go to Ocean Protocol's Data Farming dapp**
 
 * Go to [https://df.oceandao.org/](https://df.oceandao.org/)
 
-Step 4
+#### Step 4 - Lock your OCEAN for veOCEAN
 
-* You have entered Data farming DAPP. Here you will be able to choose allocations towards active and passive rewards. First, you will need to set up “passive” rewards to get veOCEAN.\
+Click on the purple circles in our interactive demo to walk throught the steps for locking your OCEAN tokens for veOCEAN tokens.
 
+{% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %}
 
+\
 Step 5&#x20;
 
 * Connect your wallet via ETH mainnet and sync with df.oceandao.org&#x20;
