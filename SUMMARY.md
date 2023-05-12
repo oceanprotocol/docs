@@ -18,7 +18,7 @@
     * [Azure Cloud](how-tos/asset-hosting/azure-cloud.md)
   * [How to Get veOCEAN](how-tos/how-to-get-veocean.md)
   * [Compute-to-Data](how-tos/compute-to-data.md)
-  * [Using Ocean Market](how-tos/using-ocean-market.md)
+  * [Guide to Ocean Market](how-tos/using-ocean-market.md)
   * [Liquidity Pools \[deprecated\]](how-tos/remove-liquidity-using-etherscan.md)
 * [📚 Developer Tutorials](tutorials/README.md)
   * [Build a Marketplace](tutorials/build-a-marketplace/README.md)
