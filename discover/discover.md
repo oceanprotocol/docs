@@ -45,7 +45,7 @@ The following guides will help you get started with buying and selling data:
 
 * [Publish a data asset](../how-tos/marketplace-publish-data-asset.md)
 * [Download a data asset](../how-tos/marketplace-download-data-asset.md)
-* [Publishing with hosting services](../how-tos/asset-hosting.md)
+* [Publishing with hosting services](../how-tos/asset-hosting/)
 
 ### Build Your Own Data Market
 
