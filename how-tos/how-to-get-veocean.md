@@ -24,37 +24,20 @@ description: >-
 
 * Go to [https://df.oceandao.org/](https://df.oceandao.org/)
 
-#### Step 4 - Lock your OCEAN for veOCEAN
+#### Step 4 - Connect Your Wallet + Lock your OCEAN for veOCEAN
 
-Click on the purple circles in our interactive demo to walk throught the steps for locking your OCEAN tokens for veOCEAN tokens.
+* Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
 
 {% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %}
 
-\
-Step 5&#x20;
+In this step you will:
 
-* Connect your wallet via ETH mainnet and sync with df.oceandao.org&#x20;
+* Enter the amount of OCEAN tokens that you are going to lock up
+* Select a Lock End Date indicating how many weeks you’re going to lock up your OCEAN tokens. As the Lock End Date goes farther into the future, your Lock Multiplier increases. Selecting a 4 year Lock End Date gives you the maximum lock multiplier of 1 veOCEAN per 1 OCEAN locked.
+* Click on the checkbox to agree to the disclaimer.
+* Click the pink “Approve # OCEAN” button
+* Accept the transaction in your wallet.
+* Click the “Create Lock” button.
+* Accept the transaction in your wallet.
 
-Step 6&#x20;
-
-* Click on: “Get veOCEAN, and follow the appropriate commands inside your wallet.
-
-Step 7
-
-*   **Create your Lock. Here you will need to**:
-
-    * Enter the amount of OCEAN you are going to lock up
-    *   Choose how many weeks you’re going to lock up OCEAN
-
-        * Example: 4 years = 1 veOCEAN
-
-
-    * Click on the toggle to agree to the disclaimer.
-    * Click “Allow”
-    * Accept the transaction.
-
-
-* After the transaction ends, click “Create Lock”
-  * Accept the transaction.
-
-You should now be appropriately locked with the right amount of veOCEAN.
+Congratulations! You have now locked your OCEAN tokens for veOCEAN tokens.
