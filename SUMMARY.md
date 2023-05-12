@@ -41,7 +41,6 @@
 * [💰 Rewards](rewards/README.md)
   * [Data Farming 101](rewards/df-intro.md)
   * [veOCEAN](rewards/veocean.md)
-  * [How to get veOCEAN](rewards/how-to-get-veocean.md)
   * [Data Farming Background](rewards/df-background.md)
   * [Emissions & APYs](rewards/emissions-apys.md)
   * [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
