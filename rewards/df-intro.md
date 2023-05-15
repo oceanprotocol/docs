@@ -6,11 +6,11 @@ description: An introduction to Data Farming and Ocean Protocol incentive mechan
 
 Data Farming (DF) incentivizes sustainable and perpetual growth of Data Consume Volume (DCV) inside the Ocean ecosystem.
 
+DFing is similar to 'liquidity mining' apart of leading yield farming mechanisms in DeFi, but tuned for Data Consumption Volume (DCV).
+
 Data Consume Volume (DCV) is a metric placed to represent the total $ amount spent on purchases of data assets, fees on executing transactions, sharing data, and more. So, the more data consumed, the more rewards are distributed.
 
 Data Farming rewards OCEAN to liquidity providers (stakers) in two different ways: active and passive rewards. The two reward functions produce variable APYs, contingent user criteria and chosen eligiblity, plus data consume volume (DCV).&#x20;
-
-It’s similar to 'liquidity mining' apart of leading yield farming mechanisms in DeFi, but tuned for data consumption.&#x20;
 
 How Data farming differentiates from yield farming is that Data Farming incentivizes a sustainable supply of polished and high-demand data assets into the protocol.&#x20;
 
