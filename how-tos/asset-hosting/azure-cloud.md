@@ -18,7 +18,7 @@ Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might al
 
 Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
-![Create a storage account](../../.gitbook/assets/hosting/azure1.png)
+![Select storage accounts](../../.gitbook/assets/hosting/azure1.png)
 
 **Create a new storage account**
 
