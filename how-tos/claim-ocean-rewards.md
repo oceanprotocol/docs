@@ -12,12 +12,12 @@ Want to begin [data farming](https://df.oceandao.org)? Start [here](get-veocean-
 
 Go to [https://df.oceandao.org/](https://df.oceandao.org), and click the Rewards [link](https://df.oceandao.org/activerewards) at the top of the page.
 
-<figure><img src="../.gitbook/assets/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Rewards-Tab (1).png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
 
 ### Step 2 - Click the pink 'Claim OCEAN Rewards' buttons 🛎️
 
 At the bottom of the 'Passive Rewards' and 'Active Rewards' panels are the 'Claim OCEAN Rewards' buttons that appear pink and clickable on Thursdays.
 
-This is where you click to claim your rewards! Easy peasy. You will need to approve the transactions with your wallet.&#x20;
+This is where you click to claim your rewards! Easy peasy. You will need to approve the transactions with your wallet.
 
 #### Note: If you forget to claim your OCEAN rewards, then do not worry because they continue to accumulate! You can claim them after Thursday. 😃
