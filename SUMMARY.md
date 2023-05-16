@@ -21,6 +21,7 @@
   * [Compute-to-Data](how-tos/compute-to-data.md)
   * [Guide to Ocean Market](how-tos/using-ocean-market.md)
   * [Liquidity Pools \[deprecated\]](how-tos/remove-liquidity-using-etherscan.md)
+  * [How to Data Farm](how-tos/how-to-data-farm.md)
 * [📚 Developer Tutorials](tutorials/README.md)
   * [Build a Marketplace](tutorials/build-a-marketplace/README.md)
     * [Forking Ocean Market](tutorials/build-a-marketplace/forking-ocean-market.md)
