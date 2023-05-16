@@ -23,6 +23,8 @@ Read on, anon, if you are interested in the nitty gritty of security details!
 ### Security Considerations
 
 {% embed url="https://media.giphy.com/media/81xwEHX23zhvy/giphy.gif" %}
+Stay safe, my friends
+{% endembed %}
 
 Through publishing, the URL/TX ID/CID required to access the asset is encrypted and stored as a part of the NFT's [DDO](../../developers/core-concepts/did-ddo.md) on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts it and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the file and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to **allow only the Provider's IP address to access the data**. But, not all hosting services provide this feature. **So, you must carefully consider the security features while choosing a hosting service.**
 
