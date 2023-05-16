@@ -1,6 +1,6 @@
 # Liquidity Pools \[deprecated]
 
-In previous versions of Ocean liquidity pools and dynamic pricing were supported. These features have been deprecated and we now advise everyone to remove their liquidity from the remaining pools. It is no longer possible to do this via Ocean Market, so please follow this guide to remove your liquidity via etherscan.
+Liquidity pools and dynamic pricing used to be supported in previous versions of the Ocean Market. However, these features have been deprecated and now we advise everyone to remove their liquidity from the remaining pools. It is no longer possible to do this via Ocean Market, so please follow this guide to remove your liquidity via etherscan.
 
 ## Remove liquidity using Etherscan
 
