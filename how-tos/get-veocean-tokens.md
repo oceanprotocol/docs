@@ -1,8 +1,8 @@
 ---
-description: Learn how to get veOCEAN tokens to use the Data Farming dapp
+description: Learn how to get veOCEAN tokens to use the Data Farming dapp  🧑‍🌾🥕
 ---
 
-# How to Get veOCEAN
+# Get veOCEAN Tokens
 
 ### What is veOCEAN?
 
