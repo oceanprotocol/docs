@@ -42,7 +42,7 @@ Ocean Protocol is also deployed to Binance Smart Chain (BSC), which is another p
 
 **Bridge**
 
-Check our BSC Bridge [guide](../../core-concepts/networks/bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
+Check our BSC Bridge [guide](bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 
