@@ -18,4 +18,4 @@ At the bottom of the 'Passive Rewards' and 'Active Rewards' panels are the 'Clai
 
 This is where you click to claim your rewards! Easy peasy. You will need to approve the transactions with your wallet.&#x20;
 
-#### Note: If you forget to claim your OCEAN rewards, then do not worry because they continue to accumulate and you can claim them after Thursday.
+#### Note: If you forget to claim your OCEAN rewards, then do not worry because they continue to accumulate! You can claim them after Thursday. 😃
