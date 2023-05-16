@@ -16,15 +16,17 @@ The most important thing to remember is that wherever you host your asset... it 
 
 In this section, we'll walk you through three options to store your assets: Arweave (decentralized storage), AWS (centralized storage), and Azure (centralized storage). Let's goooooo!
 
-Read on, anon, if you are interested in the nitty gritty of security details!
+Read on, anon, if you are interested in the security details!
 
 ### Security Considerations
 
 {% embed url="https://media.giphy.com/media/81xwEHX23zhvy/giphy.gif" %}
-Stay safe, my friends
+These guys know what's up
 {% endembed %}
 
-Through publishing, the URL/TX ID/CID required to access the asset is encrypted and stored as a part of the NFT's [DDO](../../developers/core-concepts/did-ddo.md) on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts it and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the file and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to **allow only the Provider's IP address to access the data**. But, not all hosting services provide this feature. **So, you must carefully consider the security features while choosing a hosting service.**
+When you publish your asset as an NFT, then the URL/TX ID/CID required to access the asset is encrypted and stored as a part of the NFT's [DDO](../../developers/core-concepts/did-ddo.md) on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts the DDO and acts as a proxy to serve the asset.&#x20;
+
+We recommend implementing a security policy that allows **only the Provider's IP address to access the file** and blocks requests from other unauthorized actors is recommended. Since not all hosting services provide this feature, **you must carefully consider the security features while choosing a hosting service.**
 
 ⚠️  **Please use a proper hosting solution to keep your files.** Systems like `Google Drive` are not specifically designed for this use case. They include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
 

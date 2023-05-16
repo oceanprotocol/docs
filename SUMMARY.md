@@ -46,7 +46,7 @@
   * [Emissions & APYs](rewards/emissions-apys.md)
   * [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
 * [📊 Data Science](data-science.md)
-* [👨💻 Developers](developers/README.md)
+* [👨💻 👨💻 Developers](developers/README.md)
   * [Core concepts](developers/core-concepts/README.md)
     * [Architecture Overview](developers/core-concepts/architecture.md)
     * [Data NFTs and Datatokens](developers/core-concepts/datanft-and-datatoken.md)
