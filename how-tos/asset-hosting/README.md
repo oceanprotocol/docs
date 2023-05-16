@@ -4,9 +4,9 @@ description: >-
   Arweave, AWS, and Azure.
 ---
 
-# Host NFT Assets
+# Host Assets
 
-### Overview
+Overview
 
 To publish on the Ocean Marketplace, publishers must first host their assets! It is up to the asset publisher to decide where to host the asset. For example, a publisher can store the content on decentralized storage like Arweave or choose a centralized solution like their AWS server, private cloud server, or other third-party hosting services. Through publishing, the information required to access the asset is encrypted and stored as a part of DDO on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts it and acts as a proxy to serve the asset. The DDO only stores the location of the file, which is accessed on-demand by the Provider. Implementing a security policy that allows only the Provider to access the file and blocks requests from other unauthorized actors is recommended. One of the possible ways to achieve this is to allow only the Provider's IP address to access the data. But, not all hosting services provide this feature. So, the publishers must consider the security features while choosing a hosting service.
 
@@ -18,45 +18,7 @@ Publishers can choose any hosting service of their choice. The below section exp
 
 ⚠️ Note **Please use a proper hosting solution to keep your files.** Systems like `Google Drive` are not specifically designed for this use case. They include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
 
-### Decentralized hosting
 
-#### Arweave
-
-[Arweave](https://www.arweave.org/) is a global, permanent, and decentralized data storage layer that allows you to store documents and applications forever. Arweave is different from other decentralized storage solutions in that there is only one up-front cost to upload each file.
-
-**Step 1 - Get a new wallet and AR tokens**
-
-Download & save a new wallet (JSON key file) and receive a small amount of AR tokens for free using the [Arweave faucet](https://faucet.arweave.net/). If you already have an Arweave browser wallet, you can skip to Step 3.
-
-At the time of writing, the faucet provides 0.02 AR which is more than enough to upload a file.
-
-If at any point you need more AR tokens, you can fund your wallet from one of Arweave's [supported exchanges](https://arwiki.wiki/#/en/Exchanges).
-
-**Step 2 - Load the key file into the arweave.app web wallet**
-
-Open [arweave.app](https://arweave.app/) in a browser. Select the '+' icon in the bottom left corner of the screen. Import the JSON key file from step 1.
-
-![Arweave.app import key file](../../.gitbook/assets/hosting/arweave-1.png)
-
-**Step 3 - Upload file**
-
-Select the newly imported wallet by clicking the "blockies" style icon in the top left corner of the screen. Select **Send.** Click the **Data** field and select the file you wish to upload.
-
-![Arweave.app upload file](../../.gitbook/assets/hosting/arweave-2.png)
-
-The fee in AR tokens will be calculated based on the size of the file and displayed near the bottom middle part of the screen. Select **Submit** to submit the transaction.
-
-After submitting the transaction, select **Transactions** and wait until the transaction appears and eventually finalizes. This can take over 5 minutes so please be patient.
-
-**Step 4 - Copy the transaction ID**
-
-Once the transaction finalizes, select it, and copy the transaction ID.
-
-![Arweave.app transaction ID](../../.gitbook/assets/hosting/arweave-3.png)
-
-**Step 5 - Publish the asset with the transaction ID**
-
-![Ocean Market - Publish with arweave transaction ID](../../.gitbook/assets/hosting/arweave-4.png)
 
 ### Centralized hosting
 
