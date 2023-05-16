@@ -38,10 +38,6 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 3 - Upload a file**
 
-![Create a blob container](../../.gitbook/assets/hosting/azure5.png)
-
-**Step 3 - Upload a file**
-
 ![Upload a file](<../../.gitbook/assets/hosting/azure6 (1).png>)
 
 **Step 4 - Share the file**
