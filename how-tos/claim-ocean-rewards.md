@@ -10,7 +10,9 @@ Want to begin [data farming](https://df.oceandao.org)? Start [here](get-veocean-
 
 ### Step 1 - Navigate to the Data Farming Rewards page&#x20;
 
-Go to [https://df.oceandao.org/](https://df.oceandao.org). Click the Rewards [link](https://df.oceandao.org/activerewards) at the top of the page.
+Go to [https://df.oceandao.org/](https://df.oceandao.org), and click the Rewards [link](https://df.oceandao.org/activerewards) at the top of the page.
+
+<figure><img src="../.gitbook/assets/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
 
 ### Step 2 - Click the pink 'Claim OCEAN Rewards' buttons 🛎️
 
