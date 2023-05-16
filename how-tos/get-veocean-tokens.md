@@ -6,11 +6,11 @@ description: Learn how to get veOCEAN tokens to use the Data Farming dapp  🧑�
 
 ### What is veOCEAN? 🌊
 
-veOCEAN is a 'voting escrowed' token used in Ocean Protocol's Data Farming dapp to generate passive and active OCEAN token rewards. [Data Farming](https://df.oceandao.org) is our dapp to incentivize the publishing and curation of high quality assets on the [Ocean Market](https://market.oceanprotocol.com). If you are curious to learn more about Data Farming, check out our video tutorial!
+veOCEAN is a 'voting escrowed' token used in Ocean Protocol's Data Farming dapp to **generate passive and active OCEAN token rewards**. [Data Farming](https://df.oceandao.org) is our dapp to incentivize the publishing and curation of high quality assets on the [Ocean Market](https://market.oceanprotocol.com). Are you curious to learn more about Data Farming or you're a visual learner? Check out our video tutorial below!
 
 {% embed url="https://www.youtube.com/watch?v=zAQlPHkK3og" %}
 
-### Setup
+### How to Get veOCEAN
 
 #### **Step 1 - Get OCEAN tokens**
 
