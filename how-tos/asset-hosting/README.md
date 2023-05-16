@@ -6,11 +6,9 @@ description: How to host your data and algorithm NFT assets like a boss 😎
 
 ### TL; DR
 
-The most important thing to remember is that wherever you host your asset... it needs to be **reachable & downloadable**. It cannot live behind a private firewall such as a private Github repo! You will need to **use a proper hosting service** - Google Drive won't work!
+The most important thing to remember is that wherever you host your asset... it needs to be **reachable & downloadable**. It cannot live behind a private firewall such as a private Github repo. You also will need to **use a proper hosting service** - Google Drive won't work!
 
 **The URL to your asset is encrypted in the publishing process!**
-
-More details below!
 
 ### Publish. Cool. Things.
 
