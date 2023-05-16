@@ -6,6 +6,33 @@ coverY: 0
 
 # 🌊 Discover
 
+As AI becomes more prevalent, society is increasingly reliant on data. However, a few organizations with massive data assets and AI capabilities have gained worrying levels of control, which poses a threat to a free and open society.
+
+The concentration of vast datasets in the hands of a few organizations can lead to significant negative consequences for society. These include:
+
+1. **⚠️ The centralization of power and influence**: With only a few organizations controlling large datasets, other entities may struggle to compete, leading to a concentration of resources and power in the hands of a select few.
+2. **⚠️ Impaired innovation**: The lack of access to data by smaller players may stifle innovation in the industry. Smaller entities may not have the necessary resources to develop new products or services, limiting progress and competition.
+3. **⚠️ Privacy concerns**: The concentrated control of data assets increases the risk of privacy breaches and abuses, leading to concerns over personal data use, surveillance, and the potential for discrimination based on data analysis.
+4. **⚠️ Centralized decision-making**: With a small number of organizations controlling data, the decision-making process based on that data may become centralized and opaque, resulting in a lack of transparency and potentially detrimental outcomes for society.
+
+By providing a decentralized and open platform for data sharing, **Ocean Protocol** aims to address these concerns and create a more equitable and collaborative data economy.
+
+Our mission is to provide a decentralized and open platform for global data sharing. We believe that data is a valuable resource that should be accessible to everyone, not just a select few large corporations. By creating a secure and transparent data marketplace, we aim to empower data providers to monetize their data and enable data consumers to access high-quality data for their projects. Ultimately, we seek to establish a more equitable and collaborative data economy that benefits businesses, researchers, and communities worldwide.
+
+To learn more about the team behind Ocean, please visit our [website](https://oceanprotocol.com/about).
+
+Are you curious about Ocean Protocol's mission and how we're making a difference in the world? Then you won't want to miss this video featuring our co-founder, Trent McConaghy. He'll share some fascinating insights into what we're doing and why it matters.
+
+{% embed url="https://youtu.be/XN_PHg1K61w" fullWidth="false" %}
+
+
+
+What?
+
+How?&#x20;
+
+
+
 ## What is Ocean?
 
 Ocean provides the next generation of tools to unlock data at a large scale. Ocean makes it easy to publish and consume data services.
@@ -27,7 +54,7 @@ The following guides are a greate place to start if you are new to Ocean:
 
 Society is becoming increasingly reliant on data, especially with the advent of AI. However, a small handful of organizations with both massive data assets and AI capabilities attained worrying levels of control which is a danger to a free and open society.
 
-Our team and community is committed to kick-starting a New Data Economy that reaches every single person, company and device, giving power back to data owners and enabling people to capture value from data to better our world.
+Our team and community are committed to kick-starting a New Data Economy that reaches every single person, company and device, giving power back to data owners and enabling people to capture value from data to better our world.
 
 Find out more about the people building Ocean on our [site](https://oceanprotocol.com/about).
 
