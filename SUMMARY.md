@@ -12,7 +12,7 @@
 * [📜 How To's](how-tos/README.md)
   * [Publish an NFT](how-tos/marketplace-publish-data-asset.md)
   * [Download NFT Assets](how-tos/marketplace-download-data-asset.md)
-  * [Host NFT Assets](how-tos/asset-hosting/README.md)
+  * [Host Assets](how-tos/asset-hosting/README.md)
     * [Arweave](how-tos/asset-hosting/arweave.md)
     * [AWS](how-tos/asset-hosting/aws.md)
     * [Azure Cloud](how-tos/asset-hosting/azure-cloud.md)
