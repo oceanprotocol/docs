@@ -7,22 +7,78 @@ description: >-
 
 # Compute Options
 
+
+#### Algorithm Metadata
+
+An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
+
+| Attribute | Type | Description |
+| ------------------------ | ----------------------- |  -------------------------------------- |
+| **`language`** | `string` | Language used to implement the software. |
+| **`version`** | `string` | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object that defines required consumer input before running the algorithm |
+| **`container`*** | `container` | Object describing the Docker container image. See below |
+
+\* Required
+
+The `container` object has the following attributes defining the Docker image for running the algorithm:
+
+| Attribute        | Type     | Description                                                       |
+| ---------------- | -------- | ----------------------------------------------------------------- |
+| **`entrypoint`*** | `string` | The command to execute, or script to run inside the Docker image. |
+| **`image`***      | `string` | Name of the Docker image.                                         |
+| **`tag`***        | `string` | Tag of the Docker image.                                          |
+| **`checksum`***   | `string` | Digest of the Docker image. (ie: sha256:xxxxx)                    |
+
+\* Required
+
+<details>
+
+<summary>Algorithm Metadata Example</summary>
+
+```json 
+{ 
+  "metadata": { 
+    "created": "2020-11-15T12:27:48Z", 
+    "updated": "2021-05-17T21:58:02Z", 
+    "description": "Sample description", 
+    "name": "Sample algorithm asset", 
+    "type": "algorithm", 
+    "author": "OPF", 
+    "license": "https://market.oceanprotocol.com/terms", 
+    "algorithm": { "language": "Node.js", "version": "1.0.0", 
+      "container": { 
+        "entrypoint": "node $ALGO", 
+        "image": "ubuntu", 
+        "tag": "latest", 
+        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550" 
+        }, 
+        "consumerParameters": {} 
+        } 
+  } 
+} 
+```
+
+</details>
+
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-| Attribute                             | Type                                  | Required | Description                                                                                                                                                                                                               |
-| ------------------------------------- | ------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `allowRawAlgorithm`                   | `boolean`                             | **✓**    | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| `allowNetworkAccess`                  | `boolean`                             | **✓**    | If `true`, the algorithm job will have network access.                                                                                                                                                                    |
-| `publisherTrustedAlgorithmPublishers` | Array of `string`                     | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.                                              |
-| `publisherTrustedAlgorithms`          | Array of `publisherTrustedAlgorithms` | **✓**    | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).                                       |
+| Attribute | Type | Description |
+| -------- | -------- | -------- |
+| **`allowRawAlgorithm`*** | `boolean` | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
+| **`allowNetworkAccess`*** | `boolean` | If `true`, the algorithm job will have network access. |
+| **`publisherTrustedAlgorithmPublishers`*** | Array of `string` | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.                                              |
+| **`publisherTrustedAlgorithms`***          | Array of `publisherTrustedAlgorithms` | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).                                       |
+
+\* Required
 
 The `publisherTrustedAlgorithms` is an array of objects with the following structure:
 
-| Attribute                      | Type     | Required | Description                                                 |
-| ------------------------------ | -------- | -------- | ----------------------------------------------------------- |
-| **`did`**                      | `string` | **✓**    | The DID of the algorithm which is trusted by the publisher. |
-| **`filesChecksum`**            | `string` | **✓**    | Hash of algorithm's files (as `string`).                    |
-| **`containerSectionChecksum`** | `string` | **✓**    | Hash of algorithm's image details (as `string`).            |
+| Attribute                      | Type     | Description                                                 |
+| ------------------------------ | -------- | ----------------------------------------------------------- |
+| **`did`**                      | `string` | The DID of the algorithm which is trusted by the publisher. |
+| **`filesChecksum`**            | `string` | Hash of algorithm's files (as `string`).                    |
+| **`containerSectionChecksum`** | `string` | Hash of algorithm's image details (as `string`).            |
 
 To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
 

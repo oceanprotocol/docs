@@ -208,59 +208,6 @@ This object holds information describing the actual asset.
 
 </details>
 
-#### Algorithm Metadata
-
-An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
-
-| Attribute                | Type                                                  | Description                                                                                |
-| ------------------------ | ----------------------------------------------------- |  ------------------------------------------------------------------------------------------ |
-| **`language`**           | `string`                                              | Language used to implement the software.                                                   |
-| **`version`**            | `string`                                              | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object that defines required consumer input before running the algorithm                |
-| **`container`***          | `container`                                           | Object describing the Docker container image. See below                                    |
-
-\* Required
-
-The `container` object has the following attributes defining the Docker image for running the algorithm:
-
-| Attribute        | Type     | Description                                                       |
-| ---------------- | -------- | ----------------------------------------------------------------- |
-| **`entrypoint`*** | `string` | The command to execute, or script to run inside the Docker image. |
-| **`image`***      | `string` | Name of the Docker image.                                         |
-| **`tag`***        | `string` | Tag of the Docker image.                                          |
-| **`checksum`***   | `string` | Digest of the Docker image. (ie: sha256:xxxxx)                    |
-
-\* Required
-
-<details>
-
-<summary>Algorithm Metadata Example</summary>
-
-```json 
-{ 
-  "metadata": { 
-    "created": "2020-11-15T12:27:48Z", 
-    "updated": "2021-05-17T21:58:02Z", 
-    "description": "Sample description", 
-    "name": "Sample algorithm asset", 
-    "type": "algorithm", 
-    "author": "OPF", 
-    "license": "https://market.oceanprotocol.com/terms", 
-    "algorithm": { "language": "Node.js", "version": "1.0.0", 
-      "container": { 
-        "entrypoint": "node $ALGO", 
-        "image": "ubuntu", 
-        "tag": "latest", 
-        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550" 
-        }, 
-        "consumerParameters": {} 
-        } 
-  } 
-} 
-```
-
-</details>
-
 #### Services
 
 Services define the access for an asset, and each service is represented by its respective datatoken.
@@ -277,8 +224,8 @@ An asset should have at least one service to be actually accessible, and can hav
 | **`serviceEndpoint`*** | `string` | Provider URL (schema + host) |
 | **`files`*** | [Files](did-ddo.md#files) | Encrypted file. |
 | **`timeout`*** | `number` | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`compute`**** | [Compute](did-ddo.md#compute-options) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources. |
-| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object the defines required consumer input before consuming the asset |
+| **`compute`**** | [Compute](developers/compute-to-data/compute-options.md) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources. |
+| **`consumerParameters`** | [Consumer Parameters](developers/compute-to-data/compute-options.md#consumer-parameters) | An object the defines required consumer input before consuming the asset |
 | **`additionalInformation`** | Object | Stores additional information, this is customizable by publisher |
 
 \* Required&#x20;
