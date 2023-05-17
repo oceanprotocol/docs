@@ -44,7 +44,10 @@ We also collect some [example images](https://github.com/oceanprotocol/algo_dock
 
 When publishing an algorithm through the [Ocean Market](https://market.oceanprotocol.com), these properties can be set via the publish UI.
 
-### Environment Examples
+
+<details>
+
+<summary>Environment Examples</summary>
 
 Run an algorithm written in JavaScript/Node.js, based on Node.js v14:
 
@@ -73,12 +76,13 @@ Run an algorithm written in Python, based on Python v3.9:
   }
 }
 ```
+</details>
 
 ### Data Storage
 
 As part of a compute job, every algorithm runs in a K8s pod with these volumes mounted:
 
-| Path            | Permissions | Usage                                                                                                                                                     |
+| Path | Permissions | Usage |
 | --------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/data/inputs`  | read        | Storage for input data sets, accessible only to the algorithm running in the pod. Contents will be the files themselves, inside indexed folders e.g. `/data/inputs/{did}/{service_id}`.  |
 | `/data/ddos`    | read        | Storage for all DDOs involved in compute job (input data set + algorithm). Contents will json files containing the DDO structure.                         |
@@ -97,7 +101,10 @@ For every algorithm pod, the Compute to Data environment provides the following 
 | `DIDS`               | An array of DID strings containing the input datasets. |
 | `TRANSFORMATION_DID` | The DID of the algorithm.                              |
 
-## Example: JavaScript/Node.js
+
+<details>
+
+<summary>Example: JavaScript/Node.js</summary>
 
 The following is a simple JavaScript/Node.js algorithm, doing a line count for ALL input datasets. The algorithm is not using any environment variables, but instead it's scanning the `/data/inputs` folder.
 
@@ -152,8 +159,11 @@ To run this, use the following container object:
   }
 }
 ```
+</details>
 
-## Example: Python
+<details>
+
+<summary>Example: Python</summary>
 
 A more advanced line counting in Python, which relies on environment variables and constructs a job object, containing all the input files & DDOs
 
@@ -233,3 +243,57 @@ To run this algorithm, use the following `container` object:
   }
 }
 ```
+</details>
+
+### Algorithm Metadata
+
+An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
+
+| Attribute | Type | Description |
+| ------------------------ | ----------------------- |  -------------------------------------- |
+| **`language`** | `string` | Language used to implement the software. |
+| **`version`** | `string` | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object that defines required consumer input before running the algorithm |
+| **`container`*** | `container` | Object describing the Docker container image. See below |
+
+\* Required
+
+The `container` object has the following attributes defining the Docker image for running the algorithm:
+
+| Attribute        | Type     | Description                                                       |
+| ---------------- | -------- | ----------------------------------------------------------------- |
+| **`entrypoint`*** | `string` | The command to execute, or script to run inside the Docker image. |
+| **`image`***      | `string` | Name of the Docker image.                                         |
+| **`tag`***        | `string` | Tag of the Docker image.                                          |
+| **`checksum`***   | `string` | Digest of the Docker image. (ie: sha256:xxxxx)                    |
+
+\* Required
+
+<details>
+
+<summary>Algorithm Metadata Example</summary>
+
+```json 
+{ 
+  "metadata": { 
+    "created": "2020-11-15T12:27:48Z", 
+    "updated": "2021-05-17T21:58:02Z", 
+    "description": "Sample description", 
+    "name": "Sample algorithm asset", 
+    "type": "algorithm", 
+    "author": "OPF", 
+    "license": "https://market.oceanprotocol.com/terms", 
+    "algorithm": { "language": "Node.js", "version": "1.0.0", 
+      "container": { 
+        "entrypoint": "node $ALGO", 
+        "image": "ubuntu", 
+        "tag": "latest", 
+        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550" 
+        }, 
+        "consumerParameters": {} 
+        } 
+  } 
+} 
+```
+
+</details>

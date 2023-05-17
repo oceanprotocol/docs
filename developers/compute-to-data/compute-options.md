@@ -8,59 +8,6 @@ description: >-
 # Compute Options
 
 
-#### Algorithm Metadata
-
-An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
-
-| Attribute | Type | Description |
-| ------------------------ | ----------------------- |  -------------------------------------- |
-| **`language`** | `string` | Language used to implement the software. |
-| **`version`** | `string` | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object that defines required consumer input before running the algorithm |
-| **`container`*** | `container` | Object describing the Docker container image. See below |
-
-\* Required
-
-The `container` object has the following attributes defining the Docker image for running the algorithm:
-
-| Attribute        | Type     | Description                                                       |
-| ---------------- | -------- | ----------------------------------------------------------------- |
-| **`entrypoint`*** | `string` | The command to execute, or script to run inside the Docker image. |
-| **`image`***      | `string` | Name of the Docker image.                                         |
-| **`tag`***        | `string` | Tag of the Docker image.                                          |
-| **`checksum`***   | `string` | Digest of the Docker image. (ie: sha256:xxxxx)                    |
-
-\* Required
-
-<details>
-
-<summary>Algorithm Metadata Example</summary>
-
-```json 
-{ 
-  "metadata": { 
-    "created": "2020-11-15T12:27:48Z", 
-    "updated": "2021-05-17T21:58:02Z", 
-    "description": "Sample description", 
-    "name": "Sample algorithm asset", 
-    "type": "algorithm", 
-    "author": "OPF", 
-    "license": "https://market.oceanprotocol.com/terms", 
-    "algorithm": { "language": "Node.js", "version": "1.0.0", 
-      "container": { 
-        "entrypoint": "node $ALGO", 
-        "image": "ubuntu", 
-        "tag": "latest", 
-        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550" 
-        }, 
-        "consumerParameters": {} 
-        } 
-  } 
-} 
-```
-
-</details>
-
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
 | Attribute | Type | Description |
