@@ -48,3 +48,28 @@ with open(input_filename, 'r') as file:
 ```
 
 ### Javascript
+
+```
+const fs = require("fs");
+
+var input_folder = "/data/inputs";
+var output_folder = "/data/outputs";
+
+async function processfolder(Path) {
+    var files = fs.readdirSync(Path);
+    for (var i =0; i < files.length; i++) {
+        var file = files[i];
+        var fullpath = Path + "/" + file;
+        if (fs.statSync(fullpath).isDirectory()) {
+            await processfolder(fullpath);
+        } else {
+            <YOUR CODE GOES HERE>
+        }
+    }
+}
+
+<YOUR CODE GOES HERE>
+
+processfolder(input_folder);
+    
+```
