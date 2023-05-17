@@ -8,9 +8,9 @@ description: >-
 
 {% embed url="https://media3.giphy.com/media/cub3pntkz8muQ/giphy.gif?cid=ecf05e47o9fdrqco4jqpeyh7899whqgw5tnd43elr023rykr&ep=v1_gifs_search&rid=giphy.gif" %}
 
-The beginning of any great algorithm for Compute-to-Data first starts by referencing the dataset file correctly on the Docker container. Here is the code in both Python and Javascript for how to correctly reference the dataset file that's local on the Docker container:
+The beginning of any great algorithm for Compute-to-Data first starts by referencing the dataset file correctly on the Docker container. Here is the code in both Python and Javascript for how to correctly reference your dataset file on the Docker container:
 
-### Python
+### Python -  Open the local dataset file
 
 ```
 import csv
@@ -47,7 +47,7 @@ with open(input_filename, 'r') as file:
     <YOUR CODE GOES HERE>
 ```
 
-Note: Here are the following Python libraries that you can use in your code:
+**Note:** Here are the following Python libraries that you can use in your code:
 
 ```
 // Python modules
@@ -63,7 +63,7 @@ wheel
 matplotlib
 ```
 
-### Javascript
+### Javascript - Open the local dataset file
 
 ```
 const fs = require("fs");
