@@ -7,7 +7,7 @@ description: >-
   the DDO standard.
 ---
 
-# DDO Specification
+# DDO Full Specification
 
 **v4.1.0**
 
@@ -25,7 +25,6 @@ A DDO in Ocean has these required attributes:
 | **`metadata`**    | [Metadata](did-ddo.md#metadata)       | Stores an object describing the asset.                                                                         |
 | **`services`**    | [Services](did-ddo.md#services)       | Stores an array of services defining access to the asset.                                                      |
 | **`credentials`** | [Credentials](did-ddo.md#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
-
 
 <details>
 
@@ -168,25 +167,26 @@ A DDO in Ocean has these required attributes:
 
 This object holds information describing the actual asset.
 
-| Attribute | Type | Description |
-| --------------------------- | ------------------------------------------ | --------------------------------- |
+| Attribute                   | Type                                                | Description                                                                                                                                                                                       |
+| --------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`created`**               | `ISO date/time string`                              | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
 | **`updated`**               | `ISO date/time string`                              | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
-| **`description`***           | `string`                                            | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
+| **`description`**\*         | `string`                                            | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
 | **`copyrightHolder`**       | `string`                                            | The party holding the legal copyright. Empty by default.                                                                                                                                          |
-| **`name`***                  | `string`                                            | Descriptive name or title of the asset.                                                                                                                                                           |
-| **`type`***                  | `string`                                            | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
-| **`author`***                | `string`                                            | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
-| **`license`***               | `string`                                            | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
+| **`name`**\*                | `string`                                            | Descriptive name or title of the asset.                                                                                                                                                           |
+| **`type`**\*                | `string`                                            | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
+| **`author`**\*              | `string`                                            | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
+| **`license`**\*             | `string`                                            | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
 | **`links`**                 | Array of `string`                                   | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
 | **`contentLanguage`**       | `string`                                            | The language of the content. Use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                                     |
 | **`tags`**                  | Array of `string`                                   | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
 | **`categories`**            | Array of `string`                                   | Array of categories associated to the asset. Note: recommended to use `tags` instead of this.                                                                                                     |
 | **`additionalInformation`** | Object                                              | Stores additional information, this is customizable by publisher                                                                                                                                  |
-| **`algorithm`****             | [Algorithm Metadata](did-ddo.md#algorithm-metadata) | Information about asset of `type` `algorithm` |
+| **`algorithm`**\*\*         | [Algorithm Metadata](did-ddo.md#algorithm-metadata) | Information about asset of `type` `algorithm`                                                                                                                                                     |
 
-* Required
-** Required for algorithms only
+\* Required&#x20;
+
+\*\* Required for algorithms only
 
 <details>
 
@@ -205,6 +205,7 @@ This object holds information describing the actual asset.
   }
 }
 ```
+
 </details>
 
 #### Algorithm Metadata
@@ -230,30 +231,9 @@ The `container` object has the following attributes defining the Docker image fo
 <details>
 
 <summary>Algorithm Metadata Example</summary>
-```json
-{
-  "metadata": {
-    "created": "2020-11-15T12:27:48Z",
-    "updated": "2021-05-17T21:58:02Z",
-    "description": "Sample description",
-    "name": "Sample algorithm asset",
-    "type": "algorithm",
-    "author": "OPF",
-    "license": "https://market.oceanprotocol.com/terms",
-    "algorithm": {
-      "language": "Node.js",
-      "version": "1.0.0",
-      "container": {
-        "entrypoint": "node $ALGO",
-        "image": "ubuntu",
-        "tag": "latest",
-        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550"
-      },
-      "consumerParameters": {}
-    }
-  }
-}
-```
+
+\`\`\`json { "metadata": { "created": "2020-11-15T12:27:48Z", "updated": "2021-05-17T21:58:02Z", "description": "Sample description", "name": "Sample algorithm asset", "type": "algorithm", "author": "OPF", "license": "https://market.oceanprotocol.com/terms", "algorithm": { "language": "Node.js", "version": "1.0.0", "container": { "entrypoint": "node $ALGO", "image": "ubuntu", "tag": "latest", "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550" }, "consumerParameters": {} } } } \`\`\`
+
 </details>
 
 #### Services
@@ -289,6 +269,7 @@ The `files` field is returned as a `string` which holds the encrypted file URLs.
   "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735"
 }
 ```
+
 </details>
 
 During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider:
@@ -313,9 +294,9 @@ Static URLs.
 
 Parameters:
 
-- `url` - File url, required
-- `method` - The HTTP method, required
-- `headers` - Additional HTTP headers, optional
+* `url` - File url, required
+* `method` - The HTTP method, required
+* `headers` - Additional HTTP headers, optional
 
 ```
 {
@@ -336,7 +317,7 @@ The [Interplanetary File System](https://ipfs.tech/) (IPFS) is a distributed fil
 
 Parameters:
 
-- `hash` - The file hash
+* `hash` - The file hash
 
 ```
 {
@@ -351,9 +332,9 @@ Parameters:
 
 Parameters:
 
-- `url` - Server endpoint url, required
-- `query` - The query to be executed, required
-- `headers` - Additional HTTP headers, optional
+* `url` - Server endpoint url, required
+* `query` - The query to be executed, required
+* `headers` - Additional HTTP headers, optional
 
 ```
 {
@@ -379,9 +360,9 @@ Use a smart contract as data source.
 
 Parameters:
 
-- `chainId` - The chainId used to query the contract, required
-- `address` - The smartcontract address, required
-- `abi` - The function abi (NOT the entire contract abi), required
+* `chainId` - The chainId used to query the contract, required
+* `address` - The smartcontract address, required
+* `abi` - The function abi (NOT the entire contract abi), required
 
 ```
 {
@@ -404,7 +385,7 @@ Parameters:
 
 Parameters:
 
-- `transactionId` - The transaction identifier
+* `transactionId` - The transaction identifier
 
 ```
 {
@@ -415,10 +396,7 @@ Parameters:
 }
 ```
 
-First class integrations supported in the future :
-**`Filecoin`**
-**`Storj`**
-**`SQL`**
+First class integrations supported in the future : **`Filecoin`** **`Storj`** **`SQL`**
 
 A service can contain multiple files, using multiple storage types.
 
@@ -487,9 +465,11 @@ To produce `containerSectionChecksum`:
 ```js
 sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum);
 ```
+
 <details>
 
 <summary>Compute Options Example</summary>
+
 Example:
 
 ```json
@@ -542,8 +522,8 @@ Example:
 
 Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job. Examples:
 
-- The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher defines a field called `sampling` and asks the buyer to enter a value. This parameter is then added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
-- An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Compute-to-Data pod for the algorithm to read and use it.
+* The publisher needs to know the sampling interval before the buyer downloads it. Suppose the dataset URL is `https://example.com/mydata`. The publisher defines a field called `sampling` and asks the buyer to enter a value. This parameter is then added to the URL of the published dataset as query parameters: `https://example.com/mydata?sampling=10`.
+* An algorithm that needs to know the number of iterations it should perform. In this case, the algorithm publisher defines a field called `iterations`. The buyer needs to enter a value for the `iterations` parameter. Later, this value is stored in a specific location in the Compute-to-Data pod for the algorithm to read and use it.
 
 The `consumerParameters` is an array of objects. Each object defines a field and has the following structure:
 
@@ -607,6 +587,7 @@ Each `option` is an `object` containing a single key:value pair where the key is
   }
 ]
 ```
+
 </details>
 
 Algorithms will have access to a JSON file located at /data/inputs/algoCustomData.json, which contains the keys/values for input data required. Example:
@@ -656,6 +637,7 @@ Here's an example object with both `"allow"` and `"deny"` entries:
   }
 }
 ```
+
 </details>
 
 #### DDO Checksum
@@ -695,6 +677,7 @@ event MetadataUpdated(
   uint256 blockNumber
 );
 ```
+
 </details>
 
 _Aquarius_ should always verify the checksum after data is decrypted via a _Provider_ API call.
@@ -732,7 +715,6 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 | **`created`**  | `ISO date/time string` | Contains the date of NFT creation.                                                  |
 | **`tokenURI`** | `string`               | tokenURI                                                                            |
 
-
 <details>
 
 <summary>NFT Object Example</summary>
@@ -749,6 +731,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
   }
 }
 ```
+
 </details>
 
 #### Datatokens
@@ -761,7 +744,6 @@ The `datatokens` array contains information about the ERC20 datatokens attached 
 | **`name`**      | `string` | Name of NFT set in contract.                     |
 | **`symbol`**    | `string` | Symbol of NFT set in contract.                   |
 | **`serviceId`** | `string` | ID of the service the datatoken is attached to.  |
-
 
 <details>
 
@@ -785,12 +767,12 @@ The `datatokens` array contains information about the ERC20 datatokens attached 
   ]
 }
 ```
+
 </details>
 
 #### Event
 
 The `event` section contains information about the last transaction that created or updated the DDO.
-
 
 <details>
 
@@ -807,6 +789,7 @@ The `event` section contains information about the last transaction that created
   }
 }
 ```
+
 </details>
 
 #### Purgatory
@@ -818,18 +801,11 @@ Contains information about an asset's purgatory status defined in [`list-purgato
 | **`state`**  | `boolean` | If `true`, asset is in purgatory.                                                             |
 | **`reason`** | `string`  | If asset is in purgatory, contains the reason for being there as defined in `list-purgatory`. |
 
-
 <details>
 
 <summary>Purgatory Example</summary>
-```json
-{
-  "purgatory": {
-    "state": true,
-    "reason": "Copyright violation"
-  }
-}
-```
+
+\`\`\`json { "purgatory": { "state": true, "reason": "Copyright violation" } } \`\`\`
 
 ```json
 {
@@ -838,6 +814,7 @@ Contains information about an asset's purgatory status defined in [`list-purgato
   }
 }
 ```
+
 </details>
 
 #### Statistics
@@ -847,7 +824,6 @@ The `stats` section contains different statistics fields.
 | Attribute    | Type     | Description                                                                                                  |
 | ------------ | -------- | ------------------------------------------------------------------------------------------------------------ |
 | **`orders`** | `number` | How often an asset was ordered, meaning how often it was either downloaded or used as part of a compute job. |
-
 
 <details>
 
@@ -860,4 +836,5 @@ The `stats` section contains different statistics fields.
   }
 }
 ```
+
 </details>
