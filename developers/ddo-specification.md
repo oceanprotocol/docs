@@ -26,26 +26,167 @@ A DDO in Ocean has these required attributes:
 | **`services`**    | [Services](did-ddo.md#services)       | Stores an array of services defining access to the asset.                                                      |
 | **`credentials`** | [Credentials](did-ddo.md#credentials) | Describes the credentials needed to access a dataset in addition to the `services` definition.                 |
 
+
+<details>
+
+<summary>Full Enhanced DDO Example</summary>
+
+```json
+{
+  "@context": ["https://w3id.org/did/v1"],
+  "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
+  "version": "4.1.0",
+  "chainId": 1,
+  "nftAddress": "0x123",
+  "metadata": {
+    "created": "2020-11-15T12:27:48Z",
+    "updated": "2021-05-17T21:58:02Z",
+    "description": "Sample description",
+    "name": "Sample asset",
+    "type": "dataset",
+    "author": "OPF",
+    "license": "https://market.oceanprotocol.com/terms"
+  },
+  "services": [
+    {
+      "id": "1",
+      "type": "access",
+      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
+      "name": "Download service",
+      "description": "Download service",
+      "datatokenAddress": "0x123",
+      "serviceEndpoint": "https://myprovider.com",
+      "timeout": 0,
+      "consumerParameters": [
+        {
+          "name": "surname",
+          "type": "text",
+          "label": "Name",
+          "required": true,
+          "default": "NoName",
+          "description": "Please fill your name"
+        },
+        {
+          "name": "age",
+          "type": "number",
+          "label": "Age",
+          "required": false,
+          "default": 0,
+          "description": "Please fill your age"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "compute",
+      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
+      "name": "Compute service",
+      "description": "Compute service",
+      "datatokenAddress": "0x124",
+      "serviceEndpoint": "https://myprovider.com",
+      "timeout": 3600,
+      "compute": {
+        "allowRawAlgorithm": false,
+        "allowNetworkAccess": true,
+        "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
+        "publisherTrustedAlgorithms": [
+          {
+            "did": "did:op:123",
+            "filesChecksum": "100",
+            "containerSectionChecksum": "200"
+          },
+          {
+            "did": "did:op:124",
+            "filesChecksum": "110",
+            "containerSectionChecksum": "210"
+          }
+        ]
+      }
+    }
+  ],
+  "credentials": {
+    "allow": [
+      {
+        "type": "address",
+        "values": ["0x123", "0x456"]
+      }
+    ],
+    "deny": [
+      {
+        "type": "address",
+        "values": ["0x2222", "0x333"]
+      }
+    ]
+  },
+
+  "nft": {
+    "address": "0x123",
+    "name": "Ocean Protocol Asset v4",
+    "symbol": "OCEAN-A-v4",
+    "owner": "0x0000000",
+    "state": 0,
+    "created": "2000-10-31T01:30:00",
+    "tokenURI": "xxx"
+  },
+
+  "datatokens": [
+    {
+      "address": "0x000000",
+      "name": "Datatoken 1",
+      "symbol": "DT-1",
+      "serviceId": "1"
+    },
+    {
+      "address": "0x000001",
+      "name": "Datatoken 2",
+      "symbol": "DT-2",
+      "serviceId": "2"
+    }
+  ],
+
+  "event": {
+    "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
+    "block": 12831214,
+    "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
+    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
+    "datetime": "2000-10-31T01:30:00"
+  },
+
+  "purgatory": {
+    "state": false
+  },
+
+  "stats": {
+    "orders": 4
+  }
+}
+```
+
+</details>
+
 ## Metadata
 
 This object holds information describing the actual asset.
 
-| Attribute                   | Type                                                | Required                          | Description                                                                                                                                                                                       |
-| --------------------------- | --------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`created`**               | `ISO date/time string`                              |                                   | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
-| **`updated`**               | `ISO date/time string`                              |                                   | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
-| **`description`**           | `string`                                            | **✓**                             | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
-| **`copyrightHolder`**       | `string`                                            |                                   | The party holding the legal copyright. Empty by default.                                                                                                                                          |
-| **`name`**                  | `string`                                            | **✓**                             | Descriptive name or title of the asset.                                                                                                                                                           |
-| **`type`**                  | `string`                                            | **✓**                             | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
-| **`author`**                | `string`                                            | **✓**                             | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
-| **`license`**               | `string`                                            | **✓**                             | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
-| **`links`**                 | Array of `string`                                   |                                   | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
-| **`contentLanguage`**       | `string`                                            |                                   | The language of the content. Use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                                     |
-| **`tags`**                  | Array of `string`                                   |                                   | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
-| **`categories`**            | Array of `string`                                   |                                   | Array of categories associated to the asset. Note: recommended to use `tags` instead of this.                                                                                                     |
-| **`additionalInformation`** | Object                                              |                                   | Stores additional information, this is customizable by publisher                                                                                                                                  |
-| **`algorithm`**             | [Algorithm Metadata](did-ddo.md#algorithm-metadata) | **✓** (for algorithm assets only) | Information about asset of `type` `algorithm`                                                                                                                                                     |
+| Attribute | Type | Description |
+| --------------------------- | ------------------------------------------ | --------------------------------- |
+| **`created`**               | `ISO date/time string`                              | Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                    |
+| **`updated`**               | `ISO date/time string`                              | Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. `2000-10-31T01:30:00Z`.                                                     |
+| **`description`***           | `string`                                            | Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.                                                                     |
+| **`copyrightHolder`**       | `string`                                            | The party holding the legal copyright. Empty by default.                                                                                                                                          |
+| **`name`***                  | `string`                                            | Descriptive name or title of the asset.                                                                                                                                                           |
+| **`type`***                  | `string`                                            | Asset type. Includes `"dataset"` (e.g. csv file), `"algorithm"` (e.g. Python script). Each type needs a different subset of metadata attributes.                                                  |
+| **`author`***                | `string`                                            | Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).                                                                                                                            |
+| **`license`***               | `string`                                            | Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified". |
+| **`links`**                 | Array of `string`                                   | Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.                                                                    |
+| **`contentLanguage`**       | `string`                                            | The language of the content. Use one of the language codes from the [IETF BCP 47 standard](https://tools.ietf.org/html/bcp47)                                                                     |
+| **`tags`**                  | Array of `string`                                   | Array of keywords or tags used to describe this content. Empty by default.                                                                                                                        |
+| **`categories`**            | Array of `string`                                   | Array of categories associated to the asset. Note: recommended to use `tags` instead of this.                                                                                                     |
+| **`additionalInformation`** | Object                                              | Stores additional information, this is customizable by publisher                                                                                                                                  |
+| **`algorithm`****             | [Algorithm Metadata](did-ddo.md#algorithm-metadata) | Information about asset of `type` `algorithm` |
+
+* Required
+** Required for algorithms only
 
 <details>
 
@@ -666,7 +807,7 @@ The `event` section contains information about the last transaction that created
   }
 }
 ```
-</Event>
+</details>
 
 #### Purgatory
 
@@ -719,141 +860,4 @@ The `stats` section contains different statistics fields.
   }
 }
 ```
-</details>
-
-<details>
-
-<summary>Full Enhanced DDO Example</summary>
-
-```json
-{
-  "@context": ["https://w3id.org/did/v1"],
-  "id": "did:op:ACce67694eD2848dd683c651Dab7Af823b7dd123",
-  "version": "4.1.0",
-  "chainId": 1,
-  "nftAddress": "0x123",
-  "metadata": {
-    "created": "2020-11-15T12:27:48Z",
-    "updated": "2021-05-17T21:58:02Z",
-    "description": "Sample description",
-    "name": "Sample asset",
-    "type": "dataset",
-    "author": "OPF",
-    "license": "https://market.oceanprotocol.com/terms"
-  },
-  "services": [
-    {
-      "id": "1",
-      "type": "access",
-      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
-      "name": "Download service",
-      "description": "Download service",
-      "datatokenAddress": "0x123",
-      "serviceEndpoint": "https://myprovider.com",
-      "timeout": 0,
-      "consumerParameters": [
-        {
-          "name": "surname",
-          "type": "text",
-          "label": "Name",
-          "required": true,
-          "default": "NoName",
-          "description": "Please fill your name"
-        },
-        {
-          "name": "age",
-          "type": "number",
-          "label": "Age",
-          "required": false,
-          "default": 0,
-          "description": "Please fill your age"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "type": "compute",
-      "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735",
-      "name": "Compute service",
-      "description": "Compute service",
-      "datatokenAddress": "0x124",
-      "serviceEndpoint": "https://myprovider.com",
-      "timeout": 3600,
-      "compute": {
-        "allowRawAlgorithm": false,
-        "allowNetworkAccess": true,
-        "publisherTrustedAlgorithmPublishers": ["0x234", "0x235"],
-        "publisherTrustedAlgorithms": [
-          {
-            "did": "did:op:123",
-            "filesChecksum": "100",
-            "containerSectionChecksum": "200"
-          },
-          {
-            "did": "did:op:124",
-            "filesChecksum": "110",
-            "containerSectionChecksum": "210"
-          }
-        ]
-      }
-    }
-  ],
-  "credentials": {
-    "allow": [
-      {
-        "type": "address",
-        "values": ["0x123", "0x456"]
-      }
-    ],
-    "deny": [
-      {
-        "type": "address",
-        "values": ["0x2222", "0x333"]
-      }
-    ]
-  },
-
-  "nft": {
-    "address": "0x123",
-    "name": "Ocean Protocol Asset v4",
-    "symbol": "OCEAN-A-v4",
-    "owner": "0x0000000",
-    "state": 0,
-    "created": "2000-10-31T01:30:00",
-    "tokenURI": "xxx"
-  },
-
-  "datatokens": [
-    {
-      "address": "0x000000",
-      "name": "Datatoken 1",
-      "symbol": "DT-1",
-      "serviceId": "1"
-    },
-    {
-      "address": "0x000001",
-      "name": "Datatoken 2",
-      "symbol": "DT-2",
-      "serviceId": "2"
-    }
-  ],
-
-  "event": {
-    "tx": "0x8d127de58509be5dfac600792ad24cc9164921571d168bff2f123c7f1cb4b11c",
-    "block": 12831214,
-    "from": "0xAcca11dbeD4F863Bb3bC2336D3CE5BAC52aa1f83",
-    "contract": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
-    "datetime": "2000-10-31T01:30:00"
-  },
-
-  "purgatory": {
-    "state": false
-  },
-
-  "stats": {
-    "orders": 4
-  }
-}
-```
-
 </details>
