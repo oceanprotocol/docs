@@ -15,6 +15,9 @@ An algorithm in the Ocean Protocol stack is another asset type, in addition to d
 
 When creating an algorithm asset in Ocean Protocol, the additional `algorithm` object needs to be included in its metadata service to define the Docker container environment:
 
+<details>
+
+<summary>Environment Object Example</summary>
 ```json
 {
   "algorithm": {
@@ -26,6 +29,7 @@ When creating an algorithm asset in Ocean Protocol, the additional `algorithm` o
   }
 }
 ```
+</details>
 
 | Variable     | Usage                                                                                                                                   |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
