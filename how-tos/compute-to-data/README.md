@@ -16,5 +16,5 @@ Enter, **Compute-to-Data** (also lovingly called C2D 🥰). Ocean Protocol's C2D
 
 ## How to Compute-to-Data 💃
 
-You will need to accomplish **3 main steps** in establishing a compute-to-data flow: [create an algorithm](make-a-boss-c2d-algorithm.md) that's compatible with C2D, [publish your C2D-specific algorithm NFT](publish-a-c2d-algorithm-nft.md), then [publish your data NFT with C2D configurations](publish-a-c2d-data-nft.md) allowing the algorithm to compute on it. That's it! Then you'll be able to sell compute jobs 🤩
+You will need to accomplish **3 main steps** in establishing a compute-to-data flow: [create an algorithm](make-a-boss-c2d-algorithm.md) that's compatible with C2D, [publish your C2D-specific algorithm NFT](publish-a-c2d-algorithm-nft.md), then [publish your data NFT with C2D configurations](publish-a-c2d-data-nft.md) allowing the algorithm to compute on it. That's it! Then you'll be able to sell compute jobs 🤩 Follow along in the three subpages in this section to create & sell a compute job from start to finish. 💪😃
 
