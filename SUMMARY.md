@@ -2,6 +2,7 @@
 
 * [👋 Welcome](README.md)
 * [🌊 Discover](discover/discover.md)
+  * [Explore](discover/explore.md)
   * [Networks](discover/networks/README.md)
     * [Bridges](discover/networks/bridges.md)
   * [Wallets](discover/wallets.md)
