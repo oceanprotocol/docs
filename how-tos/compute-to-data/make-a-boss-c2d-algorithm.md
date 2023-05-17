@@ -8,7 +8,7 @@ description: >-
 
 {% embed url="https://media3.giphy.com/media/cub3pntkz8muQ/giphy.gif?cid=ecf05e47o9fdrqco4jqpeyh7899whqgw5tnd43elr023rykr&ep=v1_gifs_search&rid=giphy.gif" %}
 
-The beginning of any great algorithm for Compute-to-Data first starts by referencing the dataset file correctly on the Docker image. Here is the code in Javascript and in Python for how to correctly reference the dataset file that's local on the Docker container that you choose:
+The beginning of any great algorithm for Compute-to-Data first starts by referencing the dataset file correctly on the Docker container. Here is the code in both Python and Javascript for how to correctly reference the dataset file that's local on the Docker container for your compute job:
 
 ### Python
 
