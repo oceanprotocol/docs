@@ -236,7 +236,28 @@ The `container` object has the following attributes defining the Docker image fo
 
 <summary>Algorithm Metadata Example</summary>
 
-\`\`\`json { "metadata": { "created": "2020-11-15T12:27:48Z", "updated": "2021-05-17T21:58:02Z", "description": "Sample description", "name": "Sample algorithm asset", "type": "algorithm", "author": "OPF", "license": "https://market.oceanprotocol.com/terms", "algorithm": { "language": "Node.js", "version": "1.0.0", "container": { "entrypoint": "node $ALGO", "image": "ubuntu", "tag": "latest", "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550" }, "consumerParameters": {} } } } \`\`\`
+```json 
+{ 
+  "metadata": { 
+    "created": "2020-11-15T12:27:48Z", 
+    "updated": "2021-05-17T21:58:02Z", 
+    "description": "Sample description", 
+    "name": "Sample algorithm asset", 
+    "type": "algorithm", 
+    "author": "OPF", 
+    "license": "https://market.oceanprotocol.com/terms", 
+    "algorithm": { "language": "Node.js", "version": "1.0.0", 
+      "container": { 
+        "entrypoint": "node $ALGO", 
+        "image": "ubuntu", 
+        "tag": "latest", 
+        "checksum": "sha256:44e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550" 
+        }, 
+        "consumerParameters": {} 
+        } 
+  } 
+} 
+```
 
 </details>
 
@@ -246,19 +267,19 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute                   | Type                                                  | Description                                                                                                                                  |
-| --------------------------- | ----------------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`id`***                    | `string`                                              | Unique ID                                                                                                                                    |
-| **`type`***                  | `string`                                              |Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
-| **`name`**                  | `string`                                              | Service friendly name                                                                                                                        |
-| **`description`**           | `string`                                              | Service description                                                                                                                          |
-| **`datatokenAddress`***      | `string`                                              | Datatoken address                                                                                                                            |
-| **`serviceEndpoint`***       | `string`                                              | Provider URL (schema + host)                                                                                                                 |
-| **`files`***                 | [Files](did-ddo.md#files)                             | Encrypted file URLs.                                                                                                                         |
-| **`timeout`***               | `number`                                              | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`compute`****               | [Compute](did-ddo.md#compute-options)                 | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
-| **`consumerParameters`**    | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object the defines required consumer input before consuming the asset                                                                     |
-| **`additionalInformation`** | Object                                                | Stores additional information, this is customizable by publisher                                                                             |
+| Attribute | Type | Description | 
+| --------- | ---- | ----------- |
+| **`id`*** | `string` | Unique ID |
+| **`type`*** | `string` |Type of service `access`, `compute`, `wss` etc. |
+| **`name`**  | `string`  | Service friendly name |
+| **`description`** | `string` | Service description |
+| **`datatokenAddress`*** | `string` | Datatoken |
+| **`serviceEndpoint`*** | `string` | Provider URL (schema + host) |
+| **`files`*** | [Files](did-ddo.md#files) | Encrypted file. |
+| **`timeout`*** | `number` | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`compute`**** | [Compute](did-ddo.md#compute-options) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources. |
+| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object the defines required consumer input before consuming the asset |
+| **`additionalInformation`** | Object | Stores additional information, this is customizable by publisher |
 
 \* Required&#x20;
 
