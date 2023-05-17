@@ -14,10 +14,12 @@ Go to [https://df.oceandao.org/](https://df.oceandao.org), and click the Rewards
 
 <figure><img src="../.gitbook/assets/Rewards-Tab (1).png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
 
-### Step 2 - Click the pink 'Claim OCEAN Rewards' buttons 🛎️
+### Step 2 - Click the pink 'Claim # OCEAN' buttons 🛎️
 
-At the bottom of the 'Passive Rewards' and 'Active Rewards' panels are the 'Claim OCEAN Rewards' buttons that appear pink and clickable on Thursdays.
+At the bottom of the 'Passive Rewards' and 'Active Rewards' panels are the 'Claim # OCEAN' buttons that appear pink and clickable on Thursdays.
 
 This is where you click to claim your rewards! Easy peasy. You will need to approve the transactions with your wallet.
+
+<figure><img src="../.gitbook/assets/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
 
 #### Note: If you forget to claim your OCEAN rewards, then do not worry because they continue to accumulate! You can claim them after Thursday. 😃
