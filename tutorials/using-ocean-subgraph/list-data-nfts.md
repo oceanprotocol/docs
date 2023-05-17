@@ -104,7 +104,7 @@ const config = {
 }
 
 const response = await axios(config)
-console.log('Response', response)
+console.log(response.data.data.nfts)
 
 ```
 {% endtab %}
