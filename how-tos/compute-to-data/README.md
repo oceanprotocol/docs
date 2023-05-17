@@ -8,7 +8,7 @@ description: >-
 
 ### Introducing, The Problem
 
-{% embed url="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjNmMTc3MjFjNTg2MjQwZTQyY2VkNzFiNjk1YzM5ZmJkM2NjMzA4ZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/17FxSFyYNOgThnonDK/giphy.gif" %}
+{% embed url="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjNmMTc3MjFjNTg2MjQwZTQyY2VkNzFiNjk1YzM5ZmJkM2NjMzA4ZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/17FxSFyYNOgThnonDK/giphy.gif" fullWidth="false" %}
 
 **Anyone could buy your  NFT assets and then publicly share them all over the internet.** Pretty scary, right? But what if there was a way that buyers could access valuable insights from your data and algorithms without actually \*seeing\* the data or algorithms themselves? We have a solution for that!
 

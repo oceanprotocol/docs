@@ -44,11 +44,11 @@ description: How to publish a C2D algorithm NFT on the Ocean Market
 
 <figure><img src="../../.gitbook/assets/Set-a-price-algo (1).png" alt=""><figcaption><p>Set a price for your C2D algorithm NFT</p></figcaption></figure>
 
-#### Step 7 - Approve the Preview
+#### Step 7 - Approve the preview
 
 * Your preview should look like the following:
 
-<figure><img src="../../.gitbook/assets/preview-publish (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/preview-publish (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Step 8 - Submit the transactions
 
