@@ -1,5 +1,5 @@
 ---
-title: DID & DDO
+title: Identifiers & Metadata
 slug: /concepts/did-ddo/
 section: concepts
 description: >-
@@ -7,9 +7,12 @@ description: >-
   the DID & DDO standards.
 ---
 
-# DID & DDO
 
-**v4.1.0**
+## Identifiers 
+
+## Metadata
+
+
 
 ### Overview
 
