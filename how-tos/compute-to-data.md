@@ -14,7 +14,11 @@ description: >-
 
 Enter, **Compute-to-Data** (also lovingly called C2D). Ocean Protocol's C2D feature enables you to monetize the OUTPUT of compute jobs on your datasets without revealing the contents of the data/algorithms themselves. Let's dive in how!
 
-### How to Compute-to-Data 💃
+## How to Compute-to-Data 💃
+
+You will need to accomplish **2 main steps** in establishing a compute-to-data flow: publish your algorithm NFT, then publish your data NFT with configurations allowing the algorithm to compute on it. That's it! Then you'll be able to sell compute jobs 🤩
+
+### First, Publish Your Algorithm NFT
 
 #### Step 1 - Navigate to the Ocean Market
 
