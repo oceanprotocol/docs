@@ -44,7 +44,7 @@ with open(input_filename, 'r') as file:
     # Read the CSV file
     csv_reader = csv.DictReader(file)
     
-    <The rest of your code goes here>
+    <YOUR CODE GOES HERE>
 ```
 
 ### Javascript
