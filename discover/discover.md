@@ -22,68 +22,85 @@ The concentration of vast datasets in the hands of a few organizations can lead 
 
 By providing a decentralized and open platform and the tools for data sharing, **Ocean Protocol** aims to address these concerns and create a more equitable and collaborative data economy.
 
-We believe that data is a valuable resource 💎 that should be accessible to everyone, not just a select few large corporations. We aim to empower data providers to monetize their data and enable data consumers to access high-quality data for their projects. Ultimately, we seek to establish a more equitable and collaborative data economy that benefits businesses, researchers, and communities worldwide.
+We believe that data is a valuable resource that should be accessible to everyone :people\_holding\_hands:, not just a select few large corporations. We aim to empower data providers to monetize their data and enable data consumers to access high-quality data for their projects. Ultimately, we seek to establish a more equitable and collaborative data economy that benefits businesses, researchers, and communities worldwide.
 
-To find out more about the team behind Ocean, you can visit our [website](https://oceanprotocol.com/about).
+To find out more about the amazing team behind Ocean, you can visit our [website](https://oceanprotocol.com/about).
 
-Are you curious about **Ocean Protocol**'s mission and how we're making a difference in the world? Then you won't want to miss this video featuring our co-founder, Trent McConaghy. He'll share some fascinating insights into what we're doing and why it matters.
+Are you curious about **Ocean Protocol**'s mission and how we're making a difference in the world? Then you won't want to miss this video featuring our co-founder, [Trent McConaghy](http://www.trent.st/). He'll share some fascinating insights into what we're doing and why it matters.
 
 {% embed url="https://youtu.be/XN_PHg1K61w" fullWidth="false" %}
+A new data economy with power to the people - Trent McConaghy
+{% endembed %}
+
+##
 
 ## What can you do with Ocean?
 
-Buy or Sell Data
-
-Build tools- Templates
-
-How?&#x20;
+*   ### Build Your dApp
 
 
 
-## What is Ocean?
+Building a [dApp](https://oceanprotocol.com/templates) on top of Ocean Protocol provides you with a powerful framework to create decentralized applications that leverage the capabilities of the protocol. By utilizing Ocean's technology stack, you can tap into a robust ecosystem designed for data exchange and collaboration.
 
-Ocean provides the next generation of tools to unlock data at a large scale. Ocean makes it easy to publish and consume data services.
+When building a dApp on top of Ocean Protocol, you gain access to a wide range of features and functionalities:
 
-Ocean uses Data NFTs (ERC721) and datatokens (ERC20) as the interface to connect data assets with blockchain and DeFi tools. Crypto wallets become data wallets, crypto exchanges become data marketplaces, DAOs for data co-ops, and more via DeFi composability.
+1. **Data access and discovery**: Utilize Ocean's data marketplace infrastructure to access diverse and valuable data sets. Leverage the data discovery mechanisms to help users find relevant data assets for their applications.
+2. **Data interoperability**: Seamlessly integrate and interact with various data sources using Ocean's standardized data representation formats. Ensure compatibility and easy data integration within your dApp.
+3. **Data privacy and security**: Leverage the cryptographic capabilities of Ocean Protocol to ensure privacy and security of sensitive data. Implement access controls, encryption, and secure data sharing mechanisms within your dApp.
+4. **Provenance and transparency**: Leverage the transparency and immutability of the blockchain to establish data provenance. Build trust among users by providing an auditable record of data sources, usage, and transactions.
+5. **Tokenized incentives**: Utilize datatokens (ERC20) within your dApp to incentivize data providers and consumers. Design token economies that align with the specific requirements of your application, encouraging participation and value creation.
+6. **Community participation**: Leverage the community-driven nature of Ocean Protocol to foster collaboration, feedback, and innovation. Engage with the Ocean community to share ideas, contribute to the ecosystem, and gather insights to enhance your dApp.
 
-![Creating a New Data Economy](../.gitbook/assets/architecture/feature-datascience@2x.webp)
+These are a few examples of what can be built on top of Ocean.
 
-The following guides are a greate place to start if you are new to Ocean:
+1. [Ocean Waves](https://waves.oceanprotocol.com/) - Music NFTs [marketplace](https://github.com/oceanprotocol/waves)
+2. [Ocean Market](https://market.oceanprotocol.com) - Decentralised data [marketplace](https://github.com/oceanprotocol/market)
+3. [Autobot](https://autobotocean.com/) - Tokengated [data farming](https://df.oceandao.org/) intelligence app
+4. [Tokengate](https://tokengate.oceanprotocol.com/) - Tokengated content [marketplace](https://github.com/oceanprotocol/token-gating-template)
+5. [Acentrik Market](https://market.acentrik.io/) - Enterprise decentralized data marketplace
 
-* [Architecture Overview](../developers/core-concepts/architecture.md)
-* [Data NFTs and Datatokens](../developers/core-concepts/datanft-and-datatoken.md)
-* [Publish a data asset](../how-tos/marketplace-publish-data-asset.md)
-* [Download a data asset](../how-tos/marketplace-download-data-asset.md)
 
-## What is our Mission?
 
-**To unlock data, for more equitable outcomes for users of data, using a thoughtful application of both technology and governance.**
+* ### Buy or Sell Data
 
-Society is becoming increasingly reliant on data, especially with the advent of AI. However, a small handful of organizations with both massive data assets and AI capabilities attained worrying levels of control which is a danger to a free and open society.
+Within the Ocean ecosystem, users have the possibility to publish and sell data or explore and purchase data. Data is published in the form of interoperable [ERC721](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md) data NFTs and [ERC20](https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md) datatokens. The platform acts as a decentralized exchange (DEX) specifically designed for data transactions. Every action, including publishing, purchasing, and consuming data, is securely recorded on the blockchain, creating a tamper-proof audit trail.
 
-Our team and community are committed to kick-starting a New Data Economy that reaches every single person, company and device, giving power back to data owners and enabling people to capture value from data to better our world.
+For data scientists and AI practitioners, Ocean presents opportunities such as increased access to a broader range of data, including private data, crypto-secured provenance for data and AI training, and potential income streams from selling and curating data.
 
-Find out more about the people building Ocean on our [site](https://oceanprotocol.com/about).
-
-## What can you do with Ocean?
-
-### Buy or Sell Data
-
-Use Ocean Market to publish and sell data, or browse and buy data. Data is published as interoperable ERC721 data NFTs & ERC20 datatokens. It's a decentralized exchange (DEX), tuned for data. The acts of publishing data, purchasing data, and consuming data are all recorded on the blockchain to make a tamper-proof audit trail.
-
-As a data scientist or AI practitioner, you can benefit from access to more data (including private data), crypto-secured provenance in data & AI training, and income opportunities for selling data and curating data.
-
-![Decentralized Exchange Marketplaces](../.gitbook/assets/architecture/feature-marketplaces@2x.webp)
+To showcase these capabilities, Ocean developed a demonstrator marketplace known as the [Ocean Market](https://market.oceanprotocol.com/).
 
 The following guides will help you get started with buying and selling data:
 
-* [Publish a data asset](../how-tos/marketplace-publish-data-asset.md)
-* [Download a data asset](../how-tos/marketplace-download-data-asset.md)
-* [Publishing with hosting services](../how-tos/asset-hosting/)
+* [Publish an NFT](../how-tos/marketplace-publish-data-asset.md)
+* [Download an NFT](../how-tos/marketplace-download-data-asset.md)
+* [Host Assets](../how-tos/asset-hosting/)
+
+
+
+*   ### Build Your Data Marketplace
+
+
+
+With Ocean Protocol, you have the flexibility to create and launch your own data marketplace tailored to your specific requirements. Utilize the protocol's infrastructure and tools to establish a platform where data providers and consumers can connect and transact.&#x20;
+
+You can choose from two options:
+
+1. &#x20;**Fork the** [**Ocean Marketplace**](https://github.com/oceanprotocol/market) **and customize**: You have the ability to fork the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it according to your needs. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../tutorials/build-a-marketplace/) to learn how to do it.
+2. Build your marketplace with Ocean components: Alternatively, you can build your data marketplace from scratch using Ocean Protocol's modular components. Ocean provides a comprehensive set of building blocks, such as the [**Aquarius**](https://github.com/oceanprotocol/aquarius), [**Provider**](https://github.com/oceanprotocol/provider), Ocean [contracts](https://github.com/oceanprotocol/contracts), and Ocean libraries([**ocean.js**](https://github.com/oceanprotocol/ocean.js) & [**ocean.py**](https://github.com/oceanprotocol/ocean.py)), which you can integrate into your own marketplace development. This empowers you to create a unique and customized data marketplace experience while leveraging the underlying capabilities and standards provided by Ocean Protocol.
+
+
+
+* ### Build tools- Templates
+
+
+
+
+
+###
 
 ### Build Your Own Data Market
 
-Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://v4.market.oceanprotocol.com/) code or building up with Ocean components.
+
 
 ![Ocean Market Homepage](../.gitbook/assets/market/ocean-market-homepage.png)
 
