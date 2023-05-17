@@ -44,4 +44,10 @@ You will need to accomplish **2 main steps** in establishing a compute-to-data f
 
 * Select the appropriate Docker image to run your code - most algorithms are written in Javascript or Python, so you can use either of these Docker images or your own custom image!
 
-<figure><img src="../.gitbook/assets/docker-image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/docker-image.png" alt=""><figcaption><p>Select the appropriate Docker image for your algorithm type</p></figcaption></figure>
+
+#### Step 5 - Enter the Access information
+
+* Make sure to keep this option checked!
+
+<figure><img src="../.gitbook/assets/algorithm-privacy.png" alt=""><figcaption><p>Keep this option checked for Compute-to-Data</p></figcaption></figure>
