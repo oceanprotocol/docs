@@ -10,8 +10,10 @@ description: >-
 
 The beginning of any great algorithm for Compute-to-Data first starts by referencing the dataset file correctly on the Docker container. Here is the code in both Python and Javascript for how to correctly reference your dataset file on the Docker container:
 
-### Python -  Open the local dataset file
+### Open the local dataset file
 
+{% tabs %}
+{% tab title="Python" %}
 ```
 import csv
 import json
@@ -46,25 +48,9 @@ with open(input_filename, 'r') as file:
     
     <YOUR CODE GOES HERE>
 ```
+{% endtab %}
 
-**Note:** Here are the following Python libraries that you can use in your code:
-
-```
-// Python modules
-numpy==1.16.3
-pandas==0.24.2
-python-dateutil==2.8.0
-pytz==2019.1
-six==1.12.0
-sklearn
-xlrd == 1.2.0
-openpyxl >= 3.0.3
-wheel
-matplotlib
-```
-
-### Javascript - Open the local dataset file
-
+{% tab title="Javascript" %}
 ```
 const fs = require("fs");
 
@@ -89,4 +75,22 @@ async function processfolder(Path) {
 // Open the file & run your code
 processfolder(input_folder);
     
+```
+{% endtab %}
+{% endtabs %}
+
+**Note:** Here are the following Python libraries that you can use in your code:
+
+```
+// Python modules
+numpy==1.16.3
+pandas==0.24.2
+python-dateutil==2.8.0
+pytz==2019.1
+six==1.12.0
+sklearn
+xlrd == 1.2.0
+openpyxl >= 3.0.3
+wheel
+matplotlib
 ```
