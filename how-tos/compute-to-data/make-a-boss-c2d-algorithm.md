@@ -68,7 +68,7 @@ async function processfolder(Path) {
     }
 }
 
-<YOUR CODE GOES HERE>
+<YOUR CODE & FUNCTION DEFINITIONS GO HERE>
 
 // Open the file & run your code
 processfolder(input_folder);
