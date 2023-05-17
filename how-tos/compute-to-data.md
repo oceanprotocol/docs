@@ -4,7 +4,7 @@ description: >-
   algorithms private
 ---
 
-# Compute-to-Data
+# Sell NFT Outputs
 
 ### Introducing, The Problem
 
@@ -12,7 +12,7 @@ description: >-
 
 **Anyone could buy your  NFT assets and then publicly share them all over the internet.** Pretty scary, right? But what if there was a way that buyers could access valuable insights from your data and algorithms without actually \*seeing\* the data or algorithms themselves? We have a solution for that!
 
-Enter, Compute-to-Data (also lovingly called C2D). Ocean Protocol's C2D feature enables you to monetize the OUTPUT of compute jobs on your datasets without revealing the contents of the data/algorithms themselves. Let's dive in how!
+Enter, **Compute-to-Data** (also lovingly called C2D). Ocean Protocol's C2D feature enables you to monetize the OUTPUT of compute jobs on your datasets without revealing the contents of the data/algorithms themselves. Let's dive in how!
 
 ### How to Compute-to-Data
 
