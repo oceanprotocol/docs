@@ -212,21 +212,25 @@ This object holds information describing the actual asset.
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute                | Type                                                  | Required | Description                                                                                |
-| ------------------------ | ----------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
-| **`language`**           | `string`                                              |          | Language used to implement the software.                                                   |
-| **`version`**            | `string`                                              |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) |          | An object that defines required consumer input before running the algorithm                |
-| **`container`**          | `container`                                           | **✓**    | Object describing the Docker container image. See below                                    |
+| Attribute                | Type                                                  | Description                                                                                |
+| ------------------------ | ----------------------------------------------------- |  ------------------------------------------------------------------------------------------ |
+| **`language`**           | `string`                                              | Language used to implement the software.                                                   |
+| **`version`**            | `string`                                              | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object that defines required consumer input before running the algorithm                |
+| **`container`***          | `container`                                           | Object describing the Docker container image. See below                                    |
+
+\* Required
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
-| Attribute        | Type     | Required | Description                                                       |
-| ---------------- | -------- | -------- | ----------------------------------------------------------------- |
-| **`entrypoint`** | `string` | **✓**    | The command to execute, or script to run inside the Docker image. |
-| **`image`**      | `string` | **✓**    | Name of the Docker image.                                         |
-| **`tag`**        | `string` | **✓**    | Tag of the Docker image.                                          |
-| **`checksum`**   | `string` | **✓**    | Digest of the Docker image. (ie: sha256:xxxxx)                    |
+| Attribute        | Type     | Description                                                       |
+| ---------------- | -------- | ----------------------------------------------------------------- |
+| **`entrypoint`*** | `string` | The command to execute, or script to run inside the Docker image. |
+| **`image`***      | `string` | Name of the Docker image.                                         |
+| **`tag`***        | `string` | Tag of the Docker image.                                          |
+| **`checksum`***   | `string` | Digest of the Docker image. (ie: sha256:xxxxx)                    |
+
+\* Required
 
 <details>
 
@@ -242,20 +246,23 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute                   | Type                                                  | Required                        | Description                                                                                                                                  |
+| Attribute                   | Type                                                  | Description                                                                                                                                  |
 | --------------------------- | ----------------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`id`**                    | `string`                                              | **✓**                           | Unique ID                                                                                                                                    |
-| **`type`**                  | `string`                                              | **✓**                           | Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
-| **`name`**                  | `string`                                              |                                 | Service friendly name                                                                                                                        |
-| **`description`**           | `string`                                              |                                 | Service description                                                                                                                          |
-| **`datatokenAddress`**      | `string`                                              | **✓**                           | Datatoken address                                                                                                                            |
-| **`serviceEndpoint`**       | `string`                                              | **✓**                           | Provider URL (schema + host)                                                                                                                 |
-| **`files`**                 | [Files](did-ddo.md#files)                             | **✓**                           | Encrypted file URLs.                                                                                                                         |
-| **`timeout`**               | `number`                                              | **✓**                           | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`compute`**               | [Compute](did-ddo.md#compute-options)                 | **✓** (for compute assets only) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
-| **`consumerParameters`**    | [Consumer Parameters](did-ddo.md#consumer-parameters) |                                 | An object the defines required consumer input before consuming the asset                                                                     |
-| **`additionalInformation`** | Object                                                |                                 | Stores additional information, this is customizable by publisher                                                                             |
+| **`id`***                    | `string`                                              | Unique ID                                                                                                                                    |
+| **`type`***                  | `string`                                              |Type of service (`access`, `compute`, `wss`, etc.                                                                                            |
+| **`name`**                  | `string`                                              | Service friendly name                                                                                                                        |
+| **`description`**           | `string`                                              | Service description                                                                                                                          |
+| **`datatokenAddress`***      | `string`                                              | Datatoken address                                                                                                                            |
+| **`serviceEndpoint`***       | `string`                                              | Provider URL (schema + host)                                                                                                                 |
+| **`files`***                 | [Files](did-ddo.md#files)                             | Encrypted file URLs.                                                                                                                         |
+| **`timeout`***               | `number`                                              | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`compute`****               | [Compute](did-ddo.md#compute-options)                 | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
+| **`consumerParameters`**    | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object the defines required consumer input before consuming the asset                                                                     |
+| **`additionalInformation`** | Object                                                | Stores additional information, this is customizable by publisher                                                                             |
 
+\* Required&#x20;
+
+\*\* Required for compute assets only
 #### Files
 
 The `files` field is returned as a `string` which holds the encrypted file URLs.
