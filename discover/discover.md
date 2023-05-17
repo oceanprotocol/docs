@@ -9,7 +9,7 @@ coverY: 0
 
 # 🌊 Discover
 
-## Why Ocean Protocol?
+
 
 As AI becomes more prevalent, society is increasingly reliant on data. However, a few organizations with massive data assets and AI capabilities have gained worrying levels of control, which poses a threat to a free and open society ☢️
 
