@@ -56,6 +56,7 @@
   * [DID & DDO](developers/did-ddo.md)
   * [DDO Full Specification](developers/ddo-specification.md)
   * [Storage Specifications](developers/storage-specifications.md)
+  * [Fine-Grained Permissions](developers/Fine-Grained-Permissions.md)
   * [Compute to data](developers/compute-to-data/README.md)
     * [Architecture](developers/compute-to-data/compute-to-data-architecture.md)
     * [Datasets & Algorithms](developers/compute-to-data/compute-to-data-datasets-algorithms.md)
