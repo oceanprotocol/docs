@@ -1,6 +1,32 @@
 # Core concepts
 
-## What is Ocean?
+## Ana - Work on this
+
+##
+
+## Local / Ganache
+
+The most straightforward way for local-only development is to use [Barge](https://www.github.com/oceanprotocol/barge), which runs [Ganache](https://www.trufflesuite.com/ganache), Aquarius, and Provider. It is used extensively by the Ocean core devs and for automated integration testing.
+
+To connect to it from MetaMask, select the network called _Localhost 8545_.
+
+Alternatively, you can run Ganache independently. Install it according to [the Ganache docs](https://www.trufflesuite.com/ganache). Then deploy Ocean contracts onto Ganache following [docs in Ocean contracts repo](https://www.github.com/oceanprotocol/contracts). Ganache is at the RPC URL [http://localhost:8545](http://localhost:8545).
+
+**Tokens**
+
+* Ganache ETH:
+  * Native token to pay transaction fees
+  * By default, Ganache creates several Ethereum accounts at launch, gives each some ETH, and makes their private keys available in the logs. You can also instruct Ganache to give ETH to specific Ethereum addresses.
+* Ganache OCEAN:
+  * You can deploy an ERC20 token with the label OCEAN. At a minimum, the token needs to be ERC20Detailed and ERC20Capped. You’ll see examples in the quickstarts for the Ocean JavaScript and Python drivers.
+
+### Other
+
+Some apps may need `network_id` and `chain_id`. Here's a [list of values for major Ethereum networks](https://medium.com/@piyopiyo/list-of-ethereums-major-network-and-chain-ids-2bc58e928508).
+
+
+
+What is Ocean?
 
 Ocean provides the next generation of tools to unlock data at a large scale. Ocean makes it easy to publish and consume data services.
 
