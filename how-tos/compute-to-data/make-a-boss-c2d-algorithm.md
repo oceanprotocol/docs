@@ -39,7 +39,7 @@ if not input_filename:
     # No input filename returned
     exit()
     
-# Call the Function
+# Open the file & run your code
 with open(input_filename, 'r') as file:
     # Read the CSV file
     csv_reader = csv.DictReader(file)
@@ -70,6 +70,7 @@ async function processfolder(Path) {
 
 <YOUR CODE GOES HERE>
 
+// Open the file & run your code
 processfolder(input_folder);
     
 ```
