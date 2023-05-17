@@ -14,3 +14,5 @@ description: >-
 
 Enter, Compute-to-Data (also lovingly called C2D). Ocean Protocol's C2D feature enables you to monetize the OUTPUT of compute jobs on your datasets without revealing the contents of the data/algorithms themselves. Let's dive in how!
 
+### How to Compute-to-Data
+
