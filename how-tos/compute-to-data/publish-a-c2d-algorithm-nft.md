@@ -42,4 +42,20 @@ description: How to publish a C2D algorithm NFT on the Ocean Market
 
 * It is recommended that you set a fixed price since the price that you choose for your algorithm will be charged any time that someone selects to run your algorithm on a dataset, including datasets that aren't yours!
 
-<figure><img src="../../.gitbook/assets/Set-a-price-algo.png" alt=""><figcaption><p>Set a price for your C2D algorithm NFT</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Set-a-price-algo (1).png" alt=""><figcaption><p>Set a price for your C2D algorithm NFT</p></figcaption></figure>
+
+#### Step 7 - Approve the Preview
+
+* Your preview should look like the following:
+
+<figure><img src="../../.gitbook/assets/preview-publish (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Step 8 - Submit the transactions
+
+* Click the pink Submit button at the bottom of the page and sign the two transactions with your wallet. You'll have to pay for gas when you sign to publish your algorithm asset.
+
+<figure><img src="../../.gitbook/assets/Sign-transactions.png" alt=""><figcaption><p>Sign and pay gas for 2 transactions on the final publishing step</p></figcaption></figure>
+
+#### Congratulations on publishing your algorithm!&#x20;
+
+* On to the next step -> [Publish a C2D Data NFT](publish-a-c2d-data-nft.md)
