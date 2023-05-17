@@ -48,6 +48,12 @@ You will need to accomplish **2 main steps** in establishing a compute-to-data f
 
 #### Step 5 - Enter the Access information
 
-* Make sure to keep this option checked!
+* Make sure to keep this option checked! ✅
 
 <figure><img src="../.gitbook/assets/algorithm-privacy.png" alt=""><figcaption><p>Keep this option checked for Compute-to-Data</p></figcaption></figure>
+
+#### Step 6 - Set a price, Fixed or Free, for your algorithm
+
+* It is recommended that you set a fixed price since the price that you choose for your algorithm will be charged any time that someone selects to run your algorithm on a dataset, including datasets that aren't yours!
+
+<figure><img src="../.gitbook/assets/Set-a-price-algo.png" alt=""><figcaption><p>Set a price for your algorithm</p></figcaption></figure>
