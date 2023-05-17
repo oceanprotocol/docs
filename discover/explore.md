@@ -1,7 +1,5 @@
 ---
-description: >-
-  What Can You Do with Ocean? Unlock the Potential of Your DataUnlocking the
-  Power of Decentralised Data
+description: What Can You Do with Ocean? Unlock the Potential of Your Data
 ---
 
 # Explore
@@ -41,7 +39,6 @@ These are a few examples of what can be built on top of Ocean.
 
 <summary><mark style="color:orange;">Build Your Data Marketplace</mark><br><br>With Ocean Protocol, you have the flexibility to create and launch your own data marketplace tailored to your specific requirements. Utilize the protocol's infrastructure and tools to establish a platform where data providers and consumers can connect and transact. </summary>
 
-\
 You can choose from two options:
 
 1. **Fork the** [**Ocean Marketplace**](https://github.com/oceanprotocol/market) **and customize it**: You have the ability to fork the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it according to your needs. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../tutorials/build-a-marketplace/) to learn how to do it.
@@ -99,3 +96,6 @@ As an Ocean Ambassador, you become an advocate for the protocol, promoting its v
 
 </details>
 
+
+
+This is just the beginning of what Ocean Protocol has to offer. Join us as we explore, innovate, and push the boundaries of what's possible with decentralized data. Together, we can shape a future where data is accessible, secure, and empowers individuals and organizations alike. Let's dive in and discover the endless possibilities of Ocean Protocol :ocean:

@@ -4,7 +4,7 @@ description: >-
   Tokens to others
 ---
 
-# Manage Your OCEAN Tokens 🪙
+# Manage Your OCEAN Tokens
 
 If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.
 
@@ -12,35 +12,7 @@ If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask 
 
 Almost all ERC-20 wallets require these values for adding a custom token:
 
-**Mainnet**
-
-* Contract Address: `0x967da4048cD07aB37855c090aAF366e4ce1b9F48`
-* Symbol: `OCEAN`
-* Decimals: `18`
-
-**Polygon Mainnet (previously Matic)**
-
-* Contract Address: `0x282d8efCe846A88B159800bd4130ad77443Fa1A1`
-* Symbol: `mOCEAN`
-* Decimals: `18`
-
-**Binance Smart Chain (BSC)**
-
-* Contract Address: `0xdce07662ca8ebc241316a15b611c89711414dd1a`
-* Symbol: `OCEAN`
-* Decimals: `18`
-
-**Görli**
-
-* Contract Address: `0xCfDdA22C9837aE76E0faA845354f33C62E03653a`
-* Symbol: `OCEAN`
-* Decimals: `18`
-
-**Mumbai**
-
-* Contract Address: `0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8`
-* Symbol: `OCEAN`
-* Decimals: `18`
+<table data-full-width="true"><thead><tr><th>Network name</th><th>Contract Address</th><th>Symbol</th><th>Decimals</th></tr></thead><tbody><tr><td><strong>Mainnet</strong></td><td>0x967da4048cD07aB37855c090aAF366e4ce1b9F48</td><td>OCEAN</td><td>18</td></tr><tr><td><strong>Polygon</strong><br><strong>(ex Matic)</strong></td><td>0x282d8efCe846A88B159800bd4130ad77443Fa1A1</td><td>mOCEAN</td><td>18</td></tr><tr><td><strong>BSC</strong><br><strong>Binance Smart Chain</strong></td><td>0xdce07662ca8ebc241316a15b611c89711414dd1a</td><td>OCEAN</td><td>18</td></tr><tr><td><strong>Görli</strong></td><td>0xCfDdA22C9837aE76E0faA845354f33C62E03653a</td><td>OCEAN</td><td>18</td></tr><tr><td><strong>Mumbai</strong></td><td>0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8</td><td>OCEAN</td><td>18</td></tr></tbody></table>
 
 The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com has further details.
 

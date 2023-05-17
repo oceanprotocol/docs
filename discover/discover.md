@@ -1,8 +1,8 @@
 ---
 description: >-
-  Ocean Protocol aims to kick-start a new data economy by giving power back to
-  people and giving researchers the data they need. Ocean Protocol technology
-  enables data to become an asset
+  Why Ocean? Ocean Protocol aims to kick-start a new data economy by giving
+  power back to people and giving researchers the data they need. Ocean Protocol
+  technology enables data to become an asset
 cover: ../.gitbook/assets/landing/rewards.png
 coverY: 0
 ---
