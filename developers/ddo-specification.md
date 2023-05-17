@@ -212,12 +212,12 @@ This object holds information describing the actual asset.
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute                | Type                                                  | Required | Description                                                                                |
-| ------------------------ | ----------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
-| **`language`**           | `string`                                              |          | Language used to implement the software.                                                   |
-| **`version`**            | `string`                                              |          | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) |          | An object that defines required consumer input before running the algorithm                |
-| **`container`**          | `container`                                           | **✓**    | Object describing the Docker container image. See below                                    |
+| Attribute                | Type                                                  | Description                                                                                |
+| ------------------------ | ----------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **`language`**           | `string`                                              | Language used to implement the software.                                                   |
+| **`version`**            | `string`                                              | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
+| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object that defines required consumer input before running the algorithm                |
+| **`container`**          | `container`                                           | Object describing the Docker container image. See below                                    |
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
