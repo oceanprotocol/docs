@@ -82,7 +82,7 @@ Participating in the Data Farming initiative demonstrates a commitment to the pr
 
 <details>
 
-<summary><mark style="color:red;">Data Challenges</mark><br><br>Ocean <a href="https://oceanprotocol.com/challenges">Data Challenges</a> offer you a unique opportunity to showcase your skills and creativity in the world of data. These organized events and competitions encourage <a href="../data-science.md">data scientists</a>, researchers, and developers like yourself to explore and innovate using Ocean Protocol.  </summary>
+<summary><mark style="color:red;">Data Challenges</mark><br><br>Ocean <a href="https://oceanprotocol.com/challenges">Data Challenges</a> offer you a unique opportunity to showcase your skills and creativity in the world of data. These organized events and competitions encourage <a href="../data-science/">data scientists</a>, researchers, and developers like yourself to explore and innovate using Ocean Protocol.  </summary>
 
 By participating in Ocean Data Challenges, you can tackle real-world problems, leverage data assets, and utilize the technologies within the Ocean ecosystem. Not only do you have the chance to compete for recognition and prizes, but you also contribute to driving innovation, fostering collaboration, and making a positive impact in the data space.
 
