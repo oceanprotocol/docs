@@ -4,7 +4,7 @@ description: How to publish a data NFT with C2D configurations
 
 # Publish a C2D Data NFT
 
-{% embed url="https://media2.giphy.com/media/xT9C25UNTwfZuk85WP/giphy.gif?cid=ecf05e4784i2c3yjulcq39znxy7saflut7uvd75io1wjth83&ct=g&ep=v1_gifs_search&rid=giphy.gif" %}
+<figure><img src="../../.gitbook/assets/bringmoredata.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### Step 1 - Navigate to the Ocean Market
 
