@@ -25,7 +25,7 @@ The Polygon Network (previously known as Matic) offers a [bridge](https://wallet
 
 
 
-If you prefer a video tutorial, here is one available for you. Otherwise, please follow the steps described below.
+If you prefer a video tutorial, here is one available for you. Otherwise, you can follow the steps below.
 
 {% embed url="https://www.youtube.com/watch?v=W5eIipUHl-w" %}
 

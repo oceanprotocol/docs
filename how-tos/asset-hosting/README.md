@@ -1,5 +1,5 @@
 ---
-description: How to host your data and algorithm NFT assets like a boss 😎
+description: How to host your data and algorithm NFT assets like a champ 🏆 😎
 ---
 
 # Host Assets

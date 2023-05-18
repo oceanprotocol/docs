@@ -30,7 +30,7 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
 {% tab title="Python" %}
 The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
 
-#### Create script
+**Create script**
 
 {% code title="list_dataNFTs.py" %}
 ```python
@@ -76,13 +76,10 @@ python list_dataNFTs.py
 {% endtab %}
 
 {% tab title="Javascript" %}
-The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed.
+The javascript below can be used to run the query. If you wish to change the network, then replace the value of `network` as needed.
 
-#### Create script
-
-{% code title="listDatatoken.js" %}
-```javascript
-var axios = require('axios');
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
 
 const query = `{
     nfts (skip:0, first: 10, subgraphError:deny){
@@ -98,32 +95,17 @@ const query = `{
    }
 }`
 
-const baseUrl = "https://v4.subgraph.mainnet.oceanprotocol.com"
-const route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
+const network = "mainnet"
+const config = {
+  method: 'post',
+  url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
+  headers: { 'Content-Type': 'application/json' },
+  data: JSON.stringify({ query: query })
+}
 
-const url = `${baseUrl}${route}`
+const response = await axios(config)
+console.log(response.data.data.nfts)
 
-var config = {
-    method: 'post',
-    url: url,
-    headers: { "Content-Type": "application/json" },
-    data: JSON.stringify({ "query": query })
-};
-
-axios(config)
-    .then(function (response) {
-        console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
-```
-{% endcode %}
-
-#### Execute script
-
-```bash
-node listDatatoken.js
 ```
 {% endtab %}
 {% endtabs %}
