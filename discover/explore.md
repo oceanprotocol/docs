@@ -1,5 +1,5 @@
 ---
-description: What Can You Do with Ocean? Unlock the Potential of Your Data
+description: What Can You Do with Ocean?
 ---
 
 # Explore
@@ -28,7 +28,7 @@ These are a few examples of what can be built on top of Ocean.
 1. [Ocean Waves](https://waves.oceanprotocol.com/) - Music NFTs [marketplace](https://github.com/oceanprotocol/waves)
 2. [Ocean Market](https://market.oceanprotocol.com) - Decentralised data [marketplace](https://github.com/oceanprotocol/market)
 3. [Autobot](https://autobotocean.com/) - Tokengated [data farming](https://df.oceandao.org/) intelligence app
-4. [Tokengate](https://tokengate.oceanprotocol.com/) - Tokengated content [marketplace](https://github.com/oceanprotocol/token-gating-template)
+4. [Ocean Gate](https://tokengate.oceanprotocol.com/) - Tokengated content [marketplace](https://github.com/oceanprotocol/token-gating-template)
 5. [Acentrik Market](https://market.acentrik.io/) - Enterprise decentralized data marketplace
 
 
