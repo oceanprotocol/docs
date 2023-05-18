@@ -52,9 +52,34 @@ description: How to publish a data NFT with C2D configurations
 
 **Ok, you've published a Data NFT that is \*almost\* ready for Compute-to-Data. Just a few tiny steps left and you're done!**
 
-#### Step 9 - Edit the Metadata (yes, again!)
+#### Step 9 - Edit the asset (yes, again!)
 
 * On the webpage for your Data NFT, you need to click the Edit Asset link to change the C2D settings.
 
 <figure><img src="../../.gitbook/assets/edit-asset-link.png" alt="" width="563"><figcaption><p>Click the Edit Asset link</p></figcaption></figure>
 
+#### Step 10 - Edit the Compute settings
+
+* &#x20;You must select the Edit Compute Settings button to add your algorithm to the data NFT for computation.
+
+<figure><img src="../../.gitbook/assets/edit-compute-settings.png" alt=""><figcaption><p>Select the Edit Compute Settings tab button</p></figcaption></figure>
+
+* Then, search for your algorithm in the Selected algorithms search bar and check the box next to it to add it as an algorithm able to compute on the dataset.
+
+<figure><img src="../../.gitbook/assets/select-algorithm-for-compute.png" alt=""><figcaption><p>Search for and select your algorithm to compute on your dataset</p></figcaption></figure>
+
+#### Step 11 - Submit the transactions
+
+* Click the pink Submit button at the bottom of the page and sign all the transactions.
+
+<figure><img src="../../.gitbook/assets/Submit-compute-settings.png" alt=""><figcaption><p>Click the Submit button to finalize the transaction</p></figcaption></figure>
+
+#### Congratulations! You have fully finished the C2D flow. Check your work by verifying that your algorithm appears on the data NFT's page, like in the following example:
+
+<figure><img src="../../.gitbook/assets/double-check-work.png" alt="" width="375"><figcaption><p>Your algorithm should appear now on the data NFT's page!</p></figcaption></figure>
+
+If you would like to run the compute job, then simply click the radio button to the left of the algorithm's name and click Buy Compute Job.
+
+<figure><img src="../../.gitbook/assets/buy-compute-job.png" alt="" width="375"><figcaption><p>Buy the compute job to check your work!</p></figcaption></figure>
+
+The output of your algorithm's computation on the dataset will appear in the Algorithm.log output. Voilá!
