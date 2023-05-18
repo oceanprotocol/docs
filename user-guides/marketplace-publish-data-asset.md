@@ -93,9 +93,9 @@ With the _fixed pricing_ schema, the publisher sets the price that buyers will p
 
 With the _free pricing_ schema, the publisher provides an asset that is free to be downloaded by anyone.
 
-For more information on the pricing models, please refer this [document](../developers/core-concepts/asset-pricing.md).
+For more information on the pricing models, please refer this [document](../developers/asset-pricing.md).
 
-For a deep dive into the fee structure, please refer to this [document](../developers/core-concepts/fees.md).
+For a deep dive into the fee structure, please refer to this [document](../developers/fees.md).
 
 ![Asset pricing](../.gitbook/assets/market/publish-3.png)
 

@@ -9,16 +9,16 @@ description: Data NFTs and datatokens architecture
 
 Here is the Ocean architecture.
 
-![Ocean Protocol tools architecture](../.gitbook/assets/architecture/architecture.png)
+![Ocean Protocol tools architecture](.gitbook/assets/architecture/architecture.png)
 
 Here’s an overview of the figure.
 
-- The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, algorithms, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets, and buy/sell datatokens for a fixed or auto-determined price (data marketplaces), and use data services (spend datatokens).
-- Below are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
-  - **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
-  - **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
-  - **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
-- The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](networks.md).
+* The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, algorithms, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets, and buy/sell datatokens for a fixed or auto-determined price (data marketplaces), and use data services (spend datatokens).
+* Below are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
+  * **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
+  * **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
+  * **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
+* The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](core-concepts/networks.md).
 
 ### Data NFTs, Datatokens and Access Control Tools
 
@@ -52,9 +52,9 @@ Complementary to Ocean Market, Ocean has reference code to ease building **third
 
 ### Metadata Tools
 
-Marketplaces use the Metadata of the asset for discovery. Metadata consists of information like the type of asset, name of the asset, creation date, license, etc. Each data asset can have a [decentralized identifier](https://w3c-ccg.github.io/did-spec/) (DID) that resolves to a DID document (DDO) for associated metadata. The DDO is essentially [JSON](https://www.json.org/) filling in metadata fields. For more details on working with OCEAN DIDs check out the [DID concept documentation](did-ddo.md). The [DDO Metadata documentation](did-ddo.md#metadata) goes into more depth regarding metadata structure.
+Marketplaces use the Metadata of the asset for discovery. Metadata consists of information like the type of asset, name of the asset, creation date, license, etc. Each data asset can have a [decentralized identifier](https://w3c-ccg.github.io/did-spec/) (DID) that resolves to a DID document (DDO) for associated metadata. The DDO is essentially [JSON](https://www.json.org/) filling in metadata fields. For more details on working with OCEAN DIDs check out the [DID concept documentation](broken-reference). The [DDO Metadata documentation](broken-reference) goes into more depth regarding metadata structure.
 
-[OEP8](did-ddo.md) specifies Ocean metadata schema, including fields that must be filled. It’s based on the public [DataSet schema from schema.org](https://schema.org/Dataset).
+[OEP8](broken-reference) specifies Ocean metadata schema, including fields that must be filled. It’s based on the public [DataSet schema from schema.org](https://schema.org/Dataset).
 
 Ocean uses the Ethereum mainnet and other compatible networks as an **on-chain metadata store**, i.e. to store both DID and DDO. This means that once the transaction fee is paid, there are no further expenses or devops work needed to ensure metadata availability into the future, aiding in the discoverability of data assets. It also simplifies integration with the rest of the Ocean system, which is Ethereum-based. Storage cost on Ethereum mainnet is not negligible, but not prohibitive and the other benefits are currently worth the trade-off compared to alternatives.
 

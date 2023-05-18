@@ -41,7 +41,7 @@ These are a few examples of what can be built on top of Ocean.
 
 You can choose from two options:
 
-1. **Fork the** [**Ocean Marketplace**](https://github.com/oceanprotocol/market) **and customize it**: You have the ability to fork the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it according to your needs. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../tutorials/build-a-marketplace/) to learn how to do it.
+1. **Fork the** [**Ocean Marketplace**](https://github.com/oceanprotocol/market) **and customize it**: You have the ability to fork the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it according to your needs. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../developers/build-a-marketplace/) to learn how to do it.
 2. **Build your marketplace with Ocean components**: Alternatively, you can build your data marketplace from scratch using Ocean Protocol's modular components. Ocean provides a comprehensive set of building blocks, such as the [**Aquarius**](https://github.com/oceanprotocol/aquarius), [**Provider**](https://github.com/oceanprotocol/provider), Ocean [contracts](https://github.com/oceanprotocol/contracts), and Ocean libraries([**ocean.js**](https://github.com/oceanprotocol/ocean.js) & [**ocean.py**](https://github.com/oceanprotocol/ocean.py)), which you can integrate into your own marketplace development. This empowers you to create a unique and customized data marketplace experience while leveraging the underlying capabilities and standards provided by Ocean Protocol.
 
 </details>
@@ -64,9 +64,9 @@ To showcase these capabilities, Ocean developed a demonstrator marketplace known
 
 The following guides will help you get started with buying and selling data:
 
-* [Publish an NFT](../how-tos/marketplace-publish-data-asset.md)
-* [Download an NFT](../how-tos/marketplace-download-data-asset.md)
-* [Host Assets](../how-tos/asset-hosting/)
+* [Publish an NFT](../user-guides/marketplace-publish-data-asset.md)
+* [Download an NFT](../user-guides/marketplace-download-data-asset.md)
+* [Host Assets](../user-guides/asset-hosting/)
 
 </details>
 

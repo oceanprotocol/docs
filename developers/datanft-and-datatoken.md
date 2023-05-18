@@ -11,7 +11,7 @@ A non-fungible token stored on the blockchain represents a unique asset. NFTs ca
 
 Fungible tokens represent fungible assets. If you have 5 ETH and Alice has 5 ETH, you and Alice could swap your ETH and your final holdings remain the same. They're apples-to-apples. Licenses (contracts) to access a copyrighted asset are naturally fungible - they can be swapped with each other.
 
-![Data NFT and datatoken](../../.gitbook/assets/architecture/datanft-and-datatoken.png)
+![Data NFT and datatoken](../.gitbook/assets/architecture/datanft-and-datatoken.png)
 
 ## What is a Data NFT?
 
@@ -62,7 +62,7 @@ Ocean provides convenient methods to list ERC20 datatokens for sale, with fixed-
 
 ### High-Level Behavior
 
-![High-Level Flow](<../../.gitbook/assets/architecture/high-level-flow (1).png>)
+![High-Level Flow](../.gitbook/assets/architecture/high-level-flow.png)
 
 Here's an example.
 
@@ -77,7 +77,7 @@ In some situations, you may want the revenue to be sent to another account rathe
 
 In order to set a new payment collector, you need to visit the asset detail page and then click on “Edit Asset” and then scroll down to the field call “Payment Collector Address”. Add the new Ethereum address in this field and then click “Submit“. Finally, you will then need to sign two transactions to finalize the update.
 
-![Update Payment Collector](../../.gitbook/assets/market/change-payment-collector.png)
+![Update Payment Collector](../.gitbook/assets/market/change-payment-collector.png)
 
 ### TemplateIds
 

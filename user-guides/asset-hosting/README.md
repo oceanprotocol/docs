@@ -24,7 +24,7 @@ Read on, anon, if you are interested in the security details!
 These guys know what's up
 {% endembed %}
 
-When you publish your asset as an NFT, then the URL/TX ID/CID required to access the asset is encrypted and stored as a part of the NFT's [DDO](../../developers/core-concepts/did-ddo.md) on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts the DDO and acts as a proxy to serve the asset.&#x20;
+When you publish your asset as an NFT, then the URL/TX ID/CID required to access the asset is encrypted and stored as a part of the NFT's [DDO](broken-reference) on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts the DDO and acts as a proxy to serve the asset.&#x20;
 
 We recommend implementing a security policy that allows **only the Provider's IP address to access the file** and blocks requests from other unauthorized actors is recommended. Since not all hosting services provide this feature, **you must carefully consider the security features while choosing a hosting service.**
 
