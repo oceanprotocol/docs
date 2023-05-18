@@ -1,5 +1,5 @@
 ---
-description: Why Ocean?
+description: Why Ocean Protocol?
 cover: ../.gitbook/assets/cover/discover.png
 coverY: 0
 ---
@@ -11,9 +11,9 @@ As AI becomes more prevalent, society is increasingly reliant on data. However, 
 The concentration of vast datasets in the hands of a few organizations can lead to significant negative consequences for society. These include:
 
 * 📛 **The centralization of power and influence**: With only a few organizations controlling large datasets, other entities may struggle to compete, leading to a concentration of resources and power in the hands of a select few.
-* 📛  **Impaired innovation**: The lack of access to data by smaller players may stifle innovation in the industry. Smaller entities may not have the necessary resources to develop new products or services, limiting progress and competition.
-* 📛  **Privacy concerns**: The concentrated control of data assets increases the risk of privacy breaches and abuses, leading to concerns over personal data use, surveillance, and the potential for discrimination based on data analysis.
-* 📛  **Centralized decision-making**: With a small number of organizations controlling data, the decision-making process based on that data may become centralized and opaque, resulting in a lack of transparency and potentially detrimental outcomes for society.
+* 📛 **Impaired innovation**: The lack of access to data by smaller players may stifle innovation in the industry. Smaller entities may not have the necessary resources to develop new products or services, limiting progress and competition.
+* 📛 **Privacy concerns**: The concentrated control of data assets increases the risk of privacy breaches and abuses, leading to concerns over personal data use, surveillance, and the potential for discrimination based on data analysis.
+* 📛 **Centralized decision-making**: With a small number of organizations controlling data, the decision-making process based on that data may become centralized and opaque, resulting in a lack of transparency and potentially detrimental outcomes for society.
 
 What are your thoughts on this? From where we stand, it seems like we're rapidly approaching a period of great danger ☢️☠️
 

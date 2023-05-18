@@ -1,12 +1,16 @@
 ---
-description: What is Ocean?
+description: What is Ocean Protocol?
 ---
 
 # Explore
 
-Ocean Protocol is a decentralized data exchange protocol that empowers individuals and organizations to unlock the full potential of data. By leveraging blockchain technology and smart contracts, Ocean Protocol creates a secure and transparent ecosystem where data providers and consumers can seamlessly collaborate, trade, and innovate. Discover the possibilities that await you in the world of decentralized data with Ocean Protocol.
+Ocean Protocol is a **decentralized data exchange protocol** that empowers you to monetize and share your data with others on-chain. ⛓️ By leveraging **blockchain technology** and **smart contracts**, Ocean Protocol offers **open-source tools** to securely publish NFTs of your data and algorithms to seamlessly collaborate, trade, and innovate with others.&#x20;
 
-With this being said, let's embark on a journey of discovery and explore the possibilities that await you with Ocean Protocol. The list below provides a glimpse into some of the things you can do, but it's important to note that the opportunities on the Protocol are vast and ever-evolving. Together, we can dive deeper and uncover even more ways to leverage the power of decentralized data.
+<figure><img src="../.gitbook/assets/ocean-jelly-hyperrealistic.jpeg" alt="" width="375"><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
+
+Let's embark on a journey of discovery and explore the possibilities that await you with Ocean Protocol! Get a glimpse into some of the things you can do - the opportunities with our protocol are vast and ever-evolving. Together, we can dive deeper and uncover even more ways to leverage the power of decentralized data.&#x20;
+
+<figure><img src="../.gitbook/assets/penguin-diving (1).gif" alt=""><figcaption></figcaption></figure>
 
 
 
