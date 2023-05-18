@@ -1,6 +1,6 @@
 ---
 description: Why Ocean?
-cover: ../.gitbook/assets/cover/rewards.png
+cover: broken-reference
 coverY: 0
 ---
 

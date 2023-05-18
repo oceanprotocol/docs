@@ -1,5 +1,5 @@
 ---
-description: What Can You Do with Ocean?
+description: What is Ocean?
 ---
 
 # Explore
