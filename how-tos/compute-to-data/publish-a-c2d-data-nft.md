@@ -83,3 +83,7 @@ If you would like to run the compute job, then simply click the radio button to 
 <figure><img src="../../.gitbook/assets/buy-compute-job.png" alt="" width="375"><figcaption><p>Buy the compute job to check your work!</p></figcaption></figure>
 
 The output of your algorithm's computation on the dataset will appear in the Algorithm.log output. Voilá!
+
+#### Now do a little dance, because you're done!
+
+{% embed url="https://media4.giphy.com/media/CxhWJeIicfOEynsEn6/giphy.gif?cid=ecf05e478eb1zzixmsjwbwx37a0d4e1096812j513crzr18j&ct=g&ep=v1_gifs_search&rid=giphy.gif" %}
