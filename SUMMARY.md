@@ -78,7 +78,7 @@
   * [Data Farming Background](rewards/df-background.md)
   * [Emissions & APYs](rewards/emissions-apys.md)
   * [Rewards Tutorial](rewards/veOcean-Data-Farming-Tutorial.md)
-* [🤝 Contribute](contribute/contributing.md)
+* [🤝 Contribute](contribute/README.md)
   * [Partners & Collaborators](contribute/projects-using-ocean.md)
   * [Contributor Code of Conduct](contribute/code-of-conduct.md)
   * [Legal Requirements](contribute/legal-reqs.md)

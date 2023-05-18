@@ -1,8 +1,8 @@
 ---
-description: DeFi
+description: DeFI
 cover: ../.gitbook/assets/cover/rewards.png
 coverY: 0
-------
+---
 
 # 🤑 DeFi
 

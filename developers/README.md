@@ -124,7 +124,7 @@ If ou are looking to get to grips with the inner workings of Ocean, then you'll 
 * [Set Up a Marketplace](../tutorials/build-a-marketplace/marketplace.md)
 * [Compute-to-Data](compute-to-data/)
 * [Deploying components](../infrastructure/README.md)
-* [Contributing](../contribute/contributing.md)
+* [Contributing](../contribute/README.md)
 
 ## Supporters
 

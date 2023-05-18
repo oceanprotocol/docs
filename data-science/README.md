@@ -1,5 +1,5 @@
 ---
-description: User guides
+description: Data Science
 cover: ../.gitbook/assets/cover/data_science.png
 coverY: 0
 ---
