@@ -1,9 +1,6 @@
-
 ---
 title: Storage Specifications
-section: developers
-description: >-
-  Specification of storage options for assets in Ocean Protocol.
+description: Specification of storage options for assets in Ocean Protocol.
 ---
 
 # Storage Specifications
