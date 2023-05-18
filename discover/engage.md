@@ -1,5 +1,5 @@
 ---
-description: Learn the Web3 basics to understand Ocean Protocol tech
+description: Learn the Web3 concepts backing up Ocean Protocol tech
 ---
 
 # Engage
