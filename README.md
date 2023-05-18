@@ -29,7 +29,7 @@ layout: landing
         <a href="discover/discover.md">discover.md</a>
       </td>
       <td>
-        <a href=".gitbook/assets/landing/discover_card.png">ocean.png</a>
+        <a href=".gitbook/assets/landing/discover_card.png">discover_card.png</a>
       </td>
     </tr>
     <tr>
@@ -43,7 +43,7 @@ layout: landing
         <a href="user-guides/">user-guides</a>
       </td>
       <td>
-        <a href=".gitbook/assets/landing/user_guides.png">developers.png</a>
+        <a href=".gitbook/assets/landing/user_guides.png">user_guides.png</a>
       </td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@ layout: landing
         <a href="developers/">developers</a>
       </td>
       <td>
-        <a href=".gitbook/assets/landing/developers_card.png">developers.png</a>
+        <a href=".gitbook/assets/landing/developers_card.png">developers_card.png</a>
       </td>
     </tr>
 		<tr>
@@ -69,7 +69,7 @@ layout: landing
       <td></td>
       <td></td>
       <td>
-        <a href=".gitbook/assets/landing/data_science_card.png">tutorials.png</a>
+        <a href=".gitbook/assets/landing/data_science_card.png">data_science_card.png</a>
       </td>
     </tr>
     <tr>
@@ -83,21 +83,7 @@ layout: landing
         <a href="infrastructure/">infrastructure</a>
       </td>
       <td>
-        <a href=".gitbook/assets/landing/infrastructure_card.png">building-blocks.png</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="contribute/contributing.md">contributing.md</a>
-      </td>
-      <td>Learn how you can contribute to the growth and development of Ocean Protocol. Whether you're interested in community initiatives, open-source projects, or other opportunities, there are many ways to get involved and make a difference.</td>
-      <td></td>
-      <td></td>
-      <td>
-        <a href="contribute/contributing.md">contributing.md</a>
-      </td>
-      <td>
-        <a href=".gitbook/assets/landing/contribute_card.png">contribute.png</a>
+        <a href=".gitbook/assets/landing/infrastructure_card.png">infrastructure_card.png</a>
       </td>
     </tr>
     <tr>
@@ -109,7 +95,7 @@ layout: landing
       <td></td>
       <td></td>
       <td>
-        <a href=".gitbook/assets/landing/rewards_card.png">rewards.png</a>
+        <a href=".gitbook/assets/landing/rewards_card.png">rewards_card.png</a>
       </td>
     </tr>
 		<tr>
@@ -123,16 +109,22 @@ layout: landing
         <a href="rewards/">rewards</a>
       </td>
       <td>
-        <a href=".gitbook/assets/landing/rewards_card.png">rewards.png</a>
+        <a href=".gitbook/assets/landing/rewards_card.png">rewards_card.png</a>
       </td>
     </tr>
-    <tr>
+		<tr>
+      <td>
+        <a href="contribute/contributing.md">contributing.md</a>
+      </td>
+      <td>Learn how you can contribute to the growth and development of Ocean Protocol. Whether you're interested in community initiatives, open-source projects, or other opportunities, there are many ways to get involved and make a difference.</td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <a href="contribute/contributing.md">contributing.md</a>
+      </td>
+      <td>
+        <a href=".gitbook/assets/landing/contribute_card.png">contribute_card.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
