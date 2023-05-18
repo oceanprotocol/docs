@@ -1,3 +1,9 @@
+---
+description: DeFi
+cover: ../.gitbook/assets/cover/rewards.png
+coverY: 0
+------
+
 # 🤑 DeFi
 
 ## Capitalize with Ocean Protocol 💸

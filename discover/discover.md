@@ -1,6 +1,6 @@
 ---
 description: Why Ocean?
-cover: ../.gitbook/assets/landing/rewards.png
+cover: ../.gitbook/assets/cover/rewards.png
 coverY: 0
 ---
 

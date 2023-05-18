@@ -1,6 +1,8 @@
 ---
 description: An overview of Ocean Protocol's governance and incentives mechanisms
----
+cover: ../.gitbook/assets/cover/rewards.png
+coverY: 0
+------
 
 # 💰 Rewards
 
@@ -8,7 +10,7 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 The following docs provide you with sufficient intuition to access, utilize, and build upon the protocol's core incentive and reward system: Data Farming.
 
-![DF Rewards Page](../.gitbook/assets/rewards/df\_rewards\_page.png)
+![DF Rewards Page](../.gitbook/assets/rewards/df_rewards_page.png)
 
 ## veOCEAN
 
@@ -28,7 +30,7 @@ Finally, if you want to continue expanding your knowledge on OCEAN token emissio
 
 [Emissions & APYs](emissions-apys.md) will provide you will information about how OCEAN will be released over time through the Data Farming program and provide you with APY studies.
 
-Our [FAQ](faq.md) answers many different questions about staking, chains, deployments, and other details that may be valuable to you.
+Our [FAQ](../discover/faq.md) answers many different questions about staking, chains, deployments, and other details that may be valuable to you.
 
 ## Reference
 
