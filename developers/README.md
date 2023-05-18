@@ -1,4 +1,8 @@
-# 👨💻 👨💻 Developers
+---
+coverY: 0
+---
+
+# 👨💻 Developers
 
 ## What is Ocean?
 

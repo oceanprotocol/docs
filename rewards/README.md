@@ -1,5 +1,6 @@
 ---
 description: An overview of Ocean Protocol's governance and incentives mechanisms
+coverY: 0
 ---
 
 # 💰 Rewards

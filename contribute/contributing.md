@@ -1,6 +1,7 @@
 ---
 title: Ways to Contribute
 description: Help to improve and develop Ocean core software.
+coverY: 0
 ---
 
 # 🤝 Contribute

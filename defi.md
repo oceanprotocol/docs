@@ -1,3 +1,7 @@
+---
+coverY: 0
+---
+
 # 🤑 DeFi
 
 ## Capitalize with Ocean Protocol 💸
