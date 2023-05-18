@@ -4,7 +4,7 @@ description: How to publish a data NFT with C2D configurations
 
 # Publish a C2D Data NFT
 
-<figure><img src="../../.gitbook/assets/c2d/bringmoredata.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/talk-data-to-me.gif" alt=""><figcaption></figcaption></figure>
 
 #### Step 1 - Navigate to the Ocean Market
 
