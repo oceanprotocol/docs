@@ -1,18 +1,18 @@
 ---
-description: How is Ocean working?
+description: Learn the Web3 basics to understand Ocean Protocol tech
 ---
 
 # Engage
 
-As you embark on your journey to engage with Ocean, let's explore some fundamental concepts:
+You'll need to know a thing or two about **Web3** to fully understand Ocean Protocol's tech... Let's get started with the basics. 🧑‍🏫
 
-### 1. Understanding Blockchain: The Backbone of Ocean Protocol
-
-{% embed url="https://media.giphy.com/media/bTrTnPMPq8UORCrBWG/giphy.gif" %}
-Blockchain
+{% embed url="https://media.giphy.com/media/cu1HaFsymELztiENZk/giphy.gif" %}
+Prepare yourself, my friend
 {% endembed %}
 
-Blockchain is a revolutionary technology that underpins the decentralized nature of Ocean Protocol. At its core, blockchain is a distributed ledger that securely records and verifies transactions across a network of computers. It operates on key concepts that ensure trust and immutability:
+### Blockchain: The backbone of Ocean Protocol
+
+Blockchain is a revolutionary technology that underpins the decentralized nature of Ocean Protocol. At its core, blockchain is a **distributed ledger** that securely **records and verifies transactions across a network of computers**. It operates on the following key concepts that ensure trust and immutability:
 
 * **Decentralization**: Blockchain eliminates the need for intermediaries by enabling a peer-to-peer network where transactions are validated collectively. This decentralized structure enhances transparency, reduces reliance on centralized authorities, and promotes a more inclusive and democratic data economy.
 * **Immutability**: Once a transaction is recorded on the blockchain, it becomes virtually impossible to alter or tamper with. The data is stored in blocks, which are cryptographically linked together, forming an unchangeable chain of information. Immutability ensures the integrity and reliability of data, providing a foundation of trust in the Ocean Protocol ecosystem.
@@ -26,15 +26,13 @@ Ocean Protocol harnesses the power of blockchain to facilitate secure and audita
 
 By integrating blockchain technology, Ocean Protocol establishes a trusted and decentralized infrastructure for data exchange. It empowers individuals and organizations to securely share, monetize, and leverage data assets while maintaining control and privacy.
 
+### **OCEAN Tokens: Empowering Data Ownership and Monetization**
 
-
-### **2. Ocean Tokens: Empowering Data Ownership and Monetization**
-
-Ocean tokens (OCEAN) are the native cryptocurrency of the Ocean Protocol ecosystem. They serve as the medium of exchange for data services, enabling data owners, consumers, and service providers to participate in the data economy. Here's how Ocean tokens are used within the ecosystem:
+Ocean tokens (**OCEAN**) are the native cryptocurrency of the Ocean Protocol ecosystem. They serve as the medium of exchange for data services, enabling data owners, consumers, and service providers to participate in the data economy. Here's how Ocean tokens are used within the ecosystem:
 
 1. **Data Ownership**: Ocean tokens empower data owners by providing them with control over their data assets. Through the use of smart contracts, data owners can define access permissions, usage rights, and pricing terms for their data. By holding and staking Ocean tokens, data owners can maintain ownership and exercise greater control over their data assets.
 2. **Data Monetization**: Ocean tokens enable data owners to monetize their data assets. Data owners can set a price in Ocean tokens for accessing and utilizing their data. This creates opportunities for data owners to unlock value from their data assets by offering them for sale or licensing them to interested parties. The use of Ocean tokens ensures secure and transparent transactions, enabling data owners to be fairly compensated for their valuable data.
 3. **Data Consumption**: Consumers of data services within the Ocean ecosystem utilize Ocean tokens to access and utilize data assets. By paying the required amount of Ocean tokens, consumers can obtain access to high-quality data, enabling them to enhance their research, analysis, and AI model training. Ocean tokens facilitate seamless and secure transactions between data providers and consumers, fostering a thriving data marketplace.
-4. **Stake for veOcean and Curate Data sets**: Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.&#x20;
+4. **Stake for veOcean and Curate Data sets**: Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOCEAN](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.&#x20;
 
 Get ready to engage with Ocean Protocol by understanding the key components required. Learn how to connect your web3 wallet, choose the appropriate network (mainnet or testnet), and interact with smart contracts to buy, sell, or trade data assets.
