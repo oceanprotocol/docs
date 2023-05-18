@@ -8,11 +8,11 @@ Ocean Protocol's Data Farming dapp dispenses rewards every Thursday to its parti
 
 Want to begin [data farming](https://df.oceandao.org)? Start [here](get-veocean-tokens.md). 🤠
 
-### Step 1 - Navigate to the Data Farming Rewards page&#x20;
+### Step 1 - Navigate to the Data Farming Rewards page
 
 Go to [https://df.oceandao.org/](https://df.oceandao.org), and click the Rewards [link](https://df.oceandao.org/activerewards) at the top of the page.
 
-<figure><img src="../.gitbook/assets/rewards/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/rewards/Rewards-Tab (1).png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
 
 ### Step 2 - Click the pink 'Claim # OCEAN' buttons 🛎️
 

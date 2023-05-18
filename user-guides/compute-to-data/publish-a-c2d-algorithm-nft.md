@@ -52,7 +52,7 @@ You're an algorithm guru after all!
 
 * Your preview should look like the following:
 
-<figure><img src="../../.gitbook/assets/c2d/preview-publish.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/c2d/preview-publish (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Step 8 - Submit the transactions
 
@@ -60,6 +60,6 @@ You're an algorithm guru after all!
 
 <figure><img src="../../.gitbook/assets/c2d/Sign-transactions.png" alt=""><figcaption><p>Sign and pay gas for 2 transactions on the final publishing step</p></figcaption></figure>
 
-#### Congratulations on publishing your algorithm!&#x20;
+#### Congratulations on publishing your algorithm!
 
 * On to the next step -> [Publish a C2D Data NFT](publish-a-c2d-data-nft.md)

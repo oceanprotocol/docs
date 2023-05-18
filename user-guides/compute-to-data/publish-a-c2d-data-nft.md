@@ -62,7 +62,7 @@ description: How to publish a data NFT with C2D configurations
 
 #### Step 10 - Edit the Compute settings
 
-* &#x20;You must select the Edit Compute Settings button to add your algorithm to the data NFT for computation.
+* You must select the Edit Compute Settings button to add your algorithm to the data NFT for computation.
 
 <figure><img src="../../.gitbook/assets/c2d/edit-compute-settings.png" alt=""><figcaption><p>Select the Edit Compute Settings tab button</p></figcaption></figure>
 
@@ -78,7 +78,7 @@ description: How to publish a data NFT with C2D configurations
 
 #### Congratulations! You have fully finished the C2D flow. Check your work by verifying that your algorithm appears on the data NFT's page, like in the following example:
 
-<figure><img src="../../.gitbook/assets/c2d/double-check-work.png" alt="" width="375"><figcaption><p>Your algorithm should appear now on the data NFT's page!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/c2d/double-check-work (1).png" alt="" width="375"><figcaption><p>Your algorithm should appear now on the data NFT's page!</p></figcaption></figure>
 
 If you would like to run the compute job, then simply click the radio button to the left of the algorithm's name and click Buy Compute Job.
 

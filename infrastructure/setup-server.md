@@ -28,7 +28,7 @@ Select Ubuntu OS and choose a plan. The required CPU, Memory depends on the numb
 
 Also, select the region where you want Aquarius to be hosted and a root password.
 
-![Select region](../.gitbook/assets/server-setup/server-setup3.png)
+![Select region](<../.gitbook/assets/server-setup/server-setup3 (1).png>)
 
 ![Click create Droplet](../.gitbook/assets/server-setup/server-setup4.png)
 
