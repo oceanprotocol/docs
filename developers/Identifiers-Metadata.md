@@ -7,8 +7,9 @@ description: >-
   the DID & DDO standards.
 ---
 
+# Identifiers & Metadata
 
-## Identifiers 
+### Identifiers
 
 In Ocean, we use decentralized identifiers (DIDs) to identify your asset within the network. Decentralized identifiers (DIDs) are a type of identifier that enables verifiable, decentralized digital identity. In contrast to typical, centralized identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject.
 
@@ -28,11 +29,13 @@ console.log(checksum)
 
 DIDs in ocean follow [the generic DID scheme](https://w3c-ccg.github.io/did-spec/#the-generic-did-scheme).
 
-## Metadata
+{% embed url="https://www.youtube.com/watch?t=95s&v=I06AUNt7ee8" %}
+What is a DID and DDO?
+{% endembed %}
 
+### Metadata
 
-
-### Overview
+#### Overview
 
 This document describes how Ocean assets follow the DID/DDO specification, such that Ocean assets can inherit DID/DDO benefits and enhance interoperability. DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
@@ -40,7 +43,7 @@ Decentralized identifiers (DIDs) are a type of identifier that enable verifiable
 
 A DID Document (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
-### Rules for DID & DDO
+#### Rules for DID & DDO
 
 An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under the control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
@@ -48,14 +51,13 @@ An _asset_ has a DID and DDO. The DDO should include [metadata](did-ddo.md#metad
 
 All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like _Aquarius_ can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
 
-
-### Publishing & Retrieving DDOs
+#### Publishing & Retrieving DDOs
 
 The DDO is stored on-chain as part of the NFT contract and stored in encrypted form using the private key of the _Provider_. To resolve it, a metadata cache like _Aquarius_ must query the provider to decrypt the DDO.
 
 Here is the flow:
 
-![DDO flow](../../.gitbook/assets/architecture/ddo-flow.png)
+![DDO flow](../.gitbook/assets/architecture/ddo-flow.png)
 
 <details>
 
