@@ -1,4 +1,5 @@
 ---
+cover: ../.gitbook/assets/cover/developer_tutorials.png
 coverY: 0
 ---
 
@@ -93,10 +94,10 @@ Private data can help research, leading to life-altering innovations in science 
 
 Checkout these guides if you are aiming to get a deeper understanding on how compute-to-data works:
 
-* [Architecture](compute-to-data-architecture.md)
-* [Datasets & Algorithms](compute-to-data-datasets-algorithms.md)
+* [Architecture](compute-to-data/compute-to-data-architecture.md)
+* [Datasets & Algorithms](compute-to-data/compute-to-data-datasets-algorithms.md)
 * [Minikube Environment](../infrastructure/compute-to-data-minikube.md)
-* [Writing Algorithms](compute-to-data-algorithms.md)
+* [Writing Algorithms](compute-to-data/compute-to-data-algorithms.md)
 * [Private docker registry](../infrastructure/compute-to-data-docker-registry.md)
 
 ## How does it work?
@@ -118,11 +119,11 @@ If ou are looking to get to grips with the inner workings of Ocean, then you'll 
 * [Networks](../discover/networks/)
 * [Fees](fees.md)
 * [Asset pricing](asset-pricing.md)
-* [DID & DDO](did-ddo.md)
+* [DID & DDO](ddo-specification.md)
 * [Roles](roles.md)
 * [Set Up a Marketplace](../tutorials/build-a-marketplace/marketplace.md)
 * [Compute-to-Data](compute-to-data/)
-* [Deploying components](../infrastructure/)
+* [Deploying components](../infrastructure/README.md)
 * [Contributing](../contribute/contributing.md)
 
 ## Supporters

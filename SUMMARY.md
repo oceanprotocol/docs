@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👋 Welcome](README.md)
-* [🌊 Discover](discover/discover.md)
+* [🌊 Discover](discover/README.md)
   * [Explore](discover/explore.md)
   * [Engage](discover/engage.md)
   * [Wallets](discover/wallets.md)
