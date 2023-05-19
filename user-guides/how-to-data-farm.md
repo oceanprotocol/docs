@@ -18,7 +18,7 @@ The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for
 
 #### Step 3 - Click on the Farms tab in the top menu
 
-<figure><img src="../.gitbook/assets/farms-page.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/farms-page.png" alt=""><figcaption><p>Click the Farms page link in the menu</p></figcaption></figure>
 
 #### Step 4 - Select the assets on the Ocean Market which you would like to allocate to by toggling the percentage allocation at the end of the row
 
@@ -29,3 +29,7 @@ The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for
 
 #### Step 5 - Click the Update Allocations button
 
+* Click the pink Update Allocations button
+* Sign the transactions with your wallet & pay the gas fees
+
+<figure><img src="../.gitbook/assets/update-allocations.png" alt=""><figcaption><p>Click the Update Allocations button</p></figcaption></figure>
