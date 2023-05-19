@@ -1,9 +1,9 @@
-# Get datatoken information
+# Get Datatoken Information
 
 The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
 
 {% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
 {% endhint %}
 
 #### Query
@@ -115,7 +115,8 @@ print(json.dumps(result, indent=4, sort_keys=True))
 
 **Execute script**
 
-<pre class="language-bash"><code class="lang-bash"><strong>python datatoken_information.py</strong></code></pre>
+<pre class="language-bash"><code class="lang-bash"><strong>python datatoken_information.py
+</strong></code></pre>
 {% endtab %}
 
 {% tab title="Javascript" %}

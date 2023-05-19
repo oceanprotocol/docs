@@ -3,7 +3,7 @@
 The result of following GraphQL query returns the information about data nfts.
 
 {% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
 {% endhint %}
 
 #### Query

@@ -3,7 +3,7 @@
 The result of following GraphQL query returns the information about datatokens.
 
 {% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
 {% endhint %}
 
 #### Query
@@ -112,7 +112,7 @@ python list_all_tokens.py
 {% tab title="Javascript" %}
 The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed.
 
-#### Create script
+**Create script**
 
 {% code title="listAllTokens.js" %}
 ```javascript
@@ -171,7 +171,7 @@ axios(config)
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```bash
 node listAllTokens.js

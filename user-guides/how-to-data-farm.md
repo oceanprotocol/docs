@@ -6,4 +6,5 @@ description: How to capitalize with Ocean Protocol's Data Farming dapp
 
 <figure><img src="../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
 
-The bread and butter of the Ocean Protocol Data Farming dapp is&#x20;
+The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating high quality datasets and algorithms on the Ocean Market. The way that users curate high quality assets on the Ocean Market is by allocating veOCEAN to them using the Data Farming dApp. We'll show you how!
+

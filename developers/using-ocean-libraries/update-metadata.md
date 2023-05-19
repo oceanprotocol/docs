@@ -4,10 +4,10 @@ This tutorial will guide you to update an existing asset published on-chain usin
 
 #### Prerequisites
 
-- [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
-- [Set up the .env file](configuration.md#create-a-.env-file)
-- [Install the dependencies](configuration.md#setup-dependencies)
-- [Create a configuration file](configuration.md#create-a-configuration-file)
+* [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
+* [Set up the .env file](configuration.md#create-a-.env-file)
+* [Install the dependencies](configuration.md#setup-dependencies)
+* [Create a configuration file](configuration.md#create-a-configuration-file)
 
 {% hint style="info" %}
 The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
@@ -15,7 +15,7 @@ The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in 
 
 #### Create a script to update the metadata
 
-Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
+Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below.
 
 {% tabs %}
 {% tab title="ocean.js" %}

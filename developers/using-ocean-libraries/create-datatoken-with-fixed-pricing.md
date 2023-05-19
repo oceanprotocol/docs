@@ -4,14 +4,14 @@ This tutorial guides you through the process of creating your own data NFT and a
 
 #### Prerequisites
 
-- [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
-- [Set up the .env file](configuration.md#create-a-.env-file)
-- [Install the dependencies](configuration.md#setup-dependencies)
-- [Create a configuration file](configuration.md#create-a-configuration-file)
+* [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
+* [Set up the .env file](configuration.md#create-a-.env-file)
+* [Install the dependencies](configuration.md#setup-dependencies)
+* [Create a configuration file](configuration.md#create-a-configuration-file)
 
 #### Create a script to deploy data NFT and datatoken with fixed pricing.
 
-Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
+Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below.
 
 {% hint style="info" %}
 **Fees**: The code snippets below define fees related parameters. Please refer [fees page ](../../core-concepts/fees.md)for more details
@@ -170,11 +170,10 @@ print(f"Created fixed rate exchange with ID {exchange_id.hex()}")
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```
 python create_datatoken_with_fre.py
 ```
 {% endtab %}
 {% endtabs %}
-

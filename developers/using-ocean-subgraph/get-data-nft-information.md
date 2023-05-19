@@ -3,7 +3,7 @@
 The result of following GraphQL query returns the information about a particular datatoken. Here, `0x1c161d721e6d99f58d47f709cdc77025056c544c` is the address of the dataNFT.
 
 {% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](./#ocean-subgraph-graphiql).
+Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
 {% endhint %}
 
 #### Query
@@ -40,7 +40,7 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
 {% tab title="Python" %}
 The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed. Change the value of the variable dataNFT\_address with the address of the datatoken of your choice.
 
-#### Create script
+**Create script**
 
 {% code title="dataNFT_information.py" %}
 ```python
@@ -91,13 +91,14 @@ print(json.dumps(result, indent=4, sort_keys=True))
 
 **Execute script**
 
-<pre class="language-bash"><code class="lang-bash"><strong>python dataNFT_information.py</strong></code></pre>
+<pre class="language-bash"><code class="lang-bash"><strong>python dataNFT_information.py
+</strong></code></pre>
 {% endtab %}
 
 {% tab title="Javascript" %}
 The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed. Change the value of the variable `datanftAddress` with the address of the datatoken of your choice.
 
-#### Create script
+**Create script**
 
 {% code title="dataNFTInfo.js" %}
 ```javascript
@@ -152,7 +153,7 @@ axios(config)
 ```
 {% endcode %}
 
-#### Execute script
+**Execute script**
 
 ```bash
 node dataNFTInfo.js

@@ -1,17 +1,17 @@
-# Creating a dataNFT
+# Creating a data NFT
 
 This tutorial guides you through the process of creating your own data NFT using Ocean libraries. To know more about data NFT please refer [this page](../../core-concepts/datanft-and-datatoken.md).
 
 #### Prerequisites
 
-- [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
-- [Set up the .env file](configuration.md#create-a-.env-file)
-- [Install the dependencies](configuration.md#setup-dependencies)
-- [Create a configuration file](configuration.md#create-a-configuration-file)
+* [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
+* [Set up the .env file](configuration.md#create-a-.env-file)
+* [Install the dependencies](configuration.md#setup-dependencies)
+* [Create a configuration file](configuration.md#create-a-configuration-file)
 
 #### Create a script to deploy dataNFT
 
-Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below. &#x20;
+Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below.
 
 {% tabs %}
 {% tab title="ocean.js" %}
