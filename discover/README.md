@@ -6,6 +6,8 @@ coverY: 0
 
 # 🌊 Discover
 
+{% embed url="https://youtu.be/4P72ZelkEpQ" %}
+
 As AI becomes more prevalent, society is increasingly reliant on data. However, a few organizations with massive data assets and AI capabilities have gained worrying levels of control, which poses a threat to a free and open society ☢️
 
 The concentration of vast datasets in the hands of a few organizations can lead to significant negative consequences for society. These include:

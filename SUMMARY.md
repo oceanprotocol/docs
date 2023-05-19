@@ -14,7 +14,7 @@
 * [📚 User Guides](user-guides/README.md)
   * [Publish an NFT](user-guides/marketplace-publish-data-asset.md)
   * [Download NFT Assets](user-guides/marketplace-download-data-asset.md)
-  * [Sell NFT Computations (C2D)](user-guides/compute-to-data/README.md)
+  * [Sell NFT Computations (Compute-to-Data)](user-guides/compute-to-data/README.md)
     * [Make a Boss C2D Algorithm](user-guides/compute-to-data/make-a-boss-c2d-algorithm.md)
     * [Publish a C2D Algorithm NFT](user-guides/compute-to-data/publish-a-c2d-algorithm-nft.md)
     * [Publish a C2D Data NFT](user-guides/compute-to-data/publish-a-c2d-data-nft.md)
