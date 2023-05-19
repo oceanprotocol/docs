@@ -1,7 +1,7 @@
 ---
 description: Why Ocean Protocol?
 cover: ../.gitbook/assets/vertical-jellies.jpeg
-coverY: 55
+coverY: 7.413145539906106
 ---
 
 # 🌊 Discover
