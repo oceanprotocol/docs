@@ -116,9 +116,9 @@ In this example, the buyer wants to run the algorithm with certain parameters on
 - Search for a dataset using [Ocean market](https://market.oceanprotocol.com/) or [Aquarius API](../../api-references/aquarius-rest-api.md)
 - [Allow an algorithm to run on the dataset](https://github.com/oceanprotocol/ocean.py/blob/6eb068df338abc7376430cc5ba7fe2d381508328/READMEs/c2d-flow.md#5-alice-allows-the-algorithm-for-c2d-for-that-data-asset)
 - Buy datatokens using [Ocean market](https://market.oceanprotocol.com/) or [ocean.py](https://github.com/oceanprotocol/ocean.py)
-- [Set up ocean.py](../using-ocean-libraries/configuration.md)
+- [Set up ocean.py](../ocean-libraries/configuration.md)
 
-For configuring ocean.py/ocean.js, please refer this [guide](../using-ocean-libraries/configuration.md). Copy the below code snippet to a file locally after completing required configurations and execute the script.
+For configuring ocean.py/ocean.js, please refer this [guide](../ocean-libraries/configuration.md). Copy the below code snippet to a file locally after completing required configurations and execute the script.
 
 {% tabs %}
 {% tab title="Python" %}

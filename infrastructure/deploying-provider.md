@@ -11,7 +11,7 @@ The source code of Provider can be access from [here](https://github.com/oceanpr
 ### Prerequisites
 
 * Docker and Docker compose are installed. Click [here](https://docs.docker.com/engine/install/) to view guide on installing docker.
-* [Obtain an API key](../using-ocean-libraries/configuration.md#obtaining-api-key-for-ethereum-node-provider)
+* [Obtain an API key](../ocean-libraries/configuration.md#obtaining-api-key-for-ethereum-node-provider)
 
 ### Create a working directory
 

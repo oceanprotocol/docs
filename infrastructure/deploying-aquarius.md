@@ -12,7 +12,7 @@ Aquarius consists of two parts:\
 
 * A server for hosting Aquarius. See [this guide](setup-server.md) on creating a server.
 * Docker and Docker compose are installed. Click [here](https://docs.docker.com/engine/install/) to view guide on installing docker.
-* [Obtain an API key](../using-ocean-libraries/configuration.md#obtaining-api-key-for-ethereum-node-provider)
+* [Obtain an API key](../ocean-libraries/configuration.md#obtaining-api-key-for-ethereum-node-provider)
 
 ### Create a working directory
 

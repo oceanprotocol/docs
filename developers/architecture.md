@@ -9,7 +9,7 @@ description: Data NFTs and datatokens architecture
 
 Here is the Ocean architecture.
 
-![Ocean Protocol tools architecture](.gitbook/assets/architecture/architecture.png)
+![Ocean Protocol tools architecture](../.gitbook/assets/architecture/architecture.png)
 
 Here’s an overview of the figure.
 
@@ -18,7 +18,7 @@ Here’s an overview of the figure.
   * **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
   * **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
   * **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
-* The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](core-concepts/networks.md).
+* The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](../discover/networks/README.md).
 
 ### Data NFTs, Datatokens and Access Control Tools
 
