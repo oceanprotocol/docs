@@ -53,7 +53,7 @@
     * [Publish with Fixed Pricing](developers/using-ocean-libraries/create-datatoken-with-fixed-pricing.md)
     * [Mint Datatokens](developers/using-ocean-libraries/mint-datatoken.md)
     * [Update Metadata](developers/using-ocean-libraries/update-metadata.md)
-  * [Compute to data](developers/compute-to-data/README.md)
+  * [Compute-to-data](developers/compute-to-data/README.md)
     * [Architecture](developers/compute-to-data/compute-to-data-architecture.md)
     * [Datasets & Algorithms](developers/compute-to-data/compute-to-data-datasets-algorithms.md)
     * [Writing Algorithms](developers/compute-to-data/compute-to-data-algorithms.md)
