@@ -3,17 +3,17 @@ cover: ../.gitbook/assets/cover/developer_tutorials.png
 coverY: 0
 ---
 
-# 👨💻 Developers
+# 👨💻 👨💻 Developers
 
-## What is Ocean?
+## Introduction
 
-Ocean provides the next generation of tools to unlock data at a large scale. Ocean makes it easy to publish and consume data services.
+Ocean Protocol provides the next generation of open-source tools to unlock data value potential at a large scale. Ocean makes it easy to publish and consume data services on-chain.
 
-Ocean uses Data NFTs (ERC721) and datatokens (ERC20) as the interface to connect data assets with blockchain and DeFi tools. Crypto wallets become data wallets, crypto exchanges become data marketplaces, DAOs for data co-ops, and more via DeFi composability.
+Ocean uses Data NFTs (ERC-721) and datatokens (ERC-20) smart contracts as the interface to connect data assets with blockchain and DeFi tools. Crypto wallets become data wallets, crypto exchanges become data marketplaces, DAOs for data co-ops, and more via DeFi composability.
 
 ![Creating a New Data Economy](../.gitbook/assets/architecture/feature-datascience@2x.webp)
 
-The following guides are a greate place to start if you are new to Ocean:
+The following guides are a great place to start if you are new to Ocean:
 
 * [Architecture Overview](architecture.md)
 * [Data NFTs and Datatokens](datanft-and-datatoken.md)
@@ -123,8 +123,8 @@ If ou are looking to get to grips with the inner workings of Ocean, then you'll 
 * [Roles](roles.md)
 * [Set Up a Marketplace](../tutorials/build-a-marketplace/marketplace.md)
 * [Compute-to-Data](compute-to-data/)
-* [Deploying components](../infrastructure/README.md)
-* [Contributing](../contribute/README.md)
+* [Deploying components](../infrastructure/)
+* [Contributing](../contribute/)
 
 ## Supporters
 
