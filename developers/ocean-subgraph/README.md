@@ -6,7 +6,7 @@ description: >-
 
 # Ocean Subgraph
 
-### What is the Ocean subgraph?
+### What is the Subgraph?
 
 The [Ocean Subgraph](https://github.com/oceanprotocol/ocean-subgraph) is built on top of [The Graph](https://thegraph.com/)(the popular :sunglasses: indexing and querying protocol for blockchain data). It is an essential component of the Ocean Protocol ecosystem. It provides an off-chain service that utilizes GraphQL to offer efficient access to information related to datatokens, users, and balances. By leveraging the subgraph, data retrieval becomes faster compared to an on-chain query. The data sourced from the Ocean subgraph can be accessed through [GraphQL](https://graphql.org/learn/) queries.
 
@@ -16,9 +16,9 @@ Imagine this 💭: if you were to always fetch data from the on-chain, you'd sta
 
 ### How to use the Subgraph?
 
-You can utilize the Subgraph instances provided by Ocean Protocol or deploy your instance. Deploying your own instance allows you to have more control and customization options for your specific use case.To learn how to host your own Ocean Subgraph instance, refer to the guide available on the [Deploying Ocean Subgraph](../../infrastructure/deploying-ocean-subgraph.md) page.
+You can utilize the Subgraph instances provided by Ocean Protocol or deploy your instance. Deploying your own instance allows you to have more control and customization options for your specific use case. To learn how to host your own Ocean Subgraph instance, refer to the guide available on the [Deploying Ocean Subgraph](../../infrastructure/deploying-ocean-subgraph.md) page.
 
-If you're eager to use the Ocean Subgraph, here's some important information for you: We've deployed an Ocean subgraph for each of the supported networks. Take a look at the table below, where you'll find handy links to both the subgraph instance and GraphiQL for each network. With the user-friendly GraphiQL interface, you can execute GraphQL queries directly, without any additional setup. It's a breeze! :ocean:
+If you're eager to use the Ocean Subgraph, here's some important information for you: We've deployed an Ocean Subgraph for each of the supported networks. Take a look at the table below, where you'll find handy links to both the subgraph instance and GraphiQL for each network. With the user-friendly GraphiQL interface, you can execute GraphQL queries directly, without any additional setup. It's a breeze! :ocean:
 
 | Network             | Subgraph URL                                                | GraphiQL URL                                                                                                    |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -30,4 +30,4 @@ If you're eager to use the Ocean Subgraph, here's some important information for
 | Mumbai              | [Subgraph](https://v4.subgraph.mumbai.oceanprotocol.com)    | [GraphiQL](https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)    |
 | Görli               | [Subgraph](https://v4.subgraph.goerli.oceanprotocol.com)    | [GraphiQL](https://v4.subgraph.goerli.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)    |
 
-Now that you're familiar with what the Ocean Subgraph is all about, get ready for some hands-on fun! In the following pages, we've prepared a a few examples just for you. From running exciting queries to exploring fascinating data, you'll have the chance to dive right into the Ocean Subgraph data. So, grab a virtual snorkel and let's explore together!
+Now that you're familiar with what the Ocean Subgraph is all about, get ready for some hands-on fun! In the following pages, we've prepared a few examples just for you. From running exciting queries to exploring fascinating data, you'll have the chance to dive right into the Ocean Subgraph data. So, grab a virtual snorkel, and let's explore together!
