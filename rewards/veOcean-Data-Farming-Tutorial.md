@@ -2,19 +2,18 @@
 description: Follow this step-by-step guide to get OCEAN rewards.
 ---
 
-# Tutorial: How To Earn OCEAN Rewards
+# Rewards Tutorial
 
 There are two types of OCEAN rewards: passive and active rewards. OCEAN token holders may generate passive OCEAN rewards by locking up OCEAN in exchange for veOCEAN tokens. veOCEAN tokens can then be allocated to Ocean Market datasets and algorithms to generate active OCEAN rewards.
 
-[![veOCEAN and Data Farming Rewards](../.gitbook/assets/rewards/vedf_youtube_thumbnail.png)](https://www.youtube.com/watch?v=zAQlPHkK3og)
+{% embed url="https://youtu.be/zAQlPHkK3og" %}
 
 ## How do I get rewards?
 
 To generate rewards, start by navigating to [df.oceandao.org](https://df.oceandao.org). At the top of this page is the weekly round of OCEAN rewards and the quantity of OCEAN rewards to be distributed. The countdown timer shows the time until **each Thursday** when rewards are distributed. OCEAN rewards can be claimed every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
-- If you don't have veOCEAN tokens, then click the [Get veOCEAN](https://df.oceandao.org/veocean) button on the Passive Rewards panel on the left side of the page to navigate to the veOCEAN tab.
-
-- If you already have veOCEAN tokens, then on the Active Rewards panel on the right side of the page, click the [Set Allocations](https://df.oceandao.org/data) button to navigate to the Data Farming tab.
+* If you don't have veOCEAN tokens, then click the [Get veOCEAN](https://df.oceandao.org/veocean) button on the Passive Rewards panel on the left side of the page to navigate to the veOCEAN tab.
+* If you already have veOCEAN tokens, then on the Active Rewards panel on the right side of the page, click the [Set Allocations](https://df.oceandao.org/data) button to navigate to the Data Farming tab.
 
 ![veOcean homepage](../.gitbook/assets/rewards/veOCEAN-DF-Homepage.png)
 
