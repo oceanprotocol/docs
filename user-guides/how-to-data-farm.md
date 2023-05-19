@@ -33,3 +33,5 @@ The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for
 * Sign the transactions with your wallet & pay the gas fees
 
 <figure><img src="../.gitbook/assets/update-allocations.png" alt=""><figcaption><p>Click the Update Allocations button</p></figcaption></figure>
+
+#### That's it! You've successfully allocated (aka "voted on") your favorite assets on the Ocean Market using your veOCEAN tokens. Now, just wait until next Thursday to see if you can claim any OCEAN rewards on the Active Rewards section of the Rewards page for your portion of the assets' sales.&#x20;
