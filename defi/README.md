@@ -6,8 +6,6 @@ coverY: 0
 
 # 🤑 DeFi
 
-<figure><img src="../.gitbook/assets/moredefi.jpeg" alt="" width="450"><figcaption></figcaption></figure>
-
 ## Capitalize with Ocean Protocol 💸
 
 Ocean Protocol's open-source tools are useful in a variety of DeFi applications. Here we show you how to capitalize with Ocean Protocol tech in several ways using crypto trading!
