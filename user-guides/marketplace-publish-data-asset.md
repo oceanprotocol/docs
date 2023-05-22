@@ -4,9 +4,7 @@ description: How to Publish Data and Algorithms as NFTs Using the Ocean Market
 
 # Publish an NFT
 
-{% embed url="https://www.youtube.com/watch?v=3NGSmfXkHAQ" %}
-Don't enjoy reading? Watch our video tutorial!
-{% endembed %}
+<figure><img src="../.gitbook/assets/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
 
 ### What to Publish? 🤷‍♀️
 
@@ -15,6 +13,10 @@ Ocean Protocol has a convenient marketplace, called the Ocean Market, for publis
 Please note Ocean Protocol maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
 
 ### How to Publish an NFT on the Ocean Market 🧑‍🏫
+
+{% embed url="https://www.youtube.com/watch?v=3NGSmfXkHAQ" %}
+Don't enjoy reading? Watch our video tutorial!
+{% endembed %}
 
 #### Getting Started 🏃💨
 
