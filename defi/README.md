@@ -1,5 +1,5 @@
 ---
-description: DeFI
+description: All you need to know about Ocean and decentralized finance
 cover: ../.gitbook/assets/cover/rewards.png
 coverY: 0
 ---
@@ -16,7 +16,7 @@ We offer a Predict ETH data challenge where participants can win prizes 💰 for
 
 Check our [challenges page](https://oceanprotocol.com/challenges) to see if there is an active Predict ETH challenge!
 
-Wondering how to start predicting the price of ETH? We have a [blogpost](https://blog.oceanprotocol.com/capitalize-with-ocean-protocol-a-predict-eth-tutorial-b2da136633f0?source=search\_post---------0----------------------------) 📖 for that!&#x20;
+Wondering how to start predicting the price of ETH? We have a [blogpost](https://blog.oceanprotocol.com/capitalize-with-ocean-protocol-a-predict-eth-tutorial-b2da136633f0?source=search\_post---------0----------------------------) 📖 for that!
 
 ## Algorithmic Crypto Trading 🤖📊
 
@@ -26,7 +26,7 @@ Check out our video [tutorial](https://www.youtube.com/watch?v=c7A4vA8YUyI) on h
 
 {% embed url="https://www.youtube.com/watch?v=c7A4vA8YUyI" %}
 
-Are you more of a reader? Check out our [blogpost](https://blog.oceanprotocol.com/capitalize-with-ocean-protocol-a-sma-algorithmic-trading-tutorial-a2490661ab85) 📖 how to use a Python SMA crossover strategy with grid search optimization to begin accurately predicting ETH.&#x20;
+Are you more of a reader? Check out our [blogpost](https://blog.oceanprotocol.com/capitalize-with-ocean-protocol-a-sma-algorithmic-trading-tutorial-a2490661ab85) 📖 how to use a Python SMA crossover strategy with grid search optimization to begin accurately predicting ETH.
 
 ## Create Trading Strategy NFTs 📲
 

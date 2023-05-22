@@ -14,7 +14,7 @@ The beginning of any great algorithm for Compute-to-Data first starts by referen
 
 {% tabs %}
 {% tab title="Python" %}
-```
+```python
 import csv
 import json
 import os
@@ -51,7 +51,7 @@ with open(input_filename, 'r') as file:
 {% endtab %}
 
 {% tab title="Javascript" %}
-```
+```javascript
 const fs = require("fs");
 
 var input_folder = "/data/inputs";
@@ -81,7 +81,7 @@ processfolder(input_folder);
 
 **Note:** Here are the following Python libraries that you can use in your code:
 
-```
+```python
 // Python modules
 numpy==1.16.3
 pandas==0.24.2
