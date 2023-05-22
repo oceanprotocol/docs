@@ -52,7 +52,7 @@ Farm data like a pro. 😎🥕
 
 ### Antique Stuff 🏺
 
-Pack it away.
+Out with the old, in with the new!
 
 {% content-ref url="remove-liquidity-using-etherscan.md" %}
 [remove-liquidity-using-etherscan.md](remove-liquidity-using-etherscan.md)
