@@ -215,13 +215,17 @@ for (const value of response.data.hits.hits) {
 
 Validate DDO content. Cosumes `application/octet-stream`
 
-#### Example
+#### Curl Example
 
 ```bash
 curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/assets/ddo/validate' \
 --header 'Content-Type: application/json' \
 --data-raw '<json_body>'
 ```
+
+#### Javascript Example
+
+{% embed url="https://runkit.com/oceanprotocol/646b68e10611080008c6a640" %}
 
 #### Valid body
 
@@ -299,6 +303,18 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 --data-raw '<json_body>'
 ```
 
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const body = { "transactionId": "0x945596edf2a26d127514a78ed94fea86b199e68e9bed8b6f6d6c8bb24e451f27", "logIndex": 0}
+const response = await axios.post( 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/triggerCaching', body)
+console.log(response.status)
+console.log(response.data)
+
+```
+
 #### Valid body
 
 ```
@@ -338,7 +354,14 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquariu
 
 #### Javascript Example
 
-{% embed url="https://runkit.com/oceanprotocol/646b66cc929a68000864e76e" %}
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const response = await axios( 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/list')
+console.log(response.status)
+console.log(response.data)
+
+```
 
 #### Response
 
@@ -365,6 +388,18 @@ Get index status for a specific chain\_id
 
 ```bash
 curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/status/137'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+const chainId = 1
+
+const response = await axios( `https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/status/${chainId}`)
+console.log(response.status)
+console.log(response.data)
+
 ```
 
 #### Response
