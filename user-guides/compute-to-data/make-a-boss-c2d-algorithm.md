@@ -12,6 +12,8 @@ The beginning of any great algorithm for Compute-to-Data starts by referencing t
 
 ### Open the local dataset file
 
+This code goes in the algorithm file for Compute-to-Data and shows how to reference the dataset file on the Docker container you selected.&#x20;
+
 {% tabs %}
 {% tab title="Python" %}
 ```python
