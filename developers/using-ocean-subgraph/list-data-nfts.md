@@ -116,7 +116,9 @@ const config = {
 }
 
 const response = await axios(config)
-console.log(response.data.data.nfts)
+for (let nft of response.data.data.nfts) {
+    console.log(' id:' + nft.id + ' name: ' + nft.name + ' address: ' + nft.address)
+}
 
 ```
 {% endtab %}
