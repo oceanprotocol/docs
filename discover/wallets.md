@@ -6,7 +6,7 @@ description: Fundamental knowledge of using ERC-20 crypto wallets.
 
 Ocean Protocol users require an ERC-20 compatible wallet to manage their OCEAN and ETH tokens. In this guide, we will provide some recommendations for different wallet options.
 
-{% embed url="https://media.giphy.com/media/X2xRGTElqdfry/giphy.gif" %}
+<figure><img src="../.gitbook/assets/show-wallet.gif" alt=""><figcaption></figcaption></figure>
 
 ### What is a wallet?
 

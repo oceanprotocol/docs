@@ -1,14 +1,14 @@
 ---
 description: >-
   How to construct the beginnings of an awesome algorithm for C2D compute jobs
-  on datasets
+  on datasets 😎
 ---
 
 # Make a Boss C2D Algorithm
 
-{% embed url="https://media3.giphy.com/media/cub3pntkz8muQ/giphy.gif?cid=ecf05e47o9fdrqco4jqpeyh7899whqgw5tnd43elr023rykr&ep=v1_gifs_search&rid=giphy.gif" %}
+<figure><img src="../../.gitbook/assets/like-a-boss.gif" alt=""><figcaption></figcaption></figure>
 
-The beginning of any great algorithm for Compute-to-Data first starts by referencing the dataset file correctly on the Docker container. Here is the code in both Python and Javascript for how to correctly reference your dataset file on the Docker container:
+The beginning of any great algorithm for Compute-to-Data starts by referencing the dataset file correctly on the Docker container. Here is the code in both Python and Javascript for how to reference your dataset file on the Docker container:
 
 ### Open the local dataset file
 

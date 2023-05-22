@@ -4,9 +4,7 @@ description: Buy, mint, and sell all sorts of data on the Ocean Market
 
 # Guide to Ocean Market
 
-{% embed url="https://media0.giphy.com/media/z2D26GunfUK1W/giphy.gif?cid=ecf05e47wpd5wmzqufkvdbuo6kjbp8y97t1bdqlckfjo3ohj&ct=g&ep=v1_gifs_search&rid=giphy.gif" %}
-Who doesn't love shopping on the Ocean Market?!
-{% endembed %}
+<figure><img src="../.gitbook/assets/shopping-minions.gif" alt=""><figcaption><p>Who doesn't love shopping on the Ocean Market?!</p></figcaption></figure>
 
 ### What is the [Ocean Market](https://market.oceanprotocol.com/)? 🛒
 

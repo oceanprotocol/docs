@@ -6,9 +6,7 @@ description: Learn the Web3 concepts backing up Ocean Protocol tech
 
 You'll need to know a thing or two about **Web3** to fully understand Ocean Protocol's tech... Let's get started with the basics. 🧑‍🏫
 
-{% embed url="https://media.giphy.com/media/cu1HaFsymELztiENZk/giphy.gif" %}
-Prepare yourself, my friend
-{% endembed %}
+<figure><img src="../.gitbook/assets/drew-barrymore-notes.gif" alt=""><figcaption><p>Prepare yourself, my friend</p></figcaption></figure>
 
 ### Blockchain: The backbone of Ocean Protocol
 
