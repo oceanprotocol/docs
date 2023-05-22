@@ -8,11 +8,11 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/like-a-boss.gif" alt=""><figcaption></figcaption></figure>
 
-The beginning of any great algorithm for Compute-to-Data starts by referencing the dataset file correctly on the Docker container. Here is the code in both Python and Javascript for how to reference your dataset file on the Docker container:
+The beginning of any great algorithm for Compute-to-Data starts by referencing the dataset asset correctly on the Docker container. Read on, anon.
 
 ### Open the local dataset file
 
-This code goes in the algorithm file for Compute-to-Data and shows how to reference the dataset file on the Docker container you selected.&#x20;
+This code goes at the top of your algorithm file for your algorithm NFT asset to use with Compute-to-Data. It references your data NFT asset file on the Docker container you selected.&#x20;
 
 {% tabs %}
 {% tab title="Python" %}
