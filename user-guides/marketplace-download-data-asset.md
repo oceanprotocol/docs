@@ -4,6 +4,8 @@ description: How to download data and algorithm assets on the Ocean Market
 
 # Download NFT Assets
 
+<figure><img src="../.gitbook/assets/clueless-shopping.gif" alt=""><figcaption></figcaption></figure>
+
 ### Let's Go Shopping! 💁‍♀️🛍️
 
 1. Go to the [Ocean Market](https://v4.market.oceanprotocol.com/).
