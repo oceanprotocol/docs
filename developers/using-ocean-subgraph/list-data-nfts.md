@@ -12,12 +12,14 @@ You'll find below an example of a GraphQL query that retrieves the first 10 data
 
 There are several options available to see this query in action. Below, you will find three:
 
-1. Run the GraphQL query.
-2. Execute the query in Python by follwing the code snippet.
-3. Run directly in the docs the query in JavaScript.
+1. Run the GraphQL query in the GraphiQL interface.
+2. Execute the query in Python by following the code snippet.
+3. Execute the query in JavaScript by clicking on the "Run" button.
+
+PS: In these examples, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to [this table](../ocean-subgraph/#ocean-subgraph-deployments).
 
 {% tabs %}
-{% tab title="GraphQL query" %}
+{% tab title="Query" %}
 Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results.
 
 ```
@@ -38,7 +40,7 @@ Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL inte
 {% endtab %}
 
 {% tab title="Python" %}
-The Python script below can be used to run the the query to fecth a list of data NFTs from the subgraph. If you wish to change the network, then replace the value of variable `base_url` as needed.
+The Python script below can be used to run the query to fetch a list of data NFTs from the subgraph. If you wish to change the network, replace the value of variable `base_url` as needed.
 
 **Create script**
 

@@ -20,6 +20,8 @@ You can utilize the Subgraph instances provided by Ocean Protocol or deploy your
 
 If you're eager to use the Ocean Subgraph, here's some important information for you: We've deployed an Ocean Subgraph for each of the supported networks. Take a look at the table below, where you'll find handy links to both the subgraph instance and GraphiQL for each network. With the user-friendly GraphiQL interface, you can execute GraphQL queries directly, without any additional setup. It's a breeze! :ocean:
 
+### Ocean Subgraph deployments
+
 | Network             | Subgraph URL                                                | GraphiQL URL                                                                                                    |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Ethereum            | [Subgraph](https://v4.subgraph.mainnet.oceanprotocol.com)   | [GraphiQL](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)   |
