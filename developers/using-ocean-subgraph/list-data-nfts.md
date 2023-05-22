@@ -1,14 +1,26 @@
-# List data NFTs
+---
+description: 'Discover the World of NFTs: Retrieving a List of Data NFTs'
+---
 
-The result of following GraphQL query returns the information about data nfts.
+# Get data NFTs
 
-{% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
-{% endhint %}
+If you are already familiarized with the concept of NFTs, you're off to a great start. However, if you require a refresher, we recommend visiting the [data NFTs and datatokens page](../datanft-and-datatoken.md) for a quick overview.&#x20;
 
-#### Query
+Now, let us delve into the fascinating realm of utilizing the subgraph to extract a complete list of data NFTs that have been published using the Ocean contracts. By employing GraphQL queries, we can seamlessly retrieve the desired information from the subgraph. You'll see how simple it is :sunglasses:
 
-```graphql
+You'll find below an example of a GraphQL query that retrieves the first 10 data NFTs from the subgraph. The GraphQL query is structured to access the "nfts" route, extracting the first 10 elements. For each item retrieved, it retrieves the "id," "name," "symbol," "owner," "address," "assetState," "tx," "block," and "transferable" parameters.
+
+There are several options available to see this query in action. Below, you will find three:
+
+1. Run the GraphQL query.
+2. Execute the query in Python by follwing the code snippet.
+3. Run directly in the docs the query in JavaScript.
+
+{% tabs %}
+{% tab title="GraphQL query" %}
+Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results.
+
+```
 {
   nfts (skip:0, first: 10, subgraphError:deny){
     id
@@ -23,12 +35,10 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
  }
 }
 ```
+{% endtab %}
 
-#### Code snippets
-
-{% tabs %}
 {% tab title="Python" %}
-The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+The Python script below can be used to run the the query to fecth a list of data NFTs from the subgraph. If you wish to change the network, then replace the value of variable `base_url` as needed.
 
 **Create script**
 
