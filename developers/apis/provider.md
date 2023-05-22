@@ -1,4 +1,4 @@
-# Provider REST API
+# Provider
 
 [https://v4.provider.oceanprotocol.com](https://v4.provider.oceanprotocol.com)
 
@@ -25,7 +25,7 @@ Returns: Json object containing the last-used nonce value. The nonce endpoint is
 Example:
 
 ```
-POST /api/services/nonce?userAddress=0x990922334
+GET /api/services/nonce?userAddress=0x990922334
 ```
 
 Response:
@@ -34,6 +34,18 @@ Response:
 {
   "nonce": 23
 }
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const response = await axios( `https://v4.provider.oceanprotocol.com/api/services/nonce?userAddress=0x0db823218e337a6817e6d7740eb17635deadafaf`)
+ 
+console.log(response.status)
+console.log(response.data)
+
 ```
 
 ### Encrypt endpoint
@@ -55,6 +67,21 @@ Response:
 
 ```
 b'0x04b2bfab1f4e...7ed0573'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const fetch = require('cross-fetch')
+
+const data = "test"
+const response = await fetch('https://v4.provider.oceanprotocol.com/api/services/encrypt?chainId=1', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/octet-stream' }
+      })
+console.log(response)      
+
 ```
 
 ### Decrypt endpoint
