@@ -66,10 +66,22 @@ Get metadata of a particular asset.
 | ----- | ---------------- | ------ | ---- | -------- |
 | `did` | DID of the asset | string | path | true     |
 
-#### Example
+#### Curl Example
 
 ```bash
 curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/metadata/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+const did = 'did:op:ce3f161fb98c64a2ded37fd34e25f28343f2c88d0c8205242df9c621770d4b3b'
+const response = await axios(`https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/metadata/${did}`)
+console.log(response.status)
+console.log(response.data.name)
+console.log(response.data.description)
+
 ```
 
 #### Responses
