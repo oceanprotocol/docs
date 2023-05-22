@@ -115,7 +115,7 @@ Get names of assets as specified in the payload.
 | --------- | ------------------ | ---- | ---- | -------- |
 | `didList` | list of asset DIDs | list | body | true     |
 
-#### Example
+#### Curl Example
 
 ```bash
 curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/names' \
@@ -123,6 +123,21 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 --data-raw '{
     "didList" : ["did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6"]
 }'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const body =  {didList : ["did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6", "did:op:ce3f161fb98c64a2ded37fd34e25f28343f2c88d0c8205242df9c621770d4b3b"]}
+
+const response = await axios.post('https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/names', body)
+console.log(response.status)
+for (let key in response.data) {
+  console.log(key + ': ' + response.data[key]);
+}
+
 ```
 
 #### Responses
@@ -155,7 +170,7 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 
 Run a native ES query. Body must be a valid json object.
 
-#### Example
+#### Curl Example
 
 ```bash
 curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query' \
@@ -165,6 +180,23 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
         "match_all": {}
     }
 }'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const body =  { "query": { "match_all": { } } }
+
+
+const response = await axios.post('https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query', body)
+console.log(response.status)
+console.log(response.data.hits.hits[0])
+for (const value of response.data.hits.hits) {
+  console.log(value);
+}
+
 ```
 
 #### Responses
@@ -248,124 +280,180 @@ Error
 
 ### **POST** `/api/aquarius/assets/triggerCaching`
 
-*   Description
+#### Description
 
-    Manually triggers DDO caching based on a transacionId containing either MetadataCreated or MetadataUpdated event(s).
-*   Parameters
+Manually triggers DDO caching based on a `transacionId` containing either MetadataCreated or MetadataUpdated event(s).
 
-    | name            | description                          | type   | in   | required |
-    | --------------- | ------------------------------------ | ------ | ---- | -------- |
-    | `transactionId` | DID of the asset                     | string | path | true     |
-    | `logIndex`      | custom log index for the transaction | int    | path | false    |
-*   Example
+#### Parameters
 
-    ```bash
-    curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/triggerCaching' \
-    --header 'Content-Type: application/json' \
-    --data-raw '<json_body>'
-    ```
-*   Valid body
+| name            | description                          | type   | in   | required |
+| --------------- | ------------------------------------ | ------ | ---- | -------- |
+| `transactionId` | DID of the asset                     | string | path | true     |
+| `logIndex`      | custom log index for the transaction | int    | path | false    |
 
-    ```
-        {
-            "transactionId": "0x945596edf2a26d127514a78ed94fea86b199e68e9bed8b6f6d6c8bb24e451f27",
-            "logIndex": 0
-        }
-    ```
-* Responses:
-  * 200
-    * description: triggering successful, updated asset returned
-  * 400
-    * description: request issues: either log index not found, or neither of MetadataCreated, MetadataUpdated found in tx log
-  * 500
-    * description: Error
+#### Curl Example
+
+```bash
+curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/triggerCaching' \
+--header 'Content-Type: application/json' \
+--data-raw '<json_body>'
+```
+
+#### Valid body
+
+```
+    {
+        "transactionId": "0x945596edf2a26d127514a78ed94fea86b199e68e9bed8b6f6d6c8bb24e451f27",
+        "logIndex": 0
+    }
+```
+
+#### Responses:
+
+`200`
+
+Description: triggering successful, updated asset returned
+
+`400`
+
+Description: request issues: either log index not found, or neither of MetadataCreated, MetadataUpdated found in tx log
+
+`500`
+
+Description: Error
 
 ## Chains
 
 ### **GET** `/api/aquarius/chains/list`
 
-*   Description
+#### Description
 
-    Get chains list
-*   Example
+Get chains list
 
-    ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/list'
-    ```
-* Response
-  * 200
-    * Description: Successful request
-    *   Body
+#### Curl Example
 
-        ```
-        {   "246": true, "3": true, "137": true,
-            "2021000": true, "4": true, "1": true,
-            "56": true, "80001": true, "1287": true
-        }
-        ```
+```bash
+curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/list'
+```
+
+#### Javascript Example
+
+{% embed url="https://runkit.com/oceanprotocol/646b66cc929a68000864e76e" %}
+
+#### Response
+
+`200`
+
+Description: Successful request
+
+Body:
+
+```
+{   "246": true, "3": true, "137": true,
+    "2021000": true, "4": true, "1": true,
+    "56": true, "80001": true, "1287": true
+}
+```
 
 ### **GET** `/api/aquarius/chains/status/{chain_id}`
 
-*   Description
+#### Description
 
-    Get index status for a specific chain\_id
-*   Example
+Get index status for a specific chain\_id
 
-    ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/status/137'
-    ```
-* Response
-  * 200
-    * Description: Successful request
-    *   Body
+#### Curl Example
 
-        ```
-        {"last_block": 25198729}
-        ```
+```bash
+curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/status/137'
+```
+
+#### Response
+
+`200`
+
+Description: Successful request
+
+Body:
+
+```
+{"last_block": 25198729}
+```
 
 ## Others
 
 ### **GET** `/`
 
-*   Description
+#### Description
 
-    Get version, plugin, and software information.
-*   Example
+Get version, plugin, and software information.
 
-    ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/'
-    ```
-* Response
-  * 200
-    * Description: Successful request
-    *   Body
+#### Curl Example
 
-        ```
-        {
-            "plugin": "elasticsearch",
-            "software": "Aquarius",
-            "version": "4.2.0"
-        }
-        ```
+```bash
+curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const response = await axios( 'https://v4.aquarius.oceanprotocol.com/')
+console.log(response.status)
+console.log(response.data)
+
+```
+
+#### Response
+
+`200`
+
+Description: Successful request
+
+Body:
+
+```
+{
+    "plugin": "elasticsearch",
+    "software": "Aquarius",
+    "version": "4.2.0"
+}
+```
 
 ### **GET** `/health`
 
-*   Description
+**Description**
 
-    Get health status
-*   Example
+Get health status
 
-    ```bash
-    curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/health'
-    ```
-* Response
-  * 200
-    * Description: Successful request
-    *   Body
+**Curl Example**
 
-        ```
-        Elasticsearch connected
-        ```
+```bash
+curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/health'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const response = await axios( 'https://v4.aquarius.oceanprotocol.com/health')
+console.log(response.status)
+console.log(response.data)
+
+```
+
+**Response**
+
+`200`
+
+Description: Successful request
+
+Body:
+
+```
+Elasticsearch connected
+```
 
 ### **GET** /spec
 
@@ -377,6 +465,17 @@ Get swagger spec
 
 ```bash
 curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/spec'
+```
+
+#### Javascript Example
+
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const response = await axios( 'https://v4.aquarius.oceanprotocol.com/spec')
+console.log(response.status)
+console.log(response.data.info)
+
 ```
 
 #### Response
