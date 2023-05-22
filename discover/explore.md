@@ -10,7 +10,7 @@ Ocean Protocol is a **decentralized data exchange protocol** that empowers you t
 
 Let's embark on a journey of discovery and explore the possibilities that await you with Ocean Protocol! Get a glimpse into some of the things you can do - the opportunities with our protocol are vast and ever-evolving. Together, we can dive deeper and uncover even more ways to leverage the power of decentralized data.&#x20;
 
-<figure><img src="../.gitbook/assets/penguin-diving.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/penguin-diving.gif" alt="" width="360"><figcaption></figcaption></figure>
 
 <details>
 

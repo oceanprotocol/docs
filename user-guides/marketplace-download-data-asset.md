@@ -4,7 +4,7 @@ description: How to download data and algorithm assets on the Ocean Market
 
 # Download NFT Assets
 
-<figure><img src="../.gitbook/assets/clueless-shopping.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/clueless-shopping.gif" alt=""><figcaption><p>That moment when you buy your first datatoken</p></figcaption></figure>
 
 ### Let's Go Shopping! 💁‍♀️🛍️
 
