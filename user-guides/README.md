@@ -1,7 +1,7 @@
 ---
 description: >-
-  This section contains the definitive guides for how to do almost anything you
-  want using Ocean Protocol tech *without* writing one line of code!
+  The definitive guides for how to do almost anything you want using Ocean
+  Protocol tech *without* writing one line of code!
 cover: ../.gitbook/assets/cover/user_guides.png
 coverY: 0
 ---
