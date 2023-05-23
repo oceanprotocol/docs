@@ -2,75 +2,22 @@
 
 ### Nonce
 
-#### GET /api/services/nonce
+Retrieves the last-used nonce value for a specific user's Ethereum address.
 
-Parameters
+* **Endpoint**: `GET /api/services/nonce`
+* **Parameters**: `userAddress`: This is a string that should contain the Ethereum address of the user. It is passed as a query parameter in the URL.
+* **Purpose**: This endpoint is used to fetch the last-used nonce value for a user's Ethereum address. A nonce is a number that can only be used once, and it's typically used in cryptography to prevent replay attacks. While this endpoint provides the last-used nonce, it's recommended to use the current UTC timestamp as a nonce, where required in other endpoints.
+
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns a JSON object containing the nonce value.&#x20;
+
+Example response:
 
 ```
-    userAddress: String object containing a user's ethereum address
-```
-
-Returns: Json object containing the last-used nonce value. The nonce endpoint is just informative, use the current UTC timestamp as a nonce, where required in other endpoints.
-
-Example:
-
-```
-GET /api/services/nonce?userAddress=0x990922334
-```
-
-Response:
-
-```json
 {
   "nonce": 23
 }
-```
-
-### File Info
-
-#### POST /api/services/fileinfo
-
-Retrieves Content-Type and Content-Length from the given URL or asset.
-
-Parameters
-
-For published assets:
-
-```
-{
-    did: String, DID of the dataset
-    serviceId: String, ID of the service
-}
-```
-
-For file objects,see https://docs.oceanprotocol.com/core-concepts/did-ddo#files
-
-If checksum is requests, file size should be lower < MAX\_CHECKSUM\_LENGTH (see Provider ENVs) If file is larger, checksum WILL NOT be computed.
-
-Returns: Json document file info object
-
-Example:
-
-```
-POST /api/services/fileinfo
-payload:
-{
-    "did":"0x1111",
-    "serviceId": "0",
-}
-```
-
-Response:
-
-```json
-[
-    {
-        "contentLength":"1161",
-        "contentType":"application/json",
-        "index":0,
-        "valid": true
-    },...
-]
 ```
 
 #### Javascript Example
@@ -85,44 +32,44 @@ console.log(response.data)
 
 ```
 
-### Download endpoint
+### File Info
 
-#### GET /api/services/download
+Retrieves Content-Type and Content-Length from the given URL or asset.
 
-Parameters
+* **Endpoint**: `POST /api/services/fileinfo`
+* **Parameters**: The body of the request should contain a JSON object with the following properties:
+  * `did`: This is a string representing the Decentralized Identifier (DID) of the dataset.
+  * `serviceId`: This is a string representing the ID of the service.
+* **Purpose**: This endpoint is used to retrieve the `Content-Type` and `Content-Length` from a given URL or asset. For published assets, `did` and `serviceId` should be provided. It also accepts file objects (as described in the Ocean Protocol documentation) and can compute a checksum if the file size is less than `MAX_CHECKSUM_LENGTH`. For larger files, the checksum will not be computed.
+* **Responses**:
+  * **200**: This is a successful HTTP response code. It returns a JSON object containing the file info.&#x20;
 
-```
-    documentId: String object containing document id (e.g. a DID)
-    serviceId: String, representing the list of `file` objects that describe each file in the dataset
-    transferTxId: Hex string -- the id of on-chain transaction for approval of datatokens transfer
-    given to the provider's account
-    fileIndex: integer, the index of the file from the files list in the dataset
-    nonce: Nonce
-    consumerAddress: String object containing consumer's address
-    signature: String object containg user signature (signed message)
-```
-
-Returns: File stream. Retrieves the attached asset files.
-
-Example:
-
-```
-GET /api/services/download
-payload:
-{
-    "documentId":"0x1111",
-    "serviceId": 0,
-    "fileIndex": 0,
-    "datatoken": "",
-    "consumerAddress":"0x990922334",
-    "signature":"0x00110011",
-    "transferTxId": "0xa09fc23421345532e34829"
-```
-
-Response:
+Example response:
 
 ```json
-{
-  "": ""
-}
+[
+    {
+        "contentLength":"1161",
+        "contentType":"application/json",
+        "index":0,
+        "valid": true
+    },...
+]
 ```
+
+#### Javascript Example
+
+### Download
+
+* **Endpoint**: `GET /api/services/download`
+* **Parameters**: The query parameters for this endpoint should contain the following properties:
+  * `documentId`: A string containing the document id (e.g., a DID).
+  * `serviceId`: A string representing the list of `file` objects that describe each file in the dataset.
+  * `transferTxId`: A hex string representing the ID of the on-chain transaction for approval of data tokens transfer given to the provider's account.
+  * `fileIndex`: An integer representing the index of the file from the files list in the dataset.
+  * `nonce`: The nonce.
+  * `consumerAddress`: A string containing the consumer's Ethereum address.
+  * `signature`: A string containing the user's signature (signed message).
+* **Purpose**: This endpoint is used to retrieve the attached asset files. It returns a file stream of the requested file.
+* **Responses**:
+  * **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returned the file stream.
