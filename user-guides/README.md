@@ -1,6 +1,6 @@
 ---
 description: User guides
-cover: ../.gitbook/assets/user_guides.png
+cover: ../.gitbook/assets/cover/user_guides.png
 coverY: 0
 ---
 

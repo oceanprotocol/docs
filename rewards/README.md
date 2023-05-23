@@ -1,6 +1,6 @@
 ---
 description: An overview of Ocean Protocol's governance and incentives mechanisms
-cover: ../.gitbook/assets/rewards.png
+cover: ../.gitbook/assets/cover/rewards.png
 coverY: 0
 ---
 

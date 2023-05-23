@@ -4,7 +4,7 @@ description: 'Discover the World of NFTs: Retrieving a List of Fixed-rate exchan
 
 # Get fixed-rate exchanges
 
-Having gained knowledge about fetching lists of data NFTs and datatokens and extracting specific information about each, let's now explore the process of retrieving the information of fixed-rate exchanges. A fixed-rate exchange refers to a mechanism where data assets can be traded at a predetermined rate or price. These exchanges offer stability and predictability in data transactions, enabling users to securely and reliably exchange data assets based on fixed rates  If you need a refresher on fixed rate exchanges, visit the #TODO - Ana add link.
+Having gained knowledge about fetching lists of data NFTs and datatokens and extracting specific information about each, let's now explore the process of retrieving the information of fixed-rate exchanges. A fixed-rate exchange refers to a mechanism where data assets can be traded at a predetermined rate or price. These exchanges offer stability and predictability in data transactions, enabling users to securely and reliably exchange data assets based on fixed rates. If you need a refresher on fixed-rate exchanges, visit the [asset pricing](../asset-pricing.md#fixed-pricing) page.
 
 
 
@@ -72,7 +72,7 @@ axios(config)
 {% endtab %}
 
 {% tab title="Python" %}
-The Python script below can be used to run the query and retrieve a list of fixed-rate exchanges. If you wish to change the network, then replace the value of variable `base_url` as needed.
+The Python script below can be used to run the query and retrieve a list of fixed-rate exchanges. If you wish to change the network, then replace the value of the variable `base_url` as needed.
 
 **Create script**
 

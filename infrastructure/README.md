@@ -1,6 +1,6 @@
 ---
 description: Infrastructure
-cover: ../.gitbook/assets/infrastructure.png
+cover: ../.gitbook/assets/cover/infrastructure.png
 coverY: 0
 ---
 
