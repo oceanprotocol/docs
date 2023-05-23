@@ -29,61 +29,6 @@ console.log(response)
 
 ```
 
-#### GET /api/services/initialize
-
-Parameters
-
-```
-    documentId: String object containing document id (e.g. a DID)
-    serviceId: String, ID of the service the datatoken is attached to
-    consumerAddress: String object containing consumer's address
-    environment: String representing a compute environment offered by the provider
-    validUntil: Integer, date of validity of the service (optional)
-    fileIndex: Integer, the index of the file from the files list in the dataset. If set, provider will validate the file access. (optional)
-```
-
-Returns: Json document with a quote for amount of tokens to transfer to the provider account.
-
-Example:
-
-```
-GET /api/services/initialize
-payload:
-{
-    "documentId":"0x1111",
-    "serviceId": 0,
-    "consumerAddress":"0x990922334",
-}
-payload (with optional parameters):
-{
-    "documentId":"0x1111",
-    "serviceId": 0,
-    "consumerAddress":"0x990922334",
-    "validUntil": 1578004800,
-    "fileIndex": 1
-}
-```
-
-Response:
-
-```json
-{
-    "datatoken": "0x21fa3ea32892091...",
-    "nonce": 23,
-    "providerFee": {
-        "providerFeeAddress": "0xabc123...",
-        "providerFeeToken": "0xabc123...",
-        "providerFeeAmount": "200",
-        "providerData": "0xabc123...",
-        "v": 27,
-        "r": "0xabc123...",
-        "s": "0xabc123...",
-        "validUntil": 123456,
-    },
-    "computeAddress": "0x8123jdf8sdsa..."
-}
-```
-
 ### Decrypt endpoint
 
 * **Endpoint**: `POST /api/services/decrypt`

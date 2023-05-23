@@ -73,3 +73,37 @@ Example response:
 * **Purpose**: This endpoint is used to retrieve the attached asset files. It returns a file stream of the requested file.
 * **Responses**:
   * **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returned the file stream.
+
+### Initialize
+
+* **Endpoint**: `GET /api/services/initialize`
+* **Parameters**: The query parameters for this endpoint should contain the following properties:
+  * `documentId`: A string containing the document id (e.g., a DID).
+  * `serviceId`: A string representing the ID of the service the data token is attached to.
+  * `consumerAddress`: A string containing the consumer's Ethereum address.
+  * `environment`: A string representing a compute environment offered by the provider.
+  * `validUntil`: An integer representing the date of validity of the service (optional).
+  * `fileIndex`: An integer representing the index of the file from the files list in the dataset. If set, the provider will validate the file access (optional).
+* **Purpose**: This endpoint is used to initialize a service and return a quote for the number of tokens to transfer to the provider's account.
+* **Responses**:
+  * **200**: This is a successful HTTP response code. It returns a JSON object containing information about the quote for tokens to be transferred.
+
+Example response:
+
+```json
+{
+    "datatoken": "0x21fa3ea32892091...",
+    "nonce": 23,
+    "providerFee": {
+        "providerFeeAddress": "0xabc123...",
+        "providerFeeToken": "0xabc123...",
+        "providerFeeAmount": "200",
+        "providerData": "0xabc123...",
+        "v": 27,
+        "r": "0xabc123...",
+        "s": "0xabc123...",
+        "validUntil": 123456,
+    },
+    "computeAddress": "0x8123jdf8sdsa..."
+}
+```
