@@ -1,17 +1,15 @@
-# Get data NFT Details
+# Get data NFT Information
 
 The result of following GraphQL query returns the information about a particular datatoken. Here, `0x1c161d721e6d99f58d47f709cdc77025056c544c` is the address of the dataNFT.
 
-{% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
-{% endhint %}
 
-####
 
-#### Code
+PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to [this table](../ocean-subgraph/#ocean-subgraph-deployments).
 
 {% tabs %}
 {% tab title="Query" %}
+Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results.
+
 ```graphql
 {
   nft (id:"0x1c161d721e6d99f58d47f709cdc77025056c544c", subgraphError:deny){
@@ -40,7 +38,7 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
 {% endtab %}
 
 {% tab title="Python" %}
-The Python script below can be used to run the query. If you wish to change the network, replace the variable's value `base_url` as needed. Change the value of the variable dataNFT\_address with the address of the datatoken of your choice.
+The Python script below can be used to run the query and fetch the details about an NFT. If you wish to change the network, replace the variable's value `base_url` as needed. Change the value of the variable dataNFT\_address with the address of the datatoken of your choice.
 
 **Create script**
 
@@ -98,12 +96,9 @@ print(json.dumps(result, indent=4, sort_keys=True))
 {% endtab %}
 
 {% tab title="Javascript" %}
-The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed. Change the value of the variable `datanftAddress` with the address of the datatoken of your choice.
+The javascript below can be used to run the query. If you wish to change the network, replace the variable's value `baseUrl` as needed. Change the value of the variable `datanftAddress` with the address of the datatoken of your choice.
 
-**Create script**
-
-{% code title="dataNFTInfo.js" %}
-```javascript
+```runkit  nodeVersion="18.x.x"
 var axios = require('axios');
 
 const datanftAddress = "0x1c161d721e6d99f58d47f709cdc77025056c544c";
@@ -146,20 +141,16 @@ var config = {
 
 axios(config)
   .then(function (response) {
-    console.log(JSON.stringify(response.data));
+    let result = JSON.stringify(response.data)
+    console.log(result)
   })
   .catch(function (error) {
     console.log(error);
   });
 
 ```
-{% endcode %}
 
-**Execute script**
 
-```bash
-node dataNFTInfo.js
-```
 {% endtab %}
 {% endtabs %}
 

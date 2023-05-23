@@ -43,7 +43,7 @@
     * [Deploying a Market](developers/build-a-marketplace/deploying-market.md)
   * [Ocean Subgraph](developers/ocean-subgraph/README.md)
     * [Get data NFTs](developers/using-ocean-subgraph/list-data-nfts.md)
-    * [Get data NFT Details](developers/using-ocean-subgraph/get-data-nft-information.md)
+    * [Get data NFT Information](developers/using-ocean-subgraph/get-data-nft-information.md)
     * [Get datatokens](developers/using-ocean-subgraph/list-datatokens.md)
     * [Get Datatoken Information](developers/using-ocean-subgraph/get-datatoken-information.md)
     * [List Fixed Rate Exchanges](developers/using-ocean-subgraph/list-fixed-rate-exchanges.md)
