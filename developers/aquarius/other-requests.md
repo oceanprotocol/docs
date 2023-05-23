@@ -1,9 +1,10 @@
 # Other Requests
 
 The universal Aquarius Endpoint is [`https://v4.aquarius.oceanprotocol.com`](https://v4.aquarius.oceanprotocol.com).
-## Others
 
-### **GET** `/`
+### **Info**
+
+GET `/`
 
 #### Description
 
@@ -42,7 +43,9 @@ Body:
 }
 ```
 
-### **GET** `/health`
+### **Health**
+
+GET `/health`
 
 **Description**
 
@@ -77,7 +80,9 @@ Body:
 Elasticsearch connected
 ```
 
-### **GET** /spec
+### **Spec**
+
+GET /spec
 
 #### Description
 
