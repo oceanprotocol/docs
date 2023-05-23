@@ -1,12 +1,10 @@
 # Chain Requests
 
-
 The universal Aquarius Endpoint is [`https://v4.aquarius.oceanprotocol.com`](https://v4.aquarius.oceanprotocol.com).
 
+### Chain List
 
-## Chains
-
-### **GET** `/api/aquarius/chains/list`
+GET `/api/aquarius/chains/list`
 
 #### Description
 
@@ -44,7 +42,9 @@ Body:
 }
 ```
 
-### **GET** `/api/aquarius/chains/status/{chain_id}`
+### **Chain Status**
+
+GET `/api/aquarius/chains/status/{chain_id}`
 
 #### Description
 
