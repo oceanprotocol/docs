@@ -1,22 +1,14 @@
 # Encryption / Decryption
 
-
 ### Encrypt endpoint
 
-#### GET /api/services/encrypt
+* **Endpoint**: `POST /api/services/encrypt`
+* **Parameters**: The body of the request should contain a binary application/octet-stream.
+* **Purpose**: This endpoint is used to encrypt a document. It accepts binary data and returns an encrypted bytes string.
+* **Responses**:
+  * **200**: This is a successful HTTP response code. It returns a bytes string containing the encrypted document. For example: `b'0x04b2bfab1f4e...7ed0573'`
 
-Body: binary application/octet-stream
-
-Returns: Bytes string containing the encrypted document.
-
-Example:
-
-```
-POST /api/services/encrypt
-body: b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\ ... \x00\x04YZ'
-```
-
-Response:
+Example response:
 
 ```
 b'0x04b2bfab1f4e...7ed0573'
@@ -36,6 +28,7 @@ const response = await fetch('https://v4.provider.oceanprotocol.com/api/services
 console.log(response)      
 
 ```
+
 #### GET /api/services/initialize
 
 Parameters
@@ -91,44 +84,26 @@ Response:
 }
 ```
 
-
 ### Decrypt endpoint
 
-#### POST /api/services/decrypt
+* **Endpoint**: `POST /api/services/decrypt`
+* **Parameters**: The body of the request should contain a JSON object with the following properties:
+  * `decrypterAddress`: A string containing the address of the decrypter (required).
+  * `chainId`: The chain ID of the network the document is on (required).
+  * `transactionId`: The transaction ID of the encrypted document (optional).
+  * `dataNftAddress`: The address of the data non-fungible token (optional).
+  * `encryptedDocument`: The encrypted document (optional).
+  * `flags`: The flags of the encrypted document (optional).
+  * `documentHash`: The hash of the encrypted document (optional).
+  * `nonce`: The nonce of the encrypted document (required).
+  * `signature`: The signature of the encrypted document (required).
+* **Purpose**: This endpoint is used to decrypt a document. It accepts the decrypter address, chain ID, and other optional parameters, and returns the decrypted document.
+* **Responses**:
+  * **200**: This is a successful HTTP response code. It returns a bytes string containing the decrypted document.
 
-Parameters
 
-```
-    decrypterAddress: String object containing the address of the decrypter (required)
-    chainId: the chain id of the network the document is on (required)
-    transactionId: the transaction id of the encrypted document (optional)
-    dataNftAddress: the address of the data nft (optional)
-    encryptedDocument: the encrypted document (optional)
-    flags: the flags of the encrypted document (optional)
-    documentHash: the hash of the encrypted document (optional)
-    nonce: the nonce of the encrypted document (required)
-    signature: the signature of the encrypted document (required)
-```
 
-Returns: Bytes string containing the decrypted document.
-
-Example:
-
-```
-POST /api/services/decrypt
-payload: {
-    'decrypterAddress':'0xA78deb2Fa79463945C247991075E2a0e98Ba7A09'
-    'chainId':8996
-    'dataNftAddress':'0xBD558814eE914800EbfeF4a1cbE196F5161823d9'
-    'encryptedDocument':'0xfd377a585a0...f07afef7dc214'
-    'flags': 1
-    'documentHash':'0x0cb38a7bba49758a86f8556642aff655d00e41da28240d5ea0f596b74094d91f'
-    'nonce':'1644315615.24195'
-    'signature':'0xd6f27047853203824ab9e5acef87d0a501a64aee93f33a83b6f91cbe8fb4489824defceaccde91273f41290cb2a0c15572368e8bea0b456c7a653659cad7de311b'
-}
-```
-
-Response:
+Example response:
 
 ```
 b'{"@context": ["https://w3id.org/did/v1"], "id": "did:op:0c184915b07b44c888d468be85a9b28253e80070e5294b1aaed81c ...'
