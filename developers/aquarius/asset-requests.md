@@ -2,10 +2,9 @@
 
 The universal Aquarius Endpoint is [`https://v4.aquarius.oceanprotocol.com`](https://v4.aquarius.oceanprotocol.com).
 
+### **DDO**
 
-## Assets
-
-### **Get** `/api/aquarius/assets/ddo/<did>`
+&#x20;GET `/api/aquarius/assets/ddo/<did>`
 
 #### Description
 
@@ -13,9 +12,9 @@ Get DDO of a particular asset.
 
 #### Parameters
 
-| name  | description      | type   | in   | required |
-| ----- | ---------------- | ------ | ---- | -------- |
-| `did` | DID of the asset | string | path | true     |
+| Name  | Description      | Type   | Within | Required |
+| ----- | ---------------- | ------ | ------ | -------- |
+| `did` | DID of the asset | string | path   | true     |
 
 #### Curl Example
 
@@ -55,7 +54,9 @@ console.log(response.data.metadata.description)
     }
     ```
 
-### **GET** `/api/aquarius/assets/metadata/<did>`
+### **Metadata**
+
+`GET /api/aquarius/assets/metadata/<did>`
 
 #### Description
 
@@ -63,9 +64,9 @@ Get metadata of a particular asset.
 
 #### Parameters
 
-| name  | description      | type   | in   | required |
-| ----- | ---------------- | ------ | ---- | -------- |
-| `did` | DID of the asset | string | path | true     |
+| Name  | Description      | Type   | Within | Required |
+| ----- | ---------------- | ------ | ------ | -------- |
+| `did` | DID of the asset | string | path   | true     |
 
 #### Curl Example
 
@@ -104,7 +105,9 @@ console.log(response.data.description)
     }
     ```
 
-### **POST** `/api/aquarius/assets/names`
+### **Asset Names**&#x20;
+
+`POST /api/aquarius/assets/names`
 
 #### Description
 
@@ -112,9 +115,9 @@ Get names of assets as specified in the payload.
 
 #### Parameters
 
-| name      | description        | type | in   | required |
-| --------- | ------------------ | ---- | ---- | -------- |
-| `didList` | list of asset DIDs | list | body | true     |
+| Name      | Description        | Type | Within | Required |
+| --------- | ------------------ | ---- | ------ | -------- |
+| `didList` | list of asset DIDs | list | body   | true     |
 
 #### Curl Example
 
@@ -165,7 +168,9 @@ for (let key in response.data) {
     }
     ```
 
-### **POST** `/api/aquarius/assets/query`
+### Query Assets
+
+POST `/api/aquarius/assets/query`
 
 #### **Description**
 
@@ -210,7 +215,9 @@ for (const value of response.data.hits.hits) {
 
 * description: elasticsearch exception
 
-### **POST** `/api/aquarius/assets/ddo/validate`
+### Validate DDO
+
+POST `/api/aquarius/assets/ddo/validate`
 
 #### Description
 
@@ -226,7 +233,51 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 
 #### Javascript Example
 
-{% embed url="https://runkit.com/oceanprotocol/646b68e10611080008c6a640" %}
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const body =        {
+        "@context": ["https://w3id.org/did/v1"],
+        "id": "did:op:56c3d0ac76c02cc5cec98993be2b23c8a681800c08f2ff77d40c895907517280",
+        "version": "4.1.0",
+        "chainId": 1337,
+        "nftAddress": "0xabc",
+        "metadata": {
+            "created": "2000-10-31T01:30:00.000-05:00Z",
+            "updated": "2000-10-31T01:30:00.000-05:00",
+            "name": "Ocean protocol white paper",
+            "type": "dataset",
+            "description": "Ocean protocol white paper -- description",
+            "author": "Ocean Protocol Foundation Ltd.",
+            "license": "CC-BY",
+            "contentLanguage": "en-US",
+            "tags": ["white-papers"],
+            "additionalInformation": {"test-key": "test-value"},
+            "links": [
+                "http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/",
+                "http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-averages-25km/",
+                "http://data.ceda.ac.uk/badc/ukcp09/"
+            ]
+        },
+        "services": [
+            {
+                "id": "test",
+                "type": "access",
+                "datatokenAddress": "0xC7EC1970B09224B317c52d92f37F5e1E4fF6B687",
+                "name": "Download service",
+                "description": "Download service",
+                "serviceEndpoint": "http://172.15.0.4:8030/",
+                "timeout": 0,
+                "files": "encryptedFiles"
+            }
+        ]
+    }
+    
+const response = await axios.post( 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/validate', body)
+console.log(response.status)
+console.log(response.data)
+
+```
 
 #### Valid body
 
@@ -283,7 +334,9 @@ Invalid DDO format
 
 Error
 
-### **POST** `/api/aquarius/assets/triggerCaching`
+### Trigger Caching
+
+POST `/api/aquarius/assets/triggerCaching`
 
 #### Description
 
@@ -291,10 +344,10 @@ Manually triggers DDO caching based on a `transacionId` containing either Metada
 
 #### Parameters
 
-| name            | description                          | type   | in   | required |
-| --------------- | ------------------------------------ | ------ | ---- | -------- |
-| `transactionId` | DID of the asset                     | string | path | true     |
-| `logIndex`      | custom log index for the transaction | int    | path | false    |
+| Name            | Description                          | Type   | Within | Required |
+| --------------- | ------------------------------------ | ------ | ------ | -------- |
+| `transactionId` | DID of the asset                     | string | path   | true     |
+| `logIndex`      | custom log index for the transaction | int    | path   | false    |
 
 #### Curl Example
 
