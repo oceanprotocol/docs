@@ -1,16 +1,30 @@
-# Get Datatoken Information
+---
+description: >-
+  Explore the Power of Querying: Unveiling In-Depth Details of Individual
+  Datatokens
+---
 
-The result of following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
+# Get datatoken Information
 
-{% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
-{% endhint %}
+To fetch detailed information about a specific datatoken, you can utilize the power of GraphQL queries. By constructing a query tailored to your needs, you can access key parameters such as the datatoken's ID, name, symbol, total supply, creator, and associated dataTokenAddress. This allows you to gain a deeper understanding of the datatoken's characteristics and properties. With this information at your disposal, you can make informed decisions, analyze market trends, and explore the vast potential of datatokens within the Ocean ecosystem. Harness the capabilities of GraphQL and unlock a wealth of datatoken insights.
 
-#### Query
 
-```graphql
-{
-  token(id:"0x122d10d543bc600967b4db0f45f80cb1ddee43eb", subgraphError: deny){
+
+The result of the following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
+
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](../ocean-subgraph/#ocean-subgraph-deployments)_._
+
+{% tabs %}
+{% tab title="Javascript" %}
+The javascript below can be used to run the query and fetch the information of a datatoken. If you wish to change the network, replace the variable's value `network` as needed. Change the value of the variable `datatokenAddress` with the address of your choice.
+
+```runkit  nodeVersion="18.x.x"
+var axios = require('axios');
+
+const datatokenAddress = "0x122d10d543bc600967b4db0f45f80cb1ddee43eb";
+
+const query = `{
+  token(id:"${datatokenAddress}", subgraphError: deny){
     id
     symbol
     nft {
@@ -43,14 +57,30 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
     price
     active
   }
-}
+}`
+
+const network = "mainnet"
+var config = {
+  method: 'post',
+  url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
+  headers: { "Content-Type": "application/json" },
+  data: JSON.stringify({ "query": query })
+};
+
+axios(config)
+  .then(function (response) {
+    let result = JSON.stringify(response.data)
+    console.log(result);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
 ```
+{% endtab %}
 
-#### Code
-
-{% tabs %}
 {% tab title="Python" %}
-The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed. Change the value of the variable `datatoken_address` with the address of the datatoken of your choice.
+The Python script below can be used to run the query and fetch a datatoken information. If you wish to change the network, replace the variable's value `base_url` as needed. Change the value of the variable `datatoken_address` with the address of the datatoken of your choice.
 
 **Create script**
 
@@ -119,19 +149,10 @@ print(json.dumps(result, indent=4, sort_keys=True))
 </strong></code></pre>
 {% endtab %}
 
-{% tab title="Javascript" %}
-The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed. Change the value of the variable `datatokenAddress` with the address of the datatoken of your choice.
-
-**Create script**
-
-{% code title="datatokenInfo.js" %}
-```javascript
-var axios = require('axios');
-
-const datatokenAddress = "0x122d10d543bc600967b4db0f45f80cb1ddee43eb";
-
-const query = `{
-  token(id:"${datatokenAddress}", subgraphError: deny){
+{% tab title="Query" %}
+```
+{
+  token(id:"0x122d10d543bc600967b4db0f45f80cb1ddee43eb", subgraphError: deny){
     id
     symbol
     nft {
@@ -164,35 +185,7 @@ const query = `{
     price
     active
   }
-}`
-
-const baseUrl = "https://v4.subgraph.mainnet.oceanprotocol.com"
-const route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
-
-const url = `${baseUrl}${route}`
-
-var config = {
-  method: 'post',
-  url: url,
-  headers: { "Content-Type": "application/json" },
-  data: JSON.stringify({ "query": query })
-};
-
-axios(config)
-  .then(function (response) {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-
-```
-{% endcode %}
-
-**Execute script**
-
-```bash
-node datatokenInfo.js
+}
 ```
 {% endtab %}
 {% endtabs %}

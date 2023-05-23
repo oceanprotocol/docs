@@ -12,15 +12,19 @@ Now that you are familiar with the process of retrieving a list of data NFTs ðŸ˜
 
 The result of the following GraphQL query returns the information about a particular data NFT. In this example, `0x1c161d721e6d99f58d47f709cdc77025056c544c`.
 
-PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to [this table](../ocean-subgraph/#ocean-subgraph-deployments).
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](../ocean-subgraph/#ocean-subgraph-deployments)_._
 
 {% tabs %}
-{% tab title="Query" %}
-Copy the query to fetch the information about a data NFT in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql). If you want to fetch the information about another NFT, replace the `id` with the address of your choice.
+{% tab title="Javascript" %}
+The javascript below can be used to run the query and fetch the information of a data NFT. If you wish to change the network, replace the variable's value `network` as needed. Change the value of the variable `datanftAddress` with the address of your choice.
 
-```graphql
-{
-  nft (id:"0x1c161d721e6d99f58d47f709cdc77025056c544c", subgraphError:deny){
+```runkit  nodeVersion="18.x.x"
+var axios = require('axios');
+
+const datanftAddress = "0x1c161d721e6d99f58d47f709cdc77025056c544c";
+
+const query = `{
+  nft (id:"${datanftAddress}", subgraphError:deny){
     id
     name
     symbol
@@ -41,7 +45,25 @@ Copy the query to fetch the information about a data NFT in the Ocean Subgraph [
     template
     orderCount
  }
-}
+}`
+
+const network = "mainnet"
+var config = {
+  method: 'post',
+  url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
+  headers: { "Content-Type": "application/json" },
+  data: JSON.stringify({ "query": query })
+};
+
+axios(config)
+  .then(function (response) {
+    let result = JSON.stringify(response.data)
+    console.log(result)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
 ```
 {% endtab %}
 
@@ -103,16 +125,12 @@ print(json.dumps(result, indent=4, sort_keys=True))
 </strong></code></pre>
 {% endtab %}
 
-{% tab title="Javascript" %}
-The javascript below can be used to run the query and fetch the information of a data NFT. If you wish to change the network, replace the variable's value `network` as needed. Change the value of the variable `datanftAddress` with the address of your choice.
+{% tab title="Query" %}
+Copy the query to fetch the information about a data NFT in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql). If you want to fetch the information about another NFT, replace the `id` with the address of your choice.
 
-```runkit  nodeVersion="18.x.x"
-var axios = require('axios');
-
-const datanftAddress = "0x1c161d721e6d99f58d47f709cdc77025056c544c";
-
-const query = `{
-  nft (id:"${datanftAddress}", subgraphError:deny){
+```graphql
+{
+  nft (id:"0x1c161d721e6d99f58d47f709cdc77025056c544c", subgraphError:deny){
     id
     name
     symbol
@@ -133,25 +151,7 @@ const query = `{
     template
     orderCount
  }
-}`
-
-const network = "mainnet"
-var config = {
-  method: 'post',
-  url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
-  headers: { "Content-Type": "application/json" },
-  data: JSON.stringify({ "query": query })
-};
-
-axios(config)
-  .then(function (response) {
-    let result = JSON.stringify(response.data)
-    console.log(result)
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-
+}
 ```
 {% endtab %}
 {% endtabs %}

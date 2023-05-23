@@ -16,26 +16,42 @@ There are several options available to see this query in action. Below, you will
 2. Execute the query in Python by following the code snippet.
 3. Execute the query in JavaScript by clicking on the "Run" button of the Javascript tab.
 
-PS: In these examples, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to [this table](../ocean-subgraph/#ocean-subgraph-deployments).
+_PS: In these examples, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](../ocean-subgraph/#ocean-subgraph-deployments)_._
 
 {% tabs %}
-{% tab title="Query" %}
-Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).
+{% tab title="Javascript" %}
+The javascript below can be used to run the query and retrieve a list of NFTs. If you wish to change the network, then replace the value of `network` variable as needed.
 
-```graphql
-{
-  nfts (skip:0, first: 10, subgraphError:degraphny){
-    id
-    name
-    symbol
-    owner
-    address
-    assetState
-    tx
-    block
-    transferable
- }
+```runkit  nodeVersion="18.x.x"
+const axios = require('axios')
+
+const query = `{
+    nfts (skip:0, first: 10, subgraphError:deny){
+      id
+      name
+      symbol
+      owner
+      address
+      assetState
+      tx
+      block
+      transferable
+   }
+}`
+
+const network = "mainnet"
+const config = {
+  method: 'post',
+  url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
+  headers: { 'Content-Type': 'application/json' },
+  data: JSON.stringify({ query: query })
 }
+
+const response = await axios(config)
+for (let nft of response.data.data.nfts) {
+    console.log(' id:' + nft.id + ' name: ' + nft.name + ' address: ' + nft.address)
+}
+
 ```
 {% endtab %}
 
@@ -87,39 +103,23 @@ python list_dataNFTs.py
 ```
 {% endtab %}
 
-{% tab title="Javascript" %}
-The javascript below can be used to run the query and retrieve a list of NFTs. If you wish to change the network, then replace the value of `network` variable as needed.
+{% tab title="Query" %}
+Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).
 
-```runkit  nodeVersion="18.x.x"
-const axios = require('axios')
-
-const query = `{
-    nfts (skip:0, first: 10, subgraphError:deny){
-      id
-      name
-      symbol
-      owner
-      address
-      assetState
-      tx
-      block
-      transferable
-   }
-}`
-
-const network = "mainnet"
-const config = {
-  method: 'post',
-  url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
-  headers: { 'Content-Type': 'application/json' },
-  data: JSON.stringify({ query: query })
+```graphql
+{
+  nfts (skip:0, first: 10, subgraphError:degraphny){
+    id
+    name
+    symbol
+    owner
+    address
+    assetState
+    tx
+    block
+    transferable
+ }
 }
-
-const response = await axios(config)
-for (let nft of response.data.data.nfts) {
-    console.log(' id:' + nft.id + ' name: ' + nft.name + ' address: ' + nft.address)
-}
-
 ```
 {% endtab %}
 {% endtabs %}
