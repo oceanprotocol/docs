@@ -1,5 +1,5 @@
 ---
-description: The "Provider" service is an integral part of the Ocean Protocol stack
+description: An integral part of the Ocean Protocol stack
 ---
 
 # Provider
@@ -28,7 +28,9 @@ Additionally, the Provider service offers compute services by establishing a con
 
 ### What technology is used?
 
-Python Flask HTTP server
+* Python: This is the main programming language used in Provider.
+* Flask: This Python framework is used to construct the Provider API.
+* HTTP Server: Provider responds to HTTP requests from clients (like web browsers), facilitating the exchange of data and information over the internet.
 
 ### How to run the provider?
 
