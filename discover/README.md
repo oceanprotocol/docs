@@ -1,6 +1,6 @@
 ---
 description: Why Ocean Protocol?
-cover: ../.gitbook/assets/cover/discover.png
+cover: ../.gitbook/assets/discover.png
 coverY: 7.413145539906106
 ---
 

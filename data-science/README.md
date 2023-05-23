@@ -1,8 +1,8 @@
 ---
 description: Data Science
-cover: ../.gitbook/assets/cover/data_science.png
+cover: ../.gitbook/assets/data_science.png
 coverY: 0
 ---
 
-
 # 📊 Data Science
+

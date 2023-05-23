@@ -1,6 +1,6 @@
 ---
 description: An overview of Ocean Protocol's governance and incentives mechanisms
-cover: ../.gitbook/assets/cover/rewards.png
+cover: ../.gitbook/assets/rewards.png
 coverY: 0
 ---
 
@@ -10,7 +10,7 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 The following docs provide you with sufficient intuition to access, utilize, and build upon the protocol's core incentive and reward system: Data Farming.
 
-![DF Rewards Page](../.gitbook/assets/rewards/df_rewards_page.png)
+![DF Rewards Page](../.gitbook/assets/rewards/df\_rewards\_page.png)
 
 ## veOCEAN
 

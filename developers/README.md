@@ -1,9 +1,9 @@
 ---
-cover: ../.gitbook/assets/cover/developer_tutorials.png
+cover: ../.gitbook/assets/developer_tutorials.png
 coverY: 0
 ---
 
-# Developers
+# 👨💻 👨💻 Developers
 
 ## Introduction
 
