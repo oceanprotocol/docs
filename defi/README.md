@@ -1,6 +1,6 @@
 ---
 description: All you need to know about Ocean and decentralized finance
-cover: ../.gitbook/assets/cover/rewards.png
+cover: ../.gitbook/assets/cover/defi.png
 coverY: 0
 ---
 
