@@ -16,15 +16,15 @@ The Provider decrypts the URL when a dataset is downloaded and it streams the da
 
 Additionally, the Provider service offers compute services by establishing a connection to the C2D environment. This enables users to compute and manipulate data within the Ocean Protocol stack, adding a new level of utility and function to this data services platform.
 
-### What does Provider do?
+### What does the Provider do?
 
 * The only component that can access your data
-* Performs checks on chain for buyer permissions and payments
+* Performs checks on-chain for buyer permissions and payments
 * Encrypts the URL and metadata during publish
 * Decrypts the URL when the dataset is downloaded or a compute job is started
 * Provides access to data assets by streaming data (and never the URL)
 * Provides compute services (connects to C2D environment)
-* Typically run by the Data Provider
+* Typically run by the Data owner
 
 ### What technology is used?
 
