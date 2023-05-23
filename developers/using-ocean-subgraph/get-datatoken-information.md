@@ -4,7 +4,7 @@ description: >-
   Datatokens
 ---
 
-# Get datatoken Information
+# Get datatoken information
 
 To fetch detailed information about a specific datatoken, you can utilize the power of GraphQL queries. By constructing a query tailored to your needs, you can access key parameters such as the datatoken's ID, name, symbol, total supply, creator, and associated dataTokenAddress. This allows you to gain a deeper understanding of the datatoken's characteristics and properties. With this information at your disposal, you can make informed decisions, analyze market trends, and explore the vast potential of datatokens within the Ocean ecosystem. Harness the capabilities of GraphQL and unlock a wealth of datatoken insights.
 
@@ -150,6 +150,8 @@ print(json.dumps(result, indent=4, sort_keys=True))
 {% endtab %}
 
 {% tab title="Query" %}
+Copy the query to fetch the information of a datatoken in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).&#x20;
+
 ```
 {
   token(id:"0x122d10d543bc600967b4db0f45f80cb1ddee43eb", subgraphError: deny){

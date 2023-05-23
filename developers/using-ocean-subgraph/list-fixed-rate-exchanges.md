@@ -1,15 +1,23 @@
-# List Fixed Rate Exchanges
+---
+description: 'Discover the World of NFTs: Retrieving a List of Fixed-rate exchanges'
+---
 
-The result of following GraphQL query returns the information about the Fixed Rate Exchanges.
+# Get fixed-rate exchanges
 
-{% hint style="info" %}
-Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results from the mainnet. For other networks use [this table](../ocean-subgraph/#ocean-subgraph-graphiql).
-{% endhint %}
+Having gained knowledge about fetching lists of data NFTs and datatokens and extracting specific information about each, let's now explore the process of retrieving the information of fixed-rate exchanges. A fixed-rate exchange refers to a mechanism where data assets can be traded at a predetermined rate or price. These exchanges offer stability and predictability in data transactions, enabling users to securely and reliably exchange data assets based on fixed rates  If you need a refresher on fixed rate exchanges, visit the #TODO - Ana add link.
 
-#### Query
 
-```graphql
-{
+
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](../ocean-subgraph/#ocean-subgraph-deployments)_._
+
+{% tabs %}
+{% tab title="Javascript" %}
+The javascript below can be used to run the query and fetch a list of fixed-rate exchanges. If you wish to change the network, replace the variable's value `network` as needed.&#x20;
+
+```runkit  nodeVersion="18.x.x"
+var axios = require('axios');
+
+const query = `{
   fixedRateExchanges(skip:0, first:2, subgraphError:deny){
     id
     contract
@@ -41,14 +49,30 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
       tx
     }
   }
-}
+}`
+
+const network = "mainnet"
+var config = {
+  method: 'post',
+  url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
+  headers: { "Content-Type": "application/json" },
+  data: JSON.stringify({ "query": query })
+};
+
+axios(config)
+  .then(function (response) {
+    let result = JSON.stringify(response.data)
+    console.log(result)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
 ```
+{% endtab %}
 
-#### Code
-
-{% tabs %}
 {% tab title="Python" %}
-The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
+The Python script below can be used to run the query and retrieve a list of fixed-rate exchanges. If you wish to change the network, then replace the value of variable `base_url` as needed.
 
 **Create script**
 
@@ -115,16 +139,11 @@ python list_fixed_rate_exchanges.py
 ```
 {% endtab %}
 
-{% tab title="Javascript" %}
-The javascript below can be used to run the the query. If you wish to change the network, then replace the value of variable `baseUrl` as needed.
+{% tab title="Query" %}
+Copy the query to fetch a list of fixed-rate exchanges in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).&#x20;
 
-**Create script**
-
-{% code title="listFRE.js" %}
-```javascript
-var axios = require('axios');
-
-const query = `{
+```
+{
   fixedRateExchanges(skip:0, first:2, subgraphError:deny){
     id
     contract
@@ -156,34 +175,7 @@ const query = `{
       tx
     }
   }
-}`
-
-const baseUrl = "https://v4.subgraph.mainnet.oceanprotocol.com"
-const route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
-
-const url = `${baseUrl}${route}`
-
-var config = {
-  method: 'post',
-  url: url,
-  headers: { "Content-Type": "application/json" },
-  data: JSON.stringify({ "query": query })
-};
-
-axios(config)
-  .then(function (response) {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-```
-{% endcode %}
-
-**Execute script**
-
-```bash
-node listFRE.js
+}
 ```
 {% endtab %}
 {% endtabs %}
