@@ -4,11 +4,24 @@ The universal Aquarius Endpoint is [`https://v4.aquarius.oceanprotocol.com`](htt
 
 ### **Info**
 
-GET `/`
+Retrieves version, plugin, and software information from the Aquarius service.
 
-#### Description
+* **Endpoint**: `GET /`
+* **Purpose**: This endpoint is used to fetch key information about the Aquarius service, including its current version, the plugin it's using, and the name of the software itself.
 
-Get version, plugin, and software information.
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns a JSON object containing the `plugin`, `software`, and `version`.
+
+Example response:
+
+```
+{
+    "plugin": "elasticsearch",
+    "software": "Aquarius",
+    "version": "4.2.0"
+}
+```
 
 #### Curl Example
 
@@ -27,29 +40,18 @@ console.log(response.data)
 
 ```
 
-#### Response
 
-`200`
-
-Description: Successful request
-
-Body:
-
-```
-{
-    "plugin": "elasticsearch",
-    "software": "Aquarius",
-    "version": "4.2.0"
-}
-```
 
 ### **Health**
 
-GET `/health`
+Retrieves the health status of the Aquarius service.
 
-**Description**
+* **Endpoint**: `GET /health`
+* **Purpose**: This endpoint is used to fetch the current health status of the Aquarius service. This can be helpful for monitoring and ensuring that the service is running properly.
 
-Get health status
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns a message indicating the health status. For example, "Elasticsearch connected" indicates that the Aquarius service is able to connect to Elasticsearch, which is a good sign of its health.
 
 **Curl Example**
 
@@ -68,25 +70,16 @@ console.log(response.data)
 
 ```
 
-**Response**
-
-`200`
-
-Description: Successful request
-
-Body:
-
-```
-Elasticsearch connected
-```
-
 ### **Spec**
 
-GET /spec
+Retrieves the Swagger specification for the Aquarius service.
 
-#### Description
+* **Endpoint**: `GET /spec`
+* **Purpose**: This endpoint is used to fetch the Swagger specification of the Aquarius service. Swagger is a set of rules (in other words, a specification) for a format describing REST APIs. This endpoint returns a document that describes the entire API, including the available endpoints, their methods, parameters, and responses.
 
-Get swagger spec
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns the Swagger specification.
 
 #### Example
 
@@ -105,8 +98,3 @@ console.log(response.data.info)
 
 ```
 
-#### Response
-
-`200`
-
-Successful request
