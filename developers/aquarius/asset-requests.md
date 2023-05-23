@@ -165,11 +165,17 @@ for (const value of response.data.hits.hits) {
 
 ### Validate DDO
 
-POST `/api/aquarius/assets/ddo/validate`
+Used to validate the content of a DDO (Decentralized Identifier Document).
 
-#### Description
+* **Endpoint**: `POST /api/aquarius/assets/ddo/validate`
+* **Purpose**: This endpoint is used to verify the validity of a DDO. This could be especially helpful prior to submitting a DDO to ensure it meets the necessary criteria and avoid any issues or errors. The endpoint consumes `application/octet-stream`, which means the data sent should be in binary format, often used for handling different data types.
+* **Parameters**: The parameters for this endpoint are provided in the body of the POST request as a valid JSON object, which represents the DDO that needs to be validated.
 
-Validate DDO content. Cosumes `application/octet-stream`
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. It means the server successfully validated your DDO content and it meets the necessary criteria.
+* **400**: This HTTP status code indicates a client error. In this context, it means that the submitted DDO format is invalid. You will need to revise the DDO content according to the required specifications and resubmit it.
+* **500**: This HTTP status code represents a server error. This indicates an internal server error while processing your request. The specific details of the error are typically included in the response body.
 
 #### Curl Example
 
@@ -227,75 +233,24 @@ console.log(response.data)
 
 ```
 
-#### Valid body
-
-```
-    {
-        "@context": ["https://w3id.org/did/v1"],
-        "id": "did:op:56c3d0ac76c02cc5cec98993be2b23c8a681800c08f2ff77d40c895907517280",
-        "version": "4.1.0",
-        "chainId": 1337,
-        "nftAddress": "0xabc",
-        "metadata": {
-            "created": "2000-10-31T01:30:00.000-05:00Z",
-            "updated": "2000-10-31T01:30:00.000-05:00",
-            "name": "Ocean protocol white paper",
-            "type": "dataset",
-            "description": "Ocean protocol white paper -- description",
-            "author": "Ocean Protocol Foundation Ltd.",
-            "license": "CC-BY",
-            "contentLanguage": "en-US",
-            "tags": ["white-papers"],
-            "additionalInformation": {"test-key": "test-value"},
-            "links": [
-                "http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-daily/",
-                "http://data.ceda.ac.uk/badc/ukcp09/data/gridded-land-obs/gridded-land-obs-averages-25km/",
-                "http://data.ceda.ac.uk/badc/ukcp09/"
-            ]
-        },
-        "services": [
-            {
-                "id": "test",
-                "type": "access",
-                "datatokenAddress": "0xC7EC1970B09224B317c52d92f37F5e1E4fF6B687",
-                "name": "Download service",
-                "description": "Download service",
-                "serviceEndpoint": "http://172.15.0.4:8030/",
-                "timeout": 0,
-                "files": "encryptedFiles"
-            }
-        ]
-    }
-```
-
-#### Responses:
-
-`200`
-
-Successfull request.
-
-`400`
-
-Invalid DDO format
-
-`500`
-
-Error
-
 ### Trigger Caching
 
-POST `/api/aquarius/assets/triggerCaching`
+Used to manually initiate the process of DDO caching based on a transaction ID. This transaction ID should include either MetadataCreated or MetadataUpdated events.
 
-#### Description
-
-Manually triggers DDO caching based on a `transacionId` containing either MetadataCreated or MetadataUpdated event(s).
-
-#### Parameters
+* **Endpoint**: `POST /api/aquarius/assets/triggerCaching`
+* **Purpose**: This endpoint is used to manually trigger the caching process of a DDO (Decentralized Identifier Document). This process is initiated based on a specific transaction ID, which should include either MetadataCreated or MetadataUpdated events. This can be particularly useful in situations where immediate caching of metadata changes is required.
+* **Parameters**: The parameters for this endpoint are provided in the body of the POST request as a valid JSON object. This includes the transaction ID and log index that is associated with the metadata event.
 
 | Name            | Description                          | Type   | Within | Required |
 | --------------- | ------------------------------------ | ------ | ------ | -------- |
 | `transactionId` | DID of the asset                     | string | path   | true     |
 | `logIndex`      | custom log index for the transaction | int    | path   | false    |
+
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. It means the server successfully initiated the DDO caching process and the updated asset is returned.
+* **400**: This HTTP status code indicates a client error. In this context, it suggests issues with the request: either the log index was not found, or the transaction log did not contain MetadataCreated or MetadataUpdated events. You should revise your input parameters and try again.
+* **500**: This HTTP status code represents a server error. This indicates an internal server error while processing your request. The specific details of the error are typically included in the response body.
 
 #### Curl Example
 
@@ -317,25 +272,3 @@ console.log(response.data)
 
 ```
 
-#### Valid body
-
-```
-    {
-        "transactionId": "0x945596edf2a26d127514a78ed94fea86b199e68e9bed8b6f6d6c8bb24e451f27",
-        "logIndex": 0
-    }
-```
-
-#### Responses:
-
-`200`
-
-Description: triggering successful, updated asset returned
-
-`400`
-
-Description: request issues: either log index not found, or neither of MetadataCreated, MetadataUpdated found in tx log
-
-`500`
-
-Description: Error
