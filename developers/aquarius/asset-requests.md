@@ -4,17 +4,20 @@ The universal Aquarius Endpoint is [`https://v4.aquarius.oceanprotocol.com`](htt
 
 ### **DDO**
 
-&#x20;GET `/api/aquarius/assets/ddo/<did>`
+A method for retrieving all information about the asset using a unique identifier known as a Decentralized Identifier (DID).
 
-#### Description
-
-Get DDO of a particular asset.
-
-#### Parameters
+* **Endpoint**: `GET /api/aquarius/assets/ddo/<did>`
+* **Purpose**: This endpoint is used to fetch the Decentralized Document (DDO) of a particular asset. A DDO is a detailed information package about a specific asset, including its ID, metadata, and other necessary data.
+* **Parameters**: The `<did>` in the URL is a placeholder for the DID, a unique identifier for the asset you want to retrieve the DDO for.
 
 | Name  | Description      | Type   | Within | Required |
 | ----- | ---------------- | ------ | ------ | -------- |
 | `did` | DID of the asset | string | path   | true     |
+
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. In this case, it means the server successfully found and returned the DDO for the given DID. The returned data is formatted in JSON.
+* **404**: This is an HTTP response code that signifies the requested resource couldn't be found on the server. In this context, it means the asset DID you requested isn't found in Elasticsearch, the database Aquarius uses. The server responds with a JSON-formatted message stating that the asset DID wasn't found.
 
 #### Curl Example
 
@@ -35,32 +38,18 @@ console.log(response.data.metadata.description)
 
 ```
 
-#### Responses
-
-`200`
-
-* content-type: json
-* description: On successful operation returns DDO information.
-
-`404`
-
-* content-type: json
-* description: This asset DID is not in ES.
-*   response body:
-
-    ```
-    {
-        "error": "Asset DID <did> not found in Elasticsearch."
-    }
-    ```
-
 ### **Metadata**
 
-`GET /api/aquarius/assets/metadata/<did>`
+A method for retrieving the metadata about the asset using the Decentralized Identifier (DID).
 
-#### Description
+* **Endpoint**: `GET /api/aquarius/assets/metadata/<did>`
+* **Purpose**: This endpoint is used to fetch the metadata of a particular asset. It includes details about the asset such as its name, description, creation date, owner, etc.
+* **Parameters**: The `<did>` in the URL is a placeholder for the DID, a unique identifier for the asset you want to retrieve the metadata for.
 
-Get metadata of a particular asset.
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. In this case, it means the server successfully found and returned the metadata for the given DID. The returned data is formatted in JSON.
+* **404**: This is an HTTP response code that signifies the requested resource couldn't be found on the server. In this context, it means the asset DID you requested isn't found in the database. The server responds with a JSON-formatted message stating that the asset DID wasn't found.
 
 #### Parameters
 
@@ -86,32 +75,20 @@ console.log(response.data.description)
 
 ```
 
-#### Responses
-
-`200`
-
-* content-type: json
-* description: successful operation.
-
-`404`
-
-* content-type: json
-* description: This asset DID is not in ES.
-*   response body:
-
-    ```
-    {
-        "error": "Error encountered while retrieving metadata: NotFoundError(404, '{\"_index\":\"aquarius\",\"_type\":\"_doc\",\"_id\":\"<did>\",\"found\":false}')."
-    }
-    ```
-
 ### **Asset Names**&#x20;
 
-`POST /api/aquarius/assets/names`
+Used to retrieve the names of a group of assets using a list of unique identifiers known as Decentralized Identifiers (DIDs).
 
-#### Description
+Here's a more detailed explanation:
 
-Get names of assets as specified in the payload.
+* **Endpoint**: `POST /api/aquarius/assets/names`
+* **Purpose**: This endpoint is used to fetch the names of specific assets. These assets are identified by a list of DIDs provided in the request payload. The returned asset names are those specified in the assets' metadata.
+* **Parameters**: The parameters are sent in the body of the POST request, formatted as JSON. Specifically, an array of DIDs (named "didList") should be provided.
+
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. In this case, it means the server successfully found and returned the names for the assets corresponding to the provided DIDs. The returned data is formatted in JSON, mapping each DID to its respective asset name.
+* **400**: This is an HTTP response code that signifies a client error in the request. In this context, it means that the "didList" provided in the request payload was empty. The server responds with a JSON-formatted message indicating that the requested "didList" cannot be empty.
 
 #### Parameters
 
@@ -144,37 +121,18 @@ for (let key in response.data) {
 
 ```
 
-#### Responses
-
-`200`
-
-* content-type: json
-* description: successful operation.
-*   response body:
-
-    ```
-    {"did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6": "Ocean CEX Aggregator: OHLC history for OCEAN/USDT "}
-    ```
-
-`400`
-
-* content-type: json
-* description: This asset DID is not in ES.
-*   response body:
-
-    ```
-    {
-    "error": "The requested didList can not be empty."
-    }
-    ```
-
 ### Query Assets
 
-POST `/api/aquarius/assets/query`
+Used to run a custom search query on the assets using Elasticsearch's native query syntax. We recommend reading the [Elasticsearch documentation](https://www.elastic.co/guide/index.html) to understand their syntax.&#x20;
 
-#### **Description**
+* **Endpoint**: `POST /api/aquarius/assets/query`
+* **Purpose**: This endpoint is used to execute a native Elasticsearch (ES) query against the stored assets. This allows for highly customizable searches and can be used to filter and sort assets based on complex criteria. The body of the request should contain a valid JSON object that defines the ES query.
+* **Parameters**: The parameters for this endpoint are provided in the body of the POST request as a valid JSON object that conforms to the Elasticsearch query DSL (Domain Specific Language).
 
-Run a native ES query. Body must be a valid json object.
+Here are some typical responses you might receive from the API:
+
+* **200**: This is a successful HTTP response code. It means the server successfully ran your ES query and returned the results. The results are returned as a JSON object.
+* **500**: This HTTP status code represents a server error. In this context, it typically means there was an error with Elasticsearch while trying to execute the query. It could be due to an invalid or malformed query, an issue with the Elasticsearch service, or some other server-side problem. The specific details of the error are typically included in the response body.
 
 #### Curl Example
 
@@ -204,16 +162,6 @@ for (const value of response.data.hits.hits) {
 }
 
 ```
-
-#### Responses
-
-`200`
-
-* content-type: json
-
-`500`
-
-* description: elasticsearch exception
 
 ### Validate DDO
 
