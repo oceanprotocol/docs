@@ -20,7 +20,7 @@ PS: In these examples, the query is executed on the Ocean subgraph deployed on t
 
 {% tabs %}
 {% tab title="Query" %}
-Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) to fetch the results.
+Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).
 
 ```graphql
 {
@@ -40,7 +40,7 @@ Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL inte
 {% endtab %}
 
 {% tab title="Python" %}
-The Python script below can be used to run the query to fetch a list of data NFTs from the subgraph. If you wish to change the network, replace the value of variable `base_url` as needed.
+The Python script below can be used to run the query to fetch a list of data NFTs from the subgraph. If you wish to change the network, replace the value of the variable `base_url` as needed.
 
 **Create script**
 
@@ -88,7 +88,7 @@ python list_dataNFTs.py
 {% endtab %}
 
 {% tab title="Javascript" %}
-The javascript below can be used to run the query. If you wish to change the network, then replace the value of `network` as needed.
+The javascript below can be used to run the query and retrieve a list of NFTs. If you wish to change the network, then replace the value of `network` variable as needed.
 
 ```runkit  nodeVersion="18.x.x"
 const axios = require('axios')
