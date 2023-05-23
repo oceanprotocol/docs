@@ -12,7 +12,11 @@ The [Ocean Subgraph](https://github.com/oceanprotocol/ocean-subgraph) is built o
 
 Imagine this 💭: if you were to always fetch data from the on-chain, you'd start to feel a little...old :older\_woman:. Like your queries are stuck in a time warp. But fear not! When you embrace the power of the subgraph, data becomes your elixir of youth. It's snappy, it's swift, and it's refreshingly retrievable. With the subgraph, you can sail through data like a sprightly dolphin 🐬&#x20;
 
+<div data-full-width="false">
+
 <figure><img src="../../.gitbook/assets/dolphin.gif" alt=""><figcaption><p>High-speed subgraph</p></figcaption></figure>
+
+</div>
 
 ### How to use the Subgraph?
 

@@ -1,4 +1,8 @@
-# List all Tokens
+---
+description: 'Discover the World of datatokens: Retrieving a List of datatokens'
+---
+
+# Get datatokens
 
 The result of following GraphQL query returns the information about datatokens.
 
@@ -8,6 +12,10 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
 
 #### Query
 
+#### Code
+
+{% tabs %}
+{% tab title="Query" %}
 ```graphql
 {
   tokens(skip:0, first: 2, subgraphError: deny){
@@ -40,10 +48,8 @@ Copy the query in the [GraphiQL interface](https://v4.subgraph.mainnet.oceanprot
   }
 }
 ```
+{% endtab %}
 
-#### Code
-
-{% tabs %}
 {% tab title="Python" %}
 The python script below can be used to run the the query. If you wish to change the network, then replace the value of variable `base_url` as needed.
 

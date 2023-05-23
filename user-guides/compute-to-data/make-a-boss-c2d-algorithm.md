@@ -1,7 +1,7 @@
 ---
 description: >-
   How to construct the beginnings of an awesome algorithm for C2D compute jobs
-  on datasets 😎
+  on datasets
 ---
 
 # Make a Boss C2D Algorithm
