@@ -1,7 +1,6 @@
 # General Endpoints
 
-
-### nonce endpoint
+### Nonce
 
 #### GET /api/services/nonce
 
@@ -26,6 +25,8 @@ Response:
   "nonce": 23
 }
 ```
+
+### File Info
 
 #### POST /api/services/fileinfo
 
