@@ -37,6 +37,7 @@
   * [DDO Specification](developers/ddo-specification.md)
   * [Storage Specifications](developers/storage-specifications.md)
   * [Fine-Grained Permissions](developers/Fine-Grained-Permissions.md)
+  * [Local Setup - Ganache](developers/local-setup-ganache.md)
   * [Build a Marketplace](developers/build-a-marketplace/README.md)
     * [Forking Ocean Market](developers/build-a-marketplace/forking-ocean-market.md)
     * [Customising a Market](developers/build-a-marketplace/customising-your-market.md)
