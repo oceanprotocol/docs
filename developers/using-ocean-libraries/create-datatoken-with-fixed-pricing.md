@@ -1,6 +1,6 @@
 # Publish with Fixed Pricing
 
-This tutorial guides you through the process of creating your own data NFT and a datatoken with fixed pricing, using Ocean libraries. To know more about data NFTs and datatokens please refer [this page](../../core-concepts/datanft-and-datatoken.md). Ocean Protocol supports different pricing schemes which can be set while publishing an asset. Please refer [this page](../../core-concepts/asset-pricing.md) for more details on pricing schemes.
+This tutorial guides you through the process of creating your own data NFT and a datatoken with fixed pricing, using Ocean libraries. To know more about data NFTs and datatokens please refer [this page](../datanft-and-datatoken.md). Ocean Protocol supports different pricing schemes which can be set while publishing an asset. Please refer [this page](../asset-pricing.md) for more details on pricing schemes.
 
 #### Prerequisites
 
@@ -14,7 +14,7 @@ This tutorial guides you through the process of creating your own data NFT and a
 Create a new file in the same working directory where configuration file (`config.py`/`config.js`) and `.env` files are present, and copy the code as listed below.
 
 {% hint style="info" %}
-**Fees**: The code snippets below define fees related parameters. Please refer [fees page ](../../core-concepts/fees.md)for more details
+**Fees**: The code snippets below define fees related parameters. Please refer [fees page ](../fees.md)for more details
 {% endhint %}
 
 {% tabs %}

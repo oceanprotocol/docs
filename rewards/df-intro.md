@@ -44,7 +44,7 @@ Otherwise, go to the DF webapp at [df.oceandao.org](df.oceandao.org) and explore
 
 All earnings for veOCEAN token holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.
 
-Data assets for DF may be published in any [network where Ocean’s deployed in production](../core-concepts/networks.md): Ethereum Mainnet, Polygon, etc.
+Data assets for DF may be published in any [network where Ocean’s deployed in production](../discover/networks/README.md): Ethereum Mainnet, Polygon, etc.
 
 ### When to claim?
 

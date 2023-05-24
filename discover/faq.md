@@ -336,7 +336,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 <summary>Which networks are eligible for Data Farming?</summary>
 Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
 
-You can find a list of [all supported chains here](https://docs.oceanprotocol.com/core-concepts/networks).
+You can find a list of [all supported chains here](https://docs.oceanprotocol.com/discover/networks).
 
 </details>
 

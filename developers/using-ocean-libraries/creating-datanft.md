@@ -1,6 +1,6 @@
 # Creating a data NFT
 
-This tutorial guides you through the process of creating your own data NFT using Ocean libraries. To know more about data NFT please refer [this page](../../core-concepts/datanft-and-datatoken.md).
+This tutorial guides you through the process of creating your own data NFT using Ocean libraries. To know more about data NFT please refer [this page](../datanft-and-datatoken.md).
 
 #### Prerequisites
 

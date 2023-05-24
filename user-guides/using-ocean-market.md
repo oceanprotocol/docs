@@ -25,6 +25,6 @@ The Ocean Market is a place for buyers + sellers of top-notch data and algorithm
 
 **If you are new to web3** and blockchain technologies then we suggest you first get familiar with some Web3 basics:
 
-* [Wallet Basics](../tutorials/building-with-ocean/wallets.md) 👛
-* [Set Up MetaMask](../tutorials/orientation/metamask-setup.md) [Wallet ](../tutorials/orientation/metamask-setup.md)🦊
-* [Manage Your OCEAN Tokens](../tutorials/building-with-ocean/wallets-and-ocean-tokens.md) 🪙
+* [Wallet Basics](../discover/wallets.md) 👛
+* [Set Up MetaMask](../discover/metamask-setup.md) [Wallet ](../discover/metamask-setup.md)🦊
+* [Manage Your OCEAN Tokens](../discover/wallets-and-ocean-tokens.md) 🪙

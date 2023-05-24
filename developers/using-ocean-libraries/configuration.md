@@ -10,7 +10,7 @@ Choose any API provider of your choice. Some of the commonly used are:
 * [Alchemy](https://www.alchemy.com/)
 * [Moralis](https://moralis.io/)
 
-The supported networks are listed [here](../../core-concepts/networks.md).
+The supported networks are listed [here](../../discover/networks/).
 
 ### Create a directory
 
