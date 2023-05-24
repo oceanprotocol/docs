@@ -4,11 +4,11 @@ description: How to Publish Data and Algorithms as NFTs Using the Ocean Market
 
 # Publish an NFT
 
-<figure><img src="../.gitbook/assets/gif/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
 
 ### What to Publish? 🤷‍♀️
 
-Ocean Protocol has a convenient marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs. These assets span anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Market.&#x20;
+Ocean Protocol has a convenient marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs. These assets span anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Market.
 
 Please note Ocean Protocol maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
 
@@ -21,7 +21,7 @@ Don't enjoy reading? Watch our video tutorial!
 #### Getting Started 🏃💨
 
 1. Go to the [Ocean Market](https://v4.market.oceanprotocol.com).
-2. Connect your wallet.&#x20;
+2. Connect your wallet.
 3. Select the network where you would like to publish your NFT (ex. Ethereum, Polygon, etc).
 
 ![Connect wallet](../.gitbook/assets/market/marketplace-connect-wallet.png)

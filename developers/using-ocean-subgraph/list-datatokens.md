@@ -171,8 +171,6 @@ Copy the query to fetch a list of datatokens in the Ocean Subgraph [GraphiQL int
 {% endtab %}
 {% endtabs %}
 
-#### Response
-
 <details>
 
 <summary>Sample Response</summary>

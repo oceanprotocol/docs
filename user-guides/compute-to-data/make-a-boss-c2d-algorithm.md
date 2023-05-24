@@ -6,13 +6,13 @@ description: >-
 
 # Make a Boss C2D Algorithm
 
-<figure><img src="../../.gitbook/assets/gif/like-a-boss.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/like-a-boss.gif" alt=""><figcaption></figcaption></figure>
 
 The beginning of any great algorithm for Compute-to-Data starts by referencing the dataset asset correctly on the Docker container. Read on, anon.
 
 ### Open the local dataset file
 
-This code goes at the top of your algorithm file for your algorithm NFT asset to use with Compute-to-Data. It references your data NFT asset file on the Docker container you selected.&#x20;
+This code goes at the top of your algorithm file for your algorithm NFT asset to use with Compute-to-Data. It references your data NFT asset file on the Docker container you selected.
 
 {% tabs %}
 {% tab title="Python" %}

@@ -4,7 +4,7 @@ description: Learn how to get veOCEAN tokens to use the Data Farming dapp  🧑�
 
 # Get veOCEAN Tokens
 
-<figure><img src="../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
 ### What is veOCEAN? 🌊
 
@@ -30,7 +30,7 @@ veOCEAN is a 'voting escrowed' token used in Ocean Protocol's Data Farming dapp 
 
 * Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
 
-{% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %}
+\{% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %\}
 
 In this step you will:
 

@@ -192,8 +192,6 @@ Copy the query to fetch the information of a datatoken in the Ocean Subgraph [Gr
 {% endtab %}
 {% endtabs %}
 
-#### Response
-
 <details>
 
 <summary>Sample response</summary>

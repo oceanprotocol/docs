@@ -180,8 +180,6 @@ Copy the query to fetch a list of fixed-rate exchanges in the Ocean Subgraph [Gr
 {% endtab %}
 {% endtabs %}
 
-#### Response
-
 <details>
 
 <summary>Sample response</summary>

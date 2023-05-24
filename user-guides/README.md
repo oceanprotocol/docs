@@ -8,7 +8,7 @@ coverY: 0
 
 # 📚 User Guides
 
-<figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Tokenize your cool stuff and make money 🤑
 

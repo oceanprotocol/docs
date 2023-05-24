@@ -156,8 +156,6 @@ Copy the query to fetch the information about a data NFT in the Ocean Subgraph [
 {% endtab %}
 {% endtabs %}
 
-#### Response
-
 <details>
 
 <summary>Sample response</summary>

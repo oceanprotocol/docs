@@ -4,13 +4,13 @@ description: What is Ocean Protocol?
 
 # Explore
 
-Ocean Protocol is a **decentralized data exchange protocol** that empowers you to monetize and share your data with others on-chain. ⛓️ By leveraging **blockchain technology** and **smart contracts**, Ocean Protocol offers **open-source tools** to securely publish NFTs of your data and algorithms to seamlessly collaborate, trade, and innovate with others.&#x20;
+Ocean Protocol is a **decentralized data exchange protocol** that empowers you to monetize and share your data with others on-chain. ⛓️ By leveraging **blockchain technology** and **smart contracts**, Ocean Protocol offers **open-source tools** to securely publish NFTs of your data and algorithms to seamlessly collaborate, trade, and innovate with others.
 
 <figure><img src="../.gitbook/assets/ocean-jelly-hyperrealistic.jpeg" alt="" width="375"><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
 
-Let's embark on a journey of discovery and explore the possibilities that await you with Ocean Protocol! Get a glimpse into some of the things you can do - the opportunities with our protocol are vast and ever-evolving. Together, we can dive deeper and uncover even more ways to leverage the power of decentralized data.&#x20;
+Let's embark on a journey of discovery and explore the possibilities that await you with Ocean Protocol! Get a glimpse into some of the things you can do - the opportunities with our protocol are vast and ever-evolving. Together, we can dive deeper and uncover even more ways to leverage the power of decentralized data.
 
-<figure><img src="../.gitbook/assets/gif/penguin-diving.gif" alt="" width="360"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/penguin-diving.gif" alt="" width="360"><figcaption></figcaption></figure>
 
 <details>
 
@@ -33,13 +33,11 @@ These are a few examples of what can be built on top of Ocean.
 4. [Ocean Gate](https://tokengate.oceanprotocol.com/) - Tokengated content [marketplace](https://github.com/oceanprotocol/token-gating-template)
 5. [Acentrik Market](https://market.acentrik.io/) - Enterprise decentralized data marketplace
 
-
-
 </details>
 
 <details>
 
-<summary><mark style="color:orange;">Build Your Data Marketplace</mark><br><br>With Ocean Protocol, you have the flexibility to create and launch your own data marketplace tailored to your specific requirements. Utilize the protocol's infrastructure and tools to establish a platform where data providers and consumers can connect and transact. </summary>
+<summary><mark style="color:orange;">Build Your Data Marketplace</mark><br><br>With Ocean Protocol, you have the flexibility to create and launch your own data marketplace tailored to your specific requirements. Utilize the protocol's infrastructure and tools to establish a platform where data providers and consumers can connect and transact.</summary>
 
 You can choose from two options:
 
@@ -76,7 +74,7 @@ The following guides will help you get started with buying and selling data:
 
 <summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-background.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
 
-Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.&#x20;
+Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.
 
 Participating in the Data Farming initiative demonstrates a commitment to the principles of **fairness**, **transparency**, and **collaboration** that underpin Ocean Protocol. It allows you to actively engage with the ecosystem, promoting innovation, and driving the evolution of the decentralized data economy.
 
@@ -84,7 +82,7 @@ Participating in the Data Farming initiative demonstrates a commitment to the pr
 
 <details>
 
-<summary><mark style="color:red;">Data Challenges</mark><br><br>Ocean <a href="https://oceanprotocol.com/challenges">Data Challenges</a> offer you a unique opportunity to showcase your skills and creativity in the world of data. These organized events and competitions encourage <a href="../data-science/">data scientists</a>, researchers, and developers like yourself to explore and innovate using Ocean Protocol.  </summary>
+<summary><mark style="color:red;">Data Challenges</mark><br><br>Ocean <a href="https://oceanprotocol.com/challenges">Data Challenges</a> offer you a unique opportunity to showcase your skills and creativity in the world of data. These organized events and competitions encourage <a href="../data-science/">data scientists</a>, researchers, and developers like yourself to explore and innovate using Ocean Protocol.</summary>
 
 By participating in Ocean Data Challenges, you can tackle real-world problems, leverage data assets, and utilize the technologies within the Ocean ecosystem. Not only do you have the chance to compete for recognition and prizes, but you also contribute to driving innovation, fostering collaboration, and making a positive impact in the data space.
 
@@ -97,7 +95,5 @@ By participating in Ocean Data Challenges, you can tackle real-world problems, l
 As an Ocean Ambassador, you become an advocate for the protocol, promoting its vision of democratizing data and empowering individuals. By sharing your knowledge and enthusiasm, you can educate others about the benefits and potential of Ocean Protocol, inspiring them to join the ecosystem. As part of a global community of like-minded individuals, you gain access to exclusive resources, networking opportunities, and collaborations that further enhance your expertise in the data economy. As an Ambassador, you play a vital role in shaping the future of data by driving awareness, fostering innovation, and helping to build a more open and equitable data ecosystem. Join the Ocean Ambassador program by completing the [Ocean Academy](https://www.oceanacademy.io/) and become a catalyst for positive change in the world of data.
 
 </details>
-
-
 
 This is just the beginning of what Ocean Protocol has to offer. Join us as we explore, innovate, and push the boundaries of what's possible with decentralized data. Together, we can shape a future where data is accessible, secure, and empowers individuals and organizations alike. Let's dive in and discover the endless possibilities of Ocean Protocol :ocean:
