@@ -23,7 +23,6 @@ With Ocean, crypto wallets transform into magical data wallets, where your data 
 
 But hold on tight, because we have even more in store for you! With Ocean Protocol, you gain access to a treasure trove of tools that will unlock your data scientist superpowers and allow you to unleash your creativity. Whether you're a Python aficionado or a JavaScript maestro, we have you covered with [ocean.py](ocean.py/) and [ocean.js](ocean-libraries/) libraries. So, get ready to dive into the depths of data innovation and create the next groundbreaking dAapp (that's a decentralized App, by the way) using [ocean.js's](ocean-libraries/) powerful capabilities or unleash your skills with [ocean.py](ocean.py/). It's time to shake up the data world like never before! 🌐🚀
 
+<figure><img src="../.gitbook/assets/developers.png" alt=""><figcaption><p>Developer on Ocean Protocol</p></figcaption></figure>
+
 Now, if you're new to the world of web3 and blockchain technologies, fear not! We've got you covered. Before diving into the depths of Ocean Protocol, we recommend starting with some introductory guides. These [guides](../user-guides/) will gently introduce you to the magical world of [web3](../discover/wallets.md) and help you understand the [basics](../discover/wallets-and-ocean-tokens.md) before you embark on your epic data-driven adventure.
-
-<figure><img src="../.gitbook/assets/penguin-diving.gif" alt=""><figcaption><p>Dive on in!</p></figcaption></figure>
-
