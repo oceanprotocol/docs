@@ -36,9 +36,8 @@ Prominently featured within this layer is [Ocean Market](../user-guides/using-oc
 
 ### Layer 4: The Friendly Wallets
 
-At the top of the Ocean Protocol ecosystem, we find the esteemed [Web 3 Wallets](../discover/wallets.md), the gateway for users to immerse themselves in the world of decentralized data transactions. These wallets serve as the trusted companions, enabling users to seamlessly transact within the ecosystem, purchase and sell data NFTs, and acquire valuable datatokens. For a more detailed exploration of Web 3 Wallets and their capabilities, you can refer to the [wallet intro page](../discover/wallets.md).
+At the top of the Ocean Protocol ecosystem, we find the esteemed [Web 3 Wallets](../discover/wallets.md), the gateway for users to immerse themselves in the world of decentralized data transactions. These wallets serve as trusted companions, enabling users to seamlessly transact within the ecosystem, purchase and sell data NFTs, and acquire valuable datatokens. For a more detailed exploration of Web 3 Wallets and their capabilities, you can refer to the [wallet intro page](../discover/wallets.md).
 
 
 
-With the layers of the architecture now defined, it is time to embark on a detailed exploration of each layer. By examining each layer individually, we can gain a deeper understanding of their unique characteristics and functionalities.
-
+With the layers of the architecture clearly delineated, the stage is set for a comprehensive exploration of their underlying logic and intricate design. By examining each individually, we can gain a deeper understanding of their unique characteristics and functionalities.
