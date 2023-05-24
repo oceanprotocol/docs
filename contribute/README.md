@@ -1,7 +1,7 @@
 ---
 title: Ways to Contribute
 description: Help to improve and develop Ocean core software.
-cover: ../.gitbook/assets/cover/contribute (1) (2).png
+cover: ../.gitbook/assets/cover/contribute.png
 coverY: 0
 ---
 

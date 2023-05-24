@@ -121,7 +121,7 @@ If ou are looking to get to grips with the inner workings of Ocean, then you'll 
 * [Asset pricing](asset-pricing.md)
 * [DID & DDO](ddo-specification.md)
 * [Roles](roles.md)
-* [Set Up a Marketplace](../tutorials/build-a-marketplace/marketplace.md)
+* [Set Up a Marketplace](build-a-marketplace/README.md)
 * [Compute-to-Data](compute-to-data/)
 * [Deploying components](../infrastructure/)
 * [Contributing](../contribute/)

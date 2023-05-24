@@ -4,7 +4,7 @@ description: How to Publish Data and Algorithms as NFTs Using the Ocean Market
 
 # Publish an NFT
 
-<figure><img src="../.gitbook/assets/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
 
 ### What to Publish? 🤷‍♀️
 

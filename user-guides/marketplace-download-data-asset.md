@@ -4,7 +4,7 @@ description: How to buy and download NFT assets on the Ocean Market
 
 # Buy NFT Assets
 
-<figure><img src="../.gitbook/assets/clueless-shopping.gif" alt=""><figcaption><p>That moment when you buy your first datatoken</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/clueless-shopping.gif" alt=""><figcaption><p>That moment when you buy your first datatoken</p></figcaption></figure>
 
 ### Let's Go Shopping! 💁‍♀️🛍️
 

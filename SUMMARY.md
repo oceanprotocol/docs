@@ -41,7 +41,7 @@
     * [Forking Ocean Market](developers/build-a-marketplace/forking-ocean-market.md)
     * [Customising a Market](developers/build-a-marketplace/customising-your-market.md)
     * [Deploying a Market](developers/build-a-marketplace/deploying-market.md)
-  * [Ocean Subgraph](developers/ocean-subgraph/README.md)
+  * [Subgraph](developers/subgraph/README.md)
     * [Get data NFTs](developers/using-ocean-subgraph/list-data-nfts.md)
     * [Get data NFT information](developers/using-ocean-subgraph/get-data-nft-information.md)
     * [Get datatokens](developers/using-ocean-subgraph/list-datatokens.md)

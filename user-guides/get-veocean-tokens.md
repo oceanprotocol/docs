@@ -4,7 +4,7 @@ description: Learn how to get veOCEAN tokens to use the Data Farming dapp  🧑�
 
 # Get veOCEAN Tokens
 
-<figure><img src="../.gitbook/assets/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
 ### What is veOCEAN? 🌊
 
