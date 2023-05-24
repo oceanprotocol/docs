@@ -1,12 +1,14 @@
 # Ocean.py
 
-## ![](https://github.com/oceanprotocol/art/blob/main/splashes/ocean\_py.png?raw=true)
+
+
+Attention all data enthusiasts! Are you an inquisitive data scientist intrigued by the world of Web3 and blockchain, but unsure of where to begin? Have you developed a groundbreaking AI algorithm and desire to transform it into profitable success? Perhaps you're engaged in training a highly lucrative model (LLM) and seek to define precise licensing terms for your valuable data. Or maybe you simply wish to sell your data while maintaining utmost privacy and control.
+
+Well, brace yourselves for some exhilarating news! Introducing ocean.py, a Python library that possesses a touch of magic. 🎩🐍 It empowers you to discreetly and securely publish, exchange, and effortlessly consume data. 🐙💦 Collaborating with the Ocean Protocol 🌊, it unlocks a plethora of advantages mentioned earlier. So get ready to take the plunge into the vast ocean of data with a resounding splash of excitement! 💦🌊
 
 
 
-🔍🤔 Calling all data wizards! Are you a curious data scientist 🧙‍♀️ who's heard whispers about Web3 and blockchain, but don't know where to dive in? Have you invented a mind-blowing AI algorithm and want to turn it into 💰 gold? Maybe you're training an LLM (Lusciously Lucrative Model) and want to specify the terms for your data's licensing 📜. Or hey, you just want to sell your data without giving up your privacy 🕵️‍♂️ or control 🚫🙅‍♂️.
-
-Guess what? 🎉 Say hello to ocean.py! It's like a magical Python library 🐍 that lets you secretly 🤫 and securely 🔒 publish, swap, and gobble up data. 🐙💦 It works wonders by teaming up with Ocean Protocol 🌊 to give you all those incredible benefits mentioned above. So get ready to dive into the data ocean with a splash! 💦🌊
+<figure><img src="../../.gitbook/assets/ocean_py.png" alt="" width="375"><figcaption><p>ocean.py library</p></figcaption></figure>
 
 
 
@@ -18,7 +20,7 @@ ocean.py lets you do the following things:
 * Sell datatokens via for a fixed price. Sell data NFTs.
 * Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.py or Brownie.
 
-And here is an outline video that describes the concepts better.
+If you prefer video format, please check this video below, otherwise let's move forward.
 
 {% embed url="https://youtu.be/8uZC6PC9PBM" %}
 
