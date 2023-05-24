@@ -1,18 +1,24 @@
 ---
-description: An introduction to Data Farming and Ocean Protocol incentive mechanisms
+description: An intro to Ocean Protocol's 'Data Farming' incentive mechanisms
 ---
 
 # Data Farming 101
 
-Data Farming (DF) incentivizes sustainable and perpetual growth of Data Consume Volume (DCV) inside the Ocean ecosystem.
+### What is Data Farming?
 
-DFing is similar to 'liquidity mining' apart of leading yield farming mechanisms in DeFi, but tuned for Data Consumption Volume (DCV).
+Data Farming (DF) is Ocean Protocol's **incentive system for curating high quality assets on the Ocean Market.** Participants vote on the Ocean Market assets that they believe are high quality and likely to sell. If they are right, then these Data Farmers **get a portion of the Ocean Market sales of the assets** they voted on!
 
-Data Consume Volume (DCV) is a metric placed to represent the total $ amount spent on purchases of data assets, fees on executing transactions, sharing data, and more. So, the more data consumed, the more rewards are distributed.
+(If you are familiar with 'liquidity mining', then you will find that Data Farming is similar but tuned instead for the curation of high quality assets on the Ocean Market.)
 
-Data Farming rewards OCEAN to liquidity providers (stakers) in two different ways: active and passive rewards. The two reward functions produce variable APYs, contingent user criteria and chosen eligiblity, plus data consume volume (DCV).&#x20;
+### What is DCV?
 
-How Data farming differentiates from yield farming is that Data Farming incentivizes a sustainable supply of polished and high-demand data assets into the protocol.&#x20;
+**Data Consume Volume (DCV)** is a metric for the total $ amount spent on purchases of Ocean Market assets, transaction fees, and more. The more that Ocean Market assets are consumed (i.e. purchased), then the more OCEAN rewards are distributed.
+
+OCEAN rewards go to Data Farmers in two different ways: **passive** rewards and **active** rewards. The two reward functions produce different variable APYs.
+
+### How is Data Farming different from Yield Farming?
+
+Data Farming is similar to Yield Farming because both generate yield for investors. However, Data Farming differs from conventional Yield Farming because it specifically incentivizes the consumption and curation of high-demand Ocean Market assets.&#x20;
 
 Unlike yield farming in DeFi, data farming has real intrinsic utility for all stakeholders: Liquidity providers (LPs) earn additional tokens, the protocol receives sustainable liquidity, and the users can trust the protocol's secured data assets. It's a win-win situation for all parties involved.
 

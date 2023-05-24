@@ -26,7 +26,7 @@ Create an ERC721 data NFT for each service, and ERC20 datatoken for access (1.0 
 
 And here is an outline video which describes the concepts better.
 
-[![Watch the video](../../.gitbook/assets/ocean.py/outline-1.jpg)](https://youtu.be/8uZC6PC9PBM)
+[![Watch the video](images/outline-1.jpg)](https://youtu.be/8uZC6PC9PBM)
 
 
 ## ocean.py Quickstart 🚀

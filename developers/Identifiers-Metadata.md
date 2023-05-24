@@ -57,28 +57,4 @@ The DDO is stored on-chain as part of the NFT contract and stored in encrypted f
 
 Here is the flow:
 
-![DDO flow](../.gitbook/assets/architecture/ddo-flow.png)
-
-<details>
-
-<summary>UML source</summary>
-
-```
-title DDO flow
-
-User(Ocean library) -> User(Ocean library): Prepare DDO
-User(Ocean library) -> Provider: encrypt DDO
-Provider -> User(Ocean library): encryptedDDO
-User(Ocean library) -> ERC721 contract: publish encryptedDDO
-Aquarius <-> ERC721 contract: monitors ERC721 contract and gets MetdadataCreated Event (contains encryptedDDO)
-Aquarius -> ERC721 contract: calls getMetaData()
-Aquarius -> Provider: decrypt encryptedDDO, signed request using Aquarius's private key
-Provider -> ERC721 contract: checks state using getMetaData()
-Provider -> Provider: depending on metadataState (expired,retired) and aquarius address, validates the request
-Provider -> Aquarius: DDO
-Aquarius -> Aquarius : validate DDO
-Aquarius -> Aquarius : cache DDO
-Aquarius -> Aquarius : enhance cached DDO in response with additional infos like events & stats
-```
-
-</details>
+<figure><img src="../.gitbook/assets/DDO Flow.jpg" alt=""><figcaption><p>DDO Flow</p></figcaption></figure>
