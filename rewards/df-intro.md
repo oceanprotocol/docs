@@ -2,9 +2,9 @@
 description: The "low down", the definitions, the deets 🧑‍🏫
 ---
 
-# Data Farming 101
+# Data Farming 101 (White Belt)
 
-<figure><img src="../.gitbook/assets/the-rock-simple.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/the-rock-simple.gif" alt=""><figcaption><p>Listen up, kids!</p></figcaption></figure>
 
 ### What is Data Farming?
 
