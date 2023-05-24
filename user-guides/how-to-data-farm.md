@@ -1,5 +1,5 @@
 ---
-description: How to capitalize with Ocean Protocol's Data Farming dapp
+description: How to capitalize with Ocean Protocol's Data Farming dApp
 ---
 
 # How to Data Farm

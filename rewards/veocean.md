@@ -1,10 +1,10 @@
 ---
-description: An overview of the governance token, veOCEAN (vote-escrowed).
+description: Let's discuss the "ve" in veOCEAN
 ---
 
-# veOCEAN
+# What is veOCEAN?
 
-veOCEAN is the vote escrowed capability of the $OCEAN token through veTokenomics model (vote-escrowed token economics). veOCEAN is used to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem. veOCEAN is architected to be staked or 'locked' for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
+veOCEAN is the <mark style="color:orange;">**vote escrowed**</mark> capability of the $OCEAN token through veTokenomics model (vote-escrowed token economics). veOCEAN is used to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem. veOCEAN is architected to be staked or 'locked' for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
 
 Holders of veOCEAN can use it to vote on proposals or delegate their voting power to other stakeholders. Additionally, there are be other benefits associated with holding and staking veOCEAN, such as access to passive & active rewards in data farming or discounts on fees within the network.
 
@@ -97,7 +97,9 @@ Data Farming rounds occur weekly; in line with this, there’s a new ve distribu
 
 The image below illustrates the flow of value. On the left, at time 0, the staker locks their OCEAN into the veOCEAN contract, and receives veOCEAN. In the middle, the staker receives OCEAN rewards every time there’s revenue to the Ocean Protocol Community (top), and also as part of Data Farming rewards (bottom). On the right, when the lock expires (e.g. 4 years) then the staker is able to move their OCEAN around again.
 
-![Flow of Value](../.gitbook/assets/rewards/flow\_of\_value.png) _Flow of Value_
+&#x20;
+
+<figure><img src="../.gitbook/assets/rewards/flow_of_value.png" alt=""><figcaption><p>Flow of Value</p></figcaption></figure>
 
 The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Ocean uses as its system-level design.
 
