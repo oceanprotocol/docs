@@ -4,7 +4,7 @@ description: >-
   NFTs
 ---
 
-# Get data NFT Information
+# Get data NFT information
 
 Now that you are familiar with the process of retrieving a list of data NFTs ðŸ˜Ž, let's explore how to obtain more specific details about a particular NFT through querying. By utilizing the knowledge you have gained, you can customize your GraphQL query to include additional parameters such as the NFT's metadata, creator information, template, or any other relevant data points. This will enable you to delve deeper into the intricacies of a specific NFT and gain a comprehensive understanding of its attributes. With this newfound capability, you can unlock valuable insights and make informed decisions based on the specific details retrieved. So, let's dive into the fascinating world of querying and unravel the unique characteristics of individual data NFTs.
 
@@ -12,7 +12,7 @@ Now that you are familiar with the process of retrieving a list of data NFTs ðŸ˜
 
 The result of the following GraphQL query returns the information about a particular data NFT. In this example, `0x1c161d721e6d99f58d47f709cdc77025056c544c`.
 
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](../ocean-subgraph/#ocean-subgraph-deployments)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
 
 {% tabs %}
 {% tab title="Javascript" %}

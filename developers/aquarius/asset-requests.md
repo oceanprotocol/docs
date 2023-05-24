@@ -10,9 +10,7 @@ A method for retrieving all information about the asset using a unique identifie
 * **Purpose**: This endpoint is used to fetch the Decentralized Document (DDO) of a particular asset. A DDO is a detailed information package about a specific asset, including its ID, metadata, and other necessary data.
 * **Parameters**: The `<did>` in the URL is a placeholder for the DID, a unique identifier for the asset you want to retrieve the DDO for.
 
-| Name  | Description      | Type   | Within | Required |
-| ----- | ---------------- | ------ | ------ | -------- |
-| `did` | DID of the asset | string | path   | true     |
+<table><thead><tr><th width="100">Name</th><th>Description</th><th width="100">Type</th><th width="100">Within</th><th>Required</th></tr></thead><tbody><tr><td><code>did</code></td><td>DID of the asset</td><td>string</td><td>path</td><td>true</td></tr></tbody></table>
 
 Here are some typical responses you might receive from the API:
 
@@ -53,9 +51,7 @@ Here are some typical responses you might receive from the API:
 
 #### Parameters
 
-| Name  | Description      | Type   | Within | Required |
-| ----- | ---------------- | ------ | ------ | -------- |
-| `did` | DID of the asset | string | path   | true     |
+<table><thead><tr><th width="100">Name</th><th>Description</th><th width="100">Type</th><th width="100">Within</th><th>Required</th></tr></thead><tbody><tr><td><code>did</code></td><td>DID of the asset</td><td>string</td><td>path</td><td>true</td></tr></tbody></table>
 
 #### Curl Example
 
@@ -92,9 +88,7 @@ Here are some typical responses you might receive from the API:
 
 #### Parameters
 
-| Name      | Description        | Type | Within | Required |
-| --------- | ------------------ | ---- | ------ | -------- |
-| `didList` | list of asset DIDs | list | body   | true     |
+<table><thead><tr><th>Name</th><th>Description</th><th width="100">Type</th><th width="100">Within</th><th>Required</th></tr></thead><tbody><tr><td><code>didList</code></td><td>list of asset DIDs</td><td>list</td><td>body</td><td>true</td></tr></tbody></table>
 
 #### Curl Example
 
@@ -241,10 +235,7 @@ Used to manually initiate the process of DDO caching based on a transaction ID. 
 * **Purpose**: This endpoint is used to manually trigger the caching process of a DDO (Decentralized Identifier Document). This process is initiated based on a specific transaction ID, which should include either MetadataCreated or MetadataUpdated events. This can be particularly useful in situations where immediate caching of metadata changes is required.
 * **Parameters**: The parameters for this endpoint are provided in the body of the POST request as a valid JSON object. This includes the transaction ID and log index that is associated with the metadata event.
 
-| Name            | Description                          | Type   | Within | Required |
-| --------------- | ------------------------------------ | ------ | ------ | -------- |
-| `transactionId` | DID of the asset                     | string | path   | true     |
-| `logIndex`      | custom log index for the transaction | int    | path   | false    |
+<table><thead><tr><th>Name</th><th>Description</th><th width="100">Type</th><th width="100">Within</th><th>Required</th></tr></thead><tbody><tr><td><code>transactionId</code></td><td>DID of the asset</td><td>string</td><td>path</td><td>true</td></tr><tr><td><code>logIndex</code></td><td>custom log index for the transaction</td><td>int</td><td>path</td><td>false</td></tr></tbody></table>
 
 Here are some typical responses you might receive from the API:
 

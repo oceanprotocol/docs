@@ -1,5 +1,7 @@
 ---
-description: User guides
+description: >-
+  The definitive guides on how to do almost anything you want with Ocean
+  Protocol tech!
 cover: ../.gitbook/assets/cover/user_guides.png
 coverY: 0
 ---

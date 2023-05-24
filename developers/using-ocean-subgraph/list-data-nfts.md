@@ -16,7 +16,7 @@ There are several options available to see this query in action. Below, you will
 2. Execute the query in Python by following the code snippet.
 3. Execute the query in JavaScript by clicking on the "Run" button of the Javascript tab.
 
-_PS: In these examples, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](../ocean-subgraph/#ocean-subgraph-deployments)_._
+_PS: In these examples, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
 
 {% tabs %}
 {% tab title="Javascript" %}
