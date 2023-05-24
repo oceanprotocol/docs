@@ -1,16 +1,16 @@
 ---
 description: >-
-  If you've gotten this far, then you're well on your way to getting a blackbelt
-  in Ocean Protocol's Data Farming dApp!
+  If you've gotten this far, then you're half way to getting a black belt in
+  Ocean Protocol's Data Farming dApp! 🥋
 ---
 
-# Data Farming Background
+# Data Farming Blue Belt
 
-<figure><img src="../.gitbook/assets/please-dont-leave.gif" alt=""><figcaption><p>I know this is a lot of info, but don't run away!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/neo-kinda-martial-arts.gif" alt=""><figcaption><p>Like Neo, you have great potential.</p></figcaption></figure>
 
 Data Farming rewards OCEAN to participants as a function of consume volume and liquidity. It’s like DeFi liquidity mining, but tuned for asset consumption. Data Farming's aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, increase the growth rate.
 
-## Active Work to Drive APY
+## Max Out Your Yields
 
 Data Farming is not a wholly passive activity. The name of the game is to drive Data Consume Volume (DCV). High APYs happen only when there is sufficiently high DCV. High DCV means publishing and consuming truly useful datasets (or algorithms).
 
@@ -87,3 +87,5 @@ The amount of OCEAN released is determined by the emission schedule as defined b
 The table below cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
 
 <figure><img src="../.gitbook/assets/rewards/reward_schedule.png" alt=""><figcaption><p> <em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/please-dont-leave.gif" alt=""><figcaption><p>I know this is a lot of info, but don't run away!</p></figcaption></figure>

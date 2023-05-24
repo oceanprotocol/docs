@@ -1,8 +1,10 @@
 ---
-description: Details on the emission curves and a study on estimated APYs
+description: >-
+  Understand the emission curves and estimated APYs to earn yourself a solid
+  black belt in Data Farming understanding 🥋
 ---
 
-# Emissions & APYs
+# Emissions & APYs - Black Belt
 
 With veOCEAN, OceanDAO evolves to be more user focused, community driven, and futuristic revenue sharing like CurveDAO:
 

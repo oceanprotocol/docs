@@ -1,8 +1,10 @@
 ---
-description: Let's discuss the "ve" in veOCEAN
+description: >-
+  Let's discuss the "ve" in veOCEAN for our last jitsu before earning a black
+  belt in Data Farming knowledge!
 ---
 
-# What is veOCEAN?
+# What is veOCEAN? (Brown Belt)
 
 veOCEAN is the <mark style="color:orange;">**vote escrowed**</mark> capability of the $OCEAN token through veTokenomics model (vote-escrowed token economics). veOCEAN is used to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem. veOCEAN is architected to be staked or 'locked' for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
 

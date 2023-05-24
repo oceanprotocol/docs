@@ -1,5 +1,5 @@
 ---
-description: Your first and favorite course in Ocean Protocol's Data Farming dApp
+description: The "low down", the definitions, the deets 🧑‍🏫
 ---
 
 # Data Farming 101
