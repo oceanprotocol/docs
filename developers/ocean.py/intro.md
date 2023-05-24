@@ -38,4 +38,6 @@ To kickstart your adventure with ocean.py, we set out the following steps to get
 — or Local (Linux only)
 3. Walk through main flow 🚶‍♂️: publish asset, post for free / for sale, dispense it / buy it, and consume it
 
-After these quickstart steps, the main [README](https://github.com/oceanprotocol/ocean.py/blob/main/README.md) points to several other use cases, such as Predict-ETH, Data Farming, on-chain key-value stores (public or private), and other types of data assets (REST API, GraphQL, on-chain).
+After these quickstart steps, the main [README](https://github.com/oceanprotocol/ocean.py/blob/main/README.md) points to several other use cases, such as [Predict-ETH](https://github.com/oceanprotocol/predict-eth), [Data Farming](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/df.md),
+on-chain key-value stores ([public](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/key-value-public.md) or [private](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/key-value-private.md)), and other types of data assets ([REST API](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/publish-flow-restapi.md),
+[GraphQL](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/publish-flow-graphql.md), [on-chain](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/publish-flow-onchain.md)).
