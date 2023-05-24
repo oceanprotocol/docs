@@ -49,7 +49,7 @@
     * [Get datatokens](developers/using-ocean-subgraph/list-datatokens.md)
     * [Get datatoken information](developers/using-ocean-subgraph/get-datatoken-information.md)
     * [Get fixed-rate exchanges](developers/using-ocean-subgraph/list-fixed-rate-exchanges.md)
-    * [Get veOcean stats](developers/subgraph/get-veocean-stats.md)
+    * [Get veOCEAN stats](developers/subgraph/get-veocean-stats.md)
   * [Ocean.py](developers/ocean.py/README.md)
     * [Install](developers/ocean.py/install.md)
   * [Ocean Libraries](developers/ocean-libraries/README.md)

@@ -1,6 +1,14 @@
-# Get veOcean stats
+---
+description: 'Discover the World of veOCEAN: Retrieving a Stats'
+---
 
-If you are already familiarized with veOCEAN, you're off to a great start. However, if you need a refresher, we recommend visiting the [veOCEAN](../../rewards/veocean.md) page for a quick overview.
+# Get veOCEAN stats
+
+
+
+If you are already familiarized with veOCEAN, you're off to a great start :sunglasses:. However, if you need a refresher, we recommend visiting the [veOCEAN](../../rewards/veocean.md) page for a quick overview :mag:.
+
+On this page, you'll find a few examples to fetch the stats of veOCEANS from the Ocean Subgraph. These examples serve as a valuable starting point to help you retrieve essential information about veOCEAN. However, if you're eager to delve deeper into the topic, we invite you to visit our [GitHub](https://github.com/oceanprotocol/ocean-subgraph/blob/main/test/integration/VeOcean.test.ts) repository. There, you'll discover a wealth of additional examples, which provide comprehensive insights. Feel free to explore and expand your knowledge! :books:
 
 ### Get the total amount of locked Ocean tokens
 
@@ -106,11 +114,11 @@ query {
 
 </details>
 
-### Get the veOcean holders list
+### Get the veOCEAN holders list
 
 {% tabs %}
 {% tab title="JavaScript" %}
-You can utilize the following JavaScript code snippet to execute the query and fetch the list of veOcean holders.
+You can utilize the following JavaScript code snippet to execute the query and fetch the list of veOCEAN holders.
 
 ```runkit  nodeVersion="18.x.x"
 var axios = require('axios');
@@ -144,7 +152,7 @@ axios(config)
 {% endtab %}
 
 {% tab title="Python" %}
-You can employ the following Python script to execute the query and fetch the list of veOcean holders from the subgraph.&#x20;
+You can employ the following Python script to execute the query and fetch the list of veOCEAN holders from the subgraph.&#x20;
 
 {% code title="get_veOcean_holders.py" %}
 ```python
@@ -184,7 +192,7 @@ python get_veOcean_holders.py
 {% endtab %}
 
 {% tab title="Query" %}
-To fetch the list of veOcean holders in the Ocean Subgraph [GraphiQL](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) interface, you can use the following query:
+To fetch the list of veOCEAN holders in the Ocean Subgraph [GraphiQL](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) interface, you can use the following query:
 
 ```graphql
 query {
