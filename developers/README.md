@@ -13,7 +13,7 @@ Congratulations on making it this far! If you've arrived here, you're ready to e
 
 
 
-At the core of the Ocean Protocol, you'll find a constellation of [smart contracts](contracts/) that bring extraordinary capabilities to every data asset. Here's where the magic happens! Every asset gets its own cool and unique ERC721 data NFT, along with one (or more) ERC20 datatokens. It's like giving your data its very own superhero cape! 🦸‍♂️
+At the core of the Ocean Protocol, you'll find a constellation of [smart contracts](contracts/) that bring extraordinary capabilities to every data asset. Here's where the magic happens! Every asset gets its own cool and unique [**ERC721 data NFT**](datanft-and-datatoken.md#what-is-a-data-nft), along with one (or more) [**ERC20 datatokens**](datanft-and-datatoken.md). It's like giving your data its very own superhero cape! 🦸‍♂️
 
 These [smart contracts](contracts/) form the backbone of Ocean Protocol, empowering data assets with unparalleled value and enabling seamless integration with the wider blockchain ecosystem. Through the [contracts](contracts/), data becomes not only valuable but also tradable, allowing you to unleash the true potential of your data treasures.
 

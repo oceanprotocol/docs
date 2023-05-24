@@ -1,24 +1,48 @@
 ---
 title: Architecture Overview
-description: Data NFTs and datatokens architecture
+description: Ocean Protocol Architecture Adventure!
 ---
 
 # Architecture Overview
 
-### Overview
+Embark on a journey through the innovative world of Ocean Protocol, where data flows like waves and AI takes flight! Explore the intricate layers of our architecture, where data and services converge in a symphony of collaboration. So, let's dive in and uncover the depths of Ocean Protocol's design!🐬
 
-Here is the Ocean architecture.
+<figure><img src="../.gitbook/assets/OP High Level Architecture.jpg" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
 
-![Ocean Protocol tools architecture](../.gitbook/assets/architecture/architecture.png)
+### Layer 1: The Foundational Blockchain Layer
 
-Here’s an overview of the figure.
+At the core of Ocean Protocol lies the robust Blockchain Layer. Powered by blockchain technology, this layer ensures secure and transparent transactions. It forms the bedrock of decentralized trust, where data providers and consumers come together to trade valuable assets.&#x20;
 
-* The top layer is **applications** like Ocean Market. With these apps, users can onboard services like data, algorithms, compute-to-data into crypto (publish and mint data NFTs and datatokens), hold datatokens as assets (data wallets), discover assets, and buy/sell datatokens for a fixed or auto-determined price (data marketplaces), and use data services (spend datatokens).
-* Below are **libraries** used by the applications: Ocean.js (JavaScript library) and Ocean.py (Python library). This also includes middleware to assist discovery:
-  * **Aquarius**: Provides metadata cache for faster search by caching on-chain data into elasticsearch
-  * **Provider**: Facilitates downloading assets, DDO encryption, and communicating with `operator-service` for Compute-to-Data jobs.
-  * **The Graph**: It is a 3rd party tool that developers can utilize the libraries to build their custom applications and marketplaces.
-* The lowest level has the **smart contracts**. The smart contracts are deployed on the Ethereum mainnet and other compatible networks. Libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To see the supported networks click [here](../discover/networks/README.md).
+The [smart contracts](contracts/) are deployed on the Ethereum mainnet and other compatible [networks](../discover/networks/). The libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To explore the contracts in more depth, go ahead to the [contracts](contracts/) section.
+
+
+
+### Layer 2: The Empowering Middle Layer
+
+Above the smart contracts, you'll find essential libraries employed by applications within the Ocean Protocol ecosystem. These libraries include: [Ocean.js](ocean-libraries/), a JavaScript library, and [Ocean.py](ocean.py/), a Python library. They serve as powerful tools for developers, enabling seamless integration and interaction with the protocol.
+
+1. [Ocean.js](ocean-libraries/): Ocean.js is a robust JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building data marketplaces, and exploring data sets within a decentralized environment.&#x20;
+2. [Ocean.py](ocean.py/): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling developers to harness the power of decentralized data in their applications.&#x20;
+
+Additionally, supporting the discovery process, middleware components come into play:
+
+1. [Aquarius](aquarius/): Aquarius acts as a metadata cache, enhancing search efficiency by caching on-chain data into Elasticsearch. By accelerating metadata retrieval, Aquarius enables faster and more efficient data discovery.
+2. [Provider](provider/): The Provider component plays a crucial role in facilitating various operations within the ecosystem. It assists in asset downloading, handles [DDO](ddo-specification.md) (Decentralized Data Object) encryption, and establishes communication with the operator-service for Compute-to-Data jobs. This ensures secure and streamlined interactions between different participants.
+3. [Subgraph](subgraph/): The Subgraph is an off-chain service that utilizes GraphQL to offer efficient access to information related to datatokens, users, and balances. By leveraging the subgraph, data retrieval becomes faster compared to an on-chain query. This enhances the overall performance and responsiveness of applications that rely on accessing this information.
+
+### Layer 3: The Accessible Application Layer
+
+Here, the ocean comes alive with a vibrant ecosystem of apps, marketplaces, and more. This layer hosts a variety of user-friendly interfaces, applications, and tools, inviting data scientists and curious explorers alike to access, explore, and contribute to the ocean's treasures.&#x20;
+
+Prominently featured within this layer is [Ocean Market](../user-guides/using-ocean-market.md), a hub where data enthusiasts and industry stakeholders converge to discover, trade, and unlock the inherent value of data assets. Beyond Ocean Market, the Application Layer hosts a diverse ecosystem of specialized applications and marketplaces, each catering to unique use cases and industries. Empowered by the capabilities of Ocean Protocol, these applications facilitate advanced data exploration, analytics, and collaborative ventures, revolutionizing the way data is accessed, shared, and monetized.&#x20;
+
+
+
+### Layer 4: The Friendly Wallets
+
+At the top of the Ocean Protocol ecosystem, we find the esteemed [Web 3 Wallets](../discover/wallets.md), the gateway for users to immerse themselves in the world of decentralized data transactions. These wallets serve as the trusted companions, enabling users to seamlessly transact within the ecosystem, purchase and sell data NFTs, and acquire valuable datatokens. For a more detailed exploration of Web 3 Wallets and their capabilities, you can refer to the [wallet intro page](../discover/wallets.md).
+
+
 
 ### Data NFTs, Datatokens and Access Control Tools
 
@@ -54,7 +78,7 @@ Complementary to Ocean Market, Ocean has reference code to ease building **third
 
 Marketplaces use the Metadata of the asset for discovery. Metadata consists of information like the type of asset, name of the asset, creation date, license, etc. Each data asset can have a [decentralized identifier](https://w3c-ccg.github.io/did-spec/) (DID) that resolves to a DID document (DDO) for associated metadata. The DDO is essentially [JSON](https://www.json.org/) filling in metadata fields. For more details on working with OCEAN DIDs check out the [DID concept documentation](Identifiers-Metadata.md). The [DDO Metadata documentation](Identifiers-Metadata.md) goes into more depth regarding metadata structure.
 
-[OEP8](broken-reference) specifies Ocean metadata schema, including fields that must be filled. It’s based on the public [DataSet schema from schema.org](https://schema.org/Dataset).
+[OEP8](broken-reference/) specifies Ocean metadata schema, including fields that must be filled. It’s based on the public [DataSet schema from schema.org](https://schema.org/Dataset).
 
 Ocean uses the Ethereum mainnet and other compatible networks as an **on-chain metadata store**, i.e. to store both DID and DDO. This means that once the transaction fee is paid, there are no further expenses or devops work needed to ensure metadata availability into the future, aiding in the discoverability of data assets. It also simplifies integration with the rest of the Ocean system, which is Ethereum-based. Storage cost on Ethereum mainnet is not negligible, but not prohibitive and the other benefits are currently worth the trade-off compared to alternatives.
 
