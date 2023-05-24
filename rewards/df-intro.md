@@ -1,8 +1,12 @@
 ---
-description: An intro to Ocean Protocol's 'Data Farming' incentive mechanisms
+description: >-
+  Get a blackbelt in Ocean Protocol's Data Farming dApp just by reading our
+  docs!
 ---
 
 # Data Farming 101
+
+<figure><img src="../.gitbook/assets/the-rock-simple.gif" alt=""><figcaption></figcaption></figure>
 
 ### What is Data Farming?
 
@@ -10,21 +14,33 @@ Data Farming (DF) is Ocean Protocol's **incentive system for curating high quali
 
 (If you are familiar with 'liquidity mining', then you will find that Data Farming is similar but tuned instead for the curation of high quality assets on the Ocean Market.)
 
-### What is DCV?
-
-**Data Consume Volume (DCV)** is a metric for the total $ amount spent on purchases of Ocean Market assets, transaction fees, and more. The more Ocean Market assets are consumed (i.e. purchased), then the more OCEAN rewards are distributed.
-
-OCEAN rewards go to Data Farmers in two different ways: **passive** rewards and **active** rewards. The two reward functions produce different variable APYs.
-
 ### How is Data Farming different from Yield Farming?
 
-Unlike yield farming in DeFi, data farming has real intrinsic utility for all stakeholders: Data Farmers earn additional tokens, the protocol receives sustainable liquidity, and the users can trust the protocol's secured data assets. It's a win-win situation for all parties involved.
+Unlike yield farming in DeFi, data farming has real intrinsic utility for Ocean Protocol stakeholders: as Data Farmers determine which are the highest quality assets on the Ocean Market to purchase, then the Data Farmers earn active OCEAN rewards when these assets sell. It's this **curation of the "best" assets on the Ocean Market** that shortens the search times for those looking to shop on the Ocean Market. We also put in place an incentive system for Publishers of assets to gain **2x the rewards** in Data Farming, thus driving forward the addition of great assets on the OM.
 
-DF’s aim is to achieve a minimum supply of data for network effects to kick in, and once the network flywheel is spinning, to increase growth rate.
+### Measuring Data Farming's Success
 
-## Reward Categories
+**Data Consume Volume (DCV)** is a metric for **the total $ amount spent on purchases of Ocean Market assets**, transaction fees, and more. As Ocean Market assets are purchased (i.e. consumed), then the more OCEAN rewards are distributed to Data Farmers.
 
-Rewards are paid in OCEAN and distributed every week on Thursday as follow:
+<figure><img src="../.gitbook/assets/please-dont-leave.gif" alt=""><figcaption><p>I know this is a lot of info, but please don't leave!</p></figcaption></figure>
+
+### Passive and Active Rewards
+
+Every week OCEAN rewards are paid out to Data Farmers in two different ways: **passive** rewards and **active** rewards. The two reward functions produce different variable APYs.&#x20;
+
+#### What are Passive Rewards?
+
+Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.&#x20;
+
+<figure><img src="../.gitbook/assets/passive-income.gif" alt=""><figcaption></figcaption></figure>
+
+#### What are Active Rewards?
+
+Active rewards are OCEAN rewards paid to Data Farmers that allocate their veOCEAN tokens to Ocean Market assets. They're called Active rewards because the amount of rewards relies on the active participation of the Data Farmer to select and allocate veOCEAN to these assets. **Active rewards yield depends on the sales of allocated assets.** No sales = no rewards, so choose your favorites wisely & then allocate. Always DYOR.
+
+
+
+Each Data Farming weekly round has a pool of OCEAN rewards, and 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards.
 
 | Passive Rewards | Active Rewards |
 | --------------- | -------------- |
@@ -32,19 +48,21 @@ Rewards are paid in OCEAN and distributed every week on Thursday as follow:
 
 Active Rewards are governed and defined by the [Reward Function](df-background.md#reward-function).
 
-**Final Caveat:** We reserve the right to make reasonable changes to these plans, if unforeseen circumstances emerge.
+#### **Final Caveat**
+
+We reserve the right to make reasonable changes to these plans, if unforeseen circumstances emerge.
 
 ## How to access DF and claim rewards
 
-Please [follow this tutorial](veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
+Rewards are paid in OCEAN and distributed every week on Thursday and are claimable on the [Rewards page](https://df.oceandao.org/rewards).
 
-Otherwise, go to the DF webapp at [df.oceandao.org](df.oceandao.org) and explore Data Farming for yourself.
+Please [follow this tutorial](veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
 
 ### Where to claim?
 
 All earnings for veOCEAN token holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.
 
-Data assets for DF may be published in any [network where Ocean’s deployed in production](../discover/networks/README.md): Ethereum Mainnet, Polygon, etc.
+Data assets for DF may be published in any [network where Ocean’s deployed in production](../discover/networks/): Ethereum Mainnet, Polygon, etc.
 
 ### When to claim?
 
