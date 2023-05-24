@@ -36,7 +36,7 @@ If you're eager to use the Ocean Subgraph, here's some important information for
 | Mumbai              | [Subgraph](https://v4.subgraph.mumbai.oceanprotocol.com)    | [GraphiQL](https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)    |
 | Görli               | [Subgraph](https://v4.subgraph.goerli.oceanprotocol.com)    | [GraphiQL](https://v4.subgraph.goerli.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)    |
 
-Now that you're familiar with what the Ocean Subgraph is all about, get ready for some hands-on fun! In the following pages, we've prepared a few examples just for you. From running queries to exploring fascinating data, you'll have the chance to dive right into the Ocean Subgraph data. There, you'll find a wide range of additional code snippets and projects that showcase the power and versatility of the Ocean Subgraph. So, grab a virtual snorkel, and let's explore together!\
+Now that you're familiar with what the Ocean Subgraph is all about, get ready for some hands-on fun! In the following pages, we've prepared a few examples just for you. From running queries to exploring fascinating data, you'll have the chance to dive right into the Ocean Subgraph data. There, you'll find a wide range of additional code snippets and projects that showcase the power and versatility of the Ocean Subgraph. So, grab a virtual snorkel, and let's explore together! 🤿\
 \
 
 

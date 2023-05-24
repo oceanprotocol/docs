@@ -1,131 +1,27 @@
 ---
+description: >-
+  Your resource hub for diving deep into the core concepts, exploring main
+  components, and accessing practical examples and integration guides to unleash
+  the power of Ocean Protocol in your applications
 cover: ../.gitbook/assets/cover/developer_tutorials.png
 coverY: 0
 ---
 
-# 👨💻 👨💻 Developers
+# 👨💻 Developers
 
-## Introduction
 
-Ocean Protocol provides the next generation of open-source tools to unlock data value potential at a large scale. Ocean makes it easy to publish and consume data services on-chain.
 
-Ocean uses Data NFTs (ERC-721) and datatokens (ERC-20) smart contracts as the interface to connect data assets with blockchain and DeFi tools. Crypto wallets become data wallets, crypto exchanges become data marketplaces, DAOs for data co-ops, and more via DeFi composability.
+Congratulations on making it this far! If you've arrived here, you're ready to embark on a deep dive into the captivating concepts and groundbreaking technology that powers Ocean Protocol. Get ready to unlock the secrets of the data universe and explore the inner workings of this incredible ecosystem. 🌊&#x20;
 
-![Creating a New Data Economy](../.gitbook/assets/architecture/feature-datascience@2x.webp)
 
-The following guides are a great place to start if you are new to Ocean:
 
-* [Architecture Overview](architecture.md)
-* [Data NFTs and Datatokens](datanft-and-datatoken.md)
-* [Publish a data asset](../user-guides/marketplace-publish-data-asset.md)
-* [Download a data asset](../user-guides/marketplace-download-data-asset.md)
+In Ocean Protocol, every asset gets its own cool and unique **ERC721** **data NFT**, along with one (or more) **ERC20** **datatokens**. It's like giving your data its very own superhero cape! 🦸‍♂️
 
-## What is our Mission?
+With Ocean, crypto wallets transform into magical data wallets, where your data can roam freely and securely. Crypto exchanges? Well, they've taken on a new role as bustling data marketplaces, where you can showcase and trade your valuable data treasures. And hold on tight because DAOs are here to create epic data co-ops, where collaboration and innovation reign supreme! 🤝
 
-**To unlock data, for more equitable outcomes for users of data, using a thoughtful application of both technology and governance.**
+But wait, there's more! Ocean Protocol offers a whole bunch of tools to unleash your [data scientist](ocean.py/) superpowers or flex your [JavaScript](ocean-libraries/) skills and create the next groundbreaking dAapp (that's a decentralized App, by the way). Get ready to shake up the data world! :ocean:
 
-Society is becoming increasingly reliant on data, especially with the advent of AI. However, a small handful of organizations with both massive data assets and AI capabilities attained worrying levels of control which is a danger to a free and open society.
+Now, if you're new to the world of web3 and blockchain technologies, fear not! We've got you covered. Before diving into the depths of Ocean Protocol, we recommend starting with some introductory guides. These [guides](../user-guides/) will gently introduce you to the magical world of [web3](../discover/wallets.md) and help you understand the [basics](../discover/wallets-and-ocean-tokens.md) before you embark on your epic data-driven adventure. So let's get started, shall we?
 
-Our team and community is committed to kick-starting a New Data Economy that reaches every single person, company and device, giving power back to data owners and enabling people to capture value from data to better our world.
+<figure><img src="../.gitbook/assets/penguin-diving.gif" alt=""><figcaption></figcaption></figure>
 
-Find out more about the people building Ocean on our [site](https://oceanprotocol.com/about).
-
-## What can you do with Ocean?
-
-### Buy or Sell Data
-
-Use Ocean Market to publish and sell data, or browse and buy data. Data is published as interoperable ERC721 data NFTs & ERC20 datatokens. It's a decentralized exchange (DEX), tuned for data. The acts of publishing data, purchasing data, and consuming data are all recorded on the blockchain to make a tamper-proof audit trail.
-
-As a data scientist or AI practitioner, you can benefit from access to more data (including private data), crypto-secured provenance in data & AI training, and income opportunities for selling data and curating data.
-
-![Decentralized Exchange Marketplaces](../.gitbook/assets/architecture/feature-marketplaces@2x.webp)
-
-The following guides will help you get started with buying and selling data:
-
-* [Publish a data asset](../user-guides/marketplace-publish-data-asset.md)
-* [Download a data asset](../user-guides/marketplace-download-data-asset.md)
-* [Publishing with hosting services](../user-guides/asset-hosting/)
-
-### Build Your Own Data Market
-
-Use Ocean Protocol software tools to build your own data marketplace, by either forking [Ocean Market](https://v4.market.oceanprotocol.com/) code or building up with Ocean components.
-
-![Ocean Market Homepage](../.gitbook/assets/market/ocean-market-homepage.png)
-
-If you're interested in starting your own marketplace checkout the following guides:
-
-* [Forking Ocean Market](build-a-marketplace/forking-ocean-market.md)
-* [Customising your market](build-a-marketplace/customising-your-market.md)
-* [Deploying your market](build-a-marketplace/deploying-market.md)
-
-### Manage datatokens and data NFTs for use in DeFi
-
-Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.
-
-Use Ocean [JavaScript](https://github.com/oceanprotocol/ocean.js) or [Python](https://github.com/oceanprotocol/ocean.py) drivers to manage data NFTs and datatokens:
-
-Ocean-based apps make data asset on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
-
-![New Data on-ramp and off-ramp](../.gitbook/assets/architecture/new-ramp-on-crypto-ramp-off.webp)
-
-Data NFTs are ERC721 tokens representing the unique asset and datatokens are ERC20 tokens to access data services. Each data service gets its own data NFT and one or more type of datatokens.
-
-To access the dataset, you send 1.0 datatokens to the data provider (running Ocean Provider). To give access to someone else, send them 1.0 datatokens. That's it.
-
-Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosystem to leverage.
-
-* _Publish and access data services:_ downloadable files or compute-to-data. Use Ocean to deploy a new [ERC721](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md) and [ERC20](https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md) datatoken contract for each data service, then mint datatokens.
-* _Transfer datatokens_ to another owner (or approve & transferFrom).
-* _And more._ Use ERC20 support in [web3.js](https://web3js.readthedocs.io/), [web3.py](https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract) and Solidity to connect datatokens with crypto wallets and other DeFi services.
-
-### Compute-to-Data
-
-Ocean's "Compute-to-Data" feature enables private data to be bought & sold. You can sell compute access to privately-held data, which never leaves the data owner’s premises. Ocean-based marketplaces enable the monetization of private data while preserving privacy.
-
-Compute-to-data resolves the tradeoff between the benefits of using private data, and the risks of exposing it. It lets the data stay on-premise, yet allows 3rd parties to run specific compute jobs on it to get useful compute results like averaging or building an AI model.
-
-The most valuable data is private data — using it can improve research and business outcomes. But concerns over privacy and control make it hard to access. With Compute-to-Data, private data isn’t directly shared but rather specific access to it is granted.
-
-![Compute-to-data](../.gitbook/assets/architecture/feature-compute@2x.webp)
-
-It can be used for data sharing in science or technology contexts, or in marketplaces for selling private data while preserving privacy, as an opportunity for companies to monetize their data assets.
-
-Private data can help research, leading to life-altering innovations in science and technology. For example, more data improves the predictive accuracy of modern Artificial Intelligence (AI) models. Private data is often considered the most valuable data because it’s so hard to get at, and using it can lead to potentially big payoffs.
-
-Checkout these guides if you are aiming to get a deeper understanding on how compute-to-data works:
-
-* [Architecture](compute-to-data/compute-to-data-architecture.md)
-* [Datasets & Algorithms](compute-to-data/compute-to-data-datasets-algorithms.md)
-* [Minikube Environment](../infrastructure/compute-to-data-minikube.md)
-* [Writing Algorithms](compute-to-data/compute-to-data-algorithms.md)
-* [Private docker registry](../infrastructure/compute-to-data-docker-registry.md)
-
-## How does it work?
-
-In Ocean Protocol, each asset gets its own ERC721 **data NFT** and one(or more) ERC20 **datatokens**. This enables data wallets, data exchanges, and data co-ops by directly leveraging crypto wallets, exchanges, and more.
-
-Ocean Protocol provides tools for developers to _build data markets_, and to _manage data NFTs and datatokens_ for use in DeFi.
-
-If you are new to web3 and blockchain technologies then we suggest you first read these introductory guides:
-
-* [Wallet Basics](../discover/wallets.md)
-* [Set Up MetaMask Wallet](../discover/metamask-setup.md)
-* [Manage Your OCEAN Tokens](../discover/wallets-and-ocean-tokens.md)
-
-If ou are looking to get to grips with the inner workings of Ocean, then you'll be interested in the following guides:
-
-* [Architecture Overview](architecture.md)
-* [Data NFTs and Datatokens](datanft-and-datatoken.md)
-* [Networks](../discover/networks/)
-* [Fees](fees.md)
-* [Asset pricing](asset-pricing.md)
-* [DID & DDO](ddo-specification.md)
-* [Roles](roles.md)
-* [Set Up a Marketplace](build-a-marketplace/README.md)
-* [Compute-to-Data](compute-to-data/)
-* [Deploying components](../infrastructure/)
-* [Contributing](../contribute/)
-
-## Supporters
-
-[GitBook](https://www.gitbook.com/) is a supporter of this open source project by providing hosting for this documentation.

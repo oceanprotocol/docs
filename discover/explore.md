@@ -72,6 +72,26 @@ The following guides will help you get started with buying and selling data:
 
 <details>
 
+<summary><mark style="color:blue;">Manage datatokens and data NFTs for use in DeFi</mark><br><br>Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.</summary>
+
+Use Ocean [JavaScript](../developers/ocean-libraries/) or [Python](../developers/ocean.py/) drivers to manage data NFTs and datatokens:
+
+Ocean-based apps make data assets on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
+
+Data NFTs are ERC721 tokens representing the unique asset and datatokens are ERC20 tokens to access data services. Each data service gets its own data NFT and one or more type of datatokens.
+
+To access the dataset, you send 1.0 datatokens to the data provider (running Ocean Provider). To give access to someone else, send them 1.0 datatokens. That's it.
+
+Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosystem to leverage.
+
+* _Publish and access data services:_ downloadable files or compute-to-data. Use Ocean to deploy a new [ERC721](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md) and [ERC20](https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md) datatoken contract for each data service, then mint datatokens.
+* _Transfer datatokens_ to another owner (or approve & transferFrom).
+* _And more._ Use ERC20 support in [web3.js](https://web3js.readthedocs.io/), [web3.py](https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract) and Solidity to connect datatokens with crypto wallets and other DeFi services.
+
+</details>
+
+<details>
+
 <summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-background.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
 
 Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.
