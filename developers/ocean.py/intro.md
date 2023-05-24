@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 <img src="https://github.com/oceanprotocol/art/blob/main/splashes/ocean_py.png?raw=true" width="300"/>
 </h1>
 
-## Intro 🎬
+# Intro 🎬
 
 🔍🤔 Calling all data wizards! Are you a curious data scientist 🧙‍♀️ who's heard whispers about Web3 and blockchain, but don't know where to dive in? Have you invented a mind-blowing AI algorithm and want to turn it into 💰 gold? Maybe you're training an LLM (Lusciously Lucrative Model) and want to specify the terms for your data's licensing 📜. Or hey, you just want to sell your data without giving up your privacy 🕵️‍♂️ or control 🚫🙅‍♂️.
 
