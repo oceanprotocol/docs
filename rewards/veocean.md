@@ -8,6 +8,8 @@ veOCEAN is the vote escrowed capability of the $OCEAN token through veTokenomics
 
 Holders of veOCEAN can use it to vote on proposals or delegate their voting power to other stakeholders. Additionally, there are be other benefits associated with holding and staking veOCEAN, such as access to passive & active rewards in data farming or discounts on fees within the network.
 
+[Here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN. Note, it is similar to Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code.&#x20;
+
 **WARNING:** You will not be able to retrieve your original OCEAN deposit until the lock ends.
 
 ## What can I do with veOCEAN?

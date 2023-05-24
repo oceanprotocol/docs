@@ -1,7 +1,5 @@
 ---
-description: >-
-  Get a blackbelt in Ocean Protocol's Data Farming dApp just by reading our
-  docs!
+description: Get a blackbelt in Ocean Protocol's Data Farming dApp by reading our docs!
 ---
 
 # Data Farming 101
@@ -38,7 +36,9 @@ Passive rewards are the OCEAN rewards paid to Data Farmers just for locking thei
 
 Active rewards are OCEAN rewards paid to Data Farmers that allocate their veOCEAN tokens to Ocean Market assets. They're called Active rewards because the amount of rewards relies on the active participation of the Data Farmer to select and allocate veOCEAN to these assets. **Active rewards yield depends on the sales of allocated assets.** No sales = no rewards, so choose your favorites wisely & then allocate. Always DYOR.
 
+Active Rewards are governed and defined by the [Reward Function](df-background.md#reward-function).
 
+#### Divvying Up the Goods
 
 Each Data Farming weekly round has a pool of OCEAN rewards, and 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards.
 
@@ -46,39 +46,34 @@ Each Data Farming weekly round has a pool of OCEAN rewards, and 50% of the pool 
 | --------------- | -------------- |
 | 50%             | 50%            |
 
-Active Rewards are governed and defined by the [Reward Function](df-background.md#reward-function).
+<figure><img src="../.gitbook/assets/just-publish.gif" alt=""><figcaption><p>Publishing makes you even more OCEAN rewards</p></figcaption></figure>
 
-#### **Final Caveat**
+### Publisher Rewards - 2x Stake
 
-We reserve the right to make reasonable changes to these plans, if unforeseen circumstances emerge.
+Data Farming strongly incentivizes publishing assets on the Ocean Market.
 
-## How to access DF and claim rewards
+_All the veOCEAN a publisher has allocated to an asset they’ve published (i.e. staked) is treated as **2x the stake for rewards calculation.**_
 
-Rewards are paid in OCEAN and distributed every week on Thursday and are claimable on the [Rewards page](https://df.oceandao.org/rewards).
+1. As a staker, due to their staked veOCEAN on their own assets (1x).
+2. As a publisher, for having veOCEAN staked on their own asset(1x).
 
-Please [follow this tutorial](veOcean-Data-Farming-Tutorial.md) to learn how the Ocean Protocol reward programs work, and how to access them.
+The final reward is then calculated and bundled together to be distributed.
 
-### Where to claim?
+You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
 
-All earnings for veOCEAN token holders are claimable on the ”Rewards” page inside the Data Farming webapp on Ethereum mainnet.
+### Where do I get my Data Farming rewards?
 
-Data assets for DF may be published in any [network where Ocean’s deployed in production](../discover/networks/): Ethereum Mainnet, Polygon, etc.
+All OCEAN rewards for Data Farming are claimable on the [Rewards page](https://df.oceandao.org/rewards) of the Data Farming webapp on Ethereum mainnet.
 
-### When to claim?
+### When can I get my Data Farming rewards?
 
-Yield rewards are distributed weekly, every Thursday. Users can choose to claim every week, or wait many weeks to accumulate before claiming. (It’s all on-chain.)
+OCEAN rewards are distributed on Thursday every week. Data Farmers may claim rewards every week, or wait many weeks to accumulate before claiming. (It’s all on-chain.)
 
-### When to do a first claim?
+For your first time claiming rewards, **you must wait at least one entire week** from Thursday and up to two weeks, to be able to claim rewards.&#x20;
 
-From the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards.
+## Data Farming Main
 
-The nerdy version: if you lock OCEAN on day x, you’ll be able to claim rewards on the first weekly ve “epoch” that begins after day x+7.
-
-This behavior is inherited from [veCRV](https://curve.readthedocs.io/dao-fees.html); [here’s the code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256).
-
-## DF Main
-
-[DF Main](https://blog.oceanprotocol.com/ocean-data-farming-main-is-here-49c99602419e) started Mar 16, 2023 in DF Round 29. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
+[DF Main](https://blog.oceanprotocol.com/ocean-data-farming-main-is-here-49c99602419e) started on Mar 16, 2023 in DF Round 29 after graduating from the alpha and beta testing phases. DF29 has 150K OCEAN rewards available (a 2x increase from DF28). As DF Main progresses, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time.
 
 As of DF29 (Mar 16, 2023), wash consuming is not profitable. So, organically-generated Data Consume Volume is the main driver of active DF rewards.
 
@@ -107,16 +102,3 @@ At the bottom-end, this eliminates some potential free-rider issues and smooths 
 ![Ranked Rewards](images/ranked\_rewards\_study.png)
 
 You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
-
-## Publisher Rewards - 2x Stake
-
-DF gives stronger incentives to publish data services, as follows.
-
-_All the veOCEAN a publisher has allocated to an asset they’ve published (“staked”) is treated as 2x the stake for rewards calculation._
-
-1. As a staker, due to their staked veOCEAN on their own assets (1x).
-2. As a publisher, for having veOCEAN staked on their own asset(1x).
-
-The final reward is then calculated and bundled together to be distributed.
-
-You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
