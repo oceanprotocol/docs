@@ -6,7 +6,7 @@ description: >-
 
 # DF "ve" in veOCEAN (Brown Belt)
 
-<figure><img src="../.gitbook/assets/neo-blocking.gif" alt=""><figcaption><p>Rolling with Data Farming is starting to be effortless.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
 
 veOCEAN is the <mark style="color:orange;">**vote escrowed**</mark> capability of the $OCEAN token through veTokenomics model (vote-escrowed token economics). veOCEAN is used to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem. veOCEAN is architected to be staked or 'locked' for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
 
