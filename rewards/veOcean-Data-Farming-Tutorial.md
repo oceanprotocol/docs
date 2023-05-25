@@ -25,11 +25,3 @@ Our [User Guides](../user-guides/) get you started Data Farming quickly to do th
 ### Not much of a reader? Watch and learn, friend
 
 {% embed url="https://youtu.be/zAQlPHkK3og" %}
-
-#### Linear Decay
-
-**Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
-
-### Withdrawal
-
-After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
