@@ -50,7 +50,7 @@ description: How to publish a C2D algorithm NFT on the Ocean Market
 
 * Your preview should look like the following:
 
-<figure><img src="../../.gitbook/assets/c2d/preview-publish.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/c2d/preview-publish (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Step 8 - Submit the transactions
 

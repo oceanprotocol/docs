@@ -17,16 +17,26 @@ The [smart contracts](contracts/) are deployed on the Ethereum mainnet and other
 
 ### Layer 2: The Empowering Middle Layer
 
-Above the smart contracts, you'll find essential libraries employed by applications within the Ocean Protocol ecosystem. These libraries include [Ocean.js](ocean-libraries/), a JavaScript library, and [Ocean.py](ocean.py/), a Python library. They serve as powerful tools for developers, enabling seamless integration and interaction with the protocol.
+Above the smart contracts, you'll find essential [libraries](architecture.md#libraries) employed by applications within the Ocean Protocol ecosystem, the [middleware components](architecture.md#middleware-components), and [Compute-to-Data](architecture.md#compute-to-data).
+
+#### Libraries
+
+These libraries include [Ocean.js](ocean-libraries/), a JavaScript library, and [Ocean.py](ocean.py/), a Python library. They serve as powerful tools for developers, enabling integration and interaction with the protocol.
 
 1. [Ocean.js](ocean-libraries/): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building data marketplaces, and exploring data sets within a decentralized environment.&#x20;
-2. [Ocean.py](ocean.py/): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling developers to harness the power of decentralized data in their applications.&#x20;
+2. [Ocean.py](ocean.py/): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers and [data scientists](../data-science/) can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling you to harness the power of decentralized data.
+
+#### Middleware components
 
 Additionally, supporting the discovery process, middleware components come into play:
 
 1. [Aquarius](aquarius/): Aquarius acts as a metadata cache, enhancing search efficiency by caching on-chain data into Elasticsearch. By accelerating metadata retrieval, Aquarius enables faster and more efficient data discovery.
 2. [Provider](provider/): The Provider component plays a crucial role in facilitating various operations within the ecosystem. It assists in asset downloading, handles [DDO](ddo-specification.md) (Decentralized Data Object) encryption, and establishes communication with the operator-service for Compute-to-Data jobs. This ensures secure and streamlined interactions between different participants.
 3. [Subgraph](subgraph/): The Subgraph is an off-chain service that utilizes GraphQL to offer efficient access to information related to datatokens, users, and balances. By leveraging the subgraph, data retrieval becomes faster compared to an on-chain query. This enhances the overall performance and responsiveness of applications that rely on accessing this information.
+
+#### Compute-to-Data
+
+[Compute-to-Data](compute-to-data/) (C2D) represents a groundbreaking paradigm within the Ocean Protocol ecosystem, revolutionizing the way data is processed and analyzed. With C2D, the traditional approach of moving data to the computation is inverted, ensuring privacy and security. Instead, algorithms are securely transported to the data sources, enabling computation to be performed locally, without the need to expose sensitive data. This innovative framework facilitates collaborative data analysis while preserving data privacy, making it ideal for scenarios where data owners want to retain control over their valuable assets. C2D provides a powerful tool for enabling secure and privacy-preserving data analysis and encourages collaboration among data providers, ensuring the utilization of valuable data resources while maintaining strict privacy protocols.
 
 ### Layer 3: The Accessible Application Layer
 
