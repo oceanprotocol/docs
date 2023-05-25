@@ -48,7 +48,7 @@ At the top-end, this helps increase quality and diversification of inventory.
 
 At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
 
-![Ranked Rewards](images/ranked\_rewards\_study.png)
+![Ranked Rewards](../.gitbook/assets/rewards/ranked_rewards_study.png)
 
 You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
