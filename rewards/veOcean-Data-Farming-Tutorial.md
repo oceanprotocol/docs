@@ -1,8 +1,10 @@
 ---
-description: Follow this step-by-step guide to get OCEAN rewards.
+description: Learn the moves to kick a** Data Farming
 ---
 
-# Rewards Tutorial
+# DF Basic Actions (Blue Belt)
+
+<figure><img src="../.gitbook/assets/neo-blocking.gif" alt=""><figcaption></figcaption></figure>
 
 There are two types of OCEAN rewards: passive and active rewards. OCEAN token holders may generate passive OCEAN rewards by locking up OCEAN in exchange for veOCEAN tokens. veOCEAN tokens can then be allocated to Ocean Market datasets and algorithms to generate active OCEAN rewards.
 
