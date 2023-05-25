@@ -24,8 +24,8 @@ url = "https://raw.githubusercontent.com/trentmc/branin/main/branin.arff"
 
 #print
 print("Just published asset:")
-print(f"  data_nft: symbol={data_nft.symbol}, address={data_nft.address}")
-print(f"  datatoken: symbol={datatoken.symbol}, address={datatoken.address}")
+print(f"  data_nft: symbol={data_nft.symbol()}, address={data_nft.address}")
+print(f"  datatoken: symbol={datatoken.symbol()}, address={datatoken.address}")
 print(f"  did={ddo.did}")
 ```
 
