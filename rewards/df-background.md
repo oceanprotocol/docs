@@ -4,9 +4,9 @@ description: >-
   Ocean Protocol's Data Farming dApp! 🥋
 ---
 
-# Data Farming (Blue Belt)
+# DF Max Out Yield (Purple Belt)
 
-<figure><img src="../.gitbook/assets/neo-kinda-martial-arts.gif" alt=""><figcaption><p>Like Neo, you have great potential.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dngerous.</p></figcaption></figure>
 
 ## How to Maximize Your Yield
 

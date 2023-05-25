@@ -4,7 +4,7 @@ description: Learn the basic moves to start kicking a** Data Farming
 
 # DF Basic Actions (Blue Belt)
 
-<figure><img src="../.gitbook/assets/neo-blocking.gif" alt=""><figcaption><p>Learning how to roll with the punches</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/neo-kinda-martial-arts.gif" alt=""><figcaption><p>Like Neo, you have great potential.</p></figcaption></figure>
 
 ## Get Started
 
