@@ -6,7 +6,7 @@ description: >-
 
 # DF Max Out Yield (Purple Belt)
 
-<figure><img src="../.gitbook/assets/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dngerous.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
 ## How to Maximize Your Yield
 

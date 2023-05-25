@@ -1,5 +1,5 @@
 ---
-description: The "low down", the definitions, the deets 🧑‍🏫
+description: Learn the fundamentals of The Way of Data Farming 🧑‍🏫
 ---
 
 # Data Farming 101 (White Belt)
