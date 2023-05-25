@@ -46,6 +46,48 @@ console.log(response)
 * **Responses**:
   * **200**: This is a successful HTTP response code. It returns a bytes string containing the decrypted document.
 
+#### Javascript Example
+
+```
+const axios = require('axios');
+
+async function decryptAsset(payload) {
+    // Define the base URL of the services.
+    const SERVICES_URL = "<BASE URL>"; // Replace with your base services URL.
+
+    // Define the endpoint.
+    const endpoint = `${SERVICES_URL}/api/services/decrypt`;
+
+    try {
+        // Send a POST request to the endpoint with the payload in the request body.
+        const response = await axios.post(endpoint, payload);
+
+        // Check the response.
+        if (response.status !== 200) {
+            throw new Error(`Response status code is not 200: ${response.data}`);
+        }
+
+        // Use the response data here.
+        console.log(response.data);
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+// Define the payload.
+let payload = {
+    "decrypterAddress": "<DECRYPTER ADDRESS>", // Replace with your decrypter address.
+    "chainId": "<CHAIN ID>", // Replace with your chain ID.
+    "transactionId": "<TRANSACTION ID>", // Replace with your transaction ID.
+    "dataNftAddress": "<DATA NFT ADDRESS>", // Replace with your Data NFT Address.
+};
+
+// Run the function.
+decryptAsset(payload);
+
+```
+
 
 
 Example response:
