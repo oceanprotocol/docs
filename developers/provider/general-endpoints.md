@@ -59,6 +59,19 @@ Example response:
 
 #### Javascript Example
 
+```runkit  nodeVersion="18.x.x"
+const axios = require('cross-fetch')
+
+const data = "test"
+const response = await fetch('https://v4.provider.oceanprotocol.com/api/services/encrypt?chainId=1', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/octet-stream' }
+      })
+console.log(response)   
+
+```
+
 ### Download
 
 * **Endpoint**: `GET /api/services/download`
@@ -73,6 +86,56 @@ Example response:
 * **Purpose**: This endpoint is used to retrieve the attached asset files. It returns a file stream of the requested file.
 * **Responses**:
   * **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returned the file stream.
+
+#### Javascript Example
+
+Before calling the `/download` endpoint, there are several steps to take:&#x20;
+
+1. You need to set up and connect a wallet for the consumer. The consumer needs to have purchased the datatoken for the asset that you are trying to download. Libraries such as ocean.js or ocean.py can be used for this.
+2. Get the nonce. This can be done by calling the `/getnonce` endpoint above.
+3. Sign a message from the account that has purchased the datatoken.&#x20;
+4. Add the nonce and signature to the payload.
+
+```
+const axios = require('axios');
+
+async function downloadAsset(payload) {
+    // Define the base URL of the services.
+    const SERVICES_URL = "<BASE URL>"; // Replace with your base services URL.
+
+    // Define the endpoint.
+    const endpoint = `${SERVICES_URL}/api/services/download`;
+
+    try {
+        // Send a GET request to the endpoint with the payload as query parameters.
+        const response = await axios.get(endpoint, { params: payload });
+
+        // Check the response.
+        if (response.status !== 200) {
+            throw new Error(`Response status code is not 200: ${response.data}`);
+        }
+
+        // Use the response data here.
+        console.log(response.data);
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+// Define the payload.
+let payload = {
+    "documentId": "<DOCUMENT ID>", // Replace with your document ID.
+    "serviceId": "<SERVICE ID>", // Replace with your service ID.
+    "consumerAddress": "<CONSUMER ADDRESS>", // Replace with your consumer address.
+    "transferTxId": "<TX ID>", // Replace with your transfer transaction ID.
+    "fileIndex": 0
+};
+
+// Run the function.
+downloadAsset(payload);
+
+```
 
 ### Initialize
 
