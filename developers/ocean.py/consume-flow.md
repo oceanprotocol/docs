@@ -16,6 +16,8 @@ Below, we show four possible approaches:
 * C is when Alice wants to share access for free, to anyone
 * D is when Alice wants to sell access
 
+<figure><img src="../../.gitbook/assets/giphy.webp" alt="" width="199"><figcaption></figcaption></figure>
+
 In the same Python console:
 
 ```python
@@ -50,8 +52,6 @@ exchange.buy_DT(to_wei(1), consume_market_fee=0, tx_dict={"from": bob})
 ```
 
 For more info, see [Appendix: Dispenser / Faucet Details](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/main-flow.md#appendix-faucet-details) and [Exchange Details](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/main-flow.md#appendix-exchange-details).
-
-<figure><img src="../../.gitbook/assets/giphy.webp" alt="" width="199"><figcaption><p>Bob after getting funds</p></figcaption></figure>
 
 ### Consume the asset ⬇️
 
