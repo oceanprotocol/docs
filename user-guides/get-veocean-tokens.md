@@ -26,8 +26,10 @@ In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens
 
 ### Where the rubber meets the road 🚗💨
 
+Not much of a reader? Watch and learn, friend
+
 {% embed url="https://www.youtube.com/watch?v=zAQlPHkK3og" fullWidth="false" %}
-Watch our turorial or read, it's your choice!
+Watch and learn, friend
 {% endembed %}
 
 **Step 3 - Go to Ocean Protocol's Data Farming dapp**
