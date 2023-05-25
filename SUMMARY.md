@@ -53,6 +53,7 @@
     * [Get veOCEAN stats](developers/subgraph/get-veocean-stats.md)
   * [Ocean.py](developers/ocean.py/README.md)
     * [Install](developers/ocean.py/install.md)
+    * [Publish flow](developers/ocean.py/publish-flow.md)
   * [Ocean Libraries](developers/ocean-libraries/README.md)
     * [Configuration](developers/using-ocean-libraries/configuration.md)
     * [Creating a data NFT](developers/using-ocean-libraries/creating-datanft.md)
