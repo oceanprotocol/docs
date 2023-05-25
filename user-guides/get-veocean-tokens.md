@@ -1,8 +1,10 @@
 ---
-description: Learn how to get veOCEAN tokens to use the Data Farming dapp  🧑‍🌾🥕
+description: >-
+  Get veOCEAN tokens to use the Data Farming dapp and make passive yield!
+  🧑‍🌾🥕
 ---
 
-# Get veOCEAN Tokens
+# Get Started Data Farming
 
 <figure><img src="../.gitbook/assets/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 

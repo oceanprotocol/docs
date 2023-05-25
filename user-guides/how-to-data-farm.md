@@ -1,8 +1,8 @@
 ---
-description: How to capitalize with Ocean Protocol's Data Farming dApp
+description: Make extra dosh with active rewards yield in Data Farming
 ---
 
-# How to Data Farm
+# Harvest More Yield Data Farming
 
 <figure><img src="../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
 

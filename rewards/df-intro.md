@@ -56,3 +56,4 @@ You can read more about the implementation [in this blog post](https://blog.ocea
 
 ## [GET STARTED DATA FARMING HERE.](https://df.oceandao.org)
 
+Our [guides](../user-guides/) will show you how to do the basics.
