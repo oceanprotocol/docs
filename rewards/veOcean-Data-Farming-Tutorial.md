@@ -1,5 +1,5 @@
 ---
-description: Learn the moves to kick a** Data Farming
+description: Learn the basic moves to start kicking a** Data Farming
 ---
 
 # DF Basic Actions (Blue Belt)
@@ -8,7 +8,7 @@ description: Learn the moves to kick a** Data Farming
 
 ## Get Started
 
-Our [User Guides](../user-guides/) get you started Data Farming and performing the basic operations. Follow these guides to earn your blue belt in Data Farming understanding.
+Our [User Guides](../user-guides/) get you started Data Farming quickly to do the basic operations. Follow these guides to earn your blue belt in Data Farming understanding.
 
 {% content-ref url="../user-guides/get-veocean-tokens.md" %}
 [get-veocean-tokens.md](../user-guides/get-veocean-tokens.md)
