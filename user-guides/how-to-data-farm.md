@@ -6,7 +6,7 @@ description: Make extra dosh with active rewards yield in Data Farming
 
 <figure><img src="../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
 
-The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating high quality datasets and algorithms on the Ocean Market. The way that users curate high quality assets on the Ocean Market is by allocating veOCEAN to them using the Data Farming dApp. We'll show you how!
+The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating valuable assets on the Ocean Market. The way that users curate assets is by **allocating veOCEAN** to them using the Data Farming dApp. We'll show you how!
 
 #### Step 1 - Navigate to the Data Farming dApp
 
@@ -34,4 +34,4 @@ The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for
 
 <figure><img src="../.gitbook/assets/update-allocations.png" alt=""><figcaption><p>Click the Update Allocations button</p></figcaption></figure>
 
-#### That's it! You've successfully allocated (aka "voted on") your favorite assets on the Ocean Market using your veOCEAN tokens. Now, just wait until next Thursday to see if you can claim any OCEAN rewards on the Active Rewards section of the Rewards page for your portion of the assets' sales.&#x20;
+That's it! You've successfully allocated (aka "voted on") your favorite assets on the Ocean Market using your veOCEAN tokens and are generating active rewards yield. Now, just wait until next Thursday to see if you can [claim any OCEAN rewards](claim-ocean-rewards.md) on the Active Rewards section of the [Rewards page](https://df.oceandao.org/rewards) for your portion of the assets' sales. Remember that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!

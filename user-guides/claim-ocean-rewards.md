@@ -2,7 +2,7 @@
 description: How to claim OCEAN token rewards from data farming 🧑‍🌾🥕
 ---
 
-# Claim OCEAN Rewards
+# Claim Rewards Data Farming
 
 <figure><img src="../.gitbook/assets/underwater-treasure.gif" alt=""><figcaption></figcaption></figure>
 
@@ -24,4 +24,10 @@ This is where you click to claim your rewards! Easy peasy. You will need to appr
 
 <figure><img src="../.gitbook/assets/rewards/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
 
-#### Note: If you forget to claim your OCEAN rewards, then do not worry because they continue to accumulate! You can claim them after Thursday. 😃
+### FIRST TIME CLAIMING?
+
+You will need to wait at least one week, but not more than two weeks to claim your rewards for the first time. Check back on Thursday!
+
+### FORGOT TO CLAIM?
+
+If you forget to claim your OCEAN rewards, then do not worry because they continue to accumulate! You can claim them anytime after Thursday. 😃

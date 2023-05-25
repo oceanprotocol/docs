@@ -8,7 +8,7 @@ description: The "low down", the definitions, the deets 🧑‍🏫
 
 ### What is Data Farming?
 
-Data Farming (DF) is Ocean Protocol's **incentive system for curating high quality assets on the Ocean Market.** Participants vote on the Ocean Market assets that they believe are high quality and likely to sell. If they are right, then these Data Farmers **get a portion of the Ocean Market sales of the assets** they voted on!
+Data Farming (DF) is Ocean Protocol's **incentive system for curating and publishing valuable assets on the Ocean Market.** Participants vote on the Ocean Market assets that they believe are high quality and likely to sell. If they are right, then these Data Farmers **get a portion of the Ocean Market sales of the assets** they voted on!
 
 (If you are familiar with 'liquidity mining', then you will find that Data Farming is similar but tuned instead for the curation of high quality assets on the Ocean Market.)
 
@@ -56,4 +56,4 @@ You can read more about the implementation [in this blog post](https://blog.ocea
 
 ## [GET STARTED DATA FARMING HERE.](https://df.oceandao.org)
 
-Our [guides](../user-guides/) will show you how to do the basics.
+### Unsure how? Our [guides](../user-guides/) will show you how to do the basics.

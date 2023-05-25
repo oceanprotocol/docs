@@ -1,20 +1,20 @@
 ---
-description: >-
-  Get veOCEAN tokens to use the Data Farming dapp and make passive yield!
-  🧑‍🌾🥕
+description: Get veOCEAN tokens to use the Data Farming dApp and make yield! 🧑‍🌾🥕
 ---
 
 # Get Started Data Farming
 
+### What the \*@$! is Data Farming?
+
+[Data Farming](https://df.oceandao.org) is our dApp that generates yield for participants that curate and publish valuable assets on the [Ocean Market](https://market.oceanprotocol.com).&#x20;
+
 <figure><img src="../.gitbook/assets/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
-### What is veOCEAN? 🌊
+### What is veOCEAN and why do you want it? 🌊
 
-veOCEAN is a 'voting escrowed' token used in Ocean Protocol's Data Farming dapp to **generate passive and active OCEAN token rewards**. [Data Farming](https://df.oceandao.org) is our dApp to incentivize the publishing and curation of high quality assets on the [Ocean Market](https://market.oceanprotocol.com). Are you curious to learn more about Data Farming or you're a visual learner? Check out our video tutorial below!
+In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens first! When you lock your OCEAN tokens, you get **veOCEAN tokens** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **weekly active OCEAN rewards**, for allocating your veOCEAN tokens to your favorite assets and get a portion of their Ocean Market sales!
 
-{% embed url="https://www.youtube.com/watch?v=zAQlPHkK3og" %}
-
-### How to Get veOCEAN
+### Don't have OCEAN tokens yet? Get those first!
 
 #### **Step 1 - Get OCEAN tokens**
 
@@ -24,7 +24,13 @@ veOCEAN is a 'voting escrowed' token used in Ocean Protocol's Data Farming dapp 
 
 * Send your OCEAN tokens to a self-custody wallet of yours that supports ERC-20 tokens, like Metamask for example.
 
-#### **Step 3 - Go to Ocean Protocol's Data Farming dapp**
+### Where the rubber meets the road 🚗💨
+
+{% embed url="https://www.youtube.com/watch?v=zAQlPHkK3og" fullWidth="false" %}
+Watch our turorial or read, it's your choice!
+{% endembed %}
+
+**Step 3 - Go to Ocean Protocol's Data Farming dapp**
 
 * Go to [https://df.oceandao.org/](https://df.oceandao.org/)
 
@@ -44,4 +50,4 @@ In this step you will:
 * Click the “Create Lock” button.
 * Accept the transaction in your wallet.
 
-Congratulations! You have now locked your OCEAN tokens for veOCEAN tokens.
+Congratulations! You have now locked your OCEAN tokens for veOCEAN tokens and are generating passive yield automatically. You can [claim your passive OCEAN rewards](claim-ocean-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
