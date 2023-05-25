@@ -4,7 +4,7 @@ description: The "low down", the definitions, the deets 🧑‍🏫
 
 # Data Farming 101 (White Belt)
 
-<figure><img src="../.gitbook/assets/morpheus.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
 
 ### What is Data Farming?
 
