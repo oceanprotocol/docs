@@ -9,10 +9,12 @@ description: >-
 
 <figure><img src="../.gitbook/assets/neo-bb.gif" alt=""><figcaption><p>Like a true master of The Way of Data Farming.</p></figcaption></figure>
 
-With veOCEAN, OceanDAO evolves to be more user focused, community driven, and futuristic revenue sharing like CurveDAO:
+### Why veOCEAN is important to OceanDAO
 
-* ve (vote-escrowed) is at the heart with v = voting (in asset curation) and e = escrowed (locked) OCEAN. The longer the lockup, the more voting and rewards, which reconciles near and long-term DAO incentives.
-* The DAO has increased bias to automation, and to minimizing the governance attack surface.
+veOCEAN enables OceanDAO to be more user-focused, community-driven, and futuristic revenue-sharing like CurveDAO:
+
+* ve (vote escrowed) is at the heart with v = voting (in asset curation) and e = escrowed (locked) OCEAN. The longer that Data Farmers lockup their OCEAN, the more voting and rewards, which reconciles near and long-term DAO incentives.
+* OceanDAO has an increased bias to automation and to minimizing the governance attack (hack) surface via veOCEAN.
 
 The baseline emissions schedule determines the weekly OCEAN budget for this phase. The schedule mimics Bitcoin when including a half-life of 4 years. Unlike Bitcoin, there is a burn-in period to ratchet up value-at-risk versus time:
 
@@ -31,7 +33,7 @@ The image below shows the first 5 years. The y-axis is OCEAN released each week.
 
 <figure><img src="../.gitbook/assets/rewards/emissions_first_5years.png" alt="" width="540"><figcaption><p><em>OCEAN released to DF per week — first 5 years</em></p></figcaption></figure>
 
-## Emissions — First 20 years.
+## Emissions — first 20 years.
 
 The image below is like the previous one: OCEAN released per week, but now for the first 20 years. Week 131 onwards is DF Main 4. We can see that the y-value divides by two (“halvens”) every four years.
 
