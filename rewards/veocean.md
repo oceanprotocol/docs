@@ -8,34 +8,48 @@ description: >-
 
 <figure><img src="../.gitbook/assets/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
 
-veOCEAN is the <mark style="color:orange;">**vote escrowed**</mark> capability of the $OCEAN token through veTokenomics model (vote-escrowed token economics). veOCEAN is used to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem. veOCEAN is architected to be staked or 'locked' for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
+### What does the "ve" in veOCEAN stand for?
 
-Holders of veOCEAN can use it to vote on proposals or delegate their voting power to other stakeholders. Additionally, there are be other benefits associated with holding and staking veOCEAN, such as access to passive & active rewards in data farming or discounts on fees within the network.
+"ve" stands for <mark style="color:orange;">**vote escrowed**</mark>. And the "vote" part of "ve" and veOCEAN is what you really need to pay attention to in order to truly understand the function of this token.
 
-[Here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN. Note, it is similar to Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code.&#x20;
+You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farming dApp, the intended use is to **vote on your favorite assets** on the Ocean Market!
 
-**WARNING:** You will not be able to retrieve your original OCEAN deposit until the lock ends.
+When you vote on assets that sell, then **you get a portion of the sales**!
 
-## What can I do with veOCEAN?
+You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/farms).
 
-veOCEAN allows you to engage with different protocol mechanisms and benefit from the reward programs available.
+### The Superpowers of veOCEAN
+
+veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefit from the reward programs available.
 
 4 key utility functionalities of veOCEAN:
 
-1. **Holding it** veOCEAN pays **Passive Rewards** every week.
-2. **Allocating it** veOCEAN pays **Active Rewards** every week to the top performing Datasets, Algorithms, dApps, and more.
+1. **Holding it** veOCEAN pays **Passive OCEAN Rewards** every week.
+2. **Allocating it** veOCEAN pays **Active OCEAN Rewards** every week to the top selling assets on the Ocean Market.
 3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
-4. **2x Publisher Stake** If you are a publisher to the Ocean marketplace, allocating veOCEAN to your own Dataset gives your veOCEAN a 2x Bonus. This is an incentive for publishers to engage with their assets and benefit from from the protocol further.
+4. **2x Publisher Stake** If you are a publisher on the Ocean Market, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets on the Ocean Market further.
 
-## veOCEAN holders retain earnings from two sources: **Active & Passive Rewards**
+### Where the heck did we get this idea from?
 
-### Active Rewards from Community Fees
+The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired by Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code. We took this inspiration to enable our users to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem.
 
-Every transaction in Ocean Market and Ocean Protocol backend infrastructure generates transaction fees, some of which are distributed to the community. 50% of the community fees will go to veOCEAN holders, 50% will rest and allocate to Ocean community-oriented traction programs.
+We'll get to that "on-chain governance" bit in a second. But first, [here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to  [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
 
-### Passive Rewards from Data Farming
+### DYOR!
 
-veOCEAN holders will each get weekly DF rewards allocation, except a small carveout for any Data Challenge initiatives that may run through DF ops.
+veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
+
+So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
+
+### The Nitty Gritty of **Active & Passive Rewards**
+
+#### Active Rewards from Community Fees
+
+Every transaction in Ocean Market and Ocean Protocol backend infrastructure generates transaction fees, some of which are distributed to the community. 50% of the community fees goes to veOCEAN holders, 50% goes to the Ocean Protocol Foundation's community-oriented traction programs.
+
+#### Passive Rewards from Data Farming
+
+veOCEAN holders will each get weekly Data Farming rewards allocation, except a small carveout for any Data Challenge initiatives that may run through DF ops.
 
 **veOCEAN holders can be passive, though they are incentivized with larger real yield if active participant.**
 
