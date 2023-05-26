@@ -6,7 +6,7 @@ description: Learn the basic moves to start kicking a** Data Farming
 
 <figure><img src="../.gitbook/assets/neo-kinda-martial-arts.gif" alt=""><figcaption><p>Like Neo, you have great potential.</p></figcaption></figure>
 
-## Get Started
+### Get Started
 
 Our [User Guides](../user-guides/) get you started Data Farming quickly to do the basic operations. Follow these guides to earn your blue belt in Data Farming understanding.
 

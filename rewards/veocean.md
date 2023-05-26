@@ -78,7 +78,7 @@ After choosing your lock period and locking up your OCEAN into the vault, you wi
 
 veOCEAN is non-transferable. You can’t sell it or send it to other addresses.
 
-## Linear Decay
+### Linear Decay
 
 Your veOCEAN balance will slowly start declining as soon as you receive it.
 
@@ -101,13 +101,13 @@ At the end of your 4 years, your OCEAN is unlocked.
 
 **Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
 
-## Replenishing your veOCEAN
+### Replenishing your veOCEAN
 
 You can choose to update your lock and replenish your veOCEAN balance at any time.
 
 To maximize rewards, participants would need to update their 4-year lock every week in order to maintain their veOCEAN balance as high as possible.
 
-## veOCEAN Earnings
+### veOCEAN Earnings
 
 All earnings for veOCEAN holders are claimable in Ethereum mainnet. (Data assets for DFing may published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
 
@@ -115,7 +115,7 @@ Data Farming rounds occur weekly; in line with this, there’s a new ve distribu
 
 
 
-## Flow of Value
+### Flow of Value
 
 The image below illustrates the flow of value. On the left, at time 0, the staker locks their OCEAN into the veOCEAN contract, and receives veOCEAN. In the middle, the staker receives OCEAN rewards every time there’s revenue to the Ocean Protocol Community (top), and also as part of Data Farming rewards (bottom). On the right, when the lock expires (e.g. 4 years) then the staker is able to move their OCEAN around again.
 
