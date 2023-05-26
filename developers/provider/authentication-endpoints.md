@@ -36,14 +36,15 @@ Response:
 ```runkit  nodeVersion="18.x.x"
 const axios = require('axios');
 const address = "0x7e2a2FA2a064F693f0a55C5639476d913Ff12D05"
-const nonce = 1
-const signature 
-const url = `https://provider.oceanprotocol.com/api/services/createAuthToken?address=${address}&nonce=${nonce}&expiration=<expiration>&signature=<your_signature>`;
+const nonce = "1"
+const signature = ""
+const url = `http://provider.oceanprotocol.com/api/services/createAuthToken?address=${address}&nonce=${nonce}&expiration=<expiration>&signature=<your_signature>`;
 axios.get(url).then(response => {
   console.log(response.data);
 }).catch(error => {
   console.error(error);
 });
+
 ```
 
 #### Delete Auth Token
