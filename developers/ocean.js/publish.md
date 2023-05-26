@@ -21,7 +21,7 @@ The code utilizes methods such as `NftFactory` and `Datatoken` from the Ocean li
 
 The `createFRE()` performs the following:
 
-1. Creates a web3 instance with [Web3](https://web3js.readthedocs.io/en/v1.10.0/).
+1. Creates a web3 instance and import Ocean configs.
 2. Retrieves the accounts from the web3 instance and sets the publisher.
 3. Defines parameters for the data NFT, including name, symbol, template index, token URI, transferability, and owner.
 4. Defines parameters for the datatoken, including name, symbol, template index, cap, fee amount, payment collector address, fee token address, minter, and multi-party fee address.
