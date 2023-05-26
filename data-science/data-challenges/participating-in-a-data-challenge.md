@@ -1,7 +1,6 @@
 # Participating in a data challenge
 
-Here is the typical flow for a data challenge\
-\
+Data challenges can take a few different formats. Some challenges are built for data exploration and reporting. In these challenges, participants are tasked with analyzing a provided dataset or several and conducting an exploratory analysis to understand the hidden insights in the data. Then, they build a written report that explains their insights so that a business user can make informed decisions from the analysis. Another format is the participants being tasked with building a model to perform a given task. They will typically be provided with a dataset(although not always) that they will use to train their model. In some challenges, the participants must publish their model as a compute asset on Ocean so that the model can be run using Compute-to-Data. Here is the typical flow for a data challenge.\
 
 
 1. On Ocean Market, a dataset( or several) is published along with its description and schema. The dataset will either be provided by the data challenge sponsor partner or by OPF ourselves.
