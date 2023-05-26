@@ -66,15 +66,42 @@ token: token to be expired
 
 Returns: Success message if token is successfully deleted. If the token is not found or already expired, returns an error message.
 
-Example:
+#### Javascript Example:
 
 ```
-DELETE /api/services/deleteAuthToken?address=<your_address>&&nonce=<your_nonce>&&token=<your_token>&signature=<your_signature>
+const axios = require('axios');
+
+// Define the address, token, and signature
+const address = '<your_address>';  // Replace with your address
+const token = '<your_token>';  // Replace with your token
+const signature = '<your_signature>';  // Replace with your signature
+
+// Define the URL for the deleteAuthToken endpoint
+const deleteAuthTokenURL = 'http://<provider_url>/api/services/deleteAuthToken';  // Replace with your provider's URL
+
+// Make the DELETE request
+axios.delete(deleteAuthTokenURL, {
+    data: {
+        address: address,
+        token: token
+    },
+    headers: {
+        'Content-Type': 'application/json',
+        'signature': signature
+    }
+})
+.then(response => {
+    console.log(response.data);
+})
+.catch(error => {
+    console.log('Error:', error);
+});
+
 ```
 
-Inside the angular brackets, the user should provide the valid values for the request.
+Replace `<provider_url>`, `<your_address>`, `<your_token>`, and `<your_signature>` with actual values. This script sends a DELETE request to the `deleteAuthToken` endpoint and logs the response. Please ensure that `axios` is installed in your environment (`npm install axios`).
 
-Response:
+#### Example Response:
 
 ```
 {"success": "Token has been deactivated."}
