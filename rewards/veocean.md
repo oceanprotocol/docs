@@ -35,12 +35,6 @@ The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired 
 
 We'll get to that "on-chain governance" bit in a second. But first, [here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to  [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
 
-### DYOR!
-
-veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
-
-So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
-
 ### The Nitty Gritty of **Passive & Active Rewards**
 
 #### Passive Rewards from Data Farming
@@ -99,10 +93,6 @@ At the end of your 4 years, your OCEAN is unlocked.
 
 **Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
 
-### Withdrawal
-
-After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
-
 ## Replenishing your veOCEAN
 
 You can choose to update your lock and replenish your veOCEAN balance at any time.
@@ -128,6 +118,16 @@ The image below illustrates the flow of value. On the left, at time 0, the stake
 The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Ocean uses as its system-level design.
 
 The veOCEAN code was forked from the veCRV code. veCRV parameters will be the starting point. To minimize risk, tweaks will be circumspect.
+
+### DYOR!
+
+veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
+
+So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
+
+### Withdrawal
+
+After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 
 ## Security
 
