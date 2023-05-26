@@ -1,6 +1,6 @@
 # Local Setup - Ganache
 
-I don't know where to include the information about the local setup. I've removed it from the networks tab.
+\----WORK in progress----
 
 ### Local / Ganache
 
