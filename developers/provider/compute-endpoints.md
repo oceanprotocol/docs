@@ -32,9 +32,9 @@ Status description (`statusText`): (see Operator-Service for full status list)
 | 60     | Publishing results            |
 | 70     | Job completed                 |
 
-### Create new job or restart an existing stopped job
+### Create or restart compute job
 
-#### POST /api/services/compute
+**Endpoint:** POST /api/services/compute
 
 Start a new job
 
