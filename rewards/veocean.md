@@ -41,21 +41,19 @@ veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time
 
 So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
 
-### The Nitty Gritty of **Active & Passive Rewards**
-
-#### Active Rewards from Community Fees
-
-Every transaction in Ocean Market and Ocean Protocol backend infrastructure generates transaction fees, some of which are distributed to the community. 50% of the community fees goes to veOCEAN holders, 50% goes to the Ocean Protocol Foundation's community-oriented traction programs.
+### The Nitty Gritty of **Passive & Active Rewards**
 
 #### Passive Rewards from Data Farming
 
-veOCEAN holders will each get weekly Data Farming rewards allocation, except a small carveout for any Data Challenge initiatives that may run through DF ops.
+veOCEAN holders get weekly Data Farming rewards with a small carveout for any Ocean Protcol Data Challenges that run through Data Farming operations.
 
-**veOCEAN holders can be passive, though they are incentivized with larger real yield if active participant.**
+#### Active Rewards from Community Fees
 
-“Being active” means allocating veOCEAN to promising data assets (data NFTs). Then, rewards follow the usual DF formula: DCV \* stake. Stake is the amount of veOCEAN allocated to the data asset. There is no liquidity locked inside a datatoken pool. (And this stake is safe: you can’t lose your OCEAN as it is merely locked.)
+veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets.
 
+Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.\*\* But also every transaction in Ocean Market and Ocean Protocol backend infrastructure generates **"community swap" fees that go into Active Rewards**. 50% of the community fees goes to veOCEAN holders, and 50% goes to the Ocean Protocol Foundation's community-oriented traction programs.
 
+\*\*There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
 
 ## Time Locking: What is it
 
