@@ -29,20 +29,6 @@ veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefi
 3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
 4. **2x Publisher Stake** If you are a publisher on the Ocean Market, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets on the Ocean Market further.
 
-### Where the heck did we get this idea from?
-
-The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired by Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code. We took this inspiration to enable our users to participate in on-chain governance, and earn rewards within the Ocean Protocol ecosystem.
-
-We'll get to that "on-chain governance" bit in a second. But first, [here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to  [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
-
-### veOCEAN's Smart Contracts Security
-
-[veOCEAN core contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) use [veCRV contracts](https://curve.readthedocs.io/dao-vecrv.html) with zero changes, on purpose: the veCRV contracts have been battle-tested since inception and have not had security issues. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. veCRV contracts [have been audited by Trail of Bits and Quantstamp](https://github.com/curvefi/curve-dao-contracts#audits-and-security).
-
-We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to point their veOCEAN towards given data assets (“allocate veOCEAN”). These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
-
-We have an [ongoing bug bounty via Immunefi](https://immunefi.com/bounty/oceanprotocol/) for Ocean software, including veOCEAN and DF components. If you identify an issue, please report it there and get rewarded.
-
 ### The Nitty Gritty of **Passive & Active Rewards**
 
 #### Passive Rewards from Data Farming
@@ -57,9 +43,11 @@ Active rewards follow the usual Data Farming formula: $ of sales of the asset \*
 
 \*\*There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
 
-### veOCEAN Time Locking: What is it?
+### veOCEAN Time Locking
 
-Users can lock their OCEAN for different lengths of time to gain **voting power**. df.oceandao.org is designed to lock OCEAN for a minimum of 2 weeks and a maximum of four years for max benefit. VeToken-economics is simple: The longer user stakes, the more rewards users are eligible to earn. &#x20;
+Users can lock their OCEAN for different lengths of time to gain more veOCEAN **voting power**. The Data Farming dApp is designed to lock OCEAN for **a minimum of 2 weeks and a maximum of four years** (for max rewards). The longer you lock your OCEAN, the more veOCEAN + OCEAN rewards you get! &#x20;
+
+On the dApp's [veOCEAN page](https://df.oceandao.org/veocean), the "Lock Multiplier" represents the percentage amount of veOCEAN tokens received per OCEAN token locked.
 
 When users commit to locking their OCEAN tokens for an extended time duration, they are rewarded with an increased amount of veOCEAN tokens. This incentivizes users to have act with strong network support and confidence in the ecosystem.
 
@@ -69,10 +57,6 @@ When users commit to locking their OCEAN tokens for an extended time duration, t
 | 2    | 0.50x           | 0.50    |
 | 3    | 0.75x           | 0.75    |
 | 4    | 1.00x           | 1.00    |
-
-_The Lock Multiplier. Amount of veOCEAN received per OCEAN locked._
-
-If you’ve locked OCEAN for 4 years, you will be unable to retrieve your deposit until this time expires.
 
 After choosing your lock period and locking up your OCEAN into the vault, you will be credited with veOCEAN.
 
@@ -113,7 +97,15 @@ All earnings for veOCEAN holders are claimable in Ethereum mainnet. (Data assets
 
 Data Farming rounds occur weekly; in line with this, there’s a new ve distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the code. )
 
+### DYOR!
 
+veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
+
+So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
+
+### Withdrawal
+
+After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 
 ### Flow of Value
 
@@ -127,13 +119,17 @@ The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Oce
 
 The veOCEAN code was forked from the veCRV code. veCRV parameters will be the starting point. To minimize risk, tweaks will be circumspect.
 
-### DYOR!
+### Where the heck did we get this idea from?
 
-veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
+The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired by Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code. We took this inspiration to enable our users to participate in on-chain governance and earn rewards within the Ocean Protocol ecosystem.
 
-So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
+[Here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to  [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
 
-### Withdrawal
+### veOCEAN's Smart Contracts Security
 
-After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
+[veOCEAN core contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) use [veCRV contracts](https://curve.readthedocs.io/dao-vecrv.html) with zero changes, on purpose: the veCRV contracts have been battle-tested since inception and have not had security issues. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. veCRV contracts [have been audited by Trail of Bits and Quantstamp](https://github.com/curvefi/curve-dao-contracts#audits-and-security).
+
+We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to point their veOCEAN towards given data assets (“allocate veOCEAN”). These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
+
+We have an [ongoing bug bounty via Immunefi](https://immunefi.com/bounty/oceanprotocol/) for Ocean software, including veOCEAN and DF components. If you identify an issue, please report it there and get rewarded.
 
