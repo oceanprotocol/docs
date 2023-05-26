@@ -4,7 +4,7 @@ description: Learn the Web3 concepts backing up Ocean Protocol tech
 
 # Engage
 
-You'll need to know a thing or two about **Web3** to fully understand Ocean Protocol's tech... Let's get started with the basics. 🧑‍🏫
+You'll need to know a thing or two about **Web3** to fully understand Ocean Protocol's tech... Let's get started with the basics 🧑‍🏫
 
 <figure><img src="../.gitbook/assets/drew-barrymore-notes.gif" alt=""><figcaption><p>Prepare yourself, my friend</p></figcaption></figure>
 
