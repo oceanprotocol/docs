@@ -87,7 +87,7 @@ node updateMetadata.js
 {% endtab %}
 {% endtabs %}
 
-We provide several code examples using the Ocean.js library for interacting with the Ocean Protocol. Here are some highlights from our [code examples](https://github.com/oceanprotocol/ocean.js/blob/main/CodeExamples.md) ([compute examples](https://github.com/oceanprotocol/ocean.js/blob/main/ComputeExamples.md)):
+We provided several code examples using the Ocean.js library for interacting with the Ocean Protocol. Some highlights from our [code examples](https://github.com/oceanprotocol/ocean.js/blob/main/CodeExamples.md) ([compute examples](https://github.com/oceanprotocol/ocean.js/blob/main/ComputeExamples.md)) are:
 
 1. **Minting an NFT** - This example demonstrates how to mint an NFT (Non-Fungible Token) using the Ocean.js library. It shows the necessary steps, including creating a NFTFactory instance, defining NFT parameters, and calling the `create()` method to mint the NFT.
 2. **Publishing a dataset** - This example explains how to publish a dataset on the Ocean Protocol network. It covers steps such as creating a DDO, signing the DDO, and publish the dataset.

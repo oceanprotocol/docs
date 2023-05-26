@@ -62,6 +62,7 @@
     * [Mint Datatokens](developers/ocean.js/mint-datatoken.md)
     * [Update Metadata](developers/ocean.js/update-metadata.md)
     * [Remove Asset](developers/ocean.js/remove-asset.md)
+    * [CoD Asset](developers/ocean.js/cod-asset.md)
   * [Compute to data](developers/compute-to-data/README.md)
     * [Architecture](developers/compute-to-data/compute-to-data-architecture.md)
     * [Datasets & Algorithms](developers/compute-to-data/compute-to-data-datasets-algorithms.md)
