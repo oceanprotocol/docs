@@ -89,7 +89,7 @@ console.log(response)
 
 #### Javascript Example
 
-Before calling the `/download` endpoint, there are several steps to take:&#x20;
+Before calling the `/download` endpoint, you need to follow these steps:&#x20;
 
 1. You need to set up and connect a wallet for the consumer. The consumer needs to have purchased the datatoken for the asset that you are trying to download. Libraries such as ocean.js or ocean.py can be used for this.
 2. Get the nonce. This can be done by calling the `/getnonce` endpoint above.
@@ -139,6 +139,10 @@ downloadAsset(payload);
 
 ### Initialize
 
+In order to consume a data service the user is required to send one datatoken to the provider.&#x20;
+
+The datatoken is transferred on the blockchain by requesting the user to sign an ERC20 approval transaction where the approval is given to the provider's account for the number of tokens required by the service.
+
 * **Endpoint**: `GET /api/services/initialize`
 * **Parameters**: The query parameters for this endpoint should contain the following properties:
   * `documentId`: A string containing the document id (e.g., a DID).
@@ -150,6 +154,48 @@ downloadAsset(payload);
 * **Purpose**: This endpoint is used to initialize a service and return a quote for the number of tokens to transfer to the provider's account.
 * **Responses**:
   * **200**: This is a successful HTTP response code. It returns a JSON object containing information about the quote for tokens to be transferred.
+
+#### Javascript Example
+
+```
+const axios = require('axios');
+
+async function initializeServiceAccess(payload) {
+    // Define the base URL of the services.
+    const SERVICES_URL = "<BASE URL>"; // Replace with your base services URL.
+
+    // Define the endpoint.
+    const endpoint = `${SERVICES_URL}/api/services/initialize`;
+
+    try {
+        // Send a GET request to the endpoint with the payload in the request query.
+        const response = await axios.get(endpoint, { params: payload });
+
+        // Check the response.
+        if (response.status !== 200) {
+            throw new Error(`Response status code is not 200: ${response.data}`);
+        }
+
+        // Use the response data here.
+        console.log(response.data);
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+// Define the payload.
+let payload = {
+    "documentId": "<DOCUMENT ID>", // Replace with your document ID.
+    "consumerAddress": "<CONSUMER ADDRESS>", // Replace with your consumer address.
+    "serviceId": "<SERVICE ID>", // Replace with your service ID.
+    // Add other necessary parameters as needed.
+};
+
+// Run the function.
+initializeServiceAccess(payload);
+
+```
 
 Example response:
 
