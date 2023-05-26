@@ -1,13 +1,13 @@
 # Update Metadata
 
-This tutorial will guide you to update an existing asset published on-chain using Ocean libraries. The tutorial assumes that you already have the `did` of the asset which needs to be updated. In this tutorial, we will update the name, description, tags of the data NFT. Please refer [the page on DDO](../ddo-specification.md) to know more about additional the fields which can be updated.
+This tutorial will guide you to update an existing asset published on-chain using Ocean libraries. The tutorial assumes that you already have the `did` of the asset which needs to be updated. In this tutorial, we will update the name, description, tags of the data NFT. Please refer [the page on DDO](../../core-concepts/did-ddo.md) to know more about additional the fields which can be updated.
 
 #### Prerequisites
 
-* [Obtain an API key](configuration.md#obtaining-api-key-for-ethereum-node-provider)
-* [Set up the .env file](configuration.md#create-a-.env-file)
-* [Install the dependencies](configuration.md#setup-dependencies)
-* [Create a configuration file](configuration.md#create-a-configuration-file)
+* [Obtain an API key](broken-reference)
+* [Set up the .env file](broken-reference)
+* [Install the dependencies](broken-reference)
+* [Create a configuration file](configuration.md)
 
 {% hint style="info" %}
 The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file

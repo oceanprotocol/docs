@@ -74,7 +74,7 @@ The following guides will help you get started with buying and selling data:
 
 <summary><mark style="color:blue;">Manage datatokens and data NFTs for use in DeFi</mark><br><br>Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.</summary>
 
-Use Ocean [JavaScript](../developers/ocean-libraries/) or [Python](../developers/ocean.py/) drivers to manage data NFTs and datatokens:
+Use Ocean [JavaScript](broken-reference) or [Python](../developers/ocean.py/) drivers to manage data NFTs and datatokens:
 
 Ocean-based apps make data assets on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
 

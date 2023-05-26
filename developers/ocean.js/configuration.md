@@ -28,7 +28,7 @@ In the working directory create a `.env` file. The content of this file will sto
 | Variable name           | Description                                                                                                                                                                 | Required |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | **OCEAN\_NETWORK**      | Name of the network where the Ocean Protocol's smart contracts are deployed.                                                                                                | Yes      |
-| **OCEAN\_NETWORK\_URL** | The URL of the Ethereum node (along with API key for non-local networks)                                                                                                    | Yes      |
+| **OCEAN\_NETWORK\_URL** | The URL of the Ethereum node (along with API key for non-local networks)\*\*                                                                                                | Yes      |
 | **PRIVATE\_KEY**        | The private key of the account which you want to use. A private key is made up of 64 hex characters. Make sure you have sufficient balance to pay for the transaction fees. | Yes      |
 | **AQUARIUS\_URL**       | The URL of the Aquarius. This value is needed when reading an asset from off-chain store.                                                                                   | No       |
 | **PROVIDER\_URL**       | The URL of the Provider. This value is needed when publishing a new asset or update an existing asset.                                                                      | No       |
@@ -52,7 +52,7 @@ PRIVATE_KEY=<secret>
 # Optional environment variables
 
 AQUARIUS_URL=https://v4.aquarius.oceanprotocol.com/
-PROVIDER_URL=https://v4.provider.mainnet.oceanprotocol.com
+PROVIDER_URL=https://v4.provider.oceanprotocol.com
 ```
 {% endcode %}
 {% endtab %}
@@ -69,7 +69,7 @@ PRIVATE_KEY=<secret>
 # Optional environment variables
 
 AQUARIUS_URL=https://v4.aquarius.oceanprotocol.com/
-PROVIDER_URL=https://v4.provider.polygon.oceanprotocol.com
+PROVIDER_URL=https://v4.provider.oceanprotocol.com
 ```
 {% endcode %}
 {% endtab %}
@@ -90,122 +90,102 @@ PRIVATE_KEY=0xc594c6e5def4bab63ac29eed19a134c130388f74f019bc74b8f4389df2837a58
 {% endtab %}
 {% endtabs %}
 
-_NOTE: If using ocean.py, additionally specify **ADDRESS\_FILE** variable in the `.env` file. Copy the content of this_ [_link_](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) _locally and set the **ADDRESS\_FILE** so that its value is a correct file path._
+Replace `<replace this>` with the appropriate values. \*\*You can see all the networks configuration on Oceanjs' [config helper](https://github.com/oceanprotocol/ocean.js/blob/main/src/config/ConfigHelper.ts#L42).
 
 ### Setup dependencies
 
-In this step the required dependencies will be installed.
+In this step all required dependencies will be installed.
+
+### Installation & Usage
+
+Let's install Oceanjs library into your current project by running:
 
 {% tabs %}
-{% tab title="ocean.js" %}
+{% tab title="Terminal" %}
 ```bash
 npm init
-npm install @oceanprotocol/lib@latest dotenv web3 @truffle/hdwallet-provider
-```
-{% endtab %}
-
-{% tab title="ocean.py" %}
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install wheel
-
-# Install Ocean library. Allow pre-releases to get the latest v4 version.
-pip install ocean-lib
+npm i @oceanprotocol/lib@3.0.0-next.5 dotenv crypto-js ethers@5.7.4 @truffle/hdwallet-provider
 ```
 {% endtab %}
 {% endtabs %}
 
 ### Create a configuration file
 
-A configuration file will read the content of the `.env` file and initialize the required configuration objects which will be used in the further tutorials. The below scripts creates a Web3 wallet instance and a Ocean's configuration object.
+A configuration file will read the content of the `.env` file and initialize the required configuration objects which will be used in the further tutorials. The below scripts creates a Web3 wallet instance and an Ocean's configuration object.
 
 Create the configuration file in the working directory i.e. at the same path where the `.env` is located.
 
 {% tabs %}
-{% tab title="ocean.js" %}
+{% tab title="config.js" %}
 {% code title="config.js" %}
 ```javascript
-// Import dependencies
 require('dotenv').config();
-const HDWalletProvider = require('@truffle/hdwallet-provider');
-const fs = require('fs');
-const { homedir } = require('os');
-const { ConfigHelper } = require('@oceanprotocol/lib');
+const { Aquarius, ZERO_ADDRESS, ConfigHelper, configHelperNetworks } = require('@oceanprotocol/lib');
+const { providers } = require('ethers')
+const ethers = require('ethers');
+async function oceanConfig(){
 
-// Get configuration for the given network
-let oceanConfig = new ConfigHelper().getConfig(process.env.OCEAN_NETWORK);
+  // Get configuration for the given network
+  const provider = new providers.JsonRpcProvider(
+    process.env.OCEAN_NETWORK_URL || configHelperNetworks[1].nodeUri
+  )
 
-// If using local development environment, read the addresses from local file.
-// The local deployment address file can be generated using barge.
-if (process.env.OCEAN_NETWORK === 'development') {
-  const addressData = JSON.parse(
-    fs.readFileSync(
-      process.env.ADDRESS_FILE
-        || `${homedir}/.ocean/ocean-contracts/artifacts/address.json`,
-      'utf8'
-    )
+  const ethersProvider = new ethers.Wallet(
+    process.env.PRIVATE_KEY,
+    provider
   );
-  const addresses = addressData[process.env.OCEAN_NETWORK];
+
+  const publisherAccount = await ethersProvider.provider.getSigner(ethersProvider.address);
+  const consumerAccount = publisherAccount
+  const stakerAccount = publisherAccount
+
+  let oceanConfig = new ConfigHelper().getConfig(
+    parseInt(String((await provider.getSigner(0).provider.getNetwork()).chainId))
+  )
+  const aquarius = new Aquarius(oceanConfig?.metadataCacheUri)
+
+  // If using local development environment, read the addresses from local file.
+  // The local deployment address file can be generated using barge.
+  if (process.env.OCEAN_NETWORK === 'development') {
+    const addresses = JSON.parse(
+      // eslint-disable-next-line security/detect-non-literal-fs-filename
+      fs.readFileSync(
+        process.env.ADDRESS_FILE ||
+          `${homedir}/.ocean/ocean-contracts/artifacts/address.json`,
+        'utf8'
+      )
+    ).development
+
+    oceanConfig = {
+      ...oceanConfig,
+      oceanTokenAddress: addresses.Ocean,
+      poolTemplateAddress: addresses.poolTemplate,
+      fixedRateExchangeAddress: addresses.FixedPrice,
+      dispenserAddress: addresses.Dispenser,
+      nftFactoryAddress: addresses.ERC721Factory,
+      sideStakingAddress: addresses.Staking,
+      opfCommunityFeeCollector: addresses.OPFCommunityFeeCollector
+    };
+  }
 
   oceanConfig = {
     ...oceanConfig,
-    oceanTokenAddress: addresses.Ocean,
-    poolTemplateAddress: addresses.poolTemplate,
-    fixedRateExchangeAddress: addresses.FixedPrice,
-    dispenserAddress: addresses.Dispenser,
-    erc721FactoryAddress: addresses.ERC721Factory,
-    sideStakingAddress: addresses.Staking,
-    opfCommunityFeeCollector: addresses.OPFCommunityFeeCollector
+    publisherAccount: publisherAccount,
+    consumerAccount: consumerAccount,
+    stakerAccount: stakerAccount,
+    aquarius: aquarius,
+    ethersProvider: ethersProvider,
   };
-}
 
-oceanConfig = {
-  ...oceanConfig,
-  nodeUri: process.env.OCEAN_NETWORK_URL,
-  // Set optional properties - Provider URL and Aquarius URL
-  metadataCacheUri: process.env.AQUARIUS_URL || oceanConfig.metadataCacheUri,
-  providerUri: process.env.PROVIDER_URL || oceanConfig.providerUri
+  return oceanConfig
 };
-
-const web3Provider = new HDWalletProvider(
-  process.env.PRIVATE_KEY,
-  oceanConfig.nodeUri
-);
 
 module.exports = {
-  web3Provider,
   oceanConfig
-};
-```
-{% endcode %}
-{% endtab %}
-
-{% tab title="ocean.py" %}
-{% code title="config.py" %}
-```python
-import os
-from dotenv import load_dotenv
-from ocean_lib.example_config import get_config_dict
-from ocean_lib.web3_internal.utils import connect_to_network
-from ocean_lib.ocean.ocean import Ocean
-
-load_dotenv()
-
-# Create Ocean instance
-network_name = os.getenv("OCEAN_NETWORK")
-connect_to_network(network_name)
-
-config = get_config_dict(network_name)
-ocean = Ocean(config)
-
-from brownie.network import accounts
-accounts.clear()
-user_private_key = os.getenv('PRIVATE_KEY')
-wallet = accounts.add(user_private_key)
+}
 ```
 {% endcode %}
 {% endtab %}
 {% endtabs %}
 
-Now, all the dependencies are ready and you can proceed with interacting with Ocean infrastructure using Ocean libraries.
+Now you have set up the necessary files and configurations to interact with Ocean Protocol's smart contracts using ocean.js. You can proceed with further tutorials or development using these configurations.
