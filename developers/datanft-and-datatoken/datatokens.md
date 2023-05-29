@@ -33,7 +33,7 @@ Once someone has generated datatokens, they can be used in any ERC20 exchange, c
 
 The marketplaces are decentralized (no single owner or controller), and non-custodial (only the data owner holds the keys for the datatokens).
 
-Ocean Market supports fixed pricing or free pricing. For more detials on pricing schema refer [this guide](../contracts/asset-pricing.md).
+Ocean Market supports fixed pricing or free pricing. For more detials on pricing schema refer [this guide](../asset-pricing.md).
 
 Complementary to Ocean Market, Ocean has reference code to ease building **third-party data marketplaces**, such as for logistics ([dexFreight data marketplace](https://blog.oceanprotocol.com/dexfreight-ocean-protocol-partner-to-enable-transportation-logistics-companies-to-monetize-data-7aa839195ac)) or mobility ([Daimler](https://blog.oceanprotocol.com/ocean-protocol-delivers-proof-of-concept-for-daimler-ag-in-collaboration-with-daimler-south-east-564aa7d959ca)).
 

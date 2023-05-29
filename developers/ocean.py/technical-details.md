@@ -151,12 +151,209 @@ It can be called within Ocean class and returns the OCEAN Datatoken.
 
 Ocean smart contracts:
 
-* `ocean.data_nft_factory -> DataNFTFactoryContract`
-* `ocean.dispenser -> Dispenser` - faucets for free data
-* `ocean.fixed_rate_exchange -> FixedRateExchange` - exchanges for priced data
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL117C1-L120C80"><code>ocean.data_nft_factory -> DataNFTFactoryContract</code></a></summary>
+
+It is a property for getting `Data NFT Factory` object for the singleton smart contract.\
+It can be called within Ocean class and returns the `DataNFTFactoryContract` instance.
+
+{% code overflow="wrap" %}
+```python
+@property
+    @enforce_types
+    def data_nft_factory(self) -> DataNFTFactoryContract:
+        return DataNFTFactoryContract(self.config, self._addr("ERC721Factory"))
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL122C1-L125C63"><code>ocean.dispenser -> Dispenser</code></a></summary>
+
+`Dispenser` is represented by a faucet for free data.\
+It is a property for getting `Dispenser` object for the singleton smart contract.\
+It can be called within Ocean class and returns the `Dispenser` instance.
+
+```python
+    @property
+    @enforce_types
+    def dispenser(self) -> Dispenser:
+        return Dispenser(self.config, self._addr("Dispenser"))
+```
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL127C1-L130C72"><code>ocean.fixed_rate_exchange -> FixedRateExchange</code></a></summary>
+
+Exchange is used for priced data.\
+It is a property for getting `FixedRateExchange` object for the singleton smart contract.\
+It can be called within Ocean class and returns the `FixedRateExchange` instance.
+
+```python
+ @property
+    @enforce_types
+    def fixed_rate_exchange(self) -> FixedRateExchange:
+        return FixedRateExchange(self.config, self._addr("FixedPrice"))
+```
+
+</details>
 
 Simple getters:
 
-* `ocean.get_nft_token(self, token_address: str) -> DataNFT`
-* `ocean.get_datatoken(self, token_address: str) -> Datatoken`
-* `ocean.get_user_orders(self, address: str, datatoken: str)`
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL139C5-L145C51"><code>ocean.get_nft_token(self, token_address: str) -> DataNFT</code></a></summary>
+
+It is a getter for a specific data NFT object based on its checksumed address.\
+It can be called within Ocean class with a string `token_address` as parameter which returns the `DataNFT` instance.
+
+```python
+    @enforce_types
+    def get_nft_token(self, token_address: str) -> DataNFT:
+        """
+        :param token_address: Token contract address, str
+        :return: `DataNFT` instance
+        """
+        return DataNFT(self.config, token_address)
+```
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL147C5-L153C67"><code>ocean.get_datatoken(self, token_address: str) -> DatatokenBase</code></a></summary>
+
+It is a getter for a specific `datatoken` object based on its checksumed address.\
+It can be called within Ocean class with a string `token_address` as parameter which returns the `DatatokenBase` instance depending on datatoken's template index.
+
+```python
+@enforce_types
+    def get_datatoken(self, token_address: str) -> DatatokenBase:
+        """
+        :param token_address: Token contract address, str
+        :return: `Datatoken1` or `Datatoken2` instance
+        """
+        return DatatokenBase.get_typed(self.config, token_address)
+
+```
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL157C5-L173C23"><code>ocean.get_user_orders(self, address: str, datatoken: str)</code></a></summary>
+
+Returns the list of orders that were made by a certain user on a specific datatoken.
+
+As parameters:
+
+1. `address` - ETH wallet address of that user
+2. `datatoken` - datatoken address
+
+\
+It can be called within Ocean class.
+
+{% code overflow="wrap" %}
+```python
+    @enforce_types
+    def get_user_orders(self, address: str, datatoken: str) -> List[AttributeDict]:
+        """
+        :return: List of orders `[Order]`
+        """
+        dt = DatatokenBase.get_typed(self.config_dict, datatoken)
+        _orders = []
+        for log in dt.get_start_order_logs(address):
+            a = dict(log.args.items())
+            a["amount"] = int(log.args.amount)
+            a["address"] = log.address
+            a["transactionHash"] = log.transactionHash
+            a = AttributeDict(a.items())
+
+            _orders.append(a)
+
+        return _orders
+```
+{% endcode %}
+
+
+
+</details>
+
+Provider fees:
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL177C4-L189C1"><code>ocean.retrieve_provider_fees( self, ddo: DDO, access_service: Service, publisher_wallet ) -> dict:</code></a></summary>
+
+Calls Provider to compute provider fees as dictionary for access service.
+
+As parameters:
+
+1. `ddo` - the data asset which has the DDO object
+2. `access_service` - Service instance for the service that needs the provider fees
+3. `publisher_wallet` - Wallet instance of the user that wants to retrieve the provider fees
+
+{% code overflow="wrap" %}
+```python
+ @enforce_types
+    def retrieve_provider_fees(
+        self, ddo: DDO, access_service: Service, publisher_wallet
+    ) -> dict:
+
+        initialize_response = DataServiceProvider.initialize(
+            ddo.did, access_service, consumer_address=publisher_wallet.address
+        )
+        initialize_data = initialize_response.json()
+        provider_fees = initialize_data["providerFee"]
+
+        return provider_fees
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL190C4-L210C1"><code>ocean.retrieve_provider_fees_for_compute( self, datasets: List[ComputeInput], algorithm_data: Union[ComputeInput, AlgorithmMetadata], consumer_address: str, compute_environment: str, valid_until: int, ) -> dict:</code></a></summary>
+
+Calls Provider to generate provider fees as dictionary for compute service.
+
+As parameters:
+
+1. `datasets` - list of `ComputeInput` which contains the data assets
+2. `algorithm_data` - necessary data for algorithm and it can be either a `ComputeInput` object, either just the algorithm metadata, `AlgorithmMetadata`
+3. `consumer_address` - address of the compute consumer wallet which is requesting the provider fees
+4. `compute_environment` - id provided from the compute environment as `string`
+5. `valid_until` - timestamp in UNIX miliseconds for the duration of provider fees for the compute service.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def retrieve_provider_fees_for_compute(
+        self,
+        datasets: List[ComputeInput],
+        algorithm_data: Union[ComputeInput, AlgorithmMetadata],
+        consumer_address: str,
+        compute_environment: str,
+        valid_until: int,
+    ) -> dict:
+
+        initialize_compute_response = DataServiceProvider.initialize_compute(
+            [x.as_dictionary() for x in datasets],
+            algorithm_data.as_dictionary(),
+            datasets[0].service.service_endpoint,
+            consumer_address,
+            compute_environment,
+            valid_until,
+        )
+
+        return initialize_compute_response.json()
+```
+{% endcode %}
+
+</details>

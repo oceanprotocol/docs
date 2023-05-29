@@ -1,5 +1,4 @@
 ---
-title: Fees
 description: The Ocean Protocol defines various fees for creating a sustainability loop.
 ---
 
