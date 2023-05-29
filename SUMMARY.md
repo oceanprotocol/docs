@@ -60,6 +60,8 @@
     * [Get veOCEAN stats](developers/subgraph/get-veocean-stats.md)
   * [Ocean.py](developers/ocean.py/README.md)
     * [Install](developers/ocean.py/install.md)
+    * [Local Setup](developers/ocean.py/local-setup.md)
+    * [Remote setup](developers/ocean.py/remote-setup.md)
     * [Publish flow](developers/ocean.py/publish-flow.md)
     * [Consume flow](developers/ocean.py/consume-flow.md)
   * [Ocean.js](developers/ocean.js/README.md)

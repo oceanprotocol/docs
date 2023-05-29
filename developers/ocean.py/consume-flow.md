@@ -74,14 +74,14 @@ file_name = os.path.join(asset_dir, "file0")
 
 Let's check that the file is downloaded. In a new console:
 
-```
+```bash
 cd my_project/datafile.did:op:*
 cat file0
 ```
 
 The _beginning_ of the file should contain the following contents:
 
-```
+```bash
 % 1. Title: Branin Function
 % 3. Number of instances: 225
 % 6. Number of attributes: 2

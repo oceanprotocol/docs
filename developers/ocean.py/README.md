@@ -6,11 +6,11 @@ Attention all data enthusiasts! Are you an inquisitive data scientist intrigued 
 
 Well, brace yourselves for some exhilarating news! Introducing ocean.py, a Python library that possesses a touch of magic. 🎩🐍 It empowers you to discreetly and securely publish, exchange, and effortlessly consume data. 🐙💦 Collaborating with the Ocean Protocol 🌊, it unlocks a plethora of advantages mentioned earlier. So get ready to take the plunge into the vast ocean of data with a resounding splash of excitement! 💦🌊
 
-
-
 <figure><img src="../../.gitbook/assets/ocean_py.png" alt="" width="375"><figcaption><p>ocean.py library</p></figcaption></figure>
 
+### Overview
 
+ocean.py serves as a connection layer bridging the V4 smart contracts and various components such as Provider, Aquarius, and Compute to Data engine within Ocean Protocol. This pythonic library brings all these elements together, facilitating seamless integration and interaction. By acting as an intermediary, ocean.py enables developers to easily leverage the functionalities offered by Ocean Protocol, making it a valuable tool in building applications and solutions that utilize decentralized data marketplaces. Its purpose is to simplify the process of connecting with smart contracts and accessing services provided by Provider, Aquarius, and Compute to Data engine, providing a convenient and efficient development experience for users.
 
 ### ocean.py Strengths 💪
 
@@ -18,7 +18,7 @@ ocean.py lets you do the following things:
 
 * Publish data services: downloadable files or compute-to-data. Create an ERC721 data NFT for each service, and ERC20 datatoken for access (1.0 datatokens to access).
 * Sell datatokens via for a fixed price. Sell data NFTs.
-* Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.py or Brownie.
+* Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using  Brownie.
 
 If you prefer video format, please check this video below, otherwise let's move forward.
 
