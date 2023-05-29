@@ -32,7 +32,7 @@ Passive rewards are the OCEAN rewards paid to Data Farmers just for locking thei
 
 Active rewards are OCEAN rewards paid to Data Farmers that allocate their veOCEAN tokens to Ocean Market assets. They're called Active rewards because the amount of rewards relies on the active participation of the Data Farmer to select and allocate veOCEAN to these assets. **Active rewards yield depends on the sales of allocated assets.** No sales = no rewards, so choose your favorites wisely & then allocate. Always DYOR.
 
-Active rewards are governed and defined by the [Reward Function](df-background.md#reward-function).
+Active rewards are governed and defined by the [Reward Function](df-background.md#reward-schedule).
 
 [To start getting active rewards, go here.](../user-guides/how-to-data-farm.md)
 

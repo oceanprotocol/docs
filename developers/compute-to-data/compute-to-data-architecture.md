@@ -30,7 +30,7 @@ Before the flow can begin, these pre-conditions must be met:
 
 ### Access Control using Ocean Provider
 
-As with [the `access` service](../architecture.md#data-nfts-datatokens-and-access-control-tools), the `compute` service requires the **Ocean Provider** as a component handled by Publishers. Ocean Provider is in charge of interacting with users and managing the basics of a Publisher's infrastructure to integrate this infrastructure into Ocean Protocol. The direct interaction with the infrastructure where the data resides happens through this component only.
+As with [the `access` service](../datanft-and-datatoken/access-control-tools.md), the `compute` service requires the **Ocean Provider** as a component handled by Publishers. Ocean Provider is in charge of interacting with users and managing the basics of a Publisher's infrastructure to integrate this infrastructure into Ocean Protocol. The direct interaction with the infrastructure where the data resides happens through this component only.
 
 Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
 
