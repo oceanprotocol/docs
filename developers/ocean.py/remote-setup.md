@@ -2,7 +2,7 @@
 description: Remote setup for running & testing ocean.py
 ---
 
-# Remote setup
+# Remote Setup
 
 Here, we do setup for Mumbai, the testnet for Polygon. It's similar for other remote chains.
 

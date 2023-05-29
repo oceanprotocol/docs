@@ -51,9 +51,11 @@ ocean.OCEAN_token.approve(exchange.address, OCEAN_needed, {"from":bob})
 exchange.buy_DT(to_wei(1), consume_market_fee=0, tx_dict={"from": bob})
 ```
 
-For more info, see [Appendix: Dispenser / Faucet Details](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/main-flow.md#appendix-faucet-details) and [Exchange Details](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/main-flow.md#appendix-exchange-details).
+For more info, check [Technical Details](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/336/developers/ocean.py/technical-details) about ocean.py most used functions and also the smart contracts for [Dispenser](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/dispenser/Dispenser.sol) & [Fixed Rate Exchange](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/fixedRate/FixedRateExchange.sol).
 
 ### Consume the asset ⬇️
+
+To "consume" an asset typically means placing an "order", where you pass in 1.0 datatokens and get back a url. Then, you typically download the asset from the url.
 
 Bob now has the datatoken for the dataset! Time to download the dataset and use it.
 
@@ -97,5 +99,3 @@ The _beginning_ of the file should contain the following contents:
 -3.9286,0.0000,206.1783
 ...
 ```
-
-For more info, see [Appendix: Consume Details](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/main-flow.md#appendix-consume-details).
