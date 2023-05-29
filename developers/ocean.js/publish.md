@@ -1,6 +1,6 @@
 # Publish
 
-This tutorial guides you through the process of creating your own data NFT and a datatoken using Ocean libraries. To know more about data NFTs and datatokens please refer [this page](../datanft-and-datatoken/). Ocean Protocol supports different pricing schemes which can be set while publishing an asset. Please refer [this page](../asset-pricing.md) for more details on pricing schemes.
+This tutorial guides you through the process of creating your own data NFT and a datatoken using Ocean libraries. To know more about data NFTs and datatokens please refer [this page](../datanft-and-datatoken/). Ocean Protocol supports different pricing schemes which can be set while publishing an asset. Please refer [this page](../contracts/asset-pricing.md) for more details on pricing schemes.
 
 #### Prerequisites
 
