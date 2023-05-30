@@ -1,8 +1,8 @@
 ---
-description: How to Buy and Download Data NFT Assets on the Ocean Market
+description: How to Buy and Download Data on the Ocean Market
 ---
 
-# Buy Data Assets
+# Buy NFT Data
 
 <figure><img src="../.gitbook/assets/clueless-shopping.gif" alt=""><figcaption><p>That moment when you buy your first datatoken</p></figcaption></figure>
 
