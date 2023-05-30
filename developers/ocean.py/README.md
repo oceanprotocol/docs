@@ -22,16 +22,16 @@ The head of our octopus is the "Ocean" class. It oversees everything and keeps t
 
 Now, let's take a closer look at those amazing arms:
 
-1. Data Sources Arm: This arm gathers data from various sources, like CSV files, databases, or even streaming platforms. It dives deep to bring us the precious information we seek.
-2. Data Cleaning Arm: Ah, the tidy arm! It takes messy data and polishes it, removing any inconsistencies or errors. It's like our octopus's personal cleaner, making sure everything is spotless.
-3. Data Transformation Arm: This arm is like a shape-shifter! It takes the cleaned data and transforms it into a more suitable format for analysis. It can pivot, filter, or aggregate the data, molding it like clay.
-4. Model Training Arm: Time for some deep learning! This arm is responsible for training machine learning models on the transformed data. It uses powerful algorithms to find patterns and make predictions, just like a clever cephalopod.
-5. Model Evaluation Arm: Our octopus likes to double-check its work! This arm evaluates the trained models to see how accurate and reliable they are. It helps ensure our models are as reliable as an expert swimmer.
-6. Model Deployment Arm: Ready to release our models into the ocean? This arm takes the trained models and deploys them, making them accessible for real-time predictions. It's like releasing beautiful sea creatures back into their natural habitat.
-7. Model Monitoring Arm: Once the models are swimming freely, this arm keeps an eye on them. It checks their performance, detects any anomalies, and helps our octopus make timely adjustments if needed. Safety first!
-8. Visualization Arm: Last but not least, our octopus has a creative side too! This arm helps create stunning visualizations of the data and model results. It turns numbers into beautiful underwater artworks.
+1. **Data Discovery Arm**: This arm acts as an intrepid explorer, delving into the vast seas of data to discover valuable datasets stored in the Ocean Protocol ecosystem. It navigates through metadata and identifies the hidden treasures.
+2. **Data Access Arm**: Just like a skilled locksmith, this arm unlocks the doors to the datasets, facilitating seamless access and retrieval. It interacts with the Ocean Protocol's smart contracts to securely fetch the desired data.
+3. **Data Cleaning Arm**: Here comes the meticulous cleaner! This arm ensures that the fetched data is pristine and free from any impurities. It scrubs away any inconsistencies or inaccuracies, leaving behind sparkling clean datasets.
+4. **Data Transformation Arm**: Transforming data is like wielding magic, and this arm is the magician! It performs enchanting operations on the data, such as reformatting, reorganizing, or even enriching it, making it ready for the next steps.
+5. **Model Training Arm**: Our octopus is a quick learner! This arm employs machine learning techniques to train models using the transformed data. It collaborates with the Ocean smart contracts to optimize the training process.
+6. **Model Evaluation Arm**: It's time for a performance assessment! This arm thoroughly examines the trained models, assessing their accuracy, robustness, and compliance with predefined metrics. It ensures that our models are as reliable as a trustworthy companion.
+7. **Model Deployment Arm**: Now, it's time to set our trained models free into the ocean of opportunities! This arm interacts with the Ocean smart contracts to deploy the models, making them accessible for utilization within the Ocean ecosystem.
+8. **Model Monitoring Arm**: Our octopus keeps a watchful eye on the deployed models. This arm monitors their behavior, tracks their performance, and detects any anomalies that may arise. It collaborates with the Ocean smart contracts to ensure the models swim smoothly.
 
-So there you have it, the playful world of ocean.py, where an octopus and its eight specialized arms dive into the depths of data to unravel its mysteries. Happy swimming! 🌊🐙
+So, in the realm of ocean.py's integration with Ocean Protocol's smart contracts, our octopus and its eight versatile arms embark on an exciting journey, discovering, accessing, cleaning, transforming, training, evaluating, deploying, and monitoring data and models. Together, they form a powerful team, navigating the depths of the Ocean ecosystem. 🌊🐙
 
 ### ocean.py Strengths 💪
 
