@@ -12,6 +12,27 @@ Well, brace yourselves for some exhilarating news! Introducing ocean.py, a Pytho
 
 ocean.py serves as a connection layer bridging the V4 smart contracts and various components such as Provider, Aquarius, and Compute to Data engine within Ocean Protocol. This pythonic library brings all these elements together, facilitating seamless integration and interaction. By acting as an intermediary, ocean.py enables developers to easily leverage the functionalities offered by Ocean Protocol, making it a valuable tool in building applications and solutions that utilize decentralized data marketplaces. Its purpose is to simplify the process of connecting with smart contracts and accessing services provided by Provider, Aquarius, and Compute to Data engine, providing a convenient and efficient development experience for users.
 
+#### Architectural point of view
+
+Oh, the wondrous world of ocean.py! Imagine a playful octopus with eight arms, each one specialized in a unique task. 🐙
+
+At its heart, ocean.py is like the conductor of an underwater orchestra, guiding different marine creatures (modules) to work together harmoniously. It's an open-source library that makes swimming in the vast sea of data a breeze! 🌊
+
+The head of our octopus is the "Ocean" class. It oversees everything and keeps track of the data flow. It's like the brain of our underwater friend! 🧠
+
+Now, let's take a closer look at those amazing arms:
+
+1. Data Sources Arm: This arm gathers data from various sources, like CSV files, databases, or even streaming platforms. It dives deep to bring us the precious information we seek.
+2. Data Cleaning Arm: Ah, the tidy arm! It takes messy data and polishes it, removing any inconsistencies or errors. It's like our octopus's personal cleaner, making sure everything is spotless.
+3. Data Transformation Arm: This arm is like a shape-shifter! It takes the cleaned data and transforms it into a more suitable format for analysis. It can pivot, filter, or aggregate the data, molding it like clay.
+4. Model Training Arm: Time for some deep learning! This arm is responsible for training machine learning models on the transformed data. It uses powerful algorithms to find patterns and make predictions, just like a clever cephalopod.
+5. Model Evaluation Arm: Our octopus likes to double-check its work! This arm evaluates the trained models to see how accurate and reliable they are. It helps ensure our models are as reliable as an expert swimmer.
+6. Model Deployment Arm: Ready to release our models into the ocean? This arm takes the trained models and deploys them, making them accessible for real-time predictions. It's like releasing beautiful sea creatures back into their natural habitat.
+7. Model Monitoring Arm: Once the models are swimming freely, this arm keeps an eye on them. It checks their performance, detects any anomalies, and helps our octopus make timely adjustments if needed. Safety first!
+8. Visualization Arm: Last but not least, our octopus has a creative side too! This arm helps create stunning visualizations of the data and model results. It turns numbers into beautiful underwater artworks.
+
+So there you have it, the playful world of ocean.py, where an octopus and its eight specialized arms dive into the depths of data to unravel its mysteries. Happy swimming! 🌊🐙
+
 ### ocean.py Strengths 💪
 
 ocean.py lets you do the following things:
