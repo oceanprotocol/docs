@@ -21,6 +21,12 @@ You will learn that by just holding veOCEAN passively, you are able to earn rewa
 
 [Data Farming Background](df-background.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
 
+## Delegation
+
+[Delegation](delegation.md) will teach you how to share your veOCEAN allocation power to other users who can manage Data Farming for you.
+
+Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of your rewards and the process of returning those back to you.
+
 ## Further Reading
 
 Finally, if you want to continue expanding your knowledge on OCEAN token emissions, APY estimates, and get useful answers to some of the most common questions, you can read the following:
