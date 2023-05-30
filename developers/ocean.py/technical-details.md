@@ -6,6 +6,8 @@ description: Technical details about most used ocean.py functions
 
 At the beginning of most flows, we create an `ocean` object, which is an instance of class [`Ocean`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py). It exposes useful information, including the following.
 
+### Ocean instance
+
 Ocean class:
 
 <details>
@@ -357,3 +359,140 @@ As parameters:
 {% endcode %}
 
 </details>
+
+### Ocean Assets
+
+
+
+### Datatoken Interface
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL336C5-L377C18"><code>datatoken.create_dispenser(self, tx_dict: dict, max_tokens: Optional[Union[int, str]] = None, max_balance: Optional[Union[int, str]] = None, with_mint: Optional[bool] = True)</code></a></summary>
+
+Through datatoken, you can deploy a new dispenser schema which is used for creating free assets, because its behaviour is similar with a faucet. ⛲
+
+It is implemented in DatatokenBase, inherited by Datatoken2, so it can be called within both instances.
+
+Each parameter has the following meaning:
+
+1. `tx_dict` - is the configuration for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+2. `max_tokens` - maximum amount of tokens to dispense in wei
+3. `max_balance` - maximum balance of requester in wei
+4. `with_mint` - boolean, `true` if we want to allow the dispenser to be a minter as default value
+
+Return value is a hex string which denotes the transaction hash of dispenser deployment.
+
+```python
+@enforce_types
+    def create_dispenser(
+        self,
+        tx_dict: dict,
+        max_tokens: Optional[Union[int, str]] = None,
+        max_balance: Optional[Union[int, str]] = None,
+        with_mint: Optional[bool] = True,
+    ):
+        """
+        For this datataken, create a dispenser faucet for free tokens.
+
+        This wraps the smart contract method Datatoken.createDispenser()
+          with a simpler interface.
+
+        :param: max_tokens - max # tokens to dispense, in wei
+        :param: max_balance - max balance of requester
+        :tx_dict: e.g. {"from": alice_wallet}
+        :return: tx
+        """
+        # already created, so nothing to do
+        if self.dispenser_status().active:
+            return
+
+        # set max_tokens, max_balance if needed
+        max_tokens = max_tokens or MAX_UINT256
+        max_balance = max_balance or MAX_UINT256
+
+        # args for contract tx
+        dispenser_addr = get_address_of_type(self.config_dict, "Dispenser")
+        with_mint = with_mint  # True -> can always mint more
+        allowed_swapper = ZERO_ADDRESS  # 0 -> so anyone can call dispense
+
+        # do contract tx
+        tx = self.createDispenser(
+            dispenser_addr,
+            max_tokens,
+            max_balance,
+            with_mint,
+            allowed_swapper,
+            tx_dict,
+        )
+        return tx
+```
+
+
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL379C5-L400C18"><code>datatoken.dispense(self, amount: Union[int, str], tx_dict: dict)</code></a></summary>
+
+This function is used to retrieve funds or datatokens for an user who wants to access an asset.
+
+It is implemented in DatatokenBase, so it can be called within Datatoken class.
+
+Each parameter has the following meaning:
+
+1. `amount` - amount of datatokens to be dispensed in wei (int or string format)
+2. `tx_dict` - is the configuration for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+
+Return value is a hex string which denotes the transaction hash of dispensed datatokens, like a proof.
+
+```python
+    @enforce_types
+    def dispense(self, amount: Union[int, str], tx_dict: dict):
+        """
+        Dispense free tokens via the dispenser faucet.
+
+        :param: amount - number of tokens to dispense, in wei
+        :tx_dict: e.g. {"from": alice_wallet}
+        :return: tx
+        """
+        # args for contract tx
+        datatoken_addr = self.address
+        from_addr = (
+            tx_dict["from"].address
+            if hasattr(tx_dict["from"], "address")
+            else tx_dict["from"]
+        )
+
+        # do contract tx
+        tx = self._ocean_dispenser().dispense(
+            datatoken_addr, amount, from_addr, tx_dict
+        )
+        return tx
+```
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL439C5-L483C1"><code>datatoken.dispense_and_order(self, consumer: str, service_index: int, provider_fees: dict, transaction_parameters: dict, consume_market_fees=None)</code></a></summary>
+
+This function is used to retrieve funds or datatokens for an user who wants to access an asset.
+
+It is implemented in Datatoken2, so it can be called within Datatoken2 class (using the enterprise template).
+
+Each parameter has the following meaning:
+
+1. `amount` - amount of datatokens to be dispensed in wei (int or string format)
+2. `tx_dict` - is the configuration for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+
+Return value is a hex string which denotes the transaction hash of dispensed datatokens, like a proof.
+
+</details>
+
+### Fixed Rate Exchange
+
+
+
+### Dispenser
