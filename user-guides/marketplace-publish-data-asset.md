@@ -137,4 +137,4 @@ Learn more about the publishing flow!
 
 ### Related Articles 📖
 
-https://blog.oceanprotocol.com/on-selling-data-in-ocean-market-9afcfa1e6e43
+[https://blog.oceanprotocol.com/on-selling-data-in-ocean-market-9afcfa1e6e43](https://blog.oceanprotocol.com/on-selling-data-in-ocean-market-9afcfa1e6e43)
