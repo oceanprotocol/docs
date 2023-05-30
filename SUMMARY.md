@@ -12,7 +12,7 @@
   * [Glossary](discover/glossary.md)
   * [FAQ](discover/faq.md)
 * [📚 User Guides](user-guides/README.md)
-  * [Publish an NFT](user-guides/marketplace-publish-data-asset.md)
+  * [Publish a data NFT](user-guides/marketplace-publish-data-asset.md)
   * [Buy NFT Assets](user-guides/marketplace-download-data-asset.md)
   * [Sell NFT Computations (Compute-to-Data)](user-guides/compute-to-data/README.md)
     * [Make a Boss C2D Algorithm](user-guides/compute-to-data/make-a-boss-c2d-algorithm.md)

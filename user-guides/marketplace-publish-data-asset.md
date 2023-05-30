@@ -1,16 +1,18 @@
 ---
-description: How to Publish Data and Algorithms as NFTs Using the Ocean Market
+description: How to Mint and Publish Data NFTs Using the Ocean Market
 ---
 
-# Publish an NFT
+# Publish a data NFT
 
 <figure><img src="../.gitbook/assets/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
 
 ### What to Publish? 🤷‍♀️
 
-Ocean Protocol has a convenient marketplace, called the Ocean Market, for publishers and consumers of data and algorithm NFTs. These assets span anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Market.
+Ocean Protocol has a convenient marketplace, called the Ocean Market, for publishers and consumers of data. What data, you ask? This data spans anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Ocean Market.
 
-Please note Ocean Protocol maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
+### How to Mint an NFT using Ocean Protocol?
+
+The publishing process on the Ocean Market both mints (i.e. creates) a data NFT and a corresponding datatoken for your IP. The data NFT stores your IP, and the datatoken controls access to it. For example, if you publish your music IP on the Ocean Market, then during the publishing process a data NFT containing your music and its datatoken are minted. When consumers purchase your music's datatoken, then they gain access to download/use your data NFT's music.&#x20;
 
 ### How to Publish an NFT on the Ocean Market 🧑‍🏫
 
@@ -130,6 +132,8 @@ Your data or algorithm NFT is \*published\* on-chain once you complete the flow.
 {% embed url="https://www.youtube.com/watch?v=I06AUNt7ee8" %}
 Learn more about the publishing flow!
 {% endembed %}
+
+**Note:** Ocean Protocol maintains a purgatory list [here](https://github.com/oceanprotocol/list-purgatory) to block addresses and remove assets for any violations.
 
 ### Related Articles 📖
 
