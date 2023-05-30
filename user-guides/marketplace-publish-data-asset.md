@@ -2,7 +2,7 @@
 description: How to Mint and Publish Data NFTs Using the Ocean Market
 ---
 
-# Publish a data NFT
+# Publish an NFT
 
 <figure><img src="../.gitbook/assets/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
 
@@ -12,7 +12,7 @@ Ocean Protocol has a convenient marketplace, called the Ocean Market, for publis
 
 ### How to Mint an NFT using Ocean Protocol?
 
-The publishing process on the Ocean Market both mints (i.e. creates) a data NFT and a corresponding datatoken for your IP. The data NFT stores your IP, and the datatoken controls access to it. For example, if you publish your music IP on the Ocean Market, then during the publishing process a data NFT containing your music and its datatoken are minted. When consumers purchase your music's datatoken, then they gain access to download/use your data NFT's music.&#x20;
+The publishing process on the Ocean Market both mints (i.e. creates) a data NFT and a corresponding datatoken for your IP. The data NFT stores your IP, and the datatoken controls access to it. For example, if you publish your music IP on the Ocean Market, then a data NFT containing your music and its datatoken are minted during the publishing process. When consumers purchase your music's datatoken, then they gain access to download/use your data NFT's music.&#x20;
 
 ### How to Publish an NFT on the Ocean Market 🧑‍🏫
 
