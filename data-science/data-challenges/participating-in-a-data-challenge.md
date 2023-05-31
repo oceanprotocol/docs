@@ -1,9 +1,26 @@
-# Participating in a data challenge
+---
+description: >-
+  Roll with the brightest data scientists and machine learning experts for
+  prizes
+---
 
-Data challenges can take a few different formats. Some challenges are built for data exploration and reporting. In these challenges, participants are tasked with analyzing a provided dataset or several and conducting an exploratory analysis to understand the hidden insights in the data. Then, they build a written report that explains their insights so that a business user can make informed decisions from the analysis. Another format is the participants being tasked with building a model to perform a given task. They will typically be provided with a dataset(although not always) that they will use to train their model. In some challenges, the participants must publish their model as a compute asset on Ocean so that the model can be run using Compute-to-Data. Here is the typical flow for a data challenge.\
+# Join a Data Challenge
 
+<figure><img src="../../.gitbook/assets/morpheus-challenge.gif" alt=""><figcaption><p>Bring on the data challenges.</p></figcaption></figure>
 
-1. On Ocean Market, a dataset( or several) is published along with its description and schema. The dataset will either be provided by the data challenge sponsor partner or by OPF ourselves.
+Hone your skills, work on real business problems, and earn sweet dosh along the way.&#x20;
+
+### What is an Ocean Protocol data challenge?
+
+Ocean Protocol's data challenges are open competitions where participants must solve a real business problem using data science or machine learning skills. Some challenges are designed for data exploration, analysis, and reporting, while others require developing machine learning models. Thus, data challenges have different types of formats, topics, and sponsors. One of the main advantages of these data challenges is that users retain ownership of their IP and the ability to further monetize their work outside of the competition.
+
+### Where can I find the data challenges?
+
+Discover our open challenges [here](https://oceanprotocol.com/challengeshttps://oceanprotocol.com/challenges).
+
+### What is the typical flow for a data challenge?
+
+1. On Ocean Market, a dataset (or several) is published along with its description and schema. The dataset will either be provided by the data challenge sponsor partner or by OPF ourselves.
 2. Participants should download the dataset(s), or a sample if it the data is private. This will allow them to perform exploratory analysis to understand the dataset
 3. Based on the data challenge, there are several different ways participants may be tasked with entering the competition, One way is to build a report that combines data visualization and written explanations so that business stakeholders can gain actionable insights into the data. Another way is participants may be tasked with building a machine-learning model to predict a specific target value.&#x20;
-4. Users will typically submit directly with Ocean Technologies. They can post their reports or algorithms onto the Ocean Market. Those that produce strong submissions can monetize their work by using Ocean’s Compute-to-Data engine so that the model can be run by others in the future for a price.
+4. Users will typically submit directly with Ocean technologies. They can post their reports or algorithms onto the Ocean Market. Those that produce strong submissions can monetize their work by using Ocean’s Compute-to-Data engine so that the model can be run by others in the future for a price.

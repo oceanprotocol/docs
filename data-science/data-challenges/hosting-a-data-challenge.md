@@ -1,4 +1,6 @@
-# Hosting a data challenge
+# Host a data challenge
+
+<figure><img src="../../.gitbook/assets/welcome-to-my-dojo.gif" alt=""><figcaption></figcaption></figure>
 
 Hosting a data challenge can be an exciting way for data publishers to seed use cases and bring attention to their data assets. Hosting a challenge can also be a good way to tap a community of data scientists to build products on top of your data to gain insights and useful models for your business without needing to bring an in-house data science team. To host a data challenge, the steps can be found below.
 
