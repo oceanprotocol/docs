@@ -10,7 +10,7 @@ Once delegated, rewards will be sent to the wallet address you delegated to. The
 
 Follow these steps to delegate you veOcean:
 
-1. Go to the DF Portal and type in or copy over the wallet address you wish to delegate to inside the 'Receiver wallet address' field.
+1. Go to the DF Portal and enter or copy the wallet address you wish to delegate to into the 'Receiver wallet address' field.
 2. Click the Delegate button and sign the transaction. You can view information about your delegation in the My Delegations component.
 3. If needed, you can cancel the delegation to regain your allocation power before the delegation expires.
 
