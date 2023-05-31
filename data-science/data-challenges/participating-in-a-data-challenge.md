@@ -20,6 +20,8 @@ Discover our open challenges [here](https://oceanprotocol.com/challengeshttps://
 
 ### What is the typical flow for a data challenge?
 
-1. Participants should download the necessary dataset(s) on the Ocean Market according to the data challenge instructions.
-2. Participants may be tasked with building a report that combines data visualization and written explanations for a dataset, or they may be tasked with building a machine learning model to predict a specific target value.
-3. Participants should publish their results either publicly or privately using Ocean Protocol smart contracts by the deadline according to the challenge instructions.
+1. Participants download the necessary dataset(s) on the Ocean Market according to the data challenge instructions.
+2. Participants may be tasked with building a report that combines data visualization and written explanations for a dataset, or perhaps tasked with building a machine learning model to predict a specific target value.
+3. Participants publish their results either publicly or privately using Ocean Protocol smart contracts by the deadline as directed by the challenge instructions.
+4. Winners are selected and announced generally within 2 weeks.
+5. Winners will be sent instructions to claim their crypto prizes.
