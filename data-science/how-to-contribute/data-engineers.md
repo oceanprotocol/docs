@@ -6,6 +6,12 @@ Data engineers specialize in creating robust data pipelines that enable seamless
 
 There are numerous types of data that data engineers can contribute to the Ocean Protocol ecosystem.
 
-1. Government Open Data: Governments serve as a rich and reliable source of data. However, this data often lacks proper documentation or poses challenges for data scientists to work with effectively. Our team excels at establishing robust Extract, Transform, Load (ETL) pipelines that enhance accessibility to government open data. This way, you can tap into this wealth of information without unnecessary hurdles.
-2. Public APIs: A wide range of freely available public APIs covers various data verticals. Leveraging these APIs, our data engineers construct pipelines that enable efficient access and utilization of the data. We'll ensure that you have the necessary tools to harness the potential of these APIs, saving you valuable time and effort.
-3. On-Chain Data: Blockchain data presents a unique opportunity for data engineers to curate high-quality data. Whether it's connecting directly to the blockchain or utilizing alternative data providers, our team specializes in simplifying data usability. We understand the consistent demand for well-curated decentralized finance (DeFi) data and the emerging need for curated data in other domains, including social data. Count on us to provide you with curated on-chain data that empowers your projects.
+* Government Open Data: Governments serve as a rich and reliable source of data. However, this data often lacks proper documentation or poses challenges for data scientists to work with effectively. Establishing robust Extract, Transform, Load (ETL) pipelines enhance accessibility to government open data. This way, others can tap into this wealth of information without unnecessary hurdles. For example, in one of our [data challenges](https://desights.ai/shared/challenge/8) we leveraged public real estate data from Dubai to build use cases for understanding and predicting valuations and rents. Local, state, and federal governments around the world provide access to valuable data. Build pipelines to make consuming that data easier and help others build useful products to help your local community.
+
+
+
+* Public APIs: A wide range of freely available public APIs covers various data verticals. Leveraging these APIs, data engineers can construct pipelines that enable efficient access and utilization of the data. [This ](https://github.com/public-apis/public-apis)is a public repository of public APIs for a wide range of topics, from weather to gaming to finance.
+
+
+
+* On-Chain Data: Blockchain data presents a unique opportunity for data engineers to curate high-quality data. Whether it's connecting directly to the blockchain or utilizing alternative data providers, there is tremendous value for simplifying data usability in this emerging field. There is consistent demand for well-curated decentralized finance (DeFi) data and an emerging need for curated data in other domains, such as decentralized social data.&#x20;
