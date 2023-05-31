@@ -6,7 +6,7 @@ description: Technical details about most used ocean.py functions
 
 At the beginning of most flows, we create an `ocean` object, which is an instance of class [`Ocean`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py). It exposes useful information, including the following.
 
-### Ocean instance
+### Ocean Instance
 
 Ocean class:
 
@@ -839,39 +839,286 @@ Returns DDO instance.
 
 Searches a DDO by a specific text.
 
+Param:
+
+* `text` - string text to search for assets which include it.
+
+Return:
+
+A list of DDOs which have matches with the text provided as parameter.
+
+```python
+@enforce_types
+    def search(self, text: str) -> list:
+        """
+        Search for DDOs in aquarius that contain the target text string
+        :param text - target string
+        :return - List of DDOs that match with the query
+        """
+        logger.info(f"Search for DDOs containing text: {text}")
+        text = text.replace(":", "\\:").replace("\\\\:", "\\:")
+        return [
+            DDO.from_dict(ddo_dict["_source"])
+            for ddo_dict in self._aquarius.query_search(
+                {"query": {"query_string": {"query": text}}}
+            )
+            if "_source" in ddo_dict
+        ]
+```
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL477C4-L490C10"><code>ocean.assets.query(self, query: dict) -> list</code></a></summary>
+
+Searches a DDO by a specific query.
+
+Param:
+
+* `query` - dictionary type query to search for assets which include it.
+
+Return:
+
+A list of DDOs which have matches with the query provided as parameter.
+
+{% code overflow="wrap" %}
+```python
+ @enforce_types
+    def query(self, query: dict) -> list:
+        """
+        Search for DDOs in aquarius with a search query dict
+        :param query - dict with query parameters
+          More info at: https://docs.oceanprotocol.com/api-references/aquarius-rest-api
+        :return - List of DDOs that match the query.
+        """
+        logger.info(f"Search for DDOs matching query: {query}")
+        return [
+            DDO.from_dict(ddo_dict["_source"])
+            for ddo_dict in self._aquarius.query_search(query)
+            if "_source" in ddo_dict
+        ]
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL492C5-L516C20"><code>ocean.assets.download_asset( self, ddo: DDO, consumer_wallet, destination: str, order_tx_id: Union[str, bytes], service: Optional[Service] = None, index: Optional[int] = None, userdata: Optional[dict] = None, ) -> str</code></a></summary>
+
+Downloads the asset from Ocean Market.
+
+Params:
+
+* `ddo` - DDO to be downloaded.
+* `consumer_wallet` - Brownie account for the wallet that "ordered" the asset.
+* `destination` - destination path, as string, where the asset will be downloaded.
+* `order_tx_id` - transaction ID for the placed order, string and bytes formats are accepted.
+
+Optional params:
+
+* `service` - optionally if you want to provide the `Service` object through you downloaded the asset.
+* `index` - optionally if you want to download certain files, not the whole asset, you can specify how many files you want to download as positive `integer` format.
+* `userdata` - `dictionary` additional data from user.
+
+Return:
+
+The full path to the downloaded file as `string`.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def download_asset(
+        self,
+        ddo: DDO,
+        consumer_wallet,
+        destination: str,
+        order_tx_id: Union[str, bytes],
+        service: Optional[Service] = None,
+        index: Optional[int] = None,
+        userdata: Optional[dict] = None,
+    ) -> str:
+        service = service or ddo.services[0]  # fill in good default
+
+        if index is not None:
+            assert isinstance(index, int), logger.error("index has to be an integer.")
+            assert index >= 0, logger.error("index has to be 0 or a positive integer.")
+
+        assert (
+            service and service.type == ServiceTypes.ASSET_ACCESS
+        ), f"Service with type {ServiceTypes.ASSET_ACCESS} is not found."
+
+        path: str = download_asset_files(
+            ddo, service, consumer_wallet, destination, order_tx_id, index, userdata
+        )
+        return path
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL518C5-L571C28"><code>ocean.assets.pay_for_access_service( self, ddo: DDO, wallet, service: Optional[Service] = None, consume_market_fees: Optional[TokenFeeInfo] = None, consumer_address: Optional[str] = None, userdata: Optional[dict] = None, )</code></a></summary>
+
+Pays for access service by calling initialize endpoint from Provider and starting the order.
+
+Params:
+
+* `ddo` - DDO to be downloaded.
+* `wallet`- Brownie account for the wallet that pays for the asset.
+
+Optional params:
+
+* `service` - optionally if you want to provide the `Service` object through you downloaded the asset.
+* `consume_market_fees` - `TokenFeeInfo` object which contains consume market fee address, amount and token address.
+* `consumer_address` - address for the consumer which pays for the access.
+* `userdata` - `dictionary` additional data from user.
+
+Return value is a hex string for transaction hash which denotes the proof of starting order.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def pay_for_access_service(
+        self,
+        ddo: DDO,
+        wallet,
+        service: Optional[Service] = None,
+        consume_market_fees: Optional[TokenFeeInfo] = None,
+        consumer_address: Optional[str] = None,
+        userdata: Optional[dict] = None,
+    ):
+        # fill in good defaults as needed
+        service = service or ddo.services[0]
+        consumer_address = consumer_address or wallet.address
+
+        # main work...
+        dt = Datatoken(self._config_dict, service.datatoken)
+        balance = dt.balanceOf(wallet.address)
+
+        if balance < to_wei(1):
+            raise InsufficientBalance(
+                f"Your token balance {balance} {dt.symbol()} is not sufficient "
+                f"to execute the requested service. This service "
+                f"requires 1 wei."
+            )
+
+        consumable_result = is_consumable(
+            ddo,
+            service,
+            {"type": "address", "value": wallet.address},
+            userdata=userdata,
+        )
+        if consumable_result != ConsumableCodes.OK:
+            raise AssetNotConsumable(consumable_result)
+
+        data_provider = DataServiceProvider
+
+        initialize_args = {
+            "did": ddo.did,
+            "service": service,
+            "consumer_address": consumer_address,
+        }
+
+        initialize_response = data_provider.initialize(**initialize_args)
+        provider_fees = initialize_response.json()["providerFee"]
+
+        receipt = dt.start_order(
+            consumer=consumer_address,
+            service_index=ddo.get_index_of_service(service),
+            provider_fees=provider_fees,
+            consume_market_fees=consume_market_fees,
+            transaction_parameters={"from": wallet},
+        )
+
+        return receipt.txid
+```
+{% endcode %}
+
 
 
 </details>
 
 <details>
 
-<summary>ocean.assets.query(self, query: dict) -> list</summary>
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL573C5-L627C30"><code>ocean.assets.pay_for_compute_service( self, datasets: List[ComputeInput], algorithm_data: Union[ComputeInput, AlgorithmMetadata], compute_environment: str, valid_until: int, consume_market_order_fee_address: str, wallet, consumer_address: Optional[str] = None, )</code></a></summary>
 
+Pays for compute service by calling `initializeCompute` endpoint from Provider to retrieve the provider fees and starting the order afterwards.
 
+Params:
 
-</details>
+* `datasets` - list of `ComputeInput` objects, each of them includes mandatory the DDO and service.
+* `algorithm_data` - which can be either a `ComputeInput` object which contains the whole DDO and service, either provide just the algorithm metadata as `AlgorithmMetadata`.
+* `compute_environment` - `string` that represents the ID from the chosen C2D environemnt.
+* `valid_until` - `UNIX timestamp` which represents until when the algorithm can be used/run.
+* `consume_market_order_fee_address` - string address which denotes the consume market fee address for that order and can be the wallet address itself.
+* `wallet` - the `Brownie account` which pays for the compute service
 
-<details>
+Optional params:
 
-<summary>ocean.assets.download_asset( self, ddo: DDO, consumer_wallet, destination: str, order_tx_id: Union[str, bytes], service: Optional[Service] = None, index: Optional[int] = None, userdata: Optional[dict] = None, ) -> str</summary>
+* `consumer_address` - is the string address of the C2D environment consumer.
 
+Return value is a tuple composed of list of datasets and algorithm data (if exists in result), `(datasets, algorithm_data)`.
 
+```python
+ @enforce_types
+    def pay_for_compute_service(
+        self,
+        datasets: List[ComputeInput],
+        algorithm_data: Union[ComputeInput, AlgorithmMetadata],
+        compute_environment: str,
+        valid_until: int,
+        consume_market_order_fee_address: str,
+        wallet,
+        consumer_address: Optional[str] = None,
+    ):
+        data_provider = DataServiceProvider
 
-</details>
+        if not consumer_address:
+            consumer_address = wallet.address
 
-<details>
+        initialize_response = data_provider.initialize_compute(
+            [x.as_dictionary() for x in datasets],
+            algorithm_data.as_dictionary(),
+            datasets[0].service.service_endpoint,
+            consumer_address,
+            compute_environment,
+            valid_until,
+        )
 
-<summary>ocean.assets.pay_for_access_service( self, ddo: DDO, wallet, service: Optional[Service] = None, consume_market_fees: Optional[TokenFeeInfo] = None, consumer_address: Optional[str] = None, userdata: Optional[dict] = None, )</summary>
+        result = initialize_response.json()
+        for i, item in enumerate(result["datasets"]):
+            self._start_or_reuse_order_based_on_initialize_response(
+                datasets[i],
+                item,
+                TokenFeeInfo(
+                    consume_market_order_fee_address,
+                    datasets[i].consume_market_order_fee_token,
+                    datasets[i].consume_market_order_fee_amount,
+                ),
+                wallet,
+                consumer_address,
+            )
 
+        if "algorithm" in result:
+            self._start_or_reuse_order_based_on_initialize_response(
+                algorithm_data,
+                result["algorithm"],
+                TokenFeeInfo(
+                    address=consume_market_order_fee_address,
+                    token=algorithm_data.consume_market_order_fee_token,
+                    amount=algorithm_data.consume_market_order_fee_amount,
+                ),
+                wallet,
+                consumer_address,
+            )
 
+            return datasets, algorithm_data
 
-</details>
-
-<details>
-
-<summary>ocean.assets.pay_for_compute_service( self, datasets: List[ComputeInput], algorithm_data: Union[ComputeInput, AlgorithmMetadata], compute_environment: str, valid_until: int, consume_market_order_fee_address: str, wallet, consumer_address: Optional[str] = None, )</summary>
-
-
+        return datasets, None
+```
 
 </details>
 
