@@ -2,11 +2,11 @@
 description: Sponsor a data challenge to crowdsource solutions for your business problems
 ---
 
-# Sponsor a data challenge
+# Sponsor a Data Challenge
 
 <figure><img src="../../.gitbook/assets/welcome-to-my-dojo.gif" alt=""><figcaption><p>Make the game, set the rules.</p></figcaption></figure>
 
-Hosting a data challenge can be an exciting way for data publishers to seed use cases and bring attention to their data assets. Hosting a challenge can also be a good way to tap a community of data scientists to build products on top of your data to gain insights and useful models for your business without needing to bring an in-house data science team. To host a data challenge, the steps can be found below.
+Hosting a data challenge is a fun way to crowdsource the wisdom of data scientists and machine learning experts around the world. Incentivize participants to build products on top of your data, explain insights, or provide useful models for your business. Plus, it's a whole lot cheaper than hiring an in-house data science team!
 
 ### How to sponsor an Ocean Protocol data challenge?
 
