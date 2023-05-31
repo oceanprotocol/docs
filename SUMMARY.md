@@ -24,7 +24,7 @@
     * [Azure Cloud](user-guides/asset-hosting/azure-cloud.md)
   * [Guide to the Ocean Market](user-guides/using-ocean-market.md)
   * [Join a Data Challenge](data-science/data-challenges/participating-in-a-data-challenge.md)
-  * [Sponsor a data challenge](data-science/data-challenges/hosting-a-data-challenge.md)
+  * [Sponsor a Data Challenge](data-science/data-challenges/hosting-a-data-challenge.md)
   * [Get Started Data Farming](user-guides/get-veocean-tokens.md)
   * [Harvest More Yield Data Farming](user-guides/how-to-data-farm.md)
   * [Claim Rewards Data Farming](user-guides/claim-ocean-rewards.md)
