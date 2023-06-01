@@ -8,8 +8,8 @@ description: Choose the revenue model during asset publishing
 
 Ocean Protocol offers you flexible and customizable pricing options to monetize your valuable data assets. You have two main pricing models to choose from:&#x20;
 
-* Fixed pricing&#x20;
-* Free pricing
+* [Fixed pricing ](asset-pricing.md#fixed-pricing)
+* [Free pricing](asset-pricing.md#free-pricing)
 
 These models are designed to cater to your specific needs and ensure a smooth experience for data consumers.
 
@@ -33,6 +33,6 @@ The fixed pricing model relies on the [createNftWithErc20WithDispenser](https://
 
 
 
-To make the most of these pricing models, you can rely on user-friendly libraries such as Ocean.js and Ocean.py, specifically developed for interacting with Ocean Protocol. With Ocean.js, you can use the [createFRE() ](ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](ocean.py/publish-flow.md) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
+To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](ocean.js/)and [Ocean.py](ocean.py/), specifically developed for interacting with Ocean Protocol. With Ocean.js, you can use the [createFRE() ](ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](ocean.py/publish-flow.md) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
 
 By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](ocean.js/) and [Ocean.py](ocean.py/) (or by using the [Market](../user-guides/using-ocean-market.md)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.&#x20;
