@@ -15,7 +15,12 @@ All Ocean Protocol components (Provider, Aquarius, Subgraph) are designed to run
 * [Docker Engine supported platforms](https://docs.docker.com/engine/install/)&#x20;
 * [Docker Compose supported platforms](https://docs.docker.com/desktop/install/linux-install/)
 
+## Server Size
 
+The required CPU and memory for the server depend on the number of requests the component is expected to serve, but the minimum configuration is:
+
+* 1 core
+* 1 GB RAM
 
 ## Steps
 
@@ -31,13 +36,6 @@ The steps for setting up a server on which to deploy the Ocean components are th
 As mentioned earlier, you can use either an on-premise server or one hosted in the cloud (AWS, Azure, Digitalocean, etc.). To install the operating system on an on-premise server, please refer to the installation documentation of the operating system.
 
 If you choose to use a server hosted in the cloud, you need to create the server using the user interface provided by the cloud platform. Following is an example of how to create a server in Digitalocean.&#x20;
-
-#### Sizing
-
-The required CPU and memory for the server depend on the number of requests the component is expected to serve, but the minimum configuration is:
-
-* 1 core
-* 1 GB RAM
 
 #### Example: Creating an Ubuntu Linux server in the Digitalocean cloud
 
