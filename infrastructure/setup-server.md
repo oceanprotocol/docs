@@ -10,7 +10,7 @@ Now that you know the components of the Ocean Protocol stack and what each does,
 
 ## Prerequisites
 
-All Ocean Protocol components (Provider, Aquarius, Subgraph, C2D) are designed to run in Docker containers on a Linux operating system. We rely on Docker Engine and Docker Compose to deploy and run our components, so when you set up your server, select a Linux operating system supported by these two products. Please refer to these links for choosing a compatible operating system:
+All Ocean Protocol components (Provider, Aquarius, Subgraph) are designed to run in Docker containers on a Linux operating system. We rely on Docker Engine and Docker Compose to deploy and run our components, so when you set up your server, select a Linux operating system supported by these two products. Please refer to these links for choosing a compatible operating system:
 
 * [Docker Engine supported platforms](https://docs.docker.com/engine/install/)&#x20;
 * [Docker Compose supported platforms](https://docs.docker.com/desktop/install/linux-install/)
@@ -32,6 +32,13 @@ As mentioned earlier, you can use either an on-premise server or one hosted in t
 
 If you choose to use a server hosted in the cloud, you need to create the server using the user interface provided by the cloud platform. Following is an example of how to create a server in Digitalocean.&#x20;
 
+#### Sizing
+
+The required CPU and memory for the server depend on the number of requests the component is expected to serve, but the minimum configuration is:
+
+* 1 core
+* 1 GB RAM
+
 #### Example: Creating an Ubuntu Linux server in the Digitalocean cloud
 
 1. Creating account and setting billing
@@ -50,7 +57,7 @@ Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
 3. Select a server configuration
 
-Select Ubuntu OS, and choose a plan and a configuration. The required CPU and memory depend on the number of requests the component is expected to serve.
+Select Ubuntu OS, and choose a plan and a configuration.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Configure the server</p></figcaption></figure>
 
@@ -74,13 +81,13 @@ Specify a hostname for the server, specify the project to which you assign the s
 
 6. Access the server's console
 
-After the server is ready, select the `Access console` option from the dropdown list.
+After the server is ready, select the `Access console` option from the dropdown list to open a terminal window.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Access the server's console</p></figcaption></figure>
 
 ### Install Docker and Docker Compose
 
-From a terminal window, run the following commands to install Docker and Docker Compose.
+From the terminal window, run the following commands to install Docker and Docker Compose.
 
 ```
 sudo apt-get update
