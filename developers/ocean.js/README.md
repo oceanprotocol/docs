@@ -13,3 +13,7 @@ With ocean.js, you can:
 * **Transfer** data NFTs & datatokens.
 
 Ocean.js is part of the [Ocean Protocol](https://oceanprotocol.com) toolset.
+
+{% embed url="https://www.youtube.com/watch?v=lqGXPkPUCqI" %}
+Introducing Ocean.JS
+{% endembed %}
