@@ -29,7 +29,7 @@
   * [Harvest More Yield Data Farming](user-guides/how-to-data-farm.md)
   * [Claim Rewards Data Farming](user-guides/claim-ocean-rewards.md)
   * [Liquidity Pools \[deprecated\]](user-guides/remove-liquidity-using-etherscan.md)
-* [👨💻 👨💻 Developers](developers/README.md)
+* [👨💻 Developers](developers/README.md)
   * [Architecture Overview](developers/architecture.md)
   * [Data NFTs and Datatokens](developers/datanft-and-datatoken/README.md)
     * [Data NFTs](developers/datanft-and-datatoken/data-nfts.md)
