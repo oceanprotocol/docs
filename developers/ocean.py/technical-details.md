@@ -729,6 +729,94 @@ def create(
 
 
 
+#### Publishing Alternatives
+
+Here are some examples similar to the `create()` above, but exposes more fine-grained control.
+
+In the same python console:
+
+```python
+# Specify metadata and services, using the Branin test dataset
+date_created = "2021-12-28T10:55:11Z"
+metadata = {
+    "created": date_created,
+    "updated": date_created,
+    "description": "Branin dataset",
+    "name": "Branin dataset",
+    "type": "dataset",
+    "author": "Trent",
+    "license": "CC0: PublicDomain",
+}
+
+# Use "UrlFile" asset type. (There are other options)
+from ocean_lib.structures.file_objects import UrlFile
+url_file = UrlFile(
+    url="https://raw.githubusercontent.com/trentmc/branin/main/branin.arff"
+)
+
+# Publish data asset
+from ocean_lib.models.datatoken_base import DatatokenArguments
+_, _, ddo = ocean.assets.create(
+    metadata,
+    {"from": alice},
+    datatoken_args=[DatatokenArguments(files=[url_file])],
+)
+```
+
+#### DDO Encryption or Compression
+
+The DDO is stored on-chain. It's encrypted and compressed by default. Therefore it supports GDPR "right-to-be-forgotten" compliance rules by default.
+
+You can control this during `create()`:
+
+* To disable encryption, use `ocean.assets.create(..., encrypt_flag=False)`.
+* To disable compression, use `ocean.assets.create(..., compress_flag=False)`.
+* To disable both, use `ocean.assetspy.create(..., encrypt_flag=False, compress_flag=False)`.
+
+#### Create _just_ a data NFT
+
+Calling `create()` like above generates a data NFT, a datatoken for that NFT, and a ddo. This is the most common case. However, sometimes you may want _just_ the data NFT, e.g. if using a data NFT as a simple key-value store. Here's how:
+
+```python
+data_nft = ocean.data_nft_factory.create({"from": alice}, 'NFT1', 'NFT1')
+```
+
+If you call `create()` after this, you can pass in an argument `data_nft_address:string` and it will use that NFT rather than creating a new one.
+
+#### Create a datatoken from a data NFT
+
+Calling `create()` like above generates a data NFT, a datatoken for that NFT, and a ddo object. However, we may want a second datatoken. Or, we may have started with _just_ the data NFT, and want to add a datatoken to it. Here's how:
+
+```python
+datatoken = data_nft.create_datatoken({"from": alice}, "Datatoken 1", "DT1")
+```
+
+If you call `create()` after this, you can pass in an argument `deployed_datatokens:List[Datatoken1]` and it will use those datatokens during creation.
+
+#### Create an asset & pricing schema simultaneously
+
+Ocean Assets allows you to bundle several common scenarios as a single transaction, thus lowering gas fees.
+
+Any of the `ocean.assets.create_<type>_asset()` functions can also take an optional parameter that describes a bundled pricing schema (Dispenser or Fixed Rate Exchange).&#x20;
+
+Here is an example involving an exchange:
+
+{% code overflow="wrap" %}
+```python
+from ocean_lib.models.fixed_rate_exchange import ExchangeArguments
+(data_nft, datatoken, ddo) = ocean.assets.create_url_asset(
+    name,
+    url,
+    {"from": alice},
+    pricing_schema_args=ExchangeArguments(rate=to_wei(3), base_token_addr=ocean.OCEAN_address, dt_decimals=18)
+)
+
+assert len(datatoken.get_exchanges()) == 1
+```
+{% endcode %}
+
+
+
 </details>
 
 <details>
@@ -1051,7 +1139,7 @@ Params:
 
 * `datasets` - list of `ComputeInput` objects, each of them includes mandatory the DDO and service.
 * `algorithm_data` - which can be either a `ComputeInput` object which contains the whole DDO and service, either provide just the algorithm metadata as `AlgorithmMetadata`.
-* `compute_environment` - `string` that represents the ID from the chosen C2D environemnt.
+* `compute_environment` - `string` that represents the ID from the chosen C2D environment.
 * `valid_until` - `UNIX timestamp` which represents until when the algorithm can be used/run.
 * `consume_market_order_fee_address` - string address which denotes the consume market fee address for that order and can be the wallet address itself.
 * `wallet` - the `Brownie account` which pays for the compute service
@@ -1123,6 +1211,124 @@ Return value is a tuple composed of list of datasets and algorithm data (if exis
 </details>
 
 ### Ocean Compute
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL32C4-L70C33"><code>ocean.compute.start( self, consumer_wallet, dataset: ComputeInput, compute_environment: str, algorithm: Optional[ComputeInput] = None, algorithm_meta: Optional[AlgorithmMetadata] = None, algorithm_algocustomdata: Optional[dict] = None, additional_datasets: List[ComputeInput] = []) -> str</code></a></summary>
+
+Starts a compute job.
+
+It can be called within Ocean Compute class.
+
+Params:
+
+* `consumer_wallet` - the `Brownie account` of consumer who pays & starts for compute job.
+* `dataset` - `ComputeInput` object, each of them includes mandatory the DDO and service.
+* `compute_environment` - `string` that represents the ID from the chosen C2D environment.
+* `additional_datasets` - list of `ComputeInput` objects for additional datasets in case of starting a compute job for multiple datasets.
+
+Optional params:
+
+* `algorithm` - `ComputeInput` object, each of them includes mandatory the DDO and service for algorithm.
+* `algorithm_meta` - either provide just the algorithm metadata as `AlgorithmMetadata.`
+* `algorithm_algocustomedata` - additional user data for the algorithm as dictionary.
+
+Return:
+
+Returns a string type job ID.
+
+```python
+ @enforce_types
+    def start(
+        self,
+        consumer_wallet,
+        dataset: ComputeInput,
+        compute_environment: str,
+        algorithm: Optional[ComputeInput] = None,
+        algorithm_meta: Optional[AlgorithmMetadata] = None,
+        algorithm_algocustomdata: Optional[dict] = None,
+        additional_datasets: List[ComputeInput] = [],
+    ) -> str:
+        metadata_cache_uri = self._config_dict.get("METADATA_CACHE_URI")
+        ddo = Aquarius.get_instance(metadata_cache_uri).get_ddo(dataset.did)
+        service = ddo.get_service_by_id(dataset.service_id)
+        assert (
+            ServiceTypes.CLOUD_COMPUTE == service.type
+        ), "service at serviceId is not of type compute service."
+
+        consumable_result = is_consumable(
+            ddo,
+            service,
+            {"type": "address", "value": consumer_wallet.address},
+            with_connectivity_check=True,
+        )
+        if consumable_result != ConsumableCodes.OK:
+            raise AssetNotConsumable(consumable_result)
+
+        # Start compute job
+        job_info = self._data_provider.start_compute_job(
+            dataset_compute_service=service,
+            consumer=consumer_wallet,
+            dataset=dataset,
+            compute_environment=compute_environment,
+            algorithm=algorithm,
+            algorithm_meta=algorithm_meta,
+            algorithm_custom_data=algorithm_algocustomdata,
+            input_datasets=additional_datasets,
+        )
+        return job_info["jobId"]
+```
+
+
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL72C5-L88C24"><code>ocean.compute.status(self, ddo: DDO, service: Service, job_id: str, wallet) -> Dict[str, Any]</code></a></summary>
+
+Gets status of the compute job.
+
+Params:
+
+* ddo - data DDO object
+* service - Service object of compute
+* job\_id - ID of the compute job
+* wallet - Brownie account &#x20;
+
+</details>
+
+<details>
+
+<summary></summary>
+
+
+
+</details>
+
+<details>
+
+<summary></summary>
+
+
+
+</details>
+
+<details>
+
+<summary></summary>
+
+
+
+</details>
+
+<details>
+
+<summary></summary>
+
+
+
+</details>
 
 ### Datatoken Interface
 
