@@ -84,6 +84,8 @@ DATA_datatoken.mint(bob, to_wei(5), {"from": alice})
 ALGO_datatoken.mint(bob, to_wei(5), {"from": alice})
 ```
 
+You can choose each method for getting access from[ consume flow approaches](consume-flow.md).
+
 ### 5. Bob starts a compute job using a free C2D environment
 
 Only inputs needed: DATA\_did, ALGO\_did. Everything else can get computed as needed. For demo purposes, we will use the free C2D environment, which requires no provider fees.
