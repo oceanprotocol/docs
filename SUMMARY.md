@@ -65,6 +65,7 @@
     * [Remote Setup](developers/ocean.py/remote-setup.md)
     * [Publish flow](developers/ocean.py/publish-flow.md)
     * [Consume flow](developers/ocean.py/consume-flow.md)
+    * [Compute flow](developers/ocean.py/compute-flow.md)
     * [Technical Details](developers/ocean.py/technical-details.md)
   * [Ocean.js](developers/ocean.js/README.md)
     * [Configuration](developers/ocean.js/configuration.md)
