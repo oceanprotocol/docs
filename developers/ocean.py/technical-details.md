@@ -1289,44 +1289,234 @@ Returns a string type job ID.
 
 Gets status of the compute job.
 
+It can be called within Ocean Compute class.
+
 Params:
 
-* ddo - data DDO object
-* service - Service object of compute
-* job\_id - ID of the compute job
-* wallet - Brownie account &#x20;
+* `ddo` - DDO offering the compute service of this job
+* `service` - Service object of compute
+* `job_id` - ID of the compute job
+* `wallet` - Brownie account which initiated the compute job
+
+Return:
+
+A dictionary which contains the status for an existing compute job, keys are `(ok, status, statusText)`.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def status(self, ddo: DDO, service: Service, job_id: str, wallet) -> Dict[str, Any]:
+        """
+        Gets job status.
+
+        :param ddo: DDO offering the compute service of this job
+        :param service: compute service of this job
+        :param job_id: str id of the compute job
+        :param wallet: Wallet instance
+        :return: dict the status for an existing compute job, keys are (ok, status, statusText)
+        """
+        job_info = self._data_provider.compute_job_status(
+            ddo.did, job_id, service, wallet
+        )
+        job_info.update({"ok": job_info.get("status") not in (31, 32, None)})
+
+        return job_info
+```
+{% endcode %}
+
+
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL90C5-L106C22"><code>ocean.compute.result( self, ddo: DDO, service: Service, job_id: str, index: int, wallet ) -> Dict[str, Any]</code></a></summary>
 
+Gets compute job result.
 
+It can be called within Ocean Compute class.
+
+Params:
+
+* `ddo` - DDO offering the compute service of this job
+* `service` - Service object of compute
+* `job_id` - ID of the compute job
+* `index` - compute result index
+* `wallet` - Brownie account which initiated the compute job
+
+Return:
+
+A dictionary wich contains the results/logs urls for an existing compute job, keys are `(did, urls, logs)`.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def result(
+        self, ddo: DDO, service: Service, job_id: str, index: int, wallet
+    ) -> Dict[str, Any]:
+        """
+        Gets job result.
+
+        :param ddo: DDO offering the compute service of this job
+        :param service: compute service of this job
+        :param job_id: str id of the compute job
+        :param index: compute result index
+        :param wallet: Wallet instance
+        :return: dict the results/logs urls for an existing compute job, keys are (did, urls, logs)
+        """
+        result = self._data_provider.compute_job_result(job_id, index, service, wallet)
+
+        return result
+```
+{% endcode %}
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL108C5-L130C22"><code>ocean.compute.compute_job_result_logs( self, ddo: DDO, service: Service, job_id: str, wallet, log_type="output", ) -> Dict[str, Any]</code></a></summary>
 
+Gets job output if exists.
 
+It can be called within Ocean Compute class.
+
+Params:
+
+* `ddo` - DDO offering the compute service of this job
+* `service` - Service object of compute
+* `job_id` - ID of the compute job
+* `wallet` - Brownie account which initiated the compute job
+* `log_type` - string which selects what kind of logs to display. Default "output"
+
+Return:
+
+A dictionary which includes the results/logs urls for an existing compute job, keys are `(did, urls, logs)`.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def compute_job_result_logs(
+        self,
+        ddo: DDO,
+        service: Service,
+        job_id: str,
+        wallet,
+        log_type="output",
+    ) -> Dict[str, Any]:
+        """
+        Gets job output if exists.
+
+        :param ddo: DDO offering the compute service of this job
+        :param service: compute service of this job
+        :param job_id: str id of the compute job
+        :param wallet: Wallet instance
+        :return: dict the results/logs urls for an existing compute job, keys are (did, urls, logs)
+        """
+        result = self._data_provider.compute_job_result_logs(
+            ddo, job_id, service, wallet, log_type
+        )
+
+        return result
+```
+{% endcode %}
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL132C5-L146C24"><code>ocean.compute.stop(self, ddo: DDO, service: Service, job_id: str, wallet) -> Dict[str, Any]</code></a></summary>
 
+Attempts to stop the running compute job.
 
+It can be called within Ocean Compute class.
+
+Params:
+
+* `ddo` - DDO offering the compute service of this job
+* `service` - Service object of compute
+* `job_id` - ID of the compute job
+* `wallet` - Brownie account which initiated the compute job
+
+Return:
+
+A dictionary which contains the status for the stopped compute job, keys are `(ok, status, statusText)`.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def stop(self, ddo: DDO, service: Service, job_id: str, wallet) -> Dict[str, Any]:
+        """
+        Attempt to stop the running compute job.
+
+        :param ddo: DDO offering the compute service of this job
+        :param job_id: str id of the compute job
+        :param wallet: Wallet instance
+        :return: dict the status for the stopped compute job, keys are (ok, status, statusText)
+        """
+        job_info = self._data_provider.stop_compute_job(
+            ddo.did, job_id, service, wallet
+        )
+        job_info.update({"ok": job_info.get("status") not in (31, 32, None)})
+        return job_info
+```
+{% endcode %}
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL148C4-L150C84"><code>ocean.compute.get_c2d_environments(self, service_endpoint: str, chain_id: int)</code></a></summary>
 
+Get list of compute environments.
 
+It can be called within Ocean Compute class.
+
+Params:
+
+* `service_endpoint` - string Provider URL that is stored in compute service.
+* `chain_id` - using Provider multichain, `chain_id` is required to specify the network for your environment. It has `int` type.
+
+Return:
+
+A list of objects containing information about each compute environment. For each compute environment, these are the following keys: `(id, feeToken, priceMin, consumerAddress, lastSeen, namespace, status)`.
+
+{% code overflow="wrap" %}
+```python
+    @enforce_types
+    def get_c2d_environments(self, service_endpoint: str, chain_id: int):
+        return DataServiceProvider.get_c2d_environments(service_endpoint, chain_id)
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL152C5-L155C87"><code>ocean.compute.get_free_c2d_environment(self, service_endpoint: str, chain_id)</code></a></summary>
+
+Get list of free compute environments.
+
+Important thing is that not all Providers contain free environments (`priceMin = 0`).
+
+It can be called within Ocean Compute class.
+
+Params:
+
+* `service_endpoint` - string Provider URL that is stored in compute service.
+* `chain_id` - using Provider multichain, `chain_id` is required to specify the network for your environment. It has `int` type.
+
+Return:
+
+A list of objects containing information about each compute environment. For each compute environment, these are the following keys: `(id, feeToken, priceMin, consumerAddress, lastSeen, namespace, status)`.
+
+{% code overflow="wrap" %}
+```python
+@enforce_types
+    def get_free_c2d_environment(self, service_endpoint: str, chain_id):
+        environments = self.get_c2d_environments(service_endpoint, chain_id)
+        return next(env for env in environments if float(env["priceMin"]) == float(0))
+```
+{% endcode %}
 
 </details>
 
