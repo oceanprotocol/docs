@@ -17,7 +17,7 @@ All Ocean Protocol components (Provider, Aquarius, Subgraph) are designed to run
 
 ## Server Size
 
-The required CPU and memory for the server depend on the number of requests the component is expected to serve, but the minimum configuration is:
+The required CPU and memory for the server depend on the number of requests the component is expected to serve, however, the minimum configuration of the server is:
 
 * 1 core
 * 1 GB RAM
