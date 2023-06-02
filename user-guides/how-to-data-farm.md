@@ -40,15 +40,19 @@ That's it! You've successfully allocated (aka "voted on") your favorite assets o
 
 ### How to Delegate Your Active Rewards
 
-Do you have multiple wallets? Say you want to send rewards to someone you 💖 We have a solution for that! Data Farming's Delegate feature allows you to transfer your veOCEAN allocation power to another wallet address. You might be able to earn a higher annual percentage yield (APY) by delegating your active rewards to an address that more efficiently manages your allocation. You can delegate your active rewards \*without\* the need for reallocation and transaction fees!&#x20;
+Do you have multiple wallets? Say you want to send rewards to someone you 💖 We have a solution for that! Data Farming's [Delegate](https://df.oceandao.org/delegate) feature allows you to transfer your veOCEAN allocation power to another wallet address. Another reason for delegating - you might be able to earn a higher annual percentage yield (APY) by delegating your active rewards to an address that more efficiently manages your allocation. For all these reasons and more, then you might want to delegate - go to [https://df.oceandao.org/delegate](https://df.oceandao.org/delegate) to make the magic happen ✨
 
-When you delegate, you transfer 100% of your veOCEAN allocation power for a limited period. After delegation, you cannot manage your allocations until the delegation expires. The delegation expiration date is the same as your veOCEAN Lock End Date at the time of delegation. If necessary, you can extend your Lock End Date before delegating. You can also cancel your delegation at any time 💪 Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of your rewards and the process of returning those back to you.&#x20;
+
+
+When you delegate, you transfer 100% of your veOCEAN allocation power for a limited period. You can delegate your active rewards \*without\* the need for reallocation and transaction fees! Note that after you delegate, then you cannot manage your allocations until the delegation expires. The delegation expiration date is the same as your veOCEAN Lock End Date at the time of delegation. If necessary, you can extend your Lock End Date before delegating. You can also cancel your delegation at any time 💪 Once delegated, rewards will be sent to the wallet address you delegated to. Then, the delegation receiver is in charge of your active rewards and is responsible for returning those back to you should you choose to do so.&#x20;
 
 Follow these steps to delegate your veOCEAN:
 
-1. Go to the DF Portal and enter or copy the wallet address you wish to delegate to into the 'Receiver wallet address' field.
-2. Click the Delegate button and sign the transaction. You can view information about your delegation in the My Delegations component.
-3. If needed, you can cancel the delegation to regain your allocation power before the delegation expires.
+1. Go to the [Data Farming dApp](https://df.oceandao.org).
+2. Navigate to the [Delegate page](https://df.oceandao.org/delegate).
+3. Enter the wallet address you wish to delegate your active rewards to into the 'Receiver wallet address' field.
+4. Click the Delegate button and sign the transaction with your wallet. You can view information about your delegation in the My Delegations component.
+5. If you desire, the you can cancel the delegation to regain your allocation power before the delegation expires.
 
 #### What if someone delegates active rewards to you?
 
