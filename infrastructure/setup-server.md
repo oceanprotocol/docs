@@ -167,3 +167,46 @@ Now that, the server is ready with all the required dependencies are installed f
 
 * [Deploying Marketplace](deploying-marketplace.md)
 * [Deploying Aquarius](deploying-aquarius.md)
+
+<< test Mermaid >>
+
+```mermaid
+mindmap
+root(ddo)
+  @context
+  id
+  version
+  chainID
+  NFTaddress
+  metadata
+    created
+    updated
+    description
+    copyrightHolder
+    name
+    type
+    author
+    license
+    links
+    contentLanguage
+    tags
+    categories
+    additionalInformation
+    algorithm
+      algorithmMedatada
+        language
+        version
+        consumerParameters
+        container
+          entrypoint
+          image
+          tag
+          checksum
+  services
+  credentials
+```
+
+
+
+
+
