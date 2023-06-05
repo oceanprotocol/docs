@@ -8,8 +8,6 @@ The [V4 release](https://blog.oceanprotocol.com/ocean-v4-overview-1ccd4a7ce150) 
 
 The V4 smart contracts have been deployed across multiple [networks](../../discover/networks/) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). The V4 introduces significant enhancements that encompass the following key **features**:
 
-
-
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
 In Ocean V3, the publication of a dataset involved deploying an ERC20 "datatoken" contract along with relevant metadata. This process allowed the dataset publisher to claim copyright or exclusive rights to the underlying Intellectual Property (IP). Upon obtaining 1.0 ERC20 datatokens for a particular dataset, users were granted a license to consume that dataset, utilizing the Ocean infrastructure by spending the obtained datatokens.
@@ -37,15 +35,15 @@ By enabling a marketplace of [Providers](../provider/), Ocean V4 fosters competi
 
 Key features of the V4 smart contracts:
 
-* Base IP is now represented by a data [NFT](data-nfts.md), from which a data publisher can create multiple ERC20s [datatokens](datatokens.md) representing different types of access for the same dataset 🎨
-* Interoperability with the NFT ecosystem (and DeFi & DAO tools) 🔄
-* Allows new data [NFT & datatoken templates](datatoken-templates.md), for flexibility and future-proofing 📝
+* Base IP is now represented by a data [NFT](data-nfts.md), from which a data publisher can create multiple ERC20s [datatokens](datatokens.md) representing different types of access for the same dataset.
+* Interoperability with the NFT ecosystem (and DeFi & DAO tools).
+* Allows new data [NFT & datatoken templates](datatoken-templates.md), for flexibility and future-proofing.
 * Besides base data IP, you can use data NFTs to **implement comments & ratings, verifiable claims, identity credentials, and social media posts**. They can point to parent data NFTs, enabling the nesting of comments on comments, or replies to tweets. All on-chain, GDPR-compliant, easily searched, with js & py drivers 🤯
 * Introduce an advanced [Fee](../fees.md) structure both for Marketplace and Provider runners 💰
 * [Roles](roles.md) Administration: there are now multiple roles for a more flexible administration both at [NFT](data-nfts.md) and [ERC20](datatokens.md) levels 👥
-* When the NFT is transferred, it auto-updates all permissions, e.g. who receives payment, or who can mint derivative ERC20 datatokens 🔄
+* When the NFT is transferred, it auto-updates all permissions, e.g. who receives payment, or who can mint derivative ERC20 datatokens.
 * Key-value store in the NFT contract: NFT contract can be used to store custom key-value pairs (ERC725Y standard) enabling applications like soulbound tokens and Sybil protection approaches 🗃️
 * Multiple NFT template support: the Factory can deploy different types of NFT templates 🖼️
-* Multiple datatoken template support: the Factory can deploy different types of [datatoken templates](datatoken-templates.md) 📦
+* Multiple datatoken template support: the Factory can deploy different types of [datatoken templates](datatoken-templates.md).
 
 In the forthcoming pages, you will discover comprehensive information about the key features. If you have any inquiries or find anything missing, feel free to contact the core team on [Discord](https://discord.com/invite/TnXjkR5) 💬

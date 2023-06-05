@@ -44,6 +44,46 @@ Transaction volume(TV) is often used interchangeably with data consume volume (D
 
 <details>
 
+<summary><strong>Base IP</strong></summary>
+
+**Base IP** means the artifact being copyrighted. Represented by the {ERC721 address, tokenId} from the publish transactions.
+
+</details>
+
+<details>
+
+<summary><strong>Base IP holder</strong></summary>
+
+**Base IP holder** means the holder of the Base IP. Represented as the actor that did the initial "publish" action.
+
+</details>
+
+<details>
+
+<summary><strong>Sub-licensee</strong></summary>
+
+**Sub-licensee** is the holder of the sub-license. Represented as the entity that controls address ERC721.\_owners\[tokenId=x].
+
+</details>
+
+<details>
+
+<summary><strong>To Publish</strong></summary>
+
+Claim copyright or exclusive base license.
+
+</details>
+
+<details>
+
+<summary><strong>To Sub-license</strong></summary>
+
+Transfer one (of many) sub-licenses to new licensee: ERC20.transfer(to=licensee, value=1.0).
+
+</details>
+
+<details>
+
 <summary>Ocean Data Challenges</summary>
 
 [Ocean Data Challenges](https://oceanprotocol.com/challenges) is a program organized by Ocean Protocol that seeks to expedite the shift into a New Data Economy by incentivizing data-driven insights and the building of algorithms geared toward solving complex business challenges. The challenges aim to encourage the Ocean community and other data enthusiasts to collaborate and leverage the capabilities of the Ocean Protocol to produce data-driven insights and design algorithms that are specifically tailored to solving intricate business problems.

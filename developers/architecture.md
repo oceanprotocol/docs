@@ -11,7 +11,7 @@ Embark on an exploration of the innovative realm of Ocean Protocol, where data f
 
 ### Layer 1: The Foundational Blockchain Layer
 
-At the core of Ocean Protocol lies the robust Blockchain Layer. Powered by blockchain technology, this layer ensures secure and transparent transactions. It forms the bedrock of decentralized trust, where data providers and consumers come together to trade valuable assets.&#x20;
+At the core of Ocean Protocol lies the robust [Blockchain Layer](contracts/). Powered by blockchain technology, this layer ensures secure and transparent transactions. It forms the bedrock of decentralized trust, where data providers and consumers come together to trade valuable assets.&#x20;
 
 The [smart contracts](contracts/) are deployed on the Ethereum mainnet and other compatible [networks](../discover/networks/). The libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To explore the contracts in more depth, go ahead to the [contracts](contracts/) section.
 
