@@ -13,7 +13,7 @@ Ocean Protocol offers you flexible and customizable pricing options to monetize 
 
 These models are designed to cater to your specific needs and ensure a smooth experience for data consumers.
 
-The price of an asset is determined by the number of Ocean tokens a buyer must pay to access the asset. When users pay the right amount of Ocean tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](datanft-and-datatoken/).
+The price of an asset is determined by the number of Ocean tokens a buyer must pay to access the asset. When users pay the right amount of Ocean tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](contracts/datanft-and-datatoken.md).
 
 ### Fixed pricing
 

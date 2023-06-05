@@ -90,6 +90,20 @@ Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosys
 
 <details>
 
+<summary><a href="https://medium.com/p/477b3decad51#7922"><mark style="color:orange;">Run Your Own Provider</mark></a><br><br>You have the option to generate revenue by running your own <a href="../developers/provider/">provider</a>. It has come to our attention that many of you have not pursued this opportunity, primarily due to the lack of compelling incentives.</summary>
+
+If you're not familiar with it, the Ocean [Provider](../developers/provider/) serves as the proxy service responsible for encrypting/decrypting data and streaming it to the consumer. It also verifies user access privileges for specific data assets or services. It plays a vital role in the Ocean architecture.
+
+Fees are now paid to the individual or organization running the provider when a user downloads a data asset. The download fees are set based on the cost per MB, and there is also a provider fee for compute jobs, which is priced per minute.
+
+Both the download and compute fees can be set to any absolute amount, and you have the flexibility to choose the token in which you want to receive these fees. They do not have to be in the same currency used in the marketplace. For instance, the provider fee could be a fixed rate of 5 USDT per 1000 MB of data downloaded, and this fee will remain fixed in USDT even if the marketplace uses a different currency.
+
+Furthermore, provider fees are not restricted to data consumption; they can also be utilized to charge for compute resources. For example, a provider can charge a fixed fee of 15 DAI to reserve compute resources for one hour. This presents an advantage for both the user and the provider host. Users can now reserve the appropriate amount of computing resources according to their requirements. For provider hosts, this creates an additional income opportunity.
+
+</details>
+
+<details>
+
 <summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-background.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
 
 Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.

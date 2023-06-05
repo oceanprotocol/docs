@@ -39,7 +39,7 @@ You've now published an Ocean asset!
 
 ### Appendix
 
-For more information regarding: Data NFT & Datatokens interfaces and how they are implemented in Solidity, we suggest to follow up this [article](../datanft-and-datatoken/) and [contracts repo](https://github.com/oceanprotocol/contracts) from GitHub.
+For more information regarding: Data NFT & Datatokens interfaces and how they are implemented in Solidity, we suggest to follow up this [article](../contracts/datanft-and-datatoken.md) and [contracts repo](https://github.com/oceanprotocol/contracts) from GitHub.
 
 As you may want to explore more the DDO specs,  structure & meaning, we invite you to consult [DDO Specification](../ddo-specification.md) section.
 

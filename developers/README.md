@@ -17,7 +17,7 @@ But hold on tight, because we have even more in store for you! With Ocean Protoc
 
 <figure><img src="../.gitbook/assets/developers.png" alt=""><figcaption><p>Ocean Protocol Explorer</p></figcaption></figure>
 
-At the core of the Ocean Protocol, you'll find a constellation of [smart contracts](contracts/) that bring extraordinary capabilities to every data asset. Here's where the magic happens! Every asset gets its own cool and unique [**ERC721 data NFT**](datanft-and-datatoken/#what-is-a-data-nft), along with one (or more) [**ERC20 datatokens**](datanft-and-datatoken/). It's like giving your data its very own superhero cape! 🦸‍♂️
+At the core of the Ocean Protocol, you'll find a constellation of [smart contracts](contracts/) that bring extraordinary capabilities to every data asset. Here's where the magic happens! Every asset gets its own cool and unique [**ERC721 data NFT**](contracts/datanft-and-datatoken.md#what-is-a-data-nft), along with one (or more) [**ERC20 datatokens**](contracts/datanft-and-datatoken.md). It's like giving your data its very own superhero cape! 🦸‍♂️
 
 These [smart contracts](contracts/) form the backbone of Ocean Protocol, empowering data assets with unparalleled value and enabling seamless integration with the wider blockchain ecosystem. Through the [contracts](contracts/), data becomes not only valuable but also tradable, allowing you to unleash the true potential of your data treasures.
 
