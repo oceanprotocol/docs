@@ -10,8 +10,6 @@ Ocean Protocol is a **decentralized data exchange protocol** that empowers you t
 
 Let's embark on a journey of discovery and explore the possibilities that await you with Ocean Protocol! Get a glimpse into some of the things you can do - the opportunities with our protocol are vast and ever-evolving. Together, we can dive deeper and uncover even more ways to leverage the power of decentralized data.
 
-<figure><img src="../.gitbook/assets/penguin-diving.gif" alt="" width="360"><figcaption></figcaption></figure>
-
 <details>
 
 <summary><mark style="color:purple;">Build Your dApp</mark><br><br><strong>Building a</strong> <a href="https://oceanprotocol.com/templates"><strong>dApp</strong></a> <strong>on top of Ocean Protocol provides you with a powerful framework to create decentralized applications that leverage the capabilities of the protocol. By utilizing Ocean's technology stack, you can tap into a robust ecosystem designed for data exchange and collaboration.</strong></summary>
@@ -30,7 +28,7 @@ These are a few examples of what can be built on top of Ocean.
 1. [Ocean Waves](https://waves.oceanprotocol.com/) - Music NFTs [marketplace](https://github.com/oceanprotocol/waves)
 2. [Ocean Market](https://market.oceanprotocol.com) - Decentralised data [marketplace](https://github.com/oceanprotocol/market)
 3. [Autobot](https://autobotocean.com/) - Tokengated [data farming](https://df.oceandao.org/) intelligence app
-4. [Ocean Gate](https://tokengate.oceanprotocol.com/) - Tokengated content [marketplace](https://github.com/oceanprotocol/token-gating-template)
+4. [Ocean Gate](https://tokengate.oceanprotocol.com/) - Tokengated [content](https://github.com/oceanprotocol/token-gating-template)
 5. [Acentrik Market](https://market.acentrik.io/) - Enterprise decentralized data marketplace
 
 </details>
@@ -74,7 +72,7 @@ The following guides will help you get started with buying and selling data:
 
 <summary><mark style="color:blue;">Manage datatokens and data NFTs for use in DeFi</mark><br><br>Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.</summary>
 
-Use Ocean [JavaScript](../developers/ocean.js/) or [Python](../developers/ocean.py/) drivers to manage data NFTs and datatokens:
+Use Ocean [JavaScript](../developers/ocean.js) or [Python](../developers/ocean.py) drivers to manage data NFTs and datatokens:
 
 Ocean-based apps make data assets on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
 

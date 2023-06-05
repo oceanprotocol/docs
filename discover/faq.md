@@ -33,14 +33,6 @@ Once a user has Metamask installed and an Ethereum address, they can register, c
 
 <details>
 
-<summary>How is Ocean different from other data marketplaces?</summary>
-
-Ocean Protocol is a decentralized data marketplace which gives users complete control of their data. The Ocean Protocol technology is built on smart contracts, decentralized computer scripts with no intermediary that are triggered by the users. The Ocean Market exposes the functionality of the smart contracts in a browser-friendly interface. Data providers and consumers can discover one another and transact in a peer-to-peer manner with the minimal amount of intermediary involvement.
-
-</details>
-
-<details>
-
 <summary>How do I price my data?</summary>
 
 Ocean gives you two different options for pricing your data - fixed price or free. You need to decide what your dataset is worth and how you want to price it. You can change the price but you can’t change the price format (e.g. from fixed to free).
@@ -291,7 +283,7 @@ Earnings are passive by default
 
 <summary>What about active stakers — people who want to do extra work and get rewarded?</summary>
 
-Ot works. Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more $$
+Ot works. Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more \$$
 
 </details>
 
@@ -334,6 +326,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 <details>
 
 <summary>Which networks are eligible for Data Farming?</summary>
+
 Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
 
 You can find a list of [all supported chains here](https://docs.oceanprotocol.com/discover/networks).
@@ -352,7 +345,7 @@ They are deployed on Ethereum mainnet, alongside other Ocean contract deployment
 
 <summary>What is the official veOCEAN epoch start_time?</summary>
 
-veFeeDistributor has a start_time of 1663804800 (Thu Sep 22 2022 00:00:00)
+veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00)
 
 </details>
 
