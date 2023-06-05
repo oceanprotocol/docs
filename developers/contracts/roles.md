@@ -13,9 +13,6 @@ The permissions are stored in the data NFT (ERC721) smart contract. The data NFT
 
 The data NFT is the base IP for the asset and all the datatokens are therefore linked to the data NFT smart contract — this has enabled us to do a bunch of cool new things around role administration. We’ve introduced a host of useful roles which give you flexibility in how you manage your project. This can be a big help for enterprises and startups who are ready to scale up and introduce a level of administration.
 
-```mermaid
-```
-
 #### NFT Owner
 
 The NFT owner is the owner of the base-IP and is therefore at the highest level. The NFT owner can perform any action or assign any role but crucially, the NFT owner is the only one who can assign the manager role. Upon deployment or transfer of the data NFT, the NFT owner is automatically added as a manager. The NFT owner is also the only role that can’t be assigned to multiple users — the only way to share this role is via multi-sig or a DAO.
