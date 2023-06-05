@@ -35,7 +35,7 @@
     * [Data NFTs](developers/datanft-and-datatoken/data-nfts.md)
     * [Datatokens](developers/datanft-and-datatoken/datatokens.md)
     * [Metadata](developers/datanft-and-datatoken/metadata.md)
-    * [Templates](developers/datanft-and-datatoken/templates.md)
+    * [Datatoken Templates](developers/datanft-and-datatoken/datatoken-templates.md)
     * [Access Control Tools](developers/datanft-and-datatoken/access-control-tools.md)
     * [Revenue](developers/datanft-and-datatoken/revenue.md)
     * [Fractional Ownership](developers/datanft-and-datatoken/fractional-ownership.md)

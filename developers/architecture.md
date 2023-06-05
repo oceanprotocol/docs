@@ -5,7 +5,7 @@ description: Ocean Protocol Architecture Adventure!
 
 # Architecture Overview
 
-Embark on a journey through the innovative world of Ocean Protocol, where data flows like waves and AI takes flight! Explore the intricate layers of our architecture, where data and services converge in a symphony of collaboration. So, let's dive in and uncover the depths of Ocean Protocol's design!🐬
+Embark on an exploration of the innovative realm of Ocean Protocol, where data flows seamlessly and AI achieves new heights. Dive into the intricately layered architecture that converges data and services, fostering a harmonious collaboration. Let us delve deep and uncover the profound design of Ocean Protocol.🐬
 
 <figure><img src="../.gitbook/assets/OP High Level Architecture.jpg" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
 
@@ -28,7 +28,7 @@ These libraries include [Ocean.js](broken-reference), a JavaScript library, and 
 
 #### Middleware components
 
-Additionally, supporting the discovery process, middleware components come into play:
+Additionally, in supporting the discovery process, middleware components come into play:
 
 1. [Aquarius](aquarius/): Aquarius acts as a metadata cache, enhancing search efficiency by caching on-chain data into Elasticsearch. By accelerating metadata retrieval, Aquarius enables faster and more efficient data discovery.
 2. [Provider](provider/): The Provider component plays a crucial role in facilitating various operations within the ecosystem. It assists in asset downloading, handles [DDO](ddo-specification.md) (Decentralized Data Object) encryption, and establishes communication with the operator-service for Compute-to-Data jobs. This ensures secure and streamlined interactions between different participants.
@@ -40,7 +40,7 @@ Additionally, supporting the discovery process, middleware components come into 
 
 ### Layer 3: The Accessible Application Layer
 
-Here, the ocean comes alive with a vibrant ecosystem of apps, marketplaces, and more. This layer hosts a variety of user-friendly interfaces, applications, and tools, inviting data scientists and curious explorers alike to access, explore, and contribute to the ocean's treasures.&#x20;
+Here, the ocean comes alive with a vibrant ecosystem of dApps, marketplaces, and more. This layer hosts a variety of user-friendly interfaces, applications, and tools, inviting data scientists and curious explorers alike to access, explore, and contribute to the ocean's treasures.&#x20;
 
 Prominently featured within this layer is [Ocean Market](../user-guides/using-ocean-market.md), a hub where data enthusiasts and industry stakeholders converge to discover, trade, and unlock the inherent value of data assets. Beyond Ocean Market, the Application Layer hosts a diverse ecosystem of specialized applications and marketplaces, each catering to unique use cases and industries. Empowered by the capabilities of Ocean Protocol, these applications facilitate advanced data exploration, analytics, and collaborative ventures, revolutionizing the way data is accessed, shared, and monetized.&#x20;
 
