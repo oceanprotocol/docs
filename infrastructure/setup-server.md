@@ -168,7 +168,7 @@ Now that, the server is ready with all the required dependencies are installed f
 * [Deploying Marketplace](deploying-marketplace.md)
 * [Deploying Aquarius](deploying-aquarius.md)
 
-<< test Mermaid >>
+<< test Mermaid mindmap >>
 
 ```mermaid
 mindmap
@@ -208,5 +208,68 @@ root(ddo)
 
 
 
+<< test Mermaid Entity Relationship Diagram >>
 
+```mermaid
+erDiagram
+DDO ||--|{ Metadata : contains
+DDO ||--|{ Services : contains
+Metadata ||--|{ AlgorithmMetadata : contains
+AlgorithmMetadata ||--|{ Container : contains
+    DDO {
+        arrayOfString context
+        string id
+        string version
+        number chainID
+        string nftAddress 
+        Metadata metadata
+        Services services
+        Credentials credentials       
+}
+    Metadata {
+        ISODateTimeString created
+        ISODateTimeString updated
+        string description
+        string copyrightHolder
+        string name
+        string type
+        string author
+        string license
+        arrayOfString links
+        string contentLanguage
+        arrayOfString tags
+        arrayOfStrings categories
+        Object additionalInformation
+        AlgorithmMetadata algorithm
+}
+
+AlgorithmMetadata {
+    string language
+    string version
+    ConsumerParameters consumerParameters
+    Container container
+}
+
+Container {
+string entrypoint
+string image
+string tag
+string checksum
+}
+
+Services {
+string id
+string type
+string name
+string description
+string datatokenAddress
+string serviceEndpoint
+Files files
+number timeout
+Compute compute
+ConsumerParameters consumerParameters
+Object additionalInformation
+}
+
+```
 
