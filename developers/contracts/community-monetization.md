@@ -1,5 +1,7 @@
 # Community monetization
 
+\------WORK in PROGRESS------
+
 **Ocean V4 provides more upside for marketplace operators, and makes space for a market of third-party Providers.**
 
 Ocean V3 smart contracts enabled marketplace operators to collect a fee in just one place: consume. The value was hardcoded to 0.1% which was a good start, but it limited the upside.

@@ -16,7 +16,7 @@ However, Ocean V3 faced limitations in terms of flexibility. It lacked support f
 
 Ocean V4 effectively tackles these challenges by adopting **ERC721** **tokens** to explicitly represent the **base IP** as "data NFTs" (Non-Fungible Tokens). [**Data NFT**](data-nfts.md) owners can now deploy ERC20 "datatoken" contracts specific to their data NFTs, with each datatoken contract offering its own distinct licensing terms.
 
-By utilizing ERC721 tokens, Ocean V4 grants data creators greater flexibility and control over licensing arrangements. The introduction of data NFTs allows for the representation of base IP and the creation of customized ERC20 datatoken contracts tailored to individual licensing requirements.&#x20;
+By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility and control over licensing arrangements**. The introduction of data NFTs allows for the representation of [base IP](../../discover/glossary.md#base-ip) and the creation of customized ERC20 datatoken contracts tailored to individual licensing requirements.&#x20;
 
 
 
@@ -46,4 +46,4 @@ Key features of the V4 smart contracts:
 * Multiple NFT template support: the Factory can deploy different types of NFT templates 🖼️
 * Multiple datatoken template support: the Factory can deploy different types of [datatoken templates](datatoken-templates.md).
 
-In the forthcoming pages, you will discover comprehensive information about the key features. If you have any inquiries or find anything missing, feel free to contact the core team on [Discord](https://discord.com/invite/TnXjkR5) 💬
+In the forthcoming pages, you will discover more information about the key features. If you have any inquiries or find anything missing, feel free to contact the core team on [Discord](https://discord.com/invite/TnXjkR5) 💬

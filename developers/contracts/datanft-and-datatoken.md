@@ -23,7 +23,7 @@ For a more comprehensive exploration of intellectual property and its practical 
 
 {% embed url="https://blog.oceanprotocol.com/nfts-ip-1-practical-connections-of-erc721-with-intellectual-property-dc216aaf005d" %}
 
-**Details of implementation:**
+**DataNFTs and Datatokens example:**
 
 * In step 1, Alice **publishes** her dataset with Ocean: this means deploying an ERC721 data NFT contract (claiming copyright/base IP), then an ERC20 datatoken contract (license against base IP).
 * In step 2, she **mints** some ERC20 datatokens and **transfers** 1.0 of them to Bob's wallet; now he has a license to be able to download that dataset.
