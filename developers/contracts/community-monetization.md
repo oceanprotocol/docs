@@ -22,9 +22,9 @@ If you’re part of an established organization or a growing startup, you’ll a
 
 **In short, if you have data to sell, then Ocean V4 gives you superpowers to scale up and manage your data project. We hope this enables you to bring your data to new audiences and increase your profits.**
 
-### 2. Running Your Own Data Marketplace
+### 2. Running Your Own Data dApp
 
-We have always been super encouraging of anyone who wishes to fork Ocean Market and make their own data marketplace. With the V4 release, we have taken this to the next level and introduced more opportunities and even more fee customization options.
+We have always been super encouraging of anyone who wishes to build a dApp on top of Ocean or to fork Ocean Market and make their own data marketplace. With the V4 release, we have taken this to the next level and introduced more opportunities and even more fee customization options.
 
 Unlike in V3, where the fee collection was limited to the consume action with a fixed value of 0.1%, V4 empowers marketplace operators like yourself to have greater flexibility and control over the fees you can charge. This means you can tailor the fee structure to suit your specific needs and ensure the sustainability of your project.  **V4 smart contracts enable you to collect a fee not only in consume, but also in fixed-rate exchange, also you can set the fee value.**  For more detailed information regarding the fees, we invite you to visit the [fees](../fees.md) page.
 
