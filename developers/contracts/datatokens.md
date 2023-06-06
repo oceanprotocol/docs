@@ -8,7 +8,7 @@ Fungible tokens are a type of digital asset that are identical and interchangeab
 
 ## What is a Datatoken?&#x20;
 
-Datatokens are fundamental within Ocean Protocol, representing a key mechanism to **access** data assets in a decentralized manner. In simple terms, a datatoken is an **ERC20-compliant token** that serves as access control for a data/service represented by a [data NFT](data-nfts.md).
+Datatokens are fundamental within Ocean Protocol, representing a key mechanism to **access** data assets in a decentralized manner. In simple terms, a datatoken is an **ERC20-compliant token** that serves as **access control** for a data/service represented by a [data NFT](data-nfts.md).
 
 Datatokens enable data assets to be tokenized, allowing them to be easily traded, shared, and accessed within the Ocean Protocol ecosystem. Each datatoken is associated with a particular data asset, and its value is derived from the underlying dataset's availability, scarcity, and demand.
 
