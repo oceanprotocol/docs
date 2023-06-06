@@ -38,7 +38,6 @@
     * [Community monetization](developers/contracts/community-monetization.md)
     * [Datatoken Templates](developers/contracts/datatoken-templates.md)
     * [Metadata](developers/contracts/metadata.md)
-    * [Access Control Tools](developers/contracts/access-control-tools.md)
     * [Revenue](developers/contracts/revenue.md)
     * [Roles](developers/contracts/roles.md)
     * [Fees](developers/fees.md)
