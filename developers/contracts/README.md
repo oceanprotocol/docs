@@ -22,7 +22,7 @@ By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility 
 
 <figure><img src="../../.gitbook/assets/v4-contracts.png" alt=""><figcaption><p>Ocean Protocol V4 Smart Contracts</p></figcaption></figure>
 
-### [**Community monetization**](community-monetization.md), to help the community create sustainable businesses.
+### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 
 Ocean V4 brings forth enhanced opportunities for marketplace operators, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
 

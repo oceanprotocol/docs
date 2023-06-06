@@ -21,7 +21,7 @@ This information is used in the discovery process by aquarius and also gives imp
      * @param _metaDataHash hash of clear data (before the encryption, if any)
      * @param _metadataProofs optional signatures of entitys who validated data (before the encryption, if any)
      */
-    function setMetaData(uint8 _metaDataState, string calldata _metaDataDecryptorUrl
+    function set metadata(uint8 _metaDataState, string calldata _metaDataDecryptorUrl
         , string calldata _metaDataDecryptorAddress, bytes calldata flags, 
         bytes calldata data,bytes32 _metaDataHash, metaDataProof[] memory _metadataProofs) external {
         require(
