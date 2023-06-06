@@ -8,15 +8,29 @@ At the beginning of most flows, we create an `ocean` object, which is an instanc
 
 ### Ocean Instance
 
-Ocean class:
+#### constructor
 
-<details>
+* **\_\_init\_\_**(`self`, `config_dict: Dict`, `data_provider: Optional[Type] = None`)
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#L43"><code>Ocean</code> - The Ocean class is the entry point into Ocean Protocol.</a></summary>
+The Ocean class is the entry point into Ocean Procol.
 
 In order to initialize a Ocean object, you must provide `config_dict` which is a `Dictionary` instance and optionally a `DataServiceProvider` instance.
 
-[Here ](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL43C1-L96C53)is the source code.
+**Parameters**
+
+<table><thead><tr><th width="182">Name</th><th width="260">Type</th><th width="162">Default Value</th><th>Description</th></tr></thead><tbody><tr><td><code>config_dict</code></td><td><code>dict</code></td><td>mandatory</td><td>It contains the configuration as dictionary format.</td></tr><tr><td><code>data_provider</code></td><td><code>Optional[DataProvider]</code></td><td>None</td><td>It is an optional parameter for DataProvider instance, if it is not provided, the constructor will instantiate a fresh one.</td></tr></tbody></table>
+
+**Returns**
+
+`Ocean` instance
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#L43)
+
+<details>
+
+<summary>Source code</summary>
 
 {% code overflow="wrap" %}
 ```python
@@ -79,17 +93,29 @@ class Ocean:
 
 </details>
 
-Config dict attribute:
+#### config getter
 
-<details>
-
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL265C1-L268C32"><code>ocean.config_dict</code> or <code>ocean.config -> dict</code></a></summary>
+**config**(`self`) -> `dict`
 
 It is a helper method for retrieving the user's configuration for ocean.py.\
 It can be called only by Ocean object and returns a python dictionary.
 
+**Returns**
+
+`dict`
+
+Configuration fields as dictionary.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL265C1-L268C32)
+
+<details>
+
+<summary>Source code</summary>
+
 ```python
-    @property
+@property
     @enforce_types
     def config(self) -> dict:  # alias for config_dict
         return self.config_dict
