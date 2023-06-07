@@ -41,7 +41,7 @@ Before you start coding, please follow these basic guidelines:
 #### Your contribution workflow
 
 1. As an external developer, fork the respective repo and **push your code changes to your own fork.** Ocean core developers push directly on the repo under `oceanprotocol` org.
-2. Then, create a new branch for your changes from our public repo's main branch. The naming convention for new branches is: `issue-001-short-feature-description`. The issue number `issue-001` needs to reference the GitHub issue that you are trying to fix. The short feature description helps us to quickly distinguish your branch among the other branches in play.
+2. Provide the issue # information when you open a PR, for example: `issue-001-short-feature-description`. The issue number `issue-001` needs to reference the GitHub issue that you are trying to fix. The short feature description helps us to quickly distinguish your PR among the other PRs in play.
 3. To get visibility and Continuous Integration feedback as early as possible, open your Pull Request as a `Draft`.
 4. Give it a meaningful title, and at least link to the respective issue in the Pull Request description, like `Fixes #23`. Describe your changes, mention things for reviewers to look out for, and for UI changes screenshots and videos are helpful.
 5. Once your Pull Request is ready, mark it as `Ready for Review`, in most repositories code owners are automatically notified and asked for review.
