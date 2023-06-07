@@ -1,17 +1,25 @@
 ---
-description: Data Science
 cover: ../.gitbook/assets/cover/data_science.png
 coverY: 0
 ---
 
 # 📊 Data Science
 
-Ocean Protocol, a playground for data science, is all about standardization and convenience. Built with the data and AI era in mind, it offers an interactive ecosystem for digital assets, allowing developers to focus more on their creativity and less on technical roadblocks.
+The world runs on data. From social media to shopping online to healthcare to financial planning, data drives our interactions in the world. Access to greater amounts of data can create a flywheel of value creation; better data leads to better insights which leads to greater profits.&#x20;
 
-1. Privacy-Preserving Data Sharing: Consider a scenario where abundant data is waiting to unveil its potential, but privacy concerns keep it hidden. Ocean's Compute-to-Data (C2D) engine solves this dilemma. It lets data publishers open their treasure troves for computational access without exposing the data itself, creating a novel income avenue while fostering a wider talent pool. Plus, it makes deploying models a breeze! For more information, check out our [Compute-to-Data section](../developers/compute-to-data/).
-2. Fine-Grained Access Control: Ocean Protocol's access control is like a well-tailored suit, offering a perfect fit for each user. Publishers can personalize access to their data, creating an exclusive access list and ensuring data interacts only with approved partners. To learn more, check out our [fine-grained access control section.](../developers/Fine-Grained-Permissions.md)
-3. Crypto-Native Payments: Ocean Protocol's contracts offer the efficiency of crypto payments – lower transaction fees and immediate settlements. It makes transacting as effortless as sipping a cup of coffee, and with zero counterparty risk, it’s a win-win. To learn more, check out our our [asset pricing](../developers/asset-pricing.md) and [contracts ](../developers/contracts/)sections.\
+Unfortunately, today's data infrastructure is broken. Data lives in silos unable to interact with each other. Sharing data is difficult due to the difficulty of managing a hodgepodge of different methods for ownership and access control across many different service providers and applications. Data privacy problems also loom over data sharing; once it is duplicated, the owner loses control over their assets.&#x20;
 
-4. Provenance of Data: Knowing your data's origin story is invaluable, and Ocean Protocol takes full advantage of blockchain's auditing ability. It facilitates a detailed trace of data publishing, metadata alterations, and computational jobs, encouraging trust in data quality. To learn more, check out our [Subgraph section](../developers/subgraph/).
-5. Verified Usage Statistics: With Ocean Protocol, accessing product information is as straightforward as reading a book. Composable subgraphs provide comprehensive details like asset access history, total revenue, and more. It's a two-way street – publishers understand their customers better, and consumers can trust in the asset quality. To learn more, check out our [Subgraph section](../developers/subgraph/).
-6. Global Discovery of Assets: Finding relevant data and models should be as simple as browsing a well-organized bookshelf. Unlike web2 platforms where the host dictates asset discoverability, Ocean Protocol promotes transparency and permissionless discovery of assets. Anyone can tailor their own marketplace, ensuring an open and democratic system. To learn more, check out our [Aquarius ](../developers/aquarius/)and [Build a Marketplace](../developers/build-a-marketplace/) sections.\
+Ocean Protocol was created to build a better system for how we manage and share our data assets. It repurposes the standards created within crypto and DeFi to facilitate a new paradigm of _self-custodial_ ownership and access control of our data assets. NFTs become a permissionless standard of ownership, ERC20s act as a permissionless standard for flexible access control rights, crypto wallets like metamask become a self-custodial holder of our assets.&#x20;
+
+
+
+Ocean's Compute-to-Data engine resolves the trade-off between the benefits of open data and data privacy risks. Using the engine, algorithms can be run on&#x20;
+
+
+
+
+
+Data scientists that prefer to use python can work with Ocean by using [Ocean.py](../developers/ocean.py/). Ocean.py is a python library that interacts with all Ocean contracts and tools. To get started with the library, check out our guides. They will teach installation and set-up and several popular workflows such as[ publishing an asset](../developers/ocean.py/publish-flow.md) and starting a [compute job](../developers/ocean.py/compute-flow.md).
+
+
+
