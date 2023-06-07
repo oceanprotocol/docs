@@ -9,7 +9,7 @@ description: >-
 
 The permissions governing access to the smart contract functions are stored within the [data NFT](data-nfts.md) (ERC721) smart contract. Both the [data NFT](data-nfts.md) (ERC721) and [datatoken](datatokens.md) (ERC20) smart contracts utilize this information to enforce restrictions on certain actions, limiting access to authorized users. The tables below outline the specific actions that are restricted and can only be accessed by allowed users.
 
-The data NFT serves as the foundational intellectual property (IP) for the asset, and all datatokens are inherently linked to the data NFT smart contract. This linkage has enabled the introduction of various exciting capabilities related to role administration.&#x20;
+The data NFT serves as the foundational intellectual property (IP) for the asset, and all datatokens are inherently linked to the data NFT smart contract. This linkage has enabled the introduction of various exciting capabilities related to role administration.
 
 ### NFT Owner
 
@@ -31,13 +31,13 @@ stateDiagram-v2
 With the exception of the NFT owner role, all other roles can be assigned to multiple users.
 {% endhint %}
 
-If you prefer a simple method for adding or removing roles and permissions(eg. add a new minter), you can follow the live demo provided below. This allows you to perform these actions directly through the user-friendly interface of a network explorer. Alternatively, if you need more detailed instructions, we have provided additional information down below.
+There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../ocean.py/) and [ocean.js](../ocean.js/) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
 
-{% @arcade/embed flowId="OHlwsPbf29S1PLh03FM7" url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" %}
+Alternatively, for a more straightforward solution that doesn't require coding, you can utilize the network explorer of your asset's network. By accessing the network explorer, you can directly interact with the contracts associated with your asset. Below, we provide a few examples to help guide you through the process.
 
 ### Manager
 
-The ability to add or remove Managers is exclusive to the NFT Owner. If you are the NFT Owner and wish to add/remove a new manager, simply call the [addManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L426)/[removeManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L438) function within the ERC721Template contract. This function enables you to grant managerial permissions to the designated individual.
+The ability to add or remove Managers is exclusive to the **NFT Owner**. If you are the NFT Owner and wish to add/remove a new manager, simply call the [addManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L426)/[removeManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L438) function within the ERC721Template contract. This function enables you to grant managerial permissions to the designated individual.&#x20;
 
 <details>
 
@@ -68,7 +68,9 @@ function removeManager(address _managerAddress) external onlyNFTOwner {
 
 </details>
 
-The **manager** can assign or revoke three main roles (**deployer, metadata updater, store updater**). The manager is also able to interact with the ERC725 data.
+The **manager** can assign or revoke three main roles (**deployer, metadata updater, and store updater**). The manager is also able to interact with the ERC725 data.
+
+{% @arcade/embed flowId="qC8QpkLsFIQk3NxPzB8p" url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" %}
 
 ### ERC20 Deployer
 
@@ -208,9 +210,7 @@ function removeFrom725StoreList(address _allowedAddress) public {
 
 </details>
 
-
-
-To assign/remove all the above roles(ERC20 Deployer, Metadata Updater or Store Updater), the manager can use the [**addMultipleUsersToRoles**](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/utils/ERC721RolesAddress.sol#L268) function from the ERC721RolesAddress:
+To assign/remove all the above roles(ERC20 Deployer, Metadata Updater, or Store Updater), the manager can use the [**addMultipleUsersToRoles**](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/utils/ERC721RolesAddress.sol#L268) function from the ERC721RolesAddress:
 
 <details>
 
@@ -256,7 +256,7 @@ function addMultipleUsersToRoles(address[] memory addresses, RolesType[] memory 
 
 ### Minter
 
-The Minter has the ability to mint new datatokens, provided the limit has not been exceeded.&#x20;
+The Minter has the ability to mint new datatokens, provided the limit has not been exceeded.
 
 To add/remove a minter, the ERC20 deployer can use the [addMinter](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC20Template.sol#L617)/[removeMinter](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC20Template.sol#L628) functions from the ERC20Template.
 
@@ -290,9 +290,11 @@ function removeMinter(address _minter) external onlyERC20Deployer {
 
 </details>
 
+{% @arcade/embed flowId="OHlwsPbf29S1PLh03FM7" url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" %}
+
 ### Fee Manager
 
-Finally, we also have a fee manager which has the ability to set a new fee collector — this is the account that will receive the datatokens when a data asset is consumed. If no fee collector account has been set, the **datatokens will be sent by default to the NFT Owner**.&#x20;
+Finally, we also have a fee manager which has the ability to set a new fee collector — this is the account that will receive the datatokens when a data asset is consumed. If no fee collector account has been set, the **datatokens will be sent by default to the NFT Owner**.
 
 {% hint style="info" %}
 The applicable fees (market and community fees) are automatically deducted from the datatokens that are received.
