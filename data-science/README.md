@@ -13,7 +13,7 @@ Ocean Protocol was built to democratize the free flow of data. It repurposes the
 
 
 
-Ocean's [Compute-to-Data](../developers/compute-to-data/) engine resolves the trade-off between the benefits of open data and data privacy risks. Using the engine, algorithms can be run on data without exposing the underlying data. Now, data can be widely shared to contribute to the worlds shared knowledge while also respecting indivudals right to privacy.
+Ocean's [Compute-to-Data](../developers/compute-to-data/) engine resolves the trade-off between the benefits of open data and data privacy risks. Using the engine, algorithms can be run on data without exposing the underlying data. Now, data can be widely shared to contribute to the worlds shared knowledge while also respecting individuals right to privacy.
 
 
 

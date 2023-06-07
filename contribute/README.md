@@ -33,7 +33,7 @@ It takes a tribe of awesome coders to build our tech stack, and you're invited t
 
 Before you start coding, please follow these basic guidelines:
 
-* If no issue for your case is present, please open one first before starting to work on something, so it can be discussed openly with Ocean core team.
+* If no feature request issue for your case is present, **please open one first before starting to work on something, so it can be discussed openly with Ocean core team**.
 * Make yourself familiar with the repository-specific contribution requirements and code style requirements.
 * Because of the weird world of intellectual property, we need you to follow the [legal requirements](legal-reqs.md) for contributing code.
 * Be excellent to each other in the comments, as outlined in our [Contributor Code of Conduct](code-of-conduct.md).
