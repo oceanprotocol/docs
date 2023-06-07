@@ -9,13 +9,13 @@ description: We are so proud of the companies that use Ocean Protocol tools!
 
 From startups to full enterprises, we have so many partners and collaborators using Ocean tech. Curious who's working with Ocean tools? Check out our up-to-date list of our partners and collaborators on the [Collaborators page ](https://oceanprotocol.com/collaborators)of our website.
 
-### Dive deeper into our Ocean
+### Get a "degree" in Ocean Protocol knowledge
 
-Our [Ocean Academy](https://oceanacademy.io/) program is a great way to learn more about Ocean Protocol beyond our website, [oceanprotocol.com](https://www.oceanprotocol.com), and our docs, [docs.oceanprotocol.com](https://docs.oceanprotocol.com). The Academy helps you to get up to speed on all things that Ocean can do, setting you up for success to use Ocean Protocol tech to build the "next big thing" in Web3 data sharing.
+Our [Ocean Academy](https://oceanacademy.io/) program is a great way to learn more about Ocean Protocol beyond our website, [oceanprotocol.com](https://www.oceanprotocol.com), and our docs, [docs.oceanprotocol.com](https://docs.oceanprotocol.com). The Academy helps you to get up to speed on all things that Ocean can do, setting you up for success using Ocean Protocol tech to build the "next big thing" in Web3 data sharing.
 
-#### Trading OCEAN
+### Show your support by trading OCEAN tokens
 
-The [Coingecko OCEAN markets page](https://www.coingecko.com/en/coins/ocean-protocol#markets) lists forums to exchange OCEAN. Many of them offer liquidity mining and other yield opportunities.
+Visit [Coingecko's OCEAN markets page](https://www.coingecko.com/en/coins/ocean-protocol#markets) to see all the exchanges that support OCEAN. Here, you can see the most liquid exchanges, and many of them even offer liquidity mining and other yield opportunities.
 
 ### Acknowledgements
 
