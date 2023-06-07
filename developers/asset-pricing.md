@@ -21,6 +21,53 @@ This datatoken represents the access right to your data, so buyers don't have to
 
 The fixed pricing model relies on the [createNftWithErc20WithFixedRate](https://github.com/oceanprotocol/contracts/blob/main/contracts/ERC721Factory.sol#LL674C14-L674C45) in our smart contract, which securely stores the pricing information for assets published using this model.
 
+<details>
+
+<summary>Create NFT with Fixed Rate Pricing</summary>
+
+```javascript
+/**
+ * @dev createNftWithErc20WithFixedRate
+ *      Creates a new NFT, then a ERC20, then a FixedRateExchange, all in one call
+ *      Use this carefully, because if Fixed Rate creation fails, you are still going to pay a lot of gas
+ * @param _NftCreateData input data for NFT Creation
+ * @param _ErcCreateData input data for ERC20 Creation
+ * @param _FixedData input data for FixedRate Creation
+ */
+function createNftWithErc20WithFixedRate(
+NftCreateData calldata _NftCreateData,
+ErcCreateData calldata _ErcCreateData,
+FixedData calldata _FixedData
+) external nonReentrant returns (address erc721Address, address erc20Address, bytes32 exchangeId){
+//we are adding ourselfs as a ERC20 Deployer, because we need it in order to deploy the fixedrate
+erc721Address = deployERC721Contract(
+    _NftCreateData.name,
+    _NftCreateData.symbol,
+    _NftCreateData.templateIndex,
+    address(this),
+    address(0),
+    _NftCreateData.tokenURI,
+    _NftCreateData.transferable,
+    _NftCreateData.owner);
+erc20Address = IERC721Template(erc721Address).createERC20(
+    _ErcCreateData.templateIndex,
+    _ErcCreateData.strings,
+    _ErcCreateData.addresses,
+    _ErcCreateData.uints,
+    _ErcCreateData.bytess
+);
+exchangeId = IERC20Template(erc20Address).createFixedRate(
+    _FixedData.fixedPriceAddress,
+    _FixedData.addresses,
+    _FixedData.uints
+    );
+// remove our selfs from the erc20DeployerRole
+IERC721Template(erc721Address).removeFromCreateERC20List(address(this));
+}
+```
+
+</details>
+
 {% hint style="info" %}
 There are two templates available: [ERC20Template](contracts/datatoken-templates.md#regular-template) and [ERC20TemplateEnterprise](contracts/datatoken-templates.md#enterprise-template).
 
@@ -39,7 +86,54 @@ In this model, datatokens are allocated to a dispenser smart contract, which dis
 
 The fixed pricing model relies on the [createNftWithErc20WithDispenser](https://github.com/oceanprotocol/contracts/blob/main/contracts/ERC721Factory.sol#LL713C14-L713C45) in our smart contract, which securely stores the pricing information for assets published using this model.
 
+<details>
 
+<summary>Create NFT with Free Pricing</summary>
+
+```javascript
+/**
+ * @dev createNftWithErc20WithDispenser
+ *      Creates a new NFT, then a ERC20, then a Dispenser, all in one call
+ *      Use this carefully
+ * @param _NftCreateData input data for NFT Creation
+ * @param _ErcCreateData input data for ERC20 Creation
+ * @param _DispenserData input data for Dispenser Creation
+ */
+function createNftWithErc20WithDispenser(
+    NftCreateData calldata _NftCreateData,
+    ErcCreateData calldata _ErcCreateData,
+    DispenserData calldata _DispenserData
+) external nonReentrant returns (address erc721Address, address erc20Address){
+    //we are adding ourselfs as a ERC20 Deployer, because we need it in order to deploy the fixedrate
+    erc721Address = deployERC721Contract(
+        _NftCreateData.name,
+        _NftCreateData.symbol,
+        _NftCreateData.templateIndex,
+        address(this),
+        address(0),
+        _NftCreateData.tokenURI,
+        _NftCreateData.transferable,
+        _NftCreateData.owner);
+    erc20Address = IERC721Template(erc721Address).createERC20(
+        _ErcCreateData.templateIndex,
+        _ErcCreateData.strings,
+        _ErcCreateData.addresses,
+        _ErcCreateData.uints,
+        _ErcCreateData.bytess
+    );
+    IERC20Template(erc20Address).createDispenser(
+        _DispenserData.dispenserAddress,
+        _DispenserData.maxTokens,
+        _DispenserData.maxBalance,
+        _DispenserData.withMint,
+        _DispenserData.allowedSwapper
+        );
+    // remove our selfs from the erc20DeployerRole
+    IERC721Template(erc721Address).removeFromCreateERC20List(address(this));
+}
+```
+
+</details>
 
 To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](ocean.js/)and [Ocean.py](ocean.py/), specifically developed for interacting with Ocean Protocol. With Ocean.js, you can use the [createFRE() ](ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](ocean.py/publish-flow.md#create-an-asset-and-pricing-schema-simultaneously) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
 
