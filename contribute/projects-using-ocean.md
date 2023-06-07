@@ -1,11 +1,11 @@
 ---
 title: Partners & Collaborators
-description: We work with many partners who understand the value of Ocean
+description: We are so proud to work with partners that use Ocean Protocol tools!
 ---
 
 # Partners & Collaborators
 
-We work closely with our collaborators and service partners to iterate on our underlying technology, and to deliver world-class Web3 experiences built on top of Ocean Protocol. An up to date list of our partners and collaborators is maintained on our [main site](https://oceanprotocol.com/collaborators).
+Curious who's working on Ocean? We have many collaborators and service partners to iterate on our underlying technology to deliver world-class Web3 experiences built on top of Ocean Protocol. An up-to-date list of our partners and collaborators is maintained on the [Collaborators page ](https://oceanprotocol.com/collaborators)of our website.
 
 ### Other Useful Information
 
