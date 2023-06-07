@@ -46,7 +46,7 @@ paymentCollectorAddress = 'New payment collector address'
 datatoken.setPaymentCollector(paymentCollectorAddress, {"from": publisher_wallet})
 ```
 
-3. Using the Ocean Market
+3. Using the [Ocean Market](https://market.oceanprotocol.com/)
 
 Go to the asset detail page and then click on “Edit Asset” and then scroll down to the field called “Payment Collector Address”. Add the new Ethereum address in this field and then click “Submit“. Finally, you will then need to sign two transactions to finalize the update.
 

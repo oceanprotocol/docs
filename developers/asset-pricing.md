@@ -1,10 +1,8 @@
 ---
-description: Choose the revenue model during asset publishing
+description: Choose the revenue model during asset publishing.
 ---
 
 # Asset Pricing
-
-
 
 Ocean Protocol offers you flexible and customizable pricing options to monetize your valuable data assets. You have two main pricing models to choose from:&#x20;
 
@@ -22,6 +20,16 @@ With the fixed pricing model, you have the power to set a specific price for you
 This datatoken represents the access right to your data, so buyers don't have to worry about the technical details. If you ever want to adjust the price of your dataset, you have the flexibility to do so whenever you need.&#x20;
 
 The fixed pricing model relies on the [createNftWithErc20WithFixedRate](https://github.com/oceanprotocol/contracts/blob/main/contracts/ERC721Factory.sol#LL674C14-L674C45) in our smart contract, which securely stores the pricing information for assets published using this model.
+
+{% hint style="info" %}
+There are two templates available: [ERC20Template](contracts/datatoken-templates.md#regular-template) and [ERC20TemplateEnterprise](contracts/datatoken-templates.md#enterprise-template).
+
+In the case of [ERC20TemplateEnterprise](contracts/datatoken-templates.md#enterprise-template), when you deploy a fixed rate exchange, the funds generated as revenue are automatically sent to the owner's address. The owner receives the revenue without any manual intervention.
+
+
+
+On the other hand, with [ERC20Template](contracts/datatoken-templates.md#regular-template), for a fixed rate exchange, the revenue is available at the fixed rate exchange level. The owner or the payment collector has the authority to manually retrieve the revenue.
+{% endhint %}
 
 ### Free pricing
 
