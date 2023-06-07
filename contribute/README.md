@@ -1,17 +1,19 @@
 ---
 title: Ways to Contribute
-description: Help to improve and develop Ocean core software.
+description: Help develop Ocean Protocol software like a superhero
 cover: ../.gitbook/assets/cover/contribute.png
 coverY: 0
 ---
 
 # 🤝 Contribute
 
-### Report a bug
+<figure><img src="../.gitbook/assets/to-the-computer.gif" alt=""><figcaption></figcaption></figure>
 
-To report a bug that isn't a vulnerability, go to the relevant GitHub repository, click on the _Issues_ tab and select _Bug report_.
+### Report a bug 🐞
 
-Before reporting a bug, search existing open and closed issues and PRs to see if something has already been reported. If not, then go ahead and create a new bug report, following the structure suggested in the issue template.
+Do you think you see a bug in our code? To report a bug that _isn't a vulnerability_, go to the relevant GitHub repository, click on the _Issues_ tab, and select _Bug report_.
+
+First, make sure that you search existing open + closed issues + PRs to see if your bug has already been reported there. If not, then go ahead and create a new bug report! 🦸
 
 ### Report Vulnerabilities
 
