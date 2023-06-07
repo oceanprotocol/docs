@@ -10,7 +10,7 @@ description: >-
 
 ### How to Maximize Your Yield
 
-If you only lock your OCEAN tokens to get passive yield, then you're leaving money on the table. Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** on the Ocean Market. (No revenue, no rewards.) In addition, Data Farming incentivizes **publishing** assets on the Ocean Market too - you get **2x the allocation power** when you allocate to an asset that you publish!
+If you only lock your OCEAN tokens to get passive yield, then you're leaving money on the table. Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** in the Ocean ecosystem. (No revenue, no rewards.) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the allocation power** when you allocate to an asset that you publish!
 
 Thus, if you really want to max out your APY:
 
@@ -21,13 +21,13 @@ Thus, if you really want to max out your APY:
 
 ### Those assets don't sell themselves!
 
-Marketing your assets to buyers is your challenge. Just because you list them on the Ocean Market doesn't mean that they will sell. It will take real work. Your reward is great APY. It’s incentives all the way down :)
+Marketing your assets to buyers is your challenge. Just because you publish them in the Ocean ecosystem doesn't mean that they will sell. It will take real work. Your reward is great APY. It’s incentives all the way down :)
 
 <figure><img src="../.gitbook/assets/hustlin.gif" alt=""><figcaption></figcaption></figure>
 
 ### Measuring Data Farming's Success
 
-**Data Consume Volume (DCV)** is a our term for **the total $ amount spent on purchases of Ocean Market assets**, transaction fees, and more. The higher DCV of Ocean Market assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
+**Data Consume Volume (DCV)** is a our term for **the total $ amount spent on purchases of Ocean ecosystem assets**, transaction fees, and more. The higher DCV of Ocean ecosystem assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
 
 ### How Rewards are Calculated
 
@@ -50,7 +50,7 @@ At the top-end, this helps increase quality and diversification of inventory.
 
 At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
 
-![Ranked Rewards](../.gitbook/assets/rewards/ranked_rewards_study.png)
+![Ranked Rewards](../.gitbook/assets/rewards/ranked\_rewards\_study.png)
 
 You can read more about the why, what, and how of Ranked Rewards [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
@@ -63,7 +63,6 @@ The asset may be of any type — dataset, algorithm for Compute-to-Data, or any 
 To qualify for DF, an asset must also:
 
 * Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) by OPF to [production networks](https://docs.oceanprotocol.com/discover/networks)
-* Be visible on [Ocean Market](https://market.oceanprotocol.com/)
 * Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
 
 ### A Brief History of Data Farming

@@ -12,7 +12,7 @@ description: >-
 
 "ve" stands for <mark style="color:orange;">**vote escrowed**</mark>. And the "vote" part of "ve" and veOCEAN is what you really need to pay attention to in order to truly understand the function of this token.
 
-You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farming dApp, the intended use is to **vote on your favorite assets** on the Ocean Market!
+You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farming dApp, the intended use is to **vote on your favorite assets** in the Ocean ecosystem!
 
 When you vote on assets that sell, then **you get a portion of the sales**!
 
@@ -25,9 +25,9 @@ veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefi
 4 key utility functionalities of veOCEAN:
 
 1. **Holding it** veOCEAN pays **Passive OCEAN Rewards** every week.
-2. **Allocating it** veOCEAN pays **Active OCEAN Rewards** every week to the top selling assets on the Ocean Market.
+2. **Allocating it** veOCEAN pays **Active OCEAN Rewards** every week to the top selling assets in the Ocean ecosystem.
 3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
-4. **2x Publisher Stake** If you are a publisher on the Ocean Market, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets on the Ocean Market further.
+4. **2x Publisher Stake** If you are a publisher in the Ocean ecosystem, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets in the Ocean ecosystem further.
 
 ### The Nitty Gritty of **Passive & Active Rewards**
 
@@ -39,7 +39,7 @@ veOCEAN holders get weekly Data Farming rewards with a small carveout for any Oc
 
 veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets.
 
-Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.\*\* But also every transaction in Ocean Market and Ocean Protocol backend infrastructure generates **"community swap" fees that go into Active Rewards**. 50% of the community fees goes to veOCEAN holders, and 50% goes to the Ocean Protocol Foundation's community-oriented traction programs.
+Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.\*\* But also every transaction in the Ocean ecosystem and Ocean Protocol backend infrastructure generates **"community swap" fees that go into Active Rewards**. 50% of the community fees goes to veOCEAN holders, and 50% goes to the Ocean Protocol Foundation's community-oriented traction programs.
 
 \*\*There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
 
