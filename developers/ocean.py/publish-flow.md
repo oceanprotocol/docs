@@ -1,7 +1,7 @@
 ---
 description: >-
   This page shows how you can publish a data NFT, a datatoken & a data asset all
-  in once in different scenarios.
+  at once in different scenarios.
 ---
 
 # Publish flow
