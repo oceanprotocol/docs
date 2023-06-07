@@ -7,7 +7,7 @@ description: We are so proud of the companies that use Ocean Protocol tools!
 
 <figure><img src="../.gitbook/assets/anchorman-teamwork.gif" alt=""><figcaption></figcaption></figure>
 
-Curious who's working on Ocean? We have many collaborators and service partners to iterate on our underlying technology to deliver world-class Web3 experiences built on top of Ocean Protocol. An up-to-date list of our partners and collaborators is maintained on the [Collaborators page ](https://oceanprotocol.com/collaborators)of our website.
+From startups to full enterprises, we have so many partners and collaborators using Ocean tech. Curious who's working with Ocean tools? Check out our up-to-date list of our partners and collaborators on the [Collaborators page ](https://oceanprotocol.com/collaborators)of our website.
 
 ### Other Useful Information
 
