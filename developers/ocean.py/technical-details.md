@@ -2,13 +2,11 @@
 description: Technical details about most used ocean.py functions
 ---
 
-# Technical Details
+# Ocean Instance
 
 At the beginning of most flows, we create an `ocean` object, which is an instance of class [`Ocean`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py). It exposes useful information, including the following.
 
-### Ocean Instance
-
-#### constructor
+### Constructor
 
 * **\_\_init\_\_**(`self`, `config_dict: Dict`, `data_provider: Optional[Type] = None`)
 
@@ -94,9 +92,9 @@ class Ocean:
 
 </details>
 
-#### config getter
+### Config Getter
 
-**config**(`self`) -> `dict`
+* **config**(`self`) -> `dict`
 
 It is a helper method for retrieving the user's configuration for ocean.py.\
 It can be called only by Ocean object and returns a python dictionary.
@@ -124,14 +122,26 @@ Configuration fields as dictionary.
 
 </details>
 
-OCEAN token:
+### OCEAN Token Address
 
-<details>
-
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL100C1-L103C52"><code>ocean.OCEAN_address -> str</code></a></summary>
+* **OCEAN\_address**(`self`) -> `str`
 
 It is a helper method for retrieving the OCEAN's token address.\
 It can be called only by Ocean object and returns the address as a `string`.
+
+**Returns**
+
+`str`
+
+OCEAN token address for that network.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL100C1-L103C52)
+
+<details>
+
+<summary>Source code</summary>
 
 ```python
  @property
@@ -157,12 +167,27 @@ def get_ocean_token_address(config_dict: dict) -> str:
 
 </details>
 
-<details>
+### OCEAN Token Object
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL105C1-L113C32"><code>ocean.OCEAN_token</code> or <code>ocean.OCEAN -> Datatoken</code></a></summary>
+* **OCEAN\_token**(`self`) -> `DatatokenBase`
+* **OCEAN**(`self`) -> `DatatokenBase` as alias for the above option
 
 It is a helper method for retrieving the OCEAN token object (Datatoken class).\
 It can be called within Ocean class and returns the OCEAN Datatoken.
+
+**Returns**
+
+`DatatokenBase`
+
+OCEAN token as `DatatokenBase` object.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL105C1-L113C32)
+
+<details>
+
+<summary>Source code</summary>
 
 ```python
     @property
@@ -178,14 +203,26 @@ It can be called within Ocean class and returns the OCEAN Datatoken.
 
 </details>
 
-Ocean smart contracts:
+### Data NFT Factory
 
-<details>
-
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL117C1-L120C80"><code>ocean.data_nft_factory -> DataNFTFactoryContract</code></a></summary>
+* **data\_nft\_factory**(`self`) -> `DataNFTFactoryContract`
 
 It is a property for getting `Data NFT Factory` object for the singleton smart contract.\
 It can be called within Ocean class and returns the `DataNFTFactoryContract` instance.
+
+**Returns**
+
+`DataNFTFactoryContract`
+
+Data NFT Factory contract object which access all the functionalities available from smart contracts in Python.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL117C1-L120C80)
+
+<details>
+
+<summary>Source code</summary>
 
 {% code overflow="wrap" %}
 ```python
@@ -198,13 +235,27 @@ It can be called within Ocean class and returns the `DataNFTFactoryContract` ins
 
 </details>
 
-<details>
+### Dispenser
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL122C1-L125C63"><code>ocean.dispenser -> Dispenser</code></a></summary>
+* **dispenser**(`self`) -> `Dispenser`
 
 `Dispenser` is represented by a faucet for free data.\
 It is a property for getting `Dispenser` object for the singleton smart contract.\
 It can be called within Ocean class and returns the `Dispenser` instance.
+
+**Returns**
+
+`Dispenser`
+
+Dispenser contract object which access all the functionalities available from smart contracts in Python.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL122C1-L125C63)
+
+<details>
+
+<summary>Source code</summary>
 
 ```python
     @property
@@ -215,13 +266,27 @@ It can be called within Ocean class and returns the `Dispenser` instance.
 
 </details>
 
-<details>
+### Fixed Rate Exchange
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL127C1-L130C72"><code>ocean.fixed_rate_exchange -> FixedRateExchange</code></a></summary>
+* **fixed\_rate\_exchange**(`self`) -> `FixedRateExchange`
 
 Exchange is used for priced data.\
 It is a property for getting `FixedRateExchange` object for the singleton smart contract.\
 It can be called within Ocean class and returns the `FixedRateExchange` instance.
+
+**Returns**
+
+`FixedRateExchange`
+
+Fixed Rate Exchange contract object which access all the functionalities available from smart contracts in Python.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL127C1-L130C72)
+
+<details>
+
+<summary>Source code</summary>
 
 ```python
  @property
@@ -232,14 +297,30 @@ It can be called within Ocean class and returns the `FixedRateExchange` instance
 
 </details>
 
-Simple getters:
+### NFT Token Getter
+
+* **get\_nft\_token**(`self`, `token_adress: str`) -> `DataNFT`
+
+It is a getter for a specific data NFT object based on its checksumed address.\
+It can be called within Ocean class which returns the `DataNFT` instance based on string `token_address` specified as parameter.
+
+**Parameters**
+
+* `token_address` - string checksumed address of the NFT token that you are searching for.
+
+**Returns**
+
+`DataNFT`
+
+Data NFT object which access all the functionalities available for ERC721 template in Python.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL139C5-L145C51)
 
 <details>
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL139C5-L145C51"><code>ocean.get_nft_token(self, token_address: str) -> DataNFT</code></a></summary>
-
-It is a getter for a specific data NFT object based on its checksumed address.\
-It can be called within Ocean class with a string `token_address` as parameter which returns the `DataNFT` instance.
+<summary>Source code</summary>
 
 ```python
     @enforce_types
@@ -253,12 +334,30 @@ It can be called within Ocean class with a string `token_address` as parameter w
 
 </details>
 
-<details>
+### Datatoken Getter
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL147C5-L153C67"><code>ocean.get_datatoken(self, token_address: str) -> DatatokenBase</code></a></summary>
+* **get\_datatoken**(`self`, `token_address: str`) -> `DatatokenBase`
 
 It is a getter for a specific `datatoken` object based on its checksumed address.\
 It can be called within Ocean class with a string `token_address` as parameter which returns the `DatatokenBase` instance depending on datatoken's template index.
+
+**Parameters**
+
+* `token_address` - string checksumed address of the datatoken that you are searching for.
+
+**Returns**
+
+`DatatokenBase`
+
+Datatoken object which access all the functionalities available for ERC20 templates in Python.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL147C5-L153C67)
+
+<details>
+
+<summary>Source code</summary>
 
 ```python
 @enforce_types
@@ -273,19 +372,32 @@ It can be called within Ocean class with a string `token_address` as parameter w
 
 </details>
 
-<details>
+### User Orders Getter
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL157C5-L173C23"><code>ocean.get_user_orders(self, address: str, datatoken: str)</code></a></summary>
+* **get\_user\_orders**(`self`, `address: str`, `datatoken: str`) -> `List[AttributeDict]`
 
 Returns the list of orders that were made by a certain user on a specific datatoken.
 
-As parameters:
-
-1. `address` - ETH wallet address of that user
-2. `datatoken` - datatoken address
-
-\
 It can be called within Ocean class.
+
+**Parameters**
+
+* `address` - wallet address of that user
+* `datatoken` - datatoken address
+
+**Returns**
+
+`List[AttributeDict]`
+
+List of all the orders on that `datatoken` done by the specified `user`.
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL157C5-L173C23)
+
+<details>
+
+<summary>Source code</summary>
 
 {% code overflow="wrap" %}
 ```python
@@ -313,19 +425,31 @@ It can be called within Ocean class.
 
 </details>
 
-Provider fees:
+### Provider Fees
 
-<details>
-
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL177C4-L189C1"><code>ocean.retrieve_provider_fees( self, ddo: DDO, access_service: Service, publisher_wallet ) -> dict:</code></a></summary>
+* **retrieve\_provider\_fees**( `self`, `ddo: DDO`, `access_service: Service`, `publisher_wallet` ) -> `dict`
 
 Calls Provider to compute provider fees as dictionary for access service.
 
-As parameters:
+**Parameters**
 
-1. `ddo` - the data asset which has the DDO object
-2. `access_service` - Service instance for the service that needs the provider fees
-3. `publisher_wallet` - Wallet instance of the user that wants to retrieve the provider fees
+* `ddo` - the data asset which has the DDO object
+* `access_service` - Service instance for the service that needs the provider fees
+* `publisher_wallet` - Wallet instance of the user that wants to retrieve the provider fees
+
+**Returns**
+
+`dict`
+
+A dictionary which contains the following keys (`providerFeeAddress`, `providerFeeToken`, `providerFeeAmount`, `providerData`, `v`, `r`, `s`, `validUntil`).
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL177C4-L189C1)
+
+<details>
+
+<summary>Source code</summary>
 
 {% code overflow="wrap" %}
 ```python
@@ -346,19 +470,33 @@ As parameters:
 
 </details>
 
-<details>
+### Compute Provider Fees
 
-<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL190C4-L210C1"><code>ocean.retrieve_provider_fees_for_compute( self, datasets: List[ComputeInput], algorithm_data: Union[ComputeInput, AlgorithmMetadata], consumer_address: str, compute_environment: str, valid_until: int, ) -> dict:</code></a></summary>
+* **retrieve\_provider\_fees\_for\_compute**(`self`, `datasets: List[ComputeInput]`, `algorithm_data: Union[ComputeInput, AlgorithmMetadata]`, `consumer_address: str`, `compute_environment: str`, `valid_until: int`) -> `dict`
 
 Calls Provider to generate provider fees as dictionary for compute service.
 
-As parameters:
+**Parameters**
 
-1. `datasets` - list of `ComputeInput` which contains the data assets
-2. `algorithm_data` - necessary data for algorithm and it can be either a `ComputeInput` object, either just the algorithm metadata, `AlgorithmMetadata`
-3. `consumer_address` - address of the compute consumer wallet which is requesting the provider fees
-4. `compute_environment` - id provided from the compute environment as `string`
-5. `valid_until` - timestamp in UNIX miliseconds for the duration of provider fees for the compute service.
+* `datasets` - list of `ComputeInput` which contains the data assets
+* `algorithm_data` - necessary data for algorithm and it can be either a `ComputeInput` object, either just the algorithm metadata, `AlgorithmMetadata`
+* `consumer_address` - address of the compute consumer wallet which is requesting the provider fees
+* `compute_environment` - id provided from the compute environment as `string`
+* `valid_until` - timestamp in UNIX miliseconds for the duration of provider fees for the compute service.
+
+**Returns**
+
+`dict`
+
+A dictionary which contains the following keys (`providerFeeAddress`, `providerFeeToken`, `providerFeeAmount`, `providerData`, `v`, `r`, `s`, `validUntil`).
+
+**Defined in**
+
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL190C4-L210C1)
+
+<details>
+
+<summary>Source code</summary>
 
 {% code overflow="wrap" %}
 ```python
@@ -387,7 +525,7 @@ As parameters:
 
 </details>
 
-### Ocean Assets
+#### Ocean Assets
 
 <details>
 
@@ -1237,7 +1375,7 @@ Return value is a tuple composed of list of datasets and algorithm data (if exis
 
 </details>
 
-### Ocean Compute
+#### Ocean Compute
 
 <details>
 
@@ -1547,7 +1685,7 @@ A list of objects containing information about each compute environment. For eac
 
 </details>
 
-### Datatoken Interface
+#### Datatoken Interface
 
 Dispenser utils:
 
