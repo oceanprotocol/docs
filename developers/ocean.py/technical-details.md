@@ -18,7 +18,8 @@ In order to initialize a Ocean object, you must provide `config_dict` which is a
 
 **Parameters**
 
-<table><thead><tr><th width="182">Name</th><th width="260">Type</th><th width="162">Default Value</th><th>Description</th></tr></thead><tbody><tr><td><code>config_dict</code></td><td><code>dict</code></td><td>mandatory</td><td>It contains the configuration as dictionary format.</td></tr><tr><td><code>data_provider</code></td><td><code>Optional[DataProvider]</code></td><td>None</td><td>It is an optional parameter for DataProvider instance, if it is not provided, the constructor will instantiate a new one from scratch.</td></tr></tbody></table>
+* `config_dict`: `dict` which is mandatory and it contains the configuration as dictionary format.
+* `data_provider`: `Optional[DataProvider]` which is optional with a default value of None. If it is not provided, the constructor will instantiate a new one from scratch.
 
 **Returns**
 
