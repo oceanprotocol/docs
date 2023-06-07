@@ -41,7 +41,7 @@
     * [Asset Pricing](developers/asset-pricing.md)
     * [Fees](developers/fees.md)
     * [Metadata](developers/contracts/metadata.md)
-    * [Fractional Ownership](developers/contracts/fractional-ownership.md)
+    * [Fractional Ownership](developers/datanft-and-datatoken/fractional-ownership.md)
   * [Community Monetization](developers/community-monetization.md)
   * [Identifiers & Metadata](developers/Identifiers-Metadata.md)
   * [DDO Specification](developers/ddo-specification.md)

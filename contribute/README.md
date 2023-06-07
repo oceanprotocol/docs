@@ -15,35 +15,33 @@ Do you think you see a bug in our code? To report a bug that _isn't a vulnerabil
 
 First, make sure that you search existing open + closed issues + PRs to see if your bug has already been reported there. If not, then go ahead and create a new bug report! 🦸
 
-### Report Vulnerabilities
+### Report vulnerabilities
 
-You may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
+For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check out our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
 
-<figure><img src="../.gitbook/assets/matrix-code.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/matrix-code.gif" alt=""><figcaption><p>Did you find a glitch in our code matrix?</p></figcaption></figure>
 
-### Suggest a new feature
+### Suggest a new feature 🤔💭
 
 Use the _Issues_ section of each repository and select _Feature request_ to suggest and discuss any features you would like to see added.
 
-As with bug reports, search existing open and closed issues and PRs to see if something has already been reported.
+As with bug reports, don't forget to search existing open + closed issues + PRs to see if something has already been suggested.
 
-### Fix or improve core software
+### Improve core software
 
-We'd love to have you contribute to any repository within the `oceanprotocol` GitHub organization!
+It takes a tribe of awesome coders to build our tech stack, and you're invited to pitch in 😊 We'd love to have you contribute to any repository within the `oceanprotocol` GitHub organization!
 
-Before you start coding right away, please follow those basic guidelines:
+Before you start coding, please follow these basic guidelines:
 
-* If no issue for your case is present, open one first before starting to work on something, so it can be discussed.
-* Make yourself familiar with eventual repository-specific contribution requirements and code style requirements.
+* If no issue for your case is present, please open one first before starting to work on something, so it can be discussed openly with Ocean core team.
+* Make yourself familiar with the repository-specific contribution requirements and code style requirements.
 * Because of the weird world of intellectual property, we need you to follow the [legal requirements](legal-reqs.md) for contributing code.
-* Be excellent to each other, as outlined in our [Contributor Code of Conduct](code-of-conduct.md).
+* Be excellent to each other in the comments, as outlined in our [Contributor Code of Conduct](code-of-conduct.md).
 
-#### Workflow
+#### Your contribution workflow
 
-A typical code contribution in any Ocean Protocol repository would go as follows:
-
-1. As an external developer, fork the respective repo and push to your own fork. Ocean core developers push directly on the repo under `oceanprotocol` org.
-2. You should create a new branch for your changes. The naming convention for branches is: `issue-001-short-feature-description`. The issue number `issue-001` needs to reference the GitHub issue that you are trying to fix. The short feature description helps to quickly distinguish your branch among the other branches in play.
+1. As an external developer, fork the respective repo and **push your code changes to your own fork.** Ocean core developers push directly on the repo under `oceanprotocol` org.
+2. Then, create a new branch for your changes from our public repo's main branch. The naming convention for new branches is: `issue-001-short-feature-description`. The issue number `issue-001` needs to reference the GitHub issue that you are trying to fix. The short feature description helps us to quickly distinguish your branch among the other branches in play.
 3. To get visibility and Continuous Integration feedback as early as possible, open your Pull Request as a `Draft`.
 4. Give it a meaningful title, and at least link to the respective issue in the Pull Request description, like `Fixes #23`. Describe your changes, mention things for reviewers to look out for, and for UI changes screenshots and videos are helpful.
 5. Once your Pull Request is ready, mark it as `Ready for Review`, in most repositories code owners are automatically notified and asked for review.
@@ -51,33 +49,31 @@ A typical code contribution in any Ocean Protocol repository would go as follows
 7. If your PR stays open for longer and merge conflicts are detected, merge or rebase your branch against the current `main` branch.
 8. Once a Pull Request is approved, you can merge it.
 
-Depending on the release management of each repository, your contribution will be either included in a next release, or is put live automatically.
+Depending on the release management of each repository, your contribution will be either included in a next release, or deployed live automatically.
 
-Except for GitHub, you can find most Ocean Protocol core developers in [Discord](https://discord.gg/TnXjkR5) if you have further development questions.
+Except for GitHub, you can chat with most Ocean Protocol core developers in our [Discord](https://discord.gg/TnXjkR5) if you have further development questions.
 
-### Develop an app or integration on top of Ocean Protocol
+### Develop an dApp or integration on top of Ocean Protocol
 
-Create an app with one of Ocean Protocol's interface points:
+We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with our open-source tools.&#x20;
 
-Ocean documentation will help. And... you're here:)
+If you need ANY help, then we're here to talk with you on [Discord](https://discord.gg/TnXjkR5) to give you advice. We're also consistently improving our docs to help you. And... you're here :)
 
-### Improve these docs
+### Improve our docs
 
-These docs can always be improved. Every content page has an edit link at its end linking you to the content source on GitHub for simple copy editing.
-
-If you found a technical bug or have an improvement suggestion, head over to the repo's _Issues_ section:
+Our docs repo can always be improved. If you found a mistake or have an improvement to make, then follow the steps in our [contribution workflow](./#your-contribution-workflow) to commit your changes.
 
 ### Apply for a developer job
 
-Really love building on Ocean and want to dive deeper? Consider joining us full time. Our openings are listed at https://github.com/oceanprotocol/devjobs.
+Do you REALLY love building on Ocean Protocol? Consider joining us full time! Our openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
 
-### Get Funding
+### Get funding
 
-Funding can be for contributing to the core software, building apps, doing integrations, fixing bugs, community outreach, and more. Checkout our active funding programs for more information:
+You might be able to get funding from us for contributing to our core software, building dApps on top of our tech, creating integrations, fixing bugs, doing community outreach, and more. Checkout our active funding programs for more information:
 
 * [**Shipyard**](https://oceanprotocol.com/shipyard) (Ocean curated grants).
 * [**Data Challenges**](https://oceanprotocol.com/bounties) (rewards for publishing algorithms and datasets).
 
-### Other ways to get involved
+### Talk to us!
 
-Please go to the [Ocean Community Page](https://www.oceanprotocol.com/community) for more ideas on how to get involved.
+Check our our [Community Page](https://www.oceanprotocol.com/community) for our social media links where you can join the buzz around Ocean or chat with us directly 😊 Toodles!

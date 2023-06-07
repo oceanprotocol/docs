@@ -1,6 +1,6 @@
 ---
 description: Help for wherever you are on your Ocean Protocol journey.
-cover: .gitbook/assets/cover/contribute (1) (1) (2).png
+cover: .gitbook/assets/cover/contribute (1).png
 coverY: 0
 layout: landing
 ---
