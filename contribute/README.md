@@ -19,6 +19,8 @@ First, make sure that you search existing open + closed issues + PRs to see if y
 
 You may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
 
+<figure><img src="../.gitbook/assets/matrix-code.gif" alt=""><figcaption></figcaption></figure>
+
 ### Suggest a new feature
 
 Use the _Issues_ section of each repository and select _Feature request_ to suggest and discuss any features you would like to see added.
