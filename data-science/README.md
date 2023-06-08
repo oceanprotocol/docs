@@ -5,21 +5,20 @@ coverY: 0
 
 # 📊 Data Science
 
-The world runs on data. From social media to shopping online to healthcare to financial planning, data drives our interactions in the world. Access to greater amounts of data can create a flywheel of value creation; better data leads to better insights which leads to greater profits.&#x20;
+Ocean Protocol is built to serve the data science space. This guide links you to the most important tutorials for data scientists working with Ocean Protocol.&#x20;
 
 
 
-Ocean Protocol was built to democratize the free flow of data. It repurposes the standards created within crypto and DeFi to facilitate a new paradigm of _self-custodial_ ownership and access control of our data assets. NFTs become a permissionless standard of ownership, ERC20s act as a permissionless standard for flexible access control rights, crypto wallets like metamask become a self-custodial holder of our assets.&#x20;
+**Core Components for Data Scientists:**
+
+* [Ocean data NFTs ](../developers/contracts/data-nfts.md)and [datatokens](../developers/contracts/datatokens.md) are core building blocks of Ocean Protocol. They allow individuals and businesses to define their ownership of their assets, and create flexible access control tokens
+* Ocean's [Compute-to-Data](../developers/compute-to-data/) engine resolves the trade-off between the benefits of open data and data privacy risks. Using the engine, algorithms can be run on data without exposing the underlying data. Now, data can be widely shared and monetized without&#x20;
+* [Ocean.py](../developers/ocean.py/) a python library that interacts with all Ocean contracts and tools. To get started with the library, check out our guides. They will teach installation and set-up and several popular workflows such as[ publishing an asset](../developers/ocean.py/publish-flow.md) and starting a [compute job](../developers/ocean.py/compute-flow.md).
 
 
 
-Ocean's [Compute-to-Data](../developers/compute-to-data/) engine resolves the trade-off between the benefits of open data and data privacy risks. Using the engine, algorithms can be run on data without exposing the underlying data. Now, data can be widely shared to contribute to the worlds shared knowledge while also respecting individuals right to privacy.
+How to take part in the ecosystem
 
-
-
-
-
-Data scientists that prefer to use python can work with Ocean by using [Ocean.py](../developers/ocean.py/). Ocean.py is a python library that interacts with all Ocean contracts and tools. To get started with the library, check out our guides. They will teach installation and set-up and several popular workflows such as[ publishing an asset](../developers/ocean.py/publish-flow.md) and starting a [compute job](../developers/ocean.py/compute-flow.md).
-
-
+* Publish useful data
+*
 
