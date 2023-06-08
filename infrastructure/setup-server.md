@@ -45,7 +45,7 @@ For simple configurations:
 For complex configurations:
 
 1. [Install the operating system](setup-server.md#install-the-operating-system)
-2. Install Kubernetes with Docker Engine
+2. [Install Kubernetes with Docker Engine](setup-server.md#install-kubernetes-with-docker-engine)
 
 ### Install the operating system
 
