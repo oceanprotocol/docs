@@ -5,7 +5,7 @@ coverY: 0
 
 # 📊 Data Science
 
-Ocean Protocol is built to serve the data science space. This guide links you to the most important tutorials for data scientists working with Ocean Protocol.&#x20;
+Ocean Protocol was built to serve the data science space. This guide links you to the most important tutorials for data scientists working with Ocean Protocol.&#x20;
 
 
 
