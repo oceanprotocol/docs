@@ -34,7 +34,7 @@ Additionally, the Provider service offers compute services by establishing a con
 
 ### How to run the provider?
 
-We recommend checking the README in the [Provider GitHub repository](https://www.amazon.co.uk/dp/B08XBBTLJ8/ref=twister\_B09XVHYH99?\_encoding=UTF8\&th=1) for the steps to run the Provider. If you see any errors in the instructions, please open an issue within the GitHub repository.&#x20;
+We recommend checking the README in the Provider [GitHub repository](https://github.com/oceanprotocol/provider) for the steps to run the Provider. If you see any errors in the instructions, please open an issue within the GitHub repository.&#x20;
 
 ### Ocean Provider Endpoints Specification
 

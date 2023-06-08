@@ -1,16 +1,30 @@
+---
+description: >-
+  Exploring fractional ownership in Web3, combining NFTs and DeFi for
+  co-ownership of data IP and tokenized DAOs for collective data management.
+---
+
 # Fractional Ownership
 
-Fractional ownership is an exciting sub-niche of Web3, at the intersection of NFTs and DeFi. IT allows co-ownership of data IP.
+Fractional ownership represents an exciting subset within the realm of Web3, combining the realms of NFTs and DeFi. It introduces the concept of co-owning data intellectual property (IP).
 
-Ocean provides two approaches to fractional ownership:
+Ocean offers two approaches to facilitate fractional ownership:
 
-* Sharded holding of ERC20 datatokens, where each ERC20 holder has the usual datatoken rights as described above, e.g. 1.0 datatokens to consume an asset. This comes out-of-the-box with Ocean.
-* Sharding ERC721 data NFT, where each co-holder has right to some earnings against base IP, and co-controls the data NFT. For example, there’s a DAO with the sole purpose to hold the data NFT; this DAO has its own ERC20 token; DAO members vote with tokens to update data NFT roles or deploy ERC20 datatokens against the ERC721.
+1. Sharded Holding of ERC20 Datatokens: Under this approach, each holder of ERC20 tokens possesses the typical datatoken rights outlined earlier. For instance, owning 1.0 datatoken allows consumption of a particular asset. Ocean conveniently provides this feature out of the box.
+2. Sharding ERC721 Data NFT: This method involves dividing the ownership of an ERC721 data NFT among multiple individuals, granting each co-owner the right to a portion of the earnings generated from the underlying IP. Moreover, these co-owners collectively control the data NFT. For instance, a dedicated DAO may be established to hold the data NFT, featuring its own ERC20 token. DAO members utilize their tokens to vote on updates to data NFT roles or the deployment of ERC20 datatokens associated with the ERC721.
 
-Note: For (2), one might consider doing sharding with something like Niftex. But then there are questions: what rights do the shard-holders get exactly? It could be zero; for example, Amazon shareholders don’t have the right to walk the hallways of the Amazon offices just because they hold shares. Secondly, how do the shard-holders control the data NFT? These questions get resolved by using a tokenized DAO, as described above.
+It's worth noting that for the second approach, one might consider utilizing platforms like Niftex for sharding. However, important questions arise in this context:&#x20;
 
-Data DAOs are a cool use case whenever you have a group of people that wish to co-manage data, or bundle up data for larger collective bargaining power. The DAO may be a union, co-op, or trust.
+* What specific rights do shard-holders possess?&#x20;
+* It's possible that they have limited rights, just as Amazon shareholders don't have the authority to roam the hallways of Amazon's offices simply because they own shares
+* Additionally, how do shard-holders exercise control over the data NFT?&#x20;
 
-Consider the following mobile app example. You install the app; it has a built-in crypto wallet; you give the app permission to see your location data; the app gets the DAO to sell your (anonymized) location data on your behalf; the DAO sells your data bundled along with thousands of other DAO members; as a DAO member you get a cut of the profits.
+These concerns are effectively addressed by employing a tokenized DAO, as previously described.
 
-This has several variants. Each member’s data feed could be its own data NFT with associated datatokens. Or, there’s simply one data NFT aggregating datafeeds across all members into a single feed, and the feed is fractionalized by sharded holding of ERC20 tokens (1 above) or sharding the ERC721 data NFT (2 above). If you’re interested in starting a data union then we recommend getting in touch with our friends at [Data Union](https://www.dataunion.app/).
+<figure><img src="../../.gitbook/assets/dao.jpeg" alt=""><figcaption><p>DAO</p></figcaption></figure>
+
+Data DAOs present a fascinating use case whenever a group of individuals desires to collectively manage data or consolidate data for increased bargaining power. Such DAOs can take the form of unions, cooperatives, or trusts.
+
+Consider the following example involving a mobile app: You install the app, which includes an integrated crypto wallet. After granting permission for the app to access your location data, it leverages the DAO to sell your anonymized location data on your behalf. The DAO bundles your data with that of thousands of other DAO members, and as a member, you receive a portion of the generated profits.
+
+This use case can manifest in several variations. Each member's data feed could be represented by their own data NFT, accompanied by corresponding datatokens. Alternatively, a single data NFT could aggregate data feeds from all members into a unified feed, which is then fractionally owned through sharded ERC20 tokens (as described in approach 1) or by sharding the ERC721 data NFT (as explained in approach 2). If you're interested in establishing a data union, we recommend reaching out to our associates at [Data Union](https://www.dataunion.app/).
