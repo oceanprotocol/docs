@@ -1,6 +1,6 @@
 # The Data Value Creation Loop
 
-The Data Value Creation Loop lives at the heart of Ocean Protocol. It refers to the process in which data gains value as it progresses from  business problem, to raw data, to cleaned data, to trained model, to its use in applications. At each step of the way, additional work is done on the data so that it accrues greater value.
+The Data Value Creation Loop represents the data journey as it progresses from a business problem to raw data, undergoes cleansing and refinement, is used to train models, and finally finds its application in real-world scenarios. Data assets accrue more value at each stage of the loop accrues as it gets closer to its real-world deployment. created when a variety of different skillsets work together; business stakeholders, data engineers, data scientists, MLOps engindeploymenteers, and application developers&#x20;
 
 * **Business Problem:** Identifying the business problem that can be addressed with data science is the critical first step. Example: Reducincustomerer churn rate, predicting token prices, or predicting drought risk.&#x20;
 * **Raw Data**: This is the unprocessed, untouched data, fresh from the source. This data can be static or dynamic from an API. Example: User profiles, historical prices, or daily temperature.
