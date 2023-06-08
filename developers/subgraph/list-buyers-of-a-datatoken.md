@@ -1,8 +1,10 @@
 ---
-description: Use these steps to reveal the information contained within an asset's DID
+description: >-
+  Use these steps to reveal the information contained within an asset's DID and
+  list the buyers of a datatoken
 ---
 
-# Resolve a DID's information
+# List buyers of a datatoken
 
 ## Step 1: Find the Network and Datatoken address
 
@@ -40,3 +42,17 @@ Here are the networks and their corresponding chain IDs:
 ```
 
 \
+Step 2: Query the Subgraph to see all buyers of the datatoken
+-------------------------------------------------------------
+
+Select the corresponding subgraph URL for the asset's network. Below are some of the popular subgraph URLs, to show you subgraph URL format.
+
+```
+https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
+https://v4.subgraph.polygon.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
+https://v4.subgraph.bsc.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
+https://v4.subgraph.moonriver.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
+https://v4.subgraph.energyweb.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
+https://v4.subgraph.goerli.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
+https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
+```
