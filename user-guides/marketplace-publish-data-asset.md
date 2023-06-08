@@ -2,7 +2,7 @@
 description: How to Mint and Publish Data NFTs Using the Ocean Market
 ---
 
-# Publish an NFT
+# Publish Data NFTs
 
 <figure><img src="../.gitbook/assets/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
 
@@ -10,11 +10,18 @@ description: How to Mint and Publish Data NFTs Using the Ocean Market
 
 Ocean Protocol has a convenient marketplace, called the Ocean Market, for publishers and consumers of data. What data, you ask? This data spans anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Ocean Market.
 
-### How to Mint an NFT using Ocean Protocol?
+### What does it mean to publish an NFT using Ocean Protocol?
 
-The publishing process on the Ocean Market both mints (i.e. creates) a data NFT and a corresponding datatoken for your IP. The data NFT stores your IP, and the datatoken controls access to it. If you publish your music IP on the Ocean Market, for example, then a data NFT containing your music and its datatoken are minted during the publishing process. When consumers purchase the datatoken, then they gain access to download/use your data NFT's music.&#x20;
+The publishing process on the Ocean Market both mints (i.e. creates) a data NFT and a corresponding datatoken for your IP. The data NFT stores your IP, and the datatoken controls access to it. If you publish your music IP on the Ocean Market, for example, then a data NFT containing your music and its datatoken are minted during the publishing process. When consumers purchase the datatoken, then they gain access to download/use your data NFT's music.
 
 ### How to Publish an NFT on the Ocean Market 🧑‍🏫
+
+### Programmatic flow:
+
+* **Python:** Are you looking how to publish a data NFT using Python? Follow our ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
+* Javascript: Are you looking how to publish a data NFT using Javascript? Follow our ocean.js Publish Flow to mint a data NFT and datatoken using Javascript.
+
+### No code flow:
 
 {% embed url="https://www.youtube.com/watch?v=3NGSmfXkHAQ" %}
 Don't enjoy reading? Watch our video tutorial!
