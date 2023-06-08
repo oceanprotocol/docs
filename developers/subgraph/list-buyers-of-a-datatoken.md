@@ -56,3 +56,32 @@ https://v4.subgraph.energyweb.oceanprotocol.com/subgraphs/name/oceanprotocol/oce
 https://v4.subgraph.goerli.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
 https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
 ```
+
+You can then use the following example query to find what you're looking for (you can remove datatokens, or the lines with `where: {datatoken/consumer}` to tweak your filtering criteria. You can then explore the graphql editor via the links above to learn how to use it, and to add/remove information to the query.\
+
+
+```
+query GetFilteredOrders {
+  orders (
+    where: {
+      datatoken_in: ["0xc22bfd40f81c4a28c809f80d05070b95a11829d9", "0xdatatoken_address2"],
+      consumer_in: ["0xconsumer1"]
+    }
+    orderBy: createdTimestamp
+    orderDirection: desc
+    first: 1000
+  ) {
+    datatoken{
+      id
+      name
+      symbol
+      nft {
+        id
+      }
+    }
+    consumer{
+      id
+    }
+  }
+}
+```
