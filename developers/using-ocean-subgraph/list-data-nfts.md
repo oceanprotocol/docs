@@ -108,7 +108,7 @@ Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL inte
 
 ```graphql
 {
-  nfts (skip:0, first: 10, subgraphError:degraphny){
+  nfts (skip:0, first: 10, subgraphError:deny){
     id
     name
     symbol
