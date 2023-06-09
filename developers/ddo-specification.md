@@ -7,9 +7,84 @@ description: >-
   the DDO standard.
 ---
 
-# DDO Full Specification
+# DDO Specification
 
 **v4.1.0**
+
+<< Diagram Work in Progress>>
+
+```mermaid
+erDiagram
+DDO ||--|{ Metadata : contains
+DDO ||--|{ Services : contains
+Services ||--|{ ConsumerParameters : contains
+Metadata ||--|{ AlgorithmMetadata : contains
+AlgorithmMetadata ||--|{ Container : contains
+    DDO {
+        arrayOfString context
+        string id
+        string version
+        number chainID
+        string nftAddress 
+        Metadata metadata
+        Services services
+        Credentials credentials       
+}
+    Metadata {
+        ISODateTimeString created
+        ISODateTimeString updated
+        string description
+        string copyrightHolder
+        string name
+        string type
+        string author
+        string license
+        arrayOfString links
+        string contentLanguage
+        arrayOfString tags
+        arrayOfStrings categories
+        Object additionalInformation
+        AlgorithmMetadata algorithm
+}
+
+AlgorithmMetadata {
+    string language
+    string version
+    ConsumerParameters consumerParameters
+    Container container
+}
+
+Container {
+string entrypoint
+string image
+string tag
+string checksum
+}
+
+Services {
+string id
+string type
+string name
+string description
+string datatokenAddress
+string serviceEndpoint
+Files files
+number timeout
+Compute compute
+ConsumerParameters consumerParameters
+Object additionalInformation
+}
+
+ConsumerParameters {
+string name
+string type
+string label
+boolean required
+string description
+string-number-boolean default
+ArrayOfOptions options
+}
+```
 
 ## Required Attributes
 
@@ -184,7 +259,7 @@ This object holds information describing the actual asset.
 | **`additionalInformation`** | Object                                              | Stores additional information, this is customizable by publisher                                                                                                                                  |
 | **`algorithm`**\*\*         | [Algorithm Metadata](did-ddo.md#algorithm-metadata) | Information about asset of `type` `algorithm`                                                                                                                                                     |
 
-\* Required&#x20;
+\* Required
 
 \*\* Required for algorithms only
 
@@ -214,23 +289,24 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-| Attribute | Type | Description | 
-| --------- | ---- | ----------- |
-| **`id`*** | `string` | Unique ID |
-| **`type`*** | `string` |Type of service `access`, `compute`, `wss` etc. |
-| **`name`**  | `string`  | Service friendly name |
-| **`description`** | `string` | Service description |
-| **`datatokenAddress`*** | `string` | Datatoken |
-| **`serviceEndpoint`*** | `string` | Provider URL (schema + host) |
-| **`files`*** | [Files](did-ddo.md#files) | Encrypted file. |
-| **`timeout`*** | `number` | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
-| **`compute`**** | [Compute](developers/compute-to-data/compute-options.md) | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources. |
-| **`consumerParameters`** | [Consumer Parameters](developers/compute-to-data/compute-options.md#consumer-parameters) | An object the defines required consumer input before consuming the asset |
-| **`additionalInformation`** | Object | Stores additional information, this is customizable by publisher |
+| Attribute                   | Type                                                                                     | Description                                                                                                                                  |
+| --------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`id`**\*                  | `string`                                                                                 | Unique ID                                                                                                                                    |
+| **`type`**\*                | `string`                                                                                 | Type of service `access`, `compute`, `wss` etc.                                                                                              |
+| **`name`**                  | `string`                                                                                 | Service friendly name                                                                                                                        |
+| **`description`**           | `string`                                                                                 | Service description                                                                                                                          |
+| **`datatokenAddress`**\*    | `string`                                                                                 | Datatoken                                                                                                                                    |
+| **`serviceEndpoint`**\*     | `string`                                                                                 | Provider URL (schema + host)                                                                                                                 |
+| **`files`**\*               | [Files](did-ddo.md#files)                                                                | Encrypted file.                                                                                                                              |
+| **`timeout`**\*             | `number`                                                                                 | Describing how long the service can be used after consumption is initiated. A timeout of `0` represents no time limit. Expressed in seconds. |
+| **`compute`**\*\*           | [Compute](developers/compute-to-data/compute-options.md)                                 | If service is of `type` `compute`, holds information about the compute-related privacy settings & resources.                                 |
+| **`consumerParameters`**    | [Consumer Parameters](developers/compute-to-data/compute-options.md#consumer-parameters) | An object the defines required consumer input before consuming the asset                                                                     |
+| **`additionalInformation`** | Object                                                                                   | Stores additional information, this is customizable by publisher                                                                             |
 
-\* Required&#x20;
+\* Required
 
 \*\* Required for compute assets only
+
 #### Files
 
 The `files` field is returned as a `string` which holds the encrypted file URLs.

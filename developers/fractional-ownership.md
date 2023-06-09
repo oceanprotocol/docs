@@ -21,7 +21,7 @@ It's worth noting that for the second approach, one might consider utilizing pla
 
 These concerns are effectively addressed by employing a tokenized DAO, as previously described.
 
-<figure><img src="../../.gitbook/assets/dao.jpeg" alt=""><figcaption><p>DAO</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/dao.jpeg" alt=""><figcaption><p>DAO</p></figcaption></figure>
 
 Data DAOs present a fascinating use case whenever a group of individuals desires to collectively manage data or consolidate data for increased bargaining power. Such DAOs can take the form of unions, cooperatives, or trusts.
 
