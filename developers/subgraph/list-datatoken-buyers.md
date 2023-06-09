@@ -4,7 +4,7 @@ description: >-
   list the buyers of a datatoken
 ---
 
-# List buyers of a datatoken
+# List datatoken buyers
 
 ## Step 1: Find the Network and Datatoken address
 
@@ -45,7 +45,7 @@ Here are the networks and their corresponding chain IDs:
 Step 2: Query the Subgraph to see all buyers of the datatoken
 -------------------------------------------------------------
 
-Select the corresponding subgraph URL for the asset's network. Below are some of the popular subgraph URLs, to show you subgraph URL format.
+Select the corresponding subgraph URL for the asset's network. Below are some of the popular subgraph URLs, to show you the subgraph URL format.
 
 ```
 https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
@@ -57,10 +57,11 @@ https://v4.subgraph.goerli.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-
 https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql?
 ```
 
-You can then use the following example query to find what you're looking for (you can remove datatokens, or the lines with `where: {datatoken/consumer}` to tweak your filtering criteria. You can then explore the graphql editor via the links above to learn how to use it, and to add/remove information to the query.\
+You can then use the following example query to find what you're looking for (you can remove datatokens, or the lines with `where: {datatoken/consumer}` to tweak your filtering criteria. You can then explore the graphql editor via the links above to learn how to use it, and to add/remove information to the query.
 
+Copy and paste the query below to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql). Note, that you must first fill in the missing fields for the datatoken address.
 
-```
+```graphql
 query GetFilteredOrders {
   orders (
     where: {
