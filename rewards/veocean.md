@@ -1,6 +1,6 @@
 ---
 description: >-
-  Let's discuss the "ve" in veOCEAN for our last jitsu before earning a black
+  Let's discuss the "ve" in veOCEAN for our last jutsu before earning a black
   belt in Data Farming knowledge!
 ---
 
