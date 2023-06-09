@@ -23,7 +23,7 @@ What are your thoughts on this? From where we stand, it seems like we're rapidly
 
 That's why we made the decision to take action, and it led to the creation of **Ocean Protocol**.
 
-**Ocean Protocol aims to kick-start a new data economy by giving power back to people and giving researchers the data they need. Ocean Protocol technology enables data to become an asset**
+**Ocean Protocol aims to kick-start a new data economy by giving power back to people and giving researchers the data they need. Ocean Protocol technology enables data to become an asset.**
 
 By providing a decentralized and open platform and the tools for data sharing, **Ocean Protocol** aims to address these concerns and create a more equitable and collaborative data economy.
 

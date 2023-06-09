@@ -2,7 +2,7 @@
 description: Choose the revenue model during asset publishing.
 ---
 
-# Asset Pricing
+# Pricing Schemas
 
 Ocean Protocol offers you flexible and customizable pricing options to monetize your valuable data assets. You have two main pricing models to choose from:&#x20;
 
@@ -11,11 +11,58 @@ Ocean Protocol offers you flexible and customizable pricing options to monetize 
 
 These models are designed to cater to your specific needs and ensure a smooth experience for data consumers.
 
-The price of an asset is determined by the number of Ocean tokens a buyer must pay to access the asset. When users pay the right amount of Ocean tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](contracts/datanft-and-datatoken.md).
+The price of an asset is determined by the number of tokens (this can be Ocean Tokens or any ERC20 Token configured when published the asset) a buyer must pay to access the data. When users pay the tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](contracts/datanft-and-datatoken.md).
+
+To provide you with even greater flexibility in monetizing your data assets, Ocean Protocol allows you to customize the pricing schema by configuring your own ERC20 token when publishing the asset. This means that instead of using Ocean Tokens as the pricing currency, you can utilize your own token, aligning the pricing structure with your specific requirements and preferences.
+
+You can customised your token this way:
+
+{% tabs %}
+{% tab title="Ocean Market" %}
+```javascript
+NEXT_PUBLIC_OCEAN_TOKEN_ADDRESS='0x00000' // YOUR TOKEN'S ADDRESS
+```
+{% endtab %}
+
+{% tab title="Ocean.js" %}
+<pre class="language-javascript"><code class="lang-javascript"><strong>// https://github.com/oceanprotocol/ocean.js/blob/main/CodeExamples.md#61-publish-a-dataset-create-nft--datatoken-with-a-fixed-rate-exchange
+</strong><strong>const freParams: FreCreationParams = {
+</strong>    fixedRateAddress: addresses.FixedPrice,
+    baseTokenAddress: addresses.Ocean, // you can customize this with any ERC20 token
+    owner: await publisherAccount.getAddress(),
+    marketFeeCollector: await publisherAccount.getAddress(),
+    baseTokenDecimals: 18,
+    datatokenDecimals: 18,
+    fixedRate: '1',
+    marketFee: '0.001',
+    allowedConsumer: ZERO_ADDRESS,
+    withMint: true
+}
+</code></pre>
+{% endtab %}
+
+{% tab title="Ocean.py" %}
+```python
+exchange_args = ExchangeArguments(
+ rate=to_wei(1), # you can customize this with any price
+ base_token_addr=OCEAN.address, # you can customize this with any ERC20 token
+ owner_addr=publisher_wallet.address,
+ publish_market_fee_collector=ZERO_ADDRESS,
+ publish_market_fee=0,
+ with_mint=True,
+ allowed_swapper=ZERO_ADDRESS,
+ full_info=False,
+ dt_decimals=datatoken.decimals()
+)
+```
+{% endtab %}
+{% endtabs %}
+
+Furthermore, Ocean Protocol recognizes that different data assets may have distinct pricing needs. That's why the platform supports multiple pricing schemas, allowing you to implement various pricing models for different datasets or use cases. This flexibility ensures that you can tailor the pricing strategy to each specific asset, maximizing its value and potential for monetization.
 
 ### Fixed pricing
 
-With the fixed pricing model, you have the power to set a specific price for your data assets in Ocean tokens (OCEAN). This means that buyers interested in accessing your data will need to pay the designated amount of OCEAN. To make things even easier, Ocean Market automatically creates a special token called a "datatoken" behind the scenes.&#x20;
+With the fixed pricing model, you have the power to set a specific price for your data assets. This means that buyers interested in accessing your data will need to pay the designated amount of configured tokens. To make things even easier, Ocean automatically creates a special token called a "datatoken" behind the scenes.&#x20;
 
 This datatoken represents the access right to your data, so buyers don't have to worry about the technical details. If you ever want to adjust the price of your dataset, you have the flexibility to do so whenever you need.&#x20;
 
@@ -135,6 +182,8 @@ function createNftWithErc20WithDispenser(
 
 </details>
 
-To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](ocean.js/)and [Ocean.py](ocean.py/), specifically developed for interacting with Ocean Protocol. With Ocean.js, you can use the [createFRE() ](ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](ocean.py/publish-flow.md#create-an-asset-and-pricing-schema-simultaneously) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
+To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](ocean.js/)and [Ocean.py](ocean.py/), specifically developed for interacting with Ocean Protocol.&#x20;
+
+With Ocean.js, you can use the [createFRE() ](ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](ocean.py/publish-flow.md#create-an-asset-and-pricing-schema-simultaneously) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
 
 By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](ocean.js/) and [Ocean.py](ocean.py/) (or by using the [Market](../user-guides/using-ocean-market.md)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.&#x20;
