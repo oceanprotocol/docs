@@ -63,16 +63,13 @@ Copy and paste the query below to fetch a list of data NFTs in the Ocean Subgrap
 
 ```graphql
 query GetFilteredOrders {
-  orders (
-    where: {
-      datatoken_in: ["0xc22bfd40f81c4a28c809f80d05070b95a11829d9", "0xdatatoken_address2"],
-      consumer_in: ["0xconsumer1"]
-    }
+  orders(
+    where: { datatoken: { id: "0xc22bfd40f81c4a28c809f80d05070b95a11829d9" } }
     orderBy: createdTimestamp
     orderDirection: desc
     first: 1000
   ) {
-    datatoken{
+    datatoken {
       id
       name
       symbol
@@ -80,7 +77,7 @@ query GetFilteredOrders {
         id
       }
     }
-    consumer{
+    consumer {
       id
     }
   }
