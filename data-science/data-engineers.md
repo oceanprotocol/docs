@@ -1,6 +1,6 @@
 # Examples of useful data
 
-Here is the game: Go get useful data and publish it on Ocean. Curating useful datasets is the critical early step in the data value creation loop. The first ones to publish datasets will be well-positioned to have others to build on their work and accrue greater value to the system. Those that start this process can kickstart value creation by working with Ocean Protocol to [sponsor a data challenge](data-challenges/hosting-a-data-challenge.md).
+Here's the game: Go get useful data and publish it on Ocean. Curating useful datasets is the critical early step in the data value creation loop. The first ones to publish useful datasets will be well-positioned to have others build on their work and kickstart additional data value creation. Those that start this process can kickstart value creation by working with Ocean Protocol to [sponsor a data challenge](data-challenges/hosting-a-data-challenge.md).
 
 Below is a short list of potential areas to curate useful data.
 

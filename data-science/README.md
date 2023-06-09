@@ -5,7 +5,7 @@ coverY: 0
 
 # 📊 Data Science
 
-\#would be good to edit this beginning part, figuring out the hook
+\#would be good to edit this beginning part, need to figure out the right language
 
 Ocean Protocol was built to serve the data science space.&#x20;
 
@@ -17,9 +17,7 @@ Data engineers can publish pipelines for curated data, allowing data scientists 
 
 Ocean Protocol unlocks _composable data science,_ mixing and matching assets to build end-to-end solutions. On-chain assets ensure participants can trustlessly work together while sharing the entire system's upside.
 
-Explore the rest of this guide to learn more about the data value creation loop, and find your opportunity to build value with Ocean Protocol
-
-
+Explore the rest of this guide to learn more about the data value creation loop, and find your opportunity to build value with Ocean Protocol!
 
 
 
