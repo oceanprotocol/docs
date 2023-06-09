@@ -29,7 +29,7 @@ const createDataNFT = async () => {
   // Create a NFTFactory
   const factory = new NftFactory(config.nftFactoryAddress, config.publisherAccount);
 
-  const publisherAccount = await config.publisherAccount.getAddress();
+  const publisherAddress = await config.publisherAccount.getAddress();
 
   // Define dataNFT parameters
   const nftParams = {
@@ -39,7 +39,7 @@ const createDataNFT = async () => {
     templateIndex: 1,
     tokenURI: 'https://example.com',
     transferable: true,
-    owner: publisherAccount
+    owner: publisherAddress
   };
 
   const bundleNFT = await factory.createNFT(nftParams);

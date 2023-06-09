@@ -525,6 +525,42 @@ A dictionary which contains the following keys (`providerFeeAddress`, `providerF
 
 </details>
 
+<details>
+
+<summary><a href="https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL178C1-L185C82"><code>ocean.assets.create_url_asset( self, name: str, url: str, publisher_wallet, wait_for_aqua: bool = True ) -> tuple</code></a></summary>
+
+It is the most used functions in all the READMEs.
+
+Creates asset of type "dataset", having `UrlFiles`, with good defaults.
+
+It can be called after instantiating Ocean object.
+
+Params:
+
+1. `name` - name of the asset, `string`
+2. `url` - url that is stored in the asset, `string`
+3. `publisher_wallet` - wallet of the asset publisher/owner, `Brownie account`
+4. `wait_for_aqua` - boolean value which default is `True`, waiting for aquarius to fetch the asset takes additional time, but if you want to be sure that your asset is indexed, keep the default value.
+
+Return:
+
+A tuple which contains the data NFT, datatoken and the data asset.
+
+{% code overflow="wrap" %}
+```python
+ @enforce_types
+    def create_url_asset(
+        self, name: str, url: str, publisher_wallet, wait_for_aqua: bool = True
+    ) -> tuple:
+        """Create asset of type "data", having UrlFiles, with good defaults"""
+        metadata = self._default_metadata(name, publisher_wallet)
+        files = [UrlFile(url)]
+        return self._create_1dt(metadata, files, publisher_wallet, wait_for_aqua)
+```
+{% endcode %}
+
+</details>
+
 ### Ocean Compute
 
 <details>

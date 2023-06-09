@@ -64,7 +64,10 @@ Note, that you can also copy and paste the contents of the query function below 
 ```runkit  nodeVersion="18.x.x"
 const axios = require('axios')
 
-const query = `{ token(id :"0x9a9e3fb78b021ce12fc4e23bde1cb0104913ea93")  {
+const datatoken = "0xc22bfd40f81c4a28c809f80d05070b95a11829d9".toLowerCase()
+
+const query = `{ 
+    token(id : "${datatoken}")  {
           id,
           orders(
             orderBy: createdTimestamp
@@ -86,7 +89,7 @@ const query = `{ token(id :"0x9a9e3fb78b021ce12fc4e23bde1cb0104913ea93")  {
             amount
           }
         }
-    }`
+}`
 
 const network = "mumbai"
 var config = {

@@ -77,4 +77,4 @@ Alternatively, you can manually configure the network on Metamask by using the f
 | Currency Symbol    | `MATIC`                                              |
 | Block Explorer URL | [`https://polygonscan.com`](https://polygonscan.com) |
 
-Follow our guide to learn how to use those values to [set up a custom network in MetaMask](../wallets/metamask-setup.md#set-up-custom-network).
+Follow our guide to learn how to use those values to [set up a custom network in MetaMask](../metamask-setup.md#set-up-custom-network).

@@ -17,3 +17,17 @@ Ocean.js is part of the [Ocean Protocol](https://oceanprotocol.com) toolset.
 {% embed url="https://www.youtube.com/watch?v=lqGXPkPUCqI" %}
 Introducing Ocean.JS
 {% endembed %}
+
+The Ocean.js library adopts the module architectural pattern, ensuring clear separation and organization of code units. Utilizing ES6 modules simplifies the process by allowing you to import only the necessary module for your specific task.
+
+Our module structure follows this format:
+
+* Types
+* Config
+* Contracts
+* Services
+* Utils
+
+When working with a particular module, you will need to provide different parameters. To instantiate classes from the contracts module, you must pass objects such as Signer, which represents the wallet instance, or the contract address you wish to utilize, depending on the scenario. As for the services modules, you will need to provide the provider URI or metadata cache URI.
+
+&#x20;&#x20;

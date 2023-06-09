@@ -104,7 +104,7 @@ Let's install Oceanjs library into your current project by running:
 {% tab title="Terminal" %}
 ```bash
 npm init
-npm i @oceanprotocol/lib@3.0.0-next.5 dotenv crypto-js ethers@5.7.4 @truffle/hdwallet-provider
+npm i @oceanprotocol/lib@latest dotenv crypto-js ethers@5.7.4 @truffle/hdwallet-provider
 ```
 {% endtab %}
 {% endtabs %}
@@ -134,13 +134,11 @@ async function oceanConfig(){
     process.env.PRIVATE_KEY,
     provider
   );
-
-  const publisherAccount = await ethersProvider.provider.getSigner(ethersProvider.address);
-  const consumerAccount = publisherAccount
-  const stakerAccount = publisherAccount
+  
+  const publisherAccount = wallet.connect(provider);
 
   let oceanConfig = new ConfigHelper().getConfig(
-    parseInt(String((await provider.getSigner(0).provider.getNetwork()).chainId))
+    parseInt(String((await publisherAccount.provider.getNetwork()).chainId))
   )
   const aquarius = new Aquarius(oceanConfig?.metadataCacheUri)
 
@@ -173,8 +171,7 @@ async function oceanConfig(){
     publisherAccount: publisherAccount,
     consumerAccount: consumerAccount,
     stakerAccount: stakerAccount,
-    aquarius: aquarius,
-    ethersProvider: ethersProvider,
+    aquarius: aquarius
   };
 
   return oceanConfig

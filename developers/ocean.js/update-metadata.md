@@ -36,7 +36,7 @@ const setMetadata = async (did) => {
   // Fetch ddo from Aquarius
   const ddo = await await oceanConfig.aquarius.resolve(did);
 
-  const nft = new Nft(oceanConfig.ethersProvider);
+  const nft = new Nft(config.publisherAccount);
 
   // update the ddo here
   ddo.metadata.name = "Sample dataset v2";

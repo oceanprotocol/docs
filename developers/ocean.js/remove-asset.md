@@ -21,3 +21,68 @@ Now let's explain each state in more detail:
 6. **Asset unlisted**: Assets in the "Asset unlisted" state are not discoverable. However, users can still place orders for these assets, making them accessible. Unlisted assets are listed under the owner's profile, allowing users to view and access them.
 
 By assigning specific states to assets, Ocean Protocol enables a structured approach to asset management and visibility. These states help regulate asset discoverability, ordering permissions, and the representation of assets in user profiles, ensuring a controlled and reliable asset ecosystem.
+
+It is possible to remove assets from Ocean Protocol by modifying the state of the asset. Each asset has a state, which is stored in the NFT contract. Additional details regarding asset states can be found at this link: [https://docs.oceanprotocol.com/core-concepts/did-ddo#state](https://docs.oceanprotocol.com/core-concepts/did-ddo#state). There is also an assets purgatory that contains information about the purgatory status of an asset, as defined in the list-purgatory. For more information about the purgatory, please refer to: [https://docs.oceanprotocol.com/core-concepts/did-ddo#purgatory](https://docs.oceanprotocol.com/core-concepts/did-ddo#purgatory).
+
+We can utilize a portion of the previous tutorial on updating metadata and incorporate the steps to update the asset's state in the asset DDO.
+
+#### Prerequisites
+
+* [Obtain an API key](broken-reference)
+* [Set up the .env file](broken-reference)
+* [Install the dependencies](broken-reference)
+* [Create a configuration file](configuration.md)
+
+{% hint style="info" %}
+The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
+{% endhint %}
+
+#### Create a script to update the state of an asset by updating the assets metatada
+
+Create a new file in the same working directory where configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
+
+```javascript
+// Note: Make sure .env file and config.js are created and setup correctly
+const { oceanConfig } = require('./config.js');
+const { ZERO_ADDRESS, NftFactory, getHash, Nft } = require ('@oceanprotocol/lib');
+
+// replace the did here
+const did = "did:op:a419f07306d71f3357f8df74807d5d12bddd6bcd738eb0b461470c64859d6f0f";
+
+// This function takes did as a parameter and updates the data NFT information
+const updateAssetState = async (did) => {
+  
+  const publisherAccount = await oceanConfig.publisherAccount.getAddress();
+  
+   // Fetch ddo from Aquarius
+  const asset = await await oceanConfig.aquarius.resolve(did);
+
+  const nft = new Nft(oceanConfig.ethersProvider);
+  
+  // Update the metadata state and bring it to end-of-life state ("1")
+  await nft.setMetadataState(
+    asset?.nft?.address,
+    publisherAccount,
+    1
+  )
+  
+  // Check if ddo is correctly udpated in Aquarius 
+  await oceanConfig.aquarius.waitForAqua(ddo.id);
+  
+   // Fetch updated asset from Aquarius
+  const updatedAsset = await await oceanConfig.aquarius.resolve(did);
+
+  console.log(`Resolved asset did [${updatedAsset.id}]from aquarius.`);
+  console.log(`Updated asset state: [${updatedAsset.nft.state}].`);
+
+};
+
+// Call setMetadata(...) function defined above
+updateAssetState(did).then(() => {
+  process.exit();
+}).catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
+```
+
