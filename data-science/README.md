@@ -5,6 +5,8 @@ coverY: 0
 
 # 📊 Data Science
 
+\#would be good to edit this beginning part, figuring out the hook
+
 Ocean Protocol was built to serve the data science space.&#x20;
 
 &#x20;
@@ -13,7 +15,9 @@ With Ocean, each [Data Value Creation Loop](the-data-value-creation-loop.md) sta
 
 Data engineers can publish pipelines for curated data, allowing data scientists to conduct feature engineering and build models on top. The models can be deployed with Compute-to-Data and leveraged by app developers building the last-mile distribution of model outputs into business practices.
 
-Ocean Protocol unlocks _composable data science,_ mixing and matching assets to build end-to-end solutions. On-chain assets ensure participants can trustlessly work together while sharing in the upside of the entire system.
+Ocean Protocol unlocks _composable data science,_ mixing and matching assets to build end-to-end solutions. On-chain assets ensure participants can trustlessly work together while sharing the entire system's upside.
+
+Explore the rest of this guide to learn more about the data value creation loop, and find your opportunity to build value with Ocean Protocol
 
 
 
