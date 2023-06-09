@@ -135,43 +135,7 @@ Now that the execution environment is prepared and the prerequisites installed, 
 
 
 
-<< test Mermaid mindmap >>
 
-```mermaid
-mindmap
-root(ddo)
-  @context
-  id
-  version
-  chainID
-  NFTaddress
-  metadata
-    created
-    updated
-    description
-    copyrightHolder
-    name
-    type
-    author
-    license
-    links
-    contentLanguage
-    tags
-    categories
-    additionalInformation
-    algorithm
-      algorithmMedatada
-        language
-        version
-        consumerParameters
-        container
-          entrypoint
-          image
-          tag
-          checksum
-  services
-  credentials
-```
 
 
 
