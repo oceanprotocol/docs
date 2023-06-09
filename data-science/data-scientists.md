@@ -1,9 +1,21 @@
 # Examples of useful models
 
-Data scientists armed with access to high-quality datasets are now primed to
+Data scientists armed with access to high-quality datasets are now primed to build useful models for a variety of use cases. Model building is often the most enjoyable part of the&#x20;
 
-1. **Visualizations of Correlations between Features**: Data scientists excel at exploring and visualizing data to uncover meaningful patterns and relationships. By creating heatmaps and visualizations of correlations between features, they provide insights into the interdependencies and associations within the dataset. These visualizations help stakeholders understand the relationships between variables, identify influential factors, and make informed decisions based on data-driven insights. By publishing the results on Ocean, you can allow others to build on your work.
-2. **Conducting Feature Engineering**: Feature engineering is a critical step in the data science workflow. Data scientists leverage their domain knowledge and analytical skills to engineer new features or transform existing ones, creating more informative representations of the data. By identifying and creating relevant features, data scientists enhance the predictive power of models and improve their accuracy. This process often involves techniques such as scaling, normalization, one-hot encoding, and creating interaction or polynomial features.
-3. **Conducting Experiments to Find the Best Model**: Data scientists perform rigorous experiments to identify the most suitable machine learning models for a given problem. They evaluate multiple algorithms, considering factors like accuracy, precision, recall, and F1-score, among others. By systematically comparing different models, data scientists select the one that performs best in terms of predictive performance and generalization. This process often involves techniques such as cross-validation, hyperparameter tuning, and model selection based on evaluation metrics.&#x20;
-4. **Testing Out Different Models**: Data scientists explore various machine learning models to identify the optimal approach for a specific problem. They experiment with algorithms such as linear regression, decision trees, random forests, support vector machines, neural networks, and more. By testing out different models, data scientists gain insights into the strengths and weaknesses of each approach, allowing them to select the most appropriate model for the given dataset and problem domain.
-5. **Deploy a model with Compute-to-Data:** After building a robust model, data scientists can utilize C2D to deploy their model for personal or third-party use. At this final stage of value creation for data scientists, they can provide direct value to the ecosystem by driving data consume volume and overall usage of Ocean Protocol. &#x20;
+
+
+* **Government Open Data**
+  * Real Estate Valuation Model: Use real estate data to build a machine learning model that predicts property valuations. This can be useful for both buyers and sellers to understand market trends.
+  * Traffic Management System: Utilize transportation data to develop an AI-based traffic management system that predicts traffic congestion and suggests optimal routes.
+  * Disease Prediction and Outbreak Management: Leverage healthcare data to build a machine learning model for disease prediction and management of potential outbreaks.
+* **Public APIs**
+  * Weather Forecast Model: Using weather APIs, build a machine learning model to accurately predict weather conditions. This can be beneficial for farmers, event organizers, and other stakeholders.
+  * Stock Market Trend Analysis: Leverage financial APIs to create a predictive model for stock market trends, providing insights for investors.
+* **On-Chain Data**
+  * Web3 Customer Cohort Analysis: Build a model to analyze the user activity of DeFi protocols to understand their major customer cohorts and their various key metrics like retention rate and customer lifetime value. Sell the model as a B2B product for protocols to improve their business or as premium research for traders
+  * DeFi Credit Scoring System: Build a decentralized finance credit scoring system using DeFi data, allowing for more accurate risk assessment in lending and unlocking under collateralized lending in DeFi.
+  * Social Data Analysis: Using decentralized social data, create a model that analyses trends, sentiments, and behaviors in decentralized social platforms.
+* **Fine-Tuned Foundation Models**
+  * Personalized Recommendation System: Fine-tune an existing foundation model with labeled datasets to create a recommendation system that can be personalized based on individual user preferences.
+  * Medical Diagnosis Assistance: Train a model with labeled medical images to assist in diagnosing a wide range of diseases.
+  * Customized Chatbot: Fine-tune a conversational AI model with labeled conversational data to create a chatbot customized to specific industries or companies.

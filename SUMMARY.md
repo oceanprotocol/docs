@@ -95,7 +95,7 @@
     * [Authentication Endpoints](developers/provider/authentication-endpoints.md)
 * [📊 Data Science](data-science/README.md)
   * [The Data Value Creation Loop](data-science/the-data-value-creation-loop.md)
-  * [Examples of valuable data](data-science/data-engineers.md)
+  * [Examples of useful data](data-science/data-engineers.md)
   * [Examples of useful models](data-science/data-scientists.md)
   * [Benefits of Ocean for Data Science](data-science/benefits-of-ocean-for-data-science.md)
 * [🔨 Infrastructure](infrastructure/README.md)

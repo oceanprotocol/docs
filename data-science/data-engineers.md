@@ -1,8 +1,8 @@
-# Examples of valuable data
+# Examples of useful data
 
-There is a unique opportunity to begin building these value-creation loops/&#x20;
+Here is the game: Go get useful data and publish it on Ocean. Curating useful datasets is the critical early step in the data value creation loop. The first ones to publish datasets will be well-positioned to have others to build on their work and accrue greater value to the system. Those that start this process can kickstart value creation by working with Ocean Protocol to [sponsor a data challenge](data-challenges/hosting-a-data-challenge.md).
 
-Here is the&#x20;
+Below is a short list of potential areas to curate useful data.
 
 * **Government Open Data:** Governments serve as a rich and reliable source of data. However, this data often lacks proper documentation or poses challenges for data scientists to work with effectively. Establishing robust Extract, Transform, Load (ETL) pipelines enhance accessibility to government open data. This way, others can tap into this wealth of information without unnecessary hurdles. For example, in one of our [data challenges](https://desights.ai/shared/challenge/8) we leveraged public real estate data from Dubai to build use cases for understanding and predicting valuations and rents. Local, state, and federal governments around the world provide access to valuable data. Build pipelines to make consuming that data easier and help others build useful products to help your local community.
 * **Public APIs:** A wide range of freely available public APIs covers various data verticals. Leveraging these APIs, data engineers can construct pipelines that enable efficient access and utilization of the data. [This ](https://github.com/public-apis/public-apis)is a public repository of public APIs for a wide range of topics, from weather to gaming to finance.
