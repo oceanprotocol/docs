@@ -10,13 +10,11 @@ The Data Value Creation Loop represents the data journey as it progresses from a
 * **Tuned Models**: Models that have been optimized for high performance, robustness, and accuracy. Example: a tuned random forest model forecasting the coffee shop's busiest hours, or a fine-tuned GPT-3 capable of generating expert-level text.
 * **Model Prediction Inputs**: Inputs provided to the models to generate insights. Example: inputting today's date and weather into the sales model, or a text prompt for GPT-3 to generate a blog post.
 * **Model Prediction Outputs**: The models' predictions or insights based on the inputs. Example: the sales model's forecast of a spike in iced coffee sales due to an incoming heatwave, or GPT-3's generated blog post on sustainability in business
-* **Application:**&#x20;
+* **Application:** Once the models have been deployed and can generate results, they must be packaged into an application so that they can impact real-world scenarios. Build composable user experiences built around the underlying data and model assets.
 
 
 
-Ocean Protocol allows each data value creation loop stage to be tokenized as an asset. Using Ocean Protocol, you can thus unlock _composable data science._ Instead of a data scientists needing to conduct each stage of the pipeline themselves, they can work together and build off of each other's components and focus on what they are best at.&#x20;
-
-For example, an insurance provider may want to offer a parametric insurance product to protect against drought in a particular region. those with a strong skillset in data engineering may focus on the beginning of the loop and publish curated datasets from Ocean. Then, a data scientist may build
+For example, an insurance provider may want to offer a parametric insurance product for farmers to protect against drought in a particular region. Those with a strong skillset in data engineering may focus on the beginning of the value creation loop. They can create pipelines to ingest climate and local weather data and aggregate them together. Data scientists can then build their predictive models on top of&#x20;
 
 
 

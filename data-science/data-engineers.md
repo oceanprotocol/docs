@@ -1,11 +1,11 @@
 # Examples of valuable data
 
-There is opportunity for ths
+There is a unique opportunity to begin building these value-creation loops/&#x20;
+
+Here is the&#x20;
 
 * **Government Open Data:** Governments serve as a rich and reliable source of data. However, this data often lacks proper documentation or poses challenges for data scientists to work with effectively. Establishing robust Extract, Transform, Load (ETL) pipelines enhance accessibility to government open data. This way, others can tap into this wealth of information without unnecessary hurdles. For example, in one of our [data challenges](https://desights.ai/shared/challenge/8) we leveraged public real estate data from Dubai to build use cases for understanding and predicting valuations and rents. Local, state, and federal governments around the world provide access to valuable data. Build pipelines to make consuming that data easier and help others build useful products to help your local community.
 * **Public APIs:** A wide range of freely available public APIs covers various data verticals. Leveraging these APIs, data engineers can construct pipelines that enable efficient access and utilization of the data. [This ](https://github.com/public-apis/public-apis)is a public repository of public APIs for a wide range of topics, from weather to gaming to finance.
-* **On-Chain Data:** Blockchain data presents a unique opportunity for data engineers to curate high-quality data. Whether it's connecting directly to the blockchain or utilizing alternative data providers, there is tremendous value for simplifying data usability in this emerging field. There is consistent demand for well-curated decentralized finance (DeFi) data and an emerging need for curated data in other domains, such as decentralized social data.
-* **Datasets for training foundation models:** Foundation models such as LLMs are some of the most exciting technologies today, such as GPT4. Building these models requires access to vast amounts of unstructured [data ](#user-content-fn-1)[^1]to build, and new models will need access to even more data. Building pipelines for building these datasets and structuring them in a format for training is a strong opportunity.&#x20;
-* **Datasets for fine-tuning foundation models:** Making a foundation model like GPT4 work best in an application like ChatGPT To make these models suitable for customer-facing applications, they often are best when fine-tuned on a dataset with example structures and answers. Data engineers can curate high-quality datasets by labeling which outputs are good and which are bad. Leveraing industry knowledge can be used to build datasets to fine-tune models for every vertical in the world.
-
-[^1]: 
+* **On-Chain Data:** Blockchain data presents a unique opportunity for data engineers to curate high-quality data. There is consistent demand for well-curated decentralized finance (DeFi) data and an emerging need for curated data in other domains, such as decentralized social data. Build datasets for a range of use cases such as trading to customer analytics
+* **Datasets for training foundation models:** Build pipelines for training foundation models. Conduct web scraping and aggregate existing commercially licensed datasets
+* **Datasets for fine-tuning foundation models:** Curate high-quality labeled datasets to fine-tune foundation models. label the outputs of models or create&#x20;

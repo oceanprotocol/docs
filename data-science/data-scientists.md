@@ -1,8 +1,6 @@
-# Data Scientists
+# Examples of useful models
 
-Data scientists are integral to the process of extracting insights and generating value from data. Their expertise lies in applying statistical analysis, machine learning algorithms, and domain knowledge to uncover patterns, make predictions, and derive meaningful insights from complex datasets.
-
-There are a few different ways that data scientists can add value to the Ocean Protocol ecosystem by building on datasets published on Ocean.&#x20;
+Data scientists armed with access to high-quality datasets are now primed to
 
 1. **Visualizations of Correlations between Features**: Data scientists excel at exploring and visualizing data to uncover meaningful patterns and relationships. By creating heatmaps and visualizations of correlations between features, they provide insights into the interdependencies and associations within the dataset. These visualizations help stakeholders understand the relationships between variables, identify influential factors, and make informed decisions based on data-driven insights. By publishing the results on Ocean, you can allow others to build on your work.
 2. **Conducting Feature Engineering**: Feature engineering is a critical step in the data science workflow. Data scientists leverage their domain knowledge and analytical skills to engineer new features or transform existing ones, creating more informative representations of the data. By identifying and creating relevant features, data scientists enhance the predictive power of models and improve their accuracy. This process often involves techniques such as scaling, normalization, one-hot encoding, and creating interaction or polynomial features.
