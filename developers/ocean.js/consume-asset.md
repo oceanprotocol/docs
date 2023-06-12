@@ -41,12 +41,12 @@ const did = "did:op:a419f07306d71f3357f8df74807d5d12bddd6bcd738eb0b461470c64859d
 // This function takes did as a parameter and updates the data NFT information
 const consumeAsset = async (did) => {
   
-  const consumer = await oceanConfig.consumer.getAddress();
+  const consumer = await oceanConfig.consumerAccount.getAddress();
   
    // Fetch ddo from Aquarius
   const asset = await await oceanConfig.aquarius.resolve(did);
 
-  const nft = new Nft(oceanConfig.ethersProvider);
+  const nft = new Nft(oceanConfig.consumerAccount);
   
   await approve(
     consumerAccount,
@@ -58,9 +58,9 @@ const consumeAsset = async (did) => {
   )
     
  const fixedRate = new FixedRateExchange(fixedRateExchangeAddress, consumerAccount)
-<strong> const tx =await fixedRate.buyDatatokens(fixedRateId, '1', '2')
-</strong><strong> 
-</strong><strong> const initializeData = await ProviderInstance.initialize(
+ const tx = await fixedRate.buyDatatokens(fixedRateId, '1', '2')
+ 
+<strong> const initializeData = await ProviderInstance.initialize(
 </strong>    resolvedDDO.id,
     resolvedDDO.services[0].id,
     0,
@@ -105,7 +105,7 @@ const consumeAsset = async (did) => {
 };
 
 // Call setMetadata(...) function defined above
-updateAssetState(did).then(() => {
+consumeAsset(did).then(() => {
   process.exit();
 }).catch((err) => {
   console.error(err);

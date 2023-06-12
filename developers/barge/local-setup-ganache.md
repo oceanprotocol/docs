@@ -2,9 +2,7 @@
 description: 🧑🏽‍💻 Your Local Development Environment for Ocean Protocol
 ---
 
-# Local Setup - Barge
-
-Barge is a powerful tool designed to provide developers with a local development environment for working with Ocean Protocol. It simplifies the setup process by using Docker Compose files to deploy the entire Ocean Protocol stack locally. With Barge, you can quickly set up and run the latest versions of Aquarius, Provider, Ganache, TheGraph, ocean-contracts, and more.
+# Local Setup
 
 **Functionalities of Barge**
 
