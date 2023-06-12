@@ -41,7 +41,7 @@
     * [Pricing Schemas](developers/asset-pricing.md)
     * [Fees](developers/fees.md)
     * [Metadata](developers/contracts/metadata.md)
-  * [Revenue](developers/revenue.md)
+  * [Revenue](developers/contracts/revenue.md)
   * [Fractional Ownership](developers/fractional-ownership.md)
   * [Community Monetization](developers/community-monetization.md)
   * [Identifiers & Metadata](developers/Identifiers-Metadata.md)
