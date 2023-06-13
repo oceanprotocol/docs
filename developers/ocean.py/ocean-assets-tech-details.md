@@ -4,7 +4,7 @@ description: Technical details about OceanAssets functions
 
 # Ocean Assets Tech Details
 
-Through this class we can publish assets & consume them to make 💲💲💲
+Through this class we can publish different types of assets & consume them to make 💲💲💲
 
 ### Creates URL Asset
 

@@ -4,14 +4,16 @@ description: Remote setup for running & testing ocean.py
 
 # Remote Setup
 
+This setup does not use barge and uses a remote chain to do the transactions. When the network URL is specified & configured, ocean.py will use components (such as Provider, Aquarius, C2D) according to the expected blockchain.
+
 Here, we do setup for Mumbai, the testnet for Polygon. It's similar for other remote chains.
 
 Here, we will:
 
 1. Configure Brownie networks
 2. Create two accounts - `REMOTE_TEST_PRIVATE_KEY1` and `2`
-3. Get fake MATIC on Mumbai
-4. Get fake OCEAN on Mumbai
+3. Get test MATIC on Mumbai
+4. Get test OCEAN on Mumbai
 5. Set envvars
 6. Set up Alice and Bob wallets in Python
 
@@ -96,7 +98,14 @@ You can bypass manually: just edit your brownie network config file.
 
 Or you can bypass via the command line. The following command replaces Infura RPCs with public ones in `network-config.yaml`:
 
-* Linux users: in the console: `sed -i 's#https://polygon-mainnet.infura.io/v3/$WEB3_INFURA_PROJECT_ID#https://polygon-rpc.com/#g; s#https://polygon-mumbai.infura.io/v3/$WEB3_INFURA_PROJECT_ID#https://rpc-mumbai.maticvigil.com#g' ~/.brownie/network-config.yaml`
+* Linux users: in the console:&#x20;
+
+{% code overflow="wrap" %}
+```bash
+sed -i 's#https://polygon-mainnet.infura.io/v3/$WEB3_INFURA_PROJECT_ID#https://polygon-rpc.com/#g; s#https://polygon-mumbai.infura.io/v3/$WEB3_INFURA_PROJECT_ID#https://rpc-mumbai.maticvigil.com#g' ~/.brownie/network-config.yaml
+```
+{% endcode %}
+
 * MacOS users: you can achieve the same thing with `gnu-sed` and the `gsed` command. (Or just manually edit the file.)
 * For Windows: you might need something similar to [powershell](https://www.marek.tokyo/2020/01/remove-string-from-file-in-windows-10.html). (Or just manually edit the file.)
 
@@ -133,11 +142,11 @@ Now, you have two EVM accounts (address & private key). Save them somewhere safe
 
 These accounts will work on any EVM-based chain: production chains like Eth mainnet and Polygon, and testnets like Goerli and Mumbai. Here, we'll use them for Mumbai.
 
-### 3. Get (fake) MATIC on Mumbai
+### 3. Get (test) MATIC on Mumbai
 
-We need the a network's native token to pay for transactions on the network. [ETH](https://ethereum.org/en/get-eth/) is the native token for Ethereum mainnet; [MATIC](https://polygon.technology/matic-token/) is the native token for Polygon, and [(fake) MATIC](https://faucet.polygon.technology/) is the native token for Mumbai.
+We need the a network's native token to pay for transactions on the network. [ETH](https://ethereum.org/en/get-eth/) is the native token for Ethereum mainnet; [MATIC](https://polygon.technology/matic-token/) is the native token for Polygon, and [(test) MATIC](https://faucet.polygon.technology/) is the native token for Mumbai.
 
-To get free (fake) MATIC on Mumbai:
+To get free (test) MATIC on Mumbai:
 
 1. Go to the faucet [https://faucet.polygon.technology/](https://faucet.polygon.technology/). Ensure you've selected "Mumbai" network and "MATIC" token.
 2. Request funds for ADDRESS1
@@ -145,15 +154,15 @@ To get free (fake) MATIC on Mumbai:
 
 You can confirm receiving funds by going to the following url, and seeing your reported MATIC balance: `https://mumbai.polygonscan.com/address/<ADDRESS1 or ADDRESS2>`
 
-### 4. Get (fake) OCEAN on Mumbai
+### 4. Get (test) OCEAN on Mumbai
 
 [OCEAN](https://oceanprotocol.com/token) can be used as a data payment token, and locked into veOCEAN for Data Farming / curation. The READMEs show how to use OCEAN in both cases.
 
 * OCEAN is an ERC20 token with a finite supply, rooted in Ethereum mainnet at address [`0x967da4048cD07aB37855c090aAF366e4ce1b9F48`](https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48).
 * OCEAN on other production chains derives from the Ethereum mainnet OCEAN. OCEAN on Polygon (mOCEAN) is at [`0x282d8efce846a88b159800bd4130ad77443fa1a1`](https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1).
-* (Fake) OCEAN is on each testnet. Fake OCEAN on Mumbai is at [`0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8`](https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8).
+* (Test) OCEAN is on each testnet. Test OCEAN on Mumbai is at [`0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8`](https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8).
 
-To get free (fake) OCEAN on Mumbai:
+To get free (test) OCEAN on Mumbai:
 
 1. Go to the faucet [https://faucet.mumbai.oceanprotocol.com/](https://faucet.mumbai.oceanprotocol.com/)
 2. Request funds for ADDRESS1

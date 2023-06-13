@@ -4,7 +4,9 @@ description: Local setup for running & testing ocean.py
 
 # Local Setup
 
-⚠️ This setup can be accomplished only on Linux operator systems
+On this page, we continue our journey from [installation part](install.md), to do setup for local testing. Local setup means that we will use Ganache as local blockchain where we can effectuate transactions and all the services point to this network.
+
+⚠️ Ocean local setup uses Docker, which is fine for Linux/Ubuntu but plays badly with MacOS and Windows. If you are on these, you’ll want [remote setup](remote-setup.md)_._
 
 Here are the following steps for configuring ocean.py on Ganache network using barge
 

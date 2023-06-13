@@ -6,9 +6,9 @@ Let’s start interacting with the python library by firstly installing it & its
 
 Ahoy there, matey! 🌊⚓️ When it comes to setting up ocean.py locally, we're diving into the world of Docker containers. These clever containers hold our trusty local blockchain nodes (Ganache) and the mighty Ocean middleware (Aquarius metadata cache and Provider to aid in consuming data assets). But fear not, for a smooth sailing experience, you'll need to ensure the following Docker components are shipshape and ready to go:
 
-1. Docker 🐳
-2. Docker Compose 🛠️
-3. Oh, and don't forget to allow those non-root users to join in on the fun! 🙅‍♂️
+1. [Docker](https://docs.docker.com/engine/install/) 🐳
+2. [Docker Compose](https://docs.docker.com/compose/install/) 🛠️
+3. Oh, and don't forget to [allow those non-root users](https://www.thegeekdiary.com/run-docker-as-a-non-root-user/) to join in on the fun! 🙅‍♂️
 
 So hoist the anchor, prepare your Docker crew, and let's embark on an exciting voyage with ocean.py! 🚢⛵️\
 \
