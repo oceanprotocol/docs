@@ -1,9 +1,8 @@
 ---
+
 title: Fine-Grained Permissions 
-slug: /developers/fine-grained-permissions/
-section: developers
-description: >-
-  Fine-Grained Permissions Using Role-Based Access Control. You can Control who can publish, buy or browse data
+description: Fine-Grained Permissions Using Role-Based Access Control. You can Control who can publish, buy or browse data
+
 ---
 
 

@@ -47,7 +47,7 @@
   * [Identifiers](developers/identifiers.md)
   * [DDO Specification](developers/ddo-specification.md)
   * [Storage Specifications](developers/storage.md)
-  * [Fine-Grained Permissions](developers/fine-grained-permissions.md)
+  * [Fine-Grained Permissions](developers/fg-permissions.md)
   * [Barge](developers/barge/README.md)
     * [Local Setup](developers/barge/local-setup-ganache.md)
   * [Build a Marketplace](developers/build-a-marketplace/README.md)
