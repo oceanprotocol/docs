@@ -4,13 +4,11 @@ description: >-
   at once in different scenarios.
 ---
 
-# Publish flow
-
-[**ocean.py**](https://github.com/oceanprotocol/ocean.py) is a [Python library](https://pypi.org/project/ocean-lib/) to privately & securely publish, exchange, and consume data, using [Ocean Protocol](https://www.oceanprotocol.com/).
+# Publish Flow
 
 In this page, we provide some tips & tricks for publishing an asset on Ocean Market using ocean.py.
 
-We assume you've already (a) [installed Ocean](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/install.md), and (b) done [local setup](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/setup-local.md) or [remote setup](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/setup-remote.md). This flow works for either one, without any changes between them.
+We assume you've already (a) [installed Ocean](install.md), and (b) done [local setup](local-setup.md) or [remote setup](remote-setup.md). This flow works for either one, without any changes between them.
 
 In the Python console:
 
@@ -31,8 +29,8 @@ print(f"  did={ddo.did}")
 
 You've now published an Ocean asset!
 
-* `data_nft` is the base (base IP)
-* `datatoken` for access by others (licensing)
+* [`data_nft`](../contracts/data-nfts.md) is the base (base IP)
+* [`datatoken`](../contracts/datatokens.md) for access by others (licensing)
 * `ddo` holding metadata
 
 <figure><img src="../../.gitbook/assets/200.webp" alt=""><figcaption></figcaption></figure>

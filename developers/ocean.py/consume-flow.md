@@ -2,7 +2,7 @@
 description: This page shows how you can get datatokens & download an asset
 ---
 
-# Consume flow
+# Consume Flow
 
 We assumed that you accomplished the publish flow presented previously.
 
@@ -99,8 +99,6 @@ The _beginning_ of the file should contain the following contents:
 -3.9286,0.0000,206.1783
 ...
 ```
-
-## Main Flow: Video <a href="#8d62" id="8d62"></a>
 
 Here’s a video version this post 👇.
 
