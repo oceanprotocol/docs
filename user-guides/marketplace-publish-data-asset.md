@@ -106,7 +106,7 @@ With the _free pricing_ schema, the publisher provides an asset that is free to 
 
 For more information on the pricing models, please refer this [document](../developers/contracts/pricing-schemas.md).
 
-For a deep dive into the fee structure, please refer to this [document](../developers/contracts/fees.md).
+For a deep dive into the fee structure, please refer to this [document](../developers/fees.md).
 
 ![Asset pricing](../.gitbook/assets/market/publish-3.png)
 
