@@ -1,31 +1,31 @@
 ---
+description: Ocean Protocol is built by data scientists, for data scientists.
 cover: ../.gitbook/assets/cover/data_science.png
 coverY: 0
 ---
 
 # 📊 Data Science
 
-\#would be good to edit this beginning part, need to figure out the right language
+<figure><img src="../.gitbook/assets/my-data.gif" alt="" width="240"><figcaption><p>We get it, your data's precious.</p></figcaption></figure>
 
-Ocean Protocol was built to serve the data science space.&#x20;
+### Why should data scientists use Ocean Protocol?
 
-&#x20;
+Ocean Protocol is built to solve the ["Data Value Creation Loop"](the-data-value-creation-loop.md) for data scientists to **monetize data effectively**. Our [open-source tools](https://github.com/oceanprotocol) tackle some of **the biggest problems for data scientists**: how to sell data anonymously, how to sell compute jobs on datasets, how to control access to data, etc.  By using blockchain architecture, Ocean achieves several tactical advantages over Web2 to solve data sharing problems.
 
-With Ocean, each [Data Value Creation Loop](the-data-value-creation-loop.md) stage is tokenized with data NFTs and datatokens. Leveraging tokenized standards unlocks several unique benefits for the ecosysem. Together, stakeholders can build sophisticated products by combining assets posted onto Ocean. &#x20;
+### What are some use cases for Ocean Protocol?
 
-Data engineers can publish pipelines for curated data, allowing data scientists to conduct feature engineering and build models on top. The models can be deployed with Compute-to-Data and leveraged by app developers building the last-mile distribution of model outputs into business practices.
+* Enable trustless transactions (i.e. buy, sell, transfer data)
+* Trace data provenance and consumption
+* Token gate a website or dApp using datatokens
+* Deploy a decentralized data marketplace
+* Sell algorithmic compute jobs on private datasets
 
-Ocean Protocol unlocks _composable data science,_ mixing and matching assets to build end-to-end solutions. On-chain assets ensure participants can trustlessly work together while sharing the entire system's upside.
+### How to design a ML system using Ocean Protocol?
 
-Explore the rest of this guide to learn more about the data value creation loop, and find your opportunity to build value with Ocean Protocol!
+The first step is to tokenize data into data NFTs and datatokens on the blockchain. We offer a no-code way to tokenize data via the [Ocean Market](https://market.oceanprotocol.com). But we also offer code options for data scientists to use the [Ocean.py](../developers/ocean.py/) and [Ocean.js](../developers/ocean.js/) libraries. Data scientists can then build sophisticated ML systems on top of the tokenized data by using composable Ocean Protocol tools. ML models can choose from a variety of Ocean smart contracts, including Ocean's [Compute-to-Data](../developers/compute-to-data/), to build model outputs all the way to the last-mile delivery for businesses.
 
+### **Key Links for Data Scientists:**
 
-
-
-
-**Key Links for Data Scientists:**
-
-* [Ocean data NFTs ](../developers/contracts/data-nfts.md)and [datatokens](../developers/contracts/datatokens.md) are core building blocks of Ocean Protocol. They allow individuals and businesses to define their ownership of their assets, and create flexible access control tokens
-* Ocean's [Compute-to-Data](../developers/compute-to-data/) engine resolves the trade-off between the benefits of open data and data privacy risks. Using the engine, algorithms can be run on data without exposing the underlying data. Now, data can be widely shared and monetized without&#x20;
-* [Ocean.py](../developers/ocean.py/) is our python library to interacts with Ocean contracts and tools. To get started with the library, check out our guides. They will teach installation and set-up and several popular workflows such as[ publishing an asset](../developers/ocean.py/publish-flow.md) and starting a [compute job](../developers/ocean.py/compute-flow.md).
+* Learn the difference between Ocean Protocol [data NFTs and datatokens](../developers/contracts/datanft-and-datatoken.md), the two types of tokenized data assets you need to start building your ML systems
+* Ocean's [Compute-to-Data](../developers/compute-to-data/) engine can help you to solve the difficult problem of selling algorithmic compute jobs on your datasets without actually revealing the contents of the algorithm nor dataset to the consumer
 
