@@ -6,12 +6,12 @@ description: Choose the revenue model during asset publishing.
 
 Ocean Protocol offers you flexible and customizable pricing options to monetize your valuable data assets. You have two main pricing models to choose from:&#x20;
 
-* [Fixed pricing ](asset-pricing.md#fixed-pricing)
-* [Free pricing](asset-pricing.md#free-pricing)
+* [Fixed pricing ](pricing-schemas.md#fixed-pricing)
+* [Free pricing](pricing-schemas.md#free-pricing)
 
 These models are designed to cater to your specific needs and ensure a smooth experience for data consumers.
 
-The price of an asset is determined by the number of tokens (this can be Ocean Tokens or any ERC20 Token configured when published the asset) a buyer must pay to access the data. When users pay the tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](contracts/datanft-and-datatoken.md).
+The price of an asset is determined by the number of tokens (this can be Ocean Tokens or any ERC20 Token configured when published the asset) a buyer must pay to access the data. When users pay the tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](datanft-and-datatoken.md).
 
 To provide you with even greater flexibility in monetizing your data assets, Ocean Protocol allows you to customize the pricing schema by configuring your own ERC20 token when publishing the asset. This means that instead of using Ocean Tokens as the pricing currency, you can utilize your own token, aligning the pricing structure with your specific requirements and preferences.
 
@@ -116,13 +116,13 @@ IERC721Template(erc721Address).removeFromCreateERC20List(address(this));
 </details>
 
 {% hint style="info" %}
-There are two templates available: [ERC20Template](contracts/datatoken-templates.md#regular-template) and [ERC20TemplateEnterprise](contracts/datatoken-templates.md#enterprise-template).
+There are two templates available: [ERC20Template](datatoken-templates.md#regular-template) and [ERC20TemplateEnterprise](datatoken-templates.md#enterprise-template).
 
-In the case of [ERC20TemplateEnterprise](contracts/datatoken-templates.md#enterprise-template), when you deploy a fixed rate exchange, the funds generated as revenue are automatically sent to the owner's address. The owner receives the revenue without any manual intervention.
+In the case of [ERC20TemplateEnterprise](datatoken-templates.md#enterprise-template), when you deploy a fixed rate exchange, the funds generated as revenue are automatically sent to the owner's address. The owner receives the revenue without any manual intervention.
 
 
 
-On the other hand, with [ERC20Template](contracts/datatoken-templates.md#regular-template), for a fixed rate exchange, the revenue is available at the fixed rate exchange level. The owner or the payment collector has the authority to manually retrieve the revenue.
+On the other hand, with [ERC20Template](datatoken-templates.md#regular-template), for a fixed rate exchange, the revenue is available at the fixed rate exchange level. The owner or the payment collector has the authority to manually retrieve the revenue.
 {% endhint %}
 
 ### Free pricing
@@ -182,8 +182,8 @@ function createNftWithErc20WithDispenser(
 
 </details>
 
-To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](ocean.js/)and [Ocean.py](ocean.py/), specifically developed for interacting with Ocean Protocol.&#x20;
+To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](../ocean.js/)and [Ocean.py](../ocean.py/), specifically developed for interacting with Ocean Protocol.&#x20;
 
-With Ocean.js, you can use the [createFRE() ](ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](ocean.py/publish-flow.md#create-an-asset-and-pricing-schema-simultaneously) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
+With Ocean.js, you can use the [createFRE() ](../ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](../ocean.py/publish-flow.md#create-an-asset-and-pricing-schema-simultaneously) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
 
-By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](ocean.js/) and [Ocean.py](ocean.py/) (or by using the [Market](../user-guides/using-ocean-market.md)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.&#x20;
+By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](../ocean.js/) and [Ocean.py](../ocean.py/) (or by using the [Market](../../user-guides/using-ocean-market.md)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.&#x20;
