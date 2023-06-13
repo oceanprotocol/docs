@@ -4,20 +4,24 @@
 
 * A server for hosting Ocean Marketplace. See [this guide](setup-server.md) on creating a server.
 
-#### Create a directory
+### Push your customized Ocean Market code to your Git repository
+
+In case you customized the Ocean Market using the tutorial from this chapter (link), push your code to a Git repository.
+
+### Create a directory
 
 ```
 mkdir my-marketplace
 cd my-marketplace
 ```
 
-### Create file with name \`.env\`
+### Create a file with the name \`.env\`
 
-Copy the below content into the \`.env\` file.
+If you already created the .env file as instructed in ...(link to customize the market chapter), you can skip this step, otherwise copy the below content into the \`.env\` file.
 
 {% code title=".env" %}
 ```
-# Update this value if Market should using custom Aquarius 
+# Update this value if your Market should use custom Aquarius 
 NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
 
 #NEXT_PUBLIC_INFURA_PROJECT_ID="xxx"
@@ -39,24 +43,27 @@ NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
 ```
 {% endcode %}
 
-#### Create a \`Dockerfile\` file and copy the below content into it.
+### Create a \`Dockerfile\` file and copy the below content into it.
 
-{% code title="Dockerfile" %}
-```
-FROM node:16
-RUN git clone https://github.com/oceanprotocol/market.git /usr/app/market
-WORKDIR /usr/app/market
+In the following Dockerfile, replace \<YOUR\_GIT\_REPO\_URL> with the url of your Ocean Market fork repository or use "https://github.com/oceanprotocol/market.git" if you want to deploy our standard image of Ocean Market.
+
+<pre class="language-docker" data-title="Dockerfile"><code class="lang-docker">FROM node:16
+<strong>RUN git clone &#x3C;YOUR_GIT_REPO_URL> /usr/app/market
+</strong>WORKDIR /usr/app/market
 RUN npm ci --legacy-peer-deps
 RUN npm run build
 EXPOSE 3000
 CMD ["npx", "next", "start"]
-```
-{% endcode %}
+</code></pre>
 
-Build a docker image
+### Build a docker image
 
 ```bash
 docker build . -f Dockerfile -t market:latest
 ```
 
 ### Start the marketplace
+
+```bash
+docker start market
+```
