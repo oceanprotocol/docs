@@ -1,36 +1,32 @@
+---
+description: Ocean Protocol was built for monetizing your data
+---
+
 # The Data Value Creation Loop
 
-The Data Value Creation Loop represents the data journey as it progresses from a business problem to raw data, undergoes cleansing and refinement, is used to train models, and finally finds its application in real-world scenarios. Data assets accrue more value at each stage of the loop accrues as it gets closer to its real-world deployment. created when a variety of different skillsets work together; business stakeholders, data engineers, data scientists, MLOps engindeploymenteers, and application developers&#x20;
+<figure><img src="../.gitbook/assets/3d-data.gif" alt="" width="375"><figcaption><p>A beautiful data visualization.</p></figcaption></figure>
 
-* **Business Problem:** Identifying the business problem that can be addressed with data science is the critical first step. Example: Reducincustomerer churn rate, predicting token prices, or predicting drought risk.&#x20;
-* **Raw Data**: This is the unprocessed, untouched data, fresh from the source. This data can be static or dynamic from an API. Example: User profiles, historical prices, or daily temperature.
-* **Cleaned Data and Feature Vectors**: The raw data, now polished and transformed into numerical representations - the feature vectors. Example: the coffee shop sales data, now cleaned and organized, or preprocessed text data transformed into word embeddings.
-* **Trained Models**: Machine learning models that have been trained on feature vectors, learning to decode data's patterns and relationships. Example: a random forest model predicting coffee sales or GPT-3 trained on a vast text corpus.
-* **Data to Tune Models**: Additional data introduced to further refine and enhance model performance. Example: a new batch of sales data for the coffee shop model, or specific domain text data for GPT-3.
-* **Tuned Models**: Models that have been optimized for high performance, robustness, and accuracy. Example: a tuned random forest model forecasting the coffee shop's busiest hours, or a fine-tuned GPT-3 capable of generating expert-level text.
-* **Model Prediction Inputs**: Inputs provided to the models to generate insights. Example: inputting today's date and weather into the sales model, or a text prompt for GPT-3 to generate a blog post.
-* **Model Prediction Outputs**: The models' predictions or insights based on the inputs. Example: the sales model's forecast of a spike in iced coffee sales due to an incoming heatwave, or GPT-3's generated blog post on sustainability in business
-* **Application:** Once the models have been deployed and can generate results, they must be packaged into an application so that they can impact real-world scenarios. Build composable user experiences built around the underlying data and model assets.
+### What is the Data Value Creation Loop?
 
+The Data Value Creation Loop is a journey where data progresses from a business problem to valuable insights. It involves collaboration among various skillsets like business stakeholders, data engineers, data scientists, MLOps engineers, and application developers.
 
+Here's a condensed breakdown of the loop:
 
-Let's framework a potential data value creation loop. An insurance provider wants to offer a drought parametric insurance product for farmers in a particular region. Their risk models indicate if they can accurately predict the value of a particular drought index, they will be able to profitably price their product. They launch a data challenge to curate models to accomplish this task.
+1. Business Problem: Identify the specific problem to solve using data science, such as reducing customer churn or predicting token prices.
+2. Raw Data: Gather unprocessed data directly from sources, whether static or dynamic, like user profiles or historical prices.
+3. Cleaned Data and Feature Vectors: Transform raw data into organized numerical representations, like cleaned sales data or preprocessed text transformed into word embeddings.
+4. Trained Models: Train machine learning models on feature vectors to learn patterns and relationships, such as a random forest predicting coffee sales or GPT-3 trained on a text corpus.
+5. Data to Tune Models: Introduce additional data to further refine and enhance model performance, like new sales data for the coffee shop model or domain-specific text data for GPT-3.
+6. Tuned Models: Optimize models for high performance, accuracy, and robustness, such as a tuned random forest predicting busy hours for the coffee shop or a fine-tuned GPT-3 generating expert-level text.
+7. Model Prediction Inputs: Provide inputs to the models to generate insights, like today's date and weather for the sales model or a text prompt for GPT-3 to generate a blog post.
+8. Model Prediction Outputs: Obtain predictions or insights from the models based on the inputs, such as the sales model forecasting a spike in iced coffee sales or GPT-3 generating a blog post on sustainability in business.
+9. Application: Package the models into applications that can impact real-world scenarios. Build user experiences around the data and model assets to make them usable and valuable.
 
-Those with a strong skill set in data engineering may focus on the beginning of the value creation loop. They create pipelines to ingest climate and local weather data and aggregate them together. They may also include private data provided by the insurance provider. The data engineers publish an asset on Ocean for a regularly updating dataset for computation only
+To illustrate the process, let's consider an example: an insurance provider aiming to offer drought parametric insurance to farmers. They curate models to accurately predict a drought index value. Data engineers ingest climate and weather data and publish it on Ocean for computation. Data scientists conduct feature engineering and build predictive models using the data. Application developers integrate the models into production, enabling the insurance provider to offer the product. Farmers benefit, revenue is generated, and royalties are distributed to the data and model asset publishers, fostering sustainable value creation.
 
-Data scientists can then conduct feature engineering and build their predictive models on top of the data engineers' assets. They train their models with C2D, and then publish them as compute assets on Ocean Market. The data scientists can leverage Ocean to begin attaching immutable proof of the models' accuracy to their assets and build trust in their models value.
+The described loop is just one example among countless opportunities across various domains. It can be applied in areas like DeFi, real estate, climate, sports, and healthcare. By structuring business problems, curating data, building models, and deploying assets on Ocean, you can kickstart your own data value creation loop.
 
-Application developers can now work with the insurance provider to incorporate these models into production. The insurance provider can publish their risk model as a compute asset on Ocean. Application developers build different front-end experiences and businesses on top of the models, focusing on customer acquisition and distribution of the product.&#x20;
-
-With the product in place, farmers can now improve their lives by tapping a valuable product. Revenue is generated by the insurance product and royalties are automatically distributed to the upstream publishers of the data and model assets. Profits can be reinvested to procure greater data to produce better models and more profitable products, kickstarting sustainable value creation for all stakeholders.
-
-
-
-The data value creation loop described above is just one in a vast ocean of opportunity. It can be applied across verticals, like DeFi, real estate, climate, sports and healthcare(just to name a few). Endless problems can be addressed by structuring the business problem context, curating the data, building the models, and deploying the assets on Ocean.
-
-
-
-Take a look in the next sections to find a few ideas for how you can kickstart you own data value creation loop.&#x20;
+Explore the next sections for ideas on how to begin your journey in the data value creation loop.
 
 
 
