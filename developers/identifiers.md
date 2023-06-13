@@ -36,4 +36,7 @@ console.log(did)
 
 ```
 
-###
+Before creating a DID you should first publish a data NFT, we suggest reading the following sections so you are familiar with the process:&#x20;
+
+* [Creating a data NFT with ocean.js](ocean.js/creating-datanft.md)
+* [Publish flow with ocean.py](ocean.py/publish-flow.md)
