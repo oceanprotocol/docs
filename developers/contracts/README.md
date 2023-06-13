@@ -10,7 +10,7 @@ The V4 smart contracts have been deployed across multiple [networks](../../disco
 
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
-In Ocean V3, the publication of a dataset involved deploying an ERC20 "datatoken" contract along with relevant [metadata](metadata.md). This process allowed the dataset publisher to claim copyright or exclusive rights to the underlying Intellectual Property (IP). Upon obtaining 1.0 ERC20 datatokens for a particular dataset, users were granted a license to consume that dataset, utilizing the Ocean infrastructure by spending the obtained datatokens.
+In Ocean V3, the publication of a dataset involved deploying an ERC20 "datatoken" contract along with relevant [metadata](../metadata.md). This process allowed the dataset publisher to claim copyright or exclusive rights to the underlying Intellectual Property (IP). Upon obtaining 1.0 ERC20 datatokens for a particular dataset, users were granted a license to consume that dataset, utilizing the Ocean infrastructure by spending the obtained datatokens.
 
 However, Ocean V3 faced limitations in terms of flexibility. It lacked support for different licenses associated with the same base IP, such as 1-day versus 1-month access, and the transferability of the base IP was not possible. Additionally, the ERC20 datatoken template was hardcoded, restricting customization options.
 
