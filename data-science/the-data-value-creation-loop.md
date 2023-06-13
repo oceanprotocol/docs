@@ -1,14 +1,14 @@
 ---
-description: Ocean Protocol was built for monetizing your data
+description: When you have problems, but then you solve them 💁‍♀️
 ---
 
 # The Data Value Creation Loop
 
-<figure><img src="../.gitbook/assets/3d-data.gif" alt="" width="375"><figcaption><p>A beautiful data visualization.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tell-me-more.gif" alt=""><figcaption><p>Tell me more.</p></figcaption></figure>
 
 ### What is the Data Value Creation Loop?
 
-The Data Value Creation Loop is a journey where data progresses from a business problem to valuable insights. It involves collaboration among various skillsets like business stakeholders, data engineers, data scientists, MLOps engineers, and application developers.
+The Data Value Creation Loop is a journey where **data progresses from a business problem to valuable insights**. It involves collaboration among various skillsets like business stakeholders, data engineers, data scientists, MLOps engineers, and application developers.
 
 Here's a condensed breakdown of the loop:
 
@@ -22,11 +22,9 @@ Here's a condensed breakdown of the loop:
 8. Model Prediction Outputs: Obtain predictions or insights from the models based on the inputs, such as the sales model forecasting a spike in iced coffee sales or GPT-3 generating a blog post on sustainability in business.
 9. Application: Package the models into applications that can impact real-world scenarios. Build user experiences around the data and model assets to make them usable and valuable.
 
-To illustrate the process, let's consider an example: an insurance provider aiming to offer drought parametric insurance to farmers. They curate models to accurately predict a drought index value. Data engineers ingest climate and weather data and publish it on Ocean for computation. Data scientists conduct feature engineering and build predictive models using the data. Application developers integrate the models into production, enabling the insurance provider to offer the product. Farmers benefit, revenue is generated, and royalties are distributed to the data and model asset publishers, fostering sustainable value creation.
+### What is an example of a Data Value Creation Loop?
 
-The described loop is just one example among countless opportunities across various domains. It can be applied in areas like DeFi, real estate, climate, sports, and healthcare. By structuring business problems, curating data, building models, and deploying assets on Ocean, you can kickstart your own data value creation loop.
-
-Explore the next sections for ideas on how to begin your journey in the data value creation loop.
+Let's explore an example to showcase the process of the data value creation loop. Imagine a healthcare organization seeking to develop a predictive model for early detection of diseases. They collaborate with data engineers to collect and preprocess various medical datasets, including patient demographics, lab results, and medical imaging. These datasets are tokenized and made available on the Ocean Protocol platform for secure computation. Data scientists utilize the tokenized data to train machine learning models that can accurately identify early warning signs of diseases. These models are then published as compute assets on Ocean Market. Application developers work with the healthcare organization to integrate the models into their existing patient management system, allowing doctors to receive automated risk assessments and personalized recommendations for preventive care. As a result, patients benefit from early detection, doctors can make more informed decisions, and the healthcare organization generates insights to improve patient outcomes while fostering data and model asset collaboration. Et voilà!
 
 
 
