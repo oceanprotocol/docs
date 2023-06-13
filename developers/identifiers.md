@@ -22,7 +22,7 @@ DIDs in Ocean follow [the generic DID scheme](https://w3c-ccg.github.io/did-spec
 did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 ```
 
-The part after `did:op:` is the ERC721 contract address(in checksum format) and the chainId (expressed as a decimal). The following javascript example shows how to calculate the DID for the asset:
+The part after `did:op:` is the ERC721 contract address(in checksum format) and the chainId (expressed to 10 decimal places). The following javascript example shows how to calculate the DID for the asset:
 
 ```runkit  nodeVersion="18.x.x"
 const CryptoJS = require('crypto-js')
