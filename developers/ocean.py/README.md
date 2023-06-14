@@ -27,7 +27,7 @@ Now, let's take a closer look at those amazing branches:
 5. **Model Training Branch**: This branch employs machine learning techniques to train models using the transformed data. It collaborates with the Ocean smart contracts to optimize the training process.
 6. **Model Evaluation Branch**: It's time for a performance assessment! This branch thoroughly examines the trained models, assessing their accuracy, robustness, and compliance with predefined metrics. It ensures that our models are as reliable as a trustworthy companion.
 7. **Model Deployment Branch**: Now, it's time to set our trained models free into the ocean of opportunities! This branch interacts with the Ocean smart contracts to deploy the models, making them accessible for utilization within the Ocean ecosystem.
-8. **Model Monitoring Branch**: This branch monitors their behavior, tracks their performance, and detects any anomalies that may arise. It collaborates with the Ocean smart contracts to ensure the models swim smoothly.
+8. **Model Monitoring Branch**: This branch monitors the received algorithm result logs from Compute-to-Data engine, tracking their performance.
 
 So, in the realm of ocean.py's integration with Ocean Protocol's smart contracts, the eight versatile branches embark on an exciting journey, discovering, accessing, cleaning, transforming, training, evaluating, deploying, and monitoring data and models. Together, they form a powerful team, navigating the depths of the Ocean ecosystem. 🌊🐙
 

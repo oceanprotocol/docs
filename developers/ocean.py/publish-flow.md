@@ -43,7 +43,11 @@ As you may want to explore more the DDO specs,  structure & meaning, we invite y
 
 #### Publishing Alternatives
 
-Here's an example similar to the `create()` step above, but exposes more fine-grained control.
+Here's an example similar to the `create()` step above, but exposes more parameters to interact with, which requires deeper knowledge about ocean.py usage. The below example points out the creation of an asset and attempts to create a datatoken as well, with the files specified in `DatatokenArguments` class. You have the freedom to customize the data NFT, datatoken and also fields from DDO, such as:
+
+* services
+* metadata
+* credentials
 
 In the same python console:
 
@@ -81,11 +85,11 @@ The DDO is stored on-chain. It's encrypted and compressed by default. Therefore 
 
 You can control this during `create()`:
 
-* To disable encryption, use `ocean.assets.create(..., encrypt_flag=False)`.
-* To disable compression, use `ocean.assets.create(..., compress_flag=False)`.
-* To disable both, use `ocean.assetspy.create(..., encrypt_flag=False, compress_flag=False)`.
+* To disable encryption, use [`ocean.assets.create(..., encrypt_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_assets.py#L425).
+* To disable compression, use [`ocean.assets.create(..., compress_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_assets.py#L426).
+* To disable both, use [`ocean.assetspy.create(..., encrypt_flag=False, compress_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_assets.py#LL425C8-L426C46).
 
-#### Create _just_ a data NFT
+#### Create a data NFT
 
 Calling `create()` like above generates a data NFT, a datatoken for that NFT, and a ddo. This is the most common case. However, sometimes you may want _just_ the data NFT, e.g. if using a data NFT as a simple key-value store. Here's how:
 
