@@ -99,7 +99,6 @@
 * [📊 Data Science](data-science/README.md)
   * [Data Value Creation Loop](data-science/the-data-value-creation-loop.md)
   * [What data is valuable?](data-science/data-engineers.md)
-  * [Benefits of Ocean for Data Science](data-science/benefits-of-ocean-for-data-science.md)
 * [🔨 Infrastructure](infrastructure/README.md)
   * [Setup a Server](infrastructure/setup-server.md)
   * [Deploying Marketplace](infrastructure/deploying-marketplace.md)
