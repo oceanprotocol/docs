@@ -2,7 +2,9 @@
 description: This page shows how you run a compute flow.
 ---
 
-# Compute flow
+# Compute Flow
+
+In this page, we provide the steps for publishing algorithm asset, run it on Ocean environment for C2D and retrieve the result logs, using ocean.py.
 
 We assumed that you have completed the installation part with the preferred setup.
 

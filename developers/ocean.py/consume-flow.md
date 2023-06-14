@@ -4,6 +4,8 @@ description: This page shows how you can get datatokens & download an asset
 
 # Consume Flow
 
+Consume flow highlights the methods for getting a datatoken for accessing an asset from Ocean Market and for downloading the content of the asset.
+
 We assumed that you accomplished the publish flow presented previously.
 
 Now let's see how can Bob get access to Alice's asset in order to download/consume it.
