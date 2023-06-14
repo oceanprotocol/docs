@@ -33,13 +33,13 @@ Don't enjoy reading? Watch our video tutorial!
 2. Connect your wallet.
 3. Select the network where you would like to publish your NFT (ex. Ethereum, Polygon, etc).
 
-![Connect wallet](../.gitbook/assets/market/marketplace-connect-wallet.png)
+<figure><img src="../.gitbook/assets/Connect-Wallet.png" alt=""><figcaption></figcaption></figure>
 
 In this tutorial, we will be using the Polygon Mumbai test network.
 
 4\. Click on the Publish link on the top left corner of the page.
 
-![Publish page](../.gitbook/assets/market/publish.png)
+<figure><img src="../.gitbook/assets/Publish-Link.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 1 - Metadata 🤓
 
@@ -63,7 +63,7 @@ _Mandatory fields are marked with \*_
 
     Tags help the asset to be searchable. If not provided, the list of tags is empty by default.
 
-![Asset metadata](../.gitbook/assets/market/publish-1.png)
+<figure><img src="../.gitbook/assets/Enter-Metadata (1).png" alt=""><figcaption></figcaption></figure>
 
 Click Continue.
 
@@ -89,7 +89,7 @@ _Mandatory fields are marked with \*_
 
     This field specifies how long the buyer can access the dataset after the dataset is purchased. This field is editable after the asset publication.
 
-![Access details](../.gitbook/assets/market/publish-2.png)
+<figure><img src="../.gitbook/assets/Access.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3 - Pricing 🫰
 
@@ -108,11 +108,11 @@ For more information on the pricing models, please refer this [document](../deve
 
 For a deep dive into the fee structure, please refer to this [document](../developers/contracts/fees.md).
 
-![Asset pricing](../.gitbook/assets/market/publish-3.png)
+<figure><img src="../.gitbook/assets/Price.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 4 - Preview 🔍
 
-![Preview](../.gitbook/assets/market/publish-4.png)
+<figure><img src="../.gitbook/assets/Preview.png" alt=""><figcaption></figcaption></figure>
 
 If you are happy with the Preview of your NFT, then click Continue!
 
