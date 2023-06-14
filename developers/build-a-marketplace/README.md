@@ -37,6 +37,6 @@ If you’re completely unfamiliar with Ocean Market or web3 applications in gene
 **Required Prerequisites**
 
 * Git. Instructions for installing Git can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-* Node.js can be downloaded from [here](https://nodejs.org/en/download/) (we’re using version 16 in this guide)
+* Node.js can be downloaded from [here](https://nodejs.org/en/download/) (we’re using version 18 in this guide)
 * A decent code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
 * You’ll need a Github account to fork Ocean market via [Github](https://github.com/).

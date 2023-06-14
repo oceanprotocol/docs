@@ -9,10 +9,10 @@ One of the best use cases for Ocean is running your own marketplace and monetizi
 
 Using Ocean Market is already a big improvement on the alternatives that are out there, but it gets even better. Ocean Market is completely open-source and made freely available under the Apache 2 license. This means that you can fork Ocean Market and set up your own data marketplace in just a few steps. This guide will walk you through the process, you’ll be surprised how easy it is. No prior blockchain knowledge is required!
 
-- Fork Ocean Market
-- Clone the market locally
-- Install the dependencies
-- Run your Market fork for the first time
+* Fork Ocean Market
+* Clone the market locally
+* Install the dependencies
+* Run your Market fork for the first time
 
 ## Fork Ocean Market
 
@@ -44,12 +44,12 @@ npm start
 
 The above command will build the development bundle and run it locally.
 
-![Forking Ocean Market](../../.gitbook/assets/market/market-forking-1.png)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 14.39.17.png" alt=""><figcaption><p>Forking Ocean Market</p></figcaption></figure>
 
 Great news - your marketplace has successfully been built and is now running locally. Let’s check it out! Open your browser and navigate to http://localhost:8000/. You’ll see that you have a full-on clone of Ocean Market running locally. Give it a go and test out publishing and consuming assets - everything works!
 
 That’s all that’s required to get a clone of Ocean market working. The whole process is made simple because your clone can happily use all the smart contracts and backend components that are maintained by Ocean Protocol Foundation.
 
-![Forking Ocean Market](../../.gitbook/assets/market/market-forking-2.png)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 14.43.25.png" alt=""><figcaption><p>Forking Ocean Market</p></figcaption></figure>
 
 So you’ve got a fully functioning marketplace at this point, which is pretty cool. But it doesn’t really look like your marketplace. Right now, it’s still just a clone of Ocean Market - the same branding, name, logo, etc. The next few steps focus on personalizing your marketplace.

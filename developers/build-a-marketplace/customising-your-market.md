@@ -3,21 +3,15 @@ title: Customising Market
 description: Step by step guide to customizing your fork of Ocean market
 ---
 
-# Customizing your fork of Ocean market
+# Customising a Market
 
 So you’ve got a fully functioning data marketplace at this point, which is pretty cool. But it doesn’t really look like your data marketplace. Right now, it’s still just a clone of Ocean Market — the same branding, name, logo, etc. The next few steps focus on personalizing your data marketplace.
 
-- Change your Market Name
-
-- Change the Logo
-
-- Change the Styling
-
-- Edit the Publish Form
-
-- Change the Fee Address
-
-- Build and host your Data Marketplace
+* Change your Market Name
+* Change the Logo
+* Change the Styling
+* Edit the Publish Form
+* Advanced customisation
 
 ## Change your Market Name
 
@@ -79,8 +73,7 @@ You’ll notice in the screenshot above that we are setting our “wave” backg
 
 If we save this file and view the site at this point, we get a white section at the top (see image below). And you’ll also notice that the background doesn’t fill all the way down to the bottom of the screen.
 
-![Market Customisation](../../.gitbook/assets/market/market-customisation-10.1.png)
-![Market Customisation](../../.gitbook/assets/market/market-customisation-10.2.png)
+![Market Customisation](../../.gitbook/assets/market/market-customisation-10.1.png) ![Market Customisation](../../.gitbook/assets/market/market-customisation-10.2.png)
 
 To fix this, we need to change the starting position of the background image and change it from no-repeat to repeat. We can do this on line 3.
 
@@ -88,7 +81,7 @@ When we view our marketplace, we can see that the new background starts at the t
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-11.1.png)
 
-## Brand Colors
+### Brand Colors
 
 Next up, let’s change the background colors to match your individual style. Open up the following file: src/global/\_variables.css. Here you’ll see the global style colors that are set. Now is the time to get creative, or consult your brand handbook (if you already have one).
 
@@ -96,7 +89,7 @@ You can change these colors as much as you wish until you’re happy with how ev
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-12.png)
 
-## Change Fonts
+### Change Fonts
 
 The final part of the styling that we’ll alter in this guide is the fonts. This is an important step because the font used in Ocean Market is one of the few elements of the market that are copyright protected. If you want to use the same font you’ll need to purchase a license. The other copyrighted elements are the logo and the name — which we have already changed.
 
@@ -116,13 +109,13 @@ Let’s head to the publish page to see what it looks like with our new styling 
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-14.png)
 
-Open up the index.json file from content/publish/index.json - here we change the text to explain that this form is for publishing photos.
+Open up the index.json file from `content/publish/index.json` - here we change the text to explain that this form is for publishing photos.
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-15.png)
 
 Additionally, the asset type current says dataset, and we need to change this so that it says photo. The simplest way to do this is to change the title of the asset type without changing anything else. Ocean can handle selling any digital asset that can be accessed via a URL, so no further changes are needed to accommodate selling photos.
 
-Open up src/components/Publish/Metadata/index.tsx and change line 28 so that it says ‘Photo’
+Open up `src/components/Publish/Metadata/index.tsx` and change line 33 so that it says ‘Photo’
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-18.png)
 
@@ -132,7 +125,7 @@ Great, now our publish page explains that users should be publishing photos and 
 
 There is one more thing that is fun to change before we move away from the publish form. You’ll notice that Ocean Market V4 now has a cool SVG generation feature that creates the images for the Data NFT. It creates a series of pink waves. Let’s change this so that it uses our brand colors in the waves!
 
-Open up /src/@utils/SvgWaves.ts and have a look at lines 27 to 30 where the colors are specified. Currently, the pink color is the one used in the svg generator. You can replace this with your own brand color:
+Open up `/src/@utils/SvgWaves.ts` and have a look at lines 27 to 30 where the colors are specified. Currently, the pink color is the one used in the svg generator. You can replace this with your own brand color:
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-21.png)
 
@@ -144,15 +137,11 @@ And now your customized publish page is ready for your customers:
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-20.png)
 
-## Change the Fee Address
+## Advanced customisation
 
-At this point, we have made a lot of changes and hopefully you’re happy with the way that your marketplace is looking. Given that you now have your own awesome photo marketplace, it’s about time we talked about monetizing it. Yup, that’s right - you will earn a commission when people buy and sell photos in your marketplace. In Ocean V4, there are a whole host of new fees and customization options that you can use (read more about that here).
+This important step is the last thing that we will change in this guide. To set the marketplace fees and address, you’ll need to save them as environmental variables. You'll also need to set the environmental variables if you customized services like Aquarius, Provider or Subgraph.&#x20;
 
-When someone sets the pricing for their photos in your marketplace, they are informed that a commission will be sent to the owner of the marketplace. You see that at the moment this fee is set to zero, so you’ll want to increase that. And in order to receive the fees you’ll you need to set the address that you want to recieve these fees in.
-
-![Market Customisation](../../.gitbook/assets/market/market-customisation-23.png)
-
-This important step is the last thing that we will change in this guide. To set the marketplace fees and address, you’ll need to save them as environmental variables. Create a new file called .env in the root of your repository.
+First we are going to create a new file called .env in the root of your repository.
 
 Copy and paste the following into the file:
 
@@ -164,11 +153,40 @@ NEXT_PUBLIC_PUBLISHER_MARKET_FIXED_SWAP_FEE="0.01"
 NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE="0.01"
 NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE="0.01"
 
+#
+# ADVANCED SETTINGS
+#
+
+# Toggle pricing options presented during price creation
+#NEXT_PUBLIC_ALLOW_FIXED_PRICING="true"
+#NEXT_PUBLIC_ALLOW_FREE_PRICING="true"
+
+# Privacy Preference Center
+#NEXT_PUBLIC_PRIVACY_PREFERENCE_CENTER="true"
+
+# Development Preference Center
+#NEXT_PUBLIC_PROVIDER_URL="http://xxx:xxx"
+#NEXT_PUBLIC_SUBGRAPH_URI="http://xxx:xxx"
+#NEXT_PUBLIC_METADATACACHE_URI="http://xxx:xxx"
+#NEXT_PUBLIC_RPC_URI="http://xxx:xxx"
+
 ```
 
-You need to replace “0x123abc” with your ethereum address (this is where the fees will be sent) and alter the fees to the levels that you intend them to be at. If you change you mind, these fees can always be altered later.
+### Change the Fee Address
+
+At this point, we have made a lot of changes and hopefully you’re happy with the way that your marketplace is looking. Given that you now have your own awesome photo marketplace, it’s about time we talked about monetizing it. Yup, that’s right - you will earn a commission when people buy and sell photos in your marketplace. In Ocean V4, there are a whole host of new fees and customization options that you can use (read more about that here). In order to receive the fees you’ll you need to set the address that you want to recieve these fees in.
+
+When someone sets the pricing for their photos in your marketplace, they are informed that a commission will be sent to the owner of the marketplace. You see that at the moment this fee is set to zero, so you’ll want to increase that.&#x20;
+
+You need to replace “0x123abc” with your ethereum address (this is where the fees will be sent).
+
+### Change the Fees Values
+
+You can also alter the fees to the levels that you intend them to be at. If you change you mind, these fees can always be altered later.
 
 Go to [Fees page](https://docs.oceanprotocol.com/concepts/fees/) to know more details about each type of fee and its relevance.
+
+![Market Customisation](../../.gitbook/assets/market/market-customisation-23.png)
 
 It is important that the file is saved in the right place at the root of your repository, your file structure should look the same as below.
 
@@ -177,3 +195,19 @@ It is important that the file is saved in the right place at the root of your re
 Now that’s it; you now have a fully functioning photo marketplace that operates over the blockchain. Everytime someone uses it, you will receive revenue.
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-25.png)
+
+### Using a custom Provider
+
+You have the flexibility to tailor the ocean market according to your preferences by directing it to a predetermined custom [provider](https://github.com/oceanprotocol/provider/)  deployment. This customization option allows you to choose a specific default provider, in addition to the option of manually specifying it when publishing an asset. To make use of this feature, you need to uncomment the designated line and modify the URL for your custom provider in the previously generated `.env` file. Look for the key labeled `NEXT_PUBLIC_PROVIDER_URL` and update its associated URL accordingly.
+
+### Using a custom MetadataCache
+
+If you intend to utilize the ocean market with a custom Aquarius deployment, you can also make set a custom MetadataCache flag. To do this, you will need to update the same file mentioned earlier. However, instead of modifying the `NEXT_PUBLIC_PROVIDER_URL` key, you should update the `NEXT_PUBLIC_METADATACACHE_URI` key. By updating this key, you can specify the URI for your custom Aquarius deployment, enabling you to take advantage of the ocean market with your preferred metadata cache setup.
+
+### Using a custom subgraph
+
+Using a custom subgraph with the ocean market requires additional steps due to the differences in deployment. Unlike the multi-network deployment of the provider and Aquarius services, each network supported by the ocean market has a separate subgraph deployment. This means that while the provider and Aquarius services can be handled by a single deployment across all networks, the subgraph requires specific handling for each network.
+
+To utilize a custom subgraph, you will need to implement additional logic within the `getOceanConfig` function located in the `src/utils/ocean.ts` file. By modifying this function, you can ensure that the market uses the desired custom subgraph for the selected network. This is particularly relevant if your market aims to support multiple networks and you do not want to enforce the use of the same subgraph across all networks. By incorporating the necessary logic within `getOceanConfig`, you can ensure the market utilizes the appropriate custom subgraph for each network, enabling the desired level of customization. If the mentioned scenario doesn't apply to your situation, there is another approach you can take. Similar to the previously mentioned examples, you can modify the `.env` file by updating the key labeled `NEXT_PUBLIC_SUBGRAPH_URI`. By making changes to this key, you can configure the ocean market to utilize your preferred subgraph deployment. This alternative method allows you to customize the market's behavior and ensure it utilizes the desired subgraph, even if you don't require different subgraph deployments for each network.
+
+\
