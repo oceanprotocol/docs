@@ -61,7 +61,7 @@ To "consume" an asset typically means placing an "order", where you pass in 1.0 
 
 Bob now has the datatoken for the dataset! Time to download the dataset and use it.
 
-<figure><img src="../../.gitbook/assets/200w.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://media.giphy.com/media/px8O7NANzzaqk/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 In the same Python console:
 

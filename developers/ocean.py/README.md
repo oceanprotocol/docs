@@ -20,16 +20,14 @@ The head of our library is the "[Ocean](technical-details.md)" class. It oversee
 
 Now, let's take a closer look at those amazing branches:
 
-1. **Data Discovery Branch**: This branch acts as an intrepid explorer, delving into the vast seas of data to discover valuable datasets stored in the Ocean Protocol ecosystem. It navigates through metadata and identifies the hidden treasures.
-2. **Data Access Branch**: Just like a skilled locksmith, this branch unlocks the doors to the datasets, facilitating seamless access and retrieval. It interacts with the Ocean Protocol's smart contracts to securely fetch the desired data.
-3. **Data Cleaning Branch**: Here comes the meticulous cleaner! This branch ensures that the fetched data is pristine and free from any impurities. It scrubs away any inconsistencies or inaccuracies, leaving behind sparkling clean datasets.
-4. **Data Transformation Branch**: Transforming data is like wielding magic, and this arm is the magician! It performs enchanting operations on the data, such as reformatting, reorganizing, or even enriching it, making it ready for the next steps.
-5. **Model Training Branch**: This branch employs machine learning techniques to train models using the transformed data. It collaborates with the Ocean smart contracts to optimize the training process.
-6. **Model Evaluation Branch**: It's time for a performance assessment! This branch thoroughly examines the trained models, assessing their accuracy, robustness, and compliance with predefined metrics. It ensures that our models are as reliable as a trustworthy companion.
-7. **Model Deployment Branch**: Now, it's time to set our trained models free into the ocean of opportunities! This branch interacts with the Ocean smart contracts to deploy the models, making them accessible for utilization within the Ocean ecosystem.
-8. **Model Monitoring Branch**: This branch monitors the received algorithm result logs from Compute-to-Data engine, tracking their performance.
+1. **Data Discovery Branch**: This branch discovers & creates valuable datasets stored in the Ocean Protocol ecosystem. It navigates through metadata and identifies the hidden treasures of the data assets.
+2. **Data Access Branch**: Just like a skilled locksmith, this branch unlocks the doors to the datasets, facilitating access and content retrieval. It interacts with the Ocean Protocol's smart contracts to securely fetch the desired data.
+3. **Data Transformation Branch**: Transforming data is like wielding magic, and this arm is the magician! It performs enchanting operations on the data, such as reformatting, reorganizing, or even enriching it, making it ready for the next steps.
+4. **Model Deployment Branch**: This branch deploy the Ocean smart contract objects wrapped models using [Brownie](https://github.com/eth-brownie/brownie), making them accessible for utilization within the library.
+5. **Model Training Branch**: This branch collaborates with Compute-To-Data engine in order to run algorithms and to train models using the transformed data.
+6. **Model Monitoring Branch**: This branch monitors the received algorithm result logs from Compute-to-Data engine, tracking their performance.
 
-So, in the realm of ocean.py's integration with Ocean Protocol's smart contracts, the eight versatile branches embark on an exciting journey, discovering, accessing, cleaning, transforming, training, evaluating, deploying, and monitoring data and models. Together, they form a powerful team, navigating the depths of the Ocean ecosystem. 🌊🐙
+So, in the realm of ocean.py's integration with Ocean Protocol's smart contracts, the six versatile branches embark on an exciting journey. Together, they form a powerful team, navigating the depths of the Ocean ecosystem. 🌊🐙
 
 ### ocean.py Strengths 💪
 
