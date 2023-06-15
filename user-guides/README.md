@@ -14,12 +14,12 @@ coverY: 0
 
 Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 
-{% content-ref url="marketplace-publish-data-asset.md" %}
-[marketplace-publish-data-asset.md](marketplace-publish-data-asset.md)
+{% content-ref url="publish-data-nfts.md" %}
+[publish-data-nfts.md](publish-data-nfts.md)
 {% endcontent-ref %}
 
-{% content-ref url="marketplace-download-data-asset.md" %}
-[marketplace-download-data-asset.md](marketplace-download-data-asset.md)
+{% content-ref url="buy-data-nfts.md" %}
+[buy-data-nfts.md](buy-data-nfts.md)
 {% endcontent-ref %}
 
 {% content-ref url="compute-to-data/" %}

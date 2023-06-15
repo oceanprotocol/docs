@@ -17,8 +17,8 @@ The Ocean Market is a place for buyers + sellers of top-notch data and algorithm
 
 #### **Learn to:**
 
-* [Publish an NFT](marketplace-publish-data-asset.md)
-* [Download NFT Assets](marketplace-download-data-asset.md)
+* [Publish an NFT](publish-data-nfts.md)
+* [Download NFT Assets](buy-data-nfts.md)
 * [Host Your Assets](asset-hosting/)
 
 #### Getting Basic 💁‍♀️

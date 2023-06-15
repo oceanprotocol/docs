@@ -62,8 +62,8 @@ To showcase these capabilities, Ocean developed a demonstrator marketplace known
 
 The following guides will help you get started with buying and selling data:
 
-* [Publish an NFT](../user-guides/marketplace-publish-data-asset.md)
-* [Download an NFT](../user-guides/marketplace-download-data-asset.md)
+* [Publish an NFT](../user-guides/publish-data-nfts.md)
+* [Download an NFT](../user-guides/buy-data-nfts.md)
 * [Host Assets](../user-guides/asset-hosting/)
 
 </details>
