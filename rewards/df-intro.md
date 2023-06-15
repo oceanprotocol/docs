@@ -26,7 +26,7 @@ Passive rewards are the OCEAN rewards paid to Data Farmers just for locking thei
 
 <figure><img src="../.gitbook/assets/passive-income.gif" alt=""><figcaption></figcaption></figure>
 
-[To start getting passive rewards, go here.](../user-guides/get-veocean-tokens.md)
+[To start getting passive rewards, go here.](../user-guides/get-started-df.md)
 
 #### What are Active Rewards?
 

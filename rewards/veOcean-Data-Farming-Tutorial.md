@@ -10,8 +10,8 @@ description: Learn the basic moves to start kicking a** Data Farming
 
 Our [User Guides](../user-guides/) get you started Data Farming quickly to do the basic operations. Follow these guides to earn your blue belt in Data Farming understanding.
 
-{% content-ref url="../user-guides/get-veocean-tokens.md" %}
-[get-veocean-tokens.md](../user-guides/get-veocean-tokens.md)
+{% content-ref url="../user-guides/get-started-df.md" %}
+[get-started-df.md](../user-guides/get-started-df.md)
 {% endcontent-ref %}
 
 {% content-ref url="../user-guides/how-to-data-farm.md" %}
