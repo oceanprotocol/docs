@@ -4,9 +4,7 @@ description: How to host your data and algorithm NFT assets like a champ 🏆 �
 
 # Host Assets
 
-### TL; DR
-
-The most important thing to remember is that wherever you host your asset... it needs to be **reachable & downloadable**. It cannot live behind a private firewall such as a private Github repo. You also will need to **use a proper hosting service** - Google Drive won't work!
+The most important thing to remember is that wherever you host your asset... it needs to be **reachable & downloadable**. It cannot live behind a private firewall such as a private Github repo. You need to **use a proper hosting service!**&#x20;
 
 **The URL to your asset is encrypted in the publishing process!**
 
@@ -28,4 +26,6 @@ When you publish your asset as an NFT, then the URL/TX ID/CID required to access
 
 We recommend implementing a security policy that allows **only the Provider's IP address to access the file** and blocks requests from other unauthorized actors is recommended. Since not all hosting services provide this feature, **you must carefully consider the security features while choosing a hosting service.**
 
-⚠️ **Please use a proper hosting solution to keep your files.** Systems like `Google Drive` are not specifically designed for this use case. They include various virus checks and rate limiters that prevent the `Provider` to download the asset once it was purchased.
+{% hint style="warning" %}
+**Please use a proper hosting solution to keep your files.** Systems like `Google Drive` are not specifically designed for this use case. They include various virus checks and rate limiters that prevent the `Provider`downloading the asset once it was purchased.
+{% endhint %}
