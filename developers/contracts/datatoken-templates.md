@@ -21,13 +21,65 @@ The details regarding currently supported **datatoken templates** are as follows
 
 ### **Regular template**
 
-The regular template allows users to buy/sell/hold datatokens. The datatokens can be minted by the address having a [`MINTER`](roles.md#minter) role, making the supply of datatoken variable. This template is assigned _**templateId**_ `1` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20Template.sol).
+The regular template allows users to buy/sell/hold datatokens. The datatokens can be minted by the address having a [`MINTER`](roles.md#minter) role, making the supply of datatoken variable. This template is assigned _**`templateId`**_` ``= 1` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20Template.sol).
 
 ### **Enterprise template**
 
-The enterprise template has additional functions apart from methods in the ERC20 interface. This additional feature allows access to the service by paying in the basetoken instead of the datatoken. Internally, the smart contract handles the conversion of basetoken to datatoken, initiating an order to access the service, and minting/burning the datatoken. The total supply of the datatoken effectively remains 0 in the case of the enterprise template. This template is assigned _**templateId**_ `2` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20TemplateEnterprise.sol).
+The enterprise template has additional functions apart from methods in the ERC20 interface. This additional feature allows access to the service by paying in the basetoken instead of the datatoken. Internally, the smart contract handles the conversion of basetoken to datatoken, initiating an order to access the service, and minting/burning the datatoken. The total supply of the datatoken effectively remains 0 in the case of the enterprise template. This template is assigned _**`templateId =`**_`2` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20TemplateEnterprise.sol).
 
+#### Set the template
 
+When you're in the process of creating an NFT, it's essential to indicate the specific template it should utilize.&#x20;
+
+{% tabs %}
+{% tab title="Ocean.js" %}
+To personalize the template via ocean.js, you can achieve it by customizing the [NFTCreateData](https://github.com/oceanprotocol/ocean.js/blob/ae2ff1ccde53ace9841844c316a855de271f9a3f/src/%40types/NFTFactory.ts#L16) with your desired `templateIndex`.&#x20;
+
+The default template used is 1.
+
+```typescript
+export interface NftCreateData {
+  name: string
+  symbol: string
+  templateIndex: number
+  tokenURI: string
+  transferable: boolean
+  owner: string
+}
+```
+{% endtab %}
+
+{% tab title="Ocean.py" %}
+To personalize the template via ocean.py, you can achieve it by customizing the [DataNFTArguments](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean\_lib/models/data\_nft.py#L317) with your desired `template_index`.
+
+The default template used is 1.
+
+```python
+name: str name of data NFT if creating a new one
+symbol: str symbol of data NFT  if creating a new one
+template_index: int template index of the data NFT, by default is 1.
+additional_datatoken_deployer: str address of an additional ERC20 deployer.
+additional_metadata_updater: str address of an additional metadata updater.
+uri: str URL of the data NFT.
+"""
+def __init__(
+    self,
+    name: str,
+    symbol: str,
+    template_index: Optional[int] = 1,
+    additional_datatoken_deployer: Optional[str] = None,
+    additional_metadata_updater: Optional[str] = None,
+    uri: Optional[str] = None,
+    transferable: Optional[bool] = None,
+    owner: Optional[str] = None,
+    )...
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+By default, all assets published through the Ocean Market use the Enterprise Template.&#x20;
+{% endhint %}
 
 #### Retrieve the template
 

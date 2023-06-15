@@ -4,7 +4,7 @@ description: Sponsor a data challenge to crowdsource solutions for your business
 
 # Sponsor a Data Challenge
 
-<figure><img src="../../.gitbook/assets/welcome-to-my-dojo.gif" alt=""><figcaption><p>Make the game, set the rules.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/welcome-to-my-dojo.gif" alt=""><figcaption><p>Make the game, set the rules.</p></figcaption></figure>
 
 Hosting a data challenge is a fun way to engage data scientists and machine learning experts around the world to **solve your real business problems**. Incentivize participants to **build products using your data**, **explain insights in your data**, or **provide useful data predictions** for your business. Plus, it's a whole lot cheaper than hiring an in-house data science team!
 
