@@ -25,10 +25,15 @@ For a more comprehensive exploration of intellectual property and its practical 
 
 **DataNFTs and Datatokens example:**
 
-* In step 1, Alice **publishes** her dataset with Ocean: this means deploying an ERC721 data NFT contract (claiming copyright/base IP), then an ERC20 datatoken contract (license against base IP).
-* In step 2, she **mints** some ERC20 datatokens and **transfers** 1.0 of them to Bob's wallet; now he has a license to be able to download that dataset.
+* In step 1, Alice **publishes** her dataset with Ocean: this means deploying an ERC721 data NFT contract (claiming copyright/base IP), then an ERC20 datatoken contract (license against base IP). Then Alice mints an ERC20 datatokens
+* In step 2, Alice **transfers** 1.0 of them to Bob's wallet; now he has a license to be able to download that dataset.
 
-![High-Level Flow](../../.gitbook/assets/architecture/high-level-flow.png)
+<figure><img src="../../.gitbook/assets/DataNFT and Datatoken Flow.jpg" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
+
+We have some awesome hands-on experience when it comes to publishing a data NFT and minting datatokens.&#x20;
+
+* Publish using [ocean.py ](../ocean.py/publish-flow.md)
+* Publish using [ocean.js](../ocean.js/publish.md)
 
 ### Other References
 
