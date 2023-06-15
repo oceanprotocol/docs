@@ -29,50 +29,50 @@ The enterprise template has additional functions apart from methods in the ERC20
 
 #### Set the template
 
-When you're in the process of creating an NFT, it's essential to indicate the specific template it should utilize.&#x20;
+When you're creating an ERC20 datatoken, you can specify the desired template by passing on the template index.&#x20;
 
 {% tabs %}
 {% tab title="Ocean.js" %}
-To personalize the template via ocean.js, you can achieve it by customizing the [NFTCreateData](https://github.com/oceanprotocol/ocean.js/blob/ae2ff1ccde53ace9841844c316a855de271f9a3f/src/%40types/NFTFactory.ts#L16) with your desired `templateIndex`.&#x20;
+To specify the datatoken template via ocean.js, you need to customize the [DatatokenCreateParams](https://github.com/oceanprotocol/ocean.js/blob/ae2ff1ccde53ace9841844c316a855de271f9a3f/src/%40types/Datatoken.ts#L3) with your desired `templateIndex`.&#x20;
 
 The default template used is 1.
 
 ```typescript
-export interface NftCreateData {
-  name: string
-  symbol: string
+export interface DatatokenCreateParams {
   templateIndex: number
-  tokenURI: string
-  transferable: boolean
-  owner: string
+  minter: string
+  paymentCollector: string
+  mpFeeAddress: string
+  feeToken: string
+  feeAmount: string
+  cap: string
+  name?: string
+  symbol?: string
 }
 ```
 {% endtab %}
 
 {% tab title="Ocean.py" %}
-To personalize the template via ocean.py, you can achieve it by customizing the [DataNFTArguments](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean\_lib/models/data\_nft.py#L317) with your desired `template_index`.
+To specify the datatoken template via ocean.py, you need to customize the [DatatokenArguments](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean\_lib/models/datatoken\_base.py#L64) with your desired template\_index.&#x20;
 
 The default template used is 1.
 
 ```python
-name: str name of data NFT if creating a new one
-symbol: str symbol of data NFT  if creating a new one
-template_index: int template index of the data NFT, by default is 1.
-additional_datatoken_deployer: str address of an additional ERC20 deployer.
-additional_metadata_updater: str address of an additional metadata updater.
-uri: str URL of the data NFT.
-"""
-def __init__(
-    self,
-    name: str,
-    symbol: str,
-    template_index: Optional[int] = 1,
-    additional_datatoken_deployer: Optional[str] = None,
-    additional_metadata_updater: Optional[str] = None,
-    uri: Optional[str] = None,
-    transferable: Optional[bool] = None,
-    owner: Optional[str] = None,
-    )...
+class DatatokenArguments:
+    def __init__(
+        self,
+        name: Optional[str] = "Datatoken 1",
+        symbol: Optional[str] = "DT1",
+        template_index: Optional[int] = 1,
+        minter: Optional[str] = None,
+        fee_manager: Optional[str] = None,
+        publish_market_order_fees: Optional = None,
+        bytess: Optional[List[bytes]] = None,
+        services: Optional[list] = None,
+        files: Optional[List[FilesType]] = None,
+        consumer_parameters: Optional[List[Dict[str, Any]]] = None,
+        cap: Optional[int] = None,
+    ):
 ```
 {% endtab %}
 {% endtabs %}
