@@ -52,6 +52,8 @@ Open the File and click on the "Raw" button on the right side of the page.
 
 Copy the link in your browser's URL - it should begin with "https://raw.githubusercontent.com/...." like in the image below.
 
+<figure><img src="../../.gitbook/assets/Raw-URL.png" alt=""><figcaption><p>Grab the RAW github URL from your browser's URL bar</p></figcaption></figure>
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-16 at 08.05.41.png" alt=""><figcaption></figcaption></figure>
 
 **Step 4 - Publish the asset using the Raw link**
