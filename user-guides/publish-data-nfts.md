@@ -63,7 +63,7 @@ _Mandatory fields are marked with \*_
 
     Tags help the asset to be searchable. If not provided, the list of tags is empty by default.
 
-<figure><img src="../.gitbook/assets/Enter-Metadata.png" alt=""><figcaption><p>Enter the metadata</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Enter-Metadata (1).png" alt=""><figcaption><p>Enter the metadata</p></figcaption></figure>
 
 Click Continue.
 

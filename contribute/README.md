@@ -15,6 +15,12 @@ Do you think you see a bug in our code? To report a bug that _isn't a vulnerabil
 
 First, make sure that you search existing open + closed issues + PRs to see if your bug has already been reported there. If not, then go ahead and create a new bug report! 🦸
 
+#### Do you see an error in the Ocean Market?
+
+Follow our steps below to properly document your bug! Paste the screenshots into your Github issue.
+
+{% @arcade/embed flowId="fUNrK6z2eurJ2C1ty2OG" url="https://app.arcade.software/share/fUNrK6z2eurJ2C1ty2OG" %}
+
 ### Report vulnerabilities
 
 For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check out our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
