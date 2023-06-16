@@ -50,7 +50,7 @@ In the Google Cloud console, go to the Cloud Storage Buckets page
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 16.12.10.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 16.14.26.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-16 at 08.16.46.png" alt=""><figcaption></figcaption></figure>
 
 **Step 5 - Publish the asset using the generated link**
 
