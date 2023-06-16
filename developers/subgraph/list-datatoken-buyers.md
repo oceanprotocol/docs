@@ -14,6 +14,22 @@ If you are given an Ocean Market link, then the network and datatoken address fo
 
 <figure><img src="../../.gitbook/assets/marketplace_data.jpg" alt="" width="563"><figcaption><p>See the Network and Datatoken Address for an Ocean Market asset by visiting the asset's Ocean Market page.</p></figcaption></figure>
 
+#### More Detailed Info:
+
+You can access all the information for the Ocean Market asset also by **enabling Debug mode**. To do this, follow these steps:
+
+**Step 1** - Click the Settings button in the top right corner of the Ocean Market
+
+<figure><img src="../../.gitbook/assets/Click-Settings.png" alt=""><figcaption><p>Click the Settings button</p></figcaption></figure>
+
+**Step 2** - Check the Activate Debug Mode box in the dropdown menu
+
+<figure><img src="../../.gitbook/assets/Check-Debug-Mode.png" alt=""><figcaption><p>Check 'Active Debug Mode'</p></figcaption></figure>
+
+**Step 3** - Go to the page for the asset you would like to examine, and scroll through the DDO information to find the NFT address, datatoken address, chain ID, and other information.
+
+<figure><img src="../../.gitbook/assets/Scroll-DDO-Info.png" alt=""><figcaption></figcaption></figure>
+
 ### &#x20;How to find the network and datatoken address from a DID?
 
 If you know the DID:op but you don't know the source link, then you can use Ocean Aquarius to resolve the metadata for the DID:op to find the `chainId`+ `datatoken address` of the asset. Simply enter in your browser "[https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/](https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/did:op:1b26eda361c6b6d307c8a139c4aaf36aa74411215c31b751cad42e59881f92c1)\<your did:op:XXX>" to fetch the metadata.

@@ -1,5 +1,5 @@
 ---
-description: How to use Github hosting for your NFT assets
+description: How to use Github for your NFT assets
 ---
 
 # Github
