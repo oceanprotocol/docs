@@ -42,6 +42,8 @@ In the Google Cloud console, go to the Cloud Storage Buckets page
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 16.08.42.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-16 at 08.15.45.png" alt=""><figcaption></figcaption></figure>
+
 **Step 4 - Share the file**
 
 **Open the file and copy the generated link**
