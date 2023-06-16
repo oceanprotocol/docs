@@ -33,6 +33,7 @@
   * [Claim Rewards Data Farming](user-guides/claim-ocean-rewards.md)
   * [Liquidity Pools \[deprecated\]](user-guides/remove-liquidity-pools.md)
 * [👨💻 Developers](developers/README.md)
+  * [Find datatoken/data NFT addresses & Chain ID](developers/list-datatoken-buyers.md)
   * [Architecture Overview](developers/architecture.md)
   * [Contracts](developers/contracts/README.md)
     * [Data NFTs](developers/contracts/data-nfts.md)
