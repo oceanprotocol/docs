@@ -30,7 +30,7 @@ In the Google Cloud console, go to the Cloud Storage Buckets page
 
 **Allow public access to your recently created Bucket**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.56.51.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.56.34.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2 - Upload a file**
 

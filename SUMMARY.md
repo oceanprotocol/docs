@@ -25,6 +25,7 @@
     * [AWS](user-guides/asset-hosting/aws.md)
     * [Azure Cloud](user-guides/asset-hosting/azure-cloud.md)
     * [Google Storage](user-guides/asset-hosting/google-storage.md)
+    * [Github](user-guides/asset-hosting/github.md)
   * [Join a Data Challenge](user-guides/join-a-data-challenge.md)
   * [Sponsor a Data Challenge](user-guides/sponsor-a-data-challenge.md)
   * [Get Started Data Farming](user-guides/get-started-df.md)
