@@ -20,10 +20,19 @@ Checkout these guides if you are aiming to get a deeper understanding on how com
 * [How to publish a compute to data algorithm](../../user-guides/compute-to-data/publish-a-c2d-algorithm-nft.md)
 * [How to publish a dataset for compute to data](../../user-guides/compute-to-data/publish-a-c2d-data-nft.md)
 
-### Deployment Guides
+### Developer Guides
+
+* [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
+* [How to use compute to data with ocean.py](../ocean.py/compute-flow.md)
+
+### Architecture & Overview Guides
 
 * [Architecture](compute-to-data-architecture.md)
 * [Datasets & Algorithms](compute-to-data-datasets-algorithms.md)
-* [Minikube Environment](../../infrastructure/compute-to-data-minikube.md)
 * [Writing Algorithms](compute-to-data-algorithms.md)
+* [Compute options](compute-options.md)
+
+### Infrastructure Deployment Guides
+
+* [Minikube Environment](../../infrastructure/compute-to-data-minikube.md)
 * [Private docker registry](../../infrastructure/compute-to-data-docker-registry.md)
