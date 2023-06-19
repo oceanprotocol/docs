@@ -1,53 +1,45 @@
 ---
 title: Writing Algorithms for Compute to Data
-description: Learn how to write algorithms for use in Ocean Protocol's Compute-to-Data feature.
+description: >-
+  Learn how to write algorithms for use in Ocean Protocol's Compute-to-Data
+  feature.
 ---
 
-## Overview
+# Writing Algorithms
+
+### Overview
 
 An algorithm in the Ocean Protocol stack is another asset type, in addition to data sets. An algorithm for Compute to Data is composed of the following:
 
-- an algorithm code
-- a Docker image (base image + tag)
-- an entry point
+* an algorithm code
+* a Docker image (base image + tag)
+* an entry point
 
-## Environment
+### Environment
 
 When creating an algorithm asset in Ocean Protocol, the additional `algorithm` object needs to be included in its metadata service to define the Docker container environment:
 
 <details>
 
 <summary>Environment Object Example</summary>
+
 ```json
-{
-  "algorithm": {
-    "container": {
-      "entrypoint": "node $ALGO",
-      "image": "node",
-      "tag": "latest"
-    }
-  }
-}
+{ "algorithm": { "container": { "entrypoint": "node $ALGO", "image": "node", "tag": "latest" } } } 
 ```
+
 </details>
 
-| Variable     | Usage                                                                                                                                   |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `image`      | The Docker image name the algorithm will run with.                                                                                      |
-| `tag`        | The Docker image tag that you are going to use.                                                                                         |
-| `entrypoint` | The Docker entrypoint. `$ALGO` is a macro that gets replaced inside the compute job, depending where your algorithm code is downloaded. |
+<table><thead><tr><th width="212">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>image</code></td><td>The Docker image name the algorithm will run with.</td></tr><tr><td><code>tag</code></td><td>The Docker image tag that you are going to use.</td></tr><tr><td><code>entrypoint</code></td><td>The Docker entrypoint. <code>$ALGO</code> is a macro that gets replaced inside the compute job, depending where your algorithm code is downloaded.</td></tr></tbody></table>
 
-Define your entrypoint according to your dependencies. E.g. if you have multiple versions of python installed, use the appropriate command `python3.6 $ALGO`.
+Define your entry point according to your dependencies. E.g. if you have multiple versions of Python installed, use the appropriate command `python3.6 $ALGO`.
 
-### What Docker container should I use?
+#### What Docker container should I use?
 
-There are plenty of Docker containers that work out-of-the-box. However, if you have custom dependencies, you may want to configure your own Docker Image.
-To do so, create a Dockerfile with the appropriate instructions for dependency management and publish the container, e.g. using Dockerhub.
+There are plenty of Docker containers that work out of the box. However, if you have custom dependencies, you may want to configure your own Docker Image. To do so, create a Dockerfile with the appropriate instructions for dependency management and publish the container, e.g. using Dockerhub.
 
-We also collect some [example images](https://github.com/oceanprotocol/algo_dockers) which you can also view in Dockerhub.
+We also collect some [example images](https://github.com/oceanprotocol/algo\_dockers) which you can also view in Dockerhub.
 
 When publishing an algorithm through the [Ocean Market](https://market.oceanprotocol.com), these properties can be set via the publish UI.
-
 
 <details>
 
@@ -80,31 +72,27 @@ Run an algorithm written in Python, based on Python v3.9:
   }
 }
 ```
+
 </details>
 
-### Data Storage
+#### Data Storage
 
 As part of a compute job, every algorithm runs in a K8s pod with these volumes mounted:
 
-| Path | Permissions | Usage |
-| --------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/data/inputs`  | read        | Storage for input data sets, accessible only to the algorithm running in the pod. Contents will be the files themselves, inside indexed folders e.g. `/data/inputs/{did}/{service_id}`.  |
-| `/data/ddos`    | read        | Storage for all DDOs involved in compute job (input data set + algorithm). Contents will json files containing the DDO structure.                         |
-| `/data/outputs` | read/write  | Storage for all of the algorithm's output files. They are uploaded on some form of cloud storage, and URLs are sent back to the consumer.                 |
-| `/data/logs/`   | read/write  | All algorithm output (such as `print`, `console.log`, etc.) is stored in a file located in this folder. They are stored and sent to the consumer as well. |
+| Path            | Permissions | Usage                                                                                                                                                                                   |
+| --------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/data/inputs`  | read        | Storage for input data sets, accessible only to the algorithm running in the pod. Contents will be the files themselves, inside indexed folders e.g. `/data/inputs/{did}/{service_id}`. |
+| `/data/ddos`    | read        | Storage for all DDOs involved in compute job (input data set + algorithm). Contents will json files containing the DDO structure.                                                       |
+| `/data/outputs` | read/write  | Storage for all of the algorithm's output files. They are uploaded on some form of cloud storage, and URLs are sent back to the consumer.                                               |
+| `/data/logs/`   | read/write  | All algorithm output (such as `print`, `console.log`, etc.) is stored in a file located in this folder. They are stored and sent to the consumer as well.                               |
 
-Please note that when using local Providers or Metatata Caches, the ddos might not be correctly transferred into c2d, but inputs are still available.
-If your algorithm relies on contents from the DDO json structure, make sure to use a public Provider and Metadata Cache (Aquarius instance).
+Please note that when using local Providers or Metatata Caches, the ddos might not be correctly transferred into c2d, but inputs are still available. If your algorithm relies on contents from the DDO json structure, make sure to use a public Provider and Metadata Cache (Aquarius instance).
 
-### Environment variables available to algorithms
+#### Environment variables available to algorithms
 
 For every algorithm pod, the Compute to Data environment provides the following environment variables:
 
-| Variable             | Usage                                                  |
-| -------------------- | ------------------------------------------------------ |
-| `DIDS`               | An array of DID strings containing the input datasets. |
-| `TRANSFORMATION_DID` | The DID of the algorithm.                              |
-
+<table><thead><tr><th width="296">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>DIDS</code></td><td>An array of DID strings containing the input datasets.</td></tr><tr><td><code>TRANSFORMATION_DID</code></td><td>The DID of the algorithm.</td></tr></tbody></table>
 
 <details>
 
@@ -147,8 +135,8 @@ processfolder(inputFolder)
 
 This snippet will create and expose the following files as compute job results to the consumer:
 
-- `/data/outputs/output.log`
-- `/data/logs/algo.log`
+* `/data/outputs/output.log`
+* `/data/logs/algo.log`
 
 To run this, use the following container object:
 
@@ -163,6 +151,7 @@ To run this, use the following container object:
   }
 }
 ```
+
 </details>
 
 <details>
@@ -247,29 +236,20 @@ To run this algorithm, use the following `container` object:
   }
 }
 ```
+
 </details>
 
-### Algorithm Metadata
+#### Algorithm Metadata
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-| Attribute | Type | Description |
-| ------------------------ | ----------------------- |  -------------------------------------- |
-| **`language`** | `string` | Language used to implement the software. |
-| **`version`** | `string` | Version of the software preferably in [SemVer](https://semver.org) notation. E.g. `1.0.0`. |
-| **`consumerParameters`** | [Consumer Parameters](did-ddo.md#consumer-parameters) | An object that defines required consumer input before running the algorithm |
-| **`container`*** | `container` | Object describing the Docker container image. See below |
+<table><thead><tr><th>Attribute</th><th width="221.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>language</code></strong></td><td><code>string</code></td><td>Language used to implement the software.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version of the software preferably in <a href="https://semver.org">SemVer</a> notation. E.g. <code>1.0.0</code>.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="did-ddo.md#consumer-parameters">Consumer Parameters</a></td><td>An object that defines required consumer input before running the algorithm</td></tr><tr><td><strong><code>container</code></strong>*</td><td><code>container</code></td><td>Object describing the Docker container image. See below</td></tr></tbody></table>
 
 \* Required
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
-| Attribute        | Type     | Description                                                       |
-| ---------------- | -------- | ----------------------------------------------------------------- |
-| **`entrypoint`*** | `string` | The command to execute, or script to run inside the Docker image. |
-| **`image`***      | `string` | Name of the Docker image.                                         |
-| **`tag`***        | `string` | Tag of the Docker image.                                          |
-| **`checksum`***   | `string` | Digest of the Docker image. (ie: sha256:xxxxx)                    |
+<table><thead><tr><th width="210">Attribute</th><th width="164.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>entrypoint</code></strong>*</td><td><code>string</code></td><td>The command to execute, or script to run inside the Docker image.</td></tr><tr><td><strong><code>image</code></strong>*</td><td><code>string</code></td><td>Name of the Docker image.</td></tr><tr><td><strong><code>tag</code></strong>*</td><td><code>string</code></td><td>Tag of the Docker image.</td></tr><tr><td><strong><code>checksum</code></strong>*</td><td><code>string</code></td><td>Digest of the Docker image. (ie: sha256:xxxxx)</td></tr></tbody></table>
 
 \* Required
 
@@ -277,7 +257,7 @@ The `container` object has the following attributes defining the Docker image fo
 
 <summary>Algorithm Metadata Example</summary>
 
-```json 
+```json
 { 
   "metadata": { 
     "created": "2020-11-15T12:27:48Z", 
