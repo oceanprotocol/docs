@@ -6,13 +6,13 @@ description: >-
 
 # Get datatoken information
 
-To fetch detailed information about a specific datatoken, you can utilize the power of GraphQL queries. By constructing a query tailored to your needs, you can access key parameters such as the datatoken's ID, name, symbol, total supply, creator, and associated dataTokenAddress. This allows you to gain a deeper understanding of the datatoken's characteristics and properties. With this information at your disposal, you can make informed decisions, analyze market trends, and explore the vast potential of datatokens within the Ocean ecosystem. Harness the capabilities of GraphQL and unlock a wealth of datatoken insights.
+To fetch detailed information about a specific datatoken, you can utilize the power of GraphQL queries. By constructing a query tailored to your needs, you can access key parameters such as the datatoken's `ID`, `name`, `symbol`, `total supply`, and `creator`. This allows you to gain a deeper understanding of the datatoken's characteristics and properties. With this information at your disposal, you can make informed decisions, analyze market trends, and explore the vast potential of datatokens within the Ocean ecosystem.&#x20;
 
 
 
 The result of the following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
 
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the **mainnet**. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
 
 {% tabs %}
 {% tab title="Javascript" %}
@@ -80,7 +80,7 @@ axios(config)
 {% endtab %}
 
 {% tab title="Python" %}
-The Python script below can be used to run the query and fetch a datatoken information. If you wish to change the network, replace the variable's value `base_url` as needed. Change the value of the variable `datatoken_address` with the address of the datatoken of your choice.
+The Python script below can be used to run the query and fetch the datatoken information. If you wish to change the network, replace the variable's value `base_url` as needed. Change the value of the variable `datatoken_address` with the address of the datatoken of your choice.
 
 **Create script**
 

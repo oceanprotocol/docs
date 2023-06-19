@@ -12,7 +12,7 @@ Now that you are familiar with the process of retrieving a list of data NFTs ðŸ˜
 
 The result of the following GraphQL query returns the information about a particular data NFT. In this example, `0x1c161d721e6d99f58d47f709cdc77025056c544c`.
 
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the **mainnet**. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
 
 {% tabs %}
 {% tab title="Javascript" %}

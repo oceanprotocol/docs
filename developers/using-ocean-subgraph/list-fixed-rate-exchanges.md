@@ -8,7 +8,7 @@ Having gained knowledge about fetching lists of data NFTs and datatokens and ext
 
 
 
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the **mainnet**. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
 
 {% tabs %}
 {% tab title="Javascript" %}
