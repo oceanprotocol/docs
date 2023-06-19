@@ -3,7 +3,7 @@ description: >-
   Your resource hub for diving deep into the core concepts, exploring main
   components, and accessing practical examples and integration guides to unleash
   the power of Ocean Protocol in your applications
-cover: ../.gitbook/assets/cover/developer_tutorials.png
+cover: ../.gitbook/assets/cover/developer_banner.png
 coverY: 0
 ---
 

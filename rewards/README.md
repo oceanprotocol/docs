@@ -1,6 +1,6 @@
 ---
 description: Learn how to generate OCEAN rewards by using our Data Farming dApp
-cover: ../.gitbook/assets/cover/rewards.png
+cover: ../.gitbook/assets/cover/rewards_banner.png
 coverY: 0
 ---
 

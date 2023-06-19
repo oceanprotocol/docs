@@ -1,6 +1,6 @@
 ---
 description: Ocean Protocol is built by data scientists, for data scientists.
-cover: ../.gitbook/assets/cover/data_science.png
+cover: ../.gitbook/assets/cover/data_science_banner.png
 coverY: 0
 ---
 

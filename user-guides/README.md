@@ -2,7 +2,7 @@
 description: >-
   The definitive guides on how to do almost anything you want with Ocean
   Protocol tech!
-cover: ../.gitbook/assets/cover/user_guides.png
+cover: ../.gitbook/assets/cover/user_guides_banner.png
 coverY: 0
 ---
 
