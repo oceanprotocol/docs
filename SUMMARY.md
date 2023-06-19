@@ -53,6 +53,7 @@
   * [Retrieve datatoken/data NFT addresses & Chain ID](developers/retrieve-datatoken-address.md)
   * [Barge](developers/barge/README.md)
     * [Local Setup](developers/barge/local-setup-ganache.md)
+  * [Obtaining API Keys for Blockchain Access](developers/obtaining-api-keys-for-blockchain-access.md)
   * [Build a Marketplace](developers/build-a-marketplace/README.md)
     * [Forking Ocean Market](developers/build-a-marketplace/forking-ocean-market.md)
     * [Customising a Market](developers/build-a-marketplace/customising-your-market.md)

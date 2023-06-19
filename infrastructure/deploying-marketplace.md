@@ -3,6 +3,7 @@
 ### Prerequisites
 
 * A server for hosting Ocean Marketplace. See [this guide](setup-server.md) on creating a server.
+* Obtain API key for wanted blockchain. See [this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for this.
 
 ### Push your customized Ocean Market code to your Git repository
 
@@ -19,12 +20,13 @@ cd my-marketplace
 
 If you already created the .env file as instructed in ...(link to customize the market chapter), you can skip this step, otherwise copy the below content into the \`.env\` file.
 
-{% code title=".env" %}
+{% code title=".env" overflow="wrap" %}
 ```
 # Update this value if your Market should use custom Aquarius 
 NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
 
-#NEXT_PUBLIC_INFURA_PROJECT_ID="xxx"
+# Provide INFURA project ID from the obtained API key for NEXT_PUBLIC_INFURA_PROJECT_ID
+#NEXT_PUBLIC_INFURA_PROJECT_ID="xxx" 
 #NEXT_PUBLIC_MARKET_FEE_ADDRESS="0xxx"
 #NEXT_PUBLIC_PUBLISHER_MARKET_ORDER_FEE="1"
 #NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE="1"

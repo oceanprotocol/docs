@@ -1,22 +1,12 @@
 # Configuration
 
-### Obtaining API key for Ethereum node provider
-
-Ocean Protocol's smart contracts are deployed on EVM-compatible networks. Using an API key provided by a third-party Ethereum node provider allows you to interact with the Ocean Protocol's smart contracts on the supported networks without requiring you to host a local node.
-
-Choose any API provider of your choice. Some of the commonly used are:
-
-* [Infura](https://infura.io/)
-* [Alchemy](https://www.alchemy.com/)
-* [Moralis](https://moralis.io/)
-
-The supported networks are listed [here](../../discover/networks/).
+For obtaining the API keys for blockchain access and set the correct environment variables, please consult [this section](http://localhost:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) first and after proceed with the next steps.
 
 ### Create a directory
 
 Let's start with creating a working directory where we store the environment variable file, configuration files and the scripts.
 
-```
+```bash
 mkdir my-ocean-project
 cd my-ocean-project
 ```
@@ -102,10 +92,12 @@ Let's install Oceanjs library into your current project by running:
 
 {% tabs %}
 {% tab title="Terminal" %}
+{% code overflow="wrap" %}
 ```bash
 npm init
 npm i @oceanprotocol/lib@latest dotenv crypto-js ethers@5.7.4 @truffle/hdwallet-provider
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

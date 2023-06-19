@@ -83,6 +83,8 @@ For all users: to use EWC, add the following to network-config.yaml:
 
 #### 1.5 RPCs and Infura
 
+In order to obtain API keys for blockchain access, follow up [this document](http://localhost:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) for tips & tricks.
+
 The config file's default RPCs point to Infura, which require you to have an Infura account with corresponding token `WEB3_INFURA_PROJECT_ID`.
 
 **If you do have an Infura account**

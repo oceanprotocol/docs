@@ -8,7 +8,7 @@ Ocean subgraph allows querying the datatoken, dataNFT, and all event information
 
 * A server for hosting Ocean subgraph. See [this guide](setup-server.md) on creating a server.
 * Docker and Docker compose are installed. Click [here](https://docs.docker.com/engine/install/) to view guide on installing docker.
-* [Obtain an API key](../ocean-libraries/configuration.md#obtaining-api-key-for-ethereum-node-provider)
+* [Obtain an API key](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access)
 
 ### Create a working directory
 
