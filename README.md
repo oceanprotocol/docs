@@ -2,6 +2,7 @@
 description: Help for wherever you are on your Ocean Protocol journey.
 cover: .gitbook/assets/cover/contribute_banner.png
 coverY: 0
+layout: landing
 ---
 
 # 👋 Welcome
