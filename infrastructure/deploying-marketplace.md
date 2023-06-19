@@ -3,7 +3,7 @@
 ### Prerequisites
 
 * A server for hosting Ocean Marketplace. See [this guide](setup-server.md) on creating a server.
-* Obtain API key for wanted blockchain. See [this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for this.
+* Obtain API key for wanted network. See [this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for this.
 
 ### Push your customized Ocean Market code to your Git repository
 
