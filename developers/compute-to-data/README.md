@@ -1,8 +1,14 @@
+---
+description: Monetise your data while preserving privacy
+---
+
 # Compute to data
 
+### Introduction
 
+There are many datasets that are too sensitive to be sold, such as health records or other personal information. Compute-to-Data enables you to make money from these datasets while keeping the data private. Rather than selling the raw data, you can sell compute access to the private data.&#x20;
 
-Ocean's "Compute-to-Data" feature enables private data to be bought & sold. You can sell compute access to privately-held data, which never leaves the data owner’s premises. Ocean-based marketplaces enable the monetization of private data while preserving privacy.
+You decide which algorithms you allow to be run on your dataset. So, for example, if you own sensitive health records you could allow an algorithm that outputs the average age of a patient but no other information.
 
 Compute-to-data resolves the tradeoff between the benefits of using private data, and the risks of exposing it. It lets the data stay on-premise, yet allows 3rd parties to run specific compute jobs on it to get useful compute results like averaging or building an AI model.
 
@@ -12,7 +18,7 @@ It can be used for data sharing in science or technology contexts, or in marketp
 
 Private data can help research, leading to life-altering innovations in science and technology. For example, more data improves the predictive accuracy of modern Artificial Intelligence (AI) models. Private data is often considered the most valuable data because it’s so hard to get at, and using it can lead to potentially big payoffs.
 
-Checkout these guides if you are aiming to get a deeper understanding on how compute-to-data works:
+We suggest reading these guides to get an understanding on how compute-to-data works:
 
 ### User Guides
 
