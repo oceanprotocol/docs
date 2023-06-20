@@ -8,7 +8,17 @@ On this page, we continue our journey from [installation part](install.md), to d
 
 ⚠️ Ocean local setup uses Docker, which is fine for Linux/Ubuntu but plays badly with MacOS and Windows. If you are on these, you’ll want [remote setup](remote-setup.md)_._
 
-Here are the following steps for configuring ocean.py on Ganache network using barge
+Here are the following steps for configuring ocean.py on Ganache network using barge.
+
+### Prerequisites
+
+Ahoy there, matey! 🌊⚓️ When it comes to setting up ocean.py locally, we're diving into the world of Docker containers. These clever containers hold our trusty local blockchain nodes (Ganache) and the mighty Ocean middleware (Aquarius metadata cache and Provider to aid in consuming data assets). But fear not, for a smooth sailing experience, you'll need to ensure the following Docker components are shipshape and ready to go:
+
+1. [Docker](https://docs.docker.com/engine/install/) 🐳
+2. [Docker Compose](https://docs.docker.com/compose/install/) 🛠️
+3. Oh, and don't forget to [allow those non-root users](https://www.thegeekdiary.com/run-docker-as-a-non-root-user/) to join in on the fun! 🙅‍♂️
+
+So hoist the anchor, prepare your Docker crew, and let's embark on an exciting voyage with ocean.py! 🚢⛵️
 
 ### 1. Download barge and run services
 
