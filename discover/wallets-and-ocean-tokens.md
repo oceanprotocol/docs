@@ -6,7 +6,7 @@ description: >-
 
 # Manage Your OCEAN Tokens
 
-If you don't see any Ocean Tokens in your crypto wallet software (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.
+If you don't see any Ocean Tokens in your crypto wallet software 🔎 (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.&#x20;
 
 ### Token Information
 
