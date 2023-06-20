@@ -33,7 +33,7 @@ There are several methods available to assign roles and permissions. One option 
 
 Alternatively, for a more straightforward solution that doesn't require coding, you can utilize the network explorer of your asset's network. By accessing the network explorer, you can directly interact with the contracts associated with your asset. Below, we provide a few examples to help guide you through the process.
 
-### Manager
+#### Manager
 
 The ability to add or remove Managers is exclusive to the **NFT Owner**. If you are the NFT Owner and wish to add/remove a new manager, simply call the [addManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L426)/[removeManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L438) function within the ERC721Template contract. This function enables you to grant managerial permissions to the designated individual.&#x20;
 
@@ -70,7 +70,7 @@ The **manager** can assign or revoke three main roles (**deployer, metadata upda
 
 {% @arcade/embed flowId="qC8QpkLsFIQk3NxPzB8p" url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" %}
 
-### ERC20 Deployer
+#### ERC20 Deployer
 
 The Deployer has a bunch of privileges at the ERC20 datatoken level. They can deploy new datatokens with fixed price exchange, or free pricing. They can also update the ERC725Y key-value store and **assign** **roles** at the ERC20 level(datatoken level).
 
@@ -122,7 +122,7 @@ stateDiagram-v2
     ERC20_DEPLOYER --> FEE_MANAGER
 ```
 
-### Metadata Updater
+#### Metadata Updater
 
 There is also a specific role for updating the metadata. The [Metadata](../metadata.md) updater has the ability to update the information about the data asset (title, description, sample data etc) that is displayed to the user on the asset detail page within the market.
 
@@ -167,7 +167,7 @@ function removeFromMetadataList(address _allowedAddress) public {
 
 </details>
 
-### Store Updater
+#### Store Updater
 
 The store updater can store, remove or update any arbitrary key value using the ERC725Y implementation (at the ERC721 level). The use case for this role depends a lot on what data is being stored in the ERC725Y key-value pair — as mentioned above, this is highly flexible.
 
@@ -260,7 +260,7 @@ function addMultipleUsersToRoles(address[] memory addresses, RolesType[] memory 
 
 </details>
 
-### Minter
+#### Minter
 
 The Minter has the ability to mint new datatokens, provided the limit has not been exceeded.
 
@@ -298,7 +298,7 @@ function removeMinter(address _minter) external onlyERC20Deployer {
 
 {% @arcade/embed flowId="OHlwsPbf29S1PLh03FM7" url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" %}
 
-### Fee Manager
+#### Fee Manager
 
 Finally, we also have a fee manager which has the ability to set a new fee collector — this is the account that will receive the datatokens when a data asset is consumed. If no fee collector account has been set, the **datatokens will be sent by default to the NFT Owner**.
 
