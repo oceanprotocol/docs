@@ -14,7 +14,7 @@ We suggest using the following solutions to transfer Ocean tokens between Ethere
 To transfer Ocean tokens to and from the Binance Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
 
 {% hint style="warning" %}
-In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is crucial to ensure that the contract address you are sending the tokens to is correct.
+In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is **crucial** to ensure that the contract address you are sending the tokens to is correct.
 
 <img src="../../.gitbook/assets/wallet/binance-receive.png" alt="Binance deposit" data-size="original">
 {% endhint %}

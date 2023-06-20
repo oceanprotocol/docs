@@ -11,13 +11,13 @@ coverY: 0
 
 ### Report a bug 🐞
 
-Do you think you see a bug in our code? To report a bug that _isn't a vulnerability_, go to the relevant GitHub repository, click on the _Issues_ tab, and select _Bug report_.
+Do you think you see a bug in our code? To report a bug that _isn't a vulnerability_, go to the relevant GitHub repository, click on the _Issues_ tab, and select _Bug Report_.
 
 First, make sure that you search existing open + closed issues + PRs to see if your bug has already been reported there. If not, then go ahead and create a new bug report! 🦸
 
 #### Do you see an error in the Ocean Market?
 
-Follow our steps below to properly document your bug! Paste the screenshots into your Github issue.
+Follow our steps below to properly document your bug! Paste the screenshots into your GitHub issue.
 
 {% @arcade/embed flowId="fUNrK6z2eurJ2C1ty2OG" url="https://app.arcade.software/share/fUNrK6z2eurJ2C1ty2OG" %}
 
@@ -61,7 +61,7 @@ Except for GitHub, you can chat with most Ocean Protocol core developers in our 
 
 ### Develop an dApp or integration on top of Ocean Protocol
 
-We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with our open-source tools.&#x20;
+We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with our open-source tools.
 
 If you need ANY help, then we're here to talk with you on [Discord](https://discord.gg/TnXjkR5) to give you advice. We're also consistently improving our docs to help you. And... you're here :)
 
