@@ -3,7 +3,7 @@
 * [👋 Welcome](README.md)
 * [🌊 Discover](discover/README.md)
   * [Explore](discover/explore.md)
-  * [Basic Concepts](discover/engage.md)
+  * [Basic Concepts](discover/basic-concepts.md)
   * [Ocean 101](discover/ocean-101.md)
   * [Wallets](discover/wallets/README.md)
     * [Set Up MetaMask Wallet](discover/wallets/metamask-setup.md)
