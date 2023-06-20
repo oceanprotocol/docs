@@ -1,15 +1,16 @@
 ---
 title: Minikube Compute-to-Data Environment
-description:
 ---
 
-## Requirements
+# C2D - Minikube Environment
 
-- functioning internet-accessable provider service
-- machine capable of running compute (e.g. we used a machine with 8 CPUs, 16 GB Ram, 100GB SSD and fast internet connection)
-- Ubuntu 20.04
+### Requirements
 
-## Install Docker and Git
+* functioning internet-accessable provider service
+* machine capable of running compute (e.g. we used a machine with 8 CPUs, 16 GB Ram, 100GB SSD and fast internet connection)
+* Ubuntu 22.04 LTS
+
+### Install Docker and Git
 
 ```bash
 sudo apt update
@@ -17,14 +18,14 @@ sudo apt install git docker.io
 sudo usermod -aG docker $USER && newgrp docker
 ```
 
-## Install Minikube
+### Install Minikube
 
 ```bash
 wget -q --show-progress https://github.com/kubernetes/minikube/releases/download/v1.22.0/minikube_1.22.0-0_amd64.deb
 sudo dpkg -i minikube_1.22.0-0_amd64.deb
 ```
 
-## Start Minikube
+### Start Minikube
 
 First command is imporant, and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828).
 
@@ -37,7 +38,7 @@ Depending on the number of available CPUs, RAM, and the required resources for r
 
 For other options to run minikube refer to this [link](https://minikube.sigs.k8s.io/docs/commands/start/)
 
-## Install kubectl
+### Install kubectl
 
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -53,7 +54,7 @@ Wait untill all the defaults are running (1/1).
 watch kubectl get pods --all-namespaces
 ```
 
-### Run IPFS host
+#### Run IPFS host
 
 ```bash
 export ipfs_staging=~/ipfs_staging
@@ -65,7 +66,7 @@ sudo /bin/sh -c 'echo "127.0.0.1    youripfsserver" >> /etc/hosts'
 
 ```
 
-## Storage class (Optional)
+### Storage class (Optional)
 
 For minikube, you can use the default 'standard' class.
 
@@ -95,7 +96,7 @@ volumeBindingMode: Immediate
 
 For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
 
-## Download and Configure Operator Service
+### Download and Configure Operator Service
 
 Open new terminal and run the command below.
 
@@ -107,11 +108,11 @@ Edit `operator-service/kubernetes/postgres-configmap.yaml`. Change `POSTGRES_PAS
 
 Edit `operator-service/kubernetes/deployment.yaml`. Optionally change:
 
-- `ALGO_POD_TIMEOUT`
-- add `requests_cpu`
-- add `requests_memory`
-- add `limits_cpu`
-- add `limits_memory`
+* `ALGO_POD_TIMEOUT`
+* add `requests_cpu`
+* add `requests_memory`
+* add `limits_cpu`
+* add `limits_memory`
 
 ```yaml
 
@@ -131,7 +132,7 @@ spec:
           value: "3600"
 ```
 
-## Download and Configure Operator Engine
+### Download and Configure Operator Engine
 
 ```bash
 git clone https://github.com/oceanprotocol/operator-engine.git
@@ -141,14 +142,14 @@ Check the [README](https://github.com/oceanprotocol/operator-engine#customize-yo
 
 At a minimum you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
 
-## Create namespaces
+### Create namespaces
 
 ```bash
 kubectl create ns ocean-operator
 kubectl create ns ocean-compute
 ```
 
-## Deploy Operator Service
+### Deploy Operator Service
 
 ```bash
 kubectl config set-context --current --namespace ocean-operator
@@ -159,7 +160,7 @@ kubectl create -f operator-service/kubernetes/postgresql-service.yaml
 kubectl apply  -f operator-service/kubernetes/deployment.yaml
 ```
 
-## Deploy Operator Engine
+### Deploy Operator Engine
 
 ```bash
 kubectl config set-context --current --namespace ocean-compute
@@ -175,7 +176,7 @@ kubectl create -f operator-service/kubernetes/postgres-configmap.yaml
 kubectl -n ocean-compute apply -f /ocean/operator-engine/kubernetes/egress.yaml
 ```
 
-## Expose Operator Service
+### Expose Operator Service
 
 ```bash
 kubectl expose deployment operator-api --namespace=ocean-operator --port=8050
@@ -189,7 +190,7 @@ kubectl -n ocean-operator port-forward svc/operator-api 8050
 
 Alternatively you could use another method to communicate between the C2D Environment and the provider, such as an SSH tunnel.
 
-## Initialize database
+### Initialize database
 
 If your minikube is running on compute.example.com:
 
@@ -197,7 +198,7 @@ If your minikube is running on compute.example.com:
 curl -X POST "https://compute.example.com/api/v1/operator/pgsqlinit" -H  "accept: application/json"
 ```
 
-## Update Provider
+### Update Provider
 
 Update your provider service by updating the `operator_service.url` value in `config.ini`
 
