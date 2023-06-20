@@ -8,20 +8,15 @@ description: How to Mint and Publish Data NFTs Using the Ocean Market
 
 ### What to Publish? 🤷‍♀️
 
-Ocean Protocol has a convenient marketplace, called the Ocean Market, for publishers and consumers of data. What data, you ask? This data spans anything from .CSVs and .XLSX files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Ocean Market.
+Ocean Protocol has a convenient marketplace, called the Ocean Market, for publishers and consumers of data. What data, you ask? This data spans anything from .`CSVs` and .`XLSX` files to images, audio, videos, algorithms in any language, or combinations of all these things! There is no exhaustive list of what type of data can be published on the Ocean Market.
 
 ### What does it mean to publish an NFT using Ocean Protocol?
 
-The publishing process on the Ocean Market both mints (i.e. creates) a data NFT and a corresponding datatoken for your IP. The data NFT stores your IP, and the datatoken controls access to it. If you publish your music IP on the Ocean Market, for example, then a data NFT containing your music and its datatoken are minted during the publishing process. When consumers purchase the datatoken, then they gain access to download/use your data NFT's music.
+The publishing process on the Ocean Market both mints (i.e. creates) a [data NFT](../developers/contracts/data-nfts.md) and a corresponding [datatoken](../developers/contracts/datatokens.md) for your IP. The data NFT stores your IP, and the datatoken controls access to it. If you publish your music IP on the Ocean Market, for example, then a data NFT containing your music and its datatoken are minted during the publishing process. When consumers purchase the datatoken, then they gain access to download/use your data NFT's music.
 
 ### How to Publish an NFT on the Ocean Market 🧑‍🏫
 
-### Code flow:
-
-* **Python:** Are you looking how to publish a data NFT using Python? Follow our ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
-* **Javascript**: Are you looking how to publish a data NFT using Javascript? Follow our ocean.js [Publish Flow](../developers/ocean.js/publish.md) to mint a data NFT and datatoken using Javascript.
-
-### No code flow:
+### No code flow
 
 {% embed url="https://www.youtube.com/watch?v=3NGSmfXkHAQ" %}
 Don't enjoy reading? Watch our video tutorial!
@@ -43,7 +38,7 @@ In this tutorial, we will be using the Polygon Mumbai test network.
 
 #### Step 1 - Metadata 🤓
 
-Fill in the metadata.
+Fill in the [metadata](../developers/metadata.md).
 
 _Mandatory fields are marked with \*_
 
@@ -104,8 +99,6 @@ With the _fixed pricing_ schema, the publisher sets the price that buyers will p
 
 With the _free pricing_ schema, the publisher provides an asset that is free to be downloaded by anyone.
 
-For more information on the pricing models, please refer to this [document](../developers/contracts/pricing-schemas.md).
-
 For a deep dive into the fee structure, please refer to this [document](../developers/contracts/fees.md).
 
 <figure><img src="../.gitbook/assets/Price.png" alt=""><figcaption><p>Set the price</p></figcaption></figure>
@@ -126,11 +119,16 @@ To publish your NFT on-chain, you must go through three steps including signing 
 
 #### Confirmation 🥳
 
-Now, your NFT is successfully published and available in the Ocean Market!
+Now, your data NFT is successfully published and available in the Ocean Market!
 
 ![Successful publish](../.gitbook/assets/market/publish-7.png)
 
 On the [profile page](https://v4.market.oceanprotocol.com/profile), a publisher has access to all their published assets.
+
+### Code flow
+
+* **Python:** Are you looking at how to publish a data NFT using Python? Follow our ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
+* **Javascript**: Are you looking at how to publish a data NFT using Javascript? Follow our ocean.js [Publish Flow](../developers/ocean.js/publish.md) to mint a data NFT and datatoken using Javascript.
 
 #### More Info 🧐
 
