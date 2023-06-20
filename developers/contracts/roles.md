@@ -15,7 +15,7 @@ The [data NFT](data-nfts.md) serves as the foundational intellectual property (I
 
 The NFT owner is the owner of the base-IP and is therefore at the highest level. The NFT owner can perform any action or assign any role but crucially, the NFT owner is the only one who can assign the manager role. Upon deployment or transfer of the data NFT, the NFT owner is automatically added as a manager. The NFT owner is also the only role that can’t be assigned to multiple users — the only way to share this role is via multi-sig or a DAO.
 
-### What Roles Can The Data NFT Owner Assign?
+### Roles at the NFT level
 
 ```mermaid
 stateDiagram-v2
@@ -23,8 +23,6 @@ stateDiagram-v2
     MANAGER --> METADATA_UPDATER
     MANAGER --> ERC20_DEPLOYER
     MANAGER --> STORE_UPDATER
-    ERC20_DEPLOYER --> MINTER
-    ERC20_DEPLOYER --> FEE_MANAGER
 ```
 
 {% hint style="info" %}
@@ -68,13 +66,13 @@ function removeManager(address _managerAddress) external onlyNFTOwner {
 
 </details>
 
-The **manager** can assign or revoke three main roles (**deployer, metadata updater, and store updater**). The manager is also able to interact with the ERC725 data.
+The **manager** can assign or revoke three main roles (**deployer, metadata updater, and store updater**). The manager is also able to call any other contract (ERC725X implementation).
 
 {% @arcade/embed flowId="qC8QpkLsFIQk3NxPzB8p" url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" %}
 
 ### ERC20 Deployer
 
-The Deployer has a bunch of privileges at the ERC20 datatoken level. They can deploy new datatokens with fixed price exchange, or free pricing. They can also update the ERC725Y key-value store and assign roles at the ERC20 level.
+The Deployer has a bunch of privileges at the ERC20 datatoken level. They can deploy new datatokens with fixed price exchange, or free pricing. They can also update the ERC725Y key-value store and **assign** **roles** at the ERC20 level(datatoken leel).
 
 To add/remove an ERC20 deployer, the manager can use the [addToCreateERC20List](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/utils/ERC721RolesAddress.sol#L111)/[removeFromCreateERC20List](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/utils/ERC721RolesAddress.sol#L129) functions from the ERC721RolesAddress.
 
@@ -115,6 +113,14 @@ function removeFromCreateERC20List(address _allowedAddress) public {
 ```
 
 </details>
+
+### Roles at the datatokens level(ERC20)
+
+```mermaid
+stateDiagram-v2
+    ERC20_DEPLOYER --> MINTER
+    ERC20_DEPLOYER --> FEE_MANAGER
+```
 
 ### Metadata Updater
 
