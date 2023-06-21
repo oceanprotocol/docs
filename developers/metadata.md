@@ -52,13 +52,13 @@ Here is the flow:
 
 To set up the metadata for an asset, you'll need to call the [**setMetaData**](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L247) function at the contract level.&#x20;
 
-* [**\_metaDataState**](ddo-specification.md#state) - Each asset has a state, which is held by the NFT contract. One of the following: active(0), end-of-life(1), deprecated(2), revoked(3), ordering temporarily disabled (4), and asset unlisted (5).
+* [**\_metaDataState**](ddo-specification.md#state) - Each asset has a state, which is held by the NFT contract. One of the following: active (0), end-of-life (1), deprecated (2), revoked (3), ordering temporarily disabled (4), and asset unlisted (5).
 * **\_metaDataDecryptorUrl** - You create the DDO and then the Provider encrypts it with its private key. Only that Provider can decrypt it.
 * **\_metaDataDecryptorAddress** - The decryptor address.
 * **flags** - Additional information to represent the state of the data. One of two values: 0 - plain text, 1 - compressed, 2 - encrypted. Used by Aquarius.
 * **data -** The [DDO](ddo-specification.md) of the asset. You create the DDO as a JSON, send it to the [Provider](provider/) that encrypts it, and then you set it up at the contract level.
 * **\_metaDataHash** - Hash of the clear data **generated before the encryption.** It is used by Provider to check the validity of the data after decryption.
-* **\_metadataProofs** - Array with signatures of entities who validated data(before the encryption). Pass an empty array if you don't have any.
+* **\_metadataProofs** - Array with signatures of entities who validated data (before the encryption). Pass an empty array if you don't have any.
 
 ```solidity
 function setMetadata(uint8 _metaDataState, string calldata _metaDataDecryptorUrl
