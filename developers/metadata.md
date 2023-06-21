@@ -52,7 +52,7 @@ Here is the flow:
 
 To set up the metadata for an asset, you'll need to call the [**setMetaData**](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L247) function at the contract level.&#x20;
 
-* [**\_metaDataState**](ddo-specification.md#state) - Each asset has a state, which is held by the NFT contract. One of the following: Active(0), End-of-life(1), Deprecated(2), Revoked(3)....
+* [**\_metaDataState**](ddo-specification.md#state) - Each asset has a state, which is held by the NFT contract. One of the following: active(0), end-of-life(1), deprecated(2), revoked(3), ordering temporarily disabled (4), and asset unlisted (5).
 * **\_metaDataDecryptorUrl** - You create the DDO and then the Provider encrypts it with its private key. Only that Provider can decrypt it.
 * **\_metaDataDecryptorAddress** - The decryptor address.
 * **flags** - Additional information to represent the state of the data. One of two values: 0 - plain text, 1 - compressed, 2 - encrypted. Used by Aquarius.
