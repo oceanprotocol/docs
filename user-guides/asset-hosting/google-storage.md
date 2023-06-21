@@ -28,7 +28,7 @@ In the Google Cloud console, go to the Cloud Storage Buckets page
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.55.16.png" alt=""><figcaption></figcaption></figure>
 
-**Allow public access to your recently created Bucket**
+**Allow access to your recently created Bucket**
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.56.34.png" alt=""><figcaption></figcaption></figure>
 
