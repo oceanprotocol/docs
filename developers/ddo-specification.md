@@ -9,82 +9,30 @@ description: >-
 
 # DDO Specification
 
-**v4.1.0**
 
-<< Diagram Work in Progress>>
 
 ```mermaid
 erDiagram
-DDO ||--|{ Metadata : contains
-DDO ||--|{ Services : contains
+DDO
+Metadata
+Services
+Compute
+publisherTrustedAlgorithms
+ConsumerParameters
+AlgorithmMetadata
+Container
+DDO ||--|{Metadata : contains
+DDO ||--|{Services : contains
+Metadata ||--|{AlgorithmMetadata : contains
+AlgorithmMetadata ||--|{Container : contains
+Compute ||--|{ publisherTrustedAlgorithms : contains
+Services ||--|{ Compute : contains
 Services ||--|{ ConsumerParameters : contains
-Metadata ||--|{ AlgorithmMetadata : contains
-AlgorithmMetadata ||--|{ Container : contains
-    DDO {
-        arrayOfString context
-        string id
-        string version
-        number chainID
-        string nftAddress 
-        Metadata metadata
-        Services services
-        Credentials credentials       
-}
-    Metadata {
-        ISODateTimeString created
-        ISODateTimeString updated
-        string description
-        string copyrightHolder
-        string name
-        string type
-        string author
-        string license
-        arrayOfString links
-        string contentLanguage
-        arrayOfString tags
-        arrayOfStrings categories
-        Object additionalInformation
-        AlgorithmMetadata algorithm
-}
-
-AlgorithmMetadata {
-    string language
-    string version
-    ConsumerParameters consumerParameters
-    Container container
-}
-
-Container {
-string entrypoint
-string image
-string tag
-string checksum
-}
-
-Services {
-string id
-string type
-string name
-string description
-string datatokenAddress
-string serviceEndpoint
-Files files
-number timeout
-Compute compute
-ConsumerParameters consumerParameters
-Object additionalInformation
-}
-
-ConsumerParameters {
-string name
-string type
-string label
-boolean required
-string description
-string-number-boolean default
-ArrayOfOptions options
-}
+ 
+ 
 ```
+
+
 
 ## Required Attributes
 
