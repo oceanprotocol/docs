@@ -34,7 +34,7 @@ Services ||--|{ ConsumerParameters : contains
 
 
 
-## Required Attributes
+### Required Attributes
 
 A DDO in Ocean has these required attributes:
 
@@ -177,7 +177,7 @@ A DDO in Ocean has these required attributes:
 
 </details>
 
-## Metadata
+### Metadata
 
 This object holds information describing the actual asset.
 
@@ -447,3 +447,13 @@ The `stats` section contains different statistics fields.
 ```
 
 </details>
+
+### Compute to data
+
+For algorithms and datasets that are used for compute to data, there are additional fields and objects within the DDO structure that you need to consider. These include:&#x20;
+
+* `compute` attributes.
+* `publisherTrustedAlgorithms`
+* `consumerParameters`
+
+Details for each of these are explained on the [Compute Options page](compute-to-data/compute-options.md).
