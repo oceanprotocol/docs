@@ -50,7 +50,7 @@ At the top-end, this helps increase quality and diversification of inventory.
 
 At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
 
-![Ranked Rewards](../.gitbook/assets/rewards/ranked_rewards_study.png)
+![Ranked Rewards](../.gitbook/assets/rewards/ranked\_rewards\_study.png)
 
 You can read more about the why, what, and how of Ranked Rewards [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
@@ -81,7 +81,7 @@ Up to 100K OCEAN rewards were budget per week. Counting started Thu Oct 27, 2022
 **DF Main - Rounds 29-1000+**\
 We are now in DF Main which immediately followed the release of DF Beta on Thu Mar 16, 2023. Rewards begin at 150k per week and go to 1.1M OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades. Expected APY is 125% over many months (once fully ramped), staying generous over the long term.
 
-The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](emissions-apys.md#emissions--first-5-years), and perhaps more easily understood in the Reward Schedule below.
+The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](df-emissions-apys.md#emissions--first-5-years), and perhaps more easily understood in the Reward Schedule below.
 
 ### Reward Schedule
 

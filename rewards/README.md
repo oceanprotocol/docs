@@ -28,13 +28,13 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 [Data Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
 
-[Data Farming Background](df-background.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
+[Data Farming Background](df-max-out-yield.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
 
 ## Further Reading
 
 Finally, if you want to continue expanding your knowledge on OCEAN token emissions, APY estimates, and get useful answers to some of the most common questions, you can read the following:
 
-[Emissions & APYs](emissions-apys.md) will provide you will information about how OCEAN will be released over time through the Data Farming program and provide you with APY studies.
+[Emissions & APYs](df-emissions-apys.md) will provide you will information about how OCEAN will be released over time through the Data Farming program and provide you with APY studies.
 
 Our [FAQ](../discover/faq.md) answers many different questions about staking, chains, deployments, and other details that may be valuable to you.
 
