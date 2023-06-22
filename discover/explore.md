@@ -8,11 +8,11 @@ Ocean Protocol is a **decentralized data exchange protocol** that empowers you t
 
 <figure><img src="../.gitbook/assets/ocean-jelly-hyperrealistic.jpeg" alt="" width="375"><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
 
-Let's embark on a journey of discovery and explore the possibilities that await you with Ocean Protocol! Get a glimpse into some of the things you can do - the opportunities with our protocol are vast and ever-evolving. Together, we can dive deeper and uncover even more ways to leverage the power of decentralized data.
+Get a glimpse into some of the things you can do with Ocean Protocol. The opportunities with our protocol to leverage an "Ocean of data" are great and ever-evolving. Together, we'll dive deeper and uncover even more ways to leverage the power of decentralized data.
 
 <details>
 
-<summary><mark style="color:purple;">Build Your dApp</mark><br><br><strong>Building a</strong> <a href="https://oceanprotocol.com/templates"><strong>dApp</strong></a> <strong>on top of Ocean Protocol provides you with a powerful framework to create decentralized applications that leverage the capabilities of the protocol. By utilizing Ocean's technology stack, you can tap into a robust ecosystem designed for data exchange and collaboration.</strong></summary>
+<summary><mark style="color:purple;">Build Your dApp</mark><br><br><strong>Building a</strong> <a href="https://oceanprotocol.com/templates"><strong>dApp</strong></a> <strong>using Ocean Protocol can be a great way to bring next generation data sharing tools to your users. By utilizing Ocean's technology stack, you will leverage Web3 technological advantages that distinguish your application from others and can tap into a robust network of Ocean core data engineers/AI scientists supporting dApp developers.</strong></summary>
 
 When building a dApp on top of Ocean Protocol, you gain access to a wide range of features and functionalities:
 
