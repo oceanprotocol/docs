@@ -54,7 +54,7 @@ Seamlessly integrate with Ocean's ecosystem, contribute to the protocol's growth
 
 <details>
 
-<summary><mark style="color:green;">Buy or Sell Data</mark><br><br>Within the Ocean ecosystem, users have the possibility to publish and sell data or explore and purchase data. Data is published in the form of interoperable <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md">ERC721</a> data NFTs and <a href="https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md">ERC20</a> datatokens. The platform acts as a decentralized exchange (DEX) specifically designed for data transactions. Every action, including publishing, purchasing, and consuming data, is securely recorded on the blockchain, creating a tamper-proof audit trail.</summary>
+<summary><mark style="color:green;">Buy or Sell Data</mark><br><br>Users have the possibility to publish, purchase, and sell data within the Ocean ecosystem. Data is tokenized in the form of interoperable <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md">ERC721</a> data NFTs and <a href="https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md">ERC20</a> datatokens. The platform acts as a decentralized exchange (DEX) specifically designed for data transactions. Every action, including publishing, purchasing, and consuming data, is securely recorded on the blockchain, creating a tamper-proof audit trail.</summary>
 
 For data scientists and AI practitioners, Ocean presents opportunities such as increased access to a broader range of data, including private data, crypto-secured provenance for data and AI training, and potential income streams from selling and curating data.
 
