@@ -107,7 +107,7 @@ As with the color changes, it’s a good idea to save the file with each change 
 
 Let’s head to the publish page to see what it looks like with our new styling - so far, so good. But there is one major issue, the publish form is still telling people to publish datasets. On our new marketplace, we want people to publish and sell their photos, so we’re going to have to make some changes here.
 
-![Market Customisation](../../.gitbook/assets/market/market-customisation-14.png)
+![Market Customisation](../../.gitbook/assets/publish-page-before-edit.png)
 
 Open up the index.json file from `content/publish/index.json` - here we change the text to explain that this form is for publishing photos.
 
@@ -121,7 +121,7 @@ Open up `src/components/Publish/Metadata/index.tsx` and change line 33 so that i
 
 Great, now our publish page explains that users should be publishing photos and photo is provided as an asset type option. We’ll also leave algorithm as an option in case some data scientists want to do some analysis or image transformation on the photos.
 
-![Market Customisation](../../.gitbook/assets/market/market-customisation-19.png)
+![Market Customisation](<../../.gitbook/assets/publish-page-2 (1).png>)
 
 There is one more thing that is fun to change before we move away from the publish form. You’ll notice that Ocean Market V4 now has a cool SVG generation feature that creates the images for the Data NFT. It creates a series of pink waves. Let’s change this so that it uses our brand colors in the waves!
 
