@@ -18,7 +18,7 @@ In this guide, we will deploy Provider for two chains: Goerli (Ethereum test net
 
 ### Prerequisites
 
-* A server for hosting Ocean Marketplace. See [this guide](setup-server.md) for how to create a server;
+* A server for hosting Provider. See [this guide](setup-server.md) for how to create a server;
 * Docker Compose and Docker Engine are installed and configured on the server. See [this guide](setup-server.md#install-docker-engine-and-docker-compose) for how to install these products.
 * The RPC URLs and API keys for each of the networks to which the Provider will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
 * The private key which will be used by Provider to encrypt/decrypt URLs.
@@ -39,7 +39,7 @@ The steps to deploy the Provider using Docker Engine and Docker Compose are:
 
 #### 1. Create the /etc/docker/compose/provider/docker-compose.yml file
 
-From a terminal console, create /etc/docker/compose/provider/docker-compose.yml file, the copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation.&#x20;
+From a terminal console, create /etc/docker/compose/provider/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation.&#x20;
 
 ```yaml
 version: '3'
@@ -115,6 +115,8 @@ sudo systemctl enable docker-compose@provider.service
 
 #### 4. Start the Provider service
 
+To start the Provider service, run the following command:
+
 ```bash
 sudo systemctl start docker-compose@provider.service
 ```
@@ -170,7 +172,7 @@ CONTAINER ID   IMAGE                              COMMAND                  CREAT
 
 ```
 
-Then, check the logs from the Provider's docker container
+Then, check the logs from the Provider's docker container:
 
 ```bash
 $ docker logs --follow provider
@@ -205,25 +207,23 @@ In this example, we will run Provider as a Kubernetes deployment resource. We wi
 
 * A server for hosting Ocean Marketplace. See [this guide](setup-server.md) for how to create a server;
 * Kubernetes with Docker Engine is installed and configured on the server. See [this chapter](setup-server.md#install-kubernetes-with-docker-engine) for information on installing Kubernetes.
-* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See <mark style="background-color:red;">this guide</mark> for how to obtain the URL and the API key.
-* The private key which will be used by Provider to encrypt/decrypt URLs.
+* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
+* The private key that will be used by Provider to encrypt/decrypt URLs.
 * Aquarius is up and running
 
 ### Steps
 
 The steps to deploy the Provider in Kubernetes are:
 
-1\.
+[1. Create a YAML file for Provider configuration.](deploying-provider.md#1.-create-an-yaml-file-for-provider-configuration.)
 
-2\.
+[2. Deploy the configuration.](deploying-provider.md#2.-deploy-the-configuration)
 
-
-
-
+[3. Create a Kubernetes service.](deploying-provider.md#3.-create-a-kubernetes-service)
 
 
 
-1. Create an YAML file for Provider configuration.
+#### 1. Create a YAML file for Provider configuration.
 
 From a terminal window, create a YAML file (in our example the file is named provider-deploy.yaml) then copy and paste the following content. Check the comments in the file and replace the fields with the specific values of your implementation (RPC URLs, the private key etc.).&#x20;
 
@@ -300,11 +300,11 @@ spec:
       terminationGracePeriodSeconds: 30
 ```
 
-Tip: before deployment you can [validate](https://github.com/instrumenta/kubeval) the yaml file.
+Tip: before deployment, you can [validate](https://github.com/instrumenta/kubeval) the yaml file.
 
 
 
-2. Deploy the configuration
+#### 2. Deploy the configuration
 
 Deploy the configuration in Kubernetes using the following commands.
 
@@ -320,7 +320,7 @@ provider-865cb8cf9d-r9xm4   1/1     Running   0          67s
 
 
 
-3. Create a Kubernetes service
+#### 3. Create a Kubernetes service
 
-The next step is to create a Kubernetes service (eg. ClusterIP, NodePort, Loadbalancer, ExternalName) for this deployment, depending on environment specifications. Follow [this link](https://kubernetes.io/docs/concepts/services-networking/service/) for details on how to create a Kubernetes service.
+The next step is to create a Kubernetes service (eg. ClusterIP, NodePort, Loadbalancer, ExternalName) for this deployment, depending on the environment specifications. Follow [this link](https://kubernetes.io/docs/concepts/services-networking/service/) for details on how to create a Kubernetes service.
 
