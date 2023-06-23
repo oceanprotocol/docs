@@ -9,7 +9,7 @@ description: Architecture overview
 
 Here's the sequence diagram for starting a new compute job.
 
-<figure><img src="../../.gitbook/assets/C2D High Level Architecture.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/c2d/c2d_compute_job.png" alt=""><figcaption></figcaption></figure>
 
 The Consumer calls the Provider with `start(did, algorithm, additionalDIDs)`. It returns job id `XXXX`. The Provider oversees the rest of the work. At any point, the Consumer can query the Provider for the job status via `getJobDetails(XXXX)`.
 

@@ -6,7 +6,7 @@ description: Ocean Protocol Architecture Adventure!
 
 Embark on an exploration of the innovative realm of Ocean Protocol, where data flows seamlessly and AI achieves new heights. Dive into the intricately layered architecture that converges data and services, fostering a harmonious collaboration. Let us delve deep and uncover the profound design of Ocean Protocol.🐬
 
-<figure><img src="../.gitbook/assets/OP High Level Architecture.jpg" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/architecture/architecture_overview.png" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
 
 ### Layer 1: The Foundational Blockchain Layer
 
@@ -20,9 +20,9 @@ Above the smart contracts, you'll find essential [libraries](architecture.md#lib
 
 #### Libraries
 
-These libraries include [Ocean.js](broken-reference), a JavaScript library, and [Ocean.py](ocean.py/), a Python library. They serve as powerful tools for developers, enabling integration and interaction with the protocol.
+These libraries include [Ocean.js](ocean.js/), a JavaScript library, and [Ocean.py](ocean.py/), a Python library. They serve as powerful tools for developers, enabling integration and interaction with the protocol.
 
-1. [Ocean.js](broken-reference): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building dApps, and exploring data sets within a decentralized environment.&#x20;
+1. [Ocean.js](ocean.js/): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building dApps, and exploring data sets within a decentralized environment.&#x20;
 2. [Ocean.py](ocean.py/): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers and [data scientists](../data-science/) can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling you to harness the power of decentralized data.
 
 #### Middleware components

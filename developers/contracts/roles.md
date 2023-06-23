@@ -19,13 +19,7 @@ The NFT owner is the owner of the base-IP and is therefore at the highest level.
 
 ## Roles-NFT level
 
-```mermaid
-stateDiagram-v2
-    NFT_OWNER --> MANAGER
-    MANAGER --> METADATA_UPDATER
-    MANAGER --> ERC20_DEPLOYER
-    MANAGER --> STORE_UPDATER
-```
+<figure><img src="../../.gitbook/assets/contracts/roles_nft_level.png" alt=""><figcaption><p>Roles at the data NFT level</p></figcaption></figure>
 
 {% hint style="info" %}
 With the exception of the NFT owner role, all other roles can be assigned to multiple users.
@@ -264,11 +258,7 @@ function addMultipleUsersToRoles(address[] memory addresses, RolesType[] memory 
 
 ## Roles-datatokens level
 
-```mermaid
-stateDiagram-v2
-    ERC20_DEPLOYER --> MINTER
-    ERC20_DEPLOYER --> FEE_MANAGER
-```
+<figure><img src="../../.gitbook/assets/contracts/roles_datatokens_level.png" alt=""><figcaption><p>Roles at the datatokens level</p></figcaption></figure>
 
 ### Minter
 

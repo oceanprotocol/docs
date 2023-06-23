@@ -60,6 +60,8 @@ exchange_args = ExchangeArguments(
 
 Furthermore, Ocean Protocol recognizes that different data assets may have distinct pricing needs. That's why the platform supports multiple pricing schemas, allowing you to implement various pricing models for different datasets or use cases. This flexibility ensures that you can tailor the pricing strategy to each specific asset, maximizing its value and potential for monetization.
 
+<figure><img src="../../.gitbook/assets/contracts/pricing_schemas.png" alt=""><figcaption><p>Pricing Schemas</p></figcaption></figure>
+
 ### Fixed pricing
 
 With the fixed pricing model, you have the power to set a specific price for your data assets. This means that buyers interested in accessing your data will need to pay the designated amount of configured tokens. To make things even easier, Ocean automatically creates a special token called a "datatoken" behind the scenes.&#x20;

@@ -6,7 +6,7 @@ description: What is Ocean Protocol?
 
 Ocean Protocol is a **decentralized data exchange protocol** that empowers you to monetize and share your data with others on-chain. ⛓️ By leveraging **blockchain technology** and **smart contracts**, Ocean Protocol offers **open-source tools** to securely publish NFTs of your data and algorithms to seamlessly collaborate, trade, and innovate with others.
 
-<figure><img src="../.gitbook/assets/ocean-jelly-hyperrealistic.jpeg" alt="" width="375"><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/architecture/decentralized_exchanges_marketplaces.png" alt="" width="375"><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
 
 Get a glimpse into some of the things you can do with Ocean Protocol. The opportunities with our protocol to leverage an "Ocean of data" are great and ever-evolving. Together, we'll dive deeper and uncover even more ways to leverage the power of decentralized data.
 

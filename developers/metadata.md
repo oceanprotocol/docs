@@ -38,7 +38,7 @@ Decentralized identifiers (DIDs) are a type of identifier that enable verifiable
 
 An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under the control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
 
-An _asset_ has a DID and DDO. The DDO should include metadata about the asset, and define access in at least one [service](did-ddo.md#services). Only _owners_ or _delegated users_ can modify the DDO.
+An _asset_ has a DID and DDO. The DDO should include metadata about the asset, and define access in at least one [service](ddo-specification.md#services). Only _owners_ or _delegated users_ can modify the DDO.
 
 All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like [_Aquarius_](aquarius/) can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
 
@@ -48,7 +48,7 @@ The DDO is stored on-chain as part of the NFT contract and stored in encrypted f
 
 Here is the flow:
 
-<figure><img src="../.gitbook/assets/DDO Flow.jpg" alt=""><figcaption><p>DDO Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/architecture/publish_and_retrieve_ddos.png" alt=""><figcaption><p>DDO Flow</p></figcaption></figure>
 
 To set up the metadata for an asset, you'll need to call the [**setMetaData**](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L247) function at the contract level.&#x20;
 
