@@ -14,7 +14,7 @@ Here are some typical responses you might receive from the API:
 
 Example response:
 
-```
+```json
 {
   "nonce": 23
 }
@@ -96,7 +96,7 @@ Before calling the `/download` endpoint, you need to follow these steps:&#x20;
 3. Sign a message from the account that has purchased the datatoken.&#x20;
 4. Add the nonce and signature to the payload.
 
-```
+```javascript
 const axios = require('axios');
 
 async function downloadAsset(payload) {
@@ -157,7 +157,7 @@ The datatoken is transferred on the blockchain by requesting the user to sign an
 
 #### Javascript Example
 
-```
+```javascript
 const axios = require('axios');
 
 async function initializeServiceAccess(payload) {

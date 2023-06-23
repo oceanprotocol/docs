@@ -10,7 +10,7 @@
 
 Example response:
 
-```
+```python
 b'0x04b2bfab1f4e...7ed0573'
 ```
 
@@ -48,7 +48,8 @@ console.log(response)
 
 #### Javascript Example
 
-```
+{% code overflow="wrap" %}
+```javascript
 const axios = require('axios');
 
 async function decryptAsset(payload) {
@@ -87,11 +88,14 @@ let payload = {
 decryptAsset(payload);
 
 ```
+{% endcode %}
 
 
 
 Example response:
 
-```
+{% code overflow="wrap" %}
+```python
 b'{"@context": ["https://w3id.org/did/v1"], "id": "did:op:0c184915b07b44c888d468be85a9b28253e80070e5294b1aaed81c ...'
 ```
+{% endcode %}

@@ -98,7 +98,7 @@ print(json.dumps(result, indent=4, sort_keys=True))
 
 **Execute script**
 
-```
+```bash
 python list_dataNFTs.py
 ```
 {% endtab %}
@@ -128,6 +128,7 @@ Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL inte
 
 <summary>Sample response</summary>
 
+{% code overflow="wrap" %}
 ```json
 {
   "data": {
@@ -246,5 +247,6 @@ Copy the query to fetch a list of data NFTs in the Ocean Subgraph [GraphiQL inte
   }
 }
 ```
+{% endcode %}
 
 </details>

@@ -29,7 +29,7 @@ Parameters:
 * `method` - The HTTP method, required
 * `headers` - Additional HTTP headers, optional
 
-```
+```json
 {
     "type": "url",
     "url": "https://url.com/file1.csv",
@@ -52,7 +52,7 @@ Parameters:
 
 * `hash` - The file hash
 
-```
+```json
 {
 	"type": "ipfs",
 	"hash": "XXX"
@@ -71,7 +71,7 @@ Parameters:
 * `query` - The query to be executed, required
 * `headers` - Additional HTTP headers, optional
 
-```
+```json
 {
 	"type": "graphql",
 	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
@@ -99,7 +99,8 @@ Parameters:
 * `address` - The smartcontract address, required
 * `abi` - The function abi (NOT the entire contract abi), required
 
-```
+{% code overflow="wrap" %}
+```json
 {
 	"type": "smartcontract",
 	"chainId": 1,
@@ -113,6 +114,7 @@ Parameters:
 		}
 }
 ```
+{% endcode %}
 
 ## Arweave
 
@@ -122,7 +124,7 @@ Parameters:
 
 * `transactionId` - The transaction identifier
 
-```
+```json
 {
     {
     "type": "arweave",

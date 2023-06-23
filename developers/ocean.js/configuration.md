@@ -32,7 +32,7 @@ The below tabs show partially filled `.env` file content for some of the support
 {% tabs %}
 {% tab title="Mainnet" %}
 {% code title=".env" %}
-```
+```bash
 # Mandatory environment variables
 
 OCEAN_NETWORK=mainnet
@@ -49,7 +49,7 @@ PROVIDER_URL=https://v4.provider.oceanprotocol.com
 
 {% tab title="Polygon" %}
 {% code title=".env" %}
-```
+```bash
 # Mandatory environment variables
 
 OCEAN_NETWORK=polygon
@@ -66,7 +66,7 @@ PROVIDER_URL=https://v4.provider.oceanprotocol.com
 
 {% tab title="Local (using Barge)" %}
 {% code title=".env" %}
-```
+```bash
 # Mandatory environment variables
 OCEAN_NETWORK=development
 OCEAN_NETWORK_URL=http://172.15.0.3:8545/

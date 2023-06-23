@@ -96,26 +96,26 @@ You can start running the RBAC server by following these steps:
 
 1. Clone this repository:
 
-```Bash
+```bash
 git clone https://github.com/oceanprotocol/RBAC-Server.git
 cd RBAC-Server
 ```
 
 2. Install the dependencies:
 
-```Bash
+```bash
 npm install
 ```
 
 3. Build the service
 
-```Bash
+```bash
 npm run build
 ```
 
 4. Start the server
 
-```Bash
+```bash
 npm run start
 ```
 
@@ -126,13 +126,13 @@ When you are ready to deploy the RBAC server to
 1. Replace the KEYCLOAK\_URL in the Dockerfile with the correct URL for your hosting of [Keycloak](https://www.keycloak.org/).
 2. Run the following command to build the RBAC service in a Docker container:
 
-```Bash
+```bash
 npm run build:docker
 ```
 
 3. Next, run the following command to start running the RBAC service in the Docker container:
 
-```Bash
+```bash
 npm run start:docker
 ```
 

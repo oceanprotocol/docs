@@ -28,7 +28,7 @@ Installing the dependencies is a vital step for running the market. It’s a sup
 
 Enter the following command to install the dependencies:
 
-```
+```bash
 npm install
 ```
 
@@ -38,7 +38,7 @@ This command will take a few minutes to complete and you’ll see some warnings 
 
 At this point, you are ready to run your data marketplace for the first time. This is another straightforward step that requires just one command:
 
-```
+```bash
 npm start
 ```
 

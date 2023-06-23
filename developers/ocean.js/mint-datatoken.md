@@ -15,7 +15,7 @@ Create a new file in the same working directory where configuration file (`confi
 
 {% tabs %}
 {% tab title="mint_datatoken.js" %}
-{% code title="mint_datatoken.js" %}
+{% code title="mint_datatoken.js" overflow="wrap" %}
 ```javascript
 // Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require('./config.js');
@@ -78,7 +78,7 @@ createMINT()
 
 **Execute script**
 
-```
+```bash
 node mint_datatoken.js
 ```
 {% endtab %}

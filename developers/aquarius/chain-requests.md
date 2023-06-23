@@ -16,7 +16,7 @@ Here are some typical responses you might receive from the API:
 
 Example response:
 
-```
+```json
 {   "246": true, "3": true, "137": true,
     "2021000": true, "4": true, "1": true,
     "56": true, "80001": true, "1287": true
@@ -25,9 +25,11 @@ Example response:
 
 #### Curl Example
 
+{% code overflow="wrap" %}
 ```bash
 curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/list'
 ```
+{% endcode %}
 
 #### Javascript Example
 
@@ -54,15 +56,17 @@ Here are some typical responses you might receive from the API:
 
 Example response:
 
-```
+```json
 {"last_block": 25198729}
 ```
 
 #### Curl Example
 
+{% code overflow="wrap" %}
 ```bash
 curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/status/137'
 ```
+{% endcode %}
 
 #### Javascript Example
 

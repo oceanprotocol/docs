@@ -23,9 +23,11 @@ When creating an algorithm asset in Ocean Protocol, the additional `algorithm` o
 
 <summary>Environment Object Example</summary>
 
+{% code overflow="wrap" %}
 ```json
 { "algorithm": { "container": { "entrypoint": "node $ALGO", "image": "node", "tag": "latest" } } } 
 ```
+{% endcode %}
 
 </details>
 
@@ -257,6 +259,7 @@ The `container` object has the following attributes defining the Docker image fo
 
 <summary>Algorithm Metadata Example</summary>
 
+{% code overflow="wrap" %}
 ```json
 { 
   "metadata": { 
@@ -279,5 +282,6 @@ The `container` object has the following attributes defining the Docker image fo
   } 
 } 
 ```
+{% endcode %}
 
 </details>

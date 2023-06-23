@@ -145,7 +145,7 @@ First we are going to create a new file called .env in the root of your reposito
 
 Copy and paste the following into the file:
 
-```
+```bash
 
 NEXT_PUBLIC_MARKET_FEE_ADDRESS="0x123abc"
 NEXT_PUBLIC_PUBLISHER_MARKET_ORDER_FEE="0.01"

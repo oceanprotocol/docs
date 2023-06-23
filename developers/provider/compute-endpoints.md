@@ -40,6 +40,7 @@ Start a new job
 
 Parameters
 
+{% code overflow="wrap" %}
 ```
     signature: String object containg user signature (signed message) (required)
     consumerAddress: String object containing consumer's ethereum address (required)
@@ -62,12 +63,13 @@ Parameters
 
     One of `algorithm.documentId` or `algorithm.meta` is required, `algorithm.meta` takes precedence
 ```
+{% endcode %}
 
 Returns: Array of `status` objects as described above, in this case the array will have only one object
 
 Example:
 
-```
+```json
 POST /api/compute
 payload:
 {
@@ -104,6 +106,7 @@ Get all jobs and corresponding stats
 
 Parameters
 
+{% code overflow="wrap" %}
 ```
     signature: String object containg user signature (signed message)
     documentId: String object containing document did  (optional)
@@ -112,6 +115,7 @@ Parameters
 
     At least one parameter from documentId, jobId and owner is required (can be any of them)
 ```
+{% endcode %}
 
 Returns
 
@@ -178,9 +182,11 @@ Returns: Bytes string containing the compute result.
 
 Example:
 
+{% code overflow="wrap" %}
 ```
 GET /api/services/computeResult?index=0&consumerAddress=0xA78deb2Fa79463945C247991075E2a0e98Ba7A09&jobId=4d32947065bb46c8b87c1f7adfb7ed8b&nonce=1644317370
 ```
+{% endcode %}
 
 Response:
 
@@ -196,6 +202,7 @@ Stop a running compute job.
 
 Parameters
 
+{% code overflow="wrap" %}
 ```
     signature: String object containg user signature (signed message)
     documentId: String object containing document did (optional)
@@ -204,6 +211,7 @@ Parameters
 
     At least one parameter from documentId,jobId and owner is required (can be any of them)
 ```
+{% endcode %}
 
 Returns
 
@@ -275,15 +283,18 @@ Allows download of asset data file.
 
 Parameters
 
+{% code overflow="wrap" %}
 ```
+chainID: Int object representing the chain ID that the Provider is connected to (mandatory)
 ```
+{% endcode %}
 
 Returns: List of compute environments.
 
 Example:
 
 ```
-GET /api/services/computeEnvironments
+GET /api/services/computeEnvironments?chainId=8996
 ```
 
 Response:

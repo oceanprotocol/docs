@@ -19,17 +19,21 @@ Please note that if a signature parameter exists, it will take precedence over t
 
 **Curl Example:**
 
+{% code overflow="wrap" %}
 ```
 GET /api/services/createAuthToken?address=<your_address>&&nonce=<your_nonce>&&expiration=<expiration>&signature=<your_signature>
 ```
+{% endcode %}
 
 Inside the angular brackets, the user should provide the valid values for the request.
 
 Response:
 
+{% code overflow="wrap" %}
 ```
 {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjAwNTMxMjksImFkZHJlc3MiOiIweEE3OGRlYjJGYTc5NDYzOTQ1QzI0Nzk5MTA3NUUyYTBlOThCYTdBMDkifQ.QaRqYeSYxZpnFayzPmUkj8TORHHJ_vRY-GL88ZBFM0o"}
 ```
+{% endcode %}
 
 #### Javascript Example:
 
@@ -68,7 +72,8 @@ Returns: Success message if token is successfully deleted. If the token is not f
 
 #### Javascript Example:
 
-```
+{% code overflow="wrap" %}
+```javascript
 const axios = require('axios');
 
 // Define the address, token, and signature
@@ -98,6 +103,7 @@ axios.delete(deleteAuthTokenURL, {
 });
 
 ```
+{% endcode %}
 
 Replace `<provider_url>`, `<your_address>`, `<your_token>`, and `<your_signature>` with actual values. This script sends a DELETE request to the `deleteAuthToken` endpoint and logs the response. Please ensure that `axios` is installed in your environment (`npm install axios`).
 

@@ -31,7 +31,7 @@ The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in 
 
 Create a new file in the same working directory where configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
 
-<pre class="language-javascript"><code class="lang-javascript">// Note: Make sure .env file and config.js are created and setup correctly
+<pre class="language-javascript" data-overflow="wrap"><code class="lang-javascript">// Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require('./config.js');
 const { ZERO_ADDRESS, NftFactory, getHash, Nft } = require ('@oceanprotocol/lib');
 

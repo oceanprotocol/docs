@@ -41,6 +41,7 @@ The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in 
 
 Create a new file in the same working directory where configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
 
+{% code overflow="wrap" %}
 ```javascript
 // Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require('./config.js');
@@ -85,4 +86,5 @@ updateAssetState(did).then(() => {
   process.exit(1);
 });
 ```
+{% endcode %}
 

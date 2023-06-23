@@ -32,7 +32,7 @@ The `createFRE()` performs the following:
 
 {% tabs %}
 {% tab title="create_datatoken_with_fre.js" %}
-{% code title="create_datatoken_with_fre.js" %}
+{% code title="create_datatoken_with_fre.js" overflow="wrap" %}
 ```javascript
 // Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require('./config.js');
@@ -109,13 +109,13 @@ createFRE()
 
 Execute script
 
-```
+```bash
 node create_datatoken_with_fre.js
 ```
 {% endtab %}
 
 {% tab title="create_datatoken_with_free.js" %}
-{% code title="create_datatoken_with_free.js" %}
+{% code title="create_datatoken_with_free.js" overflow="wrap" %}
 ```javascript
 // Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require('./config.js');

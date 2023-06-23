@@ -15,7 +15,7 @@ Here are some typical responses you might receive from the API:
 
 Example response:
 
-```
+```json
 {
     "plugin": "elasticsearch",
     "software": "Aquarius",

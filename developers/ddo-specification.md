@@ -9,8 +9,6 @@ description: >-
 
 # DDO Specification
 
-
-
 ```mermaid
 erDiagram
 DDO
@@ -32,18 +30,17 @@ Services ||--|{ ConsumerParameters : contains
  
 ```
 
-
-
 ### Required Attributes
 
 A DDO in Ocean has these required attributes:
 
-<table><thead><tr><th width="203.33333333333331">Attribute</th><th width="226">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>@context</code></strong></td><td>Array of <code>string</code></td><td>Contexts used for validation.</td></tr><tr><td><strong><code>id</code></strong></td><td><code>string</code></td><td>Computed as <code>sha256(address of ERC721 contract + chainId)</code>.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version information in <a href="https://semver.org">SemVer</a> notation referring to this DDO spec version, like <code>4.1.0</code>.</td></tr><tr><td><strong><code>chainId</code></strong></td><td><code>number</code></td><td>Stores chainId of the network the DDO was published to.</td></tr><tr><td><strong><code>nftAddress</code></strong></td><td><code>string</code></td><td>NFT contract linked to this asset</td></tr><tr><td><strong><code>metadata</code></strong></td><td><a href="#metadata">Metadata</a></td><td>Stores an object describing the asset.</td></tr><tr><td><strong><code>services</code></strong></td><td><a href="#services">Services</a></td><td>Stores an array of services defining access to the asset.</td></tr><tr><td><strong><code>credentials</code></strong></td><td><a href="#credentials">Credentials</a></td><td>Describes the credentials needed to access a dataset in addition to the <code>services</code> definition.</td></tr></tbody></table>
+<table><thead><tr><th width="203.33333333333331">Attribute</th><th width="226">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>@context</code></strong></td><td>Array of <code>string</code></td><td>Contexts used for validation.</td></tr><tr><td><strong><code>id</code></strong></td><td><code>string</code></td><td>Computed as <code>sha256(address of ERC721 contract + chainId)</code>.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version information in <a href="https://semver.org">SemVer</a> notation referring to this DDO spec version, like <code>4.1.0</code>.</td></tr><tr><td><strong><code>chainId</code></strong></td><td><code>number</code></td><td>Stores chainId of the network the DDO was published to.</td></tr><tr><td><strong><code>nftAddress</code></strong></td><td><code>string</code></td><td>NFT contract linked to this asset</td></tr><tr><td><strong><code>metadata</code></strong></td><td><a href="ddo-specification.md#metadata">Metadata</a></td><td>Stores an object describing the asset.</td></tr><tr><td><strong><code>services</code></strong></td><td><a href="ddo-specification.md#services">Services</a></td><td>Stores an array of services defining access to the asset.</td></tr><tr><td><strong><code>credentials</code></strong></td><td><a href="ddo-specification.md#credentials">Credentials</a></td><td>Describes the credentials needed to access a dataset in addition to the <code>services</code> definition.</td></tr></tbody></table>
 
 <details>
 
 <summary>Full Enhanced DDO Example</summary>
 
+{% code overflow="wrap" %}
 ```json
 {
   "@context": ["https://w3id.org/did/v1"],
@@ -174,6 +171,7 @@ A DDO in Ocean has these required attributes:
   }
 }
 ```
+{% endcode %}
 
 </details>
 
@@ -181,7 +179,7 @@ A DDO in Ocean has these required attributes:
 
 This object holds information describing the actual asset.
 
-<table><thead><tr><th width="208.33333333333331">Attribute</th><th width="252">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>created</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. <code>2000-10-31T01:30:00Z</code>.</td></tr><tr><td><strong><code>updated</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. <code>2000-10-31T01:30:00Z</code>.</td></tr><tr><td><strong><code>description</code></strong>*</td><td><code>string</code></td><td>Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.</td></tr><tr><td><strong><code>copyrightHolder</code></strong></td><td><code>string</code></td><td>The party holding the legal copyright. Empty by default.</td></tr><tr><td><strong><code>name</code></strong>*</td><td><code>string</code></td><td>Descriptive name or title of the asset.</td></tr><tr><td><strong><code>type</code></strong>*</td><td><code>string</code></td><td>Asset type. Includes <code>"dataset"</code> (e.g. csv file), <code>"algorithm"</code> (e.g. Python script). Each type needs a different subset of metadata attributes.</td></tr><tr><td><strong><code>author</code></strong>*</td><td><code>string</code></td><td>Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).</td></tr><tr><td><strong><code>license</code></strong>*</td><td><code>string</code></td><td>Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified".</td></tr><tr><td><strong><code>links</code></strong></td><td>Array of <code>string</code></td><td>Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.</td></tr><tr><td><strong><code>contentLanguage</code></strong></td><td><code>string</code></td><td>The language of the content. Use one of the language codes from the <a href="https://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a></td></tr><tr><td><strong><code>tags</code></strong></td><td>Array of <code>string</code></td><td>Array of keywords or tags used to describe this content. Empty by default.</td></tr><tr><td><strong><code>categories</code></strong></td><td>Array of <code>string</code></td><td>Array of categories associated to the asset. Note: recommended to use <code>tags</code> instead of this.</td></tr><tr><td><strong><code>additionalInformation</code></strong></td><td>Object</td><td>Stores additional information, this is customizable by publisher</td></tr><tr><td><strong><code>algorithm</code></strong>**</td><td><a href="compute-to-data/compute-to-data-algorithms.md#algorithm-metadata">Algorithm Metadata</a></td><td>Information about asset of <code>type</code> <code>algorithm</code></td></tr></tbody></table>
+<table><thead><tr><th width="262.3333333333333">Attribute</th><th width="252">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>created</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of the creation of the dataset content in ISO 8601 format preferably with timezone designators, e.g. <code>2000-10-31T01:30:00Z</code>.</td></tr><tr><td><strong><code>updated</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of last update of the dataset content in ISO 8601 format preferably with timezone designators, e.g. <code>2000-10-31T01:30:00Z</code>.</td></tr><tr><td><strong><code>description</code></strong>*</td><td><code>string</code></td><td>Details of what the resource is. For a dataset, this attribute explains what the data represents and what it can be used for.</td></tr><tr><td><strong><code>copyrightHolder</code></strong></td><td><code>string</code></td><td>The party holding the legal copyright. Empty by default.</td></tr><tr><td><strong><code>name</code></strong>*</td><td><code>string</code></td><td>Descriptive name or title of the asset.</td></tr><tr><td><strong><code>type</code></strong>*</td><td><code>string</code></td><td>Asset type. Includes <code>"dataset"</code> (e.g. csv file), <code>"algorithm"</code> (e.g. Python script). Each type needs a different subset of metadata attributes.</td></tr><tr><td><strong><code>author</code></strong>*</td><td><code>string</code></td><td>Name of the entity generating this data (e.g. Tfl, Disney Corp, etc.).</td></tr><tr><td><strong><code>license</code></strong>*</td><td><code>string</code></td><td>Short name referencing the license of the asset (e.g. Public Domain, CC-0, CC-BY, No License Specified, etc. ). If it's not specified, the following value will be added: "No License Specified".</td></tr><tr><td><strong><code>links</code></strong></td><td>Array of <code>string</code></td><td>Mapping of URL strings for data samples, or links to find out more information. Links may be to either a URL or another asset.</td></tr><tr><td><strong><code>contentLanguage</code></strong></td><td><code>string</code></td><td>The language of the content. Use one of the language codes from the <a href="https://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a></td></tr><tr><td><strong><code>tags</code></strong></td><td>Array of <code>string</code></td><td>Array of keywords or tags used to describe this content. Empty by default.</td></tr><tr><td><strong><code>categories</code></strong></td><td>Array of <code>string</code></td><td>Array of categories associated to the asset. Note: recommended to use <code>tags</code> instead of this.</td></tr><tr><td><strong><code>additionalInformation</code></strong></td><td>Object</td><td>Stores additional information, this is customizable by publisher</td></tr><tr><td><strong><code>algorithm</code></strong>**</td><td><a href="did-ddo.md#algorithm-metadata">Algorithm Metadata</a></td><td>Information about asset of <code>type</code> <code>algorithm</code></td></tr></tbody></table>
 
 \* Required
 
@@ -213,7 +211,7 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible, and can have as many services which make sense for a specific use case.
 
-<table><thead><tr><th width="229.33333333333331">Attribute</th><th width="211">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>id</code></strong>*</td><td><code>string</code></td><td>Unique ID</td></tr><tr><td><strong><code>type</code></strong>*</td><td><code>string</code></td><td>Type of service <code>access</code>, <code>compute</code>, <code>wss</code> etc.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Service friendly name</td></tr><tr><td><strong><code>description</code></strong></td><td><code>string</code></td><td>Service description</td></tr><tr><td><strong><code>datatokenAddress</code></strong>*</td><td><code>string</code></td><td>Datatoken</td></tr><tr><td><strong><code>serviceEndpoint</code></strong>*</td><td><code>string</code></td><td>Provider URL (schema + host)</td></tr><tr><td><strong><code>files</code></strong>*</td><td><a href="#files">Files</a></td><td>Encrypted file.</td></tr><tr><td><strong><code>timeout</code></strong>*</td><td><code>number</code></td><td>Describing how long the service can be used after consumption is initiated. A timeout of <code>0</code> represents no time limit. Expressed in seconds.</td></tr><tr><td><strong><code>compute</code></strong>**</td><td><a href="compute-to-data/compute-options.md">Compute</a></td><td>If service is of <code>type</code> <code>compute</code>, holds information about the compute-related privacy settings &#x26; resources.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="compute-to-data/compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object the defines required consumer input before consuming the asset</td></tr><tr><td><strong><code>additionalInformation</code></strong></td><td>Object</td><td>Stores additional information, this is customizable by publisher</td></tr></tbody></table>
+<table><thead><tr><th width="264.3333333333333">Attribute</th><th width="211">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>id</code></strong>*</td><td><code>string</code></td><td>Unique ID</td></tr><tr><td><strong><code>type</code></strong>*</td><td><code>string</code></td><td>Type of service <code>access</code>, <code>compute</code>, <code>wss</code> etc.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Service friendly name</td></tr><tr><td><strong><code>description</code></strong></td><td><code>string</code></td><td>Service description</td></tr><tr><td><strong><code>datatokenAddress</code></strong>*</td><td><code>string</code></td><td>Datatoken</td></tr><tr><td><strong><code>serviceEndpoint</code></strong>*</td><td><code>string</code></td><td>Provider URL (schema + host)</td></tr><tr><td><strong><code>files</code></strong>*</td><td><a href="did-ddo.md#files">Files</a></td><td>Encrypted file.</td></tr><tr><td><strong><code>timeout</code></strong>*</td><td><code>number</code></td><td>Describing how long the service can be used after consumption is initiated. A timeout of <code>0</code> represents no time limit. Expressed in seconds.</td></tr><tr><td><strong><code>compute</code></strong>**</td><td><a href="developers/compute-to-data/compute-options.md">Compute</a></td><td>If service is of <code>type</code> <code>compute</code>, holds information about the compute-related privacy settings &#x26; resources.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="developers/compute-to-data/compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object the defines required consumer input before consuming the asset</td></tr><tr><td><strong><code>additionalInformation</code></strong></td><td>Object</td><td>Stores additional information, this is customizable by publisher</td></tr></tbody></table>
 
 \* Required
 
@@ -227,11 +225,13 @@ The `files` field is returned as a `string` which holds the encrypted file URLs.
 
 <summary>Files Example</summary>
 
+{% code overflow="wrap" %}
 ```json
 {
   "files": "0x044736da6dae39889ff570c34540f24e5e084f4e5bd81eff3691b729c2dd1465ae8292fc721e9d4b1f10f56ce12036c9d149a4dab454b0795bd3ef8b7722c6001e0becdad5caeb2005859642284ef6a546c7ed76f8b350480691f0f6c6dfdda6c1e4d50ee90e83ce3cb3ca0a1a5a2544e10daa6637893f4276bb8d7301eb35306ece50f61ca34dcab550b48181ec81673953d4eaa4b5f19a45c0e9db4cd9729696f16dd05e0edb460623c843a263291ebe757c1eb3435bb529cc19023e0f49db66ef781ca692655992ea2ca7351ac2882bf340c9d9cb523b0cbcd483731dc03f6251597856afa9a68a1e0da698cfc8e81824a69d92b108023666ee35de4a229ad7e1cfa9be9946db2d909735"
 }
 ```
+{% endcode %}
 
 </details>
 
@@ -326,13 +326,13 @@ Each asset has a state, which is held by the NFT contract. The possible states a
 
 The following fields are added by _Aquarius_ in its DDO response for convenience reasons, where an asset returned by _Aquarius_ inherits the DDO fields stored on-chain.
 
-These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](#ddo-checksum).
+These additional fields are never stored on-chain, and are never taken into consideration when [hashing the DDO](ddo-specification.md#ddo-checksum).
 
 #### NFT
 
 The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
-<table><thead><tr><th width="168">Attribute</th><th width="174.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>address</code></strong></td><td><code>string</code></td><td>Contract address of the deployed ERC721 NFT contract.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Name of NFT set in contract.</td></tr><tr><td><strong><code>symbol</code></strong></td><td><code>string</code></td><td>Symbol of NFT set in contract.</td></tr><tr><td><strong><code>owner</code></strong></td><td><code>string</code></td><td>ETH account address of the NFT owner.</td></tr><tr><td><strong><code>state</code></strong></td><td><code>number</code></td><td>State of the asset reflecting the NFT contract value. See <a href="#state">State</a></td></tr><tr><td><strong><code>created</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of NFT creation.</td></tr><tr><td><strong><code>tokenURI</code></strong></td><td><code>string</code></td><td>tokenURI</td></tr></tbody></table>
+<table><thead><tr><th width="168">Attribute</th><th width="174.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>address</code></strong></td><td><code>string</code></td><td>Contract address of the deployed ERC721 NFT contract.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Name of NFT set in contract.</td></tr><tr><td><strong><code>symbol</code></strong></td><td><code>string</code></td><td>Symbol of NFT set in contract.</td></tr><tr><td><strong><code>owner</code></strong></td><td><code>string</code></td><td>ETH account address of the NFT owner.</td></tr><tr><td><strong><code>state</code></strong></td><td><code>number</code></td><td>State of the asset reflecting the NFT contract value. See <a href="ddo-specification.md#state">State</a></td></tr><tr><td><strong><code>created</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of NFT creation.</td></tr><tr><td><strong><code>tokenURI</code></strong></td><td><code>string</code></td><td>tokenURI</td></tr></tbody></table>
 
 <details>
 
@@ -355,7 +355,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 
 #### Datatokens
 
-The `datatokens` array contains information about the ERC20 datatokens attached to [asset services](#services).
+The `datatokens` array contains information about the ERC20 datatokens attached to [asset services](ddo-specification.md#services).
 
 <table><thead><tr><th width="170">Attribute</th><th width="169.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>address</code></strong></td><td><code>string</code></td><td>Contract address of the deployed ERC20 contract.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Name of NFT set in contract.</td></tr><tr><td><strong><code>symbol</code></strong></td><td><code>string</code></td><td>Symbol of NFT set in contract.</td></tr><tr><td><strong><code>serviceId</code></strong></td><td><code>string</code></td><td>ID of the service the datatoken is attached to.</td></tr></tbody></table>
 
@@ -392,6 +392,7 @@ The `event` section contains information about the last transaction that created
 
 <summary>Event Example</summary>
 
+{% code overflow="wrap" %}
 ```json
 {
   "event": {
@@ -403,6 +404,7 @@ The `event` section contains information about the last transaction that created
   }
 }
 ```
+{% endcode %}
 
 </details>
 
@@ -416,7 +418,15 @@ Contains information about an asset's purgatory status defined in [`list-purgato
 
 <summary>Purgatory Example</summary>
 
-\`\`\`json { "purgatory": { "state": true, "reason": "Copyright violation" } } \`\`\`
+```json
+{ 
+    "purgatory": {
+      "state": true,
+      "reason": "Copyright violation" 
+      } 
+
+}
+```
 
 ```json
 {
@@ -450,7 +460,7 @@ The `stats` section contains different statistics fields.
 
 ### Compute to data
 
-For algorithms and datasets that are used for compute to data, there are additional fields and objects within the DDO structure that you need to consider. These include:&#x20;
+For algorithms and datasets that are used for compute to data, there are additional fields and objects within the DDO structure that you need to consider. These include:
 
 * `compute` attributes.
 * `publisherTrustedAlgorithms`

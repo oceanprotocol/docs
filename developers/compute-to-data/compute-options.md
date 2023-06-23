@@ -1,41 +1,34 @@
 ---
 title: Compute Options
 section: developers
-description: >-
-  Specification of compute options for assets in Ocean Protocol.
+description: Specification of compute options for assets in Ocean Protocol.
 ---
 
-## Compute Options
+# Compute Options
 
+### Compute Options
 
 An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
 
-| Attribute | Type | Description |
-| -------- | -------- | -------- |
-| **`allowRawAlgorithm`*** | `boolean` | If `true`, any passed raw text will be allowed to run. Useful for an algorithm drag & drop use case, but increases risk of data escape through malicious user input. Should be `false` by default in all implementations. |
-| **`allowNetworkAccess`*** | `boolean` | If `true`, the algorithm job will have network access. |
-| **`publisherTrustedAlgorithmPublishers`*** | Array of `string` | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.                                              |
-| **`publisherTrustedAlgorithms`***          | Array of `publisherTrustedAlgorithms` | If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).                                       |
+<table><thead><tr><th width="404.3333333333333">Attribute</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>allowRawAlgorithm</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag &#x26; drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td></tr><tr><td><strong><code>allowNetworkAccess</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, the algorithm job will have network access.</td></tr><tr><td><strong><code>publisherTrustedAlgorithmPublishers</code></strong>*</td><td>Array of <code>string</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.</td></tr><tr><td><strong><code>publisherTrustedAlgorithms</code></strong>*</td><td>Array of <code>publisherTrustedAlgorithms</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td></tr></tbody></table>
 
 \* Required
 
-## Trusted Algorithms
+### Trusted Algorithms
 
 The `publisherTrustedAlgorithms` is an array of objects with the following structure:
 
-| Attribute                      | Type     | Description                                                 |
-| ------------------------------ | -------- | ----------------------------------------------------------- |
-| **`did`**                      | `string` | The DID of the algorithm which is trusted by the publisher. |
-| **`filesChecksum`**            | `string` | Hash of algorithm's files (as `string`).                    |
-| **`containerSectionChecksum`** | `string` | Hash of algorithm's image details (as `string`).            |
+<table><thead><tr><th width="289.3333333333333">Attribute</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>did</code></strong></td><td><code>string</code></td><td>The DID of the algorithm which is trusted by the publisher.</td></tr><tr><td><strong><code>filesChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's files (as <code>string</code>).</td></tr><tr><td><strong><code>containerSectionChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's image details (as <code>string</code>).</td></tr></tbody></table>
 
 To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
 
 To produce `containerSectionChecksum`:
 
+{% code overflow="wrap" %}
 ```js
 sha256(algorithm_ddo.metadata.algorithm.container.entrypoint + algorithm_ddo.metadata.algorithm.container.checksum);
 ```
+{% endcode %}
 
 <details>
 
@@ -89,7 +82,7 @@ Example:
 
 </details>
 
-## Consumer Parameters
+### Consumer Parameters
 
 Sometimes, the asset needs additional input data before downloading or running a Compute-to-Data job. Examples:
 
@@ -98,15 +91,15 @@ Sometimes, the asset needs additional input data before downloading or running a
 
 The `consumerParameters` is an array of objects. Each object defines a field and has the following structure:
 
-| Attribute         | Type                             | Description                                                                |
-| ----------------- | -------------------------------- | -------------------------------------------------------------------------- |
-| **`name`***        | `string`                         | The parameter name (this is sent as HTTP param or key towards algo)        |
-| **`type`***        | `string`                         | The field type (text, number, boolean, select)                             |
-| **`label`***       | `string`                         | The field label which is displayed                                         |
-| **`required`***    | `boolean`                        | If customer input for this field is mandatory.                             |
-| **`description`*** | `string`                         | The field description.                                                     |
-| **`default`***     | `string`, `number`, or `boolean` | The field default value. For select types, `string` key of default option. |
-| **`options`**     | Array of `option`                 | For select types, a list of options.                                       |
+| Attribute           | Type                             | Description                                                                |
+| ------------------- | -------------------------------- | -------------------------------------------------------------------------- |
+| **`name`**\*        | `string`                         | The parameter name (this is sent as HTTP param or key towards algo)        |
+| **`type`**\*        | `string`                         | The field type (text, number, boolean, select)                             |
+| **`label`**\*       | `string`                         | The field label which is displayed                                         |
+| **`required`**\*    | `boolean`                        | If customer input for this field is mandatory.                             |
+| **`description`**\* | `string`                         | The field description.                                                     |
+| **`default`**\*     | `string`, `number`, or `boolean` | The field default value. For select types, `string` key of default option. |
+| **`options`**       | Array of `option`                | For select types, a list of options.                                       |
 
 \* Required
 
@@ -168,12 +161,7 @@ Algorithms will have access to a JSON file located at `/data/inputs/algoCustomDa
 <details>
 
 <summary>Key Value Example</summary>
-```json
-{
-  "hometown": "São Paulo",
-  "age": 10,
-  "developer": true,
-  "languagePreference": "nodejs"
-}
-```
+
+\`\`\`json { "hometown": "São Paulo", "age": 10, "developer": true, "languagePreference": "nodejs" } \`\`\`
+
 </details>

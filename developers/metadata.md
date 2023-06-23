@@ -50,7 +50,7 @@ Here is the flow:
 
 <figure><img src="../.gitbook/assets/architecture/publish_and_retrieve_ddos.png" alt=""><figcaption><p>DDO Flow</p></figcaption></figure>
 
-To set up the metadata for an asset, you'll need to call the [**setMetaData**](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L247) function at the contract level.&#x20;
+To set up the metadata for an asset, you'll need to call the [**setMetaData**](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L247) function at the contract level.
 
 * [**\_metaDataState**](ddo-specification.md#state) - Each asset has a state, which is held by the NFT contract. One of the following: active (0), end-of-life (1), deprecated (2), revoked (3), ordering temporarily disabled (4), and asset unlisted (5).
 * **\_metaDataDecryptorUrl** - You create the DDO and then the Provider encrypts it with its private key. Only that Provider can decrypt it.
@@ -60,6 +60,7 @@ To set up the metadata for an asset, you'll need to call the [**setMetaData**](h
 * **\_metaDataHash** - Hash of the clear data **generated before the encryption.** It is used by Provider to check the validity of the data after decryption.
 * **\_metadataProofs** - Array with signatures of entities who validated data (before the encryption). Pass an empty array if you don't have any.
 
+{% code overflow="wrap" %}
 ```solidity
 function setMetadata(uint8 _metaDataState, string calldata _metaDataDecryptorUrl
   , string calldata _metaDataDecryptorAddress, bytes calldata flags, 
@@ -72,6 +73,7 @@ function setMetadata(uint8 _metaDataState, string calldata _metaDataDecryptorUrl
   data,_metaDataHash, _metadataProofs);
 }
 ```
+{% endcode %}
 
 {% hint style="info" %}
 While we utilize a specific DDO structure, you have the flexibility to customize it according to your unique requirements. However, to enable seamless processing, it is essential to have your own Aquarius instance that can handle your modified DDO.

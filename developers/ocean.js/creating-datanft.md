@@ -17,7 +17,7 @@ First, create a new file in the working directory, alongside the `config.js` and
 
 {% tabs %}
 {% tab title="create_dataNFT.js" %}
-{% code title="create_dataNFT.js" %}
+{% code title="create_dataNFT.js" overflow="wrap" %}
 ```javascript
 // Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require('./config.js');

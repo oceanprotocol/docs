@@ -11,7 +11,7 @@ All that’s left is for you to host your data marketplace and start sharing it 
 
 To host your data marketplace, you need to run the build command:
 
-```
+```bash
 npm run build:static
 ```
 
@@ -19,17 +19,17 @@ This takes a few minutes to run. While this is running, you can get prepared to 
 
 Open up a new terminal window and run the following command to install surge:
 
-```
+```bash
 npm install --global surge
 ```
 
 When this is complete, navigate back to the terminal window that is building your finished data marketplace. Once the build is completed, enter the following commands to enter the public directory and host it:
 
-```
+```bash
 cd out
 ```
 
-```
+```bash
 surge
 ```
 

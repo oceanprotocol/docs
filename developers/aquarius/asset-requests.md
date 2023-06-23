@@ -19,9 +19,11 @@ Here are some typical responses you might receive from the API:
 
 #### Curl Example
 
-```
+{% code overflow="wrap" %}
+```bash
 curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6'
 ```
+{% endcode %}
 
 #### Javascript Example
 
@@ -55,9 +57,11 @@ Here are some typical responses you might receive from the API:
 
 #### Curl Example
 
+{% code overflow="wrap" %}
 ```bash
 curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/metadata/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6'
 ```
+{% endcode %}
 
 #### Javascript Example
 
@@ -130,6 +134,7 @@ Here are some typical responses you might receive from the API:
 
 #### Curl Example
 
+{% code overflow="wrap" %}
 ```bash
 curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query' \
 --header 'Content-Type: application/json' \
@@ -139,6 +144,7 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
     }
 }'
 ```
+{% endcode %}
 
 #### Javascript Example
 
@@ -173,11 +179,13 @@ Here are some typical responses you might receive from the API:
 
 #### Curl Example
 
+{% code overflow="wrap" %}
 ```bash
 curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/query/api/v1/aquarius/assets/ddo/validate' \
 --header 'Content-Type: application/json' \
 --data-raw '<json_body>'
 ```
+{% endcode %}
 
 #### Javascript Example
 
@@ -245,11 +253,13 @@ Here are some typical responses you might receive from the API:
 
 #### Curl Example
 
+{% code overflow="wrap" %}
 ```bash
 curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/triggerCaching' \
 --header 'Content-Type: application/json' \
 --data-raw '<json_body>'
 ```
+{% endcode %}
 
 #### Javascript Example
 

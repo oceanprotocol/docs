@@ -79,38 +79,36 @@ import requests
 import json
 
 query = """
-{{
-	tokens(skip:0, first: 2, subgraphError: deny){{
+{
+  tokens(skip:0, first:2, subgraphError:deny) {
     id
     symbol
-    nft {{
+    nft {
       name
       symbol
       address
-    }}
+    }
     name
     symbol
     cap
     isDatatoken
     holderCount
     orderCount
-    orders(skip:0,first:1){{
+    orders(skip:0, first:1) {
       amount
       serviceIndex
-      payer {{
+      payer {
         id
-      }}
-      consumer{{
+      }
+      consumer {
         id
-      }}
+      }
       estimatedUSDValue
       lastPriceToken
       lastPriceValue
-    }}
-
-    
-  }}
-}}"""
+    }
+  }
+}"""
 
 base_url = "https://v4.subgraph.mainnet.oceanprotocol.com"
 route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
@@ -128,7 +126,7 @@ print(json.dumps(result, indent=4, sort_keys=True))
 
 **Execute script**
 
-```
+```bash
 python list_all_tokens.py
 ```
 {% endtab %}
@@ -175,39 +173,37 @@ Copy the query to fetch a list of datatokens in the Ocean Subgraph [GraphiQL int
 
 <summary>Sample Response</summary>
 
+{% code overflow="wrap" %}
 ```json
 {
-  "data": {
-    "tokens": [
-      {
-        "cap": null,
-        "holderCount": "0",
-        "id": "0x0642026e7f0b6ccac5925b4e7fa61384250e1701",
-        "isDatatoken": false,
-        "name": "H2O",
-        "nft": null,
-        "orderCount": "0",
-        "orders": [],
-        "symbol": "H2O"
-      },
-      {
-        "cap": "115792089237316195423570985008687900000000000000000000000000",
-        "holderCount": "0",
-        "id": "0x122d10d543bc600967b4db0f45f80cb1ddee43eb",
-        "isDatatoken": true,
-        "name": "Brave Lobster Token",
-        "nft": {
-          "address": "0xea615374949a2405c3ee555053eca4d74ec4c2f0",
-          "name": "Ocean Data NFT",
-          "symbol": "OCEAN-NFT"
-        },
-        "orderCount": "0",
-        "orders": [],
-        "symbol": "BRALOB-11"
-      }
-    ]
-  }
+    "data": {
+        "tokens": [
+            {
+                "cap": null,
+                "holderCount": "0",
+                "id": "0x0000000000000000000000000000000000000000",
+                "isDatatoken": false,
+                "name": null,
+                "nft": null,
+                "orderCount": "0",
+                "orders": [],
+                "symbol": null
+            },
+            {
+                "cap": null,
+                "holderCount": "0",
+                "id": "0x0642026e7f0b6ccac5925b4e7fa61384250e1701",
+                "isDatatoken": false,
+                "name": "H2O",
+                "nft": null,
+                "orderCount": "0",
+                "orders": [],
+                "symbol": "H2O"
+            }
+        ]
+    }
 }
 ```
+{% endcode %}
 
 </details>
