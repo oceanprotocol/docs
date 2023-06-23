@@ -121,7 +121,7 @@ Open up `src/components/Publish/Metadata/index.tsx` and change line 33 so that i
 
 Great, now our publish page explains that users should be publishing photos and photo is provided as an asset type option. We’ll also leave algorithm as an option in case some data scientists want to do some analysis or image transformation on the photos.
 
-![Market Customisation](<../../.gitbook/assets/publish-page-2 (1).png>)
+![Market Customisation](../../.gitbook/assets/publish-page-2.png)
 
 There is one more thing that is fun to change before we move away from the publish form. You’ll notice that Ocean Market V4 now has a cool SVG generation feature that creates the images for the Data NFT. It creates a series of pink waves. Let’s change this so that it uses our brand colors in the waves!
 
