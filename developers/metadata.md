@@ -4,13 +4,13 @@ description: How can you enhance data discovery?
 
 # Metadata
 
-Imagine you're searching for data on Spanish almond production within a dApp operating within the Ocean ecosystem, managed by a European fruit and nut association. This hypothetical dApp may host a vast collection of datasets, making it essential to have a way to identify the relevant ones. What can we do about it? :thinking: One effective approach is to have **metadata** associated with each dataset to serve as valuable information about the data itself.
+Metadata plays a **crucial role** in asset **discovery**, providing essential information such as **asset type, name, creation date, and licensing details**. Each data asset can have a [decentralized identifier (DID)](identifiers.md) that resolves to a DID document ([DDO](ddo-specification.md)) containing associated metadata. The DDO is essentially a collection of fields in a [JSON](https://www.json.org/) object. To understand working with OCEAN DIDs, you can refer to the [DID documentation](identifiers.md). For a more comprehensive understanding of metadata structure, the [DDO Specification](ddo-specification.md) documentation provides in-depth information.
 
 <figure><img src="../.gitbook/assets/gif/data_everywhere.gif" alt=""><figcaption><p>Data discovery</p></figcaption></figure>
 
-Metadata plays a **crucial role** in asset **discovery**, providing essential information such as **asset type, name, creation date, and licensing details**. Each data asset can have a [decentralized identifier (DID)](identifiers.md) that resolves to a DID document ([DDO](ddo-specification.md)) containing associated metadata. The DDO is essentially a collection of fields in a [JSON](https://www.json.org/) object. To understand working with OCEAN DIDs, you can refer to the [DID documentation](identifiers.md). For a more comprehensive understanding of metadata structure, the [DDO Specification](ddo-specification.md) documentation provides in-depth information.
+In general, any dApp within the Ocean ecosystem is required to store metadata for every listed dataset. The metadata is useful to determine which datasets are the most relevant.
 
-In general, any dApp within the Ocean ecosystem is required to store metadata for every listed dataset. While specific metadata requirements may vary, certain fundamental pieces of metadata, including:
+So, for example, imagine you're searching for data on Spanish almond production in an Ocean-powered dApp. You might find a large number of datasets, making it difficult to identify the most relevant one. What can we do about it? :thinking: This is where metadata is useful! The metadata provides valuable information that helps you identify the most relevant dataset. This information can include:
 
 * **name**, e.g. “Largueta Almond Production: 1995 to 2005”
 * **dateCreated**, e.g. “2007–01–20”
