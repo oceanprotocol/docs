@@ -15,10 +15,6 @@ For a specific data NFT, multiple ERC20 datatoken contracts can exist. Here's th
 
 The choice to employ the ERC20 fungible token standard for datatokens is logical, as licenses themselves are fungible. This standard ensures compatibility and interoperability of datatokens with ERC20-based wallets, decentralized exchanges (DEXes), decentralized autonomous organizations (DAOs), and other relevant platforms. Datatokens can be transferred, acquired through marketplaces or exchanges, distributed via airdrops, and more.
 
-Here is a visual representation:
-
-<figure><img src="../../.gitbook/assets/DataNFT and Datatoken Flow.jpg" alt=""><figcaption><p>Data NFTs and Datatokens </p></figcaption></figure>
-
 You can [publish](../../discover/glossary.md#to-publish) a data NFT initially with no ERC20 datatoken contracts. This means you simply aren’t ready to grant access to your data asset yet (sub-license it). Then, you can publish one or more ERC20 datatoken contracts against the data NFT. One datatoken contract might grant consume rights for **1 day**, another for **1 week**, etc. Each different datatoken contract is for **different** license terms.
 
 For a more comprehensive exploration of intellectual property and its practical connections with ERC721 and ERC20,  you can read the blog post written by [Trent McConaghy](http://www.trent.st/), co-founder of Ocean Protocol. It delves into the subject matter in detail and provides valuable insights.
