@@ -14,7 +14,7 @@ Imagine this 💭: if you were to always fetch data from the on-chain, you'd sta
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/dolphin.gif" alt=""><figcaption><p>High-speed subgraph</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/dolphin.gif" alt=""><figcaption><p>High-speed subgraph</p></figcaption></figure>
 
 </div>
 

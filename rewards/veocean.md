@@ -6,7 +6,7 @@ description: >-
 
 # DF "ve" in veOCEAN (Brown Belt)
 
-<figure><img src="../.gitbook/assets/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
 
 ### What does the "ve" in veOCEAN stand for?
 

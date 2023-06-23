@@ -4,7 +4,7 @@ description: Learn the fundamentals of The Way of Data Farming 🧑‍🏫
 
 # Data Farming 101 (White Belt)
 
-<figure><img src="../.gitbook/assets/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
 
 ### What is Data Farming?
 
@@ -24,7 +24,7 @@ Every week OCEAN rewards are paid out to Data Farmers in two different ways: **p
 
 Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.
 
-<figure><img src="../.gitbook/assets/passive-income.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/passive-income.gif" alt=""><figcaption></figcaption></figure>
 
 [To start getting passive rewards, go here.](../user-guides/get-started-df.md)
 
@@ -46,7 +46,7 @@ Each Data Farming weekly round has a pool of OCEAN rewards, and 50% of the pool 
 
 ### What are Publisher Rewards?
 
-<figure><img src="../.gitbook/assets/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
 
 Data Farming strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
 

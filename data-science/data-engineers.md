@@ -4,7 +4,7 @@ description: How to research where supply meets demand... 💰🧑‍🏫
 
 # What data is valuable?
 
-<figure><img src="../.gitbook/assets/big-money.gif" alt=""><figcaption><p>When you sell the right data at the right price to meet demand.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/big-money.gif" alt=""><figcaption><p>When you sell the right data at the right price to meet demand.</p></figcaption></figure>
 
 ### Simple Truths
 

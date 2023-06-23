@@ -33,7 +33,7 @@ You've now published an Ocean asset!
 * [`datatoken`](../contracts/datatokens.md) for access by others (licensing)
 * `ddo` holding metadata
 
-<figure><img src="../../.gitbook/assets/200.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/200.webp" alt=""><figcaption></figcaption></figure>
 
 ### Appendix
 

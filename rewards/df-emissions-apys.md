@@ -7,7 +7,7 @@ description: >-
 
 # DF Emissions & APYs (Black Belt)
 
-<figure><img src="../.gitbook/assets/neo-bb.gif" alt=""><figcaption><p>Like a true master of The Way of Data Farming.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/neo-bb.gif" alt=""><figcaption><p>Like a true master of The Way of Data Farming.</p></figcaption></figure>
 
 ### Why veOCEAN is important to OceanDAO
 

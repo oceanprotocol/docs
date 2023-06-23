@@ -4,7 +4,7 @@ description: How to Mint and Publish Data NFTs Using the Ocean Market
 
 # Publish Data NFTs
 
-<figure><img src="../.gitbook/assets/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/kermit-typing.gif" alt=""><figcaption></figcaption></figure>
 
 ### What to Publish? 🤷‍♀️
 

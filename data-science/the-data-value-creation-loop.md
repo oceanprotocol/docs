@@ -4,7 +4,7 @@ description: When you have problems, but then you solve them 💁‍♀️
 
 # The Data Value Creation Loop
 
-<figure><img src="../.gitbook/assets/tell-me-more.gif" alt=""><figcaption><p>Tell me more.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/tell-me-more.gif" alt=""><figcaption><p>Tell me more.</p></figcaption></figure>
 
 ### What is the Data Value Creation Loop?
 

@@ -6,7 +6,7 @@ description: Explore and manage the revenue generated from your data NFTs.
 
 Having a [data NFT](data-nfts.md) that generates revenue continuously, even when you're not actively involved, is an excellent source of income. This revenue stream allows you to earn consistently without actively dedicating your time and effort. Each time someone buys access to your NFT, you receive money, further enhancing the financial benefits. This steady income allows you to enjoy the rewards of your asset while minimizing the need for constant engagement:moneybag:
 
-<figure><img src="../../.gitbook/assets/sponge-money.gif" alt=""><figcaption><p>Make it rain</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/sponge-money.gif" alt=""><figcaption><p>Make it rain</p></figcaption></figure>
 
 By default, the revenue generated from a [data NFT](data-nfts.md) is directed to the [owner](roles.md#nft-owner) of the NFT. This arrangement automatically updates whenever the data NFT is transferred to a new owner. C
 
