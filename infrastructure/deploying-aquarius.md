@@ -137,7 +137,7 @@ RemainAfterExit=true
 Environment="PROJECT=ocean"
 WorkingDirectory=/etc/docker/compose/%i
 ExecStartPre=/usr/bin/env docker-compose -p $PROJECT pull
-ExecStart=/usr/bin/env docker-compose -p $PROJECT up -d --remove-orphans
+ExecStart=/usr/bin/env docker-compose -p $PROJECT up -d
 ExecStop=/usr/bin/env docker-compose -p $PROJECT stop
 ExecStopPost=/usr/bin/env docker-compose -p $PROJECT down
 
@@ -229,7 +229,7 @@ $ docker logs aquarius-events-goerli [--follow]
 
 
 
-## Deploying Aquarius using Kubernetes with Docker Engine
+## Deploying Aquarius using Kubernetes
 
 Aquarius depends on the backend database and in this example we will deploy the following resources:
 
@@ -409,7 +409,7 @@ spec:
 
 
 
-Example deployment for _Mumbai_ (Polygon testenet):
+Example deployment for _Mumbai_ (Polygon testnet):
 
 * [aquarius-events-mumbai-deployment.yaml](https://github.com/oceanprotocol/aquarius/blob/update-deploy-docs/deployment/aquarius-events-mumbai-deployment.yaml) (annotated) - this deployment will be responsible for indexing the block and storing the metadata published on-chain:
 
