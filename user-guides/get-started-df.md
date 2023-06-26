@@ -6,9 +6,9 @@ description: Get veOCEAN tokens to use the Data Farming dApp and make yield! ðŸ§
 
 ### What the \*@$! is Data Farming?
 
-[Data Farming](https://df.oceandao.org) is our dApp that generates yield for participants that curate and publish valuable assets in the Ocean ecosystem.
+[Data Farming](https://df.oceandao.org) is our dApp that generates yield for participants that curate and publish valuable assets in the Ocean ecosystem.&#x20;
 
-<figure><img src="../.gitbook/assets/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
 ### What is veOCEAN and why do you want it? ðŸŒŠ
 
@@ -40,7 +40,7 @@ Watch and learn, friend
 
 * Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
 
-\{% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %\}
+{% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %}
 
 In this step you will:
 

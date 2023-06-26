@@ -6,7 +6,7 @@ description: >-
 
 # DF Max Out Yield (Purple Belt)
 
-<figure><img src="../.gitbook/assets/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
 ### How to Maximize Your Yield
 
@@ -23,7 +23,7 @@ Thus, if you really want to max out your APY:
 
 Marketing your assets to buyers is your challenge. Just because you publish them in the Ocean ecosystem doesn't mean that they will sell. It will take real work. Your reward is great APY. It’s incentives all the way down :)
 
-<figure><img src="../.gitbook/assets/hustlin.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/hustlin.gif" alt=""><figcaption></figcaption></figure>
 
 ### Measuring Data Farming's Success
 
@@ -50,7 +50,7 @@ At the top-end, this helps increase quality and diversification of inventory.
 
 At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
 
-![Ranked Rewards](../.gitbook/assets/rewards/ranked\_rewards\_study.png)
+![Ranked Rewards](../.gitbook/assets/rewards/ranked_rewards_study.png)
 
 You can read more about the why, what, and how of Ranked Rewards [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 
@@ -89,4 +89,4 @@ The table below shows the total amount of OCEAN rewards that will be distributed
 
 <figure><img src="../.gitbook/assets/rewards/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/cash-flow.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/cash-flow.gif" alt=""><figcaption></figcaption></figure>
