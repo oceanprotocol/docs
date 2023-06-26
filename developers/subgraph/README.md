@@ -14,7 +14,7 @@ Imagine this 💭: if you were to always fetch data from the on-chain, you'd sta
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/gif/dolphin.gif" alt=""><figcaption><p>High-speed subgraph</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dolphin.gif" alt=""><figcaption><p>High-speed subgraph</p></figcaption></figure>
 
 </div>
 
@@ -25,7 +25,7 @@ You can utilize the Subgraph instances provided by Ocean Protocol or deploy your
 If you're eager to use the Ocean Subgraph, here's some important information for you: We've deployed an Ocean Subgraph for each of the supported networks. Take a look at the table below, where you'll find handy links to both the subgraph instance and GraphiQL for each network. With the user-friendly GraphiQL interface, you can execute GraphQL queries directly, without any additional setup. It's a breeze! :ocean:
 
 {% hint style="info" %}
-When it comes to fetching valuable information about [Data NFTs](../contracts/data-nfts.md) and [datatokens](../contracts/datatokens.md), the subgraph queries play a crucial role. They retrieve numerous details and information, but, the Subgraph cannot decrypt the DDO. But worry not, we have a dedicated component for that—[Aquarius](../aquarius/)! 🐬 Aquarius communicates with the provider and decrypts the encrypted information, making it readily available for queries.&#x20;
+When it comes to fetching valuable information about [Data NFTs](../contracts/data-nfts.md) and [datatokens](../contracts/datatokens.md), the subgraph queries play a crucial role. They retrieve numerous details and information, but, the Subgraph cannot decrypt the DDO. But worry not, we have a dedicated component for that—[Aquarius](../aquarius/)! 🐬 Aquarius communicates with the provider and decrypts the encrypted information, making it readily available for queries.
 {% endhint %}
 
 ### Ocean Subgraph deployments
@@ -44,8 +44,7 @@ When it comes to fetching valuable information about [Data NFTs](../contracts/da
 When making subgraph queries, please remember that the parameters you send, such as a datatoken address or a data NFT address, should be in **lowercase**. This is an essential requirement to ensure accurate processing of the queries. We kindly request your attention to this detail to facilitate a seamless query experience.
 {% endhint %}
 
-In the following pages, we've prepared a few examples just for you. From running queries to exploring data, you'll have the chance to dive right into the Ocean Subgraph data. There, you'll find a wide range of additional code snippets and examples that showcase the power and versatility of the Ocean Subgraph. So, grab a virtual snorkel, and let's explore together! 🤿\
-
+In the following pages, we've prepared a few examples just for you. From running queries to exploring data, you'll have the chance to dive right into the Ocean Subgraph data. There, you'll find a wide range of additional code snippets and examples that showcase the power and versatility of the Ocean Subgraph. So, grab a virtual snorkel, and let's explore together! 🤿\\
 
 {% hint style="info" %}
 For more examples, visit the subgraph GitHub [repository](https://github.com/oceanprotocol/ocean-subgraph), where you'll discover an extensive collection of code snippets and examples that highlight the Subgraph's capabilities and adaptability.

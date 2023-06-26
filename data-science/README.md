@@ -6,7 +6,7 @@ coverY: 0
 
 # 📊 Data Science
 
-<figure><img src="../.gitbook/assets/gif/my-data (1).gif" alt="" width="360"><figcaption><p>Ocean Protocol - Built to protect your precious.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/my-data.gif" alt="" width="360"><figcaption><p>Ocean Protocol - Built to protect your precious.</p></figcaption></figure>
 
 ### Why should data scientists use Ocean Protocol?
 

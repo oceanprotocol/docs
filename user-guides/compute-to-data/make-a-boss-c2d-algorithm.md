@@ -6,7 +6,7 @@ description: >-
 
 # Make a Boss C2D Algorithm
 
-<figure><img src="../../.gitbook/assets/gif/like-a-boss.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/like-a-boss.gif" alt=""><figcaption></figcaption></figure>
 
 The beginning of any great algorithm for Compute-to-Data starts by referencing the dataset asset correctly on the Docker container. Read on, anon.
 

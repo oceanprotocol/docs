@@ -4,7 +4,7 @@ description: How to publish a C2D algorithm NFT on the Ocean Market
 
 # Publish a C2D Algorithm NFT
 
-<figure><img src="../../.gitbook/assets/gif/the-algorithm.gif" alt=""><figcaption><p>You're an algorithm guru after all!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/the-algorithm.gif" alt=""><figcaption><p>You're an algorithm guru after all!</p></figcaption></figure>
 
 ### Publish Your Algorithm NFT
 

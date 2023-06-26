@@ -7,7 +7,7 @@ cover: ../.gitbook/assets/cover/developer_banner.png
 coverY: 0
 ---
 
-# 💻 Developers
+# 👨💻 Developers
 
 With Ocean, crypto wallets transform into magical data wallets, where your data can roam freely and securely. Crypto exchanges? Well, they've taken on a new role as data marketplaces, where you can showcase and trade your valuable data treasures. And hold on tight because DAOs are here to create epic data co-ops, where collaboration and innovation reign supreme! 🤝
 

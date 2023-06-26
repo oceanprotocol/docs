@@ -2,9 +2,9 @@
 description: When you have problems, but then you solve them 💁‍♀️
 ---
 
-# The Data Value Creation Loop
+# Data Value Creation Loop
 
-<figure><img src="../.gitbook/assets/gif/tell-me-more.gif" alt=""><figcaption><p>Tell me more.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tell-me-more.gif" alt=""><figcaption><p>Tell me more.</p></figcaption></figure>
 
 ### What is the Data Value Creation Loop?
 
@@ -25,12 +25,3 @@ Here's a condensed breakdown of the loop:
 ### What is an example of a Data Value Creation Loop?
 
 Let's explore an example to showcase the process of the data value creation loop. Imagine a healthcare organization seeking to develop a predictive model for early detection of diseases. They collaborate with data engineers to collect and preprocess various medical datasets, including patient demographics, lab results, and medical imaging. These datasets are tokenized and made available on the Ocean Protocol platform for secure computation. Data scientists utilize the tokenized data to train machine learning models that can accurately identify early warning signs of diseases. These models are then published as compute assets on Ocean Market. Application developers work with the healthcare organization to integrate the models into their existing patient management system, allowing doctors to receive automated risk assessments and personalized recommendations for preventive care. As a result, patients benefit from early detection, doctors can make more informed decisions, and the healthcare organization generates insights to improve patient outcomes while fostering data and model asset collaboration. Et voilà!
-
-
-
-&#x20; &#x20;
-
-
-
-
-
