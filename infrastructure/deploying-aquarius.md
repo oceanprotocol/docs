@@ -11,9 +11,7 @@ Aquarius consists of two parts:
 * **API:** The Aquarius API provides a user with a convenient way to access the metadata without scanning the chain itself.
 * **Event monitor:** Aquarius continually monitors the chains for MetadataCreated and MetadataUpdated events, processes these events, and adds them to the database.
 
-As mentioned in the [Setup a Server](setup-server.md) document, all Ocean components can be deployed in two configurations: simple, based on Docker Engine and Docker Compose, and complex, based on Kubernetes with Docker Engine. This document will present how to deploy Provider in each of these configurations.
-
-
+As mentioned in the [Setup a Server](setup-server.md) document, all Ocean components can be deployed in two configurations: simple, based on Docker Engine and Docker Compose, and complex, based on Kubernetes with Docker Engine. This document will present how to deploy Aquarius in each of these configurations.
 
 ## Deploying Aquarius using Docker Engine and Docker Compose
 
@@ -27,14 +25,11 @@ This guide will deploy Aquarius, including Elasticsearch as a single systemd ser
 
 ### Steps
 
-
-
 #### 1. Create the /etc/docker/compose/aquarius/docker-compose.yml file
 
-From a terminal console, create /etc/docker/compose/aquarius/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation. The following example is for deploying Aquarius for Goerli network.&#x20;
+From a terminal console, create /etc/docker/compose/aquarius/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation. The following example is for deploying Aquarius for Goerli network.
 
-For each other network in which you want to deploy Aquarius, add to the file a section similar to  "aquarius-events-goerli" included in this example and update the corresponding parameters (i.e. EVENTS\_RPC, OCEAN\_ADDRESS, SUBGRAPH\_URLS) specific to that network. \
-
+For each other network in which you want to deploy Aquarius, add to the file a section similar to "aquarius-events-goerli" included in this example and update the corresponding parameters (i.e. EVENTS\_RPC, OCEAN\_ADDRESS, SUBGRAPH\_URLS) specific to that network. \\
 
 ```yaml
 version: '3.9'
@@ -178,7 +173,7 @@ sudo systemctl status docker-compose@aquarius.service
 
 #### 6. Confirm Aquarius is accessible
 
-Run the following commands to access Aquarius The output should be similar to the one displayed here.&#x20;
+Run the following commands to access Aquarius The output should be similar to the one displayed here.
 
 <pre class="language-bash"><code class="lang-bash">$ curl localhost:9200
 <strong>{
@@ -227,8 +222,6 @@ $ docker logs aquarius  [--follow]
 $ docker logs aquarius-events-goerli [--follow]
 ```
 
-
-
 ## Deploying Aquarius using Kubernetes
 
 Aquarius depends on the backend database and in this example we will deploy the following resources:
@@ -245,8 +238,6 @@ Templates (yaml files) are provided and could be customized based on the environ
 * The RPC URLs and API keys for each of the networks to which the Aquarius will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
 
 ### Steps
-
-
 
 1. [Deploy Elasticsearch service](deploying-aquarius.md#1.-deploy-elasticsearch)
 2. [Deploy Aquarius service](deploying-aquarius.md#2.-deploy-aquarius)
@@ -286,14 +277,11 @@ $ curl localhost:9200
 }
 ```
 
-
-
 #### 2. Deploy Aquarius
 
 Aquarius supports indexing multiple chains using a single instance to serve API requests and one instance for each chain that must be indexed.
 
 ![image](https://github.com/oceanprotocol/docs/assets/54084524/8099e7d7-171d-4d5a-8475-61706c99f4e5)
-
 
 The following deployment templates could be used for guidance. Some parameters are [optional](https://github.com/oceanprotocol/aquarius) and the template could be adjusted based on these considerations. Common cases are the deployments for one/multiple multiple Ethereum networks:
 
@@ -407,8 +395,6 @@ spec:
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 30ya
 ```
-
-
 
 Example deployment for _Mumbai_ (Polygon testnet):
 
@@ -536,8 +522,6 @@ spec:
 
 Tip: before deployment you can [validate](https://github.com/instrumenta/kubeval) the yaml file.
 
-
-
 b. Deploy the configuration
 
 Deploy the configuration in Kubernetes using the following commands.
@@ -564,9 +548,6 @@ $ kubectl logs aquarius-6fd9cc975b-fxr4d [--follow]
 $ kubectl logs aquarius-events-mumbai-8748976c4-mh24n [--follow]
 ```
 
-
-
 c. Create a Kubernetes service
 
 The next step is to create a Kubernetes service (eg. ClusterIP, NodePort, Loadbalancer, ExternalName) for this deployment, depending on the environment specifications. Follow [this link](https://kubernetes.io/docs/concepts/services-networking/service/) for details on how to create a Kubernetes service.
-
