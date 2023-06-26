@@ -24,7 +24,7 @@ Now we need to clone the market fork locally so that we can start making changes
 
 ## Install the dependencies
 
-Installing the dependencies is a vital step for running the market. It’s a super simple process, thanks to npm (node package manager). Make sure you have node.js installed, otherwise it will fail. In Ocean Market, we use node.js version 16 and it’s highly recommended that you use the same.
+Installing the dependencies is a vital step for running the market. It’s a super simple process, thanks to npm (node package manager). Make sure you have node.js installed, otherwise it will fail. In Ocean Market it’s highly recommended that you use the same version of node that we are using, you can check this in the [.nvmrc file](https://github.com/oceanprotocol/market/blob/main/.nvmrc).
 
 Enter the following command to install the dependencies:
 

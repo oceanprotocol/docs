@@ -118,6 +118,7 @@
   * [DF Max Out Yield (Purple Belt)](rewards/df-max-out-yield.md)
   * [DF "ve" in veOCEAN (Brown Belt)](rewards/veocean.md)
   * [DF Emissions & APYs (Black Belt)](rewards/df-emissions-apys.md)
+  * [Delegation](rewards/delegation.md)
 * [🤝 Contribute](contribute/README.md)
   * [Partners & Collaborators](contribute/projects-using-ocean.md)
   * [Contributor Code of Conduct](contribute/code-of-conduct.md)
