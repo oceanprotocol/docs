@@ -25,9 +25,9 @@ The remainder of this document specifies the different types of storage objects 
 
 Parameters:
 
-* `url` - File url, required
-* `method` - The HTTP method, required
-* `headers` - Additional HTTP headers, optional
+* `url` - File _URL_, **required**
+* `method` - The HTTP _method_, **required**
+* `headers` - Additional HTTP _headers_, **optional**
 
 ```json
 {
@@ -50,14 +50,13 @@ The [Interplanetary File System](https://ipfs.tech/) (IPFS) is a distributed fil
 
 Parameters:
 
-* `hash` - The file hash
+* `hash` - The file _hash,_ **required**
 
-```json
-{
-	"type": "ipfs",
-	"hash": "XXX"
+<pre class="language-json"><code class="lang-json">{
+<strong>    "type": "ipfs",
+</strong>    "hash": "XXX"
 }
-```
+</code></pre>
 
 ## GraphQL
 
@@ -67,19 +66,19 @@ Parameters:
 
 Parameters:
 
-* `url` - Server endpoint url, required
-* `query` - The query to be executed, required
-* `headers` - Additional HTTP headers, optional
+* `url` - Server endpoint _URL_, **required**
+* `query` - The _query_ to be executed, **required**
+* `headers` - Additional HTTP headers, **optional**
 
 ```json
 {
-	"type": "graphql",
-	"url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
-    	"headers":{
+     "type": "graphql",
+     "url": "http://172.15.0.15:8000/subgraphs/name/oceanprotocol/ocean-subgraph",
+     "headers":{
         	"Authorization": "Bearer 123",
         	"APIKEY": "124",
-    	},
-	"query": """query{
+     },
+     "query": """query{
             nfts(orderBy: createdTimestamp,orderDirection:desc){
                  id
                  symbol
@@ -95,45 +94,43 @@ Use a smart contract as data source.
 
 Parameters:
 
-* `chainId` - The chainId used to query the contract, required
-* `address` - The smartcontract address, required
-* `abi` - The function abi (NOT the entire contract abi), required
+* `chainId` - The _chainId_ used to query the contract, **required**
+* `address` - The smartcontract _address_, **required**
+* `abi` - The function _abi_ (NOT the entire contract abi), **required**
 
 {% code overflow="wrap" %}
 ```json
 {
-	"type": "smartcontract",
-	"chainId": 1,
-	"address": "0x8149276f275EEFAc110D74AFE8AFECEaeC7d1593",
-	"abi": {
-			"inputs": [],
-			"name": "swapOceanFee",
-			"outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
-			"stateMutability": "view",
-			"type": "function",
-		}
+"type": "smartcontract",
+"chainId": 1,
+"address": "0x8149276f275EEFAc110D74AFE8AFECEaeC7d1593",
+"abi": {
+	"inputs": [],
+	"name": "swapOceanFee",
+	"outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+	"stateMutability": "view",
+	"type": "function",
+	}
 }
 ```
 {% endcode %}
 
 ## Arweave
 
-[Arweave](https://www.arweave.org/) is a decentralized data storage that allows to permanently store files over a distributed network of computers.
+[Arweave](https://www.arweave.org/) is a decentralized data storage that allows permanently storing files over a distributed network of computers.
 
 Parameters:
 
-* `transactionId` - The transaction identifier
+* `transactionId` - The _transaction identifier,_ **required**
 
 ```json
 {
-    {
     "type": "arweave",
     "transactionId": "a4qJoQZa1poIv5guEzkfgZYSAD0uYm7Vw4zm_tCswVQ",
-  }
 }
 ```
 
-First class integrations supported in the future : **`Filecoin`** **`Storj`** **`SQL`**
+First-class integrations supported in the future : **`Filecoin`** **`Storj`** **`SQL`**
 
 A service can contain multiple files, using multiple storage types.
 
@@ -157,7 +154,7 @@ Example:
 }
 ```
 
-To get information about the files after encryption, the `/fileinfo` endpoint of _Provider_ returns based on a passed DID an array of file metadata (based on the file type):
+To get information about the files after encryption, the `/fileinfo` endpoint of the [_Provider_](provider/) returns based on a passed DID an array of file metadata (based on the file type):
 
 ```json
 [
