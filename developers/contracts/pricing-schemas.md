@@ -4,9 +4,9 @@ description: Choose the revenue model during asset publishing.
 
 # Pricing Schemas
 
-Ocean Protocol offers you flexible and customizable pricing options to monetize your valuable data assets. You have two main pricing models to choose from:&#x20;
+Ocean Protocol offers you flexible and customizable pricing options to monetize your valuable data assets. You have two main pricing models to choose from:
 
-* [Fixed pricing ](pricing-schemas.md#fixed-pricing)
+* [Fixed pricing](pricing-schemas.md#fixed-pricing)
 * [Free pricing](pricing-schemas.md#free-pricing)
 
 These models are designed to cater to your specific needs and ensure a smooth experience for data consumers.
@@ -64,9 +64,9 @@ Furthermore, Ocean Protocol recognizes that different data assets may have disti
 
 ### Fixed pricing
 
-With the fixed pricing model, you have the power to set a specific price for your data assets. This means that buyers interested in accessing your data will need to pay the designated amount of configured tokens. To make things even easier, Ocean automatically creates a special token called a "datatoken" behind the scenes.&#x20;
+With the fixed pricing model, you have the power to set a specific price for your data assets. This means that buyers interested in accessing your data will need to pay the designated amount of configured tokens. To make things even easier, Ocean automatically creates a special token called a "datatoken" behind the scenes.
 
-This datatoken represents the access right to your data, so buyers don't have to worry about the technical details. If you ever want to adjust the price of your dataset, you have the flexibility to do so whenever you need.&#x20;
+This datatoken represents the access right to your data, so buyers don't have to worry about the technical details. If you ever want to adjust the price of your dataset, you have the flexibility to do so whenever you need.
 
 The fixed pricing model relies on the [createNftWithErc20WithFixedRate](https://github.com/oceanprotocol/contracts/blob/main/contracts/ERC721Factory.sol#LL674C14-L674C45) in our smart contract, which securely stores the pricing information for assets published using this model.
 
@@ -122,16 +122,14 @@ There are two templates available: [ERC20Template](datatoken-templates.md#regula
 
 In the case of [ERC20TemplateEnterprise](datatoken-templates.md#enterprise-template), when you deploy a fixed rate exchange, the funds generated as revenue are automatically sent to the owner's address. The owner receives the revenue without any manual intervention.
 
-
-
 On the other hand, with [ERC20Template](datatoken-templates.md#regular-template), for a fixed rate exchange, the revenue is available at the fixed rate exchange level. The owner or the payment collector has the authority to manually retrieve the revenue.
 {% endhint %}
 
 ### Free pricing
 
-On the other hand, the free pricing model gives data consumers access to your asset without requiring them to make a direct payment. Users can freely access your data, with the only cost being the transaction fees associated with the blockchain network.&#x20;
+On the other hand, the free pricing model gives data consumers access to your asset without requiring them to make a direct payment. Users can freely access your data, with the only cost being the transaction fees associated with the blockchain network.
 
-In this model, datatokens are allocated to a dispenser smart contract, which dispenses data tokens to users at no charge when they access your asset. This is perfect if you want to make your data widely available and encourage collaboration. It's particularly suitable for individuals and organizations working in the public domain or for assets that need to comply with open access licenses.
+In this model, datatokens are allocated to a dispenser smart contract, which dispenses data tokens to users at no charge when they access your asset. This is perfect if you want to make your data widely available and encourage collaboration. It's particularly suitable for individuals and organizations working in the public domain or for assets that need to comply with open-access licenses.
 
 The fixed pricing model relies on the [createNftWithErc20WithDispenser](https://github.com/oceanprotocol/contracts/blob/main/contracts/ERC721Factory.sol#LL713C14-L713C45) in our smart contract, which securely stores the pricing information for assets published using this model.
 
@@ -184,8 +182,8 @@ function createNftWithErc20WithDispenser(
 
 </details>
 
-To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](../ocean.js/)and [Ocean.py](../ocean.py/), specifically developed for interacting with Ocean Protocol.&#x20;
+To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](../ocean.js)and [Ocean.py](../ocean.py), specifically developed for interacting with Ocean Protocol.
 
 With Ocean.js, you can use the [createFRE() ](../ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](../ocean.py/publish-flow.md#create-an-asset-and-pricing-schema-simultaneously) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
 
-By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](../ocean.js/) and [Ocean.py](../ocean.py/) (or by using the [Market](../../user-guides/using-ocean-market.md)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.&#x20;
+By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](../ocean.js) and [Ocean.py](../ocean.py) (or by using the [Market](../../user-guides/using-ocean-market.md)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.

@@ -73,11 +73,11 @@ function updateOPCFee(uint256 _newSwapOceanFee, uint256 _newSwapNonOceanFee,
 Each of these fees plays a role in ensuring fair compensation and supporting the Ocean community.&#x20;
 
 | Fee              | Value in Ocean Market | Value in Other Markets                                   |
-| ---------------- | --------------------- | -------------------------------------------------------- |
-| Publisher Market | 0                     | Customizable in market config.                           |
-| Consume Market   | 0                     | Customizable in market config.                           |
-| Provider         | 0                     | Customizable. See details [below](fees.md#provider-fee). |
-| Ocean Community  | 0.03 DT               | 0.03 DT                                                  |
+| ---------------- | :-------------------: | -------------------------------------------------------- |
+| Publisher Market |           0           | Customizable in market config.                           |
+| Consume Market   |           0           | Customizable in market config.                           |
+| Provider         |           0           | Customizable. See details [below](fees.md#provider-fee). |
+| Ocean Community  |        0.03 DT        | 0.03 DT                                                  |
 
 ### Provider fee
 

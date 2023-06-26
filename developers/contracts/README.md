@@ -16,12 +16,11 @@ However, Ocean V3 faced limitations in terms of flexibility. It lacked support f
 
 Ocean V4 effectively tackles these challenges by adopting **ERC721** **tokens** to explicitly represent the **base IP** as "data NFTs" (Non-Fungible Tokens). [**Data NFT**](data-nfts.md) owners can now deploy ERC20 "datatoken" contracts specific to their data NFTs, with each datatoken contract offering its own distinct licensing terms.
 
-By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility and control over licensing arrangements**. The introduction of data NFTs allows for the representation of [base IP](../../discover/glossary.md#base ip) and the creation of customized ERC20 datatoken contracts tailored to individual licensing requirements.&#x20;
-
+By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility and control over licensing arrangements**. The introduction of data NFTs allows for the representation of [base IP](../../discover/glossary.md#base-ip) and the creation of customized ERC20 datatoken contracts tailored to individual licensing requirements.
 
 <figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol V4 Smart Contracts</p></figcaption></figure>
 
-### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
+#### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 
 Ocean V4 brings forth enhanced opportunities for marketplace operators, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
 
@@ -29,8 +28,7 @@ With Ocean V4, marketplace operators can unlock additional benefits. Firstly, th
 
 In addition to empowering marketplace operators, Ocean V4 facilitates the participation of third-party [Providers](../provider/) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
 
-By enabling a marketplace of [Providers](../provider/), Ocean V4 fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.\
-
+By enabling a marketplace of [Providers](../provider/), Ocean V4 fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
 
 Key features of the V4 smart contracts:
 

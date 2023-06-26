@@ -15,13 +15,7 @@ cd my-ocean-project
 
 In the working directory create a `.env` file. The content of this file will store the values for following variables:
 
-| Variable name           | Description                                                                                                                                                                 | Required |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| **OCEAN\_NETWORK**      | Name of the network where the Ocean Protocol's smart contracts are deployed.                                                                                                | Yes      |
-| **OCEAN\_NETWORK\_URL** | The URL of the Ethereum node (along with API key for non-local networks)\*\*                                                                                                | Yes      |
-| **PRIVATE\_KEY**        | The private key of the account which you want to use. A private key is made up of 64 hex characters. Make sure you have sufficient balance to pay for the transaction fees. | Yes      |
-| **AQUARIUS\_URL**       | The URL of the Aquarius. This value is needed when reading an asset from off-chain store.                                                                                   | No       |
-| **PROVIDER\_URL**       | The URL of the Provider. This value is needed when publishing a new asset or update an existing asset.                                                                      | No       |
+<table><thead><tr><th width="241.33333333333331">Variable name</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td><strong>OCEAN_NETWORK</strong></td><td>Name of the network where the Ocean Protocol's smart contracts are deployed.</td><td>Yes</td></tr><tr><td><strong>OCEAN_NETWORK_URL</strong></td><td>The URL of the Ethereum node (along with API key for non-local networks)**</td><td>Yes</td></tr><tr><td><strong>PRIVATE_KEY</strong></td><td>The private key of the account which you want to use. A private key is made up of 64 hex characters. Make sure you have sufficient balance to pay for the transaction fees.</td><td>Yes</td></tr><tr><td><strong>AQUARIUS_URL</strong></td><td>The URL of the Aquarius. This value is needed when reading an asset from off-chain store.</td><td>No</td></tr><tr><td><strong>PROVIDER_URL</strong></td><td>The URL of the Provider. This value is needed when publishing a new asset or update an existing asset.</td><td>No</td></tr></tbody></table>
 
 {% hint style="info" %}
 Treat this file as a secret and do not commit this file to git or share the content publicly. If you are using git, then include this file name in `.gitignore` file.

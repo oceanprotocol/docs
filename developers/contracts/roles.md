@@ -15,8 +15,6 @@ The [data NFT](data-nfts.md) serves as the foundational intellectual property (I
 
 The NFT owner is the owner of the base-IP and is therefore at the highest level. The NFT owner can perform any action or assign any role but crucially, the NFT owner is the only one who can assign the manager role. Upon deployment or transfer of the data NFT, the NFT owner is automatically added as a manager. The NFT owner is also the only role that can’t be assigned to multiple users — the only way to share this role is via multi-sig or a DAO.
 
-
-
 ## Roles-NFT level
 
 <figure><img src="../../.gitbook/assets/contracts/roles_nft_level.png" alt=""><figcaption><p>Roles at the data NFT level</p></figcaption></figure>
@@ -25,13 +23,13 @@ The NFT owner is the owner of the base-IP and is therefore at the highest level.
 With the exception of the NFT owner role, all other roles can be assigned to multiple users.
 {% endhint %}
 
-There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../ocean.py/) and [ocean.js](../ocean.js/) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
+There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../ocean.py) and [ocean.js](../ocean.js) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
 
 Alternatively, for a more straightforward solution that doesn't require coding, you can utilize the network explorer of your asset's network. By accessing the network explorer, you can directly interact with the contracts associated with your asset. Below, we provide a few examples to help guide you through the process.
 
 ### Manager
 
-The ability to add or remove Managers is exclusive to the **NFT Owner**. If you are the NFT Owner and wish to add/remove a new manager, simply call the [addManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L426)/[removeManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L438) function within the ERC721Template contract. This function enables you to grant managerial permissions to the designated individual.&#x20;
+The ability to add or remove Managers is exclusive to the **NFT Owner**. If you are the NFT Owner and wish to add/remove a new manager, simply call the [addManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L426)/[removeManager](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/templates/ERC721Template.sol#L438) function within the ERC721Template contract. This function enables you to grant managerial permissions to the designated individual.
 
 <details>
 
@@ -252,9 +250,7 @@ function addMultipleUsersToRoles(address[] memory addresses, RolesType[] memory 
 
 ### Roles & permissions in data NFT (ERC721) smart contract
 
-<table><thead><tr><th width="216">Action ↓ / Role →</th><th width="121">NFT Owner</th><th width="102">Manager</th><th width="160">ERC20 Deployer</th><th width="160">Store Updater</th><th width="170">Metadata Updater</th></tr></thead><tbody><tr><td>Set token URI</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Add manager</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Remove manager</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Clean permissions</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Set base URI</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Set Metadata state</td><td></td><td></td><td></td><td></td><td><strong>✓</strong></td></tr><tr><td>Set Metadata</td><td></td><td></td><td></td><td></td><td><strong>✓</strong></td></tr><tr><td>Create new datatoken</td><td></td><td></td><td><strong>✓</strong></td><td></td><td></td></tr><tr><td>Executes any other smart contract</td><td></td><td><strong>✓</strong></td><td></td><td></td><td></td></tr><tr><td>Set new key-value in store</td><td></td><td></td><td></td><td><strong>✓</strong></td><td></td></tr></tbody></table>
-
-##
+<table><thead><tr><th width="216">Action ↓ / Role →</th><th width="122">NFT Owner</th><th width="102">Manager</th><th width="160">ERC20 Deployer</th><th width="160">Store Updater</th><th width="170">Metadata Updater</th></tr></thead><tbody><tr><td>Set token URI</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Add manager</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Remove manager</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Clean permissions</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Set base URI</td><td><strong>✓</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>Set Metadata state</td><td></td><td></td><td></td><td></td><td><strong>✓</strong></td></tr><tr><td>Set Metadata</td><td></td><td></td><td></td><td></td><td><strong>✓</strong></td></tr><tr><td>Create new datatoken</td><td></td><td></td><td><strong>✓</strong></td><td></td><td></td></tr><tr><td>Executes any other smart contract</td><td></td><td><strong>✓</strong></td><td></td><td></td><td></td></tr><tr><td>Set new key-value in store</td><td></td><td></td><td></td><td><strong>✓</strong></td><td></td></tr></tbody></table>
 
 ## Roles-datatokens level
 

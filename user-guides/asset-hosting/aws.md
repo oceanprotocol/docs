@@ -76,7 +76,7 @@ To have the bucket granted public access, its policy needs to be modified likewi
 
 Note that the `<BUCKET-NAME>` must be chosen from the personal buckets dashboard.
 
-```JSON
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

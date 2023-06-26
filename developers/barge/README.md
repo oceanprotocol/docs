@@ -13,7 +13,7 @@ To explore all the available options and gain a deeper understanding of how to u
 By utilizing the Barge component, developers gain the freedom to conduct experiments, customize, and fine-tune their local development environment, and offers the flexibility to override the Docker image tag associated with specific components. By setting the appropriate environment variable before executing the start\_ocean.sh command, developers can customize the versions of various components according to their requirements. For instance, developers can modify the: `AQUARIUS_VERSION`, `PROVIDER_VERSION`, `CONTRACTS_VERSION`, `RBAC_VERSION`, and `ELASTICSEARCH_VERSION` environment variables to specify the desired Docker image tags for each respective component.&#x20;
 
 {% hint style="warning" %}
-⚠️ We've got an important heads-up about Barge that we want to share with you. Brace yourself, because it's not for the faint-hearted!  Here's the deal: the barge works great on Linux, but we need to be honest about its limitations on macOS. And, well, it doesn't work at all on Windows. Sorry, Windows users!
+⚠️ We've got an important heads-up about Barge that we want to share with you. Brace yourself, because **Barge is not for the faint-hearted**!  Here's the deal: the barge works great on Linux, but we need to be honest about its limitations on macOS. And, well, it doesn't work at all on Windows. Sorry, Windows users!
 
 To make things easier for everyone, we **strongly** recommend giving a try first on a **testnet**. Everything is configured already so it should be sufficient for your needs as well. Visit our [networks](../../discover/networks/) page to have clarity on the available test networks. ⚠️\
 

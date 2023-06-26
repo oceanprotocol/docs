@@ -4,7 +4,7 @@ description: >-
   list the buyers of a datatoken
 ---
 
-# Find datatoken/data NFT addresses & Chain ID
+# Retrieve datatoken/data NFT addresses & Chain ID
 
 ### How to find the network, datatoken address, and data NFT address from an Ocean Market link?
 
@@ -38,7 +38,7 @@ For example, for the following DID:op: "did:op:1b26eda361c6b6d307c8a139c4aaf36aa
 
 Here are the networks and their corresponding chain IDs:
 
-```
+```json
 "mumbai: 80001"
 "polygon: 137"
 "bsc: 56"
