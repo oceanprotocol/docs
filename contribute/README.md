@@ -29,13 +29,13 @@ For all the super sleuths out there, you may be able to earn a bounty for report
 
 ### Suggest a new feature 🤔💭
 
-Use the _Issues_ section of each repository and select _Feature request_ to suggest and discuss any features you would like to see added.
+Use the _Issues_ section of each repository and select _`Feature request`_ to suggest and discuss any features you would like to see added.
 
 As with bug reports, don't forget to search existing open + closed issues + PRs to see if something has already been suggested.
 
 ### Improve core software
 
-It takes a tribe of awesome coders to build our tech stack, and you're invited to pitch in 😊 We'd love to have you contribute to any repository within the `oceanprotocol` GitHub organization!
+It takes a tribe of awesome coders to build our tech stack, and you're invited to pitch in 😊 We'd love to have you contribute to any repository within the `oceanprotocol` [GitHub](https://github.com/oceanprotocol) organization!
 
 Before you start coding, please follow these basic guidelines:
 
@@ -59,7 +59,7 @@ Depending on the release management of each repository, your contribution will b
 
 Except for GitHub, you can chat with most Ocean Protocol core developers in our [Discord](https://discord.gg/TnXjkR5) if you have further development questions.
 
-### Develop an dApp or integration on top of Ocean Protocol
+### Develop a dApp or integration on top of Ocean Protocol
 
 We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with our open-source tools.
 
@@ -71,7 +71,7 @@ Our docs repo can always be improved. If you found a mistake or have an improvem
 
 ### Apply for a developer job
 
-Do you REALLY love building on Ocean Protocol? Consider joining us full time! Our openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
+Do you REALLY love building on Ocean Protocol? Consider joining us full-time! Our openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
 
 ### Get funding
 
@@ -80,6 +80,4 @@ You might be able to get funding from us for contributing to our core software, 
 * [**Shipyard**](https://oceanprotocol.com/shipyard) (Ocean curated grants).
 * [**Data Challenges**](https://oceanprotocol.com/bounties) (rewards for publishing algorithms and datasets).
 
-### Talk to us!
-
-Check our our [Community Page](https://www.oceanprotocol.com/community) for our social media links where you can join the buzz around Ocean or chat with us directly 😊 Toodles!
+Check our [Community Page](https://www.oceanprotocol.com/community) for our social media links where you can join the buzz around Ocean or chat with us directly 😊 Toodles!

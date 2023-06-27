@@ -11,9 +11,13 @@ Here's the sequence diagram for starting a new compute job.
 
 <figure><img src="../../.gitbook/assets/c2d/c2d_compute_job.png" alt=""><figcaption></figcaption></figure>
 
-The Consumer calls the Provider with `start(did, algorithm, additionalDIDs)`. It returns job id `XXXX`. The Provider oversees the rest of the work. At any point, the Consumer can query the Provider for the job status via `getJobDetails(XXXX)`.
+The interaction between the Consumer and the Provider follows a specific workflow. To initiate the process, the Consumer contacts the Provider by invoking the `start(did, algorithm, additionalDIDs)` function with parameters such as the data identifier (DID), algorithm, and additional DIDs if required. Upon receiving this request, the Provider generates a unique job identifier (`XXXX`) and returns it to the Consumer. The Provider then assumes the responsibility of overseeing the remaining steps.
 
-Here's how Provider works. First, it ensures that the Consumer has sent the appropriate datatokens to get access. Then, it calls asks the Operator-Service (a microservice) to start the job, which passes on the request to Operator-Engine (the actual compute system). Operator-Engine runs Kubernetes compute jobs etc as needed. Operator-Engine reports when to Operator-Service when the job has finished.
+Throughout the computation process, the Consumer has the ability to check the status of the job by making a query to the Provider using the `getJobDetails(XXXX)` function, providing the job identifier (`XXXX`) as a reference.
+
+Now, let's delve into the inner workings of the Provider. Initially, it verifies whether the Consumer has sent the appropriate datatokens to gain access to the desired data. Once validated, the Provider interacts with the Operator-Service, a microservice responsible for coordinating the job execution. The Provider submits a request to the Operator-Service, which subsequently forwards the request to the Operator-Engine, the actual compute system in operation.
+
+The Operator-Engine, equipped with functionalities like running Kubernetes compute jobs, carries out the necessary computations as per the requirements. Throughout the computation process, the Operator-Engine informs the Operator-Service of the job's progress. Finally, when the job reaches completion, the Operator-Engine signals the Operator-Service, ensuring that the Provider receives notification of the job's successful conclusion.
 
 Here's the actors/components:
 
@@ -30,9 +34,9 @@ Before the flow can begin, these pre-conditions must be met:
 
 ### Access Control using Ocean Provider
 
-As with the `access` service, the `compute` service requires the **Ocean Provider** as a component handled by Publishers. Ocean Provider is in charge of interacting with users and managing the basics of a Publisher's infrastructure to integrate this infrastructure into Ocean Protocol. The direct interaction with the infrastructure where the data resides happens through this component only.
+Similar to the `access service`, the `compute service` within Ocean Protocol relies on the [Ocean Provider](../provider/), which is a crucial component managed by Publishers. The role of the Ocean Provider is to facilitate interactions with users and handle the fundamental aspects of a Publisher's infrastructure, enabling seamless integration into the Ocean Protocol ecosystem. It serves as the primary interface for direct interaction with the infrastructure where the data is located.
 
-Ocean Provider includes the credentials to interact with the infrastructure (initially in cloud providers, but it could be on-premise).
+The [Ocean Provider](../provider/) encompasses the necessary credentials to establish secure and authorized interactions with the underlying infrastructure. Initially, this infrastructure may be hosted in cloud providers, although it also has the flexibility to extend to on-premise environments if required. By encompassing the necessary credentials, the Ocean Provider ensures the smooth and controlled access to the infrastructure, allowing Publishers to effectively leverage the compute service within Ocean Protocol.
 
 ### Operator Service
 
@@ -70,20 +74,22 @@ The Operator Engine is in charge of retrieving all the workflows registered in a
 
 ### Pod Configuration
 
-The Pod-Configuration repository operates in conjunction with the Operator Engine, and it initiates at the beginning of a job. It performs crucial functions that set up the environment for the job execution.
+The Pod-Configuration repository works hand in hand with the Operator Engine, playing a vital role in the initialization phase of a job. It carries out essential functions that establish the environment for job execution.
 
-The Pod-Configuration is a node.js script that dynamically manages the environment set-up at the start of a job by the operator-engine. Its role involves fetching and preparing necessary assets and files to ensure a seamless job execution.
+At the core of the Pod-Configuration is a node.js script that dynamically manages the setup process when a job begins within the operator-engine. Its primary responsibility revolves around fetching and preparing the required assets and files, ensuring a smooth and seamless execution of the job. By meticulously handling the environment configuration, the Pod-Configuration script guarantees that all necessary components are in place, setting the stage for a successful job execution.
 
 1. **Fetching Dataset Assets**: It fetches the files corresponding to datasets and saves them in the location `/data/inputs/DID/`. The files are named based on their array index ranging from 0 to X, depending on the total number of files associated with the dataset.
 2. **Fetching Algorithm Files**: The script then retrieves the algorithm files and stores them in the `/data/transformations/` directory. The first file is named 'algorithm', and the subsequent files are indexed from 1 to X, based on the number of files present for the algorithm.
 3. **Fetching DDOS**: Additionally, the Pod-Configuration fetches Decentralized Document Oriented Storage (DDOS) and saves them to the disk at the location `/data/ddos/`.
 4. **Error Handling**: In case of any provisioning failures, whether during data fetching or algorithm processing, the script updates the job status in a PostgreSQL database, and logs the relevant error messages.
 
-Once the Pod-Configuration successfully completes these tasks, it closes and signals the operator-engine to initiate the algorithm pod for the next steps. This repository provides the basis for smooth job processing by effectively managing assets and algorithm files, and handling potential provisioning error.
+Upon the successful completion of its tasks, the Pod-Configuration gracefully concludes its operations and sends a signal to the operator-engine, prompting the initiation of the algorithm pod for subsequent steps. This repository serves as a fundamental component in ensuring the seamless processing of jobs by efficiently managing assets, algorithm files, and addressing potential provisioning errors. By effectively handling these crucial aspects, the Pod-Configuration establishes a solid foundation for smooth job execution and enables the efficient progression of the overall workflow.
 
 ### Pod Publishing
 
-Pod Publishing is a command-line utility for processing, logging, and uploading workflow outputs, functioning in conjunction with the Operator Service and Operator Engine within a Kubernetes-based compute infrastructure. The primary functionality divided across three areas:
+Pod Publishing is a command-line utility that seamlessly integrates with the Operator Service and Operator Engine within a Kubernetes-based compute infrastructure. It serves as a versatile tool for efficiently processing, logging, and uploading workflow outputs. By working in tandem with the Operator Service and Operator Engine, Pod Publishing streamlines the workflow management process, enabling easy and reliable handling of output data generated during computation tasks. Whether it's processing complex datasets or logging crucial information, Pod Publishing simplifies these tasks and enhances the overall efficiency of the compute infrastructure.
+
+The primary functionality of Pod Publishing can be divided into three key areas:
 
 1. **Interaction with Operator Service**: Pod Publishing uploads the outputs of compute workflows initiated by the Operator Service to a designated AWS S3 bucket or the InterPlanetary File System (IPFS). It logs all processing steps and updates a PostgreSQL database.
 2. **Role in Publishing Pod**: Within the compute infrastructure orchestrated by the Operator Engine on Kubernetes (K8s), Pod Publishing is integral to the Publishing Pod. The Publishing Pod handles the creation of new assets in the Ocean Protocol network after a workflow execution.

@@ -9,15 +9,18 @@ description: >-
 
 ### Overview
 
-An algorithm in the Ocean Protocol stack is another asset type, in addition to data sets. An algorithm for Compute to Data is composed of the following:
+\
+In the Ocean Protocol stack, algorithms are recognized as distinct asset types, alongside datasets. When it comes to Compute-to-Data, an algorithm comprises the following key components:
 
-* an algorithm code
-* a Docker image (base image + tag)
-* an entry point
+* **Algorithm Code**: The algorithm code refers to the specific instructions and logic that define the computational steps to be executed on a dataset. It encapsulates the algorithms' functionalities, calculations, and transformations.
+* **Docker Image**: A Docker image plays a crucial role in encapsulating the algorithm code and its runtime dependencies. It consists of a base image, which provides the underlying environment for the algorithm, and a corresponding tag that identifies a specific version or variant of the image.
+* **Entry Point**: The entry point serves as the starting point for the algorithm's execution within the compute environment. It defines the initial actions to be performed when the algorithm is invoked, such as loading necessary libraries, setting up configurations, or calling specific functions.
+
+Collectively, these components form the foundation of an algorithm in the context of Compute-to-Data.
 
 ### Environment
 
-When creating an algorithm asset in Ocean Protocol, the additional `algorithm` object needs to be included in its metadata service to define the Docker container environment:
+When creating an algorithm asset in Ocean Protocol, it is essential to include the additional algorithm object in its metadata service. This algorithm object plays a crucial role in defining the Docker container environment associated with the algorithm. By specifying the necessary details within the algorithm object, such as the base image, tags, runtime configurations, and dependencies, the metadata service ensures that the algorithm asset is properly configured for execution within a Docker container.
 
 <details>
 

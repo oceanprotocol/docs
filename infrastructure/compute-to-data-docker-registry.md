@@ -5,9 +5,9 @@ description: >-
   algorithms in a C2D environment.
 ---
 
-# Setting up private docker registry
+# C2D - Private Docker Registry
 
-The document is intended for a production setup. The tutorial provides the steps to setup a private docker registry on the server for the following scenarios:
+The document is intended for a production setup. The tutorial provides the steps to set up a private docker registry on the server for the following scenarios:
 
 * Allow registry access only to the C2D environment.
 * Anyone can pull the image from the registry but, only authenticated users will push images to the registry.
@@ -22,10 +22,10 @@ _Note: Please change the domain names to your application-specific domain names.
 
 #### 1.1 Prerequisites
 
-* Running docker environment on the linux server.
+* A docker environment running on a Linux server.
 * Docker compose is installed.
 * C2D environment is running.
-* The domain names is mapped to the server hosting the registry.
+* The domain names are mapped to the server hosting the registry.
 
 #### 1.2 Generate certificates
 
@@ -34,9 +34,9 @@ _Note: Please change the domain names to your application-specific domain names.
 sudo certbot certonly --standalone --cert-name example.com -d example.com
 ```
 
-_Note: Do check the access right of the files/directories where certificates are stored. Usually, they are at `/etc/letsencrypt/`._
+_Note: Check the access right of the files/directories where certificates are stored. Usually, they are at `/etc/letsencrypt/`._
 
-#### 1.3 Generate password file
+#### 1.3 Generate a password file
 
 Replace content in `<>` with appropriate content.
 
@@ -48,7 +48,7 @@ docker run \
 
 #### 1.4 Docker compose template file for registry
 
-Copy the below yml content to `docker-compose.yml` file and replace content in `<>`.
+Copy the below `yml` content to `docker-compose.yml` file and replace content in `<>`.
 
 ```yml
 version: '3'
@@ -114,9 +114,9 @@ http {
 }
 ```
 
-#### 1.6 Create kubernetes secret in C2D server
+#### 1.6 Create Kubernetes secret in C2D server
 
-Login into Compute-to-data enviroment and run the following command with appropriate credentials:
+Login into the compute-to-data enviroment and run the following command with the appropriate credentials:
 
 ```bash
 kubectl create secret docker-registry regcred --docker-server=example.com --docker-username=<username> --docker-password=<password> --docker-email=<email_id> -n ocean-compute
@@ -124,7 +124,7 @@ kubectl create secret docker-registry regcred --docker-server=example.com --dock
 
 #### 1.7 Update operator-engine configuration
 
-Add `PULL_SECRET` property with value `regcred` in the [operator.yml](https://github.com/oceanprotocol/operator-engine/blob/main/kubernetes/operator.yml) file of operator-engine configuration. For more detials on operator-engine properties refer this [link](https://github.com/oceanprotocol/operator-engine/blob/177ca7185c34aa2a503afbe026abb19c62c69e6d/README.md?plain=1#L106)
+Add `PULL_SECRET` property with value `regcred` in the [operator.yml](https://github.com/oceanprotocol/operator-engine/blob/main/kubernetes/operator.yml) file of operator-engine configuration. For more details on operator-engine properties refer to the [operator-engine readme](https://github.com/oceanprotocol/operator-engine/blob/v4main/README.md).
 
 Apply updated operator-engine configuration.
 
@@ -133,20 +133,20 @@ kubectl config set-context --current --namespace ocean-compute
 kubectl apply  -f operator-engine/kubernetes/operator.yml
 ```
 
-### Steup 2: Allow anyonymous `pull` operations
+### Steup 2: Allow anonymous `pull` operations
 
 To implement this use case, 2 domains will be required:
 
-* **example.com**: This domain will allow image push/pull operations only to the authenticated users.
+* **example.com**: This domain will only allow image push/pull operations from authenticated users.
 * **readonly.example.com**: This domain will allow only image pull operations
 
 _Note: Please change the domain names to your application-specific domain names._
 
 #### 2.1 Prerequisites
 
-* Running docker environment on the linux server.
+* Running docker environment on the Linux server.
 * Docker compose is installed.
-* 2 domain names is mapped to the same server IP address.
+* 2 domain names are mapped to the same server IP address.
 
 #### 2.2 Generate certificates
 
@@ -158,7 +158,7 @@ sudo certbot certonly --standalone --cert-name readonly.example.com -d readonly.
 
 _Note: Do check the access right of the files/directories where certificates are stored. Usually, they are at `/etc/letsencrypt/`._
 
-#### 2.3 Generate password file
+#### 2.3 Generate a password file
 
 Replace content in `<>` with appropriate content.
 
@@ -170,7 +170,7 @@ docker run \
 
 #### 2.4 Docker compose template file for registry
 
-Copy the below yml content to `docker-compose.yml` file and replace content in `<>`. Here, we will be creating two services of the docker registry so that anyone can `pull` the images from the registry but, only authenticated users can `push` the images.
+Copy the below `yml` content to `docker-compose.yml` file and replace content in `<>`. Here, we will be creating two services of the docker registry so that anyone can `pull` the images from the registry but, only authenticated users can `push` the images.
 
 ```yml
 version: '3'
@@ -305,7 +305,7 @@ docker image pull readonly.example.com/my-algo:latest
 
 #### Next step
 
-You can publish an algorithm asset with the metadata containing registry URL, image, and tag information to enable users to run C2D jobs.
+You can publish an algorithm asset with the metadata containing the registry URL, image, and tag information to enable users to run C2D jobs.
 
 ### Further references
 

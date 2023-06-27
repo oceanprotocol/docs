@@ -8,7 +8,9 @@ description: Specification of compute options for assets in Ocean Protocol.
 
 ### Compute Options
 
-An asset with a service of `type` `compute` has the following additional attributes under the `compute` object. This object is required if the asset is of `type` `compute`, but can be omitted for `type` of `access`.
+An asset categorized as a `compute type` incorporates additional attributes under the `compute object`.&#x20;
+
+These attributes are specifically relevant to assets that fall within the compute category and are not required for assets classified under the `access type`. However, if an asset is designated as `compute`, it is essential to include these attributes to provide comprehensive information about the compute service associated with the asset.
 
 <table><thead><tr><th width="404.3333333333333">Attribute</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>allowRawAlgorithm</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag &#x26; drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td></tr><tr><td><strong><code>allowNetworkAccess</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, the algorithm job will have network access.</td></tr><tr><td><strong><code>publisherTrustedAlgorithmPublishers</code></strong>*</td><td>Array of <code>string</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.</td></tr><tr><td><strong><code>publisherTrustedAlgorithms</code></strong>*</td><td>Array of <code>publisherTrustedAlgorithms</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td></tr></tbody></table>
 
@@ -16,7 +18,9 @@ An asset with a service of `type` `compute` has the following additional attribu
 
 ### Trusted Algorithms
 
-The `publisherTrustedAlgorithms` is an array of objects with the following structure:
+The `publisherTrustedAlgorithms` is an array of objects that specifies algorithm permissions. It controls which algorithms can be used for computation. If not defined, any published algorithm is allowed. If the array is empty, no algorithms are allowed. However, if the array is not empty, only algorithms published by the defined publishers are permitted.&#x20;
+
+The structure of each object within the `publisherTrustedAlgorithms` array is as follows:
 
 <table><thead><tr><th width="289.3333333333333">Attribute</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>did</code></strong></td><td><code>string</code></td><td>The DID of the algorithm which is trusted by the publisher.</td></tr><tr><td><strong><code>filesChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's files (as <code>string</code>).</td></tr><tr><td><strong><code>containerSectionChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's image details (as <code>string</code>).</td></tr></tbody></table>
 
