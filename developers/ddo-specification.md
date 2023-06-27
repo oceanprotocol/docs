@@ -13,6 +13,7 @@ description: >-
 erDiagram
 DDO
 Metadata
+Credentials
 Services
 Compute
 publisherTrustedAlgorithms
@@ -20,6 +21,7 @@ ConsumerParameters
 AlgorithmMetadata
 Container
 DDO ||--|{Metadata : contains
+DDO ||--|{Credentials : contains
 DDO ||--|{Services : contains
 Metadata ||--|{AlgorithmMetadata : contains
 AlgorithmMetadata ||--|{Container : contains
