@@ -6,11 +6,7 @@ description: >-
 
 # Setup a Server
 
-Now that you know the components of the Ocean Protocol stack and what each does, it's time to learn how to deploy these components in your environment. There are many ways in which the components can be deployed, from simple configurations used for development and testing to complex configurations, used for production systems.&#x20;
-
-All the Ocean Protocol components (Provider, Aquarius, Subgraph) are designed to run in Docker containers, on a Linux operating system. For simple configurations, we rely on Docker Engine and Docker Compose products to deploy and run our components, while for complex configurations we use Kubernetes with Docker Engine.&#x20;
-
-Each deployment starts with setting up a server on which the component will be installed, either on-premise or hosted in a cloud platform.
+Each deployment of the Ocean components starts with setting up a server on which these will be installed, either on-premise or hosted in a cloud platform.
 
 ## Prerequisites
 
