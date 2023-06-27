@@ -11,7 +11,7 @@ In case you customized the Ocean Market using the tutorial from this chapter (li
 
 ### Create a directory
 
-```
+```bash
 mkdir my-marketplace
 cd my-marketplace
 ```
@@ -21,7 +21,7 @@ cd my-marketplace
 If you already created the .env file as instructed in ...(link to customize the market chapter), you can skip this step, otherwise copy the below content into the \`.env\` file.
 
 {% code title=".env" overflow="wrap" %}
-```
+```bash
 # Update this value if your Market should use custom Aquarius 
 NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
 

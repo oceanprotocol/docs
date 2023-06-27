@@ -9,27 +9,47 @@ description: >-
 
 # DDO Specification
 
+### DDO Schema - High Level&#x20;
+
+The below diagram shows the high-level DDO schema depicting the content of each data structure and the relations between them.&#x20;
+
+Please note that some data structures apply only on certain types of services or assets.
+
 ```mermaid
-erDiagram
-DDO
-Metadata
-Credentials
-Services
-Compute
-publisherTrustedAlgorithms
-ConsumerParameters
-AlgorithmMetadata
-Container
-DDO ||--|{Metadata : contains
-DDO ||--|{Credentials : contains
-DDO ||--|{Services : contains
-Metadata ||--|{AlgorithmMetadata : contains
-AlgorithmMetadata ||--|{Container : contains
-Compute ||--|{ publisherTrustedAlgorithms : contains
-Services ||--|{ Compute : contains
-Services ||--|{ ConsumerParameters : contains
- 
- 
+---
+title: DDO High Level Diagram
+---
+classDiagram
+
+    class DDO{
+    }
+
+    class Metadata{
+    }
+    class Credentials{
+    }
+
+    class AlgorithmMetadata["AlgorithmMetadata\n(for algorithm type)"] {
+    }
+  
+    class Container{
+    }
+    class Service{
+    }
+    class ConsumerParameters["Consumer\nParameters"]{
+    }
+   class Compute{
+    }
+DDO "1" --> "1" Metadata
+DDO "1" --> "0..n" Credentials
+DDO "1" --> "1..*" Service
+
+Metadata "1" --> "0..1" AlgorithmMetadata
+AlgorithmMetadata "1" --> "1..*" Container
+AlgorithmMetadata "1" --> "1..*" ConsumerParameters
+
+Service "1" --> "0..n" Compute
+Service "1" --> "0..n" ConsumerParameters
 ```
 
 ### Required Attributes
@@ -469,3 +489,100 @@ For algorithms and datasets that are used for compute to data, there are additio
 * `consumerParameters`
 
 Details for each of these are explained on the [Compute Options page](compute-to-data/compute-options.md).
+
+### DDO Schema - Detailed
+
+The below diagram shows the detailed DDO schema depicting the content of each data structure and the relations between them.&#x20;
+
+Please note that some data structures apply only on certain types of services or assets.
+
+```mermaid
+---
+title: DDO Detailed Diagram
+---
+classDiagram
+
+    class DDO{
+	+@context
+	+id
+	+version
+	+chainId
+	+nftAddress
+        +Metadata
+        +Credentials
+        +Service
+    }
+
+    class Metadata{
+        +created
+	+updated
+	+description
+	+name
+        +type ["dataset"/"algorithm"]
+	+author
+	+license
+	+tags
+	+links
+	+contentLanguage
+	+categories
+	+copyrightHolder
+	+additionalInformation
+	+AlgorithmMetadata [for "algorithm" type]
+    }
+    class Credentials{
+        +allow
+	+deny
+    }
+
+    class AlgorithmMetadata["AlgorithmMetadata (for algorithm)"] {
+        +language
+	+version
+	+ConsumerParameters
+	+Container
+    }
+  
+    class Container{
+        +entrypoint
+	+image
+	+tag
+	+checksum
+    }
+    class Service{
+        +id
+	+type ["access"/"compute"]
+	+files
+	+name
+	+description
+	+datatokenAddress
+	+serviceEndpoint
+	+timeout 
+        +additionalInformation
+	+ConsumerParameters
+	+Compute
+    }
+    class ConsumerParameters{
+	+type
+	+name
+	+label
+	+required
+	+description
+	+default
+	+options
+    }
+   class Compute{
+        +publisherTrustedAlgorithms
+	+publisherTrustedAlgorithmPublishers
+    }
+DDO "1" --> "1" Metadata
+DDO "1" --> "1..*" Service
+DDO "1" --> "*" Credentials
+
+
+Metadata "1" --> "0..1" AlgorithmMetadata
+AlgorithmMetadata "1" --> "1..*" Container
+AlgorithmMetadata "1" --> "1..*" ConsumerParameters
+
+Service "1" --> "0..n" Compute
+Service "1" --> "0..n" ConsumerParameters
+```
+
