@@ -34,10 +34,10 @@ When building a dApp on top of Ocean Protocol, you gain access to a wide range o
 
 These are a few examples of what can be built on top of Ocean.
 
-1. [Ocean Waves](https://waves.oceanprotocol.com/) - Music NFTs [marketplace](https://github.com/oceanprotocol/waves)
-2. [Ocean Market](https://market.oceanprotocol.com) - Decentralised data [marketplace](https://github.com/oceanprotocol/market)
+1. [Ocean Waves](https://waves.oceanprotocol.com/) - Decentralized music [marketplace](https://github.com/oceanprotocol/waves)
+2. [Ocean Market](https://market.oceanprotocol.com) - Decentralized data [marketplace](https://github.com/oceanprotocol/market)
 3. [Autobot](https://autobotocean.com/) - Tokengated [data farming](https://df.oceandao.org/) intelligence app
-4. [Ocean Gate](https://tokengate.oceanprotocol.com/) - Tokengated [content](https://github.com/oceanprotocol/token-gating-template)
+4. [Ocean Token Gate](https://tokengate.oceanprotocol.com/) - Tokengated [content](https://github.com/oceanprotocol/token-gating-template)
 5. [Acentrik Market](https://market.acentrik.io/) - Enterprise decentralized data marketplace
 
 </details>
@@ -49,15 +49,15 @@ These are a few examples of what can be built on top of Ocean.
 You can choose from two options:
 
 1. **Fork the** [**Ocean Marketplace**](https://github.com/oceanprotocol/market) **and customize it**: You have the ability to fork the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it according to your needs. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../developers/build-a-marketplace/) to learn how to do it.
-2. **Build your marketplace with Ocean components**: Alternatively, you can build your data marketplace from scratch using Ocean Protocol's modular components. Ocean provides a comprehensive set of building blocks, such as the [**Aquarius**](https://github.com/oceanprotocol/aquarius), [**Provider**](https://github.com/oceanprotocol/provider), Ocean [contracts](https://github.com/oceanprotocol/contracts), and Ocean libraries([**ocean.js**](https://github.com/oceanprotocol/ocean.js) & [**ocean.py**](https://github.com/oceanprotocol/ocean.py)), which you can integrate into your own marketplace development. This empowers you to create a unique and customized data marketplace experience while leveraging the underlying capabilities and standards provided by Ocean Protocol.
+2. **Build your marketplace with Ocean components**: Alternatively, you can build your data marketplace from scratch using Ocean Protocol's modular components. Ocean provides a comprehensive set of building blocks, such as the [**Aquarius**](https://github.com/oceanprotocol/aquarius), [**Provider**](https://github.com/oceanprotocol/provider), Ocean [contracts](https://github.com/oceanprotocol/contracts), and Ocean libraries ([**ocean.js**](https://github.com/oceanprotocol/ocean.js) & [**ocean.py**](https://github.com/oceanprotocol/ocean.py)), which you can integrate into your own marketplace development. This empowers you to create a unique and customized data marketplace experience while leveraging the underlying capabilities and standards provided by Ocean Protocol.
 
 </details>
 
 <details>
 
-<summary><mark style="color:blue;"><strong>Build with and on top of Ocean</strong></mark><br><br>Unleash your creativity and build innovative solutions with Ocean Protocol's technology. Utilize the extensive range of tools, libraries, and APIs to create applications, products, and services that leverage the power of decentralized data.</summary>
+<summary><mark style="color:blue;"><strong>Tokengate Your dApp or Content</strong></mark><br><br>Are you interested in token gating your dApp or content using an Ocean data NFT? We offer you all the code and support that you need to make this happen.</summary>
 
-Seamlessly integrate with Ocean's ecosystem, contribute to the protocol's growth, and join a vibrant community of developers and entrepreneurs shaping the future of data-driven solutions.
+Feel free to fork the [Ocean Token Gate template](https://github.com/oceanprotocol/token-gating-template) code and customize it to start building your dApp from scratch. If you already have an existing dApp of yours, then you can also modify it simply to use an Ocean data NFT. The [Ocean Token Gate repo](https://github.com/oceanprotocol/token-gating-template) will be helpful to inform your coding to do this, of course. But we also explain the [smart contract mechanics](../developers/contracts/) of Data NFTs and Datatokens[ in our docs](../developers/contracts/) for you to understand the code better. Remember, we're always here to help guide you with any coding questions on [Discord](https://discord.gg/TnXjkR5).
 
 </details>
 
@@ -134,6 +134,16 @@ By participating in Ocean Data Challenges, you can tackle real-world problems, l
 <summary><mark style="color:blue;">Become an Ambassador</mark><br><br>Becoming an <a href="https://oceanambassadors.community/">Ocean Ambassador</a> presents a unique opportunity to actively contribute to the growth and adoption of Ocean Protocol while being at the forefront of the decentralized data revolution.</summary>
 
 As an Ocean Ambassador, you become an advocate for the protocol, promoting its vision of democratizing data and empowering individuals. By sharing your knowledge and enthusiasm, you can educate others about the benefits and potential of Ocean Protocol, inspiring them to join the ecosystem. As part of a global community of like-minded individuals, you gain access to exclusive resources, networking opportunities, and collaborations that further enhance your expertise in the data economy. As an Ambassador, you play a vital role in shaping the future of data by driving awareness, fostering innovation, and helping to build a more open and equitable data ecosystem. Join the Ocean Ambassador program by completing the [Ocean Academy](https://www.oceanacademy.io/) and become a catalyst for positive change in the world of data.
+
+</details>
+
+<details>
+
+<summary><mark style="color:green;">Contribute to Ocean Code Development</mark><br><br>Make a positive impact in the Web3 data economy by contributing to <a href="https://github.com/oceanprotocol">Ocean's open source code</a> on Github! From feature requests to pull requests, contributions of all kinds are appreciated.</summary>
+
+To begin, [visit our Github page](https://github.com/oceanprotocol) where you can see the repos and contributors. If you're going to contribute code to a repo, then we ask that you fork the code first, make your changes, and then create a pull request for us to review. If you are reporting an issue, then please first search the existing issues to see if it is documented yet. If not, then please open a new issue by describe your problem as best as possible and include screenshots. \
+\
+We also welcome you to join our [Discord developer community](https://discord.gg/TnXjkR5) where you can get rapid, practical advice on using Ocean tech but also get to know Ocean core team more personally!
 
 </details>
 
