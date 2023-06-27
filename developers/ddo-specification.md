@@ -526,7 +526,7 @@ classDiagram
 	+contentLanguage
 	+categories
 	+copyrightHolder
-	+additionalInformation
+	+additionalInformation
 	+AlgorithmMetadata [for "algorithm" type]
     }
     class Credentials{
@@ -574,7 +574,7 @@ classDiagram
 	+publisherTrustedAlgorithmPublishers
     }
 DDO "1" --> "1" Metadata
-DDO "1" --> "1..*" Service
+DDO "1" --> "1..n" Service
 DDO "1" --> "*" Credentials
 
 
