@@ -7,19 +7,21 @@ description: Architecture overview
 
 ### Architecture Overview
 
-Here's the sequence diagram for starting a new compute job.
-
-<figure><img src="../../.gitbook/assets/c2d/c2d_compute_job.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/c2d/c2d_compute_job.png" alt=""><figcaption><p>Compute architecture overview</p></figcaption></figure>
 
 The interaction between the Consumer and the Provider follows a specific workflow. To initiate the process, the Consumer contacts the Provider by invoking the `start(did, algorithm, additionalDIDs)` function with parameters such as the data identifier (DID), algorithm, and additional DIDs if required. Upon receiving this request, the Provider generates a unique job identifier (`XXXX`) and returns it to the Consumer. The Provider then assumes the responsibility of overseeing the remaining steps.
 
 Throughout the computation process, the Consumer has the ability to check the status of the job by making a query to the Provider using the `getJobDetails(XXXX)` function, providing the job identifier (`XXXX`) as a reference.
 
+{% hint style="info" %}
+You have the option to initiate a compute job using one or more data assets. You can explore this functionality by utilizing the [ocean.py](../ocean.py/) and [ocean.js](../ocean.js/) libraries.
+{% endhint %}
+
 Now, let's delve into the inner workings of the Provider. Initially, it verifies whether the Consumer has sent the appropriate datatokens to gain access to the desired data. Once validated, the Provider interacts with the Operator-Service, a microservice responsible for coordinating the job execution. The Provider submits a request to the Operator-Service, which subsequently forwards the request to the Operator-Engine, the actual compute system in operation.
 
 The Operator-Engine, equipped with functionalities like running Kubernetes compute jobs, carries out the necessary computations as per the requirements. Throughout the computation process, the Operator-Engine informs the Operator-Service of the job's progress. Finally, when the job reaches completion, the Operator-Engine signals the Operator-Service, ensuring that the Provider receives notification of the job's successful conclusion.
 
-Here's the actors/components:
+Here are the actors/components:
 
 * Consumers - The end users who need to use some computing services offered by the same Publisher as the data Publisher.
 * Operator-Service - Micro-service that is handling the compute requests.

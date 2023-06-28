@@ -12,7 +12,7 @@ An asset categorized as a `compute type` incorporates additional attributes unde
 
 These attributes are specifically relevant to assets that fall within the compute category and are not required for assets classified under the `access type`. However, if an asset is designated as `compute`, it is essential to include these attributes to provide comprehensive information about the compute service associated with the asset.
 
-<table><thead><tr><th width="404.3333333333333">Attribute</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>allowRawAlgorithm</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag &#x26; drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td></tr><tr><td><strong><code>allowNetworkAccess</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, the algorithm job will have network access.</td></tr><tr><td><strong><code>publisherTrustedAlgorithmPublishers</code></strong>*</td><td>Array of <code>string</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.</td></tr><tr><td><strong><code>publisherTrustedAlgorithms</code></strong>*</td><td>Array of <code>publisherTrustedAlgorithms</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td></tr></tbody></table>
+<table><thead><tr><th width="224.33333333333331">Attribute</th><th width="154">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>allowRawAlgorithm</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag &#x26; drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td></tr><tr><td><strong><code>allowNetworkAccess</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, the algorithm job will have network access.</td></tr><tr><td><strong><code>publisherTrustedAlgorithmPublishers</code></strong>*</td><td>Array of <code>string</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. If not empty any algo published by the defined publishers is allowed.</td></tr><tr><td><strong><code>publisherTrustedAlgorithms</code></strong>*</td><td>Array of <code>publisherTrustedAlgorithms</code></td><td>If not defined, then any published algorithm is allowed. If empty array, then no algorithm is allowed. Otherwise only the algorithms defined in the array are allowed. (see below).</td></tr></tbody></table>
 
 \* Required
 
@@ -22,9 +22,9 @@ The `publisherTrustedAlgorithms` is an array of objects that specifies algorithm
 
 The structure of each object within the `publisherTrustedAlgorithms` array is as follows:
 
-<table><thead><tr><th width="289.3333333333333">Attribute</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>did</code></strong></td><td><code>string</code></td><td>The DID of the algorithm which is trusted by the publisher.</td></tr><tr><td><strong><code>filesChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's files (as <code>string</code>).</td></tr><tr><td><strong><code>containerSectionChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's image details (as <code>string</code>).</td></tr></tbody></table>
+<table><thead><tr><th width="289.3333333333333">Attribute</th><th width="114">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>did</code></strong></td><td><code>string</code></td><td>The DID of the algorithm which is trusted by the publisher.</td></tr><tr><td><strong><code>filesChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's files (as <code>string</code>).</td></tr><tr><td><strong><code>containerSectionChecksum</code></strong></td><td><code>string</code></td><td>Hash of algorithm's image details (as <code>string</code>).</td></tr></tbody></table>
 
-To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
+To produce `filesChecksum`, call the Provider FileInfoEndpoint with parameter withChecksum = True. If the algorithm has multiple files, `filesChecksum` is a concatenated string of all files checksums (ie: checksumFile1+checksumFile2 , etc)
 
 To produce `containerSectionChecksum`:
 
@@ -95,19 +95,11 @@ Sometimes, the asset needs additional input data before downloading or running a
 
 The `consumerParameters` is an array of objects. Each object defines a field and has the following structure:
 
-| Attribute           | Type                             | Description                                                                |
-| ------------------- | -------------------------------- | -------------------------------------------------------------------------- |
-| **`name`**\*        | `string`                         | The parameter name (this is sent as HTTP param or key towards algo)        |
-| **`type`**\*        | `string`                         | The field type (text, number, boolean, select)                             |
-| **`label`**\*       | `string`                         | The field label which is displayed                                         |
-| **`required`**\*    | `boolean`                        | If customer input for this field is mandatory.                             |
-| **`description`**\* | `string`                         | The field description.                                                     |
-| **`default`**\*     | `string`, `number`, or `boolean` | The field default value. For select types, `string` key of default option. |
-| **`options`**       | Array of `option`                | For select types, a list of options.                                       |
+<table><thead><tr><th width="176.33333333333331">Attribute</th><th width="201">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>name</code></strong>*</td><td><code>string</code></td><td>The parameter name (this is sent as HTTP param or key towards algo)</td></tr><tr><td><strong><code>type</code></strong>*</td><td><code>string</code></td><td>The field type (text, number, boolean, select)</td></tr><tr><td><strong><code>label</code></strong>*</td><td><code>string</code></td><td>The field label which is displayed</td></tr><tr><td><strong><code>required</code></strong>*</td><td><code>boolean</code></td><td>If customer input for this field is mandatory.</td></tr><tr><td><strong><code>description</code></strong>*</td><td><code>string</code></td><td>The field description.</td></tr><tr><td><strong><code>default</code></strong>*</td><td><code>string</code>, <code>number</code>, or <code>boolean</code></td><td>The field default value. For select types, <code>string</code> key of default option.</td></tr><tr><td><strong><code>options</code></strong></td><td>Array of <code>option</code></td><td>For select types, a list of options.</td></tr></tbody></table>
 
-\* Required
+\* **Required**
 
-Each `option` is an `object` containing a single key:value pair where the key is the option name, and the value is the option value.
+Each `option` is an `object` containing a single key: value pair where the key is the option name, and the value is the option value.
 
 <details>
 
@@ -160,12 +152,18 @@ Each `option` is an `object` containing a single key:value pair where the key is
 
 </details>
 
-Algorithms will have access to a JSON file located at `/data/inputs/algoCustomData.json`, which contains the `keys/values` for input data required. Example:
+Algorithms will have access to a JSON file located at `/data/inputs/algoCustomData.json`, which contains the `keys/values` input data required. Example:
 
 <details>
 
 <summary>Key Value Example</summary>
 
-\`\`\`json { "hometown": "São Paulo", "age": 10, "developer": true, "languagePreference": "nodejs" } \`\`\`
+<pre class="language-json"><code class="lang-json">{ 
+    "hometown": "São Paulo",
+    "age": 10, 
+    "developer": true, 
+<strong>    "languagePreference": "nodejs" 
+</strong>}
+</code></pre>
 
 </details>
