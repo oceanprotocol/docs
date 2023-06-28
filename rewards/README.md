@@ -24,7 +24,7 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 ## Data Farming
 
-![DF Rewards Page](../.gitbook/assets/rewards/df_rewards_page.png)
+![DF Rewards Page](../.gitbook/assets/rewards/df\_rewards\_page.png)
 
 [Data Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
 
@@ -32,7 +32,7 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 ## Delegation
 
-[Delegation](delegation.md) will teach you how to share your veOCEAN allocation power to other users who can manage Data Farming for you.
+[Delegation](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards) will teach you how to share your veOCEAN allocation power to other users who can manage Data Farming for you.
 
 Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of your rewards and the process of returning those back to you.
 

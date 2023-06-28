@@ -19,6 +19,10 @@ Thus, if you really want to max out your APY:
 3. Lock OCEAN and stake veOCEAN on your published assets for weekly Active Rewards
 4. Claim the rewards
 
+#### Don't have time to publish your own datasets?&#x20;
+
+Another way to improve your yield is by [delegating](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made. To read more, see our [info on Delegation](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards).
+
 ### Those assets don't sell themselves!
 
 Marketing your assets to buyers is your challenge. Just because you publish them in the Ocean ecosystem doesn't mean that they will sell. It will take real work. Your reward is great APY. Its incentives all the way down 🙂
