@@ -4,9 +4,9 @@ description: Get veOCEAN tokens to use the Data Farming dApp and make yield! ðŸ§
 
 # Get Started Data Farming
 
-### What the \*@$! is Data Farming?
+### What is Data Farming?
 
-[Data Farming](https://df.oceandao.org) is our dApp that generates yield for participants that curate and publish valuable assets in the Ocean ecosystem.&#x20;
+[Data Farming](https://df.oceandao.org) is our dApp that generates yield for participants that curate and publish valuable assets in the Ocean ecosystem.
 
 <figure><img src="../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
@@ -32,7 +32,7 @@ Not much of a reader? Watch and learn, friend
 Watch and learn, friend
 {% endembed %}
 
-**Step 3 - Go to Ocean Protocol's Data Farming dapp**
+**Step 3 - Go to Ocean Protocol's Data Farming dApp**
 
 * Go to [https://df.oceandao.org/](https://df.oceandao.org/)
 

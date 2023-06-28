@@ -25,7 +25,7 @@ The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for
 #### Step 4 - Select the assets which you would like to allocate to by toggling the percentage allocation at the end of the row
 
 * On the rightmost column, toggle the percentage of your total veOCEAN that you wish to allocate to each asset of your choice. You will **get a portion of the sales** of each asset that you allocate to!
-* Note that if you allocate to an asset which YOU published, then you will **get 2x the rewards** of any sales. The rows for assets that you publish will appear cream colored.
+* Note that if you allocate to an asset that YOU published, then you will get an **allocation** **boost** and your allocation will be counted as **2x**. The rows for assets that you publish will appear cream-colored.
 
 <figure><img src="../.gitbook/assets/allocations.png" alt=""><figcaption><p>Toggle the percentage of your veOCEAN that you would like to allocate to each asset</p></figcaption></figure>
 
@@ -56,6 +56,6 @@ Follow these steps to delegate your veOCEAN:
 
 #### What if someone delegates active rewards to you?
 
-If you receive veOCEAN allocation power from other wallets, then you will receive their active rewards and be responsible for distributing rewards back to the delegators. You cannot delegate the veOCEAN you received from delegates, only the veOCEAN you received from your lock.&#x20;
+If you receive veOCEAN allocation power from other wallets, then you will receive their active rewards. You cannot delegate the veOCEAN you received from delegates, only the veOCEAN you received from your lock.&#x20;
 
 <figure><img src="https://1520763098-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQlpIJEeu8x5yl0OLuXn%2Fuploads%2Fgit-blob-423f12f5b84205ab6cff8b79a1211fcd955d637c%2FveOCEAN-Delegation.png?alt=media" alt=""><figcaption></figcaption></figure>
