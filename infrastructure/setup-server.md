@@ -49,13 +49,11 @@ As mentioned earlier, you can use either an on-premise server or one hosted in t
 
 If you choose to use a server hosted in the cloud, you need to create the server using the user interface provided by the cloud platform. Following is an example of how to create a server in Digitalocean.&#x20;
 
-#### Example: Creating an Ubuntu Linux server in the Digitalocean cloud
+#### Example: Create an Ubuntu Linux server in the Digitalocean cloud
 
-1. Creating account and setting billing
+1. Create an account and set billing
 
 Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create an account. Provide the appropriate information for billing and accounting.
-
-
 
 2. Create a server
 
@@ -83,11 +81,9 @@ Select the region where you want the component to be hosted and a root password.
 
 5. Finish the configuration and create the server
 
-Specify a hostname for the server, specify the project to which you assign the server and then click on `Create Droplet.`&#x20;
+Specify a hostname for the server, specify the project to which you assign the server, and then click on `Create Droplet.`&#x20;
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Finalize and create the server</p></figcaption></figure>
-
-
 
 6. Access the server's console
 
@@ -99,7 +95,7 @@ After the server is ready, select the `Access console` option from the dropdown 
 
 From the terminal window, run the following commands to install Docker and Docker Compose.
 
-```
+```bash
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg lsb-release
 sudo mkdir -p /etc/apt/keyrings
@@ -115,88 +111,12 @@ sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
 
-
-
 ### Install Kubernetes with Docker Engine
 
 Kubernetes is an orchestration engine for containerized applications and the initial setup is dependent on the platform on which it is deployed - presenting how this product must be installed and configured is outside the scope of this document.&#x20;
 
-For cloud deployment, most of the cloud providers have dedicated turnkey solutions for Kubernetes. A comprehensive list of such cloud providers in presented [here](https://kubernetes.io/docs/setup/production-environment/turnkey-solutions/).&#x20;
+For cloud deployment, most of the cloud providers have dedicated turnkey solutions for Kubernetes. A comprehensive list of such cloud providers is presented [here](https://kubernetes.io/docs/setup/production-environment/turnkey-solutions/).&#x20;
 
 For an on-premise deployment of Kubernetes, please refer to this [link](https://kubernetes.io/docs/setup/).
 
-
-
 Now that the execution environment is prepared and the prerequisites installed, we can proceed to deploy the Ocean's components.
-
-
-
-
-
-
-
-<< test Mermaid Entity Relationship Diagram >>
-
-```mermaid
-erDiagram
-DDO ||--|{ Metadata : contains
-DDO ||--|{ Services : contains
-Metadata ||--|{ AlgorithmMetadata : contains
-AlgorithmMetadata ||--|{ Container : contains
-    DDO {
-        arrayOfString context
-        string id
-        string version
-        number chainID
-        string nftAddress 
-        Metadata metadata
-        Services services
-        Credentials credentials       
-}
-    Metadata {
-        ISODateTimeString created
-        ISODateTimeString updated
-        string description
-        string copyrightHolder
-        string name
-        string type
-        string author
-        string license
-        arrayOfString links
-        string contentLanguage
-        arrayOfString tags
-        arrayOfStrings categories
-        Object additionalInformation
-        AlgorithmMetadata algorithm
-}
-
-AlgorithmMetadata {
-    string language
-    string version
-    ConsumerParameters consumerParameters
-    Container container
-}
-
-Container {
-string entrypoint
-string image
-string tag
-string checksum
-}
-
-Services {
-string id
-string type
-string name
-string description
-string datatokenAddress
-string serviceEndpoint
-Files files
-number timeout
-Compute compute
-ConsumerParameters consumerParameters
-Object additionalInformation
-}
-
-```
-

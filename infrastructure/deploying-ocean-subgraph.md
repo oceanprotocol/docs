@@ -6,19 +6,13 @@ Ocean subgraph allows querying the datatoken, data NFT, and all event informatio
 
 Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotocol/graph-node), therefore, in this document, we will show first how to deploy graph-node - either using Docker Engine or Kubernetes - and then how to install Ocean Subgraph on the graph-node system.&#x20;
 
-
-
 ## Deploying Graph-node using Docker Engine and Docker Compose
-
-
 
 ### Prerequisites
 
 * A server for hosting Graph-node. See [this guide](setup-server.md) for how to create a server;
 * Docker Compose and Docker Engine are installed and configured on the server. See [this guide](setup-server.md#install-docker-engine-and-docker-compose) for how to install these products.
 * The RPC URLs and API keys for each of the networks to which Ocean Subgraph will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
-
-
 
 ### Steps
 
@@ -29,13 +23,9 @@ Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotoc
 5. [Check the service's status](deploying-ocean-subgraph.md#5.-check-the-services-status)
 6. [Check Ocean Subgraph's service logs](deploying-ocean-subgraph.md#6.-check-ocean-subgraphs-service-logs)
 
-
-
 #### 1. Create the /etc/docker/compose/graph-node/docker-compose.yml file
 
 From a terminal console, create the _/etc/docker/compose/graph-node/docker-compose.yml_ file, then copy and paste the following content to it (. Check the comments in the file and replace the fields with the specific values of your implementation.&#x20;
-
-
 
 _/etc/docker/compose/graph-node/docker-compose.yml_ (annotated - example for `mumbai` network)
 
@@ -90,8 +80,6 @@ volumes:
     driver: local
 ```
 
-
-
 #### 2. Create the /etc/systemd/system/docker-compose@graph-node.service file
 
 Create the _/etc/systemd/system/docker-compose@graph-node.service_ file then copy and paste the following content to it. This example file could be customized if needed.
@@ -117,8 +105,6 @@ ExecStopPost=/usr/bin/env docker-compose -p $PROJECT down
 WantedBy=multi-user.target
 ```
 
-
-
 #### 3. Reload the systemd manager configuration
 
 Run the following command to reload the systemd manager configuration
@@ -133,8 +119,6 @@ Optionally, you can enable the services to start at boot, using the following co
 sudo systemctl enable docker-compose@graph-node.service
 ```
 
-
-
 #### 4. Start graph-node service
 
 To start the Ocean Subgraph service, run the following command:
@@ -142,8 +126,6 @@ To start the Ocean Subgraph service, run the following command:
 ```bash
 sudo systemctl start docker-compose@graph-node.service
 ```
-
-
 
 #### 5. Check the service's status
 
@@ -172,13 +154,11 @@ Jun 25 17:05:25 testvm systemd[1]: Finished graph-node service with docker compo
 
 ```
 
-
-
 #### 6. Check graph-node service logs
 
 If needed, use docker CLI to check Ocean Subgraph service logs.
 
-First, chech the container status
+First, check the container status
 
 ```bash
 $ docker ps --format "table {{.Image}}\t{{.Ports}}\t{{.Names}}\t{{.Status}}"
@@ -194,8 +174,6 @@ Then, check the logs of the Ocean Subgraph docker container:
 docker logs graph-node  [--follow]
 ```
 
-
-
 ## Deploying graph-node using Kubernetes&#x20;
 
 In this example, we will deploy graph-node as a Kubernetes deployment service. [graph-node](https://github.com/graphprotocol/graph-node) has the following dependencies: PostgreSQL and IPFS.
@@ -206,15 +184,11 @@ In this example, we will deploy graph-node as a Kubernetes deployment service. [
 * Kubernetes with Docker Engine is installed and configured on the server. See [this chapter](setup-server.md#install-kubernetes-with-docker-engine) for information on installing Kubernetes.
 * The RPC URLs and API keys for each of the networks to which the Provider will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
 
-
-
 ### Steps
 
 1. [Deploy PostgreSQL](deploying-ocean-subgraph.md#1.-deploy-postgresql)
 2. [Deploy IPFS](deploying-ocean-subgraph.md#2.-deploy-ipfs)
 3. [Deploy Graph-node](deploying-ocean-subgraph.md#deploy-graph-node)
-
-
 
 #### 1. Deploy PostgreSQL
 
@@ -223,8 +197,6 @@ It is recommended to deploy PostgreSQL as helm chart.
 References: [https://github.com/bitnami/charts/tree/main/bitnami/postgresql/#installing-the-chart](https://github.com/bitnami/charts/tree/main/bitnami/postgresql/#installing-the-chart)
 
 Once PostgreSQL pods are running, a database must be created: eg. `mumbai.`
-
-
 
 #### 2. Deploy IPFS
 
@@ -332,10 +304,8 @@ spec:
   - name: gateway
     port: 8080
   selector:
-    app: ipfs
+    app: ipf
 ```
-
-
 
 #### Deploy Graph-node
 
@@ -459,38 +429,26 @@ spec:
     app: mumbai-graph-nodeyam
 ```
 
-
-
 ## Deploy Ocean Subgraph
 
 After you deployed graph-node, either using Kubernetes or Docker Compose, you can proceed to deploy Ocean Subgraph on top of it.&#x20;
 
-
-
 ### Prerequisites
 
 * graph-node up-and-running
-
-
 
 ### Steps
 
 1. [Install Node.js locally](deploying-ocean-subgraph.md#1.-install-node.js-locally)
 2. [Download and extract Ocean-subgraph](deploying-ocean-subgraph.md#2.-download-and-extract-ocean-subgraph)
 
-
-
 #### 1. Install Node.js locally
 
 To install Node.js locally, please refer to this [link ](https://nodejs.org/en/download)for instructions.
 
-
-
 #### 2. Download and extract Ocean-subgraph
 
 Download and extract [Ocean-subgraph](https://github.com/oceanprotocol/ocean-subgraph) (check [here](https://github.com/oceanprotocol/ocean-subgraph/releases) the available releases).
-
-
 
 #### 3. Install dependencies
 
@@ -500,13 +458,11 @@ From the directory where Ocean subgraph was extracted, run the following command
 npm i
 ```
 
-
-
 #### 4. Deploy Ocean Subgraph
 
-In the following example we are deploying on Ocean Subgraph on graph-node running for `mumbai` testnet.
+In the following example, we are deploying on Ocean Subgraph on graph-node running for `mumbai` testnet.
 
-Note: for `ocean-subgraph` deployment in Kubernetes environment, both `graph-node` and `ipfs` services must be locally forwarded using `kubectl port-forward` command.
+Note: for `ocean-subgraph` deployment in the Kubernetes environment, both `graph-node` and `ipfs` services must be locally forwarded using `kubectl port-forward` command.
 
 Run the following command:
 
@@ -745,7 +701,4 @@ Subgraph endpoints:
 Queries (HTTP):     http://127.0.0.1:8000/subgraphs/name/oceanprotocol/ocean-subgraph
 ```
 
-Ocean Subgraph is deployed under /subgraphs/name/oceanprotocol/ocean-subgraph/. To access it from the server on which is was deployed, open a browser and go to [http://127.0.0.1:8000/subgraphs/name/oceanprotocol/ocean-subgraph/graphql](http://127.0.0.1:8000/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).
-
-
-
+Ocean Subgraph is deployed under /subgraphs/name/oceanprotocol/ocean-subgraph/. To access it from the server on which it was deployed, open a browser and go to [http://127.0.0.1:8000/subgraphs/name/oceanprotocol/ocean-subgraph/graphql](http://127.0.0.1:8000/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).

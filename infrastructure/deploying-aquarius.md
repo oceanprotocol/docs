@@ -120,7 +120,7 @@ networks:
 
 Create the _/etc/systemd/system/docker-compose@aquarius.service_ file then copy and paste the following content to it. This example file could be customized if needed.
 
-```
+```yaml
 [Unit]
 Description=%i service with docker compose
 Requires=docker.service
@@ -520,7 +520,7 @@ spec:
       terminationGracePeriodSeconds: 30
 ```
 
-Tip: before deployment you can [validate](https://github.com/instrumenta/kubeval) the yaml file.
+Tip: before deployment, you can [validate](https://github.com/instrumenta/kubeval) the yaml file.
 
 b. Deploy the configuration
 
