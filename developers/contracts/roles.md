@@ -23,7 +23,7 @@ The NFT owner is the owner of the base-IP and is therefore at the highest level.
 With the exception of the NFT owner role, all other roles can be assigned to multiple users.
 {% endhint %}
 
-There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../ocean.py/README.md) and [ocean.js](../ocean.js/README.md) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
+There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../ocean.py/) and [ocean.js](../ocean.js/) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
 
 Alternatively, for a more straightforward solution that doesn't require coding, you can utilize the network explorer of your asset's network. By accessing the network explorer, you can directly interact with the contracts associated with your asset. Below, we provide a few examples to help guide you through the process.
 
@@ -62,7 +62,7 @@ function removeManager(address _managerAddress) external onlyNFTOwner {
 
 The **manager** can assign or revoke three main roles (**deployer, metadata updater, and store updater**). The manager is also able to call any other contract (ERC725X implementation).
 
-{% @arcade/embed flowId="qC8QpkLsFIQk3NxPzB8p" url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" %}
+\{% @arcade/embed flowId="qC8QpkLsFIQk3NxPzB8p" url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" %\}
 
 ### Metadata Updater
 
@@ -292,7 +292,7 @@ function removeMinter(address _minter) external onlyERC20Deployer {
 
 </details>
 
-{% @arcade/embed flowId="OHlwsPbf29S1PLh03FM7" url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" %}
+\{% @arcade/embed flowId="OHlwsPbf29S1PLh03FM7" url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" %\}
 
 ### Fee Manager
 
