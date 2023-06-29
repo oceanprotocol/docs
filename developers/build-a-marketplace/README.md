@@ -19,9 +19,9 @@ Using Ocean Market is already a big improvement on the alternatives that are out
 
 The tutorial covers:
 
-* Forking and running Ocean Market locally
-* Customising your fork of Ocean market
-* Quick deployment of Ocean Market
+* [Forking and running Ocean Market locally](forking-ocean-market.md)
+* [Customizing your fork of Ocean market](customising-your-market.md)
+* [Quick deployment of Ocean Market](deploying-market.md)
 
 ## Preparation
 
@@ -39,4 +39,8 @@ If you’re completely unfamiliar with Ocean Market or web3 applications in gene
 * Git. Instructions for installing Git can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 * Node.js can be downloaded from [here](https://nodejs.org/en/download/) (we’re using version 18 in this guide)
 * A decent code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
-* You’ll need a Github account to fork Ocean market via [Github](https://github.com/).
+* You’ll need a Github account to fork Ocean Market via [Github](https://github.com/).
+
+{% hint style="warning" %}
+Let's emphasize an important aspect of building dApps. It's crucial to keep in mind that practically everything can be added to the blockchain 😵 When you integrate with our components, it becomes **crucial** for you, as a developer, to ensure **proper sanitization** of the responses on your end. This means you should carefully **validate and filter** the data received to **prevent** any potential vulnerabilities or security risks in your applications.
+{% endhint %}
