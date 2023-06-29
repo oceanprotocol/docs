@@ -154,7 +154,7 @@ Example:
 }
 ```
 
-To get information about the files after encryption, the `/fileinfo` endpoint of the [_Provider_](provider/) returns based on a passed DID an array of file metadata (based on the file type):
+To get information about the files after encryption, the `/fileinfo` endpoint of the [_Provider_](provider/README.md) returns based on a passed DID an array of file metadata (based on the file type):
 
 ```json
 [

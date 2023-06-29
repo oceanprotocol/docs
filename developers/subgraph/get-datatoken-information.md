@@ -12,7 +12,7 @@ To fetch detailed information about a specific datatoken, you can utilize the po
 
 The result of the following GraphQL query returns the information about a particular datatoken. Here, `0x122d10d543bc600967b4db0f45f80cb1ddee43eb` is the address of the datatoken.
 
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](README.md#ocean-subgraph-deployments)_._
 
 {% tabs %}
 {% tab title="Javascript" %}

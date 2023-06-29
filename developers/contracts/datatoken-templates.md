@@ -53,7 +53,7 @@ export interface DatatokenCreateParams {
 {% endtab %}
 
 {% tab title="Ocean.py" %}
-To specify the datatoken template via ocean.py, you need to customize the [DatatokenArguments](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean\_lib/models/datatoken\_base.py#L64) with your desired template\_index.&#x20;
+To specify the datatoken template via ocean.py, you need to customize the [DatatokenArguments](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean_lib/models/datatoken_base.py#L64) with your desired template\_index.&#x20;
 
 The default template used is 1.
 

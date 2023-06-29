@@ -310,5 +310,5 @@ You can publish an algorithm asset with the metadata containing the registry URL
 ### Further references
 
 * [Setup Compute-to-Data environment](compute-to-data-minikube.md)
-* [Writing algorithms](compute-to-data-algorithms.md)
+* [Writing algorithms](../developers//compute-to-data/compute-to-data-algorithms.md)
 * [C2D example](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/c2d-flow.md)

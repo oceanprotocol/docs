@@ -14,7 +14,7 @@ Ocean V3 introduced the new crypto primitives of “data on-ramp” and “data 
 
 The datasets can take one of many shapes. For AI use cases, they may be raw datasets, cleaned-up datasets, feature-engineered **data**, **AI models**, **AI model predictions**, or otherwise. (They can even be other forms of copyright-style IP such as **photos**, **videos**, or **music**!) Algorithms themselves may be sold as part of Ocean’s Compute-to-Data feature.
 
-The first opportunity of data NFTs is the potential to sell the base intellectual property (IP) as an exclusive license to others. This is akin to EMI selling the Beatles’ master tapes to Universal Music: whoever owns the masters has the right to create records, CDs, and digital [sub-licenses](../discover/glossary.md#sub-licensee). It’s the same for data: as the data NFT owner you have the **exclusive right** to create ERC20 datatoken sub-licenses. With Ocean V4, this right is now transferable as a data NFT. You can sell these data NFTs in **OpenSea** and other NFT marketplaces.
+The first opportunity of data NFTs is the potential to sell the base intellectual property (IP) as an exclusive license to others. This is akin to EMI selling the Beatles’ master tapes to Universal Music: whoever owns the masters has the right to create records, CDs, and digital [sub-licenses](../discover/glossary.md). It’s the same for data: as the data NFT owner you have the **exclusive right** to create ERC20 datatoken sub-licenses. With Ocean V4, this right is now transferable as a data NFT. You can sell these data NFTs in **OpenSea** and other NFT marketplaces.
 
 If you’re part of an established organization or a growing startup, you’ll also love the new role structure that comes with data NFTs. For example, you can specify a different address to collect [revenue](contracts/revenue.md) compared to the address that owns the NFT. It’s now possible to fully administer your project through these [roles](contracts/roles.md).
 
@@ -32,7 +32,7 @@ Another new opportunity is using your own **ERC20** token in your dApp, where it
 
 Now this is a completely brand new opportunity to start generating [revenue](contracts/revenue.md) — running your own [provider](https://github.com/oceanprotocol/provider). We have been aware for a while now that many of you haven’t taken up the opportunity to run your own provider, and the reason seems obvious — there aren’t strong enough incentives to do so.
 
-For those that aren’t aware, [Ocean Provider](provider/) is the proxy service that’s responsible for encrypting/ decrypting the data and streaming it to the consumer. It also validates if the user is allowed to access a particular data asset or service. It’s a crucial component in Ocean’s architecture.
+For those that aren’t aware, [Ocean Provider](provider/README.md) is the proxy service that’s responsible for encrypting/ decrypting the data and streaming it to the consumer. It also validates if the user is allowed to access a particular data asset or service. It’s a crucial component in Ocean’s architecture.
 
 Now, as mentioned above, fees are now paid to the individual or organization running the provider whenever a user downloads a data asset. The fees for downloading an asset are set as a cost per MB. In addition, there is also a provider fee that is paid whenever a compute job is run, which is set as a price per minute.
 

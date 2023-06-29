@@ -23,11 +23,11 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 {% endcontent-ref %}
 
 {% content-ref url="compute-to-data/" %}
-[compute-to-data](compute-to-data/)
+[compute-to-data](compute-to-data/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="asset-hosting/" %}
-[asset-hosting](asset-hosting/)
+[asset-hosting](asset-hosting/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="using-ocean-market.md" %}

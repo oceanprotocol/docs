@@ -25,7 +25,7 @@ The most basic scenario for a Publisher is to provide access to the datasets the
 
 * [Compute-to-Data architecture](compute-to-data-architecture.md)
 * [Tutorial: Writing Algorithms](compute-to-data-algorithms.md)
-* [Tutorial: Set Up a Compute-to-Data Environment](compute-to-data-minikube.md)
+* [Tutorial: Set Up a Compute-to-Data Environment](../../infrastructure/compute-to-data-minikube.md)
 * [Use Compute-to-Data in Ocean Market](https://blog.oceanprotocol.com/compute-to-data-is-now-available-in-ocean-market-58868be52ef7)
 * [Build ML models via Ocean Market or Python](https://medium.com/ravenprotocol/machine-learning-series-using-logistic-regression-for-classification-in-oceans-compute-to-data-18df49b6b165)
 * [Compute-to-Data Python Quickstart](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/c2d-flow.md)

@@ -19,12 +19,12 @@ The Ocean Market is a place for buyers + sellers of top-notch data and algorithm
 
 * [Publish an NFT](publish-data-nfts.md)
 * [Download NFT Assets](buy-data-nfts.md)
-* [Host Your Assets](asset-hosting/)
+* [Host Your Assets](asset-hosting/README.md)
 
 #### Getting Basic 💁‍♀️
 
 **If you are new to web3** and blockchain technologies then we suggest you first get familiar with some Web3 basics:
 
-* [Wallet Basics](../discover/wallets/) 👛
+* [Wallet Basics](../discover/wallets/README.md) 👛
 * [Set Up MetaMask](../discover/wallets/metamask-setup.md) [Wallet ](../discover/wallets/metamask-setup.md)🦊
 * [Manage Your OCEAN Tokens](../discover/wallets-and-ocean-tokens.md) 🪙

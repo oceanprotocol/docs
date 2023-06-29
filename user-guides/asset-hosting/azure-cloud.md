@@ -22,7 +22,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Create a new storage account**
 
-![Create a storage account](<../../.gitbook/assets/hosting/azure2 (1).png>)
+![Create a storage account](../../.gitbook/assets/hosting/azure2.png)
 
 **Fill in the details**
 
@@ -30,7 +30,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Storage account created**
 
-![Storage account created](<../../.gitbook/assets/hosting/azure4 (1).png>)
+![Storage account created](../../.gitbook/assets/hosting/azure4.png)
 
 **Step 2 - Create a blob container**
 
@@ -38,7 +38,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 3 - Upload a file**
 
-![Upload a file](<../../.gitbook/assets/hosting/azure6 (1).png>)
+![Upload a file](../../.gitbook/assets/hosting/azure6.png)
 
 **Step 4 - Share the file**
 
@@ -48,11 +48,11 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](<../../.gitbook/assets/hosting/azure8 (1).png>)
+![Generate link to file](../../.gitbook/assets/hosting/azure8.png)
 
 **Copy the generated link**
 
-![Copy the link](<../../.gitbook/assets/hosting/azure9 (1).png>)
+![Copy the link](../../.gitbook/assets/hosting/azure9.png)
 
 **Step 5 - Publish the asset using the generated link**
 

@@ -65,7 +65,7 @@ The publisher now must provide the file URL as `https://example.org` while publi
 
 ![Compute to data parameters](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-dataset.png)
 
-For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../using-ocean-market/marketplace-publish-data-asset.md).
+For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../user-guides//publish-data-nfts.md).
 
 ### Publish an algorithm that uses custom parameters
 
@@ -107,18 +107,16 @@ The publisher now must provide the file URL as `https://example.org` while publi
 
 ![Publish algorithm asset](../../.gitbook/assets/c2d/compute-to-data-parameters-publish-algorithm.png)
 
-For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../using-ocean-market/marketplace-publish-data-asset.md).
+For a complete tutorial on publishing asset using Ocean Marketplace read [our guide on publishing with Ocean Market](../../user-guides/publish-data-nfts.md).
 
 ### Starting compute job with custom parameters
 
 In this example, the buyer wants to run the algorithm with certain parameters on a selected dataset. The code snippet below shows how the buyer can start the compute job with custom parameter values. Before embarking on this tutorial you should familiarize yourself with how to:
 
-- Search for a dataset using [Ocean market](https://market.oceanprotocol.com/) or [Aquarius API](../../api-references/aquarius-rest-api.md)
+- Search for a dataset using [Ocean market](https://market.oceanprotocol.com/) or [Aquarius](../aquarius/README.md)
 - [Allow an algorithm to run on the dataset](https://github.com/oceanprotocol/ocean.py/blob/6eb068df338abc7376430cc5ba7fe2d381508328/READMEs/c2d-flow.md#5-alice-allows-the-algorithm-for-c2d-for-that-data-asset)
 - Buy datatokens using [Ocean market](https://market.oceanprotocol.com/) or [ocean.py](https://github.com/oceanprotocol/ocean.py)
-- [Set up ocean.py](../ocean-libraries/configuration.md)
-
-For configuring ocean.py/ocean.js, please refer this [guide](../ocean-libraries/configuration.md). Copy the below code snippet to a file locally after completing required configurations and execute the script.
+- [Set up ocean.py](../ocean.py/install.md)
 
 {% tabs %}
 {% tab title="Python" %}

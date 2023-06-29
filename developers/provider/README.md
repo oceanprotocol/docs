@@ -40,4 +40,4 @@ We recommend checking the README in the Provider [GitHub repository](https://git
 
 The following pages in this section specify the endpoints for Ocean Provider that have been implemented by the core developers.
 
-For inspecting the errors received from `Provider` and their reasons, please revise this [document](https://github.com/oceanprotocol/provider/blob/main/ocean\_provider/routes/README.md).
+For inspecting the errors received from `Provider` and their reasons, please revise this [document](https://github.com/oceanprotocol/provider/blob/main/ocean_provider/routes/README.md).

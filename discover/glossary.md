@@ -139,7 +139,7 @@ In exchange for locking tokens, users can earn rewards. The amount of reward dep
 
 <summary>DF Passive Rewards</summary>
 
-When a user locks their OCEAN tokens for a finite period of time, they get veOCEAN tokens in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN [rewards](../rewards/df-basic.md#passive-rewards). Because rewards are generated without human intervention, these are called "passive" OCEAN rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user locks their OCEAN tokens for a finite period of time, they get veOCEAN tokens in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN [rewards](../rewards/df-intro.md#what-are-active-rewards). Because rewards are generated without human intervention, these are called "passive" OCEAN rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
@@ -147,7 +147,7 @@ When a user locks their OCEAN tokens for a finite period of time, they get veOCE
 
 <summary>DF Active Rewards</summary>
 
-When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, they are categorized as "active" [rewards](../rewards/df-basic.md#active-rewards) instead of passive rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, they are categorized as "active" [rewards](../rewards/df-intro.md#what-are-passive-rewards) instead of passive rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 

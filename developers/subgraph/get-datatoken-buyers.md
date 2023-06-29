@@ -6,7 +6,7 @@ description: Query the Subgraph to see the buyers of a datatoken.
 
 The result of the following GraphQL query returns the list of buyers for a particular datatoken. Here, `0xc22bfd40f81c4a28c809f80d05070b95a11829d9` is the address of the datatoken.
 
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the **Mumbai** network. If you want to change the network, please refer to_ [_this table_](broken-reference)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the **Mumbai** network. If you want to change the network, please refer to_ [_this table_](README.md#ocean-subgraph-deployments)_._
 
 {% tabs %}
 {% tab title="JavaScript" %}

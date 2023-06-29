@@ -20,10 +20,10 @@ Please note that the implementation details of Compute-to-Data can vary dependin
 
 #### Prerequisites
 
-* [Obtain an API key](broken-reference)
-* [Set up the .env file](broken-reference)
-* [Install the dependencies](broken-reference)
-* [Create a configuration file](configuration.md)
+* [Obtain an API key](../get-api-keys-for-blockchain-access.md)
+* [Set up the .env file](configuration.md#create-a-env-file)
+* [Install the dependencies](configuration.md#setup-dependencies)
+* [Create a configuration file](configuration.md#create-a-configuration-file)
 
 {% hint style="info" %}
 The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file

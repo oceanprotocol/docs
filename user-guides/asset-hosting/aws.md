@@ -48,7 +48,7 @@ Now, the asset can be uploaded by selecting the bucket name and choosing `Upload
 
 Get the files and add them to the bucket.
 
-The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin\_and\_gpr/branin.arff).
+The file is an example used in multiple Ocean repositories, and it can be found [here](https://raw.githubusercontent.com/oceanprotocol/c2d-examples/main/branin_and_gpr/branin.arff).
 
 ![Upload asset on S3 bucket](../../.gitbook/assets/hosting/aws-7.png)
 

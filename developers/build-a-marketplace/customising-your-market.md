@@ -184,7 +184,7 @@ You need to replace “0x123abc” with your Ethereum address (this is where the
 
 You can also alter the fees to the levels that you intend them to be at. If you change your mind, these fees can always be altered later.
 
-Go to [Fees page](https://docs.oceanprotocol.com/concepts/fees/) to know more details about each type of fee and its relevance.
+Go to [Fees page](../contracts/fees.md) to know more details about each type of fee and its relevance.
 
 ![Market Customisation](../../.gitbook/assets/market/market-customisation-23.png)
 
@@ -202,7 +202,7 @@ You have the flexibility to tailor the ocean market according to your preference
 
 ### Using a custom MetadataCache
 
-If you intend to utilize the ocean market with a custom [Aquarius](../aquarius/) deployment, you can also make set a custom MetadataCache flag. To do this, you will need to update the same file mentioned earlier. However, instead of modifying the `NEXT_PUBLIC_PROVIDER_URL` key, you should update the `NEXT_PUBLIC_METADATACACHE_URI` key. By updating this key, you can specify the URI for your custom Aquarius deployment, enabling you to take advantage of the ocean market with your preferred metadata cache setup.
+If you intend to utilize the ocean market with a custom [Aquarius](../aquarius/README.md) deployment, you can also make set a custom MetadataCache flag. To do this, you will need to update the same file mentioned earlier. However, instead of modifying the `NEXT_PUBLIC_PROVIDER_URL` key, you should update the `NEXT_PUBLIC_METADATACACHE_URI` key. By updating this key, you can specify the URI for your custom Aquarius deployment, enabling you to take advantage of the ocean market with your preferred metadata cache setup.
 
 ### Using a custom subgraph
 

@@ -16,12 +16,12 @@ Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotoc
 
 ### Steps
 
-1. [Create the /etc/docker/compose/graph-node/docker-compose.yml file](deploying-ocean-subgraph.md#1.-create-the-etc-docker-compose-graph-node-docker-compose.yml-file)
-2. [Create the /etc/systemd/system/docker-compose@graph-node.service file](deploying-ocean-subgraph.md#2.-create-the-etc-systemd-system-docker-compose-graph-node.service-file)
+1. [Create the /etc/docker/compose/graph-node/docker-compose.yml file](deploying-ocean-subgraph.md#1-create-the-etcdockercomposegraph-nodedocker-composeyml-file)
+2. [Create the /etc/systemd/system/docker-compose@graph-node.service file](deploying-ocean-subgraph.md#2-create-the-etcsystemdsystemdocker-composegraph-nodeservice-file)
 3. [Reload the systemd manager configuration](deploying-ocean-subgraph.md#3.-reload-the-systemd-manager-configuration)
-4. [Start the Ocean Subgraph service](deploying-ocean-subgraph.md#4.-start-the-ocean-subgraph-service)
+4. [Start the Ocean Subgraph service](deploying-ocean-subgraph.md#4-deploy-ocean-subgraph)
 5. [Check the service's status](deploying-ocean-subgraph.md#5.-check-the-services-status)
-6. [Check Ocean Subgraph's service logs](deploying-ocean-subgraph.md#6.-check-ocean-subgraphs-service-logs)
+6. [Check Ocean Subgraph's service logs](deploying-ocean-subgraph.md#6-check-graph-node-service-logs)
 
 #### 1. Create the /etc/docker/compose/graph-node/docker-compose.yml file
 
@@ -440,7 +440,7 @@ After you deployed graph-node, either using Kubernetes or Docker Compose, you ca
 ### Steps
 
 1. [Install Node.js locally](deploying-ocean-subgraph.md#1.-install-node.js-locally)
-2. [Download and extract Ocean-subgraph](deploying-ocean-subgraph.md#2.-download-and-extract-ocean-subgraph)
+2. [Download and extract Ocean-subgraph](#2.-download-and-extract-ocean-subgraph)
 
 #### 1. Install Node.js locally
 

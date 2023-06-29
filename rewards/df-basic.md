@@ -8,7 +8,7 @@ description: Learn the basic moves to start kicking a** Data Farming
 
 ### Get Started
 
-Our [User Guides](../user-guides/) get you started Data Farming quickly to do the basic operations. Follow these guides to earn your blue belt in Data Farming understanding.
+Our [User Guides](../user-guides/README.md) get you started Data Farming quickly to do the basic operations. Follow these guides to earn your blue belt in Data Farming understanding.
 
 {% content-ref url="../user-guides/get-started-df.md" %}
 [get-started-df.md](../user-guides/get-started-df.md)

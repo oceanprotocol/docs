@@ -25,7 +25,7 @@ You can utilize the Subgraph instances provided by Ocean Protocol or deploy your
 If you're eager to use the Ocean Subgraph, here's some important information for you: We've deployed an Ocean Subgraph for each of the supported networks. Take a look at the table below, where you'll find handy links to both the subgraph instance and GraphiQL for each network. With the user-friendly GraphiQL interface, you can execute GraphQL queries directly, without any additional setup. It's a breeze! :ocean:
 
 {% hint style="info" %}
-When it comes to fetching valuable information about [Data NFTs](../contracts/data-nfts.md) and [datatokens](../contracts/datatokens.md), the subgraph queries play a crucial role. They retrieve numerous details and information, but, the Subgraph cannot decrypt the DDO. But worry not, we have a dedicated component for that—[Aquarius](../aquarius/)! 🐬 Aquarius communicates with the provider and decrypts the encrypted information, making it readily available for queries.&#x20;
+When it comes to fetching valuable information about [Data NFTs](../contracts/data-nfts.md) and [datatokens](../contracts/datatokens.md), the subgraph queries play a crucial role. They retrieve numerous details and information, but, the Subgraph cannot decrypt the DDO. But worry not, we have a dedicated component for that—[Aquarius](../aquarius/README.md)! 🐬 Aquarius communicates with the provider and decrypts the encrypted information, making it readily available for queries.&#x20;
 {% endhint %}
 
 ### Ocean Subgraph deployments

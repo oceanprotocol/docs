@@ -24,7 +24,7 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 ## Data Farming
 
-![DF Rewards Page](../.gitbook/assets/rewards/df\_rewards\_page.png)
+![DF Rewards Page](../.gitbook/assets/rewards/df_rewards_page.png)
 
 [Data Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
 

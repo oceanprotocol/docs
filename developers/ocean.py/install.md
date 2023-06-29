@@ -30,7 +30,7 @@ pip install wheel
 pip install ocean-lib
 ```
 
-### Potential issues & workarounds <a href="#60e8" id="60e8"></a>
+### Potential issues & workarounds
 
 Issue: M1 \* `coincurve` or `cryptography`
 
