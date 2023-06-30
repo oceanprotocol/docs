@@ -15,7 +15,7 @@ Ocean Protocol is used for a variety of purposes, including:
 
 By leveraging **blockchain technology** and **smart contracts**, Ocean Protocol offers **open-source tools** to securely publish [NFTs](../developers/contracts/data-nfts.md) of your data and algorithms to seamlessly collaborate, trade, and innovate with others.
 
-<figure><img src="../.gitbook/assets/architecture/decentralized_exchanges_marketplaces.png" alt="" width="375"><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/general/explore_ocean.png" alt=""><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
 
 Get a glimpse into some of the things you can do with Ocean Protocol. The opportunities with our protocol to leverage an "Ocean of data" are great and ever-evolving. Together, we'll dive deeper and uncover even more ways to leverage the power of decentralized data.
 
