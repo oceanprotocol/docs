@@ -2,14 +2,7 @@
 
 In the Ocean Protocol ecosystem, each asset is associated with a state that is maintained by the NFT (Non-Fungible Token) contract. The [state of an asset](../ddo-specification.md#state) determines its visibility and availability for different actions on platforms like Ocean Market, as well as its appearance in user profiles. The following table outlines the possible states and their characteristics:
 
-| State | Description                      | Discoverable in Ocean Market | Ordering Allowed | Listed Under Profile |
-| ----- | -------------------------------- | ---------------------------- | ---------------- | -------------------- |
-| `0`   | Active                           | Yes                          | Yes              | Yes                  |
-| `1`   | End-of-life                      | No                           | No               | No                   |
-| `2`   | Deprecated (by another asset)    | No                           | No               | No                   |
-| `3`   | Revoked by publisher             | No                           | No               | No                   |
-| `4`   | Ordering is temporarily disabled | Yes                          | No               | Yes                  |
-| `5`   | Asset unlisted                   | No                           | Yes              | Yes                  |
+<table><thead><tr><th width="93">State</th><th width="236">Description</th><th width="140">Discoverable in Ocean Market</th><th width="160">Ordering Allowed</th><th>Listed Under Profile</th></tr></thead><tbody><tr><td><code>0</code></td><td>Active</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td><code>1</code></td><td>End-of-life</td><td>No</td><td>No</td><td>No</td></tr><tr><td><code>2</code></td><td>Deprecated (by another asset)</td><td>No</td><td>No</td><td>No</td></tr><tr><td><code>3</code></td><td>Revoked by publisher</td><td>No</td><td>No</td><td>No</td></tr><tr><td><code>4</code></td><td>Ordering is temporarily disabled</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td><code>5</code></td><td>Asset unlisted</td><td>No</td><td>Yes</td><td>Yes</td></tr></tbody></table>
 
 Now let's explain each state in more detail:
 
@@ -22,7 +15,7 @@ Now let's explain each state in more detail:
 
 By assigning specific states to assets, Ocean Protocol enables a structured approach to asset management and visibility. These states help regulate asset discoverability, ordering permissions, and the representation of assets in user profiles, ensuring a controlled and reliable asset ecosystem.
 
-It is possible to remove assets from Ocean Protocol by modifying the state of the asset. Each asset has a state, which is stored in the NFT contract. Additional details regarding asset states can be found at this link: [https://docs.oceanprotocol.com/core-concepts/did-ddo#state](https://docs.oceanprotocol.com/core-concepts/did-ddo#state). There is also an assets purgatory that contains information about the purgatory status of an asset, as defined in the list-purgatory. For more information about the purgatory, please refer to: [https://docs.oceanprotocol.com/core-concepts/did-ddo#purgatory](https://docs.oceanprotocol.com/core-concepts/did-ddo#purgatory).
+It is possible to remove assets from Ocean Protocol by modifying the state of the asset. Each asset has a state, which is stored in the NFT contract. Additional details regarding asset states can be found at this [link](../ddo-specification.md#state). There is also an assets purgatory that contains information about the purgatory status of an asset, as defined in the list-purgatory. For more information about the purgatory, please refer to: [https://docs.oceanprotocol.com/core-concepts/did-ddo#purgatory](https://docs.oceanprotocol.com/core-concepts/did-ddo#purgatory).
 
 We can utilize a portion of the previous tutorial on updating metadata and incorporate the steps to update the asset's state in the asset DDO.
 
@@ -34,12 +27,12 @@ We can utilize a portion of the previous tutorial on updating metadata and incor
 * [Create a configuration file](configuration.md#create-a-configuration-file)
 
 {% hint style="info" %}
-The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
+The variables **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
 {% endhint %}
 
-#### Create a script to update the state of an asset by updating the assets metatada
+#### Create a script to update the state of an asset by updating the asset's metatada
 
-Create a new file in the same working directory where configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
+Create a new file in the same working directory where the configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
 
 {% code overflow="wrap" %}
 ```javascript
@@ -87,4 +80,3 @@ updateAssetState(did).then(() => {
 });
 ```
 {% endcode %}
-

@@ -14,7 +14,7 @@ Liquidity pools and dynamic pricing used to be supported in previous versions of
 
 4\. Go to field `20. balanceOf` and insert your ETH address. This will retrieve your pool share token balance in wei.
 
-<figure><img src="../.gitbook/assets/liquidity/remove-liquidity-2 (3).png" alt=""><figcaption><p>Balance Of</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/liquidity/remove-liquidity-2.png" alt=""><figcaption><p>Balance Of</p></figcaption></figure>
 
 5\. Copy this number as later you will use it as the `poolAmountIn` parameter.
 
@@ -39,4 +39,4 @@ Liquidity pools and dynamic pricing used to be supported in previous versions of
 
 10\. Confirm transaction in Metamask
 
-<figure><img src="../.gitbook/assets/liquidity/remove-liquidity-6 (1).png" alt=""><figcaption><p>Confirm transaction</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/liquidity/remove-liquidity-6.png" alt=""><figcaption><p>Confirm transaction</p></figcaption></figure>

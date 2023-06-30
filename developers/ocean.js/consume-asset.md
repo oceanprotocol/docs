@@ -1,8 +1,8 @@
 # Consume Asset
 
-Consuming an asset involves a two-step process: placing an order and then utilizing the order transaction to download and access the asset's files. Let's delve into each step in more detail.
+Consuming an asset involves a two-step process: **placing an order** and then **utilizing the order** transaction to **download** and **access** the asset's files. Let's delve into each step in more detail.
 
-To initiate the ordering process, there are two scenarios depending on the pricing schema of the asset. Firstly, if the asset has a fixed rate pricing schema configured, you would need to acquire the corresponding datatoken by purchasing it. Once you have obtained the datatoken, you send it to the publisher to place the order for the asset.
+To initiate the ordering process, there are two scenarios depending on the pricing schema of the asset. Firstly, if the asset has a fixed-rate pricing schema configured, you would need to acquire the corresponding datatoken by purchasing it. Once you have obtained the datatoken, you send it to the publisher to place the order for the asset.
 
 The second scenario applies when the asset follows a free pricing schema. In this case, you can obtain a free datatoken from the dispenser service provided by Ocean Protocol. Using the acquired free datatoken, you can place the order for the desired asset.
 
@@ -24,12 +24,12 @@ Later on, when working with the ocean.js library, you can use this order transac
 * [Create a configuration file](configuration.md#create-a-configuration-file)
 
 {% hint style="info" %}
-The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
+The variables **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
 {% endhint %}
 
 #### Create a script to consume an asset
 
-Create a new file in the same working directory where configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
+Create a new file in the same working directory where the configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
 
 <pre class="language-javascript" data-overflow="wrap"><code class="lang-javascript">// Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require('./config.js');

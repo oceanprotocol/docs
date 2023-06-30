@@ -26,19 +26,19 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Fill in the details**
 
-![Add details](../../.gitbook/assets/hosting/azure3.png)
+![Add details](<../../.gitbook/assets/hosting/azure3 (1).png>)
 
 **Storage account created**
 
-![Storage account created](<../../.gitbook/assets/hosting/azure4 (1).png>)
+![Storage account created](../../.gitbook/assets/hosting/azure4.png)
 
 **Step 2 - Create a blob container**
 
-![Create a blob container](<../../.gitbook/assets/hosting/azure5 (1).png>)
+![Create a blob container](../../.gitbook/assets/hosting/azure5.png)
 
 **Step 3 - Upload a file**
 
-![Upload a file](../../.gitbook/assets/hosting/azure6.png)
+![Upload a file](<../../.gitbook/assets/hosting/azure6 (1).png>)
 
 **Step 4 - Share the file**
 
@@ -48,7 +48,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](<../../.gitbook/assets/hosting/azure8 (1).png>)
+![Generate link to file](../../.gitbook/assets/hosting/azure8.png)
 
 **Copy the generated link**
 
