@@ -18,11 +18,11 @@ Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might al
 
 Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
-![Select storage accounts](../../.gitbook/assets/hosting/azure1.png)
+![Select storage accounts](<../../.gitbook/assets/hosting/azure1 (1).png>)
 
 **Create a new storage account**
 
-![Create a storage account](../../.gitbook/assets/hosting/azure2.png)
+![Create a storage account](<../../.gitbook/assets/hosting/azure2 (1).png>)
 
 **Fill in the details**
 
@@ -30,11 +30,11 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Storage account created**
 
-![Storage account created](../../.gitbook/assets/hosting/azure4.png)
+![Storage account created](<../../.gitbook/assets/hosting/azure4 (1).png>)
 
 **Step 2 - Create a blob container**
 
-![Create a blob container](../../.gitbook/assets/hosting/azure5.png)
+![Create a blob container](<../../.gitbook/assets/hosting/azure5 (1).png>)
 
 **Step 3 - Upload a file**
 
@@ -48,7 +48,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](../../.gitbook/assets/hosting/azure8.png)
+![Generate link to file](<../../.gitbook/assets/hosting/azure8 (1).png>)
 
 **Copy the generated link**
 
