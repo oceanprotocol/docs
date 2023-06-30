@@ -31,7 +31,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL178C1-L185C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL178C1-L185C82)
 
 <details>
 
@@ -78,7 +78,7 @@ A tuple which contains the algorithm NFT, algorithm datatoken and the algorithm 
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL146C4-L176C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL146C4-L176C82)
 
 <details>
 
@@ -145,7 +145,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL187C5-L198C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL187C5-L198C82)
 
 <details>
 
@@ -194,7 +194,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL200C5-L212C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL200C5-L212C82)
 
 <details>
 
@@ -244,7 +244,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL214C5-L229C1)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL214C5-L229C1)
 
 <details>
 
@@ -270,6 +270,8 @@ A tuple which contains the data NFT, datatoken and the data asset.
 ```
 {% endcode %}
 
+
+
 </details>
 
 ### Creates Asset (for advanced skills)
@@ -282,14 +284,14 @@ Creating/deploying a DataNFT contract and in the Metadata store (Aquarius).
 
 **Parameters**
 
-* `metadata`: `dictionary` conforming to the Metadata accepted by Ocean Protocol.
+* `metadata`: `dictionary` conforming to the Metadata accepted by Ocean Protocol.&#x20;
 * `publisher_wallet`- `Brownie account` of the publisher registering this asset.
 * `credentials` - credentials `dictionary` necessary for the asset, which establish who can consume the asset and who cannot.
 * `data_nft_address`- hex string, the address of the data NFT. The new asset will be associated with this data NFT address.
 * `data_nft_args`- object of DataNFTArguments type if creating a new one.
 * `deployed_datatokens`- list of datatokens which are already deployed.
 * `services` - list of `Service` objects if you want to run multiple services for a datatoken or you have multiple datatokens with a single service each.
-* `datatoken_args` - list of objects of `DatatokenArguments` type if creating a new datatokens.
+* `datatoken_args` - list of objects  of `DatatokenArguments` type if creating a new datatokens.
 * `encrypt_flag`- bool for encryption of the DDO.
 * `compress_flag`- bool for compression of the DDO.
 * `wait_for_aqua`- bool for spending time waiting for DDO to be updated in Aquarius.
@@ -302,7 +304,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL259C5-L390C43)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL259C5-L390C43)
 
 <details>
 
@@ -429,7 +431,7 @@ def create(
 ```
 {% endcode %}
 
-**Publishing Alternatives**
+#### Publishing Alternatives
 
 Here are some examples similar to the `create()` above, but exposes more fine-grained control.
 
@@ -463,7 +465,7 @@ _, _, ddo = ocean.assets.create(
 )
 ```
 
-**DDO Encryption or Compression**
+#### DDO Encryption or Compression
 
 The DDO is stored on-chain. It's encrypted and compressed by default. Therefore it supports GDPR "right-to-be-forgotten" compliance rules by default.
 
@@ -473,7 +475,7 @@ You can control this during `create()`:
 * To disable compression, use `ocean.assets.create(..., compress_flag=False)`.
 * To disable both, use `ocean.assetspy.create(..., encrypt_flag=False, compress_flag=False)`.
 
-**Create **_**just**_** a data NFT**
+#### Create _just_ a data NFT
 
 Calling `create()` like above generates a data NFT, a datatoken for that NFT, and a ddo. This is the most common case. However, sometimes you may want _just_ the data NFT, e.g. if using a data NFT as a simple key-value store. Here's how:
 
@@ -483,7 +485,7 @@ data_nft = ocean.data_nft_factory.create({"from": alice}, 'NFT1', 'NFT1')
 
 If you call `create()` after this, you can pass in an argument `data_nft_address:string` and it will use that NFT rather than creating a new one.
 
-**Create a datatoken from a data NFT**
+#### Create a datatoken from a data NFT
 
 Calling `create()` like above generates a data NFT, a datatoken for that NFT, and a ddo object. However, we may want a second datatoken. Or, we may have started with _just_ the data NFT, and want to add a datatoken to it. Here's how:
 
@@ -493,11 +495,11 @@ datatoken = data_nft.create_datatoken({"from": alice}, "Datatoken 1", "DT1")
 
 If you call `create()` after this, you can pass in an argument `deployed_datatokens:List[Datatoken1]` and it will use those datatokens during creation.
 
-**Create an asset & pricing schema simultaneously**
+#### Create an asset & pricing schema simultaneously
 
 Ocean Assets allows you to bundle several common scenarios as a single transaction, thus lowering gas fees.
 
-Any of the `ocean.assets.create_<type>_asset()` functions can also take an optional parameter that describes a bundled pricing schema (Dispenser or Fixed Rate Exchange).
+Any of the `ocean.assets.create_<type>_asset()` functions can also take an optional parameter that describes a bundled pricing schema (Dispenser or Fixed Rate Exchange).&#x20;
 
 Here is an example involving an exchange:
 
@@ -539,7 +541,7 @@ The updated DDO, or `None` if updated DDO not found in Aquarius.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL392C5-L454C19)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL392C5-L454C19)
 
 <details>
 
@@ -625,7 +627,7 @@ Returns DDO instance.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL456C5-L458C43)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL456C5-L458C43)
 
 <details>
 
@@ -657,7 +659,7 @@ A list of DDOs which have matches with the text provided as parameter.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL460C4-L475C10)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL460C4-L475C10)
 
 <details>
 
@@ -702,7 +704,7 @@ A list of DDOs which have matches with the query provided as parameter.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL477C4-L490C10)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL477C4-L490C10)
 
 <details>
 
@@ -756,7 +758,7 @@ The full path to the downloaded file as `string`.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL492C5-L516C20)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL492C5-L516C20)
 
 <details>
 
@@ -820,7 +822,7 @@ Return value is a hex string for transaction hash which denotes the proof of sta
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL518C5-L571C28)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL518C5-L571C28)
 
 <details>
 
@@ -914,7 +916,7 @@ Return value is a tuple composed of list of datasets and algorithm data (if exis
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL573C5-L627C30)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL573C5-L627C30)
 
 <details>
 

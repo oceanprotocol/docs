@@ -38,17 +38,17 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 3 - Upload a file**
 
-![Upload a file](<../../.gitbook/assets/hosting/azure6 (1).png>)
+![Upload a file](../../.gitbook/assets/hosting/azure6.png)
 
 **Step 4 - Share the file**
 
 **Select the file to be published and click Generate SAS**
 
-![Click generate SAS](<../../.gitbook/assets/hosting/azure7 (1).png>)
+![Click generate SAS](../../.gitbook/assets/hosting/azure7.png)
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](<../../.gitbook/assets/hosting/azure8 (1).png>)
+![Generate link to file](../../.gitbook/assets/hosting/azure8.png)
 
 **Copy the generated link**
 

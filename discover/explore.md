@@ -48,7 +48,7 @@ These are a few examples of what can be built on top of Ocean.
 
 You can choose from two options:
 
-1. **Fork the** [**Ocean Marketplace**](https://github.com/oceanprotocol/market) **and customize it**: You have the ability to fork the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it according to your needs. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../developers/build-a-marketplace/) to learn how to do it.
+1. **Fork the** [**Ocean Marketplace**](https://github.com/oceanprotocol/market) **and customize it**: You have the ability to fork the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it according to your needs. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../developers/build-a-marketplace/README.md) to learn how to do it.
 2. **Build your marketplace with Ocean components**: Alternatively, you can build your data marketplace from scratch using Ocean Protocol's modular components. Ocean provides a comprehensive set of building blocks, such as the [**Aquarius**](https://github.com/oceanprotocol/aquarius), [**Provider**](https://github.com/oceanprotocol/provider), Ocean [contracts](https://github.com/oceanprotocol/contracts), and Ocean libraries ([**ocean.js**](https://github.com/oceanprotocol/ocean.js) & [**ocean.py**](https://github.com/oceanprotocol/ocean.py)), which you can integrate into your own marketplace development. This empowers you to create a unique and customized data marketplace experience while leveraging the underlying capabilities and standards provided by Ocean Protocol.
 
 </details>
@@ -57,7 +57,7 @@ You can choose from two options:
 
 <summary><mark style="color:blue;"><strong>Tokengate Your dApp or Content</strong></mark><br><br>Are you interested in token gating your dApp or content using an Ocean data NFT? We offer you all the code and support that you need to make this happen.</summary>
 
-Feel free to fork the [Ocean Token Gate template](https://github.com/oceanprotocol/token-gating-template) code and customize it to start building your dApp from scratch. If you already have an existing dApp of yours, then you can also modify it simply to use an Ocean data NFT. The [Ocean Token Gate repo](https://github.com/oceanprotocol/token-gating-template) will be helpful to inform your coding to do this, of course. But we also explain the [smart contract mechanics](../developers/contracts/) of Data NFTs and Datatokens[ in our docs](../developers/contracts/) for you to understand the code better. Remember, we're always here to help guide you with any coding questions on [Discord](https://discord.gg/TnXjkR5).
+Feel free to fork the [Ocean Token Gate template](https://github.com/oceanprotocol/token-gating-template) code and customize it to start building your dApp from scratch. If you already have an existing dApp of yours, then you can also modify it simply to use an Ocean data NFT. The [Ocean Token Gate repo](https://github.com/oceanprotocol/token-gating-template) will be helpful to inform your coding to do this, of course. But we also explain the [smart contract mechanics](../developers/contracts/README.md) of Data NFTs and Datatokens[ in our docs](../developers/contracts/README.md) for you to understand the code better. Remember, we're always here to help guide you with any coding questions on [Discord](https://discord.gg/TnXjkR5).
 
 </details>
 
@@ -73,7 +73,7 @@ The following guides will help you get started with buying and selling data:
 
 * [Publish an NFT](../user-guides/publish-data-nfts.md)
 * [Download an NFT](../user-guides/buy-data-nfts.md)
-* [Host Assets](../user-guides/asset-hosting/)
+* [Host Assets](../user-guides/asset-hosting/README.md)
 
 </details>
 
@@ -81,7 +81,7 @@ The following guides will help you get started with buying and selling data:
 
 <summary><mark style="color:blue;">Manage datatokens and data NFTs for use in DeFi</mark><br><br>Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.</summary>
 
-Use Ocean [JavaScript](../developers/ocean.js/) or [Python](../developers/ocean.py/) drivers to manage data NFTs and datatokens:
+Use Ocean [JavaScript](../developers/ocean.js/README.md) or [Python](../developers/ocean.py/README.md) drivers to manage data NFTs and datatokens:
 
 Ocean-based apps make data assets on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
 
@@ -101,7 +101,7 @@ Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosys
 
 <summary><a href="https://medium.com/p/477b3decad51#7922"><mark style="color:orange;">Run Your Own Provider</mark></a><br><br>You have the option to generate revenue by running your own <a href="../developers/provider/">provider</a>. It has come to our attention that many of you have not pursued this opportunity, primarily due to the lack of compelling incentives.</summary>
 
-If you're not familiar with it, the Ocean [Provider](../developers/provider/) serves as the proxy service responsible for encrypting/decrypting data and streaming it to the consumer. It also verifies user access privileges for specific data assets or services. It plays a vital role in the Ocean architecture.
+If you're not familiar with it, the Ocean [Provider](../developers/provider/README.md) serves as the proxy service responsible for encrypting/decrypting data and streaming it to the consumer. It also verifies user access privileges for specific data assets or services. It plays a vital role in the Ocean architecture.
 
 Fees are now paid to the individual or organization running the provider when a user downloads a data asset. The download fees are set based on the cost per MB, and there is also a provider fee for compute jobs, which is priced per minute.
 
@@ -115,7 +115,7 @@ Furthermore, provider fees are not restricted to data consumption; they can also
 
 <summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-max-out-yield.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
 
-Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.
+Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/README.md) while making a meaningful impact in the data marketplace.
 
 Participating in the Data Farming initiative demonstrates a commitment to the principles of **fairness**, **transparency**, and **collaboration** that underpin Ocean Protocol. It allows you to actively engage with the ecosystem, promoting innovation, and driving the evolution of the decentralized data economy.
 
@@ -141,7 +141,7 @@ As an Ocean Ambassador, you become an advocate for the protocol, promoting its v
 
 <summary><mark style="color:green;">Contribute to Ocean Code Development</mark><br><br>Make a positive impact in the Web3 data economy by contributing to <a href="https://github.com/oceanprotocol">Ocean's open source code</a> on Github! From feature requests to pull requests, contributions of all kinds are appreciated.</summary>
 
-To begin, [visit our Github page](https://github.com/oceanprotocol) where you can see the repos and contributors. If you're going to contribute code to a repo, then we ask that you fork the code first, make your changes, and then create a pull request for us to review. If you are reporting an issue, then please first search the existing issues to see if it is documented yet. If not, then please open a new issue by describe your problem as best as possible and include screenshots.\
+To begin, [visit our Github page](https://github.com/oceanprotocol) where you can see the repos and contributors. If you're going to contribute code to a repo, then we ask that you fork the code first, make your changes, and then create a pull request for us to review. If you are reporting an issue, then please first search the existing issues to see if it is documented yet. If not, then please open a new issue by describe your problem as best as possible and include screenshots. \
 \
 We also welcome you to join our [Discord developer community](https://discord.gg/TnXjkR5) where you can get rapid, practical advice on using Ocean tech but also get to know Ocean core team more personally!
 
