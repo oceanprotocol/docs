@@ -4,7 +4,7 @@ description: Make extra dosh with active rewards yield in Data Farming
 
 # Harvest More Yield Data Farming - Volume DF
 
-<figure><img src="../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rewards/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
 
 ## Get More Yield from Volume DF Rewards
 
