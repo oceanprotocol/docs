@@ -14,7 +14,7 @@ description: >-
 
 You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farming dApp, the intended use is to **vote on your favorite assets** in the Ocean ecosystem!
 
-When you vote on assets that sell, then **you get a portion of the sales**!
+When you allocate to assets that sell, then **you get a portion of the sales**!
 
 You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/farms).
 
@@ -33,19 +33,19 @@ veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefi
 
 #### Passive Rewards from Data Farming
 
-veOCEAN holders get weekly Data Farming rewards with a small carveout for any Ocean Protcol Data Challenges that run through Data Farming operations.
+veOCEAN holders get weekly Data Farming rewards with a small carveout for any Ocean Protocol Data Challenges that run through Data Farming operations.
 
 #### Active Rewards from Community Fees
 
 veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets.
 
-Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.\*\* But also every transaction in the Ocean ecosystem and Ocean Protocol backend infrastructure generates **"community swap" fees that go into Active Rewards**. 50% of the community fees goes to veOCEAN holders, and 50% goes to the Ocean Protocol Foundation's community-oriented traction programs.
+Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.\*\*&#x20;
 
 \*\*There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
 
 ### veOCEAN Time Locking
 
-Users can lock their OCEAN for different lengths of time to gain more veOCEAN **voting power**. The Data Farming dApp is designed to lock OCEAN for **a minimum of 2 weeks and a maximum of four years** (for max rewards). The longer you lock your OCEAN, the more veOCEAN + OCEAN rewards you get! &#x20;
+Users can lock their OCEAN for different lengths of time to gain more veOCEAN **voting power**. The Data Farming dApp is designed to lock OCEAN for **a minimum of 2 weeks and a maximum of four years** (for max rewards). The longer you lock your OCEAN, the more veOCEAN + OCEAN rewards you get!
 
 On the dApp's [veOCEAN page](https://df.oceandao.org/veocean), the "Lock Multiplier" represents the percentage amount of veOCEAN tokens received per OCEAN token locked.
 
@@ -83,7 +83,7 @@ At the end of your 4 years, your OCEAN is unlocked.
 
 #### Linear Decay
 
-**Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
+**Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle-tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
 
 ### Replenishing your veOCEAN
 
@@ -93,9 +93,9 @@ To maximize rewards, participants would need to update their 4-year lock every w
 
 ### veOCEAN Earnings
 
-All earnings for veOCEAN holders are claimable in Ethereum mainnet. (Data assets for DFing may published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
+All earnings for veOCEAN holders are claimable in the Ethereum mainnet. (Data assets for DFing may be published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
 
-Data Farming rounds occur weekly; in line with this, there’s a new ve distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the code. )
+Data Farming rounds occur weekly; in line with this, there’s a new [`ve`](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the [code](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) )
 
 ### DYOR!
 
@@ -111,8 +111,6 @@ After the Lock End Date, then you can withdraw your principal OCEAN tokens on th
 
 The image below illustrates the flow of value. On the left, at time 0, the staker locks their OCEAN into the veOCEAN contract, and receives veOCEAN. In the middle, the staker receives OCEAN rewards every time there’s revenue to the Ocean Protocol Community (top), and also as part of Data Farming rewards (bottom). On the right, when the lock expires (e.g. 4 years) then the staker is able to move their OCEAN around again.
 
-&#x20;
-
 <figure><img src="../.gitbook/assets/rewards/flow_of_value.png" alt=""><figcaption><p>Flow of Value</p></figcaption></figure>
 
 The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Ocean uses as its system-level design.
@@ -123,7 +121,7 @@ The veOCEAN code was forked from the veCRV code. veCRV parameters will be the st
 
 The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired by Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code. We took this inspiration to enable our users to participate in on-chain governance and earn rewards within the Ocean Protocol ecosystem.
 
-[Here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to  [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
+[Here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
 
 ### veOCEAN's Smart Contracts Security
 
@@ -132,4 +130,3 @@ The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired 
 We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to point their veOCEAN towards given data assets (“allocate veOCEAN”). These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
 
 We have an [ongoing bug bounty via Immunefi](https://immunefi.com/bounty/oceanprotocol/) for Ocean software, including veOCEAN and DF components. If you identify an issue, please report it there and get rewarded.
-

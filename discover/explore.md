@@ -9,15 +9,16 @@ Ocean Protocol is a **decentralized data exchange protocol** that aims to unlock
 Ocean Protocol is used for a variety of purposes, including:
 
 1. **Data Sharing**: Ocean Protocol allows individuals and organizations to share data securely and privately, enabling data owners to monetize their data assets while maintaining control over their data.
-2. **Data Monetization**: Data owners can monetize their data by offering it for sale or by providing data services through compute-to-data (C2D) capabilities. Data consumers can access and utilize data assets.
+2. **Data Monetization**: Data owners can monetize their data by offering it for sale or by providing data services through compute-to-data (C2D) capabilities. Data consumers can access and utilize data assets.&#x20;
 3. **Decentralized Data Marketplaces**: Ocean Protocol facilitates the creation of decentralized data marketplaces where data providers can list their data assets and data consumers can discover and access them. These marketplaces operate on a peer-to-peer basis, eliminating the need for intermediaries and providing more efficient and transparent data transactions.
 4. **AI Development**: Ocean Protocol supports the development of AI models by providing access to diverse and high-quality datasets. Data scientists and AI developers can leverage these datasets to train and improve their models, leading to more accurate and robust AI systems.
+5. **Access control:** Ocean Protocol incorporates token-gating mechanisms that grant or restrict access to specific data assets based on predefined criteria, ensuring controlled and regulated data sharing within the ecosystem.
 
 By leveraging **blockchain technology** and **smart contracts**, Ocean Protocol offers **open-source tools** to securely publish [NFTs](../developers/contracts/data-nfts.md) of your data and algorithms to seamlessly collaborate, trade, and innovate with others.
 
 <figure><img src="../.gitbook/assets/general/explore_ocean.png" alt=""><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
 
-Get a glimpse into some of the things you can do with Ocean Protocol. The opportunities with our protocol to leverage an "Ocean of data" are great and ever-evolving. Together, we'll dive deeper and uncover even more ways to leverage the power of decentralized data.
+Get a glimpse into some of the things you can do with Ocean Protocol. The opportunities with our protocol to leverage an "Ocean of data" are great and ever-evolving. Together, we'll dive deeper and uncover even more ways to harness the power of decentralized data.
 
 <details>
 

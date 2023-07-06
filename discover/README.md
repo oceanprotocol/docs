@@ -8,7 +8,7 @@ coverY: 7.413145539906106
 
 {% embed url="https://youtu.be/4P72ZelkEpQ" %}
 
-Society is increasingly reliant on data as AI becomes more popular. However, a small handful of organizations possess and controls massive amounts of our personal data, posing a threat to a free and open society ☢️
+Society is increasingly reliant on data as AI becomes more popular. However, a small handful of organizations possess and control massive amounts of our personal data, posing a threat to a free and open society ☢️
 
 The concentration of vast datasets in the hands of a few organizations can lead to significant negative consequences for society. These include:
 
@@ -34,7 +34,7 @@ We believe that data is a valuable resource that should be accessible to **every
 
 To find out more about the amazing team behind Ocean, you can visit our [website](https://oceanprotocol.com/about).
 
-Are you curious about our mission and how we're making a difference in the world? Then you won't want to miss this video featuring our co-founder, [Trent McConaghy](http://www.trent.st/). He'll share some fascinating insights into what we're doing and why it matters.
+Now that we've made you curious about our mission and how we're making a difference in the world, you won't want to miss this video featuring our co-founder, [Trent McConaghy](http://www.trent.st/). He'll share some fascinating insights into what we're doing and why it matters.
 
 {% embed url="https://youtu.be/XN_PHg1K61w" fullWidth="false" %}
 A new data economy with power to the people - Trent McConaghy
@@ -43,4 +43,4 @@ A new data economy with power to the people - Trent McConaghy
 ### Ocean Protocol Whitepaper
 
 \
-If you'd like to explore the nitty-gritty of our technology, feel free to dive into our [whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)! It's a comprehensive resource that explains all the technical details and the core concepts that drive Ocean Protocol. It's a great way to get a deeper understanding of what we're all about.
+If you'd like to explore the details of our technology, feel free to dive into our [whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)! It's a comprehensive resource that explains all the technical details and the core concepts that drive Ocean Protocol. It's a great way to get a deeper understanding of what we're all about.
