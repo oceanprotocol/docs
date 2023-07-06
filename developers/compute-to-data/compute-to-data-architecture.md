@@ -46,7 +46,7 @@ Before the flow can begin, these pre-conditions must be met:
 
 ### Access Control using Ocean Provider
 
-Similar to the `access service`, the `compute service` within Ocean Protocol relies on the [Ocean Provider](../provider/), which is a crucial component managed by Publishers. The role of the Ocean Provider is to facilitate interactions with users and handle the fundamental aspects of a Publisher's infrastructure, enabling seamless integration into the Ocean Protocol ecosystem. It serves as the primary interface for direct interaction with the infrastructure where the data is located.
+Similar to the `access service`, the `compute service` within Ocean Protocol relies on the [Ocean Provider](../provider/), which is a crucial component managed by the asset Publishers. The role of the Ocean Provider is to facilitate interactions with users and handle the fundamental aspects of a Publisher's infrastructure, enabling seamless integration into the Ocean Protocol ecosystem. It serves as the primary interface for direct interaction with the infrastructure where the data is located.
 
 The [Ocean Provider](../provider/) encompasses the necessary credentials to establish secure and authorized interactions with the underlying infrastructure. Initially, this infrastructure may be hosted in cloud providers, although it also has the flexibility to extend to on-premise environments if required. By encompassing the necessary credentials, the Ocean Provider ensures the smooth and controlled access to the infrastructure, allowing Publishers to effectively leverage the compute service within Ocean Protocol.
 
@@ -99,7 +99,7 @@ Upon the successful completion of its tasks, the Pod-Configuration gracefully co
 
 ### Pod Publishing
 
-Pod Publishing is a command-line utility that seamlessly integrates with the Operator Service and Operator Engine within a Kubernetes-based compute infrastructure. It serves as a versatile tool for efficiently processing, logging, and uploading workflow outputs. By working in tandem with the Operator Service and Operator Engine, Pod Publishing streamlines the workflow management process, enabling easy and reliable handling of output data generated during computation tasks. Whether it's processing complex datasets or logging crucial information, Pod Publishing simplifies these tasks and enhances the overall efficiency of the compute infrastructure.
+Pod Publishing is a command-line utility that seamlessly integrates with the Operator Service and Operator Engine within a Kubernetes-based compute infrastructure. It serves as a versatile tool for efficient processing, logging, and uploading workflow outputs. By working in tandem with the Operator Service and Operator Engine, Pod Publishing streamlines the workflow management process, enabling easy and reliable handling of output data generated during computation tasks. Whether it's processing complex datasets or logging crucial information, Pod Publishing simplifies these tasks and enhances the overall efficiency of the compute infrastructure.
 
 The primary functionality of Pod Publishing can be divided into three key areas:
 
@@ -107,7 +107,7 @@ The primary functionality of Pod Publishing can be divided into three key areas:
 2. **Role in Publishing Pod**: Within the compute infrastructure orchestrated by the Operator Engine on Kubernetes (K8s), Pod Publishing is integral to the Publishing Pod. The Publishing Pod handles the creation of new assets in the Ocean Protocol network after a workflow execution.
 3. **Workflow Outputs Management**: Pod Publishing manages the storage of workflow outputs. Depending on configuration, it interacts with IPFS or AWS S3, and logs the processing steps.
 
-Please note:
-
+{% hint style="info" %}
 * Pod Publishing does not provide storage capabilities; all state information is stored directly in the K8s cluster or the respective data storage solution (AWS S3 or IPFS).
 * The utility works in close coordination with the Operator Service and Operator Engine, but does not have standalone functionality.
+{% endhint %}

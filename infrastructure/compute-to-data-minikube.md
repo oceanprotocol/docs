@@ -6,8 +6,8 @@ title: Minikube Compute-to-Data Environment
 
 ### Requirements
 
-* functioning internet-accessable provider service
-* machine capable of running compute (e.g. we used a machine with 8 CPUs, 16 GB Ram, 100GB SSD and fast internet connection)
+* functioning internet-accessible provider service
+* a machine capable of running compute (e.g. we used a machine with 8 CPUs, 16 GB Ram, 100GB SSD, and fast internet connection)
 * Ubuntu 22.04 LTS
 
 ### Install Docker and Git
@@ -27,7 +27,7 @@ sudo dpkg -i minikube_1.22.0-0_amd64.deb
 
 ### Start Minikube
 
-First command is imporant, and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828).
+The first command is important and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828).
 
 ```bash
 minikube config set kubernetes-version v1.16.0
@@ -48,7 +48,7 @@ echo "$(<kubectl.sha256) kubectl" | sha256sum --check
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
 
-Wait untill all the defaults are running (1/1).
+Wait until all the defaults are running (1/1).
 
 ```bash
 watch kubectl get pods --all-namespaces
@@ -68,7 +68,7 @@ sudo /bin/sh -c 'echo "127.0.0.1    youripfsserver" >> /etc/hosts'
 
 ### Storage class (Optional)
 
-For minikube, you can use the default 'standard' class.
+For Minikube, you can use the default 'standard' class.
 
 For AWS, please make sure that your class allocates volumes in the same region and zone in which you are running your pods.
 
@@ -98,13 +98,13 @@ For more information, please visit https://kubernetes.io/docs/concepts/storage/s
 
 ### Download and Configure Operator Service
 
-Open new terminal and run the command below.
+Open a new terminal and run the command below.
 
 ```bash
 git clone https://github.com/oceanprotocol/operator-service.git
 ```
 
-Edit `operator-service/kubernetes/postgres-configmap.yaml`. Change `POSTGRES_PASSWORD` to nice long random password.
+Edit `operator-service/kubernetes/postgres-configmap.yaml`. Change `POSTGRES_PASSWORD` to a nice long random password.
 
 Edit `operator-service/kubernetes/deployment.yaml`. Optionally change:
 
@@ -138,9 +138,9 @@ spec:
 git clone https://github.com/oceanprotocol/operator-engine.git
 ```
 
-Check the [README](https://github.com/oceanprotocol/operator-engine#customize-your-operator-engine-deployment) section of operator engine to customize your deployment.
+Check the [README](https://github.com/oceanprotocol/operator-engine#customize-your-operator-engine-deployment) section of the operator engine to customize your deployment.
 
-At a minimum you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
+At a minimum, you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
 
 ### Create namespaces
 
@@ -192,7 +192,7 @@ Alternatively you could use another method to communicate between the C2D Enviro
 
 ### Initialize database
 
-If your minikube is running on compute.example.com:
+If your Minikube is running on compute.example.com:
 
 ```bash
 curl -X POST "https://compute.example.com/api/v1/operator/pgsqlinit" -H  "accept: application/json"
