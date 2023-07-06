@@ -12,17 +12,17 @@ description: Get veOCEAN tokens to use the Data Farming dApp and make yield! �
 
 ### What is veOCEAN and why do you want it? 🌊
 
-In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens first! When you lock your OCEAN tokens, you get **veOCEAN tokens** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **weekly active OCEAN rewards**, for allocating your veOCEAN tokens to your favorite assets and get a portion of their sales!
+In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens first! When you lock your OCEAN tokens, you get **veOCEAN tokens** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **Volume DF rewards**, for allocating your veOCEAN tokens to your favorite assets and get a portion of their sales!
 
 ### Don't have OCEAN tokens yet? Get those first!
 
 #### **Step 1 - Get OCEAN tokens**
 
-* Acquire $OCEAN via a decentralized exchange (DEX) such as Uniswap or a centralized exchange (CEX) such as Binance, Coinbase, etc.
+- Acquire $OCEAN via a decentralized exchange (DEX) such as Uniswap or a centralized exchange (CEX) such as Binance, Coinbase, etc.
 
 #### **Step 2 - Send to your self-custody wallet**
 
-* Send your OCEAN tokens to a self-custody wallet of yours that supports ERC-20 tokens, like Metamask for example.
+- Send your OCEAN tokens to a self-custody wallet of yours that supports ERC-20 tokens, like Metamask for example.
 
 ### Where the rubber meets the road 🚗💨
 
@@ -34,22 +34,22 @@ Watch and learn, friend
 
 **Step 3 - Go to Ocean Protocol's Data Farming dApp**
 
-* Go to [https://df.oceandao.org/](https://df.oceandao.org/)
+- Go to [https://df.oceandao.org/](https://df.oceandao.org/)
 
 #### Step 4 - Connect Your Wallet + Lock your OCEAN for veOCEAN
 
-* Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
+- Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
 
 {% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %}
 
 In this step you will:
 
-* Enter the amount of OCEAN tokens that you are going to lock up
-* Select a Lock End Date indicating how many weeks you’re going to lock up your OCEAN tokens. (As the Lock End Date goes farther into the future, your Lock Multiplier increases).
-* Click on the checkbox to agree to the disclaimer.
-* Click the pink “Approve # OCEAN” button
-* Accept the transaction in your wallet.
-* Click the “Create Lock” button.
-* Accept the transaction in your wallet.
+- Enter the amount of OCEAN tokens that you are going to lock up
+- Select a Lock End Date indicating how many weeks you’re going to lock up your OCEAN tokens. (As the Lock End Date goes farther into the future, your Lock Multiplier increases).
+- Click on the checkbox to agree to the disclaimer.
+- Click the pink “Approve # OCEAN” button
+- Accept the transaction in your wallet.
+- Click the “Create Lock” button.
+- Accept the transaction in your wallet.
 
 Congratulations! You have now locked your OCEAN tokens for veOCEAN tokens and are generating passive yield automatically. You can [claim your passive OCEAN rewards](claim-ocean-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
