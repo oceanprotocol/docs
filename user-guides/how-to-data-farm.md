@@ -10,13 +10,13 @@ description: Make extra dosh with active rewards yield in Data Farming
 
 The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating and publishing valuable assets in the Ocean ecosystem. The way that users curate assets is by **allocating veOCEAN** to them using the Data Farming dApp. We'll show you how!
 
-## Active Rewards substreams
+## **Active Rewards substreams**
 
 Active Rewards is one of the two main streams within Data Farming, along with Passive Rewards. The Active Rewards stream offers a defined amount of rewards for each round and is further divided into multiple substreams.
 
 The primary objective of these substreams is to provide users with various opportunities to actively engage in Data Farming. This approach allows users with different skills and interests to collaborate and contribute their unique abilities towards achieving the core values of Ocean Protocol.
 
-### Volume DF Substream
+### **Volume DF Substream**
 
 If you have locked your OCEAN tokens in exchange for veOCEAN, this is the ideal opportunity for you to utilize those veOCEAN tokens and earn a portion of active rewards in addition to passive rewards.
 
@@ -24,7 +24,7 @@ By allocating your veOCEAN power to high-quality datasets, you can assist Ocean 
 
 For more information on how to get started and detailed instructions, please refer to the [Volume DF](/user-guides/how-to-farm-volumedf.md) section.
 
-### Challenge DF Substream
+### **Challenge DF Substream**
 
 If you are a data scientist and enjoy tackling challenging problems, this is the perfect place for you. Challenge DF provides a weekly competition where you can test your skills in predicting the price of Ethereum. Rise against other participants to earn a place on the podium and receive a share of the available rewards.
 

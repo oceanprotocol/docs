@@ -30,6 +30,8 @@
   * [Sponsor a Data Challenge](user-guides/sponsor-a-data-challenge.md)
   * [Get Started Data Farming](user-guides/get-started-df.md)
   * [Harvest More Yield Data Farming](user-guides/how-to-data-farm.md)
+  * [Harvest More Yield Challenge DF](user-guides/how-to-data-farm-challengeDF.md)
+  * [Harvest More Yield Volume DF](user-guides/how-to-data-volumeDF.md)
   * [Claim Rewards Data Farming](user-guides/claim-ocean-rewards.md)
   * [Liquidity Pools \[deprecated\]](user-guides/remove-liquidity-pools.md)
 * [👨💻 Developers](developers/README.md)
