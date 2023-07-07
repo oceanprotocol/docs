@@ -26,7 +26,7 @@ For more information on how to get started and detailed instructions, please ref
 
 ### Challenge DF Substream
 
-If you are a data scientist and enjoy tackling challenging problems, this is the perfect place for you. The Challenge DF provides a weekly challenge where you can test your skills in predicting the price of Ethereum. Compete against other participants to earn a place on the podium and receive a share of the available rewards.
+If you are a data scientist and enjoy tackling challenging problems, this is the perfect place for you. Challenge DF provides a weekly competition where you can test your skills in predicting the price of Ethereum. Rise against other participants to earn a place on the podium and receive a share of the available rewards.
 
 This opportunity allows you to explore the capabilities offered by Ocean Protocol and gain valuable exposure. As your models and skills improve, you can publish your models on the main network and begin monetizing your work.
 

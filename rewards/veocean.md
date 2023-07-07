@@ -26,7 +26,7 @@ veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefi
 
 1. **Holding it** veOCEAN pays **Passive OCEAN Rewards** every week.
 2. **Allocating it** veOCEAN pays **Active OCEAN Rewards** every week to the top selling assets in the Ocean ecosystem.
-3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily access Active Rewards.
+3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily manage Active Rewards.
 4. **2x Publisher Stake** If you are a publisher in the Ocean ecosystem, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets in the Ocean ecosystem further.
 
 ### The Nitty Gritty of **Passive & Active Rewards**
