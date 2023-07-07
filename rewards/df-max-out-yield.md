@@ -4,22 +4,25 @@ description: >-
   Ocean Protocol's Data Farming dApp! 🥋
 ---
 
-# DF Max Out Yield (Purple Belt)
+# Max Out Volume DF (Purple Belt)
 
 <figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
-### How to Maximize Your Yield
+### Maximize your Yield
 
-If you only lock your OCEAN tokens to get passive yield, then you're leaving money on the table. Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** in the Ocean ecosystem. (No revenue, no rewards.) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the allocation power** when you allocate to an asset that you publish!
+If you only lock your OCEAN tokens to get passive yield, then you're leaving money on the table. 
 
-Thus, if you really want to max out your APY:
+Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** in the Ocean ecosystem. (No revenue, no rewards.) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the Allocation Power** when you allocate to an asset that you publish!
 
-1. Lock your OCEAN for veOCEAN to claim weekly Passive Rewards
-2. Create & publish assets (and make $ in selling them) — or work with people who can
-3. Lock OCEAN and stake veOCEAN on your published assets for weekly Active Rewards
-4. Claim the rewards
+Thus, if you really want to max out Volume DF APY:
 
-#### Don't have time to publish your own datasets?&#x20;
+1. Lock your OCEAN for 4 years to receive 100% voting power.
+2. Have other participants delegate their Allocation Power to you.
+3. Create & publish assets (and make $ in selling them) — or work with people who can.
+4. Point your Allocation Power towards your published assets to receive a 2x bonus.
+5. Claim weekly Passive Rewards, Active Rewards, and update your lock.
+
+#### Don't have time to publish your own datasets?
 
 Another way to improve your yield is by [delegating](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made. To read more, see our [info on Delegation](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards).
 

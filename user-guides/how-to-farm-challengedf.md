@@ -2,13 +2,15 @@
 description: Make extra dosh with active rewards yield in Data Farming
 ---
 
-# Harvest More Yield Data Farming - Challenge DF
+# Harvest More Yield in Challenge DF
 
 <figure><img src="../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
 ## Get More Yield from Challenge DF Rewards
 
-The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem. If you're eager to begin extracting value from data but aren't sure how to get started, the Challenge DF is here to help!
+The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem.  
+
+If you're eager to begin extracting value from data but aren't sure how to get started, then Challenge DF is here to help!
 
 By participating in the weekly data challenges of predicting the price of Ethereum, you will become familiar with the Ocean Protocol stack and with building predictions that can be sold for money.
 

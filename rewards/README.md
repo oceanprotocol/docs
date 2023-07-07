@@ -33,9 +33,9 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 ## Delegation
 
-[Delegation](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards) will teach you how to share your veOCEAN allocation power to other users who can manage Volume DF substream Data Farming for you.
+[Delegation](../user-guides/how-to-delegate.md) will teach you how to share your veOCEAN allocation power to other users that can help manage Volume DF substream for you.
 
-Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of your rewards and the process of returning those back to you.
+Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of managing your Allocation Power and cut from the rewards.
 
 ## Further Reading
 

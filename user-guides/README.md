@@ -46,6 +46,18 @@ Farm data like a pro. 😎🥕
 [how-to-data-farm.md](how-to-data-farm.md)
 {% endcontent-ref %}
 
+{% content-ref url="how-to-data-farm-challengedf.md" %}
+[how-to-data-farm-challengedf.md](how-to-data-farm-challengedf.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-data-farm-volumedf.md" %}
+[how-to-data-farm-volumedf.md](how-to-data-farm-volumedf.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-delegate.md" %}
+[how-to-delegate.md](how-to-delegate.md)
+{% endcontent-ref %}
+
 {% content-ref url="claim-ocean-rewards.md" %}
 [claim-ocean-rewards.md](claim-ocean-rewards.md)
 {% endcontent-ref %}
