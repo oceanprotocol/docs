@@ -2,11 +2,11 @@
 description: Make extra dosh with active rewards yield in Data Farming
 ---
 
-# Harvest more Yield - Volume DF
+# Harvest More Yield - Volume DF
 
 <figure><img src="../.gitbook/assets/rewards/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
 
-## Get More Yield from Volume DF Rewards
+## Get More Rewards from Volume DF
 
 The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating and publishing valuable assets in the Ocean ecosystem. 
 

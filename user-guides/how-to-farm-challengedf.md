@@ -2,11 +2,11 @@
 description: Make extra dosh with active rewards yield in Data Farming
 ---
 
-# Harvest More Yield in Challenge DF
+# Harvest More Yield - Challenge DF
 
 <figure><img src="../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
-## Get More Yield from Challenge DF Rewards
+## Get More Rewards from Challenge DF
 
 The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem.  
 
