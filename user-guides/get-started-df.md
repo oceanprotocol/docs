@@ -10,11 +10,11 @@ description: Get veOCEAN tokens to use the Data Farming dApp and make yield! �
 
 <figure><img src="../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
-### What is veOCEAN and why do you want it? 🌊
+### **What is veOCEAN and why do you want it? 🌊**
 
 In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens first! When you lock your OCEAN tokens, you get **veOCEAN tokens** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **Volume DF rewards**, for allocating your veOCEAN tokens to your favorite assets and get a portion of their sales!
 
-### Don't have OCEAN tokens yet? Get those first!
+### **Don't have OCEAN tokens yet? Get those first!**
 
 #### **Step 1 - Get OCEAN tokens**
 
@@ -32,11 +32,11 @@ Not much of a reader? Watch and learn, friend
 Watch and learn, friend
 {% endembed %}
 
-**Step 3 - Go to Ocean Protocol's Data Farming dApp**
+#### **Step 3 - Go to Ocean Protocol's Data Farming dApp**
 
 - Go to [https://df.oceandao.org/](https://df.oceandao.org/)
 
-#### Step 4 - Connect Your Wallet + Lock your OCEAN for veOCEAN
+#### **Step 4 - Connect Your Wallet + Lock your OCEAN for veOCEAN**
 
 - Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
 
