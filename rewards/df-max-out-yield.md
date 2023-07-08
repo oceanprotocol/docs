@@ -24,7 +24,7 @@ Thus, if you really want to max out Volume DF APY:
 
 #### Don't have time to publish your own datasets?
 
-Another way to improve your yield is by [delegating](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made. To read more, see our [info on Delegation](../user-guides/how-to-data-farm.md#how-to-delegate-your-active-rewards).
+Another way to improve your yield is by [delegating](../user-guides/data-farming-101.md#how-to-delegate-your-active-rewards) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made. To read more, see our [info on Delegation](../user-guides/data-farming-101.md#how-to-delegate-your-active-rewards).
 
 ### Those assets don't sell themselves!
 

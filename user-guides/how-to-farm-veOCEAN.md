@@ -2,7 +2,7 @@
 description: Get veOCEAN tokens to use the Data Farming dApp and make yield! 🧑‍🌾🥕
 ---
 
-# Get Started Data Farming
+# Earn Passive Rewards with veOCEAN
 
 ### What is Data Farming?
 
@@ -52,4 +52,4 @@ In this step you will:
 - Click the “Create Lock” button.
 - Accept the transaction in your wallet.
 
-Congratulations! You have now locked your OCEAN tokens for veOCEAN tokens and are generating passive yield automatically. You can [claim your passive OCEAN rewards](claim-ocean-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
+Congratulations! You have now locked your OCEAN tokens for veOCEAN tokens and are generating passive yield automatically. You can [claim your passive OCEAN rewards](how-to-farm-claim-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!

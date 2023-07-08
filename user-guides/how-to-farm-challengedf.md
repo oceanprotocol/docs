@@ -2,7 +2,7 @@
 description: Make extra dosh with active rewards yield in Data Farming
 ---
 
-# Harvest More Yield - Challenge DF
+# Harvest More Yield in Challenge DF
 
 <figure><img src="../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
