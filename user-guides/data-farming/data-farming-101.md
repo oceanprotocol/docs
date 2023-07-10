@@ -4,7 +4,7 @@ description: Make extra dosh with active rewards yield in Data Farming
 
 # Data Farm 101
 
-<figure><img src="../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
 
 Data Farming is the core incentive system inside of Ocean Protocol. It offers different ways for participants to help the protocol grow and succeed.
 
@@ -50,7 +50,7 @@ By allocating your veOCEAN power to high-quality datasets, you can assist Ocean 
 
 Allocation Power can also be earned via delegation. The Data Farming dApp [Delegate Page](https://df.oceandao.org/delegate) lets you easily manage simple delegations that use the 100% of the current veOCEAN and the LockEnd time to set the delegation.
 
-For more information on how to get started and detailed instructions, please refer to the [Volume DF](user-guides/data-farming/how-to-farm-volumedf.md) section.
+For more information on how to get started and detailed instructions, please refer to the [Volume DF](how-to-farm-volumedf.md) section.
 
 ### Challenge DF Substream
 
@@ -58,4 +58,4 @@ If you are a data scientist and enjoy tackling challenging problems, this is the
 
 This opportunity allows you to explore the capabilities offered by Ocean Protocol and gain valuable exposure. As your models and skills improve, you can publish your models on the main network and begin monetizing your work.
 
-For detailed instructions and information on how to get started, please refer to the [Challenge DF](user-guides/data-farming/how-to-farm-challengedf.md) section.
+For detailed instructions and information on how to get started, please refer to the [Challenge DF](how-to-farm-challengedf.md) section.

@@ -8,7 +8,7 @@ description: Get veOCEAN tokens to use the Data Farming dApp and make yield! ðŸ§
 
 [Data Farming](https://df.oceandao.org) is our dApp that generates yield for participants that curate and publish valuable assets in the Ocean ecosystem.
 
-<figure><img src="../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
 ### What is veOCEAN and why do you want it? ðŸŒŠ
 

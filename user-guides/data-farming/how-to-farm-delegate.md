@@ -4,7 +4,7 @@ description: Simplify and Improve your Data Farming
 
 # Delegate Allocation Power and Active Rewards
 
-<figure><img src="../.gitbook/assets/rewards/gif/delegation-dog-herding-sheep.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rewards/gif/delegation-dog-herding-sheep.gif" alt=""><figcaption></figcaption></figure>
 
 ## Why Delegate?
 
