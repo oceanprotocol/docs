@@ -6,9 +6,9 @@ description: Make extra dosh with active rewards yield in Data Farming
 
 <figure><img src="../../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
-## Get More Rewards from Challenge DF
+## **Get More Rewards from Challenge DF**
 
-The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem.  
+The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem.
 
 If you're eager to begin extracting value from data but aren't sure how to get started, then Challenge DF is here to help!
 
@@ -51,6 +51,7 @@ The top 3 competitors win prizes and are visible in the leaderboard.
 #### Step 6 - View and claim Active Rewards.
 
 To view and claim your rewards:
+
 1. Make sure your wallet is connected.
 2. Your Challenge DF substream rewards will be displayed to the left besides "rewards". As you can see, it will be added to other active rewards that can be claimed besides "total rewards".
 3. To claim all Active Rewards including your Challenge DF rewards, simply click on the "Claim Rewards" button.

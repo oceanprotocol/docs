@@ -15,7 +15,7 @@ Data Farming rewards are structured in 2 main streams **Passive Rewards** and **
 
 ### The belt system
 
-Earn your white, blue, purple, brown, and black belts in Data Farming knowledge by reading our docs on this topic in increasing difficulty!
+Earn your white, blue, purple, red, brown, and black belts in Data Farming knowledge by reading our docs on this topic in increasing difficulty!
 
 ## veOCEAN
 
