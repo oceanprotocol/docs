@@ -1,10 +1,10 @@
 ---
 description: >-
-  Let's discuss the "ve" in veOCEAN for our last jutsu before earning a black
+  Let's discuss the "ve" in veOCEAN for our second jutsu, earning a blue
   belt in Data Farming knowledge!
 ---
 
-# DF "ve" in veOCEAN (Brown Belt)
+# DF "ve" in veOCEAN (Blue Belt)
 
 <figure><img src="../.gitbook/assets/gif/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
 
@@ -81,9 +81,7 @@ If you lock 1.0 OCEAN for 4 years, you get 1.0 veOCEAN at the start.
 
 At the end of your 4 years, your OCEAN is unlocked.
 
-#### Linear Decay
-
-**Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
+The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
 
 ### Replenishing your veOCEAN
 

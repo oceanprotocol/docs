@@ -38,8 +38,8 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 
 Farm data like a pro. 😎🥕
 
-{% content-ref url="data-farming-101.md" %}
-[data-farming-101.md](data-farming-101.md)
+{% content-ref url="README.md" %}
+[README.md](README.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-farm-veOCEAN.md" %}
@@ -58,8 +58,8 @@ Farm data like a pro. 😎🥕
 [how-to-farm-volumedf.md](how-to-farm-volumedf.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-delegate.md" %}
-[how-to-delegate.md](how-to-delegate.md)
+{% content-ref url="how-to-farm-delegate.md" %}
+[how-to-farm-delegate.md](how-to-farm-delegate.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺

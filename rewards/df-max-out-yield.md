@@ -4,11 +4,11 @@ description: >-
   Ocean Protocol's Data Farming dApp! 🥋
 ---
 
-# Max Out Volume DF (Purple Belt)
+# Mastering Volume DF (Purple Belt)
 
 <figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
-### Maximize your Yield
+## Yield Kung Fu
 
 If you only lock your OCEAN tokens to get passive yield, then you're leaving money on the table. 
 
@@ -22,19 +22,19 @@ Thus, if you really want to max out Volume DF APY:
 4. Point your Allocation Power towards your published assets to receive a 2x bonus.
 5. Claim weekly Passive Rewards, Active Rewards, and update your lock.
 
-#### Don't have time to publish your own datasets?
+### Data Farming success metrics
 
-Another way to improve your yield is by [delegating](../user-guides/data-farming-101.md#how-to-delegate-your-active-rewards) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made. To read more, see our [info on Delegation](../user-guides/data-farming-101.md#how-to-delegate-your-active-rewards).
+**Data Consume Volume (DCV)** is our term for **the total $ amount spent on purchases of Ocean ecosystem assets**, transaction fees, and more. The higher DCV of Ocean ecosystem assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
 
 ### Those assets don't sell themselves!
 
-Marketing your assets to buyers is your challenge. Just because you publish them in the Ocean ecosystem doesn't mean that they will sell. It will take real work. Your reward is great APY. Its incentives all the way down 🙂
+Marketing your assets to buyers can be a big challenge. Just because you publish them in the Ocean ecosystem doesn't mean that they will sell. It will take real work. Your reward is great APY. Its incentives all the way down 🙂
 
 <figure><img src="../.gitbook/assets/gif/hustlin.gif" alt=""><figcaption></figcaption></figure>
 
-### Measuring Data Farming's Success
+### Don't have time to publish your own datasets?
 
-**Data Consume Volume (DCV)** is our term for **the total $ amount spent on purchases of Ocean ecosystem assets**, transaction fees, and more. The higher DCV of Ocean ecosystem assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
+Another way to improve your yield is by [delegating](../user-guides/README.md#how-to-delegate-your-active-rewards) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made. To read more, see our [info on Delegation](../user-guides/README.md#how-to-delegate-your-active-rewards).
 
 ### How Rewards are Calculated
 
@@ -72,6 +72,14 @@ To qualify for DF, an asset must also:
 * Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) by OPF to [production networks](../discover/networks/README.md)
 * Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
 
+### Reward Schedule
+
+The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
+
+<figure><img src="../.gitbook/assets/rewards/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/gif/cash-flow.gif" alt=""><figcaption></figcaption></figure>
+
 ### A Brief History of Data Farming
 
 Data Farming has evolved over time and will continue to do so as the Emission Curve progresses. Below are the phases and parameters incurred during the evolution of the Data Farming program. We are now in the DF Main phase.
@@ -89,11 +97,3 @@ Up to 100K OCEAN rewards were budgeted per week. Counting started Thu Oct 27, 20
 We are now in DF Main which immediately followed the release of DF Beta on Thu Mar 16, 2023. Rewards begin at 150k per week and go to 1.1M OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades.&#x20;
 
 The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](df-emissions-apys.md#emissions--first-5-years), and perhaps more easily understood in the Reward Schedule below.
-
-### Reward Schedule
-
-The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
-
-<figure><img src="../.gitbook/assets/rewards/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/gif/cash-flow.gif" alt=""><figcaption></figcaption></figure>
