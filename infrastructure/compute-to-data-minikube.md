@@ -2,15 +2,40 @@
 title: Minikube Compute-to-Data Environment
 ---
 
-# C2D - Minikube Environment
+# Deploying C2D
+
+This chapter will present how to deploy the C2D component of the Ocean stack. As mentioned in the [C2D Architecture chapter](../developers/compute-to-data/#architecture-and-overview-guides), the Compute-to-Data component uses Kubernetes to orchestrate the creation and deletion of the pods in which the C2D jobs are run.&#x20;
+
+For the ones that do not have a Kubernetes environment available, we added to this guide instructions on how to install Minikube, which is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. In case you have a Kubernetes environment in place, please skip directly to step 4 of this guide.
+
+
 
 ### Requirements
 
-* functioning internet-accessible provider service
-* a machine capable of running compute (e.g. we used a machine with 8 CPUs, 16 GB Ram, 100GB SSD, and fast internet connection)
-* Ubuntu 22.04 LTS
+* Communications: a functioning internet-accessible provider service
+* Hardware: a server capable of running compute jobs (e.g. we used a machine with 8 CPUs, 16 GB Ram, 100GB SSD, and a fast internet connection). See [this guide](setup-server.md) for how to create a server;
+* Operating system: Ubuntu 22.04 LTS
 
-### Install Docker and Git
+
+
+### Steps
+
+1. [Install Docker and Git](compute-to-data-minikube.md#install-docker-and-git)
+2. [Install Minikube](compute-to-data-minikube.md#install-minikube)
+3. [Start Minikube](compute-to-data-minikube.md#start-minikube)
+4. [Install the Kubernetes command line tool (kubectl)](compute-to-data-minikube.md#install-the-kubernetes-command-line-tool-kubectl)
+5. [Run the IPFS host (optional)](compute-to-data-minikube.md#run-the-ipfs-host-optional)
+6. [Update the storage class](compute-to-data-minikube.md#update-the-storage-class)
+7. [Download and Configure Operator Service](compute-to-data-minikube.md#download-and-configure-operator-service)
+8. [Download and Configure Operator Engine](compute-to-data-minikube.md#download-and-configure-operator-engine)
+9. [Create namespaces](compute-to-data-minikube.md#create-namespaces)
+10. [Deploy Operator Service](compute-to-data-minikube.md#deploy-operator-service)
+11. [Deploy Operator Engine](compute-to-data-minikube.md#deploy-operator-engine)
+12. [Expose Operator Service](compute-to-data-minikube.md#expose-operator-service)
+13. [Initialize the database](compute-to-data-minikube.md#initialize-database)
+14. [Update Provider](compute-to-data-minikube.md#update-provider)
+
+#### Install Docker and Git
 
 ```bash
 sudo apt update
@@ -18,14 +43,14 @@ sudo apt install git docker.io
 sudo usermod -aG docker $USER && newgrp docker
 ```
 
-### Install Minikube
+#### Install Minikube
 
 ```bash
 wget -q --show-progress https://github.com/kubernetes/minikube/releases/download/v1.22.0/minikube_1.22.0-0_amd64.deb
 sudo dpkg -i minikube_1.22.0-0_amd64.deb
 ```
 
-### Start Minikube
+#### Start Minikube
 
 The first command is important and solves a [PersistentVolumeClaims problem](https://github.com/kubernetes/minikube/issues/7828).
 
@@ -38,7 +63,7 @@ Depending on the number of available CPUs, RAM, and the required resources for r
 
 For other options to run minikube refer to this [link](https://minikube.sigs.k8s.io/docs/commands/start/)
 
-### Install kubectl
+#### Install the Kubernetes command line tool (kubectl)
 
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -54,7 +79,11 @@ Wait until all the defaults are running (1/1).
 watch kubectl get pods --all-namespaces
 ```
 
-#### Run IPFS host
+#### Run the IPFS host (optional)
+
+To store the results and the logs of the C2D jobs, you can use either an AWS S3 bucket or IPFS.&#x20;
+
+In case you want to use IPFS you need to run an IPFS host, as presented below.
 
 ```bash
 export ipfs_staging=~/ipfs_staging
@@ -66,13 +95,17 @@ sudo /bin/sh -c 'echo "127.0.0.1    youripfsserver" >> /etc/hosts'
 
 ```
 
-### Storage class (Optional)
+#### Update the storage class
+
+The storage class is used by Kubernetes to create the temporary volumes on which the data used by the algorithm will be stored. &#x20;
+
+Please ensure that your class allocates volumes in the same region and zone where you are running your pods.&#x20;
+
+You need to consider the storage class available for your environment.&#x20;
 
 For Minikube, you can use the default 'standard' class.
 
-For AWS, please make sure that your class allocates volumes in the same region and zone in which you are running your pods.
-
-We created our own 'standard' class in AWS:
+In AWS, we created our own 'standard' class:
 
 ```bash
 kubectl get storageclass standard -o yaml
@@ -96,7 +129,7 @@ volumeBindingMode: Immediate
 
 For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
 
-### Download and Configure Operator Service
+#### Download and Configure Operator Service
 
 Open a new terminal and run the command below.
 
@@ -132,7 +165,7 @@ spec:
           value: "3600"
 ```
 
-### Download and Configure Operator Engine
+#### Download and Configure Operator Engine
 
 ```bash
 git clone https://github.com/oceanprotocol/operator-engine.git
@@ -142,14 +175,14 @@ Check the [README](https://github.com/oceanprotocol/operator-engine#customize-yo
 
 At a minimum, you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
 
-### Create namespaces
+#### Create namespaces
 
 ```bash
 kubectl create ns ocean-operator
 kubectl create ns ocean-compute
 ```
 
-### Deploy Operator Service
+#### Deploy Operator Service
 
 ```bash
 kubectl config set-context --current --namespace ocean-operator
@@ -160,7 +193,7 @@ kubectl create -f operator-service/kubernetes/postgresql-service.yaml
 kubectl apply  -f operator-service/kubernetes/deployment.yaml
 ```
 
-### Deploy Operator Engine
+#### Deploy Operator Engine
 
 ```bash
 kubectl config set-context --current --namespace ocean-compute
@@ -176,7 +209,7 @@ kubectl create -f operator-service/kubernetes/postgres-configmap.yaml
 kubectl -n ocean-compute apply -f /ocean/operator-engine/kubernetes/egress.yaml
 ```
 
-### Expose Operator Service
+#### Expose Operator Service
 
 ```bash
 kubectl expose deployment operator-api --namespace=ocean-operator --port=8050
@@ -190,7 +223,7 @@ kubectl -n ocean-operator port-forward svc/operator-api 8050
 
 Alternatively you could use another method to communicate between the C2D Environment and the provider, such as an SSH tunnel.
 
-### Initialize database
+#### Initialize database
 
 If your Minikube is running on compute.example.com:
 
@@ -198,7 +231,7 @@ If your Minikube is running on compute.example.com:
 curl -X POST "https://compute.example.com/api/v1/operator/pgsqlinit" -H  "accept: application/json"
 ```
 
-### Update Provider
+#### Update Provider
 
 Update your provider service by updating the `operator_service.url` value in `config.ini`
 
@@ -208,4 +241,3 @@ operator_service.url = https://compute.example.com/
 
 Restart your provider service.
 
-[Watch the explanatory video for more details](https://vimeo.com/580934725)

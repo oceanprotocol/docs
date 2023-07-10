@@ -109,7 +109,7 @@
   * [Deploying Aquarius](infrastructure/deploying-aquarius.md)
   * [Deploying Provider](infrastructure/deploying-provider.md)
   * [Deploying Ocean Subgraph](infrastructure/deploying-ocean-subgraph.md)
-  * [C2D - Minikube Environment](infrastructure/compute-to-data-minikube.md)
+  * [Deploying C2D](infrastructure/compute-to-data-minikube.md)
   * [C2D - Private Docker Registry](infrastructure/compute-to-data-docker-registry.md)
 * [🤑 DeFi](defi/README.md)
 * [💰 Rewards](rewards/README.md)
