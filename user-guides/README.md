@@ -34,9 +34,9 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 [using-ocean-market.md](using-ocean-market.md)
 {% endcontent-ref %}
 
-### Make yield from dataset and algorithm NFTs on-chain ⛓️
+### Farm data like a pro 😎🥕
 
-Farm data like a pro. 😎🥕
+Earn rewards by obtaining veOCEAN, farm yield by curating datasets, and optimize your APY by publishing Data & Algorithm NFTs on-chain. ⛓️
 
 {% content-ref url="get-started-df.md" %}
 [get-started-df.md](get-started-df.md)

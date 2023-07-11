@@ -2,7 +2,7 @@
 description: Learn the fundamentals of The Way of Data Farming 🧑‍🏫
 ---
 
-# Data Farming 101 (White Belt)
+# Data Farming 101
 
 <figure><img src="../.gitbook/assets/gif/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
 
@@ -43,16 +43,6 @@ Each Data Farming weekly round has a pool of OCEAN rewards, and 50% of the pool 
 | Passive Rewards | Active Rewards |
 | --------------- | -------------- |
 | 50%             | 50%            |
-
-### What are Publisher Rewards?
-
-<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
-
-Data Farming strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
-
-How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
-
-You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
 
 ## [GET STARTED DATA FARMING HERE.](https://df.oceandao.org)
 

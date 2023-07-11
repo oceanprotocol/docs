@@ -1,10 +1,9 @@
 ---
 description: >-
-  Let's discuss the "ve" in veOCEAN for our last jutsu before earning a black
-  belt in Data Farming knowledge!
+  Learn the basic moves to start kicking a** Data Farming
 ---
 
-# DF "ve" in veOCEAN (Brown Belt)
+# Passive Farming veOCEAN
 
 <figure><img src="../.gitbook/assets/gif/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
 
