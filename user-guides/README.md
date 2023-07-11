@@ -42,12 +42,20 @@ Earn rewards by obtaining veOCEAN, farm yield by curating datasets, and optimize
 [get-started-df.md](get-started-df.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-data-farm.md" %}
-[how-to-data-farm.md](how-to-data-farm.md)
+{% content-ref url="get-started-df.md" %}
+[get-started-df.md](get-started-df.md)
 {% endcontent-ref %}
 
 {% content-ref url="claim-ocean-rewards.md" %}
 [claim-ocean-rewards.md](claim-ocean-rewards.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-data-farm.md" %}
+[how-to-data-farm.md](how-to-data-farm.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-df-estimate-apy.md" %}
+[how-to-df-estimate-apy.md](how-to-df-estimate-apy.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺

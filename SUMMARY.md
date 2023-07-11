@@ -29,6 +29,7 @@
   * [Join a Data Challenge](user-guides/join-a-data-challenge.md)
   * [Sponsor a Data Challenge](user-guides/sponsor-a-data-challenge.md)
   * [Get Started Data Farming](user-guides/get-started-df.md)
+  * [Estimate your APYs](user-guides/how-to-df-estimate-apy.md)
   * [Harvest More Yield Data Farming](user-guides/how-to-data-farm.md)
   * [Claim Rewards Data Farming](user-guides/claim-ocean-rewards.md)
   * [Liquidity Pools \[deprecated\]](user-guides/remove-liquidity-pools.md)
