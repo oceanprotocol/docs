@@ -25,7 +25,7 @@ The above are simplified examples meant for everyone to understand. They are nai
 
 ### Estimating Active APY
 
-Active Rewards are a bit more complicated and we currently do not provide a model/sim for estimating Active APY. This is also dependent on a lot of different variables and is unlikely for the user to get a practical result.
+Active Rewards are a bit more complicated and depend on many factors that are currently hard to predict accurately. It is unlikely for the user to get a practical result, which is why we don't offer a tool to estimate Active APY right now.
 
 You can easily expand the spreadsheet above to support basic, naive calculations for Active Rewards such as defining a constant percent yield per week.
 
