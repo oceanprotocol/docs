@@ -15,7 +15,7 @@ Rewards are earned by users that hold and use their veOCEAN to help the protocol
 2. APYs are always initially calculated by dividing the amount of OCEAN you have received from rewards, by the relative amount of OCEAN you have locked up.
 3. As a rule: _Wherever APYs are provided to the user in the app (df.oceandao.org), they are caclulated assuming an initial 4-year lock up period with a weekly schedule of compounding rewards into an updated 4-year lock. This estimate works provided current: number of users, reward emissions, and other reward parameters stay constant while excluding all tx fees_
 
-Having said all of this, let's work through it and try to keep it as simple as possible.
+Now that we got that out of the way, let's work through it and try to keep it as simple as possible.
 
 ### Estimating Passive APY
 
