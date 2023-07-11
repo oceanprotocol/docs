@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn the basic moves to start kicking a** Data Farming
+  Learn the basic moves to start kicking a** at Data Farming
 ---
 
 # Passive Farming veOCEAN
@@ -61,7 +61,7 @@ After choosing your lock period and locking up your OCEAN into the vault, you wi
 
 veOCEAN is non-transferable. You can’t sell it or send it to other addresses.
 
-_To help you more easily understand this, [we have created a couple of examples for you](../user-guides/how-to-df-estimate-apy.md) so you can more easily visualize the impact for your decisions on your overall yields._
+_To help you more easily understand this, we have created [a couple of examples](../user-guides/how-to-df-estimate-apy.md) so you can more easily visualize the impact of your decisions on your overall yields._
 
 ### Linear Decay
 

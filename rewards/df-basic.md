@@ -8,7 +8,7 @@ description: Show you can complete all User-Guides as the last steps to master D
 
 ### Get Started
 
-Our [User Guides](../user-guides/README.md) get you started Data Farming quickly so you can complete all operations. Follow these guides to get a complete handle on all Data Farming activities.
+Our [User Guides](../user-guides/README.md) get you started on Data Farming quickly so you can complete all operations. Follow these guides to get a complete handle on all Data Farming activities.
 
 {% content-ref url="../user-guides/get-started-df.md" %}
 [get-started-df.md](../user-guides/get-started-df.md)
