@@ -1,6 +1,6 @@
 # Configuration
 
-For obtaining the API keys for blockchain access and setting the correct environment variables, please consult [this section](http://localhost:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) first and proceed with the next steps.
+For obtaining the API keys for blockchain access and setting the correct environment variables, please consult [this section](http://127.0.0.1:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) first and proceed with the next steps.
 
 ### Create a directory
 

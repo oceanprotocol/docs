@@ -10,9 +10,11 @@ Ocean Protocol utilizes a combination of blockchain technology, decentralized ne
 2. **Discovery and Access Control**: Data consumers can discover available data assets through decentralized metadata services like Aquarius. Access control mechanisms, such as smart contracts, verify the consumer's permissions and handle the transfer of data access tokens.
 3. **Secure Data Exchange**: When a data consumer purchases access to a data asset, the asset's metadata, and access instructions are encrypted by the data provider using the Provider service. The encrypted asset is then securely transferred to the consumer, who can decrypt and utilize it without revealing the asset's URL.
 4. [**Compute-to-Data**](../developers/compute-to-data/) **(C2D)**: Ocean Protocol supports C2D capabilities, allowing data consumers to perform computations on data assets without direct access to the underlying data. The compute operations are executed in a secure and controlled environment, ensuring data privacy and compliance.
-5. **Incentives and Governance**: Ocean Protocol incorporates tokeconomics and a governance framework to incentivize participants and ensure the sustainability and evolution of the ecosystem. Participants can earn and stake Ocean tokens (OCEAN) for veOCEANs, curate data, contribute to the network, and participate in governance decisions.
+5. **Incentives and Governance**: Ocean Protocol incorporates tokenomics and a governance framework to incentivize participants and ensure the sustainability and evolution of the ecosystem. Participants can earn and stake Ocean tokens (OCEAN) for veOCEANs, curate data, contribute to the network and participate in governance decisions.
 
 Ocean Protocol also combines advanced technologies and web components to create a robust and efficient data ecosystem.
+
+<figure><img src="../.gitbook/assets/Ocean101.png" alt=""><figcaption><p>Ocean architectural overview </p></figcaption></figure>
 
 Powerful libraries such as [Ocean.js](../developers/ocean.js/) (JavaScript) and [Ocean.py](../developers/ocean.py/) (Python) facilitate seamless integration and interaction with the protocol, offering a wide range of functionalities.
 
