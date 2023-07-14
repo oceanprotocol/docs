@@ -6,7 +6,7 @@ description: Empowering the Decentralised Data Economy
 
 The [V4 release](https://blog.oceanprotocol.com/ocean-v4-overview-1ccd4a7ce150) of Ocean Protocol introduces a comprehensive and enhanced suite of s[mart contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts) that serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. With the introduction of V4 contracts, Ocean Protocol propels itself forward, delivering substantial functionality, scalability, and flexibility advancements.
 
-The V4 smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). The V4 introduces significant enhancements that encompass the following key **features**:
+The V4 smart contracts have been deployed across multiple [networks](../../discover/networks/) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). The V4 introduces significant enhancements that encompass the following key **features**:
 
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
@@ -20,15 +20,41 @@ By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility 
 
 <figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol V4 Smart Contracts</p></figcaption></figure>
 
-#### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
+### Publish Flow
+
+Publishing with V4 smart contracts in Ocean Protocol involves a well-defined process that streamlines the publishing of data assets. It provides a systematic approach to ensure efficient management and exchange of data within the Ocean Protocol ecosystem. By leveraging smart contracts, publishers can securely create and deploy data NFTs, allowing them to tokenize and represent their data assets. Additionally, the flexibility of V4 smart contracts enables publishers to define pricing schemas for datatokens, facilitating fair and transparent transactions. This publishing framework empowers data publishers by providing them with greater control and access to a global marketplace, while ensuring trust, immutability, and traceability of their published data assets.
+
+
+
+The V4 smart contracts publishing flow can be described as follows:
+
+1. The data publisher initiates the creation of a new data NFT.
+2. The data NFT factory deploys the template for the new data NFT.
+3. The data NFT template creates the data NFT contract.
+4. The address of the newly created data NFT is available to the data publisher.
+5. The publisher is now able to create datatokens with pricing schema for the data NFT. To accomplish this, the publisher initiates a call to the data NFT contract, specifically requesting the creation of a new datatoken with a fixed rate schema.
+6. The data NFT contract deploys a new datatoken and a fixed rate schema by interacting with the datatoken template contract.
+7. The datatoken contract is created (Datatoken-1 contract).
+8. The datatoken template generates a new fixed rate schema for Datatoken-1.
+9. The address of Datatoken-1 is now available to the data publisher.
+10. Optionally, the publisher can create a new datatoken (Datatoken-2) with a free price schema.
+11. The data NFT contract interacts with the Datatoken Template contract to create a new datatoken and a dispenser schema.
+12. The datatoken templated deploys the Datatoken-2 contract.
+13. The datatoken templated creates a dispenser for the Datatoken-2 contract.
+
+Below is a visual representation that illustrates the flow for easier understanding
+
+<figure><img src="../../.gitbook/assets/publish_dataNFT_detailed_flow.png" alt=""><figcaption><p>Publishing flow</p></figcaption></figure>
+
+### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 
 Ocean V4 brings forth enhanced opportunities for marketplace operators, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
 
 With Ocean V4, marketplace operators can unlock additional benefits. Firstly, the V4 smart contracts empower marketplace operators to collect [fees](fees.md) not only during **data consumption** but also through **fixed-rate exchanges**. This expanded revenue model allows operators to derive more value from the ecosystem. Moreover, in Ocean V4, the marketplace operator has the authority to determine the fee value, providing them with **increased control** over their pricing strategies.
 
-In addition to empowering marketplace operators, Ocean V4 facilitates the participation of third-party [Providers](../provider/README.md) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
+In addition to empowering marketplace operators, Ocean V4 facilitates the participation of third-party [Providers](../provider/) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
 
-By enabling a marketplace of [Providers](../provider/README.md), Ocean V4 fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
+By enabling a marketplace of [Providers](../provider/), Ocean V4 fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
 
 Key features of the V4 smart contracts:
 
