@@ -13,13 +13,13 @@ In each network, whether it's the Ethereum mainnet, a testnet, or the Polygon/Ma
 
 The Ethereum mainnet is a production network, which means that it is a live and operational network that handles real transactions and has actual economic value. To connect to the Ethereum mainnet using a wallet such as MetaMask, you can click on the network name dropdown and select Ethereum mainnet from the list of available networks.
 
-<table data-header-hidden><thead><tr><th width="186">Gas Token</th><th></th></tr></thead><tbody><tr><td>OCEAN Token</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th></th></tr></thead><tbody><tr><td>OCEAN Token</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
 
 ### Polygon Mainnet
 
 Ocean Protocol is also deployed to Polygon Mainnet, which is another production network. The native token of Polygon Mainnet is MATIC. If you cannot find Polygon Mainnet as a predefined network in your wallet, you can manually connect to it by following Polygon's [guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/#add-the-polygon-network-manually), which provides step-by-step instructions for connecting to Polygon Mainnet.
 
-<table data-header-hidden><thead><tr><th width="198">Gas Token</th><th>Matic(Native token)</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1">0x282d8efCe846A88B159800bd4130ad77443Fa1A1</a></td></tr><tr><td>Explorer</td><td><a href="https://polygonscan.com">https://polygonscan.com</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>Matic(Native token)</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1">0x282d8efCe846A88B159800bd4130ad77443Fa1A1</a></td></tr><tr><td>Explorer</td><td><a href="https://polygonscan.com">https://polygonscan.com</a></td></tr></tbody></table>
 
 **Bridge**
 
