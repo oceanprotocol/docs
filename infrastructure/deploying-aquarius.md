@@ -281,9 +281,9 @@ $ curl localhost:9200
 
 Aquarius supports indexing multiple chains using a single instance to serve API requests and one instance for each chain that must be indexed.
 
-![image](https://github.com/oceanprotocol/docs/assets/54084524/8099e7d7-171d-4d5a-8475-61706c99f4e5)
+<figure><img src="../.gitbook/assets/aquarius_deployment.jpg" alt=""><figcaption><p>Aquarius deployment - multiple chains indexing</p></figcaption></figure>
 
-The following deployment templates could be used for guidance. Some parameters are [optional](https://github.com/oceanprotocol/aquarius) and the template could be adjusted based on these considerations. Common cases are the deployments for one/multiple multiple Ethereum networks:
+The following deployment templates could be used for guidance. Some parameters are [optional](https://github.com/oceanprotocol/aquarius) and the template could be adjusted based on these considerations. Common cases are the deployments for one/multiple Ethereum networks:
 
 * Mainnet
 * Goerli
