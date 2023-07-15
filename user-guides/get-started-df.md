@@ -40,7 +40,8 @@ Watch and learn, friend
 
 * Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
 
-{% @arcade/embed flowId="FUSkygksSRsJHwle1zFs" url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" %}
+{% embed url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" fullWidth="false" %}
+{% endembed %}
 
 In this step you will:
 
