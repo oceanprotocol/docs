@@ -94,7 +94,8 @@ To identify the template used for a specific asset, you can easily retrieve this
 
 We like making things easy :sunglasses: so here is an even easier way to retrieve the info for [this](https://market.oceanprotocol.com/asset/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6) asset published in the Ocean Market:&#x20;
 
-{% @arcade/embed flowId="wxBPSc42eSYUiawSY8rC" url="https://app.arcade.software/share/wxBPSc42eSYUiawSY8rC" %}
+{% embed url="https://app.arcade.software/share/wxBPSc42eSYUiawSY8rC" fullWidth="false" %}
+{% endembed %}
 
 {% hint style="info" %}
 _It's important to note that Ocean Protocol may introduce new templates to support additional variations of data NFTs and datatokens in the future._

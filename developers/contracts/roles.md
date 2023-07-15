@@ -62,7 +62,8 @@ function removeManager(address _managerAddress) external onlyNFTOwner {
 
 The **manager** can assign or revoke three main roles (**deployer, metadata updater, and store updater**). The manager is also able to call any other contract (ERC725X implementation).
 
-{% @arcade/embed flowId="qC8QpkLsFIQk3NxPzB8p" url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" %}
+{% embed url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" fullWidth="false" %}
+{% endembed %}
 
 ### Metadata Updater
 
@@ -292,8 +293,8 @@ function removeMinter(address _minter) external onlyERC20Deployer {
 
 </details>
 
-
-{% @arcade/embed flowId="OHlwsPbf29S1PLh03FM7" url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" %}
+{% embed url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" fullWidth="false" %}
+{% endembed %}
 
 ### Fee Manager
 
