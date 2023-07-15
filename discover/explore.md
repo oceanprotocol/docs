@@ -74,7 +74,7 @@ The following guides will help you get started with buying and selling data:
 
 * [Publish an NFT](../user-guides/publish-data-nfts.md)
 * [Download an NFT](../user-guides/buy-data-nfts.md)
-* [Host Assets](../user-guides/asset-hosting/)
+* [Host Assets](../user-guides/asset-hosting/README.md)
 
 </details>
 
@@ -82,7 +82,7 @@ The following guides will help you get started with buying and selling data:
 
 <summary><mark style="color:blue;">Manage datatokens and data NFTs for use in DeFi</mark><br><br>Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.</summary>
 
-Use Ocean [JavaScript](../developers/ocean.js/) or [Python](../developers/ocean.py/) drivers to manage data NFTs and datatokens:
+Use Ocean [JavaScript](../developers/ocean.js/README.md) or [Python](../developers/ocean.py/README.md) drivers to manage data NFTs and datatokens:
 
 Ocean-based apps make data assets on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
 
@@ -102,7 +102,7 @@ Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosys
 
 <summary><a href="https://medium.com/p/477b3decad51#7922"><mark style="color:orange;">Run Your Own Provider</mark></a><br><br>You have the option to generate revenue by running your own <a href="../developers/provider/">provider</a>. It has come to our attention that many of you have not pursued this opportunity, primarily due to the lack of compelling incentives.</summary>
 
-If you're not familiar with it, the Ocean [Provider](../developers/provider/) serves as the proxy service responsible for encrypting/decrypting data and streaming it to the consumer. It also verifies user access privileges for specific data assets or services. It plays a vital role in the Ocean architecture.
+If you're not familiar with it, the Ocean [Provider](../developers/provider/README.md) serves as the proxy service responsible for encrypting/decrypting data and streaming it to the consumer. It also verifies user access privileges for specific data assets or services. It plays a vital role in the Ocean architecture.
 
 Fees are now paid to the individual or organization running the provider when a user downloads a data asset. The download fees are set based on the cost per MB, and there is also a provider fee for compute jobs, which is priced per minute.
 
@@ -116,7 +116,7 @@ Furthermore, provider fees are not restricted to data consumption; they can also
 
 <summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-max-out-yield.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
 
-Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.
+Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/README.md) while making a meaningful impact in the data marketplace.
 
 Participating in the Data Farming initiative demonstrates a commitment to the principles of **fairness**, **transparency**, and **collaboration** that underpin Ocean Protocol. It allows you to actively engage with the ecosystem, promoting innovation, and driving the evolution of the decentralized data economy.
 
@@ -134,7 +134,7 @@ By participating in Ocean Data Challenges, you can tackle real-world problems, l
 
 <summary><mark style="color:blue;">Become an Ambassador</mark><br><br>Becoming an <a href="https://oceanambassadors.community/">Ocean Ambassador</a> presents a unique opportunity to actively contribute to the growth and adoption of Ocean Protocol while being at the forefront of the decentralized data revolution.</summary>
 
-As an Ocean Ambassador, you become an advocate for the protocol, promoting its vision of democratizing data and empowering individuals. By sharing your knowledge and enthusiasm, you can educate others about the benefits and potential of Ocean Protocol, inspiring them to join the ecosystem. As part of a global community of like-minded individuals, you gain access to exclusive resources, networking opportunities, and collaborations that further enhance your expertise in the data economy. As an Ambassador, you play a vital role in shaping the future of data by driving awareness, fostering innovation, and helping to build a more open and equitable data ecosystem. Join the Ocean Ambassador program by completing the [Ocean Academy](https://www.oceanacademy.io/) and become a catalyst for positive change in the world of data.
+As an Ocean Ambassador, you become an advocate for the protocol, promoting its vision of democratizing data and empowering individuals. By sharing your knowledge and enthusiasm, you can educate others about the benefits and potential of Ocean Protocol, inspiring them to join the ecosystem. As part of a global community of like-minded individuals, you gain access to exclusive resources, networking opportunities, and collaborations that further enhance your expertise in the data economy. As an Ambassador, you play a vital role in shaping the future of data by driving awareness, fostering innovation, and helping to build a more open and equitable data ecosystem.
 
 </details>
 

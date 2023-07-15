@@ -51,7 +51,7 @@ Yes. Ocean Protocol understands that some data is too sensitive to be shared —
 
 <summary>Where is my data stored?</summary>
 
-Ocean does not provide data storage. Users have the choice to [store](../user-guides/asset-hosting/) their data on their own servers, cloud, or decentralized storage. Users need only to provide a URL, an IPFS hash, an Arweave CID, or the on-chain information to the dataset. This is then encrypted as a means to protect access to the dataset.
+Ocean does not provide data storage. Users have the choice to [store](../user-guides/asset-hosting/README.md) their data on their own servers, cloud, or decentralized storage. Users need only to provide a URL, an IPFS hash, an Arweave CID, or the on-chain information to the dataset. This is then encrypted as a means to protect access to the dataset.
 
 </details>
 

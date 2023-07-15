@@ -6,7 +6,7 @@ description: Empowering the Decentralised Data Economy
 
 The [V4 release](https://blog.oceanprotocol.com/ocean-v4-overview-1ccd4a7ce150) of Ocean Protocol introduces a comprehensive and enhanced suite of s[mart contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts) that serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. With the introduction of V4 contracts, Ocean Protocol propels itself forward, delivering substantial functionality, scalability, and flexibility advancements.
 
-The V4 smart contracts have been deployed across multiple [networks](../../discover/networks/) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). The V4 introduces significant enhancements that encompass the following key **features**:
+The V4 smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). The V4 introduces significant enhancements that encompass the following key **features**:
 
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
@@ -50,9 +50,9 @@ Ocean V4 brings forth enhanced opportunities for marketplace operators, creating
 
 With Ocean V4, marketplace operators can unlock additional benefits. Firstly, the V4 smart contracts empower marketplace operators to collect [fees](fees.md) not only during **data consumption** but also through **fixed-rate exchanges**. This expanded revenue model allows operators to derive more value from the ecosystem. Moreover, in Ocean V4, the marketplace operator has the authority to determine the fee value, providing them with **increased control** over their pricing strategies.
 
-In addition to empowering marketplace operators, Ocean V4 facilitates the participation of third-party [Providers](../provider/) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
+In addition to empowering marketplace operators, Ocean V4 facilitates the participation of third-party [Providers](../provider/README.md) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
 
-By enabling a marketplace of [Providers](../provider/), Ocean V4 fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
+By enabling a marketplace of [Providers](../provider/README.md), Ocean V4 fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
 
 Key features of the V4 smart contracts:
 
