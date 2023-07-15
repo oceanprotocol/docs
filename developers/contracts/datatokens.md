@@ -16,7 +16,7 @@ By using datatokens, data owners can retain ownership and control over their dat
 
 ### Understanding Datatokens and Licenses
 
-Each datatoken represents a [**sub-license**](../../discover/glossary.md#sub-licensee) from the base intellectual property (IP) owner, enabling users to access and consume the associated dataset. The license terms can be set by the data NFT owner or default to a predefined "good default" license. The fungible nature of ERC20 tokens aligns perfectly with the fungibility of licenses, facilitating seamless exchangeability and interoperability between different datatokens.
+Each datatoken represents a [**sub-license**](../../discover/glossary.md) from the base intellectual property (IP) owner, enabling users to access and consume the associated dataset. The license terms can be set by the data NFT owner or default to a predefined "good default" license. The fungible nature of ERC20 tokens aligns perfectly with the fungibility of licenses, facilitating seamless exchangeability and interoperability between different datatokens.
 
 By adopting the ERC20 standard for datatokens, Ocean Protocol ensures compatibility and interoperability with a wide array of ERC20-based wallets, [decentralized exchanges (DEXes)](https://blog.oceanprotocol.com/ocean-datatokens-will-be-tradeable-on-decentrs-dex-41715a166a1f), decentralized autonomous organizations (DAOs), and other blockchain-based platforms. This standardized approach enables users to effortlessly transfer, purchase, exchange, or receive datatokens through various means such as marketplaces, exchanges, or airdrops.
 
