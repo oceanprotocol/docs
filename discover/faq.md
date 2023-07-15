@@ -72,14 +72,6 @@ PS: [Fine-grained permissions](../developers/fg-permissions.md) are not integrat
 
 </details>
 
-<details>
-
-<summary>What is the reach of Ocean Market - how many data buyers can I sell to?</summary>
-
-Hundreds of unique datasets are available that are sourced from private individuals, research institutions, commercial enterprises and government. Publishing data on Ocean offers data providers and algorithm owners an exciting new channel to connect with a rapidly growing community of Web3 enthusiasts and data science professionals around the world.
-
-</details>
-
 ### Technical Questions
 
 <details>
