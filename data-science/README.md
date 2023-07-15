@@ -6,7 +6,7 @@ coverY: 0
 
 # 📊 Data Science
 
-<figure><img src="../.gitbook/assets/gif/my-data.gif" alt="" width="360"><figcaption><p>Ocean Protocol - Built to protect your precious.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/my-data (1).gif" alt="" width="360"><figcaption><p>Ocean Protocol - Built to protect your precious.</p></figcaption></figure>
 
 ### Why should data scientists use Ocean Protocol?
 
@@ -22,9 +22,9 @@ Ocean Protocol is built for data scientists to **monetize data effectively and**
 
 ### How to design a ML system using Ocean Protocol?
 
-The first step is to tokenize data into data NFTs and datatokens on the blockchain. We offer a no-code way to tokenize data via the [Ocean Market](https://market.oceanprotocol.com). But we also offer code options for data scientists to use the [Ocean.py](../developers/ocean.py/README.md) and [Ocean.js](../developers/ocean.js/README.md) libraries. Data scientists can then build sophisticated ML systems on top of the tokenized data by using composable Ocean Protocol tools. ML models can use a variety of Ocean smart contracts, including Ocean's [Compute-to-Data](../developers/compute-to-data/README.md), to build model outputs all the way to the last-mile delivery for businesses.
+The first step is to tokenize data into data NFTs and datatokens on the blockchain. We offer a no-code way to tokenize data via the [Ocean Market](https://market.oceanprotocol.com). But we also offer code options for data scientists to use the [Ocean.py](../developers/ocean.py/) and [Ocean.js](../developers/ocean.js/) libraries. Data scientists can then build sophisticated ML systems on top of the tokenized data by using composable Ocean Protocol tools. ML models can use a variety of Ocean smart contracts, including Ocean's [Compute-to-Data](../developers/compute-to-data/), to build model outputs all the way to the last-mile delivery for businesses.
 
 ### **Key Links for Data Scientists:**
 
 * Learn the difference between Ocean Protocol [data NFTs and datatokens](../developers/contracts/datanft-and-datatoken.md), the two types of tokenized data assets you need to start building your ML systems.
-* Discover Ocean's [Compute-to-Data](../developers/compute-to-data/README.md) engine that can help you to solve the difficult problem of selling algorithmic compute jobs on your datasets without actually revealing the contents of the algorithm & dataset to the consumer.
+* Discover Ocean's [Compute-to-Data](../developers/compute-to-data/) engine that can help you to solve the difficult problem of selling algorithmic compute jobs on your datasets without actually revealing the contents of the algorithm & dataset to the consumer.

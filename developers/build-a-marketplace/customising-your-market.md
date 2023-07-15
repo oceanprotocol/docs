@@ -121,7 +121,7 @@ Open up `src/components/Publish/Metadata/index.tsx` and change line 33 so that i
 
 Great, now our publish page explains that users should be publishing photos and the photo is provided as an asset type option. We’ll also leave the algorithm as an option in case some data scientists want to do some analysis or image transformation on the photos.
 
-![Market Customisation](../../.gitbook/assets/market/publish-page-2.png)
+![Market Customisation](<../../.gitbook/assets/market/publish-page-2 (1).png>)
 
 There is one more thing that is fun to change before we move away from the publish form. You’ll notice that Ocean Market V4 now has a cool SVG generation feature that creates the images for the Data NFT. It creates a series of pink waves. Let’s change this so that it uses our brand colors in the waves!
 
@@ -139,7 +139,7 @@ And now your customized publish page is ready for your customers:
 
 ## Advanced customization
 
-This important step is the last thing that we will change in this guide. To set the marketplace fees and address, you’ll need to save them as environmental variables. You'll also need to set the environmental variables if you customized services like Aquarius, Provider, or Subgraph.&#x20;
+This important step is the last thing that we will change in this guide. To set the marketplace fees and address, you’ll need to save them as environmental variables. You'll also need to set the environmental variables if you customized services like Aquarius, Provider, or Subgraph.
 
 First, we are going to create a new file called `.env` in the root of your repository.
 
@@ -176,7 +176,7 @@ NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE="0.01"
 
 At this point, we have made a lot of changes and hopefully, you’re happy with the way that your marketplace is looking. Given that you now have your own awesome photo marketplace, it’s about time we talked about monetizing it. Yup, that’s right - you will earn a [commission](../contracts/fees.md) when people buy and sell photos in your marketplace. In Ocean V4, there are a whole host of new [fees](../contracts/fees.md) and customization options that you can use. In order to receive the fees you’ll need to set the address where you want to receive these fees in.
 
-When someone sets the pricing for their photos in your marketplace, they are informed that a commission will be sent to the owner of the marketplace. You see that at the moment this fee is set to zero, so you’ll want to increase that.&#x20;
+When someone sets the pricing for their photos in your marketplace, they are informed that a commission will be sent to the owner of the marketplace. You see that at the moment this fee is set to zero, so you’ll want to increase that.
 
 You need to replace “0x123abc” with your Ethereum address (this is where the fees will be sent).
 
@@ -202,7 +202,7 @@ You have the flexibility to tailor the ocean market according to your preference
 
 ### Using a custom MetadataCache
 
-If you intend to utilize the ocean market with a custom [Aquarius](../aquarius/README.md) deployment, you can also make set a custom MetadataCache flag. To do this, you will need to update the same file mentioned earlier. However, instead of modifying the `NEXT_PUBLIC_PROVIDER_URL` key, you should update the `NEXT_PUBLIC_METADATACACHE_URI` key. By updating this key, you can specify the URI for your custom Aquarius deployment, enabling you to take advantage of the ocean market with your preferred metadata cache setup.
+If you intend to utilize the ocean market with a custom [Aquarius](../aquarius/) deployment, you can also make set a custom MetadataCache flag. To do this, you will need to update the same file mentioned earlier. However, instead of modifying the `NEXT_PUBLIC_PROVIDER_URL` key, you should update the `NEXT_PUBLIC_METADATACACHE_URI` key. By updating this key, you can specify the URI for your custom Aquarius deployment, enabling you to take advantage of the ocean market with your preferred metadata cache setup.
 
 ### Using a custom subgraph
 
@@ -210,4 +210,4 @@ Using a custom subgraph with the ocean market requires additional steps due to t
 
 To utilize a custom subgraph, you will need to implement additional logic within the `getOceanConfig` function located in the `src/utils/ocean.ts` file. By modifying this function, you can ensure that the market uses the desired custom subgraph for the selected network. This is particularly relevant if your market aims to support multiple networks and you do not want to enforce the use of the same subgraph across all networks. By incorporating the necessary logic within `getOceanConfig`, you can ensure the market utilizes the appropriate custom subgraph for each network, enabling the desired level of customization. If the mentioned scenario doesn't apply to your situation, there is another approach you can take. Similar to the previously mentioned examples, you can modify the `.env` file by updating the key labeled `NEXT_PUBLIC_SUBGRAPH_URI`. By making changes to this key, you can configure the ocean market to utilize your preferred subgraph deployment. This alternative method allows you to customize the market's behavior and ensure it utilizes the desired subgraph, even if you don't require different subgraph deployments for each network.
 
-\
+\\

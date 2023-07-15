@@ -9,7 +9,7 @@ Ocean Protocol is a **decentralized data exchange protocol** that aims to unlock
 Ocean Protocol is used for a variety of purposes, including:
 
 1. **Data Sharing**: Ocean Protocol allows individuals and organizations to share data securely and privately, enabling data owners to monetize their data assets while maintaining control over their data.
-2. **Data Monetization**: Data owners can monetize their data by offering it for sale or by providing data services through compute-to-data (C2D) capabilities. Data consumers can access and utilize data assets.&#x20;
+2. **Data Monetization**: Data owners can monetize their data by offering it for sale or by providing data services through compute-to-data (C2D) capabilities. Data consumers can access and utilize data assets.
 3. **Decentralized Data Marketplaces**: Ocean Protocol facilitates the creation of decentralized data marketplaces where data providers can list their data assets and data consumers can discover and access them. These marketplaces operate on a peer-to-peer basis, eliminating the need for intermediaries and providing more efficient and transparent data transactions.
 4. **AI Development**: Ocean Protocol supports the development of AI models by providing access to diverse and high-quality datasets. Data scientists and AI developers can leverage these datasets to train and improve their models, leading to more accurate and robust AI systems.
 5. **Access control:** Ocean Protocol incorporates token-gating mechanisms that grant or restrict access to specific data assets based on predefined criteria, ensuring controlled and regulated data sharing within the ecosystem.
@@ -74,7 +74,7 @@ The following guides will help you get started with buying and selling data:
 
 * [Publish an NFT](../user-guides/publish-data-nfts.md)
 * [Download an NFT](../user-guides/buy-data-nfts.md)
-* [Host Assets](../user-guides/asset-hosting/README.md)
+* [Host Assets](../user-guides/asset-hosting/)
 
 </details>
 
@@ -82,7 +82,7 @@ The following guides will help you get started with buying and selling data:
 
 <summary><mark style="color:blue;">Manage datatokens and data NFTs for use in DeFi</mark><br><br>Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.</summary>
 
-Use Ocean [JavaScript](../developers/ocean.js/README.md) or [Python](../developers/ocean.py/README.md) drivers to manage data NFTs and datatokens:
+Use Ocean [JavaScript](../developers/ocean.js/) or [Python](../developers/ocean.py/) drivers to manage data NFTs and datatokens:
 
 Ocean-based apps make data assets on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
 
@@ -102,7 +102,7 @@ Since datatokens are ERC20, and live on Ethereum mainnet, there's a whole ecosys
 
 <summary><a href="https://medium.com/p/477b3decad51#7922"><mark style="color:orange;">Run Your Own Provider</mark></a><br><br>You have the option to generate revenue by running your own <a href="../developers/provider/">provider</a>. It has come to our attention that many of you have not pursued this opportunity, primarily due to the lack of compelling incentives.</summary>
 
-If you're not familiar with it, the Ocean [Provider](../developers/provider/README.md) serves as the proxy service responsible for encrypting/decrypting data and streaming it to the consumer. It also verifies user access privileges for specific data assets or services. It plays a vital role in the Ocean architecture.
+If you're not familiar with it, the Ocean [Provider](../developers/provider/) serves as the proxy service responsible for encrypting/decrypting data and streaming it to the consumer. It also verifies user access privileges for specific data assets or services. It plays a vital role in the Ocean architecture.
 
 Fees are now paid to the individual or organization running the provider when a user downloads a data asset. The download fees are set based on the cost per MB, and there is also a provider fee for compute jobs, which is priced per minute.
 
@@ -116,7 +116,7 @@ Furthermore, provider fees are not restricted to data consumption; they can also
 
 <summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-max-out-yield.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
 
-Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/README.md) while making a meaningful impact in the data marketplace.
+Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/) while making a meaningful impact in the data marketplace.
 
 Participating in the Data Farming initiative demonstrates a commitment to the principles of **fairness**, **transparency**, and **collaboration** that underpin Ocean Protocol. It allows you to actively engage with the ecosystem, promoting innovation, and driving the evolution of the decentralized data economy.
 
