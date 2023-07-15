@@ -9,7 +9,7 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/architecture/DataNFT&Datatokens.png" alt=""><figcaption><p>Data NFTs and Datatokens</p></figcaption></figure>
 
-In summary: A [**data NFT**](data-nfts.md) serves as a **representation of the copyright** or exclusive license for a data asset on the blockchain, known as the "[**base IP**](../../discover/glossary.md)". **Datatokens**, on the other hand, function as a crucial mechanism for **decentralized access** to data assets.
+In summary: A [**data NFT**](data-nfts.md) serves as a **representation of the copyright** or exclusive license for a data asset on the blockchain, known as the [**base IP**](../../discover/glossary.md). **Datatokens**, on the other hand, function as a crucial mechanism for **decentralized access** to data assets.
 
 For a specific data NFT, multiple ERC20 datatoken contracts can exist. Here's the main concept: Owning 1.0 datatokens grants you the ability to **consume** the corresponding dataset. Essentially, it acts as a **sub-license** from the [base IP](../../discover/glossary.md), allowing you to utilize the dataset according to the specified license terms (when provided by the publisher). License terms can be established with a "good default" or by the Data NFT owner.
 
