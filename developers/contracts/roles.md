@@ -292,6 +292,7 @@ function removeMinter(address _minter) external onlyERC20Deployer {
 
 </details>
 
+
 {% @arcade/embed flowId="OHlwsPbf29S1PLh03FM7" url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" %}
 
 ### Fee Manager
