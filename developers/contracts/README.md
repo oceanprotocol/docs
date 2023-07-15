@@ -24,9 +24,7 @@ By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility 
 
 Publishing with V4 smart contracts in Ocean Protocol involves a well-defined process that streamlines the publishing of data assets. It provides a systematic approach to ensure efficient management and exchange of data within the Ocean Protocol ecosystem. By leveraging smart contracts, publishers can securely create and deploy data NFTs, allowing them to tokenize and represent their data assets. Additionally, the flexibility of V4 smart contracts enables publishers to define pricing schemas for datatokens, facilitating fair and transparent transactions. This publishing framework empowers data publishers by providing them with greater control and access to a global marketplace, while ensuring trust, immutability, and traceability of their published data assets.
 
-
-
-The V4 smart contracts publishing flow can be described as follows:
+The V4 smart contracts publishing includes the following steps:
 
 1. The data publisher initiates the creation of a new data NFT.
 2. The data NFT factory deploys the template for the new data NFT.
@@ -42,7 +40,7 @@ The V4 smart contracts publishing flow can be described as follows:
 12. The datatoken templated deploys the Datatoken-2 contract.
 13. The datatoken templated creates a dispenser for the Datatoken-2 contract.
 
-Below is a visual representation that illustrates the flow for easier understanding
+Below is a visual representation that illustrates the flow:
 
 <figure><img src="../../.gitbook/assets/publish_dataNFT_detailed_flow.png" alt=""><figcaption><p>Publishing flow</p></figcaption></figure>
 
