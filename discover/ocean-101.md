@@ -1,6 +1,6 @@
 # Ocean 101
 
-<figure><img src="../.gitbook/assets/giphy.gif" alt=""><figcaption><p>Let's see how it works</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/giphy.gif" alt=""><figcaption><p>Let's see how it works</p></figcaption></figure>
 
 ## How Does Ocean Work?
 
@@ -14,7 +14,7 @@ Ocean Protocol utilizes a combination of blockchain technology, decentralized ne
 
 Ocean Protocol also combines advanced technologies and web components to create a robust and efficient data ecosystem.
 
-<figure><img src="../.gitbook/assets/Ocean101.png" alt=""><figcaption><p>Ocean architectural overview </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/architecture/Ocean101.png" alt=""><figcaption><p>Ocean architectural overview </p></figcaption></figure>
 
 Powerful libraries such as [Ocean.js](../developers/ocean.js/) (JavaScript) and [Ocean.py](../developers/ocean.py/) (Python) facilitate seamless integration and interaction with the protocol, offering a wide range of functionalities.
 

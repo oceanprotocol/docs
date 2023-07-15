@@ -42,7 +42,7 @@ The V4 smart contracts publishing includes the following steps:
 
 Below is a visual representation that illustrates the flow:
 
-<figure><img src="../../.gitbook/assets/publish_dataNFT_detailed_flow.png" alt=""><figcaption><p>Publishing flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts/publish_detailed_flow.png" alt=""><figcaption><p>Publishing flow</p></figcaption></figure>
 
 ### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 

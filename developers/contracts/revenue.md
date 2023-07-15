@@ -33,7 +33,7 @@ paymentCollectorAddress = 'New payment collector address'
 await datatoken.setPaymentCollector(datatokenAddress, callerAddress, paymentCollectorAddress)
 ```
 
-2. Using [Ocean.py](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean\_lib/models/test/test\_datatoken.py#L39).
+2. Using [Ocean.py](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean_lib/models/test/test_datatoken.py#L39).
 
 ```python
 datatokenAddress = 'Your datatoken address'

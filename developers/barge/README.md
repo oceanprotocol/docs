@@ -8,7 +8,7 @@ The Barge component of Ocean Protocol is a powerful tool designed to simplify th
 
 By using the Barge component, developers can spin up an environment that includes default versions of [Aquarius](../aquarius/README.md), [Provider](../provider/README.md), [Subgraph](../subgraph/README.md), and [Compute-to-Data](../compute-to-data/README.md). Additionally, it deploys all the [smart contracts](../contracts/README.md) from the ocean-contracts repository, ensuring a complete and functional local setup. Barge component also starts additional services like [Ganache](https://trufflesuite.com/ganache/), which is a local blockchain simulator used for smart contract development, and [Elasticsearch](https://www.elastic.co/elasticsearch/), a powerful search and analytics engine required by Aquarius for efficient indexing and querying of data sets. A full list of components and exposed ports is available in the GitHub [repository](https://github.com/oceanprotocol/barge#component-versions-and-exposed-ports).
 
-<figure><img src="../../.gitbook/assets/barge.png" alt=""><figcaption><p>Load Ocean components locally by using Barge</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/components/barge.png" alt=""><figcaption><p>Load Ocean components locally by using Barge</p></figcaption></figure>
 
 To explore all the available options and gain a deeper understanding of how to utilize the Barge component, you can visit the official GitHub [repository](https://github.com/oceanprotocol/barge#all-options) of Ocean Protocol.
 

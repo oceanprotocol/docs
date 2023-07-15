@@ -12,7 +12,7 @@ The [Ocean Subgraph](https://github.com/oceanprotocol/ocean-subgraph) is built o
 
 Imagine this 💭: if you were to always fetch data from the on-chain, you'd start to feel a little...old :older\_woman: Like your queries are stuck in a time warp. But fear not! When you embrace the power of the subgraph, data becomes your elixir of youth.&#x20;
 
-<figure><img src="../../.gitbook/assets/subgraph.png" alt=""><figcaption><p>Ocean Subgraph </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/components/subgraph.png" alt=""><figcaption><p>Ocean Subgraph </p></figcaption></figure>
 
 The subgraph reads data from the blockchain, extracting relevant information. Additionally, it indexes events emitted from the Ocean smart contracts. This collected data is then made accessible to any decentralized applications (dApps) that require it, through GraphQL queries. The subgraph organizes and presents the data in a JSON format, facilitating efficient and structured access for dApps.
 

@@ -10,7 +10,7 @@ Aquarius has its own interface (API) that allows you to easily query this metada
 
 
 
-<figure><img src="../../.gitbook/assets/aquarius.png" alt=""><figcaption><p>Aquarius high level overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/components/aquarius.png" alt=""><figcaption><p>Aquarius high level overview</p></figcaption></figure>
 
 ### What does Aquarius do?
 

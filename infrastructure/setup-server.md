@@ -59,7 +59,7 @@ Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create 
 
 Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Select Droplet</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (1).png" alt=""><figcaption><p>Select Droplet</p></figcaption></figure>
 
 
 
@@ -67,7 +67,7 @@ Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
 Select Ubuntu OS, and choose a plan and a configuration.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Configure the server</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (2).png" alt=""><figcaption><p>Configure the server</p></figcaption></figure>
 
 ###
 
@@ -75,7 +75,7 @@ Select Ubuntu OS, and choose a plan and a configuration.
 
 Select the region where you want the component to be hosted and a root password.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Select the region and set the root password</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (6).png" alt=""><figcaption><p>Select the region and set the root password</p></figcaption></figure>
 
 
 
@@ -83,13 +83,13 @@ Select the region where you want the component to be hosted and a root password.
 
 Specify a hostname for the server, specify the project to which you assign the server, and then click on `Create Droplet.`&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Finalize and create the server</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (5).png" alt=""><figcaption><p>Finalize and create the server</p></figcaption></figure>
 
 6. Access the server's console
 
 After the server is ready, select the `Access console` option from the dropdown list to open a terminal window.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Access the server's console</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image.png" alt=""><figcaption><p>Access the server's console</p></figcaption></figure>
 
 ### Install Docker Engine and Docker Compose
 

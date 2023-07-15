@@ -42,7 +42,7 @@ The Reward Function (RF) governs how active rewards are allocated to Data Farmer
 1. Distribute OCEAN across each asset **based on rank**: highest-DCV asset gets the most OCEAN, etc.
 2. For each asset and each veOCEAN holder: If the holder is a publisher, 2x the effective allocation – Baseline rewards = (% allocation in asset) \* (OCEAN for an asset) – Bound rewards to the asset by 125% APY – Bound rewards by asset’s DCV \* 0.1%.
 
-For mathematicians and coders, you can find this code inside [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df\_py/volume/calc\_rewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)!
+For mathematicians and coders, you can find this code inside [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df_py/volume/calc_rewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)!
 
 ### What are Ranked Rewards?
 
@@ -54,7 +54,7 @@ At the top-end, this helps increase the quality and diversification of inventory
 
 At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
 
-![Ranked Rewards](../.gitbook/assets/rewards/ranked\_rewards\_study.png)
+![Ranked Rewards](../.gitbook/assets/rewards/ranked_rewards_study.png)
 
 You can read more about the why, what, and how of Ranked Rewards [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
 

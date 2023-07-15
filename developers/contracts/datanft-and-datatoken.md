@@ -7,7 +7,7 @@ description: >-
 
 # Data NFTs and Datatokens
 
-<figure><img src="../../.gitbook/assets/DataNFT&#x26;Datatokens.png" alt=""><figcaption><p>Data NFTs and Datatokens</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/architecture/DataNFT&Datatokens.png" alt=""><figcaption><p>Data NFTs and Datatokens</p></figcaption></figure>
 
 In summary: A [**data NFT**](data-nfts.md) serves as a **representation of the copyright** or exclusive license for a data asset on the blockchain, known as the "\[**base IP**]\(../../discover/glossary.md#base ip)". **Datatokens**, on the other hand, function as a crucial mechanism for **decentralized access** to data assets.
 
@@ -30,7 +30,7 @@ For a more comprehensive exploration of intellectual property and its practical 
 
 What happends under the hood? 🤔
 
-<figure><img src="../../.gitbook/assets/architecture/publish_dataNFT_detailed_flow.png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts/publish_detailed_flow.png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
 
 We have some awesome hands-on experience when it comes to publishing a data NFT and minting datatokens.
 

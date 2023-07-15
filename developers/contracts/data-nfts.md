@@ -37,7 +37,7 @@ ERC721 tokens are non-fungible, and thus cannot be used for automatic price disc
 
 Our implementation has been built on top of the battle-tested [OpenZeppelin contract library](https://docs.openzeppelin.com/contracts/4.x/erc721). However, there are a bunch of interesting parts of our implementation that go a bit beyond an out-of-the-box NFT. The data NFTs can be easily managed from any NFT marketplace like [OpenSea](https://opensea.io/).&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 14.49.36.png" alt=""><figcaption><p>Data NFT on Open Sea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wallet/data_nft_open_sea.png" alt=""><figcaption><p>Data NFT on Open Sea</p></figcaption></figure>
 
 Ocean V4’s data NFT factory can deploy different types of data NFTs based on a variety of templates. Some templates could be tuned for data unions, others for DeFi, and others yet for enterprise use cases.
 

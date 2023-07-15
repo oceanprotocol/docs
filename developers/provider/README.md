@@ -26,7 +26,7 @@ Additionally, the Provider service offers compute services by establishing a con
 * Provides compute services (connects to C2D environment)
 * Typically run by the Data owner
 
-<figure><img src="../../.gitbook/assets/provider.png" alt=""><figcaption><p>Ocean Provider - publish &#x26; consume</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/components/provider.png" alt=""><figcaption><p>Ocean Provider - publish &#x26; consume</p></figcaption></figure>
 
 In the publishing process, the provider plays a crucial role by encrypting the DDO using its private key. Then, the encrypted DDO is stored on the blockchain.
 
@@ -46,4 +46,4 @@ We recommend checking the README in the Provider [GitHub repository](https://git
 
 The following pages in this section specify the endpoints for Ocean Provider that have been implemented by the core developers.
 
-For inspecting the errors received from `Provider` and their reasons, please revise this [document](https://github.com/oceanprotocol/provider/blob/main/ocean\_provider/routes/README.md).
+For inspecting the errors received from `Provider` and their reasons, please revise this [document](https://github.com/oceanprotocol/provider/blob/main/ocean_provider/routes/README.md).
