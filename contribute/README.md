@@ -25,7 +25,7 @@ Follow our steps below to properly document your bug! Paste the screenshots into
 
 For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check out our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
 
-<figure><img src="../.gitbook/assets/gif/matrix-code (1).gif" alt=""><figcaption><p>Did you find a glitch in our code matrix?</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/matrix-code.gif" alt=""><figcaption><p>Did you find a glitch in our code matrix?</p></figcaption></figure>
 
 ### Suggest a new feature 🤔💭
 

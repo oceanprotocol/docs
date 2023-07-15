@@ -7,7 +7,7 @@ description: >-
 
 # Data NFTs and Datatokens
 
-<figure><img src="../../.gitbook/assets/architecture/DataNFT&#x26;Datatokens.png" alt=""><figcaption><p>Data NFTs and Datatokens</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/architecture/DataNFT&Datatokens.png" alt=""><figcaption><p>Data NFTs and Datatokens</p></figcaption></figure>
 
 In summary: A [**data NFT**](data-nfts.md) serves as a **representation of the copyright** or exclusive license for a data asset on the blockchain, known as the [**base IP**](../../discover/glossary.md). **Datatokens**, on the other hand, function as a crucial mechanism for **decentralized access** to data assets.
 
@@ -50,7 +50,7 @@ The V4 smart contracts publishing includes the following steps:
 
 Below is a visual representation that illustrates the flow:
 
-<figure><img src="../../.gitbook/assets/contracts/publish_detailed_flow (1).png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts/publish_detailed_flow.png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
 
 We have some awesome hands-on experience when it comes to publishing a data NFT and minting datatokens.
 
