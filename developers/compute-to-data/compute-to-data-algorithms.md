@@ -7,9 +7,7 @@ description: >-
 
 # Writing Algorithms
 
-### Overview
 
-\
 In the Ocean Protocol stack, algorithms are recognized as distinct asset types, alongside datasets. When it comes to Compute-to-Data, an algorithm comprises the following key components:
 
 * **Algorithm Code**: The algorithm code refers to the specific instructions and logic that define the computational steps to be executed on a dataset. It encapsulates the algorithms' functionalities, calculations, and transformations.
