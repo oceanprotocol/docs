@@ -20,29 +20,6 @@ By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility 
 
 <figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol V4 Smart Contracts</p></figcaption></figure>
 
-### Publish Flow
-
-Publishing with V4 smart contracts in Ocean Protocol involves a well-defined process that streamlines the publishing of data assets. It provides a systematic approach to ensure efficient management and exchange of data within the Ocean Protocol ecosystem. By leveraging smart contracts, publishers can securely create and deploy data NFTs, allowing them to tokenize and represent their data assets. Additionally, the flexibility of V4 smart contracts enables publishers to define pricing schemas for datatokens, facilitating fair and transparent transactions. This publishing framework empowers data publishers by providing them with greater control and access to a global marketplace, while ensuring trust, immutability, and traceability of their published data assets.
-
-The V4 smart contracts publishing includes the following steps:
-
-1. The data publisher initiates the creation of a new data NFT.
-2. The data NFT factory deploys the template for the new data NFT.
-3. The data NFT template creates the data NFT contract.
-4. The address of the newly created data NFT is available to the data publisher.
-5. The publisher is now able to create datatokens with pricing schema for the data NFT. To accomplish this, the publisher initiates a call to the data NFT contract, specifically requesting the creation of a new datatoken with a fixed rate schema.
-6. The data NFT contract deploys a new datatoken and a fixed rate schema by interacting with the datatoken template contract.
-7. The datatoken contract is created (Datatoken-1 contract).
-8. The datatoken template generates a new fixed rate schema for Datatoken-1.
-9. The address of Datatoken-1 is now available to the data publisher.
-10. Optionally, the publisher can create a new datatoken (Datatoken-2) with a free price schema.
-11. The data NFT contract interacts with the Datatoken Template contract to create a new datatoken and a dispenser schema.
-12. The datatoken templated deploys the Datatoken-2 contract.
-13. The datatoken templated creates a dispenser for the Datatoken-2 contract.
-
-Below is a visual representation that illustrates the flow:
-
-<figure><img src="../../.gitbook/assets/contracts/publish_detailed_flow.png" alt=""><figcaption><p>Publishing flow</p></figcaption></figure>
 
 ### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 
