@@ -9,7 +9,7 @@ Ocean Protocol is a **decentralized data exchange protocol** that aims to unlock
 Ocean Protocol is used for a variety of purposes, including:
 
 1. **Data Sharing**: Ocean Protocol allows individuals and organizations to share data securely and privately, enabling data owners to monetize their data assets while maintaining control over their data.
-2. **Data Monetization**: Data owners can monetize their data by offering it for sale or by providing data services through compute-to-data (C2D) capabilities. Data consumers can access and utilize data assets.&#x20;
+2. **Data Monetization**: Data owners can monetize their data by offering it for sale or by providing data services through compute-to-data (C2D) capabilities. Data consumers can access and utilize data assets.
 3. **Decentralized Data Marketplaces**: Ocean Protocol facilitates the creation of decentralized data marketplaces where data providers can list their data assets and data consumers can discover and access them. These marketplaces operate on a peer-to-peer basis, eliminating the need for intermediaries and providing more efficient and transparent data transactions.
 4. **AI Development**: Ocean Protocol supports the development of AI models by providing access to diverse and high-quality datasets. Data scientists and AI developers can leverage these datasets to train and improve their models, leading to more accurate and robust AI systems.
 5. **Access control:** Ocean Protocol incorporates token-gating mechanisms that grant or restrict access to specific data assets based on predefined criteria, ensuring controlled and regulated data sharing within the ecosystem.
@@ -142,8 +142,7 @@ As an Ocean Ambassador, you become an advocate for the protocol, promoting its v
 
 <summary><mark style="color:green;">Contribute to Ocean Code Development</mark><br><br>Make a positive impact in the Web3 data economy by contributing to <a href="https://github.com/oceanprotocol">Ocean's open source code</a> on Github! From feature requests to pull requests, contributions of all kinds are appreciated.</summary>
 
-To begin, [visit our Github page](https://github.com/oceanprotocol) where you can see the repos and contributors. If you're going to contribute code to a repo, then we ask that you fork the code first, make your changes, and then create a pull request for us to review. If you are reporting an issue, then please first search the existing issues to see if it is documented yet. If not, then please open a new issue by describe your problem as best as possible and include screenshots.\
-\
+To begin, [visit our Github page](https://github.com/oceanprotocol) where you can see the repos and contributors. If you're going to contribute code to a repo, then we ask that you fork the code first, make your changes, and then create a pull request for us to review. If you are reporting an issue, then please first search the existing issues to see if it is documented yet. If not, then please open a new issue by describe your problem as best as possible and include screenshots.
 We also welcome you to join our [Discord developer community](https://discord.gg/TnXjkR5) where you can get rapid, practical advice on using Ocean tech but also get to know Ocean core team more personally!
 
 </details>

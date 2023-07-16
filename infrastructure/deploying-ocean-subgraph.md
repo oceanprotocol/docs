@@ -4,7 +4,7 @@
 
 Ocean subgraph allows querying the datatoken, data NFT, and all event information using GraphQL. Hosting the Ocean subgraph saves the cost and time required in querying the data directly from the blockchain. The steps in this tutorial will explain how to host Ocean subgraph for the EVM-compatible chains supported by Ocean Protocol.
 
-Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotocol/graph-node), therefore, in this document, we will show first how to deploy graph-node - either using Docker Engine or Kubernetes - and then how to install Ocean Subgraph on the graph-node system.&#x20;
+Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotocol/graph-node), therefore, in this document, we will show first how to deploy graph-node - either using Docker Engine or Kubernetes - and then how to install Ocean Subgraph on the graph-node system.
 
 ## Deploying Graph-node using Docker Engine and Docker Compose
 
@@ -25,7 +25,7 @@ Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotoc
 
 #### 1. Create the /etc/docker/compose/graph-node/docker-compose.yml file
 
-From a terminal console, create the _/etc/docker/compose/graph-node/docker-compose.yml_ file, then copy and paste the following content to it (. Check the comments in the file and replace the fields with the specific values of your implementation.&#x20;
+From a terminal console, create the _/etc/docker/compose/graph-node/docker-compose.yml_ file, then copy and paste the following content to it (. Check the comments in the file and replace the fields with the specific values of your implementation.
 
 _/etc/docker/compose/graph-node/docker-compose.yml_ (annotated - example for `mumbai` network)
 
@@ -174,7 +174,7 @@ Then, check the logs of the Ocean Subgraph docker container:
 docker logs graph-node  [--follow]
 ```
 
-## Deploying graph-node using Kubernetes&#x20;
+## Deploying graph-node using Kubernetes
 
 In this example, we will deploy graph-node as a Kubernetes deployment service. [graph-node](https://github.com/graphprotocol/graph-node) has the following dependencies: PostgreSQL and IPFS.
 
@@ -431,7 +431,7 @@ spec:
 
 ## Deploy Ocean Subgraph
 
-After you deployed graph-node, either using Kubernetes or Docker Compose, you can proceed to deploy Ocean Subgraph on top of it.&#x20;
+After you deployed graph-node, either using Kubernetes or Docker Compose, you can proceed to deploy Ocean Subgraph on top of it.
 
 ### Prerequisites
 

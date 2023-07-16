@@ -102,7 +102,7 @@ The blockchain can do more than just store information - it can also run code. A
 
 <summary>What is a datatoken?</summary>
 
-A datatoken is an access token to datasets and services published in the Ocean ecosystem. Datatokens can be purchased via the Ocean Market or on a decentralized crypto exchange. . If a consumer wishes to access a dataset, they must acquire the datatoken and then exchange the datatoken for access to the dataset.
+A datatoken is an access token to datasets and services published in the Ocean ecosystem. Datatokens can be purchased via the Ocean Market or on a decentralized crypto exchange. If a consumer wishes to access a dataset, they must acquire the datatoken and then exchange the datatoken for access to the dataset.
 
 </details>
 
@@ -268,7 +268,7 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 
 <summary>What about passive stakers — people who just want to stake in one place and be done?</summary>
 
-Earnings are passive by default
+Earnings are passive by default.
 
 </details>
 
@@ -276,7 +276,7 @@ Earnings are passive by default
 
 <summary>What about active stakers — people who want to do extra work and get rewarded?</summary>
 
-Ot works. Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more \$$
+Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more \$$.
 
 </details>
 
@@ -338,7 +338,7 @@ They are deployed on Ethereum mainnet, alongside other Ocean contract deployment
 
 <summary>What is the official veOCEAN epoch start_time?</summary>
 
-veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00)
+veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
 
 </details>
 

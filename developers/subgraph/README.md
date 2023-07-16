@@ -8,9 +8,9 @@ description: >-
 
 ### What is the Subgraph?
 
-The [Ocean Subgraph](https://github.com/oceanprotocol/ocean-subgraph) is built on top of [The Graph](https://thegraph.com/)(the popular :sunglasses: indexing and querying protocol for blockchain data). It is an essential component of the Ocean Protocol ecosystem. It provides an off-chain service that utilizes GraphQL to offer efficient access to information related to datatokens, users, and balances. By leveraging the subgraph, data retrieval becomes faster compared to an on-chain query. The data sourced from the Ocean subgraph can be accessed through [GraphQL](https://graphql.org/learn/) queries.
+The [Ocean Subgraph](https://github.com/oceanprotocol/ocean-subgraph) is built on top of [The Graph](https://thegraph.com/) (the popular :sunglasses: indexing and querying protocol for blockchain data). It is an essential component of the Ocean Protocol ecosystem. It provides an off-chain service that utilizes GraphQL to offer efficient access to information related to datatokens, users, and balances. By leveraging the subgraph, data retrieval becomes faster compared to an on-chain query. The data sourced from the Ocean subgraph can be accessed through [GraphQL](https://graphql.org/learn/) queries.
 
-Imagine this 💭: if you were to always fetch data from the on-chain, you'd start to feel a little...old :older\_woman: Like your queries are stuck in a time warp. But fear not! When you embrace the power of the subgraph, data becomes your elixir of youth.&#x20;
+Imagine this 💭: if you were to always fetch data from the on-chain, you'd start to feel a little...old :older\_woman: Like your queries are stuck in a time warp. But fear not! When you embrace the power of the subgraph, data becomes your elixir of youth.
 
 <figure><img src="../../.gitbook/assets/components/subgraph.png" alt=""><figcaption><p>Ocean Subgraph </p></figcaption></figure>
 
@@ -42,7 +42,7 @@ When it comes to fetching valuable information about [Data NFTs](../contracts/da
 When making subgraph queries, please remember that the parameters you send, such as a datatoken address or a data NFT address, should be in **lowercase**. This is an essential requirement to ensure accurate processing of the queries. We kindly request your attention to this detail to facilitate a seamless query experience.
 {% endhint %}
 
-In the following pages, we've prepared a few examples just for you. From running queries to exploring data, you'll have the chance to dive right into the Ocean Subgraph data. There, you'll find a wide range of additional code snippets and examples that showcase the power and versatility of the Ocean Subgraph. So, grab a virtual snorkel, and let's explore together! 🤿\\
+In the following pages, we've prepared a few examples just for you. From running queries to exploring data, you'll have the chance to dive right into the Ocean Subgraph data. There, you'll find a wide range of additional code snippets and examples that showcase the power and versatility of the Ocean Subgraph. So, grab a virtual snorkel, and let's explore together! 🤿
 
 {% hint style="info" %}
 For more examples, visit the subgraph GitHub [repository](https://github.com/oceanprotocol/ocean-subgraph), where you'll discover an extensive collection of code snippets and examples that highlight the Subgraph's capabilities and adaptability.

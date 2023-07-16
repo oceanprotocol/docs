@@ -29,7 +29,7 @@ This guide will deploy Aquarius, including Elasticsearch as a single systemd ser
 
 From a terminal console, create /etc/docker/compose/aquarius/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation. The following example is for deploying Aquarius for Goerli network.
 
-For each other network in which you want to deploy Aquarius, add to the file a section similar to "aquarius-events-goerli" included in this example and update the corresponding parameters (i.e. EVENTS\_RPC, OCEAN\_ADDRESS, SUBGRAPH\_URLS) specific to that network. \\
+For each other network in which you want to deploy Aquarius, add to the file a section similar to "aquarius-events-goerli" included in this example and update the corresponding parameters (i.e. EVENTS\_RPC, OCEAN\_ADDRESS, SUBGRAPH\_URLS) specific to that network.
 
 ```yaml
 version: '3.9'

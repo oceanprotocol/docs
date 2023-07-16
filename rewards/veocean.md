@@ -39,9 +39,9 @@ veOCEAN holders get weekly Data Farming rewards with a small carveout for any Oc
 
 veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets.
 
-Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.\*\*&#x20;
+Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.
 
-\*\*There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
+There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
 
 ### veOCEAN Time Locking
 

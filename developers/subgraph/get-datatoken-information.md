@@ -150,7 +150,7 @@ print(json.dumps(result, indent=4, sort_keys=True))
 {% endtab %}
 
 {% tab title="Query" %}
-Copy the query to fetch the information of a datatoken in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).&#x20;
+Copy the query to fetch the information of a datatoken in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).
 
 ```
 {

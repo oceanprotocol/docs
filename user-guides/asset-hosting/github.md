@@ -44,7 +44,7 @@ After you make your commit (and merge your pull request, if applicable), then cl
 
 **Step 3 - Get the RAW version of your file**
 
-To use your file on the Market **you need to use the raw url of the asset**. Also, make sure your Repo is publicly accessible to allow the market to use that file.&#x20;
+To use your file on the Market **you need to use the raw url of the asset**. Also, make sure your Repo is publicly accessible to allow the market to use that file.
 
 Open the File and click on the "Raw" button on the right side of the page.
 

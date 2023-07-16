@@ -2,7 +2,7 @@
 
 **Overview**
 
-Compute-to-Data is a powerful feature of Ocean Protocol that enables privacy-preserving data analysis and computation. With Compute-to-Data, data owners can maintain control over their data while allowing external parties to perform computations on that data.&#x20;
+Compute-to-Data is a powerful feature of Ocean Protocol that enables privacy-preserving data analysis and computation. With Compute-to-Data, data owners can maintain control over their data while allowing external parties to perform computations on that data.
 
 This documentation provides an overview of Compute-to-Data in Ocean Protocol and explains how to use it with Ocean.js. For detailed code examples and implementation details, please refer to the official [Ocean.js](https://github.com/oceanprotocol/ocean.js) GitHub repository.
 

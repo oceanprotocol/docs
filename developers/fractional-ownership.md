@@ -13,11 +13,11 @@ Ocean offers two approaches to facilitate fractional ownership:
 1. Sharded Holding of ERC20 Datatokens: Under this approach, each holder of ERC20 tokens possesses the typical datatoken rights outlined earlier. For instance, owning 1.0 datatoken allows consumption of a particular asset. Ocean conveniently provides this feature out of the box.
 2. Sharding ERC721 Data NFT: This method involves dividing the ownership of an ERC721 data NFT among multiple individuals, granting each co-owner the right to a portion of the earnings generated from the underlying IP. Moreover, these co-owners collectively control the data NFT. For instance, a dedicated DAO may be established to hold the data NFT, featuring its own ERC20 token. DAO members utilize their tokens to vote on updates to data NFT roles or the deployment of ERC20 datatokens associated with the ERC721.
 
-It's worth noting that for the second approach, one might consider utilizing platforms like Niftex for sharding. However, important questions arise in this context:&#x20;
+It's worth noting that for the second approach, one might consider utilizing platforms like Niftex for sharding. However, important questions arise in this context:
 
-* What specific rights do shard-holders possess?&#x20;
+* What specific rights do shard-holders possess?
 * It's possible that they have limited rights, just as Amazon shareholders don't have the authority to roam the hallways of Amazon's offices simply because they own shares
-* Additionally, how do shard-holders exercise control over the data NFT?&#x20;
+* Additionally, how do shard-holders exercise control over the data NFT?
 
 These concerns are effectively addressed by employing a tokenized DAO, as previously described.
 

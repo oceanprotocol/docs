@@ -12,7 +12,7 @@ The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for
 
 #### Step 1 - Navigate to the Data Farming dApp
 
-* Go to https://df.oceandao.org
+* Go to [https://df.oceandao.org](https://df.oceandao.org)
 
 #### Step 2 - Connect your wallet
 
@@ -44,7 +44,7 @@ Do you have multiple wallets? Say you want to send rewards to someone you 💖 W
 
 
 
-When you delegate, you transfer 100% of your veOCEAN allocation power for a limited period. You can delegate your active rewards \*without\* the need for reallocation and transaction fees! Note that after you delegate, then you cannot manage your allocations until the delegation expires. The delegation expiration date is the same as your veOCEAN Lock End Date at the time of delegation. If necessary, you can extend your Lock End Date before delegating. You can also cancel your delegation at any time 💪 Once delegated, rewards will be sent to the wallet address you delegated to. Then, the delegation receiver is in charge of your active rewards and is responsible for returning those back to you should you choose to do so.&#x20;
+When you delegate, you transfer 100% of your veOCEAN allocation power for a limited period. You can delegate your active rewards \*without\* the need for reallocation and transaction fees! Note that after you delegate, then you cannot manage your allocations until the delegation expires. The delegation expiration date is the same as your veOCEAN Lock End Date at the time of delegation. If necessary, you can extend your Lock End Date before delegating. You can also cancel your delegation at any time 💪 Once delegated, rewards will be sent to the wallet address you delegated to. Then, the delegation receiver is in charge of your active rewards and is responsible for returning those back to you should you choose to do so.
 
 Follow these steps to delegate your veOCEAN:
 
@@ -56,6 +56,6 @@ Follow these steps to delegate your veOCEAN:
 
 #### What if someone delegates active rewards to you?
 
-If you receive veOCEAN allocation power from other wallets, then you will receive their active rewards. You cannot delegate the veOCEAN you received from delegates, only the veOCEAN you received from your lock.&#x20;
+If you receive veOCEAN allocation power from other wallets, then you will receive their active rewards. You cannot delegate the veOCEAN you received from delegates, only the veOCEAN you received from your lock.
 
 <figure><img src="https://1520763098-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQlpIJEeu8x5yl0OLuXn%2Fuploads%2Fgit-blob-423f12f5b84205ab6cff8b79a1211fcd955d637c%2FveOCEAN-Delegation.png?alt=media" alt=""><figcaption></figcaption></figure>

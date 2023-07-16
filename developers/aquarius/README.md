@@ -1,6 +1,6 @@
 # Aquarius
 
-### What is Aquarius?&#x20;
+### What is Aquarius?
 
 Aquarius is a tool that tracks and caches the metadata from each chain where the Ocean Protocol smart contracts are deployed. It operates off-chain, running an Elasticsearch database. This makes it easy to query the metadata generated on-chain.
 
@@ -23,7 +23,7 @@ Aquarius has its own interface (API) that allows you to easily query this metada
 
 ### How to run Aquarius?
 
-We recommend checking the README in the [Aquarius GitHub repository](https://github.com/oceanprotocol/aquarius) for the steps to run the Aquarius. If you see any errors in the instructions, please open an issue within the GitHub repository.&#x20;
+We recommend checking the README in the [Aquarius GitHub repository](https://github.com/oceanprotocol/aquarius) for the steps to run the Aquarius. If you see any errors in the instructions, please open an issue within the GitHub repository.
 
 ### What technology does Aquarius use?
 

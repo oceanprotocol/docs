@@ -4,7 +4,7 @@ title: Minikube Compute-to-Data Environment
 
 # Deploying C2D
 
-This chapter will present how to deploy the C2D component of the Ocean stack. As mentioned in the [C2D Architecture chapter](../developers/compute-to-data/#architecture-and-overview-guides), the Compute-to-Data component uses Kubernetes to orchestrate the creation and deletion of the pods in which the C2D jobs are run.&#x20;
+This chapter will present how to deploy the C2D component of the Ocean stack. As mentioned in the [C2D Architecture chapter](../developers/compute-to-data/#architecture-and-overview-guides), the Compute-to-Data component uses Kubernetes to orchestrate the creation and deletion of the pods in which the C2D jobs are run.
 
 For the ones that do not have a Kubernetes environment available, we added to this guide instructions on how to install Minikube, which is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. In case you have a Kubernetes environment in place, please skip directly to step 4 of this guide.
 
@@ -81,7 +81,7 @@ watch kubectl get pods --all-namespaces
 
 #### Run the IPFS host (optional)
 
-To store the results and the logs of the C2D jobs, you can use either an AWS S3 bucket or IPFS.&#x20;
+To store the results and the logs of the C2D jobs, you can use either an AWS S3 bucket or IPFS.
 
 In case you want to use IPFS you need to run an IPFS host, as presented below.
 
@@ -97,11 +97,11 @@ sudo /bin/sh -c 'echo "127.0.0.1    youripfsserver" >> /etc/hosts'
 
 #### Update the storage class
 
-The storage class is used by Kubernetes to create the temporary volumes on which the data used by the algorithm will be stored. &#x20;
+The storage class is used by Kubernetes to create the temporary volumes on which the data used by the algorithm will be stored. 
 
-Please ensure that your class allocates volumes in the same region and zone where you are running your pods.&#x20;
+Please ensure that your class allocates volumes in the same region and zone where you are running your pods.
 
-You need to consider the storage class available for your environment.&#x20;
+You need to consider the storage class available for your environment.
 
 For Minikube, you can use the default 'standard' class.
 

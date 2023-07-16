@@ -8,7 +8,7 @@ Having a [data NFT](data-nfts.md) that generates revenue continuously, even when
 
 <figure><img src="../../.gitbook/assets/gif/sponge-money.gif" alt=""><figcaption><p>Make it rain</p></figcaption></figure>
 
-By default, the revenue generated from a [data NFT](data-nfts.md) is directed to the [owner](roles.md#nft-owner) of the NFT. This arrangement automatically updates whenever the data NFT is transferred to a new owner. C
+By default, the revenue generated from a [data NFT](data-nfts.md) is directed to the [owner](roles.md#nft-owner) of the NFT. This arrangement automatically updates whenever the data NFT is transferred to a new owner.
 
 However, there are scenarios where you may prefer the revenue to be sent to a different account instead of the owner. This can be accomplished by designating a new payment collector. This feature becomes particularly beneficial when the data NFT is owned by an organization or enterprise rather than an individual.
 

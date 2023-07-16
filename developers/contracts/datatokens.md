@@ -6,7 +6,7 @@ description: ERC20 datatokens represent licenses to access the assets.
 
 Fungible tokens are a type of digital asset that are identical and interchangeable with each other. Each unit of a fungible token holds the same value and can be exchanged on a one-to-one basis. This means that one unit of a fungible token is indistinguishable from another unit of the same token. Examples of fungible tokens include cryptocurrencies like Bitcoin (BTC) and Ethereum (ETH), where each unit of the token is equivalent to any other unit of the same token. Fungible tokens are widely used for transactions, trading, and as a means of representing value within blockchain-based ecosystems.
 
-## What is a Datatoken?&#x20;
+## What is a Datatoken?
 
 Datatokens are fundamental within Ocean Protocol, representing a key mechanism to **access** data assets in a decentralized manner. In simple terms, a datatoken is an **ERC20-compliant token** that serves as **access control** for a data/service represented by a [data NFT](data-nfts.md).
 

@@ -100,7 +100,7 @@ You can bypass manually: just edit your brownie network config file.
 
 Or you can bypass via the command line. The following command replaces Infura RPCs with public ones in `network-config.yaml`:
 
-* Linux users: in the console:&#x20;
+* Linux users: in the console:
 
 {% code overflow="wrap" %}
 ```bash

@@ -28,7 +28,7 @@ Don't enjoy reading? Watch our video tutorial!
 2. Connect your wallet.
 3. Select the network where you would like to publish your NFT (ex. Ethereum, Polygon, etc).
 
-<figure><img src="../.gitbook/assets/market/Connect-Wallet.png" alt=""><figcaption><p>Connect your wallet</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/market/connect-wallet.png" alt=""><figcaption><p>Connect your wallet</p></figcaption></figure>
 
 In this tutorial, we will be using the Polygon Mumbai test network.
 

@@ -10,7 +10,7 @@ Retrieves the last-used nonce value for a specific user's Ethereum address.
 
 Here are some typical responses you might receive from the API:
 
-* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns a JSON object containing the nonce value.&#x20;
+* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns a JSON object containing the nonce value.
 
 Example response:
 
@@ -42,7 +42,7 @@ Retrieves Content-Type and Content-Length from the given URL or asset.
   * `serviceId`: This is a string representing the ID of the service.
 * **Purpose**: This endpoint is used to retrieve the `Content-Type` and `Content-Length` from a given URL or asset. For published assets, `did` and `serviceId` should be provided. It also accepts file objects (as described in the Ocean Protocol documentation) and can compute a checksum if the file size is less than `MAX_CHECKSUM_LENGTH`. For larger files, the checksum will not be computed.
 * **Responses**:
-  * **200**: This is a successful HTTP response code. It returns a JSON object containing the file info.&#x20;
+  * **200**: This is a successful HTTP response code. It returns a JSON object containing the file info.
 
 Example response:
 
@@ -89,11 +89,11 @@ console.log(response)
 
 #### Javascript Example
 
-Before calling the `/download` endpoint, you need to follow these steps:&#x20;
+Before calling the `/download` endpoint, you need to follow these steps:
 
 1. You need to set up and connect a wallet for the consumer. The consumer needs to have purchased the datatoken for the asset that you are trying to download. Libraries such as ocean.js or ocean.py can be used for this.
 2. Get the nonce. This can be done by calling the `/getnonce` endpoint above.
-3. Sign a message from the account that has purchased the datatoken.&#x20;
+3. Sign a message from the account that has purchased the datatoken.
 4. Add the nonce and signature to the payload.
 
 ```javascript
@@ -139,7 +139,7 @@ downloadAsset(payload);
 
 ### Initialize
 
-In order to consume a data service the user is required to send one datatoken to the provider.&#x20;
+In order to consume a data service the user is required to send one datatoken to the provider.
 
 The datatoken is transferred on the blockchain by requesting the user to sign an ERC20 approval transaction where the approval is given to the provider's account for the number of tokens required by the service.
 

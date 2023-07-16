@@ -2,7 +2,7 @@
 
 ### About Provider
 
-Provider encrypts the URL and metadata during publishing and decrypts the URL when the dataset is downloaded or a compute job is started. It enables access to the data assets by streaming data (and never the URL). It performs checks on-chain for buyer permissions and payments. It also provides compute services (connects to a C2D environment).&#x20;
+Provider encrypts the URL and metadata during publishing and decrypts the URL when the dataset is downloaded or a compute job is started. It enables access to the data assets by streaming data (and never the URL). It performs checks on-chain for buyer permissions and payments. It also provides compute services (connects to a C2D environment).
 
 Provider is a multichain component, meaning that it can handle these tasks on multiple chains with the proper configurations. The source code of Provider can be accessed from [here](https://github.com/oceanprotocol/provider).
 
@@ -36,7 +36,7 @@ The steps to deploy the Provider using Docker Engine and Docker Compose are:
 
 #### 1. Create the /etc/docker/compose/provider/docker-compose.yml file
 
-From a terminal console, create /etc/docker/compose/provider/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation.&#x20;
+From a terminal console, create /etc/docker/compose/provider/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation.
 
 ```yaml
 version: '3'
@@ -142,7 +142,7 @@ Jun 14 09:41:53 testvm systemd[1]: Finished provider service with docker compose
 
 #### 6. Confirm the Provider is accessible
 
-Once started, the Provider service is accessible on `localhost` port 8030/tcp. Run the following command to access the Provider. The output should be similar to the one displayed here.&#x20;
+Once started, the Provider service is accessible on `localhost` port 8030/tcp. Run the following command to access the Provider. The output should be similar to the one displayed here.
 
 ```bash
 $ curl localhost:8030
@@ -213,7 +213,7 @@ The steps to deploy the Provider in Kubernetes are:
 
 #### 1. Create a YAML file for Provider configuration.
 
-From a terminal window, create a YAML file (in our example the file is named provider-deploy.yaml) then copy and paste the following content. Check the comments in the file and replace the fields with the specific values of your implementation (RPC URLs, the private key etc.).&#x20;
+From a terminal window, create a YAML file (in our example the file is named provider-deploy.yaml) then copy and paste the following content. Check the comments in the file and replace the fields with the specific values of your implementation (RPC URLs, the private key etc.).
 
 ```yaml
 apiVersion: apps/v1

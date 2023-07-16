@@ -4,7 +4,7 @@ description: Empowering the Decentralised Data Economy
 
 # Contracts
 
-The [V4 release](https://blog.oceanprotocol.com/ocean-v4-overview-1ccd4a7ce150) of Ocean Protocol introduces a comprehensive and enhanced suite of s[mart contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts) that serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. With the introduction of V4 contracts, Ocean Protocol propels itself forward, delivering substantial functionality, scalability, and flexibility advancements.
+The [V4 release](https://blog.oceanprotocol.com/ocean-v4-overview-1ccd4a7ce150) of Ocean Protocol introduces a comprehensive and enhanced suite of [smart contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts) that serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. With the introduction of V4 contracts, Ocean Protocol propels itself forward, delivering substantial functionality, scalability, and flexibility advancements.
 
 The V4 smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). The V4 introduces significant enhancements that encompass the following key **features**:
 

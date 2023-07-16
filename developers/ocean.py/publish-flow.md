@@ -31,7 +31,7 @@ You've now published an Ocean asset!
 
 * [`data_nft`](../contracts/data-nfts.md) is the base (base IP)
 * [`datatoken`](../contracts/datatokens.md) for access by others (licensing)
-* `ddo` holding metadata
+* [`ddo`](../ddo-specification.md) holding metadata
 
 <figure><img src="../../.gitbook/assets/gif/200.webp" alt=""><figcaption></figcaption></figure>
 
@@ -113,7 +113,7 @@ If you call `create()` after this, you can pass in an argument `deployed_datatok
 
 Ocean Assets allows you to bundle several common scenarios as a single transaction, thus lowering gas fees.
 
-Any of the `ocean.assets.create_<type>_asset()` functions can also take an optional parameter that describes a bundled [pricing schema](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL199C5-L219C10) (Dispenser or Fixed Rate Exchange).&#x20;
+Any of the `ocean.assets.create_<type>_asset()` functions can also take an optional parameter that describes a bundled [pricing schema](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL199C5-L219C10) (Dispenser or Fixed Rate Exchange).
 
 Here is an example involving an exchange:
 
