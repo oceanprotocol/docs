@@ -41,9 +41,7 @@ The download and compute fees can both be set to any absolute amount and you can
 Additionally, provider fees are not limited to data consumption — they can also be used to charge for compute resources. So, for example, this means a provider can charge a fixed fee of 15 DAI to reserve compute resources for 1 hour. This has a huge upside for both the user and the provider host. From the user’s perspective, this means that they can now reserve a suitable amount of compute resources according to what they require. For the host of the provider, this presents another great opportunity to create an income.
 
 
-
-**Benefits to the Ocean Community**\
+**Benefits to the Ocean Community**
 We’re always looking to give back to the Ocean community and collecting fees is an important part of that. As mentioned above, the Ocean Protocol Foundation retains the ability to implement community fees on data consumption. The tokens that we receive will either be burned or invested in the community via projects that they are building. These investments will take place either through [Data Farming](../rewards/df-intro.md), [Ocean Shipyard](https://oceanprotocol.com/shipyard), or Ocean Ventures.
 
-Additionally, we will also be placing an additional 0.1% fee on projects that aren’t using either the Ocean token or H2O. We want to support marketplaces that use other tokens but we also recognize that they don’t bring the same wider benefit to the Ocean community, so we feel this small additional fee is proportionate.
-
+Projects that utilize the Ocean token or H2O are subject to a 0.1% fee. In the case of projects that opt to use different tokens, an additional 0.1% fee will be applied. We want to support marketplaces that use other tokens but we also recognize that they don’t bring the same wider benefit to the Ocean community, so we feel this small additional fee is proportionate.

@@ -220,14 +220,6 @@ The counting starts at 12.01am on Thursday, and ends at 11.59pm on the following
 
 <details>
 
-<summary>I staked for just one day. What rewards might I expect?</summary>
-
-At least 50 snapshots are randomly taken throughout the week. If you’ve staked just one day, and all else being equal, you should expect 1/7 the rewards compared to the full 7 days.
-
-</details>
-
-<details>
-
 <summary>The datatoken price may change throughout the week. What price is taken in the DCV calculation?</summary>
 
 The price is taken at the same time as each consume. E.g. if a data asset has three consumes, where price was 1 OCEAN when the first consume happened, and the price was 10 OCEAN when the other consumes happened, then the total DCV for the asset is 1 + 10 + 10 = 21.
@@ -339,14 +331,6 @@ They are deployed on Ethereum mainnet, alongside other Ocean contract deployment
 <summary>What is the official veOCEAN epoch start_time?</summary>
 
 veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
-
-</details>
-
-<details>
-
-<summary>Will the Market still need to be multi-chain?</summary>
-
-Yes, Ocean Market still needs to be multi-chain: all the reasons that we went multi-chain for are as valid as ever.
 
 </details>
 
