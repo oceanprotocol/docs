@@ -56,9 +56,9 @@ redirects:
     veocean-data-farming: rewards/README.md
     veocean-data-farming/veocean: rewards/veocean.md
     veocean-data-farming/df-intro: rewards/df-intro.md
-    veocean-data-farming/df-background: rewards/df-max-out-yield#a-brief-history-of-data-farming.md
+    veocean-data-farming/df-background: rewards/df-max-out-yield.md
     veocean-data-farming/emissions-apys: rewards/df-emissions-apys.md
-    veocean-data-farming/delegation: rewards/README#delegation
+    veocean-data-farming/delegation: rewards/README.md
     rewards/veOcean-Data-Farming-Tutorial: user-guides/get-started-df
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
