@@ -1,37 +1,65 @@
 root: ./
 
 redirects:
-    building-with-ocean/wallets: discover/wallets/README
-    orientation/metamask-setup: discover/wallets/metamask-setup
-    building-with-ocean/wallets-and-ocean-tokens: discover/wallets-and-ocean-tokens
+    readme/metamask-setup: discover/wallets/metamask-setup
+    readme/wallets: discover/wallets
+    readme/wallets-and-ocean-tokens: discover/wallets-and-ocean-tokens
+    core-concepts: developers
     core-concepts/architecture: developers/architecture
     core-concepts/datanft-and-datatoken: developers/contracts/datanft-and-datatoken
     core-concepts/roles: developers/contracts/roles
-    core-concepts/networks: discover/networks/README
+    core-concepts/networks: discover/networks
     core-concepts/networks/bridges: discover/networks/bridges
     core-concepts/fees: developers/contracts/fees
     core-concepts/asset-pricing: developers/contracts/pricing-schemas
     core-concepts/did-ddo: developers/identifiers
+    using-ocean-market: user-guides/using-ocean-market
     using-ocean-market/marketplace-publish-data-asset: user-guides/publish-data-nfts
     using-ocean-market/marketplace-download-data-asset: user-guides/buy-data-nfts
-    using-ocean-market/asset-hosting: user-guides/asset-hosting/README
+    using-ocean-market/asset-hosting: user-guides/asset-hosting
     using-ocean-market/remove-liquidity-using-etherscan: user-guides/remove-liquidity-pools
+    building-with-ocean: developers
+    building-with-ocean/build-a-marketplace: developers/build-a-marketplace
     building-with-ocean/build-a-marketplace/forking-ocean-market: developers/build-a-marketplace/forking-ocean-market
     building-with-ocean/build-a-marketplace/customising-your-market: developers/build-a-marketplace/customising-your-market
     building-with-ocean/build-a-marketplace/deploying-market: developers/build-a-marketplace/deploying-market
+    building-with-ocean/using-ocean-libraries: developers/ocean.js
     building-with-ocean/using-ocean-libraries/configuration: developers/ocean.js/configuration
     building-with-ocean/using-ocean-libraries/creating_dataNFT: developers/ocean.js/creating-datanft
+    building-with-ocean/using-ocean-libraries/create-datatoken-with-fixed-pricing: developers/ocean.js/publish
     building-with-ocean/using-ocean-libraries/mint-datatoken: developers/ocean.js/mint-datatoken
     building-with-ocean/using-ocean-libraries/update-metadata: developers/ocean.js/update-metadata
+    building-with-ocean/compute-to-data: developers/compute-to-data
     building-with-ocean/compute-to-data/compute-to-data-architecture: developers/compute-to-data/compute-to-data-architecture
     building-with-ocean/compute-to-data/compute-to-data-datasets-algorithms: developers/compute-to-data/compute-to-data-datasets-algorithms
     building-with-ocean/compute-to-data/compute-to-data-algorithms: developers/compute-to-data/compute-to-data-algorithms
-    building-with-ocean/deploying-components/deploying-marketplace: developers/build-a-marketplace/deploying-market
-    building-with-ocean/using-ocean-subgraph/list-data-nfts: developers/using-ocean-subgraph/list-data-nfts
-    building-with-ocean/using-ocean-subgraph/list-datatokens: developers/using-ocean-subgraph/list-datatokens
-    building-with-ocean/using-ocean-subgraph/get-swap-tx: developers/using-ocean-subgraph/get-swap-tx
-    building-with-ocean/deploying-components/deploying-subgraph: developers/using-ocean-subgraph/deploying-subgraph
-    building-with-ocean/deploying-components/deploying-provider: infrastructure/deploying-components/deploying-provider
+    building-with-ocean/compute-to-data/compute-to-data-minikube: infrastructure/compute-to-data-minikube
+    building-with-ocean/compute-to-data/compute-to-data-docker-registry: infrastructure/compute-to-data-docker-registry
+    building-with-ocean/compute-to-data/user-defined-parameters: developers/compute-to-data/compute-options
+    building-with-ocean/deploying-components: infrastructure
+    building-with-ocean/deploying-components/setup-server: infrastructure/setup-server
+    building-with-ocean/deploying-components/deploying-ocean-subgraph: infrastructure/deploying-ocean-subgraph
+    building-with-ocean/deploying-components/deploying-marketplace: infrastructure/deploying-marketplace
+    building-with-ocean/deploying-components/deploying-aquarius: infrastructure/deploying-aquarius
+    building-with-ocean/deploying-components/deploying-provider: infrastructure/deploying-provider
+    building-with-ocean/using-ocean-subgraph: developers/subgraph
+    building-with-ocean/using-ocean-subgraph/list-data-nfts: developers/subgraph/list-data-nfts
+    building-with-ocean/using-ocean-subgraph/list-datatokens: developers/subgraph/list-datatokens
+    building-with-ocean/using-ocean-subgraph/get-data-nft-information: developers/subgraph/get-data-nft-information
+    building-with-ocean/using-ocean-subgraph/get-datatoken-information: developers/subgraph/get-datatoken-information
+    building-with-ocean/using-ocean-subgraph/list-fixed-rate-exchanges: developers/subgraph/list-fixed-rate-exchanges
     building-with-ocean/using-ocean-subgraph/deploying-ocean-subgraph: infrastructure/deploying-components/deploying-ocean-subgraph
-    using-ocean-market/ocean-kubernetes: infrastructure/ocean-kubernetes
-    resources: resources/README
+    building-with-ocean/contributing: contribute
+    building-with-ocean/contributing/code-of-conduct: contribute/code-of-conduct
+    building-with-ocean/contributing/legal-reqs: contribute/legal-reqs
+    building-with-ocean/projects-using-ocean: contribute/projects-using-ocean
+    veocean-data-farming: rewards
+    veocean-data-farming/veocean: rewards/veocean
+    veocean-data-farming/df-intro: rewards/df-intro
+    veocean-data-farming/df-background: rewards/df-max-out-yield#a-brief-history-of-data-farming
+    veocean-data-farming/emissions-apys: rewards/df-emissions-apys 
+    veocean-data-farming/delegation: rewards#delegation
+    rewards/veOcean-Data-Farming-Tutorial: user-guides/get-started-df
+    api-references: developers
+    api-references/aquarius-rest-api: aquarius/asset-requests
+    api-references/provider-rest-api: developers/provider/general-endpoints
