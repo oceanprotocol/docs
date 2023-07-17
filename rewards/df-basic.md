@@ -1,14 +1,14 @@
 ---
-description: Learn the basic moves to start kicking a** Data Farming
+description: Show you can complete all User-Guides as the last steps to master Data Farming!
 ---
 
-# DF Basic Actions (Blue Belt)
+# Complete User Guides
 
 <figure><img src="../.gitbook/assets/gif/neo-kinda-martial-arts.gif" alt=""><figcaption><p>Like Neo, you have great potential.</p></figcaption></figure>
 
 ### Get Started
 
-Our [User Guides](../user-guides/README.md) get you started Data Farming quickly to do the basic operations. Follow these guides to earn your blue belt in Data Farming understanding.
+Our [User Guides](../user-guides/README.md) get you started on Data Farming quickly so you can complete all operations. Follow these guides to get a complete handle on all Data Farming activities.
 
 {% content-ref url="../user-guides/get-started-df.md" %}
 [get-started-df.md](../user-guides/get-started-df.md)

@@ -1,10 +1,9 @@
 ---
 description: >-
-  Let's discuss the "ve" in veOCEAN for our last jutsu before earning a black
-  belt in Data Farming knowledge!
+  Learn the basic moves to start kicking a** at Data Farming
 ---
 
-# DF "ve" in veOCEAN (Brown Belt)
+# Passive Farming veOCEAN
 
 <figure><img src="../.gitbook/assets/gif/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
 
@@ -62,6 +61,8 @@ After choosing your lock period and locking up your OCEAN into the vault, you wi
 
 veOCEAN is non-transferable. You can’t sell it or send it to other addresses.
 
+_To help you more easily understand this, we have created [a couple of examples](../user-guides/how-to-df-estimate-apy.md) so you can more easily visualize the impact of your decisions on your overall yields._
+
 ### Linear Decay
 
 Your veOCEAN balance will slowly start declining as soon as you receive it.
@@ -80,10 +81,6 @@ If you lock 1.0 OCEAN for 4 years, you get 1.0 veOCEAN at the start.
 | 4 years      | 0.00         |
 
 At the end of your 4 years, your OCEAN is unlocked.
-
-#### Linear Decay
-
-**Your balance of veOCEAN may be less than the amount when you first locked your tokens because your veOCEAN balance decreases linearly over time until the Lock End Date when you can withdraw your OCEAN tokens.** This is because rewards are designed to be paid out weekly in a decreasing amount until you unlock your OCEAN tokens entirely. The veOCEAN code is a fork of Curve's battle-tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
 
 ### Replenishing your veOCEAN
 

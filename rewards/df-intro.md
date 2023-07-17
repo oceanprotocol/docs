@@ -2,7 +2,7 @@
 description: Learn the fundamentals of The Way of Data Farming 🧑‍🏫
 ---
 
-# Data Farming 101 (White Belt)
+# Data Farming 101
 
 <figure><img src="../.gitbook/assets/gif/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
 
@@ -20,6 +20,14 @@ Unlike yield farming in DeFi, data farming has real intrinsic utility for Ocean 
 
 Every week OCEAN rewards are paid out to Data Farmers in two different ways: **passive** rewards and **active** rewards. The two reward functions produce different variable APYs.
 
+#### Splitting the Pie
+
+Each Data Farming weekly round has a pool of OCEAN rewards, where 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards.
+
+| Passive Rewards | Active Rewards |
+| --------------- | -------------- |
+| 50%             | 50%            |
+
 #### What are Passive Rewards?
 
 Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.
@@ -36,23 +44,11 @@ Active rewards are governed and defined by the [Reward Function](df-max-out-yiel
 
 [To start getting active rewards, go here.](../user-guides/how-to-data-farm.md)
 
-#### Splitting the Pie
+#### Estimating APY
 
-Each Data Farming weekly round has a pool of OCEAN rewards, and 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards.
+To estimate your APY effectively, you will need a good understanding of how Passive and Active Rewards work. Therefore you should make sure to complete reading the documentation on Data Farming.
 
-| Passive Rewards | Active Rewards |
-| --------------- | -------------- |
-| 50%             | 50%            |
-
-### What are Publisher Rewards?
-
-<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
-
-Data Farming strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
-
-How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
-
-You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
+To help you understand Data Farming and APYs a bit better, we have provided [a couple of scenarios](../user-guides/how-to-df-estimate-apy.md) so you can easily get an overview of how your yield might behave depending on your decisions.
 
 ## [GET STARTED DATA FARMING HERE.](https://df.oceandao.org)
 
