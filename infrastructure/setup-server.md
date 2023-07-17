@@ -16,9 +16,9 @@ For simple configurations:
 
 For complex configurations:
 
-* Operating System: Linux distribution supported by Kubernetes and Docker Engine. Please refer to this link for details: [Kubernetes with Docker Engine](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker).&#x20;
+* Operating System: Linux distribution supported by Kubernetes and Docker Engine. Please refer to this link for details: [Kubernetes with Docker Engine](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker).
 
-&#x20;
+
 
 ## Server Size
 
@@ -47,7 +47,7 @@ For complex configurations:
 
 As mentioned earlier, you can use either an on-premise server or one hosted in the cloud (AWS, Azure, Digitalocean, etc.). To install the operating system on an on-premise server, please refer to the installation documentation of the operating system.
 
-If you choose to use a server hosted in the cloud, you need to create the server using the user interface provided by the cloud platform. Following is an example of how to create a server in Digitalocean.&#x20;
+If you choose to use a server hosted in the cloud, you need to create the server using the user interface provided by the cloud platform. Following is an example of how to create a server in Digitalocean.
 
 #### Example: Create an Ubuntu Linux server in the Digitalocean cloud
 
@@ -59,7 +59,7 @@ Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create 
 
 Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Select Droplet</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (1).png" alt=""><figcaption><p>Select Droplet</p></figcaption></figure>
 
 
 
@@ -67,7 +67,7 @@ Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
 Select Ubuntu OS, and choose a plan and a configuration.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Configure the server</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (2).png" alt=""><figcaption><p>Configure the server</p></figcaption></figure>
 
 ###
 
@@ -75,21 +75,21 @@ Select Ubuntu OS, and choose a plan and a configuration.
 
 Select the region where you want the component to be hosted and a root password.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Select the region and set the root password</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (6).png" alt=""><figcaption><p>Select the region and set the root password</p></figcaption></figure>
 
 
 
 5. Finish the configuration and create the server
 
-Specify a hostname for the server, specify the project to which you assign the server, and then click on `Create Droplet.`&#x20;
+Specify a hostname for the server, specify the project to which you assign the server, and then click on `Create Droplet.`
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Finalize and create the server</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image (5).png" alt=""><figcaption><p>Finalize and create the server</p></figcaption></figure>
 
 6. Access the server's console
 
 After the server is ready, select the `Access console` option from the dropdown list to open a terminal window.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Access the server's console</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deployment/image.png" alt=""><figcaption><p>Access the server's console</p></figcaption></figure>
 
 ### Install Docker Engine and Docker Compose
 
@@ -113,9 +113,9 @@ sudo apt-get install docker-compose-plugin
 
 ### Install Kubernetes with Docker Engine
 
-Kubernetes is an orchestration engine for containerized applications and the initial setup is dependent on the platform on which it is deployed - presenting how this product must be installed and configured is outside the scope of this document.&#x20;
+Kubernetes is an orchestration engine for containerized applications and the initial setup is dependent on the platform on which it is deployed - presenting how this product must be installed and configured is outside the scope of this document.
 
-For cloud deployment, most of the cloud providers have dedicated turnkey solutions for Kubernetes. A comprehensive list of such cloud providers is presented [here](https://kubernetes.io/docs/setup/production-environment/turnkey-solutions/).&#x20;
+For cloud deployment, most of the cloud providers have dedicated turnkey solutions for Kubernetes. A comprehensive list of such cloud providers is presented [here](https://kubernetes.io/docs/setup/production-environment/turnkey-solutions/).
 
 For an on-premise deployment of Kubernetes, please refer to this [link](https://kubernetes.io/docs/setup/).
 

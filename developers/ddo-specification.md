@@ -9,9 +9,9 @@ description: >-
 
 # DDO Specification
 
-### DDO Schema - High Level&#x20;
+### DDO Schema - High Level
 
-The below diagram shows the high-level DDO schema depicting the content of each data structure and the relations between them.&#x20;
+The below diagram shows the high-level DDO schema depicting the content of each data structure and the relations between them.
 
 Please note that some data structures apply only on certain types of services or assets.
 
@@ -492,7 +492,7 @@ Details for each of these are explained on the [Compute Options page](compute-to
 
 ### DDO Schema - Detailed
 
-The below diagram shows the detailed DDO schema depicting the content of each data structure and the relations between them.&#x20;
+The below diagram shows the detailed DDO schema depicting the content of each data structure and the relations between them.
 
 Please note that some data structures apply only on certain types of services or assets.
 

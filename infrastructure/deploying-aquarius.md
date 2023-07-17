@@ -29,7 +29,7 @@ This guide will deploy Aquarius, including Elasticsearch as a single systemd ser
 
 From a terminal console, create /etc/docker/compose/aquarius/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation. The following example is for deploying Aquarius for Goerli network.
 
-For each other network in which you want to deploy Aquarius, add to the file a section similar to "aquarius-events-goerli" included in this example and update the corresponding parameters (i.e. EVENTS\_RPC, OCEAN\_ADDRESS, SUBGRAPH\_URLS) specific to that network. \\
+For each other network in which you want to deploy Aquarius, add to the file a section similar to "aquarius-events-goerli" included in this example and update the corresponding parameters (i.e. EVENTS\_RPC, OCEAN\_ADDRESS, SUBGRAPH\_URLS) specific to that network.
 
 ```yaml
 version: '3.9'
@@ -281,9 +281,9 @@ $ curl localhost:9200
 
 Aquarius supports indexing multiple chains using a single instance to serve API requests and one instance for each chain that must be indexed.
 
-![image](https://github.com/oceanprotocol/docs/assets/54084524/8099e7d7-171d-4d5a-8475-61706c99f4e5)
+<figure><img src="../.gitbook/assets/components/aquarius_deployment.jpg" alt=""><figcaption><p>Aquarius deployment - multiple chains indexing</p></figcaption></figure>
 
-The following deployment templates could be used for guidance. Some parameters are [optional](https://github.com/oceanprotocol/aquarius) and the template could be adjusted based on these considerations. Common cases are the deployments for one/multiple multiple Ethereum networks:
+The following deployment templates could be used for guidance. Some parameters are [optional](https://github.com/oceanprotocol/aquarius) and the template could be adjusted based on these considerations. Common cases are the deployments for one/multiple Ethereum networks:
 
 * Mainnet
 * Goerli

@@ -127,7 +127,7 @@ python datatoken_buyers.py
 {% endtab %}
 
 {% tab title="Query" %}
-Copy the query to fetch the list of buyers for a datatoken in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph).&#x20;
+Copy the query to fetch the list of buyers for a datatoken in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph).
 
 ```graphql
  

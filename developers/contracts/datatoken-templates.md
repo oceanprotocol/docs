@@ -21,7 +21,7 @@ The details regarding currently supported **datatoken templates** are as follows
 
 ### **Regular template**
 
-The regular template allows users to buy/sell/hold datatokens. The datatokens can be minted by the address having a [`MINTER`](roles.md#minter) role, making the supply of datatoken variable. This template is assigned _**`templateId`**_` ``= 1` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20Template.sol).
+The regular template allows users to buy/sell/hold datatokens. The datatokens can be minted by the address having a [`MINTER`](roles.md#minter) role, making the supply of datatoken variable. This template is assigned _**`templateId =`**_`1` and the source code is available [here](https://github.com/oceanprotocol/contracts/blob/v4main/contracts/templates/ERC20Template.sol).
 
 ### **Enterprise template**
 
@@ -29,11 +29,11 @@ The enterprise template has additional functions apart from methods in the ERC20
 
 #### Set the template
 
-When you're creating an ERC20 datatoken, you can specify the desired template by passing on the template index.&#x20;
+When you're creating an ERC20 datatoken, you can specify the desired template by passing on the template index.
 
 {% tabs %}
 {% tab title="Ocean.js" %}
-To specify the datatoken template via ocean.js, you need to customize the [DatatokenCreateParams](https://github.com/oceanprotocol/ocean.js/blob/ae2ff1ccde53ace9841844c316a855de271f9a3f/src/%40types/Datatoken.ts#L3) with your desired `templateIndex`.&#x20;
+To specify the datatoken template via ocean.js, you need to customize the [DatatokenCreateParams](https://github.com/oceanprotocol/ocean.js/blob/ae2ff1ccde53ace9841844c316a855de271f9a3f/src/%40types/Datatoken.ts#L3) with your desired `templateIndex`.
 
 The default template used is 1.
 
@@ -53,7 +53,7 @@ export interface DatatokenCreateParams {
 {% endtab %}
 
 {% tab title="Ocean.py" %}
-To specify the datatoken template via ocean.py, you need to customize the [DatatokenArguments](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean_lib/models/datatoken_base.py#L64) with your desired template\_index.&#x20;
+To specify the datatoken template via ocean.py, you need to customize the [DatatokenArguments](https://github.com/oceanprotocol/ocean.py/blob/bad11fb3a4cb00be8bab8febf3173682e1c091fd/ocean_lib/models/datatoken_base.py#L64) with your desired template\_index.
 
 The default template used is 1.
 
@@ -78,7 +78,7 @@ class DatatokenArguments:
 {% endtabs %}
 
 {% hint style="info" %}
-By default, all assets published through the Ocean Market use the Enterprise Template.&#x20;
+By default, all assets published through the Ocean Market use the Enterprise Template.
 {% endhint %}
 
 #### Retrieve the template
@@ -90,11 +90,12 @@ To identify the template used for a specific asset, you can easily retrieve this
 3. Once you have located the datatoken address, click on the contract tab to access more details.
 4.  Within the contract details, we can identify and determine the template used for the asset.
 
-    &#x20;
+    
 
-We like making things easy :sunglasses: so here is an even easier way to retrieve the info for [this](https://market.oceanprotocol.com/asset/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6) asset published in the Ocean Market:&#x20;
+We like making things easy :sunglasses: so here is an even easier way to retrieve the info for [this](https://market.oceanprotocol.com/asset/did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6) asset published in the Ocean Market:
 
-{% @arcade/embed flowId="wxBPSc42eSYUiawSY8rC" url="https://app.arcade.software/share/wxBPSc42eSYUiawSY8rC" %}
+{% embed url="https://app.arcade.software/share/wxBPSc42eSYUiawSY8rC" fullWidth="false" %}
+{% endembed %}
 
 {% hint style="info" %}
 _It's important to note that Ocean Protocol may introduce new templates to support additional variations of data NFTs and datatokens in the future._

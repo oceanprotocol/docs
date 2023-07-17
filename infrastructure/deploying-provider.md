@@ -2,18 +2,16 @@
 
 ### About Provider
 
-Provider encrypts the URL and metadata during publishing and decrypts the URL when the dataset is downloaded or a compute job is started. It enables access to the data assets by streaming data (and never the URL). It performs checks on-chain for buyer permissions and payments. It also provides compute services (connects to a C2D environment).&#x20;
+Provider encrypts the URL and metadata during publishing and decrypts the URL when the dataset is downloaded or a compute job is started. It enables access to the data assets by streaming data (and never the URL). It performs checks on-chain for buyer permissions and payments. It also provides compute services (connects to a C2D environment).
 
 Provider is a multichain component, meaning that it can handle these tasks on multiple chains with the proper configurations. The source code of Provider can be accessed from [here](https://github.com/oceanprotocol/provider).
 
 As mentioned in the Setup a Server document, all Ocean components can be deployed in two types of configurations: simple, based on Docker Engine and Docker Compose, and complex, based on Kubernetes with Docker Engine. In this document, we will present how to deploy Provider in each of these configurations.
 
 
-
 ## Deploying Provider using Docker Engine and Docker Compose
 
 In this guide, we will deploy Provider for two chains: Goerli (Ethereum test network) and Mumbai (Polygon test network). Therefore, please note that in the following configuration files,  "5" and "80001" are the chain IDs for Goerli and Mumbai respectively.
-
 
 
 ### Prerequisites
@@ -27,8 +25,8 @@ In this guide, we will deploy Provider for two chains: Goerli (Ethereum test net
 
 The steps to deploy the Provider using Docker Engine and Docker Compose are:
 
-1. [Create the /etc/docker/compose/provider/docker-compose.yml file](deploying-provider.md#1.-create-the-etc-docker-compose-provider-docker-compose.yml-file)
-2. [Create the /etc/systemd/system/docker-compose@provider.service file](deploying-provider.md#2.-create-the-etc-systemd-system-docker-compose-provider.service-file)
+1. [Create the /etc/docker/compose/provider/docker-compose.yml file](deploying-provider.md#1-create-the-etcdockercomposeproviderdocker-composeyml-file)
+2. [Create the /etc/systemd/system/docker-compose@provider.service file](deploying-provider.md#2-create-the-etcsystemdsystemdocker-composeproviderservice-file)
 3. [Reload the systemd manager configuration](deploying-provider.md#3.-reload-the-systemd-manager-configuration)
 4. [Start the Provider service](deploying-provider.md#4.-start-the-provider-service)
 5. [Check the service's status](deploying-provider.md#5.-check-the-services-status)
@@ -36,10 +34,9 @@ The steps to deploy the Provider using Docker Engine and Docker Compose are:
 7. [Check Provider service logs](deploying-provider.md#7.-check-provider-service-logs)
 
 
-
 #### 1. Create the /etc/docker/compose/provider/docker-compose.yml file
 
-From a terminal console, create /etc/docker/compose/provider/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation.&#x20;
+From a terminal console, create /etc/docker/compose/provider/docker-compose.yml file, then copy and paste the following content to it. Check the comments in the file and replace the fields with the specific values of your implementation.
 
 ```yaml
 version: '3'
@@ -70,7 +67,6 @@ networks:
 ```
 
 
-
 #### 2. Create the _/etc/systemd/system/docker-compose@provider.service_ file
 
 Create the _/etc/systemd/system/docker-compose@provider.service_ file then copy and paste the following content to it. This example file could be customized if needed.
@@ -96,7 +92,6 @@ WantedBy=multi-user.target
 ```
 
 
-
 #### 3. Reload the systemd manager configuration
 
 Run the following command to reload the systemd manager configuration
@@ -112,7 +107,6 @@ sudo systemctl enable docker-compose@provider.service
 ```
 
 
-
 #### 4. Start the Provider service
 
 To start the Provider service, run the following command:
@@ -120,7 +114,6 @@ To start the Provider service, run the following command:
 ```bash
 sudo systemctl start docker-compose@provider.service
 ```
-
 
 
 #### 5. Check the service's status
@@ -147,16 +140,14 @@ Jun 14 09:41:53 testvm systemd[1]: Finished provider service with docker compose
 ```
 
 
-
 #### 6. Confirm the Provider is accessible
 
-Once started, the Provider service is accessible on `localhost` port 8030/tcp. Run the following command to access the Provider. The output should be similar to the one displayed here.&#x20;
+Once started, the Provider service is accessible on `localhost` port 8030/tcp. Run the following command to access the Provider. The output should be similar to the one displayed here.
 
 ```bash
 $ curl localhost:8030
 {"chainIds":[5,80001],"providerAddresses":{"5":"0x00c6A0BC5cD0078d6Cd0b659E8061B404cfa5704","80001":"0x4256Df50c94D9a7e04610976cde01aED91eB531E"},"serviceEndpoints":{"computeDelete":["DELETE","/api/services/compute"],"computeEnvironments":["GET","/api/services/computeEnvironments"],"computeResult":["GET","/api/services/computeResult"],"computeStart":["POST","/api/services/compute"],"computeStatus":["GET","/api/services/compute"],"computeStop":["PUT","/api/services/compute"],"create_auth_token":["GET","/api/services/createAuthToken"],"decrypt":["POST","/api/services/decrypt"],"delete_auth_token":["DELETE","/api/services/deleteAuthToken"],"download":["GET","/api/services/download"],"encrypt":["POST","/api/services/encrypt"],"fileinfo":["POST","/api/services/fileinfo"],"initialize":["GET","/api/services/initialize"],"initializeCompute":["POST","/api/services/initializeCompute"],"nonce":["GET","/api/services/nonce"],"validateContainer":["POST","/api/services/validateContainer"]},"software":"Provider","version":"2.0.2"}
 ```
-
 
 
 #### 7. Check Provider service logs
@@ -196,9 +187,7 @@ $ docker logs --follow provider
 ```
 
 
-
 ## Deploying Provider using Kubernetes with Docker Engine
-
 
 
 In this example, we will run Provider as a Kubernetes deployment resource. We will deploy Provider for two chains: Goerli (Ethereum test network) and Mumbai (Polygon test network). Therefore, please note that in the following configuration files,  "5" and "80001" are the chain IDs for Goerli and Mumbai respectively.
@@ -215,17 +204,16 @@ In this example, we will run Provider as a Kubernetes deployment resource. We wi
 
 The steps to deploy the Provider in Kubernetes are:
 
-[1. Create a YAML file for Provider configuration.](deploying-provider.md#1.-create-an-yaml-file-for-provider-configuration.)
+[1. Create a YAML file for Provider configuration.](deploying-provider.md#1-create-a-yaml-file-for-provider-configuration)
 
 [2. Deploy the configuration.](deploying-provider.md#2.-deploy-the-configuration)
 
 [3. Create a Kubernetes service.](deploying-provider.md#3.-create-a-kubernetes-service)
 
 
-
 #### 1. Create a YAML file for Provider configuration.
 
-From a terminal window, create a YAML file (in our example the file is named provider-deploy.yaml) then copy and paste the following content. Check the comments in the file and replace the fields with the specific values of your implementation (RPC URLs, the private key etc.).&#x20;
+From a terminal window, create a YAML file (in our example the file is named provider-deploy.yaml) then copy and paste the following content. Check the comments in the file and replace the fields with the specific values of your implementation (RPC URLs, the private key etc.).
 
 ```yaml
 apiVersion: apps/v1
@@ -303,7 +291,6 @@ spec:
 Tip: before deployment, you can [validate](https://github.com/instrumenta/kubeval) the yaml file.
 
 
-
 #### 2. Deploy the configuration
 
 Deploy the configuration in Kubernetes using the following commands.
@@ -317,7 +304,6 @@ kubectl get pod -l app=provider
 NAME                        READY   STATUS    RESTARTS   AGE
 provider-865cb8cf9d-r9xm4   1/1     Running   0          67s
 ```
-
 
 
 #### 3. Create a Kubernetes service

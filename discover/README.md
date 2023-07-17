@@ -42,5 +42,4 @@ A new data economy with power to the people - Trent McConaghy
 
 ### Ocean Protocol Whitepaper
 
-\
 If you'd like to explore the details of our technology, feel free to dive into our [whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)! It's a comprehensive resource that explains all the technical details and the core concepts that drive Ocean Protocol. It's a great way to get a deeper understanding of what we're all about.

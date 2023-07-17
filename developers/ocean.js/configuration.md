@@ -1,6 +1,6 @@
 # Configuration
 
-For obtaining the API keys for blockchain access and setting the correct environment variables, please consult [this section](http://localhost:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) first and proceed with the next steps.
+For obtaining the API keys for blockchain access and setting the correct environment variables, please consult [this section](http://127.0.0.1:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) first and proceed with the next steps.
 
 ### Create a directory
 
@@ -74,7 +74,7 @@ PRIVATE_KEY=0xc594c6e5def4bab63ac29eed19a134c130388f74f019bc74b8f4389df2837a58
 {% endtab %}
 {% endtabs %}
 
-Replace `<replace this>` with the appropriate values. \*\*You can see all the networks configuration on Oceanjs' [config helper](https://github.com/oceanprotocol/ocean.js/blob/main/src/config/ConfigHelper.ts#L42).
+Replace `<replace this>` with the appropriate values. You can see all the networks configuration on Oceanjs' [config helper](https://github.com/oceanprotocol/ocean.js/blob/main/src/config/ConfigHelper.ts#L42).
 
 ### Setup dependencies
 
