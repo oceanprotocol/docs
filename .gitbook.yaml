@@ -1,7 +1,7 @@
 root: ./
 
 redirects:
-    readme/metamask-setup: discover/wallets/metamask-setup
+    readme/metamask-setup: discover/wallets/metamask-setup.md
     readme/wallets: discover/wallets
     readme/wallets-and-ocean-tokens: discover/wallets-and-ocean-tokens
     core-concepts: developers
