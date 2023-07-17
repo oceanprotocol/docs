@@ -17,6 +17,6 @@ By utilizing the Barge component, developers gain the freedom to conduct experim
 {% hint style="warning" %}
 ⚠️ We've got an important heads-up about Barge that we want to share with you. Brace yourself, because **Barge is not for the faint-hearted**!  Here's the deal: the barge works great on Linux, but we need to be honest about its limitations on macOS. And, well, it doesn't work at all on Windows. Sorry, Windows users!
 
-To make things easier for everyone, we **strongly** recommend giving a try first on a **testnet**. Everything is configured already so it should be sufficient for your needs as well. Visit our [networks](../../discover/networks/README.md) page to have clarity on the available test networks. ⚠️\
+To make things easier for everyone, we **strongly** recommend giving a try first on a **testnet**. Everything is configured already so it should be sufficient for your needs as well. Visit our [networks](../../discover/networks/README.md) page to have clarity on the available test networks. ⚠️
 
 {% endhint %}
