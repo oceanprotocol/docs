@@ -154,7 +154,7 @@ axios(config)
 {% endtab %}
 
 {% tab title="Python" %}
-You can employ the following Python script to execute the query and fetch the list of veOCEAN holders from the subgraph.&#x20;
+You can employ the following Python script to execute the query and fetch the list of veOCEAN holders from the subgraph.
 
 {% code title="get_veOcean_holders.py" %}
 ```python

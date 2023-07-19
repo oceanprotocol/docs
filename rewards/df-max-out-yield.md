@@ -1,7 +1,7 @@
 ---
 description: >-
-  If you've gotten this far, then you're half way to getting a black belt in
-  Ocean Protocol's Data Farming dApp! 🥋
+  If you've gotten this far, then you're half way to becoming a pro in
+  Ocean Protocol's Data Farming dApp!
 ---
 
 # Max Out Volume DF (Purple Belt)
@@ -47,6 +47,16 @@ The Reward Function (RF) governs how active rewards are allocated to Data Farmer
 
 For mathematicians and coders, you can find this code inside [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df_py/volume/calc_rewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)!
 
+### What are Publisher Rewards?
+
+<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
+
+Data Farming strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
+
+How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
+
+You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
+
 ### What are Ranked Rewards?
 
 In Data Farming Round 23 Ranked Rewards were introduced to smooth out the reward distribution by using a logarithmic function.
@@ -70,6 +80,7 @@ The asset may be of any type — dataset, an algorithm for Compute-to-Data, or a
 To qualify for DF, an asset must also:
 
 * Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) by OPF to [production networks](../discover/networks/README.md)
+* The asset must be listed on Ocean Market
 * Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
 
 ### A Brief History of Data Farming
@@ -86,7 +97,7 @@ Data Farming has evolved over time and will continue to do so as the Emission Cu
 Up to 100K OCEAN rewards were budgeted per week. Counting started Thu Oct 27, 2022, and ended on March 15, 2023. It ran for 20 weeks. The aim was to test the effect of larger incentives, and support ecosystem participation, while continually refining the underlying technology.
 
 **DF Main - Rounds 29-1000+**\
-We are now in DF Main which immediately followed the release of DF Beta on Thu Mar 16, 2023. Rewards begin at 150k per week and go to 1.1M OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades.&#x20;
+We are now in DF Main which immediately followed the release of DF Beta on Thu Mar 16, 2023. Rewards begin at 150k per week and goes up to 1.1M OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades.
 
 The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](df-emissions-apys.md#emissions--first-5-years), and perhaps more easily understood in the Reward Schedule below.
 

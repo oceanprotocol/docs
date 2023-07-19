@@ -29,5 +29,3 @@ Our module structure follows this format:
 * Utils
 
 When working with a particular module, you will need to provide different parameters. To instantiate classes from the contracts module, you must pass objects such as Signer, which represents the wallet instance, or the contract address you wish to utilize, depending on the scenario. As for the services modules, you will need to provide the provider URI or metadata cache URI.
-
-&#x20;&#x20;

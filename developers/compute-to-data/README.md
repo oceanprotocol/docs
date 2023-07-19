@@ -18,18 +18,7 @@ Private data has the potential to drive groundbreaking discoveries in science an
 The Ocean Protocol provides a compute environment that you can access at the following address: [https://stagev4.c2d.oceanprotocol.com/](https://stagev4.c2d.oceanprotocol.com/). Feel free to explore and utilize this platform for your needs.
 {% endhint %}
 
-We suggest reading these guides to get an understanding on how compute-to-data works:
-
-### User Guides
-
-* [How to write compute to data algorithms](../../user-guides/compute-to-data/make-a-boss-c2d-algorithm.md)
-* [How to publish a compute to data algorithm](../../user-guides/compute-to-data/publish-a-c2d-algorithm-nft.md)
-* [How to publish a dataset for compute to data](../../user-guides/compute-to-data/publish-a-c2d-data-nft.md)
-
-### Developer Guides
-
-* [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
-* [How to use compute to data with ocean.py](../ocean.py/compute-flow.md)
+We suggest reading these guides to get an understanding of how compute-to-data works:
 
 ### Architecture & Overview Guides
 
@@ -37,6 +26,17 @@ We suggest reading these guides to get an understanding on how compute-to-data w
 * [Datasets & Algorithms](compute-to-data-datasets-algorithms.md)
 * [Writing Algorithms](compute-to-data-algorithms.md)
 * [Compute options](compute-options.md)
+
+### User Guides
+
+* [How to write compute to data algorithms](../../user-guides/compute-to-data/make-a-boss-c2d-algorithm.md)
+* [How to publish a compute-to-data algorithm](../../user-guides/compute-to-data/publish-a-c2d-algorithm-nft.md)
+* [How to publish a dataset for compute to data](../../user-guides/compute-to-data/publish-a-c2d-data-nft.md)
+
+### Developer Guides
+
+* [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
+* [How to use compute to data with ocean.py](../ocean.py/compute-flow.md)
 
 ### Infrastructure Deployment Guides
 

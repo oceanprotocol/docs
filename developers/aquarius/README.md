@@ -1,12 +1,16 @@
 # Aquarius
 
-### What is Aquarius?&#x20;
+### What is Aquarius?
 
 Aquarius is a tool that tracks and caches the metadata from each chain where the Ocean Protocol smart contracts are deployed. It operates off-chain, running an Elasticsearch database. This makes it easy to query the metadata generated on-chain.
 
 The core job of Aquarius is to continually look out for new metadata being created or updated on the blockchain. Whenever such events occur, Aquarius takes note of them, processes this information, and adds it to its database. This allows it to keep an up-to-date record of the metadata activity on the chains.
 
-Aquarius has its own interface (API) that allows you to easily query this metadata. With Aquarius, you don't need to do the time-consuming task of scanning the data chains yourself. It offers you a convenient shortcut to the information you need. It's ideal for when you need a search feature within your Dapp.
+Aquarius has its own interface (API) that allows you to easily query this metadata. With Aquarius, you don't need to do the time-consuming task of scanning the data chains yourself. It offers you a convenient shortcut to the information you need. It's ideal for when you need a search feature within your dApp.
+
+
+
+<figure><img src="../../.gitbook/assets/components/aquarius.png" alt=""><figcaption><p>Aquarius high level overview</p></figcaption></figure>
 
 ### What does Aquarius do?
 
@@ -19,7 +23,7 @@ Aquarius has its own interface (API) that allows you to easily query this metada
 
 ### How to run Aquarius?
 
-We recommend checking the README in the [Aquarius GitHub repository](https://github.com/oceanprotocol/aquarius) for the steps to run the Aquarius. If you see any errors in the instructions, please open an issue within the GitHub repository.&#x20;
+We recommend checking the README in the [Aquarius GitHub repository](https://github.com/oceanprotocol/aquarius) for the steps to run the Aquarius. If you see any errors in the instructions, please open an issue within the GitHub repository.
 
 ### What technology does Aquarius use?
 

@@ -18,15 +18,15 @@ Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might al
 
 Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
-![Select storage accounts](<../../.gitbook/assets/hosting/azure1 (1).png>)
+![Select storage accounts](../../.gitbook/assets/hosting/azure1.png)
 
 **Create a new storage account**
 
-![Create a storage account](<../../.gitbook/assets/hosting/azure2 (1).png>)
+![Create a storage account](../../.gitbook/assets/hosting/azure2.png)
 
 **Fill in the details**
 
-![Add details](<../../.gitbook/assets/hosting/azure3 (1).png>)
+![Add details](../../.gitbook/assets/hosting/azure3.png)
 
 **Storage account created**
 
@@ -38,7 +38,7 @@ Go to the Azure portal: https://portal.azure.com/#home and select `Storage accou
 
 **Step 3 - Upload a file**
 
-![Upload a file](<../../.gitbook/assets/hosting/azure6 (1).png>)
+![Upload a file](../../.gitbook/assets/hosting/azure6.png)
 
 **Step 4 - Share the file**
 

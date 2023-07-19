@@ -1,11 +1,10 @@
 ---
 description: >-
-  Hey there, Bruce Lee! If you can understand the emission curves and estimated
-  APYs, then you've earned yourself a solid black belt in Data Farming
-  understanding 🥋
+  Hey there champ! If you can explain the emission curves and 
+  teach how to calculate APYs, then you've mastered Data Farming
 ---
 
-# DF Emissions & APYs (Black Belt)
+# Emissions & APYs
 
 <figure><img src="../.gitbook/assets/gif/neo-bb.gif" alt=""><figcaption><p>Like a true master of The Way of Data Farming.</p></figcaption></figure>
 
@@ -50,9 +49,6 @@ The image below shows the total OCEAN released by DF for the first 20 years. The
 The plot below shows estimated APY over time. Green includes both passive and active rewards; black is just passive rewards. As of DF29, wash consume is no longer profitable, so we should expect a large drop in DCV and therefore in active rewards. So passive rewards (black) provides a great baseline with upside in active rewards (green).
 
 APYs are an estimate because APY depends on OCEAN locked. OCEAN locked for future weeks is not known precisely; it must be estimated. The yellow line is the model for OCEAN locked. We modeled OCEAN locked by observing linear growth from week 5 (when OCEAN locking was introduced) to week 28 (now): OCEAN locked grew from 7.89M OCEAN to 34.98M OCEAN respectively, or 1.177M more OCEAN locked per week.
-
-\
-
 
 <figure><img src="../.gitbook/assets/rewards/example_apys.png" alt="" width="563"><figcaption><p><em>Green: estimated APYs (passive + active). Black: estimated APYs (just passive). Yellow: estimated staking</em> </p></figcaption></figure>
 

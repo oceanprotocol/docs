@@ -7,11 +7,11 @@ description: Ocean Protocol Architecture Adventure!
 
 Embark on an exploration of the innovative realm of Ocean Protocol, where data flows seamlessly and AI achieves new heights. Dive into the intricately layered architecture that converges data and services, fostering a harmonious collaboration. Let us delve deep and uncover the profound design of Ocean Protocol.🐬
 
-<figure><img src="../../.gitbook/assets/OP High Level Architecture.jpg" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/architecture/architecture_overview.png" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
 
 ### Layer 1: The Foundational Blockchain Layer
 
-At the core of Ocean Protocol lies the robust [Blockchain Layer](../contracts/README.md). Powered by blockchain technology, this layer ensures secure and transparent transactions. It forms the bedrock of decentralized trust, where data providers and consumers come together to trade valuable assets.&#x20;
+At the core of Ocean Protocol lies the robust [Blockchain Layer](../contracts/README.md). Powered by blockchain technology, this layer ensures secure and transparent transactions. It forms the bedrock of decentralized trust, where data providers and consumers come together to trade valuable assets.
 
 The [smart contracts](../contracts/README.md) are deployed on the Ethereum mainnet and other compatible [networks](../../discover/networks/README.md). The libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To explore the contracts in more depth, go ahead to the [contracts](../contracts/README.md) section.
 
@@ -23,7 +23,7 @@ Above the smart contracts, you'll find essential [libraries](architecture.md#lib
 
 These libraries include [Ocean.js](../ocean.js/README.md), a JavaScript library, and [Ocean.py](../ocean.py/README.md), a Python library. They serve as powerful tools for developers, enabling integration and interaction with the protocol.
 
-1. [Ocean.js](../ocean.js/README.md): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building dApps, and exploring data sets within a decentralized environment.&#x20;
+1. [Ocean.js](../ocean.js/README.md): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building dApps, and exploring data sets within a decentralized environment.
 2. [Ocean.py](../ocean.py/README.md): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers and [data scientists](../../data-science/README.md) can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling you to harness the power of decentralized data.
 
 #### Middleware components
@@ -40,9 +40,9 @@ Additionally, in supporting the discovery process, middleware components come in
 
 ### Layer 3: The Accessible Application Layer
 
-Here, the ocean comes alive with a vibrant ecosystem of dApps, marketplaces, and more. This layer hosts a variety of user-friendly interfaces, applications, and tools, inviting data scientists and curious explorers alike to access, explore, and contribute to the ocean's treasures.&#x20;
+Here, the ocean comes alive with a vibrant ecosystem of dApps, marketplaces, and more. This layer hosts a variety of user-friendly interfaces, applications, and tools, inviting data scientists and curious explorers alike to access, explore, and contribute to the ocean's treasures.
 
-Prominently featured within this layer is [Ocean Market](../../user-guides/using-ocean-market.md), a hub where data enthusiasts and industry stakeholders converge to discover, trade, and unlock the inherent value of data assets. Beyond Ocean Market, the Application Layer hosts a diverse ecosystem of specialized applications and marketplaces, each catering to unique use cases and industries. Empowered by the capabilities of Ocean Protocol, these applications facilitate advanced data exploration, analytics, and collaborative ventures, revolutionizing the way data is accessed, shared, and monetized.&#x20;
+Prominently featured within this layer is [Ocean Market](../../user-guides/using-ocean-market.md), a hub where data enthusiasts and industry stakeholders converge to discover, trade, and unlock the inherent value of data assets. Beyond Ocean Market, the Application Layer hosts a diverse ecosystem of specialized applications and marketplaces, each catering to unique use cases and industries. Empowered by the capabilities of Ocean Protocol, these applications facilitate advanced data exploration, analytics, and collaborative ventures, revolutionizing the way data is accessed, shared, and monetized.
 
 ### Layer 4: The Friendly Wallets
 

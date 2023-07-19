@@ -12,7 +12,7 @@ Retrieves a list of chains that are currently supported or recognized by the Aqu
 
 Here are some typical responses you might receive from the API:
 
-* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns a JSON object containing chain IDs as keys and their active status as values.&#x20;
+* **200**: This is a successful HTTP response code. It means the server has successfully processed the request and returns a JSON object containing chain IDs as keys and their active status as values.
 
 Example response:
 

@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/gif/like-a-boss.gif" alt=""><figcaption></figcaption></figure>
 
-The beginning of any great algorithm for Compute-to-Data starts by referencing the dataset asset correctly on the Docker container. Read on, anon.
+The beginning of any algorithm for Compute-to-Data starts by loading the dataset correctly. Read on, anon 👨🏻‍💻
 
 ### Open the local dataset file
 

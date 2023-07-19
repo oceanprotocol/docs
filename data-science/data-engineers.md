@@ -12,7 +12,7 @@ A lot of people miss the mark on tokenizing data that actually _sells_. If your 
 
 To figure out which market segments are paying for data, then it may help you to **go to the Ocean Market and sort by Sales.**
 
-But even then, it's not enough to just publish useful data on Ocean. **You need to market your data** **assets** to close sales.&#x20;
+But even then, it's not enough to just publish useful data on Ocean. **You need to market your data** **assets** to close sales.
 
 Have you tried all these things and are still having trouble making money? Never fear! You can enter one of our [data challenges](https://oceanprotocol.com/challenges) to make sweet OCEAN rewards and build your data science skills.
 

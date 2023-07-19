@@ -4,8 +4,7 @@ Let’s start interacting with the python library by firstly installing it & its
 
 From the adventurous `Python 3.8.5` all the way up to `Python 3.10.4`, ocean.py has got your back! 🚀
 
-While `ocean.py` can join you on your `Python 3.11` journey, a few manual tweaks may be required. But worry not, brave explorers, we've got all the juicy details for you below! 📚✨\
-\
+While `ocean.py` can join you on your `Python 3.11` journey, a few manual tweaks may be required. But worry not, brave explorers, we've got all the juicy details for you below! 📚✨
 ⚠️ Make sure that you have `autoconf`, `pkg-config` and `build-essential` or their equivalents installed on your host.
 
 ### Installing ocean.py
@@ -54,7 +53,6 @@ Let's dive deeper into the Ocean world! 💙 Did you know that Ocean and Brownie
 
 Oh, buoy! 🌊🐙 When it comes to installation, ocean.py has you covered with a special README called ["install.md"](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/install.md). It's like a trusty guide that helps you navigate all the nitty-gritty details. So, let's dive in and ride the waves of installation together! 🏄‍♂️🌊
 
-\
 Or if you prefer a video format, you can check this tutorial on Youtube
 
 {% embed url="https://www.youtube.com/watch?v=mbniGPNHE_M" %}

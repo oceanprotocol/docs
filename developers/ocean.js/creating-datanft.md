@@ -11,7 +11,7 @@ This tutorial guides you through the process of creating your own data NFT using
 
 #### Create a script to deploy dataNFT
 
-The provided script demonstrates how to create a data NFT using Oceanjs.&#x20;
+The provided script demonstrates how to create a data NFT using Oceanjs.
 
 First, create a new file in the working directory, alongside the `config.js` and `.env` files. Name it `create_dataNFT.js` (or any appropriate name). Then, copy the following code into the new created file:
 
