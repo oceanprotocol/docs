@@ -84,7 +84,7 @@
     * [Publish](developers/ocean.js/publish.md)
     * [Mint Datatokens](developers/ocean.js/mint-datatoken.md)
     * [Update Metadata](developers/ocean.js/update-metadata.md)
-    * [Asset Visibility](developers/ocean.js/remove-asset.md)
+    * [Asset Visibility](developers/ocean.js/asset-visibility.md)
     * [Consume Asset](developers/ocean.js/consume-asset.md)
     * [Run C2D Jobs](developers/ocean.js/cod-asset.md)
   * [Compute to data](developers/compute-to-data/README.md)
