@@ -82,6 +82,8 @@ If you lock 1.0 OCEAN for 4 years, you get 1.0 veOCEAN at the start.
 
 At the end of your 4 years, your OCEAN is unlocked.
 
+The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
+
 ### Replenishing your veOCEAN
 
 You can choose to update your lock and replenish your veOCEAN balance at any time.

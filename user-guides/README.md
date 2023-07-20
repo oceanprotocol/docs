@@ -38,41 +38,32 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 
 Earn rewards by obtaining veOCEAN, farm yield by curating datasets, and optimize your APY by publishing Data & Algorithm NFTs on-chain. ⛓️
 
-{% content-ref url="get-started-df.md" %}
-[get-started-df.md](get-started-df.md)
+{% content-ref url="data-farming-101.md" %}
+[data-farming-101.md](data-farming/data-farming-101.md)
 {% endcontent-ref %}
 
-{% content-ref url="get-started-df.md" %}
-[get-started-df.md](get-started-df.md)
+{% content-ref url="how-to-farm-veOCEAN.md" %}
+[how-to-farm-veOCEAN.md](data-farming/how-to-farm-veOCEAN.md)
 {% endcontent-ref %}
 
-{% content-ref url="claim-ocean-rewards.md" %}
-[claim-ocean-rewards.md](claim-ocean-rewards.md)
-{% endcontent-ref %}
-
-{% content-ref url="how-to-data-farm.md" %}
-[how-to-data-farm.md](how-to-data-farm.md)
-{% endcontent-ref %}
-
-<<<<<<< HEAD
-{% content-ref url="how-to-data-farm-challengedf.md" %}
-[how-to-data-farm-challengedf.md](how-to-data-farm-challengedf.md)
-{% endcontent-ref %}
-
-{% content-ref url="how-to-data-farm-volumedf.md" %}
-[how-to-data-farm-volumedf.md](how-to-data-farm-volumedf.md)
-{% endcontent-ref %}
-
-{% content-ref url="how-to-delegate.md" %}
-[how-to-delegate.md](how-to-delegate.md)
-{% endcontent-ref %}
-
-{% content-ref url="claim-ocean-rewards.md" %}
-[claim-ocean-rewards.md](claim-ocean-rewards.md)
-=======
 {% content-ref url="how-to-df-estimate-apy.md" %}
 [how-to-df-estimate-apy.md](how-to-df-estimate-apy.md)
->>>>>>> main
+{% endcontent-ref %}
+
+{% content-ref url="how-to-farm-claim-rewards.md" %}
+[how-to-farm-claim-rewards.md](data-farming/how-to-farm-claim-rewards.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-farm-volumedf.md" %}
+[how-to-farm-volumedf.md](data-farming/how-to-farm-volumedf.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-farm-delegate.md" %}
+[how-to-farm-delegate.md](data-farming/how-to-farm-delegate.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-farm-challengedf.md" %}
+[how-to-farm-challengedf.md](data-farming/how-to-farm-challengedf.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺
