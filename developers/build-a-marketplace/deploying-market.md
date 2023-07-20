@@ -35,8 +35,8 @@ surge
 
 If this is your first time using surge, you will be prompted to enter an email address and password to create a free account. It will ask you to confirm the directory that it is about to publish, check that you are in the market/public/ directory and press enter to proceed. Now it gives you the option to choose the domain that you want your project to be available on.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-14 at 14.30.59.png" alt=""><figcaption><p>surge interaction</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/market/Screenshot 2023-06-14 at 14.30.59.png" alt=""><figcaption><p>surge interaction</p></figcaption></figure>
 
-&#x20;We have chosen https://crypto-photos.surge.sh which is a free option. You can also set a CNAME value in your DNS to make use of your own custom domain.
+We have chosen https://crypto-photos.surge.sh which is a free option. You can also set a CNAME value in your DNS to make use of your own custom domain.
 
 After a few minutes, your upload will be complete, and you’re ready to share your data marketplace. You can view the version we created in this guide [here](https://crypto-photos.surge.sh/).

@@ -26,6 +26,12 @@ Additionally, the Provider service offers compute services by establishing a con
 * Provides compute services (connects to C2D environment)
 * Typically run by the Data owner
 
+<figure><img src="../../.gitbook/assets/components/provider.png" alt=""><figcaption><p>Ocean Provider - publish &#x26; consume</p></figcaption></figure>
+
+In the publishing process, the provider plays a crucial role by encrypting the DDO using its private key. Then, the encrypted DDO is stored on the blockchain.
+
+During the consumption flow, after a consumer obtains access to the asset by purchasing a datatoken, the provider takes responsibility for decrypting the DDO and fetching data from the source used by the data publisher.
+
 ### What technology is used?
 
 * Python: This is the main programming language used in Provider.
@@ -34,7 +40,7 @@ Additionally, the Provider service offers compute services by establishing a con
 
 ### How to run the provider?
 
-We recommend checking the README in the Provider [GitHub repository](https://github.com/oceanprotocol/provider) for the steps to run the Provider. If you see any errors in the instructions, please open an issue within the GitHub repository.&#x20;
+We recommend checking the README in the Provider [GitHub repository](https://github.com/oceanprotocol/provider) for the steps to run the Provider. If you see any errors in the instructions, please open an issue within the GitHub repository.
 
 ### Ocean Provider Endpoints Specification
 

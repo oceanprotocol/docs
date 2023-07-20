@@ -5,11 +5,6 @@ description: >-
   feature.
 ---
 
-# Writing Algorithms
-
-### Overview
-
-\
 In the Ocean Protocol stack, algorithms are recognized as distinct asset types, alongside datasets. When it comes to Compute-to-Data, an algorithm comprises the following key components:
 
 * **Algorithm Code**: The algorithm code refers to the specific instructions and logic that define the computational steps to be executed on a dataset. It encapsulates the algorithms' functionalities, calculations, and transformations.
@@ -34,7 +29,7 @@ When creating an algorithm asset in Ocean Protocol, it is essential to include t
 
 </details>
 
-<table><thead><tr><th width="212">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>image</code></td><td>The Docker image name the algorithm will run with.</td></tr><tr><td><code>tag</code></td><td>The Docker image tag that you are going to use.</td></tr><tr><td><code>entrypoint</code></td><td>The Docker entrypoint. <code>$ALGO</code> is a macro that gets replaced inside the compute job, depending where your algorithm code is downloaded.</td></tr></tbody></table>
+<table><thead><tr><th width="100">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>image</code></td><td>The Docker image name the algorithm will run with.</td></tr><tr><td><code>tag</code></td><td>The Docker image tag that you are going to use.</td></tr><tr><td><code>entrypoint</code></td><td>The Docker entrypoint. <code>$ALGO</code> is a macro that gets replaced inside the compute job, depending where your algorithm code is downloaded.</td></tr></tbody></table>
 
 Define your entry point according to your dependencies. E.g. if you have multiple versions of Python installed, use the appropriate command `python3.6 $ALGO`.
 
@@ -97,7 +92,7 @@ Please note that when using local Providers or Metatata Caches, the ddos might n
 
 For every algorithm pod, the Compute to Data environment provides the following environment variables:
 
-<table><thead><tr><th width="296">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>DIDS</code></td><td>An array of DID strings containing the input datasets.</td></tr><tr><td><code>TRANSFORMATION_DID</code></td><td>The DID of the algorithm.</td></tr></tbody></table>
+<table><thead><tr><th width="100">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>DIDS</code></td><td>An array of DID strings containing the input datasets.</td></tr><tr><td><code>TRANSFORMATION_DID</code></td><td>The DID of the algorithm.</td></tr></tbody></table>
 
 <details>
 
@@ -248,13 +243,13 @@ To run this algorithm, use the following `container` object:
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-<table><thead><tr><th>Attribute</th><th width="221.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>language</code></strong></td><td><code>string</code></td><td>Language used to implement the software.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version of the software preferably in <a href="https://semver.org">SemVer</a> notation. E.g. <code>1.0.0</code>.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="../compute-to-data/compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object that defines required consumer input before running the algorithm</td></tr><tr><td><strong><code>container</code></strong>*</td><td><code>container</code></td><td>Object describing the Docker container image. See below</td></tr></tbody></table>
+<table><thead><tr><th>Attribute</th><th width="150">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>language</code></strong></td><td><code>string</code></td><td>Language used to implement the software.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version of the software preferably in <a href="https://semver.org">SemVer</a> notation. E.g. <code>1.0.0</code>.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="../compute-to-data/compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object that defines required consumer input before running the algorithm</td></tr><tr><td><strong><code>container</code></strong>*</td><td><code>container</code></td><td>Object describing the Docker container image. See below</td></tr></tbody></table>
 
 \* Required
 
 The `container` object has the following attributes defining the Docker image for running the algorithm:
 
-<table><thead><tr><th width="210">Attribute</th><th width="164.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>entrypoint</code></strong>*</td><td><code>string</code></td><td>The command to execute, or script to run inside the Docker image.</td></tr><tr><td><strong><code>image</code></strong>*</td><td><code>string</code></td><td>Name of the Docker image.</td></tr><tr><td><strong><code>tag</code></strong>*</td><td><code>string</code></td><td>Tag of the Docker image.</td></tr><tr><td><strong><code>checksum</code></strong>*</td><td><code>string</code></td><td>Digest of the Docker image. (ie: sha256:xxxxx)</td></tr></tbody></table>
+<table><thead><tr><th width="210">Attribute</th><th width="150">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>entrypoint</code></strong>*</td><td><code>string</code></td><td>The command to execute, or script to run inside the Docker image.</td></tr><tr><td><strong><code>image</code></strong>*</td><td><code>string</code></td><td>Name of the Docker image.</td></tr><tr><td><strong><code>tag</code></strong>*</td><td><code>string</code></td><td>Tag of the Docker image.</td></tr><tr><td><strong><code>checksum</code></strong>*</td><td><code>string</code></td><td>Digest of the Docker image. (ie: sha256:xxxxx)</td></tr></tbody></table>
 
 \* Required
 

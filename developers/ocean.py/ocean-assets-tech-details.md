@@ -31,7 +31,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL178C1-L185C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL178C1-L185C82)
 
 <details>
 
@@ -78,7 +78,7 @@ A tuple which contains the algorithm NFT, algorithm datatoken and the algorithm 
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL146C4-L176C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL146C4-L176C82)
 
 <details>
 
@@ -145,7 +145,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL187C5-L198C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL187C5-L198C82)
 
 <details>
 
@@ -194,7 +194,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL200C5-L212C82)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL200C5-L212C82)
 
 <details>
 
@@ -244,7 +244,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL214C5-L229C1)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL214C5-L229C1)
 
 <details>
 
@@ -302,7 +302,7 @@ A tuple which contains the data NFT, datatoken and the data asset.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL259C5-L390C43)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL259C5-L390C43)
 
 <details>
 
@@ -539,7 +539,7 @@ The updated DDO, or `None` if updated DDO not found in Aquarius.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL392C5-L454C19)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL392C5-L454C19)
 
 <details>
 
@@ -625,7 +625,7 @@ Returns DDO instance.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL456C5-L458C43)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL456C5-L458C43)
 
 <details>
 
@@ -657,7 +657,7 @@ A list of DDOs which have matches with the text provided as parameter.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL460C4-L475C10)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL460C4-L475C10)
 
 <details>
 
@@ -702,7 +702,7 @@ A list of DDOs which have matches with the query provided as parameter.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL477C4-L490C10)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL477C4-L490C10)
 
 <details>
 
@@ -756,7 +756,7 @@ The full path to the downloaded file as `string`.
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL492C5-L516C20)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL492C5-L516C20)
 
 <details>
 
@@ -820,7 +820,7 @@ Return value is a hex string for transaction hash which denotes the proof of sta
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL518C5-L571C28)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL518C5-L571C28)
 
 <details>
 
@@ -914,7 +914,7 @@ Return value is a tuple composed of list of datasets and algorithm data (if exis
 
 **Defined in**
 
-[ocean/ocean\_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/ocean/ocean\_assets.py#LL573C5-L627C30)
+[ocean/ocean_assets.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/ocean/ocean_assets.py#LL573C5-L627C30)
 
 <details>
 

@@ -1,11 +1,10 @@
 ---
 description: >-
-  Hey there, Bruce Lee! If you can understand the emission curves and estimated
-  APYs, then you've earned yourself a solid black belt in Data Farming
-  understanding 🥋
+  Hey there champ! If you can explain the emission curves and 
+  teach how to calculate APYs, then you've mastered Data Farming
 ---
 
-# DF Emissions & APYs (Black Belt)
+# Emissions & APYs
 
 <figure><img src="../.gitbook/assets/gif/neo-bb.gif" alt=""><figcaption><p>Like a true master of The Way of Data Farming.</p></figcaption></figure>
 

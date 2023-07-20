@@ -18,43 +18,43 @@ Create an account on [Google Cloud](https://console.cloud.google.com/). Users mi
 
 In the Google Cloud console, go to the Cloud Storage Buckets page
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.52.29.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 15.52.29.png" alt=""><figcaption></figcaption></figure>
 
 **Create a new bucket**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.54.21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 15.54.21.png" alt=""><figcaption></figcaption></figure>
 
 **Fill in the details**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.55.16.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 15.55.16.png" alt=""><figcaption></figcaption></figure>
 
 **Allow access to your recently created Bucket**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.56.34.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 15.56.34.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2 - Upload a file**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 15.58.29.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 15.58.29.png" alt=""><figcaption></figcaption></figure>
 
 **Step 3 - Change your file's access (optional)**
 
 **If your bucket's access policy is restricted, on the menu on the right click on Edit access (skip this step if your bucket is publicly accessible)**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 16.08.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 16.08.42.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-16 at 08.15.45.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-16 at 08.15.45.png" alt=""><figcaption></figcaption></figure>
 
 **Step 4 - Share the file**
 
 **Open the file and copy the generated link**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 16.12.10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 16.12.10.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-16 at 08.16.46.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-16 at 08.16.46.png" alt=""><figcaption></figcaption></figure>
 
 **Step 5 - Publish the asset using the generated link**
 
 Now, copy and paste the link into the Publish page in the Ocean Marketplace.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-15 at 16.26.56.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hosting/Screenshot 2023-06-15 at 16.26.56.png" alt=""><figcaption></figcaption></figure>
 

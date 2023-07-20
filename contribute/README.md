@@ -19,7 +19,8 @@ First, make sure that you search existing open + closed issues + PRs to see if y
 
 Follow our steps below to properly document your bug! Paste the screenshots into your GitHub issue.
 
-{% @arcade/embed flowId="fUNrK6z2eurJ2C1ty2OG" url="https://app.arcade.software/share/fUNrK6z2eurJ2C1ty2OG" %}
+{% embed url="https://app.arcade.software/share/fUNrK6z2eurJ2C1ty2OG" fullWidth="false" %}
+{% endembed %}
 
 ### Report vulnerabilities
 

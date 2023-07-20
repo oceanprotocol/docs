@@ -4,7 +4,7 @@ description: How to host your data and algorithm NFT assets like a champ üèÜ ü
 
 # Host Assets
 
-The most important thing to remember is that wherever you host your asset... it needs to be **reachable & downloadable**. It cannot live behind a private firewall such as a private Github repo. You need to **use a proper hosting service!**&#x20;
+The most important thing to remember is that wherever you host your asset... it needs to be **reachable & downloadable**. It cannot live behind a private firewall such as a private Github repo. You need to **use a proper hosting service!**
 
 **The URL to your asset is encrypted in the publishing process!**
 
@@ -14,7 +14,7 @@ The most important thing to remember is that wherever you host your asset... it 
 
 In this section, we'll walk you through three options to store your assets: Arweave (decentralized storage), AWS (centralized storage), and Azure (centralized storage). Let's goooooo!
 
-Read on, anon, if you are interested in the security details!
+Read on, if you are interested in the security details!
 
 ### Security Considerations
 

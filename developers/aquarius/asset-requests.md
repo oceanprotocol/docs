@@ -75,7 +75,7 @@ console.log(response.data.description)
 
 ```
 
-### **Asset Names**&#x20;
+### **Asset Names**
 
 Used to retrieve the names of a group of assets using a list of unique identifiers known as Decentralized Identifiers (DIDs).
 
@@ -121,7 +121,7 @@ for (let key in response.data) {
 
 ### Query Assets
 
-Used to run a custom search query on the assets using Elasticsearch's native query syntax. We recommend reading the [Elasticsearch documentation](https://www.elastic.co/guide/index.html) to understand their syntax.&#x20;
+Used to run a custom search query on the assets using Elasticsearch's native query syntax. We recommend reading the [Elasticsearch documentation](https://www.elastic.co/guide/index.html) to understand their syntax.
 
 * **Endpoint**: `POST /api/aquarius/assets/query`
 * **Purpose**: This endpoint is used to execute a native Elasticsearch (ES) query against the stored assets. This allows for highly customizable searches and can be used to filter and sort assets based on complex criteria. The body of the request should contain a valid JSON object that defines the ES query.

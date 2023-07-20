@@ -8,7 +8,7 @@ description: Specification of compute options for assets in Ocean Protocol.
 
 ### Compute Options
 
-An asset categorized as a `compute type` incorporates additional attributes under the `compute object`.&#x20;
+An asset categorized as a `compute type` incorporates additional attributes under the `compute object`.
 
 These attributes are specifically relevant to assets that fall within the compute category and are not required for assets classified under the `access type`. However, if an asset is designated as `compute`, it is essential to include these attributes to provide comprehensive information about the compute service associated with the asset.
 
@@ -18,7 +18,7 @@ These attributes are specifically relevant to assets that fall within the comput
 
 ### Trusted Algorithms
 
-The `publisherTrustedAlgorithms` is an array of objects that specifies algorithm permissions. It controls which algorithms can be used for computation. If not defined, any published algorithm is allowed. If the array is empty, no algorithms are allowed. However, if the array is not empty, only algorithms published by the defined publishers are permitted.&#x20;
+The `publisherTrustedAlgorithms` is an array of objects that specifies algorithm permissions. It controls which algorithms can be used for computation. If not defined, any published algorithm is allowed. If the array is empty, no algorithms are allowed. However, if the array is not empty, only algorithms published by the defined publishers are permitted.
 
 The structure of each object within the `publisherTrustedAlgorithms` array is as follows:
 

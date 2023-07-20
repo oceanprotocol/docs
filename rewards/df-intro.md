@@ -2,7 +2,7 @@
 description: Learn the fundamentals of The Way of Data Farming 🧑‍🏫
 ---
 
-# Data Farming 101 (White Belt)
+# Data Farming 101
 
 <figure><img src="../.gitbook/assets/gif/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
 
@@ -17,6 +17,14 @@ Participants are able to **receive rewards passively, actively, or both** weekly
 Every week OCEAN rewards are paid out to Data Farmers through two different reward streams. **Passive Rewards** and **Active Rewards**.  
 
 These two reward streams produce different variable APYs.  
+
+#### Splitting the Pie
+
+Each Data Farming weekly round has a pool of OCEAN rewards, where 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards.
+
+| Passive Rewards | Active Rewards |
+| --------------- | -------------- |
+| 50%             | 50%            |
 
 #### What are Passive Rewards?
 
@@ -42,7 +50,7 @@ Active Rewards are governed and defined by the [Reward Function](df-max-out-yiel
 
 [To start getting Active Rewards, go here.](../user-guides/README.md)
 
-#### Splitting the Pie
+#### Estimating APY
 
 Each Data Farming weekly round has a pool of OCEAN rewards and [can be viewed here](https://df.oceandao.org/rewards)
 

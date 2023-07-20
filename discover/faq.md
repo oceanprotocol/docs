@@ -51,7 +51,7 @@ Yes. Ocean Protocol understands that some data is too sensitive to be shared —
 
 <summary>Where is my data stored?</summary>
 
-Ocean does not provide data storage. Users have the choice to [store](../user-guides/asset-hosting/) their data on their own servers, cloud, or decentralized storage. Users need only to provide a URL, an IPFS hash, an Arweave CID, or the on-chain information to the dataset. This is then encrypted as a means to protect access to the dataset.
+Ocean does not provide data storage. Users have the choice to [store](../user-guides/asset-hosting/README.md) their data on their own servers, cloud, or decentralized storage. Users need only to provide a URL, an IPFS hash, an Arweave CID, or the on-chain information to the dataset. This is then encrypted as a means to protect access to the dataset.
 
 </details>
 
@@ -69,14 +69,6 @@ Ocean provides tools for access control, [fine-grained permissions](../developer
 
 Yes - Ocean has implemented [fine-grained permissions](../developers/fg-permissions.md). This means that you can create allow and deny lists that restrict access from certain individuals or limit access to particular organizations. \
 PS: [Fine-grained permissions](../developers/fg-permissions.md) are not integrated into the Ocean Marketplace.
-
-</details>
-
-<details>
-
-<summary>What is the reach of Ocean Market - how many data buyers can I sell to?</summary>
-
-Hundreds of unique datasets are available that are sourced from private individuals, research institutions, commercial enterprises and government. Publishing data on Ocean offers data providers and algorithm owners an exciting new channel to connect with a rapidly growing community of Web3 enthusiasts and data science professionals around the world.
 
 </details>
 
@@ -110,7 +102,7 @@ The blockchain can do more than just store information - it can also run code. A
 
 <summary>What is a datatoken?</summary>
 
-A datatoken is an access token to datasets and services published in the Ocean ecosystem. Datatokens can be purchased via the Ocean Market or on a decentralized crypto exchange. . If a consumer wishes to access a dataset, they must acquire the datatoken and then exchange the datatoken for access to the dataset.
+A datatoken is an access token to datasets and services published in the Ocean ecosystem. Datatokens can be purchased via the Ocean Market or on a decentralized crypto exchange. If a consumer wishes to access a dataset, they must acquire the datatoken and then exchange the datatoken for access to the dataset.
 
 </details>
 
@@ -228,14 +220,6 @@ The counting starts at 12.01am on Thursday, and ends at 11.59pm on the following
 
 <details>
 
-<summary>I staked for just one day. What rewards might I expect?</summary>
-
-At least 50 snapshots are randomly taken throughout the week. If you’ve staked just one day, and all else being equal, you should expect 1/7 the rewards compared to the full 7 days.
-
-</details>
-
-<details>
-
 <summary>The datatoken price may change throughout the week. What price is taken in the DCV calculation?</summary>
 
 The price is taken at the same time as each consume. E.g. if a data asset has three consumes, where price was 1 OCEAN when the first consume happened, and the price was 10 OCEAN when the other consumes happened, then the total DCV for the asset is 1 + 10 + 10 = 21.
@@ -276,7 +260,7 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 
 <summary>What about passive stakers — people who just want to stake in one place and be done?</summary>
 
-Earnings are passive by default
+Earnings are passive by default.
 
 </details>
 
@@ -284,7 +268,7 @@ Earnings are passive by default
 
 <summary>What about active stakers — people who want to do extra work and get rewarded?</summary>
 
-Ot works. Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more \$$
+Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well → more \$$.
 
 </details>
 
@@ -346,15 +330,7 @@ They are deployed on Ethereum mainnet, alongside other Ocean contract deployment
 
 <summary>What is the official veOCEAN epoch start_time?</summary>
 
-veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00)
-
-</details>
-
-<details>
-
-<summary>Will the Market still need to be multi-chain?</summary>
-
-Yes, Ocean Market still needs to be multi-chain: all the reasons that we went multi-chain for are as valid as ever.
+veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
 
 </details>
 

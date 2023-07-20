@@ -6,7 +6,7 @@ description: >-
 
 # Manage Your OCEAN Tokens
 
-If you don't see any Ocean Tokens in your crypto wallet software 🔎 (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.&#x20;
+If you don't see any Ocean Tokens in your crypto wallet software 🔎 (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage Ocean Tokens yet.
 
 ### Token Information
 
@@ -28,7 +28,8 @@ The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com has
 
 If you prefer visual demonstrations, we have prepared a visual demo that illustrates the steps mentioned above.
 
-{% @arcade/embed flowId="yHiKKN336QGdAkhTlsIh" url="https://app.arcade.software/share/yHiKKN336QGdAkhTlsIh" %}
+{% embed url="https://app.arcade.software/share/yHiKKN336QGdAkhTlsIh" fullWidth="false" %}
+{% endembed %}
 
 MetaMask should now show your Ocean Token (OCEAN) balance, and when you're looking at that, there should be a `Send` button to send Ocean Tokens to others. For help with that, see [the MetaMask docs about how to send tokens](https://metamask.zendesk.com/hc/en-us/articles/360015488931-How-to-Send-Tokens).
 

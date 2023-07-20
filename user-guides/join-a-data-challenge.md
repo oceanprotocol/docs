@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/morpheus-taunting.gif" alt=""><figcaption><p>Bring on the data challenges.</p></figcaption></figure>
 
-Hone your skills, work on real business problems, and earn sweet dosh along the way.&#x20;
+Hone your skills, work on real business problems, and earn sweet dosh along the way.
 
 ### What is an Ocean Protocol data challenge?
 

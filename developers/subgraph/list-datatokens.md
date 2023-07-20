@@ -12,7 +12,7 @@ _PS: In this example, the query is executed on the Ocean subgraph deployed on th
 
 {% tabs %}
 {% tab title="Javascript" %}
-The javascript below can be used to run the query. If you wish to change the network, replace the variable's value `network` as needed.&#x20;
+The javascript below can be used to run the query. If you wish to change the network, replace the variable's value `network` as needed.
 
 ```runkit  nodeVersion="18.x.x"
 var axios = require('axios');
@@ -134,7 +134,7 @@ python list_all_tokens.py
 {% endtab %}
 
 {% tab title="Query" %}
-Copy the query to fetch a list of datatokens in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).&#x20;
+Copy the query to fetch a list of datatokens in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql).
 
 ```graphql
 {

@@ -34,32 +34,36 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 [using-ocean-market.md](using-ocean-market.md)
 {% endcontent-ref %}
 
-### Make yield from dataset and algorithm NFTs on-chain ⛓️
+### Farm data like a pro 😎🥕
 
-Farm data like a pro. 😎🥕
+Earn rewards by obtaining veOCEAN, farm yield by curating datasets, and optimize your APY by publishing Data & Algorithm NFTs on-chain. ⛓️
 
-{% content-ref url="README.md" %}
-[README.md](README.md)
+{% content-ref url="data-farming-101.md" %}
+[data-farming-101.md](data-farming/data-farming-101.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-farm-veOCEAN.md" %}
-[how-to-farm-veOCEAN.md](how-to-farm-veOCEAN.md)
+[how-to-farm-veOCEAN.md](data-farming/how-to-farm-veOCEAN.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-df-estimate-apy.md" %}
+[how-to-df-estimate-apy.md](how-to-df-estimate-apy.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-farm-claim-rewards.md" %}
-[how-to-farm-claim-rewards.md](how-to-farm-claim-rewards.md)
-{% endcontent-ref %}
-
-{% content-ref url="how-to-farm-challengedf.md" %}
-[how-to-farm-challengedf.md](how-to-farm-challengedf.md)
+[how-to-farm-claim-rewards.md](data-farming/how-to-farm-claim-rewards.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-farm-volumedf.md" %}
-[how-to-farm-volumedf.md](how-to-farm-volumedf.md)
+[how-to-farm-volumedf.md](data-farming/how-to-farm-volumedf.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-farm-delegate.md" %}
-[how-to-farm-delegate.md](how-to-farm-delegate.md)
+[how-to-farm-delegate.md](data-farming/how-to-farm-delegate.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-farm-challengedf.md" %}
+[how-to-farm-challengedf.md](data-farming/how-to-farm-challengedf.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺

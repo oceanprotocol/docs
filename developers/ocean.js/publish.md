@@ -17,7 +17,7 @@ Create a new file in the same working directory where configuration file (`confi
 **Fees**: The code snippets below define fees related parameters. Please refer [fees page ](../contracts/fees.md)for more details
 {% endhint %}
 
-The code utilizes methods such as `NftFactory` and `Datatoken` from the Ocean libraries to enable you to interact with the Ocean Protocol and perform various operations related to data NFTs and datatokens.&#x20;
+The code utilizes methods such as `NftFactory` and `Datatoken` from the Ocean libraries to enable you to interact with the Ocean Protocol and perform various operations related to data NFTs and datatokens.
 
 The `createFRE()` performs the following:
 

@@ -13,10 +13,6 @@ The purpose of Ocean Protocol's Data Farming dApp reward system is to incentiviz
 Data Farming participants earn OCEAN rewards for these activities.
 Data Farming rewards are structured in 2 main streams **Passive Rewards** and **Active Rewards**. At a minimum, Data Farmers earn "passive rewards" for locking their OCEAN tokens to get veOCEAN tokens in return. Then, Data Farmers can maximize their yield by earning "active rewards". Active Rewards stream it's broken down into multiple substreams, to offer you a variaty of ways to contribute to Ocean Protocol values and increase your Data Farming rewards: Volume DF, Challenge DF.
 
-### The belt system
-
-Earn your white, blue, purple, red, brown, and black belts in Data Farming knowledge by reading our docs on this topic in increasing difficulty!
-
 ## veOCEAN
 
 Learning about [veOCEAN](veocean.md) will help you answer the question "What is the purpose of holding veOCEAN?" & give insights on how veOCEAN (vote-escrowed OCEAN) works. It will teach you everything you need to know about why it exists and how it works.

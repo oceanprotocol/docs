@@ -6,7 +6,7 @@ Attention all data enthusiasts! Are you an inquisitive data scientist intrigued 
 
 Well, brace yourselves for some exhilarating news! Introducing ocean.py, a Python library that possesses a touch of magic. 🎩🐍 It empowers you to discreetly and securely publish, exchange, and effortlessly consume data. 🐙💦 Collaborating with the Ocean Protocol 🌊, it unlocks a plethora of advantages mentioned earlier. So get ready to take the plunge into the vast ocean of data with a resounding splash of excitement! 💦🌊
 
-<figure><img src="../../.gitbook/assets/ocean_py.png" alt="" width="375"><figcaption><p>ocean.py library</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/components/ocean_py.png" alt="" width="375"><figcaption><p>ocean.py library</p></figcaption></figure>
 
 ### Overview
 

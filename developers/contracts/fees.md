@@ -25,17 +25,17 @@ However, if you're building a custom marketplace, you have the flexibility to in
 
 When a user exchanges a [datatoken](datatokens.md) for the privilege of downloading an asset or initiating a compute job that utilizes the asset, consume fees come into play. These fees are associated with accessing an asset and include:
 
-1. **Publisher Market** Consumption Fee&#x20;
+1. **Publisher Market** Consumption Fee
    * Defined during the ERC20 [creation](https://github.com/oceanprotocol/contracts/blob/b937a12b50dc4bdb7a6901c33e5c8fa136697df7/contracts/templates/ERC721Template.sol#L334).
    * Defined as Address, Token, Amount. The amount is an absolute value(not a percentage).
-   * A marketplace can charge a specified amount per order.&#x20;
+   * A marketplace can charge a specified amount per order.
    * Eg: A market can set a fixed fee of 10 USDT per order, no matter what pricing schemas are used (fixedrate with ETH, BTC, dispenser, etc).
-2. **Consume Market** Consumption Fee&#x20;
-   * &#x20;A market can specify what fee it wants on the order function.
-3. **Provider Consumption** Fees&#x20;
+2. **Consume Market** Consumption Fee
+   * A market can specify what fee it wants on the order function.
+3. **Provider Consumption** Fees
    * Defined by the [Provider](../provider/README.md) for any consumption.
    * Expressed in: Address, Token, Amount (absolute), Timeout.
-   * You can retrieve them when calling the initialize endpoint.&#x20;
+   * You can retrieve them when calling the initialize endpoint.
    * Eg: A provider can charge a fixed fee of 10 USDT per consume, irrespective of the pricing schema used (e.g., fixed rate with ETH, BTC, dispenser).
 4. **Ocean Community** Fee
    * Ocean's smart contracts collect **Ocean Community fees** during order operations. These fees are reinvested in community projects and distributed to the veOcean holders through Data Farming.
@@ -70,7 +70,7 @@ function updateOPCFee(uint256 _newSwapOceanFee, uint256 _newSwapNonOceanFee,
 
 </details>
 
-Each of these fees plays a role in ensuring fair compensation and supporting the Ocean community.&#x20;
+Each of these fees plays a role in ensuring fair compensation and supporting the Ocean community.
 
 | Fee              | Value in Ocean Market | Value in Other Markets                                   |
 | ---------------- | :-------------------: | -------------------------------------------------------- |
@@ -81,14 +81,14 @@ Each of these fees plays a role in ensuring fair compensation and supporting the
 
 ### Provider fee
 
-[Providers](../provider/README.md) facilitate data consumption, initiate compute jobs, encrypt and decrypt DDOs, and verify user access to specific data assets or services.&#x20;
+[Providers](../provider/README.md) facilitate data consumption, initiate compute jobs, encrypt and decrypt DDOs, and verify user access to specific data assets or services.
 
-Provider fees serve as [compensation](../community-monetization.md#3.-running-your-own-provider) to the individuals or organizations operating their own provider instances when users request assets.&#x20;
+Provider fees serve as [compensation](../community-monetization.md#3.-running-your-own-provider) to the individuals or organizations operating their own provider instances when users request assets.
 
 * Defined by the [Provider](../provider/README.md) for any consumption.
 * Expressed in: Address, Token, Amount (absolute), Timeout.
-* You can retrieve them when calling the initialize endpoint.&#x20;
-* These fees can be set as a **fixed amount** rather than a percentage.&#x20;
+* You can retrieve them when calling the initialize endpoint.
+* These fees can be set as a **fixed amount** rather than a percentage.
 * Providers have the flexibility to specify the token in which the fees must be paid, which can differ from the token used in the consuming market.
 * Provider fees can be utilized to charge for [computing](../compute-to-data/README.md) resources. Consumers can select the desired payment amount based on the compute resources required to execute an algorithm within the [Compute-to-Data](../compute-to-data/README.md) environment, aligning with their specific needs.
 * Eg: A provider can charge a fixed fee of 10 USDT per consume, irrespective of the pricing schema used (e.g., fixed rate with ETH, BTC, dispenser).
