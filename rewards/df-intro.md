@@ -32,7 +32,11 @@ Passive rewards are the OCEAN rewards paid to Data Farmers just for locking thei
 
 <figure><img src="../.gitbook/assets/gif/passive-income.gif" alt=""><figcaption></figcaption></figure>
 
+<<<<<<< HEAD
 [To start getting passive rewards, go here.](../user-guides/data-farming/how-to-veocean.md)
+=======
+[To start getting passive rewards, go here.](../user-guides/data-farming/how-to-farm-veOCEAN.md)
+>>>>>>> issue-1218-add-challenge-df-info
 
 #### What are Active Rewards and Substreams?
 
@@ -48,7 +52,11 @@ Challenge DF rewards Data Scientists that produce prediction models that consist
 
 Active Rewards are governed and defined by the [Reward Function](df-max-out-yield.md#reward-schedule).
 
+<<<<<<< HEAD
 [To start getting Active Rewards, go here.](../user-guides/data-farming/README.md)
+=======
+[To start getting Active Rewards, go here.](../user-guides/README.md)
+>>>>>>> issue-1218-add-challenge-df-info
 
 #### Estimating APY
 

@@ -2,7 +2,7 @@
 description: Get veOCEAN tokens to use the Data Farming dApp and make yield! 🧑‍🌾🥕
 ---
 
-# Get Started Data Farming
+# Earn Passive Rewards with veOCEAN
 
 ### What is Data Farming?
 

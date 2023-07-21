@@ -2,7 +2,7 @@
 description: Make extra dosh with building prediction models
 ---
 
-# Harvest More Yield - Challenge DF
+# Harvest More Yield in Challenge DF
 
 <figure><img src="../../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
@@ -57,3 +57,6 @@ To view and claim your rewards:
 3. To claim all Active Rewards including your Challenge DF rewards, simply click on the "Claim Rewards" button.
 
 <figure><img src="../../.gitbook/assets/rewards/challenge-substream.png" alt=""><figcaption><p>Click the Claim Rewards button</p></figcaption></figure>
+
+
+
