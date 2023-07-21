@@ -13,7 +13,7 @@ Data Farming rewards are structured in 2 main streams **Passive Rewards** and **
 
 ## veOCEAN
 
-Learning about [veOCEAN](veocean.md) will help you answer the question "What is the purpose of holding veOCEAN?" & give insights on how veOCEAN (vote-escrowed OCEAN) works. It will teach you everything you need to know about why it exists and how it works.
+Learning about [veOCEAN](df-veocean.md) will help you answer the question "What is the purpose of holding veOCEAN?" & give insights on how veOCEAN (vote-escrowed OCEAN) works. It will teach you everything you need to know about why it exists and how it works.
 
 You will learn that by just holding veOCEAN passively, you are able to rewards.
 

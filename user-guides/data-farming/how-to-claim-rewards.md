@@ -4,17 +4,17 @@ description: How to claim OCEAN token rewards from data farming 🧑‍🌾🥕
 
 # Claim Rewards Data Farming
 
-<figure><img src="../.gitbook/assets/gif/underwater-treasure.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/underwater-treasure.gif" alt=""><figcaption></figcaption></figure>
 
 Ocean Protocol's Data Farming dapp dispenses rewards **every Thursday** to its participants. 💰 To claim your OCEAN token rewards for data farming, simply navigate to the Data Farming [Rewards page](https://df.oceandao.org/activerewards) and click the Claim OCEAN rewards buttons that will appear pink and clickable each Thursday. Yeehaw!
 
-Want to begin [data farming](https://df.oceandao.org)? Start [here](get-started-df.md). 🤠
+Want to begin [data farming](https://df.oceandao.org)? Start [here](how-to-veocean.md). 🤠
 
 ### Step 1 - Navigate to the Data Farming Rewards page
 
 Go to [https://df.oceandao.org/](https://df.oceandao.org), and click the Rewards [link](https://df.oceandao.org/activerewards) at the top of the page.
 
-<figure><img src="../.gitbook/assets/rewards/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rewards/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
 
 ### Step 2 - Click the pink 'Claim # OCEAN' buttons 🛎️
 
@@ -22,7 +22,7 @@ At the bottom of the 'Passive Rewards' and 'Active Rewards' panels are the 'Clai
 
 This is where you click to claim your rewards! Easy peasy. You will need to approve the transactions with your wallet.
 
-<figure><img src="../.gitbook/assets/rewards/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rewards/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
 
 ### FIRST TIME CLAIMING?
 
