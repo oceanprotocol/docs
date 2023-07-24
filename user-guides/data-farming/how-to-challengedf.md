@@ -8,9 +8,7 @@ description: Make extra dosh with building prediction models
 
 ## Get More Rewards from ChallengeDF
 
-The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem.
-
-If you're eager to begin extracting value from data but aren't sure how to get started, then ChallengeDF is here to help!
+If you're eager to begin extracting value from data but aren't sure how to get started, then [ChallengeDF is here to help](../../rewards/df-challengedf.md)!
 
 By participating in the weekly data challenges of predicting the price of Ethereum, you will become familiar with the Ocean Protocol stack and with building predictions that can be sold for money.
 
