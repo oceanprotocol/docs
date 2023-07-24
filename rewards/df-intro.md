@@ -12,6 +12,10 @@ Data Farming (DF) is Ocean Protocol's **incentive system that rewards participan
 
 Participants are able to **receive rewards passively, actively, or both** weekly by engaging in a variety of streams that helps the protocol grow. These activities include holding veOCEAN, curating datasets and building prediction models.
 
+With this model, there is no liquidity risk through AMMs. We have also used battle-tested, hardened contracts that safeguard billions (veCRV). 
+
+You can’t lose your OCEAN. It is merely locked.
+
 ### Passive and Active Reward streams
 
 Every week OCEAN rewards are paid out to Data Farmers through two different reward streams. **Passive Rewards** and **Active Rewards**.  
@@ -30,33 +34,33 @@ Each Data Farming weekly round has a pool of OCEAN rewards, where 50% of the poo
 
 Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.
 
+veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets, or completing predictionc hallenges.
+
 <figure><img src="../.gitbook/assets/gif/passive-income.gif" alt=""><figcaption></figcaption></figure>
 
-<<<<<<< HEAD
 [To start getting passive rewards, go here.](../user-guides/data-farming/how-to-veocean.md)
-=======
-[To start getting passive rewards, go here.](../user-guides/data-farming/how-to-farm-veOCEAN.md)
->>>>>>> issue-1218-add-challenge-df-info
 
 #### What are Active Rewards and Substreams?
 
 Active Rewards are OCEAN rewards paid to contributors actively working to improve Ocean Protocol.  
 
 There are are two substreams available in Active Rewards:
-1. Volume DF
-2. Challenge DF
+1. VolumeDF
+2. ChallengeDF
 
-Volume DF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **Volume DF yields depend on the sales produced by these assets and allocations made.** No sales = no rewards, so choose your favorite datasets wisely & then allocate. Always DYOR.
+#### What is VolumeDF
 
-Challenge DF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called Challenge DF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **Challenge DF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.
+VolumeDF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets. It's called VolumeDF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **VolumeDF yields depend on the sales produced by these assets and allocations made.** No sales = no rewards, so choose your favorite datasets wisely & then allocate. Always DYOR.
 
-Active Rewards are governed and defined by the [Reward Function](df-max-out-yield.md#reward-schedule).
+You can visit the follow tutorial learn how to [access VolumeDF](../user-guides/data-farming/how-to-volumedf.md)
 
-<<<<<<< HEAD
-[To start getting Active Rewards, go here.](../user-guides/data-farming/README.md)
-=======
-[To start getting Active Rewards, go here.](../user-guides/README.md)
->>>>>>> issue-1218-add-challenge-df-info
+VolumeDF rewards are governed and defined by the [Reward Function](df-max-out-yield.md#reward-schedule).
+
+#### What is ChallengeDF
+
+ChallengeDF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called ChallengeDF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **ChallengeDF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.
+
+You can visit the follow tutorial learn how to [access ChallengeDF](../user-guides/data-farming/how-to-challengedf.md)
 
 #### Estimating APY
 
@@ -76,10 +80,10 @@ Each Data Farming weekly round has a pool of OCEAN rewards and [can be viewed he
 ##### Reward Sub-Streams
 **Active Rewards** is then composed of two sub-streams.
 
-1. 5,000 OCEAN is paid out to Challenge DF.
-2. The remainder is paid out to Volume DF.  
+1. 5,000 OCEAN is paid out to ChallengeDF.
+2. The remainder is paid out to VolumeDF.  
 
-| Challenge DF | Volume DF |
+| ChallengeDF | VolumeDF |
 | --------------- | -------------- |
 | 5,000 OCEAN     | Remaining OCEAN    |
 

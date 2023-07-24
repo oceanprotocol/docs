@@ -28,20 +28,6 @@ veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefi
 3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily manage Active Rewards.
 4. **2x Publisher Stake** If you are a publisher in the Ocean ecosystem, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets in the Ocean ecosystem further.
 
-### The Nitty Gritty of **Passive & Active Rewards**
-
-#### Passive Rewards from Data Farming
-
-veOCEAN holders get weekly Data Farming rewards with a small carveout for any Ocean Protocol Data Challenges that run through Data Farming operations.
-
-#### Active Rewards from Community Fees
-
-veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets.
-
-Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.
-
-There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
-
 ### veOCEAN Time Locking
 
 Users can lock their OCEAN for different lengths of time to gain more veOCEAN **voting power**. The Data Farming dApp is designed to lock OCEAN for **a minimum of 2 weeks and a maximum of four years** (for max rewards). The longer you lock your OCEAN, the more veOCEAN + OCEAN rewards you get!
@@ -96,13 +82,11 @@ All earnings for veOCEAN holders are claimable in the Ethereum mainnet. (Data as
 
 Data Farming rounds occur weekly; in line with this, there’s a new [`ve`](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the [code](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) )
 
-### DYOR!
+### Locks & Withdrawal
 
 veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
 
-So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
-
-### Withdrawal
+So it's important to note that: **"you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!**
 
 After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 

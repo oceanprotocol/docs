@@ -2,15 +2,15 @@
 description: Make extra dosh with building prediction models
 ---
 
-# Harvest More Yield in Challenge DF
+# How to ChallengeDF
 
 <figure><img src="../../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
-## Get More Rewards from Challenge DF
+## Get More Rewards from ChallengeDF
 
 The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem.
 
-If you're eager to begin extracting value from data but aren't sure how to get started, then Challenge DF is here to help!
+If you're eager to begin extracting value from data but aren't sure how to get started, then ChallengeDF is here to help!
 
 By participating in the weekly data challenges of predicting the price of Ethereum, you will become familiar with the Ocean Protocol stack and with building predictions that can be sold for money.
 
@@ -42,7 +42,7 @@ Follow the README steps to publish your model and compete in the challenge.
 
 #### Step 5 - Check weekly results
 
-Challenge DF weekly results become available at the end of every Data Farming round and can be viewed in the Challenges page.
+ChallengeDF weekly results become available at the end of every Data Farming round and can be viewed in the Challenges page.
 
 The top 3 competitors win prizes and are visible in the leaderboard.
 
@@ -53,8 +53,8 @@ The top 3 competitors win prizes and are visible in the leaderboard.
 To view and claim your rewards:
 
 1. Make sure your wallet is connected.
-2. Your Challenge DF substream rewards will be displayed to the left besides "rewards". As you can see, it will be added to other active rewards that can be claimed besides "total rewards".
-3. To claim all Active Rewards including your Challenge DF rewards, simply click on the "Claim Rewards" button.
+2. Your ChallengeDF substream rewards will be displayed to the left besides "rewards". As you can see, it will be added to other active rewards that can be claimed besides "total rewards".
+3. To claim all Active Rewards including your ChallengeDF rewards, simply click on the "Claim Rewards" button.
 
 <figure><img src="../../.gitbook/assets/rewards/challenge-substream.png" alt=""><figcaption><p>Click the Claim Rewards button</p></figcaption></figure>
 

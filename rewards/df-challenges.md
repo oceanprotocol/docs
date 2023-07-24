@@ -31,9 +31,9 @@ We provide the rules and rewards, allowing you to focus on delivering high-quali
 
 ### Where to start?
 
-Head over to the [Data Farming dapp](https://df.oceandao.org/rewards) and explore the new **Challenge DF substream** section, which is now part of the Active Rewards. The dapp itself will serve as your guide moving forward!
+Head over to the [Data Farming dapp](https://df.oceandao.org/rewards) and explore the new **ChallengeDF substream** section, which is now part of the Active Rewards. The dapp itself will serve as your guide moving forward!
 
-If you're looking for a step-by-step guide on everything from understanding what a challenge entails to claiming your well-deserved rewards, be sure to check out [how to farm challenge df rewards](../user-guides/data-farming/how-to-challengedf.md) section. It will provide you with all the necessary information you need to make the most out of the challenges.
+If you're looking for a step-by-step guide on everything from understanding what a challenge entails to claiming your well-deserved rewards, be sure to check out [how to farm ChallengeDF rewards](../user-guides/data-farming/how-to-challengedf.md) section. It will provide you with all the necessary information you need to make the most out of the challenges.
 
 ### Good lock and happy coding!
 

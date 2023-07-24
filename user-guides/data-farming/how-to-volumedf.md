@@ -2,11 +2,11 @@
 description: Make extra dosh by curating datasets in Data Farming
 ---
 
-# Harvest More Yield in Volume DF
+# How to VolumeDF
 
 <figure><img src="../../.gitbook/assets/rewards/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
 
-## Get More Rewards from Volume DF
+## Maximize APY with VolumeDF
 
 The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating and publishing valuable assets in the Ocean ecosystem. 
 

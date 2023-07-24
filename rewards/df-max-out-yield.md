@@ -4,7 +4,7 @@ description: >-
   Ocean Protocol's Data Farming dApp!
 ---
 
-# Mastering Volume DF (Purple Belt)
+# Mastering VolumeDF
 
 <figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
@@ -14,7 +14,7 @@ If you only lock your OCEAN tokens to get passive yield, then you're leaving mon
 
 Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** in the Ocean ecosystem. (No revenue, no rewards.) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the Allocation Power** when you allocate to an asset that you publish!
 
-Thus, if you really want to max out Volume DF APY:
+Thus, if you really want to max out VolumeDF APY:
 
 1. Lock your OCEAN for 4 years to receive 100% voting power.
 2. Have other participants delegate their Allocation Power to you.

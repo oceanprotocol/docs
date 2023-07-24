@@ -11,7 +11,7 @@ coverY: 0
 The purpose of Ocean Protocol's Data Farming dApp reward system is to incentivize the growth, curation, and publishing of high-quality data NFTs in the Ocean Ecosystem.  
 
 Data Farming participants earn OCEAN rewards for these activities.
-Data Farming rewards are structured in 2 main streams **Passive Rewards** and **Active Rewards**. At a minimum, Data Farmers earn "passive rewards" for locking their OCEAN tokens to get veOCEAN tokens in return. Then, Data Farmers can maximize their yield by earning "active rewards". Active Rewards stream it's broken down into multiple substreams, to offer you a variaty of ways to contribute to Ocean Protocol values and increase your Data Farming rewards: Volume DF, Challenge DF.
+Data Farming rewards are structured in 2 main streams **Passive Rewards** and **Active Rewards**. At a minimum, Data Farmers earn "passive rewards" for locking their OCEAN tokens to get veOCEAN tokens in return. Then, Data Farmers can maximize their yield by earning "active rewards". Active Rewards stream it's broken down into multiple substreams, to offer you a variaty of ways to contribute to Ocean Protocol values and increase your Data Farming rewards: VolumeDF, ChallengeDF.
 
 ## veOCEAN
 
@@ -25,13 +25,13 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 ![DF Rewards Page](../.gitbook/assets/rewards/df_rewards_page.png)
 
-[Data Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
+[Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
 
 [Data Farming Background](df-max-out-yield.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
 
 ## Delegation
 
-[Delegation](..user-guides/data-farming/how-to-farm-delegate.md) will teach you how to share your veOCEAN allocation power to other users that can help manage Volume DF substream for you.
+[Delegation](..user-guides/data-farming/how-to-farm-delegate.md) will teach you how to share your veOCEAN allocation power to other users that can help manage VolumeDF substream for you.
 
 Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of managing your Allocation Power and cut from the rewards.
 
