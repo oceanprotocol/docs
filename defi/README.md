@@ -10,7 +10,7 @@ coverY: 0
 
 Ocean Protocol's open-source tools are useful in a variety of DeFi applications. Here we show you how to capitalize with Ocean Protocol tech in several ways using crypto trading!
 
-## Data Farming - ChallengeDF (Predict-ETH) 📈
+## Data Farming - ChallengeDF 📈
 
 Data Farming offers a weekly rewards via [ChallengeDF](../../rewards/df-challengedf.md), a challenge where users predict the price of Ethereum and win prizes 💰 based on accuracy.
 
