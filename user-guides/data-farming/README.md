@@ -2,7 +2,7 @@
 description: Learn the ins-and-outs Data Farming
 ---
 
-# Welcome to Data Farming
+# Data Farming Guides
 
 <figure><img src="../../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
 

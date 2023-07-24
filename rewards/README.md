@@ -4,15 +4,15 @@ cover: ../.gitbook/assets/cover/rewards_banner.png
 coverY: 0
 ---
 
-# Data Farming Overview
+# Welcome to Data Farming
 
-### Why did we create Data Farming?
+Why did we create Data Farming?
 
 The purpose of Ocean Protocol's Data Farming incentive programs is to onboard participants onto the protocol, and provide them with the tools needed for the growth, curation, and publishing of high-quality data NFTs in the Ocean Ecosystem.  
 
 Data Farming participants earn OCEAN rewards across 2 main streams **Passive Rewards** and **Active Rewards**.  
 
-## Data Farming
+## Introduction
 
 [Farming 101](df-intro.md) introduces Data Farming, the different reward systems, how they work, and how to access them. By the end of the document, you should feel more familiar with Data Farming concepts and confident to take next steps towards estimating APYs, locking your OCEAN, and accessing other reward streams.
 
@@ -20,13 +20,15 @@ Data Farming participants earn OCEAN rewards across 2 main streams **Passive Rew
 
 Learning about [veOCEAN](df-veocean.md) will help you answer the question "What is the purpose of veOCEAN?" and give insights on how veOCEAN (vote-escrowed OCEAN) works.
 
+Before making any decisions, we recommed you reading up on [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) and putting together plan for locking up your veOCEAN.
+
 ### Passive Rewards
 
 At a minimum, Data Farmers earn [Passive Rewards](df-intro.md#what-are-passive-rewards) for locking their $OCEAN and receiving $veOCEAN in return.
 
 ### Active Rewards
 
-[Active Rewards](df-intro.md#what-are-active-rewards) stream is broken down into multiple substreams, to offer you a variaty of ways to contribute to Ocean Protocol values and increase your Data Farming rewards: VolumeDF, ChallengeDF.  
+For participants that are more engaged and want to increase their yield, the [Active Rewards](df-intro.md#what-are-active-rewards) stream is broken down into multiple substreams. This offers contributors a variety of ways to help Ocean Protocol grow and increase your Data Farming rewards: VolumeDF, ChallengeDF.  
 
 #### Curate Data with VolumeDF
 
