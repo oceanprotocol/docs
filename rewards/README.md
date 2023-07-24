@@ -27,7 +27,7 @@ veOCEAN is a fork of veCRV. This enables participants to become a governance del
 
 [Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
 
-[Data Farming Background](df-max-out-yield.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
+[Data Farming Background](df-volumedf.md.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
 
 ## Delegation
 

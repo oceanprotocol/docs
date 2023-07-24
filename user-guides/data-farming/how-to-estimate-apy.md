@@ -37,6 +37,6 @@ Having said this, we do provide a thorough dashboard that provides historical an
 
 <figure><img src="../../.gitbook/assets/rewards/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
-You can also [learn how rewards are calculated here](../rewards/df-max-out-yield.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
+You can also [learn how rewards are calculated here](../rewards/df-volumedf.md.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
 
 Finally, you can [review the implementation inside df-web](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how APYs are calculated at the frontend/UI level.

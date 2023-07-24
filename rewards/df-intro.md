@@ -54,7 +54,7 @@ VolumeDF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosys
 
 You can visit the follow tutorial learn how to [access VolumeDF](../user-guides/data-farming/how-to-volumedf.md)
 
-VolumeDF rewards are governed and defined by the [Reward Function](df-max-out-yield.md#reward-schedule).
+VolumeDF rewards are governed and defined by the [Reward Function](df-volumedf.md.md#reward-schedule).
 
 #### What is ChallengeDF
 

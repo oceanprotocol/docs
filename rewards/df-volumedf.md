@@ -1,7 +1,6 @@
 ---
 description: >-
-  If you've gotten this far, then you're half way to becoming a pro in
-  Ocean Protocol's Data Farming dApp!
+  If you've gotten this far, then you're half way to becoming a pro in Ocean Protocol's Data Farming dApp!
 ---
 
 # Mastering VolumeDF

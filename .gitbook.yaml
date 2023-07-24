@@ -56,7 +56,7 @@ redirects:
     veocean-data-farming: rewards/README.md
     veocean-data-farming/veocean: rewards/df-veocean.md
     veocean-data-farming/df-intro: rewards/df-intro.md
-    veocean-data-farming/df-background: rewards/df-max-out-yield.md
+    veocean-data-farming/df-background: rewards/df-volumedf.md.md
     veocean-data-farming/emissions-apys: rewards/df-emissions-apys.md
     veocean-data-farming/delegation: rewards/README.md
     rewards/veOcean-Data-Farming-Tutorial: user-guides/data-farming/how-to-veocean.md
