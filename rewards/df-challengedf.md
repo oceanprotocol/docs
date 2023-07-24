@@ -3,7 +3,7 @@ description: >-
   Weekly prediction challenges for data scientists to compete, launch algorithms, and start earning. 🏆
 ---
 
-# Participage in ChallengeDF
+# Participate in ChallengeDF
 
 <figure><img src="../.gitbook/assets/rewards/gif/eat-data.gif" alt=""><figcaption><p>Let's consume some data.</p></figcaption></figure>
 

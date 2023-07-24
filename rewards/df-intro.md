@@ -24,68 +24,64 @@ These two reward streams produce different variable APYs.
 
 #### Splitting the Pie
 
-Each Data Farming weekly round has a pool of OCEAN rewards, where 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards.
+Each Data Farming weekly round has a pool of OCEAN rewards, where 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards that [can be viewed here](https://df.oceandao.org/rewards).
 
 | Passive Rewards | Active Rewards |
 | --------------- | -------------- |
 | 50%             | 50%            |
 
-#### What are Passive Rewards?
 
-Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.
+<figure><img src="../.gitbook/assets/rewards/df-reward-streams.png" alt=""><figcaption><p>Rewards Page overview for each stream.</p></figcaption></figure>
 
-veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets, or completing predictionc hallenges.
+### What are Passive Rewards?
+
+Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.  
+
+veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets, or completing predictionc hallenges.  
 
 <figure><img src="../.gitbook/assets/gif/passive-income.gif" alt=""><figcaption></figcaption></figure>
 
 [To start getting passive rewards, go here.](../user-guides/data-farming/how-to-veocean.md)
 
-#### What are Active Rewards and Substreams?
+### What are Active Rewards?
 
 Active Rewards are OCEAN rewards paid to contributors actively working to improve Ocean Protocol.  
 
-There are are two substreams available in Active Rewards:
-1. VolumeDF
-2. ChallengeDF
-
-#### What is VolumeDF
-
-VolumeDF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets. It's called VolumeDF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **VolumeDF yields depend on the sales produced by these assets and allocations made.** No sales = no rewards, so choose your favorite datasets wisely & then allocate. Always DYOR.
-
-You can visit the follow tutorial learn how to [access VolumeDF](../user-guides/data-farming/how-to-volumedf.md)
-
-VolumeDF rewards are governed and defined by the [Reward Function](df-volumedf.md.md#reward-schedule).
-
-#### What is ChallengeDF
-
-ChallengeDF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called ChallengeDF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **ChallengeDF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.
-
-You can visit the follow tutorial learn how to [access ChallengeDF](../user-guides/data-farming/how-to-challengedf.md)
-
-#### Estimating APY
-
-Each Data Farming weekly round has a pool of OCEAN rewards and [can be viewed here](https://df.oceandao.org/rewards)
-
-<figure><img src="../.gitbook/assets/rewards/df-reward-streams.png" alt=""><figcaption><p>Rewards Page overview for each stream.</p></figcaption></figure>
-
-##### Reward Streams
-
-50% of the pool is paid out in the form of **Passive Rewards**.  
-50% of the pool is paid out in the form of **Active Rewards**.  
-
-| Passive Rewards | Active Rewards |
-| --------------- | -------------- |
-| 50%             | 50%            |
-
-##### Reward Sub-Streams
-**Active Rewards** is then composed of two sub-streams.
-
-1. 5,000 OCEAN is paid out to ChallengeDF.
-2. The remainder is paid out to VolumeDF.  
+**Active Rewards** is then composed of two sub-streams:
+1. 5,000 $OCEAN is paid out to ChallengeDF.
+2. 70,000 $OCEAN remainder is paid out to VolumeDF.  
 
 | ChallengeDF | VolumeDF |
 | --------------- | -------------- |
-| 5,000 OCEAN     | Remaining OCEAN    |
+| 5,000 $OCEAN     | 70,000 $OCEAN    |
+
+### What is VolumeDF
+
+[VolumeDF](df-volumedf.md#allocating-veocean) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called VolumeDF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
+
+You can visit the follow tutorial learn how to [access VolumeDF](../user-guides/data-farming/how-to-volumedf.md).  
+
+VolumeDF rewards are governed and defined by the [Reward Function](df-intro.md#reward-schedule).  
+
+#### Estimating APY
+
+To a get a good sense for how much APY you'll make, we recommend you understand the details of [how veOCEAN works](df-veocean.md). This will give you a basis for the calculations and provide you with an outline for what to expect in terms of rewards over time.  
+
+You can find the [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) user guide, calculate a reward schedule, and compare your lock up period with others.  
+
+#### Publisher Rewards
+
+<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing lets you earn *more* OCEAN rewards</p></figcaption></figure>
+
+Publishers are strongly incentivized to launch assets in the Ocean Ecosystem. When publishers curate and support their own assets, they [receive double the allocation power](df-volumedf.md#what-are-publisher-rewards).  
+
+You can learn how to curate datasets and access [Publisher Rewards](../user-guides/data-farming/how-to-volumedf.md#) here.  
+
+### What is ChallengeDF
+
+ChallengeDF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called ChallengeDF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **ChallengeDF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.  
+
+You can visit the follow tutorial learn how to [access ChallengeDF](../user-guides/data-farming/how-to-challengedf.md).  
 
 ### What's the difference between Data Farming and Yield Farming?
 
@@ -95,15 +91,13 @@ Unlike yield farming in DeFi, data farming has real intrinsic utility for Ocean 
 
 To deepen this incentive, Publishers are boosted further and **gain 2x the allocation power** when pointing to their own assets.
 
-### What are Publisher Rewards?
+## Reward Schedule
 
-<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing lets you earn *more* OCEAN rewards</p></figcaption></figure>
+The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
 
-Data Farming strongly incentivizes publishing assets in the Ocean ecosystem by doubling the allocation power of Data Farmers that support their own published assets.
+<figure><img src="../.gitbook/assets/rewards/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
 
-How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published **is effectively doubled for the rewards calculation.**_
-
-You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
+<figure><img src="../.gitbook/assets/gif/cash-flow.gif" alt=""><figcaption></figcaption></figure>
 
 ## [GET STARTED DATA FARMING HERE.](https://df.oceandao.org)
 

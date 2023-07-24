@@ -3,11 +3,19 @@ description: >-
   If you've gotten this far, then you're half way to becoming a pro in Ocean Protocol's Data Farming dApp!
 ---
 
-# Mastering VolumeDF
+# Curate Data in VolumeDF
 
 <figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
-## Yield Kung Fu
+## Allocating veOCEAN
+
+VolumeDF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets.  
+
+It's called VolumeDF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **VolumeDF yields depend on the sales produced by these assets and allocations made.**  
+
+No sales = no rewards, so choose your favorite datasets wisely & then allocate.  
+
+## Data Curation Kung Fu
 
 If you only lock your OCEAN tokens to get passive yield, then you're leaving money on the table. 
 
@@ -23,7 +31,7 @@ Thus, if you really want to max out VolumeDF APY:
 
 Another way to improve your yield is by [delegating](../user-guides/data-farming/how-to-delegate.md) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made.
 
-### Data Farming success metrics
+### Success Metrics
 
 **Data Consume Volume (DCV)** is our term for **the total $ amount spent on purchases of Ocean ecosystem assets**, transaction fees, and more. The higher DCV of Ocean ecosystem assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
 
@@ -52,7 +60,7 @@ For mathematicians and coders, you can find this code inside [calcrewards.py](ht
 
 <figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
 
-Data Farming strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
+VolumeDF strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
 
 How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
 
@@ -83,29 +91,3 @@ To qualify for DF, an asset must also:
 * Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) by OPF to [production networks](../discover/networks/README.md)
 * The asset must be listed on Ocean Market
 * Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
-
-### Reward Schedule
-
-The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
-
-<figure><img src="../.gitbook/assets/rewards/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/gif/cash-flow.gif" alt=""><figcaption></figcaption></figure>
-
-### A Brief History of Data Farming
-
-Data Farming has evolved over time and will continue to do so as the Emission Curve progresses. Below are the phases and parameters incurred during the evolution of the Data Farming program. We are now in the DF Main phase.
-
-**DF Alpha - Rounds 1-4 (4 wks)**\
-10K OCEAN rewards were budgeted per week. Counting started Thu June 16, 2022 and ended July 13, 2022. Rewards were distributed at the end of every week, for the activity of the previous week. It ran for 4 weeks. The aim was to test technology, learn, and onboard data publishers.
-
-**DF/VE Alpha - Rounds 5-8 (4 wks)**\
-10K OCEAN rewards were budgeted per week. Counting started Thu Sep 29, 2022 and ended Oct 27, 2022. Rewards were distributed at the end of every week, for the activity of the previous week. It ran for 4 weeks. The aim was to resume Data Farming along with veOCEAN, test the technology, onboard data publishers, and keep learning.
-
-**DF Beta - Rounds 9-28 (20 wks)**\
-Up to 100K OCEAN rewards were budgeted per week. Counting started Thu Oct 27, 2022, and ended on March 15, 2023. It ran for 20 weeks. The aim was to test the effect of larger incentives, and support ecosystem participation, while continually refining the underlying technology.
-
-**DF Main - Rounds 29-1000+**\
-We are now in DF Main which immediately followed the release of DF Beta on Thu Mar 16, 2023. Rewards begin at 150k per week and goes up to 1.1M OCEAN per week. DF Main emits 503.4M OCEAN worth of rewards and lasts for decades.
-
-The amount of OCEAN released is determined by the emission schedule as defined by the [Emission Curve](df-emissions-apys.md#emissions--first-5-years), and perhaps more easily understood in the Reward Schedule below.
