@@ -10,7 +10,7 @@ description: >-
 
 Rewards are earned by users that hold and use their veOCEAN to help the protocol improve and grow.  
 
-We would 
+First, make sure that you [understand the basics of APY](../../rewards/df-veocean.md#veocean-and-your-apy) and how veOCEAN works.
 
 Now that we got that out of the way, let's work through the examples and keep it as simple as possible.
 
@@ -28,12 +28,12 @@ The above are simplified examples meant for everyone to understand. They are nai
 
 Active Rewards are a bit more complicated and depend on many factors that are currently hard to predict accurately. It is unlikely for the user to get a practical result, which is why we don't offer a tool to estimate Active APY right now.
 
-You can easily expand the spreadsheet above to support basic, naive calculations for Active Rewards such as defining a constant percent yield per week.
+You can easily expand the spreadsheet above to support a basic, naive calculations for Active Rewards such as adding a fixed-rate.
 
-Having said this, we do provide a thorough dashboard that provides historical and ongoing summaries of APY, Data Consume Volume, and veOCEAN allocations per-round.
+To help solve this challenge, [we built a dashboard](https://df.oceandao.org/datafarming) that shows historical and ongoing summaries of APY, Data Consume Volume, and veOCEAN allocations per-round.
 
 <figure><img src="../../.gitbook/assets/rewards/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
 You can also [learn how rewards are calculated here](../rewards/df-volumedf.md.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
 
-Finally, you can [review the implementation inside df-web](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how APYs are calculated at the frontend/UI level.
+Finally, you can [review the implementation inside df-web](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how the APYs on the UI are calculated.

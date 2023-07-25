@@ -2,15 +2,9 @@
 description: Get veOCEAN tokens to use the Data Farming dApp and make yield! 🧑‍🌾🥕
 ---
 
-# Earn Passive Rewards with veOCEAN
-
-### What is Data Farming?
-
-[Data Farming](https://df.oceandao.org) is our dApp that generates yield for participants that curate and publish valuable assets in the Ocean ecosystem.
-
 <figure><img src="../../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN tokens</p></figcaption></figure>
 
-### What is veOCEAN and why do you want it? 🌊
+# What is veOCEAN and Passive Rewards
 
 In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens first! When you lock your OCEAN tokens, you get **veOCEAN tokens** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **Volume DF rewards**, for allocating your veOCEAN tokens to your favorite assets and get a portion of their sales!
 
