@@ -26,7 +26,7 @@ After the dApp loads, look for the menu and click on "Challenges"
 
 #### Step 3 - Click on "Participate"
 
-After clicking on "Participate" you will be linked to a README that outlines all details about the challenge.
+After clicking on "Participate" you will be [linked to the Challenge DF README](https://github.com/oceanprotocol/predict-eth/blob/main/challenges/challenge-df.md) that outlines all details about the challenge.
 
 <figure><img src="../../.gitbook/assets/rewards/challenge-active.png" alt=""><figcaption><p>Click the Participate button</p></figcaption></figure>
 
