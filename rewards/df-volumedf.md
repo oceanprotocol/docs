@@ -3,15 +3,15 @@ description: >-
   If you've gotten this far, then you're half way to becoming a pro in Ocean Protocol's Data Farming dApp!
 ---
 
-# Curate Data in VolumeDF
+# Curate Data in Volume DF
 
 <figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
 ## Allocating veOCEAN
 
-VolumeDF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets.  
+Volume DF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets.  
 
-It's called VolumeDF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **VolumeDF yields depend on the sales produced by these assets and allocations made.**  
+It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **Volume DF yields depend on the sales produced by these assets and allocations made.**  
 
 No sales = no rewards, so choose your favorite datasets wisely & then allocate.  
 
@@ -21,7 +21,7 @@ If you only lock your OCEAN tokens to get passive yield, then you're leaving mon
 
 Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** in the Ocean ecosystem. (No revenue, no rewards.) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the Allocation Power** when you allocate to an asset that you publish!
 
-Thus, if you really want to max out VolumeDF APY:
+Thus, if you really want to max out Volume DF APY:
 
 1. Lock your OCEAN for 4 years to receive 100% voting power.
 2. Have other participants delegate their Allocation Power to you.
@@ -60,7 +60,7 @@ For mathematicians and coders, you can find this code inside [calcrewards.py](ht
 
 <figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
 
-VolumeDF strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
+Volume DF strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
 
 How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
 

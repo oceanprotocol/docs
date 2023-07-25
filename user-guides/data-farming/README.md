@@ -40,9 +40,9 @@ The primary objective of these substreams is to provide users with various oppor
 
 Let's review the Active Reward substreams now to learn more about them, and help you get started with contributing to Ocean Protocol and earning rewards.
 
-### VolumeDF Substream
+### Volume DF Substream
 
-VolumeDF is the bread and butter of the Data Farming incentive program and rewards OCEAN to publishers and curators that help maintain quality assets in the Ocean ecosystem.  
+Volume DF is the bread and butter of the Data Farming incentive program and rewards OCEAN to publishers and curators that help maintain quality assets in the Ocean ecosystem.  
 
 If you have locked your OCEAN tokens in exchange for veOCEAN, this is the ideal opportunity for you to utilize those veOCEAN tokens and earn a portion of active rewards in addition to passive rewards.
 
@@ -50,14 +50,14 @@ By allocating your veOCEAN power to high-quality datasets, you can assist Ocean 
 
 Allocation Power can also be earned via delegation. The Data Farming dApp [Delegate Page](https://df.oceandao.org/delegate) lets you easily manage simple delegations that use the 100% of the current veOCEAN and the LockEnd time to set the delegation.
 
-For more information on how to get started and detailed instructions, please refer to the [VolumeDF](how-to-farm-volumedf.md) section.
+For more information on how to get started and detailed instructions, please refer to the [Volume DF](how-to-farm-volumedf.md) section.
 
-### ChallengeDF Substream
+### Challenge DF Substream
 
-If you are a data scientist and enjoy tackling challenging problems, this is the perfect place for you. ChallengeDF provides a weekly competition where you can test your skills in predicting the price of Ethereum. Rise against other participants to earn a place on the podium and receive a share of the available rewards.
+If you are a data scientist and enjoy tackling challenging problems, this is the perfect place for you. Challenge DF provides a weekly competition where you can test your skills in predicting the price of Ethereum. Rise against other participants to earn a place on the podium and receive a share of the available rewards.
 
 This opportunity allows you to explore the capabilities offered by Ocean Protocol and gain valuable exposure. As your models and skills improve, you can publish your models on the main network and begin monetizing your work.
 
-For detailed instructions and information on how to get started, please refer to the [ChallengeDF](how-to-farm-challengedf.md) section.
+For detailed instructions and information on how to get started, please refer to the [Challenge DF](how-to-farm-challengedf.md) section.
 
 

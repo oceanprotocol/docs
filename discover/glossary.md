@@ -145,17 +145,17 @@ When a user locks their OCEAN tokens for a finite period of time, they get veOCE
 
 <details>
 
-<summary>VolumeDF</summary>
+<summary>Volume DF</summary>
 
-When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [VolumeDF](../rewards/df-intro.md#what-is-volume-df) rewards. OCEAN Data Farming VolumeDF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../rewards/df-intro.md#what-is-volume-df) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
 <details>
 
-<summary>ChallengeDF</summary>
+<summary>Challenge DF</summary>
 
-When a user submits prediction algorithms to the [ChallengeDF program](https://df.oceandao.org/challenges) that accurately estimate the price of Ethereum, then OCEAN rewards are airdropped to that user if win one of the top 3 prizes. Since these rewards depend on human intervention to compete in this challenge, these are categorized as [ChallengeDF](../rewards/df-intro.md#what-is-challenge-df) rewards. OCEAN Data Farming ChallengeDF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user submits prediction algorithms to the [Challenge DF program](https://df.oceandao.org/challenges) that accurately estimate the price of Ethereum, then OCEAN rewards are airdropped to that user if win one of the top 3 prizes. Since these rewards depend on human intervention to compete in this challenge, these are categorized as [Challenge DF](../rewards/df-intro.md#what-is-challenge-df) rewards. OCEAN Data Farming Challenge DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 

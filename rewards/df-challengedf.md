@@ -3,7 +3,7 @@ description: >-
   Weekly prediction challenges for data scientists to compete, launch algorithms, and start earning. 🏆
 ---
 
-# Participate in ChallengeDF
+# Participate in Challenge DF
 
 <figure><img src="../.gitbook/assets/rewards/gif/eat-data.gif" alt=""><figcaption><p>Let's consume some data.</p></figcaption></figure>
 
@@ -36,9 +36,9 @@ _Total - 5000 $OCEAN_
 
 ### Where to start?
 
-Head over to the [Challenges Page](https://df.oceandao.org/challenges) to learn more about ChallengeDF, how to submit, and to see historical results.
+Head over to the [Challenges Page](https://df.oceandao.org/challenges) to learn more about Challenge DF, how to submit, and to see historical results.
 
-If you're looking for a step-by-step guide on everything from understanding what a challenge entails to claiming your well-deserved rewards, be sure to check out [how to farm ChallengeDF rewards](../user-guides/data-farming/how-to-challengedf.md) section. It will provide you with all the necessary information you need to make the most out of the challenges.
+If you're looking for a step-by-step guide on everything from understanding what a challenge entails to claiming your well-deserved rewards, be sure to check out [how to farm Challenge DF rewards](../user-guides/data-farming/how-to-challengedf.md) section. It will provide you with all the necessary information you need to make the most out of the challenges.
 
 ### Good lock and happy coding!
 

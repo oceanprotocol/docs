@@ -48,20 +48,20 @@ veOCEAN holders can generate yield completely passively if they wish, though the
 Active Rewards are OCEAN rewards paid to contributors actively working to improve Ocean Protocol.  
 
 **Active Rewards** is then composed of two sub-streams:
-1. 5,000 $OCEAN is paid out to ChallengeDF.
-2. 70,000 $OCEAN remainder is paid out to VolumeDF.  
+1. 5,000 $OCEAN is paid out to Challenge DF.
+2. 70,000 $OCEAN remainder is paid out to Volume DF.  
 
-| ChallengeDF | VolumeDF |
+| Challenge DF | Volume DF |
 | --------------- | -------------- |
 | 5,000 $OCEAN     | 70,000 $OCEAN    |
 
-### What is VolumeDF
+### What is Volume DF
 
-[VolumeDF](df-volumedf.md#allocating-veocean) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called VolumeDF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
+[Volume DF](df-volumedf.md#allocating-veocean) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
 
-You can visit the follow tutorial learn how to [access VolumeDF](../user-guides/data-farming/how-to-volumedf.md).  
+You can visit the follow tutorial learn how to [access Volume DF](../user-guides/data-farming/how-to-volumedf.md).  
 
-VolumeDF rewards are governed and defined by the [Reward Function](df-intro.md#reward-schedule).  
+Volume DF rewards are governed and defined by the [Reward Function](df-intro.md#reward-schedule).  
 
 #### Estimating APY
 
@@ -77,11 +77,11 @@ Publishers are strongly incentivized to launch assets in the Ocean Ecosystem. Wh
 
 You can learn how to curate datasets and access [Publisher Rewards](../user-guides/data-farming/how-to-volumedf.md#) here.  
 
-### What is ChallengeDF
+### What is Challenge DF
 
-ChallengeDF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called ChallengeDF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **ChallengeDF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.  
+Challenge DF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called Challenge DF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **Challenge DF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.  
 
-You can visit the follow tutorial learn how to [access ChallengeDF](../user-guides/data-farming/how-to-challengedf.md).  
+You can visit the follow tutorial learn how to [access Challenge DF](../user-guides/data-farming/how-to-challengedf.md).  
 
 ### What's the difference between Data Farming and Yield Farming?
 

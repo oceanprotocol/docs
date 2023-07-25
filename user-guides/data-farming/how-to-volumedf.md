@@ -2,11 +2,11 @@
 description: Make extra dosh by curating datasets in Data Farming
 ---
 
-# How to VolumeDF
+# How to Volume DF
 
 <figure><img src="../../.gitbook/assets/rewards/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
 
-## Maximize APY with VolumeDF
+## Maximize APY with Volume DF
 
 The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating and publishing valuable assets in the Ocean ecosystem. 
 
@@ -20,9 +20,9 @@ The way that users curate assets is by **pointing their Allocation Power** to th
 
 - Connect your wallet to the Data Farming dApp using the Ethereum network (mainnet)
 
-#### Step 3 - Click on the VolumeDF tab in the top menu
+#### Step 3 - Click on the Volume DF tab in the top menu
 
-<figure><img src="../../.gitbook/assets/rewards/volumeDF-page.png" alt=""><figcaption><p>Click the VolumeDF page link in the menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rewards/volumeDF-page.png" alt=""><figcaption><p>Click the Volume DF page link in the menu</p></figcaption></figure>
 
 #### Step 4 - Select the assets which you would like to allocate to by toggling the percentage allocation at the end of the row
 

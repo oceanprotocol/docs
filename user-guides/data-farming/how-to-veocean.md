@@ -12,7 +12,7 @@ description: Get veOCEAN tokens to use the Data Farming dApp and make yield! ðŸ§
 
 ### What is veOCEAN and why do you want it? ðŸŒŠ
 
-In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens first! When you lock your OCEAN tokens, you get **veOCEAN tokens** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **VolumeDF rewards**, for allocating your veOCEAN tokens to your favorite assets and get a portion of their sales!
+In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens first! When you lock your OCEAN tokens, you get **veOCEAN tokens** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **Volume DF rewards**, for allocating your veOCEAN tokens to your favorite assets and get a portion of their sales!
 
 ### Don't have OCEAN tokens yet? Get those first!
 

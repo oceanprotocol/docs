@@ -28,25 +28,25 @@ At a minimum, Data Farmers earn [Passive Rewards](df-intro.md#what-are-passive-r
 
 ### Active Rewards
 
-For participants that are more engaged and want to increase their yield, the [Active Rewards](df-intro.md#what-are-active-rewards) stream is broken down into multiple substreams. This offers contributors a variety of ways to help Ocean Protocol grow and increase your Data Farming rewards: VolumeDF, ChallengeDF.  
+For participants that are more engaged and want to increase their yield, the [Active Rewards](df-intro.md#what-are-active-rewards) stream is broken down into multiple substreams. This offers contributors a variety of ways to help Ocean Protocol grow and increase your Data Farming rewards: Volume DF, Challenge DF.  
 
-#### Curate Data with VolumeDF
+#### Curate Data with Volume DF
 
-In the VolumeDF substream, curators can maximize their yield by participating in [VolumeDF](df-volumedf.md).
+In the Volume DF substream, curators can maximize their yield by participating in [Volume DF](df-volumedf.md).
 
-VolumeDF requires participants to curate quality datasets that are driving sales and are helping Ocean Protocol achieve traction.
+Volume DF requires participants to curate quality datasets that are driving sales and are helping Ocean Protocol achieve traction.
 
 ## Delegate Curation
 
-[Delegation](..user-guides/data-farming/how-to-farm-delegate.md) will teach you how to share your veOCEAN allocation power to other users that can help manage VolumeDF substream for you.
+[Delegation](..user-guides/data-farming/how-to-farm-delegate.md) will teach you how to share your veOCEAN allocation power to other users that can help manage Volume DF substream for you.
 
 Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of managing your Allocation Power and cut from the rewards.
 
-#### Predict with ChallengeDF
+#### Predict with Challenge DF
 
-In this substream, Data Scientists can maximize their yield by participating in [ChallengeDF](df-challengedf.md).
+In this substream, Data Scientists can maximize their yield by participating in [Challenge DF](df-challengedf.md).
 
-ChallengeDF requires participants to submit algorithms that predict the price of ETH correctly in order to win rewards.
+Challenge DF requires participants to submit algorithms that predict the price of ETH correctly in order to win rewards.
 
 ## Further Reading
 
