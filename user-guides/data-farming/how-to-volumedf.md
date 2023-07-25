@@ -27,7 +27,8 @@ The way that users curate assets is by **pointing their Allocation Power** to th
 #### Step 4 - Select the assets which you would like to allocate to by toggling the percentage allocation at the end of the row
 
 - On the rightmost column, toggle the percentage of your total Allocation Power that you wish to allocate to each asset of your choice. You will **get a portion of the sales** of each asset that you allocate to!
-- Note that if you allocate to an asset that YOU published, then you will get an **effective 2x allocation boost**. The rows for assets that you publish will appear cream-colored.
+- Note that if you allocate to an asset that YOU published, then you will get an **effective 2x allocation boost**.
+- If you are a publisher and curating your own asset, your asset may be styled differently in the UI.
 
 <figure><img src="../../.gitbook/assets/rewards/allocations.png" alt=""><figcaption><p>Toggle the percentage of your veOCEAN that you would like to allocate to each asset</p></figcaption></figure>
 

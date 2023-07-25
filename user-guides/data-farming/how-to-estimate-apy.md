@@ -8,12 +8,9 @@ description: >-
 
 # veOCEAN and your APY
 
-Before we start, let's do a quick recap.
+Rewards are earned by users that hold and use their veOCEAN to help the protocol improve and grow.  
 
-Rewards are earned by users that hold and use their veOCEAN to help the protocol improve and grow. Here are some good lessons to improve the outcome of your APY.
-1. To improve your yield, you will need to make good decisions for how long you'll choose to lock. The best way to do this is to learn how [Time Locking](/rewards/df-veocean.md#veocean-time-locking) and [Linear Decay](/rewards/df-veocean.md#linear-decay) function.
-2. APYs are always initially calculated by dividing the amount of OCEAN you have received from rewards, by the relative amount of OCEAN you have locked up.
-3. As a rule: _Wherever APYs are provided to the user in the app (df.oceandao.org), they are caclulated assuming an initial 4-year lock up period with a weekly schedule of compounding rewards into an updated 4-year lock. This estimate works provided current: number of users, reward emissions, and other reward parameters stay constant while excluding all tx fees._
+We would 
 
 Now that we got that out of the way, let's work through the examples and keep it as simple as possible.
 

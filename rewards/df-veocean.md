@@ -47,8 +47,6 @@ After choosing your lock period and locking up your OCEAN into the vault, you wi
 
 veOCEAN is non-transferable. You can’t sell it or send it to other addresses.
 
-_To help you more easily understand this, we have created [a couple of examples](../user-guides/data-farming/how-to-estimate-apy.md) so you can more easily visualize the impact of your decisions on your overall yields._
-
 ### Linear Decay
 
 Your veOCEAN balance will slowly start declining as soon as you receive it.
@@ -70,17 +68,32 @@ At the end of your 4 years, your OCEAN is unlocked.
 
 The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
 
+# veOCEAN and your APY
+
+Here are some good mental models to improve the outcome of your APY.
+1. To improve your yield, you will need to make good decisions for how long you'll choose to lock. The best way to do this is to learn how [Time Locking](/rewards/df-veocean.md#veocean-time-locking) and [Linear Decay](/rewards/df-veocean.md#linear-decay) function.
+2. APYs are always initially calculated by dividing the amount of OCEAN you have received from rewards, by the relative amount of OCEAN you have locked up.
+3. As a rule: _wherever APYs are provided to the user in the app (df.oceandao.org), they are caclulated assuming an initial 4-year lock up period with a weekly schedule of compounding rewards into an updated 4-year lock. This estimate works provided current: number of users, reward emissions, and other reward parameters stay constant while excluding all tx fees._
+
+To help you more easily understand APYs, we have provided a couple of examples in the [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) user guide so you can visualize different setups and their relative yields.
+
 ### Replenishing your veOCEAN
 
-You can choose to update your lock and replenish your veOCEAN balance at any time.
+To achieve optimal APY, participants would need to update their 4-year lock while considering costs and other variables to maintain an optimal amount of veOCEAN over time.
 
-To maximize rewards, participants would need to update their 4-year lock every week in order to maintain their veOCEAN balance as high as possible.
+Participants are also able to add more OCEAN to their vault when updating an existing vault.
+
+At any time, participants can choose to update their lock and continue from where they are or increase their lock duration.
 
 ### veOCEAN Earnings
 
-All earnings for veOCEAN holders are claimable in the Ethereum mainnet. (Data assets for DFing may be published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
+All earnings for veOCEAN holders are claimable in the Ethereum mainnet.  
 
-Data Farming rounds occur weekly; in line with this, there’s a new [`ve`](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the [code](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) )
+To be eligible for Data Farming Data assets for DFing may be published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
+
+Data Farming rounds occur weekly; in line with this, there’s a new [`ve`](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7.  
+
+Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the [code](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve)).  
 
 ### Locks & Withdrawal
 

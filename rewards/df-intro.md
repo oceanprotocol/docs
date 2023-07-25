@@ -6,25 +6,21 @@ description: Learn the fundamentals of The Way of Data Farming 🧑‍🏫
 
 <figure><img src="../.gitbook/assets/gif/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
 
-## What is Data Farming?
+## Weekly Rounds
 
-Data Farming (DF) is Ocean Protocol's **incentive system that rewards participants for creating value in the Ocean ecosystem.** 
-
-Participants are able to **receive rewards passively, actively, or both** weekly by engaging in a variety of streams that helps the protocol grow. These activities include holding veOCEAN, curating datasets and building prediction models.
-
-With this model, there is no liquidity risk through AMMs. We have also used battle-tested, hardened contracts that safeguard billions (veCRV). 
-
-You can’t lose your OCEAN. It is merely locked.
+All streams and substreams repeat on a weekly basis that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.  
 
 ### Passive and Active Reward streams
 
-Every week OCEAN rewards are paid out to Data Farmers through two different reward streams. **Passive Rewards** and **Active Rewards**.  
+OCEAN rewards are paid out at the end of each week to Data Farmers through two different reward streams. **Passive Rewards** and **Active Rewards**.  
 
 These two reward streams produce different variable APYs.  
 
+Rewards are paid out at the end of each round.
+
 #### Splitting the Pie
 
-Each Data Farming weekly round has a pool of OCEAN rewards, where 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards that [can be viewed here](https://df.oceandao.org/rewards).
+Each Data Farming round has a pool of OCEAN rewards, where 50% of the pool is paid out in the form of passive rewards & 50% in the form of active rewards that [can be viewed here](https://df.oceandao.org/rewards).
 
 | Passive Rewards | Active Rewards |
 | --------------- | -------------- |
@@ -48,12 +44,12 @@ veOCEAN holders can generate yield completely passively if they wish, though the
 Active Rewards are OCEAN rewards paid to contributors actively working to improve Ocean Protocol.  
 
 **Active Rewards** is then composed of two sub-streams:
-1. 5,000 $OCEAN is paid out to Challenge DF.
-2. 70,000 $OCEAN remainder is paid out to Volume DF.  
+1. 5,000 OCEAN is paid out to Challenge DF.
+2. 70,000 OCEAN remainder is paid out to Volume DF.  
 
 | Challenge DF | Volume DF |
 | --------------- | -------------- |
-| 5,000 $OCEAN     | 70,000 $OCEAN    |
+| 5,000 OCEAN     | 70,000 OCEAN    |
 
 ### What is Volume DF
 

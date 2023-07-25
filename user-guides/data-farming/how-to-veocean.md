@@ -18,7 +18,7 @@ In order to **gain yield Data Farming**, you will need to lock your OCEAN tokens
 
 #### Step 1 - Get OCEAN tokens
 
-- Acquire $OCEAN via a decentralized exchange (DEX) such as Uniswap or a centralized exchange (CEX) such as Binance, Coinbase, etc.
+- Acquire OCEAN via a decentralized exchange (DEX) such as Uniswap or a centralized exchange (CEX) such as Binance, Coinbase, etc.
 
 #### Step 2 - Send to your self-custody wallet
 

@@ -18,7 +18,7 @@ Ocean Protocol is a decentralized data exchange protocol that enables individual
 
 <details>
 
-<summary>$OCEAN</summary>
+<summary>OCEAN</summary>
 
 The Ocean Protocol token (OCEAN) is a utility token used in the Ocean Protocol ecosystem. It serves as a medium of exchange and a unit of value for data services in the network. Participants in the Ocean ecosystem can use OCEAN tokens to buy and sell data, stake on data assets, and participate in the governance of the protocol.
 

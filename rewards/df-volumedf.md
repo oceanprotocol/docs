@@ -9,27 +9,25 @@ description: >-
 
 ## Allocating veOCEAN
 
+If you obtain veOCEAN to only get passive yield, then you're leaving money on the table.  
+
 Volume DF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets.  
 
 It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **Volume DF yields depend on the sales produced by these assets and allocations made.**  
 
-No sales = no rewards, so choose your favorite datasets wisely & then allocate.  
+No sales = no rewards.
+So, choose your favorite datasets wisely & then allocate.  
 
-## Data Curation Kung Fu
-
-If you only lock your OCEAN tokens to get passive yield, then you're leaving money on the table. 
+## Data Curation Crops
 
 Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** in the Ocean ecosystem. (No revenue, no rewards.) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the Allocation Power** when you allocate to an asset that you publish!
 
 Thus, if you really want to max out Volume DF APY:
-
 1. Lock your OCEAN for 4 years to receive 100% voting power.
-2. Have other participants delegate their Allocation Power to you.
-3. Create & publish assets (and make $ in selling them) — or work with people who can.
-4. Point your Allocation Power towards your published assets to receive a 2x bonus.
-5. Claim weekly Passive Rewards, Active Rewards, and update your lock.
-
-Another way to improve your yield is by [delegating](../user-guides/data-farming/how-to-delegate.md) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made.
+1. Have other participants delegate their Allocation Power to you.
+1. Create & publish assets (and make $ in selling them) — or work with people who can.
+1. Point your Allocation Power towards your published assets to receive a 2x bonus.
+1. Claim weekly Passive Rewards, Active Rewards, and update your lock.
 
 ### Success Metrics
 
@@ -41,9 +39,17 @@ Marketing your assets to buyers can be a big challenge. Just because you publish
 
 <figure><img src="../.gitbook/assets/gif/hustlin.gif" alt=""><figcaption></figcaption></figure>
 
-### Don't have time to publish your own datasets?
+## Delegating Voting Power
 
-Another way to improve your yield is by [delegating](../user-guides/README.md#how-to-delegate-your-active-rewards) your veOCEAN to someone to generate Active Rewards for you! In this case, the idea is that they may do a better job at publishing assets or picking winners better than you can. However, there is some risk to this because the rewards generated will be sent to the person you delegated to, and it's their responsibility to return those rewards back to you if that's the agreement you both made. To read more, see our [info on Delegation](../user-guides/README.md#how-to-delegate-your-active-rewards).
+Another way to improve your yield is by delegating to your veOCEAN to someone else that can generate Active Rewards for you! In this case, they may do a better job at publishing assets, curating winners, and have more market insights than you.
+
+Another scenario is a user with multiple wallets that wants to manage Volume DF from a single wallet.
+
+The Data Farming dApp [Delegate Page](https://df.oceandao.org/delegate) lets you easily manage delegations. Please keep in mind that the app assigns 100% of the current veOCEAN and the LockEnd time to set the delegation
+
+Whatever your scenario, there may be some risk to delegating because the rewards generated will be sent to the person you delegated to. **It's their responsibility to return those rewards back to you if that's the agreement you both made.**
+
+The guide on [how to Delegate](../user-guides/data-farming/how-to-delegate.md) shows how to provide another wallet with 100% of your allocation power.
 
 ### How Rewards are Calculated
 
@@ -52,7 +58,8 @@ The Reward Function (RF) governs how active rewards are allocated to Data Farmer
 **Rewards are calculated as follows:**
 
 1. Distribute OCEAN across each asset **based on rank**: highest-DCV asset gets the most OCEAN, etc.
-2. For each asset and each veOCEAN holder: If the holder is a publisher, 2x the effective allocation – Baseline rewards = (% allocation in asset) \* (OCEAN for an asset) – Bound rewards to the asset by 125% APY – Bound rewards by asset’s DCV \* 0.1%.
+1. For each asset and each veOCEAN holder: If the holder is a publisher, 2x the effective allocation – Baseline rewards = (% allocation in asset) \* (OCEAN for an asset) – Bound rewards to the asset by 125% APY – Bound rewards by asset’s DCV \* 0.1%.
+1. When DF restarts each Thursday, the global allocation towards each asset resets back to zero and then starts counting up again until the end of the round. After allocating your veOCEAN to different datasets, it will take time for your voting power to be accounted for. 
 
 For mathematicians and coders, you can find this code inside [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df_py/volume/calc_rewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)!
 
