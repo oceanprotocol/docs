@@ -214,7 +214,7 @@ The data asset may be of any type — dataset (for static URIs), algorithm for C
 
 <summary>When exactly does counting start and finish, for a given week?</summary>
 
-The counting starts at 00:00am on Thursday, and ends at 11.59pm on the following Wednesday.
+The counting starts at 00:00am on Thursday UTC, and ends at 11.59pm UTC on the following Wednesday.
 
 </details>
 
