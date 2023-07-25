@@ -24,17 +24,17 @@ We have used battle-tested contracts that safeguard billions (veCRV). With this 
 
 Learning about [veOCEAN](df-veocean.md) will help you answer the question "What is the purpose of veOCEAN?" and give insights on how veOCEAN (vote-escrowed OCEAN) is used inside of Ocean Protocol to help advance the protocol.
 
-If you want  recommed you reading up on [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) and putting together plan for locking up your funds.  
+It may help for you to review the user guide on [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) to get a better idea for how long you'll want to lock your funds.  
 
 ### Passive Rewards
 
 Passive Rewards is the first reward stream within Data Farming.
 
-Passive Rewards offers a defined amount of rewards for each round that is divided amongst veOCEAN holders based on how much they hold.
-
-At a minimum, Data Farmers earn [Passive Rewards](df-intro.md#what-are-passive-rewards) for locking their OCEAN and receiving veOCEAN in return.
+At a minimum, Data Farmers earn [Passive Rewards](df-intro.md#what-are-passive-rewards) for locking their OCEAN.  
 
 It is by-design, without the need for anyone to put in any significant effort. You simply need to lock your tokens for a period of time.
+
+Passive Rewards offers a defined amount of rewards for each round that is divided amongst veOCEAN holders based on how much they hold.
 
 Once your tokens are locked up, you can then learn [how to claim rewards](../user-guides/data-farming/how-to-claim-rewards.md).
 
@@ -64,7 +64,7 @@ Please note, once delegated, rewards will be sent to the wallet address you dele
 
 #### Predict with Challenge DF
 
-In this substream, Data Scientists can maximize their yield by participating in [Challenge DF](df-challengedf.md). The design docs will provide you with an overview of the system, when it takes place, the rules, and many other details.
+In this substream, Data Scientists can win competitions by participating in [Challenge DF](df-challengedf.md). You will obtain overview of what it is, how it works, the rules, and other details.
 
 Challenge DF requires participants to submit algorithms that predict the price of ETH correctly in order to win rewards.
 

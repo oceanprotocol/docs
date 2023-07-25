@@ -3,11 +3,11 @@ description: >-
   Weekly prediction challenges for data scientists to compete, launch algorithms, and start earning. 🏆
 ---
 
-# Participate in Challenge DF
+# Win Competitions in Challenge DF
 
 <figure><img src="../.gitbook/assets/rewards/gif/eat-data.gif" alt=""><figcaption><p>Let's consume some data.</p></figcaption></figure>
 
-## Get extra rewards by competing in prediction challenges!
+## Publish prediction models and earn rewards
 
 If you're eager to consume data and create valuable assets for publishing but unsure of where to begin, fear not! We've got you covered.
 

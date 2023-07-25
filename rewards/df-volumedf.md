@@ -7,7 +7,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
 
-## Allocating veOCEAN
+## What is Volume DF
 
 If you obtain veOCEAN to only get passive yield, then you're leaving money on the table.  
 
