@@ -6,7 +6,7 @@ description: Make extra dosh with building prediction models
 
 <figure><img src="../../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
-## Get More Rewards from Challenge DF
+## Predict to earn
 
 If you're eager to begin extracting value from data but aren't sure how to get started, then [Challenge DF is here to help](../../rewards/df-challengedf.md)!
 

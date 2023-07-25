@@ -6,11 +6,15 @@ description: Make extra dosh by curating datasets in Data Farming
 
 <figure><img src="../../.gitbook/assets/rewards/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
 
-## Maximize APY with Volume DF
+## Curate to earn
 
 The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating and publishing valuable assets in the Ocean ecosystem. 
 
-The way that users curate assets is by **pointing their Allocation Power** to them using the Data Farming dApp. We'll show you how!
+The way that users curate assets is by **pointing their Allocation Power** to them using the Data Farming dApp.  
+
+If you're a publisher, then you can also benefit from additional bonuses.  
+
+We'll show you how!  
 
 #### Step 1 - Navigate to the Data Farming dApp
 

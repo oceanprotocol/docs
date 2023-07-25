@@ -15,7 +15,7 @@ You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farm
 
 When you allocate to assets that sell, then **you get a portion of the sales**!
 
-You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/farms).
+You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/datafarming).
 
 ### The Superpowers of veOCEAN
 
@@ -71,8 +71,9 @@ The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readth
 # veOCEAN and your APY
 
 Here are some good mental models to improve the outcome of your APY.
-1. To improve your yield, you will need to make good decisions for how long you'll choose to lock. The best way to do this is to learn how [Time Locking](/rewards/df-veocean.md#veocean-time-locking) and [Linear Decay](/rewards/df-veocean.md#linear-decay) function.
-2. APYs are always initially calculated by dividing the amount of OCEAN you have received from rewards, by the relative amount of OCEAN you have locked up.
+1. The longer you lock, the more you'll earn.
+2. To improve yield, you will need to make good decisions for how long you'll choose to lock. The best way to do this is to learn how [Time Locking](#veocean-time-locking) and [Linear Decay](#linear-decay) function.
+2. APYs are always calculated by dividing the amount of OCEAN received from rewards, by the relative amount of OCEAN locked up.
 3. As a rule: _wherever APYs are provided to the user in the app (df.oceandao.org), they are caclulated assuming an initial 4-year lock up period with a weekly schedule of compounding rewards into an updated 4-year lock. This estimate works provided current: number of users, reward emissions, and other reward parameters stay constant while excluding all tx fees._
 
 To help you more easily understand APYs, we have provided a couple of examples in the [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) user guide so you can visualize different setups and their relative yields.
