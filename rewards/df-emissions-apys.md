@@ -7,6 +7,14 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/neo-bb.gif" alt=""><figcaption><p>Like a true master of The Way of Data Farming.</p></figcaption></figure>
 
+## Understand emissions to know APYs
+
+To really know APYs, you should understand emissions and how they play a role in the funds disributed inside Ocean Protocol.  
+
+If you are looking to get an overview of APYs, please read the [basics of estimating APY](../rewards/df-intro.md#estimating-apy) first.  
+
+If you want to see some examples of how to calculate it, you can find out more in the [Estimate APY user guides](../user-guides/data-farming/how-to-estimate-apy.md).  
+
 ### Why veOCEAN is important to OceanDAO
 
 veOCEAN enables OceanDAO to be more user-focused, community-driven, and futuristic revenue-sharing like CurveDAO:
