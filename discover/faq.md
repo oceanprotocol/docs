@@ -206,7 +206,7 @@ Checkout our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what
 
 <summary>What assets are eligible for Data Farming?</summary>
 
-The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. You can find more details in the [DF Background page](../rewards/df-max-out-yield.md#assets-that-qualify-for-data-farming)
+The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. You can find more details in the [DF Background page](../rewards/df-volumedf.md.md#assets-that-qualify-for-data-farming)
 
 </details>
 
@@ -214,7 +214,7 @@ The data asset may be of any type — dataset (for static URIs), algorithm for C
 
 <summary>When exactly does counting start and finish, for a given week?</summary>
 
-The counting starts at 12.01am on Thursday, and ends at 11.59pm on the following Wednesday.
+The counting starts at 00:00am on Thursday UTC, and ends at 11.59pm UTC on the following Wednesday.
 
 </details>
 

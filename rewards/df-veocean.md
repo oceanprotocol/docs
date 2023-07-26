@@ -15,7 +15,7 @@ You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farm
 
 When you allocate to assets that sell, then **you get a portion of the sales**!
 
-You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/farms).
+You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/datafarming).
 
 ### The Superpowers of veOCEAN
 
@@ -27,20 +27,6 @@ veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefi
 2. **Allocating it** veOCEAN pays **Active OCEAN Rewards** every week to the top selling assets in the Ocean ecosystem.
 3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily manage Active Rewards.
 4. **2x Publisher Stake** If you are a publisher in the Ocean ecosystem, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets in the Ocean ecosystem further.
-
-### The Nitty Gritty of **Passive & Active Rewards**
-
-#### Passive Rewards from Data Farming
-
-veOCEAN holders get weekly Data Farming rewards with a small carveout for any Ocean Protocol Data Challenges that run through Data Farming operations.
-
-#### Active Rewards from Community Fees
-
-veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets.
-
-Active rewards follow the usual Data Farming formula: $ of sales of the asset \* allocation to that asset.
-
-There is no liquidity locked inside a datatoken pool, and this allocation is safe: you can’t lose your OCEAN as it is merely locked.
 
 ### veOCEAN Time Locking
 
@@ -60,8 +46,6 @@ When users commit to locking their OCEAN tokens for an extended time duration, t
 After choosing your lock period and locking up your OCEAN into the vault, you will be credited with veOCEAN.
 
 veOCEAN is non-transferable. You can’t sell it or send it to other addresses.
-
-_To help you more easily understand this, we have created [a couple of examples](../user-guides/how-to-df-estimate-apy.md) so you can more easily visualize the impact of your decisions on your overall yields._
 
 ### Linear Decay
 
@@ -84,25 +68,39 @@ At the end of your 4 years, your OCEAN is unlocked.
 
 The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
 
+# veOCEAN and your APY
+
+Here are some good mental models to improve the outcome of your APY.
+1. The longer you lock, the more you'll earn.
+2. To improve yield, you will need to make good decisions for how long you'll choose to lock. The best way to do this is to learn how [Time Locking](#veocean-time-locking) and [Linear Decay](#linear-decay) function.
+2. APYs are always calculated by dividing the amount of OCEAN received from rewards, by the relative amount of OCEAN locked up.
+3. As a rule: _wherever APYs are provided to the user in the app (df.oceandao.org), they are caclulated assuming an initial 4-year lock up period with a weekly schedule of compounding rewards into an updated 4-year lock. This estimate works provided current: number of users, reward emissions, and other reward parameters stay constant while excluding all tx fees._
+
+To help you more easily understand APYs, we have provided a couple of examples in the [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) user guide so you can visualize different setups and their relative yields.
+
 ### Replenishing your veOCEAN
 
-You can choose to update your lock and replenish your veOCEAN balance at any time.
+To achieve optimal APY, participants would need to update their 4-year lock while considering costs and other variables to maintain an optimal amount of veOCEAN over time.
 
-To maximize rewards, participants would need to update their 4-year lock every week in order to maintain their veOCEAN balance as high as possible.
+Participants are also able to add more OCEAN to their vault when updating an existing vault.
+
+At any time, participants can choose to update their lock and continue from where they are or increase their lock duration.
 
 ### veOCEAN Earnings
 
-All earnings for veOCEAN holders are claimable in the Ethereum mainnet. (Data assets for DFing may be published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
+All earnings for veOCEAN holders are claimable in the Ethereum mainnet.  
 
-Data Farming rounds occur weekly; in line with this, there’s a new [`ve`](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7. Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the [code](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) )
+To be eligible for Data Farming Data assets for DFing may be published in any network where Ocean’s deployed in production: ETH Mainnet, Polygon, etc.)
 
-### DYOR!
+Data Farming rounds occur weekly; in line with this, there’s a new [`ve`](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve) distribution “epoch” every week. This affects when you can first claim rewards. Specifically, if you lock OCEAN on day x, you’ll be able to claim rewards on the first ve epoch that begins after day x+7.  
+
+Put another way, from the time you lock OCEAN, you must wait at least a week, and up to two weeks, to be able to claim rewards. (This behavior is inherited from veCRV. Here’s the [code](https://github.com/oceanprotocol/df-py/tree/main/contracts/ve)).  
+
+### Locks & Withdrawal
 
 veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
 
-So it's important to **NOTE:** that you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!
-
-### Withdrawal
+So it's important to note that: **"you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!**
 
 After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 

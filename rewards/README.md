@@ -4,42 +4,79 @@ cover: ../.gitbook/assets/cover/rewards_banner.png
 coverY: 0
 ---
 
-# Data Farming Rewards 💰
+## What is Data Farming?
 
-### Why did we create the Data Farming dApp?
+Data Farming is Ocean Protocol's core incentive program that rewards participants to onboard the protocol and create value by using tools that help grow it further.
 
-The purpose of Ocean Protocol's Data Farming dApp reward system is to incentivize the growth, curation, and publishing of high-quality data NFTs in the Ocean Ecosystem.  
+Data Farming participants earn OCEAN rewards across 2 main streams **Passive Rewards** and **Active Rewards**. Participants are able to **receive rewards passively, actively, or both** by engaging in a variety of activities.
 
-Data Farming participants earn OCEAN rewards for these activities.
-Data Farming rewards are structured in 2 main streams **Passive Rewards** and **Active Rewards**. At a minimum, Data Farmers earn "passive rewards" for locking their OCEAN tokens to get veOCEAN tokens in return. Then, Data Farmers can maximize their yield by earning "active rewards". Active Rewards stream it's broken down into multiple substreams, to offer you a variaty of ways to contribute to Ocean Protocol values and increase your Data Farming rewards: Volume DF, Challenge DF.
+Passive Rewards provides a way for all contributors to participate.
+
+Active Rewards focuses on incentivizing the curation and publishing of high-quality data assets and DataNFTs within the Ocean Ecosystem. 
+
+We have used battle-tested contracts that safeguard billions (veCRV). With this model there is no liquidity risk. You can’t lose your OCEAN through Impermanent-Loss (IL). It is merely locked.
+
+## Introduction
+
+[Farming 101](df-intro.md) introduces Data Farming, the various reward systems, how they work, and how to access them. By the end of the document, you should feel more familiar with Data Farming concepts and having a better idea of what subject you might want to learn about next.
 
 ## veOCEAN
 
-Learning about [veOCEAN](veocean.md) will help you answer the question "What is the purpose of holding veOCEAN?" & give insights on how veOCEAN (vote-escrowed OCEAN) works. It will teach you everything you need to know about why it exists and how it works.
+Learning about [veOCEAN](df-veocean.md) will help you answer the question "What is the purpose of veOCEAN?" and give insights on how veOCEAN (vote-escrowed OCEAN) is used inside of Ocean Protocol to help advance the protocol.
 
-You will learn that by just holding veOCEAN passively, you are able to rewards.
+It may help for you to review the user guide on [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) to get a better idea for how long you'll want to lock your funds.  
 
-veOCEAN is a fork of veCRV. This enables participants to become a governance delegate, and eligible to receive rewards and engage with different protocol mechanisms.
+### Passive Rewards
 
-## Data Farming
+Passive Rewards is the first reward stream within Data Farming.
 
-![DF Rewards Page](../.gitbook/assets/rewards/df_rewards_page.png)
+At a minimum, Data Farmers earn [Passive Rewards](df-intro.md#what-are-passive-rewards) for locking their OCEAN.  
 
-[Data Farming 101](df-intro.md) introduces the different reward systems, how they work, and how to access them. By the end of the page, you should be more familiar with how Data Farming works and able to take next steps to curate assets.
+It is by-design, without the need for anyone to put in any significant effort. You simply need to lock your tokens for a period of time.
 
-[Data Farming Background](df-max-out-yield.md) will provide you with more intuitions about Data Farming, briefly explain the Reward Function, and how the program evolved over time.
+Passive Rewards offers a defined amount of rewards for each round that is divided amongst veOCEAN holders based on how much they hold.
 
-## Delegation
+Once your tokens are locked up, you can then learn [how to claim rewards](../user-guides/data-farming/how-to-claim-rewards.md).
 
-[Delegation](..user-guides/data-farming/how-to-farm-delegate.md) will teach you how to share your veOCEAN allocation power to other users that can help manage Volume DF substream for you.
+### Active Rewards
 
-Once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of managing your Allocation Power and cut from the rewards.
+Active Rewards is the second reward streamm within Data Farming.
+
+For participants that are more engaged and want to increase their yield, the [Active Rewards](df-intro.md#what-are-active-rewards) stream is broken down into multiple substreams. This offers contributors a variety of ways to help Ocean Protocol grow and increase your Data Farming rewards:
+1. Volume DF
+1. Challenge DF
+
+#### Curate Data with Volume DF
+
+If you have locked your OCEAN tokens in exchange for veOCEAN, this is the ideal opportunity for you to utilize those veOCEAN tokens to earn higher yield.
+
+You can learn about [the design of Volume DF](df-volumedf.md) to learn about it's substreams. Here, curators earn rewards for curating datasets that are driving sales and helping Ocean Protocol achieve traction.
+
+Once you're familiar with the concepts there, you can then read the following user guide on [how to participate in Volume DF](../user-guides/data-farming/how-to-volumedf.md).
+
+## Delegate Curation
+
+The [Delegation](df-volumedf.md#delegating-voting-power) docs will teach you about the concepts of delegating your veOCEAN allocation power to another wallet that will manage Volume DF for you.
+
+You can then use the [how to delegate](../user-guides/data-farming/how-to-delegate.md) user guide to follow the steps needed to successfully delegate.
+
+Please note, once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of managing your Allocation Power and cut from the rewards. 
+
+#### Predict with Challenge DF
+
+In this substream, Data Scientists can win competitions by participating in [Challenge DF](df-challengedf.md). You will obtain overview of what it is, how it works, the rules, and other details.
+
+Challenge DF requires participants to submit algorithms that predict the price of ETH correctly in order to win rewards.
+
+The user guide on [how to Challenge DF](../user-guides/data-farming/how-to-challengedf.md) will take you step-by-step through the process of submitting your algorithm into the competition.
 
 ## Further Reading
 
 Finally, if you want to continue expanding your knowledge on OCEAN token emissions, APY estimates, and get useful answers to some of the most common questions, you can read the following:
 
 [Emissions & APYs](df-emissions-apys.md) will provide you will information about how OCEAN will be released over time through the Data Farming program and provide you with APY studies.
+
+[Data Farming Background](df-emissions-apys.md#a-brief-history-of-data-farming) will provide you with a lot more information about Data Farming, how the program evolved, and explain detailed mechanisms of the program such as the Reward Function.
 
 Our [FAQ](../discover/faq.md) answers many different questions about staking, chains, deployments, and other details that may be valuable to you.
 

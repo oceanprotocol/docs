@@ -1,16 +1,14 @@
 ---
-description: Make extra dosh with active rewards yield in Data Farming
+description: Make extra dosh with building prediction models
 ---
 
-# Harvest More Yield in Challenge DF
+# How to Challenge DF
 
 <figure><img src="../../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
-## **Get More Rewards from Challenge DF**
+## Predict to earn
 
-The core focus of the Data Farming dApp lies in incentivizing OCEAN rewards for the curation and publication of valuable assets within the Ocean ecosystem.
-
-If you're eager to begin extracting value from data but aren't sure how to get started, then Challenge DF is here to help!
+If you're eager to begin extracting value from data but aren't sure how to get started, then [Challenge DF is here to help](../../rewards/df-challengedf.md)!
 
 By participating in the weekly data challenges of predicting the price of Ethereum, you will become familiar with the Ocean Protocol stack and with building predictions that can be sold for money.
 
@@ -24,11 +22,11 @@ Go to https://df.oceandao.org
 
 After the dApp loads, look for the menu and click on "Challenges"
 
-<figure><img src="../../.gitbook/assets/rewards/volumeDF-page.png" alt=""><figcaption><p>Find "Challenges" in the menu and click on it</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rewards/challenge-page.png" alt=""><figcaption><p>Find "Challenges" in the menu and click on it</p></figcaption></figure>
 
 #### Step 3 - Click on "Participate"
 
-After clicking on "Participate" you will be linked to a README that outlines all details about the challenge.
+After clicking on "Participate" you will be [linked to the Challenge DF README](https://github.com/oceanprotocol/predict-eth/blob/main/challenges/challenge-df.md) that outlines all details about the challenge.
 
 <figure><img src="../../.gitbook/assets/rewards/challenge-active.png" alt=""><figcaption><p>Click the Participate button</p></figcaption></figure>
 
@@ -38,7 +36,7 @@ You can see the ongoing challenge right away together with some key informations
 
 Follow the README steps to publish your model and compete in the challenge.
 
-<figure><img src="../../.gitbook/assets/rewards/challenge-df-readme.png" alt=""><figcaption><p>How to submit ChallengeDF</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rewards/challenge-df-readme.png" alt=""><figcaption><p>How to submit Challenge DF</p></figcaption></figure>
 
 #### Step 5 - Check weekly results
 
@@ -57,3 +55,6 @@ To view and claim your rewards:
 3. To claim all Active Rewards including your Challenge DF rewards, simply click on the "Claim Rewards" button.
 
 <figure><img src="../../.gitbook/assets/rewards/challenge-substream.png" alt=""><figcaption><p>Click the Claim Rewards button</p></figcaption></figure>
+
+
+
