@@ -58,7 +58,7 @@ Transaction volume(TV) is often used interchangeably with data consume volume (D
 
 </details>
 
-<details>
+<details>initialEpochData
 
 <summary><strong>Sub-licensee</strong></summary>
 
@@ -155,7 +155,7 @@ When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN
 
 <summary>Challenge DF</summary>
 
-When a user submits prediction algorithms to the [Challenge DF program](https://df.oceandao.org/challenges) that accurately estimate the price of Ethereum, then OCEAN rewards are airdropped to that user if win one of the top 3 prizes. Since these rewards depend on human intervention to compete in this challenge, these are categorized as [Challenge DF](../rewards/df-intro.md#what-is-challenge-df) rewards. OCEAN Data Farming Challenge DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user submits accurate predictions for the price of Ethereum to the [Challenge DF program](https://df.oceandao.org/challenges), then OCEAN rewards are airdropped to that user if win one of the top 3 prizes. Since these rewards depend on human intervention to compete in this challenge, these are categorized as [Challenge DF](../rewards/df-intro.md#what-is-challenge-df) rewards. OCEAN Data Farming Challenge DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
