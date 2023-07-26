@@ -33,7 +33,7 @@ Each Data Farming round has a pool of OCEAN rewards, where 50% of the pool is pa
 
 Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.  
 
-veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets, or completing predictionc hallenges.  
+veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets, or completing prediction challenges.  
 
 <figure><img src="../.gitbook/assets/gif/passive-income.gif" alt=""><figcaption></figcaption></figure>
 
