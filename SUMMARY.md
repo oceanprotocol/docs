@@ -119,7 +119,7 @@
 * [💰 Data Farming Rewards](rewards/README.md)
   * [Farming 101](rewards/df-intro.md)
   * [veOCEAN](rewards/df-veocean.md)
-  * [Curate with Volume DF](rewards/df-volumedf.md.md)
+  * [Curate with Volume DF](rewards/df-volumedf.md)
   * [Predict with Challenge DF](rewards/df-challengedf.md)
   * [Complete User Guides](rewards/df-guides.md)
   * [Emissions & APYs](rewards/df-emissions-apys.md)

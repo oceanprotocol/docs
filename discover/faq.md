@@ -206,7 +206,7 @@ Checkout our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what
 
 <summary>What assets are eligible for Data Farming?</summary>
 
-The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. You can find more details in the [DF Background page](../rewards/df-volumedf.md.md#assets-that-qualify-for-data-farming)
+The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. You can find more details in the [DF Background page](../rewards/df-volumedf.md#assets-that-qualify-for-data-farming)
 
 </details>
 
