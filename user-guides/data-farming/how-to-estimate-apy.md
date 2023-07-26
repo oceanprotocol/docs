@@ -30,10 +30,10 @@ Active Rewards are a bit more complicated and depend on many factors that are cu
 
 You can easily expand the spreadsheet above to support a basic, naive calculations for Active Rewards such as adding a fixed-rate.
 
-To help solve this challenge, [we built a dashboard](https://df.oceandao.org/datafarming) that shows historical and ongoing summaries of APY, Data Consume Volume, and veOCEAN allocations per-round.
+To help solve this challenge, [we built a dashboard](https://df.oceandao.org/volume-df) that shows historical and ongoing summaries of APY, Data Consume Volume, and veOCEAN allocations per-round.
 
 <figure><img src="../../.gitbook/assets/rewards/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
-You can also [learn how rewards are calculated here](../rewards/df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
+You can also [learn how rewards are calculated here](../../rewards/df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
 
 Finally, you can [review the implementation inside df-web](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how the APYs on the UI are calculated.

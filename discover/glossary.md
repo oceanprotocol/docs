@@ -155,7 +155,7 @@ When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN
 
 <summary>Challenge DF</summary>
 
-When users submit accurate predictions for the price of Ethereum to the [Challenge DF program](https://df.oceandao.org/challenges), they have a chance to win OCEAN rewards by being in the top 3 submissions based on predicted value accuracy. 
+When users submit accurate predictions for the price of Ethereum to the [Challenge DF program](https://df.oceandao.org/challenge-df), they have a chance to win OCEAN rewards by being in the top 3 submissions based on predicted value accuracy. 
 
 These rewards are classified as [Challenge DF](../rewards/df-intro.md#what-is-challenge-df) rewards since they require active participation in the challenge. Rewards can be claimed every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 

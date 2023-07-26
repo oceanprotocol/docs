@@ -15,7 +15,7 @@ You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farm
 
 When you allocate to assets that sell, then **you get a portion of the sales**!
 
-You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/datafarming).
+You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/volume-df).
 
 ### The Superpowers of veOCEAN
 
