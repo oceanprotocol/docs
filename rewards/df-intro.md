@@ -16,6 +16,8 @@ OCEAN rewards are paid out at the end of each week to Data Farmers through two d
 
 These two reward streams produce different variable APYs.  
 
+To receive a competitve short-term APYs, veOCEAN requires users to make long-term commitments.
+
 Rewards are paid out at the end of each round.
 
 #### Splitting the Pie
@@ -25,7 +27,6 @@ Each Data Farming round has a pool of OCEAN rewards, where 50% of the pool is pa
 | Passive Rewards | Active Rewards |
 | --------------- | -------------- |
 | 50%             | 50%            |
-
 
 <figure><img src="../.gitbook/assets/rewards/df-reward-streams.png" alt=""><figcaption><p>Rewards Page overview for each stream.</p></figcaption></figure>
 
