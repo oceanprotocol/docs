@@ -61,7 +61,7 @@ Volume DF rewards are governed and defined by the [Reward Function](df-intro.md#
 
 #### Estimating APY
 
-To a get a good sense for how much APY you'll make, we recommend you understand the details of [how veOCEAN works](df-veocean.md). This will give you a basis for the calculations and provide you with an outline for what to expect in terms of rewards over time.  
+To get a good sense for how much APY you'll make, we recommend you understand the details of [how veOCEAN works](df-veocean.md). This will give you a basis for the calculations and provide you with an outline for what to expect in terms of rewards over time.  
 
 You can find the [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) user guide, calculate a reward schedule, and compare your lock up period with others.  
 
