@@ -48,6 +48,16 @@ Whatever your scenario, there may be some risk to delegating because the rewards
 
 The guide on [how to Delegate](../user-guides/data-farming/how-to-delegate.md) shows how to provide another wallet with 100% of your allocation power.
 
+### What are Publisher Rewards?
+
+<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
+
+Volume DF strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
+
+How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
+
+You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
+
 ### How Rewards are Calculated
 
 The Reward Function (RF) governs how active rewards are allocated to Data Farmers.
@@ -59,16 +69,6 @@ The Reward Function (RF) governs how active rewards are allocated to Data Farmer
 1. When DF restarts each Thursday, the global allocation towards each asset resets back to zero and then starts counting up again until the end of the round. After allocating your veOCEAN to different datasets, it will take time for your voting power to be accounted for. 
 
 For mathematicians and coders, you can find this code inside [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df_py/volume/calc_rewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)!
-
-### What are Publisher Rewards?
-
-<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
-
-Volume DF strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
-
-How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
-
-You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
 
 ### What are Ranked Rewards?
 

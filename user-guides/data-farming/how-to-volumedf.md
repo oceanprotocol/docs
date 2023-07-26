@@ -18,7 +18,7 @@ We'll show you how!
 
 #### Step 1 - Navigate to the Data Farming dApp
 
-- Go to https://df.oceandao.org
+- Go to [https://df.oceandao.org](https://df.oceandao.org)
 
 #### Step 2 - Connect your wallet
 
