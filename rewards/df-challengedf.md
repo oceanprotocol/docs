@@ -22,7 +22,8 @@ _Total - 5000 OCEAN_
 
 ### What are the base rules?
 
-- A fresh challenge begins and concludes every week.
+- A fresh challenge [begins and concludes every week](df-intro.md#weekly-rounds).
+- You have to submit your entry before the deadline.
 - At the beginning of each week, a predetermined amount of OCEAN tokens is allocated as rewards.
 - The rewards are divided into specific amounts for the top three positions.
 - The individuals who submit the top three entries will receive rewards, and their wallet addresses will be showcased within the Data Farming dapp.
