@@ -12,7 +12,7 @@ Ocean Protocol's open-source tools are useful in a variety of DeFi applications.
 
 ## Data Farming - Challenge DF 📈
 
-Data Farming offers a weekly rewards via [Challenge DF](../../rewards/df-challengedf.md), a challenge where users predict the price of Ethereum and win prizes 💰 based on accuracy.
+Data Farming offers a weekly rewards via [Challenge DF](../rewards/df-challengedf.md), a challenge where users predict the price of Ethereum and win prizes 💰 based on accuracy.
 
 In this competition, participants use machine learning to submit future ETH prices for the next 12 hours as accurately as possible. They upload these predictions to Ocean Market as data NFTs.
 
