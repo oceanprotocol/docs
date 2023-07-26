@@ -14,9 +14,10 @@ If you're eager to consume data and create valuable assets for publishing but un
 Data Farming offers rewards to data scientists who participate in weekly challenges. We provide the rules and rewards, allowing you to focus on delivering high-quality results.  
 
 **Prizes:**
-1st Place - 2500 OCEAN
-2nd Place - 1500 OCEAN
-3rd Place - 1000 OCEAN
+- 1st Place - 2500 OCEAN
+- 2nd Place - 1500 OCEAN
+- 3rd Place - 1000 OCEAN
+
 _Total - 5000 OCEAN_
 
 ### What are the base rules?
