@@ -28,7 +28,9 @@ It may help for you to review the user guide on [how to estimate APY](../user-gu
 
 ### Passive Rewards
 
-Passive Rewards is the first reward stream within Data Farming.
+Passive Rewards is the first reward stream within Data Farming.  
+
+It's a fixed stream that focuses on incentivizing participants to easily onboard and help the protocol grow.
 
 At a minimum, Data Farmers earn [Passive Rewards](df-intro.md#what-are-passive-rewards) for locking their OCEAN.  
 
@@ -40,9 +42,13 @@ Once your tokens are locked up, you can then learn [how to claim rewards](../use
 
 ### Active Rewards
 
-Active Rewards is the second reward streamm within Data Farming.
+Active Rewards is the second reward streamm within Data Farming.  
 
-For participants that are more engaged and want to increase their yield, the [Active Rewards](df-intro.md#what-are-active-rewards) stream is broken down into multiple substreams. This offers contributors a variety of ways to help Ocean Protocol grow and increase your Data Farming rewards:
+It's an evolving stream that focuses on driving fundamental traction and growth of the protocol.  
+
+For participants that are more engaged and want to increase their yield, the [Active Rewards](df-intro.md#what-are-active-rewards) stream is broken down into multiple substreams.  
+
+This offers contributors a variety of ways to help Ocean Protocol grow and increase your Data Farming rewards:
 1. Volume DF
 1. Challenge DF
 

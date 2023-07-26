@@ -41,11 +41,13 @@ veOCEAN holders can generate yield completely passively if they wish, though the
 
 ### What are Active Rewards?
 
-Active Rewards are OCEAN rewards paid to contributors actively working to improve Ocean Protocol.  
+Active Rewards is an evolving program that focuses on providing incentives to key areas of the protocol that support traction and growth.
+
+Rewards are paid in OCEAN to contributors actively working to improve Ocean Protocol.  
 
 **Active Rewards** is then composed of two sub-streams:
 1. 5,000 OCEAN is paid out to Challenge DF.
-2. 70,000 OCEAN remainder is paid out to Volume DF.  
+2. 70,000 OCEAN is paid out to Volume DF.  
 
 | Challenge DF | Volume DF |
 | --------------- | -------------- |
