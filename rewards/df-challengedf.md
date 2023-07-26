@@ -25,8 +25,11 @@ _Total - 5000 OCEAN_
 - A fresh challenge [begins and concludes every Thursday](df-intro.md#weekly-rounds).
 - You have to submit your entry before the deadline.
 - At the beginning of each week, a predetermined amount of OCEAN tokens is allocated as rewards.
+- Competitors need to submit 12 predictions by using a DataNFT to share data.
 - The rewards are divided into specific amounts for the top three positions.
 - The individuals who submit the top three entries will receive rewards, and their wallet addresses will be showcased within the Data Farming dapp.
+
+For the full details on how to submit, please read the [Where to start](#where-to-start) section.
 
 ### What do I gain from this?
 
@@ -38,11 +41,11 @@ _Total - 5000 OCEAN_
 
 ### Where to start?
 
-Head over to the [Challenges Page](https://df.oceandao.org/challenge-df) to learn more about Challenge DF, how to submit, and to see historical results.
+Head over to the [Challenges Page](https://df.oceandao.org/challenge-df) to learn more about Challenge DF, see historical results, and find out where you go to submit.
 
-If you're looking for a step-by-step guide on everything from understanding what a challenge entails to claiming your well-deserved rewards, be sure to check out [how to farm Challenge DF rewards](../user-guides/data-farming/how-to-challengedf.md). It will provide you with all the necessary information you need to make the most out of the challenges.
+If you're looking for a step-by-step guide on what a challenge entails and how to claiming your well-deserved rewards, check out the [Challenge DF  user guide](../user-guides/data-farming/how-to-challengedf.md). It will provide you with all the necessary information you need to make the most out of the challenges.
 
-For a direct link to the Challenge DF README, [click here](https://github.com/oceanprotocol/predict-eth/blob/main/challenges/challenge-df.md).
+For a direct link to the Challenge DF README that you'll be using to submit your predictions, [click here](https://github.com/oceanprotocol/predict-eth/blob/main/challenges/challenge-df.md).
 
 ### Good lock and happy coding!
 
