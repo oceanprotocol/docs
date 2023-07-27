@@ -22,7 +22,7 @@ Anyone is welcomed to participate.
 
 The primary objective of the [Passive Rewards](../../rewards/df-intro.md#what-are-passive-rewards) stream is to provide an accessible way for anyone to use OCEAN and help the protocol grow.
 
-In [the veOCEAN user guide](user-guides/data-farming/how-to-farm-veOCEAN.md), you'll learn more about the Passive Rewards stream and how to get veOCEAN.
+In [the veOCEAN user guide](how-to-veocean.md), you'll learn more about the Passive Rewards stream and how to get veOCEAN.
 
 ## Active Rewards stream & Substreams
 
@@ -38,7 +38,7 @@ You can receive OCEAN rewards by allocating veOCEAN voting power to high-quality
 
 Allocation power can also be increased via delegation. The Data Farming dApp [Delegate Page](https://df.oceandao.org/delegate) lets you easily manage delegations.
 
-For more information on how to get started and detailed instructions, please refer to the [Volume DF user guide](how-to-farm-volumedf.md) section.
+For more information on how to get started and detailed instructions, please refer to the [Volume DF user guide](how-to-volumedf.md) section.
 
 ### Challenge DF Substream
 
@@ -46,4 +46,4 @@ If you are a data scientist and enjoy tackling challenging problems, this is the
 
 This opportunity allows you to explore the capabilities offered by Ocean Protocol to build algorithms, publish data assets, and to gain valuable exposure. As your models and skills improve, you can begin monetizing your work.
 
-For detailed instructions and information on how to get started, please refer to the [Challenge DF user guide](how-to-farm-challengedf.md).
+For detailed instructions and information on how to get started, please refer to the [Challenge DF user guide](how-to-challengedf.md).
