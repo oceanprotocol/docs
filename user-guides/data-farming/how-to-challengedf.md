@@ -16,7 +16,7 @@ These are the steps to get involved:
 
 #### Step 1 - Navigate to the Data Farming dApp
 
-Go to https://df.oceandao.org
+Go to [Data Farming dApp](https://df.oceandao.org)
 
 #### Step 2 - Go to the "Challenges" page
 
