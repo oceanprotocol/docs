@@ -12,7 +12,7 @@ Rewards are earned by users that hold and use their veOCEAN to help the protocol
 
 To receive competitve short-term APYs, veOCEAN requires users to make long-term commitments.
 
-First, make sure that you [understand the basics of APY](../../rewards/df-veocean.md) and how veOCEAN works.
+First, make sure that you [understand the basics of APY](../../rewards/df-veocean.md#veocean-and-your-apy) and how veOCEAN works.
 
 Now that we got that out of the way, let's work through the examples and keep it as simple as possible.
 
