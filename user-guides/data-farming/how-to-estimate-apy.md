@@ -36,6 +36,6 @@ To help solve this challenge, [we built a dashboard](https://df.oceandao.org/vol
 
 <figure><img src="../../.gitbook/assets/rewards/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
-You can also [learn how rewards are calculated here](../../rewards/df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
+You can also [learn how rewards are calculated](../../rewards/df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
 
 Finally, you can [review the implementation inside df-web](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how the APYs on the UI are calculated.

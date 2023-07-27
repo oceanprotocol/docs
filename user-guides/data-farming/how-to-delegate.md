@@ -16,9 +16,13 @@ By delegating your active rewards to a single address that more efficiently mana
 
 When you delegate, you transfer 100% of your veOCEAN Allocation Power for a limited period. This means that you can manage your active participation **without needing to reallocate or pay fees**!  
 
-Note that if you delegate 100% of your Allocation Power, your allocations will not count until the delegation expires. The delegation expiration date is the same as your veOCEAN Lock End Date at the time of delegation. If necessary, you can extend your Lock End Date before delegating. You can also cancel your delegation at any time 💪.   
+{% hint style="info" %}
+If you delegate 100% of your Allocation Power, your allocations will not count until the delegation expires. The delegation expiration date is the same as your veOCEAN Lock End Date at the time of delegation. If necessary, you can extend your Lock End Date before delegating. You can also cancel your delegation at any time 💪.   
 
-Once delegated, rewards will be sent to the wallet address you delegated to. Then, the delegation receiver is in charge of your active rewards and is responsible for returning those back to you should you choose to do so.  
+Once delegated, rewards will be sent to the wallet address you delegated to. Then, the delegation receiver is in charge of your active rewards and is responsible for returning those back to you should you choose to do so.
+
+{% endhint %}
+
 
 ### Steps to Delegate
 
