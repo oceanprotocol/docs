@@ -114,9 +114,9 @@ Furthermore, provider fees are not restricted to data consumption; they can also
 
 <details>
 
-<summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-max-out-yield.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
+<summary><mark style="color:purple;">Earn Rewards</mark><br><br>The <a href="../rewards/df-volumedf.md">Data Farming</a> initiative is a key feature of Ocean Protocol that empowers participants to earn <a href="../rewards/">rewards</a> while contributing to a decentralized data economy. By staking Ocean tokens and actively participating in data markets, users play a vital role in enhancing the availability and accessibility of valuable data assets</summary>
 
-Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/README.md) while making a meaningful impact in the data marketplace.
+Through the Data Farming initiative, you are incentivized to lock Ocean tokens for [veOcean](../rewards/df-veocean.md). By staking your tokens, you not only support the growth and sustainability of the ecosystem but also earn a share of the generated incentives💰. The Data Farming initiative offers participants a unique opportunity to earn [rewards](../rewards/README.md) while making a meaningful impact in the data marketplace.
 
 Participating in the Data Farming initiative demonstrates a commitment to the principles of **fairness**, **transparency**, and **collaboration** that underpin Ocean Protocol. It allows you to actively engage with the ecosystem, promoting innovation, and driving the evolution of the decentralized data economy.
 

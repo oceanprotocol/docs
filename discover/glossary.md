@@ -18,7 +18,7 @@ Ocean Protocol is a decentralized data exchange protocol that enables individual
 
 <details>
 
-<summary>$OCEAN</summary>
+<summary>OCEAN</summary>
 
 The Ocean Protocol token (OCEAN) is a utility token used in the Ocean Protocol ecosystem. It serves as a medium of exchange and a unit of value for data services in the network. Participants in the Ocean ecosystem can use OCEAN tokens to buy and sell data, stake on data assets, and participate in the governance of the protocol.
 
@@ -137,17 +137,27 @@ In exchange for locking tokens, users can earn rewards. The amount of reward dep
 
 <details>
 
-<summary>DF Passive Rewards</summary>
+<summary>Passive Rewards</summary>
 
-When a user locks their OCEAN tokens for a finite period of time, they get veOCEAN tokens in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN [rewards](../rewards/df-intro.md#what-are-active-rewards). Because rewards are generated without human intervention, these are called "passive" OCEAN rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user locks their OCEAN tokens for a finite period of time, they get veOCEAN tokens in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../rewards/df-intro.md#what-are-passive-rewards). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
 <details>
 
-<summary>DF Active Rewards</summary>
+<summary>Volume DF</summary>
 
-When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, they are categorized as "active" [rewards](../rewards/df-intro.md#what-are-passive-rewards) instead of passive rewards. OCEAN rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../rewards/df-intro.md#what-is-volume-df) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+
+</details>
+
+<details>
+
+<summary>Challenge DF</summary>
+
+When users submit accurate predictions for the price of Ethereum to the [Challenge DF program](https://df.oceandao.org/challenge-df), they have a chance to win OCEAN rewards by being in the top 3 submissions based on predicted value accuracy. 
+
+These rewards are classified as [Challenge DF](../rewards/df-intro.md#what-is-challenge-df) rewards since they require active participation in the challenge. Rewards can be claimed every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 

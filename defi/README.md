@@ -10,11 +10,13 @@ coverY: 0
 
 Ocean Protocol's open-source tools are useful in a variety of DeFi applications. Here we show you how to capitalize with Ocean Protocol tech in several ways using crypto trading!
 
-## Predicting the Price of ETH 📈
+## Data Farming - Challenge DF 📈
 
-We offer a Predict ETH data challenge where participants can win prizes 💰 for making accurate ETH price predictions. Participants use machine learning to extrapolate ETH prices for the next 12 hours as accurately as possible and upload these predictions to the Ocean Market as data NFTs. It's a win-win for both Ocean Protocol and challenge participants! This challenge promotes more valuable data feeds on the Ocean Market and participants gain cash prizes!
+Data Farming offers a weekly rewards via [Challenge DF](../rewards/df-challengedf.md), a challenge where users predict the price of Ethereum and win prizes 💰 based on accuracy.
 
-Check our [challenges page](https://oceanprotocol.com/challenges) to see if there is an active Predict ETH challenge!
+In this competition, participants use machine learning to submit future ETH prices for the next 12 hours as accurately as possible. They upload these predictions to Ocean Market as data NFTs.
+
+Check our [Challenge DF page](https://df.oceandao.org/challenge-df) and join the active Predict ETH challenge!
 
 Wondering how to start predicting the price of ETH? We have a [blogpost](https://blog.oceanprotocol.com/capitalize-with-ocean-protocol-a-predict-eth-tutorial-b2da136633f0?source=search\_post---------0----------------------------) 📖 for that!
 

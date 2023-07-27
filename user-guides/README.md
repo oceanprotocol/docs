@@ -38,24 +38,32 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 
 Earn rewards by obtaining veOCEAN, farm yield by curating datasets, and optimize your APY by publishing Data & Algorithm NFTs on-chain. ⛓️
 
-{% content-ref url="get-started-df.md" %}
-[get-started-df.md](get-started-df.md)
+{% content-ref url="data-farming/README.md" %}
+[data-farming/README.md](data-farming/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="get-started-df.md" %}
-[get-started-df.md](get-started-df.md)
+{% content-ref url="data-farming/how-to-veocean.md" %}
+[data-farming/how-to-veocean.md](data-farming/how-to-veocean.md)
 {% endcontent-ref %}
 
-{% content-ref url="claim-ocean-rewards.md" %}
-[claim-ocean-rewards.md](claim-ocean-rewards.md)
+{% content-ref url="data-farming/how-to-estimate-apy.md" %}
+[data-farming/how-to-data-farm-volumedf.md](data-farming/how-to-estimate-apy.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-data-farm.md" %}
-[how-to-data-farm.md](how-to-data-farm.md)
+{% content-ref url="data-farming/how-to-claim-rewards.md" %}
+[data-farming/how-to-claim-rewards.md](data-farming/how-to-claim-rewards.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-df-estimate-apy.md" %}
-[how-to-df-estimate-apy.md](how-to-df-estimate-apy.md)
+{% content-ref url="data-farming/how-to-volumedf.md" %}
+[data-farming/how-to-volumedf.md](data-farming/how-to-volumedf.md)
+{% endcontent-ref %}
+
+{% content-ref url="data-farming/how-to-delegate.md" %}
+[data-farming/how-to-delegate.md](data-farming/how-to-delegate.md)
+{% endcontent-ref %}
+
+{% content-ref url="data-farming/how-to-challengedf.md" %}
+[data-farming/how-to-challengedf.md](data-farming/how-to-challengedf.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺
