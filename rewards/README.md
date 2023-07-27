@@ -42,7 +42,7 @@ Once your tokens are locked up, you can then learn [how to claim rewards](../use
 
 ### Active Rewards
 
-Active Rewards is the second reward streamm within Data Farming.  
+Active Rewards is the second reward stream within Data Farming.  
 
 It's an evolving stream that focuses on driving fundamental traction and growth of the protocol.  
 
