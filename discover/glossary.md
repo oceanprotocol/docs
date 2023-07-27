@@ -58,7 +58,7 @@ Transaction volume(TV) is often used interchangeably with data consume volume (D
 
 </details>
 
-<details>initialEpochData
+<details>
 
 <summary><strong>Sub-licensee</strong></summary>
 
