@@ -72,7 +72,7 @@ Please note, once delegated, rewards will be sent to the wallet address you dele
 
 In this substream, Data Scientists can win competitions by participating in [Challenge DF](df-challengedf.md). You will obtain overview of what it is, how it works, the rules, and other details.
 
-Challenge DF requires participants to submit algorithms that predict the price of ETH correctly in order to win rewards.
+Challenge DF requires participants to submit predictions as close to the price of ETH as possible in order to be in the top 3 participants to win rewards.
 
 The user guide on [how to Challenge DF](../user-guides/data-farming/how-to-challengedf.md) will take you step-by-step through the process of submitting your algorithm into the competition.
 
