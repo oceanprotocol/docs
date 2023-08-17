@@ -26,6 +26,7 @@ The below tabs show partially filled `.env` file content for some of the support
 {% tabs %}
 {% tab title="Mainnet" %}
 {% code title=".env" %}
+
 ```bash
 # Mandatory environment variables
 
@@ -38,11 +39,13 @@ PRIVATE_KEY=<secret>
 AQUARIUS_URL=https://v4.aquarius.oceanprotocol.com/
 PROVIDER_URL=https://v4.provider.oceanprotocol.com
 ```
+
 {% endcode %}
 {% endtab %}
 
 {% tab title="Polygon" %}
 {% code title=".env" %}
+
 ```bash
 # Mandatory environment variables
 
@@ -55,11 +58,13 @@ PRIVATE_KEY=<secret>
 AQUARIUS_URL=https://v4.aquarius.oceanprotocol.com/
 PROVIDER_URL=https://v4.provider.oceanprotocol.com
 ```
+
 {% endcode %}
 {% endtab %}
 
 {% tab title="Local (using Barge)" %}
 {% code title=".env" %}
+
 ```bash
 # Mandatory environment variables
 OCEAN_NETWORK=development
@@ -70,6 +75,7 @@ PROVIDER_URL=http://172.15.0.4:8030
 # Replace PRIVATE_KEY if needed
 PRIVATE_KEY=0xc594c6e5def4bab63ac29eed19a134c130388f74f019bc74b8f4389df2837a58
 ```
+
 {% endcode %}
 {% endtab %}
 {% endtabs %}
@@ -87,10 +93,12 @@ Let's install Ocean.js library into your current project by running:
 {% tabs %}
 {% tab title="Terminal" %}
 {% code overflow="wrap" %}
+
 ```bash
 npm init
 npm i @oceanprotocol/lib@latest dotenv crypto-js ethers@5.7.4 @truffle/hdwallet-provider
 ```
+
 {% endcode %}
 {% endtab %}
 {% endtabs %}
@@ -104,69 +112,66 @@ Create the configuration file in the working directory i.e. at the same path whe
 {% tabs %}
 {% tab title="config.js" %}
 {% code title="config.js" %}
+
 ```javascript
-require('dotenv').config();
-const { Aquarius, ZERO_ADDRESS, ConfigHelper, configHelperNetworks } = require('@oceanprotocol/lib');
-const { providers } = require('ethers')
-const ethers = require('ethers');
-async function oceanConfig(){
+require("dotenv").config();
+const {
+	Aquarius,
+	ConfigHelper,
+	configHelperNetworks,
+} = require("@oceanprotocol/lib");
+const ethers = require("ethers");
+import fs from "fs";
+import { homedir } from "os";
 
-  // Get configuration for the given network
-  const provider = new providers.JsonRpcProvider(
-    process.env.OCEAN_NETWORK_URL || configHelperNetworks[1].nodeUri
-  )
+async function oceanConfig() {
+	const provider = new ethers.providers.JsonRpcProvider(
+		process.env.OCEAN_NETWORK_URL || configHelperNetworks[1].nodeUri
+	);
+	const publisherAccount = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 
-  const ethersProvider = new ethers.Wallet(
-    process.env.PRIVATE_KEY,
-    provider
-  );
-  
-  const publisherAccount = wallet.connect(provider);
+	let oceanConfig = new ConfigHelper().getConfig(
+		parseInt(String((await publisherAccount.provider.getNetwork()).chainId))
+	);
+	const aquarius = new Aquarius(oceanConfig?.metadataCacheUri);
 
-  let oceanConfig = new ConfigHelper().getConfig(
-    parseInt(String((await publisherAccount.provider.getNetwork()).chainId))
-  )
-  const aquarius = new Aquarius(oceanConfig?.metadataCacheUri)
+	// If using local development environment, read the addresses from local file.
+	// The local deployment address file can be generated using barge.
+	if (process.env.OCEAN_NETWORK === "development") {
+		const addresses = JSON.parse(
+			// eslint-disable-next-line security/detect-non-literal-fs-filename
+			fs.readFileSync(
+				process.env.ADDRESS_FILE ||
+					`${homedir}/.ocean/ocean-contracts/artifacts/address.json`,
+				"utf8"
+			)
+		).development;
 
-  // If using local development environment, read the addresses from local file.
-  // The local deployment address file can be generated using barge.
-  if (process.env.OCEAN_NETWORK === 'development') {
-    const addresses = JSON.parse(
-      // eslint-disable-next-line security/detect-non-literal-fs-filename
-      fs.readFileSync(
-        process.env.ADDRESS_FILE ||
-          `${homedir}/.ocean/ocean-contracts/artifacts/address.json`,
-        'utf8'
-      )
-    ).development
+		oceanConfig = {
+			...oceanConfig,
+			oceanTokenAddress: addresses.Ocean,
+			fixedRateExchangeAddress: addresses.FixedPrice,
+			dispenserAddress: addresses.Dispenser,
+			nftFactoryAddress: addresses.ERC721Factory,
+			opfCommunityFeeCollector: addresses.OPFCommunityFeeCollector,
+		};
+	}
 
-    oceanConfig = {
-      ...oceanConfig,
-      oceanTokenAddress: addresses.Ocean,
-      poolTemplateAddress: addresses.poolTemplate,
-      fixedRateExchangeAddress: addresses.FixedPrice,
-      dispenserAddress: addresses.Dispenser,
-      nftFactoryAddress: addresses.ERC721Factory,
-      sideStakingAddress: addresses.Staking,
-      opfCommunityFeeCollector: addresses.OPFCommunityFeeCollector
-    };
-  }
+	oceanConfig = {
+		...oceanConfig,
+		publisherAccount: publisherAccount,
+		consumerAccount: publisherAccount,
+		aquarius: aquarius,
+	};
 
-  oceanConfig = {
-    ...oceanConfig,
-    publisherAccount: publisherAccount,
-    consumerAccount: consumerAccount,
-    stakerAccount: stakerAccount,
-    aquarius: aquarius
-  };
-
-  return oceanConfig
-};
+	return oceanConfig;
+}
 
 module.exports = {
-  oceanConfig
-}
+	oceanConfig,
+};
 ```
+
 {% endcode %}
 {% endtab %}
 {% endtabs %}
