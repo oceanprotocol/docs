@@ -346,6 +346,6 @@ You can publish Fixed Price Assets to any chain that Ocean supports.
 
 <summary>Adding new question</summary>
 
-Here is the response
+Changing the response
 
 </details>
