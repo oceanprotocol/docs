@@ -338,6 +338,6 @@ veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
 
 <summary>Which chain supports Fixed Price Assets?</summary>
 
-You can publish Fixed Price Assets to any chain that Ocean supports.
+You can publish Fixed Price Assets to any chain that Ocean supports
 
 </details>
