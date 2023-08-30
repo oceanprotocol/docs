@@ -24,6 +24,6 @@ By adopting the ERC20 standard for datatokens, Ocean Protocol ensures compatibil
 
 Data owners and consumers can engage with datatokens in numerous ways. Datatokens can be acquired through transfers or obtained by purchasing them on dedicated marketplaces or exchanges. Once in possession of the datatokens, users gain access to the corresponding dataset, enabling them to utilize the data within the boundaries set by the associated license terms.
 
-Once someone has generated datatokens, they can be used in any ERC20 exchange, centralized or decentralized. In addition, Ocean provides a convenient default marketplace that is tuned for data: **Ocean Market**. It’s a vendor-neutral reference data marketplace for use by the Ocean community.
+Once someone has generated datatokens, they can be used in any ERC20 exchange, centralized or decentralized. In addition, Ocean provides a convenient default marketplace that is tuned for data: [Ocean Market](https://market.oceanprotocol.com). It’s a vendor-neutral reference data marketplace for use by the Ocean community.
 
 You can publish a [data NFT](data-nfts.md) initially with no ERC20 datatoken contracts. This means you simply aren’t ready to grant access to your data asset yet (sub-license it). Then, you can publish one or more ERC20 datatoken contracts against the data NFT. One datatoken contract might grant consume rights for 1 day, another for 1 week, etc. Each different datatoken contract is for different license terms.
