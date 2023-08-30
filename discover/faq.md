@@ -341,3 +341,28 @@ veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
 You can publish Fixed Price Assets to any chain that Ocean supports.
 
 </details>
+
+<details>
+
+  <summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
+
+OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose.
+
+
+</details>
+
+<details>
+
+  <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
+
+Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+
+</details>
+
+<details>
+
+  <summary>Does the OCEAN token also have governance functionality?</summary>
+
+During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+
+</details>
