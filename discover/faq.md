@@ -341,3 +341,89 @@ veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
 You can publish Fixed Price Assets to any chain that Ocean supports.
 
 </details>
+
+<details>
+
+<summary> Which blockchain network currently has the highest liquidity for Ocean?</summary>
+
+The Ethereum network has the highest liquidity for $OCEAN.
+  
+</details>
+
+<details>
+
+  <summary>Is there a stablecoin backed by OCEAN tokens?</summary>
+
+  No, there is no stablecoin issued that is backed using $OCEAN.
+  
+</details>
+
+<details>
+
+<summary>Does the increasing number of transactions and demand for OCEAN tokens result in a dampening effect due to higher prices?</summary>
+
+$OCEAN token is designed as a utility token, which becomes deflationary when transaction volume reaches scale and exceeds the value of $OCEAN being emitted via Data Farming. Learn more here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
+
+  
+</details>
+
+<details>
+
+<summary>Could you explain the impact of EUROe on the utility of OCEAN? If transactions are made with EUROe within the Gen-X and GAIA-X ecosystem, how does it affect the use and value of OCEAN?</summary>
+
+3rd party markets such as Gaia-X, BDP, and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable, and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to the plan set out ⁣
+⁣
+Here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
+  
+</details>
+
+<details>
+
+<summary>Is it possible to use the Ocean tech stack without involving the OCEAN token? If fees are paid in other currencies, are they swapped to OCEAN to some extent? How does this impact the passive revenues of veOCEAN?</summary>
+
+Ocean Market currently supports only $OCEAN for the exchange of services. Markets such as BDP and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+  
+</details>
+
+<details>
+
+<summary>How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?</summary>
+
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate. Information about the Ocean token dynamics can be found here: https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9. Also, 5% of Ocean network revenue is assigned for burning.
+  
+</details>
+
+<details>
+
+<summary>Does the OCEAN token also have governance functionality?</summary>
+
+During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+
+  
+</details>
+
+<details>
+
+<summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
+
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
+
+  
+</details>
+
+<details>
+
+<summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
+
+The $OCEAN token is used as the glue for the Ocean ecosystem. A 0.1% fee is applied to all transactions performed using Ocean components. This fee is used for the further development of Ocean technology and for the buy-and-burning of the Ocean token. more info here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9
+  
+</details>
+
+<details>
+
+<summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
+
+Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+
+  
+</details>
