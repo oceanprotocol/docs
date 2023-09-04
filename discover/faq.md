@@ -423,7 +423,60 @@ The $OCEAN token is used as the glue for the Ocean ecosystem. A 0.1% fee is appl
 
 <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
 
+
+
 Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
 
+  
+</details>
+
+
+<details>
+
+<summary>When is the next token release scheduled?</summary>
+
+There will not be a next release for the token. To date, all tokens have been minted and approximately 720 million OCEAN are allocated towards data farming and network rewards. More info here - https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣
+  
+</details>
+
+<details>
+
+<summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
+
+All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
+  
+</details>
+
+
+<details>
+
+<summary>Is there a burn mechanism for OCEAN tokens?</summary>
+
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
+
+</details>
+
+<details>
+
+<summary>Is OCEAN the only currency used exchanging data?</summary>
+
+Ocean Market currently supports only $OCEAN for the exchange of services. Markets such as BDP and Acentrik use another currency for the exchange of services.
+  
+</details>
+
+
+<details>
+
+<summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
+
+OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose. ⁣
+
+  
+</details>
+
+
+<details>
+
+<summary></summary>
   
 </details>
