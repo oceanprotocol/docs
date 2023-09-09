@@ -115,6 +115,36 @@ You can learn more about what we are doing in 2023 in this blog post -https://bl
   
 </details>
 
+<details>
+
+<summary>Is there a real-time bot that tracks dataset sales on Ocean Protocol?</summary>
+
+Not to our knowledge. If you find something, please share it with us :) 
+  
+</details>
+
+<details>
+
+<summary>What is the 2023 roadmap of Ocean Protocol ?</summary>
+
+The following blog post provides the 2023 goals and plans for the Ocean core team. https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051
+
+</details>
+
+
+<details>
+
+<summary>Who is the CEO of Ocean Protocol?</summary>
+
+
+Ocean Protocol is an open-source project with no official lead. The protocol is permissionless and all the code and components are available for free. For administrative purposes, there is a limited liability non-profit company registered in Singapore with three directors including Trent McConaghy and Bruce Pon, co-founders of Ocean.
+  
+</details>
+
+
+
+
+
 ### Technical Questions
 
 <details>
@@ -248,6 +278,115 @@ Checkout our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what
 
 ## Data Farming FAQ
 
+<details>
+
+<summary>Is there historical data for Data Farming APYs to get an idea of what to expect?</summary>
+
+Yes. Just,  Scroll down to the "Data Farming History" Section.
+https://df.oceandao.org/activerewards
+  
+</details>
+
+
+
+
+
+
+<details>
+
+<summary>Is there a dashboard to view the volume of DF-main?</summary>
+
+Yes
+
+DF Dashboard (per round)
+https://df.oceandao.org/datafarming
+
+Autobot (historical)
+https://autobotocean.com/volumes
+
+
+  
+</details>
+
+
+
+
+<details>
+
+
+<summary>Do we still receive rewards if there is no consume volume?</summary>
+
+Yes, you will still earn Passive Rewards. However, Active rewards need "Data Consume Volume" ⁣
+⁣
+More Info here - https://docs.oceanprotocol.com/user-guides/data-farming ⁣
+
+
+</details>
+
+
+
+
+
+
+<details>
+
+
+<summary>I had to pay $13 to claim 34 Ocean passive rewards. Additionally, I made 0 from last week's active rewards, despite 32 sales and a large allocation. Can you explain why?</summary>
+
+The amount of rewards are highly dependant on the locking period. the longer you lock your tokens, he greater the rewards. You can use one this document to estimate the amount you'll get: https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy
+
+Likely because the sales were small and only 0.01% of sales volume is considered for rewards.
+
+This data and information is well documented in the Farms page.
+https://df.oceandao.org/datafarming
+  
+</details>
+
+
+
+
+
+<details>
+
+<summary>For data farming, will my stacked Ocean tokens be locked, or can I withdraw them anytime?</summary>
+
+One thing to keep in mind is that your locked amount cannot be withdrawn before the lock ends. Your rewards in return can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
+
+  
+</details>
+
+
+
+
+
+
+<details>
+
+
+<summary>Can I allocate my veOCEAN tokens for farming at any time, including now? </summary>
+
+Allocations happen instantly. ⁣
+⁣
+However, your allocation power is counted progressively throughout the week and requires you to leave it there for it to work. ⁣
+⁣
+Learn more here - https://docs.oceanprotocol.com/rewards/df-veocean ⁣
+  
+</details>
+
+
+<details>
+
+<summary>Is there any guidance or tutorial available on when and where to allocate veOCEAN for data farming active rewards?</summary>
+
+For sure, here is the intro tutorial:
+https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial.
+We cannot offer guidance related to where to allocate your tokens, that's your decision. Your tokens, your curated assets.
+
+  
+</details>
+
+
+
 
 <details>
 
@@ -258,6 +397,31 @@ They can be claimed/redeposited whenever you want. If you don't claim, they just
 
   
 </details>
+
+
+
+<details>Are active rewards higher than passive rewards?  If I engage in active Data farming will I earn less passive rewards?</details>
+
+Engaging in active data farming does not diminish your passive rewards. By default, you will receive your passive rewards, and in addition to that, you'll also earn active rewards on top.
+
+You have the flexibility to participate in every available reward stream.
+
+<details>
+
+<summary>What is the Data Farming APY? Can you provide a tutorial for staking OCEAN and information on APY and locking time?</summary>
+
+Active rewards are dependent on data assets actually making sales for you to receive rewards. If you have veOCEAN allocated to a data asset that doesn't get consumed/has no demand, you do not receive rewards.
+
+Tutorial.
+https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
+
+Calculator
+https://autobotocean.com/calculator
+
+</details>
+
+
+
 
 
 
@@ -362,6 +526,38 @@ Learn more here - https://docs.oceanprotocol.com/rewards/df-veocean
 
 <details>
 
+<summary>Are the veOCEAN tokens tradeable or have a market price?</summary>
+
+No. They cannot be traded, transferred, or sold. ⁣
+⁣
+You can delegate veOCEAN to others in order to facilitate farming, however, you need to understand how this works. ⁣
+⁣
+You can get the necessary info here - https://docs.oceanprotocol.com/user-guides/data-farming ⁣
+
+
+  
+</details>
+
+
+
+
+<details>
+
+<summary>Is there a way to check the duration and amounts of veOCEAN locked on-chain for all wallets?</summary>
+
+
+Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our documentation at this link: https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list. Feel free to run the script by clicking on the "run" button.
+
+  
+</details>
+
+
+
+
+
+
+<details>
+
 <summary>What is the official formula for the Linear Decay?</summary>
 
 The Linear Decay formula for veOCEAN can be expressed as follows in python.
@@ -405,6 +601,106 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 ## Staking FAQs
 
 <details>
+
+<summary>Could you explain the benefits of staking $OCEAN tokens and how the APY is calculated?</summary>
+Yes, You can find the details in these blog posts - ⁣
+⁣
+1) Benefits ⁣
+https://docs.oceanprotocol.com/rewards/veocean ⁣
+⁣
+2) Passive Rewards ⁣
+https://docs.oceanprotocol.com/rewards/df-intro ⁣
+⁣
+3) Emissions & APYs ⁣
+https://docs.oceanprotocol.com/rewards/df-emissions-apys ⁣
+
+  
+</details>
+
+
+
+
+<details>
+
+<summary>When I stake my Ocean tokens, do I need to restake them manually, or is it auto compound?</summary>
+
+They are not auto-compounded.
+
+They can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
+
+
+  
+</details>
+
+
+
+
+
+<details>
+
+<summary>Is it possible to participate only in passive income staking without participating in the active one? </summary>
+
+Yes. You are participating by default on the passive rewards when you lock your Ocean tokens.
+
+
+</details>
+
+
+
+
+<details>
+
+<summary>How much Ocean do I need to stake to earn interest?</summary>
+
+There is no minimum amount. The rewards will depend on the amount you lock.
+You will get passive rewards by default when you lock tokens. On top of that you can get active rewards if you actively participate in the program. Here are some resources:
+https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
+
+  
+</details>
+
+
+
+
+
+<details>
+
+<summary>Does the lock open at 00:00 on the unlock day?</summary>
+
+The lock opens at the time you locked your tokens. 
+  
+</details>
+
+
+
+
+<details>What is the best time to lock OCEAN to avoid high gas fees? Do I need to approve twice?
+
+
+<summary>What is the best time to lock OCEAN to avoid high gas fees? Do I need to approve twice? </summary>
+
+
+When gas prices are low, which you can check at https://www.useweb3.xyz/gas, the locking process occurs in two phases. Initially, you must approve the amount you wish to lock, and subsequently, you execute the lock transaction. If you've previously approved the desired amount for locking, there's no need to repeat the approval step. You only need to approve once, unless you intend to lock a higher amount than what you've already approved.
+
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+<details>
+
+
+
 
 <summary>What about passive stakers — people who just want to stake in one place and be done?</summary>
 
@@ -560,6 +856,22 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 </details>
 
 ## Chains FAQ
+
+<details>
+
+<summary> Which chain do most people stake on? What are the staking costs? </summary>
+
+You can only "stake" via eth mainnet.
+
+Data Farming Active Rewards has multi-chain support and you can farm assets on any chain.
+  
+</details>
+
+
+
+
+
+
 
 <details>
 
