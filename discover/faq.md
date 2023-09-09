@@ -559,12 +559,15 @@ They can be claimed/redeposited whenever you want. If you don't claim, they just
 </details>
 
 
-
-<details>Are active rewards higher than passive rewards?  If I engage in active Data farming will I earn less passive rewards?</details>
+<details>
+<summary>Are active rewards higher than passive rewards?  If I engage in active Data farming will I earn less passive rewards?</summary>
 
 Engaging in active data farming does not diminish your passive rewards. By default, you will receive your passive rewards, and in addition to that, you'll also earn active rewards on top.
 
 You have the flexibility to participate in every available reward stream.
+</details>
+
+
 
 <details>
 
@@ -579,9 +582,6 @@ Calculator
 https://autobotocean.com/calculator
 
 </details>
-
-
-
 
 
 <details>
