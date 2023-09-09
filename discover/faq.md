@@ -72,6 +72,49 @@ PS: [Fine-grained permissions](../developers/fg-permissions.md) are not integrat
 
 </details>
 
+
+<details>
+
+<summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
+
+
+
+Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+
+  
+</details>
+
+
+<details>
+
+<summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
+
+The Ocean Market has consistently served as a showcase for the practical application of Ocean technology. Moreover, it has the potential to set a precedent for the development of other marketplaces within the Ocean ecosystem.
+
+However, it's important to note that participants using the Ocean stack are subject to transaction fees, which vary depending on the chosen token, either 0.1% or 0.2%. These fees serve the dual purpose of furthering the development of Ocean technology and facilitating the buy-and-burning of the Ocean token. 
+</details>
+
+<details>
+
+<summary>Where can I find projects on Ocean's ecosystem?</summary>
+
+Yes, go to https://oceanprotocol.com/ecosystem
+  
+</details>
+
+
+<details>
+
+<summary>What is Ocean Protocol, and how is it related to artificial intelligence? What are the project's future goals?</summary>
+
+The mission of Ocean is to level the playing field around data & AI. 
+AI models need data; Ocean provides tools to help supply, manage, and monetize that data. 
+Ocean tokenizes access to data, enabling web3 wallets to hold keys to data, decentralized data exchanges, token-gated APIs, the provenance of data sharing, compute to data, and more. 
+The Ocean core team & Ocean community continue to evolve the stack and applications around it, which in turn drives traction.
+You can learn more about what we are doing in 2023 in this blog post -https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051a
+  
+</details>
+
 ### Technical Questions
 
 <details>
@@ -117,6 +160,9 @@ Consumers can click "buy" on an asset in Ocean Market to buy and redeem a datato
 Datatokens can also be sent from anyone who holds a datatoken for a particular asset.
 
 </details>
+
+
+
 
 ### Data Selling Questions
 
@@ -202,6 +248,22 @@ Checkout our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what
 
 ## Data Farming FAQ
 
+
+<details>
+
+
+<summary>Do we need to claim data farming rewards weekly? What happens when the lock period ends? Are rewards automatically claimed?</summary>
+
+They can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
+
+  
+</details>
+
+
+
+
+
+
 <details>
 
 <summary>What assets are eligible for Data Farming?</summary>
@@ -236,6 +298,66 @@ Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is 
 
 </details>
 
+
+<details>
+
+<summary>Is it possible to use the Ocean tech stack without involving the OCEAN token? If fees are paid in other currencies, are they swapped to OCEAN to some extent? How does this impact the passive revenues of veOCEAN?</summary>
+
+Ocean Market currently supports $OCEAN and $H2O for the exchange of services. Markets such as BDP and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+  
+</details>
+
+<details>
+
+
+<summary>What is the use of Autobotocean.com?</summary>
+
+Autobotocean.com can be used to explore Ocean-related metrics like $OCEAN locked vs time, data consume volume, and more.
+
+  
+</details>
+
+<details>
+
+<Summary>I locked my OCEAN for veOcean but can't see the rewards. What am I missing?</Summary>
+
+Please hang in there and stay patient, as it can take almost two weeks to receive your first rewards. 😊
+  
+</details>
+
+<details>
+
+<summary>What is the APY of DF?</summary>
+
+You can use this document to estimate your APY -  https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy
+Please keep in mind that the algorithm offers higher incentives for longer lock periods. So, the longer you lock your assets, the greater your rewards will be. Once you go through our documentation, you'll have a better understanding of how it all works.
+
+ 
+</details>
+
+<details>
+
+<summary>How does the data farming rewards work? Can rewards be claimed monthly or automatically deposited?</summary>
+
+Data Farming serves as the fundamental incentive system within Ocean Protocol, offering diverse opportunities for participants to contribute to the protocol's growth and success. This system is divided into two rewarding streams:
+
+1) Passive Rewards
+2) Active Rewards
+By actively participating in our available programs, you can earn both passive and active rewards. Your total rewards will be a combination of these two substreams.
+
+The best part is that you have full control over claiming or redepositing your rewards at your convenience. Unclaimed rewards accumulate over time without any loss.
+
+It's important to note that your veOCEAN balance will gradually decrease once you receive it. This decline occurs linearly over time until it reaches the Lock End Date. For instance, when your lock time has reached the halfway point, you will possess 50% of your initial veOCEAN balance. Once your lock time concludes, your veOCEAN balance will reach zero, allowing you to withdraw your OCEAN tokens.
+
+Learn more here - https://docs.oceanprotocol.com/rewards/df-veocean
+
+  
+</details>
+
+
+
+
+
 ## veOCEAN FAQ
 
 <details>
@@ -253,6 +375,32 @@ veOcean_balance = OCEAN_amount_locked * (your_unlock_timestamp — current_unix_
 To learn more about systems driving veOCEAN and Data Farming, please [visit our df-py github repository](https://github.com/oceanprotocol/df-py).
 
 </details>
+
+<details>
+
+<summary>Can I stake OCEAN tokens on the Binance Smart Chain protocol?</summary>
+
+1. veOCEAN exists on ETH mainnet only. 
+2. Data Farming Active Rewards has native multi-chain support.
+  
+</details>
+
+
+<details>
+
+<summary>What's the amount of veOcean one can get for locking 1 Ocean token?</summary>
+
+1 veOCEAN if you lock for 4 years. Learn more about VeOcean Here - https://docs.oceanprotocol.com/rewards/df-veocean ⁣
+
+  
+</details>
+
+
+
+
+
+
+
 
 ## Staking FAQs
 
@@ -272,7 +420,120 @@ Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well
 
 </details>
 
+
+<details>
+
+<summary>How can I use my OCEAN tokens to earn more OCEAN? What is the role of curators and keepers?</summary>
+
+"Staking" is similar to Ethereum or Chainlink where it give you access to passive rewards. You can use OCEAN to access both passive and active rewards in Data Farming and earn more OCEAN.
+
+Yes, there is active work in curating data assets. Both keep growing and you can now use delegation to make active rewards easier to access.
+
+more info here - https://docs.oceanprotocol.com/user-guides/data-farming
+
+  
+</details>
+
+<details>
+
+
+<summary>Should I focus on passive income or be an active staker? What are the risks involved with active staking?</summary>
+
+To optimize your rewards, you can choose to employ both passive and active methods. Passive rewards are automatically earned when you lock your Ocean tokens to acquire veOCEAN. It's crucial to understand that the longer you lock your tokens, the higher your potential rewards can be.
+
+However, it's worth noting that active staking does come with associated costs, such as gas fees, which you will need to cover.
+
+When it comes to active staking, you aren't exposed to additional risks. Your veOCEAN tokens remain securely locked, and your role is to curate datasets by allocating them.
+
+As with any system, inherent risks exist. In terms of the liquidity you provide, rest assured that we have implemented battle-tested contracts, protecting assets worth billions, including veCRV. With this model, there is no liquidity risk, and you are shielded from losing your OCEAN due to Impermanent Loss (IL); your OCEAN tokens are held securely in lock.
+
+More information about APYs here - https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy
+
+  
+</details>
+
+
+<details>
+
+<summary>Is there a tutorial on for staking Ocean tokens?</summary>
+
+Yes.
+https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
+
+  
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+<summary>If I withdraw before the unlock date, what happens to my veOCEAN and rewards?</summary>
+
+You can't withdraw before the unlock date. More Info here - https://docs.oceanprotocol.com/rewards/df-veocean
+
+  
+</details>
+
+
+<details>
+
+<summary>How long does it take for the system to update round allocations for veOCEAN?</summary>
+
+Allocations happen instantly.
+
+However your allocation power is counted progressively throughout the week and requires you to leave them there for it to work.
+
+  
+</details>
+
+
+<details>
+
+<summary>What is the best time to lock OCEAN to avoid high gas fees?</summary>
+
+When gas is cheap. 
+
+https://www.useweb3.xyz/gas
+
+
+</details>
+
+
+<details>
+
+<summary>When one withdraws all locked amounts, the active and passive rewards are automatically claimed as well?</summary>
+
+No, when the locking period concludes, and you withdraw your tokens, the rewards (passive or active) are not automatically claimed. You must claim them separately. 
+
+  
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Pricing FAQs
+
+
+
 
 <details>
 
@@ -344,78 +605,72 @@ You can publish Fixed Price Assets to any chain that Ocean supports.
 
 <details>
 
-<summary> Which blockchain network currently has the highest liquidity for Ocean?</summary>
 
-The Ethereum network has the highest liquidity for $OCEAN.
+<details>
+
+<summary></summary>
   
 </details>
 
 <details>
 
-  <summary>Is there a stablecoin backed by OCEAN tokens?</summary>
+<summary>Can I farm on other chains then Ethereum?</summary>
 
-  No, there is no stablecoin issued that is backed using $OCEAN.
+1. veOCEAN exists on ETH mainnet only. 
+2. Data Farming Active Rewards has native multi-chain support.
   
 </details>
 
-<details>
 
-<summary>Does the increasing number of transactions and demand for OCEAN tokens result in a dampening effect due to higher prices?</summary>
 
-$OCEAN token is designed as a utility token, which becomes deflationary when transaction volume reaches scale and exceeds the value of $OCEAN being emitted via Data Farming. Learn more here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
 
-  
-</details>
+## PsdnOcean
 
 <details>
 
-<summary>Could you explain the impact of EUROe on the utility of OCEAN? If transactions are made with EUROe within the Gen-X and GAIA-X ecosystem, how does it affect the use and value of OCEAN?</summary>
+<summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
 
-3rd party markets such as Gaia-X, BDP, and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable, and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to the plan set out ⁣
-⁣
-Here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
-  
-</details>
-
-<details>
-
-<summary>Is it possible to use the Ocean tech stack without involving the OCEAN token? If fees are paid in other currencies, are they swapped to OCEAN to some extent? How does this impact the passive revenues of veOCEAN?</summary>
-
-Ocean Market currently supports only $OCEAN for the exchange of services. Markets such as BDP and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
-  
-</details>
-
-<details>
-
-<summary>How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?</summary>
-
-A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate. Information about the Ocean token dynamics can be found here: https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9. Also, 5% of Ocean network revenue is assigned for burning.
-  
-</details>
-
-<details>
-
-<summary>Does the OCEAN token also have governance functionality?</summary>
-
-During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose. ⁣
 
   
 </details>
 
+
+## Tokenomics 
+
 <details>
 
-<summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
+<summary>Is OCEAN the only currency used exchanging data?</summary>
+
+Ocean Market currently supports only $OCEAN for the exchange of services. Markets such as BDP and Acentrik use another currency for the exchange of services.
+  
+</details>
+
+
+<details>
+
+<summary>Is there a burn mechanism for OCEAN tokens?</summary>
 
 A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
 
-  
 </details>
+
 
 <details>
 
-<summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
+<summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
 
-The $OCEAN token is used as the glue for the Ocean ecosystem. A 0.1% fee is applied to all transactions performed using Ocean components. This fee is used for the further development of Ocean technology and for the buy-and-burning of the Ocean token. more info here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9
+All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
+  
+</details>
+
+
+
+<details>
+
+<summary>When is the next token release scheduled?</summary>
+
+There will not be a next release for the token. To date, all tokens have been minted and approximately 720 million OCEAN are allocated towards data farming and network rewards. More info here - https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣
   
 </details>
 
@@ -433,43 +688,9 @@ Several projects use Ocean-components to power their data marketplaces. If these
 
 <details>
 
-<summary>When is the next token release scheduled?</summary>
+<summary>Does the OCEAN token also have governance functionality?</summary>
 
-There will not be a next release for the token. To date, all tokens have been minted and approximately 720 million OCEAN are allocated towards data farming and network rewards. More info here - https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣
-  
-</details>
-
-<details>
-
-<summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
-
-All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
-  
-</details>
-
-
-<details>
-
-<summary>Is there a burn mechanism for OCEAN tokens?</summary>
-
-A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
-
-</details>
-
-<details>
-
-<summary>Is OCEAN the only currency used exchanging data?</summary>
-
-Ocean Market currently supports only $OCEAN for the exchange of services. Markets such as BDP and Acentrik use another currency for the exchange of services.
-  
-</details>
-
-
-<details>
-
-<summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
-
-OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose. ⁣
+During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
 
   
 </details>
@@ -477,6 +698,91 @@ OCEAN is the main currency of the Ocean network, particularly the Ocean Market. 
 
 <details>
 
-<summary></summary>
+<summary>How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?</summary>
+
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate. Information about the Ocean token dynamics can be found here: https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9. Also, 5% of Ocean network revenue is assigned for burning.
   
 </details>
+
+
+<details>
+
+<summary>Could you explain the impact of EUROe on the utility of OCEAN? If transactions are made with EUROe within the Gen-X and GAIA-X ecosystem, how does it affect the use and value of OCEAN?</summary>
+
+3rd party markets such as Gaia-X, BDP, and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable, and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to the plan set out ⁣
+⁣
+Here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
+  
+</details>
+
+
+<details>
+
+<summary>Does the increasing number of transactions and demand for OCEAN tokens result in a dampening effect due to higher prices?</summary>
+
+$OCEAN token is designed as a utility token, which becomes deflationary when transaction volume reaches scale and exceeds the value of $OCEAN being emitted via Data Farming. Learn more here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
+
+  
+</details>
+
+<details>
+
+  <summary>Is there a stablecoin backed by OCEAN tokens?</summary>
+
+  No, there is no stablecoin issued that is backed using $OCEAN.
+  
+</details>
+
+
+<summary> Which blockchain network currently has the highest liquidity for Ocean?</summary>
+
+The Ethereum network has the highest liquidity for $OCEAN.
+  
+</details>
+
+
+## Ocean Protocol Ambassadors 
+
+<details>
+
+<summary>How can I become an ambassador for Ocean Protocol?</summary>
+
+To become a member of the Ambassador Program, follow these steps: 
+1. Join Ocean Protocol's Discord server
+1. Join the Discord channel called #treasure-hunter. 
+2. Access the application form: "Apply to use this channel (https://discord.com/channels/612953348487905282/1133478278531911790)."
+3. Answer the questions in the application form. 
+4. Once you've completed the application process, you can start earning experience points (XP) by actively engaging in discussions on various topics related to the Ocean Protocol.
+  
+</details>
+
+
+<details>
+
+<summary>Can I earn money if I become an ambassador for Ocean Protocol?</summary>
+
+Yes, the Ocean Protocol Ambassador Program rewards contributors with weekly bounties and discretionary grants for growing the Ocean Protocol communtiy worldwide
+
+</details>
+
+<details>
+
+<summary>How rewarding is the ambassador program currently? Is it worth getting involved?</summary>
+
+The rewards vary depending on your goals, as they come in various forms. To begin with, there are financial incentives. Furthermore, you gain access to a team of proficient specialists who can aid in enhancing your skills. Valuable networking opportunities also constitute a substantial advantage.
+  
+</details>
+
+## Data Challenges 
+
+<details>
+
+<summary>Is there a repository or webpage with previous data challenges and submitted solutions?</summary>
+
+You can find a list of past data challenges at https://oceanprotocol.com/challenges. 
+Accessing the submitted solutions is currently a work in progress, with one solution already available for the Catalunya challenge.
+
+Link - https://catalunya.oceanprotocol.com/
+  
+</details>
+
