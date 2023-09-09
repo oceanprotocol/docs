@@ -33,6 +33,19 @@ Once a user has Metamask installed and an Ethereum address, they can register, c
 
 <details>
 
+<summary>Is Ocean considered to be in the file storage category?</summary>
+
+No, OCEAN does not store data. When publishing, you are providing the URL (or specs for other types of storages) ⁣
+
+
+  
+</details>
+
+
+
+
+<details>
+
 <summary>How do I price my data?</summary>
 
 Ocean gives you two different options for pricing your data - [fixed price](../developers/contracts/pricing-schemas.md#fixed-pricing) or [free](../developers/contracts/pricing-schemas.md#free-pricing). You need to decide what your dataset is worth and how you want to price it. You can change the price but you can’t change the price format (e.g. from fixed to free).
@@ -142,10 +155,168 @@ Ocean Protocol is an open-source project with no official lead. The protocol is 
 </details>
 
 
+<details>
+
+
+<summary>Is there a website or platform that tracks the consume volume of the Ocean market?</summary>
+
+Yes there is - https://autobotocean.com/ ⁣
+
+
+  
+</details>
+
+
+<details>
+
+<summary>What are the key differences between Ocean and Fetch?</summary>
+
+You can find a detailed explanation of Both projects here - ⁣
+1) https://docs.oceanprotocol.com/ ⁣
+2) https://docs.fetch.ai/ ⁣
+  
+</details>
+
+
+<details>
+
+<summary>Is the Ocean Shipyard funded by $OCEAN?</summary>
+Ocean Shipyard is an early stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build open-source Web3 solutions on Ocean, make valuable data available, build innovations and create value for the Ocean ecosystem.
+
+More info here - https://oceanprotocol.com/shipyard
+
+  
+</details>
+
+<details>
+
+<summary>Is Swash "friendly" forking the Ocean market? They seem to have their own version of Ocean market/compute using the Swash token for transactions.</summary>
+
+Anyone can fork Ocean Market; the core team encourages this because it drives value to Ocean ecosystem and OCEAN token. Daimler / Acentrik and deltaDAO are prime example of forks. Swash has published data assets on Ocean Market. Details: the Ocean Market repo (github.com/oceanprotocol/market) is a permissive open-source license (Apache 2). That code uses Ocean contracts deployed to Eth mainnet and elsewhere. Within hours one can fork Ocean Market code and launch their own data marketplace with their own branding. Ocean Market or the forks can use any token as unit-of-exchange, OCEAN or otherwise. Unit-of-exchange is weak for value accrual. Better is *revenue* going to the protocol community; Ocean has that via whenever a datatoken is consumed, 0.1% goes to the Ocean community. Ocean Market is one of many templates for people to build Ocean-powered dapps; all templates are forkable. 
+  1) Ocean Templates. https://oceanprotocol.com/templates
+  2) Introducing Ocean Templates (blog). https://blog.oceanprotocol.com/introducing-ocean-templates-tools-to-build-next-generation-web3-dapps-67b66e519eb1
+  3) Ocean Token Model 2023 (blog). https://blog.oceanprotocol.com/ocean-token-model-2023-2f306932f34a
+  
+</details>
+
+
+<details>
+
+<summary>Is it possible to sell models on Ocean Protocol?</summary>
+
+Yes, you can sell any type of data. Start learning about us here - https://docs.oceanprotocol.com/
+  
+</details>
+
+
+<details>
+
+<summary>Is it true that Mercedes Benz has partnered with Ocean?</summary>
+
+Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4 ⁣
+  
+</details>
+
+<details>
+
+<summary>Are there any new partners collaborating with Ocean Protocol?</summary>
+
+Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4 ⁣
+
+  
+</details>
+
 
 
 
 ### Technical Questions
+
+<details>
+
+<summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
+
+We have a tutorial specific for this: https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge. Please double check the addresses and make sure you are using the right smart contracts. ⁣
+
+  
+</details>
+
+<details>
+
+<summary>How to bridge my mOcean back to Ocean?  Can mOcean be bridged? What is the correct Ocean contract address on the Matic network? Where can I find it? </summary>
+
+OCEAN token address on polygon is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1 . 
+
+Yes, the tokens can be bridged. Please follow this tutorial to bridge to/from polygon: https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge
+  
+</details>
+
+
+
+<details>
+
+<summary>Is there any reading material available on how privacy works in compute-to-data through the use of containers/kube?</summary>
+
+
+I believe you'll find this resource highly beneficial: https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-architecture.
+  
+</details>
+
+<details>
+
+<summary>Is it possible to reverse engineer a dataset on Ocean by having access to both the algorithm and the output? </summary>
+
+Not to our knowledge. But please, give it a shot and share the results with us 😄
+
+
+  
+</details>
+
+
+
+
+
+<details>
+  
+<summary>What are the Ocean faucets and how can they be used?</summary>
+
+
+Ocean offers faucets for every test network where the smart contracts are deployed. These faucets provide test Ocean tokens, allowing you to experiment with various functionalities of the platform. It's important to note that the tokens on these networks do not have any real-world value and are exclusively intended for testing purposes. Here are the faucets available:
+
+1. Goerli: https://faucet.goerli.oceanprotocol.com/
+2. Mumbai: https://faucet.mumbai.oceanprotocol.com/
+3. Sepolia: https://faucet.sepolia.oceanprotocol.com/"
+
+</details>
+
+
+
+
+<details>
+
+
+<summary>If a dataset consists of 100 individuals' private data, does this solution allow each individual to maintain sovereign control over their data while still enabling algorithms to compute as if it were one dataset?</summary>
+
+Each individual could publish their dataset themselves, to get a data NFT. From the data NFT, they can mint datatokens which are to access the data. They have sovereign control over this, as hold the keys to the data NFTs and datatokens, and have great flexibility in how to give others access. For example, they could send a datatoken to a DAO for the DAO can manage. Or they could grant datatoken-minting permissions to the DAO. The DAO could use this to assemble a dataset across 100 individuals. ⁣
+⁣
+Learn more about Data NFTs here - https://docs.oceanprotocol.com/developers/contracts/data-nfts ⁣
+
+  
+</details>
+
+<details>
+
+<summary>To what extent is Ocean becoming fully decentralized?</summary>
+To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
+⁣
+1) Details about the Ocean Token: https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣
+⁣
+2) Details about the core stack: https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce ⁣
+⁣
+3) Details about Data Farming: https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360 ⁣
+  
+</details>
+
+
 
 <details>
 
@@ -970,6 +1141,43 @@ A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-
 
 <details>
 
+  
+<summary>Which wallet is best for storing $Ocean tokens?</summary>
+
+OCEAN Token is a standard ERC20 token, so any wallet that can hold ERC20 can hold OCEAN as well. However, we always recommend hardware wallet for security reasons ⁣
+
+</details>
+
+
+<details>
+
+
+<summary>Can a hardware wallet be used to lock Ocean tokens?</summary>
+
+Yes, either through Metamask (or another software wallet that can connect to a hardware wallet) or through your hardware wallet software - Ledger, Trezor etc. ⁣
+
+
+
+
+</details>
+
+<details>
+
+<summary>Is Ocean deployed on the BSC network? What is the contract address?</summary>
+
+Yes, it's 0xDCe07662CA8EbC241316a15B611c89711414Dd1a ⁣
+Link - https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a ⁣
+
+
+</details>
+
+
+
+
+
+
+<details>
+
 <summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
 
 All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
@@ -1098,3 +1306,38 @@ Link - https://catalunya.oceanprotocol.com/
   
 </details>
 
+
+
+## Reach out to us 
+
+<details>
+
+<summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
+
+For partnerships, please fill in this form: https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform. 
+One member of our team will reach out to you.
+  
+</details>
+
+
+## Data Storage Solutions
+
+<details>
+
+<summary>As Google Drive is not supported in the Ocean ecosystem, what are the alternative options for storing a file and then publishing it?</summary>
+
+Google Drive is designed for file sharing between a small group of users. ⁣
+⁣
+You can find better Alternatives here - ⁣
+https://docs.oceanprotocol.com/developers/storage ⁣
+
+  
+</details>
+
+<details>
+
+<summary>Do you have a tutorial for using Arweave as storing solution for assets?</summary>
+
+You bet we have. Here it is: https://docs.oceanprotocol.com/user-guides/asset-hosting/arweave
+
+</details>
