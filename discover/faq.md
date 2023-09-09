@@ -7,7 +7,7 @@ description: Frequently Asked Questions about Ocean Protocol
 
 Have some questions about Ocean Protocol?
 
-Hopefully you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/TnXjkR5) - there are no stupid questions!
+Hopefully, you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/TnXjkR5) - there are no stupid questions!
 
 ### General Questions
 
@@ -15,7 +15,7 @@ Hopefully you'll find the answers here! If not then please don't hesitate to rea
 
 <summary>What is a decentralized data marketplace?</summary>
 
-A data marketplace allows providers to publish data and buyers to consume data. Unlike centralized data marketplaces, decentralized ones give users more control over their data, algorithms and analytics by minimizing custodianship and providing transparent and immutable records of every transaction. With features such as Compute-to-Data (C2D), data and algorithms can be ingested into secure Docker containers where escapes avoided, protecting both the data and algorithms.
+A data marketplace allows providers to publish data and buyers to consume data. Unlike centralized data marketplaces, decentralized ones give users more control over their data, algorithms, and analytics by minimizing custodianship and providing transparent and immutable records of every transaction. With features such as Compute-to-Data (C2D), data and algorithms can be ingested into secure Docker containers where escapes are avoided, protecting both the data and algorithms.
 
 </details>
 
@@ -23,11 +23,11 @@ A data marketplace allows providers to publish data and buyers to consume data. 
 
 <summary>What is needed to use a decentralized marketplace?</summary>
 
-Users access decentralized marketplaces via Metamask. Metamask is an applet interface that manages unique IDs, generated and controlled fully by the user. These unique IDs (aka Ethereum address) are used to store digital assets such as cryptocurrency, datatokens, NFTs and other web3 native assets.
+Users access decentralized marketplaces via Metamask. Metamask is an applet interface that manages unique IDs, generated and controlled fully by the user. These unique IDs (aka Ethereum address) are used to store digital assets such as cryptocurrency, datatokens, NFTs, and other web3 native assets.
 
-A Metamask wallet can easily be set up as a browser extension by going to your browser’s web store for extensions and search for “MetaMask”. For additional help setting up your MetaMask wallet, watch our short tutorial video and review these instructions on Ocean’s documentation page.
+A Metamask wallet can easily be set up as a browser extension by going to your browser’s web store for extensions and searching for “MetaMask”. For additional help setting up your MetaMask wallet, watch our short tutorial video and review these instructions on Ocean’s documentation page.
 
-Once a user has Metamask installed and an Ethereum address, they can register, consume or stake on datasets on Ocean Market.
+Once a user has Metamask installed and an Ethereum address, they can register, consume, or stake on datasets on Ocean Market.
 
 </details>
 
@@ -35,14 +35,9 @@ Once a user has Metamask installed and an Ethereum address, they can register, c
 
 <summary>Is Ocean considered to be in the file storage category?</summary>
 
-No, OCEAN does not store data. When publishing, you are providing the URL (or specs for other types of storages) ⁣
-
-
+No, OCEAN does not store data. When publishing, you are providing the URL (or specs for other types of storage).
   
 </details>
-
-
-
 
 <details>
 
@@ -90,9 +85,7 @@ PS: [Fine-grained permissions](../developers/fg-permissions.md) are not integrat
 
 <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
 
-
-
-Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+Several projects use ocean components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
 
   
 </details>
@@ -111,7 +104,7 @@ However, it's important to note that participants using the Ocean stack are subj
 
 <summary>Where can I find projects on Ocean's ecosystem?</summary>
 
-Yes, go to https://oceanprotocol.com/ecosystem
+Please go to https://oceanprotocol.com/ecosystem.
   
 </details>
 
@@ -140,7 +133,7 @@ Not to our knowledge. If you find something, please share it with us :)
 
 <summary>What is the 2023 roadmap of Ocean Protocol ?</summary>
 
-The following blog post provides the 2023 goals and plans for the Ocean core team. https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051
+This [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051) provides the 2023 goals and plans for the Ocean Core team. 
 
 </details>
 
@@ -181,7 +174,7 @@ You can find a detailed explanation of Both projects here - ⁣
 <details>
 
 <summary>Is the Ocean Shipyard funded by $OCEAN?</summary>
-Ocean Shipyard is an early stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build open-source Web3 solutions on Ocean, make valuable data available, build innovations and create value for the Ocean ecosystem.
+Ocean Shipyard is an early-stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build open-source Web3 solutions on Ocean, make valuable data available, build innovations, and create value for the Ocean ecosystem.
 
 More info here - https://oceanprotocol.com/shipyard
 
@@ -192,7 +185,7 @@ More info here - https://oceanprotocol.com/shipyard
 
 <summary>Is Swash "friendly" forking the Ocean market? They seem to have their own version of Ocean market/compute using the Swash token for transactions.</summary>
 
-Anyone can fork Ocean Market; the core team encourages this because it drives value to Ocean ecosystem and OCEAN token. Daimler / Acentrik and deltaDAO are prime example of forks. Swash has published data assets on Ocean Market. Details: the Ocean Market repo (github.com/oceanprotocol/market) is a permissive open-source license (Apache 2). That code uses Ocean contracts deployed to Eth mainnet and elsewhere. Within hours one can fork Ocean Market code and launch their own data marketplace with their own branding. Ocean Market or the forks can use any token as unit-of-exchange, OCEAN or otherwise. Unit-of-exchange is weak for value accrual. Better is *revenue* going to the protocol community; Ocean has that via whenever a datatoken is consumed, 0.1% goes to the Ocean community. Ocean Market is one of many templates for people to build Ocean-powered dapps; all templates are forkable. 
+Anyone can fork Ocean Market; the core team encourages this because it drives value to the Ocean ecosystem and OCEAN token. Daimler / Acentrik and deltaDAO are prime examples of forks. Swash has published data assets on Ocean Market. Details: The [Ocean Market](github.com/oceanprotocol/market) repo is a permissive open-source license (Apache 2). That code uses Ocean contracts deployed to Eth mainnet and elsewhere. Within hours one can fork Ocean Market code and launch their own data marketplace with their own branding. Ocean Market or the forks can use any token as a unit of exchange, OCEAN or otherwise. Unit-of-exchange is weak for value accrual. Better is *revenue* going to the protocol community; Ocean has that via whenever a datatoken is consumed, 0.1% goes to the Ocean community. Ocean Market is one of many templates for people to build Ocean-powered dApps; all templates are forkable. 
   1) Ocean Templates. https://oceanprotocol.com/templates
   2) Introducing Ocean Templates (blog). https://blog.oceanprotocol.com/introducing-ocean-templates-tools-to-build-next-generation-web3-dapps-67b66e519eb1
   3) Ocean Token Model 2023 (blog). https://blog.oceanprotocol.com/ocean-token-model-2023-2f306932f34a
@@ -213,7 +206,7 @@ Yes, you can sell any type of data. Start learning about us here - https://docs.
 
 <summary>Is it true that Mercedes Benz has partnered with Ocean?</summary>
 
-Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4 ⁣
+Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4. ⁣
   
 </details>
 
@@ -221,7 +214,7 @@ Yes, You can find details of the collaboration here - https://blog.oceanprotocol
 
 <summary>Are there any new partners collaborating with Ocean Protocol?</summary>
 
-Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4 ⁣
+Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4. ⁣
 
   
 </details>
@@ -235,7 +228,7 @@ Yes, You can find details of the collaboration here - https://blog.oceanprotocol
 
 <summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
 
-We have a tutorial specific for this: https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge. Please double check the addresses and make sure you are using the right smart contracts. ⁣
+We have a tutorial specific for this: https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge. Please double-check the addresses and make sure you are using the right smart contracts. ⁣
 
   
 </details>
@@ -244,7 +237,7 @@ We have a tutorial specific for this: https://docs.oceanprotocol.com/discover/ne
 
 <summary>How to bridge my mOcean back to Ocean?  Can mOcean be bridged? What is the correct Ocean contract address on the Matic network? Where can I find it? </summary>
 
-OCEAN token address on polygon is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1 . 
+The OCEAN token address on the polygon network is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1. 
 
 Yes, the tokens can be bridged. Please follow this tutorial to bridge to/from polygon: https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge
   
@@ -322,7 +315,7 @@ To be fully decentralized means no single point of control, at any level of the 
 
 <summary>Why does Ocean Protocol use the Blockchain?</summary>
 
-For both providers and consumers of data, blockchain is a superior substrate for building applications.Blockchain allows business logic to be instantiated in a network and triggered by the users, without intermediaries. This innovation promises lower transaction costs, higher security, more control, less errors and more transparency & auditability.
+For both providers and consumers of data, blockchain is a superior substrate for building applications. Blockchain allows business logic to be instantiated in a network and triggered by the users, without intermediaries. This innovation promises lower transaction costs, higher security, more control, fewer errors, and more transparency & auditability.
 
 </details>
 
@@ -330,7 +323,7 @@ For both providers and consumers of data, blockchain is a superior substrate for
 
 <summary>The blockchain is public - does this mean that anyone can access my data?</summary>
 
-No one is able to access data via the blockchain without purchasing access (with the datatoken) though the smart contract. Ocean smart contracts encrypt the URL to the dataset before it is published on the blockchain. This means that only the encrypted URL will be queryable in the public blockchain. Ocean technology facilitates data access to the consumer via a proxy (Ocean Provider) and the unencrypted url is never exposed.
+No one is able to access data via the blockchain without purchasing access (with the datatoken) through the smart contract. Ocean smart contracts encrypt the URL to the dataset before it is published on the blockchain. This means that only the encrypted URL will be queryable in the public blockchain. Ocean technology facilitates data access to the consumer via a proxy (Ocean Provider) and the unencrypted URL is never exposed.
 
 </details>
 
@@ -338,7 +331,7 @@ No one is able to access data via the blockchain without purchasing access (with
 
 <summary>What is a smart contract and why is it relevant?</summary>
 
-The blockchain can do more than just store information - it can also run code. A smart contract is an executable script that runs on the blockchain, with no intermediary and is fully transparent and auditable by anyone. In Ocean, smart contracts facilitate access to data and AI if the access conditions set out by the publisher are fulfilled.
+The blockchain can do more than just store information - it can also run code. A smart contract is an executable script that runs on the blockchain, with no intermediary, and is fully transparent and auditable by anyone. In Ocean, smart contracts facilitate access to data and AI if the access conditions set out by the publisher are fulfilled.
 
 </details>
 
@@ -371,7 +364,7 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 
 <summary>How are organizations leveraging data sharing?</summary>
 
-For the most part organizations are leveraging data sharing to benefit from data monetization, however increasingly organizations are also sharing data in order to boost their progress on sustainability goals. For example, data aggregated from vehicles can not only bring new revenue streams to automotive firms but can also be used to battle pollution.
+For the most part, organizations are leveraging data sharing to benefit from data monetization, however, increasingly organizations are also sharing data in order to boost their progress on sustainability goals. For example, data aggregated from vehicles can not only bring new revenue streams to automotive firms but can also be used to battle pollution.
 
 </details>
 
@@ -379,7 +372,7 @@ For the most part organizations are leveraging data sharing to benefit from data
 
 <summary>Does it pay to become a marketplace operator?</summary>
 
-Yes. Marketplace operators benefit from earning commission on marketplace transactions related to data consumption. Ocean Market is primarily focussed on monetising data however it is also designed to handle the sale of any digital asset or service. As a result the total addressable market goes way beyond revenues from just selling data. Operating costs for an Ocean-powered marketplace are moderate and the base code is open source and available free of charge under the Apache 2 license.
+Yes. Marketplace operators benefit from earning commissions on marketplace transactions related to data consumption. Ocean Market is primarily focused on monetizing data however it is also designed to handle the sale of any digital asset or service. As a result, the total addressable market goes way beyond revenues from just selling data. Operating costs for an Ocean-powered marketplace are moderate and the base code is open source and available free of charge under the Apache 2 license.
 
 </details>
 
@@ -387,7 +380,7 @@ Yes. Marketplace operators benefit from earning commission on marketplace transa
 
 <summary>Why Publish?</summary>
 
-Publishing data, algorithms and other digital assets and services on an Ocean-powered marketplace offers numerous opportunities to earn on the future revenue streams connected to that data as well as build lucrative ecosystem that add value to the published asset. It also allows for the discovery and insights into new use cases and applications of the published asset.
+Publishing data, algorithms, and other digital assets and services on an Ocean-powered marketplace offers numerous opportunities to earn on the future revenue streams connected to that data as well as build a lucrative ecosystem that adds value to the published asset. It also allows for the discovery and insights into new use cases and applications of the published asset.
 
 </details>
 
@@ -411,7 +404,7 @@ Gas fees for marketplace transactions are paid by the user initiating the transa
 
 <summary>Where do the docker containers run?</summary>
 
-Dockers containers can run anywhere. Ocean Market use a docker run by the Ocean Protocol Foundation OPF); limit: 1 CPU limit / 60 seconds max. NOTE: This means OPF technically has access to data. In the case of a forked Ocean-powered marketplace the owner of marketplace must set up computation environment. If individual users of the marketplace are concerned with security they should be prepared to host both the data and provide compute-to-data services on premise.
+Dockers containers can run anywhere. Ocean Market uses a docker run by the Ocean Protocol Foundation OPF); limit: 1 CPU limit / 60 seconds max. NOTE: This means OPF technically has access to data. In the case of a forked Ocean-powered marketplace, the owner of the marketplace must set up a computation environment. If individual users of the marketplace are concerned with security they should be prepared to host both the data and provide compute-to-data services on-premise.
 
 </details>
 
@@ -427,15 +420,15 @@ The marketplace owner.
 
 <summary>What cryptocurrency do I need for transactions?</summary>
 
-The type if cryptocurrencies needed for transactions on the marketplace depends on which network(s) the marketplace is running (Ethereum, Polygon, EWT, BSC, Moonriver, etc.). Regardless of network, users will need to have Ocean tokens as well as the corresponding network token, which is used to pay for gas.
+The type of cryptocurrencies needed for transactions on the marketplace depends on which network(s) the marketplace is running (Ethereum, Polygon, EWT, BSC, Moonriver, etc.). Regardless of network, users will need to have Ocean tokens as well as the corresponding network token, which is used to pay for gas.
 
 </details>
 
 <details>
 
-<summary>Can I use the off the shelf CSS available in the repo?</summary>
+<summary>Can I use the off-the-shelf CSS available in the repo?</summary>
 
-Marketplace name, logo and typeface must be changed by the client. Slight modification would be enough for compliance. For more information consult the READ ME file on GitHub. https://github.com/oceanprotocol/market#-forking
+The marketplace name, logo, and typeface must be changed by the client. A slight modification would be enough for compliance. For more information consult the READ ME file on GitHub. https://github.com/oceanprotocol/market#-forking
 
 </details>
 
@@ -443,7 +436,7 @@ Marketplace name, logo and typeface must be changed by the client. Slight modifi
 
 <summary>What’s to come with Ocean this year?</summary>
 
-Checkout our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what's we are currently working on. If you are interested in tracking our progress towards these goals then take a look at our [github](https://github.com/oceanprotocol/).
+Check out our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what we are currently working on. If you are interested in tracking our progress towards these goals then take a look at our [github](https://github.com/oceanprotocol/).
 
 </details>
 
@@ -504,16 +497,14 @@ More Info here - https://docs.oceanprotocol.com/user-guides/data-farming ⁣
 
 <summary>I had to pay $13 to claim 34 Ocean passive rewards. Additionally, I made 0 from last week's active rewards, despite 32 sales and a large allocation. Can you explain why?</summary>
 
-The amount of rewards are highly dependant on the locking period. the longer you lock your tokens, he greater the rewards. You can use one this document to estimate the amount you'll get: https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy
+The amount of rewards is highly dependent on the locking period. the longer you lock your tokens, the greater the rewards. You can use this document to estimate the amount you'll get: https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy.
 
 Likely because the sales were small and only 0.01% of sales volume is considered for rewards.
 
-This data and information is well documented in the Farms page.
-https://df.oceandao.org/datafarming
+This data and information are well documented on the [Farms](https://df.oceandao.org/datafarming) page.
+
   
 </details>
-
-
 
 
 
@@ -525,8 +516,6 @@ One thing to keep in mind is that your locked amount cannot be withdrawn before 
 
   
 </details>
-
-
 
 
 
@@ -595,10 +584,6 @@ https://autobotocean.com/calculator
 
 
 
-
-
-
-
 <details>
 
 <summary>What assets are eligible for Data Farming?</summary>
@@ -611,7 +596,7 @@ The data asset may be of any type — dataset (for static URIs), algorithm for C
 
 <summary>When exactly does counting start and finish, for a given week?</summary>
 
-The counting starts at 00:00am on Thursday UTC, and ends at 11.59pm UTC on the following Wednesday.
+The counting starts at 00:00 am on Thursday UTC and ends at 11.59 pm UTC on the following Wednesday.
 
 </details>
 
@@ -619,7 +604,7 @@ The counting starts at 00:00am on Thursday UTC, and ends at 11.59pm UTC on the f
 
 <summary>The datatoken price may change throughout the week. What price is taken in the DCV calculation?</summary>
 
-The price is taken at the same time as each consume. E.g. if a data asset has three consumes, where price was 1 OCEAN when the first consume happened, and the price was 10 OCEAN when the other consumes happened, then the total DCV for the asset is 1 + 10 + 10 = 21.
+The price is taken at the same time as each consume. E.g. if a data asset has three consumes, where the price was 1 OCEAN when the first consume happened, and the price was 10 OCEAN when the other consumes happened, then the total DCV for the asset is 1 + 10 + 10 = 21.
 
 </details>
 
@@ -627,9 +612,9 @@ The price is taken at the same time as each consume. E.g. if a data asset has th
 
 <summary>Can the reward function change during a given week?</summary>
 
-No. At the beginning of a new DF round (DF1, DF2, etc), rules are laid out, either implicitly if no change from previous round, or explicitly in a blog post if there are new rules. This is: reward function, bounds, etc. Then teams stake, buy data, consume, etc. And LPs are given DF rewards based on staking, DCV, etc at the end of the week. Overall cycle time is one week.
+No. At the beginning of a new DF round (DF1, DF2, etc.), rules are laid out, either implicitly if no change from the previous round, or explicitly in a blog post if there are new rules. This is: reward function, bounds, etc. Then teams stake, buy data, consume, etc. LPs are given DF rewards based on staking, DCV, etc. at the end of the week. Overall cycle time is one week.
 
-Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is community consensus, or a bug.
+Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is community consensus or a bug.
 
 </details>
 
@@ -647,7 +632,7 @@ Ocean Market currently supports $OCEAN and $H2O for the exchange of services. Ma
 
 <summary>What is the use of Autobotocean.com?</summary>
 
-Autobotocean.com can be used to explore Ocean-related metrics like $OCEAN locked vs time, data consume volume, and more.
+Autobotocean.com can be used to explore Ocean-related metrics like $OCEAN locked vs. time, data consume volume, and more.
 
   
 </details>
@@ -656,7 +641,7 @@ Autobotocean.com can be used to explore Ocean-related metrics like $OCEAN locked
 
 <Summary>I locked my OCEAN for veOcean but can't see the rewards. What am I missing?</Summary>
 
-Please hang in there and stay patient, as it can take almost two weeks to receive your first rewards. 😊
+Please hang in there and stay patient, as it can take almost two weeks to receive your first reward. 😊
   
 </details>
 
@@ -672,7 +657,7 @@ Please keep in mind that the algorithm offers higher incentives for longer lock 
 
 <details>
 
-<summary>How does the data farming rewards work? Can rewards be claimed monthly or automatically deposited?</summary>
+<summary>How do the data farming rewards work? Can rewards be claimed monthly or automatically deposited?</summary>
 
 Data Farming serves as the fundamental incentive system within Ocean Protocol, offering diverse opportunities for participants to contribute to the protocol's growth and success. This system is divided into two rewarding streams:
 
@@ -747,7 +732,7 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 
 <summary>Can I stake OCEAN tokens on the Binance Smart Chain protocol?</summary>
 
-1. veOCEAN exists on ETH mainnet only. 
+1. veOCEAN exists on the ETH mainnet only. 
 2. Data Farming Active Rewards has native multi-chain support.
   
 </details>
@@ -761,11 +746,6 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 
   
 </details>
-
-
-
-
-
 
 
 
@@ -790,10 +770,9 @@ https://docs.oceanprotocol.com/rewards/df-emissions-apys ⁣
 
 
 
-
 <details>
 
-<summary>When I stake my Ocean tokens, do I need to restake them manually, or is it auto compound?</summary>
+<summary>When I stake my Ocean tokens, do I need to restake them manually, or is it auto-compound?</summary>
 
 They are not auto-compounded.
 
@@ -811,7 +790,7 @@ They can be claimed/redeposited whenever you want. If you don't claim, they just
 
 <summary>Is it possible to participate only in passive income staking without participating in the active one? </summary>
 
-Yes. You are participating by default on the passive rewards when you lock your Ocean tokens.
+Yes. You are participating by default in the passive rewards when you lock your Ocean tokens.
 
 
 </details>
@@ -824,7 +803,7 @@ Yes. You are participating by default on the passive rewards when you lock your 
 <summary>How much Ocean do I need to stake to earn interest?</summary>
 
 There is no minimum amount. The rewards will depend on the amount you lock.
-You will get passive rewards by default when you lock tokens. On top of that you can get active rewards if you actively participate in the program. Here are some resources:
+You will get passive rewards by default when you lock tokens. On top of that, you can get active rewards if you actively participate in the program. Here are some resources:
 https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
 
   
@@ -838,7 +817,7 @@ https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutoria
 
 <summary>Does the lock open at 00:00 on the unlock day?</summary>
 
-The lock opens at the time you locked your tokens. 
+The lock opens at the time you lock your tokens. 
   
 </details>
 
@@ -892,11 +871,11 @@ Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well
 
 <summary>How can I use my OCEAN tokens to earn more OCEAN? What is the role of curators and keepers?</summary>
 
-"Staking" is similar to Ethereum or Chainlink where it give you access to passive rewards. You can use OCEAN to access both passive and active rewards in Data Farming and earn more OCEAN.
+"Staking" is similar to Ethereum or Chainlink where it gives you access to passive rewards. You can use OCEAN to access both passive and active rewards in Data Farming and earn more OCEAN.
 
 Yes, there is active work in curating data assets. Both keep growing and you can now use delegation to make active rewards easier to access.
 
-more info here - https://docs.oceanprotocol.com/user-guides/data-farming
+More info here - https://docs.oceanprotocol.com/user-guides/data-farming.
 
   
 </details>
@@ -934,10 +913,6 @@ https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutoria
 
 
 
-
-
-
-
 <details>
 
 <summary>If I withdraw before the unlock date, what happens to my veOCEAN and rewards?</summary>
@@ -954,7 +929,7 @@ You can't withdraw before the unlock date. More Info here - https://docs.oceanpr
 
 Allocations happen instantly.
 
-However your allocation power is counted progressively throughout the week and requires you to leave them there for it to work.
+However, your allocation power is counted progressively throughout the week and requires you to leave them there for it to work.
 
   
 </details>
@@ -983,20 +958,6 @@ No, when the locking period concludes, and you withdraw your tokens, the rewards
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Pricing FAQs
 
 
@@ -1014,7 +975,7 @@ Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual D
 
 <summary>In this scheme, can people stake on free datasets?</summary>
 
-Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV \* veOCEAN stake. Except in this case although DCV is 0, the gas fees will still count towards calculating rewards.
+Yes. They allocate their veOCEAN to datasets. Then DF rewards follow the usual DF formula: DCV \* veOCEAN stake. Except in this case, although DCV is 0, the gas fees will still count towards calculating rewards.
 
 </details>
 
@@ -1066,7 +1027,7 @@ You can find a list of [all supported chains here](networks/README.md).
 
 <summary>Where can I find the veOCEAN and DF contracts?</summary>
 
-They are deployed on Ethereum mainnet, alongside other Ocean contract deployments. You can find the [full list of contracts here](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).
+They are deployed on the Ethereum mainnet, alongside other Ocean contract deployments. You can find the [full list of contracts here](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).
 
 </details>
 
@@ -1123,7 +1084,7 @@ OCEAN is the main currency of the Ocean network, particularly the Ocean Market. 
 
 <details>
 
-<summary>Is OCEAN the only currency used exchanging data?</summary>
+<summary>Is OCEAN the only currency used for exchanging data?</summary>
 
 Ocean Market currently supports only $OCEAN for the exchange of services. Markets such as BDP and Acentrik use another currency for the exchange of services.
   
@@ -1210,7 +1171,7 @@ Several projects use Ocean-components to power their data marketplaces. If these
 
 <summary>Does the OCEAN token also have governance functionality?</summary>
 
-During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently, there are no governance functions associated with the Ocean Token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
 
   
 </details>
