@@ -55,6 +55,16 @@ Ocean does not provide data storage. Users have the choice to [store](../user-gu
 
 </details>
 
+
+
+<details>
+
+  <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
+
+Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+
+</details>
+
 <details>
 
 <summary>How do I control who accesses my data?</summary>
@@ -71,6 +81,16 @@ Yes - Ocean has implemented [fine-grained permissions](../developers/fg-permissi
 PS: [Fine-grained permissions](../developers/fg-permissions.md) are not integrated into the Ocean Marketplace.
 
 </details>
+
+<details>
+
+  <summary>Does the OCEAN token also have governance functionality?</summary>
+
+During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+
+</details>
+
+
 
 ### Technical Questions
 
@@ -351,18 +371,6 @@ OCEAN is the main currency of the Ocean network, particularly the Ocean Market. 
 
 </details>
 
-<details>
 
-  <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
 
-Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
 
-</details>
-
-<details>
-
-  <summary>Does the OCEAN token also have governance functionality?</summary>
-
-During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
-
-</details>
