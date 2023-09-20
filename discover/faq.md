@@ -9,7 +9,7 @@ Have some questions about Ocean Protocol?
 
 Hopefully, you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/TnXjkR5) - there are no stupid questions!
 
-### General Questions
+### General
 
 <details>
 
@@ -434,7 +434,7 @@ Check out our [roadmap](https://oceanprotocol.com/technology/roadmap) to see wha
 
 </details>
 
-### Data Farming FAQ
+### Data Farming
 
 <details>
 
@@ -660,7 +660,7 @@ Learn more in the [documentation](https://docs.oceanprotocol.com/rewards/df-veoc
 </details>
 
 
-## veOCEAN FAQ
+### veOCEAN
 
 <details>
 
@@ -741,7 +741,7 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
   
 </details>
 
-### Staking FAQs
+### Staking
 
 <details>
 
@@ -907,7 +907,7 @@ No, when the locking period concludes, and you withdraw your tokens, the rewards
 
 </details>
 
-### Pricing FAQs
+### Pricing
 
 
 <details>
@@ -934,7 +934,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 </details>
 
-### Chains FAQ
+### Chains
 
 <details>
 
