@@ -13,32 +13,6 @@ Hopefully, you'll find the answers here! If not then please don't hesitate to re
 
 <details>
 
-<summary>How does Ocean Protocol generate revenue?</summary>
-
-The protocol generates revenue via fees. A fee is applied to all transactions for using the Ocean components. This fee is used for the further development of Ocean technology and for the buy-and-burning of the Ocean token. ⁣
-
-</details>
-
-<details>
-
-<summary>Is there any targeting of current Web2 data users/traders? Is the Azure marketplace more successful in terms of user adoption? After 25 weeks of the current marketplace, it is surprising to see minimal non-"wash-consume" volume.</summary>
-
-  We don't want to comment on the success of the Azure marketplace.If it's a success, that's great! 
-What we can share is our dedicated efforts to enhance accessibility for our tools and technology, which includes incorporating features for web2 users.
-
-</details>
-
-<details>
-
-<summary>Are there any plans to increase data consume volume for datasets on the Ocean market?</summary>
-
-Yes, currently, we have several ongoing initiatives. On one hand, there's the data farming effort, and we're also actively developing templates and showcases, enhancing the technology stack, hosting and rewarding participants in data challenges. All of these efforts are geared towards increasing platform engagement and bringing more people into the ecosystem. ⁣
-
-
-</details>
-
-<details>
-
 <summary>Is Ocean aiming to be a marketplace for data?</summary>
 
 Our goal is to build the tools and services to facilitate a new Data Economy that gives data owners control, while preserving privacy and helping to kickstart commercialization of data, including data marketplaces.
@@ -71,15 +45,6 @@ We are not actively developing a dedicated system for dataset validation. Instea
 </details>
 
 <details>
-
-<summary>Does Ocean need to be compliant with the ISO 20022 standard? Is there any value in working on compliance, considering that some tokens have taken action in this area?</summary>
-
-Ocean Protocol helps facilitate data sharing and commercialization. At our current stage of development, we have no developed specific industry vertical supports, such as ISO20022 (relating to standardized formats for financial data sharing).
-
-</details>
-
-<details>
-
 
 <summary>Does Ocean aspire to cultivate a decentralized ChatGPT through the datasets on the Ocean market?</summary>
 
@@ -151,6 +116,24 @@ Also, you can train models on the data that is available and extract insights.
 
 <details>
 
+<summary>Is there any targeting of current Web2 data users/traders? Is the Azure marketplace more successful in terms of user adoption? After 25 weeks of the current marketplace, it is surprising to see minimal non-"wash-consume" volume.</summary>
+
+  We don't want to comment on the success of the Azure marketplace.If it's a success, that's great! 
+What we can share is our dedicated efforts to enhance accessibility for our tools and technology, which includes incorporating features for web2 users.
+
+</details>
+
+<details>
+
+<summary>Are there any plans to increase data consume volume for datasets on the Ocean market?</summary>
+
+Yes, currently, we have several ongoing initiatives. On one hand, there's the data farming effort, and we're also actively developing templates and showcases, enhancing the technology stack, hosting and rewarding participants in data challenges. All of these efforts are geared towards increasing platform engagement and bringing more people into the ecosystem. ⁣
+
+
+</details>
+
+<details>
+
 <summary>Is Ocean an AI project and is it related to artificial intelligence? How is Ocean different from other AI projects? What are Project's future goals? </summary>
 
 Ocean Protocol is not primarily an AI project, but it is closely related to artificial intelligence (AI) and plays a significant role in the AI ecosystem. Its primary focus is on data sharing and data marketplaces. 
@@ -162,11 +145,9 @@ Ocean Protocol is not primarily an AI project, but it is closely related to arti
 
 4. How is Ocean different from other AI projects? Ocean stands out from other AI projects by focusing on the data aspect of AI. While many AI projects concentrate on algorithms and models, Ocean's primary goal is to enable efficient and secure data sharing. It leverages blockchain technology to ensure data provenance, privacy, and transparency, making it a unique solution in the AI landscape.
 
-
 </details>
 
 <details>
-
 
 <summary>Are there examples of individuals or organizations who purchase data through Ocean Protocol?</summary>
 
@@ -175,6 +156,13 @@ Ocean Protocol is not primarily an AI project, but it is closely related to arti
 There are a wide host of technical, business, and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology are relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers, or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined.
 </details>
 
+<details>
+
+<summary>How does Ocean Protocol generate revenue?</summary>
+
+The protocol generates revenue via fees. A fee is applied to all transactions for using the Ocean components. This fee is used for the further development of Ocean technology and for the buy-and-burning of the Ocean token. ⁣
+
+</details>
 
 <details>
 
@@ -241,6 +229,14 @@ No, OCEAN does not store data. When publishing, you are providing the URL (or sp
 <summary>How do I price my data?</summary>
 
 Ocean gives you two different options for pricing your data - [fixed price](../developers/contracts/pricing-schemas.md#fixed-pricing) or [free](../developers/contracts/pricing-schemas.md#free-pricing). You need to decide what your dataset is worth and how you want to price it. You can change the price but you can’t change the price format (e.g. from fixed to free).
+
+</details>
+
+<details>
+
+<summary>Does Ocean need to be compliant with the ISO 20022 standard? Is there any value in working on compliance, considering that some tokens have taken action in this area?</summary>
+
+Ocean Protocol helps facilitate data sharing and commercialization. At our current stage of development, we have no developed specific industry vertical supports, such as ISO20022 (relating to standardized formats for financial data sharing).
 
 </details>
 
@@ -1098,7 +1094,7 @@ The ratio stands at 80% to 20%, creating an imbalanced pool that minimizes price
 
 <Summary> How to convert PsdnOcean back to $OCEAN ?</Summary>
 
-You can convert psdnOCEAN back to $OCEAN using the Balancer AMM liquidity pool (https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e).
+You can convert psdnOCEAN back to $OCEAN using the Balancer AMM liquidity [pool](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e).
 
 [Price information](https://www.geckoterminal.com/eth/pools/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b) for psdnOCEAN.
 
@@ -1355,6 +1351,67 @@ No, when the locking period concludes, and you withdraw your tokens, the rewards
 
 </details>
 
+<details>
+
+<summary> Which chain do most people stake on? What are the staking costs? </summary>
+
+You can only "stake" via eth mainnet.
+
+Data Farming Active Rewards has multi-chain support and you can farm assets on any chain.
+  
+</details>
+
+<details>
+
+<summary>Are there plans to switch to BNB or another blockchain for staking to reduce costs?</summary>
+
+I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed on the Ethereum mainnet. We don't have immediate plans to add another chain for VeOcean staking at the moment. However, it's important to note that to be eligible for Data Farming, data assets for DFing can be published on various networks where Ocean Protocol is deployed in production, including ETH Mainnet and Polygon, among others. You can find more information about this in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean#veocean-earnings).
+  
+</details>
+
+<details>
+
+<summary>Which chain is veOCEAN be deployed on?</summary>
+
+[veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet and allow users to allocate veOCEAN tokens to any asset, on any chain.
+
+</details>
+
+<details>
+
+<summary>Which networks are eligible for Data Farming?</summary>
+
+Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
+
+You can find a list of [all supported chains here](networks/README.md).
+
+</details>
+
+<details>
+
+<summary>Where can I find the veOCEAN and DF contracts?</summary>
+
+They are deployed on the Ethereum mainnet, alongside other Ocean contract deployments. You can find the [full list of contracts here](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).
+
+</details>
+
+<details>
+
+<summary>What is the official veOCEAN epoch start_time?</summary>
+
+veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
+
+</details>
+
+<details>
+
+<summary>Can I farm on other chains then Ethereum?</summary>
+
+1. veOCEAN exists on ETH mainnet only. 
+2. Data Farming Active Rewards has native multi-chain support.
+  
+</details>
+
 ### Pricing
 
 
@@ -1382,7 +1439,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 </details>
 
-### Technical Questions
+### Technical
 
 <details>
 
@@ -1408,6 +1465,8 @@ To access this data, some technical expertise is required. You can find this inf
 
 </details>
 
+<details>
+
 <summary>How can partners and developers use Ocean technology to build their own data marketplaces?</summary>
 
 Ocean technology is open-source, community-funded, and freely available for use by anyone. Normally, when a developer wishes to use Ocean, they will let the core team know and we make a joint announcement if both parties agree.
@@ -1423,15 +1482,16 @@ A developer can fork various components from our GitHub repository and create th
 Ocean technology is actively in use with the following entities:
 
 Proof of Concept:
-- Gaia-X
-- Catena-X
-- Move.id
+1. Gaia-X
+2. Catena-X
+3. Move.id
+
 Production:
-- Fetch.Ai
-- Acentrik (Daimler)
-- deltaDAO
-- DeSights
-- BDP
+1. Fetch.Ai
+2. Acentrik (Daimler)
+3. deltaDAO
+4. DeSights
+5. BDP
 
 </details>
 
@@ -1448,7 +1508,7 @@ We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#bi
 
 <summary>How to bridge my mOcean back to Ocean?  Can mOcean be bridged? What is the correct Ocean contract address on the Matic network? Where can I find it? </summary>
 
-The OCEAN token address on the polygon network is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1. 
+The OCEAN token address on the polygon network is [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/address/0x282d8efCe846A88B159800bd4130ad77443Fa1A1). 
 
 Yes, the tokens can be bridged. Please follow this [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
   
@@ -1553,80 +1613,6 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 </details>
 
 ### Chains
-
-<details>
-
-<summary> Which chain do most people stake on? What are the staking costs? </summary>
-
-You can only "stake" via eth mainnet.
-
-Data Farming Active Rewards has multi-chain support and you can farm assets on any chain.
-  
-</details>
-
-<details>
-
-<summary>Are there plans to switch to BNB or another blockchain for staking to reduce costs?</summary>
-
-
-I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed on the Ethereum mainnet. We don't have immediate plans to add another chain for VeOcean staking at the moment. However, it's important to note that to be eligible for Data Farming, data assets for DFing can be published on various networks where Ocean Protocol is deployed in production, including ETH Mainnet and Polygon, among others. You can find more information about this in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean#veocean-earnings).
-  
-</details>
-
-<details>
-
-<summary>Which chain is veOCEAN be deployed on?</summary>
-
-[veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet and allow users to allocate veOCEAN tokens to any asset, on any chain.
-
-</details>
-
-<details>
-
-<summary>Which networks are eligible for Data Farming?</summary>
-
-Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
-
-You can find a list of [all supported chains here](networks/README.md).
-
-</details>
-
-<details>
-
-<summary>Where can I find the veOCEAN and DF contracts?</summary>
-
-They are deployed on the Ethereum mainnet, alongside other Ocean contract deployments. You can find the [full list of contracts here](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).
-
-</details>
-
-<details>
-
-<summary>What is the official veOCEAN epoch start_time?</summary>
-
-veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
-
-</details>
-
-<details>
-
-<summary>Which chain supports Fixed Price Assets?</summary>
-
-You can publish Fixed Price Assets to any chain that Ocean supports
-
-</details>
-
-<details>
-
-
-<details>
-
-<summary>Can I farm on other chains then Ethereum?</summary>
-
-1. veOCEAN exists on ETH mainnet only. 
-2. Data Farming Active Rewards has native multi-chain support.
-  
-</details>
-
 
 ### Ocean Protocol Ambassadors 
 
