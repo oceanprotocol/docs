@@ -214,6 +214,14 @@ Yes, You can find some details of collaborations on our [blogpost](https://blog.
   
 </details>
 
+<details>
+
+<summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
+
+OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose. ⁣
+
+  
+</details>
 
 ### Technical Questions
 
@@ -424,7 +432,7 @@ Check out our [roadmap](https://oceanprotocol.com/technology/roadmap) to see wha
 
 </details>
 
-## Data Farming FAQ
+### Data Farming FAQ
 
 <details>
 
@@ -662,8 +670,6 @@ You can delegate veOCEAN to others in order to facilitate farming, however, you 
 ⁣
 You can get the necessary info in the [docs](https://docs.oceanprotocol.com/user-guides/data-farming). ⁣
 
-
-  
 </details>
 
 <details>
@@ -671,8 +677,8 @@ You can get the necessary info in the [docs](https://docs.oceanprotocol.com/user
 <summary>Do you offer staking of $OCEAN? Is there a tutorial available for staking, and can I learn about the APY and locking time for unstaking?</summary>
 
 Absolutely, we've adopted a staking approach similar to veCRV, allowing you to lock your Ocean tokens for veOCEAN to enjoy both passive and active rewards. Here are some handy resources to help you get started:
-Tutorial: https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
-Estimate your APY: https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy
+1. [Tutorial](https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial)
+2. [Estimate your APY](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy)
 
 Feel free to explore these links for step-by-step guidance and insights into maximizing your staking rewards with veOCEAN.
 
@@ -685,29 +691,19 @@ PS: We cannot offer guidance related to where to allocate your tokens, that's yo
 <summary>Is there a way to transform VeOcean to Ocean gradually over the lock period? Also, how will VeOcean be distributed over a certain time frame, and will Ocean tokens be reduced at the end of the lock period?</summary>
 
 
-No, you can't convert your VeOcean to Ocean during the lock period. However, you have the opportunity to earn rewards (in $OCEAN) through active or passive staking. When the lock period concludes, you gain access to all your locked Ocean tokens. You can find additional information about OCEAN emissions here: https://docs.oceanprotocol.com/veocean-data-farming/emissions-apys. 
-It's important to note that you won't lose Ocean tokens by locking them, and they won't be reduced at the end of the lock period. To learn more about VeOcean, check out this resource: https://docs.oceanprotocol.com/rewards/df-veocean.
+No, you can't convert your VeOcean to Ocean during the lock period. However, you have the opportunity to earn rewards (in $OCEAN) through active or passive staking. When the lock period concludes, you gain access to all your locked Ocean tokens. You can find additional information about OCEAN emissions [here](https://docs.oceanprotocol.com/veocean-data-farming/emissions-apys). 
+It's important to note that you won't lose Ocean tokens by locking them, and they won't be reduced at the end of the lock period. To learn more about VeOcean, check out this [resource](https://docs.oceanprotocol.com/rewards/df-veocean).
   
 </details>
-
-
-
-
 
 <details>
 
 <summary>Is there a way to check the duration and amounts of veOCEAN locked on-chain for all wallets?</summary>
 
 
-Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our documentation at this link: https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list. Feel free to run the script by clicking on the "run" button.
-
+Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our [documentation](https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
   
 </details>
-
-
-
-
-
 
 <details>
 
@@ -739,33 +735,22 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 
 <summary>What's the amount of veOcean one can get for locking 1 Ocean token?</summary>
 
-1 veOCEAN if you lock for 4 years. Learn more about VeOcean Here - https://docs.oceanprotocol.com/rewards/df-veocean ⁣
-
+1 veOCEAN if you lock for 4 years. Learn more about VeOCEAN [here](https://docs.oceanprotocol.com/rewards/df-veocean).
   
 </details>
 
-
-
-## Staking FAQs
+### Staking FAQs
 
 <details>
 
 <summary>Could you explain the benefits of staking $OCEAN tokens and how the APY is calculated?</summary>
 Yes, You can find the details in these blog posts - ⁣
 ⁣
-1) Benefits ⁣
-https://docs.oceanprotocol.com/rewards/veocean ⁣
-⁣
-2) Passive Rewards ⁣
-https://docs.oceanprotocol.com/rewards/df-intro ⁣
-⁣
-3) Emissions & APYs ⁣
-https://docs.oceanprotocol.com/rewards/df-emissions-apys ⁣
-
+1. [Benefits](https://docs.oceanprotocol.com/rewards/veocean)
+2. [Passive Rewards]⁣(https://docs.oceanprotocol.com/rewards/df-intro)
+3. [Emissions & APYs](https://docs.oceanprotocol.com/rewards/df-emissions-apys)
   
 </details>
-
-
 
 <details>
 
@@ -774,13 +759,8 @@ https://docs.oceanprotocol.com/rewards/df-emissions-apys ⁣
 They are not auto-compounded.
 
 They can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
-
-
   
 </details>
-
-
-
 
 
 <details>
@@ -797,13 +777,8 @@ Yes. You are participating by default in the passive rewards when you lock your 
 <summary>When one withdraws all locked amounts, the active and passive rewards are automatically claimed as well?</summary>
 
 No, when the locking period concludes, and you withdraw your tokens, the rewards (passive or active) are not automatically claimed. You must claim them separately. 
-
   
 </details>
-
-
-
-
 
 
 <details>
@@ -811,14 +786,9 @@ No, when the locking period concludes, and you withdraw your tokens, the rewards
 <summary>How much Ocean do I need to stake to earn interest?</summary>
 
 There is no minimum amount. The rewards will depend on the amount you lock.
-You will get passive rewards by default when you lock tokens. On top of that, you can get active rewards if you actively participate in the program. Here are some resources:
-https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
+You will get passive rewards by default when you lock tokens. On top of that, you can get active rewards if you actively participate in the program. Here are some [resources](https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial).
 
-  
 </details>
-
-
-
 
 
 <details>
@@ -830,35 +800,17 @@ The lock opens at the time you lock your tokens.
 </details>
 
 
-
-
 <details>What is the best time to lock OCEAN to avoid high gas fees? Do I need to approve twice?
 
 
 <summary>What is the best time to lock OCEAN to avoid high gas fees? Do I need to approve twice? </summary>
 
 
-When gas prices are low, which you can check at https://www.useweb3.xyz/gas, the locking process occurs in two phases. Initially, you must approve the amount you wish to lock, and subsequently, you execute the lock transaction. If you've previously approved the desired amount for locking, there's no need to repeat the approval step. You only need to approve once, unless you intend to lock a higher amount than what you've already approved.
-
-
+When gas prices are low, which you can check [here](https://www.useweb3.xyz/gas), the locking process occurs in two phases. Initially, you must approve the amount you wish to lock, and subsequently, you execute the lock transaction. If you've previously approved the desired amount for locking, there's no need to repeat the approval step. You only need to approve once, unless you intend to lock a higher amount than what you've already approved.
 
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
 <details>
-
-
-
 
 <summary>What about passive stakers — people who just want to stake in one place and be done?</summary>
 
@@ -883,9 +835,8 @@ Half the DF revenue goes to veOCEAN stake that users can allocate. Allocate well
 
 Yes, there is active work in curating data assets. Both keep growing and you can now use delegation to make active rewards easier to access.
 
-More info here - https://docs.oceanprotocol.com/user-guides/data-farming.
+More info [here](https://docs.oceanprotocol.com/user-guides/data-farming).
 
-  
 </details>
 
 <details>
@@ -901,7 +852,7 @@ When it comes to active staking, you aren't exposed to additional risks. Your ve
 
 As with any system, inherent risks exist. In terms of the liquidity you provide, rest assured that we have implemented battle-tested contracts, protecting assets worth billions, including veCRV. With this model, there is no liquidity risk, and you are shielded from losing your OCEAN due to Impermanent Loss (IL); your OCEAN tokens are held securely in lock.
 
-More information about APYs here - https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy
+More information about [APYs](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy).
 
   
 </details>
@@ -911,21 +862,16 @@ More information about APYs here - https://docs.oceanprotocol.com/user-guides/da
 
 <summary>Is there a tutorial on for staking Ocean tokens?</summary>
 
-Yes.
-https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
-
+Yes, there is one in the [documentation](https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial).
   
 </details>
-
-
-
 
 
 <details>
 
 <summary>If I withdraw before the unlock date, what happens to my veOCEAN and rewards?</summary>
 
-You can't withdraw before the unlock date. More Info here - https://docs.oceanprotocol.com/rewards/df-veocean
+You can't withdraw before the [unlock date](https://docs.oceanprotocol.com/rewards/df-veocean).
 
   
 </details>
@@ -939,7 +885,6 @@ Allocations happen instantly.
 
 However, your allocation power is counted progressively throughout the week and requires you to leave them there for it to work.
 
-  
 </details>
 
 
@@ -947,10 +892,7 @@ However, your allocation power is counted progressively throughout the week and 
 
 <summary>What is the best time to lock OCEAN to avoid high gas fees?</summary>
 
-When gas is cheap. 
-
-https://www.useweb3.xyz/gas
-
+When [gas](https://www.useweb3.xyz/gas) is cheap. 
 
 </details>
 
@@ -961,14 +903,9 @@ https://www.useweb3.xyz/gas
 
 No, when the locking period concludes, and you withdraw your tokens, the rewards (passive or active) are not automatically claimed. You must claim them separately. 
 
-  
 </details>
 
-
-
-## Pricing FAQs
-
-
+### Pricing FAQs
 
 
 <details>
@@ -995,7 +932,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 </details>
 
-## Chains FAQ
+### Chains FAQ
 
 <details>
 
@@ -1013,12 +950,9 @@ Data Farming Active Rewards has multi-chain support and you can farm assets on a
 <summary>Are there plans to switch to BNB or another blockchain for staking to reduce costs?</summary>
 
 
-I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed on the Ethereum mainnet. We don't have immediate plans to add another chain for VeOcean staking at the moment. However, it's important to note that to be eligible for Data Farming, data assets for DFing can be published on various networks where Ocean Protocol is deployed in production, including ETH Mainnet and Polygon, among others. You can find more information about this here: https://docs.oceanprotocol.com/rewards/df-veocean#veocean-earnings.
+I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed on the Ethereum mainnet. We don't have immediate plans to add another chain for VeOcean staking at the moment. However, it's important to note that to be eligible for Data Farming, data assets for DFing can be published on various networks where Ocean Protocol is deployed in production, including ETH Mainnet and Polygon, among others. You can find more information about this in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean#veocean-earnings).
   
 </details>
-
-
-
 
 <details>
 
@@ -1075,19 +1009,7 @@ You can publish Fixed Price Assets to any chain that Ocean supports
 </details>
 
 
-## PsdnOcean
-
-<details>
-
-<summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
-
-OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose. ⁣
-
-  
-</details>
-
-
-## Tokenomics 
+### Tokenomics 
 
 <details>
 
@@ -1123,8 +1045,6 @@ OCEAN Token is a standard ERC20 token, so any wallet that can hold ERC20 can hol
 <summary>Can a hardware wallet be used to lock Ocean tokens?</summary>
 
 Yes, either through Metamask (or another software wallet that can connect to a hardware wallet) or through your hardware wallet software - Ledger, Trezor etc. ⁣
-
-
 
 
 </details>
@@ -1227,7 +1147,7 @@ The Ethereum network has the highest liquidity for $OCEAN.
 </details>
 
 
-## Ocean Protocol Ambassadors 
+### Ocean Protocol Ambassadors 
 
 <details>
 
@@ -1259,7 +1179,7 @@ The rewards vary depending on your goals, as they come in various forms. To begi
   
 </details>
 
-## Data Challenges 
+### Data Challenges 
 
 <details>
 
@@ -1274,7 +1194,7 @@ Link - https://catalunya.oceanprotocol.com/
 
 
 
-## Reach out to us 
+### Reach out to us 
 
 <details>
 
@@ -1286,7 +1206,7 @@ One member of our team will reach out to you.
 </details>
 
 
-## Data Storage Solutions
+### Data Storage Solutions
 
 <details>
 
