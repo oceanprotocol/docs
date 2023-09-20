@@ -774,17 +774,11 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 <details>
 
 <summary>Could you explain the benefits of staking $OCEAN tokens and how the APY is calculated?</summary>
-Yes, You can find the details in these blog posts - ⁣
-⁣
-1) Benefits ⁣
-https://docs.oceanprotocol.com/rewards/veocean ⁣
-⁣
-2) Passive Rewards ⁣
-https://docs.oceanprotocol.com/rewards/df-intro ⁣
-⁣
-3) Emissions & APYs ⁣
-https://docs.oceanprotocol.com/rewards/df-emissions-apys ⁣
 
+Yes, You can find the details in these resources.⁣
+1. [Benefits](https://docs.oceanprotocol.com/rewards/veocean).
+2. [Passive Rewards](https://docs.oceanprotocol.com/rewards/df-intro).
+3. [Emissions & APYs](https://docs.oceanprotocol.com/rewards/df-emissions-apys).
   
 </details>
 
