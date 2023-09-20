@@ -203,7 +203,7 @@ Yes, you can sell any type of data. Start learning about us through the [documen
 
 <summary>Is it true that Mercedes Benz has partnered with Ocean?</summary>
 
-Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4. ⁣
+Yes 🫢, [here](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4) are a few details.
   
 </details>
 
@@ -211,7 +211,7 @@ Yes, You can find details of the collaboration here - https://blog.oceanprotocol
 
 <summary>Are there any new partners collaborating with Ocean Protocol?</summary>
 
-Yes, You can find some details of collaborations on our [blogpost](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4). ⁣
+Yes 😉 You'll find some details of collaborations on our [blogpost](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4). ⁣
 
   
 </details>
@@ -358,9 +358,7 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 
 <summary>As Google Drive is not supported in the Ocean ecosystem, what are the alternative options for storing a file and then publishing it?</summary>
 
-Google Drive is designed for file sharing between a small group of users. ⁣
-⁣
-You can find some alternatives [here](https://docs.oceanprotocol.com/developers/storage).
+Google Drive is an awesome product, but is designed for file sharing between a small group of users and is not properly working with our architecture. ⁣There are a bunch of other systems you can use that work smoothly with our stack. [Here](https://docs.oceanprotocol.com/developers/storage) are some alternatives.
 
   
 </details>
