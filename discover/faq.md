@@ -1015,9 +1015,7 @@ Ocean offers faucets for every test network where the smart contracts are deploy
 
 </details>
 
-
 <details>
-
 
 <summary>If a dataset consists of 100 individuals' private data, does this solution allow each individual to maintain sovereign control over their data while still enabling algorithms to compute as if it were one dataset?</summary>
 
