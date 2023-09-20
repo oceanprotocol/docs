@@ -140,6 +140,8 @@ Not to our knowledge. If you find something, please share it with us 🙃
 <summary>What is the 2023 roadmap of Ocean Protocol?</summary>
 
 This [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051) provides the 2023 goals and plans for the Ocean Core team. 
+</details>
+
 <details>
 
 <summary>Does the OCEAN token also have governance functionality?</summary>
@@ -944,7 +946,6 @@ Data Farming Active Rewards has multi-chain support and you can farm assets on a
   
 </details>
 
-
 <details>
 
 <summary>Are there plans to switch to BNB or another blockchain for staking to reduce costs?</summary>
@@ -1019,7 +1020,6 @@ Ocean Market currently supports only $OCEAN for the exchange of services. Market
   
 </details>
 
-
 <details>
 
 <summary>Is there a burn mechanism for OCEAN tokens?</summary>
@@ -1038,14 +1038,11 @@ OCEAN Token is a standard ERC20 token, so any wallet that can hold ERC20 can hol
 
 </details>
 
-
 <details>
-
 
 <summary>Can a hardware wallet be used to lock Ocean tokens?</summary>
 
 Yes, either through Metamask (or another software wallet that can connect to a hardware wallet) or through your hardware wallet software - Ledger, Trezor etc. ⁣
-
 
 </details>
 
@@ -1053,9 +1050,10 @@ Yes, either through Metamask (or another software wallet that can connect to a h
 
 <summary>Is Ocean deployed on the BSC network? What is the contract address?</summary>
 
-Yes, it's 0xDCe07662CA8EbC241316a15B611c89711414Dd1a ⁣
-Link - https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a ⁣
-  <summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
+Yes, it's [0xDCe07662CA8EbC241316a15B611c89711414Dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a).
+
+<details>
+<summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
 
 OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose.
 
@@ -1076,15 +1074,13 @@ All Ocean modules and components are open-source and freely available to the com
 
 <summary>When is the next token release scheduled?</summary>
 
-There will not be a next release for the token. To date, all tokens have been minted and approximately 720 million OCEAN are allocated towards data farming and network rewards. More info here - https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣
+There will not be a next release for the token. To date, all tokens have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣) and approximately 720 million OCEAN are allocated towards data farming and network rewards. 
   
 </details>
 
 <details>
 
 <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
-
-
 
 Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
 
@@ -1097,28 +1093,23 @@ Several projects use Ocean-components to power their data marketplaces. If these
 <summary>Does the OCEAN token also have governance functionality?</summary>
 
 During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently, there are no governance functions associated with the Ocean Token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
-
   
 </details>
-
 
 <details>
 
 <summary>How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?</summary>
 
-A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate. Information about the Ocean token dynamics can be found here: https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9. Also, 5% of Ocean network revenue is assigned for burning.
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate. Information about the Ocean token dynamics can be found [here](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9). Also, 5% of Ocean network revenue is assigned for burning.
   
 </details>
-
 
 <details>
 
 <summary>Could you explain the impact of EUROe on the utility of OCEAN? If transactions are made with EUROe within the Gen-X and GAIA-X ecosystem, how does it affect the use and value of OCEAN?</summary>
 
-3rd party markets such as Gaia-X, BDP, and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable, and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to the plan set out ⁣
+3rd party markets such as Gaia-X, BDP, and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable, and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to the [plan](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9) set out.
 ⁣
-Here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
-  
 </details>
 
 
@@ -1126,16 +1117,15 @@ Here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
 
 <summary>Does the increasing number of transactions and demand for OCEAN tokens result in a dampening effect due to higher prices?</summary>
 
-$OCEAN token is designed as a utility token, which becomes deflationary when transaction volume reaches scale and exceeds the value of $OCEAN being emitted via Data Farming. Learn more here - https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9 ⁣
-
+$OCEAN token is designed as a utility token, which becomes deflationary when transaction volume reaches scale and exceeds the value of $OCEAN being emitted via Data Farming. Learn more [here](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9). ⁣
   
 </details>
 
 <details>
 
-  <summary>Is there a stablecoin backed by OCEAN tokens?</summary>
+<summary>Is there a stablecoin backed by OCEAN tokens?</summary>
 
-  No, there is no stablecoin issued that is backed using $OCEAN.
+No, there is no stablecoin issued that is backed using $OCEAN.
   
 </details>
 
@@ -1156,7 +1146,7 @@ The Ethereum network has the highest liquidity for $OCEAN.
 To become a member of the Ambassador Program, follow these steps: 
 1. Join Ocean Protocol's Discord server
 1. Join the Discord channel called #treasure-hunter. 
-2. Access the application form: "Apply to use this channel (https://discord.com/channels/612953348487905282/1133478278531911790)."
+2. Access the application form: "[Apply](https://discord.com/channels/612953348487905282/1133478278531911790) to use this channel."
 3. Answer the questions in the application form. 
 4. Once you've completed the application process, you can start earning experience points (XP) by actively engaging in discussions on various topics related to the Ocean Protocol.
   
@@ -1185,13 +1175,10 @@ The rewards vary depending on your goals, as they come in various forms. To begi
 
 <summary>Is there a repository or webpage with previous data challenges and submitted solutions?</summary>
 
-You can find a list of past data challenges at https://oceanprotocol.com/challenges. 
-Accessing the submitted solutions is currently a work in progress, with one solution already available for the Catalunya challenge.
-
-Link - https://catalunya.oceanprotocol.com/
+You can find a list of past data challenges on our [website](https://oceanprotocol.com/challenges). 
+Accessing the submitted solutions is currently a work in progress, with one solution already available for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge.
   
 </details>
-
 
 
 ### Reach out to us 
@@ -1200,13 +1187,13 @@ Link - https://catalunya.oceanprotocol.com/
 
 <summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
 
-For partnerships, please fill in this form: https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform. 
+For partnerships, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
 One member of our team will reach out to you.
   
 </details>
 
 
-### Data Storage Solutions
+### Data Storage
 
 <details>
 
@@ -1214,8 +1201,7 @@ One member of our team will reach out to you.
 
 Google Drive is designed for file sharing between a small group of users. ⁣
 ⁣
-You can find better Alternatives here - ⁣
-https://docs.oceanprotocol.com/developers/storage ⁣
+You can find some alternatives [here](https://docs.oceanprotocol.com/developers/storage).
 
   
 </details>
@@ -1224,6 +1210,6 @@ https://docs.oceanprotocol.com/developers/storage ⁣
 
 <summary>Do you have a tutorial for using Arweave as storing solution for assets?</summary>
 
-You bet we have. Here it is: https://docs.oceanprotocol.com/user-guides/asset-hosting/arweave
+You bet we have. [Here](https://docs.oceanprotocol.com/user-guides/asset-hosting/arweave) it is 😎
 
 </details>
