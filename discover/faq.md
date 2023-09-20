@@ -1612,8 +1612,6 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 
 </details>
 
-### Chains
-
 ### Ocean Protocol Ambassadors 
 
 <details>
