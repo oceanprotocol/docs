@@ -13,6 +13,211 @@ Hopefully, you'll find the answers here! If not then please don't hesitate to re
 
 <details>
 
+<summary>What is Ocean Protocol, and how is it related to artificial intelligence? What are the project's future goals?</summary>
+
+The mission of Ocean is to level the playing field around data & AI. 
+AI models need data; Ocean provides tools to help supply, manage, and monetize that data. 
+Ocean tokenizes access to data, enabling web3 wallets to hold keys to data, decentralized data exchanges, token-gated APIs, the provenance of data sharing, compute to data, and more. 
+The Ocean core team & Ocean community continue to evolve the stack and applications around it, which in turn drives traction.
+You can learn more about what we are doing in 2023 in this [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051a).
+  
+</details>
+
+
+<details>
+
+<summary>Is Ocean aiming to be a marketplace for data?</summary>
+
+Our goal is to build the tools and services to facilitate a new Data Economy that gives data owners control, while preserving privacy and helping to kickstart commercialization of data, including data marketplaces.
+Ocean Protocol was founded to build technology for a Data Economy at the intersection of blockchain, data, and AI. We have pioneered several technologies to push the envelope forward, including the original patent for NFTs, token engineering, data tokens, and others.
+
+Find more about our vision in this [blog post](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8).
+
+</details>
+
+<details>
+
+<summary>What types of data can be sold on the Ocean market, and what kind of data are customers usually looking for? </summary>
+
+Any type of data can be sold via Ocean Protocol. AI data, music data, image, video, trading, ai data, tickets. Anything that can be accessed online.
+
+</details>
+
+<details>
+
+<summary>How can we ensure the validity of datasets on the market?</summary>
+
+We are not actively developing a dedicated system for dataset validation. Instead, we have built tools and established multiple methods within our verification layer. However, the primary responsibility for data validation lies with the customer. To assess the data's quality, consider these questions: 
+1. What is the reputation of the dataset's publisher?
+2. Does the dataset include well-defined metadata and provenance information? 
+3. Is sample data available for evaluation? 
+4. What is the dataset's rating within the marketplace? (Refer to the star rating we have implemented.) 
+5. Is the publisher responsive to inquiries? Feel free to send a direct message to the publisher via the marketplace to engage in discussions before making a data purchase.
+
+
+</details>
+
+<details>
+
+<summary>Does Ocean aspire to cultivate a decentralized ChatGPT through the datasets on the Ocean market?</summary>
+
+While Ocean Protocol primarily focuses on data sharing and data-related technologies, it's not directly involved in the development of AI models like ChatGPT. However, it's possible that individuals or organizations could use the Ocean marketplace to share or sell datasets that could be used in training AI models like ChatGPT. Decentralized AI models, like ChatGPT, often rely on a wide range of data sources to improve their performance and versatility. ⁣
+
+</details>
+
+<details>
+
+<summary>What are the steps needed to encourage people to use the Ocean market, considering the current low consume volume (excluding wash consume)?</summary>
+
+There are a wide host of technical, business, and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology are relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers, or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined.
+
+</details>
+
+<details>
+
+<summary>How do we envision the data-sharing economy evolving in the future, particularly with the rise of AI? How should governments and regulators approach the data-sharing economy?</summary>
+
+Policymaking is a complex, highly charged, and fast-moving field. The position of Ocean Protocol is that the creators of the data should have the tools to control how their data will be used and to share in profits if their data is commercialized. Ocean Protocol was founded to build technology for a Data Economy at the intersection of blockchain, data, and AI. We have pioneered several technologies to push the envelope forward, including the original patent for NFTs, token engineering, data tokens, and others.
+
+</details>
+
+<details>
+
+<summary>How does Ocean Protocol enforce penalties if data is shared without permission?</summary>
+
+Determining whether someone has downloaded your data and is reselling it is quite challenging. While they are bound by a contract not to do so, it's practically impossible to monitor their actions. If you want to maintain the privacy of your dataset, you can explore the option of using compute-to-data(C2D). Via C2D your data remains private and people can only run algorithms(that you approve of) to extract intelligence. 
+This issue is similar to what any digital distribution platform faces. For instance, can Netflix prevent individuals from downloading and redistributing their content? Not entirely. They invest significant resources in security, but ultimately, complete prevention is extremely difficult. They mainly focus on making it more challenging for such activities to occur.
+
+</details>
+
+<details>
+
+<summary>How does Ocean's approach to data value-creation loops differ from other blockchain projects or data marketplaces? What are the benefits and drawbacks of participating in the data-sharing economy?</summary>
+
+The Ocean token design is based on learnings from token engineering, a set of tools and models pioneered by the Ocean core team. Many of the learnings from token engineering are used by current crypto projects, as well as the Ocean team.
+
+The Data Economy is nascent and cutting-edge. Many of the tools, components, and integrations are at an early stage or non-existent. Participation now, in an emerging Data Economy, is a bet on the future where data can be commercialized and accessible for data applications and developers.
+
+</details>
+
+<details>
+
+<summary> Will Acentrik continue to run data transactions on the Ocean Protocol backend? Is Acentrik built on top of Ocean at the protocol level?</summary>
+
+3rd party markets such as Gaia-X, BDP and Acentrik use Ocean components to power their marketplace. They will likely use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to plan set out (https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9).
+
+</details>
+
+<details>
+
+
+<summary>Which areas of data does Ocean Protocol specifically help with in relation to AI?</summary>
+
+Ocean Protocol offers a decentralized data marketplace where you can access a wide range of data, including text datasets, for your AI projects. Whether you're working on natural language processing (NLP), sentiment analysis, or text generation, Ocean Protocol can assist you in finding the data you need to enhance your AI models. 
+
+Also, you can train models on the data that is available and extract insights.
+
+</details>
+
+<details>
+
+<summary>How do we distinguish between wash trading and real volume, especially considering that the blockchain lacks sybil resistance? Wouldn't individuals always be able to create new addresses and purchase the datasets they bonded to?</summary>
+
+  There is no economic value or advantage in wash-consuming data assets. The transaction fees expended for this maneuver would exceed the amount of potential rewards to be gained .
+
+</details>
+
+<details>
+
+<summary>Is there any targeting of current Web2 data users/traders? Is the Azure marketplace more successful in terms of user adoption? After 25 weeks of the current marketplace, it is surprising to see minimal non-"wash-consume" volume.</summary>
+
+  We don't want to comment on the success of the Azure marketplace.If it's a success, that's great! 
+What we can share is our dedicated efforts to enhance accessibility for our tools and technology, which includes incorporating features for web2 users.
+
+</details>
+
+<details>
+
+<summary>Are there any plans to increase data consume volume for datasets on the Ocean market?</summary>
+
+Yes, currently, we have several ongoing initiatives. On one hand, there's the data farming effort, actively developing templates and showcases, enhancing the technology stack, hosting and rewarding participants in data challenges. All of these efforts are geared towards increasing platform engagement and bringing more people into the ecosystem. ⁣
+
+</details>
+
+<details>
+
+<summary>Is Ocean an AI project and is it related to artificial intelligence? How is Ocean different from other AI projects? What are Project's future goals? </summary>
+
+Ocean Protocol is not primarily an AI project, but it is closely related to artificial intelligence (AI) and plays a significant role in the AI ecosystem. Its primary focus is on data sharing and data marketplaces. 
+1. Is Ocean an AI project? Ocean Protocol is primarily a data-sharing and marketplace project, but it is highly relevant to AI. It provides a platform for data providers to share and monetize their datasets, which are crucial for training and improving AI models.
+
+2. Is it related to artificial intelligence? Yes, Ocean Protocol is closely related to artificial intelligence. It helps address the data challenges that AI faces by providing a decentralized marketplace for datasets, including text, image, and other types of data, which are essential for AI model development.
+
+3. What are the project's future goals? Ocean Protocol's future goals include expanding its data marketplace, enhancing data privacy and security, and fostering collaboration between data providers and AI practitioners. The project aims to make high-quality data more accessible and usable for AI applications.
+
+4. How is Ocean different from other AI projects? Ocean stands out from other AI projects by focusing on the data aspect of AI. While many AI projects concentrate on algorithms and models, Ocean's primary goal is to enable efficient and secure data sharing. It leverages blockchain technology to ensure data provenance, privacy, and transparency, making it a unique solution in the AI landscape.
+
+</details>
+
+<details>
+
+<summary>Are there examples of individuals or organizations who purchase data through Ocean Protocol?</summary>
+
+  Data is purchased using the Ocean Market and other Ocean services, but the volume of sales and purchases is small at the moment
+
+There are a wide host of technical, business, and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology are relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers, or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined.
+</details>
+
+<details>
+
+<summary>How does Ocean Protocol generate revenue?</summary>
+
+The protocol generates revenue via fees. A fee is applied to all transactions for using the Ocean components. This fee is used for the further development of Ocean technology and for the buy-and-burning of the Ocean token. ⁣
+
+</details>
+
+<details>
+
+<summary>What is the total revenue generated by Ocean so far?</summary>
+
+While we currently don't have a dedicated dashboard for this information, you can access it at the smart contract level. As an example, for Polygon-generated revenue(the most used network), you can view this information [here](https://polygonscan.com/address/0x042BFbd88c3998282153088604207b2AeF045b43#tokentxns).
+
+</details>
+
+<details>
+
+<summary>Is there a dashboard that shows the actual network revenues and the 5% portion that is supposed to be burned?</summary>
+
+While we currently don't have a dedicated dashboard for this information, you can access it at the smart contract level. As an example, for Polygon-generated revenue(the most used network), you can view this information on [polygonscan](https://polygonscan.com/address/0x042BFbd88c3998282153088604207b2AeF045b43#tokentxns).
+
+</details>
+
+<details>
+
+<summary>Is the ocean still about stake and earn?</summary>
+
+Staking and earning are part of the project, incentivizing people and curating data assets. But this is just one part, We encourage you to discover more about the project by going through the [docs](https://docs.oceanprotocol.com/).
+
+</details>
+
+<details>
+
+<summary>How is the performance of the data market?</summary>
+
+There are a wide host of technical, business and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology is relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined. ⁣
+
+</details>
+
+<details>
+
+<summary>What are the updates regarding data unions in the Ocean ecosystem? Regarding the value-creation loops for users in the last mile, I'm curious to know how the team intends to unlock this economic opportunity for users beyond data scientists. Specifically, how do you plan to enable users to earn from their data?</summary>
+
+We operate as a protocol, providing tools for others to create valuable projects. As a result, our team is not currently focused on developing a data union directly. However, there are individuals and groups leveraging Ocean technology to construct data unions. An illustrative example is found [here](https://www.dataunion.app/).
+
+</details>
+
+<details>
+
 <summary>What is a decentralized data marketplace?</summary>
 
 A data marketplace allows providers to publish data and buyers to consume data. Unlike centralized data marketplaces, decentralized ones give users more control over their data, algorithms, and analytics by minimizing custodianship and providing transparent and immutable records of every transaction. With features such as Compute-to-Data (C2D), data and algorithms can be ingested into secure Docker containers where escapes are avoided, protecting both the data and algorithms.
@@ -49,6 +254,14 @@ Ocean gives you two different options for pricing your data - [fixed price](../d
 
 <details>
 
+<summary>Does Ocean need to be compliant with the ISO 20022 standard? Is there any value in working on compliance, considering that some tokens have taken action in this area?</summary>
+
+Ocean Protocol helps facilitate data sharing and commercialization. At our current stage of development, we have no developed specific industry vertical supports, such as ISO20022 (relating to standardized formats for financial data sharing).
+
+</details>
+
+<details>
+
 <summary>Is my data secure?</summary>
 
 Yes. Ocean Protocol understands that some data is too sensitive to be shared — potentially due to GDPR or other reasons. For these types of datasets, we offer a unique service called [compute-to-data](../developers/compute-to-data/README.md). This enables you to monetize the dataset that sits behind a firewall without ever revealing the raw data to the consumer. For example, researchers and data scientists pay to run their algorithms on the data set, and the computation is performed behind a firewall; all the researchers or data scientists receive is the results generated by their algorithm.
@@ -59,11 +272,9 @@ Yes. Ocean Protocol understands that some data is too sensitive to be shared —
 
 <summary>Where is my data stored?</summary>
 
-Ocean does not provide data storage. Users have the choice to [store](../user-guides/asset-hosting/README.md) their data on their own servers, cloud, or decentralized storage. Users need only to provide a URL, an IPFS hash, an Arweave CID, or the on-chain information to the dataset. This is then encrypted as a means to protect access to the dataset.
+Ocean does not provide data storage. Publishers have the choice to [store](../user-guides/asset-hosting/README.md) their data on their own servers, cloud, or decentralized storage. Users need only to provide a URL, an IPFS hash, an Arweave CID, or the on-chain information to the dataset. This is then encrypted as a means to protect access to the dataset.
 
 </details>
-
-
 
 <details>
 
@@ -117,18 +328,6 @@ All the ecosystem information is available on the [website](https://oceanprotoco
 
 <details>
 
-<summary>What is Ocean Protocol, and how is it related to artificial intelligence? What are the project's future goals?</summary>
-
-The mission of Ocean is to level the playing field around data & AI. 
-AI models need data; Ocean provides tools to help supply, manage, and monetize that data. 
-Ocean tokenizes access to data, enabling web3 wallets to hold keys to data, decentralized data exchanges, token-gated APIs, the provenance of data sharing, compute to data, and more. 
-The Ocean core team & Ocean community continue to evolve the stack and applications around it, which in turn drives traction.
-You can learn more about what we are doing in 2023 in this [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051a).
-  
-</details>
-
-<details>
-
 <summary>Is there a real-time bot that tracks dataset sales on Ocean Protocol?</summary>
 
 Not to our knowledge. If you find something, please share it with us 🙃
@@ -144,9 +343,9 @@ This [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed1
 
 <details>
 
-<summary>Does the OCEAN token also have governance functionality?</summary>
+<summary>What’s to come with Ocean this year?</summary>
 
-During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+Check out our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what we are currently working on. If you are interested in tracking our progress towards these goals then take a look at our [github](https://github.com/oceanprotocol/).
 
 </details>
 
@@ -220,31 +419,9 @@ Yes 😉 You'll find some details of collaborations on our [blog post](https://b
 
 <summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
 
-OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose. ⁣
-
+OCEAN is the main currency of the Ocean network, particularly the Ocean Market. [psdnOCEAN](https://docs.h2odata.xyz/protocol-overview/psdnocean-veocean-liquid-staking) is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose. ⁣
   
 </details>
-
-
-### Data Storage
-
-<details>
-
-<summary>As Google Drive is not supported in the Ocean ecosystem, what are the alternative options for storing a file and then publishing it?</summary>
-
-Google Drive is an awesome product, but is designed for file sharing between a small group of users and is not properly working with our architecture. ⁣There are a bunch of other systems you can use that work smoothly with our stack. [Here](https://docs.oceanprotocol.com/developers/storage) are some alternatives.
-
-  
-</details>
-
-<details>
-
-<summary>Do you have a tutorial for using Arweave as storing solution for assets?</summary>
-
-You bet we have. [Here](https://docs.oceanprotocol.com/user-guides/asset-hosting/arweave) it is 😎
-
-</details>
-
 
 ### Tokenomics 
 
@@ -252,7 +429,7 @@ You bet we have. [Here](https://docs.oceanprotocol.com/user-guides/asset-hosting
 
 <summary>Is OCEAN the only currency used for exchanging data?</summary>
 
-Ocean Market currently supports only $OCEAN for the exchange of services. Markets such as BDP and Acentrik use another currency for the exchange of services.
+Ocean Market currently supports only $OCEAN and H2O for the exchange of services. Markets such as BDP and Acentrik use another currency for the exchange of services.
   
 </details>
 
@@ -264,9 +441,92 @@ A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-
 
 </details>
 
+<details>
+
+<summary>What is the circulating supply of Ocean token? What is the emission schedule for $OCEAN?</summary>
+
+All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4-year half-life.
+
+</details>
 
 <details>
 
+<summary>How does the $OCEAN token capture value?</summary>
+
+The $OCEAN token is used as the [glue](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9) for the Ocean ecosystem. A 0.1% or a 0.2% fee is applied to all transactions performed using Ocean components. This fee is used for further development of Ocean technology and for buy-and-burning of the Ocean token. 
+
+</details>
+
+<details>
+
+<summary>How does the ecosystem and the Ocean token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
+
+You are right, all Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace. But, there is a community fee involved in all transactions hapening in the ecosystem. 
+
+The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
+
+veOCEAN on the other hand, follows the model of other ve tokens, where it can be used for passive and active staking. By locking up your $OCEAN to veOCEAN, you automatically receive passive staking rewards. You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy (psdnOCEAN), who deploy your veOCEAN at no risk, in order to gain a share of active rewards. Active rewards are based on transaction volume on specific data assets.
+
+</details>
+
+<details>
+
+<summary>Can $OCEAN supply become deflationary?</summary>
+
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
+
+</details>
+
+<details>
+
+<summary>How many tokens did the core team receive?</summary>
+
+The Ocean token [supply](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) is fixed at 1.41 Billion. To date, all tokens have been minted and approximately 720m OCEAN are allocated towards data farming and network rewards. Of the total supply, 10% was allocated to over 100 members of the founding team and developers in exchange for a 5 year commitment to the project.
+
+
+</details>
+
+<details>
+
+<summary>Does OCEAN have a vesting schedule? How were OCEAN tokens allocated during the launch?</summary>
+
+All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4 year half-life.
+
+</details>
+
+<details>
+
+<summary>How many tokens have been burned so far?</summary>
+
+You can view the transactions for the burned tokens on [etherscan](https://etherscan.io/token/0x967da4048cd07ab37855c090aaf366e4ce1b9f48?a=0x000000000000000000000000000000000000dead). As of September 2023, approximately 1.4 million tokens have been burned. ⁣
+
+</details>
+
+<details>
+
+<summary>How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?</summary>
+
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the [Ocean token supply](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9) would deflate. Also, 5% of Ocean network revenue is assigned for burning. ⁣
+
+</details>
+
+<details>
+
+<summary>If any token can be used for payment on marketplaces, how does OCEAN token capture value over time? Where does the higher demand for OCEAN come from?</summary>
+
+The $OCEAN token is used as the glue for the Ocean ecosystem. A 0.1% or a 0.2% fee is applied to all transactions performed using Ocean components. This fee is used for further development of Ocean technology and for buy-and-burning of the Ocean token.
+
+</details>
+
+<details>
+
+<summary>Where can I find information about the tokenomics and economic aspects of the Ocean Protocol project?</summary>
+
+All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4 year half-life.⁣
+
+</details>
+
+<details>
   
 <summary>Which wallet is best for storing $Ocean tokens?</summary>
 
@@ -289,19 +549,12 @@ Yes, either through Metamask (or another software wallet that can connect to a h
 Yes, it's [0xDCe07662CA8EbC241316a15B611c89711414Dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a).
 
 <details>
-<summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
-
-OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose.
-
-</details>
-
-
-<details>
 
 <summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
 
 All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
-  
+
+The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
 </details>
 
 
@@ -369,15 +622,53 @@ The Ethereum network has the highest liquidity for $OCEAN.
   
 </details>
 
+### Data Storage
+
+<details>
+
+<summary>As Google Drive is not supported in the Ocean ecosystem, what are the alternative options for storing a file and then publishing it?</summary>
+
+Google Drive is an awesome product, but is designed for file sharing between a small group of users and is not properly working with our architecture. ⁣There are a bunch of other systems you can use that work smoothly with our stack. [Here](https://docs.oceanprotocol.com/developers/storage) are some alternatives.
+
+  
+</details>
+
+<details>
+
+<summary>Do you have a tutorial for using Arweave as storing solution for assets?</summary>
+
+You bet we have. [Here](https://docs.oceanprotocol.com/user-guides/asset-hosting/arweave) it is 😎
+
+</details>
+
+
+
 ### Data Challenges 
 
 <details>
 
-<summary>Is there a repository or webpage with previous data challenges and submitted solutions?</summary>
+<summary>Is there a repository or web page with previous data challenges and submitted solutions?</summary>
 
 You can find a list of past data challenges on our [website](https://oceanprotocol.com/challenges). 
 Accessing the submitted solutions is currently a work in progress, with one solution already available for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge.
   
+</details>
+
+<details>
+
+<summary>What are the potential consequences of the data challenges and the value of the algorithms? How do you plan to use the submitted results?</summary>
+
+That's one of the objectives: to cultivate exceptional, valuable algorithms and make them accessible. Currently, the process of accessing the submitted solutions is in progress, with one solution already available for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge.
+
+</details>
+
+<details>
+
+<summary>When can we expect to see buy/sell activity on the Ocean market based on the DeFi challenges? What factors are currently impacting market activity?</summary>
+
+Soon 😉 Right now we have one for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge. The others are work-in-progress.
+
+
 </details>
 
 ### Data Selling
@@ -456,11 +747,19 @@ The marketplace name, logo, and typeface must be changed by the client. A slight
 
 <details>
 
-<summary>What’s to come with Ocean this year?</summary>
+<summary>What kind of data can be sold on Ocean Protocol? Is it limited to trading, analysis, etc.?</summary>
 
-Check out our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what we are currently working on. If you are interested in tracking our progress towards these goals then take a look at our [github](https://github.com/oceanprotocol/).
+Any type of data can be sold via Ocean Protocol. AI data, music data, image, video, trading, tickets. Anything that can live behind a URL.
 
 </details>
+
+<details>
+
+<summary>What type of data can be sold via the Ocean Market? Can I sell an ebook through Ocean Protocol Market?</summary>
+
+Yes, any type of data can be sold via Ocean Protocol. Ai data, music, image, video, trading, tickets. Anything that is accessible online.
+</details>
+
 
 ### Data Farming
 
@@ -522,7 +821,7 @@ Yes, you will still earn Passive Rewards. However, Active rewards need "Data Con
 
 <details>
 
-<summary>I had to pay $13 to claim 34 Ocean passive rewards. Additionally, I made 0 from last week's active rewards, despite 32 sales and a large allocation. Can you explain why?</summary>
+<summary>What is the APY of data farming and is it rewarding to participate considering the high gas costs?</summary>
 
 The amount of rewards is highly dependent on the locking period. the longer you lock your tokens, the greater the rewards. You can use [this document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy) to estimate the amount you'll get.
 
@@ -596,6 +895,14 @@ Active rewards are dependent on data assets actually making sales for you to rec
 
 </details>
 
+<details>
+
+<summary>How to choose the right asset to allocate veOcean?</summary>
+
+Active stakers can select datasets to stake on based on several factors such as publisher reputation, number of previous consumes of the dataset, ratings and comments of others. ⁣
+
+
+</details>
 
 <details>
 
@@ -729,7 +1036,6 @@ It's important to note that you won't lose Ocean tokens by locking them, and the
 
 <summary>Is there a way to check the duration and amounts of veOCEAN locked on-chain for all wallets?</summary>
 
-
 Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our [documentation](https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
   
 </details>
@@ -768,7 +1074,43 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
   
 </details>
 
+<details>
+
+<summary>Are there any liquid staking wrappers for veOCEAN?</summary>
+
+You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy ([psdnOCEAN](https://docs.h2odata.xyz/protocol-overview/psdnocean-veocean-liquid-staking)), which deploys your veOCEAN at no risk, in order to gain a share of active rewards.
+
+</details>
+
+<details>
+
+<summary>Why the ratio between psdnOCEAN and OCEAN tokens is not close to 1:1?</summary>
+
+The ratio stands at 80% to 20%, creating an imbalanced pool that minimizes price fluctuations. You might find this [resource](https://blog.oceanprotocol.com/psdnocean-the-first-liquid-staking-wrapper-by-the-h2o-team-is-now-live-a3330e15fa5c) valuable.
+
+</details>
+
+<details>
+
+<Summary> How to convert PsdnOcean back to $OCEAN ?</Summary>
+
+You can convert psdnOCEAN back to $OCEAN using the Balancer AMM liquidity [pool](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e).
+
+[Price information](https://www.geckoterminal.com/eth/pools/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b) for psdnOCEAN.
+
+
+</details>
+
 ### Staking
+
+<details>
+
+<summary>What is veOcean and staking in context of Ocean Protocol? </summary>
+
+[veOCEAN](https://docs.oceanprotocol.com/rewards/df-veocean) (vote-escrowed OCEAN) is a special token in the Ocean Protocol ecosystem. Users can obtain veOCEAN by staking their OCEAN tokens for a specific period. This shows commitment to the network. Longer lock periods for veOCEAN typically yield higher rewards.
+You can lock your Ocean Token at - df.oceandao.org
+
+</details>
 
 <details>
 
@@ -780,6 +1122,82 @@ Yes, You can find the details in these resources.⁣
 3. [Emissions & APYs](https://docs.oceanprotocol.com/rewards/df-emissions-apys).
   
 </details>
+
+<details>
+
+<summary>What is the percentage of tokens currently staked?</summary>
+
+You can find the statistics for the number of locked tokens [here](https://autobotocean.com/veOcean). As of September 2023, there are approximately 700 million Ocean tokens in circulation, out of which approximately 30 million have been locked. ⁣
+
+</details>
+
+<details>
+
+<summary>Is there any value to veOcean tokens? When staking them on datasets, do you receive veOcean or Ocean tokens instead?</summary>
+
+[veOCEAN](https://docs.oceanprotocol.com/rewards/df-veocean ) is locked $OCEAN and thus has exactly the same price as $OCEAN when unlocked. When veOCEAN is staked, rewards are granted back in veOCEAN. veOCEAN can be converted to $OCEAN at any time by the owner after the locking period ends. ⁣⁣
+
+</details>
+
+
+
+<details>
+
+<summary>Are there any risks associated with staking Ocean tokens? Can the owner of a dataset run away with my coins? Are there any potential penalties or slashing mechanisms?</summary>
+
+There are no counterparty risks associated with staking $OCEAN. Ocean uses standard, tried-and-audited "ve" smart contracts without modification. It is nonetheless conceivable that there exists a yet-to-be-discovered vulnerability that may be exploited in the future so put only amounts at risk that you are comfortable losing.
+
+</details>
+
+<details>
+
+<summary>Is active staking on datasets limited to the ones I specifically staked my veOcean on? Do I receive active staking rewards only if the datasets I staked on receive DCV?</summary>
+
+Yes, you will receive [active rewards](https://docs.oceanprotocol.com/rewards/df-intro#what-are-active-rewards) if the assets you've curated have Data consume Volume(DCV). ⁣
+
+</details>
+
+<details>
+
+<summary>What is the current APY (Annual Percentage Yield) for staking?</summary>
+
+The APY is highly dependent on the locked amount and more importantly on the locking period. A good tutorial to estimate the APY is available on our [documentation](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy).
+
+</details>
+
+<details>
+
+<summary>How do I analyze projects and decide where to allocate? Do I look at current and past APYs, or is there more to consider? </summary>
+
+Active stakers can select datasets to stake on based on several factors such as publisher reputation, number of previous consumes of the dataset, ratings, and comments of others.
+
+</details>
+
+<details>
+
+<summary>If I stake my Ocean for 6 months and the price of Ocean goes up during that time, will my staked tokens increase in value as well?</summary>
+
+Yes. When you lock Ocean tokens, you'll receive them back at the end of the lock-up period. If the value increases during this time, your Ocean tokens will appreciate in worth. The same principle applies in reverse if the value decreases
+
+</details>
+
+<details>
+
+<summary>I'm new to Ocean and I want to stake my Ocean tokens. Can you guide me on how and where to do this?</summary>
+
+You can lock your Ocean tokens in exchange for veOcean tokens and participate in the Data Farming program. Please go through the mechanics and details of data farming to make informed decisions. [Here](https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial) is a good start.
+
+</details>
+
+<details>
+
+<summary>Should I passively stake and earn income, or is it better to be an active speaker? Are there any risks associated with active staking?</summary>
+
+You can't be an active staker without being a passive one first. In order to actively participate in data curation you first need to [lock](https://df.oceandao.org/passive-df) your OCEAN tokens and receive veOCEAN.
+ In conclusion, the first and easiest step is to passively be part of Data Farming. There are no risks associated with actively participating in Data Farming, you are just pointing your voting power received by getting veOCEAN towards high-quality assets. Please keep in mind that active rewards have costs associated with mainly represented by the gas fees of the transaction(s) you need to do to actively allocate your voting power to certain data sets.
+
+</details>
+
 
 <details>
 
@@ -934,6 +1352,67 @@ No, when the locking period concludes, and you withdraw your tokens, the rewards
 
 </details>
 
+<details>
+
+<summary> Which chain do most people stake on? What are the staking costs? </summary>
+
+You can only "stake" via eth mainnet.
+
+Data Farming Active Rewards has multi-chain support and you can farm assets on any chain.
+  
+</details>
+
+<details>
+
+<summary>Are there plans to switch to BNB or another blockchain for staking to reduce costs?</summary>
+
+I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed on the Ethereum mainnet. We don't have immediate plans to add another chain for VeOcean staking at the moment. However, it's important to note that to be eligible for Data Farming, data assets for DFing can be published on various networks where Ocean Protocol is deployed in production, including ETH Mainnet and Polygon, among others. You can find more information about this in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean#veocean-earnings).
+  
+</details>
+
+<details>
+
+<summary>Which chain is veOCEAN be deployed on?</summary>
+
+[veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet and allow users to allocate veOCEAN tokens to any asset, on any chain.
+
+</details>
+
+<details>
+
+<summary>Which networks are eligible for Data Farming?</summary>
+
+Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
+
+You can find a list of [all supported chains here](networks/README.md).
+
+</details>
+
+<details>
+
+<summary>Where can I find the veOCEAN and DF contracts?</summary>
+
+They are deployed on the Ethereum mainnet, alongside other Ocean contract deployments. You can find the [full list of contracts here](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).
+
+</details>
+
+<details>
+
+<summary>What is the official veOCEAN epoch start_time?</summary>
+
+veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
+
+</details>
+
+<details>
+
+<summary>Can I farm on other chains then Ethereum?</summary>
+
+1. veOCEAN exists on ETH mainnet only. 
+2. Data Farming Active Rewards has native multi-chain support.
+  
+</details>
+
 ### Pricing
 
 
@@ -961,7 +1440,53 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 </details>
 
-### Technical Questions
+### Technical
+
+<details>
+
+<summary>How are datatokens created, and how does the creator make money?</summary>
+
+[Datatokens](https://docs.oceanprotocol.com/developers/contracts/datatokens) represent access rights to a specific dataset on the Ocean Protocol. Creators of datasets tokenize their data, creating these datatokens. Each datatoken is unique to a dataset.
+
+</details>
+
+<details>
+
+<summary>Where can I find information about the number of datatokens created and track their progress?</summary>
+
+To access this data, some technical expertise is required. You can find this information at the subgraph level. In our documentation, we provide a few examples of how to retrieve this data using JavaScript. Feel free to give it a shot by visiting this [page](https://docs.oceanprotocol.com/developers/subgraph/list-datatokens). If it doesn't meet your requirements, don't hesitate to reach out to us on Discord.
+
+</details>
+
+<details>
+
+<summary>How can partners and developers use Ocean technology to build their own data marketplaces?</summary>
+
+Ocean technology is open-source, community-funded, and freely available for use by anyone. Normally, when a developer wishes to use Ocean, they will let the core team know and we make a joint announcement if both parties agree.
+
+A developer can fork various components from our GitHub repository and create their own. Within the default Ocean code, there is a 0.1% fee per transaction in the Ocean or H2O token or a 0.2% for transactions in other tokens, which is returned to the Ocean community for continued Ocean technology development.
+
+</details>
+
+<details>
+
+<summary>Is there a trading platform or stock exchange that has successfully forked the Ocean marketplace codebase?</summary>
+
+Ocean technology is actively in use with the following entities:
+
+Proof of Concept:
+1. Gaia-X
+2. Catena-X
+3. Move.id
+
+Production:
+1. Fetch.Ai
+2. Acentrik (Daimler)
+3. deltaDAO
+4. DeSights
+5. BDP
+
+</details>
 
 <details>
 
@@ -976,7 +1501,7 @@ We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#bi
 
 <summary>How to bridge my mOcean back to Ocean?  Can mOcean be bridged? What is the correct Ocean contract address on the Matic network? Where can I find it? </summary>
 
-The OCEAN token address on the polygon network is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1. 
+The OCEAN token address on the polygon network is [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/address/0x282d8efCe846A88B159800bd4130ad77443Fa1A1). 
 
 Yes, the tokens can be bridged. Please follow this [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
   
@@ -1079,82 +1604,6 @@ Consumers can click "buy" on an asset in Ocean Market to buy and redeem a datato
 Datatokens can also be sent from anyone who holds a datatoken for a particular asset.
 
 </details>
-
-### Chains
-
-<details>
-
-<summary> Which chain do most people stake on? What are the staking costs? </summary>
-
-You can only "stake" via eth mainnet.
-
-Data Farming Active Rewards has multi-chain support and you can farm assets on any chain.
-  
-</details>
-
-<details>
-
-<summary>Are there plans to switch to BNB or another blockchain for staking to reduce costs?</summary>
-
-
-I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed on the Ethereum mainnet. We don't have immediate plans to add another chain for VeOcean staking at the moment. However, it's important to note that to be eligible for Data Farming, data assets for DFing can be published on various networks where Ocean Protocol is deployed in production, including ETH Mainnet and Polygon, among others. You can find more information about this in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean#veocean-earnings).
-  
-</details>
-
-<details>
-
-<summary>Which chain is veOCEAN be deployed on?</summary>
-
-[veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet and allow users to allocate veOCEAN tokens to any asset, on any chain.
-
-</details>
-
-<details>
-
-<summary>Which networks are eligible for Data Farming?</summary>
-
-Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
-
-You can find a list of [all supported chains here](networks/README.md).
-
-</details>
-
-<details>
-
-<summary>Where can I find the veOCEAN and DF contracts?</summary>
-
-They are deployed on the Ethereum mainnet, alongside other Ocean contract deployments. You can find the [full list of contracts here](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json).
-
-</details>
-
-<details>
-
-<summary>What is the official veOCEAN epoch start_time?</summary>
-
-veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
-
-</details>
-
-<details>
-
-<summary>Which chain supports Fixed Price Assets?</summary>
-
-You can publish Fixed Price Assets to any chain that Ocean supports
-
-</details>
-
-<details>
-
-
-<details>
-
-<summary>Can I farm on other chains then Ethereum?</summary>
-
-1. veOCEAN exists on ETH mainnet only. 
-2. Data Farming Active Rewards has native multi-chain support.
-  
-</details>
-
 
 ### Ocean Protocol Ambassadors 
 
