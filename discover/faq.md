@@ -225,132 +225,6 @@ OCEAN is the main currency of the Ocean network, particularly the Ocean Market. 
   
 </details>
 
-### Technical Questions
-
-<details>
-
-<summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
-
-We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge) specific for this. Please double-check the addresses and make sure you are using the right smart contracts. ⁣
-
-  
-</details>
-
-<details>
-
-<summary>How to bridge my mOcean back to Ocean?  Can mOcean be bridged? What is the correct Ocean contract address on the Matic network? Where can I find it? </summary>
-
-The OCEAN token address on the polygon network is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1. 
-
-Yes, the tokens can be bridged. Please follow this [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
-  
-</details>
-
-<details>
-
-<summary>Is there any reading material available on how privacy works in compute-to-data through the use of containers/kube?</summary>
-
-
-I believe you'll find this [resource](https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-architecture) highly beneficial.
-  
-</details>
-
-<details>
-
-<summary>Is it possible to reverse engineer a dataset on Ocean by having access to both the algorithm and the output? </summary>
-
-Not to our knowledge. But please, give it a shot and share the results with us 😄. 
-
-PS: We offer good rewards 😇
-  
-</details>
-
-<details>
-  
-<summary>What are the Ocean faucets and how can they be used?</summary>
-
-
-Ocean offers faucets for every test network where the smart contracts are deployed. These faucets provide test Ocean tokens, allowing you to experiment with various functionalities of the platform. It's important to note that the tokens on these networks do not have any real-world value and are exclusively intended for testing purposes. Here are the faucets available:
-
-1. [Goerli](https://faucet.goerli.oceanprotocol.com/) 
-2. [Mumbai](https://faucet.mumbai.oceanprotocol.com/)
-3. [Sepolia](https://faucet.sepolia.oceanprotocol.com/)
-
-</details>
-
-
-<details>
-
-
-<summary>If a dataset consists of 100 individuals' private data, does this solution allow each individual to maintain sovereign control over their data while still enabling algorithms to compute as if it were one dataset?</summary>
-
-Each individual could publish their dataset themselves, to get a data NFT. From the data NFT, they can mint datatokens which are to access the data. They have sovereign control over this, as hold the keys to the data NFTs and datatokens, and have great flexibility in how to give others access. For example, they could send a datatoken to a DAO for the DAO can manage. Or they could grant datatoken-minting permissions to the DAO. The DAO could use this to assemble a dataset across 100 individuals. ⁣
-⁣
-Learn more about Data NFTs on the [Docs](https://docs.oceanprotocol.com/developers/contracts/data-nfts).
-
-  
-</details>
-
-<details>
-
-<summary>To what extent is Ocean becoming fully decentralized?</summary>
-To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
-⁣
-1. Details about the [Ocean Token](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣).
-⁣
-2. Details about the [core stack](https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce⁣).
-⁣
-3. Details about [Data Farming](https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360⁣).
-  
-</details>
-
-
-<details>
-
-<summary>Why does Ocean Protocol use the Blockchain?</summary>
-
-For both providers and consumers of data, blockchain is a superior substrate for building applications. Blockchain allows business logic to be instantiated in a network and triggered by the users, without intermediaries. This innovation promises lower transaction costs, higher security, more control, fewer errors, and more transparency & auditability.
-
-</details>
-
-<details>
-
-<summary>The blockchain is public - does this mean that anyone can access my data?</summary>
-
-No one is able to access data via the blockchain without purchasing access (with the datatoken) through the smart contract. Ocean smart contracts encrypt the URL to the dataset before it is published on the blockchain. This means that only the encrypted URL will be queryable in the public blockchain. Ocean technology facilitates data access to the consumer via a proxy (Ocean Provider) and the unencrypted URL is never exposed.
-
-</details>
-
-<details>
-
-<summary>What is a smart contract and why is it relevant?</summary>
-
-The blockchain can do more than just store information - it can also run code. A smart contract is an executable script that runs on the blockchain, with no intermediary, and is fully transparent and auditable by anyone. In Ocean, smart contracts facilitate access to data and AI if the access conditions set out by the publisher are fulfilled.
-
-</details>
-
-<details>
-
-<summary>What is a datatoken?</summary>
-
-A datatoken is an access token to datasets and services published in the Ocean ecosystem. Datatokens can be purchased via the Ocean Market or on a decentralized crypto exchange. If a consumer wishes to access a dataset, they must acquire the datatoken and then exchange the datatoken for access to the dataset.
-
-</details>
-
-<details>
-
-<summary>How do I acquire datatokens?</summary>
-
-Datatokens can be acquired and traded in Ocean Market. There are several ways to acquire data tokens. Data publishers can acquire datatokens by publishing datasets and then receiving the generated datatokens.
-
-Consumers can click "buy" on an asset in Ocean Market to buy and redeem a datatoken in exchange for access to a dataset.
-
-Datatokens can also be sent from anyone who holds a datatoken for a particular asset.
-
-</details>
-
-
-
 
 ### Data Storage
 
@@ -506,7 +380,7 @@ Accessing the submitted solutions is currently a work in progress, with one solu
   
 </details>
 
-### Data Selling Questions
+### Data Selling
 
 <details>
 
@@ -1088,6 +962,130 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 </details>
 
+### Technical Questions
+
+<details>
+
+<summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
+
+We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge) specific for this. Please double-check the addresses and make sure you are using the right smart contracts. ⁣
+
+  
+</details>
+
+<details>
+
+<summary>How to bridge my mOcean back to Ocean?  Can mOcean be bridged? What is the correct Ocean contract address on the Matic network? Where can I find it? </summary>
+
+The OCEAN token address on the polygon network is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1. 
+
+Yes, the tokens can be bridged. Please follow this [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
+  
+</details>
+
+<details>
+
+<summary>Is there any reading material available on how privacy works in compute-to-data through the use of containers/kube?</summary>
+
+
+I believe you'll find this [resource](https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-architecture) highly beneficial.
+  
+</details>
+
+<details>
+
+<summary>Is it possible to reverse engineer a dataset on Ocean by having access to both the algorithm and the output? </summary>
+
+Not to our knowledge. But please, give it a shot and share the results with us 😄. 
+
+PS: We offer good rewards 😇
+  
+</details>
+
+<details>
+  
+<summary>What are the Ocean faucets and how can they be used?</summary>
+
+
+Ocean offers faucets for every test network where the smart contracts are deployed. These faucets provide test Ocean tokens, allowing you to experiment with various functionalities of the platform. It's important to note that the tokens on these networks do not have any real-world value and are exclusively intended for testing purposes. Here are the faucets available:
+
+1. [Goerli](https://faucet.goerli.oceanprotocol.com/) 
+2. [Mumbai](https://faucet.mumbai.oceanprotocol.com/)
+3. [Sepolia](https://faucet.sepolia.oceanprotocol.com/)
+
+</details>
+
+
+<details>
+
+
+<summary>If a dataset consists of 100 individuals' private data, does this solution allow each individual to maintain sovereign control over their data while still enabling algorithms to compute as if it were one dataset?</summary>
+
+Each individual could publish their dataset themselves, to get a data NFT. From the data NFT, they can mint datatokens which are to access the data. They have sovereign control over this, as hold the keys to the data NFTs and datatokens, and have great flexibility in how to give others access. For example, they could send a datatoken to a DAO for the DAO can manage. Or they could grant datatoken-minting permissions to the DAO. The DAO could use this to assemble a dataset across 100 individuals. ⁣
+⁣
+Learn more about Data NFTs on the [Docs](https://docs.oceanprotocol.com/developers/contracts/data-nfts).
+
+  
+</details>
+
+<details>
+
+<summary>To what extent is Ocean becoming fully decentralized?</summary>
+To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
+⁣
+1. Details about the [Ocean Token](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣).
+⁣
+2. Details about the [core stack](https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce⁣).
+⁣
+3. Details about [Data Farming](https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360⁣).
+  
+</details>
+
+
+<details>
+
+<summary>Why does Ocean Protocol use the Blockchain?</summary>
+
+For both providers and consumers of data, blockchain is a superior substrate for building applications. Blockchain allows business logic to be instantiated in a network and triggered by the users, without intermediaries. This innovation promises lower transaction costs, higher security, more control, fewer errors, and more transparency & auditability.
+
+</details>
+
+<details>
+
+<summary>The blockchain is public - does this mean that anyone can access my data?</summary>
+
+No one is able to access data via the blockchain without purchasing access (with the datatoken) through the smart contract. Ocean smart contracts encrypt the URL to the dataset before it is published on the blockchain. This means that only the encrypted URL will be queryable in the public blockchain. Ocean technology facilitates data access to the consumer via a proxy (Ocean Provider) and the unencrypted URL is never exposed.
+
+</details>
+
+<details>
+
+<summary>What is a smart contract and why is it relevant?</summary>
+
+The blockchain can do more than just store information - it can also run code. A smart contract is an executable script that runs on the blockchain, with no intermediary, and is fully transparent and auditable by anyone. In Ocean, smart contracts facilitate access to data and AI if the access conditions set out by the publisher are fulfilled.
+
+</details>
+
+<details>
+
+<summary>What is a datatoken?</summary>
+
+A datatoken is an access token to datasets and services published in the Ocean ecosystem. Datatokens can be purchased via the Ocean Market or on a decentralized crypto exchange. If a consumer wishes to access a dataset, they must acquire the datatoken and then exchange the datatoken for access to the dataset.
+
+</details>
+
+<details>
+
+<summary>How do I acquire datatokens?</summary>
+
+Datatokens can be acquired and traded in Ocean Market. There are several ways to acquire data tokens. Data publishers can acquire datatokens by publishing datasets and then receiving the generated datatokens.
+
+Consumers can click "buy" on an asset in Ocean Market to buy and redeem a datatoken in exchange for access to a dataset.
+
+Datatokens can also be sent from anyone who holds a datatoken for a particular asset.
+
+</details>
+
 ### Chains
 
 <details>
@@ -1203,6 +1201,6 @@ The rewards vary depending on your goals, as they come in various forms. To begi
 <summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
 
 For partnerships, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
-One member of our team will reach out to you.
+One member of our team will reach out to you 🤝
   
 </details>
