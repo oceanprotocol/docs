@@ -67,7 +67,7 @@ Ocean does not provide data storage. Users have the choice to [store](../user-gu
 
 <details>
 
-  <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
+<summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
 
 Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
 
@@ -90,16 +90,13 @@ PS: [Fine-grained permissions](../developers/fg-permissions.md) are not integrat
 
 </details>
 
-
 <details>
 
 <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
 
 Several projects use ocean components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
 
-  
 </details>
-
 
 <details>
 
@@ -118,7 +115,6 @@ Please go to https://oceanprotocol.com/ecosystem.
   
 </details>
 
-
 <details>
 
 <summary>What is Ocean Protocol, and how is it related to artificial intelligence? What are the project's future goals?</summary>
@@ -135,28 +131,26 @@ You can learn more about what we are doing in 2023 in this blog post -https://bl
 
 <summary>Is there a real-time bot that tracks dataset sales on Ocean Protocol?</summary>
 
-Not to our knowledge. If you find something, please share it with us :) 
+Not to our knowledge. If you find something, please share it with us 🙃
   
 </details>
 
 <details>
 
-<summary>What is the 2023 roadmap of Ocean Protocol ?</summary>
+<summary>What is the 2023 roadmap of Ocean Protocol?</summary>
 
 This [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051) provides the 2023 goals and plans for the Ocean Core team. 
 <details>
 
-  <summary>Does the OCEAN token also have governance functionality?</summary>
+<summary>Does the OCEAN token also have governance functionality?</summary>
 
 During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
 
 </details>
 
-
 <details>
 
 <summary>Who is the CEO of Ocean Protocol?</summary>
-
 
 Ocean Protocol is an open-source project with no official lead. The protocol is permissionless and all the code and components are available for free. For administrative purposes, there is a limited liability non-profit company registered in Singapore with three directors including Trent McConaghy and Bruce Pon, co-founders of Ocean.
   
@@ -165,24 +159,10 @@ Ocean Protocol is an open-source project with no official lead. The protocol is 
 
 <details>
 
-
 <summary>Is there a website or platform that tracks the consume volume of the Ocean market?</summary>
 
-Yes there is - https://autobotocean.com/ ⁣
+Yes there is - the [Autobot](https://autobotocean.com/) one. 
 
-
-  
-</details>
-
-
-<details>
-
-<summary>What are the key differences between Ocean and Fetch?</summary>
-
-You can find a detailed explanation of Both projects here - ⁣
-1) https://docs.oceanprotocol.com/ ⁣
-2) https://docs.fetch.ai/ ⁣
-  
 </details>
 
 
@@ -191,7 +171,7 @@ You can find a detailed explanation of Both projects here - ⁣
 <summary>Is the Ocean Shipyard funded by $OCEAN?</summary>
 Ocean Shipyard is an early-stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build open-source Web3 solutions on Ocean, make valuable data available, build innovations, and create value for the Ocean ecosystem.
 
-More info here - https://oceanprotocol.com/shipyard
+More info on the [Shipyard](https://oceanprotocol.com/shipyard) page.
 
   
 </details>
@@ -200,10 +180,10 @@ More info here - https://oceanprotocol.com/shipyard
 
 <summary>Is Swash "friendly" forking the Ocean market? They seem to have their own version of Ocean market/compute using the Swash token for transactions.</summary>
 
-Anyone can fork Ocean Market; the core team encourages this because it drives value to the Ocean ecosystem and OCEAN token. Daimler / Acentrik and deltaDAO are prime examples of forks. Swash has published data assets on Ocean Market. Details: The [Ocean Market](github.com/oceanprotocol/market) repo is a permissive open-source license (Apache 2). That code uses Ocean contracts deployed to Eth mainnet and elsewhere. Within hours one can fork Ocean Market code and launch their own data marketplace with their own branding. Ocean Market or the forks can use any token as a unit of exchange, OCEAN or otherwise. Unit-of-exchange is weak for value accrual. Better is *revenue* going to the protocol community; Ocean has that via whenever a datatoken is consumed, 0.1% goes to the Ocean community. Ocean Market is one of many templates for people to build Ocean-powered dApps; all templates are forkable. 
-  1) Ocean Templates. https://oceanprotocol.com/templates
-  2) Introducing Ocean Templates (blog). https://blog.oceanprotocol.com/introducing-ocean-templates-tools-to-build-next-generation-web3-dapps-67b66e519eb1
-  3) Ocean Token Model 2023 (blog). https://blog.oceanprotocol.com/ocean-token-model-2023-2f306932f34a
+Anyone can fork Ocean Market; the core team encourages this because it drives value to the Ocean ecosystem and OCEAN token. Daimler / Acentrik and deltaDAO are prime examples of forks. Swash has published data assets on Ocean Market. Details: The [Ocean Market](https://github.com/oceanprotocol/market) repo is a permissive open-source license (Apache 2). That code uses Ocean contracts deployed to Eth mainnet and elsewhere. Within hours one can fork Ocean Market code and launch their own data marketplace with their own branding. Ocean Market or the forks can use any token as a unit of exchange, OCEAN or otherwise. Unit-of-exchange is weak for value accrual. Better is *revenue* going to the protocol community; Ocean has that via whenever a datatoken is consumed, 0.1% goes to the Ocean community. Ocean Market is one of many templates for people to build Ocean-powered dApps; all templates are forkable. 
+  1. Ocean [Templates](https://oceanprotocol.com/templates). 
+  2. Introducing Ocean Templates [blogpost](https://blog.oceanprotocol.com/introducing-ocean-templates-tools-to-build-next-generation-web3-dapps-67b66e519eb1).
+  3. Ocean Token Model 2023 [blogpost](https://blog.oceanprotocol.com/ocean-token-model-2023-2f306932f34a).
   
 </details>
 
@@ -212,7 +192,7 @@ Anyone can fork Ocean Market; the core team encourages this because it drives va
 
 <summary>Is it possible to sell models on Ocean Protocol?</summary>
 
-Yes, you can sell any type of data. Start learning about us here - https://docs.oceanprotocol.com/
+Yes, you can sell any type of data. Start learning about us through the [documentation](https://docs.oceanprotocol.com/).
   
 </details>
 
@@ -229,12 +209,10 @@ Yes, You can find details of the collaboration here - https://blog.oceanprotocol
 
 <summary>Are there any new partners collaborating with Ocean Protocol?</summary>
 
-Yes, You can find details of the collaboration here - https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4. ⁣
+Yes, You can find some details of collaborations on our [blogpost](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4). ⁣
 
   
 </details>
-
-
 
 
 ### Technical Questions
@@ -243,7 +221,7 @@ Yes, You can find details of the collaboration here - https://blog.oceanprotocol
 
 <summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
 
-We have a tutorial specific for this: https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge. Please double-check the addresses and make sure you are using the right smart contracts. ⁣
+We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge) specific for this. Please double-check the addresses and make sure you are using the right smart contracts. ⁣
 
   
 </details>
@@ -254,18 +232,16 @@ We have a tutorial specific for this: https://docs.oceanprotocol.com/discover/ne
 
 The OCEAN token address on the polygon network is 0x282d8efCe846A88B159800bd4130ad77443Fa1A1. 
 
-Yes, the tokens can be bridged. Please follow this tutorial to bridge to/from polygon: https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge
+Yes, the tokens can be bridged. Please follow this [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
   
 </details>
-
-
 
 <details>
 
 <summary>Is there any reading material available on how privacy works in compute-to-data through the use of containers/kube?</summary>
 
 
-I believe you'll find this resource highly beneficial: https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-architecture.
+I believe you'll find this [resource](https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-architecture) highly beneficial.
   
 </details>
 
@@ -273,15 +249,11 @@ I believe you'll find this resource highly beneficial: https://docs.oceanprotoco
 
 <summary>Is it possible to reverse engineer a dataset on Ocean by having access to both the algorithm and the output? </summary>
 
-Not to our knowledge. But please, give it a shot and share the results with us 😄
+Not to our knowledge. But please, give it a shot and share the results with us 😄. 
 
-
+PS: We offer good rewards 😇
   
 </details>
-
-
-
-
 
 <details>
   
@@ -290,13 +262,11 @@ Not to our knowledge. But please, give it a shot and share the results with us �
 
 Ocean offers faucets for every test network where the smart contracts are deployed. These faucets provide test Ocean tokens, allowing you to experiment with various functionalities of the platform. It's important to note that the tokens on these networks do not have any real-world value and are exclusively intended for testing purposes. Here are the faucets available:
 
-1. Goerli: https://faucet.goerli.oceanprotocol.com/
-2. Mumbai: https://faucet.mumbai.oceanprotocol.com/
-3. Sepolia: https://faucet.sepolia.oceanprotocol.com/"
+1. [Goerli](https://faucet.goerli.oceanprotocol.com/) 
+2. [Mumbai](https://faucet.mumbai.oceanprotocol.com/)
+3. [Sepolia](https://faucet.sepolia.oceanprotocol.com/)
 
 </details>
-
-
 
 
 <details>
@@ -306,7 +276,7 @@ Ocean offers faucets for every test network where the smart contracts are deploy
 
 Each individual could publish their dataset themselves, to get a data NFT. From the data NFT, they can mint datatokens which are to access the data. They have sovereign control over this, as hold the keys to the data NFTs and datatokens, and have great flexibility in how to give others access. For example, they could send a datatoken to a DAO for the DAO can manage. Or they could grant datatoken-minting permissions to the DAO. The DAO could use this to assemble a dataset across 100 individuals. ⁣
 ⁣
-Learn more about Data NFTs here - https://docs.oceanprotocol.com/developers/contracts/data-nfts ⁣
+Learn more about Data NFTs on the [Docs](https://docs.oceanprotocol.com/developers/contracts/data-nfts).
 
   
 </details>
@@ -316,14 +286,13 @@ Learn more about Data NFTs here - https://docs.oceanprotocol.com/developers/cont
 <summary>To what extent is Ocean becoming fully decentralized?</summary>
 To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
 ⁣
-1) Details about the Ocean Token: https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣
+1. Details about the [Ocean Token](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣).
 ⁣
-2) Details about the core stack: https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce ⁣
+2. Details about the [core stack](https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce⁣).
 ⁣
-3) Details about Data Farming: https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360 ⁣
+3. Details about [Data Farming](https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360⁣).
   
 </details>
-
 
 
 <details>
@@ -467,8 +436,6 @@ https://df.oceandao.org/activerewards
 </details>
 
 
-
-
 <details>
 
 <summary>Why both my passive and active rewards appear to be the same and why I can't see the APY for active rewards.</summary>
@@ -491,11 +458,9 @@ That's a valid point, and we greatly value your feedback. We are continuously en
 
 Here's how the frontend logic works: We round your APY to two decimal places. So, if you've locked 8,000 OCEAN for a short period, it's possible to see a near-0% APY. 
 
-To boost your APY, consider locking your OCEAN for a more extended period. It's not only about the amount you lock but also the duration of the lock that matters most. Longer lock periods yield more significant results. You can find further insights in this document: https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy.
+To boost your APY, consider locking your OCEAN for a more extended period. It's not only about the amount you lock but also the duration of the lock that matters most. Longer lock periods yield more significant results. You can find further insights in this [document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy).
   
 </details>
-
-
 
 
 <details>
@@ -504,42 +469,25 @@ To boost your APY, consider locking your OCEAN for a more extended period. It's 
 
 Yes
 
-DF Dashboard (per round)
-https://df.oceandao.org/datafarming
+[DF Dashboard](https://df.oceandao.org/datafarming) (per round).
+[Autobot](https://autobotocean.com/volumes) (historical).
 
-Autobot (historical)
-https://autobotocean.com/volumes
-
-
-  
 </details>
 
-
-
-
 <details>
-
 
 <summary>Do we still receive rewards if there is no consume volume?</summary>
 
-Yes, you will still earn Passive Rewards. However, Active rewards need "Data Consume Volume" ⁣
-⁣
-More Info here - https://docs.oceanprotocol.com/user-guides/data-farming ⁣
+Yes, you will still earn Passive Rewards. However, Active rewards need "Data Consume Volume". More info on the [docs](https://docs.oceanprotocol.com/user-guides/data-farming).
 
 
 </details>
 
-
-
-
-
-
 <details>
-
 
 <summary>I had to pay $13 to claim 34 Ocean passive rewards. Additionally, I made 0 from last week's active rewards, despite 32 sales and a large allocation. Can you explain why?</summary>
 
-The amount of rewards is highly dependent on the locking period. the longer you lock your tokens, the greater the rewards. You can use this document to estimate the amount you'll get: https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy.
+The amount of rewards is highly dependent on the locking period. the longer you lock your tokens, the greater the rewards. You can use [this document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy) to estimate the amount you'll get.
 
 Likely because the sales were small and only 0.01% of sales volume is considered for rewards.
 
@@ -549,21 +497,15 @@ This data and information are well documented on the [Farms](https://df.oceandao
 </details>
 
 
-
 <details>
 
 <summary>For data farming, will my stacked Ocean tokens be locked, or can I withdraw them anytime?</summary>
 
-One thing to keep in mind is that your locked amount cannot be withdrawn before the lock ends. Your rewards in return can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
-
+Your locked amount cannot be withdrawn before the lock ends. Your rewards in return can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
   
 </details>
 
-
-
-
 <details>
-
 
 <summary>Can I allocate my veOCEAN tokens for farming at any time, including now? </summary>
 
@@ -571,7 +513,7 @@ Allocations happen instantly. ⁣
 ⁣
 However, your allocation power is counted progressively throughout the week and requires you to leave it there for it to work. ⁣
 ⁣
-Learn more here - https://docs.oceanprotocol.com/rewards/df-veocean ⁣
+Learn more by going through the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean). ⁣
   
 </details>
 
@@ -580,15 +522,11 @@ Learn more here - https://docs.oceanprotocol.com/rewards/df-veocean ⁣
 
 <summary>Is there any guidance or tutorial available on when and where to allocate veOCEAN for data farming active rewards?</summary>
 
-For sure, here is the intro tutorial:
-https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial.
+For sure, here is the intro [tutorial](https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial).
 We cannot offer guidance related to where to allocate your tokens, that's your decision. Your tokens, your curated assets.
 
   
 </details>
-
-
-
 
 <details>
 
@@ -609,19 +547,15 @@ Engaging in active data farming does not diminish your passive rewards. By defau
 You have the flexibility to participate in every available reward stream.
 </details>
 
-
-
 <details>
 
 <summary>What is the Data Farming APY? Can you provide a tutorial for staking OCEAN and information on APY and locking time?</summary>
 
 Active rewards are dependent on data assets actually making sales for you to receive rewards. If you have veOCEAN allocated to a data asset that doesn't get consumed/has no demand, you do not receive rewards.
 
-Tutorial.
-https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial
+[Tutorial](https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial)
 
-Calculator
-https://autobotocean.com/calculator
+[Calculator](https://autobotocean.com/calculator)
 
 </details>
 
@@ -691,7 +625,7 @@ Please hang in there and stay patient, as it can take almost two weeks to receiv
 
 <summary>What is the APY of DF?</summary>
 
-You can use this document to estimate your APY -  https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy
+You can use [this document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy) to estimate your APY.
 Please keep in mind that the algorithm offers higher incentives for longer lock periods. So, the longer you lock your assets, the greater your rewards will be. Once you go through our documentation, you'll have a better understanding of how it all works.
 
  
@@ -703,21 +637,17 @@ Please keep in mind that the algorithm offers higher incentives for longer lock 
 
 Data Farming serves as the fundamental incentive system within Ocean Protocol, offering diverse opportunities for participants to contribute to the protocol's growth and success. This system is divided into two rewarding streams:
 
-1) Passive Rewards
-2) Active Rewards
+1. Passive Rewards
+2. Active Rewards
 By actively participating in our available programs, you can earn both passive and active rewards. Your total rewards will be a combination of these two substreams.
 
 The best part is that you have full control over claiming or redepositing your rewards at your convenience. Unclaimed rewards accumulate over time without any loss.
 
 It's important to note that your veOCEAN balance will gradually decrease once you receive it. This decline occurs linearly over time until it reaches the Lock End Date. For instance, when your lock time has reached the halfway point, you will possess 50% of your initial veOCEAN balance. Once your lock time concludes, your veOCEAN balance will reach zero, allowing you to withdraw your OCEAN tokens.
 
-Learn more here - https://docs.oceanprotocol.com/rewards/df-veocean
+Learn more in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean).
 
-  
 </details>
-
-
-
 
 
 ## veOCEAN FAQ
@@ -730,7 +660,7 @@ No. They cannot be traded, transferred, or sold. ⁣
 ⁣
 You can delegate veOCEAN to others in order to facilitate farming, however, you need to understand how this works. ⁣
 ⁣
-You can get the necessary info here - https://docs.oceanprotocol.com/user-guides/data-farming ⁣
+You can get the necessary info in the [docs](https://docs.oceanprotocol.com/user-guides/data-farming). ⁣
 
 
   
