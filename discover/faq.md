@@ -468,8 +468,7 @@ Check out our [roadmap](https://oceanprotocol.com/technology/roadmap) to see wha
 
 <summary>Is there historical data for Data Farming APYs to get an idea of what to expect?</summary>
 
-Yes. Just,  Scroll down to the "Data Farming History" Section.
-https://df.oceandao.org/activerewards
+Yes. Just,  Scroll down to the [Data Farming History](https://df.oceandao.org/activerewards) Section.
   
 </details>
 
