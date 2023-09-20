@@ -63,6 +63,16 @@ Ocean does not provide data storage. Users have the choice to [store](../user-gu
 
 </details>
 
+
+
+<details>
+
+  <summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
+
+Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
+
+</details>
+
 <details>
 
 <summary>How do I control who accesses my data?</summary>
@@ -134,6 +144,11 @@ Not to our knowledge. If you find something, please share it with us :)
 <summary>What is the 2023 roadmap of Ocean Protocol ?</summary>
 
 This [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051) provides the 2023 goals and plans for the Ocean Core team. 
+<details>
+
+  <summary>Does the OCEAN token also have governance functionality?</summary>
+
+During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently there are no governance functions associated with the Ocean Token. In the future, when there is broader adoption of the Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
 
 </details>
 
@@ -1113,18 +1128,12 @@ veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
 
 <summary>Which chain supports Fixed Price Assets?</summary>
 
-You can publish Fixed Price Assets to any chain that Ocean supports.
+You can publish Fixed Price Assets to any chain that Ocean supports
 
 </details>
 
 <details>
 
-
-<details>
-
-<summary></summary>
-  
-</details>
 
 <details>
 
@@ -1134,8 +1143,6 @@ You can publish Fixed Price Assets to any chain that Ocean supports.
 2. Data Farming Active Rewards has native multi-chain support.
   
 </details>
-
-
 
 
 ## PsdnOcean
@@ -1198,13 +1205,12 @@ Yes, either through Metamask (or another software wallet that can connect to a h
 
 Yes, it's 0xDCe07662CA8EbC241316a15B611c89711414Dd1a ⁣
 Link - https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a ⁣
+  <summary>What psdnOCEAN is and how it differs from OCEAN?</summary>
+
+OCEAN is the main currency of the Ocean network, particularly the Ocean Market. psdnOCEAN is a staking token used for data farming network rewards. By converting OCEAN to psdnOCEAN, users can earn passive staking rewards. psdnOCEAN is not directly affiliated with Ocean Protocol and is operated by an independent entity named H20. Locking contracts for H20 and psdnOCEAN are open source and can be examined publicly. To get psdnOCEAN, users lock their OCEAN and then receive an equivalent amount of psdnOCEAN in return. Although the locking and staking contracts have been audited, users should do their own research and put at risk only the amounts that they are willing to lose.
 
 
 </details>
-
-
-
-
 
 
 <details>
@@ -1214,7 +1220,6 @@ Link - https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a ⁣
 All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
   
 </details>
-
 
 
 <details>
