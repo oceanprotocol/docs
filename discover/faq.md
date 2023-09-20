@@ -111,7 +111,7 @@ However, it's important to note that participants using the Ocean stack are subj
 
 <summary>Where can I find projects on Ocean's ecosystem?</summary>
 
-Please go to https://oceanprotocol.com/ecosystem.
+All the ecosystem information is available on the [website](https://oceanprotocol.com/ecosystem).
   
 </details>
 
@@ -123,7 +123,7 @@ The mission of Ocean is to level the playing field around data & AI.
 AI models need data; Ocean provides tools to help supply, manage, and monetize that data. 
 Ocean tokenizes access to data, enabling web3 wallets to hold keys to data, decentralized data exchanges, token-gated APIs, the provenance of data sharing, compute to data, and more. 
 The Ocean core team & Ocean community continue to evolve the stack and applications around it, which in turn drives traction.
-You can learn more about what we are doing in 2023 in this blog post -https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051a
+You can learn more about what we are doing in 2023 in this [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed14510051a).
   
 </details>
 
@@ -183,9 +183,9 @@ More info on the [Shipyard](https://oceanprotocol.com/shipyard) page.
 <summary>Is Swash "friendly" forking the Ocean market? They seem to have their own version of Ocean market/compute using the Swash token for transactions.</summary>
 
 Anyone can fork Ocean Market; the core team encourages this because it drives value to the Ocean ecosystem and OCEAN token. Daimler / Acentrik and deltaDAO are prime examples of forks. Swash has published data assets on Ocean Market. Details: The [Ocean Market](https://github.com/oceanprotocol/market) repo is a permissive open-source license (Apache 2). That code uses Ocean contracts deployed to Eth mainnet and elsewhere. Within hours one can fork Ocean Market code and launch their own data marketplace with their own branding. Ocean Market or the forks can use any token as a unit of exchange, OCEAN or otherwise. Unit-of-exchange is weak for value accrual. Better is *revenue* going to the protocol community; Ocean has that via whenever a datatoken is consumed, 0.1% goes to the Ocean community. Ocean Market is one of many templates for people to build Ocean-powered dApps; all templates are forkable. 
-  1. Ocean [Templates](https://oceanprotocol.com/templates). 
-  2. Introducing Ocean Templates [blogpost](https://blog.oceanprotocol.com/introducing-ocean-templates-tools-to-build-next-generation-web3-dapps-67b66e519eb1).
-  3. Ocean Token Model 2023 [blogpost](https://blog.oceanprotocol.com/ocean-token-model-2023-2f306932f34a).
+1. Ocean [Templates](https://oceanprotocol.com/templates). 
+2. Introducing Ocean Templates [blog post](https://blog.oceanprotocol.com/introducing-ocean-templates-tools-to-build-next-generation-web3-dapps-67b66e519eb1).
+3. Ocean Token Model 2023 [blog post](https://blog.oceanprotocol.com/ocean-token-model-2023-2f306932f34a).
   
 </details>
 
@@ -211,7 +211,7 @@ Yes 🫢, [here](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-ma
 
 <summary>Are there any new partners collaborating with Ocean Protocol?</summary>
 
-Yes 😉 You'll find some details of collaborations on our [blogpost](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4). ⁣
+Yes 😉 You'll find some details of collaborations on our [blog post](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4). ⁣
 
   
 </details>
@@ -450,7 +450,7 @@ The type of cryptocurrencies needed for transactions on the marketplace depends 
 
 <summary>Can I use the off-the-shelf CSS available in the repo?</summary>
 
-The marketplace name, logo, and typeface must be changed by the client. A slight modification would be enough for compliance. For more information consult the READ ME file on GitHub. https://github.com/oceanprotocol/market#-forking
+The marketplace name, logo, and typeface must be changed by the client. A slight modification would be enough for compliance. For more information consult the READ ME file on [GitHub](https://github.com/oceanprotocol/market#-forking). 
 
 </details>
 
@@ -774,11 +774,11 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 <details>
 
 <summary>Could you explain the benefits of staking $OCEAN tokens and how the APY is calculated?</summary>
-Yes, You can find the details in these blog posts - ⁣
-⁣
-1. [Benefits](https://docs.oceanprotocol.com/rewards/veocean)
-2. [Passive Rewards]⁣(https://docs.oceanprotocol.com/rewards/df-intro)
-3. [Emissions & APYs](https://docs.oceanprotocol.com/rewards/df-emissions-apys)
+
+Yes, You can find the details in these resources.⁣
+1. [Benefits](https://docs.oceanprotocol.com/rewards/veocean).
+2. [Passive Rewards](https://docs.oceanprotocol.com/rewards/df-intro).
+3. [Emissions & APYs](https://docs.oceanprotocol.com/rewards/df-emissions-apys).
   
 </details>
 
@@ -1031,16 +1031,13 @@ Learn more about Data NFTs on the [Docs](https://docs.oceanprotocol.com/develope
 <details>
 
 <summary>To what extent is Ocean becoming fully decentralized?</summary>
+
 To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
-⁣
-1. Details about the [Ocean Token](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣).
-⁣
+1. Details about the [Ocean Token](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db).
 2. Details about the [core stack](https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce⁣).
-⁣
 3. Details about [Data Farming](https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360⁣).
   
 </details>
-
 
 <details>
 
@@ -1170,10 +1167,10 @@ You can publish Fixed Price Assets to any chain that Ocean supports
 
 To become a member of the Ambassador Program, follow these steps: 
 1. Join Ocean Protocol's Discord server
-1. Join the Discord channel called #treasure-hunter. 
-2. Access the application form: "[Apply](https://discord.com/channels/612953348487905282/1133478278531911790) to use this channel."
-3. Answer the questions in the application form. 
-4. Once you've completed the application process, you can start earning experience points (XP) by actively engaging in discussions on various topics related to the Ocean Protocol.
+2. Join the Discord channel called #treasure-hunter. 
+3. Access the application form: "[Apply](https://discord.com/channels/612953348487905282/1133478278531911790) to use this channel."
+4. Answer the questions in the application form. 
+5. Once you've completed the application process, you can start earning experience points (XP) by actively engaging in discussions on various topics related to the Ocean Protocol.
   
 </details>
 
