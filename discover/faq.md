@@ -1605,7 +1605,7 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 
 </details>
 
-### Ocean Protocol Ambassadors 
+### Ambassadors 
 
 <details>
 
