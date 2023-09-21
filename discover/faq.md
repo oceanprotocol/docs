@@ -1612,7 +1612,7 @@ Datatokens can also be sent from anyone who holds a datatoken for a particular a
 <summary>How can I become an ambassador for Ocean Protocol?</summary>
 
 To become a member of the Ambassador Program, follow these steps: 
-1. Join Ocean Protocol's Discord server
+1. Join Ocean Protocol's [Discord](https://discord.com/invite/TnXjkR5) server
 2. Join the Discord channel called #treasure-hunter. 
 3. Access the application form: "[Apply](https://discord.com/channels/612953348487905282/1133478278531911790) to use this channel."
 4. Answer the questions in the application form. 
