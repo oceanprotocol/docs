@@ -16,9 +16,9 @@ Currently we support Arweave and we will soon be releasing Filecoin support. In 
 
 Ready to dive into the world of decentralized storage with DBS? Let's get started:
 
-1. Wallet Check: First things first, let's make sure you've got some of that shiny polygon MATIC and WMATIC in your wallet. If you're coming up short, no worries! You can grab some WMATIC from places like Uniswap or Quickswap. Or, if you're feeling adventurous, go straight to the source and get it directly from the contract on Polygonscan.
+1. Wallet Check: First things first, let's make sure you've got some of that shiny polygon MATIC and WMATIC in your wallet. If you're coming up short, no worries! You can grab some WMATIC from places like [Uniswap](https://app.uniswap.org/) or [Quickswap](https://quickswap.exchange/). Or, alternatively, go straight to the source and get it directly from the [contract on Polygonscan](https://polygonscan.com/token/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270#writeContract).
 
-2. Is you wallet ready? Let's head over to the DBS UI.
+2. Is you wallet ready? Let's head over to the [DBS UI](https://dbs-ui-lib.vercel.app/?path=/docs/dbs-ui-library-dbsuploader--docs).
 
 3. Now, give that 'Connect Wallet' button a click. This is just so DBS knows which wallet we're working with.
 
