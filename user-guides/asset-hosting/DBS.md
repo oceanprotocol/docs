@@ -14,31 +14,33 @@ Currently we support Arweave and we will soon be releasing Filecoin support. In 
 
 ### How to store an asset on Arweave with the DBS UI? 
 
-1. Make sure that you have polygon MATIC and WMATIC in your wallet. You can get WMATIC from uniswap/quickswap or direct from the contract on polygonscan
+Ready to dive into the world of decentralized storage with DBS? Let's get started:
 
-2. Go to: https://dbs-ui-lib.vercel.app/?path=/docs/dbs-ui-library-dbsuploader--docs
+1. Wallet Check: First things first, let's make sure you've got some of that shiny polygon MATIC and WMATIC in your wallet. If you're coming up short, no worries! You can grab some WMATIC from places like Uniswap or Quickswap. Or, if you're feeling adventurous, go straight to the source and get it directly from the contract on Polygonscan.
 
-3. Connect your wallet
+2. Is you wallet ready? Let's head over to the DBS UI.
 
-4. Make sure that you are on polygon network (note that Mumbai is disabled)
+3. Now, give that 'Connect Wallet' button a click. This is just so DBS knows which wallet we're working with.
 
-5. Click "Choose file" and select the file that you want to upload.
+4. By the way, ensure you're on the Polygon network.
 
-6. Click "Get Quote" and wait for the quote estimate
+5. See that 'Choose file' button? Give it a click and select the awesome file you're looking to upload.
 
-7. Click "Upload file"
+6. Wondering how much the storage will cost? Now, hit 'Get Quote'. This will let you know the estimated cost of storing your file. 
 
-8. Set the spending cap and sign the approval transaction
+7. You're ready to go - click 'Upload file'.
 
-9. Sign the message
+8. You'll now see the first Metamask pop-up - here's where you set your spending cap and sign off on the approval transaction. This allows the DBS to move your WMATIC from your wallet in order to pay for the storage.
 
-10. Wait for the whole process to complete, it can take a while (in the attached video my upload took > 3 mins)
+9. One more Metamask pop-up - sign the message that pops up.
 
-11. Now click "Get DDO link"
+10. A Little patience is now required, grab a coffee, or maybe do a little dance 🕺, because the upload might take a few minutes.
 
-12. sign another message
+11. Almost There: once the upload is complete, click on 'Get DDO link'.
 
-13. You now have the Arweave transaction id for your asset so you can navigate to arweave.net/{YOUR_TXID} to see your asset.
+12. Last Metamask pop-up (promise!): Sign one more message to access the transaction ID.
+
+13. Woohoo 🎉 You did it! You now have an Arweave transaction ID for your asset. Pop on over to arweave.net/{YOUR_TXID} to admire your handiwork, you'll be able to access your file at that link. You can use that link to now go and publish your asset on Ocean Market. 
 
 ### How to store an asset on Arweave with the DBS
 
