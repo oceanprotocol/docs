@@ -21,6 +21,7 @@
     * [Publish a C2D Algorithm NFT](user-guides/compute-to-data/publish-a-c2d-algorithm-nft.md)
     * [Publish a C2D Data NFT](user-guides/compute-to-data/publish-a-c2d-data-nft.md)
   * [Host Assets](user-guides/asset-hosting/README.md)
+    * [DBS](user-guides/asset-hosting/DBS.md)
     * [Arweave](user-guides/asset-hosting/arweave.md)
     * [AWS](user-guides/asset-hosting/aws.md)
     * [Azure Cloud](user-guides/asset-hosting/azure-cloud.md)
