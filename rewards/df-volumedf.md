@@ -22,13 +22,13 @@ Data Farming rewards farmers that allocate their veOCEAN tokens to assets that *
 Thus, if you really want to max out Volume DF APY:
 1. Lock your OCEAN for 4 years to receive 100% voting power.
 1. Have other participants delegate their Allocation Power to you.
-1. Create & publish assets (and make $ in selling them) — or work with people who can.
+1. Create & publish assets (and make \$ in selling them) — or work with people who can.
 1. Point your Allocation Power towards your published assets to receive a 2x bonus.
 1. Claim weekly Passive Rewards, Active Rewards, and update your lock.
 
 ### Success Metrics
 
-**Data Consume Volume (DCV)** is our term for **the total $ amount spent on purchases of Ocean ecosystem assets**, transaction fees, and more. The higher DCV of Ocean ecosystem assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
+**Data Consume Volume (DCV)** is our term for **the total \$ amount spent on purchases of Ocean ecosystem assets**, transaction fees, and more. The higher DCV of Ocean ecosystem assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
 
 ### Those assets don't sell themselves!
 

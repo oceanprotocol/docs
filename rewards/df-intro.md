@@ -52,6 +52,15 @@ Rewards are paid in OCEAN to contributors actively working to improve Ocean Prot
 | --------------- | -------------- |
 | 5,000 OCEAN     | 70,000 OCEAN    |
 
+**November 2** will then change when Predictoor DF is launched:
+1. 1,000 OCEAN is paid out to Challenge DF.
+2. 37,000 OCEAN is paid out to Volume DF.
+3. 37,000 OCEAN is paid out to PredictoorDF.
+
+| Challenge DF | Volume DF | Predictoor DF |
+| --------------- | -------------- | -------------- |
+| 1,000 OCEAN     | 37,000 OCEAN    | 37,000 OCEAN    
+
 ### What is Volume DF
 
 [Volume DF](df-volumedf.md#allocating-veocean) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
@@ -79,6 +88,10 @@ You can learn how to curate datasets and access [Publisher Rewards](../user-guid
 Challenge DF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called Challenge DF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **Challenge DF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.  
 
 You can visit the follow tutorial learn how to [access Challenge DF](../user-guides/data-farming/how-to-challengedf.md).  
+
+### What is Predictoor DF
+
+Predictoor DF rewards Data Scientists (as a predictoor) that submit continuous predictions for future price movements of different assets. It's called Predictoor DF because weekly rewards are dispensed towards predictoors that are competing to accurately predict asset prices. Therefore **Predictoor DF yields depend on participants being accuracte and outcompeting each other**
 
 ### What's the difference between Data Farming and Yield Farming?
 
