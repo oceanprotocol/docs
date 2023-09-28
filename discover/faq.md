@@ -1775,6 +1775,13 @@ The Predictoor [blog post](https://blog.oceanprotocol.com/meet-predictoor-accoun
 
 <details>
 
+<summary>Is this a direct application of responsible AI that Oasis has been focused on?</summary>
+
+No.
+</details>
+
+<details>
+
 <summary>How does Predictoor compare to prediction markets?</summary> 
 
 Prediction markets are for one-off predictions like “Will Biden win in 2024? Whereas Predictoor-style prediction feeds are for a continuous stream of predictions.
