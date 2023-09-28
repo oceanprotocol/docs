@@ -8,4 +8,4 @@ For the first method, you'll need both the dataset DID and the compute job DID. 
 
 For the second method, the dataset DID is no longer required. Instead, you'll need to specify the job ID, the index of the result you wish to download from the available results for that job, and the destination folder where you want to save the downloaded content. The corresponding command is as follows: <code> npm run cli downloadJobResults 'JOB_ID' 'RESULT_INDEX' 'DESTINATION_FOLDER'</code>
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQlpIJEeu8x5yl0OLuXn%2Fuploads%2FjvvCAOQVQvAv2ygNtPby%2FScreenshot%202023-09-28%20at%2002.01.42.png?alt=media&token=da8868d7-6fdb-4dce-ac9a-6b395a0960e5 alt=""><figcaption>downloadJobResults</figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQlpIJEeu8x5yl0OLuXn%2Fuploads%2FjvvCAOQVQvAv2ygNtPby%2FScreenshot%202023-09-28%20at%2002.01.42.png?alt=media&token=da8868d7-6fdb-4dce-ac9a-6b395a0960e5" alt=""><figcaption>downloadJobResults</figcaption></figure>
