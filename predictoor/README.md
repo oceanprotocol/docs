@@ -14,12 +14,6 @@ Alas, accurate predictions are *hard*. Worse, typical prediction feeds have no a
 
 **Accountable Predictions** - Imagine if there was accountability. Accuracy would go up; the farmer would be stuck less. Imagine accountable prediction feeds for not only for rain, but also wind, sea temperature, road congestion, train delays, ETH prices, NVID prices, housing prices, and more. **Imagine tens of thousands of prediction feeds with accountable accuracy.** Imagine them **globally distributed**, and censorship resistant. Imagine **accuracy improving with time**. 
 
-## Roadmap
-Predictoor's tesnet is live now and mainnet will rollout soon. Overall, it will happen in three phases: Testnet → Mainnet → Data Farming.
-1. **LAUNCHED: Tue Sep 12, 2023 - Predictoor Testnet is ready for community.** This means Ocean Predictoor smart contracts, middleware, and frontend running on Oasis Sapphire testnet.
-1. **NEXT: Tue Oct 3 [4w later] - Predictoor Mainnet is ready for community.** This is like testnet but tokens have real value. There will be bridges as appropriate. 
-1. **Thu Nov 2 [4w 2d later] - Predictoor Data Farming starts counting.** There will be 37,000 OCEAN weekly rewards to incentivize predictoors. You can find more about it in [Data Farming Intro - What are Active Rewards?](../rewards/df-intro.md#what-are-active-rewards)
-
 ## Introduction
 Predictoor is composed of different actors, often referred to as: predictoors and traders. You will learn in the [Introduction To Predictoor](#introduction) a lot more about these actors, how they are structured in the system, and their behaviors. By the time you've completed reading this, you'll know what Epochs are, and have a better understand of what "t+1" means.
 
