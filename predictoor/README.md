@@ -4,7 +4,6 @@ description: >-
 ---
 
 # Overview
-
 We dream of a world of 10,000 truly accurate prediction feeds, for everything from rain forecasts to sea level rise, or traffic congestion to ETH price. [Ocean Predictoor](https://predictoor.ai/) is an on-chain, privacy-enabled, AI-powered application and stack that is bringing this dream to reality.
 
 **Accurate predictions are valuable.** With them, one can take action and create value. Conversely, inaccurate predictions lead to disaster. Predictions have value because they're the [final step in a data supply chain](https://blog.oceanprotocol.com/the-data-value-creation-loop-68e23575be02), right before action is taken by the user.
@@ -13,7 +12,7 @@ We dream of a world of 10,000 truly accurate prediction feeds, for everything fr
 
 Alas, accurate predictions are *hard*. Worse, typical prediction feeds have no accountability on accuracy. If the weatherman says "no rain for today" and then it rains, a farmer could get stuck in the mud, wrecking a portion of his crops. The weatherman doesn't feel the impact of wrong predictions, but the farmers sure care! 
 
-**Accountable Predictions** - Now, there is accountability. If accuracy goes up; the farmer gets stuck less. Now we have accountable prediction feeds not only for rain, but also for temperature, for wind, and for sea temperature; for road congestion and train delays; for prices of ETH and NVID; for housing prices; and more. **Imagine tens of thousands of prediction feeds with accountable accuracy.** Imagine them **globally distributed**, and censorship resistant. Imagine **accuracy improving with time.**
+**Accountable Predictions** - Imagine if there was accountability. Accuracy would go up; the farmer would be stuck less. Imagine accountable prediction feeds for not only for rain, but also wind, sea temperature, road congestion, train delays, ETH prices, NVID prices, housing prices, and more. **Imagine tens of thousands of prediction feeds with accountable accuracy.** Imagine them **globally distributed**, and censorship resistant. Imagine **accuracy improving with time**. 
 
 ## Roadmap
 Predictoor's tesnet is live now and mainnet will rollout soon. Overall, it will happen in three phases: Testnet → Mainnet → Data Farming.
