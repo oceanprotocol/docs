@@ -4,7 +4,6 @@ description: Frequently Asked Questions about Predictoor
 ---
 
 ## Predictoor FAQ
-
 <details>
 
 <summary>How Predictoor compare to prediction markets? Like Predictoor, they use \$ for accountability.</summary>
@@ -47,7 +46,7 @@ Whereas in Predictoor, payout is a function of the the accuracy of the submitter
 
 </details>
 
-<!-- NEW FAQs
+<!--
 ## Predictoor 
 
 <details>

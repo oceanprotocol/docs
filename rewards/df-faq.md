@@ -1,9 +1,8 @@
 ---
-title: Data Farming FAQ
+title: veOCEAN & Data Farming FAQ
 description: Frequently Asked Questions about Data Farming
 ---
-
-### veOCEAN
+## veOCEAN FAQ
 
 <details>
 
@@ -14,7 +13,6 @@ No. They cannot be traded, transferred, or sold. ⁣
 You can delegate veOCEAN to others in order to facilitate farming, however, you need to understand how this works. ⁣
 ⁣
 You can get the necessary info in the [docs](https://docs.oceanprotocol.com/user-guides/data-farming). ⁣
-
 </details>
 
 <details>
@@ -108,14 +106,14 @@ You can convert psdnOCEAN back to $OCEAN using the Balancer AMM liquidity [pool]
 
 </details>
 
-### Staking
+### Locking (Staking)
 
 <details>
 
 <summary>What is veOcean and staking in context of Ocean Protocol? </summary>
 
-[veOCEAN](https://docs.oceanprotocol.com/rewards/df-veocean) (vote-escrowed OCEAN) is a special token in the Ocean Protocol ecosystem. Users can obtain veOCEAN by staking their OCEAN tokens for a specific period. This shows commitment to the network. Longer lock periods for veOCEAN typically yield higher rewards.
-You can lock your Ocean Token at - df.oceandao.org
+[veOCEAN](https://docs.oceanprotocol.com/rewards/df-veocean) (vote-escrowed OCEAN) is a special token in the Ocean Protocol ecosystem. Users can obtain veOCEAN by Locking their OCEAN tokens for a specific period of time. Their OCEAN cannot be accessed during this time as a sign of conviction that lets them engage with the network. Longer lock periods for veOCEAN typically yield higher rewards.
+You can lock your Ocean Token at - [df.oceandao.org](https://df.oceandao.org)
 
 </details>
 
@@ -299,7 +297,7 @@ More information about [APYs](https://docs.oceanprotocol.com/user-guides/data-fa
   
 </details>
 
-## Data Farming FAQ
+## Data Farming
 
 <details>
 
