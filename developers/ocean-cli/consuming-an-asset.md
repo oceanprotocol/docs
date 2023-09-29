@@ -1,6 +1,10 @@
 # Consuming an asset
 
-The process of consuming an asset is remarkably straightforward. To achieve this, you only need to execute a single command: <code>npm run cli download 'assetDID' 'download-location-path'</code>
+The process of consuming an asset is remarkably straightforward. To achieve this, you only need to execute a single command:
+
+```bash
+npm run cli download 'assetDID' 'download-location-path'
+```
 
 In this command, replace 'assetDID' with the specific DID of the asset you want to consume, and 'download-location-path' with the desired path where you wish to store the downloaded asset content
 

@@ -1,6 +1,6 @@
 # Usage
 
-The command <code>npm run cli h</code> returns a list of all commands and option flags.
+The command below returns a list of all commands and option flags.
 
 ```bash
 npm run cli h
