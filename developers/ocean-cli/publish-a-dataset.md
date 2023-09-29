@@ -69,6 +69,10 @@ To initiate this process, we'll begin by updating the helper DDO example named "
 ```
 
 Note: The provided example creates a consumable asset with a predetermined price of 2 OCEAN tokens. If you wish to modify this and create an asset that is freely accessible, you can do so by replacing the value of "stats.price.value" with 0 in the JSON example mentioned above.
-Next step is to run the npm run cli publish metadata/simpleDownloadDataset.json command
+Next step is to run the command
+
+```bash
+npm run cli publish metadata/simpleDownloadDataset.json
+```
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQlpIJEeu8x5yl0OLuXn%2Fuploads%2F0WBqBdns3Nqip0W91uld%2FScreenshot%202023-09-28%20at%2000.58.48.png?alt=media&token=29806606-4029-4979-85a5-a3d02bb0a79d" alt=""><figcaption>running publish command</figcaption></figure>
