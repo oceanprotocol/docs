@@ -1,6 +1,7 @@
 ---
-description: >-
-    "Tomorrow belongs to those who can hear it coming." — David Bowie
+description: "Tomorrow belongs to those who can hear it coming." — David Bowie
+cover: ../.gitbook/assets/cover/predictoor_banner.png
+coverY: 0
 ---
 
 # Summary
