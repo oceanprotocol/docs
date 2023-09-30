@@ -36,7 +36,9 @@ If you want to talk to other Predictoors, Traders, and contributors to this ecos
 ## Predictoor Resources
 These documents are a summary of many resources.
 - Blog Post: ["Meet Predictoor: Accountable Accurate Prediction Feeds"](https://blog.oceanprotocol.com/meet-predictoor-accountable-accurate-prediction-feeds-8b104d26a5d9)
-- Ocean meetup [[GSlides](https://docs.google.com/presentation/d/1Yj14l-FRaMOgxXflHV0-sdHEdAFaAuB2MJNovQEtRFE/edit)][[pdf](https://github.com/trentmc/slides/blob/main/20230913-ocean-meetup-predictoor.pdf)]  
-- Dappcon [[GSlides](https://docs.google.com/presentation/d/118tBnWNbzuq6vL1TITGq69RKPvHWbxVUZULp8KnfPyQ/edit#slide=id.g243aace1a9a_0_681)][[pdf](https://github.com/trentmc/slides/blob/main/20230912-dappcon-berlin-predictoor.pdf)]  
 - Core Repository `pdr-backend`: https://github.com/oceanprotocol/pdr-backend/
 - Frontend Repository `pdr-web`: https://github.com/oceanprotocol/pdr-web/
+
+## Slides
+- [[Ocean meetup](https://docs.google.com/presentation/d/1Yj14l-FRaMOgxXflHV0-sdHEdAFaAuB2MJNovQEtRFE/edit)][[pdf](https://github.com/trentmc/slides/blob/main/20230913-ocean-meetup-predictoor.pdf)]  
+- [[Dappcon](https://docs.google.com/presentation/d/118tBnWNbzuq6vL1TITGq69RKPvHWbxVUZULp8KnfPyQ/edit#slide=id.g243aace1a9a_0_681)][[pdf](https://github.com/trentmc/slides/blob/main/20230912-dappcon-berlin-predictoor.pdf)]  
