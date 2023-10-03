@@ -1,8 +1,8 @@
-# Publish a dataset
+# Publish a Dataset 📤
 
-Once the RPC environment variable has been configured, we can proceed to publish a new dataset on the connected network. The flexibility of our setup allows us to easily switch to a different network by simply substituting the RPC endpoint with one corresponding to another network.
+Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. Our flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐
 
-To initiate this process, we'll begin by updating the helper DDO example named "SimpleDownloadDataset.json". This example can be found in the "./metadata" folder, which is located at the root directory of the cloned Ocean CLI project.
+To initiate the dataset publishing process, we'll start by updating the helper [DDO](../ddo-specification.md)(Decentralized Data Object) example named "SimpleDownloadDataset.json." This example can be found in the "./metadata" folder, located at the root directory of the cloned Ocean CLI project.
 
 ```json
 {
@@ -68,11 +68,16 @@ To initiate this process, we'll begin by updating the helper DDO example named "
 }
 ```
 
-Note: The provided example creates a consumable asset with a predetermined price of 2 OCEAN tokens. If you wish to modify this and create an asset that is freely accessible, you can do so by replacing the value of "stats.price.value" with 0 in the JSON example mentioned above.
-Next step is to run the command
+{% hint style="info" %}
+The provided example creates a consumable asset with a predetermined price of 2 OCEAN tokens. If you wish to modify this and create an asset that is freely accessible, you can do so by replacing the value of "stats.price.value" with 0 in the JSON example mentioned above.
+{% endhint %}
+
+Now, let's run the command to publish the dataset:
 
 ```bash
 npm run cli publish metadata/simpleDownloadDataset.json
 ```
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQlpIJEeu8x5yl0OLuXn%2Fuploads%2F0WBqBdns3Nqip0W91uld%2FScreenshot%202023-09-28%20at%2000.58.48.png?alt=media&token=29806606-4029-4979-85a5-a3d02bb0a79d" alt=""><figcaption>running publish command</figcaption></figure>
+<figure><img src="../../.gitbook/assets/cli/publish.png" alt=""><figcaption>Publish dataset</figcaption></figure>
+
+Executing this command will initiate the dataset publishing process, making your dataset accessible and discoverable on the Ocean Protocol network. 🌊
