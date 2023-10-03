@@ -1,4 +1,6 @@
-# Installation and Configuration 🛠️
+---
+title: Installation and Configuration 🛠️
+---
 
 To get started with the Ocean CLI, follow these steps for a seamless setup:
 

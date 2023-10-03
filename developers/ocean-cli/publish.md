@@ -1,4 +1,7 @@
-# Publish a Dataset 📤
+---
+title: Publish a Dataset 📤
+---
+
 
 Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. Our flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐
 

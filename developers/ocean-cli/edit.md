@@ -1,4 +1,6 @@
-# Edit a Dataset ✏️
+---
+title: Edit a Dataset ✏️
+---
 
 To make changes to a dataset, you'll need to start by retrieving the asset's [Decentralized Data Object](../ddo-specification.md) (DDO).
 

@@ -1,4 +1,6 @@
-# Consume a Dataset 📥
+---
+title: Consume a Dataset 📥
+---
 
 The process of consuming an asset is straightforward. To achieve this, you only need to execute a single command:
 

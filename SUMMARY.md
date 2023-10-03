@@ -91,7 +91,7 @@
     - [Consume Asset](developers/ocean.js/consume-asset.md)
     - [Run C2D Jobs](developers/ocean.js/cod-asset.md)
   - [Ocean CLI](developers/ocean-cli/README.md)
-    - [Installation](developers/ocean-cli/installation.md)
+    - [Install](developers/ocean-cli/install.md)
     - [Publish](developers/ocean-cli/publish.md)
     - [Edit](developers/ocean-cli/edit.md)
     - [Consume](developers/ocean-cli/consume.md)

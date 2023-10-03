@@ -1,4 +1,6 @@
-# Run C2D Jobs 🚀
+---
+title: Run C2D Jobs 🚀
+---
 
 ## Start a Compute Job 🎯
 
