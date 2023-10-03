@@ -2,7 +2,7 @@
 
 Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. Our flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐
 
-To initiate the dataset publishing process, we'll start by updating the helper [DDO](../ddo-specification.md)(Decentralized Data Object) example named "SimpleDownloadDataset.json." This example can be found in the `./metadata`` folder, located at the root directory of the cloned Ocean CLI project.
+To initiate the dataset publishing process, we'll start by updating the helper [DDO](../ddo-specification.md)(Decentralized Data Object) example named "SimpleDownloadDataset.json." This example can be found in the `./metadata` folder, located at the root directory of the cloned Ocean CLI project.
 
 ```json
 {
