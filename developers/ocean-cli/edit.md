@@ -10,9 +10,11 @@ Obtaining the DDO of an asset is a straightforward process. You can accomplish t
 npm run cli getDDO 'assetDID'
 ```
 
-<figure><img src="../../.gitbook/assets/cli/getAsset.png" alt=""><figcaption>Get DDO</figcaption></figure>
+<figure><img src="../../.gitbook/assets/cli/getAsset.png" alt=""><figcaption>Retrieve DDO</figcaption></figure>
 
- After retrieving the asset's DDO and saving it as a JSON file, you can proceed to edit the metadata as needed. Once you've made the necessary changes, you can utilize the following command to apply the updated metadata:
+## Edit the Dataset 
+
+After retrieving the asset's DDO and saving it as a JSON file, you can proceed to edit the metadata as needed. Once you've made the necessary changes, you can utilize the following command to apply the updated metadata:
 
 ```bash
 npm run cli editAsset 'DATASET_DID' 'PATH_TO_UPDATED_FILE`

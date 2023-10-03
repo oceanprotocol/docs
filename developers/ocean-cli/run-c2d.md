@@ -20,7 +20,7 @@ In this command, replace `DATASET_DID` with the specific DID of the dataset you 
 
 To obtain the compute results, we'll follow a two-step process. First, we'll employ the `getJobStatus`` method, patiently monitoring its status until it signals the job's completion. Afterward, we'll utilize this method to acquire the actual results.
 
-##  Monitor Job Status
+###  Monitor Job Status
 To track the status of a job, you'll require both the dataset DID and the compute job DID. You can initiate this process by executing the following command:
 
 ```bash
@@ -31,7 +31,7 @@ Executing this command will allow you to observe the job's status and verify its
 
 <figure><img src="../../.gitbook/assets/cli/jobstatus.png" alt=""><figcaption>Get Job Status</figcaption></figure>
 
-## Download the results
+### Download C2D Results
 
 For the second method, the dataset DID is no longer required. Instead, you'll need to specify the job ID, the index of the result you wish to download from the available results for that job, and the destination folder where you want to save the downloaded content. The corresponding command is as follows:
 
