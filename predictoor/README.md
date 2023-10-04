@@ -1,6 +1,6 @@
 ---
 description: Tomorrow belongs to those who can hear it coming. — David Bowie
-cover: ../.gitbook/assets/cover/predictoor_banner.png
+cover: ../.gitbook/assets/cover/predictoor_banner.jpg
 coverY: 0
 ---
 

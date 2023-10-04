@@ -73,7 +73,7 @@ layout: landing
       <td></td>
       <td></td>
       <td><a href="predictoor/">predictoor</a></td>
-      <td><a href=".gitbook/assets/cover/predictoor_card.png">predictoor_card.png</a></td>
+      <td><a href=".gitbook/assets/cover/predictoor_card.jpg">predictoor_card.jpg</a></td>
     </tr>
     <tr>
       <td><a href="rewards/">rewards</a></td>
