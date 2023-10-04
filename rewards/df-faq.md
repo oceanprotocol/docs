@@ -31,36 +31,11 @@ No. They cannot be traded, transferred, or sold. ⁣
 You can delegate veOCEAN to others in order to facilitate farming, however, you need to understand how this works. ⁣To learn more [please read the docs](https://docs.oceanprotocol.com/user-guides/data-farming). ⁣
 </details>
 
-<summary>Can I get veOCEAN on the Binance Smart Chain?</summary>
-
-1. veOCEAN exists on the ETH mainnet only. 
-2. Data Farming Active Rewards has native multi-chain support.
-
-</details>
-
-<details>
-
-<summary> Which chain do most people stake on? What are the staking costs? </summary>
-
-You can only "stake" via eth mainnet.
-
-Data Farming Active Rewards has multi-chain support and you can farm assets on any chain.
-  
-</details>
-
-<details>
-
-<summary>Are there plans to switch to BNB or another blockchain for staking to reduce costs?</summary>
-
-I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed on the Ethereum mainnet. We don't have immediate plans to add another chain for VeOcean staking at the moment. However, it's important to note that to be eligible for Data Farming, data assets for DFing can be published on various networks where Ocean Protocol is deployed in production, including ETH Mainnet and Polygon, among others. You can find more information about this in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean#veocean-earnings).
-  
-</details>
-
 <details>
 
 <summary>Which chain is veOCEAN be deployed on?</summary>
 
-[veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet and allow users to allocate veOCEAN tokens to any asset, on any chain.
+[veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet.
 
 </details>
 
@@ -68,19 +43,12 @@ I'm sorry, but for now, all the earnings for veOCEAN holders can only be claimed
 
 <summary>Which networks are eligible for Data Farming?</summary>
 
-Data assets for DF may published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
+You participate by default in Passive Rewards when you lock $OCEAN on Ethereum Mainnet.
+
+Data assets for Volume DF may be published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
 
 You can find a list of [all supported chains here](networks/README.md).
 
-</details>
-
-<details>
-
-<summary>Can I farm on other chains then Ethereum?</summary>
-
-1. veOCEAN exists on ETH mainnet only. 
-2. Data Farming Active Rewards has native multi-chain support.
-  
 </details>
 
 ### Staking
@@ -113,28 +81,16 @@ Yes. When you lock Ocean tokens, you'll receive them back at the end of the lock
 
 <details>
 
-<summary>Is it possible to participate only in Passive Rewards without participating in Active Rewards? </summary>
+<summary>Is it possible to only participate in Passive Rewards? Or should I participate in Active Rewards?</summary>
 
-Yes. You participate by default in Passive Rewards when you lock $OCEAN. Active Rewards requires you to actively engage with the dApp and curate assets.
+You participate by default in Passive Rewards when you lock $OCEAN.  
 
-</details>
+But to maximize your rewards, you will also need to engage in Active Rewards.  
 
-<details>
+It's worth noting that active staking does come with associated costs, such as gas fees which you will need to cover.  
 
-<summary>Should I be a curator? Are there any risks associated with Active Rewards?</summary>
-
-There are no risks associated with actively participating in Data Farming, you just point your Voting Power towards high-quality assets. Each time you allocate Voting Power, you'll have to pay some gas.
-
-</details>
-
-<summary>How can I use my veOCEAN tokens to earn more $OCEAN? What is the role of curators?</summary>
-
-"Staking" works similar to Curve Finance. You then automatically start earning Passive Rewards for holding the veOCEAN. You can use veOCEAN to access both Passive and Active Rewards through Data Farming, earning more $OCEAN.
-
-Yes, there is active work in curating data assets. Both keep growing and you can now use delegation to make active rewards easier to access.
-
-More info [here](https://docs.oceanprotocol.com/user-guides/data-farming).
-
+More information about [APYs](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy).  
+  
 </details>
 
 ### Locking & Withdrawing
@@ -149,24 +105,6 @@ More info [here](https://docs.oceanprotocol.com/user-guides/data-farming).
 
 <details>
 
-<summary>Does the lock open at 00:00 on the unlock day?</summary>
-
-The lock opens at the time you lock your tokens. 
-  
-</details>
-
-<details>
-
-<details>
-
-<summary>When one withdraws all locked amounts, are the Active and Passive Rewards automatically claimed as well?</summary>
-
-No, when the locking period ends, and you withdraw your tokens, the rewards (Passive or Active) are not automatically claimed. You must claim them separately. 
-  
-</details>
-
-<details>
-
 <summary>If I withdraw before the unlock date, what happens to my veOCEAN and rewards?</summary>
 
 You can't withdraw before the [unlock date](https://docs.oceanprotocol.com/rewards/df-veocean).
@@ -175,19 +113,12 @@ You can't withdraw before the [unlock date](https://docs.oceanprotocol.com/rewar
 
 <details>
 
-<summary>Is there a way to transform VeOcean to Ocean gradually over the lock period? Also, how will VeOcean be distributed over a certain time frame, and will Ocean tokens be reduced at the end of the lock period?</summary>
+<summary>Is there a way to transform VeOcean to Ocean gradually over the lock period?</summary>
 
-No, you can't convert your VeOcean to Ocean during the lock period. However, you have the opportunity to earn rewards (in $OCEAN) through active or passive staking. When the lock period concludes, you gain access to all your locked Ocean tokens. You can find additional information about OCEAN emissions [here](https://docs.oceanprotocol.com/veocean-data-farming/emissions-apys). 
-It's important to note that you won't lose Ocean tokens by locking them, and they won't be reduced at the end of the lock period. To learn more about VeOcean, check out this [resource](https://docs.oceanprotocol.com/rewards/df-veocean).
+No, you can't convert your VeOcean to Ocean during the lock period. When the lock period concludes, you gain access to all your locked Ocean tokens.  
+
+To learn more about VeOcean, check out this [resource](https://docs.oceanprotocol.com/rewards/df-veocean).
   
-</details>
-
-<summary>What is the best time to lock OCEAN to avoid high gas fees? Do I need to approve twice? </summary>
-
-When gas prices are low, which you can check [here](https://www.useweb3.xyz/gas), the locking process occurs in two phases. Initially, you must approve the amount you wish to lock, and subsequently, you execute the lock transaction. If you've previously approved the desired amount for locking, there's no need to repeat the approval step. You only need to approve once, unless you intend to lock a higher amount than what you've already approved.
-
-</details>
-
 </details>
 
 <details>
@@ -198,12 +129,11 @@ When [gas](https://www.useweb3.xyz/gas) is cheap.
 
 </details>
 
-
 ### Claiming Rewards
 
 <details>
 
-<summary>When I stake my Ocean tokens, do I need to restake them manually, or is it auto-compound?</summary>
+<summary>When I claim my Ocean tokens, do I need to restake them manually, or are they auto-compounded?</summary>
 
 They are not auto-compounded.
 
@@ -211,13 +141,11 @@ They can be claimed/redeposited whenever you want. If you don't claim, they just
   
 </details>
 
-
 ### APY
+
 <details>
 
 <summary>Are rewards paid out in veOCEAN or $OCEAN?</summary>
-
-[veOCEAN](https://docs.oceanprotocol.com/rewards/df-veocean) cannot be traded and has no secondary markets.
 
 All rewards in Data Farming are paid out in $OCEAN and can be claimed at the every epoch.
 
@@ -254,9 +182,9 @@ Just, visit the Data Farming website and scroll down to the [Data Farming Histor
 
 <details>
 
-<summary>Is active staking on datasets limited to the ones I specifically staked my veOcean on? Do I receive active staking rewards only if the datasets I staked on receive DCV?</summary>
+<summary>Do I only receive Active Rewards from Volume DF if the datasets I staked on receive DCV?</summary>
 
-Yes, you will receive [active rewards](https://docs.oceanprotocol.com/rewards/df-intro#what-are-active-rewards) if the assets you've curated have Data consume Volume(DCV). ⁣
+Yes, you will receive [Active Rewards from Volume DF](https://docs.oceanprotocol.com/rewards/df-intro#what-are-active-rewards) if the assets you've curated have Data consume Volume(DCV). ⁣
 
 </details>
 
@@ -264,7 +192,9 @@ Yes, you will receive [active rewards](https://docs.oceanprotocol.com/rewards/df
 
 <summary>How do I analyze projects and decide where to allocate? Do I look at current and past APYs, or is there more to consider? </summary>
 
-Active stakers can select datasets to stake on based on several factors such as publisher reputation, number of previous consumes of the dataset, ratings, and comments of others.
+Curators can select datasets to stake on based on several factors such as publisher reputation, number of previous consumes of the dataset, ratings, and comments of others.
+
+We provide an overview into many of these stats inside the [Volume DF page](https://df.oceandao.org/volume-df) in the Data Farming dApp.
 
 </details>
 
@@ -274,24 +204,20 @@ Active stakers can select datasets to stake on based on several factors such as 
 
 Allocations happen instantly.
 
-However, your allocation power is counted progressively throughout the week and requires you to leave them there for it to work.
+However, your voting power is counted progressively throughout the week and requires you to keep your veOCEAn allocated on datasets for it to work.
 
 </details>
 
 <details>
 
-<summary>Should I focus on passive income or be an active staker? What are the risks involved with active staking?</summary>
-
-To optimize your rewards, you can choose to employ both passive and active methods. Passive rewards are automatically earned when you lock your Ocean tokens to acquire veOCEAN. It's crucial to understand that the longer you lock your tokens, the higher your potential rewards can be.
-
-However, it's worth noting that active staking does come with associated costs, such as gas fees, which you will need to cover.
+<summary>Are there any risks associated with Active Rewards?</summary>
 
 When it comes to active staking, you aren't exposed to additional risks. Your veOCEAN tokens remain securely locked, and your role is to curate datasets by allocating them.
 
 As with any system, inherent risks exist. In terms of the liquidity you provide, rest assured that we have implemented battle-tested contracts, protecting assets worth billions, including veCRV. With this model, there is no liquidity risk, and you are shielded from losing your OCEAN due to Impermanent Loss (IL); your OCEAN tokens are held securely in lock.
 
-More information about [APYs](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy).
-  
+More info [here](https://docs.oceanprotocol.com/user-guides/data-farming).
+
 </details>
 
 ### Parameters & Stats
