@@ -47,7 +47,7 @@ Any type of data can be sold via Ocean Protocol. AI data, music data, image, vid
 
 <summary>How can we ensure the validity of datasets on the market?</summary>
 
-We are not actively developing a dedicated system for dataset validation. Instead, we have built tools and established multiple methods within our verification layer. However, the primary responsibility for data validation lies with the customer. To assess the data's quality, consider these questions: 
+We have built tools and established multiple methods within our verification layer. However, the primary responsibility for data validation lies with the customer. To assess the data's quality, consider these questions: 
 1. What is the reputation of the dataset's publisher?
 2. Does the dataset include well-defined metadata and provenance information? 
 3. Is sample data available for evaluation? 
@@ -61,13 +61,15 @@ We are not actively developing a dedicated system for dataset validation. Instea
 
 <summary>Does Ocean aspire to cultivate a decentralized ChatGPT through the datasets on the Ocean market?</summary>
 
+(This question seems irrelevant and unnecessary )
+
 While Ocean Protocol primarily focuses on data sharing and data-related technologies, it's not directly involved in the development of AI models like ChatGPT. However, it's possible that individuals or organizations could use the Ocean marketplace to share or sell datasets that could be used in training AI models like ChatGPT. Decentralized AI models, like ChatGPT, often rely on a wide range of data sources to improve their performance and versatility. ⁣
 
 </details>
 
 <details>
 
-<summary>What are the steps needed to encourage people to use the Ocean market, considering the current low consume volume (excluding wash consume)?</summary>
+<summary>What are the steps needed to encourage people to use the Ocean market?</summary>
 
 There are a wide host of technical, business, and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology are relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers, or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined.
 
@@ -88,6 +90,7 @@ Policymaking is a complex, highly charged, and fast-moving field. The position o
 Determining whether someone has downloaded your data and is reselling it is quite challenging. While they are bound by a contract not to do so, it's practically impossible to monitor their actions. If you want to maintain the privacy of your dataset, you can explore the option of using compute-to-data(C2D). Via C2D your data remains private and people can only run algorithms(that you approve of) to extract intelligence. 
 This issue is similar to what any digital distribution platform faces. For instance, can Netflix prevent individuals from downloading and redistributing their content? Not entirely. They invest significant resources in security, but ultimately, complete prevention is extremely difficult. They mainly focus on making it more challenging for such activities to occur.
 
+(I embedded the answer in the Compute to data section, Already created a PR)
 </details>
 
 <details>
@@ -102,7 +105,7 @@ The Data Economy is nascent and cutting-edge. Many of the tools, components, and
 
 <details>
 
-<summary> Will Acentrik continue to run data transactions on the Ocean Protocol backend? Is Acentrik built on top of Ocean at the protocol level?</summary>
+<summary>Is Acentrik built on top of Ocean?</summary>
 
 3rd party markets such as Gaia-X, BDP and Acentrik use Ocean components to power their marketplace. They will likely use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to plan set out (https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9).
 
@@ -122,6 +125,7 @@ Also, you can train models on the data that is available and extract insights.
 <details>
 
 <summary>How do we distinguish between wash trading and real volume, especially considering that the blockchain lacks sybil resistance? Wouldn't individuals always be able to create new addresses and purchase the datasets they bonded to?</summary>
+(Do we need this question)
 
   There is no economic value or advantage in wash-consuming data assets. The transaction fees expended for this maneuver would exceed the amount of potential rewards to be gained .
 
@@ -130,6 +134,8 @@ Also, you can train models on the data that is available and extract insights.
 <details>
 
 <summary>Is there any targeting of current Web2 data users/traders? Is the Azure marketplace more successful in terms of user adoption? After 25 weeks of the current marketplace, it is surprising to see minimal non-"wash-consume" volume.</summary>
+
+(The above question "What are the steps needed to encourage people to use the Ocean market?" covers the subject of marketplace adoption and IMO this question is also unncessary.
 
   We don't want to comment on the success of the Azure marketplace.If it's a success, that's great! 
 What we can share is our dedicated efforts to enhance accessibility for our tools and technology, which includes incorporating features for web2 users.
@@ -166,6 +172,8 @@ Ocean Protocol is not primarily an AI project, but it is closely related to arti
   Data is purchased using the Ocean Market and other Ocean services, but the volume of sales and purchases is small at the moment
 
 There are a wide host of technical, business, and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology are relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers, or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined.
+(The answer is similar to the above question "What are the steps needed to encourage people to use the Ocean market?" answer and this question should be removed)
+
 </details>
 
 <details>
@@ -190,6 +198,8 @@ While we currently don't have a dedicated dashboard for this information, you ca
 
 While we currently don't have a dedicated dashboard for this information, you can access it at the smart contract level. As an example, for Polygon-generated revenue(the most used network), you can view this information on [polygonscan](https://polygonscan.com/address/0x042BFbd88c3998282153088604207b2AeF045b43#tokentxns).
 
+(we got duplicate questions and answers and i think we should remove this one, See above question "What is the total revenue generated by Ocean so far?" )
+
 </details>
 
 <details>
@@ -197,6 +207,7 @@ While we currently don't have a dedicated dashboard for this information, you ca
 <summary>Is the ocean still about stake and earn?</summary>
 
 Staking and earning are part of the project, incentivizing people and curating data assets. But this is just one part, We encourage you to discover more about the project by going through the [docs](https://docs.oceanprotocol.com/).
+(we should remove this question as well as this is well-documented in the other docs related to data farming)
 
 </details>
 
@@ -206,13 +217,16 @@ Staking and earning are part of the project, incentivizing people and curating d
 
 There are a wide host of technical, business and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology is relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined. ⁣
 
+(again, its another duplicate answer of the same question asked in a different form, should be removed)
 </details>
 
 <details>
 
-<summary>What are the updates regarding data unions in the Ocean ecosystem? Regarding the value-creation loops for users in the last mile, I'm curious to know how the team intends to unlock this economic opportunity for users beyond data scientists. Specifically, how do you plan to enable users to earn from their data?</summary>
+<summary>What are the updates regarding data unions in the Ocean ecosystem? Regarding the value-creation loops for users in the last mile,how the team intends to unlock this economic opportunity for users beyond data scientists. Specifically, how do you plan to enable users to earn from their data?</summary>
 
 We operate as a protocol, providing tools for others to create valuable projects. As a result, our team is not currently focused on developing a data union directly. However, there are individuals and groups leveraging Ocean technology to construct data unions. An illustrative example is found [here](https://www.dataunion.app/).
+
+(we should remove this question as its not directly related to us and creates a negative distraction)
 
 </details>
 
@@ -241,6 +255,8 @@ Once a user has Metamask installed and an Ethereum address, they can register, c
 <summary>Is Ocean considered to be in the file storage category?</summary>
 
 No, OCEAN does not store data. When publishing, you are providing the URL (or specs for other types of storage).
+
+(this question should be removed as its already answered in the question asked below "Where is my data stored?")
   
 </details>
 
@@ -266,6 +282,7 @@ Ocean Protocol helps facilitate data sharing and commercialization. At our curre
 
 Yes. Ocean Protocol understands that some data is too sensitive to be shared — potentially due to GDPR or other reasons. For these types of datasets, we offer a unique service called [compute-to-data](../developers/compute-to-data/README.md). This enables you to monetize the dataset that sits behind a firewall without ever revealing the raw data to the consumer. For example, researchers and data scientists pay to run their algorithms on the data set, and the computation is performed behind a firewall; all the researchers or data scientists receive is the results generated by their algorithm.
 
+(this question should also be removed as it is well documented in the C2D docs)
 </details>
 
 <details>
@@ -298,15 +315,7 @@ Ocean provides tools for access control, [fine-grained permissions](../developer
 
 Yes - Ocean has implemented [fine-grained permissions](../developers/fg-permissions.md). This means that you can create allow and deny lists that restrict access from certain individuals or limit access to particular organizations. \
 PS: [Fine-grained permissions](../developers/fg-permissions.md) are not integrated into the Ocean Marketplace.
-
-</details>
-
-<details>
-
-<summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
-
-Several projects use ocean components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
-
+( we should remove this question as well as its a question asked above "How do I control who accesses my data?" )
 </details>
 
 <details>
@@ -331,7 +340,7 @@ All the ecosystem information is available on the [website](https://oceanprotoco
 <summary>Is there a real-time bot that tracks dataset sales on Ocean Protocol?</summary>
 
 Not to our knowledge. If you find something, please share it with us 🙃
-  
+  ( we should remove this question as well. imo, we should remove those questions for which we ddont have the clear answers)
 </details>
 
 <details>
@@ -346,7 +355,7 @@ This [blog post](https://blog.oceanprotocol.com/ocean-protocol-update-2023-44ed1
 <summary>What’s to come with Ocean this year?</summary>
 
 Check out our [roadmap](https://oceanprotocol.com/technology/roadmap) to see what we are currently working on. If you are interested in tracking our progress towards these goals then take a look at our [github](https://github.com/oceanprotocol/).
-
+(this is already answered above in this question  "What is the 2023 roadmap of Ocean Protocol?" and should be removed)
 </details>
 
 <details>
@@ -365,7 +374,6 @@ Ocean Protocol is an open-source project with no official lead. The protocol is 
 Yes there is - the [Autobot](https://autobotocean.com/) one. 
 
 </details>
-
 
 <details>
 
@@ -388,7 +396,6 @@ Anyone can fork Ocean Market; the core team encourages this because it drives va
   
 </details>
 
-
 <details>
 
 <summary>Is it possible to sell models on Ocean Protocol?</summary>
@@ -403,7 +410,6 @@ Yes, you can sell any type of data. Start learning about us through the [documen
 <summary>Is it true that Mercedes Benz has partnered with Ocean?</summary>
 
 Yes 🫢, [here](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4) are a few details.
-  
 </details>
 
 <details>
@@ -412,7 +418,7 @@ Yes 🫢, [here](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-ma
 
 Yes 😉 You'll find some details of collaborations on our [blog post](https://blog.oceanprotocol.com/acentrik-a-decentralized-data-marketplace-for-enterprises-built-on-ocean-protocol-is-now-in-7fb7371e57d4). ⁣
 
-  
+  ( this question should be removed as it is already already in this question "Where can I find projects on Ocean's ecosystem?")
 </details>
 
 <details>
@@ -564,14 +570,6 @@ The ocean community fees are though dependant on the token used. There is a 0.1%
 
 There will not be a next release for the token. To date, all tokens have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣) and approximately 720 million OCEAN are allocated towards data farming and network rewards. 
   
-</details>
-
-<details>
-
-<summary>Do other associated marketplaces like Acentrik, BigDataProtocol, and datalatte have any connection to the OCEAN token or Data Farming?</summary>
-
-Several projects use Ocean-components to power their data marketplaces. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
-
 </details>
 
 <details>
