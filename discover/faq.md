@@ -445,6 +445,7 @@ Ocean Market currently supports only $OCEAN and H2O for the exchange of services
 
 A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
 
+(this question should be removed as it is already covered in the question "How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?" in the 514th line )
 </details>
 
 <details>
@@ -453,6 +454,7 @@ A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-
 
 All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4-year half-life.
 
+((the answer is duplicate to the question "Where can I find information about the tokenomics and economic aspects of the Ocean Protocol project?" in the 533 line and i think we should remove this  and keep the one which sounds more professional )
 </details>
 
 <details>
@@ -481,6 +483,7 @@ veOCEAN on the other hand, follows the model of other ve tokens, where it can be
 
 A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
 
+(this question should be removed as it is already covered in the question "How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?" in the 514th line )
 </details>
 
 <details>
@@ -498,6 +501,7 @@ The Ocean token [supply](https://blog.oceanprotocol.com/control-over-the-ocean-c
 
 All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4 year half-life.
 
+(the answer is duplicate to the question "Where can I find information about the tokenomics and economic aspects of the Ocean Protocol project?" in the 533 line and i think we should remove this  and keep the one which sounds more professional )
 </details>
 
 <details>
@@ -505,7 +509,6 @@ All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control
 <summary>How many tokens have been burned so far?</summary>
 
 You can view the transactions for the burned tokens on [etherscan](https://etherscan.io/token/0x967da4048cd07ab37855c090aaf366e4ce1b9f48?a=0x000000000000000000000000000000000000dead). As of September 2023, approximately 1.4 million tokens have been burned. ⁣
-
 </details>
 
 <details>
@@ -522,6 +525,7 @@ A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-
 
 The $OCEAN token is used as the glue for the Ocean ecosystem. A 0.1% or a 0.2% fee is applied to all transactions performed using Ocean components. This fee is used for further development of Ocean technology and for buy-and-burning of the Ocean token.
 
+(IMO, this question should be removed as this is already covered in the question "How does the $OCEAN token capture value?" in the 461 line)
 </details>
 
 <details>
@@ -536,7 +540,7 @@ All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control
   
 <summary>Which wallet is best for storing $Ocean tokens?</summary>
 
-OCEAN Token is a standard ERC20 token, so any wallet that can hold ERC20 can hold OCEAN as well. However, we always recommend hardware wallet for security reasons ⁣
+OCEAN Token is a standard ERC20 token, so any wallet that can hold ERC20 can hold OCEAN as well. However, we always recommend hardware wallet for security reasons. For Hardware wallets - Ledger, trezor are of the best quality.
 
 </details>
 
@@ -545,7 +549,7 @@ OCEAN Token is a standard ERC20 token, so any wallet that can hold ERC20 can hol
 <summary>Can a hardware wallet be used to lock Ocean tokens?</summary>
 
 Yes, either through Metamask (or another software wallet that can connect to a hardware wallet) or through your hardware wallet software - Ledger, Trezor etc. ⁣
-
+(this question should be removed as well as the question "Which wallet is best for storing $Ocean tokens?" above answers it.)
 </details>
 
 <details>
@@ -553,7 +557,7 @@ Yes, either through Metamask (or another software wallet that can connect to a h
 <summary>Is Ocean deployed on the BSC network? What is the contract address?</summary>
 
 Yes, it's [0xDCe07662CA8EbC241316a15B611c89711414Dd1a](https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a).
-
+( idk why but i think this quesion is kind of overpopulating the docs and should be removed. this is well documented as well)
 <details>
 
 <summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
@@ -569,7 +573,7 @@ The ocean community fees are though dependant on the token used. There is a 0.1%
 <summary>When is the next token release scheduled?</summary>
 
 There will not be a next release for the token. To date, all tokens have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣) and approximately 720 million OCEAN are allocated towards data farming and network rewards. 
-  
+(this is already answered above in the question "Where can I find information about the tokenomics and economic aspects of the Ocean Protocol project?"  in the 533 line and this question should be removed)
 </details>
 
 <details>
@@ -577,14 +581,6 @@ There will not be a next release for the token. To date, all tokens have been [m
 <summary>Does the OCEAN token also have governance functionality?</summary>
 
 During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently, there are no governance functions associated with the Ocean Token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
-  
-</details>
-
-<details>
-
-<summary>How is the fee distribution made, and what is the percentage allocated to burning, rewards, and revenue?</summary>
-
-A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate. Information about the Ocean token dynamics can be found [here](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9). Also, 5% of Ocean network revenue is assigned for burning.
   
 </details>
 
