@@ -12,6 +12,7 @@ Compute-to-Data effectively resolves the tradeoff between leveraging the benefit
 
 Private data holds immense value as it can significantly enhance research and business outcomes. However, concerns regarding privacy and control often impede its accessibility. Compute-to-Data addresses this challenge by granting specific access to the private data without directly sharing it. This approach finds utility in various domains, including scientific research, technological advancements, and marketplaces where private data can be securely sold while preserving privacy. Companies can seize the opportunity to monetize their data assets while ensuring the utmost protection of sensitive information.
 
+You can also avoid your data being shared without your permission with C2D. People can only run algorithms on your data to extract the needed intelligence whilst keeping it private.
 Private data has the potential to drive groundbreaking discoveries in science and technology, with increased data improving the predictive accuracy of modern AI models. Due to its scarcity and the challenges associated with accessing it, private data is often regarded as the most valuable. By utilizing private data through Compute-to-Data, significant rewards can be reaped, leading to transformative advancements and innovative breakthroughs.
 
 {% hint style="info" %}
