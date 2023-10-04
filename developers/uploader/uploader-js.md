@@ -15,7 +15,7 @@ const provider = new Web3Provider(window.ethereum)
 const signer = provider.getSigner()
 ```
 
-2. Initialize DBSClient:
+2. Initialize UploaderClient:
 
 3. HTML Setup: Provide a file input for users to select multiple files.
 ```
@@ -34,7 +34,7 @@ For additional details, please visit the Uploader.js repository.
 ### API
 
 The library provides the following methods:
-constructor(baseURL: string): Create a new instance of the DBSClient.
+constructor(baseURL: string): Create a new instance of the UploaderClient.
 - ```getStorageInfo(): Promise<StorageInfo[]>```: Fetch information about supported storage types and payments.
 - ```getQuote(args: GetQuoteArgs): Promise<GetQuoteResult>```: Fetch a quote for storing files on a specific storage.
 - ```upload(quoteId: string, nonce: number, signature: string, files: File[]): Promise<void>```: Upload files according to the quote request.
