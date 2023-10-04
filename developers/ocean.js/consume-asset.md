@@ -18,13 +18,13 @@ Later on, when working with the ocean.js library, you can use this order transac
 
 #### Prerequisites
 
-* [Obtain an API key](../get-api-keys-for-blockchain-access.md)
-* [Set up the .env file](configuration.md#create-a-env-file)
-* [Install the dependencies](configuration.md#setup-dependencies)
-* [Create a configuration file](configuration.md#create-a-configuration-file)
+- [Obtain an API key](../get-api-keys-for-blockchain-access.md)
+- [Set up the .env file](configuration.md#create-a-env-file)
+- [Install the dependencies](configuration.md#setup-dependencies)
+- [Create a configuration file](configuration.md#create-a-configuration-file)
 
 {% hint style="info" %}
-The variables **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
+The variables **AQUARIUS_URL** and **PROVIDER_URL** should be set correctly in `.env` file
 {% endhint %}
 
 #### Create a script to consume an asset
@@ -32,76 +32,90 @@ The variables **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in
 Create a new file in the same working directory where the configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
 
 <pre class="language-javascript" data-overflow="wrap"><code class="lang-javascript">// Note: Make sure .env file and config.js are created and setup correctly
-const { oceanConfig } = require('./config.js');
-const { ZERO_ADDRESS, NftFactory, getHash, Nft } = require ('@oceanprotocol/lib');
+const { oceanConfig } = require("./config.js");
+const {
+	ZERO_ADDRESS,
+	NftFactory,
+	getHash,
+	ProviderFees,
+	Datatoken,
+	ProviderInstance,
+	Nft,
+	FixedRateExchange,
+  approve
+} = require("@oceanprotocol/lib");
 
 // replace the did here
 const did = "did:op:a419f07306d71f3357f8df74807d5d12bddd6bcd738eb0b461470c64859d6f0f";
 
 // This function takes did as a parameter and updates the data NFT information
 const consumeAsset = async (did) => {
-  
-  const consumer = await oceanConfig.consumerAccount.getAddress();
-  
-   // Fetch ddo from Aquarius
-  const asset = await await oceanConfig.aquarius.resolve(did);
+	const consumer = await oceanConfig.consumerAccount.getAddress();
 
-  const nft = new Nft(oceanConfig.consumerAccount);
-  
-  await approve(
-    consumerAccount,
-    config,
-    await consumerAccount.getAddress(),
-    addresses.Ocean,
-    freAddress,
-    '1'
-  )
-    
- const fixedRate = new FixedRateExchange(fixedRateExchangeAddress, consumerAccount)
- const tx = await fixedRate.buyDatatokens(fixedRateId, '1', '2')
- 
-<strong> const initializeData = await ProviderInstance.initialize(
-</strong>    resolvedDDO.id,
-    resolvedDDO.services[0].id,
-    0,
-    await consumerAccount.getAddress(),
-    providerUrl
-  )
+	// Fetch ddo from Aquarius
+	const asset = await await oceanConfig.aquarius.resolve(did);
 
-  const providerFees: ProviderFees = {
-    providerFeeAddress: initializeData.providerFee.providerFeeAddress,
-    providerFeeToken: initializeData.providerFee.providerFeeToken,
-    providerFeeAmount: initializeData.providerFee.providerFeeAmount,
-    v: initializeData.providerFee.v,
-    r: initializeData.providerFee.r,
-    s: initializeData.providerFee.s,
-    providerData: initializeData.providerFee.providerData,
-    validUntil: initializeData.providerFee.validUntil
-  }
+	const nft = new Nft(consumer);
 
- datatoken = new Datatoken(consumerAccount)
-    
- const tx = await datatoken.startOrder(
-    freDatatokenAddress,
-    await consumerAccount.getAddress(),
-    0,
-    providerFees
- )
-    
- const orderTx = await tx.wait()
- const orderStartedTx = getEventFromTx(orderTx, 'OrderStarted')
+	await approve(
+		Error,
+		oceanConfig,
+		await consumer.getAddress(),
+		oceanConfig.Ocean,
+		oceanConfig.fixedRateExchangeAddress,
+		"1"
+	);
 
- const downloadURL = await ProviderInstance.getDownloadUrl(
-   fixedDDO.id,
-   fixedDDO.services[0].id,
-   0,
-   orderStartedTx.transactionHash,
-   providerUrl,
-   consumerAccount
-<strong> )
-</strong>  console.log(`Resolved asset did [${updatedAsset.id}]from aquarius.`);
-  console.log(`Updated asset state: [${updatedAsset.nft.state}].`);
+	const fixedRate = new FixedRateExchange(
+		oceanConfig.fixedRateExchangeAddress,
+		consumer
+	);
 
+	const txBuyDt = await fixedRate.buyDatatokens(
+		oceanConfig.fixedRateId,
+		"1",
+		"2"
+	);
+
+	const initializeData = await ProviderInstance.initialize(
+		asset.id,
+		asset.services[0].id,
+		0,
+		await consumer.getAddress(),
+		oceanConfig.providerUri
+	);
+
+	const providerFees: ProviderFees = {
+		providerFeeAddress: initializeData.providerFee.providerFeeAddress,
+		providerFeeToken: initializeData.providerFee.providerFeeToken,
+		providerFeeAmount: initializeData.providerFee.providerFeeAmount,
+		v: initializeData.providerFee.v,
+		r: initializeData.providerFee.r,
+		s: initializeData.providerFee.s,
+		providerData: initializeData.providerFee.providerData,
+		validUntil: initializeData.providerFee.validUntil,
+	};
+
+	const datatoken = new Datatoken(consumer);
+
+	const tx = await datatoken.startOrder(
+		oceanConfig.fixedRateExchangeAddress,
+		await consumer.getAddress(),
+		0,
+		providerFees
+	);
+
+	const orderTx = await tx.wait();
+	const orderStartedTx = getEventFromTx(orderTx, "OrderStarted");
+
+	const downloadURL = await ProviderInstance.getDownloadUrl(
+		asset.id,
+		asset.services[0].id,
+		0,
+		orderTx.transactionHash,
+		oceanConfig.providerUri,
+		consumer
+	);
 };
 
 // Call setMetadata(...) function defined above
