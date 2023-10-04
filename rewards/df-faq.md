@@ -93,6 +93,33 @@ More information about [APYs](https://docs.oceanprotocol.com/user-guides/data-fa
   
 </details>
 
+### Liquid Staking
+<details>
+
+<summary>Are there any liquid staking wrappers for veOCEAN?</summary>
+
+You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy ([psdnOCEAN](https://docs.h2odata.xyz/protocol-overview/psdnocean-veocean-liquid-staking)), which deploys your veOCEAN at no risk, in order to gain a share of active rewards.
+
+</details>
+
+<details>
+
+<summary>Why the ratio between psdnOCEAN and OCEAN tokens is not close to 1:1?</summary>
+
+The ratio stands at 80% to 20%, creating an imbalanced pool that minimizes price fluctuations. You might find this [resource](https://blog.oceanprotocol.com/psdnocean-the-first-liquid-staking-wrapper-by-the-h2o-team-is-now-live-a3330e15fa5c) valuable.
+
+</details>
+
+<details>
+
+<Summary> How to convert PsdnOcean back to $OCEAN ?</Summary>
+
+You can convert psdnOCEAN back to $OCEAN using the Balancer AMM liquidity [pool](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e).
+
+[Price information](https://www.geckoterminal.com/eth/pools/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b) for psdnOCEAN.
+
+</details>
+
 ### Locking & Withdrawing
 
 <details>
@@ -251,33 +278,6 @@ You can find the statistics for the number of locked tokens [here](https://autob
 
 Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our [documentation](https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
   
-</details>
-
-### Liquid Staking
-<details>
-
-<summary>Are there any liquid staking wrappers for veOCEAN?</summary>
-
-You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy ([psdnOCEAN](https://docs.h2odata.xyz/protocol-overview/psdnocean-veocean-liquid-staking)), which deploys your veOCEAN at no risk, in order to gain a share of active rewards.
-
-</details>
-
-<details>
-
-<summary>Why the ratio between psdnOCEAN and OCEAN tokens is not close to 1:1?</summary>
-
-The ratio stands at 80% to 20%, creating an imbalanced pool that minimizes price fluctuations. You might find this [resource](https://blog.oceanprotocol.com/psdnocean-the-first-liquid-staking-wrapper-by-the-h2o-team-is-now-live-a3330e15fa5c) valuable.
-
-</details>
-
-<details>
-
-<Summary> How to convert PsdnOcean back to $OCEAN ?</Summary>
-
-You can convert psdnOCEAN back to $OCEAN using the Balancer AMM liquidity [pool](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e).
-
-[Price information](https://www.geckoterminal.com/eth/pools/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b) for psdnOCEAN.
-
 </details>
 
 <!--
