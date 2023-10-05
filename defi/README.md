@@ -10,6 +10,14 @@ coverY: 0
 
 Ocean Protocol's open-source tools are useful in a variety of DeFi applications. Here we show you how to capitalize with Ocean Protocol tech in several ways using crypto trading!
 
+## Predictoor
+
+Whether creating data feeds for the daily price of BTC-USD on Binance, or the ice level in Antartica, Predictoor offers a tech stack for data scientists to earn rewards from future predictions.
+
+A tech stack that empowers traders and analysts to improve the performance of their algorithmic models when making valuable decisions.
+
+Read more about [Predictoor here](../predictoor/README.md) and start earning today.
+
 ## Data Farming - Challenge DF 📈
 
 Data Farming offers a weekly rewards via [Challenge DF](../rewards/df-challengedf.md), a challenge where users predict the price of Ethereum and win prizes 💰 based on accuracy.

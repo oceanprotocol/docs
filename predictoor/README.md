@@ -16,6 +16,8 @@ Alas, accurate predictions are *hard*. Worse, typical prediction feeds have no a
 **Accountable Predictions** - Imagine if there was accountability. Accuracy would go up; the farmer would be stuck less. Imagine accountable prediction feeds for not only for rain, but also wind, sea temperature, road congestion, train delays, ETH prices, NVID prices, housing prices, and more. **Imagine tens of thousands of prediction feeds with accountable accuracy.** Imagine them **globally distributed**, and censorship resistant. Imagine **accuracy improving with time**. 
 
 ## Introduction
+Ocean Predictoor is a stack and a dapp for prediction feeds. It has accountability for accuracy, via staking. It’s globally distributed and censorship-resistant, by being on-chain. We expect its accuracy to improve over time, due to its incentive structure. Its first use case is DeFi token prediction because users can close the data value-creation loop quickly to make tangible \$.  
+
 Predictoor is composed of different actors, often referred to as: predictoors and traders. You will learn in the [Introduction To Predictoor](#introduction) a lot more about these actors, how they are structured in the system, and their behaviors. By the time you've completed reading this, you'll know what Epochs are, and have a better understand of what "t+1" means.
 
 ## Architecture
