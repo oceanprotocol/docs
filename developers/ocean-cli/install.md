@@ -37,7 +37,7 @@ To successfully configure the CLI tool, two essential steps must be undertaken: 
 
 ### Private Key Configuration
 
-The CLI tool necessitates the configuration of the account's private key. This private key serves as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool.
+The CLI tool requires the configuration of the account's private key. This private key serves as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool.
 
 ```bash
 export MNEMONIC="XXXX"
