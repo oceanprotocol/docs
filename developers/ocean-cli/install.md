@@ -7,7 +7,7 @@ To get started with the Ocean CLI, follow these steps for a seamless setup:
 Begin by cloning the repository. You can achieve this by executing the following command in your terminal:
 
 ```bash
-$ git clone https://github.com/oceanprotocol/ocean.js-cli.git
+$ git clone https://github.com/oceanprotocol/ocean-cli.git
 ```
 
 Cloning the repository will create a local copy on your machine, allowing you to access and work with its contents.
@@ -50,7 +50,7 @@ Additionally, it is imperative to specify the RPC endpoint that corresponds to t
 export RPC='XXXX'
 ```
 
-Furthermore, there are additional environment variables that can be configured to enhance the flexibility and customization of the environment. These variables include options such as the metadataCache URL and Provider URL, which can be specified if you prefer to utilize a custom deployment of Aquarius or Provider in contrast of the default settings. Moreover, you have the option to provide a custom address file path if you wish to use customized smart contracts or deployments for your specific use case. Remeber setting the next envariament variables is optional.
+Furthermore, there are additional environment variables that can be configured to enhance the flexibility and customization of the environment. These variables include options such as the metadataCache URL and Provider URL, which can be specified if you prefer to utilize a custom deployment of Aquarius or Provider in contrast to the default settings. Moreover, you have the option to provide a custom address file path if you wish to use customized smart contracts or deployments for your specific use case. Remember setting the next environment variables is optional.
 
 ```bash
 export AQUARIUS_URL='XXXX'
