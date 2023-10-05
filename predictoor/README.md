@@ -21,12 +21,12 @@ Ocean Predictoor is a stack and a dapp for prediction feeds. It has accountabili
 Predictoor is composed of different actors, often referred to as: predictoors and traders. You will learn in the [Introduction To Predictoor](#introduction) a lot more about these actors, how they are structured in the system, and their behaviors. By the time you've completed reading this, you'll know what Epochs are, and have a better understand of what "t+1" means.
 
 ## Architecture
-After obtaining a broad overview of the system and it's actors, you should be ready to dive into [The Architecture of Predictoor](#architecture) and the repository. You'll become more exposed to the key building blocks and pdr-backend, the integration component for Predictoors and Traders.
+After obtaining a broad overview of the system and it's actors, you should be ready to dive into [The Architecture of Predictoor](pdr-architecture.md) and the repository. You'll become more exposed to the key building blocks and pdr-backend, the integration component for Predictoors and Traders.
 
 We anticipate Predictoor to extend beyond DeFi to other verticals like climate and agriculture. Predictoor agents may evolve into AI DAOs with emergent swarm-like behavior. This is the future.
 
 ## Earning with Predictoor
-Predictoor serves two groups of actors: Predictoors, and Traders. In this section, we'll explore [How to Earn with Predictoor](#earning-with-predictoor) and describe how both of these groups can benefit from it. After you are done with this, you should know what steps you need to take next in order to start leveraging the system for your own benefit.
+Predictoor serves two groups of actors: Predictoors, and Traders. In this section, we'll explore [How to Earn with Predictoor](pdr-earn.md) and describe how both of these groups can benefit from it. After you are done with this, you should know what steps you need to take next in order to start leveraging the system for your own benefit.
 
 We'll also provide some links and exercise to make this easier for you.
 
