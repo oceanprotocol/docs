@@ -18,7 +18,7 @@ Alas, accurate predictions are *hard*. Worse, typical prediction feeds have no a
 ## Introduction
 Ocean Predictoor is a stack and a dapp for prediction feeds. It has accountability for accuracy, via staking. It’s globally distributed and censorship-resistant, by being on-chain. We expect its accuracy to improve over time, due to its incentive structure. Its first use case is DeFi token prediction because users can close the data value-creation loop quickly to make tangible \$.  
 
-Predictoor is composed of different actors, often referred to as: predictoors and traders. You will learn in the [Introduction To Predictoor](#introduction) a lot more about these actors, how they are structured in the system, and their behaviors. By the time you've completed reading this, you'll know what Epochs are, and have a better understand of what "t+1" means.
+Predictoor is composed of different actors, often referred to as: predictoors and traders. You will learn in the [Predictoor Introduction](pdr-intro.md) page, you will out more about these actors, how they are structured in the system, and their behaviors. By the time you've completed reading this, you'll know what Epochs are, and have a better understand of what "t+1" means.
 
 ## Architecture
 After obtaining a broad overview of the system and it's actors, you should be ready to dive into [The Architecture of Predictoor](pdr-architecture.md) and the repository. You'll become more exposed to the key building blocks and pdr-backend, the integration component for Predictoors and Traders.
@@ -31,7 +31,7 @@ Predictoor serves two groups of actors: Predictoors, and Traders. In this sectio
 We'll also provide some links and exercise to make this easier for you.
 
 ## Predictoor Parameters and Roadmap
-[Predictoor Parameters](#predictoor-parameters) will provide such as incentives, feed costs, deployed feeds, and details about it's possible future.
+[Predictoor Parameters](pdr-parameters.md) will provide such as incentives, feed costs, deployed feeds, and details about it's possible future.
 
 ## Connect with Us
 If you want to talk to other Predictoors, Traders, and contributors to this ecosystem, [Join us on Discord](https://discord.gg/TnXjkR5).
