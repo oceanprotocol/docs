@@ -21,7 +21,7 @@ Ocean Predictoor is a stack and a dapp for prediction feeds. It has accountabili
 Predictoor is composed of different actors, often referred to as: predictoors and traders. You will learn in the [Predictoor Introduction](pdr-intro.md) page, you will out more about these actors, how they are structured in the system, and their behaviors. By the time you've completed reading this, you'll know what Epochs are, and have a better understand of what "t+1" means.
 
 ## Architecture
-After obtaining a broad overview of the system and it's actors, you should be ready to dive into [The Architecture of Predictoor](pdr-architecture.md) and the repository. You'll become more exposed to the key building blocks and pdr-backend, the integration component for Predictoors and Traders.
+After obtaining a broad overview of the system and its actors, you should be ready to dive into [The Architecture of Predictoor](pdr-architecture.md) and the [pdr-backend repo](https://github.com/oceanprotocol/pdr-backend). You'll become more exposed to the key building blocks and pdr-backend, the integration component for Predictoors and Traders.
 
 We anticipate Predictoor to extend beyond DeFi to other verticals like climate and agriculture. Predictoor agents may evolve into AI DAOs with emergent swarm-like behavior. This is the future.
 
@@ -31,7 +31,7 @@ Predictoor serves two groups of actors: Predictoors, and Traders. In this sectio
 We'll also provide some links and exercise to make this easier for you.
 
 ## Predictoor Parameters and Roadmap
-[Predictoor Parameters](pdr-parameters.md) will provide such as incentives, feed costs, deployed feeds, and details about it's possible future.
+[Predictoor Parameters](pdr-parameters.md) will provide such as incentives, feed costs, deployed feeds, and details about its possible future.
 
 ## Connect with Us
 If you want to talk to other Predictoors, Traders, and contributors to this ecosystem, [Join us on Discord](https://discord.gg/TnXjkR5).
