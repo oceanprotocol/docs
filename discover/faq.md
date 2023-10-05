@@ -645,7 +645,7 @@ You bet we have. [Here](https://docs.oceanprotocol.com/user-guides/asset-hosting
 
 You can find a list of past data challenges on our [website](https://oceanprotocol.com/challenges). 
 Accessing the submitted solutions is currently a work in progress, with one solution already available for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge.
-  
+(imo, this question should be removed as the question "What are the potential consequences of the data challenges and the value of the algorithms? How do you plan to use the submitted results?" in the 653 line covers this)  
 </details>
 
 <details>
@@ -662,7 +662,7 @@ That's one of the objectives: to cultivate exceptional, valuable algorithms and 
 
 Soon 😉 Right now we have one for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge. The others are work-in-progress.
 
-
+((imo, this question should be removed as the question "What are the potential consequences of the data challenges and the value of the algorithms? How do you plan to use the submitted results?" in the 653 line covers this)
 </details>
 
 ### Data Selling
@@ -688,7 +688,7 @@ Yes. Marketplace operators benefit from earning commissions on marketplace trans
 <summary>Why Publish?</summary>
 
 Publishing data, algorithms, and other digital assets and services on an Ocean-powered marketplace offers numerous opportunities to earn on the future revenue streams connected to that data as well as build a lucrative ecosystem that adds value to the published asset. It also allows for the discovery and insights into new use cases and applications of the published asset.
-
+( this question is really overpopulating the faq page and should be removed)
 </details>
 
 <details>
@@ -696,7 +696,7 @@ Publishing data, algorithms, and other digital assets and services on an Ocean-p
 <summary>What about the price fluctuation of Ocean?</summary>
 
 Price fluctuation is mitigated through the use of the Ocean backed stable coin H2O.
-
+(again, this question is irrelevant and i think we should not highlight or mention price related questions in the faq page or wherever in the docs)
 </details>
 
 <details>
@@ -704,7 +704,7 @@ Price fluctuation is mitigated through the use of the Ocean backed stable coin H
 <summary>Who pays for gas fees?</summary>
 
 Gas fees for marketplace transactions are paid by the user initiating the transaction (for publishing, consuming, etc).
-
+(this is common web3 knowledge and the question is also not related to OP. Hence, should be removed)
 </details>
 
 <details>
@@ -712,7 +712,7 @@ Gas fees for marketplace transactions are paid by the user initiating the transa
 <summary>Where do the docker containers run?</summary>
 
 Dockers containers can run anywhere. Ocean Market uses a docker run by the Ocean Protocol Foundation OPF); limit: 1 CPU limit / 60 seconds max. NOTE: This means OPF technically has access to data. In the case of a forked Ocean-powered marketplace, the owner of the marketplace must set up a computation environment. If individual users of the marketplace are concerned with security they should be prepared to host both the data and provide compute-to-data services on-premise.
-
+(this can be included in the docs and can be removed from here as well)
 </details>
 
 <details>
@@ -720,7 +720,7 @@ Dockers containers can run anywhere. Ocean Market uses a docker run by the Ocean
 <summary>Who pays for the computation?</summary>
 
 The marketplace owner.
-
+( again, this question seems unnecessary to be here and does not add any significant value)
 </details>
 
 <details>
@@ -728,7 +728,7 @@ The marketplace owner.
 <summary>What cryptocurrency do I need for transactions?</summary>
 
 The type of cryptocurrencies needed for transactions on the marketplace depends on which network(s) the marketplace is running (Ethereum, Polygon, EWT, BSC, Moonriver, etc.). Regardless of network, users will need to have Ocean tokens as well as the corresponding network token, which is used to pay for gas.
-
+(this is common web3 knowledge and the question should be removed from here as it is not directly related to OP )
 </details>
 
 <details>
@@ -752,7 +752,9 @@ Any type of data can be sold via Ocean Protocol. AI data, music data, image, vid
 <summary>What type of data can be sold via the Ocean Market? Can I sell an ebook through Ocean Protocol Market?</summary>
 
 Yes, any type of data can be sold via Ocean Protocol. Ai data, music, image, video, trading, tickets. Anything that is accessible online.
+(the above question "What kind of data can be sold on Ocean Protocol? Is it limited to trading, analysis, etc.?" in the 745 line covers this subject and this question should be removed)
 </details>
+
 
 
 ### Data Farming
@@ -999,7 +1001,7 @@ No. They cannot be traded, transferred, or sold. ⁣
 You can delegate veOCEAN to others in order to facilitate farming, however, you need to understand how this works. ⁣
 ⁣
 You can get the necessary info in the [docs](https://docs.oceanprotocol.com/user-guides/data-farming). ⁣
-
+(this is already in the docs and should be removed from here )
 </details>
 
 <details>
@@ -1013,7 +1015,7 @@ Absolutely, we've adopted a staking approach similar to veCRV, allowing you to l
 Feel free to explore these links for step-by-step guidance and insights into maximizing your staking rewards with veOCEAN.
 
 PS: We cannot offer guidance related to where to allocate your tokens, that's your decision. Your tokens, your curated assets.
-  
+  (again, this is explained in detail in the docs and does not need additional space in the FAQ page)
 </details>
 
 <details>
@@ -1023,7 +1025,7 @@ PS: We cannot offer guidance related to where to allocate your tokens, that's yo
 
 No, you can't convert your VeOcean to Ocean during the lock period. However, you have the opportunity to earn rewards (in $OCEAN) through active or passive staking. When the lock period concludes, you gain access to all your locked Ocean tokens. You can find additional information about OCEAN emissions [here](https://docs.oceanprotocol.com/veocean-data-farming/emissions-apys). 
 It's important to note that you won't lose Ocean tokens by locking them, and they won't be reduced at the end of the lock period. To learn more about VeOcean, check out this [resource](https://docs.oceanprotocol.com/rewards/df-veocean).
-  
+  (again, this is explained in detail in the docs and does not need additional space in the FAQ page)
 </details>
 
 <details>
@@ -1031,7 +1033,7 @@ It's important to note that you won't lose Ocean tokens by locking them, and the
 <summary>Is there a way to check the duration and amounts of veOCEAN locked on-chain for all wallets?</summary>
 
 Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our [documentation](https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
-  
+  (if this is already included in our docs, then imo we dont need to make a specific question out of it in the docs)
 </details>
 
 <details>
@@ -1047,7 +1049,7 @@ veOcean_balance = OCEAN_amount_locked * (your_unlock_timestamp — current_unix_
 ```
 
 To learn more about systems driving veOCEAN and Data Farming, please [visit our df-py github repository](https://github.com/oceanprotocol/df-py).
-
+(the very fist page of the veocean chapter in docs has the info to this question and i dont think it needs further explanation in the FAQ page ) 
 </details>
 
 <details>
@@ -1056,7 +1058,7 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 
 1. veOCEAN exists on the ETH mainnet only. 
 2. Data Farming Active Rewards has native multi-chain support.
-  
+  (again, it is just overpopulating and dont need further mentioning in the faq page)
 </details>
 
 
@@ -1065,7 +1067,7 @@ To learn more about systems driving veOCEAN and Data Farming, please [visit our 
 <summary>What's the amount of veOcean one can get for locking 1 Ocean token?</summary>
 
 1 veOCEAN if you lock for 4 years. Learn more about VeOCEAN [here](https://docs.oceanprotocol.com/rewards/df-veocean).
-  
+  (should be removed as it is already in the docs, we are redirecting the user "from the docs, to the docs" which doesn't make sense) 
 </details>
 
 <details>
