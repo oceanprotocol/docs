@@ -23,7 +23,7 @@ Predictoors can earn even more, via complementary actions:
 Every week there’s [150,000 total OCEAN rewards](../rewards/df-intro.md#reward-schedule) for Ocean Data Farming. This will increase in early 2024, and more yet later.
 
 {% hint style="warning" %}
-⚠️ You will lose money as a predictoor if your \$ out exceeds your \$ in. If you have low accuracy you’ll have your stake slashed a lot. Do account for gas fees, compute costs, and more. Everything you do is your responsibility, at your discretion. None of this blog is financial advice.
+You will lose money as a predictoor if your \$ out exceeds your \$ in. If you have low accuracy you’ll have your stake slashed a lot. Do account for gas fees, compute costs, and more. Everything you do is your responsibility, at your discretion. None of this blog is financial advice.
 {% endhint %}
 
 ## How to Earn as a Trader

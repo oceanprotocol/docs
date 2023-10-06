@@ -72,7 +72,7 @@ If the prediction is wrong, your staked amount on that prediction is going to be
 
 <summary>Is it possible to predict without using bots?</summary>
 
-Before we answer, please understand that to make decent money, it will take hundreds or thousands of submissions, guided by AI/ML models. So doing this manually would be tedious and error-prone. Therefore a bot is the most practical way. This is why OPF has made it easy to run a bot. Here are the Readme of both [predictoor](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md) and [Trader](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/trader.md).  
+Before we answer, please understand that to make decent money, it will take hundreds or thousands of submissions, guided by AI/ML models. So doing this manually would be tedious and error-prone. Therefore a bot is the most practical way. This is why OPF has made it easy to run a bot. Here are the Readme of both [Predictoor](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md) and [Trader](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/trader.md).  
 
 To the question "Is it possible to predict without a bot", the specific answer is "Yes". Here are the details
 - Somehow you need to submit an up/down prediction, with OCEAN stake, as a transaction to Sapphire chain. Here are the Possible ways to do such a transaction:
@@ -88,7 +88,7 @@ To the question "Is it possible to predict without a bot", the specific answer i
 
 <details>
 
-<summary> How can I trust the prediction? </summary>
+<summary>How can I trust individual predictions?</summary>
 
 The most important metric to assess confidence in a prediction is "how much OCEAN have people *staked* on this prediction", both up and down. It's how much they're willing to lose if they're wrong. This metric is not gameable because OCEAN has scarcity. It's "put your money where your mouth is".
 
@@ -122,10 +122,10 @@ Pricing is 3 OCEAN for one feed for 24 hours. It will be like that for the near-
 
 <details>
 
-<summary>How Is predictoor related to Data Farming?</summary>  
+<summary>How Is Predictoor related to Data Farming?</summary>  
 
 Starting Nov 9 via "Predictoor Data Farming", there will be 37000 OCEAN (about $10K) and several $K worth of ROSE allocated weekly to Predictoor DF. This will be used to purchase prediction feeds, alongside purchases by traders, etc. 80% of prediction feed sales goes to predictoors themselves.
-Learn more about predictoor [here](https://blog.oceanprotocol.com/meet-predictoor-accountable-accurate-prediction-feeds-8b104d26a5d9#048b)
+Learn more about Predictoor [here](https://blog.oceanprotocol.com/meet-predictoor-accountable-accurate-prediction-feeds-8b104d26a5d9#048b)
 
 </details>
 
