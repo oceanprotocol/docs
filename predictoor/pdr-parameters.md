@@ -11,10 +11,9 @@ Users need fake OCEAN & ROSE tokens. You can find the [Tutorial on How to Get to
 ## Mainnet Details
 As of Oct 10, 2023, Predictoor / Ocean contracts are deployed to [Oasis Sapphire mainnet](https://docs.oasis.io/dapp/sapphire/#mainnet).  
 
-Users need (real) OCEAN & ROSE tokens:  
-
-**OCEAN.** Staking & payment is in OCEAN. Users [acquire OCEAN via exchanges](https://oceanprotocol.com/about-us/ocean-token#get). Users bridge OCEAN tokens from ETH mainnet to Oasis Sapphire mainnet via [Celer](https://celer.network/).  
-**ROSE.** Gas fees are in ROSE. Users bridge tokens bridge from Oasis Emerald mainnet to Oasis Sapphire mainnet via Celer. [Read the details here](https://oasisprotocol.org/blog/celer-messaging-bridge-integration)
+Users need (real) OCEAN & ROSE tokens:
+**- OCEAN.** Staking & payment is in OCEAN. [How to get OCEAN on Sapphire](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/get-ocean-on-sapphire.md).
+**- ROSE.** Gas fees are in ROSE. [How to get ROSE on Sapphire](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/get-ocean-on-sapphire.md).
 
 ## Feeds Published
 For testnet, there are 10 feeds: X/USDT pair for each of the top-10 coins by market cap (ignoring stablecoins), 5m timescales, on Binance, >0% fees on Binance. Paid feeds. The coins are: X = BTC, ETH, BNB, XRP, ADA, DOGE, SOL, LTC, TRX, DOT
