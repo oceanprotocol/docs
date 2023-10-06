@@ -66,12 +66,12 @@ redirects:
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
     api-references/provider-rest-api: developers/provider/general-endpoints.md
-    user-guides/claim-ocean-rewards: rewards/user-guides/how-to-claim-ocean-rewards.md
+    user-guides/claim-ocean-rewards: rewards/user-guides/how-to-claim-rewards.md
     user-guides/get-started-df: rewards/user-guides/how-to-veocean.md
     user-guides/how-to-veocean: rewards/user-guides/how-to-veocean.md
-    user-guides/how-to-claim-rewards: rewards/user-guides/how-to-claim-ocean-rewards.md
-    user-guides/how-to-data-farm: rewards/user-guides/how-to-volume-df.md
-    user-guides/data-farming/how-to-volume-df: rewards/user-guides/how-to-volume-df.md
+    user-guides/how-to-claim-rewards: rewards/user-guides/how-to-claim-rewards.md
+    user-guides/how-to-data-farm: rewards/user-guides/how-to-volumedf.md
+    user-guides/data-farming/how-to-volume-df: rewards/user-guides/how-to-volumedf.md
     user-guides/data-farming/how-to-df-estimate-apy: rewards/user-guides/how-to-estimate-apy.md
     user-guides/data-farming/how-to-estimate-apy: rewards/user-guides/how-to-estimate-apy.md
     user-guides/data-farming/how-to-challengedf: rewards/user-guides/how-to-challengedf.md

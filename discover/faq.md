@@ -786,7 +786,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 <summary>How are datatokens created, and how does the creator make money?</summary>
 
-[Datatokens](../developers/contracts/datatokens) represent access rights to a specific dataset on the Ocean Protocol. Creators of datasets tokenize their data, creating these datatokens. Each datatoken is unique to a dataset.
+[Datatokens](../developers/contracts/datatokens.md) represent access rights to a specific dataset on the Ocean Protocol. Creators of datasets tokenize their data, creating these datatokens. Each datatoken is unique to a dataset.
 
 </details>
 
