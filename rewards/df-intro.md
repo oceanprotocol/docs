@@ -52,7 +52,7 @@ Rewards are paid in OCEAN to contributors actively working to improve Ocean Prot
 | --------------- | -------------- |
 | 5,000 OCEAN     | 70,000 OCEAN    |
 
-**November 2** will then change when Predictoor DF is launched:
+**November 9** will then change when Predictoor DF is launched:
 1. 1,000 OCEAN is paid out to Challenge DF.
 2. 37,000 OCEAN is paid out to Volume DF.
 3. 37,000 OCEAN is paid out to PredictoorDF.
