@@ -24,9 +24,9 @@ For both testnet and mainnet, there are 20 feeds:
 - Like above, but for 60m timescales
 
 ## Pricing
-The price to subscribe to one feed for 24 hours is 3.00 OCEAN. This includes all fees.  
+For each timescale, one feed is free: BTC/UTD on Binance.  Below is pricing for the remaining feeds.  
 
-Fee details:
+The price to subscribe to one feed for 24 hours is 3.00 OCEAN. This includes all fees. Fee details:
 - 0.1% community swap fee  
 - 20% fee to Ocean Protocol Foundation. (Will be used to further drive Predictoor, and to burn OCEAN.)  
 - For reference, price without fees is 2.49791840133 OCEAN. To calculate this: Let x = price without fees. Then x * (1 + 0.20 + 0.001) = 3.0 → x = 3.0 / (1 + 0.20 + 0.001) = 2.49791840133  
