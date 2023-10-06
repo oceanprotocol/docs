@@ -1,6 +1,6 @@
 ---
 description: >-
-    "We can only see a short distance ahead, but we can see plenty there that needs to be done." — Alan Turing
+    "It was never easy to look into the future, but it is possible and we should not miss our chance." — Andrei Linde
 ---
 
 # Predictoor Architecture
