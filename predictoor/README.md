@@ -31,7 +31,7 @@ Predictoor serves two groups of actors: Predictoors, and Traders. In this sectio
 We'll also provide some links and exercise to make this easier for you.
 
 ## Predictoor Parameters and Roadmap
-[Predictoor Parameters](pdr-parameters.md) will provide such as incentives, feed costs, deployed feeds, and details about its possible future.
+[Predictoor Parameters](pdr-parameters.md) will provide such as incentives, feed costs, and deployed feeds.
 
 ## Connect with Us
 If you want to talk to other Predictoors, Traders, and contributors to this ecosystem, [Join us on Discord](https://discord.gg/TnXjkR5).

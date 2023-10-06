@@ -38,19 +38,3 @@ The implementation is in templates/ERC20Template3.sol at at [Ocean’s contracts
 **- Ocean behavior.** Being part of Ocean, having 1.0 datatokens means you can access the underlying data asset for the duration of the subscription (once you’ve initiated the order). For Predictoor contracts this is 24h. Each datatoken contract has a parent Ocean data NFT with metadata, means to specify & collect fees, and more.  
 
 **- Predictoor behavior.** Each datatoken contract has additional methods specific to Predictoor: submitting predictions, submitting truevals, computing aggregated predictions, etc.
-
-## Testnet Details
-As of Sep 12, 2023, Predictoor / Ocean contracts are deployed to [Oasis Sapphire testnet](https://docs.oasis.io/dapp/sapphire/#testnet).
-
-Users need fake OCEAN & ROSE tokens. You can find the [Tutorial on How to Get tokens here](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md).
-
-**Fake OCEAN.** Staking & payment is in fake OCEAN. Users acquire it via a faucet.  
-**Fake ROSE.** Gas fees are in fake ROSE. Users acquire it via a faucet.  
-
-## Mainnet Details
-As of Oct 10, 2023, Predictoor / Ocean contracts are deployed to [Oasis Sapphire mainnet](https://docs.oasis.io/dapp/sapphire/#mainnet).  
-
-Users need (real) OCEAN & ROSE tokens:  
-
-**OCEAN.** Staking & payment is in OCEAN. Users [acquire OCEAN via exchanges](https://oceanprotocol.com/about-us/ocean-token#get). Users bridge OCEAN tokens from ETH mainnet to Oasis Sapphire mainnet via [Celer](https://celer.network/).  
-**ROSE.** Gas fees are in ROSE. Users bridge tokens bridge from Oasis Emerald mainnet to Oasis Sapphire mainnet via Celer. [Read the details here](https://oasisprotocol.org/blog/celer-messaging-bridge-integration)
