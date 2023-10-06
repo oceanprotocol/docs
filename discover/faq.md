@@ -624,7 +624,7 @@ The Ethereum network has the highest liquidity for $OCEAN.
 
 <summary>As Google Drive is not supported in the Ocean ecosystem, what are the alternative options for storing a file and then publishing it?</summary>
 
-Google Drive is an awesome product, but is designed for file sharing between a small group of users and is not properly working with our architecture. ⁣There are a bunch of other systems you can use that work smoothly with our stack. [Here](https://docs.oceanprotocol.com/developers/storage) are some alternatives.
+Google Drive is an awesome product, but is designed for file sharing between a small group of users and is not properly working with our architecture. ⁣There are a bunch of other systems you can use that work smoothly with our stack. [Here](../developers/storage) are some alternatives.
 
   
 </details>
@@ -633,7 +633,7 @@ Google Drive is an awesome product, but is designed for file sharing between a s
 
 <summary>Do you have a tutorial for using Arweave as storing solution for assets?</summary>
 
-You bet we have. [Here](https://docs.oceanprotocol.com/user-guides/asset-hosting/arweave) it is 😎
+You bet we have. [Here](../user-guides/asset-hosting/arweave) it is 😎
 
 </details>
 
@@ -787,7 +787,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 <summary>How are datatokens created, and how does the creator make money?</summary>
 
-[Datatokens](https://docs.oceanprotocol.com/developers/contracts/datatokens) represent access rights to a specific dataset on the Ocean Protocol. Creators of datasets tokenize their data, creating these datatokens. Each datatoken is unique to a dataset.
+[Datatokens](../developers/contracts/datatokens) represent access rights to a specific dataset on the Ocean Protocol. Creators of datasets tokenize their data, creating these datatokens. Each datatoken is unique to a dataset.
 
 </details>
 
@@ -795,7 +795,7 @@ Yes, from the get-go! It doesn’t matter how data is priced, this works for all
 
 <summary>Where can I find information about the number of datatokens created and track their progress?</summary>
 
-To access this data, some technical expertise is required. You can find this information at the subgraph level. In our documentation, we provide a few examples of how to retrieve this data using JavaScript. Feel free to give it a shot by visiting this [page](https://docs.oceanprotocol.com/developers/subgraph/list-datatokens). If it doesn't meet your requirements, don't hesitate to reach out to us on Discord.
+To access this data, some technical expertise is required. You can find this information at the subgraph level. In our documentation, we provide a few examples of how to retrieve this data using JavaScript. Feel free to give it a shot by visiting this [page](../developers/subgraph/list-datatokens). If it doesn't meet your requirements, don't hesitate to reach out to us on Discord.
 
 </details>
 
@@ -833,7 +833,7 @@ Production:
 
 <summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
 
-We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge) specific for this. Please double-check the addresses and make sure you are using the right smart contracts. ⁣
+We have a [tutorial](../discover/networks/bridges#binance-smart-chain-bsc-bridge) specific for this. Please double-check the addresses and make sure you are using the right smart contracts. ⁣
 
   
 </details>
@@ -844,7 +844,7 @@ We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#bi
 
 The OCEAN token address on the polygon network is [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/address/0x282d8efCe846A88B159800bd4130ad77443Fa1A1). 
 
-Yes, the tokens can be bridged. Please follow this [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
+Yes, the tokens can be bridged. Please follow this [tutorial](../discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
   
 </details>
 
@@ -853,7 +853,7 @@ Yes, the tokens can be bridged. Please follow this [tutorial](https://docs.ocean
 <summary>Is there any reading material available on how privacy works in compute-to-data through the use of containers/kube?</summary>
 
 
-I believe you'll find this [resource](https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-architecture) highly beneficial.
+I believe you'll find this [resource](../developers/compute-to-data/compute-to-data-architecture) highly beneficial.
   
 </details>
 
@@ -886,7 +886,7 @@ Ocean offers faucets for every test network where the smart contracts are deploy
 
 Each individual could publish their dataset themselves, to get a data NFT. From the data NFT, they can mint datatokens which are to access the data. They have sovereign control over this, as hold the keys to the data NFTs and datatokens, and have great flexibility in how to give others access. For example, they could send a datatoken to a DAO for the DAO can manage. Or they could grant datatoken-minting permissions to the DAO. The DAO could use this to assemble a dataset across 100 individuals. ⁣
 ⁣
-Learn more about Data NFTs on the [Docs](https://docs.oceanprotocol.com/developers/contracts/data-nfts).
+Learn more about Data NFTs on the [Docs](../developers/contracts/data-nfts).
 
   
 </details>

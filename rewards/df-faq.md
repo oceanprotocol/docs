@@ -331,6 +331,6 @@ You can find the statistics for the number of locked tokens [here](https://autob
 
 <summary>Is there a way to check the duration and amounts of veOCEAN locked on-chain for all wallets?</summary>
 
-Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our [documentation](https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
+Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example of how to get the list of holders [in our subgraph documentation](../developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
   
 </details>

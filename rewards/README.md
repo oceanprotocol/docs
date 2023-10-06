@@ -21,7 +21,8 @@ We have used battle-tested contracts that safeguard billions (veCRV). With this 
 [Farming 101](df-intro.md) introduces Data Farming, the various reward systems, how they work, and how to access them. By the end of the document, you should feel more familiar with Data Farming concepts and having a better idea of what subject you might want to learn about next.  
 
 ## User Guides
-If you are looking for step-by-step tutorials on how to access the Data Farming program and complete different actions, head over to the Data Farming [User Guides page](user-guides/README.md).  
+
+If you are looking for step-by-step tutorials on how to access the Data Farming program and complete different actions, head over to the [Data Farming User Guides page](user-guides/README.md).  
 
 ## veOCEAN
 
