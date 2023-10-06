@@ -19,9 +19,9 @@ Users need (real) OCEAN & ROSE tokens:
 ## Feeds Published
 For testnet, there are 10 feeds: X/USDT pair for each of the top-10 coins by market cap (ignoring stablecoins), 5m timescales, on Binance, >0% fees on Binance. Paid feeds. The coins are: X = BTC, ETH, BNB, XRP, ADA, DOGE, SOL, LTC, TRX, DOT
 
-For mainnet, tentatively, there will be 20 feeds:  
-- 10x at 5m timescales like above  
-- 10x at 60m timescales like above  
+For both testnet and mainnet, there are 20 feeds:
+- X/USDT pair for each of the top-10 coins by market cap (ignoring stablecoins), on Binance, 5m timescales, on Binance. The coins are: X = BTC, ETH, BNB, XRP, ADA, DOGE, SOL, LTC, TRX, DOT
+- Like above, but for 60m timescales
 
 ## Pricing
 The price to subscribe to one feed for 24 hours is 3.00 OCEAN. This includes all fees.  
