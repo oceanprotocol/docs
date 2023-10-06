@@ -30,8 +30,10 @@ Predictoor serves two groups of actors: Predictoors, and Traders. In this sectio
 
 We'll also provide some links and exercise to make this easier for you.
 
-## Predictoor Parameters and Roadmap
-[Predictoor Parameters](pdr-parameters.md) will provide such as incentives, feed costs, and deployed feeds.
+## Predictoor Parameters
+The [Predictoor Parameters page](pdr-parameters.md) will provide you with details on many topics such as incentives, feed costs, and deployed feeds.  
+
+You can find details about Oasis, Testnet, Mainnet, and how to bridge your OCEAN here.  
 
 ## Connect with Us
 If you want to talk to other Predictoors, Traders, and contributors to this ecosystem, [join us on Discord](https://discord.gg/TnXjkR5).
