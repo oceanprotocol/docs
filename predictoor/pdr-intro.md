@@ -53,8 +53,6 @@ The contract then makes agg_predval visible to its subscribers. The predicted va
 
 - **Actions by Traders.** Typically, traders exit their position immediately, exactly 5 minutes since they got the 5-minute-ahead prediction and acted*. If the prediction feed was accurate enough and trading fees & slippage weren't too high, then the trader makes money on average.
 
-*They might have also exited earlier if price spiked (“take profits” action) or price was crashing (“stop loss” action).
-
 - **Actions by Trueval agent; predictoors get paid.** The trueval agent is a process that grabs price feeds from e.g. Binance and submits it to chain, inside the smart contract*. The "submit" transaction also takes the opportunity to calculate each Predictoor's reward or slashing, and update their OCEAN holdings in the contract accordingly. (Funds aren't sent per se, they're made available via ERC20 "approve", for the predictoor to transfer at some later point). Predictoor 3 got his OCEAN slashed because he was wrong; predictoors 1 and 2 receive that as income, in addition to receiving income from prediction feed sales to traders. Predictoors can claim their balance anytime.
 
 *Submitting a “true” price value like this could also have been performed using a Chainlink setup (or otherwise). However we wanted to retain flexibility for feeds not currently on Chainlink, for now.
