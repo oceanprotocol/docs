@@ -18,7 +18,7 @@ You can start by playing with [predictoor.ai](https://, then click "run bots" an
 ### How is Predictoor different
 <details>
 
-<summary>How does Predictoor compare to prediction markets? Like Predictoor, they use \$ for accountability.</summary>
+<summary>How does Predictoor compare to prediction markets? Like Predictoor, they use $ for accountability.</summary>
 
 Prediction markets are for one-off predictions like “will Biden win in 2024?” whereas Predictoor-style prediction feeds are for a continuous stream of predictions.
 
