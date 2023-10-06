@@ -80,3 +80,4 @@ redirects:
     rewards/df-basic: rewards/df-guides.md
     rewards/veocean: rewards/df-veocean.md
     rewards/df-max-out-yield: rewards/df-volumedf.md
+    rewards/df-guides.md: rewards/user-guides/README.md
