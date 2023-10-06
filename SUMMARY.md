@@ -123,7 +123,7 @@
   - [C2D - Private Docker Registry](infrastructure/compute-to-data-docker-registry.md)
 - [🤑 DeFi](defi/README.md)
 * [👀 Predictoor](predictoor/README.md)
-  * [Learn about Predictoor](predictoor/pdr-intro.md)
+  * [Introduction](predictoor/pdr-intro.md)
   * [Architecture](predictoor/pdr-architecture.md)
   * [Parameters](predictoor/pdr-parameters.md)  
   * [How to Earn](predictoor/pdr-earn.md)  
