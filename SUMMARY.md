@@ -129,7 +129,7 @@
   * [Complete User Guides](rewards/df-guides.md)
   * [Emissions & APYs](rewards/df-emissions-apys.md)
   * [veOCEAN & DF FAQ](rewards/df-faq.md)
-  - [User Guides](rewards/user-guides/README.md)
+  - [📖 User Guides](rewards/user-guides/README.md)
     - [Earn Passive Rewards](rewards/user-guides/how-to-veocean.md)
     - [Estimate APYs](rewards/user-guides/how-to-estimate-apy.md)
     - [Claim Rewards](rewards/user-guides/how-to-claim-rewards.md)
