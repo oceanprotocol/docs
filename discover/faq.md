@@ -36,7 +36,7 @@ The protocol generates revenue through transaction fees, which are levied on all
 
 To get a glimpse of the revenue generated on the Polygon network, which is the most frequently used network, you can find detailed information [here](https://polygonscan.com/address/0x042BFbd88c3998282153088604207b2AeF045b43#tokentxns).
 
-To get a glimpse of the burned tokens , go to [etherscan](https://etherscan.io/token/0x967da4048cd07ab37855c090aaf366e4ce1b9f48?a=0x000000000000000000000000000000000000dead). As of September 2023, approximately 1.4 million tokens have been burned. ⁣
+To monitor burned tokens, visit [etherscan](https://etherscan.io/token/0x967da4048cd07ab37855c090aaf366e4ce1b9f48?a=0x000000000000000000000000000000000000dead). As of September 2023, approximately 1.4 million tokens have been burned. 🔥📈
 </details>
 
 <details>
@@ -57,6 +57,7 @@ This issue is similar to what any digital distribution platform faces. For insta
 <summary>Is Acentrik from Mercedes Benz built on top of Ocean?</summary>
 
 3rd party markets such as Gaia-X, BDP and Acentrik use Ocean components to power their marketplace. They will likely use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to plan set out [here](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9).
+
 </details>
 
 <details>
@@ -120,11 +121,11 @@ The Ethereum network has the highest liquidity for $OCEAN.
 
 <details>
 <summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
+
 All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
 
-3rd party markets such as Gaia-X, BDP, and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable, and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to the [plan](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9) set out.
-
 The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
+
 </details>
 
 <details>
@@ -144,11 +145,13 @@ A data marketplace allows providers to publish data and buyers to consume data. 
 
 <details>
 <summary>Is there a website or platform that tracks the consume volume of the Ocean market?</summary>
+
 Yes there is - the [Autobot](https://autobotocean.com/) one. 
 </details>
 
 <details>
 <summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
+
 The Ocean Market has consistently served as a showcase for the practical application of Ocean technology. Moreover, it has the potential to set a precedent for the development of other marketplaces within the Ocean ecosystem.
 
 However, it's important to note that participants using the Ocean stack are subject to transaction fees, which vary depending on the chosen token, either 0.1% or 0.2%. These fees serve the dual purpose of furthering the development of Ocean technology and facilitating the buy-and-burning of the Ocean token. 
@@ -159,6 +162,7 @@ However, it's important to note that participants using the Ocean stack are subj
 
 <details>
 <summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
+
 For partnerships, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
 One member of our team will reach out to you 🤝
 </details>
