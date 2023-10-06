@@ -96,26 +96,31 @@ Accessing the submitted solutions is currently a work in progress, with one solu
 
 <details>
 <summary>How does the $OCEAN token capture value?</summary>
+
 The $OCEAN token is used as the [glue](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9) for the Ocean ecosystem. A 0.1% or a 0.2% fee is applied to all transactions performed using Ocean components. This fee is used for further development of Ocean technology and for buy-and-burning of the Ocean token. 
 </details>
 
 <details>
 <summary>What is the circulating supply of Ocean token? What is the emission schedule for $OCEAN?</summary>
+
 All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4-year half-life.
 </details>
 
 <details>
 <summary>Can $OCEAN supply become deflationary?</summary>
+
 A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
 </details>
 
 <details>
 <summary>Does the OCEAN token also have governance functionality?</summary>
+
 During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently, there are no governance functions associated with the Ocean Token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
 </details>
 
 <details>
 <summary> Which blockchain network currently has the highest liquidity for Ocean?</summary>
+
 The Ethereum network has the highest liquidity for $OCEAN.  
 </details>
 
@@ -130,6 +135,7 @@ The ocean community fees are though dependant on the token used. There is a 0.1%
 
 <details>
 <summary>How does the ecosystem and the Ocean token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
+
 You are right, all Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace. But, there is a community fee involved in all transactions hapening in the ecosystem. 
 The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
 
@@ -140,6 +146,7 @@ veOCEAN on the other hand, follows the model of other ve tokens, where it can be
 
 <details>
 <summary>What is a decentralized data marketplace?</summary>
+
 A data marketplace allows providers to publish data and buyers to consume data. Unlike centralized data marketplaces, decentralized ones give users more control over their data, algorithms, and analytics by minimizing custodianship and providing transparent and immutable records of every transaction. With features such as Compute-to-Data (C2D), data and algorithms can be ingested into secure Docker containers where escapes are avoided, protecting both the data and algorithms.
 </details>
 
