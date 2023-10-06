@@ -4,9 +4,9 @@ description: How to use decentralized hosting for your NFT assets
 
 # Arweave
 
-### Using Arweave with DBS
+### Using Arweave with Uploader
 
-We recommend uploading your files to Arweave using Ocean Decentralized backend storage. You can see a guide on how to do that [here](./DBS.md)
+We recommend uploading your files to Arweave using Ocean Decentralized backend storage. You can see a guide on how to do that [here](./Uploader.md)
 ### Arweave
 
 [Arweave](https://www.arweave.org/) is a global, permanent, and decentralized data storage layer that allows you to store documents and applications forever. Arweave is different from other decentralized storage solutions in that there is only one up-front cost to upload each file.
