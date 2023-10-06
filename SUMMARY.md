@@ -110,6 +110,7 @@
     - [Encryption / Decryption](developers/provider/encryption-decryption.md)
     - [Compute Endpoints](developers/provider/compute-endpoints.md)
     - [Authentication Endpoints](developers/provider/authentication-endpoints.md)
+  - [Developer FAQ](developers/dev-faq.md)
 - [📊 Data Science](data-science/README.md)
   - [Data Value Creation Loop](data-science/the-data-value-creation-loop.md)
   - [What data is valuable?](data-science/data-engineers.md)
