@@ -73,6 +73,14 @@ You will get passive rewards by default when you lock tokens. On top of that, yo
 
 <details>
 
+<Summary>I locked my OCEAN for veOcean but can't see the rewards. What am I missing?</Summary>
+
+Please hang in there and stay patient, as it can take almost two weeks to receive your first reward. 😊
+  
+</details>
+
+<details>
+
 <summary>If I stake my Ocean for 6 months and the price of Ocean goes up during that time, will my staked tokens increase in value as well?</summary>
 
 Yes. When you lock Ocean tokens, you'll receive them back at the end of the lock-up period. If the value increases during this time, your Ocean tokens will appreciate in worth. The same principle applies in reverse if the value decreases
@@ -180,6 +188,16 @@ All rewards in Data Farming are paid out in $OCEAN and can be claimed at the eve
 
 <details>
 
+<summary>I locked 10k OCEAN but only received 0.1 OCEAN as a reward. What gives? </summary>
+
+If you've locked 10,000 OCEAN for a short period, it's possible to see a near-0% APY. 
+
+To boost your APY, consider locking your OCEAN for a more extended period. It's not only about the amount you lock but also **the duration of the lock that matters most**. Longer lock periods yield more significant results. You can find further insights in this [document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy).
+
+</details>
+
+<details>
+
 <summary>Could you explain the benefits of staking $OCEAN tokens and how the APY is calculated?</summary>
 
 Yes, You can find the details in these resources.⁣
@@ -209,9 +227,28 @@ Just, visit the Data Farming website and scroll down to the [Data Farming Histor
 
 <details>
 
+<summary>What assets are eligible for Data Farming?</summary>
+
+The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. You can find more details in the [DF Background page](../rewards/df-volumedf.md#assets-that-qualify-for-data-farming)
+
+</details>
+
+<details>
+
 <summary>Do I only receive Active Rewards from Volume DF if the datasets I staked on receive DCV?</summary>
 
 Yes, you will receive [Active Rewards from Volume DF](https://docs.oceanprotocol.com/rewards/df-intro#what-are-active-rewards) if the assets you've curated have Data consume Volume(DCV). ⁣
+
+</details>
+
+<details>
+
+<summary>Is there a dashboard to view the volume of DF-main?</summary>
+
+Yes
+
+[DF Dashboard](https://df.oceandao.org/datafarming) (per round).
+[Autobot](https://autobotocean.com/volumes) (historical).
 
 </details>
 
@@ -222,6 +259,14 @@ Yes, you will receive [Active Rewards from Volume DF](https://docs.oceanprotocol
 Curators can select datasets to stake on based on several factors such as publisher reputation, number of previous consumes of the dataset, ratings, and comments of others.
 
 We provide an overview into many of these stats inside the [Volume DF page](https://df.oceandao.org/volume-df) in the Data Farming dApp.
+
+</details>
+
+<details>
+
+<summary>The datatoken price may change throughout the week. What price is taken in the DCV calculation?</summary>
+
+The price is taken at the same time as each consume. E.g. if a data asset has three consumes, where the price was 1 OCEAN when the first consume happened, and the price was 10 OCEAN when the other consumes happened, then the total DCV for the asset is 1 + 10 + 10 = 21.
 
 </details>
 
@@ -266,6 +311,16 @@ They are deployed on the Ethereum mainnet, alongside other Ocean contract deploy
 
 <details>
 
+<summary>Can the reward function change during a given week?</summary>
+
+No. At the beginning of a new DF round (DF1, DF2, etc.), rules are laid out, either implicitly if no change from the previous round, or explicitly in a blog post if there are new rules. This is: reward function, bounds, etc. Then teams stake, buy data, consume, etc. LPs are given DF rewards based on staking, DCV, etc. at the end of the week. Overall cycle time is one week.
+
+Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is community consensus or a bug.
+
+</details>
+
+<details>
+
 <summary>What is the percentage of tokens currently staked?</summary>
 
 You can find the statistics for the number of locked tokens [here](https://autobotocean.com/veOcean). As of September 2023, there are approximately 700 million Ocean tokens in circulation, out of which approximately 30 million have been locked. ⁣
@@ -279,205 +334,3 @@ You can find the statistics for the number of locked tokens [here](https://autob
 Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example in our [documentation](https://docs.oceanprotocol.com/developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
   
 </details>
-
-<!--
-### Data Farming
-<details>
-
-<summary>Why both my passive and active rewards appear to be the same and why I can't see the APY for active rewards.</summary>
-
-Passive rewards are distributed relative to your % ownership of veOCEAN.
-
-Active rewards are distributed relative to your ability to curate assets that are driving revenue. If you are able to curate quality assets better than others, you are able to receive a larger % reward.
-Therfore, even though the total reward budgets are the same, the way you can earn rewards are not.
-
-APY for active rewards is ~0% at the moment as most assets are not driving sales.
-  
-</details>
-
-<details>
-
-<summary>As a passive APY, what should I expect to receive? I locked 8057 Ocean three epochs ago and received 3.30 OCEAN so far. </summary>
-
-That's a valid point, and we greatly value your feedback. We are continuously enhancing the Data Farming UI based on input like yours. 
-
-Here's how the frontend logic works: We round your APY to two decimal places. So, if you've locked 8,000 OCEAN for a short period, it's possible to see a near-0% APY. 
-
-To boost your APY, consider locking your OCEAN for a more extended period. It's not only about the amount you lock but also the duration of the lock that matters most. Longer lock periods yield more significant results. You can find further insights in this [document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy).
-  
-</details>
-
-<details>
-
-<summary>Is there a dashboard to view the volume of DF-main?</summary>
-
-Yes
-
-[DF Dashboard](https://df.oceandao.org/datafarming) (per round).
-[Autobot](https://autobotocean.com/volumes) (historical).
-
-</details>
-
-<details>
-
-<summary>Do we still receive rewards if there is no consume volume?</summary>
-
-Yes, you will still earn Passive Rewards. However, Active rewards need "Data Consume Volume". More info on the [docs](https://docs.oceanprotocol.com/user-guides/data-farming).
-
-</details>
-
-<details>
-
-<summary>What is the APY of data farming and is it rewarding to participate considering the high gas costs?</summary>
-
-The amount of rewards is highly dependent on the locking period. the longer you lock your tokens, the greater the rewards. You can use [this document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy) to estimate the amount you'll get.
-
-Likely because the sales were small and only 0.01% of sales volume is considered for rewards.
-
-This data and information are well documented on the [Farms](https://df.oceandao.org/datafarming) page.
-
-</details>
-
-<details>
-
-<summary>For data farming, will my stacked Ocean tokens be locked, or can I withdraw them anytime?</summary>
-
-Your locked amount cannot be withdrawn before the lock ends. Your rewards in return can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
-  
-</details>
-
-<details>
-
-<summary>Can I allocate my veOCEAN tokens for farming at any time, including now? </summary>
-
-Allocations happen instantly. ⁣
-⁣
-However, your allocation power is counted progressively throughout the week and requires you to leave it there for it to work. ⁣
-⁣
-Learn more by going through the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean). ⁣
-  
-</details>
-
-<details>
-
-<summary>Do we need to claim data farming rewards weekly? What happens when the lock period ends? Are rewards automatically claimed?</summary>
-
-They can be claimed/redeposited whenever you want. If you don't claim, they just stack up. There is no loss.
- 
-</details>
-
-<details>
-<summary>Are active rewards higher than passive rewards?  If I engage in active Data farming will I earn less passive rewards?</summary>
-
-Engaging in active data farming does not diminish your passive rewards. By default, you will receive your passive rewards, and in addition to that, you'll also earn active rewards on top.
-
-You have the flexibility to participate in every available reward stream.
-</details>
-
-<details>
-
-<summary>What is the Data Farming APY? Can you provide a tutorial for staking OCEAN and information on APY and locking time?</summary>
-
-Active rewards are dependent on data assets actually making sales for you to receive rewards. If you have veOCEAN allocated to a data asset that doesn't get consumed/has no demand, you do not receive rewards.
-
-[Tutorial](https://docs.oceanprotocol.com/veocean-data-farming/veocean-data-farming-tutorial)
-
-[Calculator](https://autobotocean.com/calculator)
-
-</details>
-
-<details>
-
-<summary>How to choose the right asset to allocate veOcean?</summary>
-
-Active stakers can select datasets to stake on based on several factors such as publisher reputation, number of previous consumes of the dataset, ratings and comments of others. ⁣
-
-
-</details>
-
-<details>
-
-<summary>What assets are eligible for Data Farming?</summary>
-
-The data asset may be of any type — dataset (for static URIs), algorithm for Compute-to-Data, or any other Datatoken token-gated system. The data asset may be fixed price or free price. You can find more details in the [DF Background page](../rewards/df-volumedf.md#assets-that-qualify-for-data-farming)
-
-</details>
-
-<details>
-
-<summary>When exactly does counting start and finish, for a given week?</summary>
-
-The counting starts at 00:00 am on Thursday UTC and ends at 11.59 pm UTC on the following Wednesday.
-
-</details>
-
-<details>
-
-<summary>The datatoken price may change throughout the week. What price is taken in the DCV calculation?</summary>
-
-The price is taken at the same time as each consume. E.g. if a data asset has three consumes, where the price was 1 OCEAN when the first consume happened, and the price was 10 OCEAN when the other consumes happened, then the total DCV for the asset is 1 + 10 + 10 = 21.
-
-</details>
-
-<details>
-
-<summary>Can the reward function change during a given week?</summary>
-
-No. At the beginning of a new DF round (DF1, DF2, etc.), rules are laid out, either implicitly if no change from the previous round, or explicitly in a blog post if there are new rules. This is: reward function, bounds, etc. Then teams stake, buy data, consume, etc. LPs are given DF rewards based on staking, DCV, etc. at the end of the week. Overall cycle time is one week.
-
-Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is community consensus or a bug.
-
-</details>
-
-<details>
-
-<summary>Is it possible to use the Ocean tech stack without involving the OCEAN token? If fees are paid in other currencies, are they swapped to OCEAN to some extent? How does this impact the passive revenues of veOCEAN?</summary>
-
-Ocean Market currently supports $OCEAN and $H2O for the exchange of services. Markets such as BDP and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible and indexable by Ocean Protocol, they are included in the data farming rewards program. If the marketplaces are closed and private, which cannot be indexed and tracked, then assets and activities are not part of the data farming program.
-  
-</details>
-
-<details>
-
-<summary>What is the use of Autobotocean.com?</summary>
-
-Autobotocean.com can be used to explore Ocean-related metrics like $OCEAN locked vs. time, data consume volume, and more.
-  
-</details>
-
-<details>
-
-<Summary>I locked my OCEAN for veOcean but can't see the rewards. What am I missing?</Summary>
-
-Please hang in there and stay patient, as it can take almost two weeks to receive your first reward. 😊
-  
-</details>
-
-<details>
-
-<summary>What is the APY of DF?</summary>
-
-You can use [this document](https://docs.oceanprotocol.com/user-guides/data-farming/how-to-estimate-apy) to estimate your APY.
-Please keep in mind that the algorithm offers higher incentives for longer lock periods. So, the longer you lock your assets, the greater your rewards will be. Once you go through our documentation, you'll have a better understanding of how it all works.
-
-
-</details>
-
-<details>
-
-<summary>How do the data farming rewards work? Can rewards be claimed monthly or automatically deposited?</summary>
-
-Data Farming serves as the fundamental incentive system within Ocean Protocol, offering diverse opportunities for participants to contribute to the protocol's growth and success. This system is divided into two rewarding streams:
-
-1. Passive Rewards
-2. Active Rewards
-By actively participating in our available programs, you can earn both passive and active rewards. Your total rewards will be a combination of these two substreams.
-
-The best part is that you have full control over claiming or redepositing your rewards at your convenience. Unclaimed rewards accumulate over time without any loss.
-
-It's important to note that your veOCEAN balance will gradually decrease once you receive it. This decline occurs linearly over time until it reaches the Lock End Date. For instance, when your lock time has reached the halfway point, you will possess 50% of your initial veOCEAN balance. Once your lock time concludes, your veOCEAN balance will reach zero, allowing you to withdraw your OCEAN tokens.
-
-Learn more in the [documentation](https://docs.oceanprotocol.com/rewards/df-veocean).
-
-</details>
--->
