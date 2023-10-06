@@ -42,6 +42,8 @@ These documents are a summary of many resources.
 - Core Repository `pdr-backend`: https://github.com/oceanprotocol/pdr-backend/
 - Frontend Repository `pdr-web`: https://github.com/oceanprotocol/pdr-web/
 
-## Slides
-- [[Ocean meetup](https://docs.google.com/presentation/d/1Yj14l-FRaMOgxXflHV0-sdHEdAFaAuB2MJNovQEtRFE/edit)][[pdf](https://github.com/trentmc/slides/blob/main/20230913-ocean-meetup-predictoor.pdf)]  
+## Presentations & Slides
+- [[Introducing Predictoor Dappcon 2023](https://www.youtube.com/live/ev76qrunCn4?si=a6dw_qCgw3F3070y&t=24393)]
 - [[Dappcon](https://docs.google.com/presentation/d/118tBnWNbzuq6vL1TITGq69RKPvHWbxVUZULp8KnfPyQ/edit#slide=id.g243aace1a9a_0_681)][[pdf](https://github.com/trentmc/slides/blob/main/20230912-dappcon-berlin-predictoor.pdf)]  
+- [[Ocean meetup](https://docs.google.com/presentation/d/1Yj14l-FRaMOgxXflHV0-sdHEdAFaAuB2MJNovQEtRFE/edit)][[pdf](https://github.com/trentmc/slides/blob/main/20230913-ocean-meetup-predictoor.pdf)]  
+
