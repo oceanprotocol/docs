@@ -128,7 +128,7 @@
   * [Parameters](predictoor/pdr-parameters.md)  
   * [How to Earn](predictoor/pdr-earn.md)  
   * [Predictoor FAQ](predictoor/pdr-faq.md)
-* [💰 Earn](rewards/README.md)
+* [💰 Data Farming Rewards](rewards/README.md)
   * [Data Farming 101](rewards/df-intro.md)
   * [veOCEAN](rewards/df-veocean.md)
   * [Curate with Volume DF](rewards/df-volumedf.md)
