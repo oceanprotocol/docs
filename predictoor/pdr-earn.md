@@ -6,13 +6,12 @@ If you have background in AI, ML, data science or statistics (and these overlap!
 <figure><img src="../.gitbook/assets/predictoor/progression_of_a_predictoor.png" alt=""></figure>
 
 Typical steps as a Predictoor:
-1. **Play with predictoor.ai.** Go to predictoor.ai to build intuition: observe the free feed, perhaps buy a few feeds, and watch them change over time.
+1. **Play with predictoor.ai.** Go to [predictoor.ai](https://predictoor.ai) to build intuition: observe the free feed, perhaps buy a few feeds, and watch them change over time.
 1. **Do Challenge DF: one-off predictions.** Then, practice making accurate AI/ML based predictions via Challenge Data Farming. Submissions are due Wednesdays at midnight, for ETH price predictions 5 min, 10 min, …, 60 min ahead. Every week, 5000 OCEAN prize money is distributed to the three lowest-error submissions.
 1. **Run a predictoor bot: continuous predictions.** Follow the steps in the Predictoor README. You’ll start by deploying a bot locally that submits a random prediction every 5 minutes. Then you’ll add AI/ML model predictions. Then you’ll do it on a remote testnet staking fake OCEAN. Finally, you’ll do it on mainnet staking real OCEAN.
 1. **Optimize the bot.** Improve model prediction accuracy via more data and better algorithms. Extend to predict >1 prediction feeds (Predictoor has many). Wash, rinse, repeat.  
 
 The actions as a predictoor give the following ways to earn:  
-
 * **Feed sales.** At an epoch, sales revenue (minus fees) for that epoch goes to predictoors. It’s distributed pro-rata by stake among the predictoors who predicted the true value correctly. The revenue for an epoch is the fraction of sales, spread uniformly across subscription length. A price of 3 OCEAN, 5m epochs, and 24h (1440m) subscriptions gives a revenue of (# subscribers) * (3 OCEAN) * / (1440m / 5m).
 * **Stake reshuffling.** At an epoch, incorrect predictoors have their stake slashed. This slashed stake is distributed to the correct predictoors pro-rata on their stake.
 * **Predictoor DF.** The third phase of Predictoor rollout will have an incentives program that amounts to additional earning for predictoors. 37,000 OCEAN/week rewards.
