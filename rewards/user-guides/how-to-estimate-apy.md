@@ -12,7 +12,7 @@ Rewards are earned by users that hold and use their veOCEAN to help the protocol
 
 To receive competitve short-term APYs, veOCEAN requires users to make long-term commitments.
 
-First, make sure that you [understand the basics of APY](../../rewards/df-veocean.md#veocean-and-your-apy) and how veOCEAN works.
+First, make sure that you [understand the basics of APY](../df-veocean.md#veocean-and-your-apy) and how veOCEAN works.
 
 Now that we got that out of the way, let's work through the examples and keep it as simple as possible.
 
@@ -36,6 +36,6 @@ To help solve this challenge, [we built a dashboard](https://df.oceandao.org/vol
 
 <figure><img src="../../.gitbook/assets/rewards/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
-You can also [learn how rewards are calculated](../../rewards/df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
+You can also [learn how rewards are calculated](../df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
 
 Finally, you can [review the implementation inside df-web](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how the APYs on the UI are calculated.

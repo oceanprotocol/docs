@@ -6,23 +6,26 @@ coverY: 0
 
 ## What is Data Farming?
 
-Data Farming is Ocean Protocol's core incentive program that rewards participants to onboard the protocol and create value by using tools that help grow it further.
+Data Farming is Ocean Protocol's core incentive program that rewards participants to onboard the protocol and create value by using tools that help grow it further.  
 
-Data Farming participants earn OCEAN rewards across 2 main streams **Passive Rewards** and **Active Rewards**. Participants are able to **receive rewards passively, actively, or both** by engaging in a variety of activities.
+Data Farming participants earn OCEAN rewards across 2 main streams **Passive Rewards** and **Active Rewards**. Participants are able to **receive rewards passively, actively, or both** by engaging in a variety of activities.  
 
-Passive Rewards provides a way for all contributors to participate.
+Passive Rewards provides a way for all contributors to participate.  
 
-Active Rewards focuses on incentivizing the curation and publishing of high-quality data assets and DataNFTs within the Ocean Ecosystem. 
+Active Rewards focuses on incentivizing the curation and publishing of high-quality data assets and DataNFTs within the Ocean Ecosystem.  
 
-We have used battle-tested contracts that safeguard billions (veCRV). With this model there is no liquidity risk. You can’t lose your OCEAN through Impermanent-Loss (IL). It is merely locked.
+We have used battle-tested contracts that safeguard billions (veCRV). With this model there is no liquidity risk. You can’t lose your OCEAN through Impermanent-Loss (IL). It is merely locked.  
 
 ## Introduction
 
-[Farming 101](df-intro.md) introduces Data Farming, the various reward systems, how they work, and how to access them. By the end of the document, you should feel more familiar with Data Farming concepts and having a better idea of what subject you might want to learn about next.
+[Farming 101](df-intro.md) introduces Data Farming, the various reward systems, how they work, and how to access them. By the end of the document, you should feel more familiar with Data Farming concepts and having a better idea of what subject you might want to learn about next.  
+
+## User Guides
+If you are looking for step-by-step tutorials on how to access the Data Farming program and complete different actions, head over to the Data Farming [User Guides page](user-guides/README.md).  
 
 ## veOCEAN
 
-Learning about [veOCEAN](df-veocean.md) will help you answer the question "What is the purpose of veOCEAN?" and give insights on how veOCEAN (vote-escrowed OCEAN) is used inside of Ocean Protocol to help advance the protocol.
+Learning about [veOCEAN](df-veocean.md) will help you answer the question "What is the purpose of veOCEAN?" and give insights on how veOCEAN (vote-escrowed OCEAN) is used inside of Ocean Protocol to help advance the protocol.  
 
 It may help for you to review the user guide on [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) to get a better idea for how long you'll want to lock your funds.  
 
