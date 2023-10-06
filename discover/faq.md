@@ -49,6 +49,7 @@ There are a wide host of technical, business, and cultural barriers to overcome 
 <summary>How does Ocean Protocol enforce penalties if data is shared without permission?</summary>
 
 Determining whether someone has downloaded your data and is reselling it is quite challenging. While they are bound by a contract not to do so, it's practically impossible to monitor their actions. If you want to maintain the privacy of your dataset, you can explore the option of using compute-to-data(C2D). Via C2D your data remains private and people can only run algorithms(that you approve of) to extract intelligence. 
+
 This issue is similar to what any digital distribution platform faces. For instance, can Netflix prevent individuals from downloading and redistributing their content? Not entirely. They invest significant resources in security, but ultimately, complete prevention is extremely difficult. They mainly focus on making it more challenging for such activities to occur.
 </details>
 
@@ -76,6 +77,7 @@ Yes. Ocean Protocol understands that some data is too sensitive to be shared —
 <summary>To what extent is Ocean becoming fully decentralized?</summary>
 
 To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
+
 1. Details about the [Ocean Token](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db).
 2. Details about the [Core Stack](https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce⁣).
 3. Details about [Data Farming](https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360⁣).
@@ -119,7 +121,9 @@ The Ethereum network has the highest liquidity for $OCEAN.
 <details>
 <summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
 All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
+
 3rd party markets such as Gaia-X, BDP, and Acentrik may use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable, and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to the [plan](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9) set out.
+
 The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
 </details>
 
@@ -127,6 +131,7 @@ The ocean community fees are though dependant on the token used. There is a 0.1%
 <summary>How does the ecosystem and the Ocean token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
 You are right, all Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace. But, there is a community fee involved in all transactions hapening in the ecosystem. 
 The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
+
 veOCEAN on the other hand, follows the model of other ve tokens, where it can be used for passive and active staking. By locking up your $OCEAN to veOCEAN, you automatically receive passive staking rewards. You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy (psdnOCEAN), who deploy your veOCEAN at no risk, in order to gain a share of active rewards. Active rewards are based on transaction volume on specific data assets.
 </details>
 
@@ -145,6 +150,7 @@ Yes there is - the [Autobot](https://autobotocean.com/) one.
 <details>
 <summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
 The Ocean Market has consistently served as a showcase for the practical application of Ocean technology. Moreover, it has the potential to set a precedent for the development of other marketplaces within the Ocean ecosystem.
+
 However, it's important to note that participants using the Ocean stack are subject to transaction fees, which vary depending on the chosen token, either 0.1% or 0.2%. These fees serve the dual purpose of furthering the development of Ocean technology and facilitating the buy-and-burning of the Ocean token. 
 </details>
 
