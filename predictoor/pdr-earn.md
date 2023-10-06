@@ -7,8 +7,8 @@ If you have background in AI, ML, data science or statistics (and these overlap!
 
 Typical steps as a Predictoor:
 1. **Play with predictoor.ai.** Go to [predictoor.ai](https://predictoor.ai) to build intuition: observe the free feed, perhaps buy a few feeds, and watch them change over time.
-1. **Do Challenge DF: one-off predictions.** Then, practice making accurate AI/ML based predictions via Challenge Data Farming. Submissions are due Wednesdays at midnight, for ETH price predictions 5 min, 10 min, …, 60 min ahead. Every week, 5000 OCEAN prize money is distributed to the three lowest-error submissions.
-1. **Run a predictoor bot: continuous predictions.** Follow the steps in the Predictoor README. You’ll start by deploying a bot locally that submits a random prediction every 5 minutes. Then you’ll add AI/ML model predictions. Then you’ll do it on a remote testnet staking fake OCEAN. Finally, you’ll do it on mainnet staking real OCEAN.
+1. **Do Challenge DF: one-off predictions.** Then, practice making accurate AI/ML based predictions via [Challenge Data Farming](https://df.oceandao.org/challenge-df). Submissions are due Wednesdays at midnight, for ETH price predictions 5 min, 10 min, …, 60 min ahead. Every week, 5000 OCEAN prize money is distributed to the three lowest-error submissions.
+1. **Run a predictoor bot: continuous predictions.** Follow the steps in the [Run a Predictoor Bot README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md). You’ll start by deploying a bot locally that submits a random prediction every 5 minutes. Then you’ll add AI/ML model predictions. Then you’ll do it on a remote testnet staking fake OCEAN. Finally, you’ll do it on mainnet staking real OCEAN.
 1. **Optimize the bot.** Improve model prediction accuracy via more data and better algorithms. Extend to predict >1 prediction feeds (Predictoor has many). Wash, rinse, repeat.  
 
 The actions as a predictoor give the following ways to earn:  
@@ -22,7 +22,9 @@ Predictoors can earn even more, via complementary actions:
 
 Every week there’s [150,000 total OCEAN rewards](../rewards/df-intro.md#reward-schedule) for Ocean Data Farming. This will increase in early 2024, and more yet later.
 
+{% hint style="warning" %}
 ⚠️ You will lose money as a predictoor if your \$ out exceeds your \$ in. If you have low accuracy you’ll have your stake slashed a lot. Do account for gas fees, compute costs, and more. Everything you do is your responsibility, at your discretion. None of this blog is financial advice.
+{% endhint %}
 
 ## How to Earn as a Trader
 
@@ -37,7 +39,7 @@ Typical steps as a Trader:
 
 The actions as a trader offer a single yet powerful way to earn: **trading revenue.** Buy low and sell high! (And the opposite with shorting)  
 
-Traders can earn even more via a complementary action: **Volume DF**. Lock veOCEAN for OCEAN, then point the veOCEAN to data assets with high DCV. Predictoor feeds are great candidates for high-DCV assets.  
+Traders can earn even more via a complementary action: **[Volume DF](../rewards/df-intro.md#what-are-active-rewards).**. Lock veOCEAN for OCEAN, then point the veOCEAN to data assets with high DCV. Predictoor feeds are great candidates for high-DCV assets.  
 
 ⚠️ You will lose money trading if your \$ out exceeds your \$ in. Do account for trading fees, order book slippage, cost of prediction feeds, and more. Everything you do is your responsibility, at your discretion. None of this blog is financial advice.  
 
@@ -58,9 +60,9 @@ Our next question was: _with these predictions, can we make \$ trading?_ Again, 
 
 Here we share some results of that research — a glimpse of how deep the rabbit hole goes — to inspire would-be predictoors and traders in their own work. The model was trained on data from January 1, 2021 to June 30, 2023, with simulated results the first 24 days of July 2023. A “baseline” trading strategy was used:
 
-The image below shows simulated returns as a function of order size, for BTC/TUSD on Binance. Duration = 7000 ticks x 5m/tick = 24.3 days of trading. It simulates spread effects. It assumes 0% fees. Note how the size of the order affects the return. This is because BTC/TUSD is not very liquid; therefore larger amounts cause slippage.
+The image below shows simulated returns as a function of order size, for BTC/USDT on Binance. Duration = 7000 ticks x 5m/tick = 24.3 days of trading. It simulates spread effects. It assumes 0% fees. Note how the size of the order affects the return. This is because BTC/USDT is not very liquid; therefore larger amounts cause slippage.
 
-Simulated returns vs time of BTC/TUSD trading on Binance. Trade size has an impact.
-The image below has the same experimental setup, but for BTC/USDT pair. The size of the order does not affect the return, because BTC/USDT is more liquid than BTC/TUSD.
+Simulated returns vs time of BTC/USDT trading on Binance. Trade size has an impact.
+The image below has the same experimental setup, but for BTC/USDT pair. The size of the order does not affect the return, because BTC/USDT is more liquid than BTC/USDT.
 
 <figure><img src="../.gitbook/assets/predictoor/simulated_returns_btc_usdt.png" alt=""><figcaption>Simulated returns vs time of BTC/USDT trading on Binance. Trade size has little impact.</figcaption></figure>
