@@ -61,6 +61,7 @@ redirects:
     veocean-data-farming/df-background: rewards/df-volumedf.md
     veocean-data-farming/emissions-apys: rewards/df-emissions-apys.md
     veocean-data-farming/delegation: rewards/README.md
+    veocean-data-farming/veocean-data-farming-tutorial: rewards/user-guides/how-to-veocean.md
     rewards/veOcean-Data-Farming-Tutorial: rewards/user-guides/how-to-veocean.md
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md

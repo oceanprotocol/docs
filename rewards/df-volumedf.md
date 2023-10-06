@@ -46,7 +46,7 @@ The Data Farming dApp [Delegate Page](https://df.oceandao.org/delegate) lets you
 
 Whatever your scenario, there may be some risk to delegating because the rewards generated will be sent to the person you delegated to. **It's their responsibility to return those rewards back to you if that's the agreement you both made.**
 
-The guide on [how to Delegate](../user-guides/data-farming/how-to-delegate.md) shows how to provide another wallet with 100% of your allocation power.
+The guide on [how to Delegate](user-guides/how-to-delegate.md) shows how to provide another wallet with 100% of your allocation power.
 
 ### What are Publisher Rewards?
 

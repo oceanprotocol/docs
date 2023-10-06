@@ -43,7 +43,7 @@ For the full details on how to submit, please read the [Where to start](#where-t
 
 Head over to the [Challenges Page](https://df.oceandao.org/challenge-df) to learn more about Challenge DF, see historical results, and find out where you go to submit.
 
-If you're looking for a step-by-step guide on what a challenge entails and how to claiming your well-deserved rewards, check out the [Challenge DF  user guide](../user-guides/data-farming/how-to-challengedf.md). It will provide you with all the necessary information you need to make the most out of the challenges.
+If you're looking for a step-by-step guide on what a challenge entails and how to claiming your well-deserved rewards, check out the [Challenge DF  user guide](user-guides/how-to-challengedf.md). It will provide you with all the necessary information you need to make the most out of the challenges.
 
 You can find a direct link to the [Challenge DF README](https://github.com/oceanprotocol/predict-eth/blob/main/challenges/challenge-df.md) which you'll be using to submit your predictions.
 

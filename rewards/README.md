@@ -27,7 +27,7 @@ If you are looking for step-by-step tutorials on how to access the Data Farming 
 
 Learning about [veOCEAN](df-veocean.md) will help you answer the question "What is the purpose of veOCEAN?" and give insights on how veOCEAN (vote-escrowed OCEAN) is used inside of Ocean Protocol to help advance the protocol.  
 
-It may help for you to review the user guide on [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) to get a better idea for how long you'll want to lock your funds.  
+It may help for you to review the user guide on [how to estimate APY](user-guides/how-to-estimate-apy.md) to get a better idea for how long you'll want to lock your funds.  
 
 ### Passive Rewards
 
@@ -41,7 +41,7 @@ It is by-design, without the need for anyone to put in any significant effort. Y
 
 Passive Rewards offers a defined amount of rewards for each round that is divided amongst veOCEAN holders based on how much they hold.
 
-Once your tokens are locked up, you can then learn [how to claim rewards](../user-guides/data-farming/how-to-claim-rewards.md).
+Once your tokens are locked up, you can then learn [how to claim rewards](user-guides/how-to-claim-rewards.md).
 
 ### Active Rewards
 
@@ -61,13 +61,13 @@ If you have locked your OCEAN tokens in exchange for veOCEAN, this is the ideal 
 
 You can learn about [the design of Volume DF](df-volumedf.md) to learn about it's substreams. Here, curators earn rewards for curating datasets that are driving sales and helping Ocean Protocol achieve traction.
 
-Once you're familiar with the concepts there, you can then read the following user guide on [how to participate in Volume DF](../user-guides/data-farming/how-to-volumedf.md).
+Once you're familiar with the concepts there, you can then read the following user guide on [how to participate in Volume DF](user-guides/how-to-volumedf.md).
 
 ## Delegate Curation
 
 The [Delegation](df-volumedf.md#delegating-voting-power) docs will teach you about the concepts of delegating your veOCEAN allocation power to another wallet that will manage Volume DF for you.
 
-You can then use the [how to delegate](../user-guides/data-farming/how-to-delegate.md) user guide to follow the steps needed to successfully delegate.
+You can then use the [how to delegate](user-guides/how-to-delegate.md) user guide to follow the steps needed to successfully delegate.
 
 Please note, once delegated, rewards will be sent to the wallet address you delegated to. The delegation receiver is in charge of managing your Allocation Power and cut from the rewards. 
 
@@ -77,7 +77,7 @@ In this substream, Data Scientists can win competitions by participating in [Cha
 
 Challenge DF requires participants to submit predictions as close to the price of ETH as possible in order to be in the top 3 participants to win rewards.
 
-The user guide on [how to Challenge DF](../user-guides/data-farming/how-to-challengedf.md) will take you step-by-step through the process of submitting your algorithm into the competition.
+The user guide on [how to Challenge DF](user-guides/how-to-challengedf.md) will take you step-by-step through the process of submitting your algorithm into the competition.
 
 ## Further Reading
 
