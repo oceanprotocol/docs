@@ -624,16 +624,15 @@ The Ethereum network has the highest liquidity for $OCEAN.
 
 <summary>As Google Drive is not supported in the Ocean ecosystem, what are the alternative options for storing a file and then publishing it?</summary>
 
-Google Drive is an awesome product, but is designed for file sharing between a small group of users and is not properly working with our architecture. ⁣There are a bunch of other systems you can use that work smoothly with our stack. [Here](../developers/storage) are some alternatives.
+Google Drive is an awesome product, but is designed for file sharing between a small group of users and is not properly working with our architecture. ⁣There are a bunch of other systems you can use that work smoothly with our stack. [Here](../developers/storage.md) are some alternatives.
 
-  
 </details>
 
 <details>
 
 <summary>Do you have a tutorial for using Arweave as storing solution for assets?</summary>
 
-You bet we have. [Here](../user-guides/asset-hosting/arweave) it is 😎
+You bet we have. [Here](../user-guides/asset-hosting/arweave.md) it is 😎
 
 </details>
 
