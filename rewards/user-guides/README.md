@@ -47,3 +47,7 @@ If you are a data scientist and enjoy tackling challenging problems, this is the
 This opportunity allows you to explore the capabilities offered by Ocean Protocol to build algorithms, publish data assets, and to gain valuable exposure. As your models and skills improve, you can begin monetizing your work.
 
 For detailed instructions and information on how to get started, please refer to the [Challenge DF user guide](how-to-challengedf.md).
+
+### Not much of a reader? Watch and learn, friend
+
+{% embed url="https://youtu.be/zAQlPHkK3og" %}
