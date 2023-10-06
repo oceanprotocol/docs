@@ -72,16 +72,15 @@ If the prediction is wrong, your staked amount on that prediction is going to be
 
 <summary>Is it possible to predict without using bots?</summary>
 
-Before we answer, please understand that to make decent money, it will take hundreds or thousands of submissions, guided by AI/ML models. So doing this manually would be tedious and error-prone. Therefore a bot is the most practical way. This is why OPF has made it easy to run a bot. Here are the Readme of both [predictoor](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md) and [Trader](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/trader.md).
+Before we answer, please understand that to make decent money, it will take hundreds or thousands of submissions, guided by AI/ML models. So doing this manually would be tedious and error-prone. Therefore a bot is the most practical way. This is why OPF has made it easy to run a bot. Here are the Readme of both [predictoor](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md) and [Trader](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/trader.md).  
 
-To the question "Is it possible to predict without a bot", the specific answer is "Yes". Here are the details-
-- Somehow you need to submit an up/down prediction, with OCEAN stake, as a transaction to Sapphire chain. 
-  Here are the Possible ways to do such a transaction -
-  (a) OPF-supplied Python bot
-  (b) simple Python script
-  (c) Use "Write Contract" in [Sapphire blockchain explorer](https://explorer.sapphire.oasis.io)
-  (d) 3rd-party bot that decides to support this
-  (e) dapp that decides to support this
+To the question "Is it possible to predict without a bot", the specific answer is "Yes". Here are the details
+- Somehow you need to submit an up/down prediction, with OCEAN stake, as a transaction to Sapphire chain. Here are the Possible ways to do such a transaction:
+  - (a) OPF-supplied Python bot
+  - (b) simple Python script
+  - (c) Use "Write Contract" in [Sapphire blockchain explorer](https://explorer.sapphire.oasis.io)
+  - (d) 3rd-party bot that decides to support this
+  - (e) dapp that decides to support this
 
 </details>
 
@@ -103,7 +102,7 @@ That's up to Predictoors to figure out! Certainly, historical price information 
 
 </details>
 
-### Value Flows and Rewards
+### Price and Rewards
 
 <details>
 
@@ -115,18 +114,18 @@ Pricing is 3 OCEAN for one feed for 24 hours. It will be like that for the near-
 
 <details>
 
-<summary>How Is predictoor related to Data Farming?</summary>  
+<summary>How do Predictoors benefit from sales? Is there a burn mechanism?</summary>
 
-Yes, via "Predictoor Data Farming". Starting Nov 9, there will be 37000 OCEAN (about $10K) and several $K worth of ROSE allocated weekly to Predictoor DF. This will be used to purchase prediction feeds, alongside purchases by traders, etc. 80% of prediction feed sales goes to predictoors themselves.
-Learn more about predictoor [here](https://blog.oceanprotocol.com/meet-predictoor-accountable-accurate-prediction-feeds-8b104d26a5d9#048b)
+20% of prediction feed sales go to OPF. A portion of that is passed on to the Ocean community, including burning.
 
 </details>
 
 <details>
 
-<summary>Is there a burn mechanism in Predictoor?</summary>
+<summary>How Is predictoor related to Data Farming?</summary>  
 
-20% of prediction feed sales go to OPF. A portion of that is passed on to the Ocean community, including burning.
+Starting Nov 9 via "Predictoor Data Farming", there will be 37000 OCEAN (about $10K) and several $K worth of ROSE allocated weekly to Predictoor DF. This will be used to purchase prediction feeds, alongside purchases by traders, etc. 80% of prediction feed sales goes to predictoors themselves.
+Learn more about predictoor [here](https://blog.oceanprotocol.com/meet-predictoor-accountable-accurate-prediction-feeds-8b104d26a5d9#048b)
 
 </details>
 
