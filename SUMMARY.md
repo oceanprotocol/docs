@@ -135,7 +135,7 @@
   * [Predict with Challenge DF](rewards/df-challengedf.md)
   * [Complete User Guides](rewards/df-guides.md)
   * [Emissions & APYs](rewards/df-emissions-apys.md)
-  * [veOCEAN & Data Farming FAQ](rewards/df-faq.md)
+  * [veOCEAN & DF FAQ](rewards/df-faq.md)
 * [🤝 Contribute](contribute/README.md)
   * [Partners & Collaborators](contribute/projects-using-ocean.md)
   * [Contributor Code of Conduct](contribute/code-of-conduct.md)
