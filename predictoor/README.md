@@ -35,8 +35,8 @@ If you want to talk to other Predictoors, Traders, and contributors to this ecos
 
 ## Predictoor Resources
 - All blog posts: ["Ocean Predictoor Series"](https://blog.oceanprotocol.com/ocean-predictoor-series-6a9122754a4d)
-- Backend Repo `pdr-backend`: https://github.com/oceanprotocol/pdr-backend/
-- Frontend Repo `pdr-web`: https://github.com/oceanprotocol/pdr-web/
+- Backend Repo `pdr-backend`: [github.com/oceanprotocol/pdr-backend/](https://github.com/oceanprotocol/pdr-backend/)
+- Frontend Repo `pdr-web`: [github.com/oceanprotocol/pdr-web/](https://github.com/oceanprotocol/pdr-web/)
 - Videos
   - [[Introducing Predictoor Dappcon 2023](https://www.youtube.com/live/ev76qrunCn4?si=a6dw_qCgw3F3070y&t=24393)]
 - Slides
