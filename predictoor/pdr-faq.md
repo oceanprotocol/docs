@@ -6,7 +6,7 @@ description: Frequently Asked Questions about Predictoor
 ## Predictoor FAQ
 <details>
 
-<summary>How Predictoor compare to prediction markets? Like Predictoor, they use \$ for accountability.</summary>
+<summary>How does Predictoor compare to prediction markets? Like Predictoor, they use \$ for accountability.</summary>
 
 Prediction markets are for one-off predictions like “will Biden win in 2024?” whereas Predictoor-style prediction feeds are for a continuous stream of predictions.
 
@@ -14,7 +14,7 @@ Prediction markets are for one-off predictions like “will Biden win in 2024?�
 
 <details>
 
-<summary>How Predictoor compare to Chainlink? Like Predictoor, it has price feeds on-chain.</summary>
+<summary>How does Predictoor compare to Chainlink? Like Predictoor, it has price feeds on-chain.</summary>
 
 Chainlink provides current prices on-chain, and Predictoor makes predictions for prices in the future.
 
