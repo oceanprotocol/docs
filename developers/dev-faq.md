@@ -6,7 +6,7 @@ description: Commonly Asked Questions Regarding the Technical Aspects of the Oce
 
 Have some questions about the Ocean Protocol tech-stack?
 
-Hopefully, you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/TnXjkR5) - there are no stupid questions!
+Hopefully, you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/EdmenE7eTj) - there are no stupid questions!
 
 <details>
 <summary>The blockchain is public - does this mean that anyone can access my data?</summary>
