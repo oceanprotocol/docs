@@ -23,7 +23,7 @@ The template Predictoor bots, trader bots, trueval bot, and prediction feed publ
 Events emitted by contracts are indexed as Ocean subgraphs, to be consumed by predictoor.ai and the bots. The backend [subgraph README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/subgraph.md) has more info.
 
 ## Backend & Contract Details
-The section [Predictoor Structure](pdr-intro.md#predictoor-structure) presented much of the Predictoor architecture.  
+The section [Predictoor Structure](../predictoor/pdr-intro.md#predictoor-structure) presented much of the Predictoor architecture.  
 
 The image below adds detail around the backend (bottom 1/3 of diagram). Let’s discuss.
 
