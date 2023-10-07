@@ -47,7 +47,7 @@ You participate by default in Passive Rewards when you lock $OCEAN on Ethereum M
 
 Data assets for Volume DF may be published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
 
-You can find a list of [all supported chains here](networks/README.md).
+You can find a list of [all supported chains here](../discover/networks/README.md).
 
 </details>
 
