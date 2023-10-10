@@ -49,7 +49,7 @@ Main:
 - Run bots via [pdr-backend](https://github.com/oceanprotocol/pdr-backend) repo
 
 Intro:
-- _These_ docs are the best starting poingi to learn about Predictoor:)
+- _These_ docs are the best starting point to learn about Predictoor:)
 - Original blogpost "Meet Predictoor", Sep 12, 2023 [[Link](https://blog.oceanprotocol.com/meet-predictoor-accountable-accurate-prediction-feeds-8b104d26a5d9)]
 - Original talk "Introducing Prediction Feeds", Dappcon, Sep 12, 2023 [[Video](https://www.youtube.com/live/ev76qrunCn4?si=a6dw_qCgw3F3070y&t=24393)] [[GSlides](https://docs.google.com/presentation/d/118tBnWNbzuq6vL1TITGq69RKPvHWbxVUZULp8KnfPyQ/edit#slide=id.g243aace1a9a_0_681)] [[PDF](https://drive.google.com/drive/folders/1ekNmB1LcS81xfJ6ntZpzibi3PF6QFwFR)]
 
