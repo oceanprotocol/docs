@@ -66,7 +66,7 @@ Ocean.py follows the exact `id` name for the network's name from the default Bro
 
 #### 1.4 Networks Supported
 
-All [Ocean-deployed](https://docs.oceanprotocol.com/core-concepts/networks) chains (Eth mainnet, Polygon, etc) should be in Brownie's default `network-config.yaml` except Energy Web Chain (EWC).
+All [Ocean-deployed](../../discover/networks/README.md) chains (Eth mainnet, Polygon, etc) should be in Brownie's default `network-config.yaml` except Energy Web Chain (EWC).
 
 For Windows users: it's possible that your `network-config.yaml` doesn't have all the network entries. In this case, just replace your local file's content with the `network-config.yaml` in Brownie's GitHub repo, [here](https://github.com/eth-brownie/brownie/blob/master/brownie/data/network-config.yaml).
 
