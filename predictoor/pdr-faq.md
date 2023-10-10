@@ -15,49 +15,6 @@ You can start by playing with [predictoor.ai](https://predictoor.ai), then click
 
 </details>
 
-### How is Predictoor different
-<details>
-
-<summary>How does Predictoor compare to prediction markets? Like Predictoor, they use $ for accountability.</summary>
-
-Prediction markets are for one-off predictions like “will Biden win in 2024?” whereas Predictoor-style prediction feeds are for a continuous stream of predictions.
-
-</details>
-
-<details>
-
-<summary>How does Predictoor compare to Chainlink? Like Predictoor, it has price feeds on-chain.</summary>
-
-Chainlink provides current prices on-chain, and Predictoor makes predictions for prices in the future.
-
-</details>
-
-<details>
-
-<summary>How does Predictoor compare to Numerai? Like Predictoor, it crowd-sources predictions, related to trading.</summary>
-
-They are different:  
-- Numerai takes predictions, then aggregates them and uses them to trade directly. It operates as a hedge fund.  
-- Whereas Predictoor takes predictions, then aggregates them and sells the aggregate. It operates as data feeds.  
-
-Secondary differences:  
-- Numerai focus is tradfi trading, as a hedge fund.  
-- Whereas Predictoor is pure datafeeds, and applies to any vertical. Its first use case is defi trading.  
-- Currently Numerai is mostly centralized.  
-- Whereas Predictoor is decentralized. Predictoor tech may be useful to Numerai to help decentralize  
-
-</details>
-
-<details>
-
-<summary>How does Predictoor compare to Numerai Signals? People supplying to Numerai Signals don’t get paid out from trading (like the main Numerai product).</summary>
-
-In Numerai Signals, payout is a function of the submitter’s “originality” compared to other signals. These signals are used as inputs for prediction models in Numerai main product.  
-
-Whereas in Predictoor, payout is a function of the the accuracy of the submitter’s prediction, compared to the true value. These signals are predictions, directly.
-
-</details>
-
 ### For Predictoors
 
 <details>
@@ -129,6 +86,51 @@ Predictoor is its own dapp, stack, and set of feeds. In addition, the Ocean Data
 Starting Nov 9, 2023 via "Predictoor Data Farming", there is 37000 OCEAN (about $10K) and several $K worth of ROSE allocated weekly to Predictoor DF. This will be used to purchase prediction feeds, alongside purchases by traders, etc. 80% of prediction feed sales goes to predictoors themselves.
 
 </details>
+
+
+### How is Predictoor different
+<details>
+
+<summary>How does Predictoor compare to prediction markets? Like Predictoor, they use $ for accountability.</summary>
+
+Prediction markets are for one-off predictions like “will Biden win in 2024?” whereas Predictoor-style prediction feeds are for a continuous stream of predictions.
+
+</details>
+
+<details>
+
+<summary>How does Predictoor compare to Chainlink? Like Predictoor, it has price feeds on-chain.</summary>
+
+Chainlink provides current prices on-chain, and Predictoor makes predictions for prices in the future.
+
+</details>
+
+<details>
+
+<summary>How does Predictoor compare to Numerai? Like Predictoor, it crowd-sources predictions, related to trading.</summary>
+
+They are different:  
+- Numerai takes predictions, then aggregates them and uses them to trade directly. It operates as a hedge fund.  
+- Whereas Predictoor takes predictions, then aggregates them and sells the aggregate. It operates as data feeds.  
+
+Secondary differences:  
+- Numerai focus is tradfi trading, as a hedge fund.  
+- Whereas Predictoor is pure datafeeds, and applies to any vertical. Its first use case is defi trading.  
+- Currently Numerai is mostly centralized.  
+- Whereas Predictoor is decentralized. Predictoor tech may be useful to Numerai to help decentralize  
+
+</details>
+
+<details>
+
+<summary>How does Predictoor compare to Numerai Signals? People supplying to Numerai Signals don’t get paid out from trading (like the main Numerai product).</summary>
+
+In Numerai Signals, payout is a function of the submitter’s “originality” compared to other signals. These signals are used as inputs for prediction models in Numerai main product.  
+
+Whereas in Predictoor, payout is a function of the the accuracy of the submitter’s prediction, compared to the true value. These signals are predictions, directly.
+
+</details>
+
 
 ### Networks
 
