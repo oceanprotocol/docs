@@ -42,7 +42,7 @@ print(f"DATA_ddo did = '{DATA_ddo.did}'")
 ```
 {% endcode %}
 
-To customise the privacy and accessibility of your compute service, add the `compute_values` argument to `create_url_asset` to set values according to the [DDO specs](https://docs.oceanprotocol.com/core-concepts/did-ddo). The function assumes the documented defaults.
+To customise the privacy and accessibility of your compute service, add the `compute_values` argument to `create_url_asset` to set values according to the [DDO specs](/developers/identifiers.md). The function assumes the documented defaults.
 
 ### 2. Alice publishes an algorithm
 
