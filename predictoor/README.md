@@ -43,11 +43,17 @@ The [FAQ page](pdr-faq.md) has frequently asked questions about Predictoor.
 If you want to talk to other Predictoors, Traders, and contributors to this ecosystem, [join us on Discord](https://discord.gg/TnXjkR5).
 
 ## Predictoor Resources
-- All blog posts: ["Ocean Predictoor Series"](https://blog.oceanprotocol.com/ocean-predictoor-series-6a9122754a4d)
-- Backend Repo `pdr-backend`: [github.com/oceanprotocol/pdr-backend/](https://github.com/oceanprotocol/pdr-backend/)
-- Frontend Repo `pdr-web`: [github.com/oceanprotocol/pdr-web/](https://github.com/oceanprotocol/pdr-web/)
-- Videos
-  - [[Introducing Predictoor Dappcon 2023](https://www.youtube.com/live/ev76qrunCn4?si=a6dw_qCgw3F3070y&t=24393)]
-- Slides
-  - [[Ocean meetup](https://docs.google.com/presentation/d/1Yj14l-FRaMOgxXflHV0-sdHEdAFaAuB2MJNovQEtRFE/edit)][[pdf](https://github.com/trentmc/slides/blob/main/20230913-ocean-meetup-predictoor.pdf)]  
-  - [[Dappcon](https://docs.google.com/presentation/d/118tBnWNbzuq6vL1TITGq69RKPvHWbxVUZULp8KnfPyQ/edit#slide=id.g243aace1a9a_0_681)][[pdf](https://github.com/trentmc/slides/blob/main/20230912-dappcon-berlin-predictoor.pdf)]  
+
+Main:
+- Mainnet webapp: [predictoor.ai](https://predictoor.ai). Testnet: [test.predictoor.ai](https://test.predictoor.ai)
+- Run bots via [pdr-backend](https://github.com/oceanprotocol/pdr-backend) repo
+
+Intro:
+- _These_ docs are the best starting poingi to learn about Predictoor:)
+- Original blogpost "Meet Predictoor", Sep 12, 2023 [[Link](https://blog.oceanprotocol.com/meet-predictoor-accountable-accurate-prediction-feeds-8b104d26a5d9)]
+- Original talk "Introducing Prediction Feeds", Dappcon, Sep 12, 2023 [[Video](https://www.youtube.com/live/ev76qrunCn4?si=a6dw_qCgw3F3070y&t=24393)] [[GSlides](https://docs.google.com/presentation/d/118tBnWNbzuq6vL1TITGq69RKPvHWbxVUZULp8KnfPyQ/edit#slide=id.g243aace1a9a_0_681)] [[PDF](https://drive.google.com/drive/folders/1ekNmB1LcS81xfJ6ntZpzibi3PF6QFwFR)]
+
+For thoroughness:
+- All blog posts & media: ["Ocean Predictoor Series"](https://blog.oceanprotocol.com/ocean-predictoor-series-6a9122754a4d)
+- Webapp code is at [pdr-web](https://github.com/oceanprotocol/pdr-web/) repo
+
