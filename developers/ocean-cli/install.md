@@ -37,10 +37,16 @@ To successfully configure the CLI tool, two essential steps must be undertaken: 
 
 ### Private Key Configuration
 
-The CLI tool requires the configuration of the account's private key. This private key serves as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool.
+The CLI tool requires the configuration of the account's 'private key'(by exporting env "PRIVATE_KEY") or a 'mnemonic'(by exporting env "MNEMONIC").
+Both serve as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool. You must choose either one option or the other. The tool will not utilize both simultaneously.
 
 ```bash
 export PRIVATE_KEY="XXXX"
+```
+or 
+
+```bash
+export MNEMONIC="XXXX"
 ```
 
 ### RPC Endpoint Specification
