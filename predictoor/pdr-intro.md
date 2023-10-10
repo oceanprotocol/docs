@@ -45,7 +45,7 @@ We assume predictions on BTC, and where epoch t ends at 5:00pm, t+1 ends 5:05pm,
 
 **Epoch t+1.** The middle 1/3 of the image covers epoch t+1. It starts at 5:00pm and ends at 5:05pm. The BTC Predictoor contract computes the aggregated predicted value (agg_predval) as stake-weighted sum across individual predictions.
 
-> agg_predval = (stake1*predval1 + stake2*predval2 + …) / (stake1 + stake2 + …)
+> agg_predval = (stake1 x predval1 + stake2 x predval2 + …) / (stake1 + stake2 + …)
 
 The contract then makes agg_predval visible to its subscribers. The predicted value is the stake-weighted sum across predictions. Smart traders may take the information and act immediately. A baseline strategy is "if it predicts ↑ then buy; if it predicts ↓ then sell or short".
 
