@@ -16,7 +16,7 @@ So, for example, imagine you're searching for data on Spanish almond production 
 * **dateCreated**, e.g. “2007–01–20”
 * **datePublished**, e.g. “2022–11–10T12:32:15Z”
 * **author**, e.g. “Spanish Almond Board”
-* **license**, e.g. “SAB Data License v4”
+* **license**, e.g. “SAB Data License”
 * technical information about the **files**, such as the content type.
 
 Other metadata might also be available. For example:

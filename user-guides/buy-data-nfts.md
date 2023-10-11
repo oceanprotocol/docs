@@ -18,7 +18,7 @@ Once you're confident that the dataset meets your requirements, you're ready to 
 
 ### Let's Go Shopping! 💁‍♀️🛍️
 
-1. Go to the [Ocean Market](https://v4.market.oceanprotocol.com/).
+1. Go to the [Ocean Market](https://market.oceanprotocol.com/).
 2. Search for NFTs using the search bar in the top right corner of the page. The Ocean Marketplace provides features to search for Data/Algorithm NFTs by text, and users can also sort the result by published date.
 3. Connect your wallet. If you know the network the asset is hosted on, then you can also select the network from the dropdown to the left of the Connect Wallet button to filter!
 

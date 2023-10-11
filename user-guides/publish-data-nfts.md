@@ -24,7 +24,7 @@ Don't enjoy reading? Watch our video tutorial!
 
 #### Getting Started 🏃💨
 
-1. Go to the [Ocean Market](https://v4.market.oceanprotocol.com).
+1. Go to the [Ocean Market](https://market.oceanprotocol.com).
 2. Connect your wallet.
 3. Select the network where you would like to publish your NFT (ex. Ethereum, Polygon, etc).
 
@@ -123,7 +123,7 @@ Now, your data NFT is successfully published and available in the Ocean Market!
 
 ![Successful publish](../.gitbook/assets/market/publish-7.png)
 
-On the [profile page](https://v4.market.oceanprotocol.com/profile), a publisher has access to all their published assets.
+On the [profile page](https://market.oceanprotocol.com/profile), a publisher has access to all their published assets.
 
 ### Code flow
 

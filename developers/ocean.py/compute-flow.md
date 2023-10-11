@@ -200,7 +200,7 @@ You should see something like this:
 
 ### Appendix. Tips & tricks
 
-This README has a simple ML algorithm. However, Ocean C2D is not limited to usage in ML. The file [c2d-flow-more-examples.md](https://github.com/oceanprotocol/ocean.py/blob/v4main/READMEs/c2d-flow-more-examples.md) has examples from vision and other fields.
+This README has a simple ML algorithm. However, Ocean C2D is not limited to usage in ML. The file [c2d-flow-more-examples.md](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/c2d-flow-more-examples.md) has examples from vision and other fields.
 
 In the "publish algorithm" step, to replace the sample algorithm with another one:
 

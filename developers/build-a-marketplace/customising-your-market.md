@@ -123,7 +123,7 @@ Great, now our publish page explains that users should be publishing photos and 
 
 ![Market Customisation](../../.gitbook/assets/market/publish-page-2.png)
 
-There is one more thing that is fun to change before we move away from the publish form. You’ll notice that Ocean Market V4 now has a cool SVG generation feature that creates the images for the Data NFT. It creates a series of pink waves. Let’s change this so that it uses our brand colors in the waves!
+There is one more thing that is fun to change before we move away from the publish form. You’ll notice that Ocean Market now has a cool SVG generation feature that creates the images for the Data NFT. It creates a series of pink waves. Let’s change this so that it uses our brand colors in the waves!
 
 Open up `/src/@utils/SvgWaves.ts` and have a look at lines 27 to 30 where the colors are specified. Currently, the pink color is the one used in the SVG generator. You can replace this with your own brand color:
 
@@ -174,7 +174,7 @@ NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE="0.01"
 
 ### Change the Fee Address
 
-At this point, we have made a lot of changes and hopefully, you’re happy with the way that your marketplace is looking. Given that you now have your own awesome photo marketplace, it’s about time we talked about monetizing it. Yup, that’s right - you will earn a [commission](../contracts/fees.md) when people buy and sell photos in your marketplace. In Ocean V4, there are a whole host of new [fees](../contracts/fees.md) and customization options that you can use. In order to receive the fees you’ll need to set the address where you want to receive these fees in.
+At this point, we have made a lot of changes and hopefully, you’re happy with the way that your marketplace is looking. Given that you now have your own awesome photo marketplace, it’s about time we talked about monetizing it. Yup, that’s right - you will earn a [commission](../contracts/fees.md) when people buy and sell photos in your marketplace. In Ocean, there are a whole host of new [fees](../contracts/fees.md) and customization options that you can use. In order to receive the fees you’ll need to set the address where you want to receive these fees in.
 
 When someone sets the pricing for their photos in your marketplace, they are informed that a commission will be sent to the owner of the marketplace. You see that at the moment this fee is set to zero, so you’ll want to increase that.
 
