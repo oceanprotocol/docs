@@ -6,7 +6,7 @@ description: Empowering the Decentralised Data Economy
 
 The suite of smart contracts serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. 
 
-The smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). Ocean introduced significant enhancements that encompass the following key **features**:
+The smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). They introduced significant enhancements that encompass the following key **features**:
 
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
@@ -37,7 +37,7 @@ Key features of the smart contracts:
 * Interoperability with the NFT ecosystem (and DeFi & DAO tools).
 * Allows new data [NFT & datatoken templates](datatoken-templates.md), for flexibility and future-proofing.
 * Besides base data IP, you can use data NFTs to **implement comments & ratings, verifiable claims, identity credentials, and social media posts**. They can point to parent data NFTs, enabling the nesting of comments on comments, or replies to tweets. All on-chain, GDPR-compliant, easily searched, with js & py drivers 🤯
-* Introduce an advanced [Fee](fees.md) structure both for aApp and provider runners 💰
+* Introduce an advanced [Fee](fees.md) structure both for dApp and provider runners 💰
 * [Roles](roles.md) Administration: there are now multiple roles for a more flexible administration both at [NFT](data-nfts.md) and [ERC20](datatokens.md) levels 👥
 * When the NFT is transferred, it auto-updates all permissions, e.g. who receives payment, or who can mint derivative ERC20 datatokens.
 * Key-value store in the NFT contract: NFT contract can be used to store custom key-value pairs (ERC725Y standard) enabling applications like soulbound tokens and Sybil protection approaches 🗃️

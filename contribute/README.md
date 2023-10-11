@@ -24,7 +24,7 @@ Follow the steps below to properly document your bug! Paste the screenshots into
 
 ### Report vulnerabilities
 
-For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of the code. Check out the page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
+For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of the code. Check out this page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
 
 <figure><img src="../.gitbook/assets/gif/matrix-code.gif" alt=""><figcaption><p>Did you find a glitch in the code matrix?</p></figcaption></figure>
 
@@ -62,9 +62,9 @@ Except for GitHub, you can chat with most Ocean Protocol core developers in the 
 
 ### Develop a dApp or integration on top of Ocean Protocol
 
-We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with the open-source tools.
+We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with these open-source tools.
 
-If you need ANY help, then we're here to talk with you on [Discord](https://discord.gg/TnXjkR5) to give you advice. We're also consistently improving the docs to help you. And... you're here :)
+If you need ANY help, then we're here to talk with you on [Discord](https://discord.gg/TnXjkR5) to give you advice. We're also consistently improving these docs to help you. And... you're here :)
 
 ### Improve the docs
 
@@ -72,7 +72,7 @@ The docs repo can always be improved. If you found a mistake or have an improvem
 
 ### Apply for a developer job
 
-Do you REALLY love building on Ocean Protocol? Consider joining us full-time! The openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
+Do you REALLY love building on Ocean Protocol? Consider joining us full-time! Our openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
 
 
 

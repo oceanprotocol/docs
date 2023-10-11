@@ -7,7 +7,7 @@ description: We are so proud of the companies that use Ocean Protocol tools!
 
 <figure><img src="../.gitbook/assets/gif/anchorman-teamwork.gif" alt=""><figcaption></figcaption></figure>
 
-From startups to full enterprises, we have so many partners and collaborators using Ocean tech. Curious who's working with Ocean tools? Check out the up-to-date list of partners and collaborators on the [Ecosystem page](https://oceanprotocol.com/ecosystem) of the website.
+From startups to full enterprises, we have so many partners and collaborators using Ocean tech. Curious who's working with Ocean tools? Check out the up-to-date list of partners and collaborators on the [Ecosystem page](https://oceanprotocol.com/ecosystem).
 
 ### Show your support by trading OCEAN tokens
 

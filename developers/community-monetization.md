@@ -22,7 +22,7 @@ If you’re part of an established organization or a growing startup, you’ll a
 
 ### 2. Running Your Own Data dApp
 
-We have always been super encouraging of anyone who wishes to build a dApp on top of Ocean or to fork Ocean Market and make their own data marketplace. With the latest release, we have taken this to the next level and introduced more opportunities and even more fee customization options.
+We have always been super encouraging of anyone who wishes to build a dApp on top of Ocean or to fork Ocean Market and make their own data marketplace. And now, we have taken this to the next level and introduced more opportunities and even more fee customization options.
 
 Ocean empowers dApp operators like yourself to have greater flexibility and control over the fees you can charge. This means you can tailor the fee structure to suit your specific needs and ensure the sustainability of your project.  **The smart contracts enable you to collect a fee not only in consume, but also in fixed-rate exchange, also you can set the fee value.**  For more detailed information regarding the fees, we invite you to visit the [fees](contracts/fees.md) page.
 

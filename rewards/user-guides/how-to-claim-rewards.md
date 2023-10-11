@@ -8,7 +8,7 @@ description: How to claim OCEAN token rewards from data farming 🧑‍🌾🥕
 
 Ocean Protocol's Data Farming dapp dispenses rewards **every Thursday** to its participants. 💰 To claim your OCEAN token rewards for data farming, simply navigate to the Data Farming [Rewards page](https://df.oceandao.org/rewards) and click the Claim OCEAN rewards buttons that will appear pink and clickable each Thursday. Yeehaw!
 
-You can visit the dApp to [begin Data Farming](https://df.oceandao.org)? Or [follow this user guide](how-to-veocean.md) to get started. 🤠
+You can visit this dApp to [begin Data Farming](https://df.oceandao.org)? Or [follow this user guide](how-to-veocean.md) to get started. 🤠
 
 ### Step 1 - Navigate to the Data Farming Rewards page
 

@@ -174,7 +174,7 @@ NEXT_PUBLIC_CONSUME_MARKET_FIXED_SWAP_FEE="0.01"
 
 ### Change the Fee Address
 
-At this point, we have made a lot of changes and hopefully, you’re happy with the way that your marketplace is looking. Given that you now have your own awesome photo marketplace, it’s about time we talked about monetizing it. Yup, that’s right - you will earn a [commission](../contracts/fees.md) when people buy and sell photos in your marketplace. In Ocean, there are a whole host of new [fees](../contracts/fees.md) and customization options that you can use. In order to receive the fees you’ll need to set the address where you want to receive these fees in.
+At this point, we have made a lot of changes and hopefully, you’re happy with the way that your marketplace is looking. Given that you now have your own awesome photo marketplace, it’s about time we talked about monetizing it. Yup, that’s right - you will earn a [commission](../contracts/fees.md) when people buy and sell photos in your marketplace. In Ocean, there are a whole host of [fees](../contracts/fees.md) and customization options that you can use. In order to receive the fees you’ll need to set the address where you want to receive these fees in.
 
 When someone sets the pricing for their photos in your marketplace, they are informed that a commission will be sent to the owner of the marketplace. You see that at the moment this fee is set to zero, so you’ll want to increase that.
 

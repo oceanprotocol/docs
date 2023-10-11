@@ -72,7 +72,7 @@ node create_dataNFT.js
 {% endtab %}
 {% endtabs %}
 
-* Checkout the [code examples](https://github.com/oceanprotocol/ocean.js/blob/main/CodeExamples.md#L0-L1) or [compute to data examples](https://github.com/oceanprotocol/ocean.js/blob/main/ComputeExamples.md#L417) to see how you can use ocean.js.
+* Check out these [code examples](https://github.com/oceanprotocol/ocean.js/blob/main/CodeExamples.md#L0-L1) or [compute to data examples](https://github.com/oceanprotocol/ocean.js/blob/main/ComputeExamples.md#L417) to see how you can use ocean.js.
 * If you have any difficulties or if you have further questions about how to use ocean.js please reach out to us on [Discord](https://discord.gg/TnXjkR5).
 * If you notice any bugs or issues with ocean.js please [open an issue on github](https://github.com/oceanprotocol/ocean.js/issues/new?assignees=\&labels=bug\&template=bug\_report.md\&title=).
 * Visit the [Ocean Protocol website](https://oceanprotocol.com/) for general information about Ocean Protocol.

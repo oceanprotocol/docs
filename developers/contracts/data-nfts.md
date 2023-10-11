@@ -35,7 +35,7 @@ We have implemented data NFTs using the [ERC721 standard](https://erc721.org/). 
 
 ERC721 tokens are non-fungible, and thus cannot be used for automatic price discovery like ERC20 tokens. ERC721 and ERC20 combined together can be used for sub-licensing. Ocean Protocol's [ERC721Template](https://github.com/oceanprotocol/contracts/blob/main/contracts/templates/ERC721Template.sol) solves this problem by using ERC721 for tokenizing the **Base IP** and tokenizing sub-licenses by using ERC20. To save gas fees, it uses [ERC1167](https://eips.ethereum.org/EIPS/eip-1167) proxy approach on the **ERC721 template**.
 
-The implementation has been built on top of the battle-tested [OpenZeppelin contract library](https://docs.openzeppelin.com/contracts/4.x/erc721). However, there are a bunch of interesting parts of the implementation that go a bit beyond an out-of-the-box NFT. The data NFTs can be easily managed from any NFT marketplace like [OpenSea](https://opensea.io/).
+Our implementation has been built on top of the battle-tested [OpenZeppelin contract library](https://docs.openzeppelin.com/contracts/4.x/erc721). However, there are a bunch of interesting parts of the implementation that go a bit beyond an out-of-the-box NFT. The data NFTs can be easily managed from any NFT marketplace like [OpenSea](https://opensea.io/).
 
 <figure><img src="../../.gitbook/assets/wallet/data_nft_open_sea.png" alt=""><figcaption><p>Data NFT on Open Sea</p></figcaption></figure>
 
