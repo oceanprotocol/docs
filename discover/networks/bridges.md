@@ -35,7 +35,7 @@ All you need to do is click on the [wallet](https://wallet.polygon.technology/) 
 
 You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon.
 
-Check out our [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) for more details.
+Check out this [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) for more details.
 
 #### Deposit Tokens
 
@@ -67,7 +67,7 @@ The easiest one is to go to the [polygon network explorer](https://polygonscan.c
 
 <figure><img src="../../.gitbook/assets/wallet/polygon-explorer.png" alt=""><figcaption></figcaption></figure>
 
-Alternatively, you can manually configure the network on Metamask by using the following parameters. To learn how to set up a custom network in Metamask using these values, you can refer to our guide.
+Alternatively, you can manually configure the network on Metamask by using the following parameters. To learn how to set up a custom network in Metamask using these values, you can refer to this [guide](../wallets/metamask-setup.md#set-up-custom-network).
 
 | What               | Value                                                |
 | ------------------ | ---------------------------------------------------- |
@@ -77,4 +77,3 @@ Alternatively, you can manually configure the network on Metamask by using the f
 | Currency Symbol    | `MATIC`                                              |
 | Block Explorer URL | [`https://polygonscan.com`](https://polygonscan.com) |
 
-Follow our guide to learn how to use those values to [set up a custom network in MetaMask](../wallets/metamask-setup.md#set-up-custom-network).

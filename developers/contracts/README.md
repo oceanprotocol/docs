@@ -23,11 +23,11 @@ By utilizing ERC721 tokens, Ocean **grants data creators greater flexibility and
 
 ### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 
-Ocean brings forth enhanced opportunities for marketplace operators, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
+Ocean brings forth enhanced opportunities for dApp owners, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
 
-With Ocean, marketplace operators can unlock additional benefits. Firstly, the smart contracts empower marketplace operators to collect [fees](fees.md) not only during **data consumption** but also through **fixed-rate exchanges**. This expanded revenue model allows operators to derive more value from the ecosystem. Moreover, in Ocean, the marketplace operator has the authority to determine the fee value, providing them with **increased control** over their pricing strategies.
+With Ocean, dApp owners can unlock additional benefits. Firstly, the smart contracts empower dApp owners to collect [fees](fees.md) not only during **data consumption** but also through **fixed-rate exchanges**. This expanded revenue model allows owners to derive more value from the ecosystem. Moreover, in Ocean, the dApp operator has the authority to determine the fee value, providing them with **increased control** over their pricing strategies.
 
-In addition to empowering marketplace operators, Ocean facilitates the participation of third-party [Providers](../provider/README.md) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
+In addition to empowering dApp owners, Ocean facilitates the participation of third-party [Providers](../provider/README.md) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
 
 By enabling a marketplace of [Providers](../provider/README.md), Ocean fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
 
@@ -37,7 +37,7 @@ Key features of the smart contracts:
 * Interoperability with the NFT ecosystem (and DeFi & DAO tools).
 * Allows new data [NFT & datatoken templates](datatoken-templates.md), for flexibility and future-proofing.
 * Besides base data IP, you can use data NFTs to **implement comments & ratings, verifiable claims, identity credentials, and social media posts**. They can point to parent data NFTs, enabling the nesting of comments on comments, or replies to tweets. All on-chain, GDPR-compliant, easily searched, with js & py drivers 🤯
-* Introduce an advanced [Fee](fees.md) structure both for Marketplace and Provider runners 💰
+* Introduce an advanced [Fee](fees.md) structure both for aApp and provider runners 💰
 * [Roles](roles.md) Administration: there are now multiple roles for a more flexible administration both at [NFT](data-nfts.md) and [ERC20](datatokens.md) levels 👥
 * When the NFT is transferred, it auto-updates all permissions, e.g. who receives payment, or who can mint derivative ERC20 datatokens.
 * Key-value store in the NFT contract: NFT contract can be used to store custom key-value pairs (ERC725Y standard) enabling applications like soulbound tokens and Sybil protection approaches 🗃️

@@ -42,5 +42,5 @@ If you’re completely unfamiliar with Ocean Market or web3 applications in gene
 * You’ll need a Github account to fork Ocean Market via [Github](https://github.com/).
 
 {% hint style="warning" %}
-Let's emphasize an important aspect of building dApps. It's crucial to keep in mind that practically everything can be added to the blockchain 😵 When you integrate with our components, it becomes **crucial** for you, as a developer, to ensure **proper sanitization** of the responses on your end. This means you should carefully **validate and filter** the data received to **prevent** any potential vulnerabilities or security risks in your applications.
+Let's emphasize an important aspect of building dApps. It's crucial to keep in mind that practically everything can be added to the blockchain 😵 When you integrate with the components, it becomes **crucial** for you, as a developer, to ensure **proper sanitization** of the responses on your end. This means you should carefully **validate and filter** the data received to **prevent** any potential vulnerabilities or security risks in your applications.
 {% endhint %}

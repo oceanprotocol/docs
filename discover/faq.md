@@ -15,8 +15,6 @@ Hopefully, you'll find the answers here! If not then please don't hesitate to re
 <summary>How is Ocean Protocol related to artificial intelligence? </summary>
 
 AI models require data, and Ocean offers a suite of tools to facilitate the supply, management, and monetization of that data. Through tokenization, Ocean empowers web3 wallets to securely access data, facilitates decentralized data exchanges, unlocks token-gated APIs, ensures data sharing provenance, enables compute-to-data processes, and much more.
-
-In the realm of policymaking, a dynamic and intricate field, Ocean Protocol's stance is clear: data creators should possess the means to control data usage and partake in profits when their data is commercialized. Ocean Protocol was established to forge technology for a Data Economy situated at the convergence of blockchain, data, and AI. We've been trailblazers in multiple domains, including the original NFT patent, token engineering, data tokens, and other innovative technologies.
 </details>
 
 <details>
@@ -24,9 +22,7 @@ In the realm of policymaking, a dynamic and intricate field, Ocean Protocol's st
 
 Ocean Protocol's mission is to develop tools and services that facilitate the emergence of a new Data Economy. This new economy aims to empower data owners with control, maintain privacy, and catalyze the commercialization of data, including the establishment of data marketplaces.
 
-Founded to create technology at the intersection of blockchain, data, and AI for the Data Economy, Ocean Protocol has been at the forefront of innovation. We've pioneered various technologies, including the original patent for NFTs, token engineering, data tokens, and more.
-
-To learn more about our vision, check out this [blog post](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8).
+To understand more about Ocean's vision, check out this [blog post](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8).
 </details>
 
 <details>
@@ -79,16 +75,16 @@ Yes. Ocean Protocol understands that some data is too sensitive to be shared —
 
 To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
 
-1. Details about the [Ocean Token](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db).
-2. Details about the [Core Stack](https://blog.oceanprotocol.com/oceans-on-ethereum-mainnet-ba9be1aee0ce⁣).
-3. Details about [Data Farming](https://blog.oceanprotocol.com/oceandao-is-going-fully-decentralized-and-autonomous-cb4b725e0360⁣).
+1. Details about the [Ocean Token](https://oceanprotocol.com/about-us/ocean-token).
+2. Details about the [Core Stack](../developers/contracts/README.md).
+3. Details about [Data Farming](../rewards/README.md).
   
 </details>
 
 <details>
 <summary>Where can we see previous data challenges and submitted solutions?</summary>
 
-You can find a list of past data challenges on our [website](https://oceanprotocol.com/challenges). 
+You can find a list of past data challenges on the [website](https://oceanprotocol.com/challenges). 
 Accessing the submitted solutions is currently a work in progress, with one solution already available for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge.
 </details>
 
@@ -97,7 +93,7 @@ Accessing the submitted solutions is currently a work in progress, with one solu
 <details>
 <summary>How does the $OCEAN token capture value?</summary>
 
-The $OCEAN token is used as the [glue](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9) for the Ocean ecosystem. A 0.1% or a 0.2% fee is applied to all transactions performed using Ocean components. This fee is used for further development of Ocean technology and for buy-and-burning of the Ocean token. 
+Please see the [token page](https://www.oceanprotocol.com/token) for up-to-date information about OCEAN tokenomics.
 </details>
 
 <details>
@@ -129,15 +125,12 @@ The Ethereum network has the highest liquidity for $OCEAN.
 
 All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
 
-The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
-
 </details>
 
 <details>
 <summary>How does the ecosystem and the Ocean token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
 
 You are right, all Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace. But, there is a community fee involved in all transactions hapening in the ecosystem. 
-The ocean community fees are though dependant on the token used. There is a 0.1% fee for transactions performed using the Ocean or H2O tokens and a 0.2% for transactions using other tokens.
 
 veOCEAN on the other hand, follows the model of other ve tokens, where it can be used for passive and active staking. By locking up your $OCEAN to veOCEAN, you automatically receive passive staking rewards. You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy (psdnOCEAN), who deploy your veOCEAN at no risk, in order to gain a share of active rewards. Active rewards are based on transaction volume on specific data assets.
 </details>
@@ -157,11 +150,11 @@ Yes there is - the [Autobot](https://autobotocean.com/) one.
 </details>
 
 <details>
-<summary>Considering that the Ocean Market is open source and there are no incentives for industry players to use it, what are the future plans for the project in terms of its economic direction?</summary>
+<summary>Considering that the Ocean Market is open source, what are the future plans for the project in terms of its economic direction?</summary>
 
 The Ocean Market has consistently served as a showcase for the practical application of Ocean technology. Moreover, it has the potential to set a precedent for the development of other marketplaces within the Ocean ecosystem.
 
-However, it's important to note that participants using the Ocean stack are subject to transaction fees, which vary depending on the chosen token, either 0.1% or 0.2%. These fees serve the dual purpose of furthering the development of Ocean technology and facilitating the buy-and-burning of the Ocean token. 
+However, it's important to note that participants using the Ocean stack are subject to transaction fees, which vary depending on the chosen token. These fees serve the dual purpose of furthering the development of Ocean technology and facilitating the buy-and-burning of the Ocean token. 
 </details>
 
 

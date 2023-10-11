@@ -33,7 +33,7 @@ For the full details on how to submit, please read the [Where to start](#where-t
 
 ### What do I gain from this?
 
-- Earn OCEAN rewards, [claimable inside our app](https://df.oceandao.org/rewards)
+- Earn OCEAN rewards, [claimable inside the app](https://df.oceandao.org/rewards)
 - Gain in-depth knowledge of the Ocean Protocol stack.
 - Increase your visibility by achieving a place on the podium.
 - Create valuable assets that can be monetized on the Ocean Marketplace.

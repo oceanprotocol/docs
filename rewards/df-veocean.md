@@ -11,7 +11,7 @@ description: >-
 
 "ve" stands for <mark style="color:orange;">**vote escrowed**</mark>. And the "vote" part of "ve" and veOCEAN is what you really need to pay attention to in order to truly understand the function of this token.
 
-You see, when you acquire veOCEAN via locking your OCEAN tokens in our Data Farming dApp, the intended use is to **vote on your favorite assets** in the Ocean ecosystem!
+You see, when you acquire veOCEAN via locking your OCEAN tokens in the Data Farming dApp, the intended use is to **vote on your favorite assets** in the Ocean ecosystem!
 
 When you allocate to assets that sell, then **you get a portion of the sales**!
 

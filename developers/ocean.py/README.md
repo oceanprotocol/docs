@@ -16,7 +16,7 @@ ocean.py serves as a connection layer bridging the smart contracts and various c
 
 ocean.py is like the conductor of an underwater orchestra, guiding different marine creatures (modules) to work together harmoniously. It's an open-source library that makes swimming in the vast sea of data a breeze! 🌊
 
-The head of our library is the "[Ocean](technical-details.md)" class. It oversees everything and keeps track of the data flow.
+The head of the library is the "[Ocean](technical-details.md)" class. It oversees everything and keeps track of the data flow.
 
 Now, let's take a closer look at those amazing branches:
 

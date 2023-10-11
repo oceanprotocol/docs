@@ -18,7 +18,7 @@ By leveraging **blockchain technology** and **smart contracts**, Ocean Protocol 
 
 <figure><img src="../.gitbook/assets/general/explore_ocean.png" alt=""><figcaption><p>A vast ocean of data awaits you...</p></figcaption></figure>
 
-Get a glimpse into some of the things you can do with Ocean Protocol. The opportunities with our protocol to leverage an "Ocean of data" are great and ever-evolving. Together, we'll dive deeper and uncover even more ways to harness the power of decentralized data.
+Get a glimpse into some of the things you can do with Ocean Protocol. The opportunities with the protocol to leverage an "Ocean of data" are great and ever-evolving. Together, we'll dive deeper and uncover even more ways to harness the power of decentralized data.
 
 <details>
 
@@ -58,7 +58,7 @@ You can choose from two options:
 
 <summary><mark style="color:blue;"><strong>Tokengate Your dApp or Content</strong></mark><br><br>Are you interested in token gating your dApp or content using an Ocean data NFT? We offer you all the code and support that you need to make this happen.</summary>
 
-Feel free to fork the [Ocean Token Gate template](https://github.com/oceanprotocol/token-gating-template) code and customize it to start building your dApp from scratch. If you already have an existing dApp of yours, then you can also modify it simply to use an Ocean data NFT. The [Ocean Token Gate repo](https://github.com/oceanprotocol/token-gating-template) will be helpful to inform your coding to do this, of course. But we also explain the [smart contract mechanics](../developers/contracts/) of Data NFTs and Datatokens[ in our docs](../developers/contracts/) for you to understand the code better. Remember, we're always here to help guide you with any coding questions on [Discord](https://discord.gg/TnXjkR5).
+Feel free to fork the [Ocean Token Gate template](https://github.com/oceanprotocol/token-gating-template) code and customize it to start building your dApp from scratch. If you already have an existing dApp of yours, then you can also modify it simply to use an Ocean data NFT. The [Ocean Token Gate repo](https://github.com/oceanprotocol/token-gating-template) will be helpful to inform your coding to do this, of course. But we also explain the [smart contract mechanics](../developers/contracts/) of Data NFTs and Datatokens[ in the docs](../developers/contracts/) for you to understand the code better. Remember, we're always here to help guide you with any coding questions on [Discord](https://discord.gg/TnXjkR5).
 
 </details>
 
@@ -149,8 +149,8 @@ To become a member of the Ambassador Program, follow these steps:
 <details>
 <summary><mark style="color:green;">Contribute to Ocean Code Development</mark><br><br>Make a positive impact in the Web3 data economy by contributing to <a href="https://github.com/oceanprotocol">Ocean's open source code</a> on Github! From feature requests to pull requests, contributions of all kinds are appreciated.</summary>
 
-To begin, [visit our Github page](https://github.com/oceanprotocol) where you can see the repos and contributors. If you're going to contribute code to a repo, then we ask that you fork the code first, make your changes, and then create a pull request for us to review. If you are reporting an issue, then please first search the existing issues to see if it is documented yet. If not, then please open a new issue by describe your problem as best as possible and include screenshots.
-We also welcome you to join our [Discord developer community](https://discord.gg/TnXjkR5) where you can get rapid, practical advice on using Ocean tech but also get to know Ocean core team more personally!
+To begin, [visit the Ocean Github page](https://github.com/oceanprotocol) where you can see the repos and contributors. If you're going to contribute code to a repo, then we ask that you fork the code first, make your changes, and then create a pull request for us to review. If you are reporting an issue, then please first search the existing issues to see if it is documented yet. If not, then please open a new issue by describe your problem as best as possible and include screenshots.
+We also welcome you to join the [Discord developer community](https://discord.gg/TnXjkR5) where you can get rapid, practical advice on using Ocean tech but also get to know Ocean core team more personally!
 </details>
 
 This is just the beginning of what Ocean Protocol has to offer. Join us as we explore, innovate, and push the boundaries of what's possible with decentralized data. Together, we can shape a future where data is accessible, secure and empowers individuals and organizations alike. Let's dive in and discover the endless possibilities of Ocean Protocol :ocean:

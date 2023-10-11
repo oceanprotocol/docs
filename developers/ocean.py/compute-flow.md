@@ -207,7 +207,7 @@ In the "publish algorithm" step, to replace the sample algorithm with another on
 * Use one of the standard [Ocean algo_dockers images](https://github.com/oceanprotocol/algo_dockers) or publish a custom docker image.
 * Use the image name and tag in the `container` part of the algorithm metadata.
 * The image must have basic support for installing dependencies. E.g. "pip" for the case of Python. You can use other languages, of course.
-* More info: [https://docs.oceanprotocol.com/tutorials/compute-to-data-algorithms/](../compute-to-data/compute-to-data-algorithms.md)
+* More info is available on the [algorithms page](../compute-to-data/compute-to-data-algorithms.md)
 
 The function to `pay_for_compute_service` automates order starting, order reusing and performs all the necessary Provider and on-chain requests. It modifies the contents of the given ComputeInput as follows:
 

@@ -19,7 +19,7 @@ The publishing process on the Ocean Market both mints (i.e. creates) a [data NFT
 ### No code flow
 
 {% embed url="https://www.youtube.com/watch?v=3NGSmfXkHAQ" %}
-Don't enjoy reading? Watch our video tutorial!
+Don't enjoy reading? Watch the video tutorial!
 {% endembed %}
 
 #### Getting Started 🏃💨
@@ -127,8 +127,8 @@ On the [profile page](https://market.oceanprotocol.com/profile), a publisher has
 
 ### Code flow
 
-* **Python:** Are you looking at how to publish a data NFT using Python? Follow our ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
-* **Javascript**: Are you looking at how to publish a data NFT using Javascript? Follow our ocean.js [Publish Flow](../developers/ocean.js/publish.md) to mint a data NFT and datatoken using Javascript.
+* **Python:** Are you looking at how to publish a data NFT using Python? Follow the ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
+* **Javascript**: Are you looking at how to publish a data NFT using Javascript? Follow the ocean.js [Publish Flow](../developers/ocean.js/publish.md) to mint a data NFT and datatoken using Javascript.
 
 #### More Info 🧐
 

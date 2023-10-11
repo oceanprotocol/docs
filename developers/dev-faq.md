@@ -11,85 +11,58 @@ Hopefully, you'll find the answers here! If not then please don't hesitate to re
 <details>
 <summary>The blockchain is public - does this mean that anyone can access my data?</summary>
 
-No one is able to access data via the blockchain without purchasing access (with the datatoken) through the smart contract. Ocean smart contracts encrypt the URL to the dataset before it is published on the blockchain. This means that only the encrypted URL will be queryable in the public blockchain. Ocean technology facilitates data access to the consumer via a proxy (Ocean Provider) and the unencrypted URL is never exposed.
+Your data is protected as it is stored encrypted on the chain. So no one is able to access your data via the blockchain without purchasing access (with the datatoken) through the smart contract. Ocean smart contracts encrypt the URL to the dataset before it is published on the blockchain. This means that only the encrypted URL will be queryable in the public blockchain. Ocean technology facilitates data access to the consumer via a proxy (Ocean Provider) and the unencrypted URL is never exposed.
 
 </details>
 
 <details>
 <summary>How are datatokens created, and how does the creator make money?</summary>
 
-[Datatokens](https://docs.oceanprotocol.com/developers/contracts/datatokens) represent access rights to a specific dataset on the Ocean Protocol. Creators of datasets tokenize their data, creating these datatokens. Each datatoken is unique to a dataset.
+[Datatokens](../developers/contracts/datatokens) represent access rights to a specific dataset or data service on the Ocean Protocol. Creators of datasets tokenize their data, creating these datatokens. Each datatoken is unique to a dataset.
 </details>
 
 <details>
 <summary>Where can I find information about the number of datatokens created and track their progress?</summary>
 
-To access this data, some technical expertise is required. You can find this information at the subgraph level. In our documentation, we provide a few examples of how to retrieve this data using JavaScript. Feel free to give it a shot by visiting this [page](https://docs.oceanprotocol.com/developers/subgraph/list-datatokens). If it doesn't meet your requirements, don't hesitate to reach out to us on Discord.
+To access this data, some technical expertise is required. You can find this information at the subgraph level. In the documentation, we provide a few examples of how to retrieve this data using JavaScript. Feel free to give it a shot by visiting this [page](../developers/subgraph/list-datatokens). If it doesn't meet your requirements, don't hesitate to reach out to us on Discord.
 </details>
 
 <details>
 <summary>How can partners and developers use Ocean technology to build their own data marketplaces?</summary>
 
-Ocean technology is open-source, community-funded, and freely available for use by anyone. Normally, when a developer wishes to use Ocean, they will let the core team know and we make a joint announcement if both parties agree.
-A developer can fork various components from our GitHub repository and create their own. Within the default Ocean code, there is a 0.1% fee per transaction in the Ocean or H2O token or a 0.2% for transactions in other tokens, which is returned to the Ocean community for continued Ocean technology development.
+Ocean technology is open-source, community-funded, and freely available for use by anyone. 
+Anyone can fork various components from the Ocean [GitHub](https://github.com/oceanprotocol) repository and create their own. Additionally, Ocean empowers dApp operators with great flexibility and control over the fees they charge, allowing you to customize the fee structure to meet your specific needs and ensure your project's sustainability.
 </details>
 
 <details>
 <summary>Is there a trading platform or stock exchange that has successfully forked the Ocean marketplace codebase?</summary>
-Ocean technology is actively in use with the following entities:
 
-Proof of Concept:
-1. Gaia-X
-2. Catena-X
-3. Move.id
+Ocean technology is actively used by Daimler/Acentrik, deltaDAO/GAIA-X, and several other entities. You can find further details on the Ocean [ecosystem page](https://oceanprotocol.com/explore/ecosystem).
 
-Production:
-1. Fetch.Ai
-2. Acentrik (Daimler)
-3. deltaDAO
-4. DeSights
-5. BDP
-</details>
-
-<details>
-<summary>How privacy works in compute-to-data through the use of containers/kube?</summary>
-
-Check out this [resource](https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-architecture) 😎
 </details>
 
 <details>
 <summary>What are the Ocean faucets and how can they be used?</summary>
 
-Ocean offers faucets for every test network where the smart contracts are deployed. These faucets provide test Ocean tokens, allowing you to experiment with various functionalities of the platform. It's important to note that the tokens on these networks do not have any real-world value and are exclusively intended for testing purposes. Here are the faucets available:
-
-1. [Goerli](https://faucet.goerli.oceanprotocol.com/) 
-2. [Mumbai](https://faucet.mumbai.oceanprotocol.com/)
-3. [Sepolia](https://faucet.sepolia.oceanprotocol.com/)
+An Ocean faucet is a site to get (fake) OCEAN for use on a given testnet. There's an Ocean faucet for each testnet that Ocean is deployed to. The [networks](../discover/networks/) page have more information.
 </details>
 
 <details>
 <summary>Can I use the off-the-shelf CSS available in the repo?</summary>
 
-The marketplace name, logo, and typeface must be changed by the client. A slight modification would be enough for compliance. For more information consult the READ ME file on [GitHub](https://github.com/oceanprotocol/market#-forking). 
-</details>
-
-<details>
-<summary>Where do the docker containers run?</summary>
-
-Dockers containers can run anywhere. Ocean Market uses a docker run by the Ocean Protocol Foundation OPF); limit: 1 CPU limit / 60 seconds max. NOTE: This means OPF technically has access to data. In the case of a forked Ocean-powered marketplace, the owner of the marketplace must set up a computation environment. If individual users of the marketplace are concerned with security they should be prepared to host both the data and provide compute-to-data services on-premise.
+The marketplace name, logo, and typeface must be changed by the client. A slight modification would be enough for compliance. For more information consult the README file about [forking Ocean Market](https://github.com/oceanprotocol/market#-forking). 
 </details>
 
 <details>
 <summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
 
-We have a [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#binance-smart-chain-bsc-bridge) specific for this. Please double-check the addresses and make sure you are using the right smart contracts.
+Please follow this [tutorial](../discover/networks/bridges#binance-smart-chain-bsc-bridge) to bridge from/to binance smart chain. Please double-check the addresses and make sure you are using the right smart contracts.
 </details>
 
 <details>
 <summary>How to bridge my mOcean back to Ocean?</summary>
 
-The OCEAN token address on the polygon network is [0x282d8efCe846A88B159800bd4130ad77443Fa1A1](https://polygonscan.com/address/0x282d8efCe846A88B159800bd4130ad77443Fa1A1). 
-Please follow this [tutorial](https://docs.oceanprotocol.com/discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon.
+Please follow this [tutorial](../discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from polygon. Please double-check the addresses and make sure you are using the right smart contracts.
 </details>
 
 <details>
@@ -105,5 +78,5 @@ PS: We offer good rewards 😇
 
 Each individual could publish their dataset themselves, to get a data NFT. From the data NFT, they can mint datatokens which are to access the data. They have sovereign control over this, as hold the keys to the data NFTs and datatokens, and have great flexibility in how to give others access. For example, they could send a datatoken to a DAO for the DAO can manage. Or they could grant datatoken-minting permissions to the DAO. The DAO could use this to assemble a dataset across 100 individuals. ⁣
 ⁣
-Learn more about Data NFTs on the [Docs](https://docs.oceanprotocol.com/developers/contracts/data-nfts).
+Learn more about Data NFTs on the [Docs](../developers/contracts/data-nfts).
 </details>

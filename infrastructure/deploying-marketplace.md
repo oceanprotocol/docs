@@ -47,7 +47,7 @@ NEXT_PUBLIC_METADATACACHE_URI=https://v4.aquarius.oceanprotocol.com
 
 ### Create a \`Dockerfile\` file and copy the below content into it.
 
-In the following Dockerfile, replace \<YOUR\_GIT\_REPO\_URL> with the url of your Ocean Market fork repository or use "https://github.com/oceanprotocol/market.git" if you want to deploy our standard image of Ocean Market.
+In the following Dockerfile, replace \<YOUR\_GIT\_REPO\_URL> with the url of your Ocean Market fork repository or use "https://github.com/oceanprotocol/market.git" if you want to deploy the standard image of Ocean Market.
 
 <pre class="language-docker" data-title="Dockerfile"><code class="lang-docker">FROM node:16
 <strong>RUN git clone &#x3C;YOUR_GIT_REPO_URL> /usr/app/market

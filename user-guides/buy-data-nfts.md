@@ -32,7 +32,7 @@ The Buy button is enabled only if the connected wallet address has enough OCEAN 
 
 ![Click the large pink Buy button](../.gitbook/assets/market/consume-1.png)
 
-Are you buying an asset on the Polygon network? Then you'll need mOCEAN "matic OCEAN" to buy assets! Watch our tutorial how to get mOCEAN so that you can go shopping on the Ocean Market 🤑🛒
+Are you buying an asset on the Polygon network? Then you'll need mOCEAN "matic OCEAN" to buy assets! Watch this tutorial about how to get mOCEAN so that you can go shopping on the Ocean Market 🤑🛒
 
 {% embed url="https://www.youtube.com/watch?v=W5eIipUHl-w" %}
 Learn how to get mOCEAN

@@ -74,4 +74,4 @@ npm run cli h
 
 <figure><img src="../../.gitbook/assets/cli/usage.png" alt=""><figcaption>Available CLI commands & options</figcaption></figure>
 
-With the Ocean CLI successfully installed and configured, you're ready to dive into its capabilities and unlock the full potential of Ocean Protocol. If you encounter any issues during the setup process or have questions, feel free to seek assistance from our [support](https://discord.com/invite/TnXjkR5) team. 🌊
+With the Ocean CLI successfully installed and configured, you're ready to dive into its capabilities and unlock the full potential of Ocean Protocol. If you encounter any issues during the setup process or have questions, feel free to seek assistance from the [support](https://discord.com/invite/TnXjkR5) team. 🌊

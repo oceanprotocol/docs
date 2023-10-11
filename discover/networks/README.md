@@ -23,7 +23,7 @@ Ocean Protocol is also deployed to Polygon Mainnet, which is another production 
 
 **Bridge**
 
-Check our Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
+Check the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
 
 ### Binance Smart Chain
 
@@ -33,7 +33,7 @@ Ocean Protocol is also deployed to Binance Smart Chain (BSC), which is another p
 
 **Bridge**
 
-Check our BSC Bridge [guide](bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
+Check out the BSC Bridge [guide](bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 

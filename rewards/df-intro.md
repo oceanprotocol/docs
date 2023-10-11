@@ -111,4 +111,4 @@ The table below shows the total amount of OCEAN rewards that will be distributed
 
 ## [GET STARTED DATA FARMING HERE.](https://df.oceandao.org)
 
-### Unsure how? Our [guides](../user-guides/README.md) will show you how to do the basics.
+### Unsure how? These [guides](../user-guides/README.md) will show you how to do the basics.
