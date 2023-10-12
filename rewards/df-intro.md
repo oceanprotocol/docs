@@ -63,7 +63,7 @@ Rewards are paid in OCEAN to contributors actively working to improve Ocean Prot
 
 ### What is Volume DF
 
-[Volume DF](df-volumedf.md#allocating-veocean) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
+[Volume DF](df-volumedf.md#curate-data-in-volume-df) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
 
 You can visit the follow tutorial learn how to [access Volume DF](user-guides/how-to-volumedf.md).  
 

@@ -8,13 +8,13 @@ description: How to research where supply meets demand... 💰🧑‍🏫
 
 ### Simple Truths
 
-A lot of people miss the mark on tokenizing data that actually _sells_. If your goal is to make money, then you have to research target audiences, who's currently buying data, and \*correctly price\* your data to meet that demand.
+A lot of people miss the mark on tokenizing data that actually _sells_. If your goal is to make money, then you have to research target audiences, who's currently buying data, and **correctly price** your data to meet that demand.
 
 To figure out which market segments are paying for data, then it may help you to **go to the Ocean Market and sort by Sales.**
 
 But even then, it's not enough to just publish useful data on Ocean. **You need to market your data** **assets** to close sales.
 
-Have you tried all these things and are still having trouble making money? Never fear! You can enter one of the [data challenges](https://oceanprotocol.com/challenges) to make sweet OCEAN rewards and build your data science skills.
+If you're still encountering challenges in generating income, don't worry! You can enter one of the [data challenges](https://oceanprotocol.com/challenges) to make sweet OCEAN rewards and build your data science skills.
 
 But what if you're a well-heeled company looking to create dApps or source data predictions? You can kickstart the value creation loop by working with Ocean Protocol to [sponsor a data challenge](../user-guides/sponsor-a-data-challenge.md).
 

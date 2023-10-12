@@ -4,7 +4,7 @@ description: Commonly Asked Questions Regarding the Technical Aspects of the Oce
 ---
 ## Developement FAQ
 
-Have some questions about the Ocean Protocol tech-stack?
+Have some questions about the Ocean Protocol tech stack?
 
 Hopefully, you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/EdmenE7eTj) - there are no stupid questions!
 
@@ -28,10 +28,10 @@ To access this data, some technical expertise is required. You can find this inf
 </details>
 
 <details>
-<summary>How can partners and developers use Ocean technology to build their own data marketplaces?</summary>
+<summary>How can collaborators and developers use Ocean technology to build their own data marketplaces?</summary>
 
 Ocean technology is open-source, community-funded, and freely available for use by anyone. 
-Anyone can fork various components from the Ocean [GitHub](https://github.com/oceanprotocol) repository and create their own. Additionally, Ocean empowers dApp operators with great flexibility and control over the fees they charge, allowing you to customize the fee structure to meet your specific needs and ensure your project's sustainability.
+Anyone can fork various components from the Ocean [GitHub](https://github.com/oceanprotocol) repository and create their own. Additionally, Ocean empowers dApp owners with great flexibility and control over the fees they charge, allowing you to customize the fee structure to meet your specific needs and ensure your project's sustainability.
 </details>
 
 <details>

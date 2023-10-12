@@ -137,6 +137,6 @@
     - [Delegate Curation](rewards/user-guides/how-to-delegate.md)
     - [Predict with Challenge DF](rewards/user-guides/how-to-challengedf.md)
 * [🤝 Contribute](contribute/README.md)
-  * [Partners & Collaborators](contribute/projects-using-ocean.md)
+  * [Collaborators](contribute/projects-using-ocean.md)
   * [Contributor Code of Conduct](contribute/code-of-conduct.md)
   * [Legal Requirements](contribute/legal-reqs.md)

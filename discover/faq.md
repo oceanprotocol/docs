@@ -28,7 +28,7 @@ To understand more about Ocean's vision, check out this [blog post](https://blog
 <details>
 <summary>How does Ocean Protocol generate revenue?</summary>
 
-The protocol generates revenue through transaction fees, which are levied on all Ocean component transactions. These fees serve multiple purposes: they fund the ongoing development of Ocean technology and support the buy-and-burn process of the Ocean token.
+The protocol generates revenue through transaction fees. These fees serve multiple purposes: they fund the ongoing development of Ocean technology and support the buy-and-burn process of the Ocean token.
 
 To get a glimpse of the revenue generated on the Polygon network, which is the most frequently used network, you can find detailed information [here](https://polygonscan.com/address/0x042BFbd88c3998282153088604207b2AeF045b43#tokentxns).
 
@@ -59,7 +59,7 @@ This issue is similar to what any digital distribution platform faces. For insta
 <details>
 <summary>Is the Ocean Shipyard funded by $OCEAN?</summary>
 
-Ocean Shipyard is an early-stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build open-source Web3 solutions on Ocean, make valuable data available, build innovations, and create value for the Ocean ecosystem.
+Ocean Shipyard is an early-stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build Web3 solutions on Ocean, make valuable data available, build innovations, and create value for the Ocean ecosystem.
 More info on the [Shipyard](https://oceanprotocol.com/shipyard) page.
 </details>
 
@@ -123,14 +123,14 @@ The Ethereum network has the highest liquidity for $OCEAN.
 <details>
 <summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
 
-All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace.
+All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their dApp.
 
 </details>
 
 <details>
 <summary>How does the ecosystem and the Ocean token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
 
-You are right, all Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their marketplace. But, there is a community fee involved in all transactions hapening in the ecosystem. 
+You are right, all Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their dApp. But, there is a community fee involved in all transactions hapening in the ecosystem.
 
 veOCEAN on the other hand, follows the model of other ve tokens, where it can be used for passive and active staking. By locking up your $OCEAN to veOCEAN, you automatically receive passive staking rewards. You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy (psdnOCEAN), who deploy your veOCEAN at no risk, in order to gain a share of active rewards. Active rewards are based on transaction volume on specific data assets.
 </details>
@@ -163,6 +163,6 @@ However, it's important to note that participants using the Ocean stack are subj
 <details>
 <summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
 
-For partnerships, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
+For collaboration, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
 One member of our team will reach out to you 🤝
 </details>

@@ -34,7 +34,7 @@ Ocean’s tools enable people to privately & securely publish, exchange, and con
 If you're wondering which types of data can be monetized through Ocean Protocol, the answer is that virtually any kind of data can be sold via the platform! 📊🎶📸🎥💼🎫🌐 This includes AI data, ML models, music data, images, videos, trading data, tickets, and essentially anything that can be accessed online.
 {% endhint %}
 
-To find out more about the amazing team behind Ocean, you can visit the [website](https://oceanprotocol.com/about).
+To find out more about the amazing team behind Ocean, you can visit the [website](https://oceanprotocol.com/about-us/foundation).
 
 Now that we've made you curious about our mission and how we're making a difference in the world, you won't want to miss this video featuring our co-founder, [Trent McConaghy](http://www.trent.st/). He'll share some fascinating insights into what we're doing and why it matters.
 

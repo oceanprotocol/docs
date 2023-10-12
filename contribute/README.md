@@ -11,7 +11,7 @@ coverY: 0
 
 ### Report a bug 🐞
 
-Do you think you see a bug in the code? To report a bug that _isn't a vulnerability_, go to the relevant GitHub repository, click on the _Issues_ tab, and select _Bug Report_.
+Have you found a bug in the code? To report a bug that _isn't a vulnerability_, go to the relevant GitHub repository, click on the _Issues_ tab, and select _Bug Report_.
 
 First, make sure that you search existing open + closed issues + PRs to see if your bug has already been reported there. If not, then go ahead and create a new bug report! 🦸
 
@@ -36,7 +36,7 @@ As with bug reports, don't forget to search existing open + closed issues + PRs 
 
 ### Improve core software
 
-It takes a tribe of awesome coders to build the tech stack, and you're invited to pitch in 😊 We'd love to have you contribute to any repository within the `oceanprotocol` [GitHub](https://github.com/oceanprotocol) organization!
+It takes a tribe of awesome coders to build a tech stack, and you're invited to pitch in 😊 We'd love to have you contribute to any repository within the `oceanprotocol` [GitHub](https://github.com/oceanprotocol) organization!
 
 Before you start coding, please follow these basic guidelines:
 
@@ -68,12 +68,11 @@ If you need ANY help, then we're here to talk with you on [Discord](https://disc
 
 ### Improve the docs
 
-The docs repo can always be improved. If you found a mistake or have an improvement to make, then follow the steps in the [contribution workflow](./#your-contribution-workflow) to commit your changes.
+The docs repo can always be improved. If you found a mistake or have an improvement to make, then follow the steps in the [contribution workflow](./#your-contribution-workflow) to submit your changes.
 
 ### Apply for a developer job
 
 Do you REALLY love building on Ocean Protocol? Consider joining us full-time! Our openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
 
 
-
-Check the [Community Page](https://www.oceanprotocol.com/community) for the social media links where you can join the buzz around Ocean or chat with us directly 😊 Toodles!
+Scroll a bit further, and at this page's footer, you'll find the social media links that allow you to join the Ocean community or engage in direct chats with us. 😊 Toodles!
