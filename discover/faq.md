@@ -163,6 +163,6 @@ However, it's important to note that participants using the Ocean stack are subj
 <details>
 <summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
 
-For collaboration, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
+For collaborations, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
 One member of our team will reach out to you 🤝
 </details>
