@@ -131,7 +131,7 @@ On the other hand, the free pricing model gives data consumers access to your as
 
 In this model, datatokens are allocated to a dispenser smart contract, which dispenses data tokens to users at no charge when they access your asset. This is perfect if you want to make your data widely available and encourage collaboration. It's particularly suitable for individuals and organizations working in the public domain or for assets that need to comply with open-access licenses.
 
-The fixed pricing model relies on the [create](https://github.com/oceanprotocol/contracts/blob/d288e3f94cf6ba2be151a3284da0a3606a263bb9/contracts/pools/dispenser/Dispenser.sol#L154) in the smart contract, which securely stores the pricing information for assets published using this model.
+The free pricing model relies on the [create](https://github.com/oceanprotocol/contracts/blob/d288e3f94cf6ba2be151a3284da0a3606a263bb9/contracts/pools/dispenser/Dispenser.sol#L154) in the smart contract, which securely stores the pricing information for assets published using this model.
 
 <details>
 
