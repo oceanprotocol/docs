@@ -24,14 +24,14 @@ Uploader offers a range of powerful features tailored to meet the needs of decen
 
 ### Components
 
-- Uploader: https://github.com/oceanprotocol/decentralized_storage_backend
-- Uploader.js: https://github.com/oceanprotocol/uploader.js
-- Uploader UI: https://github.com/oceanprotocol/uploader-ui-lib
+- [Uploader](https://github.com/oceanprotocol/decentralized_storage_backend)
+- [Uploader.js](https://github.com/oceanprotocol/uploader.js)
+- [Uploader UI](https://github.com/oceanprotocol/uploader-ui-lib)
 
 ### Microservices:
 
-- Filecoin: https://github.com/oceanprotocol/uploader_filecoin (WIP)
-- Arweave: https://github.com/oceanprotocol/uploader_arweave
+- [Filecoin](https://github.com/oceanprotocol/uploader_filecoin) (WIP)
+- [Arweave](https://github.com/oceanprotocol/uploader_arweave)
 
 ### User Workflow
 
@@ -48,14 +48,14 @@ Files are uploaded from the frontend to Uploader, which handles temporary storag
 
 ### API Documentation
 
-Our detailed API documentation in our repos are provided to facilitate seamless integration and interaction with the Uploader. The documentation outlines all API endpoints, payload formats, and example use cases, empowering developers to effectively harness the capabilities of the Uploader solution.
+Documentation is provided in the repos to facilitate seamless integration and interaction with the Uploader. The documentation outlines all API endpoints, payload formats, and example use cases, empowering developers to effectively harness the capabilities of the Uploader solution.
 
 ### Troubleshooting
 
-Did you encounter a problem? Open an issue in our Repos:
+Did you encounter a problem? Open an issue in Ocean Protocol's repos:
 
-- Uploader: https://github.com/oceanprotocol/decentralized_storage_backend/issues
-- Uploader.js: https://github.com/oceanprotocol/uploader.js/issues
-- Filecoin Microservice: https://github.com/oceanprotocol/uploader_filecoin/issues
-- Arweave Microservice: https://github.com/oceanprotocol/uploader_arweave/issues
-- Uploader UI Library: https://github.com/oceanprotocol/uploader-ui-lib/issues
+- [Uploader](https://github.com/oceanprotocol/decentralized_storage_backend/issues)
+- [Uploader.js](https://github.com/oceanprotocol/uploader.js/issues)
+- [Filecoin Microservice](https://github.com/oceanprotocol/uploader_filecoin/issues)
+- [Arweave Microservice](https://github.com/oceanprotocol/uploader_arweave/issues)
+- [Uploader UI Library](https://github.com/oceanprotocol/uploader-ui-lib/issues)
