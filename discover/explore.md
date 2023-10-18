@@ -58,8 +58,7 @@ You can choose from two options:
 
 <summary><mark style="color:blue;"><strong>Tokengate Your dApp or Content</strong></mark><br><br>Are you interested in token gating your dApp or content using an Ocean data NFT? We offer you all the code and support that you need to make this happen.</summary>
 
-Feel free to fork the [Ocean Token Gate template](https://github.com/oceanprotocol/token-gating-template) code and customize it to start building your dApp from scratch. If you already have an existing dApp of yours, then you can also modify it simply to use an Ocean data NFT. The [Ocean Token Gate repo](https://github.com/oceanprotocol/token-gating-template) will be helpful to inform your coding to do this, of course. But we also explain the [smart contract mechanics](../developers/contracts/) of Data NFTs and Datatokens[ in the docs](../developers/contracts/) for you to understand the code better. Remember, we're always here to help guide you with any coding questions on [Discord](https://discord.gg/TnXjkR5).
-
+Feel free to fork the [Ocean token-gating template](https://github.com/oceanprotocol/token-gating-template) code and customize it to start building your dApp from scratch. If you already have an existing dApp of yours, then you can also modify it simply to use an Ocean data NFT.
 </details>
 
 <details>

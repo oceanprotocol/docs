@@ -57,7 +57,7 @@ This issue is similar to what any digital distribution platform faces. For insta
 </details>
 
 <details>
-<summary>Is the Ocean Shipyard funded by $OCEAN?</summary>
+<summary>What is Ocean Shipyard?</summary>
 
 Ocean Shipyard is an early-stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build Web3 solutions on Ocean, make valuable data available, build innovations, and create value for the Ocean ecosystem.
 More info on the [Shipyard](https://oceanprotocol.com/shipyard) page.
@@ -84,26 +84,25 @@ To be fully decentralized means no single point of control, at any level of the 
 <details>
 <summary>Where can we see previous data challenges and submitted solutions?</summary>
 
-You can find a list of past data challenges on the [website](https://oceanprotocol.com/challenges). 
-Accessing the submitted solutions is currently a work in progress, with one solution already available for the [Catalunya](https://catalunya.oceanprotocol.com/) challenge.
+You can find a list of past data challenges on the [website](https://oceanprotocol.com/challenges).
 </details>
 
 ### Tokenomics 
 
 <details>
-<summary>How does the $OCEAN token capture value?</summary>
+<summary>How does the OCEAN token capture value?</summary>
 
 Please see the [token page](https://www.oceanprotocol.com/token) for up-to-date information about OCEAN tokenomics.
 </details>
 
 <details>
-<summary>What is the circulating supply of Ocean token? What is the emission schedule for $OCEAN?</summary>
+<summary>What is the circulating supply of Ocean token? What is the emission schedule for OCEAN?</summary>
 
 All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4-year half-life.
 </details>
 
 <details>
-<summary>Can $OCEAN supply become deflationary?</summary>
+<summary>Can OCEAN supply become deflationary?</summary>
 
 A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
 </details>
@@ -111,13 +110,13 @@ A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-
 <details>
 <summary>Does the OCEAN token also have governance functionality?</summary>
 
-During the Ocean DAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently, there are no governance functions associated with the Ocean Token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+During the OceanDAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently, there are no governance functions associated with the Ocean Token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
 </details>
 
 <details>
-<summary> Which blockchain network currently has the highest liquidity for Ocean?</summary>
+<summary> Which blockchain network currently has the highest liquidity for OCEAN?</summary>
 
-The Ethereum network has the highest liquidity for $OCEAN.  
+The Ethereum network has the highest liquidity for OCEAN.  
 </details>
 
 <details>
@@ -130,9 +129,7 @@ All Ocean modules and components are open-source and freely available to the com
 <details>
 <summary>How does the ecosystem and the Ocean token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
 
-You are right, all Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their dApp. But, there is a community fee involved in all transactions hapening in the ecosystem.
-
-veOCEAN on the other hand, follows the model of other ve tokens, where it can be used for passive and active staking. By locking up your $OCEAN to veOCEAN, you automatically receive passive staking rewards. You can also earn active staking rewards by assigning your veOCEAN directly on datasets or through a proxy (psdnOCEAN), who deploy your veOCEAN at no risk, in order to gain a share of active rewards. Active rewards are based on transaction volume on specific data assets.
+For each consume transaction, the Ocean community gets a small fee. This happens whether OCEAN is used or not. [Here are details](../developers/contracts/fees.md)"
 </details>
 
 ### Data marketplaces

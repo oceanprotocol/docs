@@ -10,7 +10,7 @@ The intentions with all of the updates are to ensure that your project is able t
 
 **Do you have data that you can monetize?** :thinking:
 
-Ocean V3 introduced the new crypto primitives of “data on-ramp” and “data off-ramp” via datatokens. The publisher creates ERC20 datatokens for a dataset (on-ramp). Then, anyone can access that dataset by acquiring and sending datatokens to the publisher via Ocean handshaking (data off-ramp). As a publisher, it’s in your best interest to create and publish useful data — datasets that people want to consume — because the more they consume the more you can **earn**. This is the heart of Ocean utility: connecting data publishers with data consumers :people\_hugging:
+Ocean introduced the new crypto primitives of “data on-ramp” and “data off-ramp” via datatokens. The publisher creates ERC20 datatokens for a dataset (on-ramp). Then, anyone can access that dataset by acquiring and sending datatokens to the publisher via Ocean handshaking (data off-ramp). As a publisher, it’s in your best interest to create and publish useful data — datasets that people want to consume — because the more they consume the more you can **earn**. This is the heart of Ocean utility: connecting data publishers with data consumers :people\_hugging:
 
 The datasets can take one of many shapes. For AI use cases, they may be raw datasets, cleaned-up datasets, feature-engineered **data**, **AI models**, **AI model predictions**, or otherwise. (They can even be other forms of copyright-style IP such as **photos**, **videos**, or **music**!) Algorithms themselves may be sold as part of Ocean’s Compute-to-Data feature.
 
