@@ -1,6 +1,6 @@
 ---
 title: Development FAQ
-description: Frequently Asked Questions About Ocean Technology"
+description: Frequently Asked Questions About Ocean Technology
 ---
 ## Development FAQ
 
@@ -24,7 +24,7 @@ Datatokens are created within the Ocean Protocol ecosystem when you tokenize a d
 <details>
 <summary>How does the datatoken creator make money?</summary>
 
-You can generate revenue as a dataset publisher by selling DataTokens to access your published dataset. For more details, please visit the [community monetization](https://docs.oceanprotocol.com/developers/community-monetization#1.-publishing-and-selling-data) page. 
+You can generate revenue as a dataset publisher by selling datatokens to access your published dataset. For more details, please visit the [community monetization](https://docs.oceanprotocol.com/developers/community-monetization#1.-publishing-and-selling-data) page. 
 </details>
 
 <details>
