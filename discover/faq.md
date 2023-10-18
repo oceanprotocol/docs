@@ -439,9 +439,9 @@ A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-
 
 <details>
 
-<summary>What is the circulating supply of Ocean token? What is the emission schedule for $OCEAN?</summary>
+<summary>What is the emission schedule for $OCEAN?</summary>
 
-All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4-year half-life.
+All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db). The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4-year half-life.
 
 </details>
 
@@ -486,7 +486,7 @@ The Ocean token [supply](https://blog.oceanprotocol.com/control-over-the-ocean-c
 
 <summary>Does OCEAN have a vesting schedule? How were OCEAN tokens allocated during the launch?</summary>
 
-All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4 year half-life.
+All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db ⁣). The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4 year half-life.
 
 </details>
 
@@ -518,7 +518,7 @@ The $OCEAN token is used as the glue for the Ocean ecosystem. A 0.1% or a 0.2% f
 
 <summary>Where can I find information about the tokenomics and economic aspects of the Ocean Protocol project?</summary>
 
-All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4 year half-life.⁣
+All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db). The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4 year half-life.⁣
 
 </details>
 
