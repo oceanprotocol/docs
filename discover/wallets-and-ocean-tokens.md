@@ -12,7 +12,54 @@ If you don't see any Ocean Tokens in your crypto wallet software 🔎 (e.g. Meta
 
 Almost all ERC-20 wallets require these values for adding a custom token:
 
-<table data-full-width="false"><thead><tr><th width="161">Network name</th><th width="444">Contract Address</th><th width="105">Symbol</th><th>Decimals</th></tr></thead><tbody><tr><td><strong>Mainnet</strong></td><td>0x967da4048cD07aB37855c090aAF366e4ce1b9F48</td><td>OCEAN</td><td>18</td></tr><tr><td><strong>Polygon</strong><br><strong>(ex Matic)</strong></td><td>0x282d8efCe846A88B159800bd4130ad77443Fa1A1</td><td>mOCEAN</td><td>18</td></tr><tr><td><strong>BSC</strong><br><strong>BNB Smart Chain</strong></td><td>0xdce07662ca8ebc241316a15b611c89711414dd1a</td><td>OCEAN</td><td>18</td></tr><tr><td><strong>Görli</strong></td><td>0xCfDdA22C9837aE76E0faA845354f33C62E03653a</td><td>OCEAN</td><td>18</td></tr><tr><td><strong>Mumbai</strong></td><td>0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8</td><td>OCEAN</td><td>18</td></tr></tbody></table>
+<table data-full-width="false">
+   <thead>
+      <tr>
+         <th width="161">Network name</th>
+         <th width="444">Contract Address</th>
+         <th width="105">Symbol</th>
+         <th>Decimals</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><strong>Mainnet</strong></td>
+         <td>0x967da4048cD07aB37855c090aAF366e4ce1b9F48</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
+      <tr>
+         <td><strong>Polygon</strong><br><strong>(ex Matic)</strong></td>
+         <td>0x282d8efCe846A88B159800bd4130ad77443Fa1A1</td>
+         <td>mOCEAN</td>
+         <td>18</td>
+      </tr>
+      <tr>
+         <td><strong>BNB</strong><br><strong>BNB Smart Chain</strong></td>
+         <td>0xdce07662ca8ebc241316a15b611c89711414dd1a</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
+      <tr>
+         <td><strong>Görli</strong></td>
+         <td>0xCfDdA22C9837aE76E0faA845354f33C62E03653a</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
+      <tr>
+         <td><strong>Mumbai</strong></td>
+         <td>0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
+      <tr>
+         <td><strong>Sepolia</strong></td>
+         <td>0x1B083D8584dd3e6Ff37d04a6e7e82b5F622f3985</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
+   </tbody>
+</table>
 
 The [OCEAN Token page](https://oceanprotocol.com/token) at oceanprotocol.com has further details.
 
