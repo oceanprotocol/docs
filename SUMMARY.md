@@ -92,6 +92,7 @@
   - [Compute to data](developers/compute-to-data/README.md)
     - [Architecture](developers/compute-to-data/compute-to-data-architecture.md)
     - [Datasets & Algorithms](developers/compute-to-data/compute-to-data-datasets-algorithms.md)
+    - [Jobs](developers/compute-to-data/compute-job.md)
     - [Writing Algorithms](developers/compute-to-data/compute-to-data-algorithms.md)
     - [Compute Options](developers/compute-to-data/compute-options.md)
   - [Aquarius](developers/aquarius/README.md)
