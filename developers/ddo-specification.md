@@ -153,8 +153,8 @@ A DDO in Ocean has these required attributes:
 
   "nft": {
     "address": "0x123",
-    "name": "Ocean Protocol Asset v4",
-    "symbol": "OCEAN-A-v4",
+    "name": "Ocean Protocol Asset",
+    "symbol": "OCEAN-A",
     "owner": "0x0000000",
     "state": 0,
     "created": "2000-10-31T01:30:00",
@@ -373,8 +373,8 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 {
   "nft": {
     "address": "0x000000",
-    "name": "Ocean Protocol Asset v4",
-    "symbol": "OCEAN-A-v4",
+    "name": "Ocean Protocol Asset",
+    "symbol": "OCEAN-A",
     "owner": "0x0000000",
     "state": 0,
     "created": "2000-10-31T01:30:00Z"

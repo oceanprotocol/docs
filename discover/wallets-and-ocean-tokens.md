@@ -35,7 +35,7 @@ Almost all ERC-20 wallets require these values for adding a custom token:
          <td>18</td>
       </tr>
       <tr>
-         <td><strong>BSC</strong><br><strong>Binance Smart Chain</strong></td>
+         <td><strong>BNB</strong><br><strong>BNB Smart Chain</strong></td>
          <td>0xdce07662ca8ebc241316a15b611c89711414dd1a</td>
          <td>OCEAN</td>
          <td>18</td>

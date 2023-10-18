@@ -29,7 +29,7 @@ layout: landing
     </tr>
     <tr>
       <td><a href="user-guides/">user-guides</a></td>
-      <td>Follow our step-by-step instructions for a no-code solution to unleash the power of Ocean Protocol technologies!</td>
+      <td>Follow the step-by-step instructions for a no-code solution to unleash the power of Ocean Protocol technologies!</td>
       <td></td>
       <td></td>
       <td><a href="user-guides/">user-guides</a></td>

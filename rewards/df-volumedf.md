@@ -92,6 +92,6 @@ The asset may be of any type — dataset, an algorithm for Compute-to-Data, or a
 
 To qualify for DF, an asset must also:
 
-* Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) by OPF to [production networks](../discover/networks/README.md)
+* Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json) by OPF to [production networks](../discover/networks/README.md)
 * The asset must be listed on Ocean Market
 * Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)

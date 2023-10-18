@@ -34,7 +34,7 @@ Before you can publish or purchase assets, you will need a crypto wallet. As Met
 
 ![Manage tokens](../../.gitbook/assets/wallet/manage-tokens.png)
 
-You can also watch our [tutorial video snippets](https://www.youtube.com/playlist?list=PL\_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help setting up MetaMask.
+You can also watch this [video tutorial](https://www.youtube.com/playlist?list=PL\_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help setting up MetaMask.
 
 ### Set Up Custom Network
 
