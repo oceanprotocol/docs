@@ -10,7 +10,7 @@ Ensure that the Signer object (signer in this case) you're passing to the functi
 
 1. Setting up a Signer: with MetaMask or similar browser wallets, you can set up an ethers signer as follows:
 
-```
+```javascript
 const provider = new Web3Provider(window.ethereum)
 const signer = provider.getSigner()
 ```
@@ -18,11 +18,14 @@ const signer = provider.getSigner()
 2. Initialize UploaderClient:
 
 3. HTML Setup: Provide a file input for users to select multiple files.
-```
+
+```html
 <input type="file" multiple id="fileInput" />
 ```
+
 4. JavaScript: Get the files from the input and call the upload function.
-```
+
+```javascript
 document.getElementById('fileInput').addEventListener('change', async function () {
   const files = this.files
   await uploadBrowser(quoteId, tokenAddress, files)
