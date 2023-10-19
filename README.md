@@ -20,11 +20,11 @@ layout: landing
   </thead>
   <tbody>
     <tr>
-      <td><a href="discover">discover</a></td>
+      <td><a href="discover/">discover</a></td>
       <td>Learn how Ocean Protocol transforms data sharing and monetization with its powerful Web3 open source tools.</td>
       <td></td>
       <td></td>
-      <td><a href="discover">discover</a></td>
+      <td><a href="discover/">discover</a></td>
       <td><a href=".gitbook/assets/cover/discover_card.png">discover_card.png</a></td>
     </tr>
     <tr>
