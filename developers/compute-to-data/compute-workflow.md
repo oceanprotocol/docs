@@ -6,7 +6,11 @@ description: Understanding the Compute-to-Data (C2D) Workflow
 
 🚀  Now that we've introduced the key actors and provided an overview of the process, it's time to delve into the nitty-gritty of the compute workflow.🌟 We'll dissect each step, examining the inner workings of Compute-to-Data (C2D). From data selection to secure computations, we'll leave no stone unturned in this exploration. 💫 Get ready to uncover the intricacies of C2D and how it utilizes various actors and components for a blend of privacy and efficiency.
 
-Ready for the deep dive? Let's get started! 🌊
+For visual clarity, here's an image of the workflow in action! 🖼️✨
+
+<figure><img src="../../.gitbook/assets/c2d/c2d_detailed_flow.png" alt=""><figcaption><p>Compute detailed flow diagram</p></figcaption></figure>
+
+Below, we'll outline each step in detail 📝
 
 ## Starting a C2D Job
 1. The consumer initiates a compute-to-data job by selecting the desired data asset and algorithm. 
@@ -56,7 +60,3 @@ Ready for the deep dive? Let's get started! 🌊
 33. The operator service shares the results with the provider.
 34. The provider then delivers the results to the asset consumer.
 
-
-For visual clarity, here's an image of the workflow in action! 🖼️✨
-
-<figure><img src="../../.gitbook/assets/c2d/c2d_compute_job.png" alt=""><figcaption><p>Compute detailed flow diagram</p></figcaption></figure>
