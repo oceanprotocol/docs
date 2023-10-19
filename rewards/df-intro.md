@@ -30,7 +30,7 @@ Each Data Farming round has a pool of OCEAN rewards, where 50% of the pool is pa
 
 ### What are Passive Rewards?
 
-Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.  
+Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN.  
 
 veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets, or completing prediction challenges.  
 
@@ -63,7 +63,7 @@ Rewards are paid in OCEAN to contributors actively working to improve Ocean Prot
 
 ### What is Volume DF
 
-[Volume DF](df-volumedf.md#curate-data-in-volume-df) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
+[Volume DF](df-volumedf.md#curate-data-in-volume-df) rewards Data Farmers that allocate their veOCEAN to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
 
 You can visit the follow tutorial learn how to [access Volume DF](user-guides/how-to-volumedf.md).  
 

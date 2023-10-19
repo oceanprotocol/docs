@@ -28,7 +28,7 @@ To understand more about Ocean's vision, check out this [blog post](https://blog
 <details>
 <summary>How does Ocean Protocol generate revenue?</summary>
 
-The protocol generates revenue through transaction fees. These fees serve multiple purposes: they fund the ongoing development of Ocean technology and support the buy-and-burn process of the Ocean token.
+The protocol generates revenue through transaction fees. These fees serve multiple purposes: they fund the ongoing development of Ocean technology and support the buy-and-burn process of the OCEAN.
 
 To get a glimpse of the revenue generated on the Polygon network, which is the most frequently used network, you can find detailed information [here](https://polygonscan.com/address/0x042BFbd88c3998282153088604207b2AeF045b43#tokentxns).
 
@@ -71,11 +71,11 @@ Yes. Ocean Protocol understands that some data is too sensitive to be shared —
 
 
 <details>
-<summary>To what extent is Ocean becoming fully decentralized?</summary>
+<summary>To what extent is OCEAN becoming fully decentralized?</summary>
 
-To be fully decentralized means no single point of control, at any level of the stack. The OCEAN token is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
+To be fully decentralized means no single point of control, at any level of the stack. OCEAN is already fully decentralized. The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware. The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
 
-1. Details about the [Ocean Token](https://oceanprotocol.com/about-us/ocean-token).
+1. Details about the [OCEAN](https://oceanprotocol.com/about-us/ocean-token).
 2. Details about the [Core Stack](../developers/contracts/README.md).
 3. Details about [Data Farming](../rewards/README.md).
   
@@ -90,13 +90,13 @@ You can find a list of past data challenges on the [website](https://oceanprotoc
 ### Tokenomics 
 
 <details>
-<summary>How does the OCEAN token capture value?</summary>
+<summary>How does OCEAN capture value?</summary>
 
 Please see the [token page](https://www.oceanprotocol.com/token) for up-to-date information about OCEAN tokenomics.
 </details>
 
 <details>
-<summary>What is the circulating supply of Ocean token? What is the emission schedule for OCEAN?</summary>
+<summary>What is the circulating supply of OCEAN? What is the emission schedule for OCEAN?</summary>
 
 All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db) with approximately 700 million Ocean in circulation. The remaining 51% of the supply is earmarked on an emission schedule identical to Bitcoin's emission mechanism, including the 4-year half-life.
 </details>
@@ -104,13 +104,13 @@ All 1.41 Billion Ocean have been [minted](https://blog.oceanprotocol.com/control
 <details>
 <summary>Can OCEAN supply become deflationary?</summary>
 
-A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of Ocean token, the Ocean token supply would deflate.
+A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of OCEAN, the supply would deflate.
 </details>
 
 <details>
-<summary>Does the OCEAN token also have governance functionality?</summary>
+<summary>Does OCEAN also have governance functionality?</summary>
 
-During the OceanDAO grants program (2021-2022), the Ocean token was used for community voting and governance. Currently, there are no governance functions associated with the Ocean Token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with the Ocean token will be explored.
+During the OceanDAO grants program (2021-2022), OCEAN was used for community voting and governance. Currently, there are no governance functions associated with the token. In the future, when there is a broader adoption of Ocean technology and a vibrant community and ecosystem has formed around Ocean, further options for community governance with OCEAN will be explored.
 </details>
 
 <details>
@@ -120,14 +120,14 @@ The Ethereum network has the highest liquidity for OCEAN.
 </details>
 
 <details>
-<summary>Can the Ocean tech stack be used without utilizing the OCEAN token?</summary>
+<summary>Can the Ocean tech stack be used without utilizing OCEAN?</summary>
 
 All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their dApp.
 
 </details>
 
 <details>
-<summary>How does the ecosystem and the Ocean token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
+<summary>How does the ecosystem and the token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
 
 For each consume transaction, the Ocean community gets a small fee. This happens whether OCEAN is used or not. [Here are details](../developers/contracts/fees.md)"
 </details>
@@ -151,7 +151,7 @@ Yes there is - the [Autobot](https://autobotocean.com/) one.
 
 The Ocean Market has consistently served as a showcase for the practical application of Ocean technology. Moreover, it has the potential to set a precedent for the development of other marketplaces within the Ocean ecosystem.
 
-However, it's important to note that participants using the Ocean stack are subject to transaction fees, which vary depending on the chosen token. These fees serve the dual purpose of furthering the development of Ocean technology and facilitating the buy-and-burning of the Ocean token. 
+However, it's important to note that participants using the Ocean stack are subject to transaction fees, which vary depending on the chosen token. These fees serve the dual purpose of furthering the development of Ocean technology and facilitating the buy-and-burning of OCEAN. 
 </details>
 
 

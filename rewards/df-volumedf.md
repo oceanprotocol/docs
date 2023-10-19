@@ -11,13 +11,13 @@ description: >-
 
 If you obtain veOCEAN to only get passive yield, then you're leaving money on the table.  
 
-Volume DF rewards Data Farmers that allocate their veOCEAN tokens to Ocean ecosystem assets.  
+Volume DF rewards Data Farmers that allocate their veOCEAN to Ocean ecosystem assets.  
 
 It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **Volume DF yields depend on the sales produced by these assets and allocations made.**  
 
 ## Crops of Data
 
-Data Farming rewards farmers that allocate their veOCEAN tokens to assets that **generate revenue** in the Ocean ecosystem. (no revenue, no rewards) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the Allocation Power** when you allocate to an asset that you publish!
+Data Farming rewards farmers that allocate their veOCEAN to assets that **generate revenue** in the Ocean ecosystem. (no revenue, no rewards) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the Allocation Power** when you allocate to an asset that you publish!
 
 Thus, if you really want to max out Volume DF APY:
 1. Lock your OCEAN for 4 years to receive 100% voting power.

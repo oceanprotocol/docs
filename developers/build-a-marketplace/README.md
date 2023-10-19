@@ -30,7 +30,7 @@ The tutorial covers:
 If you’re completely unfamiliar with Ocean Market or web3 applications in general, you will benefit from reading these guides first:
 
 * To use your clone of Ocean Market, you’ll need a [wallet](../../discover/wallets/README.md). We recommend [getting set up with metamask](../../discover/wallets/metamask-setup.md).
-* You’ll also need some [Ocean tokens on a testnet](../../discover/wallets-and-ocean-tokens.md) to use your marketplace.
+* You’ll also need some [OCEAN on a testnet](../../discover/wallets-and-ocean.md) to use your marketplace.
 * When you have the testnet tokens, have a go at [publishing a data NFT](../../user-guides/publish-data-nfts.md) on Ocean Market.
 * Run through the process of [consuming a data asset](../../user-guides/buy-data-nfts.md) on Ocean Market.
 

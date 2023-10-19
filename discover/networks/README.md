@@ -7,13 +7,13 @@ description: All the public networks the Ocean Protocol contracts are deployed t
 
 Ocean Protocol contracts are deployed on multiple public networks. You can always find the most up-to-date deployment addresses for all individual contracts in the [address.json](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json).
 
-In each network, whether it's the Ethereum mainnet, a testnet, or the Polygon/Matic network, you'll need ETH or Matic to pay for gas and OCEAN for certain actions on the Ocean Protocol network. The Ethereum mainnet and the Polygon network are both live networks and the tokens on these networks have real value. However, the tokens on the test networks are not of real value and are only used for testing purposes. You can obtain testnet ETH and OCEAN tokens from faucets, which are services that provide small amounts of tokens for free.
+In each network, whether it's the Ethereum mainnet, a testnet, or the Polygon/Matic network, you'll need ETH or Matic to pay for gas and OCEAN for certain actions on the Ocean Protocol network. The Ethereum mainnet and the Polygon network are both live networks and the tokens on these networks have real value. However, the tokens on the test networks are not of real value and are only used for testing purposes. You can obtain testnet ETH and OCEAN from faucets, which are services that provide small amounts of tokens for free.
 
 ### Ethereum Mainnet
 
 The Ethereum mainnet is a production network, which means that it is a live and operational network that handles real transactions and has actual economic value. To connect to the Ethereum mainnet using a wallet such as MetaMask, you can click on the network name dropdown and select Ethereum mainnet from the list of available networks.
 
-<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th></th></tr></thead><tbody><tr><td>OCEAN Token</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th></th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
 
 ### Polygon Mainnet
 
