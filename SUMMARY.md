@@ -9,7 +9,7 @@
     - [Set Up MetaMask Wallet](discover/wallets/metamask-setup.md)
   - [Networks](discover/networks/README.md)
     - [Bridges](discover/networks/bridges.md)
-  - [Manage Your OCEAN](discover/wallets-and-ocean-tokens.md)
+  - [Manage Your OCEAN](discover/wallets-and-ocean.md)
   - [Glossary](discover/glossary.md)
   - [FAQ](discover/faq.md)
 - [📚 User Guides](user-guides/README.md)

@@ -27,4 +27,4 @@ The Ocean Market is a place for buyers + sellers of top-notch data and algorithm
 
 * [Wallet Basics](../discover/wallets/README.md) 👛
 * [Set Up MetaMask](../discover/wallets/metamask-setup.md) 🦊
-* [Manage Your OCEAN](../discover/wallets-and-ocean-tokens.md) 🪙
+* [Manage Your OCEAN](../discover/wallets-and-ocean.md) 🪙
