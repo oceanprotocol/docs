@@ -7,7 +7,7 @@ description: Frequently Asked Questions about Data Farming
 ### Guides
 <details>
 
-<summary>I'm new to Ocean and I want to stake my OCEAN tokens. Can you show me how? Where can I learn about APY and locks?</summary>
+<summary>I'm new to Ocean and I want to stake my OCEAN. Can you show me how? Where can I learn about APY and locks?</summary>
 
 Absolutely, we've adopted the voting escrowed system from Curve Finance (veCRV) and created veOCEAN.
 
@@ -24,7 +24,7 @@ We cannot offer guidance as how to allocate your voting power, that's your decis
 ### Basics
 <details>
 
-<summary>Are veOCEAN tokens tradeable or have a market price?</summary>
+<summary>Are veOCEAN tradeable or have a market price?</summary>
 
 No. They cannot be traded, transferred, or sold. ⁣
 ⁣
@@ -55,10 +55,10 @@ You can find a list of [all supported chains here](../discover/networks/README.m
 
 <details>
 
-<summary>What is veOcean and staking in context of Ocean Protocol? </summary>
+<summary>What is veOCEAN and staking in context of Ocean Protocol? </summary>
 
-[veOCEAN](df-veocean.md) (vote-escrowed OCEAN) is a special token in the Ocean Protocol ecosystem. Users can obtain veOCEAN by Locking their OCEAN tokens for a specific period of time. Their OCEAN cannot be accessed during this time as a sign of conviction that lets them engage with the network. Longer lock periods for veOCEAN typically yield higher rewards.
-You can lock your Ocean Token at - [df.oceandao.org](https://df.oceandao.org)
+[veOCEAN](df-veocean.md) (vote-escrowed OCEAN) is a special token in the Ocean Protocol ecosystem. Users can obtain veOCEAN by Locking their OCEAN for a specific period of time. Their OCEAN cannot be accessed during this time as a sign of conviction that lets them engage with the network. Longer lock periods for veOCEAN typically yield higher rewards.
+You can lock your OCEAN at - [df.oceandao.org](https://df.oceandao.org)
 
 </details>
 
@@ -73,7 +73,7 @@ You will get passive rewards by default when you lock tokens. On top of that, yo
 
 <details>
 
-<Summary>I locked my OCEAN for veOcean but can't see the rewards. What am I missing?</Summary>
+<Summary>I locked my OCEAN for veOCEAN but can't see the rewards. What am I missing?</Summary>
 
 Please hang in there and stay patient, as it can take almost two weeks to receive your first reward. 😊
   
@@ -83,7 +83,7 @@ Please hang in there and stay patient, as it can take almost two weeks to receiv
 
 <summary>If I stake my Ocean for 6 months and the price of Ocean goes up during that time, will my staked tokens increase in value as well?</summary>
 
-Yes. When you lock Ocean tokens, you'll receive them back at the end of the lock-up period. If the value increases during this time, your Ocean tokens will appreciate in worth. The same principle applies in reverse if the value decreases
+Yes. When you lock OCEAN, you'll receive them back at the end of the lock-up period. If the value increases during this time, your OCEAN will appreciate in worth. The same principle applies in reverse if the value decreases
 
 </details>
 
@@ -112,7 +112,7 @@ You can also earn active staking rewards by assigning your veOCEAN directly on d
 
 <details>
 
-<summary>Why the ratio between psdnOCEAN and OCEAN tokens is not close to 1:1?</summary>
+<summary>Why the ratio between psdnOCEAN and OCEAN is not close to 1:1?</summary>
 
 The ratio stands at 80% to 20%, creating an imbalanced pool that minimizes price fluctuations. You might find this [resource](https://blog.oceanprotocol.com/psdnocean-the-first-liquid-staking-wrapper-by-the-h2o-team-is-now-live-a3330e15fa5c) valuable.
 
@@ -132,7 +132,7 @@ You can convert psdnOCEAN back to OCEAN using the Balancer AMM liquidity [pool](
 
 <details>
 
-<summary>What's the amount of veOcean one can get for locking 1 Ocean token?</summary>
+<summary>What's the amount of veOCEAN one can get for locking 1 OCEAN?</summary>
 
 1 veOCEAN if you lock for 4 years. Learn more about VeOCEAN [here](df-veocean.md).
   
@@ -148,11 +148,11 @@ You can't withdraw before the [unlock date](df-veocean.md).
 
 <details>
 
-<summary>Is there a way to transform VeOcean to Ocean gradually over the lock period?</summary>
+<summary>Is there a way to transform veOCEAN to OCEAN gradually over the lock period?</summary>
 
-No, you can't convert your VeOcean to Ocean during the lock period. When the lock period concludes, you gain access to all your locked Ocean tokens.  
+No, you can't convert your veOCEAN to OCEAN during the lock period. When the lock period concludes, you gain access to all your locked OCEAN.  
 
-To learn more about VeOcean, check out this [resource](df-veocean).
+To learn more about veOCEAN, check out this [resource](df-veocean).
   
 </details>
 
@@ -168,7 +168,7 @@ When [gas](https://www.useweb3.xyz/gas) is cheap.
 
 <details>
 
-<summary>When I claim my Ocean tokens, do I need to restake them manually, or are they auto-compounded?</summary>
+<summary>When I claim my OCEAN, do I need to restake them manually, or are they auto-compounded?</summary>
 
 They are not auto-compounded.
 
@@ -198,7 +198,7 @@ To boost your APY, consider locking your OCEAN for a more extended period. It's 
 
 <details>
 
-<summary>Could you explain the benefits of staking OCEAN tokens and how the APY is calculated?</summary>
+<summary>Could you explain the benefits of staking OCEAN and how the APY is calculated?</summary>
 
 Yes, You can find the details in these resources.⁣
 1. [Benefits](df-veocean).
@@ -284,9 +284,9 @@ However, your voting power is counted progressively throughout the week and requ
 
 <summary>Are there any risks associated with Active Rewards?</summary>
 
-When it comes to active staking, you aren't exposed to additional risks. Your veOCEAN tokens remain securely locked, and your role is to curate datasets by allocating them.
+When it comes to active staking, you aren't exposed to additional risks. Your veOCEAN remain securely locked, and your role is to curate datasets by allocating them.
 
-As with any system, inherent risks exist. In terms of the liquidity you provide, rest assured that we have implemented battle-tested contracts, protecting assets worth billions, including veCRV. With this model, there is no liquidity risk, and you are shielded from losing your OCEAN due to Impermanent Loss (IL); your OCEAN tokens are held securely in lock.
+As with any system, inherent risks exist. In terms of the liquidity you provide, rest assured that we have implemented battle-tested contracts, protecting assets worth billions, including veCRV. With this model, there is no liquidity risk, and you are shielded from losing your OCEAN due to Impermanent Loss (IL); your OCEAN are held securely in lock.
 
 More info [here](user-guides/how-to-volumedf.md).
 
@@ -323,7 +323,7 @@ Caveat: it’s no at least in theory! Sometimes there may be tweaks if there is 
 
 <summary>What is the percentage of tokens currently staked?</summary>
 
-You can find the statistics for the number of locked tokens [here](https://autobotocean.com/veOcean). As of September 2023, there are approximately 700 million Ocean tokens in circulation, out of which approximately 30 million have been locked. ⁣
+You can find the statistics for the number of locked tokens [here](https://autobotocean.com/veOcean). As of September 2023, there are approximately 700 million OCEAN in circulation, out of which approximately 30 million have been locked. ⁣
 
 </details>
 

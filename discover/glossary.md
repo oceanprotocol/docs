@@ -20,7 +20,7 @@ Ocean Protocol is a decentralized data exchange protocol that enables individual
 
 <summary>OCEAN</summary>
 
-The Ocean Protocol token (OCEAN) is a utility token used in the Ocean Protocol ecosystem. It serves as a medium of exchange and a unit of value for data services in the network. Participants in the Ocean ecosystem can use OCEAN tokens to buy and sell data, stake on data assets, and participate in the governance of the protocol.
+The Ocean Protocol's token (OCEAN) is a utility token used in the Ocean Protocol ecosystem. It serves as a medium of exchange and a unit of value for data services in the network. Participants in the Ocean ecosystem can use OCEAN to buy and sell data, stake on data assets, and participate in the governance of the protocol.
 
 </details>
 
@@ -139,7 +139,7 @@ In exchange for locking tokens, users can earn rewards. The amount of reward dep
 
 <summary>Passive Rewards</summary>
 
-When a user locks their OCEAN tokens for a finite period of time, they get veOCEAN tokens in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../rewards/df-intro.md#what-are-passive-rewards). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user locks their OCEAN for a finite period of time, they get veOCEAN in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../rewards/df-intro.md#what-are-passive-rewards). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
@@ -147,7 +147,7 @@ When a user locks their OCEAN tokens for a finite period of time, they get veOCE
 
 <summary>Volume DF</summary>
 
-When a user allocates veOCEAN tokens to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../rewards/df-intro.md#what-is-volume-df) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../rewards/df-intro.md#what-is-volume-df) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
@@ -165,7 +165,7 @@ These rewards are classified as [Challenge DF](../rewards/df-intro.md#what-is-ch
 
 <summary>H2O</summary>
 
-[H2O](https://www.h2odata.xyz/) is a decentralized protocol that introduced the first non-pegged stable asset, $H2O. Initially, it is backed by the OCEAN token but there are plans to be backed by other data tokens.
+[H2O](https://www.h2odata.xyz/) is a decentralized protocol that introduced the first non-pegged stable asset, $H2O. Initially, it is backed by OCEAN but there are plans to be backed by other data tokens.
 
 The H2O non-pegged stable asset is a friendly fork of RAI. Whereas RAI uses ether (ETH) as its asset for collateral, H2O uses OCEAN. The price of H2O is managed by an algorithm that rebalances to bring the redemption price close to the market price and participants are incentivized to aid in this process. Traditional stable assets are pegged to a price such as 1 USD. In contrast, RAI (and soon H2O) are free-floating but typically settle around a price; for RAI this has been \~$3.
 

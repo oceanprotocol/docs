@@ -58,7 +58,7 @@ This offers contributors a variety of ways to help Ocean Protocol grow and incre
 
 #### Curate Data with Volume DF
 
-If you have locked your OCEAN tokens in exchange for veOCEAN, this is the ideal opportunity for you to utilize those veOCEAN tokens to earn higher yield.
+If you have locked your OCEAN in exchange for veOCEAN, this is the ideal opportunity for you to utilize those veOCEAN to earn higher yield.
 
 You can learn about [the design of Volume DF](df-volumedf.md) to learn about it's substreams. Here, curators earn rewards for curating datasets that are driving sales and helping Ocean Protocol achieve traction.
 
@@ -82,7 +82,7 @@ The user guide on [how to Challenge DF](user-guides/how-to-challengedf.md) will 
 
 ## Further Reading
 
-Finally, if you want to continue expanding your knowledge on OCEAN token emissions, APY estimates, and get useful answers to some of the most common questions, you can read the following:
+Finally, if you want to continue expanding your knowledge on OCEAN emissions, APY estimates, and get useful answers to some of the most common questions, you can read the following:
 
 [Emissions & APYs](df-emissions-apys.md) will provide you will information about how OCEAN will be released over time through the Data Farming program and provide you with APY studies.
 
