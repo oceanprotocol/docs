@@ -4,7 +4,7 @@ section: developers
 description: Understanding the Compute-to-Data (C2D) Workflow
 ---
 
-🚀  Now that we've introduced the key actors and provided an overview of the process, it's time to delve into the nitty-gritty of the compute workflow.🌟 We'll dissect each step, examining the inner workings of Compute-to-Data (C2D). From data selection to secure computations, we'll leave no stone unturned in this exploration. 💫 Get ready to uncover the intricacies of C2D and how it utilizes various actors and components for a blend of privacy and efficiency.
+🚀  Now that we've introduced the key actors and provided an overview of the process, it's time to delve into the nitty-gritty of the compute workflow. We'll dissect each step, examining the inner workings of Compute-to-Data (C2D). From data selection to secure computations, we'll leave no stone unturned in this exploration. 
 
 For visual clarity, here's an image of the workflow in action! 🖼️✨
 
