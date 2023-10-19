@@ -38,7 +38,7 @@ When a user exchanges a [datatoken](datatokens.md) for the privilege of download
    * You can retrieve them when calling the initialize endpoint.
    * Eg: A provider can charge a fixed fee of 10 USDT per consume, irrespective of the pricing schema used (e.g., fixed rate with ETH, BTC, dispenser).
 4. **Ocean Community** Fee
-   * Ocean's smart contracts collect **Ocean Community fees** during order operations. These fees are reinvested in community projects and distributed to the veOcean holders through Data Farming.
+   * Ocean's smart contracts collect **Ocean Community fees** during order operations. These fees are reinvested in community projects and distributed to the veOCEAN holders through Data Farming.
    * This fee is set at the [smart contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/communityFee/OPFCommunityFeeCollector.sol) level.
    * It can be updated by Ocean Protocol Foundation. See details in the [smart contracts](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/FactoryRouter.sol#L391-L407).
 

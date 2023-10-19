@@ -11,7 +11,7 @@ description: >-
 
 "ve" stands for <mark style="color:orange;">**vote escrowed**</mark>. And the "vote" part of "ve" and veOCEAN is what you really need to pay attention to in order to truly understand the function of this token.
 
-You see, when you acquire veOCEAN via locking your OCEAN tokens in the Data Farming dApp, the intended use is to **vote on your favorite assets** in the Ocean ecosystem!
+You see, when you acquire veOCEAN via locking your OCEAN in the Data Farming dApp, the intended use is to **vote on your favorite assets** in the Ocean ecosystem!
 
 When you allocate to assets that sell, then **you get a portion of the sales**!
 
@@ -32,9 +32,9 @@ veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefi
 
 Users can lock their OCEAN for different lengths of time to gain more veOCEAN **voting power**. The Data Farming dApp is designed to lock OCEAN for **a minimum of 2 weeks and a maximum of four years** (for max rewards). The longer you lock your OCEAN, the more veOCEAN + OCEAN rewards you get!
 
-On the dApp's [veOCEAN page](https://df.oceandao.org/veocean), the "Lock Multiplier" represents the percentage amount of veOCEAN tokens received per OCEAN token locked.
+On the dApp's [veOCEAN page](https://df.oceandao.org/veocean), the "Lock Multiplier" represents the percentage amount of veOCEAN received per OCEAN locked.
 
-When users commit to locking their OCEAN tokens for an extended time duration, they are rewarded with an increased amount of veOCEAN tokens. This incentivizes users to have act with strong network support and confidence in the ecosystem.
+When users commit to locking their OCEAN for an extended time duration, they are rewarded with an increased amount of veOCEAN. This incentivizes users to have act with strong network support and confidence in the ecosystem.
 
 | Year | Lock Multiplier | veOCEAN |
 | ---- | --------------- | ------- |
@@ -53,7 +53,7 @@ Your veOCEAN balance will slowly start declining as soon as you receive it.
 
 veOCEAN balance decreases linearly over time until the Lock End Date. When your lock time has lapsed by 50%, you will have 50% of your original veOCEAN balance.
 
-When your lock time ends your veOCEAN balance will hit 0, and your OCEAN tokens can be withdrawn.
+When your lock time ends your veOCEAN balance will hit 0, and your OCEAN can be withdrawn.
 
 If you lock 1.0 OCEAN for 4 years, you get 1.0 veOCEAN at the start.
 
@@ -100,9 +100,9 @@ Put another way, from the time you lock OCEAN, you must wait at least a week, an
 
 veOCEAN is architected to be locked (i.e. 'staked') for a certain period of time and cannot be transferred or sold during the lock time that is determined by each user.
 
-So it's important to note that: **"you will not be able to retrieve your locked OCEAN tokens until the Lock End Date you selected on the dApp!**
+So it's important to note that: **"you will not be able to retrieve your locked OCEAN until the Lock End Date you selected on the dApp!**
 
-After the Lock End Date, then you can withdraw your principal OCEAN tokens on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
+After the Lock End Date, then you can withdraw your principal OCEAN on the [veOCEAN page](https://df.oceandao.org/veocean) on the left side panel.
 
 ### Flow of Value
 

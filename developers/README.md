@@ -21,4 +21,4 @@ These [smart contracts](contracts/README.md) form the backbone of Ocean Protocol
 
 <figure><img src="../.gitbook/assets/contracts/smart-contracts.png" alt=""><figcaption><p>Smart Contracts</p></figcaption></figure>
 
-Now, if you're new to the world of web3 and blockchain technologies, fear not! We've got you covered. Before diving into the depths of Ocean Protocol, we recommend starting with some introductory guides. These [guides](../user-guides/README.md) will gently introduce you to the magical world of [web3](../discover/wallets/README.md) and help you understand the [basics](../discover/wallets-and-ocean-tokens.md) before you embark on your epic data-driven adventure.
+Now, if you're new to the world of web3 and blockchain technologies, fear not! We've got you covered. Before diving into the depths of Ocean Protocol, we recommend starting with some introductory guides. These [guides](../user-guides/README.md) will gently introduce you to the magical world of [web3](../discover/wallets/README.md) and help you understand the [basics](../discover/wallets-and-ocean.md) before you embark on your epic data-driven adventure.

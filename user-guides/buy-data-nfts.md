@@ -28,7 +28,7 @@ Once you're confident that the dataset meets your requirements, you're ready to 
 
 #### Step 1 - Buy the asset 🫰
 
-The Buy button is enabled only if the connected wallet address has enough OCEAN tokens to purchase the asset.
+The Buy button is enabled only if the connected wallet address has enough OCEAN to purchase the asset.
 
 ![Click the large pink Buy button](../.gitbook/assets/market/consume-1.png)
 
@@ -38,11 +38,11 @@ Are you buying an asset on the Polygon network? Then you'll need mOCEAN "matic O
 Learn how to get mOCEAN
 {% endembed %}
 
-#### Step 2 - Confirm the 1st of 3 transactions - Allow access to OCEAN tokens
+#### Step 2 - Confirm the 1st of 3 transactions - Allow access to OCEAN
 
-![Transaction 1: Give the smart contract permission to access OCEAN tokens](../.gitbook/assets/market/consume-2.png)
+![Transaction 1: Give the smart contract permission to access OCEAN](../.gitbook/assets/market/consume-2.png)
 
-#### Step 3 - Confirm the 2nd of 3 transactions - Buy the asset in exchange for OCEAN tokens 💸
+#### Step 3 - Confirm the 2nd of 3 transactions - Buy the asset in exchange for OCEAN 💸
 
 ![Transaction 2: Buy the datatoken giving you access to the asset](../.gitbook/assets/market/consume-3.png)
 

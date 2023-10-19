@@ -69,7 +69,7 @@ To initiate the dataset publishing process, we'll start by updating the helper [
 ```
 
 {% hint style="info" %}
-The provided example creates a consumable asset with a predetermined price of 2 OCEAN tokens. If you wish to modify this and create an asset that is freely accessible, you can do so by replacing the value of "stats.price.value" with 0 in the JSON example mentioned above.
+The provided example creates a consumable asset with a predetermined price of 2 OCEAN. If you wish to modify this and create an asset that is freely accessible, you can do so by replacing the value of "stats.price.value" with 0 in the JSON example mentioned above.
 {% endhint %}
 
 Now, let's run the command to publish the dataset:

@@ -3,7 +3,7 @@ root: ./
 redirects:
     readme/metamask-setup: discover/wallets/metamask-setup.md
     readme/wallets: discover/wallets/README.md
-    readme/wallets-and-ocean-tokens: discover/wallets-and-ocean-tokens.md
+    readme/wallets-and-ocean-tokens: discover/wallets-and-ocean.md
     core-concepts: developers/README.md
     core-concepts/architecture: developers/architecture.md
     core-concepts/datanft-and-datatoken: developers/contracts/datanft-and-datatoken.md
@@ -14,7 +14,7 @@ redirects:
     core-concepts/asset-pricing: developers/contracts/pricing-schemas.md
     core-concepts/did-ddo: developers/identifiers.md
     concepts/ocean-tokens/: discover/basic-concepts.md
-    tutorials/wallets-and-ocean-tokens: discover/wallets-and-ocean-tokens.md
+    tutorials/wallets-and-ocean-tokens: discover/wallets-and-ocean.md
     using-ocean-market: user-guides/using-ocean-market.md
     using-ocean-market/marketplace-publish-data-asset: user-guides/publish-data-nfts.md
     using-ocean-market/marketplace-download-data-asset: user-guides/buy-data-nfts.md

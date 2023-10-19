@@ -7,11 +7,11 @@ description: Transfer tokens between two blockchain networks.
 
 A bridge is a mechanism that connects two or more separate blockchain networks, enabling communication and interoperability between them. Bridges can be designed to facilitate the transfer of assets, data, or messages between different blockchain networks that may operate on different protocols, and consensus mechanisms, or have different native currencies.
 
-We suggest using the following solutions to transfer Ocean tokens between Ethereum mainnet and Polygon or BSC.
+We suggest using the following solutions to transfer OCEAN between Ethereum mainnet and Polygon or BSC.
 
 ## BNB Smart Chain Bridge
 
-To transfer Ocean tokens to and from the BNB Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
+To transfer OCEAN to and from the BNB Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
 
 {% hint style="warning" %}
 In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is **crucial** to ensure that the contract address you are sending the tokens to is correct.
@@ -43,7 +43,7 @@ When you access the wallet's main page, you'll be able to view all the tokens yo
 
 ![Main wallet page](../../.gitbook/assets/wallet/polygon-wallet-page.png)
 
-In case you are unable to find the Ocean token in the list while depositing, simply click on "Manage token list" and enable the Polygon Tokens option, which contains a greater number of listed tokens. This will add Ocean to the tokens list.
+In case you are unable to find OCEAN in the list while depositing, simply click on "Manage token list" and enable the Polygon Tokens option, which contains a greater number of listed tokens. This will add Ocean to the tokens list.
 
 ![Ocean on Polygon](../../.gitbook/assets/wallet/polygon-ocean.png)
 

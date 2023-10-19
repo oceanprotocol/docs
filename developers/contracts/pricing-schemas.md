@@ -11,9 +11,9 @@ Ocean Protocol offers you flexible and customizable pricing options to monetize 
 
 These models are designed to cater to your specific needs and ensure a smooth experience for data consumers.
 
-The price of an asset is determined by the number of tokens (this can be Ocean Tokens or any ERC20 Token configured when published the asset) a buyer must pay to access the data. When users pay the tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](datanft-and-datatoken.md).
+The price of an asset is determined by the number of tokens (this can be OCEAN or any ERC20 Token configured when published the asset) a buyer must pay to access the data. When users pay the tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](datanft-and-datatoken.md).
 
-To provide you with even greater flexibility in monetizing your data assets, Ocean Protocol allows you to customize the pricing schema by configuring your own ERC20 token when publishing the asset. This means that instead of using Ocean Tokens as the pricing currency, you can utilize your own token, aligning the pricing structure with your specific requirements and preferences.
+To provide you with even greater flexibility in monetizing your data assets, Ocean Protocol allows you to customize the pricing schema by configuring your own ERC20 token when publishing the asset. This means that instead of using OCEAN as the pricing currency, you can utilize your own token, aligning the pricing structure with your specific requirements and preferences.
 
 You can customised your token this way:
 
