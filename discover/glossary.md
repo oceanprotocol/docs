@@ -274,7 +274,7 @@ In the context of Ocean Protocol, interoperability enables the integration of th
 
 Smart contracts are self-executing digital contracts that allow for the automation and verification of transactions without the need for a third party. They are programmed using code and operate on a decentralized blockchain network. Smart contracts are designed to enforce the rules and regulations of a contract, ensuring that all parties involved fulfill their obligations. Once the conditions of the contract are met, the smart contract automatically executes the transaction, ensuring that the terms of the contract are enforced in a transparent and secure manner.
 
-Ocean ecosystem smart contracts are deployed on multiple blockchains like Polygon, Energy Web Chain, Binance Smart Chain, and others. The code is open source and available on the organization's [GitHub](https://github.com/oceanprotocol/contracts).
+Ocean ecosystem smart contracts are deployed on multiple blockchains like Polygon, Energy Web Chain, BNB Smart Chain, and others. The code is open source and available on the organization's [GitHub](https://github.com/oceanprotocol/contracts).
 
 </details>
 

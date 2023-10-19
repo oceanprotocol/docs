@@ -8,7 +8,7 @@ description: Buy, mint, and sell all sorts of data on the Ocean Market
 
 ### What is the [Ocean Market](https://market.oceanprotocol.com/)? 🛒
 
-The Ocean Market is a place for buyers + sellers of top-notch data and algorithms to exchange goods. Our market also gives you easy-to-use publishing and purchasing tools to monetize your intellectual property. 🤑 What's not to love? 💕
+The Ocean Market is a place for buyers + sellers of top-notch data and algorithms to exchange goods. The market also gives you easy-to-use publishing and purchasing tools to monetize your intellectual property. 🤑 What's not to love? 💕
 
 #### **You can:**
 

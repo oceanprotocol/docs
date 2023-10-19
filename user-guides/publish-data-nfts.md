@@ -19,12 +19,12 @@ The publishing process on the Ocean Market both mints (i.e. creates) a [data NFT
 ### No code flow
 
 {% embed url="https://www.youtube.com/watch?v=3NGSmfXkHAQ" %}
-Don't enjoy reading? Watch our video tutorial!
+Don't enjoy reading? Watch the video tutorial!
 {% endembed %}
 
 #### Getting Started 🏃💨
 
-1. Go to the [Ocean Market](https://v4.market.oceanprotocol.com).
+1. Go to the [Ocean Market](https://market.oceanprotocol.com).
 2. Connect your wallet.
 3. Select the network where you would like to publish your NFT (ex. Ethereum, Polygon, etc).
 
@@ -123,12 +123,12 @@ Now, your data NFT is successfully published and available in the Ocean Market!
 
 ![Successful publish](../.gitbook/assets/market/publish-7.png)
 
-On the [profile page](https://v4.market.oceanprotocol.com/profile), a publisher has access to all their published assets.
+On the [profile page](https://market.oceanprotocol.com/profile), a publisher has access to all their published assets.
 
 ### Code flow
 
-* **Python:** Are you looking at how to publish a data NFT using Python? Follow our ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
-* **Javascript**: Are you looking at how to publish a data NFT using Javascript? Follow our ocean.js [Publish Flow](../developers/ocean.js/publish.md) to mint a data NFT and datatoken using Javascript.
+* **Python:** Are you looking at how to publish a data NFT using Python? Follow the ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
+* **Javascript**: Are you looking at how to publish a data NFT using Javascript? Follow the ocean.js [Publish Flow](../developers/ocean.js/publish.md) to mint a data NFT and datatoken using Javascript.
 
 #### More Info 🧐
 

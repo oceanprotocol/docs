@@ -32,7 +32,7 @@ When it comes to fetching valuable information about [Data NFTs](../contracts/da
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Ethereum            | [Subgraph](https://v4.subgraph.mainnet.oceanprotocol.com)   | [GraphiQL](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)   |
 | Polygon             | [Subgraph](https://v4.subgraph.polygon.oceanprotocol.com/)  | [GraphiQL](https://v4.subgraph.polygon.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)   |
-| Binance Smart Chain | [Subgraph](https://v4.subgraph.bsc.oceanprotocol.com)       | [GraphiQL](https://v4.subgraph.bsc.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)       |
+| BNB Smart Chain | [Subgraph](https://v4.subgraph.bsc.oceanprotocol.com)       | [GraphiQL](https://v4.subgraph.bsc.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)       |
 | Energy Web Chain    | [Subgraph](https://v4.subgraph.energyweb.oceanprotocol.com) | [GraphiQL](https://v4.subgraph.energyweb.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) |
 | Moonriver           | [Subgraph](https://v4.subgraph.moonriver.oceanprotocol.com) | [GraphiQL](https://v4.subgraph.moonriver.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) |
 | Mumbai              | [Subgraph](https://v4.subgraph.mumbai.oceanprotocol.com)    | [GraphiQL](https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)    |

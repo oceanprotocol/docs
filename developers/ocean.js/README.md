@@ -20,7 +20,7 @@ Introducing Ocean.JS
 
 The Ocean.js library adopts the module architectural pattern, ensuring clear separation and organization of code units. Utilizing ES6 modules simplifies the process by allowing you to import only the necessary module for your specific task.
 
-Our module structure follows this format:
+The module structure follows this format:
 
 * Types
 * Config

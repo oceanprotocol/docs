@@ -7,11 +7,11 @@ description: Frequently Asked Questions about Data Farming
 ### Guides
 <details>
 
-<summary>I'm new to Ocean and I want to stake my $OCEAN tokens. Can you show me how? Where can I learn about APY and locks?</summary>
+<summary>I'm new to Ocean and I want to stake my OCEAN tokens. Can you show me how? Where can I learn about APY and locks?</summary>
 
 Absolutely, we've adopted the voting escrowed system from Curve Finance (veCRV) and created veOCEAN.
 
-veOCEAN lets you lock $OCEAN to receive veOCEAN. You then automatically access Passive Rewards via Data Farming while learning more about Active Rewards. Here are some handy resources to help you get started:
+veOCEAN lets you lock OCEAN to receive veOCEAN. You then automatically access Passive Rewards via Data Farming while learning more about Active Rewards. Here are some handy resources to help you get started:
 1. [Tutorial](user-guides/how-to-volumedf.md)
 2. [Estimate your APY](user-guides/how-to-estimate-apy.md)
 
@@ -43,7 +43,7 @@ You can delegate veOCEAN to others in order to facilitate farming, however, you 
 
 <summary>Which networks are eligible for Data Farming?</summary>
 
-You participate by default in Passive Rewards when you lock $OCEAN on Ethereum Mainnet.
+You participate by default in Passive Rewards when you lock OCEAN on Ethereum Mainnet.
 
 Data assets for Volume DF may be published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
 
@@ -91,7 +91,7 @@ Yes. When you lock Ocean tokens, you'll receive them back at the end of the lock
 
 <summary>Is it possible to only participate in Passive Rewards? Or should I participate in Active Rewards?</summary>
 
-You participate by default in Passive Rewards when you lock $OCEAN.  
+You participate by default in Passive Rewards when you lock OCEAN.  
 
 But to maximize your rewards, you will also need to engage in Active Rewards.  
 
@@ -120,9 +120,9 @@ The ratio stands at 80% to 20%, creating an imbalanced pool that minimizes price
 
 <details>
 
-<Summary> How to convert PsdnOcean back to $OCEAN ?</Summary>
+<Summary> How to convert PsdnOcean back to OCEAN ?</Summary>
 
-You can convert psdnOCEAN back to $OCEAN using the Balancer AMM liquidity [pool](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e).
+You can convert psdnOCEAN back to OCEAN using the Balancer AMM liquidity [pool](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e).
 
 [Price information](https://www.geckoterminal.com/eth/pools/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b) for psdnOCEAN.
 
@@ -180,9 +180,9 @@ They can be claimed/redeposited whenever you want. If you don't claim, they just
 
 <details>
 
-<summary>Are rewards paid out in veOCEAN or $OCEAN?</summary>
+<summary>Are rewards paid out in veOCEAN or OCEAN?</summary>
 
-All rewards in Data Farming are paid out in $OCEAN and can be claimed at the every epoch.
+All rewards in Data Farming are paid out in OCEAN and can be claimed at the every epoch.
 
 </details>
 
@@ -198,7 +198,7 @@ To boost your APY, consider locking your OCEAN for a more extended period. It's 
 
 <details>
 
-<summary>Could you explain the benefits of staking $OCEAN tokens and how the APY is calculated?</summary>
+<summary>Could you explain the benefits of staking OCEAN tokens and how the APY is calculated?</summary>
 
 Yes, You can find the details in these resources.⁣
 1. [Benefits](df-veocean).
@@ -331,6 +331,6 @@ You can find the statistics for the number of locked tokens [here](https://autob
 
 <summary>Is there a way to check the duration and amounts of veOCEAN locked on-chain for all wallets?</summary>
 
-Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query our subgraph. You can find a working example of how to get the list of holders [in our subgraph documentation](../developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
+Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query the subgraph. You can find a working example of how to get the list of holders [in the subgraph documentation](../developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
   
 </details>

@@ -4,9 +4,9 @@ description: Empowering the Decentralised Data Economy
 
 # Contracts
 
-The [V4 release](https://blog.oceanprotocol.com/ocean-v4-overview-1ccd4a7ce150) of Ocean Protocol introduces a comprehensive and enhanced suite of [smart contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts) that serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. With the introduction of V4 contracts, Ocean Protocol propels itself forward, delivering substantial functionality, scalability, and flexibility advancements.
+The suite of smart contracts serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. 
 
-The V4 smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). The V4 introduces significant enhancements that encompass the following key **features**:
+The smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). They introduced significant enhancements that encompass the following key **features**:
 
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
@@ -16,28 +16,28 @@ However, Ocean V3 faced limitations in terms of flexibility. It lacked support f
 
 Ocean V4 effectively tackles these challenges by adopting **ERC721** **tokens** to explicitly represent the **base IP** as "data NFTs" (Non-Fungible Tokens). [**Data NFT**](data-nfts.md) owners can now deploy ERC20 "datatoken" contracts specific to their data NFTs, with each datatoken contract offering its own distinct licensing terms.
 
-By utilizing ERC721 tokens, Ocean V4 **grants data creators greater flexibility and control over licensing arrangements**. The introduction of data NFTs allows for the representation of [base IP](../../discover/glossary.md) and the creation of customized ERC20 datatoken contracts tailored to individual licensing requirements.
+By utilizing ERC721 tokens, Ocean **grants data creators greater flexibility and control over licensing arrangements**. The introduction of data NFTs allows for the representation of [base IP](../../discover/glossary.md) and the creation of customized ERC20 datatoken contracts tailored to individual licensing requirements.
 
-<figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol V4 Smart Contracts</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol Smart Contracts</p></figcaption></figure>
 
 
 ### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 
-Ocean V4 brings forth enhanced opportunities for marketplace operators, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
+Ocean brings forth enhanced opportunities for dApp owners, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
 
-With Ocean V4, marketplace operators can unlock additional benefits. Firstly, the V4 smart contracts empower marketplace operators to collect [fees](fees.md) not only during **data consumption** but also through **fixed-rate exchanges**. This expanded revenue model allows operators to derive more value from the ecosystem. Moreover, in Ocean V4, the marketplace operator has the authority to determine the fee value, providing them with **increased control** over their pricing strategies.
+With Ocean, dApp owners can unlock additional benefits. Firstly, the smart contracts empower dApp owners to collect [fees](fees.md) not only during **data consumption** but also through **fixed-rate exchanges**. This expanded revenue model allows owners to derive more value from the ecosystem. Moreover, in Ocean, the dApp operator has the authority to determine the fee value, providing them with **increased control** over their pricing strategies.
 
-In addition to empowering marketplace operators, Ocean V4 facilitates the participation of third-party [Providers](../provider/README.md) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
+In addition to empowering dApp owners, Ocean facilitates the participation of third-party [Providers](../provider/README.md) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
 
-By enabling a marketplace of [Providers](../provider/README.md), Ocean V4 fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
+By enabling a marketplace of [Providers](../provider/README.md), Ocean fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
 
-Key features of the V4 smart contracts:
+Key features of the smart contracts:
 
 * Base IP is now represented by a data [NFT](data-nfts.md), from which a data publisher can create multiple ERC20s [datatokens](datatokens.md) representing different types of access for the same dataset.
 * Interoperability with the NFT ecosystem (and DeFi & DAO tools).
 * Allows new data [NFT & datatoken templates](datatoken-templates.md), for flexibility and future-proofing.
 * Besides base data IP, you can use data NFTs to **implement comments & ratings, verifiable claims, identity credentials, and social media posts**. They can point to parent data NFTs, enabling the nesting of comments on comments, or replies to tweets. All on-chain, GDPR-compliant, easily searched, with js & py drivers 🤯
-* Introduce an advanced [Fee](fees.md) structure both for Marketplace and Provider runners 💰
+* Introduce an advanced [Fee](fees.md) structure both for dApp and provider runners 💰
 * [Roles](roles.md) Administration: there are now multiple roles for a more flexible administration both at [NFT](data-nfts.md) and [ERC20](datatokens.md) levels 👥
 * When the NFT is transferred, it auto-updates all permissions, e.g. who receives payment, or who can mint derivative ERC20 datatokens.
 * Key-value store in the NFT contract: NFT contract can be used to store custom key-value pairs (ERC725Y standard) enabling applications like soulbound tokens and Sybil protection approaches 🗃️

@@ -11,22 +11,22 @@ coverY: 0
 
 ### Report a bug 🐞
 
-Do you think you see a bug in our code? To report a bug that _isn't a vulnerability_, go to the relevant GitHub repository, click on the _Issues_ tab, and select _Bug Report_.
+Have you found a bug in the code? To report a bug that _isn't a vulnerability_, go to the relevant GitHub repository, click on the _Issues_ tab, and select _Bug Report_.
 
 First, make sure that you search existing open + closed issues + PRs to see if your bug has already been reported there. If not, then go ahead and create a new bug report! 🦸
 
 #### Do you see an error in the Ocean Market?
 
-Follow our steps below to properly document your bug! Paste the screenshots into your GitHub issue.
+Follow the steps below to properly document your bug! Paste the screenshots into your GitHub issue.
 
 {% embed url="https://app.arcade.software/share/fUNrK6z2eurJ2C1ty2OG" fullWidth="false" %}
 {% endembed %}
 
 ### Report vulnerabilities
 
-For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of our code. Check out our page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
+For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of the code. Check out this page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
 
-<figure><img src="../.gitbook/assets/gif/matrix-code.gif" alt=""><figcaption><p>Did you find a glitch in our code matrix?</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/matrix-code.gif" alt=""><figcaption><p>Did you find a glitch in the code matrix?</p></figcaption></figure>
 
 ### Suggest a new feature 🤔💭
 
@@ -36,14 +36,14 @@ As with bug reports, don't forget to search existing open + closed issues + PRs 
 
 ### Improve core software
 
-It takes a tribe of awesome coders to build our tech stack, and you're invited to pitch in 😊 We'd love to have you contribute to any repository within the `oceanprotocol` [GitHub](https://github.com/oceanprotocol) organization!
+It takes a tribe of awesome coders to build a tech stack, and you're invited to pitch in 😊 We'd love to have you contribute to any repository within the `oceanprotocol` [GitHub](https://github.com/oceanprotocol) organization!
 
 Before you start coding, please follow these basic guidelines:
 
 * If no feature request issue for your case is present, **please open one first before starting to work on something, so it can be discussed openly with Ocean core team**.
 * Make yourself familiar with the repository-specific contribution requirements and code style requirements.
 * Because of the weird world of intellectual property, we need you to follow the [legal requirements](legal-reqs.md) for contributing code.
-* Be excellent to each other in the comments, as outlined in our [Contributor Code of Conduct](code-of-conduct.md).
+* Be excellent to each other in the comments, as outlined in the [Contributor Code of Conduct](code-of-conduct.md).
 
 #### Your contribution workflow
 
@@ -58,22 +58,21 @@ Before you start coding, please follow these basic guidelines:
 
 Depending on the release management of each repository, your contribution will be either included in a next release, or deployed live automatically.
 
-Except for GitHub, you can chat with most Ocean Protocol core developers in our [Discord](https://discord.gg/TnXjkR5) if you have further development questions.
+Except for GitHub, you can chat with most Ocean Protocol core developers in the [Discord](https://discord.gg/TnXjkR5) if you have further development questions.
 
 ### Develop a dApp or integration on top of Ocean Protocol
 
-We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with our open-source tools.
+We LOVE builders of dApps on Ocean! Nothing makes us feel prouder than seeing you create awesome things with these open-source tools.
 
-If you need ANY help, then we're here to talk with you on [Discord](https://discord.gg/TnXjkR5) to give you advice. We're also consistently improving our docs to help you. And... you're here :)
+If you need ANY help, then we're here to talk with you on [Discord](https://discord.gg/TnXjkR5) to give you advice. We're also consistently improving these docs to help you. And... you're here :)
 
-### Improve our docs
+### Improve the docs
 
-Our docs repo can always be improved. If you found a mistake or have an improvement to make, then follow the steps in our [contribution workflow](./#your-contribution-workflow) to commit your changes.
+The docs repo can always be improved. If you found a mistake or have an improvement to make, then follow the steps in the [contribution workflow](./#your-contribution-workflow) to submit your changes.
 
 ### Apply for a developer job
 
 Do you REALLY love building on Ocean Protocol? Consider joining us full-time! Our openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
 
 
-
-Check our [Community Page](https://www.oceanprotocol.com/community) for our social media links where you can join the buzz around Ocean or chat with us directly 😊 Toodles!
+Scroll a bit further, and at this page's footer, you'll find the social media links that allow you to join the Ocean community or engage in direct chats with us. 😊 Toodles!

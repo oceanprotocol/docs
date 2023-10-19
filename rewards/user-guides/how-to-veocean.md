@@ -32,7 +32,7 @@ Watch and learn, friend
 
 #### Step 4 - Connect Your Wallet + Lock your OCEAN for veOCEAN
 
-- Click on the purple circles in our interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
+- Click on the purple circles in the interactive demo to walk through the steps for locking your OCEAN tokens for veOCEAN tokens.
 
 {% embed url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" fullWidth="false" %}
 {% endembed %}

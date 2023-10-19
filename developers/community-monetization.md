@@ -4,27 +4,27 @@ description: How can you build a self sufficient project?
 
 # Community Monetization
 
-Our intentions with all of the V4 updates are to ensure that your project is able to become self-sufficient and profitable in the long run (if that’s your aim). We love projects that are built on top of Ocean and we want to ensure that you are able to generate enough income to keep your project running well into the future.
+The intentions with all of the updates are to ensure that your project is able to become self-sufficient and profitable in the long run (if that’s your aim). We love projects that are built on top of Ocean and we want to ensure that you are able to generate enough income to keep your project running well into the future.
 
 ### 1. Publishing & Selling Data
 
 **Do you have data that you can monetize?** :thinking:
 
-Ocean V3 introduced the new crypto primitives of “data on-ramp” and “data off-ramp” via datatokens. The publisher creates ERC20 datatokens for a dataset (on-ramp). Then, anyone can access that dataset by acquiring and sending datatokens to the publisher via Ocean handshaking (data off-ramp). As a publisher, it’s in your best interest to create and publish useful data — datasets that people want to consume — because the more they consume the more you can **earn**. This is the heart of Ocean utility: connecting data publishers with data consumers :people\_hugging:
+Ocean introduced the new crypto primitives of “data on-ramp” and “data off-ramp” via datatokens. The publisher creates ERC20 datatokens for a dataset (on-ramp). Then, anyone can access that dataset by acquiring and sending datatokens to the publisher via Ocean handshaking (data off-ramp). As a publisher, it’s in your best interest to create and publish useful data — datasets that people want to consume — because the more they consume the more you can **earn**. This is the heart of Ocean utility: connecting data publishers with data consumers :people\_hugging:
 
 The datasets can take one of many shapes. For AI use cases, they may be raw datasets, cleaned-up datasets, feature-engineered **data**, **AI models**, **AI model predictions**, or otherwise. (They can even be other forms of copyright-style IP such as **photos**, **videos**, or **music**!) Algorithms themselves may be sold as part of Ocean’s Compute-to-Data feature.
 
-The first opportunity of data NFTs is the potential to sell the base intellectual property (IP) as an exclusive license to others. This is akin to EMI selling the Beatles’ master tapes to Universal Music: whoever owns the masters has the right to create records, CDs, and digital [sub-licenses](../discover/glossary.md). It’s the same for data: as the data NFT owner you have the **exclusive right** to create ERC20 datatoken sub-licenses. With Ocean V4, this right is now transferable as a data NFT. You can sell these data NFTs in **OpenSea** and other NFT marketplaces.
+The first opportunity of data NFTs is the potential to sell the base intellectual property (IP) as an exclusive license to others. This is akin to EMI selling the Beatles’ master tapes to Universal Music: whoever owns the masters has the right to create records, CDs, and digital [sub-licenses](../discover/glossary.md). It’s the same for data: as the data NFT owner you have the **exclusive right** to create ERC20 datatoken sub-licenses. With Ocean, this right is now transferable as a data NFT. You can sell these data NFTs in **OpenSea** and other NFT marketplaces.
 
 If you’re part of an established organization or a growing startup, you’ll also love the new role structure that comes with data NFTs. For example, you can specify a different address to collect [revenue](contracts/revenue.md) compared to the address that owns the NFT. It’s now possible to fully administer your project through these [roles](contracts/roles.md).
 
-**In short, if you have data to sell, then Ocean V4 gives you superpowers to scale up and manage your data project. We hope this enables you to bring your data to new audiences and increase your profits.**
+**In short, if you have data to sell, then Ocean gives you superpowers to scale up and manage your data project. We hope this enables you to bring your data to new audiences and increase your profits.**
 
 ### 2. Running Your Own Data dApp
 
-We have always been super encouraging of anyone who wishes to build a dApp on top of Ocean or to fork Ocean Market and make their own data marketplace. With the V4 release, we have taken this to the next level and introduced more opportunities and even more fee customization options.
+We have always been super encouraging of anyone who wishes to build a dApp on top of Ocean or to fork Ocean Market and make their own data marketplace. And now, we have taken this to the next level and introduced more opportunities and even more fee customization options.
 
-Unlike in V3, where the fee collection was limited to the consume action with a fixed value of 0.1%, V4 empowers dApp operators like yourself to have greater flexibility and control over the fees you can charge. This means you can tailor the fee structure to suit your specific needs and ensure the sustainability of your project.  **V4 smart contracts enable you to collect a fee not only in consume, but also in fixed-rate exchange, also you can set the fee value.**  For more detailed information regarding the fees, we invite you to visit the [fees](contracts/fees.md) page.
+Ocean empowers dApp owners like yourself to have greater flexibility and control over the fees you can charge. This means you can tailor the fee structure to suit your specific needs and ensure the sustainability of your project.  **The smart contracts enable you to collect a fee not only in consume, but also in fixed-rate exchange, also you can set the fee value.**  For more detailed information regarding the fees, we invite you to visit the [fees](contracts/fees.md) page.
 
 Another new opportunity is using your own **ERC20** token in your dApp, where it’s used as the unit of exchange. This is fully supported and can be a great way to ensure the sustainability of your project.
 

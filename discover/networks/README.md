@@ -23,17 +23,17 @@ Ocean Protocol is also deployed to Polygon Mainnet, which is another production 
 
 **Bridge**
 
-Check our Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
+Check out the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
 
-### Binance Smart Chain
+### BNB Smart Chain
 
-Ocean Protocol is also deployed to Binance Smart Chain (BSC), which is another production network. The native token of the Binance Smart Chain is BNB, which is the token of the Binance exchange. If Binance Smart Chain is not listed as a predefined network in your wallet, you can manually connect to it by following Binance's [guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain), which provides detailed instructions on how to connect to Binance Smart Chain.
+Ocean Protocol is also deployed to BNB Smart Chain, which is another production network. The native token of the BNB Smart Chain is BNB, which is the token of the Binance exchange. If BNB Smart Chain is not listed as a predefined network in your wallet, you can manually connect to it by following Binance's [guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain), which provides detailed instructions on how to connect to BNB Smart Chain.
 
 <table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>BSC BNB(Native token)</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a">0xdce07662ca8ebc241316a15b611c89711414dd1a</a></td></tr><tr><td>Explorer</td><td><a href="https://bscscan.com/">https://bscscan.com/</a></td></tr></tbody></table>
 
 **Bridge**
 
-Check our BSC Bridge [guide](bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
+Check out the BSC Bridge [guide](bridges.md#bnb-smart-chain-bridge) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 

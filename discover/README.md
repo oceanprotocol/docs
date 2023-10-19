@@ -26,13 +26,15 @@ If we don't enable personal **sovereignty** over our data, then we could be at t
 
 That's why we made the decision to take action, and it led to the creation of the **Ocean Protocol**.
 
-**Ocean Protocol aims to kick-start a new data economy by giving power back to people and giving researchers the data they need. Ocean Protocol technology enables data to become an asset.**
+**Ocean Protocol was founded to level the playing field for AI and data.**
 
-By providing a decentralized and open platform and the tools for data sharing, **Ocean Protocol** aims to address these concerns and create a more equitable and collaborative data economy.
+Ocean’s tools enable people to privately & securely publish, exchange, and consume data.
 
-We believe that data is a valuable resource that should be accessible to **everyone** :people\_holding\_hands:, not just a select few large corporations. We aim to empower data providers to monetize their data and enable data consumers to access high-quality data for their projects. Ultimately, we seek to establish a more equitable and collaborative data economy that benefits businesses, researchers, and communities worldwide.
+{% hint style="info" %}
+If you're wondering which types of data can be monetized through Ocean Protocol, the answer is that virtually any kind of data can be sold via the platform! 📊🎶📸🎥💼🎫🌐 This includes AI data, ML models, music data, images, videos, trading data, tickets, and essentially anything that can be accessed online.
+{% endhint %}
 
-To find out more about the amazing team behind Ocean, you can visit our [website](https://oceanprotocol.com/about).
+To find out more about the amazing team behind Ocean, you can visit the [website](https://oceanprotocol.com/about-us/foundation).
 
 Now that we've made you curious about our mission and how we're making a difference in the world, you won't want to miss this video featuring our co-founder, [Trent McConaghy](http://www.trent.st/). He'll share some fascinating insights into what we're doing and why it matters.
 
@@ -42,4 +44,4 @@ A new data economy with power to the people - Trent McConaghy
 
 ### Ocean Protocol Whitepaper
 
-If you'd like to explore the details of our technology, feel free to dive into our [whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)! It's a comprehensive resource that explains all the technical details and the core concepts that drive Ocean Protocol. It's a great way to get a deeper understanding of what we're all about.
+If you'd like to explore the details of the technology, feel free to dive into the [whitepaper](https://oceanprotocol.com/tech-whitepaper.pdf)! It's a comprehensive resource that explains all the technical details and the core concepts that drive Ocean Protocol. It's a great way to get a deeper understanding of what we're all about.

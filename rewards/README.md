@@ -88,8 +88,8 @@ Finally, if you want to continue expanding your knowledge on OCEAN token emissio
 
 [Data Farming Background](df-emissions-apys.md#a-brief-history-of-data-farming) will provide you with a lot more information about Data Farming, how the program evolved, and explain detailed mechanisms of the program such as the Reward Function.
 
-Our [FAQ](df-faq.md) answers many different questions about staking, chains, deployments, and other details that may be valuable to you.
+The [FAQ](df-faq.md) answers many different questions about staking, chains, deployments, and other details that may be valuable to you.
 
 ## Reference
 
-All content within has been assembled via reference of the [Ocean Data Farming Series](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45), official [Ocean Protocol github repositories](https://github.com/oceanprotocol/), and [v4 Whitepapers](https://oceanprotocol.com/tech-whitepaper.pdf).
+All content within has been assembled via reference of the [Ocean Data Farming Series](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45), official [Ocean Protocol github repositories](https://github.com/oceanprotocol/), and [Whitepapers](https://oceanprotocol.com/tech-whitepaper.pdf).
