@@ -18,7 +18,7 @@ Ready to dive into the world of decentralized storage with Uploader? Let's get s
 
 1. Wallet Check: First things first, let's make sure you've got some of that shiny polygon MATIC and WMATIC in your wallet. If you're coming up short, no worries! You can wrap your MATIC directly through the app.
 
-2. Is you wallet ready? Let's head over to the [Uploader UI](https://uploader-ui.vercel.app/).
+2. Is your wallet ready? Let's head over to the [Uploader UI](https://uploader-ui.vercel.app/).
 
 3. Now, give that 'Connect Wallet' button a click. This is just so Uploader knows which wallet we're working with.
 
