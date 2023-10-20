@@ -6,19 +6,19 @@ description: 'Discover the World of veOCEAN: Retrieving a Stats'
 
 If you are already familiarized with veOCEAN, you're off to a great start. However, if you need a refresher, we recommend visiting the [veOCEAN](../../rewards/df-veocean.md) page for a quick overview :mag:
 
-On this page, you'll find a few examples to fetch the stats of veOCEANS from the Ocean Subgraph. These examples serve as a valuable starting point to help you retrieve essential information about veOCEAN. However, if you're eager to delve deeper into the topic, we invite you to visit our [GitHub](https://github.com/oceanprotocol/ocean-subgraph/blob/main/test/integration/VeOcean.test.ts) repository. There, you'll discover a wealth of additional examples, which provide comprehensive insights. Feel free to explore and expand your knowledge! :books:
+On this page, you'll find a few examples to fetch the stats of veOCEANS from the Ocean Subgraph. These examples serve as a valuable starting point to help you retrieve essential information about veOCEAN. However, if you're eager to delve deeper into the topic, we invite you to visit the [GitHub](https://github.com/oceanprotocol/ocean-subgraph/blob/main/test/integration/VeOcean.test.ts) repository. There, you'll discover a wealth of additional examples, which provide comprehensive insights. Feel free to explore and expand your knowledge! :books:
 
 {% hint style="info" %}
-The veOcean is deployed on the Ethereum mainnet, along with two test networks, namely Mumbai and Goerli. The statistical data available is specifically limited to these networks.
+The veOCEAN is deployed on the Ethereum mainnet, along with two test networks, namely Mumbai and Goerli. The statistical data available is specifically limited to these networks.
 {% endhint %}
 
 ###
 
-### Get the total amount of locked Ocean tokens
+### Get the total amount of locked OCEAN
 
 {% tabs %}
 {% tab title="JavaScript" %}
-You can utilize the following JavaScript code snippet to execute the query and retrieve the total number of locked Ocean tokens:
+You can utilize the following JavaScript code snippet to execute the query and retrieve the total number of locked OCEAN:
 
 ```runkit  nodeVersion="18.x.x"
 var axios = require('axios');
@@ -48,7 +48,7 @@ axios(config)
 {% endtab %}
 
 {% tab title="Python" %}
-You can employ the following Python script to execute the query and retrieve the total amount of locked Ocean tokens from the subgraph:
+You can employ the following Python script to execute the query and retrieve the total amount of locked OCEAN from the subgraph:
 
 **Create script**
 

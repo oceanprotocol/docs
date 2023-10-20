@@ -7,7 +7,7 @@ To get started with the Ocean CLI, follow these steps for a seamless setup:
 Begin by cloning the repository. You can achieve this by executing the following command in your terminal:
 
 ```bash
-$ git clone https://github.com/oceanprotocol/ocean.js-cli.git
+$ git clone https://github.com/oceanprotocol/ocean-cli.git
 ```
 
 Cloning the repository will create a local copy on your machine, allowing you to access and work with its contents.
@@ -37,7 +37,13 @@ To successfully configure the CLI tool, two essential steps must be undertaken: 
 
 ### Private Key Configuration
 
-The CLI tool necessitates the configuration of the account's private key. This private key serves as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool.
+The CLI tool requires the configuration of the account's 'private key'(by exporting env "PRIVATE_KEY") or a 'mnemonic'(by exporting env "MNEMONIC").
+Both serve as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool. You must choose either one option or the other. The tool will not utilize both simultaneously.
+
+```bash
+export PRIVATE_KEY="XXXX"
+```
+or 
 
 ```bash
 export MNEMONIC="XXXX"
@@ -50,7 +56,7 @@ Additionally, it is imperative to specify the RPC endpoint that corresponds to t
 export RPC='XXXX'
 ```
 
-Furthermore, there are additional environment variables that can be configured to enhance the flexibility and customization of the environment. These variables include options such as the metadataCache URL and Provider URL, which can be specified if you prefer to utilize a custom deployment of Aquarius or Provider in contrast of the default settings. Moreover, you have the option to provide a custom address file path if you wish to use customized smart contracts or deployments for your specific use case. Remeber setting the next envariament variables is optional.
+Furthermore, there are additional environment variables that can be configured to enhance the flexibility and customization of the environment. These variables include options such as the metadataCache URL and Provider URL, which can be specified if you prefer to utilize a custom deployment of Aquarius or Provider in contrast to the default settings. Moreover, you have the option to provide a custom address file path if you wish to use customized smart contracts or deployments for your specific use case. Remember setting the next environment variables is optional.
 
 ```bash
 export AQUARIUS_URL='XXXX'
@@ -68,4 +74,4 @@ npm run cli h
 
 <figure><img src="../../.gitbook/assets/cli/usage.png" alt=""><figcaption>Available CLI commands & options</figcaption></figure>
 
-With the Ocean CLI successfully installed and configured, you're ready to dive into its capabilities and unlock the full potential of Ocean Protocol. If you encounter any issues during the setup process or have questions, feel free to seek assistance from our [support](https://discord.com/invite/TnXjkR5) team. 🌊
+With the Ocean CLI successfully installed and configured, you're ready to dive into its capabilities and unlock the full potential of Ocean Protocol. If you encounter any issues during the setup process or have questions, feel free to seek assistance from the [support](https://discord.com/invite/TnXjkR5) team. 🌊

@@ -7,13 +7,13 @@ description: All the public networks the Ocean Protocol contracts are deployed t
 
 Ocean Protocol contracts are deployed on multiple public networks. You can always find the most up-to-date deployment addresses for all individual contracts in the [address.json](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json).
 
-In each network, whether it's the Ethereum mainnet, a testnet, or the Polygon/Matic network, you'll need ETH or Matic to pay for gas and OCEAN for certain actions on the Ocean Protocol network. The Ethereum mainnet and the Polygon network are both live networks and the tokens on these networks have real value. However, the tokens on the test networks are not of real value and are only used for testing purposes. You can obtain testnet ETH and OCEAN tokens from faucets, which are services that provide small amounts of tokens for free.
+In each network, whether it's the Ethereum mainnet, a testnet, or the Polygon/Matic network, you'll need ETH or Matic to pay for gas and OCEAN for certain actions on the Ocean Protocol network. The Ethereum mainnet and the Polygon network are both live networks and the tokens on these networks have real value. However, the tokens on the test networks are not of real value and are only used for testing purposes. You can obtain testnet ETH and OCEAN from faucets, which are services that provide small amounts of tokens for free.
 
 ### Ethereum Mainnet
 
 The Ethereum mainnet is a production network, which means that it is a live and operational network that handles real transactions and has actual economic value. To connect to the Ethereum mainnet using a wallet such as MetaMask, you can click on the network name dropdown and select Ethereum mainnet from the list of available networks.
 
-<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th></th></tr></thead><tbody><tr><td>OCEAN Token</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th></th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
 
 ### Polygon Mainnet
 
@@ -23,17 +23,17 @@ Ocean Protocol is also deployed to Polygon Mainnet, which is another production 
 
 **Bridge**
 
-Check our Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
+Check out the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
 
-### Binance Smart Chain
+### BNB Smart Chain
 
-Ocean Protocol is also deployed to Binance Smart Chain (BSC), which is another production network. The native token of the Binance Smart Chain is BNB, which is the token of the Binance exchange. If Binance Smart Chain is not listed as a predefined network in your wallet, you can manually connect to it by following Binance's [guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain), which provides detailed instructions on how to connect to Binance Smart Chain.
+Ocean Protocol is also deployed to BNB Smart Chain, which is another production network. The native token of the BNB Smart Chain is BNB, which is the token of the Binance exchange. If BNB Smart Chain is not listed as a predefined network in your wallet, you can manually connect to it by following Binance's [guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain), which provides detailed instructions on how to connect to BNB Smart Chain.
 
 <table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>BSC BNB(Native token)</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a">0xdce07662ca8ebc241316a15b611c89711414dd1a</a></td></tr><tr><td>Explorer</td><td><a href="https://bscscan.com/">https://bscscan.com/</a></td></tr></tbody></table>
 
 **Bridge**
 
-Check our BSC Bridge [guide](bridges.md#binance-smart-chain-bsc-bridge) to learn how you can deposit, withdraw and send tokens.
+Check out the BSC Bridge [guide](bridges.md#bnb-smart-chain-bridge) to learn how you can deposit, withdraw and send tokens.
 
 ### Energy Web Chain
 

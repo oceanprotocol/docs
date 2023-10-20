@@ -10,7 +10,7 @@ coverY: 0
 
 ### Why should data scientists use Ocean Protocol?
 
-Ocean Protocol is built for data scientists to **monetize data effectively and** solve the ["Data Value Creation Loop"](the-data-value-creation-loop.md). Our [open-source tools](https://github.com/oceanprotocol) tackle some of **the biggest problems for data scientists**: how to sell data anonymously, how to sell compute jobs on datasets, how to control access to data, etc. By using blockchain architecture, Ocean achieves several tactical advantages over Web2 to solve these data sharing problems.
+Ocean Protocol is built for data scientists to **monetize data effectively and** solve the ["Data Value Creation Loop"](the-data-value-creation-loop.md). These [open-source tools](https://github.com/oceanprotocol) tackle some of **the biggest problems for data scientists**: how to sell data anonymously, how to sell compute jobs on datasets, how to control access to data, and many more. By leveraging blockchain architecture, Ocean achieves several tactical advantages over Web2 to solve these data sharing problems.
 
 ### What are some use cases for Ocean Protocol?
 

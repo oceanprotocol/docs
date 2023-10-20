@@ -30,11 +30,11 @@ Before you can publish or purchase assets, you will need a crypto wallet. As Met
 
 ![MetaMask browser extension](../../.gitbook/assets/wallet/metamask-browser-extension.png)
 
-* You can now manage Ether and Ocean Tokens with your wallet. You can copy your account address to the clipboard from the options. When you want someone to send Ether or Ocean Tokens to you, you will have to give them that address. It's not a secret.
+* You can now manage ETH and OCEAN with your wallet. You can copy your account address to the clipboard from the options. When you want someone to send ETH or OCEAN to you, you will have to give them that address. It's not a secret.
 
 ![Manage tokens](../../.gitbook/assets/wallet/manage-tokens.png)
 
-You can also watch our [tutorial video snippets](https://www.youtube.com/playlist?list=PL\_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help setting up MetaMask.
+You can also watch this [video tutorial](https://www.youtube.com/playlist?list=PL\_dn0wVs9kWolBCbtHaFxsi408cumOeth) if you want more help setting up MetaMask.
 
 ### Set Up Custom Network
 

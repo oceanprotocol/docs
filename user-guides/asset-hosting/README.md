@@ -10,7 +10,7 @@ The most important thing to remember is that wherever you host your asset... it 
 
 ### Publish. Cool. Things.
 
-**If you want to publish cool things on the Ocean Marketplace, then you'll first need a place to host your assets!** You have SO many options where to host your asset including centralized and decentralized storage systems. Places to host may include: Github, IPFS, Arweave, AWS, Azure, Google Cloud, and your own personal home server (if that's you, then you probably don't need a tutorial on hosting assets). Really, anywhere with a downloadable link to your asset is fine.
+If you want to publish cool things on the Ocean Marketplace, then you'll first need a place to host your assets as **Ocean doesn't store data**; you're responsible for hosting it on your chosen service and providing the necessary details for publication. You have SO many options where to host your asset including centralized and decentralized storage systems. Places to host may include: Github, IPFS, Arweave, AWS, Azure, Google Cloud, and your own personal home server (if that's you, then you probably don't need a tutorial on hosting assets). Really, anywhere with a downloadable link to your asset is fine.
 
 In this section, we'll walk you through three options to store your assets: Arweave (decentralized storage), AWS (centralized storage), and Azure (centralized storage). Let's goooooo!
 

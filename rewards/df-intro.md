@@ -30,13 +30,13 @@ Each Data Farming round has a pool of OCEAN rewards, where 50% of the pool is pa
 
 ### What are Passive Rewards?
 
-Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN tokens.  
+Passive rewards are the OCEAN rewards paid to Data Farmers just for locking their OCEAN.  
 
 veOCEAN holders can generate yield completely passively if they wish, though they are incentivized with larger real yield if they **actively participate** in farming yield from assets, or completing prediction challenges.  
 
 <figure><img src="../.gitbook/assets/gif/passive-income.gif" alt=""><figcaption></figcaption></figure>
 
-[To start getting passive rewards, go here.](../user-guides/data-farming/how-to-veocean.md)
+[To start getting passive rewards, go here.](user-guides/how-to-veocean.md)
 
 ### What are Active Rewards?
 
@@ -52,11 +52,20 @@ Rewards are paid in OCEAN to contributors actively working to improve Ocean Prot
 | --------------- | -------------- |
 | 5,000 OCEAN     | 70,000 OCEAN    |
 
+**November 9** will then change when Predictoor DF is launched:
+1. 1,000 OCEAN is paid out to Challenge DF.
+2. 37,000 OCEAN is paid out to Volume DF.
+3. 37,000 OCEAN is paid out to PredictoorDF.
+
+| Challenge DF | Volume DF | Predictoor DF |
+| --------------- | -------------- | -------------- |
+| 1,000 OCEAN     | 37,000 OCEAN    | 37,000 OCEAN    
+
 ### What is Volume DF
 
-[Volume DF](df-volumedf.md#allocating-veocean) rewards Data Farmers that allocate their veOCEAN tokens to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
+[Volume DF](df-volumedf.md#curate-data-in-volume-df) rewards Data Farmers that allocate their veOCEAN to Ocean datasets. It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume.  
 
-You can visit the follow tutorial learn how to [access Volume DF](../user-guides/data-farming/how-to-volumedf.md).  
+You can visit the follow tutorial learn how to [access Volume DF](user-guides/how-to-volumedf.md).  
 
 Volume DF rewards are governed and defined by the [Reward Function](df-intro.md#reward-schedule).  
 
@@ -64,7 +73,7 @@ Volume DF rewards are governed and defined by the [Reward Function](df-intro.md#
 
 To get a good sense for how much APY you'll make, we recommend you understand the details of [how veOCEAN works](df-veocean.md). This will give you a basis for the calculations and provide you with an outline for what to expect in terms of rewards over time.  
 
-You can find the [how to estimate APY](../user-guides/data-farming/how-to-estimate-apy.md) user guide, calculate a reward schedule, and compare your lock up period with others.  
+You can find the [how to estimate APY](user-guides/how-to-estimate-apy.md) user guide, calculate a reward schedule, and compare your lock up period with others.  
 
 #### Publisher Rewards
 
@@ -72,13 +81,17 @@ You can find the [how to estimate APY](../user-guides/data-farming/how-to-estima
 
 Publishers are strongly incentivized to launch assets in the Ocean Ecosystem. When publishers curate and support their own assets, they [receive double the allocation power](df-volumedf.md#what-are-publisher-rewards).  
 
-You can learn how to curate datasets and access [Publisher Rewards](../user-guides/data-farming/how-to-volumedf.md#) here.  
+You can learn how to curate datasets and access [Publisher Rewards](user-guides/how-to-volumedf.md#) here.  
 
 ### What is Challenge DF
 
 Challenge DF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called Challenge DF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **Challenge DF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.  
 
-You can visit the follow tutorial learn how to [access Challenge DF](../user-guides/data-farming/how-to-challengedf.md).  
+You can visit the follow tutorial learn how to [access Challenge DF](user-guides/how-to-challengedf.md).  
+
+### What is Predictoor DF
+
+Predictoor DF rewards Data Scientists (as a predictoor) that submit continuous predictions for future price movements of different assets. It's called Predictoor DF because weekly rewards are dispensed towards predictoors that are competing to accurately predict asset prices. Therefore **Predictoor DF yields depend on participants being accurate and outcompeting each other**.
 
 ### What's the difference between Data Farming and Yield Farming?
 
@@ -98,4 +111,4 @@ The table below shows the total amount of OCEAN rewards that will be distributed
 
 ## [GET STARTED DATA FARMING HERE.](https://df.oceandao.org)
 
-### Unsure how? Our [guides](../user-guides/README.md) will show you how to do the basics.
+### Unsure how? These [guides](../user-guides/README.md) will show you how to do the basics.

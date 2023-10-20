@@ -11,9 +11,9 @@ Ocean Protocol offers you flexible and customizable pricing options to monetize 
 
 These models are designed to cater to your specific needs and ensure a smooth experience for data consumers.
 
-The price of an asset is determined by the number of tokens (this can be Ocean Tokens or any ERC20 Token configured when published the asset) a buyer must pay to access the data. When users pay the tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](datanft-and-datatoken.md).
+The price of an asset is determined by the number of tokens (this can be OCEAN or any ERC20 Token configured when published the asset) a buyer must pay to access the data. When users pay the tokens, they get a _datatoken_ in their wallets, a tokenized representation of the access right stored on the blockchain. To read more about datatoken and data NFT click [here](datanft-and-datatoken.md).
 
-To provide you with even greater flexibility in monetizing your data assets, Ocean Protocol allows you to customize the pricing schema by configuring your own ERC20 token when publishing the asset. This means that instead of using Ocean Tokens as the pricing currency, you can utilize your own token, aligning the pricing structure with your specific requirements and preferences.
+To provide you with even greater flexibility in monetizing your data assets, Ocean Protocol allows you to customize the pricing schema by configuring your own ERC20 token when publishing the asset. This means that instead of using OCEAN as the pricing currency, you can utilize your own token, aligning the pricing structure with your specific requirements and preferences.
 
 You can customised your token this way:
 
@@ -68,7 +68,7 @@ With the fixed pricing model, you have the power to set a specific price for you
 
 This datatoken represents the access right to your data, so buyers don't have to worry about the technical details. If you ever want to adjust the price of your dataset, you have the flexibility to do so whenever you need.
 
-The fixed pricing model relies on the [createNftWithErc20WithFixedRate](https://github.com/oceanprotocol/contracts/blob/main/contracts/ERC721Factory.sol#LL674C14-L674C45) in our smart contract, which securely stores the pricing information for assets published using this model.
+The fixed pricing model relies on the [createWithDecimals](https://github.com/oceanprotocol/contracts/blob/d288e3f94cf6ba2be151a3284da0a3606a263bb9/contracts/pools/fixedRate/FixedRateExchange.sol#L201) in the smart contract, which securely stores the pricing information for assets published using this model.
 
 <details>
 
@@ -131,7 +131,7 @@ On the other hand, the free pricing model gives data consumers access to your as
 
 In this model, datatokens are allocated to a dispenser smart contract, which dispenses data tokens to users at no charge when they access your asset. This is perfect if you want to make your data widely available and encourage collaboration. It's particularly suitable for individuals and organizations working in the public domain or for assets that need to comply with open-access licenses.
 
-The fixed pricing model relies on the [createNftWithErc20WithDispenser](https://github.com/oceanprotocol/contracts/blob/main/contracts/ERC721Factory.sol#LL713C14-L713C45) in our smart contract, which securely stores the pricing information for assets published using this model.
+The free pricing model relies on the [create](https://github.com/oceanprotocol/contracts/blob/d288e3f94cf6ba2be151a3284da0a3606a263bb9/contracts/pools/dispenser/Dispenser.sol#L154) in the smart contract, which securely stores the pricing information for assets published using this model.
 
 <details>
 

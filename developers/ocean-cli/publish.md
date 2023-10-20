@@ -1,6 +1,6 @@
 # Publish a Dataset 📤
 
-Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. Our flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐
+Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. The flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐
 
 To initiate the dataset publishing process, we'll start by updating the helper [DDO](../ddo-specification.md)(Decentralized Data Object) example named "SimpleDownloadDataset.json." This example can be found in the `./metadata` folder, located at the root directory of the cloned Ocean CLI project.
 
@@ -69,7 +69,7 @@ To initiate the dataset publishing process, we'll start by updating the helper [
 ```
 
 {% hint style="info" %}
-The provided example creates a consumable asset with a predetermined price of 2 OCEAN tokens. If you wish to modify this and create an asset that is freely accessible, you can do so by replacing the value of "stats.price.value" with 0 in the JSON example mentioned above.
+The provided example creates a consumable asset with a predetermined price of 2 OCEAN. If you wish to modify this and create an asset that is freely accessible, you can do so by replacing the value of "stats.price.value" with 0 in the JSON example mentioned above.
 {% endhint %}
 
 Now, let's run the command to publish the dataset:

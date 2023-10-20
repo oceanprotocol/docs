@@ -8,7 +8,7 @@ description: Make extra dosh with building prediction models
 
 ## Predict to earn
 
-If you're eager to begin extracting value from data but aren't sure how to get started, then [Challenge DF is here to help](../../rewards/df-challengedf.md)!
+If you're eager to begin extracting value from data but aren't sure how to get started, then [Challenge DF is here to help](../df-challengedf.md)!
 
 By participating in the weekly data challenges of predicting the price of Ethereum, you will become familiar with the Ocean Protocol stack and with building predictions that can be sold for money.
 

@@ -6,7 +6,7 @@ description: Technical details about most used ocean.py functions
 
 At the beginning of most flows, we create an `ocean` object, which is an instance of class [`Ocean`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py). It exposes useful information, including the following:
 
-* properties for config & OCEAN token
+* properties for config & OCEAN
 * contract objects retrieval
 * users' orders
 * provider fees
@@ -127,7 +127,7 @@ Configuration fields as dictionary.
 
 </details>
 
-### OCEAN Token Address
+### OCEAN Address
 
 * **ocean_address**(`self`) -> `str`
 
@@ -138,7 +138,7 @@ It can be called only by Ocean object and returns the address as a `string`.
 
 `str`
 
-OCEAN token address for that network.
+OCEAN address for that network.
 
 **Defined in**
 
@@ -161,7 +161,7 @@ OCEAN token address for that network.
 ```python
 @enforce_types
 def get_ocean_token_address(config_dict: dict) -> str:
-    """Returns the Ocean token address for given network or web3 instance
+    """Returns the OCEAN address for given network or web3 instance
     Requires either network name or web3 instance.
     """
     addresses = get_contracts_addresses(config_dict)

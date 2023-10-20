@@ -7,11 +7,11 @@ description: Transfer tokens between two blockchain networks.
 
 A bridge is a mechanism that connects two or more separate blockchain networks, enabling communication and interoperability between them. Bridges can be designed to facilitate the transfer of assets, data, or messages between different blockchain networks that may operate on different protocols, and consensus mechanisms, or have different native currencies.
 
-We suggest using the following solutions to transfer Ocean tokens between Ethereum mainnet and Polygon or BSC.
+We suggest using the following solutions to transfer OCEAN between Ethereum mainnet and Polygon or BSC.
 
-## Binance Smart Chain (BSC) Bridge
+## BNB Smart Chain Bridge
 
-To transfer Ocean tokens to and from the Binance Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
+To transfer OCEAN to and from the BNB Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
 
 {% hint style="warning" %}
 In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is **crucial** to ensure that the contract address you are sending the tokens to is correct.
@@ -35,7 +35,7 @@ All you need to do is click on the [wallet](https://wallet.polygon.technology/) 
 
 You might come across the name "Matic" in some places instead of "Polygon" because the network is still using its old brand name in certain instances. Don't worry though, it's the same network whether you see Matic or Polygon.
 
-Check out our [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) for more details.
+Check out this [blog post](https://blog.oceanprotocol.com/ocean-on-polygon-network-8abad19cbf47) for more details.
 
 #### Deposit Tokens
 
@@ -43,7 +43,7 @@ When you access the wallet's main page, you'll be able to view all the tokens yo
 
 ![Main wallet page](../../.gitbook/assets/wallet/polygon-wallet-page.png)
 
-In case you are unable to find the Ocean token in the list while depositing, simply click on "Manage token list" and enable the Polygon Tokens option, which contains a greater number of listed tokens. This will add Ocean to the tokens list.
+In case you are unable to find OCEAN in the list while depositing, simply click on "Manage token list" and enable the Polygon Tokens option, which contains a greater number of listed tokens. This will add Ocean to the tokens list.
 
 ![Ocean on Polygon](../../.gitbook/assets/wallet/polygon-ocean.png)
 
@@ -67,7 +67,7 @@ The easiest one is to go to the [polygon network explorer](https://polygonscan.c
 
 <figure><img src="../../.gitbook/assets/wallet/polygon-explorer.png" alt=""><figcaption></figcaption></figure>
 
-Alternatively, you can manually configure the network on Metamask by using the following parameters. To learn how to set up a custom network in Metamask using these values, you can refer to our guide.
+Alternatively, you can manually configure the network on Metamask by using the following parameters. To learn how to set up a custom network in Metamask using these values, you can refer to this [guide](../wallets/metamask-setup.md#set-up-custom-network).
 
 | What               | Value                                                |
 | ------------------ | ---------------------------------------------------- |
@@ -77,4 +77,3 @@ Alternatively, you can manually configure the network on Metamask by using the f
 | Currency Symbol    | `MATIC`                                              |
 | Block Explorer URL | [`https://polygonscan.com`](https://polygonscan.com) |
 
-Follow our guide to learn how to use those values to [set up a custom network in MetaMask](../wallets/metamask-setup.md#set-up-custom-network).

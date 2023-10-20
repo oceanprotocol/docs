@@ -25,7 +25,7 @@ Otherwise you are an "external contributor" and you must do the following:
 
    - If a copyright notice is not present, then add one.
    - If the first line of the file is a line beginning with `#!` (e.g. `#!/usr/bin/python3`) then leave that as the first line and add the copyright notice afterwards.
-   - If a copyright notice is present but it says something like `Copyright 2018 Ocean Protocol Foundation` then please change it to say the above.
+   - If a copyright notice is present but it says something like `Copyright 2023 Ocean Protocol Foundation` then please change it to say the above.
    - Make sure you're using the correct syntax for comments (which varies from language to language). The example shown above is for a Python file.
 
 1. Read the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/).
