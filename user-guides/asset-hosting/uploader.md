@@ -1,8 +1,8 @@
 ---
-description: How to use Ocean decentralized backend storage
+description: How to use Ocean Uploader
 ---
 
-# Decentralized Backend Storage
+# Ocean Uploader
 
 ### What is Ocean Uploader? 
 

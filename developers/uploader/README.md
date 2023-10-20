@@ -20,7 +20,7 @@ Uploader offers a range of powerful features tailored to meet the needs of decen
 - Payment Handling: Uploader integrates with payment systems to manage the financial aspects of storage services.
 - Decentralized Storage: Content is pushed to decentralized storage networks like Filecoin and Arweave for enhanced security and redundancy.
 - API Documentation: Comprehensive API documentation on each repo to allow users to understand and interact with the system effortlessly.
-- Uploader.js: a TypeScript library designed to simplify interaction with the Uploader API. This library provides a user-friendly and intuitive interface for calling API endpoints within the Ocean Decentralized Backend Storage system.
+- Uploader.js: a TypeScript library designed to simplify interaction with the Uploader API. This library provides a user-friendly and intuitive interface for calling API endpoints within the Uploader Storage system.
 
 ### Components
 
