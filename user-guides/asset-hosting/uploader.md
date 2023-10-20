@@ -6,7 +6,7 @@ description: How to use Ocean Uploader
 
 ### What is Ocean Uploader? 
 
-Uploader is designed to simplify the process of storring your assets on decentralized networks (such as arweave and filecoin). It provides access to multiple secure, reliable, and cost-effective storage solutions in an easy to use UI and javascript library.
+Uploader is designed to simplify the process of storring your assets on decentralized networks (such as [arweave](https://www.arweave.org/) and [filecoin](https://filecoin.io/)). It provides access to multiple secure, reliable, and cost-effective storage solutions in an easy to use UI and javascript library.
 
 ### What decentralized storage options are available?
 
@@ -52,13 +52,13 @@ Ready to dive into the world of decentralized storage with Uploader? Let's get s
 
 12. Last Metamask pop-up (promise!): Sign one more message to access the transaction ID.
 
-13. Woohoo 🎉 You did it! You now have an Arweave transaction ID for your asset. Pop on over to arweave.net/{YOUR_TXID} to admire your handiwork, you'll be able to access your file at that link. You can use that link to now go and publish your asset on Ocean Market. 
+13. Woohoo 🎉 You did it! You now have an Arweave transaction ID for your asset. Pop on over to arweave.net/{YOUR_TXID} to admire your handiwork, you'll be able to access your file at that link. You can use that link to now go and publish your asset on [Ocean Market](../../developers/uploader/uploader-ui-marketplace.md). 
 
 ![Screenshot of Uploader UI 'Get DDO link' button](../../.gitbook/assets/hosting/uploader-ui-copy-ID.png)
 
-### How to store an asset on Arweave with the Uploader
+### How to Safely Store Your Precious Files with Ocean Uploader Magic 🌊✨
 
-Install the library using npm or yarn:
+Excited to get your files safely stored? Let's breeze through the process using Ocean Uploader. First things first, install the package with npm or yarn:
 
 ```bash
 npm install @oceanprotocol/uploader
@@ -72,6 +72,8 @@ or
 ```bash
 yarn add @oceanprotocol/uploader
 ```
+
+Got that done? Awesome! Now, let's dive into a bit of TypeScript:
 
 ```typescript
 import { ethers } from 'ethers';
@@ -113,3 +115,5 @@ async function uploadAsset() {
 uploadAsset().catch(console.error);
 
 ```
+
+There you go! That's all it takes to upload your files using Uploader.js. Easy, right? Now go ahead and get those files stored securely. You got this! 🌟💾
