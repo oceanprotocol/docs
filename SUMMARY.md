@@ -26,6 +26,7 @@
     - [Azure Cloud](user-guides/asset-hosting/azure-cloud.md)
     - [Google Storage](user-guides/asset-hosting/google-storage.md)
     - [Github](user-guides/asset-hosting/github.md)
+    - [Uploader](user-guides/asset-hosting/uploader.md)
   - [Join a Data Challenge](user-guides/join-a-data-challenge.md)
   - [Sponsor a Data Challenge](user-guides/sponsor-a-data-challenge.md)
   - [Data Farming](user-guides/data-farming/README.md)
