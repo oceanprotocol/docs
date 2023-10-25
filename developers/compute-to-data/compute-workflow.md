@@ -17,7 +17,7 @@ The consumer selects a preferred environment from the provider's list and initia
 2. The provider checks the orders on the blockchain.
 3. If the orders for data asset, algorithm and compute environment fees are valid, the provider can commence the compute flow.
 4. The provider informs the consumer of the job number's successful creation.
-5. With the job ID and confirmation of the orders, the consumer starts the job by calling the operator service.
+5. With the job ID and confirmation of the orders, the provider starts the job by calling the operator service.
 6. The operator service communicates with the operator engine to initiate a new job.
 
 ## Creating the K8 Cluster and Allocating Job Volumes
