@@ -17,9 +17,9 @@ When you publish an asset on the Ocean marketplace, there are currently no charg
 
 However, if you're building a custom marketplace, you have the flexibility to include a publishing fee by adding an extra transaction in the publish flow. Depending on your marketplace's unique use case, you, as the marketplace owner, can decide whether or not to implement this fee. We believe in giving you the freedom to tailor your marketplace to your specific needs and preferences.
 
-| Value in Ocean Market | Value in Other Markets         |
-| --------------------- | ------------------------------ |
-| 0%                    | Customizable in market config. |
+| Value in Ocean Market   | Value in Other Markets         |
+| :---------------------: | :------------------------------: |
+| 0%                      | Customizable in market config. |
 
 
 ### Swap fee
@@ -28,9 +28,9 @@ Swap fees are incurred as a transaction cost whenever someone exchanges one type
 
 The swap fee values are set at the smart contract level and can only be modified by the Ocean Protocol Foundation (OPF).
 
-| Value for OCCEAN or H2O | Value for other ERC20 tokens  |
-| ----------------------- | ----------------------------- |
-| 0.1%                    | 0.2%                          |
+| Value for OCCEAN or H2O   | Value for other ERC20 tokens  |
+| :-----------------------: | :-----------------------------: |
+| 0.1%                      | 0.2%                          |
 
 
 ### Consume(aka. Order) fee
