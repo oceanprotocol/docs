@@ -15,7 +15,7 @@ Below, we'll outline each step in detail 📝
 ## Starting a C2D Job
 1. The consumer initiates a compute-to-data job by selecting the desired data asset and algorithm. 
 2. The provider checks the orders on the blockchain.
-3. If the orders are valid, the provider can commence the compute flow.
+3. If the orders for data asset, algorithm and compute environment fees are valid, the provider can commence the compute flow.
 4. The provider informs the consumer of the job number's successful creation.
 5. With the job ID and confirmation of the orders, the consumer starts the job by calling the operator service.
 6. The operator service communicates with the operator engine to initiate a new job.
