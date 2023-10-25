@@ -36,7 +36,7 @@ The consumer selects a preferred environment from the provider's list and initia
 15. The operator engine launches the algorithm pod on the Kubernetes cluster, with volume containing data asset(s) and algorithm mounted.
 16. Kubernetes runs the algorithm pod.
 17. When the algorithm completes processing the dataset, the operator engine receives confirmation.
-18. Now that the results are available, the operator engine runs the script on the pod publishing component.
+18. Now that the results are available, the operator engine starts "pod-publishing".
 19. The pod publishing uploads the results, logs, and admin logs to the output volume.
 20. Upon successful upload, the operator engine receives notification from the pod publishing, allowing it to clean up the job volumes.
 
