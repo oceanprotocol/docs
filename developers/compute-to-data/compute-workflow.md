@@ -27,7 +27,7 @@ The consumer selects a preferred environment from the provider's list and initia
 10. After volume creation and allocation, the operator engine starts "pod-configuration" as a new pod in the cluster.
 
 ## Loading Assets and Algorithms
-11. The pod configuration requires the data asset and algorithm, prompting a request to the provider for retrieval.
+11. Pod-configuration requests the necessary data asset(s) and algorithm from their respective providers.
 12. The provider uploads assets to the allocated job volume.
 13. Upon completion of file uploads, the provider notifies the pod configuration that the assets are ready for the job.
 14. The pod configuration informs the operator engine that it's ready to start the job.
