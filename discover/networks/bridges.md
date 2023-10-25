@@ -9,6 +9,10 @@ A bridge is a mechanism that connects two or more separate blockchain networks, 
 
 We suggest using the following solutions to transfer OCEAN between Ethereum mainnet and Polygon or BSC.
 
+## Celer Bridge
+
+To transfer OCEAN to and from the Oasis Sapphire Mainnet, we recommend using the [Celer Bridge](https://cbridge.celer.network/1/23294/OCEAN). No bridge is needed for transfering OCEAN to the Oasis Sapphire Testnet because Ocean Protocol offers a [faucet](https://faucet.sapphire.oceanprotocol.com/) for OCEAN on Oasis Sapphire Testnet. Note that Ocean Protocol supports Oasis Sapphire networks for [Predictoor](https://predictoor.ai) development, and does not currently support Oasis Sapphire for ocean.js, ocean.py, or Ocean Market.
+
 ## BNB Smart Chain Bridge
 
 To transfer OCEAN to and from the BNB Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
