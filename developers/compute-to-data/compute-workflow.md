@@ -24,7 +24,7 @@ The consumer selects a preferred environment from the provider's list and initia
 7. As a new job begins, volumes are created on the Kubernetes cluster, a task handled by the operator engine.
 8. The cluster creates and allocates volumes for the job using the job volumes
 9. The volumes are created and allocated to the pod
-10. After volume creation and allocation, the operator engine initiates the `run script` on the pod configuration.
+10. After volume creation and allocation, the operator engine starts "pod-configuration" as a new pod in the cluster.
 
 ## Loading Assets and Algorithms
 11. The pod configuration requires the data asset and algorithm, prompting a request to the provider for retrieval.
