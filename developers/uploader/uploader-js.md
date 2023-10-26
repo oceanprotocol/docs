@@ -76,14 +76,71 @@ For additional details, please visit the [Uploader.js](https://github.com/oceanp
 
 The library provides the following methods:
 constructor(baseURL: string): Create a new instance of the UploaderClient.
-- ```getStorageInfo(): Promise<StorageInfo[]>```: Fetch information about supported storage types and payments.
-- ```getQuote(args: GetQuoteArgs): Promise<GetQuoteResult>```: Fetch a quote for storing files on a specific storage.
-- ```upload(quoteId: string, nonce: number, signature: string, files: File[]): Promise<void>```: Upload files according to the quote request.
-- ```getStatus(quoteId: string): Promise<GetStatusResult>: Fetch the status of a job.```
-- ```getLink(quoteId: string, nonce: number, signature: string): Promise<GetLinkResult[]>```: Fetch the DDO files object for a job.
-- ```registerMicroservice(args: RegisterArgs): Promise<void>```: Register a new microservice that handles a storage type.
-- ```getHistory(page: number = 1, pageSize: number = 25): Promise<any>```: Retrieves the quote history for the given user address, nonce, and signature.
 
+<details>
+  <summary>
+      getStorageInfo()
+  </summary>
+  
+  ```
+  Fetch information about supported storage types and payments.
+  ```
+</details>
+<details>
+  <summary>
+      getQuote(args: GetQuoteArgs)
+  </summary>
+
+  ```
+  Fetch a quote for storing files on a specific storage.
+  ```
+</details>
+<details>
+  <summary>
+      upload(quoteId: string, nonce: number, signature: string, files: File[])
+  </summary>
+
+  ```
+  Upload files according to the quote request.
+  ```
+</details>
+<details>
+  <summary>
+      getStatus(quoteId: string)
+  </summary>
+
+  ```
+  Fetch the status of an asset during upload.
+  ```
+</details>
+<details>
+  <summary>
+      getLink(quoteId: string, nonce: number, signature: string)
+  </summary>
+
+  ```
+  Fetch hash reference for the asset. For example: CID for Filecoin, Transaction Hash for Arweave.
+  ```
+</details>
+<details>
+  <summary>
+      registerMicroservice(args: RegisterArgs)
+  </summary>
+
+  ```
+  Register a new microservice that handles a storage type.
+  ```
+</details>
+<details>
+  <summary>
+      getHistory(page: number = 1, pageSize: number = 25)
+  </summary>
+
+  ```
+  Retrieves the quote history for the given user address, nonce, and signature.
+  ```
+</details>
+<br />
 Whether you're a developer looking to integrate Ocean Uploader into your application or a contributor interested in enhancing this TypeScript library, we welcome your involvement. By following the <a href="https://github.com/oceanprotocol/uploader.js" target="_blank">provided documentation</a>, you can harness the capabilities of Uploader.js to make the most of decentralized file storage in your projects. 
 
 Feel free to explore the API reference, contribute to the library's development, and become a part of the Ocean Protocol community's mission to democratize data access and storage.
