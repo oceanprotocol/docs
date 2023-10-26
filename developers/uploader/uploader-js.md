@@ -32,7 +32,7 @@ document.getElementById('fileInput').addEventListener('change', async function (
 })
 ```
 
-For additional details, please visit the Uploader.js repository.
+For additional details, please visit the [Uploader.js](https://github.com/oceanprotocol/uploader.js) repository.
 
 ### API
 
