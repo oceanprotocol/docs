@@ -44,8 +44,8 @@ export default function App () {
         {/* Your App */}
         <ConnectKitButton />
         <UploaderComponent
-          dbs_url="https://dbs.oceanprotocol.com"
-          dbs_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
+          uploader_url="https://dbs.oceanprotocol.com"
+          uploader_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
         />
       </ConnectKitProvider>
     </WagmiConfig>
@@ -82,8 +82,8 @@ export default function App () {
         {/* Your App */}
         <ConnectButton />
         <UploaderComponent
-          dbs_url="https://dbs.oceanprotocol.com"
-          dbs_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
+          uploader_url="https://dbs.oceanprotocol.com"
+          uploader_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
         />
       </RainbowKitProvider>
     </WagmiConfig>
