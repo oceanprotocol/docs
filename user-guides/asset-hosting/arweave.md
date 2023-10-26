@@ -6,7 +6,7 @@ description: How to use decentralized hosting for your NFT assets
 
 ### Using Arweave with Uploader
 
-We recommend uploading your files to Arweave using the [Ocean Uploader](./Uploader.md) storage system. You can see a guide on how to do that [here](./Uploader.md)
+Enhance the efficiency of your file uploads by leveraging the simplicity of the [Ocean Uploader](./Uploader.md) storage system for Arweave. Dive into our comprehensive guide [here](./Uploader.md) to discover detailed steps and tips, ensuring a smooth and hassle-free uploading process. Your experience matters, and we're here to make it as straightforward as possible.
 
 ### Arweave
 
