@@ -13,7 +13,7 @@ In each network, whether it's the Ethereum mainnet, a testnet, or the Polygon/Ma
 
 The Ethereum mainnet is a production network, which means that it is a live and operational network that handles real transactions and has actual economic value. To connect to the Ethereum mainnet using a wallet such as MetaMask, you can click on the network name dropdown and select Ethereum mainnet from the list of available networks.
 
-<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th></th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>ETH(Native token)</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr><tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr></tbody></table>
 
 ### Polygon Mainnet
 
@@ -24,6 +24,28 @@ Ocean Protocol is also deployed to Polygon Mainnet, which is another production 
 **Bridge**
 
 Check out the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
+
+### Oasis Sapphire Mainnet
+
+Ocean Protocol is also deployed to Oasis Sapphire Mainnet, which is a production network that Ocean Protocol uses for [Predictoor](https://predictoor.ai). Ocean Protocol does do not currently support ocean.js, ocean.py, or Ocean Market on Oasis Sapphire. The native token of Oasis Sapphire is ROSE. If you cannot find Oasis Sapphire Mainnet as a predefined network in your wallet, you can manually connect to it by entering the following information during the import process: Network Name: `Oasis Sapphire`, RPC URL: `https://sapphire.oasis.io`, Chain ID: `23294`, Token: `ROSE`.
+
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>ROSE(Native token)</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://explorer.oasis.io/mainnet/sapphire/token/0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520">0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520</a></td></tr><tr><td>Explorer</td><td><a href="https://explorer.oasis.io/mainnet/sapphire/">https://explorer.oasis.io/mainnet/sapphire/</a></td></tr></tbody></table>
+
+**Bridge**
+
+Check out our Celer Bridge [guide](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/get-ocean-on-sapphire.md#2-transfer-ocean-to-sapphire-mainnet-via-celer) to learn how you can bridge your OCEAN tokens from Ethereum Mainnet to Oasis Sapphire Mainnet.
+
+### Oasis Sapphire Testnet
+
+Ocean Protocol is also deployed to Oasis Sapphire Testnet, which is a test network that Ocean Protocol uses for [Predictoor](https://predictoor.ai). Ocean Protocol does do not currently support ocean.js, ocean.py, or Ocean Market on Oasis Sapphire. The native token of Oasis Sapphire is ROSE. If you cannot find Oasis Sapphire Testnet as a predefined network in your wallet, you can manually connect to it by entering the following information during the import process: Network Name: `Oasis Sapphire Testnet`, RPC URL: `https://testnet.sapphire.oasis.dev`, Chain ID: `23295`, Token: `ROSE`.
+
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>ROSE(Native token)</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://explorer.oasis.io/testnet/sapphire/address/0x973e69303259B0c2543a38665122b773D28405fB">0x973e69303259B0c2543a38665122b773D28405fB</a></td></tr><tr><td>Explorer</td><td><a href="https://explorer.oasis.io/testnet/sapphire/">https://explorer.oasis.io/testnet/sapphire/</a></td></tr></tbody></table>
+
+**Get (fake) OCEAN on Sapphire Testnet**
+
+Check out our [guide](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-ocean-on-sapphire-testnet) for how to get fake OCEAN tokens on Sapphire Testnet. 
+
+Check out our [guide](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-rose-on-sapphire-testnet) for how to get fake ROSE tokens on Oasis Sapphire Testnet.
 
 ### BNB Smart Chain
 
