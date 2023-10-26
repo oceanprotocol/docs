@@ -12,6 +12,14 @@ Uploader is built on a robust architecture that seamlessly integrates various co
 - 1-N Storage Microservices: Multiple microservices, each specializing in different storage types, responsible for handling storage operations.
 - IPFS Integration: Temporary storage using the InterPlanetary File System (IPFS).
 
+### Streamlined File Uploads
+
+Uploader streamlines the file uploading process, providing users with a seamless experience to effortlessly incorporate their digital assets into a decentralized network. Whether you're uploading images, documents, or other media, Uploader enhances accessibility and ease of use, fostering a more decentralized and inclusive digital landscape.
+
+### Unique Identifiers
+
+Obtain unique identifiers such as hashes or CIDs for your uploaded files. These unique identifiers play a pivotal role in enabling efficient tracking and interaction with decentralized assets. By obtaining these identifiers, users gain a crucial toolset for managing, verifying, and engaging with their digital assets on the decentralized network, ensuring a robust and secure mechanism for overseeing the lifecycle of their contributed files.
+
 ### Features
 
 Uploader offers a range of powerful features tailored to meet the needs of any decentralized storage:
