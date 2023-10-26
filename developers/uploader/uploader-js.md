@@ -8,29 +8,67 @@ Whether you're building a decentralized marketplace, a content management system
 
 Ensure that the Signer object (signer in this case) you're passing to the function when you call it from the browser is properly initialized and is compatible with the browser. For instance, if you're using something like MetaMask as your Ethereum provider in the browser, you'd typically use the ethers.Web3Provider to generate a signer.
 
-1. Setting up a Signer: with MetaMask or similar browser wallets, you can set up an ethers signer as follows:
+### How to Safely Store Your Precious Files with Ocean Uploader Magic 🌊✨
 
-```javascript
-const provider = new Web3Provider(window.ethereum)
-const signer = provider.getSigner()
+Excited to get your files safely stored? Let's breeze through the process using Ocean Uploader. First things first, install the package with npm or yarn:
+
+```bash
+npm install @oceanprotocol/uploader
+
+```bash
+yarn add @oceanprotocol/uploader
 ```
 
-2. Initialize UploaderClient:
+or
 
-3. HTML Setup: Provide a file input for users to select multiple files. 
-
-```html
-<input type="file" multiple id="fileInput" />
+```bash
+yarn add @oceanprotocol/uploader
 ```
 
-4. JavaScript: Get the files from the input and call the upload function.
+Got that done? Awesome! Now, let's dive into a bit of TypeScript:
 
-```javascript
-document.getElementById('fileInput').addEventListener('change', async function () {
-  const files = this.files
-  await uploadBrowser(quoteId, tokenAddress, files)
-})
+```typescript
+import { ethers } from 'ethers';
+import {
+  UploaderClient,
+  GetQuoteArgs,
+  GetQuoteResult
+} from '@oceanprotocol/uploader';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+// Set up a new instance of the Uploader client
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY);
+const client = new UploaderClient(process.env.UPLOADER_URL, process.env.UPLOADER_ACCOUNT, signer);
+
+async function uploadAsset() {
+  // Get storage info
+  const info = await client.getStorageInfo();
+
+  // Fetch a quote using the local file path
+  const quoteArgs: GetQuoteArgs = {
+    type: info[0].type,
+    duration: 4353545453,
+    payment: {
+      chainId: info[0].payment[0].chainId,
+      tokenAddress: info[0].payment[0].acceptedTokens[0].value
+    },
+    userAddress: process.env.USER_ADDRESS,
+    filePath: ['/home/username/ocean/test1.txt']  // example file path
+  };
+  const quoteResult: GetQuoteResult = await client.getQuote(quoteArgs);
+
+  // Upload the file using the returned quote
+  await client.upload(quoteResult.quoteId, quoteArgs.filePath);
+  console.log('Files uploaded successfully.');
+}
+
+uploadAsset().catch(console.error);
+
 ```
+
+There you go! That's all it takes to upload your files using Uploader.js. Easy, right? Now go ahead and get those files stored securely. You got this! 🌟💾
 
 For additional details, please visit the [Uploader.js](https://github.com/oceanprotocol/uploader.js) repository.
 
