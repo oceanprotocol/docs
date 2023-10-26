@@ -2,7 +2,7 @@
 
 ### What's Uploader?
 
-The Uploader represents a cutting-edge solution designed to streamline the storage management process within a decentralized network. Built with efficiency and scalability in mind, Uploader leverages advanced technologies to provide secure, reliable, and cost-effective storage solutions to users.
+The Uploader represents a cutting-edge solution designed to streamline the upload process within a decentralized network. Built with efficiency and scalability in mind, Uploader leverages advanced technologies to provide secure, reliable, and cost-effective storage solutions to users.
 
 ### Architecture Overview
 
@@ -10,11 +10,11 @@ Uploader is built on a robust architecture that seamlessly integrates various co
 
 - Uploader API Layer: Exposes both public and private APIs for frontend and microservices interactions, respectively.
 - 1-N Storage Microservices: Multiple microservices, each specializing in different storage types, responsible for handling storage operations.
-- IPFS Integration: Temporary storage management using the InterPlanetary File System (IPFS).
+- IPFS Integration: Temporary storage using the InterPlanetary File System (IPFS).
 
 ### Features
 
-Uploader offers a range of powerful features tailored to meet the needs of decentralized storage management:
+Uploader offers a range of powerful features tailored to meet the needs of any decentralized storage:
 
 - User Content Uploads: Users can seamlessly upload their content through the user-friendly frontend interface.
 - Payment Handling: Uploader integrates with payment systems to manage the financial aspects of storage services.

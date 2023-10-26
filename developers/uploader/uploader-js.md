@@ -17,7 +17,7 @@ const signer = provider.getSigner()
 
 2. Initialize UploaderClient:
 
-3. HTML Setup: Provide a file input for users to select multiple files.
+3. HTML Setup: Provide a file input for users to select multiple files. 
 
 ```html
 <input type="file" multiple id="fileInput" />
@@ -46,6 +46,6 @@ constructor(baseURL: string): Create a new instance of the UploaderClient.
 - ```registerMicroservice(args: RegisterArgs): Promise<void>```: Register a new microservice that handles a storage type.
 - ```getHistory(page: number = 1, pageSize: number = 25): Promise<any>```: Retrieves the quote history for the given user address, nonce, and signature.
 
-Whether you're a developer looking to integrate Ocean Protocol's storage management service into your application or a contributor interested in enhancing this TypeScript library, we welcome your involvement. By following the <a href="https://github.com/oceanprotocol/uploader.js" target="_blank">provided documentation</a>, you can harness the capabilities of Uploader.js to make the most of decentralized file storage in your projects. 
+Whether you're a developer looking to integrate Ocean Uploader into your application or a contributor interested in enhancing this TypeScript library, we welcome your involvement. By following the <a href="https://github.com/oceanprotocol/uploader.js" target="_blank">provided documentation</a>, you can harness the capabilities of Uploader.js to make the most of decentralized file storage in your projects. 
 
 Feel free to explore the API reference, contribute to the library's development, and become a part of the Ocean Protocol community's mission to democratize data access and storage.
