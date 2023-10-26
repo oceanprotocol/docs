@@ -1,49 +1,147 @@
 # Uploader UI
 
-The Ocean Uploader User Interface, is a powerful web-based tool designed to simplify and streamline the process of managing, uploading, and interacting with digital assets on the Ocean Protocol ecosystem. This intuitive platform offers users a seamless experience for uploading files, obtaining unique identifiers (hashes or CIDs), and manage your decentralized assets.
+The [Uploader UI](https://github.com/oceanprotocol/uploader-ui-lib) stands as a robust UI react library dedicated to optimizing the uploading, and interaction with digital assets. 
 
-<b>Step 1</b>: Open the Uploader UI Library.
+Through an intuitive platform, the tool significantly simplifies the entire process, offering users a seamless experience for uploading files, acquiring unique identifiers such as hashes or CIDs, and effectively managing their decentralized assets. Developed using React, TypeScript, and CSS modules, the library seamlessly connects to Ocean remote components by default, ensuring a cohesive and efficient integration within the ecosystem.
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_1.png" alt="" />
+## 🚀 Usage
 
-<b>Step 2</b>: Click on the "CONNECT" button in the top right corner.
+Integrating [Uploader UI](https://github.com/oceanprotocol/uploader-ui-lib) into your application is straightforward. The package facilitates seamless uploads but requires a wallet connector library to function optimally. Compatible wallet connection choices include [ConnectKit](https://docs.family.co/), [Web3Modal](https://web3modal.com/), [Dynamic](https://dynamic.xyz/) and [RainbowKit](https://www.rainbowkit.com/docs/installation).
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_2.png" alt="" />
+**Step 1:** Install the necessary packages. For instance, if you're using ConnectKit, the installation command would be:
 
-<b>Step 3</b>: Make sure you are conneted to the correct network.
+```bash
+npm install connectkit @oceanprotocol/uploader-ui-lib
+```
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_3.png" alt="" />
+**Step 2:** Incorporate the UploaderComponent from the uploader-ui-lib into your app. It's crucial to ensure the component is nested within both the WagmiConfig and ConnectKit providers. Here's a basic implementation:
 
-<b>Step 4</b>: A Wallet Connect popup might appear. Follow the prompts if it shows up.
+```javascript
+import React from 'react'
+import { WagmiConfig, createConfig } from 'wagmi'
+import { polygon } from 'wagmi/chains'
+import {
+  ConnectKitProvider,
+  getDefaultConfig,
+  ConnectKitButton
+} from 'connectkit'
+import UploaderComponent from 'uploader-ui-lib'
 
-<b>Step 5</b>: Click on the Microservice you want to use (e.g. "Arweave" tab) and select a file to upload.
+export default function App () {
+  // Initialize the Wagmi client
+  const wagmiConfig = createConfig(
+    getDefaultConfig({
+      appName: 'Ocean Uploader UI',
+      infuraId: 'Your infura ID',
+      chains: [polygon],
+      walletConnectProjectId: 'Your wallet connect project ID'
+    })
+  )
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_4.png" alt="" />
+  return (
+    <WagmiConfig config={wagmiConfig}>
+      <ConnectKitProvider>
+        {/* Your App */}
+        <ConnectKitButton />
+        <UploaderComponent
+          dbs_url="https://dbs.oceanprotocol.com"
+          dbs_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
+        />
+      </ConnectKitProvider>
+    </WagmiConfig>
+  )
+}
 
-<b>Step 6</b>: Click on the "QUOTE" button. This will calculate the amount of tokens you'll be paying to store this asset.
+```
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_5.png" alt="" />
+By following the steps above, you can smoothly incorporate the Uploader UI into your application while ensuring the essential providers wrap the necessary components.
 
-<b>Step 7</b>: Click on the "UPLOAD FILE" button. You'll be asked to confirm and approve the tx.
+Alternatively, the example below shows how you could use uploader-ui-lib with RainbowKit:
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_6.png" alt="" />
+```javascript
+import React from 'react'
+import { WagmiConfig, createConfig } from 'wagmi'
+import { polygon } from 'wagmi/chains'
+import { RainbowKitProvider, ConnectButton } from '@rainbow-me/rainbowkit';
+import UploaderComponent from 'uploader-ui-lib'
 
-<b>Step 8</b>: Wait for the upload to complete.
+export default function App () {
+  // Initialize the Wagmi client
+  const wagmiConfig = createConfig(
+    getDefaultConfig({
+      appName: 'Ocean Uploader UI',
+      infuraId: 'Your infura ID',
+      chains: [polygon],
+      walletConnectProjectId: 'Your wallet connect project ID'
+    })
+  )
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_7.png" alt="" />
+  return (
+    <WagmiConfig config={wagmiConfig}>
+      <RainbowKitProvider>
+        {/* Your App */}
+        <ConnectButton />
+        <UploaderComponent
+          dbs_url="https://dbs.oceanprotocol.com"
+          dbs_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
+        />
+      </RainbowKitProvider>
+    </WagmiConfig>
+  )
+}
 
-<b>Step 9</b>: Once the upload is done, you can click on the "GET DDO LINK" button to get the tx hash or CID of the file.
+```
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_8.png" alt="" />
+\*\* under development
 
-This step-by-step guide will help you navigate the Uploader UI Library and successfully upload a file, ensuring a smooth experience throughout the process.
+## NextJS Setup for Ocean Protocol Uploader UI Library
 
-(Optional Steps)
+To configure NextJS for the integration of Ocean's Uploader UI library, modify your `next.config.js` file to include these fallbacks:
 
-<b>Step 10</b>: Click on "UNLOCK."
+```javascript
+module.exports = {
+  webpack: (config) => {
+    config.resolve.fallback = {
+      fs: false,
+      process: false,
+      net: false,
+      tls: false
+    }
+    return config
+  }
+}
+```
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_9.png" alt="" />
+\*\* add these fallbacks to avoid any issue related to webpack 5 Polyfills imcompatibility: https://github.com/webpack/changelog-v5#automatic-nodejs-polyfills-removed
 
-<b>Step 11</b>: Check your historical information and quotes. To open the asset, click on "OPEN ASSET."
+install dependencies:
 
-<img src="../../.gitbook/assets/uploader/uploader_screen_10.png" alt="" />
+```bash
+npm install @oceanprotocol/uploader-ui-lib
+```
+
+Import the library's CSS into your project:
+
+```javascript
+import '@oceanprotocol/uploader-ui-lib/dist/index.es.css';
+```
+
+Dynamically import the Uploader component and ensure it is not processed during server-side rendering (SSR) using the next/dynamic function:
+
+```javascript
+import dynamic from 'next/dynamic';
+...
+
+const Uploader = dynamic(() => import('@oceanprotocol/uploader-ui-lib').then((module) => module.Uploader), { ssr: false });
+```
+
+When incorporating the Uploader component into your application, make sure to set 'use client' on top in your app's component. This ensures that the component operates on the client side, bypassing SSR when rendering:
+
+```javascript
+'use client'
+import dynamic from 'next/dynamic'
+```
+
+This comprehensive setup ensures the proper integration and functioning of the Ocean Protocol's Uploader UI library within a NextJS application.
+
+For more details visit the [Uploader UI](https://github.com/oceanprotocol/uploader-ui) project.
