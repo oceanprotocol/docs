@@ -74,9 +74,17 @@ For additional details, please visit the [Uploader.js](https://github.com/oceanp
 
 ### API
 
-The library provides the following methods:
-constructor(baseURL: string): Create a new instance of the UploaderClient.
+The library offers developers a versatile array of methods designed for seamless interaction with the Ocean Uploader API. These methods collectively empower developers to utilize Ocean's decentralized infrastructure for their own projects:
 
+<details>
+  <summary>
+      constructor(baseURL: string)
+  </summary>
+  
+  ```
+  Create a new instance of the UploaderClient.
+  ```
+</details>
 <details>
   <summary>
       getStorageInfo()
