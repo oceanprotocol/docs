@@ -44,8 +44,13 @@ export default function App () {
         {/* Your App */}
         <ConnectKitButton />
         <UploaderComponent
-          uploader_url="https://dbs.oceanprotocol.com"
-          uploader_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
+            uploader_url={
+                process.env.NEXT_PUBLIC_UPLOADER_URL ||'https://api.uploader.oceanprotocol.com/'
+            }
+            uploader_account={
+                process.env.NEXT_PUBLIC_UPLOADER_ACCOUNT ||
+                '0x5F8396D1BfDa5259Ee89196F892E4401BF3B596d'
+            }
         />
       </ConnectKitProvider>
     </WagmiConfig>
@@ -56,7 +61,7 @@ export default function App () {
 
 By following the steps above, you can smoothly incorporate the Uploader UI into your application while ensuring the essential providers wrap the necessary components.
 
-Alternatively, the example below shows how you could use uploader-ui-lib with RainbowKit:
+Alternatively, the example below shows how you could use [uploader-ui-lib](https://github.com/oceanprotocol/uploader-ui-lib) with RainbowKit:
 
 ```javascript
 import React from 'react'
@@ -82,8 +87,13 @@ export default function App () {
         {/* Your App */}
         <ConnectButton />
         <UploaderComponent
-          uploader_url="https://dbs.oceanprotocol.com"
-          uploader_account="0x21F2B4d705aC448c9Ff96694Dd9e5901F79f1Ab2"
+            uploader_url={
+                process.env.NEXT_PUBLIC_UPLOADER_URL ||'https://api.uploader.oceanprotocol.com/'
+            }
+            uploader_account={
+                process.env.NEXT_PUBLIC_UPLOADER_ACCOUNT ||
+                '0x5F8396D1BfDa5259Ee89196F892E4401BF3B596d'
+            }
         />
       </RainbowKitProvider>
     </WagmiConfig>
@@ -96,7 +106,7 @@ export default function App () {
 
 ## NextJS Setup for Ocean Protocol Uploader UI Library
 
-To configure NextJS for the integration of Ocean's Uploader UI library, modify your `next.config.js` file to include these fallbacks:
+1. To use Ocean's Uploader UI library in your NextJS project modify your `next.config.js` file to include these fallbacks:
 
 ```javascript
 module.exports = {
@@ -114,25 +124,46 @@ module.exports = {
 
 \*\* add these fallbacks to avoid any issue related to webpack 5 Polyfills imcompatibility: https://github.com/webpack/changelog-v5#automatic-nodejs-polyfills-removed
 
-install dependencies:
+2. Install dependencies:
 
 ```bash
 npm install @oceanprotocol/uploader-ui-lib
 ```
 
-Import the library's CSS into your project:
+3. Import the library's CSS into your project:
 
 ```javascript
 import '@oceanprotocol/uploader-ui-lib/dist/index.es.css';
 ```
 
-Dynamically import the Uploader component and ensure it is not processed during server-side rendering (SSR) using the next/dynamic function:
+4. Dynamically import the Uploader component and ensure it is not processed during server-side rendering (SSR) using the next/dynamic function:
 
 ```javascript
 import dynamic from 'next/dynamic';
 ...
 
 const Uploader = dynamic(() => import('@oceanprotocol/uploader-ui-lib').then((module) => module.Uploader), { ssr: false });
+```
+
+5. Import component:
+
+```javascript
+<WagmiConfig config={wagmiConfig}>
+    <ConnectKitProvider>
+    <Layout>
+        ...
+        <UploaderConnection
+            uploader_url={
+                process.env.NEXT_PUBLIC_UPLOADER_URL ||'https://api.uploader.oceanprotocol.com/'
+            }
+            uploader_account={
+                process.env.NEXT_PUBLIC_UPLOADER_ACCOUNT ||
+                '0x5F8396D1BfDa5259Ee89196F892E4401BF3B596d'
+            }
+        />
+    </Layout>
+    </ConnectKitProvider>
+</WagmiConfig>
 ```
 
 When incorporating the Uploader component into your application, make sure to set 'use client' on top in your app's component. This ensures that the component operates on the client side, bypassing SSR when rendering:
