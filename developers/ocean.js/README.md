@@ -31,7 +31,7 @@ The module structure follows this format:
 When working with a particular module, you will need to provide different parameters. To instantiate classes from the contracts module, you must pass objects such as Signer, which represents the wallet instance, or the contract address you wish to utilize, depending on the scenario. As for the services modules, you will need to provide the provider URI or metadata cache URI.
 
 
-### Examples and Showcases 🌟🚀
+# Examples and Showcases 🌟🚀
 
 Ocean.js is more than just a library; it's a gateway to unlocking your potential in the world of decentralized data services. To help you understand its real-world applications, we've curated a collection of examples and showcases. These examples demonstrate how you can use Ocean.js to create innovative solutions that harness the power of decentralized technologies. Each example provides a unique perspective on how you can apply Ocean.js, from decentralized marketplaces for workshops to peer-to-peer platforms for e-books and AI-generated art. These showcases serve as an inspiration for developers like you, looking to leverage Ocean.js in your projects, showcasing its adaptability and transformative capabilities. Dive into these examples to see how Ocean.js can bring your creative visions to life. 📚
 <table data-view="cards">
