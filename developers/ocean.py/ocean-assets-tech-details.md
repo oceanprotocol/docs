@@ -20,7 +20,7 @@ It can be called after instantiating Ocean object.
 
 * `name` - name of the asset, `string`
 * `url` - url that is stored in the asset, `string`
-* `publisher_wallet` - wallet of the asset publisher/owner, `Brownie account`
+* `publisher_wallet` - wallet of the asset publisher/owner, `eth Account`
 * `wait_for_aqua` - boolean value which default is `True`, waiting for aquarius to fetch the asset takes additional time, but if you want to be sure that your asset is indexed, keep the default value.
 
 **Returns**
@@ -64,7 +64,7 @@ It can be called after instantiating Ocean object.
 
 * `name` - name of the asset, `string`
 * `url` - url that is stored in the asset, `string`
-* `publisher_wallet` - wallet of the asset publisher/owner, `Brownie account`
+* `publisher_wallet` - wallet of the asset publisher/owner, `eth Account`
 * `image` - docker image of that algorithm, `string`
 * `tag` - docker tag for that algorithm image, `string`
 * `checksum` - docker checksum for algorithm's image, `string`
@@ -134,7 +134,7 @@ It can be called after instantiating Ocean object.
 
 * `name` - name of the asset, `string`
 * `transaction_id` - transaction id from the arweave file, `string`
-* `publisher_wallet` - wallet of the asset publisher/owner, `Brownie account`
+* `publisher_wallet` - wallet of the asset publisher/owner, `eth Account`
 * `wait_for_aqua` - boolean value which default is `True`, waiting for aquarius to fetch the asset takes additional time, but if you want to be sure that your asset is indexed, keep the default value.
 
 **Returns**
@@ -183,7 +183,7 @@ It can be called after instantiating Ocean object.
 * `name` - name of the asset, `string`
 * `url` - url of subgraph that you are using, `string`
 * `query` - GraphQL query, `string`
-* `publisher_wallet` - wallet of the asset publisher/owner, `Brownie account`
+* `publisher_wallet` - wallet of the asset publisher/owner, `eth Account`
 * `wait_for_aqua` - boolean value which default is `True`, waiting for aquarius to fetch the asset takes additional time, but if you want to be sure that your asset is indexed, keep the default value.
 
 **Returns**
@@ -233,7 +233,7 @@ It can be called after instantiating Ocean object.
 * `name` - name of the asset, `string`
 * `contract_address` - contract address that should be stored in the asset, `string`
 * `contract_abi` - ABI of functions presented in the contract, `string`
-* `publisher_wallet` - wallet of the asset publisher/owner, `Brownie account`
+* `publisher_wallet` - wallet of the asset publisher/owner, `eth Account`
 * `wait_for_aqua` - boolean value which default is `True`, waiting for aquarius to fetch the asset takes additional time, but if you want to be sure that your asset is indexed, keep the default value.
 
 **Returns**
@@ -283,7 +283,7 @@ Creating/deploying a DataNFT contract and in the Metadata store (Aquarius).
 **Parameters**
 
 * `metadata`: `dictionary` conforming to the Metadata accepted by Ocean Protocol.
-* `publisher_wallet`- `Brownie account` of the publisher registering this asset.
+* `publisher_wallet`- `eth Account` of the publisher registering this asset.
 * `credentials` - credentials `dictionary` necessary for the asset, which establish who can consume the asset and who cannot.
 * `data_nft_address`- hex string, the address of the data NFT. The new asset will be associated with this data NFT address.
 * `data_nft_args`- object of DataNFTArguments type if creating a new one.
@@ -324,7 +324,7 @@ def create(
         compress_flag: Optional[bool] = True,
         wait_for_aqua: bool = True,
     ) -> Optional[DDO]:
-    
+
         self._assert_ddo_metadata(metadata)
 
         provider_uri = DataServiceProvider.get_url(self._config_dict)
@@ -556,7 +556,7 @@ The updated DDO, or `None` if updated DDO not found in Aquarius.
         encrypt_flag: Optional[bool] = True,
         compress_flag: Optional[bool] = True,
     ) -> Optional[DDO]:
- 
+
         self._assert_ddo_metadata(ddo.metadata)
 
         if not provider_uri:
@@ -738,7 +738,7 @@ Downloads the asset from Ocean Market.
 **Parameters**
 
 * `ddo` - DDO to be downloaded.
-* `consumer_wallet` - Brownie account for the wallet that "ordered" the asset.
+* `consumer_wallet` - eth Account for the wallet that "ordered" the asset.
 * `destination` - destination path, as string, where the asset will be downloaded.
 * `order_tx_id` - transaction ID for the placed order, string and bytes formats are accepted.
 
@@ -803,7 +803,7 @@ Pays for access service by calling initialize endpoint from Provider and startin
 **Parameters**
 
 * `ddo` - DDO to be downloaded.
-* `wallet`- Brownie account for the wallet that pays for the asset.
+* `wallet`- eth Account for the wallet that pays for the asset.
 
 **Optional parameters**
 
@@ -900,7 +900,7 @@ Pays for compute service by calling `initializeCompute` endpoint from Provider t
 * `compute_environment` - `string` that represents the ID from the chosen C2D environment.
 * `valid_until` - `UNIX timestamp` which represents until when the algorithm can be used/run.
 * `consume_market_order_fee_address` - string address which denotes the consume market fee address for that order and can be the wallet address itself.
-* `wallet` - the `Brownie account` which pays for the compute service
+* `wallet` - the `eth Account` which pays for the compute service
 
 **Optional parameters**
 
