@@ -16,7 +16,7 @@ It can be called within Ocean Compute class.
 
 **Parameters**
 
-* `consumer_wallet` - the `Brownie account` of consumer who pays & starts for compute job.
+* `consumer_wallet` - the `eth Account` of consumer who pays & starts for compute job.
 * `dataset` - `ComputeInput` object, each of them includes mandatory the DDO and service.
 * `compute_environment` - `string` that represents the ID from the chosen C2D environment.
 * `additional_datasets` - list of `ComputeInput` objects for additional datasets in case of starting a compute job for multiple datasets.
@@ -98,7 +98,7 @@ It can be called within Ocean Compute class.
 * `ddo` - DDO offering the compute service of this job
 * `service` - Service object of compute
 * `job_id` - ID of the compute job
-* `wallet` - Brownie account which initiated the compute job
+* `wallet` - eth Account which initiated the compute job
 
 **Returns**
 
@@ -152,7 +152,7 @@ It can be called within Ocean Compute class.
 * `service` - Service object of compute
 * `job_id` - ID of the compute job
 * `index` - compute result index
-* `wallet` - Brownie account which initiated the compute job
+* `wallet` - eth Account which initiated the compute job
 
 **Returns**
 
@@ -205,7 +205,7 @@ It can be called within Ocean Compute class.
 * `ddo` - DDO offering the compute service of this job
 * `service` - Service object of compute
 * `job_id` - ID of the compute job
-* `wallet` - Brownie account which initiated the compute job
+* `wallet` - eth Account which initiated the compute job
 * `log_type` - string which selects what kind of logs to display. Default "output"
 
 **Returns**
@@ -265,7 +265,7 @@ It can be called within Ocean Compute class.
 * `ddo` - DDO offering the compute service of this job
 * `service` - Service object of compute
 * `job_id` - ID of the compute job
-* `wallet` - Brownie account which initiated the compute job
+* `wallet` - eth Account which initiated the compute job
 
 **Returns**
 

@@ -41,11 +41,7 @@ Issue: MacOS “Unsupported Architecture”
 * If you run MacOS, you may encounter an “Unsupported Architecture” issue.
 * Workaround: install including ARCHFLAGS: `ARCHFLAGS="-arch x86_64" pip install ocean-lib`. [Details](https://github.com/oceanprotocol/ocean.py/issues/486).
 
-To install ocean-lib using Python 3.11, run `pip install vyper==0.3.7 --ignore-requires-python` and `sudo apt-get install python3.11-dev` before installing ocean-lib. Since the parsimonious dependency does not support Python 3.11, you need to edit the `parsimonious/expressions.py` to `import getfullargspec as getargsspec` instead of the regular import. These are temporary fixes until all dependencies are fully supported in Python 3.11. We do not directly use Vyper in ocean-lib.
-
-### ocean.py uses Brownie
-
-Let's dive deeper into the Ocean world! 💙 Did you know that Ocean and Brownie are like best buddies? When you installed Ocean (ocean-lib pypi package) earlier, it automatically took care of installing Brownie (eth-brownie package) too. Talk about a dynamic duo! 🦸‍♀️🦸‍♂️
+### why we 🥰 ocean.py
 
 `ocean.py` treats each Ocean smart contract as a Python class, and each deployed smart contract as a Python object. We love this feature, because it means Python programmers can treat Solidity code as Python code! 🤯
 
