@@ -17,9 +17,21 @@ When you publish an asset on the Ocean marketplace, there are currently no charg
 
 However, if you're building a custom marketplace, you have the flexibility to include a publishing fee by adding an extra transaction in the publish flow. Depending on your marketplace's unique use case, you, as the marketplace owner, can decide whether or not to implement this fee. We believe in giving you the freedom to tailor your marketplace to your specific needs and preferences.
 
-| Value in Ocean Market | Value in Other Markets         |
-| --------------------- | ------------------------------ |
-| 0%                    | Customizable in market config. |
+| Value in Ocean Market   | Value in Other Markets         |
+| :---------------------: | :------------------------------: |
+| 0%                      | Customizable in market config. |
+
+
+### Swap fee
+
+Swap fees are incurred as a transaction cost whenever someone exchanges one type of token for another within a [fixed rate exchange](./pricing-schemas.md#fixed-pricing). These exchanges can involve swapping a datatoken for a basetoken, like OCEAN or H2O, or vice versa, where basetoken is exchanged for datatoken. The specific value of the swap fee depends on the type of token being used in the exchange.
+
+The swap fee values are set at the smart contract level and can only be modified by the Ocean Protocol Foundation (OPF).
+
+| Value for OCCEAN or H2O   | Value for other ERC20 tokens  |
+| :-----------------------: | :-----------------------------: |
+| 0.1%                      | 0.2%                          |
+
 
 ### Consume(aka. Order) fee
 
@@ -32,7 +44,7 @@ When a user exchanges a [datatoken](datatokens.md) for the privilege of download
    * Eg: A market can set a fixed fee of 10 USDT per order, no matter what pricing schemas are used (fixedrate with ETH, BTC, dispenser, etc).
 2. **Consume Market** Consumption Fee
    * A market can specify what fee it wants on the order function.
-3. **Provider Consumption** Fees
+3. **Provider** Consumption Fees
    * Defined by the [Provider](../provider/README.md) for any consumption.
    * Expressed in: Address, Token, Amount (absolute), Timeout.
    * You can retrieve them when calling the initialize endpoint.

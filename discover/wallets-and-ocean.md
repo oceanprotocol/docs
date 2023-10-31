@@ -58,6 +58,18 @@ Almost all ERC-20 wallets require these values for adding a custom token:
          <td>OCEAN</td>
          <td>18</td>
       </tr>
+      <tr>
+         <td><strong>Oasis Sapphire</strong></td>
+         <td>0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
+     <tr>
+         <td><strong>Oasis Sapphire Testnet</strong></td>
+         <td>0x973e69303259B0c2543a38665122b773D28405fB</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
    </tbody>
 </table>
 

@@ -16,7 +16,7 @@ It is implemented in DatatokenBase, inherited by Datatoken2, so it can be called
 
 **Parameters**
 
-* `tx_dict` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+* `tx_dict` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 * `max_tokens` - maximum amount of tokens to dispense in wei. The default is a large number.
 * `max_balance` - maximum balance of requester in wei. The default is a large number.
 * `with_mint` - boolean, `true` if we want to allow the dispenser to be a minter as default value
@@ -93,7 +93,7 @@ It is implemented in DatatokenBase, so it can be called within Datatoken class.
 **Parameters**
 
 * `amount` - amount of datatokens to be dispensed in wei (int or string format)
-* `tx_dict` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+* `tx_dict` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 
 **Returns**
 
@@ -148,7 +148,7 @@ It is implemented in `Datatoken2`, so it can be called within `Datatoken2` class
 
 * `consumer` - address of the consumer wallet that needs funding
 * `service_index` - service index as int for identifying the service that you want to further call [`start_order`](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL169C5-L197C10).
-* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 * `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
 
 **Returns**
@@ -275,7 +275,7 @@ This wraps the smart contract method `Datatoken.createFixedRate()` with a simple
 
 * `rate` - how many base tokens does 1 datatoken cost? In wei or string
 * `base_token_addr` - e.g. OCEAN address
-* `tx_dict` -  is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+* `tx_dict` -  is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 
 **Optional parameters**
 
@@ -314,7 +314,7 @@ This wraps the smart contract method `Datatoken.createFixedRate()` with a simple
         allowed_swapper: str = ZERO_ADDRESS,
         full_info: bool = False,
     ) -> Union[OneExchange, tuple]:
-    
+
         # import now, to avoid circular import
         from ocean_lib.models.fixed_rate_exchange import OneExchange
 
@@ -369,7 +369,7 @@ It is implemented in `Datatoken` class and it is also inherited in `Datatoken2` 
 
 * `consumer` - address of the consumer wallet that needs funding
 * `service_index` - service index as int for identifying the service that you want to further call [`start_order`](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL169C5-L197C10).
-* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 * `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
 
 **Returns**
@@ -422,8 +422,8 @@ Return value is a hex string for transaction hash which denotes the proof of sta
             consume_market_fees=consume_market_fees,
             transaction_parameters=transaction_parameters,
         )
-        
-        
+
+
 ```
 
 </details>
@@ -480,7 +480,7 @@ It is implemented in Datatoken class and it is also inherited in Datatoken2 clas
 * `consumer` - address of the consumer wallet that needs funding
 * `service_index` - service index as int for identifying the service that you want to apply `start_order`.
 * `provider_fees` - dictionary which includes provider fees generated when `initialize` endpoint from `Provider` was called.
-* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 * `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
 
 **Returns**
@@ -543,7 +543,7 @@ It is implemented in Datatoken class and it is also inherited in Datatoken2 clas
 
 * `order_tx_id` - transaction hash of a previous order, string or bytes format.
 * `provider_fees` - dictionary which includes provider fees generated when `initialize` endpoint from `Provider` was called.
-* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc. For more info, check [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/).
+* `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 
 **Returns**
 
