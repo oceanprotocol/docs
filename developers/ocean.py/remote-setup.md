@@ -21,28 +21,18 @@ Let's go!
 
 ### 1. Configure Networks
 
-#### 1.1 Define network RPC URLs
-
-To define the RPC URL for a network, simply add an env variable like `NETWORKNAME_RPC_URL` e.g. `export POLYGON_RPC_URL=https://polygon-rpc.com`
+#### 1.1 Supported networks
 
 All [Ocean chain deployments](https://docs.oceanprotocol.com/discover/networks) (Eth mainnet, Polygon, etc) are supported.
+For any supported network, use the RPC URL of your choice when passing it to the ocean config object.
 
 #### 1.2 RPCs and Infura
 
 In order to obtain API keys for blockchain access, follow up [this document](http://127.0.0.1:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) for tips & tricks.
 
-The config file's default RPCs point to Infura, which require you to have an Infura account with corresponding token `WEB3_INFURA_PROJECT_ID`.
-
 **If you do have an Infura account**
 
-* Linux & MacOS users: in console: `export WEB3_INFURA_PROJECT_ID=<your infura ID>`
-* Windows: in console: `set WEB3_INFURA_PROJECT_ID=<your infura ID>`
-
-**If you do **_**not**_** have an Infura account**
-
-One option is to get an Infura account. A simpler option is to _bypass the need_ for an Infura account: just change to RPCs that don't need Infura.
-
-By default, if `WEB3_INFURA_PROJECT_ID` is defined, ocean.py will glue that into place inside the RPC URL.
+Use the full RPC URL including the base and API key, e.g. for mumbai: `https://polygon-mumbai.infura.io/v3/<API-KEY>`
 
 ### 2. Create EVM Accounts (One-Time)
 
@@ -133,13 +123,10 @@ In the Python console:
 
 ```python
 # Create Ocean instance
-from ocean_lib.web3_internal.utils import connect_to_network
-connect_to_network("polygon-test") # mumbai is "polygon-test"
-
 import os
 from ocean_lib.example_config import get_config_dict
 from ocean_lib.ocean.ocean import Ocean
-config = get_config_dict("polygon-test")
+config = get_config_dict("https://polygon.llamarpc.com")  # or use another RPC URL, or an Infura one
 ocean = Ocean(config)
 
 # Create OCEAN object. ocean_lib knows where OCEAN is on all remote networks
