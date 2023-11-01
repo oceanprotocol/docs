@@ -38,20 +38,13 @@ cd barge
 docker system prune -a --volumes
 
 # Run barge: start Ganache, Provider, Aquarius; deploy contracts; update ~/.ocean
+export GANACHE_HARDFORK=london  # for support of type 2 transactions
 ./start_ocean.sh
 ```
 
-Let barge do its magic and wait until the blockchain is fully synced. That means  when you    start to see continuosly `eth_blockNumber`
+Let barge do its magic and wait until the blockchain is fully synced. That means when you start to see continuously `eth_blockNumber`
 
-### 2. Brownie local network configuration
-
-(You don't need to do anything in this step, it's just useful to understand.)
-
-Brownie's network configuration file is at `~/.brownie/network-config.yaml`.
-
-When running locally, Brownie will use the chain listed under `development`, having id `development`. This refers to Ganache, which is running in Barge.
-
-### 3. Set envvars
+### 2. Set envvars
 
 From here on, go to a console different than Barge. (E.g. the console where you installed Ocean, or a new one.)
 
@@ -74,7 +67,7 @@ export TEST_PRIVATE_KEY2=0x1d751ded5a32226054cd2e71261039b65afb9ee1c746d055dd699
 export FACTORY_DEPLOYER_PRIVATE_KEY=0xc594c6e5def4bab63ac29eed19a134c130388f74f019bc74b8f4389df2837a58
 ```
 
-### 4. Setup in Python
+### 3. Setup in Python
 
 In the same console, run Python console:
 
@@ -86,11 +79,8 @@ In the Python console:
 
 ```python
 # Create Ocean instance
-from ocean_lib.web3_internal.utils import connect_to_network
-connect_to_network("development")
-
 from ocean_lib.example_config import get_config_dict
-config = get_config_dict("development")
+config = get_config_dict("http://localhost:8545")
 
 from ocean_lib.ocean.ocean import Ocean
 ocean = Ocean(config)
@@ -104,17 +94,16 @@ mint_fake_OCEAN(config)
 
 # Create Alice's wallet
 import os
-from brownie.network import accounts
-accounts.clear()
+from eth_account import Account
 
 alice_private_key = os.getenv("TEST_PRIVATE_KEY1")
-alice = accounts.add(alice_private_key)
+alice = Account.from_key(private_key=alice_private_key)
 assert alice.balance() > 0, "Alice needs ETH"
 assert OCEAN.balanceOf(alice) > 0, "Alice needs OCEAN"
 
 # Create additional wallets. While some flows just use Alice wallet, it's simpler to do all here.
 bob_private_key = os.getenv('TEST_PRIVATE_KEY2')
-bob = accounts.add(bob_private_key)
+bob = Account.from_key(private_key=bob_private_key)
 assert bob.balance() > 0, "Bob needs ETH"
 assert OCEAN.balanceOf(bob) > 0, "Bob needs OCEAN"
 

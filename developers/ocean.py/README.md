@@ -14,7 +14,7 @@ ocean.py lets you do the following things:
 
 * Publish data services: downloadable files or compute-to-data. Create an ERC721 data NFT for each service, and ERC20 datatoken for access (1.0 datatokens to access).
 * Sell datatokens via for a fixed price. Sell data NFTs.
-* Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using  Brownie.
+* Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.
 
 If you prefer video format, please check this video below, otherwise let's move forward.
 

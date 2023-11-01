@@ -10,7 +10,7 @@ Here, we do setup for Mumbai, the testnet for Polygon. It's similar for other re
 
 Here, we will:
 
-1. Configure Brownie networks
+1. Configure Networks
 2. Create two accounts - `REMOTE_TEST_PRIVATE_KEY1` and `2`
 3. Get test MATIC on Mumbai
 4. Get test OCEAN on Mumbai
@@ -19,101 +19,20 @@ Here, we will:
 
 Let's go!
 
-### 1. Configure Brownie Networks (One-Time)
+### 1. Configure Networks
 
-#### 1.1 Network config file
+#### 1.1 Supported networks
 
-Brownie's network config file is `network-config.yaml`. It is located in the `.brownie/` subfolder of your home folder.
+All [Ocean chain deployments](https://docs.oceanprotocol.com/discover/networks) (Eth mainnet, Polygon, etc) are supported.
+For any supported network, use the RPC URL of your choice when passing it to the ocean config object.
 
-* For Linux & MacOS, it's: `~/.brownie/network-config.yaml`
-* For Windows users, it's: `C:\Users\<user_name>\.brownie\network-config.yaml`
-
-#### 1.2 Generate network config file (if needed)
-
-If you already see the config file, skip this section.
-
-If you don't, you need to auto-generate by calling any brownie function from a Python console. Here's an example.
-
-First, in a new or existing console, run Python:
-
-```bash
-python
-```
-
-In the Python console:
-
-```python
-from ocean_lib.example_config import get_config_dict
-```
-
-It will generate the file in the target location. You can check the target location to confirm.
-
-#### 1.3 Contents of network config file
-
-The network configuration file has settings for each network, e.g. development (ganache), Ethereum mainnet, Polygon, and Mumbai.
-
-Each network gets specifications for:
-
-* `host` - the RPC URL, i.e. what URL do we pass through to talk to the chain
-* `required_confs` - the number of confirmations before a tx is done
-* `id` - e.g. `polygon-main` (Polygon), `polygon-test` (Mumbai)
-
-`development chains` run locally; `live` chains run remotely.
-
-The example `network-config.yaml` in Brownie's GitHub repo is [here](https://github.com/eth-brownie/brownie/blob/master/brownie/data/network-config.yaml). It can serve as a comparison to your local copy.
-
-Ocean.py follows the exact `id` name for the network's name from the default Brownie configuration file. Therefore, you need to ensure that your target network name matches the corresponding Brownie `id`.
-
-#### 1.4 Networks Supported
-
-All [Ocean-deployed](../../discover/networks/README.md) chains (Eth mainnet, Polygon, etc) should be in Brownie's default `network-config.yaml` except Energy Web Chain (EWC).
-
-For Windows users: it's possible that your `network-config.yaml` doesn't have all the network entries. In this case, just replace your local file's content with the `network-config.yaml` in Brownie's GitHub repo, [here](https://github.com/eth-brownie/brownie/blob/master/brownie/data/network-config.yaml).
-
-For all users: to use EWC, add the following to network-config.yaml:
-
-```yaml
-- name: energyweb
-  networks:
-  - chainid: 246
-    host: https://rpc.energyweb.org
-    id: energyweb
-    name: energyweb
-```
-
-#### 1.5 RPCs and Infura
+#### 1.2 RPCs and Infura
 
 In order to obtain API keys for blockchain access, follow up [this document](http://127.0.0.1:5000/o/mTcjMqA4ylf55anucjH8/s/zQlpIJEeu8x5yl0OLuXn/) for tips & tricks.
 
-The config file's default RPCs point to Infura, which require you to have an Infura account with corresponding token `WEB3_INFURA_PROJECT_ID`.
-
 **If you do have an Infura account**
 
-* Linux & MacOS users: in console: `export WEB3_INFURA_PROJECT_ID=<your infura ID>`
-* Windows: in console: `set WEB3_INFURA_PROJECT_ID=<your infura ID>`
-
-**If you do **_**not**_** have an Infura account**
-
-One option is to get an Infura account. A simpler option is to _bypass the need_ for an Infura account: just change to RPCs that don't need Infura.
-
-You can bypass manually: just edit your brownie network config file.
-
-Or you can bypass via the command line. The following command replaces Infura RPCs with public ones in `network-config.yaml`:
-
-* Linux users: in the console:
-
-{% code overflow="wrap" %}
-```bash
-sed -i 's#https://polygon-mainnet.infura.io/v3/$WEB3_INFURA_PROJECT_ID#https://polygon-rpc.com/#g; s#https://polygon-mumbai.infura.io/v3/$WEB3_INFURA_PROJECT_ID#https://rpc-mumbai.maticvigil.com#g' ~/.brownie/network-config.yaml
-```
-{% endcode %}
-
-* MacOS users: you can achieve the same thing with `gnu-sed` and the `gsed` command. (Or just manually edit the file.)
-* For Windows: you might need something similar to [powershell](https://www.marek.tokyo/2020/01/remove-string-from-file-in-windows-10.html). (Or just manually edit the file.)
-
-**1.6 Network config file wrapup**
-
-Congrats, you've now configured your Brownie network file! You rarely need to worry about it from now on.
+Use the full RPC URL including the base and API key, e.g. for mumbai: `https://polygon-mumbai.infura.io/v3/<API-KEY>`
 
 ### 2. Create EVM Accounts (One-Time)
 
@@ -204,30 +123,26 @@ In the Python console:
 
 ```python
 # Create Ocean instance
-from ocean_lib.web3_internal.utils import connect_to_network
-connect_to_network("polygon-test") # mumbai is "polygon-test"
-
 import os
 from ocean_lib.example_config import get_config_dict
 from ocean_lib.ocean.ocean import Ocean
-config = get_config_dict("polygon-test")
+config = get_config_dict("https://polygon.llamarpc.com")  # or use another RPC URL, or an Infura one
 ocean = Ocean(config)
 
 # Create OCEAN object. ocean_lib knows where OCEAN is on all remote networks
 OCEAN = ocean.OCEAN_token
 
 # Create Alice's wallet
-from brownie.network import accounts
-accounts.clear()
+from eth_account import Account
 
 alice_private_key = os.getenv('REMOTE_TEST_PRIVATE_KEY1')
-alice = accounts.add(alice_private_key)
+alice = Account.from_key(private_key=alice_private_key)
 assert alice.balance() > 0, "Alice needs MATIC"
 assert OCEAN.balanceOf(alice) > 0, "Alice needs OCEAN"
 
 # Create Bob's wallet. While some flows just use Alice wallet, it's simpler to do all here.
 bob_private_key = os.getenv('REMOTE_TEST_PRIVATE_KEY2')
-bob = accounts.add(bob_private_key)
+bob = Account.from_key(private_key=bob_private_key)
 assert bob.balance() > 0, "Bob needs MATIC"
 assert OCEAN.balanceOf(bob) > 0, "Bob needs OCEAN"
 
@@ -235,4 +150,4 @@ assert OCEAN.balanceOf(bob) > 0, "Bob needs OCEAN"
 from ocean_lib.ocean.util import to_wei, from_wei
 ```
 
-If you get a gas-related error like `transaction underpriced`, you'll need to change the `priority_fee` or `max_fee`. See details in [brownie docs](https://eth-brownie.readthedocs.io/en/stable/core-gas.html) or you can check the dedicated [README ](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/gas-strategy-remote.md)which customize your gas strategy.
+If you get a gas-related error like `transaction underpriced`, you'll need to change the `maxFeePerGas` or `maxPriorityFeePerGas`.
