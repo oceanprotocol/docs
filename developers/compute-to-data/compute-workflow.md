@@ -13,24 +13,24 @@ For visual clarity, here's an image of the workflow in action! 🖼️✨
 Below, we'll outline each step in detail 📝
 
 ## Starting a C2D Job
-1. The consumer selects a preferred environment from the provider's list and initiates a compute-to-data job by choosing a data asset-algorithm pair along with the preferred compute environment.
+1. The consumer selects a preferred environment from the provider's list and initiates a compute-to-data job by choosing a data asset-algorithm pair.
 2. The provider checks the orders on the blockchain.
-3. If the orders for data asset, algorithm and compute environment fees are valid, the provider can commence the compute flow.
-4. The provider informs the consumer of the job number's successful creation.
+3. If the orders for data asset, algorithm and compute environment fees are valid, the provider can start the compute flow.
+4. The provider informs the consumer of the job id's successful creation.
 5. With the job ID and confirmation of the orders, the provider starts the job by calling the operator service.
 6. The operator service adds the new job in its local jobs queue.
 7. It's the operator engine's responsibility to periodically check the operator service for the list of pending jobs. If there are available resources for a new job, the operator engine requests the job list from the operator service to decide whether to initiate a new job.
-8. The operator service provides the list of jobs, and the operator engine is then prepared to commence a new job.
+8. The operator service provides the list of jobs, and the operator engine is then prepared to start a new job.
 
 ## Creating the K8 Cluster and Allocating Job Volumes
 9. As a new job begins, volumes are created on the Kubernetes cluster, a task handled by the operator engine.
-10. The cluster creates and allocates volumes for the job using the job volumes
-11. The volumes are created and allocated to the pod
+10. The cluster creates and allocates volumes for the job using the job volumes.
+11. The volumes are created and allocated to the pod.
 12. After volume creation and allocation, the operator engine starts "pod-configuration" as a new pod in the cluster.
 
 ## Loading Assets and Algorithms
 13. Pod-configuration requests the necessary data asset(s) and algorithm from their respective providers.
-14. The files are downloaded by the pod configuration via provider.
+14. The files are downloaded by the pod configuration via the provider.
 15. The pod configuration writes the assets in the job volume.
 16. The pod configuration informs the operator engine that it's ready to start the job.
 
