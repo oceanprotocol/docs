@@ -13,7 +13,7 @@ For visual clarity, here's an image of the workflow in action! 🖼️✨
 Below, we'll outline each step in detail 📝
 
 ## Starting a C2D Job
-The consumer selects a preferred environment from the provider's list and initiates a compute-to-data job by choosing a data asset-algorithm pair along with the preferred compute environment.
+1. The consumer selects a preferred environment from the provider's list and initiates a compute-to-data job by choosing a data asset-algorithm pair along with the preferred compute environment.
 2. The provider checks the orders on the blockchain.
 3. If the orders for data asset, algorithm and compute environment fees are valid, the provider can commence the compute flow.
 4. The provider informs the consumer of the job number's successful creation.
