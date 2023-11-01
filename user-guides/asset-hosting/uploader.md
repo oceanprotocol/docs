@@ -12,9 +12,9 @@ Uploader is designed to simplify the process of storring your assets on decentra
 
 Currently we support Arweave and we will soon be releasing Filecoin support. In the future we will also support multiple other options. 
 
-### How to store an asset on Arweave with the Uploader UI? 
+### How to store an asset on Arweave with [Ocean Uploader](https://uploader.oceanprotocol.com/)? 
 
-Ready to dive into the world of decentralized storage with Uploader? Let's get started:
+Ready to dive into the world of decentralized storage with [Ocean Uploader](https://uploader.oceanprotocol.com/)? Let's get started:
 
 {% embed url="https://app.arcade.software/share/Hf5Fpy0dfJ4ame8OZOYl" fullWidth="false" %}
 {% endembed %}
