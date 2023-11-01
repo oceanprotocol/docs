@@ -18,45 +18,47 @@ The consumer selects a preferred environment from the provider's list and initia
 3. If the orders for data asset, algorithm and compute environment fees are valid, the provider can commence the compute flow.
 4. The provider informs the consumer of the job number's successful creation.
 5. With the job ID and confirmation of the orders, the provider starts the job by calling the operator service.
-6. The operator service communicates with the operator engine to initiate a new job.
+6. The operator service adds the new job in its local jobs queue.
+7. It's the operator engine's responsibility to periodically check the operator service for the list of pending jobs. If there are available resources for a new job, the operator engine requests the job list from the operator service to decide whether to initiate a new job.
+8. The operator service provides the list of jobs, and the operator engine is then prepared to commence a new job.
 
 ## Creating the K8 Cluster and Allocating Job Volumes
-7. As a new job begins, volumes are created on the Kubernetes cluster, a task handled by the operator engine.
-8. The cluster creates and allocates volumes for the job using the job volumes
-9. The volumes are created and allocated to the pod
-10. After volume creation and allocation, the operator engine starts "pod-configuration" as a new pod in the cluster.
+9. As a new job begins, volumes are created on the Kubernetes cluster, a task handled by the operator engine.
+10. The cluster creates and allocates volumes for the job using the job volumes
+11. The volumes are created and allocated to the pod
+12. After volume creation and allocation, the operator engine starts "pod-configuration" as a new pod in the cluster.
 
 ## Loading Assets and Algorithms
-11. Pod-configuration requests the necessary data asset(s) and algorithm from their respective providers.
-12. The provider uploads assets to the allocated job volume.
-13. Upon completion of file uploads, the provider notifies the pod configuration that the assets are ready for the job.
-14. The pod configuration informs the operator engine that it's ready to start the job.
+13. Pod-configuration requests the necessary data asset(s) and algorithm from their respective providers.
+14. The files are downloaded by the pod configuration via provider.
+15. The pod configuration writes the assets in the job volume.
+16. The pod configuration informs the operator engine that it's ready to start the job.
 
 ## Running the Algorithm on Data Asset(s)
-15. The operator engine launches the algorithm pod on the Kubernetes cluster, with volume containing data asset(s) and algorithm mounted.
-16. Kubernetes runs the algorithm pod.
-17. The Operator engine monitors the algorithm, stopping it if it exceeds the specified time limit based on the chosen environment.
-18. Now that the results are available, the operator engine starts "pod-publishing".
-19. The pod publishing uploads the results, logs, and admin logs to the output volume.
-20. Upon successful upload, the operator engine receives notification from the pod publishing, allowing it to clean up the job volumes.
+17. The operator engine launches the algorithm pod on the Kubernetes cluster, with volume containing data asset(s) and algorithm mounted.
+18. Kubernetes runs the algorithm pod.
+19. The Operator engine monitors the algorithm, stopping it if it exceeds the specified time limit based on the chosen environment.
+20. Now that the results are available, the operator engine starts "pod-publishing".
+21. The pod publishing uploads the results, logs, and admin logs to the output volume.
+22. Upon successful upload, the operator engine receives notification from the pod publishing, allowing it to clean up the job volumes.
 
 ## Cleaning Up Volumes and Allocated Space
-21. The operator engine deletes the K8 volumes.
-22. The Kubernetes cluster removes all used volumes.
-23. Once volumes are deleted, the operator engine finalizes the job.
-24. The operator engine informs the operator service that the job is completed, and the results are now accessible.
+23. The operator engine deletes the K8 volumes.
+24. The Kubernetes cluster removes all used volumes.
+25. Once volumes are deleted, the operator engine finalizes the job.
+26. The operator engine informs the operator service that the job is completed, and the results are now accessible.
 
 ## Retrieving Job Details
-25. The consumer retrieves job details by calling the provider's `get job details`.
-26. The provider communicates with the operator service to fetch job details.
-27. The operator service returns the job details to the provider.
-28. With the job details, the provider can share them with the asset consumer.
+27. The consumer retrieves job details by calling the provider's `get job details`.
+28. The provider communicates with the operator service to fetch job details.
+29. The operator service returns the job details to the provider.
+30. With the job details, the provider can share them with the asset consumer.
 
 ## Retrieving Job Results
-29. Equipped with job details, the asset consumer can retrieve the results from the recently executed job.
-30. The provider engages the operator engine to access the job results.
-31. As the operator service lacks access to this information, it uses the output volume to fetch the results.
-32. The output volume provides the stored job results to the operator service.
-33. The operator service shares the results with the provider.
-34. The provider then delivers the results to the asset consumer.
+31. Equipped with job details, the asset consumer can retrieve the results from the recently executed job.
+32. The provider engages the operator engine to access the job results.
+33. As the operator service lacks access to this information, it uses the output volume to fetch the results.
+34. The output volume provides the stored job results to the operator service.
+35. The operator service shares the results with the provider.
+36. The provider then delivers the results to the asset consumer.
 
