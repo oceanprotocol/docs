@@ -62,7 +62,7 @@ redirects:
     veocean-data-farming/emissions-apys: data-farming/df-emissions-apys.md
     veocean-data-farming/delegation: data-farming/README.md
     veocean-data-farming/veocean-data-farming-tutorial: data-farming/user-guides/how-to-veocean.md
-    data-farming/veOcean-Data-Farming-Tutorial: data-farming/user-guides/how-to-veocean.md
+    rewards/veOcean-Data-Farming-Tutorial: data-farming/user-guides/how-to-veocean.md
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
     api-references/provider-rest-api: developers/provider/general-endpoints.md
@@ -76,8 +76,8 @@ redirects:
     user-guides/data-farming/how-to-estimate-apy: data-farming/user-guides/how-to-estimate-apy.md
     user-guides/data-farming/how-to-challengedf: data-farming/user-guides/how-to-challengedf.md
     user-guides/data-farming/how-to-delegate: data-farming/user-guides/how-to-delegate.md
-    user-guides/data-farming/README: data-farming/user-guides/README.md
-    data-farming/df-basic: data-farming/df-guides.md
-    data-farming/veocean: data-farming/df-veocean.md
-    data-farming/df-max-out-yield: data-farming/df-volumedf.md
-    data-farming/df-guides.md: data-farming/user-guides/README.md
+    user-guides/rewards/README: data-farming/user-guides/README.md
+    rewards/df-basic: data-farming/df-guides.md
+    rewards/veocean: data-farming/df-veocean.md
+    rewards/df-max-out-yield: data-farming/df-volumedf.md
+    rewards/df-guides.md: data-farming/user-guides/README.md
