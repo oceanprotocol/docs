@@ -16,10 +16,6 @@ ocean.py lets you do the following things:
 * Sell datatokens via for a fixed price. Sell data NFTs.
 * Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.
 
-If you prefer video format, please check this video below, otherwise let's move forward.
-
-{% embed url="https://youtu.be/8uZC6PC9PBM" %}
-
 ### Quickstart 🚀
 
 To kickstart your adventure with ocean.py, we set out the following steps to get you zooming ahead in no time!

@@ -49,9 +49,4 @@ Issue: MacOS “Unsupported Architecture”
 
 Oh, buoy! 🌊🐙 When it comes to installation, ocean.py has you covered with a special README called ["install.md"](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/install.md). It's like a trusty guide that helps you navigate all the nitty-gritty details. So, let's dive in and ride the waves of installation together! 🏄‍♂️🌊
 
-Or if you prefer a video format, you can check this tutorial on Youtube
-
-{% embed url="https://www.youtube.com/watch?v=mbniGPNHE_M" %}
-Install ocean.py
-{% endembed %}
 
