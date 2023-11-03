@@ -42,4 +42,4 @@ If you receive veOCEAN allocation power from other wallets, then you will receiv
 
 You _cannot_ re-delegate this veOCEAN further downstream.&#x20;
 
-<figure><img src="https://1520763098-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQlpIJEeu8x5yl0OLuXn%2Fuploads%2Fgit-blob-423f12f5b84205ab6cff8b79a1211fcd955d637c%2FveOCEAN-Delegation.png?alt=media" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rewards/veOCEAN-Delegation.png" alt=""><figcaption></figcaption></figure>
