@@ -60,14 +60,6 @@ layout: landing
       <td><a href=".gitbook/assets/cover/infrastructure_card.png">infrastructure_card.png</a></td>
     </tr>
     <tr>
-      <td><a href="defi/">defi</a></td>
-      <td>Get creative capitalizing with Ocean Protocol tools in a variety of DeFi (Decentralized Finance) applications.</td>
-      <td></td>
-      <td></td>
-      <td><a href="defi/">defi</a></td>
-      <td><a href=".gitbook/assets/cover/defi_card.png">defi_card.png</a></td>
-    </tr>
-    <tr>
       <td><a href="predictoor/">predictoor</a></td>
       <td>Learn about Predictoor and how to make money with data science or by improve your trading edge with accurate signals.</td>
       <td></td>
