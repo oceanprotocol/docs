@@ -1,30 +1,26 @@
 ---
-description: Make extra dosh by curating datasets in Data Farming
+description: Guide: Volume Data Farming
 ---
 
-# Guide: Volume DF
+# Guide: Volume Data Farming
 
 <figure><img src="../../.gitbook/assets/rewards/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
 
 ## Curate to earn
 
-The bread and butter of the Data Farming dApp is incentivizing OCEAN rewards for curating and publishing valuable assets in the Ocean ecosystem. 
-
-The way that users curate assets is by **pointing their Allocation Power** to them using the Data Farming dApp.  
-
-If you're a publisher, then you can also benefit from additional bonuses.  
+In Volume DF, you allocate veOCEAN to data assets with high data consume volume (DCV). You do this via the DF dApp.
 
 We'll show you how!  
 
-#### Step 1 - Navigate to the Data Farming dApp
+#### Step 1 - Navigate to the DF dApp
 
 - Go to [https://df.oceandao.org](https://df.oceandao.org)
 
 #### Step 2 - Connect your wallet
 
-- Connect your wallet to the Data Farming dApp using the Ethereum network (mainnet)
+- Connect your wallet to the dApp, on Ethereum mainnet
 
-#### Step 3 - Click on the Volume DF tab in the top menu
+#### Step 3 - Click the Volume DF tab in the top menu
 
 <figure><img src="../../.gitbook/assets/rewards/volumeDF-page.png" alt=""><figcaption><p>Click the Volume DF page link in the menu</p></figcaption></figure>
 
