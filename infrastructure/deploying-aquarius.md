@@ -21,7 +21,7 @@ This guide will deploy Aquarius, including Elasticsearch as a single systemd ser
 
 * A server for hosting Aquarius. See [this guide](setup-server.md) for how to create a server;
 * Docker Compose and Docker Engine are installed and configured on the server. See [this guide](setup-server.md#install-docker-engine-and-docker-compose) for how to install these products.
-* The RPC URLs and API keys for each of the networks to which the Aquarius will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Aquarius will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md)  for how to obtain the URL and the API key.
 
 ### Steps
 
