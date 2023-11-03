@@ -115,7 +115,6 @@
   - [Deploying Ocean Subgraph](infrastructure/deploying-ocean-subgraph.md)
   - [Deploying C2D](infrastructure/compute-to-data-minikube.md)
   - [C2D - Private Docker Registry](infrastructure/compute-to-data-docker-registry.md)
-- [🤑 DeFi](defi/README.md)
 * [👀 Predictoor](predictoor/README.md)
   * [Introduction](predictoor/pdr-intro.md)
   * [Architecture](predictoor/pdr-architecture.md)
