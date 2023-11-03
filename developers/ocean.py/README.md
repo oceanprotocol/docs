@@ -23,7 +23,9 @@ As a Python library, Ocean.py is built for the key environment of data scientist
 To kickstart your adventure with ocean.py, we set out the following steps to get you zooming ahead in no time!
 
 1. [Install Ocean](install.md) 📥
-2. Setup 🛠️ — [Remote ](remote-setup.md)(Win, MacOS, Linux) — or [Local ](local-setup.md)(Linux only)
+2. Setup 🛠️
+   - [Remote ](remote-setup.md)(Win, MacOS, Linux)
+   - or [Local ](local-setup.md)(Linux only)
 3. [Publish asset](publish-flow.md), post for free / for sale, dispense it / buy it, and [consume ](consume-flow.md)it
 4. Run algorithms through [Compute-to-Data flow](compute-flow.md) using Ocean environment.
 
