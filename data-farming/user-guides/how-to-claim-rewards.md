@@ -14,7 +14,7 @@ You can visit this dApp to [begin Data Farming](https://df.oceandao.org)? Or [fo
 
 Go to [https://df.oceandao.org/](https://df.oceandao.org), and click the Rewards [link](https://df.oceandao.org/rewards) at the top of the page.
 
-<figure><img src="../../.gitbook/assets/rewards/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/data-farming/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
 
 ### Step 2 - Click the pink 'Claim # OCEAN' buttons 🛎️
 
@@ -22,7 +22,7 @@ At the bottom of the 'Passive Rewards' and 'Active Rewards' panels are the 'Clai
 
 This is where you click to claim your rewards! Easy peasy. You will need to approve the transactions with your wallet.
 
-<figure><img src="../../.gitbook/assets/rewards/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/data-farming/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
 
 ### FIRST TIME CLAIMING?
 

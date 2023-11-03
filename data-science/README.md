@@ -9,7 +9,7 @@ coverY: 0
 ### How does Ocean benefit data scientists?
 
 It offers three main benefits:
-- **Earn.** You can earn $ by doing crypto price predictions via [Predictoor](../predictoor/README.md), by curating data in [Data Farming](../rewards/README.md), by doing [data challenges](../user-guides/join-a-data-challenge.md), and by selling data & models.
+- **Earn.** You can earn $ by doing crypto price predictions via [Predictoor](../predictoor/README.md), by curating data in [Data Farming](../data-farming/README.md), by doing [data challenges](../user-guides/join-a-data-challenge.md), and by selling data & models.
 - **More Data.** Use [Compute-to-Data](../developers/compute-to-data/README.md) to access private data to run your AI modeling algorithms against, data which was previously inaccessible. Browse [Ocean Market](https://market.oceanprotocol.com) and other Ocean-powered markets to find more data to improve your AI models. 
 - **Provenance.** The acts of publishing data, purchasing data, and consuming data are all recorded on the blockchain to make a tamper-proof audit trail. Know where your AI training data came from!
 

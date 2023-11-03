@@ -108,7 +108,7 @@ After the Lock End Date, then you can withdraw your principal OCEAN on the [veOC
 
 The image below illustrates the flow of value. On the left, at time 0, the staker locks their OCEAN into the veOCEAN contract, and receives veOCEAN. In the middle, the staker receives OCEAN rewards every time there’s revenue to the Ocean Protocol Community (top), and also as part of Data Farming rewards (bottom). On the right, when the lock expires (e.g. 4 years) then the staker is able to move their OCEAN around again.
 
-<figure><img src="../.gitbook/assets/rewards/flow_of_value.png" alt=""><figcaption><p>Flow of Value</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/flow_of_value.png" alt=""><figcaption><p>Flow of Value</p></figcaption></figure>
 
 The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Ocean uses as its system-level design.
 

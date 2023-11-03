@@ -45,39 +45,39 @@ layout: landing
     </tr>
     <tr>
       <td><a href="data-science/">data-science</a></td>
-      <td>We invite and engage all data scientists and machine learning specialists to discover Ocean Protocol.</td>
+      <td>Earn $ from AI models, track provenance, get more data.</td>
       <td></td>
       <td></td>
       <td><a href="data-science/">data-science</a></td>
       <td><a href=".gitbook/assets/cover/data_science_card.png">data_science_card.png</a></td>
     </tr>
     <tr>
-      <td><a href="infrastructure/">infrastructure</a></td>
-      <td>For software architects and developers - deploy your own components on the Ocean Protocol network.</td>
-      <td></td>
-      <td></td>
-      <td><a href="infrastructure/">infrastructure</a></td>
-      <td><a href=".gitbook/assets/cover/infrastructure_card.png">infrastructure_card.png</a></td>
-    </tr>
-    <tr>
       <td><a href="predictoor/">predictoor</a></td>
-      <td>Learn about Predictoor and how to make money with data science or by improve your trading edge with accurate signals.</td>
+      <td>Run AI-powered prediction bots or trading bots to earn $.</td>
       <td></td>
       <td></td>
       <td><a href="predictoor/">predictoor</a></td>
       <td><a href=".gitbook/assets/cover/predictoor_card.jpg">predictoor_card.jpg</a></td>
     </tr>
     <tr>
-      <td><a href="rewards/">rewards</a></td>
-      <td>Explore how you can earn OCEAN rewards by Data Farming and publishing your assets on the Ocean Market.</td>
+      <td><a href="data-farming/">data farming</a></td>
+      <td>Earn OCEAN rewards by locking OCEAN, curating data, and predicting.</td>
       <td></td>
       <td></td>
-      <td><a href="rewards/">rewards</a></td>
-      <td><a href=".gitbook/assets/cover/rewards_card.png">rewards_card.png</a></td>
+      <td><a href="data-farming/">data farming</a></td>
+      <td><a href=".gitbook/assets/cover/data_farming_card.png">data_farming_card.png</a></td>
+    </tr>
+    <tr>
+      <td><a href="infrastructure/">infrastructure</a></td>
+      <td>For software architects and developers - deploy your own components in Ocean Protocol ecosystem.</td>
+      <td></td>
+      <td></td>
+      <td><a href="infrastructure/">infrastructure</a></td>
+      <td><a href=".gitbook/assets/cover/infrastructure_card.png">infrastructure_card.png</a></td>
     </tr>
     <tr>
       <td><a href="contribute/">contribute</a></td>
-      <td>Get involved and make a difference! Learn how you can contribute to the growth and development of Ocean Protocol.</td>
+      <td>Get involved! Learn how to contribute to Ocean Protocol.</td>
       <td></td>
       <td></td>
       <td><a href="contribute/">contribute</a></td>
