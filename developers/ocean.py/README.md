@@ -1,20 +1,22 @@
+---
+description: >-
+  Python library to privately & securely publish, exchange, and consume
+  data.
+---
+
 # Ocean.py
 
+Ocean.py helps data scientists earn $ from their AI models, track provenance of data & compute, and get more data. (More details [here](../../data-science/README.md).)
 
+Ocean.py makes these tasks easy:
 
-Attention all data enthusiasts! Are you an inquisitive data scientist intrigued by the world of Web3 and blockchain, but unsure of where to begin? Have you developed a groundbreaking AI algorithm and desire to transform it into profitable success? Perhaps you're engaged in training a highly lucrative model (LLM) and seek to define precise licensing terms for your valuable data. Or maybe you simply wish to sell your data while maintaining utmost privacy and control.
+* **Publish** data services: data feeds, REST APIs, downloadable files or compute-to-data. Create an ERC721 **data NFT** for each service, and ERC20 **datatoken** for access (1.0 datatokens to access).
+* **Sell** datatokens via for a fixed price. Sell data NFTs.
+* **Transfer** data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.
 
-This is where ocean.py can help. It is a Python library for data scientists to privately & securely publish, exchange, and consume data. 🐙💦
+As a Python library, Ocean.py is built for the key environment of data scientists. It that can simply be imported alongside other Python data science tools like numpy, matplotlib, scikit-learn and tensorflow.
 
-<figure><img src="../../.gitbook/assets/components/ocean_py.png" alt="" width="375"><figcaption><p>ocean.py library</p></figcaption></figure>
-
-### Overview
-
-ocean.py lets you do the following things:
-
-* Publish data services: downloadable files or compute-to-data. Create an ERC721 data NFT for each service, and ERC20 datatoken for access (1.0 datatokens to access).
-* Sell datatokens via for a fixed price. Sell data NFTs.
-* Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.
+<figure><img src="../../.gitbook/assets/components/ocean_py.png" alt="" width="375"></figure>
 
 ### Quickstart 🚀
 
