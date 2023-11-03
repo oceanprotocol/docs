@@ -8,7 +8,7 @@ description: >-
 
 Ocean.py is built for main environment of data scientists: Python. It's a library that can simply be imported alongside other Python data science tools like numpy, matplotlib, scikit-learn and tensorflow.
 
-**[[Quickstart at ocean.py README]](https://github.com/oceanprotocol/ocean.py/blob/main/README.md)**.
+**[[Quickstart at ocean.py README]](https://github.com/oceanprotocol/ocean.py/blob/main/README.md)**
 
 With ocean.py, you can:
 
