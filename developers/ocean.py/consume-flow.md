@@ -102,8 +102,3 @@ The _beginning_ of the file should contain the following contents:
 ...
 ```
 
-Here’s a video version for this post 👇
-
-{% embed url="https://www.youtube.com/watch?v=JQF-5oRvq9w" %}
-Main Flow Video
-{% endembed %}
