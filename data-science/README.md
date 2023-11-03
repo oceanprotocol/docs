@@ -1,5 +1,5 @@
 ---
-description: More data, provenance, and earning opportunities
+description: Earn $, track data & compute provenance, and get more data
 cover: ../.gitbook/assets/cover/data_science_banner.png
 coverY: 0
 ---
