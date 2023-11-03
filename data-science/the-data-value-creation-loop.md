@@ -1,27 +1,87 @@
 ---
-description: When you have problems, but then you solve them 💁‍♀️
+description: Thrive in the open data economy by closing the loop towards speed and value
 ---
 
-# The Data Value Creation Loop
+# The Data Value-Creation Loop
 
 <figure><img src="../.gitbook/assets/gif/tell-me-more.gif" alt=""><figcaption><p>Tell me more.</p></figcaption></figure>
 
-### What is the Data Value Creation Loop?
+### Motivation
 
-The Data Value Creation Loop is a journey where **data progresses from a business problem to valuable insights**. It involves collaboration among various skillsets like business stakeholders, data engineers, data scientists, MLOps engineers, and application developers.
+The core infrastructure is in place for an open data economy. Dozens of teams are building on it. But it’s not 100% obvious for teams how to make $.
 
-Here's a condensed breakdown of the loop:
+We ask:
 
-1. Business Problem: Identify the specific problem to solve using data science, such as reducing customer churn or predicting token prices.
-2. Raw Data: Gather unprocessed data directly from sources, whether static or dynamic, like user profiles or historical prices.
-3. Cleaned Data and Feature Vectors: Transform raw data into organized numerical representations, like cleaned sales data or preprocessed text transformed into word embeddings.
-4. Trained Models: Train machine learning models on feature vectors to learn patterns and relationships, such as a random forest predicting coffee sales or GPT-3 trained on a text corpus.
-5. Data to Tune Models: Introduce additional data to further refine and enhance model performance, like new sales data for the coffee shop model or domain-specific text data for GPT-3.
-6. Tuned Models: Optimize models for high performance, accuracy, and robustness, such as a tuned random forest predicting busy hours for the coffee shop or a fine-tuned GPT-3 generating expert-level text.
-7. Model Prediction Inputs: Provide inputs to the models to generate insights, like today's date and weather for the sales model or a text prompt for GPT-3 to generate a blog post.
-8. Model Prediction Outputs: Obtain predictions or insights from the models based on the inputs, such as the sales model forecasting a spike in iced coffee sales or GPT-3 generating a blog post on sustainability in business.
-9. Application: Package the models into applications that can impact real-world scenarios. Build user experiences around the data and model assets to make them usable and valuable.
+> How do people sustain and thrive in the emerging open data economy?
 
-### What is an example of a Data Value Creation Loop?
+**Our answer is simple: ensure that they can make money!**
 
-Let's explore an example to showcase the process of the data value creation loop. Imagine a healthcare organization seeking to develop a predictive model for early detection of diseases. They collaborate with data engineers to collect and preprocess various medical datasets, including patient demographics, lab results, and medical imaging. These datasets are tokenized and made available on the Ocean Protocol platform for secure computation. Data scientists utilize the tokenized data to train machine learning models that can accurately identify early warning signs of diseases. These models are then published as compute assets on Ocean Market. Application developers work with the healthcare organization to integrate the models into their existing patient management system, allowing doctors to receive automated risk assessments and personalized recommendations for preventive care. As a result, patients benefit from early detection, doctors can make more informed decisions, and the healthcare organization generates insights to improve patient outcomes while fostering data and model asset collaboration. Et voilà!
+However, this isn’t enough. We need to dive deeper.
+
+### The Data Value-Creation Loop
+
+The next question is:
+
+> How do people make money in the open data economy?
+
+**Our answer is: create value from data, make money from that value, and loop back and reinvest this value creation into further growth.**
+
+**We call this the Data Value-Creation Loop.** The figure above illustrates.
+
+Let’s go through the steps of the loop.
+
+- At the top, the user gets data by buying it or spending $ to create it.
+- Then, they build an AI model from the data.
+- Then they make predictions. E.g. “ETH will rise in next 5 minutes”
+- Then, they choose actions. E.g. “buy ETH”.
+- In executing these actions, they data scientist (or org) will make $ on average.
+- The $ earned is put back into buying more data, and other activities. And the loop repeats.
+
+In this loop, dapp builders can help their users make money; data scientists can earn directly; and crypto enthusiasts can catalyze the first two if incentivized properly (e.g. to curate valuable data).
+
+### The Data Value Supply Chain
+
+**If we unroll the loop, we get a data value supply chain.** In most supply chains, the most value creation is at the last step, right before the action is taken. Would you rather a farmer in Costa Rica selling a sack of coffee beans for $5, or Starbucks selling 5 beans’ worth of coffee for $5?
+
+Therefore, **for data value supply chains, the most value creation in the prediction step.**
+
+To the question “How do people make money in the open data economy?”, the “create value from data!” almost seem like a truism. Don’t fool yourself. It’s highly useful in practice: **focus only on activities that fully go through the data value-creation loop.**
+
+However, this is still too open-ended. We need to dive deeper.
+
+### Which Vertical? How To Compare Opportunities
+
+There are perhaps dozens of verticals or hundreds of possible opportunities of creating and closing data value-creation loops. How to select which? We’ve found that two measuring sticks help the most.
+
+**Key criteria:**
+
+1. **How quickly one can go through the data value-creation loop?**
+2. **What’s the $ size of the opportunity**
+
+For (2), it’s not just “what’s the size of the market”, it’s also “can the product make an impact in the market and capture enough value to be meaningful”.
+
+We analyzed dozens of possible verticals with according to these criteria. For any given data application, the loop should be fast with serious $ opportunity.
+
+Here are some examples.
+
+- **Small $, slow**. Traditional music is small $ and slow, because incumbents like Universal dominate by controlling the the back catalogue.
+- **Large $, slow**. Medicine is large $ but slow, due to the approval process.
+Small $, fast. Decentralized music is fast but small $ (for now! Fingers crossed).
+
+**We want: large $, fast.** Here are the standouts.
+
+- **Decentralized Finance (DeFi)** is a great fit. One can loop at the speed of blocks (or faster), and trade volumes have serious $.
+- **LLMs and modern AI** is close: one can loop quickly, and with the right application make $. The challenge is: what’s the right application?
+
+### Project Criteria
+
+We encourage you - as a builder - to choose projects that close the data value-creation loops. Especially loops with maximum $ and speed.
+
+We follow our advice for internal projects too. Predictoor, Data Farming, and DeFi-oriented data challenges are standout examples.
+
+### Summary
+To sustain and thrive in the open data economy: make money!
+
+Do this by closing the data value-creation loop, in a vertical / opportunity where you can loop quickly and the $ opportunity is large.
+
+
