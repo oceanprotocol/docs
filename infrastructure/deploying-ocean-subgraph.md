@@ -12,7 +12,7 @@ Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotoc
 
 * A server for hosting Graph-node. See [this guide](setup-server.md) for how to create a server;
 * Docker Compose and Docker Engine are installed and configured on the server. See [this guide](setup-server.md#install-docker-engine-and-docker-compose) for how to install these products.
-* The RPC URLs and API keys for each of the networks to which Ocean Subgraph will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which Ocean Subgraph will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 
 ### Steps
 
@@ -182,7 +182,7 @@ In this example, we will deploy graph-node as a Kubernetes deployment service. [
 
 * A server for hosting graph-node. See [this guide](setup-server.md) for how to create a server;
 * Kubernetes with Docker Engine is installed and configured on the server. See [this chapter](setup-server.md#install-kubernetes-with-docker-engine) for information on installing Kubernetes.
-* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 
 ### Steps
 

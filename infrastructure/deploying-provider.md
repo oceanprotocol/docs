@@ -18,7 +18,7 @@ In this guide, we will deploy Provider for two chains: Goerli (Ethereum test net
 
 * A server for hosting Provider. See [this guide](setup-server.md) for how to create a server;
 * Docker Compose and Docker Engine are installed and configured on the server. See [this guide](setup-server.md#install-docker-engine-and-docker-compose) for how to install these products.
-* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 * The private key which will be used by Provider to encrypt/decrypt URLs.
 
 ### Steps
@@ -196,7 +196,7 @@ In this example, we will run Provider as a Kubernetes deployment resource. We wi
 
 * A server for hosting Ocean Marketplace. See [this guide](setup-server.md) for how to create a server;
 * Kubernetes with Docker Engine is installed and configured on the server. See [this chapter](setup-server.md#install-kubernetes-with-docker-engine) for information on installing Kubernetes.
-* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See[ this guide](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/548/developers/obtaining-api-keys-for-blockchain-access) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 * The private key that will be used by Provider to encrypt/decrypt URLs.
 * Aquarius is up and running
 
