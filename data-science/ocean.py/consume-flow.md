@@ -53,7 +53,7 @@ ocean.OCEAN_token.approve(exchange.address, OCEAN_needed, {"from":bob})
 exchange.buy_DT(to_wei(1), consume_market_fee=0, tx_dict={"from": bob})
 ```
 
-For more info, check [Technical Details](https://app.gitbook.com/o/mTcjMqA4ylf55anucjH8/s/BTXXhmDGzR0Xgj13fyfM/\~/changes/336/developers/ocean.py/technical-details) about ocean.py most used functions and also the smart contracts for [Dispenser](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/dispenser/Dispenser.sol) & [Fixed Rate Exchange](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/fixedRate/FixedRateExchange.sol).
+For more info, check [Technical Details](technical-details.md) about ocean.py most used functions and also the smart contracts for [Dispenser](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/dispenser/Dispenser.sol) & [Fixed Rate Exchange](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/fixedRate/FixedRateExchange.sol).
 
 ### Consume the asset ⬇️
 
