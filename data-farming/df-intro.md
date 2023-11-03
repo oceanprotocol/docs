@@ -103,7 +103,7 @@ To deepen this incentive, Publishers are boosted further and **gain 2x the alloc
 
 ## Reward Schedule
 
-The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Data-Farming/Week.
+The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
 
 <figure><img src="../.gitbook/assets/data-farming/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
 
