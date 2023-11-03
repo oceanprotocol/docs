@@ -4,7 +4,7 @@ description: Thrive in the open data economy by closing the loop towards speed a
 
 # The Data Value-Creation Loop
 
-<figure><img src="../.gitbook/assets/gif/tell-me-more.gif" alt=""><figcaption><p>Tell me more.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-science/data-value-creation-loop.png" alt=""></figure>
 
 ### Motivation
 
