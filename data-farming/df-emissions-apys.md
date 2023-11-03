@@ -37,19 +37,19 @@ Let’s visualize!
 
 The image below shows the first 5 years. The y-axis is OCEAN released each week. It’s log-scaled to easily see the differences. The x-axis is time, measured in weeks. In weeks 0–29, we can see the distinct phases for DF Alpha (DF1 // week 0), DF/VE Alpha (DF5 // week 4), DF Beta (DF9 // week 8), DF Main 1 (DF29 // week 28), DF Main 2 (DF80 // week 79), DF Main 3 (DF106 // week 105), and DF Main 4 (DF132 // week 131).
 
-<figure><img src="../.gitbook/assets/rewards/emissions_first_5years.png" alt="" width="540"><figcaption><p><em>OCEAN released to DF per week — first 5 years</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/emissions_first_5years.png" alt="" width="540"><figcaption><p><em>OCEAN released to DF per week — first 5 years</em></p></figcaption></figure>
 
 ## Emissions — first 20 years.
 
 The image below is like the previous one: OCEAN released per week, but now for the first 20 years. Week 131 onwards is DF Main 4. We can see that the y-value divides by two (“halvens”) every four years.
 
-<figure><img src="../.gitbook/assets/rewards/emissions_first_20years.png" alt="" width="563"><figcaption><p><em>OCEAN released to DF per week — first 20 years</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/emissions_first_20years.png" alt="" width="563"><figcaption><p><em>OCEAN released to DF per week — first 20 years</em></p></figcaption></figure>
 
 ## Total OCEAN released.
 
 The image below shows the total OCEAN released by DF for the first 20 years. The y-axis is log-scaled to capture both the small initial rewards and exponentially larger values later on. The x-axis is also log-scaled so that we can more readily see how the curve converges over time.
 
-<figure><img src="../.gitbook/assets/rewards/emissions_lifetime.png" alt="" width="563"><figcaption><p><em>Total OCEAN released to DF — first 20 years</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/emissions_lifetime.png" alt="" width="563"><figcaption><p><em>Total OCEAN released to DF — first 20 years</em></p></figcaption></figure>
 
 ## Example APYs
 
@@ -57,7 +57,7 @@ The plot below shows estimated APY over time. Green includes both passive and ac
 
 APYs are an estimate because APY depends on OCEAN locked. OCEAN locked for future weeks is not known precisely; it must be estimated. The yellow line is the model for OCEAN locked. We modeled OCEAN locked by observing linear growth from week 5 (when OCEAN locking was introduced) to week 28 (now): OCEAN locked grew from 7.89M OCEAN to 34.98M OCEAN respectively, or 1.177M more OCEAN locked per week.
 
-<figure><img src="../.gitbook/assets/rewards/example_apys.png" alt="" width="563"><figcaption><p><em>Green: estimated APYs (passive + active). Black: estimated APYs (just passive). Yellow: estimated staking</em> </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/example_apys.png" alt="" width="563"><figcaption><p><em>Green: estimated APYs (passive + active). Black: estimated APYs (just passive). Yellow: estimated staking</em> </p></figcaption></figure>
 
 All the plots are calculated from [this Google Sheet](https://docs.google.com/spreadsheets/d/1F4o7PbV45yW1aPWOJ2rwZEKkgJXbIk5Yq7tj8749drc/edit#gid=1051477754).
 

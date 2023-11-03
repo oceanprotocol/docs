@@ -77,7 +77,7 @@ To be fully decentralized means no single point of control, at any level of the 
 
 1. Details about the [OCEAN](https://oceanprotocol.com/about-us/ocean-token).
 2. Details about the [Core Stack](../developers/contracts/README.md).
-3. Details about [Data Farming](../rewards/README.md).
+3. Details about [Data Farming](../data-farming/README.md).
   
 </details>
 

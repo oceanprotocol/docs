@@ -34,7 +34,7 @@ You can easily expand the spreadsheet above to support a basic, naive calculatio
 
 To help solve this challenge, [we built a dashboard](https://df.oceandao.org/volume-df) that shows historical and ongoing summaries of APY, Data Consume Volume, and veOCEAN allocations per-round.
 
-<figure><img src="../../.gitbook/assets/rewards/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/data-farming/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
 You can also [learn how rewards are calculated](../df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
 

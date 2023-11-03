@@ -26,7 +26,7 @@ Each Data Farming round has a pool of OCEAN rewards, where 50% of the pool is pa
 | --------------- | -------------- |
 | 50%             | 50%            |
 
-<figure><img src="../.gitbook/assets/rewards/df-reward-streams.png" alt=""><figcaption><p>Rewards Page overview for each stream.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/df-reward-streams.png" alt=""><figcaption><p>Rewards Page overview for each stream.</p></figcaption></figure>
 
 ### What are Passive Rewards?
 
@@ -105,7 +105,7 @@ To deepen this incentive, Publishers are boosted further and **gain 2x the alloc
 
 The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
 
-<figure><img src="../.gitbook/assets/rewards/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/reward_schedule.png" alt=""><figcaption><p><em>Ocean Reward Schedule for the next 20+ years</em></p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/gif/cash-flow.gif" alt=""><figcaption></figcaption></figure>
 

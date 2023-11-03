@@ -5,7 +5,7 @@ description: >-
 
 # Win Competitions in Challenge DF
 
-<figure><img src="../.gitbook/assets/rewards/gif/eat-data.gif" alt=""><figcaption><p>Let's consume some data.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/gif/eat-data.gif" alt=""><figcaption><p>Let's consume some data.</p></figcaption></figure>
 
 ## Publish prediction models and earn rewards
 
@@ -49,4 +49,4 @@ You can find a direct link to the [Challenge DF README](https://github.com/ocean
 
 ### Good lock and happy coding!
 
-<figure><img src="../.gitbook/assets/rewards/gif/winner.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/gif/winner.gif" alt=""><figcaption></figcaption></figure>

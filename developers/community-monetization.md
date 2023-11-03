@@ -42,6 +42,6 @@ Additionally, provider fees are not limited to data consumption — they can als
 
 
 **Benefits to the Ocean Community**
-We’re always looking to give back to the Ocean community and collecting fees is an important part of that. As mentioned above, the Ocean Protocol Foundation retains the ability to implement community fees on data consumption. The tokens that we receive will either be burned or invested in the community via projects that they are building. These investments will take place either through [Data Farming](../rewards/df-intro.md), [Ocean Shipyard](https://oceanprotocol.com/shipyard), or Ocean Ventures.
+We’re always looking to give back to the Ocean community and collecting fees is an important part of that. As mentioned above, the Ocean Protocol Foundation retains the ability to implement community fees on data consumption. The tokens that we receive will either be burned or invested in the community via projects that they are building. These investments will take place either through [Data Farming](../data-farming/df-intro.md), [Ocean Shipyard](https://oceanprotocol.com/shipyard), or Ocean Ventures.
 
 Projects that utilize OCEAN or H2O are subject to a 0.1% fee. In the case of projects that opt to use different tokens, an additional 0.1% fee will be applied. We want to support marketplaces that use other tokens but we also recognize that they don’t bring the same wider benefit to the Ocean community, so we feel this small additional fee is proportionate.

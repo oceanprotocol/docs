@@ -4,7 +4,7 @@ description: Give another wallet power to allocate veOCEAN
 
 # Guide: Volume DF Delegation
 
-<figure><img src="../../.gitbook/assets/rewards/gif/delegation-dog-herding-sheep.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/data-farming/gif/delegation-dog-herding-sheep.gif" alt=""><figcaption></figcaption></figure>
 
 ## Why Delegate?
 
@@ -42,4 +42,4 @@ If you receive veOCEAN allocation power from other wallets, then you will receiv
 
 You _cannot_ re-delegate this veOCEAN further downstream.&#x20;
 
-<figure><img src="../../.gitbook/assets/rewards/veOCEAN-Delegation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/data-farming/veOCEAN-Delegation.png" alt=""><figcaption></figcaption></figure>
