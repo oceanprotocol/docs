@@ -1,62 +1,56 @@
 ---
 description: >-
-  If you've gotten this far, then you're half way to becoming a pro in Ocean Protocol's Data Farming dApp!
+  Volume Data Farming
 ---
 
-# Curate Data in Volume DF
+# Volume Data Farming
 
-<figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""><figcaption><p>You know enough to be dangerous.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""></figure>
 
 ## What is Volume DF
 
-If you obtain veOCEAN to only get passive yield, then you're leaving money on the table.  
+Passive Data Farming is a great start to earn from your locked OCEAN (veOCEAN).
 
-Volume DF rewards Data Farmers that allocate their veOCEAN to Ocean ecosystem assets.  
+Volume DF lets you can earn more with yet, with that same veOCEAN. In Volume DF, you allocate veOCEAN to data assets with high data consume volume (DCV).
 
-It's called Volume DF because the amount of rewards relies on assets that are actively generating Data Consume Volume. Therefore, **Volume DF yields depend on the sales produced by these assets and allocations made.**  
+### User Guide
 
-## Crops of Data
+The [Volume DF User Guide](./user-guides/how-to-volumedf.md) tells how to use the Data Farming dApp to allocate veOCEAN.
 
-Data Farming rewards farmers that allocate their veOCEAN to assets that **generate revenue** in the Ocean ecosystem. (no revenue, no rewards) In addition, Data Farming incentivizes **publishing** assets in the Ocean ecosystem too - you get **2x the Allocation Power** when you allocate to an asset that you publish!
+### How to Maximize Volume DF rewards
 
-Thus, if you really want to max out Volume DF APY:
-1. Lock your OCEAN for 4 years to receive 100% voting power.
-1. Have other participants delegate their Allocation Power to you.
-1. Create & publish assets (and make \$ in selling them) — or work with people who can.
-1. Point your Allocation Power towards your published assets to receive a 2x bonus.
-1. Claim weekly Passive Rewards, Active Rewards, and update your lock.
+Here are tactics:
 
-### Success Metrics
+- Only allocate to assets that actually qualify for DF. The "Assets that qualify" section below has details.
+- Allocate to assets with high DCV. Predictoor data feeds are a good bet.
+- Lock more OCEAN.
+- Lock OCEAN for longer. For example, a 4-year lock is 4x more reward than 1-year.
+- Refresh your OCEAN locks often. This is needed since veOCEAN degrades with time.
+- Frequently claim your OCEAN rewards then lock it. Be careful: too often may make gas fees > OCEAN rewards.
+- Publish your own assets; you get 2x rewards for such assets. [Here are details](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
 
-**Data Consume Volume (DCV)** is our term for **the total \$ amount spent on purchases of Ocean ecosystem assets**, transaction fees, and more. The higher DCV of Ocean ecosystem assets, then the more OCEAN rewards are distributed to Data Farmers. It's that simple!
-
-### Those assets don't sell themselves!
-
-Marketing your assets to buyers can be a big challenge. Just because you publish them in the Ocean ecosystem doesn't mean that they will sell. It will take real work. Your reward is great APY. Its incentives all the way down 🙂
+<br>
 
 <figure><img src="../.gitbook/assets/gif/hustlin.gif" alt=""><figcaption></figcaption></figure>
 
-## Delegating Voting Power
+### Delegate veOCEAN
 
-Another way to improve your yield is by delegating to your veOCEAN to someone else that can generate Active Rewards for you! In this case, they may do a better job at publishing assets, curating winners, and have more market insights than you.
+You can delegate your veOCEAN from one wallet to another. This is handy if you have a hardware wallet holding veOCEAN, and you want a "hot" software wallet to automatically re-allocate more often. There are other uses too. 
 
-Another scenario is a user with multiple wallets that wants to manage Volume DF from a single wallet.
+[Here's how to delegate](user-guides/how-to-delegate.md).
 
-The Data Farming dApp [Delegate Page](https://df.oceandao.org/delegate) lets you easily manage delegations. Please keep in mind that the app assigns 100% of the current veOCEAN and the LockEnd time to set the delegation
+### Assets that Qualify for Volume DF
 
-Whatever your scenario, there may be some risk to delegating because the rewards generated will be sent to the person you delegated to. **It's their responsibility to return those rewards back to you if that's the agreement you both made.**
+Data assets that have veOCEAN allocated towards them get Volume DF rewards.
 
-The guide on [how to Delegate](user-guides/how-to-delegate.md) shows how to provide another wallet with 100% of your allocation power.
+The asset may be of any type — dataset, data feed, a C2D algorithm, or other. It may be fixed price or free. If fixed price, any token of exchange is alright (OCEAN, H2O, USDC, etc). If free, then gas used for consume is the "volume".
 
-### What are Publisher Rewards?
+To qualify for DF, an asset must also:
 
-<figure><img src="../.gitbook/assets/gif/just-publish.gif" alt=""><figcaption><p>Publishing makes you *more* OCEAN rewards</p></figcaption></figure>
+* Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json) by OPF to [production networks](../discover/networks/README.md)
+* The asset must be listed on Ocean Market
+* Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
 
-Volume DF strongly incentivizes publishing assets in the Ocean ecosystem by giving double the active rewards to Data Farmers that allocate to their own published assets.
-
-How is it calculated? _All the veOCEAN a Data Farmer has allocated to an asset they’ve published is **doubled for the rewards calculation.**_
-
-You can read more about the implementation [in this blog post](https://blog.oceanprotocol.com/data-farming-publisher-rewards-f2639525e508).
 
 ### How Rewards are Calculated
 
@@ -64,34 +58,13 @@ The Reward Function (RF) governs how active rewards are allocated to Data Farmer
 
 **Rewards are calculated as follows:**
 
-1. Distribute OCEAN across each asset **based on rank**: highest-DCV asset gets the most OCEAN, etc.
-1. For each asset and each veOCEAN holder: If the holder is a publisher, 2x the effective allocation – Baseline rewards = (% allocation in asset) \* (OCEAN for an asset) – Bound rewards to the asset by 125% APY – Bound rewards by asset’s DCV \* 0.1%.
-1. When DF restarts each Thursday, the global allocation towards each asset resets back to zero and then starts counting up again until the end of the round. After allocating your veOCEAN to different datasets, it will take time for your voting power to be accounted for. 
+1. Distribute OCEAN across each asset **based on rank**: highest-DCV asset gets the most OCEAN, second-highest-DCV gets second-most, etc. [Here are details](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee).
+1. For each asset and each veOCEAN holder:
+   1. If the holder is a publisher, 2x the effective allocation
+   1. Baseline rewards = (% allocation in asset) \* (OCEAN for an asset)
+   1. Bound rewards to the asset by 125% APY
+   1. Bound rewards by asset’s DCV \* 0.1%.
 
-For mathematicians and coders, you can find this code inside [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df_py/volume/calc_rewards.py) in the Ocean Protocol [df-py repo](https://github.com/oceanprotocol/df-py/)!
+The actual code is in [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df_py/volume/calc_rewards.py) in df-py repo.
 
-### What are Ranked Rewards?
-
-In Data Farming Round 23 Ranked Rewards were introduced to smooth out the reward distribution by using a logarithmic function.
-
-**Since rewards are distributed across the Top 100 assets, all data farmers (Publishers & Curators) are now incentivized to support a broader range of assets rather than optimizing on a single asset.**
-
-At the top-end, this helps increase the quality and diversification of inventory.
-
-At the bottom-end, this eliminates some potential free-rider issues and smooths out the reward distribution.
-
-![Ranked Rewards](../.gitbook/assets/rewards/ranked_rewards_study.png)
-
-You can read more about the why, what, and how of Ranked Rewards [in this blog post](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee) and find the full study [in these slides](https://docs.google.com/presentation/d/1HIA2zV8NUPpCELmi2WFwnAbHmFFrcXjNQiCpEqJ2Jdg/).
-
-### Assets that Qualify for Data Farming
-
-Data assets that have veOCEAN allocated towards them get Data Farming active rewards.
-
-The asset may be of any type — dataset, an algorithm for Compute-to-Data, or any other Datatoken token-gated system. The asset may be fixed price or free price. If fixed price, any token of exchange is alright (OCEAN, H2O, USDC, etc).
-
-To qualify for DF, an asset must also:
-
-* Have been created by Ocean Smart contracts [deployed](https://github.com/oceanprotocol/contracts/blob/main/addresses/address.json) by OPF to [production networks](../discover/networks/README.md)
-* The asset must be listed on Ocean Market
-* Can’t be in [purgatory](https://github.com/oceanprotocol/list-purgatory/blob/main/policies/README.md)
+When DF restarts each Thursday, the global allocation towards each asset resets back to zero and then starts counting up again until the end of the round. After allocating your veOCEAN to different datasets, it will take time for your voting power to be accounted for. 
