@@ -10,10 +10,12 @@ Ocean.py is built for main environment of data scientists. Yes, Python. It's a l
 
 With ocean.py, you can:
 
-* Publish data services: data feeds, REST APIs, downloadable files or compute-to-data. Create an ERC721 data NFT for each service, and ERC20 datatoken for access (1.0 datatokens to access).
-* Sell datatokens via for a fixed price. Sell data NFTs.
-* Transfer data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.
+* **Publish** data services: data feeds, REST APIs, downloadable files or compute-to-data. Create an ERC721 **data NFT** for each service, and ERC20 **datatoken** for access (1.0 datatokens to access).
+* **Sell** datatokens via for a fixed price. Sell data NFTs.
+* **Transfer** data NFTs & datatokens to another owner, and all other ERC721 & ERC20 actions using web3.
 
-Ocean.py's README has all info to install Ocean, set it up for local or remote networks, and use it for everything from sharing AI models to Compute-to-Data.
+Ocean.py's README has all the info to install Ocean, set it up for local or remote networks, and use it for everything from sharing AI models to Compute-to-Data.
 
 **[Go to ocean.py README](https://github.com/oceanprotocol/ocean.py/blob/main/README.md)**.
+
+<figure><img src="../../.gitbook/assets/components/ocean_py.png" alt="" width="375"><figcaption><p>ocean.py library</p></figcaption></figure>
