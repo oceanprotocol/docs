@@ -2,7 +2,7 @@
 description: Make extra dosh by curating datasets in Data Farming
 ---
 
-# How to Volume DF
+# Guide: Volume DF
 
 <figure><img src="../../.gitbook/assets/rewards/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
 
