@@ -2,7 +2,7 @@
 description: Make extra dosh with building prediction models
 ---
 
-# How to Challenge DF
+# Guide: Challenge DF
 
 <figure><img src="../../.gitbook/assets/rewards/gif/challenge-df.gif" alt=""></figure>
 
