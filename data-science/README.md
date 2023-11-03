@@ -17,8 +17,8 @@ It offers three main benefits:
 
 Here are the most relevant Ocean tools to work with:
 
-- The [ocean.py](../developers/ocean.py/README.md) library is built for the key environment of data scientists: Python. It can simply be imported alongside other Python data science tools like numpy, matplotlib, scikit-learn and tensorflow. You can use it to publish & sell data assets, buy assets, transfer ownership, and more.
-- Predictoor's [pdr-backend repo](https://github.com/oceanprotocol/pdr-backend)  offers Python-based tools to run bots for crypto prediction or trading.
+- The **[ocean.py](ocean.py/README.md)** library is built for the key environment of data scientists: Python. It can simply be imported alongside other Python data science tools like numpy, matplotlib, scikit-learn and tensorflow. You can use it to publish & sell data assets, buy assets, transfer ownership, and more.
+- Predictoor's **[pdr-backend repo](https://github.com/oceanprotocol/pdr-backend)** has Python-based tools to run bots for crypto prediction or trading.
 - And any of the other Ocean tools documented here as well:)
 
 
