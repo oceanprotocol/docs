@@ -1,30 +1,35 @@
 ---
-description: More data, provenance, and earning opportunities
+description: Earn $, track data & compute provenance, and get more data
 cover: ../.gitbook/assets/cover/data_science_banner.png
 coverY: 0
 ---
 
 # 📊 Data Science
 
-<figure><img src="../.gitbook/assets/gif/my-data.gif" alt="" width="360"><figcaption><p>Ocean Protocol - Built to protect your precious.</p></figcaption></figure>
+### How does Ocean benefit data scientists?
 
-### Why should data scientists use Ocean Protocol?
+It offers three main benefits:
+- **Earn.** You can earn $ by doing crypto price predictions via [Predictoor](../predictoor/README.md), by curating data in [Data Farming](../rewards/README.md), by doing [data challenges](../user-guides/join-a-data-challenge.md), and by selling data & models.
+- **More Data.** Use [Compute-to-Data](../developers/compute-to-data/README.md) to access private data to run your AI modeling algorithms against, data which was previously inaccessible. Browse [Ocean Market](https://market.oceanprotocol.com) and other Ocean-powered markets to find more data to improve your AI models. 
+- **Provenance.** The acts of publishing data, purchasing data, and consuming data are all recorded on the blockchain to make a tamper-proof audit trail. Know where your AI training data came from!
 
-Ocean Protocol is built for data scientists to **monetize data effectively and** solve the ["Data Value Creation Loop"](the-data-value-creation-loop.md). These [open-source tools](https://github.com/oceanprotocol) tackle some of **the biggest problems for data scientists**: how to sell data anonymously, how to sell compute jobs on datasets, how to control access to data, and many more. By leveraging blockchain architecture, Ocean achieves several tactical advantages over Web2 to solve these data sharing problems.
+### How do data scientists start using Ocean?
 
-### What are some use cases for Ocean Protocol?
+Here are the most relevant Ocean tools to work with:
 
-* Enable trustless transactions (i.e. buy, sell, and transfer data)
-* Trace data provenance and consumption
-* Token gate a website or dApp using datatokens
-* Deploy a decentralized data marketplace
-* Sell algorithmic compute jobs on private datasets
+- The [ocean.py](../developers/ocean.py/README.md) library is built for the key environment of data scientists: Python. It can simply be imported alongside other Python data science tools like numpy, matplotlib, scikit-learn and tensorflow. You can use it to publish & sell data assets, buy assets, transfer ownership, and more.
+- Predictoor's [pdr-backend repo](https://github.com/oceanprotocol/pdr-backend)  offers Python-based tools to run bots for crypto prediction or trading.
+- And any of the other Ocean tools documented here as well:)
 
-### How to design a ML system using Ocean Protocol?
 
-The first step is to tokenize data into data NFTs and datatokens on the blockchain. We offer a no-code way to tokenize data via the [Ocean Market](https://market.oceanprotocol.com). But we also offer code options for data scientists to use the [Ocean.py](../developers/ocean.py/README.md) and [Ocean.js](../developers/ocean.js/README.md) libraries. Data scientists can then build sophisticated ML systems on top of the tokenized data by using composable Ocean Protocol tools. ML models can use a variety of Ocean smart contracts, including Ocean's [Compute-to-Data](../developers/compute-to-data/README.md), to build model outputs all the way to the last-mile delivery for businesses.
+### Are there mental models for earning $ in data?
 
-### **Key Links for Data Scientists:**
+Yes. This section has two other pages which elaborate:
+- [The Data Value Creation Loop](the-data-value-creation-loop.md) lays out the life cycle of data, and how to focus towards high-value use cases.
+- [What data is valuable](data-engineers.md) helps think about pricing data.
 
-* Learn the difference between Ocean Protocol [data NFTs and datatokens](../developers/contracts/datanft-and-datatoken.md), the two types of tokenized data assets you need to start building your ML systems.
-* Discover Ocean's [Compute-to-Data](../developers/compute-to-data/README.md) engine that can help you to solve the difficult problem of selling algorithmic compute jobs on your datasets without actually revealing the contents of the algorithm & dataset to the consumer.
+### Further resources
+
+The blog post ["How Ocean Can Benefit Data Scientists"](https://blog.oceanprotocol.com/how-ocean-can-benefit-data-scientists-7e502e5f1a5f) elaborates further on the benefits of more data, provenance, and earning.
+
+<figure><img src="../.gitbook/assets/gif/my-data.gif" alt="" width="360"></figure>
