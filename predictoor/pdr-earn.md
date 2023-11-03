@@ -16,6 +16,7 @@ The actions as a predictoor give the following ways to earn:
 * **Stake reshuffling.** At an epoch, incorrect predictoors have their stake slashed. This slashed stake is distributed to the correct predictoors pro-rata on their stake.
 * **Predictoor DF.** The third phase of Predictoor rollout will have an incentives program that amounts to additional earning for predictoors. 37,000 OCEAN/week rewards.
 Don’t expect to be 100% accurate in your up/down predictions. Marginally better than 50% might be enough, and be skeptical if you’re greatly above 50%, you probably have a bug in your testing.
+[Learn more about Predictoor DF](/rewards/df-predictoordf.md)
 
 Predictoors can earn even more, via complementary actions:
 * **[Challenge DF](../rewards/df-intro.md#what-is-challenge-df).** Predict accurately for weekly prizes. 

@@ -83,15 +83,17 @@ Publishers are strongly incentivized to launch assets in the Ocean Ecosystem. Wh
 
 You can learn how to curate datasets and access [Publisher Rewards](user-guides/how-to-volumedf.md#) here.  
 
-### What is Challenge DF
+### What is Challenge DF?
 
 Challenge DF rewards Data Scientists that produce prediction models that consistently improve the prediction of the price of Ethereum. It's called Challenge DF because weekly rewards are dispensed towards participants that are competing to improve the accuracy of how well we can predict price movements of Ethereum. Therefore, **Challenge DF yields depend on participants accurately outcompeting each other.** Only the top 3 predictions on the leaderboard win.  
 
 You can visit the follow tutorial learn how to [access Challenge DF](user-guides/how-to-challengedf.md).  
 
-### What is Predictoor DF
+### What is Predictoor DF?
 
 Predictoor DF rewards Data Scientists (as a predictoor) that submit continuous predictions for future price movements of different assets. It's called Predictoor DF because weekly rewards are dispensed towards predictoors that are competing to accurately predict asset prices. Therefore **Predictoor DF yields depend on participants being accurate and outcompeting each other**.
+
+Learn more about [Predictoor DF](/rewards/df-predictoordf.md).
 
 ### What's the difference between Data Farming and Yield Farming?
 
