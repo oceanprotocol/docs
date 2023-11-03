@@ -10,7 +10,7 @@ coverY: 0
 
 <figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
 
-### Tokenize your cool stuff and make money 🤑
+### Tokenize & sell your data
 
 Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 
@@ -34,36 +34,36 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 [using-ocean-market.md](using-ocean-market.md)
 {% endcontent-ref %}
 
-### Farm data like a pro 😎🥕
+### Earn rewards with Data Farming
 
-Earn rewards by obtaining veOCEAN, farm yield by curating datasets, and optimize your APY by publishing Data & Algorithm NFTs on-chain. ⛓️
+Earn rewards by locking OCEAN, curating data assets, and more.
 
-{% content-ref url="data-farming/README.md" %}
-[data-farming/README.md](data-farming/README.md)
+{% content-ref url="rewards/README.md" %}
+[rewards/README.md](rewards/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="data-farming/how-to-veocean.md" %}
-[data-farming/how-to-veocean.md](data-farming/how-to-veocean.md)
+{% content-ref url="rewards/how-to-veocean.md" %}
+[rewards/how-to-veocean.md](rewards/how-to-veocean.md)
 {% endcontent-ref %}
 
-{% content-ref url="data-farming/how-to-estimate-apy.md" %}
-[data-farming/how-to-data-farm-volumedf.md](data-farming/how-to-estimate-apy.md)
+{% content-ref url="rewards/how-to-estimate-apy.md" %}
+[rewards/how-to-data-farm-volumedf.md](rewards/how-to-estimate-apy.md)
 {% endcontent-ref %}
 
-{% content-ref url="data-farming/how-to-claim-rewards.md" %}
-[data-farming/how-to-claim-rewards.md](data-farming/how-to-claim-rewards.md)
+{% content-ref url="rewards/how-to-claim-rewards.md" %}
+[rewards/how-to-claim-rewards.md](rewards/how-to-claim-rewards.md)
 {% endcontent-ref %}
 
-{% content-ref url="data-farming/how-to-volumedf.md" %}
-[data-farming/how-to-volumedf.md](data-farming/how-to-volumedf.md)
+{% content-ref url="rewards/how-to-volumedf.md" %}
+[rewards/how-to-volumedf.md](rewards/how-to-volumedf.md)
 {% endcontent-ref %}
 
-{% content-ref url="data-farming/how-to-delegate.md" %}
-[data-farming/how-to-delegate.md](data-farming/how-to-delegate.md)
+{% content-ref url="rewards/how-to-delegate.md" %}
+[rewards/how-to-delegate.md](rewards/how-to-delegate.md)
 {% endcontent-ref %}
 
-{% content-ref url="data-farming/how-to-challengedf.md" %}
-[data-farming/how-to-challengedf.md](data-farming/how-to-challengedf.md)
+{% content-ref url="rewards/how-to-challengedf.md" %}
+[rewards/how-to-challengedf.md](rewards/how-to-challengedf.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺
