@@ -73,7 +73,7 @@ redirects:
     data-science/ocean.py/publish-flow: data-scientists/ocean.py/publish-flow.md
     data-science/ocean.py/remote-setup: data-scientists/ocean.py/remote-setup.md
     data-science/ocean.py/technical-details: data-scientists/ocean.py/technical-details.md
-    "developers/ocean.py/": data-scientists/ocean.py/README.md
+    "developers/ocean.py": data-scientists/ocean.py/README.md
     developers/ocean.py/compute-flow: data-scientists/ocean.py/compute-flow.md
     developers/ocean.py/consume-flow: data-scientists/ocean.py/consume-flow.md
     developers/ocean.py/datatoken-interface-tech-details: data-scientists/ocean.py/datatoken-interface-tech-details.md
