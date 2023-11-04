@@ -73,6 +73,17 @@ redirects:
     data-science/ocean.py/publish-flow: data-scientists/ocean.py/publish-flow.md
     data-science/ocean.py/remote-setup: data-scientists/ocean.py/remote-setup.md
     data-science/ocean.py/technical-details: data-scientists/ocean.py/technical-details.md
+    developers/ocean.py/: data-scientists/ocean.py/README.md
+    developers/ocean.py/compute-flow: data-scientists/ocean.py/compute-flow.md
+    developers/ocean.py/consume-flow: data-scientists/ocean.py/consume-flow.md
+    developers/ocean.py/datatoken-interface-tech-details: data-scientists/ocean.py/datatoken-interface-tech-details.md
+    developers/ocean.py/install: data-scientists/ocean.py/install.md
+    developers/ocean.py/local-setup: data-scientists/ocean.py/local-setup.md
+    developers/ocean.py/ocean-assets-tech-details: data-scientists/ocean.py/ocean-assets-tech-details.md
+    developers/ocean.py/ocean-compute-tech-details: data-scientists/ocean.py/ocean-compute-tech-details.md
+    developers/ocean.py/publish-flow: data-scientists/ocean.py/publish-flow.md
+    developers/ocean.py/remote-setup: data-scientists/ocean.py/remote-setup.md
+    developers/ocean.py/technical-details: data-scientists/ocean.py/technical-details.md
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
     api-references/provider-rest-api: developers/provider/general-endpoints.md
