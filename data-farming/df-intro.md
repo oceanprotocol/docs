@@ -1,5 +1,5 @@
 ---
-description: Learn about Data Farming 🧑‍🏫
+description: Learn how to earn passively, and with active work 🧑‍🏫
 ---
 
 # Data Farming 101
