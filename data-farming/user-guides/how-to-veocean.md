@@ -2,7 +2,7 @@
 description: Get veOCEAN to use the Data Farming dApp and make yield! 🧑‍🌾🥕
 ---
 
-<figure><img src="../../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get veOCEAN</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/super-mario-coins.gif" alt="" width="250"><figcaption><p>Get your gold. Get your veOCEAN</p></figcaption></figure>
 
 # What is veOCEAN and Passive Rewards
 
