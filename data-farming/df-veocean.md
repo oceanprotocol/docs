@@ -1,11 +1,11 @@
 ---
 description: >-
-  Learn the basic moves to start kicking a** at Data Farming
+  Learn about veOCEAN & Passive DF
 ---
 
 # Passive Farming veOCEAN
 
-<figure><img src="../.gitbook/assets/gif/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>Have veOCEAN, can fade.</p></figcaption></figure>
 
 ### What does the "ve" in veOCEAN stand for?
 
