@@ -58,7 +58,7 @@ redirects:
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
     api-references/provider-rest-api: developers/provider/general-endpoints.md
-    veocean-data-farming/*.md: data-farming/README.md
+    "veocean-data-farming/*": data-farming/README.md
     veocean-data-farming: data-farming/README.md
     rewards/*: data-farming/README.md
     user-guides/data-farming/*: data-farming/README.md
