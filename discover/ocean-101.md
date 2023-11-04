@@ -16,7 +16,7 @@ Ocean Protocol also combines advanced technologies and web components to create 
 
 <figure><img src="../.gitbook/assets/architecture/Ocean101.png" alt=""><figcaption><p>Ocean architectural overview </p></figcaption></figure>
 
-Powerful libraries such as [Ocean.js](../developers/ocean.js/README.md) (JavaScript) and [Ocean.py](../data-science/ocean.py/README.md) (Python) facilitate seamless integration and interaction with the protocol, offering a wide range of functionalities.
+Powerful libraries such as [Ocean.js](../developers/ocean.js/README.md) (JavaScript) and [Ocean.py](../data-scientists/ocean.py/README.md) (Python) facilitate seamless integration and interaction with the protocol, offering a wide range of functionalities.
 
 Ocean Protocol incorporates middleware components that enhance efficiency and streamline interactions. Components such as [Aquarius](../developers/aquarius/README.md) act as a metadata cache, improving search efficiency by caching on-chain data into Elasticsearch while [Provider](../developers/provider/README.md) plays a crucial role in various ecosystem operations, assisting in asset downloading, handling encryption of [Decentralized Data Objects](../developers/ddo-specification.md) (DDOs), and facilitating communication with the operator-service for Compute-to-Data jobs. And finally, the [Subgraph](../developers/subgraph/README.md), an off-chain service leveraging GraphQL, offers efficient access to information related to datatokens, users, and balances.
 
