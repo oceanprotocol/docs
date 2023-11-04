@@ -1,11 +1,11 @@
 ---
 description: >-
-  Hey there champ! If you can explain the emission curves and teach how to calculate APYs, then you've mastered Data Farming
+  Understand yields, multiply it out for APYs
 ---
 
 # Emissions & APYs
 
-<figure><img src="../.gitbook/assets/gif/neo-bb.gif" alt=""><figcaption><p>Like a true master of The Way of Data Farming.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/many-penguins.gif" alt=""><figcaption><p>Multiply, and multiply again. And again.</p></figcaption></figure>
 
 ## Understand emissions to know APYs
 
