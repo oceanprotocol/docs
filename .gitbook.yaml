@@ -55,29 +55,19 @@ redirects:
     building-with-ocean/contributing/code-of-conduct: contribute/code-of-conduct.md
     building-with-ocean/contributing/legal-reqs: contribute/legal-reqs.md
     building-with-ocean/projects-using-ocean: contribute/projects-using-ocean.md
-    veocean-data-farming: data-farming/README.md
-    veocean-data-farming/veocean: data-farming/df-veocean.md
-    veocean-data-farming/df-intro: data-farming/df-intro.md
-    veocean-data-farming/df-background: data-farming/df-volumedf.md
-    veocean-data-farming/emissions-apys: data-farming/df-emissions-apys.md
-    veocean-data-farming/delegation: data-farming/README.md
-    veocean-data-farming/veocean-data-farming-tutorial: data-farming/user-guides/how-to-veocean.md
-    rewards/veOcean-Data-Farming-Tutorial: data-farming/user-guides/how-to-veocean.md
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
     api-references/provider-rest-api: developers/provider/general-endpoints.md
-    user-guides/claim-ocean-rewards: data-farming/user-guides/how-to-claim-rewards.md
-    user-guides/get-started-df: data-farming/user-guides/how-to-veocean.md
-    user-guides/how-to-veocean: data-farming/user-guides/how-to-veocean.md
-    user-guides/how-to-claim-rewards: data-farming/user-guides/how-to-claim-rewards.md
-    user-guides/how-to-data-farm: data-farming/user-guides/how-to-volumedf.md
-    user-guides/data-farming/how-to-volume-df: data-farming/user-guides/how-to-volumedf.md
-    user-guides/data-farming/how-to-df-estimate-apy: data-farming/user-guides/how-to-estimate-apy.md
-    user-guides/data-farming/how-to-estimate-apy: data-farming/user-guides/how-to-estimate-apy.md
-    user-guides/data-farming/how-to-challengedf: data-farming/user-guides/how-to-challengedf.md
-    user-guides/data-farming/how-to-delegate: data-farming/user-guides/how-to-delegate.md
-    user-guides/rewards/README: data-farming/user-guides/README.md
-    rewards/df-basic: data-farming/df-guides.md
-    rewards/veocean: data-farming/df-veocean.md
-    rewards/df-max-out-yield: data-farming/df-volumedf.md
-    rewards/df-guides.md: data-farming/user-guides/README.md
+    veocean-data-farming/*: data-farming/README.md
+    veocean-data-farming: data-farming/README.md
+    rewards/*: data-farming/README.md
+    user-guides/data-farming/*: data-farming/README.md
+    user-guides/rewards/*: data-farming/README.md
+    user-guides/claim-ocean-rewards: data-farming/README.md
+    user-guides/get-started-df: data-farming/README.md
+    user-guides/how-to-veocean: data-farming/README.md
+    user-guides/how-to-claim-rewards: data-farming/README.md
+    user-guides/how-to-data-farm: data-farming/README.md
+
+
+
