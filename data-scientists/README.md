@@ -1,6 +1,6 @@
 ---
 description: Earn $, track data & compute provenance, and get more data
-cover: ../.gitbook/assets/cover/data_science_banner.png
+cover: ../.gitbook/assets/cover/data_scientists_banner.png
 coverY: 0
 ---
 

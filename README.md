@@ -44,12 +44,12 @@ layout: landing
       <td><a href=".gitbook/assets/cover/developer_card.png">developer_card.png</a></td>
     </tr>
     <tr>
-      <td><a href="data-science/">data-science</a></td>
+      <td><a href="data-scientists/">data-scientists</a></td>
       <td>Earn $ from AI models, track provenance, get more data.</td>
       <td></td>
       <td></td>
-      <td><a href="data-science/">data-science</a></td>
-      <td><a href=".gitbook/assets/cover/data_science_card.png">data_science_card.png</a></td>
+      <td><a href="data-scientists/">data-scientists</a></td>
+      <td><a href=".gitbook/assets/cover/data_scientists_card.png">data_scientists_card.png</a></td>
     </tr>
     <tr>
       <td><a href="predictoor/">predictoor</a></td>

@@ -55,8 +55,24 @@ redirects:
     building-with-ocean/contributing/code-of-conduct: contribute/code-of-conduct.md
     building-with-ocean/contributing/legal-reqs: contribute/legal-reqs.md
     building-with-ocean/projects-using-ocean: contribute/projects-using-ocean.md
-    user-guides/join-a-data-challenge: data-science/join-a-data-challenge.md
-    user-guides/sponsor-a-data-challenge: data-science/sponsor-a-data-challenge.md
+    user-guides/join-a-data-challenge: data-scientists/join-a-data-challenge.md
+    user-guides/sponsor-a-data-challenge: data-scientists/sponsor-a-data-challenge.md
+    data-science/: data-scientists/README.md
+    data-science/data-engineers: data-scientists/README.md
+    data-science/join-a-data-challenge: data-scientists/join-a-data-challenge.md
+    data-science/sponsor-a-data-challenge: data-scientists/sponsor-a-data-challenge.md
+    data-science/the-data-value-creation-loop: data-scientists/the-data-value-creation-loop.md
+    data-science/ocean.py/: data-scientists/ocean.py/README.md
+    data-science/ocean.py/compute-flow: data-scientists/ocean.py/compute-flow.md
+    data-science/ocean.py/consume-flow: data-scientists/ocean.py/consume-flow.md
+    data-science/ocean.py/datatoken-interface-tech-details: data-scientists/ocean.py/datatoken-interface-tech-details.md
+    data-science/ocean.py/install: data-scientists/ocean.py/install.md
+    data-science/ocean.py/local-setup: data-scientists/ocean.py/local-setup.md
+    data-science/ocean.py/ocean-assets-tech-details: data-scientists/ocean.py/ocean-assets-tech-details.md
+    data-science/ocean.py/ocean-compute-tech-details: data-scientists/ocean.py/ocean-compute-tech-details.md
+    data-science/ocean.py/publish-flow: data-scientists/ocean.py/publish-flow.md
+    data-science/ocean.py/remote-setup: data-scientists/ocean.py/remote-setup.md
+    data-science/ocean.py/technical-details: data-scientists/ocean.py/technical-details.md
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
     api-references/provider-rest-api: developers/provider/general-endpoints.md

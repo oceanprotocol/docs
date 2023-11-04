@@ -6,7 +6,7 @@ description: >-
 
 # Ocean.py
 
-[Ocean.py](https://github.com/oceanprotocol/ocean.py) helps data scientists earn $ from their AI models, track provenance of data & compute, and get more data. (More details [here](../../data-science/README.md).)
+[Ocean.py](https://github.com/oceanprotocol/ocean.py) helps data scientists earn $ from their AI models, track provenance of data & compute, and get more data. (More details [here](../../data-scientists/README.md).)
 
 Ocean.py makes these tasks easy:
 

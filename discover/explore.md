@@ -81,7 +81,7 @@ The following guides will help you get started with buying and selling data:
 
 <summary><mark style="color:blue;">Manage datatokens and data NFTs for use in DeFi</mark><br><br>Ocean makes it easy to publish data services (deploy ERC721 data NFTs and ERC20 datatokens), and to consume data services (spend datatokens). Crypto wallets, exchanges, and DAOs become data wallets, exchanges, and DAOs.</summary>
 
-Use Ocean [JavaScript](../developers/ocean.js/README.md) or [Python](../data-science/ocean.py/README.md) drivers to manage data NFTs and datatokens:
+Use Ocean [JavaScript](../developers/ocean.js/README.md) or [Python](../data-scientists/ocean.py/README.md) drivers to manage data NFTs and datatokens:
 
 Ocean-based apps make data assets on-ramps and off-ramps easy for end users. Ocean smart contracts and libraries make this easy for developers. The data itself does not need to be on-chain, just the access control.
 
@@ -123,7 +123,7 @@ Participating in the Data Farming initiative demonstrates a commitment to the pr
 
 <details>
 
-<summary><mark style="color:red;">Data Challenges</mark><br><br>Ocean <a href="https://oceanprotocol.com/challenges">Data Challenges</a> offer you a unique opportunity to showcase your skills and creativity in the world of data. These organized events and competitions encourage <a href="../data-science/">data scientists</a>, researchers, and developers like yourself to explore and innovate using Ocean Protocol.</summary>
+<summary><mark style="color:red;">Data Challenges</mark><br><br>Ocean <a href="https://oceanprotocol.com/challenges">Data Challenges</a> offer you a unique opportunity to showcase your skills and creativity in the world of data. These organized events and competitions encourage <a href="../data-scientists/">data scientists</a>, researchers, and developers like yourself to explore and innovate using Ocean Protocol.</summary>
 
 By participating in Ocean Data Challenges, you can tackle real-world problems, leverage data assets, and utilize the technologies within the Ocean ecosystem. Not only do you have the chance to compete for recognition and prizes, but you also contribute to driving innovation, fostering collaboration, and making a positive impact in the data space.
 
