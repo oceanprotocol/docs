@@ -34,7 +34,7 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 [using-ocean-market.md](using-ocean-market.md)
 {% endcontent-ref %}
 
-### Earn rewards with Data Farming
+### Data Farming
 
 Earn rewards by locking OCEAN, curating data assets, and more.
 
@@ -42,33 +42,9 @@ Earn rewards by locking OCEAN, curating data assets, and more.
 [../data-farming/user-guides/README.md](../data-farming/user-guides/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="../data-farming/user-guides/how-to-veocean.md" %}
-[../data-farming/user-guides/how-to-veocean.md](../data-farming/user-guides/how-to-veocean.md)
-{% endcontent-ref %}
-
-{% content-ref url="../data-farming/user-guides/how-to-estimate-apy.md" %}
-[../data-farming/user-guides/how-to-data-farm-volumedf.md](../data-farming/user-guides/how-to-estimate-apy.md)
-{% endcontent-ref %}
-
-{% content-ref url="../data-farming/user-guides/how-to-claim-rewards.md" %}
-[../data-farming/user-guides/how-to-claim-rewards.md](../data-farming/user-guides/how-to-claim-rewards.md)
-{% endcontent-ref %}
-
-{% content-ref url="../data-farming/user-guides/how-to-volumedf.md" %}
-[../data-farming/user-guides/how-to-volumedf.md](../data-farming/user-guides/how-to-volumedf.md)
-{% endcontent-ref %}
-
-{% content-ref url="../data-farming/user-guides/how-to-delegate.md" %}
-[../data-farming/user-guides/how-to-delegate.md](../data-farming/user-guides/how-to-delegate.md)
-{% endcontent-ref %}
-
-{% content-ref url="../data-farming/user-guides/how-to-challengedf.md" %}
-[../data-farming/user-guides/how-to-challengedf.md](../data-farming/user-guides/how-to-challengedf.md)
-{% endcontent-ref %}
-
 ### Antique Stuff 🏺
 
-Out with the old, in with the new!
+If you have OCEAN in old pools, this will help.
 
 {% content-ref url="remove-liquidity-pools.md" %}
 [remove-liquidity-pools.md](remove-liquidity-pools.md)
