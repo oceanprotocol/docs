@@ -1,5 +1,5 @@
 ---
-description: How to claim OCEAN rewards from data farming 🧑‍🌾🥕
+description: Unbox your OCEAN rewards
 ---
 
 # Claim Rewards Data Farming

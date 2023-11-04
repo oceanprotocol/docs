@@ -1,11 +1,11 @@
 ---
 description: >-
-  Learn the basic moves to start kicking a** at Data Farming
+  Earn passively by locking veOCEAN for OCEAN
 ---
 
-# Passive Farming veOCEAN
+# Passive Farming with veOCEAN
 
-<figure><img src="../.gitbook/assets/gif/neo-blocking.gif" alt=""><figcaption><p>Data Farming is getting effortless.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>I've got veOCEAN, my work is done.</p></figcaption></figure>
 
 ### What does the "ve" in veOCEAN stand for?
 

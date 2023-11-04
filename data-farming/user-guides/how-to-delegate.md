@@ -4,7 +4,7 @@ description: Give another wallet power to allocate veOCEAN
 
 # Guide: Volume DF Delegation
 
-<figure><img src="../../.gitbook/assets/data-farming/gif/delegation-dog-herding-sheep.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/underwater-buddy-peewee.gif" alt=""><figcaption></figcaption></figure>
 
 ## Why Delegate?
 

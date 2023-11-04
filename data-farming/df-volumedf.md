@@ -1,17 +1,17 @@
 ---
 description: >-
-  Volume Data Farming
+  Choose your fav data assets, earn more
 ---
 
-# Volume Data Farming
+# Curate with Volume DF
 
-<figure><img src="../.gitbook/assets/gif/i-know-kung-fu.gif" alt=""></figure>
+<figure><img src="../.gitbook/assets/gif/avatar-plugin.gif" alt=""><figcaption><p>Make your selection and commit. Good things will come.</p></figcaption></figure>
 
 ## What is Volume DF
 
 Passive Data Farming is a great start to earn from your locked OCEAN (veOCEAN).
 
-Volume DF lets you can earn more with yet, with that same veOCEAN. In Volume DF, you allocate veOCEAN to data assets with high data consume volume (DCV).
+Volume DF lets you can earn more yet, with that same veOCEAN. In Volume DF, you allocate veOCEAN to data assets with high data consume volume (DCV).
 
 ### User Guide
 

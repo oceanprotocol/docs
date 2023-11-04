@@ -1,10 +1,10 @@
 ---
-description: Learn the fundamentals of The Way of Data Farming 🧑‍🏫
+description: Learn how to earn passively, and with active work 🧑‍🏫
 ---
 
 # Data Farming 101
 
-<figure><img src="../.gitbook/assets/gif/morpheus.gif" alt=""><figcaption><p>Meet your sensei.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/school-of-fish.gif" alt=""><figcaption><p>School (of fish) time.</p></figcaption></figure>
 
 ## Weekly Rounds
 

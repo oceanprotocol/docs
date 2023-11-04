@@ -1,10 +1,10 @@
 ---
-description: Make extra dosh with building prediction models
+description: Be competive, make great predictions, earn $
 ---
 
 # Guide: Challenge DF
 
-<figure><img src="../../.gitbook/assets/data-farming/gif/challenge-df.gif" alt=""></figure>
+<figure><img src="../../.gitbook/assets/gif/underwater-you-want-some-of-this.gif" alt=""></figure>
 
 ## Predict to earn
 

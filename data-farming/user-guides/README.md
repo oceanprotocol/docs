@@ -4,7 +4,7 @@ description: Learn the ins-and-outs Data Farming
 
 # Data Farming Guides
 
-<figure><img src="../../.gitbook/assets/gif/farming.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/school-of-fish2.gif" alt=""><figcaption>Back to school (of fish)</figcaption></figure>
 
 Data Farming is the core incentive system inside of Ocean Protocol. It offers different ways for participants to help the protocol grow and succeed.
 

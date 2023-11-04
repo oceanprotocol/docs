@@ -1,10 +1,10 @@
 ---
-description: Make extra dosh by curating datasets in Data Farming
+description: Curate datasets in Data Farming and earn
 ---
 
 # Guide: Volume Data Farming
 
-<figure><img src="../../.gitbook/assets/data-farming/gif/volume-df.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gif/avatar-pick-whale.gif" alt=""><figcaption>Pick your whale</figcaption></figure>
 
 ## Curate to earn
 
