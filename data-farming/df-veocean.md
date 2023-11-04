@@ -1,9 +1,9 @@
 ---
 description: >-
-  Learn about veOCEAN & Passive DF
+  Earn passively by locking veOCEAN for OCEAN
 ---
 
-# Passive Farming veOCEAN
+# Passive Farming with veOCEAN
 
 <figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>I've got veOCEAN, my work is done.</p></figcaption></figure>
 

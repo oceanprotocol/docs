@@ -1,6 +1,6 @@
 ---
 description: >-
-  Choose your fav assets, earn more
+  Choose your fav data assets, earn more
 ---
 
 # Curate with Volume DF

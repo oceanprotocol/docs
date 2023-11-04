@@ -1,6 +1,6 @@
 ---
 description: >-
-  Understand yields, multiply it out for APYs
+  Know reward emissions, to know daily yields, multiply for annual yields
 ---
 
 # Emissions & APYs
