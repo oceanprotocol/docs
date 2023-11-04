@@ -75,23 +75,23 @@ redirects:
     user-guides/data-farming/how-to-estimate-apy: data-farming/README.md
     user-guides/data-farming/how-to-challengedf: data-farming/README.md
     user-guides/data-farming/how-to-delegate: data-farming/README.md
-    user-guides/rewards/README: data-farming/README.md
+    user-guides/rewards/: data-farming/README.md
+    rewards/: data-farming/README.md
     rewards/veOcean-Data-Farming-Tutorial: data-farming/README.md
     rewards/df-basic: data-farming/README.md
     rewards/veocean: data-farming/README.md
     rewards/df-max-out-yield: data-farming/README.md
-    rewards/df-guides.md: data-farming/README.md
-    rewards/README.md: data-farming/README.md
-    rewards/df-challengedf.md: data-farming/README.md
-    rewards/df-emissions-apys.md: data-farming/README.md
-    rewards/df-faq.md: data-farming/README.md
-    rewards/df-intro.md: data-farming/README.md
-    rewards/df-veocean.md: data-farming/README.md
-    rewards/df-volumedf.md: data-farming/README.md
-    rewards/user-guides/README.md: data-farming/README.md
-    rewards/user-guides/how-to-challengedf.md: data-farming/README.md
-    rewards/user-guides/how-to-claim-rewards.md: data-farming/README.md
-    rewards/user-guides/how-to-delegate.md: data-farming/README.md
-    rewards/user-guides/how-to-estimate-apy.md: data-farming/README.md
-    rewards/user-guides/how-to-veocean.md: data-farming/README.md
-    rewards/user-guides/how-to-volumedf.md: data-farming/README.md
+    rewards/df-guides: data-farming/README.md
+    rewards/df-challengedf: data-farming/README.md
+    rewards/df-emissions-apys: data-farming/README.md
+    rewards/df-faq: data-farming/README.md
+    rewards/df-intro: data-farming/README.md
+    rewards/df-veocean: data-farming/README.md
+    rewards/df-volumedf: data-farming/README.md
+    rewards/user-guides/: data-farming/README.md
+    rewards/user-guides/how-to-challengedf: data-farming/README.md
+    rewards/user-guides/how-to-claim-rewards: data-farming/README.md
+    rewards/user-guides/how-to-delegate: data-farming/README.md
+    rewards/user-guides/how-to-estimate-apy: data-farming/README.md
+    rewards/user-guides/how-to-veocean: data-farming/README.md
+    rewards/user-guides/how-to-volumedf: data-farming/README.md
