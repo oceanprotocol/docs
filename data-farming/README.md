@@ -1,6 +1,6 @@
 ---
 description: Learn how to earn OCEAN rewards via Data Farming
-cover: ../.gitbook/assets/cover/rewards_banner.png
+cover: ../.gitbook/assets/cover/data_farming_banner.png
 coverY: 0
 ---
 
