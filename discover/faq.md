@@ -55,7 +55,8 @@ To be fully decentralized means no single point of control, at any level of the 
 
 - OCEAN is already fully decentralized. 
 - The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware.
-- The Data Farming incentives program has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
+- Predictoor is fully decentralized.
+- Data Farming has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
   
 </details>
 
@@ -187,6 +188,7 @@ Ocean Compute-to-Data (C2D) enables data and algorithms can be ingested into sec
 
 <details>
 <summary>Is there a website or platform that tracks the consume volume of Ocean Market?</summary>
+
 
 Yes. See [autobotocean.com](https://autobotocean.com/). 
 </details>
