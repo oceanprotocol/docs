@@ -109,7 +109,7 @@
   - [What data is valuable?](data-science/data-engineers.md)
 - [🔨 Infrastructure](infrastructure/README.md)
   - [Setup a Server](infrastructure/setup-server.md)
-  - [Deploying Marketplace](infrastructure/deploying-marketplace.md)
+  - [Deploy a Marketplace](infrastructure/deploying-marketplace.md)
   - [Deploying Aquarius](infrastructure/deploying-aquarius.md)
   - [Deploying Provider](infrastructure/deploying-provider.md)
   - [Deploying Ocean Subgraph](infrastructure/deploying-ocean-subgraph.md)
