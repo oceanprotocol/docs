@@ -16,7 +16,7 @@ But even then, it's not enough to just publish useful data on Ocean. **You need 
 
 If you're still encountering challenges in generating income, don't worry! You can enter one of the [data challenges](https://oceanprotocol.com/challenges) to make sweet OCEAN rewards and build your data science skills.
 
-But what if you're a well-heeled company looking to create dApps or source data predictions? You can kickstart the value creation loop by working with Ocean Protocol to [sponsor a data challenge](../user-guides/sponsor-a-data-challenge.md).
+But what if you're a well-heeled company looking to create dApps or source data predictions? You can kickstart the value creation loop by working with Ocean Protocol to [sponsor a data challenge](sponsor-a-data-challenge.md).
 
 ### What data could be useful for dApp builders?
 

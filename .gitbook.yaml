@@ -55,6 +55,8 @@ redirects:
     building-with-ocean/contributing/code-of-conduct: contribute/code-of-conduct.md
     building-with-ocean/contributing/legal-reqs: contribute/legal-reqs.md
     building-with-ocean/projects-using-ocean: contribute/projects-using-ocean.md
+    user-guides/join-a-data-challenge: data-science/join-a-data-challenge.md
+    user-guides/sponsor-a-data-challenge: data-science/sponsor-a-data-challenge.md
     api-references: developers/README.md
     api-references/aquarius-rest-api: developers/aquarius/asset-requests.md
     api-references/provider-rest-api: developers/provider/general-endpoints.md
