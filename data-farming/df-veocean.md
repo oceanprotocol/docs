@@ -5,7 +5,7 @@ description: >-
 
 # Passive Farming veOCEAN
 
-<figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>Have veOCEAN, can fade.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>I've got veOCEAN, my work is done.</p></figcaption></figure>
 
 ### What does the "ve" in veOCEAN stand for?
 

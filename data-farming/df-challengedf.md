@@ -1,11 +1,11 @@
 ---
 description: >-
-  Weekly prediction challenges for data scientists to compete, launch algorithms, and start earning. 🏆
+  Be the champ 🏆
 ---
 
 # Win Competitions in Challenge DF
 
-<figure><img src="../.gitbook/assets/data-farming/gif/eat-data.gif" alt=""><figcaption><p>Let's consume some data.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/underwater-cycle.gif" alt=""><figcaption><p>It's a competition. Let's gooo!</p></figcaption></figure>
 
 ## Publish prediction models and earn rewards
 

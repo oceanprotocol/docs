@@ -5,7 +5,7 @@ description: >-
 
 # Curate with Volume DF
 
-<figure><img src="../.gitbook/assets/gif/avatar-plugin.gif" alt=""><figcaption><p>Make your selection and commit.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/avatar-plugin.gif" alt=""><figcaption><p>Make your selection and commit. Good things will come.</p></figcaption></figure>
 
 ## What is Volume DF
 
