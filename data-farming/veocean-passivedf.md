@@ -3,30 +3,20 @@ description: >-
   Earn passively by locking veOCEAN for OCEAN
 ---
 
-# Passive Farming with veOCEAN
+# veOCEAN and Passive Data Farming
 
 <figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>I've got veOCEAN, my work is done.</p></figcaption></figure>
 
-### What does the "ve" in veOCEAN stand for?
+**Contents:**
 
-"ve" stands for <mark style="color:orange;">**vote escrowed**</mark>. And the "vote" part of "ve" and veOCEAN is what you really need to pay attention to in order to truly understand the function of this token.
+- [About veOCEAN and Passive DF](#about-veocean-and-passive-df)
+- [User Guide to veOCEAN and Passive DF](#user-guide-to-veocean-and-passive-df)
 
-You see, when you acquire veOCEAN via locking your OCEAN in the Data Farming dApp, the intended use is to **vote on your favorite assets** in the Ocean ecosystem!
+# About veOCEAN and Passive DF
 
-When you allocate to assets that sell, then **you get a portion of the sales**!
+Here, Data Farmers earn OCEAN rewards by locking their OCEAN for veOCEAN for a period of time. That's it! It's low effort, ie passive.
 
-You can do this all from the Data Farming dApp [Farms page](https://df.oceandao.org/volume-df).
-
-### The Superpowers of veOCEAN
-
-veOCEAN allows you to engage with different Ocean Protocol mechanisms and benefit from the reward programs available.
-
-4 key utility functionalities of veOCEAN:
-
-1. **Holding it** veOCEAN pays **Passive OCEAN Rewards** every week.
-2. **Allocating it** veOCEAN pays **Active OCEAN Rewards** every week to the top selling assets in the Ocean ecosystem.
-3. **Delegating it** You can delegate veOCEAN to other Data Farmers who can curate Datasets for you. In return for their services, these farmers may charge you a fee for helping you receive APY on **Active Rewards**. The Delegate feature has just been recently released and enables veOCEAN holders to more easily manage Active Rewards.
-4. **2x Publisher Stake** If you are a publisher in the Ocean ecosystem, then allocating your veOCEAN to your own asset gives your veOCEAN **a 2x Bonus**. This is an incentive for publishers to engage with their assets and benefit the assets in the Ocean ecosystem further.
+The amount of rewards you get is pro-rata to the amount of veOCEAN you hold, cmopared to other veOCEAN holders.
 
 ### veOCEAN Time Locking
 
@@ -66,7 +56,7 @@ If you lock 1.0 OCEAN for 4 years, you get 1.0 veOCEAN at the start.
 
 At the end of your 4 years, your OCEAN is unlocked.
 
-The veOCEAN code is a fork of Curve's battle tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) token code.
+veOCEAN code is a fork of Curve's battle-tested [veCRV](https://curve.readthedocs.io/dao-vecrv.html) contracts that safeguard billions (veCRV). With this model there is no liquidity risk. You can’t lose your OCEAN through Impermanent Loss (IL). It is merely locked.  
 
 # veOCEAN and your APY
 
@@ -120,10 +110,59 @@ The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired 
 
 [Here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
 
-### veOCEAN's Smart Contracts Security
+### veOCEAN Smart Contracts Security
 
 [veOCEAN core contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) use [veCRV contracts](https://curve.readthedocs.io/dao-vecrv.html) with zero changes, on purpose: the veCRV contracts have been battle-tested since inception and have not had security issues. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. veCRV contracts [have been audited by Trail of Bits and Quantstamp](https://github.com/curvefi/curve-dao-contracts#audits-and-security).
 
 We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to point their veOCEAN towards given data assets (“allocate veOCEAN”). These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
 
 We have an [ongoing bug bounty via Immunefi](https://immunefi.com/bounty/oceanprotocol/) for Ocean software, including veOCEAN and DF components. If you identify an issue, please report it there and get rewarded.
+
+----
+
+# User Guide to veOCEAN and Passive DF
+
+<figure><img src="../../.gitbook/assets/gif/aquaman-gold.gif" alt="" width="250"><figcaption><p>Get your gold. Get your veOCEAN.</p></figcaption></figure>
+
+In order to **get yield in DF**, you will need to lock your OCEAN first! When you lock your OCEAN, you get **veOCEAN** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **Volume DF rewards**, for allocating your veOCEAN to your favorite assets and get a portion of their sales!
+
+### Don't have OCEAN yet? Get those first!
+
+#### Step 1 - Get OCEAN
+
+- Acquire OCEAN via a decentralized exchange (DEX) such as Uniswap or a centralized exchange (CEX) such as Binance, Coinbase, etc.
+
+#### Step 2 - Send to your self-custody wallet
+
+- Send your OCEAN to a self-custody wallet of yours that supports ERC-20 tokens, like Metamask for example.
+
+### Where the rubber meets the road 🚗💨
+
+Not much of a reader? Watch and learn, friend
+
+{% embed url="https://www.youtube.com/watch?v=zAQlPHkK3og" fullWidth="false" %}
+Watch and learn, friend
+{% endembed %}
+
+#### Step 3 - Go to Ocean Protocol's Data Farming dApp
+
+- Go to [https://df.oceandao.org/](https://df.oceandao.org/)
+
+#### Step 4 - Connect Your Wallet + Lock your OCEAN for veOCEAN
+
+- Click on the purple circles in the interactive demo to walk through the steps for locking your OCEAN for veOCEAN.
+
+{% embed url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" fullWidth="false" %}
+{% endembed %}
+
+In this step you will:
+
+- Enter the amount of OCEAN that you are going to lock up
+- Select a Lock End Date indicating how many weeks you’re going to lock up your OCEAN. (As the Lock End Date goes farther into the future, your Lock Multiplier increases).
+- Click on the checkbox to agree to the disclaimer.
+- Click the pink “Approve # OCEAN” button
+- Accept the transaction in your wallet.
+- Click the “Create Lock” button.
+- Accept the transaction in your wallet.
+
+Congratulations! You have now locked your OCEAN for veOCEAN and are generating passive yield automatically. You can [claim your passive OCEAN rewards](how-to-claim-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
