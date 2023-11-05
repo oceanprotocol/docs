@@ -10,6 +10,10 @@ description: >-
 
 ## OCEAN Reward Schedule
 
+If you know the schedule by which OCEAN
+
+DF currently rewards 150K OCEAN per week. Over time, rewards will increase to 300K (another 2x), then 600K (another 2x), then beyond 1.1M OCEAN/week (near 2x) then decaying over time in a Bitcoin-like emissions curve. Details are [here](ocean-reward-schedule.md)
+
 ## Reward Schedule
 
 The table below shows the total amount of OCEAN rewards that will be distributed among Passive and Active rewards each week. The table cross-references DF Round Number, Start Date, Phase & Week, Sub-Phase & Week, and OCEAN Rewards/Week.
