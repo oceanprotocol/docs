@@ -5,7 +5,7 @@ description: >-
 
 # Win Competitions in Challenge DF
 
-<figure><img src="../.gitbook/assets/gif/underwater-cycle.gif" alt=""><figcaption><p>It's a competition. Let's gooo!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/underwater-you-want-some-of-this.gif" alt=""><figcaption><p>It's a competition. Let's gooo!</p></figcaption></figure>
 
 ## Publish prediction models and earn rewards
 
