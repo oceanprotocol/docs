@@ -10,7 +10,7 @@ description: >-
 **Contents:**
 
 - [About Challenge DF](#about-challenge-df)
-- [User Guide to Chellenge DF](#user-guide-to-challenge-df)
+- [User Guide to Challenge DF](#user-guide-to-challenge-df)
 
 ## About Challenge DF
 
@@ -29,7 +29,7 @@ Prize Pool: 1,000 OCEAN (as of Nov 2, 2022)
 
 ### What are the base rules?
 
-- A fresh challenge [begins and concludes every Thursday](df-intro.md#weekly-rounds).
+- A fresh challenge begins and concludes every Thursday
 - You have to submit your entry before the deadline.
 - At the beginning of each week, a predetermined amount of OCEAN is allocated as rewards.
 - Competitors need to submit 12 predictions by using a DataNFT to share data.
@@ -67,8 +67,6 @@ You can find a direct link to the [Challenge DF README](https://github.com/ocean
 <figure><img src="../../.gitbook/assets/gif/underwater-you-want-some-of-this.gif" alt=""></figure>
 
 ## Predict to earn
-
-If you're eager to begin extracting value from data but aren't sure how to get started, then [Challenge DF is here to help](../df-challengedf.md)!
 
 By participating in the weekly data challenges of predicting the price of Ethereum, you will become familiar with the Ocean Protocol stack and with building predictions that can be sold for money.
 

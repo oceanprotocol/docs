@@ -119,7 +119,7 @@
   * [Challenge DF](data-farming/challengedf.md)
   * [Predictoor DF](data-farming/predictoordf.md)
   * [Claim Rewards](data-farming/claim-rewards.md)
-  * [OCEAN Reward Schedule](data-farming/ocean-reward-schedule.md)
+  * [Reward Schedule](data-farming/ocean-reward-schedule.md)
   * [APYs](data-farming/apys.md)
   * [FAQ](data-farming/faq.md)
 * [🔨 Infrastructure](infrastructure/README.md)
