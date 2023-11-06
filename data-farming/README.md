@@ -26,7 +26,7 @@ Here are all streams & substreams. The links lead to dedicated pages.
 
 All streams and substreams repeat **weekly** that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.
 
-**[Claiming rewards](claim-rewards.md)** You can claim rewards** each Thursday, or wait and claim many weeks' of rewards at once.
+**[Claiming rewards](claim-rewards.md)**. You can claim rewards each Thursday, or wait and claim many weeks' of rewards at once.
 
 Active DF's substreams can -- and do -- evolve over time. It's chronicled [here](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45).
 
