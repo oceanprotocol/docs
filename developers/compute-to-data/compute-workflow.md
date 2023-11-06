@@ -16,7 +16,7 @@ Below, we'll outline each step in detail 📝
 1. The consumer selects a preferred environment from the provider's list and initiates a compute-to-data job by choosing a dataset-algorithm pair.
 2. The provider checks the orders on the blockchain.
 3. If the orders for dataset, algorithm and compute environment fees are valid, the provider can start the compute flow.
-4. The provider informs the consumer of the job id's successful creation.
+4. The provider informs the consumer of the job's id successful creation.
 5. With the job ID and confirmation of the orders, the provider starts the job by calling the operator service.
 6. The operator service adds the new job in its local jobs queue.
 7. It's the operator engine's responsibility to periodically check the operator service for the list of pending jobs. If there are available resources for a new job, the operator engine requests the job list from the operator service to decide whether to initiate a new job.
