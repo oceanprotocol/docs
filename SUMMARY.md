@@ -114,7 +114,7 @@
   * [How to Earn](predictoor/pdr-earn.md)  
   * [Predictoor FAQ](predictoor/pdr-faq.md)
 * [💰 Data Farming](data-farming/README.md)
-  * [OCEAN Rewards Schedule](data-farming/ocean-rewards-schedule.md)
+  * [OCEAN Reward Schedule](data-farming/ocean-reward-schedule.md)
   * [veOCEAN & Passive DF](data-farming/veocean-passivedf.md)
   * [Volume DF](data-farming/volumedf.md)
   * [Challenge DF](data-farming/challengedf.md)
