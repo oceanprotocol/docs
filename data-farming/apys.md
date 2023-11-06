@@ -5,6 +5,8 @@ description: >-
 
 # APYs
 
+<figure><img src="../.gitbook/assets/gif/many-penguins.gif" alt=""><figcaption><p>Multiply, and multiply again. And again.</p></figcaption></figure>
+
 **Contents:**
 
 - [About APYs](#about-apys)
@@ -16,24 +18,24 @@ Rewards are earned by users that hold and use their veOCEAN to help the protocol
 
 To receive competitive short-term APYs, veOCEAN requires users to make long-term commitments.
 
-Pre-requisite: to really know APYs, you should first understand OCEAN reward schedule. Learn more [here](ocean-reward-schedule.md).
-
-
 ## Estimated APY vs Time
 
-Let's work through the examples and keep it as simple as possible.
+The plot below shows estimated APY over time. It brings together data from the [OCEAN reward schedule](ocean-reward-schedule) and estimates of amount staked (yellow line in plot).
 
-The plot below shows estimated APY over time. Green includes both passive and active rewards; black is just passive rewards. As of DF29, wash consume is no longer profitable, so we should expect a large drop in DCV and therefore in active rewards. So passive rewards (black) provides a great baseline with upside in active rewards (green).
+Green includes both passive and active rewards; black is just passive rewards.  So passive rewards (black) provides a great baseline with upside in active rewards (green). For example, in DF29 wash consume became unprofitable and led to a drop in DCV and therefore active rewards.
 
-APYs are an estimate because APY depends on OCEAN locked. OCEAN locked for future weeks is not known precisely; it must be estimated. The yellow line is the model for OCEAN locked. We modeled OCEAN locked by observing linear growth from week 5 (when OCEAN locking was introduced) to week 28 (now): OCEAN locked grew from 7.89M OCEAN to 34.98M OCEAN respectively, or 1.177M more OCEAN locked per week.
+APYs are an _estimate_ because APY depends on OCEAN locked. OCEAN locked for future weeks is not known precisely; it must be estimated. The yellow line is the model for OCEAN locked. We modeled OCEAN locked by observing linear growth from DF week 5 (when OCEAN locking was introduced) to week 28: OCEAN locked grew from 7.89M OCEAN to 34.98M OCEAN respectively, or 1.177M more OCEAN locked per week. (Note: the current model was last updated in DF week 29.)
 
 <figure><img src="../.gitbook/assets/data-farming/example_apys.png" alt="" width="563"><figcaption><p><em>Green: estimated APYs (passive + active). Black: estimated APYs (just passive). Yellow: estimated staking</em> </p></figcaption></figure>
-
-All the plots are calculated from [this Google Sheet](https://docs.google.com/spreadsheets/d/1F4o7PbV45yW1aPWOJ2rwZEKkgJXbIk5Yq7tj8749drc/edit#gid=1051477754).
 
 OCEAN lock time affects APY. The numbers above assume that all locked OCEAN is locked for 4 years, so that 1 OCEAN → 1 veOCEAN. But APY could be much worse or more if you lock for shorter durations. Here are approximate bounds.
 
 If you lock for 4 years, and everyone else locks for 2, then multiply expected APY by 2. If you lock for 4 years and others for 1, then multiply by 4. Conversely, if you lock for 2 years and everyone else for 4, then divide your expected APY by 2. If you lock for 1 year and others for 4, then divide by 4. The numbers assume that you’re actively allocating veOCEAN allocation towards high-DCV data assets. For passive locking or low-DCV data assets, divide APY by 2 (approximate).
+
+All the plots are calculated from [this Google Sheet](https://docs.google.com/spreadsheets/d/1F4o7PbV45yW1aPWOJ2rwZEKkgJXbIk5Yq7tj8749drc/edit#gid=1051477754).
+
+⚠️ The model was last updated on DF week 29, and is therefore somehwat out of date. At the time, Volume DF was the only sub-stream of Active DF, and therefore Volume DF got all the Active DF budget. In practice one would need to account for Challenge DF and Predictoor DF. (However this gets more complex because Predictoor DF is highly dependent on prediction accuracy).
+
 
 ----
 
@@ -61,6 +63,4 @@ To help solve this challenge, [we built a dashboard](https://df.oceandao.org/vol
 
 <figure><img src="../../.gitbook/assets/data-farming/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
-You can also [learn how rewards are calculated](../df-volumedf.md#how-rewards-are-calculated) to understand more about what's happening behind the scenes of each Data Farming round.
-
-Finally, you can [review the implementation inside df-web](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how the APYs on the UI are calculated.
+Finally, you can [review df-web code](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how the APYs on the UI are calculated.
