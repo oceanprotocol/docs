@@ -39,7 +39,7 @@ Active DF's substreams can -- and do -- evolve over time. It's chronicled [here]
 
 ## Further resources
 
-- The [DF FAQ](faq.md) answers more questions.
+- The **[DF FAQ](faq.md)** answers more questions.
 - Main DF github repos: [df-py (backend)](https://github.com/oceanprotocol/df-py), [df-web (frontend)](https://github.com/oceanprotocol/df-web)
 - The [Ocean Data Farming Series](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) blog has a chronological account of all Data Farming activities since its inception. It links to related blog posts.
 

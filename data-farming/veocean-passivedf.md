@@ -104,6 +104,18 @@ The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Oce
 
 The veOCEAN code was forked from the veCRV code. veCRV parameters will be the starting point. To minimize risk, tweaks will be circumspect.
 
+### Tradeability of veOCEAN; Relation to psdnOCEAN
+
+Q: Are veOCEAN tradeable or have a market price?
+
+OCEAN has a market price; it's [available](https://www.oceanprotocol.com/ocean-token) on many exchanges.
+
+Once you lock OCEAN, you get veOCEAN. Unlike OCEAN, veOCEAN cannot be traded or transferred. However, you can [delegate](delegate.md) veOCEAN to others, who then controls allocation to data assets and receives rewards.
+
+There's also the [psdnOCEAN](https://www.coingecko.com/en/coins/poseidon-ocean) option. psdnOCEAN is an ERC20-compliant "liquid staking derivative" [contract](https://etherscan.io/token/0x51fa2efd62ee56a493f24ae963eace7d0051929e) that in turn holds veOCEAN. psdnOCEAN is a product by [H2O](https://www.h2odata.xyz//), a team separate from - though collaborating with - the Ocean core team.
+- You can lock OCEAN for psdnOCEAN via [the H2O "convert" dapp](https://liquid-staking.h2odata.xyz/convert/ocean).
+- psdnOCEAN can be traded in exchanges like the [OCEAN-psdnOCEAN Balancer pool](https://app.balancer.fi/#/ethereum/swap?outputCurrency=0x51Fa2efd62ee56a493f24AE963eAce7D0051929E). ⚠️Be careful - if liquidity is low you will experience high slippage.
+
 ### Where the heck did we get this idea from?
 
 The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired by Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code. We took this inspiration to enable our users to participate in on-chain governance and earn rewards within the Ocean Protocol ecosystem.

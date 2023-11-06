@@ -1,10 +1,30 @@
 ---
-title: veOCEAN & Data Farming FAQ
+title: Data Farming FAQ
 description: Frequently Asked Questions about Data Farming
 ---
-## veOCEAN FAQ
+## Data Farming FAQ
 
-### Guides
+### Networks
+
+<details>
+
+<summary>Which networks does Data Farming operate on?</summary>
+
+OCEAN rewards for all DF streams & substreams are on Ethereum mainnet. One exception: rewards for Predictoor DF are on Oasis Sapphire.
+
+Here are the networks for each DF stream & substream:
+- Passive DF: users lock OCEAN for veOCEAN on Ethereum mainnet
+- Volume DF: users can allocate veOCEAN to data assets on Etherum mainnet, Polygon, BSC, Moonriver, Energy Web Chain, or Sapphire.
+- Challenge DF: users submit predictions on Mumbai (Polygon testnet).
+- Predictoor DF: users submit predictions on Sapphire. 
+
+The [networks docs](../discover/networks/README.md) have more info about networks.
+
+</details>
+
+
+### veOCEAN and staking
+
 <details>
 
 <summary>I'm new to Ocean and I want to stake my OCEAN. Can you show me how? Where can I learn about APY and locks?</summary>
@@ -21,48 +41,28 @@ We cannot offer guidance as how to allocate your voting power, that's your decis
   
 </details>
 
-### Basics
 <details>
 
 <summary>Are veOCEAN tradeable or have a market price?</summary>
 
-No. They cannot be traded, transferred, or sold. ⁣
-⁣
-You can delegate veOCEAN to others in order to facilitate farming, however, you need to understand how this works. ⁣To learn more [please read the docs](user-guides/how-to-delegate.md). ⁣
+OCEAN has a market price; it's [available](https://www.oceanprotocol.com/ocean-token) on many exchanges.
+
+Once you lock OCEAN, you get veOCEAN then it has more constraints. veOCEAN cannot be traded or transferred. However, you can [delegate](delegate.md) veOCEAN to others, such that they control allocation to data assets and receive rewards.
+
+There's also the [psdnOCEAN](https://www.coingecko.com/en/coins/poseidon-ocean) option. psdnOCEAN is an ERC20-compliant "liquid staking derivative" [contract](https://etherscan.io/token/0x51fa2efd62ee56a493f24ae963eace7d0051929e) that in turn holds veOCEAN. psdnOCEAN is a product by [H2O](https://www.h2odata.xyz//), a team separate from - though collaborating with - the Ocean core team.
+- You can lock OCEAN for psdnOCEAN via [the H2O "convert" dapp](https://liquid-staking.h2odata.xyz/convert/ocean).
+- psdnOCEAN can be traded in exchanges like the [OCEAN-psdnOCEAN Balancer pool](https://app.balancer.fi/#/ethereum/swap?outputCurrency=0x51Fa2efd62ee56a493f24AE963eAce7D0051929E). ⚠️Be careful - if liquidity is low you will experience high slippage.
 </details>
 
 <details>
 
-<summary>Which chain is veOCEAN be deployed on?</summary>
+<summary>Which chain is veOCEAN deployed on?</summary>
 
 [veOCEAN & DF](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) core contracts are deployed on Ethereum mainnet.
 
 </details>
 
-<details>
-
-<summary>Which networks are eligible for Data Farming?</summary>
-
-You participate by default in Passive Rewards when you lock OCEAN on Ethereum Mainnet.
-
-Data assets for Volume DF may be published in any network where Ocean’s deployed in production: Eth Mainnet, Polygon, BSC, and more.
-
-You can find a list of [all supported chains here](../discover/networks/README.md).
-
-</details>
-
-### Staking
-
-<details>
-
-<summary>What is veOCEAN and staking in context of Ocean Protocol? </summary>
-
-[veOCEAN](df-veocean.md) (vote-escrowed OCEAN) is a special token in the Ocean Protocol ecosystem. Users can obtain veOCEAN by Locking their OCEAN for a specific period of time. Their OCEAN cannot be accessed during this time as a sign of conviction that lets them engage with the network. Longer lock periods for veOCEAN typically yield higher rewards.
-You can lock your OCEAN at - [df.oceandao.org](https://df.oceandao.org)
-
-</details>
-
-<details>
+### veOCEAN and Staking
 
 <summary>How much Ocean do I need to stake to earn interest?</summary>
 
