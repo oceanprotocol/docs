@@ -34,7 +34,7 @@ If you lock for 4 years, and everyone else locks for 2, then multiply expected A
 
 All the plots are calculated from [this Google Sheet](https://docs.google.com/spreadsheets/d/1F4o7PbV45yW1aPWOJ2rwZEKkgJXbIk5Yq7tj8749drc/edit#gid=1051477754).
 
-⚠️ The model was last updated on DF week 29, and is therefore somehwat out of date. At the time, Volume DF was the only sub-stream of Active DF, and therefore Volume DF got all the Active DF budget. In practice one would need to account for Challenge DF and Predictoor DF. (However this gets more complex because Predictoor DF is highly dependent on prediction accuracy).
+> ⚠️ The model was last updated on DF week 29, and is therefore somehwat out of date. At the time, Volume DF was the only sub-stream of Active DF, and therefore Volume DF got all the Active DF budget. In practice one would need to account for Challenge DF and Predictoor DF. (However this gets more complex because Predictoor DF is highly dependent on prediction accuracy).
 
 
 ----
