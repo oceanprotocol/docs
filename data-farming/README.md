@@ -6,23 +6,15 @@ coverY: 0
 
 # What is Data Farming?
 
-**Data Farming (DF) is Ocean's incentive program.** It rewards OCEAN to participants who lock OCEAN into veOCEAN, curate data, and make predictions -- all in the name of driving **data consume volume** (DCV). DF is a bit like DeFi liquidity mining, but tuned for DCV.
-
-## DF Webapp
+**Data Farming (DF) is Ocean's incentive program.** It rewards OCEAN to participants who lock OCEAN into veOCEAN, curate data, or make predictions -- all in the name of driving **data consume volume** (DCV). DF is a bit like DeFi liquidity mining, but tuned for DCV.
 
 **[The DF webapp](https://df.oceandao.org)** is where users perform most DF actions.
 
-## Reward Schedule
-
-There is 150,000 OCEAN / week available for DF rewards. In time, this will increase to over 1.1M OCEAN / week.
-
-**[Here is the Reward Schedule](ocean-reward-schedule.md)**. 
+There is currently 150,000 OCEAN / week available for DF rewards. 
 
 ## DF Streams & Budgets
 
-DF is organized into streams & substreams, each with its own weekly budget and user activities.
-
-**DF's main streams are Passive DF and Active DF.** The former allows for passive earning potential, and the latter requires more engagement. Each has 50% of the DF budget.
+DF is organized into two streams: Passive DF and Active DF. Each has 50% of the DF budget. Passive DF allows for passive earning potential. Active DF requires more engagement; it has several substreams, each with its own activity.
 
 Here are all streams & substreams. The links lead to dedicated pages.
 
@@ -36,9 +28,14 @@ All streams and substreams repeat **weekly** that start on Thursdays 00:00 at UT
 
 **[Claiming rewards](claim-rewards.md)** You can claim rewards** each Thursday, or wait and claim many weeks' of rewards at once.
 
-**[Yields](apys.md)** Typical reward APYs are 5–20%, but may be as high as 45% and as low as 1%. APYs will vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
-
 Active DF's substreams can -- and do -- evolve over time. It's chronicled [here](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45).
+
+
+## Reward Schedule & APYs
+
+**[Reward Schedule](ocean-reward-schedule.md)**. The 150,000 OCEAN / week currently available for DF rewards will increase over time to over 1.1M OCEAN / week.
+
+**[Yields](apys.md)**. Typical APYs are 5–20%, but may be as high as 45% and as low as 1%. APYs will vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
 
 ### Further resources
 
