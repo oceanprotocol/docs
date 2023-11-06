@@ -15,7 +15,7 @@ Private data holds immense value as it can significantly enhance research and bu
 Private data has the potential to drive groundbreaking discoveries in science and technology, with increased data improving the predictive accuracy of modern AI models. Due to its scarcity and the challenges associated with accessing it, private data is often regarded as the most valuable. By utilizing private data through Compute-to-Data, significant rewards can be reaped, leading to transformative advancements and innovative breakthroughs.
 
 {% hint style="info" %}
-The Ocean Protocol provides a compute environment that you can access at the following address: [https://stagev4.c2d.oceanprotocol.com/](https://stagev4.c2d.oceanprotocol.com/). Feel free to explore and utilize this platform for your needs.
+The Ocean Protocol provides a compute environment that you can access at the following [address](https://stagev4.c2d.oceanprotocol.com/). Feel free to explore and utilize this platform for your needs.
 {% endhint %}
 
 We suggest reading these guides to get an understanding of how compute-to-data works:
