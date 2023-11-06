@@ -30,12 +30,23 @@ All streams and substreams repeat **weekly** that start on Thursdays 00:00 at UT
 
 Active DF's substreams can -- and do -- evolve over time. It's chronicled [here](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45).
 
-
 ## Reward Schedule & APYs
 
 **[Reward Schedule](ocean-reward-schedule.md)**. The 150,000 OCEAN / week currently available for DF rewards will increase over time to over 1.1M OCEAN / week.
 
-**[Yields](apys.md)**. Typical APYs are 5–20%, but may be as high as 45% and as low as 1%. APYs will vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
+**[Yields](apys.md)**. Historically, APYs are 5-15%. APYs vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
+
+## Networks
+
+OCEAN rewards for all DF streams & substreams are on Ethereum mainnet. One exception: rewards for Predictoor DF are on Oasis Sapphire.
+
+Users engage in different networks, depending on the DF stream:
+- Passive DF: veOCEAN is deployed on Ethereum mainet. Users lock OCEAN for veOCEAN on Ethereum mainnet
+- Volume DF: users can allocate veOCEAN to data assets on Etherum mainnet, Polygon, BSC, Moonriver, Energy Web Chain, or Sapphire.
+- Challenge DF: users submit predictions on Mumbai (Polygon testnet).
+- Predictoor DF: users submit predictions on Sapphire. 
+
+The [networks docs](../discover/networks/README.md) have more info about networks.
 
 ## Further resources
 

@@ -11,6 +11,7 @@ description: >-
 
 - [About veOCEAN and Passive DF](#about-veocean-and-passive-df)
 - [User Guide to veOCEAN and Passive DF](#user-guide-to-veocean-and-passive-df)
+- [veOCEAN and Liquid Staking](#veocean-and-liquid-staking)
 
 # About veOCEAN and Passive DF
 
@@ -104,29 +105,17 @@ The veOCEAN design is in accordance with the Web3 Sustainability Loop, which Oce
 
 The veOCEAN code was forked from the veCRV code. veCRV parameters will be the starting point. To minimize risk, tweaks will be circumspect.
 
-### Tradeability of veOCEAN; Relation to psdnOCEAN
+### Background of veOCEAN Idea
 
-Q: Are veOCEAN tradeable or have a market price?
+It's been a long-held goal to reconcile near-term and long-term incentives. This is not an easy task.
 
-OCEAN has a market price; it's [available](https://www.oceanprotocol.com/ocean-token) on many exchanges.
+Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) was one of the first to do a great job at this, and have high usage and liquidity. So, [veOCEAN contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) use veCRV code.
 
-Once you lock OCEAN, you get veOCEAN. Unlike OCEAN, veOCEAN cannot be traded or transferred. However, you can [delegate](delegate.md) veOCEAN to others, who then controls allocation to data assets and receives rewards.
+### veOCEAN Contract Security
 
-There's also the [psdnOCEAN](https://www.coingecko.com/en/coins/poseidon-ocean) option. psdnOCEAN is an ERC20-compliant "liquid staking derivative" [contract](https://etherscan.io/token/0x51fa2efd62ee56a493f24ae963eace7d0051929e) that in turn holds veOCEAN. psdnOCEAN is a product by [H2O](https://www.h2odata.xyz//), a team separate from - though collaborating with - the Ocean core team.
-- You can lock OCEAN for psdnOCEAN via [the H2O "convert" dapp](https://liquid-staking.h2odata.xyz/convert/ocean).
-- psdnOCEAN can be traded in exchanges like the [OCEAN-psdnOCEAN Balancer pool](https://app.balancer.fi/#/ethereum/swap?outputCurrency=0x51Fa2efd62ee56a493f24AE963eAce7D0051929E). ⚠️Be careful - if liquidity is low you will experience high slippage.
+veOCEAN core contracts have zero changes to veCRV code, on purpose: the veCRV contracts have been battle-tested since inception (2020). Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. veCRV contracts [have been audited by Trail of Bits and Quantstamp](https://github.com/curvefi/curve-dao-contracts#audits-and-security).
 
-### Where the heck did we get this idea from?
-
-The "veTokenomics" model of veOCEAN (vote-escrowed token economics) is inspired by Curve Finance's [veCRV](https://curve.readthedocs.io/dao-fees.html) token code. We took this inspiration to enable our users to participate in on-chain governance and earn rewards within the Ocean Protocol ecosystem.
-
-[Here is Ocean Protocol's open-source code](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veFeeDistributor.vy#L240-L256) for veOCEAN, and if you're a developer, then you'll notice the strong similarities to [veCRV's](https://curve.readthedocs.io/dao-fees.html) code.
-
-### veOCEAN Smart Contracts Security
-
-[veOCEAN core contracts](https://github.com/oceanprotocol/contracts/tree/main/contracts/ve) use [veCRV contracts](https://curve.readthedocs.io/dao-vecrv.html) with zero changes, on purpose: the veCRV contracts have been battle-tested since inception and have not had security issues. Nearly 500 million USD is locked across all forks of veCRV, with the leading DeFi protocols adopting this standard. veCRV contracts [have been audited by Trail of Bits and Quantstamp](https://github.com/curvefi/curve-dao-contracts#audits-and-security).
-
-We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to point their veOCEAN towards given data assets (“allocate veOCEAN”). These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
+We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to allocate their veOCEAN towards data assets. These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
 
 We have an [ongoing bug bounty via Immunefi](https://immunefi.com/bounty/oceanprotocol/) for Ocean software, including veOCEAN and DF components. If you identify an issue, please report it there and get rewarded.
 
@@ -178,3 +167,43 @@ In this step you will:
 - Accept the transaction in your wallet.
 
 Congratulations! You have now locked your OCEAN for veOCEAN and are generating passive yield automatically. You can [claim your passive OCEAN rewards](how-to-claim-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
+
+
+----
+
+# veOCEAN and Liquid Staking
+
+### veOCEAN is not Tradeable
+
+Once you lock OCEAN, you get veOCEAN.
+
+Unlike OCEAN, veOCEAN cannot be traded or transferred.
+
+However, you can [delegate](delegate.md) veOCEAN to others, who then controls allocation to data assets and receives rewards.
+
+psdnOCEAN offers interesting optionality; see next section.
+
+### psdnOCEAN Liquid Staking
+
+While you can't trade veOCEAN, you can trade psdnOCEAN.
+
+Specifically, psdnOCEAN is a "liquid staking wrapper" for veOCEAN:
+- It holds veOCEAN
+- And it allows transfers (using ERC20 interface)
+
+Converting OCEAN <> psdnOCEAN:
+- You can lock OCEAN for psdnOCEAN via [the H2O "convert" dapp](https://liquid-staking.h2odata.xyz/convert/ocean).
+- psdnOCEAN can be traded in exchanges. The main option is the [OCEAN-psdnOCEAN Balancer pool](https://app.balancer.fi/#/ethereum/swap?outputCurrency=0x51Fa2efd62ee56a493f24AE963eAce7D0051929E). [Here are pool details.](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e). ⚠️Be careful - if liquidity is low you will experience high slippage.
+
+Rewards to psdnOCEAN holders:
+- Since psdnOCEAN holds veOCEAN, then Passive DF rewards go to that psdnOCEAN-held veOCEAN according to the usual Passive DF rules.
+- Over time, psdnOCEAN may also get rewards from other DF streams or protocols too.
+
+Details:
+- psdnOCEAN is a product by [H2O](https://www.h2odata.xyz//), a team separate from - and collaborating with - the Ocean core team.
+- [Here's](https://blog.oceanprotocol.com/psdnocean-the-first-liquid-staking-wrapper-by-the-h2o-team-is-now-live-a3330e15fa5c) the original psdnOCEAN announcement.
+- psdnOCEAN on...
+  - [Etherscan](https://etherscan.io/token/0x51fa2efd62ee56a493f24ae963eace7d0051929e)
+  - [CoinGecko](https://www.coingecko.com/en/coins/poseidon-ocean)
+  - [GeckoTerminal](https://www.geckoterminal.com/eth/pools/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b)
+
