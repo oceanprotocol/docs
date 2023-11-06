@@ -3,15 +3,15 @@ description: >-
   Earn passively by locking veOCEAN for OCEAN
 ---
 
-# veOCEAN and Passive Data Farming
+# Passive Data Farming (and veOCEAN)
 
 <figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>I've got veOCEAN, my work is done.</p></figcaption></figure>
 
-**Contents:**
+**This page** is about Passive DF, and veOCEAN.
 
-- [About veOCEAN and Passive DF](#about-veocean-and-passive-df)
-- [User Guide to veOCEAN and Passive DF](#user-guide-to-veocean-and-passive-df)
-- [veOCEAN and Liquid Staking](#veocean-and-liquid-staking)
+Follow-up pages on Passive DF:
+- [Passive DF User Guide](passivedf-guide.md)
+- [Liquid Staking](liquid-staking.md)
 
 # About veOCEAN and Passive DF
 
@@ -118,92 +118,4 @@ veOCEAN core contracts have zero changes to veCRV code, on purpose: the veCRV co
 We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/ve/veAllocate.sol) for users to allocate their veOCEAN towards data assets. These new contracts do not control the veOCEAN core contracts at all. In the event of a breach, the only funds at risk would be the rewards distributed for a single week; and we would be able to redirect future funds to a different contract.
 
 We have an [ongoing bug bounty via Immunefi](https://immunefi.com/bounty/oceanprotocol/) for Ocean software, including veOCEAN and DF components. If you identify an issue, please report it there and get rewarded.
-
-----
-
-# User Guide to veOCEAN and Passive DF
-
-<figure><img src="../../.gitbook/assets/gif/aquaman-gold.gif" alt="" width="250"><figcaption><p>Get your gold. Get your veOCEAN.</p></figcaption></figure>
-
-In order to **get yield in DF**, you will need to lock your OCEAN first! When you lock your OCEAN, you get **veOCEAN** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **Volume DF rewards**, for allocating your veOCEAN to your favorite assets and get a portion of their sales!
-
-### Don't have OCEAN yet? Get those first!
-
-#### Step 1 - Get OCEAN
-
-- Acquire OCEAN via a decentralized exchange (DEX) such as Uniswap or a centralized exchange (CEX) such as Binance, Coinbase, etc.
-
-#### Step 2 - Send to your self-custody wallet
-
-- Send your OCEAN to a self-custody wallet of yours that supports ERC-20 tokens, like Metamask for example.
-
-### Where the rubber meets the road 🚗💨
-
-Not much of a reader? Watch and learn, friend
-
-{% embed url="https://www.youtube.com/watch?v=zAQlPHkK3og" fullWidth="false" %}
-Watch and learn, friend
-{% endembed %}
-
-#### Step 3 - Go to Ocean Protocol's Data Farming dApp
-
-- Go to [https://df.oceandao.org/](https://df.oceandao.org/)
-
-#### Step 4 - Connect Your Wallet + Lock your OCEAN for veOCEAN
-
-- Click on the purple circles in the interactive demo to walk through the steps for locking your OCEAN for veOCEAN.
-
-{% embed url="https://app.arcade.software/share/FUSkygksSRsJHwle1zFs" fullWidth="false" %}
-{% endembed %}
-
-In this step you will:
-
-- Enter the amount of OCEAN that you are going to lock up
-- Select a Lock End Date indicating how many weeks you’re going to lock up your OCEAN. (As the Lock End Date goes farther into the future, your Lock Multiplier increases).
-- Click on the checkbox to agree to the disclaimer.
-- Click the pink “Approve # OCEAN” button
-- Accept the transaction in your wallet.
-- Click the “Create Lock” button.
-- Accept the transaction in your wallet.
-
-Congratulations! You have now locked your OCEAN for veOCEAN and are generating passive yield automatically. You can [claim your passive OCEAN rewards](how-to-claim-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
-
-
-----
-
-# veOCEAN and Liquid Staking
-
-### veOCEAN is not Tradeable
-
-Once you lock OCEAN, you get veOCEAN.
-
-Unlike OCEAN, veOCEAN cannot be traded or transferred.
-
-However, you can [delegate](delegate.md) veOCEAN to others, who then controls allocation to data assets and receives rewards.
-
-psdnOCEAN offers interesting optionality; see next section.
-
-### psdnOCEAN Liquid Staking
-
-While you can't trade veOCEAN, you can trade psdnOCEAN.
-
-Specifically, psdnOCEAN is a "liquid staking wrapper" for veOCEAN:
-- It holds veOCEAN
-- And it allows transfers (using ERC20 interface)
-
-Converting OCEAN <> psdnOCEAN:
-- You can lock OCEAN for psdnOCEAN via [the H2O "convert" dapp](https://liquid-staking.h2odata.xyz/convert/ocean).
-- psdnOCEAN can be traded in exchanges. The main option is the [OCEAN-psdnOCEAN Balancer pool](https://app.balancer.fi/#/ethereum/swap?outputCurrency=0x51Fa2efd62ee56a493f24AE963eAce7D0051929E). [Here are pool details.](https://app.balancer.fi/#/ethereum/pool/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b00020000000000000000039e). ⚠️Be careful - if liquidity is low you will experience high slippage.
-
-Rewards to psdnOCEAN holders:
-- Since psdnOCEAN holds veOCEAN, then Passive DF rewards go to that psdnOCEAN-held veOCEAN according to the usual Passive DF rules.
-- Over time, psdnOCEAN may also get rewards from other DF streams or protocols too.
-
-Details:
-- psdnOCEAN is a product by [H2O](https://www.h2odata.xyz//), a team separate from - and collaborating with - the Ocean core team.
-- [Here's](https://blog.oceanprotocol.com/psdnocean-the-first-liquid-staking-wrapper-by-the-h2o-team-is-now-live-a3330e15fa5c) the original psdnOCEAN announcement.
-- psdnOCEAN on...
-  - [Etherscan](https://etherscan.io/token/0x51fa2efd62ee56a493f24ae963eace7d0051929e)
-  - [CoinGecko](https://www.coingecko.com/en/coins/poseidon-ocean)
-  - [GeckoTerminal](https://www.geckoterminal.com/eth/pools/0xf8c4cd95c7496cb7c8d97202cf7e5b8da2204c2b)
 
