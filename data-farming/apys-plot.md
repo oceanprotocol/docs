@@ -1,7 +1,9 @@
 ---
 description: >-
-  Estimated APY vs time
+  Modeling APYs
 ---
+
+<figure><img src="../.gitbook/assets/gif/my-mood-plot.gif" alt=""><figcaption><p></p></figcaption></figure>
 
 # Estimated APY vs Time
 

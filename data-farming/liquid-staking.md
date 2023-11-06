@@ -2,20 +2,22 @@
 description: 
 ---
 
+<figure><img src="../.gitbook/assets/gif/love-ice-melting.gif" alt=""><figcaption><p></p></figcaption></figure>
+
 
 # Liquid Staking
 
 This page is about liquid staking of veOCEAN using psdnOCEAN.
 
-### veOCEAN Limitation: not Tradeable
+### Background & Motivation
 
 Once you lock OCEAN, you get veOCEAN.
 
-Unlike OCEAN, veOCEAN cannot be traded or transferred. This is by design, to reconcile near-term and long-term incentives.
+Unlike OCEAN, veOCEAN cannot be traded or transferred. This is by design, to reconcile near-term and long-term incentives. Commit to holding OCEAN longer, and you earn more in the near term.
 
-Interestingly, there is a way to get the best of both: locked OCEAN yet tradeability. The idea is "liquid staking".
+But what if there _was_ a way to have lots of locked OCEAN, yet get tradeability? That's the idea of "liquid staking". In many ways, it's the best of both worlds.
 
-### psdnOCEAN Liquid Staking
+### Liquid Staking in Ocean
 
 **psdnOCEAN is a "liquid staking wrapper" for veOCEAN:**
 - It holds veOCEAN
