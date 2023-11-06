@@ -2,7 +2,7 @@
 description: 
 ---
 
-<figure><img src="../.gitbook/assets/gif/love-ice-melting.gif" alt=""><figcaption><p></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/love-ice-melting.gif" width=25% alt=""><figcaption><p></p></figcaption></figure>
 
 
 # Liquid Staking
