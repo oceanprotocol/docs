@@ -1,0 +1,39 @@
+---
+description: >-
+  From emissions, estimate APYs
+---
+
+# APYs
+
+<figure><img src="../.gitbook/assets/gif/many-penguins.gif" alt=""><figcaption><p>Multiply, and multiply again. And again.</p></figcaption></figure>
+
+**Contents:**
+
+**This page** is about APYs. There's also [estimates of APY vs time](apys-plot.md) and [a guide to estimating APYs](apys-guide.md).
+
+# About APYs
+
+### Source of Rewards
+
+Rewards are earned by users that participate in one or more Data Farming streams. Passive DF allows passive holding of veOCEAN; Active DF streams require more work from the user.
+
+Historically, annual percentage yields (APYs) are 5-15%. See for yourself: in [DF app](https://df.oceandao.org/activerewards) and scroll down to "Data Farming History".
+
+You can do your own APY estimations. In Passive DF, APY is highly dependent on the locked amount *and* duration of lock. In other DF streams, there are other factors.
+
+### Definition of Yield, WPY, APY
+
+A **yield** is the relative gain in value compared to the amount you started with. Specifically:
+
+`yield = (start amount + gained amount) / (start amount) - 1.0`
+
+For example, if you start with 1000 OCEAN and earn 5 OCEAN:
+
+`yield = (1000 + 5) / (1000) - 1.0 = 0.005`
+
+We can express yield as a percentage simply by multiplying by 100 (%). For example, yield of `0.005` in percentage is `0.005 * 100% = 0.5%`.
+
+The yield for one week is **Weekly Percentage Yield**, or **WPY**. For example, if you started with 1000 OCEAN and earned 5 OCEAN from DF, in one week, then your WPY = 0.005 = 0.5%.
+
+The yield for one year is **Annual Percentage Yield**, or **APY**. APY can be estimated from WPYs. Assuming no compounding, `APY = WPY*52`. We drill deeper below.
+

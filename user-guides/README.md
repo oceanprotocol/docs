@@ -38,8 +38,8 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 
 Earn rewards by locking OCEAN, curating data assets, and more.
 
-{% content-ref url="../data-farming/user-guides/README.md" %}
-[../data-farming/user-guides/README.md](../data-farming/user-guides/README.md)
+{% content-ref url="../data-farming/README.md" %}
+[../data-farming/README.md](../data-farming/README.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺
