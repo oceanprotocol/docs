@@ -7,11 +7,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/avatar-plugin.gif" alt=""><figcaption><p>Make your selection and commit. Good things will come.</p></figcaption></figure>
 
-**This page** is about Volume DF.
-
-Follow-up pages on Volume DF:
-- [Guide to Volume DF](volumedf-guide.md)
-- [Guide to Delegation](delegate.md)
+**This page** is about Volume DF. There's also a [user guide page](volumedf-guide.md) and a [page for delegation](delegate.md).
 
 # About Volume DF
 
@@ -20,8 +16,6 @@ We've already covered [Passive DF](passivedf.md), which is a great start to earn
 _Volume_ DF lets you can earn more yet, with that same veOCEAN.
 
 In Volume DF, you allocate veOCEAN to data assets with high data consume volume (DCV). This acts as _data curation_.
-
-You can delegate your veOCEAN to other wallets. This is helpful when you want a bot to automatically update your veOCEAN allocations (from a "hot" wallet) while keeping your locked OCEAN secure in a hardware wallet. There are other use cases too. There's more info [below](#user-guide-to-delegation).
 
 ### How to Maximize Volume DF rewards
 
@@ -43,7 +37,7 @@ Here are tactics:
 
 You can delegate your veOCEAN from one wallet to another. This is handy if you have a hardware wallet holding veOCEAN, and you want a "hot" software wallet to automatically re-allocate more often. There are other uses too. 
 
-[Here's how to delegate](user-guides/how-to-delegate.md).
+[Here's how to delegate](delegate.md).
 
 ### Assets that Qualify for Volume DF
 
@@ -60,16 +54,18 @@ To qualify for DF, an asset must also:
 
 ### How Rewards are Calculated
 
-The Reward Function (RF) governs how active rewards are allocated to Data Farmers.
+The Reward Function (RF) governs how Volume DF rewards are allocated.
 
-**Rewards are calculated as follows:**
+_Rewards are calculated as follows:_
 
 1. Distribute OCEAN across each asset **based on rank**: highest-DCV asset gets the most OCEAN, second-highest-DCV gets second-most, etc. [Here are details](https://blog.oceanprotocol.com/data-farming-df22-completed-df23-started-reward-function-tuned-ffd4359657ee).
 1. For each asset and each veOCEAN holder:
    1. If the holder is a publisher, 2x the effective allocation
    1. Baseline rewards = (% allocation in asset) \* (OCEAN for an asset)
    1. Bound rewards to the asset by 125% APY
-   1. Bound rewards by asset’s DCV \* 0.1%.
+   1. Bound rewards by asset’s `DCV` \* `DCV_multiplier`.
+
+Step 2.4 is to prevent wash consume. `DCV_multiplier` is a function of fees, with a value of 0.201 for Predictoor feeds, and 0.001 for other data assets.
 
 The actual code is in [calcrewards.py](https://github.com/oceanprotocol/df-py/blob/main/df_py/volume/calc_rewards.py) in df-py repo.
 

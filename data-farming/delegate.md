@@ -7,15 +7,19 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/gif/underwater-buddy-peewee.gif" alt=""><figcaption></figcaption></figure>
 
-## Why Delegate?
+## About Delegation
 
 Delegation is a tool for Volume DF.
+
+**[Here's the delegation page](https://df.oceandao.org/delegate) in the DF webapp.**
+
+## Why Delegate?
 
 Consider these challenges:
 - Your veOCEAN is on a hardware wallet and you want a "hot" software wallet to auto-delegate based on data consume volume, to increase APY
 - You have >1 wallets and it's a pain to switch among them for delegating
 
-[Delegation](https://df.oceandao.org/delegate) solves that. "To delegate" means "to transfer veOCEAN Allocation Power to another wallet address" for a limited period.
+Delegation solves that. "To delegate" means "to transfer veOCEAN Allocation Power to another wallet address" for a limited period.
 
 When you delegate, you delegate 100% of your veOCEAN Allocation power.
 

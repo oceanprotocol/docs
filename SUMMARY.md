@@ -127,6 +127,8 @@
   * [Claim Rewards](data-farming/claim-rewards.md)
   * [Reward Schedule](data-farming/reward-schedule.md)
   * [APYs](data-farming/apys.md)
+    * [Estimated APY vs Time](data-farming/apys-plot.md)
+    * [Guide to Estimating APY](data-farming/apys-guide.md)
   * [FAQ](data-farming/faq.md)
 * [🔨 Infrastructure](infrastructure/README.md)
   * [Set Up a Server](infrastructure/setup-server.md)

@@ -111,7 +111,7 @@ Also, remember that you don't need to claim rewards and re-stake every week. You
 
 <summary>Where do I learn more about the OCEAN reward schedule?</summary>
 
-In its [docs page](ocean-reward-schedule.md).
+In its [docs page](reward-schedule.md).
 </details>
 
 

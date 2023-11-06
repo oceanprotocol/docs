@@ -7,11 +7,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/aquaman-fade.gif" alt=""><figcaption><p>I've got veOCEAN, my work is done.</p></figcaption></figure>
 
-**This page** is about Passive DF, and veOCEAN.
-
-Follow-up pages on Passive DF:
-- [Guide to Passive DF](passivedf-guide.md)
-- [Liquid Staking](liquid-staking.md)
+**This page** is about Passive DF, and veOCEAN. There's also a [user guide page](passivedf-guide.md), and a [page for liquid staking](liquid-staking.md)
 
 # About veOCEAN and Passive DF
 

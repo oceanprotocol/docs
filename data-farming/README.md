@@ -32,7 +32,7 @@ Active DF's substreams can -- and do -- evolve over time. It's chronicled [here]
 
 ## Reward Schedule & APYs
 
-**[Reward Schedule](ocean-reward-schedule.md)**. The 150,000 OCEAN / week currently available for DF rewards will increase over time to over 1.1M OCEAN / week.
+**[Reward Schedule](reward-schedule.md)**. The 150,000 OCEAN / week currently available for DF rewards will increase over time to over 1.1M OCEAN / week.
 
 **[Yields](apys.md)**. Historically, APYs are 5-15%. APYs vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
 

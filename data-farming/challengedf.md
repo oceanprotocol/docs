@@ -34,8 +34,6 @@ Prize Pool: 1,000 OCEAN (as of Nov 2, 2022)
 - The rewards are divided into specific amounts for the top three positions.
 - The individuals who submit the top three entries will receive rewards, and their wallet addresses will be showcased within the Data Farming dapp.
 
-For the full details on how to submit, please read the [Where to start](#where-to-start) section.
-
 ### What do I gain from this?
 
 - Earn OCEAN rewards, [claimable inside the app](https://df.oceandao.org/rewards)
