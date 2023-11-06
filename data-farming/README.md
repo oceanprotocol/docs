@@ -18,7 +18,7 @@ DF is organized into two streams: Passive DF and Active DF. Each has 50% of the 
 
 Here are all streams & substreams. The links lead to dedicated pages.
 
-1. **[Passive DF](veocean-passivedf.md).** 75,000 OCEAN per week. Lock OCEAN for **veOCEAN**; rewards are pro-rata to veOCEAN holdings.
+1. **[Passive DF](passivedf.md).** 75,000 OCEAN per week. Lock OCEAN for **veOCEAN**; rewards are pro-rata to veOCEAN holdings.
 1. **Active DF.** 75,000 OCEAN per week. It has these substreams:
    1. **[Volume DF](volumedf.md).** Allocate veOCEAN towards data assets with high DCV, ie "curate data". Rewards are a function of DCV and veOCEAN stake.
    1. **[Challenge DF](challengedf.md).** Predict future ETH price, one-time weekly. Rewards are a function of accuracy. Runs from DF48 — DF65.

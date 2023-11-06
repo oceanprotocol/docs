@@ -1,4 +1,9 @@
-# User Guide to veOCEAN and Passive DF
+---
+description: >-
+  Get veOCEAN to use the Data Farming dApp and make yield!
+---
+
+# Guide to Passive DF
 
 <figure><img src="../../.gitbook/assets/gif/aquaman-gold.gif" alt="" width="250"><figcaption><p>Get your gold. Get your veOCEAN.</p></figcaption></figure>
 

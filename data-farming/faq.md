@@ -115,7 +115,7 @@ In its [docs page](ocean-reward-schedule.md).
 </details>
 
 
-### veOCEAN & Passive DF
+### Passive DF (and veOCEAN)
 
 <details>
 
@@ -176,7 +176,7 @@ But to maximize your rewards, you will also need to engage in the other streams.
 
 <summary>Where do I learn more about veOCEAN & Passive DF?</summary>
 
-In its [docs page](veocean-passivedf.md).
+In its [docs page](passivedf.md).
 </details>
 
 

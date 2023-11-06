@@ -10,7 +10,7 @@ description: >-
 **This page** is about Passive DF, and veOCEAN.
 
 Follow-up pages on Passive DF:
-- [Passive DF User Guide](passivedf-guide.md)
+- [Guide to Passive DF](passivedf-guide.md)
 - [Liquid Staking](liquid-staking.md)
 
 # About veOCEAN and Passive DF
