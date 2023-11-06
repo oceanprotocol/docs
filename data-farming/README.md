@@ -37,7 +37,7 @@ Active DF's substreams can -- and do -- evolve over time. It's chronicled [here]
 
 **[Yields](apys.md)**. Typical APYs are 5–20%, but may be as high as 45% and as low as 1%. APYs will vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
 
-### Further resources
+## Further resources
 
 - The [DF FAQ](faq.md) answers more questions.
 - Main DF github repos: [df-py (backend)](https://github.com/oceanprotocol/df-py), [df-web (frontend)](https://github.com/oceanprotocol/df-web)
