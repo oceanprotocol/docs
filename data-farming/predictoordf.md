@@ -1,11 +1,7 @@
 ---
 description: >-
   Run prediction bots to earn continuously.
-cover: ../.gitbook/assets/data-farming/predictoordf_main.png
-coverY: 0
 ---
-
-# Predictoor Data Farming
 
 <figure><img src="../.gitbook/assets/data-farming/predictoordf_main.png" alt=""></figure>
 
