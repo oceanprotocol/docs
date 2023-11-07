@@ -17,7 +17,9 @@ Therefore, you simply need to become a predictoor! See [Predictoor docs](../pred
 
 Claiming comes in two parts: OCEAN and ROSE.
 
-1. For OCEAN rewards: recall that these act as more sales coming to you (as a predictoor). So you claim your OCEAN from sales in the usual way, by running the [OCEAN payout script](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md).
+1. **For OCEAN rewards:** recall that these act as more sales coming to you (as a predictoor). So you claim your OCEAN from sales in the usual way, by running the [OCEAN payout script](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md).
 
-2. For ROSE rewards: run the ROSE payout script, linked from [here](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md).
+2. **For ROSE rewards:** run the ROSE payout script, linked from [here](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md).
+
+NOTE: this may be updated before Predictoor DF launch.
 
