@@ -7,11 +7,13 @@ description: >-
 
 # Guide to Estimating APYs
 
-This page provides guidance to estimate APYs.
+Recall that APY is Annual Percentage Yield, and WPY is Weekly Percentage Yield.
+
+**This page provides guidance to estimate APYs.**
 
 ### Estimating APY from WPYs
 
-Here are a couple ways to estimate APY: _with_ compounding, and without.
+Here are a couple ways to estimate APY from WPYs: _with_ compounding, and without.
 
 **APY with compounding.** 
 - If you were to take OCEAN rewards for given week and immediately put them back into Data Farming, then your rewards will **compound** every week.
