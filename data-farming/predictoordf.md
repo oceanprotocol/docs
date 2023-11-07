@@ -7,7 +7,7 @@ description: >-
 
 **This page** is about Predictoor DF, and [this page](predictoordf-guide.md) is a guide.
 
-# About Predictoor DF
+# Predictoor DF Overview
 
 **Predictoor DF** is a substream of Active DF that amplifies predictoors’ earnings, via extra sales to Ocean Predictoor data feeds.
 
