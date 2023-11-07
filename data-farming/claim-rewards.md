@@ -6,9 +6,11 @@ description: Unbox your OCEAN rewards
 
 <figure><img src="../../.gitbook/assets/gif/underwater-treasure.gif" alt=""><figcaption></figcaption></figure>
 
-To claim OCEAN rewards, go to [DF Rewards page](https://df.oceandao.org/rewards) and click the "Claim OCEAN rewards" buttons.
+**This page describes how to claim DF rewards.** (Predictoor DF is an exception, [see here](predictoordf-guide.md).)
 
-A detailed guide is below.
+To claim rewards, go to DF webapp's **[Rewards page](https://df.oceandao.org/rewards)** and click "Claim OCEAN rewards" button.
+
+Detailed instructions are below.
 
 ### Step 1 - Navigate to the Data Farming Rewards page
 

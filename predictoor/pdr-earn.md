@@ -13,7 +13,7 @@ Typical steps as a Predictoor:
 The actions as a predictoor give the following ways to earn:  
 * **Feed sales.** At an epoch, sales revenue (minus fees) for that epoch goes to predictoors. It’s distributed pro-rata by stake among the predictoors who predicted the true value correctly. The revenue for an epoch is the fraction of sales, spread uniformly across subscription length. A price of 3 OCEAN, 5m epochs, and 24h (1440m) subscriptions gives a revenue of (# subscribers) * (3 OCEAN) * / (1440m / 5m).
 * **Stake reshuffling.** At an epoch, incorrect predictoors have their stake slashed. This slashed stake is distributed to the correct predictoors pro-rata on their stake.
-* **Predictoor DF.** The third phase of Predictoor rollout will have an incentives program that amounts to additional earning for predictoors. 37,000 OCEAN/week rewards.
+* **Predictoor DF.** This amounts to additional earning for predictoors. 37,000 OCEAN/week rewards. [Here are details.](../data-farming/predictoordf.md)
 Don’t expect to be 100% accurate in your up/down predictions. Marginally better than 50% might be enough, and be skeptical if you’re greatly above 50%, you probably have a bug in your testing.
 
 Every week there’s [150,000 total OCEAN rewards](../data-farming/df-intro.md#reward-schedule) for Ocean Data Farming. This will increase in early 2024, and more yet later.

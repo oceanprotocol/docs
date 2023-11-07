@@ -3,7 +3,7 @@ description: >-
   Modeling APYs
 ---
 
-<figure><img src="../.gitbook/assets/gif/my-mood-plot.gif" width=50% alt=""><figcaption><p></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/making-money-is-fun.gif" alt=""><figcaption><p></p></figcaption></figure>
 
 # Estimated APY vs Time
 
