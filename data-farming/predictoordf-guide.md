@@ -1,8 +1,11 @@
 ---
 description: >-
+  How to earn $ via predictoor DF
 ---
 
 # Guide to Predictoor DF
+
+<figure><img src="../../.gitbook/assets/gif/money-robot.gif" alt=""></figure>
 
 In Predictoor DF (and Predictoor proper), you run prediction bots to earn continuously.
 

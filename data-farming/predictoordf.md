@@ -1,5 +1,6 @@
 ---
 description: >-
+  Baseline sales for predictoors
 ---
 
 <figure><img src="../.gitbook/assets/data-farming/predictoordf_main.png" alt=""></figure>
