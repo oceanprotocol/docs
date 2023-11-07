@@ -33,5 +33,5 @@ We can express yield as a percentage simply by multiplying by 100 (%). For examp
 
 The yield for one week is **Weekly Percentage Yield**, or **WPY**. For example, if you started with 1000 OCEAN and earned 5 OCEAN from DF, in one week, then your WPY = 0.005 = 0.5%.
 
-The yield for one year is **Annual Percentage Yield**, or **APY**. APY can be estimated from WPYs. Assuming no compounding, `APY = WPY*52`. We drill deeper in the [guide to estimate APYs](apys/apys-guide.md).
+The yield for one year is **Annual Percentage Yield**, or **APY**. APY can be estimated from WPYs. Assuming no compounding, `APY = WPY*52`. We drill deeper in the [guide to estimate APYs](apys-guide.md).
 
