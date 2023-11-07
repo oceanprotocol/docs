@@ -21,7 +21,9 @@ The higher baseline sales makes Volume DF and Passive more attractive.
 
 **[Data Farming (DF)](../data-farming/README.md)** is Ocean’s incentive program, that rewards OCEAN to people who lock OCEAN or do active DF activities.
 
-Predictoor Data Farming is a substream of Active DF. It amplifies existing predictoors’ earnings based on their accuracy and stake.
+You should be familiar with both Predictoor and DF before reading on.
+
+**Predictoor Data Farming is a substream of Active DF. It amplifies existing predictoors’ earnings based on their accuracy and stake.**
 
 ## Predictoor DF Timing
 
