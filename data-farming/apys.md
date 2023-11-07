@@ -7,8 +7,6 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/many-penguins.gif" alt=""><figcaption><p>Multiply, and multiply again. And again.</p></figcaption></figure>
 
-**Contents:**
-
 **This page** is about APYs. There's also [estimates of APY vs time](apys-plot.md) and [a guide to estimating APYs](apys-guide.md).
 
 # About APYs
