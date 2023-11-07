@@ -13,7 +13,7 @@ description: >-
 
 **“Trader” agents buy aggregate predictions,** then use them to take action like buying or selling. The more accurate the predictions, the more easily they make \$, the longer they stick around to keep buying prediction feeds from trading profits.
 
-**Predictoor is built on the Ocean Protocol stack**, including contracts for tokenized data and middleware to cache metadata. To keep predictions private unless paid for, Predictoor uses Oasis Sapphire privacy-preserving EVM chain.
+**Predictoor is built on the Ocean Protocol stack**, including contracts for tokenized data and middleware to cache metadata. To keep predictions private unless paid for, Predictoor uses **[Oasis Sapphire](https://oasisprotocol.org/sapphire)** privacy-preserving EVM chain.
 
 **The initial dapp is live at [predictoor.ai](https://predictoor.ai).** It’s for up/down predictions of BTC, ETH, and other tokens’ prices. The dapp helps users build a mental model of Predictoor behavior. Predictoors and traders’ main workflow is to do run predicting / trading bots with the help of the Py SDK. We have seeded Predictoor with bots that have AI/ML models of accuracy comfortably above 50% — a precondition to make \$ trading.
 

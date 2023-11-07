@@ -7,8 +7,6 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/many-penguins.gif" alt=""><figcaption><p>Multiply, and multiply again. And again.</p></figcaption></figure>
 
-**Contents:**
-
 **This page** is about APYs. There's also [estimates of APY vs time](apys-plot.md) and [a guide to estimating APYs](apys-guide.md).
 
 # About APYs
@@ -35,5 +33,5 @@ We can express yield as a percentage simply by multiplying by 100 (%). For examp
 
 The yield for one week is **Weekly Percentage Yield**, or **WPY**. For example, if you started with 1000 OCEAN and earned 5 OCEAN from DF, in one week, then your WPY = 0.005 = 0.5%.
 
-The yield for one year is **Annual Percentage Yield**, or **APY**. APY can be estimated from WPYs. Assuming no compounding, `APY = WPY*52`. We drill deeper below.
+The yield for one year is **Annual Percentage Yield**, or **APY**. APY can be estimated from WPYs. Assuming no compounding, `APY = WPY*52`. We drill deeper in the [guide to estimate APYs](apys-guide.md).
 
