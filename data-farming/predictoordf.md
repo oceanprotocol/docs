@@ -1,6 +1,5 @@
 ---
 description: >-
-  Run prediction bots to earn continuously.
 ---
 
 <figure><img src="../.gitbook/assets/data-farming/predictoordf_main.png" alt=""></figure>

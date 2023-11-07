@@ -1,6 +1,5 @@
 ---
 description: >-
-  Guide to run prediction bots to earn continuously.
 ---
 
 # Guide to Predictoor DF
