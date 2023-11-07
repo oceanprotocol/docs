@@ -27,7 +27,7 @@ Predictoor Data Farming is a substream of Active DF. It amplifies existing predi
 
 Predictoor DF starts counting on Nov 9, 2023, at the beginning of Data Farming Round 62 (DF62). It runs indefinitely.
 
-## Predictoor DF Reward Amounts
+## Predictoor DF Rewards
 
 Predictoor DF has two components: [OCEAN](https://oceanprotocol.com/about-us/ocean-token) rewards and [Oasis ROSE](https://www.coingecko.com/en/coins/oasis-network) rewards.
 
@@ -53,11 +53,11 @@ The [Predictoor DF user guide](predictoordf-guide.md) tells how to get started a
 
 ## How to Earn More $ Via Passive DF & Volume DF
 
-Predictoor DF makes [Active DF](../data-farming/activedf.md) more attractive, and in turn [Passive DF](../data-farming/passivedf.md). Please ensure you're familiar with both before proceeding.
+Predictoor DF makes [Active DF](../data-farming/activedf.md) more attractive, and in turn [Passive DF](../data-farming/passivedf.md). You should be familiar with both before reading on.
 
-**Predictoor DF makes Volume DF more attractive than status quo**, because the volume-based bounds on weekly rewards trends tend to be qualitatively higher for prediction feeds. (The Appendix has details.)
+**Predictoor DF makes Volume DF more attractive than status quo**, because the volume-based bounds on weekly rewards trends tend to be markedly higher for prediction feeds. (The Appendix has details.)
 
-Ocean assets with high DCV are easy to identify: it's the 20 OPF-published prediction feeds. This makes the choice of veOCEAN allocation easy: point to those 20 assets. (Only OPF-published feeds are eligible.)
+**Curating is straightforward.** Ocean assets with high DCV are easy to identify: it's the 20 OPF-published prediction feeds. This makes the choice of veOCEAN allocation easy: point to those 20 assets. (Only OPF-published feeds are eligible.)
 
 **Doing Volume DF gives Passive DF rewards too**, of course.
 
@@ -65,7 +65,7 @@ The net result: Predictoor DF means earnings potential from Predictoor DF, Volum
 
 ## Appendix: On DCV Bounds of Prediction Feeds
 
-Predictoor DF makes Volume DF more attractive than status quo. Active DF's rewards are bounded by `DCV_bound` which in turn is bound by sales volume and fees. In Predictoor DF, both those factors are raised, which raises the bounding in Volume DF. Let's elaborate.
+**Predictoor DF makes Volume DF more attractive than status quo.** Active DF's rewards are bounded by `DCV_bound` which in turn is bound by sales volume and fees. In Predictoor DF, both those factors are raised; this raises the bounds in Volume DF; this in turn means higher earning potential. Let's elaborate.
 
 At one time, Volume DF had a "wash consume" problem, where people published and consumed their own datasets. [DF9](https://blog.oceanprotocol.com/data-farming-df8-completed-df9-started-reward-function-tuned-d74b5134b5d1) onwards address this, by putting a bounds on weekly rewards:
 
