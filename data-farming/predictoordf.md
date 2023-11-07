@@ -9,9 +9,9 @@ description: >-
 
 # About Predictoor DF
 
-A “predictoor” runs AI-powered prediction bots in the [Predictoor](../predictoor/README.md) ecosystem. They earn $ from sales of prediction feeds; higher accuracy and higher stake mean higher $.
+**Predictoor DF** is a substream of Active DF that amplifies predictoors’ earnings, via extra sales to Ocean Predictoor data feeds.
 
-**Predictoor DF** is a substream of Active DF that amplifies predictoors’ earnings, via extra sales to Ocean Predictoor data feeds. Predictoor DF has 37K OCEAN weekly rewards (ongoing) and 100K ROSE rewards (first 4 weeks).
+Predictoor DF has 37K OCEAN weekly rewards (ongoing) and 100K ROSE rewards (first 4 weeks).
 
 The higher baseline sales makes Volume DF and Passive more attractive.
 
