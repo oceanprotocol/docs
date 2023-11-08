@@ -13,7 +13,7 @@ description: >-
 
 Predictoor DF has 37K OCEAN weekly rewards (ongoing) and 100K ROSE rewards (first 4 weeks).
 
-The higher baseline sales makes Volume DF and Passive more attractive.
+The higher baseline sales makes Volume DF and Passive DF more attractive.
 
 ## Introduction
 
