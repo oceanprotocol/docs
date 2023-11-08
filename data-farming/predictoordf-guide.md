@@ -7,21 +7,26 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/gif/money-robot.gif" alt=""></figure>
 
-In Predictoor DF (and Predictoor proper), you run prediction bots to earn continuously.
+In Predictoor DF (and Predictoor proper), you run prediction bots to earn continuously. This guide describes how to become eligible for OCEAN rewards and claim them; and the same for Oasis ROSE rewards. And of course first thing you need to do is become a predictoor.
 
-## How to be eligible for Predictoor DF
+## How to become a predictoor
 
-**Running a predictoor bot will automatically make you eligible for Predictoor DF rewards.**
+- Play with the dapp: http://predictoor.ai
+- Then follow [Predictoor usage guide](../predictoor/pdr-earn.md)
+- Or, go straight to the [quickstart README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md) :) 🏎️
 
-Therefore, you simply need to become a predictoor! See [Predictoor docs](../predictoor/README.md) or go directly to the [predictoor quickstart README](https://github.com/oceanprotocol/pdr-backend)
+## On OCEAN Rewards in Predictoor DF
 
-## How to claim Predictoor DF Rewards
+- **Duration:** ongoing
+- **To be eligible:** predictoors are automatically eligible 🧘
+- **To claim:** recall that the OCEAN rewards act as more sales coming to you (as a predictoor). So you claim your OCEAN from sales in the usual way, by running the [OCEAN payout script](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md).
 
-Claiming comes in two parts: OCEAN and ROSE.
 
-1. **For OCEAN rewards:** recall that these act as more sales coming to you (as a predictoor). So you claim your OCEAN from sales in the usual way, by running the [OCEAN payout script](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md).
+## On ROSE rewards in Predictoor DF
 
-2. **For ROSE rewards:** run the ROSE payout script, linked from [here](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md).
+- **Duration:** Runs 4 DF rounds - DF62, DF63, DF64, DF65. Limited time!
+- ⚠️ **To be eligible** for a given DF round: you MUST run [Predictoor $OCEAN payout script](](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md)) <= 4 days after the round ends, i.e. between Thu 00:00 UTC & Sun 11:59 PM UTC
+- **To claim:** (we will update these instructions once the software is ready)
 
-NOTE: this may be updated before Predictoor DF launch.
+
 
