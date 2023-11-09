@@ -27,7 +27,7 @@ You should be familiar with both Predictoor and DF before reading on.
 
 ## Predictoor DF Timing
 
-Predictoor DF starts counting on Nov 9, 2023, at the beginning of Data Farming Round 62 (DF62). It runs indefinitely.
+Predictoor DF starts counting on Nov 9, 23, at the beginning of Data Farming Round 62 (DF62). It runs indefinitely.
 
 ## Predictoor DF Rewards
 
@@ -36,7 +36,7 @@ Predictoor DF has two components: [OCEAN](https://oceanprotocol.com/about-us/oce
 ### OCEAN Rewards
 
 OCEAN payouts are 37,000 OCEAN/week, ongoing.
-- A special “DF buyer” bot purchases Predictoor feeds. It starts operating on Nov 9. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are 20 feeds: 10 x 5min, 10 x 1h.)
+- A special “DF buyer” bot purchases Predictoor feeds. It starts operating on Nov 9. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are  feeds: 10 x 5min, 10 x 1h.)
 - The OCEAN comes from the Ocean DF budget, as part of the 75,000 OCEAN/week for Active DF. The Volume DF budget has been adjusted to 37,000 OCEAN/week, and Challenge DF to 1,000 OCEAN/week. Here are details.
 
 ### ROSE Rewards
@@ -59,7 +59,7 @@ Predictoor DF makes [Active DF](../data-farming/activedf.md) more attractive, an
 
 **Predictoor DF makes Volume DF more attractive than status quo**, because the volume-based bounds on weekly rewards trends tend to be markedly higher for prediction feeds. (The Appendix has details.)
 
-**Curating is straightforward.** Ocean assets with high DCV are easy to identify: it's the 20 OPF-published prediction feeds. This makes the choice of veOCEAN allocation easy: point to those 20 assets. (Only OPF-published feeds are eligible.)
+**Curating is straightforward.** Ocean assets with high DCV are easy to identify: it's the 20 OPF-published prediction feeds (minus the two free ones). This makes the choice of veOCEAN allocation easy: point to those 20-2=18 assets. (Only OPF-published feeds are eligible.)
 
 **Doing Volume DF gives Passive DF rewards too**, of course.
 
