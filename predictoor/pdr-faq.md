@@ -133,9 +133,9 @@ Whereas in Predictoor, payout is a function of the the accuracy of the submitter
 
 <details>
 
-<summary>How does Predictoor compare to InTheBlock Price Predictions tool? Is has prediction feeds of crypto prices.</summary>
+<summary>How does Predictoor compare to IntoTheBlock Price Predictions tool? Is has prediction feeds of crypto prices.</summary>
 
-The InTheBlock tool is run internally by InTheBlock, to build build centralized AI models that are served up via a REST API and a webapp.
+The IntoTheBlock tool is run internally by IntoTheBlock, to build build centralized AI models that are served up via a REST API and a webapp.
 
 You can view Predictoor as a "next-gen" version of that tool: a decentralized version that crowd-sources predictions.
 
