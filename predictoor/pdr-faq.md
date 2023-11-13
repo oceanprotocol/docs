@@ -131,6 +131,21 @@ Whereas in Predictoor, payout is a function of the the accuracy of the submitter
 
 </details>
 
+<details>
+
+<summary>How does Predictoor compare to InTheBlock Price Predictions tool? Is has prediction feeds of crypto prices.</summary>
+
+The InTheBlock tool is run internally by InTheBlock, to build build centralized AI models that are served up via a REST API and a webapp.
+
+You can view Predictoor as a "next-gen" version of that tool: a decentralized version that crowd-sources predictions.
+
+- Crowd-sourcing with accuracy incentives has potential to do much better than any centralized approach. It doesn't rely on the ideas of a single team; instead it makes the opportunity to predict open to anyone in the world. A perpetual data-science competition. The incentives mean that only the best will stick around. This will get reflected in the prediction feeds' accuracies.
+- Being decentralized means one doesn't need to rely on a centralized actor running centralized services. Useful for anyone coming to rely on prediction feeds.
+
+Finally, Predictoor's ambition is broader: to extend beyond crypto into energy, weather, agriculture and more. It's easier to expand scope of decentralized feeds, because you don't need to spin up a new team to focus on each new vertical.
+
+</details>
+
 
 ### Networks
 
