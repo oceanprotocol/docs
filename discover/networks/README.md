@@ -96,3 +96,25 @@ If Mumbai is not listed as a predefined network in your wallet, you can connect 
 Ocean Protocol is deployed on the Sepolia test network, which is designed for testing and experimentation purposes. Tokens in Sepolia do not hold any real economic value, as it is not a production network. To connect to Sepolia using a wallet like MetaMask, you can select "Sepolia" from the network dropdown list(enable "Show test networks").
 
 <table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>SepoliaETH (Native token)</th></tr></thead><tbody><tr><td>SepoliaETH</td><td><a href="https://sepoliafaucet.com/">Faucet</a></td></tr><tr><td>Sepolia OCEAN</td><td><a href="https://faucet.sepolia.oceanprotocol.com/">Faucet</a></td></tr><tr><td>OCEAN</td><td><a href="https://sepolia.etherscan.io/address/0x1B083D8584dd3e6Ff37d04a6e7e82b5F622f3985">0x1B083D8584dd3e6Ff37d04a6e7e82b5F622f3985</a></td></tr><tr><td>Explorer</td><td><a href="https://sepolia.etherscan.io/">https://sepolia.etherscan.io/</a></td></tr></tbody></table>
+
+
+### Optimism Sepolia
+
+Ocean Protocol is deployed on the OP Sepolia test network, which is designed for testing and experimentation purposes. Tokens in Sepolia do not hold any real economic value, as it is not a production network. If OP Sepolia is not listed as a predefined network in your wallet, you can manually connect to it by following OP's [guide](https://community.optimism.io/docs/useful-tools/networks/#op-sepolia), which provides detailed instructions on how to connect to OP Seploia.
+
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>Sepolia ETH</th></tr></thead><tbody><tr><td>SepoliaETH</td><td><a href="https://sepoliafaucet.com/">Faucet</a></td></tr><tr><td>OP Sepolia OCEAN</td><td><a href="https://faucet.op-sepolia.oceanprotocol.com/">Faucet</a></td></tr><tr><td>OCEAN</td><td><a href="https://sepolia-optimism.etherscan.io/address/0xf26c6c93f9f1d725e149d95f8e7b2334a406ad10">0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10</a></td></tr><tr><td>Explorer</td><td><a href="https://sepolia-optimism.etherscan.io/">https://sepolia-optimism.etherscan.io</a></td></tr></tbody></table>
+
+**Bridge**
+
+Check out the OP Bridge [guide](https://https://app.optimism.io/bridge/deposit) to deposit, withdraw and send tokens.
+
+
+### Optimism
+
+Ocean Protocol is also deployed to Optimism Mainnet (OP), which is another production network. The native token of Optimism is ETH, that needs to be bridged from Ethereum Mainnet. If you cannot find Optimism as a predefined network in your wallet, you can manually connect to it by following OP's [guide](https://community.optimism.io/docs/useful-tools/networks/#op-mainnet), which provides step-by-step instructions for connecting to OP Mainnet.
+
+<table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>ETH</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://optimistic.etherscan.io/address/0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E">0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E</a></td></tr><tr><td>Explorer</td><td><a href="https://optimistic.etherscan.io">https://optimistic.etherscan.io</a></td></tr></tbody></table>
+
+**Bridge**
+
+Check out the OP Bridge [guide](https://https://app.optimism.io/bridge/deposit) to deposit, withdraw and send tokens.
