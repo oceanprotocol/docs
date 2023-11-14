@@ -40,6 +40,18 @@ Almost all ERC-20 wallets require these values for adding a custom token:
          <td>OCEAN</td>
          <td>18</td>
       </tr>
+       <tr>
+         <td><strong>Oasis Sapphire</strong></td>
+         <td>0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
+      <tr>
+         <td><strong>Optimism</strong></td>
+         <td>0xf26c6c93f9f1d725e149d95f8e7b2334a406ad10</td>
+         <td>OCEAN</td>
+         <td>18</td>
+      </tr>
       <tr>
          <td><strong>Görli</strong></td>
          <td>0xCfDdA22C9837aE76E0faA845354f33C62E03653a</td>
@@ -55,12 +67,6 @@ Almost all ERC-20 wallets require these values for adding a custom token:
       <tr>
          <td><strong>Sepolia</strong></td>
          <td>0x1B083D8584dd3e6Ff37d04a6e7e82b5F622f3985</td>
-         <td>OCEAN</td>
-         <td>18</td>
-      </tr>
-      <tr>
-         <td><strong>Oasis Sapphire</strong></td>
-         <td>0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520</td>
          <td>OCEAN</td>
          <td>18</td>
       </tr>
