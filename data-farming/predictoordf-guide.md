@@ -25,7 +25,7 @@ In Predictoor DF (and Predictoor proper), you run prediction bots to earn contin
 ## On ROSE rewards in Predictoor DF
 
 - **Duration:** Runs 4 DF rounds - DF62, DF63, DF64, DF65. Limited time!
-- ⚠️ **To be eligible** for a given DF round: you MUST run [Predictoor $OCEAN payout script](](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md)) <= 4 days after the round ends, i.e. between Thu 00:00 UTC & Sun 11:59 PM UTC
+- ⚠️ **To be eligible** for a given DF round: you MUST run [OCEAN payout script](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) <= 4 days after the round ends, i.e. between Thu 00:00 UTC & Sun 11:59 PM UTC
 - **To claim:** (we will update these instructions once the software is ready)
 
 
