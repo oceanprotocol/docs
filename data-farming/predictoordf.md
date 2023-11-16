@@ -42,7 +42,8 @@ OCEAN payouts are 37,000 OCEAN/week, ongoing.
 ### ROSE Rewards
 
 ROSE payouts of 100,000 ROSE/week for the first 4 weeks of Predictoor DF.
-- Payout is at the end of the DF round. Therefore there will be payouts at the end of DF62, DF63, DF64, and DF65.
+- Payout is 4 days after the end of the DF round, on Monday. Therefore there will be payouts at the end of DF62, DF63, DF64, and DF65.
+- Between the DF round end and ROSE rewards payout, make sure you claim your OCEAN rewards for all your predictions from the DF round to be accounted.
 - Payout for a given predictoor is pro-rata to the net earnings of that predictoor over that DF round, specifically (total sales $ to the predictoor) minus (predictoor stake slashed due to being wrong).
 - The ROSE comes from a generous contribution of[ Oasis Protocol Foundation](https://oasisprotocol.org/) 👪🙏.
 
