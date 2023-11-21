@@ -35,11 +35,15 @@ The yield for one week is **Weekly Percentage Yield**, or **WPY**. For example, 
 
 The yield for one year is **Annual Percentage Yield**, or **APY**. APY can be estimated from WPYs. Assuming no compounding, `APY = WPY*52`. 
 
-**Costs** include:
+### Costs
+
+Costs should not be under-estimated. Eg if you're only doing Passive DF, and you lock a small amount of OCEAN for a short time, costs may exceed your gross income.
+
+**Costs include:**
 - Gas fees for transactions (txs) on the various chains. Eg veOCEAN, passive DF rewards, and Volume DF rewards are on Ethereum mainnet. Predictoor DF is on Sapphire mainnet.
-- Txs include: locking OCEAN, claiming passive rewards, claiming active rewards, and withdrawing rewards.
-- Costs should not be under-estimated. Eg if you're only doing Passive DF, and you lock a small amount of OCEAN for a short time, costs may exceed your gross income.
-- To compound returns, these txs need to be repeated. The ideal frequency to compound rate is whatever maximizes your yield - which depends on how much OCEAN you've locked, tx fees, etc.
+  - Txs include: locking OCEAN, claiming passive rewards, claiming active rewards, and withdrawing rewards.
+  - To compound returns, these txs need to be repeated. The ideal frequency to compound rate is whatever maximizes your yield - which depends on how much OCEAN you've locked, tx fees, etc.
+- Cost of compute hardware to run Predictoors, e.g. on cloud services 
 
 The **[guide to estimate APYs](apys-guide.md)** drills deeper into estimating APYs. 
 
