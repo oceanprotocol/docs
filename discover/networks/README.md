@@ -69,7 +69,7 @@ To bridge assets between Energy Web Chain and Ethereum mainnet, you can use [thi
 
 ### OP Mainnet(Optimism)
 
-Ocean Protocol is also deployed to OP Mainnet (OPtimism), which is another production network. The native token of Optimism is ETH, which needs to be bridged from Ethereum Mainnet. If you cannot find Optimism as a predefined network in your wallet, you can manually connect to it by following OP's [guide](https://community.optimism.io/docs/useful-tools/networks/#op-mainnet), which provides step-by-step instructions for connecting to OP Mainnet.
+Ocean Protocol is also deployed to OP Mainnet (Optimism), which is another production network. The native token of Optimism is ETH, which needs to be bridged from Ethereum Mainnet. If you cannot find Optimism as a predefined network in your wallet, you can manually connect to it by following OP's [guide](https://community.optimism.io/docs/useful-tools/networks/#op-mainnet), which provides step-by-step instructions for connecting to OP Mainnet.
 
 <table data-header-hidden><thead><tr><th width="100">Gas Token</th><th>ETH</th></tr></thead><tbody><tr><td>OCEAN</td><td><a href="https://optimistic.etherscan.io/address/0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E">0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E</a></td></tr><tr><td>Explorer</td><td><a href="https://optimistic.etherscan.io">https://optimistic.etherscan.io</a></td></tr></tbody></table>
 
