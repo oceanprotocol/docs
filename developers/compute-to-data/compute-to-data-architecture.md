@@ -24,7 +24,7 @@ The interaction between the Consumer and the Provider follows a specific workflo
 Throughout the computation process, the Consumer has the ability to check the status of the job by making a query to the Provider using the `getJobDetails(XXXX)` function, providing the job identifier (`XXXX`) as a reference.
 
 {% hint style="info" %}
-You have the option to initiate a compute job using one or more data assets. You can explore this functionality by utilizing the [ocean.py](../ocean.py/README.md) and [ocean.js](../ocean.js/README.md) libraries.
+You have the option to initiate a compute job using one or more data assets. You can explore this functionality by utilizing the [ocean.py](../../data-scientists/ocean.py/README.md) and [ocean.js](../ocean.js/README.md) libraries.
 {% endhint %}
 
 Now, let's delve into the inner workings of the Provider. Initially, it verifies whether the Consumer has sent the appropriate datatokens to gain access to the desired data. Once validated, the Provider interacts with the Operator-Service, a microservice responsible for coordinating the job execution. The Provider submits a request to the Operator-Service, which subsequently forwards the request to the Operator-Engine, the actual compute system in operation.
