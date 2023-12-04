@@ -16,7 +16,7 @@ The actions as a predictoor give the following ways to earn:
 * **Predictoor DF.** This amounts to additional earning for predictoors. 37,000 OCEAN/week rewards. [Here are details.](../data-farming/predictoordf.md)
 Don’t expect to be 100% accurate in your up/down predictions. Marginally better than 50% might be enough, and be skeptical if you’re greatly above 50%, you probably have a bug in your testing.
 
-Every week there’s [150,000 total OCEAN rewards](../data-farming/df-intro.md#reward-schedule) for Ocean Data Farming. This will increase in early 2024, and more yet later.
+Every week there’s [150,000 total OCEAN rewards](../data-farming/README.md) for Ocean Data Farming. This will increase in early 2024, and more yet later.
 
 {% hint style="warning" %}
 You will lose money as a predictoor if your \$ out exceeds your \$ in. If you have low accuracy you’ll have your stake slashed a lot. Do account for gas fees, compute costs, and more. Everything you do is your responsibility, at your discretion. None of this blog is financial advice.
@@ -35,7 +35,7 @@ Typical steps as a Trader:
 
 The actions as a trader offer a single yet powerful way to earn: **trading revenue.** Buy low and sell high! (And the opposite with shorting)  
 
-Traders can earn even more via a complementary action: **[Volume DF](../data-farming/df-intro.md#what-are-active-rewards).**. Lock veOCEAN for OCEAN, then point the veOCEAN to data assets with high DCV. Predictoor feeds are great candidates for high-DCV assets.  
+Traders can earn even more via a complementary action: **[Volume DF](../data-farming/volumedf.md).**. Lock veOCEAN for OCEAN, then point the veOCEAN to data assets with high DCV. Predictoor feeds are great candidates for high-DCV assets.  
 
 ⚠️ You will lose money trading if your \$ out exceeds your \$ in. Do account for trading fees, order book slippage, cost of prediction feeds, and more. Everything you do is your responsibility, at your discretion. None of this blog is financial advice.  
 
@@ -43,8 +43,8 @@ Traders can earn even more via a complementary action: **[Volume DF](../data-far
 
 Even if you’re not active as a predictoor or a trader, you can earn nonetheless.
 
-* **[Passive DF](../data-farming/df-intro.md#what-are-passive-rewards).** By simply locking your OCEAN for veOCEAN, you can earn passive rewards.  
-* **[Volume DF](../data-farming/df-intro.md#what-are-active-rewards).** Point the veOCEAN to data assets with high data consume volume (DCV). Predictoor feeds are great candidates for high-DCV assets (Predictoor assets are a good choice).  
+* **[Passive DF](../data-farming/passivedf.md).** By simply locking your OCEAN for veOCEAN, you can earn passive rewards.  
+* **[Volume DF](../data-farming/volumedf.md).** Point the veOCEAN to data assets with high data consume volume (DCV). Predictoor feeds are great candidates for high-DCV assets (Predictoor assets are a good choice).  
 
 ## Early Earnings Benchmarks
 

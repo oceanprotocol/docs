@@ -7,7 +7,7 @@ description: >-
 
 # Estimated APY vs Time
 
-The plot below shows estimated APY over time. It brings together data from the [OCEAN reward schedule](reward-schedule) and estimates of **amount staked (yellow line** in plot).
+The plot below shows estimated APY over time. It brings together data from the [OCEAN reward schedule](reward-schedule.md) and estimates of **amount staked (yellow line** in plot).
 
 **Green is total APY** from passive and active rewards.  **Passive rewards (black)** provides a great baseline with upside in **active rewards (green)**. For example, in DF29 wash consume became unprofitable and led to a drop in DCV and therefore active rewards.
 
