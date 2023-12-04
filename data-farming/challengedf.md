@@ -5,7 +5,7 @@ description: >-
 
 # Challenge Data Farming
 
-<figure><img src="../../.gitbook/assets/gif/underwater-you-want-some-of-this.gif" alt=""></figure>
+<figure><img src="../.gitbook/assets/gif/underwater-you-want-some-of-this.gif" alt=""></figure>
 
 
 **This page** is about Challenge DF, and [this page](challengedf-guide.md) is a guide.

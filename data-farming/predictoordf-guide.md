@@ -5,7 +5,7 @@ description: >-
 
 # Guide to Predictoor DF
 
-<figure><img src="../../.gitbook/assets/gif/money-robot.gif" alt=""></figure>
+<figure><img src="../.gitbook/assets/gif/money-robot.gif" alt=""></figure>
 
 In Predictoor DF (and Predictoor proper), you run prediction bots to earn continuously. This guide describes how to become eligible for OCEAN rewards and claim them; and the same for Oasis ROSE rewards. And of course first thing you need to do is become a predictoor.
 

@@ -5,7 +5,7 @@ description: >-
 
 # Guide to Passive DF
 
-<figure><img src="../../.gitbook/assets/gif/aquaman-gold.gif" alt="" width="250"><figcaption><p>Get your gold. Get your veOCEAN.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/aquaman-gold.gif" alt="" width="250"><figcaption><p>Get your gold. Get your veOCEAN.</p></figcaption></figure>
 
 In order to **get yield in DF**, you will need to lock your OCEAN first! When you lock your OCEAN, you get **veOCEAN** and **weekly passive OCEAN rewards** in return. veOCEAN is a token used in Ocean Protocol's Data Farming dApp to **generate even more yield,** called **Volume DF rewards**, for allocating your veOCEAN to your favorite assets and get a portion of their sales!
 

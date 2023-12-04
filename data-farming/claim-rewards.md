@@ -4,7 +4,7 @@ description: Unbox your OCEAN rewards
 
 # Claim Rewards in DF
 
-<figure><img src="../../.gitbook/assets/gif/underwater-treasure.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/underwater-treasure.gif" alt=""><figcaption></figcaption></figure>
 
 **This page describes how to claim DF rewards.** (Predictoor DF is an exception, [see here](predictoordf-guide.md).)
 
@@ -16,7 +16,7 @@ Detailed instructions are below.
 
 Go to [https://df.oceandao.org/](https://df.oceandao.org), and click the Rewards [link](https://df.oceandao.org/rewards) at the top of the page.
 
-<figure><img src="../../.gitbook/assets/data-farming/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/Rewards-Tab.png" alt=""><figcaption><p>Click the Rewards link at the top of the page</p></figcaption></figure>
 
 ### Step 2 - Click the pink 'Claim # OCEAN' buttons 🛎️
 
@@ -24,7 +24,7 @@ At the bottom of the 'Passive Rewards' and 'Active Rewards' panels are the 'Clai
 
 This is where you click to claim your rewards! Easy peasy. You will need to approve the transactions with your wallet.
 
-<figure><img src="../../.gitbook/assets/data-farming/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/claim-rewards.png" alt=""><figcaption><p>Click the pink Claim # Ocean buttons</p></figcaption></figure>
 
 ### First time claiming?
 

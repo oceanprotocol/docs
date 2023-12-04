@@ -54,7 +54,7 @@ Below is a visual representation that illustrates the flow:
 
 We have some awesome hands-on experience when it comes to publishing a data NFT and minting datatokens.
 
-* Publish using [ocean.py](../ocean.py/publish-flow.md)
+* Publish using [ocean.py](../../data-scientists/ocean.py/publish-flow.md)
 * Publish using [ocean.js](../ocean.js/publish.md)
 
 ### Other References

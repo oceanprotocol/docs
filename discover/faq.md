@@ -88,7 +88,7 @@ All OCEAN have been [minted](https://blog.oceanprotocol.com/control-over-the-oce
 
 There are more than 540 million OCEAN in circulation; the [OCEAN page](https://oceanprotocol.com/about-us/ocean-token) has the precise number.
 
-The remaining tokens emit over decades, mostly for Ocean Data Farming. The [Emissions & APYs page](../data-farming/df-emissions-apys) has details.
+The remaining tokens emit over decades, mostly for Ocean Data Farming. The [Emissions & APYs page](../data-farming/apys-guide.md) has details.
 </details>
 
 <details>

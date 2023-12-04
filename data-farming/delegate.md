@@ -5,7 +5,7 @@ description: >-
 
 # Delegation in Volume DF
 
-<figure><img src="../../.gitbook/assets/gif/underwater-buddy-peewee.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gif/underwater-buddy-peewee.gif" alt=""><figcaption></figcaption></figure>
 
 ## About Delegation
 
@@ -47,4 +47,4 @@ If you receive veOCEAN allocation power from other wallets, then you will receiv
 
 You _cannot_ re-delegate this veOCEAN further downstream.&#x20;
 
-<figure><img src="../../.gitbook/assets/data-farming/veOCEAN-Delegation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/data-farming/veOCEAN-Delegation.png" alt=""><figcaption></figcaption></figure>

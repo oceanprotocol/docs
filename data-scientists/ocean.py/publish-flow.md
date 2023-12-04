@@ -29,17 +29,17 @@ print(f"  did={ddo.did}")
 
 You've now published an Ocean asset!
 
-* [`data_nft`](../contracts/data-nfts.md) is the base (base IP)
-* [`datatoken`](../contracts/datatokens.md) for access by others (licensing)
-* [`ddo`](../ddo-specification.md) holding metadata
+* [`data_nft`](../../developers/contracts/data-nfts.md) is the base (base IP)
+* [`datatoken`](../../developers/contracts/datatokens.md) for access by others (licensing)
+* [`ddo`](../../developers/ddo-specification.md) holding metadata
 
 <figure><img src="../../.gitbook/assets/gif/200.webp" alt=""><figcaption></figcaption></figure>
 
 ### Appendix
 
-For more information regarding: Data NFT & Datatokens interfaces and how they are implemented in Solidity, we suggest to follow up this [article](../contracts/datanft-and-datatoken.md) and [contracts repo](https://github.com/oceanprotocol/contracts) from GitHub.
+For more information regarding: Data NFT & Datatokens interfaces and how they are implemented in Solidity, we suggest to follow up this [article](../../developers/contracts/datanft-and-datatoken.md) and [contracts repo](https://github.com/oceanprotocol/contracts) from GitHub.
 
-As you may want to explore more the DDO specs,  structure & meaning, we invite you to consult [DDO Specification](../ddo-specification.md) section.
+As you may want to explore more the DDO specs,  structure & meaning, we invite you to consult [DDO Specification](../../developers/ddo-specification.md) section.
 
 #### Publishing Alternatives
 
