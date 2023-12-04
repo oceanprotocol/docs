@@ -56,7 +56,7 @@ The [Predictoor DF user guide](predictoordf-guide.md) tells how to get started a
 
 ## How to Earn More $ Via Passive DF & Volume DF
 
-Predictoor DF makes [Active DF](../data-farming/activedf.md) more attractive, and in turn [Passive DF](../data-farming/passivedf.md). You should be familiar with both before reading on.
+Predictoor DF makes [Active DF](../data-farming/volumedf.md) more attractive, and in turn [Passive DF](../data-farming/passivedf.md). You should be familiar with both before reading on.
 
 **Predictoor DF makes Volume DF more attractive than status quo**, because the volume-based bounds on weekly rewards trends tend to be markedly higher for prediction feeds. (The Appendix has details.)
 
