@@ -276,14 +276,6 @@ They are deployed on the Ethereum mainnet, alongside other Ocean contract deploy
 
 <details>
 
-<summary>Is there a way to check the duration and amounts of OCEAN locked on-chain for all wallets?</summary>
-
-Yes, this information is available. Indeed, there is a technical aspect involved. You'll need to have some technical knowledge because you'll be required to query the subgraph. You can find a working example of how to get the list of holders [in the subgraph documentation](../developers/subgraph/get-veocean-stats#get-the-veocean-holders-list). Feel free to run the script by clicking on the "run" button.
-  
-</details>
-
-<details>
-
 <summary>What is the official veOCEAN epoch start_time?</summary>
 
 veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).

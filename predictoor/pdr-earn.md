@@ -35,7 +35,7 @@ Typical steps as a Trader:
 
 The actions as a trader offer a single yet powerful way to earn: **trading revenue.** Buy low and sell high! (And the opposite with shorting)  
 
-Traders can earn even more via a complementary action: **[Volume DF](../data-farming/challengedf.md).**. Lock veOCEAN for OCEAN, then point the veOCEAN to data assets with high DCV. Predictoor feeds are great candidates for high-DCV assets.  
+Traders can earn even more via a complementary action: **[Volume DF](../data-farming/volumedf.md).**. Lock veOCEAN for OCEAN, then point the veOCEAN to data assets with high DCV. Predictoor feeds are great candidates for high-DCV assets.  
 
 ⚠️ You will lose money trading if your \$ out exceeds your \$ in. Do account for trading fees, order book slippage, cost of prediction feeds, and more. Everything you do is your responsibility, at your discretion. None of this blog is financial advice.  
 
