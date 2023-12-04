@@ -80,7 +80,7 @@ While we utilize a specific DDO structure, you have the flexibility to customize
 {% endhint %}
 
 {% hint style="info" %}
-As developers, we understand that you eat, breathe, and live code. That's why we invite you to explore the [ocean.py](ocean.py/publish-flow.md#publishing-alternatives) and [ocean.js](ocean.js/update-metadata.md) pages, where you'll find practical examples of how to set up and update metadata for an asset :computer:
+As developers, we understand that you eat, breathe, and live code. That's why we invite you to explore the [ocean.py](../data-scientists/ocean.py/publish-flow.md#publishing-alternatives) and [ocean.js](ocean.js/update-metadata.md) pages, where you'll find practical examples of how to set up and update metadata for an asset :computer:
 {% endhint %}
 
 You'll have more information about the DIDs, on the [Identifiers](identifiers.md) page.

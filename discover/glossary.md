@@ -128,7 +128,7 @@ In exchange for locking tokens, users can earn rewards. The amount of reward dep
 
 <summary>Ocean Data Farming (DF)</summary>
 
-[Ocean Data Farming (DF)](https://df.oceandao.org/) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem. [DF](../data-farming/df-intro.md) is like DeFi liquidity mining, but tuned for DCV. DF emits OCEAN for passive rewards and active rewards.
+[Ocean Data Farming (DF)](https://df.oceandao.org/) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem. [DF](../data-farming/README.md) is like DeFi liquidity mining, but tuned for DCV. DF emits OCEAN for passive rewards and active rewards.
 
 * As a veOCEAN holder, you get _passive_ rewards by default.
 * If you _actively_ curate data by allocating veOCEAN towards data assets with high Data Consume Volume (DCV), then you can earn more.
@@ -139,7 +139,7 @@ In exchange for locking tokens, users can earn rewards. The amount of reward dep
 
 <summary>Passive Rewards</summary>
 
-When a user locks their OCEAN for a finite period of time, they get veOCEAN in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../data-farming/df-intro.md#what-are-passive-rewards). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user locks their OCEAN for a finite period of time, they get veOCEAN in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../data-farming/README.md). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
@@ -147,7 +147,7 @@ When a user locks their OCEAN for a finite period of time, they get veOCEAN in r
 
 <summary>Volume DF</summary>
 
-When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../data-farming/df-intro.md#what-is-volume-df) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../data-farming/README.md) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
@@ -157,7 +157,7 @@ When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN reward
 
 When users submit accurate predictions for the price of Ethereum to the [Challenge DF program](https://df.oceandao.org/challenge-df), they have a chance to win OCEAN rewards by being in the top 3 submissions based on predicted value accuracy. 
 
-These rewards are classified as [Challenge DF](../data-farming/df-intro.md#what-is-challenge-df) rewards since they require active participation in the challenge. Rewards can be claimed every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+These rewards are classified as [Challenge DF](../data-farming/README.md) rewards since they require active participation in the challenge. Rewards can be claimed every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 

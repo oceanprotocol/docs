@@ -60,7 +60,7 @@ Predictoor DF makes [Active DF](../data-farming/volumedf.md) more attractive, an
 
 **Predictoor DF makes Volume DF more attractive than status quo**, because the volume-based bounds on weekly rewards trends tend to be markedly higher for prediction feeds. (The Appendix has details.)
 
-**Curating is straightforward.** Ocean assets with high DCV are easy to identify: it's the 20 OPF-published prediction feeds. This makes the choice of veOCEAN allocation easy: point to those 20 assets [1].
+**Curating is straightforward.** Ocean assets with high DCV are easy to identify: it's the 20 OPF-published prediction feeds. This makes the choice of veOCEAN allocation easy: point to those 20 assets.
 
 **Doing Volume DF gives Passive DF rewards too**, of course.
 
@@ -89,6 +89,6 @@ Therefore `DCV_bound` is higher. Specifically: `DCV_bound = 37000 * (0.001 + 0.2
 
 ## Notes
 
-[1] The BTC/USDT 5m and 1h feeds follow the same Volume DF mechanics as the other feeds, despite being free on the webapp.
+The BTC/USDT 5m and 1h feeds follow the same Volume DF mechanics as the other feeds, despite being free on the webapp.
 
 Details: the BTC feeds _are_ priced at the smart contract level. The webapp receives datatokens for those feeds and makes the prediction values public. Because the BTC feeds _are_ priced, then: their DCV is non-negligible; allocating veOCEAN to them makes sense; and Volume DF rewards accrue to them as well.

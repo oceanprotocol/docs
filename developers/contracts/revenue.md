@@ -20,7 +20,7 @@ In the case of [ERC20TemplateEnterprise](datatoken-templates.md#enterprise-templ
 On the other hand, with [ERC20Template](datatoken-templates.md#regular-template), for a fixed rate exchange, the revenue is available at the fixed rate exchange level. The owner or the payment collector has the authority to manually retrieve the revenue.
 {% endhint %}
 
-There are several methods available for establishing a new **payment collector**. You have the option to utilize the ERC20Template/ERC20TemplateEnterprise contract directly. Another approach is to leverage the [ocean.py](../ocean.py/README.md) and [ocean.js](../ocean.js/README.md) libraries. Alternatively, you can employ the network explorer associated with your asset. Lastly, you can directly set it up within the Ocean Market.
+There are several methods available for establishing a new **payment collector**. You have the option to utilize the ERC20Template/ERC20TemplateEnterprise contract directly. Another approach is to leverage the [ocean.py](../../data-scientists/ocean.py/README.md) and [ocean.js](../ocean.js/README.md) libraries. Alternatively, you can employ the network explorer associated with your asset. Lastly, you can directly set it up within the Ocean Market.
 
 Here are some examples of how to set up a new payment collector using the mentioned methods:
 
