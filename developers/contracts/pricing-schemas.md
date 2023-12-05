@@ -49,7 +49,6 @@ exchange_args = ExchangeArguments(
  owner_addr=publisher_wallet.address,
  publish_market_fee_collector=ZERO_ADDRESS,
  publish_market_fee=0,
- with_mint=True,
  allowed_swapper=ZERO_ADDRESS,
  full_info=False,
  dt_decimals=datatoken.decimals()

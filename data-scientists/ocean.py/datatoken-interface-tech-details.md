@@ -263,7 +263,7 @@ It is implemented in `DatatokenBase`, inherited by `Datatoken2`, so it can be ca
 
 ### Create Fixed Rate Exchange
 
-* **create\_exchange**(`self`, `rate: Union[int, str]`, `base_token_addr: str`, `tx_dict: dict`, `owner_addr: Optional[str] = None`, `publish_market_fee_collector: Optional[str] = None, publish_market_fee: Union[int, str] = 0`, `with_mint: bool = False`, `allowed_swapper: str = ZERO_ADDRESS`, `full_info: bool = False`) -> `Union[OneExchange, tuple]`
+* **create\_exchange**(`self`, `rate: Union[int, str]`, `base_token_addr: str`, `tx_dict: dict`, `owner_addr: Optional[str] = None`, `publish_market_fee_collector: Optional[str] = None, publish_market_fee: Union[int, str] = 0`, `allowed_swapper: str = ZERO_ADDRESS`, `full_info: bool = False`) -> `Union[OneExchange, tuple]`
 
 It is implemented in `DatatokenBase`, inherited by `Datatoken2`, so it can be called within both instances.
 
@@ -282,7 +282,6 @@ This wraps the smart contract method `Datatoken.createFixedRate()` with a simple
 * `owner_addr` - owner of the datatoken
 * `publish_market_fee_collector` - fee going to publish market address
 * `publish_market_fee` - in wei or string, e.g. `int(1e15)` or `"0.001 ether"`
-* `with_mint` - should the exchange mint datatokens as needed (`True`), or do they need to be supplied/allowed by participants like base token (`False`)?
 * `allowed_swapper` - if `ZERO_ADDRESS`, anyone can swap
 * `full_info` - return just `OneExchange`, or `(OneExchange, <other info>)`
 
@@ -310,7 +309,6 @@ This wraps the smart contract method `Datatoken.createFixedRate()` with a simple
         owner_addr: Optional[str] = None,
         publish_market_fee_collector: Optional[str] = None,
         publish_market_fee: Union[int, str] = 0,
-        with_mint: bool = False,
         allowed_swapper: str = ZERO_ADDRESS,
         full_info: bool = False,
     ) -> Union[OneExchange, tuple]:
@@ -341,7 +339,7 @@ This wraps the smart contract method `Datatoken.createFixedRate()` with a simple
                 self.decimals(),
                 rate,
                 publish_market_fee,
-                with_mint,
+                1,
             ],
             tx_dict,
         )
