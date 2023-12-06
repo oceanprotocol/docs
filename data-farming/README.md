@@ -22,7 +22,7 @@ Here are all streams & substreams. The links lead to dedicated pages.
 1. **Active DF.** 75,000 OCEAN per week. It has these substreams:
    1. **[Volume DF](volumedf.md).** Allocate veOCEAN towards data assets with high DCV, ie "curate data". Rewards are a function of DCV and veOCEAN stake.
    1. **[Challenge DF](challengedf.md).** Predict future ETH price, one-time weekly. Rewards are a function of accuracy. Runs from DF48 — DF66.
-   1. **[Predictoor DF](predictoordf.md).** Run prediction bots to earn continuously. Starts on DF62.
+   1. **[Predictoor DF](predictoordf.md).** Run prediction bots to earn continuously. Starts on DF63.
 
 All streams and substreams repeat **weekly** that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.
 

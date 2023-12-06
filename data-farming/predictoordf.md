@@ -27,7 +27,7 @@ You should be familiar with both Predictoor and DF before reading on.
 
 ## Predictoor DF Timing
 
-Predictoor DF starts counting on Nov 9, 23, at the beginning of Data Farming Round 62 (DF62). It runs indefinitely.
+Predictoor DF starts counting on Nov 9, 23, at the beginning of Data Farming Round 63 (DF63). It runs indefinitely.
 
 ## Predictoor DF Rewards
 
@@ -41,9 +41,10 @@ OCEAN payouts are 37,000 OCEAN/week, ongoing.
 
 ### ROSE Rewards
 
-ROSE payouts of 100,000 ROSE/week for the first 4 weeks of Predictoor DF.
-- Payout is 4 days after the end of the DF round, on Monday. Therefore there will be payouts at the end of DF62, DF63, DF64, and DF65.
-- Between the DF round end and ROSE rewards payout, make sure you claim your OCEAN rewards for all your predictions from the DF round to be accounted.
+ROSE payouts of 100,000 ROSE/week for the first 8 weeks of Predictoor DF.
+- There will be payouts at the end of DF63, DF64, DF65, DF66, DF67, DF68, DF69, and DF70.
+- Payout happens on Mondays, 4 days after the end of the DF round. 
+- ⚠️ To be counted for ROSE rewards of a given DF round, you must claim your OCEAN rewards for that DF round. 
 - Payout for a given predictoor is pro-rata to the net earnings of that predictoor over that DF round, specifically (total sales $ to the predictoor) minus (predictoor stake slashed due to being wrong).
 - The ROSE comes from a generous contribution of[ Oasis Protocol Foundation](https://oasisprotocol.org/) 👪🙏.
 
