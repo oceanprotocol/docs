@@ -63,3 +63,13 @@ Simulated returns vs time of BTC/USDT trading on Binance. Trade size has an impa
 The image below has the same experimental setup, but for BTC/USDT pair. The size of the order does not affect the return, because BTC/USDT is more liquid than BTC/USDT.
 
 <figure><img src="../.gitbook/assets/predictoor/simulated_returns_btc_usdt.png" alt=""><figcaption>Simulated returns vs time of BTC/USDT trading on Binance. Trade size has little impact.</figcaption></figure>
+
+
+## Next step
+
+If you're going through docs sequentially: next is [Parameters](pdr-parameters.md).
+
+Or to drill into earning further:
+- [Pdr-backend repo](https://github.com/oceanprotocol/pdr-backend) - how to run bots, specifically
+- [Predictoor Data Farming](../data-farming/predictoordf.md) - baseline sales $  for running predictoor bots
+

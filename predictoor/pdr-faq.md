@@ -156,3 +156,8 @@ Finally, Predictoor's ambition is broader: to extend beyond crypto into energy, 
 Predictoor needs to leverage a privacy-preserving EVM chain which is in production. Oasis Sapphire is currently the only such chain.
   
 </details>
+
+
+## Next step
+
+If you're going through docs sequentially: next is [Further Resources](pdr-resources.md).
