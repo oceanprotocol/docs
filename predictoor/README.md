@@ -5,7 +5,20 @@ coverY: 0
 ---
 
 # Summary
-We dream of a world of 10,000 truly accurate prediction feeds, for everything from rain forecasts to sea level rise, or traffic congestion to ETH price. [Ocean Predictoor](https://predictoor.ai/) is an on-chain, privacy-enabled, AI-powered application and stack that is bringing this dream to reality.
+
+Ocean Predictoor provides on-chain "prediction feeds" on whether ETH, BTC, etc will rise in the next 5 min or 60 min. "Predictoors" submit predictions and stake on them; predictions are aggregated and sold to traders as alpha. Get started at https://predictoor.ai.
+
+# Quick Links
+
+- [Detailed intro](pdr-intro.md)
+- [Architecture](pdr-architecture.md)
+- [How to earn](pdr-earn.md) by running a trader or predictoor bot
+- [Pdr-backend repo](https://github.com/oceanprotocol/pdr-backend) - how to run bots, specifically
+- [Parameters](pdr-parameters.md) on price of feeds, more
+- [FAQ](pdr-faq.md)
+
+# Introduction
+[Prediction is intelligence](https://www.explainablestartup.com/2017/06/why-prediction-is-the-essence-of-intelligence.html), artificial or otherwise. We dream of a world of 10,000 truly accurate prediction feeds, for everything from rain forecasts to sea level rise, or traffic congestion to ETH price. [Ocean Predictoor](https://predictoor.ai/) is an on-chain, privacy-enabled, AI-powered application and stack that is bringing this dream to reality.
 
 **Accurate predictions are valuable.** With them, one can take action and create value. Conversely, inaccurate predictions lead to disaster. Predictions have value because they're the [final step in a data supply chain](https://blog.oceanprotocol.com/the-data-value-creation-loop-68e23575be02), right before action is taken by the user.
 
@@ -15,29 +28,10 @@ Alas, accurate predictions are *hard*. Worse, typical prediction feeds have no a
 
 **Accountable Predictions** - Imagine if there was accountability. Accuracy would go up; the farmer would be stuck less. Imagine accountable prediction feeds for not only for rain, but also wind, sea temperature, road congestion, train delays, ETH prices, NVID prices, housing prices, and more. **Imagine tens of thousands of prediction feeds with accountable accuracy.** Imagine them **globally distributed**, and censorship resistant. Imagine **accuracy improving with time**. 
 
-## Introduction
+## What's Predictoor
 Ocean Predictoor is a stack and a dapp for prediction feeds. It has accountability for accuracy, via staking. It’s globally distributed and censorship-resistant, by being on-chain. We expect its accuracy to improve over time, due to its incentive structure. Its first use case is DeFi token prediction because users can close the data value-creation loop quickly to make tangible \$.  
 
-Predictoor is composed of different actors, often referred to as: predictoors and traders. You will learn in the [Predictoor Introduction](pdr-intro.md) page, you will out more about these actors, how they are structured in the system, and their behaviors. By the time you've completed reading this, you'll know what Epochs are, and have a better understand of what "t+1" means.
-
-## Architecture
-After obtaining a broad overview of the system and its actors, you should be ready to dive into [The Architecture of Predictoor](pdr-architecture.md) and the [pdr-backend repo](https://github.com/oceanprotocol/pdr-backend). You'll become more exposed to the key building blocks and pdr-backend, the integration component for Predictoors and Traders.
-
-We anticipate Predictoor to extend beyond DeFi to other verticals like climate and agriculture. Predictoor agents may evolve into AI DAOs with emergent swarm-like behavior. This is the future.
-
-## Earning with Predictoor
-Predictoor serves two groups of actors: Predictoors, and Traders. In this section, we'll explore [How to Earn with Predictoor](pdr-earn.md) and describe how both of these groups can benefit from it. After you are done with this, you should know what steps you need to take next in order to start leveraging the system for your own benefit.
-
-We'll also provide some links and exercise to make this easier for you.
-
-## Predictoor Parameters
-The [Predictoor Parameters page](pdr-parameters.md) will provide you with details on many topics such as incentives, feed costs, and deployed feeds.  
-
-You can find details about Oasis, Testnet, Mainnet, and how to bridge your OCEAN here.
-
-## FAQ
-
-The [FAQ page](pdr-faq.md) has frequently asked questions about Predictoor.
+Predictoor is composed of predictoors and traders. In the [Introduction](pdr-intro.md) page, you will out more about these actors, how they are structured in the system, and their behaviors. 
 
 ## Connect with Us
 If you want to talk to other Predictoors, Traders, and contributors to this ecosystem, [join us on Discord](https://discord.gg/TnXjkR5).
