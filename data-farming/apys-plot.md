@@ -28,7 +28,7 @@ The plot below shows estimated APY over time. It brings together data from the [
 
 # Notes
 
-[1] For better accuracy, one would need to account for Challenge DF and Predictoor DF. However, this gets more complex because Predictoor DF is highly dependent on prediction accuracy.
+[1] For better accuracy, one would need to account for Predictoor DF. However, this gets more complex because Predictoor DF is highly dependent on prediction accuracy.
 
 [2] We modeled OCEAN locked by observing linear growth from DF week 5 (when OCEAN locking was introduced) to week 28: OCEAN locked grew from 7.89M OCEAN to 34.98M OCEAN respectively, or 1.177M more OCEAN locked per week. The true values of OCEAN locked was last updated on DF week 29. For more accuracy, that could be updated to the values since then.
 

@@ -122,8 +122,6 @@
   * [Volume DF](data-farming/volumedf.md)
     * [Guide to Volume DF](data-farming/volumedf-guide.md)
     * [Delegation in Volume DF](data-farming/delegate.md)
-  * [Challenge DF](data-farming/challengedf.md)
-    * [Guide to Challenge DF](data-farming/challengedf-guide.md)
   * [Predictoor DF](data-farming/predictoordf.md)
     * [Guide to Predictoor DF](data-farming/predictoordf-guide.md)
   * [Claim Rewards](data-farming/claim-rewards.md)

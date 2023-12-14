@@ -21,8 +21,7 @@ Here are all streams & substreams. The links lead to dedicated pages.
 1. **[Passive DF](passivedf.md).** 75,000 OCEAN per week. Lock OCEAN for **veOCEAN**; rewards are pro-rata to veOCEAN holdings.
 1. **Active DF.** 75,000 OCEAN per week. It has these substreams:
    1. **[Volume DF](volumedf.md).** Allocate veOCEAN towards data assets with high DCV, ie "curate data". Rewards are a function of DCV and veOCEAN stake.
-   1. **[Challenge DF](challengedf.md).** Predict future ETH price, one-time weekly. Rewards are a function of accuracy. Runs from DF48 — DF66.
-   1. **[Predictoor DF](predictoordf.md).** Run prediction bots to earn continuously. Starts on DF63.
+   1. **[Predictoor DF](predictoordf.md).** Run prediction bots to earn continuously.
 
 All streams and substreams repeat **weekly** that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.
 
@@ -43,7 +42,6 @@ OCEAN rewards for all DF streams & substreams are on Ethereum mainnet. One excep
 Users engage in different networks, depending on the DF stream:
 - Passive DF: veOCEAN is deployed on Ethereum mainet. Users lock OCEAN for veOCEAN on Ethereum mainnet
 - Volume DF: users can allocate veOCEAN to data assets on Etherum mainnet, Polygon, BSC, Moonriver, Energy Web Chain, or Sapphire.
-- Challenge DF: users submit predictions on Mumbai (Polygon testnet).
 - Predictoor DF: users submit predictions on Sapphire. 
 
 The [networks docs](../discover/networks/README.md) have more info about networks.

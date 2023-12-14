@@ -30,13 +30,9 @@ Here are a couple ways to estimate APY from WPYs: _with_ compounding, and withou
 
 ### Estimating Passive DF APYs
 
-To make it easier to estimate your APY, [we have created a simple spreadsheet](https://docs.google.com/spreadsheets/d/1zzuW5pBbX6j6hZL_XtJDtSR2-rDHa_LGOEwgoQ4D8lk/edit?usp=sharing) that let's you easily estimate your Passive APY.
+The [Passive DF page](https://df.oceandao.org/passive-df) estimates profit & APY for you, as you explore different values of # OCEAN, lock time, and number of compounds. It accounts for gas costs.
 
-We have provided 2 sheets as an example of locking-up 10,000 OCEAN for:
-1. A 4-year investment period
-2. A 6-mo investment period
-
-The above are simplified examples meant for everyone to understand. They are naive investment strategies and are meant to provide you, the reader, with some examples to build upon. You can use these as a reference to create your own plan, so feel free to make a copy of this spreadsheet and customize it to your needs and wants.
+You'll find that if # OCEAN is too small or lock time is too short, profit and APY will be <0 because gas fees will overwhelm rewards. Conversely, higher OCEAN locked and longer lock times will make APY larger.
 
 ### Estimating Volume DF APYs
 
@@ -49,10 +45,6 @@ To help solve this challenge, [we built a dashboard](https://df.oceandao.org/vol
 <figure><img src="../.gitbook/assets/data-farming/curate-datasets.png" alt=""><figcaption><p>Curate like a Pro.</p></figcaption></figure>
 
 Finally, you can [review df-web code](https://github.com/oceanprotocol/df-web/blob/main/src/utils/rewards.js) to understand how the APYs on the UI are calculated.
-
-### Estimating Challenge DF APYs
-
-Challenge DF requires no OCEAN locked or staked, yet provides rewards if you win the prediction game. Therefore theoretically APY is infinity. We ignore Challenge DF for APY discussion.
 
 ### Estimating Predictoor DF APYs
 
