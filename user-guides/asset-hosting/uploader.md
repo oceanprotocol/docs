@@ -19,4 +19,4 @@ Ready to dive into the world of decentralized storage with [Ocean Uploader](http
 {% embed url="https://app.arcade.software/share/88CYjl3SPhTS20qKqBGU" fullWidth="false" %}
 {% endembed %}
 
-Woohoo 🎉 You did it! You now have an Arweave transaction ID for your asset. Pop on over to arweave.net/{YOUR_TXID} to admire your handiwork, you'll be able to access your file at that link. You can use that link to now go and publish your asset on [Ocean Market](../../developers/uploader/uploader-ui-marketplace.md).
+Woohoo 🎉 You did it! You now have an IPFS CID for your asset. Pop over to https://ipfs.oceanprotocol.com/ipfs/{CID} to admire your handiwork, you'll be able to access your file at that link. You can use it to publish your asset on [Ocean Market](../../developers/uploader/uploader-ui-marketplace.md).
