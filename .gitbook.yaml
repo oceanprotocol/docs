@@ -124,3 +124,5 @@ redirects:
     rewards/user-guides/how-to-estimate-apy: data-farming/README.md
     rewards/user-guides/how-to-veocean: data-farming/README.md
     rewards/user-guides/how-to-volumedf: data-farming/README.md
+    data-farming/challengedf: data-farming/README.md
+    data-farming/challengedf-guide: data-farming/README.md
