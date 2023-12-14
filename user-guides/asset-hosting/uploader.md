@@ -16,7 +16,7 @@ Currently we support Arweave and we will soon be releasing Filecoin support. In 
 
 Ready to dive into the world of decentralized storage with [Ocean Uploader](https://uploader.oceanprotocol.com/)? Let's get started:
 
-{% embed url="https://app.arcade.software/share/Hf5Fpy0dfJ4ame8OZOYl" fullWidth="false" %}
+{% embed url="https://app.arcade.software/share/88CYjl3SPhTS20qKqBGU" fullWidth="false" %}
 {% endembed %}
 
 Woohoo 🎉 You did it! You now have an Arweave transaction ID for your asset. Pop on over to arweave.net/{YOUR_TXID} to admire your handiwork, you'll be able to access your file at that link. You can use that link to now go and publish your asset on [Ocean Market](../../developers/uploader/uploader-ui-marketplace.md).
