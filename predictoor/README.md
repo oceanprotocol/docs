@@ -24,5 +24,5 @@ Ocean Predictoor provides on-chain "prediction feeds" on whether ETH, BTC, etc w
 
 ## Next step
 
-If you're going through docs sequentially: next is [Introduction](pdr-intro.md)
+If you're going through docs sequentially: next is [Introduction](pdr-intro.md).
 
