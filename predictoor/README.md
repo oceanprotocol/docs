@@ -6,9 +6,15 @@ coverY: 0
 
 # Summary
 
-Run AI-powered prediction bots or trading bots on crypto price feeds to earn $.
 
-Ocean Predictoor provides on-chain "prediction feeds" on whether ETH, BTC, etc will rise in the next 5 min or 60 min. "Predictoors" submit predictions and stake on them; predictions are aggregated and sold to traders as alpha. Get started at https://predictoor.ai.
+> **Run AI-powered prediction bots or trading bots on crypto price feeds to earn $.**
+
+Ocean Predictoor provides on-chain "prediction feeds" on whether ETH, BTC, etc will rise in the next 5 min or 60 min. "**Predictoors**" submit predictions and stake on them; predictions are aggregated and sold to **traders** as alpha. Get started at [predictoor.ai](https://predictoor.ai).
+
+<div align="center">
+<figure><img src="../.gitbook/assets/predictoor/predictoor_ui_crop.png"></figure>
+</div>
+
 
 ## Quick Links
 
@@ -20,7 +26,7 @@ Ocean Predictoor provides on-chain "prediction feeds" on whether ETH, BTC, etc w
 - [Parameters](pdr-parameters.md) on price of feeds, more
 - [FAQ](pdr-faq.md) and [further resources](pdr-resources.md)
 
-**Connect.** [Join us on Discord](https://discord.gg/TnXjkR5) to chat with other predictoors, traders, or devs in the Predictoor ecosystem, .
+Finally, join us on [**Discord**](https://discord.gg/TnXjkR5) to chat with other predictoors, traders, or devs in the Predictoor ecosystem.
 
 ## Next step
 
