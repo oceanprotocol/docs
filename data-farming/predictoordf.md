@@ -11,7 +11,7 @@ description: >-
 
 **Predictoor DF** is a substream of Active DF that amplifies predictoors’ earnings, via extra sales to Ocean Predictoor data feeds.
 
-Predictoor DF has 37K OCEAN weekly rewards (ongoing) and 100K ROSE rewards (first 4 weeks).
+Predictoor DF has 37.5K OCEAN weekly rewards (ongoing) and 100K ROSE rewards (first 8 weeks).
 
 The higher baseline sales makes Volume DF and Passive DF more attractive.
 
@@ -35,9 +35,9 @@ Predictoor DF has two components: [OCEAN](https://oceanprotocol.com/about-us/oce
 
 ### OCEAN Rewards
 
-OCEAN payouts are 37,000 OCEAN/week, ongoing.
-- A special “DF buyer” bot purchases Predictoor feeds. It starts operating on Nov 9. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are  feeds: 10 x 5min, 10 x 1h.)
-- The OCEAN comes from the Ocean DF budget, as part of the 75,000 OCEAN/week for Active DF. The Volume DF budget has been adjusted to 37,000 OCEAN/week, and Challenge DF to 1,000 OCEAN/week. Here are details.
+OCEAN payouts are 37,500 OCEAN/week, ongoing.
+- A special “DF buyer” bot purchases Predictoor feeds. It started operating on Nov 9, 2023. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are  feeds: 10 x 5min, 10 x 1h.)
+- The OCEAN comes from the Ocean DF budget, as part of the 75,000 OCEAN/week for Active DF. 
 
 ### ROSE Rewards
 
@@ -86,7 +86,7 @@ Predictoor DF makes both `DCV` and `m` higher!
 - **`DCV` is higher:** the 37K OCEAN/week counts as consume volume
 - **`m` is higher:** publish market fee is 20% for prediction feeds
 
-Therefore `DCV_bound` is higher. Specifically: `DCV_bound = 37000 * (0.001 + 0.20) = 7437 OCEAN`. In other words, at least 7437 OCEAN is available for Volume DF in any given week.
+Therefore `DCV_bound` is higher. Specifically: `DCV_bound = 37500 * (0.001 + 0.20) = 7537.5 OCEAN`. In other words, at least 7537.5 OCEAN is available for Volume DF in any given week.
 
 ## Notes
 
