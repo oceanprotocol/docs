@@ -10,7 +10,15 @@ coverY: 0
 
 <figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
 
-### For Blockchain / Web3 Beginners
+These are guides to use Ocean, with no coding needed.
+
+**Contents:**
+- [For Blockchain Beginners](#for-blockchain-beginners)
+- [Using Ocean Market](#using-ocean-market)
+- [C2D in Ocean Market](#c2d-in-ocean-market)
+- [Host assets](#host-assets)
+
+### For Blockchain Beginners
 
 {% content-ref url="basic-concepts.md" %}
 [basic-concepts.md](basic-concepts.md)
@@ -29,9 +37,11 @@ coverY: 0
 {% endcontent-ref %}
 
 
-### Tokenize & sell your data
+### Using Ocean Market
 
-Buy, mint, and sell NFTs using the Ocean Market following the guides below.
+{% content-ref url="using-ocean-market.md" %}
+[using-ocean-market.md](using-ocean-market.md)
+{% endcontent-ref %}
 
 {% content-ref url="publish-data-nfts.md" %}
 [publish-data-nfts.md](publish-data-nfts.md)
@@ -41,16 +51,16 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 [buy-data-nfts.md](buy-data-nfts.md)
 {% endcontent-ref %}
 
+### C2D in Ocean Market
+
 {% content-ref url="compute-to-data/" %}
 [compute-to-data](compute-to-data/README.md)
 {% endcontent-ref %}
 
+### Host Assets
+
 {% content-ref url="asset-hosting/" %}
 [asset-hosting](asset-hosting/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="using-ocean-market.md" %}
-[using-ocean-market.md](using-ocean-market.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺
