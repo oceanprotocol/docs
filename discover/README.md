@@ -1,5 +1,5 @@
 ---
-description: Discover Ocean
+description: 
 cover: ../.gitbook/assets/cover/discover_banner.png
 coverY: 7.413145539906106
 ---

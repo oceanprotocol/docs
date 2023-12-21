@@ -1,8 +1,8 @@
 ---
-description: What can you do with Ocean?
+description: 
 ---
 
-**Contents**
+# What can you do with Ocean?
 
 This page shows things you can do with Ocean...
 - [As a builder](#what-builders-can-do)
@@ -36,9 +36,9 @@ Focus on the backend: make a Web3-native REST API. Like the token-gated dApps, c
 
 <details>
 
-<summary><mark style="color:orange;">Build Your Data Market</mark><br><br></summary>
+<summary><mark style="color:orange;">Build Your Data Market</mark></summary>
 
-You can do this by [forking Ocean Market code](../developers/build-a-marketplace/) to quickly get something good, or by building up from Ocean components for a more custom look.
+Build a decentralized data marketplace by [forking Ocean Market code](../developers/build-a-marketplace/) to quickly get something good, or by building up from Ocean components for a more custom look.
 
 </details>
 
@@ -54,7 +54,7 @@ To dive deeper, please go to [Developers page](../developers/README.md).
 
 <details>
 
-<summary><mark style="color:red;">Use Ocean in Python</mark><br><br></summary>
+<summary><mark style="color:red;">Use Ocean in Python</mark></summary>
 
 The **[ocean.py](../data-scientists/ocean.py/README.md)** library is built for the key environment of data scientists: Python. Use it to earn $ from your data, share your data, get more data from others, and see provenance of data usage.
 
@@ -63,7 +63,7 @@ The **[ocean.py](../data-scientists/ocean.py/README.md)** library is built for t
 
 <details>
 
-<summary><mark style="color:red;">Do crypto price predictions</mark><br><br></summary>
+<summary><mark style="color:red;">Do crypto price predictions</mark></summary>
 
 With [Ocean Predictoor](../predictoor/README.md), you submit predictions for the future price of BTC, ETH etc, and earn. The more accurate your predictions, the more $ you can earn.
 
@@ -72,7 +72,7 @@ With [Ocean Predictoor](../predictoor/README.md), you submit predictions for the
 
 <details>
 
-<summary><mark style="color:red;">Compete in a Data Challenge</mark><br><br></summary>
+<summary><mark style="color:red;">Compete in a Data Challenge</mark></summary>
 
 Ocean regularly offer [data science challenges](../data-scientists/join-a-data-challenge) on real-world problems. Showcase your skills, and earn $ prizes.
 
@@ -85,7 +85,7 @@ To dive deeper, please go to [Data Scientists page](../data-scientists/README.md
 
 <details>
 
-<summary><mark style="color:purple;">Earn Rewards via Data Farming</mark><br><br></summary>
+<summary><mark style="color:purple;">Earn Rewards via Data Farming</mark></summary>
 
 Ocean's [Data Farming](../data-farming/README.md) incentives program enables OCEAN holders to earn by locking OCEAN, and curating data.
 
@@ -95,7 +95,7 @@ Ocean's [Data Farming](../data-farming/README.md) incentives program enables OCE
 
 
 <details>
-<summary><mark style="color:blue;">Become an Ambassador</mark><br><br></summary>
+<summary><mark style="color:blue;">Become an Ambassador</mark></summary>
 
 As an ambassador, you are an advocate for the protocol, promoting its vision and mission. By sharing your knowledge and enthusiasm, you can educate others about the benefits of Ocean Protocol, inspiring them to join the ecosystem. As part of a global community of like-minded individuals, you gain access to exclusive resources, networking opportunities, and collaborations that further enhance your expertise in the data economy. Of course, the Ocean Protocol Ambassador Program rewards contributors with weekly bounties and discretionary grants for growing the Ocean Protocol communtiy worldwide.
 

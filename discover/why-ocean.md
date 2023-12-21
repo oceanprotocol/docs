@@ -1,8 +1,8 @@
 ---
-description: Why Ocean?
+description: 
 ---
 
-### Why Ocean
+### Why Ocean?
 
 Ocean was founded to level the playing field for AI and data.
 

@@ -1,5 +1,5 @@
 ---
-description: What is Ocean?
+description: 
 ---
 
 ### What is Ocean?
