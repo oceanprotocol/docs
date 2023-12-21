@@ -36,7 +36,7 @@ Focus on the backend: make a Web3-native REST API. Like the token-gated dApps, c
 
 <details>
 
-<summary><mark style="color:orange;">Build Your Data Market</mark></summary>
+<summary><mark style="color:purple;">Build Your Data Market</mark></summary>
 
 Build a decentralized data marketplace by [forking Ocean Market code](../developers/build-a-marketplace/) to quickly get something good, or by building up from Ocean components for a more custom look.
 
