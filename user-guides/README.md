@@ -12,19 +12,19 @@ coverY: 0
 
 ### For Blockchain / Web3 Beginners
 
-{% content-ref url="publish-data-nfts.md" %}
+{% content-ref url="basic-concepts.md" %}
 [basic-concepts.md](basic-concepts.md)
 {% endcontent-ref %}
 
-{% content-ref url="publish-data-nfts.md" %}
-[wallets/README.md.md](wallets/README.md.md)
+{% content-ref url="wallets/README.md" %}
+[wallets/README.md.md](wallets/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="publish-data-nfts.md" %}
-[wallets/metamask-setup.md.md](wallets/metamask-setup.md.md)
+{% content-ref url="wallets/metamask-setup.md" %}
+[wallets/metamask-setup.md](wallets/metamask-setup.md)
 {% endcontent-ref %}
 
-{% content-ref url="publish-data-nfts.md" %}
+{% content-ref url="wallets-and-ocean.md" %}
 [wallets-and-ocean.md](wallets-and-ocean.md)
 {% endcontent-ref %}
 
