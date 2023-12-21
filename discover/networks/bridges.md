@@ -8,8 +8,8 @@ description: Transfer tokens between two blockchain networks.
 A bridge is a mechanism that connects two or more separate blockchain networks, enabling communication and interoperability between them. Bridges can be designed to facilitate the transfer of assets, data, or messages between different blockchain networks that may operate on different protocols, and consensus mechanisms, or have different native currencies.
 
 This page covers:
-- [Celer Bridge](#celer-bridge) - bridge OCEAN from Eth mainnet <> Oasis Sapphire mainnet
-- [BNB Smart Chain Bridge](#bnb-smart-chain-bridge) - bridge OCEAN from Eth mainnet <> BNB Smart Chain
+- **Celer Bridge** - bridge OCEAN from Eth mainnet <> Oasis Sapphire mainnet
+- **BNB Smart Chain Bridge** - bridge OCEAN from Eth mainnet <> BNB Smart Chain
 
 For other bridges and networks, see the [Networks page](README.md).
 

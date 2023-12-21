@@ -16,20 +16,20 @@ You need the network's native token to pay for gas to make transactions: ETH for
 Here are the networks that Ocean is deployed to.
 
 **Production Networks:**
-- [Ethereum mainnet](#ethereum-mainnet)
-- [Polygon mainnet](#polygon-mainnet)
-- [Oasis Sapphire mainnet](#oasis-sapphire-mainnet)
-- [BNB Smart Chain](#bnb-smart-chain)
-- [Energy Web Chain](#energy-web-chain)
-- [Optimism Mainnet](#optimism-mainnet)
-- [Moonriver](#moonriver)
+- Ethereum mainnet
+- Polygon mainnet
+- Oasis Sapphire mainnet
+- BNB Smart Chain
+- Energy Web Chain
+- Optimism Mainnet
+- Moonriver
 
 **Test Networks:**
-- [Görli](#görli)
-- [Sepolia](#sepolia)
-- [Mumbai](#mumbai)
-- [Oasis Sapphire testnet](#oasis-sapphire-testnet)
-- [Optimism Sepolia](#optimism-sepolia)
+- Görli
+- Sepolia
+- Mumbai
+- Oasis Sapphire testnet
+- Optimism Sepolia
 
 The rest of this doc gives details for each network. You can skip it until you need the reference information.
 

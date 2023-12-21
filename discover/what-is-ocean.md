@@ -7,12 +7,12 @@ description:
 Ocean is a decentralized data exchange protocol and community.
 
 Specifically, it has two parts:
-- A live tech stack. At the core is [Datatokens](#ocean-data-nfts-and-datatokens) and [Compute-to-Data](#ocean-compute-to-data)
-- A lively community. This includes [builders, data scientists, OCEAN holders](#ocean-ecosystem), and [Ocean Ambassadors](#ocean-ambassadors)
+- A live tech stack. At the core is **Datatokens** and **Compute-to-Data**
+- A lively community. This includes **builders, data scientists, OCEAN holders**, and **Ocean Ambassadors**
 
 Let's drill into each.
 
-### Ocean data NFTs and datatokens
+### Tech: Ocean data NFTs and datatokens
 
 These enable decentralized access control, via token-gating. Key principles:
 
@@ -26,7 +26,7 @@ Crypto wallets, exchanges, and DAOs become _data_ wallets, exchanges, and DAOs.
 
 Data can be on Azure or AWS, Filecoin or Arweave, REST APIs or smart contract feeds. Data may be raw AI training data, feature vectors, trained models, even AI model predictions, or non-AI data.
 
-### Ocean Compute-to-Data
+### Tech: Ocean Compute-to-Data
 
 This enables one buy & sell private data, while preserving privacy
 - Private data is valuable: using it can improve research and business outcomes. But concerns over privacy and control make it hard to access.
@@ -38,7 +38,7 @@ This enables one buy & sell private data, while preserving privacy
 <figure><img src="../.gitbook/assets/c2d/c2d-mental-model.png" alt=""><figcaption>Compute-to-Data flow</figcaption></figure>
 
 
-### Ocean Ecosystem
+### Community: Ocean Ecosystem
 
 Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of dapps grown over years, built by enthusiastic developers.
 
@@ -46,7 +46,7 @@ Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of d
 
 The Ocean ecosystem also contains many data scientists and OCEAN holders, excited about the future of AI & data. You can find them doing predictions, data challenges, Data Farming, and more.
 
-### Ocean Ambassadors
+### Community: Ocean Ambassadors
 
 Ocean has an excellent [community of ambassadors](https://oceanprotocol.com/explore/community). Anyone can join.
 

@@ -13,11 +13,13 @@ coverY: 0
 These are guides to use Ocean, with no coding needed.
 
 **Contents:**
-- [Basic concepts](#basic-concepts)
-- [Using wallets](#using-wallets)
-- [Using Ocean Market](#using-ocean-market)
-- [C2D in Ocean Market](#c2d-in-ocean-market)
-- [Host assets](#host-assets)
+- Basic concepts
+- Using wallets
+- Using Ocean Market
+- C2D in Ocean Market
+- Host assets
+
+Let's dive in!
 
 ### Basic concepts
 

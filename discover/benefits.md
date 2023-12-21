@@ -5,10 +5,12 @@ description:
 # What can you do with Ocean?
 
 This page shows things you can do with Ocean...
-- [As a builder](#what-builders-can-do)
-- [As a data scientist](#what-data-scientists-can-do)
-- [As an OCEAN holder](#what-ocean-holders-can-do)
-- [Become an Ocean ambassador](#become-an-ocean-ambassador)
+- As a builder
+- As a data scientist
+- As an OCEAN holder
+- Become an Ocean ambassador
+
+Let's explore each...
 
 ### What builders can do
 

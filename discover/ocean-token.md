@@ -7,12 +7,11 @@ description:
 OCEAN is a utility token. It's used to stake on data for curation, buy & sell data, and more. Its supply is disbursed over time to drive near-term growth and long-term sustainability.
 
 **Contents:**
-- [Getting and storing OCEAN](#getting-and-storing-ocean)
-- [Staking OCEAN](#staking-ocean)
-- [OCEAN supply](#ocean-supply)
-- [Token design](#ocean-token-design)
-- [OCEAN addresses](#ocean-addresses)
-
+- Getting and storing OCEAN
+- Staking OCEAN
+- OCEAN supply
+- Token design
+- OCEAN addresses
 
 <figure><img src="../.gitbook/assets/general/purchase-and-compute_and_ocean-network.png" alt=""></figure>
 
