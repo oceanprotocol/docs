@@ -7,8 +7,8 @@ description:
 Ocean is a decentralized data exchange protocol and community.
 
 Specifically, it has two parts:
-- A live tech stack. At the core is [Datatokens](#ocean-data-nfts-and-datatokens) and [Compute-to-data](#ocean-compute-to-data)
-- A lively community. This includes [Builders, data scientists, OCEAN holders](#ocean-ecosystem), and [Ambassadors](#ocean-ambassadors)
+- A live tech stack. At the core is [Datatokens](#ocean-data-nfts-and-datatokens) and [Compute-to-Data](#ocean-compute-to-data)
+- A lively community. This includes [builders, data scientists, OCEAN holders](#ocean-ecosystem), and [Ocean Ambassadors](#ocean-ambassadors)
 
 Let's drill into each.
 
