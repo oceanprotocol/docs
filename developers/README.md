@@ -1,24 +1,47 @@
 ---
-description: >-
-  Your resource hub for diving deep into the core concepts, exploring main
-  components, and accessing practical examples and integration guides to unleash
-  the power of Ocean Protocol in your applications
+description: Token-gated AI dApps & APIs
 cover: ../.gitbook/assets/cover/developer_banner.png
 coverY: 0
 ---
 
 # 👨💻 Developers
 
-With Ocean, crypto wallets transform into magical data wallets, where your data can roam freely and securely. Crypto exchanges? Well, they've taken on a new role as data marketplaces, where you can showcase and trade your valuable data treasures. And hold on tight because DAOs are here to create epic data co-ops, where collaboration and innovation reign supreme! 🤝
+### What can a developer build?
 
-But hold on tight, because we have even more in store for you! With Ocean Protocol, you gain access to a treasure trove of tools that will unlock your data scientist superpowers and allow you to unleash your creativity. Whether you're a Python aficionado or a JavaScript maestro, we have you covered with [ocean.py](../data-scientists/ocean.py/README.md) and [ocean.js](ocean.js/README.md) libraries. So, get ready to dive into the depths of data innovation and create the next groundbreaking dAapp (that's a decentralized App, by the way) using [ocean.js's](ocean.js/README.md) powerful capabilities or unleash your skills with [ocean.py](../data-scientists/ocean.py/README.md). It's time to shake up the data world like never before! 🌐🚀
+1. **Token-gated dApps & REST APIs**: monetize by making your dApp or its REST API token-gated. [Here's how](https://github.com/oceanprotocol/token-gating-template).
+1. **AI dApps**: monetize your AI dApp by token-gating on AI training data, feature vectors, models, or predictions.
+1. **Data Markets**: build a decentralized [data market](../developers/build-a-marketplace/README.md).
+1. **Private user profile data**: storing user profile data on your centralized server exposes you to liability. Instead, have it on-chain encrypted by the user's wallet, and just-in-time decrypt for the app. [Video](https://www.youtube.com/watch?v=xTfI8spLq1k&ab_channel=ParticleNetwork), [slides](https://docs.google.com/presentation/d/1_lkDVUkA0Rx1R7RpkaSeLkX3PeOBoMQyRhvxjwTvd6A/edit?usp=sharing).
 
-<figure><img src="../.gitbook/assets/general/developers.png" alt=""><figcaption><p>Ocean Protocol Explorer</p></figcaption></figure>
+### Example live dApps
 
-At the core of the Ocean Protocol, you'll find a constellation of [smart contracts](contracts/README.md) that bring extraordinary capabilities to every data asset. Here's where the magic happens! Every asset gets its own cool and unique [**ERC721 data NFT**](contracts/data-nfts.md#what-is-a-data-nft), along with one (or more) [**ERC20 datatokens**](contracts/datanft-and-datatoken.md). It's like giving your data its very own superhero cape! 🦸‍♂️
+- [Acentrik Market](https://market.acentrik.io/) - Enterprise data market, by Daimler
+- [Ocean Predictoor](https://predictoor.ai) - Token-gated AI prediction feeds
+- [Autobot](https://autobotocean.com/) - Token-gated analytics on [Data Farming](../data-farming/README.md)
+- [Ocean Waves](https://waves.oceanprotocol.com/) - Token-gated music market
+- [Ocean token-gating](https://tokengate.oceanprotocol.com/) - Token-gated [content](https://github.com/oceanprotocol/token-gating-template)
+- [Ocean Market](https://market.oceanprotocol.com) - General data market
 
-These [smart contracts](contracts/README.md) form the backbone of Ocean Protocol, empowering data assets with unparalleled value and enabling seamless integration with the wider blockchain ecosystem. Through the [contracts](contracts/README.md), data becomes not only valuable but also tradable, allowing you to unleash the true potential of your data treasures.
+### How do developers start using Ocean?
 
-<figure><img src="../.gitbook/assets/contracts/smart-contracts.png" alt=""><figcaption><p>Smart Contracts</p></figcaption></figure>
+- Highest-level: **[Use an Ocean Template](https://oceanprotocol.com/templates)**.
+- Library level: **[Use ocean.js](ocean.js/README.md)** is a library built for the key environment of dApp developers: JavaScript. Import it & use it your frontend or NodeJS.
+- Contracts level: **[Call Ocean contracts](contracts.md)** on Eth mainnet [and several other chains](../discover/networks.md).
 
-Now, if you're new to the world of web3 and blockchain technologies, fear not! We've got you covered. Before diving into the depths of Ocean Protocol, we recommend starting with some introductory guides. These [guides](../user-guides/README.md) will gently introduce you to the magical world of [web3](../discover/wallets/README.md) and help you understand the [basics](../discover/wallets-and-ocean.md) before you embark on your epic data-driven adventure.
+### Quick links for developers
+
+- [Architecture](architecture.md) - blockchain & contracts layer, middleware, dapps
+- Earning revenue: [code to collect payment](revenue.md), [fractional](fractional-ownership.md), [community $](community-monetization)
+- Schemas: [Metadata](metadata.md), [identifiers/DIDs](identifiers.md), [identifier objects/DDOs](ddo-specification.md), [storage](storage.md), [fine-grained permissions](fg-permissions.md)
+- Components:
+  - [Barge](barge.md) - local chain for testing
+  - [Ocean subgraph](subgraph.md) - grabbing event data from the chain
+  - [Ocean CLI](ocean-cli.md) - command-line interface
+  - [Compute-to-data](compute-to-data.md) - practical privacy approach
+  - [Aquarius](aquarius.md) - metadata cache
+  - [Provider](provider.md) - handshaking for access control
+- [FAQ](faq.md) 
+
+----
+
+_Next: [Architecture](architecture.md)_

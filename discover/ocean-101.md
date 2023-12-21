@@ -1,31 +1,120 @@
-# Ocean 101
+---
+description: What can you do with Ocean?
+---
 
-<figure><img src="../.gitbook/assets/gif/giphy.gif" alt=""><figcaption><p>Let's see how it works</p></figcaption></figure>
+**Contents**
 
-## How Does Ocean Work?
+This page shows things you can do with Ocean...
+- [As a builder](#what-builders-can-do)
+- [As a data scientist](#what-data-scientists-can-do)
+- [As an OCEAN holder](#what-ocean-holders-can-do)
+- [Become an Ocean ambassador](#become-an-ocean-ambassador)
 
-Ocean Protocol utilizes a combination of blockchain technology, decentralized networks, and cryptographic techniques to facilitate secure and privacy-preserving data sharing. Here's an overview of how Ocean works:
+### What builders can do
 
-1. **Asset Registration**: Data providers register their data assets on the Ocean blockchain, providing metadata that describes the asset, its usage terms, and pricing information. This metadata is stored on-chain and can be accessed by potential data consumers.
-2. **Discovery and Access Control**: Data consumers can discover available data assets through decentralized metadata services like Aquarius. Access control mechanisms, such as smart contracts, verify the consumer's permissions and handle the transfer of data access tokens.
-3. **Secure Data Exchange**: When a data consumer purchases access to a data asset, the asset's metadata, and access instructions are encrypted by the data provider using the Provider service. The encrypted asset is then securely transferred to the consumer, who can decrypt and utilize it without revealing the asset's URL.
-4. [**Compute-to-Data**](../developers/compute-to-data/README.md) **(C2D)**: Ocean Protocol supports C2D capabilities, allowing data consumers to perform computations on data assets without direct access to the underlying data. The compute operations are executed in a secure and controlled environment, ensuring data privacy and compliance.
-5. **Incentives and Governance**: Ocean Protocol incorporates tokenomics and a governance framework to incentivize participants and ensure the sustainability and evolution of the ecosystem. Participants can earn and stake OCEAN for veOCEAN, curate data, contribute to the network and participate in governance decisions.
+<figure><img src="../.gitbook/assets/general/dapps.png" alt=""></figure>
 
-Ocean Protocol also combines advanced technologies and web components to create a robust and efficient data ecosystem.
+<details>
 
-<figure><img src="../.gitbook/assets/architecture/Ocean101.png" alt=""><figcaption><p>Ocean architectural overview </p></figcaption></figure>
+<summary><mark style="color:purple;">Build Your Token-gated AI dApp</mark></summary>
 
-Powerful libraries such as [Ocean.js](../developers/ocean.js/README.md) (JavaScript) and [Ocean.py](../data-scientists/ocean.py/README.md) (Python) facilitate seamless integration and interaction with the protocol, offering a wide range of functionalities.
+Monetize by making your dApp token-gated. Users no longer have to use credit cards or manage OAuth credentials. Rather, they buy & spend ERC20 datatokens to access your dApp content.
 
-Ocean Protocol incorporates middleware components that enhance efficiency and streamline interactions. Components such as [Aquarius](../developers/aquarius/README.md) act as a metadata cache, improving search efficiency by caching on-chain data into Elasticsearch while [Provider](../developers/provider/README.md) plays a crucial role in various ecosystem operations, assisting in asset downloading, handling encryption of [Decentralized Data Objects](../developers/ddo-specification.md) (DDOs), and facilitating communication with the operator-service for Compute-to-Data jobs. And finally, the [Subgraph](../developers/subgraph/README.md), an off-chain service leveraging GraphQL, offers efficient access to information related to datatokens, users, and balances.
+Go further yet: rather than storing user profile data on your centralized server -- which exposes you to liability --  have it on-chain encrypted by the user's wallet, and just-in-time decrypt for the app.
 
-These libraries and middleware components contribute to efficient data discovery and secure interactions within the Ocean Protocol ecosystem.
+</details>
 
-By leveraging these tools and technologies, developers can harness the power of decentralized data while creating innovative applications and unlocking the true value of data assets.
 
-<figure><img src="../.gitbook/assets/architecture/decentralized_exchanges_marketplaces.png" alt=""><figcaption><p>Build dApps with Ocean</p></figcaption></figure>
+<details>
 
-Ocean Protocol gives people and organizations the power to unleash the true value of their data. With its decentralized marketplaces, rock-solid data-sharing technologies, and privacy protection measures, Ocean Protocol opens the door for collaboration, sparks innovation, and encourages responsible and ethical data usage.
+<summary><mark style="color:purple;">Build Your Token-gated REST API</mark></summary>
 
-It's all about making data work for everyone in a fair and transparent data economy.
+Focus on the backend: make a Web3-native REST API. Like the token-gated dApps, consumers of the REST API buy access with crypto, not credit cards.
+
+</details>
+
+
+<details>
+
+<summary><mark style="color:orange;">Build Your Data Market</mark><br><br></summary>
+
+You have two options:
+
+1. **[Fork Ocean Market**](https://github.com/oceanprotocol/market) **and customize it**: Start with the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../developers/build-a-marketplace/) to learn how to do it.
+2. **Build from Ocean components**: In this fashion, you'll be creating a custom data market experience while leveraging the Ocean stack.
+
+</details>
+
+To dive deeper, please go to [Developers page](../developers/README.md).
+
+
+
+### What data scientists can do
+
+<div align="center">
+<figure><img src="../.gitbook/assets/predictoor/predictoor_ui_crop.png"></figure>
+</div>
+
+<details>
+
+<summary><mark style="color:red;">Use Ocean in Python</mark><br><br></summary>
+
+The **[ocean.py](../data-scientists/ocean.py/README.md)** library is built for the key environment of data scientists: Python. Use it to earn $ from your data, share your data, get more data from others, and see provenance of data usage.
+
+</details>
+
+
+<details>
+
+<summary><mark style="color:red;">Do crypto price predictions</mark><br><br></summary>
+
+With [Ocean Predictoor](../predictoor/README.md), you submit predictions for the future price of BTC, ETH etc, and earn. The more accurate your predictions, the more $ you can earn.
+
+</details>
+
+
+<details>
+
+<summary><mark style="color:red;">Compete in a Data Challenge</mark><br><br></summary>
+
+Ocean regularly offer [data science challenges](../data-scientists/join-a-data-challenge) on real-world problems. Showcase your skills, and earn $ prizes.
+
+</details>
+
+To dive deeper, please go to [Data Scientists page](../data-scientists/README.md).
+
+
+### What OCEAN holders can do
+
+<details>
+
+<summary><mark style="color:purple;">Earn Rewards</mark><br><br></summary>
+
+Via [Data Farming](../data-farming/README.md), earn rewards by locking OCEAN & curating data.
+
+</details>
+
+### Become an Ocean Ambassador
+
+
+<details>
+<summary><mark style="color:blue;">Become an Ambassador</mark><br><br></summary>
+
+As an ambassador, you are an advocate for the protocol, promoting its vision and mission. By sharing your knowledge and enthusiasm, you can educate others about the benefits of Ocean Protocol, inspiring them to join the ecosystem. As part of a global community of like-minded individuals, you gain access to exclusive resources, networking opportunities, and collaborations that further enhance your expertise in the data economy. Of course, the Ocean Protocol Ambassador Program rewards contributors with weekly bounties and discretionary grants for growing the Ocean Protocol communtiy worldwide.
+
+Follow the steps below to become an ambassador:
+
+To become a member of the Ambassador Program, follow these steps: 
+1. Join Ocean Protocol's [Discord](https://discord.com/invite/TnXjkR5) server
+2. Join the Discord channel called #treasure-hunter. 
+3. Access the application form: "[Apply](https://discord.com/channels/612953348487905282/1133478278531911790) to use this channel."
+4. Answer the questions in the application form. 
+5. Once you've completed the application process, you can start earning experience points (XP) by actively engaging in discussions on various topics related to the Ocean Protocol.
+</details>
+
+
+----
+
+_Next: If you're a blockchain newcomer, go to [Basic Concepts](basic-concepts.md). Otherwise jump to [Docs main](../README.md) and drill into your interest._
+
+_Back: [Ocean Why & What](explore.md)_
