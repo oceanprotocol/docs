@@ -13,16 +13,21 @@ coverY: 0
 These are guides to use Ocean, with no coding needed.
 
 **Contents:**
-- [For Blockchain Beginners](#for-blockchain-beginners)
+- [Basic concepts](#basic-concepts)
+- [Using wallets](#using-wallets)
 - [Using Ocean Market](#using-ocean-market)
 - [C2D in Ocean Market](#c2d-in-ocean-market)
 - [Host assets](#host-assets)
 
-### For Blockchain Beginners
+### Basic concepts
+
+For blockchain beginners
 
 {% content-ref url="basic-concepts.md" %}
 [basic-concepts.md](basic-concepts.md)
 {% endcontent-ref %}
+
+### Using wallets
 
 {% content-ref url="wallets/README.md" %}
 [wallets/README.md.md](wallets/README.md)
