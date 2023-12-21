@@ -38,10 +38,7 @@ Focus on the backend: make a Web3-native REST API. Like the token-gated dApps, c
 
 <summary><mark style="color:orange;">Build Your Data Market</mark><br><br></summary>
 
-You have two options:
-
-1. **[Fork Ocean Market**](https://github.com/oceanprotocol/market) **and customize it**: Start with the existing [Ocean Marketplace](https://github.com/oceanprotocol/market) codebase and customize it. This allows you to leverage the foundational infrastructure and functionality already built by Ocean Protocol while tailoring the user interface, features, and branding to align with your marketplace vision. Follow this [tutorial](../developers/build-a-marketplace/) to learn how to do it.
-2. **Build from Ocean components**: In this fashion, you'll be creating a custom data market experience while leveraging the Ocean stack.
+You can do this by [forking Ocean Market code](../developers/build-a-marketplace/) to quickly get something good, or by building up from Ocean components for a more custom look.
 
 </details>
 
@@ -88,9 +85,9 @@ To dive deeper, please go to [Data Scientists page](../data-scientists/README.md
 
 <details>
 
-<summary><mark style="color:purple;">Earn Rewards</mark><br><br></summary>
+<summary><mark style="color:purple;">Earn Rewards via Data Farming</mark><br><br></summary>
 
-Via [Data Farming](../data-farming/README.md), earn rewards by locking OCEAN & curating data.
+Ocean's [Data Farming](../data-farming/README.md) incentives program enables OCEAN holders to earn by locking OCEAN, and curating data.
 
 </details>
 
@@ -115,6 +112,6 @@ To become a member of the Ambassador Program, follow these steps:
 
 ----
 
-_Next: If you're a blockchain newcomer, go to [Basic Concepts](basic-concepts.md). Otherwise jump to [Docs main](../README.md) and drill into your interest._
+_Next: If you're a blockchain newcomer, go to [User Guides](../user-guides/README.md). Otherwise jump to [Docs main](../README.md) and drill into your interest._
 
 _Back: [Ocean Why & What](explore.md)_

@@ -1,5 +1,5 @@
 ---
-description: Why Ocean Protocol?
+description: Discover Ocean
 cover: ../.gitbook/assets/cover/discover_banner.png
 coverY: 7.413145539906106
 ---
@@ -11,7 +11,7 @@ Ocean's mission is to level the playing field for AI and data.
 How? **By helping _you_ monetize AI models and data, while preserving privacy.**
 
 Ocean is a decentralized data exchange protocol. Its core tech is:
-- Data NFTs & datatokens: an on-ramp and off-ramp for data assets into DeFi. MetaMask is now a data wallet; Gnosis Safe a data DAO.
+- Data NFTs & datatokens, to enable token-gated access control, data wallets, data DAOs, and more.
 - Compute-to-data: buy & sell private data, while preserving privacy
 
 **Ocean users are:**
