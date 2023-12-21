@@ -1,9 +1,10 @@
 # Table of contents
 
 - [👋 Welcome](README.md)
-- [🌊 Discover](discover/README.md)
-  - [Explore](discover/explore.md)
-  - [Ocean 101](discover/ocean-101.md)
+- [🌊 Discover Ocean](discover/README.md)
+  - [Why Ocean?](discover/why-ocean.md)
+  - [What is Ocean?](discover/what-is-ocean.md)
+  - [What can you do with Ocean?](discover/benefits.md)
   - [Basic Concepts](discover/basic-concepts.md)
   - [Wallets](discover/wallets/README.md)
     - [Set Up MetaMask Wallet](discover/wallets/metamask-setup.md)

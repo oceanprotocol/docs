@@ -1,29 +1,16 @@
 ---
-description: Ocean Why & What
+description: What is Ocean?
 ---
 
-**Contents**
+### What is Ocean?
 
-- [Why Ocean](#why-ocean)
-- [What's Ocean](#whats-ocean)
-  - Tech core: [Datatokens](#ocean-data-nfts-and-datatokens) and [Compute-to-data](#ocean-compute-to-data)
-  - Community: [Builders & dapp ecosystem](#builders-and-dapps-ecosystem.md), [Ambassadors](#ocean-ambassadors)
+Ocean is a decentralized data exchange protocol and community.
 
-### Why Ocean
+Specifically, it has two parts:
+- A live tech stack. At the core is [Datatokens](#ocean-data-nfts-and-datatokens) and [Compute-to-data](#ocean-compute-to-data)
+- A lively community. This includes [Builders, data scientists, OCEAN holders](#ocean-ecosystem), and [Ambassadors](#ocean-ambassadors)
 
-Ocean was founded to level the playing field for AI and data.
-
-{% embed url="https://youtu.be/4P72ZelkEpQ" %}
-
-To dive deeper, see [this blog](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8) or [this video](https://youtu.be/XN_PHg1K61w).
-
-### What's Ocean?
-
-Ocean is a decentralized data exchange protocol.
-
-The core of Ocean tech is data NFTs & datatokens, and Compute-to-Data. Let's drill into each, including benefits.
-
-Ocean's also a community of people: builders, data scientists, and more who care deeply about the future of data & AI.
+Let's drill into each.
 
 ### Ocean data NFTs and datatokens
 
@@ -51,13 +38,13 @@ This enables one buy & sell private data, while preserving privacy
 <figure><img src="../.gitbook/assets/c2d/c2d-mental-model.png" alt=""><figcaption>Compute-to-Data flow</figcaption></figure>
 
 
-### Builders and Dapps Ecosystem
+### Ocean Ecosystem
 
-Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of dapps grown over years, from enthusiastic builders.
+Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of dapps grown over years, built by enthusiastic developers.
 
 <figure><img src="../.gitbook/assets/general/builders.png" alt=""></figure>
 
-This ecosystem also contains many data scientists and OCEAN holders, all excited about the future of AI & data. You can find them doing predictions, data challenges, Data Farming, and more.
+The Ocean ecosystem also contains many data scientists and OCEAN holders, excited about the future of AI & data. You can find them doing predictions, data challenges, Data Farming, and more.
 
 ### Ocean Ambassadors
 
@@ -66,9 +53,8 @@ Ocean has an excellent [community of ambassadors](https://oceanprotocol.com/expl
 <figure><img src="../.gitbook/assets/general/ambassadors.png" alt=""></figure>
 
 
-
 ----
 
-_Next: [What can you do with Ocean?](ocean-101.md)_
+_Next: [What can you do with Ocean?](benefits.md)_
 
-_Back: [Discover Ocean](README.md)_
+_Back: [Why Ocean?](why-ocean.md)_

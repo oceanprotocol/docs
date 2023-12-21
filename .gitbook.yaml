@@ -15,6 +15,8 @@ redirects:
     core-concepts/did-ddo: developers/identifiers.md
     concepts/ocean-tokens/: discover/basic-concepts.md
     tutorials/wallets-and-ocean-tokens: discover/wallets-and-ocean.md
+    discover/explore: discover/README.md
+    discover/ocean-101: discover/README.md
     using-ocean-market: user-guides/using-ocean-market.md
     using-ocean-market/marketplace-publish-data-asset: user-guides/publish-data-nfts.md
     using-ocean-market/marketplace-download-data-asset: user-guides/buy-data-nfts.md
