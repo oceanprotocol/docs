@@ -28,5 +28,8 @@ In Predictoor DF (and Predictoor proper), you run prediction bots to earn contin
 - ⚠️ **To be eligible** for a given DF round: you MUST run [OCEAN payout script](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) <= 4 days after the round ends, i.e. between Thu 00:00 UTC & Sun 11:59 PM UTC
 - **To claim:** See the [payout README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) for specific instructions.
 
+----
 
+_Next: [Claim Rewards](claim-rewards.md)_
 
+_Back: [Predictoor DF](predictoordf.md)_

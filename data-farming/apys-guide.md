@@ -67,3 +67,10 @@ Where in Predictoor and Predictoor DF, values are:
 **Rapid compounding.** In other DF streams, rewards come weekly; so compounding is weekly. In Predictoor and Predictoor DF, a predictoor's revenue (rewards) come every epoch (every 5min or 1h). Therefore compounding in Predictoor could be _very_ fast, for much healthier yields yet.
 
 **Estimation fidelity.** Since Predictoor is so young, we don't have detailed estimates of Predictoor APYs yet. We're excited to see where this takes us:)
+
+
+----
+
+_Next: [FAQ](faq.md)_
+
+_Back: [APYs](apys.md)_

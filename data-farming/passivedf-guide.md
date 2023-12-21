@@ -49,3 +49,11 @@ In this step you will:
 - Accept the transaction in your wallet.
 
 Congratulations! You have now locked your OCEAN for veOCEAN and are generating passive yield automatically. You can [claim your passive OCEAN rewards](claim-rewards.md) every Thursday - note that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
+
+
+----
+
+_Next: [Liquid Staking](liquid-staking.md)_
+
+_Back: [Passive DF (and veOCEAN)](passivedf.md)_
+

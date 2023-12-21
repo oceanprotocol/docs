@@ -52,3 +52,10 @@ The [networks docs](../discover/networks/README.md) have more info about network
 - Main DF github repos: [df-py (backend)](https://github.com/oceanprotocol/df-py), [df-web (frontend)](https://github.com/oceanprotocol/df-web)
 - The [Ocean Data Farming Series](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) blog has a chronological account of all Data Farming activities since its inception. It links to related blog posts.
 
+
+----
+
+_Next: [Passive DF (and veOCEAN)](passivedf.md)_
+
+_Back: [Docs main](../README.md)_
+

@@ -100,3 +100,10 @@ We have built [a new contract](https://github.com/oceanprotocol/contracts/blob/m
 
 We have an [ongoing bug bounty via Immunefi](https://immunefi.com/bounty/oceanprotocol/) for Ocean software, including veOCEAN and DF components. If you identify an issue, please report it there and get rewarded.
 
+
+----
+
+_Next: [Guide to Passive DF](passivedf-guide.md)_
+
+_Back: [DF Main](README.md)_
+

@@ -285,3 +285,11 @@ veFeeDistributor has a start\_time of 1663804800 (Thu Sep 22 2022 00:00:00).
 ## Notes
 
 [1] The initial version of Data Farming - in DF Alpha phase (DF1-DF4) - _did_ involve providing liquidity to datatoken pools, and therefore did incur risk of Impermanent Loss (IL). For this reason and others, we moved away from pools, to veOCEAN for the DF/VE Alpha phase and beyond (>=DF5). Therefore there has been no IL risk since then. [Here are details](https://blog.oceanprotocol.com/veocean-is-launching-data-farming-is-resuming-abed779211e3).
+
+----
+
+Congrats! You've completed reading Data Farming docs.
+
+_Next: Jump to [Docs main](../README.md) and click on your interest._
+
+_Back: [APYs Guide](apys-guide.md)_
