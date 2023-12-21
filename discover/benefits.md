@@ -112,8 +112,6 @@ To become a member of the Ambassador Program, follow these steps:
 
 ----
 
-Congrats! You've completed this quick introduction to Ocean.
-
-_Next: If you're a blockchain newcomer, go to [User Guides](../user-guides/README.md). Otherwise jump to [Docs main](../README.md) and click on your interest._
+_Next: [OCEAN: The Ocean token](ocean-token.md)_
 
 _Back: [What is Ocean?](what-is-ocean.md)_

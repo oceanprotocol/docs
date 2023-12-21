@@ -28,7 +28,11 @@ Ocean Predictoor provides on-chain "prediction feeds" on whether ETH, BTC, etc w
 
 Finally, join us on [**Discord**](https://discord.gg/TnXjkR5) to chat with other predictoors, traders, or devs in the Predictoor ecosystem.
 
-## Next step
 
-If you're going through docs sequentially: next is [Introduction](pdr-intro.md).
+----
+
+_Next: [Introduction](pdr-intro.md)_
+
+_Back: [Docs main](../README.md)_
+
 

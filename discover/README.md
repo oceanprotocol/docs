@@ -14,11 +14,20 @@ Ocean is a decentralized data exchange protocol. Its core tech is:
 - Data NFTs & datatokens, to enable token-gated access control, data wallets, data DAOs, and more.
 - Compute-to-data: buy & sell private data, while preserving privacy
 
-**Ocean users are:**
+### Ocean Users Are...
+
 - **[Developers](../developers/README.md).** Build token-gated AI dApps & APIs
 - **[Data scientists](../data-scientists/README.md).** Earn via predictions & challenges
 - **[OCEAN holders](../data-farming/README.md).** Get rewards by locking OCEAN & curating data, via Data Farming.
-- **[Ocean ambassadors](https://oceanprotocol.com/explore/community)** 
+- **[Ocean ambassadors](https://oceanprotocol.com/explore/community)**
+
+### Quick Links
+
+- [Why Ocean?](why-ocean.md) and [What is Ocean?](what-is-ocean.md)
+- [What can you do with Ocean?](benefits.md)
+- [OCEAN: The Ocean token](ocean-token.md)
+- [Networks](networks/README.md), [Bridges](networks/bridges.md)
+- [FAQ](faq.md), [Glossary](glossary.md)
 
 ----
 

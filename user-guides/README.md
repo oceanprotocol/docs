@@ -10,6 +10,25 @@ coverY: 0
 
 <figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
 
+### For Blockchain / Web3 Beginners
+
+{% content-ref url="publish-data-nfts.md" %}
+[basic-concepts.md](basic-concepts.md)
+{% endcontent-ref %}
+
+{% content-ref url="publish-data-nfts.md" %}
+[wallets/README.md.md](wallets/README.md.md)
+{% endcontent-ref %}
+
+{% content-ref url="publish-data-nfts.md" %}
+[wallets/metamask-setup.md.md](wallets/metamask-setup.md.md)
+{% endcontent-ref %}
+
+{% content-ref url="publish-data-nfts.md" %}
+[wallets-and-ocean.md](wallets-and-ocean.md)
+{% endcontent-ref %}
+
+
 ### Tokenize & sell your data
 
 Buy, mint, and sell NFTs using the Ocean Market following the guides below.
@@ -32,14 +51,6 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 
 {% content-ref url="using-ocean-market.md" %}
 [using-ocean-market.md](using-ocean-market.md)
-{% endcontent-ref %}
-
-### Data Farming
-
-Earn rewards by locking OCEAN, curating data assets, and more.
-
-{% content-ref url="../data-farming/README.md" %}
-[../data-farming/README.md](../data-farming/README.md)
 {% endcontent-ref %}
 
 ### Antique Stuff 🏺

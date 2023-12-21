@@ -7,7 +7,13 @@ description: Transfer tokens between two blockchain networks.
 
 A bridge is a mechanism that connects two or more separate blockchain networks, enabling communication and interoperability between them. Bridges can be designed to facilitate the transfer of assets, data, or messages between different blockchain networks that may operate on different protocols, and consensus mechanisms, or have different native currencies.
 
-We suggest using the following solutions to transfer OCEAN between Ethereum mainnet and Polygon or BSC.
+This page covers:
+- [Celer Bridge](#celer-bridge) - bridge OCEAN from Eth mainnet <> Oasis Sapphire mainnet
+- [BNB Smart Chain Bridge](#bnb-smart-chain-bridge) - bridge OCEAN from Eth mainnet <> BNB Smart Chain
+
+For other bridges and networks, see the [Networks page](README.md).
+
+The rest of this doc gives bridging details. You can skip it until you need the reference information.
 
 ## Celer Bridge
 
@@ -80,4 +86,12 @@ Alternatively, you can manually configure the network on Metamask by using the f
 | Chain Id           | `137`                                                |
 | Currency Symbol    | `MATIC`                                              |
 | Block Explorer URL | [`https://polygonscan.com`](https://polygonscan.com) |
+
+
+
+----
+
+_Next: [FAQ](../faq.md)_
+
+_Back: [Networks](README.md)_
 

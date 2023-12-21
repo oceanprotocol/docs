@@ -209,3 +209,11 @@ Fees are generated Ocean Market from Ocean Market that head to Ocean community. 
 For collaborations, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
 One member of our team will reach out to you 🤝
 </details>
+
+
+----
+
+_Next: [Glossary](glossary.md)_
+
+_Back: [Bridges](networks/bridges.md)_
+
