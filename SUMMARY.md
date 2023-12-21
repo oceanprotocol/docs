@@ -7,7 +7,7 @@
   - [What can you do with Ocean?](discover/benefits.md)
   - [OCEAN: The Ocean token](discover/ocean-token.md)
   - [Networks](discover/networks/README.md)
-    - [Bridges](discover/networks/bridges.md)
+  - [Network Bridges](discover/networks/bridges.md)
   - [FAQ](discover/faq.md)
   - [Glossary](discover/glossary.md)
 - [📚 User Guides](user-guides/README.md)
