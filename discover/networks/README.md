@@ -39,23 +39,20 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 ## Production Networks
 
-### Production: Ethereum Mainnet
+### Ethereum Mainnet 
 
-<table data-header-hidden>
-<tbody>
+<table>
 <tr><td>Native token</td><td>ETH</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr>
 <tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr>
-</tbody>
-
 </table>
 
 **Wallet.** To connect to Ethereum mainnet with e.g. MetaMask, click on the network name dropdown and select "Ethereum mainnet" from the list.
 
 
-### Production: Polygon Mainnet
+### Polygon Mainnet 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td><td>MATIC</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1">0x282d8efCe846A88B159800bd4130ad77443Fa1A1</a></td></tr>
@@ -66,13 +63,13 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Wallet.** If you can't find Polygon Mainnet as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/#add-the-polygon-network-manually).
 
-**Bridge.** Check out the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
+**Bridge.** Follow the [Polygon Bridge guide](bridges.md) in our docs.
 
-### Production: Oasis Sapphire Mainnet
+### Oasis Sapphire Mainnet 
 
-[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
+[Ocean Predictoor](../../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>ROSE</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://explorer.oasis.io/mainnet/sapphire/token/0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520">0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520</a></td></tr>
@@ -84,9 +81,9 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Bridge.** Use [Celer](https://cbridge.celer.network/1/23294/OCEAN) to bridge OCEAN from Ethereum mainnet to Oasis Sapphire mainnet.
 
-### Production: BNB Smart Chain
+### BNB Smart Chain 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>BSC BNB</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a">0xdce07662ca8ebc241316a15b611c89711414dd1a</a></td></tr>
@@ -100,9 +97,9 @@ This is one of the [Binance](https://binance.com)-spawned chains. BNB is the tok
 
 **Bridge.** Our [BNB Smart Chain Bridge Guide](bridges.md#bnb-smart-chain-bridge) describes how to get OCEAN to BNB Smart Chain.
 
-### Production: Energy Web Chain (EWC)
+### Energy Web Chain (EWC) 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Energy Web Chain EWT</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://explorer.energyweb.org/token/0x593122aae80a6fc3183b2ac0c4ab3336debee528">0x593122aae80a6fc3183b2ac0c4ab3336debee528</a></td></tr>
@@ -114,11 +111,11 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Wallet.** If you cannot find Energy Web Chain as a predefined network in your wallet, you can manually connect to it by following this [guide](https://energy-web-foundation.gitbook.io/energy-web/how-tos-and-tutorials/connect-to-energy-web-chain-main-network-with-metamash).
 
-**Bridge.** To bridge assets between Ethereum Mainnet and Energy Web Chain and Ethereum mainnet, you can use [Carbonswap bridge](https://bridge.carbonswap.exchange/).
+**Bridge.** To bridge assets between Ethereum Mainnet and Energy Web Chain and Ethereum mainnet, you can use [Omni bridge by Carbonswap](https://bridge.carbonswap.exchange/).
 
-### Production: Optimism (OP) Mainnet
+### Optimism (OP) Mainnet
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>ETH</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://optimistic.etherscan.io/address/0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E">0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E</a></td></tr>
@@ -128,11 +125,11 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Wallet.** If you cannot find Optimism as a predefined network in your wallet, you can manually connect to with [this OP guide](https://community.optimism.io/docs/useful-tools/networks/#op-mainnet).
 
-**Bridge.** Follow the [OP Bridge guide](https://https://app.optimism.io/bridge/deposit) to deposit, withdraw and send tokens.
+**Bridge.** Follow the [OP Bridge guide](https://docs.optimism.io/builders/dapp-developers/bridging/standard-bridge).
 
-### Production: Moonriver
+### Moonriver
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Moonriver MOVR</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://blockscout.moonriver.moonbeam.network/token/0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE/token-transfers">0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE</a></td></tr>
@@ -145,30 +142,30 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Wallet.** If Moonriver is not listed as a predefined network in your wallet, you can manually connect to it by following [Moonriver's guide](https://docs.moonbeam.network/builders/get-started/networks/moonriver/#connect-metamask).
 
-**Bridge.** To bridge assets between Moonriver and Ethereum mainnet, you can use [the Anyswap Bridge](https://anyswap.exchange/#/bridge).
+**Bridge.** To bridge assets between Moonriver and Ethereum mainnet, you can use the [Celer](https://cbridge.celer.network/bridge/moonriver-ethereum/).
 
 
 ## Test Networks
 
 Unlike production networks, tokens on test networks do not hold real economic value.
 
-### Testnet:  Görli
+###  Görli
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Görli (fake) ETH</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://goerlifaucet.com/">Here</a></td></tr>
 <tr><td>OCEAN address</td><td><a href="https://goerli.etherscan.io/address/0xcfdda22c9837ae76e0faa845354f33c62e03653a">0xCfDdA22C9837aE76E0faA845354f33C62E03653a</a></td></tr>
 <tr><td>OCEAN faucet</td><td><a href="https://faucet.goerli.oceanprotocol.com">Here</a></td></tr>
-<tr><td>Explorer</td><td>https://goerli.etherscan.io</a></td></tr>
+<tr><td>Explorer</td><td><a href="https://goerli.etherscan.io"</a></td></tr>
 </tbody>
 </table>
 
 **Wallet.** To connect with e.g. MetaMask, click on the network name dropdown and select _Goerli_ from the list of available networks.
 
-### Testnet:  Sepolia
+###  Sepolia
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Sepolia (fake) ETH </td></tr>
 <tr><td>Native token faucet</td><td><a href="https://sepoliafaucet.com/">Here</a></td></tr>
@@ -181,9 +178,9 @@ Unlike production networks, tokens on test networks do not hold real economic va
 **Wallet.** To connect with e.g. MetaMask, select "Sepolia" from the network dropdown list(enable "Show test networks").
 
 
-### Testnet:  Mumbai
+###  Mumbai
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td><td>Mumbai (fake) MATIC</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://faucet.matic.network/">Here</a></td></tr>
@@ -193,15 +190,15 @@ Unlike production networks, tokens on test networks do not hold real economic va
 </tbody>
 </table>
 
-**Wallet.** To connect with e.g. MetaMask, select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
+**Wallet.** To connect with e.g. MetaMask, select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://polygon.technology/blog/getting-started-with-metamask-on-polygon).
 
 
-### Testnet:  Oasis Sapphire Testnet
+###  Oasis Sapphire Testnet
 
-[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
+[Ocean Predictoor](../../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td><td>(fake) ROSE</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-rose-on-sapphire-testnet">Here</a></td></tr>
@@ -214,9 +211,9 @@ Unlike production networks, tokens on test networks do not hold real economic va
 **Wallet.** If you cannot find Oasis Sapphire Testnet as a predefined network, you can manually connect to it by entering the following during import: Network Name: `Oasis Sapphire Testnet`, RPC URL: `https://testnet.sapphire.oasis.dev`, Chain ID: `23295`, Token: `ROSE`. For further info, see [Oasis tokens docs](https://docs.oasis.io/general/manage-tokens/).
 
 
-### Testnet:  Optimism (OP) Sepolia
+###  Optimism (OP) Sepolia
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Sepolia (fake) ETH</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://faucet.quicknode.com/optimism/sepolia">Here</a></td></tr>
