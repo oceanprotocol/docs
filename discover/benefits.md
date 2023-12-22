@@ -14,7 +14,7 @@ Let's explore each...
 
 ### What builders can do
 
-<figure><img src="../.gitbook/assets/general/dapps.png" alt=""></figure>
+<figure><img src="../.gitbook/assets/general/dapps.png" width="75%"></figure>
 
 <details>
 

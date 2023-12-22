@@ -10,7 +10,7 @@ Ocean's mission is to level the playing field for AI and data.
 
 How? **By helping _you_ monetize AI models and data, while preserving privacy.**
 
-Ocean is a decentralized data exchange protocol. Its core tech is:
+Ocean is a decentralized data exchange protocol to drive AI. Its core tech is:
 - Data NFTs & datatokens, to enable token-gated access control, data wallets, data DAOs, and more.
 - Compute-to-data: buy & sell private data, while preserving privacy
 

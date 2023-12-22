@@ -16,7 +16,6 @@ OCEAN is a utility token. It's used to stake on data for curation, buy & sell da
 <figure><img src="../.gitbook/assets/general/purchase-and-compute_and_ocean-network.png" alt=""></figure>
 
 
-
 ### Getting and Storing OCEAN
 
 OCEAN is available on most leading CEXes and DEXes. The [Ocean Token page at oceanprotocol.com](https://oceanprotocol.com/about-us/ocean-token) has details. 
@@ -43,6 +42,8 @@ OCEAN supply is divided as follows:
 The system-level design of the OCEAN token is based on [The Web3 Sustainability Loop](https://blog.oceanprotocol.com/the-web3-sustainability-loop-b2a4097a36e), a general design pattern. The Ocean-specific version of this design is described in [section (7) of that same article](https://blog.oceanprotocol.com/the-web3-sustainability-loop-b2a4097a36e#e0f6).
 
 This design gives flexibility to adapt the Ocean products for traction and growth. The flexibility is due to the goal to "drive network revenue", subject to the constraints of the mission & values of Ocean Protocol.
+
+In the design, a % of revenue is used to buy back & burn OCEAN. The remaining % drives growth.
 
 <figure><img src="../.gitbook/assets/general/whirlpool.png" alt=""></figure>
 

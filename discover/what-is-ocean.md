@@ -2,13 +2,16 @@
 description: 
 ---
 
+<figure><img src="../.gitbook/assets/discover/wait.png" width="50%"><figcaption>Data NFTs & datatokens are an on-ramp and off-ramp for data assets into DeFi</figcaption></figure>
+
+
 ### What is Ocean?
 
-Ocean is a decentralized data exchange protocol and community.
+Ocean is a decentralized data exchange protocol. AI lives on data; Ocean facilitates it.
 
-Specifically, it has two parts:
+Specifically, Ocean has two parts:
 - A live tech stack. At the core is **Datatokens** and **Compute-to-Data**
-- A lively community. This includes **builders, data scientists, OCEAN holders**, and **Ocean Ambassadors**
+- A lively community. This includes **builders, 52data scientists, OCEAN holders**, and **Ocean Ambassadors**
 
 Let's drill into each.
 
@@ -22,7 +25,7 @@ These enable decentralized access control, via token-gating. Key principles:
 
 Crypto wallets, exchanges, and DAOs become _data_ wallets, exchanges, and DAOs.
 
-<figure><img src="../.gitbook/assets/architecture/onramp-offramp.png" alt=""><figcaption>Data NFTs & datatokens are an on-ramp and off-ramp for data assets into DeFi</figcaption></figure>
+<figure><img src="../.gitbook/assets/discover/onramp-offramp.png"><figcaption>Data NFTs & datatokens are an on-ramp and off-ramp for data assets into DeFi</figcaption></figure>
 
 Data can be on Azure or AWS, Filecoin or Arweave, REST APIs or smart contract feeds. Data may be raw AI training data, feature vectors, trained models, even AI model predictions, or non-AI data.
 
@@ -35,14 +38,14 @@ This enables one buy & sell private data, while preserving privacy
 - C2D can also be used for data sharing in science or technology contexts, with lower liability risk, because the data doesn't move.
 
 
-<figure><img src="../.gitbook/assets/c2d/c2d-mental-model.png" alt=""><figcaption>Compute-to-Data flow</figcaption></figure>
+<figure><img src="../.gitbook/assets/discover/c2d-mental-model.png" width="75%"><figcaption>Compute-to-Data flow</figcaption></figure>
 
 
 ### Community: Ocean Ecosystem
 
 Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of dapps grown over years, built by enthusiastic developers.
 
-<figure><img src="../.gitbook/assets/general/builders.png" alt=""></figure>
+<figure><img src="../.gitbook/assets/discover/builders.png" width="50%"></figure>
 
 The Ocean ecosystem also contains many data scientists and OCEAN holders, excited about the future of AI & data. You can find them doing predictions, data challenges, Data Farming, and more.
 
@@ -50,7 +53,7 @@ The Ocean ecosystem also contains many data scientists and OCEAN holders, excite
 
 Ocean has an excellent [community of ambassadors](https://oceanprotocol.com/explore/community). Anyone can join.
 
-<figure><img src="../.gitbook/assets/general/ambassadors.png" alt=""></figure>
+<figure><img src="../.gitbook/assets/discover/ambassadors.png" width="50%"></figure>
 
 
 ----
