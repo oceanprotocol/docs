@@ -1,6 +1,6 @@
 ---
 title: FAQs
-description: Frequently Asked Questions about Ocean Protocol
+description: 
 ---
 
 # FAQ

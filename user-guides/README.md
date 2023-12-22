@@ -1,7 +1,6 @@
 ---
 description: >-
-  The definitive guides on how to do almost anything you want with Ocean
-  Protocol tech!
+  Guides to use Ocean, with no coding needed.
 cover: ../.gitbook/assets/cover/user_guides_banner.png
 coverY: 0
 ---
@@ -9,8 +8,6 @@ coverY: 0
 # 📚 User Guides
 
 <figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
-
-These are guides to use Ocean, with no coding needed.
 
 **Contents:**
 - Basic concepts
@@ -39,8 +36,8 @@ For blockchain beginners
 [wallets/metamask-setup.md](wallets/metamask-setup.md)
 {% endcontent-ref %}
 
-{% content-ref url="wallets-and-ocean.md" %}
-[wallets-and-ocean.md](wallets-and-ocean.md)
+{% content-ref url="wallets/wallets-and-ocean.md" %}
+[wallets-and-ocean.md](wallets/wallets-and-ocean.md)
 {% endcontent-ref %}
 
 
