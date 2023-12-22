@@ -76,7 +76,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 <tbody>
 <tr><td>Native token</td></td><td>ROSE</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://explorer.oasis.io/mainnet/sapphire/token/0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520">0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520</a></td></tr>
-<tr><td>Explorer</td><td><a href="https://explorer.oasis.io/mainnet/sapphire/">https://explorer.oasis.io/mainnet/sapphire/</a></td></tr>
+<tr><td>Explorer</td><td><a href="https://explorer.oasis.io/mainnet/sapphire/">https://explorer.oasis.io/mainnet/sapphire</a></td></tr>
 </tbody>
 </table>
 
@@ -207,7 +207,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 <tr><td>Native token faucet</td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-rose-on-sapphire-testnet">Here</a></td></tr>
 <tr><td>OCEAN address</td><td><a href="https://explorer.oasis.io/testnet/sapphire/address/0x973e69303259B0c2543a38665122b773D28405fB">0x973e69303259B0c2543a38665122b773D28405fB</a></td></tr>
 <tr><td>OCEAN faucet</td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-ocean-on-sapphire-testnet">Here</a></td></tr>
-<tr><td>Explorer</td><td><a href="https://explorer.oasis.io/testnet/sapphire/">https://explorer.oasis.io/testnet/sapphire/</a></td></tr>
+<tr><td>Explorer</td><td><a href="https://explorer.oasis.io/testnet/sapphire/">https://explorer.oasis.io/testnet/sapphire</a></td></tr>
 </tbody>
 </table>
 
