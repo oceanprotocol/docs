@@ -5,23 +5,17 @@ description: Transfer tokens between two blockchain networks.
 
 # Bridges
 
-A bridge is a mechanism that connects two or more separate blockchain networks, enabling communication and interoperability between them. Bridges can be designed to facilitate the transfer of assets, data, or messages between different blockchain networks that may operate on different protocols, and consensus mechanisms, or have different native currencies.
-
-This page covers:
-- **Celer Bridge** - bridge OCEAN from Eth mainnet <> Oasis Sapphire mainnet
-- **BNB Smart Chain Bridge** - bridge OCEAN from Eth mainnet <> BNB Smart Chain
+This page covers bridges of OCEAN from Ethereum mainnet to...
+- BNB Smart Chain
+- Polygon
 
 For other bridges and networks, see the [Networks page](README.md).
 
 The rest of this doc gives bridging details. You can skip it until you need the reference information.
 
-## Celer Bridge
-
-To transfer OCEAN to and from the Oasis Sapphire Mainnet, we recommend using the [Celer Bridge](https://cbridge.celer.network/1/23294/OCEAN). No bridge is needed for transfering OCEAN to the Oasis Sapphire Testnet because Ocean Protocol offers a [faucet](https://faucet.sapphire.oceanprotocol.com/) for OCEAN on Oasis Sapphire Testnet. Note that Ocean Protocol supports Oasis Sapphire networks for [Predictoor](https://predictoor.ai) development, and does not currently support Oasis Sapphire for ocean.js, ocean.py, or Ocean Market.
-
 ## BNB Smart Chain Bridge
 
-To transfer OCEAN to and from the BNB Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
+To transfer OCEAN to and from the BNB Smart Chain, we recommend using [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
 
 {% hint style="warning" %}
 In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is **crucial** to ensure that the contract address you are sending the tokens to is correct.

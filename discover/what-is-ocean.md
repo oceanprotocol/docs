@@ -4,17 +4,19 @@ description:
 
 <div align="center"><figure><img src="../.gitbook/assets/discover/wait.png" width="60%"></figure></div>
 
-### What is Ocean?
+## What is Ocean?
 
-Ocean is a decentralized data exchange protocol. AI lives on data; Ocean facilitates it.
+Ocean is a decentralized data exchange protocol.
 
-Specifically, Ocean has two parts:
+AI lives on data; Ocean facilitates it.
+
+Ocean has two specific parts:
 - A live tech stack. At the core is **Datatokens** and **Compute-to-Data**
-- A lively community. This includes **builders, 52data scientists, OCEAN holders**, and **Ocean Ambassadors**
+- A lively community. This includes **builders, data scientists, OCEAN holders**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
 
 Let's drill into each.
 
-### Tech: Ocean data NFTs and datatokens
+## Tech: Ocean data NFTs and datatokens
 
 These enable decentralized access control, via token-gating. Key principles:
 
@@ -30,7 +32,7 @@ Crypto wallets, exchanges, and DAOs become _data_ wallets, exchanges, and DAOs.
 
 Data can be on Azure or AWS, Filecoin or Arweave, REST APIs or smart contract feeds. Data may be raw AI training data, feature vectors, trained models, even AI model predictions, or non-AI data.
 
-### Tech: Ocean Compute-to-Data
+## Tech: Ocean Compute-to-Data
 
 This enables one buy & sell private data, while preserving privacy
 - Private data is valuable: using it can improve research and business outcomes. But concerns over privacy and control make it hard to access.
@@ -42,7 +44,7 @@ This enables one buy & sell private data, while preserving privacy
 <figure><img src="../.gitbook/assets/discover/c2d-mental-model.png" width="75%"><br><figcaption>Compute-to-Data flow</figcaption></figure>
 </div>
 
-### Community: Ocean Ecosystem
+## Community: Ocean Ecosystem
 
 Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of dapps grown over years, built by enthusiastic developers.
 
@@ -50,12 +52,17 @@ Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of d
 
 The Ocean ecosystem also contains many data scientists and OCEAN holders, excited about the future of AI & data. You can find them doing predictions, data challenges, Data Farming, and more.
 
-### Community: Ocean Ambassadors
+## Community: Ocean Ambassadors
 
 Ocean has an excellent [community of ambassadors](https://oceanprotocol.com/explore/community). Anyone can join.
 
 <div align="center"><figure><img src="../.gitbook/assets/discover/ambassadors.png" width="50%"></figure></div>
 
+## Community: Social Media
+
+Follow Ocean on [Twitter](https://twitter.com/OceanProtocol) or [Telegram](https://t.me/oceanprotocol_community) to keep up to date. Chat directly with the Ocean community on [Discord](https://discord.gg/TnXjkR5). Or, track Ocean progress directly on [GitHub](https://github.com/oceanprotocol).
+
+Finally, the [Ocean blog](https://blog.oceanprotocol.com/) has regular updates.
 
 ----
 

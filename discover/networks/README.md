@@ -82,7 +82,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Wallet.** If you cannot find Oasis Sapphire Mainnet as a predefined network, fyou can manually connect by entering the following during import: Network Name: `Oasis Sapphire`, RPC URL: `https://sapphire.oasis.io`, Chain ID: `23294`, Token: `ROSE`. For further info, see [Oasis tokens docs](https://docs.oasis.io/general/manage-tokens/).
 
-**Bridge.** Use our [Celer Bridge Guide](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/get-ocean-on-sapphire.md#2-transfer-ocean-to-sapphire-mainnet-via-celer) to bridge OCEAN from Ethereum Mainnet to Oasis Sapphire Mainnet.
+**Bridge.** Use [Celer](https://cbridge.celer.network/1/23294/OCEAN) to bridge OCEAN from Ethereum mainnet to Oasis Sapphire mainnet.
 
 ### Production: BNB Smart Chain
 
