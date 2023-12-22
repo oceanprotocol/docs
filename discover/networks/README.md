@@ -41,13 +41,10 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 ### Ethereum Mainnet 
 
-<table data-header-hidden>
-<tbody>
+<table>
 <tr><td>Native token</td><td>ETH</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://etherscan.io/token/0x967da4048cD07aB37855c090aAF366e4ce1b9F48">0x967da4048cD07aB37855c090aAF366e4ce1b9F48</a></td></tr>
 <tr><td>Explorer</td><td><a href="https://etherscan.io">https://etherscan.io</a></td></tr>
-</tbody>
-
 </table>
 
 **Wallet.** To connect to Ethereum mainnet with e.g. MetaMask, click on the network name dropdown and select "Ethereum mainnet" from the list.
@@ -55,7 +52,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 ### Polygon Mainnet 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td><td>MATIC</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://polygonscan.com/token/0x282d8efce846a88b159800bd4130ad77443fa1a1">0x282d8efCe846A88B159800bd4130ad77443Fa1A1</a></td></tr>
@@ -72,7 +69,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 [Ocean Predictoor](../../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>ROSE</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://explorer.oasis.io/mainnet/sapphire/token/0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520">0x39d22B78A7651A76Ffbde2aaAB5FD92666Aca520</a></td></tr>
@@ -86,7 +83,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 ### BNB Smart Chain 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>BSC BNB</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://bscscan.com/token/0xdce07662ca8ebc241316a15b611c89711414dd1a">0xdce07662ca8ebc241316a15b611c89711414dd1a</a></td></tr>
@@ -102,7 +99,7 @@ This is one of the [Binance](https://binance.com)-spawned chains. BNB is the tok
 
 ### Energy Web Chain (EWC) 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Energy Web Chain EWT</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://explorer.energyweb.org/token/0x593122aae80a6fc3183b2ac0c4ab3336debee528">0x593122aae80a6fc3183b2ac0c4ab3336debee528</a></td></tr>
@@ -118,7 +115,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 ### Optimism (OP) Mainnet
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>ETH</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://optimistic.etherscan.io/address/0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E">0x2561aa2bB1d2Eb6629EDd7b0938d7679B8b49f9E</a></td></tr>
@@ -132,7 +129,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 ### Moonriver
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Moonriver MOVR</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://blockscout.moonriver.moonbeam.network/token/0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE/token-transfers">0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE</a></td></tr>
@@ -154,7 +151,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 
 ###  Görli
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Görli (fake) ETH</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://goerlifaucet.com/">Here</a></td></tr>
@@ -168,7 +165,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 
 ###  Sepolia
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Sepolia (fake) ETH </td></tr>
 <tr><td>Native token faucet</td><td><a href="https://sepoliafaucet.com/">Here</a></td></tr>
@@ -183,7 +180,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 
 ###  Mumbai
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td><td>Mumbai (fake) MATIC</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://faucet.matic.network/">Here</a></td></tr>
@@ -201,7 +198,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 [Ocean Predictoor](../../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td><td>(fake) ROSE</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-rose-on-sapphire-testnet">Here</a></td></tr>
@@ -216,7 +213,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 
 ###  Optimism (OP) Sepolia
 
-<table data-header-hidden>
+<table>
 <tbody>
 <tr><td>Native token</td></td><td>Sepolia (fake) ETH</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://faucet.quicknode.com/optimism/sepolia">Here</a></td></tr>
