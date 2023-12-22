@@ -39,7 +39,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 ## Production Networks
 
-### Production: Ethereum Mainnet
+### Ethereum Mainnet 
 
 <table data-header-hidden>
 <tbody>
@@ -53,7 +53,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 **Wallet.** To connect to Ethereum mainnet with e.g. MetaMask, click on the network name dropdown and select "Ethereum mainnet" from the list.
 
 
-### Production: Polygon Mainnet
+### Polygon Mainnet 
 
 <table data-header-hidden>
 <tbody>
@@ -68,7 +68,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Bridge.** Check out the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
 
-### Production: Oasis Sapphire Mainnet
+### Oasis Sapphire Mainnet 
 
 [Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
@@ -84,7 +84,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Bridge.** Use [Celer](https://cbridge.celer.network/1/23294/OCEAN) to bridge OCEAN from Ethereum mainnet to Oasis Sapphire mainnet.
 
-### Production: BNB Smart Chain
+### BNB Smart Chain 
 
 <table data-header-hidden>
 <tbody>
@@ -100,7 +100,7 @@ This is one of the [Binance](https://binance.com)-spawned chains. BNB is the tok
 
 **Bridge.** Our [BNB Smart Chain Bridge Guide](bridges.md#bnb-smart-chain-bridge) describes how to get OCEAN to BNB Smart Chain.
 
-### Production: Energy Web Chain (EWC)
+### Energy Web Chain (EWC) 
 
 <table data-header-hidden>
 <tbody>
@@ -116,7 +116,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Bridge.** To bridge assets between Ethereum Mainnet and Energy Web Chain and Ethereum mainnet, you can use [Carbonswap bridge](https://bridge.carbonswap.exchange/).
 
-### Production: Optimism (OP) Mainnet
+### Optimism (OP) Mainnet
 
 <table data-header-hidden>
 <tbody>
@@ -130,7 +130,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Bridge.** Follow the [OP Bridge guide](https://https://app.optimism.io/bridge/deposit) to deposit, withdraw and send tokens.
 
-### Production: Moonriver
+### Moonriver
 
 <table data-header-hidden>
 <tbody>
@@ -152,7 +152,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 Unlike production networks, tokens on test networks do not hold real economic value.
 
-### Testnet:  Görli
+###  Görli
 
 <table data-header-hidden>
 <tbody>
@@ -166,7 +166,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 
 **Wallet.** To connect with e.g. MetaMask, click on the network name dropdown and select _Goerli_ from the list of available networks.
 
-### Testnet:  Sepolia
+###  Sepolia
 
 <table data-header-hidden>
 <tbody>
@@ -181,7 +181,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 **Wallet.** To connect with e.g. MetaMask, select "Sepolia" from the network dropdown list(enable "Show test networks").
 
 
-### Testnet:  Mumbai
+###  Mumbai
 
 <table data-header-hidden>
 <tbody>
@@ -196,7 +196,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 **Wallet.** To connect with e.g. MetaMask, select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
 
-### Testnet:  Oasis Sapphire Testnet
+###  Oasis Sapphire Testnet
 
 [Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
@@ -214,7 +214,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 **Wallet.** If you cannot find Oasis Sapphire Testnet as a predefined network, you can manually connect to it by entering the following during import: Network Name: `Oasis Sapphire Testnet`, RPC URL: `https://testnet.sapphire.oasis.dev`, Chain ID: `23295`, Token: `ROSE`. For further info, see [Oasis tokens docs](https://docs.oasis.io/general/manage-tokens/).
 
 
-### Testnet:  Optimism (OP) Sepolia
+###  Optimism (OP) Sepolia
 
 <table data-header-hidden>
 <tbody>

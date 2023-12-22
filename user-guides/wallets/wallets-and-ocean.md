@@ -9,7 +9,7 @@ description: >-
 If you don't see any OCEAN in your crypto wallet software 🔎 (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage OCEAN yet.
 
 For an ERC-20 wallet to see OCEAN, the wallet typically needs to have OCEAN's address added as a custom token.
-- The [OCEAN docs page](../discover/ocean-token.md) has the OCEAN address for each network.
+- The [Networks docs](../discover/networks/README.md) give the address of OCEAN on each network, and how to get OCEAN on each of those networks.
 - Then, use that information for the wallet instructions below.
 
 

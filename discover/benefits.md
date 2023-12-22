@@ -75,7 +75,7 @@ With [Ocean Predictoor](../predictoor/README.md), you submit predictions for the
 
 <summary><mark style="color:black;">Compete in a Data Challenge</mark></summary>
 
-Ocean regularly offer [data science challenges](../data-scientists/join-a-data-challenge) on real-world problems. Showcase your skills, and earn $ prizes.
+Ocean regularly offer [data science challenges](../data-scientists/join-a-data-challenge.md) on real-world problems. Showcase your skills, and earn $ prizes.
 
 </details>
 
