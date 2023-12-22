@@ -5,11 +5,15 @@ description: All the public networks the Ocean Protocol contracts are deployed t
 
 # Networks
 
-Ocean Protocol's smart contracts and OCEAN are deployed on multiple public networks: several production chains, and several testnets too.
+Ocean Protocol's smart contracts and [OCEAN](../ocean-token.md) are deployed on multiple public networks: several production chains, and several testnets too.
 
-[address.json](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) holds up-to-date deployment addresses for all Ocean contracts.
+The file [`address.json`](https://github.com/oceanprotocol/contracts/blob/v4main/addresses/address.json) holds up-to-date deployment addresses for all Ocean contracts.
 
-You need the network's native token to pay for gas to make transactions: ETH for Ethereum mainnet, MATIC for Polygon, etc; you typically get these from exchanges. You also need "fake" native tokens for testnets; you typically get these from faucets.
+On tokens:
+- You need the network's native token to pay for gas to make transactions: ETH for Ethereum mainnet, MATIC for Polygon, etc. You typically get these from exchanges.
+- You may get OCEAN from an exchange, and bridge it as needed.
+- For testnets, you'll need "fake" native tokens to pay for gas, and "fake" OCEAN. Typically, you get these from faucets.
+- Below, we give token-related instructions, for each network.
 
 ## Networks Summary
 
@@ -21,7 +25,7 @@ Here are the networks that Ocean is deployed to.
 - Oasis Sapphire mainnet
 - BNB Smart Chain
 - Energy Web Chain
-- Optimism Mainnet
+- Optimism (OP) Mainnet
 - Moonriver
 
 **Test Networks:**
@@ -29,13 +33,13 @@ Here are the networks that Ocean is deployed to.
 - Sepolia
 - Mumbai
 - Oasis Sapphire testnet
-- Optimism Sepolia
+- Optimism (OP) Sepolia
 
 The rest of this doc gives details for each network. You can skip it until you need the reference information.
 
 ## Production Networks
 
-### Ethereum Mainnet
+### Production: Ethereum Mainnet
 
 <table data-header-hidden>
 <tbody>
@@ -46,10 +50,10 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 </table>
 
-**Wallet.** To connect to Ethereum mainnet using a wallet such as MetaMask, click on the network name dropdown and select "Ethereum mainnet" from the list.
+**Wallet.** To connect to Ethereum mainnet with e.g. MetaMask, click on the network name dropdown and select "Ethereum mainnet" from the list.
 
 
-### Polygon Mainnet
+### Production: Polygon Mainnet
 
 <table data-header-hidden>
 <tbody>
@@ -64,7 +68,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Bridge.** Check out the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
 
-### Oasis Sapphire Mainnet
+### Production: Oasis Sapphire Mainnet
 
 [Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
@@ -80,7 +84,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Bridge.** Use our [Celer Bridge Guide](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/get-ocean-on-sapphire.md#2-transfer-ocean-to-sapphire-mainnet-via-celer) to bridge OCEAN from Ethereum Mainnet to Oasis Sapphire Mainnet.
 
-### BNB Smart Chain
+### Production: BNB Smart Chain
 
 <table data-header-hidden>
 <tbody>
@@ -92,11 +96,11 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 This is one of the [Binance](https://binance.com)-spawned chains. BNB is the token of Binance.
 
-**Wallet.** If BNB Smart Chain is not listed as a predefined network in your wallet, you can follow [Binance's Guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain) to manually connect.
+**Wallet.** If BNB Smart Chain is not listed as a predefined network in your wallet, see [Binance's Guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain) to manually connect.
 
 **Bridge.** Our [BNB Smart Chain Bridge Guide](bridges.md#bnb-smart-chain-bridge) describes how to get OCEAN to BNB Smart Chain.
 
-### Energy Web Chain (EWC)
+### Production: Energy Web Chain (EWC)
 
 <table data-header-hidden>
 <tbody>
@@ -112,7 +116,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Bridge.** To bridge assets between Ethereum Mainnet and Energy Web Chain and Ethereum mainnet, you can use [Carbonswap bridge](https://bridge.carbonswap.exchange/).
 
-### Optimism (OP) Mainnet
+### Production: Optimism (OP) Mainnet
 
 <table data-header-hidden>
 <tbody>
@@ -126,7 +130,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Bridge.** Follow the [OP Bridge guide](https://https://app.optimism.io/bridge/deposit) to deposit, withdraw and send tokens.
 
-### Moonriver
+### Production: Moonriver
 
 <table data-header-hidden>
 <tbody>
@@ -148,52 +152,51 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 Unlike production networks, tokens on test networks do not hold real economic value.
 
-### Görli
+### Testnet:  Görli
 
 <table data-header-hidden>
 <tbody>
 <tr><td>Native token</td></td><td>Görli (fake) ETH</td></tr>
-<tr><td>Görli ETH</td><td><a href="https://goerlifaucet.com/">Faucet</a>. You may find others by <a href="https://www.google.com/search?q=goerli+ether+faucet%5C&#x26;oq=goerli+ether+faucet">searching</a>.</td></tr>
-<tr><td>Görli OCEAN</td><td><a href="https://faucet.goerli.oceanprotocol.com">Faucet</a></td></tr>
+<tr><td>Native token faucet</td><td><a href="https://goerlifaucet.com/">Here</a></td></tr>
 <tr><td>OCEAN address</td><td><a href="https://goerli.etherscan.io/address/0xcfdda22c9837ae76e0faa845354f33c62e03653a">0xCfDdA22C9837aE76E0faA845354f33C62E03653a</a></td></tr>
-<tr><td>Explorer</td><td>https://goerli.etherscan.io/</a></td></tr>
+<tr><td>OCEAN faucet</td><td><a href="https://faucet.goerli.oceanprotocol.com">Here</a></td></tr>
+<tr><td>Explorer</td><td>https://goerli.etherscan.io</a></td></tr>
 </tbody>
 </table>
 
-**Wallet.** To connect with e.g. MetaMask, simply click on the network name dropdown and select _Goerli_ from the list of available networks.
+**Wallet.** To connect with e.g. MetaMask, click on the network name dropdown and select _Goerli_ from the list of available networks.
 
-### Sepolia
+### Testnet:  Sepolia
 
 <table data-header-hidden>
 <tbody>
 <tr><td>Native token</td></td><td>Sepolia (fake) ETH </td></tr>
-<tr><td>Sepolia ETH</td><td><a href="https://sepoliafaucet.com/">Faucet</a></td></tr>
-<tr><td>Sepolia OCEAN</td><td><a href="https://faucet.sepolia.oceanprotocol.com/">Faucet</a></td></tr>
+<tr><td>Native token faucet</td><td><a href="https://sepoliafaucet.com/">Here</a></td></tr>
 <tr><td>OCEAN address</td><td><a href="https://sepolia.etherscan.io/address/0x1B083D8584dd3e6Ff37d04a6e7e82b5F622f3985">0x1B083D8584dd3e6Ff37d04a6e7e82b5F622f3985</a></td></tr>
-<tr><td>Explorer</td><td><a href="https://sepolia.etherscan.io/">https://sepolia.etherscan.io/</a></td></tr>
+<tr><td>OCEAN faucet</td><td><a href="https://faucet.sepolia.oceanprotocol.com/">Here</a></td></tr>
+<tr><td>Explorer</td><td><a href="https://sepolia.etherscan.io/">https://sepolia.etherscan.io</a></td></tr>
 </tbody>
 </table>
 
-**Wallet.** To connect with e.g. MetaMask, you can select "Sepolia" from the network dropdown list(enable "Show test networks").
+**Wallet.** To connect with e.g. MetaMask, select "Sepolia" from the network dropdown list(enable "Show test networks").
 
 
-### Mumbai
+### Testnet:  Mumbai
 
 <table data-header-hidden>
 <tbody>
 <tr><td>Native token</td><td>Mumbai (fake) MATIC</td></tr>
-<tr><td>Native token faucet</td><td><a href="https://faucet.matic.network/">Here</a>. You may find others by <a href="https://www.google.com/search?q=mumbai+faucet">searching</a>.</td></tr>
+<tr><td>Native token faucet</td><td><a href="https://faucet.matic.network/">Here</a></td></tr>
 <tr><td>OCEAN address</td><td><a href="https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8">0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8</a></td></tr>
-<tr><td>OCEAN faucet</td><td><a href="https://faucet.mumbai.oceanprotocol.com/">Faucet</a></td></tr>
+<tr><td>OCEAN faucet</td><td><a href="https://faucet.mumbai.oceanprotocol.com/">Here</a></td></tr>
 <tr><td>Explorer</td><td><a href="https://mumbai.polygonscan.com">https://mumbai.polygonscan.com</a></td></tr>
 </tbody>
 </table>
 
+**Wallet.** To connect with e.g. MetaMask, select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
-**Wallet.** To connect with e.g. MetaMask, you can select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
-
-### Oasis Sapphire Testnet
+### Testnet:  Oasis Sapphire Testnet
 
 [Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
@@ -203,7 +206,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 <tr><td>Native token</td><td>(fake) ROSE</td></tr>
 <tr><td>Native token faucet</td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-rose-on-sapphire-testnet">Here</a></td></tr>
 <tr><td>OCEAN address</td><td><a href="https://explorer.oasis.io/testnet/sapphire/address/0x973e69303259B0c2543a38665122b773D28405fB">0x973e69303259B0c2543a38665122b773D28405fB</a></td></tr>
-<tr><td>OCEAN faucet></td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-ocean-on-sapphire-testnet">Here</a></td></tr>
+<tr><td>OCEAN faucet</td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-ocean-on-sapphire-testnet">Here</a></td></tr>
 <tr><td>Explorer</td><td><a href="https://explorer.oasis.io/testnet/sapphire/">https://explorer.oasis.io/testnet/sapphire/</a></td></tr>
 </tbody>
 </table>
@@ -211,22 +214,19 @@ Unlike production networks, tokens on test networks do not hold real economic va
 **Wallet.** If you cannot find Oasis Sapphire Testnet as a predefined network, you can manually connect to it by entering the following during import: Network Name: `Oasis Sapphire Testnet`, RPC URL: `https://testnet.sapphire.oasis.dev`, Chain ID: `23295`, Token: `ROSE`. For further info, see [Oasis tokens docs](https://docs.oasis.io/general/manage-tokens/).
 
 
-### Optimism Sepolia
+### Testnet:  Optimism (OP) Sepolia
 
 <table data-header-hidden>
 <tbody>
 <tr><td>Native token</td></td><td>Sepolia (fake) ETH</td></tr>
-<tr><td>OP Sepolia Faucet</td><td><a href="https://faucet.quicknode.com/optimism/sepolia">Faucet</a></td></tr>
-<tr><td>OP Sepolia OCEAN</td><td><a href="https://faucet.op-sepolia.oceanprotocol.com/">Faucet</a></td></tr>
-<tr><td>OCEAN</td><td><a href="https://sepolia-optimism.etherscan.io/address/0xf26c6c93f9f1d725e149d95f8e7b2334a406ad10">0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10</a></td></tr>
+<tr><td>Native token faucet</td><td><a href="https://faucet.quicknode.com/optimism/sepolia">Here</a></td></tr>
+<tr><td>OCEAN address</td><td><a href="https://sepolia-optimism.etherscan.io/address/0xf26c6c93f9f1d725e149d95f8e7b2334a406ad10">0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10</a></td></tr>
+<tr><td>OCEAN faucet</td><td><a href="https://faucet.op-sepolia.oceanprotocol.com/">Here</a></td></tr>
 <tr><td>Explorer</td><td><a href="https://sepolia-optimism.etherscan.io/">https://sepolia-optimism.etherscan.io</a></td></tr>
 </tbody>
 </table>
 
 **Wallet.** If OP Sepolia is not listed as a predefined network, follow [OP's Guide](https://community.optimism.io/docs/useful-tools/networks/#op-sepolia).
-
-**Bridge.** The [OP Bridge guide](https://https://app.optimism.io/bridge/deposit) describes to deposit, withdraw and send tokens.
-
 
 ----
 
