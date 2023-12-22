@@ -14,7 +14,7 @@ redirects:
     core-concepts/asset-pricing: developers/contracts/pricing-schemas.md
     core-concepts/did-ddo: developers/identifiers.md
     concepts/ocean-tokens/: discover/basic-concepts.md
-    tutorials/wallets-and-ocean-tokens: discover/wallets-and-ocean.md
+    tutorials/wallets-and-ocean-tokens: user-guides/wallets-and-ocean.md
     discover/explore: discover/README.md
     discover/ocean-101: discover/README.md
     discover/basic-concepts: user-guides/basic-concepts.md
