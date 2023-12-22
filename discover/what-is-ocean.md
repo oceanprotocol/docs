@@ -2,7 +2,7 @@
 description: 
 ---
 
-<figure><img src="../.gitbook/assets/discover/wait.png" width="50%"><figcaption>Data NFTs & datatokens are an on-ramp and off-ramp for data assets into DeFi</figcaption></figure>
+<figure><img src="../.gitbook/assets/discover/wait.png" width="50%"></figure>
 
 
 ### What is Ocean?
