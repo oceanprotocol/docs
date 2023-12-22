@@ -1,12 +1,9 @@
 root: ./
 
 redirects:
-    discover/wallets/README: user-guides/wallets/README.md
-    discover/wallets/metamask-setup: user-guides/wallets/metamask-setup.md
-    discover/wallets/wallets-and-ocean: user-guides/wallets/wallets-and-ocean.md
-    readme/metamask-setup: user-guides/wallets/metamask-setup.md
-    readme/wallets: user-guides/wallets/README.md
-    readme/wallets-and-ocean-tokens: user-guides/wallets-and-ocean.md
+    readme/metamask-setup: discover/wallets/metamask-setup.md
+    readme/wallets: discover/wallets/README.md
+    readme/wallets-and-ocean-tokens: discover/wallets-and-ocean.md
     core-concepts: developers/README.md
     core-concepts/architecture: developers/architecture.md
     core-concepts/datanft-and-datatoken: developers/contracts/datanft-and-datatoken.md
@@ -16,8 +13,8 @@ redirects:
     core-concepts/fees: developers/contracts/fees.md
     core-concepts/asset-pricing: developers/contracts/pricing-schemas.md
     core-concepts/did-ddo: developers/identifiers.md
-    concepts/ocean-tokens/: discover/ocean-token.md
-    tutorials/wallets-and-ocean-tokens: user-guides/wallets-and-ocean.md
+    concepts/ocean-tokens/: discover/basic-concepts.md
+    tutorials/wallets-and-ocean-tokens: discover/wallets-and-ocean.md
     discover/explore: discover/README.md
     discover/ocean-101: discover/README.md
     discover/basic-concepts: user-guides/basic-concepts.md
