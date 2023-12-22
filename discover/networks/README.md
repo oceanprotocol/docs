@@ -66,11 +66,11 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Wallet.** If you can't find Polygon Mainnet as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/#add-the-polygon-network-manually).
 
-**Bridge.** Check out the Polygon Bridge [guide](bridges.md) to learn how you can deposit, withdraw and send tokens.
+**Bridge.** Follow the [Polygon Bridge guide](bridges.md) in our docs.
 
 ### Oasis Sapphire Mainnet 
 
-[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
+[Ocean Predictoor](../../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
 <table data-header-hidden>
 <tbody>
@@ -114,7 +114,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Wallet.** If you cannot find Energy Web Chain as a predefined network in your wallet, you can manually connect to it by following this [guide](https://energy-web-foundation.gitbook.io/energy-web/how-tos-and-tutorials/connect-to-energy-web-chain-main-network-with-metamash).
 
-**Bridge.** To bridge assets between Ethereum Mainnet and Energy Web Chain and Ethereum mainnet, you can use [Carbonswap bridge](https://bridge.carbonswap.exchange/).
+**Bridge.** To bridge assets between Ethereum Mainnet and Energy Web Chain and Ethereum mainnet, you can use [Omni bridge by Carbonswap](https://bridge.carbonswap.exchange/).
 
 ### Optimism (OP) Mainnet
 
@@ -128,7 +128,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Wallet.** If you cannot find Optimism as a predefined network in your wallet, you can manually connect to with [this OP guide](https://community.optimism.io/docs/useful-tools/networks/#op-mainnet).
 
-**Bridge.** Follow the [OP Bridge guide](https://https://app.optimism.io/bridge/deposit) to deposit, withdraw and send tokens.
+**Bridge.** Follow the [OP Bridge guide](https://docs.optimism.io/builders/dapp-developers/bridging/standard-bridge).
 
 ### Moonriver
 
@@ -145,7 +145,7 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 **Wallet.** If Moonriver is not listed as a predefined network in your wallet, you can manually connect to it by following [Moonriver's guide](https://docs.moonbeam.network/builders/get-started/networks/moonriver/#connect-metamask).
 
-**Bridge.** To bridge assets between Moonriver and Ethereum mainnet, you can use [the Anyswap Bridge](https://anyswap.exchange/#/bridge).
+**Bridge.** To bridge assets between Moonriver and Ethereum mainnet, you can use the [Celer](https://cbridge.celer.network/bridge/moonriver-ethereum/).
 
 
 ## Test Networks
@@ -160,7 +160,7 @@ Unlike production networks, tokens on test networks do not hold real economic va
 <tr><td>Native token faucet</td><td><a href="https://goerlifaucet.com/">Here</a></td></tr>
 <tr><td>OCEAN address</td><td><a href="https://goerli.etherscan.io/address/0xcfdda22c9837ae76e0faa845354f33c62e03653a">0xCfDdA22C9837aE76E0faA845354f33C62E03653a</a></td></tr>
 <tr><td>OCEAN faucet</td><td><a href="https://faucet.goerli.oceanprotocol.com">Here</a></td></tr>
-<tr><td>Explorer</td><td>https://goerli.etherscan.io</a></td></tr>
+<tr><td>Explorer</td><td><a href="https://goerli.etherscan.io"</a></td></tr>
 </tbody>
 </table>
 
@@ -193,12 +193,12 @@ Unlike production networks, tokens on test networks do not hold real economic va
 </tbody>
 </table>
 
-**Wallet.** To connect with e.g. MetaMask, select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
+**Wallet.** To connect with e.g. MetaMask, select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://polygon.technology/blog/getting-started-with-metamask-on-polygon).
 
 
 ###  Oasis Sapphire Testnet
 
-[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
+[Ocean Predictoor](../../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
 
 <table data-header-hidden>
