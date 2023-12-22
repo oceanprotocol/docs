@@ -14,7 +14,7 @@ Let's explore each...
 
 ### What builders can do
 
-<figure><img src="../.gitbook/assets/general/dapps.png" width="75%"></figure>
+<div align="center"><figure><img src="../.gitbook/assets/general/dapps.png" width="75%"></figure></div>
 
 <details>
 
@@ -45,7 +45,6 @@ Build a decentralized data marketplace by [forking Ocean Market code](../develop
 </details>
 
 To dive deeper, please go to [Developers page](../developers/README.md).
-
 
 
 ### What data scientists can do

@@ -13,7 +13,7 @@ OCEAN is a utility token. It's used to stake on data for curation, buy & sell da
 - Token design
 - OCEAN addresses
 
-<figure><img src="../.gitbook/assets/general/purchase-and-compute_and_ocean-network.png" alt=""></figure>
+<div align="center"><figure><img src="../.gitbook/assets/general/purchase-and-compute_and_ocean-network.png" width="60%"></figure></div>
 
 
 ### Getting and Storing OCEAN
@@ -45,7 +45,7 @@ This design gives flexibility to adapt the Ocean products for traction and growt
 
 In the design, a % of revenue is used to buy back & burn OCEAN. The remaining % drives growth.
 
-<figure><img src="../.gitbook/assets/general/whirlpool.png" alt=""></figure>
+<div align="center"><figure><img src="../.gitbook/assets/general/whirlpool.png" width="60%"></figure></div>
 
 
 ### OCEAN addresses

@@ -14,4 +14,4 @@ To dive deeper, see [this blog](https://blog.oceanprotocol.com/from-ai-to-blockc
 
 _Next: [What is Ocean?](what-is-ocean.md)_
 
-_Back: [Discover Ocean](README.md)_
+_Back: [Discover Ocean: main](README.md)_
