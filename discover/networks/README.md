@@ -66,7 +66,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 ### Oasis Sapphire Mainnet
 
-[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market on Oasis Sapphire.
+[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire mainnet for its ability to keep EVM transactions private. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
 <table data-header-hidden>
 <tbody>
@@ -182,38 +182,33 @@ Unlike production networks, tokens on test networks do not hold real economic va
 <table data-header-hidden>
 <tbody>
 <tr><td>Native token</td><td>Mumbai (fake) MATIC</td></tr>
-<tr><td>Mumbai MATIC</td><td><a href="https://faucet.matic.network/">Faucet</a>. You may find others by <a href="https://www.google.com/search?q=mumbai+faucet">searching</a>.</td></tr>
-<tr><td>Mumbai OCEAN</td><td><a href="https://faucet.mumbai.oceanprotocol.com/">Faucet</a></td></tr>
+<tr><td>Native token faucet</td><td><a href="https://faucet.matic.network/">Here</a>. You may find others by <a href="https://www.google.com/search?q=mumbai+faucet">searching</a>.</td></tr>
 <tr><td>OCEAN address</td><td><a href="https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8">0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8</a></td></tr>
+<tr><td>OCEAN faucet</td><td><a href="https://faucet.mumbai.oceanprotocol.com/">Faucet</a></td></tr>
 <tr><td>Explorer</td><td><a href="https://mumbai.polygonscan.com">https://mumbai.polygonscan.com</a></td></tr>
 </tbody>
 </table>
 
 
-**Wallet.** To connect with e.g. MetaMask, you can select "Görli" from the network dropdown list. If it's not listed as a predefined network, you can follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
+**Wallet.** To connect with e.g. MetaMask, you can select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
 
 ### Oasis Sapphire Testnet
 
-[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market on Oasis Sapphire.
+[Ocean Predictoor](../predictoor/README.md) is deployed on Oasis Sapphire testnet. This deployment does do not currently support ocean.js, ocean.py, or Ocean Market.
 
 
 <table data-header-hidden>
 <tbody>
-<tr><td>Native token</td></td><td>(fake) ROSE</td></tr>
-<tr><td>OCEAN</td><td><a href="https://explorer.oasis.io/testnet/sapphire/address/0x973e69303259B0c2543a38665122b773D28405fB">0x973e69303259B0c2543a38665122b773D28405fB</a></td></tr>
+<tr><td>Native token</td><td>(fake) ROSE</td></tr>
+<tr><td>Native token faucet</td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-rose-on-sapphire-testnet">Here</a></td></tr>
+<tr><td>OCEAN address</td><td><a href="https://explorer.oasis.io/testnet/sapphire/address/0x973e69303259B0c2543a38665122b773D28405fB">0x973e69303259B0c2543a38665122b773D28405fB</a></td></tr>
+<tr><td>OCEAN faucet></td><td><a href="https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-ocean-on-sapphire-testnet">Here</a></td></tr>
 <tr><td>Explorer</td><td><a href="https://explorer.oasis.io/testnet/sapphire/">https://explorer.oasis.io/testnet/sapphire/</a></td></tr>
 </tbody>
 </table>
 
 **Wallet.** If you cannot find Oasis Sapphire Testnet as a predefined network, you can manually connect to it by entering the following during import: Network Name: `Oasis Sapphire Testnet`, RPC URL: `https://testnet.sapphire.oasis.dev`, Chain ID: `23295`, Token: `ROSE`. For further info, see [Oasis tokens docs](https://docs.oasis.io/general/manage-tokens/).
-
-
-**Get (fake) OCEAN on Sapphire Testnet**
-
-Check out our [guide](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-ocean-on-sapphire-testnet) for how to get fake OCEAN tokens on Sapphire Testnet. 
-
-Check out our [guide](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/testnet-faucet.md#get-fake-rose-on-sapphire-testnet) for how to get fake ROSE tokens on Oasis Sapphire Testnet.
 
 
 ### Optimism Sepolia
