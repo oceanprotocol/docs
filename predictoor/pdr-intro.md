@@ -33,8 +33,8 @@ Alas, accurate predictions are *hard*. Worse, typical prediction feeds have no a
 <figure><img src="../.gitbook/assets/predictoor/predictoor_ui.png" alt=""><figcaption>Screenshot from predictoor.ai</figcaption></figure>
 
 
-## Next step
+----
 
-If you're going through docs sequentially: next is [Architecture](pdr-architecture.md).
+_Next: [Architecture](pdr-architecture.md)_
 
-
+_Back: [Predictoor Docs main](README.md)_

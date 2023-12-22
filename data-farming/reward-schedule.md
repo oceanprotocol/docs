@@ -72,3 +72,10 @@ The image below shows the total OCEAN released by DF for the first 20 years. The
 ## Further resources
 
 The blog post ["Data Farming Main is here"](https://blog.oceanprotocol.com/ocean-data-farming-main-is-here-49c99602419e) provides further detail yet.
+
+
+----
+
+_Next: [APYs](apys.md)_
+
+_Back: [Claim Rewards](claim-rewards.md)_

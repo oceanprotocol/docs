@@ -32,6 +32,9 @@ The price to subscribe to one feed for 24 hours is 3.00 OCEAN. This includes all
 Pricing is subject to change based on learnings, and feedback from community.  
 
 
-## Next step
+----
 
-If you're going through docs sequentially: next is [FAQ](pdr-faq.md).
+_Next: [FAQ](pdr-faq.md)_
+
+_Back: [How to earn](pdr-earn.md)_
+

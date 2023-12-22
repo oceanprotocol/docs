@@ -9,7 +9,7 @@ Have some questions about Ocean Protocol?
 
 Hopefully, you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/TnXjkR5) - there are no stupid questions!
 
-### General
+## General
 
 <details>
 <summary>How is Ocean Protocol related to AI?</summary>
@@ -61,7 +61,7 @@ To be fully decentralized means no single point of control, at any level of the 
 </details>
 
 
-### About OCEAN
+## About OCEAN
 
 <details>
 <summary>How is OCEAN used? How does it capture value?</summary>
@@ -123,7 +123,7 @@ For each consume transaction, the Ocean community gets a small fee. This happens
 </details>
 
 
-### Grants, challenges, and ecosystem
+## Grants, challenges, and ecosystem
 
 <details>
 <summary>Is Acentrik from Mercedes Benz built on top of Ocean?</summary>
@@ -153,7 +153,7 @@ There are a wide host of technical, business, and cultural barriers to overcome 
 </details>
 
 
-### Data security
+## Data security
 
 
 <details>
@@ -172,7 +172,7 @@ This issue is similar to what any digital distribution platform faces. For insta
 </details>
 
 
-### Data marketplaces & Ocean Market
+## Data marketplaces & Ocean Market
 
 <details>
 <summary>What is a decentralized data marketplace?</summary>
@@ -201,7 +201,7 @@ Ocean Market is a showcase for the practical application of Ocean, showing other
 Fees are generated Ocean Market from Ocean Market that head to Ocean community. The earlier Q&A on revenue has details.
 </details>
 
-### Contacting Ocean core team
+## Contacting Ocean core team
 
 <details>
 <summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
@@ -209,3 +209,11 @@ Fees are generated Ocean Market from Ocean Market that head to Ocean community. 
 For collaborations, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
 One member of our team will reach out to you 🤝
 </details>
+
+
+----
+
+_Next: [Glossary](glossary.md)_
+
+_Back: [Bridges](networks/bridges.md)_
+

@@ -83,7 +83,9 @@ The implementation is in templates/ERC20Template3.sol at at [Ocean’s contracts
 
 **- Predictoor behavior.** Each datatoken contract has additional methods specific to Predictoor: submitting predictions, submitting truevals, computing aggregated predictions, etc.
 
+----
 
-## Next step
+_Next: [How to earn](pdr-earn.md)_
 
-If you're going through docs sequentially: next is [How to earn](pdr-earn.md).
+_Back: [Introduction](pdr-intro.md)_
+

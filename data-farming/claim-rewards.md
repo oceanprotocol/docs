@@ -33,3 +33,9 @@ You will need to wait at least one week, but not more than two weeks to claim yo
 ### Forgot to claim?
 
 If you forget to claim your OCEAN rewards, then do not worry because they continue to accumulate! It's all fine. You can claim them anytime after Thursday. 😃
+
+----
+
+_Next: [Reward Schedule](reward-schedule.md)_
+
+_Back: [Predictoor DF Guide](predictoordf-guide.md)_

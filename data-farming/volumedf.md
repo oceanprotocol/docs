@@ -71,3 +71,10 @@ The actual code is in [calcrewards.py](https://github.com/oceanprotocol/df-py/bl
 
 When DF restarts each Thursday, the global allocation towards each asset resets back to zero and then starts counting up again until the end of the round. After allocating your veOCEAN to different datasets, it will take time for your voting power to be accounted for. 
 
+
+----
+
+_Next: [Volume DF Guide](volumedf-guide.md)_
+
+_Back: [Liquid Staking](liquid-staking.md)_
+

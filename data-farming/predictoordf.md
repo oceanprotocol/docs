@@ -93,3 +93,9 @@ Therefore `DCV_bound` is higher. Specifically: `DCV_bound = 37500 * (0.001 + 0.2
 The BTC/USDT 5m and 1h feeds follow the same Volume DF mechanics as the other feeds, despite being free on the webapp.
 
 Details: the BTC feeds _are_ priced at the smart contract level. The webapp receives datatokens for those feeds and makes the prediction values public. Because the BTC feeds _are_ priced, then: their DCV is non-negligible; allocating veOCEAN to them makes sense; and Volume DF rewards accrue to them as well.
+
+----
+
+_Next: [Predictoor DF Guide](predictoordf-guide.md)_
+
+_Back: [Volume DF Guide](volumedf-guide.md)_

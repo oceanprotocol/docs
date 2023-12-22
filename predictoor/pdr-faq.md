@@ -158,6 +158,9 @@ Predictoor needs to leverage a privacy-preserving EVM chain which is in producti
 </details>
 
 
-## Next step
+----
 
-If you're going through docs sequentially: next is [Further Resources](pdr-resources.md).
+_Next: [Further Resources](pdr-resources.md)_
+
+_Back: [Parameters](pdr-parameters.md)_
+

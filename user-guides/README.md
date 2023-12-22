@@ -10,9 +10,45 @@ coverY: 0
 
 <figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
 
-### Tokenize & sell your data
+These are guides to use Ocean, with no coding needed.
 
-Buy, mint, and sell NFTs using the Ocean Market following the guides below.
+**Contents:**
+- Basic concepts
+- Using wallets
+- Using Ocean Market
+- C2D in Ocean Market
+- Host assets
+
+Let's dive in!
+
+## Basic concepts
+
+For blockchain beginners
+
+{% content-ref url="basic-concepts.md" %}
+[basic-concepts.md](basic-concepts.md)
+{% endcontent-ref %}
+
+## Using wallets
+
+{% content-ref url="wallets/README.md" %}
+[wallets/README.md.md](wallets/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="wallets/metamask-setup.md" %}
+[wallets/metamask-setup.md](wallets/metamask-setup.md)
+{% endcontent-ref %}
+
+{% content-ref url="wallets-and-ocean.md" %}
+[wallets-and-ocean.md](wallets-and-ocean.md)
+{% endcontent-ref %}
+
+
+## Using Ocean Market
+
+{% content-ref url="using-ocean-market.md" %}
+[using-ocean-market.md](using-ocean-market.md)
+{% endcontent-ref %}
 
 {% content-ref url="publish-data-nfts.md" %}
 [publish-data-nfts.md](publish-data-nfts.md)
@@ -22,27 +58,19 @@ Buy, mint, and sell NFTs using the Ocean Market following the guides below.
 [buy-data-nfts.md](buy-data-nfts.md)
 {% endcontent-ref %}
 
+## C2D in Ocean Market
+
 {% content-ref url="compute-to-data/" %}
 [compute-to-data](compute-to-data/README.md)
 {% endcontent-ref %}
+
+## Host Assets
 
 {% content-ref url="asset-hosting/" %}
 [asset-hosting](asset-hosting/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="using-ocean-market.md" %}
-[using-ocean-market.md](using-ocean-market.md)
-{% endcontent-ref %}
-
-### Data Farming
-
-Earn rewards by locking OCEAN, curating data assets, and more.
-
-{% content-ref url="../data-farming/README.md" %}
-[../data-farming/README.md](../data-farming/README.md)
-{% endcontent-ref %}
-
-### Antique Stuff 🏺
+## Antique Stuff 🏺
 
 If you have OCEAN in old pools, this will help.
 

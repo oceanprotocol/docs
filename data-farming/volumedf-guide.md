@@ -40,3 +40,9 @@ We'll show you how!
 
 That's it! You've successfully allocated (aka "voted on") your favorite assets in the Ocean ecosystem using your veOCEAN and are generating active rewards yield. Now, just wait until next Thursday to see if you can [claim any OCEAN rewards](claim-rewards.md) on the Active Rewards section of the [Rewards page](https://df.oceandao.org/rewards) for your portion of the assets' sales. Remember that your first time claiming rewards will require at least one week, but not more than 2 weeks of wait!
 
+
+----
+
+_Next: [Predictoor DF](predictoordf.md)_
+
+_Back: [Volume DF](volumedf.md)_

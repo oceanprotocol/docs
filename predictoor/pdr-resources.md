@@ -14,10 +14,11 @@ For thoroughness:
 - All blog posts & media: ["Ocean Predictoor Series"](https://blog.oceanprotocol.com/ocean-predictoor-series-6a9122754a4d)
 - Webapp code is at [pdr-web](https://github.com/oceanprotocol/pdr-web/) repo
 
-## Next step
+----
 
 Congrats, you've gone through all the Predictoor docs!
 
-Follow-up links:
-- Go earn! Start at [how to earn](pdr-earn.md)
-- [Predictoor docs Homepage](README.md)
+_Next: Go earn! Start at [how to earn](pdr-earn.md). Or, go to [Predictoor docs homepage](README.md)_
+
+_Back: [FAQ](pdr-faq.md)_
+
