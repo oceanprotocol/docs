@@ -37,7 +37,7 @@ For blockchain beginners
 {% endcontent-ref %}
 
 {% content-ref url="wallets/wallets-and-ocean.md" %}
-[wallets-and-ocean.md](wallets/wallets-and-ocean.md)
+[wallets/wallets-and-ocean.md](wallets/wallets-and-ocean.md)
 {% endcontent-ref %}
 
 
