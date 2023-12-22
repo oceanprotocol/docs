@@ -12,7 +12,7 @@ This page shows things you can do with Ocean...
 
 Let's explore each...
 
-### What builders can do
+## What builders can do
 
 <div align="center"><figure><img src="../.gitbook/assets/general/dapps.png" width="75%"></figure></div>
 
@@ -47,7 +47,7 @@ Build a decentralized data marketplace by [forking Ocean Market code](../develop
 To dive deeper, please go to [Developers page](../developers/README.md).
 
 
-### What data scientists can do
+## What data scientists can do
 
 <div align="center">
 <figure><img src="../.gitbook/assets/predictoor/predictoor_ui_crop.png"></figure>
@@ -82,7 +82,7 @@ Ocean regularly offer [data science challenges](../data-scientists/join-a-data-c
 To dive deeper, please go to [Data Scientists page](../data-scientists/README.md).
 
 
-### What OCEAN holders can do
+## What OCEAN holders can do
 
 <details>
 
@@ -92,7 +92,7 @@ Ocean's [Data Farming](../data-farming/README.md) incentives program enables OCE
 
 </details>
 
-### Become an Ocean Ambassador
+## Become an Ocean Ambassador
 
 
 <details>

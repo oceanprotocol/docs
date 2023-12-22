@@ -5,7 +5,7 @@ description: >-
 
 # Glossary
 
-### Ocean Protocol Concepts
+## Ocean Protocol Concepts
 
 <details>
 
@@ -107,7 +107,7 @@ When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN reward
 
 </details>
 
-### Intellectual Property (IP) Concepts
+## Intellectual Property (IP) Concepts
 
 <details>
 
@@ -150,7 +150,7 @@ Transfer one (of many) sub-licenses to new licensee: ERC20.transfer(to=licensee,
 </details>
 
 
-### Web3 Fundamentals
+## Web3 Fundamentals
 
 <details>
 
@@ -318,9 +318,9 @@ A term used in the cryptocurrency and blockchain space to encourage developers a
 
 </details>
 
-###
+##
 
-### Decentralized Finance (DeFi) fundamentals
+## Decentralized Finance (DeFi) fundamentals
 
 <details>
 
@@ -402,7 +402,7 @@ A strategy in which investors provide liquidity to a DeFi protocol in exchange f
 
 </details>
 
-### Data Science Terminology
+## Data Science Terminology
 
 <details>
 
