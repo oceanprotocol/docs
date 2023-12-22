@@ -36,11 +36,6 @@ For blockchain beginners
 [wallets/metamask-setup.md](wallets/metamask-setup.md)
 {% endcontent-ref %}
 
-{% content-ref url="wallets/wallets-and-ocean.md" %}
-[wallets/wallets-and-ocean.md](wallets/wallets-and-ocean.md)
-{% endcontent-ref %}
-
-
 
 ## Using Ocean Market
 
