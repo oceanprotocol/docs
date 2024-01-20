@@ -248,5 +248,5 @@ Restart your provider service.
 
 #### Automated deployment example
 
-If your setup is more complex, you can checkout (our automated deployment example)[https://github.com/oceanprotocol/c2d_barge/blob/main/c2d_barge_deployer/docker-entrypoint.sh].
+If your setup is more complex, you can checkout [our automated deployment example](https://github.com/oceanprotocol/c2d_barge/blob/main/c2d_barge_deployer/docker-entrypoint.sh).
 This script is used by barge to automaticly deploy the C2D cluster, with two environments.
