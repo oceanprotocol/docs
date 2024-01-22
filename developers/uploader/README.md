@@ -51,8 +51,13 @@ Files are uploaded from the frontend to Uploader, which handles temporary storag
 - The Microservice takes over, ensuring data is stored on the selected network securely.
 - Users can monitor upload status and retrieve links to access their stored content.
 
-<figure><img src="../../.gitbook/assets/uploader/uploader_1.png" alt=""><figcaption><p>Ocean Uploader - storage flow 1</p></figcaption></figure>
-<figure><img src="../../.gitbook/assets/uploader/uploader_2.png" alt=""><figcaption><p>Ocean Uploader - storage flow 1</p></figcaption></figure>
+#### File storage flow
+
+<figure><img src="../../.gitbook/assets/uploader/Diagrams_Upload_file_flow.png" alt=""><figcaption><p>Ocean Uploader - storage flow 1</p></figcaption></figure>
+
+#### File retrieval flow
+
+<figure><img src="../../.gitbook/assets/uploader/Diagrams_Retrieve_file_flow.png" alt=""><figcaption><p>Ocean Uploader - storage flow 1</p></figcaption></figure>
 
 ### API Documentation
 
