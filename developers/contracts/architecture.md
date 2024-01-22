@@ -21,10 +21,10 @@ Above the smart contracts, you'll find essential [libraries](architecture.md#lib
 
 #### Libraries
 
-These libraries include [Ocean.js](../ocean.js/README.md), a JavaScript library, and [Ocean.py](../ocean.py/README.md), a Python library. They serve as powerful tools for developers, enabling integration and interaction with the protocol.
+These libraries include [Ocean.js](../ocean.js/README.md), a JavaScript library, and [Ocean.py](../../data-scientists/ocean.py/README.md), a Python library. They serve as powerful tools for developers, enabling integration and interaction with the protocol.
 
 1. [Ocean.js](../ocean.js/README.md): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building dApps, and exploring data sets within a decentralized environment.
-2. [Ocean.py](../ocean.py/README.md): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers and [data scientists](../../data-science/README.md) can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling you to harness the power of decentralized data.
+2. [Ocean.py](../../data-scientists/ocean.py/README.md): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers and [data scientists](../../data-scientists/README.md) can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling you to harness the power of decentralized data.
 
 #### Middleware components
 
@@ -46,7 +46,7 @@ Prominently featured within this layer is [Ocean Market](../../user-guides/using
 
 ### Layer 4: The Friendly Wallets
 
-At the top of the Ocean Protocol ecosystem, we find the esteemed [Web 3 Wallets](../../discover/wallets/README.md), the gateway for users to immerse themselves in the world of decentralized data transactions. These wallets serve as trusted companions, enabling users to seamlessly transact within the ecosystem, purchase and sell data NFTs, and acquire valuable datatokens. For a more detailed exploration of Web 3 Wallets and their capabilities, you can refer to the [wallet intro page](../../discover/wallets/README.md).
+At the top of the Ocean Protocol ecosystem, we find the esteemed [Web 3 Wallets](../../user-guides/wallets/README.md), the gateway for users to immerse themselves in the world of decentralized data transactions. These wallets serve as trusted companions, enabling users to seamlessly transact within the ecosystem, purchase and sell data NFTs, and acquire valuable datatokens. For a more detailed exploration of Web 3 Wallets and their capabilities, you can refer to the [wallet intro page](../../user-guides/wallets/README.md).
 
 
 With the layers of the architecture clearly delineated, the stage is set for a comprehensive exploration of their underlying logic and intricate design. By examining each individually, we can gain a deeper understanding of their unique characteristics and functionalities.

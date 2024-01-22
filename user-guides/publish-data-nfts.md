@@ -127,7 +127,7 @@ On the [profile page](https://market.oceanprotocol.com/profile), a publisher has
 
 ### Code flow
 
-* **Python:** Are you looking at how to publish a data NFT using Python? Follow the ocean.py [Publish Flow](../developers/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
+* **Python:** Are you looking at how to publish a data NFT using Python? Follow the ocean.py [Publish Flow](../data-scientists/ocean.py/publish-flow.md) to mint a data NFT and datatoken using Python.
 * **Javascript**: Are you looking at how to publish a data NFT using Javascript? Follow the ocean.js [Publish Flow](../developers/ocean.js/publish.md) to mint a data NFT and datatoken using Javascript.
 
 #### More Info 🧐

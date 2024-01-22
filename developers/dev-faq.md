@@ -18,7 +18,7 @@ The blockchain being public means that transaction information is transparent an
 <details>
 <summary>How are datatokens created?</summary>
 
-Datatokens are created within the Ocean Protocol ecosystem when you tokenize a dataset(convert a dataset into a fungible token that can be traded). More details, on the [datatokens page](../developers/contracts/datatokens)
+Datatokens are created within the Ocean Protocol ecosystem when you tokenize a dataset(convert a dataset into a fungible token that can be traded). More details, on the [datatokens page](../developers/contracts/datatokens.md)
 </details>
 
 <details>

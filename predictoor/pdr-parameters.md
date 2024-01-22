@@ -31,7 +31,10 @@ The price to subscribe to one feed for 24 hours is 3.00 OCEAN. This includes all
 
 Pricing is subject to change based on learnings, and feedback from community.  
 
-## Predictoor Data Farming
-[Ocean Data Farming](https://df.oceandao.org/rewards) (DF) is an incentives program currently with [150K OCEAN rewards](../rewards/df-intro.md#reward-schedule) per week.  
 
-On Nov 9, a reward stream will be introduced to incentivize predictoors. This reward stream will provide 37,000 OCEAN in weekly rewards. You can find more about it in [Data Farming Intro - What are Active Rewards?](../rewards/df-intro.md#what-are-active-rewards)  
+----
+
+_Next: [FAQ](pdr-faq.md)_
+
+_Back: [How to earn](pdr-earn.md)_
+

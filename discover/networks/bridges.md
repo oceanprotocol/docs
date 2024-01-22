@@ -5,17 +5,17 @@ description: Transfer tokens between two blockchain networks.
 
 # Bridges
 
-A bridge is a mechanism that connects two or more separate blockchain networks, enabling communication and interoperability between them. Bridges can be designed to facilitate the transfer of assets, data, or messages between different blockchain networks that may operate on different protocols, and consensus mechanisms, or have different native currencies.
+This page covers bridges of OCEAN from Ethereum mainnet to...
+- BNB Smart Chain
+- Polygon
 
-We suggest using the following solutions to transfer OCEAN between Ethereum mainnet and Polygon or BSC.
+For other bridges and networks, see the [Networks page](README.md).
 
-## Celer Bridge
+The rest of this doc gives bridging details. You can skip it until you need the reference information.
 
-To transfer OCEAN to and from the Oasis Sapphire Mainnet, we recommend using the [Celer Bridge](https://cbridge.celer.network/1/23294/OCEAN). No bridge is needed for transfering OCEAN to the Oasis Sapphire Testnet because Ocean Protocol offers a [faucet](https://faucet.sapphire.oceanprotocol.com/) for OCEAN on Oasis Sapphire Testnet. Note that Ocean Protocol supports Oasis Sapphire networks for [Predictoor](https://predictoor.ai) development, and does not currently support Oasis Sapphire for ocean.js, ocean.py, or Ocean Market.
+### BNB Smart Chain Bridge
 
-## BNB Smart Chain Bridge
-
-To transfer OCEAN to and from the BNB Smart Chain, we recommend using the [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
+To transfer OCEAN to and from the BNB Smart Chain, we recommend using [Binance Bridge](https://www.bnbchain.org/en/bridge). BSC offers various options such as withdrawing crypto from [Binance](https://www.binance.com/en) and utilizing the [Binance Bridge](https://www.bnbchain.org/en/bridge). You can refer to the Binance Academy article "[How to Get Started with BSC](https://academy.binance.com/en/articles/how-to-get-started-with-binance-smart-chain-bsc)" for more information.
 
 {% hint style="warning" %}
 In case you opt for an alternative bridge option and intend to transfer tokens to Binance, it is **crucial** to ensure that the contract address you are sending the tokens to is correct.
@@ -23,7 +23,7 @@ In case you opt for an alternative bridge option and intend to transfer tokens t
 <img src="../../.gitbook/assets/wallet/binance-receive.png" alt="Binance deposit" data-size="original">
 {% endhint %}
 
-## Polygon (ex Matic) Bridge
+### Polygon (ex Matic) Bridge
 
 The Polygon Network (previously known as Matic) offers a [bridge](https://wallet.polygon.technology/bridge/), which lets you easily transfer digital assets between Ethereum and Polygon blockchains and a dedicated [wallet](https://wallet.polygon.technology/) designed for this purpose, which can be linked to your account through Metamask or other compatible wallets.
 
@@ -80,4 +80,12 @@ Alternatively, you can manually configure the network on Metamask by using the f
 | Chain Id           | `137`                                                |
 | Currency Symbol    | `MATIC`                                              |
 | Block Explorer URL | [`https://polygonscan.com`](https://polygonscan.com) |
+
+
+
+----
+
+_Next: [FAQ](../faq.md)_
+
+_Back: [Networks](README.md)_
 
