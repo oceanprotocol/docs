@@ -6,11 +6,11 @@ description: How to use Ocean Uploader
 
 ### What is Ocean Uploader? 
 
-Uploader is designed to simplify the process of storring your assets on decentralized networks (such as [arweave](https://www.arweave.org/) and [filecoin](https://filecoin.io/)). It provides access to multiple secure, reliable, and cost-effective storage solutions in an easy to use UI and javascript library.
+Uploader is designed to simplify the process of storing your assets on decentralized networks (such as [arweave](https://www.arweave.org/) and [filecoin](https://filecoin.io/)). It provides access to multiple secure, reliable, and cost-effective storage solutions in an easy-to-use UI and JavaScript library.
 
 ### What decentralized storage options are available?
 
-Currently we support Arweave and we will soon be releasing Filecoin support. In the future we will also support multiple other options. 
+Currently, we support Arweave and  IPFS. We may support other storage options in the future. 
 
 ### How to store an asset on Arweave with [Ocean Uploader](https://uploader.oceanprotocol.com/)? 
 
