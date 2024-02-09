@@ -47,7 +47,7 @@ Uploader simplifies the user workflow, allowing for easy management of storage o
 
 - Users fetch available storage types and payment options from the frontend.
 - Quotes for storing files on the Microservice network.
-Files are uploaded from the frontend to Uploader, which handles temporary storage via IPFS.
+- Files are uploaded from the frontend to Uploader, which handles temporary storage via IPFS.
 - The Microservice takes over, ensuring data is stored on the selected network securely.
 - Users can monitor upload status and retrieve links to access their stored content.
 
