@@ -14,7 +14,7 @@
   - [Basic concepts](user-guides/basic-concepts.md)
   - [Using Wallets](user-guides/wallets/README.md)
     - [Set Up MetaMask](user-guides/wallets/metamask-setup.md)
-    - [Manage Your OCEAN](user-guides/wallets-and-ocean.md)
+    - [Manage Your OCEAN](user-guides/wallets/wallets-and-ocean.md)
   - [Using Ocean Market](user-guides/using-ocean-market.md)
     - [Publish Data NFTs](user-guides/publish-data-nfts.md)
     - [Buy NFT Data](user-guides/buy-data-nfts.md)
