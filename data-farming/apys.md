@@ -15,7 +15,7 @@ description: >-
 
 Rewards are earned by users that participate in one or more Data Farming streams. Passive DF allows passive holding of veOCEAN; Active DF streams require more work from the user.
 
-Historically, annual percentage yields (APYs) are 5-15%. See for yourself: in [DF app](https://df.oceandao.org/activerewards) and scroll down to "Data Farming History".
+Historically, annual percentage yields (APYs) are 5-20%. See for yourself: in [DF app](https://df.oceandao.org/activerewards) and scroll down to "Data Farming History".
 
 You can do your own APY estimations. In Passive DF, APY is highly dependent on the locked amount *and* duration of lock. In other DF streams, there are other factors.
 

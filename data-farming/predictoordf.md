@@ -80,7 +80,7 @@ A low `DCV` (data consume volume) or a low `m` (publish market fee) mean low `DC
 
 Predictoor DF makes both `DCV` and `m` higher!
 
-- **`DCV` is higher:** the 37K OCEAN/week counts as consume volume
+- **`DCV` is higher:** the 37.5K OCEAN/week counts as consume volume
 - **`m` is higher:** publish market fee is 20% for prediction feeds
 
 Therefore `DCV_bound` is higher. Specifically: `DCV_bound = 37500 * (0.001 + 0.20) = 7537.5 OCEAN`. In other words, at least 7537.5 OCEAN is available for Volume DF in any given week.
