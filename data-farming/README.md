@@ -10,7 +10,7 @@ coverY: 0
 
 **[The DF webapp](https://df.oceandao.org)** is where users perform most DF actions.
 
-There is currently 150,000 OCEAN / week available for DF rewards. 
+There is currently 300,000 OCEAN / week available for DF rewards.
 
 ## DF Streams & Budgets
 
@@ -18,10 +18,10 @@ DF is organized into two streams: Passive DF and Active DF. Each has 50% of the 
 
 Here are all streams & substreams. The links lead to dedicated pages.
 
-1. **[Passive DF](passivedf.md).** 75,000 OCEAN per week. Lock OCEAN for **veOCEAN**; rewards are pro-rata to veOCEAN holdings.
-1. **Active DF.** 75,000 OCEAN per week. It has these substreams:
-   1. **[Volume DF](volumedf.md).** Allocate veOCEAN towards data assets with high DCV, ie "curate data". Rewards are a function of DCV and veOCEAN stake.
-   1. **[Predictoor DF](predictoordf.md).** Run prediction bots to earn continuously.
+1. **[Passive DF](passivedf.md).** 150,000 OCEAN per week. Lock OCEAN for **veOCEAN**; rewards are pro-rata to veOCEAN holdings.
+1. **Active DF.** 150,000 OCEAN per week. It has these substreams:
+   1. **[Volume DF](volumedf.md).** Allocate veOCEAN towards data assets with high DCV, ie "curate data". Rewards are a function of DCV and veOCEAN stake. 112.5K OCEAN/week.
+   1. **[Predictoor DF](predictoordf.md).** Run prediction bots to earn continuously. 37.5K OCEAN/week.
 
 All streams and substreams repeat **weekly** that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.
 
@@ -31,9 +31,9 @@ Active DF's substreams can -- and do -- evolve over time. It's chronicled [here]
 
 ## Reward Schedule & APYs
 
-**[Reward Schedule](reward-schedule.md)**. The 150,000 OCEAN / week currently available for DF rewards will increase over time to over 1.1M OCEAN / week.
+**[Reward Schedule](reward-schedule.md)**. The 300,000 OCEAN / week currently available for DF rewards will increase over time to over 1.1M OCEAN / week.
 
-**[Yields](apys.md)**. Historically, APYs are 5-15%. APYs vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
+**[Yields](apys.md)**. Historically, APYs are 5-20%. APYs vary week to week. APY depends on total OCEAN staked, duration of OCEAN lock, DCV, what DF streams you participate in, and other factors.
 
 ## Networks
 

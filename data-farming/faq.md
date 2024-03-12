@@ -46,7 +46,7 @@ No. IL is typically associated with providing liquidity to decentralized exchang
 
 <summary>What APYs can I expect?</summary>
 
-Historically, annual percentage yields (APYs) are 5-15%. See [APY docs](apys.md) for details.
+Historically, annual percentage yields (APYs) are 5-20%. See [APY docs](apys.md) for details.
   
 </details>
 

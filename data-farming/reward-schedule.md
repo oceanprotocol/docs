@@ -13,7 +13,7 @@ DF proceeds one round at a time. Each round is weekly.
 
 Rewards are distributed at the end of every week, for the activity of the previous week.
 
-The reward schedule = the emission schedule, definining the weekly OCEAN budget for DF. DF currently rewards 150K OCEAN per round. Over time, rewards will increase to be as high as 1.1M OCEAN / week, then decay over time Bitcoin-style.
+The reward schedule = the emission schedule, definining the weekly OCEAN budget for DF. DF currently rewards 300K OCEAN per round. Over time, rewards will increase to be as high as 1.1M OCEAN / week, then decay over time Bitcoin-style.
 
 DF rounds are grouped into four phases: DF Alpha, DF/VE Alpha, DF Beta, and DF Main. We are now in the "DF Main" phase.
 
