@@ -1,11 +1,9 @@
 ---
+description: Help for wherever you are on your Ocean Protocol journey.
+cover: .gitbook/assets/general/purchase-and-compute_and_ocean-network.png
+coverY: 0
 layout: landing
 ---
-
-<div align="center">
-<figure><img src="../.gitbook/assets/cover/docs_banner.png"></figure>
-</div>
-
 
 <table data-view="cards">
   <thead>
