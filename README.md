@@ -1,7 +1,11 @@
 ---
-description: Help for wherever you are on your Ocean Protocol journey.
 layout: landing
 ---
+
+<div align="center">
+<figure><img src="../.gitbook/assets/cover/docs_banner.png"></figure>
+</div>
+
 
 <table data-view="cards">
   <thead>
