@@ -1,4 +1,5 @@
 ---
+description: Help for wherever you are on your Ocean Protocol journey.
 layout: landing
 ---
 
