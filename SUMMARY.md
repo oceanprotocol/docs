@@ -1,3 +1,7 @@
+---
+description: Help for wherever you are on your Ocean Protocol journey.
+---
+
 # Table of contents
 
 - [👋 Ocean docs](README.md)
