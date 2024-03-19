@@ -1,7 +1,5 @@
 ---
 description: Help for wherever you are on your Ocean Protocol journey.
-cover: .gitbook/assets/general/purchase-and-compute_and_ocean-network.png
-coverY: 0
 layout: landing
 ---
 
