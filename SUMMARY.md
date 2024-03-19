@@ -1,6 +1,6 @@
 # Table of contents
 
-- [👋 Ocean Protocol docs](README.md)
+- [👋 Ocean docs](README.md)
 - [🌊 Discover Ocean](discover/README.md)
   - [Why Ocean?](discover/why-ocean.md)
   - [What is Ocean?](discover/what-is-ocean.md)
