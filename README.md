@@ -1,7 +1,4 @@
 ---
-description: 
-cover: 
-coverY: 
 layout: landing
 ---
 
