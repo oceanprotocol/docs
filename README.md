@@ -1,11 +1,9 @@
 ---
-description: Help for wherever you are on your Ocean Protocol journey.
-cover: .gitbook/assets/cover/docs_banner.png
-coverY: 0
+description: 
+cover: 
+coverY: 
 layout: landing
 ---
-
-# 👋 Welcome
 
 <table data-view="cards">
   <thead>
