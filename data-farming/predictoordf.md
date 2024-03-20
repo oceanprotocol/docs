@@ -27,7 +27,7 @@ You should be familiar with both Predictoor and DF before reading on.
 
 ## Predictoor DF Timing
 
-Predictoor DF starts counting on Nov 9, 23, at the beginning of Data Farming Round 63 (DF63). It runs indefinitely.
+Predictoor DF started counting on Nov 9, 2023, at the beginning of Data Farming Round 63 (DF63). It runs indefinitely.
 
 ## Predictoor DF Rewards
 

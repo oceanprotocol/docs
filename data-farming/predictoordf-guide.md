@@ -12,7 +12,7 @@ In Predictoor DF (and Predictoor proper), you run prediction bots to earn contin
 ## How to become a predictoor
 
 - Play with the dapp: http://predictoor.ai
-- Then follow [Predictoor usage guide](../predictoor/pdr-earn.md)
+- Then go through "How to earn as a Predictoor" in [Predictoor docs](https://docs.predictoor.ai)
 - Or, go straight to the [quickstart README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/predictoor.md) :) 🏎️
 
 ## On OCEAN Rewards in Predictoor DF
