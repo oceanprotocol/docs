@@ -65,7 +65,7 @@ _Rewards are calculated as follows:_
    1. Bound rewards to the asset by 125% APY
    1. Bound rewards by asset’s `DCV` \* (% allocation in asset) \* `DCV_multiplier`.
 
-Step 2.4 is to prevent wash consume. `DCV_multiplier` is a function of fees, with a value of 0.201 for Predictoor feeds, and 0.001 for other data assets.
+Step 2.4 is to prevent wash consume. `DCV_multiplier` is a function of fees, with a value of 1.005 for Predictoor feeds, and 0.001 for other data assets.
 
 Any OCEAN budgeted for Volume DF that wasn’t rewarded goes back into the DF pot for future DF rounds.
 
