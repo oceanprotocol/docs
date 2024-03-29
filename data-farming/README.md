@@ -12,6 +12,17 @@ coverY: 0
 
 There is currently 300,000 OCEAN / week available for DF rewards.
 
+## <span style="color:red;">New changes are in the air while wating for ASI voting from the Fetch and SingularityNET communities to go trough, which could be found in [this blogpost.](https://blog.oceanprotocol.com/superintelligence-alliance-updates-to-data-farming-and-veocean-68d7b29c5100) </span>
+
+### The main changes while the voting process is ongoing are:
+- **Passive DF  and Volume DF rewards are going to be stopped** starting with **round 83** until the Voting process will come to an end.
+- **All actions around the veOCEAN lock(lock, update lock) are going to be disabled** on the data farming website during this period, and we recomand users to **DO NOT INTERACT DIRECTLY WITH THE SMARTCONTRACTS.**
+- **Predictoor DF will continue** regardless of voting outcome.
+
+### How the vote outcome is going to affect Data Farming?
+- If "yes" - **veOCEAN will be retired**, but each address that has locked OCEAN for veOCEAN and is holding veOCEAN will be made whole by an **OCEAN airdrop** of (1.25^years_til_unlock) — 1) * num_OCEAN_locked.
+- If "no" - **Passive DF & Volume DF will resume** as-is.
+ 
 ## DF Streams & Budgets
 
 DF is organized into two streams: Passive DF and Active DF. Each has 50% of the DF budget. Passive DF allows for passive earning potential. Active DF requires more engagement; it has several substreams, each with its own activity.
