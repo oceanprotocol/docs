@@ -8,20 +8,29 @@ coverY: 0
 
 **Data Farming (DF) is Ocean's incentive program.** It rewards OCEAN to participants who lock OCEAN into veOCEAN, curate data, or make predictions -- all in the name of driving **data consume volume** (DCV). DF is a bit like DeFi liquidity mining, but tuned for DCV.
 
+## ⚠️ ASI Merge Update
+
+Ocean Protocol is joining with Fetch and SingularityNET to form the Superintelligence Alliance, with a unified token $ASI. This is pending a vote of “yes” from the Fetch and SingularityNET communities, a process that will take several weeks. [This Mar 27, 2024 article](https://blog.oceanprotocol.com/ocean-protocol-is-joining-the-superintelligence-alliance-767c82693f24) describes the key mechanisms.
+
+There are important implications for veOCEAN and Data Farming. The article [“Superintelligence Alliance Updates to Data Farming and veOCEAN”](https://blog.oceanprotocol.com/superintelligence-alliance-updates-to-data-farming-and-veocean-68d7b29c5100) elaborates.
+
+Changes during voting period:
+- **Passive DF  and Volume DF rewards are paused** as of DF83, until the voting process completes.
+- **veOCEAN lock and lock-update actions are disabled** on the DF app. We recomand users to **DO NOT INTERACT DIRECTLY WITH THE SMART CONTRACTS.**
+- **Predictoor DF will continue** regardless of voting outcome.
+
+How the vote outcome is going to affect Data Farming?
+- **If "yes": veOCEAN, Passive DF, and active DF will be retired**. Each address that has locked OCEAN for veOCEAN and is holding veOCEAN will be made whole by an **OCEAN airdrop** of (1.25^years_til_unlock — 1) * num_OCEAN_locked. 
+- **If "no": Passive DF & Volume DF will resume** as-is. There will be rewards based on the weeks of DF pause.
+
+(What follows here, and in other DF docs, is the documentation as if there are no changes. Therefore as you read them, understand that things change in light of the ASI Merge.)
+
+---
+
 **[The DF webapp](https://df.oceandao.org)** is where users perform most DF actions.
 
 There is currently 300,000 OCEAN / week available for DF rewards.
 
-## <span style="color:red;">New changes are in the air while wating for ASI voting from the Fetch and SingularityNET communities to go trough, which could be found in [this blogpost.](https://blog.oceanprotocol.com/superintelligence-alliance-updates-to-data-farming-and-veocean-68d7b29c5100) </span>
-
-### The main changes while the voting process is ongoing are:
-- **Passive DF  and Volume DF rewards are going to be stopped** starting with **round 83** until the Voting process will come to an end.
-- **All actions around the veOCEAN lock(lock, update lock) are going to be disabled** on the data farming website during this period, and we recomand users to **DO NOT INTERACT DIRECTLY WITH THE SMARTCONTRACTS.**
-- **Predictoor DF will continue** regardless of voting outcome.
-
-### How the vote outcome is going to affect Data Farming?
-- If "yes" - **veOCEAN will be retired**, but each address that has locked OCEAN for veOCEAN and is holding veOCEAN will be made whole by an **OCEAN airdrop** of (1.25^years_til_unlock) — 1) * num_OCEAN_locked.
-- If "no" - **Passive DF & Volume DF will resume** as-is.
  
 ## DF Streams & Budgets
 
