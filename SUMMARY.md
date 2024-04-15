@@ -32,8 +32,6 @@
     - [Data NFTs](developers/contracts/data-nfts.md)
     - [Datatokens](developers/contracts/datatokens.md)
     - [Data NFTs and Datatokens](developers/contracts/datanft-and-datatoken.md)
-    - [Publish Data NFTs](user-guides/publish-data-nfts.md)
-    - [Buy NFT Data](user-guides/buy-data-nfts.md)
     - [Datatoken Templates](developers/contracts/datatoken-templates.md)
     - [Roles](developers/contracts/roles.md)
     - [Pricing Schemas](developers/contracts/pricing-schemas.md)
