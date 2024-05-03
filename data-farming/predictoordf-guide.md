@@ -29,6 +29,6 @@ In Predictoor DF (and Predictoor proper), you run prediction bots to earn contin
 
 ----
 
-_Next: [Claim Rewards](claim-rewards.md)_
+_Next: Jump to [DF FAQ](faq.md)._
 
 _Back: [Predictoor DF](predictoordf.md)_
