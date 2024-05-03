@@ -1,5 +1,5 @@
 ---
-description: Earn OCEAN rewards by locking OCEAN, curating data, and making predictions.
+description: Earn OCEAN rewards by predicting (and more streams to come).
 cover: ../.gitbook/assets/cover/data_farming_banner.png
 coverY: 0
 ---

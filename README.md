@@ -57,7 +57,7 @@ layout: landing
     </tr>
     <tr>
       <td><a href="data-farming/">data farming</a></td>
-      <td>Earn OCEAN rewards by locking OCEAN, curating data, and predicting.</td>
+      <td>Earn OCEAN rewards by predicting (and more streams to come)</td>
       <td></td>
       <td></td>
       <td><a href="data-farming/">data farming</a></td>
