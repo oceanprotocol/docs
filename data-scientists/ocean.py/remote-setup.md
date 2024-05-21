@@ -61,7 +61,7 @@ Then, hit Ctrl-C to exit the Python console.
 
 Now, you have two EVM accounts (address & private key). Save them somewhere safe, like a local file or a password manager.
 
-These accounts will work on any EVM-based chain: production chains like Eth mainnet and Polygon, and testnets like Goerli and Mumbai. Here, we'll use them for Mumbai.
+These accounts will work on any EVM-based chain: production chains like Eth mainnet and Polygon, and testnets like Mumbai. Here, we'll use them for Mumbai.
 
 ### 3. Get (test) MATIC on Mumbai
 

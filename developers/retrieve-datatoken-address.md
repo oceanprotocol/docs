@@ -45,7 +45,6 @@ Here are the networks and their corresponding chain IDs:
 "energyweb: 246"
 "moonriver: 1285"
 "mainnet: 1"
-"goerli: 5"
 "polygonedge: 81001"
 "gaiaxtestnet: 2021000"
 "alfajores: 44787"

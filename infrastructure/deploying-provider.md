@@ -11,7 +11,7 @@ As mentioned in the Setup a Server document, all Ocean components can be deploye
 
 ## Deploying Provider using Docker Engine and Docker Compose
 
-In this guide, we will deploy Provider for two chains: Goerli (Ethereum test network) and Mumbai (Polygon test network). Therefore, please note that in the following configuration files,  "5" and "80001" are the chain IDs for Goerli and Mumbai respectively.
+In this guide, we will deploy Provider for Mumbai (Polygon test network). Therefore, please note that in the following configuration files,  "80001" is the chain ID for Mumbai.
 
 
 ### Prerequisites
@@ -51,8 +51,8 @@ services:
       backend:
     environment:
       ARTIFACTS_PATH: "/ocean-contracts/artifacts"
-      NETWORK_URL: '{"5":"https://goerli.infura.io/v3/<your INFURA project id>","80001":"https://polygon-mumbai.infura.io/v3/<your INFURA project id>"}'
-      PROVIDER_PRIVATE_KEY: '{"5":"<your private key>","80001":"<your private key"}'
+      NETWORK_URL: '{"80001":"https://polygon-mumbai.infura.io/v3/<your INFURA project id>"}'
+      PROVIDER_PRIVATE_KEY: '{"80001":"<your private key"}'
       LOG_LEVEL: DEBUG
       OCEAN_PROVIDER_URL: 'http://0.0.0.0:8030'
       OCEAN_PROVIDER_WORKERS: "1"
@@ -190,7 +190,7 @@ $ docker logs --follow provider
 ## Deploying Provider using Kubernetes with Docker Engine
 
 
-In this example, we will run Provider as a Kubernetes deployment resource. We will deploy Provider for two chains: Goerli (Ethereum test network) and Mumbai (Polygon test network). Therefore, please note that in the following configuration files,  "5" and "80001" are the chain IDs for Goerli and Mumbai respectively.
+In this example, we will run Provider as a Kubernetes deployment resource. We will deploy Provider for Mumbai (Polygon test network). Therefore, please note that in the following configuration files,  "80001" is the chain ID for Mumbai.
 
 ### Prerequisites
 
@@ -245,7 +245,7 @@ spec:
           value: /ocean-provider/artifacts
         - name: NETWORK_URL
           value: |
-            {"5":"https://goerli.infura.io/v3/<your INFURA project id>","80001":"https://polygon-mumbai.infura.io/v3/<your INFURA project id>"}
+            {"80001":"https://polygon-mumbai.infura.io/v3/<your INFURA project id>"}
         - name: PROVIDER_PRIVATE_KEY
           value: |
             {"5":"<your private key>","80001":"<your private key>"}

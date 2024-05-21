@@ -479,7 +479,6 @@ Skipping bsc
 Skipping energyweb
 Skipping moonriver
 Skipping mainnet
-Skipping goerli
 Skipping polygonedge
 Skipping gaiaxtestnet
 Skipping alfajores

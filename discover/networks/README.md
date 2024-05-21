@@ -149,19 +149,6 @@ This is the chain for [Energy Web Foundation](https://www.energyweb.org/).
 
 Unlike production networks, tokens on test networks do not hold real economic value.
 
-###  Görli
-
-<table>
-<tbody>
-<tr><td>Native token</td></td><td>Görli (fake) ETH</td></tr>
-<tr><td>Native token faucet</td><td><a href="https://goerlifaucet.com/">Here</a></td></tr>
-<tr><td>OCEAN address</td><td><a href="https://goerli.etherscan.io/address/0xcfdda22c9837ae76e0faa845354f33c62e03653a">0xCfDdA22C9837aE76E0faA845354f33C62E03653a</a></td></tr>
-<tr><td>OCEAN faucet</td><td><a href="https://faucet.goerli.oceanprotocol.com">Here</a></td></tr>
-<tr><td>Explorer</td><td><a href="https://goerli.etherscan.io"</a></td></tr>
-</tbody>
-</table>
-
-**Wallet.** To connect with e.g. MetaMask, click on the network name dropdown and select _Goerli_ from the list of available networks.
 
 ###  Sepolia
 
