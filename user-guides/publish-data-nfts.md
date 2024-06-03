@@ -30,7 +30,7 @@ Don't enjoy reading? Watch the video tutorial!
 
 <figure><img src="../.gitbook/assets/market/connect-wallet.png" alt=""><figcaption><p>Connect your wallet</p></figcaption></figure>
 
-In this tutorial, we will be using the Polygon Mumbai test network.
+In this tutorial, we will be using the Sepolia test network.
 
 4\. Click on the Publish link on the top left corner of the page.
 

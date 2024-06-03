@@ -27,7 +27,7 @@ Ocean Subgraph is deployed on top of [graph-node](https://github.com/graphprotoc
 
 From a terminal console, create the _/etc/docker/compose/graph-node/docker-compose.yml_ file, then copy and paste the following content to it (. Check the comments in the file and replace the fields with the specific values of your implementation.
 
-_/etc/docker/compose/graph-node/docker-compose.yml_ (annotated - example for `mumbai` network)
+_/etc/docker/compose/graph-node/docker-compose.yml_ (annotated - example for `sepolia` network)
 
 ```yaml
 version: '3'
@@ -48,9 +48,9 @@ services:
       postgres_host: postgres-graph
       postgres_user: graph-node
       postgres_pass: < password >
-      postgres_db: mumbai
+      postgres_db: sepolia
       ipfs: 'ipfs:5001'
-      ethereum: 'mumbai:https://polygon-mumbai.infura.io/v3/< INFURA ID >'
+      ethereum: 'sepolia:https://sepolia.infura.io/v3/<API-KEY>'
       GRAPH_LOG: info
   ipfs:
     image: ipfs/go-ipfs:v0.4.23
@@ -70,7 +70,7 @@ services:
     environment:
       POSTGRES_USER: graph-node
       POSTGRES_PASSWORD: < password >
-      POSTGRES_DB: mumbai
+      POSTGRES_DB: sepolia
     volumes:
       - pgdata-graph-node:/var/lib/postgresql/data
 volumes:
@@ -196,7 +196,7 @@ It is recommended to deploy PostgreSQL as helm chart.
 
 References: [https://github.com/bitnami/charts/tree/main/bitnami/postgresql/#installing-the-chart](https://github.com/bitnami/charts/tree/main/bitnami/postgresql/#installing-the-chart)
 
-Once PostgreSQL pods are running, a database must be created: eg. `mumbai.`
+Once PostgreSQL pods are running, a database must be created: eg. `sepolia.`
 
 #### 2. Deploy IPFS
 
@@ -317,15 +317,15 @@ kind: Deployment
 metadata:
   annotations:
   labels:
-    app: mumbai-graph-node
-  name: mumbai-graph-node
+    app: sepolia-graph-node
+  name: sepolia-graph-node
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: mumbai-graph-node
+      app: sepolia-graph-node
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -335,7 +335,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: mumbai-graph-node
+        app: sepolia-graph-node
     spec:
       containers:
       - env:
@@ -350,7 +350,7 @@ spec:
         - name: postgres_db
           value: < postgresql database >
         - name: ethereum
-          value: mumbai:https://polygon-mumbai.infura.io/v3/< INFURA ID>
+          value: sepolia:https://sepolia.infura.io/v3/< INFURA ID>
         - name: GRAPH_KILL_IF_UNRESPONSIVE
           value: "true"
         image: graphprotocol/graph-node:v0.28.2
@@ -365,7 +365,7 @@ spec:
           periodSeconds: 10
           successThreshold: 1
           timeoutSeconds: 1
-        name: mumbai-graph-node
+        name: sepolia-graph-node
         ports:
         - containerPort: 8000
           name: graphql
@@ -407,8 +407,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: mumbai-graph-node
-  name:  mumbai-graph-node
+    app: sepolia-graph-node
+  name:  sepolia-graph-node
 spec:
   clusterIP:
   clusterIPs:
@@ -426,7 +426,7 @@ spec:
   - name: metrics
     port: 8040
   selector:
-    app: mumbai-graph-nodeyam
+    app: sepolia-graph-nodeyam
 ```
 
 ## Deploy Ocean Subgraph
@@ -460,19 +460,19 @@ npm i
 
 #### 4. Deploy Ocean Subgraph
 
-In the following example, we are deploying on Ocean Subgraph on graph-node running for `mumbai` testnet.
+In the following example, we are deploying on Ocean Subgraph on graph-node running for `sepolia` testnet.
 
 Note: for `ocean-subgraph` deployment in the Kubernetes environment, both `graph-node` and `ipfs` services must be locally forwarded using `kubectl port-forward` command.
 
 Run the following command:
 
 ```bash
-$ npm run quickstart:mumbai 
+$ npm run quickstart:sepolia 
 
-> ocean-subgraph@3.0.8 quickstart:mumbai
-> node ./scripts/generatenetworkssubgraphs.js mumbai && npm run codegen && npm run create:local && npm run deploy:local
+> ocean-subgraph@3.0.8 quickstart:sepolia
+> node ./scripts/generatenetworkssubgraphs.js sepolia && npm run codegen && npm run create:local && npm run deploy:local
 
-Creating subgraph.yaml for mumbai
+Creating subgraph.yaml for sepolia
          Adding veOCEAN
 Skipping polygon
 Skipping bsc

@@ -31,7 +31,6 @@ Here are the networks that Ocean is deployed to.
 **Test Networks:**
 - Görli
 - Sepolia
-- Mumbai
 - Oasis Sapphire testnet
 - Optimism (OP) Sepolia
 
@@ -163,21 +162,6 @@ Unlike production networks, tokens on test networks do not hold real economic va
 </table>
 
 **Wallet.** To connect with e.g. MetaMask, select "Sepolia" from the network dropdown list(enable "Show test networks").
-
-
-###  Mumbai
-
-<table>
-<tbody>
-<tr><td>Native token</td><td>Mumbai (fake) MATIC</td></tr>
-<tr><td>Native token faucet</td><td><a href="https://faucet.matic.network/">Here</a></td></tr>
-<tr><td>OCEAN address</td><td><a href="https://mumbai.polygonscan.com/token/0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8">0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8</a></td></tr>
-<tr><td>OCEAN faucet</td><td><a href="https://faucet.mumbai.oceanprotocol.com/">Here</a></td></tr>
-<tr><td>Explorer</td><td><a href="https://mumbai.polygonscan.com">https://mumbai.polygonscan.com</a></td></tr>
-</tbody>
-</table>
-
-**Wallet.** To connect with e.g. MetaMask, select "Görli" from the network dropdown list. If it's not listed as a predefined network, follow [Polygon's guide](https://polygon.technology/blog/getting-started-with-metamask-on-polygon).
 
 
 ###  Oasis Sapphire Testnet
