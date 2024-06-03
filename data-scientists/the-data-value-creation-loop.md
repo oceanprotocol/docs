@@ -64,7 +64,7 @@ We analyzed dozens of possible verticals with according to these criteria. For a
 
 Here are some examples.
 
-- **Small $, slow**. Traditional music is small $ and slow, because incumbents like Universal dominate by controlling the the back catalogue.
+- **Small $, slow**. Traditional music is small $ and slow, because incumbents like Universal dominate by controlling the back catalogue.
 - **Large $, slow**. Medicine is large $ but slow, due to the approval process.
 Small $, fast. Decentralized music is fast but small $ (for now! Fingers crossed).
 

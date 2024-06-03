@@ -42,7 +42,7 @@ Parameters
 
 {% code overflow="wrap" %}
 ```
-    signature: String object containg user signature (signed message) (required)
+    signature: String object containing user signature (signed message) (required)
     consumerAddress: String object containing consumer's ethereum address (required)
     nonce: Integer, Nonce (required)
     environment: String representing a compute environment offered by the provider
@@ -108,7 +108,7 @@ Parameters
 
 {% code overflow="wrap" %}
 ```
-    signature: String object containg user signature (signed message)
+    signature: String object containing user signature (signed message)
     documentId: String object containing document did  (optional)
     jobId: String object containing workflowID (optional)
     consumerAddress: String object containing consumer's address (optional)
@@ -175,7 +175,7 @@ Parameters
     index: Integer, index of the result to download (optional)
     consumerAddress: String object containing consumer's address (optional)
     nonce: Integer, Nonce (required)
-    signature: String object containg user signature (signed message)
+    signature: String object containing user signature (signed message)
 ```
 
 Returns: Bytes string containing the compute result.
@@ -204,7 +204,7 @@ Parameters
 
 {% code overflow="wrap" %}
 ```
-    signature: String object containg user signature (signed message)
+    signature: String object containing user signature (signed message)
     documentId: String object containing document did (optional)
     jobId: String object containing workflowID (optional)
     consumerAddress: String object containing consumer's address (optional)
@@ -245,7 +245,7 @@ Delete a compute job and all resources associated with the job. If job is runnin
 Parameters
 
 ```
-    signature: String object containg user signature (signed message)
+    signature: String object containing user signature (signed message)
     documentId: String object containing document did (optional)
     jobId: String object containing workflowId (optional)
     consumerAddress: String object containing consumer's address (optional)

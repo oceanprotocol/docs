@@ -62,7 +62,7 @@ Parameters
 ```
 address: String object containing consumer's address (optional)
 nonce: Integer, Nonce (required)
-signature: String object containg user signature (signed message)
+signature: String object containing user signature (signed message)
   The signature is based on hashing the following parameters:
   address + nonce
 token: token to be expired
