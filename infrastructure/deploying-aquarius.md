@@ -286,8 +286,7 @@ Aquarius supports indexing multiple chains using a single instance to serve API 
 The following deployment templates could be used for guidance. Some parameters are [optional](https://github.com/oceanprotocol/aquarius) and the template could be adjusted based on these considerations. Common cases are the deployments for one/multiple Ethereum networks:
 
 * Mainnet
-* Goerli
-* Mumbai
+* Sepolia
 
 a. Create a YAML file for Aquarius configuration.
 
@@ -396,9 +395,9 @@ spec:
       terminationGracePeriodSeconds: 30ya
 ```
 
-Example deployment for _Mumbai_ (Polygon testnet):
+Example deployment for Sepoia (Polygon testnet):
 
-* [aquarius-events-mumbai-deployment.yaml](https://github.com/oceanprotocol/aquarius/blob/update-deploy-docs/deployment/aquarius-events-mumbai-deployment.yaml) (annotated) - this deployment will be responsible for indexing the block and storing the metadata published on-chain:
+* [aquarius-events-sepolia-deployment.yaml](https://github.com/oceanprotocol/aquarius/blob/update-deploy-docs/deployment/aquarius-events-sepolia-deployment.yaml) (annotated) - this deployment will be responsible for indexing the block and storing the metadata published on-chain:
 
 ```yaml
 apiVersion: apps/v1
@@ -406,15 +405,15 @@ kind: Deployment
 metadata:
   annotations:
   labels:
-    app: aquarius-events-mumbai
-  name: aquarius-events-mumbai
+    app: aquarius-events-sepolia
+  name: aquarius-events-sepolia
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: aquarius-events-mumbai
+      app: aquarius-events-sepolia
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -424,7 +423,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: aquarius-events-mumbai
+        app: aquarius-events-sepolia
     spec:
       containers:
       - env:
@@ -459,9 +458,9 @@ spec:
         - name: ALLOWED_PUBLISHERS
           value: '[""]'
         - name: NETWORK_NAME
-          value: mumbai
+          value: sepolia
         - name: EVENTS_RPC
-          value: https://polygon-mumbai.infura.io/v3/< INFURA ID > => or another RPC service for this network
+          value: https://polygon-sepolia.infura.io/v3/< INFURA ID > => or another RPC service for this network
         - name: METADATA_UPDATE_ALL
           value: "0"
         - name: ASSET_PURGATORY_URL
@@ -474,7 +473,7 @@ spec:
           value: 0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8
         - name: SUBGRAPH_URLS
           value: |
-            {"80001": "https://v4.subgraph.mumbai.oceanprotocol.com"} => or your own deployed Ocean Subgraph service for this network
+            {"80001": "https://v4.subgraph.sepolia.oceanprotocol.com"} => or your own deployed Ocean Subgraph service for this network
         - name: BLOCKS_CHUNK_SIZE
           value: "3500"
         - name: EVENTS_HTTP
@@ -491,7 +490,7 @@ spec:
           periodSeconds: 10
           successThreshold: 1
           timeoutSeconds: 1
-        name: aquarius-events-mumbai
+        name: aquarius-events-sepolia
         ports:
         - containerPort: 5000
           protocol: TCP
@@ -535,9 +534,9 @@ kubectl get pods -l app=aquarius
 NAME                        READY   STATUS    RESTARTS   AGE
 aquarius-6fd9cc975b-fxr4d   1/1     Running   0          1d
 
- kubectl get pods -l app=aquarius-events-mumbai
+ kubectl get pods -l app=aquarius-events-sepolia
 NAME                                     READY   STATUS    RESTARTS   AGE
-aquarius-events-mumbai-8748976c4-mh24n   1/1     Running   0          1d
+aquarius-events-sepolia-8748976c4-mh24n   1/1     Running   0          1d
 ```
 
 Check the logs for newly deployed Aquarius by running the following command:
@@ -545,7 +544,7 @@ Check the logs for newly deployed Aquarius by running the following command:
 ```bash
 $ kubectl logs aquarius-6fd9cc975b-fxr4d [--follow]
 
-$ kubectl logs aquarius-events-mumbai-8748976c4-mh24n [--follow]
+$ kubectl logs aquarius-events-sepolia-8748976c4-mh24n [--follow]
 ```
 
 c. Create a Kubernetes service
