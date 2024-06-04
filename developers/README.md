@@ -10,7 +10,7 @@ coverY: 0
 
 1. **Token-gated dApps & REST APIs**: monetize by making your dApp or its REST API token-gated. [Here's how](https://github.com/oceanprotocol/token-gating-template).
 1. **AI dApps**: monetize your AI dApp by token-gating on AI training data, feature vectors, models, or predictions.
-1. **Data Markets**: build a decentralized [data market](../developers/build-a-marketplace/README.md).
+1. **Data Markets**: build a decentralized data market. [Here's how](https://github.com/oceanprotocol/market)
 1. **Private user profile data**: storing user profile data on your centralized server exposes you to liability. Instead, have it on-chain encrypted by the user's wallet, and just-in-time decrypt for the app. [Video](https://www.youtube.com/watch?v=xTfI8spLq1k&ab_channel=ParticleNetwork), [slides](https://docs.google.com/presentation/d/1_lkDVUkA0Rx1R7RpkaSeLkX3PeOBoMQyRhvxjwTvd6A/edit?usp=sharing).
 
 Example live dapps:

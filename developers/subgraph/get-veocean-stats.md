@@ -9,7 +9,7 @@ If you are already familiarized with veOCEAN, you're off to a great start. Howev
 On this page, you'll find a few examples to fetch the stats of veOCEANS from the Ocean Subgraph. These examples serve as a valuable starting point to help you retrieve essential information about veOCEAN. However, if you're eager to delve deeper into the topic, we invite you to visit the [GitHub](https://github.com/oceanprotocol/ocean-subgraph/blob/main/test/integration/VeOcean.test.ts) repository. There, you'll discover a wealth of additional examples, which provide comprehensive insights. Feel free to explore and expand your knowledge! :books:
 
 {% hint style="info" %}
-The veOCEAN is deployed on the Ethereum mainnet, along with two test networks, namely Mumbai and Goerli. The statistical data available is specifically limited to these networks.
+The veOCEAN is deployed on the Ethereum mainnet, along with two test networks. The statistical data available is specifically limited to these networks.
 {% endhint %}
 
 ###

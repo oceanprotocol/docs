@@ -116,7 +116,7 @@ http {
 
 #### 1.6 Create Kubernetes secret in C2D server
 
-Login into the compute-to-data enviroment and run the following command with the appropriate credentials:
+Login into the compute-to-data environment and run the following command with the appropriate credentials:
 
 ```bash
 kubectl create secret docker-registry regcred --docker-server=example.com --docker-username=<username> --docker-password=<password> --docker-email=<email_id> -n ocean-compute

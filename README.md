@@ -1,11 +1,7 @@
 ---
 description: Help for wherever you are on your Ocean Protocol journey.
-cover: .gitbook/assets/cover/docs_banner.png
-coverY: 0
 layout: landing
 ---
-
-# 👋 Welcome
 
 <table data-view="cards">
   <thead>
@@ -58,14 +54,6 @@ layout: landing
       <td></td>
       <td><a href="predictoor/">predictoor</a></td>
       <td><a href=".gitbook/assets/cover/predictoor_card.jpg">predictoor_card.jpg</a></td>
-    </tr>
-    <tr>
-      <td><a href="data-farming/">data farming</a></td>
-      <td>Earn OCEAN rewards by locking OCEAN, curating data, and predicting.</td>
-      <td></td>
-      <td></td>
-      <td><a href="data-farming/">data farming</a></td>
-      <td><a href=".gitbook/assets/cover/data_farming_card.png">data_farming_card.png</a></td>
     </tr>
     <tr>
       <td><a href="infrastructure/">infrastructure</a></td>

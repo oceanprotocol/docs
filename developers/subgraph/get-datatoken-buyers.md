@@ -6,7 +6,7 @@ description: Query the Subgraph to see the buyers of a datatoken.
 
 The result of the following GraphQL query returns the list of buyers for a particular datatoken. Here, `0xc22bfd40f81c4a28c809f80d05070b95a11829d9` is the address of the datatoken.
 
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the **Mumbai** network. If you want to change the network, please refer to_ [_this table_](README.md#ocean-subgraph-deployments)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the **Sepolia** network. If you want to change the network, please refer to_ [_this table_](README.md#ocean-subgraph-deployments)_._
 
 {% tabs %}
 {% tab title="JavaScript" %}
@@ -42,7 +42,7 @@ const query = `{
         }
 }`
 
-const network = "mumbai"
+const network = "sepolia"
 var config = {
   method: 'post',
   url: `https://v4.subgraph.${network}.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph`,
@@ -105,7 +105,7 @@ query = """
     datatoken_address
 )
 
-base_url = "https://v4.subgraph.mumbai.oceanprotocol.com"
+base_url = "https://v4.subgraph.sepolia.oceanprotocol.com"
 route = "/subgraphs/name/oceanprotocol/ocean-subgraph"
 
 url = base_url + route
@@ -127,7 +127,7 @@ python datatoken_buyers.py
 {% endtab %}
 
 {% tab title="Query" %}
-Copy the query to fetch the list of buyers for a datatoken in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.mumbai.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph).
+Copy the query to fetch the list of buyers for a datatoken in the Ocean Subgraph [GraphiQL interface](https://v4.subgraph.sepolia.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph).
 
 ```graphql
  
