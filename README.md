@@ -56,14 +56,6 @@ layout: landing
       <td><a href=".gitbook/assets/cover/predictoor_card.jpg">predictoor_card.jpg</a></td>
     </tr>
     <tr>
-      <td><a href="data-farming/">data farming</a></td>
-      <td>Earn OCEAN rewards by predicting (and more streams to come)</td>
-      <td></td>
-      <td></td>
-      <td><a href="data-farming/">data farming</a></td>
-      <td><a href=".gitbook/assets/cover/data_farming_card.png">data_farming_card.png</a></td>
-    </tr>
-    <tr>
       <td><a href="infrastructure/">infrastructure</a></td>
       <td>For software architects and developers - deploy your own components in Ocean Protocol ecosystem.</td>
       <td></td>
