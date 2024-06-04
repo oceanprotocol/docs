@@ -24,16 +24,16 @@ For the ones that do not have a Kubernetes environment available, we added to th
 2. [Install Minikube](compute-to-data-minikube.md#install-minikube)
 3. [Start Minikube](compute-to-data-minikube.md#start-minikube)
 4. [Install the Kubernetes command line tool (kubectl)](compute-to-data-minikube.md#install-the-kubernetes-command-line-tool-kubectl)
-5. [Run the IPFS host (optional)](compute-to-data-minikube.md#run-the-ipfs-host-optional)
-6. [Update the storage class](compute-to-data-minikube.md#update-the-storage-class)
-7. [Download and Configure Operator Service](compute-to-data-minikube.md#download-and-configure-operator-service)
-8. [Download and Configure Operator Engine](compute-to-data-minikube.md#download-and-configure-operator-engine)
-9. [Create namespaces](compute-to-data-minikube.md#create-namespaces)
-10. [Deploy Operator Service](compute-to-data-minikube.md#deploy-operator-service)
-11. [Deploy Operator Engine](compute-to-data-minikube.md#deploy-operator-engine)
-12. [Expose Operator Service](compute-to-data-minikube.md#expose-operator-service)
-13. [Initialize the database](compute-to-data-minikube.md#initialize-database)
-14. [Update Provider](compute-to-data-minikube.md#update-provider)
+5. [Download all required files](compute-to-data-minikube.md#download-all-required-files)
+6. [Create namespaces](compute-to-data-minikube.md#create-namespaces)
+7. [Setup up Postgresql](compute-to-data-minikube.md#setup-up-postgresql)
+7. [Run the IPFS host (optional)](compute-to-data-minikube.md#run-the-ipfs-host-optional)
+8. [Update the storage class](compute-to-data-minikube.md#update-the-storage-class)
+9. [Setup C2D Orchestrator](compute-to-data-minikube.md#setup-c2d-orchestrator)
+10. [Setup your first environment](compute-to-data-minikube.md#setup-your-first-environment)
+11. [Update Provider](compute-to-data-minikube.md#update-provider)
+12. [Automated deployment example](compute-to-data-minikube.md#automated-deployment-example)
+
 
 #### Install Docker and Git
 
@@ -78,6 +78,43 @@ Wait until all the defaults are running (1/1).
 ```bash
 watch kubectl get pods --all-namespaces
 ```
+
+#### Download all required files
+
+Create a folder, cd into it, and clone the following repositories:
+
+```bash
+mkdir computeToData
+cd computeToData
+git clone https://github.com/oceanprotocol/operator-service.git
+git clone https://github.com/oceanprotocol/operator-engine.git
+```
+
+#### Create namespaces
+
+In this tutorial, we are going to create only one environment, called `ocean-compute`.
+
+```bash
+kubectl create ns ocean-operator
+kubectl create ns ocean-compute
+```
+
+#### Setup up Postgresql
+
+For now, communication between different components is made through pgsql. This will change in the near future.
+
+Edit `operator-service/kubernetes/postgres-configmap.yaml`. Change `POSTGRES_PASSWORD` to a nice long random password.
+
+Then deploy pgsql
+```bash
+kubectl config set-context --current --namespace ocean-operator
+kubectl create -f operator-service/kubernetes/postgres-configmap.yaml
+kubectl create -f operator-service/kubernetes/postgres-storage.yaml
+kubectl create -f operator-service/kubernetes/postgres-deployment.yaml
+kubectl create -f operator-service/kubernetes/postgresql-service.yaml
+```
+
+Congrats, pgsql is running now.
 
 #### Run the IPFS host (optional)
 
@@ -129,93 +166,30 @@ volumeBindingMode: Immediate
 
 For more information, please visit https://kubernetes.io/docs/concepts/storage/storage-classes/
 
-#### Download and Configure Operator Service
+If you need to use your own classes, you will need to edit 'operator_engine/kubernetes/operator.yml'.
 
-Open a new terminal and run the command below.
+#### Setup C2D Orchestrator
 
-```bash
-git clone https://github.com/oceanprotocol/operator-service.git
-```
+C2D Orchestrator (aka operator-service) has two main functions:
+ - First, it's the outside interface of your C2D Cluster to the world. External components(like Provider) are calling APIs exposed by this
+ - Secondly, operator-service manages multiple environments and sends the jobs to the right environment.
 
-Edit `operator-service/kubernetes/postgres-configmap.yaml`. Change `POSTGRES_PASSWORD` to a nice long random password.
+Edit `operator-service/kubernetes/deployment.yaml`. Change `ALLOWED_ADMINS` to a nice long random password.
 
-Edit `operator-service/kubernetes/deployment.yaml`. Optionally change:
-
-* `ALGO_POD_TIMEOUT`
-* add `requests_cpu`
-* add `requests_memory`
-* add `limits_cpu`
-* add `limits_memory`
-
-```yaml
-
----
-spec:
-  containers:
-    - env:
-        - name: requests_cpu
-          value: "4"
-        - name: requests_memory
-          value: "8Gi"
-        - name: limits_cpu
-          value: "8"
-        - name: limits_memory
-          value: "15Gi"
-        - name: ALGO_POD_TIMEOUT
-          value: "3600"
-```
-
-#### Download and Configure Operator Engine
-
-```bash
-git clone https://github.com/oceanprotocol/operator-engine.git
-```
-
-Check the [README](https://github.com/oceanprotocol/operator-engine#customize-your-operator-engine-deployment) section of the operator engine to customize your deployment.
-
-At a minimum, you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
-
-#### Create namespaces
-
-```bash
-kubectl create ns ocean-operator
-kubectl create ns ocean-compute
-```
-
-#### Deploy Operator Service
+Let's deploy C2D Orchestrator.
 
 ```bash
 kubectl config set-context --current --namespace ocean-operator
-kubectl create -f operator-service/kubernetes/postgres-configmap.yaml
-kubectl create -f operator-service/kubernetes/postgres-storage.yaml
-kubectl create -f operator-service/kubernetes/postgres-deployment.yaml
-kubectl create -f operator-service/kubernetes/postgresql-service.yaml
-kubectl apply  -f operator-service/kubernetes/deployment.yaml
+kubectl apply -f operator-service/kubernetes/deployment.yaml
 ```
 
-#### Deploy Operator Engine
-
-```bash
-kubectl config set-context --current --namespace ocean-compute
-kubectl apply  -f operator-engine/kubernetes/sa.yml
-kubectl apply  -f operator-engine/kubernetes/binding.yml
-kubectl apply  -f operator-engine/kubernetes/operator.yml
-kubectl create -f operator-service/kubernetes/postgres-configmap.yaml
-```
-
-**Optional**: For production environments, it's safer to block access to metadata. To do so run the below command:
-
-```bash
-kubectl -n ocean-compute apply -f /ocean/operator-engine/kubernetes/egress.yaml
-```
-
-#### Expose Operator Service
+Now, let's expose the service.
 
 ```bash
 kubectl expose deployment operator-api --namespace=ocean-operator --port=8050
 ```
 
-Run a port forward or create your ingress service and setup DNS and certificates (not covered here):
+You can run a port forward in a new terminal (see below) or create your ingress service and setup DNS and certificates (not covered here):
 
 ```bash
 kubectl -n ocean-operator port-forward svc/operator-api 8050
@@ -223,17 +197,50 @@ kubectl -n ocean-operator port-forward svc/operator-api 8050
 
 Alternatively you could use another method to communicate between the C2D Environment and the provider, such as an SSH tunnel.
 
-#### Initialize database
+And now it's time to initialize the database.
+
 
 If your Minikube is running on compute.example.com:
 
 ```bash
-curl -X POST "https://compute.example.com/api/v1/operator/pgsqlinit" -H  "accept: application/json"
+curl -X POST "https://compute.example.com/api/v1/operator/pgsqlinit" -H "accept: application/json" -H "Admin: myAdminPass"
 ```
+(where myAdminPass is configured in [Setup C2D Orchestrator](compute-to-data-minikube.md#setup-c2d-orchestrator))
+
+Congrats, you have operator-service running.
+
+#### Setup your first environment
+
+Let's create our first environment.
+Edit `operator-service/kubernetes/deployment.yaml`.
+ - set OPERATOR_PRIVATE_KEY.  This has to be unique among multiple environments. In the future, this will be the account credited with fees.
+ - optionally change more env variables, to customize your environment. Check the [README](https://github.com/oceanprotocol/operator-engine#customize-your-operator-engine-deployment) section of the operator engine to customize your deployment. At a minimum, you should add your IPFS URLs or AWS settings, and add (or remove) notification URLs.
+
+Finally, let's deploy it:
+
+```bash
+kubectl config set-context --current --namespace ocean-compute
+kubectl create -f operator-service/kubernetes/postgres-configmap.yaml
+kubectl apply  -f operator-engine/kubernetes/sa.yml
+kubectl apply  -f operator-engine/kubernetes/binding.yml
+kubectl apply  -f operator-engine/kubernetes/operator.yml
+```
+
+**Optional**: For production enviroments, it's safer to block access to metadata. To do so run the below command:
+
+```bash
+kubectl -n ocean-compute apply -f /ocean/operator-engine/kubernetes/egress.yaml
+```
+Congrats,your c2d environment is running.
+
+If you want to deploy another one, just repeat the steps above, with a different namespace and different OPERATOR_PRIVATE_KEY.
+
+
 
 #### Update Provider
 
-Update your provider service by updating the `operator_service.url` value in `config.ini`
+Update your existing provider service by updating the `operator_service.url` value in `config.ini`, or set the appropiate ENV variable.
+
 
 ```ini
 operator_service.url = https://compute.example.com/
@@ -241,3 +248,7 @@ operator_service.url = https://compute.example.com/
 
 Restart your provider service.
 
+#### Automated deployment example
+
+If your setup is more complex, you can checkout (our automated deployment example)[https://github.com/oceanprotocol/c2d_barge/blob/main/c2d_barge_deployer/docker-entrypoint.sh].
+This script is used by barge to automaticly deploy the C2D cluster, with two environments.
