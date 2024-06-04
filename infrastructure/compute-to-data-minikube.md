@@ -84,6 +84,8 @@ watch kubectl get pods --all-namespaces
 Create a folder, cd into it, and clone the following repositories:
 
 ```bash
+mkdir computeToData
+cd computeToData
 git clone https://github.com/oceanprotocol/operator-service.git
 git clone https://github.com/oceanprotocol/operator-engine.git
 ```
