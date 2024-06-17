@@ -2,10 +2,9 @@
 title: Data Farming FAQ
 description: Frequently Asked Questions about Data Farming
 ---
+## Data Farming FAQ
 
-# FAQ
-
-## Staking and Risk
+### Staking and Risk
 
 <details>
 
@@ -13,8 +12,8 @@ description: Frequently Asked Questions about Data Farming
 
 Its precise meaning depends on the DF stream.
 
-* Predictoor DF: put OCEAN into a prediction transaction
-
+- Predictoor DF: put OCEAN into a prediction transaction
+  
 </details>
 
 <details>
@@ -23,7 +22,7 @@ Its precise meaning depends on the DF stream.
 
 As with any system, inherent risks exist. We try to minimize them, as follows.
 
-* Predictoor DF: you stake a small amount of OCEAN in each epoch (eg every 5min). If issues arise, you can get out quickly.
+- Predictoor DF: you stake a small amount of OCEAN in each epoch (eg every 5min). If issues arise, you can get out quickly. 
 
 </details>
 
@@ -31,18 +30,18 @@ As with any system, inherent risks exist. We try to minimize them, as follows.
 
 <summary>Is there any impermanent loss (IL) in my staking?</summary>
 
-No. IL is typically associated with providing liquidity to decentralized exchange or pools. There are no pools involved in any of the DF streams \[1].
-
+No. IL is typically associated with providing liquidity to decentralized exchange or pools. There are no pools involved in any of the DF streams [1].
 </details>
 
-## Rewards Payout
+
+### Rewards Payout
 
 <details>
 
 <summary>What APYs can I expect?</summary>
 
 For Predictoor DF, it varies a lot based on your prediction accuracy, and more.
-
+  
 </details>
 
 <details>
@@ -59,14 +58,15 @@ Caveat: it’s "no" at least in theory! Sometimes there may be tweaks if there i
 
 <summary>Where do I learn more about Predictoor DF?</summary>
 
-In its [docs page](predictoordf/).
-
+In its [docs page](predictoordf.md).
 </details>
+
+
 
 Congrats! You've completed reading Data Farming docs.
 
-_Next: Jump to_ [_DF main_](./)_._
+_Next: Jump to [DF main](README.md)._
 
-_Or: Jump to_ [_Docs main_](../../) _and click on your interest._
+_Or: Jump to [Docs main](../README.md) and click on your interest._
 
-_Back:_ [_Predictoor DF Guide_](predictoordf/predictoordf-guide.md)
+_Back: [Predictoor DF Guide](predictoordf-guide.md)_

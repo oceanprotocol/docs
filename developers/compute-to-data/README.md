@@ -36,7 +36,7 @@ We suggest reading these guides to get an understanding of how compute-to-data w
 ### Developer Guides
 
 * [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
-* [How to use compute to data with ocean.py](../../data-scientists/ocean.py/)
+* [How to use compute to data with ocean.py](../../data-scientists/ocean.py/README.md)
 
 ### Infrastructure Deployment Guides
 

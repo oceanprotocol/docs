@@ -1,2 +1,0 @@
-# Guide to Passive DF
-

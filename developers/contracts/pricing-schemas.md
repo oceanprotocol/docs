@@ -181,8 +181,8 @@ function createNftWithErc20WithDispenser(
 
 </details>
 
-To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](../ocean.js/)and [Ocean.py](../../data-scientists/ocean.py/), specifically developed for interacting with Ocean Protocol.
+To make the most of these pricing models, you can rely on user-friendly libraries such as [Ocean.js ](../ocean.js/README.md)and [Ocean.py](../../data-scientists/ocean.py/README.md), specifically developed for interacting with Ocean Protocol.
 
 With Ocean.js, you can use the [createFRE() ](../ocean.js/publish.md)function to effortlessly deploy a data NFT (non-fungible token) and datatoken with a fixed-rate exchange pricing model. Similarly, in Ocean.py, the [create\_url\_asset()](../../data-scientists/ocean.py/publish-flow.md#create-an-asset--pricing-schema-simultaneously) function allows you to create an asset with fixed pricing. These libraries simplify the process of interacting with Ocean Protocol, managing pricing, and handling asset creation.
 
-By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](../ocean.js/) and [Ocean.py](../../data-scientists/ocean.py/) (or by using the [Market](https://market.oceanprotocol.com)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.
+By taking advantage of Ocean Protocol's pricing options and leveraging the capabilities of [Ocean.js](../ocean.js/README.md) and [Ocean.py](../../data-scientists/ocean.py/README.md) (or by using the [Market](https://market.oceanprotocol.com)), you can effectively monetize your data assets while ensuring transparent and seamless access for data consumers.

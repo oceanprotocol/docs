@@ -24,7 +24,7 @@ The interaction between the Consumer and the Provider follows a specific workflo
 Throughout the computation process, the Consumer has the ability to check the status of the job by making a query to the Provider using the `getJobDetails(XXXX)` function, providing the job identifier (`XXXX`) as a reference.
 
 {% hint style="info" %}
-You have the option to initiate a compute job using one or more data assets. You can explore this functionality by utilizing the [ocean.py](../../data-scientists/ocean.py/) and [ocean.js](../ocean.js/) libraries.
+You have the option to initiate a compute job using one or more data assets. You can explore this functionality by utilizing the [ocean.py](../../data-scientists/ocean.py/README.md) and [ocean.js](../ocean.js/README.md) libraries.
 {% endhint %}
 
 Now, let's delve into the inner workings of the Provider. Initially, it verifies whether the Consumer has sent the appropriate datatokens to gain access to the desired data. Once validated, the Provider interacts with the Operator-Service, a microservice responsible for coordinating the job execution. The Provider submits a request to the Operator-Service, which subsequently forwards the request to the Operator-Engine, the actual compute system in operation.
@@ -46,9 +46,9 @@ Before the flow can begin, these pre-conditions must be met:
 
 ### Access Control using Ocean Provider
 
-Similar to the `access service`, the `compute service` within Ocean Protocol relies on the [Ocean Provider](../provider/), which is a crucial component managed by the asset Publishers. The role of the Ocean Provider is to facilitate interactions with users and handle the fundamental aspects of a Publisher's infrastructure, enabling seamless integration into the Ocean Protocol ecosystem. It serves as the primary interface for direct interaction with the infrastructure where the data is located.
+Similar to the `access service`, the `compute service` within Ocean Protocol relies on the [Ocean Provider](../provider/README.md), which is a crucial component managed by the asset Publishers. The role of the Ocean Provider is to facilitate interactions with users and handle the fundamental aspects of a Publisher's infrastructure, enabling seamless integration into the Ocean Protocol ecosystem. It serves as the primary interface for direct interaction with the infrastructure where the data is located.
 
-The [Ocean Provider](../provider/) encompasses the necessary credentials to establish secure and authorized interactions with the underlying infrastructure. Initially, this infrastructure may be hosted in cloud providers, although it also has the flexibility to extend to on-premise environments if required. By encompassing the necessary credentials, the Ocean Provider ensures the smooth and controlled access to the infrastructure, allowing Publishers to effectively leverage the compute service within Ocean Protocol.
+The [Ocean Provider](../provider/README.md) encompasses the necessary credentials to establish secure and authorized interactions with the underlying infrastructure. Initially, this infrastructure may be hosted in cloud providers, although it also has the flexibility to extend to on-premise environments if required. By encompassing the necessary credentials, the Ocean Provider ensures the smooth and controlled access to the infrastructure, allowing Publishers to effectively leverage the compute service within Ocean Protocol.
 
 ### Operator Service
 
