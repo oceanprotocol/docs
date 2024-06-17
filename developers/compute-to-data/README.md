@@ -29,14 +29,14 @@ We suggest reading these guides to get an understanding of how compute-to-data w
 
 ### User Guides
 
-* [How to write compute to data algorithms](../../user-guides/compute-to-data/make-a-boss-c2d-algorithm.md)
-* [How to publish a compute-to-data algorithm](../../user-guides/compute-to-data/publish-a-c2d-algorithm-nft.md)
-* [How to publish a dataset for compute to data](../../user-guides/compute-to-data/publish-a-c2d-data-nft.md)
+* [How to write compute to data algorithms](broken-reference)
+* [How to publish a compute-to-data algorithm](broken-reference)
+* [How to publish a dataset for compute to data](broken-reference)
 
 ### Developer Guides
 
 * [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
-* [How to use compute to data with ocean.py](../../data-scientists/ocean.py/README.md)
+* [How to use compute to data with ocean.py](../../data-scientists/ocean.py/)
 
 ### Infrastructure Deployment Guides
 
