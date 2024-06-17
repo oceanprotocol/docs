@@ -1,4 +1,4 @@
-# Deploying Provider
+# Deploy Provider
 
 ### About Provider
 
@@ -8,17 +8,15 @@ Provider is a multichain component, meaning that it can handle these tasks on mu
 
 As mentioned in the Setup a Server document, all Ocean components can be deployed in two types of configurations: simple, based on Docker Engine and Docker Compose, and complex, based on Kubernetes with Docker Engine. In this document, we will present how to deploy Provider in each of these configurations.
 
-
 ## Deploying Provider using Docker Engine and Docker Compose
 
-In this guide, we will deploy Provider for Sepolia (Eth test network). Therefore, please note that in the following configuration files,  "11155111" is the chain ID for Sepolia.
-
+In this guide, we will deploy Provider for Sepolia (Eth test network). Therefore, please note that in the following configuration files, "11155111" is the chain ID for Sepolia.
 
 ### Prerequisites
 
 * A server for hosting Provider. See [this guide](setup-server.md) for how to create a server;
 * Docker Compose and Docker Engine are installed and configured on the server. See [this guide](setup-server.md#install-docker-engine-and-docker-compose) for how to install these products.
-* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See [this guide](https://github.com/oceanprotocol/docs/blob/node-release/developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 * The private key which will be used by Provider to encrypt/decrypt URLs.
 
 ### Steps
@@ -32,7 +30,6 @@ The steps to deploy the Provider using Docker Engine and Docker Compose are:
 5. [Check the service's status](deploying-provider.md#5.-check-the-services-status)
 6. [Confirm the Provider is accessible](deploying-provider.md#6.-confirm-the-provider-is-accessible)
 7. [Check Provider service logs](deploying-provider.md#7.-check-provider-service-logs)
-
 
 #### 1. Create the /etc/docker/compose/provider/docker-compose.yml file
 
@@ -66,7 +63,6 @@ networks:
     driver: bridge
 ```
 
-
 #### 2. Create the _/etc/systemd/system/docker-compose@provider.service_ file
 
 Create the _/etc/systemd/system/docker-compose@provider.service_ file then copy and paste the following content to it. This example file could be customized if needed.
@@ -91,7 +87,6 @@ ExecStop=/usr/bin/env docker-compose -p $PROJECT stop
 WantedBy=multi-user.target
 ```
 
-
 #### 3. Reload the systemd manager configuration
 
 Run the following command to reload the systemd manager configuration
@@ -106,7 +101,6 @@ Optionally, you can enable the services to start at boot, using the following co
 sudo systemctl enable docker-compose@provider.service
 ```
 
-
 #### 4. Start the Provider service
 
 To start the Provider service, run the following command:
@@ -114,7 +108,6 @@ To start the Provider service, run the following command:
 ```bash
 sudo systemctl start docker-compose@provider.service
 ```
-
 
 #### 5. Check the service's status
 
@@ -139,7 +132,6 @@ Jun 14 09:41:53 testvm env[4126]:  Container provider  Started
 Jun 14 09:41:53 testvm systemd[1]: Finished provider service with docker compose.
 ```
 
-
 #### 6. Confirm the Provider is accessible
 
 Once started, the Provider service is accessible on `localhost` port 8030/tcp. Run the following command to access the Provider. The output should be similar to the one displayed here.
@@ -148,7 +140,6 @@ Once started, the Provider service is accessible on `localhost` port 8030/tcp. R
 $ curl localhost:8030
 {"chainIds":[5,80001],"providerAddresses":{"5":"0x00c6A0BC5cD0078d6Cd0b659E8061B404cfa5704","80001":"0x4256Df50c94D9a7e04610976cde01aED91eB531E"},"serviceEndpoints":{"computeDelete":["DELETE","/api/services/compute"],"computeEnvironments":["GET","/api/services/computeEnvironments"],"computeResult":["GET","/api/services/computeResult"],"computeStart":["POST","/api/services/compute"],"computeStatus":["GET","/api/services/compute"],"computeStop":["PUT","/api/services/compute"],"create_auth_token":["GET","/api/services/createAuthToken"],"decrypt":["POST","/api/services/decrypt"],"delete_auth_token":["DELETE","/api/services/deleteAuthToken"],"download":["GET","/api/services/download"],"encrypt":["POST","/api/services/encrypt"],"fileinfo":["POST","/api/services/fileinfo"],"initialize":["GET","/api/services/initialize"],"initializeCompute":["POST","/api/services/initializeCompute"],"nonce":["GET","/api/services/nonce"],"validateContainer":["POST","/api/services/validateContainer"]},"software":"Provider","version":"2.0.2"}
 ```
-
 
 #### 7. Check Provider service logs
 
@@ -186,17 +177,15 @@ $ docker logs --follow provider
 
 ```
 
-
 ## Deploying Provider using Kubernetes with Docker Engine
 
-
-In this example, we will run Provider as a Kubernetes deployment resource. We will deploy Provider for Sepolia (Eth test network). Therefore, please note that in the following configuration files,  "11155111" is the chain ID for Sepolia.
+In this example, we will run Provider as a Kubernetes deployment resource. We will deploy Provider for Sepolia (Eth test network). Therefore, please note that in the following configuration files, "11155111" is the chain ID for Sepolia.
 
 ### Prerequisites
 
 * A server for hosting Ocean Marketplace. See [this guide](setup-server.md) for how to create a server;
 * Kubernetes with Docker Engine is installed and configured on the server. See [this chapter](setup-server.md#install-kubernetes-with-docker-engine) for information on installing Kubernetes.
-* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Provider will be connected. See [this guide](https://github.com/oceanprotocol/docs/blob/node-release/developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 * The private key that will be used by Provider to encrypt/decrypt URLs.
 * Aquarius is up and running
 
@@ -209,7 +198,6 @@ The steps to deploy the Provider in Kubernetes are:
 [2. Deploy the configuration.](deploying-provider.md#2.-deploy-the-configuration)
 
 [3. Create a Kubernetes service.](deploying-provider.md#3.-create-a-kubernetes-service)
-
 
 #### 1. Create a YAML file for Provider configuration.
 
@@ -290,7 +278,6 @@ spec:
 
 Tip: before deployment, you can [validate](https://github.com/instrumenta/kubeval) the yaml file.
 
-
 #### 2. Deploy the configuration
 
 Deploy the configuration in Kubernetes using the following commands.
@@ -305,8 +292,6 @@ NAME                        READY   STATUS    RESTARTS   AGE
 provider-865cb8cf9d-r9xm4   1/1     Running   0          67s
 ```
 
-
 #### 3. Create a Kubernetes service
 
 The next step is to create a Kubernetes service (eg. ClusterIP, NodePort, Loadbalancer, ExternalName) for this deployment, depending on the environment specifications. Follow [this link](https://kubernetes.io/docs/concepts/services-networking/service/) for details on how to create a Kubernetes service.
-

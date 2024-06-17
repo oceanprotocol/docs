@@ -26,7 +26,6 @@ The below tabs show partially filled `.env` file content for some of the support
 {% tabs %}
 {% tab title="Mainnet" %}
 {% code title=".env" %}
-
 ```bash
 # Mandatory environment variables
 
@@ -39,13 +38,11 @@ PRIVATE_KEY=<secret>
 AQUARIUS_URL=https://v4.aquarius.oceanprotocol.com/
 PROVIDER_URL=https://v4.provider.oceanprotocol.com
 ```
-
 {% endcode %}
 {% endtab %}
 
 {% tab title="Polygon" %}
 {% code title=".env" %}
-
 ```bash
 # Mandatory environment variables
 
@@ -58,13 +55,11 @@ PRIVATE_KEY=<secret>
 AQUARIUS_URL=https://v4.aquarius.oceanprotocol.com/
 PROVIDER_URL=https://v4.provider.oceanprotocol.com
 ```
-
 {% endcode %}
 {% endtab %}
 
 {% tab title="Local (using Barge)" %}
 {% code title=".env" %}
-
 ```bash
 # Mandatory environment variables
 OCEAN_NETWORK=development
@@ -75,7 +70,6 @@ PROVIDER_URL=http://172.15.0.4:8030
 # Replace PRIVATE_KEY if needed
 PRIVATE_KEY=0xc594c6e5def4bab63ac29eed19a134c130388f74f019bc74b8f4389df2837a58
 ```
-
 {% endcode %}
 {% endtab %}
 {% endtabs %}
@@ -93,12 +87,10 @@ Let's install Ocean.js library into your current project by running:
 {% tabs %}
 {% tab title="Terminal" %}
 {% code overflow="wrap" %}
-
 ```bash
 npm init
 npm i @oceanprotocol/lib@latest dotenv crypto-js ethers@5.7.4 @truffle/hdwallet-provider
 ```
-
 {% endcode %}
 {% endtab %}
 {% endtabs %}
@@ -112,7 +104,6 @@ Create the configuration file in the working directory i.e. at the same path whe
 {% tabs %}
 {% tab title="config.js" %}
 {% code title="config.js" %}
-
 ```javascript
 require("dotenv").config();
 const {
@@ -171,7 +162,6 @@ module.exports = {
 	oceanConfig,
 };
 ```
-
 {% endcode %}
 {% endtab %}
 {% endtabs %}

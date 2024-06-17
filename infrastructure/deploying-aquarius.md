@@ -1,4 +1,4 @@
-# Deploying Aquarius
+# Deploy Aquarius
 
 ### About Aquarius
 
@@ -21,7 +21,7 @@ This guide will deploy Aquarius, including Elasticsearch as a single systemd ser
 
 * A server for hosting Aquarius. See [this guide](setup-server.md) for how to create a server;
 * Docker Compose and Docker Engine are installed and configured on the server. See [this guide](setup-server.md#install-docker-engine-and-docker-compose) for how to install these products.
-* The RPC URLs and API keys for each of the networks to which the Aquarius will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md)  for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Aquarius will be connected. See [this guide](https://github.com/oceanprotocol/docs/blob/node-release/developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 
 ### Steps
 
@@ -235,7 +235,7 @@ Templates (yaml files) are provided and could be customized based on the environ
 
 * A server for hosting Aquarius. See [this guide](setup-server.md) for how to create a server;
 * Kubernetes with Docker Engine is installed and configured on the server. See [this chapter](setup-server.md#install-kubernetes-with-docker-engine) for information on installing Kubernetes.
-* The RPC URLs and API keys for each of the networks to which the Aquarius will be connected. See [this guide](../developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
+* The RPC URLs and API keys for each of the networks to which the Aquarius will be connected. See [this guide](https://github.com/oceanprotocol/docs/blob/node-release/developers/obtaining-api-keys-for-blockchain-access.md) for how to obtain the URL and the API key.
 
 ### Steps
 
@@ -281,7 +281,7 @@ $ curl localhost:9200
 
 Aquarius supports indexing multiple chains using a single instance to serve API requests and one instance for each chain that must be indexed.
 
-<figure><img src="../.gitbook/assets/components/aquarius_deployment.png" alt=""><figcaption><p>Aquarius deployment - multiple chains indexing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/aquarius_deployment.png" alt=""><figcaption><p>Aquarius deployment - multiple chains indexing</p></figcaption></figure>
 
 The following deployment templates could be used for guidance. Some parameters are [optional](https://github.com/oceanprotocol/aquarius) and the template could be adjusted based on these considerations. Common cases are the deployments for one/multiple Ethereum networks:
 

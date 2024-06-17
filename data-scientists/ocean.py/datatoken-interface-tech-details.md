@@ -29,7 +29,7 @@ Return value is a hex string which denotes the transaction hash of dispenser dep
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL336C5-L377C18)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL336C5-L377C18)
 
 <details>
 
@@ -103,7 +103,7 @@ Return value is a hex string which denotes the transaction hash of dispensed dat
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL379C5-L400C18)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL379C5-L400C18)
 
 <details>
 
@@ -147,9 +147,9 @@ It is implemented in `Datatoken2`, so it can be called within `Datatoken2` class
 **Parameters**
 
 * `consumer` - address of the consumer wallet that needs funding
-* `service_index` - service index as int for identifying the service that you want to further call [`start_order`](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL169C5-L197C10).
+* `service_index` - service index as int for identifying the service that you want to further call [`start_order`](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL169C5-L197C10).
 * `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
-* `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
+* `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
 
 **Returns**
 
@@ -159,7 +159,7 @@ Return value is a hex string which denotes the transaction hash of dispensed dat
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL439C5-L483C1)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL439C5-L483C1)
 
 <details>
 
@@ -242,7 +242,7 @@ It is implemented in `DatatokenBase`, inherited by `Datatoken2`, so it can be ca
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL402C1-L409C43)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL402C1-L409C43)
 
 <details>
 
@@ -275,7 +275,7 @@ This wraps the smart contract method `Datatoken.createFixedRate()` with a simple
 
 * `rate` - how many base tokens does 1 datatoken cost? In wei or string
 * `base_token_addr` - e.g. OCEAN address
-* `tx_dict` -  is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
+* `tx_dict` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
 
 **Optional parameters**
 
@@ -292,7 +292,7 @@ This wraps the smart contract method `Datatoken.createFixedRate()` with a simple
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL236C4-L310C1)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL236C4-L310C1)
 
 <details>
 
@@ -366,9 +366,9 @@ It is implemented in `Datatoken` class and it is also inherited in `Datatoken2` 
 **Parameters**
 
 * `consumer` - address of the consumer wallet that needs funding
-* `service_index` - service index as int for identifying the service that you want to further call [`start_order`](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL169C5-L197C10).
+* `service_index` - service index as int for identifying the service that you want to further call [`start_order`](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL169C5-L197C10).
 * `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
-* `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
+* `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
 
 **Returns**
 
@@ -378,7 +378,7 @@ Return value is a hex string for transaction hash which denotes the proof of sta
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL484C4-L518C10)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL484C4-L518C10)
 
 <details>
 
@@ -440,7 +440,7 @@ It is implemented in `DatatokenBase`, inherited by `Datatoken2`, so it can be ca
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL311C4-L322C25)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL311C4-L322C25)
 
 <details>
 
@@ -479,7 +479,7 @@ It is implemented in Datatoken class and it is also inherited in Datatoken2 clas
 * `service_index` - service index as int for identifying the service that you want to apply `start_order`.
 * `provider_fees` - dictionary which includes provider fees generated when `initialize` endpoint from `Provider` was called.
 * `transaction_parameters` - is the configuration `dictionary` for that specific transaction. Usually for `development` we include just the `from` wallet, but for remote networks, you can provide gas fees, required confirmations for that block etc.
-* `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
+* `consume_market_fees` - [`TokenInfo` ](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#L31)object which contains the consume market fee amount, address & token address. If it is not explicitly specified, by default it has an empty `TokenInfo` object.
 
 **Returns**
 
@@ -489,7 +489,7 @@ Return value is a hex string for transaction hash which denotes the proof of sta
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL169C5-L197C10)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL169C5-L197C10)
 
 <details>
 
@@ -551,7 +551,7 @@ Return value is a hex string for transaction hash which denotes the proof of reu
 
 **Defined in**
 
-[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL199C5-L219C10)
+[models/datatoken.py](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL199C5-L219C10)
 
 <details>
 

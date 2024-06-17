@@ -24,8 +24,7 @@ So hoist the anchor, prepare your Docker crew, and let's embark on an exciting v
 
 Ocean `barge` runs ganache (local blockchain), Provider (data service), and Aquarius (metadata cache).
 
-Barge helps you quickly become familiar with Ocean, because the local blockchain has low latency and no transaction fees.\
-
+Barge helps you quickly become familiar with Ocean, because the local blockchain has low latency and no transaction fees.\\
 
 In a new console:
 

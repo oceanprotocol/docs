@@ -42,7 +42,7 @@ print(f"DATA_ddo did = '{DATA_ddo.did}'")
 ```
 {% endcode %}
 
-To customise the privacy and accessibility of your compute service, add the `compute_values` argument to `create_url_asset` to set values according to the [DDO specs](/developers/identifiers.md). The function assumes the documented defaults.
+To customise the privacy and accessibility of your compute service, add the `compute_values` argument to `create_url_asset` to set values according to the [DDO specs](../../developers/identifiers.md). The function assumes the documented defaults.
 
 ### 2. Alice publishes an algorithm
 
@@ -204,7 +204,7 @@ This README has a simple ML algorithm. However, Ocean C2D is not limited to usag
 
 In the "publish algorithm" step, to replace the sample algorithm with another one:
 
-* Use one of the standard [Ocean algo_dockers images](https://github.com/oceanprotocol/algo_dockers) or publish a custom docker image.
+* Use one of the standard [Ocean algo\_dockers images](https://github.com/oceanprotocol/algo\_dockers) or publish a custom docker image.
 * Use the image name and tag in the `container` part of the algorithm metadata.
 * The image must have basic support for installing dependencies. E.g. "pip" for the case of Python. You can use other languages, of course.
 * More info is available on the [algorithms page](../../developers/compute-to-data/compute-to-data-algorithms.md)

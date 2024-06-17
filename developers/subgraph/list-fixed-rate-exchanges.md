@@ -6,15 +6,13 @@ description: 'Discover the World of NFTs: Retrieving a List of Fixed-rate exchan
 
 Having gained knowledge about fetching lists of data NFTs and datatokens and extracting specific information about each, let's now explore the process of retrieving the information of fixed-rate exchanges. A fixed-rate exchange refers to a mechanism where data assets can be traded at a predetermined rate or price. These exchanges offer stability and predictability in data transactions, enabling users to securely and reliably exchange data assets based on fixed rates. If you need a refresher on fixed-rate exchanges, visit the [asset pricing](../contracts/pricing-schemas.md#fixed-pricing) page.
 
-
-
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](README.md#ocean-subgraph-deployments)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](./#ocean-subgraph-deployments)_._
 
 {% tabs %}
 {% tab title="Javascript" %}
 The javascript below can be used to run the query and fetch a list of fixed-rate exchanges. If you wish to change the network, replace the variable's value `network` as needed.
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 var axios = require('axios');
 
 const query = `{

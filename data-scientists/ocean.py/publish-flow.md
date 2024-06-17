@@ -33,13 +33,13 @@ You've now published an Ocean asset!
 * [`datatoken`](../../developers/contracts/datatokens.md) for access by others (licensing)
 * [`ddo`](../../developers/ddo-specification.md) holding metadata
 
-<figure><img src="../../.gitbook/assets/gif/200.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/200.webp" alt=""><figcaption></figcaption></figure>
 
 ### Appendix
 
 For more information regarding: Data NFT & Datatokens interfaces and how they are implemented in Solidity, we suggest to follow up this [article](../../developers/contracts/datanft-and-datatoken.md) and [contracts repo](https://github.com/oceanprotocol/contracts) from GitHub.
 
-As you may want to explore more the DDO specs,  structure & meaning, we invite you to consult [DDO Specification](../../developers/ddo-specification.md) section.
+As you may want to explore more the DDO specs, structure & meaning, we invite you to consult [DDO Specification](../../developers/ddo-specification.md) section.
 
 #### Publishing Alternatives
 
@@ -85,9 +85,9 @@ The DDO is stored on-chain. It's encrypted and compressed by default. Therefore 
 
 You can control this during `create()`:
 
-* To disable encryption, use [`ocean.assets.create(..., encrypt_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_assets.py#L425).
-* To disable compression, use [`ocean.assets.create(..., compress_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_assets.py#L426).
-* To disable both, use [`ocean.assetspy.create(..., encrypt_flag=False, compress_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_assets.py#LL425C8-L426C46).
+* To disable encryption, use [`ocean.assets.create(..., encrypt_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_assets.py#L425).
+* To disable compression, use [`ocean.assets.create(..., compress_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_assets.py#L426).
+* To disable both, use [`ocean.assetspy.create(..., encrypt_flag=False, compress_flag=False)`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_assets.py#LL425C8-L426C46).
 
 #### Create a data NFT
 
@@ -113,7 +113,7 @@ If you call `create()` after this, you can pass in an argument `deployed_datatok
 
 Ocean Assets allows you to bundle several common scenarios as a single transaction, thus lowering gas fees.
 
-Any of the `ocean.assets.create_<type>_asset()` functions can also take an optional parameter that describes a bundled [pricing schema](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean_lib/models/datatoken.py#LL199C5-L219C10) (Dispenser or Fixed Rate Exchange).
+Any of the `ocean.assets.create_<type>_asset()` functions can also take an optional parameter that describes a bundled [pricing schema](https://github.com/oceanprotocol/ocean.py/blob/4aa12afd8a933d64bc2ed68d1e5359d0b9ae62f9/ocean\_lib/models/datatoken.py#LL199C5-L219C10) (Dispenser or Fixed Rate Exchange).
 
 Here is an example involving an exchange:
 
@@ -130,4 +130,3 @@ from ocean_lib.models.fixed_rate_exchange import ExchangeArguments
 assert len(datatoken.get_exchanges()) == 1
 ```
 {% endcode %}
-

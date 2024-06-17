@@ -23,8 +23,7 @@ Let's go!
 
 #### 1.1 Supported networks
 
-All [Ocean chain deployments](https://docs.oceanprotocol.com/discover/networks) (Eth mainnet, Polygon, etc) are supported.
-For any supported network, use the RPC URL of your choice when passing it to the ocean config object.
+All [Ocean chain deployments](https://docs.oceanprotocol.com/discover/networks) (Eth mainnet, Polygon, etc) are supported. For any supported network, use the RPC URL of your choice when passing it to the ocean config object.
 
 #### 1.2 RPCs and Infura
 
@@ -72,7 +71,6 @@ To get free (test) ETH on Sepolia:
 1. Go to the faucet [https://www.alchemy.com/faucets/ethereum-sepolia](https://www.alchemy.com/faucets/ethereum-sepolia). Login or create an account on Alchemy.
 2. Request funds for ADDRESS1
 3. Request funds for ADDRESS2
-
 
 ### 4. Get (test) OCEAN on Sepolia
 

@@ -1,4 +1,4 @@
-# Consume a Dataset 📥
+# Consume
 
 The process of consuming an asset is straightforward. To achieve this, you only need to execute a single command:
 
@@ -10,4 +10,4 @@ In this command, replace `assetDID` with the specific DID of the asset you want 
 
 Once executed, this command orchestrates both the **ordering** of a [datatoken](../contracts/datatokens.md) and the subsequent download operation. The asset's content will be automatically retrieved and saved at the specified location, simplifying the consumption process for users.
 
-<figure><img src="../../.gitbook/assets/cli/download.png" alt=""><figcaption>Consume</figcaption></figure>
+<figure><img src="../../.gitbook/assets/download.png" alt=""><figcaption><p>Consume</p></figcaption></figure>

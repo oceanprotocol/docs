@@ -33,7 +33,7 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquariu
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const response = await axios( 'https://v4.aquarius.oceanprotocol.com/api/aquarius/chains/list')
@@ -70,7 +70,7 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquariu
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 const chainId = 1
 
@@ -79,4 +79,3 @@ console.log(response.status)
 console.log(response.data)
 
 ```
-

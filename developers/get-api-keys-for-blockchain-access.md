@@ -16,6 +16,6 @@ Choose any API provider of your choice. Some of the commonly used are:
 * [Alchemy](https://www.alchemy.com/)
 * [Moralis](https://moralis.io/)
 
-The supported networks are listed [here](../discover/networks/README.md).
+The supported networks are listed [here](../discover/networks.md).
 
 Let's configure the remote setup for the mentioned components in the following sections.

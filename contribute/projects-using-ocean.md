@@ -1,11 +1,10 @@
 ---
-title: Collaborators
 description: We are so proud of the companies that use Ocean Protocol tools!
 ---
 
 # Collaborators
 
-<figure><img src="../.gitbook/assets/gif/anchorman-teamwork.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/anchorman-teamwork.gif" alt=""><figcaption></figcaption></figure>
 
 From startups to full enterprises, we have so many collaborators using Ocean tech. Curious who's working with Ocean tools? Check out the up-to-date list of collaborators on the [Ecosystem page](https://oceanprotocol.com/ecosystem).
 

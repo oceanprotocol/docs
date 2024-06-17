@@ -35,7 +35,7 @@ Returns a string type job ID.
 
 **Defined in**
 
-[ocean/ocean_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL32C4-L70C33)
+[ocean/ocean\_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_compute.py#LL32C4-L70C33)
 
 <details>
 
@@ -108,7 +108,7 @@ A dictionary which contains the status for an existing compute job, keys are `(o
 
 **Defined in**
 
-[ocean/ocean_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL72C5-L88C24)
+[ocean/ocean\_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_compute.py#LL72C5-L88C24)
 
 <details>
 
@@ -162,7 +162,7 @@ A dictionary wich contains the results/logs urls for an existing compute job, ke
 
 **Defined in**
 
-[ocean/ocean_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL90C5-L106C22)
+[ocean/ocean\_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_compute.py#LL90C5-L106C22)
 
 <details>
 
@@ -216,7 +216,7 @@ A dictionary which includes the results/logs urls for an existing compute job, k
 
 **Defined in**
 
-[ocean/ocean_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL108C5-L130C22)
+[ocean/ocean\_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_compute.py#LL108C5-L130C22)
 
 <details>
 
@@ -275,7 +275,7 @@ A dictionary which contains the status for the stopped compute job, keys are `(o
 
 **Defined in**
 
-[ocean/ocean_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL132C5-L146C24)
+[ocean/ocean\_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_compute.py#LL132C5-L146C24)
 
 <details>
 
@@ -324,7 +324,7 @@ A list of objects containing information about each compute environment. For eac
 
 **Defined in**
 
-[ocean/ocean_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL148C4-L150C84)
+[ocean/ocean\_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_compute.py#LL148C4-L150C84)
 
 <details>
 
@@ -363,7 +363,7 @@ A list of objects containing information about each compute environment. For eac
 
 **Defined in**
 
-[ocean/ocean_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean_compute.py#LL152C5-L155C87)
+[ocean/ocean\_compute.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean\_compute.py#LL152C5-L155C87)
 
 <details>
 

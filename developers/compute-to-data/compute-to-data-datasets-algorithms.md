@@ -1,5 +1,4 @@
 ---
-title: Compute-to-Data
 description: Datasets and Algorithms
 ---
 

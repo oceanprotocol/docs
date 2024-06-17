@@ -31,7 +31,7 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/'
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const response = await axios( 'https://v4.aquarius.oceanprotocol.com/')
@@ -39,8 +39,6 @@ console.log(response.status)
 console.log(response.data)
 
 ```
-
-
 
 ### **Health**
 
@@ -61,7 +59,7 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/health'
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const response = await axios( 'https://v4.aquarius.oceanprotocol.com/health')
@@ -89,7 +87,7 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/spec'
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const response = await axios( 'https://v4.aquarius.oceanprotocol.com/spec')
@@ -97,4 +95,3 @@ console.log(response.status)
 console.log(response.data.info)
 
 ```
-

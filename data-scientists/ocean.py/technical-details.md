@@ -4,7 +4,7 @@ description: Technical details about most used ocean.py functions
 
 # Ocean Instance Tech Details
 
-At the beginning of most flows, we create an `ocean` object, which is an instance of class [`Ocean`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py). It exposes useful information, including the following:
+At the beginning of most flows, we create an `ocean` object, which is an instance of class [`Ocean`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py). It exposes useful information, including the following:
 
 * properties for config & OCEAN
 * contract objects retrieval
@@ -30,7 +30,7 @@ In order to initialize a Ocean object, you must provide `config_dict` which is a
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#L43)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#L43)
 
 <details>
 
@@ -112,7 +112,7 @@ Configuration fields as dictionary.
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL265C1-L268C32)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL265C1-L268C32)
 
 <details>
 
@@ -129,7 +129,7 @@ Configuration fields as dictionary.
 
 ### OCEAN Address
 
-* **ocean_address**(`self`) -> `str`
+* **ocean\_address**(`self`) -> `str`
 
 It is a helper method for retrieving the OCEAN's token address.\
 It can be called only by Ocean object and returns the address as a `string`.
@@ -142,7 +142,7 @@ OCEAN address for that network.
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL100C1-L103C52)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL100C1-L103C52)
 
 <details>
 
@@ -155,7 +155,7 @@ OCEAN address for that network.
         return get_ocean_token_address(self.config)
 ```
 
-[`get_ocean_token_address`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/util.py#LL31C1-L38C89) function is an utilitary function which gets the address from `address.json` file
+[`get_ocean_token_address`](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/util.py#LL31C1-L38C89) function is an utilitary function which gets the address from `address.json` file
 
 {% code overflow="wrap" %}
 ```python
@@ -174,7 +174,7 @@ def get_ocean_token_address(config_dict: dict) -> str:
 
 ### OCEAN Token Object
 
-* **ocean_token**(`self`) -> `DatatokenBase`
+* **ocean\_token**(`self`) -> `DatatokenBase`
 * **OCEAN**(`self`) -> `DatatokenBase` as alias for the above option
 
 It is a helper method for retrieving the OCEAN token object (Datatoken class).\
@@ -188,7 +188,7 @@ OCEAN token as `DatatokenBase` object.
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL105C1-L113C32)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL105C1-L113C32)
 
 <details>
 
@@ -223,7 +223,7 @@ Data NFT Factory contract object which access all the functionalities available 
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL117C1-L120C80)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL117C1-L120C80)
 
 <details>
 
@@ -256,7 +256,7 @@ Dispenser contract object which access all the functionalities available from sm
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL122C1-L125C63)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL122C1-L125C63)
 
 <details>
 
@@ -287,7 +287,7 @@ Fixed Rate Exchange contract object which access all the functionalities availab
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL127C1-L130C72)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL127C1-L130C72)
 
 <details>
 
@@ -321,7 +321,7 @@ Data NFT object which access all the functionalities available for ERC721 templa
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL139C5-L145C51)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL139C5-L145C51)
 
 <details>
 
@@ -358,7 +358,7 @@ Datatoken object which access all the functionalities available for ERC20 templa
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL147C5-L153C67)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL147C5-L153C67)
 
 <details>
 
@@ -398,7 +398,7 @@ List of all the orders on that `datatoken` done by the specified `user`.
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL157C5-L173C23)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL157C5-L173C23)
 
 <details>
 
@@ -426,8 +426,6 @@ List of all the orders on that `datatoken` done by the specified `user`.
 ```
 {% endcode %}
 
-
-
 </details>
 
 ### Provider Fees
@@ -450,7 +448,7 @@ A dictionary which contains the following keys (`providerFeeAddress`, `providerF
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL177C4-L189C1)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL177C4-L189C1)
 
 <details>
 
@@ -497,7 +495,7 @@ A dictionary which contains the following keys (`providerFeeAddress`, `providerF
 
 **Defined in**
 
-[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean_lib/ocean/ocean.py#LL190C4-L210C1)
+[ocean/ocean.py](https://github.com/oceanprotocol/ocean.py/blob/main/ocean\_lib/ocean/ocean.py#LL190C4-L210C1)
 
 <details>
 

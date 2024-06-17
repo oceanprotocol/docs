@@ -4,9 +4,9 @@ description: Empowering the Decentralised Data Economy
 
 # Contracts
 
-The suite of smart contracts serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants. 
+The suite of smart contracts serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants.
 
-The smart contracts have been deployed across multiple [networks](../../discover/networks/README.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). They introduced significant enhancements that encompass the following key **features**:
+The smart contracts have been deployed across multiple [networks](../../discover/networks.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). They introduced significant enhancements that encompass the following key **features**:
 
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
@@ -18,8 +18,7 @@ Ocean V4 effectively tackles these challenges by adopting **ERC721** **tokens** 
 
 By utilizing ERC721 tokens, Ocean **grants data creators greater flexibility and control over licensing arrangements**. The introduction of data NFTs allows for the representation of [base IP](../../discover/glossary.md) and the creation of customized ERC20 datatoken contracts tailored to individual licensing requirements.
 
-<figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol Smart Contracts</p></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol Smart Contracts</p></figcaption></figure>
 
 ### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
 
@@ -27,9 +26,9 @@ Ocean brings forth enhanced opportunities for dApp owners, creating a conducive 
 
 With Ocean, dApp owners can unlock additional benefits. Firstly, the smart contracts empower dApp owners to collect [fees](fees.md) not only during **data consumption** but also through **fixed-rate exchanges**. This expanded revenue model allows owners to derive more value from the ecosystem. Moreover, in Ocean, the dApp operator has the authority to determine the fee value, providing them with **increased control** over their pricing strategies.
 
-In addition to empowering dApp owners, Ocean facilitates the participation of third-party [Providers](../provider/README.md) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
+In addition to empowering dApp owners, Ocean facilitates the participation of third-party [Providers](../provider/) who can offer compute services in exchange for a fee. This paves the way for the development of a diverse marketplace of Providers. This model supports both centralized trusted providers, where data publishers and consumers have established trust relationships, as well as trustless providers that leverage decentralization or other privacy-preserving mechanisms.
 
-By enabling a marketplace of [Providers](../provider/README.md), Ocean fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
+By enabling a marketplace of [Providers](../provider/), Ocean fosters competition, innovation, and choice. It creates an ecosystem where various providers can offer their compute services, catering to the diverse needs of data publishers and consumers. Whether based on trust or privacy-preserving mechanisms, this expansion in provider options enhances the overall functionality and accessibility of the Ocean Protocol ecosystem.
 
 Key features of the smart contracts:
 

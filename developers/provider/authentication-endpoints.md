@@ -37,7 +37,7 @@ Response:
 
 #### Javascript Example:
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios');
 const address = "0x7e2a2FA2a064F693f0a55C5639476d913Ff12D05"
 const nonce = "1"

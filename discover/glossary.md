@@ -1,6 +1,5 @@
 ---
-description: >-
-  Key terms, concepts, and acronyms used in Ocean
+description: Key terms, concepts, and acronyms used in Ocean
 ---
 
 # Glossary
@@ -10,6 +9,7 @@ description: >-
 <details>
 
 <summary>Ocean Protocol</summary>
+
 Ocean Protocol is a decentralized data exchange protocol that enables individuals and organizations to share, sell, and consume data in a secure, transparent, and privacy-preserving manner. The protocol is designed to address the current challenges in data sharing, such as data silos, lack of interoperability, and data privacy concerns. Ocean Protocol uses blockchain technology, smart contracts, and cryptographic techniques to create a network where data providers can offer their data assets for sale, data consumers can purchase and access the data, and developers can build data-driven applications and services on top of the protocol.
 
 </details>
@@ -84,7 +84,7 @@ In exchange for locking tokens, users can earn rewards. The amount of reward dep
 
 <summary>Ocean Data Farming (DF)</summary>
 
-[Ocean Data Farming (DF)](https://df.oceandao.org/) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem. [DF](../data-farming/README.md) is like DeFi liquidity mining, but tuned for DCV. DF emits OCEAN for passive rewards and active rewards.
+[Ocean Data Farming (DF)](https://df.oceandao.org/) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem. [DF](../archive/data-farming/) is like DeFi liquidity mining, but tuned for DCV. DF emits OCEAN for passive rewards and active rewards.
 
 * As a veOCEAN holder, you get _passive_ rewards by default.
 * If you _actively_ curate data by allocating veOCEAN towards data assets with high Data Consume Volume (DCV), then you can earn more.
@@ -95,7 +95,7 @@ In exchange for locking tokens, users can earn rewards. The amount of reward dep
 
 <summary>Passive Rewards</summary>
 
-When a user locks their OCEAN for a finite period of time, they get veOCEAN in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../data-farming/README.md). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user locks their OCEAN for a finite period of time, they get veOCEAN in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../archive/data-farming/). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
@@ -103,7 +103,7 @@ When a user locks their OCEAN for a finite period of time, they get veOCEAN in r
 
 <summary>Volume DF</summary>
 
-When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../data-farming/README.md) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
+When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../archive/data-farming/) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
 
 </details>
 
@@ -148,7 +148,6 @@ Claim copyright or exclusive base license.
 Transfer one (of many) sub-licenses to new licensee: ERC20.transfer(to=licensee, value=1.0).
 
 </details>
-
 
 ## Web3 Fundamentals
 
@@ -420,15 +419,10 @@ Machine learning is a subfield of artificial intelligence (AI) that involves tea
 
 </details>
 
-
-----
-
+***
 
 Congrats! You've completed this quick introduction to Ocean.
 
-_Next: Jump to [Docs main](../README.md) and click on your interest._
+_Next: Jump to_ [_Docs main_](../) _and click on your interest._
 
-_Back: [FAQ](faq.md)_
-
-
-
+_Back:_ [_FAQ_](faq.md)

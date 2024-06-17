@@ -18,44 +18,44 @@ Create an account on [Azure](https://azure.microsoft.com/en-us/). Users might al
 
 Go to the Azure portal: https://portal.azure.com/#home and select `Storage accounts` as shown below.
 
-![Select storage accounts](../../.gitbook/assets/hosting/azure1.png)
+![Select storage accounts](../../.gitbook/assets/azure1.png)
 
 **Create a new storage account**
 
-![Create a storage account](../../.gitbook/assets/hosting/azure2.png)
+![Create a storage account](../../.gitbook/assets/azure2.png)
 
 **Fill in the details**
 
-![Add details](../../.gitbook/assets/hosting/azure3.png)
+![Add details](../../.gitbook/assets/azure3.png)
 
 **Storage account created**
 
-![Storage account created](../../.gitbook/assets/hosting/azure4.png)
+![Storage account created](../../.gitbook/assets/azure4.png)
 
 **Step 2 - Create a blob container**
 
-![Create a blob container](../../.gitbook/assets/hosting/azure5.png)
+![Create a blob container](../../.gitbook/assets/azure5.png)
 
 **Step 3 - Upload a file**
 
-![Upload a file](../../.gitbook/assets/hosting/azure6.png)
+![Upload a file](../../.gitbook/assets/azure6.png)
 
 **Step 4 - Share the file**
 
 **Select the file to be published and click Generate SAS**
 
-![Click generate SAS](../../.gitbook/assets/hosting/azure7.png)
+![Click generate SAS](../../.gitbook/assets/azure7.png)
 
 **Configure the SAS details and click `Generate SAS token and URL`**
 
-![Generate link to file](../../.gitbook/assets/hosting/azure8.png)
+![Generate link to file](../../.gitbook/assets/azure8.png)
 
 **Copy the generated link**
 
-![Copy the link](../../.gitbook/assets/hosting/azure9.png)
+![Copy the link](../../.gitbook/assets/azure9.png)
 
 **Step 5 - Publish the asset using the generated link**
 
 Now, copy and paste the link into the Publish page in the Ocean Marketplace.
 
-![Publish the file as an asset](../../.gitbook/assets/hosting/azure10.png)
+![Publish the file as an asset](../../.gitbook/assets/azure10.png)

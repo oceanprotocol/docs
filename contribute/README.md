@@ -1,13 +1,12 @@
 ---
-title: Ways to Contribute
 description: Help develop Ocean Protocol software like a superhero
-cover: ../.gitbook/assets/cover/contribute_banner.png
+cover: ../.gitbook/assets/contribute_banner.png
 coverY: 0
 ---
 
 # 🤝 Contribute
 
-<figure><img src="../.gitbook/assets/gif/to-the-computer.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/to-the-computer.gif" alt=""><figcaption></figcaption></figure>
 
 ### Report a bug 🐞
 
@@ -20,13 +19,12 @@ First, make sure that you search existing open + closed issues + PRs to see if y
 Follow the steps below to properly document your bug! Paste the screenshots into your GitHub issue.
 
 {% embed url="https://app.arcade.software/share/fUNrK6z2eurJ2C1ty2OG" fullWidth="false" %}
-{% endembed %}
 
 ### Report vulnerabilities
 
 For all the super sleuths out there, you may be able to earn a bounty for reporting vulnerabilities in sensitive parts of the code. Check out this page on [Immunify](https://immunefi.com/bounty/oceanprotocol/) for the latest bug bounties available. You can also responsibly disclose flaws by emailing us at [security@oceanprotocol.com](mailto:security@oceanprotocol.com).
 
-<figure><img src="../.gitbook/assets/gif/matrix-code.gif" alt=""><figcaption><p>Did you find a glitch in the code matrix?</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/matrix-code.gif" alt=""><figcaption><p>Did you find a glitch in the code matrix?</p></figcaption></figure>
 
 ### Suggest a new feature 🤔💭
 
@@ -73,6 +71,5 @@ The docs repo can always be improved. If you found a mistake or have an improvem
 ### Apply for a developer job
 
 Do you REALLY love building on Ocean Protocol? Consider joining us full-time! Our openings are listed at [https://github.com/oceanprotocol/jobs](https://github.com/oceanprotocol/jobs).
-
 
 Scroll a bit further, and at this page's footer, you'll find the social media links that allow you to join the Ocean community or engage in direct chats with us. 😊 Toodles!

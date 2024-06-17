@@ -22,7 +22,7 @@ Example response:
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const response = await axios( `https://v4.provider.oceanprotocol.com/api/services/nonce?userAddress=0x0db823218e337a6817e6d7740eb17635deadafaf`)
@@ -59,7 +59,7 @@ Example response:
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('cross-fetch')
 
 const data = "test"

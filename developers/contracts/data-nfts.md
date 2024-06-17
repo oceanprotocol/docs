@@ -37,7 +37,7 @@ ERC721 tokens are non-fungible, and thus cannot be used for automatic price disc
 
 Our implementation has been built on top of the battle-tested [OpenZeppelin contract library](https://docs.openzeppelin.com/contracts/4.x/erc721). However, there are a bunch of interesting parts of the implementation that go a bit beyond an out-of-the-box NFT. The data NFTs can be easily managed from any NFT marketplace like [OpenSea](https://opensea.io/).
 
-<figure><img src="../../.gitbook/assets/wallet/data_nft_open_sea.png" alt=""><figcaption><p>Data NFT on Open Sea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/data_nft_open_sea.png" alt=""><figcaption><p>Data NFT on Open Sea</p></figcaption></figure>
 
 Something else that we’re super excited about in the data NFTs is a cutting-edge standard called [ERC725](https://github.com/ERC725Alliance/erc725/blob/main/docs/ERC-725.md) being driven by our friends at [Lukso](https://lukso.network/about). The ERC725y feature enables the NFT owner (or a user with the “store updater” role) to input and update information in a key-value store. These values can be viewed externally by anyone.
 

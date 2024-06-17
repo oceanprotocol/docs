@@ -1,18 +1,20 @@
 ---
-description: >-
-  Guides to use Ocean, with no coding needed.
-cover: ../.gitbook/assets/cover/user_guides_banner.png
+description: Guides to use Ocean, with no coding needed.
+cover: ../.gitbook/assets/user_guides_banner.png
 coverY: 0
 ---
 
 # 📚 User Guides
 
-<figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 **Contents:**
-- Basic concepts
-- Using wallets
-- Host assets
+
+* Basic concepts
+* Using wallets
+* Using Ocean Market
+* C2D in Ocean Market
+* Host assets
 
 Let's dive in!
 
@@ -26,18 +28,38 @@ For blockchain beginners
 
 ## Using wallets
 
-{% content-ref url="wallets/README.md" %}
-[wallets/README.md.md](wallets/README.md)
+{% content-ref url="wallets/" %}
+[wallets](wallets/)
 {% endcontent-ref %}
 
 {% content-ref url="wallets/metamask-setup.md" %}
-[wallets/metamask-setup.md](wallets/metamask-setup.md)
+[metamask-setup.md](wallets/metamask-setup.md)
 {% endcontent-ref %}
 
-## Data Storage
+## Using Ocean Market
+
+{% content-ref url="https://github.com/oceanprotocol/docs/blob/node-release/user-guides/using-ocean-market.md" %}
+[https://github.com/oceanprotocol/docs/blob/node-release/user-guides/using-ocean-market.md](https://github.com/oceanprotocol/docs/blob/node-release/user-guides/using-ocean-market.md)
+{% endcontent-ref %}
+
+{% content-ref url="https://github.com/oceanprotocol/docs/blob/node-release/user-guides/publish-data-nfts.md" %}
+[https://github.com/oceanprotocol/docs/blob/node-release/user-guides/publish-data-nfts.md](https://github.com/oceanprotocol/docs/blob/node-release/user-guides/publish-data-nfts.md)
+{% endcontent-ref %}
+
+{% content-ref url="https://github.com/oceanprotocol/docs/blob/node-release/user-guides/buy-data-nfts.md" %}
+[https://github.com/oceanprotocol/docs/blob/node-release/user-guides/buy-data-nfts.md](https://github.com/oceanprotocol/docs/blob/node-release/user-guides/buy-data-nfts.md)
+{% endcontent-ref %}
+
+## C2D in Ocean Market
+
+{% content-ref url="compute-to-data/" %}
+[compute-to-data](compute-to-data/)
+{% endcontent-ref %}
+
+## Host Assets
 
 {% content-ref url="asset-hosting/" %}
-[asset-hosting](asset-hosting/README.md)
+[asset-hosting](asset-hosting/)
 {% endcontent-ref %}
 
 ## Antique Stuff 🏺
