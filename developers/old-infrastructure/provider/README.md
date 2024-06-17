@@ -26,7 +26,7 @@ Additionally, the Provider service offers compute services by establishing a con
 * Provides compute services (connects to C2D environment)
 * Typically run by the Data owner
 
-<figure><img src="../../.gitbook/assets/provider.png" alt=""><figcaption><p>Ocean Provider - publish &#x26; consume</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/provider.png" alt=""><figcaption><p>Ocean Provider - publish &#x26; consume</p></figcaption></figure>
 
 In the publishing process, the provider plays a crucial role by encrypting the DDO using its private key. Then, the encrypted DDO is stored on the blockchain.
 

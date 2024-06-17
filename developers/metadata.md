@@ -40,11 +40,11 @@ An _asset_ in Ocean represents a downloadable file, compute service, or similar.
 
 An _asset_ has a DID and DDO. The DDO should include metadata about the asset, and define access in at least one [service](ddo-specification.md#services). Only _owners_ or _delegated users_ can modify the DDO.
 
-All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like [_Aquarius_](aquarius/) can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
+All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like [_Aquarius_](old-infrastructure/aquarius/) can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
 
 #### Publishing & Retrieving DDOs
 
-The DDO is stored on-chain as part of the NFT contract and stored in encrypted form using the private key of the [_Provider_](provider/). To resolve it, a metadata cache like [_Aquarius_](aquarius/) must query the [Provider](provider/) to decrypt the DDO.
+The DDO is stored on-chain as part of the NFT contract and stored in encrypted form using the private key of the [_Provider_](old-infrastructure/provider/). To resolve it, a metadata cache like [_Aquarius_](old-infrastructure/aquarius/) must query the [Provider](old-infrastructure/provider/) to decrypt the DDO.
 
 Here is the flow:
 
@@ -56,7 +56,7 @@ To set up the metadata for an asset, you'll need to call the [**setMetaData**](h
 * **\_metaDataDecryptorUrl** - You create the DDO and then the Provider encrypts it with its private key. Only that Provider can decrypt it.
 * **\_metaDataDecryptorAddress** - The decryptor address.
 * **flags** - Additional information to represent the state of the data. One of two values: 0 - plain text, 1 - compressed, 2 - encrypted. Used by Aquarius.
-* **data -** The [DDO](ddo-specification.md) of the asset. You create the DDO as a JSON, send it to the [Provider](provider/) that encrypts it, and then you set it up at the contract level.
+* **data -** The [DDO](ddo-specification.md) of the asset. You create the DDO as a JSON, send it to the [Provider](old-infrastructure/provider/) that encrypts it, and then you set it up at the contract level.
 * **\_metaDataHash** - Hash of the clear data **generated before the encryption.** It is used by Provider to check the validity of the data after decryption.
 * **\_metadataProofs** - Array with signatures of entities who validated data (before the encryption). Pass an empty array if you don't have any.
 

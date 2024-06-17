@@ -45,9 +45,9 @@ Before the flow can begin, these pre-conditions must be met:
 
 ### Access Control using Ocean Provider
 
-Similar to the `access service`, the `compute service` within Ocean Protocol relies on the [Ocean Provider](../provider/), which is a crucial component managed by the asset Publishers. The role of the Ocean Provider is to facilitate interactions with users and handle the fundamental aspects of a Publisher's infrastructure, enabling seamless integration into the Ocean Protocol ecosystem. It serves as the primary interface for direct interaction with the infrastructure where the data is located.
+Similar to the `access service`, the `compute service` within Ocean Protocol relies on the [Ocean Provider](../old-infrastructure/provider/), which is a crucial component managed by the asset Publishers. The role of the Ocean Provider is to facilitate interactions with users and handle the fundamental aspects of a Publisher's infrastructure, enabling seamless integration into the Ocean Protocol ecosystem. It serves as the primary interface for direct interaction with the infrastructure where the data is located.
 
-The [Ocean Provider](../provider/) encompasses the necessary credentials to establish secure and authorized interactions with the underlying infrastructure. Initially, this infrastructure may be hosted in cloud providers, although it also has the flexibility to extend to on-premise environments if required. By encompassing the necessary credentials, the Ocean Provider ensures the smooth and controlled access to the infrastructure, allowing Publishers to effectively leverage the compute service within Ocean Protocol.
+The [Ocean Provider](../old-infrastructure/provider/) encompasses the necessary credentials to establish secure and authorized interactions with the underlying infrastructure. Initially, this infrastructure may be hosted in cloud providers, although it also has the flexibility to extend to on-premise environments if required. By encompassing the necessary credentials, the Ocean Provider ensures the smooth and controlled access to the infrastructure, allowing Publishers to effectively leverage the compute service within Ocean Protocol.
 
 ### Operator Service
 

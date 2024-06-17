@@ -32,7 +32,7 @@ Another new opportunity is using your own **ERC20** token in your dApp, where it
 
 Now this is a completely brand new opportunity to start generating [revenue](revenue.md) — running your own [provider](https://github.com/oceanprotocol/provider). We have been aware for a while now that many of you haven’t taken up the opportunity to run your own provider, and the reason seems obvious — there aren’t strong enough incentives to do so.
 
-For those that aren’t aware, [Ocean Provider](provider/) is the proxy service that’s responsible for encrypting/ decrypting the data and streaming it to the consumer. It also validates if the user is allowed to access a particular data asset or service. It’s a crucial component in Ocean’s architecture.
+For those that aren’t aware, [Ocean Provider](old-infrastructure/provider/) is the proxy service that’s responsible for encrypting/ decrypting the data and streaming it to the consumer. It also validates if the user is allowed to access a particular data asset or service. It’s a crucial component in Ocean’s architecture.
 
 Now, as mentioned above, fees are now paid to the individual or organization running the provider whenever a user downloads a data asset. The fees for downloading an asset are set as a cost per MB. In addition, there is also a provider fee that is paid whenever a compute job is run, which is set as a price per minute.
 

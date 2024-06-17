@@ -8,7 +8,7 @@ coverY: 0
 
 There are many ways in which the components can be deployed, from simple configurations used for development and testing to complex configurations, used for production systems.
 
-All the Ocean Protocol components ([Provider](../developers/provider/), [Aquarius](../developers/aquarius/), [Subgraph](../developers/subgraph/)) are designed to run in Docker containers, on a Linux operating system. For simple configurations, we rely on Docker Engine and Docker Compose products to deploy and run the components, while for complex configurations we use Kubernetes. The guides included in this section will present both deployment options.
+All the Ocean Protocol components ([Provider](../developers/old-infrastructure/provider/), [Aquarius](../developers/old-infrastructure/aquarius/), [Subgraph](../developers/old-infrastructure/subgraph/)) are designed to run in Docker containers, on a Linux operating system. For simple configurations, we rely on Docker Engine and Docker Compose products to deploy and run the components, while for complex configurations we use Kubernetes. The guides included in this section will present both deployment options.
 
 Please note that deploying the Ocean components requires a good understanding of:
 

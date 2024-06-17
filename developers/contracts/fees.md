@@ -43,7 +43,7 @@ When a user exchanges a [datatoken](datatokens.md) for the privilege of download
 2. **Consume Market** Consumption Fee
    * A market can specify what fee it wants on the order function.
 3. **Provider** Consumption Fees
-   * Defined by the [Provider](../provider/) for any consumption.
+   * Defined by the [Provider](../old-infrastructure/provider/) for any consumption.
    * Expressed in: Address, Token, Amount (absolute), Timeout.
    * You can retrieve them when calling the initialize endpoint.
    * Eg: A provider can charge a fixed fee of 10 USDT per consume, irrespective of the pricing schema used (e.g., fixed rate with ETH, BTC, dispenser).
@@ -91,11 +91,11 @@ Each of these fees plays a role in ensuring fair compensation and supporting the
 
 ### Provider fee
 
-[Providers](../provider/) facilitate data consumption, initiate compute jobs, encrypt and decrypt DDOs, and verify user access to specific data assets or services.
+[Providers](../old-infrastructure/provider/) facilitate data consumption, initiate compute jobs, encrypt and decrypt DDOs, and verify user access to specific data assets or services.
 
 Provider fees serve as [compensation](../community-monetization.md#3.-running-your-own-provider) to the individuals or organizations operating their own provider instances when users request assets.
 
-* Defined by the [Provider](../provider/) for any consumption.
+* Defined by the [Provider](../old-infrastructure/provider/) for any consumption.
 * Expressed in: Address, Token, Amount (absolute), Timeout.
 * You can retrieve them when calling the initialize endpoint.
 * These fees can be set as a **fixed amount** rather than a percentage.

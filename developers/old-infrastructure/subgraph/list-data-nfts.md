@@ -4,7 +4,7 @@ description: 'Discover the World of NFTs: Retrieving a List of Data NFTs'
 
 # Get data NFTs
 
-If you are already familiarized with the concept of NFTs, you're off to a great start. However, if you require a refresher, we recommend visiting the [data NFTs and datatokens page](../contracts/datanft-and-datatoken.md) for a quick overview.
+If you are already familiarized with the concept of NFTs, you're off to a great start. However, if you require a refresher, we recommend visiting the [data NFTs and datatokens page](../../contracts/datanft-and-datatoken.md) for a quick overview.
 
 Now, let us delve into the realm of utilizing the subgraph to extract a list of data NFTs that have been published using the Ocean contracts. By employing GraphQL queries, we can seamlessly retrieve the desired information from the subgraph. You'll see how simple it is :sunglasses:
 
