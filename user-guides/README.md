@@ -1,18 +1,18 @@
 ---
-description: >-
-  Guides to use Ocean, with no coding needed.
-cover: ../.gitbook/assets/cover/user_guides_banner.png
+description: Guides to use Ocean, with no coding needed.
+cover: ../.gitbook/assets/user_guides_banner.png
 coverY: 0
 ---
 
 # 📚 User Guides
 
-<figure><img src="../.gitbook/assets/gif/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/follow-instructions.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 **Contents:**
-- Basic concepts
-- Using wallets
-- Host assets
+
+* Basic concepts
+* Using wallets
+* Host assets
 
 Let's dive in!
 
@@ -26,18 +26,18 @@ For blockchain beginners
 
 ## Using wallets
 
-{% content-ref url="wallets/README.md" %}
-[wallets/README.md.md](wallets/README.md)
+{% content-ref url="wallets/" %}
+[wallets](wallets/)
 {% endcontent-ref %}
 
 {% content-ref url="wallets/metamask-setup.md" %}
-[wallets/metamask-setup.md](wallets/metamask-setup.md)
+[metamask-setup.md](wallets/metamask-setup.md)
 {% endcontent-ref %}
 
 ## Data Storage
 
 {% content-ref url="asset-hosting/" %}
-[asset-hosting](asset-hosting/README.md)
+[asset-hosting](asset-hosting/)
 {% endcontent-ref %}
 
 ## Antique Stuff 🏺

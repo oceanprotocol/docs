@@ -1,7 +1,7 @@
 ---
 description: >-
-  How to use a crypto wallet to check your OCEAN balance and send OCEAN
-  Tokens to others
+  How to use a crypto wallet to check your OCEAN balance and send OCEAN Tokens
+  to others
 ---
 
 # Manage Your OCEAN
@@ -9,9 +9,9 @@ description: >-
 If you don't see any OCEAN in your crypto wallet software 🔎 (e.g. MetaMask or MyEtherWallet), don't worry! It might not know how to manage OCEAN yet.
 
 For an ERC-20 wallet to see OCEAN, the wallet typically needs to have OCEAN's address added as a custom token.
-- The [Networks docs](../discover/networks/README.md) give the address of OCEAN on each network, and how to get OCEAN on each of those networks.
-- Then, use that information for the wallet instructions below.
 
+* The [Networks docs](https://github.com/oceanprotocol/docs/blob/main/user-guides/discover/networks/README.md) give the address of OCEAN on each network, and how to get OCEAN on each of those networks.
+* Then, use that information for the wallet instructions below.
 
 ### MetaMask
 
@@ -26,7 +26,6 @@ For an ERC-20 wallet to see OCEAN, the wallet typically needs to have OCEAN's ad
 If you prefer visual demonstrations, we have prepared a visual demo that illustrates the steps mentioned above.
 
 {% embed url="https://app.arcade.software/share/yHiKKN336QGdAkhTlsIh" fullWidth="false" %}
-{% endembed %}
 
 MetaMask should now show your OCEAN balance, and when you're looking at that, there should be a `Send` button to send OCEAN to others. For help with that, see [the MetaMask docs about how to send tokens](https://metamask.zendesk.com/hc/en-us/articles/360015488931-How-to-Send-Tokens).
 

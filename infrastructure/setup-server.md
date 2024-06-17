@@ -4,7 +4,7 @@ description: >-
   Protocol's components.
 ---
 
-# Setup a Server
+# Set Up a Server
 
 Each deployment of the Ocean components starts with setting up a server on which these will be installed, either on-premise or hosted in a cloud platform.
 
@@ -17,8 +17,6 @@ For simple configurations:
 For complex configurations:
 
 * Operating System: Linux distribution supported by Kubernetes and Docker Engine. Please refer to this link for details: [Kubernetes with Docker Engine](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker).
-
-
 
 ## Server Size
 
@@ -35,8 +33,6 @@ For simple configurations:
 
 1. [Install the operating system](setup-server.md#install-the-operating-system)
 2. [Install Docker Engine and Docker Compose](setup-server.md#install-docker-engine-and-docker-compose)
-
-
 
 For complex configurations:
 
@@ -59,15 +55,13 @@ Go to [https://www.digitalocean.com/](https://www.digitalocean.com/) and create 
 
 Click on **`Create`** button and choose **`Droplets`** options from dropdown.
 
-<figure><img src="../.gitbook/assets/deployment/image (1).png" alt=""><figcaption><p>Select Droplet</p></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Select Droplet</p></figcaption></figure>
 
 3. Select a server configuration
 
 Select Ubuntu OS, and choose a plan and a configuration.
 
-<figure><img src="../.gitbook/assets/deployment/image (2).png" alt=""><figcaption><p>Configure the server</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Configure the server</p></figcaption></figure>
 
 ###
 
@@ -75,21 +69,19 @@ Select Ubuntu OS, and choose a plan and a configuration.
 
 Select the region where you want the component to be hosted and a root password.
 
-<figure><img src="../.gitbook/assets/deployment/image (6).png" alt=""><figcaption><p>Select the region and set the root password</p></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Select the region and set the root password</p></figcaption></figure>
 
 5. Finish the configuration and create the server
 
 Specify a hostname for the server, specify the project to which you assign the server, and then click on `Create Droplet.`
 
-<figure><img src="../.gitbook/assets/deployment/image (5).png" alt=""><figcaption><p>Finalize and create the server</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Finalize and create the server</p></figcaption></figure>
 
 6. Access the server's console
 
 After the server is ready, select the `Access console` option from the dropdown list to open a terminal window.
 
-<figure><img src="../.gitbook/assets/deployment/image.png" alt=""><figcaption><p>Access the server's console</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Access the server's console</p></figcaption></figure>
 
 ### Install Docker Engine and Docker Compose
 

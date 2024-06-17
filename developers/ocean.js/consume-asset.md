@@ -18,20 +18,22 @@ Later on, when working with the ocean.js library, you can use this order transac
 
 #### Prerequisites
 
-- [Obtain an API key](../get-api-keys-for-blockchain-access.md)
-- [Set up the .env file](configuration.md#create-a-env-file)
-- [Install the dependencies](configuration.md#setup-dependencies)
-- [Create a configuration file](configuration.md#create-a-configuration-file)
+* [Obtain an API key](../get-api-keys-for-blockchain-access.md)
+* [Set up the .env file](configuration.md#create-a-env-file)
+* [Install the dependencies](configuration.md#setup-dependencies)
+* [Create a configuration file](configuration.md#create-a-configuration-file)
 
 {% hint style="info" %}
-The variables **AQUARIUS_URL** and **PROVIDER_URL** should be set correctly in `.env` file
+The variables **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
 {% endhint %}
 
 #### Create a script to consume an asset
 
 Create a new file in the same working directory where the configuration file (`config.js`) and `.env` files are present, and copy the code as listed below.
 
-<pre class="language-javascript" data-overflow="wrap"><code class="lang-javascript">// Note: Make sure .env file and config.js are created and setup correctly
+{% code overflow="wrap" %}
+```javascript
+// Note: Make sure .env file and config.js are created and setup correctly
 const { oceanConfig } = require("./config.js");
 const {
 	ZERO_ADDRESS,
@@ -126,4 +128,5 @@ consumeAsset(did).then(() => {
   process.exit(1);
 });
 
-</code></pre>
+```
+{% endcode %}

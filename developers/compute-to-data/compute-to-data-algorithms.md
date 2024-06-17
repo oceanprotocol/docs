@@ -1,9 +1,10 @@
 ---
-title: Writing Algorithms for Compute to Data
 description: >-
   Learn how to write algorithms for use in Ocean Protocol's Compute-to-Data
   feature.
 ---
+
+# Writing Algorithms
 
 In the Ocean Protocol stack, algorithms are recognized as distinct asset types, alongside datasets. When it comes to Compute-to-Data, an algorithm comprises the following key components:
 
@@ -13,7 +14,7 @@ In the Ocean Protocol stack, algorithms are recognized as distinct asset types, 
 
 Collectively, these components form the foundation of an algorithm in the context of Compute-to-Data.
 
-### Environment
+#### Environment
 
 When creating an algorithm asset in Ocean Protocol, it is essential to include the additional algorithm object in its metadata service. This algorithm object plays a crucial role in defining the Docker container environment associated with the algorithm. By specifying the necessary details within the algorithm object, such as the base image, tags, runtime configurations, and dependencies, the metadata service ensures that the algorithm asset is properly configured for execution within a Docker container.
 
@@ -33,11 +34,11 @@ When creating an algorithm asset in Ocean Protocol, it is essential to include t
 
 Define your entry point according to your dependencies. E.g. if you have multiple versions of Python installed, use the appropriate command `python3.6 $ALGO`.
 
-#### What Docker container should I use?
+**What Docker container should I use?**
 
 There are plenty of Docker containers that work out of the box. However, if you have custom dependencies, you may want to configure your own Docker Image. To do so, create a Dockerfile with the appropriate instructions for dependency management and publish the container, e.g. using Dockerhub.
 
-We also collect some [example images](https://github.com/oceanprotocol/algo_dockers) which you can also view in Dockerhub.
+We also collect some [example images](https://github.com/oceanprotocol/algo\_dockers) which you can also view in Dockerhub.
 
 When publishing an algorithm through the [Ocean Market](https://market.oceanprotocol.com), these properties can be set via the publish UI.
 
@@ -75,7 +76,7 @@ Run an algorithm written in Python, based on Python v3.9:
 
 </details>
 
-#### Data Storage
+**Data Storage**
 
 As part of a compute job, every algorithm runs in a K8s pod with these volumes mounted:
 
@@ -88,7 +89,7 @@ As part of a compute job, every algorithm runs in a K8s pod with these volumes m
 
 Please note that when using local Providers or Metatata Caches, the ddos might not be correctly transferred into c2d, but inputs are still available. If your algorithm relies on contents from the DDO json structure, make sure to use a public Provider and Metadata Cache (Aquarius instance).
 
-#### Environment variables available to algorithms
+**Environment variables available to algorithms**
 
 For every algorithm pod, the Compute to Data environment provides the following environment variables:
 
@@ -239,11 +240,11 @@ To run this algorithm, use the following `container` object:
 
 </details>
 
-#### Algorithm Metadata
+**Algorithm Metadata**
 
 An asset of type `algorithm` has additional attributes under `metadata.algorithm`, describing the algorithm and the Docker environment it is supposed to be run under.
 
-<table><thead><tr><th>Attribute</th><th width="150">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>language</code></strong></td><td><code>string</code></td><td>Language used to implement the software.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version of the software preferably in <a href="https://semver.org">SemVer</a> notation. E.g. <code>1.0.0</code>.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="../compute-to-data/compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object that defines required consumer input before running the algorithm</td></tr><tr><td><strong><code>container</code></strong>*</td><td><code>container</code></td><td>Object describing the Docker container image. See below</td></tr></tbody></table>
+<table><thead><tr><th>Attribute</th><th width="150">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>language</code></strong></td><td><code>string</code></td><td>Language used to implement the software.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version of the software preferably in <a href="https://semver.org">SemVer</a> notation. E.g. <code>1.0.0</code>.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object that defines required consumer input before running the algorithm</td></tr><tr><td><strong><code>container</code></strong>*</td><td><code>container</code></td><td>Object describing the Docker container image. See below</td></tr></tbody></table>
 
 \* Required
 

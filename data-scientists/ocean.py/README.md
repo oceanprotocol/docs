@@ -1,12 +1,10 @@
 ---
-description: >-
-  Python library to privately & securely publish, exchange, and consume
-  data.
+description: Python library to privately & securely publish, exchange, and consume data.
 ---
 
 # Ocean.py
 
-[Ocean.py](https://github.com/oceanprotocol/ocean.py) helps data scientists earn $ from their AI models, track provenance of data & compute, and get more data. (More details [here](../../data-scientists/README.md).)
+[Ocean.py](https://github.com/oceanprotocol/ocean.py) helps data scientists earn $ from their AI models, track provenance of data & compute, and get more data. (More details [here](../).)
 
 Ocean.py makes these tasks easy:
 
@@ -16,7 +14,7 @@ Ocean.py makes these tasks easy:
 
 As a Python library, Ocean.py is built for the key environment of data scientists. It that can simply be imported alongside other Python data science tools like numpy, matplotlib, scikit-learn and tensorflow.
 
-<figure><img src="../../.gitbook/assets/components/ocean_py.png" alt="" width="375"></figure>
+<figure><img src="../../.gitbook/assets/ocean_py.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Quickstart 🚀
 
@@ -24,8 +22,8 @@ Follow these steps in sequence to ramp into Ocean.
 
 1. [Install Ocean](install.md) 📥
 2. Setup 🛠️
-   - [Remote ](remote-setup.md)(Win, MacOS, Linux)
-   - or [Local ](local-setup.md)(Linux only)
+   * [Remote ](remote-setup.md)(Win, MacOS, Linux)
+   * or [Local ](local-setup.md)(Linux only)
 3. [Publish asset](publish-flow.md), post for free / for sale, dispense it / buy it, and [consume ](consume-flow.md)it
 4. Run algorithms through [Compute-to-Data flow](compute-flow.md) using Ocean environment.
 

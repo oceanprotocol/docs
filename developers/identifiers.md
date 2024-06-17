@@ -24,7 +24,7 @@ did:op:0ebed8226ada17fde24b6bf2b95d27f8f05fcce09139ff5cec31f6d81a7cd2ea
 
 The part after `did:op:` is the ERC721 contract address(in checksum format) and the chainId (expressed to 10 decimal places). The following javascript example shows how to calculate the DID for the asset:
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const CryptoJS = require('crypto-js')
 
 const dataNftAddress = '0xa331155197F70e5e1EA0CC2A1f9ddB1D49A9C1De'

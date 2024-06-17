@@ -1,6 +1,6 @@
 # Uploader UI
 
-The [Uploader UI](https://github.com/oceanprotocol/uploader-ui-lib) stands as a robust UI react library dedicated to optimizing the uploading, and interaction with digital assets. 
+The [Uploader UI](https://github.com/oceanprotocol/uploader-ui-lib) stands as a robust UI react library dedicated to optimizing the uploading, and interaction with digital assets.
 
 Through an intuitive platform, the tool significantly simplifies the entire process, offering users a seamless experience for uploading files, acquiring unique identifiers such as hashes or CIDs, and effectively managing their decentralized assets. Developed using React, TypeScript, and CSS modules, the library seamlessly connects to Ocean remote components by default, ensuring a cohesive and efficient integration within the ecosystem.
 

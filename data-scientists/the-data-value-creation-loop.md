@@ -2,9 +2,9 @@
 description: Thrive in the open data economy by closing the loop towards speed and value
 ---
 
-# The Data Value-Creation Loop
+# Data Value-Creation Loop
 
-<figure><img src="../.gitbook/assets/data-scientists/data-value-creation-loop.png" alt=""></figure>
+<figure><img src="../.gitbook/assets/data-value-creation-loop.png" alt=""><figcaption></figcaption></figure>
 
 ### Motivation
 
@@ -30,12 +30,12 @@ The next question is:
 
 Let’s go through the steps of the loop.
 
-- At the top, the user gets data by buying it or spending $ to create it.
-- Then, they build an AI model from the data.
-- Then they make predictions. E.g. “ETH will rise in next 5 minutes”
-- Then, they choose actions. E.g. “buy ETH”.
-- In executing these actions, they data scientist (or org) will make $ on average.
-- The $ earned is put back into buying more data, and other activities. And the loop repeats.
+* At the top, the user gets data by buying it or spending $ to create it.
+* Then, they build an AI model from the data.
+* Then they make predictions. E.g. “ETH will rise in next 5 minutes”
+* Then, they choose actions. E.g. “buy ETH”.
+* In executing these actions, they data scientist (or org) will make $ on average.
+* The $ earned is put back into buying more data, and other activities. And the loop repeats.
 
 In this loop, dapp builders can help their users make money; data scientists can earn directly; and crypto enthusiasts can catalyze the first two if incentivized properly (e.g. to curate valuable data).
 
@@ -64,14 +64,13 @@ We analyzed dozens of possible verticals with according to these criteria. For a
 
 Here are some examples.
 
-- **Small $, slow**. Traditional music is small $ and slow, because incumbents like Universal dominate by controlling the back catalogue.
-- **Large $, slow**. Medicine is large $ but slow, due to the approval process.
-Small $, fast. Decentralized music is fast but small $ (for now! Fingers crossed).
+* **Small $, slow**. Traditional music is small $ and slow, because incumbents like Universal dominate by controlling the back catalogue.
+* **Large $, slow**. Medicine is large $ but slow, due to the approval process. Small $, fast. Decentralized music is fast but small $ (for now! Fingers crossed).
 
 **We want: large $, fast.** Here are the standouts.
 
-- **Decentralized Finance (DeFi)** is a great fit. One can loop at the speed of blocks (or faster), and trade volumes have serious $.
-- **LLMs and modern AI** is close: one can loop quickly, and with the right application make $. The challenge is: what’s the right application?
+* **Decentralized Finance (DeFi)** is a great fit. One can loop at the speed of blocks (or faster), and trade volumes have serious $.
+* **LLMs and modern AI** is close: one can loop quickly, and with the right application make $. The challenge is: what’s the right application?
 
 ### Project Criteria
 
@@ -80,8 +79,7 @@ We encourage you - as a builder - to choose projects that close the data value-c
 We follow our advice for internal projects too. Predictoor, Data Farming, and DeFi-oriented data challenges are standout examples.
 
 ### Summary
+
 To sustain and thrive in the open data economy: make money!
 
 Do this by closing the data value-creation loop, in a vertical / opportunity where you can loop quickly and the $ opportunity is large.
-
-

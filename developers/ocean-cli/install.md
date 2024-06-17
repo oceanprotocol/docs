@@ -1,4 +1,4 @@
-# Installation and Configuration 🛠️
+# Install
 
 To get started with the Ocean CLI, follow these steps for a seamless setup:
 
@@ -30,26 +30,26 @@ npm run build
 
 Now, let's configure the environment variables required for the CLI to function effectively. 🚀
 
-
 ## Setting Environment Variables 🌐
 
 To successfully configure the CLI tool, two essential steps must be undertaken: the setting of the account's private key and the definition of the desired RPC endpoint. These actions are pivotal in enabling the CLI tool to function effectively.
 
 ### Private Key Configuration
 
-The CLI tool requires the configuration of the account's 'private key'(by exporting env "PRIVATE_KEY") or a 'mnemonic'(by exporting env "MNEMONIC").
-Both serve as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool. You must choose either one option or the other. The tool will not utilize both simultaneously.
+The CLI tool requires the configuration of the account's 'private key'(by exporting env "PRIVATE\_KEY") or a 'mnemonic'(by exporting env "MNEMONIC"). Both serve as the means by which the CLI tool establishes a connection to the associated wallet. It plays a crucial role in authenticating and authorizing operations performed by the tool. You must choose either one option or the other. The tool will not utilize both simultaneously.
 
 ```bash
 export PRIVATE_KEY="XXXX"
 ```
-or 
+
+or
 
 ```bash
 export MNEMONIC="XXXX"
 ```
 
 ### RPC Endpoint Specification
+
 Additionally, it is imperative to specify the RPC endpoint that corresponds to the desired network for executing operations. The CLI tool relies on this user-provided RPC endpoint to connect to the network required for its functions. This connection to the network is vital as it enables the CLI tool to interact with the blockchain and execute operations seamlessly.
 
 ```bash
@@ -72,6 +72,6 @@ To explore the commands and option flags available in the Ocean CLI, simply run 
 npm run cli h
 ```
 
-<figure><img src="../../.gitbook/assets/cli/usage.png" alt=""><figcaption>Available CLI commands & options</figcaption></figure>
+<figure><img src="../../.gitbook/assets/usage.png" alt=""><figcaption><p>Available CLI commands &#x26; options</p></figcaption></figure>
 
 With the Ocean CLI successfully installed and configured, you're ready to dive into its capabilities and unlock the full potential of Ocean Protocol. If you encounter any issues during the setup process or have questions, feel free to seek assistance from the [support](https://discord.com/invite/TnXjkR5) team. 🌊

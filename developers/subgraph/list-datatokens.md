@@ -4,17 +4,15 @@ description: 'Discover the World of datatokens: Retrieving a List of datatokens'
 
 # Get datatokens
 
-With your newfound knowledge of fetching data NFTs and retrieving the associated information, fetching a list of datatokens will be a breeze :ocean:. Building upon your understanding, let's now delve into the process of retrieving a  list of datatokens. By applying similar techniques and leveraging the power of GraphQL queries, you'll be able to effortlessly navigate the landscape of datatokens and access the wealth of information they hold. So, let's dive right in and unlock the potential of exploring datatokens with ease and efficiency.
+With your newfound knowledge of fetching data NFTs and retrieving the associated information, fetching a list of datatokens will be a breeze :ocean:. Building upon your understanding, let's now delve into the process of retrieving a list of datatokens. By applying similar techniques and leveraging the power of GraphQL queries, you'll be able to effortlessly navigate the landscape of datatokens and access the wealth of information they hold. So, let's dive right in and unlock the potential of exploring datatokens with ease and efficiency.
 
-
-
-_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](README.md#ocean-subgraph-deployments)_._
+_PS: In this example, the query is executed on the Ocean subgraph deployed on the mainnet. If you want to change the network, please refer to_ [_this table_](./#ocean-subgraph-deployments)_._
 
 {% tabs %}
 {% tab title="Javascript" %}
 The javascript below can be used to run the query. If you wish to change the network, replace the variable's value `network` as needed.
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 var axios = require('axios');
 
 const query = `{

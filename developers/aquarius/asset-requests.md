@@ -27,7 +27,7 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquariu
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 const did = 'did:op:ce3f161fb98c64a2ded37fd34e25f28343f2c88d0c8205242df9c621770d4b3b'
 const response = await axios(`https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/ddo/${did}`)
@@ -65,7 +65,7 @@ curl --location --request GET 'https://v4.aquarius.oceanprotocol.com/api/aquariu
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 const did = 'did:op:ce3f161fb98c64a2ded37fd34e25f28343f2c88d0c8205242df9c621770d4b3b'
 const response = await axios(`https://v4.aquarius.oceanprotocol.com/api/aquarius/assets/metadata/${did}`)
@@ -106,7 +106,7 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const body =  {didList : ["did:op:cd086344c275bc7c560e91d472be069a24921e73a2c3798fb2b8caadf8d245d6", "did:op:ce3f161fb98c64a2ded37fd34e25f28343f2c88d0c8205242df9c621770d4b3b"]}
@@ -148,7 +148,7 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const body =  { "query": { "match_all": { } } }
@@ -189,7 +189,7 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const body =        {
@@ -263,7 +263,7 @@ curl --location --request POST 'https://v4.aquarius.oceanprotocol.com/api/aquari
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const axios = require('axios')
 
 const body = { "transactionId": "0x945596edf2a26d127514a78ed94fea86b199e68e9bed8b6f6d6c8bb24e451f27", "logIndex": 0}
@@ -272,4 +272,3 @@ console.log(response.status)
 console.log(response.data)
 
 ```
-

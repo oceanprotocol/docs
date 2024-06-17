@@ -1,4 +1,4 @@
-# Publish a Dataset 📤
+# Publish
 
 Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. The flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐
 
@@ -78,6 +78,6 @@ Now, let's run the command to publish the dataset:
 npm run cli publish metadata/simpleDownloadDataset.json
 ```
 
-<figure><img src="../../.gitbook/assets/cli/publish.png" alt=""><figcaption>Publish dataset</figcaption></figure>
+<figure><img src="../../.gitbook/assets/publish (1).png" alt=""><figcaption><p>Publish dataset</p></figcaption></figure>
 
 Executing this command will initiate the dataset publishing process, making your dataset accessible and discoverable on the Ocean Protocol network. 🌊

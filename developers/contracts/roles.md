@@ -1,5 +1,4 @@
 ---
-title: Data NFTs and datatoken roles
 description: >-
   The permissions stored on chain in the contracts control the access to the
   data NFT (ERC721) and datatoken (ERC20) smart contract functions.
@@ -17,13 +16,13 @@ The NFT owner is the owner of the base-IP and is therefore at the highest level.
 
 ## Roles-NFT level
 
-<figure><img src="../../.gitbook/assets/contracts/roles_nft_level.png" alt=""><figcaption><p>Roles at the data NFT level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/roles_nft_level.png" alt=""><figcaption><p>Roles at the data NFT level</p></figcaption></figure>
 
 {% hint style="info" %}
 With the exception of the NFT owner role, all other roles can be assigned to multiple users.
 {% endhint %}
 
-There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../../data-scientists/ocean.py/README.md) and [ocean.js](../ocean.js/README.md) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
+There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](https://github.com/oceanprotocol/docs/blob/main/data-scientists/ocean.py) and [ocean.js](https://github.com/oceanprotocol/docs/blob/main/developers/ocean.js) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
 
 Alternatively, for a more straightforward solution that doesn't require coding, you can utilize the network explorer of your asset's network. By accessing the network explorer, you can directly interact with the contracts associated with your asset. Below, we provide a few examples to help guide you through the process.
 
@@ -63,7 +62,6 @@ function removeManager(address _managerAddress) external onlyNFTOwner {
 The **manager** can assign or revoke three main roles (**deployer, metadata updater, and store updater**). The manager is also able to call any other contract (ERC725X implementation).
 
 {% embed url="https://app.arcade.software/share/qC8QpkLsFIQk3NxPzB8p" fullWidth="false" %}
-{% endembed %}
 
 ### Metadata Updater
 
@@ -255,7 +253,7 @@ function addMultipleUsersToRoles(address[] memory addresses, RolesType[] memory 
 
 ## Roles-datatokens level
 
-<figure><img src="../../.gitbook/assets/contracts/roles_datatokens_level.png" alt=""><figcaption><p>Roles at the datatokens level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/roles_datatokens_level.png" alt=""><figcaption><p>Roles at the datatokens level</p></figcaption></figure>
 
 ### Minter
 
@@ -294,7 +292,6 @@ function removeMinter(address _minter) external onlyERC20Deployer {
 </details>
 
 {% embed url="https://app.arcade.software/share/OHlwsPbf29S1PLh03FM7" fullWidth="false" %}
-{% endembed %}
 
 ### Fee Manager
 

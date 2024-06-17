@@ -1,6 +1,4 @@
 ---
-title: Compute Options
-section: developers
 description: Specification of compute options for assets in Ocean Protocol.
 ---
 

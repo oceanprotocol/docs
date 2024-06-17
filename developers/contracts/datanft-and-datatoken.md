@@ -1,5 +1,4 @@
 ---
-title: Data NFTs and Datatokens
 description: >-
   In Ocean Protocol, ERC721 data NFTs represent holding the copyright/base IP of
   a data asset, and ERC20 datatokens represent licenses to access the assets.
@@ -7,7 +6,7 @@ description: >-
 
 # Data NFTs and Datatokens
 
-<figure><img src="../../.gitbook/assets/architecture/DataNFT&Datatokens.png" alt=""><figcaption><p>Data NFTs and Datatokens</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DataNFT&#x26;Datatokens.png" alt=""><figcaption><p>Data NFTs and Datatokens</p></figcaption></figure>
 
 In summary: A [**data NFT**](data-nfts.md) serves as a **representation of the copyright** or exclusive license for a data asset on the blockchain, known as the [**base IP**](../../discover/glossary.md). **Datatokens**, on the other hand, function as a crucial mechanism for **decentralized access** to data assets.
 
@@ -26,7 +25,7 @@ For a more comprehensive exploration of intellectual property and its practical 
 * In step 1, Alice **publishes** her dataset with Ocean: this means deploying an ERC721 data NFT contract (claiming copyright/base IP), then an ERC20 datatoken contract (license against base IP). Then Alice mints an ERC20 datatokens
 * In step 2, Alice **transfers** 1.0 of them to Bob's wallet; now he has a license to be able to download that dataset.
 
-<figure><img src="../../.gitbook/assets/architecture/datanfts_and_datatokens_flow.png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/datanfts_and_datatokens_flow.png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
 
 What happends under the hood? 🤔
 
@@ -50,7 +49,7 @@ The smart contracts publishing includes the following steps:
 
 Below is a visual representation that illustrates the flow:
 
-<figure><img src="../../.gitbook/assets/contracts/publish_detailed_flow.png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/publish_detailed_flow.png" alt=""><figcaption><p>Data NFT &#x26; Datatokens flow</p></figcaption></figure>
 
 We have some awesome hands-on experience when it comes to publishing a data NFT and minting datatokens.
 

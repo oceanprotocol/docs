@@ -16,7 +16,7 @@ b'0x04b2bfab1f4e...7ed0573'
 
 #### Javascript Example
 
-```runkit  nodeVersion="18.x.x"
+```runkit nodeVersion="18.x.x"
 const fetch = require('cross-fetch')
 
 const data = "test"
@@ -89,8 +89,6 @@ decryptAsset(payload);
 
 ```
 {% endcode %}
-
-
 
 Example response:
 

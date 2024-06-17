@@ -8,7 +8,7 @@ The core job of Aquarius is to continually look out for new metadata being creat
 
 Aquarius has its own interface (API) that allows you to easily query this metadata. With Aquarius, you don't need to do the time-consuming task of scanning the data chains yourself. It offers you a convenient shortcut to the information you need. It's ideal for when you need a search feature within your dApp.
 
-<figure><img src="../../.gitbook/assets/components/aquarius.png" alt=""><figcaption><p>Aquarius high level overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aquarius.png" alt=""><figcaption><p>Aquarius high level overview</p></figcaption></figure>
 
 ### What does Aquarius do?
 

@@ -1,5 +1,4 @@
 ---
-title: Fine-Grained Permissions
 description: >-
   Fine-Grained Permissions Using Role-Based Access Control. You can Control who
   can publish, buy or browse data
