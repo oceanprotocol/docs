@@ -25,13 +25,17 @@ These libraries include [Ocean.js](ocean.js), a JavaScript library, and [Ocean.p
 1. [Ocean.js](ocean.js): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building dApps, and exploring data sets within a decentralized environment.
 2. [Ocean.py](../data-scientists/ocean.py): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers and [data scientists](../data-scientists/) can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling you to harness the power of decentralized data.
 
-#### Middleware components
+#### Ocean Node
 
-Additionally, in supporting the discovery process, middleware components come into play:
+Ocean Node is a single component which runs all core middleware services within the Ocean stack. It replaces the roles of Aquarius, Provider and the Subgraph.&#x20;
 
-1. [Aquarius](old-infrastructure/aquarius/): Aquarius acts as a metadata cache, enhancing search efficiency by caching on-chain data into Elasticsearch. By accelerating metadata retrieval, Aquarius enables faster and more efficient data discovery.
-2. [Provider](old-infrastructure/provider/): The Provider component plays a crucial role in facilitating various operations within the ecosystem. It assists in asset downloading, handles [DDO](ddo-specification.md) (Decentralized Data Object) encryption, and establishes communication with the operator-service for Compute-to-Data jobs. This ensures secure and streamlined interactions between different participants.
-3. [Subgraph](old-infrastructure/subgraph/): The Subgraph is an off-chain service that utilizes GraphQL to offer efficient access to information related to datatokens, users, and balances. By leveraging the subgraph, data retrieval becomes faster compared to an on-chain query. This enhances the overall performance and responsiveness of applications that rely on accessing this information.
+#### Old components
+
+Previously Ocean used the following middleware components:
+
+1. [Aquarius](old-infrastructure/aquarius/)
+2. [Provider](old-infrastructure/provider/)
+3. [Subgraph](old-infrastructure/subgraph/)
 
 #### Compute-to-Data
 
