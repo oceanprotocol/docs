@@ -14,6 +14,8 @@ The Node stack is divided into the following layers:
 * Components layer (Indexer, Provider)
 * Modules layer
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Ocean Node Infrastructure diagram</p></figcaption></figure>
+
 ### Features
 
 * libp2p supports ECDSA key pairs, and node identity should be defined as a public key.
