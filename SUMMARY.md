@@ -27,6 +27,7 @@
   * [Architecture Overview](developers/architecture.md)
   * [Ocean Node](developers/ocean-node/README.md)
     * [Node Architecture](developers/ocean-node/node-architecture.md)
+  * [Compute-to-data (C2D)](developers/compute-to-data-c2d.md)
   * [Page 1](developers/page-1.md)
   * [Contracts](developers/contracts/README.md)
     * [Data NFTs](developers/contracts/data-nfts.md)

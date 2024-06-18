@@ -1,5 +1,5 @@
 ---
-description: Monetise your data while preserving privacy
+description: Compute to data version 2 (C2dv2)
 ---
 
 # Compute to data
@@ -29,14 +29,14 @@ We suggest reading these guides to get an understanding of how compute-to-data w
 
 ### User Guides
 
-* [How to write compute to data algorithms](broken-reference)
-* [How to publish a compute-to-data algorithm](broken-reference)
-* [How to publish a dataset for compute to data](broken-reference)
+* [How to write compute to data algorithms](broken-reference/)
+* [How to publish a compute-to-data algorithm](broken-reference/)
+* [How to publish a dataset for compute to data](broken-reference/)
 
 ### Developer Guides
 
 * [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
-* [How to use compute to data with ocean.py](../../data-scientists/ocean.py/)
+* [How to use compute to data with ocean.py](../../data-scientists/ocean.py)
 
 ### Infrastructure Deployment Guides
 

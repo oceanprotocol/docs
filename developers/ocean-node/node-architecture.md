@@ -14,7 +14,7 @@ The Node stack is divided into the following layers:
 * Components layer (Indexer, Provider)
 * Modules layer
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Ocean Node Infrastructure diagram</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ocean Node Infrastructure diagram</p></figcaption></figure>
 
 ### Features
 
