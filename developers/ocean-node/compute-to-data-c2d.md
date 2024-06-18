@@ -129,7 +129,7 @@ Pod-Publishing -> Ocean-node: call c2dJobPublishResult
 Pod-Publishing -> Ocean-node: call c2dJobStatusUpdate
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>C2Dv2 flow diagram</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>C2Dv2 flow diagram</p></figcaption></figure>
 
 #### Kubernetes Engine
 
