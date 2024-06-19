@@ -138,3 +138,14 @@ redirects:
     predictoor/pdr-parameters: predictoor/README.md
     predictoor/pdr-faq: predictoor/README.md
     predictoor/pdr-resources: predictoor/README.md
+    data-farming/claim-rewards: data-farming/README.md
+    data-farming/reward-schedule: data-farming/README.md
+    data-farming/apys/: data-farming/README.md
+    data-farming/apys/estimated-apy-vs-time: data-farming/README.md
+    data-farming/apys/guide-to-estimating-apy: data-farming/README.md
+    data-farming/passive-df-and-veocean/: data-farming/README.md
+    data-farming/passive-df-and-veocean/guide-to-passive-df: data-farming/README.md
+    data-farming/passive-df-and-veocean/liquid-staking: data-farming/README.md
+    data-farming/volume-df/: data-farming/README.md
+    data-farming/volume-df/delegation-in-volume-df: data-farming/README.md
+    data-farming/volume-df/guide-to-volume-df: data-farming/README.md
