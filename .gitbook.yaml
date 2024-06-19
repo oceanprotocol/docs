@@ -149,3 +149,5 @@ redirects:
     data-farming/volume-df/: data-farming/README.md
     data-farming/volume-df/delegation-in-volume-df: data-farming/README.md
     data-farming/volume-df/guide-to-volume-df: data-farming/README.md
+    data-farming/predictoor-df/: data-farming/predictoordf.md
+    data-farming/predictoor-df/guide-to-predictoor-df: data-farming/predictoordf-guide.md
