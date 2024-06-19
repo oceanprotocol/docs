@@ -1,2 +1,0 @@
-# Delegation in Volume DF
-

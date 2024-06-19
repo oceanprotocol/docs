@@ -1,2 +1,0 @@
-# Passive DF (and veOCEAN)
-
