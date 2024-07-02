@@ -4,15 +4,9 @@ description: An overview of the available HTTP endpoints
 
 # HTTP Endpoints
 
-## Ocean Node HTTP Endpoints Overview
-
-### General Information
-
 Ocean Node is a core component of the Ocean Protocol ecosystem, enabling decentralized data exchange and management. Below is an overview of the available HTTP endpoints that provide various functionalities within the Ocean Node.
 
-### Endpoints
-
-#### Peer Management
+### Peer Management
 
 * **Get Ocean Peers**
   * **Method**: GET
@@ -27,7 +21,7 @@ Ocean Node is a core component of the Ocean Protocol ecosystem, enabling decentr
   * **Endpoint**: `/getP2PPeer`
   * **Description**: Retrieves information about a specific P2P peer.
 
-#### DID Management
+### DID Management
 
 * **Advertise DID**
   * **Method**: POST
@@ -38,7 +32,7 @@ Ocean Node is a core component of the Ocean Protocol ecosystem, enabling decentr
   * **Endpoint**: `/getProvidersForDid`
   * **Description**: Retrieves the list of providers for a specific DID.
 
-#### Command Broadcasting
+### Command Broadcasting
 
 * **Broadcast Command**
   * **Method**: POST
@@ -49,7 +43,7 @@ Ocean Node is a core component of the Ocean Protocol ecosystem, enabling decentr
   * **Endpoint**: `/directCommand`
   * **Description**: Sends a direct command to a specific peer.
 
-#### Logging
+### Logging
 
 * **Logs**
   * **Method**: POST
@@ -60,7 +54,7 @@ Ocean Node is a core component of the Ocean Protocol ecosystem, enabling decentr
   * **Endpoint**: `/log/:id`
   * **Description**: Retrieves a single log entry by its unique identifier.
 
-#### File Services
+### File Services
 
 * **File Information**
   * **Method**: POST
@@ -91,7 +85,7 @@ Ocean Node is a core component of the Ocean Protocol ecosystem, enabling decentr
   * **Endpoint**: `/api/services/download`
   * **Description**: Downloads a file.
 
-#### DDO Management
+### DDO Management
 
 * **Get DDO**
   * **Method**: GET
@@ -114,14 +108,14 @@ Ocean Node is a core component of the Ocean Protocol ecosystem, enabling decentr
   * **Endpoint**: `/api/aquarius/assets/ddo/validate`
   * **Description**: Validates a DDO.
 
-#### Indexer
+### Indexer
 
 * **Index Queue**
   * **Method**: GET
   * **Endpoint**: `/api/services/indexQueue`
   * **Description**: Retrieves the index queue.
 
-#### Compute Services
+### Compute Services
 
 * **Compute Environments**
   * **Method**: GET
