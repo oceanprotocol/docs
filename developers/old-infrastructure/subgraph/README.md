@@ -12,28 +12,28 @@ The [Ocean Subgraph](https://github.com/oceanprotocol/ocean-subgraph) is built o
 
 Imagine this 💭: if you were to always fetch data from the on-chain, you'd start to feel a little...old :older\_woman: Like your queries are stuck in a time warp. But fear not! When you embrace the power of the subgraph, data becomes your elixir of youth.
 
-<figure><img src="../../.gitbook/assets/components/subgraph.png" alt=""><figcaption><p>Ocean Subgraph </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/components/subgraph.png" alt=""><figcaption><p>Ocean Subgraph</p></figcaption></figure>
 
 The subgraph reads data from the blockchain, extracting relevant information. Additionally, it indexes events emitted from the Ocean smart contracts. This collected data is then made accessible to any decentralized applications (dApps) that require it, through GraphQL queries. The subgraph organizes and presents the data in a JSON format, facilitating efficient and structured access for dApps.
 
 ### How to use the Subgraph?
 
-You can utilize the Subgraph instances provided by Ocean Protocol or deploy your instance. Deploying your own instance allows you to have more control and customization options for your specific use case. To learn how to host your own Ocean Subgraph instance, refer to the guide available on the [Deploying Ocean Subgraph](../../infrastructure/deploying-ocean-subgraph.md) page.
+You can utilize the Subgraph instances provided by Ocean Protocol or deploy your instance. Deploying your own instance allows you to have more control and customization options for your specific use case. To learn how to host your own Ocean Subgraph instance, refer to the guide available on the [Deploying Ocean Subgraph](../../../infrastructure/deploying-ocean-subgraph.md) page.
 
 If you're eager to use the Ocean Subgraph, here's some important information for you: We've deployed an Ocean Subgraph for each of the supported networks. Take a look at the table below, where you'll find handy links to both the subgraph instance and GraphiQL for each network. With the user-friendly GraphiQL interface, you can execute GraphQL queries directly, without any additional setup. It's a breeze! :ocean:
 
 {% hint style="info" %}
-When it comes to fetching valuable information about [Data NFTs](../contracts/data-nfts.md) and [datatokens](../contracts/datatokens.md), the subgraph queries play a crucial role. They retrieve numerous details and information, but, the Subgraph cannot decrypt the DDO. But worry not, we have a dedicated component for that—[Aquarius](../aquarius/)! 🐬 Aquarius communicates with the provider and decrypts the encrypted information, making it readily available for queries.
+When it comes to fetching valuable information about [Data NFTs](../../contracts/data-nfts.md) and [datatokens](../../contracts/datatokens.md), the subgraph queries play a crucial role. They retrieve numerous details and information, but, the Subgraph cannot decrypt the DDO. But worry not, we have a dedicated component for that—[Aquarius](../aquarius/)! 🐬 Aquarius communicates with the provider and decrypts the encrypted information, making it readily available for queries.
 {% endhint %}
 
 ### Ocean Subgraph deployments
 
-| Network             | Subgraph URL                                                | GraphiQL URL                                                                                                    |
-| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Ethereum            | [Subgraph](https://v4.subgraph.mainnet.oceanprotocol.com)   | [GraphiQL](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)   |
-| Polygon             | [Subgraph](https://v4.subgraph.polygon.oceanprotocol.com/)  | [GraphiQL](https://v4.subgraph.polygon.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)   |
-| OP Mainnet(Optimism)| [Subgraph](https://v4.subgraph.optimism.oceanprotocol.com)  | [GraphiQL](https://v4.subgraph.optimism.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)  |
-| Sepolia             | [Subgraph](https://v4.subgraph.sepolia.oceanprotocol.com)    | [GraphiQL](https://v4.subgraph.sepolia.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)   |
+| Network              | Subgraph URL                                               | GraphiQL URL                                                                                                   |
+| -------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Ethereum             | [Subgraph](https://v4.subgraph.mainnet.oceanprotocol.com)  | [GraphiQL](https://v4.subgraph.mainnet.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)  |
+| Polygon              | [Subgraph](https://v4.subgraph.polygon.oceanprotocol.com/) | [GraphiQL](https://v4.subgraph.polygon.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)  |
+| OP Mainnet(Optimism) | [Subgraph](https://v4.subgraph.optimism.oceanprotocol.com) | [GraphiQL](https://v4.subgraph.optimism.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql) |
+| Sepolia              | [Subgraph](https://v4.subgraph.sepolia.oceanprotocol.com)  | [GraphiQL](https://v4.subgraph.sepolia.oceanprotocol.com/subgraphs/name/oceanprotocol/ocean-subgraph/graphql)  |
 
 {% hint style="warning" %}
 When making subgraph queries, please remember that the parameters you send, such as a datatoken address or a data NFT address, should be in **lowercase**. This is an essential requirement to ensure accurate processing of the queries. We kindly request your attention to this detail to facilitate a seamless query experience.
