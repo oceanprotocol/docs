@@ -13,3 +13,20 @@ The node is structured into three layers: the network layer for communication, t
 Flexibility and extensibility are key features of Ocean Node, allowing multiple compute engines, such as Docker and Kubernetes, to be managed within the same framework. The orchestration layer coordinates interactions between the core node and execution environments, ensuring the smooth operation of compute tasks.&#x20;
 
 For details on how to run a node see the [readme](https://github.com/oceanprotocol/ocean-node/) in the GitHub repository.
+
+#### Ocean Node replaces the Provider: <a href="#what-does-the-provider-do" id="what-does-the-provider-do"></a>
+
+* The Node is the only component that can access your data
+* It performs checks on-chain for buyer permissions and payments
+* Encrypts the URL and metadata during publish
+* Decrypts the URL when the dataset is downloaded or a compute job is started
+* Provides access to data assets by streaming data (and never the URL)
+* Provides compute services (connects to C2D environment)
+* Typically run by the Data owner
+
+#### Ocean Node replaces Aquarius: <a href="#what-does-aquarius-do" id="what-does-aquarius-do"></a>
+
+1. Acts as a cache for on-chain data. It stores the metadata from the smart contract events off-chain in a Typesense database.
+2. Monitors events: It continually checks for MetadataCreated and MetadataUpdated events, processing these events and updating them in the database.
+3. Serves as an API: It provides a REST API that fetches data from the off-chain datastore.
+4. Offers easy query access: The API provides a convenient method to access metadata without needing to scan the blockchain.
