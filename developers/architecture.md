@@ -31,6 +31,15 @@ Ocean Node is a single component which runs all core middleware services within 
 
 Ocean Node handles network communication through libp2p, supports secure data handling with  Trusted Execution Environments (TEE) and Multi-Party Computation (MPC), and enables flexible compute-to-data operations.&#x20;
 
+The functions of Ocean node include:
+
+* It is crucial in handling the asset downloads, it streams the purchased data directly to the buyer.
+* It conducts the permission an access checks during the consume flow.&#x20;
+* The Node handles [DDO](https://docs.oceanprotocol.com/developers/ddo-specification) (Decentralized Data Object) encryption.
+* It establishes communication with the operator-service for initiating Compute-to-Data jobs.
+* It provides a metadata cache, enhancing search efficiency by caching on-chain data into a Typesense database. This enables faster and more efficient data discovery.
+* It supports multiple chains.
+
 #### Old components
 
 Previously Ocean used the following middleware components:
