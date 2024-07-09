@@ -6,7 +6,7 @@ description: Ocean Protocol Architecture Adventure!
 
 Embark on an exploration of the innovative realm of Ocean Protocol, where data flows seamlessly and AI achieves new heights. Dive into the intricately layered architecture that converges data and services, fostering a harmonious collaboration. Let us delve deep and uncover the profound design of Ocean Protocol.🐬
 
-<figure><img src="../.gitbook/assets/architecture/architecture_overview.png" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
 
 ### Layer 1: The Foundational Blockchain Layer
 
