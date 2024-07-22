@@ -2,7 +2,7 @@
 
 Ocean Node is the core infrastructure component within the Ocean Protocol ecosystem, designed to facilitate decentralized data exchange and management. It operates by leveraging a multi-layered architecture that includes network, components, and modules layers.&#x20;
 
-Key features include secure peer-to-peer communication via libp2p, flexible and secure data storage solutions using Multi-Party Computation (MPC) and Trusted Execution Environments (TEE), and support for various Compute-to-Data (C2D) operations.&#x20;
+Key features include secure peer-to-peer communication via libp2p, flexible and secure encryption solutions, and support for various Compute-to-Data (C2D) operations.&#x20;
 
 Ocean Node's modular design allows for customization and scalability, enabling seamless integration of its core services—such as the Indexer for metadata management and the Provider for secure data transactions—ensuring robust and efficient decentralized data operations.
 
