@@ -29,7 +29,7 @@ These libraries include [Ocean.js](ocean.js), a JavaScript library, and [Ocean.p
 
 Ocean Node is a single component which runs all core middleware services within the Ocean stack. It replaces the roles of Aquarius, Provider and the Subgraph. It integrates the Indexer for metadata management and the Provider for secure data access. It ensures efficient and reliable interactions within the Ocean Protocol network.
 
-Ocean Node handles network communication through libp2p, supports secure data handling with  Trusted Execution Environments (TEE) and Multi-Party Computation (MPC), and enables flexible compute-to-data operations.&#x20;
+Ocean Node handles network communication through libp2p, supports secure data handling, and enables flexible compute-to-data operations.&#x20;
 
 The functions of Ocean node include:
 
