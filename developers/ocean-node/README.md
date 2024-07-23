@@ -26,8 +26,9 @@ For details on how to run a node see the [readme](https://github.com/oceanprotoc
 
 #### Ocean Node replaces Aquarius: <a href="#what-does-aquarius-do" id="what-does-aquarius-do"></a>
 
-* Acts as a cache for on-chain data. It stores the metadata from the smart contract events off-chain in a Typesense database.
-* Monitors events: It continually checks for MetadataCreated and MetadataUpdated events, processing these events and updating them in the database.
+* A new component called Indexer replaces the functionality of Aquarius.
+* The indexer acts as a cache for on-chain data. It stores the metadata from the smart contract events off-chain in a Typesense database.
+* It monitors events: It continually checks for MetadataCreated and MetadataUpdated events, processing these events and updating them in the database.
 * Serves as an API: It provides a REST API that fetches data from the off-chain datastore.
 * Offers easy query access: The API provides a convenient method to access metadata without scanning the blockchain.
 
