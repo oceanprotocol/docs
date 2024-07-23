@@ -85,10 +85,6 @@ A node that supports TEE should expose its proof in the status endpoint.
 
 With MPC encryption (both assets & files), other nodes should refuse to reassemble the private key if the node does not expose & pass the proof check.
 
-#### Database Storage Wrapper
-
-To be determined (TBD).
-
 #### Light Docker C2D
 
 Ocean C2D is flexible and scalable but has one major drawback: it requires Kubernetes.
