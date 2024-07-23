@@ -4,7 +4,7 @@ description: The new Ocean stack
 
 # Ocean Node
 
-Ocean Node is a vital part of the Ocean Protocol core technology stack. Ocean Node replaces the three previous components: [Provider](../old-infrastructure/provider/), [Aquarius](../old-infrastructure/aquarius/) and [subgraph](../old-infrastructure/subgraph/). It has been designed to significantly simplify the process of starting the Ocean stack - it runs everything you need with one simple command.
+Ocean Node is a vital part of the Ocean Protocol core technology stack. Ocean Node is a monorepo that replaces the three previous components: [Provider](../old-infrastructure/provider/), [Aquarius](../old-infrastructure/aquarius/) and [subgraph](../old-infrastructure/subgraph/). It has been designed to significantly simplify the process of starting the Ocean stack - it runs everything you need with one simple command.
 
 It integrates multiple services for secure and efficient data operations, utilizing technologies like libp2p for peer-to-peer communication and multi-party computation (MPC) for secure data handling. Its modular and scalable architecture supports various use cases, from simple data retrieval to complex compute-to-data (C2D) tasks.
 
