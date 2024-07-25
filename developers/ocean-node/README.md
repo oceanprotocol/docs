@@ -38,3 +38,13 @@ For details on how to run a node see the [readme](https://github.com/oceanprotoc
 * The data is indexed and updated in real-time.&#x20;
 * Providing an API which receives and responds to queries.
 * Simplifying the development experience for anyone building on Ocean.&#x20;
+
+
+
+### API
+
+For details on all of the HTTP endpoints exposed by the Ocean Node API, refer to the API.md file in the github repository.
+
+{% embed url="https://github.com/oceanprotocol/ocean-node/blob/develop/API.md" %}
+
+&#x20;
