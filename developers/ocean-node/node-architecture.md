@@ -54,7 +54,7 @@ An off-chain, multi-chain metadata & chain events cache. It continually monitors
 
 Features:
 
-* Monitors MetadataCreated & MetadataUpdated and stores DDOs.
+* Monitors MetadataCreated, MetadataUpdated, MetadataState and stores DDOs in the database.
 * Validates DDOs according to multiple SHACL schemas.
 * Provides proof for valid DDOs.
 * Monitors data token contracts & stores orders.
