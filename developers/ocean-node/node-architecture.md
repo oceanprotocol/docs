@@ -70,6 +70,10 @@ Features:
 * Provides access to data assets by streaming data (and never the URL).
 * Provides compute services.&#x20;
 * The node operator can charge provider fees, compensating the individuals or organizations operating their own node when users request assets.
-* Currently, we are providing the legacy Ocean C2D compute services (which run in Kubernetes) via the node. In the future, we will also allow connections to multiple C2D engines: light, Ocean C2D, and third parties.
+* Currently, we are providing the legacy Ocean C2D compute services (which run in Kubernetes) via the node. In the future, we will soon be releasing C2D V2 which will also allow connections to multiple C2D engines: light, Ocean C2D, and third parties.
+
+For more details on the C2D V2 architecture, refer to the documentation in the repository:&#x20;
+
+{% embed url="https://github.com/oceanprotocol/ocean-node/blob/develop/docs/C2DV2.md" %}
 
 ###
