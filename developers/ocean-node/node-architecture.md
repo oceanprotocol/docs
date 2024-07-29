@@ -1,6 +1,6 @@
 # Node Architecture
 
-Ocean Node is the core infrastructure component within the Ocean Protocol ecosystem, designed to facilitate decentralized data exchange and management. It operates by leveraging a multi-layered architecture that includes network, components, and modules layers.&#x20;
+Ocean Node is the core infrastructure component within the Ocean Protocol ecosystem, designed to facilitate decentralized data exchange and management. It operates by leveraging a multi-layered architecture that includes network, components, and module layers.&#x20;
 
 Key features include secure peer-to-peer communication via libp2p, flexible and secure encryption solutions, and support for various Compute-to-Data (C2D) operations.&#x20;
 
@@ -55,40 +55,21 @@ An off-chain, multi-chain metadata & chain events cache. It continually monitors
 Features:
 
 * Monitors MetadataCreated, MetadataUpdated, MetadataState and stores DDOs in the database.
-* Validates DDOs according to multiple SHACL schemas.
+* Validates DDOs according to multiple SHACL schemas. When hosting a node, you can provide your own SHACL schema or use the ones provided.
 * Provides proof for valid DDOs.
-* Monitors data token contracts & stores orders.
+* Monitors all transactions and events from the data token contracts. This includes minting tokens,  creating pricing schema (fixed & free pricing), and orders.
 * Allows queries for all the above.
 
 #### Provider
 
 * Performs checks on-chain for buyer permissions and payments.
+* The provider is crucial in checking that all the relevant fees have been paid before the consumer is able to download the asset. See the [Fees page](../contracts/fees.md) for details on all of the different types of fees.
 * Encrypts the URL and metadata during publishing.
 * Decrypts the URL when the dataset is downloaded or a compute job is started.
 * Encrypts/decrypts files before storage/while accessing.
 * Provides access to data assets by streaming data (and never the URL).
-* Provides compute services (connects to multiple C2D engines: light, Ocean C2D, third parties).
-
-### Modules
-
-#### MPC
-
-Instead of encrypting with a private key, we can leverage MPC to construct the key, which is used for encrypting & decrypting URL and file contents.
-
-#### TEE
-
-Once a URL is decrypted (based on a consume request), the node operator can log that URL, and thus the asset is compromised.
-
-We can move the entire encryption/decryption/MPC process to TEE, giving us full security regarding plain data.
-
-A node that supports TEE should expose its proof in the status endpoint.
-
-With MPC encryption (both assets & files), other nodes should refuse to reassemble the private key if the node does not expose & pass the proof check.
-
-#### Light Docker C2D
-
-Ocean C2D is flexible and scalable but has one major drawback: it requires Kubernetes.
-
-For edge nodes (e.g., installed in a car, or a weather station running on Raspberry Pi), we can have a light engine that only uses the Docker system installed on the host. All orchestration (creating & provisioning input volumes, publishing results) can be handled by this module, while only the actual algorithm job is leveraged to Docker, with locally provisioned folders mounted.
+* Provides compute services.&#x20;
+* The node operator can charge provider fees, compensating the individuals or organizations operating their own node when users request assets.
+* Currently, we are providing the legacy Ocean C2D compute services (which run in Kubernetes) via the node. In the future, we will also allow connections to multiple C2D engines: light, Ocean C2D, and third parties.
 
 ###
