@@ -47,4 +47,13 @@ For details on all of the HTTP endpoints exposed by the Ocean Node API, refer to
 
 {% embed url="https://github.com/oceanprotocol/ocean-node/blob/develop/API.md" %}
 
+### &#x20;Compute to Data (C2D)
+
+The Ocean node provides a convenient and easy way to run a compute-to-data environment. This gives you the opportunity to monetize your node as you can charge fees for using the C2D environment and there are also additional incentives provided Ocean Protocol Foundation (OPF). Soon we will also be releasing C2D V2 which will provide different environments and new ways to pay for computation.&#x20;
+
+
+
+For more details on the C2D V2 architecture, refer to the documentation in the repository: \
 &#x20;
+
+{% embed url="https://github.com/oceanprotocol/ocean-node/blob/develop/docs/C2DV2.md" %}
