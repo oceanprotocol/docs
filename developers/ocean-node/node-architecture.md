@@ -23,7 +23,6 @@ The Node stack is divided into the following layers:
   * Choose one node and use that private key to encrypt URLs (enterprise approach).
   * Choose several nodes, so your files can be accessed even if one node goes down (given at least one node is still alive).
   * Use MPC to divide the key among multiple nodes (so no one node has the entire key).
-* Protecting URLs during download: use a TEE enclave to decrypt the key (makes sense only for the MPC approach) and read content in the enclave.
 * Supports multiple C2D types:
   * Light Docker only (for edge nodes).
   * Ocean C2D (Kubernetes).
