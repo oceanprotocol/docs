@@ -85,7 +85,7 @@ To dive deeper, please go to [Data Scientists page](../data-scientists/).
 
 <summary>Earn Rewards via Data Farming</summary>
 
-Ocean's [Data Farming](../data-farming/) incentives program enables OCEAN holders to earn by locking OCEAN, and curating data.
+Ocean's [Data Farming](../data-farming/) incentives program rewards OCEAN to participants who make accurate predictions of the price directions of DeFi crypto tokens. Most of the activity happens on [Predictoor.ai](https://www.predictoor.ai/). Explore more [here](https://docs.oceanprotocol.com/data-farming/predictoordf)
 
 </details>
 
