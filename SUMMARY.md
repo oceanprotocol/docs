@@ -25,7 +25,7 @@
   * [Liquidity Pools \[deprecated\]](user-guides/remove-liquidity-pools.md)
 * [💻 Developers](developers/README.md)
   * [Architecture Overview](developers/architecture.md)
-  * [Ocean Node](developers/ocean-node/README.md)
+  * [Ocean Nodes](developers/ocean-node/README.md)
     * [Node Architecture](developers/ocean-node/node-architecture.md)
   * [Contracts](developers/contracts/README.md)
     * [Data NFTs](developers/contracts/data-nfts.md)

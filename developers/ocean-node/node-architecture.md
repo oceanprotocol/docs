@@ -1,6 +1,6 @@
 # Node Architecture
 
-Ocean Node is the core infrastructure component within the Ocean Protocol ecosystem, designed to facilitate decentralized data exchange and management. It operates by leveraging a multi-layered architecture that includes network, components, and module layers.&#x20;
+Ocean Nodes are the core infrastructure component within the Ocean Protocol ecosystem, designed to facilitate decentralized data exchange and management. It operates by leveraging a multi-layered architecture that includes network, components, and module layers.&#x20;
 
 Key features include secure peer-to-peer communication via libp2p, flexible and secure encryption solutions, and support for various Compute-to-Data (C2D) operations.&#x20;
 
@@ -14,7 +14,7 @@ The Node stack is divided into the following layers:
 * Components layer (Indexer, Provider)
 * Modules layer
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ocean Node Infrastructure diagram</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ocean Nodes Infrastructure diagram</p></figcaption></figure>
 
 ### Features
 

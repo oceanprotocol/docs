@@ -2,9 +2,9 @@
 description: The new Ocean stack
 ---
 
-# Ocean Node
+# Ocean Nodes
 
-Ocean Node is a vital part of the Ocean Protocol core technology stack. Ocean Node is a monorepo that replaces the three previous components: [Provider](../old-infrastructure/provider/), [Aquarius](../old-infrastructure/aquarius/) and [subgraph](../old-infrastructure/subgraph/). It has been designed to significantly simplify the process of starting the Ocean stack - it runs everything you need with one simple command.
+Ocean Nodes are a vital part of the Ocean Protocol core technology stack. The Ocean Nodes monorepo that replaces the three previous components: [Provider](../old-infrastructure/provider/), [Aquarius](../old-infrastructure/aquarius/) and [subgraph](../old-infrastructure/subgraph/). It has been designed to significantly simplify the process of starting the Ocean stack - it runs everything you need with one simple command.
 
 It integrates multiple services for secure and efficient data operations, utilizing technologies like libp2p for peer-to-peer communication and multi-party computation (MPC) for secure data handling. Its modular and scalable architecture supports various use cases, from simple data retrieval to complex compute-to-data (C2D) tasks.
 
@@ -14,7 +14,7 @@ Flexibility and extensibility are key features of Ocean Node, allowing multiple 
 
 For details on how to run a node see the [readme](https://github.com/oceanprotocol/ocean-node/) in the GitHub repository.
 
-#### Ocean Node replaces the Provider: <a href="#what-does-the-provider-do" id="what-does-the-provider-do"></a>
+#### Ocean Nodes replace the Provider: <a href="#what-does-the-provider-do" id="what-does-the-provider-do"></a>
 
 * The Node is the only component that can access your data
 * It performs checks on-chain for buyer permissions and payments
@@ -24,7 +24,7 @@ For details on how to run a node see the [readme](https://github.com/oceanprotoc
 * Provides compute services (connects to C2D environment)
 * Typically run by the Data owner
 
-#### Ocean Node replaces Aquarius: <a href="#what-does-aquarius-do" id="what-does-aquarius-do"></a>
+#### Ocean Nodes replace Aquarius: <a href="#what-does-aquarius-do" id="what-does-aquarius-do"></a>
 
 * A new component called Indexer replaces the functionality of Aquarius.
 * The indexer acts as a cache for on-chain data. It stores the metadata from the smart contract events off-chain in a Typesense database.
@@ -32,7 +32,7 @@ For details on how to run a node see the [readme](https://github.com/oceanprotoc
 * Serves as an API: It provides a REST API that fetches data from the off-chain datastore.
 * Offers easy query access: The API provides a convenient method to access metadata without scanning the blockchain.
 
-**Ocean Node replaces the Subgraph:**
+**Ocean Nodes replace the Subgraph:**
 
 * Indexing the data from the smart contact events.
 * The data is indexed and updated in real-time.&#x20;
@@ -43,13 +43,13 @@ For details on how to run a node see the [readme](https://github.com/oceanprotoc
 
 ### API
 
-For details on all of the HTTP endpoints exposed by the Ocean Node API, refer to the API.md file in the github repository.
+For details on all of the HTTP endpoints exposed by the Ocean Nodes API, refer to the API.md file in the github repository.
 
 {% embed url="https://github.com/oceanprotocol/ocean-node/blob/develop/API.md" %}
 
 ### &#x20;Compute to Data (C2D)
 
-The Ocean node provides a convenient and easy way to run a compute-to-data environment. This gives you the opportunity to monetize your node as you can charge fees for using the C2D environment and there are also additional incentives provided Ocean Protocol Foundation (OPF). Soon we will also be releasing C2D V2 which will provide different environments and new ways to pay for computation.&#x20;
+The Ocean nodes provide a convenient and easy way to run a compute-to-data environment. This gives you the opportunity to monetize your node as you can charge fees for using the C2D environment and there are also additional incentives provided Ocean Protocol Foundation (OPF). Soon we will also be releasing C2D V2 which will provide different environments and new ways to pay for computation.&#x20;
 
 
 
