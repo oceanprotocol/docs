@@ -1,8 +1,8 @@
 # Node Architecture
 
-Ocean Nodes are the core infrastructure component within the Ocean Protocol ecosystem, designed to facilitate decentralized data exchange and management. It operates by leveraging a multi-layered architecture that includes network, components, and module layers.&#x20;
+Ocean Nodes are the core infrastructure component within the Ocean Protocol ecosystem, designed to facilitate decentralized data exchange and management. It operates by leveraging a multi-layered architecture that includes network, components, and module layers.
 
-Key features include secure peer-to-peer communication via libp2p, flexible and secure encryption solutions, and support for various Compute-to-Data (C2D) operations.&#x20;
+Key features include secure peer-to-peer communication via libp2p, flexible and secure encryption solutions, and support for various Compute-to-Data (C2D) operations.
 
 Ocean Node's modular design allows for customization and scalability, enabling seamless integration of its core services—such as the Indexer for metadata management and the Provider for secure data transactions—ensuring robust and efficient decentralized data operations.
 
@@ -14,7 +14,7 @@ The Node stack is divided into the following layers:
 * Components layer (Indexer, Provider)
 * Modules layer
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ocean Nodes Infrastructure diagram</p></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/OceanNode-arhitecture.drawio.png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/OceanNode-arhitecture.drawio (light).png" alt=""></picture><figcaption><p>Ocean Nodes Infrastructure diagram</p></figcaption></figure>
 
 ### Features
 
@@ -55,7 +55,7 @@ Features:
 * Monitors MetadataCreated, MetadataUpdated, MetadataState and stores DDOs in the database.
 * Validates DDOs according to multiple SHACL schemas. When hosting a node, you can provide your own SHACL schema or use the ones provided.
 * Provides proof for valid DDOs.
-* Monitors all transactions and events from the data token contracts. This includes minting tokens,  creating pricing schema (fixed & free pricing), and orders.
+* Monitors all transactions and events from the data token contracts. This includes minting tokens, creating pricing schema (fixed & free pricing), and orders.
 * Allows queries for all the above.
 
 #### Provider
@@ -66,11 +66,11 @@ Features:
 * Decrypts the URL when the dataset is downloaded or a compute job is started.
 * Encrypts/decrypts files before storage/while accessing.
 * Provides access to data assets by streaming data (and never the URL).
-* Provides compute services.&#x20;
+* Provides compute services.
 * The node operator can charge provider fees, compensating the individuals or organizations operating their own node when users request assets.
 * Currently, we are providing the legacy Ocean C2D compute services (which run in Kubernetes) via the node. In the future, we will soon be releasing C2D V2 which will also allow connections to multiple C2D engines: light, Ocean C2D, and third parties.
 
-For more details on the C2D V2 architecture, refer to the documentation in the repository:&#x20;
+For more details on the C2D V2 architecture, refer to the documentation in the repository:
 
 {% embed url="https://github.com/oceanprotocol/ocean-node/blob/develop/docs/C2DV2.md" %}
 
