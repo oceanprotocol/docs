@@ -18,7 +18,7 @@ Ocean is a decentralized data exchange protocol to drive AI. Its core tech is:
 
 * [**Developers**](../developers/)**.** Build token-gated AI dApps & APIs
 * [**Data scientists**](../data-scientists/)**.** Earn via predictions & challenges
-* [**OCEAN holders**](../data-farming/)**.** Get rewards by locking OCEAN & curating data, via Data Farming.
+* [**OCEAN holders**](../data-farming/)**.** Earn rewards by running prediction bots on DeFi crypto tokens to accurately predict their price directions in 5 minutes and 1 Hour timeframe.
 * [**Ocean ambassadors**](https://oceanprotocol.com/explore/community)
 
 ### Quick Links
