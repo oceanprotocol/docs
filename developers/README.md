@@ -21,7 +21,7 @@ Example live dapps:
 ## How do developers start using Ocean?
 
 * **App level:** [**Use an Ocean Template**](https://oceanprotocol.com/templates).
-* **Library level:** [**Use ocean.js**](ocean.js/) is a library built for the key environment of dApp developers: JavaScript. Import it & use it your frontend or NodeJS.
+* **Library level:** [**Use ocean.js**](ocean.js) is a library built for the key environment of dApp developers: JavaScript. Import it & use it your frontend or NodeJS.
 * **Contract level:** [**Call Ocean contracts**](contracts/) on Eth mainnet [or other chains](../discover/networks/).
 
 ## Developer Docs Quick-links
@@ -31,11 +31,11 @@ Example live dapps:
 * Schemas: [Metadata](metadata.md), [identifiers/DIDs](identifiers.md), [identifier objects/DDOs](ddo-specification.md), [storage](storage.md), [fine-grained permissions](fg-permissions.md)
 * Components:
   * [Barge](barge/) - local chain for testing
-  * [Ocean subgraph](subgraph/) - grabbing event data from the chain
+  * [Ocean subgraph](old-infrastructure/subgraph/) - grabbing event data from the chain
   * [Ocean CLI](ocean-cli/) - command-line interface
   * [Compute-to-data](compute-to-data/) - practical privacy approach
-  * [Aquarius](aquarius/) - metadata cache
-  * [Provider](provider/) - handshaking for access control
+  * [Aquarius](old-infrastructure/aquarius/) - metadata cache
+  * [Provider](old-infrastructure/provider/) - handshaking for access control
 * [FAQ](dev-faq.md)
 
 ***
