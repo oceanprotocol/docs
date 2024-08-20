@@ -12,7 +12,7 @@ AI lives on data; Ocean facilitates it.
 
 Ocean has two specific parts:
 - A live tech stack. At the core is **Datatokens** and **Compute-to-Data**
-- A lively community. This includes **builders, data scientists, OCEAN holders**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
+- A lively community. This includes **builders, data scientists**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
 
 Let's drill into each.
 
@@ -50,7 +50,7 @@ Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of d
 
 <div align="center"><figure><img src="../.gitbook/assets/discover/builders.png" width="50%"></figure></div>
 
-The Ocean ecosystem also contains many data scientists and OCEAN holders, excited about the future of AI & data. You can find them doing predictions, data challenges, Data Farming, and more.
+The Ocean ecosystem also contains many data scientists and AI enthusiasts, excited about the future of AI & data. You can find them doing [predictions](https://www.predictoor.ai/), [data challenges](https://competitions.desights.ai/challenge/list), [Data Farming](https://docs.oceanprotocol.com/data-farming), and more.
 
 ## Community: Ocean Ambassadors
 
