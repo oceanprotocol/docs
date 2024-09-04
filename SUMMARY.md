@@ -14,7 +14,6 @@
   * [Basic concepts](user-guides/basic-concepts.md)
   * [Using Wallets](user-guides/wallets/README.md)
     * [Set Up MetaMask](user-guides/wallets/metamask-setup.md)
-    * [Manage Your OCEAN](user-guides/wallets/wallets-and-ocean.md)
   * [Host Assets](user-guides/asset-hosting/README.md)
     * [Uploader](user-guides/asset-hosting/uploader.md)
     * [Arweave](user-guides/asset-hosting/arweave.md)
