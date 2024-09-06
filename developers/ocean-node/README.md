@@ -14,6 +14,28 @@ Flexibility and extensibility are key features of Ocean Node, allowing multiple 
 
 For details on how to run a node see the [readme](https://github.com/oceanprotocol/ocean-node/) in the GitHub repository.
 
+However, your nodes must meet specific criteria in order to be eligible for incentives. Here’s what’s required:
+1) Public Accessibility: Nodes must have a public IP address
+2) API and P2P Ports: Nodes must expose both HTTP API and P2P ports to facilitate seamless communication within the network
+
+You can easily check the eligibility of the nodes by connecting to the [Ocean Nodes Dashboard](http://nodes.oceanprotocol.com/) and looking for the green status indicator next to your IP address
+
+Follow the steps to install the Node and be eligible for rewards-
+
+1) Find your public IP: You’ll need this for the configuration. You can easily find it by googling “my IP”
+2) Run the [Quickstart Guide](https://github.com/oceanprotocol/ocean-node/blob/main/docs/dockerDeployment.md): If you’ve already deployed a node, we recommend either redeploying with the guide or ensuring that your environment variables are correct and you’re running the latest version
+3) Get your Node ID: After starting the node, you can retrieve the ID from the console
+
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/0*BKLTEYu92MX1Q6BW.png)
+
+4) Expose Your Node to the Internet:
+From a different device, check if your node is accessible by running -
+telnet{your ip}{P2P_ipV4BindTcpPort}
+
+2. To forward the node port, please follow the instructions provided by your router manufacturer — ex: [Asus](https://www.asus.com/support/faq/1037906/), [TpLink](https://www.tp-link.com/en/support/faq/1379/), [Huawei](https://consumer.huawei.com/en/support/content/en-us15806329/), [Mercusys](https://www.mercusys.com/ro/faq-121) etc.
+
+Verify eligibility on the Ocean Node Dashboard: Check https://nodes.oceanprotocol.com/ and search for your peerID to ensure your node is correctly configured.
+
 #### Ocean Nodes replace the Provider: <a href="#what-does-the-provider-do" id="what-does-the-provider-do"></a>
 
 * The Node is the only component that can access your data
