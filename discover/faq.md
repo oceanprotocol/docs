@@ -64,31 +64,22 @@ To be fully decentralized means no single point of control, at any level of the 
 ## About OCEAN
 
 <details>
+<summary>What is ASI token and what it's major usecase?</summary>
+In late March, Ocean Protocol, Singularity NET & Fetch.ai joined forces to form Superintelligence Alliance and announced a token meger, combining OCEAN, FET,& AGIX into a single ASI. ASI token will fund the Superintelligence Alliance's mission to build decentralized Artificial Superintelligence (ASI) for the benefit of humanity. We're focused on developing decentralized AI tools for today's business and retail applications, while also securing decentralized compute power for the future of AI. 
+  
+</details>
+
+<details>
 <summary>How is OCEAN used? How does it capture value?</summary>
 
-OCEAN has mechanics to increase demand and reduce supply.
+OCEAN token major usage is currently in Predictoor DF i.e. rewarding Predictoors who perform predictions on DeFi token price feeds to predict the price directions of Defi token feeds. To know more about this, navigate [here](https://docs.oceanprotocol.com/data-farming)
 
-OCEAN is used to stake on data for curation, to buy & sell data, and more. The [OCEAN page](https://www.oceanprotocol.com/token) has details. Usage drives demand.
-
-OCEAN can be locked into veOCEAN; veOCEAN holders receive Data Farming rewards. The rewards increase demand for OCEAN; and locking veOCEAN reduces near-term supply of OCEAN.
-
-For each consume transaction, a small fee goes to the Ocean community, which in turn goes to buy back OCEAN and burn it (buy-and-burn). This reduces supply permanently.
 </details>
 
 <details>
 <summary>What is the total supply of OCEAN?</summary>
 
 1.41 Billion OCEAN.
-</details>
-
-<details>
-<summary>What is the circulating supply of OCEAN? What is the emission schedule for OCEAN?</summary>
-
-All OCEAN have been [minted](https://blog.oceanprotocol.com/control-over-the-ocean-contract-to-be-revoked-soon-overview-6c5b15be2db).
-
-There are more than 540 million OCEAN in circulation; the [OCEAN page](https://oceanprotocol.com/about-us/ocean-token) has the precise number.
-
-The remaining tokens emit over decades, mostly for Ocean Data Farming. The [Emissions & APYs page](../data-farming/apys-guide.md) has details.
 </details>
 
 <details>
