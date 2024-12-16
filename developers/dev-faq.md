@@ -55,7 +55,7 @@ An Ocean faucet is a site to get (fake) OCEAN for use on a given testnet. There'
 <details>
 <summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
 
-Please follow this [tutorial](../discover/networks/bridges#bnb-smart-chain-bridge) to bridge from/to BNB Smart Chain. Please double-check the addresses and make sure you are using the right smart contracts.
+Please follow this [tutorial](https://x.com/ASI_Alliance/status/1848393597722165429) to bridge from/to BNB Smart Chain. Please double-check the addresses and make sure you are using the right smart contracts.
 </details>
 
 <details>
