@@ -65,7 +65,7 @@ To be fully decentralized means no single point of control, at any level of the 
 
 <details>
 <summary>What is ASI token and what it's major usecase?</summary>
-In late March, Ocean Protocol, Singularity NET & Fetch.ai joined forces to form Superintelligence Alliance and announced a token meger, combining OCEAN, FET,& AGIX into a single ASI. ASI token will fund the Superintelligence Alliance's mission to build decentralized Artificial Superintelligence (ASI) for the benefit of humanity. We're focused on developing decentralized AI tools for today's business and retail applications, while also securing decentralized compute power for the future of AI. 
+In late March, Ocean Protocol, Singularity NET & Fetch.ai joined forces to form Superintelligence Alliance and announced a token merger, combining OCEAN, FET,& AGIX into a single ASI. ASI token will fund the Superintelligence Alliance's mission to build decentralized Artificial Superintelligence (ASI) for the benefit of humanity. We're focused on developing decentralized AI tools for today's business and retail applications, while also securing decentralized compute power for the future of AI. 
   
 </details>
 
