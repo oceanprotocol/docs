@@ -16,7 +16,6 @@ In the blockchain world, a wallet is a software program that stores cryptocurren
 
 * **Easiest:** Use the [MetaMask](https://metamask.io/) browser plug-in.
 * **Still easy, but more secure:** Get a [Trezor](https://trezor.io/) or [Ledger](https://www.ledger.com/) hardware wallet, and use MetaMask to interact with it.
-* The [token page](https://oceanprotocol.com/token) at oceanprotocol.com lists some other possible wallets.
 
 ### Related Terminology
 
