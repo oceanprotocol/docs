@@ -11,7 +11,7 @@ description: >-
 
 **Predictoor DF** is a DF stream that amplifies predictoors’ earnings, via extra sales to Ocean Predictoor data feeds.
 
-Predictoor DF has 37,500 OCEAN weekly rewards (ongoing) and 20,000 ROSE weekly rewards (throughout 2024).
+Predictoor DF has 3,750 OCEAN weekly rewards (ongoing).
 
 ## Introduction
 
@@ -25,21 +25,10 @@ You should be familiar with both Predictoor and DF before reading on.
 
 Predictoor DF started counting on Nov 9, 2023, at the beginning of Data Farming Round 63 (DF63). It runs indefinitely.
 
-## Predictoor DF Rewards
-
-Predictoor DF has two components: [OCEAN](https://oceanprotocol.com/about-us/ocean-token) rewards and [Oasis ROSE](https://www.coingecko.com/en/coins/oasis-network) rewards.
-
-### OCEAN Rewards
+## Predictoor DF OCEAN Rewards
 
 - A special “DF buyer” bot purchases Predictoor feeds. It started operating on Nov 9, 2023. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are  feeds: 10 x 5min, 10 x 1h.)
-- The OCEAN comes from the Ocean DF budget, and specifically, the Active DF budget.
-
-### ROSE Rewards
-
-- Payout happens on Mondays, 4 days after the end of the DF round. 
-- ⚠️ To be counted for ROSE rewards of a given DF round, you must claim your OCEAN rewards for that DF round. See  [Predictoor DF user guide](predictoordf-guide.md).
-- Payout for a given predictoor is pro-rata to the net earnings of that predictoor over that DF round, specifically (total sales $ to the predictoor) minus (predictoor stake slashed due to being wrong).
-- The ROSE comes from a generous contribution of[ Oasis Protocol Foundation](https://oasisprotocol.org/) 👪🙏.
+- The [OCEAN](https://www.coingecko.com/en/coins/ocean-protocol) comes from the Ocean DF budget, and specifically, the Active DF budget.
 
 
 ## How to Earn $ Via Predictoor DF
