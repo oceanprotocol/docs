@@ -29,9 +29,8 @@ We suggest reading these guides to get an understanding of how compute-to-data w
 
 ### User Guides
 
-* [How to write compute to data algorithms](broken-reference/)
-* [How to publish a compute-to-data algorithm](broken-reference/)
-* [How to publish a dataset for compute to data](broken-reference/)
+* [How to write & Publish compute to data algorithms](https://docs.oceanprotocol.com/developers/compute-to-data/compute-to-data-algorithms)
+* [How to publish a dataset for compute to data](https://docs.oceanprotocol.com/developers/compute-to-data/compute-workflow)
 
 ### Developer Guides
 
