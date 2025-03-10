@@ -28,6 +28,7 @@ Predictoor DF started counting on Nov 9, 2023, at the beginning of Data Farming 
 ## Predictoor DF OCEAN Rewards
 
 - A special “DF buyer” bot purchases Predictoor feeds. It started operating on Nov 9, 2023. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are  feeds: 10 x 5min, 10 x 1h.)
+- Payout for a given predictoor is pro-rata to the net earnings of that predictoor over that DF round, specifically (total sales $ to the predictoor) minus (predictoor stake slashed due to being wrong) and Payout happens on Mondays, 4 days after the end of the DF round.
 - The [OCEAN](https://www.coingecko.com/en/coins/ocean-protocol) comes from the Ocean DF budget, and specifically, the Active DF budget.
 
 
