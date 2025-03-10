@@ -17,7 +17,7 @@ Predictoor DF has 3,750 [OCEAN](https://www.coingecko.com/en/coins/ocean-protoco
 
 **[Ocean Predictoor](../predictoor/README.md)** data feeds predict whether BTC, ETH etc will rise or fall 5min or 1h into the future. These feeds are crowdsourced by “predictoors”: people running AI-powered prediction bots.
 
-**[Data Farming (DF)](../data-farming/README.md)** is Ocean’s incentive program, that rewards OCEAN to people who make predictions.
+**[Data Farming (DF)](../data-farming/README.md)** is Ocean’s incentive program, that rewards OCEAN to people who make crypto price predictions.
 
 You should be familiar with both Predictoor and DF before reading on.
 
