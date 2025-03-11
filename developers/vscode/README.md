@@ -29,7 +29,7 @@ VS Code 1.96.0 or higher
 - Check the output channels for detailed logs.
 - For further assistance, refer to the Ocean Protocol documentation or join the Discord community.
 
-## Optional Setup
+### Optional Setup
 
 - Custom Compute Node: Enter your own node URL or use the default Ocean Protocol node
 - Wallet Integration: Use auto-generated wallet or enter private key for your own wallet
