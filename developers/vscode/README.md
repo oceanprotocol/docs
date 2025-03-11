@@ -1,37 +1,47 @@
 # Ocean Protocol VSCode Extension
 
-The Ocean Protocol VSCode extension enables you to run compute jobs seamlessly within Visual Studio Code using Ocean Protocol's secure compute-to-data network. Execute your algorithms (JavaScript or Python) on data without ever exposing the raw data.
+Run compute jobs on Ocean Protocol directly from VS Code. The extension automatically detects your active algorithm file and streamlines job submission, monitoring, and results retrieval. Simply open a python or javascript file and click **Start Compute Job**.
 
 ## Getting Started
 
 Once installed, the extension adds an Ocean Protocol section to your VSCode workspace. Here you can configure your compute settings and run compute jobs using the currently active algorithm file.
 
-### Optional Setup
+1. Install the extension from the VS Code Marketplace
+2. Open the Ocean Protocol panel from the activity bar
+3. Configure your compute settings:
+   - Node URL (pre-filled with default Ocean compute node)
+   - Optional private key for your wallet
+4. Select your files:
+   - Algorithm file (JS or Python)
+   - Optional dataset file (JSON)
+   - Results folder location
+5. Click **Start Compute Job**
+6. Monitor the job status and logs in the output panel
+7. Once completed, the results file will automatically open in VSCode
 
-Feel free to use the default setup options or you also have the option to customise your compute settings:
-1. **RPC URL** – Your blockchain connection endpoint.
-2. **Ocean Node URL** – The node managing compute jobs.
-3. **Private Key** – For signing transactions (stored securely).
-4. **Compute Environment URL** – The URL (including port) of the compute environment.
+### Requirements
 
-### Compute-to-Data Operations
+VS Code 1.96.0 or higher
 
-1. Open a JavaScript or Python file that contains your compute algorithm.
-2. Optionally select a dataset file if your job requires it.
-3. Choose a results folder for the output.
-4. Click **Start Compute Job** to begin processing.
-5. Monitor the job status and view logs in the output panel.
-6. Once complete, your results are automatically saved and opened in VSCode.
-
-## Troubleshooting
+### Troubleshooting
 
 - Verify your RPC URL, Ocean Node URL, and Compute Environment URL if connections fail.
 - Check the output channels for detailed logs.
 - For further assistance, refer to the Ocean Protocol documentation or join the Discord community.
 
+## Optional Setup
+
+- Custom Compute Node: Enter your own node URL or use the default Ocean Protocol node
+- Wallet Integration: Use auto-generated wallet or enter private key for your own wallet
+- Custom Docker Images. If you need a custom environment with your own dependencies installed, you can use a custom docker image. Default is oceanprotocol/algo_dockers (Python) or node (JavaScript)
+- Docker Tags: Specify version tags for your docker image (like python-branin or latest)
+- Algorithm: The vscode extension automatically detects open JavaScript or Python files. Or alternatively you can specify the algorithm file manually here.
+- Dataset: Optional JSON file for input data
+- Results Folder: Where computation results will be saved
+
 ## Contributing
 
-Your contributions are welcomed! Please check our GitHub repository for the contribution guidelines.
+Your contributions are welcomed! Please check our [GitHub repository](https://github.com/oceanprotocol/vscode-extension) for the contribution guidelines.
 
 ## Resources
 
