@@ -9,7 +9,7 @@ description: >-
 
 # New DDO Specification
 
-### New DDO Schema - High Level
+## New DDO Schema - High Level
 
 The below diagram shows the high-level DDO schema depicting the content of each data structure and the relations between them.
 
@@ -274,7 +274,7 @@ A DDO in Ocean has these required attributes:
 
 </details>
 
-### Metadata
+#### Metadata
 
 This object holds information describing the actual asset.
 
@@ -480,7 +480,7 @@ The `datatokens` array contains information about the ERC20 datatokens attached 
 
 When hashing is performed against a document, **indexedMeatadata** object has to be removed from the DDO structure, its off-chain data being stored and maintained only in the **_Indexer_** database, within **DDO** collection. 
 
-##### NFT
+#### NFT
 
 The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
@@ -506,7 +506,7 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 </details>
 
 
-##### Event
+#### Event
 
 The `event` section contains information about the last transaction that created or updated the DDO.
 
@@ -530,7 +530,7 @@ The `event` section contains information about the last transaction that created
 
 </details>
 
-##### Purgatory
+#### Purgatory
 
 Contains information about an asset's purgatory status defined in [`list-purgatory`](https://github.com/oceanprotocol/list-purgatory). Marketplace interfaces are encouraged to prevent certain user actions like adding liquidity on assets in purgatory.
 
@@ -560,7 +560,7 @@ Contains information about an asset's purgatory status defined in [`list-purgato
 
 </details>
 
-##### Statistics
+#### Statistics
 
 The `stats` section contains a list of different statistics fields.
 
@@ -607,7 +607,7 @@ For algorithms and datasets that are used for compute to data, there are additio
 
 Details for each of these are explained on the [Compute Options page](compute-to-data/compute-options.md).
 
-### New DDO Schema - Detailed
+## New DDO Schema - Detailed
 
 The below diagram shows the detailed DDO schema depicting the content of each data structure and the relations between them.
 
