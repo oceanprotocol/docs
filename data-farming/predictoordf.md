@@ -9,13 +9,13 @@ description: >-
 
 # Predictoor DF Overview
 
-**Predictoor DF** is a DF stream that amplifies predictoors’ earnings, via extra sales to Ocean Predictoor data feeds.
+**Predictoor DF** is a DF stream that amplifies predictoors’ earnings, via extra sales to ASI Predictoor data feeds.
 
 Predictoor DF has 3,750 [OCEAN](https://www.coingecko.com/en/coins/ocean-protocol) weekly rewards (ongoing).
 
 ## Introduction
 
-**[Ocean Predictoor](../predictoor/README.md)** data feeds predict whether BTC, ETH etc will rise or fall 5min or 1h into the future. These feeds are crowdsourced by “predictoors”: people running AI-powered prediction bots.
+**[ASI Predictoor](../predictoor/README.md)** data feeds predict whether BTC, ETH etc will rise or fall 5min or 1h into the future. These feeds are crowdsourced by “predictoors”: people running AI-powered prediction bots.
 
 **[Data Farming (DF)](../data-farming/README.md)** is Ocean’s incentive program, that rewards OCEAN to people who make crypto price predictions.
 
