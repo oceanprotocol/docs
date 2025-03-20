@@ -11,7 +11,7 @@ description: >-
 
 **Predictoor DF** is a DF stream that amplifies predictoors’ earnings, via extra sales to ASI Predictoor data feeds.
 
-Predictoor DF has 3,750 [OCEAN](https://www.coingecko.com/en/coins/ocean-protocol) weekly rewards (ongoing).
+Predictoor DF weekly rewards are 3,750 [OCEAN](https://www.coingecko.com/en/coins/ocean-protocol) and 20,000 ROSE rewards (through 2025).
 
 ## Introduction
 
