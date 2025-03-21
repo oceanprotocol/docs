@@ -35,7 +35,7 @@ The functions of Ocean nodes include:
 
 * It is crucial in handling the asset downloads, it streams the purchased data directly to the buyer.
 * It conducts the permission an access checks during the consume flow.&#x20;
-* The Node handles [DDO](https://docs.oceanprotocol.com/developers/ddo-specification) (Decentralized Data Object) encryption.
+* The Node handles [new DDO structure](https://docs.oceanprotocol.com/developers/new-ddo-specification) (Decentralized Data Object) encryption, but it offers support for [existing DDO format](https://docs.oceanprotocol.com/developers/ddo-specification).
 * It establishes communication with the operator-service for initiating Compute-to-Data jobs.
 * It provides a metadata cache, enhancing search efficiency by caching on-chain data into a Typesense database. This enables faster and more efficient data discovery.
 * It supports multiple chains.
