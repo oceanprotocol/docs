@@ -13,7 +13,7 @@ The Ocean CLI offers a wide range of functionalities, enabling you to:
 * [**Publish**](publish.md) 📤 data services: downloadable files or compute-to-data.
 * [**Edit**](edit.md) ✏️ existing assets.
 * [**Consume**](consume.md) 📥 data services, ordering datatokens and downloading data.
-* [**Compute to Data**](run-c2d.md) 💻 on public available datasets using a published algorithm.
+* [**Compute to Data**](run-c2d.md) 💻 on public available datasets using a published algorithm. Free version of compute-to-data feature is available
 
 ## Key Information
 
