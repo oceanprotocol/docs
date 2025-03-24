@@ -34,16 +34,17 @@ command.
 1. The first step involves publishing the algorithm, as explained in the previous section, [Publish a Dataset](./publish.md) Once that's completed, you can proceed to initiate the compute job. 
 2. Alternatively, you have the option to explore available algorithms and kickstart a free compute-to-data job by combining your preferred choices.
 
-To illustrate the latter option, you can use the following command:
+To illustrate the latter option, you can use the following command for running free start compute with **additional datasets**:
 
 ```bash
-npm run cli freeStartCompute 'DATASET_DID1', 'DATASET_DID2', 'ALGO_DID', 'ENV_ID'
+npm run cli freeStartCompute ['DATASET_DID1','DATASET_DID2'] 'ALGO_DID' 'ENV_ID'
 ```
+
 In this command, replace `DATASET_DID` with the specific DID of the dataset you intend to utilize and `ALGO_DID` with the DID of the algorithm you want to apply and the environment for **free** start compute returned from `npm run cli getComputeEnvironments`.
 By executing this command, you'll trigger the initiation of a free compute-to-data job with the alogithm provided.
-Free start compute can be run without published datasets, only the algorithm is required:
+Free start compute can be run **without** published datasets, only the algorithm and environment is required:
 ```bash
-npm run cli freeStartCompute [], 'ALGO_DID', 'ENV_ID'
+npm run cli freeStartCompute [] 'ALGO_DID' 'ENV_ID'
 ```
 **NOTE:** For `zsh` console, please surround `[]` with quotes like this: `"[]"`.
 <figure><img src="../../.gitbook/assets/cli/freec2dstart1.png" alt=""><figcaption>Start a free compute job</figcaption></figure>
