@@ -37,13 +37,13 @@ command.
 To illustrate the latter option, you can use the following command:
 
 ```bash
-npm run cli freeStartCompute 'DATASET_DID1' 'DATASET_DID2' 'ALGO_DID' 'ENV_ID'
+npm run cli freeStartCompute 'DATASET_DID1', 'DATASET_DID2', 'ALGO_DID', 'ENV_ID'
 ```
 In this command, replace `DATASET_DID` with the specific DID of the dataset you intend to utilize and `ALGO_DID` with the DID of the algorithm you want to apply and the environment for **free** start compute returned from `npm run cli getComputeEnvironments`.
 By executing this command, you'll trigger the initiation of a free compute-to-data job with the alogithm provided.
 Free start compute can be run without published datasets, only the algorithm is required:
 ```bash
-npm run cli freeStartCompute [] 'ALGO_DID' 'ENV_ID'
+npm run cli freeStartCompute [], 'ALGO_DID', 'ENV_ID'
 ```
 **NOTE:** For `zsh` console, please surround `[]` with quotes like this: `"[]"`.
 <figure><img src="../../.gitbook/assets/cli/freec2dstart1.png" alt=""><figcaption>Start a free compute job</figcaption></figure>
