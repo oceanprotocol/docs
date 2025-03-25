@@ -71,6 +71,7 @@
     * [Uploader.js](developers/uploader/uploader-js.md)
     * [Uploader UI](developers/uploader/uploader-ui.md)
     * [Uploader UI to Market](developers/uploader/uploader-ui-marketplace.md)
+  * [VSCode Extension](developers/vscode/README.md)
   * [Old Infrastructure](developers/old-infrastructure/README.md)
     * [Aquarius](developers/old-infrastructure/aquarius/README.md)
       * [Asset Requests](developers/old-infrastructure/aquarius/asset-requests.md)
