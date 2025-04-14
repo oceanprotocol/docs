@@ -1,0 +1,80 @@
+@startuml "DDO Publishing Flow"
+title "DDO Publishing Flow"
+
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 85
+skinparam sequenceParticipant underline
+
+actor "End User" as end_user
+participant "Consumer\n(Ocean CLI)" as consumer
+participant "Ocean.js" as ocean_js
+participant "Ocean Node" as ocean_node
+database "Ocean Node's Database\n(Typesense/ElasticSearch)" as db
+participant "Smart Contracts" as smart_contracts
+participant "DDO.js" as ddo_js
+
+group Asset Creation
+end_user -> consumer: Requests to publish a dataset with selected file.
+note over end_user
+Command: **npm run publish <ddo file>**
+end note
+consumer -> ocean_js: Calls asset creation function
+group DataNFT, Datatoken and Pricing Schema Deployment
+ocean_js -> smart_contracts: Deploy data NFT & datatoken with pricing schema
+note over smart_contracts
+    Pricing schemas are:
+    - dispenser
+    - fixed rate exchange.
+end note
+smart_contracts --> smart_contracts: Events emmitted
+ocean_js -> smart_contracts: Retrieve **NFTCreated** and **DatatokenCreated** events
+alt Datatoken is **not** template 4 for EVM credentials
+    ocean_js -> ocean_node: Requests encryption for DDO services files
+    alt Encryption is successful
+        ocean_node --> ocean_js: Returns **200 OK** response
+    else Encryption is **NOT** successful
+        ocean_node --> ocean_js: Returns error status code
+    end
+else Datatoken is template 4 for EVM credentials
+    note over ocean_js
+    No encryption for service files needed,
+    because on Oasis the datatoken, which contains
+    the services, is deployed encrypted form.
+    end note
+end
+end group
+group DDO Encryption
+ocean_js -> ocean_node: Requests encryption for DDO object
+alt Encryption is successful
+        ocean_node --> ocean_js: Returns **200 OK** response
+    else Encryption is **NOT** successful
+        ocean_node --> ocean_js: Returns error status code
+    end
+end group
+group DDO Validation
+ocean_js -> ocean_node: Requests validation for DDO structure
+ocean_node -> ddo_js: Validate DDO structure
+ddo_js -> ddo_js: Use SHACL schemas depending on DDO version for validation
+alt Validation is successful
+        ddo_js --> ocean_node: Response with success
+        ocean_node --> ocean_js: Returns **200 OK** response
+        ocean_js -> smart_contracts: Calls **setMetadata** on chain
+        ocean_js --> consumer: Returns DID
+        consumer --> end_user: Returns DID
+        group Ocean Node indexes new DDOs
+            smart_contracts --> smart_contracts: Emit event **MetadataCreated**
+            ocean_node -> smart_contracts: Listens to **MetadataCreated** events
+            ocean_node -> ocean_node: Indexes DDO from chain in processMetadataEvent
+            ocean_node -> db: Stores DDO in the database
+            db --> ocean_node
+        end group
+
+    else Validation is **NOT** successful
+        ddo_js --> ocean_node: Response with error and log the message
+        ocean_node --> ocean_js: Returns error status code
+    end
+
+end group
+end group
+@enduml

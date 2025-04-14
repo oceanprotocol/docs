@@ -1,0 +1,39 @@
+
+@startuml "DDO Validation Flow using DDO.js Library"
+title "DDO Publishing Flow using DDO.js Library"
+
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 85
+skinparam sequenceParticipant underline
+
+participant "Ocean.js" as ocean_js
+participant "Ocean Node" as ocean_node
+database "Ocean Node's Database\n(Typesense/ElasticSearch)" as db
+participant "Smart Contracts" as smart_contracts
+participant "DDO.js" as ddo_js
+
+group DDO Validation
+ocean_js -> ocean_node: Requests validation for DDO structure
+ocean_node -> ddo_js: Validate DDO structure
+ddo_js -> ddo_js: Use SHACL schemas depending on DDO version for validation
+alt Validation is successful
+        ddo_js --> ocean_node: Response with success
+        ocean_node --> ocean_js: Returns **200 OK** response
+        ocean_js -> smart_contracts: Calls **setMetadata** on chain
+        ocean_js --> ocean_js: Returns DID
+        group Ocean Node indexes new DDOs
+            smart_contracts --> smart_contracts: Emit event **MetadataCreated**
+            ocean_node -> smart_contracts: Listens to **MetadataCreated** events
+            ocean_node -> ocean_node: Indexes DDO from chain in processMetadataEvent
+            ocean_node -> db: Stores DDO in the database
+            db --> ocean_node
+        end group
+    else Validation is **NOT** successful
+        ddo_js --> ocean_node: Response with error and log the message
+        ocean_node --> ocean_js: Returns error status code
+    end
+
+end group
+
+@enduml
