@@ -117,11 +117,12 @@ export const DDOExampleV4 = {
 Now let's use this DDO example, `DDOExampleV4` into the following javascript code:
 
 ```javascript
-const { validateDDO } = require ('@oceanprotocol/ddo.js');
+const { DDOManager } = require ('@oceanprotocol/ddo.js');
 
-const validationResult = await validateDDO(DDOExampleV4);
-console.log('Validation true/false: ' + validationResult[0]);
-console.log('Validation message: ' + validationResult[1]);
+const ddoInstance = DDOManager.getDDOClass(DDOExampleV4)
+const validation = await ddoInstance.validate();
+console.log('Validation true/false: ' + validation[0]);
+console.log('Validation message: ' + validation[1]);
 ```
 **Execute script**
 
