@@ -34,6 +34,7 @@
     * [Roles](developers/contracts/roles.md)
     * [Pricing Schemas](developers/contracts/pricing-schemas.md)
     * [Fees](developers/contracts/fees.md)
+  * [Publish Flow Overview](developers/publishing-flow-architecture.md)
   * [Revenue](developers/contracts/revenue.md)
   * [Fractional Ownership](developers/fractional-ownership.md)
   * [Community Monetization](developers/community-monetization.md)
