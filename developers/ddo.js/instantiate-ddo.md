@@ -251,7 +251,7 @@ export const deprecatedDDO = {
 };
 ```
 
-Now let's use this DDO examples, `DDOExampleV4`, `DDOExampleV5`, `deprecatedDDO` into the following javascript code, assuming `@oceanprotocol/ddo.js` has been installed as dependency before:
+Now let's use these DDO examples, `DDOExampleV4`, `DDOExampleV5`, `deprecatedDDO` into the following javascript code, assuming `@oceanprotocol/ddo.js` has been installed as dependency before:
 
 ```javascript
 const { DDOManager } = require ('@oceanprotocol/ddo.js');
