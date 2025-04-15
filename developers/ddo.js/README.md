@@ -19,7 +19,7 @@ The DDO.js offers a wide range of functionalities, enabling you to:
 It is available as `npm` package, therefore to install in your `js` project, simply run in the console:
 
 ```bash
-npm install @oceanprotocol/ddo.js
+npm install @oceanprotocol/ddo-js
 ```
 
 ## Key Information
