@@ -24,14 +24,14 @@ export interface UpdateFields {
 
 ## Usage of Update Fields Function
 
-Now let's use [DDO V4 example](./instantiate-ddo.md#usage-examples), `DDOExampleV4` into the following javascript code, assuming `@oceanprotocol/ddo.js` has been installed as dependency before:
+Now let's use [DDO V4 example](./instantiate-ddo.md#usage-examples), `DDOExampleV4` into the following javascript code, assuming `@oceanprotocol/ddo-js` has been installed as dependency before:
 
 ```javascript
-const { DDOManager } = require ('@oceanprotocol/ddo.js');
+const { DDOManager } = require ('@oceanprotocol/ddo-js');
 
-const ddoV4Instance = DDOManager.getDDOClass(DDOExampleV4);
+const ddoInstance = DDOManager.getDDOClass(DDOExampleV4);
 const nftAddressToUpdate = "0xfF4AE9869Cafb5Ff725f962F3Bbc22Fb303A8aD8"
-ddoV4Instance.updateFields({ nftAddress: nftAddressToUpdate }) // It supports update on multiple fields
+ddoInstance.updateFields({ nftAddress: nftAddressToUpdate }) // It supports update on multiple fields
 // The same script can be applied on DDO V5 and deprecated DDO from `Instantiate DDO section`.
 ```
 **Execute script**

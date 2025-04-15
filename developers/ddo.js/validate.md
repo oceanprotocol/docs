@@ -16,10 +16,10 @@ Supported SHACL schemas can be found [here](https://github.com/oceanprotocol/ddo
 
 ## Usage of DDO validation from Library
 
-Now let's use [DDO V4 example](./instantiate-ddo.md#usage-examples), `DDOExampleV4` into the following javascript code, assuming `@oceanprotocol/ddo.js` has been installed as dependency before:
+Now let's use [DDO V4 example](./instantiate-ddo.md#usage-examples), `DDOExampleV4` into the following javascript code, assuming `@oceanprotocol/ddo-js` has been installed as dependency before:
 
 ```javascript
-const { DDOManager } = require ('@oceanprotocol/ddo.js');
+const { DDOManager } = require ('@oceanprotocol/ddo-js');
 
 const ddoInstance = DDOManager.getDDOClass(DDOExampleV4);
 const validation = await ddoInstance.validate();

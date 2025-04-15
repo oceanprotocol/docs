@@ -5,6 +5,7 @@ After creating DDO instance based on DDO's version, we can interact with the DDO
 
 - `getDDOFields()` which returns DDO fields such as: 
     - **id**: The Decentralized Identifier (DID) of the asset.
+    - **version**: The version of the DDO.
     - **metadata**: The metadata describing the asset.
     - **services**: An array of services associated with the asset.
     - **credentials**: An array of verifiable credentials.
@@ -65,10 +66,10 @@ After creating DDO instance based on DDO's version, we can interact with the DDO
 
 ## Usage of DDO Manager Functions
 
-Now let's use [DDO V4 example](./instantiate-ddo.md#usage-examples), `DDOExampleV4` into the following javascript code, assuming `@oceanprotocol/ddo.js` has been installed as dependency before:
+Now let's use [DDO V4 example](./instantiate-ddo.md#usage-examples), `DDOExampleV4` into the following javascript code, assuming `@oceanprotocol/ddo-js` has been installed as dependency before:
 
 ```javascript
-const { DDOManager } = require ('@oceanprotocol/ddo.js');
+const { DDOManager } = require ('@oceanprotocol/ddo-js');
 
 const ddoV4Instance = DDOManager.getDDOClass(DDOExampleV4);
 
