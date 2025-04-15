@@ -71,15 +71,15 @@ Now let's use [DDO V4 example](./instantiate-ddo.md#usage-examples), `DDOExample
 ```javascript
 const { DDOManager } = require ('@oceanprotocol/ddo-js');
 
-const ddoV4Instance = DDOManager.getDDOClass(DDOExampleV4);
+const ddoInstance = DDOManager.getDDOClass(DDOExampleV4);
 
 // DDO V4
-console.log('DDO V4 Fields: ', ddoV4Instance.getDDOFields());
+console.log('DDO V4 Fields: ', ddoInstance.getDDOFields());
 // Individual fields access
-console.log('DDO V4 chain ID: ', ddoV4Instance.getDDOFields().chainId);
-console.log('DDO V4 Asset Fields: ', ddoV4Instance.getAssetFields());
-console.log('DDO V4 Data: ', ddoV4Instance.getDDOData());
-console.log('DDO V4 DID: ', ddoV4Instance.getDid());
+console.log('DDO V4 chain ID: ', ddoInstance.getDDOFields().chainId);
+console.log('DDO V4 Asset Fields: ', ddoInstance.getAssetFields());
+console.log('DDO V4 Data: ', ddoInstance.getDDOData());
+console.log('DDO V4 DID: ', ddoInstance.getDid());
 
 // The same script can be applied on DDO V5 and deprecated DDO from `Instantiate DDO section`.
 ```
