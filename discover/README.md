@@ -7,7 +7,7 @@ coverY: 7.413145539906106
 
 Ocean's mission is to level the playing field for AI and data.
 
-How? **By helping **_**you**_** monetize AI models and data, while preserving privacy.**
+How? **By helping you monetize AI models and data, while preserving privacy.**
 
 Ocean is a decentralized data exchange protocol to drive AI. Its core tech is:
 
