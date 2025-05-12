@@ -1,0 +1,37 @@
+@startuml "Free Flow for Compute to Data - Part 2"
+title "Free Flow for Compute to Data - Part 2"
+
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 85
+skinparam sequenceParticipant underline
+
+actor "End User" as end_user
+participant "Consumer\n(VSCode Ext, Ocean CLI)" as consumer
+participant "Ocean.js" as ocean_js
+participant "Ocean Node" as ocean_node
+database "Ocean Node's Database\n(SQLiteCompute DB)" as db
+participant "Smart Contracts" as smart_contracts
+
+group Get compute job status
+    consumer -> ocean_js: Calls computeStatus
+    ocean_js -> ocean_node: **GET /compute**
+    ocean_node -> db: Requests job data from specific C2D engine.
+    db --> ocean_node: Returns job data from specific C2D engine.
+    ocean_node --> ocean_js: Returns status.
+    ocean_js --> consumer
+    consumer --> end_user: Displays the progress of the job.
+end group
+
+group Retrieve compute job results
+    end_user -> consumer: Requests results, provide path.
+    consumer -> ocean_js: Calls computeStatus.
+    ocean_js -> ocean_node: **GET /computeResult**
+    ocean_node -> db: Requests job from specific C2D engine.
+    db --> ocean_node: Returns job from specific C2D engine.
+    ocean_node -> ocean_js: Returns streams for results files
+    ocean_js -> consumer: Returns job results
+    consumer -> end_user: Downloads results in the path.
+end group
+
+@enduml

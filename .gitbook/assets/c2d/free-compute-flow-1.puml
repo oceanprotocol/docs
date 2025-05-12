@@ -1,0 +1,118 @@
+@startuml "Free Flow for Compute to Data - Part 1"
+title "Free Flow for Compute to Data - Part 1"
+
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 85
+skinparam sequenceParticipant underline
+
+actor "End User" as end_user
+participant "Consumer\n(VSCode Ext, Ocean CLI)" as consumer
+participant "Ocean.js" as ocean_js
+participant "Ocean Node" as ocean_node
+database "Ocean Node's Database\n(SQLiteCompute DB)" as db
+participant "Smart Contracts" as smart_contracts
+
+legend top left
+Assuming Ocean Node is running,
+Algorithm asset
+is already published
+and resolved by **Indexer**.
+**Dataset is optional for free**
+**compute.**
+For more details regarding
+publishing flow, check 
+ocean-cli **publish** flow.
+
+end legend
+
+note over ocean_node
+When deploying Ocean Node,
+make sure to export
+**DOCKER_COMPUTE_ENVIRONMENTS**.
+For quickstart node with c2d, please
+check script **ocean-node-update.sh**
+from ocean-node GitHub xwrepo.
+end note
+
+group Select compute environment with free resources
+
+    end_user -> consumer: Requests compute environments
+    consumer -> ocean_js
+    ocean_js -> ocean_node: **GET /computeEnvironments**
+    note over ocean_node
+    Filtering by chanId is optional.
+    end note
+    ocean_node -> ocean_node: Parses engine's exported compute environments.
+    note over ocean_node
+    Currently, only Docker
+    engine is supported.
+    Fee token for payment is included
+    in DOCKER_COMPUTE_ENVIRONMENTS,
+    default is OCEAN token.
+    end note
+    ocean_node --> ocean_js: Returns environments.
+    ocean_js --> consumer: Passes further the environments.
+    consumer --> end_user: Displays compute environments containing free + paid resources.
+
+end group
+
+end_user -> consumer: Fills in maxJobDuration and free available resources.
+end_user -> consumer: Triggers start compute.
+
+group Start compute job
+    consumer -> ocean_js: Calls freeStartCompute with resources from env.
+    ocean_js -> ocean_node: **POST /freeCompute**
+    ocean_node -> ocean_node: Checks nonce, creates job ID.
+    ocean_node -> ocean_node: Checks if the assets are orderable + <font color=red>have grant access to run compute jobs</font>
+    group Credentials check
+        alt Policy server configured
+            ocean_node -> policy_server: Requests credentials validation using **startCompute** command
+            policy_server --> ocean_node: Success/failure response
+        else Policy server not configured
+            ocean_node -> ocean_node: Checks allow & deny lists of addresses or from access lists
+        end
+        alt Validation response failure
+            ocean_node --> ocean_js: 403 - Consumer address not authorized
+            ocean_js --> consumer
+            consumer --> end_user
+        end
+    end group
+    group Monitor compute job
+    ocean_node -> ocean_node: Tries to create docker environment within Docker engine class.
+        alt Job created successfully
+        ocean_node -> db: Saves job.
+        db --> ocean_node
+        ocean_node --> ocean_js: Returns job ID.
+        ocean_js --> consumer
+        consumer --> end_user: Displays job ID
+        else Job not created successfully - cleanup
+            group Cleanup job
+                alt Algorithm finished successfully
+                ocean_node -> ocean_node: Write algorithm logs to config temporary folder path.
+                end
+                ocean_node -> ocean_node: Kills container, remove volumes
+                ocean_node -> ocean_node: Removes temporary folders with algorithm and datasets
+            end group
+        end
+        alt Algorithm execution exceeds specified maxJobDuration
+            ocean_node -> ocean_node: Stops docker container immediatly
+            ocean_node -> db: Updates job status from **Running** to **Publishing Results**
+            db --> ocean_node
+            ocean_node -> ocean_node: Cleanup job started
+            note over ocean_node
+                Check group **Cleanup job**
+            end note
+        else Algorithm finishes its execution in time
+            ocean_node -> db: Updates job status from **Running** to **Publishing Results**
+            db --> ocean_node
+            ocean_node -> ocean_node: Cleanup job started - **claimLock** case
+            note over ocean_node
+                Check group **Cleanup job**
+            end note
+        end
+
+    end group
+end group
+
+@enduml
