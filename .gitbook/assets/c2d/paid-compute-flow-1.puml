@@ -1,0 +1,161 @@
+@startuml "Paid Flow for Compute to Data - Part 1"
+title "Paid Flow for Compute to Data - Part 1"
+
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 85
+skinparam sequenceParticipant underline
+
+actor "End User" as end_user
+participant "Consumer\n(VSCode Ext, Ocean CLI)" as consumer
+participant "Ocean.js" as ocean_js
+participant "Ocean Node" as ocean_node
+participant "Policy Server" as policy_server
+database "Ocean Node's Database\n(SQLiteCompute DB)" as db
+participant "Smart Contracts" as smart_contracts
+
+legend top left
+Assuming Ocean Node is running,
+dataset and algorithm assets
+are already published
+and resolved by **Indexer**.
+For more details regarding
+publishing flow, check 
+ocean-cli **publish** flow.
+
+end legend
+
+note over ocean_node
+When deploying Ocean Node,
+make sure to export
+**DOCKER_COMPUTE_ENVIRONMENTS**.
+For quickstart node with c2d, please
+check script **ocean-node-update.sh**
+from ocean-node GitHub xwrepo.
+end note
+
+group Select compute environment
+
+    end_user -> consumer: Requests compute environments
+    consumer -> ocean_js
+    ocean_js -> ocean_node: **GET /computeEnvironments**
+    note over ocean_node
+    Filtering by chanId is optional.
+    end note
+    ocean_node -> ocean_node: Parses engine's exported compute environments.
+    note over ocean_node
+    Currently, only Docker
+    engine is supported.
+    Fee token for payment is included
+    in DOCKER_COMPUTE_ENVIRONMENTS,
+    default is OCEAN token.
+    end note
+    ocean_node --> ocean_js: Returns environments.
+    ocean_js --> consumer: Passes further the environments.
+    consumer --> end_user: Displays compute environments containing free + paid resources.
+    note over end_user
+    For this scenario, user will select paid
+    resources from environment id.
+    end note
+
+end group
+
+end_user -> consumer: Fills in maxJobDuration and resources.
+end_user -> consumer: Triggers initialize compute.
+group Initialize Compute
+    consumer -> ocean_js: Calls initialize compute method from Provider class.
+    ocean_js -> ocean_node: **POST /initializeCompute**
+    ocean_node -> ocean_node: Checks if the assets are orderable + <font color=red>have grant access to run compute jobs</font>
+    group Credentials check
+        alt Policy server configured
+            ocean_node -> policy_server: Requests credentials validation using **initialize** command
+            policy_server --> ocean_node: Success/failure response
+        else Policy server not configured
+            ocean_node -> ocean_node: Checks allow & deny lists of addresses or from access lists
+        end
+        alt Validation response failure
+            ocean_node --> ocean_js: 403 - Consumer address not authorized
+            ocean_js --> consumer
+            consumer --> end_user
+        else Validation response success
+            note over ocean_node
+                Continue with provider fees.
+            end note
+        end
+    end group
+    alt New order, new provider fees
+    ocean_node --> ocean_js: Returns validOrder = <font color="red">**false**</font>, providerFees, payment.
+    ocean_js --> consumer
+    else Existing order, valid provider fees
+    ocean_node --> ocean_js: Returns validOrder = **orderTxId**, payment.
+    ocean_js --> consumer
+    else Expired order, new provider fees
+    ocean_node --> ocean_js: Returns validOrder = <font color="red">**false**</font>, providerFees, payment.
+    ocean_js --> consumer
+    end
+    consumer --> end_user
+    note over end_user
+    Consults the price after
+    initialize response.
+    end note
+end group
+group Add funds
+    note over end_user
+    Make sure that end user's account
+    has enough of chain's native token
+    (e.g. ETH) for gas and payment
+    token/fee token. 
+    Also consumerAddress of the selected
+    environment must have ETH for
+    gas and fee token -> **transfer**
+    **to consumerAddress necessary**
+    **funds.** 
+    The amount is calculated per resource.
+    end note
+
+end group
+
+group Escrow funding
+    note over ocean_js
+    Checks before if
+    funds exists in Escrow and if
+    consumerAddress is already
+    authorized within limits.
+    end note
+    consumer -> ocean_js: Checks for funds in escrow (interacting with ocean.js).
+    note over ocean_js
+    Ocean.js checks balances for native chain
+    token, payment token, necessary allowances.
+    end note
+    ocean_js -> ocean_js: Use Datatoken class for payment token & approve escrow contract address.
+    ocean_js --> consumer
+    alt No funds & no auths 
+    consumer -> ocean_js: Deposit amount from user into Escrow
+    ocean_js -> smart_contracts: Calls deposit smart contract function
+    ocean_js -> ocean_js: Wait for fetching tx.
+    consumer -> ocean_js: Authorize consumerAddress in Escrow.
+    ocean_js -> smart_contracts: Calls authorize smart contract function with maxLockedAmount, maxLockCounts, maxLockSeconds.
+    ocean_js -> ocean_js: Wait for fetching tx.
+    else Funds already deposited & consumerAddress authorized
+    note over consumer
+    Jump to start order using provider fees
+    end note
+    end
+end group
+group Start order using provider fees
+    consumer -> ocean_js: Calls handleComputeOrder
+    ocean_js -> ocean_js: Checks if calling smart contracts **startOrder** or **reuseOrder**.
+    alt 1. New order, new provider fees\n-> startOrder
+    ocean_js -> smart_contracts: Asset datatoken invokes startOrder.
+    smart_contracts --> ocean_js: Transaction hash as proof for ordering.
+    ocean_js --> consumer: Returns transaction hash.
+    else 2. Existing order, valid provider fees\n-> returns existing valid order tx ID.
+    ocean_js -> consumer: Returns validOrder from initialize response.
+    else 3. Expired order, new provider fees\n-> reuseOrder
+    ocean_js -> smart_contracts: Asset datatoken invokes reuseOrder.
+    smart_contracts --> ocean_js: Transaction hash as proof for ordering.
+    ocean_js --> consumer: Returns transaction hash.
+    end
+end group
+
+@enduml
