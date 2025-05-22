@@ -25,9 +25,8 @@ Please note that the implementation details of Compute-to-Data can vary dependin
 * [Install the dependencies](configuration.md#setup-dependencies)
 * [Create a configuration file](configuration.md#create-a-configuration-file)
 
-{% hint style="info" %}
-The variable **AQUARIUS\_URL** and **PROVIDER\_URL** should be set correctly in `.env` file
-{% endhint %}
+
+The variable **NODE\_URL** should be set correctly in `.env` file
 
 #### Create a script that starts compute to data using an already published dataset and algorithm
 
@@ -52,57 +51,74 @@ const algorithmDid = "did:op:a419f07306d71f3357f8df74807d5d12bddd6bcd738eb0b4614
   const algorithm = await await oceanConfig.aquarius.resolve(algorithmDid);
   
   // Let's fetch the compute environments and choose the free one
-  const computeEnv = computeEnvs[resolvedDatasetDdo.chainId].find(
-    (ce) => ce.priceMin === 0
-  )
-  
-  // Request five minutes of compute access
-  const mytime = new Date()
-  const computeMinutes = 5
-  mytime.setMinutes(mytime.getMinutes() + computeMinutes)
-  const computeValidUntil = Math.floor(mytime.getTime() / 1000
-  
-  // Let's initialize the provider for the compute job
-  const asset: ComputeAsset[] = {
-    documentId: dataset.id,
-    serviceId: dataset.services[0].id
-  }
-
-  const algo: ComputeAlgorithm = {
-    documentId: algorithm.id,
-    serviceId: algorithm.services[0].id
-  }
-  
-  const providerInitializeComputeResults = await ProviderInstance.initializeCompute(
-    assets,
-    algo,
-    computeEnv.id,
-    computeValidUntil,
-    providerUrl,
-    await consumerAccount.getAddress()
-  )
-  
-  await approve(
-    consumerAccount,
-    config,
-    await consumerAccount.getAddress(),
-    addresses.Ocean,
-    datasetFreAddress,
-    '100'
-  )
-  
-  await approve(
-    consumerAccount,
-    config,
-    await consumerAccount.getAddress(),
-    addresses.Ocean,
-    algoFreAddress,
-    '100'
-  )
+  computeEnvs = await ProviderInstance.getComputeEnvironments(providerUrl)
+    const computeEnv = computeEnvs[0] // it is only one environment with paid and free resources
     
-  const fixedRate = new FixedRateExchange(fixedRateExchangeAddress, consumerAccount)
-  const buyDatasetTx = await fixedRate.buyDatatokens(datasetFreAddress, '1', '2')
-  const buyAlgoTx = await fixedRate.buyDatatokens(algoFreAddress, '1', '2')
+    // Let's choose paid available resources
+    const resources: ComputeResourceRequest[] = [
+      {
+        id: 'cpu',
+        amount: 2
+      },
+      {
+        id: 'ram',
+        amount: 1000000000
+      },
+      {
+        id: 'disk',
+        amount: 0
+      }
+    ]
+    const assets: ComputeAsset[] = [
+      {
+        documentId: dataset.id,
+        serviceId: dataset.services[0].id
+      }
+    ]
+    const dtAddressArray = [dataset.services[0].datatokenAddress]
+    const algo: ComputeAlgorithm = {
+      documentId: algorithm.id,
+      serviceId: algorithm.services[0].id
+    }
+
+  // Request five minutes of compute access
+    const mytime = new Date()
+    const computeMinutes = 5
+    mytime.setMinutes(mytime.getMinutes() + computeMinutes)
+    const computeValidUntil = Math.floor(mytime.getTime() / 1000)
+
+  // Let's initialize the provider fees and escrow payment for the compute job
+    const providerInitializeComputeResults = await ProviderInstance.initializeCompute(
+      assets,
+      algo,
+      computeEnv.id,
+      paymentToken,
+      computeValidUntil,
+      providerUrl,
+      consumerAccount,
+      resources
+    )
+
+  // Escrow adding funds for paid compute
+    const escrow = new EscrowContract(
+      ethers.utils.getAddress(providerInitializeComputeResults.payment.escrowAddress),
+      consumerAccount
+    )
+
+    const amountToDeposit = (
+      providerInitializeComputeResults.payment.amount * 2 // make it double
+    ).toString()
+
+    const chainId = (await consumerAccount.provider.getNetwork()).chainId
+    // Verifying funds
+    await escrow.verifyFundsForEscrowPayment(
+      computeEnv.fees[chainId][0].feeToken,
+      computeEnv.consumerAddress,
+      await unitsToAmount(consumerAccount, paymentToken, amountToDeposit),
+      providerInitializeComputeResults.payment.amount.toString(),
+      providerInitializeComputeResults.payment.minLockSeconds.toString(),
+      '10'
+    )
  
   
   // We now order both the dataset and the algorithm
@@ -124,12 +140,16 @@ const algorithmDid = "did:op:a419f07306d71f3357f8df74807d5d12bddd6bcd738eb0b4614
   
   // Start the compute job for the given dataset and algorithm
   const computeJobs = await ProviderInstance.computeStart(
-    providerUrl,
-    consumerAccount,
-    computeEnv.id,
-    assets[0],
-    algo
-  )
+      providerUrl,
+      consumerAccount,
+      computeEnv.id,
+      assets,
+      algo,
+      computeJobDuration,
+      paymentToken,
+      computeEnv.resources,
+      chainId
+    )
   
   return  computeJobs[0].jobId
   
