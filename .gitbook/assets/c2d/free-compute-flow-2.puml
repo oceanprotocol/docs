@@ -25,7 +25,7 @@ end group
 
 group Retrieve compute job results
     end_user -> consumer: Requests results, provide path.
-    consumer -> ocean_js: Calls computeStatus.
+    consumer -> ocean_js: Calls computeResult.
     ocean_js -> ocean_node: **GET /computeResult**
     ocean_node -> db: Requests job from specific C2D engine.
     db --> ocean_node: Returns job from specific C2D engine.

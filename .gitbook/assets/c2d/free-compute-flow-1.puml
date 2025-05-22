@@ -51,6 +51,11 @@ group Start compute job
     consumer -> ocean_js: Calls freeStartCompute with resources from env.
     ocean_js -> ocean_node: **POST /freeCompute**
     ocean_node -> ocean_node: Checks nonce, creates job ID.
+    alt Nonce and signature are invalid
+        ocean_node --> ocean_js: Returns 500, error <i>'Invalid nonce or signature, unable to proceed.'</i>
+        ocean_js --> consumer: Returns error
+        consumer --> end_user
+    end
     ocean_node -> ocean_node: Checks if the assets are orderable + <font color=red>have grant access to run compute jobs</font>
     group Credentials check
         alt Policy server configured
