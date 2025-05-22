@@ -83,6 +83,7 @@ group Initialize Compute
             end note
         end
     end group
+    loop For each asset (datasets + algorithm)
     alt New order, new provider fees
     ocean_node --> ocean_js: Returns validOrder = <font color="red">**false**</font>, providerFees, payment.
     ocean_js --> consumer
@@ -93,6 +94,7 @@ group Initialize Compute
     ocean_node --> ocean_js: Returns validOrder = <font color="red">**false**</font>, providerFees, payment.
     ocean_js --> consumer
     end
+    end loop
     consumer --> end_user
     note over end_user
     Consults the price after
@@ -143,6 +145,7 @@ group Escrow funding
     end
 end group
 group Start order using provider fees
+    loop For each asset (datasets + algorithm)
     consumer -> ocean_js: Calls handleComputeOrder
     ocean_js -> ocean_js: Checks if calling smart contracts **startOrder** or **reuseOrder**.
     alt 1. New order, new provider fees\n-> startOrder
@@ -156,6 +159,7 @@ group Start order using provider fees
     smart_contracts --> ocean_js: Transaction hash as proof for ordering.
     ocean_js --> consumer: Returns transaction hash.
     end
+    end loop
 end group
 
 @enduml

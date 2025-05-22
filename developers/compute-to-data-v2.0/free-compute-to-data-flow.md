@@ -34,7 +34,7 @@ resources and resources `min`, `max`, `inUse` for **paid** and **free** compute.
 In this scenario, `free` resources will be
 selected by the user within available limits `min` and `max`.
 
-The consumer tool makes a request to the node **GET /computeEnvironments** and the node returns back to the consumer tool the environments exported at the node startup from `DOCKER_COMPUTE_ENVIRONMENTS` variable. Consumer tool dispalys then to the end user the list of environemnts.
+The consumer tool makes a request to the node **GET /computeEnvironments** and the node returns to the consumer tool the environments exported at the node startup from `DOCKER_COMPUTE_ENVIRONMENTS` variable. Consumer tool dispalys then to the end user the list of environemnts.
 
 The end user selects the free resources and fills in the consumer tool together with job duration that the user considers is needed
 for the algorithm execution.
@@ -45,11 +45,15 @@ Consumer tool calls through ocean.js `freeStartCompute` which requests in Ocean 
 nonce and signature provided by ocean.js is checked. In case of invalid nonce or signature, node returns __500, 'Invalid nonce or signature, unable to proceed.'__
 
 #### Credentials check
-If the node has configured `POLICY_SERVER_URL` and ddo contains credentials, the credentials check is performed in `Policy Server`, otherwise node performs credentials check for consumer address. In case of failure, node returns back to the consumer tool __403, 'Error: Access to asset ${ddo.id} was denied'__
+If the node has configured `POLICY_SERVER_URL` and ddo contains credentials, the credentials check is performed in `Policy Server`, otherwise node performs credentials check for consumer address. 
+
+Credentials checks are performed once at the DDO level, but also for services credentials within the DDO object.
+
+In case of failure, node returns to ocean.js __403, 'Error: Access to asset ${ddo.id} was denied'__ which will be passed back to the end user.
 
 After these checks are performed and are successful, job id is generated and C2D engine is called for the actual algorithm execution.
 
-#### C2D Docker Engine
+#### C2D Engine
 
 The only supported engine for start compute (free and paid) is the one for Docker.
 The following steps executed by C2D Docker engine class are:
@@ -70,11 +74,11 @@ Whenever a job has started, an internal loop which monitors all the new jobs is 
 `JobStarted` -> `PullImage` or `PullImageFailed` -> `ConfiguringVolumes` or `VolumeCreationFailed` -> `Provisioning` or `ContainerCreationFailed` -> `RunningAlgorithm` or `AlgorithmFailed` -> `PublishingResults` or `ResultsUploadFailed`
 
 **Sequence of steps for internal loop:**
-1. Pulling docker image for the algorithm - if failure -> throws error and returns back to the consumer tool and updates job status `SQLite` database in `PullImageFailed`.
-2. Configuring volumes for the dedicated algorithm container - if failure -> throws error and returns back to the consumer tool and updates job status `SQLite` database in `VolumeCreationFailed`.
-3. Create Docker container for the algorithm - if failure -> throws error and returns back to the consumer tool and updates job status `SQLite` database in `ContainerCreationFailed`.
-4. Triggers algorithm execution on dedicated container - if failure from the algorithm -> throws error and returns back to the consumer tool and updates job status `SQLite` database in `AlgorithmFailed`.
-5. Publish results in `/data/outputs` even if the algorithm execution was successful or not - if failure -> throws error and returns back to the consumer tool and updates job status `SQLite` database in `ResultsUploadFailed`.
+1. Pulling docker image for the algorithm - if failure -> throws error and returns to the consumer tool and updates job status `SQLite` database in `PullImageFailed`.
+2. Configuring volumes for the dedicated algorithm container - if failure -> throws error and returns to the consumer tool and updates job status `SQLite` database in `VolumeCreationFailed`.
+3. Create Docker container for the algorithm - if failure -> throws error and returns to the consumer tool and updates job status `SQLite` database in `ContainerCreationFailed`.
+4. Triggers algorithm execution on dedicated container - if failure from the algorithm -> throws error and returns to the consumer tool and updates job status `SQLite` database in `AlgorithmFailed`.
+5. Publish results in `/data/outputs` even if the algorithm execution was successful or not - if failure -> throws error and returns to the consumer tool and updates job status `SQLite` database in `ResultsUploadFailed`.
 If publishing results step was executed successfully, the container and volumes will be deleted together with the folders
 for datasets, algorithms and results.
 
@@ -92,6 +96,6 @@ If compute job status is `PublishingResults`, consumer tool will
 call ocean.js `computeResult` method which requests from node
 on endpoint `GET /computeResult`. Node returns to ocean.js the results content and ocean.js generates a downloadable URL to pass further to the consumer tools.
 
-In case of request failure from node side, the error is retruned back to the consumer tool and displayed to the end user.
+In case of request failure from node side, the error is returned to the consumer tool and displayed to the end user.
 Consumer tools received the downloadable URL and will fetch the BLOB content from it and store on end user's specified results folder path.
 
