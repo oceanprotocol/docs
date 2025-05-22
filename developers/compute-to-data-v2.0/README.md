@@ -14,9 +14,7 @@ Private data holds immense value as it can significantly enhance research and bu
 
 Private data has the potential to drive groundbreaking discoveries in science and technology, with increased data improving the predictive accuracy of modern AI models. Due to its scarcity and the challenges associated with accessing it, private data is often regarded as the most valuable. By utilizing private data through Compute-to-Data, significant rewards can be reaped, leading to transformative advancements and innovative breakthroughs.
 
-{% hint style="info" %}
-The Ocean Protocol provides a compute environment that you can access at the following [address](https://stagev4.c2d.oceanprotocol.com/). Feel free to explore and utilize this platform for your needs.
-{% endhint %}
+The Ocean Protocol provides a compute environment that you can access at the following [address](https://1.c2d.nodes.oceanprotocol.com:8000/). Feel free to explore and utilize this platform for your needs.
 
 We suggest reading these guides to get an understanding of how compute-to-data works:
 
@@ -26,19 +24,13 @@ We suggest reading these guides to get an understanding of how compute-to-data w
 * [Datasets & Algorithms](compute-to-data-datasets-algorithms.md)
 * [Writing Algorithms](compute-to-data-algorithms.md)
 * [Compute options](compute-options.md)
-
-### User Guides
-
-* [How to write compute to data algorithms](broken-reference/)
-* [How to publish a compute-to-data algorithm](broken-reference/)
-* [How to publish a dataset for compute to data](broken-reference/)
+* [Free Start Compute flow](free-compute-to-data-flow.md)
+* [Paid Start Compute flow](paid-compute-to-data-flow.md)
 
 ### Developer Guides
 
 * [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
 * [How to use compute to data with ocean.py](../../data-scientists/ocean.py)
+* [How to run free compute jobs with VSCode extension](../vscode/README.md)
+* [How to run free and paid compute jobs with Ocean CLI](../ocean-cli/run-c2d.md)
 
-### Infrastructure Deployment Guides
-
-* [Minikube Environment](../../infrastructure/compute-to-data-minikube.md)
-* [Private docker registry](../../infrastructure/compute-to-data-docker-registry.md)
