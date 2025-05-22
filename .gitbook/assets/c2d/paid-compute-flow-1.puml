@@ -7,7 +7,7 @@ skinparam maxmessagesize 85
 skinparam sequenceParticipant underline
 
 actor "End User" as end_user
-participant "Consumer\n(VSCode Ext, Ocean CLI)" as consumer
+participant "Consumer\n(Ocean CLI)" as consumer
 participant "Ocean.js" as ocean_js
 participant "Ocean Node" as ocean_node
 participant "Policy Server" as policy_server

@@ -4,7 +4,7 @@ Free compute flow is designed to allow end users run their public algorithms on 
 
 ## Prerequisites
 
-The prerequisite for this flow is the algorithm code which can be input for consumers components: VSCode extension, Ocean CLI.
+The prerequisite for this flow is the algorithm code which can be input for consumers components: Ocean CLI and it is open for integration with other systems (e.g. Ocean Enterprise Marketplace).
 
 ## Flow Illustration
 
