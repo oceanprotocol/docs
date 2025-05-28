@@ -1,2 +1,0 @@
-# Ocean Compute Tech Details
-

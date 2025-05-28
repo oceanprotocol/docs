@@ -1,2 +1,0 @@
-# Sponsor a Data Challenge
-

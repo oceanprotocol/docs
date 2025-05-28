@@ -1,2 +1,0 @@
-# Datatoken Interface Tech Details
-

@@ -1,2 +1,0 @@
-# Join a Data Challenge
-

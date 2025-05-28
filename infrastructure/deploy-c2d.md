@@ -1,2 +1,0 @@
-# Deploy C2D
-

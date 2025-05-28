@@ -1,2 +1,0 @@
-# Get fixed-rate exchanges
-

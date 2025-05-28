@@ -1,2 +1,0 @@
-# Ocean Instance Tech Details
-

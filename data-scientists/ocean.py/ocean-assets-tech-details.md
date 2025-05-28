@@ -1,2 +1,0 @@
-# Ocean Assets Tech Details
-

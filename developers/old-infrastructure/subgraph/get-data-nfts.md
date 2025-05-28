@@ -1,2 +1,0 @@
-# Get data NFTs
-

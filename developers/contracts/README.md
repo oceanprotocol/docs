@@ -20,7 +20,7 @@ By utilizing ERC721 tokens, Ocean **grants data creators greater flexibility and
 
 <figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol Smart Contracts</p></figcaption></figure>
 
-### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
+### [**Community monetization**](broken-reference), to help the community create sustainable businesses.
 
 Ocean brings forth enhanced opportunities for dApp owners, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
 
