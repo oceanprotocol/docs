@@ -1,6 +1,6 @@
-# Edit a Dataset ✏️
+# Edit
 
-To make changes to a dataset, you'll need to start by retrieving the asset's [Decentralized Data Object](../ddo-specification.md) (DDO).
+To make changes to a dataset, you'll need to start by retrieving the asset's [Decentralized Data Object](broken-reference) (DDO).
 
 ## Retrieve DDO
 
@@ -10,9 +10,9 @@ Obtaining the DDO of an asset is a straightforward process. You can accomplish t
 npm run cli getDDO 'assetDID'
 ```
 
-<figure><img src="../../.gitbook/assets/cli/getAsset.png" alt=""><figcaption>Retrieve DDO</figcaption></figure>
+<figure><img src="../../.gitbook/assets/cli/getAsset.png" alt=""><figcaption><p>Retrieve DDO</p></figcaption></figure>
 
-## Edit the Dataset 
+## Edit the Dataset
 
 After retrieving the asset's DDO and saving it as a JSON file, you can proceed to edit the metadata as needed. Once you've made the necessary changes, you can utilize the following command to apply the updated metadata:
 

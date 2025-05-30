@@ -2,11 +2,9 @@
 description: Learn the blockchain concepts behind Ocean
 ---
 
-# Basic Concepts
+# Basic concepts - to be updated
 
 You'll need to know a thing or two about blockchains to understand Ocean Protocol's tech... Let's get started with the basics 🧑‍🏫
-
-<figure><img src="../.gitbook/assets/gif/drew-barrymore-notes.gif" alt=""><figcaption><p>Prepare yourself, my friend</p></figcaption></figure>
 
 ### Blockchain: The backbone of Ocean
 

@@ -93,7 +93,7 @@ Each of these fees plays a role in ensuring fair compensation and supporting the
 
 [Providers](../old-infrastructure/provider/) facilitate data consumption, initiate compute jobs, encrypt and decrypt DDOs, and verify user access to specific data assets or services.
 
-Provider fees serve as [compensation](../community-monetization.md#3.-running-your-own-provider) to the individuals or organizations operating their own provider instances when users request assets.
+Provider fees serve as [compensation](broken-reference) to the individuals or organizations operating their own provider instances when users request assets.
 
 * Defined by the [Provider](../old-infrastructure/provider/) for any consumption.
 * Expressed in: Address, Token, Amount (absolute), Timeout.

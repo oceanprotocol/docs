@@ -7,9 +7,9 @@ description: >-
   the DDO standard.
 ---
 
-# New DDO Specification
+# OE DDO Specification - to be updated
 
-## New DDO Schema - High Level
+## New DDO Schema - High Level&#x20;
 
 The below diagram shows the high-level DDO schema depicting the content of each data structure and the relations between them.
 
@@ -76,7 +76,7 @@ Stats "1" --> "1..*" Price
 
 A DDO in Ocean has these required attributes:
 
-<table><thead><tr><th width="169.6737288135593">Attribute</th><th width="164">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>@context</code></strong></td><td>Array of <code>string</code></td><td>Contexts used for validation.</td></tr><tr><td><strong><code>id</code></strong></td><td><code>string</code></td><td>Computed as <code>sha256(address of ERC721 contract + chainId)</code>.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version information in <a href="https://semver.org">SemVer</a> notation referring to this DDO spec version, like <code>4.1.0</code>.</td></tr><tr><td><strong><code>chainId</code></strong></td><td><code>number</code></td><td>Stores the chainId of the network the DDO was published to.</td></tr><tr><td><strong><code>nftAddress</code></strong></td><td><code>string</code></td><td>NFT contract linked to this asset</td></tr><tr><td><strong><code>metadata</code></strong></td><td><a href="ddo-specification.md#metadata">Metadata</a></td><td>Stores an object describing the asset.</td></tr><tr><td><strong><code>services</code></strong></td><td><a href="ddo-specification.md#services">Services</a></td><td>Stores an array of services defining access to the asset.</td></tr><tr><td><strong><code>credentials</code></strong></td><td><a href="ddo-specification.md#credentials">Credentials</a></td><td>Describes the credentials needed to access a dataset in addition to the <code>services</code> definition.</td></tr></tbody></table>
+<table><thead><tr><th width="169.6737288135593">Attribute</th><th width="164">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>@context</code></strong></td><td>Array of <code>string</code></td><td>Contexts used for validation.</td></tr><tr><td><strong><code>id</code></strong></td><td><code>string</code></td><td>Computed as <code>sha256(address of ERC721 contract + chainId)</code>.</td></tr><tr><td><strong><code>version</code></strong></td><td><code>string</code></td><td>Version information in <a href="https://semver.org">SemVer</a> notation referring to this DDO spec version, like <code>4.1.0</code>.</td></tr><tr><td><strong><code>chainId</code></strong></td><td><code>number</code></td><td>Stores the chainId of the network the DDO was published to.</td></tr><tr><td><strong><code>nftAddress</code></strong></td><td><code>string</code></td><td>NFT contract linked to this asset</td></tr><tr><td><strong><code>metadata</code></strong></td><td><a href="broken-reference">Metadata</a></td><td>Stores an object describing the asset.</td></tr><tr><td><strong><code>services</code></strong></td><td><a href="broken-reference">Services</a></td><td>Stores an array of services defining access to the asset.</td></tr><tr><td><strong><code>credentials</code></strong></td><td><a href="broken-reference">Credentials</a></td><td>Describes the credentials needed to access a dataset in addition to the <code>services</code> definition.</td></tr></tbody></table>
 
 <details>
 
@@ -310,7 +310,7 @@ Services define the access for an asset, and each service is represented by its 
 
 An asset should have at least one service to be actually accessible and can have as many services which make sense for a specific use case.
 
-<table><thead><tr><th width="259.3333333333333">Attribute</th><th width="121">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>id</code></strong>*</td><td><code>string</code></td><td>Unique ID</td></tr><tr><td><strong><code>type</code></strong>*</td><td><code>string</code></td><td>Type of service <code>access</code>, <code>compute</code>, <code>wss</code> etc.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Service friendly name</td></tr><tr><td><strong><code>description</code></strong></td><td><code>string</code></td><td>Service description</td></tr><tr><td><strong><code>datatokenAddress</code></strong>*</td><td><code>string</code></td><td>Datatoken</td></tr><tr><td><strong><code>serviceEndpoint</code></strong>*</td><td><code>string</code></td><td>Provider URL (schema + host)</td></tr><tr><td><strong><code>files</code></strong>*</td><td><a href="#files">Files</a></td><td>Encrypted file.</td></tr><tr><td><strong><code>timeout</code></strong>*</td><td><code>number</code></td><td>Describing how long the service can be used after consumption is initiated. A timeout of <code>0</code> represents no time limit. Expressed in seconds.</td></tr><tr><td><strong><code>compute</code></strong>**</td><td><a href="compute-to-data/compute-options.md">Compute</a></td><td>If service is of <code>type</code> <code>compute</code>, holds information about the compute-related privacy settings &#x26; resources.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="compute-to-data/compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object the defines required consumer input before consuming the asset</td></tr><tr><td><strong><code>additionalInformation</code></strong></td><td>Object</td><td>Stores additional information, this is customizable by publisher</td></tr></tbody></table>
+<table><thead><tr><th width="259.3333333333333">Attribute</th><th width="121">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>id</code></strong>*</td><td><code>string</code></td><td>Unique ID</td></tr><tr><td><strong><code>type</code></strong>*</td><td><code>string</code></td><td>Type of service <code>access</code>, <code>compute</code>, <code>wss</code> etc.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Service friendly name</td></tr><tr><td><strong><code>description</code></strong></td><td><code>string</code></td><td>Service description</td></tr><tr><td><strong><code>datatokenAddress</code></strong>*</td><td><code>string</code></td><td>Datatoken</td></tr><tr><td><strong><code>serviceEndpoint</code></strong>*</td><td><code>string</code></td><td>Provider URL (schema + host)</td></tr><tr><td><strong><code>files</code></strong>*</td><td><a href="new-ddo-specification.md#files">Files</a></td><td>Encrypted file.</td></tr><tr><td><strong><code>timeout</code></strong>*</td><td><code>number</code></td><td>Describing how long the service can be used after consumption is initiated. A timeout of <code>0</code> represents no time limit. Expressed in seconds.</td></tr><tr><td><strong><code>compute</code></strong>**</td><td><a href="compute-to-data/compute-options.md">Compute</a></td><td>If service is of <code>type</code> <code>compute</code>, holds information about the compute-related privacy settings &#x26; resources.</td></tr><tr><td><strong><code>consumerParameters</code></strong></td><td><a href="compute-to-data/compute-options.md#consumer-parameters">Consumer Parameters</a></td><td>An object the defines required consumer input before consuming the asset</td></tr><tr><td><strong><code>additionalInformation</code></strong></td><td>Object</td><td>Stores additional information, this is customizable by publisher</td></tr></tbody></table>
 
 \* Required
 
@@ -430,16 +430,13 @@ States details:
 5. **Ordering is temporarily disabled**: Assets in this state are still discoverable, but ordering functionality is temporarily disabled. Users can view the asset and gather information, but they cannot place orders at that moment. However, these assets are still listed under the owner's profile.
 6. **Asset unlisted**: Assets in the "Asset unlisted" state are not discoverable. However, users can still place orders for these assets, making them accessible. Unlisted assets are listed under the owner's profile, allowing users to view and access them.
 
-### Aquarius Enhanced DDO Response
-
 The following fields are added by _Aquarius_ in its DDO response for convenience reasons, where an asset returned by _Aquarius_ inherits the DDO fields stored on-chain.
 
-These additional fields are never stored on-chain and are never taken into consideration when [hashing the DDO](ddo-specification.md#ddo-checksum).
-
+These additional fields are never stored on-chain and are never taken into consideration when [hashing the DDO](broken-reference).
 
 #### Datatokens
 
-The `datatokens` array contains information about the ERC20 datatokens attached to [asset services](ddo-specification.md#services).
+The `datatokens` array contains information about the ERC20 datatokens attached to [asset services](broken-reference).
 
 <table><thead><tr><th width="160.77255871446232">Attribute</th><th width="128.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>address</code></strong></td><td><code>string</code></td><td>Contract address of the deployed ERC20 contract.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Name of NFT set in contract.</td></tr><tr><td><strong><code>symbol</code></strong></td><td><code>string</code></td><td>Symbol of NFT set in contract.</td></tr><tr><td><strong><code>serviceId</code></strong></td><td><code>string</code></td><td>ID of the service the datatoken is attached to.</td></tr></tbody></table>
 
@@ -473,18 +470,19 @@ The `datatokens` array contains information about the ERC20 datatokens attached 
 **Indexed Metadata** contains off-chain data that helps storing assets pricing details and displaying them properly within decenterlized applications.
 
 **Indexed Metadata** is composed of the following objects:
+
 * NFT
 * Event
 * Purgatory
 * Stats
 
-When hashing is performed against a document, **indexedMeatadata** object has to be removed from the DDO structure, its off-chain data being stored and maintained only in the **_Indexer_** database, within **DDO** collection. 
+When hashing is performed against a document, **indexedMeatadata** object has to be removed from the DDO structure, its off-chain data being stored and maintained only in the _**Indexer**_ database, within **DDO** collection.
 
 #### NFT
 
 The `nft` object contains information about the ERC721 NFT contract which represents the intellectual property of the publisher.
 
-<table><thead><tr><th width="144.70989551321452">Attribute</th><th width="234.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>address</code></strong></td><td><code>string</code></td><td>Contract address of the deployed ERC721 NFT contract.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Name of NFT set in contract.</td></tr><tr><td><strong><code>symbol</code></strong></td><td><code>string</code></td><td>Symbol of NFT set in contract.</td></tr><tr><td><strong><code>owner</code></strong></td><td><code>string</code></td><td>ETH account address of the NFT owner.</td></tr><tr><td><strong><code>state</code></strong></td><td><code>number</code></td><td>State of the asset reflecting the NFT contract value. See <a href="ddo-specification.md#state">State</a></td></tr><tr><td><strong><code>created</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of NFT creation.</td></tr><tr><td><strong><code>tokenURI</code></strong></td><td><code>string</code></td><td>tokenURI</td></tr></tbody></table>
+<table><thead><tr><th width="144.70989551321452">Attribute</th><th width="234.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>address</code></strong></td><td><code>string</code></td><td>Contract address of the deployed ERC721 NFT contract.</td></tr><tr><td><strong><code>name</code></strong></td><td><code>string</code></td><td>Name of NFT set in contract.</td></tr><tr><td><strong><code>symbol</code></strong></td><td><code>string</code></td><td>Symbol of NFT set in contract.</td></tr><tr><td><strong><code>owner</code></strong></td><td><code>string</code></td><td>ETH account address of the NFT owner.</td></tr><tr><td><strong><code>state</code></strong></td><td><code>number</code></td><td>State of the asset reflecting the NFT contract value. See <a href="broken-reference">State</a></td></tr><tr><td><strong><code>created</code></strong></td><td><code>ISO date/time string</code></td><td>Contains the date of NFT creation.</td></tr><tr><td><strong><code>tokenURI</code></strong></td><td><code>string</code></td><td>tokenURI</td></tr></tbody></table>
 
 <details>
 
@@ -504,7 +502,6 @@ The `nft` object contains information about the ERC721 NFT contract which repres
 ```
 
 </details>
-
 
 #### Event
 
@@ -749,4 +746,3 @@ IndexedMetadata "1" --> "1" Purgatory
 
 Stats "1" --> "1..n" Price
 ```
-

@@ -1,9 +1,23 @@
 ---
 cover: ../.gitbook/assets/cover/discover_banner.png
 coverY: 7.413145539906106
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
-# 🌊 Discover Ocean
+# Introduction - to be updated
 
 Ocean's mission is to level the playing field for AI and data.
 
@@ -25,12 +39,12 @@ Ocean is a decentralized data exchange protocol to drive AI. Its core tech is:
 
 * [Why Ocean?](why-ocean.md) and [What is Ocean?](what-is-ocean.md)
 * [What can you do with Ocean?](benefits.md)
-* [OCEAN: The Ocean token](ocean-token.md)
+* [OCEAN: The Ocean token](broken-reference)
 * [Networks](networks/), [Bridges](networks/bridges.md)
 * [FAQ](faq.md), [Glossary](glossary.md)
 
 ***
 
-_Next:_ [_Why Ocean?_](why-ocean.md)
+_Next:_ _Why Ocean?_
 
 _Back:_ [_Docs main_](../)

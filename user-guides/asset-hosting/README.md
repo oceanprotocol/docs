@@ -1,8 +1,8 @@
 ---
-description: How to host your data and algorithm NFT assets like a champ 🏆 😎
+description: How to host your data and algorithm NFT assets
 ---
 
-# Host Assets
+# Host Assets - to be updated/deleted
 
 The most important thing to remember is that wherever you host your asset... it needs to be **reachable & downloadable**. It cannot live behind a private firewall such as a private Github repo. You need to **use a proper hosting service!**
 
@@ -17,10 +17,6 @@ In this section, we'll walk you through three options to store your assets: Arwe
 Read on, if you are interested in the security details!
 
 ### Security Considerations
-
-{% embed url="https://media.giphy.com/media/81xwEHX23zhvy/giphy.gif" %}
-These guys know what's up
-{% endembed %}
 
 When you publish your asset as an NFT, then the URL/TX ID/CID required to access the asset is encrypted and stored as a part of the NFT's [DDO](../../developers/identifiers.md) on the blockchain. Buyers don't have access directly to this information, but they interact with the [Provider](https://github.com/oceanprotocol/provider#provider), which decrypts the DDO and acts as a proxy to serve the asset.
 
