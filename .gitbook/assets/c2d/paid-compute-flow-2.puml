@@ -1,0 +1,106 @@
+@startuml "Paid Flow for Compute to Data - Part 2"
+title "Paid Flow for Compute to Data - Part 2"
+
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 85
+skinparam sequenceParticipant underline
+
+actor "End User" as end_user
+participant "Consumer\n(Ocean CLI)" as consumer
+participant "Ocean.js" as ocean_js
+participant "Ocean Node" as ocean_node
+database "Ocean Node's Database\n(SQLiteCompute DB)" as db
+participant "Smart Contracts" as smart_contracts
+
+group Start compute job
+    consumer -> ocean_js: Calls startCompute with resources from env.
+    ocean_js -> ocean_node: **POST /compute**
+    alt Nonce and signature are invalid
+        ocean_node --> ocean_js: Returns 500, error <i>'Invalid nonce or signature, unable to proceed.'</i>
+        ocean_js --> consumer: Returns error
+        consumer --> end_user
+    end
+    ocean_node -> ocean_node: Checks if the assets are orderable + <font color=red>have grant access to run compute jobs</font>
+    group Credentials check
+        alt Policy server configured
+            ocean_node -> policy_server: Requests credentials validation using **startCompute** command
+            policy_server --> ocean_node: Success/failure response
+        else Policy server not configured
+            ocean_node -> ocean_node: Checks allow & deny lists of addresses or from access lists
+        end
+        alt Validation response failure
+            ocean_node --> ocean_js: 403 - Consumer address not authorized
+            ocean_js --> consumer
+            consumer --> end_user
+        else Validation response success
+            note over ocean_node
+                Continue with provider fees.
+            end note
+        end
+    end group
+    ocean_node -> ocean_node: Calculates price per specified resources, creates job ID.
+    ocean_node -> smart_contracts: Create lock in Escrow contract with maxLockedAmount.
+    smart_contracts --> ocean_node: Returns agreementId.
+    group Monitor compute job
+    ocean_node -> ocean_node: Tries to create docker environment within Docker engine class.
+        alt Job created successfully
+        ocean_node -> db: Saves job.
+        db --> ocean_node
+        ocean_node --> ocean_js: Returns job ID.
+        ocean_js --> consumer
+        consumer --> end_user: Displays job ID
+        else Job not created successfully - cleanup
+            group Cleanup job
+                alt Algorithm runTime > 0
+                    ocean_node -> smart_contracts: Calls claimLock with user as node owner getting paid.
+                    smart_contracts --> ocean_node: Returns tx ID.
+                else Algorithm runTime = 0
+                    ocean_node -> smart_contracts: Calls cancelExpiredLocks without user as node owner getting paid.
+                    smart_contracts --> ocean_node: Returns tx ID.
+                end
+            end group
+        end
+        alt Algorithm execution exceeds specified maxJobDuration
+            ocean_node -> ocean_node: Stops docker container immediatly
+            ocean_node -> db: Updates job status from **Running** to **Publishing Results**
+            db --> ocean_node
+            ocean_node -> ocean_node: Cleanup job started
+            note over ocean_node
+                Check group **Cleanup job**
+            end note
+        else Algorithm finishes its execution in time
+            ocean_node -> db: Updates job status from **Running** to **Publishing Results**
+            db --> ocean_node
+            ocean_node -> ocean_node: Cleanup job started - **claimLock** case
+            note over ocean_node
+                Check group **Cleanup job**
+            end note
+        end
+
+    end group
+end group
+
+
+group Get compute job status
+    consumer -> ocean_js: Calls computeStatus
+    ocean_js -> ocean_node: **GET /compute**
+    ocean_node -> db: Requests job data from specific C2D engine.
+    db --> ocean_node: Returns job data from specific C2D engine.
+    ocean_node --> ocean_js: Returns status.
+    ocean_js --> consumer
+    consumer --> end_user: Displays the progress of the job.
+end group
+
+group Retrieve compute job results
+    end_user -> consumer: Requests results, provide path.
+    consumer -> ocean_js: Calls computeResult.
+    ocean_js -> ocean_node: **GET /computeResult**
+    ocean_node -> db: Requests job from specific C2D engine.
+    db --> ocean_node: Returns job from specific C2D engine.
+    ocean_node -> ocean_js: Returns streams for results files
+    ocean_js -> consumer: Returns job results
+    consumer -> end_user: Downloads results in the path.
+end group
+
+@enduml
