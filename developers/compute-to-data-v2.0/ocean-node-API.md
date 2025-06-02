@@ -208,4 +208,94 @@ Response
 }
 ```
 
-## POST /api/compute
+## POST /api/services/compute
+
+Payload example:
+
+```json
+"datasets":  [
+  {
+    "documentId": "did:op:9a0ada50a883e7e8af61fa313ff835ddf1416103ecf237eaa5bf9e8c5bfdc0d2",
+    "serviceId": "ccb398c50d6abd5b456e8d7242bd856a1767a890b537c2f8c10ba8b8a10e6025",
+    "transferTxId": "0xa9b907717cfb516590ae97c3dc203d06abaeb609568380bff4f0e75bc0a810be"
+  }
+],
+"algorithm":  {
+  "documentId": "did:op:e7487c1eaa91015c833d0b0ae0b766d7a14e64dd2fd039b8708aef9775aa77e2",
+  "serviceId": "db164c1b981e4d2974e90e61bda121512e6909c1035c908d68933ae4cfaba6b0",
+  "meta": {
+    "language": "",
+    "version": "0.1",
+    "container": {
+      "entrypoint": "node $ALGO",
+      "image": "node",
+      "tag": "latest",
+      "checksum": "sha256:1155995dda741e93afe4b1c6ced2d01734a6ec69865cc0997daf1f4db7259a36"
+    }
+  },
+  "transferTxId": "0x052aafc6961114216d82bd9e618109a40a5172a3d870ee0ed13d9a207b247689"
+}
+
+```
+
+Response:
+
+```json
+[
+  {
+    "owner": "0x529043886F21D9bc1AE0feDb751e34265a246e47",
+    "did": null,
+    "jobId": "4c4e56df-f134-4a9d-9bb9-5f328cf170a4",
+    "dateCreated": "1748863401.699",
+    "dateFinished": null,
+    "status": 40,
+    "statusText": "Running algorithm",
+    "results": [],
+    "inputDID": null,
+    "algoDID": null,
+    "agreementId": null,
+    "environment": "0x27bb418eca824bdc1fe31a946fcc094297282bc11fb6405612b40108f5d5c5e3-0x269eb044c415a04b372e807b5014b22a2775c07effb60d9c65b47c0569c7dce3",
+    "resources": [
+      { "id": "cpu", "amount": 1 },
+      { "id": "ram","amount": 1000000000 },
+      { "id": "disk", "amount": 0 }
+    ],
+    "isFree": false,
+    "algoStartTimestamp": "1748863415.506",
+    "algoStopTimestamp": "0",
+    "maxJobDuration": 900
+  }
+]
+```
+
+## GET /api/services/compute
+
+Response:
+
+```json
+[
+  {
+    "owner": "0x529043886F21D9bc1AE0feDb751e34265a246e47",
+    "did": null,
+    "jobId": "4c4e56df-f134-4a9d-9bb9-5f328cf170a4",
+    "dateCreated": "1748863401.699",
+    "dateFinished": null,
+    "status": 40,
+    "statusText": "Running algorithm",
+    "results": [],
+    "inputDID": null,
+    "algoDID": null,
+    "agreementId": null,
+    "environment": "0x27bb418eca824bdc1fe31a946fcc094297282bc11fb6405612b40108f5d5c5e3-0x269eb044c415a04b372e807b5014b22a2775c07effb60d9c65b47c0569c7dce3",
+    "resources": [
+      { "id": "cpu", "amount": 1 },
+      { "id": "ram","amount": 1000000000 },
+      { "id": "disk", "amount": 0 }
+    ],
+    "isFree": false,
+    "algoStartTimestamp": "1748863415.506",
+    "algoStopTimestamp": "0",
+    "maxJobDuration": 900
+  }
+]
+```
