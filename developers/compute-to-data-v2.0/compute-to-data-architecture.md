@@ -71,7 +71,8 @@ When handler from Ocean Node (free or paid) is called, C2D Engine processes the 
 One of its responsibility revolves around fetching and preparing the required assets and files, ensuring a smooth and seamless execution of the job. By meticulously handling the environment configuration, the **C2D Engine** guarantees that all necessary components are in place, setting the stage for a successful job execution.
 
 1. **Fetching Dataset Assets**: It downloads the files corresponding to datasets and saves them in the location `/data/inputs/DID/`. The files are named based on their array index ranging from 0 to X, depending on the total number of files associated with the dataset.
-2. **Fetching Algorithm Files**: It retrieves the algorithm files and stores them in the `/data/transformations/` directory. The first file is named 'algorithm', and the subsequent files are indexed from 1 to X, based on the number of files present for the algorithm.
+Datasets can be provided as the following supported formats: `did`, `url`, `arweave`, `ipfs`.
+2. **Fetching Algorithm Files**: It retrieves the algorithm files and stores them in the `/data/transformations/` directory. The first file is named 'algorithm', and the subsequent files are indexed from 1 to X, based on the number of files present for the algorithm. Algorithms can be provided as the following supported formats: `did`, `url`, `arweave`, `ipfs`.
 3. **Fetching DDOS**: Additionally, it fetches Decentralized Document Oriented Storage (DDOS) and saves them to the disk at the location `/data/ddos/`.
 4. **Error Handling**: In case of any provisioning failures, whether during data fetching or algorithm processing, job status is updated in a SQLite database, and logs the relevant error messages.
 
