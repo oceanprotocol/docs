@@ -35,10 +35,11 @@ VS Code 1.96.0 or higher
 
 - Custom Compute Node: Enter your own node URL or use the default Ocean Protocol node
 - Wallet Integration: Use auto-generated wallet or enter private key for your own wallet
-- Custom Docker Images. If you need a custom environment with your own dependencies installed, you can use a custom docker image. Default is oceanprotocol/algo_dockers (Python) or node (JavaScript)
+- Custom Docker Images. If you need a custom environment with your own dependencies installed, you can use a custom docker image. Default is `oceanprotocol/c2d_examples` (Python - tag: `py-general`) or node (JavaScript - tag: `js-general`)
 - Docker Tags: Specify version tags for your docker image (like python-branin or latest)
 - Algorithm: The vscode extension automatically detects open JavaScript or Python files. Or alternatively you can specify the algorithm file manually here.
-- Dataset: Optional JSON file for input data
+Algorithms can be provided as the following supported formats: `did`, `url`, `arweave`, `ipfs`, `rawcode`.
+- Dataset: Optional JSON file for input data. Datasets can be provided as the following supported formats: `did`, `url`, `arweave`, `ipfs`.
 - Results Folder: Where computation results will be saved
 
 <figure><img src="../../.gitbook/assets/vscode/setup.png" alt="Ocean Protocol VSCode Extension Optional Setup"><figcaption>Optional Setup Configuration</figcaption></figure>
