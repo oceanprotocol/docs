@@ -20,19 +20,6 @@ The Ocean Protocol provides a compute environment that you can access at the fol
 
 We suggest reading these guides to get an understanding of how compute-to-data works:
 
-### Architecture & Overview Guides
-
-* [Architecture](compute-to-data-architecture.md)
-* [Datasets & Algorithms](compute-to-data-datasets-algorithms.md)
-* [Writing Algorithms](compute-to-data-algorithms.md)
-* [Compute options](compute-options.md)
-
-### User Guides
-
-* [How to write compute to data algorithms](broken-reference/)
-* [How to publish a compute-to-data algorithm](broken-reference/)
-* [How to publish a dataset for compute to data](broken-reference/)
-
 ### Developer Guides
 
 * [How to use compute to data with ocean.js](../ocean.js/cod-asset.md)
@@ -42,3 +29,5 @@ We suggest reading these guides to get an understanding of how compute-to-data w
 
 * [Minikube Environment](../../infrastructure/compute-to-data-minikube.md)
 * [Private docker registry](../../infrastructure/compute-to-data-docker-registry.md)
+
+For a hands-on experience with Compute-to-Data, check out the [VS Code Extension](https://docs.oceanprotocol.com/developers/vscode) and run jobs directly from your editor. 
