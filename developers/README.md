@@ -14,8 +14,8 @@ coverY: 0
 
 Example live dapps:
 
-* **Data Markets**: [Acentrik Market](https://market.acentrik.io/) for enterprises, and [Ocean Market](https://market.oceanprotocol.com) for general.
-* **Token-gated dapps**: [Autobot](https://autobotocean.com/) for analytics, and [Ocean Waves](https://waves.oceanprotocol.com/) for music.
+* **Data Markets**: [Ocean Market](https://market.oceanprotocol.com).
+* **Token-gated dapps**: [Ocean Waves](https://waves.oceanprotocol.com/) for music.
 * **Token-gated feeds**: [Ocean Predictoor](https://predictoor.ai) for AI prediction feeds
 
 ## How do developers start using Ocean?
