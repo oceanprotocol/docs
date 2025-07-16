@@ -12,7 +12,22 @@ An asset categorized as a `compute type` incorporates additional attributes unde
 
 These attributes are specifically relevant to assets that fall within the compute category and are not required for assets classified under the `access type`. However, if an asset is designated as `compute`, it is essential to include these attributes to provide comprehensive information about the compute service associated with the asset.
 
-<table><thead><tr><th width="224.33333333333331">Attribute</th><th width="154">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>allowRawAlgorithm</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag &#x26; drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td></tr><tr><td><strong><code>allowNetworkAccess</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, the algorithm job will have network access.</td></tr><tr><td><strong><code>publisherTrustedAlgorithmPublishers</code></strong>*</td><td>Array of <code>string</code></td><td>If not defined or empty array, then any publisher address has **restricted** access to run the algorithm against that specific dataset. If the list contains wildcard '*', all publishers are allowed to run compute jobs against that dataset.</td></tr><tr><td><strong><code>publisherTrustedAlgorithms</code></strong>*</td><td>Array of <code>publisherTrustedAlgorithms</code></td><td>If not defined or empty array, then any algorithm will not be allowed by that specific dataset. If the list contains wildcard '*', all algorithms are trusted & allowed by the compute asset. (see below).</td></tr></tbody></table>
+<table><thead><tr><th width="224.33333333333331">Attribute</th><th width="154">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong><code>allowRawAlgorithm</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, any passed raw text will be allowed to run. Useful for an algorithm drag &#x26; drop use case, but increases risk of data escape through malicious user input. Should be <code>false</code> by default in all implementations.</td></tr><tr><td><strong><code>allowNetworkAccess</code></strong>*</td><td><code>boolean</code></td><td>If <code>true</code>, the algorithm job will have network access.</td></tr><tr><td><strong><code>publisherTrustedAlgorithmPublishers</code></strong>*</td><td>Array of <code>string</code></td><td>If not defined or empty array, then any publisher address has **restricted** access to run the algorithm against that specific dataset. If the list contains wildcard '*', all publishers are allowed to run compute jobs against that dataset.</td></tr><tr><td><strong><code>publisherTrustedAlgorithms</code></strong>*</td><td>Array of <code>publisherTrustedAlgorithms</code></td><td>If not defined or empty array, then any algorithm will not be allowed by that specific dataset. If the list contains an element with the following format:
+
+```
+{
+  "did": "*",
+  "filesChecksum": "*",
+  "containerSectionChecksum": "*"
+}
+```
+
+all algorithms are trusted & allowed by the compute asset (see below). This structure is flexible, allowing access for specific usecase, for e.g.:
+- only `did` is set to `"*"` within `publisherTrustedAlgorithms`  and others not, all algos dids are allowed to run c2d jobs against a dataset, (with the specified container checksum).
+- only `fileChecksum` is set to `"*"` within `publisherTrustedAlgorithms`  and others not, all services with that did are allowed to run c2d against the dataset.
+- only `containerSectionChecksum` is set to `"*"` within `publisherTrustedAlgorithms`  and others not, all algos containers checksums are valid to run c2d against the dataset.
+- `did` and `fileChecksum` are set to `"*"` and `containerSectionChecksum` not, then all assets with all services which have the specified container checksum are allowed.
+And other combinations for access flexibility. </td></tr></tbody></table>
 
 \* Required
 
