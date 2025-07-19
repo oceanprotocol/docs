@@ -54,6 +54,9 @@ The entire Compute-to-Data functionality is embedded in Ocean Node which include
 - `ComputeStop` - stops compute job execution when the job is `Running`.
 - `ComputeGetResult` - returns compute job results when job is `Finished`.
 
+**Observation**
+
+To see these handlers in action and how you can use them, please kindly check [Node's Specification here for P2P commnads and HTTP endpoints](https://github.com/oceanprotocol/ocean-node/blob/main/docs/API.md)
 
 ### C2D Engine
 
