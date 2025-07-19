@@ -2,7 +2,7 @@
 
 Run compute jobs on Ocean Protocol directly from VS Code. The extension automatically detects your active algorithm file and streamlines job submission, monitoring, and results retrieval. Simply open a python or javascript file and click **Start Compute Job**.
 
-<figure><img src=".gitbook/assets/vscode/main-screenshot.png" alt="Ocean Protocol VSCode Extension"><figcaption>Ocean Protocol VSCode Extension</figcaption></figure>
+<figure><img src="../../.gitbook/assets/vscode/main-screenshot.png" alt="Ocean Protocol VSCode Extension"><figcaption>Ocean Protocol VSCode Extension</figcaption></figure>
 
 ## Getting Started
 
@@ -38,11 +38,15 @@ VS Code 1.96.0 or higher
 - Custom Docker Images. If you need a custom environment with your own dependencies installed, you can use a custom docker image. Default is `oceanprotocol/c2d_examples` (Python - tag: `py-general`) or node (JavaScript - tag: `js-general`)
 - Docker Tags: Specify version tags for your docker image (like python-branin or latest)
 - Algorithm: The vscode extension automatically detects open JavaScript or Python files. Or alternatively you can specify the algorithm file manually here.
-Algorithms can be provided as the following supported formats: `did`, `url`, `arweave`, `ipfs`, `rawcode`.
+Algorithms can be provided as `rawcode`.
 - Dataset: Optional JSON file for input data. Datasets can be provided as the following supported formats: `did`, `url`, `arweave`, `ipfs`.
 - Results Folder: Where computation results will be saved
 
-<figure><img src="../../.gitbook/assets/vscode/setup.png" alt="Ocean Protocol VSCode Extension Optional Setup"><figcaption>Optional Setup Configuration</figcaption></figure>
+<figure><img src="../../.gitbook/assets/vscode/setup1.png" alt="Ocean Protocol VSCode Extension Optional Setup 1"><figcaption>Optional Setup Configuration - Part 1</figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/vscode/setup2.png" alt="Ocean Protocol VSCode Extension Optional Setup 2"><figcaption>Optional Setup Configuration - Part 2</figcaption></figure>
+
+
 
 ## Contributing
 
