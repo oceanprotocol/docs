@@ -12,7 +12,7 @@ Embark on an exploration of the innovative realm of Ocean Protocol, where data f
 
 At the core of Ocean Protocol lies the robust [Blockchain Layer](contracts/). Powered by blockchain technology, this layer ensures secure and transparent transactions. It forms the bedrock of decentralized trust, where data providers and consumers come together to trade valuable assets.
 
-The [smart contracts](contracts/) are deployed on the Ethereum mainnet and other compatible [networks](../discover/networks/). The libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To explore the contracts in more depth, go ahead to the [contracts](contracts/) section.
+The [smart contracts](contracts/) are deployed on the Ethereum mainnet and other compatible [networks](contracts/networks.md). The libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To explore the contracts in more depth, go ahead to the [contracts](contracts/) section.
 
 ### Layer 2: The Empowering Middle Layer
 
@@ -29,12 +29,12 @@ These libraries include [Ocean.js](ocean.js), a JavaScript library, and [Ocean.p
 
 Ocean Node is a single component which runs all core middleware services within the Ocean stack. It replaces the roles of Aquarius, Provider and the Subgraph. It integrates the Indexer for metadata management and the Provider for secure data access. It ensures efficient and reliable interactions within the Ocean Protocol network.
 
-Ocean Nodes handles network communication through libp2p, supports secure data handling, and enables flexible compute-to-data operations.&#x20;
+Ocean Nodes handles network communication through libp2p, supports secure data handling, and enables flexible compute-to-data operations.
 
 The functions of Ocean nodes include:
 
 * It is crucial in handling the asset downloads, it streams the purchased data directly to the buyer.
-* It conducts the permission an access checks during the consume flow.&#x20;
+* It conducts the permission an access checks during the consume flow.
 * The Node handles [new DDO structure](https://docs.oceanprotocol.com/developers/new-ddo-specification) (Decentralized Data Object) encryption, but it offers support for [existing DDO format](https://docs.oceanprotocol.com/developers/ddo-specification).
 * It establishes communication with the operator-service for initiating Compute-to-Data jobs.
 * It provides a metadata cache, enhancing search efficiency by caching on-chain data into a Typesense database. This enables faster and more efficient data discovery.

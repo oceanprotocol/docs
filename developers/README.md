@@ -22,13 +22,13 @@ Example live dapps:
 
 * **App level:** [**Use an Ocean Template**](https://oceanprotocol.com/templates).
 * **Library level:** [**Use ocean.js**](ocean.js) is a library built for the key environment of dApp developers: JavaScript. Import it & use it your frontend or NodeJS.
-* **Contract level:** [**Call Ocean contracts**](contracts/) on Eth mainnet [or other chains](../discover/networks/).
+* **Contract level:** [**Call Ocean contracts**](contracts/) on Eth mainnet [or other chains](contracts/networks.md).
 
 ## Developer Docs Quick-links
 
 * [Architecture](architecture.md) - blockchain/contracts layer, middleware, dapps
 * Earning revenue: [code to get payment](broken-reference), [fractional $](fractional-ownership.md), [community $](broken-reference)
-* Schemas: [Metadata](metadata.md), [identifiers/DIDs](identifiers.md), [identifier objects/DDOs](broken-reference), [storage](storage.md), [fine-grained permissions](fg-permissions.md)
+* Schemas: [Metadata](metadata.md), [identifiers/DIDs](assets-and-services/identifiers.md), [identifier objects/DDOs](broken-reference), [storage](assets-and-services/storage.md), [fine-grained permissions](fg-permissions.md)
 * Components:
   * [Barge](barge/) - local chain for testing
   * [Ocean subgraph](old-infrastructure/subgraph/) - grabbing event data from the chain

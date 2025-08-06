@@ -59,7 +59,7 @@ The rest of this doc gives details for each network. You can skip it until you n
 
 **Wallet.** If you can't find Polygon Mainnet as a predefined network, follow [Polygon's guide](https://wiki.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/#add-the-polygon-network-manually).
 
-**Bridge.** Follow the [Polygon Bridge guide](bridges.md) in our docs.
+**Bridge.** Follow the [Polygon Bridge guide](../../discover/networks/bridges.md) in our docs.
 
 ### Oasis Sapphire Mainnet
 
@@ -85,7 +85,7 @@ This is one of the [Binance](https://binance.com)-spawned chains. BNB is the tok
 
 **Wallet.** If BNB Smart Chain is not listed as a predefined network in your wallet, see [Binance's Guide](https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain) to manually connect.
 
-**Bridge.** Our [BNB Smart Chain Bridge Guide](bridges.md#bnb-smart-chain-bridge) describes how to get OCEAN to BNB Smart Chain.
+**Bridge.** Our [BNB Smart Chain Bridge Guide](../../discover/networks/bridges.md#bnb-smart-chain-bridge) describes how to get OCEAN to BNB Smart Chain.
 
 ### Energy Web Chain (EWC)
 
@@ -165,6 +165,6 @@ Unlike production networks, tokens on test networks do not hold real economic va
 
 ***
 
-_Next:_ [_Bridges_](bridges.md)
+_Next:_ [_Bridges_](../../discover/networks/bridges.md)
 
 _Back:_ [_OCEAN: the Ocean token_](broken-reference)

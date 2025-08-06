@@ -2,11 +2,9 @@
 description: How can you enhance data discovery?
 ---
 
-# Metadata
+# Metadata - to be updated
 
-Metadata plays a **crucial role** in asset **discovery**, providing essential information such as **asset type, name, creation date, and licensing details**. Each data asset can have a [decentralized identifier (DID)](identifiers.md) that resolves to a DID document ([DDO](broken-reference)) containing associated metadata. The DDO is essentially a collection of fields in a [JSON](https://www.json.org/) object. To understand working with OCEAN DIDs, you can refer to the [DID documentation](identifiers.md). For a more comprehensive understanding of metadata structure, the [DDO Specification](broken-reference) documentation provides in-depth information.
-
-<figure><img src="../.gitbook/assets/gif/data_everywhere.gif" alt=""><figcaption><p>Data discovery</p></figcaption></figure>
+Metadata plays a **crucial role** in asset **discovery**, providing essential information such as **asset type, name, creation date, and licensing details**. Each data asset can have a [decentralized identifier (DID)](assets-and-services/identifiers.md) that resolves to a DID document ([DDO](broken-reference)) containing associated metadata. The DDO is essentially a collection of fields in a [JSON](https://www.json.org/) object. To understand working with OCEAN DIDs, you can refer to the [DID documentation](assets-and-services/identifiers.md). For a more comprehensive understanding of metadata structure, the [DDO Specification](broken-reference) documentation provides in-depth information.
 
 In general, any dApp within the Ocean ecosystem is required to store metadata for every listed dataset. The metadata is useful to determine which datasets are the most relevant.
 
@@ -30,7 +28,7 @@ Other metadata might also be available. For example:
 
 DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
 
-[**Decentralized identifiers**](identifiers.md) (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more. A **DID Document** (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
+[**Decentralized identifiers**](assets-and-services/identifiers.md) (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more. A **DID Document** (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
 
 Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more.
 
@@ -83,4 +81,4 @@ While we utilize a specific DDO structure, you have the flexibility to customize
 As developers, we understand that you eat, breathe, and live code. That's why we invite you to explore the [ocean.py](../data-scientists/ocean.py/publish-flow.md#publishing-alternatives) and [ocean.js](ocean.js/update-metadata.md) pages, where you'll find practical examples of how to set up and update metadata for an asset :computer:
 {% endhint %}
 
-You'll have more information about the DIDs, on the [Identifiers](identifiers.md) page.
+You'll have more information about the DIDs, on the [Identifiers](assets-and-services/identifiers.md) page.
