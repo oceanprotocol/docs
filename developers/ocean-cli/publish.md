@@ -1,10 +1,10 @@
-# Publish a Dataset 📤
+# Publish
 
-Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. The flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐 
+Once you've configured the RPC environment variable, you're ready to publish a new dataset on the connected network. The flexible setup allows you to switch to a different network simply by substituting the RPC endpoint with one corresponding to another network. 🌐
 
 For setup configuration on Ocean CLI, please consult first [install section](install.md)
 
-To initiate the dataset publishing process, we'll start by updating the helper [DDO](../ddo-specification.md)(Decentralized Data Object) example named "SimpleDownloadDataset.json." This example can be found in the `./metadata` folder, located at the root directory of the cloned Ocean CLI project.
+To initiate the dataset publishing process, we'll start by updating the helper [DDO](broken-reference)(Decentralized Data Object) example named "SimpleDownloadDataset.json." This example can be found in the `./metadata` folder, located at the root directory of the cloned Ocean CLI project.
 
 ```json
 {
@@ -80,6 +80,6 @@ Now, let's run the command to publish the dataset:
 npm run cli publish metadata/simpleDownloadDataset.json
 ```
 
-<figure><img src="../../.gitbook/assets/cli/publish.png" alt=""><figcaption>Publish dataset</figcaption></figure>
+<figure><img src="../../.gitbook/assets/cli/publish.png" alt=""><figcaption><p>Publish dataset</p></figcaption></figure>
 
 Executing this command will initiate the dataset publishing process, making your dataset accessible and discoverable on the Ocean Protocol network. 🌊

@@ -1,4 +1,4 @@
-# What can you do with Ocean?
+# What can you do with Ocean Enterprise? - to be updated
 
 This page shows things you can do with Ocean...
 
@@ -11,11 +11,7 @@ Let's explore each...
 
 ## What builders can do
 
-<div align="center">
-
-<figure><img src="../.gitbook/assets/general/dapps.png" alt="" width="75%"><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../.gitbook/assets/general/dapps.png" alt="" width="75%"><figcaption></figcaption></figure></div>
 
 <details>
 
@@ -47,17 +43,13 @@ To dive deeper, please go to [Developers page](../developers/).
 
 ## What data scientists can do
 
-<div align="center">
-
-<figure><img src="../.gitbook/assets/predictoor/predictoor_ui_crop.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../.gitbook/assets/predictoor/predictoor_ui_crop.png" alt=""><figcaption></figcaption></figure></div>
 
 <details>
 
 <summary>Use Ocean in Python</summary>
 
-The [**ocean.py**](../data-scientists/ocean.py/) library is built for the key environment of data scientists: Python. Use it to earn $ from your data, share your data, get more data from others, and see provenance of data usage.
+The [**ocean.py**](../data-scientists/ocean.py) library is built for the key environment of data scientists: Python. Use it to earn $ from your data, share your data, get more data from others, and see provenance of data usage.
 
 </details>
 
@@ -111,6 +103,6 @@ To become a member of the Ambassador Program, follow these steps:
 
 ***
 
-_Next:_ [_OCEAN: The Ocean token_](ocean-token.md)
+_Next:_ [_OCEAN: The Ocean token_](broken-reference)
 
 _Back:_ [_What is Ocean?_](what-is-ocean.md)

@@ -6,7 +6,7 @@ description: Empowering the Decentralised Data Economy
 
 The suite of smart contracts serve as the backbone of the decentralized data economy. These contracts facilitate secure, transparent, and efficient interactions among data providers, consumers, and ecosystem participants.
 
-The smart contracts have been deployed across multiple [networks](../../discover/networks/) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). They introduced significant enhancements that encompass the following key **features**:
+The smart contracts have been deployed across multiple [networks](networks.md) and are readily accessible through the GitHub [repository](https://github.com/oceanprotocol/contracts/tree/main/contracts). They introduced significant enhancements that encompass the following key **features**:
 
 ### [**Data NFTs**](data-nfts.md) **for Enhanced Data IP Management**
 
@@ -20,7 +20,7 @@ By utilizing ERC721 tokens, Ocean **grants data creators greater flexibility and
 
 <figure><img src="../../.gitbook/assets/contracts/v4_contracts_overview.png" alt=""><figcaption><p>Ocean Protocol Smart Contracts</p></figcaption></figure>
 
-### [**Community monetization**](../community-monetization.md), to help the community create sustainable businesses.
+### [**Community monetization**](broken-reference), to help the community create sustainable businesses.
 
 Ocean brings forth enhanced opportunities for dApp owners, creating a conducive environment for the emergence of a thriving market of **third-party Providers**.
 
