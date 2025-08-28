@@ -24,6 +24,8 @@
     * [Google Storage](user-guides/asset-hosting/google-storage.md)
     * [Github](user-guides/asset-hosting/github.md)
   * [Marketplace](user-guides/marketplace/README.md)
+    * [Onboarding to the Marketplace](user-guides/marketplace/onboarding-to-the-marketplace/README.md)
+      * [Install MetaMask in the browser](user-guides/marketplace/onboarding-to-the-marketplace/install-metamask-in-the-browser.md)
     * [Logging in to the Marketplace](user-guides/marketplace/logging-in-to-the-marketplace.md)
     * [Publishing an asset](user-guides/marketplace/publishing-an-asset.md)
     * [Consuming an asset](user-guides/marketplace/consuming-an-asset.md)
