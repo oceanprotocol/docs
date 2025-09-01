@@ -6,7 +6,7 @@ description: Learn the blockchain concepts behind Ocean
 
 You'll need to know a thing or two about blockchains to understand Ocean Protocol's tech... Let's get started with the basics 🧑‍🏫
 
-### Blockchain: The backbone of Ocean
+## Blockchain: The backbone of Ocean
 
 Blockchain is a revolutionary technology that enables the decentralized nature of Ocean. At its core, blockchain is a **distributed ledger** that securely **records and verifies transactions across a network of computers**. It operates on the following key concepts that ensure trust and immutability:
 

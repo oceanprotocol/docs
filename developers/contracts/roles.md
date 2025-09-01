@@ -23,7 +23,7 @@ The NFT owner is the owner of the base-IP and is therefore at the highest level.
 With the exception of the NFT owner role, all other roles can be assigned to multiple users.
 {% endhint %}
 
-There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../../data-scientists/ocean.py/) and [ocean.js](../ocean.js/) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
+There are several methods available to assign roles and permissions. One option is to utilize the [ocean.py](../../data-scientists/ocean.py) and [ocean.js](../ocean.js) libraries that we provide. These libraries offer a streamlined approach for assigning roles and permissions programmatically.
 
 Alternatively, for a more straightforward solution that doesn't require coding, you can utilize the network explorer of your asset's network. By accessing the network explorer, you can directly interact with the contracts associated with your asset. Below, we provide a few examples to help guide you through the process.
 
@@ -66,7 +66,7 @@ The **manager** can assign or revoke three main roles (**deployer, metadata upda
 
 ### Metadata Updater
 
-There is also a specific role for updating the metadata. The [Metadata](../metadata.md) updater has the ability to update the information about the data asset (title, description, sample data etc) that is displayed to the user on the asset detail page within the market.
+There is also a specific role for updating the metadata. The [Metadata](../assets-and-services/metadata.md) updater has the ability to update the information about the data asset (title, description, sample data etc) that is displayed to the user on the asset detail page within the market.
 
 To add/remove a metadata updater, the manager can use the [addToMetadataList](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/utils/ERC721RolesAddress.sol#L164)/[removeFromMetadataList](https://github.com/oceanprotocol/contracts/blob/9e29194d910f28a4f0ef17ce6dc8a70741f63309/contracts/utils/ERC721RolesAddress.sol#L183) functions from the ERC721RolesAddress.
 

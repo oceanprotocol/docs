@@ -24,12 +24,12 @@ For blockchain beginners
 
 ## Using wallets
 
-{% content-ref url="wallets/" %}
-[wallets](wallets/)
+{% content-ref url="wallets.md" %}
+[wallets.md](wallets.md)
 {% endcontent-ref %}
 
-{% content-ref url="wallets/metamask-setup.md" %}
-[metamask-setup.md](wallets/metamask-setup.md)
+{% content-ref url="using-the-oe-marketplace/onboarding-to-the-marketplace/metamask-setup.md" %}
+[metamask-setup.md](using-the-oe-marketplace/onboarding-to-the-marketplace/metamask-setup.md)
 {% endcontent-ref %}
 
 ## Data Storage

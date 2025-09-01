@@ -1,65 +1,48 @@
 ---
-description: Ocean Protocol Architecture Adventure!
+description: This page describes the architecture of a Ocean Enterprise system
 ---
 
-# Architecture Overview
+# High Level Architecture
 
-Embark on an exploration of the innovative realm of Ocean Protocol, where data flows seamlessly and AI achieves new heights. Dive into the intricately layered architecture that converges data and services, fostering a harmonious collaboration. Let us delve deep and uncover the profound design of Ocean Protocol.🐬
+Ocean Enterprise has a multi-layer architecture, as presented in the following diagram.&#x20;
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption><p>Overview of the Ocean Protocol Architecture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-### Layer 1: The Foundational Blockchain Layer
 
-At the core of Ocean Protocol lies the robust [Blockchain Layer](contracts/). Powered by blockchain technology, this layer ensures secure and transparent transactions. It forms the bedrock of decentralized trust, where data providers and consumers come together to trade valuable assets.
 
-The [smart contracts](contracts/) are deployed on the Ethereum mainnet and other compatible [networks](contracts/networks.md). The libraries encapsulate the calls to these smart contracts and provide features like publishing new assets, facilitating consumption, managing pricing, and much more. To explore the contracts in more depth, go ahead to the [contracts](contracts/) section.
+**Data Storage Layer:**  handles saving and retrieving of the data managed by the OE stack. The following types of storage are used:
 
-### Layer 2: The Empowering Middle Layer
+* _IPFS_ for storing the asset description. When an asset is created in OE, its description including all metadata attached to the asset is saved in IPFS.
+* _Blockchain_ for storing the reference to the asset description. After the description of the asset is created in IPFS, the reference to the IPFS object is saved in a transaction on blockchain.
+* _Web storage_ for storing the actual content of the assets. For assets of type dataset or algorithm, their content is saved on a storage platform accessible via HTTP protocol. The storage platform can be either on the publisher's premises or in cloud.&#x20;
 
-Above the smart contracts, you'll find essential [libraries](architecture.md#libraries) employed by applications within the Ocean Protocol ecosystem, the [middleware components](architecture.md#middleware-components), and [Compute-to-Data](architecture.md#compute-to-data).
 
-#### Libraries
 
-These libraries include [Ocean.js](ocean.js), a JavaScript library, and [Ocean.py](../data-scientists/ocean.py), a Python library. They serve as powerful tools for developers, enabling integration and interaction with the protocol.
+**Business Logic Layer:** Ocean Enterprise enables a decentralized exchange of data, on one side, and value, on the other side, between a publisher and a consumer. The core element that enables this exchange is represented by the Smart Contracts deployed on-chain.  To this end, the OE Smart Contracts implement the flows for publishing and consuming assets. This layer includes factory contracts, templates for data NFTs and data tokens, fixed rate exchange contracts for paid assets, and Dispenser contracts for free assets.&#x20;
 
-1. [Ocean.js](ocean.js): Ocean.js is a JavaScript library that serves as a powerful tool for developers looking to integrate their applications with the Ocean Protocol ecosystem. Designed to facilitate interaction with the protocol, Ocean.js provides a comprehensive set of functionalities, including data tokenization, asset management, and smart contract interaction. Ocean.js simplifies the process of implementing data access controls, building dApps, and exploring data sets within a decentralized environment.
-2. [Ocean.py](../data-scientists/ocean.py): Ocean.py is a Python library that empowers developers to integrate their applications with the Ocean Protocol ecosystem. With its rich set of functionalities, Ocean.py provides a comprehensive toolkit for interacting with the protocol. Developers and [data scientists](../data-scientists/) can leverage Ocean.py to perform a wide range of tasks, including data tokenization, asset management, and smart contract interactions. This library serves as a bridge between Python and the decentralized world of Ocean Protocol, enabling you to harness the power of decentralized data.
 
-#### Ocean Nodes
 
-Ocean Node is a single component which runs all core middleware services within the Ocean stack. It replaces the roles of Aquarius, Provider and the Subgraph. It integrates the Indexer for metadata management and the Provider for secure data access. It ensures efficient and reliable interactions within the Ocean Protocol network.
+**Services Layer:** Represented by the Ocean Node component, this layer acts as a bridge between the Business Logic Layer and SDK, orchestrating how requests are processed and how business logic is executed. It provides the following services:
 
-Ocean Nodes handles network communication through libp2p, supports secure data handling, and enables flexible compute-to-data operations.
+* orchestration of the entire consumption flows (download and Compute-To-Data).
+* validation for requests.
+* data encryption/decryption
+* data streaming of the purchased asset to the consumer
+* indexing mechanisms for assets
+* abstraction of the complexity of the business and data layer, exposing clean APIs&#x20;
 
-The functions of Ocean nodes include:
 
-* It is crucial in handling the asset downloads, it streams the purchased data directly to the buyer.
-* It conducts the permission an access checks during the consume flow.
-* The Node handles [new DDO structure](https://docs.oceanprotocol.com/developers/new-ddo-specification) (Decentralized Data Object) encryption, but it offers support for [existing DDO format](https://docs.oceanprotocol.com/developers/ddo-specification).
-* It establishes communication with the operator-service for initiating Compute-to-Data jobs.
-* It provides a metadata cache, enhancing search efficiency by caching on-chain data into a Typesense database. This enables faster and more efficient data discovery.
-* It supports multiple chains.
 
-#### Old components
+**SDK:** The ocean.js library encapsulates the Smart Contract functions to create assets as well as the services provided by Ocean Node in JavaScript functions, which can be used to develop OE-enabled business applications.&#x20;
 
-Previously Ocean used the following middleware components:
 
-1. [Aquarius](old-infrastructure/aquarius/)
-2. [Provider](old-infrastructure/provider/)
-3. [Subgraph](old-infrastructure/subgraph/)
 
-#### Compute-to-Data
+**User Interface:** This facilitates the interaction between an end-user and the system. OE provides two interfaces:
 
-[Compute-to-Data](compute-to-data/) (C2D) represents a groundbreaking paradigm within the Ocean Protocol ecosystem, revolutionizing the way data is processed and analyzed. With C2D, the traditional approach of moving data to the computation is inverted, ensuring privacy and security. Instead, algorithms are securely transported to the data sources, enabling computation to be performed locally, without the need to expose sensitive data. This innovative framework facilitates collaborative data analysis while preserving data privacy, making it ideal for scenarios where data owners want to retain control over their valuable assets. C2D provides a powerful tool for enabling secure and privacy-preserving data analysis and encourages collaboration among data providers, ensuring the utilization of valuable data resources while maintaining strict privacy protocols.
+* _Ocean Enterprise Marketplace_: a graphical interface where users can publish, retrieve and consume assets in a very user friendly manner. The user interface controls how data is displayed and how it responds to user actions. It also performs input validations before passing data to deeper levels.
+* _Command Line Interface (CLI)_: a set of high level tools that enable the creation and consumption of OE assets from a command line interface. This is appropriate when OE assets need to be manipulated in back-end like applications, where a user interface is not required. &#x20;
 
-### Layer 3: The Accessible Application Layer
 
-Here, the ocean comes alive with a vibrant ecosystem of dApps, marketplaces, and more. This layer hosts a variety of user-friendly interfaces, applications, and tools, inviting data scientists and curious explorers alike to access, explore, and contribute to the ocean's treasures.
 
-Prominently featured within this layer is [Ocean Market](https://market.oceanprotocol.com), a hub where data enthusiasts and industry stakeholders converge to discover, trade, and unlock the inherent value of data assets. Beyond Ocean Market, the Application Layer hosts a diverse ecosystem of specialized applications and marketplaces, each catering to unique use cases and industries. Empowered by the capabilities of Ocean Protocol, these applications facilitate advanced data exploration, analytics, and collaborative ventures, revolutionizing the way data is accessed, shared, and monetized.
+**Access Control Layer:** Is a critical component that governs who can interact with specific resources in OE and under what conditions.  It acts as a gatekeeper, enforcing policies that determine user permissions based on identity or other descriptive attributes. This layer controls, for instance, who is allowed to publish assets, who is allowed to consume a specific asset or what algorithm is allowed to be executed on top of a specific dataset.
 
-### Layer 4: The Friendly Wallets
-
-At the top of the Ocean Protocol ecosystem, we find the esteemed [Web 3 Wallets](../user-guides/wallets/), the gateway for users to immerse themselves in the world of decentralized data transactions. These wallets serve as trusted companions, enabling users to seamlessly transact within the ecosystem, purchase and sell data NFTs, and acquire valuable datatokens. For a more detailed exploration of Web 3 Wallets and their capabilities, you can refer to the [wallet intro page](../user-guides/wallets/).
-
-With the layers of the architecture clearly delineated, the stage is set for a comprehensive exploration of their underlying logic and intricate design. By examining each individually, we can gain a deeper understanding of their unique characteristics and functionalities.

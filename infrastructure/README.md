@@ -1,10 +1,14 @@
 ---
-description: Learn how to deploy Ocean components in your environment.
+description: Learn how to deploy Ocean Enterprise in your environment.
 cover: ../.gitbook/assets/cover/infrastructure_banner.png
 coverY: 0
 ---
 
-# 🔨 Infrastructure
+# 🔨 Deployment guides
+
+
+
+
 
 There are many ways in which the components can be deployed, from simple configurations used for development and testing to complex configurations, used for production systems.
 
