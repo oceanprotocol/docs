@@ -33,7 +33,7 @@ The user has logged in to the marketplace.
 
 1\. Press the Publish button from the main page.  The Asset Publishing flow has started.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 
 

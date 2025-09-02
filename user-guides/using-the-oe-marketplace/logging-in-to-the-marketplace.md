@@ -23,7 +23,7 @@ To log in to the marketplace, perform the following steps:
 
 1\. On the main page, press the Connect Wallet button.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -53,16 +53,16 @@ To log in to the marketplace, perform the following steps:
 
 **Note:** the SSI Wallet URL is cached in the browser, so future logins to the marketplace won't require entering the SSI Wallet URL. If the user wants to update the SSI Wallet URL,  it can be done from Settings -> Update SSI Walet API, as shown below.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 6\. The signature request window is displayed. Press confirm.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 7\. The user is now connected to the Marketplace with both the web3 and SSI wallet.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

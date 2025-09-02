@@ -1,12 +1,12 @@
 ---
-description: This page describes the fields
+description: This page describes the Asset Metadata screen in the asset publishing flow.
 ---
 
 # Asset Metadata
 
 2\. The first step in this process - Asset Metadata - is displayed on the screen.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -14,15 +14,15 @@ description: This page describes the fields
 
 * **Title:** input a suggestive name for the Asset you are publishing
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Description:** create a detailed description of the Asset. You can use free text, but also Markdown
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Tags:** add suggestive tags for your asset.  The tags help users filter the assets. You can add as many tags as you wish.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Author:** Enter the name of the author of the asset. It could be your name/company name or an alias.
 
@@ -50,3 +50,4 @@ description: This page describes the fields
   * URL: provide the URL where the file is located and press "Validate". After the file location is validated, it is saved in the asset's description.
 * **Terms and Conditions:** All participants within the dataspace are required to comply with its Terms and Conditions. You can review these by clicking the "Terms and Conditions" link. To proceed with the publishing workflow, please confirm your agreement by checking the box labeled "I agree to the Terms and Conditions."&#x20;
 
+4\. Press Continue.
