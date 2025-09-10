@@ -40,17 +40,17 @@
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-Using this user interface, the publisher can define access rules at the asset level based on the Verifiable Credentials (VCs) owned by the consumer in their SSI wallet. The VC-based access rules are named SSI policies or simply policies. Three types of SSI policies can be defined:
+Using this user interface, the publisher can define access rules at the asset level based on the Verifiable Credentials (VCs) owned by the consumer in their SSI wallet. The VC-based access rules are referred to as SSI policies or simply policies. Three types of SSI policies can be defined:
 
 *   **Policies applied to all requested VCs (static policies)**: their scope includes all requested VCs. The following static policies can be applied:
 
     * _signature_: verifies the signature of the VC
     * _not-before_: verifies the credential is not used before its validity time
-    * _revoked-status-list_: verifies the credenatil was not&#x20;
+    * _revoked-status-list_: verifies that the credential was not&#x20;
     * _expired_: Verifies that the credential has not expired
     * signature\_sd-jwt-vc: verifies the signature for the selective disclosure JWT (SD-JWT) type of VCs.
 
-    <mark style="color:$info;background-color:$info;">**Note**</mark><mark style="color:$info;background-color:$info;">: by default, certain policies are enforced by the marketplace and come preselected. Additionally, the component responsible for the execution of the policies against the submitted VCs has a list of predefined policies that are automatically applied to all VCs. Therefore, even if you manually deselect a default policy, it may still be enforced due to these underlying system rules.</mark>
+    <mark style="color:$info;background-color:$info;">**Note**</mark><mark style="color:$info;background-color:$info;">: by default, certain policies are enforced by the marketplace and are  preselected. Additionally, the component that evaluates the submitted VCs applies a set of predefined policies automatically. Therefore, even if you manually deselect a default policy, it may still be enforced due to underlying system rules.</mark>
 * **Policies applied to a specific VC**: applicable only to the VC for which they were defined. The following policies can be applied to the VC level:
   * _Static policies_ (see the list above)
   * &#x20;_Allowed issuer:_ verifies that the VC was issued by a list of specific entities defined by their DIDs. If the VC was not issued by any of the DIDs in the list, the policy fails
@@ -59,7 +59,7 @@ Using this user interface, the publisher can define access rules at the asset le
 *   **Advanced policies:** applicable to all VCs. The following advanced policies can be applied:
 
     * _Credential presenter same as credential owner:_ verifies that the entity that issues the verifiable presentation (VP) that embeds the VC is the same as the subject of the VC. In case the entity that submits the VP for verification is not the subject of the VC, the policy fails.&#x20;
-    * _All requested credential types are necessary for verification:_ verifies that all requested VCs are submitted for verification. If this policy is not enabled and the access rules to the asset request , for instance, two VCs - LegalPerson and LegalRegistrationNumber - a consumer who submits just one of the of these credentials passes the verification. With the policy enabled, passing just one of the credentials will result in failure. &#x20;
+    * _All requested credential types are necessary for verification:_ verifies that all requested VCs are submitted for verification. If this policy is not enabled and the access rules to the asset request, for instance, two VCs - LegalPerson and LegalRegistrationNumber - a consumer who submits just one of the of these credentials passes the verification. With the policy enabled, passing just one of the credentials will result in failure. &#x20;
     * _Minimum number of credentials required_: Set the minimum number of credentials that must be presented for successful verification. Presenting less VCs than the minimum number of credentials will result in failure.&#x20;
     * _Maximum number of credentials required_: Set the maximum number of credentials that must be presented for successful verification.
 
@@ -71,7 +71,9 @@ Using this user interface, the publisher can define access rules at the asset le
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-11\. **Policies applied to a specifc VC**: To define policies applicable to a specific VC, perform the following steps:&#x20;
+
+
+11\. **Policies applied to a specific VC**: To define policies applicable to a particular VC, perform the following steps:&#x20;
 
 * Click the **New Credential Request** button. The **Credential Request #1** group is displayed.
 
@@ -136,9 +138,40 @@ Using this user interface, the publisher can define access rules at the asset le
 
 
 
-* To apply a custom policy available at an URL, perform the following:
-  *   click on **Add policy** button and from the list select **Custom URL Policy**.\
+*   To apply a custom policy available at a URL, perform the following:
+
+    *   click on **Add policy** button and from the list select **Custom URL Policy**.\
 
 
-      <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    *   The UI group for Custom URL policies is displayed. When using custom URL policies, ensure you follow these <mark style="color:red;">guidelines</mark>; otherwise, they will not work.
+
+        <figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+    * Enter the policy name in the **Custom URL Policy Name** text field
+    * Enter the URL where the policy is located in the **Policy URL** text field
+    * If the custom policy needs arguments to run, to add them, click on the **New argument** button
+    *   Add the parameter name in the **Parameter Name** field and its value in the **Value** field. You can add multiple parameters.
+
+        <figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+
+
+
+12\. **Advances Policies.** To set up advanced features related to how the verification of the presented VC is done, perform the following steps:
+
+*   Select the **Edit Advanced Policy Features** checkbox. The **Advanced SSI Policy Features** group is displayed.
+
+    <figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+* Some advanced features are selected by default when the group is displayed.
+*   Please select the policies relevant to your case. For both the minimum and maximum number of credentials required, enter a numerical value as illustrated below.
+
+    <figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+
+<mark style="color:$info;background-color:$info;">**Note**</mark><mark style="color:$info;background-color:$info;">: Ensure you understand the function of the advanced policies and how they impact the verification process of VCs for the respective asset.</mark>
+
+
+
+13\. Press the **Continue** button.&#x20;
 
