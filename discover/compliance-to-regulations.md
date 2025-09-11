@@ -1,4 +1,4 @@
-# Compliance to regulations
+# Regulatory Compliance - UPDATE
 
 GDPR
 
