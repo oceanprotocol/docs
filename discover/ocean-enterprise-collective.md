@@ -1,2 +1,0 @@
-# Ocean Enterprise Collective
-

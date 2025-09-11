@@ -30,15 +30,11 @@ Ocean Enterprise enables you to buy & sell private data, while preserving privac
 
 <div align="center"><figure><img src="../.gitbook/assets/C2D_Ocean Enterprise.png" alt=""><figcaption><p>Compute-to-Data flow</p></figcaption></figure></div>
 
-### Ocean Enterprise Collective e.V.
+### Ecosystem, News & Updates
 
-Ocean Enterprise is designed, developed and maintained by the Ocean Enterprise Collective e.V. (OEC): a non-profit association comprised of international organisations representing a wide range industries including agriculture, energy, health, human resources, manufacturing and public sector.\
+Ocean Enterprise Collective emerged out of the Ocean Protocol [ecosystem](https://oceanprotocol.com/explore/ecosystem), a vibrant and forward-thinking community of data scientists and AI enthusiasts actively building and shaping the future of AI & data. \
 \
-Ocean Enterprise Collective emerged out of the Ocean Protocol [ecosystem](https://oceanprotocol.com/explore/ecosystem), a vibrant and forward-thinking community of data scientists and AI enthusiasts excited about the future of AI & data.&#x20;
-
-### News & Updates
-
-Keep up to date on all the latest developments and news by following Ocean Enterprise on [LinkedIn](https://www.linkedin.com/company/ocean-enterprise-collective) and [Medium](https://medium.com/ocean-enterprise-collective) to.  Or, track Ocean Enterprise progress directly on [GitHub](https://github.com/OceanProtocolEnterprise).
+Keep up to date on all the latest Ocean Enterprise developments and news by following Ocean Enterprise on [LinkedIn](https://www.linkedin.com/company/ocean-enterprise-collective) and [Medium](https://medium.com/ocean-enterprise-collective) to.  Or, track Ocean Enterprise progress directly on [GitHub](https://github.com/OceanProtocolEnterprise).
 
 
 

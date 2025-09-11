@@ -3,30 +3,19 @@ cover: ../.gitbook/assets/Ocean Enterprise_Cover-Styles_Zeichenfläche 1 Kopie 
 coverY: 0
 ---
 
-# Introduction - to be updated
+# Introduction
 
-Ocean's mission is to level the playing field for AI and data.
+Growing demand for AI products and data sovereignty **is fuelling a proliferation of institutional AI and data ecosystems.**&#x20;
 
-How? **By helping you monetize AI models and data, while preserving privacy.**
+Since the initial release of Ocean Protocol there has been strong interest from the business and enterprise community in Ocean Protocol’s next generation data and AI ecosystem technology. &#x20;
 
-Ocean is a decentralized data exchange protocol to drive AI. Its core tech is:
-
-* Data NFTs & datatokens, to enable token-gated access control, data wallets, data DAOs, and more.
-* Compute-to-data: buy & sell private data, while preserving privacy
-
-### Ocean Users Are...
-
-* [**Developers**](../developers/)**.** Build token-gated AI dApps & APIs
-* [**Data scientists**](../data-scientists/)**.** Earn via predictions & challenges
-* [**OCEAN holders**](../data-farming/)**.** Earn rewards by running prediction bots on DeFi crypto tokens to accurately predict their price directions in 5 minutes and 1 Hour timeframe.
-* [**Ocean ambassadors**](https://oceanprotocol.com/explore/community)
+Now, thanks to Ocean Enterprise, businesses can leverage a fully compliant, stable and secure version of Ocean Protocol that includes a wide range of specially developed enterprise ready features ready for immediate deployment at scale.&#x20;
 
 ### Quick Links
 
-* [Why Ocean?](broken-reference) and [What is Ocean?](what-is-ocean.md)
-* [What can you do with Ocean?](benefits.md)
-* [OCEAN: The Ocean token](broken-reference)
-* [Networks](../developers/contracts/networks.md), [Bridges](networks/bridges.md)
+* [What is Ocean Enterprise?](what-is-ocean.md)
+* [What can you do with Ocean Enterprise?](benefits.md)
+* [Licensing Information](licensing-information.md)
 * [FAQ](faq.md), [Glossary](glossary.md)
 
 ***

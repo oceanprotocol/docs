@@ -1,10 +1,10 @@
 # Table of contents
 
 * [👋 Ocean docs](README.md)
-* [Introduction - to be updated](discover/README.md)
+* [Introduction](discover/README.md)
   * [What is Ocean Enterprise?](discover/what-is-ocean.md)
   * [What can you do with Ocean Enterprise? - to be updated](discover/benefits.md)
-  * [Ocean Enterprise Collective](discover/ocean-enterprise-collective.md)
+  * [Ocean Enterprise Collective e.V.](discover/ocean-enterprise-collective-e.v..md)
   * [Compliance to regulations](discover/compliance-to-regulations.md)
   * [Licensing information](discover/licensing-information.md)
   * [FAQ - to be updated](discover/faq.md)
