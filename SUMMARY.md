@@ -3,7 +3,7 @@
 * [👋 Ocean docs](README.md)
 * [Introduction](discover/README.md)
   * [What is Ocean Enterprise?](discover/what-is-ocean.md)
-  * [What can you do with Ocean Enterprise? - to be updated](discover/benefits.md)
+  * [What can you do with Ocean Enterprise?](discover/benefits.md)
   * [Ocean Enterprise Collective e.V.](discover/ocean-enterprise-collective-e.v..md)
   * [Compliance to regulations](discover/compliance-to-regulations.md)
   * [Licensing information](discover/licensing-information.md)
