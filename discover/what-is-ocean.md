@@ -1,65 +1,49 @@
-# What is Ocean Enterprise? - to be updated/deleted
+# What is Ocean Enterprise?
 
-### What is Ocean?
+### What is Ocean Enterprise?
 
-Ocean is a decentralized data exchange protocol.
+Ocean Enterprise is a free open-source enterprise-ready data ecosystem software solution that enables companies and public institutions to securely manage and monetize proprietary AI & data products and services in a trusted and compliant environment.\
+\
+Domain agnostic and collectively governed by an independent non-profit association, Ocean Enterprise is shaping a new transparent era of the data economy and is already being used by leading data-driven businesses in aerospace, agriculture, manufacturing, mobility, smart cities and more.
 
-AI lives on data; Ocean facilitates it.
+### Tech: Data NFTs and Datatokens
 
-Ocean has two specific parts:
+Ocean Enterprise enables decentralized access control via token-gating using Data NFTs (for assigning IP) and Datatokens (for consuming data services). \
+\
+Key principles:
 
-* A live tech stack. At the core is **Datatokens** and **Compute-to-Data**
-* A lively community. This includes **builders, data scientists**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
-
-Let's drill into each.
-
-### Tech: Ocean data NFTs and datatokens
-
-These enable decentralized access control, via token-gating. Key principles:
-
-* Publish data services as ERC721 data NFTs and ERC20 datatokens
-* You can access the dataset / data service if you hold 1.0 datatokens
+* Publish data services as a data NFT (ERC721)
+* Access the datasets and data services if you hold datatokens (ERC20)
 * Consuming data services = spending datatokens
 
 Crypto wallets, exchanges, and DAOs become _data_ wallets, exchanges, and DAOs.
 
-<div align="center"><figure><img src="../.gitbook/assets/discover/onramp-offramp.png" alt=""><figcaption><p>Data NFTs &#x26; datatokens are an on-ramp and off-ramp for data assets into DeFi</p></figcaption></figure></div>
+### Tech:  Compute-to-Data (C2D)
 
-Data can be on Azure or AWS, Filecoin or Arweave, REST APIs or smart contract feeds. Data may be raw AI training data, feature vectors, trained models, even AI model predictions, or non-AI data.
-
-### Tech: Ocean Compute-to-Data
-
-This enables one buy & sell private data, while preserving privacy
+Ocean Enterprise enables you to buy & sell private data, while preserving privacy
 
 * Private data is valuable: using it can improve research and business outcomes. But concerns over privacy and control make it hard to access.
 * Compute-to-Data (C2D) grants access run compute against the data, _on the same premises of the data_. Only the results are visible to the consumer. The data never leaves the premises. Decentralized blockchain technology does the handshaking.
 * C2D enables people to sell private data while preserving privacy, as an opportunity for companies to monetize their data assets.
 * C2D can also be used for data sharing in science or technology contexts, with lower liability risk, because the data doesn't move.
+* Data can be on Azure or AWS, Filecoin or Arweave, REST APIs or smart contract feeds. Data may be raw AI training data, feature vectors, trained models, even AI model predictions, or non-AI data.
 
-<div align="center"><figure><img src="../.gitbook/assets/discover/c2d-mental-model.png" alt="" width="75%"><figcaption><p>Compute-to-Data flow</p></figcaption></figure></div>
+<div align="center"><figure><img src="../.gitbook/assets/C2D_Ocean Enterprise.png" alt=""><figcaption><p>Compute-to-Data flow</p></figcaption></figure></div>
 
-### Community: Ocean Ecosystem
+### Ocean Enterprise Collective e.V.
 
-Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of dapps grown over years, built by enthusiastic developers.
+Ocean Enterprise is designed, developed and maintained by the Ocean Enterprise Collective e.V. (OEC): a non-profit association comprised of international organisations representing a wide range industries including agriculture, energy, health, human resources, manufacturing and public sector.\
+\
+Ocean Enterprise Collective emerged out of the Ocean Protocol [ecosystem](https://oceanprotocol.com/explore/ecosystem), a vibrant and forward-thinking community of data scientists and AI enthusiasts excited about the future of AI & data.&#x20;
 
-<div align="center"><figure><img src="../.gitbook/assets/discover/builders.png" alt="" width="50%"><figcaption></figcaption></figure></div>
+### News & Updates
 
-The Ocean ecosystem also contains many data scientists and AI enthusiasts, excited about the future of AI & data. You can find them doing [predictions](https://www.predictoor.ai/), [data challenges](https://competitions.desights.ai/challenge/list), [Data Farming](https://docs.oceanprotocol.com/data-farming), and more.
+Keep up to date on all the latest developments and news by following Ocean Enterprise on [LinkedIn](https://www.linkedin.com/company/ocean-enterprise-collective) and [Medium](https://medium.com/ocean-enterprise-collective) to.  Or, track Ocean Enterprise progress directly on [GitHub](https://github.com/OceanProtocolEnterprise).
 
-### Community: Ocean Ambassadors
 
-Ocean has an excellent [community of ambassadors](https://oceanprotocol.com/explore/community). Anyone can join.
-
-<div align="center"><figure><img src="../.gitbook/assets/discover/ambassadors.png" alt="" width="50%"><figcaption></figcaption></figure></div>
-
-### Community: Social Media
-
-Follow Ocean on [Twitter](https://twitter.com/OceanProtocol) or [Telegram](https://t.me/oceanprotocol_community) to keep up to date. Chat directly with the Ocean community on [Discord](https://discord.gg/TnXjkR5). Or, track Ocean progress directly on [GitHub](https://github.com/oceanprotocol).
-
-Finally, the [Ocean blog](https://blog.oceanprotocol.com/) has regular updates.
 
 ***
 
 _Next:_ [_What can you do with Ocean?_](benefits.md)
 
-_Back:_ [_Why Ocean?_](why-ocean.md)
+_Back:_ [_Why Ocean?_](broken-reference)
