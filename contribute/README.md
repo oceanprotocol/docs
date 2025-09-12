@@ -1,7 +1,7 @@
 ---
 title: Ways to Contribute
 description: Help develop Ocean Protocol software like a superhero
-cover: ../.gitbook/assets/cover/contribute_banner.png
+cover: ../.gitbook/assets/Contribute.png
 coverY: 0
 ---
 

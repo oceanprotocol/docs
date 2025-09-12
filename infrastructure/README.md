@@ -1,6 +1,6 @@
 ---
 description: Learn how to deploy Ocean Enterprise in your environment.
-cover: ../.gitbook/assets/cover/infrastructure_banner.png
+cover: ../.gitbook/assets/Deployment.png
 coverY: 0
 ---
 
