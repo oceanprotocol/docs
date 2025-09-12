@@ -2,7 +2,7 @@
 title: FAQs
 ---
 
-# FAQ - to be updated
+# FAQ - UPDATE
 
 Have some questions about Ocean Protocol?
 
@@ -285,42 +285,6 @@ Rewards for running a node are 360,000 ROSE per epoch and are automatically sent
 <summary>Does my node's hardware setup (CPU, RAM, storage) impact the rewards I receive?</summary>
 
 Your node's hardware setup - CPU, RAM, and storage - does not directly influence your rewards. The primary factor for receiving rewards is your node's uptime. As long as your node meets the minimum system requirements (90% node uptime) and maintains high availability, you remain eligible for rewards. Rewards are based on uptime rather than hardware specifications.
-
-</details>
-
-## Grants, challenges, and ecosystem
-
-<details>
-
-<summary>Is Acentrik from Mercedes Benz built on top of Ocean?</summary>
-
-3rd party markets such as Gaia-X, BDP and Acentrik use Ocean components to power their marketplace. They will likely use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to plan set out [here](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9).
-
-</details>
-
-<details>
-
-<summary>What is Ocean Shipyard?</summary>
-
-Ocean Shipyard is an early-stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build Web3 solutions on Ocean, make valuable data available, build innovations, and create value for the Ocean ecosystem.
-
-The [Shipyard page](https://oceanprotocol.com/shipyard) has details.
-
-</details>
-
-<details>
-
-<summary>Where can we see previous data challenges and submitted solutions?</summary>
-
-You can find a list of past data challenges on the [website](https://oceanprotocol.com/challenges).
-
-</details>
-
-<details>
-
-<summary>What are the steps needed to encourage people to use the Ocean ecosystem?</summary>
-
-There are a wide host of technical, business, and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology are relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers, or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined.
 
 </details>
 
