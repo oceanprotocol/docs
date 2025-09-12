@@ -1,4 +1,4 @@
-# What can you do with Ocean Enterprise? - to be updated
+# What can you do with Ocean Enterprise? - UPDATE
 
 This page shows things you can do with Ocean...
 
@@ -103,6 +103,6 @@ To become a member of the Ambassador Program, follow these steps:
 
 ***
 
-_Next:_ [_OCEAN: The Ocean token_](broken-reference)
+_Next:_ [Ocean Enterprise Collective e.V](ocean-enterprise-collective-e.v..md)
 
 _Back:_ [_What is Ocean?_](what-is-ocean.md)
