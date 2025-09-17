@@ -1,6 +1,6 @@
 ---
 description: Guides to use Ocean, with no coding needed.
-cover: ../.gitbook/assets/OEC_Trust.png
+cover: ../.gitbook/assets/User Guide2.png
 coverY: 0
 ---
 

@@ -2,7 +2,7 @@
 description: >-
   This chapter describes the technical details of the Ocean Enterprise technical
   stack.
-cover: ../.gitbook/assets/Technical.png
+cover: ../.gitbook/assets/Technical2.png
 coverY: 0
 ---
 
