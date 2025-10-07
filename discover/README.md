@@ -7,19 +7,20 @@ coverY: 7.413145539906106
 
 Ocean's mission is to level the playing field for AI and data.
 
-How? **By helping you monetize AI models and data, while preserving privacy.**
+How? **By helping you monetize AI models, compute and data, while preserving privacy.**
 
-Ocean is a decentralized data exchange protocol to drive AI. Its core tech is:
+Ocean is a decentralized data & compute protocol built to scale AI. Its core tech is:
 
 * Data NFTs & datatokens, to enable token-gated access control, data wallets, data DAOs, and more.
 * Compute-to-data: buy & sell private data, while preserving privacy
+* Ocean Nodes: Monetizing globalized idle compute & turning it into a decentralized network, turning unused computing resources into a secure, scalable, and privacy-preserving infrastructure for AI training, inference, and data processing. 
 
 ### Ocean Users Are...
 
-* [**Developers**](../developers/)**.** Build token-gated AI dApps & APIs
-* [**Data scientists**](../data-scientists/)**.** Earn via predictions & challenges
-* [**OCEAN holders**](../data-farming/)**.** Earn rewards by running prediction bots on DeFi crypto tokens to accurately predict their price directions in 5 minutes and 1 Hour timeframe.
+* [**Developers**](../developers/)**.** Build token-gated AI dApps, or run an Ocean Node.
+* [**Data scientists**](../data-scientists/)**.** Earn via predictions, annotations & challenges
 * [**Ocean ambassadors**](https://oceanprotocol.com/explore/community)
+* [**Ocean Node Runners**](https://docs.oceanprotocol.com/developers/ocean-node)**.** Monetize your idle computing hardware 
 
 ### Quick Links
 
