@@ -4,6 +4,7 @@ This page shows things you can do with Ocean...
 
 * As a builder
 * As a data scientist
+* As Ocean Node runner
 * As an OCEAN holder
 * Become an Ocean ambassador
 
@@ -78,6 +79,16 @@ Ocean regularly offer [data science challenges](../data-scientists/join-a-data-c
 </details>
 
 To dive deeper, please go to [Data Scientists page](../data-scientists/).
+
+## What Ocean Node runners can do 
+
+<details>
+
+<summary>Monetize your computing hardware</summary>
+
+You can monetize any machine with idle compute power, from personal laptops and gaming PCs to high-performance servers and cloud instances, by connecting them to Ocean Nodes. These machines contribute unused CPU or GPU resources to a decentralized compute network, earning rewards for AI training, inference, or data processing.
+  
+</details>
 
 ## What OCEAN holders can do
 
