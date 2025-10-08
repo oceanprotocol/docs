@@ -1,6 +1,7 @@
 # Ocean Protocol VSCode Extension
 
-Run compute jobs on Ocean Protocol directly from VS Code. The extension automatically detects your active algorithm file and streamlines job submission, monitoring, and results retrieval. Simply open a python or javascript file and click **Start Compute Job**.
+Run compute jobs on Ocean Protocol directly from VS Code. The extension automatically detects your active algorithm file and streamlines job submission, monitoring, and results retrieval. Simply open a python or javascript file and click **Start Compute Job**. You can install the extension from [here](https://marketplace.visualstudio.com/items?itemName=OceanProtocol.ocean-protocol-vscode-extension#:~:text=Run%20compute%20jobs%20on%20Ocean%20Protocol%20directly%20from,or%20javascript%20file%20and%20click%20Start%20Compute%20Job.)
+
 
 <figure><img src=".gitbook/assets/vscode/main-screenshot.png" alt="Ocean Protocol VSCode Extension"><figcaption>Ocean Protocol VSCode Extension</figcaption></figure>
 
@@ -20,6 +21,7 @@ Once installed, the extension adds an Ocean Protocol section to your VSCode work
 5. Click **Start Compute Job**
 6. Monitor the job status and logs in the output panel
 7. Once completed, the results file will automatically open in VSCode
+8. Watch our step-by-step workshop on using the Ocean Protocol VSCode Extension: [Ocean VS code extension - Discord Algorithm Workshop](https://youtu.be/be5uq4nnZTU?si=slTr4NRAJOCqJtmk)
 
 ### Requirements
 
