@@ -68,44 +68,6 @@ In Shipyard, the Ocean core team curates project proposals that are set up to de
 
 </details>
 
-<details>
-
-<summary>veOCEAN</summary>
-
-_ve_ tokens have been introduced by several projects such as [Curve](https://curve.fi/) and [Balancer](https://balancer.fi/). These tokens require users to lock _project tokens_ in return for _ve\<project tokens>_.
-
-[veOCEAN](https://df.oceandao.org/veocean) gives token holders the ability to lock OCEAN to earn yield and curate data.
-
-In exchange for locking tokens, users can earn rewards. The amount of reward depends on how long the tokens are locked. Furthermore, veTokens can be used for asset curation.
-
-</details>
-
-<details>
-
-<summary>Ocean Data Farming (DF)</summary>
-
-[Ocean Data Farming (DF)](https://df.oceandao.org/) incentivizes for growth of Data Consume Volume (DCV) in the Ocean ecosystem. [DF](../data-farming/README.md) is like DeFi liquidity mining, but tuned for DCV. DF emits OCEAN for passive rewards and active rewards.
-
-* As a veOCEAN holder, you get _passive_ rewards by default.
-* If you _actively_ curate data by allocating veOCEAN towards data assets with high Data Consume Volume (DCV), then you can earn more.
-
-</details>
-
-<details>
-
-<summary>Passive Rewards</summary>
-
-When a user locks their OCEAN for a finite period of time, they get veOCEAN in return. Based on the quantity of veOCEAN, the user accumulates weekly OCEAN rewards. Because rewards are generated without human intervention, these are called [Passive Rewards](../data-farming/README.md). OCEAN Data Farming Passive Rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
-
-</details>
-
-<details>
-
-<summary>Volume DF</summary>
-
-When a user allocates veOCEAN to Ocean Market projects, then weekly OCEAN rewards are given to a user based on the sales of those projects. Since these rewards depend on human intervention to decide the allocations, these are categorized as [Volume DF](../data-farming/README.md) rewards. OCEAN Data Farming Volume DF rewards are claimable every Thursday on the [Rewards page](https://df.oceandao.org/rewards).
-
-</details>
 
 ## Intellectual Property (IP) Concepts
 
@@ -420,7 +382,46 @@ Machine learning is a subfield of artificial intelligence (AI) that involves tea
 
 </details>
 
+## Decentralized Computing Terminology
 
+<details>
+<summary>Decentralized Compute</summary>
+
+Distribution of computational tasks across multiple independent machines (GPUs/CPUs) globally instead of relying on a central server.
+
+</details>
+
+<details>
+
+<summary>Peer-to-Peer (P2P) Network</summary>
+
+A system where computers (peers) share resources and data directly without centralized control.
+  
+</details>
+
+<details>
+
+<summary>Node</summary>
+
+An individual device or computer that participates in a decentralized network by providing compute, storage, or validation
+  
+</details>
+
+<details>
+
+<summary>Inference</summary>
+
+The process of using a trained AI model to generate predictions or insights from new, unseen data.
+  
+</details>
+
+<details>
+
+<summary>Scaling Laws</summary>
+
+Empirical patterns showing how AI model performance improves predictably with increases in data, compute, and model size.
+  
+</details>
 ----
 
 
