@@ -11,6 +11,8 @@ coverY: 0
 2. **AI dApps**: monetize your AI dApp by token-gating on AI training data, feature vectors, models, or predictions.
 3. **Data Markets**: build a decentralized data market. [Here's how](https://github.com/oceanprotocol/market)
 4. **Private user profile data**: storing user profile data on your centralized server exposes you to liability. Instead, have it on-chain encrypted by the user's wallet, and just-in-time decrypt for the app. [Video](https://www.youtube.com/watch?v=xTfI8spLq1k\&ab\_channel=ParticleNetwork), [slides](https://docs.google.com/presentation/d/1\_lkDVUkA0Rx1R7RpkaSeLkX3PeOBoMQyRhvxjwTvd6A/edit?usp=sharing).
+5. **Infrastructure for Decentralized Compute**: Run an Ocean Node by monetizing your unused hardware, such as your gaming laptop, old laptops or desktops, GPU servers, & more. You will find more info on this [page](https://docs.oceanprotocol.com/developers/ocean-node)
+6. **AI models**: Using the [Ocean VS Code extension](https://docs.oceanprotocol.com/developers/vscode), users can build and run AI algorithms on decentralized compute resources, resulting in a fully trained AI model ready for deployment.
 
 Example live dapps:
 
@@ -36,6 +38,8 @@ Example live dapps:
   * [Compute-to-data](compute-to-data/) - practical privacy approach
   * [Aquarius](old-infrastructure/aquarius/) - metadata cache
   * [Provider](old-infrastructure/provider/) - handshaking for access control
+  * [Ocean Nodes](https://docs.oceanprotocol.com/developers/ocean-node) - Decentralized units that turn idle hardware into a global AI compute network for scalable, privacy-preserving tasks.
+  * [Ocean VS code extension](https://docs.oceanprotocol.com/developers/vscode) - A developer tool that lets you build, run, and manage AI algorithms on Ocean decentralized compute network directly from VS Code.
 * [FAQ](dev-faq.md)
 
 ***
