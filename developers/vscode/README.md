@@ -43,7 +43,7 @@ VS Code 1.96.0 or higher
 - Dataset: Optional JSON file for input data
 - Results Folder: Where computation results will be saved
 
-<figure><img src=".gitbook/assets/vscode/setup-screenshot.png" alt="Ocean Protocol VSCode Extension Optional Setup"><figcaption>Optional Setup Configuration</figcaption></figure>
+<figure><img src="https://github.com/oceanprotocol/vscode-extension/raw/main/screenshots/setup-screenshot.png" alt="Ocean Protocol VSCode Extension Optional Setup"><figcaption>Optional Setup Configuration</figcaption></figure>
 
 ## Contributing
 
