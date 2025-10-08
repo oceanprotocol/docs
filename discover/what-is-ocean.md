@@ -6,12 +6,12 @@ description:
 
 ## What is Ocean?
 
-Ocean is a decentralized data exchange protocol.
+Ocean is a decentralized data and compute protocol.
 
-AI lives on data; Ocean facilitates it.
+AI lives on data and compute; Ocean facilitates it.
 
 Ocean has two specific parts:
-- A live tech stack. At the core is **Datatokens** and **Compute-to-Data**
+- A live tech stack. At the core is **Datatokens**, **Ocean Nodes**, and **Compute-to-Data**
 - A lively community. This includes **builders, data scientists**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
 
 Let's drill into each.
@@ -43,6 +43,24 @@ This enables one buy & sell private data, while preserving privacy
 <div align="center">
 <figure><img src="../.gitbook/assets/discover/c2d-mental-model.png" width="75%"><br><figcaption>Compute-to-Data flow</figcaption></figure>
 </div>
+
+## Tech: Ocean Nodes
+
+Ocean Nodes enable decentralized computing by turning idle compute resources into a monetizable compute-ready infrastructure to scale AI. 
+
+- Scalable AI Compute on Demand: Access a global network of compute resources for faster training and inference without owning physical hardware.
+- Peer-to-Peer Compute Network: Leverage a decentralized network of nodes where participants share compute power directly, enhancing efficiency and resilience.
+- Monetization of Idle Resources: Turn unused compute power into revenue by contributing to the Ocean decentralized network.
+- Learn more [here](https://docs.oceanprotocol.com/developers/ocean-node)
+
+## Tech: Ocean VS code extension
+
+Ocean VS Code Extension empowers developers to build, test, and deploy AI and data workflows directly within VS Code, fully integrated with Ocean’s decentralized compute and data ecosystem.
+
+- Seamless Development Environment: Write, test, and deploy algorithms in your familiar VS Code interface without switching platforms.
+- Integrated Decentralized Compute: Connect directly to Ocean Nodes to run compute-heavy tasks securely and efficiently.
+- Simplified Data Access & Management: Easily discover, access, and use datasets on Ocean while maintaining privacy and compliance.
+- Learn more [here](https://docs.oceanprotocol.com/developers/vscode)
 
 ## Community: Ocean Ecosystem
 
