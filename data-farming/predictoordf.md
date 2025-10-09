@@ -15,7 +15,7 @@ Predictoor DF weekly rewards are 3,750 [OCEAN](https://www.coingecko.com/en/coin
 
 ## Introduction
 
-**[ASI Predictoor](../predictoor/README.md)** data feeds predict whether BTC, ETH etc will rise or fall 5min or 1h into the future. These feeds are crowdsourced by “predictoors”: people running AI-powered prediction bots.
+**[Predictoor](../predictoor/README.md)** data feeds predict whether BTC, ETH etc will rise or fall 5min or 1h into the future. These feeds are crowdsourced by “predictoors”: people running AI-powered prediction bots.
 
 **[Data Farming (DF)](../data-farming/README.md)** is Ocean’s incentive program, that rewards OCEAN to people who make crypto price predictions.
 
