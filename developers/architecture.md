@@ -44,5 +44,5 @@ Ocean Enterprise has a multi-layer architecture, as presented in the following d
 
 
 
-**Access Control Layer:** Is a critical component that governs who can interact with specific resources in OE and under what conditions.  It acts as a gatekeeper, enforcing policies that determine user permissions based on identity or other descriptive attributes. This layer controls, for instance, who is allowed to publish assets, who is allowed to consume a specific asset or what algorithm is allowed to be executed on top of a specific dataset.
+**Access Control Layer:** Is a critical component that governs who can interact with specific resources in OE and under what conditions.  It acts as a gatekeeper, enforcing policies that determine user permissions based on identity or other descriptive attributes. This layer controls, for instance, who is allowed to publish assets, who is allowed to consume a specific asset, or what algorithm is allowed to be executed on top of a specific dataset.
 
