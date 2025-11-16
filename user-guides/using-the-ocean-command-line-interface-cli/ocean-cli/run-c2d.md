@@ -25,7 +25,7 @@ npm run cli startCompute 'DATASET_DID' 'ALGO_DID'
 
 In this command, replace `DATASET_DID` with the specific DID of the dataset you intend to utilize and `ALGO_DID` with the DID of the algorithm you want to apply. By executing this command, you'll trigger the initiation of a compute-to-data job that harnesses the selected dataset and algorithm for processing.
 
-<figure><img src="../../.gitbook/assets/cli/c2dstart.png" alt=""><figcaption><p>Start a compute job</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cli/c2dstart.png" alt=""><figcaption><p>Start a compute job</p></figcaption></figure>
 
 ## Start a Free Compute Job 🎯
 
@@ -52,7 +52,7 @@ npm run cli freeStartCompute [] 'ALGO_DID' 'ENV_ID'
 
 **NOTE:** For `zsh` console, please surround `[]` with quotes like this: `"[]"`.
 
-<figure><img src="../../.gitbook/assets/cli/freec2dstart1.png" alt=""><figcaption><p>Start a free compute job</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cli/freec2dstart1.png" alt=""><figcaption><p>Start a free compute job</p></figcaption></figure>
 
 ## Download Compute Results 🧮
 
@@ -77,7 +77,7 @@ npm run cli getJobStatus 'DATASET_DID' 'JOB_ID'
 
 Executing this command will allow you to observe the job's status and verify its successful completion.
 
-<figure><img src="../../.gitbook/assets/cli/jobstatus.png" alt=""><figcaption><p>Get Job Status</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cli/jobstatus.png" alt=""><figcaption><p>Get Job Status</p></figcaption></figure>
 
 ### Download C2D Results
 
@@ -87,4 +87,4 @@ For the second method, the dataset DID is no longer required. Instead, you'll ne
  npm run cli downloadJobResults 'JOB_ID' 'RESULT_INDEX' 'DESTINATION_FOLDER'
 ```
 
-<figure><img src="../../.gitbook/assets/cli/jobResults.png" alt=""><figcaption><p>Download C2D Job Results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cli/jobResults.png" alt=""><figcaption><p>Download C2D Job Results</p></figcaption></figure>

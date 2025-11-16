@@ -1,10 +1,10 @@
 ---
-description: The Ocean Protocol defines various fees for creating a sustainability loop.
+description: The Ocean Enterprise defines various fees for creating a sustainability loop.
 ---
 
 # Fees
 
-One transaction may have fees going to several entities, such as the market where the asset was published, or the Ocean Community. Here are all of them:
+One transaction may have fees going to several entities, such as the market where the asset was published or the Ocean Community. Here are all of them:
 
 * Publish Market: the market where the asset was published.
 * Consume Market: the market where the asset was consumed.
@@ -23,7 +23,7 @@ However, if you're building a custom marketplace, you have the flexibility to in
 
 ### Swap fee
 
-Swap fees are incurred as a transaction cost whenever someone exchanges one type of token for another within a [fixed rate exchange](pricing-schemas.md#fixed-pricing). These exchanges can involve swapping a datatoken for a basetoken, like OCEAN or H2O, or vice versa, where basetoken is exchanged for datatoken. The specific value of the swap fee depends on the type of token being used in the exchange.
+Swap fees are incurred as a transaction cost whenever someone exchanges one type of token for another within a [fixed rate exchange](broken-reference). These exchanges can involve swapping a datatoken for a basetoken, like OCEAN or H2O, or vice versa, where basetoken is exchanged for datatoken. The specific value of the swap fee depends on the type of token being used in the exchange.
 
 The swap fee values are set at the smart contract level and can only be modified by the Ocean Protocol Foundation (OPF).
 
@@ -31,9 +31,9 @@ The swap fee values are set at the smart contract level and can only be modified
 | :---------------------: | :--------------------------: |
 |           0.1%          |             0.2%             |
 
-### Consume(aka. Order) fee
+### Consume (aka. Order) fee
 
-When a user exchanges a [datatoken](datatokens.md) for the privilege of downloading an asset or initiating a compute job that utilizes the asset, consume fees come into play. These fees are associated with accessing an asset and include:
+When a user exchanges a [datatoken](broken-reference) for the privilege of downloading an asset or initiating a compute job that utilizes the asset, consume fees come into play. These fees are associated with accessing an asset and include:
 
 1. **Publisher Market** Consumption Fee
    * Defined during the ERC20 [creation](https://github.com/oceanprotocol/contracts/blob/b937a12b50dc4bdb7a6901c33e5c8fa136697df7/contracts/templates/ERC721Template.sol#L334).
@@ -43,7 +43,7 @@ When a user exchanges a [datatoken](datatokens.md) for the privilege of download
 2. **Consume Market** Consumption Fee
    * A market can specify what fee it wants on the order function.
 3. **Provider** Consumption Fees
-   * Defined by the [Provider](../old-infrastructure/provider/) for any consumption.
+   * Defined by the [Provider](old-infrastructure/provider/) for any consumption.
    * Expressed in: Address, Token, Amount (absolute), Timeout.
    * You can retrieve them when calling the initialize endpoint.
    * Eg: A provider can charge a fixed fee of 10 USDT per consume, irrespective of the pricing schema used (e.g., fixed rate with ETH, BTC, dispenser).
@@ -91,16 +91,16 @@ Each of these fees plays a role in ensuring fair compensation and supporting the
 
 ### Provider fee
 
-[Providers](../old-infrastructure/provider/) facilitate data consumption, initiate compute jobs, encrypt and decrypt DDOs, and verify user access to specific data assets or services.
+[Providers](old-infrastructure/provider/) facilitate data consumption, initiate compute jobs, encrypt and decrypt DDOs, and verify user access to specific data assets or services.
 
 Provider fees serve as [compensation](broken-reference) to the individuals or organizations operating their own provider instances when users request assets.
 
-* Defined by the [Provider](../old-infrastructure/provider/) for any consumption.
+* Defined by the [Provider](old-infrastructure/provider/) for any consumption.
 * Expressed in: Address, Token, Amount (absolute), Timeout.
 * You can retrieve them when calling the initialize endpoint.
 * These fees can be set as a **fixed amount** rather than a percentage.
 * Providers have the flexibility to specify the token in which the fees must be paid, which can differ from the token used in the consuming market.
-* Provider fees can be utilized to charge for [computing](../compute-to-data/) resources. Consumers can select the desired payment amount based on the compute resources required to execute an algorithm within the [Compute-to-Data](../compute-to-data/) environment, aligning with their specific needs.
+* Provider fees can be utilized to charge for [computing](broken-reference) resources. Consumers can select the desired payment amount based on the compute resources required to execute an algorithm within the [Compute-to-Data](broken-reference) environment, aligning with their specific needs.
 * Eg: A provider can charge a fixed fee of 10 USDT per consume, irrespective of the pricing schema used (e.g., fixed rate with ETH, BTC, dispenser).
 * Eg: A provider may impose a fixed fee of 15 DAI to reserve compute resources for 1 hour, enabling the initiation of compute jobs.
 
@@ -117,3 +117,4 @@ These fees play a crucial role in incentivizing individuals and organizations to
 {% hint style="info" %}
 Stay up-to-date with the latest information! The values within the system are regularly updated. We recommend verifying the most recent values directly from the [contracts](https://github.com/oceanprotocol/contracts) and the [market](https://github.com/oceanprotocol/market).
 {% endhint %}
+

@@ -80,6 +80,6 @@ Now, let's run the command to publish the dataset:
 npm run cli publish metadata/simpleDownloadDataset.json
 ```
 
-<figure><img src="../../.gitbook/assets/cli/publish.png" alt=""><figcaption><p>Publish dataset</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cli/publish.png" alt=""><figcaption><p>Publish dataset</p></figcaption></figure>
 
 Executing this command will initiate the dataset publishing process, making your dataset accessible and discoverable on the Ocean Protocol network. 🌊

@@ -73,6 +73,6 @@ To explore the commands and option flags available in the Ocean CLI, simply run 
 npm run cli h
 ```
 
-<figure><img src="../../.gitbook/assets/cli/usage.png" alt=""><figcaption><p>Available CLI commands &#x26; options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cli/usage.png" alt=""><figcaption><p>Available CLI commands &#x26; options</p></figcaption></figure>
 
 With the Ocean CLI successfully installed and configured, you're ready to dive into its capabilities and unlock the full potential of Ocean Protocol. If you encounter any issues during the setup process or have questions, feel free to seek assistance from the [support](https://discord.com/invite/TnXjkR5) team. 🌊

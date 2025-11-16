@@ -28,8 +28,8 @@ For blockchain beginners
 [wallets.md](wallets.md)
 {% endcontent-ref %}
 
-{% content-ref url="using-the-oe-marketplace/onboarding-to-the-marketplace/metamask-setup.md" %}
-[metamask-setup.md](using-the-oe-marketplace/onboarding-to-the-marketplace/metamask-setup.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Data Storage

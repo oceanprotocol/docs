@@ -20,7 +20,7 @@ Architecture Overview
 
 * **App level:** [**Use an Ocean Template**](https://oceanprotocol.com/templates).
 * **Library level:** [**Use ocean.js**](ocean.js) is a library built for the key environment of dApp developers: JavaScript. Import it & use it your frontend or NodeJS.
-* **Contract level:** [**Call Ocean contracts**](contracts/) on Eth mainnet [or other chains](contracts/networks.md).
+* **Contract level:** [**Call Ocean contracts**](broken-reference) on Eth mainnet [or other chains](networks.md).
 
 ## Developer Docs Quick-links
 
@@ -29,8 +29,8 @@ Architecture Overview
 * Components:
   * [Barge](barge/) - local chain for testing
   * [Ocean subgraph](old-infrastructure/subgraph/) - grabbing event data from the chain
-  * [Ocean CLI](ocean-cli/) - command-line interface
-  * [Compute-to-data](compute-to-data/) - practical privacy approach
+  * [Ocean CLI](../user-guides/using-the-ocean-command-line-interface-cli/ocean-cli/) - command-line interface
+  * [Compute-to-data](broken-reference) - practical privacy approach
   * [Aquarius](old-infrastructure/aquarius/) - metadata cache
   * [Provider](old-infrastructure/provider/) - handshaking for access control
 * [FAQ](broken-reference)

@@ -10,7 +10,7 @@ Obtaining the DDO of an asset is a straightforward process. You can accomplish t
 npm run cli getDDO 'assetDID'
 ```
 
-<figure><img src="../../.gitbook/assets/cli/getAsset.png" alt=""><figcaption><p>Retrieve DDO</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cli/getAsset.png" alt=""><figcaption><p>Retrieve DDO</p></figcaption></figure>
 
 ## Edit the Dataset
 

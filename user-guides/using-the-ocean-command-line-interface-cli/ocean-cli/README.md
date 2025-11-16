@@ -17,6 +17,6 @@ The Ocean CLI offers a wide range of functionalities, enabling you to:
 
 ## Key Information
 
-The Ocean CLI is powered by the [ocean.js](../ocean.js/) JavaScript library, an integral part of the [Ocean Protocol](https://oceanprotocol.com) toolset. 🌐
+The Ocean CLI is powered by the [ocean.js](../../../developers/ocean.js) JavaScript library, an integral part of the [Ocean Protocol](https://oceanprotocol.com) toolset. 🌐
 
 Let's dive into the CLI's capabilities and unlock the full potential of Ocean Protocol together! If you're ready to explore each functionality in detail, simply go through the next pages.
