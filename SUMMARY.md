@@ -58,7 +58,7 @@
     * [Metadata - to be updated](developers/assets-and-services/metadata.md)
     * [OE DDO Specification - to be updated](developers/assets-and-services/new-ddo-specification.md)
   * [Managing access to assets - to be updated](developers/fg-permissions.md)
-  * [Networks - TO BE UPDATED](developers/networks.md)
+  * [Supported networks & currencies](developers/networks.md)
   * [Fees](developers/fees.md)
 * [🔨 Deployment guides](infrastructure/README.md)
   * [Get API Keys for Blockchain Access](infrastructure/get-api-keys-for-blockchain-access.md)
