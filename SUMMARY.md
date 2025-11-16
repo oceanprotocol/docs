@@ -99,7 +99,3 @@
     * [Policy Server proxy](infrastructure/policy-server/policy-server-proxy.md)
   * [OE Marketplace](infrastructure/oe-marketplace.md)
   * [KYB service](infrastructure/kyb-service.md)
-* [🤝 Collaborate](contribute/README.md)
-  * [Collaborators - to be updated/deleted](contribute/projects-using-ocean.md)
-  * [Contributor Code of Conduct - to be updated/deleted](contribute/code-of-conduct.md)
-  * [Legal Requirements - to be updated](contribute/legal-reqs.md)
