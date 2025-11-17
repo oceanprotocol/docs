@@ -6,7 +6,7 @@ description: This page describes the architecture of a Ocean Enterprise system
 
 Ocean Enterprise has a multi-layer architecture, as presented in the following diagram.&#x20;
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

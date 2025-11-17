@@ -16,4 +16,3 @@ The following activities need to be performed to onboard in the market:
 
 [Adding funds to the wallet](adding-funds-to-the-wallet.md)
 
-[Setting up the SSI wallet](setting-up-the-ssi-wallet.md)

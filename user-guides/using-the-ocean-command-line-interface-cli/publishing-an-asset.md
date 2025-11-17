@@ -1,2 +1,0 @@
-# Publishing an asset
-

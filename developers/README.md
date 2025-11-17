@@ -29,7 +29,7 @@ Architecture Overview
 * Components:
   * [Barge](barge/) - local chain for testing
   * [Ocean subgraph](old-infrastructure/subgraph/) - grabbing event data from the chain
-  * [Ocean CLI](../user-guides/using-the-ocean-command-line-interface-cli/ocean-cli/) - command-line interface
+  * [Ocean CLI](broken-reference) - command-line interface
   * [Compute-to-data](broken-reference) - practical privacy approach
   * [Aquarius](old-infrastructure/aquarius/) - metadata cache
   * [Provider](old-infrastructure/provider/) - handshaking for access control
