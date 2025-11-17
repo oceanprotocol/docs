@@ -1,4 +1,4 @@
-# Whitepaper - UPDATE
+# Whitepaper
 
 **ABSTRACT**
 
@@ -6,4 +6,4 @@ Ocean Enterprise is an open-source software framework and governance model desig
 
 Access the full whitepaper below.
 
-<mark style="color:red;">IMPORT FILE HERE</mark>
+{% file src="../.gitbook/assets/OEC_Whitepaper.pdf" %}

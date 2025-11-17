@@ -8,7 +8,7 @@
   * [Regulatory Compliance - UPDATE](discover/compliance-to-regulations.md)
   * [Licensing - UPDATE](discover/licensing-information.md)
   * [FAQ - UPDATE](discover/faq.md)
-  * [Whitepaper - UPDATE](discover/whitepaper-update.md)
+  * [Whitepaper](discover/whitepaper.md)
   * [Glossary - UPDATE](discover/glossary.md)
   * [Privacy Policy](discover/privacy-policy.md)
   * [Imprint](discover/imprint.md)
