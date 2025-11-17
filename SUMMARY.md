@@ -10,6 +10,8 @@
   * [FAQ - UPDATE](discover/faq.md)
   * [Whitepaper - UPDATE](discover/whitepaper-update.md)
   * [Glossary - UPDATE](discover/glossary.md)
+  * [Privacy Policy](discover/privacy-policy.md)
+  * [Imprint](discover/imprint.md)
 * [📚 User Guides](user-guides/README.md)
   * [Host Assets - to be updated/deleted](user-guides/asset-hosting/README.md)
     * [Uploader - delete??](user-guides/asset-hosting/uploader.md)
