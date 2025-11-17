@@ -15,11 +15,11 @@ The file [`address.json`](https://github.com/oceanprotocol/contracts/blob/v4main
 
 ### Networks Summary
 
-Here are the networks to which Ocean Enterprise is deployed.
+The networks where Ocean Enterprise smart contracts are deployed are:
 
 **Production Networks:**
 
-* Ethereum mainnet
+* Ethereum Mainnet
 * Optimism (OP) Mainnet
 
 **Test Networks:**
@@ -41,19 +41,15 @@ The smart contracts deployed by O.E.C. in the test networks and used by default 
 
 ## Supported currencies
 
-The following currencies are supported by Ocean Enterprise:
+Ocean Enterprise supports the following currencies:
 
+### Production Networks currencies
 
+<table><thead><tr><th width="176.5">Blockchain Network</th><th width="121.5">Supported Currency</th><th>Contract address</th></tr></thead><tbody><tr><td>Ethereum mainnet</td><td>USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></a></td></tr><tr><td>Ethereum mainnet</td><td>EURC</td><td><a href="https://etherscan.io/token/0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c"><code>0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c</code></a></td></tr><tr><td>Ethereum mainnet</td><td>EURAU</td><td><a href="https://etherscan.io/token/0x4933A85b5b5466Fbaf179F72D3DE273c287EC2c2"><code>0x4933A85b5b5466Fbaf179F72D3DE273c287EC2c2</code></a></td></tr><tr><td>Optimism mainnet</td><td>USDC</td><td><a href="https://optimistic.etherscan.io/token/0x0b2c639c533813f4aa9d7837caf62653d097ff85"><code>0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85</code></a></td></tr></tbody></table>
 
-### Production Networks
+### Test Networks currencies
 
-<table><thead><tr><th width="176.5">Blockchain Network</th><th width="121.5">Supported Currency</th><th>Contract address</th></tr></thead><tbody><tr><td>Ethereum mainnet</td><td>USDC</td><td><a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</a></td></tr><tr><td>Ethereum mainnet</td><td>EURC</td><td></td></tr><tr><td>Ethereum mainnet</td><td>EURAU</td><td></td></tr><tr><td>Optimism mainnet</td><td>USDC</td><td></td></tr><tr><td>Optimism mainnet</td><td>EURC</td><td></td></tr></tbody></table>
-
-
-
-### Test Networks
-
-<table><thead><tr><th width="176.5">Blockchain Network</th><th width="121.5">Supported Currency</th><th>Contract address</th></tr></thead><tbody><tr><td>Ethereum Sepolia</td><td>EURC</td><td></td></tr><tr><td>Ethereum Sepolia</td><td>OCEAN</td><td></td></tr><tr><td>Optimism Sepolia</td><td>USDC</td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="176.5">Blockchain Network</th><th width="121.5">Supported Currency</th><th>Contract address</th></tr></thead><tbody><tr><td>Ethereum Sepolia</td><td>USDC</td><td><a href="https://sepolia.etherscan.io/token/0xf08a50178dfcde18524640ea6618a1f965821715"><code>0xf08A50178dfcDe18524640EA6618a1f965821715</code></a></td></tr><tr><td>Ethereum Sepolia</td><td>EURC</td><td><a href="https://sepolia.etherscan.io/address/0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4"><code>0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4</code></a></td></tr><tr><td>Optimism Sepolia</td><td>USDC</td><td><a href="https://sepolia-optimism.etherscan.io/token/0x5fd84259d66Cd46123540766Be93DFE6D43130D7"><code>0x5fd84259d66Cd46123540766Be93DFE6D43130D7</code></a></td></tr></tbody></table>
 
 ***
 
