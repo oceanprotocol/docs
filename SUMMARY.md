@@ -11,8 +11,6 @@
   * [Whitepaper - UPDATE](discover/whitepaper-update.md)
   * [Glossary - UPDATE](discover/glossary.md)
 * [📚 User Guides](user-guides/README.md)
-  * [Basic concepts - to be updated](user-guides/basic-concepts.md)
-  * [Using web3 wallets - to be moved](user-guides/wallets.md)
   * [Host Assets - to be updated/deleted](user-guides/asset-hosting/README.md)
     * [Uploader - delete??](user-guides/asset-hosting/uploader.md)
     * [Arweave - delete???](user-guides/asset-hosting/arweave.md)

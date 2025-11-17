@@ -18,14 +18,14 @@ Let's dive in!
 
 For blockchain beginners
 
-{% content-ref url="basic-concepts.md" %}
-[basic-concepts.md](basic-concepts.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Using wallets
 
-{% content-ref url="wallets.md" %}
-[wallets.md](wallets.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

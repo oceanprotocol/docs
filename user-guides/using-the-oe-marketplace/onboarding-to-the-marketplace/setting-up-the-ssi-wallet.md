@@ -1,12 +1,14 @@
 ---
 description: >-
-  This page describes how to add DIDs and Verifiable Credentials to the SSI
-  wallet to publish and consume assets in a SSI-enabled OE marketplace
+  Add DIDs and Verifiable Credentials to the SSI wallet to publish and consume
+  assets in a SSI-enabled OE marketplace
 ---
 
 # Setting up the SSI wallet
 
-&#x20;In SSI-enabled marketplaces, users need verifiable credentials to access assets.
+&#x20;In an SSI-enabled marketplace, publishers need a Decentralized ID (DID) to sign the asset's DDO, to prove its provenance. Furthermore, consumers must present Verifiable Credentials to access assets.
+
+DIDs and VCs reside in an SSI wallet.&#x20;
 
 
 
