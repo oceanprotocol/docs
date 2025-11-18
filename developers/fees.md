@@ -27,20 +27,19 @@ When a user exchanges a [datatoken](broken-reference) for the privilege of downl
 
 1. **Publisher Market** Consumption Fee
    * Defined during the ERC20 [creation](https://github.com/oceanprotocol/contracts/blob/b937a12b50dc4bdb7a6901c33e5c8fa136697df7/contracts/templates/ERC721Template.sol#L334).
-   * Defined as Address, Token, Amount. The amount is an absolute value(not a percentage).
+   * Defined as Address, Token, Amount. The amount is an absolute value (not a percentage).
    * A marketplace can charge a specified amount per order.
-   * Eg: A market can set a fixed fee of 10 USDT per order, no matter what pricing schemas are used (fixedrate with ETH, BTC, dispenser, etc).
+   * Eg: A market can set a fixed fee of 10 EURC per order, no matter what pricing schemas are used.
 2. **Consume Market** Consumption Fee
    * A market can specify what fee it wants on the order function.
 3. **Provider** Consumption Fees
    * Defined by the [Provider](old-infrastructure/provider/) for any consumption.
    * Expressed in: Address, Token, Amount (absolute), Timeout.
    * You can retrieve them when calling the initialize endpoint.
-   * Eg: A provider can charge a fixed fee of 10 USDT per consume, irrespective of the pricing schema used (e.g., fixed rate with ETH, BTC, dispenser).
-4. **Ocean Community** Fee
-   * Ocean's smart contracts collect **Ocean Community fees** during order operations. These fees are reinvested in community projects and distributed to the veOCEAN holders through Data Farming.
-   * This fee is set at the [smart contract](https://github.com/oceanprotocol/contracts/blob/main/contracts/communityFee/OPFCommunityFeeCollector.sol) level.
-   * It can be updated by Ocean Protocol Foundation. See details in the [smart contracts](https://github.com/oceanprotocol/contracts/blob/main/contracts/pools/FactoryRouter.sol#L391-L407).
+   * Eg: A provider can charge a fixed fee of 10 EURC per consume, irrespective of the pricing schema used.
+4. **Ocean Enterprise Collective** Fee
+   * Ocean Enterprise smart contracts collect **Ocean Enterprise Collective fees** during order operations. These fees are used to fund essential OEC e.V. activities such as code development and maintainance.
+   * It can be updated by Ocean Enterprise Collective.&#x20;
 
 <details>
 
