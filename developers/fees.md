@@ -4,7 +4,7 @@ description: The Ocean Enterprise defines various fees for creating a sustainabi
 
 # Fees
 
-One transaction may have fees going to several entities, such as the market where the asset was published or the Ocean Community. Here are all of them:
+One transaction may have fees going to several entities, such as the market where the asset was published or the Ocean Enterprise Collective. Here are all of them:
 
 * Publish Market: the market where the asset was published.
 * Consume Market: the market where the asset was consumed.
@@ -23,21 +23,16 @@ However, if you're building a custom marketplace, you have the flexibility to in
 
 ### Consume (aka. Order) fee
 
-When a user exchanges a [datatoken](broken-reference) for the privilege of downloading an asset or initiating a compute job that utilizes the asset, consume fees come into play. These fees are associated with accessing an asset and include:
+When a user purchases an asset, consume fees come into play. These fees are associated with accessing an asset and include:
 
-1. **Publisher Market** Consumption Fee
-   * Defined during the ERC20 [creation](https://github.com/oceanprotocol/contracts/blob/b937a12b50dc4bdb7a6901c33e5c8fa136697df7/contracts/templates/ERC721Template.sol#L334).
-   * Defined as Address, Token, Amount. The amount is an absolute value (not a percentage).
-   * A marketplace can charge a specified amount per order.
-   * Eg: A market can set a fixed fee of 10 EURC per order, no matter what pricing schemas are used.
-2. **Consume Market** Consumption Fee
+1. **Consume Market** Consumption Fee
    * A market can specify what fee it wants on the order function.
-3. **Provider** Consumption Fees
-   * Defined by the [Provider](old-infrastructure/provider/) for any consumption.
+2. **Provider** Consumption Fees
+   * Defined by the Provider for any consumption.
    * Expressed in: Address, Token, Amount (absolute), Timeout.
-   * You can retrieve them when calling the initialize endpoint.
+   * You can retrieve them when calling the initialized endpoint.
    * Eg: A provider can charge a fixed fee of 10 EURC per consume, irrespective of the pricing schema used.
-4. **Ocean Enterprise Collective** Fee
+3. **Ocean Enterprise Collective** Fee
    * Ocean Enterprise smart contracts collect **Ocean Enterprise Collective fees** during order operations. These fees are used to fund essential OEC e.V. activities such as code development and maintainance.
    * It can be updated by Ocean Enterprise Collective.&#x20;
 
