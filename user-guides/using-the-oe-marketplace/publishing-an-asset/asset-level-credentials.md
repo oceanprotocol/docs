@@ -2,13 +2,13 @@
 
 5\. The Asset Level Credentials screen is displayed. This screen allows you to define the access rules at the asset level. For a better understanding of how access credentials work, please check this <mark style="color:red;">link</mark>.
 
-6\. The Access Rules group is displayed. Using the fields in this group, you can decide who is allowed or denied access to the asset. The rules are based on web3 addresses.
+6\. The **Access Rules** group is displayed. Using the fields in this group, you can decide who is allowed or denied access to the asset. The rules are based on web3 addresses.
 
 7\. The "**Allow ETH Address"** option enables the user to define  who can access the asset:&#x20;
 
 * To grant access to everybody, select "_Allow all addresses_"
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

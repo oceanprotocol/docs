@@ -6,7 +6,7 @@ description: This page describes the Asset Metadata screen in the asset publishi
 
 2\. The first step in this process - Asset Metadata - is displayed on the screen.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

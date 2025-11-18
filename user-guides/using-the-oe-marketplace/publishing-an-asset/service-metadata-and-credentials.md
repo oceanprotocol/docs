@@ -15,7 +15,7 @@ Fill in the following fields
 * **Service language**: select the language of the service
 * **Service language direction**: the direction of the text in the selected language. It is automatically set, based on the selected language
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -87,4 +87,32 @@ In this group, the dataset location and the node that will encrypt the file loca
     *   Press **Submit Query** to verify the URL
 
         <figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
-*
+* **Provider URL, Sample File, Timeout**
+  *   **Provider URL**: This field indicates the Ocean Node that will encrypt the URL. By default, this field is prepopulated with the Ocean Node URL used by the marketplace. If you want to use a different node, press Delete, then insert the URL of the desired Ocean Node and press Validate.
+
+      <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+* **Sample File** (optional field): Enter the URL where a sample file of the asset is located and press **Validate**.
+*   **Timeout**: the time the consumer who purchased an asset has access to the asset. In the marketplace, it can be set to: 1 day, 1 week, 1 month, 1 year, or forever. The time counter starts the moment the asset is purchased. Once the time expires, the asset has to be purchased again to access it.
+
+    * Select a value from the dropdown list
+
+
+
+**18. Access Rules**
+
+* **Allow Eth Address** and **Deny Eth Address** lists: Use the fields in this group to determine who is allowed or denied access to the service. The rules are based on web3 addresses. These fields work the same way as the ones defined at the asset-level credentials, so please refer to steps 5 - 8 on the[ Asset Level Credentials page](asset-level-credentials.md).
+
+**Note:**&#x20;
+
+
+
+**19. SSI Policies:** to enable access rules based on SSI credentials at the service level, select the "Enable SSI Policies" checkbox. The SSI Policies group is displayed.&#x20;
+
+
+
+
+
+
+
+
+

@@ -59,7 +59,7 @@ To log in to the marketplace, perform the following steps:
 
 6\. The signature request window is displayed. Press confirm.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
