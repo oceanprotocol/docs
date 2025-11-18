@@ -102,7 +102,7 @@ In this group, the dataset location and the node that will encrypt the file loca
 
 * **Allow Eth Address** and **Deny Eth Address** lists: Use the fields in this group to determine who is allowed or denied access to the service. The rules are based on web3 addresses. These fields work the same way as the ones defined at the asset-level credentials, so please refer to steps 5 - 8 on the[ Asset Level Credentials page](asset-level-credentials.md).
 
-**Note:**&#x20;
+**Note:** To assess a user's right to access a service of an asset, the allow and deny lists at the asset and service level are cumulated and evaluated altogether.&#x20;
 
 
 
