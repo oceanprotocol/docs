@@ -4,7 +4,7 @@ cover: ../.gitbook/assets/Deployment.png
 coverY: 0
 ---
 
-# 🔨 Deployment guides
+# Deployment guides
 
 
 

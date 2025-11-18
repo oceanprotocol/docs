@@ -6,7 +6,7 @@ cover: ../.gitbook/assets/Technical2.png
 coverY: 0
 ---
 
-# 💻 Technical Architecture
+# Technical Architecture
 
 Architecture Overview
 
