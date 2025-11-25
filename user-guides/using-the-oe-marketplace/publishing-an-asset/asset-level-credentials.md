@@ -8,14 +8,14 @@
 
 * To grant access to everybody, select "_Allow all addresses_"
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * To restrict access to specific users, select "_Allow specific addresses_".&#x20;
   * A text field is displayed. Enter the web3 address and press _Add new address_. You can add multiple addresses.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -23,12 +23,12 @@
 
 * To deny access to everybody, select "_Deny all addresses_"
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * To deny access to specific addresses, select _"Deny specific addresses"_.
   * A text field is displayed. Enter the web3 address and press _Add new address_. You can add multiple addresses.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -38,7 +38,7 @@
 
 9\. To enable access rules based on SSI credentials, select the "Enable SSI Policies" checkbox. The SSI Policies group is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Using this user interface, the publisher can define access rules at the asset level based on the Verifiable Credentials (VCs) owned by the consumer in their SSI wallet. The VC-based access rules are referred to as SSI policies or simply policies. Three types of SSI policies can be defined:
 
@@ -69,7 +69,7 @@ Using this user interface, the publisher can define access rules at the asset le
 
 10\. **Policies applied to all credentials:** To add a new policy applied to all credentials, mark the corresponding checkbox.
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -140,8 +140,7 @@ Using this user interface, the publisher can define access rules at the asset le
 
 *   To apply a custom policy available at a URL, perform the following:
 
-    *   click on **Add policy** button and from the list select **Custom URL Policy**.\
-
+    *   click on **Add policy** button and from the list select **Custom URL Policy**.<br>
 
         <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 

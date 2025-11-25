@@ -16,7 +16,7 @@ Now, thanks to Ocean Enterprise, businesses can leverage a fully compliant, stab
 * [What is Ocean Enterprise?](what-is-ocean.md)
 * [What can you do with Ocean Enterprise?](benefits.md)
 * [Licensing Information](licensing.md)
-* [FAQ](broken-reference), [Glossary](broken-reference)
+* [FAQ](/broken/pages/3Y6sOofwqndzkjpx5dym), [Glossary](/broken/pages/R2OLx4Fnk7DPAqs49qjw)
 
 ***
 

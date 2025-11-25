@@ -14,6 +14,7 @@
     * [Onboarding to the Marketplace](user-guides/using-the-oe-marketplace/onboarding-to-the-marketplace/README.md)
       * [Install and configure Metamask in the browser](user-guides/using-the-oe-marketplace/onboarding-to-the-marketplace/install-and-configure-metamask-in-the-browser.md)
       * [Adding funds to the wallet](user-guides/using-the-oe-marketplace/onboarding-to-the-marketplace/adding-funds-to-the-wallet.md)
+      * [Setting up the SSI wallet](user-guides/using-the-oe-marketplace/onboarding-to-the-marketplace/setting-up-the-ssi-wallet.md)
     * [Logging in to the Marketplace](user-guides/using-the-oe-marketplace/logging-in-to-the-marketplace.md)
     * [Publishing an asset](user-guides/using-the-oe-marketplace/publishing-an-asset/README.md)
       * [Asset Metadata](user-guides/using-the-oe-marketplace/publishing-an-asset/asset-metadata.md)

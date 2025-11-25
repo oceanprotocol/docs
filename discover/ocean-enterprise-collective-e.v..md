@@ -8,4 +8,4 @@ Whether startup, enterprise, or government entity, we welcome you to become a me
 \
 OEC membership opens the door to cutting-edge technologies, high-value partnerships, and new business opportunities in the new data economy.\
 \
-Learn more about [OEC membership opportunities and benefits](https://www.oceanenterprise.io/member-benefits).  \
+Learn more about [OEC membership opportunities and benefits](https://www.oceanenterprise.io/member-benefits).  <br>

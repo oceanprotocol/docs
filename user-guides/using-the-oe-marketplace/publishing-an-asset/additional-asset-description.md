@@ -4,7 +4,7 @@
 
 *   To include an additional asset description in the DDO, press the **"Create Additional Asset Description"** button.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 * In the **Type** field, enter the type of the additional asset description (e.g. GAIA-X)
 * In the **Content** field, insert the asset description
 * You can insert as many additional asset descriptions as you need
