@@ -4,7 +4,7 @@
 
 * Press the **Submit** button to publish the asset.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * During the publishing process, the Metamask wallet will display notification messages that require your approval to perform the transaction on the blockchain. Approve all transactions&#x20;
 
@@ -18,4 +18,4 @@
 
 <figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-<mark style="background-color:$info;">Please note that from the moment the asset is created on the blockchain to the moment the Ocean Node's indexer component indexes the asset, there is a delay. The delay can range from a few seconds to minutes, depending on factors such as RPC provider endpoint performance, current indexed block, and the performance of the machine where Ocean Node runs.</mark>
+<mark style="background-color:$info;">Please note that from the time an asset is created on the blockchain until it is indexed by the Ocean Node’s indexer, a delay may occur. This delay typically ranges from a few seconds to several minutes, depending on factors such as RPC endpoint performance, the current indexed block, and the machine’s processing capacity running the Ocean Node.</mark>

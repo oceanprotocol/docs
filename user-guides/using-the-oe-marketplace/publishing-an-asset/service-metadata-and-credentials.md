@@ -15,7 +15,7 @@ Fill in the following fields
 * **Service language**: select the language of the service
 * **Service language direction**: the direction of the text in the selected language. It is automatically set, based on the selected language
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -116,7 +116,7 @@ Consumer Parameters are the parameters the asset uses. For a dataset of type URL
 
 *   To define consumer parameters for an asset, check the **"This asset uses user-defined parameters"** checkbox. The Custom parameters group is displayed
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Four types of parameters can be defined in the interface: text, number, boolean, or select (list of values).
 * To define a consumer Parameter, input the following fields:
   * **Parameter Name**: the name of the parameter
@@ -126,7 +126,7 @@ Consumer Parameters are the parameters the asset uses. For a dataset of type URL
   * **Required**: if the field is required or optional
   *   **Default value**: the default value of the parameter. It will be used if no value is input by the consumer at the time of consumption&#x20;
 
-      <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
       *   For Parameters of type "select", the screen includes additional fields where the list's values are entered.
 

@@ -6,7 +6,7 @@ description: This page describes the Asset Metadata screen in the asset publishi
 
 2\. The first step in this process - Asset Metadata - is displayed on the screen.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -14,11 +14,11 @@ description: This page describes the Asset Metadata screen in the asset publishi
 
 * **Title:** input a suggestive name for the Asset you are publishing
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Description:** create a detailed description of the Asset. You can use free text, but also Markdown
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Tags:** add suggestive tags for your asset.  The tags help users filter the assets. You can add as many tags as you wish.
 

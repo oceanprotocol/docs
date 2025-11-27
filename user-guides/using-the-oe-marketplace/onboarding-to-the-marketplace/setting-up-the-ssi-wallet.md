@@ -35,25 +35,25 @@ To set up the SSI wallet, perform the following steps:
 
 2\. The login screen of the SSI wallet is displayed.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
 3\. Click the "**Connect with web3**" button. A MetaMask notification message for a signature request appears on the screen.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 4\. Click "**Confirm**". The Select wallet screen is displayed. Press "**View wallet**".
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 5\. The main menu of the SSI wallet is displayed.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 From the SSI wallet's user interface, users can manage the cryptographic keys, DIDs, and Verifiable Credentials associated with their account.
 

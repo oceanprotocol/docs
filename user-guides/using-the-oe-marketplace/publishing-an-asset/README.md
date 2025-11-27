@@ -19,7 +19,8 @@ When an asset is published, the following actions occur:
 1. The asset smart contracts (data NFT, data token)  are created on-chain. The price is saved in the Fixed Rate Exchange contract.
 2. The location of the service files of the asset  is encrypted
 3. Asset's DDO is created in the form of a Verifiable Credential, in JWT format, encrypted and saved in IPFS
-4. The Content ID of the file is saved on-chain
+4. The state of the asset and of the first service of the asset are set to "Active", meaning they are consumable
+5. The Content ID of the file is saved on-chain
 
 
 
