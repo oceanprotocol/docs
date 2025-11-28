@@ -29,6 +29,7 @@
       * [Update the asset's services](user-guides/using-the-oe-marketplace/editing-an-asset/update-the-assets-services/README.md)
         * [Update an existing service](user-guides/using-the-oe-marketplace/editing-an-asset/update-the-assets-services/update-an-existing-service.md)
         * [Create a new service](user-guides/using-the-oe-marketplace/editing-an-asset/update-the-assets-services/create-a-new-service.md)
+    * [Consuming an asset's service](user-guides/using-the-oe-marketplace/consuming-an-assets-service.md)
 * [Technical Architecture](developers/README.md)
   * [High Level Architecture](developers/architecture.md)
   * [Technical Architecture](developers/architecture-1/README.md)

@@ -66,3 +66,11 @@ To log in to the marketplace, perform the following steps:
 7\. The user is now connected to the Marketplace with both the web3 and SSI wallet.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+8\. From the main menu of the marketplace, the user can do the following:&#x20;
+
+* [Publish an asset](publishing-an-asset/)
+* access the assets catalogue, from where services can be [accessed](consuming-an-assets-service.md), and C2D jobs can be initiated
+* access the user profile, where information related to the user's activity is logged
