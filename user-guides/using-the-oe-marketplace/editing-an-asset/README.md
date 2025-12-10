@@ -21,7 +21,7 @@ The user has logged in to the marketplace.
 
 1\. Select the asset. If the user is the asset owner, the "Edit Asset" option appears under the services list.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 
 

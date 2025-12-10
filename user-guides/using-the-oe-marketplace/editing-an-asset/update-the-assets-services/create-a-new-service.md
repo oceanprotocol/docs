@@ -23,13 +23,13 @@ To create a new service, perform the following:
 
 3\. After the service's attributes are entered, click "**Submit**". A transaction request notification from Metamask appears on the screen. Press "**Confirm**".
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 4\. A confirmation message is displayed on the screen. Click "**Back to Asset**" to return to the asset details screen.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
