@@ -79,7 +79,9 @@ For a consumer to access an asset's service, the following conditions must be me
 
             <figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
     * Select the verifiable credentials to present and press **"Accept**".
-    * The DID Selector window is displayed. Select the DID that will be used to sign the verifiable presentation in which the selected verifiable credentials will be sent for verification. Then press "**Confirm**".
+    *   The DID Selector window is displayed. Select the DID that will be used to sign the verifiable presentation in which the selected verifiable credentials will be sent for verification. Then press "**Confirm**".<br>
+
+        <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
     * The verifiable credentials are submitted for verification against the SSI policy defined in the asset metadata
       * If the verification fails, an error message will be displayed on-screen.
       *   If verification succeeds:

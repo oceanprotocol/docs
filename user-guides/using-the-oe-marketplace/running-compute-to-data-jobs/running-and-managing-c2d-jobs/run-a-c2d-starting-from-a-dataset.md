@@ -14,7 +14,7 @@ description: Use the C2D wizard to run a job by selecting a dataset as the start
 
 1\. Access the Catalogue. The catalogue lists all registered assets - datasets and algorithms - of any type - download or compute.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **Note**: to refine your selection in the catalogue, use the search bar at the top of the list or the filters available on the left side of the catalogue
 
@@ -97,7 +97,7 @@ This screen is divided into three sections: Assets, C2D Resources, and Fees.
   * Displays the user’s escrow account balance.
   *   Indicates the additional amount to deposit if the job cost exceeds the current escrow balance.<br>
 
-      <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -107,7 +107,7 @@ This screen is divided into three sections: Assets, C2D Resources, and Fees.
   *   Provider fees (datasets and algorithms)\
       <mark style="color:$info;background-color:$info;">**Note**</mark><mark style="color:$info;background-color:$info;">: the Provider fee is not displayed initially. It is calculated after the assets' credentials are verified.</mark><br>
 
-      <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -119,7 +119,7 @@ a) In the Assets section, click the "**Check Credential**" button next to one of
 
 b) If the current asset has SSI-based access policies defined, then the marketplace will run a query in the consumer's SSI wallet and list the Verifiable Credentials that match the specified criteria. Select the Verifiable Credentials you want to send for verification and click **Accept**.
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;c) The DID selector window is open, containing the list of all DIDs from the SSI wallet. Select the DID you want to use to sign the Verifiable Presentation in which the Verifiable Credentials selected in the previous step will be wrapped before being sent for verification. Then click **Confirm**.
 

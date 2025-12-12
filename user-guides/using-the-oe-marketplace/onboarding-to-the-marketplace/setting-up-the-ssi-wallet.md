@@ -35,25 +35,25 @@ To set up the SSI wallet, perform the following steps:
 
 2\. The login screen of the SSI wallet is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 3\. Click the "**Connect with web3**" button. A MetaMask notification message for a signature request appears on the screen.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 4\. Click "**Confirm**". The Select wallet screen is displayed. Press "**View wallet**".
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 5\. The main menu of the SSI wallet is displayed.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From the SSI wallet's user interface, users can manage the cryptographic keys, DIDs, and Verifiable Credentials associated with their account.
 
@@ -69,12 +69,12 @@ There are two methods to add a DID to the SSI wallet: create a new DID or import
 
     *   From the left side menu, click "**DIDs**"
 
-        <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
     *   The DIDs menu is displayed. Click "**New**".
 
-        <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
     * The DID types menu is displayed. From here, the user can choose the type of DID they want to create. did:key and did:jwk are primarily used in testing scenarios, while did:web is used for production cases. The following steps show how to create a did:web. Click "**Create did:web**"
@@ -97,19 +97,19 @@ There are two methods to add a DID to the SSI wallet: create a new DID or import
 
         *   **Path**: Multiple DIDs can be hosted under one domain by using paths. Enter the path where the DID is located. If you use the web registry provided by the SSI wallet instance, enter `/wallet-api/registry/<folder_name>` in this field.
 
-            <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
         *   Click "**Create did:web**". An information message is displayed indicating that the DID has been created.&#x20;
 
-            <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
         *   To test that the DID can be resolved, go to [https://dev.uniresolver.io/](https://dev.uniresolver.io/), enter the DID in the did-url field, and click **Resolve**. The DID document should be retrieved and displayed.
 
-            <figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -117,12 +117,12 @@ There are two methods to add a DID to the SSI wallet: create a new DID or import
 
     *   From the left side menu, click "**DIDs**"
 
-        <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
     *   The DIDs menu is displayed. Click "**Import**".
 
-        <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -132,7 +132,7 @@ There are two methods to add a DID to the SSI wallet: create a new DID or import
         * **Associated key (PEM or JSON)**: enter the private key of the DID in either PEM of JSON format
         *   **Alias**: provide an alias for the imported DID
 
-            <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

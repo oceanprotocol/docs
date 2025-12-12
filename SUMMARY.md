@@ -34,7 +34,7 @@
       * [C2D Concepts](user-guides/using-the-oe-marketplace/running-compute-to-data-jobs/c2d-concepts.md)
       * [Running and managing C2D jobs](user-guides/using-the-oe-marketplace/running-compute-to-data-jobs/running-and-managing-c2d-jobs/README.md)
         * [Run a C2D starting from a dataset](user-guides/using-the-oe-marketplace/running-compute-to-data-jobs/running-and-managing-c2d-jobs/run-a-c2d-starting-from-a-dataset.md)
-        * [Run a C2D job using an algorithm](user-guides/using-the-oe-marketplace/running-compute-to-data-jobs/running-and-managing-c2d-jobs/run-a-c2d-job-using-an-algorithm.md)
+        * [Run a C2D job starting from an algorithm](user-guides/using-the-oe-marketplace/running-compute-to-data-jobs/running-and-managing-c2d-jobs/run-a-c2d-job-starting-from-an-algorithm.md)
         * [Manage the escrow account](user-guides/using-the-oe-marketplace/running-compute-to-data-jobs/running-and-managing-c2d-jobs/manage-the-escrow-account.md)
         * [C2D jobs history](user-guides/using-the-oe-marketplace/running-compute-to-data-jobs/running-and-managing-c2d-jobs/c2d-jobs-history.md)
 * [Technical Architecture](developers/README.md)
