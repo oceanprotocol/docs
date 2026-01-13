@@ -5,7 +5,23 @@ description: >-
   can publish, buy or browse data
 ---
 
-# Fine-Grained Permissions
+# Managing access to assets - to be updated
+
+<mark style="background-color:yellow;">an OE-enabled dataspace can be deployed in one of two security configurations:</mark>
+
+<mark style="background-color:yellow;">1. SSI Security Disabled: In configurations where SSI security is disabled, access control relies solely on the consumer’s Web3 address. Access to an asset is granted if:</mark>&#x20;
+
+* <mark style="background-color:yellow;">The address is explicitly listed in the allow list, or</mark>&#x20;
+* <mark style="background-color:yellow;">The address is not present in the deny list</mark>
+
+<mark style="background-color:yellow;">2. SSI Security Enabled: In a dataspace secured by Self-Sovereign Identity (SSI), access to assets is granted upon successful verification of:</mark>&#x20;
+
+* &#x20;<mark style="background-color:yellow;">The consumer’s Web3 address</mark>
+* <mark style="background-color:yellow;">The Verifiable Credentials required by each asset.</mark>&#x20;
+
+<mark style="background-color:yellow;">This dual-layered approach ensures that only authorized identities possessing the appropriate credentials can interact with sensitive resources.</mark>
+
+
 
 A large part of Ocean is about access control, which is primarily handled by datatokens. Users can access a resource (e.g. a file) by redeeming datatokens for that resource. We recognize that enterprises and other users often need more precise ways to specify and manage access, and we have introduced fine-grained permissions for these use cases. Fine-grained permissions mean that access can be controlled precisely at two levels:
 

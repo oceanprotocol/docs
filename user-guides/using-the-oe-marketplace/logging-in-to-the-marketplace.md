@@ -6,7 +6,7 @@ description: >-
 
 # Logging in to the Marketplace
 
-For a user to publish or consume assets, they have to log in to the marketplace. Logging in to the marketplace requires connecting to the marketplace server with both the MetaMask web3 wallet and the SSI wallet.
+To publish or consume assets, a user must first log in to the marketplace. Logging in requires establishing a connection to the marketplace server using both the MetaMask web3 wallet and the SSI wallet.
 
 ## &#x20;Precondition
 
