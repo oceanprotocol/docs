@@ -63,7 +63,7 @@ Ocean Enterprise supports the following currencies:
 
 ### Test Networks currencies
 
-<table><thead><tr><th width="176.5">Blockchain Network</th><th width="121.5">Supported Currency</th><th>Contract address</th></tr></thead><tbody><tr><td>Ethereum Sepolia</td><td>USDC</td><td><a href="https://sepolia.etherscan.io/token/0xf08a50178dfcde18524640ea6618a1f965821715"><code>0xf08A50178dfcDe18524640EA6618a1f965821715</code></a></td></tr><tr><td>Ethereum Sepolia</td><td>EURC</td><td><a href="https://sepolia.etherscan.io/address/0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4"><code>0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4</code></a></td></tr><tr><td>Optimism Sepolia</td><td>USDC</td><td><a href="https://sepolia-optimism.etherscan.io/token/0x5fd84259d66Cd46123540766Be93DFE6D43130D7"><code>0x5fd84259d66Cd46123540766Be93DFE6D43130D7</code></a></td></tr></tbody></table>
+<table><thead><tr><th width="176.5">Blockchain Network</th><th width="121.5">Supported Currency</th><th>Contract address</th></tr></thead><tbody><tr><td>Ethereum Sepolia</td><td>USDC</td><td><a href="https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"><code>0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238</code></a></td></tr><tr><td>Ethereum Sepolia</td><td>EURC</td><td><a href="https://sepolia.etherscan.io/address/0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4"><code>0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4</code></a></td></tr><tr><td>Optimism Sepolia</td><td>USDC</td><td><a href="https://sepolia-optimism.etherscan.io/token/0x5fd84259d66Cd46123540766Be93DFE6D43130D7"><code>0x5fd84259d66Cd46123540766Be93DFE6D43130D7</code></a></td></tr></tbody></table>
 
 ***
 

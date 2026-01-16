@@ -4,22 +4,28 @@ cover: ../.gitbook/assets/Deployment.png
 coverY: 0
 ---
 
-# Deployment guides
+# Deployment Guides
+
+This chapter explains how to install and configure the components of the Ocean Enterprise software stack. All components run in Docker containers on a Linux operating system. Deploying the OE components requires solid familiarity with Linux, Docker Engine, and Docker Compose.&#x20;
+
+As described in the [Dataspace Configuration Options](../developers/architecture-1.md) chapter, the OE Stack supports two deployment modes - with SSI-based access control enabled or disabled. Because the installation order varies depending on which configuration you choose, consult the dedicated chapter that covers the installation sequence for each configuration.  &#x20;
 
 
 
+Each deployment subchapter is structured into four parts:&#x20;
+
+* _Prerequisites_: lists the hardware, software, and other requirements for running the component\
+  <mark style="color:$info;background-color:$info;">**Note**</mark><mark style="color:$info;background-color:$info;">: The hardware specifications provided represent the minimum configuration identified during our testing. Actual requirements vary based on workload characteristics such as the number of concurrent requests and expected response times. We recommend starting with an estimated configuration based on your anticipated workload, monitoring system performance over time, and adjusting resources accordingly.</mark>
+* _Deployment Steps_: describes the tasks required to perform to install and configure the component.
+* _Post installation steps_: tasks that must be completed for the component to function properly
+* _Environment Variables_: explains the purpose and usage of each environment variable needed by the component
 
 
-There are many ways in which the components can be deployed, from simple configurations used for development and testing to complex configurations, used for production systems.
 
-All the Ocean Protocol components ([Provider](../developers/old-infrastructure/provider/), [Aquarius](../developers/old-infrastructure/aquarius/), [Subgraph](../developers/old-infrastructure/subgraph/)) are designed to run in Docker containers, on a Linux operating system. For simple configurations, we rely on Docker Engine and Docker Compose products to deploy and run the components, while for complex configurations we use Kubernetes. The guides included in this section will present both deployment options.
+This chapter includes the following information:
 
-Please note that deploying the Ocean components requires a good understanding of:
-
-* Linux operating system
-* Docker Engine
-* Docker Compose or Kubernetes (depending on the configuration chosen for the component deployment)
-
-Please note that Ocean Marketplace is not a core component of the stack but rather an example of what can be achieved with the technology, in this section we included a guide on how to deploy it.
-
-All components need to be deployed on a server, so we included a guide about how to install and configure a server will all the necessary tools.
+* [Deployment Modes](./)
+* [OE Node Installation and Configuration](oe-node-installation-and-configuration.md)
+* [Marketplace Installation and Configuration](marketplace-installation-and-configuration.md)
+* [Policy Server and Policy Server Proxy Installation and Configuration](policy-server-installation-and-configuration/)
+* [SSI Stack Installation and Configuration](ssi-stack-installation-and-configuration/)
