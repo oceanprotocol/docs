@@ -6,7 +6,7 @@
 
 ### Configuration example
 
-In a dataspace where SSI‑based access control is disabled, only two OE components are required: the OE Node and the marketplace. The table below provides the assumed URLs for each component.
+In a dataspace where SSI‑based access control is disabled, only two OE components are required: the OE Node and the marketplace. The table beldockeow provides the assumed URLs for each component.
 
 | Component   | URL                               |
 | ----------- | --------------------------------- |
@@ -78,7 +78,7 @@ To ensure correct operation, configure the relevant environment variable in each
 
 The recommended deployment order for this setup is:
 
-1. [Install and configure the SSI Stack](ssi-stack-installation-and-configuration/)
+1. [Install and configure the SSI Stack](ssi-stack-installation-and-configuration.md)
 2. [Install the Policy Server](policy-server-installation-and-configuration/)
 3. [Install and configure the OE Node](oe-node-installation-and-configuration.md)
 4. [Install and configure the Policy Server Proxy](policy-server-installation-and-configuration/)

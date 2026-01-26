@@ -1,2 +1,0 @@
-# walt.id Wallet
-

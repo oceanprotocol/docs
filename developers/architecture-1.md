@@ -16,6 +16,8 @@ Participants interact with the dataspace through the **Marketplace**’s user in
 
 To publish or consume assets, a user must first log in to the marketplace. Logging in requires establishing a connection to the marketplace server using both the **Web3 wallet** and the **SSI wallet**. The Web3 Wallet stores the participant’s Web3 private key, while the SSI wallet manages the participant’s DID and associated Verifiable Credentials.
 
+In a production environment, each participant deploys their own SSI wallet instance within the dataspace to safeguard their private keys, DIDs, and Verifiable Credentials. Alternatively, the marketplace operator may offer a shared SSI wallet instance for participants who have not provisioned their own.
+
 ### Publishing an asset
 
 When an asset is published, a corresponding NFT is created on the **Blockchain.** Then, the asset description (DDO) is encrypted by the OE Node, saved in **IPFS,** and the ID of the IPFS content is saved on-chain. The asset is then indexed by the OE Node and becomes available for consumption through the Marketplace.

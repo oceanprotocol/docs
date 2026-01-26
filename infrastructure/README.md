@@ -28,4 +28,4 @@ This chapter includes the following information:
 * [OE Node Installation and Configuration](oe-node-installation-and-configuration.md)
 * [Marketplace Installation and Configuration](marketplace-installation-and-configuration.md)
 * [Policy Server and Policy Server Proxy Installation and Configuration](policy-server-installation-and-configuration/)
-* [SSI Stack Installation and Configuration](ssi-stack-installation-and-configuration/)
+* [SSI Stack Installation and Configuration](ssi-stack-installation-and-configuration.md)
