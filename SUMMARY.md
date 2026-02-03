@@ -54,5 +54,4 @@
   * [OE Node installation and configuration](infrastructure/oe-node-installation-and-configuration.md)
   * [Marketplace installation and configuration](infrastructure/marketplace-installation-and-configuration.md)
   * [SSI Stack installation and configuration](infrastructure/ssi-stack-installation-and-configuration.md)
-  * [Policy Server installation and configuration](infrastructure/policy-server-installation-and-configuration/README.md)
-    * [Policy Server Proxy](infrastructure/policy-server-installation-and-configuration/policy-server-proxy.md)
+  * [Policy Server and Policy Server Proxy installation and configuration](infrastructure/policy-server-and-policy-server-proxy-installation-and-configuration.md)

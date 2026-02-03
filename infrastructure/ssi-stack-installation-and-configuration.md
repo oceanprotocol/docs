@@ -140,7 +140,7 @@ This command pulls the appropriate version of the component’s Docker image and
 ## **Post installation steps**
 
 * Deploy the SSI stack components behind a reverse proxy responsible for TLS termination and secure request forwarding. The proxy should enforce HTTPS for all external traffic and route decrypted requests to the internal application port.
-* After installation, the components work seamlessly with the rest of the OE stack and require no additional configuration. For advanced configuration or maintenance of the SSI Stack components, consult the official [walt.id documentation](https://docs.walt.id/community-stack/home).&#x20;
+* After installation, the components work seamlessly with the rest of the OE stack and require no additional configuration. However, for advanced configuration or ongoing maintenance of the SSI Stack components, consult the official [walt.id documentation](https://docs.walt.id/community-stack/home).&#x20;
 
 
 

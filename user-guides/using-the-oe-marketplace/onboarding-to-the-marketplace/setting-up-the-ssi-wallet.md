@@ -20,7 +20,7 @@ Setting up the SSI wallet means:
 ## Preconditions
 
 * The user must have a minimum understanding of SSI concepts, such as cryptographic key, DID, DID method, and Verifiable Credential
-* The SSI wallet instance has been installed and configured, as described <mark style="color:red;background-color:$warning;">here.</mark>
+* The SSI wallet instance has been installed and configured, as described in [this chapter](../../../infrastructure/ssi-stack-installation-and-configuration.md).
 * The user has logged in to Metamask.
 
 

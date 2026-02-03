@@ -41,7 +41,7 @@ git clone https://github.com/OceanProtocolEnterprise/market.git
 
 
 
-2. Copy `.env.example` to _`.env`_&#x20;
+2. Copy `.env.example` to `.env`&#x20;
 
 ```sh
 cp .env.example .env
@@ -142,7 +142,7 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 
 #### NEXT\_PUBLIC\_NODE\_URI\_INDEXED&#x20;
 
-**Description:** configures the list of OE nodes whose assets will be shown in the marketplace's catalogue. Only the assets published by the OE nodes in this list will be displayed in the catalogue.
+**Description:** Configures the list of OE nodes whose assets will be shown in the marketplace's catalogue. Only the assets published by the OE nodes in this list will be displayed in the catalogue.
 
 **Values:** JSON array of strings (URL)
 
