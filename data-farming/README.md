@@ -14,9 +14,11 @@ coverY: 0
 
 DF currently has one stream:
 
-* [**Predictoor DF**](predictoordf.md)**.** Run prediction bots to earn continuously. Weekly Predictoor rewards are 3,750 OCEAN + 20,000 ROSE rewards through 2025.
+* [**Predictoor DF**](predictoordf.md)**.** Run prediction bots to earn continuously. Weekly Predictoor rewards are 500 USDC through 2026.
 
 All streams repeat **weekly** that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.
+
+Predictoor rewards become available to claim on the Monday following the end of the round.
 
 DF Streams evolve over time. The next two sections cover past & future DF streams.
 
