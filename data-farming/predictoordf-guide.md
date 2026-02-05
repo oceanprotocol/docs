@@ -19,7 +19,7 @@ In Predictoor DF (and Predictoor proper), you run prediction bots to earn contin
 
 - **Duration:** ongoing
 - **To be eligible:** predictoors are automatically eligible 🧘
-- **To claim:** recall that the USDC rewards act as more sales coming to you (as a predictoor). So you claim your USDC from sales in the usual way, by running the USDC payout script. See the [payout README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) for specific instructions.
+- **To claim:** Run the USDC payout script. See the [payout README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) for specific instructions.
 
 ----
 
