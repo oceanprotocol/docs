@@ -7,7 +7,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gif/money-robot.gif" alt=""></figure>
 
-In Predictoor DF (and Predictoor proper), you run prediction bots to earn continuously. This guide describes how to become eligible for USDC rewards and claim them; and the same for Oasis ROSE rewards. And of course first thing you need to do is become a predictoor.
+In Predictoor DF (and Predictoor proper), you run prediction bots to earn continuously. This guide describes how to become eligible for USDC rewards and claim them. And of course first thing you need to do is become a predictoor.
 
 ## How to become a predictoor
 
@@ -20,12 +20,6 @@ In Predictoor DF (and Predictoor proper), you run prediction bots to earn contin
 - **Duration:** ongoing
 - **To be eligible:** predictoors are automatically eligible 🧘
 - **To claim:** recall that the USDC rewards act as more sales coming to you (as a predictoor). So you claim your USDC from sales in the usual way, by running the USDC payout script. See the [payout README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) for specific instructions.
-
-
-## On ROSE rewards in Predictoor DF
-
-- ⚠️ **To be eligible** for a given DF round: you MUST run the [payout script](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) <= 4 days after the round ends, i.e. between Thu 00:00 UTC & Sun 11:59 PM UTC
-- **To claim:** See the [payout README](https://github.com/oceanprotocol/pdr-backend/blob/main/READMEs/payout.md) for specific instructions.
 
 ----
 
