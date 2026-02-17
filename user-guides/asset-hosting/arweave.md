@@ -4,11 +4,7 @@ description: How to use decentralized hosting for your NFT assets
 
 # Arweave
 
-### Using Arweave with Uploader
-
-Enhance the efficiency of your file uploads by leveraging the simplicity of the [Ocean Uploader](./Uploader.md) storage system for Arweave. Dive into our comprehensive guide [here](./Uploader.md) to discover detailed steps and tips, ensuring a smooth and hassle-free uploading process. Your experience matters, and we're here to make it as straightforward as possible.
-
-### Arweave
+### Context
 
 [Arweave](https://www.arweave.org/) is a global, permanent, and decentralized data storage layer that allows you to store documents and applications forever. Arweave is different from other decentralized storage solutions in that there is only one up-front cost to upload each file.
 
