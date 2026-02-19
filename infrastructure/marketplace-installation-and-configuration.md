@@ -196,7 +196,7 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 
 
 
-#### NEXT\_PUBLIC\_IPFS\_JWT
+#### IPFS\_JWT
 
 **Description:** Sets the access key to the IPFS gateway provider account used to upload and retrieve files on IPFS.
 
@@ -222,29 +222,49 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 
 ### Currencies and Market Fees
 
-#### NEXT\_PUBLIC\_ERC20\_ADDRESSES
+The marketplace can apply two types of fees cumulatively: a fixed fee `(NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE_MAP)` and a variable, percentage‑based fee `(NEXT_PUBLIC_CONSUME_MARKET_FEE)`. Using both fee types gives the marketplace operator greater flexibility in defining the overall fee policy&#x20;
 
-**Description:** Defines the token address for the currency token accepted by the marketplace, for each blockchain the market is connected to.&#x20;
 
-Ensure that the listed addresses are supported by the O.E.C smart contracts; unsupported entries will cause asset publishing to fail. Consult [this chapter](../developers/networks.md) for the latest list of supported currencies.
+
+#### NEXT\_PUBLIC\_ALLOWED\_ERC20\_ADDRESSES
+
+**Description:** Defines the token address for the currency tokens accepted by the marketplace, for each blockchain the market is connected to.&#x20;
+
+Ensure that the listed addresses are supported by the O.E.C. smart contracts; unsupported entries will cause asset publishing to fail. Consult [this chapter](../developers/networks.md) for the latest list of supported currencies. If none of the currency tokens configured in this variable is supported by the O.E.C. smart contracts, an error message is displayed when users connect to the market.&#x20;
 
 <mark style="color:$info;">Note: If you intend to use the fixed market‑order fee (configured via</mark> <mark style="color:$info;"></mark><mark style="color:$info;">`NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE`</mark><mark style="color:$info;">) in a market connected to multiple blockchains, ensure that all currencies across those chains use the same number of decimals. If the decimal precision differs, the fixed fee will be calculated incorrectly. This limitation will be resolved in a future market release.</mark>
 
-**Values:** JSON map of chainId to token address.
+**Values:** JSON map of chainId to a list of token addresses.
 
-**Example:**`{"11155111":"0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4"}`  i.e., for Sepolia blockchain, the currency is EURC.
+**Example:** `{"11155111":["0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4","0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"]}`  i.e., for Sepolia blockchain, the supported currencies are EURC and USDC.
 
 **Default Value:** `{}`
 
-#### NEXT\_PUBLIC\_CONSUME\_MARKET\_ORDER\_FEE&#x20;
+#### NEXT\_PUBLIC\_CONSUME\_MARKET\_ORDER\_FEE\_MAP&#x20;
 
-**Description:** Defines the fixed market fee applied when an asset is purchased through the marketplace, whether for download or for use in a C2D job. The fee is expressed as an absolute number, written with the number of decimals used by the currency token defined in `NEXT_PUBLIC_ERC20_ADDRESSES`.
+**Description:** Defines the fixed market fee applied when an asset is purchased through the marketplace, whether for download or for use in a C2D job. The fee is expressed as an absolute number, written with the number of decimals used by each of the currency tokens defined in `NEXT_PUBLIC_ALLOWED_ERC20_ADDRESSES`.
 
-<mark style="color:$info;">Note: If you intend to use the fixed market‑order fee in a market connected to multiple blockchains, ensure that all currencies across those chains (i.e., the addresses set in</mark> `NEXT_PUBLIC_ERC20_ADDRESSES`) <mark style="color:$info;">use the same number of decimals. If the decimal precision differs, the fixed fee will be miscalculated. This limitation will be resolved in a future market release.</mark>
+**Value:** JSON map of chainId to a list of maps (token address to fee value).
 
-**Value:** Number (expressed using the decimal precision accepted by the currency token)
 
-**Example:** For the EURC currency, which has a precision of 6 decimals, the value of `1500000`  set in this variable equals 1.5 EURC.
+
+**Example:** `{"11155111":[{"token":"0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4","amount":"2000000"},{"token":"0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238","amount":"1000000"}]}` , i.e., for Optimism Sepolia blockchain, the applicable fixed fees are:  2 EURC for assets priced in EURC and 1 USDC for assets priced in USDC.
+
+
+
+**Default Value:** `{}`
+
+
+
+#### NEXT\_PUBLIC\_CONSUME\_MARKET\_FEE
+
+**Description**: Defines the variable fee applied when an asset is purchased through the marketplace, whether for download or for use in a C2D job. The fee is represented as a decimal value (for example,  `0.1` corresponds to a `10%` fee, and `1` corresponds to a `100%` fee). This fee is applied to all prices, regardless of the currency.&#x20;
+
+
+
+**Example:** `0.15`, meaning that a variable fee of 15% of the asset price is applied.&#x20;
+
+
 
 **Default Value:** `0`
 
