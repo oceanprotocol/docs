@@ -17,6 +17,20 @@ Setting up the SSI wallet means:
 
 
 
+## Concepts
+
+**Self-Sovereign Identity (SSI)** is a digital framework that gives individuals and organizations full ownership and control over their data by allowing them to store and share verified credentials (VC) directly, without relying on a third party. SSI reduces operational risk and costs by eliminating the need to store sensitive data in vulnerable central databases, while simultaneously streamlining onboarding through instantly verifiable, high-trust digital credentials.
+
+
+
+**Verifiable Credential (VC)** is the digital equivalent of physical documents—like a diploma or passport—that are cryptographically signed by an issuer so they can be instantly verified as authentic without the verifier needing to contact the original source.
+
+
+
+A **Decentralized Identifier (DID)** is a small, secure file - usually stored on a decentralized ledger - that contains your public keys and service endpoints, allowing others to verify your digital signatures and communicate with you directly.
+
+
+
 ## Preconditions
 
 * The user must have a minimum understanding of SSI concepts, such as cryptographic key, DID, DID method, and Verifiable Credential
