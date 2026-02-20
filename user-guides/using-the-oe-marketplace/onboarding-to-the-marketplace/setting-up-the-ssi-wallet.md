@@ -23,7 +23,7 @@ Setting up the SSI wallet means:
 
 
 
-**Verifiable Credential (VC)** is the digital equivalent of physical documents—like a diploma or passport—that are cryptographically signed by an issuer so they can be instantly verified as authentic without the verifier needing to contact the original source.
+**Verifiable Credential (VC)** is the digital equivalent of physical documents - like a diploma or passport - that are cryptographically signed by an issuer so they can be instantly verified as authentic without the verifier needing to contact the original source.
 
 
 
