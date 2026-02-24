@@ -344,6 +344,25 @@ Ensure that the listed addresses are supported by the O.E.C. smart contracts; un
 
 ***
 
+### Dataspace
+
+#### NEXT\_PUBLIC\_DATASPACE
+
+**Description:** Sets the identifier of the dataspace associated with the marketplace. This has two effects:
+
+* All assets published through the marketplace will automatically receive this dataspace identifier.
+* The marketplace will display only the assets whose dataspace identifier matches this value.
+
+By default, the value of this variable is set to `null`. In this state, no filtering is applied to the assets displayed, and no dataspace identifier is added to an asset’s description
+
+**Values:** string
+
+**Example:** `"oceanenteprise"`
+
+**Default Value:** `null`
+
+
+
 ### Others
 
 #### NEXT\_PUBLIC\_ENCRYPT\_ASSET&#x20;
@@ -367,4 +386,20 @@ Values: `true/false`
 **Example:** `true`
 
 **Default Value:** `false`
+
+
+
+#### &#x20;NEXT\_PUBLIC\_SSI\_UI\_URL
+
+**Description:** Defines the URL of the SSI wallet user interface provided by the marketplace operator. This URL is used in the onboarding guide to direct participants to the interface where they can add the DIDs and VCs required to access dataspace assets.
+
+**Value:** string (URL)
+
+**Example:** `https://wallet2-ui.oceanenterprise.io`
+
+**Default Value:** `null`
+
+
+
+
 
