@@ -196,6 +196,30 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 
 
 
+#### NEXT\_PUBLIC\_IPFS\_UPLOAD\_URL
+
+**Description:** Sets the API endpoint the marketplace uses to upload content to your configured IPFS provider. Consult your IPFS gateway’s documentation to ensure you supply the correct endpoint and required parameters.
+
+**Values:** String (URL)
+
+**Example:** `https:/api.pinata.cloud/pinning/pinJSONToIPFS/`
+
+**Default Value:** `null`
+
+
+
+#### NEXT\_PUBLIC\_IPFS\_DELETE\_URL
+
+**Description:** Sets the API endpoint the marketplace uses to request content deletion from your configured IPFS provider. Check your IPFS gateway’s documentation to ensure you provide the correct endpoint and required parameters.
+
+**Values:** String (URL)
+
+**Example:** `https://api.pinata.cloud/pinning/unpin`
+
+**Default Value:** `null`
+
+
+
 #### IPFS\_JWT
 
 **Description:** Sets the access key to the IPFS gateway provider account used to upload and retrieve files on IPFS.
@@ -217,6 +241,10 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 **Example:** `true`
 
 **Default Value:** `false`
+
+
+
+&#x20;
 
 ***
 
