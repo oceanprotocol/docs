@@ -16,6 +16,6 @@ For routine decisions to the code base that do NOT involve new version updates o
 
 #### Maintainer Roles
 
-* Release Manager: Rotates between maintainers, coordinates release process
+* Release Manager: Coordinates release process; rotates between maintainers.
 * Core Maintainers: Vote on major decisions, approve final releases
 * Area Maintainers: Responsible for specific components
