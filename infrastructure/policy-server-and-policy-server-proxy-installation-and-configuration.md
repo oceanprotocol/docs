@@ -19,6 +19,12 @@ The minimum hardware requirements for the server hosting the marketplace are:
 
 
 
+## Pre-installation steps
+
+Make sure you review the [Compatibility Matrix](compatibility-matrix.md) to ensure that the version is compatible with the other components.
+
+
+
 ## Deployment steps
 
 There are two ways to install and run the Policy Server: using Docker Compose or the Docker Engine.

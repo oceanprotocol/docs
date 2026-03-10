@@ -25,6 +25,10 @@ The minimum hardware requirements for the server hosting the marketplace are:
 
 
 
+## Pre-installation steps
+
+Make sure you review the [Compatibility Matrix](compatibility-matrix.md) to ensure that the version is compatible with the other components. &#x20;
+
 ## Deployment steps
 
 There are two ways of installing and running the market: using Docker Compose or Docker Engine.
@@ -64,6 +68,8 @@ docker compose up -d
 ```
 
 The marketplace will start in a Docker container and will be accessible via HTTP on port 8008.
+
+<mark style="color:$info;">**Note:**</mark> <mark style="color:$info;"></mark><mark style="color:$info;">This installs the latest available version of the market. To install a specific version, edit the</mark> <mark style="color:$info;"></mark><mark style="color:$info;">`docker-compose.yml`</mark> <mark style="color:$info;"></mark><mark style="color:$info;">file and set the desired version tag. If you do so, please verify the Compatibility Matrix.</mark>
 
 
 
@@ -198,7 +204,7 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 
 #### NEXT\_PUBLIC\_IPFS\_UPLOAD\_URL
 
-**Description:** Sets the API endpoint the marketplace uses to upload content to your configured IPFS provider. Consult your IPFS gateway’s documentation to ensure you supply the correct endpoint and required parameters.
+**Description:** Sets the API endpoint that the marketplace uses to upload content to your configured IPFS provider. Consult your IPFS gateway’s documentation to ensure you supply the correct endpoint and required parameters.
 
 **Values:** String (URL)
 
@@ -259,8 +265,6 @@ The marketplace can apply two types of fees cumulatively: a fixed fee `(NEXT_PUB
 **Description:** Defines the token address for the currency tokens accepted by the marketplace, for each blockchain the market is connected to.&#x20;
 
 Ensure that the listed addresses are supported by the O.E.C. smart contracts; unsupported entries will cause asset publishing to fail. Consult [this chapter](../developers/networks.md) for the latest list of supported currencies. If none of the currency tokens configured in this variable is supported by the O.E.C. smart contracts, an error message is displayed when users connect to the market.&#x20;
-
-<mark style="color:$info;">Note: If you intend to use the fixed market‑order fee (configured via</mark> <mark style="color:$info;"></mark><mark style="color:$info;">`NEXT_PUBLIC_CONSUME_MARKET_ORDER_FEE`</mark><mark style="color:$info;">) in a market connected to multiple blockchains, ensure that all currencies across those chains use the same number of decimals. If the decimal precision differs, the fixed fee will be calculated incorrectly. This limitation will be resolved in a future market release.</mark>
 
 **Values:** JSON map of chainId to a list of token addresses.
 

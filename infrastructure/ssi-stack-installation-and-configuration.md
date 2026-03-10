@@ -27,20 +27,20 @@ The minimum hardware requirements for the server hosting the SSI stack component
   * Docker Compose
   * git
 
+## Pre-installation steps
 
+Make sure you review the [Compatibility Matrix](compatibility-matrix.md) to ensure that the version is compatible with the other components.
 
-## Deployment steps
-
-
-
-### Pre-installation planning
-
-Before installing the SSI stack components, determine the network segments where each service will run. Consider the following communication requirements:
+&#x20;Before installing the SSI stack components, determine the network segments where each service will run. Consider the following communication requirements:
 
 * The verifier-api must be able to reach both the Policy Server and the OPA Server.&#x20;
 * The wallet-api must be able to communicate with the waltid-dev-wallet and the Policy Server Proxy
 
 Depending on your configuration, you can choose to deploy all SSI components on a single server or deploy individual components on separate servers.&#x20;
+
+
+
+## Deployment steps
 
 
 

@@ -57,6 +57,7 @@
   * [Fees](developers/fees.md)
 * [Deployment Guides](infrastructure/README.md)
   * [Deployment modes](infrastructure/deployment-modes.md)
+  * [Compatibility Matrix](infrastructure/compatibility-matrix.md)
   * [OE Node installation and configuration](infrastructure/oe-node-installation-and-configuration.md)
   * [Marketplace installation and configuration](infrastructure/marketplace-installation-and-configuration.md)
   * [SSI Stack installation and configuration](infrastructure/ssi-stack-installation-and-configuration.md)
