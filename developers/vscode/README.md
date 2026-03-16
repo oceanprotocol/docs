@@ -9,7 +9,7 @@ Run compute jobs on Ocean Protocol directly from VS Code. The extension automati
 
 Once installed, the extension adds an Ocean Protocol section to your VSCode workspace. Here you can configure your compute settings and run compute jobs using the currently active algorithm file.
 
-1. Install the extension from the VS Code Marketplace
+1. Install the extension from the [VS Code Marketplace](https://bit.ly/41UsXnn)
 2. Open the Ocean Protocol panel from the activity bar
 3. Configure your compute settings:
    - Node URL (pre-filled with default Ocean compute node)
