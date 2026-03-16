@@ -16,7 +16,7 @@ Ocean Protocol's data challenges are open competitions where participants must s
 
 ### Where can I find the data challenges?
 
-[Discover open challenges here.](https://oceanprotocol.com/challenges)
+[Discover open challenges here.](https://oceanprotocol.com/earn/data-challenges/)
 
 ### What is the typical flow for a data challenge?
 
