@@ -28,18 +28,6 @@ You can generate revenue as a dataset publisher by selling datatokens to access 
 </details>
 
 <details>
-<summary>Where can I find information about the number of datatokens created and track their progress?</summary>
-
-To access this data, some technical expertise is required. You can find this information at the subgraph level. In the documentation, we provide a few examples of how to retrieve this data using JavaScript. Feel free to give it a shot by visiting this [page](../developers/subgraph/list-datatokens). If it doesn't meet your requirements, don't hesitate to reach out to us on Discord.
-</details>
-
-<details>
-<summary>How can developers use Ocean technology to build their own data marketplaces?</summary>
-
-You can fork Ocean Market and then make changes as you wish. Please see the [customising your market](../developers/build-a-marketplace/customising-your-market) page for details.
-</details>
-
-<details>
 <summary>Is there a trading platform or stock exchange that has successfully forked the Ocean marketplace codebase?</summary>
 
 Ocean technology is actively used by Daimler/Acentrik, deltaDAO/GAIA-X, and several other entities. You can find further details on the Ocean [ecosystem page](https://oceanprotocol.com/explore/ecosystem).
@@ -56,12 +44,6 @@ An Ocean faucet is a site to get (fake) OCEAN for use on a given testnet. There'
 <summary>How can I convert tokens from the BEP20 network to the ERC20 network?</summary>
 
 Please follow this [tutorial](https://x.com/ASI_Alliance/status/1848393597722165429) to bridge from/to BNB Smart Chain. Please double-check the addresses and make sure you are using the right smart contracts.
-</details>
-
-<details>
-<summary>How to bridge my mOcean back to Ocean?</summary>
-
-Please follow this [tutorial](../discover/networks/bridges#polygon-ex-matic-bridge) to bridge to/from Polygon mainnet. Please double-check the addresses and make sure you are using the right smart contracts.
 </details>
 
 <details>
