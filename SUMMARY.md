@@ -46,6 +46,7 @@
 * [Technical Architecture](developers/README.md)
   * [High-Level Architecture](developers/architecture.md)
   * [Dataspace Configuration Options](developers/architecture-1.md)
+  * [Reference Network Architecture](developers/reference-network-architecture.md)
   * [OE software stack components](developers/oe-software-stack-components.md)
   * [Assets and Services](developers/assets-and-services/README.md)
     * [Identifiers (DIDs)](developers/assets-and-services/identifiers.md)
