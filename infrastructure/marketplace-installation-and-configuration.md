@@ -40,7 +40,7 @@ To install and configure the marketplace, perform the following steps:
 1. The marketplace repository is located [here](https://github.com/OceanProtocolEnterprise/market). Clone the marketplace repository (alternatively, copy only the `docker-compose.yml` and `.env.example` file from the repository).
 
 ```sh
-git clone https://github.com/OceanProtocolEnterprise/market.git 
+git clone https://github.com/OceanProtocolEnterprise/market.git && cd market
 ```
 
 
