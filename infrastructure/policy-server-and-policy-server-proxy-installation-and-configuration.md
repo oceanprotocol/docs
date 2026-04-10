@@ -310,3 +310,16 @@ The list of static verification policies is available [here](https://docs.walt.i
 
 **Default Value:** `3000`
 
+
+
+### API Requests Authentication
+
+#### POLICY\_SERVER\_API\_KEY
+
+**Description:** Defines the key used by the Policy Server to authenticate requests. If no value is provided, request authentication is disabled. If a key is provided, use the same key in the [POLICY\_SERVER\_API\_KEY ](oe-node-installation-and-configuration.md#policy_server_api_key) variable of the corresponding OE Node.
+
+**Values:** string
+
+**Example:** `mrgcorhTzA1Ey2WRhZAK8tkw4zBrIgQ757toUz3fXvfHh8Ua`
+
+Defaul Value: `null` (request authentication disabled) &#x20;

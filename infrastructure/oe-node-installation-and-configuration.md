@@ -318,6 +318,18 @@ Also, for each blockchain, two things are specified:&#x20;
 
 
 
+#### POLICY\_SERVER\_API\_KEY
+
+**Description:** Sets the API KEY used by Policy Server to authenticate API requests. Set the same key that was used in the [POLICY\_SERVER\_API\_KEY](policy-server-and-policy-server-proxy-installation-and-configuration.md#policy_server_api_key) variable of the corresponding Policy Server. If API requests authentication is not enabled on the Policy Server side, leave this variable null.
+
+**Values:** string
+
+**Example:** `mrgcorhTzA1Ey2WRhZAK8tkw4zBrIgQ757toUz3fXvfHh8Ua`
+
+**Defaul Value:** `null`
+
+
+
 ### Compute Environment
 
 **DOCKER\_COMPUTE\_ENVIRONMENT**
