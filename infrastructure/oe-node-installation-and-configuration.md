@@ -13,6 +13,14 @@ The minimum hardware requirements for the server that will run the OE Node are:
 ### Software requirements
 
 * **Operating System:** Any Linux distribution supported by the Docker Engine and Docker Compose products. For guidance on compatible platforms, see the [Docker Compose supported platforms](https://docs.docker.com/desktop/setup/install/linux/) and [Docker Engine supported platforms](https://docs.docker.com/engine/install/) documentation
+* **For OE Node v3.0.1 and newer:** A Linux distribution with library `glibc` v2.38 or newer. To check the current version of glibc, run the following command:
+
+{% code overflow="wrap" %}
+```shellscript
+ldd --version
+```
+{% endcode %}
+
 * **Software products:**
   * Docker Engine
   * Docker Compose
@@ -340,13 +348,13 @@ Also, for each blockchain, two things are specified:&#x20;
 
 **Example:**
 
+* _<mark style="background-color:$primary;">For OE Node up to v2.1.1</mark>_
+
 {% code overflow="wrap" %}
 ```json
 [{"socketPath":"/var/run/docker.sock","paymentClaimInterval":120,"resources":[{"id":"myGPU","description":"NVIDIA GeForce GTX 1060 3GB","type":"gpu","total":4,"init":{"deviceRequests":{"Driver":"nvidia","DeviceIDs":["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],"Capabilities":[["gpu"]]}}},{"id":"disk","total":4}],"storageExpiry":604800,"maxJobDuration":3600,"fees":{"11155111":[{"feeToken":"0x1B083D8584dd3e6Ff37d04a6e7e82b5F622f3985","prices":[{"id":"cpu","price":1},{"id":"gpu","price":4},{"id":"ram","price":1},{"id":"disk","price":1}]},{"feeToken":"0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4","prices":[{"id":"cpu","price":0.1},{"id":"gpu","price":0.4},{"id":"ram","price":0.1},{"id":"disk","price":0.1}]},{"feeToken":"0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238","prices":[{"id":"cpu","price":0.15},{"id":"gpu","price":0.6},{"id":"ram","price":0.15},{"id":"disk","price":0.15}]}],"11155420":[{"feeToken":"0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10","prices":[{"id":"cpu","price":1},{"id":"gpu","price":4},{"id":"ram","price":1},{"id":"disk","price":1}]},{"feeToken":"0x5fd84259d66Cd46123540766Be93DFE6D43130D7","prices":[{"id":"cpu","price":0.15},{"id":"gpu","price":0.6},{"id":"ram","price":0.15},{"id":"disk","price":0.15}]}]},"free":{"maxJobDuration":1800,"maxJobs":3,"resources":[{"id":"myGPU","description":"NVIDIA GeForce GTX 1060 3GB","type":"gpu","total":1,"init":{"deviceRequests":{"Driver":"nvidia","DeviceIDs":["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],"Capabilities":[["gpu"]]}}},{"id":"cpu","max":1},{"id":"myGPU","max":1},{"id":"ram","max":0.5},{"id":"disk","max":0.5}]}}]
 ```
 {% endcode %}
-
-
 
 Here's the structured format of the same value.
 
@@ -452,6 +460,218 @@ Here's the structured format of the same value.
 ```
 
 The configuration described by this value provides free and paid compute environments. The free compute environment has a maximum job duration of 30 minutes, a maximum number of 3 simultaneous jobs, and limited resources (1 CPU, 1 GPU, 0.5GB of RAM, and 0.5GB of disk). The paid environment has more resources to allocate and allows a maximum job duration of 60 minutes.&#x20;
+
+
+
+* _<mark style="background-color:$primary;">For OE Node v3.0.1 or newer</mark>_
+
+{% code overflow="wrap" %}
+```json
+[{"socketPath":"/var/run/docker.sock","paymentClaimInterval":120,"environments":[{"id":"environment 1","storageExpiry":604800,"maxJobDuration":3600,"minJobDuration":60,"resources":[{"id":"myGPU","description":"NVIDIA GeForce GTX 1060 3GB","type":"gpu","total":4,"init":{"deviceRequests":{"Driver":"nvidia","DeviceIDs":["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],"Capabilities":[["gpu"]]}}},{"id":"cpu","min":1,"max":1,"total":1},{"id":"ram","min":0,"max":2,"total":2},{"id":"disk","min":0,"max":2,"total":4}],"fees":{"11155111":[{"feeToken":"0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4","prices":[{"id":"cpu","price":0.1},{"id":"gpu","price":0.4},{"id":"ram","price":0.1},{"id":"disk","price":0.1}]},{"feeToken":"0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238","prices":[{"id":"cpu","price":0.15},{"id":"gpu","price":0.6},{"id":"ram","price":0.15},{"id":"disk","price":0.15}]}],"11155420":[{"feeToken":"0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10","prices":[{"id":"cpu","price":1},{"id":"gpu","price":4},{"id":"ram","price":1},{"id":"disk","price":1}]},{"feeToken":"0x5fd84259d66Cd46123540766Be93DFE6D43130D7","prices":[{"id":"cpu","price":0.15},{"id":"gpu","price":0.6},{"id":"ram","price":0.15},{"id":"disk","price":0.15}]}]},"free":{"maxJobDuration":1800,"maxJobs":3,"resources":[{"id":"myGPU","description":"NVIDIA GeForce GTX 1060 3GB","type":"gpu","total":1,"init":{"deviceRequests":{"Driver":"nvidia","DeviceIDs":["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],"Capabilities":[["gpu"]]}}},{"id":"cpu","max":1},{"id":"myGPU","max":1},{"id":"ram","min":0,"max":1},{"id":"disk","max":0.5}]}},{"id":"environment 2","storageExpiry":604800,"maxJobDuration":3600,"minJobDuration":60,"resources":[{"id":"myGPU","description":"NVIDIA GeForce GTX 1060 3GB","type":"gpu","total":2,"init":{"deviceRequests":{"Driver":"nvidia","DeviceIDs":["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],"Capabilities":[["gpu"]]}}},{"id":"cpu","min":1,"max":1,"total":1},{"id":"ram","min":0,"max":2,"total":2},{"id":"disk","min":0,"max":2,"total":4}],"fees":{"11155111":[{"feeToken":"0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4","prices":[{"id":"cpu","price":0.08},{"id":"gpu","price":0.3},{"id":"ram","price":0.08},{"id":"disk","price":0.08}]},{"feeToken":"0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238","prices":[{"id":"cpu","price":0.1},{"id":"gpu","price":0.5},{"id":"ram","price":0.1},{"id":"disk","price":0.1}]}],"11155420":[{"feeToken":"0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10","prices":[{"id":"cpu","price":1},{"id":"gpu","price":4},{"id":"ram","price":1},{"id":"disk","price":1}]},{"feeToken":"0x5fd84259d66Cd46123540766Be93DFE6D43130D7","prices":[{"id":"cpu","price":0.15},{"id":"gpu","price":0.6},{"id":"ram","price":0.15},{"id":"disk","price":0.15}]}]},"free":{"maxJobDuration":900,"maxJobs":2,"resources":[{"id":"myGPU","description":"NVIDIA GeForce GTX 1060 3GB","type":"gpu","total":1,"init":{"deviceRequests":{"Driver":"nvidia","DeviceIDs":["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],"Capabilities":[["gpu"]]}}},{"id":"cpu","max":1},{"id":"myGPU","max":1},{"id":"ram","min":0,"max":1},{"id":"disk","max":0.4}]}}]}]
+```
+{% endcode %}
+
+
+
+Here's the structured format of the same value.
+
+{% code overflow="wrap" %}
+```json
+[
+  {
+    "socketPath": "/var/run/docker.sock",
+    "paymentClaimInterval": 120,
+    "environments": [
+      {
+        "id": "environment 1",
+        "storageExpiry": 604800,
+        "maxJobDuration": 3600,
+        "minJobDuration": 60,
+        "resources": [
+          {
+            "id": "myGPU",
+            "description": "NVIDIA GeForce GTX 1060 3GB",
+            "type": "gpu",
+            "total": 4,
+            "init": {
+              "deviceRequests": {
+                "Driver": "nvidia",
+                "DeviceIDs": ["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],
+                "Capabilities": [["gpu"]]
+              }
+            }
+          },
+          { "id": "cpu", "min": 1, "max": 1, "total": 1 },
+          { "id": "ram", "min": 0, "max": 2, "total": 2 },
+          { "id": "disk", "min": 0, "max": 2, "total": 4 }
+        ],
+        "fees": {
+          "11155111": [
+            {
+              "feeToken": "0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4",
+              "prices": [
+                { "id": "cpu", "price": 0.1 },
+                { "id": "gpu", "price": 0.4 },
+                { "id": "ram", "price": 0.1 },
+                { "id": "disk", "price": 0.1 }
+              ]
+            },
+            {
+              "feeToken": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+              "prices": [
+                { "id": "cpu", "price": 0.15 },
+                { "id": "gpu", "price": 0.6 },
+                { "id": "ram", "price": 0.15 },
+                { "id": "disk", "price": 0.15 }
+              ]
+            }
+          ],
+          "11155420": [
+            {
+              "feeToken": "0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10",
+              "prices": [
+                { "id": "cpu", "price": 1 },
+                { "id": "gpu", "price": 4 },
+                { "id": "ram", "price": 1 },
+                { "id": "disk", "price": 1 }
+              ]
+            },
+            {
+              "feeToken": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
+              "prices": [
+                { "id": "cpu", "price": 0.15 },
+                { "id": "gpu", "price": 0.6 },
+                { "id": "ram", "price": 0.15 },
+                { "id": "disk", "price": 0.15 }
+              ]
+            }
+          ]
+        },
+        "free": {
+          "maxJobDuration": 1800,
+          "maxJobs": 3,
+          "resources": [
+            {
+              "id": "myGPU",
+              "description": "NVIDIA GeForce GTX 1060 3GB",
+              "type": "gpu",
+              "total": 1,
+              "init": {
+                "deviceRequests": {
+                  "Driver": "nvidia",
+                  "DeviceIDs": ["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],
+                  "Capabilities": [["gpu"]]
+                }
+              }
+            },
+            { "id": "cpu", "max": 1 },
+            { "id": "myGPU", "max": 1 },
+            { "id": "ram", "min": 0, "max": 1 },
+            { "id": "disk", "max": 0.5 }
+          ]
+        }
+      },
+      {
+        "id": "environment 2",
+        "storageExpiry": 604800,
+        "maxJobDuration": 3600,
+        "minJobDuration": 60,
+        "resources": [
+          {
+            "id": "myGPU",
+            "description": "NVIDIA GeForce GTX 1060 3GB",
+            "type": "gpu",
+            "total": 2,
+            "init": {
+              "deviceRequests": {
+                "Driver": "nvidia",
+                "DeviceIDs": ["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],
+                "Capabilities": [["gpu"]]
+              }
+            }
+          },
+          { "id": "cpu", "min": 1, "max": 1, "total": 1 },
+          { "id": "ram", "min": 0, "max": 2, "total": 2 },
+          { "id": "disk", "min": 0, "max": 2, "total": 4 }
+        ],
+        "fees": {
+          "11155111": [
+            {
+              "feeToken": "0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4",
+              "prices": [
+                { "id": "cpu", "price": 0.08 },
+                { "id": "gpu", "price": 0.3 },
+                { "id": "ram", "price": 0.08 },
+                { "id": "disk", "price": 0.08 }
+              ]
+            },
+            {
+              "feeToken": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+              "prices": [
+                { "id": "cpu", "price": 0.1 },
+                { "id": "gpu", "price": 0.5 },
+                { "id": "ram", "price": 0.1 },
+                { "id": "disk", "price": 0.1 }
+              ]
+            }
+          ],
+          "11155420": [
+            {
+              "feeToken": "0xf26c6C93f9f1d725e149d95f8E7B2334a406aD10",
+              "prices": [
+                { "id": "cpu", "price": 1 },
+                { "id": "gpu", "price": 4 },
+                { "id": "ram", "price": 1 },
+                { "id": "disk", "price": 1 }
+              ]
+            },
+            {
+              "feeToken": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
+              "prices": [
+                { "id": "cpu", "price": 0.15 },
+                { "id": "gpu", "price": 0.6 },
+                { "id": "ram", "price": 0.15 },
+                { "id": "disk", "price": 0.15 }
+              ]
+            }
+          ]
+        },
+        "free": {
+          "maxJobDuration": 900,
+          "maxJobs": 2,
+          "resources": [
+            {
+              "id": "myGPU",
+              "description": "NVIDIA GeForce GTX 1060 3GB",
+              "type": "gpu",
+              "total": 1,
+              "init": {
+                "deviceRequests": {
+                  "Driver": "nvidia",
+                  "DeviceIDs": ["GPU-294c6802-bb2f-fedb-f9e0-a26b9142dd81"],
+                  "Capabilities": [["gpu"]]
+                }
+              }
+            },
+            { "id": "cpu", "max": 1 },
+            { "id": "myGPU", "max": 1 },
+            { "id": "ram", "min": 0, "max": 1 },
+            { "id": "disk", "max": 0.4 }
+          ]
+        }
+      }
+    ]
+  }
+]
+
+```
+{% endcode %}
+
+
+
+The configuration described by this value provides two different environments on the same host: _environment 1_ and _environment 2_. Each environment has two sub-environments: paid and free. For each environment, the available resources are listed, as well as the price of each resource, for each blockchain to which the node is connected.
+
+
 
 For details on how to set this variable, refer to the information available [here](https://github.com/oceanprotocol/ocean-node/blob/main/docs/env.md#compute).
 
