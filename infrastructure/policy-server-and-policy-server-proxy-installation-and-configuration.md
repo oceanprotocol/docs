@@ -281,6 +281,74 @@ The list of static verification policies is available [here](https://docs.walt.i
 
 
 
+### Action Validation based on web3 address
+
+This group of variables configures the policy server to validate certain OE Node actions by checking the Web3 addresses of both the node and the consumer initiating the request.&#x20;
+
+When configured with a Policy Server, the OE Node calls it to validate certain actions, passing the OE Node's address from which the action request was received and the consumer's address that initiated the request.&#x20;
+
+The following actions are validated against the lists described in this section: `encrypt`, `decrypt`, `initiate`, `download`, and `startCompute`.
+
+
+
+#### POLICY\_SERVER\_NODE\_ACCESS\_LIST
+
+**Description:** Sets the list of OE Nodes web3 addresses from which the action requests are accepted.&#x20;
+
+The policy server compiles the list of accepted nodes by merging the list in this environment variable and the list retrieved from `POLICY_SERVER_NODE_ACCESS_LIST_URL`. If the resulting list is null, action validation based on the OE Node's address is disabled. If it's not null, only action requests coming from nodes in this list are accepted.
+
+**Values:** list of strings (comma separated)
+
+**Example:** `"0x1111,0x2222"`
+
+**Default Value:** `null`
+
+
+
+#### POLICY\_SERVER\_NODE\_ACCESS\_LIST\_URL
+
+**Description:** Sets the URL from where the list of node web3 addresses from which the action requests are accepted is loaded. The web3 addresses listed here must be separated by a new line character (one address per line).
+
+The policy server compiles the list of accepted nodes by merging the list retrieved from this variable and the list defined in `POLICY_SERVER_NODE_ACCESS_LIST`. If the resulting list is null, action validation based on the OE Node's address is disabled. If it's not null, only action requests coming from nodes in this list are accepted.
+
+**Values:** string (URL)
+
+**Example:** `https://raw.githubusercontent.com/MBadea17/testdata/refs/heads/main/trustedNodes`
+
+**Default Value:** `null`
+
+
+
+#### POLICY\_SERVER\_CONSUMER\_ACCESS\_LIST
+
+**Description:** Sets the list of consumer web3 addresses from which the action requests are accepted.&#x20;
+
+The policy server compiles the list of accepted consumers by merging the list in this environment variable and the list retrieved from `POLICY_SERVER_CONSUMER_ACCESS_LIST_URL`. If the resulting list is null, action validation based on the consumer's address is disabled. If it's not null, only action requests coming from consumers in this list are accepted.
+
+**Values:** list of strings (comma separated)
+
+**Example:** `"0x3333,0x4444"`
+
+**Default Value:** `null`
+
+
+
+#### POLICY\_SERVER\_CONSUMER\_ACCESS\_LIST\_URL
+
+**Description:** Sets the URL from where the list of consumers' web3 addresses from which the action requests are accepted is loaded. The web3 addresses listed here must be separated by a new line character (one address per line).
+
+The policy server compiles the list of accepted consumers by merging the list retrieved from this variable and the list defined in `POLICY_SERVER_CONSUMER_ACCESS_LIST`. If the resulting list is null, action validation based on the consumer's address is disabled. If it's not null, only action requests coming from consumers in this list are accepted.
+
+**Values:** string (URL)
+
+**Example:** `https://raw.githubusercontent.com/MBadea17/testdata/refs/heads/main/trustedNodes`
+
+**Default Value:** `null`
+
+
+
+####
+
 ### Logs
 
 #### ENABLE\_LOGS
@@ -323,3 +391,22 @@ The list of static verification policies is available [here](https://docs.walt.i
 **Example:** `mrgcorhTzA1Ey2WRhZAK8tkw4zBrIgQ757toUz3fXvfHh8Ua`
 
 Defaul Value: `null` (request authentication disabled) &#x20;
+
+
+
+#### ADMIN\_API\_KEY
+
+**Description:** Sets the API key that protects the administrative endpoints of the Policy Server. The caller must set this value in the `X-API-KEY` header to be authenticated. If the value is null, key authentication is disabled.
+
+The administrative endpoints of the Policy Server are:
+
+* **`listAcceptedNodes`**: list the web3 addresses of the accepted OE Nodes (from `POLICY_SERVER_NODE_ACCESS_LIST` and `POLICY_SERVER_NODE_ACCESS_LIST_URL`)
+* **`listAcceptedConsumers`**:  list the web3 addresses of the accepted consumers (from `POLICY_SERVER_CONSUMER_ACCESS_LIST` and `POLICY_SERVER_CONSUMER_ACCESS_LIST_URL`)
+* **`reloadAcceptedNodes`** : reload the lists from `POLICY_SERVER_NODE_ACCESS_LIST_URL`&#x20;
+* **`reloadAcceptedConsumers`** : reload the lists from `POLICY_SERVER_CONSUMER_ACCESS_LIST_URL`.
+
+**Values:** string&#x20;
+
+**Example:** `abcd1234`
+
+**Default Value:** `null`
