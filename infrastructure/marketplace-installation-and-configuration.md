@@ -280,7 +280,7 @@ Ensure that the listed addresses are supported by the O.E.C. smart contracts; un
 
 
 
-**Example:** `{"11155111":[{"token":"0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4","amount":"2000000"},{"token":"0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238","amount":"1000000"}]}` , i.e., for Optimism Sepolia blockchain, the applicable fixed fees are:  2 EURC for assets priced in EURC and 1 USDC for assets priced in USDC.
+**Example:** `{"11155111":[{"token":"0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4","amount":"2000000"},{"token":"0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238","amount":"1000000"}]}` , i.e., for the Ethereum Sepolia blockchain, the applicable fixed fees are:  2 EURC for assets priced in EURC and 1 USDC for assets priced in USDC.
 
 
 
@@ -394,6 +394,78 @@ By default, the value of this variable is set to `null`. In this state, no filte
 **Default Value:** `null`
 
 
+
+### Market-level authentication
+
+#### NEXT\_PUBLIC\_AUTH\_ENABLED
+
+**Description:** Sets the marketplace user authentication. If true, user authentication is enabled; if false, user authentication is disabled.
+
+**Values:** boolean
+
+**Example:** `true` &#x20;
+
+**Default Value:** `false`
+
+
+
+#### NEXT\_PUBLIC\_AUTH\_PROVIDER
+
+**Description:** If marketplace authentication is enabled, this variable sets the authentication method. Currently, the only accepted method is OIDC.
+
+**Values:** string
+
+**Example:** `oidc` &#x20;
+
+**Default Value:** `oidc`
+
+
+
+#### NEXT\_PUBLIC\_OIDC\_ISSUER
+
+**Description:** Sets the URL of the OIDC Identity Provider that verifies user identity and issues security tokens (ID tokens) for authentication.
+
+**Values:** string (URL)
+
+**Example:** `https://idpserver.oceanenteprise.io/application/o/market-demo`
+
+**Default Value:** `null`
+
+
+
+#### NEXT\_PUBLIC\_OIDC\_CLIENT\_ID
+
+**Description:** Sets OIDC client ID for the marketplace application. This value is defined on the OIDC Identity Provider when the configuration for the marketplace application is created.
+
+**Values:** string
+
+**Example:** `4abc8afdda73b95545b9a`
+
+**Default Value:** `null`
+
+
+
+#### OIDC\_CLIENT\_SECRET
+
+**Description:** Sets OIDC client secret for the marketplace application. This value is defined on the OIDC Identity Provider when the configuration for the marketplace application is created.
+
+**Values:** string
+
+**Example:** `4cec8afdse3401j438943u4`
+
+**Default Value:** `null`
+
+
+
+#### NEXT\_PUBLIC\_OIDC\_SIGNUP\_FLOW
+
+**Description:** Sets the name of the sign-up flow defined in the Authentik server that will be run to register users to the marketplace.
+
+**Value:** string
+
+**Example:** `demo-market-signup-flow`
+
+Default Value: `null`&#x20;
 
 ### Others
 
