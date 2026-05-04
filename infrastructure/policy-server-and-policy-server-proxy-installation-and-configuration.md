@@ -410,3 +410,36 @@ The administrative endpoints of the Policy Server are:
 **Example:** `abcd1234`
 
 **Default Value:** `null`
+
+
+
+### HTTPS connection
+
+Set the following environment variables to enable HTTPS connections on the Policy Server.&#x20;
+
+<mark style="color:$info;background-color:$info;">**Note**</mark><mark style="color:$info;background-color:$info;">: The Policy Server start commands shown in this guide mount the</mark> <mark style="color:$info;background-color:$info;"></mark><mark style="color:$info;background-color:$info;">`certs`</mark> <mark style="color:$info;background-color:$info;"></mark><mark style="color:$info;background-color:$info;">directory from the repository into the container at</mark> <mark style="color:$info;background-color:$info;"></mark><mark style="color:$info;background-color:$info;">`/etc/ssl/certs/`</mark><mark style="color:$info;background-color:$info;">. To enable HTTPS with minimal setup, place your certificate files in this directory and adjust the environment variable to reference the correct certificate file name.</mark>
+
+#### HTTP\_CERT\_PATH
+
+**Description:** Sets the location where the TLS certificate of the Policy Server resides. If the value is null, the HTTPS connection is not enabled. Make sure that the referenced file includes both the digital certificate and the intermediate certificate.
+
+Please note that the&#x20;
+
+**Values:** string
+
+**Example:** `/etc/ssl/certs/cert.pem`
+
+**Default Value:** `null`
+
+
+
+#### HTTP\_KEY\_PATH
+
+**Description:** Sets the location where the private key file of the TLS certificate resides. If the value is null, the HTTPS connection is not enabled.&#x20;
+
+**Values:** string
+
+**Example:** `/etc/ssl/certs/key.pem`
+
+**Default Value:** `null`
+
