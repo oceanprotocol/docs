@@ -108,7 +108,7 @@ nano .env
 4. Start the Policy Server service.
 
 ```sh
- docker run --name policy-server --env-file .env -p 8001:3000 -d oceanenterprise/policy-server:latest
+ docker run --name policy-server --env-file .env -p 8001:3000 -v ./certs:/etc/ssl/certs:ro -d oceanenterprise/policy-server:latest
 ```
 
 The Policy Server will start in a Docker container and will be accessible via HTTP on port 8001 on the host system.
