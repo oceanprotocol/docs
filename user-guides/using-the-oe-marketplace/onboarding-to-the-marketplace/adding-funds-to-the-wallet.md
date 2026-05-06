@@ -4,7 +4,7 @@ To cover transaction fees on an OE-enabled dataspace, the users must have suffic
 
 Furthermore, to purchase published assets or run Compute-To-Data jobs, the users must have sufficient funds of the currency in which the asset is listed (i.e., USDC, EURC). &#x20;
 
-<mark style="background-color:$info;">**Note**</mark><mark style="background-color:$info;">: The currencies supported by Ocean Enterprise are listed</mark> [<mark style="background-color:$info;">here</mark>](../../../developers/networks.md)<mark style="background-color:$info;">.</mark>
+<mark style="background-color:$info;">**Note**</mark><mark style="background-color:$info;">: The currencies supported by Ocean Enterprise are listed</mark> [<mark style="background-color:$info;">here</mark>](../../../developers/networks/)<mark style="background-color:$info;">.</mark>
 
 ## Adding funds for production environments
 

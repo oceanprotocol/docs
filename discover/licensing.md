@@ -4,7 +4,7 @@
 
 A. This repository is a dual-licensed software, available under commercial and open-source license terms.
 
-B. These open-source license terms (“OS License Terms”) solely apply to the use of the Software in conjunction with smart contracts provided by OEC e.V. The latest version of the addresses of the smart contracts provided by OEC e.V. can be found on the website of OEC e.V. under \[[https://docs.oceanenterprise.io/developers/networks](../developers/networks.md)].
+B. These open-source license terms (“OS License Terms”) solely apply to the use of the Software in conjunction with smart contracts provided by OEC e.V. The latest version of the addresses of the smart contracts provided by OEC e.V. can be found on the website of OEC e.V. under \[[https://docs.oceanenterprise.io/developers/networks](../developers/networks/)].
 
 C. The commercial license terms (“Commercial License Terms”) apply to the use of the Software in conjunction with smart contracts provided by parties other than OEC e.V.
 

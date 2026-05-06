@@ -264,7 +264,7 @@ The marketplace can apply two types of fees cumulatively: a fixed fee `(NEXT_PUB
 
 **Description:** Defines the token address for the currency tokens accepted by the marketplace, for each blockchain the market is connected to.&#x20;
 
-Ensure that the listed addresses are supported by the O.E.C. smart contracts; unsupported entries will cause asset publishing to fail. Consult [this chapter](../developers/networks.md) for the latest list of supported currencies. If none of the currency tokens configured in this variable is supported by the O.E.C. smart contracts, an error message is displayed when users connect to the market.&#x20;
+Ensure that the listed addresses are supported by the O.E.C. smart contracts; unsupported entries will cause asset publishing to fail. Consult [this chapter](../developers/networks/) for the latest list of supported currencies. If none of the currency tokens configured in this variable is supported by the O.E.C. smart contracts, an error message is displayed when users connect to the market.&#x20;
 
 **Values:** JSON map of chainId to a list of token addresses.
 
