@@ -467,6 +467,72 @@ By default, the value of this variable is set to `null`. In this state, no filte
 
 Default Value: `null`&#x20;
 
+
+
+### Legal Docs
+
+
+
+#### NEXT\_PUBLIC\_IMPRINT\_URL
+
+**Description:** Sets the URL from where the Imprint document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Imprint document.
+
+**Value:** string (URL)
+
+**Example:** `https://raw.githubusercontent.com/OceanProtocolEnterprise/legaldocs/refs/heads/main/market/Imprint.md`
+
+Default Value: `null`&#x20;
+
+
+
+#### NEXT\_PUBLIC\_TC\_URL
+
+**Description:** Sets the URL from where the Terms and Conditions document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Terms and Conditions document.
+
+**Value:** string (URL)
+
+**Example:** `https://raw.githubusercontent.com/OceanProtocolEnterprise/legaldocs/refs/heads/main/market/TermsAndConditions.md`
+
+Default Value: `null`&#x20;
+
+
+
+#### NEXT\_PUBLIC\_PP\_URL
+
+**Description:** Sets the URL from where the Privacy Policy document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Privacy Policy document.
+
+**Value:** string (URL)
+
+**Example:** `https://raw.githubusercontent.com/OceanProtocolEnterprise/legaldocs/refs/heads/main/market/PrivacyPolicy.md`
+
+Default Value: `null`&#x20;
+
+
+
+#### NEXT\_PUBLIC\_CP\_URL
+
+**Description:** Sets the URL from where the Cookie Policy document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Cookie Policy document.
+
+**Value:** string (URL)
+
+**Example:** `https://raw.githubusercontent.com/OceanProtocolEnterprise/legaldocs/refs/heads/main/market/CookiePolicy.md`
+
+Default Value: `null`&#x20;
+
+
+
+#### NEXT\_PUBLIC\_DPUA\_URL
+
+**Description:** Sets the URL from where the Data Portal Usage Agreement document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Data Portal Usage Agreement document.
+
+**Value:** string (URL)
+
+**Example:** `https://raw.githubusercontent.com/OceanProtocolEnterprise/legaldocs/refs/heads/main/market/DataPortalUsageAgreement.md`
+
+Default Value: `null`&#x20;
+
+
+
 ### Others
 
 #### NEXT\_PUBLIC\_ENCRYPT\_ASSET&#x20;
@@ -483,7 +549,7 @@ Values: `true/false`
 
 #### NEXT\_PUBLIC\_HIDE\_ONBOARDING\_MODULE\_BY\_DEFAULT
 
-**Description:** Defines whether or not the onboarding guide is hidden for new users. By default, the onboarding guide is displayed. By setting this variable to `true`, the onboarding guide is not displayed by default.&#x20;
+**Description:** Defines whether or not the onboarding guide is hidden for new users. By default, the onboarding guide is displayed. By setting this variable to `true`, The onboarding guide is not displayed by default.&#x20;
 
 **Value:** `true/false`
 
