@@ -26,6 +26,6 @@ This chapter includes the following information:
 
 * [Deployment Modes](deployment-modes.md)
 * [OE Node Installation and Configuration](oe-node-installation-and-configuration.md)
-* [Marketplace Installation and Configuration](marketplace-installation-and-configuration.md)
+* [Marketplace Installation and Configuration](marketplace-installation-and-configuration/)
 * [Policy Server and Policy Server Proxy Installation and Configuration](policy-server-and-policy-server-proxy-installation-and-configuration.md)
 * [SSI Stack Installation and Configuration](ssi-stack-installation-and-configuration.md)

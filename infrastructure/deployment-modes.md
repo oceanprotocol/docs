@@ -19,19 +19,19 @@ In a dataspace where SSI‑based access control is disabled, only two OE compone
 
 To ensure correct operation, configure the relevant environment variable in each component, using the examples shown in the table below.
 
-| Component       | Environment variable                                                                                            | Value                           |
-| --------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| **OE Node**     | [POLICY\_SERVER\_URL](oe-node-installation-and-configuration.md#policy_server_url)                              | null                            |
-| **Marketplace** | [NEXT\_PUBLIC\_PROVIDER\_URL](marketplace-installation-and-configuration.md#next_public_provider_url)           | https://node.oceanenterprise.io |
-|                 | [NEXT\_PUBLIC\_METADATACACHE\_URI](marketplace-installation-and-configuration.md#next_public_metadatacache_uri) | https://node.oceanenterprise.io |
-|                 | [NEXT\_PUBLIC\_SSI\_ENABLED](marketplace-installation-and-configuration.md#next_public_ssi_enabled)             | false                           |
+| Component       | Environment variable                                                                                          | Value                           |
+| --------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| **OE Node**     | [POLICY\_SERVER\_URL](oe-node-installation-and-configuration.md#policy_server_url)                            | null                            |
+| **Marketplace** | [NEXT\_PUBLIC\_PROVIDER\_URL](marketplace-installation-and-configuration/#next_public_provider_url)           | https://node.oceanenterprise.io |
+|                 | [NEXT\_PUBLIC\_METADATACACHE\_URI](marketplace-installation-and-configuration/#next_public_metadatacache_uri) | https://node.oceanenterprise.io |
+|                 | [NEXT\_PUBLIC\_SSI\_ENABLED](marketplace-installation-and-configuration/#next_public_ssi_enabled)             | false                           |
 
 ### Installation sequence
 
 The recommended deployment order for this setup is:
 
 1. [Install and configure the OE Node](oe-node-installation-and-configuration.md)
-2. [Install and configure the marketplace](marketplace-installation-and-configuration.md)
+2. [Install and configure the marketplace](marketplace-installation-and-configuration/)
 
 
 
@@ -67,12 +67,12 @@ To ensure correct operation, configure the relevant environment variable in each
 |                         | [MODE\_PROXY](policy-server-and-policy-server-proxy-installation-and-configuration.md#mode_proxy)                                                            | 1                                           |
 |                         | [OCEAN\_NODE\_URL](policy-server-and-policy-server-proxy-installation-and-configuration.md#ocean_node_url)                                                   | https://node.oceanenterprise.io             |
 | **OE Node**             | [POLICY\_SERVER\_URL](oe-node-installation-and-configuration.md#policy_server_url)                                                                           | https://ps.oceanenterprise.io               |
-|  **Marketplace**        | [NEXT\_PUBLIC\_PROVIDER\_URL](marketplace-installation-and-configuration.md#next_public_provider_url)                                                        | https://node.oceanenterprise.io             |
-|                         | [NEXT\_PUBLIC\_METADATACACHE\_URI](marketplace-installation-and-configuration.md#next_public_metadatacache_uri)                                              | https://node.oceanenterprise.io             |
-|                         | [NEXT\_PUBLIC\_SSI\_ENABLED](marketplace-installation-and-configuration.md#next_public_ssi_enabled)                                                          | true                                        |
-|                         | [NEXT\_PUBLIC\_SSI\_POLICY\_SERVER](marketplace-installation-and-configuration.md#next_public_ssi_policy_server)                                             | https://ps.oceanenterprise.io               |
-|                         | [NEXT\_PUBLIC\_OPA\_SERVER\_URL](marketplace-installation-and-configuration.md#next_public_opa_server_url)                                                   | http://opa.oceanenterprise.io:8181          |
-|                         | [NEXT\_PUBLIC\_SSI\_WALLET\_API](marketplace-installation-and-configuration.md#next_public_ssi_wallet_api)                                                   | https://wallet.oceanenterprise.io           |
+|  **Marketplace**        | [NEXT\_PUBLIC\_PROVIDER\_URL](marketplace-installation-and-configuration/#next_public_provider_url)                                                          | https://node.oceanenterprise.io             |
+|                         | [NEXT\_PUBLIC\_METADATACACHE\_URI](marketplace-installation-and-configuration/#next_public_metadatacache_uri)                                                | https://node.oceanenterprise.io             |
+|                         | [NEXT\_PUBLIC\_SSI\_ENABLED](marketplace-installation-and-configuration/#next_public_ssi_enabled)                                                            | true                                        |
+|                         | [NEXT\_PUBLIC\_SSI\_POLICY\_SERVER](marketplace-installation-and-configuration/#next_public_ssi_policy_server)                                               | https://ps.oceanenterprise.io               |
+|                         | [NEXT\_PUBLIC\_OPA\_SERVER\_URL](marketplace-installation-and-configuration/#next_public_opa_server_url)                                                     | http://opa.oceanenterprise.io:8181          |
+|                         | [NEXT\_PUBLIC\_SSI\_WALLET\_API](marketplace-installation-and-configuration/#next_public_ssi_wallet_api)                                                     | https://wallet.oceanenterprise.io           |
 
 
 
@@ -84,5 +84,5 @@ The recommended deployment order for this setup is:
 2. [Install the Policy Server](policy-server-and-policy-server-proxy-installation-and-configuration.md)
 3. [Install and configure the OE Node](oe-node-installation-and-configuration.md)
 4. [Install and configure the Policy Server Proxy](policy-server-and-policy-server-proxy-installation-and-configuration.md)
-5. [Install and configure the marketplace](marketplace-installation-and-configuration.md)
+5. [Install and configure the marketplace](marketplace-installation-and-configuration/)
 

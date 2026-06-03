@@ -1,4 +1,4 @@
-# Marketplace installation and configuration
+# Marketplace installation
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ The minimum hardware requirements for the server hosting the marketplace are:
 
 ## Pre-installation steps
 
-Make sure you review the [Compatibility Matrix](compatibility-matrix.md) to ensure that the version is compatible with the other components. &#x20;
+Make sure you review the [Compatibility Matrix](../compatibility-matrix.md) to ensure that the version is compatible with the other components. &#x20;
 
 ## Deployment steps
 
@@ -53,7 +53,7 @@ cp .env.example .env
 
 
 
-3. Edit the _.env_ file to set the environment variables specific to your configuration (please refer to the [Environment Variables](marketplace-installation-and-configuration.md#environment-variables) chapter for how to set the variables).
+3. Edit the _.env_ file to set the environment variables specific to your configuration (please refer to the [Environment Variables](marketplace-installation.md#environment-variables) chapter for how to set the variables).
 
 ```sh
 nano .env
@@ -93,7 +93,7 @@ cp .env.example .env
 
 
 
-3. Edit the _.env_ file to set the environment variables specific to your configuration (please refer to the [Environment Variables](marketplace-installation-and-configuration.md#environment-variables) chapter for how to set the variables).
+3. Edit the _.env_ file to set the environment variables specific to your configuration (please refer to the [Environment Variables](marketplace-installation.md#environment-variables) chapter for how to set the variables).
 
 ```sh
 nano .env
@@ -264,7 +264,7 @@ The marketplace can apply two types of fees cumulatively: a fixed fee `(NEXT_PUB
 
 **Description:** Defines the token address for the currency tokens accepted by the marketplace, for each blockchain the market is connected to.&#x20;
 
-Ensure that the listed addresses are supported by the O.E.C. smart contracts; unsupported entries will cause asset publishing to fail. Consult [this chapter](../developers/networks/) for the latest list of supported currencies. If none of the currency tokens configured in this variable is supported by the O.E.C. smart contracts, an error message is displayed when users connect to the market.&#x20;
+Ensure that the listed addresses are supported by the O.E.C. smart contracts; unsupported entries will cause asset publishing to fail. Consult [this chapter](../../developers/networks/) for the latest list of supported currencies. If none of the currency tokens configured in this variable is supported by the O.E.C. smart contracts, an error message is displayed when users connect to the market.&#x20;
 
 **Values:** JSON map of chainId to a list of token addresses.
 
