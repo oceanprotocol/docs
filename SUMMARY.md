@@ -52,7 +52,6 @@
     * [Identifiers (DIDs)](developers/assets-and-services/identifiers.md)
     * [Asset File Types](developers/assets-and-services/storage.md)
     * [Asset Metadata](developers/assets-and-services/asset-metadata.md)
-    * [OE DDO Specification - to be updated](developers/assets-and-services/new-ddo-specification.md)
   * [Managing access to assets - to be updated](developers/fg-permissions.md)
   * [Supported networks & currencies](developers/networks/README.md)
     * [Supported Networks](developers/networks/supported-networks.md)
