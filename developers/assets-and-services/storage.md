@@ -1,13 +1,13 @@
 ---
 title: Storage Specifications
-description: Specification of storage options for assets in Ocean Protocol.
+description: Specification of storage types for assets in Ocean Enteprise.
 ---
 
-# Storage Specifications
+# Asset File Types
 
-Ocean does not handle the actual storage of files directly. The files are stored via other services which are then specified within the DDO.
+Ocean Enterprise does not handle the actual storage of files directly. The files are stored via other services, which are then specified within the DDO.
 
-During the publish process, file URLs must be encrypted with a respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider (where "files" contains one or more storage objects):
+During the publish process, file URLs must be encrypted with the respective _Provider_ API call before storing the DDO on-chain. For this, you need to send the following object to Provider (where "files" contains one or more storage objects):
 
 ```json
 {
@@ -21,7 +21,7 @@ During the publish process, file URLs must be encrypted with a respective _Provi
 
 The remainder of this document specifies the different types of storage objects that are supported:
 
-## Static URLs.
+## Static URLs
 
 Parameters:
 
@@ -172,3 +172,9 @@ To get information about the files after encryption, the `/fileinfo` endpoint of
 ```
 
 This only concerns metadata about a file, but never the file URLs. The only way to decrypt them is to exchange at least 1 datatoken based on the respective service pricing scheme.
+
+
+
+## FTP
+
+<mark style="color:orange;">**WORK IN PROGRESS**</mark>

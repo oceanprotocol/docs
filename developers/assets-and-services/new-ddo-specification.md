@@ -11,9 +11,9 @@ description: >-
 
 ## New DDO Schema - High Level&#x20;
 
-The below diagram shows the high-level DDO schema depicting the content of each data structure and the relations between them.
+The diagram below shows the high-level DDO schema depicting the content of each data structure and the relations between them.
 
-Please note that some data structures apply only on certain types of services or assets.
+Please note that some data structures apply only to certain types of services or assets.
 
 ```mermaid
 ---
