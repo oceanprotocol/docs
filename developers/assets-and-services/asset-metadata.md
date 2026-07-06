@@ -1826,3 +1826,10 @@ const remoteAsset = {
 * the `type` field is 'ipfs', meaning that the referenced remote object is saved in IPFS
 * the `hash` field contains the hash of the Content ID (CID) where the asset's DDO is saved in IPFS.&#x20;
 
+
+
+## References
+
+### SHACL schema
+
+* The SHACL schema used by the OE Node's indexer component to validate the DDO's at publishing or editing time is available here: [https://github.com/oceanprotocol/ddo.js/blob/main/schemas/5.0.0.ttl](https://github.com/oceanprotocol/ddo.js/blob/main/schemas/5.0.0.ttl)
