@@ -421,9 +421,7 @@ Set the following environment variables to enable HTTPS connections on the Polic
 
 #### HTTP\_CERT\_PATH
 
-**Description:** Sets the location where the TLS certificate of the Policy Server resides. If the value is null, the HTTPS connection is not enabled. Make sure that the referenced file includes both the digital certificate and the intermediate certificate.
-
-Please note that the&#x20;
+**Description:** Sets the location where the TLS certificate of the Policy Server resides. If the value is null, the HTTPS connection is not enabled. Make sure that the referenced file includes both the digital certificate and the intermediate certificate.&#x20;
 
 **Values:** string
 

@@ -124,7 +124,7 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 
 #### NEXT\_PUBLIC\_PROVIDER\_URL&#x20;
 
-**Description:** Sets the base URL of the OE Node used by the marketplace. This node will be used by the marketplace to encrypt the asset description at the publishing time, to decrypt the asset description at consumption time, and as the C2D environment provider.&#x20;
+**Description:** Sets the base URL of the default OE Node used by the marketplace. The marketplace will use this node to encrypt the asset description at publishing time, decrypt it at consumption time, and provide the C2D environment.&#x20;
 
 **Values:** string (URL)
 
@@ -136,23 +136,39 @@ The marketplace will start in a Docker container and will be accessible via HTTP
 
 #### NEXT\_PUBLIC\_METADATACACHE\_URI&#x20;
 
-**Description:** Sets the base URL of the OE Node where the metadata cache is stored. From this cache, the assets listed in the marketplace's catalogue are read. Set it to the same value as `NEXT_PUBLIC_PROVIDER_URL`.&#x20;
+**Description:** Sets the base URLs of the OE Node(s) where the metadata cache is stored. From this cache(s), the marketplace reads the assets listed in the catalogue.&#x20;
 
-**Values:** string (URL)
+For marketplace versions up to 1.4.0, this variable holds the URL of a single OE Node. In this case, set it to the URL of the default OE Node, specified in `NEXT_PUBLIC_PROVIDER_URL`.&#x20;
 
-**Example:** `https://ocean-node-vm3.oceanenterprise.io/`
+Starting with version 1.4.1 of the markeplace, the multi-node search feature allows the marketplace to search through the caches of multiple OE Nodes. Make sure that the lists include the default OE Node.
 
-**Default Value:** `https://ocean-node-vm3.oceanenterprise.io/`
+**For marketplace versions up to 1.4.0**
+
+* **Values:** string (URL)
+* **Example:** `https://ocean-node-vm3.oceanenterprise.io/`
+* **Default Value:** `https://ocean-node-vm3.oceanenterprise.io/`
+
+**For marketplace versions 1.4.1 and higher**
+
+* **Values:** JSON array of strings (URL)
+* **Example:** `["https://ocean-node-vm1.oceanenterprise.io/", "https://ocean-node-vm3.oceanenterprise.io/"]`
+* **Default Value:** `https://ocean-node-vm3.oceanenterprise.io/`
 
 
 
 #### NEXT\_PUBLIC\_NODE\_URI\_INDEXED&#x20;
 
-**Description:** Configures the list of OE nodes whose assets will be shown in the marketplace's catalogue. Only the assets published by the OE nodes in this list will be displayed in the catalogue.
+**Description:** This variable serves two distinct purposes:
+
+1. **Catalogue visibility:** It defines the list of OE nodes whose published assets will appear in the marketplace catalogue. Only assets originating from the OE nodes specified here are displayed.
+2. **Multi‑node marketplace operations (starting with version 1.4.1):** In a multi‑node marketplace setup, the OE nodes listed in this variable are used by the marketplace to:
+   * encrypt the asset description at publishing time,
+   * decrypt the asset description at consumption time, and
+   * provide the Compute‑to‑Data (C2D) environments.
 
 **Values:** JSON array of strings (URL)
 
-**Example:** `["https://ocean-node-vm3.oceanenterprise.io/", ""https://ocean-node-vm3.oceanenterprise.io/""]`
+**Example:** `["https://ocean-node-vm1.oceanenterprise.io/", ""https://ocean-node-vm3.oceanenterprise.io/""]`
 
 **Default Value:** the value of `NEXT_PUBLIC_PROVIDER_URL` variable or `"https://ocean-node-vm3.oceanenterprise.io"`
 

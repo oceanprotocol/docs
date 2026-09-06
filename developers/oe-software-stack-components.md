@@ -1,4 +1,4 @@
-# OE software stack components
+# OE Software Stack Components
 
 The Ocean Enterprise software stack comprises the following components:
 
@@ -71,6 +71,39 @@ In the context of the OE software stack, the SSI Wallet provides the following c
 
 ## OPA Server
 
-The Open Policy Agent Server (available [here](https://www.openpolicyagent.org/)) is a general-purpose policy engine that unifies policy enforcement, based on a high-level declarative language.
+The Open Policy Agent Server (available [here](https://www.openpolicyagent.org/)) is a general-purpose policy engine that unifies policy enforcement based on a high-level declarative language.
 
 In the context of the OE software stack, the OPA Server is invoked by the Verifier to assess a set of rules and return a true/false response.
+
+
+
+## Signer Server
+
+The [Signer Server](https://github.com/OceanProtocolEnterprise/signer-server) is a micro-service responsible for generating and signing Ethereum-compatible transactions using private keys managed by a secure secret management system within Data Space Operator and Data Space Participant environments.
+
+The service enables authenticated users to:
+
+* Execute transactions in the OE Marketplace on behalf of their organization.
+* Access and present Verifiable Credentials (VCs) from the organization's SSI wallet during asset consumption workflows.
+
+The Signer Server exposes the following functionalities:
+
+* Sign message
+* Send transaction
+* Get wallet public address
+* Get transaction receipt
+* Get account nonce
+
+## OpenBAO Vault
+
+The selected Secret Management System is the open-source [OpenBAO Vault](https://openbao.org/docs/), maintained by the Linux community.
+
+Being a fork of HashiCorp Vault, it can use plugins for performing cryptographic signing operations and returning Ethereum-compatible ECDSA signatures at Vault level, without exposing private keys over Internet. Installed plugin is  [`secpsign`](https://github.com/pelipas/vault-plugin-secp256k1.git) , public repository on GitHub.
+
+OpenBAO Vault is integrated with Signer Server solution for key secure storage and management.
+
+OpenBAO Vault communicates with Signer Server on HTTPS protocol, being compatible with self-signed certificates and signed by a Certificate Authority (CA).
+
+
+
+<br>

@@ -8,7 +8,7 @@ coverY: 0
 
 This chapter explains how to install and configure the components of the Ocean Enterprise software stack. All components run in Docker containers on a Linux operating system. Deploying the OE components requires solid familiarity with Linux, Docker Engine, and Docker Compose.&#x20;
 
-As described in the [Dataspace Configuration Options](../developers/architecture-1.md) chapter, the OE Stack supports two deployment modes - with SSI-based access control enabled or disabled. Because the required components and installation order vary by configuration, consult the dedicated chapter on the installation sequence for each configuration.  &#x20;
+As described in the [Dataspace Configuration Options](../developers/architecture-1/) chapter, the OE Stack supports two deployment modes - with SSI-based access control enabled or disabled. Because the required components and installation order vary by configuration, consult the dedicated chapter on the installation sequence for each configuration.  &#x20;
 
 
 

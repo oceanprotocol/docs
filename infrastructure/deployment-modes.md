@@ -6,32 +6,7 @@ The OE stack supports two deployment modes, determined by whether the dataspace 
 
 
 
-### Configuration example
-
-In a dataspace where SSI‑based access control is disabled, only two OE components are required: the OE Node and the marketplace. The table below provides the assumed URLs for each element.
-
-| Component   | URL                               |
-| ----------- | --------------------------------- |
-| OE Node     | https://node.oceanenterprise.io   |
-| Marketplace | https://market.oceaneneteprise.io |
-
-
-
-To ensure correct operation, configure the relevant environment variable in each component, using the examples shown in the table below.
-
-| Component       | Environment variable                                                                                          | Value                           |
-| --------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| **OE Node**     | [POLICY\_SERVER\_URL](oe-node-installation-and-configuration.md#policy_server_url)                            | null                            |
-| **Marketplace** | [NEXT\_PUBLIC\_PROVIDER\_URL](marketplace-installation-and-configuration/#next_public_provider_url)           | https://node.oceanenterprise.io |
-|                 | [NEXT\_PUBLIC\_METADATACACHE\_URI](marketplace-installation-and-configuration/#next_public_metadatacache_uri) | https://node.oceanenterprise.io |
-|                 | [NEXT\_PUBLIC\_SSI\_ENABLED](marketplace-installation-and-configuration/#next_public_ssi_enabled)             | false                           |
-
-### Installation sequence
-
-The recommended deployment order for this setup is:
-
-1. [Install and configure the OE Node](oe-node-installation-and-configuration.md)
-2. [Install and configure the marketplace](marketplace-installation-and-configuration/)
+###
 
 
 

@@ -316,7 +316,7 @@ Also, for each blockchain, two things are specified:&#x20;
 
 #### POLICY\_SERVER\_URL
 
-**Description:** Sets the URL of the Policy Server used by the OE Node to perform the verification (address-based and SII-based) on asset access attempts. If no URL is set, then SSI verification is disabled and the OE Node performs only address-based verification.
+**Description:** Sets the URL of the Policy Server used by the OE Node to perform the verification (address-based and SII-based) on asset access attempts. If no URL is set, then SSI verification is disabled, and the OE Node performs only address-based verification.
 
 **Values:** String (URL)
 
