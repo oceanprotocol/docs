@@ -31,7 +31,7 @@ Choose centralized authentication when the dataspace operator manages all partic
 
 ## Dataspaces with centralized market-level authentication
 
-In centralized authentication, the Dataspace Operator runs the Central Identity Provider, which all marketplace participants use for authentication. The diagram below shows the main components and the actors of a dataspace with centralized market-level authentication enabled.
+In centralized authentication, the Dataspace Operator runs the **Central Identity Provider**, which all marketplace participants use for authentication. The diagram below shows the main components and the actors of a dataspace with centralized market-level authentication enabled.
 
 <figure><img src="../../.gitbook/assets/Central Market-level Auth - HL (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,13 +45,13 @@ The diagram below presents the end‑to‑end centralized user authentication wo
 
 The following steps are performed when the user authenticates to the Marketplace:
 
-1. User accesses the Marketplace from the browser
+1. The user accesses the Marketplace from the browser
 2. Marketplace prepares a URL with parameters for the Central Identity Provider, which the user's browser is redirected to
 3. The Central Identity Provider authenticates the user and generates an authorization code
 4. The Identity Provider then redirects the user's browser back to the Marketplace, along with the authorization code
 5. In the background, the Marketplace sends the same authorization code in an authenticated request&#x20;
 6. The Central Identity Provider responds by sending an Access Token saying that the user has been authorized and a Refresh Token.
-7. The user connects to the web3 and SSI wallets and at the end it gets redirected to the marketplace main page.
+7. The user connects to the Web3 and SSI wallets, and at the end, it gets redirected to the marketplace main page.
 
 
 
@@ -90,31 +90,19 @@ To access the Marketplace, a user must first authenticate using their username/u
 
 
 
+#### Marketplace Operations
+
 The rest of the user flows - Publishing and accessing assets - are similar to the ones described in the chapter [Dataspaces with SSI-based access control enabled](dataspaces-with-ssi-based-access-control-enabled.md).
 
 
 
 ### Dataspace configuration
 
-#### Configuration example
-
-In a dataspace with centralized market-level authentication, the Marketplace and the Central Identity Provider need to be configured to work together. The table below provides the assumed initial parameters set for each component.
-
-<table><thead><tr><th width="156">Component</th><th width="232">Parameter</th><th>Value</th></tr></thead><tbody><tr><td><strong>Marketplace</strong></td><td>Base URL</td><td><code>https://market2.demo.oceanenterprise.io</code></td></tr><tr><td><strong>Central Identity Provider</strong></td><td>Base URL</td><td><code>https://ocean-node-vm2.oceanenterprise.io:8443</code></td></tr><tr><td></td><td>Application name for Marketplace</td><td><code>ocean-market-demo</code></td></tr><tr><td></td><td>OpenId Provider's name for Marketplace</td><td><code>ocean-market-demo-provider</code></td></tr><tr><td></td><td>OpenId Provider's client ID</td><td><code>uVdyN8v6rynXK9vKMchvBVRJBKIPHiyLP2yOegIP</code></td></tr><tr><td></td><td>OpenIdProvider's client secret</td><td><code>BtqImZk9yhJjFxfNeT4npEiPidDtYM1xtSTyE1Inm2vG9J4pW6GzxOUM9Sdbauyy46MY5607MrEkaxrlkhGjeK4rGuQBkHH2d8ZjK0BOruTtqhAA3ZRUVelNviZvGi0h</code></td></tr></tbody></table>
-
-
-
-Starting from the initial parameters listed in the table above, to ensure correct integration between the Markeplace and the Central Identity Provider, configure the following parameters/system variables for each component, using the examples shown in the table below.
-
-<table><thead><tr><th width="146">Component</th><th width="293.5">Parameter/System Variable</th><th>Value</th></tr></thead><tbody><tr><td><strong>Marketplace</strong></td><td>NEXT_PUBLIC_AUTH_ENABLED</td><td><code>true</code></td></tr><tr><td></td><td>NEXT_PUBLIC_AUTH_PROVIDER</td><td><code>oidc</code></td></tr><tr><td></td><td>NEXT_PUBLIC_OIDC_ISSUER</td><td><code>https://ocean-node-vm2.oceanenterprise.io:8443/application/o/ocean-market-demo/</code></td></tr><tr><td></td><td>NEXT_PUBLIC_OIDC_CLIENT_ID</td><td><code>uVdyN8v6rynXK9vKMchvBVRJBKIPHiyLP2yOegIP</code></td></tr><tr><td></td><td>OIDC_CLIENT_SECRET</td><td><code>BtqImZk9yhJjFxfNeT4npEiPidDtYM1xtSTyE1Inm2vG9J4pW6GzxOUM9Sdbauyy46MY5607MrEkaxrlkhGjeK4rGuQBkHH2d8ZjK0BOruTtqhAA3ZRUVelNviZvGi0h</code></td></tr><tr><td></td><td>NEXT_PUBLIC_OIDC_REDIRECT_URI</td><td><code>https://market.demo.oceanenterprise.io/auth/callback</code></td></tr><tr><td></td><td>NEXT_PUBLIC_OIDC_TOKEN_URL</td><td><code>https://ocean-node-vm2.oceanenterprise.io:8443/application/o/token/</code></td></tr><tr><td><strong>Central Identity Provider</strong></td><td>OpenId Provider's configuration -> Redirect URIs</td><td><code>https://market.demo.oceanenterprise.io/auth/callback</code><br><br><code>https://market.demo.oceanenterprise.io/auth/login</code></td></tr><tr><td></td><td>OpenId Provider's configuration -> Logout URIs</td><td><code>https://market.demo.oceanenterprise.io/auth/login</code></td></tr></tbody></table>
-
-
-
 #### Installation sequence
 
 The simplest way to configure a dataspace with Centralized Market‑Level Authentication is to use the [User Management Pack](../../infrastructure/user-management-package/), which provides all tools required to install and configure the software components involved in user authentication and related functionality.
 
-<table><thead><tr><th width="102.5">Step no.</th><th>Action</th><th>Role</th></tr></thead><tbody><tr><td>1.</td><td><a href="../../infrastructure/marketplace-installation-and-configuration/marketplace-installation.md">Install and perform the basic configuration of the marketplace, </a>without configuring the market-level authentication</td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr><tr><td>2.</td><td><a href="../../infrastructure/user-management-package/deployment-steps/dataspace-operator-deployment.md">Install and configure the User Management Pack for Dataspace Operator</a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr><tr><td>3.</td><td><a href="../../infrastructure/marketplace-installation-and-configuration/configure-market-level-authentication/">Configure the market-level authentication </a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr></tbody></table>
+<table><thead><tr><th width="102.5">Step no.</th><th>Action</th><th>Role</th></tr></thead><tbody><tr><td>1.</td><td><a href="../../infrastructure/marketplace-installation-and-configuration/marketplace-installation.md">Install and perform the basic configuration of the marketplace </a>without configuring the market-level authentication</td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr><tr><td>2.</td><td><a href="../../infrastructure/user-management-package/deployment-steps/dataspace-operator-deployment-module-installation-steps.md">Install and configure the User Management Pack for Dataspace Operator</a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr><tr><td>3.</td><td><a href="../../infrastructure/marketplace-installation-and-configuration/configure-market-level-authentication/configure-the-oe-marketplace-to-use-oidc-authentication.md">Configure the market-level authentication</a> </td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr></tbody></table>
 
 
 
@@ -215,39 +203,25 @@ The dataspace with federated market-level authentication has the following chara
 
 #### Registering to the Marketplace
 
-To access the Marketplace, participants' users must first be registered in the Participant Identity Provider. To this end, the Participant Identity Provider has been configured to register end users through an invitation flow. The Participant Administrator creates a user registration invitation, which is then sent by email to the end-user. The end user access the invitation link and registers the details, such as user name and password.&#x20;
+To access the Marketplace, users of a Dataspace Participant must first be registered in the **Participant Identity Provider**. The Participant Identity Provider is configured to onboard end users through an **invitation‑based registration flow**.
 
-After completing the registration process, the users’ profiles become active, enabling them to log in to the Marketplace.
+The **Participant Administrator** initiates the process by creating a registration invitation, which is then sent to the end user via email. The end user follows the invitation link and completes the registration form, providing details such as a username and password.
+
+Once the registration process is completed, the user’s profile becomes active, enabling them to log in to the Marketplace.
 
 
 
 #### **Logging in to the Marketplace**
 
-To access the Marketplace, a user must access the login screen of the marketplace. From there, it will be redirected to the Central IDP login screen. In that screen, the users should select the Participant IDP which they belong to. The user will then be redirected to the Participant IDP login screen. The user authenticates using their username/user ID and password. After the Participant Central Identity Provider validates these credentials, the user is redirected back to the Central Identity Provider, and from there back to ther Marketplace, where they must establish connections to both their Web3 wallet and SSI wallet in order to perform any actions within the platform.
-
-
-
-
-
-Here is a clearer, more structured, and more professional version of your text, with improved flow, consistency, and terminology. I’ve kept your meaning intact while tightening phrasing and removing ambiguity.
-
-### **Registering to the Marketplace**
-
-To access the Marketplace, users of a Dataspace Participant must first be registered in the **Participant Identity Provider**. The Participant Identity Provider is configured to onboard end users through an **invitation‑based registration flow**.
-
-The **Participant Administrator** initiates the process by creating a registration invitation, which is then sent to the end user via email. The end user follows the invitation link and completes the registration form, providing details such as username and password.
-
-Once the registration process is completed, the user’s profile becomes active, enabling them to log in to the Marketplace.
-
-### **Logging in to the Marketplace**
-
 To log in, the user begins at the Marketplace login screen. From there, they are redirected to the **Central Identity Provider (Central IDP)** login page. On this page, users select the **Participant Identity Provider** to which they belong.
 
-The user is then redirected to the Participant Identity Provider’s login screen, where they authenticate using their username/user ID and password. After the Participant Identity Provider validates the credentials, the user is returned to the Central Identity Provider, and subsequently redirected back to the Marketplace.
+The user is then redirected to the Participant Identity Provider’s login screen, where they authenticate using their username/user ID and password. After the Participant Identity Provider validates the credentials, the user is returned to the Central Identity Provider and subsequently redirected back to the Marketplace.
 
 Upon returning to the Marketplace, the user must establish connections to both their **Web3 wallet** and **SSI wallet** in order to perform actions within the platform.
 
 
+
+#### Marketplace Operations
 
 The rest of the user flows - Publishing and accessing assets - are similar to the ones described in the chapter [Dataspaces with SSI-based access control enabled](dataspaces-with-ssi-based-access-control-enabled.md).
 
@@ -257,9 +231,8 @@ The rest of the user flows - Publishing and accessing assets - are similar to th
 
 #### Configuration steps
 
-The simplest way to configure a dataspace with Federated Market‑Level Authentication is to use the [User Management Pack](../../infrastructure/user-management-package/), which provides all tools required to install and configure the software components involved in user authentication and related functionality.
+The simplest way to configure a dataspace with Federated Market‑Level Authentication is to use the [User Management Package](../../infrastructure/user-management-package/), which provides all tools required to install and configure the software components involved in user authentication and related functionality.
 
 To configure a dataspace with Federated Market‑Level Authentication, perform the following steps:
 
-<table><thead><tr><th width="88.5">Step no.</th><th>Action</th><th>Role</th></tr></thead><tbody><tr><td>1.</td><td><a href="dataspaces-with-market-level-authentication.md#dataspace-configuration">Configure the dataspace for Centralized Market-Level Authentication.</a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr><tr><td>2.</td><td><a href="/broken/pages/r4cJFQ1gtCn29r3gSUNO">Install and configure the Participant Identity Provider </a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-participant-administrator">Dataspace Participant Administrator</a></td></tr><tr><td>3.</td><td><a href="/broken/pages/R0jW6vRpHNU72QYGeW1C">Participant Onboarding into Central Identity Provider</a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr></tbody></table>
-
+<table><thead><tr><th width="88.5">Step no.</th><th>Action</th><th>Role</th></tr></thead><tbody><tr><td>1.</td><td><a href="dataspaces-with-market-level-authentication.md#dataspace-configuration">Configure the dataspace for Centralized Market-Level Authentication.</a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr><tr><td>2.</td><td><a href="../../infrastructure/user-management-package/deployment-steps/dataspace-participant-deployment-module-installation-steps.md">Install and configure the Participant Identity Provider</a> </td><td><a href="../dataspace-actors-and-roles.md#dataspace-participant-administrator">Dataspace Participant Administrator</a></td></tr><tr><td>3.</td><td><a href="../../operational-guidelines/federated-authentication/onboarding-data-space-participant-in-data-space-operator-authentik.md">Participant Onboarding into Central Identity Provider</a></td><td><a href="../dataspace-actors-and-roles.md#dataspace-operator-administrator">Dataspace Operator Administrator</a></td></tr></tbody></table>

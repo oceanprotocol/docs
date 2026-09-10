@@ -4,7 +4,7 @@ The Signer Server uses the OpenBao secrets vault to store the web3 private keys 
 
 This section describes how web3 private keys are generated, imported, inspected, and removed within the OpenBao vault included in the Signer Server component.
 
-### OpenBAO main components
+### OpenBao main components
 
 At deployment time, the OpenBao Docker image builds the [`vault-plugin-secp256k1`](https://github.com/pelipas/vault-plugin-secp256k1) plugin (registered as `secpsign`), which enables two secrets engines:
 

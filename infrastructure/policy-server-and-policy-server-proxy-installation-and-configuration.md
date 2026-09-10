@@ -441,3 +441,21 @@ Set the following environment variables to enable HTTPS connections on the Polic
 
 **Default Value:** `null`
 
+&#x20;
+
+### OPA Server
+
+#### OPA\_SERVER
+
+**Description:** Sets the URL of the OPA Server used by the SSI Verifier associated with the Policy Server for dynamic policy verification. &#x20;
+
+**Values:** string (URL)
+
+**Example:** `https://opa-server.oceanenterprise.io:8181`
+
+**Default Value:** `null`
+
+&#x20;
+
+&#x20;
+

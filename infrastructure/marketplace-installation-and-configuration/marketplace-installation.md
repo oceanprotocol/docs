@@ -380,7 +380,9 @@ Ensure that the listed addresses are supported by the O.E.C. smart contracts; un
 
 #### NEXT\_PUBLIC\_OPA\_SERVER\_URL&#x20;
 
-**Description:** Used only if `NEXT_PUBLIC_SSI_ENABLED=true`.  Sets the base URL of the OPA Server used by the verifier for custom SSI policies evaluation.&#x20;
+**Description:** Used only if `NEXT_PUBLIC_SSI_ENABLED=true`.  Sets the base URL of the defaul OPA Server used by the verifier for custom SSI policy evaluation. The OPA Server URL is added to the custom policy definition. It is used only if the Policy Server associated with the OE Node that encrypts the asset does not have its own OPA server configured (see [OPA\_SERVER](../policy-server-and-policy-server-proxy-installation-and-configuration.md#opa_server)).&#x20;
+
+This value is added in the custom policy definition
 
 **Values:** string (URL)
 
@@ -415,7 +417,7 @@ By default, the value of this variable is set to `null`. In this state, no filte
 
 #### NEXT\_PUBLIC\_AUTH\_ENABLED
 
-**Description:** Sets the marketplace user authentication. If true, user authentication is enabled; if false, user authentication is disabled.
+**Description:** Sets marketplace user authentication. If true, user authentication is enabled; if false, user authentication is disabled.
 
 **Values:** boolean
 
@@ -451,7 +453,7 @@ By default, the value of this variable is set to `null`. In this state, no filte
 
 #### NEXT\_PUBLIC\_OIDC\_CLIENT\_ID
 
-**Description:** Sets OIDC client ID for the marketplace application. This value is defined on the OIDC Identity Provider when the configuration for the marketplace application is created.
+**Description:** Sets the OIDC client ID for the marketplace application. This value is defined on the OIDC Identity Provider when the configuration for the marketplace application is created.
 
 **Values:** string
 
@@ -463,13 +465,25 @@ By default, the value of this variable is set to `null`. In this state, no filte
 
 #### OIDC\_CLIENT\_SECRET
 
-**Description:** Sets OIDC client secret for the marketplace application. This value is defined on the OIDC Identity Provider when the configuration for the marketplace application is created.
+**Description:** Sets the OIDC client secret for the marketplace application. This value is defined on the OIDC Identity Provider when the configuration for the marketplace application is created.
 
 **Values:** string
 
 **Example:** `4cec8afdse3401j438943u4`
 
 **Default Value:** `null`
+
+
+
+#### NEXT\_PUBLIC\_CENTRAL\_IDP\_NAME
+
+**Description:** Sets the identifier of the Central Identity Provider, which is the name of the Authentik application used to secure access to the marketplace. This parameter is used in the user log-out process in a federated authentication configuration.
+
+**Value:** string
+
+**Example:** `oe-market`
+
+Default Value: `null`&#x20;
 
 
 
@@ -485,13 +499,35 @@ Default Value: `null`&#x20;
 
 
 
+#### NEXT\_PUBLIC\_OIDC\_REDIRECT\_URI
+
+**Description:** Sets the URL to which the user is redirected after login
+
+**Value:** string (URL)
+
+**Example:** `https://market2.demo.oceanenterprise.io/auth/callback`
+
+Default Value: `null`&#x20;
+
+
+
+#### NEXT\_PUBLIC\_OIDC\_TOKEN\_URL
+
+**Description:** Sets the URL token endpoint of the Authentik provider that secures the marketplace.
+
+**Value:** string (URL)
+
+**Example:** `https://ocean-node-vm1-stage.oceanenterprise.io:9443/application/o/token/`
+
+Default Value: `null`&#x20;
+
+
+
 ### Legal Docs
-
-
 
 #### NEXT\_PUBLIC\_IMPRINT\_URL
 
-**Description:** Sets the URL from where the Imprint document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Imprint document.
+**Description:** Sets the URL from which the Imprint document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Imprint document.
 
 **Value:** string (URL)
 
@@ -503,7 +539,7 @@ Default Value: `null`&#x20;
 
 #### NEXT\_PUBLIC\_TC\_URL
 
-**Description:** Sets the URL from where the Terms and Conditions document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Terms and Conditions document.
+**Description:** Sets the URL from which the Terms and Conditions document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Terms and Conditions document.
 
 **Value:** string (URL)
 
@@ -515,7 +551,7 @@ Default Value: `null`&#x20;
 
 #### NEXT\_PUBLIC\_PP\_URL
 
-**Description:** Sets the URL from where the Privacy Policy document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Privacy Policy document.
+**Description:** Sets the URL from which the Privacy Policy document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Privacy Policy document.
 
 **Value:** string (URL)
 
@@ -527,7 +563,7 @@ Default Value: `null`&#x20;
 
 #### NEXT\_PUBLIC\_CP\_URL
 
-**Description:** Sets the URL from where the Cookie Policy document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Cookie Policy document.
+**Description:** Sets the URL from which the Cookie Policy document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Cookie Policy document.
 
 **Value:** string (URL)
 
@@ -539,11 +575,39 @@ Default Value: `null`&#x20;
 
 #### NEXT\_PUBLIC\_DPUA\_URL
 
-**Description:** Sets the URL from where the Data Portal Usage Agreement document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Data Portal Usage Agreement document.
+**Description:** Sets the URL from which the Data Portal Usage Agreement document will be read. The document must be in Markdown format. If this environment variable is set to null, the marketplace will use the default OEC Data Portal Usage Agreement document.
 
 **Value:** string (URL)
 
 **Example:** `https://raw.githubusercontent.com/OceanProtocolEnterprise/legaldocs/refs/heads/main/market/DataPortalUsageAgreement.md`
+
+Default Value: `null`&#x20;
+
+
+
+### User Analytics
+
+The marketplace can integrate with PostHog for user analytics.
+
+#### NEXT\_PUBLIC\_POSTHOG\_HOST
+
+**Description:** Sets the PostHog URL where user analytics are sent. Leave this field empty to disable user analytics.&#x20;
+
+**Value:** string (URL)
+
+**Example:** `https://eu.i.posthog.com`
+
+Default Value: `null`&#x20;
+
+
+
+#### NEXT\_PUBLIC\_POSTHOG\_KEY
+
+**Description:** Sets the PostHog project ID. Leave this field empty to disable user analytics.&#x20;
+
+**Value:** string
+
+**Example:** `projectid`
 
 Default Value: `null`&#x20;
 
@@ -587,5 +651,12 @@ Values: `true/false`
 
 
 
+#### NEXT\_PUBLIC\_PRIVACY\_PREFERENCE\_CENTER
 
+**Description:** Defines whether or not the Privacy Preference Center is displayed. By default, it is displayed (`true`).
 
+**Value:** Boolean
+
+**Example:** `true`
+
+**Default Value:** `true`

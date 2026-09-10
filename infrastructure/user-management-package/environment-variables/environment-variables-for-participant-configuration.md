@@ -4,6 +4,8 @@
 
 Before executing the Participant initialization script, ensure that the variables below are correctly set in the `.env.config` file, as they determine how the initialization process configures the deployment.
 
+
+
 ### Marketplace
 
 Environment variables defining the OE Marketplace instance to which the users created in the Authentik server provisioned by the User Management Pack (Federated Identity Provider) connect.
@@ -20,7 +22,7 @@ Environment variables defining the OE Marketplace instance to which the users cr
 
 
 
-### Central Identity Provider
+### Central Identity Provider Shared with Participant
 
 Environment variables that define the Central Identity Provider - the Authentik server deployed by the Dataspace Operator - to which the Federated Identity Provider provisioned by the User Management Pack connects. These values are supplied by the Dataspace Operator as part of the Participant onboarding process.
 
@@ -151,12 +153,18 @@ Environment variables that configure the Wallet UI component provisioned by the 
 
 **Default Value:** `null`
 
+
+
 #### NUXT\_ADMIN\_USER\_GROUP\_NAME
 
 **Description:** Defines the name of the administrator group whose members are permitted to access the SSI Wallet user interface.
 
 * If set to `null`, all authenticated users can access the graphical interface.
 * If set to a specific group name, only users belonging to that group are granted access.
+
+{% hint style="info" %}
+To create an user group within Authentik, please consult [Create Admin User Group](../../../operational-guidelines/user-directory-management/user-group-management/) procedure.
+{% endhint %}
 
 **Values:** String&#x20;
 
@@ -258,7 +266,7 @@ This slug must be unique within a dataspace, as it serves as the identifier of t
 
 **Values:** `String`
 
-**Example:** `tvl-app`
+**Example:** `my-app`
 
 **Default Value:** `null`&#x20;
 
@@ -272,7 +280,7 @@ This provider name must be unique within a dataspace, as it serves as the identi
 
 **Values:** String
 
-**Example:** `tvl-provider`
+**Example:** `my-provider`
 
 **Default Value:** `null`&#x20;
 

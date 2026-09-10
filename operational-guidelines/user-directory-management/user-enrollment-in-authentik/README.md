@@ -1,2 +1,0 @@
-# User Enrollment in Authentik
-

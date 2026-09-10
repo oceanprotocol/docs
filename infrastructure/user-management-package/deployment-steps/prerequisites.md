@@ -1,12 +1,14 @@
 # Prerequisites
 
+Before installing and running the software, it is essential to ensure that your environment meets the required hardware and software prerequisites.
+
 ## Hardware requirements <a href="#hardware-requirements" id="hardware-requirements"></a>
 
 The minimum hardware requirements for the server that will run the User Management Pack:
 
-* number of cores: 2
+* Number of cores: 2
 * RAM: 16 GB
-* disk: 50 GB
+* Disk: 50 GB
 
 ## Software requirements <a href="#software-requirements" id="software-requirements"></a>
 

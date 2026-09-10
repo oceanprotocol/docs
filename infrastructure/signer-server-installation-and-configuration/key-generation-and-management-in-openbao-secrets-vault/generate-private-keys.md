@@ -2,7 +2,7 @@
 
 To add a Web3 address to the secrets vault, place a raw `secp256k1` private key in the keys file and import it. **You never supply the address** — the `secpsign` plugin derives it during import and returns it, and that returned address is what gets recorded everywhere else.
 
-The keys file is /openbao/secrets/private\_keys
+The keys file is `/openbao/secrets/private_keys`
 
 ## Accepted key format
 

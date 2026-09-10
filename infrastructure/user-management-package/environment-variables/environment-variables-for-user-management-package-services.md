@@ -1,4 +1,4 @@
-# Environment Variables for User Management Pack Services
+# Environment Variables for User Management Package Services
 
 This page describes the environment variables used across all services in the **User Management Pack**. Each service organizes its variables into three categories:
 
@@ -6,13 +6,13 @@ This page describes the environment variables used across all services in the **
 * **Default variables** — values predefined from the start and not influenced by user input.
 * **Configurable variables** — values initially set by the initialization script but designed to be updated later by the user without rerunning the script.
 
-Note that Traefik and OpenBao services do not use any environment variables.&#x20;
+{% hint style="info" %}
+Traefik and OpenBao services have no environment variables.&#x20;
+{% endhint %}
 
 
 
 ## SSI Wallet API
-
-
 
 ### Generated variables
 
@@ -586,43 +586,421 @@ NODE_URI_MAP=[
 
 
 
-
-
 ## Authentik Server
 
 ### Generated variables
+
+#### AUTHENTIK\_APP\_SLUG
+
+**Description:** Specifies the slug of the Authentik application created during this deployment. The value is used exclusively by the blueprint initialization script, which loads the provider’s redirect configuration into the Authentik deployment.
+
+**Values:** String&#x20;
+
+**Example:** `oe-market`
+
+**Default Value:** `null`
+
+
+
+#### AUTHENTIK\_PROVIDER\_NAME
+
+**Description:** Specifies the name of the Authentik provider associated with the Authentik application created during this deployment. It defines key OIDC configuration details such as the client ID, client secret, authentication endpoints, and the scopes requested during user authentication. The value is used exclusively by the blueprint initialization script, which loads the provider’s redirect configuration into the Authentik deployment.
+
+**Values:** String
+
+**Example:** `oe-market-provider`
+
+**Default Value:** `null`
+
+&#x20;
+
+#### AUTHENTIK\_BASE\_URL
+
+**Description:** Defines the root URL of the Authentik server instance. This value is used exclusively by the blueprint initialization script, which loads configuration settings into the Authentik deployment.
+
+**Values:** String&#x20;
+
+**Example:** `https://ocean-node-vm3.oceanenterprise.io:9443`
+
+**Default Value:** `null`
+
+
+
+#### AUTHENTIK\_REDIRECT\_URIS
+
+**Description:** Specifies the list of permitted Redirect URIs for the Authentik provider created during this deployment. These URIs define where Authentik is allowed to send users after successful authentication. The value is used exclusively by the blueprint initialization script, which loads the provider’s redirect configuration into the Authentik deployment.
+
+**Values:** String&#x20;
+
+**Example:** `['https://market-git-feat-stage-ocean-enterprise.vercel.app/auth/callback', 'https://market-git-feat-stage-ocean-enterprise.vercel.app/auth/login', 'https://wallet-ui-smc.oceanenterprise.io/auth/callback', 'https://wallet-ui-smc`\
+`.oceanenterprise.io/auth/login']`
+
+**Default Value:** `null`
+
+
+
+#### AUTHENTIK\_LOGOUT\_URI
+
+**Description:** Defines the endpoint where to send a logout request to clear the user's active session inside the connected application. This value is used exclusively by the blueprint initialization script, which loads configuration settings into the Authentik deployment.
+
+**Values:** String&#x20;
+
+**Example:** `https://market-git-feat-stage-ocean-enterprise.vercel.app/auth/callback/logout`
+
+**Default Value:** `null`
+
+
+
+#### PARTICIPANT\_IDP\_WELL\_KNOWN\_URL
+
+**Description:** Specifies the URL of the well‑known endpoint of the Authentik provider configured on the Federated Identity Provider.
+
+**Values:** String&#x20;
+
+**Example:** `https://vm1-test.oceanenterprise.io:9443/application/o/tvl-participant/.well-known/openid-configuration`
+
+**Default Value:** `null`
+
+
+
+#### AUTHENTIK\_OUTPUT\_FILE
+
+**Description:** Defines the blueprint file that will be executed the first time the Authentik containers are created to load the configuration settings into the Authentik deployment. This value is used exclusively by the blueprint initialization script.
+
+**Values:** String&#x20;
+
+**Example:** `dataspace-operator-authentik-blueprint.yaml`
+
+**Default Value:** `null`
+
+&#x20;
+
+### Default variables - Docker image
+
+#### AUTHENTIK\_IMAGE
+
+**Description:** Sets the Docker image for the Suthentik server.
+
+**Values:** String&#x20;
+
+**Example:** `ghcr.io/goauthentik/server`
+
+**Default Value:** `null`
+
+
+
+### Default variables - TCP Ports
+
+#### AUTHENTIK\_PORT\_HTTP
+
+**Description:** Sets the container's TCP port for HTTP connections.&#x20;
+
+**Values:** Integer
+
+**Example:** `9000`
+
+**Default Value:** `null`
+
+
+
+#### AUTHENTIK\_PORT\_HTTPS
+
+**Description:** Sets the container's TCP port for HTTPS connections.&#x20;
+
+**Values:** Integer
+
+**Example:** `9443`
+
+**Default Value:** `null`
+
+&#x20;
+
+### Default variables - SMTP settings
+
+#### AUTHENTIK\_EMAIL\_\_USE\_SSL
+
+**Description:** Hostname or IP address of the PostgreSQL server.
+
+**Values:** Boolean
+
+**Example:** `false`
+
+**Default Value:** `null`
+
+&#x20;
+
+#### AUTHENTIK\_EMAIL\_\_TIMEOUT
+
+**Description:** Sets the SMTP connection timeout limit in seconds for Authentik email delivery, in seconds.
+
+**Values:** Integer
+
+**Example:** `10`
+
+**Default Value:** `null`&#x20;
+
+
+
+### Default variables - Postgres connection settings
+
+#### AUTHENTIK\_POSTGRESQL\_\_NAME
+
+**Description:** Name of the PostgreSQL database to use.
+
+**Values:** String&#x20;
+
+**Example:** `authentik`
+
+**Default Value:** `null`
+
+
+
+#### AUTHENTIK\_POSTGRESQL\_\_USER
+
+**Description:** PostgreSQL username used by authentik to authenticate.
+
+**Values:** String&#x20;
+
+**Example:** `authentik`
+
+**Default Value:** `null`
+
+
+
+#### AUTHENTIK\_POSTGRESQL\_\_HOST
+
+**Description:** Hostname or IP address of the PostgreSQL server.
+
+**Values:** String&#x20;
+
+**Example:** `postgres`
+
+**Default Value:** `null`
+
+
+
+### Configurable variables - TCP Ports&#x20;
+
+#### COMPOSE\_PORT\_HTTP
+
+**Description:** Sets the host's TCP port for HTTP connection.&#x20;
+
+**Values:** Integer
+
+**Example:** `9000`
+
+**Default Value:** `null`
+
+
+
+#### COMPOSE\_PORT\_HTTPS
+
+**Description:** Sets the host's TCP port for HTTPS connection.&#x20;
+
+**Values:** Integer
+
+**Example:** `9000`
+
+**Default Value:** `null`
+
+&#x20;
+
+### Configurable variables - SMTP settings
+
+#### AUTHENTIK\_EMAIL\_\_HOST
+
+**Description:** SMTP server hostname or IP address
+
+**Values:** String&#x20;
+
+**Example:** `postgres`
+
+**Default Value:** `localhost`
+
+&#x20;
+
+#### AUTHENTIK\_EMAIL\_\_PORT
+
+**Description:** SMTP server port number.
+
+**Values:** Integer
+
+**Example:** `465`
+
+**Default Value:** `25`
+
+
+
+#### AUTHENTIK\_EMAIL\_\_USERNAME
+
+**Description:** SMTP username. If empty, Authentik will not attempt SMTP authentication.
+
+**Values:** String&#x20;
+
+**Example:** `support@oceanenterprise.io`
+
+**Default Value:** `''`
+
+#### AUTHENTIK\_EMAIL\_\_PASSWORD
+
+**Description:** SMTP password. If empty, Authentik will not attempt SMTP authentication.
+
+**Values:** String&#x20;
+
+**Example:** `astrongpassword`
+
+**Default Value:** `''`
+
+&#x20;
+
+#### &#x20;AUTHENTIK\_EMAIL\_\_FROM
+
+**Description:** Email address that Authentik will send emails from. This should be a valid address for your domain. To include a display name, use the format Name \<account@domain>.
+
+**Values:** String&#x20;
+
+**Example:** `support@oceanenterprise.io`
+
+**Default Value:** `''`
+
+
+
+### Configurable variables - PostgreSQL connection settings
+
+
+
+#### AUTHENTIK\_POSTGRESQL\_\_PASSWORD
+
+**Description:** PostgreSQL password used by authentik to authenticate.
+
+**Values:** String&#x20;
+
+**Example:** `astrongpassword`
+
+**Default Value:** `null`
+
+
+
+### Configurable variables - Cookie signing
+
+#### AUTHENTIK\_SECRET\_KEY
+
+**Description:** Secret key used for cookie signing. Changing this will invalidate active sessions.
+
+**Values:** String&#x20;
+
+**Example:** `astrongkey`
+
+**Default Value:** `null`
+
+&#x20;
+
+## PostgreSQL server&#x20;
+
+### Generated variables
+
+#### AUTHENTIK\_POSTGRESQL\_\_NAME
+
+**Description:** PostgreSQL database name for the Authentik server. This variable is used by the initialization script that runs after the PostgreSQL container is started.
+
+**Values:** String&#x20;
+
+**Example:** `authentik`
+
+**Default Value:** `null`
+
+&#x20;
+
+#### AUTHENTIK\_POSTGRESQL\_\_USER
+
+**Description:** PostgreSQL database user for the Authentik database. This variable is used by the initialization script that runs after the PostgreSQL container is started.
+
+**Values:** String&#x20;
+
+**Example:** `authentik`
+
+**Default Value:** `null`
+
+#### AUTHENTIK\_POSTGRESQL\_\_PASSWORD
+
+**Description:** The password of the PostgreSQL database user for the Authentik database. This variable is used by the initialization script that runs after the PostgreSQL container is started.
+
+**Values:** String&#x20;
+
+**Example:** `astrongpassword`
+
+**Default Value:** `null`&#x20;
+
+
+
+#### DB\_NAME
+
+**Description:** PostgreSQL database name for the Wallet API service. This variable is used by the initialization script that runs after the PostgreSQL container is started.
+
+**Values:** String&#x20;
+
+**Example:** `waltid`
+
+**Default Value:** `null`
+
+
+
+#### DB\_USERNAME
+
+**Description:** PostgreSQL database user for the Wallet API service. This variable is used by the initialization script that runs after the PostgreSQL container is started.
+
+**Values:** String&#x20;
+
+**Example:** `waltid`
+
+**Default Value:** `null`&#x20;
+
+
+
+#### DB\_PASSWORD
+
+**Description:** The password of the PostgreSQL database user for the Wallet API service. This variable is used by the initialization script that runs after the PostgreSQL container is started.
+
+**Values:** String&#x20;
+
+**Example:** `astrongpassword`
+
+**Default Value:** `null`&#x20;
 
 
 
 ### Default variables
 
+#### POSTGRES\_DB
 
+**Description:** It explicitly defines the name of the default database that is automatically created when the container is initialized for the first time
 
-### Configurable variables
+**Values:** String&#x20;
 
+**Example:** `postgres`
 
-
-\--- Configurable (sourced from .env.config) -------------------------------------------------------------
-
-AUTHENTIK\_POSTGRESQL\_\_PASSWORD='ocean123' AUTHENTIK\_SECRET\_KEY='qwertyuiop\[12345asdfghjkl' AUTHENTIK\_EMAIL\_\_FROM=support@oceanenterprise.io
-
-\--- Application Configuration -------------------------------------------------------------
-
-AUTHENTIK\_APP\_SLUG=tvl-participant AUTHENTIK\_PROVIDER\_NAME=tvl-participant-federated-provider AUTHENTIK\_OUTPUT\_FILE=participant-authentik-blueprint.yaml
-
-\--- Authentication Configuration -------------------------------------------------------------
-
-AUTHENTIK\_REDIRECT\_URIS=\['https://market2.demo.oceanenterprise.io/auth/callback', 'https://market2.demo.oceanenterprise.io/auth/login', 'https://ocean-node-vm1-stage.oceanenterprise.io:9443/source/oauth/callback/tvl-participant/'] AUTHENTIK\_LOGOUT\_URI=https://market2.demo.oceanenterprise.io/auth/callback/logout COMPOSE\_PORT\_HTTP=9000 COMPOSE\_PORT\_HTTPS=9443 PARTICIPANT\_IDP\_WELL\_KNOWN\_URL=https://vm1-test.oceanenterprise.io:9443/application/o/tvl-participant/.well-known/openid-configuration
-
-\--- SMTP Configuration -------------------------------------------------------------
-
-AUTHENTIK\_EMAIL\_\_USERNAME=support@oceanenterprise.io AUTHENTIK\_EMAIL\_\_PASSWORD='nnZS@435x-\&Uc$n' AUTHENTIK\_EMAIL\_\_HOST=mail.gandi.net AUTHENTIK\_EMAIL\_\_PORT=587
-
-\--- Default -------------------------------------------------------------
-
-AUTHENTIK\_IMAGE=ghcr.io/goauthentik/server AUTHENTIK\_TAG=2026.5.5 AUTHENTIK\_PORT\_HTTP=9000 AUTHENTIK\_PORT\_HTTPS=9443 AUTHENTIK\_POSTGRESQL\_\_NAME=authentik AUTHENTIK\_POSTGRESQL\_\_USER=authentik SMTP\_HOST=host-gateway AUTHENTIK\_EMAIL\_\_USE\_SSL=false AUTHENTIK\_EMAIL\_\_TIMEOUT=10 AUTHENTIK\_POSTGRESQL\_\_HOST=postgres
+**Default Value:** `null`&#x20;
 
 
 
+#### POSTGRES\_USER
+
+**Description:** It explicitly defines the name of the default database superuser that is automatically created when the container is initialized for the first time.
+
+**Values:** String&#x20;
+
+**Example:** `postgres`
+
+**Default Value:** `null`&#x20;
 
 
+
+#### POSTGRES\_PASSWORD
+
+**Description:** Sets the superuser password for the PostgreSQL database instance during its initial container startup
+
+**Values:** String&#x20;
+
+**Example:** `astrongpassword`
+
+**Default Value:** `null`&#x20;

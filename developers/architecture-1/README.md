@@ -23,7 +23,7 @@ Here are the architectural variations detailed in this chapter:
 * [Dataspaces with market-level authentication](dataspaces-with-market-level-authentication.md)
   * Dataspaces with centralized market-level authentication
   * Dataspaces with federated market-level authentication
-* [Dataspaces with basic account abstraction enabled](dataspaces-with-basic-account-abstraction-enabled.md)
+* [Dataspaces with basic account abstraction enabled](dataspaces-with-basic-account-abstraction.md)
 
 
 

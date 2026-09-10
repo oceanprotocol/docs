@@ -97,12 +97,18 @@ Environment variables that configure the Wallet UI component provisioned by the 
 
 **Default Value:** `null`
 
+
+
 #### NUXT\_ADMIN\_USER\_GROUP\_NAME
 
 **Description:** Defines the name of the administrator group whose members are permitted to access the SSI Wallet user interface.
 
 * If set to `null`, all authenticated users can access the graphical interface.
 * If set to a specific group name, only users belonging to that group are granted access.
+
+{% hint style="info" %}
+To create a user group within Authentik, please consult the [Create Admin User Group](../../../operational-guidelines/user-directory-management/user-group-management/) procedure.
+{% endhint %}
 
 **Values:** String&#x20;
 

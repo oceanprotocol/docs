@@ -6,10 +6,31 @@ Use this when an existing MetaMask account already holds funds, permissions, or 
 
 ## **Step 1 — Export the key from MetaMask**
 
-1. Open MetaMask and select the account to migrate.
-2. Open the account menu (⋮) → **Account details**.
-3. Choose **Show private key**, enter your MetaMask password, and hold to reveal.
-4. Copy the 64-character hex string. Record the account's **address** separately — you will verify against it in step 4.
+1\. Open MetaMask and select the account to migrate.
+
+2\. Open the account menu (⋮) → **Account details**.<br>
+
+<figure><img src="../../../.gitbook/assets/image (136).png" alt="" width="375"><figcaption></figcaption></figure>
+
+3\. Choose **Private keys** and click on the option "**Unlock to reveal**"
+
+<figure><img src="../../../.gitbook/assets/image (137).png" alt="" width="371"><figcaption></figcaption></figure>
+
+
+
+4\. Enter your MetaMask password and hold to reveal.
+
+<figure><img src="../../../.gitbook/assets/image (138).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+
+5\. Copy the 64-character hex string. Record the account's **address** separately — you will verify against it in step 4.
+
+
+
+
+
+<figure><img src="../../../.gitbook/assets/image (139).png" alt="" width="360"><figcaption></figcaption></figure>
 
 MetaMask exports the key without a `0x` prefix. That is fine: `normalize_pk` adds it during import.
 
@@ -52,13 +73,13 @@ docker compose exec openbao /opt/openbao/scripts/manage-accounts.sh import
 
 ## **Step 4 — Verify the address matches MetaMask**
 
-(screenshots din Metamask si consola)
+
 
 ```bash
 docker compose exec openbao /opt/openbao/scripts/manage-accounts.sh list --verify
 ```
 
-The address on the new row must match the address you recorded in step 1, case-insensitively. If it does not, the key was mistyped or truncated — delete the wallet (§2.2.2.4) and repeat.
+The address on the new row must match the address you recorded in step 1, case-insensitively. If it does not, the key was mistyped or truncated — delete the wallet and repeat.
 
 
 
