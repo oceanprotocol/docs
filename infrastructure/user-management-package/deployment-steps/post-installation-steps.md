@@ -71,7 +71,7 @@ Consult the [Operational Guidelines](../../../operational-guidelines/) chapter f
 
 The SSI Wallet UI can be configured to allow access only to users who belong to a designated group in the Authentik server. In a production environment, defining this administrator group is essential, as managing the organization’s DIDs and Verifiable Credentials is a critical responsibility and must be restricted to explicitly authorized users.
 
-* Follow the instructions in the chapter [Create Admin User Group](../../../operational-guidelines/user-directory-management/user-group-management/create-admin-user-group.md) to create an administrator group for the SSI Wallet UI.
+* Follow the instructions in the chapter [Create Admin User Group](../../../operational-guidelines/user-directory-management/user-group-management/create-admin-user-group/) to create an administrator group for the SSI Wallet UI.
 * After the designated SSI Wallet UI administrator user is registered in Authentik (see the [User Enrollment](../../../operational-guidelines/user-directory-management/user-enrolment-in-authentik/) chapter), follow the instructions in the chapter [Assign User to User Group](../../../operational-guidelines/user-directory-management/user-group-management/assign-user-to-group.md) to add the user to the SSI Wallet UI administrator group.
 
 

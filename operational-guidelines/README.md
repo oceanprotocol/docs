@@ -8,7 +8,7 @@
   * [User Enrollment in Authentik](user-directory-management/user-enrolment-in-authentik/)
     * [Create Invitation](user-directory-management/user-enrolment-in-authentik/create-an-invitation/)
   * [User Group Management](user-directory-management/user-group-management/)
-    * [Create Admin User Group](user-directory-management/user-group-management/create-admin-user-group.md)
+    * [Create Admin User Group](user-directory-management/user-group-management/create-admin-user-group/)
     * [Modify User Group](user-directory-management/user-group-management/assign-user-to-group.md)
     * [Delete User Group](user-directory-management/user-group-management/delete-user-group.md)
   * [Modify User Claim Values](user-directory-management/modify-user-claim-values.md)

@@ -2,7 +2,7 @@
 
 ### Table of Contents
 
-* [Create Admin User Group](create-admin-user-group.md)
+* [Create Admin User Group](create-admin-user-group/)
 * [Assign User to Group](assign-user-to-group.md)
 * [Remove User from Group](remove-user-from-group.md)
 * [Delete User Group](delete-user-group.md)
