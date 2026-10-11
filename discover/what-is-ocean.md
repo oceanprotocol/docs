@@ -2,65 +2,44 @@
 description: 
 ---
 
-<div align="center"><figure><img src="../.gitbook/assets/discover/wait.png" width="60%"></figure></div>
 
 ## What is Ocean?
 
 Ocean is a decentralized data and compute protocol.
 
-AI lives on data and compute; Ocean facilitates it.
+AI lives on data and compute, & Ocean Network is where you can rent GPUs and run open-source models in minutes.
 
 Ocean has two specific parts:
-- A live tech stack. At the core is **Datatokens**, **Ocean Nodes**, and **Compute-to-Data**
+- A live tech stack. At the core is [Ocean Network](https://dashboard.oncompute.ai/) which brings together **Ocean Inference**, **Templates**, **Ocean Orchestrator**, and **Ocean Nodes**.
 - A lively community. This includes **builders, data scientists**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
 
 Let's drill into each.
 
-## Tech: Ocean data NFTs and datatokens
+## Tech: Ocean Network
 
-These enable decentralized access control, via token-gating. Key principles:
+Ocean Network is a decentralized GPU network. Nodes around the world contribute idle GPUs, and users rent them to run open-source models for AI inference, training, and data processing. Ocean Network is deployed on Base, so transactions are fast and low-fee.
 
-- Publish data services as ERC721 data NFTs and ERC20 datatokens
-- You can access the dataset / data service if you hold 1.0 datatokens
-- Consuming data services = spending datatokens
+Developers and data scientists browse a catalog of compute resources, filter for the exact specs they need, and pay for the hours they use. Node operators monetize their hardware and earn rewards.
 
-Crypto wallets, exchanges, and DAOs become _data_ wallets, exchanges, and DAOs.
+Start on the [Ocean Network dashboard](https://dashboard.oncompute.ai/), or read the Ocean Network [docs](https://docs.oncompute.ai/). Let's explore more:
 
-<div align="center">
-<figure><img src="../.gitbook/assets/discover/onramp-offramp.png"><br><figcaption>Data NFTs & datatokens are an on-ramp and off-ramp for data assets into DeFi</figcaption></figure>
-</div>
+1) [Ocean Inference](https://dashboard.oncompute.ai/inference): Ocean Inference runs open models and AI apps on real GPUs from the dashboard. You pick what to run, pay for the hours you need, and get a live endpoint.
 
-Data can be on Azure or AWS, Filecoin or Arweave, REST APIs or smart contract feeds. Data may be raw AI training data, feature vectors, trained models, even AI model predictions, or non-AI data.
+a) [Curated Models](https://dashboard.oncompute.ai/inference/default-models): Pre-sized packages that pair a model with a tested engine preset and the hardware it needs.
 
-## Tech: Ocean Compute-to-Data
+b) [Custom Models](https://dashboard.oncompute.ai/inference/custom-models): Serve any model on the Hugging Face Hub with full control over the launch settings.
 
-This enables one buy & sell private data, while preserving privacy
-- Private data is valuable: using it can improve research and business outcomes. But concerns over privacy and control make it hard to access.
-- Compute-to-Data (C2D) grants access run compute against the data, _on the same premises of the data_. Only the results are visible to the consumer. The data never leaves the premises. Decentralized blockchain technology does the handshaking.
-- C2D enables people to sell private data while preserving privacy, as an opportunity for companies to monetize their data assets.
-- C2D can also be used for data sharing in science or technology contexts, with lower liability risk, because the data doesn't move.
+c) [Services](https://dashboard.oncompute.ai/inference/services): Ready-made apps such as ComfyUI, Open WebUI, and JupyterLab, running on a node's GPU
 
-<div align="center">
-<figure><img src="../.gitbook/assets/discover/c2d-mental-model.png" width="75%"><br><figcaption>Compute-to-Data flow</figcaption></figure>
-</div>
+d) Templates: See below
 
-## Tech: Ocean Nodes
+2) [Templates](https://dashboard.oncompute.ai/inference/templates): Templates are ready-to-use apps with their models and workflows already inside. Pick the outcome you want, such as text to image, image to video, or agentic development, and launch it.
 
-Ocean Nodes enable decentralized computing by turning idle compute resources into a monetizable compute-ready infrastructure to scale AI. 
+Choose a template and a compute environment, and Ocean Network shows you the node, time, and cost before you run. Follow the step-by-step template [tutorials](https://docs.oncompute.ai/inference-tutorials/quickstart) to see what each template produces.
 
-- Scalable AI Compute on Demand: Access a global network of compute resources for faster training and inference without owning physical hardware.
-- Peer-to-Peer Compute Network: Leverage a decentralized network of nodes where participants share compute power directly, enhancing efficiency and resilience.
-- Monetization of Idle Resources: Turn unused compute power into revenue by contributing to the Ocean decentralized network.
-- Learn more [here](https://docs.oceanprotocol.com/developers/ocean-node)
+3) Ocean orchestrator: Ocean Orchestrator lets you run affordable GPU AI jobs from your editor with a one-click workflow and pay-per-use pricing.
 
-## Tech: Ocean VS code extension
-
-Ocean VS Code Extension empowers developers to build, test, and deploy AI and data workflows directly within VS Code, fully integrated with Ocean’s decentralized compute and data ecosystem.
-
-- Seamless Development Environment: Write, test, and deploy algorithms in your familiar VS Code interface without switching platforms.
-- Integrated Decentralized Compute: Connect directly to Ocean Nodes to run compute-heavy tasks securely and efficiently.
-- Simplified Data Access & Management: Easily discover, access, and use datasets on Ocean while maintaining privacy and compliance.
-- Learn more [here](https://docs.oceanprotocol.com/developers/vscode)
+Bring the compute environment you selected on the [dashboard](https://dashboard.oncompute.ai/run-job/environments) straight into VS Code, Cursor, or Windsurf, and run your training jobs from there. Compute-to-Data is built in, so algorithms travel to private data and jobs run in isolated containers. Only the results are visible to the consumer, which lets companies monetize private data assets and share data for science or technology use cases with lower liability risk.
 
 ## Community: Ocean Ecosystem
 
@@ -68,7 +47,6 @@ Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of d
 
 <div align="center"><figure><img src="../.gitbook/assets/discover/builders.png" width="50%"></figure></div>
 
-The Ocean ecosystem also contains many data scientists and AI enthusiasts, excited about the future of AI & data. You can find them doing [predictions](https://www.predictoor.ai/), [data challenges](https://competitions.desights.ai/challenge/list), [Data Farming](https://docs.oceanprotocol.com/data-farming), and more.
 
 ## Community: Ocean Ambassadors
 
