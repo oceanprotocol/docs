@@ -7,11 +7,11 @@ description:
 
 Ocean is a decentralized data and compute protocol.
 
-AI lives on data and compute, & Ocean Network is where you can rent GPUs and run open-source models in minutes.
+AI lives on data and compute, Ocean Network is where you can rent GPUs and run open-source models in minutes.
 
 Ocean has two specific parts:
 - A live tech stack. At the core is [Ocean Network](https://dashboard.oncompute.ai/) which brings together **Ocean Inference**, **Templates**, **Ocean Orchestrator**, and **Ocean Nodes**.
-- A lively community. This includes **builders, data scientists**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
+- A lively community. This includes **builders, AI enthusiasts**, and **Ocean Ambassadors**. Ocean's community is active on **social media**.
 
 Let's drill into each.
 
@@ -33,7 +33,7 @@ c) [Services](https://dashboard.oncompute.ai/inference/services): Ready-made app
 
 d) Templates: See below
 
-2) [Templates](https://dashboard.oncompute.ai/inference/templates): Templates are ready-to-use apps with their models and workflows already inside. Pick the outcome you want, such as text to image, image to video, or agentic development, and launch it.
+2) [Templates](https://dashboard.oncompute.ai/inference/templates): Templates are ready-to-use apps with their models and workflows already inside. Pick the outcome you want, such as text-to-video, image-to-video, or agentic development, and launch it.
 
 Choose a template and a compute environment, and Ocean Network shows you the node, time, and cost before you run. Follow the step-by-step template [tutorials](https://docs.oncompute.ai/inference-tutorials/quickstart) to see what each template produces.
 
