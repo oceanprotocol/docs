@@ -7,7 +7,7 @@ description:
 
 Ocean is a decentralized data and compute protocol.
 
-AI lives on data and compute, Ocean Network is where you can rent GPUs and run open-source models in minutes.
+AI lives on data and compute, Ocean Network is where you can rent compute environment and run open-source models in minutes.
 
 Ocean has two specific parts:
 - A live tech stack. At the core is [Ocean Network](https://dashboard.oncompute.ai/) which brings together **Ocean Inference**, **Templates**, **Ocean Orchestrator**, and **Ocean Nodes**.
@@ -33,19 +33,13 @@ c) [Services](https://dashboard.oncompute.ai/inference/services): Ready-made app
 
 d) Templates: See below
 
-2) [Templates](https://dashboard.oncompute.ai/inference/templates): Templates are ready-to-use apps with their models and workflows already inside. Pick the outcome you want, such as text-to-video, image-to-video, or agentic development, and launch it.
+2) [Templates](https://dashboard.oncompute.ai/inference/templates): Templates are ready-to-use apps with their models and workflows already inside. Pick the outcome you want, such as text-to-video, reference-to-video, image-to-video, music generation, Ad studio or agentic development, and launch it.
 
 Choose a template and a compute environment, and Ocean Network shows you the node, time, and cost before you run. Follow the step-by-step template [tutorials](https://docs.oncompute.ai/inference-tutorials/quickstart) to see what each template produces.
 
-3) Ocean orchestrator: Ocean Orchestrator lets you run affordable GPU AI jobs from your editor with a one-click workflow and pay-per-use pricing.
+3) [Ocean orchestrator](https://open-vsx.org/extension/OceanProtocol/ocean-protocol-vscode-extension): Ocean Orchestrator lets you run affordable GPU AI jobs from your editor with a one-click workflow and pay-per-use pricing.
 
 Bring the compute environment you selected on the [dashboard](https://dashboard.oncompute.ai/run-job/environments) straight into VS Code, Cursor, or Windsurf, and run your training jobs from there. Compute-to-Data is built in, so algorithms travel to private data and jobs run in isolated containers. Only the results are visible to the consumer, which lets companies monetize private data assets and share data for science or technology use cases with lower liability risk.
-
-## Community: Ocean Ecosystem
-
-Ocean has a lively [ecosystem](https://oceanprotocol.com/explore/ecosystem) of dapps grown over years, built by enthusiastic developers.
-
-<div align="center"><figure><img src="../.gitbook/assets/discover/builders.png" width="50%"></figure></div>
 
 
 ## Community: Ocean Ambassadors
@@ -56,7 +50,7 @@ Ocean has an excellent [community of ambassadors](https://oceanprotocol.com/expl
 
 ## Community: Social Media
 
-Follow Ocean on [Twitter](https://twitter.com/OceanProtocol) or [Telegram](https://t.me/oceanprotocol_community) to keep up to date. Chat directly with the Ocean community on [Discord](https://discord.gg/TnXjkR5). Or, track Ocean progress directly on [GitHub](https://github.com/oceanprotocol).
+Follow Ocean Protocol on [X](https://twitter.com/OceanProtocol), Ocean Network on [X](https://x.com/ONcompute) or [Telegram](https://t.me/oceanprotocol_community) to keep up to date. Chat directly with the Ocean community on [Discord](https://discord.gg/TnXjkR5). Or, track Ocean progress directly on [GitHub](https://github.com/oceanprotocol).
 
 Finally, the [Ocean blog](https://blog.oceanprotocol.com/) has regular updates.
 
