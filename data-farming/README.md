@@ -14,7 +14,7 @@ coverY: 0
 
 DF currently has one stream:
 
-* [**Predictoor DF**](predictoordf.md)**.** Run prediction bots to earn continuously. Weekly Predictoor rewards are 500 USDC through 2026.
+- [**Predictoor DF**](predictoordf.md)**.** Run prediction bots to earn continuously. Weekly Predictoor rewards are 100 USDC through 2026.
 
 All streams repeat **weekly** that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.
 
@@ -26,10 +26,10 @@ DF Streams evolve over time. The next two sections cover past & future DF stream
 
 In **Passive DF**, users locked OCEAN for veOCEAN. In **Active DF**, users allocated veOCEAN to curate data assets.
 
-* veOCEAN, Passive DF, and Active DF were [retired](https://blog.oceanprotocol.com/passive-volume-data-farming-airdrop-has-completed-they-are-now-retired-6933520b5fcb) on May 3, 2024, alongside an an airdrop to veOCEAN holders.
-* **veOCEAN holders can claim airdrop & past rewards at** [**df.oceandao.org/rewards**](https://df.oceandao.org/rewards).
-* The locked OCEAN will unlock according to its schedule (up to 4 years)
-* [This article](https://blog.oceanprotocol.com/passive-volume-data-farming-airdrop-has-completed-they-are-now-retired-6933520b5fcb) has details.
+- veOCEAN, Passive DF, and Active DF were [retired](https://blog.oceanprotocol.com/passive-volume-data-farming-airdrop-has-completed-they-are-now-retired-6933520b5fcb) on May 3, 2024, alongside an an airdrop to veOCEAN holders.
+- **veOCEAN holders can claim airdrop & past rewards at** [**df.oceandao.org/rewards**](https://df.oceandao.org/rewards).
+- The locked OCEAN will unlock according to its schedule (up to 4 years)
+- [This article](https://blog.oceanprotocol.com/passive-volume-data-farming-airdrop-has-completed-they-are-now-retired-6933520b5fcb) has details.
 
 In **Challenge DF**, users did weekly one-off predictions. It was [retired](https://blog.oceanprotocol.com/df62-completes-and-df63-launches-predictoor-df-is-here-081fc78ceb70) on Nov 30, 2023.
 
@@ -39,9 +39,9 @@ For further details, the ["Data Farming Series" article](https://blog.oceanproto
 
 Potential DF evolution includes:
 
-* Scaling up Predictoor DF rewards. [Details](https://blog.oceanprotocol.com/ocean-protocol-update-2024-e463bf855b03#4da0).
-* New stream: run Unified Backend nodes. [Details](https://blog.oceanprotocol.com/ocean-protocol-update-2024-e463bf855b03#f779).
-* New stream: decentralized model training for world-world models. [Details](\[Details]\(https:/blog.oceanprotocol.com/ocean-protocol-update-2024-e463bf855b03/#4da0\).)
+- Scaling up Predictoor DF rewards. [Details](https://blog.oceanprotocol.com/ocean-protocol-update-2024-e463bf855b03#4da0).
+- New stream: run Unified Backend nodes. [Details](https://blog.oceanprotocol.com/ocean-protocol-update-2024-e463bf855b03#f779).
+- New stream: decentralized model training for world-world models. [Details](<[Details](https:/blog.oceanprotocol.com/ocean-protocol-update-2024-e463bf855b03/#4da0).>)
 
 ## Networks
 
@@ -53,11 +53,11 @@ The [networks docs](../discover/networks/) have more info.
 
 ## Further resources
 
-* The [**DF FAQ**](faq.md) answers more questions.
-* Main DF github repos: [df-py (backend)](https://github.com/oceanprotocol/df-py), [df-web (frontend)](https://github.com/oceanprotocol/df-web)
-* The [Ocean Data Farming Series](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) article has a chronological account of all Data Farming activities since its inception. It links to related blog posts.
+- The [**DF FAQ**](faq.md) answers more questions.
+- Main DF github repos: [df-py (backend)](https://github.com/oceanprotocol/df-py), [df-web (frontend)](https://github.com/oceanprotocol/df-web)
+- The [Ocean Data Farming Series](https://blog.oceanprotocol.com/ocean-data-farming-series-c7922f1d0e45) article has a chronological account of all Data Farming activities since its inception. It links to related blog posts.
 
-***
+---
 
 _Next:_ [_Predictoor DF_](predictoordf.md)
 
