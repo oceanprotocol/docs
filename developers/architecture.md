@@ -31,13 +31,26 @@ Ocean Network is the peer-to-peer GPU cloud that sits on top of Ocean Nodes. It 
 
 **How a job flows through Ocean Network:**
 
-1. **Pick what to run and where:** On the [Ocean Network dashboard](https://dashboard.oncompute.ai), choose your workload and a compute environment, and filter nodes for the exact specs you need, such as an NVIDIA H200. For Ocean Inference, the workload is a curated model, a Hugging Face model, a service, or a template. For a compute job, it's your algorithm. The dashboard shows the node, time, and estimated cost before you commit.
-2. **Lock funds in escrow.** Payment goes into an escrow contract on Base for the runtime you book.
-3. **Run the workload.** What happens next depends on the workload:
-   * **Ocean Inference:** The node operator claims the booked session window, then the node starts your model or app as a container on its GPU. You get a live HTTP endpoint, which for models is OpenAI-compatible, for as long as the session is booked. While it runs, you can call the endpoint, watch the logs, extend the paid window, and change the model or configuration in place.
-   * **Compute job:** The node runs your algorithm once and exits. You can launch it from the dashboard, from your editor with Ocean Orchestrator, from the Ocean CLI, or from an AI agent/ claude through the ON MCP server.
-4. **Get the result.** Inference gives you the live endpoint. A compute job gives you its output.
-5. **Release payment.** Funds are released to the node operator once the job completes successfully.
+Ocean Network gives you several ways to run work on a node's GPU: Ocean Inference, which keeps a model or app running for the session you book, and compute jobs, which run your algorithm once and return the output. Templates are the fastest way to start with Ocean Inference.
+
+#### Running a template with Ocean Inference
+
+1. **Open [Inference](https://dashboard.oncompute.ai/inference) on the dashboard.** The page offers three ways to start: **Templates**, **Models** (Custom or Curated), and **Services**. Templates are marked as the fastest way to start. The **My services** panel lists your running and recent inference services, and **Load services** pulls them up.
+2. **Browse templates.** Click **Browse templates** to see ready-made bundles of an app and the models it needs. Each card shows the template name and publisher, a one-line description, its category (such as Image generation, Video generation, or Chat), how you use it (Web UI or Endpoint), the number of GPUs it needs, and the models included.
+3. **Open a template.** The template page shows what it is, how it runs, and preview images. At the top, the **Quick Start** card shows a recommended setup picked for you: the GPU (for example 1× H200), CPU, RAM, and disk, plus the node that will run it, marked with a verified check.
+4. **Choose your session length.** Select how long you want the session from the **Session length** dropdown. The **Start** button shows the cost for that length (for example, 3.0432 USDC for one hour). To pick the environment or resources yourself, use **Advanced setup**.
+5. **Click Start.** The launch flow opens with four steps: **Template**, **Resources**, **Config**, and **Payment**. The first two are already complete from your Quick Start choices.
+6. **Review the Config step.** Each template can add optional settings of its own. For example, Video Studio (MiniMax H3) offers **Persistent storage**, where you choose a bucket (or click **Create bucket**) to cache the app's model weights so relaunches skip the download. Without a bucket, the app re-downloads several GB of model weights on every launch, inside your paid session. Use **Go back** to change an earlier step, then click **Continue**.
+7. **Fund the session.** The **Payment** step takes one escrow confirmation, which locks the cost of your booked session.
+8. **Use your service.** Your running service appears under **My services**. Web UI templates run as an app, and Endpoint templates run as an API you can call.
+
+#### Running a compute job
+
+1. **Pick an environment.** Browse the node catalog on the dashboard and filter for the specs you need, such as an NVIDIA H200.
+2. **Connect [Ocean Orchestrator](https://open-vsx.org/extension/OceanProtocol/ocean-protocol-vscode-extension).** The dashboard sends your editor (VS Code, Cursor, Antigravity, or Windsurf) a deep link that sets up your wallet, node, environment, and resources.
+3. **Fund your escrow.** If your balance is below the estimated cost, use **Add funds**, then authorize the node when the dashboard asks you to sign.
+4. **Click Run job.** Your algorithm runs once in an isolated container on the node, and you can watch the logs live.
+5. **Get your results.** The outputs and logs are saved to your project's results folder, and the job's cost is settled from escrow.
 
 **The main components:**
 
