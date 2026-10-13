@@ -3,21 +3,110 @@
 This page shows things you can do with Ocean...
 
 * As a builder
-* As a data scientist
 * As Ocean Node runner
-* As an OCEAN holder
 * Become an Ocean ambassador
 
 Let's explore each...
 
-## What builders can do
-
-<div align="center">
-
-<figure><img src="../.gitbook/assets/general/dapps.png" alt="" width="75%"><figcaption></figcaption></figure>
+## What Ocean holders can do 
 
 </div>
 
+
+<details>
+
+<summary>Information related to Ocean Token</summary>
+
+To learn more about Ocean Token, refer to this [page](https://oceanprotocol.com/about-us/ocean-token)
+
+</details>
+
+## What builders can do
+
+
+</div>
+
+Builders can rent GPUs on [Ocean Network](https://docs.oncompute.ai/), serve models, launch AI apps, and run jobs from their own tools.
+
+<details>
+
+<summary>Serve an Open-Source Model</summary>
+
+Run any model on the Hugging Face Hub on a node's GPU and get a live endpoint you can call over HTTP, with an OpenAI-compatible API. Choose a [Curated Model](https://dashboard.oncompute.ai/inference/default-models) for a pre-sized package with a tested engine preset, or a [Custom Model](https://dashboard.oncompute.ai/inference/custom-models) for full control over the launch settings. You pay for the runtime you book, and Ocean Network handles placement, payment, and lifecycle.
+
+Learn more [here](https://docs.oncompute.ai/inference/overview).
+
+</details>
+
+<details>
+
+<summary>Launch an AI App or Template</summary>
+
+Start a ready-made app such as ComfyUI, Open WebUI, or JupyterLab on a node's GPU with [Services](https://dashboard.oncompute.ai/inference/services), and add your own models from inside the app. Or launch a [Template](https://docs.oncompute.ai/inference/templates), an app that ships with its models and workflows already inside. Pick the outcome you want, such as text to image, image to video, or agentic development, and you're running in minutes.
+
+Follow the [template tutorials](https://docs.oncompute.ai/inference-tutorials/quickstart) for step-by-step guides.
+
+</details>
+
+<details>
+
+<summary>Manage Your Running Service</summary>
+
+Once your model or app is live, call your endpoint, watch the logs, extend the paid window, and change the model or configuration in place without losing the service.
+
+Learn more [here](https://docs.oncompute.ai/inference/managing-a-running-service).
+
+</details>
+
+<details>
+
+<summary>Run Jobs From Your Editor With Ocean Orchestrator</summary>
+
+Take the compute environment you selected on the Ocean Network dashboard straight into VS Code, Cursor, or Windsurf, and run your training jobs from there with a one-click workflow and pay-per-use pricing.
+
+Learn more [here](https://docs.oncompute.ai/ocean-orchestrator/overview).
+
+</details>
+
+<details>
+
+<summary>Build With the Ocean CLI</summary>
+
+Publish datasets and algorithms, run compute jobs, and orchestrate complex compute flows from your terminal with the Ocean CLI.
+
+Learn more [here](https://docs.oncompute.ai/ocean-cli/markdown).
+
+</details>
+
+<details>
+
+<summary>Drive Compute From Your AI Agents</summary>
+
+Connect any AI agent to Ocean Network through the ON MCP server, which exposes around 80 tools over the Model Context Protocol. Your agent can write and validate an algorithm and run free and paid compute jobs.
+
+Learn more [here](https://docs.oncompute.ai/on-mcp/quickstart).
+
+</details>
+
+<details>
+
+<summary>Store Your Data Once With Persistent Storage</summary>
+
+Upload your data to a bucket once and mount it into any container that needs it, instead of uploading it again for every job. It works with the Ocean CLI, the Ocean Network dashboard, and Ocean Orchestrator.
+
+Learn more [here](https://docs.oncompute.ai/persistent-storage/quickstart).
+
+</details>
+
+<details>
+
+<summary>Run Real Workloads on Ocean Network</summary>
+
+Fine-tune language models with LoRA and PEFT, run an autonomous ML research agent on a single H200 GPU, build data preprocessing and analysis pipelines, and more, without managing a server or a cloud account.
+
+Browse the [use cases](https://docs.oncompute.ai/use-cases/quickstart).
+
+</details>
 <details>
 
 <summary>Build Your Token-gated AI dApp</summary>
@@ -44,8 +133,6 @@ Build a decentralized data marketplace by [forking Ocean Market code](../develop
 
 </details>
 
-To dive deeper, please go to [Developers page](../developers/).
-
 ## What data scientists can do
 
 <div align="center">
@@ -70,15 +157,6 @@ With [Ocean Predictoor](../predictoor/), you submit predictions for the future p
 
 </details>
 
-<details>
-
-<summary>Compete in a Data Challenge</summary>
-
-Ocean regularly offer [data science challenges](../data-scientists/join-a-data-challenge.md) on real-world problems. Showcase your skills, and earn $ prizes.
-
-</details>
-
-To dive deeper, please go to [Data Scientists page](../data-scientists/).
 
 ## What Ocean Node runners can do 
 
@@ -88,16 +166,6 @@ To dive deeper, please go to [Data Scientists page](../data-scientists/).
 
 You can monetize any machine with idle compute power, from personal laptops and gaming PCs to high-performance servers and cloud instances, by connecting them to Ocean Nodes. These machines contribute unused CPU or GPU resources to a decentralized compute network, earning rewards for AI training, inference, or data processing.
   
-</details>
-
-## What OCEAN holders can do
-
-<details>
-
-<summary>Earn Rewards via Data Farming</summary>
-
-Ocean's [Data Farming](../data-farming/) incentives program rewards OCEAN to participants who make accurate predictions of the price directions of DeFi crypto tokens. Most of the activity happens on [Predictoor.ai](https://www.predictoor.ai/). Explore more [here](https://docs.oceanprotocol.com/data-farming/predictoordf)
-
 </details>
 
 ## Become an Ocean Ambassador
