@@ -11,7 +11,7 @@ description: >-
 
 **Predictoor DF** is a DF stream that amplifies predictoors’ earnings, via extra sales to Predictoor data feeds.
 
-Predictoor DF weekly rewards are currently 500 USDC.
+Predictoor DF weekly rewards are currently 100 USDC.
 
 ## Introduction
 

@@ -14,7 +14,7 @@ coverY: 0
 
 DF currently has one stream:
 
-* [**Predictoor DF**](predictoordf.md)**.** Run prediction bots to earn continuously. Weekly Predictoor rewards are 500 USDC through 2026.
+* [**Predictoor DF**](predictoordf.md)**.** Run prediction bots to earn continuously. Weekly Predictoor rewards are 100 USDC through 2026.
 
 All streams repeat **weekly** that start on Thursdays 00:00 at UTC and end on Wed at 23:59 UTC.
 
