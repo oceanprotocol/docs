@@ -31,9 +31,9 @@ Predictoor DF has one component: USDC rewards.
 
 ### OCEAN Rewards
 
-- A special “DF buyer” bot purchases Predictoor feeds. It started operating on Nov 9, 2023. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are feeds: 10 x 5min, 10 x 1h.)
+- A special “DF buyer” bot purchases Predictoor feeds. It started operating on Nov 9, 2023. Every day, it spends 1/7 of the weekly Predictoor OCEAN budget for another 24h subscription. It spends an equal amount per feed. (Currently there are  feeds: 10 x 5min, 10 x 1h.)
 - The USDC comes from the Ocean DF budget, and specifically, the Active DF budget.
-- Payout happens on Mondays, 4 days after the end of the DF round.
+- Payout happens on Mondays, 4 days after the end of the DF round. 
 - Payout for a given predictoor is pro-rata to the net earnings of that predictoor over that DF round, specifically (total sales $ to the predictoor) minus (predictoor stake slashed due to being wrong).
 
 ## How to Earn $ Via Predictoor DF
@@ -42,7 +42,7 @@ Predictoor DF has one component: USDC rewards.
 
 The [Predictoor DF user guide](predictoordf-guide.md) tells how to get started as a predictoor, and how to claim rewards.
 
----
+----
 
 _Next: [Predictoor DF Guide](predictoordf-guide.md)_
 
