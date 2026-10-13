@@ -13,12 +13,12 @@ Ocean is a decentralized data & compute protocol built to scale AI. Its core tec
 
 * Data NFTs & datatokens, to enable token-gated access control, data wallets, data DAOs, and more.
 * Compute-to-data: buy & sell private data, while preserving privacy
-* Ocean network: A decentralized GPU network where nodes around the world contribute idle GPUs and users rent them to run open-source models for AI inference, training, and data processing, with ready-to-use templates for launching secure workflows without setting up the infrastructure yourself.
+* Ocean Network: A decentralized compute network where node operators around the world contribute GPUs and other resources, and users rent compute environments on those nodes to run open-source models for AI inference, training, and data processing. Ready-to-use templates let you launch secure workflows without setting up the infrastructure yourself
 * Ocean Orchestrator: The coordination layer that matches jobs to nodes on Ocean Network and runs them end to end. Bring the compute environment you selected straight into your IDE through Ocean Orchestrator and run your training jobs from there. It includes compute-to-data, so algorithms travel to private data and the data never leaves its owner
 
 ### Ocean Users Are...
 
-* [**Developers & AI builders**](https://dashboard.oncompute.ai/)**.** Rent GPUs on Ocean Network and run open-source models with Ocean Inference. Launch ready-to-use templates, or build your own AI apps with full control over the setup
+* [**Developers & AI builders**](https://dashboard.oncompute.ai/)**.** Rent compute environment on Ocean Network and run open-source models with Ocean Inference. Launch ready-to-use templates, or build your own AI apps with full control over the setup
 * [**Ocean ambassadors**](https://oceanprotocol.com/explore/community)
 * [**Ocean Node Runners**](https://docs.oceanprotocol.com/developers/ocean-node)**.** Monetize your idle computing hardware 
 
