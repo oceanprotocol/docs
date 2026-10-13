@@ -8,6 +8,19 @@ This page shows things you can do with Ocean...
 
 Let's explore each...
 
+## What Ocean holders can do 
+
+</div>
+
+
+<details>
+
+<summary>Information related to Ocean Token</summary>
+
+To learn more about Ocean Token, refer to this [page](https://oceanprotocol.com/about-us/ocean-token)
+
+</details>
+
 ## What builders can do
 
 
