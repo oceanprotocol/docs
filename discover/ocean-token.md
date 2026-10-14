@@ -4,17 +4,17 @@ description:
 
 ## The OCEAN Token 
 
-Since Ocean’s departure from the ASI Alliance, the $OCEAN token is an ERC20 token solely representing the ideals of decentralized AI and data. 
+The Ocean Protocol Foundation, as the original issuer of the $OCEAN token, renounced all control over the $OCEAN token contract since mid-2023.
 
-It has no intended utility value nor is it a staking, platform, governance, payment, NFT, DeFi, meme, reward, or security token.
+Following this cessation of active management, the Ocean community and ecosystem projects now have full autonomy to use the $OCEAN token in any manner that suits their product and go-to-market strategy, aligning with the ideals of decentralized AI.
 
-Its supply is capped at approximately 270,000,000. With buybacks and burns, the supply of $OCEAN will be decreasing over time.
+Ocean ecosystem teams can integrate the $OCEAN token into their products for various purposes, including staking, platform functionality, governance, payment, NFTs, DeFi, memes, rewards, or any other purpose they deem fit.
 
-Acquirors can currently exchange for $OCEAN on Coinbase, Kraken, UpBit, Binance US, Uniswap and SushiSwap.
-Until 2024, the Ocean Token ($OCEAN) was the utility token powering the Ocean Protocol ecosystem, used for staking, governance, and purchasing data services, enabling secure, transparent, and decentralized data exchange and monetization.
+The Ocean Protocol Foundation will continue to act as a resource for anyone seeking information on the history and provenance of the $OCEAN token, and will support integrations. It will also coordinate the development of Ocean technology and guide ecosystem teams in integrating into the Ocean stack.
 
+The total token supply is fully emitted, circulating, and permanently capped at approximately 268,000,000 $OCEAN. The supply may decrease in the future depending on the actions and usage decisions of the Ocean community and ecosystem projects.
 
-For more info, navigate to this [section](https://oceanprotocol.com/about-us/ocean-token/) of our official website.
+Acquirors can currently exchange $OCEAN on Coinbase, Kraken, UpBit, Binance US, Uniswap, and SushiSwap. Here are the list of [exchanges](https://www.coingecko.com/en/coins/ocean-protocol#markets).
 
 
 _Next: [Networks](networks/README.md)_
