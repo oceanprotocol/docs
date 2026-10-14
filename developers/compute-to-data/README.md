@@ -1,5 +1,5 @@
 ---
-description: Compute to data version 2 (C2dv2)
+description: Compute to data version 2 (C2D.2)
 ---
 
 # Compute to data
