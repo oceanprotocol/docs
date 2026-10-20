@@ -9,321 +9,293 @@ Have some questions about Ocean Protocol?
 
 Hopefully, you'll find the answers here! If not then please don't hesitate to reach out to us on [discord](https://discord.gg/TnXjkR5) - there are no stupid questions!
 
-## General
+## Getting Started with Ocean Network
 
-<details>
-<summary>How is Ocean Protocol related to AI?</summary>
-
-Modern Artificial Intelligence (AI) models require vast amounts of training data.
-
-In fact, _every stage_ in the AI modeling life cycle is about data: raw training data -> cleaned data -> feature vectors -> trained models -> model predictions.
-
-Ocean's all about managing data: getting it, sharing it, selling it, and making $ from it -- all with Web3 benefits like decentralized control, data provenance, privacy, sovereign control, and more.
-
-Thus, Ocean helps manage data all along the AI model life cycle:
-- Ocean helps with raw training data
-- Ocean helps with cleaned data & feature vectors
-- Ocean helps with trained models as data
-- Ocean helps with model predictions as data
-
-A great example is [Ocean Predictoor](../predictoor/), where user make $ from their model predictions in a decentralized, private fashion.
-
-</details>
-
-<details>
-<summary>How is Ocean Protocol aiming to start a new Data Economy?</summary>
-
-Ocean Protocol's mission is to develop tools and services that facilitate the emergence of a new Data Economy. This new economy aims to empower data owners with control, maintain privacy, and catalyze the commercialization of data, including the establishment of data marketplaces.
-
-To understand more about Ocean's vision, check out this [blog post](https://blog.oceanprotocol.com/mission-values-for-ocean-protocol-aba998e95b8).
-</details>
-
-<details>
-<summary>How does Ocean Protocol generate revenue?</summary>
-
-The protocol generates revenue through transaction fees. These fees serve multiple purposes: they fund the ongoing development of Ocean technology and support the buy-and-burn process of the OCEAN.
-
-To get a glimpse of the revenue generated on the Polygon network, which is the most frequently used network, you can find detailed information [here](https://polygonscan.com/address/0x042BFbd88c3998282153088604207b2AeF045b43#tokentxns).
-
-To monitor burned tokens, visit [etherscan](https://etherscan.io/token/0x967da4048cd07ab37855c090aaf366e4ce1b9f48?a=0x000000000000000000000000000000000000dead). As of September 2023, approximately 1.4 million tokens have been burned. 🔥📈
-</details>
-
-<details>
-<summary>How decentralized is Ocean?</summary>
-
-To be fully decentralized means no single point of control, at any level of the stack.
-
-- OCEAN is already fully decentralized. 
-- The Ocean core tech stack is already fully decentralized too: smart contracts on permissionless chains, and anyone can run support middleware.
-- Predictoor is fully decentralized.
-- Data Farming has some centralized components; we aim to decentralize those in the next 12-24 months. ⁣
+<details> 
   
-</details>
+<summary>What is Ocean Network, and what is its current focus?</summary>
 
+Ocean Network is a decentralized, peer-to-peer compute network, powered by Ocean Protocol, that connects AI compute users with independent hardware providers. You can run containerized compute jobs through the Dashboard and developer tools, and launch long-running inference sessions from the [Dashboard](https://dashboard.oncompute.ai/inference).
 
-## About OCEAN
+</details> 
 
-<details>
-<summary>How is OCEAN used? How does it capture value?</summary>
-
-OCEAN token major usage is currently in Predictoor DF i.e. rewarding Predictoors who perform predictions on DeFi token price feeds to predict the price directions of Defi token feeds. To know more about this, navigate [here](https://docs.oceanprotocol.com/data-farming)
-
-</details>
-
-<details>
-<summary>What is the total supply of OCEAN?</summary>
-
-1.41 Billion OCEAN.
-</details>
-
-<details>
-<summary>Can OCEAN supply become deflationary?</summary>
-
-A portion of the revenue earned in the Ocean ecosystem is earmarked for buy-and-burn. If the transaction volume on Ocean reaches scale and is broadly adopted to the point where the buy-burn mechanism outruns the emissions of OCEAN, the supply would deflate.
-</details>
-
-<details>
-<summary>Does OCEAN also have governance functionality?</summary>
-
-During the OceanDAO grants program (2021-2022), OCEAN was used for community voting and governance. Currently, there are no governance functions associated with the token.
-</details>
-
-<details>
-<summary> Which blockchain network currently has the highest liquidity for OCEAN?</summary>
-
-Ethereum mainnet.  
-</details>
-
-<details>
-<summary>Can the Ocean tech stack be used without OCEAN?</summary>
-
-All Ocean modules and components are open-source and freely available to the community. Developers can change the default currency from OCEAN to a different one for their dApp. 
-
-</details>
-
-<details>
-<summary>How does the ecosystem and the token benefit from the usage of the open-source tech stack when transactions can be paid in any currency?</summary>
-
-For each consume transaction, the Ocean community gets a small fee. This happens whether OCEAN is used or not. [Here are details](../developers/contracts/fees.md).
-</details>
-
-## Ocean Nodes
-
-<details>
-<summary>What are Ocean Nodes?</summary>
-
-
-Ocean Nodes is a decentralized solution that simplifies running and monetizing AI models by allowing users to manage data, computational resources, and AI models through Ocean Protocol's infrastructure, enabling easier and more secure data sharing and decentralized AI model development. Learn more [here](https://docs.oceanprotocol.com/developers/ocean-node).
+<details> 
   
-</details>
+<summary>Who is Ocean Network for?</summary>
 
-<details>
-<summary>What are the minimum requirements to run a node? Can it be run on a phone or other small devices?</summary>
-We recommend the following minimum system requirements for running one Ocean node, though these may vary depending on your configuration:
-- 1 vCPU
-- 2 GB RAM for basic operations
-- 4 GB storage
-- Operating System: We recommend using the latest LTS version of Ubuntu or the latest iOS. However, nodes should also work on other operating systems, including Windows.
+Developers, data scientists, and researchers use Ocean Network to run GPU workloads without managing servers, and hardware operators use it to offer their machines to paying users. Availability, compatibility, and earnings depend on the selected environment and actual demand.
 
-While it is technically feasible to run a node on smaller devices, such as phones, the limited processing power and memory of these devices can lead to significant performance issues, making them unreliable for stable node operation.
-</details>
+</details> 
 
-<details>
-<summary>Can I run a node using Windows or macOS, and are there any recommended guides for those operating systems?</summary>
-Yes, you can run an Ocean node on both Windows and macOS.
-
-For Windows, it's recommended to use WSL2 (Windows Subsystem for Linux) to create a Linux environment, as it works better with Docker. Once WSL2 is set up, you can follow the Linux installation guides. Here’s a [helpful link](https://techcommunity.microsoft.com/t5/windows-11/how-to-install-the-linux-windows-subsystem-in-windows-11/m-p/2701207) to get started with WSL2
-
-For macOS, you can install Docker directly and run the Docker image. It’s also recommended to use Homebrew to install necessary dependencies like Node.js.
-
-For a detailed setup guide, refer to the [OceanNode GitHub Repository](https://github.com/oceanprotocol/ocean-node).
-
-</details>
-
-<details>
-<summary>Is there a maximum number of nodes allowed, and are there rules against running multiple nodes on the same IP?</summary>
-There’s no limit to the number of nodes you can run, however there are a few guidelines to keep in mind. You can run multiple nodes on the same IP address, as long as each node is using a different port.
-
-</details>
-
-<details>
-<summary>How long does it take for a new node to appear in the dashboard?</summary>
-The time it takes for a new node to appear on the dashboard depends on the system load. Typically, nodes become visible within a few hours, though this can vary based on network conditions.
+<details> 
   
-</details>
-<details>
-<summary>How can I verify that my node is running successfully?</summary>
-To verify your node is running properly, follow these steps:
+<summary>How do the Dashboard, Ocean Orchestrator, Ocean CLI, and ON MCP differ?</summary>
 
-1) Check the Local Dashboard: Go to http://your_ip:8000/dashboard to view the status of your node, including connected peers and the indexer status.
+The Dashboard is the visual interface for finding compute, launching workloads, and managing nodes. Ocean Orchestrator runs jobs from supported code editors, Ocean CLI covers terminal workflows, and ON MCP lets an AI assistant discover resources and operate compute and storage tools. Choose the one that fits how you like to work, since each one connects you to the same network.
 
-2) Verify on the Ocean Node Dashboard: After a few hours, visit the [Ocean Node Dashboard](https://nodes.oceanprotocol.com/) and search for your Node ID, Wallet, or IP to confirm your node is correctly configured and visible on the network.
+</details> 
+  
+<details> <summary>What is a compute environment?</summary>
 
-</details>
-<details>
-<summary>Are there penalties if my node goes offline?</summary>
-If your node goes offline, it won't be treated as a new node when you restart it - the timer will pick up from where it left off. However, frequent disconnections can impact your eligibility and uptime metrics, which are important for earning rewards. To qualify for rewards, your node must maintain at least 90% uptime. For example, in a week (10,080 minutes), your node needs to be active for at least 9,072 minutes. If your node is down for more than 16 hours and 48 minutes in a week, it will not be eligible for rewards.
+A compute environment is a node's published configuration of hardware, limits, and pricing for running compatible workloads. The Dashboard lists each environment's GPU, CPU, RAM, price, region, availability, and maximum duration so you can choose the best fit before you launch.
 
 </details>
-<details>
-<summary>How many nodes a user can run using a single wallet or on a single server?</summary>
-Each node needs its own wallet - one node per wallet. You can use an Admin wallet to manage multiple nodes, but it’s not recommended to use the same private key for multiple nodes. Since the node ID is derived from the private key, using the same key for different nodes may cause issues.
 
-You can run as many nodes on a server as its resources allow, depending on the server’s capacity.
-</details>
+## Running Compute Jobs
 
-<details>
-<summary> Why does my node show “Reward Eligibility: false” and “No peer data” even though it is connected?</summary>
+<details> <summary>What workloads can I run?</summary>
 
-Your node may show "Reward Eligibility: false" and "No peer data" even when connected, and this may be for a few reasons:
+Typical jobs include embeddings, batch inference, evaluation suites, synthetic data generation, data preparation, and model fine-tuning. Package your runtime in a container and choose resources that fit the job and the permitted duration. The [use-case](https://docs.oncompute.ai/use-cases/quickstart) guides walk through ready-made examples such as LLM fine-tuning, transformer foundations, unsupervised clustering, and data preprocessing. For an endpoint or app that stays online, use Inference.
 
-1) Random Round Checks: The node status may change due to random round checks. If your node is unreachable during one of these checks, it could trigger these messages.
+</details> 
 
-2) Configuration Issues: Misconfigurations, like an incorrect P2P_ANNOUNCE_ADDRESS, can impact communication. Ensure your settings are correct.
+<details> 
+  
+<summary>Which editors and programming languages are supported?</summary>
 
-3) Port Accessibility: Make sure the required ports are open and accessible for your node to operate properly.
-</details>
-
-<details>
-<summary>How do I backup or migrate my node to a new server without losing uptime?</summary>
-
-To back up or migrate your node without losing uptime, follow these steps:
-
-1) Run a Parallel Node: Start a new node on the new VPS while keeping the old one active. This ensures uninterrupted uptime during migration.
-
-2) Use the Same Private Key: Configure the new node with the same private key as the old one. This will retain the same node ID and ensure continuity in uptime and rewards eligibility.
-
-3) Update Configuration: Update the new node's configuration, including the announce_address in the Docker YAML file, to reflect the new IP address.
-
-4) Verify on the Dashboard: Check the [Ocean Node Dashboard](https://nodes.oceanprotocol.com/) to confirm that the new node is recognized and that the IP address has been correctly updated.
+Ocean Orchestrator supports VS Code, Cursor, Antigravity, and Windsurf, with built-in Python and JavaScript templates and a custom Docker image option for any other runtime. Algorithms uploaded in the Dashboard can be written in Python or Node.js.
 
 </details>
+
+<details> 
+  
+<summary>What does an NVIDIA H200 offer on Ocean Network?</summary>
+
+An H200 provides 141 GB of HBM3e memory and 4.8 TB/s of bandwidth, which gives a single GPU room for 70B-class models plus KV cache. The H200 SXM5 environment listed on the Orchestrator page includes 440 GB RAM, 40 vCPUs, and 1000 GB disk, with a starting price of $2.16 per hour on the Ocean Network homepage at the time of writing.
+
+</details> 
+
+
+## Inference & Services
 
 <details>
-<summary>How do I resolve the "No peer data" issue that affects node eligibility?</summary>
-It's normal for a node's status to change automatically from time to time due to random round checks conducted on each node. If a node is unreachable during a check, the system will display the reason on the dashboard.
+  
+<summary>How is an inference session different from a compute job?</summary>
 
-To resolve the "No peer data" issue, consider the following steps:
+A compute job runs a task and finishes. An inference session keeps a model or AI app available over HTTP for a booked period on dedicated GPU capacity, and it ends when the paid window expires unless you extend it.
 
-1) Restart Your Node: This simple action has been helpful for some users facing similar issues.
+</details> 
 
-2) Check Configuration:
-a) Ensure that your P2P_ANNOUNCE_ADDRESS is configured correctly.
-b) Verify that the necessary ports are open.
+<details> 
+  
+<summary>What can I launch through Inference?</summary>
 
-3) Local Dashboard Access: Confirm that you can access your node from the local dashboard by visiting http://your_ip:8000/dashboard.
+You can pick a [curated model](https://dashboard.oncompute.ai/inference) package, configure a custom model and engine, open a bare application, or start a template with models and workflows prepared. Model flows give you an OpenAI-compatible endpoint, and applications and templates can provide a browser interface.
+
+</details> 
+
+<details> 
+  
+<summary>How are inference sessions billed?</summary>
+
+The full cost is shown before launch, and your payment goes into escrow to authorize the operator to claim the booked window. Billing is time-based access to hardware rather than per-token pricing.
+
+</details> 
+
+<details> 
+  
+  <summary>Can I extend, restart, or edit a running service?</summary>
+
+Use Prolong session before expiry to buy more time. Restart or Edit rebuilds an unexpired service while keeping its ID, endpoint, and paid window, and changing hardware needs a new launch. After a session expires, start a new service.
+
+</details> 
+
+<details> <summary>What should I do if my service fails to start or ends earlier than I booked?</summary>
+
+Payment is claimed only after the image is ready and the container is created, so a failure before that point cancels the escrow lock. If a service times out, ends early, or still shows locked funds, contact support on discord with the service ID, the node name, and your logs so the team can investigate.
+
+</details> 
+
+## Pricing, Payments & Credits
+<details> 
+  
+<summary>How are batch compute jobs priced?</summary>
+
+Each node prices CPU, RAM, disk, and GPU per minute, and the Dashboard shows an estimate before launch. A job that finishes early stops the meter, so you pay for the runtime you use rather than a full hour or a long-term reservation. Confirm the quoted units and conditions for each run.
+
+</details> 
+
+<details> 
+  
+<summary>Which network and payment tokens does Ocean Network use?</summary>
+
+Payments run on Base, an Ethereum Layer 2 with low fees and native USDC. Use USDC or COMPY where the selected environment offers them, and check the fee token and network before you authorize.
+
+</details> 
+
+<details> 
+<summary>How do I sign in, and do I need a browser wallet?</summary>
+
+Sign in with email, Google, or a passkey to use an embedded Smart Wallet, or connect your own wallet. Smart Wallets work without a browser extension such as MetaMask.
+
+</details> 
+
+<details> 
+  
+<summary>How do I get USDC on Base?</summary>
+
+If you signed in with email, Google, or a passkey, open My account → Top up (or the top-up link on the payment screen) to buy USDC with a card. With an external wallet, send USDC from Coinbase directly to your Base address, or move funds with the Base Bridge or Superbridge.
+
+</details> 
+
+<details> 
+  
+<summary>What is escrow, and how does payment work?</summary>
+
+Escrow is the smart contract that holds your deposited tokens. Your budget is locked before a job starts, and once completion is verified the exact runtime cost is released to the node while the remaining balance returns to your wallet. Check your available and locked funds before you withdraw, since an active job or session reserves funds, and use the Dashboard escrow page or Ocean CLI to withdraw the rest.
+
+</details> 
+
+<details> 
+  
+<summary>What is COMPY, and how do I claim it?</summary>
+
+COMPY is the token offered through Ocean Network's grant flow and accepted for compute payment by supported environments. Open Claim grant tokens in the Dashboard profile menu, complete the form, verify your email with the six-digit code (valid for 10 minutes), review your eligibility and amount, and submit the claim transaction on Base. See the claim docs page for the [full walkthrough](https://docs.oncompute.ai/ocean-network-dashboard/claim-your-compy-tokens), and use My account → Get COMPY to swap USDC for more.
+
+</details> 
+
+## Storage & Data
+
+<details> 
+  
+<summary>How can I keep files between runs?</summary>
+
+Create a persistent-storage bucket on your chosen node, upload your files, and mount them into later jobs so you can skip re-uploading for every run. A bucket lives on one node and is not replicated across providers, so keep copies of any results you need to keep.
+
+</details> 
+
+<details> 
+  
+<summary>How do I share a bucket with other people or agents?</summary>
+
+Attach an ERC-721 soulbound access-list contract when you create the bucket, and every wallet holding a token from that contract can upload, list, and delete files in it. Decide on sharing at creation time, because an access list cannot be added afterward, and a bucket without one stays owner-only. The same setup lets several AI agents share one bucket for memory and coordination.
+
+</details> 
+
+## Privacy & Trust
+
+<details> 
+  
+<summary>What is Compute-to-Data?</summary>
+
+Compute-to-Data (C2D) runs code in an isolated container near the data and returns only the outputs designated for the consumer. Ocean Orchestrator uses this pattern for every job it submits.
+
+</details> 
+
+<details> <summary>Are my inputs and inference endpoints private?</summary>
+
+A node operator can see the data and traffic processed on their machine, so assess the operator before you send sensitive data. Inference environment variables are encrypted in transit and decrypted by the node, and current endpoints have no built-in authentication, so treat each endpoint URL as a secret and add your own authentication for anything sensitive.
+
+</details> 
+
+<details> <summary>How are training jobs isolated on a node?</summary>
+
+Every job runs in its own container with resources allocated per job, and each GPU serves one job at a time. The container is torn down when the job finishes.
+
+</details> 
+
+## Developer Tools
+
+<details> <summary>How do I connect ON MCP to my AI assistant?</summary>
+
+[ON MCP](https://docs.oncompute.ai/on-mcp/quickstart) is a hosted Model Context Protocol server, so there is nothing to install. Add https://mcp.oncompute.ai/mcp as a connector in Claude, Gemini, ChatGPT, Cursor, GitHub Copilot, or another MCP-compatible tool, then follow the quickstart.
+
+</details> 
+
+<details> <summary>What can an AI agent do with ON MCP?</summary>
+
+Through roughly 80 tools, an agent can discover compute providers, write and validate Compute-to-Data algorithms, run free or paid jobs, manage private storage, publish datasets and algorithms, and inspect nodes and environments, all from natural-language instructions.
+
+</details> 
+
+<details> <summary>Which ON MCP tools run a job from start to finish?</summary>
+
+A typical flow uses find_provider to discover providers, getComputeEnvironments to choose an environment, initializeCompute to verify live pricing without moving funds, computeStart to launch, computeStatus to monitor, and getComputeResult to retrieve outputs and logs. Run validate_algo_structure beforehand to check your algorithm against the Compute-to-Data filesystem contract.
+
+</details> 
+
+<details> 
+  
+<summary>Can ON MCP estimate my cost before I spend anything?</summary>
+
+Yes. MCP compares providers, shows live node specifications and pricing, and walks you through the dataset, fine-tuning approach, and funding before you launch. Try a prompt such as "find an H200 node to fine-tune Llama 3 8B on my JSONL dataset."
+
+</details> 
+
+<details> <summary>Does ON MCP hold my funds or sign transactions?</summary>
+
+No. ON MCP returns unsigned transactions for paid jobs, and you authorize and broadcast them from your own wallet, so your private keys stay with you. Free experiments can use an ephemeral key with no wallet.
+
+</details> <details> <summary>How do I install and set up Ocean CLI?</summary>
+
+[Ocean CLI](https://docs.oncompute.ai/persistent-storage/using-with-ocean-cli) runs on macOS and Linux, and Windows users can use WSL. Clone the repository, select the Node version, install dependencies, build the tool, and verify it with npm run cli -- --help. Set PRIVATE_KEY, RPC, and NODE_URL before running commands.
+
+</details> 
+
+<details> 
+  
+<summary>How do I run a paid job with Ocean CLI?</summary>
+
+Run getComputeEnvironments to list the environments on your node, then use startCompute with the dataset DID, algorithm DID, environment ID, maximum duration, payment token address, and resources such as CPU, RAM, and disk. Add --accept true to skip the payment prompt, then use getJobStatus and downloadJobResults to monitor the job and collect your files.
+
+</details> 
+
+## Running a Node
+<details> <summary>How do I get started as a node operator?</summary>
+
+Install Docker and Docker Compose, open Run Node in the Dashboard, connect your wallet, fill in your configuration, download the generated docker-compose.yml, and run docker-compose up -d. The quickstart script is an alternative that guides you through your private key, admin address, networking, Compute-to-Data, GPU detection, and TLS. See the node guide for details.
+
+</details> <details> <summary>Do I need a GPU, and which GPUs are supported?</summary>
+
+CPU-only nodes can run, and the incentives program requires at least one eligible GPU environment. Nodes support NVIDIA GPUs (with drivers, CUDA, and the NVIDIA Container Toolkit), AMD Radeon GPUs through ROCm, and Intel Arc GPUs, and the quickstart script detects NVIDIA and AMD GPUs automatically. On Windows, run through WSL2, and share your logs with support if a benchmark cannot detect your GPU.
+
+</details> <details> <summary>How do I set prices for my node?</summary>
+
+In your compute environment configuration, set a per-minute price for each resource (CPU, RAM, disk, and GPU) for every chain and fee token you accept. You can also add a free tier with tighter limits so newcomers can try your hardware.
+
+</details> <details> <summary>Can I choose who uses my node?</summary>
+
+Yes. Each environment supports an allowlist of wallet addresses and on-chain access lists, so you can open it to everyone or limit it to approved users.
+
+</details> <details> <summary>Can my node host inference services?</summary>
+
+Yes. Enable Services on your Docker connection, and consumers can launch long-running containers on your environments. Services draw from the same resource pool as compute jobs, so your hardware stays fully used.
+
+</details> <details> <summary>How do I update my node's configuration?</summary>
+
+Edit the .env file in your node directory, then restart the deployment with docker-compose down followed by docker-compose up -d.
+
+</details> <details> <summary>How do node operators get paid?</summary>
+
+When a user's job completes and is verified, your node claims the exact runtime cost from that user's escrow. Your Dashboard profile shows your nodes, rewards history, and jobs.
+
+</details> <details> <summary>Is running a node profitable?</summary>
+
+Earnings depend on actual demand and on the prices and resources you offer. Review your environment's pricing and availability in the Dashboard, and check the current status of the incentives program before you plan around rewards.
+
 </details>
 
-<details>
-<summary>Do I need to open all ports to the outside world (e.g., 9000-9003, 8000)?</summary>
-It's not necessary to open all ports; typically, opening port 8000 is sufficient for most operations. However, if you are running services that require additional ports - such as ports 9000-9003 for P2P connections - you may need to open those based on your specific setup and requirements.
-</details>
 
-<details>
-<summary>How is the node's reward calculated, and will my income depend on the server's capacity?</summary>
-The rewards for Ocean nodes are mainly determined by your node's uptime. Nodes that maintain an uptime of 90% or higher qualify for rewards from a substantial reward pool of 250,000 ROSE per epoch. Your income is not affected by the server's capacity; it relies solely on the reliability and uptime of your node.
-</details>
+ <details> <summary>I see "Validation failed: Validation service unavailable" when claiming COMPY. What now?</summary>
 
-<details>
-<summary>What are the rewards for running a node, and how is the distribution handled?</summary>
-Rewards for running a node are 360,000 ROSE per epoch and are automatically sent to your wallet if you meet all the requirements. These rewards are distributed in ROSE tokens within the Oasis Sapphire network.
-</details>
-
-<details>
-<summary>Does my node's hardware setup (CPU, RAM, storage) impact the rewards I receive?</summary>
-
-Your node's hardware setup - CPU, RAM, and storage - does not directly influence your rewards. The primary factor for receiving rewards is your node's uptime. As long as your node meets the minimum system requirements (90% node uptime) and maintains high availability, you remain eligible for rewards. Rewards are based on uptime rather than hardware specifications.
-</details>
-
-
-## Grants, challenges, and ecosystem
-
-<details>
-<summary>Is Acentrik from Mercedes Benz built on top of Ocean?</summary>
-
-3rd party markets such as Gaia-X, BDP and Acentrik use Ocean components to power their marketplace. They will likely use another currency for the exchange of services. If these marketplaces are publicly accessible, indexable and abide by the fee structure set out by Ocean Protocol, transaction fees would be remitted back to the Ocean community. These transaction fees would be allocated according to plan set out [here](https://blog.oceanprotocol.com/ocean-token-model-3e4e7af210f9).
+The grant validation service could not be reached. Wait a few minutes and try again, and if the message persists, contact support with a screenshot and the email you used for the claim.
 
 </details>
 
-<details>
-<summary>What is Ocean Shipyard?</summary>
+##  Support & Community
+<details> <summary>Where can I get help?</summary>
 
-Ocean Shipyard is an early-stage grant program established to fund the next generation of Web3 dApps built on Ocean Protocol. It is made for entrepreneurs looking to build Web3 solutions on Ocean, make valuable data available, build innovations, and create value for the Ocean ecosystem.
+Join the Ocean Network Discord to chat with the team and community, or email help@oncompute.ai for direct support. Include your Peer ID, service ID, or job ID and sanitized logs to speed up the answer.
 
-The [Shipyard page](https://oceanprotocol.com/shipyard) has details.
+</details> <details> <summary>Where can I follow updates?</summary>
+
+Follow @ONcompute on X for announcements, and browse the Ocean Network docs for guides and quickstarts.
+
+</details> <details> <summary>How can I see live network activity and how many nodes are online?</summary>
+
+The Dashboard shows network-wide stats such as total nodes, jobs, rewards, GPU popularity, and country distribution, plus a node explorer with each node's uptime and benchmark history.
+
 </details>
-
-<details>
-<summary>Where can we see previous data challenges and submitted solutions?</summary>
-
-You can find a list of past data challenges on the [website](https://oceanprotocol.com/challenges).
-</details>
-
-<details>
-<summary>What are the steps needed to encourage people to use the Ocean ecosystem?</summary>
-
-There are a wide host of technical, business, and cultural barriers to overcome before volume sales can scale. Blockchain and crypto technology are relatively new and adopted by a niche group of enthusiasts. On top, the concept of a Data Economy is still nascent. Data buyers are generally restricted to data scientists, researchers, or large corporations, while data providers are mainly corporations and government entities. The commercialization of data is still novel and the processes are being developed and refined.
-</details>
-
-
-## Data security
-
-
-<details>
-<summary>Is my data secure?</summary>
-
-Yes. Ocean Protocol understands that some data is too sensitive to be shared — potentially due to GDPR or other reasons. For these types of datasets, we offer a unique service called [compute-to-data](../developers/compute-to-data/README.md). This enables you to monetize the dataset that sits behind a firewall without ever revealing the raw data to the consumer. For example, researchers and data scientists pay to run their algorithms on the data set, and the computation is performed behind a firewall; all the researchers or data scientists receive is the results generated by their algorithm.
-</details>
-
-
-<details>
-<summary>How does Ocean Protocol enforce penalties if data is shared without permission?</summary>
-
-Determining whether someone has downloaded your data and is reselling it is quite challenging. While they are bound by a contract not to do so, it's practically impossible to monitor their actions. If you want to maintain the privacy of your dataset, you can explore the option of using compute-to-data(C2D). Via C2D your data remains private and people can only run algorithms(that you approve of) to extract intelligence. 
-
-This issue is similar to what any digital distribution platform faces. For instance, can Netflix prevent individuals from downloading and redistributing their content? Not entirely. They invest significant resources in security, but ultimately, complete prevention is extremely difficult. They mainly focus on making it more challenging for such activities to occur.
-</details>
-
-
-## Data marketplaces & Ocean Market
-
-<details>
-<summary>What is a decentralized data marketplace?</summary>
-
-A data marketplace allows providers to publish data and buyers to consume data.
-
-Unlike centralized data marketplaces, decentralized ones give users more control over their data and algorithms by minimizing custodianship and providing transparent and immutable records of every transaction.
-
-Ocean Market is a reference decentralized data marketplace powered by Ocean stack.
-
-Ocean Compute-to-Data (C2D) enables data and algorithms can be ingested into secure Docker containers where escapes are avoided, protecting both the data and algorithms. C2D can be used from Ocean Market.
-</details>
-
-<details>
-<summary>Is there a website or platform that tracks the consume volume of Ocean Market?</summary>
-
-
-Yes. See [autobotocean.com](https://autobotocean.com/). 
-</details>
-
-<details>
-<summary>Since Ocean Market is open source, what are the future plans for the project in terms of its economic direction?</summary>
-
-Ocean Market is a showcase for the practical application of Ocean, showing others what a decentralized data marketplace look like.
-
-Fees are generated Ocean Market from Ocean Market that head to Ocean community. The earlier Q&A on revenue has details.
-</details>
-
-## Contacting Ocean core team
-
-<details>
-<summary>Who is the right person to talk to regarding a marketing proposal or collaboration?</summary>
-
-For collaborations, please fill in this [form](https://docs.google.com/forms/d/e/1FAIpQLSdBz7cblsz5yuOKMVoPVfK0Pp1Xuqjwner1kCkRibIIbYMe-w/viewform). 
-One member of our team will reach out to you 🤝
-</details>
-
-
 ----
 
 _Next: [Glossary](glossary.md)_
