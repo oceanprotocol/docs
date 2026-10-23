@@ -81,7 +81,7 @@ As part of a compute job, every algorithm runs in a K8s pod with these volumes m
 
 | Path            | Permissions | Usage                                                                                                                                                                                   |
 | --------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/data/inputs`  | read        | Storage for input data sets, accessible only to the algorithm running in the pod. Contents will be the files themselves, inside indexed folders e.g. `/data/inputs/{did}/{service_id}`. |
+| `/data/inputs`  | read        | Storage for input data sets, accessible only to the algorithm running in the pod. Each input dataset is placed in its own folder, keyed by its position in the job (the same order as `DIDS`): `/data/inputs/{index}/{filename}`. Consumer-provided custom parameters, if any, are written to `/data/inputs/algoCustomData.json`. |
 | `/data/ddos`    | read        | Storage for all DDOs involved in compute job (input data set + algorithm). Contents will json files containing the DDO structure.                                                       |
 | `/data/outputs` | read/write  | Storage for all of the algorithm's output files. They are uploaded on some form of cloud storage, and URLs are sent back to the consumer.                                               |
 | `/data/logs/`   | read/write  | All algorithm output (such as `print`, `console.log`, etc.) is stored in a file located in this folder. They are stored and sent to the consumer as well.                               |
@@ -92,7 +92,7 @@ Please note that when using local Providers or Metatata Caches, the ddos might n
 
 For every algorithm pod, the Compute to Data environment provides the following environment variables:
 
-<table><thead><tr><th width="100">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>DIDS</code></td><td>An array of DID strings containing the input datasets.</td></tr><tr><td><code>TRANSFORMATION_DID</code></td><td>The DID of the algorithm.</td></tr></tbody></table>
+<table><thead><tr><th width="100">Variable</th><th>Usage</th></tr></thead><tbody><tr><td><code>DIDS</code></td><td>A JSON array of the input dataset DIDs, in the same order as the <code>/data/inputs/{index}</code> folders. An entry is <code>null</code> when that input was provided without a DID (for example a raw URL input in free compute).</td></tr><tr><td><code>TRANSFORMATION_DID</code></td><td>The DID of the algorithm.</td></tr></tbody></table>
 
 <details>
 
@@ -119,7 +119,7 @@ async function countrows(file) {
 async function processfolder(folder) {
   const files = fs.readdirSync(folder)
 
-  for (const i = 0; i < files.length; i++) {
+  for (let i = 0; i < files.length; i++) {
     const file = files[i]
     const fullpath = folder + '/' + file
     if (fs.statSync(fullpath).isDirectory()) {
@@ -170,28 +170,30 @@ import json
 def get_job_details():
     """Reads in metadata information about assets used by the algo"""
     job = dict()
-    job['dids'] = json.loads(os.getenv('DIDS', None))
+    # DIDS is a JSON array of the input DIDs, in the same order as the
+    # /data/inputs/<index> folders. An entry is null for inputs provided
+    # without a DID (for example a raw URL input in free compute).
+    job['dids'] = json.loads(os.getenv('DIDS', '[]'))
     job['metadata'] = dict()
     job['files'] = dict()
     job['algo'] = dict()
     job['secret'] = os.getenv('secret', None)
     algo_did = os.getenv('TRANSFORMATION_DID', None)
-    if job['dids'] is not None:
-        for did in job['dids']:
-            # get the ddo from disk
-            filename = '/data/ddos/' + did
-            print(f'Reading json from {filename}')
-            with open(filename) as json_file:
-                ddo = json.load(json_file)
-                # search for metadata service
-                for service in ddo['service']:
-                    if service['type'] == 'metadata':
-                        job['files'][did] = list()
-                        index = 0
-                        for file in service['attributes']['main']['files']:
-                            job['files'][did].append(
-                                '/data/inputs/' + did + '/' + str(index))
-                            index = index + 1
+    for index, did in enumerate(job['dids']):
+        # each input dataset lives in its own folder, keyed by its index
+        input_dir = '/data/inputs/' + str(index)
+        if not os.path.isdir(input_dir):
+            continue
+        job['files'][index] = [
+            os.path.join(input_dir, name) for name in sorted(os.listdir(input_dir))
+        ]
+        if did is not None:
+            # the DDO for this input, if the Provider/Metadata Cache made it available
+            ddo_path = '/data/ddos/' + did
+            if os.path.exists(ddo_path):
+                print(f'Reading json from {ddo_path}')
+                with open(ddo_path) as json_file:
+                    job['metadata'][did] = json.load(json_file)
     if algo_did is not None:
         job['algo']['did'] = algo_did
         job['algo']['ddo_path'] = '/data/ddos/' + algo_did
@@ -203,9 +205,8 @@ def line_counter(job_details):
     print('Starting compute job with the following input information:')
     print(json.dumps(job_details, sort_keys=True, indent=4))
 
-    """ Now, count the lines of the first file in first did """
-    first_did = job_details['dids'][0]
-    filename = job_details['files'][first_did][0]
+    """ Now, count the lines of the first file of the first input dataset """
+    filename = job_details['files'][0][0]
     non_blank_count = 0
     with open(filename) as infp:
         for line in infp:
